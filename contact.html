@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact | Three Magi Press</title>
+    <meta
+      name="description"
+      content="Contact Three Magi Press for orders, submissions, review copies, rights, and general inquiries."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet" />
+    <link rel="preload" href="assets/three-magi-logo-original.png" as="image" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand" href="index.html#top" aria-label="Three Magi Press home">
+        <img class="brand-logo" src="assets/three-magi-logo-original.png" alt="" aria-hidden="true" />
+        <span>
+          <strong>Three Magi Press</strong>
+          <small>Hermetic publications</small>
+        </span>
+      </a>
+
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="books.html">Books</a>
+        <a href="third-lamp/index.html">The Third Lamp</a>
+        <a href="index.html#journal">Blog</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#newsletter">Dispatch</a>
+        <a href="contact.html" aria-current="page">Contact</a>
+      </nav>
+
+      <a class="cart-pill" href="index.html#top" aria-label="Return home">
+        <span aria-hidden="true">Home</span>
+        <strong aria-hidden="true">III</strong>
+      </a>
+    </header>
+
+    <main>
+      <section class="contact-page" aria-labelledby="contact-title">
+        <img class="contact-backdrop" src="assets/hermes-portrait.png" alt="" aria-hidden="true" />
+        <div class="contact-intro">
+          <p class="eyebrow">Correspondence</p>
+          <h1 id="contact-title">Contact Three Magi Press</h1>
+          <p>
+            For orders, manuscript queries, review copies, rights, events, or general correspondence,
+            send a note through the form below.
+          </p>
+        </div>
+
+        <div class="contact-layout">
+          <form
+            class="contact-form"
+            action="https://formsubmit.co/nous@3magipress.com"
+            method="POST"
+            data-contact
+            data-human-form
+          >
+            <input type="hidden" name="_subject" value="New Three Magi Press inquiry" />
+            <input type="hidden" name="_template" value="table" />
+            <input type="hidden" name="_captcha" value="true" />
+            <input type="hidden" name="source" value="Three Magi Press contact page" />
+            <label class="form-trap" aria-hidden="true">
+              <span>Leave this field empty</span>
+              <input type="text" name="_honey" tabindex="-1" autocomplete="off" />
+            </label>
+            <label>
+              <span>Name</span>
+              <input type="text" name="name" placeholder="Your name" required />
+            </label>
+            <label>
+              <span>Email</span>
+              <input type="email" name="email" placeholder="reader@example.com" required />
+            </label>
+            <label>
+              <span>Inquiry</span>
+              <select name="inquiry" required>
+                <option value="">Select a path</option>
+                <option>Book order</option>
+                <option>Manuscript submission</option>
+                <option>Review copy</option>
+                <option>Rights and permissions</option>
+                <option>General correspondence</option>
+              </select>
+            </label>
+            <label>
+              <span>Message</span>
+              <textarea name="message" rows="7" placeholder="Write your message..." required></textarea>
+            </label>
+            <label class="human-check">
+              <span>Human check: <strong data-human-question></strong></span>
+              <input
+                type="number"
+                inputmode="numeric"
+                data-human-answer
+                placeholder="Answer"
+                autocomplete="off"
+                required
+              />
+            </label>
+            <button class="button primary" type="submit">Send Message</button>
+            <p class="form-note" data-contact-note aria-live="polite"></p>
+          </form>
+
+          <aside class="contact-details" aria-label="Contact details">
+            <div>
+              <p class="eyebrow">General</p>
+              <h2>Inquiries</h2>
+              <p><a href="mailto:nous@3magipress.com">nous@3magipress.com</a></p>
+            </div>
+            <div>
+              <p class="eyebrow">Submissions</p>
+              <h2>Manuscripts</h2>
+              <p>Send a short proposal, table of contents, sample chapter, and author note.</p>
+            </div>
+            <div>
+              <p class="eyebrow">Hours</p>
+              <h2>Response Window</h2>
+              <p>Correspondence is reviewed weekly under quiet lamplight.</p>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Three Magi Press</p>
+      <p>Hermetic, occult, and alchemical publications.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
