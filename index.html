@@ -34,10 +34,24 @@
         <a href="contact.html">Contact</a>
       </nav>
 
-      <button class="cart-pill" type="button" data-cart-button aria-label="Open cart">
-        <span aria-hidden="true">Cart</span>
-        <strong data-cart-count>0</strong>
-      </button>
+      <div class="header-actions">
+        <details class="header-menu">
+          <summary>Menu</summary>
+          <nav class="header-menu-panel" aria-label="Quick navigation">
+            <a href="books.html">Books</a>
+            <a href="third-lamp/index.html">The Third Lamp</a>
+            <a href="#journal">Essays</a>
+            <a href="#about">About</a>
+            <a href="#newsletter">Dispatch</a>
+            <a href="contact.html">Contact</a>
+          </nav>
+        </details>
+
+        <button class="cart-pill" type="button" data-cart-button aria-label="Open cart">
+          <span aria-hidden="true">Cart</span>
+          <strong data-cart-count>0</strong>
+        </button>
+      </div>
     </header>
 
     <main id="top">
@@ -56,6 +70,16 @@
             <a class="button primary" href="books.html">Browse Books</a>
             <a class="button ghost" href="#journal">Read the Blog</a>
           </div>
+        </div>
+      </section>
+
+      <section class="third-lamp-invitation" aria-labelledby="third-lamp-title">
+        <img src="assets/obsidian-altar-mirror.png" alt="Obsidian mirror on an esoteric scholar's table" />
+        <div>
+          <p class="eyebrow">New from Three Magi Press</p>
+          <h2 id="third-lamp-title">The Third Lamp</h2>
+          <p>A digital esoteric magazine of sacred history, living tradition, and the hidden architecture of ideas. Enter the current issue or follow the currents through its living archive.</p>
+          <a class="button primary" href="third-lamp/index.html">Enter the Magazine</a>
         </div>
       </section>
 
@@ -86,9 +110,11 @@
           </article>
 
           <article class="book-card">
-            <figure class="book-cover book-cover-image">
-              <img src="assets/book-root-ether-fourfold-field.png" alt="Cover of Root Ether and the Fourfold Field" />
-            </figure>
+            <div class="book-cover book-cover-placeholder" data-volume="II">
+              <span>Book II</span>
+              <strong>Root Ether and the Fourfold Field</strong>
+              <small>Cover forthcoming</small>
+            </div>
             <div class="book-copy">
               <p class="book-kicker">Book II / The Living Medium</p>
               <h3>Root Ether and the Fourfold Field</h3>
@@ -101,9 +127,11 @@
           </article>
 
           <article class="book-card">
-            <figure class="book-cover book-cover-image">
-              <img src="assets/book-logos-number-birth-form.png" alt="Cover of Logos, Number, and the Birth of Form" />
-            </figure>
+            <div class="book-cover book-cover-placeholder" data-volume="III">
+              <span>Book III</span>
+              <strong>Logos, Number, and the Birth of Form</strong>
+              <small>Cover forthcoming</small>
+            </div>
             <div class="book-copy">
               <p class="book-kicker">Book III / Sacred Measure</p>
               <h3>Logos, Number, and the Birth of Form</h3>
@@ -240,16 +268,6 @@
               <p>A window into ancient philosophy, moral allegory, and the soul's symbolic journey.</p>
             </div>
           </a>
-        </div>
-      </section>
-
-      <section class="third-lamp-invitation" aria-labelledby="third-lamp-title">
-        <img src="assets/obsidian-altar-mirror.png" alt="Obsidian mirror on an esoteric scholar's table" />
-        <div>
-          <p class="eyebrow">New from Three Magi Press</p>
-          <h2 id="third-lamp-title">The Third Lamp</h2>
-          <p>A digital esoteric magazine of sacred history, living tradition, and the hidden architecture of ideas. Enter the current issue or follow the currents through its living archive.</p>
-          <a class="button primary" href="third-lamp/index.html">Enter the Magazine</a>
         </div>
       </section>
 
