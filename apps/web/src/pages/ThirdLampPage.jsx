@@ -194,7 +194,7 @@ function ThirdLampPage() {
 
             <main>
                 <section className="tl-entrance" aria-labelledby="tl-entrance-title">
-                    <img src="/media/eece20501c4d26a32948c4e8bceb3b25.webp" alt="An ornate golden door standing ajar, revealing a candlelit chamber beyond" />
+                    <img src="/media/entrance-angel-vigil.webp" alt="Three hooded figures kneeling before a winged stone angel in a ruined cathedral, a shaft of light falling from a high window" />
                     <div className="tl-entrance-shade" aria-hidden="true" />
                     <HeroMotionFX />
                     <div className="tl-entrance-vignette" aria-hidden="true" />
