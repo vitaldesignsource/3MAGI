@@ -7988,6 +7988,17 @@ h3 {
   padding-bottom: 0.4rem;
   border-bottom: 1px solid rgba(179, 139, 70, 0.5);
 }
+
+/* Contact page only — the Plans page shares .tl-plans-head/.tl-plans-lede and
+   stays as it is. "Correspondence" is set in TC Seraphine, and the lede below
+   picks up the same gold so the two read as one unit. */
+.third-lamp-scope.tl-contact-page .tl-plans-head .kicker {
+  font-family: "TC Seraphine", "Cinzel", Georgia, serif;
+}
+
+.third-lamp-scope.tl-contact-page .tl-plans-lede {
+  color: var(--gold-bright);
+}
 .third-lamp-scope .tl-plans-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
