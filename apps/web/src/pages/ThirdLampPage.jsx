@@ -200,45 +200,7 @@ function ThirdLampPage() {
                     <div className="tl-entrance-vignette" aria-hidden="true" />
                     <div className="tl-entrance-content">
                         <img className="tl-entrance-emblem" src="/media/3rd_lamp_magazine-TvY2B.webp" alt="The Third Lamp emblem: a crescent moon cradling a lit oil lamp within a numeral three" />
-                        <h1 id="tl-entrance-title" className="tl-entrance-title"><span style={{
-                fontFamily: "Cinzel, sans-serif"
-              }}><em></em><span style={{
-                  fontWeight: "normal"
-                }}><span style={{
-                    fontWeight: "normal"
-                  }}></span></span><span style={{
-                  fontWeight: "normal"
-                }}><span style={{
-                    fontWeight: "normal"
-                  }}><span style={{
-                      fontWeight: "normal"
-                    }}><span style={{
-                        fontWeight: "normal"
-                      }}></span></span></span></span><span style={{
-                  fontWeight: "normal"
-                }}><span style={{
-                    fontWeight: "normal"
-                  }}><span style={{
-                      fontWeight: "normal"
-                    }}><span style={{
-                        fontWeight: "normal"
-                      }}><span style={{
-                          fontWeight: "normal"
-                        }}><span style={{
-                            fontWeight: "normal"
-                          }}></span></span></span></span></span><span style={{
-                    fontWeight: "normal"
-                  }}><span style={{
-                      fontWeight: "normal"
-                    }}><span style={{
-                        fontWeight: "normal"
-                      }}><span style={{
-                          fontWeight: "normal"
-                        }}><span style={{
-                            fontWeight: "normal"
-                          }}><span style={{
-                              fontWeight: "normal"
-                            }}>T</span></span></span></span></span>he Third Lamp</span></span></span></h1>
+                        <h1 id="tl-entrance-title" className="tl-entrance-title">The Third Lamp</h1>
                         <div className="tl-entrance-rule" aria-hidden="true" />
                         <p className="tl-entrance-tagline">Esoterica <span aria-hidden="true">·</span> Symbol <span aria-hidden="true">·</span> Revelation</p>
                         <p className="tl-entrance-est">
