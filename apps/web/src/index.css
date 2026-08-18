@@ -5915,6 +5915,16 @@ h3 {
   color: var(--bone);
 }
 
+/* Shown for the instant between the article page mounting and its per-essay
+   content chunk arriving; styled like the surrounding prose so it doesn't
+   flash, and given height so the footer doesn't jump up and back down. */
+.article-body-loading {
+  margin: 0;
+  color: var(--muted);
+  font: italic 1rem/1.7 Georgia, serif;
+  min-height: 40vh;
+}
+
 .article-body {
   width: 100%;
   max-width: min(760px, 100%);

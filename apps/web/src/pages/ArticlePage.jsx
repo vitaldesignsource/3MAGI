@@ -8,6 +8,7 @@ import CommunityNotes from '../components/CommunityNotes';
 import ShareButtons from '../components/ShareButtons';
 import AlchemicalPendulum from '../components/AlchemicalPendulum';
 import { articles, getArticleBySlug, traditionMeta, disciplineMeta, getCurrentIssueArticles, currentIssueSlugs } from '../data/articles';
+import { loadArticleContent } from '../data/articleContent';
 import { useSubscriptionAuth } from '../contexts/SubscriptionAuthContext.jsx';
 
 /** Issue sidebar — next article link + full issue list */
@@ -178,7 +179,21 @@ function normalizeSections(article) {
 
 function ArticlePage() {
     const { slug } = useParams();
-    const article = getArticleBySlug(slug);
+    // Card/metadata fields come from the index synchronously; the essay text
+    // (body, sections, marginalia, figures) is a separate per-essay chunk that
+    // loads on demand. `article` is the merge, so the rest of the component
+    // reads it exactly as it always did.
+    const meta = getArticleBySlug(slug);
+    const [content, setContent] = useState(null);
+    useEffect(() => {
+        let alive = true;
+        setContent(null);
+        if (!meta) return undefined;
+        loadArticleContent(slug).then((c) => { if (alive) setContent(c); });
+        return () => { alive = false; };
+    }, [slug, meta]);
+    const article = useMemo(() => (meta ? { ...meta, ...(content || {}) } : null), [meta, content]);
+    const contentReady = content !== null;
     const { currentUser, subscriptions } = useSubscriptionAuth();
     const isCurrentIssue = currentIssueSlugs.includes(slug);
     const hasActiveSubscription = subscriptions && subscriptions.length > 0;
@@ -638,7 +653,10 @@ function ArticlePage() {
                         </div>
                     </aside>
 
-                    <article className="article-body">
+                    <article className="article-body" aria-busy={!contentReady}>
+                        {!contentReady && (
+                            <p className="article-body-loading" role="status">Retrieving the essay…</p>
+                        )}
                         {sections.map((section, sIndex) => (
                             <React.Fragment key={section.id}>
                                 <div

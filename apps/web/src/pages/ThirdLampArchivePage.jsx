@@ -31,7 +31,10 @@ function ThirdLampArchivePage() {
     }
     const q = query.trim().toLowerCase();
     if (q) {
-      list = list.filter(a => a.title.toLowerCase().includes(q) || a.dek.toLowerCase().includes(q) || a.kicker.toLowerCase().includes(q));
+      // Not every essay has every field (e.g. one has no dek); a missing one
+      // must simply not match, not throw and blank the page.
+      const haystack = (a) => [a.title, a.dek, a.kicker].filter(Boolean).join(' ').toLowerCase();
+      list = list.filter(a => haystack(a).includes(q));
     }
     return list;
   }, [query, activeFilter]);

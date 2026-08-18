@@ -446,7 +446,22 @@ export default defineConfig({
 			],
 			checks: {
 				pluginTimings: false,
-			}
+			},
+			output: {
+				// Keep the framework in its own long-lived chunk. Content edits
+				// change the app chunks' hashes on every deploy; React and the
+				// router change almost never, so returning visitors keep them
+				// cached instead of re-downloading ~180KB with each essay tweak.
+				manualChunks(id) {
+					if (id.includes('node_modules/react-dom') ||
+						id.includes('node_modules/react/') ||
+						id.includes('node_modules/react-router') ||
+						id.includes('node_modules/scheduler')) {
+						return 'vendor-react';
+					}
+					return undefined;
+				},
+			},
 		}
 	}
 });

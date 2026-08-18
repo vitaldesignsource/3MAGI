@@ -23,3 +23,6 @@ vault/
 
 # generated at build by apps/web/tools/generate-llms.js
 apps/web/public/llms.txt
+
+# generated at build by apps/web/tools/generate-sitemap.mjs
+apps/web/public/sitemap.xml

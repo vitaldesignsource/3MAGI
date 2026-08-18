@@ -1,0 +1,68 @@
+export default {
+body: [
+            'The blossoming unfoldment of an esoteric journey was once a process that I believed I could do alone. Naive hubris coupled with inexperience and generally not knowing how much I didn\'t know created a recipe for, if not disaster, then certainly the potential to attract dangers unknown to my novice self.',
+            'The Great Work is ultimately work that you must do by your own merits, but to venture down the path without proper training and guidance is folly. This is akin to attempting to find something you aren\'t even sure what it entirely is, in an unknown land, with no map, and no knowledge of the terrain, while blindfolded. Tomes and texts provide necessary supplementation in one\'s study, but this pales in comparison to learning firsthand from those experienced in the living tradition.',
+        ],
+sections: [
+            {
+                id: 'opening',
+                lede: 'With the obligatory PSA aside, I must recount a foolhardy experience that illuminates how one unversed in the hidden world can stumble into potential danger.',
+                paragraphs: [
+                    'Several years ago in July I was to be initiated into an esoteric order. It was a full moon in Capricorn which only intensified the nervous excitement I was feeling about finally joining the ranks of people who were living what I had only read and dreamt about. I had slowly been collecting and devouring a small yet growing occult library over the preceding years. Several of the dusty books were over a century old and I often wondered if the mystery traditions I read of, much like the books, were just a relic of the past. Much to my surprise there were indeed others out there who were not only interested in the subjects I was enamored with, but who were actually able to perform the incredible feats I longed to experience–and they were going to teach me!',
+                    'I awoke the morning of initiation with determination overcoming the pit of nervousness in my stomach. I decided to draw a tarot card at random to get a read on the energy for the day and I pulled *The Fool*, but reversed. *Missed opportunities, unrealistic goals, stupidity.* The card would turn out to be a warning sign, but I was too foolish to heed it. I checked my phone and the member of the order I had been corresponding with had emailed overnight. What I read was a devastating gut punch–the initiation had been cancelled because too many members were out sick. My correspondent informed me that the initiation would be rescheduled at a date to be determined, but despite the appropriate response I felt as if the opportunity had been dashed away before it even began.',
+                ],
+            },
+            {
+                id: 'vulnerability',
+                title: 'The Pendulum Swings',
+                type: 'pendulum-intro',
+                paragraphs: [
+                    'As the day proceeded my anxieties increased exponentially, leaving me feeling vulnerable and exposed in a way that was unfamiliar. I attempted to regain some solid footing by going for a walk in the woods near where I lived. Walking in nature has a special way of balancing one\'s thoughts and I returned home with a renewed resolve to maintain patience and trust that the process would still unfold as I had hoped.',
+                    'My confidence was reappearing, but what I failed to realize was that the pendulum was merely swinging from one end (emptiness) to the other (overflowing). I had been reading some books and online guides related to astral projection and given the way the day had proceeded I was feeling determined to attempt it that evening. I had never tried projecting before and frankly had no clue what I was doing, but I had this inexplicable feeling within that I just knew it would work. This focused concentration of the will proved to be key.',
+                ],
+            },
+            {
+                id: 'projection',
+                title: 'The Astral Experiment',
+                paragraphs: [
+                    'The following is taken directly from my journal entry on the events of that evening:',
+                    { type: 'blockquote', paragraphs: [
+                        'I awoke at 1:32AM and went to the restroom. I returned to bed and laid down flat on my back with hands at my side and told myself, *"I will wake soon and I will astral project."* I had unwavering faith that it would work. At some later point (time unsure) I did indeed *"awaken"*, but not fully. My body was still asleep and my eyes were still closed, but my consciousness was aware. I realized that this was proceeding exactly as I had read and moved forward without second-guessing anything. I began mentally rocking from side to side as if in a hammock, but made sure to not move or disturb my physical body. As I rocked back and forth, I could feel every nerve in my body beginning to excite. The feeling intensified to the point of feeling as if every cell of my body was vibrating. The best way of describing it is comparable to the intensity of a crowd reacting to a buzzer beater in a packed arena, multiplied ten-fold. I had never experienced such an ecstatic sensation and when the feeling crescendoed to a point where I felt I could no longer contain it, I lifted my back up (again, not physically) and sat up in my bed.',
+                        'As soon as I *"detached"* I floated over to the side of my bed and instantly dropped into a free fall through the floor. I passed through one room, then another, and another, and another and I began to wonder if I would ever stop. Each room was wildly different and my fall sped infinitely faster until the rooms blurred together and everything faded to the black of space. It was at this point that I experienced an abject terror I had never felt before. I was coming to the realization I may have made a terrible decision as I wondered if I would ever stop falling. And just like that, I stopped.',
+                        'I began to gather my bearings and realized I was in an unfamiliar room that was ornately decorated. It had the atmosphere of a medieval castle, but appeared to be floating in the sky. The walls and floors appeared to be made of limestone and were decorated with elaborate sconces. A red, silk carpet led the way out of the room to a beautiful veranda that looked out into a brilliant, peachy sky with an intensity of color that I had never laid eyes upon before. I was both captured at the beauty of my surroundings and excited the fall had finally ceased, eager to explore this unfamiliar territory. Before I could do anything else, I lost the connection and was whisked back to physical reality lying in my bed. Upon waking I felt a tinge of fear because I had vaguely remembered reading in one of my books that one should always return their projection to their physical body lest they lose themselves consciously of some sort. I decided only time would tell, but hoped that perhaps being whisked back sufficed.',
+                    ] },
+                    'I instantly wrote down as much as I could remember, reveling in amazement at what I had just experienced. I thought I had escaped my experiment unscathed, but *when you enter into the astral*, especially inexperienced, you light up and have no clue what you may attract.',
+
+                ],
+            },
+            {
+                id: 'consequences',
+                title: 'The Price of Ignorance',
+                paragraphs: [
+                    'Later that night I had a somewhat more normal dream with a bit of lucid awareness. In the dream I experienced a powerful sexual emission and I remember a certain level of conscious awareness that something seemed very off about it, like there was an uncanny presence that I guessed was *a type of succubus*. Sure enough upon waking the dream had had a "real impact". *Astral-aetheric energy is psycho-sexual in nature* and there are countless disembodied energies that seek to feed on the foolishly inexperienced who wander into their domain. I felt somewhat lucky they only "took a small offering."',
+                    'The entire event left me with mixed feelings. On one hand it was an exciting first step into a larger world with limitless possibilities. On the other hand I had experienced certain things that made me realize how little I knew about this world and that there are potentially very real consequences. To paraphrase a mentor of mine, "Behave like something is at stake because these forces are serious!" My curiosities had been satisfied for the moment, but I decided that going forward I needed experienced guidance and training. The occult is not a playground for idle curiosities. These traditions are serious business and deserve to be treated with a certain reverence.',
+                    'I still wander in darkness, seeking the light, but I do so through the straight and narrow path of the initiate. Years later I reflect upon how important and necessary a legitimate esoteric order is for true development. Only the serious seekers should tread this unfamiliar territory.',
+                ],
+            },
+        ],
+marginalia: {
+            eyebrow: 'Astral Projection',
+            summary: 'A cautionary tale of inexperienced astral projection, the hidden dangers of the unseen realms, and the vital necessity of proper initiation and experienced guidance in the Great Work.',
+            correspondences: [
+                { term: 'Theme', value: 'Initiation & Danger' },
+                { term: 'Practice', value: 'Astral Projection' },
+                { term: 'Key Lesson', value: 'Seek Guidance' },
+            ],
+            figures: [
+                {
+                    name: 'Periclinus de Faustis',
+                    role: 'Occultist and esoteric practitioner.',
+                    image: null,
+                    links: [
+                        { label: 'Author Bio', href: '/third-lamp/authors' },
+                    ],
+                },
+            ],
+            conversationLabel: 'The Author',
+        },
+};
