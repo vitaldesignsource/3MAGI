@@ -4,7 +4,7 @@ import ThirdLampHeader from '../components/ThirdLampHeader';
 import ThirdLampFooter from '../components/ThirdLampFooter';
 import { lampPostCategories, didYouKnowBoxes } from '../data/lampPost';
 import { GrimoireIcon, AuctionIcon, ExhibitionIcon, CollectionIcon, ArchaeologyIcon, TranslationsIcon, PapersIcon, DocumentariesIcon, EventsIcon, ObituariesIcon, ReleasesIcon, MediaIcon, SocietiesIcon, SightingsIcon, OdditiesIcon } from '../components/LampPostIcons';
-import pocketbaseClient from '@/lib/pocketbaseClient';
+import { submitForm } from '@/lib/formSubmit';
 
 const HERO_IMG = '/media/1de8f5d3-251a-4d14-87fd-b1c5e811568e.webp';
 
@@ -28,6 +28,7 @@ function interleave(categories, boxes) {
 function TipForm() {
     const [fields, setFields] = useState({ name: '', email: '', tip: '' });
     const [status, setStatus] = useState('idle'); // idle | sending | success | error
+    const [errorMsg, setErrorMsg] = useState('');
 
     const set = (k) => (e) => setFields(f => ({ ...f, [k]: e.target.value }));
 
@@ -35,15 +36,19 @@ function TipForm() {
         e.preventDefault();
         if (!fields.tip.trim()) return;
         setStatus('sending');
+        setErrorMsg('');
         try {
-            await pocketbaseClient.collection('lamp_post_tips').create({
-                name: fields.name.trim() || null,
-                email: fields.email.trim() || null,
+            await submitForm('tip', {
+                name: fields.name.trim(),
+                email: fields.email.trim(),
                 tip: fields.tip.trim(),
             });
             setStatus('success');
             setFields({ name: '', email: '', tip: '' });
-        } catch {
+        } catch (err) {
+            // Show the handler's reason (e.g. an invalid email address) so the
+            // visitor can actually fix it, rather than a dead-end generic line.
+            setErrorMsg(err?.message || '');
             setStatus('error');
         }
     };
@@ -84,7 +89,7 @@ function TipForm() {
                 />
             </label>
             {status === 'error' && (
-                <p className="lamp-post-tip-msg lamp-post-tip-error">Something went wrong — please try again.</p>
+                <p className="lamp-post-tip-msg lamp-post-tip-error">{errorMsg || 'Something went wrong — please try again.'}</p>
             )}
             {status === 'success' && (
                 <p className="lamp-post-tip-msg lamp-post-tip-success">Your tip has been received. We'll keep an eye on it.</p>

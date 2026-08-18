@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 import ThirdLampHeader from '../components/ThirdLampHeader';
 import ThirdLampFooter from '../components/ThirdLampFooter';
-import pocketbaseClient from '../lib/pocketbaseClient';
+import { submitForm } from '@/lib/formSubmit';
 import HourglassIcon from '../components/HourglassIcon';
 
 /* ── Constellation background SVG animation ───────────────────────── */
@@ -513,27 +513,35 @@ function ThirdLampContributePage() {
     const [sent, setSent] = useState(false);
     const [submitting, setSubmitting] = useState(false);
     const [error, setError] = useState('');
+    const [rejected, setRejected] = useState([]);
 
     const onSubmit = async (e) => {
         e.preventDefault();
         setError('');
+        setRejected([]);
         setSubmitting(true);
         const formEl = e.target;
         try {
             const fd = new FormData(formEl);
             fd.set('path', path);
-            ['document_upload', 'image_attachments'].forEach((name) => {
+            ['document_upload', 'image_attachments[]'].forEach((name) => {
                 const input = formEl.querySelector(`[name="${name}"]`);
                 if (input && input.files && input.files.length === 0) {
                     fd.delete(name);
                 }
             });
-            await pocketbaseClient.collection('third_lamp_submissions').create(fd);
+            const result = await submitForm('submission', fd);
+            // The submission is still delivered when a file is too large or of
+            // an unaccepted type, so name the ones that didn't make it rather
+            // than let the contributor assume everything arrived.
+            if (Array.isArray(result.rejected) && result.rejected.length > 0) {
+                setRejected(result.rejected);
+            }
             setSent(true);
             formEl.reset();
         } catch (err) {
             console.error('Third Lamp submission failed', err);
-            setError('Something went wrong sending your submission. Please try again or email us directly at 3rdlamp@3magipress.com.');
+            setError(err.message);
         } finally {
             setSubmitting(false);
         }
@@ -921,7 +929,7 @@ function ThirdLampContributePage() {
                                         <label className="form-wide"><span>Short abstract</span><textarea name="completed_abstract" rows={6}></textarea></label>
                                         <label><span>Final word count</span><input type="number" name="final_word_count" min={100} max={15000} step={50} /></label>
                                         <label><span>Full document</span><input type="file" name="document_upload" accept=".pdf,.doc,.docx,.odt,.rtf,.txt" /></label>
-                                        <label className="form-wide"><span>Image attachments</span><input type="file" name="image_attachments" accept="image/*" multiple /></label>
+                                        <label className="form-wide"><span>Image attachments</span><input type="file" name="image_attachments[]" accept="image/*" multiple /></label>
                                         <label className="form-wide"><span>Sources or bibliography</span><textarea name="source_list" rows={7}></textarea></label>
                                     </div>
                                 </div>
@@ -953,17 +961,23 @@ function ThirdLampContributePage() {
                         <fieldset>
                             <legend><span>04</span>Agreement</legend>
                             <div className="agreement-list">
-                                <label className="check-row"><input type="checkbox" required /><span>This work is original and I have disclosed any prior publication.</span></label>
-                                <label className="check-row"><input type="checkbox" required /><span>The work is accurate to the best of my knowledge.</span></label>
-                                <label className="check-row"><input type="checkbox" required /><span>I am open to collaborative editorial revision.</span></label>
-                                <label className="check-row"><input type="checkbox" required /><span>I understand that submission does not guarantee acceptance.</span></label>
-                                <label className="check-row"><input type="checkbox" required /><span>I understand that acceptance does not guarantee immediate publication.</span></label>
-                                <label className="check-row"><input type="checkbox" required /><span>I agree to the contributor terms described on this page.</span></label>
+                                <label className="check-row"><input type="checkbox" name="agreed_original_work" required /><span>This work is original and I have disclosed any prior publication.</span></label>
+                                <label className="check-row"><input type="checkbox" name="agreed_accuracy" required /><span>The work is accurate to the best of my knowledge.</span></label>
+                                <label className="check-row"><input type="checkbox" name="agreed_editorial_revision" required /><span>I am open to collaborative editorial revision.</span></label>
+                                <label className="check-row"><input type="checkbox" name="agreed_no_guaranteed_acceptance" required /><span>I understand that submission does not guarantee acceptance.</span></label>
+                                <label className="check-row"><input type="checkbox" name="agreed_no_guaranteed_publication" required /><span>I understand that acceptance does not guarantee immediate publication.</span></label>
+                                <label className="check-row"><input type="checkbox" name="agreed_contributor_terms" required /><span>I agree to the contributor terms described on this page.</span></label>
                             </div>
                         </fieldset>
 
                         <div className="form-submit-row">
                             <p aria-live="polite">{error || (sent ? 'Thank you. Your submission has been forwarded to the editors at 3rdlamp@3magipress.com.' : 'Submissions are forwarded privately to the editors at 3rdlamp@3magipress.com.')}</p>
+                            {sent && rejected.length > 0 && (
+                                <div className="form-attachment-warning" role="alert">
+                                    <p>Your submission was sent, but these files could not be attached — please email them to 3rdlamp@3magipress.com:</p>
+                                    <ul>{rejected.map((r) => <li key={r}>{r}</li>)}</ul>
+                                </div>
+                            )}
                             <button className="tl-button" type="submit" disabled={submitting}>{submitting ? 'Sending…' : path === 'pitch' ? 'Send My Pitch' : 'Send My Work'}</button>
                         </div>
                     </form>

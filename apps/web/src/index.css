@@ -3153,6 +3153,29 @@ h3 {
   margin: 0;
 }
 
+/* Shown when a submission went through but an attachment was rejected —
+   it has to read as a warning, not as part of the success message. */
+.form-attachment-warning {
+  flex-basis: 100%;
+  order: 1;
+  padding: 0.85rem 1rem;
+  border: 1px solid rgba(200, 120, 60, 0.55);
+  background: rgba(120, 60, 20, 0.16);
+  color: var(--bone);
+  font-size: 0.82rem;
+}
+
+.form-attachment-warning p {
+  max-width: none;
+  color: inherit;
+  margin: 0 0 0.4rem;
+}
+
+.form-attachment-warning ul {
+  margin: 0;
+  padding-left: 1.1rem;
+}
+
 /* Third Lamp — hero entrance section */
 .tl-entrance {
   position: relative;

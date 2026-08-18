@@ -2,7 +2,7 @@ import React, { useMemo, useState } from 'react';
 import { Helmet } from 'react-helmet';
 import ThirdLampHeader from '../components/ThirdLampHeader';
 import ThirdLampFooter from '../components/ThirdLampFooter';
-import pb from '@/lib/pocketbaseClient';
+import { submitForm } from '@/lib/formSubmit';
 
 const CATEGORIES = [
     'General Enquiry',
@@ -41,13 +41,13 @@ function ThirdLampContactPage() {
         }
         setStatus('sending');
         try {
-            await pb.collection('third_lamp_contact').create(form);
+            await submitForm('contact', { ...form, company_website: honeypot });
             setStatus('sent');
             setForm({ name: '', email: '', category: CATEGORIES[0], subject: '', message: '' });
             setAnswer('');
         } catch (err) {
             setStatus('idle');
-            setError('Your message could not be sent. Please try again shortly.');
+            setError(err.message);
         }
     };
 
