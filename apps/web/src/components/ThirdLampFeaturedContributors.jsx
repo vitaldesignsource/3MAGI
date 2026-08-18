@@ -1,6 +1,6 @@
 import React from 'react';
 
-const A = 'https://3magipress.com/assets';
+const A = '/media';
 
 export const featuredContributorsStrip = [
     {
@@ -13,61 +13,61 @@ export const featuredContributorsStrip = [
     {
         id: 'ike-baker',
         name: 'Ike Baker',
-        image: `${A}/author-ike-baker.jpg`,
+        image: `${A}/author-ike-baker.webp`,
         imageAlt: 'Portrait of Ike Baker',
     },
     {
         id: 'jaime-paul-lamb',
         name: 'Jaime Paul Lamb',
-        image: `${A}/author-jaime-paul-lamb.jpg`,
+        image: `${A}/author-jaime-paul-lamb.webp`,
         imageAlt: 'Portrait of Jaime Paul Lamb',
     },
     {
         id: 'daniel-wiseman',
         name: 'Daniel Wiseman',
-        image: `${A}/author-daniel-wiseman.jpg`,
+        image: `${A}/author-daniel-wiseman.webp`,
         imageAlt: 'Portrait of Daniel Wiseman',
     },
     {
         id: 'jake-treyer',
         name: 'Jacob Trayer',
-        image: 'https://horizons-cdn.hostinger.com/1f3d6402-32eb-49eb-a99b-46cfb57570e7/fac6744621da1f040468be8de464350f.webp',
+        image: '/media/fac6744621da1f040468be8de464350f.webp',
         imageAlt: 'Portrait of Jacob Trayer',
     },
     {
         id: 'travis-lawrence',
         name: 'Travis Lawrence',
-        image: 'https://horizons-cdn.hostinger.com/1f3d6402-32eb-49eb-a99b-46cfb57570e7/53acf5993dfdcc0dcc202bdec0263601.webp',
+        image: '/media/53acf5993dfdcc0dcc202bdec0263601.webp',
         imageAlt: 'Portrait of Travis Lawrence',
     },
     {
         id: 'drew-mackinnon',
         name: 'Drew MacKinnon',
-        image: 'https://horizons-cdn.hostinger.com/1f3d6402-32eb-49eb-a99b-46cfb57570e7/2c03cdfbff58b77535a6918b14fad3ec.png',
+        image: '/media/2c03cdfbff58b77535a6918b14fad3ec.webp',
         imageAlt: 'Portrait of Drew MacKinnon',
     },
     {
         id: 'james-oliva',
         name: 'James Oliva',
-        image: 'https://horizons-cdn.hostinger.com/1f3d6402-32eb-49eb-a99b-46cfb57570e7/2afc956520653a1dcfad983538e8b58a.png',
+        image: '/media/2afc956520653a1dcfad983538e8b58a.webp',
         imageAlt: 'Portrait of James Oliva',
     },
     {
         id: 'magick-mike-samu',
         name: 'Magick Mike Samu',
-        image: 'https://horizons-cdn.hostinger.com/1f3d6402-32eb-49eb-a99b-46cfb57570e7/2f0b44a81c9995fbb977e405695a7447.png',
+        image: '/media/2f0b44a81c9995fbb977e405695a7447.webp',
         imageAlt: 'Portrait of Magick Mike Samu',
     },
     {
         id: 'nick-occult-rejects',
         name: 'Nick — The Occult Rejects',
-        image: 'https://horizons-cdn.hostinger.com/1f3d6402-32eb-49eb-a99b-46cfb57570e7/93445a256182a19431bf9cc09e2ef618.png',
+        image: '/media/93445a256182a19431bf9cc09e2ef618.webp',
         imageAlt: 'Portrait of Nick from The Occult Rejects',
     },
     {
         id: 'editorial-circle',
         name: 'Editorial Circle',
-        image: `${A}/hermes-portrait.png`,
+        image: `${A}/hermes-portrait.webp`,
         imageAlt: 'Hermes, editorial emblem of Three Magi Press',
     },
 ];

@@ -6,7 +6,7 @@ import ThirdLampFooter from '../components/ThirdLampFooter';
 import ThirdLampFeaturedContributors from '../components/ThirdLampFeaturedContributors';
 import HeroMotionFX from '../components/HeroMotionFX';
 import { useSubscriptionAuth } from '@/contexts/SubscriptionAuthContext.jsx';
-const A = 'https://3magipress.com/assets';
+const A = '/media';
 
 function EntranceSignup() {
     const { isAuthenticated, currentUser } = useSubscriptionAuth();
@@ -59,7 +59,7 @@ const leadStories = [{
   number: '01',
   title: 'Ways of Being',
   copy: 'On presence, reflection, and the integration of cognition into a grounded mode of being.',
-  image: 'https://horizons-cdn.hostinger.com/1f3d6402-32eb-49eb-a99b-46cfb57570e7/a5b377f07061efefa81d756c64da932f.jpg',
+  image: '/media/a5b377f07061efefa81d756c64da932f.jpg',
   minutes: '12 min'
 }, {
   slug: 'myth-is-more-real-than-facts',
@@ -68,7 +68,7 @@ const leadStories = [{
   number: '02',
   title: 'The Myth Is More Real Than The Facts',
   copy: 'Modernity did not destroy myth — it simply forgot that it was still making it. On mythopoeia, archetypalization, and the sacred mechanics of meaning-making.',
-  image: 'https://images.hostinger.com/43736854-4715-4b1f-9ad2-689cce643c6c.png',
+  image: '/media/43736854-4715-4b1f-9ad2-689cce643c6c.webp',
   minutes: '16 min'
 }, {
   slug: 'the-right-to-question',
@@ -77,7 +77,7 @@ const leadStories = [{
   number: '03',
   title: 'The Right to Question: Esotericism, UFOs, and the Infinite Unknown',
   copy: 'Two stigmatized fields of inquiry — the esoteric and the ufological — share a single ancestor: the refusal to stop asking.',
-  image: 'https://horizons-cdn.hostinger.com/1f3d6402-32eb-49eb-a99b-46cfb57570e7/3311c2125979a66c91ad798141b1adc2.png',
+  image: '/media/3311c2125979a66c91ad798141b1adc2.webp',
   minutes: '11 min'
 }, {
   slug: 'the-twice-born',
@@ -86,7 +86,7 @@ const leadStories = [{
   number: '04',
   title: 'The Twice Born: Theurgy, Orthodoxy, and the Alchemical Christ',
   copy: 'When occultists find Jesus, they miss the point: being born again is the singular purpose of the esoteric mysteries. On theurgy, sorcery, and operative theology.',
-  image: 'https://horizons-cdn.hostinger.com/1f3d6402-32eb-49eb-a99b-46cfb57570e7/ff29a50a84e735afad04a0ae419885e6.png',
+  image: '/media/ff29a50a84e735afad04a0ae419885e6.webp',
   minutes: '16 min'
 }, {
   slug: 'unfamiliar-territory',
@@ -95,7 +95,7 @@ const leadStories = [{
   number: '05',
   title: 'Unfamiliar Territory',
   copy: 'A cautionary account of inexperienced astral projection, the dangers of the hidden world, and the necessity of proper initiation and guidance.',
-  image: 'https://horizons-cdn.hostinger.com/1f3d6402-32eb-49eb-a99b-46cfb57570e7/c5eb7c9a51e723783c5f626b2918d870.png',
+  image: '/media/c5eb7c9a51e723783c5f626b2918d870.webp',
   minutes: '12 min'
 }, {
   slug: 'the-world-is-an-offering',
@@ -104,7 +104,7 @@ const leadStories = [{
   number: '06',
   title: 'The World Is an Offering. I Am. The Sacrifice.',
   copy: 'A diptych of handwritten verse and woodcut-style relief print on sacrifice, offering, and the altar of becoming. By Travis Lawrence.',
-  image: 'https://horizons-cdn.hostinger.com/1f3d6402-32eb-49eb-a99b-46cfb57570e7/ae5c524ef5d662c8f231f0dce1d6020b.png',
+  image: '/media/ae5c524ef5d662c8f231f0dce1d6020b.webp',
   minutes: 'Art'
 }, {
   slug: 'occult-symbols-technologies-practitioner',
@@ -113,7 +113,7 @@ const leadStories = [{
   number: '07',
   title: 'Occult Symbols as Technologies of the Practitioner',
   copy: 'What if the symbol does not first change the world — but first changes the person using it? On sigils, talismans, conditioning, color, and the physiology of ritual.',
-  image: 'https://horizons-cdn.hostinger.com/1f3d6402-32eb-49eb-a99b-46cfb57570e7/448748179fa70bc3c22718919f307a2f.png',
+  image: '/media/448748179fa70bc3c22718919f307a2f.webp',
   minutes: '18 min'
 }, {
   slug: 'the-art-of-learning-to-see',
@@ -122,7 +122,7 @@ const leadStories = [{
   number: '08',
   title: 'The Art of Learning to See',
   copy: 'On the parable of the one-eyed king, the nature of perception, and the work of becoming fully awake.',
-  image: 'https://horizons-cdn.hostinger.com/1f3d6402-32eb-49eb-a99b-46cfb57570e7/6e185c5e78b2c18bfaf1e1dd9f2b016d.png',
+  image: '/media/6e185c5e78b2c18bfaf1e1dd9f2b016d.webp',
   minutes: '12 min'
 }, {
   slug: 'three-months-upon-the-scales',
@@ -131,7 +131,7 @@ const leadStories = [{
   number: '09',
   title: 'Three Months Upon the Scales',
   copy: 'Who knew that a heart could be weighed for three months straight? In the Hall, there is no time; only the hour of the night.',
-  image: 'https://horizons-cdn.hostinger.com/1f3d6402-32eb-49eb-a99b-46cfb57570e7/3b5badc22e5127db413619fea4e0a58b.png',
+  image: '/media/3b5badc22e5127db413619fea4e0a58b.webp',
   minutes: '5 min'
 }, {
   slug: 'black-mirror-of-fire',
@@ -140,7 +140,7 @@ const leadStories = [{
   number: '10',
   title: 'Obsidian: The Black Mirror of Dark Luminosity',
   copy: "A volcanic stone becomes blade, oracle, shadow, and one of humanity's oldest disciplines of seeing.",
-  image: `${A}/obsidian-smoking-mirror.png`,
+  image: `${A}/obsidian-smoking-mirror.webp`,
   minutes: '18 min'
 }];
 const archiveTiles = [{
@@ -148,25 +148,25 @@ const archiveTiles = [{
   index: 'A.01',
   kicker: 'Philosophical allegory',
   title: 'The Painted Gate of Life',
-  image: `${A}/tabula-painted-map-panel.png`
+  image: `${A}/tabula-painted-map-panel.webp`
 }, {
   slug: 'alkaline-aquifers',
   index: 'A.02',
   kicker: 'Elemental nature',
   title: 'The Hidden Waters',
-  image: `${A}/hidden-waters-cave-aquifer.png`
+  image: `${A}/hidden-waters-cave-aquifer.webp`
 }, {
   slug: 'melchizedek-eternal-priest-king',
   index: 'A.03',
   kicker: 'Sacred history',
   title: 'The Eternal Priest-King',
-  image: `${A}/melchizedek-throne-altar.png`
+  image: `${A}/melchizedek-throne-altar.webp`
 }, {
   slug: 'three-lamps-abraham',
   index: 'A.04',
   kicker: 'Living tradition',
   title: 'The Three Lamps of Abraham',
-  image: `${A}/abraham-jerusalem.png`
+  image: `${A}/abraham-jerusalem.webp`
 }];
 function ThirdLampPage() {
   const featuredArticles = [
@@ -194,12 +194,12 @@ function ThirdLampPage() {
 
             <main>
                 <section className="tl-entrance" aria-labelledby="tl-entrance-title">
-                    <img src="https://horizons-cdn.hostinger.com/1f3d6402-32eb-49eb-a99b-46cfb57570e7/eece20501c4d26a32948c4e8bceb3b25.png" alt="An ornate golden door standing ajar, revealing a candlelit chamber beyond" />
+                    <img src="/media/eece20501c4d26a32948c4e8bceb3b25.webp" alt="An ornate golden door standing ajar, revealing a candlelit chamber beyond" />
                     <div className="tl-entrance-shade" aria-hidden="true" />
                     <HeroMotionFX />
                     <div className="tl-entrance-vignette" aria-hidden="true" />
                     <div className="tl-entrance-content">
-                        <img className="tl-entrance-emblem" src="https://horizons-cdn.hostinger.com/1f3d6402-32eb-49eb-a99b-46cfb57570e7/3rd_lamp_magazine-TvY2B.png" alt="The Third Lamp emblem: a crescent moon cradling a lit oil lamp within a numeral three" />
+                        <img className="tl-entrance-emblem" src="/media/3rd_lamp_magazine-TvY2B.webp" alt="The Third Lamp emblem: a crescent moon cradling a lit oil lamp within a numeral three" />
                         <h1 id="tl-entrance-title" className="tl-entrance-title"><span style={{
                 fontFamily: "Cinzel, sans-serif"
               }}><em></em><span style={{
@@ -252,7 +252,7 @@ function ThirdLampPage() {
 
                 <section className="issue-hero" aria-labelledby="issue-title">
                     <div className="issue-hero-bg">
-                        <img src={`${A}/obsidian-altar-mirror.png`} alt="Obsidian mirror on a scholar's ritual table" />
+                        <img src={`${A}/obsidian-altar-mirror.webp`} alt="Obsidian mirror on a scholar's ritual table" />
                         <span className="issue-hero-bg-caption"><span>Plate I</span> Obsidian and the discipline of seeing</span>
                     </div>
                     <div className="issue-hero-fade" aria-hidden="true" />
@@ -361,7 +361,7 @@ function ThirdLampPage() {
                     <div 
                         className="tl-forthcoming-issue-quote"
                         style={{
-                            backgroundImage: 'url(https://horizons-cdn.hostinger.com/1f3d6402-32eb-49eb-a99b-46cfb57570e7/47ca1f939139b1a308654f4cbcb513f9.png)'
+                            backgroundImage: 'url(/media/47ca1f939139b1a308654f4cbcb513f9.webp)'
                         }}
                     >
                         <p>Every plant is a scripture written in living chemistry.</p>
@@ -387,7 +387,7 @@ function ThirdLampPage() {
                 </section>
 
                 <section className="manifesto manifesto-fade" aria-labelledby="manifesto-title">
-                    <img className="manifesto-fade-bg" src={`${A}/hermes-wide.png`} alt="Weathered statue of Hermes against darkness" />
+                    <img className="manifesto-fade-bg" src={`${A}/hermes-wide.webp`} alt="Weathered statue of Hermes against darkness" />
                     <div className="manifesto-fade-overlay" aria-hidden="true" />
                     <div className="manifesto-copy">
                         <span className="manifesto-number" aria-hidden="true">III</span>

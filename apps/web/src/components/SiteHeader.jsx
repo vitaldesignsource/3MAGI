@@ -2,14 +2,14 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import AetherMist from './AetherMist';
 
-const A = 'https://3magipress.com/assets';
+const A = '/media';
 
 function SiteHeader() {
     return (
         <header className="site-header">
             <AetherMist />
             <Link className="brand" to="/">
-                <img className="brand-logo" src={`${A}/three-magi-logo-original.png`} alt="Three Magi Press logo" />
+                <img className="brand-logo" src={`${A}/three-magi-logo-original.webp`} alt="Three Magi Press logo" />
                 <span>
                     <strong>Three Magi Press</strong>
                     <small>Hermetic Publications</small>

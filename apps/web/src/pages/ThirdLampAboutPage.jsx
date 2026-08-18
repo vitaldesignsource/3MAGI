@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 import ThirdLampHeader from '../components/ThirdLampHeader';
 import ThirdLampFooter from '../components/ThirdLampFooter';
-const A = 'https://3magipress.com/assets';
+const A = '/media';
 function ThirdLampAboutPage() {
   return <>
             <Helmet>
@@ -15,7 +15,7 @@ function ThirdLampAboutPage() {
 
                 <main>
                     <section className="about-lamp-hero" aria-labelledby="about-title">
-                        <img src={`${A}/third-lamp-living-archive-bg.png`} alt="" />
+                        <img src={`${A}/third-lamp-living-archive-bg.webp`} alt="" />
                         <div className="about-lamp-hero-shade" aria-hidden="true"></div>
                         <div className="about-lamp-hero-copy">
                             <p className="kicker">The Third Lamp</p>
@@ -37,10 +37,10 @@ function ThirdLampAboutPage() {
 
                     <section className="about-body" aria-label="About The Third Lamp">
                         <div className="about-threshold">
-                            <img src="https://horizons-cdn.hostinger.com/1f3d6402-32eb-49eb-a99b-46cfb57570e7/8c195612b68c8813eb45e38fb66fae36.png" alt="" className="about-threshold-bg" />
+                            <img src="/media/8c195612b68c8813eb45e38fb66fae36.webp" alt="" className="about-threshold-bg" />
                             <div className="about-threshold-overlay" aria-hidden="true"></div>
                             <aside className="about-sigil-card" aria-label="Editorial principle">
-                                <img src="https://horizons-cdn.hostinger.com/1f3d6402-32eb-49eb-a99b-46cfb57570e7/58e69c51822babba8b4ccc79aadd79d2.png" alt="An open stone archway leading to a misty path, evoking the threshold of the gate" className="about-sigil-image" />
+                                <img src="/media/58e69c51822babba8b4ccc79aadd79d2.webp" alt="An open stone archway leading to a misty path, evoking the threshold of the gate" className="about-sigil-image" />
                                 <span aria-hidden="true">III</span>
                                 <strong>The gate is open, but it still possesses a threshold.</strong>
                                 <p>Welcoming new voices does not mean surrendering standards. The lamp remains guarded.</p>

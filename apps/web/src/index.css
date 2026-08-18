@@ -985,7 +985,7 @@ h3 {
   width: min(46rem, 56vw);
   background:
     linear-gradient(90deg, rgba(6, 6, 6, 0.16), rgba(6, 6, 6, 0.86)),
-    url("https://3magipress.com/assets/hermes-statue.jpg") center / cover no-repeat;
+    url("/media/hermes-statue.jpg") center / cover no-repeat;
   opacity: 0.16;
   filter: grayscale(1) contrast(1.1);
   pointer-events: none;
@@ -2186,7 +2186,7 @@ h3 {
   position: absolute;
   inset: 0;
   z-index: -1;
-  background-image: url('https://horizons-cdn.hostinger.com/1f3d6402-32eb-49eb-a99b-46cfb57570e7/03402ff5eb322a36be62942ab27e1b54.png');
+  background-image: url('/media/03402ff5eb322a36be62942ab27e1b54.webp');
   background-size: cover;
   background-position: center;
   background-attachment: local;

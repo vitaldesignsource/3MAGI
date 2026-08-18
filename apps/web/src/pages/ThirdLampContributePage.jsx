@@ -68,7 +68,7 @@ function ConstellationBg() {
   );
 }
 
-const A = 'https://3magipress.com/assets';
+const A = '/media';
 
 const publishTypes = [
     { n: '01', title: 'Essays and Features', copy: 'Historical, philosophical, esoteric, cultural, scientific, or comparative articles.' },
@@ -548,7 +548,7 @@ function ThirdLampContributePage() {
 
             <main>
                 <section className="open-gate-hero" aria-labelledby="open-gate-title">
-                    <img src={`${A}/hidden-waters-journal-spring.png`} alt="A field researcher writing beside a hidden spring at sunset" />
+                    <img src={`${A}/hidden-waters-journal-spring.webp`} alt="A field researcher writing beside a hidden spring at sunset" />
                     <div className="open-gate-hero-shade" aria-hidden="true"></div>
                     <div className="open-gate-hero-copy">
                         <p className="kicker">Contribute to The Third Lamp</p>
@@ -567,7 +567,7 @@ function ThirdLampContributePage() {
                 <Reveal as="section" className="contribute-intro" aria-labelledby="why-contribute-title">
                     <figure className="contribute-intro-image" aria-hidden="true">
                         <img
-                            src="https://horizons-cdn.hostinger.com/1f3d6402-32eb-49eb-a99b-46cfb57570e7/b0c3ff5ac251a375898678ea35a49e4d.png"
+                            src="/media/b0c3ff5ac251a375898678ea35a49e4d.webp"
                             alt="A scholar's desk by candlelight with an open manuscript, compass, and armillary sphere"
                         />
                     </figure>
@@ -618,7 +618,7 @@ function ThirdLampContributePage() {
 
                 <section className="open-call open-call-issue-ii open-call-issue-ii-bg" id="open-call" aria-labelledby="issue-ii-title">
                     <figure className="open-call-art">
-                        <img src={`${A}/green-crucible-oasis-vertical.png`} alt="A clear green oasis winding through an arid landscape" />
+                        <img src={`${A}/green-crucible-oasis-vertical.webp`} alt="A clear green oasis winding through an arid landscape" />
                         <blockquote className="open-call-art-quote">
                             <p>Every plant is a scripture written in living chemistry.</p>
                             <cite>Paracelsus</cite>
@@ -626,7 +626,7 @@ function ThirdLampContributePage() {
                         <figcaption>Issue II · The green intelligence within matter</figcaption>
                     </figure>
                     <div className="open-call-copy open-call-copy-with-bg">
-                        <img src="https://images.hostinger.com/36093a05-9ee0-471c-a093-64b5b39b0f6d.png" alt="" className="open-call-bg-image" aria-hidden="true" />
+                        <img src="/media/36093a05-9ee0-471c-a093-64b5b39b0f6d.webp" alt="" className="open-call-bg-image" aria-hidden="true" />
                         <div className="open-call-bg-overlay"></div>
                         <div className="open-call-copy-content">
                             <p className="kicker">The Open Gate · Submissions for Issue II</p>
@@ -667,7 +667,7 @@ function ThirdLampContributePage() {
 
                 <section className="open-call open-call-issue-iii" id="issue-iii" aria-labelledby="issue-iii-title">
                     <figure className="open-call-art">
-                        <img src={`${A}/melchizedek-throne-altar.png`} alt="An ancient stone throne and altar illuminated by a descending shaft of light" />
+                        <img src={`${A}/melchizedek-throne-altar.webp`} alt="An ancient stone throne and altar illuminated by a descending shaft of light" />
                         <figcaption>Issue III · The descent of forbidden wisdom</figcaption>
                     </figure>
                     <div className="open-call-copy">
@@ -678,7 +678,7 @@ function ThirdLampContributePage() {
                         <p className="open-call-lede">An issue tracing traditions of descent, revelation, sacred instruction, transgression, and the perilous gifts said to have entered human history from beyond its ordinary bounds.</p>
                         <figure style={{ margin: '32px 0 0', padding: 0, border: '1px solid rgba(179,139,70,0.34)', overflow: 'hidden', maxWidth: '830px' }}>
                             <img
-                                src="https://images.hostinger.com/2d506753-16de-43b9-bde7-4fb1130ae386.png"
+                                src="/media/2d506753-16de-43b9-bde7-4fb1130ae386.webp"
                                 alt="Ancient Mesopotamian stone relief sculpture of a bearded deity figure wearing a horned crown, carved in limestone, set within an arched niche"
                                 style={{ display: 'block', width: '100%', height: 'auto' }}
                             />
@@ -720,56 +720,56 @@ function ThirdLampContributePage() {
                     <div className="open-call-contributors-scroll">
                         <div className="open-call-contributors">
                             <figure>
-                                <img src={`${A}/author-drew-mackinnon.png`} alt="Drew MacKinnon" />
+                                <img src={`${A}/author-drew-mackinnon.webp`} alt="Drew MacKinnon" />
                                 <figcaption>
                                     <strong>Drew MacKinnon</strong>
                                     <small>Author · Researcher · Photographer</small>
                                 </figcaption>
                             </figure>
                             <figure>
-                                <img src="https://horizons-cdn.hostinger.com/1f3d6402-32eb-49eb-a99b-46cfb57570e7/fac6744621da1f040468be8de464350f.webp" alt="Jacob Trayer" />
+                                <img src="/media/fac6744621da1f040468be8de464350f.webp" alt="Jacob Trayer" />
                                 <figcaption>
                                     <strong>Jake Treyer</strong>
                                     <small>Freemason · Esoteric Scholar</small>
                                 </figcaption>
                             </figure>
                             <figure>
-                                <img src={`${A}/author-ike-baker.jpg`} alt="Ike Baker" />
+                                <img src={`${A}/author-ike-baker.webp`} alt="Ike Baker" />
                                 <figcaption>
                                     <strong>Ike Baker</strong>
                                     <small>Author · Lecturer · Ceremonialist</small>
                                 </figcaption>
                             </figure>
                             <figure>
-                                <img src={`${A}/author-jaime-paul-lamb.jpg`} alt="Jaime Paul Lamb" />
+                                <img src={`${A}/author-jaime-paul-lamb.webp`} alt="Jaime Paul Lamb" />
                                 <figcaption>
                                     <strong>Jaime Paul Lamb</strong>
                                     <small>Author · Astrologer · Scholar</small>
                                 </figcaption>
                             </figure>
                             <figure>
-                                <img src={`${A}/author-daniel-wiseman.jpg`} alt="Daniel Wiseman" />
+                                <img src={`${A}/author-daniel-wiseman.webp`} alt="Daniel Wiseman" />
                                 <figcaption>
                                     <strong>Daniel Wiseman</strong>
                                     <small>Herbalist · Spagyrist · Educator</small>
                                 </figcaption>
                             </figure>
                             <figure>
-                                <img src="https://horizons-cdn.hostinger.com/1f3d6402-32eb-49eb-a99b-46cfb57570e7/53acf5993dfdcc0dcc202bdec0263601.webp" alt="Travis Lawrence" />
+                                <img src="/media/53acf5993dfdcc0dcc202bdec0263601.webp" alt="Travis Lawrence" />
                                 <figcaption>
                                     <strong>Travis Lawrence</strong>
                                     <small>Artist · Printmaker</small>
                                 </figcaption>
                             </figure>
                             <figure>
-                                <img src="https://horizons-cdn.hostinger.com/1f3d6402-32eb-49eb-a99b-46cfb57570e7/2afc956520653a1dcfad983538e8b58a.png" alt="James Oliva" />
+                                <img src="/media/2afc956520653a1dcfad983538e8b58a.webp" alt="James Oliva" />
                                 <figcaption>
                                     <strong>James Oliva</strong>
                                     <small>Author · Podcast Host</small>
                                 </figcaption>
                             </figure>
                             <figure>
-                                <img src="https://horizons-cdn.hostinger.com/1f3d6402-32eb-49eb-a99b-46cfb57570e7/2f0b44a81c9995fbb977e405695a7447.png" alt="Magick Mike Samu" />
+                                <img src="/media/2f0b44a81c9995fbb977e405695a7447.webp" alt="Magick Mike Samu" />
                                 <figcaption>
                                     <strong>Magick Mike Samu</strong>
                                     <small>Author · Freemason · Practitioner</small>

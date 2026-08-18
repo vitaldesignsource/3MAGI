@@ -6,7 +6,7 @@ import { lampPostCategories, didYouKnowBoxes } from '../data/lampPost';
 import { GrimoireIcon, AuctionIcon, ExhibitionIcon, CollectionIcon, ArchaeologyIcon, TranslationsIcon, PapersIcon, DocumentariesIcon, EventsIcon, ObituariesIcon, ReleasesIcon, MediaIcon, SocietiesIcon, SightingsIcon, OdditiesIcon } from '../components/LampPostIcons';
 import pocketbaseClient from '@/lib/pocketbaseClient';
 
-const HERO_IMG = 'https://images.hostinger.com/1de8f5d3-251a-4d14-87fd-b1c5e811568e.png';
+const HERO_IMG = '/media/1de8f5d3-251a-4d14-87fd-b1c5e811568e.webp';
 
 function interleave(categories, boxes) {
     const out = [];

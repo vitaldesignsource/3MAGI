@@ -4,10 +4,10 @@ import { Link } from 'react-router-dom';
 import SiteHeader from '../components/SiteHeader';
 import SiteFooter from '../components/SiteFooter';
 
-const A = 'https://3magipress.com/assets';
+const A = '/media';
 
 const books = [
-    { vol: 'I', title: 'The Architecture of Hidden Forces', kicker: 'Book I / First Principles', copy: 'First principles: Source, Spirit, Essence, Virtue, Force, Form — and the axiom that form is frozen force.', image: `${A}/book-architecture-hidden-forces.png` },
+    { vol: 'I', title: 'The Architecture of Hidden Forces', kicker: 'Book I / First Principles', copy: 'First principles: Source, Spirit, Essence, Virtue, Force, Form — and the axiom that form is frozen force.', image: `${A}/book-architecture-hidden-forces.webp` },
     { vol: 'II', title: 'Root Ether and the Fourfold Field', kicker: 'Book II / The Living Medium', copy: 'The living medium of formation: Root Ether, the etheric tides, the gunas, tattvas, elements, and the subtle field beneath manifestation.' },
     { vol: 'III', title: 'Logos, Number, and the Birth of Form', kicker: 'Book III / Sacred Measure', copy: 'Measure, pattern, number, geometry, element, vessel, and configuration — the principles by which force becomes structured.' },
     { vol: 'IV', title: 'The Celestial Anatomy of Force', kicker: 'Book IV / Celestial Order', copy: 'Astrology, lunar mansions, planetary virtues, celestial timing, and the cosmic ordering of hidden forces.' },
@@ -27,7 +27,7 @@ function BooksPage() {
 
             <main>
                 <section className="books-page-hero" aria-labelledby="catalog-title">
-                    <img src={`${A}/hermes-wide.png`} alt="Weathered statue of Hermes in darkness" />
+                    <img src={`${A}/hermes-wide.webp`} alt="Weathered statue of Hermes in darkness" />
                     <div className="books-page-hero-scrim" aria-hidden="true"></div>
                     <div className="books-page-hero-copy">
                         <p className="eyebrow">The complete sequence</p>

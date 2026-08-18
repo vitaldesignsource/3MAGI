@@ -4,17 +4,17 @@ import { Link } from 'react-router-dom';
 import SiteHeader from '../components/SiteHeader';
 import SiteFooter from '../components/SiteFooter';
 
-const A = 'https://3magipress.com/assets';
+const A = '/media';
 
 const journalEntries = [
-    { slug: 'black-mirror-of-fire', img: `${A}/obsidian-altar-mirror.png`, date: '2026-07-02', dateLabel: 'July 2, 2026', title: 'The Black Mirror of Fire', copy: 'Obsidian, the volcanic stone of vision, shadow, and hidden power.' },
-    { slug: 'melchizedek-eternal-priest-king', img: `${A}/melchizedek-throne-altar.png`, date: '2026-07-02', dateLabel: 'July 2, 2026', title: 'Melchizedek and the Eternal Priest-King', copy: 'The hidden order beyond temple, tribe, and time.' },
-    { slug: 'red-seven-lost-nation', img: `${A}/red-seven-circle7-book.png`, date: '2026-07-02', dateLabel: 'July 2, 2026', title: 'The Red Seven and the Lost Nation', copy: 'Circle 7, Noble Drew Ali, and the mystical rebirth of Moorish Science.' },
-    { slug: 'three-lamps-abraham', img: `${A}/abraham-jerusalem.png`, date: '2026-07-02', dateLabel: 'July 2, 2026', title: 'The Three Lamps of Abraham', copy: 'The hidden unity of Christianity, Islam, and Judaism beneath doctrine, ritual, and law.' },
-    { slug: 'alkaline-aquifers', img: `${A}/hidden-waters-spring-sunset.png`, date: '2026-07-01', dateLabel: 'July 1, 2026', title: 'The Hidden Waters', copy: 'A meditation on hidden waters, imagination, symbolic discipline, and inner sources.' },
-    { slug: 'herculaneum', img: 'https://horizons-cdn.hostinger.com/1f3d6402-32eb-49eb-a99b-46cfb57570e7/14b14b041b0e37cfaf26890d79c1866d.jpg', date: '2026-06-29', dateLabel: 'June 29, 2026', title: 'Herculaneum', copy: 'The buried library beneath Vesuvius and the reawakening of the ancient mind.' },
-    { slug: 'prognostikon', img: `${A}/pergamon-bronze-oracle.png`, date: '2026-06-20', dateLabel: 'June 20, 2026', title: 'The Bronze Oracle of Pergamon', copy: 'Fate, magic, technical divination, and the ancient machine of hidden signs.' },
-    { slug: 'tabula-cebetis', img: `${A}/tabula-painted-map-panel.png`, date: '2026-05-18', dateLabel: 'May 18, 2026', title: 'The Tabula Cebetis', copy: "A window into ancient philosophy, moral allegory, and the soul's symbolic journey." },
+    { slug: 'black-mirror-of-fire', img: `${A}/obsidian-altar-mirror.webp`, date: '2026-07-02', dateLabel: 'July 2, 2026', title: 'The Black Mirror of Fire', copy: 'Obsidian, the volcanic stone of vision, shadow, and hidden power.' },
+    { slug: 'melchizedek-eternal-priest-king', img: `${A}/melchizedek-throne-altar.webp`, date: '2026-07-02', dateLabel: 'July 2, 2026', title: 'Melchizedek and the Eternal Priest-King', copy: 'The hidden order beyond temple, tribe, and time.' },
+    { slug: 'red-seven-lost-nation', img: `${A}/red-seven-circle7-book.webp`, date: '2026-07-02', dateLabel: 'July 2, 2026', title: 'The Red Seven and the Lost Nation', copy: 'Circle 7, Noble Drew Ali, and the mystical rebirth of Moorish Science.' },
+    { slug: 'three-lamps-abraham', img: `${A}/abraham-jerusalem.webp`, date: '2026-07-02', dateLabel: 'July 2, 2026', title: 'The Three Lamps of Abraham', copy: 'The hidden unity of Christianity, Islam, and Judaism beneath doctrine, ritual, and law.' },
+    { slug: 'alkaline-aquifers', img: `${A}/hidden-waters-spring-sunset.webp`, date: '2026-07-01', dateLabel: 'July 1, 2026', title: 'The Hidden Waters', copy: 'A meditation on hidden waters, imagination, symbolic discipline, and inner sources.' },
+    { slug: 'herculaneum', img: '/media/14b14b041b0e37cfaf26890d79c1866d.jpg', date: '2026-06-29', dateLabel: 'June 29, 2026', title: 'Herculaneum', copy: 'The buried library beneath Vesuvius and the reawakening of the ancient mind.' },
+    { slug: 'prognostikon', img: `${A}/pergamon-bronze-oracle.webp`, date: '2026-06-20', dateLabel: 'June 20, 2026', title: 'The Bronze Oracle of Pergamon', copy: 'Fate, magic, technical divination, and the ancient machine of hidden signs.' },
+    { slug: 'tabula-cebetis', img: `${A}/tabula-painted-map-panel.webp`, date: '2026-05-18', dateLabel: 'May 18, 2026', title: 'The Tabula Cebetis', copy: "A window into ancient philosophy, moral allegory, and the soul's symbolic journey." },
 ];
 
 function HomePage() {
@@ -28,10 +28,10 @@ function HomePage() {
 
             <main id="top">
                 <section className="hero" aria-labelledby="hero-title">
-                    <img className="hero-image" src={`${A}/hermes-wide.png`} alt="Weathered statue of Hermes against a dark background" />
+                    <img className="hero-image" src={`${A}/hermes-wide.webp`} alt="Weathered statue of Hermes against a dark background" />
                     <div className="hero-scrim" aria-hidden="true"></div>
                     <div className="hero-content">
-                        <img className="hero-logo" src={`${A}/three-magi-logo-original.png`} alt="Magi Press logo" />
+                        <img className="hero-logo" src={`${A}/three-magi-logo-original.webp`} alt="Magi Press logo" />
                         <p className="eyebrow">Esoteric books for the midnight scholar</p>
                         <h1 id="hero-title">Three Magi Press</h1>
                         <p className="hero-copy">
@@ -46,7 +46,7 @@ function HomePage() {
                 </section>
 
                 <section className="third-lamp-invitation" aria-labelledby="third-lamp-title">
-                    <img src={`${A}/obsidian-altar-mirror.png`} alt="Obsidian mirror on an esoteric scholar's table" />
+                    <img src={`${A}/obsidian-altar-mirror.webp`} alt="Obsidian mirror on an esoteric scholar's table" />
                     <div>
                         <p className="eyebrow">New from Three Magi Press</p>
                         <h2 id="third-lamp-title">The Third Lamp</h2>
@@ -68,7 +68,7 @@ function HomePage() {
                     <div className="book-grid">
                         <article className="book-card">
                             <figure className="book-cover book-cover-image">
-                                <img src={`${A}/book-architecture-hidden-forces.png`} alt="Cover of The Architecture of Hidden Forces" />
+                                <img src={`${A}/book-architecture-hidden-forces.webp`} alt="Cover of The Architecture of Hidden Forces" />
                             </figure>
                             <div className="book-copy">
                                 <p className="book-kicker">Book I / First Principles</p>
@@ -133,7 +133,7 @@ function HomePage() {
                         </p>
                     </div>
                     <figure className="statue-panel">
-                        <img src={`${A}/hermes-portrait.png`} alt="Close view of a weathered Hermes statue" />
+                        <img src={`${A}/hermes-portrait.webp`} alt="Close view of a weathered Hermes statue" />
                     </figure>
                     <dl className="principles">
                         <div>
@@ -152,7 +152,7 @@ function HomePage() {
                 </section>
 
                 <section className="journal-band" id="journal" aria-labelledby="journal-title">
-                    <img className="journal-backdrop" src={`${A}/asklepios.jpg`} alt="" aria-hidden="true" />
+                    <img className="journal-backdrop" src={`${A}/asklepios.webp`} alt="" aria-hidden="true" />
                     <div className="section-heading">
                         <p className="eyebrow">From the blog</p>
                         <h2 id="journal-title">Field notes from the hidden library</h2>

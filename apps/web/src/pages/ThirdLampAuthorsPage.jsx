@@ -4,14 +4,14 @@ import { Link } from 'react-router-dom';
 import ThirdLampHeader from '../components/ThirdLampHeader';
 import ThirdLampFooter from '../components/ThirdLampFooter';
 
-const A = 'https://3magipress.com/assets';
+const A = '/media';
 
 const authors = [
     {
         id: 'ike-baker',
         role: 'Author · Lecturer · Ceremonialist',
         name: 'Ike Baker',
-        image: `${A}/author-ike-baker.jpg`,
+        image: `${A}/author-ike-baker.webp`,
         imageAlt: 'Portrait of author and esoteric scholar Ike Baker',
         caption: 'Ike Baker · Official author portrait',
         reverse: true,
@@ -27,7 +27,7 @@ const authors = [
         id: 'jaime-paul-lamb',
         role: 'Author · Astrologer · Esoteric Scholar',
         name: 'Jaime Paul Lamb',
-        image: `${A}/author-jaime-paul-lamb.jpg`,
+        image: `${A}/author-jaime-paul-lamb.webp`,
         imageAlt: 'Black-and-white portrait of author and astrologer Jaime Paul Lamb',
         caption: 'Jaime Paul Lamb · Official author portrait',
         bio: 'Jaime Paul Lamb is a traditional astrologer and scholar of Western esotericism whose writing joins astrological technique, occult philosophy, and Masonic symbolism. He is the author of The Astrological Goetia and three books on Freemasonry and the Western esoteric tradition, and teaches astrology for the Institute for Hermetic Studies.',
@@ -42,7 +42,7 @@ const authors = [
         id: 'daniel-wiseman',
         role: 'Herbalist · Spagyrist · Educator',
         name: 'Daniel Wiseman',
-        image: `${A}/author-daniel-wiseman.jpg`,
+        image: `${A}/author-daniel-wiseman.webp`,
         imageAlt: 'Daniel Wiseman working with glass vessels in an alchemical laboratory',
         caption: 'Daniel Wiseman · Secret Fire Apothecary',
         reverse: true,
@@ -58,7 +58,7 @@ const authors = [
         id: 'jake-treyer',
         role: 'Freemason · Esoteric Scholar · Podcast Host',
         name: 'Jacob Trayer',
-        image: 'https://horizons-cdn.hostinger.com/1f3d6402-32eb-49eb-a99b-46cfb57570e7/fac6744621da1f040468be8de464350f.webp',
+        image: '/media/fac6744621da1f040468be8de464350f.webp',
         imageAlt: 'Portrait of author and esoteric scholar Jacob Trayer',
         caption: 'Jacob Trayer · Official author portrait',
         reverse: true,
@@ -76,7 +76,7 @@ const authors = [
         id: 'travis-lawrence',
         role: 'Artist',
         name: 'Travis Lawrence',
-        image: 'https://horizons-cdn.hostinger.com/1f3d6402-32eb-49eb-a99b-46cfb57570e7/53acf5993dfdcc0dcc202bdec0263601.webp',
+        image: '/media/53acf5993dfdcc0dcc202bdec0263601.webp',
         imageAlt: 'Portrait of printmaker and artist Travis Lawrence',
         caption: 'Travis Lawrence · Official artist portrait',
         bio: 'Travis Lawrence is a Midwestern printmaker whose allegorical imagery draws upon Jungian psychology, mythology, medieval alchemical manuscripts, and illuminated texts. His intricately composed relief prints—often individually painted by hand—appear as fragments of a larger symbolic narrative, inviting contemplation of archetypes, mystery, transformation, and metaphor. Raised within a religious environment, Lawrence developed an early awareness of ideas and realities extending beyond the individual self. He approaches artistic creation as a means of opening doorways into these deeper dimensions, giving visible form to them through symbol and image. Much like the alchemical process that informs his work, Lawrence regards printmaking as a meditative act through which ordinary materials are transformed into expressions of a higher state.',
@@ -99,7 +99,7 @@ const authors = [
         id: 'drew-mackinnon',
         role: 'Author · Researcher · Photographer · Explorer',
         name: 'Drew MacKinnon',
-        image: 'https://horizons-cdn.hostinger.com/1f3d6402-32eb-49eb-a99b-46cfb57570e7/2c03cdfbff58b77535a6918b14fad3ec.png',
+        image: '/media/2c03cdfbff58b77535a6918b14fad3ec.webp',
         imageAlt: 'Portrait of author and explorer Drew MacKinnon',
         caption: 'Drew MacKinnon · Official author portrait',
         reverse: true,
@@ -111,7 +111,7 @@ const authors = [
         id: 'james-oliva',
         role: 'Author · Podcast Host',
         name: 'James Oliva',
-        image: 'https://horizons-cdn.hostinger.com/1f3d6402-32eb-49eb-a99b-46cfb57570e7/2afc956520653a1dcfad983538e8b58a.png',
+        image: '/media/2afc956520653a1dcfad983538e8b58a.webp',
         imageAlt: 'Portrait of author and podcast host James Oliva',
         caption: 'James Oliva · The TLB Podcast',
         reverse: true,
@@ -133,7 +133,7 @@ const authors = [
         id: 'magick-mike-samu',
         role: 'Author · Freemason · Esoteric Practitioner',
         name: 'Magick Mike Samu',
-        image: 'https://horizons-cdn.hostinger.com/1f3d6402-32eb-49eb-a99b-46cfb57570e7/2f0b44a81c9995fbb977e405695a7447.png',
+        image: '/media/2f0b44a81c9995fbb977e405695a7447.webp',
         imageAlt: 'Portrait of Magick Mike Samu in Masonic regalia',
         caption: 'Brother Michael Samu · Three Great Lights #323',
         bio: 'Raised in the mystical desert of Joshua Tree, CA, Brother Michael Samu, affectionately nicknamed "Magick Mike," has dedicated his Masonic journey to exploring the Craft\'s philosophical and esoteric foundations. His commitment is demonstrated through various officerships, notably his current roles as Organist for Three Great Lights #323 and the Southern California Research Lodge #1002. Brother Samu contributes to a broader understanding of Freemasonry through his lectures and published works in respected journals such as the Fraternal Review and PRS Journal, where scholarly inquiry is paramount. His perspective is uniquely enriched by his dedicated practice of ceremonial magick and Kriya yoga, allowing him to shed light on these paths as potent, transformative spiritual paths. He hopes his work encourages a renewed appreciation for the Craft as a contemporary mystery school.',
@@ -149,7 +149,7 @@ const authors = [
         id: 'nick-occult-rejects',
         role: 'Author · Occultist · Podcast Host',
         name: 'Nick — The Occult Rejects',
-        image: 'https://horizons-cdn.hostinger.com/1f3d6402-32eb-49eb-a99b-46cfb57570e7/93445a256182a19431bf9cc09e2ef618.png',
+        image: '/media/93445a256182a19431bf9cc09e2ef618.webp',
         imageAlt: 'Portrait of Nick from The Occult Rejects podcast',
         caption: 'Nick · The Occult Rejects Podcast',
         bio: 'Nick is an occultist, researcher, and the host of The Occult Rejects podcast. Formerly known online as "NY Patriot," he is recognized for sharing his extensive firsthand experiences within esoteric and ceremonial magic circles. He spent six years studying within the system of magic of the O.T.O., participating in its initiations, rituals, and ceremonial practices before eventually leaving the order. His work heavily explores the mechanics of magic, the influence of Aleister Crowley, ritual symbolism, and physiological or nervous system effects tied to magical practice. He frequently discusses his profound meditative experiences — including what he describes as "crossing the abyss" — and his movement away from formal occult orders toward an internal spiritual connection. As host of The Occult Rejects, he breaks down occult fundamentals, esoteric tarot, symbolism, and deep historical and spiritual topics with various guests.',
@@ -168,7 +168,7 @@ const authors = [
         id: 'brandon-lee',
         role: 'Author · Esoteric Educator',
         name: 'Brandon Lee',
-        image: 'https://horizons-cdn.hostinger.com/1f3d6402-32eb-49eb-a99b-46cfb57570e7/0a376c2829385cb2199d8b9ba38fe040.png',
+        image: '/media/0a376c2829385cb2199d8b9ba38fe040.webp',
         imageAlt: 'Portrait of author and esoteric educator Brandon Lee',
         caption: 'Brandon Lee · Magus in the Media',
         bio: 'Exploring Myth, Philosophy, Magick & Meaning in Storytelling Through the Ages.',
@@ -185,7 +185,7 @@ const authors = [
         id: 'meg-vollmer',
         role: 'Writer · Initiate · Musician · Podcast Host',
         name: 'Meg Vollmer',
-        image: 'https://horizons-cdn.hostinger.com/1f3d6402-32eb-49eb-a99b-46cfb57570e7/45a5e985abc7f38f3b6cba93c55bfc6a.jpg',
+        image: '/media/45a5e985abc7f38f3b6cba93c55bfc6a.jpg',
         imageAlt: 'Portrait of Meg Vollmer on a desert highway',
         caption: 'Meg Vollmer · Official author portrait',
         bio: 'Meg Vollmer is an initiate, writer, and songwriter devoted to a life of deep listening and attentive relationship with the unseen. Her work comes from lived experience and genuine encounters with the enigmatic, through which landscape, ritual, myth, and inner life become intimately intertwined. She is drawn to the threads running through people, places, and events that seem to belong to a story older than the life in which they appear.',
@@ -211,7 +211,7 @@ const authors = [
         id: 'editorial-circle',
         role: 'Founding Editorial Collective',
         name: 'Three Magi Press Editorial Circle',
-        image: `${A}/hermes-portrait.png`,
+        image: `${A}/hermes-portrait.webp`,
         imageAlt: 'Weathered statue of Hermes, editorial emblem of Three Magi Press',
         caption: 'Hermes · Editorial emblem of Three Magi Press',
         bio: 'The editorial circle shapes The Third Lamp and the long-form essays of Three Magi Press. Working across sacred history, Hermetic philosophy, material culture, comparative religion, and living traditions, it approaches esoteric subjects with visual rigor, historical curiosity, and interpretive restraint.',
@@ -243,7 +243,7 @@ function ThirdLampAuthorsPage() {
                             <p>Writers, editors, translators, and contemplative scholars working where sacred history, philosophy, and living tradition meet.</p>
                         </div>
                         <figure className="authors-hero-art">
-                            <img src="https://horizons-cdn.hostinger.com/1f3d6402-32eb-49eb-a99b-46cfb57570e7/ce0ad2ce1c8e2c9fd53f341fa8452eb8.png" alt="A scholar studying an illuminated manuscript" />
+                            <img src="/media/ce0ad2ce1c8e2c9fd53f341fa8452eb8.webp" alt="A scholar studying an illuminated manuscript" />
                         </figure>
                     </section>
 

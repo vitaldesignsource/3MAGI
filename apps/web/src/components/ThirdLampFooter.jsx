@@ -2,13 +2,13 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Instagram, Facebook, X } from 'lucide-react';
 
-const A = 'https://3magipress.com/assets';
+const A = '/media';
 
 function ThirdLampFooter() {
     return (
         <footer className="tl-footer tl-footer-rich">
             <div className="tl-footer-brand">
-                <img className="tl-footer-mark" src={`${A}/third-lamp-brand.png`} alt="" />
+                <img className="tl-footer-mark" src={`${A}/third-lamp-brand.webp`} alt="" />
                 <div>
                     <p className="tl-footer-kicker">The Third Lamp</p>
                     <strong>A publication of Three Magi Press</strong>
