@@ -19,14 +19,9 @@ function ThirdLampAboutPage() {
                         <div className="about-lamp-hero-shade" aria-hidden="true"></div>
                         <div className="about-lamp-hero-copy">
                             <p className="kicker">The Third Lamp</p>
-                            <h1 id="about-title" style={{
-              textAlign: "center"
-            }}><span style={{
-                fontSize: "28px",
-                lineHeight: "normal"
-              }}><span style={{
-                  lineHeight: "normal"
-                }}>An independent magazine for esoteric inquiry, symbolic thought, and distinctive voices.</span></span></h1>
+                            <h1 id="about-title">
+                                An independent magazine for <em>esoteric inquiry</em>, <em>symbolic thought</em>, and <em>distinctive voices</em>.
+                            </h1>
                             <p>The Third Lamp gathers essays, research, art, field notes, interviews, translations, and living traditions into a publication devoted to hidden dimensions of reality without sacrificing discernment, craft, or intellectual seriousness.</p>
                             <div className="about-hero-actions">
                                 <Link className="tl-button" to="/third-lamp/contribute">View the Call</Link>

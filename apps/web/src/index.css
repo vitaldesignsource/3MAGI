@@ -8257,9 +8257,27 @@ h3 {
   max-width: 890px;
   margin: 18px 0 26px;
   color: var(--bone);
-  font-size: clamp(2.65rem, 5.8vw, 6.6rem);
+  /* Larger than before and set tight — the statement should read as one
+     block of type rather than separate lines. (It previously rendered at a
+     flat 28px because the Horizons visual editor had written inline
+     font-size/line-height onto the heading, overriding this rule entirely.) */
+  font-size: clamp(1.8rem, 3.4vw, 3.5rem);
   font-weight: 400;
-  line-height: 0.98;
+  line-height: 1.08;
+  letter-spacing: -0.005em;
+  text-wrap: balance;
+}
+
+/* The three things the magazine is for, lifted out of the sentence. */
+.third-lamp-scope .about-lamp-hero-copy h1 em {
+  font-family: "TC Seraphine", "Cinzel", Georgia, serif;
+  font-style: italic;
+  font-weight: 300;
+  background: linear-gradient(180deg, #f4e3ba 0%, #d1ad68 52%, #a97f38 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #d1ad68;
 }
 .third-lamp-scope .about-lamp-hero-copy > p:last-of-type {
   max-width: 690px;
@@ -8268,6 +8286,44 @@ h3 {
   font: 1.08rem/1.82 Georgia, serif;
 }
 .third-lamp-scope .about-hero-actions { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 34px; }
+
+/* --- About hero motion -------------------------------------------------- */
+/* The copy settles in on load, one element after the next, while the
+   photograph behind it drifts very slowly so the section is never quite
+   static. Both are disabled under prefers-reduced-motion. */
+@keyframes tl-about-rise {
+  from { opacity: 0; transform: translateY(18px); }
+  to   { opacity: 1; transform: none; }
+}
+
+@keyframes tl-about-drift {
+  0%   { transform: scale(1.06) translate3d(0, 0, 0); }
+  50%  { transform: scale(1.12) translate3d(-1.4%, -1.2%, 0); }
+  100% { transform: scale(1.06) translate3d(0, 0, 0); }
+}
+
+.third-lamp-scope .about-lamp-hero > img {
+  animation: tl-about-drift 38s ease-in-out infinite;
+  will-change: transform;
+}
+
+.third-lamp-scope .about-lamp-hero-copy > * {
+  animation: tl-about-rise 1s cubic-bezier(0.22, 0.61, 0.36, 1) both;
+}
+
+.third-lamp-scope .about-lamp-hero-copy > .kicker        { animation-delay: 0.05s; }
+.third-lamp-scope .about-lamp-hero-copy > h1             { animation-delay: 0.18s; }
+.third-lamp-scope .about-lamp-hero-copy > p              { animation-delay: 0.42s; }
+.third-lamp-scope .about-lamp-hero-copy > .about-hero-actions { animation-delay: 0.58s; }
+
+@media (prefers-reduced-motion: reduce) {
+  .third-lamp-scope .about-lamp-hero > img,
+  .third-lamp-scope .about-lamp-hero-copy > * {
+    animation: none;
+  }
+}
+
+
 .third-lamp-scope .about-body { max-width: 1320px; margin: 0 auto; padding: 88px 5vw 110px; }
 .third-lamp-scope .about-threshold {
   position: relative;
@@ -8504,7 +8560,7 @@ h3 {
       rgba(5, 7, 7, 0.22);
   }
   .third-lamp-scope .about-lamp-hero-copy { padding: 90px 24px; }
-  .third-lamp-scope .about-lamp-hero-copy h1 { font-size: clamp(2.6rem, 14vw, 4.7rem); }
+  .third-lamp-scope .about-lamp-hero-copy h1 { font-size: clamp(1.55rem, 6.4vw, 2.5rem); }
   .third-lamp-scope .about-hero-actions { display: grid; }
   .third-lamp-scope .about-hero-actions .tl-button { width: 100%; }
   .third-lamp-scope .about-body { padding: 60px 18px 78px; }
