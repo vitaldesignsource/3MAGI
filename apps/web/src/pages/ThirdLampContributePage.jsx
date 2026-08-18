@@ -559,7 +559,7 @@ function ThirdLampContributePage() {
 
             <main>
                 <section className="open-gate-hero" aria-labelledby="open-gate-title">
-                    <img src={`${A}/hidden-waters-journal-spring.webp`} alt="A field researcher writing beside a hidden spring at sunset" />
+                    <img src={`${A}/open-gate-angels.webp`} alt="A weathered stone archway in a misty forest, flanked by two winged angel statues, its iron gate standing open onto a path" />
                     <div className="open-gate-hero-shade" aria-hidden="true"></div>
                     <div className="open-gate-hero-copy">
                         <p className="kicker">Contribute to The Third Lamp</p>
