@@ -2,8 +2,8 @@
 
 @font-face {
   font-family: "TC Seraphine";
-  src: url("https://threemagipress.com/fonts/TC-Seraphine-Light.woff2") format("woff2"),
-       url("https://threemagipress.com/fonts/TC-Seraphine-Light.woff") format("woff");
+  src: url("/fonts/TC-Seraphine-Light.woff2") format("woff2"),
+       url("/fonts/TC-Seraphine-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -11,8 +11,8 @@
 
 @font-face {
   font-family: "TC Seraphine";
-  src: url("https://threemagipress.com/fonts/TC-Seraphine-Regular.woff2") format("woff2"),
-       url("https://threemagipress.com/fonts/TC-Seraphine-Regular.woff") format("woff");
+  src: url("/fonts/TC-Seraphine-Regular.woff2") format("woff2"),
+       url("/fonts/TC-Seraphine-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -20,8 +20,8 @@
 
 @font-face {
   font-family: "TC Seraphine";
-  src: url("https://threemagipress.com/fonts/TC-Seraphine-Italic.woff2") format("woff2"),
-       url("https://threemagipress.com/fonts/TC-Seraphine-Italic.woff") format("woff");
+  src: url("/fonts/TC-Seraphine-Italic.woff2") format("woff2"),
+       url("/fonts/TC-Seraphine-Italic.woff") format("woff");
   font-weight: 400;
   font-style: italic;
   font-display: swap;
@@ -29,8 +29,8 @@
 
 @font-face {
   font-family: "TC Seraphine";
-  src: url("https://threemagipress.com/fonts/TC-Seraphine-Bold.woff2") format("woff2"),
-       url("https://threemagipress.com/fonts/TC-Seraphine-Bold.woff") format("woff");
+  src: url("/fonts/TC-Seraphine-Bold.woff2") format("woff2"),
+       url("/fonts/TC-Seraphine-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -38,8 +38,8 @@
 
 @font-face {
   font-family: "TC Seraphine";
-  src: url("https://threemagipress.com/fonts/TC-Seraphine-Italic-Bold.woff2") format("woff2"),
-       url("https://threemagipress.com/fonts/TC-Seraphine-Italic-Bold.woff") format("woff");
+  src: url("/fonts/TC-Seraphine-Italic-Bold.woff2") format("woff2"),
+       url("/fonts/TC-Seraphine-Italic-Bold.woff") format("woff");
   font-weight: 700;
   font-style: italic;
   font-display: swap;
@@ -47,8 +47,8 @@
 
 @font-face {
   font-family: "TC Seraphine Round";
-  src: url("https://threemagipress.com/fonts/TC-Seraphine-Round-Light.woff2") format("woff2"),
-       url("https://threemagipress.com/fonts/TC-Seraphine-Round-Light.woff") format("woff");
+  src: url("/fonts/TC-Seraphine-Round-Light.woff2") format("woff2"),
+       url("/fonts/TC-Seraphine-Round-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -56,8 +56,8 @@
 
 @font-face {
   font-family: "TC Seraphine Round";
-  src: url("https://threemagipress.com/fonts/TC-Seraphine-Round-Light-Italic.woff2") format("woff2"),
-       url("https://threemagipress.com/fonts/TC-Seraphine-Round-Light-Italic.woff") format("woff");
+  src: url("/fonts/TC-Seraphine-Round-Light-Italic.woff2") format("woff2"),
+       url("/fonts/TC-Seraphine-Round-Light-Italic.woff") format("woff");
   font-weight: 300;
   font-style: italic;
   font-display: swap;
@@ -65,8 +65,8 @@
 
 @font-face {
   font-family: "TC Seraphine Round";
-  src: url("https://threemagipress.com/fonts/TC-Seraphine-Round-Regular.woff2") format("woff2"),
-       url("https://threemagipress.com/fonts/TC-Seraphine-Round-Regular.woff") format("woff");
+  src: url("/fonts/TC-Seraphine-Round-Regular.woff2") format("woff2"),
+       url("/fonts/TC-Seraphine-Round-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -74,8 +74,8 @@
 
 @font-face {
   font-family: "TC Seraphine Round";
-  src: url("https://threemagipress.com/fonts/TC-Seraphine-Round-Italic.woff2") format("woff2"),
-       url("https://threemagipress.com/fonts/TC-Seraphine-Round-Italic.woff") format("woff");
+  src: url("/fonts/TC-Seraphine-Round-Italic.woff2") format("woff2"),
+       url("/fonts/TC-Seraphine-Round-Italic.woff") format("woff");
   font-weight: 400;
   font-style: italic;
   font-display: swap;
@@ -83,8 +83,8 @@
 
 @font-face {
   font-family: "TC Seraphine Round";
-  src: url("https://threemagipress.com/fonts/TC-Seraphine-Round-Bold.woff2") format("woff2"),
-       url("https://threemagipress.com/fonts/TC-Seraphine-Round-Bold.woff") format("woff");
+  src: url("/fonts/TC-Seraphine-Round-Bold.woff2") format("woff2"),
+       url("/fonts/TC-Seraphine-Round-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -92,8 +92,8 @@
 
 @font-face {
   font-family: "TC Seraphine Round";
-  src: url("https://threemagipress.com/fonts/TC-Seraphine-Round-Bold-Italic.woff2") format("woff2"),
-       url("https://threemagipress.com/fonts/TC-Seraphine-Round-Bold-Italic.woff") format("woff");
+  src: url("/fonts/TC-Seraphine-Round-Bold-Italic.woff2") format("woff2"),
+       url("/fonts/TC-Seraphine-Round-Bold-Italic.woff") format("woff");
   font-weight: 700;
   font-style: italic;
   font-display: swap;
