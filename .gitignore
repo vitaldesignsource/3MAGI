@@ -1,0 +1,16 @@
+# dependencies / build output
+node_modules/
+dist/
+*.log
+
+# PocketBase runtime: platform binary + live database (contains user data — never commit)
+apps/pocketbase/pocketbase
+apps/pocketbase/pb_data/*
+!apps/pocketbase/pb_data/types.d.ts
+
+# local env overrides
+.env.local
+.env.*.local
+
+# OS
+.DS_Store
