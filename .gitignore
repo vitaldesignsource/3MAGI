@@ -20,3 +20,6 @@ apps/pocketbase/pb_data/*
 
 # Horizons session-journal dev plugin output
 vault/
+
+# generated at build by apps/web/tools/generate-llms.js
+apps/web/public/llms.txt
