@@ -522,8 +522,11 @@ function ThirdLampContributePage() {
         setSubmitting(true);
         const formEl = e.target;
         try {
-            const fd = new FormData(formEl);
-            fd.set('path', path);
+            // Path goes first, as a label, so the editors' email opens with
+            // "Path: Completed work" rather than ending on "path: completed".
+            const fd = new FormData();
+            fd.set('path', path === 'pitch' ? 'Pitch an idea' : 'Completed work');
+            for (const [key, value] of new FormData(formEl)) fd.append(key, value);
             ['document_upload', 'image_attachments[]'].forEach((name) => {
                 const input = formEl.querySelector(`[name="${name}"]`);
                 if (input && input.files && input.files.length === 0) {
@@ -901,11 +904,11 @@ function ThirdLampContributePage() {
                                 </label>
                                 <label>
                                     <span>Related issue</span>
-                                    <select name="related_issue" required defaultValue="issue-ii">
-                                        <option value="issue-ii">Issue II — The Green Crucible</option>
-                                        <option value="issue-iii">Issue III — Those Who Descended</option>
-                                        <option value="future">Future themed issue</option>
-                                        <option value="archive">Living Archive / Open consideration</option>
+                                    <select name="related_issue" required defaultValue="Issue II — The Green Crucible">
+                                        <option>Issue II — The Green Crucible</option>
+                                        <option>Issue III — Those Who Descended</option>
+                                        <option>Future themed issue</option>
+                                        <option>Living Archive / Open consideration</option>
                                     </select>
                                 </label>
                             </div>
