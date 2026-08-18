@@ -7030,6 +7030,29 @@ h3 {
 .third-lamp-scope .standards-section,
 .third-lamp-scope .process-section,
 .third-lamp-scope .faq-section { max-width: var(--content); margin: 0 auto; padding: 95px 5vw 105px; border-top: 1px solid var(--line); border-bottom: 0; }
+
+/* Contributor Standards sits over the tower-stair photograph. The image is
+   already very dark, so the overlay only needs to deepen it enough to hold
+   the body copy — heaviest at the top behind the heading, easing toward the
+   card grid. `isolation` keeps the ::before overlay behind this section's own
+   content without escaping into neighbouring sections. */
+.third-lamp-scope .standards-section {
+  position: relative;
+  isolation: isolate;
+  background-image: url("/media/standards-tower-stair.webp");
+  background-size: cover;
+  background-position: 50% 35%;
+  background-repeat: no-repeat;
+}
+
+.third-lamp-scope .standards-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(180deg, rgba(8, 10, 10, 0.72) 0%, rgba(8, 10, 10, 0.58) 45%, rgba(8, 10, 10, 0.75) 100%);
+}
+
 .third-lamp-scope .contribute-section-head { max-width: 820px; margin: 0 0 52px; display: block; }
 .third-lamp-scope .contribute-section-head h2,
 .third-lamp-scope .portal-head h2 { margin: 12px 0 18px; font-size: clamp(2.25rem, 4.7vw, 5rem); font-weight: 400; line-height: 1.05; }
