@@ -405,13 +405,19 @@ if ($contentLength > 0 && $_POST === [] && $_FILES === []) {
     ));
 }
 
-// Reject cross-site posts. Browsers always send Origin on cross-origin POSTs;
-// no Origin means same-origin, or a non-browser client (which the honeypot
-// and rate limit deal with).
+// Reject cross-site posts. Browsers send Origin on every POST; it must be
+// either this very host (same-origin — covers any dev port too) or one of
+// our production hosts. No Origin at all means a non-browser client, which
+// the honeypot and rate limit deal with.
 $origin = (string) ($_SERVER['HTTP_ORIGIN'] ?? '');
 if ($origin !== '') {
-    $host = parse_url($origin, PHP_URL_HOST);
-    if (!is_string($host) || !in_array(strtolower($host), ALLOWED_HOSTS, true)) {
+    $originHost = parse_url($origin, PHP_URL_HOST);
+    $selfHost = strtolower((string) preg_replace('/:\d+$/', '', (string) ($_SERVER['HTTP_HOST'] ?? '')));
+    if (!is_string($originHost)) {
+        fail(403, 'Cross-site submissions are not accepted.');
+    }
+    $originHost = strtolower($originHost);
+    if ($originHost !== $selfHost && !in_array($originHost, ALLOWED_HOSTS, true)) {
         fail(403, 'Cross-site submissions are not accepted.');
     }
 }

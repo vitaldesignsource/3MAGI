@@ -16,21 +16,31 @@ const allDeps = Object.keys(pkg.dependencies || {});
 
 const isDev = process.env.NODE_ENV !== 'production';
 
-// Local development outside Horizons: the PocketBase/API backend lives behind
-// `/hcgi/*` on Hostinger and is not available on a laptop. Set
-// LOCAL_BACKEND_PROXY=https://threemagipress.com to forward those calls to the
-// live backend from the local dev server. Unset (the default, and inside
-// Horizons) this adds nothing.
-const localBackendProxy = process.env.LOCAL_BACKEND_PROXY
-	? {
-		'/hcgi': {
-			target: process.env.LOCAL_BACKEND_PROXY,
-			changeOrigin: true,
-			secure: true,
-			ws: true,
-		},
-	}
-	: undefined;
+// Local development outside Horizons. Two opt-in proxies, both inert unless set:
+//  - LOCAL_BACKEND_PROXY=https://threemagipress.com forwards `/hcgi/*`
+//    (PocketBase/API on Hostinger) to a live deployment.
+//  - LOCAL_PHP_PROXY=http://127.0.0.1:8098 forwards `/api/*` to a local PHP
+//    server running public/api (`php -S 127.0.0.1:8098 -t public`), so the
+//    form handler can be exercised in dev. Without it Vite would serve the
+//    .php source as a static file.
+const devProxy = {};
+if (process.env.LOCAL_BACKEND_PROXY) {
+	devProxy['/hcgi'] = {
+		target: process.env.LOCAL_BACKEND_PROXY,
+		changeOrigin: true,
+		secure: true,
+		ws: true,
+	};
+}
+if (process.env.LOCAL_PHP_PROXY) {
+	devProxy['/api'] = {
+		target: process.env.LOCAL_PHP_PROXY,
+		// Keep the browser's Host so the handler's same-origin check (Origin
+		// host === Host) passes exactly as it will in production.
+		changeOrigin: false,
+	};
+}
+const localBackendProxy = Object.keys(devProxy).length ? devProxy : undefined;
 
 // Only the Horizons editor may read this dev server cross-origin. `cors: true`
 // sends `Access-Control-Allow-Origin: *`, which lets any site read the source
