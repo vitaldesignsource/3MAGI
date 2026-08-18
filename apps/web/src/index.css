@@ -6978,10 +6978,6 @@ h3 {
 }
 .third-lamp-scope .open-gate-hero > img { position: absolute; inset: 0; z-index: -3; width: 100%; height: 100%; object-fit: cover; object-position: center 58%; filter: saturate(0.58) contrast(1.1); }
 .third-lamp-scope .open-gate-hero-shade { position: absolute; inset: 0; z-index: -2; background: linear-gradient(180deg, rgba(8,10,10,0.62), rgba(8,10,10,0.82)); }
-.third-lamp-scope .open-gate-hero::before,
-.third-lamp-scope .open-gate-hero::after { content: ""; position: absolute; z-index: -1; pointer-events: none; }
-.third-lamp-scope .open-gate-hero::before { inset: 15%; border: 1px solid rgba(179,139,70,0.2); }
-.third-lamp-scope .open-gate-hero::after { display: none; }
 .third-lamp-scope .open-gate-hero-copy { position: relative; width: min(950px, calc(100% - 48px)); margin: 0 auto; padding: 115px 0 150px; text-align: center; }
 .third-lamp-scope .open-gate-hero-copy h1 { margin: 14px 0 20px; font-size: clamp(4rem, 10vw, 9.5rem); font-weight: 400; line-height: 0.9; }
 .third-lamp-scope .open-gate-hero-copy h1#open-gate-title { font-family: "TC Seraphine", "Cinzel", serif; font-weight: 300; }
