@@ -2466,7 +2466,12 @@ h3 {
   overflow-y: auto;
   scrollbar-width: thin;
   scrollbar-color: rgba(179,139,70,0.45) rgba(179,139,70,0.1);
-  padding-right: 0.3rem;
+}
+
+/* Breathing room between the counts and the scrollbar. Needs to outrank
+   `.archive-filter-group ul { padding: 0 }` above, which otherwise zeroes it. */
+.archive-filter-group .archive-filter-scroll {
+  padding-right: 0.9rem;
 }
 
 .archive-filter-scroll::-webkit-scrollbar {
