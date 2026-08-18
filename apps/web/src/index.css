@@ -7077,6 +7077,54 @@ h3 {
   background: linear-gradient(180deg, rgba(8, 10, 10, 0.88) 0%, rgba(8, 10, 10, 0.82) 45%, rgba(8, 10, 10, 0.9) 100%);
 }
 
+/* The FAQ ("Before you approach the gate") and the whole Contact page share
+   the lantern-causeway photograph — one walks a path lined with angels toward
+   a ruin, which suits both the closing questions and writing to the editors.
+   Kept at the same faint level as What We Publish. */
+.third-lamp-scope .gate-faq-section {
+  position: relative;
+  isolation: isolate;
+  background-image: url("/media/lantern-causeway.webp");
+  background-size: cover;
+  background-position: 50% 22%;
+  background-repeat: no-repeat;
+}
+
+.third-lamp-scope .gate-faq-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(180deg, rgba(8, 10, 10, 0.88) 0%, rgba(8, 10, 10, 0.82) 45%, rgba(8, 10, 10, 0.9) 100%);
+}
+
+/* Contact page: the image backs the entire page, header and footer included,
+   so it is set on the page wrapper rather than on .tl-plans-page — that class
+   is shared with the Plans page, which should stay plain. Fixed attachment
+   keeps the causeway still while the letter form scrolls over it; it is
+   dropped on touch devices, where fixed backgrounds judder or fail outright. */
+.third-lamp-scope.tl-contact-page {
+  position: relative;
+  isolation: isolate;
+  background-image: url("/media/lantern-causeway.webp");
+  background-size: cover;
+  background-position: 50% 30%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.third-lamp-scope.tl-contact-page::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(180deg, rgba(8, 10, 10, 0.9) 0%, rgba(8, 10, 10, 0.84) 50%, rgba(8, 10, 10, 0.92) 100%);
+}
+
+@media (hover: none) {
+  .third-lamp-scope.tl-contact-page { background-attachment: scroll; }
+}
+
 .third-lamp-scope .contribute-section-head { max-width: 820px; margin: 0 0 52px; display: block; }
 .third-lamp-scope .contribute-section-head h2,
 .third-lamp-scope .portal-head h2 { margin: 12px 0 18px; font-size: clamp(2.25rem, 4.7vw, 5rem); font-weight: 400; line-height: 1.05; }

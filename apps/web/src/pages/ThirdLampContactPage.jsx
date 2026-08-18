@@ -52,7 +52,7 @@ function ThirdLampContactPage() {
     };
 
     return (
-        <div className="third-lamp-scope">
+        <div className="third-lamp-scope tl-contact-page">
             <Helmet>
                 <title>Contact — The Third Lamp</title>
                 <meta name="description" content="Write to the editors of The Third Lamp: editorial enquiries, membership questions, permissions, tips for The Lamp Post, and press." />
