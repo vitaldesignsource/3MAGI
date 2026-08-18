@@ -163,7 +163,7 @@ function ProductDetailPage() {
         <div className="grid md:grid-cols-2 gap-8 glass-card p-8 rounded-2xl">
           <motion.div initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.5 }} className="relative">
             <div className="relative overflow-hidden rounded-lg shadow-2xl h-96 md:h-[500px]">
-              <img
+              <img loading="lazy" decoding="async"
                 src={!currentImage?.url ? placeholderImage : currentImage.url}
                 alt={product.title}
                 className="w-full h-full object-cover"
@@ -220,7 +220,7 @@ function ProductDetailPage() {
                       index === currentImageIndex ? 'border-purple-500' : 'border-white/30 hover:border-white/50'
                     }`}
                   >
-                    <img
+                    <img loading="lazy" decoding="async"
                       src={!image.url ? placeholderImage : image.url}
                       alt={`${product.title} ${index + 1}`}
                       className="w-full h-full object-cover"

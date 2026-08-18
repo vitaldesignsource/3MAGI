@@ -46,7 +46,7 @@ function HomePage() {
                 </section>
 
                 <section className="third-lamp-invitation" aria-labelledby="third-lamp-title">
-                    <img src={`${A}/obsidian-altar-mirror.webp`} alt="Obsidian mirror on an esoteric scholar's table" />
+                    <img loading="lazy" decoding="async" src={`${A}/obsidian-altar-mirror.webp`} alt="Obsidian mirror on an esoteric scholar's table" />
                     <div>
                         <p className="eyebrow">New from Three Magi Press</p>
                         <h2 id="third-lamp-title">The Third Lamp</h2>
@@ -68,7 +68,7 @@ function HomePage() {
                     <div className="book-grid">
                         <article className="book-card">
                             <figure className="book-cover book-cover-image">
-                                <img src={`${A}/book-architecture-hidden-forces.webp`} alt="Cover of The Architecture of Hidden Forces" />
+                                <img loading="lazy" decoding="async" src={`${A}/book-architecture-hidden-forces.webp`} alt="Cover of The Architecture of Hidden Forces" />
                             </figure>
                             <div className="book-copy">
                                 <p className="book-kicker">Book I / First Principles</p>
@@ -133,7 +133,7 @@ function HomePage() {
                         </p>
                     </div>
                     <figure className="statue-panel">
-                        <img src={`${A}/hermes-portrait.webp`} alt="Close view of a weathered Hermes statue" />
+                        <img loading="lazy" decoding="async" src={`${A}/hermes-portrait.webp`} alt="Close view of a weathered Hermes statue" />
                     </figure>
                     <dl className="principles">
                         <div>
@@ -152,7 +152,7 @@ function HomePage() {
                 </section>
 
                 <section className="journal-band" id="journal" aria-labelledby="journal-title">
-                    <img className="journal-backdrop" src={`${A}/asklepios.webp`} alt="" aria-hidden="true" />
+                    <img loading="lazy" decoding="async" className="journal-backdrop" src={`${A}/asklepios.webp`} alt="" aria-hidden="true" />
                     <div className="section-heading">
                         <p className="eyebrow">From the blog</p>
                         <h2 id="journal-title">Field notes from the hidden library</h2>
@@ -162,7 +162,7 @@ function HomePage() {
                         {journalEntries.map((entry) => (
                             <Link className="journal-entry" to={`/articles/${entry.slug}`} key={entry.title}>
                                 <figure className="journal-thumb">
-                                    <img src={entry.img} alt="" aria-hidden="true" />
+                                    <img loading="lazy" decoding="async" src={entry.img} alt="" aria-hidden="true" />
                                 </figure>
                                 <div className="journal-copy">
                                     <time dateTime={entry.date}>{entry.dateLabel}</time>

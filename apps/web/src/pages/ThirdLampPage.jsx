@@ -214,7 +214,7 @@ function ThirdLampPage() {
 
                 <section className="issue-hero" aria-labelledby="issue-title">
                     <div className="issue-hero-bg">
-                        <img src={`${A}/obsidian-altar-mirror.webp`} alt="Obsidian mirror on a scholar's ritual table" />
+                        <img loading="lazy" decoding="async" src={`${A}/obsidian-altar-mirror.webp`} alt="Obsidian mirror on a scholar's ritual table" />
                         <span className="issue-hero-bg-caption"><span>Plate I</span> Obsidian and the discipline of seeing</span>
                     </div>
                     <div className="issue-hero-fade" aria-hidden="true" />
@@ -238,7 +238,7 @@ function ThirdLampPage() {
                 {featuredArticles.map((article, idx) => (
                   <section key={article.slug} className="featured-article-hero" aria-labelledby={`featured-article-title-${idx}`}>
                     <div className="featured-article-bg">
-                      <img src={article.image} alt={article.imageAlt || `Illustration for: ${article.title}`} />
+                      <img loading="lazy" decoding="async" src={article.image} alt={article.imageAlt || `Illustration for: ${article.title}`} />
                       <span className="featured-article-bg-caption"><span>Featured</span> {article.type}</span>
                     </div>
                     <div className="featured-article-fade" aria-hidden="true" />
@@ -264,7 +264,7 @@ function ThirdLampPage() {
                     {featureBoxArticles.map((article) => (
                       <Link key={article.slug} to={`/articles/${article.slug}`} className="feature-box">
                         <div className="feature-box-image">
-                          <img src={article.image} alt={article.imageAlt || `Illustration for: ${article.title}`} />
+                          <img loading="lazy" decoding="async" src={article.image} alt={article.imageAlt || `Illustration for: ${article.title}`} />
                           <div className="feature-box-overlay" aria-hidden="true" />
                         </div>
                         <div className="feature-box-content">
@@ -291,7 +291,7 @@ function ThirdLampPage() {
                     </div>
                     <div className="lead-grid">
                         {remainingStories.map(story => <Link className="story-card" to={`/articles/${story.slug}`} key={story.slug}>
-                                <figure><img src={story.image} alt={story.imageAlt || `Illustration for: ${story.title}`} /></figure>
+                                <figure><img loading="lazy" decoding="async" src={story.image} alt={story.imageAlt || `Illustration for: ${story.title}`} /></figure>
                                 <div className="story-copy">
                                     <div className="story-meta"><span className="story-type">{story.type}</span><span className="story-number">{story.number}</span></div>
                                     <h3>{story.title}</h3>
@@ -341,7 +341,7 @@ function ThirdLampPage() {
                     <div className="archive-strip">
                         {archiveTiles.map(tile => <Link className="archive-tile" to={`/articles/${tile.slug}`} key={tile.slug}>
                                 <span className="archive-tile-index">{tile.index}</span>
-                                <img src={tile.image} alt={tile.imageAlt || `Cover image for: ${tile.title}`} />
+                                <img loading="lazy" decoding="async" src={tile.image} alt={tile.imageAlt || `Cover image for: ${tile.title}`} />
                                 <span className="archive-tile-caption"><small>{tile.kicker}</small>{tile.title}</span>
                             </Link>)}
                     </div>
@@ -349,7 +349,7 @@ function ThirdLampPage() {
                 </section>
 
                 <section className="manifesto manifesto-fade" aria-labelledby="manifesto-title">
-                    <img className="manifesto-fade-bg" src={`${A}/hermes-wide.webp`} alt="Weathered statue of Hermes against darkness" />
+                    <img loading="lazy" decoding="async" className="manifesto-fade-bg" src={`${A}/hermes-wide.webp`} alt="Weathered statue of Hermes against darkness" />
                     <div className="manifesto-fade-overlay" aria-hidden="true" />
                     <div className="manifesto-copy">
                         <span className="manifesto-number" aria-hidden="true">III</span>

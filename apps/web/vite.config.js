@@ -431,6 +431,12 @@ export default defineConfig({
 		},
 	},
 	build: {
+		// The output directory sits outside the project root (../../dist), which
+		// Vite refuses to clear unless told to. Without this every build layers a
+		// new hashed bundle on top of the last, so the folder had accumulated 25
+		// asset files where only 2 are referenced — around 11MB of dead JS/CSS
+		// being copied to the server on every deploy.
+		emptyOutDir: true,
 		rollupOptions: {
 			external: [
 				'@babel/parser',

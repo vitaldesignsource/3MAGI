@@ -8,7 +8,7 @@ function ThirdLampFooter() {
     return (
         <footer className="tl-footer tl-footer-rich">
             <div className="tl-footer-brand">
-                <img className="tl-footer-mark" src={`${A}/third-lamp-brand.webp`} alt="" />
+                <img loading="lazy" decoding="async" className="tl-footer-mark" src="/media/thumb/third-lamp-brand.webp" alt="" />
                 <div>
                     <p className="tl-footer-kicker">The Third Lamp</p>
                     <strong>A publication of Three Magi Press</strong>

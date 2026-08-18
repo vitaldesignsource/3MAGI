@@ -75,7 +75,7 @@ const ShoppingCart = ({ isCartOpen, setIsCartOpen }) => {
               ) : (
                 cartItems.map(item => (
                   <div key={item.variant.id} className="flex items-center gap-4 bg-card border border-border p-3 rounded-lg">
-                    <img src={item.product.image} alt={item.product.title} className="w-20 h-20 object-cover rounded-md" />
+                    <img loading="lazy" decoding="async" src={item.product.image} alt={item.product.title} className="w-20 h-20 object-cover rounded-md" />
                     <div className="flex-grow">
                       <h3 className="font-semibold text-card-foreground">{item.product.title}</h3>
                       <p className="text-sm text-muted-foreground">{item.variant.title}</p>

@@ -53,7 +53,7 @@ const ProductCard = ({ product, index }) => {
       <Link to={`/product/${product.id}`}>
         <div className="rounded-lg border bg-card text-card-foreground shadow-sm glass-card border-0 text-white overflow-hidden group transition-all duration-300 hover:shadow-2xl hover:-translate-y-1">
           <div className="relative">
-            <img
+            <img loading="lazy" decoding="async"
               src={product.image ||placeholderImage}
               alt={product.title}
               className="w-full h-64 object-cover transition-transform duration-300"

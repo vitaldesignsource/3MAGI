@@ -428,7 +428,7 @@ function ArticlePage() {
                                                 padding: '0.5rem',
                                                 background: 'rgba(12,14,14,0.7)',
                                             }}>
-                                                <img
+                                                <img loading="lazy" decoding="async"
                                                     src={img.src}
                                                     alt={img.alt}
                                                     style={{
@@ -500,7 +500,7 @@ function ArticlePage() {
                                                 <div className="marginalia-figures">
                                                     {article.marginalia.figures.map((figure) => (
                                                         <div className="marginalia-figure" key={figure.name}>
-                                                            {figure.image && <img src={figure.image} alt={figure.name} />}
+                                                            {figure.image && <img loading="lazy" decoding="async" src={figure.image} alt={figure.name} />}
                                                             <div>
                                                                 <strong>{figure.name}</strong>
                                                                 <p>{figure.role}</p>
@@ -525,7 +525,7 @@ function ArticlePage() {
                                                     <p className="eyebrow" style={{ marginBottom: '0.2rem' }}>Now Available</p>
                                                     <p className="marginalia-subhead">{article.marginalia.bookPromo.title}</p>
                                                     <div style={{ display: 'flex', gap: '1rem', alignItems: 'flex-start' }}>
-                                                        <img src={article.marginalia.bookPromo.coverImage} alt={article.marginalia.bookPromo.title}
+                                                        <img loading="lazy" decoding="async" src={article.marginalia.bookPromo.coverImage} alt={article.marginalia.bookPromo.title}
                                                             style={{ width: '80px', flexShrink: 0, border: '1px solid rgba(179,139,70,0.35)', display: 'block' }} />
                                                         <div>
                                                             <p style={{ margin: '0 0 0.6rem', color: 'var(--muted)', font: '0.78rem/1.55 Georgia, serif' }}>{article.marginalia.bookPromo.description}</p>
@@ -554,7 +554,7 @@ function ArticlePage() {
                             <div className="story-grid">
                                 {related.map((r) => (
                                     <Link className="story-card" to={`/articles/${r.slug}`} key={r.slug}>
-                                        <img src={r.image} alt="" aria-hidden="true" />
+                                        <img loading="lazy" decoding="async" src={r.image} alt="" aria-hidden="true" />
                                         <div>
                                             <p className="eyebrow">{r.kicker}</p>
                                             <h3>{r.title}</h3>
@@ -685,7 +685,7 @@ function ArticlePage() {
                                             if (paragraph && typeof paragraph === 'object' && paragraph.type === 'image') {
                                                 return (
                                                     <figure key={pIndex} className="article-inline-image">
-                                                        <img src={paragraph.src} alt={paragraph.alt || ''} />
+                                                        <img loading="lazy" decoding="async" src={paragraph.src} alt={paragraph.alt || ''} />
                                                         {paragraph.caption && <figcaption>{paragraph.caption}</figcaption>}
                                                     </figure>
                                                 );
@@ -696,7 +696,7 @@ function ArticlePage() {
                                     )}
                                     {section.image && (
                                         <figure>
-                                            <img src={section.image} alt={section.imageAlt || ''} />
+                                            <img loading="lazy" decoding="async" src={section.image} alt={section.imageAlt || ''} />
                                             {section.imageCaption && <figcaption>{section.imageCaption}</figcaption>}
                                         </figure>
                                     )}
@@ -753,7 +753,7 @@ function ArticlePage() {
                                 <div className="marginalia-figures">
                                     {marginalia.figures.map((figure) => (
                                         <div className="marginalia-figure" key={figure.name}>
-                                            <img src={figure.image} alt={figure.name} />
+                                            <img loading="lazy" decoding="async" src={figure.image} alt={figure.name} />
                                             <div>
                                                 <strong>{figure.name}</strong>
                                                 <p>{figure.role}</p>
@@ -787,7 +787,7 @@ function ArticlePage() {
                                     <p className="eyebrow" style={{ marginBottom: '0.2rem' }}>{marginalia.relatedViewing.label}</p>
                                     <p className="marginalia-subhead">{marginalia.relatedViewing.title}</p>
                                     <button type="button" className="marginalia-video" aria-label={`Play video: ${marginalia.relatedViewing.title}`}>
-                                        <img src={marginalia.relatedViewing.thumbnail} alt={`Video preview thumbnail: ${marginalia.relatedViewing.title}`} />
+                                        <img loading="lazy" decoding="async" src={marginalia.relatedViewing.thumbnail} alt={`Video preview thumbnail: ${marginalia.relatedViewing.title}`} />
                                         <span className="marginalia-video-play" aria-hidden="true">&#9654;</span>
                                     </button>
                                 </div>
@@ -817,7 +817,7 @@ function ArticlePage() {
                     <div className="archive-strip">
                         {related.map((a) => (
                             <Link className="archive-tile" to={`/articles/${a.slug}`} key={a.slug}>
-                                <img src={a.image} alt={a.imageAlt || `Cover image for article: ${a.title}`} />
+                                <img loading="lazy" decoding="async" src={a.image} alt={a.imageAlt || `Cover image for article: ${a.title}`} />
                                 <span><small>{a.kicker}</small>{a.title}</span>
                             </Link>
                         ))}

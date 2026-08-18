@@ -27,7 +27,7 @@ function BooksPage() {
 
             <main>
                 <section className="books-page-hero" aria-labelledby="catalog-title">
-                    <img src={`${A}/hermes-wide.webp`} alt="Weathered statue of Hermes in darkness" />
+                    <img loading="lazy" decoding="async" src={`${A}/hermes-wide.webp`} alt="Weathered statue of Hermes in darkness" />
                     <div className="books-page-hero-scrim" aria-hidden="true"></div>
                     <div className="books-page-hero-copy">
                         <p className="eyebrow">The complete sequence</p>
@@ -55,7 +55,7 @@ function BooksPage() {
                             <article className="book-card" key={book.vol}>
                                 {book.image ? (
                                     <figure className="book-cover book-cover-image">
-                                        <img src={book.image} alt={`Cover of ${book.title}`} />
+                                        <img loading="lazy" decoding="async" src={book.image} alt={`Cover of ${book.title}`} />
                                     </figure>
                                 ) : (
                                     <div className="book-cover book-cover-placeholder" data-volume={book.vol}>

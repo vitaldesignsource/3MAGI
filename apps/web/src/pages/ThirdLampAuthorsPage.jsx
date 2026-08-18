@@ -243,7 +243,7 @@ function ThirdLampAuthorsPage() {
                             <p>Writers, editors, translators, and contemplative scholars working where sacred history, philosophy, and living tradition meet.</p>
                         </div>
                         <figure className="authors-hero-art">
-                            <img src="/media/ce0ad2ce1c8e2c9fd53f341fa8452eb8.webp" alt="A scholar studying an illuminated manuscript" />
+                            <img loading="lazy" decoding="async" src="/media/ce0ad2ce1c8e2c9fd53f341fa8452eb8.webp" alt="A scholar studying an illuminated manuscript" />
                         </figure>
                     </section>
 
@@ -274,7 +274,7 @@ function ThirdLampAuthorsPage() {
                                             Portrait Unavailable
                                         </div>
                                     ) : (
-                                        <img src={author.image} alt={author.imageAlt} />
+                                        <img loading="lazy" decoding="async" src={author.image} alt={author.imageAlt} />
                                     )}
                                     <figcaption>{author.caption}</figcaption>
                                 </figure>

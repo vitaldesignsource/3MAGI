@@ -32,10 +32,10 @@ function ThirdLampAboutPage() {
 
                     <section className="about-body" aria-label="About The Third Lamp">
                         <div className="about-threshold">
-                            <img src="/media/8c195612b68c8813eb45e38fb66fae36.webp" alt="" className="about-threshold-bg" />
+                            <img loading="lazy" decoding="async" src="/media/8c195612b68c8813eb45e38fb66fae36.webp" alt="" className="about-threshold-bg" />
                             <div className="about-threshold-overlay" aria-hidden="true"></div>
                             <aside className="about-sigil-card" aria-label="Editorial principle">
-                                <img src="/media/58e69c51822babba8b4ccc79aadd79d2.webp" alt="An open stone archway leading to a misty path, evoking the threshold of the gate" className="about-sigil-image" />
+                                <img loading="lazy" decoding="async" src="/media/58e69c51822babba8b4ccc79aadd79d2.webp" alt="An open stone archway leading to a misty path, evoking the threshold of the gate" className="about-sigil-image" />
                                 <span aria-hidden="true">III</span>
                                 <strong>The gate is open, but it still possesses a threshold.</strong>
                                 <p>Welcoming new voices does not mean surrendering standards. The lamp remains guarded.</p>

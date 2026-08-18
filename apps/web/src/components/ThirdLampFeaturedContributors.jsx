@@ -31,37 +31,37 @@ export const featuredContributorsStrip = [
     {
         id: 'jake-treyer',
         name: 'Jacob Trayer',
-        image: '/media/fac6744621da1f040468be8de464350f.webp',
+        image: '/media/thumb/fac6744621da1f040468be8de464350f.webp',
         imageAlt: 'Portrait of Jacob Trayer',
     },
     {
         id: 'travis-lawrence',
         name: 'Travis Lawrence',
-        image: '/media/53acf5993dfdcc0dcc202bdec0263601.webp',
+        image: '/media/thumb/53acf5993dfdcc0dcc202bdec0263601.webp',
         imageAlt: 'Portrait of Travis Lawrence',
     },
     {
         id: 'drew-mackinnon',
         name: 'Drew MacKinnon',
-        image: '/media/2c03cdfbff58b77535a6918b14fad3ec.webp',
+        image: '/media/thumb/2c03cdfbff58b77535a6918b14fad3ec.webp',
         imageAlt: 'Portrait of Drew MacKinnon',
     },
     {
         id: 'james-oliva',
         name: 'James Oliva',
-        image: '/media/2afc956520653a1dcfad983538e8b58a.webp',
+        image: '/media/thumb/2afc956520653a1dcfad983538e8b58a.webp',
         imageAlt: 'Portrait of James Oliva',
     },
     {
         id: 'magick-mike-samu',
         name: 'Magick Mike Samu',
-        image: '/media/2f0b44a81c9995fbb977e405695a7447.webp',
+        image: '/media/thumb/2f0b44a81c9995fbb977e405695a7447.webp',
         imageAlt: 'Portrait of Magick Mike Samu',
     },
     {
         id: 'nick-occult-rejects',
         name: 'Nick — The Occult Rejects',
-        image: '/media/93445a256182a19431bf9cc09e2ef618.webp',
+        image: '/media/thumb/93445a256182a19431bf9cc09e2ef618.webp',
         imageAlt: 'Portrait of Nick from The Occult Rejects',
     },
     {
@@ -86,7 +86,7 @@ function ThirdLampFeaturedContributors({ id = 'featured-contributors-title', tit
                     {featuredContributorsStrip.map((person) => (
                         <div className="fc-person" key={person.id}>
                             {person.image ? (
-                                <img className="fc-person-photo" src={person.image} alt={person.imageAlt} />
+                                <img loading="lazy" decoding="async" className="fc-person-photo" src={person.image} alt={person.imageAlt} />
                             ) : (
                                 <div className="fc-person-initials" aria-hidden="true">{person.initials}</div>
                             )}

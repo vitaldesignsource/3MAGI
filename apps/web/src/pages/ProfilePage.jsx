@@ -141,7 +141,7 @@ function ProfilePage() {
                                 <div className="profile-avatar-row">
                                     <div className="profile-avatar-wrap">
                                         {displayAvatar ? (
-                                            <img
+                                            <img loading="lazy" decoding="async"
                                                 src={displayAvatar}
                                                 alt="Profile"
                                                 className="profile-avatar-img"

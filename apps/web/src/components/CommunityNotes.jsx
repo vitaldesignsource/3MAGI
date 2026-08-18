@@ -252,7 +252,7 @@ function CommunityNotes({ articleSlug }) {
                                     <header>
                                         <div className="community-note-avatar">
                                             {avatarUrl ? (
-                                                <img src={avatarUrl} alt={displayName} />
+                                                <img loading="lazy" decoding="async" src={avatarUrl} alt={displayName} />
                                             ) : (
                                                 <span>{initials}</span>
                                             )}

@@ -38,7 +38,7 @@ function ThirdLampHeader() {
             <Link className="publisher-link" to="/">Three Magi Press</Link>
 
             <Link className="tl-masthead" to="/third-lamp" aria-label="The Third Lamp home" onClick={closeAll}>
-                <img className="tl-masthead-mark" src={`${A}/third-lamp-brand.webp`} alt="" />
+                <img className="tl-masthead-mark" src="/media/thumb/third-lamp-brand.webp" alt="" />
                 <span className="tl-masthead-copy">
                     <strong>The Third Lamp</strong>
                     <small>A Digital Esoteric Magazine</small>

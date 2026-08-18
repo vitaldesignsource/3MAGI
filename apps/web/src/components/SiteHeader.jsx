@@ -9,7 +9,7 @@ function SiteHeader() {
         <header className="site-header">
             <AetherMist />
             <Link className="brand" to="/">
-                <img className="brand-logo" src={`${A}/three-magi-logo-original.webp`} alt="Three Magi Press logo" />
+                <img className="brand-logo" src="/media/thumb/three-magi-logo-original.webp" alt="Three Magi Press logo" />
                 <span>
                     <strong>Three Magi Press</strong>
                     <small>Hermetic Publications</small>

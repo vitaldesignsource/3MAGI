@@ -274,7 +274,7 @@ function ThirdLampArchivePage() {
                                     {filtered.map((a, i) => <Link className={`archive-card${a.slug === 'aetheric-foam' ? ' archive-card-image-contain' : ''}`} to={`/articles/${a.slug}`} key={a.slug}>
                                             <figure>
                                                 <span className="archive-card-badge">{String(i + 1).padStart(2, '0')}</span>
-                                                <img src={a.image} alt="" />
+                                                <img loading="lazy" decoding="async" src={a.image} alt="" />
                                             </figure>
                                             <div className="archive-card-content">
                                                 <span className="story-type">{a.kicker}</span>
