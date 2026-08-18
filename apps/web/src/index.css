@@ -7446,6 +7446,28 @@ h3 {
 
 /* Atmospheric opening gate — submission portal backdrop */
 .third-lamp-scope .submission-portal { position: relative; isolation: isolate; }
+
+/* Full-bleed backgrounds on the contribute page. These five sections carry a
+   photograph or drawn backdrop, and on screens wider than the 1600px content
+   measure they were sitting centred with dark bands either side while the
+   hero above ran edge to edge. Now the section (and so its background) spans
+   the viewport, and the horizontal padding grows past the content width so
+   the copy and grids keep exactly the reading measure and 5vw gutter they had
+   before. No wrapper markup needed; below 1600px nothing changes. */
+.third-lamp-scope .publish-section,
+.third-lamp-scope .standards-section,
+.third-lamp-scope .benefits-section,
+.third-lamp-scope .gate-faq-section {
+  max-width: none;
+  padding-left: max(5vw, calc((100% - var(--content)) / 2 + 5vw));
+  padding-right: max(5vw, calc((100% - var(--content)) / 2 + 5vw));
+}
+
+.third-lamp-scope .submission-portal {
+  max-width: none;
+  padding-left: max(5vw, calc((100% - 1640px) / 2 + 5vw));
+  padding-right: max(5vw, calc((100% - 1640px) / 2 + 5vw));
+}
 .third-lamp-scope .portal-gate-backdrop {
   position: absolute;
   inset: 0;
