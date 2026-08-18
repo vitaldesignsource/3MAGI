@@ -14,3 +14,9 @@ apps/pocketbase/pb_data/*
 
 # OS
 .DS_Store
+
+# Claude Code local launch config (machine-specific paths)
+.claude/launch.json
+
+# Horizons session-journal dev plugin output
+vault/

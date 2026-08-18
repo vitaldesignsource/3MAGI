@@ -16,6 +16,22 @@ const allDeps = Object.keys(pkg.dependencies || {});
 
 const isDev = process.env.NODE_ENV !== 'production';
 
+// Local development outside Horizons: the PocketBase/API backend lives behind
+// `/hcgi/*` on Hostinger and is not available on a laptop. Set
+// LOCAL_BACKEND_PROXY=https://threemagipress.com to forward those calls to the
+// live backend from the local dev server. Unset (the default, and inside
+// Horizons) this adds nothing.
+const localBackendProxy = process.env.LOCAL_BACKEND_PROXY
+	? {
+		'/hcgi': {
+			target: process.env.LOCAL_BACKEND_PROXY,
+			changeOrigin: true,
+			secure: true,
+			ws: true,
+		},
+	}
+	: undefined;
+
 // Only the Horizons editor may read this dev server cross-origin. `cors: true`
 // sends `Access-Control-Allow-Origin: *`, which lets any site read the source
 // transforms and call the dev-only APIs.
@@ -381,6 +397,7 @@ export default defineConfig({
 	],
 	server: {
 		port: 3000,
+		proxy: localBackendProxy,
 		cors: { origin: AllowedEditorOrigins },
 		headers: {
 			'Cross-Origin-Embedder-Policy': 'credentialless',
