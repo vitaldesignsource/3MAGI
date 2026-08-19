@@ -209,6 +209,9 @@ const BENIGN_FETCH_ERRORS = [
 	[/hcgi\\/api\\//i, /Insufficient credits/i],
 	// A user-supplied integration secret (Stripe/PayPal/Twilio/...) is not set yet — an expected setup state, not a bug to fix.
 	[/hcgi\\/api\\//i, /INTEGRATION_NOT_CONFIGURED/i],
+	// The paywall answering "not a member" is the system working, not a fault.
+	// api/essay.php returns 402/401 by design for a gated or unpublished essay.
+	[/api\\/essay\\.php/i, /members_only|preview_required|not_found/i],
 ];
 
 function isBenignFetchError(url, body) {
