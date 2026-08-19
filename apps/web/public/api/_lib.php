@@ -288,7 +288,14 @@ function privateEssayDir(): string
     }
     $root = $_SERVER['DOCUMENT_ROOT'] ?? '';
     if ($root !== '') {
-        return dirname($root) . '/tl-essays';
+        // Preferred: outside the web root entirely, unreachable by any URL.
+        $above = dirname($root) . '/tl-essays';
+        if (is_dir($above)) {
+            return $above;
+        }
+        // Hostinger's git deploy copies the branch into public_html, so the
+        // directory ships inside it carrying its own "Require all denied".
+        return $root . '/tl-essays';
     }
     return dirname(__DIR__, 2) . '/tl-essays';
 }

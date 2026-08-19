@@ -14,9 +14,20 @@
   # below would let the browser keep that HTML for a year.
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteRule ^(assets|media|fonts)/ - [R=404,L]
+  # Gated essay bodies are not a route; never hand them to index.html.
+  RewriteRule ^tl-essays(/|$) - [R=404,L]
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d
   RewriteRule ^ index.html [L]
+</IfModule>
+
+# --- Gated essay bodies ------------------------------------------------------
+# api/essay.php reads these from disk after checking the reader's pass. They
+# must never be reachable over HTTP. The directory ships its own deny rule too.
+<IfModule mod_authz_core.c>
+  <If "%{REQUEST_URI} =~ m#^/tl-essays(/|$)#">
+    Require all denied
+  </If>
 </IfModule>
 
 # --- Caching ----------------------------------------------------------------

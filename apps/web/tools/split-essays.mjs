@@ -18,7 +18,12 @@ import path from 'node:path';
 const here = path.dirname(fileURLToPath(import.meta.url));
 const webRoot = path.resolve(here, '..');
 const gatedDir = path.join(webRoot, 'src/data/articles/gated');
-const outDir = path.resolve(webRoot, '../../dist/tl-essays');
+// Deployed INSIDE public_html because Hostinger's git deploy copies the branch
+// there wholesale — so the directory carries its own .htaccess denying all web
+// access, and PHP reads the files from disk rather than over HTTP. If the
+// essays can instead be placed above the document root on a given host,
+// _lib.php prefers that location automatically.
+const outDir = path.resolve(webRoot, '../../dist/apps/web/tl-essays');
 const manifest = path.join(webRoot, 'src/data/gatedSlugs.generated.js');
 
 const { articles } = await import(path.join(webRoot, 'src/data/articles.js'));
@@ -64,4 +69,19 @@ writeFileSync(
     'utf8'
 );
 
-console.log(`essays: ${slugs.length} gated -> dist/tl-essays (${Math.round(bytes / 1024)}KB), ${bySlug.size - slugs.length} free stay in the bundle`);
+// Belt and braces: deny at the directory itself, so a mistake in the site-wide
+// .htaccess cannot expose the essays on its own.
+writeFileSync(path.join(outDir, '.htaccess'),
+`# Gated essay bodies. Never served over HTTP — api/essay.php reads them from
+# disk after checking the reader's pass. Denying here as well as site-wide so
+# neither rule is load-bearing on its own.
+<IfModule mod_authz_core.c>
+  Require all denied
+</IfModule>
+<IfModule !mod_authz_core.c>
+  Order allow,deny
+  Deny from all
+</IfModule>
+`, 'utf8');
+
+console.log(`essays: ${slugs.length} gated -> tl-essays (${Math.round(bytes / 1024)}KB, web access denied), ${bySlug.size - slugs.length} free stay in the bundle`);
