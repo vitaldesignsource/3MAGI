@@ -1,85 +1,92 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import PlansList from '@/components/PlansList.jsx';
-import LifetimeCheckoutButton from '@/components/LifetimeCheckoutButton.jsx';
+import { Link } from 'react-router-dom';
 import ThirdLampHeader from '@/components/ThirdLampHeader.jsx';
 import ThirdLampFooter from '@/components/ThirdLampFooter.jsx';
-
-const LIFETIME_VARIANT_ID = 'variant_01KYDY745849MQFYT9E4N902BG';
+import { PLANS, PAYMENT_LINKS, BENEFITS, isConfigured } from '@/config/membership.js';
 
 /**
- * Shipped pricing page.
+ * Membership pricing.
  *
- * Renders the subscription tiers via the shipped <PlansList /> (Monthly and
- * Yearly Supporter variants), plus a one-time Lifetime Membership card backed
- * by the base store's <LifetimeCheckoutButton />.
+ * Every card is a plain link to a Stripe-hosted Payment Link — there is no
+ * checkout code, no cart and no SDK here. Stripe takes the payment and
+ * redirects to /welcome, where api/redeem.php verifies the session and issues
+ * the pass.
  *
- * Mount on App.jsx as a PUBLIC route at /plans (no auth gate — anonymous
- * visitors browse pricing; SubscribeButton redirects to /login when needed):
- *   import PlansPage from '@/pages/PlansPage.jsx';
- *   <Route path="/plans" element={<PlansPage />} />
- *
- * Header/nav MUST include a "Plans" or "Pricing" link to /plans.
- *
- * Agents may restyle copy/hero/surrounding sections freely (FAQ, comparison
- * tables, value props, testimonials — whatever fits the site). PRESERVE the
- * <PlansList /> mount inside the page. Do NOT recreate plan-fetching,
- * subscribe-button logic, or hardcode a plans array — those live in
- * PlansList and its dependencies and would create a parallel (broken) flow.
+ * Until the Payment Links are filled in (config/membership.js) the page says
+ * so plainly, rather than rendering buttons that go nowhere.
  */
 export default function PlansPage() {
-	return (
-		<>
-			<Helmet>
-				<title>Membership Plans | The Third Lamp</title>
-			</Helmet>
-			<div className="third-lamp-scope" style={{ background: 'var(--ink)', minHeight: '100vh' }}>
-				<ThirdLampHeader />
-				<main className="tl-plans-page">
-					<header className="tl-plans-head">
-						<p className="kicker">The Inner Circle</p>
-						<h1>Choose your membership</h1>
-						<p className="tl-plans-lede">
-							Supporters leave notes and annotations in the margins of every essay in the Living
-							Archive. Join monthly, save with the year, or step through the gate for good.
-						</p>
-					</header>
+    const ready = isConfigured();
 
-					<PlansList className="tl-plans-grid tl-plans-grid-three" splitVariants>
-						<div className="tl-plan-card tl-plan-card-lifetime">
-							<div className="tl-plan-card-head">
-								<h3>Lifetime</h3>
-								<span className="tl-plan-badge">One payment</span>
-							</div>
-							<p className="tl-plan-desc">
-								A single offering for permanent standing among the Supporters — full access to
-								community notes and annotations, for as long as the lamp is lit.
-							</p>
-							<p className="tl-plan-price">
-								$333<span> once</span>
-							</p>
-							<div className="tl-plan-card-cta">
-								<LifetimeCheckoutButton
-									variantId={LIFETIME_VARIANT_ID}
-									className="tl-button"
-									label="Purchase Lifetime Access"
-								/>
-							</div>
-						</div>
-					</PlansList>
+    return (
+        <>
+            <Helmet>
+                <title>Membership | The Third Lamp</title>
+                <meta name="description" content="Support The Third Lamp and read the full archive: monthly, yearly, or a single lifetime offering." />
+            </Helmet>
+            <div className="third-lamp-scope" style={{ background: 'var(--ink)', minHeight: '100vh' }}>
+                <ThirdLampHeader />
+                <main className="tl-plans-page">
+                    <header className="tl-plans-head">
+                        <p className="kicker">The Inner Circle</p>
+                        <h1>Choose your membership</h1>
+                        <p className="tl-plans-lede">
+                            The current issue is free to everyone. Supporters read the whole archive —
+                            every essay we have published, and every one still to come.
+                        </p>
+                    </header>
 
-					<section className="tl-plans-benefits">
-						<h2>What every Supporter receives</h2>
-						<ul>
-							<li>Full access to community notes and marginalia on every essay</li>
-							<li>Annotate the Living Archive alongside fellow readers</li>
-							<li>Early word on new issues and open calls</li>
-							<li>Standing among the inner circle of The Third Lamp</li>
-						</ul>
-					</section>
-				</main>
-				<ThirdLampFooter />
-			</div>
-		</>
-	);
+                    {!ready && (
+                        <div className="tl-plan-card" role="status" style={{ marginBottom: '2.5rem' }}>
+                            <p className="tl-plan-desc" style={{ margin: 0 }}>
+                                Memberships open shortly. In the meantime the current issue is free to read,
+                                and you are welcome to <Link to="/third-lamp/contact">write to the editors</Link>.
+                            </p>
+                        </div>
+                    )}
+
+                    <div className="tl-plans-grid tl-plans-grid-three">
+                        {PLANS.map((plan) => (
+                            <div
+                                key={plan.id}
+                                className={`tl-plan-card${plan.featured ? ' tl-plan-card-lifetime' : ''}`}
+                            >
+                                <div className="tl-plan-card-head">
+                                    <h3>{plan.name}</h3>
+                                    {plan.featured && <span className="tl-plan-badge">Best value</span>}
+                                </div>
+                                <p className="tl-plan-desc">{plan.blurb}</p>
+                                <p className="tl-plan-price">
+                                    {plan.price}<span> {plan.cadence}</span>
+                                </p>
+                                <div className="tl-plan-card-cta">
+                                    {PAYMENT_LINKS[plan.id] ? (
+                                        <a className="tl-button" href={PAYMENT_LINKS[plan.id]}>
+                                            {plan.id === 'lifetime' ? 'Purchase Lifetime Access' : 'Become a Supporter'}
+                                        </a>
+                                    ) : (
+                                        <span className="tl-button" aria-disabled="true" style={{ opacity: 0.45, pointerEvents: 'none' }}>
+                                            Opening soon
+                                        </span>
+                                    )}
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+
+                    <section className="tl-plans-benefits">
+                        <h2>What every Supporter receives</h2>
+                        <ul>
+                            {BENEFITS.map((b) => <li key={b}>{b}</li>)}
+                        </ul>
+                        <p style={{ marginTop: '1.6rem', color: 'var(--muted)', font: '0.9rem/1.7 Georgia, serif' }}>
+                            Already a member on another device? <Link to="/restore" style={{ color: 'var(--gold-bright)' }}>Restore your access</Link>.
+                        </p>
+                    </section>
+                </main>
+                <ThirdLampFooter />
+            </div>
+        </>
+    );
 }

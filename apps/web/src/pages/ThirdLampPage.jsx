@@ -1,57 +1,43 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Helmet } from 'react-helmet';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import ThirdLampHeader from '../components/ThirdLampHeader';
 import ThirdLampFooter from '../components/ThirdLampFooter';
 import ThirdLampFeaturedContributors from '../components/ThirdLampFeaturedContributors';
 import HeroMotionFX from '../components/HeroMotionFX';
-import { useSubscriptionAuth } from '@/contexts/SubscriptionAuthContext.jsx';
 const A = '/media';
 
 function EntranceSignup() {
-    const { isAuthenticated, currentUser } = useSubscriptionAuth();
-    const navigate = useNavigate();
-    const [email, setEmail] = useState('');
+    // The pass cookie is HttpOnly; this readable companion only decides which
+    // of the two messages to show.
+    const isMember = typeof document !== 'undefined' && /(^|;\s*)tl_member=/.test(document.cookie);
 
-    if (isAuthenticated) {
+    if (isMember) {
         return (
             <div className="tl-entrance-signup" aria-live="polite">
                 <p className="tl-entrance-signup-copy">
-                    Welcome back, <strong>{currentUser?.name || currentUser?.email?.split('@')[0]}</strong>. The margins await your notes.
+                    Welcome back. The whole archive is open to you.
                 </p>
-                <Link className="tl-button tl-button-outline" to="/plans">View Membership</Link>
+                <Link className="tl-button tl-button-outline" to="/third-lamp/archive">Enter the Archive</Link>
             </div>
         );
     }
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        navigate('/signup', { state: { email } });
-    };
-
     return (
-        <form className="tl-entrance-signup" onSubmit={handleSubmit}>
+        <div className="tl-entrance-signup">
             <p className="tl-entrance-signup-copy">
-                Join the Circle — become a Supporter and add your voice to the margins of every essay.
+                Join the Circle — become a Supporter and read the whole archive, not only the current issue.
             </p>
             <div className="tl-entrance-signup-row">
-                <label className="sr-only" htmlFor="entrance-email">Email address</label>
-                <input
-                    id="entrance-email"
-                    type="email"
-                    required
-                    placeholder="Your email address"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                />
-                <button type="submit" className="tl-button">Sign Up — $3/mo</button>
+                <Link className="tl-button" to="/plans">See the memberships</Link>
             </div>
             <p className="tl-entrance-signup-note">
-                Already a member? <Link to="/login">Sign in</Link>
+                Already a member? <Link to="/restore">Restore access</Link>
             </p>
-        </form>
+        </div>
     );
 }
+
 const leadStories = [{
   slug: 'ways-of-being',
   author: 'Jake Trayer',

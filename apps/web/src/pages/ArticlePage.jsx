@@ -1,15 +1,12 @@
 import React, { useEffect, useMemo, useRef, useState } from 'react';
 import { Helmet } from 'react-helmet';
 import { Link, useParams } from 'react-router-dom';
-import pb from '@/lib/pocketbaseClient';
 import ThirdLampHeader from '../components/ThirdLampHeader';
 import ThirdLampFooter from '../components/ThirdLampFooter';
-import CommunityNotes from '../components/CommunityNotes';
 import ShareButtons from '../components/ShareButtons';
 import AlchemicalPendulum from '../components/AlchemicalPendulum';
 import { articles, getArticleBySlug, traditionMeta, disciplineMeta, getCurrentIssueArticles, currentIssueSlugs } from '../data/articles';
 import { loadArticleContent } from '../data/articleContent';
-import { useSubscriptionAuth } from '../contexts/SubscriptionAuthContext.jsx';
 
 /** Issue sidebar — next article link + full issue list */
 function IssueSidebar({ currentSlug }) {
@@ -184,61 +181,24 @@ function ArticlePage() {
     // loads on demand. `article` is the merge, so the rest of the component
     // reads it exactly as it always did.
     const meta = getArticleBySlug(slug);
-    const [content, setContent] = useState(null);
+    // Free essays resolve from the bundle; gated ones are fetched from
+    // api/essay.php, which answers with the text or with a reason it won't.
+    // The gate is the server's answer — the client no longer decides.
+    const [loaded, setLoaded] = useState(null);
     useEffect(() => {
         let alive = true;
-        setContent(null);
+        setLoaded(null);
         if (!meta) return undefined;
-        loadArticleContent(slug).then((c) => { if (alive) setContent(c); });
+        loadArticleContent(slug).then((r) => { if (alive) setLoaded(r); });
         return () => { alive = false; };
     }, [slug, meta]);
+    const content = loaded ? loaded.content : null;
     const article = useMemo(() => (meta ? { ...meta, ...(content || {}) } : null), [meta, content]);
-    const contentReady = content !== null;
-    const { currentUser, subscriptions } = useSubscriptionAuth();
-    const isCurrentIssue = currentIssueSlugs.includes(slug);
-    const hasActiveSubscription = subscriptions && subscriptions.length > 0;
+    const contentReady = loaded !== null;
+    const accessStatus = loaded ? loaded.status : null;
     const [progress, setProgress] = useState(0);
     const [activeId, setActiveId] = useState(null);
     const sectionRefs = useRef({});
-    const [passwordInput, setPasswordInput] = useState('');
-    const [passwordError, setPasswordError] = useState('');
-    const [unlocked, setUnlocked] = useState(() => {
-        try { return sessionStorage.getItem(`unlocked:${slug}`) === '1'; } catch { return false; }
-    });
-
-    // Coming Soon admin gate state
-    const ADMIN_EMAIL = 'vitaldesignsource@gmail.com';
-    const [adminEmail, setAdminEmail] = useState('');
-    const [adminPassword, setAdminPassword] = useState('');
-    const [adminError, setAdminError] = useState('');
-    const [adminLoading, setAdminLoading] = useState(false);
-    const [adminUnlocked, setAdminUnlocked] = useState(() => {
-        try {
-            if (pb.authStore.isValid && pb.authStore.record?.email === ADMIN_EMAIL) return true;
-            return sessionStorage.getItem('admin-unlocked') === '1';
-        } catch { return false; }
-    });
-
-    const handleAdminLogin = async (e) => {
-        e.preventDefault();
-        setAdminError('');
-        setAdminLoading(true);
-        try {
-            const authData = await pb.collection('users').authWithPassword(adminEmail, adminPassword);
-            if (authData.record.email === ADMIN_EMAIL) {
-                try { sessionStorage.setItem('admin-unlocked', '1'); } catch {}
-                setAdminUnlocked(true);
-            } else {
-                await pb.authStore.clear();
-                setAdminError('Access denied. This account does not have admin preview access.');
-            }
-        } catch {
-            setAdminError('Incorrect email or password.');
-        } finally {
-            setAdminLoading(false);
-        }
-    };
-
     const sections = useMemo(() => (article ? normalizeSections(article) : []), [article]);
 
     useEffect(() => {
@@ -288,44 +248,8 @@ function ArticlePage() {
     }
 
     // ── Password gate ──────────────────────────────────────────────────────
-    if (article.password && !unlocked) {
-        const handleUnlock = (e) => {
-            e.preventDefault();
-            if (passwordInput === article.password) {
-                try { sessionStorage.setItem(`unlocked:${slug}`, '1'); } catch {}
-                setUnlocked(true);
-            } else {
-                setPasswordError('Incorrect password. Please try again.');
-            }
-        };
-        return (
-            <div className="third-lamp-scope">
-                <ThirdLampHeader />
-                <main style={{ minHeight: '70vh', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '6rem 1.5rem' }}>
-                    <div style={{ maxWidth: '28rem', width: '100%', border: '1px solid var(--line)', background: 'rgba(14,17,17,0.92)', padding: '3rem 2.5rem', textAlign: 'center' }}>
-                        <p className="kicker" style={{ marginBottom: '0.8rem' }}>Protected Essay</p>
-                        <h1 style={{ fontFamily: '"Cinzel", serif', fontWeight: 400, fontSize: 'clamp(1.3rem, 3vw, 1.8rem)', color: 'var(--bone)', margin: '0 0 1rem', lineHeight: 1.1 }}>{article.title}</h1>
-                        <p style={{ color: 'var(--muted)', font: '0.95rem/1.7 Georgia, serif', margin: '0 0 2rem' }}>This essay is password-protected. Enter the password to read.</p>
-                        <form onSubmit={handleUnlock} style={{ display: 'grid', gap: '1rem' }}>
-                            <input
-                                type="password"
-                                placeholder="Enter password"
-                                value={passwordInput}
-                                onChange={(e) => { setPasswordInput(e.target.value); setPasswordError(''); }}
-                                style={{ width: '100%', minHeight: '49px', padding: '0 14px', border: '1px solid var(--line)', background: '#090c0c', color: 'var(--bone)', fontSize: '1rem', boxSizing: 'border-box' }}
-                            />
-                            {passwordError && <p style={{ margin: 0, color: '#c87070', fontSize: '0.87rem' }}>{passwordError}</p>}
-                            <button type="submit" className="tl-button" style={{ width: '100%', justifyContent: 'center' }}>Unlock Essay</button>
-                        </form>
-                    </div>
-                </main>
-                <ThirdLampFooter />
-            </div>
-        );
-    }
-
     // ── Coming Soon gate ───────────────────────────────────────────────────
-    if (article.comingSoon && !adminUnlocked) {
+    if (accessStatus === 'preview_required') {
         return (
             <div className="third-lamp-scope">
                 <ThirdLampHeader />
@@ -336,33 +260,10 @@ function ArticlePage() {
                         <h1 style={{ fontFamily: '"Cinzel", serif', fontWeight: 400, fontSize: 'clamp(1.15rem, 3vw, 1.6rem)', color: 'var(--bone)', margin: '0 0 0.8rem', lineHeight: 1.15 }}>{article.title}</h1>
                         <p style={{ color: 'var(--muted)', font: '0.92rem/1.7 Georgia, serif', margin: '0 0 0.4rem' }}>This essay is currently under editorial review.</p>
                         <p style={{ color: 'rgba(179,139,70,0.7)', font: 'italic 0.85rem/1.6 Georgia, serif', margin: '0 0 2.2rem' }}>Coming Soon</p>
-                        <div style={{ borderTop: '1px solid rgba(179,139,70,0.22)', paddingTop: '1.8rem', textAlign: 'left' }}>
-                            <p style={{ margin: '0 0 1rem', color: 'var(--muted)', fontSize: '0.72rem', letterSpacing: '0.1em', textTransform: 'uppercase', textAlign: 'center' }}>Admin Preview Login</p>
-                            <form onSubmit={handleAdminLogin} style={{ display: 'grid', gap: '0.8rem' }}>
-                                <input
-                                    type="email"
-                                    placeholder="Email"
-                                    value={adminEmail}
-                                    onChange={(e) => { setAdminEmail(e.target.value); setAdminError(''); }}
-                                    disabled={adminLoading}
-                                    style={{ width: '100%', minHeight: '46px', padding: '0 14px', border: '1px solid var(--line)', background: '#090c0c', color: 'var(--bone)', fontSize: '0.95rem', boxSizing: 'border-box' }}
-                                />
-                                <input
-                                    type="password"
-                                    placeholder="Password"
-                                    value={adminPassword}
-                                    onChange={(e) => { setAdminPassword(e.target.value); setAdminError(''); }}
-                                    disabled={adminLoading}
-                                    style={{ width: '100%', minHeight: '46px', padding: '0 14px', border: '1px solid var(--line)', background: '#090c0c', color: 'var(--bone)', fontSize: '0.95rem', boxSizing: 'border-box' }}
-                                />
-                                {adminError && <p style={{ margin: 0, color: '#c87070', fontSize: '0.85rem', fontFamily: 'Georgia, serif' }}>{adminError}</p>}
-                                <button type="submit" className="tl-button" disabled={adminLoading} style={{ width: '100%', justifyContent: 'center', opacity: adminLoading ? 0.6 : 1 }}>
-                                    {adminLoading ? 'Signing in…' : 'Preview as Admin'}
-                                </button>
-                            </form>
-                        </div>
-                        <div style={{ marginTop: '1.8rem', paddingTop: '1.4rem', borderTop: '1px solid rgba(179,139,70,0.15)' }}>
-                            <Link to="/third-lamp/archive" style={{ color: 'var(--gold-bright)', fontSize: '0.82rem', letterSpacing: '0.06em', textDecoration: 'none', borderBottom: '1px solid rgba(179,139,70,0.4)' }}>← Return to the Archive</Link>
+                        <div style={{ borderTop: '1px solid rgba(179,139,70,0.22)', paddingTop: '1.6rem' }}>
+                            <p style={{ margin: 0, color: 'var(--muted)', fontSize: '0.78rem', lineHeight: 1.7, fontFamily: 'Georgia, serif' }}>
+                                Editors: open your preview link once in this browser to read drafts.
+                            </p>
                         </div>
                     </div>
                 </main>
@@ -371,8 +272,8 @@ function ArticlePage() {
         );
     }
 
-    // ── Subscription gate (non-current-issue articles) ────────────────────
-    if (!isCurrentIssue && !hasActiveSubscription) {
+    // ── Members-only (api/essay.php declined to serve the text) ───────────
+    if (accessStatus === 'members_only') {
         return (
             <div className="third-lamp-scope">
                 <ThirdLampHeader />
@@ -384,9 +285,7 @@ function ArticlePage() {
                         <p style={{ color: 'rgba(179,139,70,0.75)', font: 'italic 0.88rem/1.6 Georgia, serif', margin: '0 0 2rem' }}>Starting at $3 / month</p>
                         <div style={{ display: 'grid', gap: '0.8rem' }}>
                             <Link to="/plans" className="tl-button" style={{ width: '100%', justifyContent: 'center', textDecoration: 'none', display: 'flex' }}>Become a Member</Link>
-                            {!currentUser && (
-                                <Link to="/login" style={{ color: 'var(--gold-bright)', fontSize: '0.88rem', textDecoration: 'none', borderBottom: '1px solid rgba(179,139,70,0.4)' }}>Already a member? Sign in</Link>
-                            )}
+                            <Link to="/restore" style={{ color: 'var(--gold-bright)', fontSize: '0.88rem', textDecoration: 'none', borderBottom: '1px solid rgba(179,139,70,0.4)' }}>Already a member? Restore access</Link>
                         </div>
                     </div>
                 </main>
@@ -843,8 +742,6 @@ function ArticlePage() {
                     <div className="archive-actions"><Link className="tl-button" to="/third-lamp/archive">Explore the Full Archive</Link></div>
                 </section>
             </main>
-
-            <CommunityNotes articleSlug={article.slug} />
 
             <ThirdLampFooter />
             </div>

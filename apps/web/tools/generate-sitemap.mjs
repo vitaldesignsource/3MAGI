@@ -7,7 +7,7 @@
 // Essays flagged comingSoon or password-gated are left out: crawlers would
 // only see the gate, and listing them advertises URLs that show no content.
 
-import { writeFileSync } from 'node:fs';
+import { existsSync, readdirSync, writeFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
 import { articles } from '../src/data/articles.js';
@@ -33,7 +33,16 @@ const staticRoutes = [
     { loc: '/third-lamp/contact',     priority: '0.4', changefreq: 'yearly' },
 ].map((r) => ({ ...r, lastmod: today }));
 
-const published = articles.filter((a) => !a.comingSoon && !a.password);
+// Gated essays are excluded: pointing a crawler at a URL that answers with a
+// paywall earns a soft-404, not a ranking. The gated set is whatever the build
+// moved out of the bundle, so this cannot drift from the actual paywall.
+const gatedDir = path.resolve(here, '../src/data/articles/gated');
+const gated = new Set(
+    (existsSync(gatedDir) ? readdirSync(gatedDir) : [])
+        .filter((f) => f.endsWith('.js'))
+        .map((f) => f.replace(/\.js$/, ''))
+);
+const published = articles.filter((a) => !a.comingSoon && !a.password && !gated.has(a.slug));
 const essayRoutes = published.map((a) => ({
     loc: `/articles/${a.slug}`,
     lastmod: iso(a.updated || a.date),
@@ -57,5 +66,5 @@ const xml =
     `\n</urlset>\n`;
 
 writeFileSync(out, xml, 'utf8');
-console.log(`sitemap: ${staticRoutes.length} pages + ${published.length} essays → ${path.relative(process.cwd(), out)}` +
-    (articles.length - published.length ? ` (${articles.length - published.length} gated essays omitted)` : ''));
+console.log(`sitemap: ${staticRoutes.length} pages + ${published.length} free essays → ${path.relative(process.cwd(), out)}` +
+    (articles.length - published.length ? ` (${articles.length - published.length} gated or unpublished omitted)` : ''));

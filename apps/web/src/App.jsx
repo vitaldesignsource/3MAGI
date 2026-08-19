@@ -1,7 +1,6 @@
 import React, { Suspense, lazy } from 'react';
 import { Route, Routes, BrowserRouter as Router, Link, useLocation } from 'react-router-dom';
 import ScrollToTop from './components/ScrollToTop';
-import { SubscriptionAuthProvider } from './contexts/SubscriptionAuthContext.jsx';
 import AlchemicalCursor from './components/AlchemicalCursor';
 
 // The landing page ships in the entry bundle so first paint needs no second
@@ -19,13 +18,9 @@ const ThirdLampAuthorsPage = lazy(() => import('./pages/ThirdLampAuthorsPage'));
 const ThirdLampLampPostPage = lazy(() => import('./pages/ThirdLampLampPostPage'));
 const ThirdLampContactPage = lazy(() => import('./pages/ThirdLampContactPage'));
 const ArticlePage = lazy(() => import('./pages/ArticlePage'));
-const LoginPage = lazy(() => import('./pages/LoginPage'));
-const SignupPage = lazy(() => import('./pages/SignupPage'));
-const ForgotPasswordPage = lazy(() => import('./pages/ForgotPasswordPage'));
-const ResetPasswordPage = lazy(() => import('./pages/ResetPasswordPage'));
-const ProfilePage = lazy(() => import('./pages/ProfilePage'));
 const PlansPage = lazy(() => import('./pages/PlansPage'));
-const SubscriptionsPage = lazy(() => import('./pages/SubscriptionsPage'));
+const WelcomePage = lazy(() => import('./pages/WelcomePage'));
+const RestoreAccessPage = lazy(() => import('./pages/RestoreAccessPage'));
 
 // Route chunks are small and arrive fast; an empty fallback avoids a flash of
 // spinner on the way in. The page keeps its dark background from <body>.
@@ -82,7 +77,6 @@ function RouteBoundary({ children }) {
 function App() {
     return (
         <Router>
-            <SubscriptionAuthProvider>
                 <AlchemicalCursor />
                 <ScrollToTop />
                 <RouteBoundary>
@@ -98,17 +92,12 @@ function App() {
                     <Route path="/third-lamp/lamp-post" element={<ThirdLampLampPostPage />} />
                     <Route path="/third-lamp/contact" element={<ThirdLampContactPage />} />
                     <Route path="/articles/:slug" element={<ArticlePage />} />
-                    <Route path="/login" element={<LoginPage />} />
-                    <Route path="/signup" element={<SignupPage />} />
-                    <Route path="/forgot-password" element={<ForgotPasswordPage />} />
-                    <Route path="/reset-password" element={<ResetPasswordPage />} />
-                    <Route path="/profile" element={<ProfilePage />} />
                     <Route path="/plans" element={<PlansPage />} />
-                    <Route path="/subscriptions" element={<SubscriptionsPage />} />
+                    <Route path="/welcome" element={<WelcomePage />} />
+                    <Route path="/restore" element={<RestoreAccessPage />} />
                 </Routes>
                 </Suspense>
                 </RouteBoundary>
-            </SubscriptionAuthProvider>
         </Router>
     );
 }

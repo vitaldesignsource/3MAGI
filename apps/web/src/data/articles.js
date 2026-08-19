@@ -129,7 +129,6 @@ export const articles = [
         comingSoon: true,
         title: 'Aether, Ether, Ethers, Etheric, and the Aetheric',
         kicker: 'Esoteric Cosmology · The Missing Middle',
-        password: 'SecretAether11!',
         date: '2026-06-12',
         dateLabel: 'June 12, 2026',
         image: '/media/5df96727-cb98-4c13-a5e1-3ae1e8c128f0.webp',

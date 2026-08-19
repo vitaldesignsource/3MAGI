@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { useSubscriptionAuth } from '@/contexts/SubscriptionAuthContext.jsx';
-import pb from '@/lib/pocketbaseClient';
 
 const A = '/media';
 
@@ -10,12 +8,17 @@ function ThirdLampHeader() {
     const [magazineOpen, setMagazineOpen] = useState(false);
     const [membershipOpen, setMembershipOpen] = useState(false);
     const location = useLocation();
-    const { currentUser, isAuthenticated } = useSubscriptionAuth();
+    // The pass cookie is HttpOnly, so the browser cannot read it. This
+    // companion cookie exists only to decide whether the menu says "Member" —
+    // it grants nothing, and forging it changes one word.
+    const isMember = typeof document !== 'undefined' && /(^|;\s*)tl_member=/.test(document.cookie);
 
     const isActive = (path) => (location.pathname === path ? 'page' : undefined);
 
-    const handleLogout = () => {
-        pb.authStore.clear();
+    const handleSignOut = () => {
+        fetch('/api/pass.php?logout=1', { credentials: 'same-origin' })
+            .catch(() => {})
+            .finally(() => window.location.assign('/'));
         setOpen(false);
     };
 
@@ -77,50 +80,31 @@ function ThirdLampHeader() {
                 <Link to="/third-lamp/about" aria-current={isActive('/third-lamp/about')} onClick={closeAll}>About</Link>
                 <Link to="/third-lamp/contact" aria-current={isActive('/third-lamp/contact')} onClick={closeAll}>Contact</Link>
 
-                {isAuthenticated ? (
-                    <div className={`nav-group tl-auth-group ${membershipOpen ? 'is-open' : ''}`}>
-                        <button
-                            className="nav-group-toggle"
-                            type="button"
-                            aria-haspopup="true"
-                            aria-expanded={membershipOpen}
-                            onClick={() => setMembershipOpen((v) => !v)}
-                        >
-                            {currentUser?.name || currentUser?.email?.split('@')[0] || 'Account'} <span aria-hidden="true">⌄</span>
-                        </button>
-                        <div className="nav-submenu">
-                            <Link to="/subscriptions" onClick={closeAll}>My Subscription</Link>
-                            <Link to="/" onClick={handleLogout}>Sign Out</Link>
-                        </div>
+                <div className={`nav-group tl-auth-group ${membershipOpen ? 'is-open' : ''}`}>
+                    <button
+                        className="nav-group-toggle"
+                        type="button"
+                        aria-haspopup="true"
+                        aria-expanded={membershipOpen}
+                        onClick={() => setMembershipOpen((v) => !v)}
+                    >
+                        {isMember ? 'Member' : 'Membership'} <span aria-hidden="true">⌄</span>
+                    </button>
+                    <div className="nav-submenu">
+                        <Link to="/plans" onClick={closeAll}>Membership</Link>
+                        {isMember ? (
+                            <button
+                                type="button"
+                                onClick={handleSignOut}
+                                style={{ background: 'none', border: 'none', cursor: 'pointer', padding: 0, textAlign: 'left', color: 'inherit', font: 'inherit', width: '100%' }}
+                            >
+                                Sign Out
+                            </button>
+                        ) : (
+                            <Link to="/restore" onClick={closeAll}>Restore Access</Link>
+                        )}
                     </div>
-                ) : (
-                    <div className={`nav-group tl-auth-group ${membershipOpen ? 'is-open' : ''}`}>
-                        <button
-                            className="nav-group-toggle"
-                            type="button"
-                            aria-haspopup="true"
-                            aria-expanded={membershipOpen}
-                            onClick={() => setMembershipOpen((v) => !v)}
-                        >
-                            Membership <span aria-hidden="true">⌄</span>
-                        </button>
-                        <div className="nav-submenu">
-                            <Link to="/plans" onClick={closeAll}>Plans</Link>
-                            {isAuthenticated ? (
-                                <>
-                                    <Link to="/profile" onClick={closeAll}>My Profile</Link>
-                                    <Link to="/subscriptions" onClick={closeAll}>Subscription</Link>
-                                    <button onClick={() => { handleLogout(); }} style={{ background: 'none', border: 'none', cursor: 'pointer', padding: 0, textAlign: 'left', color: 'inherit', font: 'inherit', width: '100%' }}>Sign Out</button>
-                                </>
-                            ) : (
-                                <>
-                                    <Link to="/login" onClick={closeAll}>Sign In</Link>
-                                    <Link to="/signup" onClick={closeAll}>Sign Up</Link>
-                                </>
-                            )}
-                        </div>
-                    </div>
-                )}
+                </div>
             </nav>
         </header>
     );
