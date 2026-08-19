@@ -57,6 +57,14 @@ return [
     'stripe_key'    => 'rk_live_…',   // the restricted key
     'cookie_secret' => '…',            // 64 random hex characters
     'preview_key'   => '…',            // any long random string
+
+    // The Lifetime price in cents (e.g. 33300 for $333.00). This is a safety
+    // floor: "Restore access" grants a lifetime pass from a one-off charge,
+    // and without this ANY one-off charge on the same Stripe account would
+    // qualify. Harmless while membership is all you sell — but the moment you
+    // sell anything else through this Stripe account (a book, a print, a
+    // donation), that buyer gets a free lifetime membership unless this is set.
+    'lifetime_min_amount' => 33300,
 ];
 ```
 
