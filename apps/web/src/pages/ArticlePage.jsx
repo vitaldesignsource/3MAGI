@@ -272,6 +272,26 @@ function ArticlePage() {
         );
     }
 
+    // ── The essay exists in the index but the server has no body for it, or
+    //    could not be reached. Say so rather than rendering an empty page.
+    if (accessStatus === 'not_found' || accessStatus === 'error') {
+        const offline = accessStatus === 'error';
+        return (
+            <div className="third-lamp-scope">
+                <ThirdLampHeader />
+                <main className="article-not-found">
+                    <p className="eyebrow">{offline ? 'Unavailable' : 'Not found'}</p>
+                    <h1>{offline ? 'This essay could not be retrieved.' : 'This essay has not yet been catalogued.'}</h1>
+                    <p>{offline
+                        ? 'The connection to the archive failed. Reloading usually resolves it.'
+                        : 'The page you followed may have moved. Return to the living archive to keep reading.'}</p>
+                    <Link className="tl-button" to="/third-lamp/archive">Back to the Archive</Link>
+                </main>
+                <ThirdLampFooter />
+            </div>
+        );
+    }
+
     // ── Members-only (api/essay.php declined to serve the text) ───────────
     if (accessStatus === 'members_only') {
         return (

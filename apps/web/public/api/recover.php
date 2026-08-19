@@ -37,19 +37,30 @@ if (rateLimitExceeded('recover', 5)) {
 }
 rateLimitRecord('recover');
 
-$email = strtolower(trim((string) ($_POST['email'] ?? '')));
+$rawEmail = trim((string) ($_POST['email'] ?? ''));
+$email = strtolower($rawEmail);
 if ($email === '' || !filter_var($email, FILTER_VALIDATE_EMAIL) || strlen($email) > 200) {
     // Even a malformed address gets the neutral answer.
     respond(200, ['ok' => true, 'message' => SAME_ANSWER]);
 }
 
-[$code, $customers] = stripeGet('customers', ['email' => $email, 'limit' => 5]);
-if ($code !== 200 || !is_array($customers)) {
-    respond(200, ['ok' => true, 'message' => SAME_ANSWER]);
+// Stripe matches customer email exactly, so a member who signed up with any
+// capital letter would never be found if we only asked for the lowercased form.
+$queries = array_values(array_unique([$email, $rawEmail]));
+$customerRows = [];
+foreach ($queries as $q) {
+    [$code, $customers] = stripeGet('customers', ['email' => $q, 'limit' => 5]);
+    if ($code === 200 && is_array($customers)) {
+        foreach ($customers['data'] ?? [] as $c) {
+            $customerRows[(string) ($c['id'] ?? '')] = $c;
+        }
+    }
 }
+$customers = ['data' => array_values($customerRows)];
 
 $token = null;
 $tier = 'supporter';
+$stripeEmail = '';
 
 foreach ($customers['data'] ?? [] as $customer) {
     $customerId = (string) ($customer['id'] ?? '');
@@ -63,6 +74,7 @@ foreach ($customers['data'] ?? [] as $customer) {
             if (in_array((string) ($sub['status'] ?? ''), SUBSCRIPTION_OK, true)) {
                 $token = makePass((string) $sub['id'], 'supporter', $email);
                 $tier = 'supporter';
+                $stripeEmail = (string) ($customer['email'] ?? '');
                 break 2;
             }
         }
@@ -72,9 +84,10 @@ foreach ($customers['data'] ?? [] as $customer) {
     [$cc, $charges] = stripeGet('charges', ['customer' => $customerId, 'limit' => 10]);
     if ($cc === 200 && is_array($charges)) {
         foreach ($charges['data'] ?? [] as $charge) {
-            if (($charge['paid'] ?? false) === true && ($charge['refunded'] ?? false) === false) {
+            if (lifetimeChargeValid($charge)) {
                 $token = makePass((string) $charge['id'], 'lifetime', $email);
                 $tier = 'lifetime';
+                $stripeEmail = (string) ($customer['email'] ?? '');
                 break 2;
             }
         }
@@ -94,10 +107,17 @@ if ($token !== null) {
         . 'MIME-Version: 1.0' . "\n"
         . 'Content-Type: text/plain; charset=UTF-8' . "\n"
         . 'X-Mailer: ThreeMagiPress';
-    // Deliberately mailed to the Stripe-held address, which for a real member
-    // equals $email; the variable is used so a typo'd form value is never used.
-    @mail($email, $subject, $body, $headers, '-f' . MAIL_FROM);
+    // The address Stripe holds, not the one typed into the form.
+    @mail($stripeEmail !== '' ? $stripeEmail : $email, $subject, $body, $headers, '-f' . MAIL_FROM);
     appendLog('tl-recover.log', ['tier' => $tier, 'email' => $email]);
+}
+
+// Equalise the work done for members and non-members. Without this, a member
+// costs three Stripe round-trips and a stranger costs one, and the difference
+// is measurable — which would defeat the identical response body above.
+$budget = 3 - stripeCallCount();
+for ($i = 0; $i < $budget; $i++) {
+    stripeGet('customers', ['email' => 'no-such-customer@example.invalid', 'limit' => 1]);
 }
 
 respond(200, ['ok' => true, 'message' => SAME_ANSWER]);

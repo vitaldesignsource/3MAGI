@@ -150,9 +150,16 @@ function b64urlDecode(string $value): string
     return $decoded === false ? '' : $decoded;
 }
 
-/** payload -> "<b64url payload>.<b64url hmac>" */
-function signPayload(array $payload): string
+/**
+ * payload -> "<b64url payload>.<b64url hmac>"
+ *
+ * Every token carries a domain ("d"). Both the pass and the preview cookie are
+ * signed with the same secret, so without this a preview token dropped into
+ * the pass cookie would verify and be read as a membership.
+ */
+function signPayload(array $payload, string $domain = 'pass'): string
 {
+    $payload['d'] = $domain;
     $json = json_encode($payload, JSON_FLAGS);
     if ($json === false) {
         return '';
@@ -162,8 +169,12 @@ function signPayload(array $payload): string
     return $body . '.' . b64urlEncode($mac);
 }
 
-/** Verify signature and return the payload, or null if anything is off. */
-function verifyToken(string $token): ?array
+/**
+ * Verify signature and domain, and return the payload, or null if anything is
+ * off. The domain check is what stops one kind of token being replayed as
+ * another.
+ */
+function verifyToken(string $token, string $domain = 'pass'): ?array
 {
     if ($token === '' || secret('cookie_secret') === '') {
         return null;
@@ -181,7 +192,31 @@ function verifyToken(string $token): ?array
         return null;
     }
     $payload = json_decode(b64urlDecode($body), true);
-    return is_array($payload) ? $payload : null;
+    if (!is_array($payload)) {
+        return null;
+    }
+    // Tokens minted before domains existed have none, and are not honoured.
+    if (($payload['d'] ?? '') !== $domain) {
+        return null;
+    }
+    return $payload;
+}
+
+/**
+ * A membership pass must name a Stripe object and a known tier. Anything else
+ * — a preview token, a truncated payload, a hand-built object — is not a pass,
+ * whatever its signature says.
+ */
+function validPassShape(?array $p): bool
+{
+    if ($p === null) {
+        return false;
+    }
+    $ref = $p['k'] ?? null;
+    $tier = $p['t'] ?? null;
+    return is_string($ref) && $ref !== ''
+        && is_string($tier) && in_array($tier, ['supporter', 'lifetime'], true)
+        && isset($p['c']) && is_int($p['c']);
 }
 
 // ------------------------------------------------------------- the pass ----
@@ -232,7 +267,8 @@ function isLocalRequest(): bool
 function currentPass(): ?array
 {
     $raw = $_COOKIE[PASS_COOKIE] ?? '';
-    return is_string($raw) ? verifyToken($raw) : null;
+    $payload = is_string($raw) ? verifyToken($raw, 'pass') : null;
+    return validPassShape($payload) ? $payload : null;
 }
 
 // ---------------------------------------------------------------- stripe ---
@@ -242,8 +278,18 @@ function currentPass(): ?array
  * request never completed (DNS, TLS, timeout) — the caller must treat that as
  * "unknown", NOT as "not a member".
  */
+/** How many Stripe requests this PHP process has made. Used to equalise the
+ *  work done on paths that must not be distinguishable by timing. */
+$GLOBALS['tl_stripe_calls'] = 0;
+
+function stripeCallCount(): int
+{
+    return (int) ($GLOBALS['tl_stripe_calls'] ?? 0);
+}
+
 function stripeGet(string $path, array $query = []): array
 {
+    $GLOBALS['tl_stripe_calls'] = stripeCallCount() + 1;
     $key = secret('stripe_key');
     if ($key === '') {
         return [0, null];
@@ -275,6 +321,59 @@ function stripeGet(string $path, array $query = []): array
 /** Subscription statuses that keep a reader inside. past_due is deliberate:
  *  a bounced card is a person, not a thief. */
 const SUBSCRIPTION_OK = ['active', 'trialing', 'past_due'];
+
+/**
+ * Is this Charge a genuine one-off purchase that still stands?
+ *
+ * `invoice` is set on charges Stripe raises for a subscription period, so a
+ * cancelled monthly member has paid, unrefunded charges in their history —
+ * treating those as a Lifetime purchase would hand them permanent access.
+ * Disputes and partial refunds also revoke: a chargeback is a reversal.
+ */
+/** The minimum a charge must be, in the smallest currency unit, to count as a
+ *  Lifetime purchase. Set `lifetime_min_amount` in the secrets file once the
+ *  Payment Link price is known; until then any one-off charge qualifies, which
+ *  is safe only while membership is the sole thing this Stripe account sells.
+ *  The moment anything else is sold through it — a book, a print, a donation —
+ *  this MUST be set, or that buyer is handed a lifetime membership. */
+function lifetimeMinAmount(): int
+{
+    // Read the raw value: secret() narrows to string and would turn an int
+    // in the secrets file into '', silently disabling the floor.
+    $all = secrets();
+    $v = $all['lifetime_min_amount'] ?? 0;
+    return is_numeric($v) ? (int) $v : 0;
+}
+
+function lifetimeChargeValid(array $charge, bool $requireOneOff = true): bool
+{
+    if (($charge['status'] ?? '') !== 'succeeded') {
+        return false;
+    }
+    if (($charge['paid'] ?? false) !== true) {
+        return false;
+    }
+    if (($charge['refunded'] ?? false) === true) {
+        return false;
+    }
+    if ((int) ($charge['amount_refunded'] ?? 0) > 0) {
+        return false;
+    }
+    if (($charge['disputed'] ?? false) === true) {
+        return false;
+    }
+    if ($requireOneOff && !empty($charge['invoice'])) {
+        return false;
+    }
+    // A one-off charge for something OTHER than Lifetime must not grant
+    // membership. Amount is the only discriminator available on a Charge
+    // without another API call, so it is used as a floor.
+    $min = lifetimeMinAmount();
+    if ($requireOneOff && $min > 0 && (int) ($charge['amount'] ?? 0) < $min) {
+        return false;
+    }
+    return true;
+}
 
 // ----------------------------------------------------------------- files ---
 

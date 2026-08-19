@@ -48,17 +48,17 @@ def curl(path, *, cookie=None, method="GET", data=None):
     return int(status or 0), parsed
 
 
-def mint(payload):
-    """Sign a payload with the same secret the server uses."""
+def mint(payload, domain="pass"):
+    """Sign a payload with the same secret and domain the server uses."""
     php = os.environ.get("PHP", "php")
     script = (
         '<?php $_SERVER["DOCUMENT_ROOT"]="' + WORK + '/www"; '
         'require "' + WORK + '/www/api/_lib.php"; '
-        'echo signPayload(json_decode($argv[1], true));'
+        'echo signPayload(json_decode($argv[1], true), $argv[2]);'
     )
     p = os.path.join(WORK, "_mint.php")
     open(p, "w").write(script)
-    return subprocess.run([php, p, json.dumps(payload)], capture_output=True, text=True).stdout.strip()
+    return subprocess.run([php, p, json.dumps(payload), domain], capture_output=True, text=True).stdout.strip()
 
 
 GATED = "herculaneum"        # published, members-only
@@ -125,7 +125,7 @@ st, d = curl(f"/api/essay.php?slug={GATED}", cookie=f"tl_pass={recent}")
 check("pass inside the re-check window → 200 without calling Stripe", st == 200, (st, str(d)[:60]))
 
 print("\n# drafts and preview")
-preview = mint({"v": 1, "p": 1, "c": 9999999999})
+preview = mint({"v": 1, "p": 1, "c": 9999999999}, "preview")
 st, d = curl(f"/api/essay.php?slug={DRAFT}", cookie=f"tl_preview={preview}")
 check("valid preview cookie reads a draft → 200", st == 200 and d.get("ok") is True, (st, str(d)[:80]))
 st, d = curl(f"/api/essay.php?slug={DRAFT}", cookie=f"tl_pass={good}")
@@ -134,6 +134,22 @@ st, d = curl(f"/api/preview.php?key=wrong-key")
 check("wrong preview key → 403", st == 403, (st, d))
 st, d = curl(f"/api/preview.php?key=test-preview-key")
 check("correct preview key → 200", st == 200 and d.get("preview") is True, (st, d))
+
+print("\n# regressions found in review")
+prev_tok = mint({"v": 1, "p": 1, "c": 9999999999}, "preview")
+st, d = curl(f"/api/essay.php?slug={GATED}", cookie=f"tl_pass={prev_tok}")
+check("a preview token is NOT a membership pass → 402", st == 402, (st, d))
+
+st, d = curl(f"/api/essay.php?slug={DRAFT}", cookie=f"tl_preview={mint({'v':1,'k':'sub_x','t':'supporter','c':9999999999,'e':''})}")
+check("a membership pass is NOT a preview token → 401", st == 401, (st, d))
+
+for bad, label in [({"v":1,"t":"supporter","c":9999999999}, "no Stripe reference"),
+                   ({"v":1,"k":"sub_x","c":9999999999}, "no tier"),
+                   ({"v":1,"k":"sub_x","t":"admin","c":9999999999}, "invented tier"),
+                   ({"v":1,"k":["sub_x"],"t":"supporter","c":9999999999}, "reference is an array"),
+                   ({"v":1,"k":"sub_x","t":"supporter","c":"9999999999"}, "timestamp is a string")]:
+    st, d = curl(f"/api/essay.php?slug={GATED}", cookie=f"tl_pass={mint(bad)}")
+    check(f"signed but malformed pass ({label}) → 402", st == 402, (label, st))
 
 print("\n# pass endpoint")
 st, d = curl("/api/pass.php")

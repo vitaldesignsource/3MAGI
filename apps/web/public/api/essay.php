@@ -55,8 +55,8 @@ $content = $record['content'] ?? [];
 
 if ($isDraft) {
     $token = (string) ($_COOKIE[PREVIEW_COOKIE] ?? '');
-    $payload = verifyToken($token);
-    if ($payload === null || ($payload['p'] ?? '') !== 1) {
+    $payload = verifyToken($token, 'preview');
+    if ($payload === null || ($payload['p'] ?? 0) !== 1) {
         fail(401, 'This essay is not published yet.', 'preview_required');
     }
     respond(200, ['ok' => true, 'slug' => $slug, 'content' => $content]);
@@ -89,8 +89,12 @@ if ($age > $window) {
             fail(402, 'Your membership could not be confirmed. Please try again shortly.', 'members_only');
         }
     } elseif ($code === 200 && is_array($body)) {
+        // For a lifetime pass the reference is the original charge: a refund,
+        // a partial refund or a chargeback all end the membership. The
+        // one-off requirement is relaxed here because the charge was already
+        // proven to be a one-off when the pass was issued.
         $stillValid = $tier === 'lifetime'
-            ? (($body['refunded'] ?? false) === false && ($body['status'] ?? '') !== 'failed')
+            ? lifetimeChargeValid($body, false)
             : in_array((string) ($body['status'] ?? ''), SUBSCRIPTION_OK, true);
 
         if (!$stillValid) {

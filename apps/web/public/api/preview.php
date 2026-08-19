@@ -39,7 +39,7 @@ if ($given === '' || !hash_equals($expected, $given)) {
 }
 
 // Signed like the pass, so essay.php can verify it with the same machinery.
-$token = signPayload(['v' => 1, 'p' => 1, 'c' => time()]);
+$token = signPayload(['v' => 1, 'p' => 1, 'c' => time()], 'preview');
 setcookie(PREVIEW_COOKIE, $token, [
     'expires'  => time() + 365 * 86400,
     'path'     => '/',

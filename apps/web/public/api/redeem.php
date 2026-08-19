@@ -44,8 +44,14 @@ rateLimitRecord('redeem');
 
 $root = $_SERVER['DOCUMENT_ROOT'] ?? '';
 $redeemedFile = ($root !== '' ? dirname($root) : dirname(__DIR__, 2)) . '/tl-redeemed.log';
-$seen = @file_get_contents($redeemedFile);
-if ($seen !== false && str_contains($seen, $sessionId)) {
+// Session ids are recorded as one SHA-256 per line, and matched whole-line.
+// Storing them raw and testing with str_contains() would make this endpoint a
+// prefix oracle: an attacker submitting a growing prefix could read a real
+// buyer's session id out of the log one character at a time, and an id that
+// merely appeared inside another line would falsely read as already used.
+$sessionHash = hash('sha256', $sessionId);
+$seen = @file($redeemedFile, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+if (is_array($seen) && in_array($sessionHash, $seen, true)) {
     fail(409, 'That payment link has already been used. Use "Restore access" to have your link re-sent.', 'already_redeemed');
 }
 
@@ -76,9 +82,29 @@ if (is_array($subscription) && isset($subscription['id'])) {
 } else {
     $tier = 'lifetime';
     $intent = $session['payment_intent'] ?? null;
-    $ref = is_array($intent)
-        ? (string) ($intent['latest_charge'] ?? $intent['id'] ?? '')
-        : (string) ($intent ?? '');
+    // The pass must reference a CHARGE, because that is what the periodic
+    // re-check queries. Storing a pi_… here would make every later re-check
+    // 404 and revoke a legitimate member.
+    $ref = '';
+    if (is_array($intent) && !empty($intent['latest_charge'])) {
+        $charge = $intent['latest_charge'];
+        $ref = is_array($charge) ? (string) ($charge['id'] ?? '') : (string) $charge;
+    }
+    if (!str_starts_with($ref, 'ch_')) {
+        // Not expanded, or an unexpected shape — ask Stripe directly rather
+        // than guessing.
+        $intentId = is_array($intent) ? (string) ($intent['id'] ?? '') : (string) ($intent ?? '');
+        if ($intentId !== '') {
+            [$ic, $ib] = stripeGet('payment_intents/' . urlencode($intentId));
+            if ($ic === 200 && is_array($ib) && !empty($ib['latest_charge'])) {
+                $lc = $ib['latest_charge'];
+                $ref = is_array($lc) ? (string) ($lc['id'] ?? '') : (string) $lc;
+            }
+        }
+    }
+    if (!str_starts_with($ref, 'ch_')) {
+        fail(500, 'That payment could not be matched to a membership. Please write to 3rdlamp@3magipress.com and we will sort it out.');
+    }
 }
 
 if ($ref === '') {
@@ -90,7 +116,7 @@ if ($ref === '') {
 $token = makePass($ref, $tier, $email);
 sendPassCookie($token, $tier);
 
-@file_put_contents($redeemedFile, $sessionId . "\n", FILE_APPEND | LOCK_EX);
+@file_put_contents($redeemedFile, $sessionHash . "\n", FILE_APPEND | LOCK_EX);
 
 // The only local record of who paid. If Stripe ever closes the account this
 // file is the difference between "email my members" and "I have no idea who
