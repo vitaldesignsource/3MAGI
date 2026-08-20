@@ -86,14 +86,14 @@ export const lampPostCategories = [
         glyph: '◈',
         items: [
             {
-                headline: "A first-edition tarot deck with hand-painted plates",
-                meta: 'London · Auction House Notice',
-                copy: 'A complete hand-painted tarot deck attributed to a minor eighteenth-century engraving workshop is set to cross the block this season, with pre-sale estimates already drawing interest from private collectors and two university archives.',
-            },
-            {
-                headline: "An annotated copy of a Renaissance natural-magic treatise",
-                meta: 'Private Sale · Provenance Confirmed',
-                copy: "Marginal notes in a second, unidentified hand run through nearly every page of this treatise on natural magic, raising quiet speculation about which reader — and which circle — once kept it close.",
+                headline: 'Where esoteric material actually comes to sale',
+                meta: 'Standing watch · updated as lots are confirmed',
+                copy: 'The Lamp Post lists a lot only once it can be pointed at: an auction house, a sale date, a lot number. Between sales, these are the departments where alchemical, hermetic and occult books and objects most often surface — the Books & Manuscripts desks at the major houses, and the specialist dealers who catalogue provenance properly.',
+                links: [
+                    { label: "Sotheby's Books & Manuscripts", url: 'https://www.sothebys.com/en/departments/books-manuscripts' },
+                    { label: "Christie's Books & Manuscripts", url: 'https://www.christies.com/en/departments/books-and-manuscripts-23' },
+                    { label: 'Antiquarian Booksellers Association', url: 'https://aba.org.uk/' },
+                ],
             },
         ],
     },
@@ -184,49 +184,67 @@ export const lampPostCategories = [
         glyph: '△',
         items: [
             {
-                headline: 'A votive cache surfaces beneath a Mediterranean threshold stone',
-                meta: 'Excavation Report',
-                copy: 'Excavators clearing a collapsed doorway uncovered a small cache of votive figures and inscribed lead tablets, positioned precisely beneath the threshold — a placement consistent with known apotropaic building rites.',
-            },
-            {
-                headline: 'Star-aligned markings noted on a newly cleared chamber wall',
-                meta: 'Survey Note',
-                copy: "Ground-penetrating survey of a chamber long assumed to be storage has revealed faint incised markings along one wall that early analysis suggests may correspond to a seasonal star alignment.",
-            },
-            {
                 headline: 'An Egyptian-style curse tablet from the Roman Netherlands',
                 meta: 'Heerlen · 2026 · Heidelberg University',
                 copy: 'Researchers at Heidelberg University recently deciphered a second-century CE lead tablet excavated at Coriovallum, now Heerlen. Although discovered in the far north of the Roman world, it contains an ancient Greek binding spell constructed in an Egyptian magical style. It invokes gods or daimones and includes three magical signs called characteres. This is extraordinarily relevant to the study of the Western magical tradition because it demonstrates that Egyptian, Greek, Roman, Near Eastern, Jewish, and eventually Christian magical currents were already merging and traveling across the empire. It is physical evidence of the same syncretic atmosphere from which the Greek Magical Papyri emerged.',
+                links: [
+                    { label: 'Heidelberg University announcement', url: 'https://www.archaeology.wiki/blog/2026/06/22/heidelberg-researchers-decipher-ancient-curse-tablet/' },
+                    { label: 'Smithsonian Magazine', url: 'https://www.smithsonianmag.com/smart-news/this-magical-curse-written-in-greek-on-a-small-lead-tablet-was-meant-to-punish-enemies-nearly-2000-years-ago-180989001/' },
+                ]
             },
             {
                 headline: 'The newly uncovered Sanctuary of Apollo at Frangissa',
                 meta: 'Cyprus · 2025–2026 · Department of Antiquities',
                 copy: 'Excavations at the long-lost sanctuary of Apollo at Frangissa have recovered parts of an enormous votive assemblage: hundreds of statues, including colossal figures, deposited within a sacred precinct. The sanctuary was originally discovered in the nineteenth century and subsequently lost; modern archaeology has now securely relocated and excavated it. The site may reveal how divine presence was materially accumulated. A sanctuary was not simply a building containing representations of Apollo: generations of offerings gradually created a charged field of images, bodies, gestures, vows, and divine reciprocity. It is almost an archaeological example of a deliberately constructed Morphaithēr — a sacred atmosphere shaped by repeated ritual participation.',
+                links: [
+                    { label: 'Cyprus Department of Antiquities', url: 'https://www.gov.cy/en/culture/completion-of-the-archaeological-excavation-campaign-at-the-sanctuary-of-apollo-at-frangissa-in-pera-oreinis-community/' },
+                    { label: 'Archaeology Magazine', url: 'https://archaeology.org/news/2026/05/27/statue-bases-uncovered-in-sanctuary-of-apollo-on-cyprus/' },
+                ]
             },
             {
                 headline: 'A Greek-Egyptian burial complex at Quesna',
                 meta: 'Egypt · announced July 2026',
                 copy: 'A newly investigated section of the Quesna necropolis produced approximately 560 faience ushabti figures, some bearing material associated with the Book of the Dead, together with Eye of Horus amulets, Knots of Isis, mummification evidence, and an unusual burial in which plates were positioned underneath and between the limbs. The important point is not merely the quantity of objects. Egyptian burial magic treated images, words, bodily arrangement, color, and substance as operative forces. The ushabti was not simply a memorial statue; through inscription and ritual animation, it became a substitute body capable of acting for the deceased in the otherworld. The unidentified plate arrangement may represent an additional protective or transformative rite, although archaeologists have not yet determined its meaning.',
+                links: [
+                    { label: 'Archaeology Magazine', url: 'https://archaeology.org/news/2026/07/27/funerary-complex-unearthed-in-northern-egypt/' },
+                    { label: 'HeritageDaily report', url: 'https://www.heritagedaily.com/2026/07/archaeologists-uncover-new-funerary-complex-at-egypts-quesna-necropolis/158706' },
+                ]
             },
             {
                 headline: 'A Roman curse formula blending Egyptian and Greek magical grammar',
                 meta: 'Heerlen · characteres & sphragides',
                 copy: 'The Heerlen tablet deserves a second emphasis because its characteres are particularly significant. These enigmatic signs occur throughout late-antique magical texts, gems, amulets, and curse tablets. They appear to function neither as ordinary writing nor merely as decoration. They were treated as supra-linguistic signatures — graphic vessels intended to establish contact with invisible powers. For your own metaphysical system, these signs could be studied as sphragides: seals that compress name, force, intention, and spiritual identity into a single operative figure.',
+                links: [
+                    { label: 'Phys.org on the inscription', url: 'https://phys.org/news/2026-06-ancient-curse-tablet-rare-greek.html' },
+                    { label: 'Archaeology Magazine', url: 'https://archaeology.org/news/2026/06/19/roman-curse-tablet-from-the-netherlands-studied/' },
+                ]
             },
             {
                 headline: 'A monumental Zapotec tomb at Huitzo',
                 meta: 'Mexico · 2026 · INAH',
                 copy: "Mexico's National Institute of Anthropology and History announced the discovery of a remarkably preserved Zapotec tomb dating to approximately 600 CE. Its entrance is guarded symbolically by an owl, an animal associated with night and death, while painted figures proceed bearing copal incense. The tomb's inscriptions and imagery appear to connect ancestry, political legitimacy, and the passage into the underworld. Rather than treating the deceased as absent, Zapotec funerary religion apparently made the ancestor an enduring participant in the living community. The tomb therefore operated as an interface between lineage, territory, rulership, and the invisible world.",
+                links: [
+                    { label: 'HeritageDaily report', url: 'https://www.heritagedaily.com/2026/01/zapotec-tomb-hailed-as-most-important-discovery-in-mexico-in-last-decade/156818' },
+                    { label: 'Live Science', url: 'https://www.livescience.com/archaeology/1-400-year-old-zapotec-tomb-discovered-in-mexico-features-enormous-owl-sculpture-symbolizing-death' },
+                ]
             },
             {
                 headline: 'A 9,500-year-old intentional cremation at Mount Hora',
                 meta: 'Malawi · published 2026 · Science Advances',
                 copy: 'Researchers identified what is currently the earliest well-documented intentional cremation of an adult in Africa. The body appears to have been deliberately prepared, burned on a substantial pyre, and selectively treated; the skull was absent, and later fires suggest that people returned to the location. This indicates a surprisingly developed funerary ritual among early hunter-gatherers. Fire was already being used not merely for disposal but as a medium of separation, transformation, remembrance, and perhaps liberation of the dead from their bodily form.',
+                links: [
+                    { label: 'Science Advances paper', url: 'https://www.science.org/doi/10.1126/sciadv.adz9554' },
+                    { label: 'Smithsonian Magazine', url: 'https://www.smithsonianmag.com/smart-news/archaeologists-say-this-9500-year-old-burial-is-the-oldest-known-evidence-of-intentional-cremation-discovered-in-africa-180987945/' },
+                ]
             },
             {
                 headline: 'Copper Age ritual lamps from Teleilat Ghassul',
                 meta: 'Jordan · reassessed 2026',
                 copy: 'Cone-shaped ceramic objects from the approximately 7,000-year-old ritual center of Teleilat Ghassul were long difficult to explain. Recent analysis suggests that some may have held beeswax and functioned as lamps, perhaps during processions or ceremonies.',
+                links: [
+                    { label: 'Phys.org on the study', url: 'https://phys.org/news/2026-02-ancient-cone-vessels-beeswax-lamps.html' },
+                    { label: 'Archaeology Magazine', url: 'https://archaeology.org/news/2026/02/18/unique-cone-shaped-vessels-may-have-been-beeswax-lamps/' },
+                ]
             },
         ],
     },
@@ -257,44 +275,63 @@ export const lampPostCategories = [
         glyph: '✧',
         items: [
             {
-                headline: 'A fresh rendering of a late-antique hymn cycle',
-                meta: 'Publication Notice',
-                copy: 'A new scholarly translation restores several stanzas long thought corrupted beyond recovery, using comparative manuscript work to reconstruct passages describing the descent and return of a solar figure.',
-            },
-            {
                 headline: 'Hermetica I — M. David Litwa, 2026',
                 meta: 'New Translation · Corpus Hermeticum',
                 copy: "This is probably the most important recent release for the field. Litwa presents a fresh translation of the Corpus Hermeticum and related Hermetic writings, emphasizing their initiatory structure, Egyptian religious background, divine rebirth, ascent of consciousness, and salvation through gnōsis. The significant difference is textual: Litwa draws upon Christian Wildberg's new critical work, which attempts to identify marginal comments and later interpolations that may have entered the body of the Hermetic texts during manuscript transmission. Some questionable passages are separated or moved into notes, producing a more coherent philosophical sequence. This translation may allow the Hermetica to be read less like a disorderly anthology and more like a graded passage through revelation, purification, cosmic understanding, and spiritual regeneration.",
+                links: [
+                    { label: 'Cambridge University Press', url: 'https://www.cambridge.org/core/books/hermetica-ii/5B0BD7C5C0EA0429CCF2D444AD84558C' },
+                ]
             },
             {
                 headline: 'Greek and Egyptian Magical Formularies: Text and Translation, Volume I',
                 meta: 'Edited by Christopher Faraone & Sofía Torallas Tovar',
                 copy: "Edited by Christopher Faraone and Sofía Torallas Tovar, this is the beginning of a major replacement for the older Greek Magical Papyri in Translation edited by Hans Dieter Betz. The project collects Greek, Demotic Egyptian, and Coptic magical manuals and provides corrected original texts, facing English translations, introductions, diagrams, and substantial notes. Volume I contains 54 formularies dating principally from the second century BCE through the early Roman period. These include consecration and animation rituals, solar and lunar invocations, erotic and binding operations, protective amulets, divine names and voces magicae, astrological timing, dream and revelatory rites, and ritual recipes involving plants, stones, inks, and animal substances. The great advancement is that each papyrus is treated as a physical ritual handbook rather than as a disembodied collection of spells. The complete volume is also legally available through the project's open-access edition (California Classical Studies).",
+                links: [
+                    { label: 'California Classical Studies (open access)', url: 'https://escholarship.org/uc/item/9650x69r' },
+                    { label: 'Bryn Mawr Classical Review', url: 'https://bmcr.brynmawr.edu/2023/2023.02.49/' },
+                ]
             },
             {
                 headline: 'Papyri Copticae Magicae: Coptic Magical Texts, Volume I',
                 meta: 'Edited by Korshi Dosoo and others · De Gruyter',
                 copy: "Edited by Korshi Dosoo and others, this monumental publication offers new editions and translations of Coptic magical manuscripts from late-antique and early Islamic Egypt. The texts contain a fascinating fusion of Egyptian divine names, Greek magical formulas, Jewish angels and patriarchs, Christian saints and archangels, and Gnostic cosmological structures — covering healing, protection and exorcism, erotic attraction and separation, curses and judicial spells, and ritual drawings and magical signs. These manuscripts demonstrate that Egyptian magic did not disappear with Christianization. Its divine names, ritual structures, sacred images, and operative assumptions entered a new Christian-Coptic vocabulary.",
+                links: [
+                    { label: 'De Gruyter', url: 'https://www.degruyterbrill.com/document/doi/10.1515/9783111080109/html' },
+                ]
             },
             {
                 headline: 'The Heerlen Greek-Egyptian curse tablet — first deciphered in 2026',
                 meta: 'Newly Deciphered Ancient Text · Heidelberg University',
                 copy: "This is not a book but a newly deciphered ancient text. Heidelberg researchers used reflectance-transformation imaging to recover the nearly invisible writing on a second-century CE lead tablet discovered in the Netherlands. The text is a Greek binding spell composed in an Egyptian magical style. It invokes supernatural beings, names four enslaved individuals, and includes three magical characteres — graphic signs intended to communicate with divine or daimonic powers. Its translation provides direct evidence that Egyptian magical techniques had traveled to the northern edge of the Roman Empire.",
+                links: [
+                    { label: 'Heidelberg University announcement', url: 'https://www.archaeology.wiki/blog/2026/06/22/heidelberg-researchers-decipher-ancient-curse-tablet/' },
+                ]
             },
             {
                 headline: 'The Qulasta — Gelbert and Lofts translation, 2025',
                 meta: 'New English Edition · Mandaean Canonical Prayer Book',
                 copy: "A substantial new English edition of the Mandaean Qulasta, or canonical prayer book, was published in 2025. It reportedly contains more than 330 prayers connected with baptism, priestly action, purification, death rites, ascent of the soul, remembrance ceremonies, and union with the World of Light. Mandaean literature is particularly valuable because it preserves a living Gnostic religious tradition rather than merely archaeological fragments of extinct Gnostic schools. Its cosmology contains the transcendent World of Light, the Great Life, the soul's descent into material embodiment, ritual baptism in living water, celestial helpers and guardians, and the soul's return through intermediary worlds. Its baptismal and funerary prayers offer an important comparison with Hermetic rebirth, the Chaldaean ascent, and the soul's passage through planetary spheres.",
+                links: [
+                    { label: 'Living Water Books (publisher)', url: 'https://livingwaterbooks.com.au/product/4304/' },
+                ]
             },
             {
                 headline: 'Hermetica II — M. David Litwa',
                 meta: 'Translation · Hermetic Fragments beyond the Corpus',
                 copy: "Although originally published in 2018, this remains one of the newest scholarly translations of the Hermetic fragments not preserved in the familiar Corpus Hermeticum. It includes the Stobaean excerpts, papyrus fragments, Armenian materials, testimonies concerning Hermes Trismegistus, and the extraordinary Definitions of Hermes to Asclepius. It is essential because the popular Corpus Hermeticum represents only one surviving portion of ancient Hermetic literature. Hermetica II restores fragments concerning God as intelligible light, the human being as a divine image, cosmic sympathy, fate and providence, soul embodiment, spiritual ascent, and the divine powers of mind and speech.",
+                links: [
+                    { label: 'Cambridge University Press', url: 'https://www.cambridge.org/core/books/hermetica-ii/5B0BD7C5C0EA0429CCF2D444AD84558C' },
+                    { label: 'Bryn Mawr Classical Review', url: 'https://bmcr.brynmawr.edu/2019/2019.01.48/' },
+                ]
             },
             {
                 headline: 'Ancient Egyptian Book of the Moon',
-                meta: 'Specialist Study · Coffin Text Spells 154–160',
+                meta: 'Gyula Priskin · Archaeopress · Coffin Text Spells 154–160',
                 copy: "This recent specialist study provides a new translation and analysis of Coffin Text Spells 154–160. The spells appear to describe the lunar cycle in ordered stages, connecting the moon's changing form with divine renewal, time, death, restoration, and celestial navigation. It suggests that the moon was understood not merely as a celestial object but as a living measure through which invisible processes entered rhythm, sequence, disappearance, and renewal.",
+                links: [
+                    { label: 'Archaeopress (publisher)', url: 'https://www.archaeopress.com/Archaeopress/Products/9781789691986' },
+                    { label: 'JSTOR', url: 'https://www.jstor.org/stable/j.ctvndv65s' },
+                ]
             },
         ],
     },
