@@ -223,7 +223,39 @@ function ThirdLampLampPostPage() {
                                     </button>
                                     <div className="lamp-post-items-panel">
                                         <div className="lamp-post-items">
-                                            {entry.data.items.map((item) => (
+                                            {entry.data.items.map((item) => item.featured ? (
+                                                // A featured item is the one thing in its category
+                                                // worth stopping for: it spans the grid and states
+                                                // when / where / in what form before the prose.
+                                                <article className="lamp-post-featured" key={item.headline}>
+                                                    <div className="lamp-post-featured-inner">
+                                                        <p className="lamp-post-featured-eyebrow">
+                                                            <span className="lamp-post-featured-star" aria-hidden="true">✦</span>
+                                                            {item.eyebrow || 'Featured'}
+                                                        </p>
+                                                        <h3 className="lamp-post-featured-headline">
+                                                            {item.link ? (
+                                                                <a href={item.link} target="_blank" rel="noopener noreferrer">{item.headline}</a>
+                                                            ) : item.headline}
+                                                        </h3>
+                                                        {(item.when || item.where || item.format) && (
+                                                            <dl className="lamp-post-featured-facts">
+                                                                {item.when && (<div><dt>When</dt><dd>{item.when}</dd></div>)}
+                                                                {item.where && (<div><dt>Where</dt><dd>{item.where}</dd></div>)}
+                                                                {item.format && (<div><dt>Format</dt><dd>{item.format}</dd></div>)}
+                                                            </dl>
+                                                        )}
+                                                        <p className="lamp-post-featured-copy">{item.copy}</p>
+                                                        {item.link && (
+                                                            <p className="lamp-post-featured-actions">
+                                                                <a className="tl-button tl-button-small" href={item.link} target="_blank" rel="noopener noreferrer">
+                                                                    {item.cta || 'Find out more'}
+                                                                </a>
+                                                            </p>
+                                                        )}
+                                                    </div>
+                                                </article>
+                                            ) : (
                                                 <div className="lamp-post-item" key={item.headline}>
                                                     <p className="lamp-post-item-meta">{item.meta}</p>
                                                     <h3>
@@ -245,7 +277,7 @@ function ThirdLampLampPostPage() {
                                                             {item.links.map((lnk, li) => (
                                                                 <React.Fragment key={li}>
                                                                     {li > 0 && <span className="lamp-post-item-links-sep" aria-hidden="true"> · </span>}
-                                                                    <a href={lnk.url} target="_blank" rel="noopener noreferrer">{lnk.label}</a>
+                                                                    <a href={lnk.url || lnk.href} target="_blank" rel="noopener noreferrer">{lnk.label}</a>
                                                                 </React.Fragment>
                                                             ))}
                                                         </p>

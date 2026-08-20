@@ -10,7 +10,7 @@ export const lampPostCategories = [
                 meta: 'Egypt · Saqqara · 2022–2023',
                 copy: 'Discovered at Saqqara in 2022 and publicly unveiled in 2023, this Ptolemaic funerary scroll extends approximately 16 meters and contains about 113 Book of the Dead spells. It was found inside the coffin of a man named Ahmose. One of the strongest genuine archaeological discoveries involving Egyptian initiatory and afterlife literature.',
                 links: [
-                    { label: 'Associated Press report', href: 'https://apnews.com/article/egypt-saqqara-book-of-the-dead-papyrus-discovery-97bd64a78d6ffc5e6e4b75b5c8a91c1a', external: true },
+                    { label: 'Associated Press report', url: 'https://apnews.com/article/egypt-saqqara-book-of-the-dead-papyrus-discovery-97bd64a78d6ffc5e6e4b75b5c8a91c1a', external: true },
                 ],
             },
             {
@@ -18,7 +18,7 @@ export const lampPostCategories = [
                 meta: 'Oxyrhynchus Collection · Published 2023',
                 copy: 'Published in 2023, this second- or early-third-century papyrus combines sayings associated with Matthew, Luke, and the Gospel of Thomas. It is currently the earliest surviving manuscript containing material from Thomas. Its blending of traditions complicates the conventional separation between "canonical" and "heterodox" Christianity.',
                 links: [
-                    { label: 'Center for the Study of New Testament Manuscripts', href: 'https://www.csntm.org', external: true },
+                    { label: 'Center for the Study of New Testament Manuscripts', url: 'https://www.csntm.org', external: true },
                 ],
             },
             {
@@ -26,7 +26,7 @@ export const lampPostCategories = [
                 meta: 'Hamburg · P.Hamb.Graec. 1011 · Identified 2024',
                 copy: 'In 2024, scholars identified an overlooked papyrus in Hamburg — P.Hamb.Graec. 1011 — as the earliest surviving copy of the Infancy Gospel of Thomas. Dating to the fourth or early fifth century, it preserves the story of the child Jesus animating clay birds. It may have been copied as a school or monastic writing exercise.',
                 links: [
-                    { label: 'Biblical Archaeology Society', href: 'https://www.biblicalarchaeology.org', external: true },
+                    { label: 'Biblical Archaeology Society', url: 'https://www.biblicalarchaeology.org', external: true },
                 ],
             },
             {
@@ -34,7 +34,7 @@ export const lampPostCategories = [
                 meta: 'Papyri Copticae Magicae · Vol. I, 2023–2024',
                 copy: 'The first volume of Papyri Copticae Magicae appeared in late 2023 and received wider attention in 2024. The corpus includes healing and protective spells, demon-expulsion rites, love and separation magic, curses, fertility operations, and divination appealing to angels, saints, and transformed Egyptian powers. Around 600 Coptic magical texts survive. This is probably the most important current manuscript project for the historical study of operative magic.',
                 links: [
-                    { label: 'University of Würzburg report', href: 'https://www.uni-wuerzburg.de', external: true },
+                    { label: 'University of Würzburg report', url: 'https://www.uni-wuerzburg.de', external: true },
                 ],
             },
             {
@@ -42,7 +42,7 @@ export const lampPostCategories = [
                 meta: 'Cambridge Genizah · Recently Identified',
                 copy: 'Fragments of the original Arabic version of Thābit ibn Qurra\'s treatise on astrological images were recently identified among the Cambridge Genizah materials. The work explains how celestial influences could be captured within constructed images and talismans. Especially important because much of this tradition had previously survived only through Latin transmission.',
                 links: [
-                    { label: 'IET Archives discussion', href: 'https://archives.ietdl.org', external: true },
+                    { label: 'IET Archives discussion', url: 'https://archives.ietdl.org', external: true },
                 ],
             },
             {
@@ -50,7 +50,7 @@ export const lampPostCategories = [
                 meta: 'Istanbul · Ḥadīqat al-nufūs · Recognized 2022, Detailed 2025',
                 copy: 'A manuscript of al-Kafʿamī\'s long-lost Ḥadīqat al-nufūs wa-ḥijlat al-ʿarūs was recognized in a digitized Istanbul collection in 2022, with the discovery publicly detailed in 2025. Its more than 800 folios cover astrology, numerology, celestial movement, gemstones, the soul, spiritual psychology, philosophical anthropology, prayer, and classifications of knowledge. It appears to survive as a unique manuscript.',
                 links: [
-                    { label: 'Leiden Arabic Humanities Blog', href: 'https://arabichumanities.wp.hum.leiden.edu', external: true },
+                    { label: 'Leiden Arabic Humanities Blog', url: 'https://arabichumanities.wp.hum.leiden.edu', external: true },
                 ],
             },
             {
@@ -58,7 +58,7 @@ export const lampPostCategories = [
                 meta: 'Medieval Divination · Research Published 2026',
                 copy: 'Research published in 2026 introduced newly identified ninth- through twelfth-century witnesses to the Sortes Sanctorum — the "Lots of the Saints." This was a Christian divinatory system in which a person asked a question, threw dice, and consulted an indexed prophetic answer. The new evidence suggests these divination manuals circulated alongside biblical glossaries, schoolbooks, and encyclopedias rather than surviving only at the margins of Christian culture.',
                 links: [
-                    { label: 'Research announcement', href: 'https://www.medievalists.net', external: true },
+                    { label: 'Research announcement', url: 'https://www.medievalists.net', external: true },
                 ],
             },
             {
@@ -66,7 +66,7 @@ export const lampPostCategories = [
                 meta: 'Herculaneum · X-ray Imaging · 2025',
                 copy: 'In 2025, X-ray imaging revealed that the carbonized scroll PHerc. 172 contains part of On Vices by the Epicurean philosopher Philodemus. Adjacent to esotericism rather than an occult manuscript, but the larger Herculaneum project is extremely consequential: hundreds of unread philosophical scrolls remain, and future virtual unwrapping could recover otherwise lost works of ancient philosophy.',
                 links: [
-                    { label: 'Report on the identification', href: 'https://www.theherculaneumsociety.org', external: true },
+                    { label: 'Report on the identification', url: 'https://www.theherculaneumsociety.org', external: true },
                 ],
             },
             {
@@ -74,7 +74,7 @@ export const lampPostCategories = [
                 meta: 'Apennines · New Interpretation 2025',
                 copy: 'Montemonaco Manuscript No. 40 received a new interpretation in 2025 connecting it with alchemists, magical practice, and traditions surrounding the Apennine Sibyl. Fascinating but presently resting largely on an independent researcher\'s reading — a developing hypothesis rather than an established discovery.',
                 links: [
-                    { label: 'Paper and DOI information', href: 'https://doi.org', external: true },
+                    { label: 'Paper and DOI information', url: 'https://doi.org', external: true },
                 ],
             },
         ],
@@ -237,6 +237,12 @@ export const lampPostCategories = [
         glyph: '◐',
         items: [
             {
+                featured: true,
+                eyebrow: 'Featured Programme',
+                when: 'Six-month programme',
+                where: 'Lumina Alchemy',
+                format: 'Enrolling',
+                cta: 'Programme details',
                 headline: 'METALLICA I — Botanical Keys to the Metallic Kingdom',
                 meta: 'Lumina Alchemy · Six Month Program',
                 link: 'https://lumina-alchemy.com/classes',
@@ -325,6 +331,12 @@ export const lampPostCategories = [
         glyph: '✡',
         items: [
             {
+                featured: true,
+                eyebrow: 'Featured Gathering',
+                when: 'November 6–8, 2026',
+                where: 'Austin, Texas',
+                format: 'In-Person & Online',
+                cta: 'Conference details',
                 headline: 'EnochiaCon 2026: The Third Annual Dee & Kelley Conference',
                 meta: 'November 6–8, 2026 · Austin, Texas · In-Person & Online',
                 copy: 'The third annual Dee & Kelley Conference convenes in downtown Austin (8VC, 907 South Congress Avenue) for an intensive three-day gathering focused on John Dee, Edward Kelley, Enochian magic, ceremonial practice, Renaissance Hermeticism, grimoires, alchemy, and adjacent esoteric currents. The conference runs Friday through Sunday night with both in-person and live Zoom attendance. Streamed lectures are recorded and available to registrants; practical workshops (limited to ~20 in-person participants each) are not recorded or streamed. Current presenter lineup includes Jason Louv, Ashen Chassan, Scott Michael Stenwick, Dr. Terry Burns, David Rankine, Dr. Al Cummins, Ike Baker, Melissa Seims, Robert Podgurski, Maria Montgomery, Joseph L. Flatley, Lon Milo DuQuette, P.D. Newman, Frater Eleftheria, Dr. Ashley Evans, Frater R.C., Frater R.P.G., Ronnie Pontiac, Jeff Contreras, Dr. David Hill, and Temple Louv. Announced practical workshops include Scrying and Drawing Spirits into Crystals (Ashen Chassan), Enochian Wealth Magick (Scott Michael Stenwick), Enochian Magic: The Opening by Watchtower (Dr. Terry Burns), The Embodied Magician (Temple Louv), The Vijnana Bhairava Tantra as Embodied Vimana (Craig Williams), Enochian Parts of the Earth (Frater Eleftheria), and Mastering the Lesser Ritual of the Pentagram (Frater R.C.). Registration: $350 through August 31; price increases September 1. Includes November conference, June Spring Workshops, annual ARS membership, and access to recordings. In-person capacity: 72 (currently over half full). Nearby hotel blocks: $149–$169/night. Lunchtime sandwich buffet included. This is part of a four-conference sequence culminating July 13, 2027—John Dee\'s 500th birthday—with a planned gathering in Prague connected to Edward Kelley\'s tower.',
