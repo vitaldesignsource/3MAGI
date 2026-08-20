@@ -54,14 +54,24 @@ function ThirdLampHeader() {
                 </span>
             </Link>
 
+            {/* Three brass bars, echoing the three lamps: they flicker on
+                hover and draw together into a flame when the menu is open. */}
             <button
-                className="menu-button"
+                className={`menu-button${open ? ' is-open' : ''}`}
                 type="button"
                 aria-expanded={open}
-                aria-label="Open navigation"
+                aria-label={open ? 'Close navigation' : 'Open navigation'}
                 onClick={toggleMenu}
             >
-                ☰
+                <span className="menu-button-glyph" aria-hidden="true">
+                    <svg viewBox="0 0 34 26">
+                        <rect className="menu-bar menu-bar--1" x="3"  y="4"  width="28" height="2" rx="1" />
+                        <rect className="menu-bar menu-bar--2" x="3"  y="12" width="28" height="2" rx="1" />
+                        <rect className="menu-bar menu-bar--3" x="3"  y="20" width="28" height="2" rx="1" />
+                        <circle className="menu-ember" cx="17" cy="13" r="2.2" />
+                    </svg>
+                </span>
+                <span className="menu-button-word" aria-hidden="true">{open ? 'Close' : 'Menu'}</span>
             </button>
 
             <nav className={`tl-nav ${open ? 'is-open' : ''}`} aria-label="Magazine navigation">

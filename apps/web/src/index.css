@@ -3565,11 +3565,53 @@ h3 {
   }
 }
 
+/* The link list now lives in a panel the menu button opens, at every
+   width — so the masthead reads as a masthead rather than a link bar. */
 .tl-nav {
-  justify-self: end;
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 60;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0;
+  padding: 1rem clamp(1.2rem, 5vw, 3rem) 1.6rem;
+  background: rgba(8, 10, 10, 0.98);
+  border-bottom: 1px solid rgba(179, 139, 70, 0.4);
+  box-shadow: 0 24px 50px rgba(0, 0, 0, 0.55);
+}
+
+.tl-nav.is-open {
   display: flex;
-  align-items: center;
-  gap: 28px;
+  animation: tl-nav-open 320ms cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+@keyframes tl-nav-open {
+  from { opacity: 0; transform: translateY(-8px); }
+  to   { opacity: 1; transform: none; }
+}
+
+/* Stagger the links in, so the panel unfolds rather than appears. */
+.tl-nav.is-open > * {
+  animation: tl-nav-item 300ms cubic-bezier(0.22, 0.61, 0.36, 1) both;
+}
+.tl-nav.is-open > *:nth-child(1) { animation-delay: 40ms; }
+.tl-nav.is-open > *:nth-child(2) { animation-delay: 80ms; }
+.tl-nav.is-open > *:nth-child(3) { animation-delay: 120ms; }
+.tl-nav.is-open > *:nth-child(4) { animation-delay: 160ms; }
+.tl-nav.is-open > *:nth-child(5) { animation-delay: 200ms; }
+.tl-nav.is-open > *:nth-child(6) { animation-delay: 240ms; }
+
+@keyframes tl-nav-item {
+  from { opacity: 0; transform: translateY(-6px); }
+  to   { opacity: 1; transform: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tl-nav.is-open,
+  .tl-nav.is-open > * { animation: none; }
 }
 
 .tl-nav a {
@@ -3579,44 +3621,160 @@ h3 {
   text-transform: uppercase;
 }
 
+/* Panel typography: the links carry the panel now, so they are set at
+   reading size and laid out in columns rather than a cramped stack. */
+@media (min-width: 1101px) {
+  .tl-nav {
+    display: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: clamp(1.5rem, 5vw, 4.5rem);
+    padding: clamp(1.8rem, 4vw, 3rem) clamp(2rem, 6vw, 5rem) clamp(2.2rem, 4vw, 3.2rem);
+  }
+
+  .tl-nav.is-open { display: flex; }
+
+  .tl-nav > a,
+  .tl-nav > .nav-group > .nav-group-toggle {
+    font-family: "Cinzel", serif;
+    font-size: 1.02rem;
+    letter-spacing: 0.1em;
+    padding: 0.35rem 0;
+  }
+
+  .tl-nav > a {
+    position: relative;
+  }
+
+  /* A brass rule draws in under each link on hover. */
+  .tl-nav > a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 100%;
+    bottom: 0.1rem;
+    height: 1px;
+    background: var(--gold-bright);
+    transition: right 260ms cubic-bezier(0.22, 0.61, 0.36, 1);
+  }
+
+  .tl-nav > a:hover::after,
+  .tl-nav > a:focus-visible::after {
+    right: 0;
+  }
+}
+
 .tl-nav a:hover,
 .tl-nav a[aria-current="page"] {
   color: #d1ad68;
 }
 
+/* ── Menu button: three brass bars, the three lamps ──────────────────── */
+/* Shown at every width now, with the link list moved into the panel it
+   opens — the masthead reads as a masthead rather than a link bar. */
 .menu-button {
-  display: none;
-  border: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  border: 1px solid rgba(179, 139, 70, 0.35);
   background: transparent;
-  color: transparent;
-  width: 84px;
-  height: 84px;
-  font-size: 2.2rem;
-  line-height: 1;
+  padding: 0.5rem 0.85rem;
   cursor: pointer;
-  position: relative;
+  justify-self: end;
+  transition: border-color 220ms ease, background 220ms ease;
 }
 
-.menu-button::before,
-.menu-button::after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  width: 3.2rem;
-  height: 0.2rem;
-  background: linear-gradient(90deg, #e8c97a, #d1ad68, #b9924e, #d1ad68);
-  transform: translateX(-50%);
-  border-radius: 0;
-  transition: transform 260ms ease, opacity 260ms ease;
+.menu-button:hover,
+.menu-button:focus-visible {
+  border-color: var(--gold-bright);
+  background: rgba(179, 139, 70, 0.08);
 }
 
-.menu-button::before {
-  top: 1.8rem;
+.menu-button-glyph {
+  display: block;
+  width: 22px;
+  height: 17px;
 }
 
-.menu-button::after {
-  bottom: 1.8rem;
+.menu-button-glyph svg {
+  width: 100%;
+  height: 100%;
+  overflow: visible;
 }
+
+.menu-button-word {
+  color: var(--paper);
+  font-size: 0.62rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  transition: color 220ms ease;
+}
+
+.menu-button:hover .menu-button-word,
+.menu-button.is-open .menu-button-word {
+  color: var(--gold-bright);
+}
+
+.menu-bar {
+  fill: var(--gold-bright);
+  transform-origin: 17px 13px;
+  transition:
+    transform 420ms cubic-bezier(0.65, 0, 0.35, 1),
+    opacity 260ms ease,
+    width 420ms cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+/* Idle: the outer bars are slightly shorter, so the stack reads as a
+   flame rather than a hamburger. */
+.menu-bar--1 { transform: scaleX(0.78); }
+.menu-bar--3 { transform: scaleX(0.62); }
+
+/* Hover: the bars flicker outward in sequence, like a lamp catching. */
+.menu-button:hover .menu-bar--1,
+.menu-button:focus-visible .menu-bar--1 { transform: scaleX(1); transition-delay: 0ms; }
+.menu-button:hover .menu-bar--2,
+.menu-button:focus-visible .menu-bar--2 { transform: scaleX(0.82); transition-delay: 60ms; }
+.menu-button:hover .menu-bar--3,
+.menu-button:focus-visible .menu-bar--3 { transform: scaleX(0.9); transition-delay: 120ms; }
+
+/* The ember sits dark until hover, then glows at the centre. */
+.menu-ember {
+  fill: var(--gold-bright);
+  opacity: 0;
+  transform-origin: 17px 13px;
+  transform: scale(0.2);
+  transition: opacity 300ms ease, transform 420ms cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.menu-button:hover .menu-ember,
+.menu-button:focus-visible .menu-ember {
+  opacity: 0.55;
+  transform: scale(1);
+}
+
+/* Open: the outer bars converge and cross, the middle one gutters out,
+   and the ember burns at full. */
+.menu-button.is-open .menu-bar--1 {
+  transform: translateY(9px) rotate(45deg) scaleX(0.86);
+}
+.menu-button.is-open .menu-bar--2 {
+  opacity: 0;
+  transform: scaleX(0.2);
+}
+.menu-button.is-open .menu-bar--3 {
+  transform: translateY(-9px) rotate(-45deg) scaleX(0.86);
+}
+.menu-button.is-open .menu-ember {
+  opacity: 0.9;
+  transform: scale(1.15);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .menu-bar,
+  .menu-ember { transition: none; }
+}
+
 
 .menu-button[aria-expanded="true"]::before {
   transform: translateX(-50%) rotate(45deg) translateY(1.2rem);
@@ -3699,10 +3857,6 @@ h3 {
     justify-self: start;
   }
 
-  .menu-button {
-    display: block;
-    justify-self: end;
-  }
 
   .publisher-link {
     display: none;
