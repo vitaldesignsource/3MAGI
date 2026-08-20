@@ -1,9 +1,15 @@
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
+import { useTrackToWidth } from '@/hooks/useTrackToWidth';
 import { Link, useLocation } from 'react-router-dom';
 
 const A = '/media';
 
 function ThirdLampHeader() {
+    // The strapline is tracked out to the exact width of the title above it.
+    const titleRef = useRef(null);
+    const straplineRef = useRef(null);
+    useTrackToWidth(straplineRef, titleRef);
+
     const [open, setOpen] = useState(false);
     const [magazineOpen, setMagazineOpen] = useState(false);
     const [membershipOpen, setMembershipOpen] = useState(false);
@@ -43,8 +49,8 @@ function ThirdLampHeader() {
             <Link className="tl-masthead" to="/third-lamp" aria-label="The Third Lamp home" onClick={closeAll}>
                 <img className="tl-masthead-mark" src="/media/thumb/third-lamp-brand.webp" alt="" />
                 <span className="tl-masthead-copy">
-                    <strong>The Third Lamp</strong>
-                    <small>A Digital Esoteric Magazine</small>
+                    <strong ref={titleRef}>The Third Lamp</strong>
+                    <small ref={straplineRef}>A Digital Esoteric Magazine</small>
                 </span>
             </Link>
 

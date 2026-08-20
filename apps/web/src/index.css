@@ -3542,16 +3542,13 @@ h3 {
   font-size: 0.57rem;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  /* Spread the strapline to exactly the width of "The Third Lamp" above it.
-     The block is already that wide (the title is the widest thing in the
-     masthead), so justifying the last — and only — line stretches the four
-     words to meet it. Done this way rather than with a tuned letter-spacing
-     because the title's font-size is a clamp() and so its width changes with
-     the viewport; this tracks it automatically. `nowrap` has to go for
-     justification to apply, and the text still fits on one line down to the
-     narrowest breakpoint. */
-  text-align: justify;
-  text-align-last: justify;
+  /* Tracked out to the exact width of "The Third Lamp" above it by
+     useTrackToWidth, which sets letter-spacing (and a compensating negative
+     margin) from the measured widths. Justification was the earlier approach
+     but it only stretches the gaps between words and leaves the letters
+     tight — this spreads the letters themselves. The 0.15em above is the
+     floor before any tracking is applied. */
+  white-space: nowrap;
 }
 
 @media (max-width: 1100px) {
