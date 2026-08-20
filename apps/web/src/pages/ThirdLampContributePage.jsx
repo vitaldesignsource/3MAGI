@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet';
 import ThirdLampHeader from '../components/ThirdLampHeader';
 import ThirdLampFooter from '../components/ThirdLampFooter';
 import { submitForm } from '@/lib/formSubmit';
+import GateKeyPuzzle from '@/components/GateKeyPuzzle.jsx';
 import HourglassIcon from '../components/HourglassIcon';
 
 /* ── Constellation background SVG animation ───────────────────────── */
@@ -514,11 +515,16 @@ function ThirdLampContributePage() {
     const [submitting, setSubmitting] = useState(false);
     const [error, setError] = useState('');
     const [rejected, setRejected] = useState([]);
+    const [gateOpen, setGateOpen] = useState(false);
 
     const onSubmit = async (e) => {
         e.preventDefault();
         setError('');
         setRejected([]);
+        if (!gateOpen) {
+            setError('Please open the gate below before sending.');
+            return;
+        }
         setSubmitting(true);
         const formEl = e.target;
         try {
@@ -972,6 +978,12 @@ function ThirdLampContributePage() {
                                 <label className="check-row"><input type="checkbox" name="agreed_contributor_terms" required /><span>I agree to the contributor terms described on this page.</span></label>
                             </div>
                         </fieldset>
+
+                        {!sent && (
+                            <div className="form-gate-row">
+                                <GateKeyPuzzle verified={gateOpen} onVerified={setGateOpen} idPrefix="contribute" />
+                            </div>
+                        )}
 
                         <div className="form-submit-row">
                             <p aria-live="polite">{error || (sent ? 'Thank you. Your submission has been forwarded to the editors at 3rdlamp@3magipress.com.' : 'Submissions are forwarded privately to the editors at 3rdlamp@3magipress.com.')}</p>

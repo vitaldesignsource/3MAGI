@@ -5,6 +5,7 @@ import ThirdLampFooter from '../components/ThirdLampFooter';
 import { lampPostCategories, didYouKnowBoxes } from '../data/lampPost';
 import { GrimoireIcon, AuctionIcon, ExhibitionIcon, CollectionIcon, ArchaeologyIcon, TranslationsIcon, PapersIcon, DocumentariesIcon, EventsIcon, ObituariesIcon, ReleasesIcon, MediaIcon, SocietiesIcon, SightingsIcon, OdditiesIcon } from '../components/LampPostIcons';
 import { submitForm } from '@/lib/formSubmit';
+import GateKeyPuzzle from '@/components/GateKeyPuzzle.jsx';
 
 const HERO_IMG = '/media/1de8f5d3-251a-4d14-87fd-b1c5e811568e.webp';
 
@@ -30,11 +31,14 @@ function TipForm() {
     const [status, setStatus] = useState('idle'); // idle | sending | success | error
     const [errorMsg, setErrorMsg] = useState('');
 
+    const [gateOpen, setGateOpen] = useState(false);
+
     const set = (k) => (e) => setFields(f => ({ ...f, [k]: e.target.value }));
 
     const handleSubmit = async (e) => {
         e.preventDefault();
         if (!fields.tip.trim()) return;
+        if (!gateOpen) { setErrorMsg('Please open the gate below before sending.'); return; }
         setStatus('sending');
         setErrorMsg('');
         try {
@@ -45,6 +49,7 @@ function TipForm() {
             });
             setStatus('success');
             setFields({ name: '', email: '', tip: '' });
+            setGateOpen(false);
         } catch (err) {
             // Show the handler's reason (e.g. an invalid email address) so the
             // visitor can actually fix it, rather than a dead-end generic line.
@@ -93,6 +98,11 @@ function TipForm() {
             )}
             {status === 'success' && (
                 <p className="lamp-post-tip-msg lamp-post-tip-success">Your tip has been received. We'll keep an eye on it.</p>
+            )}
+            {status !== 'success' && (
+                <div className="lamp-post-tip-gate">
+                    <GateKeyPuzzle verified={gateOpen} onVerified={setGateOpen} idPrefix="tip" />
+                </div>
             )}
             {status !== 'success' && (
                 <button type="submit" className="tl-button lamp-post-tip-submit" disabled={status === 'sending'}>

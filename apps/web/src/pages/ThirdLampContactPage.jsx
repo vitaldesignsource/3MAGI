@@ -1,8 +1,9 @@
-import React, { useMemo, useState } from 'react';
+import React, { useState } from 'react';
 import { Helmet } from 'react-helmet';
 import ThirdLampHeader from '../components/ThirdLampHeader';
 import ThirdLampFooter from '../components/ThirdLampFooter';
 import { submitForm } from '@/lib/formSubmit';
+import GateKeyPuzzle from '@/components/GateKeyPuzzle.jsx';
 
 const CATEGORIES = [
     'General Enquiry',
@@ -17,15 +18,10 @@ const CATEGORIES = [
 function ThirdLampContactPage() {
     const [status, setStatus] = useState('idle');
     const [error, setError] = useState('');
-    const [challenge, setChallenge] = useState(() => ({
-        a: 2 + Math.floor(Math.random() * 7),
-        b: 1 + Math.floor(Math.random() * 6),
-    }));
-    const [answer, setAnswer] = useState('');
+    const [gateOpen, setGateOpen] = useState(false);
     const [honeypot, setHoneypot] = useState('');
     const [form, setForm] = useState({ name: '', email: '', category: CATEGORIES[0], subject: '', message: '' });
 
-    const expected = useMemo(() => challenge.a + challenge.b, [challenge]);
 
     const set = (k) => (e) => setForm((f) => ({ ...f, [k]: e.target.value }));
 
@@ -33,10 +29,8 @@ function ThirdLampContactPage() {
         e.preventDefault();
         setError('');
         if (honeypot) return;
-        if (Number(answer) !== expected) {
-            setError('Human verification failed. Please solve the sum again.');
-            setChallenge({ a: 2 + Math.floor(Math.random() * 7), b: 1 + Math.floor(Math.random() * 6) });
-            setAnswer('');
+        if (!gateOpen) {
+            setError('Please open the gate below before sending.');
             return;
         }
         setStatus('sending');
@@ -44,7 +38,8 @@ function ThirdLampContactPage() {
             await submitForm('contact', { ...form, company_website: honeypot });
             setStatus('sent');
             setForm({ name: '', email: '', category: CATEGORIES[0], subject: '', message: '' });
-            setAnswer('');
+            // Re-lock the gate so a second message must open it again.
+            setGateOpen(false);
         } catch (err) {
             setStatus('idle');
             setError(err.message);
@@ -104,15 +99,9 @@ function ThirdLampContactPage() {
                                     <span>Message</span>
                                     <textarea required rows={8} value={form.message} onChange={set('message')} />
                                 </label>
-                                <label className="form-wide">
-                                    <span>Human verification <small>What is {challenge.a} + {challenge.b}?</small></span>
-                                    <input
-                                        required
-                                        inputMode="numeric"
-                                        value={answer}
-                                        onChange={(e) => setAnswer(e.target.value)}
-                                    />
-                                </label>
+                                <div className="form-wide">
+                                    <GateKeyPuzzle verified={gateOpen} onVerified={setGateOpen} idPrefix="contact" />
+                                </div>
                                 <label style={{ position: 'absolute', left: '-9999px' }} aria-hidden="true">
                                     <span>Leave blank</span>
                                     <input tabIndex={-1} autoComplete="off" value={honeypot} onChange={(e) => setHoneypot(e.target.value)} />
