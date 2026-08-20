@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const A = '/media';
 
@@ -84,14 +85,22 @@ function ThirdLampFeaturedContributors({ id = 'featured-contributors-title', tit
             <div className="fc-strip-scroll-wrapper">
                 <div className="fc-strip-people">
                     {featuredContributorsStrip.map((person) => (
-                        <div className="fc-person" key={person.id}>
+                        // Each contributor's id matches the anchor on their
+                        // profile in the Authors page, so the link lands on
+                        // the person rather than the top of the list.
+                        <Link
+                            className="fc-person"
+                            key={person.id}
+                            to={`/third-lamp/authors#${person.id}`}
+                            aria-label={`Read about ${person.name}`}
+                        >
                             {person.image ? (
                                 <img loading="lazy" decoding="async" className="fc-person-photo" src={person.image} alt={person.imageAlt} />
                             ) : (
                                 <div className="fc-person-initials" aria-hidden="true">{person.initials}</div>
                             )}
                             <span className="fc-person-name">{person.name}</span>
-                        </div>
+                        </Link>
                     ))}
                     <p className="fc-strip-more">&hellip;and new voices.</p>
                 </div>

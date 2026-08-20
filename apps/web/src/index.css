@@ -4418,6 +4418,12 @@ h3 {
   gap: clamp(3rem, 6vw, 5rem);
 }
 
+/* Linked to from the Featured Contributors strip as /third-lamp/authors#<id>.
+   The masthead is sticky (~87px), so without this the name lands underneath it. */
+.author-profile {
+  scroll-margin-top: 7rem;
+}
+
 .author-profile {
   display: grid;
   grid-template-columns: minmax(220px, 0.6fr) minmax(0, 1.4fr);
@@ -4674,6 +4680,20 @@ h3 {
   gap: 0.6rem;
   width: 9.5rem;
   text-align: center;
+  /* Now a link to the contributor's profile: strip the anchor defaults and
+     let the existing photo/name styles keep control of the appearance. */
+  text-decoration: none;
+  color: inherit;
+}
+
+.fc-person:hover .fc-person-name,
+.fc-person:focus-visible .fc-person-name {
+  color: var(--gold-bright);
+}
+
+.fc-person:focus-visible {
+  outline: 1px solid var(--gold-bright);
+  outline-offset: 6px;
 }
 
 .fc-person-photo {
