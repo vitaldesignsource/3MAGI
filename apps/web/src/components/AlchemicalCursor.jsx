@@ -51,12 +51,55 @@ export default function AlchemicalCursor() {
     const halo = haloRef.current;
     const rippleContainer = rippleContainerRef.current;
 
+    // The amber trace used to create a fresh <div>, append it to document.body
+    // and schedule a setTimeout to remove it — on EVERY mousemove. A 120Hz
+    // pointer therefore produced ~120 nodes and ~120 timers per second, each
+    // one invalidating style on body. The visual is identical if a small pool
+    // of nodes is reused instead, refreshed at most once per animation frame.
+    const TRACE_POOL = 24;
+    const traceNodes = [];
+    for (let i = 0; i < TRACE_POOL; i++) {
+        const node = document.createElement('div');
+        node.className = 'alch-trace';
+        node.style.opacity = '0';
+        rippleContainer.appendChild(node);
+        traceNodes.push(node);
+    }
+    let traceIndex = 0;
+    let pendingTrace = null;      // coordinates awaiting the next frame
+    let traceRaf = null;
+    let lastTarget = null;
+
+    const flushTrace = () => {
+        traceRaf = null;
+        if (!pendingTrace) return;
+        const { x, y } = pendingTrace;
+        pendingTrace = null;
+        const node = traceNodes[traceIndex];
+        traceIndex = (traceIndex + 1) % TRACE_POOL;
+        node.style.left = x + 'px';
+        node.style.top = y + 'px';
+        // Restart the fade: removing the class and forcing a reflow lets the
+        // same element replay its animation without being recreated.
+        node.classList.remove('alch-trace--on');
+        void node.offsetWidth;
+        node.classList.add('alch-trace--on');
+    };
+
     const onMove = (e) => {
       posRef.current.x = e.clientX;
       posRef.current.y = e.clientY;
 
+      // closest() walks the ancestor chain; only worth doing when the pointer
+      // has actually moved onto a different element.
       const target = e.target;
-      const newIsLink = target.closest('a, button, [role="button"], input, textarea, select, label') !== null;
+      if (target === lastTarget) {
+        pendingTrace = { x: e.clientX, y: e.clientY };
+        if (traceRaf === null) traceRaf = requestAnimationFrame(flushTrace);
+        return;
+      }
+      lastTarget = target;
+      const newIsLink = target.closest && target.closest('a, button, [role="button"], input, textarea, select, label') !== null;
       const newIsImage = !newIsLink && target.tagName === 'IMG';
 
       if (newIsLink !== isLinkRef.current || newIsImage !== isImageRef.current) {
@@ -71,13 +114,9 @@ export default function AlchemicalCursor() {
         }
       }
 
-      // Amber trace
-      const trace = document.createElement('div');
-      trace.className = 'alch-trace';
-      trace.style.left = e.clientX + 'px';
-      trace.style.top = e.clientY + 'px';
-      document.body.appendChild(trace);
-      setTimeout(() => trace.remove(), 320);
+      // Amber trace, coalesced to one per frame from the pool above.
+      pendingTrace = { x: e.clientX, y: e.clientY };
+      if (traceRaf === null) traceRaf = requestAnimationFrame(flushTrace);
     };
 
     const onClick = (e) => {
@@ -112,6 +151,8 @@ export default function AlchemicalCursor() {
       document.removeEventListener('click', onClick);
       document.removeEventListener('touchstart', onTouchStart);
       if (rafRef.current) cancelAnimationFrame(rafRef.current);
+      if (traceRaf !== null) cancelAnimationFrame(traceRaf);
+      traceNodes.forEach((n) => n.remove());
     };
   }, [animate]);
 
@@ -176,6 +217,9 @@ export default function AlchemicalCursor() {
             0 0 22px rgba(201, 168, 76, 0.14);
         }
 
+        /* Pooled and reused, so the fade is driven by a class the script
+           toggles rather than by the element being created. Without the
+           class the node sits invisible and inert. */
         .alch-trace {
           position: fixed;
           width: 4px;
@@ -185,6 +229,10 @@ export default function AlchemicalCursor() {
           pointer-events: none;
           z-index: 99997;
           transform: translate(-50%, -50%);
+          opacity: 0;
+        }
+
+        .alch-trace--on {
           animation: alch-trace-fade 300ms ease forwards;
         }
 
