@@ -33,7 +33,7 @@ function ThirdLampArchivePage() {
     if (q) {
       // Not every essay has every field (e.g. one has no dek); a missing one
       // must simply not match, not throw and blank the page.
-      const haystack = (a) => [a.title, a.dek, a.kicker].filter(Boolean).join(' ').toLowerCase();
+      const haystack = (a) => [a.title, a.subtitle, a.dek, a.kicker].filter(Boolean).join(' ').toLowerCase();
       list = list.filter(a => haystack(a).includes(q));
     }
     return list;

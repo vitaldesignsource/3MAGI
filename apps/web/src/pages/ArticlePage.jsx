@@ -660,7 +660,13 @@ function ArticlePage() {
                     <aside className="article-marginalia">
                         <div>
                             <p className="eyebrow">Marginalia</p>
-                            <h3>{marginalia?.eyebrow || 'The Missing Middle'}</h3>
+                            {/* Fall back to the essay's own subtitle, never to a
+                                fixed phrase — 'The Missing Middle' belongs to one
+                                specific essay and was appearing as the marginalia
+                                heading on every article that defined none. */}
+                            {(marginalia?.eyebrow || article.subtitle) && (
+                                <h3>{marginalia?.eyebrow || article.subtitle}</h3>
+                            )}
                             <p>{marginalia?.summary || article.dek}</p>
                         </div>
 
