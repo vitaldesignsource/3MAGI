@@ -23,18 +23,40 @@ export default function AlchemicalCursor() {
   const isImageRef = useRef(false);
   const rippleContainerRef = useRef(null);
 
-  const animate = useCallback(() => {
+  const runningRef = useRef(false);
+  const lastTsRef = useRef(0);
+
+  const step = useCallback((ts) => {
     const halo = haloRef.current;
-    if (!halo) return;
+    if (!halo) { runningRef.current = false; return; }
 
-    // Lerp halo toward cursor
-    const lerpFactor = 0.12;
-    haloPos.current.x += (posRef.current.x - haloPos.current.x) * lerpFactor;
-    haloPos.current.y += (posRef.current.y - haloPos.current.y) * lerpFactor;
-
+    // Frame-rate-independent smoothing: the halo covers the same fraction of
+    // the remaining distance per millisecond on a 60Hz and a 120Hz display.
+    const dt = Math.min(48, ts - (lastTsRef.current || ts));
+    lastTsRef.current = ts;
+    const k = 1 - Math.exp(-dt * 0.011);
+    const dx = posRef.current.x - haloPos.current.x;
+    const dy = posRef.current.y - haloPos.current.y;
+    haloPos.current.x += dx * k;
+    haloPos.current.y += dy * k;
     halo.style.transform = `translate(${haloPos.current.x}px, ${haloPos.current.y}px) translate(-50%, -50%)`;
-    rafRef.current = requestAnimationFrame(animate);
+
+    // Settled: stop burning frames until the pointer moves again. The loop
+    // used to run forever, writing an unchanged transform sixty times a
+    // second while the page sat idle.
+    if (Math.abs(dx) < 0.2 && Math.abs(dy) < 0.2) {
+      runningRef.current = false;
+      return;
+    }
+    rafRef.current = requestAnimationFrame(step);
   }, []);
+
+  const wake = useCallback(() => {
+    if (runningRef.current) return;
+    runningRef.current = true;
+    lastTsRef.current = 0;
+    rafRef.current = requestAnimationFrame(step);
+  }, [step]);
 
   useEffect(() => {
     // Check reduced motion
@@ -44,9 +66,6 @@ export default function AlchemicalCursor() {
     // Disable custom cursor on mobile (touch devices)
     const isMobile = window.matchMedia('(pointer: coarse)').matches;
     if (isMobile) return;
-
-    // Apply custom cursor to body
-    document.body.style.cursor = CURSOR_URL;
 
     const halo = haloRef.current;
     const rippleContainer = rippleContainerRef.current;
@@ -89,6 +108,7 @@ export default function AlchemicalCursor() {
     const onMove = (e) => {
       posRef.current.x = e.clientX;
       posRef.current.y = e.clientY;
+      wake();
 
       // closest() walks the ancestor chain; only worth doing when the pointer
       // has actually moved onto a different element.
@@ -143,26 +163,31 @@ export default function AlchemicalCursor() {
     document.addEventListener('click', onClick);
     document.addEventListener('touchstart', onTouchStart, { passive: true });
 
-    rafRef.current = requestAnimationFrame(animate);
+    wake();
 
     return () => {
-      document.body.style.cursor = '';
       document.removeEventListener('mousemove', onMove);
       document.removeEventListener('click', onClick);
       document.removeEventListener('touchstart', onTouchStart);
       if (rafRef.current) cancelAnimationFrame(rafRef.current);
+      runningRef.current = false;
       if (traceRaf !== null) cancelAnimationFrame(traceRaf);
       traceNodes.forEach((n) => n.remove());
     };
-  }, [animate]);
+  }, [wake]);
 
   return (
     <>
       <div ref={rippleContainerRef} className="alch-ripple-container" aria-hidden="true" />
       <div ref={haloRef} className="alch-halo" aria-hidden="true" />
       <style>{`
+        /* The star is the real cursor, rendered by the OS at input rate —
+           hiding the native pointer and substituting the lerped halo made
+           every movement feel ~300ms late, because the halo is *meant* to
+           trail. Text-entry keeps an I-beam so selection stays workable. */
         @media (pointer: fine) and (prefers-reduced-motion: no-preference) {
-          * { cursor: none !important; }
+          * { cursor: ${CURSOR_URL} !important; }
+          input, textarea, select, [contenteditable="true"] { cursor: text !important; }
         }
 
         .alch-ripple-container {
