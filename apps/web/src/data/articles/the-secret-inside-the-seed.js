@@ -54,6 +54,9 @@ export default {
         {
             id: 'the-mechanical-universe-and-the-exile-of',
             title: 'The Mechanical Universe and the Exile of Purpose',
+            image: '/media/45756d028da91d41cfe9e71e8b7c2ed2.webp',
+            imageAlt: 'A violin and bow abandoned on a table in a dim room, thick with cobwebs and drifting dust',
+            imageCaption: 'Describe a violin exhaustively — wood, varnish, tension, mass — and you have said nothing whatever about what it is for.',
             paragraphs: [
                 'Modern thought achieved extraordinary power by concentrating upon measurable causes. To understand a phenomenon, it asked what preceded it, what struck it, what moved it, what chemical exchange occurred, and which mechanism produced the observable result. This method transformed medicine, engineering, physics, and technology.',
                 'But its success encouraged an intellectual overreach. Because mechanical explanations were extraordinarily effective within their domain, they came to be treated as the only legitimate form of explanation.',
@@ -68,6 +71,9 @@ export default {
         {
             id: 'the-esoteric-doctrine-of-form',
             title: 'The Esoteric Doctrine of Form',
+            image: '/media/237d258e6044798f7bc1de1a5b899362.webp',
+            imageAlt: 'A robed figure standing where a raw rock cavern resolves into a finished vaulted cathedral',
+            imageCaption: 'Form is not stamped onto matter from outside. The cathedral is what the rock was already tending toward.',
             paragraphs: [
                 'Esoteric philosophy begins from a radically different intuition: form is not an accidental crust laid over meaningless substance. Form is the visible trace of an organizing power.',
                 'This does not mean that every shape was micromanaged by an anthropomorphic deity. It means that manifestation is intelligible because powers express themselves according to patterns, limits, sympathies, and levels of receptivity. The visible world is not self-explanatory. It is the result of relations between force and vessel, principle and substance, possibility and boundary.',
@@ -95,6 +101,9 @@ export default {
         {
             id: 'ritual-as-the-rehearsal-of-a-higher-orde',
             title: 'Ritual as the Rehearsal of a Higher Order',
+            image: '/media/bfbe371691e520d08b04f28b3c7c202f.webp',
+            imageAlt: 'A man kneeling at the edge of a candlelit circle laid out with bowls, lamps and stones on a stone floor',
+            imageCaption: 'Ritual rehearses an order the world has not yet reached — practising the end while still inside the middle.',
             paragraphs: [
                 'This is why ritual is more than symbolic decoration. A serious ritual establishes a temporary world governed by deliberate correspondences. Space is oriented. Time is distinguished from ordinary time. Gesture, word, image, scent, color, and intention are brought into relation. The practitioner enters a field in which scattered elements are organized around a center.',
                 'The ritual does on a small scale what teleology does throughout development: it orders multiplicity toward a form.',
@@ -132,6 +141,9 @@ export default {
         {
             id: 'the-hidden-direction-of-being',
             title: 'The Hidden Direction of Being',
+            image: '/media/3c56ee7ed9d16cf69b858ce900e2e161.webp',
+            imageAlt: 'A lone figure beside a standing stone on a ridge, the Milky Way arching over a valley at first light',
+            imageCaption: 'A direction is not a destination. Being leans somewhere long before it arrives anywhere.',
             paragraphs: [
                 'Ontology without teleology gives us a universe filled with things but emptied of direction. Teleology without ontology gives us grand purposes with no trustworthy account of the beings expected to fulfill them. Joined together, they reveal a cosmos in which identity and becoming illuminate one another.',
                 'To ask what something is means asking what powers sleep within it. To ask what it is for means asking what the full awakening of those powers would look like.',

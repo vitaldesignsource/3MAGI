@@ -14,6 +14,9 @@ export default {
         {
             id: 'the-north-that-never-died',
             title: 'The North That Never Died',
+            image: '/media/9845d5740524d8c2a515abe80c14c308.webp',
+            imageAlt: 'A robed priest on a temple roof watching the northern stars wheel around a single fixed point',
+            imageCaption: 'The circumpolar stars never touch the horizon. Egypt called them the Imperishables — the ones that do not die.',
             paragraphs: [
                 'The distinction begins with an astronomical fact.',
                 'Because Earth turns upon its axis, the night sky appears to revolve around the celestial pole. At the latitude of Egypt, stars sufficiently close to the northern pole never descend below the horizon. They do not rise in the east and die in the west. They circle continuously, tracing the same invisible center night after night.',
@@ -27,6 +30,9 @@ export default {
         {
             id: 'the-king-who-rose-as-a-star',
             title: 'The King Who Rose as a Star',
+            image: '/media/46b601aed3014449df42d72929bad8e9.webp',
+            imageAlt: 'A crowned figure climbing a torchlit stone stair toward an opening filled with stars',
+            imageCaption: 'The Pyramid Texts do not describe a soul drifting free of the body so much as a king climbing — a stair, a ladder, a ramp of light.',
             paragraphs: [
                 'The oldest extensive Egyptian funerary compositions preserved to us are the Pyramid Texts, first found inscribed in the pyramid of King Unas near the end of the Fifth Dynasty and continued in later royal pyramids. They are not a single theological treatise. They are a vast ritual corpus: offerings, protections, awakenings, commands, identifications, ascents, transformations, and declarations of divine status.',
                 'Their language is filled with movement. The king rises. He climbs. He flies. He crosses celestial waters. A ladder is established for him. Divine ferrymen are summoned. Gates open. Gods receive him. He is placed among the imperishable stars and takes his seat within the assembly of heaven. The purpose of the texts was not merely to describe an afterlife but to help produce the deceased king’s transformation into an effective transfigured being—an *akh*. Smarthistory’s overview of Egyptian mortuary texts emphasizes this performative goal.',
@@ -53,6 +59,9 @@ export default {
         {
             id: 'the-mother-made-of-stars',
             title: 'The Mother Made of Stars',
+            image: '/media/e825c7ebf049ea0df3c67a8508725754.webp',
+            imageAlt: 'A burial chamber whose vaulted ceiling is painted deep blue and strewn with golden stars, above a decorated sarcophagus',
+            imageCaption: 'The star-strewn ceiling is Nut, arched over the dead. To be buried beneath her is to lie inside the body of the sky.',
             paragraphs: [
                 'The stellar dead also belonged to the body of the sky goddess Nut.',
                 'Nut was frequently represented as a vast woman arched over the earth, her body filled with stars. She enclosed the ordered world and received the celestial lights into herself. In solar theology she swallowed the sun in the west and gave birth to it again in the east. In funerary art she could stretch across a coffin or sarcophagus, surrounding the deceased within a divine sky.',
@@ -64,6 +73,9 @@ export default {
         {
             id: 'from-royal-star-to-ancestral-light',
             title: 'From Royal Star to Ancestral Light',
+            image: '/media/4addf648aa628dcc8d1cefe7a021beb7.webp',
+            imageAlt: 'A family seated at a household shrine beside the Nile, looking up into the Milky Way',
+            imageCaption: 'What began as royal prerogative descended into the household: ordinary families keeping a light for ancestors who had themselves become lights.',
             paragraphs: [
                 'It would be tempting to say that the pharaohs first monopolized immortality and that later Egyptians simply “democratized” it. The history is more complicated. Access to funerary texts, elaborate burial, and enduring cult was always shaped by status and wealth. Nevertheless, formulas and ritual privileges once most visible in royal monuments appeared over time in nonroyal coffins, tombs, papyri, and domestic forms of ancestor veneration.',
                 'The Coffin Texts of the Middle Kingdom adapted and expanded older mortuary traditions for officials and other elites. Later compositions now grouped under the modern title *Book of the Dead* accompanied a still wider range of people. The celestial grammar of transformation outlived the exclusive royal setting in which much of it first survives.',

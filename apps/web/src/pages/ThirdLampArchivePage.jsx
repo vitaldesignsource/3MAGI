@@ -119,13 +119,7 @@ function ThirdLampArchivePage() {
               animationDelay: `${i * 0.3}s`
             }} />)}
                     </svg>
-                    <h1><span>The&nbsp;</span><span>Living</span><span style={{
-              display: "block",
-              fontSize: "16px",
-              lineHeight: "normal",
-              marginTop: "0.35em",
-              marginBottom: "0.35em"
-            }}>follow the currents between ideas</span><span>Archive</span></h1>
+                    <h1><span>The&nbsp;</span><span>Living</span><span className="archive-hero-kicker">follow the currents between ideas</span><span>Archive</span></h1>
                     <p className="archive-hero-subtext"><span style={{
               color: "rgba(222, 212, 196, 0.72)"
             }}>Fourteen field notes · eight connected traditions · one unfolding inquiry.</span></p>

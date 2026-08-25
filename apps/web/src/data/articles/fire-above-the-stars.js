@@ -16,6 +16,9 @@ export default {
         {
             id: 'a-scripture-preserved-as-ruins',
             title: 'A Scripture Preserved as Ruins',
+            image: '/media/4471633a1943cb0cba157f79c79cdebd.webp',
+            imageAlt: 'A seated man gazing upward in a circular stone chamber while a standing figure writes on a tablet behind him',
+            imageCaption: 'The Oracles reach us as utterance transcribed — a voice taken down by a second hand, then quoted to pieces by everyone who came after.',
             paragraphs: [
                 'The title can mislead. The *Chaldean Oracles* are not a surviving collection of Babylonian tablets, nor can they safely be treated as an authentic scripture of the historical Chaldeans. They were composed in Greek, probably during the late second or early third century CE, within the religious and philosophical world of the Roman Empire. Their cosmology is deeply shaped by Platonism, especially the *Timaeus*, although it also carries the atmosphere of an age in which “Chaldean” suggested the archaic wisdom of the East: astrology, divine science, priestcraft, and access to mysteries older than Greece.',
                 'Later tradition associated the revelation with two shadowy figures: Julian the Chaldean and his son, Julian the Theurgist. The tenth-century Byzantine encyclopedia known as the *Suda* credits the elder Julian with writings on demons and the younger with oracles in verse, theurgical works, and ritual instructions. Stories accumulated around the son. He was said to have produced miraculous rain for the army of Marcus Aurelius, broken stones by magical command, and defeated a plague with a word. Such legends reveal how posterity imagined him, but they do not settle how the Oracles were composed.',
@@ -39,6 +42,9 @@ export default {
         {
             id: 'hecate-at-the-center-of-the-worlds',
             title: 'Hecate at the Center of the Worlds',
+            image: '/media/44ae338e7a5603026e3d3e80fde56495.webp',
+            imageAlt: 'A robed woman standing on a round stone platform at dusk holding a burning torch in each raised hand',
+            imageCaption: 'Hecate stands where the worlds meet, a torch in either hand — the membrane through which the fire above reaches what is below.',
             paragraphs: [
                 'No figure in the Oracles is more arresting than Hecate.',
                 'The popular imagination often approaches her as the nocturnal goddess of crossroads, ghosts, torches, keys, and witchcraft. The Chaldean Hecate does not entirely abandon the ancient goddess of thresholds, but the threshold has become cosmic. She stands between orders of reality.',
@@ -77,6 +83,9 @@ export default {
         {
             id: 'theurgy-when-the-gods-perform-the-rite',
             title: 'Theurgy: When the Gods Perform the Rite',
+            image: '/media/9493673cad4563e6225e87dfdf9e2fa1.webp',
+            imageAlt: 'Three robed figures performing a rite around braziers in a colonnaded temple court beneath the Milky Way',
+            imageCaption: 'In theurgy the operator is not the agent. The rite is something the gods perform, using a human being who has made himself fit for it.',
             paragraphs: [
                 'Here the Chaldean Oracles make their decisive contribution to Western esotericism.',
                 '*Theurgy* is often described as “divine magic,” but that phrase is dangerously imprecise. If magic means compelling invisible powers to satisfy personal desire, theurgy is almost its opposite. The theurgist does not drag the gods downward into the service of the ego. The rite is intended to bring the entire human being into conformity with a divine order that already precedes it.',
@@ -133,6 +142,9 @@ export default {
         {
             id: 'the-last-pagan-scripture',
             title: 'The Last Pagan Scripture',
+            image: '/media/3fd917e030dcef56ff732e0fa2d5c09d.webp',
+            imageAlt: 'An elderly scholar by lamplight studying scattered papyrus fragments spread across a wooden table',
+            imageCaption: 'What survives is fragments held inside other people’s books — a scripture preserved chiefly by the men who argued with it.',
             paragraphs: [
                 'For the later Neoplatonists, the Oracles became something close to scripture. Plato offered philosophical demonstration; the Oracles offered divine confirmation and ritual completion. Proclus could read the two traditions together, convinced that authentic Greek philosophy, Orphic theology, and Chaldean revelation expressed a single sacred order in different modes.',
                 'This alliance altered Platonism. Plotinus had emphasized contemplative return to the One. Iamblichus insisted more strongly that the embodied soul required divine assistance enacted through sacred rites. Proclus inherited a universe saturated with gods, hierarchies, symbols, and ritual correspondences. Philosophy was no longer only an intellectual ascent. At its summit it became mystagogy—initiation into the living order philosophy described.',

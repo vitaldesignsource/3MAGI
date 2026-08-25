@@ -30,6 +30,9 @@ export default {
         {
             id: 'the-egg-in-the-abyss',
             title: 'The Egg in the Abyss',
+            image: '/media/f69e470dedcccb12a112f0bd4b16a8b3.webp',
+            imageAlt: 'A luminous egg suspended in dark space, coiled about by an enormous serpent',
+            imageCaption: 'Time coils around the unhatched world. The Orphic egg is not laid by anything — it is what the abyss does when it first consents to hold a shape.',
             paragraphs: [
                 'In the later Orphic cosmogonies, primordial Time—**Chronos**, not always to be confused with the Titan Kronos—and Necessity, **Ananke**, precede the ordered cosmos. From the obscure conjunction of the earliest principles, within Aether and the yawning Chasm, the cosmic egg is formed. It is not an egg lying somewhere in space, because space has not yet been articulated. It is totality enclosed within itself: being without exterior, life before anatomy, multiplicity held in a condition of luminous compression.',
                 'The egg is among the most perfect symbols ever devised for the unmanifest. Its shell gives form to what has not yet taken form. Its silence conceals growth. Its apparent stillness is an inward storm of organization. The egg is neither dead matter nor completed creature. It is a boundary surrounding an invisible future.',
@@ -73,6 +76,9 @@ export default {
         {
             id: 'the-sovereign-of-the-first-cosmos',
             title: 'The Sovereign of the First Cosmos',
+            image: '/media/30245176f04105ca7ce38558343beb8c.webp',
+            imageAlt: 'A winged golden figure in radiant cloud facing a veiled figure robed in stars across dark water',
+            imageCaption: 'The Firstborn and Night: the light that appears first, and the darkness that receives the sceptre from it.',
             paragraphs: [
                 'Phanes is not only born; he reigns. He is described as the first ruler and creator, holding within himself the seeds of gods, mortals and the ordered world. But his sovereignty does not remain fixed. In the Rhapsodic sequence, power passes from Phanes to **Night**, who becomes both successor and counselor. The bright Firstborn yields to the goddess of darkness.',
                 'This is not a defeat of light. It is the recognition that manifestation requires concealment. Without Night, forms would possess no depth, gestation or inwardness. A world exposed without remainder would be a world without mystery. Phanes reveals; Night shelters. He opens the eye; she restores the invisible chamber in which new vision can form.',
@@ -85,6 +91,9 @@ export default {
         {
             id: 'when-zeus-swallowed-the-universe',
             title: 'When Zeus Swallowed the Universe',
+            image: '/media/c59e0bbbb1e936ea77bf4980f5acdea0.webp',
+            imageAlt: 'A bearded figure standing in a ruined temple with galaxies streaming out of his opened chest',
+            imageCaption: 'Zeus does not defeat the first world. He swallows it — and it goes on existing, entire, inside him.',
             paragraphs: [
                 'The strangest episode in the later Orphic theology is also its most philosophically powerful. Zeus eventually swallows Phanes.',
                 'Read crudely, this is another violent succession myth: a younger god consumes an older power. Read cosmologically, it is an act of universal concentration. Because Phanes contains the archetypes and seeds of creation, to swallow Phanes is to draw the articulated cosmos back into divine unity. Zeus takes the first manifestation into himself and then generates the world anew. Ancient reports of the Rhapsodic poems consequently describe Zeus as becoming the beginning, middle and end of all things. (Cambridge University Press)',
@@ -141,6 +150,9 @@ export default {
         {
             id: 'the-phanic-work',
             title: 'The Phanic Work',
+            image: '/media/9acde759c8c345309eca415531752130.webp',
+            imageAlt: 'A woman kneeling before a low altar in a rock-cut chamber, a vessel on it burning with white light',
+            imageCaption: 'The work is not to summon light from elsewhere, but to become the kind of thing through which light can appear.',
             paragraphs: [
                 'For the esoteric practitioner, Phanes offers neither a simplistic promise of positive thinking nor an escape into abstract metaphysics. His myth establishes a demanding pattern of transformation.',
                 'First comes enclosure. A force gathers in darkness before it can be expressed. The work begins invisibly.',
