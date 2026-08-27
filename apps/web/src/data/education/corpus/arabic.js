@@ -1,3 +1,568 @@
-// arabic corpus — the hall's shelf of sacred and esoteric texts. Populated by
-// the content pipeline (attributions, contents and links verified).
-export default { note: null, works: [] };
+// arabic corpus — the hall's shelf of sacred and esoteric texts.
+// Attributions, tables of contents, opening words and every link were
+// verified by the content pipeline; a null contents field means the work's
+// divisions could not be confirmed, not that it has none.
+export default {
+    note: 'Every book on this shelf stands in some relation to a single one: the Qurʾān, which Muslims hold to be the uncreated speech of God in Arabic, and which is not the first item in the library so much as the ground the library rests on. What turns that ground into a field for esoteric labour is the distinction between ẓāhir and bāṭin — the outward sense of a scripture and the inward, the letter and what the letter carries — together with taʾwīl, the leading-back of a text to its origin; how far that crossing may licitly be made has been argued in Islam for thirteen centuries and is being argued still. Through the same language, and largely through the translation movement at Baghdad, the philosophy, medicine, astronomy and alchemy of the Greeks passed into Arabic, were enlarged and reordered there, and returned to Latin Europe by way of Toledo, Sicily and the court of Castile, so that a Christian magus reading the Picatrix was reading, at three removes, a book of Andalusian Arabic. The word \'esoteric\' is here made to cover enterprises that had little to do with one another and would not all have recognised themselves as kin: the metaphysics of Ibn ʿArabī, the letter-and-square science of the Būnian corpus, the alchemical writings under Jābir\'s name, the astral operations of the Ghāyat al-Ḥakīm, and the Ismāʿīlī taʾwīl of the Fatimid dāʿīs. Several were contested in their own day and remain so — the Fuṣūṣ has been burned and been canonised, Suhrawardī was executed at Aleppo in his late thirties, and the Shams al-Maʿārif is still printed and sold across the Arab world while still being condemned as sorcery from many pulpits — and this shelf marks the disputes rather than smoothing them away. It should be said plainly that for close to a quarter of humanity these are not antiquities but scripture and living devotion, to be handled accordingly; and that Persian works of the same tradition, Rūmī and ʿAṭṭār among them, belong to the Persian hall and are not duplicated here.',
+    works: [
+        {
+            slug: 'al-quran',
+            native: 'القرآن',
+            translit: 'al-Qurʾān',
+            english: 'The Recitation',
+            author: 'Held by Muslims to be the speech of God, conveyed to the Prophet Muḥammad (d. 11/632); the ʿUthmānic recension fixed within a generation of his death',
+            date: 'Revelations dated 610–632 CE; the ʿUthmānic codex c. 650 CE',
+            language: 'Arabic',
+            volume: '114 sūras',
+            description: 'The ground of everything else on this shelf. For Muslims the Qurʾān is not a book about revelation but revelation itself: the uncreated speech of God in Arabic, delivered piecemeal across some twenty-three years, memorised and recited before it was ever written continuously, and still learnt by heart entire by millions. Because it is speech before it is text, a translation is not the Qurʾān but an interpretation of its meanings, and the English versions below are offered strictly on those terms. Its esoteric career rests on a distinction the Book half draws itself — between the ẓāhir, what a verse plainly says, and the bāṭin, what it carries beneath — and on verses such as 3:7, which divides the revelation into the clear (muḥkam) and the ambiguous (mutashābih) and warns off those who go chasing after the second. Ṣūfī ishāra, Ismāʿīlī taʾwīl and the letter-science of the Būnian tradition are all, in the end, claims about how far into the bāṭin a reader may licitly go, and every one of those claims has been disputed in every century since. Whatever position a reader takes, this is living scripture for close to a quarter of humanity, and it is treated here as such.',
+            incipit: {
+                native: 'بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ الرَّحْمَٰنِ الرَّحِيمِ مَالِكِ يَوْمِ الدِّينِ',
+                english: 'In the name of God, the Merciful, the Compassionate. Praise belongs to God, Lord of the worlds, the Merciful, the Compassionate, Master of the Day of Judgement.',
+                note: 'The first four of the seven verses of sūrat al-Fātiḥa, the sūra recited in every unit of the five daily prayers and so, in practice, the most repeated passage in the Arabic language. Given in the Ḥafṣ transmission, which reads mālik, \'Master\'; other canonical readings, among them that of Qālūn, read malik, \'King\'.',
+            },
+            contents: null,
+            contentsNote: 'No table of contents is given, and none should be. The Qurʾān has 114 sūras, each bearing a name usually taken from a salient word rather than from its subject; after the short opening sūra they stand in roughly descending order of length, not in order of revelation, so that a list of the 114 names would imply a scheme of divisions the Book does not have. The traditional classification marks each sūra Meccan or Medinan — commonly reckoned 86 and 28, with several disputed — and for recitation the text is cut across that grain into thirty ajzāʾ, sixty aḥzāb with their quarters, and seven manāzil for reading through in a week. The Kūfan count gives 6,236 āyāt; other traditional counts differ, chiefly over the numbering of the basmala. Twenty-nine sūras open with the muqaṭṭaʿāt, the disconnected letters — fourteen letters in fourteen combinations, among them الم, الر, كهيعص, طه, يس, ص, حم, حم عسق, ق and ن — recited letter by letter, left unexplained by the text itself, and the precise point at which the Arabic hall\'s letter-science begins.',
+            editions: [
+                {
+                    label: 'George Sale, The Koran, commonly called the Alcoran of Mohammed (London, 1734)',
+                    url: 'https://archive.org/details/bim_eighteenth-century_the-koran-commonly-call_1734',
+                    note: 'The first English version made from the Arabic rather than through French, with Sale\'s long Preliminary Discourse. Its notes lean heavily on Marracci\'s Latin and its framing is that of an eighteenth-century Christian apologist; it is a document of European reception as much as a translation. Digitised from microfilm, and freely readable.',
+                },
+                {
+                    label: 'J. M. Rodwell, El-Kor\'ân, or The Koran (London: Quaritch, 1876)',
+                    url: 'https://archive.org/details/elkornorkorant00rodwuoft',
+                    note: 'Rodwell reorders the sūras into what he took to be their chronological sequence — useful for tracing the Meccan and Medinan strata, and correspondingly disorienting to anyone who knows the received order.',
+                },
+                {
+                    label: 'E. H. Palmer, The Qur\'ân, Part I: sūras I–XVI (Sacred Books of the East VI; Oxford: Clarendon Press, 1880)',
+                    url: 'https://archive.org/details/qurn01palm',
+                    note: 'Palmer aimed at the plainness of the Arabic rather than at scriptural grandeur; the result is the least ornamented of the Victorian versions.',
+                },
+                {
+                    label: 'E. H. Palmer, The Qur\'ân, Part II: sūras XVII–CXIV (Sacred Books of the East IX; Oxford: Clarendon Press, 1880)',
+                    url: 'https://archive.org/details/qurn02palm',
+                    note: 'The second half of Palmer\'s translation, completing the Sacred Books of the East set.',
+                },
+                {
+                    label: 'Marmaduke Pickthall, The Meaning of the Glorious Koran (London: Allen & Unwin, 1930)',
+                    url: 'https://archive.org/details/dli.ministry.16944',
+                    note: 'The first English version by an English Muslim, prepared at Hyderabad and reviewed at al-Azhar; its title concedes that what is rendered is the meaning and not the Qurʾān. Published in 1930, and so in the public domain in the United States since 1 January 2026.',
+                },
+            ],
+        },
+        {
+            slug: 'fusus-al-hikam',
+            native: 'فصوص الحكم',
+            translit: 'Fuṣūṣ al-Ḥikam',
+            english: 'The Bezels of Wisdom',
+            author: 'Muḥyī al-Dīn Ibn al-ʿArabī (560–638/1165–1240), al-Shaykh al-Akbar',
+            date: 'Damascus, 627/1229–30',
+            language: 'Arabic',
+            volume: '27 chapters',
+            description: 'Ibn ʿArabī says he received this book from the Prophet in a dream at Damascus in the last ten days of Muḥarram 627, with the instruction to take it out to people that they might profit by it; throughout, he presents himself as transmitter rather than author. It is short — a hundred-odd printed pages against the thousands of the Futūḥāt — and it is the most consequential short book in Islamic mysticism. Each of its twenty-seven chapters is a faṣṣ, the bezel or setting of a ring, in which one particular wisdom is mounted in the \'word\' (kalima) of one particular prophet: the wisdom is the stone, the prophet the setting cut to hold it. From it the later tradition drew what came to be called waḥdat al-wujūd, the oneness of being — a phrase Ibn ʿArabī himself does not use — and the doctrine of the perfect man, al-insān al-kāmil. Its authenticity is not seriously doubted; almost everything else about it is. Ibn Taymiyya and a long line after him judged it plain unbelief, copies were burnt, fatwās were exchanged for centuries, and it remains simultaneously the most commented-upon and the most denounced book on this shelf. No public-domain English translation exists: readers have Burckhardt (1955) and Austin (1980), both in copyright.',
+            incipit: {
+                native: 'الحمد لله منزل الحكم على قلوب الكلم بأحدية الطريق الأمم، من المقام الأقدم، وإن اختلفت النحل والملل لاختلاف الأمم',
+                english: 'Praise be to God, who sends down the wisdoms upon the hearts of the Words by the oneness of the straightest way, from the most ancient station — though sects and creeds differ with the difference of the nations.',
+                note: 'The opening of the khuṭba, standing immediately before the account of the dream. The \'Words\' (al-kalim) are the prophets, each of whom is a word of God; the chime between al-ṭarīq al-amam, the direct road, and al-umam, the nations, sets the book\'s whole argument going in a single sentence. This is the wording in which the khuṭba is transmitted across the printed Arabic editions and the commentary tradition; it has not been collated against a manuscript here.',
+            },
+            contents: [
+                {
+                    heading: 'فص حكمة إلهية في كلمة آدمية',
+                    english: 'Ādam — the bezel of a divine wisdom (ilāhiyya)',
+                },
+                {
+                    heading: 'فص حكمة نفثية في كلمة شيثية',
+                    english: 'Shīth (Seth) — the bezel of a wisdom of breathing-forth (nafthiyya); Austin renders it \'expiration\'',
+                },
+                {
+                    heading: 'فص حكمة سبوحية في كلمة نوحية',
+                    english: 'Nūḥ (Noah) — the bezel of a wisdom of transcendence (subbūḥiyya)',
+                },
+                {
+                    heading: 'فص حكمة قدوسية في كلمة إدريسية',
+                    english: 'Idrīs (Enoch) — the bezel of a wisdom of holiness (quddūsiyya)',
+                },
+                {
+                    heading: 'فص حكمة مهيمية في كلمة إبراهيمية',
+                    english: 'Ibrāhīm (Abraham) — the bezel of a wisdom of rapt love (muhayyamiyya)',
+                },
+                {
+                    heading: 'فص حكمة حقية في كلمة إسحاقية',
+                    english: 'Isḥāq (Isaac) — the bezel of a wisdom of reality (ḥaqqiyya)',
+                },
+                {
+                    heading: 'فص حكمة علية في كلمة إسماعيلية',
+                    english: 'Ismāʿīl (Ishmael) — the bezel of a wisdom of sublimity (ʿaliyya)',
+                },
+                {
+                    heading: 'فص حكمة روحية في كلمة يعقوبية',
+                    english: 'Yaʿqūb (Jacob) — the bezel of a wisdom of spirit (rūḥiyya)',
+                },
+                {
+                    heading: 'فص حكمة نورية في كلمة يوسفية',
+                    english: 'Yūsuf (Joseph) — the bezel of a wisdom of light (nūriyya)',
+                },
+                {
+                    heading: 'فص حكمة أحدية في كلمة هودية',
+                    english: 'Hūd — the bezel of a wisdom of oneness (aḥadiyya)',
+                },
+                {
+                    heading: 'فص حكمة فاتحية في كلمة صالحية',
+                    english: 'Ṣāliḥ — the bezel of a wisdom of opening (fātiḥiyya)',
+                },
+                {
+                    heading: 'فص حكمة قلبية في كلمة شعيبية',
+                    english: 'Shuʿayb (Jethro) — the bezel of a wisdom of the heart (qalbiyya)',
+                },
+                {
+                    heading: 'فص حكمة ملكية في كلمة لوطية',
+                    english: 'Lūṭ (Lot) — the bezel of a wisdom of power (malkiyya); Austin renders it \'mastery\'',
+                },
+                {
+                    heading: 'فص حكمة قدرية في كلمة عزيرية',
+                    english: 'ʿUzayr (Ezra) — the bezel of a wisdom of the decree (qadariyya)',
+                },
+                {
+                    heading: 'فص حكمة نبوية في كلمة عيسوية',
+                    english: 'ʿĪsā (Jesus) — the bezel of a wisdom of prophecy (nabawiyya)',
+                },
+                {
+                    heading: 'فص حكمة رحمانية في كلمة سليمانية',
+                    english: 'Sulaymān (Solomon) — the bezel of a wisdom of the All-Merciful (raḥmāniyya)',
+                },
+                {
+                    heading: 'فص حكمة وجودية في كلمة داودية',
+                    english: 'Dāwūd (David) — the bezel of a wisdom of being (wujūdiyya)',
+                },
+                {
+                    heading: 'فص حكمة نفسية في كلمة يونسية',
+                    english: 'Yūnus (Jonah) — the bezel of a wisdom of the soul (nafsiyya); the unpointed Arabic also admits nafasiyya, \'of breath\', which is how Austin takes it, and the vocalisation is genuinely disputed',
+                },
+                {
+                    heading: 'فص حكمة غيبية في كلمة أيوبية',
+                    english: 'Ayyūb (Job) — the bezel of a wisdom of the unseen (ghaybiyya)',
+                },
+                {
+                    heading: 'فص حكمة جلالية في كلمة يحيوية',
+                    english: 'Yaḥyā (John) — the bezel of a wisdom of majesty (jalāliyya)',
+                },
+                {
+                    heading: 'فص حكمة مالكية في كلمة زكرياوية',
+                    english: 'Zakariyyā (Zechariah) — the bezel of a wisdom of sovereignty (mālikiyya)',
+                },
+                {
+                    heading: 'فص حكمة إيناسية في كلمة إلياسية',
+                    english: 'Ilyās (Elias) — the bezel of a wisdom of intimacy (īnāsiyya)',
+                },
+                {
+                    heading: 'فص حكمة إحسانية في كلمة لقمانية',
+                    english: 'Luqmān — the bezel of a wisdom of beneficence (iḥsāniyya)',
+                },
+                {
+                    heading: 'فص حكمة إمامية في كلمة هارونية',
+                    english: 'Hārūn (Aaron) — the bezel of a wisdom of leadership (imāmiyya)',
+                },
+                {
+                    heading: 'فص حكمة علوية في كلمة موسوية',
+                    english: 'Mūsā (Moses) — the bezel of a wisdom of eminence (ʿulwiyya)',
+                },
+                {
+                    heading: 'فص حكمة صمدية في كلمة خالدية',
+                    english: 'Khālid ibn Sinān — the bezel of a wisdom of the eternal refuge (ṣamadiyya)',
+                },
+                {
+                    heading: 'فص حكمة فردية في كلمة محمدية',
+                    english: 'Muḥammad — the bezel of a wisdom of singularity (fardiyya)',
+                },
+            ],
+            contentsNote: 'The twenty-seven bezels in the order of the received text. Each heading takes the form \'the bezel of a wisdom of such a kind, in a word of such a prophet\': the wisdom named by an adjective, the prophet by the adjectival form of his name. The sequence has been checked twice for this shelf — against the complete table of contents of R. W. J. Austin\'s translation, which matches it prophet for prophet across all twenty-seven, and against a digitised Arabic text of the Fuṣūṣ, whose surviving legible headings (Nūḥ, Shuʿayb, Lūṭ, ʿĪsā, Yaḥyā, Luqmān, Mūsā, Muḥammad) fall in exactly these relative positions. Two names outside the usual prophetic sequence are deliberate — Khālid ibn Sinān al-ʿAbsī, an Arabian prophet of the interval before Islam known only from ḥadīth, and Luqmān, a sage rather than a prophet. Where the Arabic adjective is genuinely ambiguous or where the standard English differs from the rendering used here, the alternative is given in the gloss rather than silently resolved.',
+            editions: [
+                {
+                    label: 'Dāwūd al-Qayṣarī, Maṭlaʿ khuṣūṣ al-kilam fī maʿānī Fuṣūṣ al-ḥikam (lithograph, 1882)',
+                    url: 'https://archive.org/details/AAlexandrina-143329',
+                    note: 'Arabic. The full text of the Fuṣūṣ carried inside the commentary of al-Qayṣarī (d. 751/1350), the most widely used of the classical shurūḥ and the form in which the book was actually read and taught for six centuries. From the Bibliotheca Alexandrina\'s holdings; catalogued there under its Arabic title, Sharḥ Fuṣūṣ al-ḥikam al-musammā bi-Maṭlaʿ khuṣūṣ al-kilam.',
+                },
+                {
+                    label: 'R. A. Nicholson, Studies in Islamic Mysticism (Cambridge University Press, 1921)',
+                    url: 'https://archive.org/details/studiesinislamyst00nichuoft',
+                    note: 'Not the Fuṣūṣ, and offered only because no public-domain English of it exists. Nicholson\'s second study expounds ʿAbd al-Karīm al-Jīlī\'s al-Insān al-kāmil, the work through which Ibn ʿArabī\'s system reached most later readers, and his introduction sets out in English the doctrine the Fuṣūṣ compresses.',
+                },
+            ],
+        },
+        {
+            slug: 'al-futuhat-al-makkiyya',
+            native: 'الفتوحات المكية',
+            translit: 'al-Futūḥāt al-Makkiyya',
+            english: 'The Meccan Openings',
+            author: 'Muḥyī al-Dīn Ibn al-ʿArabī (560–638/1165–1240)',
+            date: 'Begun at Mecca c. 598/1202; first recension completed 629/1231, second 636/1238',
+            language: 'Arabic',
+            volume: '560 chapters in six sections',
+            description: 'Ibn ʿArabī began it during a stay at Mecca, where, circumambulating the Kaʿba, he encountered a mysterious youth at once silent and speaking, whom he describes as the living counterpart of the House itself; it then grew for some thirty-six years into one of the longest works in mediaeval Arabic, filling four large folio volumes in the Būlāq printing and thirty-seven volumes in the author\'s own hand. \'Openings\' renders futūḥāt, the unveilings that are given rather than reasoned to, and the title is a claim: the book was not composed but received. He wrote it twice, a first recension finished in 629/1231 and a second in 636/1238, the latter surviving as the Konya autograph — which is why a genuinely critical edition remains, after a century of work, unfinished. Its chapters run from the letters of the alphabet and the science of the divine names through cosmology, ritual law, the stations of the way and the hierarchy of the saints to a closing chapter of practical counsel; Michel Chodkiewicz has argued that the apparent disorder answers to a hidden Qurʾānic order. No complete translation into any European language exists, and probably none ever will.',
+            incipit: null,
+            contents: [
+                {
+                    heading: 'فصل المعارف',
+                    english: 'The section of the modes of knowledge — chapters 1–73: the letters, the divine names, cosmology, the structure of the worlds',
+                },
+                {
+                    heading: 'فصل المعاملات',
+                    english: 'The section of spiritual practice — chapters 74–189: the ritual law read for its inner sense, and the disciplines of the wayfarer',
+                },
+                {
+                    heading: 'فصل الأحوال',
+                    english: 'The section of the states — chapters 190–269: the transient conditions visited upon the soul, which it does not procure for itself',
+                },
+                {
+                    heading: 'فصل المنازل',
+                    english: 'The section of the waystations — chapters 270–383: the abodes of the ascent, ordered on the sūras of the Qurʾān',
+                },
+                {
+                    heading: 'فصل المنازلات',
+                    english: 'The section of mutual waystations — chapters 384–461: the meeting-places where the servant descends and the Real descends towards him',
+                },
+                {
+                    heading: 'فصل المقامات',
+                    english: 'The section of the stations — chapters 462–558: the permanent degrees the wayfarer attains and keeps',
+                },
+            ],
+            contentsNote: 'The six fuṣūl are the book\'s own division and their names and order are secure. The chapter-ranges are those of the standard printings and should be read as approximate at the joins: scholarly accounts differ by a chapter over where the section of spiritual practice ends and the section of the states begins, some closing the former at 188 rather than 189. Chapters 559 and 560 stand outside the six: the first recapitulates the secrets of every chapter that precedes it, the second is the long chapter of counsels (waṣāyā) with which the work ends. The 560 individual chapter-headings are not reproduced here; a list of them would run to many pages and would be reliable only against a particular edition.',
+            editions: [
+                {
+                    label: 'al-Futūḥāt al-Makkiyya, vol. I (Būlāq: Dār al-Ṭibāʿa al-Bāhira, 1852)',
+                    url: 'https://archive.org/details/alfutuhatalmakki01ibnauoft',
+                    note: 'Arabic. The first printed edition, from the Būlāq press outside Cairo — the text on which nearly all later reprintings depend, and against which the Konya autograph has since been collated. University of Toronto copy.',
+                },
+                {
+                    label: 'al-Futūḥāt al-Makkiyya, vol. II (Būlāq, 1852)',
+                    url: 'https://archive.org/details/alfutuhatalmakki02ibnauoft',
+                    note: 'Arabic. The second of the four Būlāq volumes.',
+                },
+                {
+                    label: 'al-Futūḥāt al-Makkiyya, vol. III (Būlāq, 1852)',
+                    url: 'https://archive.org/details/alfutuhatalmakki03ibnauoft',
+                    note: 'Arabic. The third of the four Būlāq volumes.',
+                },
+                {
+                    label: 'al-Futūḥāt al-Makkiyya, vol. IV (Būlāq, 1852)',
+                    url: 'https://archive.org/details/alfutuhatalmakki04ibnauoft',
+                    note: 'Arabic. The fourth and last of the Būlāq volumes.',
+                },
+                {
+                    label: 'Ibn al-ʿArabī, The Tarjumán al-Ashwáq, ed. and trans. R. A. Nicholson (London: Royal Asiatic Society, 1911)',
+                    url: 'https://archive.org/details/tarjumanalashwaq00ibnaiala',
+                    note: 'A different and much smaller book — sixty-one love poems with Ibn ʿArabī\'s own commentary, written to answer the charge that they were merely erotic. Given here because it is the only substantial work of his in a public-domain English version, and because the self-commentary shows in miniature how he reads a text for its bāṭin.',
+                },
+            ],
+        },
+        {
+            slug: 'hikmat-al-ishraq',
+            native: 'حكمة الإشراق',
+            translit: 'Ḥikmat al-Ishrāq',
+            english: 'The Philosophy of Illumination',
+            author: 'Shihāb al-Dīn Yaḥyā al-Suhrawardī (c. 549–587/1154–1191), called al-Maqtūl by his opponents and al-Shahīd by his followers',
+            date: 'Completed 582/1186',
+            language: 'Arabic',
+            volume: 'Two parts',
+            description: 'Suhrawardī finished this book at about thirty-three and was dead five years later, executed at Aleppo at the insistence of the jurists and with the consent of Saladin. Its argument is that Peripatetic logic and essentialist metaphysics cannot reach the things that matter, and that being is better understood as light: a single Light of Lights, and beneath it a descending order of immaterial lights differing not in kind but in intensity, so that reality is graded by luminosity rather than parcelled into species. He claims for the doctrine a genealogy running through Plato and Hermes and — unusually — through the ancient sages of Persia, whose khurra or light-glory he reads as the same teaching under other names. He also insists that the book cannot be understood by argument alone: the reader is required to have undertaken the disciplines first, and warned against passing it to anyone who has not. The Ishrāqī school it founded runs through Quṭb al-Dīn al-Shīrāzī and Mullā Ṣadrā to the present day, and it is the point at which Islamic philosophy becomes, avowedly, a mystical practice. The book is in Arabic, though its author was Persian and much of the school that grew from it wrote in Persian.',
+            incipit: null,
+            contents: [
+                {
+                    heading: 'القسم الأول في ضوابط الفكر',
+                    english: 'Part One — on the rules of thought, in three discourses: on knowledge and definition; on proofs and their principles; and on sophistical refutations, with Suhrawardī\'s critique of the Peripatetic apparatus, clearing the ground before the metaphysics of light is laid upon it',
+                },
+                {
+                    heading: 'القسم الثاني في الأنوار الإلهية',
+                    english: 'Part Two — on the divine lights, the Light of Lights, and the principles and order of being, running from the reality of light and the emanation of the incorporeal lights to the soul, its ascent and its afterlife',
+                },
+            ],
+            contentsNote: 'The two-part division is the book\'s own and is secure, as is the count of three discourses (maqālāt) in the first part and the subjects of those three, which have been checked against the descriptions of Walbridge and Ziai\'s critical edition. The second part\'s internal division is commonly given as five discourses, but that count has not been confirmed here against the text and is therefore not asserted. The individual discourse-headings are not given, because their wording differs between manuscripts and printings and cannot be stated reliably. It is worth saying that Part One is a logic and not a preface: Suhrawardī held the reform of the Peripatetic instrument to be a precondition of the illuminationist metaphysics that follows it.',
+            editions: [
+                {
+                    label: 'Quṭb al-Dīn al-Shīrāzī, Sharḥ Ḥikmat al-Ishrāq (lithograph, 1895)',
+                    url: 'https://archive.org/details/AAlexandrina-142203',
+                    note: 'Arabic. The whole of Suhrawardī\'s text carried inside the commentary of Quṭb al-Dīn al-Shīrāzī (d. 710/1311) — the form in which the book was read and taught in Persia and India for six hundred years. From the Bibliotheca Alexandrina\'s holdings. Corbin\'s critical edition (1952) and the complete English of Walbridge and Ziai (1999) are both in copyright.',
+                },
+            ],
+        },
+        {
+            slug: 'mishkat-al-anwar',
+            native: 'مشكاة الأنوار',
+            translit: 'Mishkāt al-Anwār',
+            english: 'The Niche of Lights',
+            author: 'Abū Ḥāmid Muḥammad al-Ghazālī (450–505/1058–1111), Ḥujjat al-Islām',
+            date: 'Among the late works, probably after 499/1106',
+            language: 'Arabic',
+            volume: 'Three parts',
+            description: 'A short treatise written to answer a question put by a friend: what does the Light Verse mean? Qurʾān 24:35 — God is the light of the heavens and the earth; the likeness of His light is as a niche wherein is a lamp, the lamp in a glass, the glass as it were a glittering star, kindled from a blessed olive tree neither of the east nor of the west — together with the tradition that God has seventy thousand veils of light and darkness. Al-Ghazālī answers that the only thing that is light in the proper sense is God, and that everything else so called is called so by borrowing; then he builds a theory of the symbol (mithāl) by which the world of sense corresponds, term for term, to the world of the unseen; then he applies both to the verse and to the veils. It is the most nearly esoteric thing he wrote, and the man who wrote it had spent a career dismantling the philosophers\' claims to precisely the knowledge he here seems to want. Whether the third part is entirely his has been argued since W. Montgomery Watt raised the question in 1949; recent scholarship, Landolt\'s and Treiger\'s among it, defends the attribution. Ibn Ṭufayl, a generation later, complained that al-Ghazālī says one thing in books for the many and another in books for the few — a complaint the Mishkāt does nothing to dispel.',
+            incipit: null,
+            contents: [
+                {
+                    heading: 'الفصل الأول',
+                    english: 'Part One — light and lights: the word \'light\' as physical brightness, as the eye, and as the intelligence; and the demonstration that the Real Light is God, every other use of the name being metaphor',
+                },
+                {
+                    heading: 'الفصل الثاني',
+                    english: 'Part Two — the science of symbolism: how the visible world corresponds to the world of dominion, and the prolegomena to reading the niche, the lamp, the glass, the tree, the oil and the fire',
+                },
+                {
+                    heading: 'الفصل الثالث',
+                    english: 'Part Three — the application: the exposition of the Light Verse itself, and then of the tradition of the seventy thousand veils, with the classes of those veiled by darkness, by darkness and light together, and by pure light',
+                },
+            ],
+            contentsNote: 'The treatise divides into three faṣls, and the division is certain. The English glosses follow the part-headings of Gairdner\'s 1924 translation; the Arabic headings themselves run to a line or more apiece and are worded differently in different editions, so only the divisions are set out here rather than a reconstructed heading that could not be vouched for.',
+            editions: [
+                {
+                    label: 'W. H. T. Gairdner, Mishkāt al-Anwār (\'The Niche for Lights\'), Royal Asiatic Society Monographs XIX (London, 1924)',
+                    url: 'https://archive.org/details/MishkatAlAnwarByGHAZZALI',
+                    note: 'The standard public-domain English, made in Cairo by a missionary who read al-Ghazālī with unusual sympathy. His rhymed rendering of the opening doxology is a period piece; his notes are still worth having. This is a reader-uploaded scan with sparse catalogue data, freely readable in full.',
+                },
+                {
+                    label: 'Gairdner\'s translation, scanned printing (Lahore: Muhammad Ashraf, reprinting the 1924 edition)',
+                    url: 'https://archive.org/details/mishkatalanwar0000gair',
+                    note: 'The same translation as a library page-scan of the printed book, catalogued to the 1924 edition. The Internet Archive marks it readable without borrowing or sign-in, so either copy may be used; this one is the cleaner scan.',
+                },
+            ],
+        },
+        {
+            slug: 'ghayat-al-hakim',
+            native: 'غاية الحكيم',
+            translit: 'Ghāyat al-Ḥakīm wa-aḥaqq al-natījatayn bi-l-taqdīm',
+            english: 'The Goal of the Sage — the Picatrix',
+            author: 'Anonymous, al-Andalus. The traditional ascription to the mathematician Maslama al-Majrīṭī (d. c. 398/1007) is rejected on internal grounds and no longer defended',
+            date: 'Probably mid-eleventh century; on Fierro\'s attribution, a century earlier',
+            language: 'Arabic',
+            volume: 'Four books',
+            description: 'The most important handbook of astral magic in Arabic, and the channel by which that magic entered Latin Europe. Its subject is the drawing down of celestial powers into matter: the making of talismans at elected hours, the images of the decans and the lunar mansions, the suffumigations and invocations proper to each planet, the compounding of substances that will hold a spirit. It is philosophically ambitious as well as operative — magic is defended as the crown of the sciences, and the metaphysics is Neoplatonic, with a debt to the Rasāʾil Ikhwān al-Ṣafāʾ that is at points verbatim. It reports at length the rites ascribed to the Ṣābians of Ḥarrān, which is much of its value to historians and none of its respectability to jurists: by any ordinary reading of the sharīʿa this is siḥr, and it was condemned as such. The old attribution to al-Majrīṭī the mathematician is untenable on internal grounds and is now set aside; Maribel Fierro\'s proposal of a different Maslama — Maslama ibn Qāsim al-Qurṭubī (d. 353/964), a traveller and occultist — has been widely though not universally accepted. Translated into Castilian and thence into Latin at the court of Alfonso X around 1256–8, it became the Picatrix, a name still unexplained, and passed to Ficino, Agrippa and the whole Renaissance magical tradition.',
+            incipit: null,
+            contents: [
+                {
+                    heading: 'المقالة الأولى',
+                    english: 'Book One — what magic is and why the author reckons it the highest of the sciences; the heavens and the fixed stars and the sky\'s government of the sublunar world; the principles of talismanic work in general; and the twenty-eight mansions of the moon with the images proper to them',
+                },
+                {
+                    heading: 'المقالة الثانية',
+                    english: 'Book Two — the figures of the heavens: the images of the zodiacal signs and their degrees, the thirty-six decans in more than one system of attribution, and the way an image is made to receive the virtue of a planet',
+                },
+                {
+                    heading: 'المقالة الثالثة',
+                    english: 'Book Three — the properties of the planets and signs, with their spirits, colours, metals, plants and animals; the prayers and invocations addressed to each, including the rites reported of the Ṣābians of Ḥarrān; and the powers of letters, names and numbers',
+                },
+                {
+                    heading: 'المقالة الرابعة',
+                    english: 'Book Four — the nature of the spirits and how they are drawn; suffumigations, stones and materials and their preparation; and the practical confection of talismans',
+                },
+            ],
+            contentsNote: 'The four-book (maqāla) division is secure and belongs to the Arabic original as much as to the Latin Picatrix. The glosses above summarise the matter of each book and are not translations of its headings; they follow the arrangement of the Latin, where the divisions are best documented and where the books run to seven, twelve, twelve and nine chapters respectively. That arrangement is not identical with the Arabic: the internal chapters differ between the Arabic manuscript recensions, and again between Arabic and Latin, the Latin being an abridgement and rearrangement rather than a faithful rendering, so that no single list of chapters would be true of both. Note in particular that the lunar mansions are treated in Book One and the decans in Book Two, not the reverse; mansion and decan material also recurs elsewhere in the work.',
+            editions: [],
+        },
+        {
+            slug: 'rasail-ikhwan-al-safa',
+            native: 'رسائل إخوان الصفاء',
+            translit: 'Rasāʾil Ikhwān al-Ṣafāʾ wa-Khullān al-Wafāʾ',
+            english: 'The Epistles of the Brethren of Purity and Friends of Loyalty',
+            author: 'Anonymous — a fraternity at Baṣra writing collectively; the mediaeval lists of members do not agree, and the group\'s relation to Ismāʿīlī daʿwa is disputed',
+            date: 'Compiled c. 350–370/960–980, with some arguing for a date a generation earlier',
+            language: 'Arabic',
+            volume: '52 epistles in four parts',
+            description: 'A complete encyclopaedia of the sciences written by men who would not give their names, on the principle that truth is the property of no single confession and that the soul is saved by knowledge. The fifty-two epistles move from number and geometry through the natural world to the soul and finally to the divine law, on the argument that the sciences form a ladder and that climbing the ladder is itself the ascent. Their sources are frankly plural — Pythagoras and Ptolemy beside the Qurʾān, Indian and Persian material, Hermetic and Christian matter — and their Neoplatonism is of the kind that treats cosmology as moral instruction. The twenty-second epistle, the case of the animals against man before the king of the jinn, is the most famous fable in Arabic philosophical literature and has had an independent life in Hebrew, Persian, Urdu and English. The Epistles were read everywhere and trusted by no orthodoxy: al-Ghazālī warned against them, and copies are reported to have been burnt at Baghdad in the twelfth century alongside the works of Ibn Sīnā. Whether they are Ismāʿīlī propaganda or the work of a circle merely adjacent to the daʿwa has been argued for a hundred years without settlement.',
+            incipit: null,
+            contents: [
+                {
+                    heading: 'القسم الرياضي التعليمي',
+                    english: 'Part One — the mathematical and propaedeutic sciences: fourteen epistles, running from number, geometry, astronomy, geography, music, proportion and the crafts to ethics, and closing with the logical corpus — Porphyry\'s Isagoge followed by four books of the Aristotelian Organon',
+                },
+                {
+                    heading: 'القسم الجسماني الطبيعي',
+                    english: 'Part Two — the corporeal and natural sciences: seventeen epistles, on matter and form, the heavens, generation and corruption, meteorology, minerals, plants and animals — the twenty-second being the fable of the animals\' lawsuit against man — the human body, sense-perception, and language',
+                },
+                {
+                    heading: 'القسم النفساني العقلي',
+                    english: 'Part Three — the psychical and rational sciences: ten epistles, on the intellectual principles, the soul and the intellect, the world as a great man, love, resurrection, and the causes of motion',
+                },
+                {
+                    heading: 'القسم الناموسي الإلهي',
+                    english: 'Part Four — the divine laws and the religious sciences: eleven epistles, on creeds and confessions, the fellowship and conduct of the Brethren, prophecy and the call, and — last of the fifty-two — magic, talismans and spells',
+                },
+            ],
+            contentsNote: 'The four-part division and the count of fifty-two epistles are the collection\'s own and are secure, as are the counts of fourteen, seventeen, ten and eleven epistles in the four parts, which sum to fifty-two and are confirmed by the standard scholarly accounts. The Arabic headings given are the traditional designations of the four parts; individual epistle-titles are not reproduced, because they vary in wording and occasionally in order between the manuscript families and the printed editions. A further piece, al-Risāla al-Jāmiʿa (the Comprehensive Epistle), summarises the whole and is transmitted separately; whether it belongs to the original corpus is disputed, and a Jāmiʿat al-Jāmiʿa exists beside it.',
+            editions: [
+                {
+                    label: 'Rasāʾil Ikhwān al-Ṣafāʾ wa-Khullān al-Wafāʾ, part 1 (Bombay, 1887)',
+                    url: 'https://archive.org/details/in.ernet.dli.2015.323847',
+                    note: 'Arabic. The first part of the Bombay printing of 1305–6 AH, generally reckoned the first complete printed edition of the Epistles.',
+                },
+                {
+                    label: 'Rasāʾil Ikhwān al-Ṣafāʾ, part 3 (Bombay, 1888)',
+                    url: 'https://archive.org/details/in.ernet.dli.2015.323867',
+                    note: 'Arabic. The third part of the same Bombay printing. The Internet Archive\'s catalogue data for both parts is unreliable on authorship and should be disregarded.',
+                },
+                {
+                    label: 'Rasāʾil Ikhwān al-Ṣafāʾ wa-Khullān al-Wafāʾ, ed. Khayr al-Dīn al-Ziriklī (Cairo: al-Maṭbaʿa al-ʿArabiyya, 1928)',
+                    url: 'https://archive.org/details/AAlexandrina-192979',
+                    note: 'Arabic. The Cairo edition on which a great deal of twentieth-century scholarship depends, and the one most often cited before the Beirut printing of 1957. From the Bibliotheca Alexandrina\'s holdings; published in 1928 and so in the public domain in the United States.',
+                },
+                {
+                    label: 'Friedrich Dieterici, Khulaṣat al-wafāʾ bi-ikhtiṣār Rasāʾil Ikhwān al-Ṣafāʾ (Leipzig: Hinrichs, 1886)',
+                    url: 'https://archive.org/details/khulatalwafbiikh01ikhwuoft',
+                    note: 'Arabic. Dieterici\'s abridgement, issued alongside the long series of German studies through which nineteenth-century Europe first met the Brethren.',
+                },
+                {
+                    label: 'Ikhwánu-s Safá, or Brothers of Purity, trans. John Dowson (London: Trübner, 1869)',
+                    url: 'https://archive.org/details/ikhwnussaf00ikhw',
+                    note: 'Not a translation of the Epistles. Dowson renders Ikrām ʿAlī\'s Urdu recasting of the twenty-second epistle — the animals\' lawsuit against man — which is the only part of the corpus with a public-domain English version. To be read as a witness to the fable\'s afterlife, not to the Arabic text.',
+                },
+            ],
+        },
+        {
+            slug: 'jabirian-corpus',
+            native: 'مصنفات جابر بن حيان',
+            translit: 'Muṣannafāt Jābir ibn Ḥayyān',
+            english: 'The Jābirian Corpus',
+            author: 'Ascribed to Jābir ibn Ḥayyān (traditionally d. c. 200/815), held by that tradition to have been a pupil of the sixth Shīʿī imām Jaʿfar al-Ṣādiq; shown by Paul Kraus to be a composite body of writing, largely later than the ascription and by many hands',
+            date: 'Ninth to tenth centuries CE for the bulk of the corpus; the traditional ascription is to the late eighth',
+            language: 'Arabic',
+            volume: 'Some three thousand titles claimed; a few hundred extant',
+            description: 'Arabic alchemy\'s foundational body of writing, and one of the great problems of Islamic bibliography. It teaches the sulphur–mercury theory of the metals, sets out laboratory procedure with a precision unmatched before it — distillation, sublimation, calcination, crystallisation — and organises the whole around the science of the Balance (ʿilm al-mīzān), which holds that every substance has a determinable proportion of the four natures, that the proportions are expressible in number, and that transmutation is therefore a matter of measured correction rather than of luck. Behind the chemistry stands a cosmology in which the letters of the Arabic alphabet encode the natures, and a policy of deliberate concealment: the doctrine of tabdīd al-ʿilm, the dispersion of knowledge, by which the author says he scatters the parts of a teaching across many books so that only a persistent and worthy reader may reassemble it. It must be said plainly that the corpus as it stands cannot be the work of one eighth-century man. Paul Kraus demonstrated in 1942–3, from its vocabulary, its Neoplatonism and its Ismāʿīlī colouring, that the bulk of it belongs to the late ninth and tenth centuries and grew by accretion within a school rather than issuing from a single pen; Fuat Sezgin dissented and argued for a historical Jābir, and most scholarship now follows Kraus while allowing that an early stratum may go back to a real person. The Kitāb al-Raḥma, the Book of Mercy, is the piece Berthelot put into French in 1893 and the first Jābirian text a European could read. The Latin \'Geber\' of the Summa perfectionis is somebody else entirely.',
+            incipit: null,
+            contents: null,
+            contentsNote: 'There is no table of contents, because there is no single book. What can honestly be given is Paul Kraus\'s classification of the corpus (Jābir ibn Ḥayyān: contribution à l\'histoire des idées scientifiques dans l\'Islam, Cairo, 1942–3), which remains standard: the Hundred and Twelve Books, dedicated to the Barmakid viziers and forming the earliest layer, with which the Kitāb al-Raḥma (كتاب الرحمة) is reckoned; the Seventy Books (كتب السبعين), a more systematic exposition; the Ten Books of Rectifications (المصححات العشرة), correcting the alchemists who preceded him; the Books of the Balance (كتب الموازين), some hundred and forty-four titles in which the numerical theory is worked out; the Five Hundred Books, largely lost and more openly religious in tone; and the writings on specific properties, headed by the Kitāb al-Khawāṣṣ al-kabīr. Individual titles within these groups are deliberately not listed: the manuscript tradition is fragmentary, the internal cross-references are themselves part of the scattering described above, and any list offered here would be an unreliable one.',
+            editions: [
+                {
+                    label: 'M. Berthelot and O. Houdas, La Chimie au Moyen Âge, tome III: L\'alchimie arabe (Paris: Imprimerie nationale, 1893)',
+                    url: 'https://archive.org/details/b24877797_0003',
+                    note: 'Arabic texts with facing French translation, including the Livre de la Miséricorde — the Kitāb al-Raḥma — and other Jābirian pieces. It predates Kraus and takes the ascriptions at face value; its value is the texts, not the framing. Wellcome Library copy, marked public domain.',
+                },
+                {
+                    label: 'The Works of Geber, Englished by Richard Russell (London, 1678; this scan of the 1686 issue printed for William Cooper)',
+                    url: 'https://archive.org/details/WorksOfGeber',
+                    note: 'Included as a caution rather than as a source. This is the Latin pseudo-Geber — the Summa perfectionis and its companions, composed in Latin around 1300, probably by Paul of Taranto, and not translated from any Arabic original — in Russell\'s seventeenth-century English. It is what most of Europe meant by \'Geber\', and it is not Jābir. The scan has been checked: its title page reads MDCLXXXVI, confirming the 1686 issue, and the Internet Archive\'s catalogue title and description for this item are both mistaken and should be ignored.',
+                },
+            ],
+        },
+        {
+            slug: 'shams-al-maarif',
+            native: 'شمس المعارف',
+            translit: 'Shams al-Maʿārif wa-Laṭāʾif al-ʿAwārif',
+            english: 'The Sun of Knowledge and the Subtleties of Things Known',
+            author: 'Ascribed to Aḥmad ibn ʿAlī al-Būnī (d. 622/1225, or on another reckoning 630/1232–3); the great recension is a later compilation by other hands',
+            date: 'al-Būnī\'s authentic works, early thirteenth century; the al-Kubrā recension probably seventeenth',
+            language: 'Arabic',
+            volume: 'Three recensions',
+            description: 'The standing manual of ʿilm al-ḥurūf, the science of letters, and the most widely circulated book of practical occultism in Arabic. Its matter is the divine names and their numerical values, the properties of the twenty-eight letters and their assignment to the elements and the planets, the construction of awfāq — magic squares — for particular ends, the making of amulets, the timings and the invocations. It rests on a proposition the Arabic hall states elsewhere: that the letters are not signs for sounds but the constituents of creation, and that the muqaṭṭaʿāt standing at the head of twenty-nine sūras are the point at which scripture admits as much. Al-Būnī himself writes as a Sufi, and the letter-science he practised had defenders of impeccable standing, Ibn ʿArabī among them. The book as printed is another matter: it swells with talismans and conjurations belonging to a frankly operative magic, and it has been condemned as sorcery by scholars from his own century to the present while continuing to be printed and sold across the Arab world. Recent work, above all Noah Gardiner\'s, has begun to separate the historical al-Būnī — author of the Laṭāʾif al-ishārāt and of a much shorter Shams al-maʿārif — from the vast book that now carries his name.',
+            incipit: null,
+            contents: null,
+            contentsNote: 'No contents can honestly be given. Three recensions circulate under this title — al-Ṣughrā (the lesser), al-Wusṭā (the middle) and al-Kubrā (the greater) — and only the shortest stands close to anything securely al-Būnī\'s; the Kubrā was assembled long after his death, probably in the seventeenth century, from Būnian and non-Būnian material alike, and the relation of the printed Ṣughrā to the authentic short work is itself contested. The printed Kubrā is conventionally described as being in forty faṣls, but the lithographs and later printings differ from one another in the number, order and substance of their chapters, and further material is regularly appended. To set out a table of contents would be to give one printing\'s arrangement the authority of the work. What the book contains is described above instead.',
+            editions: [
+                {
+                    label: 'Shams al-maʿārif al-kubrā wa-laṭāʾif al-ʿawārif (lithograph, 1874)',
+                    url: 'https://archive.org/details/AAlexandrina-142916',
+                    note: 'Arabic. A nineteenth-century lithographed printing of the great recension, with its squares and figures, from the Bibliotheca Alexandrina\'s holdings, catalogued there under al-Būnī\'s name. No critical edition of any recension exists, and there is no complete translation into a European language.',
+                },
+            ],
+        },
+        {
+            slug: 'al-risala-al-qushayriyya',
+            native: 'الرسالة القشيرية',
+            translit: 'al-Risāla al-Qushayriyya fī ʿilm al-taṣawwuf',
+            english: 'The Qushayrian Epistle on the Science of Sufism',
+            author: 'Abū al-Qāsim ʿAbd al-Karīm ibn Hawāzin al-Qushayrī (376–465/986–1072) of Nishapur',
+            date: 'Composed 437/1045–6',
+            language: 'Arabic',
+            volume: 'Some fifty chapters',
+            description: 'Written at Nishapur in the years when the Shāfiʿī-Ashʿarī party to which al-Qushayrī belonged was locked in open conflict with its Ḥanafī and Muʿtazilī opponents — he had issued a manifesto in defence of Ashʿarī orthodoxy the year before — the Risāla is an argument as much as a manual: that the Sufi way is not a departure from the sharīʿa but its interior, and that the masters of the way were scrupulous jurists. The conflict later turned to open persecution: under the Saljūq vizier al-Kundurī, some years after the Risāla was finished, Ashʿarī scholars were denounced and driven out, and al-Qushayrī himself was briefly imprisoned in the citadel of Nishapur. He opens with a creed, proceeds to lives of the early masters chosen for their orthodoxy, then explains the technical vocabulary that outsiders found suspect, and only then sets out the stations and states themselves — repentance, scrupulousness, patience, trust, gratitude, contentment, love, gnosis — each chapter a mosaic of Qurʾānic proof-text, ḥadīth and the sayings of the shaykhs. It became the standard textbook of the Sufi curriculum and largely remains one. If the Fuṣūṣ shows how far the tradition could go, the Risāla shows the ground it insisted it had never left; and a shelf of Islamic esoterica that omitted the sober, law-abiding centre of Sufism would misrepresent the field entirely.',
+            incipit: null,
+            contents: null,
+            contentsNote: 'The architecture is secure and worth stating, though the chapter-list is not reproduced. The book opens with a statement of the creed of the Sufis on the principles of theology; then a section recalling the masters of this way — some eighty-odd figures of the first four centuries, with their sayings; then a chapter explaining the terms current among them, which is the earliest sustained lexicon of Sufi technical language; then the body of the work, some fifty chapters (abwāb) on the stations and the states; and last a chapter of counsel to aspirants. The individual chapter-headings are omitted deliberately: their number, order and wording differ between the manuscript families and the printed editions, and no single list would be true of the book as a whole.',
+            editions: [
+                {
+                    label: 'al-Risāla al-Qushayriyya fī ʿilm al-taṣawwuf (Cairo: al-Maṭbaʿa al-Sanīya al-Khedīwīya, 1867)',
+                    url: 'https://archive.org/details/AAlexandrina-223996',
+                    note: 'Arabic. One of the earliest Cairo printings, from the Bibliotheca Alexandrina\'s holdings, catalogued there under al-Qushayrī\'s name and the 1867 date of the Khedivial press. Alexander Knysh\'s complete English translation (2007) is in copyright; there is no public-domain English version.',
+                },
+            ],
+        },
+        {
+            slug: 'hayy-ibn-yaqzan-ibn-sina',
+            native: 'حي بن يقظان',
+            translit: 'Risālat Ḥayy ibn Yaqẓān',
+            english: 'The Epistle of Alive, Son of Awake',
+            author: 'Abū ʿAlī al-Ḥusayn Ibn Sīnā — Avicenna (c. 370–428/980–1037)',
+            date: 'Probably in the 410s/1020s; tradition places it during his imprisonment at the fortress of Fardajān, though the dating is not secure',
+            language: 'Arabic',
+            volume: null,
+            description: 'A short allegory, and the first of the three works that Henry Corbin grouped as Ibn Sīnā\'s visionary recitals — the others being the Epistle of the Bird and Salāmān and Absāl — in which he said in figures what his systematic works said in argument. The narrator, walking out from his city with companions, meets an old man of great beauty who is ageless: he is Ḥayy ibn Yaqẓān, Alive son of Awake, and he is the Active Intellect. He describes the regions of the world — a West of matter and darkness, an East of light — and offers to guide the narrator, on condition that he leave his companions, who are the faculties of the soul. Nothing in the tale is decoration: each figure has a doctrinal referent, and a commentary transmitted in Ibn Sīnā\'s own circle fixes them. It is the seed of a genre. Suhrawardī\'s symbolic tales descend from it, and Ibn Ṭufayl took its title outright for a book with an entirely different plot — the next item on this shelf, and the two should never be run together.',
+            incipit: null,
+            contents: null,
+            contentsNote: 'A continuous recital of a few thousand words, without divisions of any kind. Some manuscripts and modern editions insert headings; they are editorial and are not given here.',
+            editions: [
+                {
+                    label: 'A. F. Mehren (ed.), Traités mystiques d\'Abou Alî al-Hosain b. Abdallâh b. Sînâ ou d\'Avicenne (Leiden: Brill, 1889–99)',
+                    url: 'https://archive.org/details/traitsmystiques00avicgoog',
+                    note: 'Arabic text with French analysis, the fascicles bound together in this copy; the text of Ḥayy ibn Yaqẓān and Mehren\'s paraphrase of it have been confirmed present in this scan. Still the only public-domain edition of the visionary recitals — Corbin\'s study and translation (1954) is in copyright.',
+                },
+                {
+                    label: 'Rasāʾil Ibn Sīnā fī asrār al-ḥikma al-mashriqiyya, ed. A. F. Mehren (Leiden, 1889)',
+                    url: 'https://archive.org/details/elshandawily8247',
+                    note: 'Arabic. Mehren\'s series under its Arabic title-page; a second Internet Archive copy of the same undertaking, more comfortable for a reader who wants the Arabic alone.',
+                },
+            ],
+        },
+        {
+            slug: 'hayy-ibn-yaqzan-ibn-tufayl',
+            native: 'حي بن يقظان',
+            translit: 'Ḥayy ibn Yaqẓān',
+            english: 'Alive, Son of Awake — the Self-Taught Philosopher',
+            author: 'Abū Bakr Muḥammad ibn ʿAbd al-Malik Ibn Ṭufayl (c. 494–581/1105–1185), physician and secretary at the Almohad court',
+            date: 'al-Andalus or Marrakesh, c. 560–570/1165–1175',
+            language: 'Arabic',
+            volume: null,
+            description: 'Ibn Ṭufayl borrows Ibn Sīnā\'s title and his characters\' names and writes a wholly different book: the most famous philosophical novel in Arabic, and often called the first philosophical novel of any literature. A child grows up alone on an equatorial island — either generated spontaneously from fermenting clay or set adrift as an infant, and Ibn Ṭufayl gives both accounts and declines to choose — suckled by a gazelle, and by unaided observation and reflection, in seven-year stages, arrives at natural science, then at the necessity of a First Cause, then at ecstatic union with it. When Absāl arrives from a neighbouring island where a revealed religion is practised, the two find their conclusions identical; when Ḥayy goes back with him to preach, the islanders cannot follow, and he returns to his solitude having concluded that most people are better served by the plain letter of the law than by its inner sense. That is the ẓāhir/bāṭin question put as a story, and the answer is a conservative one. Edward Pococke the younger\'s Latin of 1671 made it famous in Europe, where Quakers and deists read it; its influence on Locke and on Defoe has been much argued and is probably overstated.',
+            incipit: {
+                native: 'سألت أيها الأخ الكريم الصفي الحميم، منحك الله البقاء الأبدي وأسعدك السعد السرمدي، أن أبث إليك ما أمكنني بثه من أسرار الحكمة المشرقية التي ذكرها الشيخ الرئيس أبو علي بن سينا',
+                english: 'You have asked me, noble brother, pure and beloved friend — may God grant you life everlasting and eternal felicity — that I disclose to you what I am able to disclose of the secrets of the Oriental Wisdom mentioned by the Shaykh, the Chief Master Abū ʿAlī ibn Sīnā.',
+                note: 'The opening address, standing immediately after the doxology with which the treatise begins. It announces the book as an answer to a request — the same convention al-Ghazālī uses in the Mishkāt — and it names Ibn Sīnā\'s \'Oriental Wisdom\' in its first sentence, which is precisely why the preceding item on this shelf and this one must be kept distinct. The wording given here has been checked against Arabic witnesses to the risāla; the interjected prayer is transmitted in more than one form, and some editions read abqāka Llāhu abadan wa-asʿadaka sarmadan for the clause given here.',
+            },
+            contents: null,
+            contentsNote: 'The narrative runs continuously, and Ibn Ṭufayl supplies no chapter divisions. It does have an internal architecture — a prologue on the philosophers who preceded him, the two alternative accounts of Ḥayy\'s origin, his development through seven seven-year periods to the age of fifty, the arrival of Absāl, the failed mission to Salāmān\'s island, and the return to solitude — but these are the joints of a story rather than headings, and printings that number them do so editorially.',
+            editions: [
+                {
+                    label: 'Edward Pococke the younger, Philosophus autodidactus, sive Epistola Abi Jaafar ebn Tophail de Hai ebn Yokdhan (Oxford: Sheldonian Theatre, 1700)',
+                    url: 'https://archive.org/details/b30536133',
+                    note: 'Arabic text with facing Latin — the second Oxford issue of the 1671 edition by which Europe met the book, and the version Leibniz, Boyle and the deists read. Wellcome Library copy, marked public domain.',
+                },
+                {
+                    label: 'Simon Ockley, The Improvement of Human Reason, Exhibited in the Life of Hai Ebn Yokdhan (London: E. Powell, 1708)',
+                    url: 'https://archive.org/details/improvementhuma00ocklgoog',
+                    note: 'The first English translation, made from Pococke\'s Arabic by the Cambridge Arabist, abridged in places and fitted with an appendix arguing that unaided reason is insufficient without revelation — an argument Ibn Ṭufayl would have found congenial in part.',
+                },
+                {
+                    label: 'Ockley\'s translation revised by Edward A. Van Dyck (Cairo: El-Maaref, 1905)',
+                    url: 'https://archive.org/details/cu31924028974479',
+                    note: 'A cleanly scanned twentieth-century printing, and the more comfortable copy for continuous reading — but it is Ockley\'s English as revised by Van Dyck, not Ockley\'s own text, and readers collating it against the 1708 edition will find differences.',
+                },
+            ],
+        },
+        {
+            slug: 'rahat-al-aql',
+            native: 'راحة العقل',
+            translit: 'Rāḥat al-ʿAql',
+            english: 'The Repose of the Intellect',
+            author: 'Aḥmad Ḥamīd al-Dīn al-Kirmānī (d. after 411/1020), chief Fatimid dāʿī in Iraq and Persia, styled Ḥujjat al-ʿIrāqayn',
+            date: 'Completed 411/1020',
+            language: 'Arabic',
+            volume: 'Seven ramparts, fifty-six paths',
+            description: 'The most systematic work of Ismāʿīlī philosophical theology, and the fullest statement anywhere of taʾwīl as a discipline rather than a habit. Al-Kirmānī writes for initiates of the Fatimid daʿwa, and shapes his book as a walled city: seven ramparts (aswār), pierced by fifty-six paths (mashāriʿ), through which the reader advances inward towards the repose the title promises. He replaces the Neoplatonic pair of Intellect and Soul with a scheme of ten intellects taken from al-Fārābī, and correlates them rank for rank with the hierarchy of the daʿwa itself, so that the order of the cosmos and the order of the mission become one structure seen twice. This is where taʾwīl becomes a formal method: scripture, ritual and the natural world are each led back — the verb means exactly that — to the intelligible realities they figure. Al-Kirmānī was also the scholar the Cairo court called on to answer, by argument, those who were then proclaiming the divinity of the caliph al-Ḥākim; his writings against that teaching did not carry the day, and the movement he wrote against became, within a few years, the beginning of the Druze faith, which has been a distinct and continuous religious community ever since. His writings were long preserved only within the Ismāʿīlī communities that transmitted them, and the Rāḥat al-ʿAql was not printed until 1952.',
+            incipit: null,
+            contents: null,
+            contentsNote: 'The architecture is well attested and worth stating: seven aswār — ramparts, or the walls of a city, answering to the Ismāʿīlī reckoning of seven — pierced by fifty-six mashāriʿ or paths, so that the reader passes inward from wall to wall. The subjects of the individual mashāriʿ are not set out here, because they cannot be stated reliably from the editions available; a list would be a plausible-looking guess, which is the one thing a table of contents must never be.',
+            editions: [
+                {
+                    label: 'Stanislas Guyard, Fragments relatifs à la doctrine des Ismaélîs (Paris: Imprimerie nationale, 1874)',
+                    url: 'https://archive.org/details/fragmentsrelati00guyagoog',
+                    note: 'Not the Rāḥat al-ʿAql, and offered only because no public-domain edition or translation of it exists — the book was first printed at Cairo in 1952 and re-edited at Beirut in 1967, both in copyright. Guyard\'s Arabic texts with French version are among the earliest European printings of Ismāʿīlī doctrinal writing and give a reader some sense of the idiom in which it works.',
+                },
+            ],
+        },
+    ],
+};
