@@ -93,6 +93,7 @@ function ThirdLampHeader() {
                     </div>
                 </div>
                 <Link to="/third-lamp/archive" aria-current={isActive('/third-lamp/archive')} onClick={closeAll}>Living Archive</Link>
+                <Link to="/third-lamp/education" aria-current={isActive('/third-lamp/education')} onClick={closeAll}>The Scriptorium</Link>
                 <Link to="/third-lamp/about" aria-current={isActive('/third-lamp/about')} onClick={closeAll}>About</Link>
                 <Link to="/third-lamp/contact" aria-current={isActive('/third-lamp/contact')} onClick={closeAll}>Contact</Link>
 

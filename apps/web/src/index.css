@@ -9356,3 +9356,1251 @@ h3 {
 .third-lamp-scope .lamp-post-tip-gate {
   margin: 1.6rem 0 0;
 }
+
+/* =====================================================================
+   The Scriptorium — education portal
+   ===================================================================== */
+
+@font-face {
+  font-family: "TL Hieroglyphs";
+  src: url("/fonts/NotoSansEgyptianHieroglyphs.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+13000-1342F;
+}
+
+/* Native-script text throughout the portal. The hieroglyph face carries a
+   unicode-range, so it only ever claims the Egyptian block; everything else
+   falls through to serifs with good polytonic Greek and Hebrew coverage. */
+.edu-page .edu-glyph {
+  font-family: "TL Hieroglyphs", "Palatino", "Palatino Linotype", "Book Antiqua", "Times New Roman", serif;
+}
+
+.edu-main {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 clamp(1.25rem, 4vw, 2.5rem) 5rem;
+}
+
+/* --- hero ------------------------------------------------------------- */
+.edu-hero {
+  text-align: center;
+  padding: clamp(5rem, 10vw, 8rem) 0 clamp(2.5rem, 5vw, 4rem);
+}
+.edu-hero h1 {
+  margin: 0.4em 0 0.35em;
+  color: #f4f0e7;
+  text-shadow: 0 0 22px rgba(209, 173, 104, 0.22), 0 6px 26px rgba(0, 0, 0, 0.5);
+}
+.edu-hero-sub {
+  max-width: 44rem;
+  margin: 0 auto;
+  color: rgba(222, 212, 196, 0.78);
+  font-size: 1.06rem;
+  line-height: 1.75;
+}
+.edu-hero-glyphs {
+  display: flex;
+  justify-content: center;
+  gap: clamp(1.2rem, 4vw, 2.6rem);
+  margin-top: 2.2rem;
+  font-size: clamp(1.6rem, 3.5vw, 2.2rem);
+  color: rgba(209, 173, 104, 0.55);
+}
+
+/* --- shared section heads --------------------------------------------- */
+.edu-section-head {
+  text-align: center;
+  max-width: 46rem;
+  margin: clamp(3rem, 7vw, 5rem) auto 2.2rem;
+}
+.edu-section-head h2 {
+  margin: 0.3em 0 0.4em;
+  color: #ecd9ae;
+}
+.edu-section-head p:not(.kicker) {
+  color: rgba(222, 212, 196, 0.72);
+  line-height: 1.7;
+}
+
+/* --- language hall cards ---------------------------------------------- */
+.edu-hall-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1.4rem;
+}
+.edu-hall-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.55rem;
+  padding: 2.2rem 1.4rem 1.8rem;
+  border: 1px solid rgba(179, 139, 70, 0.28);
+  background: linear-gradient(180deg, rgba(24, 20, 14, 0.85), rgba(12, 10, 8, 0.9));
+  text-decoration: none;
+  transition: transform 240ms ease, border-color 240ms ease, box-shadow 240ms ease;
+}
+.edu-hall-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(209, 173, 104, 0.6);
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.45);
+}
+.edu-hall-glyph {
+  font-size: 3.2rem;
+  line-height: 1;
+  color: #d1ad68;
+  text-shadow: 0 0 26px rgba(209, 173, 104, 0.35);
+}
+.edu-hall-card h3 {
+  margin: 0.35em 0 0;
+  color: #f4f0e7;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+.edu-hall-sample {
+  color: rgba(209, 173, 104, 0.8);
+  font-size: 1.05rem;
+  font-style: italic;
+  margin: 0;
+}
+.edu-hall-blurb {
+  color: rgba(222, 212, 196, 0.68);
+  font-size: 0.92rem;
+  line-height: 1.65;
+  margin: 0;
+}
+.edu-hall-enter {
+  margin-top: auto;
+  padding-top: 0.9rem;
+  color: rgba(209, 173, 104, 0.75);
+  font-size: 0.82rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+/* --- reading room ------------------------------------------------------ */
+.edu-filter-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.55rem;
+  margin-bottom: 1.8rem;
+}
+.edu-filter {
+  border: 1px solid rgba(179, 139, 70, 0.35);
+  background: transparent;
+  color: rgba(222, 212, 196, 0.75);
+  padding: 0.42rem 0.95rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: color 180ms ease, border-color 180ms ease, background 180ms ease;
+}
+.edu-filter:hover { border-color: rgba(209, 173, 104, 0.65); color: #ecd9ae; }
+.edu-filter.is-active {
+  background: rgba(179, 139, 70, 0.16);
+  border-color: rgba(209, 173, 104, 0.75);
+  color: #ecd9ae;
+}
+.edu-book-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.4rem;
+}
+.edu-book-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1.6rem 1.5rem 1.4rem;
+  border: 1px solid rgba(179, 139, 70, 0.22);
+  background: rgba(16, 13, 10, 0.82);
+}
+.edu-book-tradition {
+  margin: 0;
+  color: rgba(209, 173, 104, 0.85);
+  font-size: 0.72rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+}
+.edu-book-card h3 {
+  margin: 0;
+  color: #f0e9da;
+  font-size: 1.18rem;
+  line-height: 1.35;
+}
+.edu-book-byline {
+  margin: 0;
+  color: rgba(222, 212, 196, 0.6);
+  font-size: 0.88rem;
+  font-style: italic;
+}
+.edu-book-desc {
+  margin: 0.2rem 0 0;
+  color: rgba(222, 212, 196, 0.72);
+  font-size: 0.92rem;
+  line-height: 1.65;
+}
+.edu-book-actions {
+  margin-top: auto;
+  padding-top: 1rem;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.8rem;
+}
+.edu-book-download {
+  color: #d1ad68;
+  text-decoration: none;
+  font-size: 0.85rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  border-bottom: 1px solid rgba(209, 173, 104, 0.45);
+  padding-bottom: 2px;
+  transition: color 180ms ease, border-color 180ms ease;
+}
+.edu-book-download:hover { color: #ecd9ae; border-color: #ecd9ae; }
+.edu-book-source {
+  color: rgba(222, 212, 196, 0.5);
+  font-size: 0.78rem;
+  text-decoration: none;
+}
+.edu-book-source:hover { color: rgba(222, 212, 196, 0.8); }
+
+/* --- alphabet ----------------------------------------------------------- */
+.edu-letter-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(96px, 1fr));
+  gap: 0.7rem;
+}
+.edu-letter-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.15rem;
+  padding: 0.9rem 0.4rem 0.75rem;
+  border: 1px solid rgba(179, 139, 70, 0.22);
+  background: rgba(16, 13, 10, 0.8);
+  color: inherit;
+  cursor: pointer;
+  transition: border-color 180ms ease, background 180ms ease, transform 180ms ease;
+}
+.edu-letter-card:hover { border-color: rgba(209, 173, 104, 0.6); transform: translateY(-2px); }
+.edu-letter-card.is-selected {
+  border-color: rgba(209, 173, 104, 0.85);
+  background: rgba(179, 139, 70, 0.14);
+}
+.edu-letter-card.is-archaic .edu-letter-name { color: rgba(209, 173, 104, 0.6); }
+.edu-letter-glyph {
+  font-size: 1.9rem;
+  line-height: 1.25;
+  color: #ecd9ae;
+}
+.edu-letter-name {
+  font-size: 0.74rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(222, 212, 196, 0.78);
+}
+.edu-letter-translit {
+  font-size: 0.74rem;
+  font-style: italic;
+  color: rgba(209, 173, 104, 0.7);
+}
+
+.edu-letter-plaque {
+  display: grid;
+  grid-template-columns: minmax(120px, 200px) 1fr;
+  gap: clamp(1.2rem, 3vw, 2.4rem);
+  align-items: center;
+  margin-top: 1.6rem;
+  padding: clamp(1.4rem, 3vw, 2.2rem);
+  border: 1px solid rgba(209, 173, 104, 0.4);
+  background: linear-gradient(135deg, rgba(28, 22, 15, 0.92), rgba(14, 11, 9, 0.95));
+}
+.edu-plaque-glyph {
+  font-size: clamp(4rem, 9vw, 6.5rem);
+  line-height: 1.1;
+  text-align: center;
+  color: #d1ad68;
+  text-shadow: 0 0 34px rgba(209, 173, 104, 0.3);
+}
+.edu-plaque-final { opacity: 0.65; }
+.edu-plaque-body h3 {
+  margin: 0 0 0.6em;
+  color: #f4f0e7;
+  font-size: 1.4rem;
+  display: flex;
+  align-items: baseline;
+  gap: 0.7rem;
+  flex-wrap: wrap;
+}
+.edu-plaque-badge {
+  font-size: 0.68rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: rgba(209, 173, 104, 0.8);
+  border: 1px solid rgba(209, 173, 104, 0.4);
+  padding: 0.15rem 0.5rem;
+}
+.edu-plaque-body dl {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 2rem;
+  margin: 0 0 0.8rem;
+}
+.edu-plaque-body dl > div { display: flex; gap: 0.5rem; align-items: baseline; }
+.edu-plaque-body dt {
+  font-size: 0.7rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: rgba(209, 173, 104, 0.7);
+}
+.edu-plaque-body dd { margin: 0; color: rgba(240, 233, 218, 0.9); }
+.edu-plaque-note {
+  margin: 0;
+  color: rgba(222, 212, 196, 0.75);
+  line-height: 1.7;
+  font-style: italic;
+}
+
+/* --- divine names ------------------------------------------------------- */
+.edu-name-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+.edu-name-row {
+  display: grid;
+  grid-template-columns: minmax(140px, 230px) 1fr;
+  gap: clamp(1rem, 3vw, 2.2rem);
+  align-items: center;
+  padding: 1.4rem 0.4rem;
+  border-top: 1px solid rgba(179, 139, 70, 0.18);
+}
+.edu-name-row:last-child { border-bottom: 1px solid rgba(179, 139, 70, 0.18); }
+.edu-name-native {
+  font-size: clamp(1.6rem, 4vw, 2.3rem);
+  line-height: 1.3;
+  text-align: center;
+  color: #ecd9ae;
+}
+.edu-name-body h3 {
+  margin: 0 0 0.3em;
+  color: #f0e9da;
+  font-size: 1.12rem;
+  display: flex;
+  align-items: baseline;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+.edu-name-english { color: rgba(222, 212, 196, 0.65); font-weight: 400; }
+.edu-name-value {
+  font-size: 0.78rem;
+  color: #d1ad68;
+  border: 1px solid rgba(209, 173, 104, 0.45);
+  padding: 0.1rem 0.5rem;
+  letter-spacing: 0.08em;
+}
+.edu-name-meaning { margin: 0 0 0.25rem; color: rgba(240, 233, 218, 0.85); }
+.edu-name-note { margin: 0; color: rgba(222, 212, 196, 0.6); font-size: 0.9rem; line-height: 1.65; }
+
+/* --- lexicon ------------------------------------------------------------ */
+.edu-lexicon-search {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  max-width: 34rem;
+  margin: 0 auto 1.6rem;
+}
+.edu-lexicon-search input {
+  flex: 1;
+  background: rgba(16, 13, 10, 0.85);
+  border: 1px solid rgba(179, 139, 70, 0.35);
+  color: #f0e9da;
+  padding: 0.7rem 1rem;
+  font: inherit;
+}
+.edu-lexicon-search input:focus {
+  outline: none;
+  border-color: rgba(209, 173, 104, 0.75);
+}
+.edu-lexicon-count { color: rgba(209, 173, 104, 0.6); font-size: 0.82rem; white-space: nowrap; }
+.edu-lex-list { list-style: none; margin: 0; padding: 0; }
+.edu-lex-row {
+  display: grid;
+  grid-template-columns: minmax(150px, 240px) 1fr;
+  gap: 1rem 2rem;
+  padding: 1rem 0.4rem;
+  border-top: 1px solid rgba(179, 139, 70, 0.14);
+}
+.edu-lex-term { display: flex; flex-direction: column; gap: 0.15rem; }
+.edu-lex-native { font-size: 1.25rem; color: #ecd9ae; }
+.edu-lex-translit { font-style: italic; color: rgba(209, 173, 104, 0.75); font-size: 0.9rem; }
+.edu-lex-def p { margin: 0 0 0.3rem; color: rgba(222, 212, 196, 0.78); line-height: 1.65; }
+.edu-lex-domain {
+  font-size: 0.68rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(209, 173, 104, 0.6);
+}
+.edu-lex-empty { padding: 1.4rem 0.4rem; color: rgba(222, 212, 196, 0.6); font-style: italic; }
+
+/* --- hall-to-hall nav --------------------------------------------------- */
+.edu-hall-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: clamp(3rem, 6vw, 4.5rem);
+}
+.edu-hall-nav a {
+  color: rgba(222, 212, 196, 0.75);
+  text-decoration: none;
+  border: 1px solid rgba(179, 139, 70, 0.3);
+  padding: 0.6rem 1.2rem;
+  letter-spacing: 0.1em;
+  transition: border-color 180ms ease, color 180ms ease;
+}
+.edu-hall-nav a:hover { border-color: rgba(209, 173, 104, 0.7); color: #ecd9ae; }
+.edu-hall-nav .edu-glyph { color: #d1ad68; margin-right: 0.35rem; }
+
+/* --- small screens ------------------------------------------------------ */
+@media (max-width: 640px) {
+  .edu-letter-plaque { grid-template-columns: 1fr; text-align: center; }
+  .edu-plaque-body h3 { justify-content: center; }
+  .edu-plaque-body dl { justify-content: center; }
+  .edu-name-row { grid-template-columns: 1fr; text-align: center; }
+  .edu-name-body h3 { justify-content: center; }
+  .edu-lex-row { grid-template-columns: 1fr; gap: 0.4rem; }
+  .edu-lex-term { flex-direction: row; align-items: baseline; gap: 0.7rem; }
+}
+
+/* --- Scriptorium second wave: nav, numbers, reckoner, readings, drill --- */
+
+.edu-section-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.4rem 1.4rem;
+  margin-top: 2rem;
+}
+.edu-section-nav a {
+  color: rgba(209, 173, 104, 0.75);
+  text-decoration: none;
+  font-size: 0.78rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  border-bottom: 1px solid transparent;
+  padding-bottom: 2px;
+  transition: color 180ms ease, border-color 180ms ease;
+}
+.edu-section-nav a:hover { color: #ecd9ae; border-color: rgba(209, 173, 104, 0.5); }
+
+/* numbers */
+.edu-digit-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(86px, 1fr));
+  gap: 0.6rem;
+}
+.edu-digit-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.1rem;
+  padding: 0.75rem 0.3rem 0.6rem;
+  border: 1px solid rgba(179, 139, 70, 0.2);
+  background: rgba(16, 13, 10, 0.8);
+}
+.edu-digit-glyph { font-size: 1.7rem; line-height: 1.25; color: #ecd9ae; }
+.edu-digit-value { font-size: 0.82rem; color: rgba(209, 173, 104, 0.85); }
+.edu-digit-name {
+  font-size: 0.66rem;
+  text-align: center;
+  color: rgba(222, 212, 196, 0.55);
+  line-height: 1.3;
+}
+.edu-num-examples {
+  list-style: none;
+  margin: 1.6rem 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+.edu-num-examples li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.4rem 1rem;
+  padding: 0.75rem 0.4rem;
+  border-top: 1px solid rgba(179, 139, 70, 0.14);
+}
+.edu-num-examples li:last-child { border-bottom: 1px solid rgba(179, 139, 70, 0.14); }
+.edu-num-native { font-size: 1.35rem; color: #ecd9ae; }
+.edu-num-eq { color: #d1ad68; white-space: nowrap; }
+.edu-num-note { color: rgba(222, 212, 196, 0.65); font-size: 0.9rem; line-height: 1.6; flex: 1 1 24rem; }
+.edu-num-special {
+  margin: 1.2rem auto 0;
+  max-width: 44rem;
+  text-align: center;
+  color: rgba(222, 212, 196, 0.65);
+  font-style: italic;
+  line-height: 1.65;
+}
+
+/* reckoner */
+.edu-reckoner-body { max-width: 34rem; margin: 0 auto; }
+.edu-reckoner-input {
+  width: 100%;
+  background: rgba(16, 13, 10, 0.85);
+  border: 1px solid rgba(179, 139, 70, 0.4);
+  color: #f0e9da;
+  padding: 0.85rem 1.1rem;
+  font-size: 1.25rem;
+  text-align: center;
+}
+.edu-reckoner-input:focus { outline: none; border-color: rgba(209, 173, 104, 0.8); }
+.edu-reckoner-result { margin-top: 1.2rem; text-align: center; }
+.edu-reckoner-breakdown {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.55rem;
+  margin-bottom: 0.9rem;
+}
+.edu-reckoner-pair {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.05rem;
+  min-width: 2rem;
+  padding: 0.35rem 0.45rem;
+  border: 1px solid rgba(179, 139, 70, 0.25);
+}
+.edu-reckoner-pair .edu-glyph { font-size: 1.35rem; color: #ecd9ae; }
+.edu-reckoner-v { font-size: 0.72rem; color: rgba(209, 173, 104, 0.8); }
+.edu-reckoner-total { margin: 0; color: rgba(222, 212, 196, 0.8); letter-spacing: 0.08em; }
+.edu-reckoner-total strong { color: #d1ad68; font-size: 1.5rem; margin-left: 0.3rem; }
+.edu-reckoner-hiero { font-size: 2rem; line-height: 1.5; color: #ecd9ae; margin: 0 0 0.5rem; word-break: break-all; }
+.edu-reckoner-ignored { margin: 0.5rem 0 0; color: rgba(222, 212, 196, 0.5); font-size: 0.85rem; font-style: italic; }
+
+/* readings */
+.edu-reading-list { display: flex; flex-direction: column; gap: 1.6rem; }
+.edu-reading {
+  padding: clamp(1.4rem, 3vw, 2.2rem);
+  border: 1px solid rgba(179, 139, 70, 0.25);
+  background: rgba(16, 13, 10, 0.82);
+  text-align: center;
+}
+.edu-reading h3 { margin: 0 0 0.25em; color: #f0e9da; font-size: 1.25rem; }
+.edu-reading-source {
+  margin: 0 0 1.1rem;
+  color: rgba(209, 173, 104, 0.7);
+  font-size: 0.78rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+.edu-reading-grid {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  margin: 0 auto 1.2rem;
+  font-size: 1.5rem;
+  letter-spacing: 0.55em;
+  padding-left: 0.55em; /* balance the trailing letter-spacing */
+  color: #d1ad68;
+}
+.edu-reading-words {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem 1.6rem;
+  margin-bottom: 1.2rem;
+}
+.edu-reading-word {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.15rem;
+  max-width: 11rem;
+}
+.edu-reading-native { font-size: 1.5rem; color: #ecd9ae; line-height: 1.35; }
+.edu-reading-translit { font-style: italic; color: rgba(209, 173, 104, 0.75); font-size: 0.88rem; }
+.edu-reading-gloss { color: rgba(222, 212, 196, 0.6); font-size: 0.8rem; line-height: 1.4; }
+.edu-reading-translation {
+  margin: 0 auto 0.6rem;
+  max-width: 38rem;
+  color: rgba(240, 233, 218, 0.9);
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+.edu-reading-note {
+  margin: 0 auto;
+  max-width: 40rem;
+  color: rgba(222, 212, 196, 0.6);
+  font-size: 0.88rem;
+  line-height: 1.65;
+  font-style: italic;
+}
+
+/* drill */
+.edu-drill-stage {
+  max-width: 30rem;
+  margin: 0 auto;
+  text-align: center;
+  padding: 1.8rem clamp(1rem, 3vw, 2rem);
+  border: 1px solid rgba(179, 139, 70, 0.25);
+  background: rgba(16, 13, 10, 0.82);
+}
+.edu-drill-start, .edu-drill-next {
+  border: 1px solid rgba(209, 173, 104, 0.6);
+  background: rgba(179, 139, 70, 0.14);
+  color: #ecd9ae;
+  padding: 0.7rem 1.6rem;
+  font: inherit;
+  font-size: 0.85rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 180ms ease, border-color 180ms ease;
+}
+.edu-drill-start:hover, .edu-drill-next:hover { background: rgba(179, 139, 70, 0.26); border-color: #ecd9ae; }
+.edu-drill-progress {
+  margin: 0 0 0.8rem;
+  color: rgba(209, 173, 104, 0.65);
+  font-size: 0.78rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+.edu-drill-glyph {
+  font-size: clamp(3.4rem, 8vw, 5rem);
+  line-height: 1.15;
+  color: #d1ad68;
+  text-shadow: 0 0 30px rgba(209, 173, 104, 0.3);
+  margin-bottom: 1.2rem;
+}
+.edu-drill-options {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.6rem;
+}
+.edu-drill-option {
+  border: 1px solid rgba(179, 139, 70, 0.35);
+  background: transparent;
+  color: rgba(240, 233, 218, 0.85);
+  padding: 0.65rem 0.6rem;
+  font: inherit;
+  cursor: pointer;
+  transition: border-color 160ms ease, background 160ms ease;
+}
+.edu-drill-option:hover:not(:disabled) { border-color: rgba(209, 173, 104, 0.7); }
+.edu-drill-option:disabled { cursor: default; opacity: 0.75; }
+.edu-drill-option.is-right { border-color: rgba(159, 191, 81, 0.8); color: #cfe3a1; opacity: 1; }
+.edu-drill-option.is-wrong { border-color: rgba(191, 90, 70, 0.8); color: #e0a294; }
+.edu-drill-after { margin-top: 1.1rem; }
+.edu-drill-answer { margin: 0 0 0.8rem; color: rgba(222, 212, 196, 0.8); }
+.edu-drill-score { margin: 0 0 0.4rem; font-size: 2.4rem; color: #d1ad68; }
+.edu-drill-verdict { margin: 0 0 1.2rem; color: rgba(222, 212, 196, 0.75); font-style: italic; line-height: 1.65; }
+
+@media (max-width: 640px) {
+  .edu-reading-words { gap: 0.8rem 1rem; }
+  .edu-drill-options { grid-template-columns: 1fr; }
+}
+.edu-corr-note {
+  margin: 1.4rem auto 0;
+  max-width: 46rem;
+  text-align: center;
+  color: rgba(222, 212, 196, 0.55);
+  font-size: 0.85rem;
+  line-height: 1.7;
+  font-style: italic;
+}
+
+/* --- Scriptorium courses ------------------------------------------------ */
+.edu-course-banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  text-align: center;
+  margin: clamp(2rem, 4vw, 3rem) auto 0;
+  max-width: 46rem;
+  padding: 1.8rem clamp(1.2rem, 3vw, 2.4rem);
+  border: 1px solid rgba(209, 173, 104, 0.45);
+  background: linear-gradient(135deg, rgba(30, 24, 16, 0.92), rgba(14, 11, 9, 0.95));
+  text-decoration: none;
+  transition: border-color 220ms ease, transform 220ms ease, box-shadow 220ms ease;
+}
+.edu-course-banner:hover {
+  border-color: rgba(236, 217, 174, 0.8);
+  transform: translateY(-3px);
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.45);
+}
+.edu-course-banner-kicker {
+  color: rgba(209, 173, 104, 0.75);
+  font-size: 0.72rem;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+}
+.edu-course-banner-title { color: #f0e9da; font-size: 1.35rem; }
+.edu-course-banner-line { color: rgba(222, 212, 196, 0.7); font-size: 0.92rem; line-height: 1.6; }
+.edu-course-banner-enter {
+  margin-top: 0.5rem;
+  color: rgba(209, 173, 104, 0.85);
+  font-size: 0.8rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.edu-course-tagline {
+  margin: 0 auto;
+  max-width: 40rem;
+  color: rgba(209, 173, 104, 0.8);
+  font-style: italic;
+  font-size: 1.05rem;
+}
+.edu-syllabus { max-width: 52rem; margin: 0 auto; }
+.edu-syllabus-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem 1.6rem;
+  margin: 1.8rem 0 2rem;
+}
+.edu-course-begin {
+  border: 1px solid rgba(209, 173, 104, 0.6);
+  background: rgba(179, 139, 70, 0.14);
+  color: #ecd9ae;
+  padding: 0.75rem 1.7rem;
+  text-decoration: none;
+  font-size: 0.85rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  transition: background 180ms ease, border-color 180ms ease;
+}
+.edu-course-begin:hover { background: rgba(179, 139, 70, 0.26); border-color: #ecd9ae; }
+.edu-syllabus-progress { color: rgba(222, 212, 196, 0.6); font-size: 0.85rem; letter-spacing: 0.08em; }
+.edu-syllabus-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 0.7rem; }
+.edu-syllabus-row {
+  display: grid;
+  grid-template-columns: 3rem 1fr;
+  gap: 1rem;
+  align-items: center;
+  padding: 1.1rem 1.2rem;
+  border: 1px solid rgba(179, 139, 70, 0.25);
+  background: rgba(16, 13, 10, 0.82);
+  text-decoration: none;
+  transition: border-color 200ms ease, transform 200ms ease;
+}
+.edu-syllabus-row:hover { border-color: rgba(209, 173, 104, 0.65); transform: translateX(4px); }
+.edu-syllabus-row.is-done { border-color: rgba(159, 191, 81, 0.4); }
+.edu-syllabus-n {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.6rem;
+  height: 2.6rem;
+  border: 1px solid rgba(209, 173, 104, 0.45);
+  border-radius: 50%;
+  color: #d1ad68;
+  font-size: 1.05rem;
+}
+.edu-syllabus-row.is-done .edu-syllabus-n { color: #b6cf8d; border-color: rgba(159, 191, 81, 0.55); }
+.edu-syllabus-body { display: flex; flex-direction: column; gap: 0.2rem; }
+.edu-syllabus-title { color: #f0e9da; font-size: 1.08rem; }
+.edu-syllabus-aim { color: rgba(222, 212, 196, 0.62); font-size: 0.88rem; line-height: 1.55; }
+
+.edu-lesson { max-width: 46rem; margin: 0 auto; }
+.edu-lesson-head { text-align: center; margin-bottom: 2.4rem; }
+.edu-lesson-head h2 { margin: 0.3em 0 0.4em; color: #ecd9ae; }
+.edu-lesson-aim { margin: 0 auto; max-width: 38rem; color: rgba(222, 212, 196, 0.7); font-style: italic; line-height: 1.65; }
+.edu-lesson-section { margin-bottom: 2.4rem; }
+.edu-lesson-section h3 {
+  margin: 0 0 0.8em;
+  color: #d1ad68;
+  font-size: 1.15rem;
+  letter-spacing: 0.06em;
+}
+.edu-lesson-section > p { color: rgba(232, 224, 208, 0.85); line-height: 1.8; margin: 0 0 1em; }
+.edu-lesson-examples { justify-content: flex-start; margin-top: 1.2rem; }
+.edu-example-note { color: rgba(222, 212, 196, 0.45); font-size: 0.72rem; line-height: 1.4; font-style: italic; max-width: 11rem; }
+.edu-vocab-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 0.6rem;
+}
+.edu-vocab-list li {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  padding: 0.7rem 0.9rem;
+  border: 1px solid rgba(179, 139, 70, 0.2);
+  background: rgba(16, 13, 10, 0.8);
+}
+.edu-vocab-native { font-size: 1.25rem; color: #ecd9ae; }
+.edu-vocab-translit { font-style: italic; color: rgba(209, 173, 104, 0.75); font-size: 0.85rem; }
+.edu-vocab-gloss { color: rgba(222, 212, 196, 0.7); font-size: 0.85rem; }
+.edu-exercise-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 1.1rem; }
+.edu-exercise {
+  padding: 1.1rem 1.2rem;
+  border: 1px solid rgba(179, 139, 70, 0.2);
+  background: rgba(16, 13, 10, 0.8);
+}
+.edu-exercise-prompt { margin: 0 0 0.4rem; color: rgba(240, 233, 218, 0.9); line-height: 1.65; }
+.edu-exercise-n { color: #d1ad68; margin-right: 0.3rem; }
+.edu-exercise-hint { margin: 0 0 0.5rem; color: rgba(222, 212, 196, 0.55); font-size: 0.85rem; font-style: italic; }
+.edu-exercise-reveal {
+  border: none;
+  background: none;
+  color: rgba(209, 173, 104, 0.8);
+  font: inherit;
+  font-size: 0.8rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 0;
+  border-bottom: 1px solid rgba(209, 173, 104, 0.4);
+}
+.edu-exercise-reveal:hover { color: #ecd9ae; }
+.edu-exercise-answer {
+  margin: 0.7rem 0 0;
+  padding-top: 0.7rem;
+  border-top: 1px solid rgba(179, 139, 70, 0.18);
+  color: rgba(222, 212, 196, 0.85);
+  line-height: 1.7;
+}
+.edu-lesson-foot {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 2.6rem;
+  padding-top: 1.6rem;
+  border-top: 1px solid rgba(179, 139, 70, 0.25);
+}
+.edu-lesson-done {
+  border: 1px solid rgba(209, 173, 104, 0.55);
+  background: transparent;
+  color: #ecd9ae;
+  padding: 0.6rem 1.3rem;
+  font: inherit;
+  font-size: 0.82rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 180ms ease, border-color 180ms ease, color 180ms ease;
+}
+.edu-lesson-done:hover { background: rgba(179, 139, 70, 0.16); }
+.edu-lesson-done.is-done { border-color: rgba(159, 191, 81, 0.6); color: #b6cf8d; }
+.edu-lesson-nav { display: flex; gap: 1.4rem; }
+.edu-lesson-nav a { color: rgba(209, 173, 104, 0.85); text-decoration: none; letter-spacing: 0.06em; }
+.edu-lesson-nav a:hover { color: #ecd9ae; }
+.edu-course-finis {
+  margin: 2rem auto 0;
+  max-width: 34rem;
+  text-align: center;
+  color: rgba(222, 212, 196, 0.75);
+  font-style: italic;
+  line-height: 1.7;
+}
+@media (max-width: 640px) {
+  .edu-lesson-foot { flex-direction: column; align-items: stretch; text-align: center; }
+  .edu-lesson-nav { justify-content: space-between; }
+}
+
+/* --- Scriptorium corpora: the shelf of primary books -------------------- */
+.edu-corpus-index {
+  max-width: 52rem;
+  margin: 0 auto clamp(2.5rem, 5vw, 4rem);
+  padding: 1.6rem clamp(1.2rem, 3vw, 2rem);
+  border: 1px solid rgba(209, 173, 104, 0.35);
+  background: linear-gradient(180deg, rgba(26, 21, 15, 0.9), rgba(13, 11, 9, 0.92));
+  scroll-margin-top: 6rem;
+}
+.edu-corpus-index-label {
+  margin: 0 0 1rem;
+  text-align: center;
+  color: rgba(209, 173, 104, 0.8);
+  font-size: 0.72rem;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+}
+.edu-corpus-index ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 0.3rem;
+}
+.edu-corpus-index a {
+  display: grid;
+  grid-template-columns: 2rem 1fr;
+  gap: 0.7rem;
+  align-items: baseline;
+  padding: 0.5rem 0.6rem;
+  text-decoration: none;
+  border: 1px solid transparent;
+  transition: border-color 180ms ease, background 180ms ease;
+}
+.edu-corpus-index a:hover {
+  border-color: rgba(209, 173, 104, 0.4);
+  background: rgba(179, 139, 70, 0.08);
+}
+.edu-corpus-index-n {
+  color: rgba(209, 173, 104, 0.7);
+  font-size: 0.82rem;
+  text-align: right;
+}
+.edu-corpus-index-body { display: flex; flex-direction: column; gap: 0.1rem; }
+.edu-corpus-index-native { color: #ecd9ae; font-size: 1.05rem; line-height: 1.35; }
+.edu-corpus-index-english { color: rgba(222, 212, 196, 0.72); font-size: 0.88rem; line-height: 1.45; }
+
+.edu-work-list { display: flex; flex-direction: column; gap: 1.6rem; }
+.edu-work {
+  padding: clamp(1.4rem, 3vw, 2.2rem);
+  border: 1px solid rgba(179, 139, 70, 0.25);
+  background: rgba(16, 13, 10, 0.82);
+  scroll-margin-top: 6rem;
+}
+.edu-work-head { text-align: center; margin-bottom: 1.2rem; }
+.edu-work-native {
+  margin: 0 0 0.3em;
+  color: #ecd9ae;
+  font-size: clamp(1.4rem, 3.4vw, 1.9rem);
+  line-height: 1.35;
+}
+.edu-work-titles {
+  margin: 0 0 0.4rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: baseline;
+  gap: 0.2rem 0.7rem;
+}
+.edu-work-translit { color: rgba(209, 173, 104, 0.8); font-style: italic; }
+.edu-work-english { color: rgba(240, 233, 218, 0.9); }
+.edu-work-meta {
+  margin: 0;
+  color: rgba(222, 212, 196, 0.55);
+  font-size: 0.8rem;
+  letter-spacing: 0.06em;
+  line-height: 1.6;
+}
+.edu-work-desc {
+  margin: 0 auto 1.2rem;
+  max-width: 42rem;
+  color: rgba(232, 224, 208, 0.82);
+  line-height: 1.75;
+}
+.edu-work-incipit {
+  margin: 0 auto 1.2rem;
+  max-width: 40rem;
+  padding: 1rem 1.2rem;
+  border-left: 2px solid rgba(209, 173, 104, 0.45);
+  background: rgba(28, 22, 15, 0.5);
+  text-align: center;
+}
+.edu-incipit-native { margin: 0 0 0.5rem; color: #ecd9ae; font-size: 1.2rem; line-height: 1.6; }
+.edu-incipit-english { margin: 0 0 0.4rem; color: rgba(240, 233, 218, 0.85); line-height: 1.65; }
+.edu-incipit-note { margin: 0; color: rgba(222, 212, 196, 0.55); font-size: 0.85rem; font-style: italic; }
+
+.edu-work-toc { text-align: center; margin-bottom: 0.9rem; }
+.edu-work-toc-toggle {
+  border: 1px solid rgba(209, 173, 104, 0.45);
+  background: transparent;
+  color: rgba(236, 217, 174, 0.9);
+  padding: 0.5rem 1.2rem;
+  font: inherit;
+  font-size: 0.78rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 180ms ease, border-color 180ms ease;
+}
+.edu-work-toc-toggle:hover { background: rgba(179, 139, 70, 0.16); border-color: #ecd9ae; }
+.edu-toc-list {
+  list-style: none;
+  margin: 1.1rem auto 0;
+  padding: 0;
+  max-width: 40rem;
+  text-align: left;
+  counter-reset: tocitem;
+}
+.edu-toc-list li {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  padding: 0.6rem 0.4rem 0.6rem 2.2rem;
+  border-top: 1px solid rgba(179, 139, 70, 0.14);
+  position: relative;
+  counter-increment: tocitem;
+}
+.edu-toc-list li::before {
+  content: counter(tocitem) ".";
+  position: absolute;
+  left: 0.3rem;
+  top: 0.62rem;
+  color: rgba(209, 173, 104, 0.6);
+  font-size: 0.8rem;
+}
+.edu-toc-heading { color: #ecd9ae; line-height: 1.5; }
+.edu-toc-english { color: rgba(222, 212, 196, 0.65); font-size: 0.88rem; line-height: 1.5; }
+.edu-work-contents-note {
+  margin: 0 auto 1rem;
+  max-width: 40rem;
+  text-align: center;
+  color: rgba(222, 212, 196, 0.5);
+  font-size: 0.85rem;
+  font-style: italic;
+  line-height: 1.65;
+}
+.edu-work-editions {
+  list-style: none;
+  margin: 0 auto 1rem;
+  padding: 0;
+  max-width: 40rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  text-align: center;
+}
+.edu-work-editions a {
+  color: #d1ad68;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(209, 173, 104, 0.4);
+  padding-bottom: 1px;
+}
+.edu-work-editions a:hover { color: #ecd9ae; border-color: #ecd9ae; }
+.edu-edition-note { display: block; color: rgba(222, 212, 196, 0.5); font-size: 0.8rem; line-height: 1.5; }
+.edu-work-back {
+  display: block;
+  text-align: center;
+  color: rgba(209, 173, 104, 0.55);
+  font-size: 0.75rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.edu-work-back:hover { color: #ecd9ae; }
+
+/* --- competing etymologies on a divine name ---------------------------- */
+.edu-proposals { margin: 0.5rem 0 0.6rem; }
+.edu-proposals > summary {
+  cursor: pointer;
+  color: rgba(209, 173, 104, 0.85);
+  font-size: 0.78rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  list-style: none;
+}
+.edu-proposals > summary::-webkit-details-marker { display: none; }
+.edu-proposals > summary::before { content: '▸ '; color: rgba(209, 173, 104, 0.6); }
+.edu-proposals[open] > summary::before { content: '▾ '; }
+.edu-proposals > summary:hover { color: #ecd9ae; }
+.edu-proposals-note {
+  margin: 0.7rem 0 0.5rem;
+  color: rgba(222, 212, 196, 0.6);
+  font-size: 0.85rem;
+  font-style: italic;
+  line-height: 1.6;
+}
+.edu-proposal-list {
+  list-style: none;
+  margin: 0.5rem 0 0;
+  padding: 0;
+  counter-reset: prop;
+}
+.edu-proposal-list li {
+  display: flex;
+  flex-direction: column;
+  gap: 0.12rem;
+  padding: 0.6rem 0 0.6rem 1.9rem;
+  border-top: 1px solid rgba(179, 139, 70, 0.14);
+  position: relative;
+  counter-increment: prop;
+}
+.edu-proposal-list li::before {
+  content: counter(prop);
+  position: absolute;
+  left: 0;
+  top: 0.62rem;
+  width: 1.2rem;
+  text-align: center;
+  color: rgba(209, 173, 104, 0.55);
+  font-size: 0.75rem;
+}
+.edu-proposal-reading { color: rgba(240, 233, 218, 0.92); line-height: 1.55; }
+.edu-proposal-basis { color: rgba(222, 212, 196, 0.65); font-size: 0.86rem; line-height: 1.55; }
+.edu-proposal-standing {
+  color: rgba(209, 173, 104, 0.7);
+  font-size: 0.8rem;
+  font-style: italic;
+  line-height: 1.5;
+}
+
+/* Three further scripts. Each face is unicode-range-scoped to its own block,
+   so a single .edu-glyph class serves every hall and no font ever claims
+   characters belonging to another. */
+@font-face {
+  font-family: "TL Cuneiform";
+  src: url("/fonts/NotoSansCuneiform.woff2") format("woff2");
+  font-weight: 400; font-style: normal; font-display: swap;
+  unicode-range: U+12000-123FF, U+12400-1247F;
+}
+@font-face {
+  font-family: "TL Devanagari";
+  src: url("/fonts/NotoSerifDevanagari.woff2") format("woff2");
+  font-weight: 400; font-style: normal; font-display: swap;
+  unicode-range: U+0900-097F, U+A8E0-A8FF;
+}
+@font-face {
+  font-family: "TL Arabic";
+  src: url("/fonts/NotoNaskhArabic.woff2") format("woff2");
+  font-weight: 400; font-style: normal; font-display: swap;
+  unicode-range: U+0600-06FF, U+0750-077F, U+FB50-FDFF, U+FE70-FEFF;
+}
+.edu-page .edu-glyph {
+  font-family: "TL Hieroglyphs", "TL Cuneiform", "TL Devanagari", "TL Arabic",
+               "Palatino", "Palatino Linotype", "Book Antiqua", "Times New Roman", serif;
+}
+/* Devanagari and Naskh both carry tall ascenders and deep descenders; give
+   the display sizes room so matras and dots are not clipped. */
+.edu-lang-page[data-hall="sanskrit"] .edu-letter-glyph,
+.edu-lang-page[data-hall="arabic"] .edu-letter-glyph { line-height: 1.6; }
+.edu-lang-page[data-hall="sanskrit"] .edu-plaque-glyph,
+.edu-lang-page[data-hall="arabic"] .edu-plaque-glyph,
+.edu-lang-page[data-hall="cuneiform"] .edu-plaque-glyph { line-height: 1.45; }
+.edu-lang-page[data-hall="arabic"] .edu-name-native,
+.edu-lang-page[data-hall="sanskrit"] .edu-name-native { line-height: 1.7; }
+
+/* Seven further scripts. Same discipline as before: every face scoped to its
+   own Unicode block so one .edu-glyph class can serve fourteen halls. */
+@font-face { font-family: "TL Tibetan"; src: url("/fonts/TLTibetan.woff2") format("woff2");
+  font-weight: 400; font-style: normal; font-display: swap; unicode-range: U+0F00-0FFF; }
+@font-face { font-family: "TL Syriac"; src: url("/fonts/TLSyriac.woff2") format("woff2");
+  font-weight: 400; font-style: normal; font-display: swap; unicode-range: U+0700-074F, U+0860-086F; }
+@font-face { font-family: "TL Coptic"; src: url("/fonts/TLCoptic.woff2") format("woff2");
+  font-weight: 400; font-style: normal; font-display: swap; unicode-range: U+2C80-2CFF, U+03E2-03EF; }
+@font-face { font-family: "TL Mandaic"; src: url("/fonts/TLMandaic.woff2") format("woff2");
+  font-weight: 400; font-style: normal; font-display: swap; unicode-range: U+0840-085F; }
+@font-face { font-family: "TL Armenian"; src: url("/fonts/TLArmenian.woff2") format("woff2");
+  font-weight: 400; font-style: normal; font-display: swap; unicode-range: U+0530-058F, U+FB13-FB17; }
+@font-face { font-family: "TL Ethiopic"; src: url("/fonts/TLEthiopic.woff2") format("woff2");
+  font-weight: 400; font-style: normal; font-display: swap; unicode-range: U+1200-137F, U+1380-139F, U+2D80-2DDF; }
+
+.edu-page .edu-glyph {
+  font-family: "TL Hieroglyphs", "TL Cuneiform", "TL Devanagari", "TL Arabic",
+               "TL Tibetan", "TL Syriac", "TL Coptic", "TL Mandaic", "TL Armenian", "TL Ethiopic",
+               "Palatino", "Palatino Linotype", "Book Antiqua", "Times New Roman", serif;
+}
+/* Tibetan stacks vertically and Ethiopic sits on a heavy baseline; both need
+   more leading than a Latin face at the same size. */
+.edu-lang-page[data-hall="tibetan"] .edu-letter-glyph,
+.edu-lang-page[data-hall="geez"] .edu-letter-glyph { line-height: 1.75; }
+.edu-lang-page[data-hall="tibetan"] .edu-plaque-glyph { line-height: 1.6; }
+.edu-lang-page[data-hall="tibetan"] .edu-name-native,
+.edu-lang-page[data-hall="geez"] .edu-name-native { line-height: 1.8; }
+
+/* --- The Currents ------------------------------------------------------- */
+.edu-current-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.45rem;
+  margin-bottom: 2rem;
+}
+.edu-current-tab {
+  border: 1px solid rgba(179, 139, 70, 0.32);
+  background: transparent;
+  color: rgba(222, 212, 196, 0.75);
+  padding: 0.45rem 1rem;
+  font: inherit;
+  font-size: 0.82rem;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  transition: border-color 180ms ease, background 180ms ease, color 180ms ease;
+}
+.edu-current-tab:hover { border-color: rgba(209, 173, 104, 0.7); color: #ecd9ae; }
+.edu-current-tab.is-active {
+  background: rgba(179, 139, 70, 0.18);
+  border-color: rgba(209, 173, 104, 0.8);
+  color: #ecd9ae;
+}
+.edu-current {
+  max-width: 46rem;
+  margin: 0 auto;
+  padding: clamp(1.6rem, 4vw, 2.6rem);
+  border: 1px solid rgba(209, 173, 104, 0.32);
+  background: linear-gradient(180deg, rgba(24, 19, 14, 0.9), rgba(13, 11, 9, 0.93));
+}
+.edu-current-head { text-align: center; margin-bottom: 1.8rem; }
+.edu-current-native {
+  margin: 0 0 0.35rem;
+  color: #ecd9ae;
+  font-size: clamp(1.8rem, 4.5vw, 2.6rem);
+  line-height: 1.4;
+}
+.edu-current-head h3 { margin: 0 0 0.2em; color: #f0e9da; font-size: 1.45rem; }
+.edu-current-translit {
+  margin: 0 0 0.7rem;
+  color: rgba(209, 173, 104, 0.8);
+  font-style: italic;
+  letter-spacing: 0.06em;
+}
+.edu-current-summary {
+  margin: 0 auto;
+  max-width: 40rem;
+  color: rgba(240, 233, 218, 0.88);
+  font-size: 1.04rem;
+  line-height: 1.75;
+}
+.edu-current-body p {
+  color: rgba(232, 224, 208, 0.82);
+  line-height: 1.85;
+  margin: 0 0 1.1em;
+}
+.edu-current-terms, .edu-current-texts {
+  margin-top: 1.8rem;
+  padding-top: 1.3rem;
+  border-top: 1px solid rgba(179, 139, 70, 0.22);
+}
+.edu-current-terms h4, .edu-current-texts h4 {
+  margin: 0 0 0.9rem;
+  color: rgba(209, 173, 104, 0.85);
+  font-size: 0.72rem;
+  letter-spacing: 0.26em;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.edu-current-terms ul {
+  list-style: none; margin: 0; padding: 0;
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: 0.5rem;
+}
+.edu-current-terms li {
+  display: flex; flex-direction: column; gap: 0.08rem;
+  padding: 0.6rem 0.75rem;
+  border: 1px solid rgba(179, 139, 70, 0.18);
+  background: rgba(16, 13, 10, 0.6);
+}
+.edu-current-term-native { color: #ecd9ae; font-size: 1.15rem; line-height: 1.5; }
+.edu-current-term-translit { color: rgba(209, 173, 104, 0.78); font-style: italic; font-size: 0.85rem; }
+.edu-current-term-gloss { color: rgba(222, 212, 196, 0.68); font-size: 0.84rem; line-height: 1.5; }
+.edu-current-texts ul { list-style: none; margin: 0; padding: 0; }
+.edu-current-texts li {
+  display: flex; flex-direction: column; gap: 0.1rem;
+  padding: 0.6rem 0; border-top: 1px solid rgba(179, 139, 70, 0.12);
+}
+.edu-current-texts li:first-child { border-top: none; }
+.edu-current-text-title { color: rgba(240, 233, 218, 0.9); }
+.edu-current-text-note { color: rgba(222, 212, 196, 0.6); font-size: 0.87rem; line-height: 1.6; }

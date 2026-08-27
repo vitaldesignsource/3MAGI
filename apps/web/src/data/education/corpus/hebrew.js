@@ -1,0 +1,777 @@
+// Hebrew corpus — the hall's shelf of primary books.
+// Attributions, tables of contents, opening words and every link were
+// verified by the content pipeline; a null contents field means the
+// work's divisions could not be confirmed, not that it has none.
+export default {
+    note: 'These are the primary books of Jewish esotericism — the shelf on which the whole tradition rests — running from the Hekhalot and Merkavah writings of late antiquity, through the sefirotic speculation of Provence, to the Zoharic corpus of thirteenth-century Castile and the later strata that gathered around it. They are written in Hebrew and in Aramaic, the Zohar principally in an artificial literary Aramaic belonging to no spoken tongue, so that "the Hebrew tradition" here names a tradition rather than a single language. Dating and authorship are contested for very nearly every one of the early works: pseudepigraphy is the norm and not the exception, and a book\'s stated author is more often a claim about its lineage than a report of who held the pen. What follows gives each book\'s title in its own letters, states plainly what it is and what is and is not known of its origin, and points to where the reader may find it. Where a work has no authentic internal division, none has been invented for it here; and where no sound text can be had freely, we have said so rather than send the reader to something else. The Lurianic writings of sixteenth-century Safed are not in this batch and are shelved separately.',
+    works: [
+        {
+            slug: 'sefer-yetzirah',
+            native: 'ספר יצירה',
+            translit: 'Sefer Yetsirah',
+            english: 'The Book of Formation',
+            author: 'Anonymous. The manuscript tradition ascribes it to the patriarch Abraham, and some recensions append the name of R. Akiva; both ascriptions are pseudepigraphic, and no named author can be established.',
+            date: 'Contested; proposals range from the second to the ninth century, with most scholars placing it between the third and the sixth',
+            language: 'Hebrew',
+            volume: null,
+            description: 'A treatise of only a few pages which derives the whole of creation from ten sefirot belimah and the twenty-two letters of the Hebrew alphabet, the letters being hewn, weighed, permuted and set in a wheel of two hundred and thirty-one gates. Its terseness is such that it reads less like an argument than like a set of instructions, and it became the seed-text of every later Kabbalah, drawing commentaries from Saadia Gaon and Dunash ibn Tamim in the tenth century to the Vilna Gaon in the eighteenth. It circulates in several recensions — commonly reckoned as four, the short, the long, the Saadian and the Gra-Ari — which differ not only in wording but in the order of their sections.',
+            incipit: {
+                native: 'בשלשים ושתים נתיבות פליאות חכמה חקק יה יהוה צבאות אלהי ישראל אלהים חיים ומלך עולם אל שדי רחום וחנון רם ונשא שוכן עד מרום וקדוש שמו וברא את עולמו בשלשה ספרים בספר וספר וספור',
+                english: 'With thirty-two wondrous paths of wisdom did Yah, the Lord of Hosts, God of Israel, the living God and King of the world, El Shaddai, merciful and gracious, high and exalted, dwelling in eternity, whose name is holy — engrave them, and create His world with three books: with text, with number and with telling.',
+                note: 'Sefer Yetzirah 1:1. Checked word for word against the Warsaw 1884 recension as Sefaria prints it, which it matches exactly. The closing triad — sefer, sefar and sippur — turns on a single root and resists translation; it has been rendered \'number, writing and speech\', \'boundary, letter and telling\', and much else besides. The recensions differ slightly in the divine names listed here.',
+            },
+            contents: [
+                {
+                    heading: 'Chapter One',
+                    english: 'The thirty-two paths of wisdom, and the ten sefirot belimah: their measure, their beginning fixed in their end, the five pairs of opposed depths, the four elemental principles and the covenant of the Unique One set in the middle.',
+                },
+                {
+                    heading: 'Chapter Two',
+                    english: 'The twenty-two foundation letters, divided into three mothers, seven doubles and twelve simples; how they are hewn, weighed and permuted, and set in a wheel of two hundred and thirty-one gates through which all speech and all formation issue.',
+                },
+                {
+                    heading: 'Chapter Three',
+                    english: 'The three mothers — aleph, mem, shin — as the balance of merit and guilt with the tongue of decree between them; air, water and fire, and their working in world, in year and in soul.',
+                },
+                {
+                    heading: 'Chapter Four',
+                    english: 'The seven doubles — bet, gimel, dalet, kaf, pe, resh, tav — sounded soft and hard; the seven attributes and their opposites, the seven planets, the days of the week and the gates of the body.',
+                },
+                {
+                    heading: 'Chapter Five',
+                    english: 'The twelve simple letters and the twelve faculties founded upon them; the twelve diagonal boundaries of space, the signs of the zodiac, the months of the year and the organs of the body.',
+                },
+                {
+                    heading: 'Chapter Six',
+                    english: 'Recapitulation: the three fathers, the seven planets and the twelve diagonals; the three faithful witnesses — world, year and soul — with the dragon, the sphere and the heart set over them; and the covenant made with Abraham.',
+                },
+            ],
+            contentsNote: 'The six-chapter division follows the standard printed recension and is a genuine division of the text, not an editorial one: Sefaria\'s structural index of the Warsaw 1884 recension likewise returns six chapters. The chapters bear no titles in any manuscript or printing; the headings above are numerals from the text itself, and the descriptions are summaries of subject-matter, not translated rubrics. The short, long, Saadian and Gra-Ari recensions distribute the material differently and disagree on the number of mishnayot within each chapter, so a section reference in one edition will not always find the same words in another.',
+            editions: [
+                {
+                    label: 'W. Wynn Westcott, Sepher Yetzirah: The Book of Formation and the Thirty-Two Paths of Wisdom (1893)',
+                    url: 'https://archive.org/details/sepheryetzirahb00rittgoog',
+                    note: 'The second edition, published by the Theosophical Publishing Society, printing Westcott\'s English alongside J. S. Rittangel\'s Latin. This is the version that carried Sefer Yetzirah into English occultism; it is a translation of the short recension and should be read as a document of its own moment as much as of the original.',
+                },
+                {
+                    label: 'Isidor Kalisch, Sepher Yezirah: A Book on Creation (New York, 1877)',
+                    url: 'https://archive.org/details/1877-kalisch-sepher-yezirah',
+                    note: 'Generally reckoned the first English translation, printed with the Hebrew text and made by Isidor Kalisch, a Reform rabbi then serving in Newark, for the New York house of L. H. Frank. More sober in its notes than Westcott\'s. The Internet Archive record for this copy is a reader upload carrying a hebrewbooks.org stamp, and its catalogue metadata is unreliable, though the title page and the scan itself are sound; a better-catalogued library copy is bound into \'A sketch of the Talmud\', at /details/sketchoftalmudwo02kali.',
+                },
+                {
+                    label: 'Hebrew text (Warsaw 1884 recension), Sefaria',
+                    url: 'https://www.sefaria.org/Sefer_Yetzirah',
+                    note: 'The Hebrew, chapter by chapter, free to read and to copy, digitised from the National Library of Israel\'s copy of the Warsaw 1884 printing. Useful for checking a citation against the printed Hebrew rather than against a translator\'s paraphrase.',
+                },
+            ],
+        },
+        {
+            slug: 'sefer-habahir',
+            native: 'ספר הבהיר',
+            translit: 'Sefer ha-Bahir',
+            english: 'The Book of Illumination',
+            author: 'A compilation without a single author, edited in Provence. The manuscripts ascribe it to R. Nehunya ben HaKanah, a tanna of the first century, and the ascription is pseudepigraphic; the book has also circulated under the title Midrash R. Nehunya ben HaKanah.',
+            date: 'Provence, later twelfth century; Scholem proposed a redaction around 1176. The securely datable citations are thirteenth-century, in R. Ezra of Gerona, in the circle of R. Isaac the Blind and in Nahmanides.',
+            language: 'Hebrew',
+            volume: null,
+            description: 'The earliest book in which the ten sefirot appear not as the abstract numbers of Sefer Yetzirah but as a living symbolic order — as powers, vessels, limbs of a divine body, a tree planted upside down with its roots in heaven. It is written in short, abrupt midrashic units whose transitions are frequently missing, and it is the first Jewish work known to teach the transmigration of souls and to speak with any frankness of a divine feminine. The symbolic vocabulary on which the later Kabbalah runs, the Zohar\'s included, is in large part first attested here.',
+            incipit: {
+                native: 'אמר רבי נחוניא בן הקנה: כתוב אחד אומר ועתה לא ראו אור בהיר הוא בשחקים, וכתוב אחד אומר ישת חשך סתרו',
+                english: 'R. Nehunya ben HaKanah said: One verse says, \'And now men see not the light which is bright in the skies\'; and another verse says, \'He made darkness His hiding-place\'.',
+                note: 'The opening section, which gives the book its name — the word bahir, \'bright\', is taken from the verse in Job 37:21. The second citation is Psalm 18:12. The passage continues by setting a third verse against both, Psalm 139:12, \'even the darkness is not dark to Thee\'; the apparent contradiction between the hidden and the shining God is the question the whole book proceeds from.',
+            },
+            contents: null,
+            contentsNote: 'The Bahir runs as a continuous sequence of short midrashic units, often abruptly juxtaposed and sometimes broken off in mid-thought. Printed editions divide it into numbered paragraphs — Sefaria\'s text numbers exactly two hundred simanim — but the divisions are editorial, carry no titles, and are not agreed across the manuscripts, which also differ in the order of the material. Hebrew Wikisource, which does supply a five-part scheme, heads it with the admission that in the original the book is not divided at all. There is no authentic table of contents to give.',
+            editions: [
+                {
+                    label: 'Hebrew text (following the Amsterdam 1651 printing), Wikisource',
+                    url: 'https://he.wikisource.org/wiki/ספר_הבהיר',
+                    note: 'The Hebrew in full, freely readable, presented as following the Amsterdam 1651 printing. The underlying work is medieval and long out of copyright, though this is a modern volunteer transcription rather than a facsimile, and should be checked against a printed edition before being quoted.',
+                },
+                {
+                    label: 'Hebrew text with section numbering, Sefaria',
+                    url: 'https://www.sefaria.org/Sefer_HaBahir',
+                    note: 'The Hebrew arranged in two hundred numbered simanim, which makes citation straightforward. We have searched the Internet Archive for a public-domain scan of any early printing of the Bahir and found none — the only copies there are modern translations still in copyright — so readers wanting a facsimile will have to look to a research library.',
+                },
+            ],
+        },
+        {
+            slug: 'sefer-hazohar',
+            native: 'ספר הזוהר',
+            translit: 'Sefer ha-Zohar',
+            english: 'The Book of Splendour',
+            author: 'Ascribed to R. Shimon bar Yochai, the second-century tanna who is its central speaker throughout. Adolph Jellinek argued in 1851 for Moses de León (d. 1305) of Castile, and Gershom Scholem\'s studies made that attribution the scholarly consensus; more recent work, Yehuda Liebes\'s and Ronit Meroz\'s in particular, treats the text as the deposit of several hands over some decades rather than the work of one man.',
+            date: 'Castile, late thirteenth century, with the later strata — Ra\'aya Meheimna and Tikkunei ha-Zohar — added in the early fourteenth',
+            language: 'Aramaic, in an artificial literary dialect, with substantial Hebrew passages',
+            volume: null,
+            description: 'A vast mystical commentary on the Torah cast as the wanderings and conversations of R. Shimon bar Yochai and his companions through the hills of Galilee, expounding scripture as the outer garment of the sefirotic life of God. Its Aramaic is a literary construction, assembled from Targumic and Talmudic models and belonging to no community that ever spoke it — a fact which is itself part of the book\'s claim, for it is written as though from the second century. First printed at Mantua in three volumes (1558–1560) and at Cremona in one (1559–1560), it was received in wide circles over the two centuries following as a book ranking with the Bible and the Talmud.',
+            incipit: {
+                native: 'רבי חזקיה פתח, כתיב: כשושנה בין החוחים. מאן שושנה? דא כנסת ישראל',
+                english: 'R. Hizkiyah opened: it is written, \'As a lily among thorns.\' What is the lily? It is the Assembly of Israel.',
+                note: 'The opening words of the Introduction to the Zohar, Vilna folio 1a, quoting Song of Songs 2:2. The passage proceeds to count the thirteen petals of the lily against the thirteen attributes of mercy, and the five hard leaves that surround her — a reading of a flower which is at the same time a reading of the divine name.',
+            },
+            contents: [
+                {
+                    heading: 'Hakdamat Sefer ha-Zohar (הקדמת ספר הזוהר) — Introduction to the Book of Splendour',
+                    english: 'The prefatory homilies standing before the commentary proper, opening with the lily among the thorns and moving through the letters of creation, the mystery of the night vigil and the fellowship of R. Shimon\'s companions.',
+                },
+                {
+                    heading: 'Zohar al ha-Torah (זוהר על התורה) — The Zohar on the Torah',
+                    english: 'The main body, arranged by the weekly portions from Bereshit through Devarim and printed in three volumes. It is by this arrangement that the Zohar is cited: volume, folio and side, in the pagination of the Vilna edition.',
+                },
+                {
+                    heading: 'Sifra di-Tzeni\'uta (ספרא דצניעותא) — The Book of Concealment',
+                    english: 'Five brief and exceptionally dense chapters on the configuration of the divine countenance and the worlds that were destroyed before this one. Printed within parashat Terumah, in the second volume.',
+                },
+                {
+                    heading: 'Idra Rabba (אדרא רבא) — The Greater Assembly',
+                    english: 'R. Shimon convenes nine companions in a field and expounds the shape of the divine visage, the Long Face and the Short Face, hair by hair and beard by beard; three of the ten do not survive the disclosure. Printed within parashat Naso, in the third volume.',
+                },
+                {
+                    heading: 'Idra Zuta (אדרא זוטא) — The Lesser Assembly',
+                    english: 'The death of R. Shimon, who discloses on the last day of his life what had been withheld at the Greater Assembly, and expires as the house fills with fire and light. Printed at the close of parashat Ha\'azinu.',
+                },
+                {
+                    heading: 'Ra\'aya Meheimna (רעיא מהימנא) — The Faithful Shepherd',
+                    english: 'A later stratum, distinct in language and temper, in which Moses appears to R. Shimon to expound the reasons of the commandments. Interleaved through the third volume rather than printed as a separate book.',
+                },
+                {
+                    heading: 'Tikkunei ha-Zohar (תיקוני הזוהר) — The Emendations of the Zohar',
+                    english: 'Seventy tikkunim, each a fresh reading of the single opening word of Genesis, by the same later hand as Ra\'aya Meheimna. Printed and cited as a separate volume.',
+                },
+                {
+                    heading: 'Zohar Chadash (זוהר חדש) — The New Zohar',
+                    english: 'Zoharic material gathered from manuscripts that the first printers had not used, assembled in Safed and first printed at Salonika in 1597. It includes further portions of Midrash ha-Ne\'elam and Zoharic homilies on Song of Songs, Ruth and Lamentations.',
+                },
+                {
+                    heading: 'Midrash ha-Ne\'elam (מדרש הנעלם) — The Concealed Midrash',
+                    english: 'Homilies principally on Genesis, with further material on Exodus, largely in Hebrew rather than Aramaic and more philosophical in idiom; generally held to be the earliest stratum of the whole corpus. Its homilies on Ruth and Lamentations stand not here but in Zohar Chadash.',
+                },
+                {
+                    heading: 'Sitrei Torah (סתרי תורה) — The Secrets of the Torah',
+                    english: 'A distinct series of esoteric expositions of passages in Genesis, printed in the first volume alongside the running commentary.',
+                },
+            ],
+            contentsNote: 'These are genuine units of the corpus, named as such in the printed editions and in the scholarly literature. They are not, however, chapters of a single planned book: the Zohar is a library rather than a volume, and several of these units are printed inside the running Torah commentary rather than after it, at the points noted above. Further named sections not listed here — Hekhalot, Raza de-Razin, Sava de-Mishpatim, Yanuka, Rav Metivta and others — are embedded in the same way. Citation is by volume, folio and side of the Vilna pagination, which every modern edition reproduces.',
+            editions: [
+                {
+                    label: 'Sefer ha-Zohar, Aramaic text, Lublin 1882 — volume I',
+                    url: 'https://archive.org/details/seferhazohar11unse',
+                    note: 'The first of three volumes of a nineteenth-century Lublin printing, following the standard pagination. Volumes II and III are separate Internet Archive items, at /details/seferhazohar21unse and /details/seferhazohar31unse; both have been checked and are the second and third volumes of this same set.',
+                },
+                {
+                    label: 'Zohar on Leviticus, Numbers and Deuteronomy — sixteenth-century Hebrew manuscript (Columbia)',
+                    url: 'https://archive.org/details/ldpd_15516003_000',
+                    note: 'Two hundred and sixty-eight leaves in a sixteenth-century hand, from Columbia University\'s Hebrew manuscript collection: Leviticus complete, Numbers surviving only in fragments of Ba-midbar and Pinhas, and portions of Deuteronomy including the Idra Zuta. Worth opening simply to see what the text looked like before the printers standardised it.',
+                },
+                {
+                    label: 'S. L. MacGregor Mathers, The Kabbalah Unveiled (London: George Redway, 1887)',
+                    url: 'https://archive.org/details/b24884443',
+                    note: 'The first English rendering of three of the Zohar\'s central units — Sifra di-Tzeni\'uta, Idra Rabba and Idra Zuta. Mathers translated not from the Aramaic but from Knorr von Rosenroth\'s seventeenth-century Latin in the Kabbala Denudata, and the distance from the original is considerable; it is nonetheless the text through which most English readers first met the Idrot.',
+                },
+                {
+                    label: 'Mathers, Kabbala Denudata: The Kabbalah Unveiled (Redway reissue, 1912)',
+                    url: 'https://archive.org/details/kabbaladenudata00rosegoog',
+                    note: 'A later printing of the same translation, more legibly scanned than the 1887 copy. Same caveats apply.',
+                },
+                {
+                    label: 'Jean de Pauly, Sepher ha-Zohar (Le livre de la splendeur), volume I (Paris: Ernest Leroux, 1906)',
+                    url: 'https://archive.org/details/SepherHaZoharLeLivre1',
+                    note: 'The first complete translation of the Zohar into a European language, in six volumes edited posthumously by Émile Lafuma-Giraud. It must be used with real caution: de Pauly interpolated freely and invented references, and Scholem judged the work thoroughly unreliable. Volumes II to VI are separate Internet Archive items under the same title.',
+                },
+                {
+                    label: 'Sefer Tikkunei ha-Zohar (Livorno, 1853), volume I',
+                    url: 'https://archive.org/details/sefertiunehazoha01lior',
+                    note: 'A nineteenth-century Livorno printing of the Tikkunim, the seventy readings of the word bereshit. Printed and cited separately from the Zohar proper.',
+                },
+                {
+                    label: 'Aramaic text arranged by portion, Sefaria',
+                    url: 'https://www.sefaria.org/Zohar',
+                    note: 'The whole Zohar by weekly portion with the Vilna folio numbers marked in the margin, including the Idrot and Sifra di-Tzeni\'uta at their printed places. The most convenient way to find a citation quickly.',
+                },
+            ],
+        },
+        {
+            slug: 'hekhalot-rabbati',
+            native: 'היכלות רבתי',
+            translit: 'Hekhalot Rabbati',
+            english: 'The Greater Book of the Palaces',
+            author: 'Anonymous. The text speaks in the voices of R. Ishmael ben Elisha and R. Nehunya ben HaKanah, tannaim of the first and second centuries; both attributions are pseudepigraphic and the work is a compilation.',
+            date: 'Late antiquity; commonly placed between the third and the seventh century, with the redaction possibly as late as the Geonic period in Babylonia. No secure date can be given.',
+            language: 'Hebrew',
+            volume: null,
+            description: 'The fullest of the ascent texts: an account of the descent to the Merkavah — the tradition calls the ascent a descent — through seven concentric palaces, past the gatekeepers who stand at each threshold and must be shown the right seal before the traveller is permitted to pass. Long stretches are given over to hymns of terrifying repetition sung by the throne and by the celestial beasts, poetry composed for incantation rather than for reading. It closes with the adjuration of Sar ha-Torah, the Prince of the Torah, a rite for compelling an angel to descend and fix the whole of learning in the memory of the adept.',
+            incipit: null,
+            contents: null,
+            contentsNote: 'The work is transmitted as a series of numbered perakim, but the manuscripts differ in their number, their order and their extent: the Wikisource recension listed below runs to forty chapters, while the Jerusalem printing of 1889, which calls the text Pirkei Hekhalot Rabbati, omits the Ma\'amar Petah ha-Hekhalot entirely. Peter Schäfer\'s synoptic edition set the chapter division aside altogether in favour of continuous paragraph numbering across the whole Hekhalot corpus. No stable table of contents can honestly be given.',
+            editions: [
+                {
+                    label: 'Sefer Pirkei Hekhalot Rabbati, ed. S. A. Wertheimer (Jerusalem, 1889)',
+                    url: 'https://archive.org/details/shenesefarimnift00unse',
+                    note: 'A short Hebrew printing from the Jerusalem scholar Solomon Aaron Wertheimer, issued as one of two texts under the title Shenei Sefarim Niftahim. Twenty-two pages; the Internet Archive record states in so many words that the Ma\'amar Petah ha-Hekhalot is not included.',
+                },
+                {
+                    label: 'Hebrew text in forty chapters, Wikisource',
+                    url: 'https://he.wikisource.org/wiki/פרקי_היכלות_רבתי',
+                    note: 'A volunteer transcription of the Hebrew under the title Pirkei Hekhalot Rabbati. The page linked is an index: the text itself lies on forty separate chapter subpages, one per perek. Not a facsimile of any single printing, and it should be checked against a printed edition before being quoted.',
+                },
+            ],
+        },
+        {
+            slug: 'hekhalot-zutarti',
+            native: 'היכלות זוטרתי',
+            translit: 'Hekhalot Zutarti',
+            english: 'The Lesser Book of the Palaces',
+            author: 'Anonymous. The ascent is placed in the mouth of R. Akiva, and the attribution is pseudepigraphic.',
+            date: 'Late antiquity; often held to be among the oldest of the Hekhalot writings, but undatable with any precision',
+            language: 'Hebrew',
+            volume: null,
+            description: 'The shortest and by some distance the most difficult of the palace books, and the one most nearly given over to the divine names — long sequences of them, some intelligible, many not, set down to be recited rather than construed. Where Hekhalot Rabbati narrates an ascent, this text more often simply transmits what is needed to make one, and its language has been corrupted in transmission to the point where whole passages resist any confident reading. Of the four rabbis who entered the orchard, it is Akiva alone who is said to have entered in peace and departed in peace, and it is his voice the book borrows.',
+            incipit: null,
+            contents: null,
+            contentsNote: 'The text survives only in manuscript and in fragments, and its boundaries with the neighbouring Hekhalot writings are genuinely uncertain — where Hekhalot Zutarti ends and other material begins is a matter of scholarly dispute rather than of manuscript testimony. It was not issued as a critical edition until Rachel Elior\'s of 1982, and Schäfer\'s synoptic edition numbers it continuously with the rest of the corpus rather than by chapter. There is no table of contents to give. Nor is there an edition to link: we have found no public-domain printing or translation of the text, and no Wikisource transcription exists. The reader who wants it must go to Elior\'s edition or to Schäfer\'s Synopse zur Hekhalot-Literatur in a research library.',
+            editions: [],
+        },
+        {
+            slug: 'sefer-hekhalot',
+            native: 'ספר היכלות',
+            translit: 'Sefer Hekhalot',
+            english: 'The Book of the Palaces (3 Enoch, or The Hebrew Book of Enoch)',
+            author: 'Anonymous. The narrator is R. Ishmael ben Elisha the High Priest, whose name the printed editions carry on the title page; the attribution is pseudepigraphic, and the book is composite.',
+            date: 'Late antiquity, commonly placed in the fifth or sixth century, though proposals run from the third to the ninth; the strata within it are plainly of different ages',
+            language: 'Hebrew',
+            volume: null,
+            description: 'R. Ishmael ascends through six palaces and halts at the door of the seventh, where the angel Metatron comes out to meet him and, having brought him safely before the throne, discloses that he was once the man Enoch, taken up from among the generation of the Flood and transformed into fire. What follows is the strangest and most sustained angelology in Jewish literature: Metatron\'s seventy names, his crown and his throne, the hierarchies of the princes who serve before the Merkavah, and a survey of the heavens, of the souls of the righteous and of the fate of the wicked. Modern scholarship calls it 3 Enoch on the strength of Odeberg\'s title, but its own name is Sefer Hekhalot.',
+            incipit: {
+                native: 'ויתהלך חנוך את האלהים ואיננו כי לקח אתו אלהים. אמר רבי ישמעאל: בשעלותי למרום להסתכל בצפיית המרכבה, והייתי נכנס בששה היכלות חדר בתוך חדר, וכיון שהגעתי לפתח היכל שביעי עמדתי בתפלה לפני הקדוש ברוך הוא',
+                english: '\'And Enoch walked with God, and he was not, for God took him.\' R. Ishmael said: when I ascended on high to behold the vision of the Merkavah, I entered into six palaces, chamber within chamber, and when I reached the door of the seventh palace I stood in prayer before the Holy One, blessed be He.',
+                note: 'Chapter 1, transcribed from the Warsaw 1875 printing, which sets Genesis 5:24 above the opening as an epigraph — the verse from which the whole Enoch-Metatron tradition proceeds. Checked against Odeberg\'s Hebrew text and his English, which agree throughout, including in the phrase \'to behold the vision of the Merkavah\'. The recensions vary in the opening clause; the reading given here, be-sha\'aloti la-marom, is the Warsaw printing\'s. That printing uses pious substitutions for the divine name throughout, and the biblical verse is given above in its Masoretic spelling.',
+            },
+            contents: null,
+            contentsNote: 'Odeberg\'s edition divides the book into forty-eight chapters; the Warsaw printing of 1875 announces thirty on its title page, and the manuscripts vary further still. The chapters carry no titles in any recension, and Schäfer\'s synoptic edition dispenses with the division altogether in favour of continuous paragraph numbering. Nothing that could honestly be called a table of contents survives.',
+            editions: [
+                {
+                    label: 'Hugo Odeberg, 3 Enoch, or The Hebrew Book of Enoch (Cambridge University Press, 1928)',
+                    url: 'https://archive.org/details/3enochorhebrewbo00unse',
+                    note: 'The standard edition for a half-century and still indispensable: a long introduction, an English translation with notes, and the Hebrew text with a critical apparatus, based principally on Bodleian MS Opp. 556. Published in 1928 and in the public domain in the United States, where the Internet Archive hosts this copy; Odeberg died in 1973, so British and European readers should note that the work remains in copyright in their jurisdictions until 2043.',
+                },
+                {
+                    label: 'Sefer Hekhalot, Hebrew text (Warsaw: Yoel Lebenzohn, 1875)',
+                    url: 'https://archive.org/details/seferhekhalot00unse',
+                    note: 'A thirty-two page Hebrew printing. Its title page attributes the book to \'the tanna R. Ishmael the High Priest\', counts thirty chapters, and advertises a prayer appended at the end — all three claims legible in the scan. A traditional printing rather than a critical text, and useful chiefly for seeing the book as it circulated before the scholars reached it.',
+                },
+            ],
+        },
+        {
+            slug: 'shiur-qomah',
+            native: 'שיעור קומה',
+            translit: 'Shiur Qomah',
+            english: 'The Measure of the Divine Body',
+            author: 'Anonymous; spoken in the name of Rabbi Ishmael',
+            date: 'Late antiquity; in circulation by the ninth century',
+            language: 'Hebrew',
+            volume: null,
+            description: 'A short and startling baraita in which Rabbi Ishmael reports what the prince of the presence told him: the measurements of the Creator\'s limbs, given in leagues past counting, each member carrying its own unpronounceable name. It was already current when Saadia Gaon read it, and read it allegorically; Maimonides, shown a copy, judged it a forgery and held that it ought to be destroyed. It survived them both, folded into the Hekhalot writings and reprinted in abridgement inside Sefer Raziel ha-Malakh, which is where Eisenstein found the text he set in type in 1915.',
+            incipit: {
+                native: 'אמר רבי ישמעאל, אני ראיתי את מלך מלכי המלכים יושב על כסא רם ונשא וחיילותיו עומדים לפניו מימינו ומשמאלו',
+                english: 'Rabbi Ishmael said: I saw the King of the kings of kings sitting upon a high and lofty throne, and his hosts standing before him, at his right and at his left',
+                note: 'The opening of the baraita as Eisenstein printed it. The secret names of Metatron, prince of the presence, follow immediately after.',
+            },
+            contents: null,
+            contentsNote: 'The baraita runs continuously — a measurement, then a name, then another measurement — without chapter divisions, and the recensions differ from one another both in the figures and in the order of the limbs. No single division could be set out here honestly.',
+            editions: [
+                {
+                    label: 'Otzar Midrashim (Eisenstein, New York, 1915) — Hebrew text',
+                    url: 'https://www.sefaria.org/Otzar_Midrashim%2C_Shiur_Komah',
+                    note: 'The baraita as J. D. Eisenstein set it, under his own bracketed headnote citing Sefer Raziel, Amsterdam printing, leaf 37b. Free to read in the browser.',
+                },
+                {
+                    label: 'Otsar midrashim, volume two — scanned',
+                    url: 'https://archive.org/details/otsarmidrashimbe028800',
+                    note: 'Eisenstein\'s own printing. Shiur Qomah stands in the second volume under shin, preceded by his headnote on the book\'s currency before Saadia, on Maimonides\' verdict of forgery, and on the abridgement carried in Sefer Raziel.',
+                },
+            ],
+        },
+        {
+            slug: 'sefer-harazim',
+            native: 'ספר הרזים',
+            translit: 'Sefer HaRazim',
+            english: 'The Book of Mysteries',
+            author: 'Anonymous; reconstructed by Mordecai Margalioth',
+            date: 'Late antiquity; reconstructed 1966',
+            language: 'Hebrew',
+            volume: null,
+            description: 'Not a book that was handed down but one that was put back together: Mordecai Margalioth assembled it in 1966 out of Cairo Genizah fragments that had lain separately catalogued, and only when he set them side by side did a single work appear. It climbs through the seven firmaments in order, each with its encampments of angels, their names written out in rank and the adjurations by which they may be set to work. Among the rites stands a hymn to Helios, the Greek carried over into Hebrew letters — the passage most often reached for by those arguing how porous the boundary between synagogue and late antique magic could be.',
+            incipit: null,
+            contents: null,
+            contentsNote: 'The reconstruction proceeds through the seven firmaments in order, each with its encampments of angels and the rites belonging to them, after a preface in which the book accounts for itself as the writing Raziel gave to Noah. Margalioth assembled it from fragments that carry no agreed section headings, and none are invented here.',
+            editions: [],
+        },
+        {
+            slug: 'harba-de-moshe',
+            native: 'חרבא דמשה',
+            translit: 'Harba de-Moshe',
+            english: 'The Sword of Moses',
+            author: 'Anonymous; edited by Moses Gaster',
+            date: 'Late antiquity; edited by Gaster, 1896',
+            language: 'Aramaic',
+            volume: null,
+            description: 'An Aramaic manual of practical magic built around one enormous chain of divine and angelic names — the sword itself — which the operator must first be granted, by purification and by adjuring the angels set over it, and may then spend, portion by numbered portion, upon particular ends. Hai Gaon, head of the Babylonian academy until his death in 1037, knew the book and, replying to questioners in Kairouan, quoted its opening words; Gaster recognised the text he had acquired by that quotation. He printed it with an English translation in 1896 and reprinted both in his Studies and Texts, where it can be read entire.',
+            incipit: {
+                native: 'בשמיה דאלהא רבא וקדישא ארבעה מלאכים הממונים על החרב',
+                english: 'In the name of the great and holy God. Four angels are appointed over the Sword',
+                note: 'Gaster\'s Aramaic text, volume three, opening the work. Hai Gaon named the book to the questioners of Kairouan by these very words — that four angels are appointed to the Sword — which is how Gaster identified his manuscript with the book Hai knew.',
+            },
+            contents: null,
+            contentsNote: 'Gaster\'s edition falls into movements rather than chapters: the four angels set over the Sword and the operator\'s preparation; the great adjuration; the Sword itself, a chain of names divided into numbered portions; and then the numbered prescriptions, running past a hundred and thirty, which call on those portions by their numbers. The manuscript supplies no chapter headings, and none are supplied here.',
+            editions: [
+                {
+                    label: 'Gaster, Studies and Texts, volume one (London, 1925)',
+                    url: 'https://archive.org/details/studiestextsinfo11gast',
+                    note: 'Gaster\'s introduction and his English translation, reprinting the edition he first published in the Journal of the Royal Asiatic Society in 1896.',
+                },
+                {
+                    label: 'Gaster, Studies and Texts, volume three',
+                    url: 'https://archive.org/details/studiestextsinfo31gast',
+                    note: 'The Aramaic and Hebrew text itself. Gaster gathered his texts into this third volume and his translations into the first, so the two are read side by side rather than found together.',
+                },
+            ],
+        },
+        {
+            slug: 'sefer-raziel-hamalakh',
+            native: 'ספר רזיאל המלאך',
+            translit: 'Sefer Raziel HaMalakh',
+            english: 'The Book of Raziel the Angel',
+            author: 'A compilation; ascribed to the angel Raziel',
+            date: 'Printed Amsterdam, 1701',
+            language: 'Hebrew',
+            volume: null,
+            description: 'The printed Raziel is a gathering rather than a book: older strata — among them the Sefer ha-Malbush, which clothes the practitioner in the divine names, and the Sod ha-Sodot material — were compiled and set in type at Amsterdam in 1701, with an abridgement of the Shiur Qomah baraita among them. What it became was less a text than an object, kept in houses on the belief that no fire would take a dwelling that held a copy. Gaster took it for the primary source on which much later magic drew, Trithemius and Agrippa included, while allowing in the same breath that there is no criterion for the age of its component parts.',
+            incipit: null,
+            contents: null,
+            contentsNote: 'The Amsterdam volume gathers several distinct treatises under one title, and its divisions are those of the layers it absorbed rather than of any single plan. No table of contents is set out here for that reason.',
+            editions: [],
+        },
+        {
+            slug: 'pardes-rimonim',
+            native: 'פרדס רימונים',
+            translit: 'Pardes Rimonim',
+            english: 'The Orchard of Pomegranates',
+            author: 'Moses Cordovero',
+            date: 'Completed Safed, 1548; printed Kraków, 1592',
+            language: 'Hebrew',
+            volume: null,
+            description: 'Cordovero\'s attempt to hold the whole of Kabbalah in a single architecture: thirty-two gates running from the first question — whether the sefirot are ten and not nine — through the vessels and the channels and the colours, through the palaces, the letters and the vowel points, to the soul and at last to intention in prayer. He had it finished at Safed in 1548, before he was thirty, and it was printed at Kraków in 1592; until Luria displaced him, Cordovero was the discipline\'s great systematiser. The twenty-third gate, an ordered register of the epithets under which each sefirah appears in Scripture, was used as a reference work in its own right.',
+            incipit: {
+                native: 'נאם הצעיר משה בן לא״א ב״ר יעקב קורדואירו בראותי ימי הילדות חלפו עברו למו',
+                english: 'Thus speaks the young Moses, son of my father and master Rabbi Jacob Cordovero: when I saw that the days of childhood had passed and gone from me',
+                note: 'The opening of the author\'s own introduction. He goes on to describe how, in his twentieth year, his Maker woke him as a man is woken from sleep.',
+            },
+            contents: [
+                {
+                    heading: 'עשר ולא תשע',
+                    english: 'Ten and not nine',
+                },
+                {
+                    heading: 'שער טעם האצילות',
+                    english: 'The gate of the reason for emanation',
+                },
+                {
+                    heading: 'אם אין סוף הוא הכתר',
+                    english: 'Whether the Infinite is the Crown',
+                },
+                {
+                    heading: 'שער עצמות וכלים',
+                    english: 'The gate of essences and vessels',
+                },
+                {
+                    heading: 'סדר האצילות',
+                    english: 'The order of emanation',
+                },
+                {
+                    heading: 'סדר עמידתן',
+                    english: 'The order in which they stand',
+                },
+                {
+                    heading: 'שער הצנורות',
+                    english: 'The gate of the channels',
+                },
+                {
+                    heading: 'מהות והנהגה',
+                    english: 'Essence and governance',
+                },
+                {
+                    heading: 'שער המכריעין',
+                    english: 'The gate of those that hold the balance',
+                },
+                {
+                    heading: 'שער הגוונים',
+                    english: 'The gate of the colours',
+                },
+                {
+                    heading: 'שער הצחצחות',
+                    english: 'The gate of the dazzling splendours',
+                },
+                {
+                    heading: 'שער הנתיבות',
+                    english: 'The gate of the paths — the thirty-two paths of Wisdom',
+                },
+                {
+                    heading: 'שערים',
+                    english: 'Gates — the fifty gates of Understanding',
+                },
+                {
+                    heading: 'שער המציאות',
+                    english: 'The gate of existence',
+                },
+                {
+                    heading: 'שער ממטה למעלה',
+                    english: 'The gate of from below upwards',
+                },
+                {
+                    heading: 'שער אבי״ע',
+                    english: 'The gate of the four worlds: Emanation, Creation, Formation, Making',
+                },
+                {
+                    heading: 'שער ירך יעקב',
+                    english: 'The gate of the thigh of Jacob',
+                },
+                {
+                    heading: 'שער מיעוט הירח',
+                    english: 'The gate of the diminishing of the moon',
+                },
+                {
+                    heading: 'שער שם בן ד׳',
+                    english: 'The gate of the Name of four letters',
+                },
+                {
+                    heading: 'שער השמות',
+                    english: 'The gate of the names',
+                },
+                {
+                    heading: 'שער פרטי השמות',
+                    english: 'The gate of the particular names',
+                },
+                {
+                    heading: 'שער הכינויים',
+                    english: 'The gate of the epithets',
+                },
+                {
+                    heading: 'שער ערכי הכנויים',
+                    english: 'The gate of the epithets set in order',
+                },
+                {
+                    heading: 'שער ההיכלות',
+                    english: 'The gate of the palaces',
+                },
+                {
+                    heading: 'שער התמורות',
+                    english: 'The gate of the substitutions',
+                },
+                {
+                    heading: 'שער היכלות הקליפות',
+                    english: 'The gate of the palaces of the husks',
+                },
+                {
+                    heading: 'שער האותיות',
+                    english: 'The gate of the letters',
+                },
+                {
+                    heading: 'שער הנקודות',
+                    english: 'The gate of the vowel points',
+                },
+                {
+                    heading: 'שער הטעמים',
+                    english: 'The gate of the accents',
+                },
+                {
+                    heading: 'שער הצירוף',
+                    english: 'The gate of letter-combination',
+                },
+                {
+                    heading: 'שער הנשמה',
+                    english: 'The gate of the soul',
+                },
+                {
+                    heading: 'שער הכוונה',
+                    english: 'The gate of intention',
+                },
+            ],
+            contentsNote: 'The titles are those the printed text carries at the head of each gate, with the ordinal — \'the first gate\', \'the second gate\' — removed. The book\'s own index, the Simanei ha-Sefer, names a few of them differently: the twenty-sixth gate stands there as Heikhalei ha-Temurot, the palaces of the substitutions, and the index omits the headnote to the seventeenth gate altogether. Where the two disagree, the running text has been followed.',
+            editions: [
+                {
+                    label: 'Pardes Rimonim — the complete Hebrew text',
+                    url: 'https://www.sefaria.org/Pardes_Rimmonim',
+                    note: 'All thirty-two gates, chapter by chapter, together with the author\'s introduction, the book\'s own index and his closing prayer. Free to read in the browser.',
+                },
+                {
+                    label: 'ʻAsis Rimonim — a sixteenth-century manuscript of the abridgement',
+                    url: 'https://archive.org/details/ldpd_17893921_000',
+                    note: 'Not the Pardes itself but Samuel Gallico\'s summary of it, copied in Italy and dated 1579. Columbia University Library.',
+                },
+            ],
+        },
+        {
+            slug: 'etz-chaim',
+            native: 'עץ חיים',
+            translit: 'Etz Chaim',
+            english: 'The Tree of Life',
+            author: 'Isaac Luria, recorded by Hayyim Vital',
+            date: 'Luria taught 1570–1572; Vital\'s recension thereafter',
+            language: 'Hebrew',
+            volume: null,
+            description: 'Luria taught at Safed for barely two years and wrote almost nothing down; what survives is his pupils\' record, and this is Hayyim Vital\'s. It sets out the system that reorganised Kabbalah after Cordovero — the tzimtzum by which the Infinite withdrew to leave room for a world, the shattering of vessels that could not hold the light poured into them, the partzufim into which the sefirot recomposed themselves as faces, and the tikkun left to us to accomplish. Vital\'s is one recension among several: his son Shmuel rearranged the material into eight gates, other pupils circulated versions Vital himself would not own, and \'the Etz Chaim\' names a family of texts rather than one settled book.',
+            incipit: {
+                native: 'דע כי טרם שנאצלו הנאצלים ונבראו הנבראים היה אור עליון פשוט ממלא כל המציאות',
+                english: 'Know that before the emanated were emanated and the created created, a simple supernal light filled the whole of existence',
+                note: 'Not the book\'s first words. It opens the tzimtzum discourse in the second chapter of the first gate, after that chapter has surveyed the earlier opinions on how emanation began — the sentence on which the whole Lurianic system turns.',
+            },
+            contents: [
+                {
+                    heading: 'דרוש עגולים ויושר',
+                    english: 'The discourse on the circles and the line',
+                },
+                {
+                    heading: 'השתלשלות הי״ס תוך העיגולים',
+                    english: 'The unfolding of the ten sefirot within the circles',
+                },
+                {
+                    heading: 'סדר אצילות בקיצור מופלג',
+                    english: 'The order of emanation, in extreme abridgement',
+                },
+                {
+                    heading: 'שער אזן חוטם פה',
+                    english: 'The gate of ear, nose and mouth',
+                },
+                {
+                    heading: 'שער טנת״א',
+                    english: 'The gate of accents, vowels, crownlets and letters',
+                },
+                {
+                    heading: 'שער העקודים',
+                    english: 'The gate of the bound lights',
+                },
+                {
+                    heading: 'שער מטי ולא מטי',
+                    english: 'The gate of reaching and not reaching',
+                },
+                {
+                    heading: 'שער דרושי נקודות',
+                    english: 'The gate of the discourses on the points',
+                },
+                {
+                    heading: 'שער שבירת הכלים',
+                    english: 'The gate of the breaking of the vessels',
+                },
+                {
+                    heading: 'שער התיקון',
+                    english: 'The gate of the mending',
+                },
+                {
+                    heading: 'שער המלכים',
+                    english: 'The gate of the kings',
+                },
+                {
+                    heading: 'שער עתיק',
+                    english: 'The gate of the Ancient One',
+                },
+                {
+                    heading: 'שער א״א',
+                    english: 'The gate of Arikh Anpin, the Long Face',
+                },
+                {
+                    heading: 'שער אבא ואמא',
+                    english: 'The gate of Father and Mother',
+                },
+                {
+                    heading: 'שער הזווגים בזווג דאו״א ומצות שלוח הקן',
+                    english: 'The gate of the couplings of Father and Mother, and of the commandment of sending away the mother bird',
+                },
+                {
+                    heading: 'שער הולדת או״א וזו״ן',
+                    english: 'The gate of the begetting of Father and Mother and of Ze\'ir and the Female',
+                },
+                {
+                    heading: 'שער ז״א',
+                    english: 'The gate of Ze\'ir Anpin, the Small Face',
+                },
+                {
+                    heading: 'שער רפ״ח ניצוצין',
+                    english: 'The gate of the two hundred and eighty-eight sparks',
+                },
+                {
+                    heading: 'שער אורות ניצוצין וכלים',
+                    english: 'The gate of lights, sparks and vessels',
+                },
+                {
+                    heading: 'שער המוחין',
+                    english: 'The gate of the mentalities',
+                },
+                {
+                    heading: 'שער לידת המוחין',
+                    english: 'The gate of the birth of the mentalities',
+                },
+                {
+                    heading: 'שער מוחין דקטנות',
+                    english: 'The gate of the mentalities of smallness',
+                },
+                {
+                    heading: 'שער מוחין דצלם',
+                    english: 'The gate of the mentalities of the Image',
+                },
+                {
+                    heading: 'שער פרקי הצלם',
+                    english: 'The gate of the divisions of the Image',
+                },
+                {
+                    heading: 'שער דרושי הצלם',
+                    english: 'The gate of the discourses on the Image',
+                },
+                {
+                    heading: 'שער הצלם',
+                    english: 'The gate of the Image',
+                },
+                {
+                    heading: 'שער פרטי עיבור יניקה ומוחין',
+                    english: 'The gate of the particulars of gestation, suckling and mentality',
+                },
+                {
+                    heading: 'שער העיבורים',
+                    english: 'The gate of the gestations',
+                },
+                {
+                    heading: 'שער הנסירה',
+                    english: 'The gate of the sawing apart',
+                },
+                {
+                    heading: 'שער הפרצופים',
+                    english: 'The gate of the countenances',
+                },
+                {
+                    heading: 'שער פרצופי זו״ן',
+                    english: 'The gate of the countenances of Ze\'ir and the Female',
+                },
+                {
+                    heading: 'שער הארת המוחין זו״ן',
+                    english: 'The gate of the shining of the mentalities into Ze\'ir and the Female',
+                },
+                {
+                    heading: 'שער אונאה',
+                    english: 'The gate of wrong done to another',
+                },
+                {
+                    heading: 'שער תיקון נוקבא',
+                    english: 'The gate of the mending of the Female',
+                },
+                {
+                    heading: 'שער הירח',
+                    english: 'The gate of the moon',
+                },
+                {
+                    heading: 'שער מיעוט הירח',
+                    english: 'The gate of the diminishing of the moon',
+                },
+                {
+                    heading: 'שער יעקב ולאה',
+                    english: 'The gate of Jacob and Leah',
+                },
+                {
+                    heading: 'שער לאה ורחל',
+                    english: 'The gate of Leah and Rachel',
+                },
+                {
+                    heading: 'שער מ״נ ומ״ד',
+                    english: 'The gate of the female and the male waters',
+                },
+                {
+                    heading: 'שער פנימיות וחיצוניות',
+                    english: 'The gate of the inward and the outward',
+                },
+                {
+                    heading: 'שער החשמל',
+                    english: 'The gate of the Hashmal',
+                },
+                {
+                    heading: 'שער דרושי אבי״ע',
+                    english: 'The gate of the discourses on the four worlds',
+                },
+                {
+                    heading: 'שער ציור עולמות אבי״ע',
+                    english: 'The gate of the configuration of the four worlds',
+                },
+                {
+                    heading: 'שער השמות',
+                    english: 'The gate of the names',
+                },
+                {
+                    heading: 'שער המקיפין',
+                    english: 'The gate of the encompassing lights',
+                },
+                {
+                    heading: 'שער כסא הכבוד',
+                    english: 'The gate of the throne of glory',
+                },
+                {
+                    heading: 'שער סדר אבי״ע',
+                    english: 'The gate of the order of the four worlds',
+                },
+                {
+                    heading: 'שער הקליפות',
+                    english: 'The gate of the husks',
+                },
+                {
+                    heading: 'שער קליפת נוגה',
+                    english: 'The gate of the husk of Nogah',
+                },
+                {
+                    heading: 'שער קיצור אבי״ע',
+                    english: 'The gate of the four worlds in brief',
+                },
+            ],
+            contentsNote: 'The fifty gates are grouped into seven palaces, each announced in the text at the gate that opens it: Adam Kadmon at the first, the Points at the eighth, the Crowns at the twelfth, Father and Mother at the fourteenth, Ze\'ir Anpin at the seventeenth, the Female of Ze\'ir Anpin at the thirty-fourth, and the four worlds at the forty-second. Sha\'ar ha-Kelalim, a summary of the whole, stands before them all. The titles above are the headings the printed text carries at the opening of each gate; within the seventh palace the printing numbers its gates first, third, fourth and onward, with no second, and the sequence here follows the printing rather than correcting it.',
+            editions: [
+                {
+                    label: 'Sefer Etz Chaim — the complete Hebrew text',
+                    url: 'https://www.sefaria.org/Sefer_Etz_Chaim',
+                    note: 'Vital\'s recension entire, the fifty gates with Sha\'ar ha-Kelalim standing before them as a separate division. Free to read in the browser.',
+                },
+            ],
+        },
+        {
+            slug: 'further-shelves',
+            native: '',
+            translit: null,
+            english: 'Further Shelves',
+            author: 'Various',
+            date: 'Thirteenth to seventeenth centuries',
+            language: 'Hebrew and Aramaic',
+            volume: null,
+            description: 'Beyond this shelf the tradition goes on, and a reader who has come this far will want the names. Naftali Bacharach\'s Emek HaMelekh (Amsterdam, 1648) carried the Lurianic system into print for a wide readership and was not universally thanked for it; the anonymous Sefer HaTemunah reads the shapes of the Hebrew letters as a cosmology of worlds succeeding one another; Brit Menuchah, a fourteenth-century book of the lights of the Tetragrammaton, was held in unusual esteem by Luria\'s circle; Joseph Gikatilla\'s Sha\'arei Orah is the most lucid of the introductions to the sefirot understood as the divine names; the paired Sefer HaPeliah and Sefer HaKanah, ascribed to Nehunya ben ha-Kanah, are fierce against a Judaism kept without its inner sense; and the prophetic Kabbalah of Abraham Abulafia sets theosophy aside altogether for the technique of letter-combination and the ecstasy it was meant to bring on.',
+            incipit: null,
+            contents: null,
+            contentsNote: null,
+            editions: [
+                {
+                    label: 'Joseph Gikatilla, Sha\'arei Orah',
+                    url: 'https://www.sefaria.org/Sha%27arei_Orah',
+                    note: 'The ten gates complete in Hebrew, with the author\'s introduction, ascending from the tenth sefirah to the first. Free to read in the browser.',
+                },
+                {
+                    label: 'Abraham Abulafia, Sefer ha-Ot, edited by Adolf Jellinek (Breslau, 1887)',
+                    url: 'https://archive.org/details/jubelschriftzums00bresuoft',
+                    note: 'Abulafia\'s apocalypse, printed in the volume presented to Heinrich Graetz on his seventieth birthday. Jellinek\'s edition begins at page 65.',
+                },
+                {
+                    label: 'Sefer HaKanah',
+                    url: 'https://www.sefaria.org/Sefer_HaKanah',
+                    note: 'The Hebrew text complete, in a hundred and twelve chapters. Free to read in the browser.',
+                },
+                {
+                    label: 'Kelale itsur Sefer ha-Peliah (Jerusalem, 1919)',
+                    url: 'https://archive.org/details/kelaleitsursefer00davi',
+                    note: 'A digest of the Peliah rather than the book itself; the cataloguers record Scholem\'s attribution of the abridgement to David ben Solomon ibn Abi Zimra. The title page is wanting, the title taken from the running head.',
+                },
+            ],
+        },
+    ],
+};

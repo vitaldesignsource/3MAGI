@@ -17,6 +17,9 @@ const ThirdLampAboutPage = lazy(() => import('./pages/ThirdLampAboutPage'));
 const ThirdLampAuthorsPage = lazy(() => import('./pages/ThirdLampAuthorsPage'));
 const ThirdLampLampPostPage = lazy(() => import('./pages/ThirdLampLampPostPage'));
 const ThirdLampContactPage = lazy(() => import('./pages/ThirdLampContactPage'));
+const EducationPortalPage = lazy(() => import('./pages/EducationPortalPage'));
+const EducationLanguagePage = lazy(() => import('./pages/EducationLanguagePage'));
+const EducationCoursePage = lazy(() => import('./pages/EducationCoursePage'));
 const ArticlePage = lazy(() => import('./pages/ArticlePage'));
 const PlansPage = lazy(() => import('./pages/PlansPage'));
 const WelcomePage = lazy(() => import('./pages/WelcomePage'));
@@ -91,6 +94,10 @@ function App() {
                     <Route path="/third-lamp/authors" element={<ThirdLampAuthorsPage />} />
                     <Route path="/third-lamp/lamp-post" element={<ThirdLampLampPostPage />} />
                     <Route path="/third-lamp/contact" element={<ThirdLampContactPage />} />
+                    <Route path="/third-lamp/education" element={<EducationPortalPage />} />
+                    <Route path="/third-lamp/education/:lang" element={<EducationLanguagePage />} />
+                    <Route path="/third-lamp/education/:lang/course" element={<EducationCoursePage />} />
+                    <Route path="/third-lamp/education/:lang/course/:lesson" element={<EducationCoursePage />} />
                     <Route path="/articles/:slug" element={<ArticlePage />} />
                     <Route path="/plans" element={<PlansPage />} />
                     <Route path="/welcome" element={<WelcomePage />} />
