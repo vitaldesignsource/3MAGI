@@ -1,3 +1,651 @@
 // coptic — The Currents: thematic essays on this tradition's esoteric
-// disciplines. Populated by the content pipeline.
-export default { note: null, themes: [] };
+// disciplines. Fact-checked by the content pipeline: scripts verified
+// against unicodedata, sources and attributions audited, and practice
+// described historically rather than prescribed.
+export default {
+    note: 'The Coptic hall holds three libraries that are usually kept apart: the codices from Nag Hammadi and the two collections Europe had held before them, the corpus of texts of ritual power, and the literature of the desert. They were written in one language, often in the same regions, sometimes in hands trained in the same scriptoria. These currents follow each in its own terms, and where the walls between them are modern rather than ancient they say so. Two cautions govern the whole. \'Gnostic\' is used here as a conventional shorthand for a category that specialists have spent three decades dismantling and rebuilding, not as the name of a church anyone belonged to. And \'survival\' from pharaonic Egypt is a claim to be argued case by case with the chain of transmission shown, never assumed from resemblance. Coptic words are given in plain letters, without the supralinear strokes and the abbreviated nomina sacra the manuscripts use; spellings vary by dialect and by scribe, and where a form is one of several the gloss says so. Egypt\'s Coptic Orthodox Church is a living church, and the desert literature and the liturgical texts described here are its own inheritance, not antiquities.',
+    themes: [
+        {
+            slug: 'gnostic-scriptures',
+            title: 'The Gnostic Scriptures',
+            native: 'ⲅⲛⲱⲥⲓⲥ',
+            translit: 'gnōsis',
+            summary: 'Thirteen codices from a jar below the Jabal al-Tarif cliff, the two collections Europe had held for a century and a half before them, and a category that has been argued over ever since.',
+            paragraphs: [
+                'In December 1945 Muhammad Ali al-Samman and his brothers were digging sabakh, the nitrous earth used as fertiliser, at the foot of the Jabal al-Tarif cliff near Hamra Dom, across the river from Nag Hammadi in Upper Egypt. They struck a sealed jar. Inside were twelve leather-bound papyrus codices and eight leaves of a thirteenth, tucked for safekeeping inside the front cover of Codex VI: fifty-two tractates in all, six of them duplicates. The language is Coptic, mostly Sahidic, with Lycopolitan in Codex I and in parts of X and XI; every text is a translation from Greek. The cartonnage stiffening the bindings included documents dated to the 340s, which places the manufacture of the books in the middle of the fourth century. They passed through dealers and the antiquities market; Codex I was bought for the Jung Institute in Zurich in 1952 and is still called the Jung Codex; the rest are in the Coptic Museum in Cairo. Both the find-story and the burial theory are now contested ground. Nicola Denzey Lewis and Justine Ariel Blount, in the Journal of Biblical Literature 133 (2014), showed that the details of the discovery shifted in retelling and proposed that the books were grave goods rather than a rescue; Hugo Lundhaug and Lance Jenott, in The Monastic Origins of the Nag Hammadi Codices (2015), argued at length the other way, for monastic and probably Pachomian owners. The question is open, and a reader should treat any confident account of who buried the jar and why as a position rather than a fact.',
+                'The Apocryphon of John is the fullest surviving statement of the Sethian myth. It survives four times over — Nag Hammadi Codex II,1; III,1; IV,1; and BG 8502,2 in the Berlin Codex bought by Carl Reinhardt in Cairo in 1896 — in a long recension (II and IV) and a short one (III and BG); Michael Waldstein and Frederik Wisse printed all four in parallel columns in 1995, which is the edition in which the recensions can actually be compared. The risen Christ, appearing in changing form, answers John son of Zebedee. Above everything is the unknowable Invisible Spirit; from it Barbelo, the first thought, and the aeons of the Pleroma. Sophia, the last of them, conceives without her consort\'s assent and without the Spirit\'s leave. Her offspring is malformed, lion-faced and serpentine; she casts him out in a cloud. He is Yaldabaoth, called also Saklas, the fool, and Samael, the blind god. He steals power from his mother, makes archons and authorities, and declares that he is God and there is no other — the words of Isaiah placed in the demiurge\'s mouth as blasphemy, and rebuked at once from above. The archons then fashion Adam\'s body; the light that makes him live is stolen light, and it is that light in the human being which has to be told what it is. Irenaeus summarises a closely related myth around 180 in Adversus Haereses I.29, which fixes the material in the second century whatever the date of the manuscripts.',
+                'In these particular texts the operative logic is not atonement but recognition. Nothing is bought back; something is remembered. In the long recension of the Apocryphon this reaches an extraordinary technical pitch: a passage assigning each part of the human body its own angel by name, citing as its authority a Book of Zoroaster otherwise unknown. The body is treated as a piece of astrological machinery, made by powers, and knowing the names of its makers is part of knowing how far one\'s own captivity extends. Alongside this stands the Gospel of Thomas (NHC II,2), 114 sayings with no passion narrative and almost no frame, opening with the promise that whoever finds the interpretation of these words will not taste death. Greek fragments of it had been dug from the rubbish mounds of Oxyrhynchus decades earlier and published by Grenfell and Hunt as P.Oxy. 1, 654 and 655; nobody could name them until 1945 supplied a title. The Gospel of Philip (NHC II,3) is not a gospel but a florilegium of excerpts, usually judged Valentinian, on the sacraments: baptism, chrism, eucharist, redemption, and the bridal chamber. It rates the ⲭⲣⲓⲥⲙⲁ above baptism, on the ground that the name Christian is taken from the anointing. The much-quoted passage about Mary Magdalene has a hole in the papyrus precisely where the disputed word stood, and every version a reader has seen is a conjecture.',
+                'Europe had two such collections long before Nag Hammadi and had largely failed to know what to do with them. The Askew Codex — British Library Add MS 5114, a parchment book usually dated to the fourth or fifth century, bought by the British Museum in 1785 from the heirs of Dr Anthony Askew — contains the Pistis Sophia: four books in which the risen Jesus teaches for eleven years, Mary Magdalene asks most of the questions, and the fallen aeon Pistis Sophia makes thirteen repentances from the chaos into which she has descended. Moritz Gotthilf Schwartze prepared a Latin translation and died before it appeared; J. H. Petermann saw it through the press in 1851. The Bruce Codex, papyrus, carried out of Upper Egypt by James Bruce of Kinnaird in 1769 and now Bodleian MS Bruce 96, holds the two Books of Jeu and an untitled treatise: seals, ciphers, numbers and names for the soul\'s passage through the places above, drawn as well as written, and far closer in form to a ritual manual than to a gospel. Carl Schmidt edited both codices at the turn of the twentieth century and is the reason either is legible.',
+                'A word about the category, because it is the thing most often got wrong. Gnosticism is a modern construction, assembled from the seventeenth century onward out of the heresiologists\' own polemical grouping, and it has been under sustained attack for thirty years. Michael Williams, in Rethinking \'Gnosticism\' (1996), argued that the supposed defining traits — anti-cosmism, protest exegesis, an oscillation between libertinism and asceticism — do not hold together across the actual texts. Karen King, in What Is Gnosticism? (2003), traced how the category was built and whose interests it served. David Brakke, in The Gnostics (2010), argues in the other direction: that a narrow Gnostic school of thought, the group Hans-Martin Schenke labelled Sethian, was a real ancient movement with a real self-designation. No consensus has replaced the old one. What the jar itself supports is modest: it held a library, not a church. Sethian, Valentinian and Hermetic works sit in it together, along with a Coptic version of a passage of Plato\'s Republic (NHC VI,5) that older scholarship dismissed as incompetent and recent work has read as a deliberate reworking — bound, in any case, by whoever thought all of it worth having.',
+            ],
+            terms: [
+                {
+                    native: 'ⲅⲛⲱⲥⲓⲥ',
+                    translit: 'gnōsis',
+                    gloss: 'knowledge; in these texts not information but recognition of one\'s own origin, the thing that saves',
+                },
+                {
+                    native: 'ⲡⲗⲏⲣⲱⲙⲁ',
+                    translit: 'plērōma',
+                    gloss: 'fullness; the totality of the aeons above, from which Sophia falls and to which the light returns',
+                },
+                {
+                    native: 'ⲥⲟⲫⲓⲁ',
+                    translit: 'sophia',
+                    gloss: 'wisdom; the last aeon, whose unpartnered conception produces the demiurge',
+                },
+                {
+                    native: 'ⲃⲁⲣⲃⲏⲗⲱ',
+                    translit: 'barbēlō',
+                    gloss: 'Barbelo, the first thought of the Invisible Spirit; the etymology of the name remains unsettled',
+                },
+                {
+                    native: 'ⲓⲁⲗⲧⲁⲃⲁⲱⲑ',
+                    translit: 'ialtabaōth',
+                    gloss: 'Yaldabaoth, the demiurge; this is the form used in Nag Hammadi Codex II, while the Berlin Codex has a spelling with dalda, ⲓⲁⲗⲇⲁⲃⲁⲱⲑ. Spellings of the name vary between and within witnesses',
+                },
+                {
+                    native: 'ⲁⲣⲭⲱⲛ',
+                    translit: 'archōn',
+                    gloss: 'ruler; the powers made by the demiurge who govern the cosmos and hold the human body',
+                },
+                {
+                    native: 'ϣⲁϫⲉ',
+                    translit: 'shaje',
+                    gloss: 'word, saying; the unit of the Gospel of Thomas, whose opening line calls them hidden',
+                },
+                {
+                    native: 'ⲛⲩⲙⲫⲱⲛ',
+                    translit: 'nymphōn',
+                    gloss: 'bridal chamber; the culminating sacrament of the Gospel of Philip, its exact nature — rite, metaphor, or both — much argued and unresolved',
+                },
+            ],
+            texts: [
+                {
+                    title: 'The Apocryphon of John — NHC II,1; III,1; IV,1; Berlin Codex (BG 8502,2)',
+                    note: 'The Sethian myth in full, in a long and a short recension; the long adds the naming of the body\'s angels, citing a Book of Zoroaster. All four witnesses are printed in parallel in Michael Waldstein and Frederik Wisse\'s synopsis (1995).',
+                },
+                {
+                    title: 'The Gospel of Thomas — NHC II,2',
+                    note: '114 sayings in Sahidic Coptic; Greek fragments at P.Oxy. 1, 654 and 655, published by Grenfell and Hunt before anyone could identify what they belonged to.',
+                },
+                {
+                    title: 'The Gospel of Philip — NHC II,3',
+                    note: 'A florilegium of excerpts, usually judged Valentinian, on baptism, chrism, eucharist, redemption and the bridal chamber.',
+                },
+                {
+                    title: 'Pistis Sophia — Askew Codex, British Library Add MS 5114',
+                    note: 'Bought by the British Museum in 1785; four books of post-resurrection teaching and the thirteen repentances of the fallen aeon. Latin translation by M. G. Schwartze, published posthumously by J. H. Petermann in 1851.',
+                },
+                {
+                    title: 'The Books of Jeu and the Untitled Text — Bruce Codex, Bodleian MS Bruce 96',
+                    note: 'Brought from Upper Egypt by James Bruce in 1769; seals, ciphers, numbers and diagrams for the ascent, closer in form to a manual than a scripture. Edited by Carl Schmidt.',
+                },
+                {
+                    title: 'Michael Williams, Rethinking \'Gnosticism\' (1996); Karen King, What Is Gnosticism? (2003); David Brakke, The Gnostics (2010)',
+                    note: 'The dismantling of the category, the history of how it was made, and the counter-argument for a narrow, real Sethian movement. Read together they show that the field has no settled answer.',
+                },
+            ],
+        },
+        {
+            slug: 'christian-magical-texts',
+            title: 'Christian Magical Texts',
+            native: 'ⲇⲩⲛⲁⲙⲓⲥ',
+            translit: 'dynamis',
+            summary: 'Several hundred Coptic texts of ritual power, in structures inherited from the Greek and demotic papyri, written by hands trained in the same scriptoria as the liturgy.',
+            paragraphs: [
+                'The standard door into this material in English remains Marvin Meyer and Richard Smith\'s Ancient Christian Magic: Coptic Texts of Ritual Power, published in 1994 out of the Coptic Magical Texts Project at Claremont and reissued by Princeton in 1999. Its subtitle records a deliberate scholarly choice: texts of ritual power, to avoid the word magic and the judgement folded into it. Two document types run through the corpus and are visible at a glance on the page. A formulary is a handbook — instructions, materials, and blank slots where a name is to go. An applied text is a single object made for a named person on a named occasion, with the slot filled in. The critical editions have moved fast. Roxanne Bélanger Sarrazin\'s Catalogue des textes magiques coptes, in Archiv für Papyrusforschung 63 (2017), is the checklist of what exists and grades each item as certainly, probably or possibly magical — a caution worth noticing, since the category has fuzzy edges. Malcolm Choat and Iain Gardner published a complete twenty-page parchment codex as A Coptic Handbook of Ritual Power (2014). Korshi Dosoo and Markéta Preininger\'s Papyri Copticae Magicae, volume one, Formularies (De Gruyter, 2023) gives thirty-seven manuscripts in full, and the Coptic Magical Papyri project at Würzburg maintains the Kyprianos database, which is where the field now looks first.',
+                'The continuity with the older Egyptian material is not simply a matter of atmosphere; part of it is a matter of the script. Old Coptic — Egyptian written in Greek letters with extra signs borrowed from demotic — is attested first and most substantially in magical and astrological manuscripts rather than in scripture, for the plain reason that a ritual text needs vowels and a tax receipt does not. The London–Leiden magical papyrus of the third century (P.Lond.Dem. 10070 and P.Leid. I 383) is written in demotic with Old Coptic glosses added at precisely the points where a divine name had to be pronounced correctly. That is a real and demonstrable fact about where vowel-writing was first put to work. It is not the same as saying that Coptic literature began in a ritual workshop: the standardised literary Coptic of the biblical translations is a partly separate development, and the relation between the two is still argued. The structural inheritance from the Greek Magical Papyri, assembled by Karl Preisendanz as the PGM, is less equivocal: the historiola, a short myth recited to make the present case a repetition of a case already solved; the invocation by name and epithet; the adjuration; the praxis with its materials and gestures; the voces magicae; and the charaktēres, the ring-lettered signs that are drawn rather than written and belong to no alphabet.',
+                'What changes is the filling, not the frame. Into the inherited slots go Christ, the Virgin, the archangels, the patriarchs and the martyrs. The historiola becomes a gospel episode, or an apocryphal one. But the older divine names are not evicted: Sabaoth, Adonai and Eloei stand in the same lists as Jesus, and the compilers appear to have seen no contradiction, on the working assumption that a true name is effective and that these are among the names that are true. The Greek placeholder survives too — ⲇⲓⲛⲁ, from ὁ δεῖνα, so-and-so — waiting for the client\'s name; and the client is very often identified through the mother rather than the father, an old Egyptian and Near Eastern convention that Christianisation left undisturbed.',
+                'The most important thing the manuscripts tell us is who wrote them. The hands are trained hands, schooled in the same scriptoria that produced the liturgical books; formularies turn up inside monastic archives, and the archive of the monastery of Epiphanius at Thebes, excavated and published by Winlock and Crum, held both kinds of writing together. Coptic church legislation condemns the makers of amulets — the Canons of Athanasius, surviving in Arabic and Coptic and edited by W. Riedel and W. E. Crum in 1904, legislate specifically against clergy who manufacture them — and such condemnations are the best evidence we have both of how ordinary the practice was and of who was practising it. The clean line between prayer, blessing and spell is largely a modern line drawn backwards over the material. In the manuscripts it is less a line than a gradient, and the same page will cross it more than once. That is a description of what survives, not a verdict on it.',
+            ],
+            terms: [
+                {
+                    native: 'ⲇⲩⲛⲁⲙⲓⲥ',
+                    translit: 'dynamis',
+                    gloss: 'power; the Greek loanword behind the field\'s own preferred name for this corpus, texts of ritual power',
+                },
+                {
+                    native: 'ⲭⲁⲣⲁⲕⲧⲏⲣ',
+                    translit: 'charaktēr',
+                    gloss: 'a ring-lettered sign, drawn not written, belonging to no alphabet; inherited directly from the Greek papyri',
+                },
+                {
+                    native: 'ⲡⲣⲁⲛ',
+                    translit: 'pran',
+                    gloss: 'the name; ⲣⲁⲛ with the masculine article, and the operative element of nearly every text in the corpus',
+                },
+                {
+                    native: 'ⲇⲓⲛⲁ',
+                    translit: 'dina',
+                    gloss: 'so-and-so; the placeholder taken from Greek ho deina, into which a client\'s name was written when a formulary was applied',
+                },
+                {
+                    native: 'ⲥⲫⲣⲁⲅⲓⲥ',
+                    translit: 'sphragis',
+                    gloss: 'seal; both the drawn sign and the act of sealing a person or a place',
+                },
+                {
+                    native: 'ⲥⲙⲟⲩ',
+                    translit: 'smou',
+                    gloss: 'to bless, a blessing; the verb that occupies the ground between liturgy and ritual power',
+                },
+                {
+                    native: 'ⲙⲁⲅⲓⲁ',
+                    translit: 'magia',
+                    gloss: 'magic; the Greek loanword, used freely in Coptic alongside the inherited Egyptian word ϩⲓⲕ',
+                },
+                {
+                    native: 'ⲁⲙⲏⲛ',
+                    translit: 'amēn',
+                    gloss: 'amen; frequently written in threes or nines to close the operative section of a text',
+                },
+            ],
+            texts: [
+                {
+                    title: 'Marvin Meyer and Richard Smith, Ancient Christian Magic: Coptic Texts of Ritual Power (1994; Princeton, 1999)',
+                    note: 'A large body of texts in English translation, arranged by purpose; still the standard collection for readers without Coptic.',
+                },
+                {
+                    title: 'Korshi Dosoo and Markéta Preininger, Papyri Copticae Magicae, vol. 1: Formularies (De Gruyter, 2023)',
+                    note: 'Thirty-seven manuscripts newly edited with commentary, with Roxanne Bélanger Sarrazin, Edward O. D. Love and others; the current critical foundation of the field.',
+                },
+                {
+                    title: 'Roxanne Bélanger Sarrazin, \'Catalogue des textes magiques coptes\', Archiv für Papyrusforschung 63 (2017), 367–408',
+                    note: 'The checklist of Coptic magical texts, with each item graded as certainly, probably or possibly magical — the honest measure of how porous the category is.',
+                },
+                {
+                    title: 'Malcolm Choat and Iain Gardner, A Coptic Handbook of Ritual Power (The Macquarie Papyri 1, 2014)',
+                    note: 'A complete twenty-page parchment codex: invocation, ritual instruction, and a series of applications.',
+                },
+                {
+                    title: 'The Hay archive of Coptic spells, British Museum',
+                    note: 'Seven fragmentary sheets of leather (EA 10376, 10391, 10414, 10434 and companions), acquired from Robert Hay\'s heir in 1868, carrying texts for divination, protection, healing, advancement, and also cursing and the compulsion of desire. Re-edited in E. R. O\'Connell, ed., The Hay Archive of Coptic Spells on Leather (British Museum Research Publication 233, 2022), which revises the old view of a single scribe around AD 600 towards several non-professional hands rather later.',
+                },
+                {
+                    title: 'The Kyprianos database, Coptic Magical Papyri project, Universität Würzburg',
+                    note: 'An online catalogue and text corpus of Coptic, Greek and demotic magical manuscripts from Egypt, continuously revised.',
+                },
+            ],
+        },
+        {
+            slug: 'ritual-healing',
+            title: 'Ritual Healing',
+            native: 'ⲧⲁⲗϭⲟ',
+            translit: 'talčo',
+            summary: 'Oil, water and the dust of the saints; the incubation shrines, including the one at Menouthis built beside a cult of Isis; and the physician-martyr who kept prescribing after his death.',
+            paragraphs: [
+                'Healing is the single largest purpose in the applied corpus, and its media are humble and material. Oil, ⲛⲉϩ; water, ⲙⲟⲟⲩ; earth or dust lifted from a holy floor. Each of these could be carried away as ⲉⲩⲗⲟⲅⲓⲁ, a blessing — a portable fragment of the shrine\'s power. The small clay ampullae of Abu Mina, stamped with Apa Mena standing in prayer between two kneeling camels, carried the oil or water of his shrine outward from the Mareotis and have been excavated across the Mediterranean world and southward into Nubia. The underlying mechanism is contact. Sanctity is understood to be transferable by touch, so that a substance which has touched the holy becomes operative in its own right, can be taken home, and can be applied to a body a thousand miles away.',
+                'Incubation is the practice of sleeping within a shrine so that the saint may appear in a dream and prescribe. Its best-documented Egyptian case is also the one most often used to argue for a Christian shrine occupying a pagan one, and it repays care. Menouthis, a few miles east of Canopus on the coast near Alexandria, held a long-frequented oracle and healing cult of Isis. In 414 Cyril of Alexandria had the relics of the martyrs Cyrus and John — anargyroi, physicians who took no fee — translated there, into a church of the Four Evangelists that his predecessor Theophilus had begun. That the two cults stood close together is not in doubt: the Isis shrine was still operating late in the fifth century, and Zachariah of Mytilene\'s Life of Severus describes a lay confraternity of Alexandrian philoponoi removing a concealed store of cult images from it in the 480s. What is less secure is the neat story of supersession, since our fullest narrative of Cyril\'s translation comes from Sophronius nearly two centuries later, writing as an advocate of the Christian shrine. Proximity and rivalry are documented; a straight handover of function is an interpretation.',
+                'Two centuries after Cyril, Sophronius, patriarch of Jerusalem, compiled seventy miracles of Cyrus and John. He had himself been cured of an eye complaint at their shrine, and his account remains the fullest description we possess of Christian incubation in practice. Colluthus of Antinoopolis, remembered as a physician executed in the persecution under Diocletian, has a shrine in the northern necropolis of that city which has yielded a Coptic collection of his miracles, presumably of the sixth century, speaking of his bones, of pilgrims sleeping at the shrine, and of gifts made in return for healing and for insight. From the same sanctuary come Coptic lot-book fragments — a broken parchment bifolium of numbered oracular answers published by Lucia Papini in 1998, on which only four answers survive — consulted by pilgrims who had a question rather than an illness; two of its answers run almost word for word with the miniature Sahidic codex AnneMarie Luijendijk published as the Gospel of the Lots of Mary (2014). A doctor in life, Colluthus goes on prescribing after death, and the prescriptions recorded in such collections are often perfectly ordinary medicine — a poultice, a diet, a bath — and occasionally pointedly strange, as though to make plain who is doing the curing.',
+                'In the healing formularies the invocation frequently names Christ as ⲥⲁⲉⲓⲛ, the physician, and the complaint is named with real precision. The fevers are distinguished by their cycle — daily, tertian, quartan — in a taxonomy lifted directly out of Greek clinical medicine, which tells us that the man writing the amulet and the man taking the pulse shared a vocabulary. That is the point to hold on to. The shrine, the amulet and the doctor were not rival systems between which a patient had to choose. They were a single field of resort, and a sick household in sixth-century Egypt might use all three inside a week without any sense of inconsistency.',
+            ],
+            terms: [
+                {
+                    native: 'ⲧⲁⲗϭⲟ',
+                    translit: 'talčo',
+                    gloss: 'to heal, to cure; the ordinary Sahidic verb, and the word the healing texts use of what they intend. The letter ϭ (shima) is variously transliterated č, ḳ or ǧ',
+                },
+                {
+                    native: 'ϣⲱⲛⲉ',
+                    translit: 'shōne',
+                    gloss: 'to be ill; illness, sickness',
+                },
+                {
+                    native: 'ⲡⲉⲧϣⲱⲛⲉ',
+                    translit: 'petshōne',
+                    gloss: 'the one who is sick, the patient; a relative form, literally \'he who is ill\'',
+                },
+                {
+                    native: 'ⲥⲁⲉⲓⲛ',
+                    translit: 'saein',
+                    gloss: 'physician; also spelled ⲥⲁⲓⲛ, and used of Christ in the healing invocations',
+                },
+                {
+                    native: 'ⲛⲉϩ',
+                    translit: 'neh',
+                    gloss: 'oil; the principal medium of transferred blessing, carried in stamped flasks',
+                },
+                {
+                    native: 'ⲙⲟⲟⲩ',
+                    translit: 'moou',
+                    gloss: 'water; at Abu Mina drawn from the shrine\'s own supply',
+                },
+                {
+                    native: 'ⲉⲩⲗⲟⲅⲓⲁ',
+                    translit: 'eulogia',
+                    gloss: 'blessing; specifically the material token — oil, water, dust, bread — taken away from a shrine',
+                },
+                {
+                    native: 'ⲁⲡⲁ',
+                    translit: 'apa',
+                    gloss: 'father; the title borne by monastic elders and by saints, as in Apa Mena, Apa Shenoute',
+                },
+            ],
+            texts: [
+                {
+                    title: 'Sophronius of Jerusalem, The Miracles of Saints Cyrus and John',
+                    note: 'Seventy miracle accounts compiled in the early seventh century at the Menouthis shrine, by a man cured there himself; the fullest surviving description of Christian incubation in Egypt, and a partisan one.',
+                },
+                {
+                    title: 'Zachariah of Mytilene, Life of Severus',
+                    note: 'Written in Greek, surviving in Syriac; describes the Isis cult still active at Menouthis and the removal of its concealed cult images by Alexandrian philoponoi in the 480s.',
+                },
+                {
+                    title: 'The Coptic Miracles of Kollouthos',
+                    note: 'A collection, presumably sixth-century, attached to the shrine of the physician-martyr at Antinoopolis, mentioning his relics, incubation, and donations made in return for healing and insight.',
+                },
+                {
+                    title: 'The Antinoopolis lot-book fragments and the Gospel of the Lots of Mary',
+                    note: 'A broken Coptic parchment bifolium of numbered oracular answers from the Colluthus sanctuary, published by Lucia Papini in 1998, overlapping textually with the miniature Sahidic codex edited by AnneMarie Luijendijk as Forbidden Oracles? The Gospel of the Lots of Mary (2014).',
+                },
+                {
+                    title: 'The Menas ampullae, Abu Mina',
+                    note: 'Stamped clay flasks for shrine oil or water, distributed widely across the late antique Mediterranean; the physical evidence for blessing as a transportable substance.',
+                },
+                {
+                    title: 'David Frankfurter, Christianizing Egypt (2018)',
+                    note: 'The standard modern account of how shrine, holy man, amulet and festival were assembled locally into an Egyptian Christianity.',
+                },
+            ],
+        },
+        {
+            slug: 'exorcism',
+            title: 'Exorcism',
+            native: 'ⲧⲁⲣⲕⲟ',
+            translit: 'tarko',
+            summary: 'Binding by oath; the Solomonic pattern in which a demon\'s name is its lever; and the desert literature, which insists the demons have already lost.',
+            paragraphs: [
+                'The characteristic verb of the Coptic material is ⲧⲁⲣⲕⲟ, the causative of ⲱⲣⲕ, to swear: to make swear, to put under oath. That single word carries the operative logic of the whole genre. The spirit is not persuaded, bribed or bargained with; it is bound by an oath sworn upon names it is held to be incapable of resisting. The formularies accordingly spend most of their length naming — naming God by his acts, by the creation, by the sealing of the abyss, by the dividing of the sea, and then naming the angels who stand before him — and issue the command only at the end. The verb for the expulsion itself is ⲛⲟⲩϫⲉ ⲉⲃⲟⲗ, to cast out, which is exactly the phrase the Sahidic gospels use of Christ. The shape of these texts can be described; their contents are not set out here, and were never meant to be read by anyone but the practitioner who compiled them.',
+                'Behind the pattern stands Solomon. The Testament of Solomon survives in Greek, in a form no earlier than the third or fourth century, edited by Chester Charlton McCown in 1922, and it sets out the mechanism with schematic clarity: each demon is brought before the king, compelled to give its name, made to state what harm it does and to what part of the body, and then made to name the angel who thwarts it. Naming is the entire apparatus. A spirit that has disclosed its name has surrendered the handle by which it may be held. The Coptic ritual texts are not translations of the Testament, and it would be wrong to say that the Testament exists in Coptic dress; but they share its assumptions, they invoke Solomon and his seal, and their catalogues of afflicting spirits by name and function belong to the same intellectual world.',
+                'The monastic narratives approach the same subject from the opposite direction and are theologically careful about power. Athanasius wrote the Life of Antony within a few years of Antony\'s death in 356, and it circulated at once in Greek and soon after in Coptic and Syriac; René Draguet\'s argument that the Syriac renders a lost Coptic original has not carried the field and remains debated. Its demons are loud, shape-shifting and genuinely terrifying, and Athanasius\'s insistence throughout is that they are nothing. They cannot compel, only suggest. Their apparent prophecies are inference dressed as foreknowledge — they travel fast and guess well. They were disarmed at the cross, and fear is the only weapon left to them, which means that a monk who is not afraid has already won. This is a doctrine designed to reduce the demonic to a manageable size, and in its logic it runs directly against the formularies\' apparatus of names and compulsion.',
+                'The Apophthegmata Patrum are drier still. The sayings treat demons as an occupational condition rather than a spectacle, and the elders warn repeatedly against seeking encounters, against setting any value on visions, and against the particular vanity that the gift of exorcism breeds in the one who has it — a gift understood as dangerous chiefly to its possessor. The Coptic Orthodox Church has never abandoned this ground. Prayers of exorcism remain in its service books, and the renunciation made by a baptismal candidate turning westward is the same gesture the desert literature describes, still performed today in a continuous liturgical tradition. What is written above is history and description; the living rite belongs to the Church that keeps it, and is administered by its clergy.',
+            ],
+            terms: [
+                {
+                    native: 'ⲧⲁⲣⲕⲟ',
+                    translit: 'tarko',
+                    gloss: 'to adjure, to put under oath; the causative of ⲱⲣⲕ and the standard verb of Coptic adjuration',
+                },
+                {
+                    native: 'ⲱⲣⲕ',
+                    translit: 'ōrk',
+                    gloss: 'to swear, to take an oath; the root beneath the adjuration formula',
+                },
+                {
+                    native: 'ⲇⲁⲓⲙⲱⲛⲓⲟⲛ',
+                    translit: 'daimonion',
+                    gloss: 'demon; the Greek loanword, used in both the biblical and the ritual texts',
+                },
+                {
+                    native: 'ⲡⲛⲉⲩⲙⲁ ⲛⲁⲕⲁⲑⲁⲣⲧⲟⲛ',
+                    translit: 'pneuma nakatharton',
+                    gloss: 'unclean spirit; in the manuscripts the first word is abbreviated as a nomen sacrum and the attributive n- carries a supralinear stroke, both omitted here',
+                },
+                {
+                    native: 'ⲛⲟⲩϫⲉ ⲉⲃⲟⲗ',
+                    translit: 'noudje ebol',
+                    gloss: 'to cast out; the Sahidic gospels\' own phrase for the expulsion of a spirit',
+                },
+                {
+                    native: 'ⲥⲟⲗⲟⲙⲱⲛ',
+                    translit: 'solomōn',
+                    gloss: 'Solomon; invoked with his seal as the archetypal binder of spirits',
+                },
+                {
+                    native: 'ⲥⲁⲧⲁⲛⲁⲥ',
+                    translit: 'satanas',
+                    gloss: 'Satan; the adversary of the Life of Antony, whose defeat that text treats as already accomplished',
+                },
+                {
+                    native: 'ⲥⲧⲁⲩⲣⲟⲥ',
+                    translit: 'stauros',
+                    gloss: 'cross; in Athanasius the instrument by which the demons were already disarmed, and so the sufficient answer to them',
+                },
+            ],
+            texts: [
+                {
+                    title: 'Athanasius, Life of Antony',
+                    note: 'Written within a few years of Antony\'s death in 356; the founding narrative of desert demonology, insisting that demons can suggest but never compel. Coptic and Syriac versions circulated early.',
+                },
+                {
+                    title: 'Apophthegmata Patrum',
+                    note: 'The sayings of the desert fathers and mothers, in Greek alphabetical, anonymous and systematic recensions and in Coptic collections; sober, sceptical of visions, wary of the exorcist\'s vanity.',
+                },
+                {
+                    title: 'The Testament of Solomon',
+                    note: 'Greek, in its present form third or fourth century; edited by C. C. McCown, 1922. The pattern of demon, name, affliction and thwarting angel — the assumptions the Coptic material shares, though it does not translate this text.',
+                },
+                {
+                    title: 'Papyri Copticae Magicae, vol. 1: Formularies (2023)',
+                    note: 'Includes exorcistic handbooks; the adjuration structure — divine acts recited, angelic names listed, command issued — can be seen there in full and in its manuscript context.',
+                },
+                {
+                    title: 'The service books of the Coptic Orthodox Church',
+                    note: 'Prayers of exorcism and the pre-baptismal renunciation remain in liturgical use; a living rite, and not an object of study only.',
+                },
+            ],
+        },
+        {
+            slug: 'protective-spells',
+            title: 'Protective Spells',
+            native: 'ⲫⲩⲗⲁⲕⲧⲏⲣⲓⲟⲛ',
+            translit: 'phylaktērion',
+            summary: 'Folded papyrus worn at the neck or set at a threshold; Psalm 90 above all other texts; and a catalogue of ordinary terrors — fever, dog-bite, childbirth, the envious eye.',
+            paragraphs: [
+                'The amulet is a physical object before it is a text, and the objects survive. Papyrus outnumbers every other material in the catalogues, with parchment, ostraca, wood, cloth and thin metal sheets behind it. The sheet was written, then folded down very small — often repeatedly, along axes still legible in the creases — sometimes tied with thread, and then worn at the neck in a case, sewn into clothing, fixed above a doorway or set at a threshold. Some have been excavated still folded and still tied. The bulk of catalogued examples fall between the fourth and the seventh centuries. Two reference works underpin everything: Theodore de Bruyn and Jitse Dijkstra\'s checklist of Greek amulets and formularies containing Christian elements, in the Bulletin of the American Society of Papyrologists 48 (2011), and, for this hall\'s own language, Roxanne Bélanger Sarrazin\'s catalogue of Coptic magical texts of 2017. De Bruyn\'s Making Amulets Christian (2017) is the study of the scribes themselves and how they worked.',
+                'One text dominates. Psalm 90 in the Septuagint numbering — Psalm 91 in the Hebrew — appears on more amulets than any other passage: the psalm of dwelling in the shelter of the Most High, of the fowler\'s snare, the terror by night, the arrow that flies by day, and the demon of the noonday. Sometimes it was copied out at length, as on P.Oxy. XVI 1928, a fifth- or early sixth-century sheet carrying the whole psalm and, on the other side, the Lord\'s Prayer with a doxology. Very often, though, only its opening line was written. The incipit stands for the whole, on the working principle that a text\'s power lies in its identity rather than in its completeness — the principle that also explains the pairing of the psalm with the opening words of the four gospels, as in BKT VI 7.1, a sixth- or seventh-century amulet from the Fayum that runs a trinitarian invocation into Psalm 90:1 and then the first words of John, Matthew, Mark and Luke. Joseph Sanzo\'s catalogue gathers some twenty-five amulets citing the four gospel openings together, in Greek, Coptic and even Latin. Four beginnings and a psalm were held to be a sufficient citation of everything they begin.',
+                'The signs matter as much as the words. The staurogram ⳨, a tau crossed by a rho, and the chi-rho ⳩ appear as headers, as separators, and frequently as the operative content itself; a row of crosses will bracket the working portion of a text. What is striking, and easy to miss, is that on many sheets the cross occupies the position where a Greek formulary of two centuries earlier would have drawn its charaktēres. The layout is inherited and the sign in the slot has changed. Whether that constitutes conversion or substitution — whether the scribe meant a confession of faith or a more effective sign — is exactly the question the field argues about, and the manuscripts do not settle it.',
+                'The occasions are domestic and urgent, and the catalogue is a portrait of what people were actually afraid of. Fever, named by its cycle. The bite of a mad dog. Scorpion sting. The safety of a woman in labour, where the narrative precedent invoked is very often Mary\'s own delivery. The protection of a house, a byre, a granary, a field. And the eye — ⲃⲁⲗ, taken with the word for evil — the gaze that harms through envy, against which a great many of these sheets were written. It is worth holding the scale of this in mind. This is not the property of an occult elite. It is a village, a fever, a frightened parent, and a folded scrap of papyrus on a cord.',
+            ],
+            terms: [
+                {
+                    native: 'ⲫⲩⲗⲁⲕⲧⲏⲣⲓⲟⲛ',
+                    translit: 'phylaktērion',
+                    gloss: 'phylactery, amulet; the Greek term used in the texts themselves for the worn protective object',
+                },
+                {
+                    native: 'ⲭⲁⲣⲧⲏⲥ',
+                    translit: 'chartēs',
+                    gloss: 'a sheet of papyrus; the commonest support among the catalogued amulets',
+                },
+                {
+                    native: 'ⲯⲁⲗⲙⲟⲥ',
+                    translit: 'psalmos',
+                    gloss: 'psalm; in practice, most often Psalm 90 in the Septuagint numbering',
+                },
+                {
+                    native: 'ϩⲁⲣⲉϩ',
+                    translit: 'hareh',
+                    gloss: 'to keep, to guard; the verb of the request — keep so-and-so, guard this house',
+                },
+                {
+                    native: '⳨',
+                    translit: 'tau-rho',
+                    gloss: 'the staurogram: tau crossed by rho, drawn as a header, a separator, and often as the operative sign itself. Unicode U+2CE8, COPTIC SYMBOL TAU RO',
+                },
+                {
+                    native: 'ⲃⲁⲗ',
+                    translit: 'bal',
+                    gloss: 'eye; with the word for evil it names the envious gaze the amulets are so often written against',
+                },
+                {
+                    native: 'ⲃⲟⲟⲛⲉ',
+                    translit: 'boone',
+                    gloss: 'evil, bad; the adjective that accompanies ⲃⲁⲗ in this context, as ⲃⲁⲗ ⲙⲃⲟⲟⲛⲉ',
+                },
+                {
+                    native: 'ⲙⲓⲥⲉ',
+                    translit: 'mise',
+                    gloss: 'to give birth; the verb of the childbirth texts, whose narrative precedent is usually Mary\'s own delivery',
+                },
+            ],
+            texts: [
+                {
+                    title: 'Theodore de Bruyn and Jitse Dijkstra, \'Greek Amulets and Formularies from Egypt Containing Christian Elements: A Checklist\', BASP 48 (2011)',
+                    note: 'The catalogue on which much subsequent work rests: papyri, parchments, ostraca and tablets, with materials, dates and contents. Greek material; the Coptic counterpart is Bélanger Sarrazin\'s catalogue of 2017.',
+                },
+                {
+                    title: 'Theodore de Bruyn, Making Amulets Christian: Artefacts, Scribes, and Contexts (2017)',
+                    note: 'How the amulet scribes were trained, what they copied from, and how Christian material entered inherited formats.',
+                },
+                {
+                    title: 'BKT VI 7.1',
+                    note: 'A sixth- or seventh-century amulet from the Fayum: trinitarian invocation, LXX Psalm 90:1, then the opening words of John, Matthew, Mark and Luke — the incipit standing for the whole.',
+                },
+                {
+                    title: 'P.Oxy. XVI 1928',
+                    note: 'A fifth- or early sixth-century amulet carrying the whole of LXX Psalm 90 and, on the other side, the Lord\'s Prayer with a doxology; the counter-case, where the psalm is written out at length.',
+                },
+                {
+                    title: 'Joseph E. Sanzo, Scriptural Incipits on Amulets from Late Antique Egypt (2014)',
+                    note: 'The catalogue and the argument for why an opening line was held to carry the force of the entire text it opens.',
+                },
+                {
+                    title: 'Meyer and Smith, Ancient Christian Magic, the protective sections',
+                    note: 'Texts against fever, scorpion, dog-bite and the evil eye, and for the safety of houses, fields and women in labour, in English translation.',
+                },
+            ],
+        },
+        {
+            slug: 'angelic-invocations',
+            title: 'Angelic Invocations',
+            native: 'ⲙⲓⲭⲁⲏⲗ',
+            translit: 'michaēl',
+            summary: 'Michael, whose Egyptian cult has few rivals anywhere; the seven who stand before the throne; and the fault line between asking an angel and adjuring one.',
+            paragraphs: [
+                'Few angels anywhere in Christendom have a cult of the scale Michael has in Egypt. He is commemorated on the twelfth day of every Coptic month, and the tradition associates the feast of 12 Ba\'una with the beginning of the Nile\'s rise, placing the archangel at the pivot of the agricultural year. Churches, monasteries and personal names carry his name throughout the country; the great Coptic manuscript hoard now in the Pierpont Morgan Library came from the Monastery of the Archangel Michael at Phantoou in the Fayum. A substantial body of Coptic homiletic and apocryphal literature attends him, including the Investiture of the Archangel Michael, preserved complete in Morgan codex M593, copied at Touton in 892 or 893 and edited with its companion on Gabriel by C. Detlef G. Müller in 1962, in which Michael receives the office forfeited by the angel who fell. In the ritual texts he is almost always the first archangel named and by a wide margin the most invoked.',
+                'Gabriel, Raphael and Suriel stand with him at the head of the list. Coptic enumerations of the seven archangels who stand before the throne usually continue with Sedakiel, Sarathiel and Ananiel, though the lists are not perfectly stable and other names appear in other witnesses. Suriel deserves particular notice: he holds a settled and honoured place in the Coptic and Ethiopian traditions that he never acquired in the Latin West, and he is a standard presence throughout the Coptic ritual corpus. Each of the seven carries a function — the messenger, the healer, the trumpeter, the recorder — and the functions attach to the names rather than to any developed personality.',
+                'The names themselves are the technical heart of the matter. They end in -ēl, the Hebrew word for God, and that ending is productive: a Coptic formulary will stack dozens of -ēl names in sequence, a few canonical, most otherwise unattested, some plainly generated to sustain a rhythm. It would be a mistake to read this as carelessness. The working logic is that a name participates in what it names, that a list of names is therefore a list of powers, and that reciting such a list is a mustering. The same passages will set the Hebrew divine names, Sabaoth and Adonai and Eloei, and untranslatable voces magicae, in the same sequence and on the same footing, because all of them are being treated as true names.',
+                'Here is the fault line. A text that asks Michael to intercede is a prayer, and belongs to the ordinary devotion of a Christian people; it is what a Coptic Christian does today. A text that adjures Michael by the name of the one who made him, and requires him to appear, is doing something categorically different, since it treats an angel as subject to compulsion. A number of Coptic texts sit on that line and cross it within a few lines, sliding from petition into command and back. Churchmen policed the boundary, though the evidence needs handling with care: the thirty-fifth canon of the Council of Laodicea, a Phrygian synod of about 363 or 364, condemns the invocation of angels and assemblies held for it, but what precisely it targeted is disputed and it is not an Egyptian document. Closer to home, the Canons of Athanasius legislate against clergy who make amulets. And the practice continued, in the same regions, in the same trained hands. Both halves of that sentence belong to the historical record, and neither should be quietly dropped.',
+            ],
+            terms: [
+                {
+                    native: 'ⲁⲅⲅⲉⲗⲟⲥ',
+                    translit: 'angelos',
+                    gloss: 'angel, messenger; the Greek loan, universal in Coptic',
+                },
+                {
+                    native: 'ⲁⲣⲭⲁⲅⲅⲉⲗⲟⲥ',
+                    translit: 'archangelos',
+                    gloss: 'archangel; the rank of the seven who stand before the throne',
+                },
+                {
+                    native: 'ⲙⲓⲭⲁⲏⲗ',
+                    translit: 'michaēl',
+                    gloss: 'Michael; commemorated on the twelfth of every Coptic month and first named in the ritual texts',
+                },
+                {
+                    native: 'ⲅⲁⲃⲣⲓⲏⲗ',
+                    translit: 'gabriēl',
+                    gloss: 'Gabriel; the messenger, invoked especially in texts touching conception and childbirth',
+                },
+                {
+                    native: 'ⲣⲁⲫⲁⲏⲗ',
+                    translit: 'raphaēl',
+                    gloss: 'Raphael; the healer, whose name contains the Hebrew root for healing',
+                },
+                {
+                    native: 'ⲥⲟⲩⲣⲓⲏⲗ',
+                    translit: 'souriēl',
+                    gloss: 'Suriel; honoured in the Coptic and Ethiopian traditions as one of the seven, and standard in the ritual corpus',
+                },
+                {
+                    native: 'ⲥⲁⲃⲁⲱⲑ',
+                    translit: 'sabaōth',
+                    gloss: 'Sabaoth, \'of hosts\'; a Hebrew divine title treated in these texts as an operative name',
+                },
+                {
+                    native: 'ⲁⲇⲱⲛⲁⲓ',
+                    translit: 'adōnai',
+                    gloss: 'Adonai, \'my Lord\'; likewise transmitted untranslated and used as a name of power',
+                },
+            ],
+            texts: [
+                {
+                    title: 'The Investiture of the Archangel Michael',
+                    note: 'A Coptic apocryphon preserved complete in Pierpont Morgan codex M593, copied at Touton in 892/893 and found in the ruins of the Monastery of the Archangel Michael at Phantoou; edited with the companion Investiture of Gabriel by C. Detlef G. Müller, CSCO 225–226 (1962).',
+                },
+                {
+                    title: 'Meyer and Smith, Ancient Christian Magic, the angelic invocations',
+                    note: 'Texts in which the seven are named, the -ēl names stacked, and petition and adjuration alternate on the same page.',
+                },
+                {
+                    title: 'Papyri Copticae Magicae, vol. 1: Formularies (2023)',
+                    note: 'Formularies whose invocation sections show the extent of angelic name-stacking and its placement within the ritual structure.',
+                },
+                {
+                    title: 'Canon 35 of the Council of Laodicea',
+                    note: 'A Phrygian synod of about 363–364, condemning the invocation of angels and assemblies held for it. Its precise target is disputed, and it is evidence for the wider Church\'s unease rather than for Egyptian practice specifically.',
+                },
+                {
+                    title: 'The Canons of Athanasius',
+                    note: 'Surviving in Arabic and Coptic, edited by W. Riedel and W. E. Crum (1904); among other things they legislate against clergy who make phylacteries — testimony to how widespread and how respectably staffed the practice was.',
+                },
+            ],
+        },
+        {
+            slug: 'monastic-mysticism',
+            title: 'Monastic Mysticism',
+            native: 'ⲏⲥⲩⲭⲓⲁ',
+            translit: 'hēsychia',
+            summary: 'Antony, Pachomius and Shenoute; the sayings as a literary form; and Evagrius\' anatomy of the thought, which became the West\'s seven deadly sins.',
+            paragraphs: [
+                'Three careers shaped most of what followed. Antony, born by the traditional reckoning about 251 and dead in 356, withdrew first to tombs at the edge of his village, then to an abandoned fort, then to the Inner Mountain by the Red Sea; Athanasius\'s Life made him the pattern of the solitary and was read across the empire within a generation. Pachomius, at Tabennesi in the Thebaid from about 323, made the other and quite different invention: the koinonia, a walled community with a gatekeeper, a written rule, houses grouped by trade, a signal calling the brothers to prayer, and a common table. His Rules survive in Jerome\'s Latin translation of 404 and in Coptic fragments. Shenoute of Atripe, who governed the White Monastery federation near Sohag for some eight decades and died — on Stephen Emmel\'s reconstruction of a date long disputed — in 465, left the largest body of original literature in the Coptic language. Emmel showed in 2004, working from about a hundred parchment codices surviving as nearly two thousand scattered leaves, that the corpus had been transmitted as two multi-volume sets: nine volumes of Canons, addressed to his own communities, and eight of Discourses, addressed to the world outside. It is among the great feats of modern Coptic scholarship.',
+                'The Apophthegmata Patrum preserve the teaching in a form of its own. A brother comes to an elder and asks for a word, and receives a sentence. The virtues of the genre are compression and refusal: the elders decline abstraction, decline to be impressed, decline to answer the question that was asked when a different question is the real one, and stop speaking well before a modern reader would like them to. The collections exist in Greek in alphabetical, anonymous and systematic recensions, and in Coptic alongside them; the alphabetical collection includes sayings of ammas as well as abbas — Syncletica, Sarah, Theodora — and their transmission is among the most complicated in Christian literature, precisely because the unit is small enough to travel alone.',
+                'The technical vocabulary repays close attention, because these are precise terms and not devotional decoration. ⲏⲥⲩⲭⲓⲁ is stillness — not merely silence, but the settled condition in which the movements of one\'s own mind become observable. ⲣⲟⲉⲓⲥ is the Coptic verb for keeping watch, the sober attention that notices a thought at the moment of its arrival rather than after it has been entertained; the Greek ascetic tradition\'s corresponding noun, nēpsis, belongs chiefly to later Byzantine writing. ⲇⲓⲁⲕⲣⲓⲥⲓⲥ, discernment, is called in this literature the queen of the virtues: the capacity to tell where a thought has come from, which is the whole difficulty, since thoughts do not announce their provenance. ⲁⲡⲁⲑⲉⲓⲁ is not apathy but the health of the soul, the state in which the passions have ceased to dictate. And the desert is where these are learned, in this literature\'s own account, not because it is haunted but because it is empty: strip away distraction and the mind is left facing itself.',
+                'Evagrius Ponticus, at Nitria and then at Kellia, gave the tradition its analysis, and it is among the most durable pieces of psychology the ancient Church produced. The ⲗⲟⲅⲓⲥⲙⲟⲥ, the thought, is the unit of observation. It arrives unbidden; it is not yet sin; the art consists in catching it early and identifying its kind correctly. He counted eight — gluttony, lust, avarice, sadness, anger, acedia, vainglory, pride — and described the order in which they attack, the tactics each uses, and what defeats it. ⲁⲕⲏⲇⲓⲁ, the listless despondency he calls the noonday demon after Psalm 90, receives the longest and best treatment: the monk watching the sun refuse to move, hating his cell, certain that some other place would suit him better. John Cassian carried the eight to Gaul in his Institutes; Gregory the Great later reordered them into the seven the medieval West inherited. Evagrius himself was condemned with Origen at Constantinople in 553, and much of his work survived under other men\'s names and in Syriac and Armenian translation, which is why so much of him reached later readers anonymously and did its work unattributed.',
+            ],
+            terms: [
+                {
+                    native: 'ⲏⲥⲩⲭⲓⲁ',
+                    translit: 'hēsychia',
+                    gloss: 'stillness; the settled condition in which one\'s own mental movements become observable. A Greek loan; Coptic normally transcribes Greek words without marking the rough breathing, though spellings with initial ϩ- also occur',
+                },
+                {
+                    native: 'ⲣⲟⲉⲓⲥ',
+                    translit: 'roeis',
+                    gloss: 'to watch, to be vigilant; the Coptic verb of ascetic attention. Its Greek counterpart nēpsis belongs mainly to the later Byzantine vocabulary',
+                },
+                {
+                    native: 'ⲇⲓⲁⲕⲣⲓⲥⲓⲥ',
+                    translit: 'diakrisis',
+                    gloss: 'discernment; the ability to identify the source of a thought, called in this literature the queen of the virtues',
+                },
+                {
+                    native: 'ⲁⲡⲁⲑⲉⲓⲁ',
+                    translit: 'apatheia',
+                    gloss: 'passionlessness; not indifference but the health of the soul, in which the passions no longer govern. Also spelled ⲁⲡⲁⲑⲓⲁ',
+                },
+                {
+                    native: 'ⲗⲟⲅⲓⲥⲙⲟⲥ',
+                    translit: 'logismos',
+                    gloss: 'thought; Evagrius\' unit of analysis, not yet sin, and the thing the whole discipline watches',
+                },
+                {
+                    native: 'ⲁⲕⲏⲇⲓⲁ',
+                    translit: 'akēdia',
+                    gloss: 'acedia, listlessness; the noonday demon of Psalm 90, and the monk\'s characteristic affliction',
+                },
+                {
+                    native: 'ⲙⲟⲛⲁⲭⲟⲥ',
+                    translit: 'monachos',
+                    gloss: 'monk; literally the single or solitary one',
+                },
+                {
+                    native: 'ⲡⲧⲟⲟⲩ',
+                    translit: 'ptoou',
+                    gloss: 'the mountain; ⲧⲟⲟⲩ with the article, and in Coptic usage the monastic settlement itself, so that to go to the mountain is to enter the life',
+                },
+            ],
+            texts: [
+                {
+                    title: 'Athanasius, Life of Antony',
+                    note: 'Written within a few years of 356 and read across the empire; the pattern of the solitary and the founding text of desert demonology.',
+                },
+                {
+                    title: 'The Pachomian Rules and the Pachomian Koinonia',
+                    note: 'The first coenobitic legislation, surviving in Jerome\'s Latin of 404 and in Coptic fragments, together with the Lives and letters of the founder.',
+                },
+                {
+                    title: 'Shenoute of Atripe, Canons and Discourses',
+                    note: 'The largest original corpus in Coptic; its dispersed leaves reassembled into nine volumes of Canons and eight of Discourses by Stephen Emmel, Shenoute\'s Literary Corpus (CSCO Subsidia 111–112, 2004).',
+                },
+                {
+                    title: 'Apophthegmata Patrum',
+                    note: 'The sayings, in Greek alphabetical, anonymous and systematic recensions and in Coptic collections; ammas as well as abbas; a word given to a brother who asks for one.',
+                },
+                {
+                    title: 'Evagrius Ponticus, Praktikos and On Prayer',
+                    note: 'The anatomy of the logismoi and the eight kinds of thought; much of the wider corpus preserved in Syriac and Armenian after his condemnation in 553.',
+                },
+                {
+                    title: 'John Cassian, Institutes',
+                    note: 'The transmission of Evagrius\' eight thoughts to the Latin West, later reordered by Gregory the Great into the familiar seven.',
+                },
+            ],
+        },
+        {
+            slug: 'egyptian-survivals',
+            title: 'Egyptian Survivals',
+            native: 'ϩⲓⲕ',
+            translit: 'hik',
+            summary: 'A word for magic descended from heka; a script whose vowels were first put to work in ritual manuscripts; and the discipline required to tell a real chain of descent from a resemblance.',
+            paragraphs: [
+                'The clearest survivals are words. Coptic ϩⲓⲕ is Egyptian ḥkꜣ, the term conventionally rendered heka, worn down by three thousand years and still in service — though Coptic also borrowed the Greek ⲙⲁⲅⲓⲁ freely, and the two sit side by side, so the survival of the word is not by itself a survival of a system. It is not alone. ⲛⲟⲩⲧⲉ, the word Coptic Christians use for God, is nṯr, the word for the old gods. ⲁⲙⲛⲧⲉ, the underworld and then hell, is imnt, the West. ⲕⲏⲙⲉ, Egypt, is kmt, the black land; and the Coptic language calls itself the speech of the people of Kēme. The language is itself the survival — and because Coptic writes vowels, which the hieroglyphic and demotic scripts did not, it preserves the sound of Egyptian words that would otherwise be unpronounceable. Coptic is a large part of the key by which Egyptian is read at all.',
+                'The second demonstrable chain runs through the script. Egyptian written in Greek letters is attested first and most substantially not in scripture but in magical and astrological manuscripts, because a ritual text needs vowels in a way that a tax receipt does not: a name mispronounced is a name not spoken. The Old Coptic glosses added to the third-century London–Leiden magical papyrus are the fullest early witness to the experiment, and they appear precisely where vocalisation mattered. That is a solid observation about where vowel-writing was first put to serious use. It is not the same as the larger claim that Coptic literacy as a whole began in a ritual workshop: the standardised literary Coptic of the biblical translations is a partly separate development, and how the two are related is still argued.',
+                'The most-cited case is the healing historiola. On the Metternich Stela and on the small cippi of Horus, Isis finds the child Horus struck down and cries out, and the gods answer, and the cure narrated in the myth is thereby applied to the sufferer standing before the stone. In the Coptic material the same shape recurs with Mary distressed and Christ or an archangel responding, and the childbirth texts routinely invoke Mary\'s own delivery as the precedent the present delivery is to repeat. The structural resemblance is real and striking, and the geography and continuity of population make an Egyptian route plausible.',
+                'And yet resemblance is not descent, and this is where the discipline has to be applied. The historiola — a myth recited so that a present case becomes a repetition of a case already resolved — is among the commonest devices in Near Eastern and Mediterranean ritual generally, at home in Akkadian incantations and in Greek papyri, and requires no Egyptian ancestry to explain it. Many alleged survivals turn out on inspection to be late-antique Mediterranean common property rather than anything specifically Egyptian, and the habit of reading for pagan survivals has a long and unflattering record of finding exactly what it set out to find, often in the service of arguments about how Christian Egypt\'s Christians really were. The same caution governs the pictures: the ouroboros does appear in Coptic magical drawings, as do ring-signs with visible Egyptian ancestry, but that a motif is old tells us nothing about what a sixth-century scribe took it to mean.',
+                'The strongest modern account is David Frankfurter\'s, in Religion in Roman Egypt (1998) and Christianizing Egypt (2018), and it is worth noticing how he frames it — not as an old religion hiding beneath a new one, but as a Christianity assembled locally out of the materials to hand, shrine and holy man and amulet and festival, by people who understood themselves as Christians and were. That reframing is the honest resolution. Continuity must be argued object by object and formula by formula, with the chain shown. Where the chain can be shown — the word ϩⲓⲕ, the Old Coptic glosses, the proximity of the shrines at Menouthis — it is strong. Where it cannot, what remains is an atmosphere, and atmospheres are not evidence.',
+            ],
+            terms: [
+                {
+                    native: 'ϩⲓⲕ',
+                    translit: 'hik',
+                    gloss: 'magic; the direct descendant of Egyptian ḥkꜣ (heka). Coptic also uses the Greek loan ⲙⲁⲅⲓⲁ, and the two are not in complementary distribution',
+                },
+                {
+                    native: 'ⲣⲉϥϩⲓⲕ',
+                    translit: 'refhik',
+                    gloss: 'a practitioner of ϩⲓⲕ; formed with the agent prefix ⲣⲉϥ-, \'the one who does\'',
+                },
+                {
+                    native: 'ⲛⲟⲩⲧⲉ',
+                    translit: 'noute',
+                    gloss: 'god; from Egyptian nṯr — the word for the old gods, taken over unchanged for the God of the Christians',
+                },
+                {
+                    native: 'ⲁⲙⲛⲧⲉ',
+                    translit: 'amnte',
+                    gloss: 'the underworld, and later hell; from Egyptian imnt, the West, the land of the dead',
+                },
+                {
+                    native: 'ⲕⲏⲙⲉ',
+                    translit: 'kēme',
+                    gloss: 'Egypt; from kmt, the black land, the alluvial soil as against the red desert',
+                },
+                {
+                    native: 'ⲙⲛⲧⲣⲙⲛⲕⲏⲙⲉ',
+                    translit: 'mntrmnkēme',
+                    gloss: 'the Egyptian language, that is, Coptic; literally the speech of the man of Kēme. Written in manuscripts with supralinear strokes over the n\'s, omitted here',
+                },
+                {
+                    native: 'ⲏⲥⲉ',
+                    translit: 'ēse',
+                    gloss: 'Isis; Coptic spellings vary across Old Coptic and later witnesses, and this is one form among several',
+                },
+                {
+                    native: 'ϩⲱⲣ',
+                    translit: 'hōr',
+                    gloss: 'Horus; surviving chiefly in Coptic personal names, and the child of the Isis healing narratives',
+                },
+            ],
+            texts: [
+                {
+                    title: 'W. E. Crum, A Coptic Dictionary (1939)',
+                    note: 'The lexicon in which the Egyptian ancestry of Coptic vocabulary can be traced word by word; still unsuperseded.',
+                },
+                {
+                    title: 'The London–Leiden magical papyrus (P.Lond.Dem. 10070 + P.Leid. I 383)',
+                    note: 'Third century, demotic with Old Coptic glosses added where names had to be vocalised; the fullest early evidence that vowel-writing was first put to work for ritual.',
+                },
+                {
+                    title: 'The Metternich Stela and the cippi of Horus',
+                    note: 'The Isis-and-Horus healing narrative in its Egyptian form, the mythic precedent applied to the sufferer before the stone.',
+                },
+                {
+                    title: 'David Frankfurter, Religion in Roman Egypt (1998)',
+                    note: 'The fullest case for local continuity and transformation, and the standard against which claims of survival are now tested.',
+                },
+                {
+                    title: 'David Frankfurter, Christianizing Egypt (2018)',
+                    note: 'The reframing: not an old religion beneath a new one, but a Christianity assembled locally from shrine, holy man, amulet and festival.',
+                },
+                {
+                    title: 'Roxanne Bélanger Sarrazin, Les divinités gréco-égyptiennes dans les textes magiques coptes',
+                    note: 'A study of which older divine names actually persist in the Coptic corpus and in what form — the survival question examined name by name rather than in the abstract.',
+                },
+            ],
+        },
+    ],
+};
