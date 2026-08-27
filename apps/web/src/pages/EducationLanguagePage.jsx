@@ -53,7 +53,22 @@ import themesAramaic from '../data/education/themes/aramaic';
 import themesPersian from '../data/education/themes/persian';
 import themesArmenian from '../data/education/themes/armenian';
 import themesGeez from '../data/education/themes/geez';
+import tlLatin from '../data/education/timelines/latin';
+import tlGreek from '../data/education/timelines/greek';
+import tlHebrew from '../data/education/timelines/hebrew';
+import tlEgyptian from '../data/education/timelines/egyptian';
+import tlCuneiform from '../data/education/timelines/cuneiform';
+import tlSanskrit from '../data/education/timelines/sanskrit';
+import tlArabic from '../data/education/timelines/arabic';
+import tlTibetan from '../data/education/timelines/tibetan';
+import tlSyriac from '../data/education/timelines/syriac';
+import tlCoptic from '../data/education/timelines/coptic';
+import tlAramaic from '../data/education/timelines/aramaic';
+import tlPersian from '../data/education/timelines/persian';
+import tlArmenian from '../data/education/timelines/armenian';
+import tlGeez from '../data/education/timelines/geez';
 import ScriptoriumCorpus from '../components/ScriptoriumCorpus';
+import ScriptoriumTimeline from '../components/ScriptoriumTimeline';
 import ScriptoriumCurrents from '../components/ScriptoriumCurrents';
 import ScriptoriumReckoner from '../components/ScriptoriumReckoner';
 import ScriptoriumDrill from '../components/ScriptoriumDrill';
@@ -62,6 +77,7 @@ import { HALLS } from './EducationPortalPage';
 const DATA = { latin, greek, hebrew, egyptian, cuneiform, sanskrit, arabic, tibetan, syriac, coptic, aramaic, persian, armenian, geez };
 const EXT = { latin: extLatin, greek: extGreek, hebrew: extHebrew, egyptian: extEgyptian, cuneiform: extCuneiform, sanskrit: extSanskrit, arabic: extArabic, tibetan: extTibetan, syriac: extSyriac, coptic: extCoptic, aramaic: extAramaic, persian: extPersian, armenian: extArmenian, geez: extGeez };
 const CORPUS = { latin: corpusLatin, hebrew: corpusHebrew, cuneiform: corpusCuneiform, sanskrit: corpusSanskrit, arabic: corpusArabic, tibetan: corpusTibetan, syriac: corpusSyriac, coptic: corpusCoptic, aramaic: corpusAramaic, persian: corpusPersian, armenian: corpusArmenian, geez: corpusGeez };
+const TIMELINES = { latin: tlLatin, greek: tlGreek, hebrew: tlHebrew, egyptian: tlEgyptian, cuneiform: tlCuneiform, sanskrit: tlSanskrit, arabic: tlArabic, tibetan: tlTibetan, syriac: tlSyriac, coptic: tlCoptic, aramaic: tlAramaic, persian: tlPersian, armenian: tlArmenian, geez: tlGeez };
 const THEMES = { egyptian: themesEgyptian, cuneiform: themesCuneiform, tibetan: themesTibetan, syriac: themesSyriac, coptic: themesCoptic, aramaic: themesAramaic, persian: themesPersian, armenian: themesArmenian, geez: themesGeez };
 // Each corpus is titled for what it actually is, not generically shelved.
 const CORPUS_COPY = {
@@ -130,6 +146,7 @@ function EducationLanguagePage() {
         : null;
     const corpus = CORPUS[lang] && CORPUS[lang].works.length > 0 ? CORPUS[lang] : null;
     const currents = THEMES[lang] && THEMES[lang].themes.length > 0 ? THEMES[lang] : null;
+    const timeline = TIMELINES[lang] && TIMELINES[lang].events.length > 0 ? TIMELINES[lang] : null;
     const hasPgm = lang === 'greek' && pgm.items.length > 0;
     const sections = [
         { id: 'edu-alphabet-heading', label: 'Alphabet' },
@@ -138,6 +155,7 @@ function EducationLanguagePage() {
         ext.readings.length > 0 && { id: 'edu-readings-heading', label: 'Readings' },
         hasPgm && { id: 'edu-pgm-heading', label: 'Magical Papyri' },
         currents && { id: 'edu-currents-heading', label: 'The Currents' },
+        timeline && { id: 'edu-timeline-heading', label: 'Timeline' },
         corpus && { id: `edu-corpus-${lang}-heading`, label: CORPUS_COPY[lang].heading },
         { id: 'edu-names-heading', label: 'Divine Names' },
         { id: 'edu-lexicon-heading', label: 'Lexicon' },
@@ -322,6 +340,8 @@ function EducationLanguagePage() {
                         </div>
                     </section>
                 )}
+
+                {timeline && <ScriptoriumTimeline timeline={timeline} rtl={rtl} />}
 
                 {currents && (
                     <ScriptoriumCurrents currents={currents} rtl={rtl} hallId={`edu-${lang}`} />
