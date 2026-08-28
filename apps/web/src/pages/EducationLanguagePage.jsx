@@ -281,7 +281,12 @@ function EducationLanguagePage() {
                             {ext.numbers.examples.map((ex, i) => (
                                 <li key={i}>
                                     <span className="edu-num-native edu-glyph" dir={rtl ? 'rtl' : undefined}>{ex.native}</span>
-                                    <span className="edu-num-eq">= {ex.value.toLocaleString()}</span>
+                                    {/* Integers get thousands separators; fractional values keep
+                                        their precision, since a sexagesimal approximation of a root
+                                        is worth nothing rounded to three places. */}
+                                    <span className="edu-num-eq">= {Number.isInteger(ex.value)
+                                        ? ex.value.toLocaleString()
+                                        : ex.value.toLocaleString(undefined, { maximumFractionDigits: 10 })}</span>
                                     <span className="edu-num-note">{ex.note}</span>
                                 </li>
                             ))}
