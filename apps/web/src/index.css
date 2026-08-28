@@ -10785,3 +10785,24 @@ h3 {
   .edu-search-box { flex-wrap: wrap; }
   .edu-search-status { padding: 0 0 0.6rem 1.1rem; }
 }
+
+/* Classical Chinese is the one script here that is NOT self-hosted. The other
+   ten are rare — few systems carry cuneiform, Coptic or Mandaic — but every
+   operating system ships a CJK face, and the Noto Serif TC package is 78MB
+   across hundreds of subset files. Shipping that to read a few hundred
+   characters would be indefensible, so the hall uses a system stack of Song
+   (serif) faces, which is also the register the material wants. The Yijing
+   trigram and hexagram blocks are covered by the same faces and by the
+   platform symbol fonts named after them. */
+.edu-lang-page[data-hall="chinese"] .edu-glyph,
+.edu-page .edu-glyph:lang(zh) {
+  font-family: "Songti TC", "Songti SC", "STSong", "SimSun", "Source Han Serif TC",
+               "Source Han Serif SC", "Noto Serif CJK TC", "Noto Serif CJK SC",
+               "Apple Symbols", "Segoe UI Symbol", serif;
+}
+/* Han characters carry far more ink per em than an alphabet; the display
+   sizes need room and a touch less tracking. */
+.edu-lang-page[data-hall="chinese"] .edu-letter-glyph { font-size: 2.1rem; line-height: 1.5; }
+.edu-lang-page[data-hall="chinese"] .edu-plaque-glyph { line-height: 1.35; }
+.edu-lang-page[data-hall="chinese"] .edu-name-native { line-height: 1.6; letter-spacing: 0.04em; }
+.edu-lang-page[data-hall="chinese"] .edu-current-native { letter-spacing: 0.06em; }

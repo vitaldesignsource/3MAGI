@@ -17,6 +17,7 @@ import aramaic from '../data/education/aramaic';
 import persian from '../data/education/persian';
 import armenian from '../data/education/armenian';
 import geez from '../data/education/geez';
+import chinese from '../data/education/chinese';
 import extLatin from '../data/education/ext/latin';
 import extGreek from '../data/education/ext/greek';
 import extHebrew from '../data/education/ext/hebrew';
@@ -31,6 +32,7 @@ import extAramaic from '../data/education/ext/aramaic';
 import extPersian from '../data/education/ext/persian';
 import extArmenian from '../data/education/ext/armenian';
 import extGeez from '../data/education/ext/geez';
+import extChinese from '../data/education/ext/chinese';
 import corpusLatin from '../data/education/corpus/latin';
 import corpusHebrew from '../data/education/corpus/hebrew';
 import corpusCuneiform from '../data/education/corpus/cuneiform';
@@ -43,6 +45,7 @@ import corpusAramaic from '../data/education/corpus/aramaic';
 import corpusPersian from '../data/education/corpus/persian';
 import corpusArmenian from '../data/education/corpus/armenian';
 import corpusGeez from '../data/education/corpus/geez';
+import corpusChinese from '../data/education/corpus/chinese';
 import pgm from '../data/education/pgm';
 import themesEgyptian from '../data/education/themes/egyptian';
 import themesCuneiform from '../data/education/themes/cuneiform';
@@ -53,6 +56,7 @@ import themesAramaic from '../data/education/themes/aramaic';
 import themesPersian from '../data/education/themes/persian';
 import themesArmenian from '../data/education/themes/armenian';
 import themesGeez from '../data/education/themes/geez';
+import themesChinese from '../data/education/themes/chinese';
 import tlLatin from '../data/education/timelines/latin';
 import tlGreek from '../data/education/timelines/greek';
 import tlHebrew from '../data/education/timelines/hebrew';
@@ -67,6 +71,7 @@ import tlAramaic from '../data/education/timelines/aramaic';
 import tlPersian from '../data/education/timelines/persian';
 import tlArmenian from '../data/education/timelines/armenian';
 import tlGeez from '../data/education/timelines/geez';
+import tlChinese from '../data/education/timelines/chinese';
 import ScriptoriumCorpus from '../components/ScriptoriumCorpus';
 import ScriptoriumTimeline from '../components/ScriptoriumTimeline';
 import ScriptoriumCurrents from '../components/ScriptoriumCurrents';
@@ -74,11 +79,11 @@ import ScriptoriumReckoner from '../components/ScriptoriumReckoner';
 import ScriptoriumDrill from '../components/ScriptoriumDrill';
 import { HALLS } from './EducationPortalPage';
 
-const DATA = { latin, greek, hebrew, egyptian, cuneiform, sanskrit, arabic, tibetan, syriac, coptic, aramaic, persian, armenian, geez };
-const EXT = { latin: extLatin, greek: extGreek, hebrew: extHebrew, egyptian: extEgyptian, cuneiform: extCuneiform, sanskrit: extSanskrit, arabic: extArabic, tibetan: extTibetan, syriac: extSyriac, coptic: extCoptic, aramaic: extAramaic, persian: extPersian, armenian: extArmenian, geez: extGeez };
-const CORPUS = { latin: corpusLatin, hebrew: corpusHebrew, cuneiform: corpusCuneiform, sanskrit: corpusSanskrit, arabic: corpusArabic, tibetan: corpusTibetan, syriac: corpusSyriac, coptic: corpusCoptic, aramaic: corpusAramaic, persian: corpusPersian, armenian: corpusArmenian, geez: corpusGeez };
-const TIMELINES = { latin: tlLatin, greek: tlGreek, hebrew: tlHebrew, egyptian: tlEgyptian, cuneiform: tlCuneiform, sanskrit: tlSanskrit, arabic: tlArabic, tibetan: tlTibetan, syriac: tlSyriac, coptic: tlCoptic, aramaic: tlAramaic, persian: tlPersian, armenian: tlArmenian, geez: tlGeez };
-const THEMES = { egyptian: themesEgyptian, cuneiform: themesCuneiform, tibetan: themesTibetan, syriac: themesSyriac, coptic: themesCoptic, aramaic: themesAramaic, persian: themesPersian, armenian: themesArmenian, geez: themesGeez };
+const DATA = { latin, greek, hebrew, egyptian, cuneiform, sanskrit, arabic, tibetan, syriac, coptic, aramaic, persian, armenian, geez, chinese };
+const EXT = { latin: extLatin, greek: extGreek, hebrew: extHebrew, egyptian: extEgyptian, cuneiform: extCuneiform, sanskrit: extSanskrit, arabic: extArabic, tibetan: extTibetan, syriac: extSyriac, coptic: extCoptic, aramaic: extAramaic, persian: extPersian, armenian: extArmenian, geez: extGeez, chinese: extChinese };
+const CORPUS = { latin: corpusLatin, hebrew: corpusHebrew, cuneiform: corpusCuneiform, sanskrit: corpusSanskrit, arabic: corpusArabic, tibetan: corpusTibetan, syriac: corpusSyriac, coptic: corpusCoptic, aramaic: corpusAramaic, persian: corpusPersian, armenian: corpusArmenian, geez: corpusGeez, chinese: corpusChinese };
+const TIMELINES = { latin: tlLatin, greek: tlGreek, hebrew: tlHebrew, egyptian: tlEgyptian, cuneiform: tlCuneiform, sanskrit: tlSanskrit, arabic: tlArabic, tibetan: tlTibetan, syriac: tlSyriac, coptic: tlCoptic, aramaic: tlAramaic, persian: tlPersian, armenian: tlArmenian, geez: tlGeez, chinese: tlChinese };
+const THEMES = { egyptian: themesEgyptian, cuneiform: themesCuneiform, tibetan: themesTibetan, syriac: themesSyriac, coptic: themesCoptic, aramaic: themesAramaic, persian: themesPersian, armenian: themesArmenian, geez: themesGeez, chinese: themesChinese };
 // Each corpus is titled for what it actually is, not generically shelved.
 const CORPUS_COPY = {
     latin: { kicker: 'The Shelf', heading: 'Theatrum Chemicum' },
@@ -93,8 +98,9 @@ const CORPUS_COPY = {
     persian: { kicker: 'The Shelf', heading: 'The Persian Shelf' },
     armenian: { kicker: 'The Shelf', heading: 'The Armenian Shelf' },
     geez: { kicker: 'The Shelf', heading: 'The Ethiopic Canon' },
+    chinese: { kicker: 'The Shelf', heading: 'The Daoist Canon' },
 };
-const TITLES = { latin: 'Latin', greek: 'Greek', hebrew: 'Hebrew', egyptian: 'Egyptian', cuneiform: 'Cuneiform', sanskrit: 'Sanskrit', arabic: 'Arabic', tibetan: 'Tibetan', syriac: 'Syriac', coptic: 'Coptic', aramaic: 'Aramaic', persian: 'Persian', armenian: 'Armenian', geez: 'Geʼez' };
+const TITLES = { latin: 'Latin', greek: 'Greek', hebrew: 'Hebrew', egyptian: 'Egyptian', cuneiform: 'Cuneiform', sanskrit: 'Sanskrit', arabic: 'Arabic', tibetan: 'Tibetan', syriac: 'Syriac', coptic: 'Coptic', aramaic: 'Aramaic', persian: 'Persian', armenian: 'Armenian', geez: 'Geʼez', chinese: 'Classical Chinese' };
 
 const DOMAIN_LABEL = (d) => d.replace(/-/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase());
 
@@ -149,7 +155,7 @@ function EducationLanguagePage() {
     const timeline = TIMELINES[lang] && TIMELINES[lang].events.length > 0 ? TIMELINES[lang] : null;
     const hasPgm = lang === 'greek' && pgm.items.length > 0;
     const sections = [
-        { id: 'edu-alphabet-heading', label: 'Alphabet' },
+        data.letters.length > 0 && { id: 'edu-alphabet-heading', label: 'Alphabet' },
         ext.numbers && { id: 'edu-numbers-heading', label: 'Numbers' },
         { id: 'edu-reckoner-heading', label: 'Reckoner' },
         ext.readings.length > 0 && { id: 'edu-readings-heading', label: 'Readings' },
@@ -194,6 +200,7 @@ function EducationLanguagePage() {
                 </Link>
                 )}
 
+                {data.letters.length > 0 && (
                 <section className="edu-alphabet" aria-labelledby="edu-alphabet-heading">
                     <header className="edu-section-head">
                         <p className="kicker">First Things</p>
@@ -245,6 +252,7 @@ function EducationLanguagePage() {
                         <p className="edu-corr-note">{ext.correspondences.note}</p>
                     )}
                 </section>
+                )}
 
                 {ext.numbers && (
                     <section className="edu-numbers" aria-labelledby="edu-numbers-heading">

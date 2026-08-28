@@ -45,6 +45,7 @@ const staticRoutes = [
     { loc: '/third-lamp/education/persian',   priority: '0.7', changefreq: 'monthly' },
     { loc: '/third-lamp/education/armenian',  priority: '0.7', changefreq: 'monthly' },
     { loc: '/third-lamp/education/geez',      priority: '0.7', changefreq: 'monthly' },
+    { loc: '/third-lamp/education/chinese', priority: '0.7', changefreq: 'monthly' },
     { loc: '/third-lamp/education/latin/course',    priority: '0.6', changefreq: 'monthly' },
     { loc: '/third-lamp/education/greek/course',    priority: '0.6', changefreq: 'monthly' },
     { loc: '/third-lamp/education/hebrew/course',   priority: '0.6', changefreq: 'monthly' },
