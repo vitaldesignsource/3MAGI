@@ -18,7 +18,7 @@ const src = (p) => path.join(web, 'src/data/education', p);
 
 const HALLS = [
     'latin', 'greek', 'hebrew', 'egyptian', 'cuneiform', 'sanskrit', 'arabic',
-    'tibetan', 'syriac', 'coptic', 'aramaic', 'persian', 'armenian', 'geez', 'chinese',
+    'tibetan', 'syriac', 'coptic', 'aramaic', 'persian', 'armenian', 'geez', 'chinese', 'slavonic',
 ];
 
 // Unicode ranges each hall's native strings are allowed to draw on. Latin,
@@ -42,6 +42,10 @@ const BLOCKS = {
     // Han ideographs, the Kangxi radicals, CJK punctuation, and the two
     // Yijing symbol blocks: the eight trigrams (U+2630) and the sixty-four
     // hexagrams (U+4DC0), which are characters in their own right.
+    // Old Church Slavonic was written in Glagolitic first and Cyrillic
+    // after, so the hall legitimately carries both, plus the Cyrillic
+    // extensions that hold the yuses and the combining titlo.
+    slavonic: [[0x0400, 0x052f], [0x2c00, 0x2c5f], [0x2de0, 0x2dff], [0xa640, 0xa69f]],
     chinese: [[0x4e00, 0x9fff], [0x3400, 0x4dbf], [0x4dc0, 0x4dff],
               [0x2f00, 0x2fdf], [0x3000, 0x303f], [0x2600, 0x26ff], [0xf900, 0xfaff]],
 };

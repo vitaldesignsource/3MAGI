@@ -10502,6 +10502,7 @@ h3 {
 .edu-page .edu-glyph {
   font-family: "TL Hieroglyphs", "TL Cuneiform", "TL Devanagari", "TL Arabic",
                "TL Tibetan", "TL Syriac", "TL Coptic", "TL Mandaic", "TL Armenian", "TL Ethiopic",
+               "TL Glagolitic", "TL Cyrillic Ext",
                "Palatino", "Palatino Linotype", "Book Antiqua", "Times New Roman", serif;
 }
 /* Tibetan stacks vertically and Ethiopic sits on a heavy baseline; both need
@@ -10806,3 +10807,12 @@ h3 {
 .edu-lang-page[data-hall="chinese"] .edu-plaque-glyph { line-height: 1.35; }
 .edu-lang-page[data-hall="chinese"] .edu-name-native { line-height: 1.6; letter-spacing: 0.04em; }
 .edu-lang-page[data-hall="chinese"] .edu-current-native { letter-spacing: 0.06em; }
+
+/* Glagolitic — Cyril's own alphabet, on almost no system — is self-hosted.
+   Basic Cyrillic is everywhere, so only the extended block (the yuses, the
+   monograph uk, the combining titlo) needs shipping alongside it. */
+@font-face { font-family: "TL Glagolitic"; src: url("/fonts/TLGlagolitic.woff2") format("woff2");
+  font-weight: 400; font-style: normal; font-display: swap; unicode-range: U+2C00-2C5F; }
+@font-face { font-family: "TL Cyrillic Ext"; src: url("/fonts/TLCyrillicExt.woff2") format("woff2");
+  font-weight: 400; font-style: normal; font-display: swap;
+  unicode-range: U+0460-052F, U+2DE0-2DFF, U+A640-A69F; }

@@ -27,6 +27,8 @@ export const HALLS = [
     { slug: 'geez', name: 'Ge\u02bcez', glyph: 'ሀ', sample: 'መጽሐፈ ሄኖክ', blurb: 'The liturgical tongue of Ethiopia, which alone preserved Enoch entire — with its magic scrolls, its angels and its demons.' },
 
     { slug: 'chinese', name: 'Classical Chinese', glyph: '道', sample: '內丹', blurb: 'The literary language of the Daoist canon: alchemy inner and outer, talismans, thunder rites, and the cosmology of the Yijing.' },
+
+    { slug: 'slavonic', name: 'Church Slavonic', glyph: 'Ⱄ', sample: 'ѣ · Ⱅ', blurb: 'Two alphabets for one tongue — Glagolitic then Cyrillic — carrying apocrypha, Bogomil dualism, and the forbidden books the Slavic church listed by name.' },
 ];
 
 const TRADITION_LABELS = {
@@ -58,7 +60,7 @@ function EducationPortalPage() {
         <div className="third-lamp-scope edu-page">
             <Helmet>
                 <title>The Scriptorium — The Third Lamp</title>
-                <meta name="description" content="The Third Lamp's education portal: a reading room of public-domain esoteric books in PDF, and language halls for Latin, Greek, Hebrew, Egyptian, Cuneiform, Sanskrit, Arabic, Tibetan, Syriac, Coptic, Aramaic, Persian, Armenian, Geʼez and Classical Chinese — alphabets, divine names, sacred texts and lexicons." />
+                <meta name="description" content="The Third Lamp's education portal: a reading room of public-domain esoteric books in PDF, and language halls for Latin, Greek, Hebrew, Egyptian, Cuneiform, Sanskrit, Arabic, Tibetan, Syriac, Coptic, Aramaic, Persian, Armenian, Geʼez, Classical Chinese and Church Slavonic — alphabets, divine names, sacred texts and lexicons." />
             </Helmet>
             <ThirdLampHeader />
 
@@ -68,7 +70,7 @@ function EducationPortalPage() {
                     <h1>The Scriptorium</h1>
                     <p className="edu-hero-sub">
                         A study hall for the serious reader: a library of the tradition's
-                        source texts, free to download, and fifteen language halls where the
+                        source texts, free to download, and sixteen language halls where the
                         sacred scripts are laid out to be learned — letter by letter,
                         name by name.
                     </p>
@@ -82,7 +84,7 @@ function EducationPortalPage() {
                 <section className="edu-halls" aria-labelledby="edu-halls-heading">
                     <header className="edu-section-head">
                         <p className="kicker">The Language Halls</p>
-                        <h2 id="edu-halls-heading">Fifteen scripts, fifteen doors</h2>
+                        <h2 id="edu-halls-heading">Sixteen scripts, sixteen doors</h2>
                         <p>Each hall holds the alphabet in full, the divine names written
                             as the tradition wrote them, and a working lexicon of the terms
                             a student actually meets.</p>

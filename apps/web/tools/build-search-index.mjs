@@ -23,14 +23,14 @@ const load = async (p) => {
 
 const HALLS = [
     'latin', 'greek', 'hebrew', 'egyptian', 'cuneiform', 'sanskrit', 'arabic',
-    'tibetan', 'syriac', 'coptic', 'aramaic', 'persian', 'armenian', 'geez', 'chinese',
+    'tibetan', 'syriac', 'coptic', 'aramaic', 'persian', 'armenian', 'geez', 'chinese', 'slavonic',
 ];
 const TITLES = {
     latin: 'Latin', greek: 'Greek', hebrew: 'Hebrew', egyptian: 'Egyptian',
     cuneiform: 'Cuneiform', sanskrit: 'Sanskrit', arabic: 'Arabic',
     tibetan: 'Tibetan', syriac: 'Syriac', coptic: 'Coptic', aramaic: 'Aramaic',
     persian: 'Persian', armenian: 'Armenian', geez: 'Geʼez',
-    chinese: 'Classical Chinese',
+    chinese: 'Classical Chinese', slavonic: 'Church Slavonic',
 };
 
 const records = [];
