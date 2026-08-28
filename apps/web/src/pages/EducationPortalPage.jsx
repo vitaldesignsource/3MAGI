@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import ThirdLampHeader from '../components/ThirdLampHeader';
 import ThirdLampFooter from '../components/ThirdLampFooter';
 import library from '../data/education/library';
+import ScriptoriumSearch from '../components/ScriptoriumSearch';
 
 // The Language Halls. The glyphs are the halls' door-signs: the Roman A,
 // Greek omega, Hebrew aleph, the ankh (Gardiner S34), the cuneiform sign AN
@@ -73,6 +74,8 @@ function EducationPortalPage() {
                         {HALLS.map((h) => <span key={h.slug} className="edu-glyph">{h.glyph}</span>)}
                     </div>
                 </section>
+
+                <ScriptoriumSearch />
 
                 <section className="edu-halls" aria-labelledby="edu-halls-heading">
                     <header className="edu-section-head">

@@ -1,23 +1,37 @@
 import React, { useMemo, useState } from 'react';
 
-// The Reckoner — the Scriptorium's working tool. Four modes, one per hall:
-// Hebrew gematria and Greek isopsephy computed live from the same verified
-// letter values the alphabet section displays; a two-way Roman numeral
-// converter; and a hieroglyphic number composer built from the digit signs.
-// Everything derives from the hall's own data — no second value table to
-// drift out of agreement with the displayed one.
+// The Reckoner — the Scriptorium's working tool. Three modes: a letter-sum
+// for the eight halls whose alphabets carry numeric values (Hebrew gematria,
+// Greek isopsephy, Arabic and Persian abjad, Syriac, Aramaic, Coptic and
+// Armenian numerals), a two-way Roman numeral converter, and a hieroglyphic
+// number composer. Every value is read from the hall's own alphabet data, so
+// there is no second table to drift out of agreement with the displayed one.
 
-// Strip pointing and diacritics so pasted polytonic Greek or pointed Hebrew
-// reckons on its base letters: combining marks U+0300-036F (Greek accents,
-// breathings after NFD) and U+0591-05C7 (Hebrew cantillation and niqqud).
-const strip = (s) => s.normalize('NFD').replace(/[̀-֑ͯ-ׇ]/g, '');
+// Strip pointing and diacritics so pasted text reckons on its base letters:
+// Greek accents and breathings (after NFD), Hebrew niqqud and cantillation,
+// Arabic and Persian harakat, Syriac vowel points, and the Coptic supralinear
+// stroke — none of which carry numeric value in any of these systems.
+const strip = (s) => s.normalize('NFD').replace(
+    /[̀-֑ͯ-ׇؐ-ًؚ-ٰٟۖ-ۭܰ-݊]/g, '');
 
 function buildValueMap(letters) {
     const map = new Map();
+    const put = (ch, v) => {
+        if (!ch || map.has(ch)) return;
+        map.set(ch, v);
+        // Halls differ in which case they store: Greek gives both ("Α α"),
+        // Armenian and Coptic only one. Register the counterpart so a reader
+        // who pastes Աստուած is not silently given the value of its first
+        // letter alone.
+        const lower = ch.toLowerCase();
+        const upper = ch.toUpperCase();
+        if (lower !== ch && !map.has(lower)) map.set(lower, v);
+        if (upper !== ch && upper.length === 1 && !map.has(upper)) map.set(upper, v);
+    };
     for (const l of letters) {
         if (l.value == null) continue;
-        for (const ch of l.glyph.replace(/\s/g, '')) map.set(ch, l.value);
-        if (l.final) for (const ch of l.final) map.set(ch, l.value);
+        for (const ch of l.glyph.replace(/\s/g, '')) put(ch, l.value);
+        if (l.final) for (const ch of l.final) put(ch, l.value);
     }
     return map;
 }
@@ -191,6 +205,9 @@ function EgyptianComposer({ digits }) {
     );
 }
 
+// Halls whose letters carry numeric values all reckon the same way; only the
+// name of the practice and the sample word change. Arabic is the notable one:
+// its entire science of letters, ʿilm al-ḥurūf, is this arithmetic.
 const COPY = {
     hebrew: {
         title: 'The Reckoner',
@@ -212,12 +229,56 @@ const COPY = {
         title: 'The Reckoner',
         lead: 'Give a number and the scribe writes it: each magnitude has its own sign, repeated as many times as needed, greatest first.',
     },
+    arabic: {
+        title: 'The Reckoner',
+        lead: 'Type or paste Arabic and it is summed by the abjad values — ḥisāb al-jummal, the arithmetic beneath the whole science of letters.',
+        placeholder: 'الحق',
+        kindLabel: 'Abjad', dir: 'rtl',
+    },
+    persian: {
+        title: 'The Reckoner',
+        lead: 'Abjad reckoning as the Persian chronogrammatists used it. The four letters made for Persian — pe, che, zhe and gaf — carry no value and are passed over.',
+        placeholder: 'عشق',
+        kindLabel: 'Abjad', dir: 'rtl',
+    },
+    syriac: {
+        title: 'The Reckoner',
+        lead: 'The Syriac letters reckon exactly as the Hebrew and Greek do; this is the arithmetic of a manuscript colophon.',
+        placeholder: 'ܡܪܝܐ',
+        kindLabel: 'Numeral value', dir: 'rtl',
+    },
+    aramaic: {
+        title: 'The Reckoner',
+        lead: 'The square script sums as it does in Hebrew — the reckoning behind the names written into the incantation bowls.',
+        placeholder: 'אשותא',
+        kindLabel: 'Numeral value', dir: 'rtl',
+    },
+    coptic: {
+        title: 'The Reckoner',
+        lead: 'Coptic inherits the Greek numerals along with the Greek letters; the Demotic-derived letters carry no value and are passed over.',
+        placeholder: 'ⲡⲛⲟⲩⲧⲉ',
+        kindLabel: 'Numeral value', dir: undefined,
+    },
+    armenian: {
+        title: 'The Reckoner',
+        lead: 'Mesrop\u2019s alphabet counts in a clean four-decade scheme, and Armenian scribes dated their manuscripts with it.',
+        placeholder: 'Աստուած',
+        kindLabel: 'Numeral value', dir: undefined,
+    },
 };
+
+// Every hall that reckons by summing its letters.
+const LETTER_SUM_HALLS = new Set([
+    'hebrew', 'greek', 'arabic', 'persian', 'syriac', 'aramaic', 'coptic', 'armenian',
+]);
 
 function ScriptoriumReckoner({ lang, letters, numbers }) {
     const copy = COPY[lang];
     if (!copy) return null;
-    if ((lang === 'latin' || lang === 'egyptian') && !numbers) return null;
+    // Latin and Egyptian reckon from the Numbers section's digits; the rest
+    // reckon from the alphabet, and need no Numbers section to work.
+    if (!LETTER_SUM_HALLS.has(lang) && !numbers) return null;
+    if (LETTER_SUM_HALLS.has(lang) && !letters.some((l) => l.value != null)) return null;
 
     return (
         <section className="edu-reckoner" aria-labelledby="edu-reckoner-heading">
@@ -226,7 +287,7 @@ function ScriptoriumReckoner({ lang, letters, numbers }) {
                 <h2 id="edu-reckoner-heading">{copy.title}</h2>
                 <p>{copy.lead}</p>
             </header>
-            {lang === 'hebrew' || lang === 'greek'
+            {LETTER_SUM_HALLS.has(lang)
                 ? <LetterSum letters={letters} placeholder={copy.placeholder} kindLabel={copy.kindLabel} dir={copy.dir} />
                 : lang === 'latin'
                     ? <RomanConverter digits={numbers.digits} />
