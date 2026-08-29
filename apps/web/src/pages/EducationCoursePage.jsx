@@ -3,12 +3,12 @@ import { Helmet } from 'react-helmet';
 import { Link, useParams, Navigate, useNavigate } from 'react-router-dom';
 import ThirdLampHeader from '../components/ThirdLampHeader';
 import ThirdLampFooter from '../components/ThirdLampFooter';
-import courseLatin from '../data/education/courses/latin';
-import courseGreek from '../data/education/courses/greek';
-import courseHebrew from '../data/education/courses/hebrew';
-import courseEgyptian from '../data/education/courses/egyptian';
-
-const COURSES = { latin: courseLatin, greek: courseGreek, hebrew: courseHebrew, egyptian: courseEgyptian };
+// Each course is its own chunk, fetched when the course is opened.
+const COURSE_LOADERS = import.meta.glob('../data/education/courses/*.js');
+const loadCourse = async (lang) => {
+    const mod = COURSE_LOADERS[`../data/education/courses/${lang}.js`];
+    return mod ? (await mod()).default : null;
+};
 const TITLES = { latin: 'Latin', greek: 'Greek', hebrew: 'Hebrew', egyptian: 'Egyptian' };
 
 // Progress lives in the reader's browser and nowhere else.
@@ -123,8 +123,21 @@ function LessonView({ lang, course, lesson, done, onToggleDone, rtl }) {
 
 function EducationCoursePage() {
     const { lang, lesson: lessonParam } = useParams();
-    const course = COURSES[lang];
+    const [course, setCourse] = useState(null);
+    const [state, setState] = useState('loading');
     const rtl = lang === 'hebrew';
+
+    useEffect(() => {
+        let alive = true;
+        setState('loading');
+        setCourse(null);
+        loadCourse(lang).then((c) => {
+            if (!alive) return;
+            setCourse(c && c.lessons.length ? c : null);
+            setState('done');
+        });
+        return () => { alive = false; };
+    }, [lang]);
 
     const [done, setDone] = useState(() => loadDone(lang));
     useEffect(() => { setDone(loadDone(lang)); }, [lang]);
@@ -144,7 +157,8 @@ function EducationCoursePage() {
         [course, lessonNumber],
     );
 
-    if (!course || course.lessons.length === 0) return <Navigate to="/third-lamp/education" replace />;
+    if (state === 'loading') return <div className="third-lamp-scope edu-page" aria-busy="true" style={{ minHeight: '100vh' }} />;
+    if (!course) return <Navigate to="/third-lamp/education" replace />;
     if (lessonParam && !lesson) return <Navigate to={`/third-lamp/education/${lang}/course`} replace />;
 
     const firstUnread = course.lessons.find((l) => !done.has(l.number));
