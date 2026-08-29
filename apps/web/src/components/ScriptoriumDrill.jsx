@@ -16,12 +16,18 @@ const shuffle = (arr) => {
     return a;
 };
 
-function buildQuiz(letters) {
+// Two directions: shown the glyph, name it — or shown the name, find the
+// glyph among four. The second is the harder skill and the one reading
+// actually requires.
+function buildQuiz(letters, mode) {
     const pool = letters.filter((l) => !l.archaic);
     const rounds = shuffle(pool).slice(0, Math.min(ROUNDS, pool.length));
     return rounds.map((l) => {
         const wrong = shuffle(pool.filter((o) => o.name !== l.name)).slice(0, CHOICES - 1);
-        return { letter: l, options: shuffle([l, ...wrong]).map((o) => o.name) };
+        const opts = shuffle([l, ...wrong]);
+        return mode === 'find'
+            ? { letter: l, options: opts.map((o) => ({ key: o.name, show: o.glyph, glyph: true })) }
+            : { letter: l, options: opts.map((o) => ({ key: o.name, show: o.name, glyph: false })) };
     });
 }
 
@@ -35,12 +41,14 @@ const VERDICTS = [
 
 function ScriptoriumDrill({ letters, langTitle, rtl }) {
     const [quiz, setQuiz] = useState(null);
+    const [mode, setMode] = useState('name');
     const [round, setRound] = useState(0);
     const [picked, setPicked] = useState(null);
     const [score, setScore] = useState(0);
 
-    const start = useCallback(() => {
-        setQuiz(buildQuiz(letters));
+    const start = useCallback((m) => {
+        setMode(m);
+        setQuiz(buildQuiz(letters, m));
         setRound(0);
         setPicked(null);
         setScore(0);
@@ -78,9 +86,15 @@ function ScriptoriumDrill({ letters, langTitle, rtl }) {
 
             {!quiz && (
                 <div className="edu-drill-stage">
-                    <button type="button" className="edu-drill-start" onClick={start}>
-                        Begin the recitation
-                    </button>
+                    <div className="edu-drill-modes">
+                        <button type="button" className="edu-drill-start" onClick={() => start('name')}>
+                            Name the letters
+                        </button>
+                        <button type="button" className="edu-drill-start" onClick={() => start('find')}>
+                            Find the letters
+                        </button>
+                    </div>
+                    <p className="edu-drill-modes-note">Shown the glyph, give its name — or shown the name, pick the glyph. The second is the skill that reading requires.</p>
                 </div>
             )}
 
@@ -89,22 +103,23 @@ function ScriptoriumDrill({ letters, langTitle, rtl }) {
                     <p className="edu-drill-progress">
                         {round + 1} of {quiz.length}{score > 0 ? ` · ${score} named` : ''}
                     </p>
-                    <div className="edu-drill-glyph edu-glyph" dir={rtl ? 'rtl' : undefined} aria-label={`Letter ${round + 1}`}>
-                        {current.letter.glyph}
+                    <div className={mode === 'find' ? 'edu-drill-prompt-name' : 'edu-drill-glyph edu-glyph'} dir={mode === 'find' || !rtl ? undefined : 'rtl'} aria-label={`Question ${round + 1}`}>
+                        {mode === 'find' ? current.letter.name : current.letter.glyph}
                     </div>
                     <div className="edu-drill-options" role="group" aria-label="Which letter is this?">
-                        {current.options.map((name) => {
-                            const isRight = picked != null && name === current.letter.name;
-                            const isWrongPick = picked === name && name !== current.letter.name;
+                        {current.options.map((o) => {
+                            const isRight = picked != null && o.key === current.letter.name;
+                            const isWrongPick = picked === o.key && o.key !== current.letter.name;
                             return (
                                 <button
                                     type="button"
-                                    key={name}
-                                    className={`edu-drill-option${isRight ? ' is-right' : ''}${isWrongPick ? ' is-wrong' : ''}`}
-                                    onClick={() => pick(name)}
+                                    key={o.key}
+                                    className={`edu-drill-option${o.glyph ? ' edu-drill-option-glyph edu-glyph' : ''}${isRight ? ' is-right' : ''}${isWrongPick ? ' is-wrong' : ''}`}
+                                    dir={o.glyph && rtl ? 'rtl' : undefined}
+                                    onClick={() => pick(o.key)}
                                     disabled={picked != null}
                                 >
-                                    {name}
+                                    {o.show}
                                 </button>
                             );
                         })}
@@ -128,9 +143,14 @@ function ScriptoriumDrill({ letters, langTitle, rtl }) {
                 <div className="edu-drill-stage" aria-live="polite">
                     <p className="edu-drill-score">{score} / {quiz.length}</p>
                     <p className="edu-drill-verdict">{verdict}</p>
-                    <button type="button" className="edu-drill-start" onClick={start}>
-                        Recite {langTitle} again
-                    </button>
+                    <div className="edu-drill-modes">
+                        <button type="button" className="edu-drill-start" onClick={() => start(mode)}>
+                            Recite {langTitle} again
+                        </button>
+                        <button type="button" className="edu-drill-start" onClick={() => start(mode === 'name' ? 'find' : 'name')}>
+                            {mode === 'name' ? 'Try finding the letters' : 'Try naming them'}
+                        </button>
+                    </div>
                 </div>
             )}
         </section>

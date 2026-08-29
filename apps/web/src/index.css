@@ -10875,3 +10875,15 @@ h3 {
   line-height: 1.7;
   text-align: center;
 }
+
+/* drill: two directions */
+.edu-drill-modes { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.7rem; }
+.edu-drill-modes-note {
+  margin: 1rem 0 0; color: rgba(222, 212, 196, 0.55);
+  font-size: 0.85rem; font-style: italic; line-height: 1.6;
+}
+.edu-drill-prompt-name {
+  font-size: clamp(1.6rem, 4vw, 2.2rem);
+  color: #ecd9ae; letter-spacing: 0.06em; margin-bottom: 1.2rem;
+}
+.edu-drill-option-glyph { font-size: 1.6rem; line-height: 1.5; }
