@@ -50,6 +50,11 @@ import corpusGeez from '../data/education/corpus/geez';
 import corpusChinese from '../data/education/corpus/chinese';
 import corpusSlavonic from '../data/education/corpus/slavonic';
 import pgm from '../data/education/pgm';
+import themesLatin from '../data/education/themes/latin';
+import themesGreek from '../data/education/themes/greek';
+import themesHebrew from '../data/education/themes/hebrew';
+import themesSanskrit from '../data/education/themes/sanskrit';
+import themesArabic from '../data/education/themes/arabic';
 import themesEgyptian from '../data/education/themes/egyptian';
 import themesCuneiform from '../data/education/themes/cuneiform';
 import themesTibetan from '../data/education/themes/tibetan';
@@ -88,7 +93,7 @@ const DATA = { latin, greek, hebrew, egyptian, cuneiform, sanskrit, arabic, tibe
 const EXT = { latin: extLatin, greek: extGreek, hebrew: extHebrew, egyptian: extEgyptian, cuneiform: extCuneiform, sanskrit: extSanskrit, arabic: extArabic, tibetan: extTibetan, syriac: extSyriac, coptic: extCoptic, aramaic: extAramaic, persian: extPersian, armenian: extArmenian, geez: extGeez, chinese: extChinese, slavonic: extSlavonic };
 const CORPUS = { latin: corpusLatin, hebrew: corpusHebrew, cuneiform: corpusCuneiform, sanskrit: corpusSanskrit, arabic: corpusArabic, tibetan: corpusTibetan, syriac: corpusSyriac, coptic: corpusCoptic, aramaic: corpusAramaic, persian: corpusPersian, armenian: corpusArmenian, geez: corpusGeez, chinese: corpusChinese, slavonic: corpusSlavonic };
 const TIMELINES = { latin: tlLatin, greek: tlGreek, hebrew: tlHebrew, egyptian: tlEgyptian, cuneiform: tlCuneiform, sanskrit: tlSanskrit, arabic: tlArabic, tibetan: tlTibetan, syriac: tlSyriac, coptic: tlCoptic, aramaic: tlAramaic, persian: tlPersian, armenian: tlArmenian, geez: tlGeez, chinese: tlChinese, slavonic: tlSlavonic };
-const THEMES = { egyptian: themesEgyptian, cuneiform: themesCuneiform, tibetan: themesTibetan, syriac: themesSyriac, coptic: themesCoptic, aramaic: themesAramaic, persian: themesPersian, armenian: themesArmenian, geez: themesGeez, chinese: themesChinese, slavonic: themesSlavonic };
+const THEMES = { latin: themesLatin, greek: themesGreek, hebrew: themesHebrew, sanskrit: themesSanskrit, arabic: themesArabic, egyptian: themesEgyptian, cuneiform: themesCuneiform, tibetan: themesTibetan, syriac: themesSyriac, coptic: themesCoptic, aramaic: themesAramaic, persian: themesPersian, armenian: themesArmenian, geez: themesGeez, chinese: themesChinese, slavonic: themesSlavonic };
 // Each corpus is titled for what it actually is, not generically shelved.
 const CORPUS_COPY = {
     latin: { kicker: 'The Shelf', heading: 'Theatrum Chemicum' },
@@ -214,7 +219,26 @@ function EducationLanguagePage() {
                         {data.scriptNote && <p>{data.scriptNote}</p>}
                     </header>
 
-                    <div className="edu-letter-grid" role="listbox" aria-label={`${TITLES[lang]} letters`} aria-activedescendant={letter ? `edu-letter-${selected}` : undefined}>
+                    <div
+                        className="edu-letter-grid"
+                        role="listbox"
+                        aria-label={`${TITLES[lang]} letters`}
+                        aria-activedescendant={letter ? `edu-letter-${selected}` : undefined}
+                        onKeyDown={(e) => {
+                            // Arrows walk the alphabet; Home and End jump to its ends.
+                            // RTL halls read right to left, so the arrows follow the script.
+                            const last = data.letters.length - 1;
+                            const step = { ArrowRight: rtl ? -1 : 1, ArrowLeft: rtl ? 1 : -1, ArrowDown: 1, ArrowUp: -1 }[e.key];
+                            let next = null;
+                            if (step != null) next = Math.min(last, Math.max(0, selected + step));
+                            else if (e.key === 'Home') next = 0;
+                            else if (e.key === 'End') next = last;
+                            if (next == null || next === selected) return;
+                            e.preventDefault();
+                            setSelected(next);
+                            document.getElementById(`edu-letter-${next}`)?.focus();
+                        }}
+                    >
                         {data.letters.map((l, i) => (
                             <button
                                 type="button"
@@ -222,6 +246,7 @@ function EducationLanguagePage() {
                                 id={`edu-letter-${i}`}
                                 role="option"
                                 aria-selected={selected === i}
+                                tabIndex={selected === i ? 0 : -1}
                                 className={`edu-letter-card${selected === i ? ' is-selected' : ''}${l.archaic ? ' is-archaic' : ''}`}
                                 onClick={() => setSelected(i)}
                             >
