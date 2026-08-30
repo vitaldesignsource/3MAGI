@@ -152,6 +152,10 @@ if (daimons) {
         uniq('daimons', e.slug);
         if (!e.source) fail(`daimons/${e.slug}: no source`);
         if (!e.exposition?.length) fail(`daimons/${e.slug}: no exposition`);
+        if (e.image && !existsSync(path.join(web, 'public/media', e.image))) {
+            fail(`daimons/${e.slug}: image ${e.image} not in public/media`);
+        }
+        if (e.image && !e.imageAlt) fail(`daimons/${e.slug}: image without alt text`);
     }
     notes.push(`daimons: ${daimons.entries.length}`);
 }

@@ -138,6 +138,7 @@ function Daimons({ data, open, setOpen }) {
                 <Expandable key={e.slug} id={e.slug} open={open === e.slug}
                     onToggle={() => setOpen(open === e.slug ? null : e.slug)}
                     head={e.name} sub={e.era} badge={e.tradition}>
+                    <Plate item={e} />
                     {e.exposition.map((p, i) => <p key={i}><Rich t={p} /></p>)}
                     {kv('Source', e.source)}
                     {kv('The shift', e.shift)}
