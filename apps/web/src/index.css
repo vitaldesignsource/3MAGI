@@ -10887,3 +10887,48 @@ h3 {
   color: #ecd9ae; letter-spacing: 0.06em; margin-bottom: 1.2rem;
 }
 .edu-drill-option-glyph { font-size: 1.6rem; line-height: 1.5; }
+
+/* Phoenician — the ancestor row of the kinship table. */
+@font-face { font-family: "TL Phoenician"; src: url("/fonts/TLPhoenician.woff2") format("woff2");
+  font-weight: 400; font-style: normal; font-display: swap; unicode-range: U+10900-1091F; }
+
+
+/* keyboard focus on the letter grid */
+.edu-letter-card:focus-visible {
+  outline: 2px solid rgba(236, 217, 174, 0.85);
+  outline-offset: 2px;
+}
+
+/* --- print --------------------------------------------------------------
+   An education portal gets printed: lessons, readings, the kinship table.
+   Strip the chrome, keep the scholarship, and let paper be paper. */
+@media print {
+  .third-lamp-scope { background: #fff !important; color: #111 !important; }
+  .edu-page *, .edu-page { color: #111 !important; background: transparent !important;
+    text-shadow: none !important; box-shadow: none !important; }
+  .tl-nav, .menu-button, .edu-section-nav, .edu-hall-nav, .edu-course-banner,
+  .edu-drill, .edu-reckoner, .edu-search, .edu-filter-row, .edu-search-kinds,
+  .edu-lesson-done, .edu-lesson-nav, .edu-exercise-reveal, .edu-current-tabs,
+  .edu-work-toc-toggle, .edu-work-back, .alchemical-cursor, .aether-mist-container { display: none !important; }
+  .edu-exercise-answer { display: block !important; }
+  .edu-kinship-scroll { overflow: visible; border-color: #999; }
+  .edu-letter-plaque, .edu-work, .edu-reading, .edu-current, .edu-event-detail,
+  .edu-book-card, .edu-exercise { border: 1px solid #bbb !important; break-inside: avoid; }
+  .edu-glyph { color: #000 !important; }
+  a { text-decoration: none; color: #111 !important; }
+}
+
+/* cognates: the ancestor glyph and the note rows */
+.edu-cog-proto { display: flex; align-items: center; gap: 0.6rem; text-align: left; }
+.edu-cog-ph { font-size: 1.4rem; color: #d1ad68; min-width: 1.4rem; }
+.edu-cog-body { display: flex; flex-direction: column; }
+.edu-cognates-table tr.has-note { cursor: pointer; }
+.edu-cognates-table tr.has-note:hover td { background: rgba(179, 139, 70, 0.07); }
+.edu-cog-noterow td {
+  text-align: left;
+  background: rgba(24, 19, 14, 0.85);
+  color: rgba(232, 224, 208, 0.8);
+  font-size: 0.9rem;
+  line-height: 1.7;
+  padding: 0.9rem 1.2rem;
+}

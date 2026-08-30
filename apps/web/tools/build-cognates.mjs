@@ -64,6 +64,31 @@ const LATIN_BY_POSITION = {
     80: 'P', 90: null, 100: 'Q', 200: 'R', 300: 'S', 400: 'T',
 };
 
+// The ancestor itself, now that the Phoenician face ships with the site
+// (TLPhoenician.woff2, 8KB, unicode-range U+10900-1091F).
+const PHOENICIAN = {
+    1: '\u{10900}', 2: '\u{10901}', 3: '\u{10902}', 4: '\u{10903}', 5: '\u{10904}',
+    6: '\u{10905}', 7: '\u{10906}', 8: '\u{10907}', 9: '\u{10908}', 10: '\u{10909}',
+    20: '\u{1090A}', 30: '\u{1090B}', 40: '\u{1090C}', 50: '\u{1090D}', 60: '\u{1090E}',
+    70: '\u{1090F}', 80: '\u{10910}', 90: '\u{10911}', 100: '\u{10912}', 200: '\u{10913}',
+    300: '\u{10914}', 400: '\u{10915}',
+};
+
+// Rows whose story deserves more than a cell. Shown when the reader opens
+// the row; everything here is the standard account, hedged where argued.
+const NOTES = {
+    2: 'Cyrillic split beta in two: б for the sound [b], в for the [v] Byzantine beta had become — and only в inherited the number.',
+    3: 'Latin C is gamma\u2019s shape; G is a third-century BCE Roman addition, C with a stroke, credited by tradition to the school of Spurius Carvilius Ruga.',
+    6: 'The first fault line. Greek split wāw in two — digamma the consonant, upsilon the vowel — and Latin drew F, V, U, W and Y from the pair. Digamma died as a sound and lived on as the bare numeral 6.',
+    8: 'Greek eta began as a rough breathing and became a long vowel; Latin kept the breathing as H.',
+    9: 'Latin dropped theta as a sound; at Rome the letter survived chiefly as the theta nigrum, the mark of death on the muster-rolls.',
+    60: 'Arabic seats sīn here, at 60 — the abjad order preserving the seat where the sound shifted. The descent of Greek xi, and of Latin X, is genuinely tangled and argued.',
+    70: 'A guttural no Greek throat kept: ʿayin became the vowel O all the way down the Greek line.',
+    90: 'The second fault line. Greek\u2019s letter here — san — died without ever receiving a number, so every later Greek numeral sits one seat early against the Semitic count.',
+    100: 'Koppa kept a number after it died as a sound — and, san having died numberless, the number it kept is 90, one seat early. Latin kept the letter alive as Q.',
+    200: 'From here the two reckonings run in parallel forever: 200, 300, 400 down the Semitic column; 100, 200, 300 down the Greek. Both are correct.',
+};
+
 const rows = [];
 const halls = {};
 for (const h of BY_VALUE) halls[h] = await load(`${h}.js`);
@@ -96,7 +121,8 @@ for (const pos of POSITIONS) {
     for (const h of BY_VALUE) cells[h] = pickByValue(h, pos.v);
     const latin = LATIN_BY_POSITION[pos.v];
     cells.latin = latin ? { g: latin, n: latin, archaic: false } : null;
-    rows.push({ v: pos.v, proto: pos.proto, sense: pos.sense, cells });
+    rows.push({ v: pos.v, proto: pos.proto, sense: pos.sense,
+        ph: PHOENICIAN[pos.v] || null, note: NOTES[pos.v] || null, cells });
 }
 
 // Sanity: Hebrew and Aramaic must fill all 22; Greek at least 20 (digamma

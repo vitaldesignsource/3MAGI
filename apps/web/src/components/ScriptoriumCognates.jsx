@@ -51,15 +51,18 @@ function ScriptoriumCognates() {
                     </thead>
                     <tbody>
                         {cognates.rows.map((r) => (
+                            <React.Fragment key={r.v}>
                             <tr
-                                key={r.v}
-                                className={active === r.v ? 'is-active' : ''}
-                                onClick={() => setActive(active === r.v ? null : r.v)}
+                                className={`${active === r.v ? 'is-active' : ''}${r.note ? ' has-note' : ''}`}
+                                onClick={r.note ? () => setActive(active === r.v ? null : r.v) : undefined}
                             >
                                 <td className="edu-cog-num">{r.v}</td>
                                 <td className="edu-cog-proto">
-                                    <span className="edu-cog-name">{r.proto}</span>
-                                    <span className="edu-cog-sense">{r.sense}</span>
+                                    {r.ph && <span className="edu-cog-ph edu-glyph" aria-hidden="true">{r.ph}</span>}
+                                    <span className="edu-cog-body">
+                                        <span className="edu-cog-name">{r.proto}{r.note ? ' ↕' : ''}</span>
+                                        <span className="edu-cog-sense">{r.sense}</span>
+                                    </span>
                                 </td>
                                 {cognates.scripts.map((s) => {
                                     const c = r.cells[s];
@@ -72,6 +75,12 @@ function ScriptoriumCognates() {
                                     );
                                 })}
                             </tr>
+                            {active === r.v && r.note && (
+                                <tr className="edu-cog-noterow">
+                                    <td colSpan={cognates.scripts.length + 2}>{r.note}</td>
+                                </tr>
+                            )}
+                            </React.Fragment>
                         ))}
                     </tbody>
                 </table>
