@@ -7,7 +7,7 @@ export default {
         'Each entry gives the being as its own tradition holds it, the first datable attestation, and the crossings — because the same figure walks between scriptures under changing passports, and the walking is half the story.',
     ],
     groups: [
-        { key: 'presence', image: 'b30a6ba8e05a378455141ddb1b52bc33.webp',
+        { key: 'presence', image: 'b30a6ba8e05a378455141ddb1b52bc33.webp', imageEffect: 'light',
           imageAlt: 'Colossal hooded angel-statues in a dark basilica: one writing with a quill, one holding open a book of diagrams, one bearing censers on chains with crowns hanging in the smoke',
           imageCaption: 'The company in its offices: the scribe at his ledger, the open book of secrets, and the crowns woven from the prayers as they rise — Metatron, Raziel, Sandalphon.',
           label: 'The Angels of the Presence', blurb: 'The great ones who stand before the Glory — the named archangels of the Jewish and Christian host.' },

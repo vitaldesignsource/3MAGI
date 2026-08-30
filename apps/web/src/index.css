@@ -11297,6 +11297,62 @@ figure.ch-gallery-card { margin: 0; }
   border-top: 1px solid rgba(179, 139, 70, 0.18);
 }
 
+/* the living light — an opt-in animated layer over a plate (imageEffect:
+   'light'). Three sheets, all compositor-only (transform/opacity, screen
+   blend): a slow shaft drifting through the hall, a breathing censer-glow,
+   and motes rising like sparks. Stilled for reduced-motion readers. */
+.pw-plate-stage { position: relative; display: block; overflow: hidden; }
+.pw-plate-light { position: absolute; inset: 0; display: block; pointer-events: none; }
+.pw-plate-light > span { position: absolute; inset: 0; display: block; mix-blend-mode: screen; }
+
+.pw-plate-beam {
+  background: linear-gradient(100deg,
+    transparent 38%, rgba(236, 208, 148, 0.16) 47%,
+    rgba(244, 226, 180, 0.28) 50%, rgba(236, 208, 148, 0.16) 53%, transparent 62%);
+  width: 200%; left: -50%;
+  animation: pw-beam-drift 16s ease-in-out infinite alternate;
+}
+@keyframes pw-beam-drift {
+  from { transform: translateX(-14%); opacity: 0.55; }
+  50%  { opacity: 0.95; }
+  to   { transform: translateX(14%); opacity: 0.55; }
+}
+
+.pw-plate-glow {
+  background: radial-gradient(ellipse 42% 60% at 72% 38%,
+    rgba(235, 190, 120, 0.30) 0%, rgba(235, 190, 120, 0.10) 45%, transparent 72%);
+  animation: pw-glow-breathe 7s ease-in-out infinite;
+}
+@keyframes pw-glow-breathe {
+  0%, 100% { opacity: 0.5; transform: scale(1); }
+  50%      { opacity: 1;   transform: scale(1.06); }
+}
+
+.pw-plate-motes {
+  background-image:
+    radial-gradient(1.5px 1.5px at 18% 82%, rgba(244, 226, 180, 0.9), transparent 100%),
+    radial-gradient(1px 1px at 42% 64%, rgba(236, 208, 148, 0.8), transparent 100%),
+    radial-gradient(2px 2px at 67% 78%, rgba(244, 226, 180, 0.7), transparent 100%),
+    radial-gradient(1px 1px at 82% 55%, rgba(236, 208, 148, 0.8), transparent 100%),
+    radial-gradient(1.5px 1.5px at 30% 45%, rgba(244, 226, 180, 0.6), transparent 100%),
+    radial-gradient(1px 1px at 55% 88%, rgba(236, 208, 148, 0.9), transparent 100%);
+  background-repeat: repeat;
+  background-size: 340px 340px;
+  height: 200%;
+  opacity: 0.5;
+  animation: pw-motes-rise 22s linear infinite;
+}
+@keyframes pw-motes-rise {
+  from { transform: translateY(0); }
+  to   { transform: translateY(-50%); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pw-plate-beam, .pw-plate-glow, .pw-plate-motes { animation: none; }
+  .pw-plate-beam { opacity: 0.4; }
+  .pw-plate-motes { opacity: 0.25; }
+}
+
 /* the powers — portal-specific touches on the shared ch machinery */
 .pw-head-native { margin-right: 0.5em; font-size: 1.15em; color: #ecd9ae; }
 .pw-rank-native { margin-right: 0.45em; color: #ecd9ae; }

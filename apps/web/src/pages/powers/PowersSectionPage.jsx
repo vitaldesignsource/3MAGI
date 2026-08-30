@@ -40,8 +40,17 @@ const kv = (label, value) => (value
 // or full-width beneath a company's header.
 const Plate = ({ item, wide }) => (item?.image ? (
     <figure className={`pw-entry-figure${wide ? ' is-wide' : ''}`}>
-        <img src={`/media/${item.image}`} alt={item.imageAlt || ''}
-            loading="lazy" decoding="async" />
+        <span className="pw-plate-stage">
+            <img src={`/media/${item.image}`} alt={item.imageAlt || ''}
+                loading="lazy" decoding="async" />
+            {item.imageEffect === 'light' && (
+                <span className="pw-plate-light" aria-hidden="true">
+                    <span className="pw-plate-beam" />
+                    <span className="pw-plate-glow" />
+                    <span className="pw-plate-motes" />
+                </span>
+            )}
+        </span>
         {item.imageCaption && <figcaption><Rich t={item.imageCaption} /></figcaption>}
     </figure>
 ) : null);
