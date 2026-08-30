@@ -10983,6 +10983,40 @@ h3 {
 .ch-quote p { margin: 0 0 0.3rem; color: #ecd9ae; font-style: italic; line-height: 1.7; }
 .ch-quote cite { color: rgba(222, 212, 196, 0.55); font-size: 0.8rem; font-style: normal; }
 
+/* the family at prayer — portal gallery */
+.ch-gallery { margin-top: clamp(3rem, 6vw, 5rem); }
+.ch-gallery-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(min(300px, 100%), 1fr));
+  gap: 1.1rem; align-items: start;
+}
+.ch-gallery-card {
+  display: block; text-decoration: none; color: inherit;
+  border: 1px solid rgba(179, 139, 70, 0.22); background: rgba(16, 13, 10, 0.8);
+  overflow: hidden;
+  transition: border-color 180ms ease, transform 180ms ease;
+}
+.ch-gallery-card:hover, .ch-gallery-card:focus-visible {
+  border-color: rgba(209, 173, 104, 0.6); transform: translateY(-2px);
+}
+.ch-gallery-card img {
+  display: block; width: 100%; aspect-ratio: 4 / 5; object-fit: cover;
+  filter: saturate(0.92);
+  transition: filter 220ms ease;
+}
+.ch-gallery-card:hover img { filter: saturate(1); }
+.ch-gallery-caption {
+  display: flex; flex-direction: column; gap: 0.35rem;
+  padding: 0.85rem 1rem 1rem;
+  border-top: 1px solid rgba(179, 139, 70, 0.18);
+}
+.ch-gallery-caption strong {
+  font-family: "Cinzel", Georgia, serif;
+  font-weight: 600; font-size: 0.98rem; letter-spacing: 0.06em; color: #ecd9ae;
+}
+.ch-gallery-caption span {
+  font-size: 0.86rem; line-height: 1.65; color: rgba(232, 224, 208, 0.72);
+}
+
 /* symbols */
 .ch-symbol-grid {
   display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));

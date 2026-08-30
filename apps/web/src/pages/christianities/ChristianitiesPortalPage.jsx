@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import SiteHeader from '../../components/SiteHeader';
 import SiteFooter from '../../components/SiteFooter';
 import ScriptoriumTimeline from '../../components/ScriptoriumTimeline';
+import ScriptoriumSearch from '../../components/ScriptoriumSearch';
 import { SECTIONS, loadData } from './lib';
 
 // Christianities — the portal landing. The plural is the thesis, and it is
@@ -14,10 +15,12 @@ import { SECTIONS, loadData } from './lib';
 
 function ChristianitiesPortalPage() {
     const [timeline, setTimeline] = useState(null);
+    const [gallery, setGallery] = useState(null);
 
     useEffect(() => {
         let alive = true;
         loadData('timeline').then((t) => { if (alive && t?.events?.length) setTimeline(t); });
+        loadData('gallery').then((g) => { if (alive && g?.images?.length) setGallery(g); });
         return () => { alive = false; };
     }, []);
 
@@ -65,6 +68,30 @@ function ChristianitiesPortalPage() {
                         ))}
                     </div>
                 </section>
+
+                {gallery && (
+                    <section className="ch-gallery" aria-labelledby="ch-gallery-heading">
+                        <header className="edu-section-head">
+                            <p className="kicker">{gallery.kicker}</p>
+                            <h2 id="ch-gallery-heading">{gallery.title}</h2>
+                            <p>{gallery.intro}</p>
+                        </header>
+                        <div className="ch-gallery-grid">
+                            {gallery.images.map((g) => (
+                                <Link className="ch-gallery-card" to={g.link} key={g.file}>
+                                    <img src={`/media/${g.file}`} alt={g.alt}
+                                        loading="lazy" decoding="async" />
+                                    <span className="ch-gallery-caption">
+                                        <strong>{g.title}</strong>
+                                        <span>{g.caption}</span>
+                                    </span>
+                                </Link>
+                            ))}
+                        </div>
+                    </section>
+                )}
+
+                <ScriptoriumSearch scope="christianities" />
 
                 {timeline && <ScriptoriumTimeline timeline={timeline} rtl={false} />}
             </main>

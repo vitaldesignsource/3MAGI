@@ -1,6 +1,6 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { Helmet } from 'react-helmet';
-import { Link, useParams, Navigate } from 'react-router-dom';
+import { Link, useParams, useLocation, Navigate } from 'react-router-dom';
 import SiteHeader from '../../components/SiteHeader';
 import SiteFooter from '../../components/SiteFooter';
 import { SECTION_BY_SLUG, loadData } from './lib';
@@ -14,9 +14,9 @@ const STATUS_LABEL = {
     revived: 'revived', divided: 'church-dividing', unresolved: 'unresolved',
 };
 
-function Expandable({ head, sub, badge, children, open, onToggle }) {
+function Expandable({ id, head, sub, badge, children, open, onToggle }) {
     return (
-        <article className={`ch-entry${open ? ' is-open' : ''}`}>
+        <article id={id} className={`ch-entry${open ? ' is-open' : ''}`}>
             <button type="button" className="ch-entry-head" onClick={onToggle} aria-expanded={open}>
                 <span className="ch-entry-titles">
                     <span className="ch-entry-name">{head}</span>
@@ -33,7 +33,7 @@ function Christologies({ data, open, setOpen }) {
     return (
         <div className="ch-entry-list">
             {data.entries.map((e) => (
-                <Expandable key={e.slug} open={open === e.slug}
+                <Expandable key={e.slug} id={e.slug} open={open === e.slug}
                     onToggle={() => setOpen(open === e.slug ? null : e.slug)}
                     head={e.name}
                     sub={e.term ? `${e.term.native} · ${e.term.translit} — ${e.term.meaning}` : e.claim}
@@ -68,7 +68,7 @@ function Branches({ data, open, setOpen }) {
                 </header>
                 <div className="ch-entry-list">
                     {entries.map((e) => (
-                        <Expandable key={e.slug} open={open === e.slug}
+                        <Expandable key={e.slug} id={e.slug} open={open === e.slug}
                             onToggle={() => setOpen(open === e.slug ? null : e.slug)}
                             head={e.name} sub={e.era} badge={e.today ? 'living' : null}>
                             {e.selfName && e.selfName !== e.name && (
@@ -96,7 +96,7 @@ function Councils({ data, open, setOpen }) {
         <>
             <div className="ch-entry-list">
                 {data.councils.map((c) => (
-                    <Expandable key={c.slug} open={open === c.slug}
+                    <Expandable key={c.slug} id={c.slug} open={open === c.slug}
                         onToggle={() => setOpen(open === c.slug ? null : c.slug)}
                         head={`${c.name} · ${c.year < 0 ? `${-c.year} BCE` : c.year}`}
                         sub={`${c.place} — ${c.question}`} badge={null}>
@@ -122,7 +122,7 @@ function Councils({ data, open, setOpen }) {
             </header>
             <div className="ch-entry-list">
                 {data.disputes.map((a) => (
-                    <Expandable key={a.slug} open={open === a.slug}
+                    <Expandable key={a.slug} id={a.slug} open={open === a.slug}
                         onToggle={() => setOpen(open === a.slug ? null : a.slug)}
                         head={a.name} sub={`${a.span} — ${a.question}`} badge={null}>
                         <div className="ch-kv"><span>The parties</span><p>{a.parties}</p></div>
@@ -152,7 +152,7 @@ function Figures({ data, open, setOpen }) {
             </div>
             <div className="ch-entry-list">
                 {entries.map((e) => (
-                    <Expandable key={e.slug} open={open === e.slug}
+                    <Expandable key={e.slug} id={e.slug} open={open === e.slug}
                         onToggle={() => setOpen(open === e.slug ? null : e.slug)}
                         head={e.name} sub={`${e.dates} · ${e.role}`} badge={e.tradition}>
                         <p>{e.contribution}</p>
@@ -174,7 +174,7 @@ function Symbols({ data, open, setOpen }) {
     return (
         <div className="ch-symbol-grid">
             {data.entries.map((e) => (
-                <button type="button" key={e.slug}
+                <button type="button" key={e.slug} id={e.slug}
                     className={`ch-symbol-card${open === e.slug ? ' is-open' : ''}`}
                     onClick={() => setOpen(open === e.slug ? null : e.slug)}
                     aria-expanded={open === e.slug}>
@@ -202,6 +202,7 @@ const RENDERERS = {
 
 function ChristianitiesSectionPage() {
     const { section } = useParams();
+    const { hash } = useLocation();
     const meta = SECTION_BY_SLUG[section];
     const Renderer = RENDERERS[section];
     const [data, setData] = useState(null);
@@ -214,6 +215,12 @@ function ChristianitiesSectionPage() {
         if (Renderer) loadData(section).then((d) => { if (alive) { setData(d); setState('done'); } });
         return () => { alive = false; };
     }, [section, Renderer]);
+
+    // A search result arrives as /christianities/<section>#<slug>. The global
+    // ScrollToTop handles the scroll; opening the entry is this page's job.
+    useEffect(() => {
+        if (data && hash) setOpen(decodeURIComponent(hash.slice(1)));
+    }, [data, hash]);
 
     if (!meta || !Renderer) return <Navigate to="/christianities" replace />;
     if (state === 'loading') {

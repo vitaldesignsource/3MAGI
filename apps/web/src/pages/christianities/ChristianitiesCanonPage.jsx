@@ -1,6 +1,6 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { Helmet } from 'react-helmet';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import SiteHeader from '../../components/SiteHeader';
 import SiteFooter from '../../components/SiteFooter';
 import ScriptoriumTimeline from '../../components/ScriptoriumTimeline';
@@ -28,6 +28,10 @@ const SECTION_LABEL = {
 const SECTION_ORDER = ['torah', 'history', 'wisdom', 'prophets', 'deutero',
     'gospels', 'acts', 'pauline', 'catholic', 'apocalypse', 'other'];
 
+// Anchor id for a book row. The search index builder derives the same slug;
+// change one and you must change the other.
+const bookId = (name) => `bk-${name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')}`;
+
 function ChristianitiesCanonPage() {
     const [data, setData] = useState(null);
     const [activeTrad, setActiveTrad] = useState(null);
@@ -38,6 +42,16 @@ function ChristianitiesCanonPage() {
         loadData('canon').then((d) => { if (alive) setData(d); });
         return () => { alive = false; };
     }, []);
+
+    // A search result arrives as /christianities/canon#bk-<slug>: open that
+    // book's note. ScrollToTop brings the row into view.
+    const { hash } = useLocation();
+    useEffect(() => {
+        if (!data || !hash) return;
+        const id = decodeURIComponent(hash.slice(1));
+        const book = data.books.find((b) => bookId(b.name) === id);
+        if (book?.note) setOpenBook(book.name);
+    }, [data, hash]);
 
     const sections = useMemo(() => {
         if (!data) return [];
@@ -120,7 +134,8 @@ function ChristianitiesCanonPage() {
                                     </tr>
                                     {sec.books.map((b) => (
                                         <React.Fragment key={b.name}>
-                                            <tr className={`${b.note ? 'has-note ' : ''}${openBook === b.name ? 'is-open' : ''}`}
+                                            <tr id={bookId(b.name)}
+                                                className={`${b.note ? 'has-note ' : ''}${openBook === b.name ? 'is-open' : ''}`}
                                                 onClick={b.note ? () => setOpenBook(openBook === b.name ? null : b.name) : undefined}>
                                                 <th scope="row">{b.name}{b.note ? ' ↕' : ''}</th>
                                                 {trads.map((t) => {

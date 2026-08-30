@@ -20,8 +20,35 @@ const fold = (s) => s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
 const KIND_LABEL = {
     sign: 'Sign', name: 'Divine name', term: 'Lexicon', current: 'Current',
     work: 'Text', event: 'Timeline', lesson: 'Lesson', book: 'Reading Room',
+    // the Christianities portal
+    christology: 'Christology', branch: 'Branch', council: 'Council',
+    dispute: 'Argument', canon: 'Canon', figure: 'Figure', symbol: 'Symbol', site: 'Place',
 };
-const KIND_ORDER = ['name', 'term', 'sign', 'current', 'work', 'event', 'lesson', 'book'];
+const KIND_ORDER = ['name', 'term', 'sign', 'current', 'work', 'event', 'lesson', 'book',
+    'figure', 'branch', 'council', 'dispute', 'christology', 'canon', 'symbol', 'site'];
+
+// The same index serves two portals; each search box sees only its own half.
+// Christianities records are marked h === 'ch' and carry their path outright.
+const SCOPES = {
+    scriptorium: {
+        pool: (r) => r.h !== 'ch',
+        kicker: 'Across Every Hall',
+        heading: 'Search the Scriptorium',
+        blurb: 'Signs, divine names, lexicon, currents, primary texts, timelines '
+            + 'and lessons — in fourteen scripts. Type in English or paste the script itself.',
+        placeholder: 'sefirah · ḥaqq · אין סוף · 𓋹 · execration',
+        empty: 'Nothing in the Scriptorium answers to',
+    },
+    christianities: {
+        pool: (r) => r.h === 'ch',
+        kicker: 'Across the Whole Portal',
+        heading: 'Search Christianities',
+        blurb: 'Christologies, branches, councils, the canon table, figures, '
+            + 'symbols, places and dates — one box over all seven doors.',
+        placeholder: 'homoousios · Chalcedon · Perpetua · 1 Enoch · Iona',
+        empty: 'Nothing in the portal answers to',
+    },
+};
 
 function score(rec, q, qFolded) {
     const label = fold(rec.l);
@@ -37,7 +64,8 @@ function score(rec, q, qFolded) {
     return 0;
 }
 
-function ScriptoriumSearch() {
+function ScriptoriumSearch({ scope = 'scriptorium' }) {
+    const sc = SCOPES[scope];
     const [query, setQuery] = useState('');
     const [index, setIndex] = useState(null);
     const [state, setState] = useState('idle'); // idle | loading | ready | error
@@ -67,12 +95,13 @@ function ScriptoriumSearch() {
         const qf = fold(q);
         const scored = [];
         for (const rec of index.records) {
+            if (!sc.pool(rec)) continue;
             const s = score(rec, q, qf);
             if (s > 0) scored.push({ rec, s });
         }
         scored.sort((a, b) => b.s - a.s || a.rec.l.localeCompare(b.rec.l));
         return scored.slice(0, 120).map((x) => x.rec);
-    }, [index, query]);
+    }, [index, query, sc]);
 
     const kinds = useMemo(() => {
         const present = new Set(results.map((r) => r.k));
@@ -86,22 +115,22 @@ function ScriptoriumSearch() {
         if (kind !== 'all' && !kinds.includes(kind)) setKind('all');
     }, [kinds, kind]);
 
-    const hrefFor = (r) => (r.h === 'library'
-        ? `/third-lamp/education#${r.a}`
-        : r.k === 'lesson'
-            ? `/third-lamp/education/${r.h}/course`
-            : `/third-lamp/education/${r.h}#${r.a}`);
+    const hrefFor = (r) => (r.u
+        ? (r.a ? `${r.u}#${r.a}` : r.u)
+        : r.h === 'library'
+            ? `/third-lamp/education#${r.a}`
+            : r.k === 'lesson'
+                ? `/third-lamp/education/${r.h}/course`
+                : `/third-lamp/education/${r.h}#${r.a}`);
 
     const q = query.trim();
 
     return (
         <section className="edu-search" aria-labelledby="edu-search-heading">
             <header className="edu-section-head">
-                <p className="kicker">Across Every Hall</p>
-                <h2 id="edu-search-heading">Search the Scriptorium</h2>
-                <p>Signs, divine names, lexicon, currents, primary texts, timelines
-                    and lessons — in fourteen scripts. Type in English or paste the
-                    script itself.</p>
+                <p className="kicker">{sc.kicker}</p>
+                <h2 id="edu-search-heading">{sc.heading}</h2>
+                <p>{sc.blurb}</p>
             </header>
 
             <div className="edu-search-box">
@@ -110,8 +139,8 @@ function ScriptoriumSearch() {
                     value={query}
                     onChange={(e) => setQuery(e.target.value)}
                     onFocus={ensureIndex}
-                    placeholder="sefirah · ḥaqq · אין סוף · 𓋹 · execration"
-                    aria-label="Search the Scriptorium"
+                    placeholder={sc.placeholder}
+                    aria-label={sc.heading}
                     aria-describedby="edu-search-status"
                 />
                 <span id="edu-search-status" className="edu-search-status" aria-live="polite">
@@ -158,7 +187,7 @@ function ScriptoriumSearch() {
             )}
 
             {state === 'ready' && q.length >= 2 && results.length === 0 && (
-                <p className="edu-search-empty">Nothing in the Scriptorium answers to “{q}”.</p>
+                <p className="edu-search-empty">{sc.empty} “{q}”.</p>
             )}
         </section>
     );

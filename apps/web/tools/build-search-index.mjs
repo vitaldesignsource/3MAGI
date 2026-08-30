@@ -35,9 +35,12 @@ const TITLES = {
 
 const records = [];
 // h hall · k kind · n native · l label · s subtitle · d detail · a anchor
-const push = (h, k, n, l, s, d, a) => records.push({
-    h, k, n: n || '', l: l || '', s: s || '', d: (d || '').slice(0, 180), a: a || '',
-});
+// · u explicit path (Christianities records only; hall records route by convention)
+const push = (h, k, n, l, s, d, a, u) => {
+    const r = { h, k, n: n || '', l: l || '', s: s || '', d: (d || '').slice(0, 180), a: a || '' };
+    if (u) r.u = u;
+    records.push(r);
+};
 
 for (const hall of HALLS) {
     const d = await load(`${hall}.js`);
@@ -88,6 +91,74 @@ const library = await load('library.js');
 for (const b of library?.books ?? []) push(
     'library', 'book', '', b.title, `${b.author} · ${b.year}`,
     b.description, 'edu-library-heading',
+);
+
+// --- The Christianities portal --------------------------------------------
+// Same index, different door: records carry an explicit path (u) because the
+// portal's routes don't follow the hall convention. Sections still awaiting
+// their pipeline export null and contribute nothing.
+const loadCh = async (name) => {
+    try { return (await import(path.join(web, 'src/data/christianities', `${name}.js`))).default; }
+    catch { return null; }
+};
+// Must mirror bookId() in ChristianitiesCanonPage.jsx.
+const bookId = (name) => `bk-${name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')}`;
+const CH = 'ch';
+
+const christologies = await loadCh('christologies');
+for (const e of christologies?.entries ?? []) push(
+    CH, 'christology', e.term?.native, e.name, e.term?.translit,
+    e.claim, e.slug, '/christianities/christologies',
+);
+
+const branches = await loadCh('branches');
+for (const e of branches?.entries ?? []) push(
+    CH, 'branch', '', e.name, [e.selfName !== e.name ? e.selfName : '', e.era].filter(Boolean).join(' · '),
+    e.origin, e.slug, '/christianities/branches',
+);
+
+const councils = await loadCh('councils');
+for (const c of councils?.councils ?? []) push(
+    CH, 'council', '', c.name, `${c.place} · ${c.year < 0 ? `${-c.year} BCE` : c.year}`,
+    c.question, c.slug, '/christianities/councils',
+);
+for (const a of councils?.disputes ?? []) push(
+    CH, 'dispute', '', a.name, a.span, a.question, a.slug, '/christianities/councils',
+);
+
+const canon = await loadCh('canon');
+for (const b of canon?.books ?? []) push(
+    CH, 'canon', '', b.name, '', b.note, bookId(b.name), '/christianities/canon',
+);
+for (const m of canon?.milestones ?? []) push(
+    CH, 'event', m.native, m.title,
+    `${m.circa ? 'c. ' : ''}${m.year < 0 ? `${-m.year} BCE` : `${m.year} CE`}`,
+    m.description, 'edu-timeline-heading', '/christianities/canon',
+);
+
+const figures = await loadCh('figures');
+for (const f of figures?.entries ?? []) push(
+    CH, 'figure', '', f.name, [f.dates, f.role].filter(Boolean).join(' · '),
+    f.contribution, f.slug, '/christianities/figures',
+);
+
+const symbols = await loadCh('symbols');
+for (const s of symbols?.entries ?? []) push(
+    CH, 'symbol', s.glyph, s.name, '', s.meaning, s.slug, '/christianities/symbols',
+);
+
+const mapsites = await loadCh('mapsites');
+for (const s of mapsites?.sites ?? []) push(
+    CH, 'site', '', s.name,
+    [s.modern ? `now ${s.modern}` : '', `${s.from}–${s.to ?? 'today'}`].filter(Boolean).join(' · '),
+    s.blurb, s.slug, '/christianities/map',
+);
+
+const chTimeline = await loadCh('timeline');
+for (const e of chTimeline?.events ?? []) push(
+    CH, 'event', e.native, e.title,
+    `${e.circa ? 'c. ' : ''}${e.year < 0 ? `${-e.year} BCE` : `${e.year} CE`}`,
+    e.description, 'edu-timeline-heading', '/christianities',
 );
 
 const out = { halls: TITLES, records };

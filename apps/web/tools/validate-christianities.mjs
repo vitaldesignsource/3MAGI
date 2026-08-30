@@ -267,8 +267,28 @@ if (timeline) {
     notes.push(`timeline: ${timeline.events.length} events, ${dated} with dating notes`);
 }
 
+// --- the gallery: every image must exist, every card must say what it shows -
+const gallery = await load('gallery');
+if (gallery) {
+    const { existsSync } = await import('node:fs');
+    const seen = new Set();
+    for (const g of gallery.images) {
+        const where = `gallery/${g.file}`;
+        if (seen.has(g.file)) fail(`${where}: the same image is used twice`);
+        seen.add(g.file);
+        if (!existsSync(path.join(web, 'public/media', g.file))) {
+            fail(`${where}: no such file in public/media`);
+        }
+        if (!g.alt || wordCount(g.alt) < 5) fail(`${where}: alt text missing or too thin to describe the image`);
+        if (!g.title || !g.caption) fail(`${where}: a card with no title or caption`);
+        if (!g.link?.startsWith('/')) fail(`${where}: link "${g.link}" is not an internal path`);
+        checkContested(where, g);
+    }
+    notes.push(`gallery: ${gallery.images.length} rooms`);
+}
+
 // --- report ----------------------------------------------------------------
-const present = [christologies, branches, councils, canon, figures, symbols, mapsites, timeline]
+const present = [christologies, branches, councils, canon, figures, symbols, mapsites, timeline, gallery]
     .filter(Boolean).length;
 if (present === 0) {
     console.log('christianities: scaffolded, awaiting content');
@@ -284,4 +304,4 @@ if (errors.length) {
     for (const e of errors) console.error(`  ✗ ${e}`);
     process.exit(1);
 }
-console.log(`christianities: ${present}/8 sections — ${notes.join(' · ')} — validated`);
+console.log(`christianities: ${present}/9 sections — ${notes.join(' · ')} — validated`);

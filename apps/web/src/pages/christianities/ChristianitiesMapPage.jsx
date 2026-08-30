@@ -1,6 +1,6 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { Helmet } from 'react-helmet';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import SiteHeader from '../../components/SiteHeader';
 import SiteFooter from '../../components/SiteFooter';
 import { loadData } from './lib';
@@ -119,6 +119,19 @@ function ChristianitiesMapPage() {
         return () => { alive = false; };
     }, []);
 
+    // A search result arrives as /christianities/map#<site-slug>. Select the
+    // site, clear any filter that would hide it, and widen the frame if it
+    // lies beyond the Cradle.
+    const { hash } = useLocation();
+    useEffect(() => {
+        if (!data || !hash) return;
+        const site = data.sites.find((s) => s.slug === decodeURIComponent(hash.slice(1)));
+        if (!site) return;
+        setActiveSlug(site.slug);
+        setEra('all'); setCat('all');
+        if (!inFrame(CRADLE, site)) setView('world');
+    }, [data, hash]);
+
     const frame = view === 'cradle' ? CRADLE : WORLD;
     const { project, width, height } = useMemo(() => makeProjector(frame, 980), [frame]);
 
@@ -214,7 +227,7 @@ function ChristianitiesMapPage() {
                             const [x, y] = project([s.lon, s.lat]);
                             const isActive = s.slug === activeSlug;
                             return (
-                                <g key={s.slug}
+                                <g key={s.slug} id={s.slug}
                                     className={`ch-map-site${isActive ? ' is-active' : ''}`}
                                     onClick={() => setActiveSlug(isActive ? null : s.slug)}
                                     role="button" tabIndex={0} aria-label={s.name}
