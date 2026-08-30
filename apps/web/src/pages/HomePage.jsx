@@ -6,6 +6,27 @@ import SiteFooter from '../components/SiteFooter';
 
 const A = '/media';
 
+const PORTALS = [
+    {
+        to: '/christianities', img: '1d5ac948dc068719a0f6667f3b8b8679.webp',
+        eyebrow: 'A Portal', title: 'Christianities', cta: 'Enter the portal',
+        copy: 'The plural is the thesis. Every understanding of Christ, the branches and sects, the councils and the arguments between them, and the making of the different Bibles — each church described in the terms it uses for itself.',
+        stats: ['26 christologies', '47 branches', '86 books, 7 canons', '44 places'],
+    },
+    {
+        to: '/powers', img: '9ab3ebc27f80a115b54e72bf04ef1d27.webp',
+        eyebrow: 'A Portal', title: 'The Powers', cta: 'Enter the portal',
+        copy: 'Angels, daimons, and the gods: the ladders each tradition built for the unseen, the named beings of the host, the families of the gods and the table that walks between them, and the long demotion of the middle world.',
+        stats: ['11 hierarchies', '27 deities, 8 families', '19 named beings', '32 places'],
+    },
+    {
+        to: '/third-lamp/education', img: 'c0a7468350c3f590a01c01f68ed525c1.webp',
+        eyebrow: 'The Third Lamp', title: 'The Scriptorium', cta: 'Enter the halls',
+        copy: 'Sixteen language halls, from Latin and Greek to cuneiform, Geʼez and Classical Chinese: the alphabets in full, the divine names, working lexicons, the primary texts, and courses that teach the scripts letter by letter.',
+        stats: ['16 halls', '497 signs', '245 divine names', '4 courses'],
+    },
+];
+
 const journalEntries = [
     { slug: 'black-mirror-of-fire', img: `${A}/obsidian-altar-mirror.webp`, date: '2026-07-02', dateLabel: 'July 2, 2026', title: 'The Black Mirror of Fire', copy: 'Obsidian, the volcanic stone of vision, shadow, and hidden power.' },
     { slug: 'melchizedek-eternal-priest-king', img: `${A}/melchizedek-throne-altar.webp`, date: '2026-07-02', dateLabel: 'July 2, 2026', title: 'Melchizedek and the Eternal Priest-King', copy: 'The hidden order beyond temple, tribe, and time.' },
@@ -52,6 +73,40 @@ function HomePage() {
                         <h2 id="third-lamp-title">The Third Lamp</h2>
                         <p>A digital esoteric magazine of sacred history, living tradition, and the hidden architecture of ideas. Enter the current issue or follow the currents through its living archive.</p>
                         <Link className="button primary" to="/third-lamp">Enter the Magazine</Link>
+                    </div>
+                </section>
+
+
+                <section className="portals-band" aria-labelledby="portals-title">
+                    <div className="section-heading">
+                        <p className="eyebrow">The Three Magi Press Portals</p>
+                        <h2 id="portals-title">Three doors, standing open</h2>
+                        <p>
+                            Reference works built to be lived in rather than skimmed: every
+                            claim sourced, every contested date given twice, and every
+                            tradition allowed to speak in its own terms before anyone
+                            answers it.
+                        </p>
+                    </div>
+
+                    <div className="portal-grid">
+                        {PORTALS.map((p) => (
+                            <Link className="portal-card" to={p.to} key={p.to}>
+                                <span className="portal-art" aria-hidden="true">
+                                    <img loading="lazy" decoding="async"
+                                        src={`${A}/${p.img}`} alt="" />
+                                </span>
+                                <span className="portal-body">
+                                    <span className="portal-eyebrow">{p.eyebrow}</span>
+                                    <h3>{p.title}</h3>
+                                    <p className="portal-copy">{p.copy}</p>
+                                    <span className="portal-stats">
+                                        {p.stats.map((t) => <span key={t}>{t}</span>)}
+                                    </span>
+                                    <span className="portal-enter" aria-hidden="true">{p.cta} →</span>
+                                </span>
+                            </Link>
+                        ))}
                     </div>
                 </section>
 

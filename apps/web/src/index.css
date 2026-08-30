@@ -621,6 +621,78 @@ h3 {
 }
 
 /* Third Lamp */
+/* --- the portals band (home) ------------------------------------------------
+   Three doors between the magazine invitation and the catalogue. Each card
+   wears its portal's own hero art and carries the figures that say how much
+   is actually behind the door. */
+.portals-band {
+  padding: clamp(3rem, 7vw, 5.5rem) clamp(1.1rem, 4vw, 2.5rem);
+  max-width: 1180px; margin: 0 auto;
+}
+.portal-grid {
+  display: grid; gap: 1.4rem; margin-top: clamp(1.6rem, 4vw, 2.6rem);
+  grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+}
+.portal-card {
+  display: flex; flex-direction: column; overflow: hidden;
+  text-decoration: none; color: inherit;
+  border: 1px solid rgba(179, 139, 70, 0.28);
+  background: linear-gradient(180deg, rgba(24, 20, 14, 0.9), rgba(11, 9, 7, 0.94));
+  transition: transform 260ms ease, border-color 260ms ease, box-shadow 260ms ease;
+}
+.portal-card:hover, .portal-card:focus-visible {
+  transform: translateY(-5px);
+  border-color: rgba(209, 173, 104, 0.62);
+  box-shadow: 0 18px 42px rgba(0, 0, 0, 0.5);
+}
+.portal-art { display: block; position: relative; overflow: hidden; aspect-ratio: 16 / 9; }
+.portal-art img {
+  display: block; width: 100%; height: 100%; object-fit: cover; object-position: center 38%;
+  filter: saturate(0.9) brightness(0.84);
+  transition: transform 640ms cubic-bezier(0.22, 1, 0.36, 1), filter 420ms ease;
+}
+.portal-art::after {
+  content: ""; position: absolute; inset: 0;
+  background: linear-gradient(180deg, rgba(8,7,5,0.1) 0%, rgba(8,7,5,0.03) 44%, rgba(11,9,7,0.9) 100%);
+}
+.portal-card:hover .portal-art img, .portal-card:focus-visible .portal-art img {
+  transform: scale(1.06); filter: saturate(1) brightness(0.95);
+}
+.portal-body {
+  display: flex; flex-direction: column; gap: 0.5rem;
+  padding: 1.3rem 1.4rem 1.6rem; margin-top: -1.4rem; position: relative;
+}
+.portal-eyebrow {
+  font-family: "Cinzel", Georgia, serif; font-size: 0.62rem;
+  letter-spacing: 0.26em; text-transform: uppercase;
+  color: rgba(209, 173, 104, 0.8);
+}
+.portal-body h3 {
+  font-family: "Cinzel", Georgia, serif; margin: 0;
+  font-size: clamp(1.35rem, 2.4vw, 1.75rem); color: #f0e9da; letter-spacing: 0.03em;
+}
+.portal-copy {
+  margin: 0; font-family: Georgia, "Times New Roman", serif;
+  font-size: 0.93rem; line-height: 1.72; color: rgba(232, 224, 208, 0.76);
+}
+.portal-stats { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 0.25rem; }
+.portal-stats span {
+  font-family: "Cinzel", Georgia, serif; font-size: 0.6rem;
+  letter-spacing: 0.14em; text-transform: uppercase;
+  color: rgba(209, 173, 104, 0.85);
+  border: 1px solid rgba(179, 139, 70, 0.32);
+  padding: 0.24rem 0.5rem;
+}
+.portal-enter {
+  margin-top: 0.6rem; font-family: "Cinzel", Georgia, serif;
+  font-size: 0.7rem; letter-spacing: 0.2em; text-transform: uppercase;
+  color: rgba(209, 173, 104, 0.9);
+}
+@media (prefers-reduced-motion: reduce) {
+  .portal-card:hover { transform: none; }
+  .portal-card:hover .portal-art img { transform: none; }
+}
+
 .third-lamp-invitation {
   min-height: 520px;
   display: grid;
