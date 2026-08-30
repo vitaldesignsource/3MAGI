@@ -11,6 +11,9 @@ export default {
     "groups": [
         {
             "key": "the-first-communities",
+            "image": "7e556e1117a2cf091ddb3500e66a1617.webp",
+            "imageAlt": "Elders in prayer shawls seated with scrolls and oil lamps beneath a portico above a Mediterranean harbour, while travellers with packs walk the road down toward the ships",
+            "imageCaption": "Before there were churches there were households, and they met where the roads and the shipping met. The first communities are a synagogue argument that kept spreading along the sea lanes.",
             "label": "The First Communities",
             "blurb": "From a Jewish assembly in Jerusalem to a Greek-speaking movement around the Mediterranean, and the loose coalition of churches that emerged from it with a canon, a rule of faith and a clergy."
         },
@@ -21,6 +24,9 @@ export default {
         },
         {
             "key": "the-council-churches",
+            "image": "ed42c321d22d3f300a5d686660c12d86.webp",
+            "imageAlt": "Two processions leaving a great basilica in the rain and walking apart — vested clergy in white and gold down the centre, dark-robed Eastern monks and priests bearing books and censers to the right",
+            "imageCaption": "One doorway, two processions, walking away from each other in the rain. The council churches are the communions that came out of the same basilica and did not come out together.",
             "label": "The Council Churches",
             "blurb": "The ancient communions, formed and separated by the councils of 431 and 451 and by the long estrangement of Rome and Constantinople. Every one of them is still here."
         },
@@ -36,6 +42,9 @@ export default {
         },
         {
             "key": "the-radical-reformation",
+            "image": "6552243505a30743c4d03eb10162dbeb.webp",
+            "imageAlt": "A grown man kneeling in a farmhouse kitchen as water is poured over his head from a jug, neighbours standing witness, lantern-carrying soldiers gathering in the rain beyond the window",
+            "imageCaption": "A believer’s baptism by candlelight with the authorities already outside — which is what made it radical. Adults choosing baptism was, in the sixteenth century, a capital offence in both Catholic and Protestant lands.",
             "label": "The Radical Reformation",
             "blurb": "Those who judged the magisterial reformers half-reformed. Believers' baptism, a church wholly separate from the state, community of goods, and at the far edge a denial of the Trinity itself."
         },
@@ -51,6 +60,9 @@ export default {
         },
         {
             "key": "the-global-south",
+            "image": "88b3d799e011fde6bdbcfaa43d009c8c.webp",
+            "imageAlt": "A large congregation in white robes clapping and singing under a corrugated shelter at dusk, drummers at the front, a crowd with umbrellas spilling into the open air, a city skyline behind",
+            "imageCaption": "Drums at the front, the congregation spilling into the rain, a city behind. The centre of gravity of world Christianity moved south within living memory, and this is what it sounds like.",
             "label": "The Pentecostal Century and the Global South",
             "blurb": "The twentieth century's great reordering: a revival on a Los Angeles side street, its spread into every existing church, and the independent Christianities of Africa, China and the Philippines that now hold the movement's centre of gravity."
         }
@@ -404,6 +416,9 @@ export default {
         },
         {
             "slug": "eastern-orthodox",
+            "image": "df839c2ce9418af9c1793ee405353aba.webp",
+            "imageAlt": "Orthodox clergy carrying an icon and chalice away along a damaged wall of Hagia Sophia while crusader soldiers with red-cross shields stand among overturned furniture in the nave beyond",
+            "imageCaption": "Constantinople, 1204: crusaders in the Great Church and the clergy carrying what they can out of it. The Fourth Crusade did more to fix the schism in place than any council, and the sack was formally apologised for only in 2004.",
             "name": "The Eastern Orthodox Church",
             "selfName": "the Orthodox Church",
             "exonym": "Greek Orthodox — a Western shorthand for the whole communion, though it is the proper name only of some of its churches",

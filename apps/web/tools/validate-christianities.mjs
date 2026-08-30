@@ -109,6 +109,16 @@ if (branches) {
     // every group must actually hold something
     for (const g of branches.groups) {
         if (!branches.entries.some((b) => b.group === g.key)) fail(`branches: group "${g.key}" is empty`);
+        if (g.image && !existsSync(path.join(web, 'public/media', g.image))) {
+            fail(`branches/${g.key}: group image ${g.image} not in public/media`);
+        }
+        if (g.image && !g.imageAlt) fail(`branches/${g.key}: group image without alt text`);
+    }
+    for (const b of branches.entries) {
+        if (b.image && !existsSync(path.join(web, 'public/media', b.image))) {
+            fail(`branches/${b.slug}: image ${b.image} not in public/media`);
+        }
+        if (b.image && !b.imageAlt) fail(`branches/${b.slug}: image without alt text`);
     }
     notes.push(`branches: ${branches.entries.length} in ${branches.groups.length} groups`);
 }
