@@ -20,9 +20,7 @@ function SiteHeader() {
                 <Link to="/third-lamp">The Third Lamp</Link>
                 <Link to="/christianities">Christianities</Link>
                 <Link to="/powers">The Powers</Link>
-                <Link to="/#journal">Essays</Link>
                 <Link to="/#about">About</Link>
-                <Link to="/#newsletter">Dispatch</Link>
                 <Link to="/#newsletter">Contact</Link>
             </nav>
             <div className="header-actions">
@@ -33,9 +31,7 @@ function SiteHeader() {
                         <Link to="/third-lamp">The Third Lamp</Link>
                         <Link to="/christianities">Christianities</Link>
                         <Link to="/powers">The Powers</Link>
-                        <Link to="/#journal">Essays</Link>
                         <Link to="/#about">About</Link>
-                        <Link to="/#newsletter">Dispatch</Link>
                         <Link to="/#newsletter">Contact</Link>
                     </div>
                 </details>
