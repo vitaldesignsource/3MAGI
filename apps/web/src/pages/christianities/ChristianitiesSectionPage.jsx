@@ -5,6 +5,7 @@ import SiteHeader from '../../components/SiteHeader';
 import SiteFooter from '../../components/SiteFooter';
 import ChristianitiesTree from './ChristianitiesTree';
 import SYMBOL_MARKS from './symbolMarks';
+import Rich from './rich';
 import { SECTION_BY_SLUG, loadData } from './lib';
 
 // One page, five doors: christologies, branches, councils, figures, symbols.
@@ -50,17 +51,17 @@ function Christologies({ data, open, setOpen }) {
                     sub={e.term ? `${e.term.native} · ${e.term.translit} — ${e.term.meaning}` : e.claim}
                     badge={STATUS_LABEL[e.status]}>
                     <p className="ch-claim">{e.claim}</p>
-                    {e.exposition.map((p, i) => <p key={i}>{p}</p>)}
+                    {e.exposition.map((p, i) => <p key={i}><Rich t={p} /></p>)}
                     {e.scripture.length > 0 && (
                         <div className="ch-kv"><span>Scripture carried into the argument</span>
-                            <ul>{e.scripture.map((s, i) => <li key={i}><strong>{s.ref}</strong> — {s.how}</li>)}</ul>
+                            <ul>{e.scripture.map((s, i) => <li key={i}><strong>{s.ref}</strong> — <Rich t={s.how} /></li>)}</ul>
                         </div>
                     )}
-                    <div className="ch-kv"><span>Held by</span><p>{e.heldBy}</p></div>
-                    <div className="ch-kv"><span>Opposed by</span><p>{e.opposedBy}</p></div>
-                    {e.council && <div className="ch-kv"><span>Where it was judged</span><p>{e.council}</p></div>}
-                    <div className="ch-kv"><span>What became of it</span><p>{e.aftermath}</p></div>
-                    {e.today && <div className="ch-kv"><span>Who holds something like it today</span><p>{e.today}</p></div>}
+                    <div className="ch-kv"><span>Held by</span><p><Rich t={e.heldBy} /></p></div>
+                    <div className="ch-kv"><span>Opposed by</span><p><Rich t={e.opposedBy} /></p></div>
+                    {e.council && <div className="ch-kv"><span>Where it was judged</span><p><Rich t={e.council} /></p></div>}
+                    <div className="ch-kv"><span>What became of it</span><p><Rich t={e.aftermath} /></p></div>
+                    {e.today && <div className="ch-kv"><span>Who holds something like it today</span><p><Rich t={e.today} /></p></div>}
                 </Expandable>
             ))}
         </div>
@@ -75,7 +76,7 @@ function Branches({ data, open, setOpen }) {
             <section key={g.key} className="ch-group">
                 <header className="edu-section-head">
                     <h2>{g.label}</h2>
-                    <p>{g.blurb}</p>
+                    <p><Rich t={g.blurb} /></p>
                 </header>
                 <div className="ch-entry-list">
                     {entries.map((e) => (
@@ -89,11 +90,11 @@ function Branches({ data, open, setOpen }) {
                                 <p className="ch-exonym">“{e.exonym}” is others' name for it, and is flagged here as such.</p>
                             )}
                             {e.parent && <p className="ch-lineage">Out of: {e.parent}</p>}
-                            <p>{e.origin}</p>
+                            <p><Rich t={e.origin} /></p>
                             <div className="ch-kv"><span>Distinctives</span>
-                                <ul>{e.distinctives.map((d, i) => <li key={i}>{d}</li>)}</ul></div>
-                            <div className="ch-kv"><span>Its Christ</span><p>{e.christology}</p></div>
-                            {e.today && <div className="ch-kv"><span>Today</span><p>{e.today}</p></div>}
+                                <ul>{e.distinctives.map((d, i) => <li key={i}><Rich t={d} /></li>)}</ul></div>
+                            <div className="ch-kv"><span>Its Christ</span><p><Rich t={e.christology} /></p></div>
+                            {e.today && <div className="ch-kv"><span>Today</span><p><Rich t={e.today} /></p></div>}
                         </Expandable>
                     ))}
                 </div>
@@ -111,34 +112,34 @@ function Councils({ data, open, setOpen }) {
                         onToggle={() => setOpen(open === c.slug ? null : c.slug)}
                         head={`${c.name} · ${c.year < 0 ? `${-c.year} BCE` : c.year}`}
                         sub={`${c.place} — ${c.question}`} badge={null}>
-                        <div className="ch-kv"><span>Convoked by</span><p>{c.convokedBy}</p></div>
-                        <div className="ch-kv"><span>The decision</span><p>{c.decision}</p></div>
+                        <div className="ch-kv"><span>Convoked by</span><p><Rich t={c.convokedBy} /></p></div>
+                        <div className="ch-kv"><span>The decision</span><p><Rich t={c.decision} /></p></div>
                         {c.keyTerms.length > 0 && (
                             <div className="ch-kv"><span>The words it turned on</span>
                                 <ul>{c.keyTerms.map((t, i) => (
                                     <li key={i}><strong className="edu-glyph">{t.native || t.term}</strong>
-                                        {t.native ? ` (${t.term})` : ''} — {t.meaning}</li>
+                                        {t.native ? ` (${t.term})` : ''} — <Rich t={t.meaning} /></li>
                                 ))}</ul></div>
                         )}
-                        {c.dissent && <div className="ch-kv"><span>Who refused, and what stands because of it</span><p>{c.dissent}</p></div>}
-                        <div className="ch-kv"><span>Aftermath</span><p>{c.aftermath}</p></div>
-                        <div className="ch-kv"><span>Received by</span><p>{c.receivedBy}</p></div>
+                        {c.dissent && <div className="ch-kv"><span>Who refused, and what stands because of it</span><p><Rich t={c.dissent} /></p></div>}
+                        <div className="ch-kv"><span>Aftermath</span><p><Rich t={c.aftermath} /></p></div>
+                        <div className="ch-kv"><span>Received by</span><p><Rich t={c.receivedBy} /></p></div>
                     </Expandable>
                 ))}
             </div>
             <header className="edu-section-head ch-args-head">
                 <p className="kicker">Between the Councils</p>
                 <h2>The arguments</h2>
-                <p>{data.argumentsIntro}</p>
+                <p><Rich t={data.argumentsIntro} /></p>
             </header>
             <div className="ch-entry-list">
                 {data.disputes.map((a) => (
                     <Expandable key={a.slug} id={a.slug} open={open === a.slug}
                         onToggle={() => setOpen(open === a.slug ? null : a.slug)}
                         head={a.name} sub={`${a.span} — ${a.question}`} badge={null}>
-                        <div className="ch-kv"><span>The parties</span><p>{a.parties}</p></div>
-                        {a.course.map((p, i) => <p key={i}>{p}</p>)}
-                        <div className="ch-kv"><span>Outcome</span><p>{a.outcome}</p></div>
+                        <div className="ch-kv"><span>The parties</span><p><Rich t={a.parties} /></p></div>
+                        {a.course.map((p, i) => <p key={i}><Rich t={p} /></p>)}
+                        <div className="ch-kv"><span>Outcome</span><p><Rich t={a.outcome} /></p></div>
                     </Expandable>
                 ))}
             </div>
@@ -166,9 +167,9 @@ function Figures({ data, open, setOpen }) {
                     <Expandable key={e.slug} id={e.slug} open={open === e.slug}
                         onToggle={() => setOpen(open === e.slug ? null : e.slug)}
                         head={e.name} sub={`${e.dates} · ${e.role}`} badge={null}>
-                        <div className="ch-kv"><span>Tradition</span><p>{e.tradition}</p></div>
-                        <p>{e.contribution}</p>
-                        {e.fate && <div className="ch-kv"><span>Fate</span><p>{e.fate}</p></div>}
+                        <div className="ch-kv"><span>Tradition</span><p><Rich t={e.tradition} /></p></div>
+                        <p><Rich t={e.contribution} /></p>
+                        {e.fate && <div className="ch-kv"><span>Fate</span><p><Rich t={e.fate} /></p></div>}
                         {e.quote && (
                             <blockquote className="ch-quote">
                                 <p>“{e.quote.text}”</p>
@@ -196,11 +197,11 @@ function Symbols({ data, open, setOpen }) {
                     <span className="ch-symbol-name">{e.name}</span>
                     {open === e.slug && (
                         <span className="ch-symbol-body">
-                            <span><em>Form.</em> {e.form}</span>
-                            <span><em>Origin.</em> {e.origin}</span>
-                            <span><em>Meaning.</em> {e.meaning}</span>
-                            <span><em>Used by.</em> {e.usedBy}</span>
-                            {e.note && <span className="ch-symbol-note">{e.note}</span>}
+                            <span><em>Form.</em> <Rich t={e.form} /></span>
+                            <span><em>Origin.</em> <Rich t={e.origin} /></span>
+                            <span><em>Meaning.</em> <Rich t={e.meaning} /></span>
+                            <span><em>Used by.</em> <Rich t={e.usedBy} /></span>
+                            {e.note && <span className="ch-symbol-note"><Rich t={e.note} /></span>}
                         </span>
                     )}
                 </button>
@@ -220,7 +221,7 @@ function ChristologyMatrix({ matrix }) {
             <header className="edu-section-head">
                 <p className="kicker">Every Answer, Every Question</p>
                 <h2 id="ch-matrix-heading">The matrix</h2>
-                {matrix.intro.map((p, i) => <p key={i}>{p}</p>)}
+                {matrix.intro.map((p, i) => <p key={i}><Rich t={p} /></p>)}
             </header>
             <div className="edu-kinship-scroll ch-canon-scroll" role="region"
                 aria-label="Christology comparison table" tabIndex={0}>
@@ -257,10 +258,10 @@ function ChristologyMatrix({ matrix }) {
                                     {isOpen && (
                                         <tr className="edu-cog-noterow">
                                             <td colSpan={matrix.questions.length + 1}>
-                                                <p className="ch-matrix-holder"><em>Held by.</em> {p.holder}</p>
-                                                {p.labelNote && <p className="ch-matrix-holder"><em>† The name.</em> {p.labelNote}</p>}
+                                                <p className="ch-matrix-holder"><em>Held by.</em> <Rich t={p.holder} /></p>
+                                                {p.labelNote && <p className="ch-matrix-holder"><em>† The name.</em> <Rich t={p.labelNote} /></p>}
                                                 {notes.map(({ q, a }) => (
-                                                    <p key={q.key}><em>{q.label}</em> — {a.note}</p>
+                                                    <p key={q.key}><em>{q.label}</em> — <Rich t={a.note} /></p>
                                                 ))}
                                             </td>
                                         </tr>
@@ -283,7 +284,7 @@ function CouncilWords({ words }) {
             <header className="edu-section-head">
                 <p className="kicker">One Iota of Difference</p>
                 <h2 id="ch-words-heading">The words</h2>
-                {words.intro.map((p, i) => <p key={i}>{p}</p>)}
+                {words.intro.map((p, i) => <p key={i}><Rich t={p} /></p>)}
             </header>
             <div className="ch-entry-list">
                 {words.entries.map((w) => (
@@ -291,12 +292,12 @@ function CouncilWords({ words }) {
                         onToggle={() => setOpen(open === w.slug ? null : w.slug)}
                         head={<><span className="edu-glyph ch-word-native">{w.native}</span> {w.translit}</>}
                         sub={w.literal} badge={w.lang}>
-                        <p>{w.fight}</p>
-                        {w.coined && <div className="ch-kv"><span>Enters the argument</span><p>{w.coined}</p></div>}
-                        <div className="ch-kv"><span>Wielded by</span><p>{w.wieldedBy}</p></div>
-                        <div className="ch-kv"><span>Against</span><p>{w.againstWhom}</p></div>
-                        {w.counterpart && <div className="ch-kv"><span>Its rival</span><p>{w.counterpart}</p></div>}
-                        {w.aftermath && <div className="ch-kv"><span>Where it stands now</span><p>{w.aftermath}</p></div>}
+                        <p><Rich t={w.fight} /></p>
+                        {w.coined && <div className="ch-kv"><span>Enters the argument</span><p><Rich t={w.coined} /></p></div>}
+                        <div className="ch-kv"><span>Wielded by</span><p><Rich t={w.wieldedBy} /></p></div>
+                        <div className="ch-kv"><span>Against</span><p><Rich t={w.againstWhom} /></p></div>
+                        {w.counterpart && <div className="ch-kv"><span>Its rival</span><p><Rich t={w.counterpart} /></p></div>}
+                        {w.aftermath && <div className="ch-kv"><span>Where it stands now</span><p><Rich t={w.aftermath} /></p></div>}
                     </Expandable>
                 ))}
             </div>
@@ -317,7 +318,7 @@ function Creeds({ creeds }) {
             <header className="edu-section-head">
                 <p className="kicker">A Fence and a Song at Once</p>
                 <h2 id="ch-creeds-heading">The creeds</h2>
-                {creeds.intro.map((p, i) => <p key={i}>{p}</p>)}
+                {creeds.intro.map((p, i) => <p key={i}><Rich t={p} /></p>)}
             </header>
             <div className="ch-entry-list">
                 {creeds.creeds.map((c) => (
@@ -326,8 +327,8 @@ function Creeds({ creeds }) {
                         head={c.name}
                         sub={c.native ? `${c.native} — ${c.origin}` : c.origin}
                         badge={null}>
-                        <p>{c.story}</p>
-                        {c.dating && <div className="ch-kv"><span>On its dating</span><p>{c.dating}</p></div>}
+                        <p><Rich t={c.story} /></p>
+                        {c.dating && <div className="ch-kv"><span>On its dating</span><p><Rich t={c.dating} /></p></div>}
                         <ol className="ch-creed-text">
                             {c.clauses.map((cl, i) => (
                                 <li key={i} className={cl.note ? 'has-note' : ''}>
@@ -335,11 +336,11 @@ function Creeds({ creeds }) {
                                     {cl.variant && (
                                         <span className="ch-creed-variant">Latin text: “{cl.variant}”</span>
                                     )}
-                                    {cl.note && <span className="ch-creed-clausenote">{cl.note}</span>}
+                                    {cl.note && <span className="ch-creed-clausenote"><Rich t={cl.note} /></span>}
                                 </li>
                             ))}
                         </ol>
-                        {c.usedBy && <div className="ch-kv"><span>Recited today</span><p>{c.usedBy}</p></div>}
+                        {c.usedBy && <div className="ch-kv"><span>Recited today</span><p><Rich t={c.usedBy} /></p></div>}
                     </Expandable>
                 ))}
             </div>
@@ -404,7 +405,7 @@ function ChristianitiesSectionPage() {
                 <section className="edu-hero">
                     <p className="kicker"><Link to="/christianities">Christianities</Link> · {meta.kicker}</p>
                     <h1>{meta.title}</h1>
-                    {(data?.intro || []).map((p, i) => <p className="edu-hero-sub" key={i}>{p}</p>)}
+                    {(data?.intro || []).map((p, i) => <p className="edu-hero-sub" key={i}><Rich t={p} /></p>)}
                 </section>
                 {data && <Renderer data={data} open={open} setOpen={setOpen} />}
                 {extras.matrix && <ChristologyMatrix matrix={extras.matrix} />}

@@ -4,6 +4,7 @@ import { Link, useLocation } from 'react-router-dom';
 import SiteHeader from '../../components/SiteHeader';
 import SiteFooter from '../../components/SiteFooter';
 import { loadData } from './lib';
+import Rich from './rich';
 
 // The Map of the Christianities.
 //
@@ -177,7 +178,7 @@ function ChristianitiesMapPage() {
                 <section className="edu-hero">
                     <p className="kicker"><Link to="/christianities">Christianities</Link> · Where It Happened</p>
                     <h1>The Map</h1>
-                    {data?.intro && <p className="edu-hero-sub">{data.intro}</p>}
+                    {data?.intro && <p className="edu-hero-sub"><Rich t={data.intro} /></p>}
                 </section>
 
                 <div className="ch-map-controls">
@@ -249,13 +250,13 @@ function ChristianitiesMapPage() {
                             </p>
                             <h3>{active.name}</h3>
                             {active.modern && <p className="ch-map-modern">now {active.modern}</p>}
-                            <p className="ch-map-blurb">{active.blurb}</p>
+                            <p className="ch-map-blurb"><Rich t={active.blurb} /></p>
                             <ul className="ch-map-events">
                                 {active.events.map((e, i) => (
                                     <li key={i}>
                                         <span className="ch-map-eyear">{e.year < 0 ? `${-e.year} BCE` : e.year}</span>
                                         <span className="ch-map-etitle">{e.title}</span>
-                                        <span className="ch-map-edesc">{e.desc}</span>
+                                        <span className="ch-map-edesc"><Rich t={e.desc} /></span>
                                     </li>
                                 ))}
                             </ul>

@@ -6,6 +6,7 @@ import SiteFooter from '../../components/SiteFooter';
 import ScriptoriumTimeline from '../../components/ScriptoriumTimeline';
 import ScriptoriumSearch from '../../components/ScriptoriumSearch';
 import { SECTIONS, loadData } from './lib';
+import Rich from './rich';
 
 // Christianities — the portal landing. The plural is the thesis, and it is
 // the standard scholarly framing rather than a provocation: what history
@@ -76,7 +77,7 @@ function ChristianitiesPortalPage() {
                         <header className="edu-section-head">
                             <p className="kicker">{gallery.kicker}</p>
                             <h2 id="ch-gallery-heading">{gallery.title}</h2>
-                            <p>{gallery.intro}</p>
+                            <p><Rich t={gallery.intro} /></p>
                         </header>
                         <div className="ch-gallery-grid">
                             {gallery.images.map((g) => (
@@ -85,7 +86,7 @@ function ChristianitiesPortalPage() {
                                         loading="lazy" decoding="async" />
                                     <span className="ch-gallery-caption">
                                         <strong>{g.title}</strong>
-                                        <span>{g.caption}</span>
+                                        <span><Rich t={g.caption} /></span>
                                     </span>
                                 </Link>
                             ))}

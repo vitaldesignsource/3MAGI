@@ -1,4 +1,5 @@
 import React, { useMemo, useState } from 'react';
+import Rich from './rich';
 
 // The Great Tree — the family drawn as a time-axis phylogeny. Every branch is
 // a horizontal line from the year it became distinct to today (or to its
@@ -58,7 +59,7 @@ function ChristianitiesTree({ tree }) {
             <header className="edu-section-head">
                 <p className="kicker">Descent, With Separations</p>
                 <h2 id="ch-tree-heading">The Great Tree</h2>
-                {tree.intro.map((p, i) => <p key={i}>{p}</p>)}
+                {tree.intro.map((p, i) => <p key={i}><Rich t={p} /></p>)}
             </header>
 
             <div className="edu-kinship-scroll ch-tree-scroll" role="region"
@@ -138,7 +139,7 @@ function ChristianitiesTree({ tree }) {
                     {active.selfName && active.selfName !== active.label && (
                         <p className="ch-selfname">Calls itself: <strong>{active.selfName}</strong></p>
                     )}
-                    <p>{active.note}</p>
+                    <p><Rich t={active.note} /></p>
                     {active.adherents && <p className="ch-canon-counts">Today: <strong>{active.adherents}</strong></p>}
                 </aside>
             )}

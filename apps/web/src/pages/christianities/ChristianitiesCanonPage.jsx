@@ -5,6 +5,7 @@ import SiteHeader from '../../components/SiteHeader';
 import SiteFooter from '../../components/SiteFooter';
 import ScriptoriumTimeline from '../../components/ScriptoriumTimeline';
 import { loadData } from './lib';
+import Rich from './rich';
 
 // The Making of the Bibles. The centrepiece is the table: every book that
 // was ever seriously in the running, against every major canon — in, out,
@@ -86,7 +87,7 @@ function ChristianitiesCanonPage() {
                 <section className="edu-hero">
                     <p className="kicker"><Link to="/christianities">Christianities</Link> · What Is In, and According to Whom</p>
                     <h1>The Making of the Bibles</h1>
-                    {data.intro.map((p, i) => <p className="edu-hero-sub" key={i}>{p}</p>)}
+                    {data.intro.map((p, i) => <p className="edu-hero-sub" key={i}><Rich t={p} /></p>)}
                 </section>
 
                 <section className="edu-halls" aria-labelledby="ch-criteria-heading">
@@ -98,7 +99,7 @@ function ChristianitiesCanonPage() {
                         {data.criteria.map((c) => (
                             <div className="edu-hall-card ch-static-card" key={c.name}>
                                 <h3>{c.name}</h3>
-                                <p className="edu-hall-blurb">{c.desc}</p>
+                                <p className="edu-hall-blurb"><Rich t={c.desc} /></p>
                             </div>
                         ))}
                     </div>
@@ -151,7 +152,7 @@ function ChristianitiesCanonPage() {
                                             </tr>
                                             {openBook === b.name && b.note && (
                                                 <tr className="edu-cog-noterow">
-                                                    <td colSpan={trads.length + 1}>{b.note}</td>
+                                                    <td colSpan={trads.length + 1}><Rich t={b.note} /></td>
                                                 </tr>
                                             )}
                                         </React.Fragment>
@@ -167,7 +168,7 @@ function ChristianitiesCanonPage() {
                     {activeT && (
                         <aside className="ch-canon-tradnote" aria-live="polite">
                             <h3>{activeT.label}</h3>
-                            <p>{activeT.note}</p>
+                            <p><Rich t={activeT.note} /></p>
                             {(activeT.otCount != null || activeT.ntCount != null) && (
                                 <p className="ch-canon-counts">
                                     {activeT.otCount != null && <>Old Testament: <strong>{activeT.otCount}</strong></>}

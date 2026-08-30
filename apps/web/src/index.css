@@ -11006,6 +11006,11 @@ h3 {
    tablet width so the word always fits; desktop keeps the grand size. The
    hero paragraph eases a step too — nine lines of small caps at full size
    read as a wall on a phone. */
+@media (max-width: 1150px) {
+  /* fourteen-letter single words (Christianities, Understandings) need the
+     viewport scale all the way up to where the global size actually fits */
+  .ch-page .edu-hero h1 { font-size: clamp(1.9rem, 9.5vw, 6.5rem); }
+}
 @media (max-width: 760px) {
   .ch-page .edu-hero h1 { font-size: clamp(1.9rem, 10vw, 4rem); }
   .ch-page .edu-hero-sub { font-size: 0.98rem; line-height: 1.72; }
@@ -11026,6 +11031,13 @@ h3 {
   .ch-page .ch-entry-body { padding: 0 0.9rem 1rem; }
   .ch-page .ch-gallery-caption { padding: 0.7rem 0.8rem 0.85rem; }
 }
+
+/* inline registers for the Christianities prose — the magazine's own voice:
+   gold italic for terms of art, plain italic for works, quiet bold for the
+   first appearance of a keystone name in a block */
+.ch-page .rt-term { color: #d1ad68; font-style: italic; }
+.ch-page .rt-work { font-style: italic; color: rgba(238, 230, 214, 0.92); }
+.ch-page .rt-name { font-weight: 600; color: #efe7d4; }
 
 /* the great tree — time-axis phylogeny */
 .ch-tree { margin-top: clamp(3rem, 6vw, 5rem); }
