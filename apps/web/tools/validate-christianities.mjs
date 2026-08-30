@@ -136,28 +136,63 @@ if (councils) {
 // them under its own stated convention, the page is lying to its reader.
 const canon = await load('canon');
 if (canon) {
+    // The table documents its own counting conventions in its notes, and the
+    // check implements them:
+    //   - the Jewish column follows the Hebrew bundling: Samuel, Kings,
+    //     Chronicles and Ezra–Nehemiah are "counted once across these two
+    //     rows", and The Twelve is one book of the twenty-four;
+    //   - every Christian column counts The Twelve as twelve;
+    //   - a row may declare it "stands for N books" (the Ethiopian
+    //     church-order row stands for eight) or "counts as N";
+    //   - a null otCount/ntCount is a count the tradition does not assert
+    //     (the Church of the East states only its 22-book Peshitta NT),
+    //     never a zero;
+    //   - 'other'-section rows marked "in" count toward the NT, which is
+    //     where the Ethiopian broader canon lives.
+    const OT_SECTIONS = new Set(['torah', 'history', 'wisdom', 'prophets', 'deutero']);
+    const NT_SECTIONS = new Set(['gospels', 'acts', 'pauline', 'catholic', 'apocalypse', 'other']);
+    const SECOND_HALVES = new Set(['2 Samuel', '2 Kings', '2 Chronicles', 'Nehemiah']);
+    const WORD_NUMS = { one: 1, two: 2, three: 3, four: 4, five: 5, six: 6, seven: 7,
+        eight: 8, nine: 9, ten: 10, eleven: 11, twelve: 12 };
+    const declaredWeight = (note) => {
+        const m = /(?:stands for|counts? as) (\d+|[a-z]+)/i.exec(note || '');
+        if (!m) return null;
+        const v = parseInt(m[1], 10);
+        return Number.isInteger(v) ? v : (WORD_NUMS[m[1].toLowerCase()] ?? null);
+    };
     const tally = {};
-    for (const t of canon.traditions) tally[t.key] = { in: 0, disputed: 0, appendix: 0 };
+    for (const t of canon.traditions) tally[t.key] = { ot: 0, nt: 0 };
     for (const b of canon.books) {
-        // A row may stand for several books (The Twelve); the count convention
-        // lives in the row's note and is applied here.
-        const m = /counts? as (\d+)/i.exec(b.note || '');
-        const weight = m ? parseInt(m[1], 10) : 1;
+        const declared = declaredWeight(b.note);
         for (const t of canon.traditions) {
-            const st = b.status[t.key];
-            if (st && tally[t.key][st] != null) tally[t.key][st] += weight;
+            if (b.status[t.key] !== 'in') continue;
+            let w;
+            if (t.key === 'jewish') {
+                w = SECOND_HALVES.has(b.name) ? 0 : 1;
+            } else if (/^The Twelve$/i.test(b.name)) {
+                w = 12;
+            } else {
+                w = declared ?? 1;
+            }
+            if (OT_SECTIONS.has(b.section)) tally[t.key].ot += w;
+            else if (NT_SECTIONS.has(b.section)) tally[t.key].nt += w;
+            else fail(`canon/${b.name}: unknown section "${b.section}"`);
         }
     }
     for (const t of canon.traditions) {
-        const counted = tally[t.key].in;
-        const claimed = (t.otCount || 0) + (t.ntCount || 0);
-        if (claimed) {
-            if (counted !== claimed) {
-                fail(`canon: ${t.label} claims ${claimed} books (${t.otCount} + ${t.ntCount}) `
-                    + `but the table yields ${counted} marked "in"`);
-            } else {
-                notes.push(`canon: ${t.label} = ${counted} ✓`);
-            }
+        const bad = [];
+        if (t.otCount != null && tally[t.key].ot !== t.otCount) {
+            bad.push(`OT: claims ${t.otCount}, table yields ${tally[t.key].ot}`);
+        }
+        if (t.ntCount != null && tally[t.key].nt !== t.ntCount) {
+            bad.push(`NT: claims ${t.ntCount}, table yields ${tally[t.key].nt}`);
+        }
+        if (bad.length) fail(`canon: ${t.label} — ${bad.join('; ')}`);
+        else {
+            const parts = [];
+            if (t.otCount != null) parts.push(String(t.otCount));
+            if (t.ntCount != null) parts.push(String(t.ntCount));
+            notes.push(`canon: ${t.label} = ${parts.join('+')} ✓`);
         }
     }
     if (!canon.books.some((b) => /sinaiticus/i.test(b.note || '') || /hermas/i.test(b.name))) {
