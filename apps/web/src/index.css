@@ -2888,12 +2888,27 @@ h3 {
 }
 
 @media (max-width: 1024px) {
+  .archive-focus-panel {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* The sidebar stays a real column as far down as it fits — a landscape tablet
+   has room for it beside the cards, and stacking it there wasted the width.
+   Below this it stacks, and once stacked it must stop behaving like a column:
+   sticky pinning held it in place while the main column scrolled over the top
+   of it, and an 800px inner scroller filled most of a portrait tablet with
+   filters before a single card appeared. */
+@media (max-width: 900px) {
   .archive-layout {
     grid-template-columns: 1fr;
   }
-
-  .archive-focus-panel {
-    grid-template-columns: 1fr;
+  .archive-sidebar {
+    position: static;
+    top: auto;
+  }
+  .archive-filter-scroll {
+    max-height: 20rem;
   }
 }
 
@@ -6872,7 +6887,10 @@ h3 {
   .contribute-intro,
   .lead-grid,
   .archive-grid {
-    grid-template-columns: 1fr;
+    /* two up on tablets and small laptops. This used to drop straight from
+       three columns to one at 1120px, which gave a 768px tablet a single
+       692px-wide card — a whole screen per article. */
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .issue-hero-bg img {
@@ -6941,6 +6959,23 @@ h3 {
     opacity: 0.1;
   }
 }
+/* the archive goes single-column only when a second column would genuinely
+   stop working — phones and the narrowest tablets in portrait */
+@media (max-width: 640px) {
+  .archive-grid { grid-template-columns: 1fr; }
+}
+
+/* A full-viewport hero suits a title page; on an archive it buries the thing
+   the reader came for. Below desktop the hero keeps its presence but stops
+   short, so the search field and the first cards show above the fold. */
+@media (max-width: 1120px) {
+  .archive-page-hero {
+    min-height: 66dvh;
+    padding-top: clamp(4.5rem, 8vw, 7rem);
+    padding-bottom: 2rem;
+  }
+}
+
 
 @media (max-width: 760px) {
   .third-lamp-invitation {
