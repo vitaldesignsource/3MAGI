@@ -11029,7 +11029,7 @@ h3 {
 
   .ch-page .ch-entry-head { padding: 0.85rem 0.9rem; gap: 0.7rem; }
   .ch-page .ch-entry-body { padding: 0 0.9rem 1rem; }
-  .ch-page .ch-gallery-caption { padding: 0.7rem 0.8rem 0.85rem; }
+  .edu-page .ch-gallery-caption { padding: 0.7rem 0.8rem 0.85rem; }
 }
 
 /* --- the reading voice ------------------------------------------------------
@@ -11049,7 +11049,7 @@ h3 {
 .ch-page .ch-quote cite,
 .ch-page .ch-selfname, .ch-page .ch-exonym, .ch-page .ch-lineage,
 .edu-page .edu-hall-blurb,
-.ch-page .ch-gallery-caption > span,
+.edu-page .ch-gallery-caption > span,
 .ch-page .ch-symbol-body,
 .ch-page .ch-creed-text,
 .ch-page .ch-words-bridge,
@@ -11251,9 +11251,14 @@ h3 {
 .ch-portal-glyphs { margin-top: 1.6rem; }
 
 @media (max-width: 760px) {
-  .ch-page .ch-hero-figure { aspect-ratio: 4 / 3; }
+  .edu-page .ch-hero-figure { aspect-ratio: 4 / 3; }
   .ch-page .ch-hero.has-image .ch-hero-copy { margin-top: -3rem; padding: 0 1.1rem; }
 }
+
+/* hall banner: the full-bleed figure above a Scriptorium hall's own hero */
+.edu-hall-banner { margin-bottom: clamp(1.2rem, 3vw, 2.4rem); }
+.edu-hall-banner img { object-position: center 38%; }
+figure.ch-gallery-card { margin: 0; }
 
 /* the powers — portal-specific touches on the shared ch machinery */
 .pw-head-native { margin-right: 0.5em; font-size: 1.15em; color: #ecd9ae; }

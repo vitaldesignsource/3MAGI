@@ -160,6 +160,14 @@ function EducationLanguagePage() {
             </Helmet>
             <ThirdLampHeader />
 
+            {data.hero && (
+                <div className="ch-hero-figure edu-hall-banner" role="img"
+                    aria-label={data.heroAlt || `${TITLES[lang]} hall`}>
+                    <img src={`/media/${data.hero}`} alt="" loading="eager" decoding="async" />
+                    <span className="ch-hero-scrim" />
+                </div>
+            )}
+
             <main className="edu-main">
                 <section className="edu-hero edu-lang-hero">
                     <p className="kicker">
@@ -454,6 +462,27 @@ function EducationLanguagePage() {
                         </Link>
                     ))}
                 </nav>
+                {data.gallery && (
+                    <section className="ch-gallery" aria-labelledby="edu-hall-gallery-heading">
+                        <header className="edu-section-head">
+                            <p className="kicker">{data.gallery.kicker}</p>
+                            <h2 id="edu-hall-gallery-heading">{data.gallery.title}</h2>
+                            <p>{data.gallery.intro}</p>
+                        </header>
+                        <div className="ch-gallery-grid">
+                            {data.gallery.images.map((g) => (
+                                <figure className="ch-gallery-card" key={g.file}>
+                                    <img src={`/media/${g.file}`} alt={g.alt}
+                                        loading="lazy" decoding="async" />
+                                    <figcaption className="ch-gallery-caption">
+                                        <strong>{g.title}</strong>
+                                        <span>{g.caption}</span>
+                                    </figcaption>
+                                </figure>
+                            ))}
+                        </div>
+                    </section>
+                )}
             </main>
 
             <ThirdLampFooter />

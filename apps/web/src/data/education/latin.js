@@ -2,6 +2,40 @@
 // Authored and fact-checked by the content pipeline (glyph identity,
 // letter values and name-sums verified programmatically).
 export default {
+    hero: '7fdb2aa0fb457c50490d2a782767821a.webp',
+    heroAlt: 'Roman stonecutters carving monumental capitals into a marble slab, finished imperial inscriptions standing behind them',
+    gallery: {
+        kicker: 'Scenes from the Latin World',
+        title: 'The Life of the Letters',
+        intro: 'Four rooms where Latin did its work: the wall where its most famous riddle was cut, the desks where Arabic learning became Latin learning, the cloister where the word was copied for a thousand years, and the study where the humanists taught the old letters to speak again.',
+        images: [
+            {
+                file: '56d95512b7e8cb712cc6ff875cc54ff6.webp',
+                title: 'The Sator Square',
+                caption: 'SATOR AREPO TENET OPERA ROTAS — the five-word palindrome that reads the same in four directions, cut here into painted plaster as it was at Pompeii before 79 CE. What it means, and whether it hides PATER NOSTER twice over, is an argument this hall keeps honestly open.',
+                alt: 'A hand incising the Sator square into a red-painted column at dusk, an oil lamp burning beside',
+            },
+            {
+                file: 'cd139b298164041f33400cb2a35ccc0b.webp',
+                title: 'The Translators of Toledo',
+                caption: 'A Muslim, a Jew and a Latin cleric over one table — the twelfth-century translation movement that carried Aristotle, Ptolemy, and the astrolabe itself out of Arabic into Latin, and with them half the vocabulary of medieval science.',
+                alt: 'Three scholars of three faiths conferring over manuscripts and an astrolabe before a window overlooking Toledo',
+            },
+            {
+                file: '7f4e6b98a27fb603b504c9317fcec32f.webp',
+                title: 'In Principio',
+                caption: 'A monk rules his lines and begins the Vulgate’s first words. For a millennium nearly every Latin book in Europe passed through a cloister like this one, letter by letter — the same discipline this hall’s course asks of the reader, briefly.',
+                alt: 'A monk in a cloister scriptorium writing In Principio in gold on a fresh parchment page',
+            },
+            {
+                file: 'cd1ec2d0fe5a8f684132495a6e53d9a4.webp',
+                title: 'The Humanists',
+                caption: 'A Florentine study with a celestial globe and a bust of the ancients: the recovery of classical Latin — and, at desks exactly like these, Ficino turning Greek theology and the Hermetica into the Latin that carried the esoteric Renaissance.',
+                alt: 'Two Renaissance scholars with manuscripts in a frescoed study, a celestial globe by the window',
+            },
+        ],
+    },
+
     language: 'Latin',
     intro: 'Latin is the working language of Western esoterica: the tongue of the Vulgate and the Mass, of the alchemical corpus from the twelfth-century translations out of Arabic to the Rosicrucian manifestos, and of the mottoes and grade-names that survive into modern initiatic orders. Unlike Hebrew or Greek it carries no gematria — only seven letters bear number, and those as plain numerals — so its letter-mysticism runs instead through the acrostic and the abbreviation: INRI, VITRIOL and the SATOR square are notariqon rather than arithmetic. To read esoteric Europe at all is to read Latin.',
     scriptNote: 'The classical alphabet has twenty-three letters: J, U and W are medieval developments, so Julius stands on stone as IVLIVS. Romans cut monumental capitals into marble and ran a rapid cursive across wax and lead — the script of the curse tablets — while seven letters (I, V, X, L, C, D, M) doubled as the numerals. Epigraphy runs on drastic abbreviation, a habit that shades naturally into acronymic word-magic: INRI, VITRIOL, and the SATOR-AREPO square, Latin\'s most famous charm, attested at Pompeii before 79 CE and copied onto walls and amulets for a millennium after.',

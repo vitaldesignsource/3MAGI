@@ -8,7 +8,7 @@
 // link. None of those break a build on their own; all of them are wrong on a
 // published page. This runs as the first step of `npm run build` and fails it.
 
-import { readFileSync } from 'node:fs';
+import { readFileSync, existsSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
 
@@ -132,6 +132,17 @@ let counts = { halls: 0, letters: 0, names: 0, lexicon: 0, currents: 0, works: 0
 
 for (const hall of HALLS) {
     const d = await load(`${hall}.js`);
+    // hall art, when present, must exist on disk and describe itself
+    if (d?.hero && !existsSync(path.join(web, 'public/media', d.hero))) {
+        fail(`${hall}: hero image ${d.hero} not in public/media`);
+    }
+    if (d?.hero && !d.heroAlt) fail(`${hall}: hero image without alt text`);
+    for (const g of d?.gallery?.images ?? []) {
+        if (!existsSync(path.join(web, 'public/media', g.file))) {
+            fail(`${hall}: gallery image ${g.file} not in public/media`);
+        }
+        if (!g.alt || !g.caption || !g.title) fail(`${hall}: gallery card ${g.file} missing title, caption or alt`);
+    }
     if (!d) { fail(`${hall}: dataset missing`); continue; }
     counts.halls++;
 
