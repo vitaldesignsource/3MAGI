@@ -116,6 +116,10 @@ if (pantheons) {
     }
     for (const g of pantheons.groups) {
         if (!pantheons.entries.some((e) => e.group === g.key)) fail(`pantheons: "${g.key}" is empty`);
+        if (g.image && !existsSync(path.join(web, 'public/media', g.image))) {
+            fail(`pantheons/${g.key}: group image ${g.image} not in public/media`);
+        }
+        if (g.image && !g.imageAlt) fail(`pantheons/${g.key}: group image without alt text`);
     }
     notes.push(`pantheons: ${pantheons.entries.length} deities in ${pantheons.groups.length} families`);
 }
@@ -134,6 +138,10 @@ if (corr) {
             if (!roleKeys.includes(extra)) fail(`correspondences/${p.key}: unknown office "${extra}"`);
         }
     }
+    if (corr.image && !existsSync(path.join(web, 'public/media', corr.image))) {
+        fail(`correspondences: image ${corr.image} not in public/media`);
+    }
+    if (corr.image && !corr.imageAlt) fail('correspondences: image without alt text');
     notes.push(`correspondences: ${corr.pantheons.length} × ${roleKeys.length}`);
 }
 

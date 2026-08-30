@@ -6,6 +6,10 @@ export default {
         'The ancients did this constantly. Herodotus walked through Egypt renaming its gods in Greek; Tacitus reported Germanic gods as Mercury and Hercules; Roman soldiers on the Wall dedicated altars to Jupiter Dolichenus and meant a Syrian storm-god. The habit has a name — interpretatio graeca, interpretatio romana — and it is the oldest comparative religion we have.',
         'It is also the oldest way of getting things wrong. A correspondence matches an office, not a god: Thoth and Hermes share the scribe’s portfolio and nothing of their myths; Athena and Neith share a city’s patronage and a weaving trade across an ocean of difference. Select a row to read where each match holds and where it breaks — the notes are the point of the table, not the cells.',
     ],
+    image: 'f8b3b3abbddf7b2e6ba1a94cccf089de.webp',
+    imageAlt: 'A long table between two doorways — moonlit Egyptian temple and river on the left, sunlit Greek colonnade on the right — with a seated ibis-headed Thoth facing a marble Hermes holding the caduceus, an Egyptian priest and a Greek scholar standing at either end over scrolls and scales',
+    imageCaption: 'The operation this table performs, drawn: Thoth and Hermes set face to face across the scrolls, one hall by moonlight and one by day. That particular match produced Hermes Trismegistus, and with him most of Western esotericism.',
+    imageEffect: 'light',
     roles: [
         { key: 'sky', label: 'Sky / High', gloss: 'The high god of the family — sovereign, remote or active' },
         { key: 'storm', label: 'Storm', gloss: 'Thunder, rain, and the violence that fertilizes' },

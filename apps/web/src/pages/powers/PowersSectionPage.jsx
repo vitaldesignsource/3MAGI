@@ -130,6 +130,7 @@ function Pantheons({ data, open, setOpen }) {
                     <h2>{g.label}</h2>
                     <p><Rich t={g.blurb} /></p>
                 </header>
+                <Plate item={g} wide />
                 <div className="ch-entry-list">
                     {entries.map((e) => (
                         <Expandable key={e.slug} id={e.slug} open={open === e.slug}
@@ -193,6 +194,7 @@ function Correspondences({ table }) {
                 <h2 id="pw-corr-heading">The Table of Correspondences</h2>
                 {table.intro.map((p, i) => <p key={i}><Rich t={p} /></p>)}
             </header>
+            <Plate item={table} wide />
             <div className="edu-kinship-scroll ch-canon-scroll" role="region"
                 aria-label="Correspondence table of the pantheons" tabIndex={0}>
                 <table className="edu-cognates-table ch-canon-table pw-corr-table">
