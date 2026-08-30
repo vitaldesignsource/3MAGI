@@ -106,7 +106,8 @@ function ChristianitiesCanonPage() {
                     </div>
                 </section>
 
-                <section aria-labelledby="ch-canontable-heading" className="ch-canon">
+                <section aria-labelledby="ch-canontable-heading" className="ch-canon has-atmosphere"
+                    style={{ '--atmo': "url(/media/ba2f4eddefc44e825a6bbf7b1acb7b55.webp)" }}>
                     <header className="edu-section-head">
                         <p className="kicker">Every Book, Every Canon</p>
                         <h2 id="ch-canontable-heading">The table</h2>

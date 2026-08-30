@@ -11585,6 +11585,28 @@ figure.ch-gallery-card { margin: 0; }
   .ch-hero-light > span { animation: none !important; opacity: 0.4; }
 }
 
+/* --- section atmosphere -----------------------------------------------------
+   A section that is otherwise a large plain field can carry a photograph
+   behind it, provided the photograph never competes: blurred past legibility,
+   desaturated, held at about a tenth opacity, and masked to fade in and out at
+   the section's edges so it leaves no seam. Text sits above it untouched.
+   Used sparingly and only where the image is the section's own subject. */
+.has-atmosphere { position: relative; isolation: isolate; }
+.has-atmosphere::before {
+  content: ""; position: absolute; inset: -3rem 0; z-index: -1;
+  background-image: var(--atmo);
+  background-size: cover; background-position: center 42%;
+  opacity: 0.12; filter: blur(3px) saturate(0.42) brightness(0.9);
+  -webkit-mask-image: linear-gradient(180deg, transparent 0%, #000 16%, #000 84%, transparent 100%);
+  mask-image: linear-gradient(180deg, transparent 0%, #000 16%, #000 84%, transparent 100%);
+  pointer-events: none;
+}
+/* a table needs its own ground: keep the wash off the cells themselves */
+.has-atmosphere .edu-kinship-scroll { background: rgba(8, 7, 5, 0.72); }
+@media (prefers-reduced-transparency: reduce) {
+  .has-atmosphere::before { opacity: 0.06; }
+}
+
 /* --- hero light: the Christianities doors -----------------------------------
    Same principle as the Powers: move the light that is already in the picture.
    Shared keyframes (hl-breathe, hl-pulse) do the work; only the gradients and

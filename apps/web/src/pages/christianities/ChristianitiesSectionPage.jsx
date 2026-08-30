@@ -320,7 +320,8 @@ function CouncilWords({ words }) {
 function Creeds({ creeds }) {
     const [open, setOpen] = useState(() => (typeof window !== 'undefined' ? decodeURIComponent(window.location.hash.slice(1)) : '') || null);
     return (
-        <section className="ch-creeds" aria-labelledby="ch-creeds-heading">
+        <section className="ch-creeds has-atmosphere" aria-labelledby="ch-creeds-heading"
+            style={{ '--atmo': "url(/media/12cd99dadaf3915fa3b394824e83b0ad.webp)" }}>
             <header className="edu-section-head">
                 <p className="kicker">A Fence and a Song at Once</p>
                 <h2 id="ch-creeds-heading">The creeds</h2>

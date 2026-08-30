@@ -263,7 +263,8 @@ function MiddleWorld({ table }) {
     const [openRow, setOpenRow] = useState(null);
     const MARK = { yes: '●', no: '·', q: '◐' };
     return (
-        <section className="ch-matrix" aria-labelledby="pw-mw-heading">
+        <section className="ch-matrix has-atmosphere" aria-labelledby="pw-mw-heading"
+            style={{ '--atmo': "url(/media/fbb3fbfe09076061ed01862a58c394e9.webp)" }}>
             <header className="edu-section-head">
                 <p className="kicker">The Same Six Questions</p>
                 <h2 id="pw-mw-heading">The Middle World, Compared</h2>
@@ -327,7 +328,8 @@ function PowersWords({ words }) {
         () => (typeof window !== 'undefined' ? decodeURIComponent(window.location.hash.slice(1)) : '') || null,
     );
     return (
-        <section className="ch-words" aria-labelledby="pw-words-heading">
+        <section className="ch-words has-atmosphere" aria-labelledby="pw-words-heading"
+            style={{ '--atmo': "url(/media/9ad6bf37aaf6af0156ee6d451166ad5e.webp)" }}>
             <header className="edu-section-head">
                 <p className="kicker">One Word, Two Fates</p>
                 <h2 id="pw-words-heading">The words</h2>
