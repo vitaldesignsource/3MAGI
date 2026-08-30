@@ -175,6 +175,11 @@ for (const c of chCreeds?.creeds ?? []) push(
     CH, 'creed', c.native, c.name, c.origin, c.story, c.slug, '/christianities/councils',
 );
 
+const esoteric = await loadCh('esoteric');
+for (const e of esoteric?.entries ?? []) push(
+    CH, 'current', '', e.name, e.era, e.claim, e.slug, '/christianities/esoteric',
+);
+
 const chTimeline = await loadCh('timeline');
 for (const e of chTimeline?.events ?? []) push(
     CH, 'event', e.native, e.title,

@@ -59,6 +59,7 @@ const staticRoutes = [
     { loc: '/christianities/branches',      priority: '0.8', changefreq: 'monthly' },
     { loc: '/christianities/councils',      priority: '0.8', changefreq: 'monthly' },
     { loc: '/christianities/canon',         priority: '0.8', changefreq: 'monthly' },
+    { loc: '/christianities/esoteric',      priority: '0.8', changefreq: 'monthly' },
     { loc: '/christianities/figures',       priority: '0.7', changefreq: 'monthly' },
     { loc: '/christianities/symbols',       priority: '0.7', changefreq: 'monthly' },
     { loc: '/christianities/map',           priority: '0.8', changefreq: 'monthly' },

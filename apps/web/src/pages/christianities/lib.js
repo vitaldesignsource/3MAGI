@@ -41,6 +41,16 @@ export const SECTIONS = [
         hero: '78596ff5b2f53470309a6504f91a34b7.webp',
         heroAlt: 'A painter working the Good Shepherd onto a catacomb wall by lamplight',
       blurb: 'Chi-Rho to khachkar: where each sign came from, what it meant, who used it — and how long the cross itself took to become an image anyone would draw.' },
+    {
+        slug: 'esoteric', title: 'The Inner Tradition', kicker: 'The Christianity Behind the Catechism',
+        heroEffect: 'flicker',
+        hero: '3c02c02618c631f0a11d10fd90b4c1f0.webp',
+        heroAlt: 'A scholar in dark dress praying at a desk before a vine-grown window whose mullions form a cross with a red rose at the crossing, flasks and an armillary sphere beside him',
+        blurb: 'Origen’s restoration of all things, the divine darkness of Dionysius, '
+            + 'Eckhart’s ground of the soul, the Jesus Prayer, the Christian Cabala, '
+            + 'Böhme, Swedenborg, Russian Sophia — the inner tradition, with what the '
+            + 'churches actually ruled about each of them recorded beside it.',
+    },
     { slug: 'map', title: 'The Map', kicker: 'Where It Happened',
         heroEffect: 'snow',
         hero: '1a1fcfb2cdfb76ef8852b7ffc361e837.webp',

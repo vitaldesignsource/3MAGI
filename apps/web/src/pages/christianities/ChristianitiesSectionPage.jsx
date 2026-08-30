@@ -355,9 +355,40 @@ function Creeds({ creeds }) {
     );
 }
 
+function Esoteric({ data, open, setOpen }) {
+    return data.groups.map((g) => {
+        const entries = data.entries.filter((e) => e.group === g.key);
+        if (!entries.length) return null;
+        return (
+            <section key={g.key} className="ch-group">
+                <span className="pw-divider" aria-hidden="true" />
+                <header className="edu-section-head">
+                    <h2>{g.label}</h2>
+                    <p><Rich t={g.blurb} /></p>
+                </header>
+                <Plate item={g} wide />
+                <div className="ch-entry-list">
+                    {entries.map((e) => (
+                        <Expandable key={e.slug} id={e.slug} open={open === e.slug}
+                            onToggle={() => setOpen(open === e.slug ? null : e.slug)}
+                            head={e.name} sub={e.era} badge={null}>
+                            <Plate item={e} />
+                            <p className="ch-claim">{e.claim}</p>
+                            {e.exposition.map((p, i) => <p key={i}><Rich t={p} /></p>)}
+                            <div className="ch-kv"><span>Sources</span><p><Rich t={e.sources} /></p></div>
+                            <div className="ch-kv"><span>What the church did about it</span><p><Rich t={e.reception} /></p></div>
+                            <div className="ch-kv"><span>Where it stands now</span><p><Rich t={e.today} /></p></div>
+                        </Expandable>
+                    ))}
+                </div>
+            </section>
+        );
+    });
+}
+
 const RENDERERS = {
     christologies: Christologies, branches: Branches, councils: Councils,
-    figures: Figures, symbols: Symbols,
+    figures: Figures, symbols: Symbols, esoteric: Esoteric,
 };
 
 function ChristianitiesSectionPage() {

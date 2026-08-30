@@ -320,6 +320,32 @@ if (timeline) {
     notes.push(`timeline: ${timeline.events.length} events, ${dated} with dating notes`);
 }
 
+// --- the inner tradition: reception is a field, not an opinion --------------
+const esoteric = await load('esoteric');
+if (esoteric) {
+    const groups = new Set(esoteric.groups.map((g) => g.key));
+    const seen = new Set();
+    for (const e of esoteric.entries) {
+        const where = `esoteric/${e.slug}`;
+        if (seen.has(e.slug)) fail(`${where}: duplicate slug`);
+        seen.add(e.slug);
+        if (!groups.has(e.group)) fail(`${where}: unknown group "${e.group}"`);
+        if (!e.claim || wordCount(e.claim) < 5) fail(`${where}: the claim is too thin to state a teaching`);
+        if (!e.sources) fail(`${where}: no sources`);
+        // the discipline that keeps this door honest: every current records what
+        // the authorities actually did, so admiration cannot stand in for it
+        if (!e.reception) {
+            fail(`${where}: no reception — a current with no record of what the church did about it is advocacy, not history`);
+        }
+        if (!e.today) fail(`${where}: says nothing about where it stands now`);
+        checkContested(where, e);
+    }
+    for (const g of esoteric.groups) {
+        if (!esoteric.entries.some((e) => e.group === g.key)) fail(`esoteric: group "${g.key}" is empty`);
+    }
+    notes.push(`esoteric: ${esoteric.entries.length} in ${esoteric.groups.length} currents`);
+}
+
 // --- the gallery: every image must exist, every card must say what it shows -
 const gallery = await load('gallery');
 if (gallery) {
@@ -452,7 +478,7 @@ if (creeds) {
 
 // --- report ----------------------------------------------------------------
 const present = [christologies, branches, councils, canon, figures, symbols, mapsites, timeline,
-    gallery, tree, matrix, words, creeds]
+    gallery, tree, matrix, words, creeds, esoteric]
     .filter(Boolean).length;
 if (present === 0) {
     console.log('christianities: scaffolded, awaiting content');
@@ -468,4 +494,4 @@ if (errors.length) {
     for (const e of errors) console.error(`  ✗ ${e}`);
     process.exit(1);
 }
-console.log(`christianities: ${present}/13 sections — ${notes.join(' · ')} — validated`);
+console.log(`christianities: ${present}/14 sections — ${notes.join(' · ')} — validated`);
