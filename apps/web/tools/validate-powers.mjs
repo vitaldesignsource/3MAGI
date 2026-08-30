@@ -160,6 +160,31 @@ if (daimons) {
     notes.push(`daimons: ${daimons.entries.length}`);
 }
 
+// --- the middle world table -------------------------------------------------
+const middleworld = await load('middleworld');
+if (middleworld) {
+    const qkeys = middleworld.questions.map((q) => q.key);
+    const seen = new Set();
+    for (const t of middleworld.traditions) {
+        const where = `middleworld/${t.key}`;
+        if (seen.has(t.key)) fail(`${where}: duplicate key`);
+        seen.add(t.key);
+        if (!t.era) fail(`${where}: no era`);
+        for (const qk of qkeys) {
+            const c = t.cells[qk];
+            if (!c || !['yes', 'no', 'q'].includes(c.v)) {
+                fail(`${where}: no answer to "${qk}" — a row that dodges a question is not a comparison`);
+            } else if (c.v === 'q' && !c.note) {
+                fail(`${where}: "${qk}" is qualified with no note saying how`);
+            }
+        }
+        for (const extra of Object.keys(t.cells)) {
+            if (!qkeys.includes(extra)) fail(`${where}: answers unknown question "${extra}"`);
+        }
+    }
+    notes.push(`middleworld: ${middleworld.traditions.length} × ${qkeys.length}`);
+}
+
 // --- words ------------------------------------------------------------------
 const words = await load('words');
 if (words) {
@@ -231,7 +256,7 @@ if (timeline) {
 }
 
 // --- report -----------------------------------------------------------------
-const present = [hierarchies, host, pantheons, corr, daimons, words, texts, mapsites, timeline]
+const present = [hierarchies, host, pantheons, corr, daimons, middleworld, words, texts, mapsites, timeline]
     .filter(Boolean).length;
 if (present === 0) { console.log('powers: scaffolded, awaiting content'); process.exit(0); }
 if (errors.length) {
@@ -239,4 +264,4 @@ if (errors.length) {
     for (const e of errors) console.error(`  ✗ ${e}`);
     process.exit(1);
 }
-console.log(`powers: ${present}/9 sections — ${notes.join(' · ')} — validated`);
+console.log(`powers: ${present}/10 sections — ${notes.join(' · ')} — validated`);

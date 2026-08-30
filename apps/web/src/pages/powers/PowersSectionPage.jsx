@@ -15,7 +15,7 @@ import PortalHero from '../christianities/PortalHero';
 
 const EXTRAS = {
     pantheons: ['correspondences'],
-    daimons: ['words'],
+    daimons: ['middleworld', 'words'],
 };
 
 function Expandable({ id, head, sub, badge, children, open, onToggle }) {
@@ -259,6 +259,69 @@ function Correspondences({ table, entries }) {
     );
 }
 
+function MiddleWorld({ table }) {
+    const [openRow, setOpenRow] = useState(null);
+    const MARK = { yes: '●', no: '·', q: '◐' };
+    return (
+        <section className="ch-matrix" aria-labelledby="pw-mw-heading">
+            <header className="edu-section-head">
+                <p className="kicker">The Same Six Questions</p>
+                <h2 id="pw-mw-heading">The Middle World, Compared</h2>
+                {table.intro.map((p, i) => <p key={i}><Rich t={p} /></p>)}
+            </header>
+            <div className="edu-kinship-scroll ch-canon-scroll" role="region"
+                aria-label="The middle world compared across traditions" tabIndex={0}>
+                <table className="edu-cognates-table ch-canon-table ch-matrix-table">
+                    <thead>
+                        <tr>
+                            <th scope="col" className="ch-canon-bookcol">Tradition</th>
+                            {table.questions.map((q) => (
+                                <th scope="col" key={q.key} title={q.gloss}>{q.label}</th>
+                            ))}
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {table.traditions.map((t) => {
+                            const isOpen = openRow === t.key;
+                            const notes = table.questions
+                                .map((q) => ({ q, c: t.cells[q.key] }))
+                                .filter((x) => x.c?.note);
+                            return (
+                                <React.Fragment key={t.key}>
+                                    <tr className={`has-note ${isOpen ? 'is-open' : ''}`}
+                                        onClick={() => setOpenRow(isOpen ? null : t.key)}>
+                                        <th scope="row">{t.label}</th>
+                                        {table.questions.map((q) => {
+                                            const c = t.cells[q.key];
+                                            return (
+                                                <td key={q.key} className={`ch-canon-cell st-${c?.v || 'no'}`}
+                                                    title={`${t.label} — ${q.label}`}>
+                                                    {MARK[c?.v] || '·'}
+                                                </td>
+                                            );
+                                        })}
+                                    </tr>
+                                    {isOpen && (
+                                        <tr className="edu-cog-noterow">
+                                            <td colSpan={table.questions.length + 1}>
+                                                <p className="ch-matrix-holder"><em>Era.</em> {t.era}</p>
+                                                {notes.map(({ q, c }) => (
+                                                    <p key={q.key}><em>{q.label}</em> — <Rich t={c.note} /></p>
+                                                ))}
+                                            </td>
+                                        </tr>
+                                    )}
+                                </React.Fragment>
+                            );
+                        })}
+                    </tbody>
+                </table>
+            </div>
+            <p className="edu-kinship-legend">{table.legend}</p>
+        </section>
+    );
+}
+
 function PowersWords({ words }) {
     const [open, setOpen] = useState(
         () => (typeof window !== 'undefined' ? decodeURIComponent(window.location.hash.slice(1)) : '') || null,
@@ -347,6 +410,7 @@ function PowersSectionPage() {
             <main className="edu-main">
                 {data && <Renderer data={data} open={open} setOpen={setOpen} />}
                 {extras.correspondences && <Correspondences table={extras.correspondences} entries={data?.entries} />}
+                {extras.middleworld && <MiddleWorld table={extras.middleworld} />}
                 {extras.words && <PowersWords words={extras.words} />}
             </main>
             <SiteFooter />
