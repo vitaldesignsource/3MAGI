@@ -11713,6 +11713,27 @@ figure.ch-gallery-card { margin: 0; }
   animation: hl-fall 17s linear infinite;
 }
 
+/* BASILICA — the Christianities landing: the lit doorway of the great church
+   breathing behind the departing processions, a cold sweep across the wet
+   plaza, and rain falling through it. */
+.is-basilica .hl-a {
+  background:
+    radial-gradient(ellipse 12% 22% at 50% 34%, rgba(255, 226, 168, 0.34) 0%, rgba(240, 200, 130, 0.12) 46%, transparent 76%),
+    radial-gradient(ellipse 40% 34% at 50% 46%, rgba(246, 220, 170, 0.10) 0%, transparent 74%);
+  animation: hl-pulse 10s ease-in-out infinite;
+}
+.is-basilica .hl-b {
+  background-image:
+    linear-gradient(96deg, transparent 30%, rgba(214, 226, 240, 0.10) 50%, transparent 70%),
+    radial-gradient(1px 3px at 20% 18%, rgba(226, 236, 248, 0.5), transparent 100%),
+    radial-gradient(1px 4px at 52% 40%, rgba(226, 236, 248, 0.42), transparent 100%),
+    radial-gradient(1px 3px at 76% 24%, rgba(226, 236, 248, 0.46), transparent 100%),
+    radial-gradient(1px 5px at 88% 56%, rgba(226, 236, 248, 0.36), transparent 100%);
+  background-size: auto, 220px 220px, 220px 220px, 220px 220px, 220px 220px;
+  height: 200%; top: -100%; opacity: 0.5;
+  animation: hl-fall 9s linear infinite;
+}
+
 /* --- the great tables keep their first column in view ---------------------- */
 .ch-canon-table th[scope="row"],
 .ch-matrix-table th[scope="row"] {

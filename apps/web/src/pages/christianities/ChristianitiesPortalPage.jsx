@@ -34,9 +34,9 @@ function ChristianitiesPortalPage() {
             </Helmet>
             <SiteHeader />
 
-                <PortalHero effect="candles"
-                image="0d44375c8b69eb38b86044b6095ff0eb.webp"
-                alt="A crowded church at Taizé, white-robed brothers kneeling before candlelit icons under hanging orange banners"
+                <PortalHero effect="basilica"
+                image="ed42c321d22d3f300a5d686660c12d86.webp"
+                alt="Two processions leaving one great basilica into the rain and walking apart — vested clergy in white and gold down the centre steps, dark-robed Eastern monks and priests bearing books and censers to the right — under a breaking storm"
                 kicker="A Three Magi Press Portal"
                 title="Christianities"
                 intro={[
