@@ -11219,6 +11219,22 @@ h3 {
 }
 .ch-words-bridge a { color: #d1ad68; }
 
+/* the powers — portal-specific touches on the shared ch machinery */
+.pw-head-native { margin-right: 0.5em; font-size: 1.15em; color: #ecd9ae; }
+.pw-rank-native { margin-right: 0.45em; color: #ecd9ae; }
+.pw-ranks {
+  margin: 0.4rem 0 0; padding-left: 1.4rem;
+  display: flex; flex-direction: column; gap: 0.4rem;
+  color: rgba(232, 224, 208, 0.85); line-height: 1.7;
+  font-family: Georgia, "Times New Roman", serif;
+}
+.pw-ranks strong { color: #efe7d4; }
+.pw-corr-table td.pw-corr-cell {
+  color: rgba(238, 230, 214, 0.88); font-size: 0.85rem; white-space: nowrap;
+  font-family: Georgia, "Times New Roman", serif;
+}
+.pw-corr-table th[scope="row"] { white-space: nowrap; }
+
 /* the family at prayer — portal gallery */
 .ch-gallery { margin-top: clamp(3rem, 6vw, 5rem); }
 .ch-gallery-grid {

@@ -182,6 +182,52 @@ for (const e of chTimeline?.events ?? []) push(
     e.description, 'edu-timeline-heading', '/christianities',
 );
 
+
+// --- The Powers portal ------------------------------------------------------
+const loadPw = async (name) => {
+    try { return (await import(path.join(web, 'src/data/powers', `${name}.js`))).default; }
+    catch { return null; }
+};
+const PW = 'pw';
+
+const pwHier = await loadPw('hierarchies');
+for (const e of pwHier?.entries ?? []) push(
+    PW, 'order', '', e.name, e.tradition, e.exposition?.[0], e.slug, '/powers/hierarchies',
+);
+const pwHost = await loadPw('host');
+for (const e of pwHost?.entries ?? []) push(
+    PW, 'being', e.native, e.name, [e.title, e.tradition].filter(Boolean).join(' · '),
+    e.exposition?.[0], e.slug, '/powers/host',
+);
+const pwPan = await loadPw('pantheons');
+for (const e of pwPan?.entries ?? []) push(
+    PW, 'deity', e.native, e.name, e.domain, e.exposition?.[0], e.slug, '/powers/pantheons',
+);
+const pwDai = await loadPw('daimons');
+for (const e of pwDai?.entries ?? []) push(
+    PW, 'being', '', e.name, e.tradition, e.exposition?.[0], e.slug, '/powers/daimons',
+);
+const pwTexts = await loadPw('texts');
+for (const e of pwTexts?.entries ?? []) push(
+    PW, 'work', e.native, e.name, e.dating, e.exposition?.[0], e.slug, '/powers/texts',
+);
+const pwWords = await loadPw('words');
+for (const w of pwWords?.entries ?? []) push(
+    PW, 'term', w.native, w.translit, w.literal, w.story, w.slug, '/powers/daimons',
+);
+const pwSites = await loadPw('mapsites');
+for (const s of pwSites?.sites ?? []) push(
+    PW, 'site', '', s.name,
+    [s.modern ? `now ${s.modern}` : '', `${s.from < 0 ? -s.from + ' BCE' : s.from}–${s.to ?? 'today'}`].filter(Boolean).join(' · '),
+    s.blurb, s.slug, '/powers/map',
+);
+const pwTl = await loadPw('timeline');
+for (const e of pwTl?.events ?? []) push(
+    PW, 'event', e.native, e.title,
+    `${e.circa ? 'c. ' : ''}${e.year < 0 ? `${-e.year} BCE` : `${e.year} CE`}`,
+    e.description, 'edu-timeline-heading', '/powers',
+);
+
 const out = { halls: TITLES, records };
 const file = path.join(web, 'public/scriptorium-index.json');
 writeFileSync(file, JSON.stringify(out), 'utf8');

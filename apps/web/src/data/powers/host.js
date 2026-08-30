@@ -1,0 +1,225 @@
+// powers/host — the named beings, company by company. Native script only
+// where the form is certain; attestation lines give each being its first
+// datable appearance, with the disputes stated.
+export default {
+    intro: [
+        'Names are late. The Hebrew Bible is crowded with angels and names almost none of them; only in Daniel, in the second century BCE, do Michael and Gabriel step out of the anonymous host — and the rabbis noticed, saying the names of the angels came up from Babylon with the exiles. Once naming began it never stopped: the apocalypses named the presences, the magicians named the gatekeepers, and the grimoires named everything.',
+        'Each entry gives the being as its own tradition holds it, the first datable attestation, and the crossings — because the same figure walks between scriptures under changing passports, and the walking is half the story.',
+    ],
+    groups: [
+        { key: 'presence', label: 'The Angels of the Presence', blurb: 'The great ones who stand before the Glory — the named archangels of the Jewish and Christian host.' },
+        { key: 'four-islam', label: 'The Four of Islam', blurb: 'The archangels of the Quran and the tradition around it.' },
+        { key: 'adversaries', label: 'The Adversaries', blurb: 'Accusers, rebels, and wardens of the left hand — each tradition’s account given in its own terms.' },
+        { key: 'pleroma', label: 'Powers of the Pleroma', blurb: 'The great figures of the gnostic drama, and one name that outgrew every system that used it.' },
+    ],
+    entries: [
+        {
+            slug: 'michael', name: 'Michael', native: 'מיכאל', lang: 'hebrew',
+            title: '“Who is like God?” — prince of the host', group: 'presence', tradition: 'Jewish · Christian · Islamic',
+            exposition: [
+                'The name is a battle-cry disguised as a question. In Daniel he is “one of the chief princes” and the particular prince of Israel; in Revelation he leads the war in heaven and casts the dragon down; in Jude he disputes with the devil over the body of Moses — a scene borrowed from a lost ending of a work the epistle treats as worth citing.',
+                'He is the closest thing the three scriptural traditions share in the angelic register: guardian, weigher of souls in medieval iconography, and in Islam Mika’il, angel of provision. His cult needed watching: the Council of Laodicea in the fourth century forbade angel-worship precisely where Michael’s shrines were thickest, and the healing spring of Chonae kept his feast anyway.',
+            ],
+            attested: 'Daniel 10:13, 21 (2nd century BCE by the scholarly dating; the traditional reckoning sets the visions in the Persian court itself).',
+            office: 'Warrior-protector; prince of Israel; psychopomp and weigher in later iconography.',
+            elsewhere: 'Mika’il in the Quran (2:98); the dragon-slayer of Christian art, inheriting more than one older serpent-fighter’s portfolio.',
+        },
+        {
+            slug: 'gabriel', name: 'Gabriel', native: 'גבריאל', lang: 'hebrew',
+            title: '“God is my strength” — the announcer', group: 'presence', tradition: 'Jewish · Christian · Islamic',
+            exposition: [
+                'Gabriel explains. He interprets Daniel’s visions, announces the Baptist to Zechariah and the Christ to Mary, and in Islam is the Spirit of the revelation itself, dictating the Quran to the Prophet across twenty-three years. No other angel has a comparable speaking part in scripture.',
+                'The tradition heard his voice everywhere afterward: in the trumpet of popular imagination (scripture never actually hands him the horn), in the annunciation lilies of a thousand altarpieces, and at the side of every prophet whose message needed carrying.',
+            ],
+            attested: 'Daniel 8:16; 9:21.',
+            office: 'Revelation and announcement — the voice through the veil.',
+            elsewhere: 'Jibril in the Quran (2:97), amin al-wahy, the trustworthy bearer of the revelation.',
+        },
+        {
+            slug: 'raphael', name: 'Raphael', native: 'רפאל', lang: 'hebrew',
+            title: '“God heals” — the companion on the road', group: 'presence', tradition: 'Jewish · Christian',
+            exposition: [
+                'Raphael gets the best story: in Tobit he walks incognito as the hired guide Azarias, binds the demon Asmodeus with fish-smoke, cures a father’s blindness, and only at the end unveils — “I am Raphael, one of the seven holy angels who present the prayers of the saints.” In 1 Enoch he binds Azazel hand and foot and buries him in darkness until the judgement.',
+                'He is the host’s physician and the patron of travellers, apothecaries and happy endings; the Renaissance painted him with Tobias and the fish more often than any scene but the Annunciation itself.',
+            ],
+            attested: 'Tobit 3:17 (3rd century BCE, by most datings of the book); 1 Enoch 10:4.',
+            office: 'Healing; the binding of Azazel; one of the seven who enter before the Glory.',
+            elsewhere: 'Israfil is sometimes given his portfolio’s sound-alike in Islam, but the offices differ; the healing office passes intact into Christian devotion.',
+        },
+        {
+            slug: 'uriel', name: 'Uriel', native: 'אוריאל', lang: 'hebrew',
+            title: '“God is my light” — the illuminator', group: 'presence', tradition: 'Jewish · Christian (uneven standing)',
+            exposition: [
+                'Uriel is the fourth presence with the uneven passport. He guides Enoch through the luminaries and Ezra through the unanswerable questions of 4 Ezra; in the oldest Enochic lists his seat is sometimes Sariel’s or Phanuel’s, and the church councils of the eighth century, alarmed by angel-magic, struck all names but Michael, Gabriel and Raphael from the approved list — which is why Uriel stands in the Ethiopian synaxarium and the Anglican window, but not the Roman canon.',
+                'He kept his standing where the Enochic books kept theirs: Ethiopia canonized the literature, and Uriel with it.',
+            ],
+            attested: '1 Enoch 9–10, 19–21 (3rd century BCE stratum); 4 Ezra 4 (late 1st century CE).',
+            office: 'Illumination — astronomy in Enoch, theodicy in Ezra; regent of the sun in later lists.',
+            elsewhere: 'Struck from the Western liturgical lists at Rome in 745 under Zachary, retained in the East and in Ethiopia — the clearest case of an angel with a disputed visa.',
+        },
+        {
+            slug: 'metatron', name: 'Metatron', native: 'מטטרון', lang: 'hebrew',
+            title: 'The lesser YHWH — the transformed scribe', group: 'presence', tradition: 'Jewish (merkavah)',
+            exposition: [
+                'Metatron is what happens when a man is promoted past the angels. 3 Enoch has him say it himself: “I am Enoch son of Jared… the Holy One took me to serve the throne of glory,” enthroned, crowned, given seventy names, called na‘ar — the Youth — and, in the phrase the tradition never stopped arguing about, the lesser YHWH. The Talmud preserves the danger as a story: the sage Elisha ben Abuyah saw Metatron seated and concluded there were two powers in heaven, and left the faith.',
+                'His name has no agreed etymology — the guesses run from Greek meta-thronos, “beside the throne,” to loans no one can confirm — and the portal keeps the plural honestly: several proposed readings, none secure. He is the boldest surviving artifact of Jewish speculation on how close a creature may stand.',
+            ],
+            attested: 'Babylonian Talmud, Ḥagigah 15a and Sanhedrin 38b; Sefer Hekhalot (3 Enoch), redacted 5th–9th centuries CE.',
+            office: 'Scribe of the court above; prince of the Presence; the enthroned witness.',
+            elsewhere: 'Whispers into Islamic and later esoteric literature; the kabbalists made him the crown of the angelic worlds and kept the warnings attached.',
+        },
+        {
+            slug: 'raziel', name: 'Raziel', native: 'רזיאל', lang: 'hebrew',
+            title: '“Secret of God” — keeper of the book', group: 'presence', tradition: 'Jewish (esoteric)',
+            exposition: [
+                'Raziel is the angel of the transmission itself. The legend — old in the midrashic collections, elaborated in the medieval Sefer Raziel ha-Malakh — says he stood by the curtain and gave Adam the book of all secrets; the jealous angels stole it and threw it into the sea; it passed to Enoch, to Noah at the building of the ark, to Solomon. Print made the legend a talisman: from the 1701 Amsterdam edition onward, a household that owned the Sefer Raziel was held safe from fire.',
+                'He is less a person than a proposition: that the tradition’s secrets were angelic property first, lent downward.',
+            ],
+            attested: 'Targumic and midrashic notices; Sefer Raziel ha-Malakh, printed Amsterdam 1701 from much older materials.',
+            office: 'Custody of the mysteries; patron of the book that bears him.',
+            elsewhere: 'His book stands on the Scriptorium’s Hebrew shelf — the portals touch here.',
+        },
+        {
+            slug: 'sandalphon', name: 'Sandalphon', native: 'סנדלפון', lang: 'hebrew',
+            title: 'The tall one — weaver of crowns', group: 'presence', tradition: 'Jewish',
+            exposition: [
+                'The Talmud measures him: Sandalphon stands behind the chariot, taller than his fellows by a journey of five hundred years, and weaves crowns for his Maker from the prayers of Israel. Later tradition paired him with Metatron as the second transformed man — Elijah, taken up in the whirlwind — though the older texts do not say so.',
+                'He is the liturgy’s own angel: what the congregation sends up, he binds.',
+            ],
+            attested: 'Babylonian Talmud, Ḥagigah 13b.',
+            office: 'Receiving and binding the prayers; the crown-weaver.',
+            elsewhere: 'Longfellow gave him an American afterlife in verse; the kabbalists set him at the crossing from the world of action upward.',
+        },
+        {
+            slug: 'jibril', name: 'Jibril', native: 'جبريل', lang: 'arabic',
+            title: 'The Spirit of the revelation', group: 'four-islam', tradition: 'Islamic',
+            exposition: [
+                'In the Quran, whoever is an enemy of Jibril is an enemy of God, “for he brings the revelation down upon your heart by God’s leave” (2:97). The tradition fills the portrait: six hundred wings, the horizon-filling form the Prophet twice saw unveiled, the teacher who came as a man in white to ask the questions that define the faith — the famous hadith of Gabriel.',
+                'He is the Islamic host’s axis: every verse of the book passed through him, and the mi‘raj — the ascent — has him as guide until the last boundary, which he alone may not cross.',
+            ],
+            attested: 'Qur’an 2:97–98; 53:5–18 with the commentary tradition; the hadith of Gabriel in Muslim.',
+            office: 'Bearer of revelation to every prophet; guide of the ascent.',
+            elsewhere: 'Gabriel of Daniel and Luke, continuously — the traditions agree on the person while differing on everything he carried.',
+        },
+        {
+            slug: 'mikail', name: 'Mika’il', native: 'ميكائيل', lang: 'arabic',
+            title: 'Angel of provision', group: 'four-islam', tradition: 'Islamic',
+            exposition: [
+                'Named once in the Quran, beside Jibril (2:98), Mika’il holds the office of sustenance: the rains, the winds, the measures of provision. The tradition says he has not laughed since the Fire was created — the host’s economist, sobered by what he knows.',
+            ],
+            attested: 'Qur’an 2:98.',
+            office: 'Provision, rain, the measured portions.',
+            elsewhere: 'Michael, with the sword exchanged for the scales of sustenance.',
+        },
+        {
+            slug: 'israfil', name: 'Israfil', native: 'إسرافيل', lang: 'arabic',
+            title: 'The trumpet at his lips', group: 'four-islam', tradition: 'Islamic',
+            exposition: [
+                'Israfil is the pause before the end. Unnamed in the Quran — which speaks only of the Trumpet, blown twice, the stunning and the raising — he received the office in the tradition: since his creation he has stood with the horn raised, watching the Throne, waiting for the command he will not delay.',
+                'The tradition also makes him the sweetest voice in creation, reciter of the celestial liturgies: the same breath that will end the world keeps its praises meanwhile.',
+            ],
+            attested: 'Qur’an 39:68 (the Trumpet); the naming is in the tafsir and hadith literature.',
+            office: 'The blast of the Hour; master of the heavenly recitation.',
+            elsewhere: 'The trumpet popular Christianity hands to Gabriel is, in Islam, precisely his.',
+        },
+        {
+            slug: 'azrail', name: 'ʿAzra’il', native: 'عزرائيل', lang: 'arabic',
+            title: 'The angel of death', group: 'four-islam', tradition: 'Islamic',
+            exposition: [
+                'The Quran knows him only by office: “Say: the angel of death, who has been given charge of you, will take you” (32:11). The name ʿAzra’il, the tradition’s gift, dressed the office as a person: the fourth of the great four, reading the names of the appointed from the tablet, gentle to the gentle.',
+                'The honesty of the sources is worth keeping: scripture gives the function, piety gave the face.',
+            ],
+            attested: 'Qur’an 32:11 (malak al-mawt); the name in post-Quranic tradition.',
+            office: 'The taking of souls, each at its written hour.',
+            elsewhere: 'Cognate with the Jewish mal’akh ha-mavet of the Talmud; the medieval Angel of Death of both traditions shares his ledger.',
+        },
+        {
+            slug: 'samael', name: 'Samael', native: 'סמאל', lang: 'hebrew',
+            title: 'The severity of God — accuser and prince', group: 'adversaries', tradition: 'Jewish',
+            exposition: [
+                'Samael is the adversary who kept his commission. In the midrash he is the angel of Rome and of Esau, the accuser, the one who rides the serpent in Eden; in the kabbalah he is the prince of the left emanation, severity unbalanced — married, in the boldest texts, to Lilith. And yet he remains an angel with standing, the prosecution in a court whose Judge he serves.',
+                'The name is usually parsed sam-el, “poison of God,” and the tradition let the ambiguity stand: the venom is his, the appointment is God’s.',
+            ],
+            attested: 'Ascension of Isaiah and midrashic literature (Deuteronomy Rabbah, Pirqe de-Rabbi Eliezer); richly in the Zohar.',
+            office: 'Accusation; the angel of death in some texts; prince of the sitra aḥra, the other side.',
+            elsewhere: 'Gnostic texts use the same name as one of Yaldabaoth’s — “the blind god” — a deliberate cross-tradition insult.',
+        },
+        {
+            slug: 'azazel', name: 'Azazel', native: 'עזאזל', lang: 'hebrew',
+            title: 'The one in the wilderness', group: 'adversaries', tradition: 'Jewish (Enochic and levitical)',
+            exposition: [
+                'Leviticus 16 sends one goat “to Azazel, into the wilderness,” and does not say who Azazel is — a silence three traditions of reading fought over: a place, a rite, or a being. The Book of the Watchers answered: a leader of the fallen, teacher of weapons and cosmetics — the arts of killing and seeming — bound by Raphael in a desert pit until the great day. “The whole earth was corrupted through the works that were taught by Azazel: to him ascribe all sin.”',
+                'The portal keeps all three readings; the Enochic one made the career.',
+            ],
+            attested: 'Leviticus 16:8–10; 1 Enoch 8–10.',
+            office: 'Recipient of the sent-away goat; in Enoch, arch-teacher of forbidden craft.',
+            elsewhere: 'The scapegoat of the English Bible — William Tyndale’s coinage — carries his name’s riddle into every later idiom.',
+        },
+        {
+            slug: 'semyaza', name: 'Shemihazah', native: 'שמיחזה', lang: 'hebrew',
+            title: 'Chief of the two hundred', group: 'adversaries', tradition: 'Jewish (Enochic)',
+            exposition: [
+                'Shemihazah led the descent: two hundred Watchers on Mount Hermon, an oath sworn with a curse so none could turn back alone, and the taking of wives from the daughters of men. The children were the giants; the giants’ hunger stripped the earth; and the cry of the earth reached the four presences. It is the Bible’s terse Genesis 6:1–4 given its full, catastrophic novel.',
+                'He shares command with Azazel awkwardly across the sources — two strands, teacher and begetter, braided by the compilers — and the seam still shows, which is itself a lesson in how such books grow.',
+            ],
+            attested: '1 Enoch 6–7 (Aramaic: 4Q201).',
+            office: 'Oath-binder of the rebellion; father of giants.',
+            elsewhere: 'The “sons of God” of Genesis 6, read openly; his host’s ghosts become the working demons of later demonology.',
+        },
+        {
+            slug: 'iblis', name: 'Iblis', native: 'إبليس', lang: 'arabic',
+            title: 'The refuser', group: 'adversaries', tradition: 'Islamic',
+            exposition: [
+                'When the angels were commanded to bow to Adam, all bowed but Iblis. The Quran is precise about what he was: “he was of the jinn, and he broke the command of his Lord” (18:50) — not a fallen angel, since angels cannot disobey, but a fire-born creature promoted into the assembly and ruined by a syllogism: You created me of fire and him of clay; I am better. Respited until the Hour, he becomes al-Shaytan, the whisperer, with power only to suggest.',
+                'Sufi tradition dared a minority reading — Hallaj and others heard in the refusal a terrible monotheism, a lover who would bow to none but God — and the mainstream kept the plain one. Both are part of the record.',
+            ],
+            attested: 'Qur’an 2:34, 7:11–18, 15:26–43, 18:50.',
+            office: 'Temptation by whisper; none over the sincere.',
+            elsewhere: 'Functionally parallel to the Satan of Job’s court and the devil of the Gospels, with the genealogy deliberately changed.',
+        },
+        {
+            slug: 'mastema', name: 'Mastema', native: 'משטמה', lang: 'hebrew',
+            title: 'The prince of hostility', group: 'adversaries', tradition: 'Jewish (Jubilees)',
+            exposition: [
+                'The Book of Jubilees, retelling Genesis with the ledger open, needed someone to do the dark errands scripture assigns to God — and appointed Mastema, “Hostility,” prince of the spirits spared from the Flood at his own petition: a tithe of the demons, licensed to test. It is he, in Jubilees, who proposes the binding of Isaac and attacks Moses at the lodging-place — the awkward passages transferred to a licensed adversary.',
+                'He is theology’s subcontractor, invented so the court stays clean; the move — from “God did” to “the adversary was permitted” — is one of apocalyptic literature’s great quiet revolutions.',
+            ],
+            attested: 'Jubilees 10, 17–18, 48 (2nd century BCE; complete text preserved in Ge‘ez).',
+            office: 'Licensed testing; command of the spared tenth of the spirits.',
+            elsewhere: 'A near-double of the satan of Job, with paperwork; Ethiopia, which canonized Jubilees, kept his file open.',
+        },
+        {
+            slug: 'sophia', name: 'Sophia', native: 'Σοφία', lang: 'greek',
+            title: 'Wisdom, fallen and returning', group: 'pleroma', tradition: 'Gnostic (with biblical roots)',
+            exposition: [
+                'She begins in the Bible: Wisdom crying in the streets in Proverbs, beside God at the founding of the world, “rejoicing before him always.” The gnostic drama takes her further: youngest of the aeons, she reaches for the unknowable Depth alone, and her crisis — grief, fear, bewilderment — precipitates outward and becomes matter; her miscarried thought becomes the blind maker of this world. Everything since is her long return, and ours with her.',
+                'No figure better shows the traditions arguing through a shared character: hymned in the synagogue’s wisdom books, dramatized by the gnostics, defended by the church as an attribute, enthroned by the Russian sophiologists — the same lady at every turn of the stair.',
+            ],
+            attested: 'Proverbs 8 (Hebrew Ḥokhmah); the gnostic drama in the Apocryphon of John and Pistis Sophia (2nd–3rd centuries CE).',
+            office: 'The wisdom in things; the fall into multiplicity and the ascent out of it.',
+            elsewhere: 'Ḥokhmah in the Scriptorium’s Hebrew hall; Hagia Sophia the emperor’s church; the Shekhinah’s near-sister in the kabbalistic exile-and-return.',
+        },
+        {
+            slug: 'yaldabaoth', name: 'Yaldabaoth', native: 'Ιαλδαβαωθ', lang: 'greek',
+            title: 'The blind maker', group: 'pleroma', tradition: 'Gnostic (Sethian)',
+            exposition: [
+                'The Sethian texts give the demiurge a face and three insulting names: Yaldabaoth, Saklas the fool, Samael the blind god — lion-faced, serpent-bodied, born of Sophia’s thought without her consort, stealing his mother’s power and boasting into the darkness: “I am God and there is no other beside me.” The texts have Wisdom answer from above: you are mistaken, Samael.',
+                'It is the most transgressive move in ancient theology — the god of Genesis demoted to ignorant warden — and the reason these books were buried in a jar at Nag Hammadi rather than copied in monasteries. The etymology of the name is disputed (the guesses include “child of chaos”); the portal, as always, keeps the plural.',
+            ],
+            attested: 'Apocryphon of John; Hypostasis of the Archons; On the Origin of the World (Nag Hammadi, 2nd–3rd century compositions in 4th-century copies).',
+            office: 'Rule of the seven; the counterfeit of creation.',
+            elsewhere: 'His boast is Isaiah 45:5 requoted with hostile intent — the sharpest example in the portal of one scripture weaponized inside another.',
+        },
+        {
+            slug: 'abrasax', name: 'Abrasax', native: 'Αβρασαξ', lang: 'greek',
+            title: 'The name of 365', group: 'pleroma', tradition: 'Greco-Egyptian, gnostic, and everything after',
+            exposition: [
+                'Seven Greek letters summing, by isopsephy, to 365 — a year-god in a word. Abrasax rides the amulets of the imperial centuries: cock-headed, serpent-legged, whip in hand, cut into gems from Egypt to Britain; the Basilideans, says Irenaeus, made him ruler of the 365 heavens; the magical papyri conscript the name into spells with sublime indifference to theology.',
+                'What he actually was — god, aeon, cipher, password — depends on which artifact answers, and the honest catalogue keeps them all. The Scriptorium’s Greek hall holds this portal’s hand here: its Abraxas entry carries seven proposed readings of the name, none crowned.',
+            ],
+            attested: 'Magical gems and papyri, 2nd–4th centuries CE; Irenaeus, Against Heresies I.24, for the Basilidean count.',
+            office: 'Whatever the bearer needed sealed: the year, the heavens, the gate.',
+            elsewhere: 'Jung’s Seven Sermons revived him for the moderns; his gems anchor every museum case of “gnostic” art — most of them, scholars now insist, simply magical.',
+        },
+    ],
+};

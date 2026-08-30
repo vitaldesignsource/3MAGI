@@ -19,6 +19,8 @@ function SiteHeader() {
                 <Link to="/books">Books</Link>
                 <Link to="/third-lamp">The Third Lamp</Link>
                 <Link to="/christianities">Christianities</Link>
+                        <Link to="/powers">The Powers</Link>
+                <Link to="/powers">The Powers</Link>
                 <Link to="/#journal">Essays</Link>
                 <Link to="/#about">About</Link>
                 <Link to="/#newsletter">Dispatch</Link>

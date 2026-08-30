@@ -24,6 +24,9 @@ const ChristianitiesPortalPage = lazy(() => import('./pages/christianities/Chris
 const ChristianitiesMapPage = lazy(() => import('./pages/christianities/ChristianitiesMapPage'));
 const ChristianitiesCanonPage = lazy(() => import('./pages/christianities/ChristianitiesCanonPage'));
 const ChristianitiesSectionPage = lazy(() => import('./pages/christianities/ChristianitiesSectionPage'));
+const PowersPortalPage = lazy(() => import('./pages/powers/PowersPortalPage'));
+const PowersMapPage = lazy(() => import('./pages/powers/PowersMapPage'));
+const PowersSectionPage = lazy(() => import('./pages/powers/PowersSectionPage'));
 const ArticlePage = lazy(() => import('./pages/ArticlePage'));
 const PlansPage = lazy(() => import('./pages/PlansPage'));
 const WelcomePage = lazy(() => import('./pages/WelcomePage'));
@@ -106,6 +109,9 @@ function App() {
                     <Route path="/christianities/map" element={<ChristianitiesMapPage />} />
                     <Route path="/christianities/canon" element={<ChristianitiesCanonPage />} />
                     <Route path="/christianities/:section" element={<ChristianitiesSectionPage />} />
+                    <Route path="/powers" element={<PowersPortalPage />} />
+                    <Route path="/powers/map" element={<PowersMapPage />} />
+                    <Route path="/powers/:section" element={<PowersSectionPage />} />
                     <Route path="/articles/:slug" element={<ArticlePage />} />
                     <Route path="/plans" element={<PlansPage />} />
                     <Route path="/welcome" element={<WelcomePage />} />

@@ -24,21 +24,34 @@ const KIND_LABEL = {
     christology: 'Christology', branch: 'Branch', council: 'Council',
     dispute: 'Argument', canon: 'Canon', figure: 'Figure', symbol: 'Symbol',
     site: 'Place', creed: 'Creed',
+    // the Powers portal
+    order: 'Hierarchy', being: 'Being', deity: 'Deity',
 };
 const KIND_ORDER = ['name', 'term', 'sign', 'current', 'work', 'event', 'lesson', 'book',
-    'figure', 'branch', 'council', 'dispute', 'christology', 'creed', 'canon', 'symbol', 'site'];
+    'figure', 'branch', 'council', 'dispute', 'christology', 'creed', 'canon', 'symbol', 'site',
+    'deity', 'being', 'order'];
 
 // The same index serves two portals; each search box sees only its own half.
 // Christianities records are marked h === 'ch' and carry their path outright.
 const SCOPES = {
     scriptorium: {
-        pool: (r) => r.h !== 'ch',
+        pool: (r) => r.h !== 'ch' && r.h !== 'pw',
         kicker: 'Across Every Hall',
         heading: 'Search the Scriptorium',
         blurb: 'Signs, divine names, lexicon, currents, primary texts, timelines '
             + 'and lessons — in fourteen scripts. Type in English or paste the script itself.',
         placeholder: 'sefirah · ḥaqq · אין סוף · 𓋹 · execration',
         empty: 'Nothing in the Scriptorium answers to',
+    },
+    powers: {
+        pool: (r) => r.h === 'pw',
+        kicker: 'Across the Whole Portal',
+        heading: 'Search the Powers',
+        blurb: 'Hierarchies, the named host, the pantheons and their '
+            + 'correspondences, the daimons, the texts, the places — one box '
+            + 'over all six doors.',
+        placeholder: 'Metatron · daimon · Inanna · 𒀭 · Delphi',
+        empty: 'Nothing among the powers answers to',
     },
     christianities: {
         pool: (r) => r.h === 'ch',
