@@ -7,6 +7,7 @@
 
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
+import { existsSync } from 'node:fs';
 
 const here = path.dirname(fileURLToPath(import.meta.url));
 const web = path.resolve(here, '..');
@@ -64,6 +65,10 @@ if (hierarchies) {
         uniq('hierarchies', e.slug);
         if (!e.exposition?.length) fail(`${where}: no exposition`);
         if (!e.source) fail(`${where}: a ladder with no source text`);
+        if (e.image && !existsSync(path.join(web, 'public/media', e.image))) {
+            fail(`${where}: image ${e.image} not in public/media`);
+        }
+        if (e.image && !e.imageAlt) fail(`${where}: entry image without alt text`);
         for (const r of e.ranks ?? []) {
             if (r.native && r.lang) checkScript(`${where} rank ${r.name}`, r.native, r.lang);
         }

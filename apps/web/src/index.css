@@ -11279,6 +11279,22 @@ figure.ch-gallery-card { margin: 0; }
   .edu-page .ch-hero.is-grand .ch-hero-copy { margin-top: -4rem; }
 }
 
+/* an image inside an entry body — the ladder shown beside its description */
+.pw-entry-figure {
+  margin: 0.2rem 0 1.2rem;
+  border: 1px solid rgba(179, 139, 70, 0.25); background: rgba(10, 8, 6, 0.6);
+}
+.pw-entry-figure img {
+  display: block; width: 100%; max-height: 480px; object-fit: cover;
+  object-position: center 30%; filter: saturate(0.92);
+}
+.pw-entry-figure figcaption {
+  padding: 0.55rem 0.9rem; font-size: 0.85rem; line-height: 1.6;
+  color: rgba(222, 212, 196, 0.6); font-style: italic;
+  font-family: Georgia, "Times New Roman", serif;
+  border-top: 1px solid rgba(179, 139, 70, 0.18);
+}
+
 /* the powers — portal-specific touches on the shared ch machinery */
 .pw-head-native { margin-right: 0.5em; font-size: 1.15em; color: #ecd9ae; }
 .pw-rank-native { margin-right: 0.45em; color: #ecd9ae; }

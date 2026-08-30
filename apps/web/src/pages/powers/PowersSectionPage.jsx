@@ -43,6 +43,13 @@ function Hierarchies({ data, open, setOpen }) {
                 <Expandable key={e.slug} id={e.slug} open={open === e.slug}
                     onToggle={() => setOpen(open === e.slug ? null : e.slug)}
                     head={e.name} sub={e.era} badge={e.tradition}>
+                    {e.image && (
+                        <figure className="pw-entry-figure">
+                            <img src={`/media/${e.image}`} alt={e.imageAlt || ''}
+                                loading="lazy" decoding="async" />
+                            {e.imageCaption && <figcaption><Rich t={e.imageCaption} /></figcaption>}
+                        </figure>
+                    )}
                     {e.exposition.map((p, i) => <p key={i}><Rich t={p} /></p>)}
                     {e.ranks?.length > 0 && (
                         <div className="ch-kv"><span>The ranks, highest first</span>

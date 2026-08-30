@@ -12,6 +12,8 @@ export const loadData = async (name) => {
 export const SECTIONS = [
     {
         slug: 'hierarchies', title: 'The Hierarchies', kicker: 'Rank Upon Rank',
+        hero: 'f88f1e7b776e8375d5e34cae7f088c5d.webp',
+        heroAlt: 'A robed man at an altar beneath a towering wall of graded tiers, each rank carved with its own disc and countenance, light falling from the oculus above',
         blurb: 'How the traditions ordered the unseen: the nine choirs of '
             + 'Dionysius, Maimonides’ ten ranks, the Amesha Spentas, the '
             + 'archons and aeons — every ladder set out with its rungs.',

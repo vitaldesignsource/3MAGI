@@ -11,6 +11,9 @@ export default {
         {
             slug: 'dionysian-ninefold', name: 'The Nine Choirs of Dionysius',
             era: 'c. 500 CE', tradition: 'Christian',
+            image: '4a9360dd4a6ab74ba2ab13f85f3d00b4.webp',
+            imageAlt: 'A dome carved with concentric rings of angels, rank upon rank ascending to the light, a monk writing at a table beneath',
+            imageCaption: 'Rank upon rank to the oculus: the Dionysian scheme as architecture — each circle receiving the light and passing it down.',
             exposition: [
                 'The most influential angelology ever written is pseudonymous. Its author writes as Dionysius the Areopagite, converted by Paul in Athens; his actual Greek is saturated with Proclus, and the church has known since scholars pressed the point in the Renaissance that he worked around the year 500, probably in Syria. The pseudonym succeeded so completely that for a thousand years the book carried near-apostolic weight.',
                 'The Celestial Hierarchy arranges the angels in three triads of three — not as bureaucracy but as optics: each rank receives the divine light and passes it down in a form the rank below can bear. Nothing skips a step. The scheme is Neoplatonic mediation baptized, and it governed angelology in Greek and Latin alike once Eriugena translated it in the ninth century.',
@@ -91,6 +94,9 @@ export default {
         {
             slug: 'hekhalot-palaces', name: 'The Seven Palaces',
             era: 'redacted 5th–9th centuries CE', tradition: 'Jewish (merkavah)',
+            image: 'afa126e3d85d2f83aaff57827ceefac2.webp',
+            imageAlt: 'A rock-cut temple facade of lamplit chambers stacked one above another into the storm, white-robed figures with scrolls gathered below',
+            imageCaption: 'Palace above palace: the ascent as the hekhalot literature imagines it, with the names carried like passports past every gate.',
             exposition: [
                 'The hekhalot literature maps ascent: seven palaces, each gate held by terrifying gatekeepers whose names must be shown like passports, with seals and songs for every stage, until the traveller stands before the chariot. 3 Enoch crowns the scheme with a transformed man: Enoch, taken up and enthroned as Metatron, “the lesser YHWH” — a phrase the texts themselves handle like live current.',
                 'Scholarship dates the redaction of these texts to late antiquity and the early Islamic centuries, drawing on older traditions; the practitioners dated them to the rabbis whose names they carry. Both datings are part of the record.',
@@ -102,6 +108,9 @@ export default {
         {
             slug: 'islamic-ranks', name: 'The Angels of Islam',
             era: '7th century CE onward', tradition: 'Islamic',
+            image: 'f61517891c4952e92821d4cd208b2147.webp',
+            imageAlt: 'Vast translucent winged figures filling the sky above a mosque courtyard at sunset, a reader seated with a lamp on the wet marble',
+            imageCaption: 'Made of light, filling the horizon: the tradition says the Prophet twice saw Jibril unveiled, wings from east to west.',
             exposition: [
                 'The Quran’s angels are made of light (so the hadith in Muslim), do not disobey, and hold offices: Jibril brings the revelation, Mika’il the provision, Israfil waits with the trumpet at his lips, and the angel of death — named ʿAzra’il only in later tradition — takes the souls. Eight bearers will carry the Throne on the Day; nineteen stand over the Fire under stern Malik; Munkar and Nakir question the dead in the grave; and over every person sit two noble writers, the kiraman katibin, recording.',
                 'Systematic ranking on the Dionysian scale is late and scholastic; the compiler al-Suyuti gathered the angel-traditions in the fifteenth century into al-Haba’ik fi akhbar al-mala’ik, the fullest single shelf of Islamic angelology.',
@@ -158,6 +167,9 @@ export default {
         {
             slug: 'enochian-dee', name: 'The Watchtowers of Dr. Dee',
             era: '1582–1587 CE', tradition: 'Early modern angel magic',
+            image: '8d6b06ff5f256d1a67b0067e833bf0e7.webp',
+            imageAlt: 'Two men in Elizabethan dress at a velvet table with an obsidian sphere between them, easels of angelic diagrams around the dark room',
+            imageCaption: 'The shew-stone between them: Kelley watched, Dee wrote, and the tables came through one letter at a time.',
             exposition: [
                 'In the spring of 1582 John Dee, the most learned man in England, began receiving — through the scryer Edward Kelley — an entire angelic system: a language with its own letters and syntax, four great Watchtowers of the quarters governed by ranked seniors and kings, ninety-one parts of the earth with their governors, and thirty concentric Aethyrs to be entered by the Calls. Dee recorded everything in meticulous diaries, certain he was recovering the tongue Adam spoke and the knowledge Enoch was shown.',
                 'The material lay in manuscript until Casaubon printed a portion in 1659 to discredit it; the Golden Dawn recovered it in the 1880s and built it into the most elaborate practical angelology of the modern West. Whether Kelley channelled, composed, or something stranger is an argument the diaries themselves keep alive.',
