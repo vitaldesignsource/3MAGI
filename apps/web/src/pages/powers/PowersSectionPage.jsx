@@ -66,12 +66,15 @@ function Hierarchies({ data, open, setOpen }) {
                     {e.exposition.map((p, i) => <p key={i}><Rich t={p} /></p>)}
                     {e.ranks?.length > 0 && (
                         <div className="ch-kv"><span>The ranks, highest first</span>
-                            <ol className="pw-ranks">
+                            <ol className="pw-ranks is-ladder">
                                 {e.ranks.map((r, i) => (
-                                    <li key={i}>
-                                        {r.native && <span className="edu-glyph pw-rank-native">{r.native}</span>}
-                                        <strong>{r.name}</strong>
-                                        {r.gloss && <> — <Rich t={r.gloss} /></>}
+                                    <li key={i} style={{ '--rung': i }}>
+                                        <span className="pw-rung-mark" aria-hidden="true" />
+                                        <span className="pw-rung-body">
+                                            {r.native && <span className="edu-glyph pw-rank-native">{r.native}</span>}
+                                            <strong>{r.name}</strong>
+                                            {r.gloss && <> — <Rich t={r.gloss} /></>}
+                                        </span>
                                     </li>
                                 ))}
                             </ol>
@@ -91,6 +94,7 @@ function Host({ data, open, setOpen }) {
         if (!entries.length) return null;
         return (
             <section key={g.key} className="ch-group">
+                <span className="pw-divider" aria-hidden="true" />
                 <header className="edu-section-head">
                     <h2>{g.label}</h2>
                     <p><Rich t={g.blurb} /></p>
@@ -121,6 +125,7 @@ function Pantheons({ data, open, setOpen }) {
         if (!entries.length) return null;
         return (
             <section key={g.key} className="ch-group" id={g.key}>
+                <span className="pw-divider" aria-hidden="true" />
                 <header className="edu-section-head">
                     <h2>{g.label}</h2>
                     <p><Rich t={g.blurb} /></p>

@@ -31,7 +31,7 @@ function PowersPortalPage() {
             </Helmet>
             <SiteHeader />
 
-            <PortalHero grand effect="descend"
+            <PortalHero grand effect="visitation"
                 image="9ab3ebc27f80a115b54e72bf04ef1d27.webp"
                 alt="A vast marble hall of niches holding a winged bronze figure, a veiled seated statue, a gilded many-winged relief and a panel of golden stars, one reader standing before them"
                 kicker="A Three Magi Press Portal"
@@ -55,11 +55,19 @@ function PowersPortalPage() {
                     </header>
                     <div className="edu-hall-grid ch-door-grid">
                         {SECTIONS.map((s) => (
-                            <Link className="edu-hall-card" to={`/powers/${s.slug}`} key={s.slug}>
-                                <span className="ch-door-kicker">{s.kicker}</span>
-                                <h3>{s.title}</h3>
-                                <p className="edu-hall-blurb"><Rich t={s.blurb} /></p>
-                                <span className="edu-hall-enter" aria-hidden="true">Enter →</span>
+                            <Link className={`edu-hall-card pw-door${s.hero ? ' has-art' : ''}`}
+                                to={`/powers/${s.slug}`} key={s.slug}>
+                                {s.hero && (
+                                    <span className="pw-door-art" aria-hidden="true">
+                                        <img src={`/media/${s.hero}`} alt="" loading="lazy" decoding="async" />
+                                    </span>
+                                )}
+                                <span className="pw-door-body">
+                                    <span className="ch-door-kicker">{s.kicker}</span>
+                                    <h3>{s.title}</h3>
+                                    <p className="edu-hall-blurb"><Rich t={s.blurb} /></p>
+                                    <span className="edu-hall-enter" aria-hidden="true">Enter →</span>
+                                </span>
                             </Link>
                         ))}
                     </div>
