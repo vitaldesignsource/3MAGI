@@ -1,18 +1,82 @@
 // christianities/gallery — The Family at Prayer.
 //
-// Twenty rooms of the same house. Each image evokes one way the faith is
+// Thirty-three rooms of the same house, oldest first: a pre-Nicene prologue
+// (the Didache to the desert), then the walk across the living family. Each image evokes one way the faith is
 // actually practised — a rite, a posture, a room — and the captions name the
 // tradition rather than pretending to document a particular day. Order is
 // deliberate: it walks from a kitchen table to the ends of the earth.
 
 export default {
     title: 'The Family at Prayer',
-    kicker: 'Twenty Rooms of One House',
+    kicker: 'Thirty-Three Rooms of One House',
     intro: 'Every door in this portal opens onto argument — councils, canons, '
         + 'anathemas. This is what the argument was about: rooms where people '
         + 'pray, as different from one another as the family itself, and every '
         + 'one of them certain it is doing what was done in the upper room.',
     images: [
+        {
+            file: '9d7ec9b2b4e5d0c35549daf52469b627.webp',
+            title: 'Living Water',
+            caption: '“Baptize in living water,” says the Didache, the church manual set down while the apostles’ pupils still lived — “and if you cannot in cold, then in warm; and if you have neither, pour water on the head three times.” River and pouring bowl, both permissions, at dawn.',
+            alt: 'A man baptized in a river at first light, another pouring water over his head from a bowl, women and men watching from the bank',
+            link: '/christianities/canon',
+        },
+        {
+            file: 'e5053fc69f0835e737982a869be49a91.webp',
+            title: 'The Paschal Vigil',
+            caption: 'Asia Minor kept Pascha on the fourteenth of Nisan, whatever the weekday — as, they said, John himself had taught. When Rome moved to break communion over the difference around 190, Irenaeus talked the bishop down; only Nicaea ruled for Sunday. A courtyard, a lamp, the whole household awake.',
+            alt: 'A family and neighbours gathered at night in a courtyard around a low table, an elder reading by lamplight',
+            link: '/christianities/figures#polycarp',
+        },
+        {
+            file: '78596ff5b2f53470309a6504f91a34b7.webp',
+            title: 'The Catacomb Painter',
+            caption: 'By lamplight under Rome, a painter sets the Good Shepherd between two orants. The catacombs were never hiding places — they were cemeteries — and this is the family’s first art: hope, painted where the dead could read it.',
+            alt: 'A painter on a scaffold in a catacomb chamber painting the Good Shepherd flanked by praying figures, mourners with lamps watching',
+            link: '/christianities/symbols#good-shepherd',
+        },
+        {
+            file: 'b5dd6f7dc534e3b94cfdd403485c85b7.webp',
+            title: 'The Catechetical School',
+            caption: 'Scrolls above the harbour of Alexandria — the school where Pantaenus, Clement and the young Origen taught the faith among the philosophies, and Greek learning was baptized rather than burned.',
+            alt: 'A teacher with a scroll among students holding wax tablets in a room of scroll shelves, a harbour through the window',
+            link: '/christianities/figures#origen',
+        },
+        {
+            file: '3126d013b379e2dbeb5aab40304585b5.webp',
+            title: 'The New Prophecy',
+            caption: 'In Phrygia the Paraclete spoke — through Montanus, and through Prisca and Maximilla, women whose oracles the movement wrote down and kept. Its opponents named it Montanism; Tertullian, the greatest Latin theologian of his generation, ended his life inside it.',
+            alt: 'A woman standing to prophesy in a lamplit stone room, a listening circle seated around her',
+            link: '/christianities/branches#montanists',
+        },
+        {
+            file: '0c8aa8a9c969bb18303da5d287fb42bf.webp',
+            title: 'The Plague Relief',
+            caption: 'When the pestilence emptied Carthage in 251, Cyprian’s people stayed — nursing and burying, their pagan neighbours included, as his deacon Pontius records. Historians still call that pandemic the Plague of Cyprian, after the bishop who organized against it.',
+            alt: 'Christians washing linens, carrying water and supporting the sick in a Carthage courtyard at evening',
+            link: '/christianities/figures#cyprian',
+        },
+        {
+            file: '0157ef068dfa207b7e6e12c60ce4a597.webp',
+            title: 'The Confessors',
+            caption: 'A pinch of incense on the coals, a word to the genius of the emperor, and they could go home — the statuette and the smoking bowl wait on the table. The trial records the churches kept, the acta martyrum, preserve the exact voices of tradespeople and slaves the ancient world otherwise never wrote down.',
+            alt: 'An elderly couple standing calmly before a seated Roman magistrate, an incense burner and small idol on the table between them',
+            link: '/christianities/figures#perpetua-and-felicity',
+        },
+        {
+            file: 'e3da6be6deb0e9ccdc3d0961a20b57a2.webp',
+            title: 'The Highland Baptism',
+            caption: 'Snow-melt baptism in the mountains. Armenia’s own tradition sets its conversion under Gregory the Illuminator in 301 — before Nicaea, before the empire relented; critical historians argue for 314. On either date, the kingdom came first.',
+            alt: 'Men baptized in a cold mountain river by an elder, families watching from a stone shelter, snow peaks above',
+            link: '/christianities/map#etchmiadzin',
+        },
+        {
+            file: '34373bd7e44b854efe72152494a3940d.webp',
+            title: 'The Desert Cell',
+            caption: 'An anchorite plaits rushes at his door while a visitor climbs from the valley — the whole economy of the first monasticism: baskets for bread, silence for everything else. By Antony’s death, says Athanasius, the desert had been made a city.',
+            alt: 'An old hermit weaving a rush mat outside a stone cell in the desert, a traveller approaching across wet ground',
+            link: '/christianities/map#scetis',
+        },
         {
             file: '60844356e0fc7cb0329bb9553c9fa28b.webp',
             title: 'The Base Community',
@@ -151,6 +215,34 @@ export default {
             title: 'The Church of the East',
             caption: 'Bread for a traveller under a carved cross in the high passes — the Church of the East, which rode the Silk Road to China by 635 while Europe’s conversion was still unfinished.',
             alt: 'Monks in a mountain chapel handing bread to a traveller in furs, pack horses waiting in the snow outside',
+            link: '/christianities/branches',
+        },
+        {
+            file: '879769f706b9e050531d5cb361185f15.webp',
+            title: 'The Watchnight',
+            caption: 'Candles and the lovefeast trays — sweet buns and coffee passed along the benches — in the Moravian manner. The renewed Unitas Fratrum kept vigil into the new year at Herrnhut from 1733, and sent missionaries out earlier and farther than almost anyone.',
+            alt: 'A candlelit meetinghouse at night, worshippers on plain benches with trays of buns and mugs, a man carrying a lamp down the aisle',
+            link: '/christianities/branches',
+        },
+        {
+            file: '09bace3359dc2f73eb35e463e536465f.webp',
+            title: 'The Hidden Christians',
+            caption: 'A Maria-Kannon taken from its box by lamplight — the Kakure Kirishitan of Japan, who kept baptism, orasho prayers and disguised images through two and a half centuries of prohibition, with no priest at all.',
+            alt: 'A Japanese family kneeling around a small statue lifted from a wooden chest, a lantern burning on the tatami, rain outside',
+            link: '/christianities/branches',
+        },
+        {
+            file: '4efdc0da35266ec3d5cf961d9380ded6.webp',
+            title: 'The Dawn Prayer',
+            caption: 'Saebyeok gido — the predawn prayer meeting, kept daily in Korean churches since the revival of 1907. The city is still dark; the room is already full.',
+            alt: 'A Korean congregation bowed in prayer in a plain upper-storey chapel before dawn, high-rise lights through the window',
+            link: '/christianities/branches',
+        },
+        {
+            file: '0d44375c8b69eb38b86044b6095ff0eb.webp',
+            title: 'Taizé',
+            caption: 'Brothers in white under the orange sails, pilgrims on the floor, chants that repeat until they pray themselves — the ecumenical community of Taizé, where the divided family sings in one room. A fitting last door.',
+            alt: 'A crowded modern church with hanging orange banners, white-robed brothers kneeling toward candlelit icons, a young woman with closed eyes in the foreground',
             link: '/christianities/branches',
         },
     ],

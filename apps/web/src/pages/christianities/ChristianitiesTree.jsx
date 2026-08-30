@@ -95,7 +95,7 @@ function ChristianitiesTree({ tree }) {
                         const yy = y(n.id);
                         const isActive = n.id === activeId;
                         return (
-                            <g key={n.id} className={`ch-tree-node st-${n.status}${isActive ? ' is-active' : ''}`}
+                            <g key={n.id} id={n.id} className={`ch-tree-node st-${n.status}${isActive ? ' is-active' : ''}`}
                                 role="button" tabIndex={0}
                                 aria-label={`${n.label}, ${n.from} to ${n.to ?? 'today'}`}
                                 aria-pressed={isActive}
