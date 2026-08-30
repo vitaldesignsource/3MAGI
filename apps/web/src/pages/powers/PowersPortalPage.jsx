@@ -7,6 +7,7 @@ import ScriptoriumTimeline from '../../components/ScriptoriumTimeline';
 import ScriptoriumSearch from '../../components/ScriptoriumSearch';
 import { SECTIONS, loadData } from './lib';
 import Rich from '../christianities/rich';
+import PortalHero from '../christianities/PortalHero';
 
 // The Powers — the third portal. Angels, daimons, and the gods: the whole
 // population of the middle and upper air, across the traditions, with the
@@ -30,32 +31,22 @@ function PowersPortalPage() {
             </Helmet>
             <SiteHeader />
 
+            <PortalHero grand
+                image="9ab3ebc27f80a115b54e72bf04ef1d27.webp"
+                alt="A vast marble hall of niches holding a winged bronze figure, a veiled seated statue, a gilded many-winged relief and a panel of golden stars, one reader standing before them"
+                kicker="A Three Magi Press Portal"
+                title="The Powers"
+                intro={[
+                    'Between the One and the world, every tradition found the air full. Sumer wrote a star-sign before its gods’ names; Egypt painted them with the heads of birds; Greece set a whole class of beings — the daimones — between gods and mortals, and Diotima told Socrates that everything that crosses that gap crosses by them. Israel thinned the crowd to messengers and made an art of ranking them; Persia cut the old pantheon in half and made one half devils; the philosophers built ladders; the magicians climbed.',
+                    'This portal maps that population: the hierarchies, the named beings of the host, the families of the gods and their correspondences, the daimonic middle world, the books where all of it is written, and the places where the powers were named, fed, and finally argued over.',
+                ]}
+            >
+                <div className="edu-hero-glyphs pw-hero-glyphs" aria-hidden="true">
+                    <span>𒀭</span><span>𓊹</span><span>Δ</span><span>מ</span><span>神</span><span>ᚦ</span>
+                </div>
+            </PortalHero>
+
             <main className="edu-main">
-                <section className="edu-hero">
-                    <p className="kicker">A Three Magi Press Portal</p>
-                    <h1>The Powers</h1>
-                    <p className="edu-hero-sub">
-                        Between the One and the world, every tradition found the
-                        air full. Sumer wrote a star-sign before its gods’ names;
-                        Egypt painted them with the heads of birds; Greece set a
-                        whole class of beings — the daimones — between gods and
-                        mortals, and Diotima told Socrates that everything that
-                        crosses that gap crosses by them. Israel thinned the crowd
-                        to messengers and made an art of ranking them; Persia cut
-                        the old pantheon in half and made one half devils; the
-                        philosophers built ladders; the magicians climbed.
-                    </p>
-                    <p className="edu-hero-sub">
-                        This portal maps that population: the hierarchies, the
-                        named beings of the host, the families of the gods and
-                        their correspondences, the daimonic middle world, the
-                        books where all of it is written, and the places where
-                        the powers were named, fed, and finally argued over.
-                    </p>
-                    <div className="edu-hero-glyphs" aria-hidden="true">
-                        <span>𒀭</span><span>𓊹</span><span>Δ</span><span>מ</span><span>神</span><span>ᚦ</span>
-                    </div>
-                </section>
 
                 <section className="edu-halls" aria-labelledby="pw-doors-heading">
                     <header className="edu-section-head">

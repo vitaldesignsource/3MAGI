@@ -5,6 +5,7 @@ import SiteHeader from '../../components/SiteHeader';
 import SiteFooter from '../../components/SiteFooter';
 import { SECTION_BY_SLUG, loadData } from './lib';
 import Rich from '../christianities/rich';
+import PortalHero from '../christianities/PortalHero';
 
 // One page, five doors of The Powers: hierarchies, host, pantheons, daimons,
 // texts. The Map has its own page. The chrome, the expandable discipline and
@@ -294,12 +295,10 @@ function PowersSectionPage() {
                 <meta name="description" content={meta.blurb} />
             </Helmet>
             <SiteHeader />
+            <PortalHero image={meta.hero} alt={meta.heroAlt}
+                kickerLink="/powers" kickerLinkLabel="The Powers"
+                kicker={meta.kicker} title={meta.title} intro={data?.intro} />
             <main className="edu-main">
-                <section className="edu-hero">
-                    <p className="kicker"><Link to="/powers">The Powers</Link> · {meta.kicker}</p>
-                    <h1>{meta.title}</h1>
-                    {(data?.intro || []).map((p, i) => <p className="edu-hero-sub" key={i}><Rich t={p} /></p>)}
-                </section>
                 {data && <Renderer data={data} open={open} setOpen={setOpen} />}
                 {extras.correspondences && <Correspondences table={extras.correspondences} />}
                 {extras.words && <PowersWords words={extras.words} />}

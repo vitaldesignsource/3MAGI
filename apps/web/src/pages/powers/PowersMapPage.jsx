@@ -5,6 +5,8 @@ import SiteHeader from '../../components/SiteHeader';
 import SiteFooter from '../../components/SiteFooter';
 import { loadData } from './lib';
 import Rich from '../christianities/rich';
+import PortalHero from '../christianities/PortalHero';
+import { SECTION_BY_SLUG } from './lib';
 
 // The Map of the Powers. Two frames again, but drawn as pure constellation —
 // no coastline this time, because the gods' geography runs from Teotihuacan
@@ -117,12 +119,11 @@ function PowersMapPage() {
                 <meta name="description" content="An interactive map of the cults, oracles, visions and schools of the powers: Uruk to Teotihuacan, Delphi to Ise, Qumran to Mortlake." />
             </Helmet>
             <SiteHeader />
+            <PortalHero image={SECTION_BY_SLUG.map?.hero} alt={SECTION_BY_SLUG.map?.heroAlt}
+                kickerLink="/powers" kickerLinkLabel="The Powers"
+                kicker="Where They Were Named" title="The Map"
+                intro={data.intro ? [data.intro] : []} />
             <main className="edu-main">
-                <section className="edu-hero">
-                    <p className="kicker"><Link to="/powers">The Powers</Link> · Where They Were Named</p>
-                    <h1>The Map</h1>
-                    {data.intro && <p className="edu-hero-sub"><Rich t={data.intro} /></p>}
-                </section>
 
                 <div className="ch-map-controls">
                     <div className="edu-filter-row" role="group" aria-label="Filter by era">

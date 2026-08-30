@@ -11260,6 +11260,25 @@ h3 {
 .edu-hall-banner img { object-position: center 38%; }
 figure.ch-gallery-card { margin: 0; }
 
+/* the grand hero — portal landings. Taller figure, deeper pull, and room
+   for a glyph row to hang in the scrim under the title. */
+.ch-hero.is-grand .ch-hero-figure { aspect-ratio: 16 / 9; max-height: 78vh; }
+.ch-hero.is-grand .ch-hero-figure img { object-position: center 30%; }
+.ch-hero.is-grand .ch-hero-scrim {
+  background:
+    linear-gradient(180deg, rgba(6,5,4,0.66) 0%, rgba(6,5,4,0.12) 34%, rgba(6,5,4,0.55) 68%, rgba(6,5,4,0.97) 100%),
+    radial-gradient(ellipse at 50% 58%, rgba(6,5,4,0) 26%, rgba(6,5,4,0.45) 100%);
+}
+.ch-hero.is-grand .ch-hero-copy { margin-top: clamp(-11rem, -13vw, -5rem); }
+.pw-hero-glyphs { margin-top: 1.6rem; }
+.pw-hero-glyphs span {
+  text-shadow: 0 0 18px rgba(209, 173, 104, 0.35), 0 2px 12px rgba(0,0,0,0.8);
+}
+@media (max-width: 760px) {
+  .edu-page .ch-hero.is-grand .ch-hero-figure { aspect-ratio: 3 / 4; max-height: 64vh; }
+  .edu-page .ch-hero.is-grand .ch-hero-copy { margin-top: -4rem; }
+}
+
 /* the powers — portal-specific touches on the shared ch machinery */
 .pw-head-native { margin-right: 0.5em; font-size: 1.15em; color: #ecd9ae; }
 .pw-rank-native { margin-right: 0.45em; color: #ecd9ae; }
