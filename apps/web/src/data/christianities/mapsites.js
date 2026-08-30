@@ -1,15 +1,1743 @@
-// christianities/mapsites — TEMPORARY seed for visual verification of the
-// projection and coastline; overwritten by the content pipeline.
+// christianities/mapsites — authored and fact-checked by the fabric pipeline
+// (25 corrections applied by the verifier before landing).
 export default {
-    intro: 'Six seed sites while the survey is under way.',
-    sites: [
-        { slug: 'jerusalem', name: 'Jerusalem', modern: null, lat: 31.78, lon: 35.22, categories: ['patriarchate'], from: 30, to: null, blurb: 'Seed.', events: [{ year: 33, title: 'Seed', desc: 'Seed.' }] },
-        { slug: 'rome', name: 'Rome', modern: null, lat: 41.9, lon: 12.5, categories: ['patriarchate'], from: 42, to: null, blurb: 'Seed.', events: [{ year: 64, title: 'Seed', desc: 'Seed.' }] },
-        { slug: 'alexandria', name: 'Alexandria', modern: null, lat: 31.2, lon: 29.92, categories: ['school'], from: 50, to: null, blurb: 'Seed.', events: [{ year: 180, title: 'Seed', desc: 'Seed.' }] },
-        { slug: 'constantinople', name: 'Constantinople', modern: 'Istanbul', lat: 41.01, lon: 28.98, categories: ['patriarchate'], from: 330, to: null, blurb: 'Seed.', events: [{ year: 381, title: 'Seed', desc: 'Seed.' }] },
-        { slug: 'nicaea', name: 'Nicaea', modern: 'İznik', lat: 40.43, lon: 29.72, categories: ['council'], from: 325, to: 787, blurb: 'Seed.', events: [{ year: 325, title: 'Seed', desc: 'Seed.' }] },
-        { slug: 'iona', name: 'Iona', modern: null, lat: 56.33, lon: -6.42, categories: ['monastic', 'mission'], from: 563, to: null, blurb: 'Seed.', events: [{ year: 563, title: 'Seed', desc: 'Seed.' }] },
-        { slug: 'axum', name: 'Axum', modern: 'Aksum', lat: 14.13, lon: 38.72, categories: ['mission'], from: 330, to: null, blurb: 'Seed.', events: [{ year: 340, title: 'Seed', desc: 'Seed.' }] },
-        { slug: 'azusa', name: 'Azusa Street', modern: 'Los Angeles', lat: 34.05, lon: -118.24, categories: ['revival'], from: 1906, to: null, blurb: 'Seed.', events: [{ year: 1906, title: 'Seed', desc: 'Seed.' }] },
-    ],
+    "intro": "Forty-four places, plotted from real coordinates. The map of the year 100 is not the map of 451, and neither is the map of 1906: the Church of the East reached the Chinese capital in 635, two centuries before Ansgar preached at Birka and five before Uppsala had an archbishop of its own; the oldest church building yet identified is a converted house on the Euphrates frontier; and the fastest-spreading Christianity of the last century began in a Los Angeles building that had been serving as a stable. Where a community's memory of its own beginning and the documentary record are different kinds of evidence, both are set down here, and each is named for what it is.",
+    "sites": [
+        {
+            "slug": "jerusalem",
+            "name": "Jerusalem",
+            "modern": null,
+            "lat": 31.78,
+            "lon": 35.22,
+            "categories": [
+                "patriarchate",
+                "council",
+                "martyrdom"
+            ],
+            "from": 30,
+            "to": null,
+            "blurb": "Every Christianity begins here, and no Christianity has ever held it alone. The city keeps Greek Orthodox, Latin, Armenian, Coptic, Syriac and Ethiopian communities under a Status Quo confirmed by Ottoman firman in 1852, by which the lamps and ladders of the Holy Sepulchre may not be moved without common consent.",
+            "events": [
+                {
+                    "year": 30,
+                    "title": "The events the calendar counts from",
+                    "desc": "The crucifixion, and the Pentecost the Acts of the Apostles places in this city fifty days after. The year is not fixed: 30 and 33 are both defensible on the astronomy of Passover, and the sources do not settle it."
+                },
+                {
+                    "year": 62,
+                    "title": "James is killed",
+                    "desc": "Josephus reports that the high priest Ananus had James, the brother of Jesus called the Christ, stoned in the interval between two Roman governors (Antiquities 20.200). He had led the Jerusalem church; after 70 his successors lead it into obscurity."
+                },
+                {
+                    "year": 335,
+                    "title": "The Holy Sepulchre dedicated",
+                    "desc": "Constantine's basilica over the tomb is dedicated on 13 September 335, on ground cleared of Hadrian's temple platform. Pilgrimage becomes an institution, and within fifty years Egeria is describing its liturgy hour by hour for readers at home."
+                },
+                {
+                    "year": 451,
+                    "title": "Jerusalem made a patriarchate",
+                    "desc": "Chalcedon grants Juvenal the three provinces of Palestine, turning a see honoured for its history into a jurisdiction. It is the last of the five patriarchates of the imperial church to be constituted, and the smallest."
+                },
+                {
+                    "year": 1964,
+                    "title": "Two thrones meet",
+                    "desc": "Paul VI and the Ecumenical Patriarch Athenagoras embrace on the Mount of Olives on 5 January 1964 — the first meeting of a pope and a patriarch of Constantinople since the Council of Florence. The excommunications of 1054 were lifted the following year."
+                }
+            ]
+        },
+        {
+            "slug": "antioch",
+            "name": "Antioch",
+            "modern": "Antakya, Turkey",
+            "lat": 36.2,
+            "lon": 36.16,
+            "categories": [
+                "patriarchate",
+                "school",
+                "schism"
+            ],
+            "from": 40,
+            "to": null,
+            "blurb": "The city where the disciples were first called Christians, and where the mission to gentiles was argued out and paid for. Five churches now carry an Antiochene patriarchal title — Greek Orthodox, Syriac Orthodox, Melkite Greek Catholic, Syriac Catholic and Maronite — and not one of them is seated in the modern town.",
+            "events": [
+                {
+                    "year": 40,
+                    "title": "A name given from outside",
+                    "desc": "The Acts of the Apostles records that the disciples were first called Christians at Antioch. It was a coinage of the city, probably not a compliment, and the movement kept it."
+                },
+                {
+                    "year": 107,
+                    "title": "Ignatius goes to Rome in chains",
+                    "desc": "The bishop of Antioch is taken west to die in the arena under Trajan, writing seven letters on the road; the date is usually put between 107 and 110. His letters are the earliest witness to a single bishop presiding over a city church, and contain the first surviving use of the phrase \"the catholic church\"."
+                },
+                {
+                    "year": 341,
+                    "title": "The Dedication Council",
+                    "desc": "Some ninety bishops meet at the dedication of Constantine's Golden Church and issue creeds that avoid the Nicene homoousios without denying it. The fourth century's arguments are mostly conducted in synods like this one, not in the four great councils."
+                },
+                {
+                    "year": 451,
+                    "title": "Chalcedon redraws the map",
+                    "desc": "Antioch keeps its rank but loses Palestine to Jerusalem — and within a lifetime loses most of its Syriac-speaking hinterland to a church that will not receive the council."
+                },
+                {
+                    "year": 518,
+                    "title": "Severus flees to Egypt",
+                    "desc": "Justin I deposes the miaphysite patriarch Severus, who escapes to Egypt in September 518. The line he represents becomes the Syriac Orthodox patriarchate, which has not since shared a communion table with the Greek one; both trace themselves through the same chair."
+                }
+            ]
+        },
+        {
+            "slug": "alexandria",
+            "name": "Alexandria",
+            "modern": null,
+            "lat": 31.2,
+            "lon": 29.92,
+            "categories": [
+                "patriarchate",
+                "school",
+                "schism"
+            ],
+            "from": 43,
+            "to": null,
+            "blurb": "The most learned church of antiquity and the most combative: it gave Christianity the allegorical reading of scripture, the Nicene defence of the Son's full deity, and the christology that broke the imperial church in two. Two patriarchs stand in its succession today, Coptic Orthodox and Greek Orthodox, and both are styled Pope — a title Alexandria was using in the third century.",
+            "events": [
+                {
+                    "year": 43,
+                    "title": "Two accounts of a beginning",
+                    "desc": "The Coptic Orthodox Church holds that Mark the Evangelist brought the faith to Alexandria and was martyred here in 68; its patriarchs are numbered from him, and Eusebius and Jerome place his Egyptian mission in the reign of Claudius. Historians find no contemporary evidence for Alexandrian Christianity before the second century, and say so. The church's memory of Mark is nonetheless the oldest thing it owns."
+                },
+                {
+                    "year": 190,
+                    "title": "The catechetical school",
+                    "desc": "Clement is teaching in the city by about 190 and Origen succeeds him; between them they make Greek philosophy a servant of scripture and allegory a discipline. Origen's Hexapla sets six versions of the Old Testament in parallel columns."
+                },
+                {
+                    "year": 319,
+                    "title": "A presbyter of Baucalis",
+                    "desc": "About this year Arius argues that the Son, however exalted, is a creature of the Father's will and had a beginning. His bishop Alexander condemns him; the empire spends the next sixty years failing to settle it."
+                },
+                {
+                    "year": 451,
+                    "title": "Dioscorus deposed",
+                    "desc": "Chalcedon deposes the patriarch of Alexandria in its third session and defines two natures in Christ; most of Egypt refuses. The Egyptian confession is miaphysite — one incarnate nature of the Word, divine and human without mixture or confusion — and monophysite is the charge its opponents made, which the Coptic Church rejects as a misdescription."
+                },
+                {
+                    "year": 641,
+                    "title": "The Arabs come",
+                    "desc": "Alexandria capitulates under a treaty concluded in November 641. The Coptic patriarch Benjamin, thirteen years in hiding from a Chalcedonian persecution, is invited back to his see. Egypt's Christians remain a majority under Islam for centuries, and are a minority now."
+                }
+            ]
+        },
+        {
+            "slug": "rome",
+            "name": "Rome",
+            "modern": null,
+            "lat": 41.9,
+            "lon": 12.5,
+            "categories": [
+                "patriarchate",
+                "martyrdom",
+                "council"
+            ],
+            "from": 40,
+            "to": null,
+            "blurb": "A church of immigrants and slaves in a capital that killed its leaders, which became the one see in the Latin West to which every other could appeal. Its claim to a primacy of jurisdiction, and not merely of honour, is the single most divisive proposition in Christian history.",
+            "events": [
+                {
+                    "year": 64,
+                    "title": "Nero's gardens",
+                    "desc": "Tacitus reports that after the fire Nero fixed the blame on a group the crowd called Christians, and had them destroyed with refinements of cruelty (Annals 15.44). Roman tradition places the deaths of Peter and Paul in these years."
+                },
+                {
+                    "year": 258,
+                    "title": "Sixtus II in the catacomb",
+                    "desc": "Valerian's second edict orders the execution of bishops and clergy. Sixtus is seized while seated teaching in the cemetery of Callixtus on 6 August 258 and the deacon Lawrence dies four days later; Cyprian, writing from Carthage, reports it within weeks."
+                },
+                {
+                    "year": 800,
+                    "title": "A crown at Christmas",
+                    "desc": "Leo III crowns Charlemagne in St Peter's on Christmas Day 800 and creates an emperor the Greeks did not recognise. Latin and Greek Christendom now stand under separate political skies, and the theological quarrels acquire a frontier."
+                },
+                {
+                    "year": 1870,
+                    "title": "Pastor aeternus",
+                    "desc": "The First Vatican Council defines papal infallibility on 18 July 1870, in the narrow case of a pope teaching ex cathedra on faith and morals. Italian troops enter the city on 20 September and the council never reconvenes: the temporal power ends in the same season the spiritual claim is made absolute."
+                },
+                {
+                    "year": 1962,
+                    "title": "Vatican II opens",
+                    "desc": "Some two and a half thousand bishops meet from 11 October 1962 — the largest gathering of bishops in Christian history. The liturgy is opened to the vernacular, religious liberty affirmed, and other Christians called separated brethren rather than schismatics."
+                }
+            ]
+        },
+        {
+            "slug": "constantinople",
+            "name": "Constantinople",
+            "modern": "Istanbul",
+            "lat": 41.01,
+            "lon": 28.98,
+            "categories": [
+                "patriarchate",
+                "council",
+                "schism"
+            ],
+            "from": 330,
+            "to": null,
+            "blurb": "The New Rome: a city founded to be a Christian capital, which hosted four ecumenical councils and set the shape of Orthodox worship for a thousand years. Its patriarch is still first in honour among the Orthodox, and presides in the city over a flock of a few thousand.",
+            "events": [
+                {
+                    "year": 330,
+                    "title": "A capital dedicated",
+                    "desc": "Constantine consecrates his city on 11 May 330, on the site of Byzantium, and gives it a senate, a Christian court and no pagan founding cult. Its bishop begins as a suffragan of Heraclea and ends as the ranking prelate of the East."
+                },
+                {
+                    "year": 381,
+                    "title": "The creed as it is now said",
+                    "desc": "The council of 381 confirms Nicaea and confesses the Spirit as Lord and giver of life, worshipped and glorified with the Father and the Son. Its third canon gives the see privileges of honour after Rome because the city is the new Rome — the reasoning Rome would never accept."
+                },
+                {
+                    "year": 537,
+                    "title": "Hagia Sophia",
+                    "desc": "Justinian's Great Church is dedicated on 27 December 537, its dome carried on pendentives over an interior the sources describe as lit without a visible source. It is a church for nine hundred years, then a mosque, then a museum, then a mosque again."
+                },
+                {
+                    "year": 1054,
+                    "title": "The bull on the altar",
+                    "desc": "Cardinal Humbert lays a sentence of excommunication on the altar of Hagia Sophia on 16 July 1054 and the patriarch Michael Cerularius answers in kind; both documents are personal rather than general. Historians now date the real separation to the sack of 1204 and the slow hardening after it — but 1054 is the year everyone remembers."
+                },
+                {
+                    "year": 1453,
+                    "title": "The city falls",
+                    "desc": "Mehmed II takes Constantinople on 29 May 1453 and the last liturgy in Hagia Sophia is said that night. The patriarchate survives under Ottoman rule as head of the Rum millet, and is there yet."
+                }
+            ]
+        },
+        {
+            "slug": "ephesus",
+            "name": "Ephesus",
+            "modern": "Selçuk, Turkey",
+            "lat": 37.94,
+            "lon": 27.34,
+            "categories": [
+                "council",
+                "schism"
+            ],
+            "from": 52,
+            "to": 449,
+            "blurb": "A harbour city of the Artemision that became the stage for the two councils on which the christological division turns. It held the Third Ecumenical Council in 431 and, eighteen years later, an assembly whose acts the next council annulled entirely.",
+            "events": [
+                {
+                    "year": 52,
+                    "title": "Paul at Ephesus",
+                    "desc": "Acts places Paul in the city for over two years, lecturing daily in the hall of Tyrannus, and reports a riot of silversmiths whose trade in shrines of Artemis he had damaged. It becomes the base of the Aegean mission."
+                },
+                {
+                    "year": 95,
+                    "title": "The apostle in the tradition",
+                    "desc": "Revelation addresses Ephesus first of the seven churches of Asia. Irenaeus, writing about 180, says the apostle John remained at Ephesus until the times of Trajan (Against Heresies 3.3.4) — the earliest statement of the tradition on which the great basilica here was later built."
+                },
+                {
+                    "year": 431,
+                    "title": "Theotokos",
+                    "desc": "Cyril of Alexandria opens the council on 22 June 431 before the Syrian bishops have arrived; it deposes Nestorius, who had objected to calling Mary Theotokos, God-bearer, without qualification. The Antiochenes hold a rival session and depose Cyril; the emperor has to impose the settlement, which arrives as the Formula of Reunion in 433."
+                },
+                {
+                    "year": 449,
+                    "title": "The second council of Ephesus",
+                    "desc": "Dioscorus presides in August 449, restores Eutyches and deposes Flavian of Constantinople while Leo of Rome's legates are silenced. Leo afterwards called the assembly a den of robbers, the Latrocinium; the name is his polemic and it stuck. Chalcedon annulled the acts two years later."
+                }
+            ]
+        },
+        {
+            "slug": "nicaea",
+            "name": "Nicaea",
+            "modern": "İznik, Turkey",
+            "lat": 40.43,
+            "lon": 29.72,
+            "categories": [
+                "council"
+            ],
+            "from": 325,
+            "to": 787,
+            "blurb": "A lakeside town with an imperial palace, chosen twice for a council because it was convenient to the capital. Between them the two Nicene councils fixed what Christians say about the Son and what they may do with an image.",
+            "events": [
+                {
+                    "year": 325,
+                    "title": "Homoousios",
+                    "desc": "The first ecumenical council opens on 20 May 325 under Constantine and confesses the Son as of one substance with the Father — a non-scriptural word chosen because every scriptural one had proved evadable. Tradition numbers the fathers at 318, after the servants of Abraham; Eusebius, who was there, counted more than 250."
+                },
+                {
+                    "year": 325,
+                    "title": "One date for Easter",
+                    "desc": "The council also settles that Easter be kept on the same Sunday everywhere, reckoned independently of the Jewish calendar; the decision survives not in a canon but in Constantine's circular letter and in Eusebius. The reckoning has never fully converged: most Orthodox churches still compute on the Julian calendar, and the feasts coincide only sometimes."
+                },
+                {
+                    "year": 787,
+                    "title": "The icons restored",
+                    "desc": "The seventh ecumenical council distinguishes the veneration due to images from the worship due to God alone, closing the first iconoclast period of some sixty years. Iconoclasm returned from 815 to 843, and the restoration of 843 is what the Orthodox keep as the Triumph of Orthodoxy. Nicaea II is the last council received in common by Rome and the Orthodox East; the Oriental Orthodox receive three councils and the Assyrian Church of the East two."
+                }
+            ]
+        },
+        {
+            "slug": "chalcedon",
+            "name": "Chalcedon",
+            "modern": "Kadıköy, Istanbul",
+            "lat": 40.99,
+            "lon": 29.03,
+            "categories": [
+                "council",
+                "schism"
+            ],
+            "from": 451,
+            "to": 451,
+            "blurb": "A suburb across the Bosporus from the capital, chosen so that the court could watch. What was defined here in the martyrium of St Euphemia divided the churches of the Christian East permanently, and the division holds.",
+            "events": [
+                {
+                    "year": 451,
+                    "title": "The largest council of antiquity",
+                    "desc": "Some 520 bishops meet from 8 October 451 in the shrine of St Euphemia, under imperial commissioners who kept minutes. The acts are the fullest record surviving of any ancient council, and they are a record of an argument, not of a serene agreement."
+                },
+                {
+                    "year": 451,
+                    "title": "In two natures",
+                    "desc": "The Definition confesses one Christ in two natures, without confusion, without change, without division, without separation — four adverbs that fence a mystery rather than explain it. The churches that would not receive it confess one incarnate nature of the Word: miaphysite, not the monophysite of their opponents' charge, a conflation they reject as a misrepresentation of what they hold."
+                },
+                {
+                    "year": 451,
+                    "title": "Canon 28",
+                    "desc": "The council gives Constantinople privileges equal to Rome's, second in order, because it is the city of emperor and senate. The papal legates protest and Leo refuses to confirm the canon; the argument about why Rome is first begins here in earnest."
+                }
+            ]
+        },
+        {
+            "slug": "carthage",
+            "name": "Carthage",
+            "modern": "Tunis, Tunisia",
+            "lat": 36.85,
+            "lon": 10.32,
+            "categories": [
+                "council",
+                "martyrdom",
+                "schism"
+            ],
+            "from": 180,
+            "to": 698,
+            "blurb": "Latin Christianity's first voice: the theological vocabulary of the Western church was worked out here before Rome used it, and so were its arguments about martyrdom, purity and who may forgive. Its councils fixed a canon of scripture most of Christendom still keeps.",
+            "events": [
+                {
+                    "year": 180,
+                    "title": "The Scillitan martyrs",
+                    "desc": "Twelve Christians from Scilli are tried before the proconsul Vigellius Saturninus on 17 July 180 and beheaded; the record of the hearing is the oldest dated document of Latin Christianity. One of them is carrying, in a satchel, the books and letters of Paul."
+                },
+                {
+                    "year": 203,
+                    "title": "Perpetua's prison book",
+                    "desc": "Vibia Perpetua, a young woman of good family, and Felicity, a slave, die in the amphitheatre on 7 March 203. The Passion that records it contains a first-person prison diary presented as Perpetua's own — if it is hers, the earliest surviving writing by a Christian woman."
+                },
+                {
+                    "year": 258,
+                    "title": "Cyprian beheaded",
+                    "desc": "The bishop of Carthage is executed on 14 September 258 after refusing to sacrifice, having first argued at length with Rome about whether baptism administered by heretics counts. He held that the church's unity rests in the college of bishops, not in one of them."
+                },
+                {
+                    "year": 311,
+                    "title": "The Donatist division",
+                    "desc": "African Christians who had held firm under Diocletian refuse communion with clergy they call traditores — handers-over of the scriptures — and consecrate a bishop of their own. Donatism is the majority church across much of Africa for a century, and the question it raises, whether a sacrament depends on the minister's worthiness, is answered against it and never quite dies. Donatist is the name their opponents used; they called themselves simply the church of the martyrs."
+                },
+                {
+                    "year": 397,
+                    "title": "A canon listed",
+                    "desc": "The council of 397 sets out the books to be read in church: an African list, matching what Augustine argued for and what Rome later confirmed. The shape of the Latin Bible is settled by North African bishops in synod."
+                }
+            ]
+        },
+        {
+            "slug": "hippo-regius",
+            "name": "Hippo Regius",
+            "modern": "Annaba, Algeria",
+            "lat": 36.88,
+            "lon": 7.75,
+            "categories": [
+                "school",
+                "council",
+                "schism"
+            ],
+            "from": 391,
+            "to": 431,
+            "blurb": "A middling port whose bishop for thirty-five years wrote the books that set the Western church's questions about grace, will, time and the two cities. Augustine died in it with the Vandals at the walls.",
+            "events": [
+                {
+                    "year": 391,
+                    "title": "Augustine ordained",
+                    "desc": "A rhetorician from Thagaste, baptised at Milan four years earlier, is seized by the congregation at Hippo and made a presbyter against his intentions. He becomes bishop about 395 and never leaves."
+                },
+                {
+                    "year": 393,
+                    "title": "The books read here",
+                    "desc": "The council of Hippo lists the canonical scriptures; the list is repeated at Carthage in 397 and 419 and becomes the Western canon."
+                },
+                {
+                    "year": 397,
+                    "title": "Confessions",
+                    "desc": "Augustine begins the Confessions, an address to God in the second person that invented a way of writing about a self — and stops in the middle to ask what memory is, and what time is."
+                },
+                {
+                    "year": 426,
+                    "title": "The City of God finished",
+                    "desc": "Begun about 413, after Alaric took Rome, to answer the charge that Christianity had unmanned the empire, the twenty-two books end by setting two cities against each other, made by two loves, and running mixed together until the end."
+                },
+                {
+                    "year": 430,
+                    "title": "Augustine dies",
+                    "desc": "He dies on 28 August 430 in the third month of the Vandal siege, having had the penitential psalms copied out and hung where he could read them from his bed. Possidius, who was there, wrote the life and catalogued the books."
+                }
+            ]
+        },
+        {
+            "slug": "milan",
+            "name": "Milan",
+            "modern": null,
+            "lat": 45.46,
+            "lon": 9.19,
+            "categories": [
+                "council",
+                "school",
+                "schism"
+            ],
+            "from": 313,
+            "to": null,
+            "blurb": "An imperial residence where a provincial governor was made bishop by acclamation and then made emperors do penance. Its liturgy, the Ambrosian rite, is still celebrated in the city — the largest surviving Western rite that is not Roman.",
+            "events": [
+                {
+                    "year": 313,
+                    "title": "The agreement at Milan",
+                    "desc": "Constantine and Licinius meet here in February 313 and settle a policy of toleration and the restitution of confiscated property. What survives is Licinius' letter posted at Nicomedia in June; the Edict of Milan is a modern name for a decision taken in this city and published elsewhere."
+                },
+                {
+                    "year": 355,
+                    "title": "A council under pressure",
+                    "desc": "Constantius II presses the Western bishops assembled at Milan to condemn Athanasius, and exiles those who refuse — Dionysius of Milan, Eusebius of Vercelli, Lucifer of Cagliari. It is the moment at which an emperor's will and a council's judgement are hardest to tell apart."
+                },
+                {
+                    "year": 374,
+                    "title": "A governor acclaimed",
+                    "desc": "Ambrose goes to keep order at a disputed episcopal election and is elected himself, still unbaptised. He is baptised, ordained and consecrated within the week, gives his property away, and learns his theology in public."
+                },
+                {
+                    "year": 387,
+                    "title": "Augustine baptised",
+                    "desc": "Ambrose baptises Augustine at the Easter vigil of 387, together with Alypius and Augustine's son Adeodatus. Augustine credits Ambrose's preaching — specifically his figurative reading of the Old Testament — with removing the obstacle."
+                },
+                {
+                    "year": 390,
+                    "title": "An emperor kept from communion",
+                    "desc": "After Theodosius' soldiers massacre a crowd at Thessalonica, Ambrose writes privately that he cannot offer the sacrifice in his presence, and the emperor does public penance. It is the founding precedent for a bishop's authority over a Christian ruler, and later ages made a great deal more of it than the letters do."
+                }
+            ]
+        },
+        {
+            "slug": "lyon",
+            "name": "Lyon",
+            "modern": null,
+            "lat": 45.76,
+            "lon": 4.84,
+            "categories": [
+                "martyrdom",
+                "school",
+                "council"
+            ],
+            "from": 177,
+            "to": 1274,
+            "blurb": "Gaul's first church is known from a letter its survivors wrote about watching their friends die, and its second bishop wrote the book that taught Christianity how to argue with heresy. Eleven centuries later two councils met here — and a merchant of the city began a movement that outlived them both.",
+            "events": [
+                {
+                    "year": 177,
+                    "title": "Blandina",
+                    "desc": "The churches of Lyon and Vienne write to Asia describing a pogrom: the aged bishop Pothinus dead in prison, a slave woman named Blandina outlasting her torturers in the amphitheatre. Eusebius preserves the letter (Church History 5.1); it is the earliest full narrative of a Western persecution."
+                },
+                {
+                    "year": 180,
+                    "title": "Against the heresies",
+                    "desc": "Irenaeus, bishop after Pothinus, writes his refutation of the gnostic teachers about 180. Because he quotes them at length in order to refute them, he was for seventeen centuries the main source for the systems he set out to destroy — until Nag Hammadi produced their own books."
+                },
+                {
+                    "year": 1173,
+                    "title": "The Poor of Lyon",
+                    "desc": "Valdes, a rich merchant, gives away his goods, commissions vernacular translations of scripture and begins to preach. Forbidden to preach unlicensed and excommunicated in 1184, the Waldensians go underground for three centuries, join the Reformation at Chanforan in 1532, and have congregations in the Italian valleys still."
+                },
+                {
+                    "year": 1245,
+                    "title": "An emperor deposed",
+                    "desc": "The first council of Lyon declares Frederick II deposed and calls a crusade against him. The papacy's political weapons are at full stretch here, and their limits become visible within a generation."
+                },
+                {
+                    "year": 1274,
+                    "title": "A reunion that did not take",
+                    "desc": "The second council of Lyon agrees a union with the Greeks, whose emperor needed Western allies more than his clergy could stomach Latin terms; Constantinople repudiated it within a decade. Thomas Aquinas died on the road to the council and Bonaventure during it."
+                }
+            ]
+        },
+        {
+            "slug": "edessa",
+            "name": "Edessa",
+            "modern": "Şanlıurfa, Turkey",
+            "lat": 37.16,
+            "lon": 38.79,
+            "categories": [
+                "school",
+                "translation",
+                "mission"
+            ],
+            "from": 150,
+            "to": 489,
+            "blurb": "Syriac Christianity's first capital, and the city where the faith first became at home in a Semitic language rather than in Greek. Its own tradition holds that its king wrote to Jesus and received a reply — a correspondence Eusebius reproduced from the city archive and which historians read as a local legend of great antiquity.",
+            "events": [
+                {
+                    "year": 201,
+                    "title": "A church in the flood",
+                    "desc": "The Chronicle of Edessa records that a flood in November 201 destroyed the temple of the church of the Christians — the earliest datable mention of a church building anywhere, though the chronicle recording it was compiled three centuries afterwards."
+                },
+                {
+                    "year": 363,
+                    "title": "Ephrem comes west",
+                    "desc": "When Jovian surrenders Nisibis to Persia, Ephrem the Syrian withdraws to Edessa and spends his last decade writing hymns for choirs of women to sing. He argued theology in metre because he doubted the mystery would survive being argued in syllogisms."
+                },
+                {
+                    "year": 411,
+                    "title": "The Peshitta settles",
+                    "desc": "Rabbula becomes bishop about this time and presses the four separated gospels of the Peshitta on his churches in place of Tatian's harmony; a Syriac Bible text becomes standard from Antioch to China. The oldest dated Syriac manuscript in existence was copied at Edessa in 411, and is now in London."
+                },
+                {
+                    "year": 489,
+                    "title": "The school crosses the border",
+                    "desc": "The emperor Zeno closes the School of the Persians for its dyophysite teaching; its masters move east to Nisibis, under Persian rule, and take East Syriac theology with them. A political frontier becomes a doctrinal boundary."
+                }
+            ]
+        },
+        {
+            "slug": "nisibis",
+            "name": "Nisibis",
+            "modern": "Nusaybin, Turkey",
+            "lat": 37.07,
+            "lon": 41.22,
+            "categories": [
+                "school",
+                "translation"
+            ],
+            "from": 325,
+            "to": 700,
+            "blurb": "The great school of the Church of the East, on the Persian side of the Roman frontier, where scripture was taught by a fixed curriculum under written statutes centuries before Europe had a university. Its graduates staffed a church that reached from Arabia to the Chinese capital.",
+            "events": [
+                {
+                    "year": 325,
+                    "title": "A bishop at Nicaea",
+                    "desc": "Jacob of Nisibis subscribes the Nicene creed. The city is Roman, Christian, and the eastern hinge of the empire's frontier."
+                },
+                {
+                    "year": 363,
+                    "title": "Handed over",
+                    "desc": "Jovian cedes Nisibis to Shapur II to extricate a defeated army, and the Christian population is permitted to leave. Ephrem, who had taught here, goes to Edessa and writes about the surrender with undisguised fury."
+                },
+                {
+                    "year": 489,
+                    "title": "The school refounded",
+                    "desc": "Narsai, expelled from Edessa, and Barsauma, the bishop, establish the school at Nisibis. It teaches the Antiochene exegesis of Theodore of Mopsuestia to generations of clergy who will carry it east."
+                },
+                {
+                    "year": 496,
+                    "title": "Statutes",
+                    "desc": "The canons of 496, revised in 590, regulate a three-year course, the copying of books, the conduct of students and the pay of the teachers — the earliest surviving statutes of an institution of higher learning in the Christian world."
+                }
+            ]
+        },
+        {
+            "slug": "seleucia-ctesiphon",
+            "name": "Seleucia-Ctesiphon",
+            "modern": "Salman Pak, Iraq",
+            "lat": 33.09,
+            "lon": 44.58,
+            "categories": [
+                "patriarchate",
+                "council",
+                "mission"
+            ],
+            "from": 280,
+            "to": 775,
+            "blurb": "The seat of the Catholicos of the Church of the East, in the twin capital of the Persian empire: a Christianity that grew up outside Rome, under shahs rather than emperors, and had to prove its loyalty in every war. Nestorian, the name fastened on it by its Greek opponents, is an exonym the Assyrian Church of the East rejects; it calls itself the Church of the East.",
+            "events": [
+                {
+                    "year": 341,
+                    "title": "The Great Persecution begins",
+                    "desc": "Shapur II doubles the tax on Christians as suspected partisans of Rome; the catholicos Simeon bar Sabbaʿe refuses to collect it and is executed with a great number of clergy — in 341 or, on the other reckoning of the Syriac sources, 344. Forty years of killing follow, recorded in the acts of the Persian martyrs."
+                },
+                {
+                    "year": 410,
+                    "title": "A church ordered",
+                    "desc": "Under Yazdegerd I the Synod of Isaac receives the Nicene creed, imposes a metropolitan structure on the empire's dioceses, and makes the bishop of Seleucia-Ctesiphon head of the church of Persia — with the shah's consent, since a church that could be governed could also be negotiated with."
+                },
+                {
+                    "year": 424,
+                    "title": "Answerable to no one abroad",
+                    "desc": "The Synod of Dadishoʿ declares that the bishops of the East will refer no case to any bishop or synod of the Roman empire. It is an assertion of autonomy across a hostile frontier, not a doctrinal rupture — though later Greek writers read it as one."
+                },
+                {
+                    "year": 486,
+                    "title": "A christology of its own",
+                    "desc": "The synod under Acacius affirms the Antiochene teaching of two natures and two qnome in the one person of Christ, and permits the clergy to marry. This is the position for which outsiders named the church after Nestorius; it holds the name misdescribes what it teaches, and does not use it."
+                },
+                {
+                    "year": 775,
+                    "title": "The see moves to Baghdad",
+                    "desc": "The catholicos transfers to the new Abbasid capital. Under Timothy I (780–823) the church runs missions to the Turks, to Tibet, to India and to China from a house in the caliph's city; by geographical extent it is then the widest-spread church in the world."
+                }
+            ]
+        },
+        {
+            "slug": "dura-europos",
+            "name": "Dura-Europos",
+            "modern": "Salhiyé, Syria",
+            "lat": 34.75,
+            "lon": 40.73,
+            "categories": [
+                "translation",
+                "mission"
+            ],
+            "from": 233,
+            "to": 256,
+            "blurb": "A Roman garrison town on the Euphrates where an ordinary courtyard house was converted into the oldest Christian church building yet identified, with a painted baptistery. Its walls were buried under a siege rampart in 256, which is the only reason they survive.",
+            "events": [
+                {
+                    "year": 233,
+                    "title": "A house made a church",
+                    "desc": "A house near the western wall is remodelled: two rooms thrown into one to seat perhaps sixty, and a small chamber fitted with a font under a painted canopy. A graffito in the building gives a date equivalent to 232 or 233, and the conversion is usually placed in the two decades that follow. The paintings — the Good Shepherd, the healing of the paralytic, the women at the tomb — are the earliest known paintings from a Christian church building; the Roman catacombs hold work of comparable age."
+                },
+                {
+                    "year": 244,
+                    "title": "Neighbours",
+                    "desc": "Two streets away the synagogue is rebuilt and covered with narrative paintings, its dedication dated to 244 — a Jewish figural cycle that overturned assumptions about the second commandment. A Mithraeum stood nearby. Three houses of prayer within a few minutes' walk, in a frontier town of a few thousand people."
+                },
+                {
+                    "year": 256,
+                    "title": "Buried by a siege",
+                    "desc": "The Sasanians take the city about 256 and it is never reoccupied. The defenders had already packed the buildings along the wall with earth, sealing church and synagogue together. From the same embankment, in 1933, came the only surviving Greek fragment of Tatian's gospel harmony, the Diatessaron."
+                }
+            ]
+        },
+        {
+            "slug": "nag-hammadi",
+            "name": "Nag Hammadi",
+            "modern": null,
+            "lat": 26.05,
+            "lon": 32.25,
+            "categories": [
+                "school",
+                "translation",
+                "monastic"
+            ],
+            "from": 348,
+            "to": null,
+            "blurb": "Thirteen leather-bound papyrus codices, found in a sealed jar at the foot of a cliff in 1945, restored to the second and third centuries a whole library previously known only through the quotations of the men who refuted it. The texts are Coptic translations of Greek originals, and they include the Gospel of Thomas.",
+            "events": [
+                {
+                    "year": 348,
+                    "title": "Dated waste",
+                    "desc": "The covers were stiffened with scrap papyrus — receipts, letters and accounts, some dated to 341, 346 and 348 — which fixes the binding to the middle of the fourth century, though the Greek behind the texts is far older."
+                },
+                {
+                    "year": 367,
+                    "title": "A canon, and an inference",
+                    "desc": "Athanasius' thirty-ninth festal letter lists the twenty-seven books of the New Testament — the earliest surviving list matching the present one — and orders apocrypha put away. The proximity of date has long suggested that monks nearby buried what they had been told to destroy. The suggestion is attractive and remains unproven."
+                },
+                {
+                    "year": 1945,
+                    "title": "The jar",
+                    "desc": "Men digging for fertiliser at the Jabal al-Tarif open a sealed jar in December 1945. What happened next — a blood feud, pages burned as fuel, a codex bought in Zurich and presented to Carl Jung — is known chiefly from interviews conducted decades later, and parts of it are now disputed."
+                }
+            ]
+        },
+        {
+            "slug": "oxyrhynchus",
+            "name": "Oxyrhynchus",
+            "modern": "al-Bahnasa, Egypt",
+            "lat": 28.53,
+            "lon": 30.65,
+            "categories": [
+                "school",
+                "translation",
+                "monastic"
+            ],
+            "from": 200,
+            "to": null,
+            "blurb": "A provincial town whose rubbish mounds preserved half a million papyrus fragments in the dry sand, among them the oldest copies of much of the New Testament and sayings of Jesus nobody had read for seventeen centuries. More early Christian manuscripts have come from this one site than from anywhere else on earth.",
+            "events": [
+                {
+                    "year": 200,
+                    "title": "Sayings of Jesus",
+                    "desc": "A codex leaf copied about 200, catalogued as the first Oxyrhynchus papyrus, carries sayings introduced by the formula \"Jesus says\". Only after 1945 could they be matched to the Coptic Gospel of Thomas from Nag Hammadi; the Greek is a century and a half older."
+                },
+                {
+                    "year": 395,
+                    "title": "A city of monks",
+                    "desc": "The Historia Monachorum, describing a journey of 394 and 395, reports Oxyrhynchus given over to monasticism, with monks in the public buildings and at the gates. Its figures — five thousand monks, twenty thousand virgins — are the text's own, and are usually read as devotional rather than statistical."
+                },
+                {
+                    "year": 1897,
+                    "title": "The mounds opened",
+                    "desc": "Bernard Grenfell and Arthur Hunt begin digging the rubbish heaps in the winter of 1896–97 and turn up Christian scripture in the first week. Publication is not finished; volumes are still appearing."
+                }
+            ]
+        },
+        {
+            "slug": "scetis",
+            "name": "Scetis",
+            "modern": "Wadi El Natrun, Egypt",
+            "lat": 30.33,
+            "lon": 30.35,
+            "categories": [
+                "monastic"
+            ],
+            "from": 330,
+            "to": null,
+            "blurb": "The salt valley where Christian monasticism took the form the whole tradition inherited — neither pure solitude nor full community, but elders with disciples, and a body of remembered sayings. Four of its monasteries have been kept in use, through repeated sackings, for some sixteen centuries.",
+            "events": [
+                {
+                    "year": 330,
+                    "title": "Macarius goes into the desert",
+                    "desc": "Macarius the Egyptian settles in the valley and a colony of cells gathers round him. From Scetis and its neighbours comes the collection known as the Apophthegmata Patrum, the Sayings of the Desert Fathers — the shortest and hardest of Christian books."
+                },
+                {
+                    "year": 407,
+                    "title": "Raided",
+                    "desc": "Desert raiders sack Scetis, and again in 434 and 444; the monks scatter and return. Destruction and reoccupation is the normal history of these houses rather than an interruption of it."
+                },
+                {
+                    "year": 800,
+                    "title": "The Syrians",
+                    "desc": "About the turn of the ninth century a community of Syrians from Tikrit acquires one of the houses. Deir al-Surian, the Monastery of the Syrians, keeps the name and builds a library that will preserve texts lost everywhere else."
+                },
+                {
+                    "year": 1842,
+                    "title": "The library leaves",
+                    "desc": "Henry Tattam buys manuscripts from Deir al-Surian for the British Museum, in a series of acquisitions through the 1830s and 1840s. Among the volumes that reached London by this route are the Curetonian gospels and a codex copied at Edessa in 411 — the oldest dated Syriac manuscript in existence."
+                },
+                {
+                    "year": 1969,
+                    "title": "Twelve monks return",
+                    "desc": "Matta el-Meskeen and twelve companions come to the half-empty Monastery of St Macarius and rebuild it. Coptic monasticism, written off as antiquarian, fills again with graduates; the Coptic patriarch is still chosen from among monks."
+                }
+            ]
+        },
+        {
+            "slug": "sinai",
+            "name": "Mount Sinai",
+            "modern": "St Catherine's Monastery, Egypt",
+            "lat": 28.56,
+            "lon": 33.98,
+            "categories": [
+                "monastic",
+                "translation"
+            ],
+            "from": 330,
+            "to": null,
+            "blurb": "The oldest continuously inhabited Christian monastery: a Justinianic fortress built round a chapel at the place identified with the burning bush. Its library holds more early codices than any collection but the Vatican's, and its encaustic icons survived the iconoclasts because the mountain lay outside the empire.",
+            "events": [
+                {
+                    "year": 330,
+                    "title": "A chapel at the bush",
+                    "desc": "A chapel is built at the site identified with the burning bush; the tradition credits Helena, mother of Constantine. Egeria, visiting about 383, found monks already living there and a liturgy already in place."
+                },
+                {
+                    "year": 548,
+                    "title": "Justinian's walls",
+                    "desc": "Justinian encloses the site with granite walls and builds the basilica. The roof beams carry inscriptions naming the emperor and Theodora, and it is by the way she is named that the work is dated to the years around her death in 548."
+                },
+                {
+                    "year": 623,
+                    "title": "A document of protection",
+                    "desc": "The monastery keeps a firman it holds to be Muhammad's own grant of protection, dating it by its own reckoning to the second year of the Hijra; the copy it possesses is later, and historians treat the ascription as unproven. Whatever its origin, the house was never destroyed under Islamic rule, which is itself unusual enough to require explaining."
+                },
+                {
+                    "year": 1844,
+                    "title": "Codex Sinaiticus",
+                    "desc": "Constantin von Tischendorf removes leaves of a fourth-century Greek Bible in 1844 and the remainder in 1859. Whether they were given, lent or taken is disputed between the monastery and the libraries that hold them; the codex is now divided between London, Leipzig, St Petersburg and Sinai."
+                },
+                {
+                    "year": 1975,
+                    "title": "The new finds",
+                    "desc": "A collapsed room is opened in 1975 and yields more than a thousand further manuscripts and fragments — including leaves of Sinaiticus that had never left the mountain."
+                }
+            ]
+        },
+        {
+            "slug": "athos",
+            "name": "Mount Athos",
+            "modern": "Agion Oros, Greece",
+            "lat": 40.16,
+            "lon": 24.33,
+            "categories": [
+                "monastic"
+            ],
+            "from": 883,
+            "to": null,
+            "blurb": "A self-governing monastic peninsula of twenty ruling monasteries, where the Byzantine liturgical day and the Julian calendar have never been interrupted. The avaton, the rule excluding women, is attested in imperial documents from the eleventh century and is held on the mountain to be older; it still stands in Greek and European law.",
+            "events": [
+                {
+                    "year": 883,
+                    "title": "The first charter",
+                    "desc": "A sigillion of Basil I, drawn up in June 883, protects the hermits already living on the mountain from the shepherds of the neighbouring district. It is the oldest document Athos possesses, and it predates any monastery there."
+                },
+                {
+                    "year": 963,
+                    "title": "The Great Lavra",
+                    "desc": "Athanasius the Athonite founds the first communal monastery, funded by his friend the emperor Nikephoros II Phokas. The hermits objected that organised community life would ruin the mountain; the argument has been running ever since."
+                },
+                {
+                    "year": 972,
+                    "title": "The Tragos",
+                    "desc": "John I Tzimiskes signs a typikon written on goatskin — the Tragos — regulating the relations of hermits and communities and confirming the mountain's self-government. The original is still kept at Karyes."
+                },
+                {
+                    "year": 1340,
+                    "title": "The prayer of the heart",
+                    "desc": "The Athonite fathers issue the Hagioritic Tome in defence of Gregory Palamas, of the hesychast practice of unceasing prayer, and of his distinction between God's unknowable essence and his uncreated energies. Councils at Constantinople in 1341, 1347 and 1351 uphold him; the distinction is now standard Orthodox theology, and one of the things Latin theology has never accepted."
+                },
+                {
+                    "year": 1971,
+                    "title": "The low point",
+                    "desc": "The census counts fewer than 1,200 monks, the lowest recorded, and the mountain is widely written off as a museum. Numbers have risen since, with a marked change in the age and education of those arriving."
+                }
+            ]
+        },
+        {
+            "slug": "axum",
+            "name": "Axum",
+            "modern": "Aksum, Ethiopia",
+            "lat": 14.13,
+            "lon": 38.72,
+            "categories": [
+                "mission",
+                "translation",
+                "patriarchate"
+            ],
+            "from": 330,
+            "to": null,
+            "blurb": "The capital of a trading empire that became Christian in the fourth century by the conversion of its king, and has been Christian since — one of the few ancient churches never planted by a European mission. Its cathedral of Our Lady Mary of Zion is held by Ethiopian Christians to house the Ark of the Covenant.",
+            "events": [
+                {
+                    "year": 330,
+                    "title": "Frumentius",
+                    "desc": "Rufinus tells how two boys from Tyre survived a massacre on the Red Sea coast and were raised at the Axumite court; how one of them, Frumentius, went to Athanasius of Alexandria to ask for a bishop, and was made one himself (Church History 10.9). Ethiopians call him Abba Salama, father of peace."
+                },
+                {
+                    "year": 340,
+                    "title": "A king's coins",
+                    "desc": "Ezana's coinage exchanges the disc and crescent of the old cult for the cross, and his inscriptions stop invoking Mahrem and begin invoking the Lord of Heaven. It is a conversion legible in the currency, which is rare."
+                },
+                {
+                    "year": 480,
+                    "title": "The Nine Saints",
+                    "desc": "Nine monks remembered as coming from the Roman east — and generally thought to have been miaphysites unwelcome there after Chalcedon — found monasteries and begin translating the scriptures into Geʿez. The Ethiopian Bible that results has the widest canon in Christendom, including Enoch and Jubilees."
+                },
+                {
+                    "year": 1320,
+                    "title": "The Kebra Nagast",
+                    "desc": "The Glory of Kings, compiled in Geʿez about this time, tells how Menelik, son of Solomon and the Queen of Sheba, brought the Ark from Jerusalem to Axum. The church holds that the Ark is here, in a chapel beside the cathedral, seen by no one but its single guardian monk; historians read the book as the founding epic of the Solomonic dynasty."
+                },
+                {
+                    "year": 1959,
+                    "title": "Its own patriarch",
+                    "desc": "After sixteen centuries in which the Abuna was an Egyptian monk sent from Alexandria, the Ethiopian Orthodox Tewahedo Church becomes autocephalous and Basilios is made its first patriarch. Tewahedo means made one — the church's own word for its christology."
+                }
+            ]
+        },
+        {
+            "slug": "lalibela",
+            "name": "Lalibela",
+            "modern": null,
+            "lat": 12.03,
+            "lon": 39.04,
+            "categories": [
+                "monastic"
+            ],
+            "from": 1181,
+            "to": null,
+            "blurb": "Eleven churches cut downward out of the living rock of a highland town, linked by trenches and tunnels, and in continuous liturgical use since they were made. Ethiopian tradition holds that they were built as a second Jerusalem when the first was closed to pilgrims.",
+            "events": [
+                {
+                    "year": 1187,
+                    "title": "Jerusalem taken",
+                    "desc": "Saladin's capture of Jerusalem cuts the Ethiopian pilgrimage. The tradition holds that King Gebre Mesqel Lalibela answered by building a Jerusalem at home, with its own Golgotha, its own tomb of Adam, and a watercourse named the Jordan."
+                },
+                {
+                    "year": 1200,
+                    "title": "Cut from the rock",
+                    "desc": "The churches are excavated downward from the surface, roof first, and finished from the inside; Bete Medhane Alem is the largest rock-hewn church in the world. The tradition says angels worked the night shift. Archaeology suggests several phases of cutting, some of it earlier than the king's reign."
+                },
+                {
+                    "year": 1221,
+                    "title": "The king dies",
+                    "desc": "Gebre Mesqel Lalibela is remembered as a saint of the Ethiopian church, and the town takes his name."
+                },
+                {
+                    "year": 1520,
+                    "title": "A European sees them",
+                    "desc": "Francisco Álvares, chaplain to a Portuguese embassy, becomes the first outsider to describe the churches, and writes that he expects not to be believed. His account was doubted for centuries."
+                },
+                {
+                    "year": 1978,
+                    "title": "Not a ruin",
+                    "desc": "The churches enter the World Heritage list. They are working parish churches, and at Genna, Ethiopian Christmas on 7 January, tens of thousands of pilgrims fill the trenches around them."
+                }
+            ]
+        },
+        {
+            "slug": "etchmiadzin",
+            "name": "Etchmiadzin",
+            "modern": "Vagharshapat, Armenia",
+            "lat": 40.16,
+            "lon": 44.29,
+            "categories": [
+                "patriarchate",
+                "mission",
+                "translation"
+            ],
+            "from": 301,
+            "to": null,
+            "blurb": "The mother see of the Armenian Apostolic Church, on the spot where Gregory the Illuminator is said to have seen Christ descend and strike the earth — Etchmiadzin means the Only-Begotten descended. Armenians hold theirs to be the first Christian state, and the church has outlasted every state Armenians have had.",
+            "events": [
+                {
+                    "year": 301,
+                    "title": "A kingdom converted",
+                    "desc": "The Armenian church dates the conversion of King Trdat by Gregory the Illuminator to 301 and claims the first establishment of Christianity by a state. Many historians prefer a date nearer 314, after Constantine's own turn. Both the tradition and the argument are old."
+                },
+                {
+                    "year": 303,
+                    "title": "The cathedral founded",
+                    "desc": "The cathedral is begun where Gregory's vision placed it. Rebuilt many times over, it is among the oldest cathedrals in the world by foundation."
+                },
+                {
+                    "year": 405,
+                    "title": "An alphabet for a Bible",
+                    "desc": "Mesrop Mashtots devises the thirty-six letters of the Armenian alphabet in order to translate the scriptures; the version made from it has been praised for centuries as the queen of translations. A liturgical language and a national literature begin in the same decade."
+                },
+                {
+                    "year": 451,
+                    "title": "Two battles in one year",
+                    "desc": "Armenian nobles fight the Sasanian army at Avarayr rather than accept Zoroastrianism — in the same year the Council of Chalcedon meets without a single Armenian bishop present. Armenia rejected the council's formula as dividing Christ, and has been out of communion with Constantinople and Rome ever since."
+                },
+                {
+                    "year": 1441,
+                    "title": "The see comes home",
+                    "desc": "The catholicosate returns to Etchmiadzin, which it had left in the fifth century for Dvin and later for Sis in Cilicia — nearly a thousand years away, the last century and a half of it at Sis. A second catholicosate remained at Sis and is now at Antelias in Lebanon; the two are in communion."
+                }
+            ]
+        },
+        {
+            "slug": "mtskheta",
+            "name": "Mtskheta",
+            "modern": null,
+            "lat": 41.84,
+            "lon": 44.72,
+            "categories": [
+                "patriarchate",
+                "mission",
+                "translation"
+            ],
+            "from": 326,
+            "to": null,
+            "blurb": "The old capital of Kartli and the seat of the Georgian church, converted in the fourth century through the preaching of a captive woman. Its cathedral, Svetitskhoveli — the Living Pillar — is where Georgian kings were crowned and buried.",
+            "events": [
+                {
+                    "year": 326,
+                    "title": "A captive woman",
+                    "desc": "Rufinus, writing about 402, says he had the story from the Georgian prince Bacurius: a Christian captive whose prayers healed the queen, and then a king lost in darkness on a hunt, brought Iberia to the faith (Church History 10.11). He does not give her name; Georgian tradition calls her Nino and honours her as equal to the apostles."
+                },
+                {
+                    "year": 605,
+                    "title": "The cross on the hill",
+                    "desc": "The church of Jvari is completed above the meeting of the rivers, over the site where Nino is said to have raised a wooden cross. Its tetraconch plan was copied across the Caucasus."
+                },
+                {
+                    "year": 1029,
+                    "title": "Svetitskhoveli in stone",
+                    "desc": "The cathedral is rebuilt by the architect Arsukisdze under Catholicos Melkisedek. Georgians hold that beneath it lies the robe of Christ, brought from Jerusalem by a Jew of Mtskheta who was present at the crucifixion, and that the cedar which grew over his sister's grave became the pillar that gives the church its name."
+                },
+                {
+                    "year": 1811,
+                    "title": "The catholicosate abolished",
+                    "desc": "Russia annexes Georgia and the Holy Synod suppresses the Georgian catholicosate, replacing it with an exarchate and, in time, Georgian in the services with Slavonic."
+                },
+                {
+                    "year": 1917,
+                    "title": "Restored",
+                    "desc": "Georgian clergy declare the autocephaly of their church in March 1917, weeks after the fall of the tsar. Moscow recognised it in 1943, and Constantinople in 1990."
+                }
+            ]
+        },
+        {
+            "slug": "kodungallur",
+            "name": "Kodungallur",
+            "modern": "Kerala, India",
+            "lat": 10.23,
+            "lon": 76.19,
+            "categories": [
+                "mission",
+                "schism"
+            ],
+            "from": 52,
+            "to": null,
+            "blurb": "The coast where the Saint Thomas Christians say the apostle came ashore, and where a Syriac-rite Christianity older than any European mission in Asia has been continuously present. What the community remembers and what the documents record are different kinds of evidence, and both are set down here.",
+            "events": [
+                {
+                    "year": 52,
+                    "title": "The tradition",
+                    "desc": "The Saint Thomas Christians hold that Thomas the Apostle landed at Muziris in the year 52, founded seven and a half churches along this coast, and died at Mylapore in 72. No source of the first three centuries records the voyage; the Acts of Thomas, a Syriac romance of about 200, does send him to India, and what ancient writers meant by India was elastic. The community's memory of it is ancient, continuous, and central to who they understand themselves to be. This entry marks the tradition where the community places it, and marks it as tradition."
+                },
+                {
+                    "year": 180,
+                    "title": "Christians in the record",
+                    "desc": "Eusebius reports that Pantaenus of Alexandria was sent to India and found Christians there with a Hebrew Matthew left by the apostle Bartholomew (Church History 5.10). Cosmas Indicopleustes, writing about 550, describes a bishop and a church of Persian Christians on the Malabar coast — the earliest outside witness that plainly means this coast."
+                },
+                {
+                    "year": 849,
+                    "title": "Copper plates",
+                    "desc": "A grant on copper, made in the fifth regnal year of Sthanu Ravi and dated to about 849, confers land and privileges on a church at Kollam down the coast. The witnesses signed in Kufic Arabic, in Pahlavi and in Judaeo-Persian: the oldest surviving Indian document of this Christianity, and a portrait of a plural port."
+                },
+                {
+                    "year": 1599,
+                    "title": "The Synod of Diamper",
+                    "desc": "Aleixo de Menezes, Archbishop of Goa, presides over a synod at Udayamperoor from 20 to 26 June 1599 which subjects the Malabar church to Rome and to Goa, revises its liturgy, and orders Syriac books corrected or burnt. A church that had been in communion with Seleucia-Ctesiphon is annexed to a Latin province."
+                },
+                {
+                    "year": 1653,
+                    "title": "The Coonan Cross Oath",
+                    "desc": "On 3 January 1653 several thousand Saint Thomas Christians gather at a stone cross at Mattancherry and swear never again to submit to the Portuguese prelates. From the division that followed descend the Syro-Malabar, Malankara Orthodox, Jacobite Syrian, Mar Thoma and Syro-Malankara churches — all of them claiming the same apostle."
+                }
+            ]
+        },
+        {
+            "slug": "xian",
+            "name": "Xi'an",
+            "modern": "China",
+            "lat": 34.34,
+            "lon": 108.94,
+            "categories": [
+                "mission",
+                "translation"
+            ],
+            "from": 635,
+            "to": 845,
+            "blurb": "Christianity reached the Tang capital of Chang'an in 635, two centuries before it reached Scandinavia, and was granted an imperial monastery. The stele set up here in 781 to record it — called in the West the Nestorian Stele, a name the Assyrian Church of the East rejects for itself — was buried in the persecution and not found again until about 1625.",
+            "events": [
+                {
+                    "year": 635,
+                    "title": "Alopen reaches Chang'an",
+                    "desc": "A bishop of the Church of the East arrives at the Tang capital. The stele says the emperor Taizong had the scriptures he brought translated in the imperial library and examined the teaching himself. The Chinese called it Jingjiao, the Luminous Religion."
+                },
+                {
+                    "year": 638,
+                    "title": "An edict of toleration",
+                    "desc": "The emperor permits the religion by edict and orders a monastery built in the Yining ward with twenty-one monks. Christian manuscripts in Chinese from this mission survive, in a vocabulary borrowed heavily from Buddhism and Daoism because there was no other."
+                },
+                {
+                    "year": 781,
+                    "title": "The stele",
+                    "desc": "A limestone slab some nine feet high is set up in 781, its Chinese text recounting a century and a half of the mission and its margins listing the clergy by name in Syriac and Chinese. It is the most important single document of Christianity in China before the Jesuits."
+                },
+                {
+                    "year": 845,
+                    "title": "Suppressed",
+                    "desc": "Emperor Wuzong's edict against Buddhism sweeps up the foreign religions with it; the monasteries are closed and the clergy returned to lay life. The Church of the East in China does not recover — and the stele is buried, which is why it survived."
+                }
+            ]
+        },
+        {
+            "slug": "merv",
+            "name": "Merv",
+            "modern": "Mary, Turkmenistan",
+            "lat": 37.66,
+            "lon": 62.17,
+            "categories": [
+                "mission",
+                "translation"
+            ],
+            "from": 424,
+            "to": 1221,
+            "blurb": "A Silk Road metropolis and a metropolitan see of the Church of the East, from which bishops were sent further east than any other church reached before the modern age. Its Christian community ended with the city, in 1221.",
+            "events": [
+                {
+                    "year": 424,
+                    "title": "A bishop from the east signs",
+                    "desc": "The bishop of Merv subscribes the Synod of Dadishoʿ at Seleucia-Ctesiphon: evidence of an organised church a thousand miles east of the Persian capital, on the road to Samarkand."
+                },
+                {
+                    "year": 544,
+                    "title": "A metropolitan see",
+                    "desc": "By the middle of the sixth century Merv is a metropolitanate ranking with Nisibis and Fars, with suffragans further east still. Syriac Christian literature travels this road, and so do translations of it into Sogdian, Persian and later Turkic."
+                },
+                {
+                    "year": 800,
+                    "title": "Missions to the Turks",
+                    "desc": "In the letters of Patriarch Timothy I (780–823) a Turkish king is baptised with much of his people, and a metropolitan is appointed for the Turks. Whatever the true scale, the ambition is real, and Merv is the base from which such a mission departs."
+                },
+                {
+                    "year": 1221,
+                    "title": "The end",
+                    "desc": "Tolui's Mongol army destroys Merv. The medieval accounts of the slaughter are enormous and unreliable, but the city did not recover and neither did its church; the Christianity of Central Asia survives after this chiefly in gravestones."
+                }
+            ]
+        },
+        {
+            "slug": "karakorum",
+            "name": "Karakorum",
+            "modern": "Kharkhorin, Mongolia",
+            "lat": 47.21,
+            "lon": 102.85,
+            "categories": [
+                "mission"
+            ],
+            "from": 1235,
+            "to": 1388,
+            "blurb": "The Mongol capital, where in 1254 a Franciscan friar argued for Christianity before the Great Khan alongside Muslims and Buddhists, and lost. Christians of the Church of the East were already at court, and had been for generations.",
+            "events": [
+                {
+                    "year": 1235,
+                    "title": "A capital walled",
+                    "desc": "Ögedei fortifies Karakorum. William of Rubruck, arriving twenty years later, counted in it twelve temples of the idolaters, two mosques and one church of the Christians — a proportion worth holding in mind whenever the khans are described as nearly converted."
+                },
+                {
+                    "year": 1252,
+                    "title": "Sorghaghtani Beki",
+                    "desc": "The Keraite princess who was a Christian of the Church of the East, and mother of Möngke, Kublai and Hulagu, dies. Christianity at the Mongol court was largely dynastic and largely female; it shaped policy without ever becoming the religion of the state."
+                },
+                {
+                    "year": 1254,
+                    "title": "The debate before Möngke",
+                    "desc": "William of Rubruck, sent by Louis IX, disputes at the khan's order with Muslims and Buddhists on the eve of Pentecost, 30 May 1254. He reports that Möngke told him God had given the hand several fingers, and had given men several ways — a verdict of toleration which Rubruck understood as a defeat."
+                },
+                {
+                    "year": 1264,
+                    "title": "The capital moves",
+                    "desc": "Kublai transfers his seat to Khanbaliq and Karakorum declines; Ming armies destroy it in 1388. The hope of a Christian Mongol empire, which had exercised Latin diplomacy for fifty years, ends with it."
+                }
+            ]
+        },
+        {
+            "slug": "wittenberg",
+            "name": "Wittenberg",
+            "modern": "Lutherstadt Wittenberg, Germany",
+            "lat": 51.87,
+            "lon": 12.64,
+            "categories": [
+                "reformation",
+                "translation"
+            ],
+            "from": 1502,
+            "to": null,
+            "blurb": "A small Saxon town with a new university, where a professor of biblical studies asked a technical question about indulgences and split the Western church. He also gave German a prose Bible that shaped the language.",
+            "events": [
+                {
+                    "year": 1517,
+                    "title": "The ninety-five theses",
+                    "desc": "Luther sends theses against the preaching of indulgences to Archbishop Albrecht of Mainz on 31 October 1517. Whether he also nailed them to the door of the Castle Church is uncertain: Melanchthon reported it after Luther's death, Luther never mentioned it, and the door was the university noticeboard, so it would have been unremarkable if he did."
+                },
+                {
+                    "year": 1520,
+                    "title": "Three treatises and a fire",
+                    "desc": "In one year Luther publishes To the Christian Nobility, The Babylonian Captivity of the Church and The Freedom of a Christian; and on 10 December burns the bull threatening his excommunication, together with the canon law, outside the Elster Gate."
+                },
+                {
+                    "year": 1522,
+                    "title": "The September Testament",
+                    "desc": "Returning from hiding in March, Luther preaches eight sermons to slow the reforms his colleagues had rushed. In September his German New Testament appears, translated at the Wartburg in about eleven weeks; the first printing sold out at once."
+                },
+                {
+                    "year": 1525,
+                    "title": "A married clergy",
+                    "desc": "Luther marries Katharina von Bora, a former Cistercian nun, on 13 June 1525. The parsonage household becomes a Protestant institution, and the marriage of clergy a permanent mark of the division."
+                },
+                {
+                    "year": 1534,
+                    "title": "The whole Bible in German",
+                    "desc": "Hans Lufft prints the complete Bible, with the apocrypha set apart as useful but not canonical. Luther kept revising it until he died; its cadences are still audible in German."
+                }
+            ]
+        },
+        {
+            "slug": "worms",
+            "name": "Worms",
+            "modern": null,
+            "lat": 49.63,
+            "lon": 8.37,
+            "categories": [
+                "reformation",
+                "council"
+            ],
+            "from": 1076,
+            "to": 1521,
+            "blurb": "A Rhineland imperial city where the long argument between popes and emperors was opened and closed, and where, four centuries later, a friar was asked to recant and would not. Three decisive scenes of Western church and state were played within the same square mile.",
+            "events": [
+                {
+                    "year": 1076,
+                    "title": "The bishops renounce a pope",
+                    "desc": "Henry IV's synod at Worms in January 1076 declares Gregory VII no longer pope; Gregory excommunicates and deposes Henry, who goes to Canossa the following winter. The question of who appoints bishops turns out to be the question of who rules."
+                },
+                {
+                    "year": 1122,
+                    "title": "The Concordat",
+                    "desc": "On 23 September 1122 the emperor gives up investing bishops with ring and staff, and the church concedes that he may be present at elections and invest with the temporalities. The compromise separates a bishop's office from his estates, and it holds."
+                },
+                {
+                    "year": 1521,
+                    "title": "Luther before the Diet",
+                    "desc": "Summoned under safe conduct, Luther on 18 April refuses to recant unless convinced by scripture or plain reason, saying his conscience is captive to the word of God. The famous sentence — here I stand, I can do no other — appears in the printed version and not in the earliest reports of what was said in the room."
+                },
+                {
+                    "year": 1521,
+                    "title": "The Edict of Worms",
+                    "desc": "The edict, dated 8 May and signed later that month, puts Luther under the imperial ban, makes him an outlaw whom any man may kill, and forbids his books. It was never enforceable in a Germany of territorial princes, and that fact is most of the political history of the Reformation."
+                }
+            ]
+        },
+        {
+            "slug": "geneva",
+            "name": "Geneva",
+            "modern": null,
+            "lat": 46.2,
+            "lon": 6.14,
+            "categories": [
+                "reformation",
+                "school"
+            ],
+            "from": 1536,
+            "to": null,
+            "blurb": "A city that expelled its bishop and then allowed a French refugee lawyer to organise it into what admirers called the most perfect school of Christ since the apostles. Its academy trained the ministers who carried Reformed Christianity to France, Scotland, the Netherlands and Hungary.",
+            "events": [
+                {
+                    "year": 1536,
+                    "title": "The city swears the Gospel",
+                    "desc": "Geneva's assembly votes on 21 May 1536 to live according to the Gospel. Calvin, passing through on his way elsewhere, is stopped by Guillaume Farel, who — by Calvin's own account years later — told him God would curse his studies if he went. He stayed."
+                },
+                {
+                    "year": 1538,
+                    "title": "Expelled",
+                    "desc": "Calvin and Farel are put out of the city in April 1538, over the magistrates' right to settle the terms on which communion is given. Calvin spends three years at Strasbourg among French refugees, and comes back on his own terms."
+                },
+                {
+                    "year": 1541,
+                    "title": "The Ordinances",
+                    "desc": "Calvin returns on 13 September 1541 and the city adopts his Ecclesiastical Ordinances in November: four orders of ministry — pastors, doctors, elders, deacons — and a consistory to oversee morals. The consistory's registers survive, and are less lurid and more interesting than the legend."
+                },
+                {
+                    "year": 1553,
+                    "title": "Servetus burned",
+                    "desc": "Michael Servetus, already condemned by the Inquisition at Vienne, is arrested in Geneva and burned at Champel on 27 October 1553 for denying the Trinity and infant baptism. Calvin pressed the charges and asked for beheading instead of fire; the council refused. It is the fact about him no defence has disposed of, and it moved Sebastian Castellio to ask whether killing a man defends a doctrine or merely kills a man."
+                },
+                {
+                    "year": 1559,
+                    "title": "The Academy",
+                    "desc": "The Academy opens on 5 June 1559 with Theodore Beza as rector, and fills with foreign students who go home as ministers. John Knox, who had pastored the English congregation here, called the city the most perfect school of Christ since the days of the apostles."
+                }
+            ]
+        },
+        {
+            "slug": "zurich",
+            "name": "Zurich",
+            "modern": null,
+            "lat": 47.38,
+            "lon": 8.54,
+            "categories": [
+                "reformation",
+                "schism",
+                "martyrdom"
+            ],
+            "from": 1519,
+            "to": null,
+            "blurb": "The Reformed Reformation began here, in a preacher's decision to work straight through Matthew instead of the lectionary, and within six years it had produced a movement convinced it had not gone far enough. Both the Reformed churches and the Anabaptists date from this city.",
+            "events": [
+                {
+                    "year": 1519,
+                    "title": "Straight through Matthew",
+                    "desc": "Huldrych Zwingli becomes people's priest at the Grossmünster on 1 January 1519 and begins preaching continuously through the Gospel of Matthew rather than the appointed readings. He survives the plague that autumn and writes about it."
+                },
+                {
+                    "year": 1523,
+                    "title": "The First Disputation",
+                    "desc": "On 29 January 1523 the city council hears Zwingli defend sixty-seven articles and decides in his favour — a council of laymen adjudicating doctrine, which is the Swiss model of reformation and was a novelty. Images and the mass go within three years."
+                },
+                {
+                    "year": 1525,
+                    "title": "The first believers' baptisms",
+                    "desc": "On 21 January 1525, days after the council forbade their meetings, Conrad Grebel baptises George Blaurock in Felix Manz's house, and Blaurock baptises the rest. To reject infant baptism was to reject a Christian society coterminous with the parish, and every magistrate in Europe understood the implication. Anabaptist — rebaptiser — is what their opponents called them; they held they were baptising for the first time."
+                },
+                {
+                    "year": 1527,
+                    "title": "Manz drowned",
+                    "desc": "Felix Manz is bound and drowned in the Limmat on 5 January 1527, the first Anabaptist executed by Protestants; thousands followed, killed by Catholic and Protestant authorities alike. The Schleitheim Articles of the same year committed the movement to non-resistance."
+                },
+                {
+                    "year": 1531,
+                    "title": "Zwingli killed",
+                    "desc": "Zwingli dies in the field at Kappel on 11 October 1531, armed, as chaplain to the Zurich forces. Heinrich Bullinger succeeds him and holds the Reformed churches together for forty-four years."
+                }
+            ]
+        },
+        {
+            "slug": "munster",
+            "name": "Münster",
+            "modern": null,
+            "lat": 51.96,
+            "lon": 7.63,
+            "categories": [
+                "reformation",
+                "schism",
+                "martyrdom"
+            ],
+            "from": 1533,
+            "to": 1536,
+            "blurb": "For sixteen months a Westphalian city was governed by apocalyptic radicals as the New Jerusalem — community of goods, compulsory rebaptism, polygamy — and it ended in massacre. It is the worst thing that happened in the radical Reformation, and it was done by one faction; the Anabaptists who had always refused the sword have been answering for it ever since.",
+            "events": [
+                {
+                    "year": 1534,
+                    "title": "The city taken",
+                    "desc": "The radical party wins the council elections in February 1534 and Jan Matthys of Haarlem takes charge. Those who refuse rebaptism are driven out into the winter, goods are pooled, and books other than the Bible burned; the prince-bishop begins a siege."
+                },
+                {
+                    "year": 1534,
+                    "title": "A king in the New Jerusalem",
+                    "desc": "Matthys is killed in a sortie on 5 April 1534. Jan van Leiden succeeds him, is proclaimed king, and decrees polygamy in a city where women greatly outnumbered men. Those who dissented were put to death."
+                },
+                {
+                    "year": 1535,
+                    "title": "The city stormed",
+                    "desc": "The besiegers enter on 25 June 1535 after a betrayal and kill the defenders. The siege had already reduced the city to starvation. What followed the breach was a massacre, and the accounts of it come almost entirely from the victors."
+                },
+                {
+                    "year": 1536,
+                    "title": "The cages",
+                    "desc": "Jan van Leiden and two others are tortured to death in the market place on 22 January 1536 and their bodies hung in iron cages from the tower of St Lambert's church. The cages are hanging there still."
+                },
+                {
+                    "year": 1536,
+                    "title": "Menno Simons leaves his parish",
+                    "desc": "In the same month a Frisian priest renounces his living and gathers the Anabaptists who had always refused the sword. The Mennonites, Amish and Hutterites descend from that wing, and their confessions have repudiated Münster from the beginning; Münster is nonetheless what they spent four centuries living down, and the reason Anabaptist was for so long a word of horror."
+                }
+            ]
+        },
+        {
+            "slug": "canterbury",
+            "name": "Canterbury",
+            "modern": null,
+            "lat": 51.28,
+            "lon": 1.08,
+            "categories": [
+                "mission",
+                "martyrdom",
+                "reformation"
+            ],
+            "from": 597,
+            "to": null,
+            "blurb": "The seat of the mission Gregory the Great sent to the English in 597, of a murdered archbishop whose shrine drew half of Europe, and of an archbishop who now serves as a focus of unity for the Anglican Communion — which counts itself at some eighty-five million. One cathedral holds all three histories.",
+            "events": [
+                {
+                    "year": 597,
+                    "title": "Augustine lands in Kent",
+                    "desc": "A prior from Gregory the Great's own monastery arrives with about forty monks. King Æthelberht, whose Frankish queen Bertha was already Christian, allows them to preach and gives them a church in his city; Bede says they came in procession, singing, behind a silver cross and a painted board."
+                },
+                {
+                    "year": 601,
+                    "title": "Do not destroy the temples",
+                    "desc": "Gregory writes to Mellitus that the idol temples of the English should be purified and reused rather than torn down, and the sacrificial feasts turned into festivals of the martyrs (preserved by Bede, Church History 1.30). It is the classic statement of accommodation in Christian mission."
+                },
+                {
+                    "year": 1170,
+                    "title": "Becket killed",
+                    "desc": "Four knights cut Thomas Becket down in his own cathedral on 29 December 1170, after a quarrel about the trial of clergy in royal courts. He was canonised within three years, and the pilgrimage to his shrine became one of the largest in Europe."
+                },
+                {
+                    "year": 1538,
+                    "title": "The shrine destroyed",
+                    "desc": "Henry VIII's commissioners strip the shrine and carry the treasure away; Becket's name is struck out of the service books. A church defined by a saint who defied a king removes him at a king's order."
+                },
+                {
+                    "year": 1549,
+                    "title": "The Book of Common Prayer",
+                    "desc": "Cranmer's prayer book is imposed at Whitsun 1549 and revised in 1552, giving English-speaking Christianity a liturgical language and a middle way it has been arguing about ever since. Cranmer was burned at Oxford in 1556."
+                }
+            ]
+        },
+        {
+            "slug": "iona",
+            "name": "Iona",
+            "modern": "Scotland",
+            "lat": 56.33,
+            "lon": -6.42,
+            "categories": [
+                "monastic",
+                "mission",
+                "translation"
+            ],
+            "from": 563,
+            "to": null,
+            "blurb": "A small Hebridean island from which Irish monks evangelised Pictland and Northumbria, and where a distinctively insular Christianity — abbot-led, ascetic, keeping Easter by an older table — met Roman practice and gave way. Its abbey is a working community again.",
+            "events": [
+                {
+                    "year": 563,
+                    "title": "Columba crosses",
+                    "desc": "Colum Cille comes from Ireland with twelve companions and founds a monastery on the island; the Annals of Ulster date it to 563, and Adomnán, ninth abbot, wrote his life a century later. The familia of Iona became a network of houses across Ireland and Britain."
+                },
+                {
+                    "year": 635,
+                    "title": "Aidan to Lindisfarne",
+                    "desc": "At King Oswald's request Iona sends Aidan to Northumbria; the mission works from another tidal island and converts the kingdom. Bede, no friend to their Easter reckoning, thought Aidan a saint regardless."
+                },
+                {
+                    "year": 664,
+                    "title": "Whitby",
+                    "desc": "At the synod of Whitby King Oswiu decides for the Roman Easter and tonsure; Colmán resigns Lindisfarne and withdraws to Iona, and then to Ireland. Iona itself did not conform until 716. What was at stake was not a date but whether the churches of the isles belonged to a single order."
+                },
+                {
+                    "year": 795,
+                    "title": "The Norse",
+                    "desc": "Vikings raid Iona in 795, and again in 802 and 806, when sixty-eight of the community were killed. The relics and much of the community moved to Kells in Ireland in 807; the great gospel book associated with both houses was probably begun here."
+                },
+                {
+                    "year": 1938,
+                    "title": "The abbey rebuilt",
+                    "desc": "George MacLeod brings unemployed Glasgow craftsmen and young ministers to rebuild the ruined monastic buildings, and founds the Iona Community — a dispersed body with a rule, committed to work in the city slums. The rebuilding was the point: an ancient site put back to use rather than preserved."
+                }
+            ]
+        },
+        {
+            "slug": "trent",
+            "name": "Trent",
+            "modern": "Trento, Italy",
+            "lat": 46.07,
+            "lon": 11.12,
+            "categories": [
+                "council",
+                "reformation"
+            ],
+            "from": 1545,
+            "to": 1563,
+            "blurb": "The council that answered the Reformation, defined Catholic doctrine against it, and reformed the Catholic clergy more thoroughly than the reformers expected. It sat in three periods over eighteen years in a prince-bishopric on the imperial side of the Alps, where both emperor and pope could accept its meeting.",
+            "events": [
+                {
+                    "year": 1545,
+                    "title": "Opened at last",
+                    "desc": "The council opens on 13 December 1545 with about thirty bishops present, twenty-eight years after the ninety-five theses. It had been demanded, promised and postponed for a generation, largely because a council might judge a pope."
+                },
+                {
+                    "year": 1546,
+                    "title": "Scripture and tradition",
+                    "desc": "The decree of 8 April 1546 receives the written books and the unwritten traditions with equal reverence, fixes the canon including the deuterocanonical books, and declares the Latin Vulgate authentic for public use. Each clause answers a Protestant position directly."
+                },
+                {
+                    "year": 1547,
+                    "title": "Justification",
+                    "desc": "The decree of 13 January 1547 is the council's most carefully worked text: justification is by grace and unmerited, but it makes the sinner actually righteous rather than only accounted so. On this the reunion of Western Christendom was lost, and modern dialogue has spent decades on it."
+                },
+                {
+                    "year": 1551,
+                    "title": "The Eucharist defined",
+                    "desc": "The decree of 11 October 1551 affirms the real presence and endorses transubstantiation as the fitting term for the change. Protestant delegates attended this period and left without agreement."
+                },
+                {
+                    "year": 1563,
+                    "title": "Closed",
+                    "desc": "The council ends on 4 December 1563, having ordered a seminary in every diocese, required bishops actually to live in theirs, and regulated marriage. Its decrees shaped Catholic life until the Second Vatican Council, and its name became an adjective."
+                }
+            ]
+        },
+        {
+            "slug": "avignon",
+            "name": "Avignon",
+            "modern": null,
+            "lat": 43.95,
+            "lon": 4.81,
+            "categories": [
+                "schism"
+            ],
+            "from": 1309,
+            "to": 1403,
+            "blurb": "For most of the fourteenth century the popes lived not in Rome but in a fortified palace on the Rhône, in a city they eventually bought outright. Petrarch called it the Babylonian captivity of the church; the return to Rome produced a worse crisis than the absence had.",
+            "events": [
+                {
+                    "year": 1309,
+                    "title": "The curia settles",
+                    "desc": "Clement V, a Gascon elected in France and never crowned in Rome, takes up residence at Avignon. Seven popes reign here, all of them French, and the college of cardinals becomes overwhelmingly French with them."
+                },
+                {
+                    "year": 1348,
+                    "title": "The city bought",
+                    "desc": "Clement VI purchases Avignon from Joanna of Naples in the year of the plague, and the papal palace becomes the largest Gothic building in Europe. What began as a temporary residence has acquired a freehold."
+                },
+                {
+                    "year": 1377,
+                    "title": "Back to Rome",
+                    "desc": "Gregory XI leaves Avignon in September 1376 and enters Rome in January 1377, pressed by Catherine of Siena among many others. He died fourteen months later, and the conclave that followed was held in a city determined to have an Italian."
+                },
+                {
+                    "year": 1378,
+                    "title": "Two popes",
+                    "desc": "The cardinals elect Urban VI in April 1378, then declare the election void as made under duress and elect Clement VII in September; he returns to Avignon. Latin Christendom now has two obediences, each with its own saints defending it — and after the Council of Pisa in 1409, briefly three."
+                },
+                {
+                    "year": 1403,
+                    "title": "The last of them leaves",
+                    "desc": "Benedict XIII escapes Avignon in March 1403 and the palace ceases to be a papal residence. The Council of Constance ended the schism in 1417 by deposing or accepting the resignations of all three claimants and electing Martin V."
+                }
+            ]
+        },
+        {
+            "slug": "uppsala",
+            "name": "Uppsala",
+            "modern": null,
+            "lat": 59.86,
+            "lon": 17.64,
+            "categories": [
+                "mission",
+                "reformation",
+                "council"
+            ],
+            "from": 1075,
+            "to": null,
+            "blurb": "The old cult centre of the Svear, described by a hostile German cleric who never saw it, became the archiepiscopal seat of Sweden and then the place where the Swedish Reformation was settled by a national synod. Its archbishop still primates the Church of Sweden.",
+            "events": [
+                {
+                    "year": 1075,
+                    "title": "Adam of Bremen's temple",
+                    "desc": "Adam of Bremen describes a temple at Uppsala with images of Thor, Odin and Freyr, and a grove where men and animals hung in sacrifice. It is the fullest account of Norse cult we have; it was written by an outsider at second hand who wanted it to sound abominable, and archaeology has found a great hall and no temple."
+                },
+                {
+                    "year": 1164,
+                    "title": "An archbishopric",
+                    "desc": "Sweden receives its own metropolitan see at Uppsala in 1164, its first archbishop consecrated at Sens, and the Scandinavian churches pass out of the German ambit. The see moved to the present site in the 1270s; the cathedral was consecrated in 1435."
+                },
+                {
+                    "year": 1531,
+                    "title": "A Lutheran archbishop",
+                    "desc": "Laurentius Petri becomes archbishop in 1531, the first of the Reformation in Sweden, and holds the office for forty-two years. With his brother Olaus he produced the Swedish New Testament of 1526 and the Gustav Vasa Bible of 1541, which did for Swedish what Luther's did for German."
+                },
+                {
+                    "year": 1593,
+                    "title": "The Uppsala Synod",
+                    "desc": "In March 1593 a national assembly of clergy and laity adopts the three ancient creeds and the unaltered Augsburg Confession, rejecting both Calvinism and the Catholic restoration attempted by the previous king. Sweden's confessional identity is fixed by this meeting."
+                },
+                {
+                    "year": 2014,
+                    "title": "The seventieth archbishop",
+                    "desc": "Antje Jackelén is received in Uppsala Cathedral on 15 June 2014, the first woman to hold the see; the Church of Sweden decided to ordain women in 1958 and ordained the first in 1960, and ceased to be a state church in 2000."
+                }
+            ]
+        },
+        {
+            "slug": "azusa-street",
+            "name": "Azusa Street",
+            "modern": "Los Angeles, USA",
+            "lat": 34.05,
+            "lon": -118.24,
+            "categories": [
+                "revival",
+                "mission"
+            ],
+            "from": 1906,
+            "to": null,
+            "blurb": "A three-year meeting in a plain frame building then in use as a stable, led by the son of former slaves, from which Pentecostalism went round the world. It is the fastest-spreading Christian movement in history, and it began in a room that had to be swept out first.",
+            "events": [
+                {
+                    "year": 1906,
+                    "title": "Bonnie Brae Street, and after",
+                    "desc": "William J. Seymour — who had learned Charles Parham's teaching on the baptism of the Spirit while sitting outside the classroom door, because he was black — preaches in a house on North Bonnie Brae Street, where the first speaking in tongues occurs on 9 April 1906. The crowd breaks the porch, and on 14 April the meeting moves to 312 Azusa Street, a former African Methodist Episcopal chapel then in use as a stable and warehouse."
+                },
+                {
+                    "year": 1906,
+                    "title": "The newspapers arrive",
+                    "desc": "The Los Angeles Daily Times mocks the meeting on 18 April 1906 — the morning of the San Francisco earthquake, which filled every seat in the city. The mission ran three services a day for three years with no fixed order of worship and no advertised preacher."
+                },
+                {
+                    "year": 1907,
+                    "title": "The message travels",
+                    "desc": "Charles Harrison Mason comes from Memphis, receives the experience, and takes it back to the Church of God in Christ, which becomes the largest Pentecostal body in the United States. Missionaries leave Azusa for India, China, Liberia and Chile within two years."
+                },
+                {
+                    "year": 1914,
+                    "title": "The colour line returns",
+                    "desc": "Frank Bartleman wrote of the mission that the colour line was washed away in the blood; within a decade it had been redrawn. White ministers organise the Assemblies of God at Hot Springs in 1914, and American Pentecostalism divides by race for most of the century — a division formally repented in 1994."
+                },
+                {
+                    "year": 1922,
+                    "title": "Seymour dies",
+                    "desc": "Seymour dies on 28 September 1922, his congregation reduced to a small black church; the building was demolished in 1931. Pentecostal and charismatic Christians are now counted in the hundreds of millions, and most of them have never heard his name."
+                }
+            ]
+        },
+        {
+            "slug": "nkamba",
+            "name": "Nkamba",
+            "modern": "Kongo Central, DR Congo",
+            "lat": -5.03,
+            "lon": 14.59,
+            "categories": [
+                "revival",
+                "mission",
+                "martyrdom"
+            ],
+            "from": 1921,
+            "to": null,
+            "blurb": "The village where Simon Kimbangu, a Baptist catechist, began a healing ministry in April 1921, and which his church calls the New Jerusalem. The Church of Jesus Christ on Earth by His Special Envoy Simon Kimbangu — the name it gives itself — is among the largest of the African-initiated churches and was the first of them admitted to the World Council of Churches.",
+            "events": [
+                {
+                    "year": 1921,
+                    "title": "The sixth of April",
+                    "desc": "Kimbangu lays hands on a sick woman at Nkamba, and the church dates its life from that day. Within months tens of thousands are coming, the mission stations are emptying, and the Belgian administration is reading a religious movement as sedition."
+                },
+                {
+                    "year": 1921,
+                    "title": "Condemned",
+                    "desc": "Arrested in September, Kimbangu is tried by a military court in October and sentenced to death; King Albert I commutes the sentence to life imprisonment. He is taken to Elisabethville, some fifteen hundred miles away, and never returns alive."
+                },
+                {
+                    "year": 1951,
+                    "title": "Thirty years in prison",
+                    "desc": "Kimbangu dies in prison on 12 October 1951, having spent thirty years in confinement and never having led the church that bears his name. Tens of thousands of his followers had been deported to distant provinces in the meantime."
+                },
+                {
+                    "year": 1959,
+                    "title": "Recognised",
+                    "desc": "The colonial authorities grant legal recognition in December 1959, months before independence. Kimbangu's remains were brought back to Nkamba and a mausoleum built for them."
+                },
+                {
+                    "year": 1969,
+                    "title": "Into the World Council",
+                    "desc": "The Kimbanguist Church is admitted to the World Council of Churches, the first African-initiated church received into it. Nkamba is its holy city, with a temple, a pilgrimage, and water from its spring carried away by the faithful."
+                }
+            ]
+        },
+        {
+            "slug": "salt-lake-city",
+            "name": "Salt Lake City",
+            "modern": "Utah, USA",
+            "lat": 40.77,
+            "lon": -111.89,
+            "categories": [
+                "revival",
+                "mission"
+            ],
+            "from": 1847,
+            "to": null,
+            "blurb": "The city the Latter-day Saints built after being driven out of Illinois, laid out on a grid around a temple block, and the headquarters of a church that now counts more than seventeen million members. It asks to be called The Church of Jesus Christ of Latter-day Saints rather than by the nickname long attached to it.",
+            "events": [
+                {
+                    "year": 1847,
+                    "title": "Into the valley",
+                    "desc": "The first company arrives on 24 July 1847, three years after Joseph Smith was killed at Carthage, Illinois, and after a migration across the plains that killed hundreds. Brigham Young lays out a city on a grid oriented to a temple block, and irrigation begins within days."
+                },
+                {
+                    "year": 1853,
+                    "title": "The temple begun",
+                    "desc": "Ground is broken on 6 April 1853 for a granite temple hauled from a canyon twenty miles away; it took forty years and was dedicated in 1893. Temples are not meeting houses: the ordinances performed in them, including baptism for the dead, are the distinctive practice of the church."
+                },
+                {
+                    "year": 1890,
+                    "title": "The Manifesto",
+                    "desc": "Wilford Woodruff issues a declaration on 24 September 1890 advising members to contract no marriage forbidden by the law of the land, ending the official practice of plural marriage under intense federal pressure; Utah became a state in 1896. The church presents the Manifesto as revelation, and the groups that refused it separated and persist."
+                },
+                {
+                    "year": 1965,
+                    "title": "The vault",
+                    "desc": "The Granite Mountain Records Vault opens in Little Cottonwood Canyon to hold microfilmed genealogical records. A theology of sealing families across generations has made the church the largest gatherer of family history in the world, and the archive is open to anyone."
+                },
+                {
+                    "year": 1978,
+                    "title": "Official Declaration 2",
+                    "desc": "In June 1978 the church extends ordination to the priesthood to all worthy male members without regard to race, ending a restriction of long standing. In 2013 it published essays disavowing the explanations that had been offered for it."
+                }
+            ]
+        },
+        {
+            "slug": "moscow",
+            "name": "Moscow",
+            "modern": null,
+            "lat": 55.76,
+            "lon": 37.62,
+            "categories": [
+                "patriarchate",
+                "schism"
+            ],
+            "from": 1326,
+            "to": null,
+            "blurb": "A metropolitan see that moved here in 1326 as the principality rose, declared its independence of Constantinople in 1448, and became the largest of the Orthodox churches. The idea that Moscow is the third Rome began as a monk's letter of warning and became, three centuries later, other people's politics.",
+            "events": [
+                {
+                    "year": 1448,
+                    "title": "Elected without Constantinople",
+                    "desc": "The Russian bishops elect Jonah metropolitan on their own authority, having rejected the union with Rome agreed at Florence. Autocephaly begins as a refusal — and five years before Constantinople fell."
+                },
+                {
+                    "year": 1510,
+                    "title": "Two Romes have fallen",
+                    "desc": "Filofei, a monk of Pskov, writes to Grand Prince Vasily III that two Romes have fallen, the third stands, and there will not be a fourth. It was a warning about orthodoxy addressed to a ruler, not a programme of empire; the imperial reading of it came three centuries later."
+                },
+                {
+                    "year": 1589,
+                    "title": "A patriarchate",
+                    "desc": "Job is enthroned as the first Patriarch of Moscow in January 1589, with the consent of Jeremias II of Constantinople, who was in Russia raising money. Moscow becomes fifth in rank among the Orthodox patriarchates, and by far the largest in numbers."
+                },
+                {
+                    "year": 1666,
+                    "title": "The Old Believers",
+                    "desc": "The council of 1666–67 deposes Patriarch Nikon and at the same time confirms the corrections he had made to the service books and the sign of the cross, anathematising those who keep the old rite. A large minority refused; the Old Believers were persecuted for centuries, and some communities burned themselves rather than conform. The anathemas were lifted only in 1971. Raskolnik, schismatic, is the name the official church used; they call themselves Old Ritualists."
+                },
+                {
+                    "year": 1917,
+                    "title": "Restored by lot",
+                    "desc": "Two centuries after Peter the Great abolished the patriarchate and put a synod in its place, a council restores it, and Tikhon is chosen by lot on 5 November 1917 — days after the Bolshevik seizure of power. The persecution that followed was, by most counts, the most extensive in Christian history."
+                }
+            ]
+        },
+        {
+            "slug": "kyiv",
+            "name": "Kyiv",
+            "modern": "Ukraine",
+            "lat": 50.45,
+            "lon": 30.52,
+            "categories": [
+                "mission",
+                "translation",
+                "schism"
+            ],
+            "from": 988,
+            "to": null,
+            "blurb": "Where the Rus were baptised, and the mother church of a Slavonic Christianity that now spans several jurisdictions and one bitter dispute. The monastery in the caves above the Dnipro has been a centre of Orthodox life for nearly a thousand years.",
+            "events": [
+                {
+                    "year": 988,
+                    "title": "The baptism of the Rus",
+                    "desc": "Volodymyr the Great is baptised and orders the people of Kyiv into the Dnipro. The Primary Chronicle explains the choice by an embassy sent to inspect the faiths, whose envoys said of the liturgy at Constantinople that they did not know whether they stood in heaven or on earth. The chronicle was written a century later and the story is shaped for effect; the political calculation was real, and so was the result."
+                },
+                {
+                    "year": 1051,
+                    "title": "The Caves",
+                    "desc": "Hilarion, the first native metropolitan, is installed, and about the same time Antony and Theodosius establish the monastery in the caves above the river. Slavonic — the language Cyril and Methodius had made literary — carries the whole tradition north."
+                },
+                {
+                    "year": 1240,
+                    "title": "Sacked",
+                    "desc": "The Mongols destroy Kyiv in December 1240. The metropolitans withdraw north, to Vladimir in 1299 and Moscow in 1326, carrying the title of Kyiv with them for another century and a half."
+                },
+                {
+                    "year": 1596,
+                    "title": "The Union of Brest",
+                    "desc": "Most of the Ruthenian bishops enter communion with Rome while keeping the Byzantine rite, married clergy and Slavonic liturgy; the Ukrainian Greek Catholic Church begins here, and so do four centuries of resentment. The name Uniate, used by opponents, is rejected by those it describes."
+                },
+                {
+                    "year": 2019,
+                    "title": "A tomos",
+                    "desc": "The Ecumenical Patriarch grants autocephaly to the Orthodox Church of Ukraine in January 2019, holding that Kyiv was never lawfully transferred to Moscow in 1686; the Moscow Patriarchate rejects the act and had broken communion with Constantinople over it the previous October. Both positions are argued from the same canons, and Ukrainian Orthodoxy remains divided between jurisdictions."
+                }
+            ]
+        }
+    ]
 };

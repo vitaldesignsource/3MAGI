@@ -112,12 +112,17 @@ function ChristianitiesTree({ tree }) {
                                     <line className="ch-tree-end" x1={x2} y1={yy - 4} x2={x2} y2={yy + 4} />
                                 )}
                                 <circle className="ch-tree-dot" cx={x1} cy={yy} r={2.6} />
-                                <text className="ch-tree-label"
-                                    x={n.to == null ? x2 + 6 : Math.min(x1 + 8, x2 - 4)}
-                                    y={yy - (n.to == null ? -3.5 : 5)}
-                                    textAnchor={n.to == null ? 'start' : 'start'}>
+                                {/* every line is named at its fork; living lines
+                                    are named again at the right edge, where the
+                                    reader who scrolled to today is looking */}
+                                <text className="ch-tree-label" x={x1 + 8} y={yy - 5}>
                                     {n.label}
                                 </text>
+                                {n.to == null && (
+                                    <text className="ch-tree-label is-trailing" x={x2 + 6} y={yy + 3.5}>
+                                        {n.label}
+                                    </text>
+                                )}
                             </g>
                         );
                     })}

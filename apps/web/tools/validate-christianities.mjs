@@ -33,7 +33,7 @@ const warn = (m) => warnings.push(m);
 // use them — the history is unreadable without them — but never bare, as
 // though they were the neutral name.
 const CONTESTED_LABELS = [
-    { term: /\bnestorian/i, guard: /reject|exonym|misnomer|prefer|so-called|contested|do(es)? not accept|repudiat|others['’] name/i,
+    { term: /\bnestorian/i, guard: /reject|exonym|misnomer|prefer|so-called|contested|do(es)? not accept|repudiat|others['’] name|opponent|polemic|label|weapon/i,
       why: 'the Assyrian Church of the East rejects the label' },
     { term: /\bmonophysit/i, guard: /miaphysit|not monophysit|distinct|reject|contested|misnomer|different from|charge|accus/i,
       why: 'the Oriental Orthodox are miaphysite, and the conflation is the charge, not the position' },
@@ -197,6 +197,8 @@ if (symbols) {
                 const ok = (cp >= 0x2600 && cp <= 0x27bf)      // misc symbols & dingbats
                     || (cp >= 0x2c80 && cp <= 0x2cff)          // Coptic (crux ansata, staurogram)
                     || (cp >= 0x0370 && cp <= 0x03ff)          // Greek (Α Ω, chi rho letters)
+                    || (cp >= 0x1f00 && cp <= 0x1fff)          // polytonic Greek (ὁ ὤν in the nimbus)
+                    || (cp >= 0x0300 && cp <= 0x036f)          // combining marks (nomina sacra overline)
                     || (cp >= 0x2020 && cp <= 0x203b)          // daggers, asterism
                     || (cp >= 0x0041 && cp <= 0x024f)          // Latin
                     || (cp >= 0x0590 && cp <= 0x05f4)          // Hebrew
@@ -304,7 +306,9 @@ if (tree) {
             const p = byId.get(n.parent);
             if (!p) fail(`${where}: parent "${n.parent}" does not exist`);
             else if (n.from < p.from) fail(`${where}: born ${n.from}, before its parent (${p.from})`);
-            else if (p.to != null && n.from > p.to) {
+            else if (p.to != null && n.from > p.to && p.status !== 'absorbed') {
+                // an absorbed line continues in its heirs; forking after its
+                // drawn end is the chart's stated semantics
                 fail(`${where}: born ${n.from}, after its parent ended (${p.to})`);
             }
         }
