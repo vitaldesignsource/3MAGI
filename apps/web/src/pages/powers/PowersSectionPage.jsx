@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import { Helmet } from 'react-helmet';
 import { Link, useParams, useLocation, Navigate } from 'react-router-dom';
 import SiteHeader from '../../components/SiteHeader';
@@ -166,10 +166,43 @@ function Texts({ data, open, setOpen }) {
 
 // The Table of Correspondences — pantheons against the great offices, in the
 // canon-table's clothes. Cells hold names; the open row tells the stories.
-function Correspondences({ table }) {
+function Correspondences({ table, entries }) {
     const [openRow, setOpenRow] = useState(
         () => (typeof window !== 'undefined' ? decodeURIComponent(window.location.hash.slice(1)) : '') || null,
     );
+
+    // A cell that names a god this page actually writes up should be a way in.
+    // Entry names carry aliases across the slash ("Utu / Shamash"), so index
+    // every alias, and split a cell on the semicolon to link each name in it.
+    const bySlug = useMemo(() => {
+        const m = new Map();
+        for (const e of entries ?? []) {
+            for (const alias of e.name.split('/')) {
+                const key = alias.trim().toLowerCase();
+                if (key && !m.has(key)) m.set(key, e.slug);
+            }
+        }
+        return m;
+    }, [entries]);
+
+    const cellContent = (name) => {
+        if (!name || name === '—') return name || '—';
+        const parts = name.split(';');
+        return parts.map((raw, i) => {
+            const label = raw.trim();
+            const bare = label.replace(/^later\s+/i, '').replace(/\s*\(.*\)$/, '').toLowerCase();
+            const slug = bySlug.get(bare);
+            return (
+                <React.Fragment key={i}>
+                    {i > 0 && '; '}
+                    {slug
+                        ? <Link className="pw-corr-link" to={`#${slug}`}>{label}</Link>
+                        : label}
+                </React.Fragment>
+            );
+        });
+    };
+
     return (
         <section className="ch-matrix" aria-labelledby="pw-corr-heading">
             <header className="edu-section-head">
@@ -201,7 +234,7 @@ function Correspondences({ table }) {
                                         {table.roles.map((r) => (
                                             <td key={r.key} className="pw-corr-cell"
                                                 title={p.cells[r.key]?.note || undefined}>
-                                                {p.cells[r.key]?.name || '—'}
+                                                {cellContent(p.cells[r.key]?.name)}
                                             </td>
                                         ))}
                                     </tr>
@@ -312,7 +345,7 @@ function PowersSectionPage() {
                 kicker={meta.kicker} title={meta.title} intro={data?.intro} />
             <main className="edu-main">
                 {data && <Renderer data={data} open={open} setOpen={setOpen} />}
-                {extras.correspondences && <Correspondences table={extras.correspondences} />}
+                {extras.correspondences && <Correspondences table={extras.correspondences} entries={data?.entries} />}
                 {extras.words && <PowersWords words={extras.words} />}
             </main>
             <SiteFooter />

@@ -11874,6 +11874,14 @@ figure.ch-gallery-card { margin: 0; }
   font-family: Georgia, "Times New Roman", serif;
 }
 .pw-corr-table th[scope="row"] { white-space: nowrap; }
+.pw-corr-link {
+  color: #ecd9ae; text-decoration: none;
+  border-bottom: 1px solid rgba(209, 173, 104, 0.32);
+  transition: color 160ms ease, border-color 160ms ease;
+}
+.pw-corr-link:hover, .pw-corr-link:focus-visible {
+  color: #f6ead0; border-bottom-color: rgba(209, 173, 104, 0.85);
+}
 
 /* the family at prayer — portal gallery */
 .ch-gallery { margin-top: clamp(3rem, 6vw, 5rem); }

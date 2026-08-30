@@ -26,6 +26,7 @@ export default {
           imageCaption: 'Agni first, then the procession: the fire fed before Śiva’s dance while Durgā is carried along the ghats — the one pantheon in this portal that never stopped.',
           label: 'The Vedic and Hindu Gods', blurb: 'From the hymns of the Rigveda to the living devotions of a billion people — the one pantheon in this portal that never stopped.' },
         { key: 'yoruba', label: 'The Òrìṣà', blurb: 'The gods of Ile-Ife and Yorubaland, carried across the Atlantic in the holds of ships and alive on three continents.' },
+        { key: 'roman', label: 'Rome', blurb: 'A pantheon of magistrates: gods bound by procedure, addressed by exact formula, and expanded by treaty whenever Rome absorbed a people who had their own.' },
         { key: 'kami', label: 'The Kami', blurb: 'The powers of Japan — of whom the Kojiki says there are eight million, meaning uncountable.' },
     ],
     entries: [
@@ -298,6 +299,307 @@ export default {
             ],
             cult: 'Ise Jingū — rebuilt to identical specification every twenty years, a practice running since the seventh century.',
             interpretatio: 'Resisted the Buddhist honji suijaku system unevenly: medieval theology paired her with the cosmic Buddha Dainichi, which Shinto reformers later undid.',
+        },
+
+        {
+            slug: 'utu', name: 'Utu / Shamash', native: '𒀭𒌓', lang: 'cuneiform',
+            domain: 'The sun; and therefore justice', group: 'mesopotamian',
+            exposition: [
+                'The logic is unanswerable: the sun sees everything, so the sun judges. Utu crosses the sky each day and looks into every courtyard, which makes him the god oaths are sworn by, the patron of the wronged, and the one to whom the wandering and the cheated appeal.',
+                'That is why Hammurabi is carved receiving the law from him on the stele now in the Louvre — not as decoration but as jurisdiction. He also opens the mountain gates each dawn and closes them at dusk, and in the epic he is the one who helps Gilgamesh against Huwawa.',
+            ],
+            cult: 'Sippar and Larsa — the twin Ebabbar, “white house,” temples.',
+            interpretatio: 'Shamash in Akkadian; matched to Helios by later observers, though the Greek sun-god carries none of his judicial office.',
+        },
+        {
+            slug: 'ereshkigal', name: 'Ereshkigal', native: '𒀭𒊩𒌆𒆠𒃲', lang: 'cuneiform',
+            domain: 'Queen of the great below', group: 'mesopotamian',
+            exposition: [
+                'Her name says her office: lady of the great earth. She rules the land of no return in her own right, not as anyone’s consort, and when her sister Inanna comes down uninvited it is Ereshkigal who has her stripped at each of the seven gates and hung on a hook.',
+                'The most human moment in Mesopotamian literature may be hers: in one text she is found groaning, in labour with grief, and the clever creatures Enki sends win Inanna’s corpse simply by echoing her cries back to her until she is grateful enough to give it up.',
+            ],
+            cult: 'Kutha, shared with Nergal, who becomes her husband in the poem of that marriage.',
+            interpretatio: 'Named directly in the Greek magical papyri, where Ereschigal is invoked alongside Hekate — one of the few Mesopotamian goddesses whose name survived into late-antique magic intact.',
+        },
+        {
+            slug: 'nabu', name: 'Nabu', native: '𒀭𒀝', lang: 'cuneiform',
+            domain: 'The stylus; writing, wisdom, and the fixing of destinies', group: 'mesopotamian',
+            exposition: [
+                'Marduk’s son holds the reed pen and the Tablet of Destinies, and what he writes at the New Year stands for the year. Scribes signed themselves his servants; the stylus on a clay tablet is his emblem on a thousand boundary stones.',
+                'His star rose with Babylon’s: by the first millennium his procession from Borsippa to Babylon for the festival was among the great public events of the region, and “Nabu” stands inside the names of kings — Nabu-kudurri-usur, whom the Bible calls Nebuchadnezzar.',
+            ],
+            cult: 'Borsippa — the Ezida temple; and the New Year procession to Babylon.',
+            interpretatio: 'Matched to Apollo by Hellenistic writers for prophecy, and to Hermes-Mercury for the stylus; the planet Mercury is his.',
+        },
+        {
+            slug: 'amun', name: 'Amun', native: '𓇋𓏠𓈖', lang: 'hieroglyphic',
+            domain: 'The hidden one; breath, and later empire', group: 'egyptian',
+            exposition: [
+                'His name means hidden, and Egyptian theology took that seriously: he is the god whose true form is not known even to the other gods, present as air is present. A local Theban deity for centuries, he rose with Thebes to become Amun-Ra, king of the gods and the god of an empire.',
+                'His priesthood at Karnak grew rich enough to rival the throne, which is part of the background to Akhenaten’s attempt to erase him — and to the thoroughness with which Amun’s name was recut everywhere after that experiment failed.',
+            ],
+            cult: 'Karnak and Luxor, with the annual Opet procession between them; the oracle at Siwa.',
+            interpretatio: 'Zeus Ammon to the Greeks — Alexander went to Siwa to be greeted as his son, and the ram’s horns on Alexander’s coin portraits are Amun’s.',
+        },
+        {
+            slug: 'hathor', name: 'Hathor', native: '𓉡', lang: 'hieroglyphic',
+            domain: 'Love, music, drunkenness — and slaughter, when unleashed', group: 'egyptian',
+            exposition: [
+                'Hathor is joy with a blade inside it. She is the sky-cow who suckles the king, the lady of the sycamore who meets the dead with bread and water, the patroness of music and intoxication whose festivals were loud and drunken by design.',
+                'And she is the Eye of Ra: sent out to punish humanity, she cannot be stopped by argument, only by trickery — seven thousand jars of beer dyed red with ochre, poured across the fields, which she drinks believing it blood and falls asleep. The Egyptians kept both halves of her without embarrassment.',
+            ],
+            cult: 'Dendera — the temple whose ceiling carries the zodiac now in the Louvre; Deir el-Bahari; the turquoise mines of Sinai.',
+            interpretatio: 'Aphrodite to the Greeks, which captures the love and loses the lioness entirely.',
+        },
+        {
+            slug: 'set', name: 'Set', native: '𓃩', lang: 'hieroglyphic',
+            domain: 'Storm, desert, disorder — and the defence of the sun', group: 'egyptian',
+            exposition: [
+                'Set murders his brother Osiris and contends with Horus for eighty years, and he is also the one who stands in the prow of the night-barque and spears the serpent Apep, without whom the sun would not rise. Egypt kept a god who was both, and for long stretches he was respectable: the Ramesside pharaohs are named for him.',
+                'His demonization is late and political, hardening under Persian and Greek rule until his images were defaced. The animal that writes his name — long-snouted, square-eared, forked-tailed — matches no creature anyone has identified, and Egyptologists still argue about what it is.',
+            ],
+            cult: 'Ombos (Naqada) and Avaris; strong in the eastern Delta and the oases.',
+            interpretatio: 'Typhon to the Greeks — the monster who fought Zeus, which is how thoroughly the late reading won.',
+        },
+        {
+            slug: 'mot', name: 'Mot', native: 'מת', lang: 'hebrew',
+            domain: 'Death itself — appetite rather than rule', group: 'levantine',
+            exposition: [
+                'Mot is not a lord of the dead but a throat. The Ugaritic poet gives him a gullet reaching from earth to sky and a lip to the stars, and he swallows Baal whole; the land dries. He is hunger as a cosmic principle, and the harvest is his negotiation.',
+                'Anat ends him with agricultural violence — she splits him with a blade, winnows him, burns him, grinds him, sows him in a field — which is either the threshing of grain read as myth or myth read into the threshing, and the poem does not choose.',
+            ],
+            cult: 'No temple is attested: one does not build for Death. He appears in the myth and in personal names.',
+            interpretatio: 'The Hebrew word for death is the same word, and Death personified in Hosea, Job and Habakkuk keeps his outline.',
+        },
+        {
+            slug: 'athtart', name: 'Athtart / Astarte', native: 'עשתרת', lang: 'hebrew',
+            domain: 'Desire, war, and the evening star', group: 'levantine',
+            exposition: [
+                'The Levantine link in the longest chain of translation in this portal: Inanna to Ishtar to Athtart to Astarte to Aphrodite, one goddess of love-and-war walked west across three language families with the planet Venus travelling beside her the whole way.',
+                'She is one of the Hebrew Bible’s standing complaints — Ashtoreth, deliberately mispointed with the vowels of bosheth, “shame” — and Solomon is charged with building her a high place. Egypt adopted her as a war-goddess of chariots; Sidon called her its lady.',
+            ],
+            cult: 'Sidon and Tyre above all; Ugarit; an Egyptian following from the Nineteenth Dynasty.',
+            interpretatio: 'Aphrodite to the Greeks, Venus to Rome; Herodotus traces the oldest temple of “Aphrodite Ourania” to Ascalon on this coast.',
+        },
+        {
+            slug: 'kothar', name: 'Kothar-wa-Khasis', native: 'כתר', lang: 'hebrew',
+            domain: 'The divine craftsman; skill as a power', group: 'levantine',
+            exposition: [
+                'His double name means Skilful-and-Wise, and the wisdom meant is technical: he forges the two clubs, Yagrush and Ayyamur — Driver and Chaser — with which Baal beats the Sea, and he builds Baal’s palace, insisting against the owner’s wishes that it have a window.',
+                'He works from Memphis and from Crete in the poem, which is a Bronze Age statement about where the best craftsmen came from: the god of skill is an import, and the tradition says so plainly.',
+            ],
+            cult: 'Attested in the Ugaritic texts rather than by temple; invoked in incantation.',
+            interpretatio: 'Hephaestus and Ptah both stand behind and beside him — the smith-god is one of the most portable offices in this table.',
+        },
+        {
+            slug: 'aphrodite', name: 'Aphrodite', native: 'Ἀφροδίτη', lang: 'greek',
+            domain: 'Desire — the force, not the sentiment', group: 'hellenic',
+            exposition: [
+                'Hesiod has her born from the severed genitals of Ouranos thrown into the sea, and the Greeks did not find that pretty: Aphrodite is the compulsion that overrides judgement, which is why she starts the Trojan War with a bribe and why Sappho begs her to come as an ally rather than an affliction.',
+                'The Greeks themselves knew she came from the east — Herodotus traces her cult back through Cyprus to Ascalon — and Aphrodite Ourania, the heavenly one, was distinguished from Pandemos, the common one, in a split the philosophers later made into a whole theory of love.',
+            ],
+            cult: 'Paphos on Cyprus, where the cult stone was aniconic; Cythera; Corinth.',
+            interpretatio: 'Venus at Rome, and back along the chain to Astarte, Ishtar and Inanna — the same office, five languages deep.',
+        },
+        {
+            slug: 'hermes', name: 'Hermes', native: 'Ἑρμῆς', lang: 'greek',
+            domain: 'Boundaries, messages, cunning, and the road down', group: 'hellenic',
+            exposition: [
+                'Hermes begins as a heap of stones marking a boundary — the herm — and never stops being the god of edges: between properties, between languages, between the living and the dead. He is the only Olympian who moves freely into Hades, and the souls go with him.',
+                'On his first day alive he steals Apollo’s cattle, invents the lyre from a tortoise, and talks his way out of the charge. Patron of merchants and thieves alike, because the Greeks understood those to be adjacent trades — and of interpreters, which is why the science of interpretation is called hermeneutics.',
+            ],
+            cult: 'Herms at every doorway and crossroads in Athens; Mount Cyllene; Kyllenian shrines and the Hermaia games.',
+            interpretatio: 'Mercury at Rome; matched to Thoth in Egypt, and out of that identification came Hermes Trismegistus and the entire Hermetic corpus.',
+        },
+        {
+            slug: 'demeter-persephone', name: 'Demeter and Persephone', native: 'Περσεφόνη', lang: 'greek',
+            domain: 'Grain, grief, and the returning year', group: 'hellenic',
+            exposition: [
+                'A mother searches with torches while the earth goes barren, and a daughter, having eaten some pomegranate seeds below, must spend part of each year in the dark. It is the plainest agricultural myth in Greece and also the most emotionally exact one about losing a child.',
+                'At Eleusis it became the Mysteries: nearly two thousand years of initiations, tens of thousands of initiates, and a secret so well kept that we still do not know what was shown in the telesterion. What the initiates said afterwards was that they no longer feared death.',
+            ],
+            cult: 'Eleusis; the Thesmophoria, a women-only festival kept across the Greek world.',
+            interpretatio: 'Ceres and Proserpina at Rome; Herodotus matched Demeter to Isis, and the two searching, mourning, restoring goddesses do rhyme.',
+        },
+        {
+            slug: 'hades', name: 'Hades', native: 'Ἅιδης', lang: 'greek',
+            domain: 'The rule of the dead; and, by euphemism, wealth', group: 'hellenic',
+            exposition: [
+                'The unseen one — that is what the name appears to mean — got the underworld by lot when the three brothers divided the cosmos, and he keeps it strictly. He is not evil and not a tempter; he is a warden who does not release what is his, and Greek religion had almost no cult for him because there is nothing to ask him for.',
+                'He was so unlucky to name aloud that the Greeks called him Plouton, the wealthy, on the reasoning that everything grows out of the ground he owns — and the euphemism became the name, which is why Rome says Pluto.',
+            ],
+            cult: 'Almost none by design; a temple at Elis reportedly opened one day a year, and necromantic oracles at Ephyra and Cumae approached him sideways.',
+            interpretatio: 'Pluto and Dis Pater at Rome; Serapis absorbed part of his office in Ptolemaic Egypt.',
+        },
+        {
+            slug: 'thor', name: 'Þórr', native: null, lang: null,
+            domain: 'Thunder, the hammer, and the defence of the enclosure', group: 'norse',
+            exposition: [
+                'The archaeology disagrees with the literature about who mattered most. The sagas and the Edda are full of Odin, a god for kings and poets; the ground is full of Thor’s hammers — small silver Mjǫllnir pendants worn at the neck, especially as Christianity advanced and a cross was the alternative.',
+                'He is the farmer’s god and the boundary’s: he fights giants, hallows with the hammer, blesses marriages and land, and at the end of the world he kills the Midgard Serpent and walks nine steps before its venom takes him. Thursday is his.',
+            ],
+            cult: 'Amulets across Scandinavia and the Danelaw; Adam of Bremen puts him at the centre of the Uppsala temple, above Odin.',
+            interpretatio: 'Jupiter in the Latin week — Þórsdagr where Latin has dies Iovis — and one of the clearest Indo-European thunderers beside Indra and Zeus.',
+        },
+        {
+            slug: 'loki', name: 'Loki', native: null, lang: null,
+            domain: 'The flaw in the plan; and eventually the end of the world', group: 'norse',
+            exposition: [
+                'Loki solves the problems he causes, which is the whole shape of him: he gets Thor’s hammer stolen and recovers it, loses the gods their goddess and wins her back, and fathers, in various shapes, the wolf that will eat Odin, the serpent that circles the world, and the eight-legged horse Odin rides. He is not the gods’ enemy; he is their liability.',
+                'Then he engineers Baldr’s death and the tone changes: bound beneath a dripping serpent until Ragnarǫk, when he steers the ship of the dead. Whether he was ever worshipped is doubtful — no place-names, no cult — which makes him a rare thing, a major god of story and not of altar.',
+            ],
+            cult: 'None attested — no temples, no place-names, no dedications.',
+            interpretatio: 'Resists it. Comparisons to Prometheus and to trickster figures elsewhere are made constantly and hold only in fragments.',
+        },
+        {
+            slug: 'tyr', name: 'Týr', native: null, lang: null,
+            domain: 'The oath, and what keeping it costs', group: 'norse',
+            exposition: [
+                'The gods needed to bind the wolf Fenrir, and Fenrir would only submit to the fetter if one of them put a hand in his mouth as a pledge of good faith. Týr did, knowing the pledge was false. The wolf was bound; the hand was bitten off. He is the god of the oath and the only one willing to pay for one.',
+                'His name is the oldest thing about him: Týr is cognate with Zeus, Jupiter and Dyaus — the Indo-European sky-father word — which suggests he was once the head of the pantheon and was displaced by Odin long before anything was written down.',
+            ],
+            cult: 'Place-names in Denmark; Tuesday, Týsdagr, standing where Latin has dies Martis.',
+            interpretatio: 'Mars in the Roman interpretatio, which reads the war and misses the law.',
+        },
+        {
+            slug: 'sarasvati', name: 'Sarasvatī', native: 'सरस्वती', lang: 'devanagari',
+            domain: 'Speech, learning, music — and a river', group: 'vedic',
+            exposition: [
+                'She begins as a river, praised in the Rigveda as the best of mothers, rivers and goddesses, and the river is gone: the Sarasvatī of the hymns dried or shifted, and locating it is one of the live arguments of South Asian archaeology. What remained was the goddess of everything that flows — speech first of all.',
+                'By the classical period she holds the vīṇā and the book: patron of Sanskrit, of poets and of students, honoured on Vasant Panchami when children are taught to write their first letters. Her worship crossed with Buddhism into Japan, where she is Benzaiten.',
+            ],
+            cult: 'Vasant Panchami across India; shrines wherever there are schools; Benzaiten shrines in Japan.',
+            interpretatio: 'Named beside the Muses by comparatists, though her office is broader — she is the ground of articulate speech, not its inspiration.',
+        },
+        {
+            slug: 'vishnu', name: 'Viṣṇu', native: 'विष्णु', lang: 'devanagari',
+            domain: 'Preservation; and the descent into the world', group: 'vedic',
+            exposition: [
+                'Minor in the Rigveda — three strides that measure out the cosmos — and supreme in the Purāṇas, Viṣṇu is the god who keeps things going and, crucially, comes down: the avatāras, of whom Rāma and Kṛṣṇa are the great ones, are the doctrine that God intervenes in history in a body.',
+                'That doctrine, arrived at independently, is the closest structural parallel in world religion to incarnation, and it has occupied comparative theology for two centuries. Vaiṣṇava devotion — the bhakti of surrender to a personal, loving God — is among the largest religious movements on earth.',
+            ],
+            cult: 'Tirupati, the most visited pilgrimage site in the world; Srirangam; Puri; Badrinath.',
+            interpretatio: 'The Greeks in India matched Kṛṣṇa to Herakles; the parallel that matters to this portal is with incarnation rather than with any single god.',
+        },
+        {
+            slug: 'yama', name: 'Yama', native: 'यम', lang: 'devanagari',
+            domain: 'The first to die, and therefore the king of the dead', group: 'vedic',
+            exposition: [
+                'Yama’s claim on the underworld is unlike any other in this table: he rules the road because he walked it first. The Rigveda says he chose death and found the path, and every mortal after him follows a way he opened.',
+                'In the Kaṭha Upaniṣad he is the teacher: the boy Naciketas waits three nights at his door and refuses every bribe until Yama tells him what happens after death — one of the foundational texts on the self, taught by Death because Death is the only one qualified.',
+            ],
+            cult: 'Invoked in funerary rite rather than temple; the southern quarter is his.',
+            interpretatio: 'Cognate with Iranian Yima, the first king; passes into Buddhism as Yama the judge, and into China and Japan as Yanluo and Enma.',
+        },
+        {
+            slug: 'ogun', name: 'Ògún', native: null, lang: null,
+            domain: 'Iron, and every trade that uses it', group: 'yoruba',
+            exposition: [
+                'Ògún cleared the road. In the founding narrative the other òrìṣà cannot descend through the bush until he cuts the path with iron, and the office has expanded with the metal ever since: he is the god of blacksmiths, hunters and warriors, and equally of surgeons, mechanics, lorry drivers and soldiers.',
+                'To swear on iron is to swear on him, and Nigerian courts have accepted an oath taken on a piece of iron from Yoruba witnesses — a working legal recognition of an òrìṣà, in a modern state, today.',
+            ],
+            cult: 'Ire and Ondo; the forge and the roadside; Ogun in Haitian Vodou, Ogum in Brazil.',
+            interpretatio: 'Paired with Saint George and Saint James in the diaspora; comparisons to Hephaestus catch the forge and miss the road.',
+        },
+        {
+            slug: 'osun', name: 'Ọ̀ṣun', native: null, lang: null,
+            domain: 'Fresh water, sweetness, fertility, wealth', group: 'yoruba',
+            exposition: [
+                'The most consequential story about Ọ̀ṣun is a story about exclusion: when the male òrìṣà came down to order the world and left her out of their councils, nothing they attempted would hold together, and the work resumed only when they turned back and included her. It is a myth about who is required.',
+                'Her river runs at Osogbo, and the sacred grove there — replanted and re-sculpted from the 1950s by the Austrian-born artist and priestess Susanne Wenger with local artists — is now a UNESCO World Heritage site and the centre of an annual festival drawing hundreds of thousands.',
+            ],
+            cult: 'The Osun-Osogbo grove and its August festival; Oshun in Cuba, Oxum in Brazil.',
+            interpretatio: 'Paired with Our Lady of Charity in Cuba; the Aphrodite comparison catches the sweetness and misses the sovereignty.',
+        },
+        {
+            slug: 'orunmila', name: 'Ọ̀rúnmìlà', native: null, lang: null,
+            domain: 'Wisdom, divination, and the witness of destiny', group: 'yoruba',
+            exposition: [
+                'Ọ̀rúnmìlà was present when each person’s destiny was chosen, and that is his qualification: he alone can say what was agreed. The system that consults him is Ifá, and it is one of the great intellectual structures of the continent — sixteen principal odù squared into two hundred and fifty-six figures, each with a body of verse, stories and prescriptions the babaláwo must hold by heart.',
+                'The corpus is oral, enormous, and formally taught over years. UNESCO inscribed Ifá on its list of Intangible Cultural Heritage in 2005, and the divination is practised now in Nigeria, Benin, Cuba, Brazil and the United States.',
+            ],
+            cult: 'Ilé-Ifè and Òkè-Ìtasè; wherever a babaláwo casts the opele chain or the palm nuts.',
+            interpretatio: 'Compared to Thoth and to Hermes for the office of recorded wisdom; the comparison is fair on function and thin on everything else.',
+        },
+        {
+            slug: 'susanoo', name: 'Susanoo', native: '須佐之男', lang: 'cjk',
+            domain: 'Storm, the sea, and disruption that turns out useful', group: 'kami',
+            exposition: [
+                'Amaterasu’s brother is the wrecker: he ruins her rice fields, breaks the irrigation channels and flings a flayed horse through the roof of her weaving hall, which is what drives her into the cave and the world into darkness. He is expelled from heaven for it.',
+                'Then, in exile at Izumo, he kills the eight-headed serpent Yamata-no-Orochi by getting it drunk, and finds in its tail the sword that becomes one of the three imperial regalia. He also composes what the Kojiki presents as the first Japanese poem. Disorder in this pantheon is not simply the enemy.',
+            ],
+            cult: 'Yasaka Shrine in Kyoto and the Gion Matsuri; Susa and the Izumo region.',
+            interpretatio: 'Conflated with the Buddhist Gozu Tennō in the medieval period, and disentangled again by the Meiji separation of kami and buddhas.',
+        },
+        {
+            slug: 'izanagi-izanami', name: 'Izanagi and Izanami', native: '伊邪那岐', lang: 'cjk',
+            domain: 'The making of the islands, and the bargain with death', group: 'kami',
+            exposition: [
+                'They stand on the floating bridge of heaven, stir the brine with a jewelled spear, and the first island forms from what drips off the point. Their courtship has a false start the text takes seriously — the woman speaks first, the child is malformed, they begin again — and then the islands and the kami are born.',
+                'Izanami dies bearing fire. Izanagi follows her into Yomi and looks at her against her word, sees corruption, and flees; she pursues him to the pass and they end it there with a bargain — she will take a thousand lives a day, he will cause fifteen hundred births. It is a creation myth that ends by explaining the population.',
+            ],
+            cult: 'Taga Taisha in Shiga; Yomotsu Hirasaka in Shimane, where the pass is pointed out.',
+            interpretatio: 'The descent-and-looking-back is compared to Orpheus constantly; the comparison is old, honest, and unresolved.',
+        },
+        {
+            slug: 'inari', name: 'Inari', native: '稲荷', lang: 'cjk',
+            domain: 'Rice, and therefore prosperity and business', group: 'kami',
+            exposition: [
+                'Roughly a third of all Shinto shrines in Japan are Inari shrines — tens of thousands of them — which makes this the most widely worshipped kami in the country by simple count. Rice was wealth, so the god of rice became the god of commerce, and companies still maintain small Inari shrines on office rooftops.',
+                'The foxes at the gate are messengers rather than the kami, a distinction the tradition insists on and popular usage constantly blurs. Inari is variously male, female, or both, and the tradition is comfortable leaving it there.',
+            ],
+            cult: 'Fushimi Inari Taisha in Kyoto, with its corridors of donated vermilion torii climbing the mountain.',
+            interpretatio: 'Identified with the Buddhist Dakiniten in the syncretic period; the fox-messenger has no clean parallel elsewhere in this table.',
+        },
+        {
+            slug: 'hachiman', name: 'Hachiman', native: '八幡', lang: 'cjk',
+            domain: 'War, archery, and the protection of the nation', group: 'kami',
+            exposition: [
+                'Hachiman is a deified emperor — Ōjin, by identification — and the patron of the samurai from the Minamoto onward, which made him for centuries the most politically consequential kami in Japan. Second only to Inari in number of shrines.',
+                'He is also the textbook case of honji suijaku, the medieval theology in which kami are local traces of buddhas: he was styled Hachiman Daibosatsu, a Great Bodhisattva, and worshipped as kami and buddha together for a thousand years until the Meiji government forcibly separated the two in 1868.',
+            ],
+            cult: 'Usa Jingū in Kyushu; Iwashimizu near Kyoto; Tsurugaoka Hachimangū at Kamakura.',
+            interpretatio: 'The clearest instance in this table of a god who was simultaneously and officially a figure in two religions.',
+        },
+        {
+            slug: 'jupiter', name: 'Jupiter', native: 'IVPPITER', lang: 'latin',
+            domain: 'The sky, the oath, and the Roman state', group: 'roman',
+            exposition: [
+                'The name is the oldest word in this table still in ordinary use: Dyēu-pəter, sky father, the same ancestor as Zeus, Dyaus and Týr. But the Roman god is not Zeus in a toga — he is a magistrate. Jupiter Optimus Maximus on the Capitol is approached by formula, consulted through auspices, and bound to procedure.',
+                'A place struck by lightning was fenced off as a bidental and left to him; treaties were sworn by him; and his priest, the flamen Dialis, lived under a hedge of ritual prohibitions so dense he could not sleep three nights outside his own bed or see an army in array.',
+            ],
+            cult: 'The Capitoline temple, shared with Juno and Minerva; the Feriae Latinae on the Alban Mount.',
+            interpretatio: 'Equated with Zeus, and through Rome with Baal at Baalbek, Amun at Siwa and the Germanic thunderer of Thursday.',
+        },
+        {
+            slug: 'venus', name: 'Venus', native: 'VENVS', lang: 'latin',
+            domain: 'Desire, charm, and the ancestry of a family', group: 'roman',
+            exposition: [
+                'Venus began as something closer to garden charm — the noun venus means allure — and was reshaped by contact with the Greek Aphrodite into a full goddess of desire. Then politics took her: through Aeneas she is the ancestress of the Julian family, which made her the divine grandmother of Julius Caesar and Augustus.',
+                'Caesar built her a temple as Venus Genetrix, mother of the line, in his new forum. It is the most successful use of a genealogy in Roman history, and the Aeneid is in part its literature.',
+            ],
+            cult: 'Venus Genetrix in Caesar’s forum; Venus Erycina from Sicily; the Veneralia in April.',
+            interpretatio: 'Aphrodite, and behind her Astarte, Ishtar and Inanna — this cell is the western end of the portal’s longest chain.',
+        },
+        {
+            slug: 'mars', name: 'Mars', native: 'MARS', lang: 'latin',
+            domain: 'War — and, older than that, the fields', group: 'roman',
+            exposition: [
+                'Mars is not Ares in Latin. Ares is slaughter and the Greeks disliked him; Mars is a father of the Roman people, invoked in an old farmer’s prayer preserved by Cato to keep sickness and bad weather off the land, and honoured at the opening and closing of the campaigning season because armies and harvests share a calendar.',
+                'He fathers Romulus and Remus, which makes him the ancestor of the city itself, and March is his. The Roman soldier’s god is also the Roman farmer’s, and they were generally the same man.',
+            ],
+            cult: 'The Campus Martius; the Salian priests’ dances in March and October; Mars Ultor in Augustus’ forum.',
+            interpretatio: 'Ares by convention; matched to Týr in the Germanic week — Tuesday standing where Latin has dies Martis.',
+        },
+        {
+            slug: 'mercury', name: 'Mercury', native: 'MERCVRIVS', lang: 'latin',
+            domain: 'Trade, profit, and the crossing of borders', group: 'roman',
+            exposition: [
+                'His name is built on merx, merchandise: where Hermes is a boundary stone that acquired a personality, Mercury is a commercial function that acquired a god. His temple was dedicated in 495 BCE together with the guild of merchants, and his festival in May involved sprinkling goods and the merchant himself with water from his spring.',
+                'He then absorbed all of Hermes — the caduceus, the winged sandals, the leading of souls — and travelled: Tacitus reports that the Germans worship Mercury above all, and the god he means is almost certainly Odin, which is why Wednesday sits where dies Mercurii does.',
+            ],
+            cult: 'The temple on the Aventine; Mercuralia in May; and shrines the length of the Rhine frontier.',
+            interpretatio: 'Hermes outright; Odin by Roman report; and, through Hermes, the ancestor of Hermes Trismegistus.',
         },
     ],
 };
