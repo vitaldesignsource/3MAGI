@@ -4,6 +4,7 @@ import { Link, useParams, useLocation, Navigate } from 'react-router-dom';
 import SiteHeader from '../../components/SiteHeader';
 import SiteFooter from '../../components/SiteFooter';
 import ChristianitiesTree from './ChristianitiesTree';
+import SYMBOL_MARKS from './symbolMarks';
 import { SECTION_BY_SLUG, loadData } from './lib';
 
 // One page, five doors: christologies, branches, councils, figures, symbols.
@@ -188,7 +189,9 @@ function Symbols({ data, open, setOpen }) {
                     className={`ch-symbol-card${open === e.slug ? ' is-open' : ''}`}
                     onClick={() => setOpen(open === e.slug ? null : e.slug)}
                     aria-expanded={open === e.slug}>
-                    <span className="ch-symbol-glyph edu-glyph" aria-hidden="true">{e.glyph || '✧'}</span>
+                    {SYMBOL_MARKS[e.slug]
+                        ? <span className="ch-symbol-glyph is-drawn" aria-hidden="true">{SYMBOL_MARKS[e.slug]}</span>
+                        : <span className="ch-symbol-glyph edu-glyph" aria-hidden="true">{e.glyph || '✧'}</span>}
                     <span className="ch-symbol-name">{e.name}</span>
                     {open === e.slug && (
                         <span className="ch-symbol-body">

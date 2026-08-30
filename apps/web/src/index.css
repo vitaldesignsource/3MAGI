@@ -11096,6 +11096,9 @@ h3 {
 .ch-symbol-card:hover { border-color: rgba(209, 173, 104, 0.6); }
 .ch-symbol-card.is-open { grid-column: 1 / -1; border-color: rgba(209, 173, 104, 0.7); }
 .ch-symbol-glyph { font-size: 2.2rem; line-height: 1.3; color: #d1ad68; }
+.ch-symbol-glyph.is-drawn { display: flex; align-items: center; justify-content: center; height: 2.9rem; }
+.ch-symbol-mark { width: 2.7rem; height: 2.7rem; color: #d1ad68; transition: color 180ms ease; }
+.ch-symbol-card:hover .ch-symbol-mark, .ch-symbol-card.is-open .ch-symbol-mark { color: #f4e8c8; }
 .ch-symbol-name { font-size: 0.85rem; color: rgba(240, 233, 218, 0.85); text-align: center; }
 .ch-symbol-body {
   display: flex; flex-direction: column; gap: 0.5rem; margin-top: 0.8rem;
