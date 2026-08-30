@@ -11032,6 +11032,46 @@ h3 {
   .ch-page .ch-gallery-caption { padding: 0.7rem 0.8rem 0.85rem; }
 }
 
+/* --- the reading voice ------------------------------------------------------
+   Cinzel is the site's display face and has no true lowercase — its small
+   letters are small capitals — which suits titles and labels but turns long
+   prose into a wall of caps. The article pages already re-family their body
+   text to Georgia; the Christianities portal reads the same way: sentence-
+   case serif for everything meant to be read, Cinzel kept for headings,
+   kickers, badges, chips, and table headers. Native scripts keep their own
+   faces via .edu-glyph. */
+.ch-page .edu-hero-sub,
+.ch-page .edu-section-head p,
+.ch-page .ch-entry-sub,
+.ch-page .ch-entry-body,
+.ch-page .ch-claim,
+.ch-page .ch-quote p,
+.ch-page .ch-quote cite,
+.ch-page .ch-selfname, .ch-page .ch-exonym, .ch-page .ch-lineage,
+.ch-page .edu-hall-blurb,
+.ch-page .ch-gallery-caption > span,
+.ch-page .ch-symbol-body,
+.ch-page .ch-creed-text,
+.ch-page .ch-words-bridge,
+.ch-page .edu-cog-noterow td,
+.ch-page .ch-canon-tradnote p,
+.ch-page .ch-map-blurb, .ch-page .ch-map-edesc,
+.ch-page .edu-kinship-legend,
+.ch-page .edu-event-detail, .ch-page .edu-event-dating,
+.ch-page .edu-search-detail {
+  font-family: Georgia, "Times New Roman", serif;
+  letter-spacing: 0.005em;
+}
+.ch-page .edu-hero-sub { font-size: 1.08rem; line-height: 1.85; }
+.ch-page .ch-entry-body > p, .ch-page .ch-kv p, .ch-page .ch-kv ul { font-size: 1.01rem; line-height: 1.85; }
+.ch-page .ch-entry-sub { font-size: 0.92rem; }
+/* labels inside serif bodies stay in the display voice */
+.ch-page .ch-kv > span { font-family: "Cinzel", Georgia, serif; }
+.ch-page .ch-creed-text { font-size: 1.02rem; }
+.ch-page .ch-creed-clausenote, .ch-page .ch-creed-variant { font-size: 0.9rem; }
+.ch-page .edu-hall-blurb { line-height: 1.7; }
+.ch-page .ch-gallery-caption > span { font-size: 0.9rem; line-height: 1.7; }
+
 /* inline registers for the Christianities prose — the magazine's own voice:
    gold italic for terms of art, plain italic for works, quiet bold for the
    first appearance of a keystone name in a block */
