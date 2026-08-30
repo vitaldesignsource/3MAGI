@@ -128,6 +128,12 @@ html {
   scroll-behavior: smooth;
 }
 
+/* The header's mist ornament animates a few pixels past the viewport and
+   lets phones nudge-scroll sideways on every page. Clip (not hidden: clip
+   creates no scroll container and leaves position:sticky alone) retires the
+   whole class of stray-pixel horizontal bleeds. */
+html, body { overflow-x: clip; }
+
 body {
   margin: 0;
   font-family: "Cinzel", Georgia, "Times New Roman", serif;
@@ -10959,7 +10965,9 @@ h3 {
 .ch-entry-badge {
   color: rgba(209, 173, 104, 0.85); border: 1px solid rgba(209, 173, 104, 0.4);
   padding: 0.15rem 0.55rem; font-size: 0.68rem; letter-spacing: 0.16em;
-  text-transform: uppercase; white-space: nowrap;
+  text-transform: uppercase;
+  /* guard: a badge never widens its row, however long the data */
+  white-space: normal; max-width: 11rem; text-align: center; flex-shrink: 0;
 }
 .ch-entry-body { padding: 0 1.2rem 1.2rem; }
 .ch-entry-body > p { color: rgba(232, 224, 208, 0.82); line-height: 1.8; margin: 0 0 1em; }
@@ -10982,6 +10990,42 @@ h3 {
 }
 .ch-quote p { margin: 0 0 0.3rem; color: #ecd9ae; font-style: italic; line-height: 1.7; }
 .ch-quote cite { color: rgba(222, 212, 196, 0.55); font-size: 0.8rem; font-style: normal; }
+
+/* Wide tables and charts (cognates, canon, matrix, tree) scroll inside
+   their own container; the page itself never scrolls sideways. This is the
+   screen rule the print stylesheet was overriding all along — it never
+   existed on screen, so phones inherited the body-stretching overflow. */
+.edu-kinship-scroll {
+  overflow-x: auto;
+  max-width: 100%;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* mobile: "Christianities" is one unbreakable fourteen-letter word, and the
+   global h1 floor of 4rem cannot hold it on a phone. Scale by viewport below
+   tablet width so the word always fits; desktop keeps the grand size. The
+   hero paragraph eases a step too — nine lines of small caps at full size
+   read as a wall on a phone. */
+@media (max-width: 760px) {
+  .ch-page .edu-hero h1 { font-size: clamp(1.9rem, 10vw, 4rem); }
+  .ch-page .edu-hero-sub { font-size: 0.98rem; line-height: 1.72; }
+  .ch-page .edu-hero .kicker { letter-spacing: 0.22em; }
+
+  /* the wall of signs keeps two columns on a phone */
+  .ch-page .ch-symbol-grid { grid-template-columns: repeat(auto-fill, minmax(118px, 1fr)); gap: 0.55rem; }
+  .ch-page .ch-symbol-card { padding: 0.9rem 0.5rem; }
+  .ch-page .ch-symbol-glyph { font-size: 1.7rem; }
+  .ch-page .ch-symbol-glyph.is-drawn { height: 2.4rem; }
+  .ch-page .ch-symbol-mark { width: 2.2rem; height: 2.2rem; }
+
+  /* the map pans at readable size rather than shrinking to a stamp */
+  .ch-page .ch-map-stage { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  .ch-page .ch-map-svg { min-width: 680px; }
+
+  .ch-page .ch-entry-head { padding: 0.85rem 0.9rem; gap: 0.7rem; }
+  .ch-page .ch-entry-body { padding: 0 0.9rem 1rem; }
+  .ch-page .ch-gallery-caption { padding: 0.7rem 0.8rem 0.85rem; }
+}
 
 /* the great tree — time-axis phylogeny */
 .ch-tree { margin-top: clamp(3rem, 6vw, 5rem); }

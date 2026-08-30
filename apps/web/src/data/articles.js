@@ -532,7 +532,7 @@ export const getArticleBySlug = (slug) => articles.find((a) => a.slug === slug);
 export const traditionMeta = {
     'western-esoteric': { label: 'Western Esoteric', glyph: '⚖', description: 'Alchemy, Hermetic philosophy, ceremonial practice, and the symbolic arts gathered as a many-branched current of transformation.' },
     'greco-roman': { label: 'Greco-Roman', glyph: 'Ω', description: 'Oracle, allegory, and philosophy inherited from the classical Mediterranean world.' },
-    'egyptian': { label: 'Egyptian', glyph: '☥', description: 'Stellar immortality, funerary ascent, and the sky-theology of the Nile.' },
+    'egyptian': { label: 'Egyptian', glyph: '☥︎', description: 'Stellar immortality, funerary ascent, and the sky-theology of the Nile.' },
     'abrahamic': { label: 'Abrahamic', glyph: '✦', description: 'The shared covenant traditions of Judaism, Christianity, and Islam.' },
     'vedic': { label: 'Vedic', glyph: '◉', description: 'Celestial timing, mysticism, and ritual drawn from the Indian subcontinent.' },
     'moorish-science': { label: 'Moorish Science', glyph: '★', description: 'Twentieth-century American esotericism reclaiming Moorish ancestry and scripture.' },

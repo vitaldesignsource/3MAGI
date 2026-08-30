@@ -10,7 +10,7 @@ export default {
         {
             "slug": "cross",
             "name": "The Cross",
-            "glyph": "✝",
+            "glyph": "✝︎",
             "form": "Two beams crossed: the Latin cross (crux immissa) with the transom set high, the Greek cross with four equal arms, the tau (crux commissa) with no upright above the bar, the saltire laid diagonally. Heraldry and liturgy between them count several hundred further variants.",
             "origin": "The instrument was Roman, common, and shameful; the image came late. No object that can be securely identified as a Christian cross survives from before the third century, and the crucifixion itself is almost unrepresented in Christian art until the fifth. Before then the cross is made rather than drawn: Tertullian (De corona 3, usually dated c. 211) describes Christians tracing it on the forehead at every turn of the day, and Justin Martyr (1 Apology 55) finds its shape hidden in the ship's mast, the plough, the carpenter's tools and the standards of Rome. The earliest datable narrative crucifixions are two small Roman works of the 420s and 430s: a carved panel of the cypress doors of Santa Sabina, and an ivory casket panel — one of the Maskell Ivories — now in the British Museum.",
             "meaning": "The manner of the death, and the claim that the manner of the death was the victory. In the East it is more often shown gemmed, haloed or flowering — a trophy rather than a gallows — and it is signed on the body, breathed over water, and set at the crossroads.",
@@ -70,7 +70,7 @@ export default {
         {
             "slug": "crux-ansata",
             "name": "The Crux Ansata",
-            "glyph": "☥",
+            "glyph": "☥︎",
             "form": "A cross with a loop for its upper arm: the Egyptian ankh, redrawn by Christian hands with the loop sometimes squared, sometimes filled with a smaller cross.",
             "origin": "Egyptian, the hieroglyph ꜥnḫ, life, in use for three millennia before it was Christian. Coptic Christians took it over directly — on funerary stelae, woven into textiles, cut into the walls of the temple at Philae when the sanctuary became a church.",
             "meaning": "Life, and specifically eternal life; the inherited word made a promise of the resurrection.",
@@ -290,7 +290,7 @@ export default {
         {
             "slug": "old-believer-cross",
             "name": "The Eight-Pointed Cross",
-            "glyph": "☦",
+            "glyph": "☦︎",
             "form": "Three bars. A short upper bar for the title-board; the long arms; and a lower slanting bar for the footrest, its right end (the viewer's left) raised. Around it, in Golgotha crosses, a dense apparatus of letters: К and Т for the lance and the reed, ГГ for the hill of Golgotha, ГА for Adam's skull, МЛРБ for the place of the skull become paradise, and НИКА.",
             "origin": "A Byzantine and Slavic development in which the suppedaneum of early crucifixion images becomes a fixed and slanted bar. It becomes a confessional marker in Russia after the liturgical reforms pressed by Patriarch Nikon from 1653 and the anathemas of the councils of 1666-67, when those who kept the old rite kept the old cross.",
             "meaning": "The slant is read devotionally as the balance of the two thieves — raised toward the one who repented, lowered toward the one who did not — following the hymnography of the Good Thief. Other explanations, including the flattening of a perspectival footrest in early images, have been offered and cannot be excluded.",

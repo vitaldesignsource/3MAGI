@@ -238,6 +238,7 @@ if (symbols) {
                     || (cp >= 0x0041 && cp <= 0x024f)          // Latin
                     || (cp >= 0x0590 && cp <= 0x05f4)          // Hebrew
                     || (cp >= 0x1f300 && cp <= 0x1f9ff)        // pictographs, if ever used
+                    || cp === 0xfe0e               // text-presentation selector
                     || ch === ' ';
                 if (!ok) {
                     fail(`symbols/${s.slug}: glyph "${ch}" (U+${cp.toString(16).toUpperCase()}) `

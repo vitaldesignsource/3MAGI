@@ -42,13 +42,15 @@ function ChristianitiesPortalPage() {
                         churches that parted over a single Greek word, canons that do
                         not contain the same books, and several of the oldest
                         communions on earth standing exactly where they stood when
-                        they refused a council fifteen centuries ago. This portal
-                        maps the family: the understandings of Christ, the branches,
-                        the councils, the Bibles, the figures, the signs, and the
-                        places where all of it happened.
+                        they refused a council fifteen centuries ago.
+                    </p>
+                    <p className="edu-hero-sub">
+                        This portal maps the family: the understandings of Christ,
+                        the branches, the councils, the Bibles, the figures, the
+                        signs, and the places where all of it happened.
                     </p>
                     <div className="edu-hero-glyphs" aria-hidden="true">
-                        <span>☧</span><span>☦</span><span>⳩</span><span>✝</span><span>Α</span><span>Ω</span>
+                        <span>☧</span><span>☦︎</span><span>⳩</span><span>✝︎</span><span>Α</span><span>Ω</span>
                     </div>
                 </section>
 

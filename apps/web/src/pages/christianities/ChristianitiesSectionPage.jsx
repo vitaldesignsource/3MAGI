@@ -165,7 +165,8 @@ function Figures({ data, open, setOpen }) {
                 {entries.map((e) => (
                     <Expandable key={e.slug} id={e.slug} open={open === e.slug}
                         onToggle={() => setOpen(open === e.slug ? null : e.slug)}
-                        head={e.name} sub={`${e.dates} · ${e.role}`} badge={e.tradition}>
+                        head={e.name} sub={`${e.dates} · ${e.role}`} badge={null}>
+                        <div className="ch-kv"><span>Tradition</span><p>{e.tradition}</p></div>
                         <p>{e.contribution}</p>
                         {e.fate && <div className="ch-kv"><span>Fate</span><p>{e.fate}</p></div>}
                         {e.quote && (
