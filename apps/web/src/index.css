@@ -11513,6 +11513,154 @@ figure.ch-gallery-card { margin: 0; }
   .ch-hero-light > span { animation: none !important; opacity: 0.4; }
 }
 
+/* --- hero light: the Christianities doors -----------------------------------
+   Same principle as the Powers: move the light that is already in the picture.
+   Shared keyframes (hl-breathe, hl-pulse) do the work; only the gradients and
+   their anchors change. */
+
+/* CANDLES — Taizé: the bank of candles before the icons, warm and unsteady. */
+.is-candles .hl-a {
+  background:
+    radial-gradient(ellipse 30% 22% at 46% 62%, rgba(252, 214, 150, 0.30) 0%, transparent 72%),
+    radial-gradient(ellipse 18% 16% at 62% 56%, rgba(255, 226, 170, 0.22) 0%, transparent 74%);
+  animation: hl-pulse 6.5s ease-in-out infinite;
+}
+.is-candles .hl-b {
+  background: radial-gradient(ellipse 52% 40% at 50% 46%,
+    rgba(248, 206, 140, 0.14) 0%, transparent 74%);
+  animation: hl-breathe 11s ease-in-out infinite reverse;
+}
+
+/* CENSER — the icon screen: the lamp-gold on the gilding, and smoke lifting. */
+.is-censer .hl-a {
+  background: radial-gradient(ellipse 34% 40% at 50% 46%,
+    rgba(250, 218, 152, 0.26) 0%, rgba(238, 194, 120, 0.09) 46%, transparent 76%);
+  animation: hl-pulse 8.5s ease-in-out infinite;
+}
+.is-censer .hl-b {
+  background:
+    radial-gradient(ellipse 9% 26% at 38% 66%, rgba(226, 220, 208, 0.16) 0%, transparent 72%),
+    radial-gradient(ellipse 7% 20% at 61% 70%, rgba(226, 220, 208, 0.12) 0%, transparent 74%);
+  animation: hl-smoke 15s ease-in-out infinite;
+}
+@keyframes hl-smoke {
+  0%   { opacity: 0.25; transform: translateY(4%) scaleY(0.94); }
+  50%  { opacity: 0.85; transform: translateY(-3%) scaleY(1.08); }
+  100% { opacity: 0.25; transform: translateY(-9%) scaleY(1.16); }
+}
+
+/* TRENCH — Lalibela: hard highland sun across the rock cut, and dust. */
+.is-trench .hl-a {
+  background: linear-gradient(104deg,
+    transparent 30%, rgba(252, 226, 176, 0.20) 46%, rgba(255, 236, 196, 0.30) 50%,
+    rgba(252, 226, 176, 0.18) 55%, transparent 72%);
+  width: 190%; left: -45%;
+  animation: hl-sweep 24s ease-in-out infinite alternate;
+}
+.is-trench .hl-b {
+  background-image:
+    radial-gradient(1.3px 1.3px at 30% 40%, rgba(250, 232, 196, 0.6), transparent 100%),
+    radial-gradient(1px 1px at 66% 62%, rgba(244, 222, 184, 0.5), transparent 100%),
+    radial-gradient(1.6px 1.6px at 82% 32%, rgba(250, 232, 196, 0.45), transparent 100%);
+  background-size: 380px 380px; height: 200%; top: -100%; opacity: 0.4;
+  animation: hl-fall 30s linear infinite;
+}
+
+/* INCENSE — the tribunal: cold daylight, and the thread of smoke off the coals. */
+.is-incense .hl-a {
+  background: radial-gradient(ellipse 40% 34% at 34% 22%,
+    rgba(222, 230, 238, 0.18) 0%, transparent 74%);
+  animation: hl-breathe 14s ease-in-out infinite;
+}
+.is-incense .hl-b {
+  background: radial-gradient(ellipse 6% 30% at 47% 62%,
+    rgba(236, 230, 216, 0.24) 0%, transparent 72%);
+  animation: hl-smoke 12s ease-in-out infinite;
+}
+
+/* PRESS — the pressroom: window light on the wet floor, and paper dust. */
+.is-press .hl-a {
+  background: linear-gradient(96deg,
+    rgba(244, 232, 208, 0.22) 6%, rgba(244, 232, 208, 0.08) 30%, transparent 58%);
+  animation: hl-breathe 13s ease-in-out infinite;
+}
+.is-press .hl-b {
+  background-image:
+    radial-gradient(1.4px 1.4px at 20% 34%, rgba(248, 238, 214, 0.7), transparent 100%),
+    radial-gradient(1px 1px at 52% 56%, rgba(240, 228, 200, 0.55), transparent 100%),
+    radial-gradient(1.7px 1.7px at 74% 28%, rgba(248, 238, 214, 0.5), transparent 100%);
+  background-size: 400px 400px; height: 200%; top: -100%; opacity: 0.45;
+  animation: hl-fall 24s linear infinite;
+}
+
+/* HARBOUR — Alexandria: sea light through the window, cool against the scrolls. */
+.is-harbour .hl-a {
+  background: radial-gradient(ellipse 30% 44% at 78% 32%,
+    rgba(214, 232, 246, 0.24) 0%, rgba(206, 226, 244, 0.08) 46%, transparent 76%);
+  animation: hl-breathe 12s ease-in-out infinite;
+}
+.is-harbour .hl-b {
+  background: linear-gradient(268deg,
+    rgba(220, 236, 248, 0.16) 0%, transparent 44%);
+  animation: hl-pulse 17s ease-in-out infinite;
+}
+
+/* FLICKER — the catacomb: one oil lamp, and it is the only light there is. */
+.is-flicker .hl-a {
+  background:
+    radial-gradient(ellipse 22% 30% at 41% 46%, rgba(255, 214, 140, 0.34) 0%, rgba(240, 186, 108, 0.12) 46%, transparent 76%),
+    radial-gradient(ellipse 9% 12% at 41% 44%, rgba(255, 238, 196, 0.30) 0%, transparent 70%);
+  animation: hl-flicker 3.4s ease-in-out infinite;
+}
+.is-flicker .hl-b {
+  background: radial-gradient(ellipse 54% 44% at 45% 50%,
+    rgba(246, 202, 138, 0.12) 0%, transparent 76%);
+  animation: hl-breathe 9s ease-in-out infinite reverse;
+}
+@keyframes hl-flicker {
+  0%, 100% { opacity: 0.62; transform: scale(1); }
+  18%      { opacity: 0.94; transform: scale(1.03); }
+  32%      { opacity: 0.7;  transform: scale(1.01); }
+  55%      { opacity: 1;    transform: scale(1.05); }
+  74%      { opacity: 0.76; transform: scale(1.02); }
+}
+
+/* SNOW — the mountain pass: cold light off the drifts, and snow falling. */
+.is-snow .hl-a {
+  background: radial-gradient(ellipse 44% 36% at 54% 20%,
+    rgba(216, 230, 244, 0.20) 0%, transparent 74%);
+  animation: hl-breathe 15s ease-in-out infinite;
+}
+.is-snow .hl-b {
+  background-image:
+    radial-gradient(1.8px 1.8px at 16% 22%, rgba(240, 248, 255, 0.8), transparent 100%),
+    radial-gradient(1.2px 1.2px at 46% 48%, rgba(232, 242, 252, 0.7), transparent 100%),
+    radial-gradient(2.2px 2.2px at 72% 30%, rgba(240, 248, 255, 0.6), transparent 100%),
+    radial-gradient(1.4px 1.4px at 88% 60%, rgba(232, 242, 252, 0.65), transparent 100%);
+  background-size: 300px 300px; height: 200%; top: -100%; opacity: 0.5;
+  animation: hl-fall 17s linear infinite;
+}
+
+/* --- the great tables keep their first column in view ---------------------- */
+.ch-canon-table th[scope="row"],
+.ch-matrix-table th[scope="row"] {
+  position: sticky; left: 0; z-index: 2;
+  background: linear-gradient(90deg, #100d0a 84%, rgba(16, 13, 10, 0.92) 100%);
+}
+.ch-canon-table thead th:first-child,
+.ch-matrix-table thead th:first-child {
+  position: sticky; left: 0; z-index: 3; background: #14100b;
+}
+.ch-canon-sectionrow th { position: sticky; left: 0; z-index: 2; }
+
+/* --- the drawn symbol marks answer the cursor ------------------------------- */
+.ch-symbol-card .ch-symbol-mark { transition: color 240ms ease, transform 420ms cubic-bezier(0.22, 1, 0.36, 1); }
+.ch-symbol-card:hover .ch-symbol-mark,
+.ch-symbol-card:focus-visible .ch-symbol-mark { transform: scale(1.08); }
+.ch-symbol-card:hover, .ch-symbol-card:focus-visible {
+  box-shadow: 0 0 24px rgba(209, 173, 104, 0.12) inset;
+}
+
 /* --- VISITATION: the landing hero -------------------------------------------
    The one image that gets the full treatment. Four things happen at once and
    none of them fast: the hall pushes very slowly closer (44s), a glory blooms

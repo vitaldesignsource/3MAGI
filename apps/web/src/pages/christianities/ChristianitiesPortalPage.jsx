@@ -34,7 +34,7 @@ function ChristianitiesPortalPage() {
             </Helmet>
             <SiteHeader />
 
-                <PortalHero
+                <PortalHero effect="candles"
                 image="0d44375c8b69eb38b86044b6095ff0eb.webp"
                 alt="A crowded church at Taizé, white-robed brothers kneeling before candlelit icons under hanging orange banners"
                 kicker="A Three Magi Press Portal"
@@ -56,11 +56,19 @@ function ChristianitiesPortalPage() {
                     </header>
                     <div className="edu-hall-grid ch-door-grid">
                         {SECTIONS.map((s) => (
-                            <Link className="edu-hall-card" to={`/christianities/${s.slug}`} key={s.slug}>
-                                <span className="ch-door-kicker">{s.kicker}</span>
-                                <h3>{s.title}</h3>
-                                <p className="edu-hall-blurb">{s.blurb}</p>
-                                <span className="edu-hall-enter" aria-hidden="true">Enter →</span>
+                            <Link className={`edu-hall-card pw-door${s.hero ? ' has-art' : ''}`}
+                                to={`/christianities/${s.slug}`} key={s.slug}>
+                                {s.hero && (
+                                    <span className="pw-door-art" aria-hidden="true">
+                                        <img src={`/media/${s.hero}`} alt="" loading="lazy" decoding="async" />
+                                    </span>
+                                )}
+                                <span className="pw-door-body">
+                                    <span className="ch-door-kicker">{s.kicker}</span>
+                                    <h3>{s.title}</h3>
+                                    <p className="edu-hall-blurb"><Rich t={s.blurb} /></p>
+                                    <span className="edu-hall-enter" aria-hidden="true">Enter →</span>
+                                </span>
                             </Link>
                         ))}
                     </div>

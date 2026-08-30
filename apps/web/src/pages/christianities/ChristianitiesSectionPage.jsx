@@ -75,6 +75,7 @@ function Branches({ data, open, setOpen }) {
         if (!entries.length) return null;
         return (
             <section key={g.key} className="ch-group">
+                <span className="pw-divider" aria-hidden="true" />
                 <header className="edu-section-head">
                     <h2>{g.label}</h2>
                     <p><Rich t={g.blurb} /></p>
@@ -402,7 +403,7 @@ function ChristianitiesSectionPage() {
                 <meta name="description" content={meta.blurb} />
             </Helmet>
             <SiteHeader />
-                <PortalHero image={meta.hero} alt={meta.heroAlt}
+                <PortalHero image={meta.hero} alt={meta.heroAlt} effect={meta.heroEffect}
                 kickerLink="/christianities" kickerLinkLabel="Christianities"
                 kicker={meta.kicker} title={meta.title} intro={data?.intro} />
             <main className="edu-main">

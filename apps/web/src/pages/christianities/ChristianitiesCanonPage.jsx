@@ -85,7 +85,7 @@ function ChristianitiesCanonPage() {
             </Helmet>
             <SiteHeader />
 
-                <PortalHero image={SECTION_BY_SLUG.canon?.hero} alt={SECTION_BY_SLUG.canon?.heroAlt}
+                <PortalHero image={SECTION_BY_SLUG.canon?.hero} alt={SECTION_BY_SLUG.canon?.heroAlt} effect={SECTION_BY_SLUG.canon?.heroEffect}
                 kickerLink="/christianities" kickerLinkLabel="Christianities"
                 kicker="What Is In, and According to Whom"
                 title="The Making of the Bibles" intro={data.intro} />
