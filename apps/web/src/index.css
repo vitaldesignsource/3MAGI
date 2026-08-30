@@ -11013,7 +11013,7 @@ h3 {
 }
 @media (max-width: 760px) {
   .ch-page .edu-hero h1 { font-size: clamp(1.9rem, 10vw, 4rem); }
-  .ch-page .edu-hero-sub { font-size: 0.98rem; line-height: 1.72; }
+  .edu-page .edu-hero-sub { font-size: 0.98rem; line-height: 1.72; }
   .ch-page .edu-hero .kicker { letter-spacing: 0.22em; }
 
   /* the wall of signs keeps two columns on a phone */
@@ -11040,37 +11040,112 @@ h3 {
    case serif for everything meant to be read, Cinzel kept for headings,
    kickers, badges, chips, and table headers. Native scripts keep their own
    faces via .edu-glyph. */
-.ch-page .edu-hero-sub,
-.ch-page .edu-section-head p,
+.edu-page .edu-hero-sub,
+.edu-page .edu-section-head p,
 .ch-page .ch-entry-sub,
 .ch-page .ch-entry-body,
 .ch-page .ch-claim,
 .ch-page .ch-quote p,
 .ch-page .ch-quote cite,
 .ch-page .ch-selfname, .ch-page .ch-exonym, .ch-page .ch-lineage,
-.ch-page .edu-hall-blurb,
+.edu-page .edu-hall-blurb,
 .ch-page .ch-gallery-caption > span,
 .ch-page .ch-symbol-body,
 .ch-page .ch-creed-text,
 .ch-page .ch-words-bridge,
-.ch-page .edu-cog-noterow td,
+.edu-page .edu-cog-noterow td,
 .ch-page .ch-canon-tradnote p,
 .ch-page .ch-map-blurb, .ch-page .ch-map-edesc,
-.ch-page .edu-kinship-legend,
-.ch-page .edu-event-detail, .ch-page .edu-event-dating,
-.ch-page .edu-search-detail {
+.edu-page .edu-kinship-legend,
+.edu-page .edu-event-detail, .edu-page .edu-event-dating,
+.edu-page .edu-search-detail {
   font-family: Georgia, "Times New Roman", serif;
   letter-spacing: 0.005em;
 }
-.ch-page .edu-hero-sub { font-size: 1.08rem; line-height: 1.85; }
+.edu-page .edu-hero-sub { font-size: 1.08rem; line-height: 1.85; }
 .ch-page .ch-entry-body > p, .ch-page .ch-kv p, .ch-page .ch-kv ul { font-size: 1.01rem; line-height: 1.85; }
 .ch-page .ch-entry-sub { font-size: 0.92rem; }
 /* labels inside serif bodies stay in the display voice */
 .ch-page .ch-kv > span { font-family: "Cinzel", Georgia, serif; }
 .ch-page .ch-creed-text { font-size: 1.02rem; }
 .ch-page .ch-creed-clausenote, .ch-page .ch-creed-variant { font-size: 0.9rem; }
-.ch-page .edu-hall-blurb { line-height: 1.7; }
+.edu-page .edu-hall-blurb { line-height: 1.7; }
 .ch-page .ch-gallery-caption > span { font-size: 0.9rem; line-height: 1.7; }
+
+/* --- the reading voice, in the halls ---------------------------------------
+   The same treatment for the Scriptorium: meanings, definitions, summaries,
+   translations, notes, and course text read in sentence-case Georgia;
+   letter names, badges, chips and headings keep Cinzel; native scripts keep
+   their own faces via .edu-glyph; transliterations set in scholarly italic. */
+.edu-page .edu-plaque-body,
+.edu-page .edu-plaque-note,
+.edu-page .edu-name-body p,
+.edu-page .edu-name-english,
+.edu-page .edu-lex-def,
+.edu-page .edu-current p,
+.edu-page .edu-current-summary,
+.edu-page .edu-current-text-note,
+.edu-page .edu-current-term-gloss,
+.edu-page .edu-work-desc,
+.edu-page .edu-work-incipit,
+.edu-page .edu-incipit-english,
+.edu-page .edu-incipit-note,
+.edu-page .edu-work-contents-note,
+.edu-page .edu-toc-english,
+.edu-page .edu-edition-note,
+.edu-page .edu-corr-note,
+.edu-page .edu-example-note,
+.edu-page .edu-reading-translation,
+.edu-page .edu-reading-note,
+.edu-page .edu-reading-source,
+.edu-page .edu-reading-gloss,
+.edu-page .edu-vocab-gloss,
+.edu-page .edu-book-desc,
+.edu-page .edu-book-byline,
+.edu-page .edu-book-source,
+.edu-page .edu-proposals-note,
+.edu-page .edu-proposal-basis,
+.edu-page .edu-proposal-standing,
+.edu-page .edu-lesson-aim,
+.edu-page .edu-exercise-prompt,
+.edu-page .edu-exercise-hint,
+.edu-page .edu-exercise-answer,
+.edu-page .edu-syllabus-aim,
+.edu-page .edu-course-tagline,
+.edu-page .edu-drill-modes-note,
+.edu-page .edu-drill-after,
+.edu-page .edu-reckoner-ignored,
+.edu-page .edu-cognates-footnote,
+.edu-page .edu-cog-sense,
+.edu-page .edu-pgm p,
+.edu-page .edu-lesson-section p,
+.edu-page .edu-lesson-section li,
+.edu-page .edu-search-sub {
+  font-family: Georgia, "Times New Roman", serif;
+  letter-spacing: 0.005em;
+}
+/* transliterations in the scholarly convention: serif italic */
+.edu-page .edu-letter-translit,
+.edu-page .edu-lex-translit,
+.edu-page .edu-current-translit,
+.edu-page .edu-current-term-translit,
+.edu-page .edu-reading-translit,
+.edu-page .edu-vocab-translit,
+.edu-page .edu-proposal-reading {
+  font-family: Georgia, "Times New Roman", serif;
+  font-style: italic;
+}
+/* controls and labels inside serif containers stay in the display voice */
+.edu-page .edu-proposals summary,
+.edu-page .edu-exercise-reveal,
+.edu-page .edu-work-toc-toggle,
+.edu-page .edu-exercise-n,
+.edu-page .edu-plaque-badge,
+.edu-page .edu-drill button {
+  font-family: "Cinzel", Georgia, serif;
+}
+.edu-page .edu-plaque-body { line-height: 1.75; }
+.edu-page .edu-lex-def, .edu-page .edu-name-body p { line-height: 1.75; }
 
 /* inline registers for the Christianities prose — the magazine's own voice:
    gold italic for terms of art, plain italic for works, quiet bold for the
