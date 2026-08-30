@@ -233,5 +233,116 @@ export default {
             office: 'Whatever the bearer needed sealed: the year, the heavens, the gate.',
             elsewhere: 'Jung’s Seven Sermons revived him for the moderns; his gems anchor every museum case of “gnostic” art — most of them, scholars now insist, simply magical.',
         },
+
+        {
+            slug: 'seven-before-glory', name: 'Sariel, Raguel and Remiel', native: null, lang: null,
+            title: 'The rest of the seven', group: 'presence', tradition: 'Jewish (Enochic)',
+            exposition: [
+                'The four presences are the famous ones; the lists usually run to seven, and the other three are where the manuscripts stop agreeing. Sariel appears in the oldest Aramaic Enoch and is later displaced by Uriel; Raguel is “the friend of God,” who takes vengeance on the world of the luminaries; Remiel — Jeremiel in some texts — is set over those who rise.',
+                'That the seventh seat changes name between recensions is not a defect in the tradition but a fact about it: the number was fixed long before the roster was, and copyists filled the last chairs from whatever list they had. Uriel’s eventual demotion in the West left a vacancy the East never felt.',
+            ],
+            attested: '1 Enoch 20 (the list of the holy angels who watch); Aramaic fragments 4Q201–202 for Sariel’s priority.',
+            office: 'Sariel over the transgressing spirits; Raguel over the luminaries; Remiel over those who rise.',
+            elsewhere: 'Selaphiel, Jegudiel and Barachiel fill the seven in Orthodox iconography, where all seven are painted together and named on the icon.',
+        },
+        {
+            slug: 'harut-marut', name: 'Harut and Marut', native: 'هاروت وماروت', lang: 'arabic',
+            title: 'The angels who taught what should not be taught', group: 'four-islam', tradition: 'Islamic',
+            exposition: [
+                'Two angels sent down at Babylon who taught men sorcery — and who, the Quran is careful to say, warned each student first: “We are only a trial, so do not disbelieve.” The verse is one of the most discussed in the book, because it concedes that the knowledge is real and effective while making the teaching itself the test.',
+                'The commentators divide sharply. Some read the pair as angels genuinely sent as a trial; others, uneasy at angels teaching magic, read them as two men of Babylon, or take the whole passage as reported speech from the demons who blamed Solomon. The portal keeps the division: this is a case where the tradition’s own scholars did not settle.',
+            ],
+            attested: 'Qur’an 2:102, in the passage on what the devils recited against Solomon’s kingdom.',
+            office: 'A trial permitted rather than an office held — the only angels in the Quran associated with teaching an illicit art.',
+            elsewhere: 'Names widely compared to the Zoroastrian Haurvatat and Ameretat, two of the Amesha Spentas, which would make them demoted Iranian powers — a proposal old in the scholarship and still argued.',
+        },
+        {
+            slug: 'munkar-nakir', name: 'Munkar and Nakir', native: 'منكر ونكير', lang: 'arabic',
+            title: 'The questioners in the grave', group: 'four-islam', tradition: 'Islamic',
+            exposition: [
+                'Two angels come to the newly buried and ask three questions: who is your Lord, what is your religion, and who is this man who was sent among you. The answers are not examined for eloquence — the faithful reply plainly and the grave is widened for them; those who cannot are struck and the grave narrows.',
+                'The examination in the grave, ʿadhab al-qabr, is a doctrine of the hadith rather than the Quran, and it made the burial rite what it is: the instruction whispered to the dead at the graveside is a prompt for this interview.',
+            ],
+            attested: 'The hadith collections, notably Tirmidhi; developed at length in the eschatological literature.',
+            office: 'The first examination, immediately after burial and long before the Hour.',
+            elsewhere: 'The interrogating spirits of the passage after death have parallels in Zoroastrian and Egyptian judgement scenes, though the three questions are distinctively Islamic.',
+        },
+        {
+            slug: 'malik-ridwan', name: 'Malik and Ridwan', native: 'مالك ورضوان', lang: 'arabic',
+            title: 'The wardens of the two houses', group: 'four-islam', tradition: 'Islamic',
+            exposition: [
+                'Malik keeps the Fire, and the Quran gives him one terrible line of dialogue: the damned call to him to let their Lord finish them, and he answers, “You will remain.” Nineteen keepers stand over the Fire under him, a number the Quran itself says is a trial for those who doubt.',
+                'Ridwan — the name means good pleasure, God’s approval — keeps the Garden, and is not named in the Quran at all: he arrives in the tradition as the necessary counterpart, because a door that is guarded needs a guardian on the far side too.',
+            ],
+            attested: 'Qur’an 43:77 and 74:30–31 for Malik and the nineteen; Ridwan in the hadith and later tradition.',
+            office: 'Custody of Hell and of Paradise respectively — the two gatekeepers of the world to come.',
+            elsewhere: 'Ridwan’s absence from the Quran is a good example of how an office gets a name once devotion requires one, exactly as ʿAzra’il did.',
+        },
+        {
+            slug: 'lilith', name: 'Lilith', native: 'לילית', lang: 'hebrew',
+            title: 'The night creature; the first wife', group: 'adversaries', tradition: 'Jewish (with Mesopotamian roots)',
+            exposition: [
+                'She begins as a class of Mesopotamian wind-and-night demon — lilītu — passes into Isaiah 34:14 as a creature of the desolate places, and appears on Aramaic incantation bowls buried under floors to keep her out of the house. Only in the medieval Alphabet of Ben Sira does she acquire the biography she is now famous for: Adam’s first wife, made of the same earth, who refused to lie beneath him, spoke the Ineffable Name and flew.',
+                'That story is satirical in its original setting and was read as such by its first audiences, which does not lessen what happened next: it was taken seriously by the kabbalists, who married her to Samael and set her at the head of the demonic left, and taken up again in the twentieth century as a figure of refusal. Three readings, all of them now in circulation, and the portal does not collapse them.',
+            ],
+            attested: 'Isaiah 34:14; the Babylonian incantation bowls (5th–7th c. CE); Alphabet of Ben Sira (c. 9th–10th c.); richly in the Zohar.',
+            office: 'Danger to women in childbirth and to newborns; in kabbalah, consort of Samael and queen of the other side.',
+            elsewhere: 'The amulets naming Senoy, Sansenoy and Semangelof — the three angels sent to fetch her back — are still printed for nurseries.',
+        },
+        {
+            slug: 'asmodeus', name: 'Asmodeus', native: 'אשמדאי', lang: 'hebrew',
+            title: 'The wrecker of marriages, and Solomon’s builder', group: 'adversaries', tradition: 'Jewish',
+            exposition: [
+                'In Tobit he kills seven bridegrooms before they can reach Sarah, and is driven off by the smoke of a fish’s heart and liver — the earliest exorcism-by-recipe in the Jewish canon. The Testament of Solomon then makes him the demon compelled to help build the Temple, and the Talmud tells a story in which he takes Solomon’s throne and ring and rules in his place while the king wanders as a beggar.',
+                'His name is usually derived from Avestan aēšma-daēva, the demon of wrath, which would make him a direct Persian import — one of the clearest single loans in the whole demonological vocabulary.',
+            ],
+            attested: 'Tobit 3:8 and 8:2–3; Testament of Solomon 5; Babylonian Talmud, Gittin 68a–b.',
+            office: 'Lust and the destruction of marriages; in the grimoires, a king of the spirits with a legion count.',
+            elsewhere: 'Enters the European grimoires as Asmodai and is among the seventy-two of the Goetia — a demon with a continuous career from Persia to the seventeenth century.',
+        },
+        {
+            slug: 'belial', name: 'Belial', native: 'בליעל', lang: 'hebrew',
+            title: 'Worthlessness, personified', group: 'adversaries', tradition: 'Jewish (Qumran) · Christian',
+            exposition: [
+                'In the Hebrew Bible beliyaʿal is an abstraction — “sons of worthlessness” means scoundrels — and it is at Qumran that the abstraction becomes a person: the Prince of Darkness who commands the spirits of his lot against the Prince of Light, with the whole War Scroll organized around the collision.',
+                'Paul knows the name and uses it exactly this way, asking what concord Christ has with Belial. It is a clean example of how a word becomes a being: repeated in a community that thinks in dualisms until the noun stands up and takes a command.',
+            ],
+            attested: 'Deuteronomy 13:13 and passim as an abstraction; the Community Rule and War Scroll at Qumran; 2 Corinthians 6:15.',
+            office: 'Command of the spirits of darkness; the adversary in a two-sided war rather than a prosecutor in a court.',
+            elsewhere: 'One of the four crown princes in later demonology, and a king in the Goetia — where the pattern of abstraction hardening into person is complete.',
+        },
+        {
+            slug: 'barbelo', name: 'Barbelo', native: 'Βαρβηλώ', lang: 'greek',
+            title: 'The first thought; the Mother-Father', group: 'pleroma', tradition: 'Gnostic (Sethian)',
+            exposition: [
+                'Before anything is emanated, the Invisible Spirit sees itself in the light-water surrounding it, and that self-knowledge stands forth as Barbelo — the first thought, the forethought, called the Mother-Father and the first man. Everything else in the Pleroma unfolds through her, which makes her the second principle of the entire system.',
+                'The etymology of the name is unsettled and the guesses are old: Hebrew phrases meaning “in four is God,” Coptic constructions, Greek corruptions. The portal keeps the plural, as it does for Abrasax and Yaldabaoth: the great gnostic names resist their own philology.',
+            ],
+            attested: 'Apocryphon of John (Nag Hammadi and the Berlin Codex); Irenaeus, Against Heresies I.29, for a “Barbelognostic” school.',
+            office: 'The first emanation and the womb of the Pleroma; a whole family of texts is named Barbeloite after her.',
+            elsewhere: 'Sophia is her youngest aeon, which sets the tragedy of this system inside the shape Barbelo established.',
+        },
+        {
+            slug: 'seven-archons', name: 'The Seven Archons', native: null, lang: null,
+            title: 'The rulers of the planetary gates', group: 'pleroma', tradition: 'Gnostic (Sethian)',
+            exposition: [
+                'Yaldabaoth makes seven rulers for seven heavens and names them, and the names are a scandal by design: Iao, Sabaoth, Adonaios, Eloaios, Astaphaios, Ailoaios, Oraios — divine names and titles from the Jewish scriptures, redistributed as the jailers of the world. Each holds a planetary gate; each demands a password from the ascending soul.',
+                'This is where gnostic literature is most obviously a counter-reading rather than a separate religion. The names are not invented; they are taken, and the taking is the argument.',
+            ],
+            attested: 'Apocryphon of John; Origen, Contra Celsum VI, preserving the Ophite diagram with its seven gates.',
+            office: 'Custody of the seven planetary spheres between the soul and the Pleroma.',
+            elsewhere: 'The same names recur on magical gems and in the papyri without any hostility at all, invoked as simple names of power — which is the strongest evidence that the magicians and the theologians were not reading the same way.',
+        },
+        {
+            slug: 'sabaoth', name: 'Sabaoth', native: 'Σαβαώθ', lang: 'greek',
+            title: 'The archon who repented', group: 'pleroma', tradition: 'Gnostic (Sethian)',
+            exposition: [
+                'One of Yaldabaoth’s seven turns. Seeing the power of Sophia’s light, Sabaoth condemns his own father, is raised to the seventh heaven, given a chariot of cherubim and set over the powers — the one figure in the gnostic cosmos who changes sides and is promoted for it.',
+                'It is a startling episode in a literature usually accused of flat dualism: the system has an escape hatch, and it is offered not to a human being but to a ruler of the lower world. Whether this reflects an attempt to accommodate the God of the Jewish scriptures rather than simply reject him is one of the field’s open questions.',
+            ],
+            attested: 'The Hypostasis of the Archons and On the Origin of the World (Nag Hammadi).',
+            office: 'Ruler of the seventh heaven after his repentance, seated on a throne of light.',
+            elsewhere: 'The name is the Hebrew tsevaot, “hosts,” as in Lord of Hosts — so this is the God of armies given a conversion narrative inside somebody else’s cosmology.',
+        },
     ],
 };

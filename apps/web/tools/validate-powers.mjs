@@ -199,8 +199,12 @@ if (words) {
 // --- texts ------------------------------------------------------------------
 const texts = await load('texts');
 if (texts) {
+    let prevYear = -Infinity;
     for (const e of texts.entries) {
         uniq('texts', e.slug);
+        if (!Number.isInteger(e.year)) fail(`texts/${e.slug}: no sort year`);
+        else if (e.year < prevYear) fail(`texts/${e.slug}: shelf out of chronological order (${e.year} after ${prevYear})`);
+        if (Number.isInteger(e.year)) prevYear = e.year;
         if (e.native) checkScript(`texts/${e.slug}`, e.native, e.lang);
         if (!e.dating) fail(`texts/${e.slug}: no dating line`);
         if (!e.access) fail(`texts/${e.slug}: says nothing about where to read it`);
