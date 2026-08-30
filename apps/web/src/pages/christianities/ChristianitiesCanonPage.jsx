@@ -6,6 +6,8 @@ import SiteFooter from '../../components/SiteFooter';
 import ScriptoriumTimeline from '../../components/ScriptoriumTimeline';
 import { loadData } from './lib';
 import Rich from './rich';
+import PortalHero from './PortalHero';
+import { SECTION_BY_SLUG } from './lib';
 
 // The Making of the Bibles. The centrepiece is the table: every book that
 // was ever seriously in the running, against every major canon — in, out,
@@ -83,12 +85,11 @@ function ChristianitiesCanonPage() {
             </Helmet>
             <SiteHeader />
 
+                <PortalHero image={SECTION_BY_SLUG.canon?.hero} alt={SECTION_BY_SLUG.canon?.heroAlt}
+                kickerLink="/christianities" kickerLinkLabel="Christianities"
+                kicker="What Is In, and According to Whom"
+                title="The Making of the Bibles" intro={data.intro} />
             <main className="edu-main">
-                <section className="edu-hero">
-                    <p className="kicker"><Link to="/christianities">Christianities</Link> · What Is In, and According to Whom</p>
-                    <h1>The Making of the Bibles</h1>
-                    {data.intro.map((p, i) => <p className="edu-hero-sub" key={i}><Rich t={p} /></p>)}
-                </section>
 
                 <section className="edu-halls" aria-labelledby="ch-criteria-heading">
                     <header className="edu-section-head">

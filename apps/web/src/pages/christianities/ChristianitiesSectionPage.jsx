@@ -5,6 +5,7 @@ import SiteHeader from '../../components/SiteHeader';
 import SiteFooter from '../../components/SiteFooter';
 import ChristianitiesTree from './ChristianitiesTree';
 import SYMBOL_MARKS from './symbolMarks';
+import PortalHero from './PortalHero';
 import Rich from './rich';
 import { SECTION_BY_SLUG, loadData } from './lib';
 
@@ -401,12 +402,10 @@ function ChristianitiesSectionPage() {
                 <meta name="description" content={meta.blurb} />
             </Helmet>
             <SiteHeader />
+                <PortalHero image={meta.hero} alt={meta.heroAlt}
+                kickerLink="/christianities" kickerLinkLabel="Christianities"
+                kicker={meta.kicker} title={meta.title} intro={data?.intro} />
             <main className="edu-main">
-                <section className="edu-hero">
-                    <p className="kicker"><Link to="/christianities">Christianities</Link> · {meta.kicker}</p>
-                    <h1>{meta.title}</h1>
-                    {(data?.intro || []).map((p, i) => <p className="edu-hero-sub" key={i}><Rich t={p} /></p>)}
-                </section>
                 {data && <Renderer data={data} open={open} setOpen={setOpen} />}
                 {extras.matrix && <ChristologyMatrix matrix={extras.matrix} />}
                 {extras.tree && <ChristianitiesTree tree={extras.tree} />}

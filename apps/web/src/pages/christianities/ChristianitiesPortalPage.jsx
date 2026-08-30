@@ -7,6 +7,7 @@ import ScriptoriumTimeline from '../../components/ScriptoriumTimeline';
 import ScriptoriumSearch from '../../components/ScriptoriumSearch';
 import { SECTIONS, loadData } from './lib';
 import Rich from './rich';
+import PortalHero from './PortalHero';
 
 // Christianities — the portal landing. The plural is the thesis, and it is
 // the standard scholarly framing rather than a provocation: what history
@@ -33,27 +34,20 @@ function ChristianitiesPortalPage() {
             </Helmet>
             <SiteHeader />
 
+                <PortalHero
+                image="0d44375c8b69eb38b86044b6095ff0eb.webp"
+                alt="A crowded church at Taizé, white-robed brothers kneeling before candlelit icons under hanging orange banners"
+                kicker="A Three Magi Press Portal"
+                title="Christianities"
+                intro={[
+                    'The plural is the point. What history hands us is not one Christianity with deviations but a family of Christianities — churches that parted over a single Greek word, canons that do not contain the same books, and several of the oldest communions on earth standing exactly where they stood when they refused a council fifteen centuries ago.',
+                    'This portal maps the family: the understandings of Christ, the branches, the councils, the Bibles, the figures, the signs, and the places where all of it happened.',
+                ]}
+            />
             <main className="edu-main">
-                <section className="edu-hero">
-                    <p className="kicker">A Three Magi Press Portal</p>
-                    <h1>Christianities</h1>
-                    <p className="edu-hero-sub">
-                        The plural is the point. What history hands us is not one
-                        Christianity with deviations but a family of Christianities —
-                        churches that parted over a single Greek word, canons that do
-                        not contain the same books, and several of the oldest
-                        communions on earth standing exactly where they stood when
-                        they refused a council fifteen centuries ago.
-                    </p>
-                    <p className="edu-hero-sub">
-                        This portal maps the family: the understandings of Christ,
-                        the branches, the councils, the Bibles, the figures, the
-                        signs, and the places where all of it happened.
-                    </p>
-                    <div className="edu-hero-glyphs" aria-hidden="true">
-                        <span>☧</span><span>☦︎</span><span>⳩</span><span>✝︎</span><span>Α</span><span>Ω</span>
-                    </div>
-                </section>
+                <div className="edu-hero-glyphs ch-portal-glyphs" aria-hidden="true">
+                    <span>☧</span><span>☦︎</span><span>⳩</span><span>✝︎</span><span>Α</span><span>Ω</span>
+                </div>
 
                 <section className="edu-halls" aria-labelledby="ch-doors-heading">
                     <header className="edu-section-head">

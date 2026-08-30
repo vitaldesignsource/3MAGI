@@ -3,7 +3,8 @@ import { Helmet } from 'react-helmet';
 import { Link, useLocation } from 'react-router-dom';
 import SiteHeader from '../../components/SiteHeader';
 import SiteFooter from '../../components/SiteFooter';
-import { loadData } from './lib';
+import { loadData, SECTION_BY_SLUG } from './lib';
+import PortalHero from './PortalHero';
 import Rich from './rich';
 
 // The Map of the Christianities.
@@ -174,12 +175,11 @@ function ChristianitiesMapPage() {
             </Helmet>
             <SiteHeader />
 
+                <PortalHero image={SECTION_BY_SLUG.map?.hero} alt={SECTION_BY_SLUG.map?.heroAlt}
+                kickerLink="/christianities" kickerLinkLabel="Christianities"
+                kicker="Where It Happened" title="The Map"
+                intro={data?.intro ? [data.intro] : []} />
             <main className="edu-main">
-                <section className="edu-hero">
-                    <p className="kicker"><Link to="/christianities">Christianities</Link> · Where It Happened</p>
-                    <h1>The Map</h1>
-                    {data?.intro && <p className="edu-hero-sub"><Rich t={data.intro} /></p>}
-                </section>
 
                 <div className="ch-map-controls">
                     <div className="edu-filter-row" role="group" aria-label="Choose an era">
