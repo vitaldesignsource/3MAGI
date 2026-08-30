@@ -89,6 +89,16 @@ if (host) {
     }
     for (const g of host.groups) {
         if (!host.entries.some((e) => e.group === g.key)) fail(`host: group "${g.key}" is empty`);
+        if (g.image && !existsSync(path.join(web, 'public/media', g.image))) {
+            fail(`host/${g.key}: group image ${g.image} not in public/media`);
+        }
+        if (g.image && !g.imageAlt) fail(`host/${g.key}: group image without alt text`);
+    }
+    for (const e of host.entries) {
+        if (e.image && !existsSync(path.join(web, 'public/media', e.image))) {
+            fail(`host/${e.slug}: image ${e.image} not in public/media`);
+        }
+        if (e.image && !e.imageAlt) fail(`host/${e.slug}: entry image without alt text`);
     }
     notes.push(`host: ${host.entries.length} in ${host.groups.length} companies`);
 }

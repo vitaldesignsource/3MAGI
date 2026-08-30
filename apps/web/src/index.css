@@ -11288,6 +11288,8 @@ figure.ch-gallery-card { margin: 0; }
   display: block; width: 100%; max-height: 480px; object-fit: cover;
   object-position: center 30%; filter: saturate(0.92);
 }
+.pw-entry-figure.is-wide { margin: 0 0 1.6rem; }
+.pw-entry-figure.is-wide img { max-height: 380px; object-position: center 45%; }
 .pw-entry-figure figcaption {
   padding: 0.55rem 0.9rem; font-size: 0.85rem; line-height: 1.6;
   color: rgba(222, 212, 196, 0.6); font-style: italic;

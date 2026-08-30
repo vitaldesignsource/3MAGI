@@ -36,6 +36,16 @@ const kv = (label, value) => (value
     ? <div className="ch-kv"><span>{label}</span><p><Rich t={value} /></p></div>
     : null);
 
+// A plate: an image set beside the thing it depicts — inside an entry body,
+// or full-width beneath a company's header.
+const Plate = ({ item, wide }) => (item?.image ? (
+    <figure className={`pw-entry-figure${wide ? ' is-wide' : ''}`}>
+        <img src={`/media/${item.image}`} alt={item.imageAlt || ''}
+            loading="lazy" decoding="async" />
+        {item.imageCaption && <figcaption><Rich t={item.imageCaption} /></figcaption>}
+    </figure>
+) : null);
+
 function Hierarchies({ data, open, setOpen }) {
     return (
         <div className="ch-entry-list">
@@ -43,13 +53,7 @@ function Hierarchies({ data, open, setOpen }) {
                 <Expandable key={e.slug} id={e.slug} open={open === e.slug}
                     onToggle={() => setOpen(open === e.slug ? null : e.slug)}
                     head={e.name} sub={e.era} badge={e.tradition}>
-                    {e.image && (
-                        <figure className="pw-entry-figure">
-                            <img src={`/media/${e.image}`} alt={e.imageAlt || ''}
-                                loading="lazy" decoding="async" />
-                            {e.imageCaption && <figcaption><Rich t={e.imageCaption} /></figcaption>}
-                        </figure>
-                    )}
+                    <Plate item={e} />
                     {e.exposition.map((p, i) => <p key={i}><Rich t={p} /></p>)}
                     {e.ranks?.length > 0 && (
                         <div className="ch-kv"><span>The ranks, highest first</span>
@@ -82,12 +86,14 @@ function Host({ data, open, setOpen }) {
                     <h2>{g.label}</h2>
                     <p><Rich t={g.blurb} /></p>
                 </header>
+                <Plate item={g} wide />
                 <div className="ch-entry-list">
                     {entries.map((e) => (
                         <Expandable key={e.slug} id={e.slug} open={open === e.slug}
                             onToggle={() => setOpen(open === e.slug ? null : e.slug)}
                             head={<>{e.native && <span className="edu-glyph pw-head-native">{e.native}</span>}{e.name}</>}
                             sub={e.title} badge={e.tradition}>
+                            <Plate item={e} />
                             {e.exposition.map((p, i) => <p key={i}><Rich t={p} /></p>)}
                             {kv('First attested', e.attested)}
                             {kv('Office', e.office)}

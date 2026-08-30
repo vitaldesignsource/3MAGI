@@ -20,6 +20,8 @@ export const SECTIONS = [
     },
     {
         slug: 'host', title: 'The Host', kicker: 'The Named Ones',
+        hero: '2d1903a5881088c7560e856a80983f5a.webp',
+        heroAlt: 'An endless ranked host of winged figures filling a vast hall, light breaking through smoke above the far throne',
         blurb: 'Michael and Gabriel, Metatron and Raziel, Iblis and Azazel, '
             + 'Sophia and the daimon of Socrates — the beings themselves, '
             + 'each in its own tradition’s words.',
