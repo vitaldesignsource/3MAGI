@@ -20,6 +20,10 @@ const ThirdLampContactPage = lazy(() => import('./pages/ThirdLampContactPage'));
 const EducationPortalPage = lazy(() => import('./pages/EducationPortalPage'));
 const EducationLanguagePage = lazy(() => import('./pages/EducationLanguagePage'));
 const EducationCoursePage = lazy(() => import('./pages/EducationCoursePage'));
+const ChristianitiesPortalPage = lazy(() => import('./pages/christianities/ChristianitiesPortalPage'));
+const ChristianitiesMapPage = lazy(() => import('./pages/christianities/ChristianitiesMapPage'));
+const ChristianitiesCanonPage = lazy(() => import('./pages/christianities/ChristianitiesCanonPage'));
+const ChristianitiesSectionPage = lazy(() => import('./pages/christianities/ChristianitiesSectionPage'));
 const ArticlePage = lazy(() => import('./pages/ArticlePage'));
 const PlansPage = lazy(() => import('./pages/PlansPage'));
 const WelcomePage = lazy(() => import('./pages/WelcomePage'));
@@ -98,6 +102,10 @@ function App() {
                     <Route path="/third-lamp/education/:lang" element={<EducationLanguagePage />} />
                     <Route path="/third-lamp/education/:lang/course" element={<EducationCoursePage />} />
                     <Route path="/third-lamp/education/:lang/course/:lesson" element={<EducationCoursePage />} />
+                    <Route path="/christianities" element={<ChristianitiesPortalPage />} />
+                    <Route path="/christianities/map" element={<ChristianitiesMapPage />} />
+                    <Route path="/christianities/canon" element={<ChristianitiesCanonPage />} />
+                    <Route path="/christianities/:section" element={<ChristianitiesSectionPage />} />
                     <Route path="/articles/:slug" element={<ArticlePage />} />
                     <Route path="/plans" element={<PlansPage />} />
                     <Route path="/welcome" element={<WelcomePage />} />

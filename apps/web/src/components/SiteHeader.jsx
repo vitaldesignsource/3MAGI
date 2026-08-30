@@ -18,6 +18,7 @@ function SiteHeader() {
             <nav className="site-nav">
                 <Link to="/books">Books</Link>
                 <Link to="/third-lamp">The Third Lamp</Link>
+                <Link to="/christianities">Christianities</Link>
                 <Link to="/#journal">Essays</Link>
                 <Link to="/#about">About</Link>
                 <Link to="/#newsletter">Dispatch</Link>
@@ -29,6 +30,7 @@ function SiteHeader() {
                     <div className="header-menu-panel">
                         <Link to="/books">Books</Link>
                         <Link to="/third-lamp">The Third Lamp</Link>
+                        <Link to="/christianities">Christianities</Link>
                         <Link to="/#journal">Essays</Link>
                         <Link to="/#about">About</Link>
                         <Link to="/#newsletter">Dispatch</Link>
