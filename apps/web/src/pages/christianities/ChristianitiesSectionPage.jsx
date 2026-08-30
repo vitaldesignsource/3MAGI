@@ -3,11 +3,21 @@ import { Helmet } from 'react-helmet';
 import { Link, useParams, useLocation, Navigate } from 'react-router-dom';
 import SiteHeader from '../../components/SiteHeader';
 import SiteFooter from '../../components/SiteFooter';
+import ChristianitiesTree from './ChristianitiesTree';
 import { SECTION_BY_SLUG, loadData } from './lib';
 
 // One page, five doors: christologies, branches, councils, figures, symbols.
 // Each section has its own renderer below; the chrome, loading behaviour and
 // data discipline are shared. Canon and the Map have their own pages.
+//
+// Three doors carry structural extras beneath their entry lists: the
+// christology matrix, the family tree, and the councils' words and creeds.
+// Each is its own data file so a door still opens while an extra is unwritten.
+const EXTRAS = {
+    christologies: ['matrix'],
+    branches: ['tree'],
+    councils: ['words', 'creeds'],
+};
 
 const STATUS_LABEL = {
     condemned: 'condemned', vindicated: 'vindicated', tolerated: 'tolerated',
@@ -195,6 +205,138 @@ function Symbols({ data, open, setOpen }) {
     );
 }
 
+// --- structural extras ------------------------------------------------------
+
+const MARK = { yes: '●', no: '·', q: '◐' };
+
+function ChristologyMatrix({ matrix }) {
+    const [openRow, setOpenRow] = useState(() => (typeof window !== 'undefined' ? decodeURIComponent(window.location.hash.slice(1)) : '') || null);
+    return (
+        <section className="ch-matrix" aria-labelledby="ch-matrix-heading">
+            <header className="edu-section-head">
+                <p className="kicker">Every Answer, Every Question</p>
+                <h2 id="ch-matrix-heading">The matrix</h2>
+                {matrix.intro.map((p, i) => <p key={i}>{p}</p>)}
+            </header>
+            <div className="edu-kinship-scroll ch-canon-scroll" role="region"
+                aria-label="Christology comparison table" tabIndex={0}>
+                <table className="edu-cognates-table ch-canon-table ch-matrix-table">
+                    <thead>
+                        <tr>
+                            <th scope="col" className="ch-canon-bookcol">Position</th>
+                            {matrix.questions.map((q) => (
+                                <th scope="col" key={q.key} title={q.gloss}>{q.label}</th>
+                            ))}
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {matrix.positions.map((p) => {
+                            const notes = matrix.questions
+                                .map((q) => ({ q, a: p.answers[q.key] }))
+                                .filter((x) => x.a?.note);
+                            const isOpen = openRow === p.key;
+                            return (
+                                <React.Fragment key={p.key}>
+                                    <tr className={`has-note ${isOpen ? 'is-open' : ''}`}
+                                        onClick={() => setOpenRow(isOpen ? null : p.key)}>
+                                        <th scope="row">{p.label}{p.labelNote ? ' †' : ''}</th>
+                                        {matrix.questions.map((q) => {
+                                            const a = p.answers[q.key];
+                                            return (
+                                                <td key={q.key} className={`ch-canon-cell st-${a?.v || 'no'}`}
+                                                    title={`${p.label} — ${q.label} ${a?.note ? `(${a.note})` : MARK[a?.v] || ''}`}>
+                                                    {MARK[a?.v] || '·'}
+                                                </td>
+                                            );
+                                        })}
+                                    </tr>
+                                    {isOpen && (
+                                        <tr className="edu-cog-noterow">
+                                            <td colSpan={matrix.questions.length + 1}>
+                                                <p className="ch-matrix-holder"><em>Held by.</em> {p.holder}</p>
+                                                {p.labelNote && <p className="ch-matrix-holder"><em>† The name.</em> {p.labelNote}</p>}
+                                                {notes.map(({ q, a }) => (
+                                                    <p key={q.key}><em>{q.label}</em> — {a.note}</p>
+                                                ))}
+                                            </td>
+                                        </tr>
+                                    )}
+                                </React.Fragment>
+                            );
+                        })}
+                    </tbody>
+                </table>
+            </div>
+            <p className="edu-kinship-legend">● yes · ◐ qualified (open the row for how) · a dot means no</p>
+        </section>
+    );
+}
+
+function CouncilWords({ words }) {
+    const [open, setOpen] = useState(() => (typeof window !== 'undefined' ? decodeURIComponent(window.location.hash.slice(1)) : '') || null);
+    return (
+        <section className="ch-words" aria-labelledby="ch-words-heading">
+            <header className="edu-section-head">
+                <p className="kicker">One Iota of Difference</p>
+                <h2 id="ch-words-heading">The words</h2>
+                {words.intro.map((p, i) => <p key={i}>{p}</p>)}
+            </header>
+            <div className="ch-entry-list">
+                {words.entries.map((w) => (
+                    <Expandable key={w.slug} id={w.slug} open={open === w.slug}
+                        onToggle={() => setOpen(open === w.slug ? null : w.slug)}
+                        head={<><span className="edu-glyph ch-word-native">{w.native}</span> {w.translit}</>}
+                        sub={w.literal} badge={w.lang}>
+                        <p>{w.fight}</p>
+                        {w.coined && <div className="ch-kv"><span>Enters the argument</span><p>{w.coined}</p></div>}
+                        <div className="ch-kv"><span>Wielded by</span><p>{w.wieldedBy}</p></div>
+                        <div className="ch-kv"><span>Against</span><p>{w.againstWhom}</p></div>
+                        {w.counterpart && <div className="ch-kv"><span>Its rival</span><p>{w.counterpart}</p></div>}
+                        {w.aftermath && <div className="ch-kv"><span>Where it stands now</span><p>{w.aftermath}</p></div>}
+                    </Expandable>
+                ))}
+            </div>
+        </section>
+    );
+}
+
+function Creeds({ creeds }) {
+    const [open, setOpen] = useState(() => (typeof window !== 'undefined' ? decodeURIComponent(window.location.hash.slice(1)) : '') || null);
+    return (
+        <section className="ch-creeds" aria-labelledby="ch-creeds-heading">
+            <header className="edu-section-head">
+                <p className="kicker">A Fence and a Song at Once</p>
+                <h2 id="ch-creeds-heading">The creeds</h2>
+                {creeds.intro.map((p, i) => <p key={i}>{p}</p>)}
+            </header>
+            <div className="ch-entry-list">
+                {creeds.creeds.map((c) => (
+                    <Expandable key={c.slug} id={c.slug} open={open === c.slug}
+                        onToggle={() => setOpen(open === c.slug ? null : c.slug)}
+                        head={c.name}
+                        sub={c.native ? `${c.native} — ${c.origin}` : c.origin}
+                        badge={null}>
+                        <p>{c.story}</p>
+                        {c.dating && <div className="ch-kv"><span>On its dating</span><p>{c.dating}</p></div>}
+                        <ol className="ch-creed-text">
+                            {c.clauses.map((cl, i) => (
+                                <li key={i} className={cl.note ? 'has-note' : ''}>
+                                    <span className="ch-creed-clause">{cl.text}</span>
+                                    {cl.variant && (
+                                        <span className="ch-creed-variant">Latin text: “{cl.variant}”</span>
+                                    )}
+                                    {cl.note && <span className="ch-creed-clausenote">{cl.note}</span>}
+                                </li>
+                            ))}
+                        </ol>
+                        {c.usedBy && <div className="ch-kv"><span>Recited today</span><p>{c.usedBy}</p></div>}
+                    </Expandable>
+                ))}
+            </div>
+        </section>
+    );
+}
+
 const RENDERERS = {
     christologies: Christologies, branches: Branches, councils: Councils,
     figures: Figures, symbols: Symbols,
@@ -206,13 +348,24 @@ function ChristianitiesSectionPage() {
     const meta = SECTION_BY_SLUG[section];
     const Renderer = RENDERERS[section];
     const [data, setData] = useState(null);
+    const [extras, setExtras] = useState({});
     const [state, setState] = useState('loading');
     const [open, setOpen] = useState(null);
 
     useEffect(() => {
         let alive = true;
-        setState('loading'); setData(null); setOpen(null);
-        if (Renderer) loadData(section).then((d) => { if (alive) { setData(d); setState('done'); } });
+        setState('loading'); setData(null); setExtras({}); setOpen(null);
+        if (Renderer) {
+            Promise.all([
+                loadData(section),
+                Promise.all((EXTRAS[section] ?? []).map(async (name) => [name, await loadData(name)])),
+            ]).then(([d, pairs]) => {
+                if (!alive) return;
+                setData(d);
+                setExtras(Object.fromEntries(pairs.filter(([, v]) => v)));
+                setState('done');
+            });
+        }
         return () => { alive = false; };
     }, [section, Renderer]);
 
@@ -226,7 +379,9 @@ function ChristianitiesSectionPage() {
     if (state === 'loading') {
         return <div className="third-lamp-scope edu-page ch-page" aria-busy="true" style={{ minHeight: '100vh' }}><SiteHeader /></div>;
     }
-    if (!data) return <Navigate to="/christianities" replace />;
+    // A door opens if it has its entry list OR any structural extra — while
+    // the portal is filling in, the tree can stand before the branch entries do.
+    if (!data && Object.keys(extras).length === 0) return <Navigate to="/christianities" replace />;
 
     return (
         <div className="third-lamp-scope edu-page ch-page">
@@ -239,9 +394,13 @@ function ChristianitiesSectionPage() {
                 <section className="edu-hero">
                     <p className="kicker"><Link to="/christianities">Christianities</Link> · {meta.kicker}</p>
                     <h1>{meta.title}</h1>
-                    {(data.intro || []).map((p, i) => <p className="edu-hero-sub" key={i}>{p}</p>)}
+                    {(data?.intro || []).map((p, i) => <p className="edu-hero-sub" key={i}>{p}</p>)}
                 </section>
-                <Renderer data={data} open={open} setOpen={setOpen} />
+                {data && <Renderer data={data} open={open} setOpen={setOpen} />}
+                {extras.matrix && <ChristologyMatrix matrix={extras.matrix} />}
+                {extras.tree && <ChristianitiesTree tree={extras.tree} />}
+                {extras.words && <CouncilWords words={extras.words} />}
+                {extras.creeds && <Creeds creeds={extras.creeds} />}
             </main>
             <SiteFooter />
         </div>

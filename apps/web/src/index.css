@@ -10983,6 +10983,65 @@ h3 {
 .ch-quote p { margin: 0 0 0.3rem; color: #ecd9ae; font-style: italic; line-height: 1.7; }
 .ch-quote cite { color: rgba(222, 212, 196, 0.55); font-size: 0.8rem; font-style: normal; }
 
+/* the great tree — time-axis phylogeny */
+.ch-tree { margin-top: clamp(3rem, 6vw, 5rem); }
+.ch-tree-svg { display: block; }
+.ch-tree-grid { stroke: rgba(179, 139, 70, 0.08); stroke-width: 1; }
+.ch-tree-grid.is-named { stroke: rgba(179, 139, 70, 0.22); stroke-dasharray: 2 4; }
+.ch-tree-tick { fill: rgba(179, 139, 70, 0.45); font-size: 10px; letter-spacing: 0.08em; }
+.ch-tree-tick.is-named { fill: rgba(209, 173, 104, 0.75); font-style: italic; }
+.ch-tree-elbow { stroke: rgba(179, 139, 70, 0.35); stroke-width: 1; fill: none; }
+.ch-tree-node { cursor: pointer; outline: none; }
+.ch-tree-hit { stroke: transparent; stroke-width: 14; }
+.ch-tree-line { stroke: #d1ad68; stroke-width: 1.6; transition: stroke 150ms ease, stroke-width 150ms ease; }
+.ch-tree-dot { fill: #d1ad68; }
+.ch-tree-end { stroke: rgba(222, 212, 196, 0.55); stroke-width: 1.4; }
+.ch-tree-label {
+  fill: rgba(232, 224, 208, 0.78); font-size: 11px;
+  paint-order: stroke; stroke: rgba(13, 11, 9, 0.85); stroke-width: 2.5;
+}
+.ch-tree-node.st-extinct .ch-tree-line { stroke: rgba(160, 140, 110, 0.5); stroke-dasharray: 4 3; }
+.ch-tree-node.st-extinct .ch-tree-dot { fill: rgba(160, 140, 110, 0.6); }
+.ch-tree-node.st-extinct .ch-tree-label { fill: rgba(222, 212, 196, 0.45); font-style: italic; }
+.ch-tree-node.st-absorbed .ch-tree-line { stroke: rgba(160, 140, 110, 0.55); stroke-dasharray: 1.5 3; }
+.ch-tree-node.st-disputed .ch-tree-line { stroke: rgba(150, 150, 190, 0.6); }
+.ch-tree-node.st-disputed .ch-tree-label { fill: rgba(190, 190, 220, 0.6); }
+.ch-tree-node:hover .ch-tree-line, .ch-tree-node.is-active .ch-tree-line,
+.ch-tree-node:focus-visible .ch-tree-line { stroke: #f4e8c8; stroke-width: 2.4; }
+.ch-tree-node:hover .ch-tree-label, .ch-tree-node.is-active .ch-tree-label { fill: #f4e8c8; }
+.ch-tree-note { margin-top: 1rem; }
+.ch-tree-note-dates { color: rgba(222, 212, 196, 0.55); font-size: 0.85em; font-weight: 400; }
+
+/* the matrix */
+.ch-matrix { margin-top: clamp(3rem, 6vw, 5rem); }
+.ch-matrix-table td.st-yes { color: #ecd9ae; }
+.ch-matrix-table td.st-q { color: rgba(209, 173, 104, 0.85); }
+.ch-matrix-table td.st-no { color: rgba(222, 212, 196, 0.3); }
+.ch-matrix-holder { margin: 0 0 0.5em; }
+.ch-matrix-holder em, .edu-cog-noterow em {
+  color: rgba(209, 173, 104, 0.8); font-style: normal; letter-spacing: 0.06em;
+}
+
+/* the words and the creeds */
+.ch-words, .ch-creeds { margin-top: clamp(3rem, 6vw, 5rem); }
+.ch-word-native { font-size: 1.25em; color: #ecd9ae; margin-right: 0.4em; }
+.ch-creed-text {
+  margin: 1.2rem 0 0.4rem; padding-left: 1.4rem;
+  display: flex; flex-direction: column; gap: 0.55rem;
+}
+.ch-creed-text li { line-height: 1.7; color: rgba(232, 224, 208, 0.86); }
+.ch-creed-text li.has-note .ch-creed-clause { color: #ecd9ae; }
+.ch-creed-clause { display: block; }
+.ch-creed-variant {
+  display: block; margin-top: 0.25rem; font-style: italic;
+  color: rgba(190, 190, 220, 0.75); font-size: 0.9em;
+}
+.ch-creed-clausenote {
+  display: block; margin-top: 0.3rem; padding-left: 0.9rem;
+  border-left: 2px solid rgba(179, 139, 70, 0.35);
+  color: rgba(222, 212, 196, 0.62); font-size: 0.88em; line-height: 1.65;
+}
+
 /* the family at prayer — portal gallery */
 .ch-gallery { margin-top: clamp(3rem, 6vw, 5rem); }
 .ch-gallery-grid {

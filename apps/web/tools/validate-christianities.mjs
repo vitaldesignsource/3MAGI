@@ -287,8 +287,118 @@ if (gallery) {
     notes.push(`gallery: ${gallery.images.length} rooms`);
 }
 
+// --- the great tree: genealogy must be chronologically possible -------------
+const tree = await load('tree');
+if (tree) {
+    const ids = new Set();
+    const byId = new Map();
+    for (const n of tree.nodes) {
+        if (ids.has(n.id)) fail(`tree/${n.id}: duplicate id`);
+        ids.add(n.id); byId.set(n.id, n);
+    }
+    const roots = tree.nodes.filter((n) => n.parent == null);
+    if (roots.length !== 1) fail(`tree: expected exactly one root, found ${roots.length}`);
+    for (const n of tree.nodes) {
+        const where = `tree/${n.id}`;
+        if (n.parent != null) {
+            const p = byId.get(n.parent);
+            if (!p) fail(`${where}: parent "${n.parent}" does not exist`);
+            else if (n.from < p.from) fail(`${where}: born ${n.from}, before its parent (${p.from})`);
+            else if (p.to != null && n.from > p.to) {
+                fail(`${where}: born ${n.from}, after its parent ended (${p.to})`);
+            }
+        }
+        if (n.to != null && n.to < n.from) fail(`${where}: ends (${n.to}) before it begins (${n.from})`);
+        if (!['living', 'extinct', 'absorbed', 'disputed'].includes(n.status)) {
+            fail(`${where}: unknown status "${n.status}"`);
+        }
+        if (n.status === 'living' && n.to != null) fail(`${where}: living but carries an end year`);
+        if (n.status === 'extinct' && n.to == null) fail(`${where}: extinct but never ends`);
+        if (!n.note || wordCount(n.note) < 6) fail(`${where}: the note is too thin to say what parted`);
+        if (n.status === 'disputed' && wordCount(n.note) < 15) {
+            fail(`${where}: a disputed membership needs both views in its note`);
+        }
+        checkContested(where, n);
+    }
+    notes.push(`tree: ${tree.nodes.length} branches`);
+}
+
+// --- the matrix: every position must face every question --------------------
+const matrix = await load('matrix');
+if (matrix) {
+    const qkeys = matrix.questions.map((q) => q.key);
+    const seen = new Set();
+    for (const p of matrix.positions) {
+        const where = `matrix/${p.key}`;
+        if (seen.has(p.key)) fail(`${where}: duplicate key`);
+        seen.add(p.key);
+        for (const qk of qkeys) {
+            const a = p.answers[qk];
+            if (!a || !['yes', 'no', 'q'].includes(a.v)) {
+                fail(`${where}: no answer to "${qk}" — a row that dodges a question is not a position`);
+            } else if (a.v === 'q' && !a.note) {
+                fail(`${where}: answer to "${qk}" is "qualified" with no note saying how`);
+            }
+        }
+        for (const extra of Object.keys(p.answers)) {
+            if (!qkeys.includes(extra)) fail(`${where}: answers unknown question "${extra}"`);
+        }
+        if (!p.holder) fail(`${where}: nobody is recorded as holding it`);
+        checkContested(where, p);
+    }
+    notes.push(`matrix: ${matrix.positions.length} positions × ${qkeys.length} questions`);
+}
+
+// --- the words: script identity is the whole point --------------------------
+const words = await load('words');
+if (words) {
+    const seen = new Set();
+    const GREEK_OK = (cp) => (cp >= 0x0370 && cp <= 0x03ff) || (cp >= 0x1f00 && cp <= 0x1fff)
+        || cp === 0x0020 || cp === 0x2019 || cp === 0x0027 || cp === 0x002d;
+    const LATIN_OK = (cp) => (cp >= 0x0041 && cp <= 0x024f) || cp === 0x0020 || cp === 0x002d;
+    for (const w of words.entries) {
+        const where = `words/${w.slug}`;
+        if (seen.has(w.slug)) fail(`${where}: duplicate slug`);
+        seen.add(w.slug);
+        const ok = w.lang === 'greek' ? GREEK_OK : LATIN_OK;
+        for (const ch of w.native) {
+            const cp = ch.codePointAt(0);
+            if (!ok(cp)) {
+                fail(`${where}: "${w.native}" contains U+${cp.toString(16).toUpperCase().padStart(4, '0')} `
+                    + `"${ch}" — not ${w.lang} script`);
+            }
+        }
+        if (!w.fight || wordCount(w.fight) < 10) fail(`${where}: the fight is not described`);
+        checkContested(where, w);
+    }
+    notes.push(`words: ${words.entries.length}`);
+}
+
+// --- the creeds: the battlefields must be marked ----------------------------
+const creeds = await load('creeds');
+if (creeds) {
+    const seen = new Set();
+    for (const c of creeds.creeds) {
+        const where = `creeds/${c.slug}`;
+        if (seen.has(c.slug)) fail(`${where}: duplicate slug`);
+        seen.add(c.slug);
+        if (!c.clauses?.length) fail(`${where}: a creed with no text`);
+        checkContested(where, c);
+    }
+    const n325 = creeds.creeds.find((c) => /325/.test(c.slug) || /325/.test(c.origin || ''));
+    if (n325 && !n325.clauses.some((cl) => /anathema/i.test(cl.note || '') || /anathema/i.test(cl.text))) {
+        fail('creeds: the original Nicene creed must carry its anathemas — they are half its point');
+    }
+    const n381 = creeds.creeds.find((c) => /381/.test(c.slug) || /381/.test(c.origin || ''));
+    if (n381 && !n381.clauses.some((cl) => cl.variant)) {
+        fail('creeds: the 381 creed must show the filioque variant — the East-West grievance lives in that clause');
+    }
+    notes.push(`creeds: ${creeds.creeds.length}`);
+}
+
 // --- report ----------------------------------------------------------------
-const present = [christologies, branches, councils, canon, figures, symbols, mapsites, timeline, gallery]
+const present = [christologies, branches, councils, canon, figures, symbols, mapsites, timeline,
+    gallery, tree, matrix, words, creeds]
     .filter(Boolean).length;
 if (present === 0) {
     console.log('christianities: scaffolded, awaiting content');
@@ -304,4 +414,4 @@ if (errors.length) {
     for (const e of errors) console.error(`  ✗ ${e}`);
     process.exit(1);
 }
-console.log(`christianities: ${present}/9 sections — ${notes.join(' · ')} — validated`);
+console.log(`christianities: ${present}/13 sections — ${notes.join(' · ')} — validated`);

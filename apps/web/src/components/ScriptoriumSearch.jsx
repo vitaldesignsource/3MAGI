@@ -22,10 +22,11 @@ const KIND_LABEL = {
     work: 'Text', event: 'Timeline', lesson: 'Lesson', book: 'Reading Room',
     // the Christianities portal
     christology: 'Christology', branch: 'Branch', council: 'Council',
-    dispute: 'Argument', canon: 'Canon', figure: 'Figure', symbol: 'Symbol', site: 'Place',
+    dispute: 'Argument', canon: 'Canon', figure: 'Figure', symbol: 'Symbol',
+    site: 'Place', creed: 'Creed',
 };
 const KIND_ORDER = ['name', 'term', 'sign', 'current', 'work', 'event', 'lesson', 'book',
-    'figure', 'branch', 'council', 'dispute', 'christology', 'canon', 'symbol', 'site'];
+    'figure', 'branch', 'council', 'dispute', 'christology', 'creed', 'canon', 'symbol', 'site'];
 
 // The same index serves two portals; each search box sees only its own half.
 // Christianities records are marked h === 'ch' and carry their path outright.

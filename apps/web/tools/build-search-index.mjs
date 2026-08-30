@@ -154,6 +154,27 @@ for (const s of mapsites?.sites ?? []) push(
     s.blurb, s.slug, '/christianities/map',
 );
 
+const tree = await loadCh('tree');
+for (const n of tree?.nodes ?? []) push(
+    CH, 'branch', '', n.label, `${n.from}–${n.to ?? 'today'}`,
+    n.note, '', '/christianities/branches',
+);
+
+const chMatrix = await loadCh('matrix');
+for (const p of chMatrix?.positions ?? []) push(
+    CH, 'christology', '', p.label, '', p.holder, '', '/christianities/christologies',
+);
+
+const chWords = await loadCh('words');
+for (const w of chWords?.entries ?? []) push(
+    CH, 'term', w.native, w.translit, w.literal, w.fight, w.slug, '/christianities/councils',
+);
+
+const chCreeds = await loadCh('creeds');
+for (const c of chCreeds?.creeds ?? []) push(
+    CH, 'creed', c.native, c.name, c.origin, c.story, c.slug, '/christianities/councils',
+);
+
 const chTimeline = await loadCh('timeline');
 for (const e of chTimeline?.events ?? []) push(
     CH, 'event', e.native, e.title,
