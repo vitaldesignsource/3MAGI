@@ -11042,6 +11042,12 @@ h3 {
   color: rgba(222, 212, 196, 0.62); font-size: 0.88em; line-height: 1.65;
 }
 
+.ch-words-bridge {
+  margin: 1.6rem auto 0; max-width: 46rem; text-align: center;
+  color: rgba(222, 212, 196, 0.6); font-size: 0.9rem; line-height: 1.7;
+}
+.ch-words-bridge a { color: #d1ad68; }
+
 /* the family at prayer — portal gallery */
 .ch-gallery { margin-top: clamp(3rem, 6vw, 5rem); }
 .ch-gallery-grid {

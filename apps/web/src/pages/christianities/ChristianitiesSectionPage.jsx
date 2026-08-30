@@ -296,6 +296,12 @@ function CouncilWords({ words }) {
                     </Expandable>
                 ))}
             </div>
+            <p className="ch-words-bridge">
+                The alphabet these words are spelled in, the numbers its letters
+                carry, and the wider lexicon live in the Scriptorium's{' '}
+                <Link to="/third-lamp/education/greek">Greek hall</Link>
+                {' '}and <Link to="/third-lamp/education/latin">Latin hall</Link>.
+            </p>
         </section>
     );
 }
