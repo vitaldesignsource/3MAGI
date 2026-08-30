@@ -7,11 +7,13 @@ import { loadData } from './lib';
 import Rich from '../christianities/rich';
 import PortalHero from '../christianities/PortalHero';
 import { SECTION_BY_SLUG } from './lib';
+import LAND from '../../data/powers/mapland';
 
-// The Map of the Powers. Two frames again, but drawn as pure constellation —
-// no coastline this time, because the gods' geography runs from Teotihuacan
-// to Ise and no honest hand-laid shoreline covers that. Points, graticule,
-// and names: a star chart of the cults.
+// The Map of the Powers. Two frames — the Old World at 1:10m and the whole
+// planet at 1:50m — drawn from Natural Earth land polygons clipped to each
+// frame at build time by tools/build-mapland.mjs. The gods' geography runs
+// from Teotihuacan to Ise, which is precisely why it needed a real coastline
+// rather than a hand-laid one.
 
 const ERAS = [
     { key: 'all', label: 'All ages', from: -3500, to: 2100 },
@@ -42,6 +44,9 @@ function makeProjector(frame, width) {
     ];
     return { project, width, height };
 }
+
+const pathFor = (project, pts) =>
+    pts.map((p, i) => `${i === 0 ? 'M' : 'L'}${project(p)[0].toFixed(1)},${project(p)[1].toFixed(1)}`).join(' ');
 
 const inFrame = (frame, s) =>
     s.lon >= frame.minLon && s.lon <= frame.maxLon && s.lat >= frame.minLat && s.lat <= frame.maxLat;
@@ -89,6 +94,11 @@ function PowersMapPage() {
         const present = new Set(sites.flatMap((s) => s.categories));
         return Object.keys(CATEGORY_LABEL).filter((k) => present.has(k));
     }, [sites]);
+
+    const landPaths = useMemo(() => {
+        const rings = LAND[view === 'oldworld' ? 'oldworld' : 'world'] || [];
+        return rings.map((ring) => `${pathFor(project, ring)}Z`);
+    }, [view, project]);
 
     const graticule = useMemo(() => {
         const lines = [];
@@ -160,7 +170,9 @@ function PowersMapPage() {
                     <svg className="ch-map-svg" viewBox={`0 0 ${width} ${height}`} role="group"
                         aria-label="Map of the powers">
                         <rect className="ch-map-sea" x="0" y="0" width={width} height={height} />
+                        {landPaths.map((d, i) => <path key={`l${i}`} className="ch-map-land" d={d} />)}
                         {graticule.map((d, i) => <path key={i} className="ch-map-graticule" d={d} />)}
+                        {landPaths.map((d, i) => <path key={`c${i}`} className="ch-map-coastline" d={d} />)}
                         {visible.map((s) => {
                             const [x, y] = project([s.lon, s.lat]);
                             const isActive = s.slug === activeSlug;
@@ -204,8 +216,9 @@ function PowersMapPage() {
                 )}
 
                 <p className="edu-kinship-legend">
-                    A constellation, not a coastline: every point is plotted from
-                    real coordinates, and the same sky holds Uruk and Teotihuacan.
+                    Real coastline and real coordinates: the land is Natural Earth
+                    data clipped to each frame, and one map holds Uruk and Teotihuacan
+                    alike.
                     Choose an era to watch the population change.
                 </p>
             </main>

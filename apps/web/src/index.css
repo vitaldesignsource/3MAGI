@@ -11972,9 +11972,16 @@ figure.ch-gallery-card { margin: 0; }
   display: block; width: 100%; height: auto;
   border: 1px solid rgba(179, 139, 70, 0.35);
 }
-.ch-map-sea { fill: #0d0f12; }
+.ch-map-sea { fill: #070b10; }
 .ch-map-graticule { stroke: rgba(179, 139, 70, 0.1); stroke-width: 0.6; fill: none; }
 .ch-map-coast { stroke: rgba(209, 173, 104, 0.55); stroke-width: 1.1; fill: none; stroke-linejoin: round; }
+/* real land: a warm stone mass on a dark sea, with the coast drawn over the
+   graticule so the shoreline reads as the sharpest line on the chart */
+.ch-map-land { fill: #1c1913; stroke: none; }
+.ch-map-coastline {
+  fill: none; stroke: rgba(209, 173, 104, 0.62); stroke-width: 0.85;
+  stroke-linejoin: round; stroke-linecap: round; vector-effect: non-scaling-stroke;
+}
 .ch-map-sealabel {
   fill: rgba(179, 139, 70, 0.35); font-size: 13px; font-style: italic; letter-spacing: 0.3em;
 }
