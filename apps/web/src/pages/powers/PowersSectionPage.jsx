@@ -5,6 +5,7 @@ import SiteHeader from '../../components/SiteHeader';
 import SiteFooter from '../../components/SiteFooter';
 import { SECTION_BY_SLUG, loadData } from './lib';
 import Rich from '../christianities/rich';
+import Plate from '../christianities/Plate';
 import PortalHero from '../christianities/PortalHero';
 
 // One page, five doors of The Powers: hierarchies, host, pantheons, daimons,
@@ -36,24 +37,6 @@ const kv = (label, value) => (value
     ? <div className="ch-kv"><span>{label}</span><p><Rich t={value} /></p></div>
     : null);
 
-// A plate: an image set beside the thing it depicts — inside an entry body,
-// or full-width beneath a company's header.
-const Plate = ({ item, wide }) => (item?.image ? (
-    <figure className={`pw-entry-figure${wide ? ' is-wide' : ''}`}>
-        <span className="pw-plate-stage">
-            <img src={`/media/${item.image}`} alt={item.imageAlt || ''}
-                loading="lazy" decoding="async" />
-            {item.imageEffect === 'light' && (
-                <span className="pw-plate-light" aria-hidden="true">
-                    <span className="pw-plate-beam" />
-                    <span className="pw-plate-glow" />
-                    <span className="pw-plate-motes" />
-                </span>
-            )}
-        </span>
-        {item.imageCaption && <figcaption><Rich t={item.imageCaption} /></figcaption>}
-    </figure>
-) : null);
 
 function Hierarchies({ data, open, setOpen }) {
     return (

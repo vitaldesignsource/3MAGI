@@ -14,6 +14,7 @@
 
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
+import { existsSync } from 'node:fs';
 
 const here = path.dirname(fileURLToPath(import.meta.url));
 const web = path.resolve(here, '..');
@@ -217,6 +218,10 @@ if (figures) {
         if (f.quote && wordCount(f.quote.source) < 2) {
             fail(`${where}: quotation source "${f.quote.source}" is not a citation`);
         }
+        if (f.image && !existsSync(path.join(web, 'public/media', f.image))) {
+            fail(`${where}: image ${f.image} not in public/media`);
+        }
+        if (f.image && !f.imageAlt) fail(`${where}: image without alt text`);
         checkContested(where, f);
     }
     notes.push(`figures: ${figures.entries.length}`);
@@ -308,7 +313,6 @@ if (timeline) {
 // --- the gallery: every image must exist, every card must say what it shows -
 const gallery = await load('gallery');
 if (gallery) {
-    const { existsSync } = await import('node:fs');
     const seen = new Set();
     for (const g of gallery.images) {
         const where = `gallery/${g.file}`;

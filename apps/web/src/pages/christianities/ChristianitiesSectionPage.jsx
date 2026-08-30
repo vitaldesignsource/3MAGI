@@ -6,6 +6,7 @@ import SiteFooter from '../../components/SiteFooter';
 import ChristianitiesTree from './ChristianitiesTree';
 import SYMBOL_MARKS from './symbolMarks';
 import PortalHero from './PortalHero';
+import Plate from './Plate';
 import Rich from './rich';
 import { SECTION_BY_SLUG, loadData } from './lib';
 
@@ -169,6 +170,7 @@ function Figures({ data, open, setOpen }) {
                     <Expandable key={e.slug} id={e.slug} open={open === e.slug}
                         onToggle={() => setOpen(open === e.slug ? null : e.slug)}
                         head={e.name} sub={`${e.dates} · ${e.role}`} badge={null}>
+                        <Plate item={e} />
                         <div className="ch-kv"><span>Tradition</span><p><Rich t={e.tradition} /></p></div>
                         <p><Rich t={e.contribution} /></p>
                         {e.fate && <div className="ch-kv"><span>Fate</span><p><Rich t={e.fate} /></p></div>}

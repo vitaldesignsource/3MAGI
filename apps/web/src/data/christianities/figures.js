@@ -66,6 +66,9 @@ export default {
     "entries": [
         {
             "slug": "peter",
+            "image": "0507daa2b2b12d666bcdb4de8df460ad.webp",
+            "imageAlt": "A night courtyard: a standing man arguing across a long table of seated diners toward another standing man with folded arms, lamps burning on the wall",
+            "imageCaption": "The dispute at Antioch — Paul withstanding Peter “to the face,” as Galatians 2 puts it. The earliest apostolic quarrel we have on record, and it is about who may eat with whom.",
             "name": "Peter (Simon Kephas)",
             "dates": "d. c. 64-68",
             "categories": [
@@ -256,6 +259,9 @@ export default {
         },
         {
             "slug": "perpetua-and-felicity",
+            "image": "4c26356256b9b34805b549b37ad115af.webp",
+            "imageAlt": "Two women in plain robes holding hands in a stone tunnel, the sunlit arena and crowd visible through the arch beyond, a soldier standing guard",
+            "imageCaption": "The gate to the arena at Carthage, 203. Perpetua kept a diary until the day before she died, and it survives — one of the earliest texts by a Christian woman in her own voice.",
             "name": "Perpetua and Felicity",
             "dates": "d. 203",
             "categories": [
@@ -606,6 +612,9 @@ export default {
         },
         {
             "slug": "arius",
+            "image": "d5f691ac2cc3e7dbefdf26355d1c7977.webp",
+            "imageAlt": "Two men facing each other across the aisle of a great basilica packed with seated bishops, an emperor enthroned in the far distance",
+            "imageCaption": "Nicaea, 325: the presbyter and his opponents across the aisle, with the emperor at the end of the hall. Almost nothing Arius wrote survives except in the quotations of the men who beat him.",
             "name": "Arius",
             "dates": "c. 256 - 336",
             "categories": [
@@ -672,6 +681,9 @@ export default {
         },
         {
             "slug": "hildegard-of-bingen",
+            "image": "07c36eba65579c7242d9294e51d053cf.webp",
+            "imageAlt": "An elderly nun looking up from a cosmological diagram she is drawing, two sisters writing behind her, herbs, mortars and a psaltery around the workroom",
+            "imageCaption": "The abbess at her work: cosmology on the sheet, simples drying on the shelf, a psaltery against the wall — visionary, physician and composer in one working life.",
             "name": "Hildegard of Bingen",
             "dates": "1098 - 1179",
             "categories": [
@@ -894,6 +906,9 @@ export default {
         },
         {
             "slug": "william-seymour",
+            "image": "cae584688189abcd7f8931ecc799fe56.webp",
+            "imageAlt": "A crowded wooden mission hall by lamplight, Black and white worshippers together, hands raised, a man praying bowed over a packing-crate pulpit, a fiddler at the back",
+            "imageCaption": "Azusa Street, 1906: a packing crate for a pulpit, and a room integrated at a time when almost no American room was — the fact contemporaries found hardest to report calmly.",
             "name": "William J. Seymour",
             "dates": "1870 - 1922",
             "categories": [
