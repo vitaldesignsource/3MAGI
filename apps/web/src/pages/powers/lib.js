@@ -12,6 +12,7 @@ export const loadData = async (name) => {
 export const SECTIONS = [
     {
         slug: 'hierarchies', title: 'The Hierarchies', kicker: 'Rank Upon Rank',
+        heroEffect: 'oculus',
         hero: 'f88f1e7b776e8375d5e34cae7f088c5d.webp',
         heroAlt: 'A robed man at an altar beneath a towering wall of graded tiers, each rank carved with its own disc and countenance, light falling from the oculus above',
         blurb: 'How the traditions ordered the unseen: the nine choirs of '
@@ -20,6 +21,7 @@ export const SECTIONS = [
     },
     {
         slug: 'host', title: 'The Host', kicker: 'The Named Ones',
+        heroEffect: 'depth',
         hero: '2d1903a5881088c7560e856a80983f5a.webp',
         heroAlt: 'An endless ranked host of winged figures filling a vast hall, light breaking through smoke above the far throne',
         blurb: 'Michael and Gabriel, Metatron and Raziel, Iblis and Azazel, '
@@ -28,6 +30,7 @@ export const SECTIONS = [
     },
     {
         slug: 'pantheons', title: 'The Pantheons', kicker: 'The Families of the Gods',
+        heroEffect: 'gallery',
         hero: '1f42843b12866ffdf955cc3c8f8e851c.webp',
         heroAlt: 'A museum corridor of the gods: a seated Mesopotamian king, a falcon-headed relief, a draped Greek goddess, a crowned African queen',
         blurb: 'Sumer to Yorubaland, Olympus to the kami — the great '
@@ -36,6 +39,7 @@ export const SECTIONS = [
     },
     {
         slug: 'daimons', title: 'The Daimons', kicker: 'The Beings Between',
+        heroEffect: 'drift',
         hero: 'fbb3fbfe09076061ed01862a58c394e9.webp',
         heroAlt: 'A cloaked man among standing stones and bronze cauldrons in a misted grove, a second figure half-visible in the fog',
         blurb: 'The daimon before it was a demon: Hesiod’s watchers, '
@@ -44,6 +48,7 @@ export const SECTIONS = [
     },
     {
         slug: 'texts', title: 'The Texts', kicker: 'Where It Is Written',
+        heroEffect: 'lamp',
         hero: '9ad6bf37aaf6af0156ee6d451166ad5e.webp',
         heroAlt: 'Conservators at a dark table over cuneiform tablets, stitched codices, and an illuminated manuscript',
         blurb: 'The Book of the Watchers to the Celestial Hierarchy, the '
@@ -52,6 +57,7 @@ export const SECTIONS = [
     },
     {
         slug: 'map', title: 'The Map', kicker: 'Where They Were Named',
+        heroEffect: 'table',
         hero: 'cbd7ada725ec97c2d02e2bab099dec62.webp',
         heroAlt: 'A scholar with a lamp bent over a vast circular relief map table in a dark cabinet hall',
         blurb: 'An interactive map of the cults and visions: Uruk and '

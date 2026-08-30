@@ -11,12 +11,17 @@ import Rich from './rich';
 // Without an image it degrades to the plain hero the portals used before, so
 // a door whose art has not arrived still opens correctly.
 
-function PortalHero({ image, alt, kicker, kickerLink, kickerLinkLabel, title, intro, grand, children }) {
+function PortalHero({ image, alt, kicker, kickerLink, kickerLinkLabel, title, intro, grand, effect, children }) {
     return (
         <section className={`edu-hero ch-hero${image ? ' has-image' : ''}${grand ? ' is-grand' : ''}`}>
             {image && (
                 <div className="ch-hero-figure" aria-hidden={alt ? undefined : 'true'}>
                     <img src={`/media/${image}`} alt={alt || ''} loading="eager" decoding="async" />
+                    {effect && (
+                        <span className={`ch-hero-light is-${effect}`} aria-hidden="true">
+                            <span className="hl-a" /><span className="hl-b" />
+                        </span>
+                    )}
                     <span className="ch-hero-scrim" />
                 </div>
             )}

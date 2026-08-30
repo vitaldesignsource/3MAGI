@@ -11378,6 +11378,141 @@ figure.ch-gallery-card { margin: 0; }
   .pw-plate-motes { opacity: 0.25; }
 }
 
+/* --- hero light -------------------------------------------------------------
+   Each hero gets motion that matches the light already in its photograph:
+   the shaft that is falling there, the lamp that is burning there, the mist
+   that is moving there. Compositor-only, screen-blended, and pitched lower
+   than the plate effects because a hero is large and should breathe rather
+   than perform. Stilled for reduced-motion readers. */
+.ch-hero-light { position: absolute; inset: 0; display: block; pointer-events: none; }
+.ch-hero-light > span { position: absolute; inset: 0; display: block; mix-blend-mode: screen; }
+
+/* DESCEND — the landing's marble hall: light coming down through the smoke,
+   with dust falling slowly across it. */
+.is-descend .hl-a {
+  background: linear-gradient(178deg,
+    rgba(238, 224, 194, 0.22) 0%, rgba(238, 224, 194, 0.09) 34%, transparent 66%);
+  animation: hl-breathe 13s ease-in-out infinite;
+}
+.is-descend .hl-b {
+  background-image:
+    radial-gradient(1.4px 1.4px at 24% 20%, rgba(244,232,206,0.75), transparent 100%),
+    radial-gradient(1px 1px at 58% 42%, rgba(238,224,194,0.6), transparent 100%),
+    radial-gradient(1.8px 1.8px at 76% 26%, rgba(244,232,206,0.55), transparent 100%),
+    radial-gradient(1px 1px at 40% 66%, rgba(238,224,194,0.6), transparent 100%);
+  background-size: 420px 420px; background-repeat: repeat;
+  height: 200%; top: -100%; opacity: 0.42;
+  animation: hl-fall 26s linear infinite;
+}
+@keyframes hl-fall { from { transform: translateY(0); } to { transform: translateY(50%); } }
+
+/* OCULUS — the graded wall: radiance at the top of the tiers, washing down
+   the ranks. */
+.is-oculus .hl-a {
+  background: radial-gradient(ellipse 34% 30% at 50% 4%,
+    rgba(246, 232, 198, 0.34) 0%, rgba(238, 214, 166, 0.12) 46%, transparent 76%);
+  animation: hl-breathe 9s ease-in-out infinite;
+}
+.is-oculus .hl-b {
+  background: linear-gradient(180deg,
+    rgba(238, 214, 166, 0.16) 0%, transparent 46%);
+  animation: hl-wash 15s ease-in-out infinite;
+}
+@keyframes hl-wash {
+  0%, 100% { opacity: 0.3; transform: translateY(-2%); }
+  50%      { opacity: 0.8; transform: translateY(2%); }
+}
+
+/* DEPTH — the ranked host: the far radiance at the vanishing point, drawing
+   the eye up the aisle. */
+.is-depth .hl-a {
+  background: radial-gradient(ellipse 26% 34% at 50% 34%,
+    rgba(248, 238, 214, 0.34) 0%, rgba(238, 224, 194, 0.10) 48%, transparent 78%);
+  animation: hl-pulse 11s ease-in-out infinite;
+}
+.is-depth .hl-b {
+  background: radial-gradient(ellipse 60% 40% at 50% 22%,
+    rgba(238, 224, 194, 0.12) 0%, transparent 70%);
+  animation: hl-breathe 17s ease-in-out infinite reverse;
+}
+@keyframes hl-pulse {
+  0%, 100% { opacity: 0.42; transform: scale(1); }
+  50%      { opacity: 0.95; transform: scale(1.08); }
+}
+
+/* GALLERY — the corridor of gods: a cool skylight sweep, restrained, because
+   the room is already lit. */
+.is-gallery .hl-a {
+  background: linear-gradient(96deg,
+    transparent 34%, rgba(226, 232, 240, 0.14) 48%, rgba(214, 226, 240, 0.20) 51%,
+    rgba(226, 232, 240, 0.14) 54%, transparent 68%);
+  width: 200%; left: -50%;
+  animation: hl-sweep 21s ease-in-out infinite alternate;
+}
+.is-gallery .hl-b {
+  background: radial-gradient(ellipse 44% 26% at 50% 8%,
+    rgba(226, 236, 248, 0.16) 0%, transparent 72%);
+  animation: hl-breathe 12s ease-in-out infinite;
+}
+@keyframes hl-sweep {
+  from { transform: translateX(-10%); opacity: 0.55; }
+  to   { transform: translateX(10%); opacity: 0.95; }
+}
+
+/* DRIFT — the mist grove: cool fog moving across the stones, no gold at all,
+   two bands crossing at different speeds. */
+.is-drift .hl-a {
+  background: linear-gradient(92deg,
+    transparent 8%, rgba(196, 206, 214, 0.16) 34%, rgba(206, 216, 224, 0.22) 52%,
+    rgba(196, 206, 214, 0.14) 70%, transparent 94%);
+  width: 160%; left: -30%;
+  animation: hl-mist 30s ease-in-out infinite alternate;
+}
+.is-drift .hl-b {
+  background: radial-gradient(ellipse 50% 34% at 58% 48%,
+    rgba(210, 220, 228, 0.18) 0%, transparent 74%);
+  animation: hl-breathe 19s ease-in-out infinite reverse;
+}
+@keyframes hl-mist {
+  from { transform: translateX(-8%); opacity: 0.5; }
+  to   { transform: translateX(8%); opacity: 0.9; }
+}
+
+/* LAMP — the conservators' bench: the brass reading lamp, warm and steady
+   with the faintest flicker. */
+.is-lamp .hl-a {
+  background: radial-gradient(ellipse 26% 34% at 60% 34%,
+    rgba(252, 226, 168, 0.32) 0%, rgba(240, 200, 130, 0.12) 44%, transparent 74%);
+  animation: hl-pulse 8s ease-in-out infinite;
+}
+.is-lamp .hl-b {
+  background: radial-gradient(ellipse 44% 30% at 58% 52%,
+    rgba(246, 220, 170, 0.12) 0%, transparent 72%);
+  animation: hl-breathe 14s ease-in-out infinite;
+}
+
+/* TABLE — the great relief map: the lamp pooling on the chart, with the room
+   beyond it cold. */
+.is-table .hl-a {
+  background: radial-gradient(ellipse 30% 26% at 56% 52%,
+    rgba(252, 228, 172, 0.34) 0%, rgba(238, 198, 128, 0.12) 46%, transparent 76%);
+  animation: hl-pulse 9.5s ease-in-out infinite;
+}
+.is-table .hl-b {
+  background: radial-gradient(ellipse 56% 30% at 50% 14%,
+    rgba(186, 206, 228, 0.14) 0%, transparent 72%);
+  animation: hl-breathe 16s ease-in-out infinite reverse;
+}
+
+@keyframes hl-breathe {
+  0%, 100% { opacity: 0.4; transform: scale(1); }
+  50%      { opacity: 0.9; transform: scale(1.04); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ch-hero-light > span { animation: none !important; opacity: 0.4; }
+}
+
 /* the powers — portal-specific touches on the shared ch machinery */
 .pw-head-native { margin-right: 0.5em; font-size: 1.15em; color: #ecd9ae; }
 .pw-rank-native { margin-right: 0.45em; color: #ecd9ae; }

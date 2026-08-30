@@ -31,7 +31,7 @@ function PowersPortalPage() {
             </Helmet>
             <SiteHeader />
 
-            <PortalHero grand
+            <PortalHero grand effect="descend"
                 image="9ab3ebc27f80a115b54e72bf04ef1d27.webp"
                 alt="A vast marble hall of niches holding a winged bronze figure, a veiled seated statue, a gilded many-winged relief and a panel of golden stars, one reader standing before them"
                 kicker="A Three Magi Press Portal"

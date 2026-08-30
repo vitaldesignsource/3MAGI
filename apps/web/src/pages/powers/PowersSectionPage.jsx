@@ -317,7 +317,7 @@ function PowersSectionPage() {
                 <meta name="description" content={meta.blurb} />
             </Helmet>
             <SiteHeader />
-            <PortalHero image={meta.hero} alt={meta.heroAlt}
+            <PortalHero image={meta.hero} alt={meta.heroAlt} effect={meta.heroEffect}
                 kickerLink="/powers" kickerLinkLabel="The Powers"
                 kicker={meta.kicker} title={meta.title} intro={data?.intro} />
             <main className="edu-main">

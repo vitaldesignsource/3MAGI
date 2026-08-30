@@ -119,7 +119,7 @@ function PowersMapPage() {
                 <meta name="description" content="An interactive map of the cults, oracles, visions and schools of the powers: Uruk to Teotihuacan, Delphi to Ise, Qumran to Mortlake." />
             </Helmet>
             <SiteHeader />
-            <PortalHero image={SECTION_BY_SLUG.map?.hero} alt={SECTION_BY_SLUG.map?.heroAlt}
+            <PortalHero image={SECTION_BY_SLUG.map?.hero} alt={SECTION_BY_SLUG.map?.heroAlt} effect={SECTION_BY_SLUG.map?.heroEffect}
                 kickerLink="/powers" kickerLinkLabel="The Powers"
                 kicker="Where They Were Named" title="The Map"
                 intro={data.intro ? [data.intro] : []} />
