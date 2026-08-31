@@ -6,6 +6,7 @@ import SiteFooter from '../../components/SiteFooter';
 import { SECTION_BY_SLUG, loadData } from './lib';
 import Rich from '../christianities/rich';
 import Plate from '../christianities/Plate';
+import DIAGRAMS from './HierarchyDiagrams';
 import PortalHero from '../christianities/PortalHero';
 
 // One page, five doors of The Powers: hierarchies, host, pantheons, daimons,
@@ -47,6 +48,7 @@ function Hierarchies({ data, open, setOpen }) {
                     head={e.name} sub={e.era} badge={e.tradition}>
                     <Plate item={e} />
                     {e.exposition.map((p, i) => <p key={i}><Rich t={p} /></p>)}
+                    {DIAGRAMS[e.slug] && React.createElement(DIAGRAMS[e.slug])}
                     {e.ranks?.length > 0 && (
                         <div className="ch-kv"><span>The ranks, highest first</span>
                             <ol className="pw-ranks is-ladder">

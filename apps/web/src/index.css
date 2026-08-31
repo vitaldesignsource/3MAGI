@@ -11620,6 +11620,39 @@ figure.ch-gallery-card { margin: 0; }
   .ch-hero-light > span { animation: none !important; opacity: 0.4; }
 }
 
+/* --- hierarchy diagrams -----------------------------------------------------
+   Drawn from each tradition's own asserted structure. Gold line on the dark
+   ground, sized to sit inside an entry body without dominating it. */
+.pw-diagram { margin: 1.6rem 0; }
+.pw-diagram-svg {
+  display: block; width: 100%; max-width: 30rem; margin: 0 auto;
+  height: auto; color: #d1ad68;
+}
+.pw-diagram figcaption {
+  max-width: 34rem; margin: 0.9rem auto 0; text-align: center;
+  font-family: Georgia, "Times New Roman", serif; font-style: italic;
+  font-size: 0.86rem; line-height: 1.65; color: rgba(222, 212, 196, 0.62);
+}
+.pw-dg-ring { fill: none; stroke: rgba(179, 139, 70, 0.34); stroke-width: 1; }
+.pw-dg-spoke { stroke: rgba(179, 139, 70, 0.3); stroke-width: 1; }
+.pw-dg-ray { stroke: rgba(209, 173, 104, 0.4); stroke-width: 1.4; stroke-linecap: round; }
+.pw-dg-core { fill: rgba(209, 173, 104, 0.14); stroke: rgba(209, 173, 104, 0.65); stroke-width: 1.2; }
+.pw-dg-node { fill: rgba(16, 13, 10, 0.9); stroke: rgba(179, 139, 70, 0.45); stroke-width: 1; }
+.pw-dg-gate {
+  fill: rgba(16, 13, 10, 0.85); stroke: rgba(179, 139, 70, 0.45); stroke-width: 1;
+}
+.pw-dg-gate.is-apart { stroke: rgba(209, 173, 104, 0.85); }
+.pw-dg-gate.is-fallen { stroke: rgba(150, 130, 110, 0.45); stroke-dasharray: 4 3; }
+.pw-dg-aeon { fill: none; stroke: rgba(209, 173, 104, 0.4); stroke-width: 1; }
+.pw-dg-barrier { stroke: rgba(209, 173, 104, 0.75); stroke-width: 1.4; stroke-dasharray: 7 5; }
+.pw-dg-fall, .pw-dg-ascent { fill: none; stroke: rgba(209, 173, 104, 0.7); stroke-width: 1.3; }
+.pw-dg-arrowhead { fill: rgba(209, 173, 104, 0.85); stroke: none; }
+.pw-dg-label { fill: #efe7d4; font-size: 12px; letter-spacing: 0.04em; }
+.pw-dg-corelabel { fill: #f6ead0; font-size: 13px; letter-spacing: 0.06em; }
+.pw-dg-sub { fill: rgba(232, 224, 208, 0.72); font-size: 10.5px; font-family: Georgia, serif; font-style: italic; }
+.pw-dg-creation { fill: rgba(209, 173, 104, 0.8); font-size: 9.5px; font-family: Georgia, serif; letter-spacing: 0.1em; }
+.pw-dg-caption { fill: rgba(209, 173, 104, 0.7); font-size: 10px; letter-spacing: 0.18em; }
+
 /* --- section atmosphere -----------------------------------------------------
    A section that is otherwise a large plain field can carry a photograph
    behind it, provided the photograph never competes: blurred past legibility,
@@ -11628,7 +11661,12 @@ figure.ch-gallery-card { margin: 0; }
    Used sparingly and only where the image is the section's own subject. */
 .has-atmosphere { position: relative; isolation: isolate; }
 .has-atmosphere::before {
-  content: ""; position: absolute; inset: -3rem 0; z-index: -1;
+  /* full-bleed: the wash spans the viewport rather than the content column,
+     so it reads as the room the section sits in instead of a panel behind it.
+     html/body carry overflow-x: clip, so the vw overhang cannot scroll. */
+  content: ""; position: absolute; z-index: -1;
+  top: -3rem; bottom: -3rem;
+  left: 50%; width: 100vw; transform: translateX(-50%);
   background-image: var(--atmo);
   background-size: cover; background-position: center 42%;
   opacity: 0.12; filter: blur(3px) saturate(0.42) brightness(0.9);

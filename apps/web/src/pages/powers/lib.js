@@ -13,8 +13,8 @@ export const SECTIONS = [
     {
         slug: 'hierarchies', title: 'The Hierarchies', kicker: 'Rank Upon Rank',
         heroEffect: 'oculus',
-        hero: 'f88f1e7b776e8375d5e34cae7f088c5d.webp',
-        heroAlt: 'A robed man at an altar beneath a towering wall of graded tiers, each rank carved with its own disc and countenance, light falling from the oculus above',
+        hero: '4a9360dd4a6ab74ba2ab13f85f3d00b4.webp',
+        heroAlt: 'A vast dome carved with concentric rings of angels, rank upon rank ascending toward the light of the oculus, a scribe at work far below',
         blurb: 'How the traditions ordered the unseen: the nine choirs of '
             + 'Dionysius, Maimonides’ ten ranks, the Amesha Spentas, the '
             + 'archons and aeons — every ladder set out with its rungs.',
