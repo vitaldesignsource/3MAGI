@@ -39,10 +39,13 @@ function ChristianitiesCanonPage() {
     const [data, setData] = useState(null);
     const [activeTrad, setActiveTrad] = useState(null);
     const [openBook, setOpenBook] = useState(null);
+    const [bibles, setBibles] = useState(null);
+    const [openVersion, setOpenVersion] = useState(null);
 
     useEffect(() => {
         let alive = true;
         loadData('canon').then((d) => { if (alive) setData(d); });
+        loadData('bibles').then((b) => { if (alive && b?.versions?.length) setBibles(b); });
         return () => { alive = false; };
     }, []);
 
@@ -181,6 +184,49 @@ function ChristianitiesCanonPage() {
                         </aside>
                     )}
                 </section>
+
+                {bibles && (
+                    <section className="ch-bibles has-atmosphere" aria-labelledby="ch-bibles-heading"
+                        style={{ '--atmo': "url(/media/0a5fc321c40a2bb3c0fe4a85dc82f795.webp)" }}>
+                        <header className="edu-section-head">
+                            <p className="kicker">Which Books, and Then Which Bible</p>
+                            <h2 id="ch-bibles-heading">The Versions</h2>
+                            {bibles.intro.map((p, i) => <p key={i}><Rich t={p} /></p>)}
+                        </header>
+                        <ol className="ch-bible-list">
+                            {bibles.versions.map((v) => {
+                                const open = openVersion === v.slug;
+                                return (
+                                    <li key={v.slug} id={v.slug} className={`ch-bible${open ? ' is-open' : ''}`}>
+                                        <button type="button" className="ch-bible-head"
+                                            onClick={() => setOpenVersion(open ? null : v.slug)}
+                                            aria-expanded={open}>
+                                            <span className="ch-bible-year">
+                                                {v.year < 0 ? `${-v.year} BCE` : v.year}
+                                            </span>
+                                            <span className="ch-bible-titles">
+                                                <span className="ch-bible-name">
+                                                    {v.native && <span className="edu-glyph ch-bible-native">{v.native}</span>}
+                                                    {v.name}
+                                                </span>
+                                                <span className="ch-bible-lang">{v.language}</span>
+                                            </span>
+                                        </button>
+                                        {open && (
+                                            <div className="ch-bible-body">
+                                                <div className="ch-kv"><span>Translated from</span><p><Rich t={v.madeFrom} /></p></div>
+                                                <div className="ch-kv"><span>By</span><p><Rich t={v.by} /></p></div>
+                                                <p><Rich t={v.note} /></p>
+                                                <div className="ch-kv"><span>Where it stands</span><p><Rich t={v.standing} /></p></div>
+                                                <p className="ch-bible-date">{v.dateLabel}</p>
+                                            </div>
+                                        )}
+                                    </li>
+                                );
+                            })}
+                        </ol>
+                    </section>
+                )}
 
                 {data.milestones?.length > 0 && (
                     <ScriptoriumTimeline timeline={{ note: 'How the lists took shape: from the Seventy to the printers, every date that moved a Bible.', events: data.milestones }} rtl={false} />

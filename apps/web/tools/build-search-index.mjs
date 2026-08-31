@@ -180,6 +180,12 @@ for (const e of esoteric?.entries ?? []) push(
     CH, 'current', '', e.name, e.era, e.claim, e.slug, '/christianities/esoteric',
 );
 
+const bibles = await loadCh('bibles');
+for (const v of bibles?.versions ?? []) push(
+    CH, 'work', v.native, v.name, `${v.year < 0 ? `${-v.year} BCE` : v.year} · ${v.language}`,
+    v.note, v.slug, '/christianities/canon',
+);
+
 const chTimeline = await loadCh('timeline');
 for (const e of chTimeline?.events ?? []) push(
     CH, 'event', e.native, e.title,

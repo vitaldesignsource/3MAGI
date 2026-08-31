@@ -320,6 +320,25 @@ if (timeline) {
     notes.push(`timeline: ${timeline.events.length} events, ${dated} with dating notes`);
 }
 
+// --- the versions: a shelf that must stay in order --------------------------
+const bibles = await load('bibles');
+if (bibles) {
+    let prev = -Infinity;
+    const seen = new Set();
+    for (const v of bibles.versions) {
+        const where = `bibles/${v.slug}`;
+        if (seen.has(v.slug)) fail(`${where}: duplicate slug`);
+        seen.add(v.slug);
+        if (!Number.isInteger(v.year)) fail(`${where}: no sort year`);
+        else if (v.year < prev) fail(`${where}: shelf out of chronological order (${v.year} after ${prev})`);
+        if (Number.isInteger(v.year)) prev = v.year;
+        if (!v.madeFrom) fail(`${where}: does not say what it was translated from — the question that decides the rest`);
+        if (!v.standing) fail(`${where}: does not say where it stands`);
+        checkContested(where, v);
+    }
+    notes.push(`bibles: ${bibles.versions.length} versions`);
+}
+
 // --- the inner tradition: reception is a field, not an opinion --------------
 const esoteric = await load('esoteric');
 if (esoteric) {
@@ -478,7 +497,7 @@ if (creeds) {
 
 // --- report ----------------------------------------------------------------
 const present = [christologies, branches, councils, canon, figures, symbols, mapsites, timeline,
-    gallery, tree, matrix, words, creeds, esoteric]
+    gallery, tree, matrix, words, creeds, esoteric, bibles]
     .filter(Boolean).length;
 if (present === 0) {
     console.log('christianities: scaffolded, awaiting content');
@@ -494,4 +513,4 @@ if (errors.length) {
     for (const e of errors) console.error(`  ✗ ${e}`);
     process.exit(1);
 }
-console.log(`christianities: ${present}/14 sections — ${notes.join(' · ')} — validated`);
+console.log(`christianities: ${present}/15 sections — ${notes.join(' · ')} — validated`);
