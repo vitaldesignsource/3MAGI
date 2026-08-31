@@ -11653,6 +11653,42 @@ figure.ch-gallery-card { margin: 0; }
 .pw-dg-creation { fill: rgba(209, 173, 104, 0.8); font-size: 9.5px; font-family: Georgia, serif; letter-spacing: 0.1em; }
 .pw-dg-caption { fill: rgba(209, 173, 104, 0.7); font-size: 10px; letter-spacing: 0.18em; }
 
+/* --- the currents in time ---------------------------------------------------
+   Every current of the inner tradition drawn as a span, banded by group. The
+   arrow at the right of a living span is doing real work: it says the current
+   never stopped, which is the diagram's whole argument. */
+.ch-stream { margin-top: clamp(3rem, 6vw, 5rem); }
+.ch-stream-svg { display: block; }
+.ch-stream-grid { stroke: rgba(179, 139, 70, 0.1); stroke-width: 1; }
+.ch-stream-grid.is-named { stroke: rgba(209, 173, 104, 0.26); stroke-dasharray: 2 4; }
+.ch-stream-tick { fill: rgba(179, 139, 70, 0.5); font-size: 10px; letter-spacing: 0.08em; }
+.ch-stream-tick.is-named { fill: rgba(209, 173, 104, 0.7); font-style: italic; font-size: 9px; }
+.ch-stream-band {
+  fill: rgba(209, 173, 104, 0.72); font-family: "Cinzel", Georgia, serif;
+  font-size: 9px; letter-spacing: 0.22em;
+}
+.ch-stream-item { cursor: pointer; outline: none; }
+.ch-stream-hit { stroke: transparent; stroke-width: 16; }
+.ch-stream-span {
+  stroke: rgba(209, 173, 104, 0.55); stroke-width: 1.6;
+  transition: stroke 160ms ease, stroke-width 160ms ease;
+}
+.ch-stream-dot { fill: rgba(209, 173, 104, 0.8); }
+.ch-stream-end { stroke: rgba(222, 212, 196, 0.5); stroke-width: 1.4; }
+.ch-stream-arrow { fill: rgba(209, 173, 104, 0.85); }
+.ch-stream-label {
+  fill: rgba(232, 224, 208, 0.72); font-size: 10.5px;
+  font-family: Georgia, "Times New Roman", serif;
+  paint-order: stroke; stroke: rgba(11, 9, 7, 0.9); stroke-width: 3;
+  transition: fill 160ms ease;
+}
+.ch-stream-item.is-living .ch-stream-span { stroke: rgba(209, 173, 104, 0.72); }
+.ch-stream-item:hover .ch-stream-span,
+.ch-stream-item.is-active .ch-stream-span,
+.ch-stream-item:focus-visible .ch-stream-span { stroke: #f4e8c8; stroke-width: 2.6; }
+.ch-stream-item:hover .ch-stream-label,
+.ch-stream-item.is-active .ch-stream-label { fill: #f6ead0; }
+
 /* --- the versions: a chronological shelf of Bibles ------------------------- */
 .ch-bibles { margin-top: clamp(3rem, 6vw, 5rem); }
 .ch-bible-list { list-style: none; margin: 1.6rem 0 0; padding: 0; }

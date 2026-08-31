@@ -7,6 +7,7 @@ import ChristianitiesTree from './ChristianitiesTree';
 import SYMBOL_MARKS from './symbolMarks';
 import PortalHero from './PortalHero';
 import Plate from './Plate';
+import CurrentsStream from './CurrentsStream';
 import Rich from './rich';
 import { SECTION_BY_SLUG, loadData } from './lib';
 
@@ -356,7 +357,10 @@ function Creeds({ creeds }) {
 }
 
 function Esoteric({ data, open, setOpen }) {
-    return data.groups.map((g) => {
+    return (
+        <>
+            <CurrentsStream data={data} open={open} setOpen={setOpen} />
+            {data.groups.map((g) => {
         const entries = data.entries.filter((e) => e.group === g.key);
         if (!entries.length) return null;
         return (
@@ -381,9 +385,11 @@ function Esoteric({ data, open, setOpen }) {
                         </Expandable>
                     ))}
                 </div>
-            </section>
-        );
-    });
+                    </section>
+                );
+            })}
+        </>
+    );
 }
 
 const RENDERERS = {

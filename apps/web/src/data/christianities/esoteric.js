@@ -24,6 +24,7 @@ export default {
     entries: [
         {
             slug: 'clement-true-gnostic', name: 'The True Gnostic', era: 'c. 200', group: 'alexandrian',
+            from: 200, to: 400,
             claim: 'That there is a genuine gnosis, and the church rather than the sects is where it is found.',
             exposition: [
                 'Clement of Alexandria made a move nobody else quite made: instead of denying that there was a higher knowledge, he claimed it. His Stromateis — patchwork, deliberately unsystematic, written so that the careless reader would not find what the careful one would — describes the true gnostic as the mature Christian who has passed from faith to knowledge without leaving faith behind, and whose mark is not secret doctrine but settled love and freedom from disturbance.',
@@ -35,6 +36,7 @@ export default {
         },
         {
             slug: 'epektasis', name: 'Epektasis: the Endless Ascent', era: '4th century', group: 'alexandrian',
+            from: 380, to: null,
             claim: 'That perfection is not arrival but unending progress, because the infinite cannot be exhausted.',
             exposition: [
                 'Gregory of Nyssa asked what happens to a soul that reaches God and answered: it keeps going. Since God is infinite, there is no point at which the soul possesses him and stops; every satisfaction opens a further desire, and this straining forward — epektasis, from Paul’s word in Philippians — is not a failure of the ascent but its permanent form. Perfection consists in never being perfected.',
@@ -46,6 +48,7 @@ export default {
         },
         {
             slug: 'maximus-logoi', name: 'The Logoi of Created Things', era: '7th century', group: 'alexandrian',
+            from: 630, to: null,
             claim: 'That every created thing has its own word in God, and that knowing it is a form of contemplation.',
             exposition: [
                 'Maximus the Confessor taught that each thing that exists has a logos — a divine intention, its reason for being — and that all the logoi are contained in the one Logos without ceasing to be many. To contemplate a creature rightly is therefore to read it, and natural contemplation becomes a genuine stage of the spiritual life rather than a distraction from it.',
@@ -57,6 +60,7 @@ export default {
         },
         {
             slug: 'evagrius', name: 'Evagrius and the Eight Thoughts', era: 'late 4th century', group: 'monastic',
+            from: 383, to: null,
             claim: 'That prayer is the laying aside of every thought, and that the passions can be mapped.',
             exposition: [
                 'A brilliant deacon of Constantinople who fled a scandal to the Egyptian desert and there produced the first systematic psychology of the spiritual life. His eight logismoi — gluttony, lust, avarice, sadness, anger, listlessness, vainglory, pride — are the direct ancestors of the seven deadly sins, reorganised by Gregory the Great two centuries later. Above them he set apatheia, freedom from compulsion, whose fruit is love.',
@@ -68,6 +72,7 @@ export default {
         },
         {
             slug: 'philokalia', name: 'The Philokalia', era: '1782', group: 'monastic',
+            from: 1782, to: null,
             claim: 'That the whole tradition of inner prayer can be gathered into one book and given to anyone who will read it.',
             exposition: [
                 'Nikodemos of the Holy Mountain and Makarios of Corinth assembled a thousand years of texts on watchfulness and prayer — Evagrius under a false name, Maximus, Hesychios, Symeon, Palamas — and printed them at Venice in 1782. The word means love of the beautiful, and the editorial decision was radical: these were monastic texts and they published them for everyone.',
@@ -79,6 +84,7 @@ export default {
         },
         {
             slug: 'song-of-songs', name: 'The Song as the Soul’s Story', era: '3rd century onward', group: 'bridal',
+            from: 240, to: null,
             claim: 'That the erotic poem in the canon is about God and the soul, and that this is the deepest sense of scripture.',
             exposition: [
                 'The Song of Songs is a collection of love poetry with no mention of God, and it is the most commented-upon book of the Bible in the Middle Ages. Origen set the terms — the bride is the church, and also each soul — and Bernard preached eighty-six sermons on it without reaching the fourth chapter. The tradition’s wager is that the language of desire is not a decoration on the spiritual life but the only adequate account of it.',
@@ -90,6 +96,7 @@ export default {
         },
         {
             slug: 'beguines', name: 'The Beguines', era: '13th–14th centuries', group: 'bridal',
+            from: 1200, to: 1350,
             claim: 'That God can be spoken of in the vernacular, by women, without vows and without a rule.',
             exposition: [
                 'Across the Low Countries and the Rhineland, women lived in semi-religious communities without permanent vows, supporting themselves, and wrote about God in Dutch, Low German and Old French rather than Latin. Hadewijch of Brabant wrote poems of minne — a love that is both God and the violence of wanting God — with a technical precision borrowed from courtly verse. Mechthild of Magdeburg’s Flowing Light of the Godhead is among the first mystical works in German.',
@@ -101,6 +108,7 @@ export default {
         },
         {
             slug: 'carmelite-night', name: 'The Dark Night', era: '1570s–1580s', group: 'bridal',
+            from: 1560, to: null,
             claim: 'That God withdraws all felt consolation on purpose, and that the darkness is the work rather than its failure.',
             exposition: [
                 'Teresa of Ávila mapped the soul as a castle of seven mansions with God in the innermost, and wrote about prayer with a directness — and a dry humour about her own distractions — that no one had used before. John of the Cross, imprisoned by his own order for supporting her reform, composed in a cell the poems and commentaries that named the dark night: the systematic removal of everything the soul has enjoyed about God, so that it may have God rather than its enjoyment.',
@@ -112,6 +120,7 @@ export default {
         },
         {
             slug: 'victorines', name: 'The Victorines', era: '12th century', group: 'speculative',
+            from: 1120, to: 1200,
             claim: 'That contemplation has stages and can be taught, and that the visible world is a book to be read.',
             exposition: [
                 'At the abbey of Saint-Victor in Paris, Hugh and Richard did something the mystics before them had mostly avoided: they built a curriculum. Hugh’s Didascalicon organises all learning as preparation for the reading of scripture and of the world, holding that the whole sensible world is like a book written by the finger of God. Richard’s Benjamin Major sets out six kinds of contemplation in an ascending order, from the imagination through reason to what surpasses reason.',
@@ -123,6 +132,7 @@ export default {
         },
         {
             slug: 'llull', name: 'Ramon Llull and the Art', era: 'c. 1274–1315', group: 'speculative',
+            from: 1274, to: 1700,
             claim: 'That the divine attributes can be combined mechanically, and that the combinations will yield truth.',
             exposition: [
                 'After a vision on Mount Randa, Llull devised the Ars — a system of letters standing for divine dignities (goodness, greatness, eternity, power, wisdom, will, virtue, truth, glory) arranged on concentric revolving wheels, so that turning them generates every possible combination of terms. His purpose was missionary: a demonstrative method that could persuade Muslims and Jews without appeal to scripture either side rejected.',
@@ -134,6 +144,7 @@ export default {
         },
         {
             slug: 'cusa', name: 'Learned Ignorance', era: '1440', group: 'speculative',
+            from: 1440, to: null,
             claim: 'That God is the coincidence of opposites, and that knowing we cannot know him is the highest knowledge.',
             exposition: [
                 'Nicholas of Cusa, cardinal and papal diplomat, worked out on a sea voyage from Constantinople that the infinite is not more of the finite but different in kind — so that in God all opposites coincide. His illustrations are geometrical: an infinite circle’s circumference is a straight line; an infinite line is triangle, circle and sphere at once. Approach truth as a polygon approaches a circle and you may add sides forever without arriving.',
@@ -145,6 +156,7 @@ export default {
         },
         {
             slug: 'grail', name: 'The Grail', era: 'c. 1180–1230', group: 'speculative',
+            from: 1180, to: 1240,
             claim: 'That a vessel from the Passion is hidden in the world and can be sought, and that the seeking is an initiation.',
             exposition: [
                 'Chrétien de Troyes left a story unfinished in which a young knight fails to ask a question about a grail carried in procession, and the failure lays a kingdom waste. Within fifty years the object had been identified with the cup of the Last Supper, the vessel that caught the blood at the cross, and — in Wolfram’s Parzival — a stone guarded by a company of templeisen, with a lineage, a castle and a rule.',
@@ -156,6 +168,7 @@ export default {
         },
         {
             slug: 'paracelsus', name: 'Paracelsus and the Light of Nature', era: '1520s–1541', group: 'renaissance',
+            from: 1520, to: 1700,
             claim: 'That God gave two lights — scripture and nature — and the physician must read both.',
             exposition: [
                 'Theophrastus von Hohenheim burned the standard medical textbooks at Basel and taught in German instead of Latin, arguing that a physician learns from patients, miners and midwives rather than from Galen. His theology is inseparable from his medicine: the light of nature is a genuine revelation, the human being is a microcosm answering to the macrocosm part by part, and healing works by the correspondence between them.',
@@ -167,6 +180,7 @@ export default {
         },
         {
             slug: 'quietism', name: 'Quietism', era: '1675–1699', group: 'theosophy',
+            from: 1675, to: 1699,
             claim: 'That the soul should abandon all effort, including the effort to be saved, and rest in pure passive love.',
             exposition: [
                 'Miguel de Molinos taught in Rome that the interior way is one of annihilation: no meditation, no petitions, no anxiety even about one’s own salvation, since desiring anything for oneself is still self-love. His Spiritual Guide sold enormously across Catholic Europe before he was arrested in 1685 and condemned in 1687.',
@@ -178,6 +192,7 @@ export default {
         },
         {
             slug: 'philadelphians', name: 'Jane Leade and the Philadelphians', era: '1670–1703', group: 'theosophy',
+            from: 1670, to: 1704,
             claim: 'That Sophia appears, that prophecy continues, and that all things will finally be restored.',
             exposition: [
                 'A London widow began recording visions of a woman who identified herself as Wisdom, and around her gathered the Philadelphian Society — English Behmenists who took Boehme’s theosophy in a visionary and explicitly universalist direction. Leade taught apokatastasis outright: that all, including the fallen angels, are finally restored, which she held had been shown to her rather than reasoned out.',
@@ -189,6 +204,7 @@ export default {
         },
         {
             slug: 'pietism-zinzendorf', name: 'Pietism and the Religion of the Heart', era: '1675 onward', group: 'theosophy',
+            from: 1675, to: null,
             claim: 'That doctrine without a converted heart is nothing, and that small groups of the earnest can renew a church.',
             exposition: [
                 'Spener’s Pia Desideria proposed collegia pietatis — gatherings for scripture and mutual encouragement within the parish — and set off the movement that reshaped Protestant devotion. Its instinct was experiential rather than speculative, but it kept a good deal of the theosophical inheritance: Boehme, Arndt, and Gottfried Arnold’s Impartial History of Churches and Heretics, which argued that the heretics were often the more faithful party.',
@@ -200,6 +216,7 @@ export default {
         },
         {
             slug: 'teilhard', name: 'Teilhard and the Omega Point', era: '1920s–1955', group: 'modern',
+            from: 1920, to: null,
             claim: 'That evolution is convergent, that it is moving toward Christ, and that matter is holy on the way.',
             exposition: [
                 'A Jesuit palaeontologist who worked on Peking Man and stretcher-bearered through Verdun proposed that evolution has a direction: increasing complexity produces increasing consciousness, consciousness converges, and the point of convergence — Omega — is Christ. Matter is not the obstacle to spirit but its medium, and the Mass on the World, written in the Ordos desert without bread or wine, offers the whole earth on an altar of the world.',
@@ -211,6 +228,7 @@ export default {
         },
         {
             slug: 'simone-weil', name: 'Simone Weil: Affliction and Decreation', era: '1938–1943', group: 'modern',
+            from: 1938, to: null,
             claim: 'That God withdrew to let the world exist, and that our task is to reverse that withdrawal in ourselves.',
             exposition: [
                 'A philosopher and factory worker who had a mystical experience while reciting George Herbert’s poem Love at Solesmes wrote, in the last years of a short life, some of the most severe theology of the century. Creation is God’s abdication; affliction — malheur, the destruction of a person’s standing and self-regard — is the terrible privilege by which one may touch that abdication; and decreation is the willing undoing of the self so that God may occupy the space.',
@@ -222,6 +240,7 @@ export default {
         },
         {
             slug: 'berdyaev', name: 'Berdyaev and Uncreated Freedom', era: '1910s–1948', group: 'modern',
+            from: 1916, to: null,
             claim: 'That freedom precedes being, is not created by God, and is why the world can go wrong.',
             exposition: [
                 'Expelled from the Soviet Union on the philosophers’ ship in 1922, Berdyaev took Boehme’s Ungrund and made it the foundation of a philosophy of freedom: a groundless abyss prior to God as being, out of which freedom arises and which God does not create and therefore cannot simply override. This is his answer to theodicy, and it costs him divine omnipotence in the usual sense.',
@@ -233,6 +252,7 @@ export default {
         },
         {
             slug: 'merton', name: 'Merton and the Contemplative Turn', era: '1948–1968', group: 'modern',
+            from: 1948, to: null,
             claim: 'That contemplation belongs to everyone, and that it can be spoken of across traditions without dissolving.',
             exposition: [
                 'A Trappist whose autobiography became an unexpected bestseller spent twenty years arguing that the contemplative life is not an exotic vocation but the ordinary depth of the Christian one — and then spent his last decade in serious study of Zen, Sufism and Taoism, corresponding with D. T. Suzuki and Thich Nhat Hanh and insisting that dialogue happens at the level of experience rather than of doctrine.',
@@ -244,6 +264,7 @@ export default {
         },
         {
             slug: 'traditionalism', name: 'The Traditionalist School', era: '1921 onward', group: 'modern',
+            from: 1921, to: null,
             claim: 'That all orthodox traditions descend from one primordial revelation, and that modernity is a fall from it.',
             exposition: [
                 'René Guénon argued that the religions are dialects of a single metaphysical doctrine, that the modern West has lost it entirely, and that recovery requires attachment to a living orthodox tradition with a valid initiatic chain. He entered Islam and died in Cairo as Abd al-Wahid Yahya. Frithjof Schuon developed the position as the transcendent unity of religions; Ananda Coomaraswamy brought the art-historical evidence.',
@@ -255,6 +276,7 @@ export default {
         },
         {
             slug: 'alexandrian-allegory', name: 'The Alexandrian Reading', era: '2nd–3rd centuries', group: 'alexandrian',
+            from: 200, to: null,
             claim: 'Scripture has a body, a soul and a spirit, and the literal sense is only the first of them.',
             exposition: [
                 'Clement and Origen inherited from Philo a way of reading that took the letter seriously and refused to stop there. Origen’s De principiis sets it out as a doctrine: as a human being is body, soul and spirit, so scripture has a bodily sense for the simple, a moral sense for the advancing, and a spiritual sense for the perfect — and some passages, he says bluntly, have no bodily sense at all, because their impossibility as history is precisely the signal to read deeper.',
@@ -266,6 +288,7 @@ export default {
         },
         {
             slug: 'apokatastasis', name: 'Apokatastasis: the Restoration of All Things', era: '3rd century onward', group: 'alexandrian',
+            from: 230, to: null,
             claim: 'That in the end all rational creatures — every soul, and on some readings the devil himself — return to God.',
             exposition: [
                 'The word is from Acts 3:21, “the restoration of all things,” and Origen built on it the boldest hope in Christian theology: punishment is medicinal and therefore finite, and the end must answer to the beginning, so nothing rational is finally lost. Gregory of Nyssa held a version of it without ever being condemned for it, which is the fact that keeps the argument alive.',
@@ -277,6 +300,7 @@ export default {
         },
         {
             slug: 'pre-existence', name: 'The Pre-existence of Souls', era: '3rd century', group: 'alexandrian',
+            from: 230, to: 553,
             claim: 'That souls existed before bodies, and that embodiment follows from a prior turning away.',
             exposition: [
                 'Origen’s cosmology begins with a community of rational beings contemplating God, who cool from that contemplation in varying degrees — and the degree of cooling determines whether one becomes an angel, a human being or a demon. The material world is therefore both a consequence of the fall and a school for return.',
@@ -288,6 +312,7 @@ export default {
         },
         {
             slug: 'dionysian-apophasis', name: 'The Divine Darkness', era: 'c. 500', group: 'apophatic',
+            from: 500, to: null,
             claim: 'God is beyond assertion and beyond denial, and the ascent ends in a darkness brighter than light.',
             exposition: [
                 'The Mystical Theology is three pages long and among the most consequential documents in Christian history. Its author strips away every name from God — not merely the unworthy ones but the worthy ones, and finally the denials themselves — until the soul enters “the divine darkness” where it knows by unknowing.',
@@ -299,6 +324,7 @@ export default {
         },
         {
             slug: 'eriugena', name: 'Eriugena and the Division of Nature', era: '9th century', group: 'apophatic',
+            from: 860, to: 1225,
             claim: 'That God is not a being among beings, and that creation is God’s self-manifestation, returning at last to its source.',
             exposition: [
                 'An Irishman at the Carolingian court who read Greek when almost nobody in the West could, translated Dionysius, and then wrote the Periphyseon — a systematic cosmology in which nature divides fourfold, from the uncreated creator through the created creating and created non-creating to the uncreated non-creating, which is God again as the end of all things.',
@@ -310,6 +336,7 @@ export default {
         },
         {
             slug: 'eckhart', name: 'Eckhart and the Ground of the Soul', era: 'c. 1300', group: 'apophatic',
+            from: 1300, to: null,
             claim: 'That there is something in the soul uncreated and uncreatable, and that God is born there.',
             exposition: [
                 'A Dominican master preaching in German to nuns and beguines, using ordinary words for extraordinary claims: the birth of the Word in the soul, the ground where God and the soul are one ground, and detachment — Abgeschiedenheit — as the highest virtue, higher even than love. He asks God to rid him of God, meaning the God he has made an object.',
@@ -321,6 +348,7 @@ export default {
         },
         {
             slug: 'cloud-of-unknowing', name: 'The Cloud of Unknowing', era: 'late 14th century', group: 'apophatic',
+            from: 1375, to: null,
             claim: 'That God is reached by love and not by thought, through a cloud of forgetting laid over everything created.',
             exposition: [
                 'An anonymous English director writing to a young contemplative: between you and God is a cloud of unknowing that no thinking will pierce, and beneath you must place a cloud of forgetting over every created thing, even the good ones, even the saints. What crosses the first cloud is “a sharp dart of longing love,” and the book recommends holding one short word in the mind — a syllable, not a meditation.',
@@ -332,6 +360,7 @@ export default {
         },
         {
             slug: 'hesychasm', name: 'Hesychasm and the Jesus Prayer', era: '4th century onward', group: 'monastic',
+            from: 380, to: null,
             claim: 'That ceaseless invocation of the Name, with the mind descended into the heart, opens the person to the uncreated light.',
             exposition: [
                 'From the desert: pray without ceasing, taken as an instruction rather than a figure. The practice narrows to a single sentence — Lord Jesus Christ, Son of God, have mercy on me, a sinner — repeated until it says itself, with attention placed in the heart and, in the later manuals, coordinated with the breath and a bowed posture.',
@@ -343,6 +372,7 @@ export default {
         },
         {
             slug: 'palamas-energies', name: 'The Essence and the Energies', era: '14th century', group: 'monastic',
+            from: 1338, to: null,
             claim: 'That God’s essence is forever unknowable, and his energies are truly God and truly participable.',
             exposition: [
                 'Gregory Palamas answered the charge against the hesychasts with a distinction: God in his essence cannot be known or shared by any creature, but God’s energies — his operations, his glory, the light of Tabor — are not created effects but God himself, and in them a human being genuinely participates in the divine.',
@@ -354,6 +384,7 @@ export default {
         },
         {
             slug: 'joachim', name: 'Joachim of Fiore and the Third Age', era: 'c. 1200', group: 'apophatic',
+            from: 1190, to: 1500,
             claim: 'That history unfolds in three ages — of the Father, the Son, and a coming age of the Spirit.',
             exposition: [
                 'A Calabrian abbot who read scripture as a set of concordances between the testaments and derived from them a periodization: the age of the Father under law, the age of the Son under grace and clergy, and a third age of the Spirit in which the church would become contemplative and the letter give way to spiritual understanding. He calculated its arrival at around 1260.',
@@ -365,6 +396,7 @@ export default {
         },
         {
             slug: 'christian-cabala', name: 'The Christian Cabala', era: '1486 onward', group: 'renaissance',
+            from: 1486, to: 1700,
             claim: 'That the Jewish mystical tradition, rightly read, confirms the Trinity and the messiahship of Jesus.',
             exposition: [
                 'Pico della Mirandola announced it in his nine hundred theses: no science better proves the divinity of Christ than magic and Kabbalah. Reuchlin gave it substance in De arte cabalistica and defended Jewish books against burning in the process — the most consequential act of Christian Hebraism in the period.',
@@ -376,6 +408,7 @@ export default {
         },
         {
             slug: 'ficino-hermetic', name: 'The Hermetic Christ', era: '1463 onward', group: 'renaissance',
+            from: 1463, to: 1614,
             claim: 'That an ancient Egyptian theology, older than Moses, foretold Christianity and can be read alongside it.',
             exposition: [
                 'Cosimo de’ Medici had Ficino set Plato aside and translate the Corpus Hermeticum first, because Hermes Trismegistus was believed a contemporary of Moses and therefore the older witness. Ficino read the Poimandres as a pagan Genesis and built from it a Christian Platonism with an astral medicine attached — planetary music, talismanic images, and a theory of spiritus linking soul to body.',
@@ -387,6 +420,7 @@ export default {
         },
         {
             slug: 'christian-alchemy', name: 'The Work as Passion', era: '15th–17th centuries', group: 'renaissance',
+            from: 1400, to: 1700,
             claim: 'That the transmutation of metals and the redemption of the soul are one operation described twice.',
             exposition: [
                 'Alchemical imagery and Christian doctrine converge so completely in this period that the emblem books cannot be sorted into the sacred and the profane: the blackening is the death, the whitening the resurrection, the stone is Christ, the vessel is the Virgin. The Rosarium philosophorum and the Aurora consurgens — a commentary on Wisdom literature attributed, disputedly, to Aquinas — read as devotional works with a laboratory attached.',
@@ -398,6 +432,7 @@ export default {
         },
         {
             slug: 'rosicrucian', name: 'The Rosicrucian Manifestos', era: '1614–1616', group: 'theosophy',
+            from: 1614, to: null,
             claim: 'That an invisible brotherhood held a reformation of the whole wide world in secret, and was ready to declare it.',
             exposition: [
                 'Three anonymous texts out of Lutheran Württemberg: the Fama announcing the brotherhood and the tomb of Christian Rosenkreuz found intact after a hundred and twenty years; the Confessio elaborating; and the Chymical Wedding, an alchemical romance of startling literary quality. All Europe answered them, and nobody could find the brotherhood.',
@@ -409,6 +444,7 @@ export default {
         },
         {
             slug: 'boehme', name: 'Jacob Böhme and the Ungrund', era: '1600–1624', group: 'theosophy',
+            from: 1600, to: null,
             claim: 'That God contains an abyss without ground in which the origin of evil, and of all difference, lies.',
             exposition: [
                 'A shoemaker at Görlitz saw sunlight flash on a pewter dish in 1600 and spent the rest of his life describing what it opened. His Ungrund is a groundless ground prior to God as we speak of him, in which a dark principle and a light principle stand in tension — which lets him locate the possibility of evil inside the divine life rather than blaming a creature for it.',
@@ -420,6 +456,7 @@ export default {
         },
         {
             slug: 'swedenborg', name: 'Swedenborg and the Correspondences', era: '1745–1772', group: 'theosophy',
+            from: 1745, to: null,
             claim: 'That scripture is written throughout in correspondences, and that the spiritual world can be observed.',
             exposition: [
                 'One of Europe’s leading scientists — assessor of mines, anatomist, author on metallurgy and the brain — began at fifty-seven to have visions, and spent his remaining twenty-seven years reporting the spiritual world with the same methodical prose he had used for iron and copper. Heaven and its societies, hell chosen rather than imposed, marriage continuing after death, and the whole of scripture decoded by a systematic doctrine of correspondence between natural and spiritual things.',
@@ -431,6 +468,7 @@ export default {
         },
         {
             slug: 'martinism', name: 'Martinism and the Reintegration', era: '1760s onward', group: 'theosophy',
+            from: 1760, to: null,
             claim: 'That humanity fell from a glorious original state and can be reintegrated into it, by rite or by the inner way.',
             exposition: [
                 'Martinès de Pasqually taught a system of theurgic operations within a Masonic frame — the Élus Coëns, with invocations aimed at obtaining a visible sign of reconciliation. His pupil Louis-Claude de Saint-Martin, the Unknown Philosopher, turned away from the ceremonial toward what he called the inner way: the same reintegration sought through the heart rather than the ritual.',
@@ -442,6 +480,7 @@ export default {
         },
         {
             slug: 'sophiology', name: 'Russian Sophiology', era: '1877–1944', group: 'modern',
+            from: 1877, to: null,
             claim: 'That Wisdom — Sophia — is not merely an attribute of God but has a personal reality mediating between God and the world.',
             exposition: [
                 'Vladimir Solovyov reported three visions of a feminine figure of Wisdom, in a Moscow church as a boy, in the British Museum reading room, and in the Egyptian desert, and built from them a philosophy of all-unity and Godmanhood. Florensky and Bulgakov developed it into a full theological system in which Sophia stands at the meeting of the divine and created orders.',
@@ -453,6 +492,7 @@ export default {
         },
         {
             slug: 'anthroposophy', name: 'Anthroposophy and the Cosmic Christ', era: '1913 onward', group: 'modern',
+            from: 1913, to: null,
             claim: 'That spiritual research can be conducted with scientific rigour, and that the Incarnation is the turning point of cosmic evolution.',
             exposition: [
                 'Rudolf Steiner left the Theosophical Society when it proclaimed Krishnamurti the vehicle of the world teacher, and founded a movement centred instead on Christ as a cosmic event: the Mystery of Golgotha as the pivot of earth evolution, with a detailed account of spiritual hierarchies drawn from Dionysius and elaborated far beyond him.',
@@ -464,6 +504,7 @@ export default {
         },
         {
             slug: 'tomberg-tarot', name: 'The Hermetic Christianity of the Meditations', era: '1967, published 1980', group: 'modern',
+            from: 1967, to: null,
             claim: 'That the Hermetic tradition finds its completion, rather than its rival, in Catholic Christianity.',
             exposition: [
                 'Valentin Tomberg — an anthroposophist who converted to Catholicism — wrote twenty-two letters on the major arcana of the Tarot and left instructions that they appear anonymously and only after his death. They are not a divinatory manual: the cards are used as a sequence of meditations on Christian mysteries, read through Hermetic, kabbalistic and Catholic sources at once.',
@@ -475,6 +516,7 @@ export default {
         },
         {
             slug: 'gnostic-revival', name: 'The Gnostic Revival', era: '1890 onward', group: 'modern',
+            from: 1890, to: null,
             claim: 'That the suppressed gnostic strand carries something Christianity needs, and that it can be recovered.',
             exposition: [
                 'G. R. S. Mead translated Pistis Sophia and made the gnostics readable in English; Jung bought a Nag Hammadi codex for his institute, wrote the Seven Sermons to the Dead under Basilides’ name, and read the gnostic material as a psychological document of the first order. Then in 1945 the actual library came out of the ground and the argument changed from speculation to philology.',
