@@ -220,6 +220,30 @@ export default {
             "dating": "The Moravian embassy is usually placed in 862 and the brothers' departure in 863; the two dates are often conflated. Cyril died at Rome on 14 February 869 and Methodius in Moravia on 6 April 885, after which their disciples were expelled and carried the work to Bulgaria, where the Cyrillic alphabet was developed at Preslav in the following generation and named for a man who did not invent it. The Kyivan date is the more contested. The Rus Primary Chronicle, compiled well over a century afterwards, gives 988 for Volodymyr's baptism at Cherson and for the baptism of the Kyivans; Byzantine and Arabic evidence supports reconstructions in which the personal baptism falls in 987 or 988 and the taking of Cherson and the marriage to Anna in 989, so that the chronicle's sequence cannot stand as written. The year 988 is a convention, kept here because it is the date under which both Ukraine and Russia commemorate the event — and the ownership of that memory is at present a live political dispute rather than a settled historical one."
         },
         {
+            "slug": "cluny",
+            "title": "The Founding of Cluny",
+            "native": null,
+            "kind": "event",
+            "year": 910,
+            "end": null,
+            "circa": false,
+            "circaEnd": null,
+            "description": "William of Aquitaine gave land for an abbey and did something unusual with the charter: he placed it under the pope alone, free of every local lord and bishop. That exemption made Cluny the head of a network of hundreds of houses answering to one abbot, and the engine of a reform movement that spent the next two centuries pressing for a clergy independent of lay power \u2014 the impulse that becomes the Investiture Controversy.",
+            "dating": "The foundation charter is dated 909 or 910 depending on the reckoning of the year used."
+        },
+        {
+            "slug": "baptism-of-rus",
+            "title": "The Baptism of the Rus",
+            "native": null,
+            "kind": "event",
+            "year": 988,
+            "end": null,
+            "circa": true,
+            "circaEnd": null,
+            "description": "Vladimir of Kyiv accepted Byzantine Christianity and had Kyiv baptised in the Dnieper. The Primary Chronicle tells it as the outcome of an inquiry into religions, his envoys reporting of Hagia Sophia that they did not know whether they were in heaven or on earth. Whatever the decision actually turned on \u2014 a marriage alliance with the imperial family is the historians' emphasis \u2014 it placed the largest territory in Europe permanently in the Greek rather than the Latin sphere.",
+            "dating": "The Chronicle's 988 is conventional and compiled over a century later; some historians prefer 987 or 989 on the evidence of the Byzantine sources and the Chersonesus campaign."
+        },
+        {
             "slug": "excommunications-1054",
             "title": "The Excommunications of 1054",
             "native": "Filioque",
@@ -230,6 +254,42 @@ export default {
             "circaEnd": null,
             "description": "On 16 July 1054 Cardinal Humbert of Silva Candida walked into Hagia Sophia during the liturgy and laid on the altar a bull excommunicating the patriarch Michael Keroularios; the patriarch replied in kind. The immediate quarrel concerned unleavened bread, clerical marriage, and the treatment of Latin churches in Constantinople and Greek ones in southern Italy, with the deeper questions standing behind: the authority of the Roman see, and the Western addition of Filioque, and the Son, to the creed's article on the procession of the Spirit. This is the date in every textbook for the division of Eastern and Western Christendom, and it deserves careful handling, because almost nobody at the time thought it was one. The estrangement was real and it was already old. What 1054 supplied was not the break but the anecdote.",
             "dating": "The legates' bull excommunicated Keroularios and his supporters, not the Eastern church; the pope who sent them, Leo IX, had died in April, so their authority to issue it was arguably void; and the patriarch's counter-anathema named the legates. Neither side treated the events as ending communion. Greeks and Latins went on communicating for another century and a half, bishops of both rites sat in the same synods, and the chroniclers say very little about 1054; the year acquires its significance retrospectively, chiefly between the sixteenth and nineteenth centuries. Both churches now say so: lifting the anathemas on 7 December 1965, Paul VI and Athenagoras I described the acts of 1054 as directed at persons rather than churches and consigned them to oblivion. Historians from Yves Congar and Steven Runciman onward have argued that if a single date must be chosen it should be 1204, and that the honest answer is that there is no date — only a divergence of language, liturgy, law and political fortune running from the seventh century to the fifteenth."
+        },
+        {
+            "slug": "first-crusade",
+            "title": "Jerusalem Taken",
+            "native": null,
+            "kind": "event",
+            "year": 1099,
+            "end": null,
+            "circa": false,
+            "circaEnd": null,
+            "description": "The First Crusade, preached by Urban II at Clermont in 1095, ended with the storming of Jerusalem and a massacre of its Muslim and Jewish inhabitants. The eastern Christians whose appeal had helped occasion the expedition found Latin patriarchs installed over their own sees, which did more to entrench the estrangement between the churches than the mutual excommunications of 1054 had.",
+            "dating": "15 July 1099. The scale of the massacre is debated \u2014 the Latin chroniclers boast of it, and modern estimates run well below their figures without disputing that it happened."
+        },
+        {
+            "slug": "cistercians-bernard",
+            "title": "Bernard and the Cistercian Century",
+            "native": null,
+            "kind": "person",
+            "year": 1115,
+            "end": 1153,
+            "circa": false,
+            "circaEnd": false,
+            "description": "Bernard arrived at C\u00eeteaux with thirty companions in 1113 and was sent to found Clairvaux two years later. Within his lifetime the Cistercians grew from a handful of houses to some three hundred and forty, and Bernard himself became the most powerful voice in Europe \u2014 preaching the Second Crusade, arbitrating a papal schism, opposing Abelard, and writing sermons on the Song of Songs that shaped Western mysticism for four centuries.",
+            "dating": "Clairvaux founded 1115; Bernard died in 1153 and was canonised in 1174."
+        },
+        {
+            "slug": "waldensians",
+            "title": "Valdes Gives His Goods Away",
+            "native": null,
+            "kind": "person",
+            "year": 1173,
+            "end": null,
+            "circa": true,
+            "circaEnd": null,
+            "description": "A rich merchant of Lyons had the gospels put into the vernacular, gave away his property and began to preach. His followers asked Lateran III for permission to go on preaching; they were refused unless licensed by the local clergy, preached anyway, and were excommunicated in 1184. The Waldensians survived every subsequent attempt to eliminate them, joined the Reformation in 1532, and are still a church.",
+            "dating": "The conversion is placed c. 1173 by the chronicles; the man's first name, Peter, is a later addition to the record."
         },
         {
             "slug": "sack-1204",
@@ -244,6 +304,18 @@ export default {
             "dating": "The dates of the assault and sack are exact, and the sources are unusually plentiful and unusually opposed: Geoffrey of Villehardouin and Robert of Clari for the crusaders, Niketas Choniates for the city. Why the crusade went to Constantinople at all has been argued for two centuries — the older thesis of a Venetian conspiracy under Doge Enrico Dandolo has largely given way, in the work of Donald Queller and Thomas Madden, to an account of accumulated debt and improvised decisions, and the argument is not closed. The consequences are easier to state than the causes: the Latin Empire lasted until 1261, the Byzantine successor states fragmented, and the Venetian and Genoese commercial position in the Aegean was made. John Paul II expressed regret for the sack to the Archbishop of Athens in 2001 and again to the Ecumenical Patriarch Bartholomew I in 2004, on the eight-hundredth anniversary; Bartholomew received the expression, and in Greek popular memory the anniversary is not a closed subject."
         },
         {
+            "slug": "albigensian-crusade",
+            "title": "The Albigensian Crusade",
+            "native": null,
+            "kind": "event",
+            "year": 1209,
+            "end": 1229,
+            "circa": false,
+            "circaEnd": false,
+            "description": "Innocent III proclaimed a crusade against the Cathars of Languedoc \u2014 the first called against Christians in Christian lands. Twenty years of war destroyed the dualist churches of the south along with much of Occitan civilisation, and produced the papal inquisition as the instrument for finishing what the armies began.",
+            "dating": "1209\u20131229 by the Treaty of Paris; Cathar resistance continued to the fall of Mont\u00e9gur in 1244 and beyond."
+        },
+        {
             "slug": "lyon-and-florence",
             "title": "Lyon and Florence: the Unions That Failed",
             "native": "Laetentur caeli",
@@ -254,6 +326,30 @@ export default {
             "circaEnd": false,
             "description": "Twice the two churches signed a union, and twice the signature did not hold. At Lyon in 1274 the emperor Michael VIII Palaiologos, needing Western protection against Charles of Anjou, had his delegates accept papal primacy and the Filioque; his own clergy and people refused it, his sister Eulogia led the opposition, and the union was repudiated after his death. At Florence in 1439 the emperor John VIII came in person with the patriarch Joseph II and a delegation of Greek bishops, argued the questions for months, and on 6 July signed the decree Laetentur caeli — the patriarch having died in the city a month before it was ready. Mark of Ephesus alone refused to sign. The Greek signatories went home to be disowned. Both unions were negotiated under military necessity by governments that needed troops, and both foundered on the same fact: in the Christian East a council binds when the faithful receive it, and the faithful did not.",
             "dating": "The Second Council of Lyon met in May and July 1274, and the union was formally renounced at the synod of Blachernae in 1285, three years after Michael VIII's death; the Byzantine chroniclers record that he was refused a Christian burial. The council of Ferrara-Florence opened at Ferrara in 1438, moved to Florence in 1439 for reasons of plague and finance, and issued Laetentur caeli on 6 July 1439; further decrees of union with the Armenians, Copts and others followed to 1445, and none took effect on the ground. The Catholic Church counts both as ecumenical councils, the fourteenth and the seventeenth; the Orthodox churches count neither, and a synod at Constantinople in 1484 formally rejected Florence. Whether the Greek delegation was coerced, bought, or genuinely persuaded and then overwhelmed at home is argued from Greek accounts that contradict each other: the memoirs of Sylvester Syropoulos, an officer of the patriarchal church who signed and afterwards repudiated what he had signed, set against the case made by Bessarion of Nicaea, who defended the union and was made a cardinal for it."
+        },
+        {
+            "slug": "black-death-religion",
+            "title": "The Black Death and the Flagellants",
+            "native": null,
+            "kind": "event",
+            "year": 1348,
+            "end": 1350,
+            "circa": false,
+            "circaEnd": false,
+            "description": "A third or more of Europe died in three years, and the religious consequences outlasted the plague: processions of flagellants moving town to town scourging themselves in public penance, massacres of Jewish communities blamed for the deaths, a clergy thinned by its own mortality among the sick, and a devotional culture turned sharply toward death \u2014 the danse macabre, the ars moriendi, the memento mori.",
+            "dating": "The pandemic's European course is securely 1347\u20131351; Clement VI condemned the flagellant processions in October 1349 and issued two bulls protecting Jews from the accusation."
+        },
+        {
+            "slug": "western-schism",
+            "title": "The Great Western Schism",
+            "native": null,
+            "kind": "event",
+            "year": 1378,
+            "end": 1417,
+            "circa": false,
+            "circaEnd": false,
+            "description": "Two popes, and from 1409 three, each with a college of cardinals, each excommunicating the others, and Europe divided along political lines about which to obey. It was not a doctrinal quarrel at all \u2014 nobody disputed what the papacy was, only who held it \u2014 and that is what made it so damaging: forty years in which the visible unity of the Latin church simply failed, and a generation of saints found themselves on opposite sides.",
+            "dating": "1378 to the election of Martin V at Constance in 1417. Which line was legitimate is still formally unsettled; the modern Annuario lists the Roman line without pronouncing on the others."
         },
         {
             "slug": "fall-of-the-city",

@@ -65,6 +65,87 @@ export default {
     ],
     "entries": [
         {
+            "slug": "gregory-the-great",
+            "name": "Gregory the Great",
+            "dates": "c. 540–604",
+            "categories": ["latin-father"],
+            "tradition": "Rome; counted a Doctor of the Church in the West and among the Three Holy Hierarchs' company in Eastern devotion, where he is called the Dialogist",
+            "role": "Prefect of Rome turned monk turned pope",
+            "contribution": "He inherited a city of ruins and plague and governed it in practice as well as in name \\u2014 negotiating with the Lombards, feeding Rome from the papal estates, and reorganising the church's administration so thoroughly that the medieval papacy is substantially his invention. He sent Augustine to Canterbury in 596 and gave him the instruction that made the English mission work: do not destroy the temples, purify them, so that the people may resort to the places they are used to. His Pastoral Rule became the standard manual for bishops for a thousand years, his Dialogues gave the West the life of Benedict, and his Moralia on Job shaped medieval exegesis. He preferred to call himself servus servorum Dei, servant of the servants of God, and the title stuck to the office. The plainchant that carries his name was codified long after him and is not his work in any direct sense.",
+            "fate": "Died in 604 after fourteen years as pope, ill and exhausted, having asked to be relieved of the office almost from the day he took it.",
+            "quote": {
+                "text": "Do not destroy the temples of the idols, but the idols that are in them.",
+                "source": "Letter to Abbot Mellitus, 601, preserved in Bede, Historia ecclesiastica I.30"
+            }
+        },
+        {
+            "slug": "bede",
+            "name": "Bede",
+            "dates": "c. 673–735",
+            "categories": ["latin-father"],
+            "tradition": "Northumbria; the only Englishman named a Doctor of the Church",
+            "role": "Monk of Jarrow, historian, chronologist",
+            "contribution": "He entered the monastery at seven and by his own account never left the north of England, and from that one library produced the Ecclesiastical History of the English People \\u2014 the work that made a nation's story tellable and, incidentally, popularised dating from the Incarnation, anno Domini, which is why the world now numbers its years as it does. His care about sources is startling for the period: he names his informants, distinguishes what he has read from what he was told, and says when he does not know. He also wrote on chronology, orthography and scripture, and was finishing a translation of John's gospel into English on the day he died.",
+            "fate": "Died at Jarrow in 735, dictating to the last; his student Cuthbert's letter describing it is among the most affecting accounts of a death in medieval literature.",
+            "quote": null
+        },
+        {
+            "slug": "anselm",
+            "name": "Anselm of Canterbury",
+            "dates": "1033–1109",
+            "categories": ["latin-father", "mystic"],
+            "tradition": "Norman Bec, then Canterbury",
+            "role": "Abbot, archbishop, and the first great scholastic",
+            "contribution": "He gave theology two things it has never put down. The first is the ontological argument of the Proslogion \\u2014 that than which nothing greater can be conceived cannot exist in the understanding alone \\u2014 which has been refuted and revived continuously for nine hundred years, by Aquinas and Kant against, by Descartes, Leibniz and Plantinga for. The second is the satisfaction theory of the atonement in Cur Deus Homo: sin as a debt of honour owed to God that only God can pay and only man ought to, so that the God-man is the necessary solution. Both begin from a method he named: faith seeking understanding, believing in order to understand rather than understanding in order to believe.",
+            "fate": "Twice exiled by English kings over investiture; died at Canterbury in 1109 and was named a Doctor of the Church in 1720.",
+            "quote": {
+                "text": "I do not seek to understand in order that I may believe, but I believe in order that I may understand.",
+                "source": "Proslogion 1"
+            }
+        },
+        {
+            "slug": "symeon-new-theologian",
+            "name": "Symeon the New Theologian",
+            "dates": "949–1022",
+            "categories": ["mystic"],
+            "tradition": "Byzantine",
+            "role": "Abbot of St Mamas in Constantinople",
+            "contribution": "Only three men in the Orthodox tradition carry the title Theologian, and Symeon is the third. He insisted, against a church establishment that found it disorderly, that direct conscious experience of God as light is available now and is the point of the Christian life \\u2014 and that a person who has not had it should not pretend otherwise. His Hymns of Divine Love describe his own experiences with an immediacy that has few parallels in Greek Christian writing, and he went further still in holding that the authority to bind and loose belongs to those who have the Spirit, whether or not they are ordained.",
+            "fate": "Removed from his abbacy and exiled across the Bosphorus in 1009 after a long conflict with the patriarchal syncellus Stephen; his cult was permitted after his death and he became a foundation of the hesychast tradition three centuries later.",
+            "quote": {
+                "text": "We awaken in Christ's body, as Christ awakens our bodies.",
+                "source": "Hymns of Divine Love 15, in Symeon's own first-person manner"
+            }
+        },
+        {
+            "slug": "bernard-of-clairvaux",
+            "name": "Bernard of Clairvaux",
+            "dates": "1090–1153",
+            "categories": ["mystic", "latin-father"],
+            "tradition": "Cistercian",
+            "role": "Abbot of Clairvaux and the most powerful voice in twelfth-century Europe",
+            "contribution": "He arrived at C\\u00eeteaux with thirty companions and left an order of hundreds of houses. His eighty-six sermons on the Song of Songs \\u2014 which reached only the beginning of the third chapter \\u2014 set the pattern for Western bridal mysticism, and his treatise On Loving God moves through four degrees from loving oneself for one's own sake to loving oneself for God's. He was also a formidable political operator: he settled a papal schism, opposed Abelard at Sens, and preached the Second Crusade, whose catastrophic failure he took upon himself.",
+            "fate": "Died at Clairvaux in 1153, canonised in 1174, named a Doctor of the Church in 1830. Dante gives him the last word in the Paradiso, praying to the Virgin on the poet's behalf.",
+            "quote": {
+                "text": "The reason for loving God is God himself; the measure, to love without measure.",
+                "source": "De diligendo Deo I.1"
+            }
+        },
+        {
+            "slug": "bonaventure",
+            "name": "Bonaventure",
+            "dates": "c. 1217–1274",
+            "categories": ["mystic", "latin-father"],
+            "tradition": "Franciscan",
+            "role": "Minister General of the Franciscans; the Seraphic Doctor",
+            "contribution": "He held the Franciscan order together in the generation after Francis, when it was tearing itself apart between those who wanted the rule kept literally and those who wanted a learned order \\u2014 and he did it by writing the official life of Francis and ordering the earlier ones destroyed, a decision historians have not stopped arguing about. His Journey of the Mind into God, written on the mountain where Francis received the stigmata, maps the ascent through the created world, through the mind, and past both into a darkness where the intellect stops and love goes on.",
+            "fate": "Died at the Second Council of Lyons in 1274, during the negotiations for reunion with the Greeks; named a Doctor of the Church in 1588.",
+            "quote": {
+                "text": "Ask grace, not learning; desire, not understanding.",
+                "source": "Itinerarium mentis in Deum, prologue"
+            }
+        },
+        {
             "slug": "peter",
             "image": "0507daa2b2b12d666bcdb4de8df460ad.webp",
             "imageAlt": "A night courtyard: a standing man arguing across a long table of seated diners toward another standing man with folded arms, lamps burning on the wall",

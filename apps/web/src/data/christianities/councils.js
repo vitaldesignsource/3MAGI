@@ -209,6 +209,22 @@ export default {
             "receivedBy": "By the Eastern Orthodox as the fourth of seven, by the Catholic Church as the fourth of twenty-one, and by the Anglican, Lutheran and Reformed traditions as the christological standard, the Definition being cited in the Anglican and Lutheran confessional documents. Not by the Oriental Orthodox; not by the Church of the East, though its christology is in fact closer to the Definition than to what Chalcedon condemned."
         },
         {
+            "slug": "orange-529",
+            "name": "The Second Council of Orange",
+            "year": 529,
+            "place": "Arausio, in Provence",
+            "convokedBy": "Caesarius of Arles, and confirmed by Pope Boniface II in 531",
+            "question": "Whether the first movement toward God is the human being's own.",
+            "decision": "That grace precedes everything, including the desire to believe: the beginning of faith and the increase of faith are alike gifts, not achievements. Semi-Pelagianism — the position that the first step is ours and grace completes it — was rejected. But the council also rejected the hardest reading of Augustine, stating explicitly that it does not believe anyone is predestined to evil.",
+            "keyTerms": [
+                { "term": "initium fidei", "native": null, "meaning": "The beginning of faith. The whole dispute is whether this first movement is God's gift or the creature's own — and Orange rules that it is God's." },
+                { "term": "gratia praeveniens", "native": null, "meaning": "Prevenient grace, grace that goes before. The term becomes the hinge of Western soteriology and is later the pivot of Wesley's theology as much as of Trent's." }
+            ],
+            "dissent": "The monks of Lérins and Marseilles — Cassian and Faustus of Riez among them — had argued the other side for a century, out of pastoral fear that a rigorous Augustinianism made preaching pointless. Their concern was never that grace was unnecessary but that it must not make the will a spectator.",
+            "aftermath": "Orange settled Western teaching on grace so thoroughly that its canons were then largely forgotten, and were unavailable to the sixteenth-century disputants: neither the Reformers nor the fathers of Trent had the text to hand at the time it would have helped most. It was rediscovered afterwards, and both sides have since claimed it.",
+            "receivedBy": "A local council of the Latin West with papal confirmation, binding in the Catholic tradition and widely honoured by the Reformed; not a council of the East, which never framed the question in these terms."
+        },
+        {
             "slug": "constantinople-ii-553",
             "name": "The Second Council of Constantinople",
             "year": 553,
@@ -354,6 +370,22 @@ export default {
             "receivedBy": "Here the counts diverge outright. The Catholic Church numbers the council of 869-870 as the Eighth Ecumenical Council — a reckoning that appears in Western lists only from the eleventh century, in the period of the reform papacy, whose defenders argue that the delay reflects the slow assembly of the Latin canonical corpus rather than invention. Many Eastern Orthodox regard the council of 879-880 as the eighth, a position urged strongly in the modern period though never formally defined by a pan-Orthodox synod, and hold that 869-870 was annulled by the council that annulled it. The Oriental Orthodox and the Church of the East number neither."
         },
         {
+            "slug": "lateran-iv",
+            "name": "The Fourth Lateran Council",
+            "year": 1215,
+            "place": "The Lateran basilica, Rome",
+            "convokedBy": "Pope Innocent III",
+            "question": "What the church of the high Middle Ages would require of every Christian.",
+            "decision": "The largest and most consequential council of the medieval West. It defined that the bread and wine are transubstantiated, using that word conciliarly for the first time; required every Christian of years of discretion to confess to their own priest and receive communion at least once a year, at Easter; ordered new preaching and pastoral standards; forbade the founding of further religious orders; and legislated the Fifth Crusade.",
+            "keyTerms": [
+                { "term": "transsubstantiatio", "native": null, "meaning": "The substance of the bread and wine changed into the body and blood, the accidents remaining. The Aristotelian frame is doing the technical work, and this council's use of the word is what made it doctrine rather than one theological opinion among several." },
+                { "term": "omnis utriusque sexus", "native": null, "meaning": "\u201cEveryone of both sexes\u201d \u2014 the opening words of canon 21, which made annual confession and Easter communion universally obligatory and thereby reshaped the ordinary religious life of Europe more than any other medieval enactment." }
+            ],
+            "dissent": "The same council imposed distinguishing dress on Jews and Muslims in Christian lands and barred Jews from public office \u2014 canons that fed centuries of persecution. It is recorded here because a council is not only its doctrine, and this one's most enduring practical legacy is not one its defenders cite.",
+            "aftermath": "Its pastoral canons created the confessional culture of the later Middle Ages and, with it, the manuals, the indulgence economy and eventually the grievances the Reformation began from. Trent reaffirmed transubstantiation against the Reformers three centuries later.",
+            "receivedBy": "Numbered as the twelfth ecumenical council by the Catholic Church; not received by the Orthodox, who reject both its authority and its eucharistic terminology."
+        },
+        {
             "slug": "lyons-ii-1274",
             "name": "The Second Council of Lyons",
             "year": 1274,
@@ -376,6 +408,39 @@ export default {
             "dissent": "The Byzantine church, comprehensively. The Patriarch Joseph I refused the union and was deposed, retiring to a monastery; the unionist John XI Bekkos was installed in his place. The union was the emperor's policy and almost nobody else's: Michael VIII had recovered Constantinople in 1261 and needed Rome to restrain Charles of Anjou, who was assembling an army to take it back. Michael's sister Eulogia is reported by Pachymeres to have said that the empire might go to ruin provided the faith did not. When Michael died in 1282 his son Andronikos II repudiated the union at once; the Council of Blachernae in 1285 condemned Bekkos, and Michael was refused Orthodox burial.",
             "aftermath": "Thomas Aquinas died on the road to the council in March 1274 and Bonaventure died during it in July, which gives the assembly a certain melancholy grandeur in the histories. Its enduring achievement was the conclave law, not the union. What Lyons proved — and Florence would prove again at greater cost — is that a union negotiated by emperors and ratified by delegations cannot be imposed on a church that has not been persuaded, and that in the East the faithful and the monks, not the hierarchy alone, hold the veto.",
             "receivedBy": "By the Catholic Church as the fourteenth ecumenical council. Rejected by the Orthodox Church, which regards it as a council of the Latins at which some Greeks were present under political compulsion. Not numbered by the Oriental Orthodox or the Church of the East."
+        },
+        {
+            "slug": "hesychast-councils",
+            "name": "The Hesychast Councils of Constantinople",
+            "year": 1341,
+            "place": "Constantinople",
+            "convokedBy": "Emperors Andronikos III and, for the later sessions, John VI Kantakouzenos",
+            "question": "Whether the light seen by the praying monks is God himself, or something created.",
+            "decision": "Three sessions across a decade \u2014 1341, 1347 and 1351 \u2014 upheld Gregory Palamas and the monks of Athos against Barlaam of Calabria and his successors. The councils affirmed that God's essence is forever unknowable while his energies are truly God and truly participable, so that the light of Tabor is uncreated and deification is real participation rather than a figure of speech.",
+            "keyTerms": [
+                { "term": "ousia", "native": "\u03bf\u1f50\u03c3\u03af\u03b1", "meaning": "Essence \u2014 which no creature knows or shares, on this teaching, at any level of sanctity whatever." },
+                { "term": "energeiai", "native": "\u1f10\u03bd\u03ad\u03c1\u03b3\u03b5\u03b9\u03b1\u03b9", "meaning": "Operations, energies. Not created effects and not the essence: God as he gives himself, in which a human being genuinely participates." },
+                { "term": "hesychia", "native": "\u1f21\u03c3\u03c5\u03c7\u03af\u03b1", "meaning": "Stillness. The practice the councils were convened to judge \u2014 ceaseless invocation of the Name with the mind descended into the heart." }
+            ],
+            "dissent": "Barlaam mocked the monks as omphalopsychoi, navel-souls, and argued that any claim to see God directly was either blasphemy or delusion; Gregory Akindynos and Nikephoros Gregoras carried the opposition after him. Their objection was philosophical rather than devotional: that a real distinction in God threatens divine simplicity.",
+            "aftermath": "Palamite theology became the settled framework of Orthodox spirituality, and Palamas is commemorated on the second Sunday of Great Lent. The Latin West, working with a different account of simplicity, has largely not accepted the distinction, and it remains one of the deepest live differences between the traditions that is not about authority.",
+            "receivedBy": "Held as binding by the Orthodox churches, which count these among their major councils; not received in the Catholic West, though contemporary Catholic scholarship treats the distinction more sympathetically than it once did."
+        },
+        {
+            "slug": "constance",
+            "name": "The Council of Constance",
+            "year": 1414,
+            "place": "Constance, on the Bodensee",
+            "convokedBy": "The antipope John XXIII under pressure from Emperor Sigismund",
+            "question": "Who is pope, when three men claim to be \u2014 and whether a council may answer that.",
+            "decision": "It ended the Great Western Schism: two claimants deposed, the third persuaded to resign, and Martin V elected in 1417. To do so it asserted, in the decree Haec sancta, that a general council holds authority immediately from Christ and that everyone including the pope must obey it in matters of faith and reform \u2014 the high-water mark of conciliarism. The decree Frequens then required councils to meet at regular intervals.",
+            "keyTerms": [
+                { "term": "Haec sancta", "native": null, "meaning": "The 1415 decree asserting a council's authority over a pope. Whether it is a binding conciliar definition or an emergency measure of contested standing is still argued by Catholic theologians, and the answer bears directly on how papal primacy is understood." },
+                { "term": "salvus conductus", "native": null, "meaning": "The safe conduct under which Jan Hus travelled to the council. He was arrested, tried and burned anyway, on the principle that no faith need be kept with a heretic \u2014 a decision that outraged Bohemia and precipitated fifteen years of war." }
+            ],
+            "dissent": "Hus refused to recant what he had not been shown to have written, and was burned on 6 July 1415; Jerome of Prague followed in 1416. Wycliffe, dead thirty years, was condemned and his bones ordered exhumed and burned. The Hussite wars that followed were among the first in which a religious dissent successfully defended itself by force.",
+            "aftermath": "The schism ended, but conciliarism did not survive the century: the popes reasserted supremacy, and Vatican I in 1870 defined papal infallibility against everything Haec sancta implied. In 1999 a Catholic-Lutheran commission and later a papal expression of regret addressed the killing of Hus; the Czech churches keep 6 July still.",
+            "receivedBy": "Counted as the sixteenth ecumenical council by the Catholic Church, though only for its later sessions \u2014 an important qualification, since it is precisely the earlier ones that contain Haec sancta."
         },
         {
             "slug": "florence-1439",
