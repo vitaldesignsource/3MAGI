@@ -1,2 +1,165 @@
-// greek — The Currents. Populated by the content pipeline.
-export default { note: null, themes: [] };
+// greek — The Currents: thematic essays on this tradition's esoteric
+// disciplines. House disciplines: every claim carries its source, contested
+// datings are given twice with the parties named, and practice is described
+// historically rather than prescribed.
+export default {
+    note: 'Greek is the language in which the West learned to argue about the unseen, and the hall’s currents follow the arguments rather than a single tradition. Four cautions govern them all. "Orphic" and "Pythagorean" are ancient labels applied loosely by ancient writers themselves, and modern scholarship spends much of its energy deciding what, if anything, they name; the currents use them as conventional shorthand and say so where the shorthand strains. The magical papyri are working documents from Roman Egypt, not a Greek religion — the Greek is a lingua franca laid over Egyptian practice. Where a text’s date is disputed, both the traditional attribution and the philological reckoning are given, because a work’s claimed age is part of its history. And where a technique is described — a vowel-chain, a breath, a name — it is described as the sources describe it, historically, without instruction.',
+    themes: [
+        {
+            slug: 'the-mysteries',
+            title: 'The Mysteries',
+            native: 'μυστήρια',
+            translit: 'mystēria',
+            summary: 'Two thousand years of initiations at Eleusis, kept so well that we still do not know what was shown.',
+            paragraphs: [
+                'The Eleusinian Mysteries ran for something close to two millennia — the archaeology at Eleusis shows cult activity from the Mycenaean period, the great Telesterion was rebuilt repeatedly, and the rites ended only when Alcaric forces and Theodosian legislation closed them at the end of the fourth century CE. Every initiate was bound to silence, and the silence held. That is the single most remarkable fact about them: tens of thousands of people, across a span longer than the interval between us and the Norman Conquest, and no surviving account of what was done in the hall.',
+                'What can be reconstructed is the approach rather than the arrival. The Lesser Mysteries at Agrai in spring; the Greater in Boedromion, beginning with the proclamation and the sea-bathing of the pigs at Phaleron; the nineteen-kilometre procession along the Sacred Way with the kykeon carried and the cry of Iakchos; the fasting; the bridge where masked figures jeered at the walkers; and then the night in the Telesterion. Aristotle is quoted by Synesius to the effect that initiates did not learn (mathein) anything but experienced (pathein) something, and that formulation has governed every serious modern treatment since.',
+                'The three words the sources do give are dromena, legomena, deiknymena — things done, things said, things shown. The last is the crux. Hippolytus, a hostile Christian witness writing in the third century, says the thing shown was an ear of grain reaped in silence; scholars disagree over whether he had good information or was repeating a guess. The Homeric Hymn to Demeter, our earliest substantial source and probably seventh-century, gives the myth the rite enacted — Persephone taken, Demeter searching with torches, the world barren, the daughter returned but bound by the pomegranate — without disclosing the rite itself.',
+                'What initiates said afterwards was consistent and is worth taking at face value: that they no longer feared death. The Hymn puts it plainly — blessed is he who has seen these things; he who is uninitiated and has no part in them never has a like portion after death, below in the mouldering gloom. Cicero, writing centuries later as a Roman initiate, says Athens gave the world nothing better, and that from the mysteries the Romans had learned to live with joy and to die with a better hope. That is a claim about the effect of the rite from a sceptical lawyer, and it is the closest thing we have to testimony.',
+                'The Mysteries were not the only ones. Samothrace held the rites of the Great Gods, attended by Macedonian royalty and by Roman senators, in which the identity of the Kabeiroi was itself part of the secret; Andania in Messenia has left an inscription of extraordinary administrative detail about its rites without saying what they were; the Dionysiac and later the Isiac and Mithraic mysteries multiplied across the Hellenistic and Roman worlds. What they shared was structure rather than doctrine: a fee, a purification, a night, a thing shown, and a silence that generally held.',
+            ],
+            terms: [
+                { native: 'μύστης', translit: 'mystēs', gloss: 'one initiated in the first degree; from the root myō, to close — the closed mouth or the closed eye' },
+                { native: 'ἐποπτεία', translit: 'epopteia', gloss: 'the higher grade, taken at least a year later; literally the beholding' },
+                { native: 'ἱεροφάντης', translit: 'hierophantēs', gloss: 'the one who shows the holy things; the office was hereditary in the Eumolpid family' },
+                { native: 'κυκεών', translit: 'kykeōn', gloss: 'the barley-and-mint drink broken by the fasting initiates; the subject of a long and unresolved argument about ergot' },
+                { native: 'δρώμενα', translit: 'drōmena', gloss: 'the things done — the enacted portion of the rite' },
+                { native: 'δεικνύμενα', translit: 'deiknymena', gloss: 'the things shown; the heart of the secret, and the part never described' },
+            ],
+            texts: [
+                { title: 'Homeric Hymn to Demeter', note: 'Seventh century BCE by most reckonings; the myth the rite enacted, and the source of the beatitude quoted above.' },
+                { title: 'Hippolytus, Refutatio omnium haeresium V', note: 'A hostile witness who reports an ear of grain shown in silence — the most cited and least verifiable detail in the whole subject.' },
+                { title: 'Cicero, De legibus II.36', note: 'A Roman initiate’s testimony to the effect of the rite rather than its content.' },
+            ],
+        },
+        {
+            slug: 'orphic-gold',
+            title: 'The Gold Leaves',
+            native: 'Ὀρφικά',
+            translit: 'Orphika',
+            summary: 'Thin gold sheets buried with the dead, carrying instructions for what to say at the spring in the underworld.',
+            paragraphs: [
+                'Since the nineteenth century, graves from Thessaly to Crete to southern Italy have yielded small sheets of gold foil, inscribed in Greek, folded and placed with the dead — often at the mouth or on the breast. Around forty are known. They are not epitaphs. They are instructions for the deceased about what to do and say on arrival in the world below, and they are the closest thing surviving Greek religion has to a book of the dead.',
+                'The topography is consistent across finds separated by centuries and hundreds of miles. There is a spring on the right, by a white cypress, which the soul must not approach. Further on is another, cold water flowing from the Lake of Memory, with guardians before it. The soul is to say: I am a child of Earth and starry Heaven, but my race is of Heaven alone; I am parched with thirst and dying; give me quickly the cold water flowing from the Lake of Memory. Some leaves add the sentence that has done most to shape modern readings — I too claim to be of your blessed race — and one, from Pelinna, says simply: now you have died and now you have been born, thrice blessed, on this same day.',
+                'Whether these constitute an Orphic religion is exactly the question the field argues. The ancients attributed a body of poetry to Orpheus, and Plato mocks the itinerant priests who peddled Orphic books and purifications door to door; but no organised Orphic church is attested, and the leaves themselves never mention Orpheus. Since the publication of the Derveni papyrus — a carbonised roll recovered from a fourth-century BCE pyre near Thessaloniki, containing an allegorising commentary on an Orphic theogony, and the oldest European manuscript that survives — the material basis for talking about Orphic literature has been far stronger, but the sociology remains contested.',
+                'What the leaves plainly carry is a doctrine: that the human being has a divine portion which the underworld authorities can be told about, that memory rather than forgetting is what secures the soul, and that a formula correctly spoken has effect. The waters of Lethe and Mnemosyne here are not poetic ornament — they are a choice presented at a specific location, and getting it wrong matters.',
+                'The Bacchic connection is explicit in several leaves and in the Olbia bone tablets, which pair the name Dionysos with the word Orphikoi. The Zagreus myth known from later sources — the child torn by Titans, humanity made from the Titans’ ashes and so carrying both a Titanic and a Dionysian portion — would explain the anthropology the leaves assume, but its early attestation is disputed and Radcliffe Edmonds in particular has argued that the standard reconstruction reads later sources back into earlier silence.',
+            ],
+            terms: [
+                { native: 'Μνημοσύνη', translit: 'Mnēmosynē', gloss: 'Memory, personified; her lake is what the soul must drink from' },
+                { native: 'Λήθη', translit: 'Lēthē', gloss: 'forgetting; by later convention the first spring, the one to avoid' },
+                { native: 'σῶμα σῆμα', translit: 'sōma sēma', gloss: 'the body a tomb — the slogan Plato attributes to these circles, punning on two near-identical words' },
+                { native: 'Βάκχοι', translit: 'Bakchoi', gloss: 'the initiated of Dionysos; one leaf ends by naming the dead among them' },
+                { native: 'Ζαγρεύς', translit: 'Zagreus', gloss: 'the name given to the torn Dionysos of the Titan myth; its early currency is disputed' },
+            ],
+            texts: [
+                { title: 'The Derveni Papyrus', note: 'Fourth century BCE, carbonised on a funeral pyre near Thessaloniki; the oldest surviving European manuscript, and an allegorical commentary on an Orphic poem.' },
+                { title: 'The Gold Leaves', note: 'Edited with translation by Graf and Johnston, Ritual Texts for the Afterlife (2nd ed. 2013).' },
+                { title: 'Plato, Republic 364b–365a', note: 'The dismissive account of book-carrying Orpheus-mongers, and our best evidence that they existed.' },
+            ],
+        },
+        {
+            slug: 'pythagorean',
+            title: 'Number as Nature',
+            native: 'ἁρμονία',
+            translit: 'harmonia',
+            summary: 'A brotherhood, a set of prohibitions, a theorem, and the claim that the ratios governing music govern everything.',
+            paragraphs: [
+                'Pythagoras left nothing in writing, and everything attributed to him comes through followers, hostile witnesses, and biographers writing eight centuries later. What can be said with reasonable confidence is that he came from Samos to Croton in southern Italy around 530 BCE, that he founded a community with dietary and behavioural rules, that the community had political power and was violently attacked, and that its members believed the soul transmigrates.',
+                'The intellectual claim that made the school matter is that the concordant musical intervals correspond to simple whole-number ratios — the octave 2:1, the fifth 3:2, the fourth 4:3 — and that this is not a curiosity about strings but a disclosure about the world. If sound, the least material thing we perceive, is governed by ratio, then ratio is prior to matter. Aristotle reports the position bluntly and unsympathetically: these people supposed the elements of numbers to be the elements of all things, and the whole heaven to be a harmonia and a number.',
+                'From that follows the harmony of the spheres: the heavenly bodies, moving at proportionate speeds, sound tones we do not hear because we have never known silence. It is a doctrine that outlived every part of Pythagorean physics, ran through Plato’s Timaeus and Cicero’s Dream of Scipio into Boethius, and was still being taken seriously by Kepler, who set out to find the actual ratios and found the third law of planetary motion on the way.',
+                'The prohibitions — the akousmata — sit oddly beside the mathematics and are the reason ancient writers themselves split the school into two kinds of follower. Do not eat beans. Do not step over a yoke. Do not stir the fire with a knife. Do not look in a mirror beside a light. Some are plainly practical, some ritual, some may be riddles whose answers were taught; Iamblichus preserves interpretations that are themselves centuries later than the sayings. The tension between akousmatikoi, who kept the sayings, and mathematikoi, who pursued the demonstrations, is reported in antiquity and remains the standard frame.',
+                'Almost everything about the tetraktys — the triangular figure of ten points in rows of one, two, three and four, by which the school is said to have sworn — reaches us through late Neoplatonic sources with their own agenda, and the modern reader should treat the elaborate Pythagorean number-symbolism of the Renaissance as a Renaissance achievement built on late-antique foundations rather than as a sixth-century BCE inheritance. What is genuinely early is the conviction that the world is intelligible because it is proportioned.',
+            ],
+            terms: [
+                { native: 'τετρακτύς', translit: 'tetraktys', gloss: 'the triangle of ten points; 1+2+3+4, the ratios of the concords, and the school’s oath' },
+                { native: 'ἀκούσματα', translit: 'akousmata', gloss: 'things heard; the oral precepts and prohibitions' },
+                { native: 'μετεμψύχωσις', translit: 'metempsychōsis', gloss: 'the passage of the soul into another body — the doctrine Xenophanes mocked in Pythagoras’ own lifetime' },
+                { native: 'κόσμος', translit: 'kosmos', gloss: 'order, ornament, world; the tradition credits Pythagoras with first using it of the universe' },
+                { native: 'λόγος', translit: 'logos', gloss: 'ratio as well as word and account — the ambiguity is the doctrine' },
+            ],
+            texts: [
+                { title: 'Aristotle, Metaphysics A.5', note: 'The earliest substantial report, written within two centuries and unsympathetic — which is what makes it useful.' },
+                { title: 'Iamblichus, De vita Pythagorica', note: 'Third–fourth century CE; rich, devotional, and to be used with care about what it can know.' },
+                { title: 'Plato, Timaeus 35b–36b', note: 'The world-soul divided by musical ratios: the doctrine’s most consequential afterlife.' },
+            ],
+        },
+        {
+            slug: 'theurgy',
+            title: 'Theurgy',
+            native: 'θεουργία',
+            translit: 'theourgia',
+            summary: 'The late Platonists’ claim that rite, not argument alone, lifts the soul — and that the gods gave the rites.',
+            paragraphs: [
+                'Porphyry wrote a letter of sharp questions to an Egyptian priest: if the gods are impassive, how can rites move them? If prayer is addressed to the immaterial, why does it use material things — stones, plants, smoke, names that mean nothing? The reply, written under the name Abamon and universally credited to Iamblichus, is the founding document of theurgy and one of the most consequential defences of ritual ever composed.',
+                'Its argument is that the human soul, fully descended and not merely distracted, cannot lift itself by thought alone. Something must reach down. The rites work not because the operator compels the gods but because the gods have seeded the material world with tokens — synthēmata, sometimes symbola — that correspond to them: this stone, this plant, this name. To assemble them correctly is to present the soul at a place where the divine already touches matter.',
+                'This is the decisive parting from Plotinus, who held that the philosopher ascends by contemplation and reportedly declined to attend festivals, saying it was for the gods to come to him. Iamblichus institutionalised the opposite view, and after him the Platonic schools were sacramental. Proclus fasted, prayed at the appointed hours, observed Egyptian and Chaldean rites alike, and wrote hymns; his biographer Marinus presents theurgic virtue as the highest grade of the philosophical life.',
+                'The technical vocabulary matters. The Chaldean Oracles supply much of it — the iynges as mediating powers, the paternal Intellect, the fiery Hekate as the membrane between the transcendent and the world — and the Oracles were treated by the later school effectively as revelation. Proclus is reported to have said that if he could destroy all books but two he would keep the Timaeus and the Chaldean Oracles.',
+                'Two things are worth stating plainly. Theurgy was not what its opponents called it: Iamblichus takes considerable trouble to distinguish it from goēteia, sorcery aimed at compulsion and private advantage, and the distinction is doctrinal rather than defensive. And its afterlife is enormous — through Pseudo-Dionysius, who is saturated in this vocabulary, theurgic assumptions pass directly into Christian sacramental theology, and through Ficino’s translations into every subsequent Western magical tradition.',
+            ],
+            terms: [
+                { native: 'θεουργία', translit: 'theourgia', gloss: 'god-work; coined in this milieu, against theologia — talking about the gods rather than working with them' },
+                { native: 'σύνθημα', translit: 'synthēma', gloss: 'token, watchword; the sympathetic correspondence planted in matter by the gods themselves' },
+                { native: 'ἴυγγες', translit: 'iynges', gloss: 'mediating powers of the Chaldean system, named from the wryneck bird bound to a wheel in erotic magic' },
+                { native: 'γοητεία', translit: 'goēteia', gloss: 'sorcery; what theurgy insists it is not' },
+                { native: 'ἀναγωγή', translit: 'anagōgē', gloss: 'the leading-up; the ascent of the soul that the rites are for' },
+            ],
+            texts: [
+                { title: 'Iamblichus, De mysteriis', note: 'Answering Porphyry’s Letter to Anebo; the defence that founded the discipline.' },
+                { title: 'The Chaldean Oracles', note: 'Second century CE; survives only in quotation by the Platonists who treated it as scripture. Majercik’s edition and translation.' },
+                { title: 'Marinus, Life of Proclus', note: 'Sets theurgic virtue above the intellectual virtues — a school’s own account of its summit.' },
+            ],
+        },
+        {
+            slug: 'hermetica',
+            title: 'The Hermetic Writings',
+            native: 'Ἑρμῆς ὁ Τρισμέγιστος',
+            translit: 'Hermēs ho Trismegistos',
+            summary: 'Greek treatises from Roman Egypt, attributed to Thoth-as-Hermes, believed until 1614 to predate Moses.',
+            paragraphs: [
+                'The identification of Thoth with Hermes — one scribe-god read as another — produced a third figure who was neither: Hermes Trismegistus, thrice-greatest, the Egyptian sage under whose name a body of Greek philosophical and technical literature was written in Roman Egypt between roughly the first and third centuries CE. The philosophical treatises are what the Renaissance received as the Corpus Hermeticum; alongside them stood a far larger technical literature on astrology, alchemy and talismans, most of it lost.',
+                'The first treatise, Poimandres, is among the most influential visions in Western literature. The narrator, his bodily senses restrained, is addressed by a being who names itself the Mind of Sovereignty and shows him light, darkness, a descending Word, and the making of the cosmos; the Man made in the Father’s image looks down, is reflected in Nature, falls in love with his own image and descends into it. Hence, the text says, the human being is uniquely double: mortal because of the body, immortal because of the essential Man.',
+                'The Asclepius, surviving complete only in a Latin translation, contains the passage that most affected later readers: a lament for Egypt, foretelling that the gods will leave the land, that religion will become an empty story, and that the temples will fill with corpses. It also describes the making of ensouled statues — gods drawn down into images by herbs, stones and rites — which is why Augustine attacks the work at length in the City of God and why it sat uneasily in every Christian library that kept it.',
+                'The dating collapse is the most instructive episode in the history of Western esotericism. Ficino translated the corpus for Cosimo de’ Medici in 1463, setting Plato aside to do it, because Hermes was believed a contemporary of Moses and therefore the elder witness to a prisca theologia. In 1614 Isaac Casaubon showed on linguistic grounds that the texts were of the Roman period. The pedigree was destroyed; the tradition continued largely undiminished, which tells us something about what such traditions actually rest on.',
+                'The relationship of these Greek texts to Egyptian religion has been reassessed since the Nag Hammadi find, which included a Coptic Asclepius, the Discourse on the Eighth and Ninth, and a Hermetic prayer. Older scholarship treated the Hermetica as Greek philosophy in Egyptian costume; more recent work — Fowden, Mahé and others — takes the Egyptian element far more seriously, without returning to the Renaissance dating.',
+            ],
+            terms: [
+                { native: 'νοῦς', translit: 'nous', gloss: 'mind, intellect; in Poimandres both the revealer and the faculty that receives revelation' },
+                { native: 'παλιγγενεσία', translit: 'palingenesia', gloss: 'rebirth; the subject of Corpus Hermeticum XIII, the treatise closest to a rite' },
+                { native: 'εἱμαρμένη', translit: 'heimarmenē', gloss: 'fate as the chain of planetary causation, which nous is the way out of' },
+                { native: 'ἀθανασία', translit: 'athanasia', gloss: 'immortality; the goal, understood as recovering what the essential Man already is' },
+            ],
+            texts: [
+                { title: 'Corpus Hermeticum', note: 'Seventeen Greek treatises; Copenhaver’s translation (1992) is standard, Nock–Festugière for the Greek.' },
+                { title: 'Asclepius', note: 'Complete only in Latin; contains the Lament for Egypt and the passage on ensouled statues.' },
+                { title: 'Casaubon, De rebus sacris et ecclesiasticis exercitationes XVI (1614)', note: 'The philological demonstration that redated the corpus and did not stop it.' },
+            ],
+        },
+        {
+            slug: 'isopsephy',
+            title: 'Isopsephy',
+            native: 'ἰσοψηφία',
+            translit: 'isopsēphia',
+            summary: 'Greek letters are numbers, so every word has a sum — and sums can be compared.',
+            paragraphs: [
+                'The Greek alphabet carries number: alpha through theta for units, iota through koppa for tens, rho through sampi for hundreds, with the three archaic letters digamma, koppa and sampi retained as numerals after they had dropped out of writing. Any word is therefore also a total, and isopsephy is the practice of treating equal totals as significant.',
+                'The evidence is not confined to mystics. A graffito at Pompeii reads: I love her whose number is 545. Suetonius records that Nero and the phrase for having killed his own mother both come to 1005, and that the coincidence was circulated as a lampoon. This is a habit of mind available to anyone literate, and it appears in jokes as readily as in theology.',
+                'Its most famous instance is Revelation 13:18, which gives the number of the beast as 666 — with a substantial manuscript tradition, including Papyrus 115, reading 616 instead. The usual explanation is that both are transliterations of Nero Caesar into Hebrew letters, spelled with or without the final nun; the variant is precisely what that hypothesis predicts, which is why it is the majority scholarly view.',
+                'In the magical and Gnostic material the technique is structural rather than decorative. Abrasax sums to 365, the days of the year and the number of heavens in the Basilidean system reported by Irenaeus; Mithras sums to 365 as well, and the papyri exploit the equivalence. The dove, peristera, sums to 801, as do alpha and omega taken together — a correspondence used deliberately in early Christian symbolism.',
+                'The relationship to Hebrew gematria is one of parallel practice rather than borrowing in a single direction: both alphabets carried numerical values, both cultures were in sustained contact through the Hellenistic and Roman periods, and the techniques appear in both. The Scriptorium’s Greek and Hebrew halls both carry letter-value tables, and the hall’s Reckoner will sum a word in either.',
+            ],
+            terms: [
+                { native: 'ἰσόψηφος', translit: 'isopsēphos', gloss: 'equal in numerical value; the adjective from which the practice takes its name' },
+                { native: 'ψῆφος', translit: 'psēphos', gloss: 'a pebble, then a counter, then a reckoning — the root records how counting was done' },
+                { native: 'Ἀβρασάξ', translit: 'Abrasax', gloss: 'the name summing to 365; carved on more surviving gems than any other magical word' },
+                { native: 'ϝ', translit: 'digamma', gloss: 'the archaic letter kept as the numeral 6, later written as the stigma ligature' },
+                { native: 'ϡ', translit: 'sampi', gloss: 'the last numeral, 900; its name means something like "like a pi"' },
+            ],
+            texts: [
+                { title: 'Revelation 13:18', note: 'The number of the beast, with the 616 variant in P115 — the best-known isopsephy in existence and a live text-critical question.' },
+                { title: 'Suetonius, Nero 39', note: 'The lampoon on Nero’s matricide, showing the technique in ordinary satirical use.' },
+                { title: 'Irenaeus, Against Heresies I.24', note: 'Abrasax and the 365 heavens, reported by an opponent.' },
+            ],
+        },
+    ],
+};
