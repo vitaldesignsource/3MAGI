@@ -9,7 +9,7 @@ const loadCourse = async (lang) => {
     const mod = COURSE_LOADERS[`../data/education/courses/${lang}.js`];
     return mod ? (await mod()).default : null;
 };
-const TITLES = { latin: 'Latin', greek: 'Greek', hebrew: 'Hebrew', egyptian: 'Egyptian' };
+const TITLES = { latin: 'Latin', greek: 'Greek', hebrew: 'Hebrew', egyptian: 'Egyptian', sanskrit: 'Sanskrit' };
 
 // Progress lives in the reader's browser and nowhere else.
 const storageKey = (lang) => `tl-scriptorium-course-${lang}`;
