@@ -6,7 +6,7 @@ export default {
     language: 'Greek',
     title: 'Reading the Mysteries',
     tagline: 'Eight lessons from the four-and-twenty letters to ἐν ἀρχῇ ἦν ὁ λόγος.',
-    overview: 'Eight lessons, each teaching a few things thoroughly. You will learn the letters, choose a pronunciation knowing what you have chosen, master the article until it lights up any inscription, read the nominative and genitive across the three declensions, conjugate εἰμί, and count with the Milesian numerals on cases that are genuinely attested. Then whole texts: the Delphic maxims, a gold leaf from a grave in southern Italy, a formula from the magical papyri, and at last the opening of John with the alchemists\' motto ἓν τὸ πᾶν. Nothing here is invented, and where the scholarship is unsettled you will be told so.',
+    overview: 'Eight lessons, each teaching a few things thoroughly. You will learn the letters and where their foreign names came from, choose a pronunciation knowing what you have chosen, sound the seven vowels and the eight diphthongs, sort the consonants into their three classes, master the article until it lights up any inscription, decline nouns through four cases across the three declensions, conjugate εἰμί in full, and count with the Milesian numerals on cases that are genuinely attested. Then whole texts: the Delphic maxims, a gold leaf from a grave in southern Italy, a formula from the magical papyri, and at last the opening of John with the alchemists\' motto ἓν τὸ πᾶν. Nothing here is invented, and where the scholarship is unsettled you will be told so.',
     lessons: [
         {
             number: 1,
@@ -26,6 +26,27 @@ export default {
                             translit: 'a b g d e z ē th i k l m n x o p r s t u ph ch ps ō',
                             gloss: 'the twenty-four letters',
                             note: 'Sigma alone has two shapes: σ inside a word, ς at the end.',
+                        },
+                    ],
+                },
+                {
+                    heading: 'The names are foreign',
+                    paragraphs: [
+                        'ἄλφα, βῆτα, γάμμα, δέλτα: the names mean nothing whatever in Greek. They are the Phoenician words carried over with the signs — ʾalp, \'ox\'; bet, \'house\'; gaml; dalt, \'door\' — and Greek took the sounds without the sense, so that the alphabet recites a vocabulary its users could not translate. Herodotus knew it. At 5.58 he calls the letters Φοινικήια γράμματα, \'Phoenician letters\', and reports the tradition that Cadmus of Tyre brought them to Boeotia.',
+                        'The exceptions prove the borrowing. The five supplementals at the end of the row, which Phoenician did not supply, carry plain Greek descriptions rather than foreign names — εἶ, ταῦ and the rest are matched by ὖ ψιλόν, \'bare u\', and by the Byzantine labels ἒ ψιλόν, ὂ μικρόν and ὦ μέγα met a moment ago. Where the sign was inherited the name is a fossil; where the Greeks made the sign themselves, the name describes it.',
+                    ],
+                    examples: [
+                        {
+                            native: 'ἄλφα, βῆτα, γάμμα, δέλτα',
+                            translit: 'alpha, bēta, gamma, delta',
+                            gloss: 'the first four letter-names',
+                            note: 'Phoenician ʾalp, bet, gaml, dalt — ox, house, and door among them.',
+                        },
+                        {
+                            native: 'Φοινικήια γράμματα',
+                            translit: 'Phoinikēia grammata',
+                            gloss: 'Phoenician letters',
+                            note: 'Herodotus 5.58, on where the alphabet came from.',
                         },
                     ],
                 },
@@ -63,6 +84,18 @@ export default {
                             gloss: 'water',
                             note: 'Initial upsilon takes the rough breathing: hence English \'hydro-\'.',
                         },
+                        {
+                            native: 'Σοφία',
+                            translit: 'Sophia',
+                            gloss: 'Wisdom',
+                            note: 'No breathing: the word opens with a consonant. Read so-phí-a.',
+                        },
+                        {
+                            native: 'ἀρχή / ἁρμονία',
+                            translit: 'archē / harmonia',
+                            gloss: 'beginning / harmony',
+                            note: 'The same vowel, the two breathings: smooth gives ar-, rough gives har-.',
+                        },
                     ],
                 },
             ],
@@ -97,6 +130,16 @@ export default {
                     translit: 'Sophia',
                     gloss: 'Wisdom',
                 },
+                {
+                    native: 'ὄνομα',
+                    translit: 'onoma',
+                    gloss: 'name (genitive ὀνόματος)',
+                },
+                {
+                    native: 'ἁρμονία',
+                    translit: 'harmonia',
+                    gloss: 'joining, harmony, tuning',
+                },
             ],
             exercises: [
                 {
@@ -123,6 +166,16 @@ export default {
                     prompt: 'A fourth-century BCE inscription has no accents, breathings or word-spacing. Is the stone defective?',
                     answer: 'No. Word-division, breathings and accents are later apparatus, Hellenistic in origin and regular only in mediaeval manuscripts.',
                     hint: 'Ask when the marks were invented.',
+                },
+                {
+                    prompt: 'What do the names ἄλφα and βῆτα mean in Greek?',
+                    answer: 'Nothing. They are Phoenician words taken over with the signs — ʾalp, \'ox\', and bet, \'house\' — and carry no sense in Greek at all.',
+                    hint: 'Ask which language the names belong to.',
+                },
+                {
+                    prompt: 'Read ἀρχή and ἁρμονία aloud. What single mark separates them at the start?',
+                    answer: 'The breathing. ἀρχή has the smooth, sounded ar-; ἁρμονία has the rough, sounded har-. Nothing else in the spelling distinguishes the two openings.',
+                    hint: 'Look above the first letter, not at it.',
                 },
             ],
         },
@@ -183,6 +236,68 @@ export default {
                         },
                     ],
                 },
+                {
+                    heading: 'The diphthongs',
+                    paragraphs: [
+                        'Two vowels written together and sounded as one syllable make a diphthong, and Greek has eight in common use: αι, ει, οι, υι, αυ, ευ, ηυ, ου. The first four glide towards ι, the last four towards υ. They are not optional ornament — you cannot read a line without them, since εἰμί, οὐρανός, αὐτός and εὐαγγέλιον are all built on one.',
+                        'Classically each was a true glide: αι as in \'aisle\', ει close to the vowel of \'eight\', οι as in \'oil\', αυ as in \'how\', ευ as e followed quickly by u. ου was the exception even then, a plain long u, which is why Latin transcribes Greek ου as u and English gets \'ouranos\' as Uranus. By Koine the glides were collapsing: ει had fallen together with ι, and αι with ε, which is exactly the confusion the papyri show in their spelling.',
+                        'Two warnings. A diphthong takes its breathing and accent on the second letter, so \'and\' is καί and \'the heaven\' is οὐρανός, with the marks over the ι and the υ. And when the two vowels are not to be run together, a diaeresis says so: Ἠσαΐας is four syllables, the mark over the ι forbidding the diphthong αι.',
+                    ],
+                    examples: [
+                        {
+                            native: 'αι ει οι υι αυ ευ ηυ ου',
+                            translit: 'ai ei oi ui au eu ēu ou',
+                            gloss: 'the eight diphthongs',
+                            note: 'Four glide to ι, four to υ; ου is simply long u.',
+                        },
+                        {
+                            native: 'οὐρανός',
+                            translit: 'ouranos',
+                            gloss: 'heaven, sky',
+                            note: 'ου is one sound. Breathing and accent sit on the second vowel.',
+                        },
+                        {
+                            native: 'εὐαγγέλιον',
+                            translit: 'euangelion',
+                            gloss: 'good news, gospel',
+                            note: 'ευ, then the γγ of the last section: eu-an-gé-li-on.',
+                        },
+                        {
+                            native: 'Ἠσαΐας',
+                            translit: 'Ēsaias',
+                            gloss: 'Isaiah',
+                            note: 'The diaeresis on ι breaks the pair: read -a-i-, not the diphthong αι.',
+                        },
+                    ],
+                },
+                {
+                    heading: 'The consonants in three classes',
+                    paragraphs: [
+                        'The stops fall into three classes by where they are made, and three grades by how: labial π β φ, dental τ δ θ, velar κ γ χ, each in the order voiceless, voiced, aspirate. Learning the grid is worth an hour, because Greek changes stops by rule at every join, and the rules are stated in these terms.',
+                        'The three double letters are the grid at work. ψ is a labial plus σ, ξ a velar plus σ; ζ is the odd one, probably [zd] in classical Attic, though the question is still argued. So ψυχή opens with π-σ fused into one sign, and the numeral row of lesson six is the alphabet with three dead letters still standing in it.',
+                        'What remains are the liquids λ ρ, the nasals μ ν, and the sibilant σ. These behave gently and survive most joins unchanged, which is why they carry so much of the vocabulary you will meet: λόγος, ῥῆμα, μορφή, νοῦς, σοφία.',
+                    ],
+                    examples: [
+                        {
+                            native: 'π β φ · τ δ θ · κ γ χ',
+                            translit: 'p b ph · t d th · k g ch',
+                            gloss: 'labial, dental, velar — voiceless, voiced, aspirate',
+                            note: 'Three places, three grades; the whole system of Greek stops.',
+                        },
+                        {
+                            native: 'ψ = π + σ, ξ = κ + σ',
+                            translit: 'ps = p + s, x = k + s',
+                            gloss: 'the double letters resolved',
+                            note: 'One sign for two sounds; ζ is the third double, probably [zd].',
+                        },
+                        {
+                            native: 'νοῦς',
+                            translit: 'nous',
+                            gloss: 'mind, intellect',
+                            note: 'A nasal, the diphthong ου, and final ς: the word Poimandres turns on.',
+                        },
+                    ],
+                },
             ],
             vocabulary: [
                 {
@@ -215,6 +330,21 @@ export default {
                     translit: 'hiereus',
                     gloss: 'priest',
                 },
+                {
+                    native: 'νοῦς',
+                    translit: 'nous',
+                    gloss: 'mind, intellect',
+                },
+                {
+                    native: 'καί',
+                    translit: 'kai',
+                    gloss: 'and, also, even',
+                },
+                {
+                    native: 'μορφή',
+                    translit: 'morphē',
+                    gloss: 'form, shape',
+                },
             ],
             exercises: [
                 {
@@ -242,6 +372,26 @@ export default {
                     answer: 'The schoolroom system descended from the dialogue on pronunciation Erasmus published in 1528. It is not the speech of any historical Greek community, ancient or modern.',
                     hint: 'A date and a purpose, rather than a place.',
                 },
+                {
+                    prompt: 'Name the eight diphthongs, and say which way each group glides.',
+                    answer: 'αι, ει, οι, υι glide towards ι; αυ, ευ, ηυ, ου glide towards υ. ου is the exception in sound, being simply a long u.',
+                    hint: 'Four end in one vowel, four in another.',
+                },
+                {
+                    prompt: 'On which letter of a diphthong do the breathing and accent stand? Give an example.',
+                    answer: 'On the second. οὐρανός carries both marks over the υ, not the ο.',
+                    hint: 'Look at where the marks actually sit in οὐρανός.',
+                },
+                {
+                    prompt: 'What does the diaeresis in Ἠσαΐας do?',
+                    answer: 'It cancels the diphthong: the two vowels are to be sounded separately, so the word is Ē-sa-i-as rather than Ē-sais.',
+                    hint: 'Two dots, and a pair of vowels that would otherwise merge.',
+                },
+                {
+                    prompt: 'Resolve ψ and ξ into the sounds they stand for, and name the class of the first element of each.',
+                    answer: 'ψ is a labial plus σ (π + σ); ξ is a velar plus σ (κ + σ).',
+                    hint: 'Each double letter is a stop plus a sibilant.',
+                },
             ],
         },
         {
@@ -261,6 +411,24 @@ export default {
                             translit: 'ho logos, hē sophia, to phōs',
                             gloss: 'the word, the wisdom, the light',
                             note: 'Masculine, feminine, neuter, all nominative singular.',
+                        },
+                        {
+                            native: 'ὁ, τοῦ, τῷ, τόν · οἱ, τῶν, τοῖς, τούς',
+                            translit: 'ho, tou, tōi, ton · hoi, tōn, tois, tous',
+                            gloss: 'masculine: nominative, genitive, dative, accusative — singular then plural',
+                            note: 'Learn the four across, then the plural beneath. This is the whole table for one gender.',
+                        },
+                        {
+                            native: 'ἡ, τῆς, τῇ, τήν · αἱ, τῶν, ταῖς, τάς',
+                            translit: 'hē, tēs, tēi, tēn · hai, tōn, tais, tas',
+                            gloss: 'feminine, singular then plural',
+                            note: 'The genitive plural τῶν is shared by all three genders.',
+                        },
+                        {
+                            native: 'τό, τοῦ, τῷ, τό · τά, τῶν, τοῖς, τά',
+                            translit: 'to, tou, tōi, to · ta, tōn, tois, ta',
+                            gloss: 'neuter, singular then plural',
+                            note: 'Neuter nominative and accusative are always identical — here and in every noun you will meet.',
                         },
                     ],
                 },
@@ -358,12 +526,22 @@ export default {
                     answer: '\'The All\' and \'all things\'. Both are πᾶς made a noun by the neuter article; the singular views the totality as one whole, the plural as the sum of individual things.',
                     hint: 'Only the number of the article changes.',
                 },
+                {
+                    prompt: 'Which form of the article is shared by all three genders, and in what case and number?',
+                    answer: 'τῶν — the genitive plural. Seeing it tells you the case and number at once, but nothing about gender.',
+                    hint: 'Look down the three tables for a form that repeats.',
+                },
+                {
+                    prompt: 'In the neuter, which two cases always share a form? Give the singular and the plural.',
+                    answer: 'Nominative and accusative: τό and τό in the singular, τά and τά in the plural. The rule holds for every neuter noun in Greek, not only the article.',
+                    hint: 'Two of the four columns are identical.',
+                },
             ],
         },
         {
             number: 4,
             title: 'Nouns and their cases',
-            aim: 'Learn the two cases that build titles and inscriptions — nominative and genitive — across the three declensions, and construe a real Hermetic title.',
+            aim: 'Learn the cases across the three declensions — nominative and genitive first, since titles and inscriptions are built from them, then the dative and accusative that the last three lessons need — and construe a real Hermetic title.',
             sections: [
                 {
                     heading: 'Five cases, and the two you need first',
@@ -415,6 +593,40 @@ export default {
                         },
                     ],
                 },
+                {
+                    heading: 'The dative and the accusative',
+                    paragraphs: [
+                        'Two more cases, and you will meet both within three lessons. The dative covers \'to\', \'for\', \'with\', \'by\' and \'in\'; the accusative is the direct object and the case of motion towards. First-declension datives end -ῃ or -ᾳ, second-declension -ῳ, third-declension -ι, and all three write that iota beneath the vowel where they can: τῇ ψυχῇ, τῷ λόγῳ, τῷ φωτί. Accusatives end -ην or -αν, -ον, and -α or -ν in the third.',
+                        'Prepositions are the quickest way to fix them, because most govern one case and mean one thing with it. ἐν takes the dative and means \'in\'; εἰς takes the accusative and means \'into\'; πρός with the accusative is \'towards, with\'; διά with the genitive is \'through\'. So the first three words of lesson eight, ἐν ἀρχῇ, are simply ἐν with the dative of ἡ ἀρχή, and the phrase πρὸς τὸν θεόν is πρός with the accusative of ὁ θεός.',
+                        'The neuter rule from the last lesson holds for nouns as it did for the article: τὸ φῶς is both nominative and accusative, and there is nothing in the form to say which. Only the sense and the surrounding words decide — which is precisely the problem John 1:5 sets, where αὐτό could in principle be either.',
+                    ],
+                    examples: [
+                        {
+                            native: 'ἡ ψυχή, τῆς ψυχῆς, τῇ ψυχῇ, τὴν ψυχήν',
+                            translit: 'hē psychē, tēs psychēs, tēi psychēi, tēn psychēn',
+                            gloss: 'the soul — nominative, genitive, dative, accusative',
+                            note: 'First declension in -η. The dative iota is written beneath.',
+                        },
+                        {
+                            native: 'ὁ λόγος, τοῦ λόγου, τῷ λόγῳ, τὸν λόγον',
+                            translit: 'ho logos, tou logou, tōi logōi, ton logon',
+                            gloss: 'the word — the four cases of the second declension',
+                            note: 'The commonest noun-pattern in the language.',
+                        },
+                        {
+                            native: 'τὸ φῶς, τοῦ φωτός, τῷ φωτί, τὸ φῶς',
+                            translit: 'to phōs, tou phōtos, tōi phōti, to phōs',
+                            gloss: 'the light — third declension, stem φωτ-',
+                            note: 'Nominative and accusative identical, as in every neuter.',
+                        },
+                        {
+                            native: 'ἐν ἀρχῇ · εἰς τὸν αἰῶνα',
+                            translit: 'en archēi · eis ton aiōna',
+                            gloss: 'in the beginning · into the age, for ever',
+                            note: 'ἐν always with the dative, εἰς always with the accusative.',
+                        },
+                    ],
+                },
             ],
             vocabulary: [
                 {
@@ -446,6 +658,21 @@ export default {
                     native: 'φῶς',
                     translit: 'phōs',
                     gloss: 'light (genitive φωτός)',
+                },
+                {
+                    native: 'ἐν',
+                    translit: 'en',
+                    gloss: 'in, among (+ dative)',
+                },
+                {
+                    native: 'εἰς',
+                    translit: 'eis',
+                    gloss: 'into, to (+ accusative)',
+                },
+                {
+                    native: 'αἰών',
+                    translit: 'aiōn',
+                    gloss: 'age, lifetime, aeon (genitive αἰῶνος)',
                 },
             ],
             exercises: [
@@ -479,6 +706,21 @@ export default {
                     answer: 'Its derivation: Greek ποιμὴν ἀνδρῶν, \'shepherd of men\', or Egyptian p-eime nte-rē, \'the knowledge of Re\'. Neither is proved, so transliterate it as Poimandres and note both proposals.',
                     hint: 'Two languages have been proposed as its source.',
                 },
+                {
+                    prompt: 'Put ἡ ψυχή into the dative and the accusative singular, with the article.',
+                    answer: 'τῇ ψυχῇ and τὴν ψυχήν.',
+                    hint: 'The dative writes its iota beneath the vowel.',
+                },
+                {
+                    prompt: 'Which case does ἐν govern, and which εἰς? Give the phrase each makes with ἀρχή and αἰών.',
+                    answer: 'ἐν takes the dative: ἐν ἀρχῇ, \'in the beginning\'. εἰς takes the accusative: εἰς τὸν αἰῶνα, \'into the age, for ever\'.',
+                    hint: 'One preposition is static, the other is motion towards.',
+                },
+                {
+                    prompt: 'You meet τὸ φῶς in a sentence. What two cases could it be, and what will settle it?',
+                    answer: 'Nominative or accusative — a neuter noun never distinguishes them. Only the sense and the other words in the clause can decide.',
+                    hint: 'Recall the rule that held for the neuter article.',
+                },
             ],
         },
         {
@@ -498,6 +740,24 @@ export default {
                             translit: 'egō eimi ho ōn',
                             gloss: 'I am the One who is',
                             note: 'Septuagint, Exodus 3:14 — the answer from the burning bush.',
+                        },
+                        {
+                            native: 'εἰμί, εἶ, ἐστί(ν), ἐσμέν, ἐστέ, εἰσί(ν)',
+                            translit: 'eimi, ei, esti(n), esmen, este, eisi(n)',
+                            gloss: 'I am, you are, he is; we are, you are, they are',
+                            note: 'The present indicative entire. All but εἶ are enclitic.',
+                        },
+                        {
+                            native: 'ἦν, ἦσθα, ἦν, ἦμεν, ἦτε, ἦσαν',
+                            translit: 'ēn, ēstha, ēn, ēmen, ēte, ēsan',
+                            gloss: 'I was, you were, he was; we were, you were, they were',
+                            note: 'The imperfect. First and third person singular are identical.',
+                        },
+                        {
+                            native: 'ὤν, οὖσα, ὄν · εἶναι',
+                            translit: 'ōn, ousa, on · einai',
+                            gloss: 'being (masculine, feminine, neuter) · to be',
+                            note: 'The participle you met in ὁ ὤν, and the infinitive you will meet in Heraclitus.',
                         },
                     ],
                 },
@@ -574,6 +834,16 @@ export default {
                     translit: 'athanatos',
                     gloss: 'deathless, immortal',
                 },
+                {
+                    native: 'εἶναι',
+                    translit: 'einai',
+                    gloss: 'to be (infinitive)',
+                },
+                {
+                    native: 'ὤν, οὖσα, ὄν',
+                    translit: 'ōn, ousa, on',
+                    gloss: 'being (present participle of εἰμί)',
+                },
             ],
             exercises: [
                 {
@@ -605,6 +875,16 @@ export default {
                     prompt: 'Why does ψυχὴ πᾶσα ἀθάνατος need no verb, and what remains disputed in it?',
                     answer: 'Greek may juxtapose subject and predicate and leave ἐστί to be supplied. The dispute is over πᾶσα: \'every soul\' or \'all soul, soul as such\'.',
                     hint: 'The missing word is easy; the ambiguous one is the adjective.',
+                },
+                {
+                    prompt: 'Give the imperfect of εἰμί in full, and name the one ambiguity in it.',
+                    answer: 'ἦν, ἦσθα, ἦν, ἦμεν, ἦτε, ἦσαν. The first and third person singular are both ἦν, so only the context says whether it is \'I was\' or \'he was\'.',
+                    hint: 'Six forms, but only five distinct ones.',
+                },
+                {
+                    prompt: 'What are ὤν and εἶναι, and where has each already appeared in this course?',
+                    answer: 'ὤν is the present participle of εἰμί, \'being\', met in ὁ ὤν in lesson three; εἶναι is its infinitive, \'to be\', which stands in the Heraclitus fragment quoted in lesson eight, ἓν πάντα εἶναι.',
+                    hint: 'One was in a divine name, the other in a philosopher.',
                 },
             ],
         },
@@ -675,6 +955,18 @@ export default {
                             translit: 'amēn = 99',
                             gloss: 'amen',
                             note: 'α 1 + μ 40 + η 8 + ν 50; abbreviated ϟθ in some Christian manuscripts and inscriptions.',
+                        },
+                        {
+                            native: 'λόγος',
+                            translit: 'logos = 373',
+                            gloss: 'word, reason, account',
+                            note: 'λ 30 + ο 70 + γ 3 + ο 70 + ς 200. The word this course turns on, reckoned.',
+                        },
+                        {
+                            native: 'ΙΑΩ',
+                            translit: 'IAŌ = 811',
+                            gloss: 'Iao — the Greek rendering of the divine name',
+                            note: 'ι 10 + α 1 + ω 800. Three of the seven vowels; ubiquitous on the magical gems.',
                         },
                     ],
                 },
@@ -752,6 +1044,16 @@ export default {
                     answer: '545 — φ 500 + μ 40 + ε 5.',
                     hint: 'Three figures: a hundreds, a tens, a units.',
                 },
+                {
+                    prompt: 'Compute λόγος.',
+                    answer: '373 — λ 30 + ο 70 + γ 3 + ο 70 + ς 200.',
+                    hint: 'Two omicrons, and a final sigma still worth two hundred.',
+                },
+                {
+                    prompt: 'Compute ΙΑΩ, and say what is notable about the letters chosen.',
+                    answer: '811 — ι 10 + α 1 + ω 800. All three are vowels, drawn from the seven of lesson two, which is why the name is chanted rather than merely spelled.',
+                    hint: 'Ask which class of letter the name is made of.',
+                },
             ],
         },
         {
@@ -810,6 +1112,34 @@ export default {
                         },
                     ],
                 },
+                {
+                    heading: 'The names that cannot be read',
+                    paragraphs: [
+                        'Among the Greek of the papyri stand strings that are not Greek at all: ΑΒΛΑΝΑΘΑΝΑΛΒΑ, ΑΚΡΑΜΜΑΧΑΜΑΡΕΙ, and hundreds more. The ancient term for them is ὀνόματα βάρβαρα, \'barbarous names\' — barbarous in the plain Greek sense of foreign, not of savage. They are the commonest words on the Greco-Egyptian amulets, and they are untranslatable by design.',
+                        'ΑΒΛΑΝΑΘΑΝΑΛΒΑ is a palindrome of thirteen letters, identical read either way, and that symmetry is plainly the point. A derivation from Aramaic, roughly \'thou art our father\', is old and often repeated but genuinely uncertain; ΑΚΡΑΜΜΑΧΑΜΑΡΕΙ has no accepted etymology at all and its spelling shifts from gem to gem. Both are often cut as a diminishing wing, one letter pared away each line, so that the name dwindles on the stone as the affliction is meant to.',
+                        'You can read every letter of them and understand nothing, and that is the correct result. Iamblichus makes the argument explicitly at De mysteriis VII.4-5: such names must never be translated, because what works is the sound and not any sense a Greek could give it. Set that beside lesson six and the shape of the whole tradition appears — a name may be operative as number, as sound, or as symmetry, and in none of those cases does meaning do the work.',
+                    ],
+                    examples: [
+                        {
+                            native: 'ΑΒΛΑΝΑΘΑΝΑΛΒΑ',
+                            translit: 'Ablanathanalba',
+                            gloss: 'untranslated: a name of power',
+                            note: 'Thirteen letters, an exact palindrome. The Aramaic derivation is old and unproven.',
+                        },
+                        {
+                            native: 'ΑΚΡΑΜΜΑΧΑΜΑΡΕΙ',
+                            translit: 'Akrammachamarei',
+                            gloss: 'untranslated: a name of power',
+                            note: 'No accepted etymology; the spelling varies across the gems.',
+                        },
+                        {
+                            native: 'ὀνόματα βάρβαρα',
+                            translit: 'onomata barbara',
+                            gloss: 'barbarous names, foreign names',
+                            note: 'Neuter plural noun and adjective. βάρβαρος means foreign-speaking, nothing worse.',
+                        },
+                    ],
+                },
             ],
             vocabulary: [
                 {
@@ -852,6 +1182,16 @@ export default {
                     translit: 'asteroeis',
                     gloss: 'starry',
                 },
+                {
+                    native: 'βάρβαρος',
+                    translit: 'barbaros',
+                    gloss: 'foreign, foreign-speaking',
+                },
+                {
+                    native: 'ἀκέφαλος',
+                    translit: 'akephalos',
+                    gloss: 'headless (ἀ- privative + κεφαλή)',
+                },
             ],
             exercises: [
                 {
@@ -884,6 +1224,16 @@ export default {
                     answer: 'ἀκέφαλος: adjective, masculine nominative singular, agreeing with δαίμων; ἀ- privative + κεφαλή, \'head\'. δαίμων in the papyri means a spirit of no fixed moral colour, so \'demon\' imports the later Christian sense.',
                     hint: null,
                 },
+                {
+                    prompt: 'What does βάρβαρος mean in the phrase ὀνόματα βάρβαρα, and what does it not mean?',
+                    answer: 'Foreign, foreign-speaking. It carries none of the English sense of savage or cruel; the names are simply not Greek.',
+                    hint: 'The word describes a language, not a character.',
+                },
+                {
+                    prompt: 'What is formally remarkable about ΑΒΛΑΝΑΘΑΝΑΛΒΑ, and what did Iamblichus say should be done with such names?',
+                    answer: 'It is an exact palindrome of thirteen letters. Iamblichus argues at De mysteriis VII.4-5 that such names must never be translated, since their power lies in the sounds and not in any meaning.',
+                    hint: 'Read it backwards first.',
+                },
             ],
         },
         {
@@ -909,6 +1259,12 @@ export default {
                             translit: 'kai ho logos ēn pros ton theon',
                             gloss: 'and the Word was with God',
                             note: 'πρός + accusative, of presence and orientation.',
+                        },
+                        {
+                            native: 'Ἐν ἀρχῇ ἦν ὁ λόγος, καὶ ὁ λόγος ἦν πρὸς τὸν θεόν, καὶ θεὸς ἦν ὁ λόγος.',
+                            translit: 'En archēi ēn ho logos, kai ho logos ēn pros ton theon, kai theos ēn ho logos.',
+                            gloss: 'In the beginning was the Word, and the Word was with God, and the Word was God.',
+                            note: 'John 1:1 entire. Every word in it has been taught: ἐν with the dative, the article, the imperfect of εἰμί, πρός with the accusative.',
                         },
                     ],
                 },
@@ -1054,6 +1410,11 @@ export default {
                     prompt: 'Where does ἓν τὸ πᾶν actually appear, and how confidently can it be dated?',
                     answer: 'Within the ouroboros of the diagram called the Chrysopoeia of Cleopatra, preserved in Byzantine manuscripts of the Greek alchemical corpus, notably Marcianus graecus 299. The manuscripts copy older material, so motto and diagram are older than the copies, but they cannot be dated precisely.',
                     hint: 'Name the manuscript tradition, then admit what it cannot tell you.',
+                },
+                {
+                    prompt: 'Take John 1:1 whole and name the grammar of each clause: what governs ἀρχῇ, what case follows πρός, and which noun is the subject of the third clause.',
+                    answer: 'ἐν governs ἀρχῇ, dative. πρός takes the accusative, τὸν θεόν. In the third clause ὁ λόγος is the subject, because it carries the article; θεός stands bare as the fronted predicate.',
+                    hint: 'One preposition with the dative, one with the accusative, and one article that settles a subject.',
                 },
             ],
         },
