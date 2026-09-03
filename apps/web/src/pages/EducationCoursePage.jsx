@@ -9,7 +9,9 @@ const loadCourse = async (lang) => {
     const mod = COURSE_LOADERS[`../data/education/courses/${lang}.js`];
     return mod ? (await mod()).default : null;
 };
-const TITLES = { latin: 'Latin', greek: 'Greek', hebrew: 'Hebrew', egyptian: 'Egyptian', sanskrit: 'Sanskrit' };
+const TITLES = { latin: 'Latin', greek: 'Greek', hebrew: 'Hebrew', egyptian: 'Egyptian', sanskrit: 'Sanskrit', syriac: 'Syriac' };
+// Courses in right-to-left scripts. Kept as a list so the hall page and this one agree.
+const RTL = ['hebrew', 'syriac'];
 
 // Progress lives in the reader's browser and nowhere else.
 const storageKey = (lang) => `tl-scriptorium-course-${lang}`;
@@ -125,7 +127,7 @@ function EducationCoursePage() {
     const { lang, lesson: lessonParam } = useParams();
     const [course, setCourse] = useState(null);
     const [state, setState] = useState('loading');
-    const rtl = lang === 'hebrew';
+    const rtl = RTL.includes(lang);
 
     useEffect(() => {
         let alive = true;
