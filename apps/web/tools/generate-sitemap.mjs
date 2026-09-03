@@ -68,6 +68,7 @@ const staticRoutes = [
     { loc: '/third-lamp/education/hebrew/course',   priority: '0.6', changefreq: 'monthly' },
     { loc: '/third-lamp/education/egyptian/course', priority: '0.6', changefreq: 'monthly' },
     { loc: '/third-lamp/education/sanskrit/course', priority: '0.6', changefreq: 'monthly' },
+    { loc: '/third-lamp/education/syriac/course',   priority: '0.6', changefreq: 'monthly' },
     { loc: '/third-lamp/contact',     priority: '0.4', changefreq: 'yearly' },
 ].map((r) => ({ ...r, lastmod: today }));
 

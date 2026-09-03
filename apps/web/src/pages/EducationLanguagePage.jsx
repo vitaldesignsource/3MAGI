@@ -81,6 +81,7 @@ const COURSE_LINES = {
     hebrew: { title: 'The Letters of Creation', capstone: 'read the Shema and the first mishnah of Sefer Yetzirah' },
     egyptian: { title: "The Scribe's First Year", capstone: 'read a complete offering formula' },
     sanskrit: { title: 'The Perfected Tongue', capstone: 'read the Gāyatrī in its own script, every word accounted for' },
+    syriac: { title: 'Fire in the Letters', capstone: 'read Ephrem on Fire and Spirit, and date a manuscript from its own colophon' },
 };
 
 function EducationLanguagePage() {
