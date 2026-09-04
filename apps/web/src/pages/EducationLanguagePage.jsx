@@ -80,6 +80,7 @@ const COURSE_LINES = {
     greek: { title: 'Reading the Mysteries', capstone: 'read the opening of John and the ouroboros motto' },
     hebrew: { title: 'The Letters of Creation', capstone: 'read the Shema and the first mishnah of Sefer Yetzirah' },
     egyptian: { title: "The Scribe's First Year", capstone: 'read a complete offering formula' },
+    cuneiform: { title: 'Before the Alphabet', capstone: "read the opening of the Babylonian creation epic, and take the square root of two off a tablet of 1800 BC" },
     sanskrit: { title: 'The Perfected Tongue', capstone: 'read the Gāyatrī in its own script, every word accounted for' },
     syriac: { title: 'Fire in the Letters', capstone: 'read Ephrem on Fire and Spirit, and date a manuscript from its own colophon' },
     arabic: { title: 'The Greatest Name', capstone: 'read the Light Verse and reckon the Basmala at 786' },

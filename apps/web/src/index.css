@@ -10618,6 +10618,17 @@ h3 {
                "TL Glagolitic", "TL Cyrillic Ext",
                "Palatino", "Palatino Linotype", "Book Antiqua", "Times New Roman", serif;
 }
+/* Running prose quotes signs inline as well — an exercise that asks the reader
+   to translate a sign, a paragraph that names one. Georgia has no hieroglyphs,
+   no cuneiform and no Estrangela, and few systems carry them either, so those
+   characters fell through the prose stack to tofu. Every face above is
+   unicode-range-scoped to its own block, so naming them ahead of the body serif
+   costs Latin nothing: Georgia still wins for every character it covers. */
+:root {
+  --edu-script-faces: "TL Hieroglyphs", "TL Cuneiform", "TL Devanagari", "TL Arabic",
+                      "TL Tibetan", "TL Syriac", "TL Coptic", "TL Mandaic", "TL Armenian",
+                      "TL Ethiopic", "TL Glagolitic", "TL Cyrillic Ext";
+}
 /* Tibetan stacks vertically and Ethiopic sits on a heavy baseline; both need
    more leading than a Latin face at the same size. */
 .edu-lang-page[data-hall="tibetan"] .edu-letter-glyph,
@@ -11228,7 +11239,7 @@ h3 {
 .edu-page .edu-lesson-section p,
 .edu-page .edu-lesson-section li,
 .edu-page .edu-search-sub {
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--edu-script-faces), Georgia, "Times New Roman", serif;
   letter-spacing: 0.005em;
 }
 /* transliterations in the scholarly convention: serif italic */
