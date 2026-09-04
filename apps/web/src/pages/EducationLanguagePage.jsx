@@ -82,6 +82,7 @@ const COURSE_LINES = {
     egyptian: { title: "The Scribe's First Year", capstone: 'read a complete offering formula' },
     sanskrit: { title: 'The Perfected Tongue', capstone: 'read the Gāyatrī in its own script, every word accounted for' },
     syriac: { title: 'Fire in the Letters', capstone: 'read Ephrem on Fire and Spirit, and date a manuscript from its own colophon' },
+    arabic: { title: 'The Greatest Name', capstone: 'read the Light Verse and reckon the Basmala at 786' },
 };
 
 function EducationLanguagePage() {
