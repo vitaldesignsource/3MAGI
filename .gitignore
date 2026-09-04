@@ -1,0 +1,28 @@
+# dependencies / build output
+node_modules/
+dist/
+*.log
+
+# PocketBase runtime: platform binary + live database (contains user data — never commit)
+apps/pocketbase/pocketbase
+apps/pocketbase/pb_data/*
+!apps/pocketbase/pb_data/types.d.ts
+
+# local env overrides
+.env.local
+.env.*.local
+
+# OS
+.DS_Store
+
+# Claude Code local launch config (machine-specific paths)
+.claude/launch.json
+
+# Horizons session-journal dev plugin output
+vault/
+
+# generated at build by apps/web/tools/generate-llms.js
+apps/web/public/llms.txt
+
+# generated at build by apps/web/tools/generate-sitemap.mjs
+apps/web/public/sitemap.xml

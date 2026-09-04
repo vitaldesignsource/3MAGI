@@ -1,0 +1,7 @@
+export default {
+body: [
+            'For Mircea Eliade, the sacred was never simply a belief but a mode of experience: a break in ordinary, homogeneous space where a threshold appears and the world becomes, for a moment, oriented.',
+            'A city gate, a household hearth, a mountain path — any ordinary place could become an axis mundi, a center of the world, once ritual or hierophany marked it apart from the space around it.',
+            'This essay revisits Eliade\u2019s foundational distinction between sacred and profane space, asking what it would mean to recover the capacity to notice a gate in the midst of the ordinary.',
+        ],
+};

@@ -1,0 +1,241 @@
+import React, { useEffect, useMemo, useState } from 'react';
+import { Helmet } from 'react-helmet';
+import { Link, useLocation } from 'react-router-dom';
+import SiteHeader from '../../components/SiteHeader';
+import SiteFooter from '../../components/SiteFooter';
+import ScriptoriumTimeline from '../../components/ScriptoriumTimeline';
+import { loadData } from './lib';
+import Rich from './rich';
+import PortalHero from './PortalHero';
+import { SECTION_BY_SLUG } from './lib';
+
+// The Making of the Bibles. The centrepiece is the table: every book that
+// was ever seriously in the running, against every major canon — in, out,
+// disputed, appendix — because "the Bible" is a different list depending on
+// who is holding it, and the differences are the sediment of the arguments.
+
+const STATUS = {
+    in: { mark: '●', label: 'in the canon' },
+    disputed: { mark: '◐', label: 'disputed or variable' },
+    appendix: { mark: '□', label: 'in an appendix' },
+    out: { mark: '·', label: 'not included' },
+};
+
+const SECTION_LABEL = {
+    torah: 'Torah / Pentateuch', history: 'Histories', wisdom: 'Wisdom & Psalms',
+    prophets: 'Prophets', deutero: 'Deuterocanon & Greek additions',
+    gospels: 'Gospels', acts: 'Acts', pauline: 'Pauline letters',
+    catholic: 'Catholic epistles', apocalypse: 'Apocalypse',
+    other: 'At the edges of the lists',
+};
+const SECTION_ORDER = ['torah', 'history', 'wisdom', 'prophets', 'deutero',
+    'gospels', 'acts', 'pauline', 'catholic', 'apocalypse', 'other'];
+
+// Anchor id for a book row. The search index builder derives the same slug;
+// change one and you must change the other.
+const bookId = (name) => `bk-${name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')}`;
+
+function ChristianitiesCanonPage() {
+    const [data, setData] = useState(null);
+    const [activeTrad, setActiveTrad] = useState(null);
+    const [openBook, setOpenBook] = useState(null);
+    const [bibles, setBibles] = useState(null);
+    const [openVersion, setOpenVersion] = useState(null);
+
+    useEffect(() => {
+        let alive = true;
+        loadData('canon').then((d) => { if (alive) setData(d); });
+        loadData('bibles').then((b) => { if (alive && b?.versions?.length) setBibles(b); });
+        return () => { alive = false; };
+    }, []);
+
+    // A search result arrives as /christianities/canon#bk-<slug>: open that
+    // book's note. ScrollToTop brings the row into view.
+    const { hash } = useLocation();
+    useEffect(() => {
+        if (!data || !hash) return;
+        const id = decodeURIComponent(hash.slice(1));
+        const book = data.books.find((b) => bookId(b.name) === id);
+        if (book?.note) setOpenBook(book.name);
+    }, [data, hash]);
+
+    const sections = useMemo(() => {
+        if (!data) return [];
+        const by = new Map();
+        for (const b of data.books) {
+            if (!by.has(b.section)) by.set(b.section, []);
+            by.get(b.section).push(b);
+        }
+        return SECTION_ORDER.filter((k) => by.has(k)).map((k) => ({ key: k, label: SECTION_LABEL[k], books: by.get(k) }));
+    }, [data]);
+
+    if (!data) {
+        return (
+            <div className="third-lamp-scope edu-page ch-page" aria-busy="true" style={{ minHeight: '100vh' }}>
+                <SiteHeader />
+            </div>
+        );
+    }
+
+    const trads = data.traditions;
+    const activeT = trads.find((t) => t.key === activeTrad) || null;
+
+    return (
+        <div className="third-lamp-scope edu-page ch-page">
+            <Helmet>
+                <title>The Making of the Bibles — Christianities — Three Magi Press</title>
+                <meta name="description" content="How the different Bibles were assembled: the criteria, the councils, the printers — and a table of every book against every canon, from the Tanakh's 24 to the Ethiopian 81." />
+            </Helmet>
+            <SiteHeader />
+
+                <PortalHero image={SECTION_BY_SLUG.canon?.hero} alt={SECTION_BY_SLUG.canon?.heroAlt} effect={SECTION_BY_SLUG.canon?.heroEffect}
+                kickerLink="/christianities" kickerLinkLabel="Christianities"
+                kicker="What Is In, and According to Whom"
+                title="The Making of the Bibles" intro={data.intro} />
+            <main className="edu-main">
+
+                <section className="edu-halls" aria-labelledby="ch-criteria-heading">
+                    <header className="edu-section-head">
+                        <p className="kicker">The Tests a Book Had to Pass</p>
+                        <h2 id="ch-criteria-heading">The criteria</h2>
+                    </header>
+                    <div className="edu-hall-grid">
+                        {data.criteria.map((c) => (
+                            <div className="edu-hall-card ch-static-card" key={c.name}>
+                                <h3>{c.name}</h3>
+                                <p className="edu-hall-blurb"><Rich t={c.desc} /></p>
+                            </div>
+                        ))}
+                    </div>
+                </section>
+
+                <section aria-labelledby="ch-canontable-heading" className="ch-canon has-atmosphere"
+                    style={{ '--atmo': "url(/media/ba2f4eddefc44e825a6bbf7b1acb7b55.webp)" }}>
+                    <header className="edu-section-head">
+                        <p className="kicker">Every Book, Every Canon</p>
+                        <h2 id="ch-canontable-heading">The table</h2>
+                        <p>Select a column to read that tradition's account of itself;
+                            select a row for the story of a single book. The totals are
+                            computed from the table, not asserted beside it.</p>
+                    </header>
+
+                    <div className="edu-kinship-scroll ch-canon-scroll" role="region" aria-label="Canon comparison table" tabIndex={0}>
+                        <table className="edu-cognates-table ch-canon-table">
+                            <thead>
+                                <tr>
+                                    <th scope="col" className="ch-canon-bookcol">Book</th>
+                                    {trads.map((t) => (
+                                        <th scope="col" key={t.key}
+                                            className={activeTrad === t.key ? 'is-active' : ''}
+                                            onClick={() => setActiveTrad(activeTrad === t.key ? null : t.key)}>
+                                            {t.label}
+                                        </th>
+                                    ))}
+                                </tr>
+                            </thead>
+                            {sections.map((sec) => (
+                                <tbody key={sec.key}>
+                                    <tr className="ch-canon-sectionrow">
+                                        <th colSpan={trads.length + 1} scope="colgroup">{sec.label}</th>
+                                    </tr>
+                                    {sec.books.map((b) => (
+                                        <React.Fragment key={b.name}>
+                                            <tr id={bookId(b.name)}
+                                                className={`${b.note ? 'has-note ' : ''}${openBook === b.name ? 'is-open' : ''}`}
+                                                onClick={b.note ? () => setOpenBook(openBook === b.name ? null : b.name) : undefined}>
+                                                <th scope="row">{b.name}{b.note ? ' ↕' : ''}</th>
+                                                {trads.map((t) => {
+                                                    const st = b.status[t.key] || 'out';
+                                                    return (
+                                                        <td key={t.key}
+                                                            className={`ch-canon-cell st-${st}${activeTrad === t.key ? ' is-active' : ''}`}
+                                                            title={`${b.name} — ${t.label}: ${STATUS[st].label}`}>
+                                                            {STATUS[st].mark}
+                                                        </td>
+                                                    );
+                                                })}
+                                            </tr>
+                                            {openBook === b.name && b.note && (
+                                                <tr className="edu-cog-noterow">
+                                                    <td colSpan={trads.length + 1}><Rich t={b.note} /></td>
+                                                </tr>
+                                            )}
+                                        </React.Fragment>
+                                    ))}
+                                </tbody>
+                            ))}
+                        </table>
+                    </div>
+                    <p className="edu-kinship-legend">
+                        ● in the canon · ◐ disputed or variable · □ appendix · a dot means not included
+                    </p>
+
+                    {activeT && (
+                        <aside className="ch-canon-tradnote" aria-live="polite">
+                            <h3>{activeT.label}</h3>
+                            <p><Rich t={activeT.note} /></p>
+                            {(activeT.otCount != null || activeT.ntCount != null) && (
+                                <p className="ch-canon-counts">
+                                    {activeT.otCount != null && <>Old Testament: <strong>{activeT.otCount}</strong></>}
+                                    {activeT.otCount != null && activeT.ntCount != null && ' · '}
+                                    {activeT.ntCount != null && <>New Testament: <strong>{activeT.ntCount}</strong></>}
+                                </p>
+                            )}
+                        </aside>
+                    )}
+                </section>
+
+                {bibles && (
+                    <section className="ch-bibles has-atmosphere" aria-labelledby="ch-bibles-heading"
+                        style={{ '--atmo': "url(/media/0a5fc321c40a2bb3c0fe4a85dc82f795.webp)" }}>
+                        <header className="edu-section-head">
+                            <p className="kicker">Which Books, and Then Which Bible</p>
+                            <h2 id="ch-bibles-heading">The Versions</h2>
+                            {bibles.intro.map((p, i) => <p key={i}><Rich t={p} /></p>)}
+                        </header>
+                        <ol className="ch-bible-list">
+                            {bibles.versions.map((v) => {
+                                const open = openVersion === v.slug;
+                                return (
+                                    <li key={v.slug} id={v.slug} className={`ch-bible${open ? ' is-open' : ''}`}>
+                                        <button type="button" className="ch-bible-head"
+                                            onClick={() => setOpenVersion(open ? null : v.slug)}
+                                            aria-expanded={open}>
+                                            <span className="ch-bible-year">
+                                                {v.year < 0 ? `${-v.year} BCE` : v.year}
+                                            </span>
+                                            <span className="ch-bible-titles">
+                                                <span className="ch-bible-name">
+                                                    {v.native && <span className="edu-glyph ch-bible-native">{v.native}</span>}
+                                                    {v.name}
+                                                </span>
+                                                <span className="ch-bible-lang">{v.language}</span>
+                                            </span>
+                                        </button>
+                                        {open && (
+                                            <div className="ch-bible-body">
+                                                <div className="ch-kv"><span>Translated from</span><p><Rich t={v.madeFrom} /></p></div>
+                                                <div className="ch-kv"><span>By</span><p><Rich t={v.by} /></p></div>
+                                                <p><Rich t={v.note} /></p>
+                                                <div className="ch-kv"><span>Where it stands</span><p><Rich t={v.standing} /></p></div>
+                                                <p className="ch-bible-date">{v.dateLabel}</p>
+                                            </div>
+                                        )}
+                                    </li>
+                                );
+                            })}
+                        </ol>
+                    </section>
+                )}
+
+                {data.milestones?.length > 0 && (
+                    <ScriptoriumTimeline timeline={{ note: 'How the lists took shape: from the Seventy to the printers, every date that moved a Bible.', events: data.milestones }} rtl={false} />
+                )}
+            </main>
+
+            <SiteFooter />
+        </div>
+    );
+}
+
+export default ChristianitiesCanonPage;

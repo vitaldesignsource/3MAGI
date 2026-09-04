@@ -1,0 +1,50 @@
+export default {
+sections: [
+            {
+                id: 'three-months-upon-the-scales',
+                title: null,
+                lede: 'Who knew that a heart could be weighed for three months straight? In the Hall, there is no time; only the hour of the night.',
+                paragraphs: [
+                    { type: 'ornament', text: '\u2022       \u2022       \u2022' },
+                    'In a seemingly endless chain of days where I begin to understand the ways I\u2019ve dwelled in darkness, the world ends again. I come once more to the edge of all things.',
+                    'Tomorrow, through the corner of the window, the sun will meet my opening eye and the world will be remade. How long had I covered it with thick, black curtain so it couldn\u2019t reach me from the East?',
+                    { type: 'image', src: '/media/819790548c3b4dbd8d6ebe6ec10b2388.webp', alt: 'A figure stands before the golden scales in an Egyptian hall, a heart weighed against a white feather', caption: 'The Hall of Two Truths — the heart weighed against the feather of Ma\'at' },
+                    'Today, my hands reach into the mud to pull weeds. I\u2019m on my knees before Osiris, the Redeemer, again. I arrive with my whole heart, in truth. He\u2019s found it both wanting *and* worthy.',
+                    'Long have I chosen what binds me to death. He says that what my heart longs for more than anything - the way beyond - will mean choosing differently.',
+                    'In the days before, I waited for the barque. Through the dark cold of winter, I sat alone on a mound by the riverbank and would not move. I didn\u2019t once consider turning back the way I came. If choice were ever implied, I\u2019d scoffed. \u201cThere\u2019s nothing to go back to. I suffered, spun in circles. I seek more.\u201d But today, I have no bull-headed response.',
+                    'I wipe the muck off the lapis, and its polished surface becomes a mirror. Clouds form in the West. I still can\u2019t fathom what will be asked of me there, how much I\u2019ll have to change.',
+                    '\u201cIt\u2019s funny,\u201d I tell Osiris. \u201cIt took so much strength to pass through the gate before here. And now I see it\u2019ll take even more strength to pass through the next.\u201d',
+                    'The power of his gaze is immense. I\u2019d become weaker than ever on the mound of solitude and can barely glance at it.',
+                    '\u201cThe way beyond is open. It does return to the light...\u201d He waves his hand holding the crook, rippling air.',
+                    'No, for the worthy heart, there is no choice. The heart longs for god, for truth, to know by name the voice that has always been speaking and fiercely love it back.',
+                    'But what he doesn\u2019t say is what I begin to understand: it will be hard. There will be things I don\u2019t want to do, and I\u2019ll have to do them all. Whatever I\u2019ve avoided before, the path will lead straight there.',
+                    '\u201cSo that\u2019s how I\u2019ll learn to wield the sword,\u201d I say, somber. The light in his eyes is shimmering, sharp, and warm.',
+                    { type: 'image', src: '/media/b1fb3446691b148173973426ef36a326.webp', alt: 'A young man sits in a dark stone chamber, a single beam of light streaming through a narrow window', caption: 'The belly of the night — laid bare before the light that insists on entering' },
+                    'To stay in the belly of the night, resign myself to it, had never made sense. But finally, I can see where the choice lies and why it gets made. Who of us willingly walks toward suffering, into battle, when an entire fantastical reality around us applauds the opposite?',
+                    'I study him. His symbols, his colors, his flail. I feel unraveled, laid bare to the bones, but his love never flickers. Somehow, I\u2019d already chosen the path beyond, long before I knew the choice could be made.',
+                    { type: 'ornament', text: '\u2022       \u2022       \u2022' },
+                    'The hour of the night ends. Osiris calls me by my name, and I rise. I look up, and I lift my hand to the sun. In the lapis mirror, a light appears as it\u2019s facing me...',
+                    'I hear this instruction:\n\u201cWhen the eye opens, look back.\u201d',
+                    { type: 'image', src: '/media/23e66a7a31fcba035db7d840641403c0.webp', alt: 'A hand raised toward the sun against a clear blue sky', caption: 'The hand rises to meet the sun — the eye opens, the lapis mirror holds its light' },
+                ],
+            },
+        ],
+marginalia: {
+            eyebrow: 'Visionary Reflection',
+            summary: 'A lyrical account of standing before Osiris in the Hall of Two Truths \u2014 the heart weighed, found both wanting and worthy, and the path beyond revealed.',
+            correspondences: [
+                { term: 'Theme', value: 'Death & Rebirth' },
+                { term: 'Tradition', value: 'Egyptian Mysteries' },
+                { term: 'Key Concept', value: 'The Weighing of the Heart' },
+            ],
+            figures: [
+                {
+                    name: 'Meg Vollmer',
+                    role: 'Writer and practitioner exploring the Egyptian mysteries, initiation, and the inner life of the soul.',
+                    image: '/media/45a5e985abc7f38f3b6cba93c55bfc6a.jpg',
+                    links: [],
+                },
+            ],
+            conversationLabel: 'The Author',
+        },
+};

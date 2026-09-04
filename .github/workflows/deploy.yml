@@ -1,0 +1,71 @@
+# Build the site and publish the static output to the `deploy` branch.
+#
+# Hostinger's Git deployment copies a branch straight into public_html and
+# runs no npm, so the built files have to live in git. This workflow builds
+# apps/web on every push to main and force-pushes the result to `deploy`;
+# point Hostinger's Git deployment at `deploy` and every merge to main goes
+# live automatically. `deploy` is a single-commit orphan branch so the repo
+# doesn't accumulate a build per push.
+
+name: Build and publish site
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+# A newer push cancels an in-flight build so we never publish stale output.
+concurrency:
+  group: publish-site
+  cancel-in-progress: true
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v4
+
+      - name: Set up Node (version from .nvmrc)
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci --no-audit --no-fund
+
+      - name: Build apps/web
+        env:
+          NODE_ENV: production
+        run: npm run build --prefix apps/web
+
+      - name: Sanity-check the build output
+        run: |
+          set -e
+          test -f dist/apps/web/index.html
+          test -f dist/apps/web/.htaccess
+          test -d dist/apps/web/assets
+          test -d dist/apps/web/media
+          test -d dist/apps/web/fonts
+          echo "index.html, .htaccess, assets/, media/, fonts/ all present"
+          du -sh dist/apps/web
+
+      - name: Publish to deploy branch
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -e
+          SRC_SHA="${GITHUB_SHA::7}"
+          SRC_MSG="$(git log -1 --pretty=%s)"
+          cd dist/apps/web
+          git init -q -b deploy
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -q -m "Build ${SRC_SHA}: ${SRC_MSG}"
+          git push --force "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" deploy
+          echo "Published build of ${SRC_SHA} to deploy"

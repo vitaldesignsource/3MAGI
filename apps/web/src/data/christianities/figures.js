@@ -1,0 +1,1018 @@
+// christianities/figures — authored and fact-checked by the fabric pipeline
+// (43 corrections applied by the verifier before landing).
+export default {
+    "intro": [
+        "Christianity has no founder-generation that agrees with itself. It has, instead, a crowded ancestry: apostles who quarrelled at Antioch, philosophers baptised into a religion they went on arguing with, bishops who died in the arena and bishops who signed the warrants, women whose voices survive only because someone else copied them down, and teachers whose names became the labels for what the churches decided they were not.",
+        "The figures below are given as their own traditions remember them, with the historians' account set beside that memory where the two diverge. Heresiarch is used here as a historical designation — the label the winning party affixed — not as a verdict; Marcion, Arius, Nestorius and Pelagius are stated in their own terms first, and the surviving evidence noted for what it is, which is usually the writing of their opponents. Where a name is an exonym — Nestorian, Lollard, Montanist, Monophysite — it is flagged as such. Several of these people would have refused to sit in the same room. All of them are in the family."
+    ],
+    "categories": [
+        {
+            "key": "apostolic",
+            "label": "Apostolic & Sub-Apostolic"
+        },
+        {
+            "key": "apologist",
+            "label": "Apologists & Defenders"
+        },
+        {
+            "key": "alexandrian",
+            "label": "Alexandrian"
+        },
+        {
+            "key": "antiochene",
+            "label": "Antiochene"
+        },
+        {
+            "key": "cappadocian",
+            "label": "Cappadocian"
+        },
+        {
+            "key": "latin-father",
+            "label": "Latin Fathers"
+        },
+        {
+            "key": "syriac-father",
+            "label": "Syriac & Eastern Fathers"
+        },
+        {
+            "key": "desert",
+            "label": "Desert & Monastic"
+        },
+        {
+            "key": "heresiarch",
+            "label": "Condemned Teachers"
+        },
+        {
+            "key": "martyr",
+            "label": "Martyrs"
+        },
+        {
+            "key": "woman",
+            "label": "Women"
+        },
+        {
+            "key": "mystic",
+            "label": "Mystics"
+        },
+        {
+            "key": "reformer",
+            "label": "Reformers"
+        },
+        {
+            "key": "modern",
+            "label": "Modern"
+        }
+    ],
+    "entries": [
+        {
+            "slug": "gregory-the-great",
+            "name": "Gregory the Great",
+            "dates": "c. 540–604",
+            "categories": ["latin-father"],
+            "tradition": "Rome; counted a Doctor of the Church in the West and among the Three Holy Hierarchs' company in Eastern devotion, where he is called the Dialogist",
+            "role": "Prefect of Rome turned monk turned pope",
+            "contribution": "He inherited a city of ruins and plague and governed it in practice as well as in name \\u2014 negotiating with the Lombards, feeding Rome from the papal estates, and reorganising the church's administration so thoroughly that the medieval papacy is substantially his invention. He sent Augustine to Canterbury in 596 and gave him the instruction that made the English mission work: do not destroy the temples, purify them, so that the people may resort to the places they are used to. His Pastoral Rule became the standard manual for bishops for a thousand years, his Dialogues gave the West the life of Benedict, and his Moralia on Job shaped medieval exegesis. He preferred to call himself servus servorum Dei, servant of the servants of God, and the title stuck to the office. The plainchant that carries his name was codified long after him and is not his work in any direct sense.",
+            "fate": "Died in 604 after fourteen years as pope, ill and exhausted, having asked to be relieved of the office almost from the day he took it.",
+            "quote": {
+                "text": "Do not destroy the temples of the idols, but the idols that are in them.",
+                "source": "Letter to Abbot Mellitus, 601, preserved in Bede, Historia ecclesiastica I.30"
+            }
+        },
+        {
+            "slug": "bede",
+            "name": "Bede",
+            "dates": "c. 673–735",
+            "categories": ["latin-father"],
+            "tradition": "Northumbria; the only Englishman named a Doctor of the Church",
+            "role": "Monk of Jarrow, historian, chronologist",
+            "contribution": "He entered the monastery at seven and by his own account never left the north of England, and from that one library produced the Ecclesiastical History of the English People \\u2014 the work that made a nation's story tellable and, incidentally, popularised dating from the Incarnation, anno Domini, which is why the world now numbers its years as it does. His care about sources is startling for the period: he names his informants, distinguishes what he has read from what he was told, and says when he does not know. He also wrote on chronology, orthography and scripture, and was finishing a translation of John's gospel into English on the day he died.",
+            "fate": "Died at Jarrow in 735, dictating to the last; his student Cuthbert's letter describing it is among the most affecting accounts of a death in medieval literature.",
+            "quote": null
+        },
+        {
+            "slug": "anselm",
+            "name": "Anselm of Canterbury",
+            "dates": "1033–1109",
+            "categories": ["latin-father", "mystic"],
+            "tradition": "Norman Bec, then Canterbury",
+            "role": "Abbot, archbishop, and the first great scholastic",
+            "contribution": "He gave theology two things it has never put down. The first is the ontological argument of the Proslogion \\u2014 that than which nothing greater can be conceived cannot exist in the understanding alone \\u2014 which has been refuted and revived continuously for nine hundred years, by Aquinas and Kant against, by Descartes, Leibniz and Plantinga for. The second is the satisfaction theory of the atonement in Cur Deus Homo: sin as a debt of honour owed to God that only God can pay and only man ought to, so that the God-man is the necessary solution. Both begin from a method he named: faith seeking understanding, believing in order to understand rather than understanding in order to believe.",
+            "fate": "Twice exiled by English kings over investiture; died at Canterbury in 1109 and was named a Doctor of the Church in 1720.",
+            "quote": {
+                "text": "I do not seek to understand in order that I may believe, but I believe in order that I may understand.",
+                "source": "Proslogion 1"
+            }
+        },
+        {
+            "slug": "symeon-new-theologian",
+            "name": "Symeon the New Theologian",
+            "dates": "949–1022",
+            "categories": ["mystic"],
+            "tradition": "Byzantine",
+            "role": "Abbot of St Mamas in Constantinople",
+            "contribution": "Only three men in the Orthodox tradition carry the title Theologian, and Symeon is the third. He insisted, against a church establishment that found it disorderly, that direct conscious experience of God as light is available now and is the point of the Christian life \\u2014 and that a person who has not had it should not pretend otherwise. His Hymns of Divine Love describe his own experiences with an immediacy that has few parallels in Greek Christian writing, and he went further still in holding that the authority to bind and loose belongs to those who have the Spirit, whether or not they are ordained.",
+            "fate": "Removed from his abbacy and exiled across the Bosphorus in 1009 after a long conflict with the patriarchal syncellus Stephen; his cult was permitted after his death and he became a foundation of the hesychast tradition three centuries later.",
+            "quote": {
+                "text": "We awaken in Christ's body, as Christ awakens our bodies.",
+                "source": "Hymns of Divine Love 15, in Symeon's own first-person manner"
+            }
+        },
+        {
+            "slug": "bernard-of-clairvaux",
+            "name": "Bernard of Clairvaux",
+            "dates": "1090–1153",
+            "categories": ["mystic", "latin-father"],
+            "tradition": "Cistercian",
+            "role": "Abbot of Clairvaux and the most powerful voice in twelfth-century Europe",
+            "contribution": "He arrived at C\\u00eeteaux with thirty companions and left an order of hundreds of houses. His eighty-six sermons on the Song of Songs \\u2014 which reached only the beginning of the third chapter \\u2014 set the pattern for Western bridal mysticism, and his treatise On Loving God moves through four degrees from loving oneself for one's own sake to loving oneself for God's. He was also a formidable political operator: he settled a papal schism, opposed Abelard at Sens, and preached the Second Crusade, whose catastrophic failure he took upon himself.",
+            "fate": "Died at Clairvaux in 1153, canonised in 1174, named a Doctor of the Church in 1830. Dante gives him the last word in the Paradiso, praying to the Virgin on the poet's behalf.",
+            "quote": {
+                "text": "The reason for loving God is God himself; the measure, to love without measure.",
+                "source": "De diligendo Deo I.1"
+            }
+        },
+        {
+            "slug": "bonaventure",
+            "name": "Bonaventure",
+            "dates": "c. 1217–1274",
+            "categories": ["mystic", "latin-father"],
+            "tradition": "Franciscan",
+            "role": "Minister General of the Franciscans; the Seraphic Doctor",
+            "contribution": "He held the Franciscan order together in the generation after Francis, when it was tearing itself apart between those who wanted the rule kept literally and those who wanted a learned order \\u2014 and he did it by writing the official life of Francis and ordering the earlier ones destroyed, a decision historians have not stopped arguing about. His Journey of the Mind into God, written on the mountain where Francis received the stigmata, maps the ascent through the created world, through the mind, and past both into a darkness where the intellect stops and love goes on.",
+            "fate": "Died at the Second Council of Lyons in 1274, during the negotiations for reunion with the Greeks; named a Doctor of the Church in 1588.",
+            "quote": {
+                "text": "Ask grace, not learning; desire, not understanding.",
+                "source": "Itinerarium mentis in Deum, prologue"
+            }
+        },
+        {
+            "slug": "peter",
+            "image": "0507daa2b2b12d666bcdb4de8df460ad.webp",
+            "imageAlt": "A night courtyard: a standing man arguing across a long table of seated diners toward another standing man with folded arms, lamps burning on the wall",
+            "imageCaption": "The dispute at Antioch — Paul withstanding Peter “to the face,” as Galatians 2 puts it. The earliest apostolic quarrel we have on record, and it is about who may eat with whom.",
+            "name": "Peter (Simon Kephas)",
+            "dates": "d. c. 64-68",
+            "categories": [
+                "apostolic",
+                "martyr"
+            ],
+            "tradition": "Universal; claimed as founding bishop by Rome and by Antioch, and honoured as chief of the apostles across all traditions",
+            "role": "Galilean fisherman, leader of the Twelve, apostle to the circumcised",
+            "contribution": "The gospels place him first among the disciples and record both his confession and his denial; Acts makes him the voice of the Jerusalem community's first preaching and the one who accepts the baptism of the Gentile Cornelius. Paul's letter to the Galatians records that Peter withdrew from table fellowship with Gentiles at Antioch and that Paul opposed him publicly — the earliest surviving account of an apostolic dispute. The Roman church's claim to a primacy of teaching rests on his martyrdom and burial there; the churches of the East honour him without granting the jurisdictional inference. Two letters bear his name; most historians judge the second, and many the first, to be written in his name by a later hand, a practice the ancient world did not regard as forgery in the modern sense.",
+            "fate": "Martyred at Rome under Nero by tradition. Eusebius reports that he was crucified there; the detail that he asked to hang head downward comes from the second-century Acts of Peter and from Origen, quoted by Eusebius.",
+            "quote": {
+                "text": "Thou art the Christ, the Son of the living God.",
+                "source": "Matthew 16:16"
+            }
+        },
+        {
+            "slug": "paul",
+            "name": "Paul of Tarsus",
+            "dates": "c. 5 - c. 64-67",
+            "categories": [
+                "apostolic",
+                "martyr"
+            ],
+            "tradition": "Universal",
+            "role": "Pharisee, persecutor, apostle to the Gentiles",
+            "contribution": "Seven letters are undisputed among historians — Romans, 1 and 2 Corinthians, Galatians, Philippians, 1 Thessalonians, Philemon — and they are the oldest Christian writings that survive, older than any gospel. In them he argues that Gentiles enter the people of God without taking on circumcision and the whole Law, a position that made the movement transmissible beyond Judaea and that he defended against the Jerusalem church at some cost. Later Christian theology of grace, justification and the body of Christ is built substantially on his vocabulary. Six further letters attributed to him are disputed; the Pastorals are widely held to be later. He described his own commissioning as a revelation of the risen Christ rather than a conversion away from Judaism, and to the end called himself a Hebrew of Hebrews.",
+            "fate": "Executed at Rome, by tradition beheaded under Nero; Acts leaves him under house arrest and does not narrate his death.",
+            "quote": {
+                "text": "There is neither Jew nor Greek, there is neither bond nor free, there is neither male nor female: for ye are all one in Christ Jesus.",
+                "source": "Galatians 3:28"
+            }
+        },
+        {
+            "slug": "james-the-just",
+            "name": "James the Just",
+            "dates": "d. 62",
+            "categories": [
+                "apostolic",
+                "martyr"
+            ],
+            "tradition": "Jerusalem church; honoured as first bishop of Jerusalem in every tradition, and named in the ancient Liturgy of St James",
+            "role": "Brother of the Lord, head of the Jerusalem community",
+            "contribution": "Presided over the mother church of the movement and, in Acts 15, delivers the ruling that Gentile believers need not be circumcised — the decision that permitted the mission Paul was already conducting. He is remembered as scrupulous in Torah observance, and the community around him remained recognisably a movement within Judaism. Josephus records his death at the hands of the high priest Ananus during the interval between the governors Festus and Albinus, and reports that the citizens most exact about the law protested the illegality of the execution. The Letter of James in the New Testament bears his name; its authorship is disputed. The Liturgy of St James, still used by the Syriac Orthodox and Malankara churches and kept for his feast in the Byzantine rite, is among the oldest eucharistic rites in continuous use.",
+            "fate": "Stoned at Jerusalem in 62 on the order of the high priest Ananus son of Ananus, according to Josephus; Hegesippus, quoted by Eusebius, gives a longer account in which he is thrown from the Temple parapet, then stoned and clubbed.",
+            "quote": null
+        },
+        {
+            "slug": "clement-of-rome",
+            "name": "Clement of Rome",
+            "dates": "fl. c. 96",
+            "categories": [
+                "apostolic"
+            ],
+            "tradition": "Rome; counted among the Apostolic Fathers",
+            "role": "Presbyter-bishop of the Roman church",
+            "contribution": "The letter known as 1 Clement, written from the church at Rome to the church at Corinth around 96, is the earliest Christian document outside the New Testament that can be dated with any confidence. It intervenes in a Corinthian dispute in which younger members had deposed their presbyters, and argues for order, succession and the appointment of ministers by those with authority — the earliest surviving argument of its kind, and one Roman theology would later lean on heavily. The letter never claims a papal office; it writes as a church to a church, and never names its author. A second letter attributed to him is a later sermon by another hand, and the Clementine romances are later fiction.",
+            "fate": "Later legend has him exiled to the Crimea and drowned with an anchor about his neck; there is no early evidence for this. Irenaeus, who lists him among the Roman bishops, knows nothing of a martyrdom.",
+            "quote": null
+        },
+        {
+            "slug": "ignatius-of-antioch",
+            "name": "Ignatius of Antioch",
+            "dates": "c. 35 - c. 108",
+            "categories": [
+                "apostolic",
+                "martyr",
+                "antiochene"
+            ],
+            "tradition": "Antioch; Apostolic Father, honoured East and West as Theophoros, the God-bearer",
+            "role": "Bishop of Antioch, martyr",
+            "contribution": "Seven letters written under guard on the road to Rome and to his execution — to Ephesus, Magnesia, Tralles, Rome, Philadelphia, Smyrna, and to Polycarp. They give the earliest clear picture of a single bishop presiding over presbyters and deacons in each city, the earliest use of the phrase 'catholic church', and an insistence on the reality of Christ's flesh against those who held it apparent. His letter to the Romans begs the church there not to intervene to save him. The recension of the letters was contested for centuries; the middle recension is now generally accepted as authentic, though a minority of scholars still dispute the dating.",
+            "fate": "Taken to Rome to die in the arena, under Trajan by traditional reckoning. No independent account of his death survives: what we have is the death he wrote that he expected, and the memory of the churches that kept his letters.",
+            "quote": {
+                "text": "I am God's wheat, and I am ground by the teeth of wild beasts that I may be found pure bread of Christ.",
+                "source": "Letter to the Romans 4"
+            }
+        },
+        {
+            "slug": "polycarp",
+            "name": "Polycarp of Smyrna",
+            "dates": "c. 69 - c. 155",
+            "categories": [
+                "apostolic",
+                "martyr"
+            ],
+            "tradition": "Smyrna; Apostolic Father",
+            "role": "Bishop of Smyrna, disciple of John according to Irenaeus",
+            "contribution": "The living link that the second-century church prized: Irenaeus, who heard him as a boy, reports that Polycarp had known the apostle John. He travelled to Rome to confer with Bishop Anicetus over the date of Pascha, and the two parted without agreement and without breaking communion — an early and instructive instance of diversity tolerated. His Letter to the Philippians survives. The Martyrdom of Polycarp, written by his own church shortly after his death, is the earliest surviving account of a Christian martyrdom outside the New Testament and set the pattern for the genre, including the collection of the martyr's remains for annual commemoration.",
+            "fate": "Burned and then stabbed in the stadium at Smyrna, having refused to swear by the genius of Caesar; the account has him say he had served Christ eighty-six years.",
+            "quote": {
+                "text": "Eighty and six years have I served him, and he never did me any injury: how then can I blaspheme my King and my Saviour?",
+                "source": "Martyrdom of Polycarp 9"
+            }
+        },
+        {
+            "slug": "justin-martyr",
+            "name": "Justin Martyr",
+            "dates": "c. 100 - c. 165",
+            "categories": [
+                "apologist",
+                "martyr"
+            ],
+            "tradition": "Rome, born at Flavia Neapolis in Samaria",
+            "role": "Philosopher, apologist, martyr",
+            "contribution": "A pagan philosopher who kept the philosopher's cloak after baptism and argued that Christianity was the true philosophy. The First Apology is addressed to the emperor Antoninus Pius and demands that Christians be tried for crimes rather than for the name; the shorter Second Apology is addressed to the Roman senate. The Dialogue with Trypho is the earliest extended Christian argument with a Jewish interlocutor to survive, and treats Trypho with more courtesy than the genre would later manage. He developed the idea of the logos spermatikos — the seed of the Word scattered among all peoples, so that Socrates and Heraclitus lived in some sense as Christians before Christ. His First Apology contains the earliest detailed description of the Sunday eucharist.",
+            "fate": "Beheaded at Rome with six companions under the urban prefect Junius Rusticus. The Acts of Justin, which appear to rest on the official record of the trial, survive.",
+            "quote": {
+                "text": "Those who lived according to reason are Christians, even though they were called atheists.",
+                "source": "First Apology 46"
+            }
+        },
+        {
+            "slug": "irenaeus",
+            "name": "Irenaeus of Lyon",
+            "dates": "c. 130 - c. 202",
+            "categories": [
+                "apologist"
+            ],
+            "tradition": "Gaul, formed in Smyrna",
+            "role": "Bishop of Lyon, heresiologist",
+            "contribution": "His Against Heresies is the fullest second-century description of the teachers he grouped as Gnostic, and for centuries the main source for them — a position complicated by the Nag Hammadi discoveries of 1945, which showed that he had summarised some systems accurately and caricatured others. Against them he argued for a single God who is both creator and redeemer, a real incarnation, and a rule of faith held publicly in the churches founded by apostles. His doctrine of recapitulation — Christ retracing and healing the whole of human life — remains a load-bearing idea in Eastern theology. He also intervened with Bishop Victor of Rome to prevent the excommunication of the Asian churches over the Pascha date, arguing for peace, which is what his name means; Eusebius, who preserves the letter, makes the pun himself.",
+            "fate": "Died at Lyon; the later tradition of his martyrdom has no early support.",
+            "quote": {
+                "text": "The glory of God is a living man; and the life of man consists in beholding God.",
+                "source": "Against Heresies IV.20.7"
+            }
+        },
+        {
+            "slug": "clement-of-alexandria",
+            "name": "Clement of Alexandria",
+            "dates": "c. 150 - c. 215",
+            "categories": [
+                "alexandrian",
+                "apologist"
+            ],
+            "tradition": "Alexandria",
+            "role": "Teacher at Alexandria, philosopher",
+            "contribution": "Held that Greek philosophy was to the Greeks what the Law was to the Jews: a schoolmaster bringing them to Christ. His trilogy — the Protrepticus, the Paedagogus, the Stromateis — moves from persuasion to moral formation to advanced instruction, and the Stromateis deliberately scatters its teaching to keep it from the careless. He spoke of the true gnostic, appropriating the vocabulary of the teachers Irenaeus attacked and turning it to orthodox use. His treatise on whether a rich man can be saved is the earliest sustained Christian treatment of wealth. Rome dropped his commemoration from the Martyrology in 1586, his orthodoxy having come under suspicion; the Eastern churches remember him variously.",
+            "fate": "Left Alexandria during the persecution under Septimius Severus and died a decade or so later, probably in Cappadocia or Palestine.",
+            "quote": null
+        },
+        {
+            "slug": "tertullian",
+            "name": "Tertullian",
+            "dates": "c. 155 - c. 220",
+            "categories": [
+                "latin-father",
+                "apologist"
+            ],
+            "tradition": "Carthage; Latin North Africa",
+            "role": "Rhetorician, apologist, first great Christian writer in Latin",
+            "contribution": "He gave Latin theology its vocabulary, coining or fixing trinitas, persona, substantia, sacramentum — the words the later creeds would work with. His Apology is a forensic demolition of the legal basis for persecution, and his training in rhetoric and Roman law shows on every page, though the old identification of him with the jurist Tertullian of the Digest is now generally rejected. Against Praxeas states a doctrine of one substance in three persons well before Nicaea; On the Flesh of Christ insists on a genuine human body against Marcion. From about 207 he was drawn to the New Prophecy — the movement its opponents called Montanism, an exonym after Montanus — which claimed continuing prophetic revelation and demanded a stricter discipline. He never repudiated the move, and his later works attack the mainstream church's laxity in penance and remarriage with the same ferocity he had turned on pagans.",
+            "fate": "Died at Carthage; Jerome reports he lived to a great age. Whether he formally left the catholic communion is disputed: Augustine, two centuries later, reports a separate group at Carthage called Tertullianists, while much recent scholarship reads the New Prophecy as a rigorist party within the African church rather than a schism he joined. Either way he was never canonised, and has never stopped being quoted.",
+            "quote": {
+                "text": "The blood of Christians is seed.",
+                "source": "Apology 50"
+            }
+        },
+        {
+            "slug": "origen",
+            "name": "Origen of Alexandria",
+            "dates": "c. 185 - c. 253",
+            "categories": [
+                "alexandrian"
+            ],
+            "tradition": "Alexandria, later Caesarea",
+            "role": "Biblical scholar, systematic theologian, confessor",
+            "contribution": "The most learned Christian of the ancient world. The Hexapla set six versions of the Old Testament in parallel columns, the first work of textual criticism in Christian history. On First Principles is the first attempt at a systematic theology. His commentaries and homilies established allegorical exegesis as a discipline with rules, reading scripture in bodily, psychic and spiritual senses. Against Celsus answers the most intelligent pagan critic the church had yet faced, and preserves Celsus's book by quoting it. His speculative proposals — the pre-existence of souls, the subordination of the Son, and the possible final restoration of all things — were entertained as hypotheses and condemned as doctrines three centuries later. Basil and Gregory of Nazianzus are credited by tradition with compiling an anthology of his work, the Philocalia, and anathematised none of it.",
+            "fate": "His troubles began in life: ordained in Palestine without his own bishop's leave, he was deposed and driven from Alexandria by Demetrius, and taught thereafter at Caesarea. Imprisoned and tortured under the Decian persecution, he survived it and died at Tyre a year or two later, his death traditionally ascribed to the injuries. Anathematised posthumously — at a synod under Justinian in 543, and by an anathema associated with the Second Council of Constantinople in 553, three hundred years after his death. Most of his vast output was consequently lost, or survives only in Rufinus's Latin translation, which softened him.",
+            "quote": null
+        },
+        {
+            "slug": "cyprian",
+            "name": "Cyprian of Carthage",
+            "dates": "c. 200 - 258",
+            "categories": [
+                "latin-father",
+                "martyr"
+            ],
+            "tradition": "Carthage; Latin North Africa",
+            "role": "Bishop of Carthage, martyr",
+            "contribution": "A wealthy rhetorician converted in middle age and made bishop within two or three years. The Decian persecution left his church split over the lapsed — those who had sacrificed or bought certificates — and Cyprian steered between the rigorists who would readmit none and the confessors who would readmit all, insisting that reconciliation was the bishop's to grant after penance. On the Unity of the Catholic Church argues that the episcopate is one and each bishop holds it entire, a formula that grounds both papal and conciliar readings; its fourth chapter survives in two recensions, one markedly more favourable to Rome, and which is Cyprian's own is still argued. He disagreed sharply with Stephen of Rome over rebaptising those baptised by heretics, and did not yield. His letters are the best evidence anywhere for how a third-century church actually ran.",
+            "fate": "Beheaded at Carthage under Valerian in 258; the proconsular record of his trial and execution survives.",
+            "quote": {
+                "text": "He can no longer have God for his Father, who has not the Church for his mother.",
+                "source": "On the Unity of the Catholic Church 6"
+            }
+        },
+        {
+            "slug": "perpetua-and-felicity",
+            "image": "4c26356256b9b34805b549b37ad115af.webp",
+            "imageAlt": "Two women in plain robes holding hands in a stone tunnel, the sunlit arena and crowd visible through the arch beyond, a soldier standing guard",
+            "imageCaption": "The gate to the arena at Carthage, 203. Perpetua kept a diary until the day before she died, and it survives — one of the earliest texts by a Christian woman in her own voice.",
+            "name": "Perpetua and Felicity",
+            "dates": "d. 203",
+            "categories": [
+                "martyr",
+                "woman"
+            ],
+            "tradition": "Carthage; commemorated by name in the Roman Canon of the Mass",
+            "role": "Catechumens martyred at Carthage",
+            "contribution": "Vibia Perpetua was a well-born young woman of about twenty-two, nursing an infant; Felicity was a slave who gave birth in prison days before the games. The Passion of Perpetua and Felicity contains what is very widely held to be Perpetua's own prison diary — the earliest surviving writing by a Christian woman, and among the earliest by any woman in Latin. She records her father's repeated pleading, her visions of a ladder guarded by a dragon and of her dead brother Dinocrates, and a dream in which she fights an Egyptian in the arena, and in it becomes a man. The narrative's editor frames it with an appeal to the New Prophecy's claim that the Spirit still speaks; an older proposal that the editor was Tertullian is now generally rejected. The text was treasured by adherents of the New Prophecy and by catholics alike.",
+            "fate": "Killed in the amphitheatre at Carthage during games for the birthday of Caesar Geta; savaged by a heifer, then despatched by the sword. The account says Perpetua guided the novice gladiator's trembling hand to her own throat.",
+            "quote": null
+        },
+        {
+            "slug": "thecla",
+            "name": "Thecla of Iconium",
+            "dates": "traditionally first century; her Acts written c. 160-190",
+            "categories": [
+                "woman",
+                "martyr"
+            ],
+            "tradition": "Widely venerated East and West, with a great shrine at Seleucia visited by Egeria",
+            "role": "Companion of Paul in legend; titled protomartyr and equal-to-the-apostles among women in Eastern tradition",
+            "contribution": "The Acts of Paul and Thecla tell of a young woman of Iconium who hears Paul preaching chastity, breaks her engagement, is condemned to the fire and to the beasts, is delivered each time, baptises herself, cuts her hair, dresses as a man and goes off to teach. The text is second-century fiction, and Tertullian records that its author, a presbyter in Asia, was deposed for writing it. This has never dented her cult. She was among the most popular saints of the ancient Mediterranean; her shrine drew pilgrims for centuries; women invoked her as a model of consecrated virginity and, in some readings, of a woman's right to teach and baptise. The tradition's own account carries a tension it has never minded: she is honoured as first among women martyrs, and the same legends give her a long life and a peaceful end. She is set down here as the tradition honours her, with the nature of the source stated plainly: the story is not history, and the devotion is entirely real.",
+            "fate": "Legend gives her a long life as a teacher and healer at Seleucia; the endings vary, one having the rock open to receive her alive.",
+            "quote": null
+        },
+        {
+            "slug": "antony-and-pachomius",
+            "name": "Antony the Great and Pachomius",
+            "dates": "Antony c. 251-356; Pachomius c. 292-346/348",
+            "categories": [
+                "desert"
+            ],
+            "tradition": "Coptic Orthodox; honoured throughout Christendom as the fathers of monastic life",
+            "role": "The anchorite and the cenobite of the Egyptian desert",
+            "contribution": "Between them they invented the two forms every later monastery would choose from. Antony was the Coptic-speaking son of prosperous landowners who, hearing the gospel command to sell all, gave away a substantial inheritance and withdrew — first to the edge of his village, then to a deserted fort, then to the inner mountain by the Red Sea. Athanasius's Life of Antony, written soon after his death and swiftly translated into Latin, made him the pattern of the ascetic vocation for the whole church; Augustine records in the Confessions that hearing of Antony precipitated his own crisis. Seven letters attributed to Antony survive in Georgian, Coptic and Arabic and show a more speculative, Origen-inflected mind than the Life suggests. Pachomius, a conscript in the Roman army struck by the kindness of Christians at Thebes, sought baptism on discharge and did the opposite thing: he gathered monks into a walled community with a common rule, a common table, assigned work and an abbot — the invention of the monastery as an institution. By his death a network of men's and women's houses followed his rule, one of the women's under his sister. Basil, who toured the Egyptian monasteries himself, drew on what he saw there; Jerome's Latin translation of the Rule in 404 carried Pachomius into the West, to the Rule of the Master and ultimately to Benedict.",
+            "fate": "Antony died at a great age in his desert cell, having asked that his burial place be kept secret. Pachomius died of an epidemic at Pbow while nursing the sick of his own community.",
+            "quote": null
+        },
+        {
+            "slug": "athanasius",
+            "name": "Athanasius of Alexandria",
+            "dates": "c. 296 - 373",
+            "categories": [
+                "alexandrian"
+            ],
+            "tradition": "Coptic Orthodox, Eastern Orthodox, Catholic — claimed by all; the Copts call him the Apostolic",
+            "role": "Bishop of Alexandria, defender of Nicaea",
+            "contribution": "Present at Nicaea as a deacon and bishop from 328, he spent forty-five episcopal years defending the term homoousios — the Son of one being with the Father — against an imperial court that mostly preferred a vaguer formula. On the Incarnation argues that only God can divinise humanity, and states the exchange formula that runs through all later Eastern theology. His Festal Letter of 367 gives the earliest surviving list of exactly the twenty-seven books of the New Testament as we now have them. The Life of Antony carried monasticism west. His polemics were fierce and his methods in Alexandria have been criticised by modern historians, including sympathetic ones, as heavy-handed; the doctrine he defended outlasted every emperor who exiled him.",
+            "fate": "Exiled five times under four emperors, spending some seventeen years in banishment, much of it among the desert monks. Died in Alexandria in his own see.",
+            "quote": {
+                "text": "He was made man that we might be made God.",
+                "source": "On the Incarnation 54"
+            }
+        },
+        {
+            "slug": "ephrem-the-syrian",
+            "name": "Ephrem the Syrian",
+            "dates": "c. 306 - 373",
+            "categories": [
+                "syriac-father",
+                "mystic"
+            ],
+            "tradition": "Syriac — claimed by the Syriac Orthodox, the Church of the East and the Maronites, honoured as a Doctor of the Church by Rome since 1920; called the Harp of the Spirit",
+            "role": "Deacon, hymnographer, teacher at Nisibis and Edessa",
+            "contribution": "The greatest poet of the patristic age and the proof that Christian theology need not be Greek. He wrote in Syriac, a dialect of Aramaic, and thought in paradox, type and symbol rather than in philosophical definition — refusing, on principle, to probe the divine nature with syllogisms. The Hymns on Paradise, the Hymns on Faith and the Hymns on the Nativity remain in liturgical use across the Syriac churches. Later Syriac tradition, above all Jacob of Serugh, credits him with composing hymns for choirs of women to sing in church and with training them, at a period when this was unusual. His verse was set against the rival hymnody of Bardaisan's school and against Marcion and Mani, and the Hymns on Faith against subordinationist teaching — poetry deployed as doctrine, because people sing what they will not read.",
+            "fate": "Died at Edessa in 373, having organised relief during a famine there; the tradition holds that he caught the accompanying plague.",
+            "quote": null
+        },
+        {
+            "slug": "basil-the-great",
+            "name": "Basil of Caesarea",
+            "dates": "c. 330 - 379",
+            "categories": [
+                "cappadocian"
+            ],
+            "tradition": "Eastern Orthodox, Catholic, Oriental Orthodox",
+            "role": "Archbishop of Caesarea in Cappadocia, monastic legislator",
+            "contribution": "Gave the Trinitarian formula its settled Greek shape — one ousia in three hypostaseis — which resolved a confusion in which the same word had been used for both, and made the Council of Constantinople possible two years after his death. On the Holy Spirit argues the Spirit's full divinity largely from the practice of worship. His Longer and Shorter Rules remain the basis of Eastern monasticism, and Benedict sends his own monks to read them. He built the Basileiad outside Caesarea — a hospital, hospice and poorhouse of such scale that Gregory of Nazianzus called it a new city — and preached against the hoarding of grain during famine in terms that later Christian social teaching has never improved on.",
+            "fate": "Died worn out on 1 January 379, not yet fifty, and some two years before the council that would vindicate his theology.",
+            "quote": {
+                "text": "The bread which you hold back belongs to the hungry; the coat which you guard in your locker belongs to the naked.",
+                "source": "Homily 6, on Luke 12:18, 'I Will Pull Down My Barns'"
+            }
+        },
+        {
+            "slug": "gregory-of-nazianzus",
+            "name": "Gregory of Nazianzus",
+            "dates": "c. 329 - 390",
+            "categories": [
+                "cappadocian"
+            ],
+            "tradition": "Eastern Orthodox, Catholic; called simply the Theologian, a title the East gives to only three people",
+            "role": "Bishop of Constantinople, orator, poet",
+            "contribution": "The Five Theological Orations, delivered in a small chapel in a capital dominated by his opponents, are the finest sustained Greek theological rhetoric of the fourth century and settled the case for the divinity of the Holy Spirit. He presided briefly over the Council of Constantinople in 381 and resigned in disgust at the bishops' manoeuvring, retiring to write autobiographical poetry of startling candour about ambition, friendship and failure. His letters to Cledonius against Apollinaris contain the axiom that governed all subsequent Christology: what is not assumed is not healed. He was, by his own account, a reluctant priest, a reluctant bishop and a reluctant archbishop, and he was right about the last one.",
+            "fate": "Resigned his see and died in retirement at Arianzus, on his family estate.",
+            "quote": {
+                "text": "That which he has not assumed he has not healed.",
+                "source": "Letter 101, to Cledonius"
+            }
+        },
+        {
+            "slug": "gregory-of-nyssa",
+            "name": "Gregory of Nyssa",
+            "dates": "c. 335 - c. 395",
+            "categories": [
+                "cappadocian",
+                "mystic"
+            ],
+            "tradition": "Eastern Orthodox, Catholic",
+            "role": "Bishop of Nyssa, mystical theologian",
+            "contribution": "The most speculative of the three Cappadocians and the one modern theology has returned to most often. Against Eunomius argues the unknowability of the divine essence; the Life of Moses and the Homilies on the Song of Songs develop epektasis — the soul's endless progress into a God who can never be exhausted, so that perfection is not arrival but unceasing motion. He wrote the Catechetical Oration, a systematic apologetic; On the Soul and the Resurrection, cast as a deathbed dialogue with his sister Macrina, who does the arguing; and, in his fourth homily on Ecclesiastes, one of the most unequivocal condemnations of slaveholding to survive from the ancient world. He taught some form of universal restoration, and — unlike Origen, from whom he learned it — was never condemned for it.",
+            "fate": "Deposed and exiled under the emperor Valens, restored after Valens's death; died some years after the Council of Constantinople.",
+            "quote": null
+        },
+        {
+            "slug": "macrina-the-younger",
+            "name": "Macrina the Younger",
+            "dates": "c. 327 - 379",
+            "categories": [
+                "woman",
+                "cappadocian",
+                "desert"
+            ],
+            "tradition": "Eastern Orthodox, Catholic",
+            "role": "Ascetic, teacher, head of the family community at Annisa",
+            "contribution": "The eldest of ten children of a wealthy Pontic family, three of whom became bishops. On her betrothed's death she refused to marry, converted the family estate at Annisa into an ascetic community in which the household's servants lived alongside the family, and formed her brothers — Basil, by her brother Gregory's account, came home from his studies swollen with rhetoric and she cured him of it. Her theology survives only in Gregory's writing: On the Soul and the Resurrection stages her as the teacher and himself as the pupil, arguing the resurrection of the body and the final restoration of souls while she is dying. The Life of Macrina is his second account of her. Whether the arguments are hers or his is unrecoverable; that he chose to attribute them to her is itself evidence.",
+            "fate": "Died at Annisa in the presence of her brother Gregory, who records that she owned almost nothing and was buried in a dark, coarse garment.",
+            "quote": null
+        },
+        {
+            "slug": "john-chrysostom",
+            "name": "John Chrysostom",
+            "dates": "c. 347 - 407",
+            "categories": [
+                "antiochene"
+            ],
+            "tradition": "Eastern Orthodox, Catholic; the liturgy bearing his name is the ordinary rite of the Byzantine churches",
+            "role": "Archbishop of Constantinople, preacher",
+            "contribution": "The golden mouth — the greatest preacher of the ancient church, formed in the Antiochene school's literal and moral exegesis under Diodore of Tarsus. His homilies on Matthew, John, Romans and the Pauline corpus are still the fullest patristic commentary on those books. He preached relentlessly against the wealth of the capital, the games and the extravagance of the court, and it cost him: the empress Eudoxia and the Synod of the Oak, convened in 403 under Theophilus of Alexandria, deposed him. He is also the author of the eight homilies Against the Judaisers, delivered at Antioch against Christians attending synagogue, whose invective was quarried by later antisemitism — a fact stated here without extenuation and inseparable from an honest account of him.",
+            "fate": "Deposed and exiled to Cucusus in Armenia, then ordered further to Pityus on the Black Sea; died on the forced march at Comana. His relics were returned to Constantinople in 438 with an imperial apology.",
+            "quote": null
+        },
+        {
+            "slug": "ambrose",
+            "name": "Ambrose of Milan",
+            "dates": "c. 339 - 397",
+            "categories": [
+                "latin-father"
+            ],
+            "tradition": "Latin West",
+            "role": "Bishop of Milan, imperial counsellor",
+            "contribution": "Provincial governor of Aemilia-Liguria, acclaimed bishop by a divided congregation while still unbaptised, and consecrated within a week. He brought Greek theology into Latin, introduced antiphonal hymnody to the West and wrote hymns still sung, and preached the sermons that broke Augustine's intellectual resistance by showing that scripture could be read figuratively. On the Duties of the Clergy adapts Cicero to Christian ministry. He compelled the emperor Theodosius to public penance for the massacre at Thessalonica — the first time a bishop successfully disciplined an emperor, and a precedent the medieval West would use hard. Less creditably, he also pressed Theodosius not to punish the Christians who burned a synagogue at Callinicum.",
+            "fate": "Died at Milan in the small hours of 4 April 397 — Holy Saturday that year — and was buried on Easter Day, having been bishop for twenty-three years.",
+            "quote": null
+        },
+        {
+            "slug": "jerome",
+            "name": "Jerome",
+            "dates": "c. 347 - 420",
+            "categories": [
+                "latin-father"
+            ],
+            "tradition": "Latin West",
+            "role": "Translator, monk, controversialist",
+            "contribution": "Translated most of the Bible into Latin from the Hebrew and Greek rather than from the existing Latin versions — the Vulgate, which was the Bible of Western Christendom for eleven centuries and shaped its every theological term. He insisted on the hebraica veritas and on a canon that distinguished the Hebrew books from those he called apocryphal, a distinction the Reformers would revive against the church that had canonised his translation. He was a superb scholar and an appalling opponent: his quarrels with Rufinus, with Jovinian and with Augustine were vicious, and his defence of virginity disparaged marriage in terms that embarrassed his allies. He taught a circle of learned Roman women — Paula, Marcella, Eustochium — whose scholarship he acknowledged and whose money founded his monastery.",
+            "fate": "Died at Bethlehem, where he had lived for decades beside the cave of the Nativity.",
+            "quote": {
+                "text": "Ignorance of the Scriptures is ignorance of Christ.",
+                "source": "Commentary on Isaiah, prologue"
+            }
+        },
+        {
+            "slug": "augustine",
+            "name": "Augustine of Hippo",
+            "dates": "354 - 430",
+            "categories": [
+                "latin-father"
+            ],
+            "tradition": "Latin West; honoured in the East, though with reservations about his legacy",
+            "role": "Bishop of Hippo Regius in Numidia",
+            "contribution": "The most influential theologian in Western history, for good and ill. The Confessions invented the introspective autobiography. The City of God, written as the Roman world came apart, separated the church's destiny from the empire's and gave the West its theology of history. On the Trinity searched for the image of God in the structure of the mind. Against the Donatists he argued that a sacrament's validity does not depend on the minister's holiness — and, having first opposed coercion, came to endorse imperial force against them, supplying a text later used to justify the Inquisition. Against Pelagius he developed the doctrines of original sin, prevenient grace and predestination that the West debated for the next fifteen hundred years and that the Reformation reopened. He was North African, wrote in Latin, and knew little Greek.",
+            "fate": "Died at Hippo during the Vandal siege of the city, aged seventy-five.",
+            "quote": {
+                "text": "You have made us for yourself, and our heart is restless until it rests in you.",
+                "source": "Confessions I.1"
+            }
+        },
+        {
+            "slug": "john-cassian",
+            "name": "John Cassian",
+            "dates": "c. 360 - c. 435",
+            "categories": [
+                "desert",
+                "latin-father"
+            ],
+            "tradition": "Gaul; honoured as a saint in the East and at Marseille, more cautiously elsewhere in the West",
+            "role": "Monk, founder of monasteries at Marseille",
+            "contribution": "Spent years among the monks of Scetis in Egypt and then carried what he had learned to southern Gaul, founding houses for men and for women at Marseille. The Institutes give the outward form of monastic life and treat the eight principal faults — Evagrius's list, which Gregory the Great later reworked into the seven deadly sins. The Conferences present the teaching as recorded dialogues with the Egyptian elders, and are the most searching ancient analysis of prayer, discernment and the movement of thought; Benedict prescribed them to be read aloud in his monasteries. On grace he resisted Augustine's later predestinarianism while agreeing that grace is necessary — a position the late sixteenth century labelled semi-Pelagian, a term he never heard and would have rejected.",
+            "fate": "Died at Marseille. The Council of Orange in 529 rejected the position associated with him, without naming him.",
+            "quote": null
+        },
+        {
+            "slug": "cyril-of-alexandria",
+            "name": "Cyril of Alexandria",
+            "dates": "c. 376 - 444",
+            "categories": [
+                "alexandrian"
+            ],
+            "tradition": "Coptic Orthodox, Syriac Orthodox, Armenian Apostolic, Eastern Orthodox, Catholic — the Oriental Orthodox churches hold him as the touchstone of orthodox Christology and call him the Pillar of Faith and the Seal of the Fathers",
+            "role": "Pope of Alexandria",
+            "contribution": "Insisted that the one who was born of Mary and the one who is the eternal Word are one and the same subject, and therefore that Mary may rightly be called Theotokos, God-bearer — a defence of the reality of the incarnation before it is anything about Mary. His Twelve Anathemas against Nestorius and his presidency of the Council of Ephesus in 431 secured that language for the whole church. His formula 'one incarnate nature of God the Word', which he believed came from Athanasius but which derives from Apollinaris, became the charter of miaphysite Christology after Chalcedon; the Formula of Reunion he signed with the Antiochenes in 433 shows he could speak of two natures when pressed. His conduct at Ephesus — opening the council before the Syrian bishops arrived — was procedurally indefensible. His Alexandria was also the city where the philosopher Hypatia was murdered by a mob in 415; the ancient sources differ on his part in it, Socrates Scholasticus writing that the deed brought grave reproach on Cyril and his church without charging him with ordering it, and the pagan Damascius blaming him directly. What is documented is his patronage of the parabalani, whose numbers and movements an imperial law of 416 promptly restricted.",
+            "fate": "Died in office at Alexandria after thirty-two years as patriarch.",
+            "quote": null
+        },
+        {
+            "slug": "nestorius",
+            "name": "Nestorius",
+            "dates": "c. 386 - c. 451",
+            "categories": [
+                "antiochene",
+                "heresiarch"
+            ],
+            "tradition": "The Assyrian Church of the East rejects 'Nestorian' as an exonym imposed from outside; it honours the Antiochene tradition he represented, commemorates him among its teachers, and rejects the doctrine attached to his name",
+            "role": "Archbishop of Constantinople, deposed 431",
+            "contribution": "An Antiochene monk made archbishop of the capital, he objected to Theotokos as liable to suggest that the divinity itself was born, and proposed Christotokos as safer — while stating repeatedly that he did not deny that Mary's son was God. He was condemned at Ephesus in 431 by a council Cyril opened before his supporters arrived, and 'Nestorianism' — two persons in Christ, a mere conjunction — was defined and condemned as a doctrine he denied holding. The Bazaar of Heracleides, his own late defence, was found in Syriac in 1889 and published in the following decades; it shows a position much closer to Chalcedon than the charge allowed, and he is reported to have welcomed Leo's Tome. The Church of the East, which never received Ephesus, venerates Theodore of Mopsuestia as its doctor and works from Theodore's vocabulary, not from a caricature.",
+            "fate": "Deposed, exiled to Petra and then to the Great Oasis in Egypt, where he died. Much modern scholarship holds the condemnation to have been at least as much political as doctrinal.",
+            "quote": null
+        },
+        {
+            "slug": "leo-the-great",
+            "name": "Leo the Great",
+            "dates": "c. 400 - 461",
+            "categories": [
+                "latin-father"
+            ],
+            "tradition": "Latin West and Eastern Orthodox; his Tome historically rejected by the Oriental Orthodox",
+            "role": "Bishop of Rome",
+            "contribution": "His Tome to Flavian of 449 states that in Christ each nature performs what is proper to it in communion with the other — the formula the Council of Chalcedon adopted in 451, defining one person in two natures, without confusion, change, division or separation. Chalcedon's acclamation, that Peter had spoken through Leo, is cited by Rome as recognition of its teaching primacy and read by the East as praise for a particular orthodox document. He also asserted Roman jurisdiction more systematically than any predecessor, and met Attila in person in northern Italy in 452, after which the Huns withdrew — an outcome historians attribute more to plague and supply than to eloquence.",
+            "fate": "Died at Rome, having been bishop for twenty-one years. Chalcedon, which vindicated him, divided the churches of Egypt, Syria and Armenia from those of Rome and Constantinople for fifteen centuries.",
+            "quote": null
+        },
+        {
+            "slug": "severus-of-antioch",
+            "name": "Severus of Antioch",
+            "dates": "c. 465 - 538",
+            "categories": [
+                "syriac-father",
+                "antiochene"
+            ],
+            "tradition": "Syriac Orthodox, Coptic Orthodox, Armenian Apostolic — the Crown of the Syrians, chief doctor of miaphysite Christology",
+            "role": "Patriarch of Antioch, 512-518",
+            "contribution": "The intellectual architect of the miaphysite position after Chalcedon: one incarnate nature of God the Word, composite out of two, in which divinity and humanity remain distinct in contemplation but never divide into two natures in fact. Monophysite, the term long used against this position in the West, is an exonym his tradition rejects, and rightly: he was a Cyrilline to the core and condemned Eutyches as firmly as he condemned the Tome of Leo, holding that Chalcedon's 'in two natures' conceded too much to Nestorius. Against the Grammarian is his major work. Almost all his Greek was destroyed after his condemnation; he survives in Syriac translation — homilies, letters, hymns still sung in the Syriac Orthodox office. Modern Christological dialogues between the Oriental Orthodox and both the Eastern Orthodox and Rome have concluded that his position and Chalcedon's differ largely in terminology, and joint declarations to that effect have been signed.",
+            "fate": "Deposed in 518 on the accession of the emperor Justin and fled to Egypt; formally anathematised at a synod in Constantinople in 536; died in Egypt in 538.",
+            "quote": null
+        },
+        {
+            "slug": "babai-the-great",
+            "name": "Babai the Great",
+            "dates": "c. 551 - 628",
+            "categories": [
+                "syriac-father"
+            ],
+            "tradition": "Assyrian Church of the East",
+            "role": "Monastic reformer and effective head of the Church of the East during the vacancy of the patriarchate",
+            "contribution": "Governed his church for some twenty years without a catholicos, when the Persian shah refused to permit an election, and reformed its monasteries. His Book of the Union gave the Church of the East its definitive Christology: two qnome — roughly, concrete natures or hypostatic realities — in one parsopa, one person, of union: a formula built from different terms than Chalcedon's and reaching a similar refusal to confuse or divide. Read against Greek assumptions it looks like the two-person doctrine Ephesus condemned; read on its own vocabulary it is not, and the Common Christological Declaration signed by the Assyrian Church of the East and Rome in 1994 acknowledged as much. He remains the standard by which that church measures orthodoxy.",
+            "fate": "Died in 628, shortly before a new catholicos could be elected; the tradition says he had declined the office himself.",
+            "quote": null
+        },
+        {
+            "slug": "maximus-the-confessor",
+            "name": "Maximus the Confessor",
+            "dates": "c. 580 - 662",
+            "categories": [
+                "mystic"
+            ],
+            "tradition": "Eastern Orthodox and Catholic",
+            "role": "Monk, theologian, confessor",
+            "contribution": "His origins are contested: the Greek Life makes him a senior imperial secretary who left the court for the cloister, while a hostile Syriac life makes him a Palestinian monk from the start. What is not contested is that he became the decisive opponent of monothelitism — the imperial compromise proposing one will in Christ, designed to win back the miaphysite provinces. Maximus argued that a nature without a will is not a nature, so that Christ must have a human will as well as a divine, freely conformed in Gethsemane; the Sixth Ecumenical Council vindicated him nearly twenty years after his death. The Ambigua and the Chapters on Love synthesise Origen, the Cappadocians and Dionysius into a vision of the cosmos gathered up in Christ, and his doctrine of the logoi — the divine intentions constituting each created thing — has become central to modern Orthodox theology. He was a monk holding no office who defied an emperor, made common cause with Pope Martin I, who was arrested with him, and was proved right by a council neither lived to see.",
+            "fate": "Tried at Constantinople and, after refusing to accept the imperial formula, had his tongue and right hand cut off according to the accounts of his last trial — the instruments of his speech and his writing — before being exiled to Lazica, where he died within months.",
+            "quote": null
+        },
+        {
+            "slug": "isaac-of-nineveh",
+            "name": "Isaac of Nineveh",
+            "dates": "seventh century, fl. c. 660-680",
+            "categories": [
+                "syriac-father",
+                "mystic"
+            ],
+            "tradition": "Church of the East by birth and ordination; read and revered as a saint by the Eastern Orthodox, who long did not know his church of origin, and by the Coptic and Syriac Orthodox",
+            "role": "Bishop of Nineveh for five months, then solitary",
+            "contribution": "Resigned his see after five months and withdrew to the mountains of Khuzistan, where he wrote the Ascetical Homilies. They are the tenderest ascetic writing of the Christian East: on the merciful heart that burns for the whole of creation, for the reptiles and the enemies of truth alike; on tears; on despair as a temptation rather than a verdict. He held that God's love is one and unchanging, and that what is called hell is the scourge of that same love felt by those who have refused it — and, in the Second Part recovered from a Bodleian manuscript and published in 1995, that the punishment is not everlasting. Translated into Greek at the monastery of Mar Sabas, he entered the Byzantine tradition without his readers realising he belonged to a church they had anathematised. He is the strongest single argument against reading the Christian past by its dividing lines.",
+            "fate": "Died blind in the monastery of Rabban Shabur, the Syriac sources saying he had worn out his eyes with reading.",
+            "quote": null
+        },
+        {
+            "slug": "john-of-damascus",
+            "name": "John of Damascus",
+            "dates": "c. 675 - 749",
+            "categories": [
+                "syriac-father"
+            ],
+            "tradition": "Eastern Orthodox, Catholic; reckoned the last of the Greek Fathers",
+            "role": "Monk of Mar Sabas, hymnographer, from a family of officials under the Umayyads",
+            "contribution": "His family, the Mansur of Damascus, served in the fiscal administration of the caliphate, and the tradition places him in that service before he entered the monastery of Mar Sabas near Jerusalem — writing under Muslim rule, which put him beyond the reach of the iconoclast emperors he attacked. His three Treatises against those who attack the Divine Images made the decisive argument: matter is not to be despised, since God took matter, and honour paid to the image passes to its prototype. The Fount of Knowledge, whose third part is On the Orthodox Faith, systematised the whole Greek patristic inheritance and, translated into Latin in the twelfth century, gave the scholastics their access to it. His chapter on the Ishmaelites is among the earliest Christian descriptions of Islam, written by a man who lived his whole life among Muslims. He also composed a great deal of the Byzantine liturgical hymnody still in use.",
+            "fate": "Died at Mar Sabas. Anathematised by the iconoclast Council of Hieria in 754 and vindicated by the Second Council of Nicaea in 787.",
+            "quote": null
+        },
+        {
+            "slug": "egeria",
+            "name": "Egeria",
+            "dates": "fl. 381-384",
+            "categories": [
+                "woman"
+            ],
+            "tradition": "Western, probably from Gallaecia or southern Gaul",
+            "role": "Pilgrim and letter-writer",
+            "contribution": "A woman of some means, probably a nun or the head of a religious community, who travelled from the far west of the empire to Egypt, Sinai, Palestine, Syria and Constantinople and wrote home about it. The manuscript, discovered incomplete at Arezzo in 1884, is the earliest detailed account of Christian pilgrimage and by far the best evidence for how the liturgy was celebrated in fourth-century Jerusalem — the daily offices, the Holy Week processions, the Good Friday veneration of the wood of the cross, the catechesis of the newly baptised. Much of modern Western Holy Week descends from what she saw and described. Her Latin is unliterary and vivid, her curiosity indiscriminate, and she climbs Sinai at speed. She also visited Thecla's shrine at Seleucia and found there an old friend, the deaconess Marthana, running a community of women.",
+            "fate": "Unknown; the manuscript breaks off at both ends.",
+            "quote": null
+        },
+        {
+            "slug": "marcion",
+            "name": "Marcion of Sinope",
+            "dates": "c. 85 - c. 160",
+            "categories": [
+                "heresiarch"
+            ],
+            "tradition": "Marcionite churches, which persisted in the East for centuries",
+            "role": "Shipowner, teacher, founder of a rival church",
+            "contribution": "Taught that the God of the Hebrew scriptures — just, jealous, the maker of this world — was a lesser being than the wholly good and previously unknown Father revealed by Jesus, who had no part in creation. He accordingly rejected the Old Testament entirely, and assembled a canon of one gospel, a shortened Luke, and ten letters of Paul, editing out what he judged Judaising interpolation. This was very probably the first Christian canon, and the mainstream response to it accelerated the fixing of the fourfold gospel and the wider apostolic collection — the church defined its scriptures partly against him. He organised real churches with bishops and sacraments across the empire, and his followers were noted for asceticism and for producing martyrs. Nothing of his own writing survives; he is known through Tertullian's five books against him and other hostile sources.",
+            "fate": "Excommunicated at Rome around 144, his large donation returned to him. Marcionite communities survived in the East for centuries; the last are reported to have been absorbed into Manichaeism.",
+            "quote": null
+        },
+        {
+            "slug": "valentinus",
+            "name": "Valentinus",
+            "dates": "c. 100 - c. 175; taught at Rome c. 136-165",
+            "categories": [
+                "heresiarch"
+            ],
+            "tradition": "Valentinian schools, Eastern and Western branches",
+            "role": "Alexandrian teacher at Rome, poet",
+            "contribution": "The most sophisticated of the teachers the heresiologists grouped as Gnostic, and by Tertullian's hostile report a candidate for the Roman episcopate who left the church when passed over. The Valentinian systems describe a fullness of divine aeons, a fall within it through Sophia's presumption, the resulting production of the material world by a lesser craftsman, and the salvation of the spiritual element in humanity through knowledge. His pupils — Ptolemy, Heracleon, Theodotus — wrote the first Christian commentaries on scripture, Heracleon on John. The Gospel of Truth, found at Nag Hammadi and plausibly his, is a meditation of real beauty on the terror of ignorance and the joy of being found. Nag Hammadi complicated the older picture considerably: some of what Irenaeus reported proved accurate, some proved systematised polemic.",
+            "fate": "Left Rome and effectively disappears from the record; Epiphanius, writing much later, says he ended in Cyprus. His school flourished for two centuries.",
+            "quote": null
+        },
+        {
+            "slug": "arius",
+            "image": "d5f691ac2cc3e7dbefdf26355d1c7977.webp",
+            "imageAlt": "Two men facing each other across the aisle of a great basilica packed with seated bishops, an emperor enthroned in the far distance",
+            "imageCaption": "Nicaea, 325: the presbyter and his opponents across the aisle, with the emperor at the end of the hall. Almost nothing Arius wrote survives except in the quotations of the men who beat him.",
+            "name": "Arius",
+            "dates": "c. 256 - 336",
+            "categories": [
+                "heresiarch"
+            ],
+            "tradition": "Homoian and other subordinationist churches, dominant among the Germanic peoples for some three centuries",
+            "role": "Presbyter of the Baucalis church in Alexandria",
+            "contribution": "Taught that the Son is the first and greatest of all creatures, brought into being by the Father's will before time and out of nothing, so that — in the slogan that carried the argument into the streets — there was when he was not. His motive was to protect the absolute uniqueness and unbegottenness of God, and his position was neither novel nor obviously outside the existing range of Christian opinion; a great many Eastern bishops preferred it to homoousios for decades after Nicaea. He wrote the Thalia, a popular verse work, and songs that made the controversy a mass phenomenon. What survives of his own writing amounts to a few letters and to quotations preserved by opponents. The Gothic, Vandal and Lombard kingdoms held a subordinationist creed for generations through Ulfilas's mission, and 'Arian' is largely a label affixed by the victorious party to a range of positions, several of which Arius himself never held.",
+            "fate": "Condemned at Nicaea in 325, exiled, later recalled; died suddenly in Constantinople in 336, on the eve of a scheduled readmission to communion. The lurid account of his death is preserved chiefly by Athanasius, who was not a disinterested reporter.",
+            "quote": null
+        },
+        {
+            "slug": "pelagius",
+            "name": "Pelagius",
+            "dates": "c. 354 - c. 420",
+            "categories": [
+                "heresiarch"
+            ],
+            "tradition": "British by the ancient reports; taught at Rome",
+            "role": "Ascetic teacher and moral reformer",
+            "contribution": "An austere lay teacher who was appalled by the moral slackness of Christian Rome and by Augustine's prayer that God should give what he commands and command what he wills, which Pelagius thought made God the author of an impossible demand and excused the comfortable. He taught that God would not command what human beings could not do, that grace includes creation, free will, the law and the example of Christ, and that sin is imitated rather than inherited. His commentary on the Pauline epistles survives, transmitted for centuries under other names, and modern scholarship generally finds the historical Pelagius less extreme than 'Pelagianism' as constructed by his opponents; his pupil Caelestius pressed the positions much further. African councils, Augustine's relentless campaign and finally an imperial rescript secured his condemnation, after the eastern synod of Diospolis had acquitted him in 415.",
+            "fate": "Excommunicated in 418 and expelled from Rome; his death is unrecorded. The Council of Ephesus condemned Pelagianism in 431.",
+            "quote": null
+        },
+        {
+            "slug": "priscillian",
+            "name": "Priscillian of Ávila",
+            "dates": "c. 340 - 385",
+            "categories": [
+                "heresiarch",
+                "martyr"
+            ],
+            "tradition": "Gallaecia and Lusitania; his movement survived in north-western Spain until condemned again at Braga in 561",
+            "role": "Bishop of Ávila, ascetic reformer",
+            "contribution": "Led a rigorous ascetic movement of laypeople and clergy in Spain — fasting, night vigils, retreat to country estates for study, and the reading of apocryphal scriptures, with women participating as teachers. His opponents charged Manichaeism and sorcery; the treatises recovered at Würzburg in 1885, generally accepted as his or his circle's, show an ascetic biblicism of an unusual cast rather than the dualism alleged. He appealed to the imperial court against his episcopal accusers and was tried at Trier before the usurper Magnus Maximus on a charge of maleficium — sorcery, a capital crime under Roman law — and executed with several companions. He is the first Christian put to death by the state at the instance of churchmen for heresy. Martin of Tours and Ambrose both protested the resort to the secular sword, and Martin refused communion with the bishops who had procured it.",
+            "fate": "Beheaded at Trier in 385, with several companions. His body was returned to Spain and venerated as a martyr's; some scholars have proposed, without proof, that the shrine at Compostela is his.",
+            "quote": null
+        },
+        {
+            "slug": "photius",
+            "name": "Photius the Great",
+            "dates": "c. 815 - c. 893",
+            "categories": [
+                "apologist"
+            ],
+            "tradition": "Eastern Orthodox; a saint of the Byzantine churches, long treated in the West as the author of a schism",
+            "role": "Patriarch of Constantinople, scholar, diplomat",
+            "contribution": "The most learned man of the Byzantine middle ages. The Bibliotheca summarises and quotes some two hundred and eighty books he had read, many of which survive only in his summaries. As patriarch he was contested by Rome from the beginning — a layman raised to the see in a week — and his Mystagogy of the Holy Spirit made the classic Eastern case against the Filioque: that the Spirit proceeds from the Father alone, and that the Latin addition to the creed was both unauthorised and theologically confused. The mission of Cyril and Methodius to the Slavs was dispatched during his patriarchate and with his close involvement, and brought Slavonic Christianity into being with its own alphabet and liturgical language. The 'Photian schism' was healed in his lifetime by the council of 879-880, which some in the East number among the ecumenical councils and the West does not; the substantive disagreement outlived the personal quarrel.",
+            "fate": "Deposed twice in the factional politics of the capital, restored, and finally retired to a monastery, where he died.",
+            "quote": null
+        },
+        {
+            "slug": "gregory-palamas",
+            "name": "Gregory Palamas",
+            "dates": "1296 - 1359",
+            "categories": [
+                "mystic"
+            ],
+            "tradition": "Eastern Orthodox; his theology is dogma for the Byzantine churches and has no exact Western counterpart",
+            "role": "Archbishop of Thessalonica, Athonite monk",
+            "contribution": "Defended the hesychast monks of Athos, who practised the Jesus Prayer with attention to breath and posture and claimed to see the uncreated light of Tabor, against the Calabrian philosopher Barlaam, who thought this crude and God's essence unknowable in a way that made such experience impossible. Palamas answered with the distinction between the divine essence, which no creature can share, and the divine energies, which are God himself as he gives himself and can be genuinely participated — so that deification is real union with God, not a metaphor. The Triads in Defence of the Holy Hesychasts is the major statement. Councils at Constantinople in 1341, 1347 and 1351 upheld him, and the second Sunday of Lent commemorates him.",
+            "fate": "Excommunicated and imprisoned during the civil war of the 1340s, then vindicated and made archbishop of Thessalonica; spent about a year as a captive of the Ottomans, disputing courteously with Muslim scholars, and was ransomed. Died at Thessalonica.",
+            "quote": null
+        },
+        {
+            "slug": "hildegard-of-bingen",
+            "image": "07c36eba65579c7242d9294e51d053cf.webp",
+            "imageAlt": "An elderly nun looking up from a cosmological diagram she is drawing, two sisters writing behind her, herbs, mortars and a psaltery around the workroom",
+            "imageCaption": "The abbess at her work: cosmology on the sheet, simples drying on the shelf, a psaltery against the wall — visionary, physician and composer in one working life.",
+            "name": "Hildegard of Bingen",
+            "dates": "1098 - 1179",
+            "categories": [
+                "woman",
+                "mystic"
+            ],
+            "tradition": "Latin West; Benedictine; named a Doctor of the Church in 2012",
+            "role": "Magistra of Rupertsberg, visionary, composer, natural philosopher",
+            "contribution": "Given to the church as a child and enclosed with the anchoress Jutta, she began at forty-two to record visions she had known since infancy; Pope Eugenius III examined and approved them at Trier a few years later, in 1147-48, and her authority in the wider church dates from that. Scivias, the Book of Life's Merits and the Book of Divine Works form a visionary theology organised around viriditas, the greening life-force running through creation. She composed some seventy-seven liturgical songs of soaring, unusual melodic range and the Ordo Virtutum, the earliest surviving morality play with music. She wrote works of medicine and natural history, invented a private language, corresponded with popes, emperors and Bernard of Clairvaux, preached publicly on tour in the Rhineland — extraordinary for a woman — and rebuked Frederick Barbarossa in writing.",
+            "fate": "Died at Rupertsberg at eighty-one. In her last year her community was placed under interdict for burying an excommunicate in their churchyard; she refused to yield the body, and the interdict was lifted a few months before her death.",
+            "quote": null
+        },
+        {
+            "slug": "francis-of-assisi",
+            "name": "Francis of Assisi",
+            "dates": "1181/2 - 1226",
+            "categories": [
+                "mystic",
+                "reformer"
+            ],
+            "tradition": "Latin West; founder of the Friars Minor",
+            "role": "Founder, deacon, poor man of Assisi",
+            "contribution": "A cloth merchant's son who renounced his inheritance in the square at Assisi, stripping before the bishop, and took absolute poverty as a form of life — not as a discipline for a monastery with lands, but as literal destitution among the poor, working or begging. The order that grew around him became one of the largest religious movements in Europe within his lifetime and was already, before his death, negotiating away the poverty he had demanded, a conflict that would tear the Franciscans apart for a century. He crossed the lines at Damietta during the Fifth Crusade to preach to Sultan al-Kamil and returned unharmed — an episode reported by Jacques de Vitry, who was in the crusader camp at the time, and elaborated by later Franciscan writers. He wrote the Canticle of the Creatures in the Umbrian vernacular, addressing sun, water, fire and death as kin, and is reported by his companions to have received the stigmata on La Verna two years before he died.",
+            "fate": "Died at the Portiuncula, blind and ill, asking to be laid on the bare ground. Canonised within two years.",
+            "quote": null
+        },
+        {
+            "slug": "thomas-aquinas",
+            "name": "Thomas Aquinas",
+            "dates": "1225 - 1274",
+            "categories": [
+                "mystic",
+                "apologist"
+            ],
+            "tradition": "Latin West; Dominican; Doctor of the Church",
+            "role": "Master of theology at Paris, Italy and Naples",
+            "contribution": "A nobleman's son whose family imprisoned him for about a year to stop him joining the mendicant Dominicans. He took the newly available Aristotle — suspect, twice banned at Paris, arriving through Arabic commentators — and built with it a theology in which grace perfects rather than destroys nature and in which reason and revelation cannot finally conflict. The Summa Theologiae organises the whole of Christian doctrine as a movement out from God and back to God; the Summa contra Gentiles argues, through its first three books, without appeal to scriptural authority. He engaged Avicenna, Averroes and Maimonides seriously, as thinkers. He also wrote the office and hymns for Corpus Christi — Pange lingua, whose last stanzas are the Tantum ergo, and Verbum supernum, whose last stanzas are the O salutaris — so that the most rigorous mind of the age is also on the lips of anyone at Benediction. Adoro te devote is traditionally ascribed to him, though the ascription is not secure.",
+            "fate": "After an experience while saying Mass in December 1273 he stopped writing, leaving the Summa unfinished, and is reported by his companion Reginald to have said that all he had written seemed like straw. He died three months later on the road to the Council of Lyon.",
+            "quote": null
+        },
+        {
+            "slug": "julian-of-norwich",
+            "name": "Julian of Norwich",
+            "dates": "c. 1343 - after 1416",
+            "categories": [
+                "woman",
+                "mystic"
+            ],
+            "tradition": "Latin West, English; an anchoress, never formally canonised, commemorated by Anglicans and Lutherans and widely honoured among Catholics",
+            "role": "Anchoress of St Julian's, Norwich",
+            "contribution": "In May 1373, at thirty and expected to die, she received sixteen showings and recovered. She wrote a short account and then, after twenty years of reflection, a long one: the Revelations of Divine Love, the earliest surviving book in English known to be by a woman. Its theology is startling and carefully orthodox — she reports being shown that there is no wrath in God, works patiently at the problem of sin and judgement without pretending to resolve it, and develops at length the motherhood of Christ, who bears us in pain and feeds us with himself. Her hazelnut, small as it is, holds all that is made. She lived through the Black Death, the Peasants' Revolt, and the first burnings for heresy in England under the statute of 1401, and wrote a book about love.",
+            "fate": "Lived on in her cell beside the church of St Julian; Margery Kempe visited her for counsel around 1413, and a will of 1416 shows her still alive. The date of her death is unknown.",
+            "quote": {
+                "text": "All shall be well, and all shall be well, and all manner of thing shall be well.",
+                "source": "Revelations of Divine Love, chapter 27"
+            }
+        },
+        {
+            "slug": "catherine-of-siena",
+            "name": "Catherine of Siena",
+            "dates": "1347 - 1380",
+            "categories": [
+                "woman",
+                "mystic"
+            ],
+            "tradition": "Latin West; Dominican tertiary; Doctor of the Church",
+            "role": "Mystic, nurse, political envoy",
+            "contribution": "Born a twin, and among the last of the twenty-odd children of a Sienese wool-dyer, she refused marriage, lived some years in silence in a room of her family's house, then emerged to nurse plague victims and lepers and to gather a following of men and women who called her mamma. She dictated the Dialogue — she is generally held to have learned to write only late — and the three hundred and eighty-odd surviving letters were dictated too, to secretaries who sometimes could not keep pace. She wrote to popes, queens and condottieri in the second person singular and told them what to do. She travelled to Avignon in 1376 and pressed Gregory XI to return the papacy to Rome, which he did the following year, for reasons in which her advocacy was one among several.",
+            "fate": "Died at Rome at thirty-three, having eaten almost nothing for months, in grief at the Great Schism that opened in 1378 and to which her own campaign had unwittingly contributed. Declared Doctor of the Church in October 1970, a week after Teresa of Ávila — the first two women so named.",
+            "quote": null
+        },
+        {
+            "slug": "teresa-of-avila-and-john-of-the-cross",
+            "name": "Teresa of Ávila and John of the Cross",
+            "dates": "Teresa 1515-1582; John 1542-1591",
+            "categories": [
+                "woman",
+                "mystic",
+                "reformer"
+            ],
+            "tradition": "Latin West, Spanish; Discalced Carmelites; both Doctors of the Church",
+            "role": "Reformers of Carmel and the two great writers on Spanish contemplative prayer",
+            "contribution": "Teresa was of converso descent — her grandfather a Jew reconciled by the Inquisition at Toledo, a fact that shadowed her whole career — and spent some twenty years in a comfortable, worldly convent before a conversion in her late thirties, after which she founded reformed houses across Castile in the teeth of ecclesiastical and civil opposition. The Interior Castle maps the soul as a crystal castle of seven dwellings and is the most systematic account of contemplative prayer written by anyone who had actually made the journey; the Life and the Way of Perfection are its companions. She wrote under Inquisitorial scrutiny, with humour, irony and a constant strategic self-deprecation about being a mere woman. John, the young friar she recruited to the reform, was one of the greatest lyric poets in the Spanish language: the Spiritual Canticle, the Dark Night and the Living Flame of Love are poems first, with prose commentaries attached at his readers' request. His doctrine is the via negativa made practical — the nights of sense and spirit strip the soul of everything it can grasp, including consolation in prayer and every idea of God, because nothing created is God. The dark night is his, and describes not depression but the withdrawal of felt grace as an act of grace.",
+            "fate": "Teresa died at Alba de Tormes on a founding journey and was canonised in 1622; in September 1970 she became the first woman named a Doctor of the Church. John was imprisoned by his own unreformed brethren at Toledo from December 1577, in a cell some ten feet by six, and escaped through a window nine months later with the poems in his head; later stripped of office by his own reformed order in a faction fight, he died of an infection at Úbeda at forty-nine.",
+            "quote": null
+        },
+        {
+            "slug": "john-wycliffe",
+            "name": "John Wycliffe",
+            "dates": "c. 1328 - 1384",
+            "categories": [
+                "reformer"
+            ],
+            "tradition": "England; the Lollards; claimed by later Protestantism as the Morning Star of the Reformation",
+            "role": "Oxford theologian, priest",
+            "contribution": "Argued that authority derives from grace and that a church in sin forfeits its dominion — a doctrine congenial to an English crown eyeing ecclesiastical wealth, which protected him for years. He attacked transubstantiation as philosophically incoherent, held scripture to be the sole final authority, and inspired the first complete English Bible, translated by his circle from the Vulgate; how much of the translating was his own is unclear. His followers were called Lollards, a term of abuse before it was a name, and they took his ideas into the vernacular and into the countryside, where they persisted underground for a century and a half. Jan Hus read him closely and defended him; through Hus he reached the Bohemian reformation and, indirectly, Luther.",
+            "fate": "Died of a stroke in his parish at Lutterworth. The Council of Constance condemned him in 1415; in 1428 his body was exhumed on papal order, burned, and the ashes thrown into the River Swift.",
+            "quote": null
+        },
+        {
+            "slug": "jan-hus",
+            "name": "Jan Hus",
+            "dates": "c. 1372 - 1415",
+            "categories": [
+                "reformer",
+                "martyr"
+            ],
+            "tradition": "Bohemia; Hussite and later Moravian churches; a national figure in Czech memory",
+            "role": "Rector of Charles University, preacher at the Bethlehem Chapel",
+            "contribution": "Preached in Czech to enormous congregations against clerical wealth, simony and the sale of indulgences, drawing on Wycliffe while dissenting from him on the eucharist, where Hus did not deny transubstantiation. He argued that an unworthy pope need not be obeyed and that Christ, not Peter's successor, is the church's head. Tradition also credits him with the diacritic reform of Czech orthography, though the attribution is now questioned. His followers demanded communion in both kinds for the laity — the chalice became their emblem — and after his death the Bohemian lands rose and defeated successive crusades sent against them. The Unitas Fratrum descends from that movement, and through it the Moravians, who in turn shaped Wesley.",
+            "fate": "Travelled to the Council of Constance under a written safe-conduct from the emperor Sigismund, was arrested, tried and burned at the stake on 6 July 1415, his ashes thrown into the Rhine. John Paul II expressed deep regret for his death in 1999.",
+            "quote": null
+        },
+        {
+            "slug": "martin-luther",
+            "name": "Martin Luther",
+            "dates": "1483 - 1546",
+            "categories": [
+                "reformer"
+            ],
+            "tradition": "Lutheran churches; the whole Protestant world stands downstream",
+            "role": "Augustinian friar, professor of biblical theology at Wittenberg",
+            "contribution": "His Ninety-Five Theses of 1517 attacked the indulgence trade; within four years the argument had become one about authority, and he was refusing to recant before the emperor at Worms. The doctrine at its centre is justification by faith alone: the sinner is declared righteous by God's promise received in trust, not by anything achieved. He translated the Bible into a German that did much to shape the modern literary language, wrote catechisms for households, restored congregational singing with hymns he composed, married a former nun and made the parsonage a Protestant institution. He also wrote On the Jews and Their Lies in 1543, a text of murderous antisemitism later quarried by the Nazis and formally repudiated by Lutheran bodies worldwide; and he urged the princes to crush the rebelling peasants of 1525 in the harshest terms.",
+            "fate": "Excommunicated and outlawed by the empire in 1521; sheltered at the Wartburg, then lived openly at Wittenberg for the rest of his life and died at Eisleben, the town of his birth.",
+            "quote": null
+        },
+        {
+            "slug": "huldrych-zwingli",
+            "name": "Huldrych Zwingli",
+            "dates": "1484 - 1531",
+            "categories": [
+                "reformer"
+            ],
+            "tradition": "Reformed; Zurich",
+            "role": "People's priest at the Grossmünster, Zurich",
+            "contribution": "Began reforming Zurich independently of Luther, working from Erasmus's Greek New Testament and preaching straight through books of the Bible instead of the lectionary. He pushed further and faster than Wittenberg on images, which he had removed from the churches, and on the Mass, which Zurich replaced with a plain supper celebrated four times a year. At the Marburg Colloquy in 1529 he and Luther agreed on fourteen articles and split irreparably on the fifteenth: Zwingli held Christ's presence in the supper to be spiritual and the words 'this is my body' to be a figure, Luther insisted on the plain sense of the verb. The division has never fully closed. He was also a Swiss patriot who had served as an army chaplain and who defended the magistrate's role in reform against the Anabaptists, several of whom Zurich drowned.",
+            "fate": "Killed at the battle of Kappel while with the Zurich forces; his body was quartered and burned by the victorious Catholic cantons.",
+            "quote": null
+        },
+        {
+            "slug": "john-calvin",
+            "name": "John Calvin",
+            "dates": "1509 - 1564",
+            "categories": [
+                "reformer"
+            ],
+            "tradition": "Reformed and Presbyterian churches",
+            "role": "Pastor and theologian at Geneva",
+            "contribution": "A French humanist lawyer whose Institutes of the Christian Religion, first published at twenty-six and expanded across successive editions, is the most orderly systematic theology the Reformation produced — organised around the knowledge of God and of ourselves, and running from providence through Christ to the church. He built at Geneva a model of church order with pastors, doctors, elders and deacons, and a consistory that disciplined morals; the city became a refuge for exiles who carried the model to Scotland, the Netherlands, France, England and eventually New England. His doctrine of predestination follows Augustine's and is less central to his own work than to his successors'. He consented to the execution of Michael Servetus for anti-Trinitarianism in 1553, having urged beheading rather than burning — an act defended in his own century and regretted by Reformed bodies since, who raised an expiatory monument at Champel in 1903.",
+            "fate": "Died at Geneva of exhaustion and multiple illnesses at fifty-four, and was buried, at his own request, in an unmarked grave.",
+            "quote": null
+        },
+        {
+            "slug": "menno-simons",
+            "name": "Menno Simons",
+            "dates": "c. 1496 - 1561",
+            "categories": [
+                "reformer"
+            ],
+            "tradition": "Anabaptist; the Mennonite churches take their name from him",
+            "role": "Former Catholic priest, itinerant elder among the Anabaptists",
+            "contribution": "Left the priesthood in 1536 and gave the rest of his life to gathering the scattered, hunted Anabaptists of the Low Countries after the catastrophe at Münster, where a violent apocalyptic faction had seized a city and been destroyed. His achievement was to establish a peaceable Anabaptism: believers' baptism on confession of faith, a church separated from the state, refusal of the oath and of the sword, and discipline within a voluntary community. The Foundation of Christian Doctrine is his major work. Anabaptists were executed by Catholic, Lutheran and Reformed authorities alike — drowned, burned, beheaded — and the Martyrs Mirror records them; the tradition's peace witness has outlasted every state that persecuted it.",
+            "fate": "Died in his bed at Wüstenfelde in Holstein, having lived for decades with a price on his head and never been captured.",
+            "quote": null
+        },
+        {
+            "slug": "thomas-cranmer",
+            "name": "Thomas Cranmer",
+            "dates": "1489 - 1556",
+            "categories": [
+                "reformer",
+                "martyr"
+            ],
+            "tradition": "Church of England; the Anglican Communion worldwide",
+            "role": "Archbishop of Canterbury",
+            "contribution": "Made archbishop to annul Henry VIII's marriage, and used the position over twenty-three years to give England a vernacular liturgy of extraordinary literary power. The Books of Common Prayer of 1549 and 1552 — the collects, the marriage and burial rites, the general confession — shaped English prose as deeply as the Authorised Version and remain in use across the Communion. He compiled the Forty-Two Articles, ancestor of the Thirty-Nine, and moved steadily from a Lutheran to a broadly Reformed eucharistic theology while retaining episcopacy and a liturgical shape. He was a cautious man who served a violent king and did not always speak when he should have.",
+            "fate": "Under Mary I he was tried for heresy and recanted repeatedly under pressure. At the stake at Oxford on 21 March 1556 he repudiated the recantations and held his right hand — the hand that had signed them — into the flame first; the detail comes from Foxe, whose partisanship is plain, but is corroborated by an independent contemporary account.",
+            "quote": null
+        },
+        {
+            "slug": "george-fox",
+            "name": "George Fox",
+            "dates": "1624 - 1691",
+            "categories": [
+                "reformer",
+                "mystic"
+            ],
+            "tradition": "Religious Society of Friends (Quakers)",
+            "role": "Founder of the Quaker movement",
+            "contribution": "A Leicestershire weaver's son, apprenticed to a shoemaker, who walked the English midlands in the 1640s finding no minister who could speak to his condition, until he came to trust an inward voice and began preaching that Christ is present to teach his people himself — the inward light in every person, needing no priest, no steeple-house and no sacrament of water or bread. Friends met in silence and spoke when moved. From this followed the refusals that defined them: of oaths, of hat-honour and titles, of tithes, and of all war, set down in the declaration presented to Charles II in the winter of 1660-61 as a testimony they would never abandon. Margaret Fell, who later married him, organised the movement and wrote its defence of women's preaching. Friends became, in the century after him, among the earliest and most persistent abolitionists, having first had to reckon with slaveholders among themselves.",
+            "fate": "Imprisoned repeatedly, for some six years in total, in conditions that broke his health. Died in London.",
+            "quote": null
+        },
+        {
+            "slug": "john-wesley",
+            "name": "John Wesley",
+            "dates": "1703 - 1791",
+            "categories": [
+                "reformer",
+                "modern"
+            ],
+            "tradition": "Methodist churches; he died an Anglican priest and never left the Church of England",
+            "role": "Anglican priest, itinerant preacher, organiser",
+            "contribution": "After a failed mission to Georgia and an encounter with Moravians in a storm at sea, he found at a meeting in Aldersgate Street in 1738 the assurance he had lacked, and spent the next five decades riding what tradition reckons a quarter of a million miles to preach in fields, at pitheads and in market squares. The organisation was the genius: societies, classes of a dozen meeting weekly for mutual examination, lay preachers, a connexional structure and an annual conference. He preached Christian perfection — that grace can actually make people holy in this life — against the Calvinist wing led by his friend Whitefield, and the two divided without ceasing to love each other. His brother Charles's hymns carried the doctrine. One of his last letters, written days before his death, encouraged Wilberforce against the slave trade.",
+            "fate": "Died in London at eighty-seven. The Methodists separated from the Church of England in the years after his death, largely over his own decision to ordain preachers for America.",
+            "quote": null
+        },
+        {
+            "slug": "soren-kierkegaard",
+            "name": "Søren Kierkegaard",
+            "dates": "1813 - 1855",
+            "categories": [
+                "modern"
+            ],
+            "tradition": "Danish Lutheran, in bitter opposition to the established Danish church",
+            "role": "Writer, philosopher, self-described religious poet",
+            "contribution": "Wrote through pseudonyms — Johannes de Silentio, Johannes Climacus, Anti-Climacus — staging incompatible positions so that readers would have to choose rather than be persuaded. Fear and Trembling on Abraham and the suspension of the ethical; The Sickness unto Death on despair as a misrelation of the self; the Concluding Unscientific Postscript on truth as subjectivity and the impossibility of a system that includes the existing thinker. Alongside these he published signed devotional discourses under his own name. His target was Christendom: the assumption that being born in a Christian nation makes one a Christian, which he thought had abolished the very thing it claimed. The last year of his life was an open assault on the Danish state church in a pamphlet he wrote and published himself. Existentialism and dialectical theology are both unthinkable without him.",
+            "fate": "Collapsed in the street and died in hospital at forty-two, having spent the last of his inheritance on the pamphlets, and having refused communion on his deathbed from a clergyman of the state church.",
+            "quote": null
+        },
+        {
+            "slug": "william-seymour",
+            "image": "cae584688189abcd7f8931ecc799fe56.webp",
+            "imageAlt": "A crowded wooden mission hall by lamplight, Black and white worshippers together, hands raised, a man praying bowed over a packing-crate pulpit, a fiddler at the back",
+            "imageCaption": "Azusa Street, 1906: a packing crate for a pulpit, and a room integrated at a time when almost no American room was — the fact contemporaries found hardest to report calmly.",
+            "name": "William J. Seymour",
+            "dates": "1870 - 1922",
+            "categories": [
+                "modern"
+            ],
+            "tradition": "Pentecostal; the Azusa Street Revival is the fountainhead of a movement now numbering in the hundreds of millions",
+            "role": "Preacher, leader of the Apostolic Faith Mission, Los Angeles",
+            "contribution": "The son of formerly enslaved parents in Louisiana, blind in one eye from smallpox, he learned the doctrine of Spirit baptism from Charles Parham in Houston — obliged by segregation law to listen from outside the classroom door. In April 1906 the meetings he was leading in Los Angeles broke out in tongues and moved to a former African Methodist Episcopal building at 312 Azusa Street, where services ran almost continuously for three years. Black, white, Latino and Asian worshippers, women and men, preached and prayed together in a segregated city; Frank Bartleman, who was present, wrote that the colour line had been washed away in the blood. Missionaries left Azusa for the world within months. Seymour held the interracial character of the revival to be itself the evidence of the Spirit, more than tongues — and said so when white leaders, Parham among them, withdrew to form separate denominations.",
+            "fate": "Died of a heart attack in Los Angeles, his mission reduced to a small congregation, largely written out of the movement's early histories and restored to them by scholarship since the 1970s.",
+            "quote": null
+        },
+        {
+            "slug": "simon-kimbangu",
+            "name": "Simon Kimbangu",
+            "dates": "1887 - 1951",
+            "categories": [
+                "modern"
+            ],
+            "tradition": "Kimbanguist Church (Église de Jésus-Christ sur la terre par son envoyé spécial Simon Kimbangu), one of the largest African-initiated churches and a member of the World Council of Churches since 1969",
+            "role": "Baptist catechist; in his church's confession, the special envoy of Jesus Christ",
+            "contribution": "A Baptist mission catechist in the Belgian Congo who, on 6 April 1921 at Nkamba, laid hands on a sick woman and, in the account his church holds, healed her at the command of Christ. Thousands came; the mission stations emptied; workers left the colonial plantations to walk to Nkamba, which his followers call the New Jerusalem. His movement's own account presents him as the envoy sent to the Kongo people in fulfilment of prophecy, preaching monogamy, the renunciation of charms and ritual objects, sobriety and the reading of scripture in Kikongo. The colonial record presents him as a threat to public order and to the labour supply: after a few months of ministry the Belgian administration arrested him, and a military court sentenced him to death for sedition — a sentence commuted by King Albert I to life imprisonment. His church, legally recognised only in 1959, now numbers in the millions across central Africa.",
+            "fate": "Imprisoned at Elisabethville, now Lubumbashi, for thirty years, and died there in 1951, having preached publicly for barely half a year. His body was returned to Nkamba in 1960.",
+            "quote": null
+        }
+    ]
+};
