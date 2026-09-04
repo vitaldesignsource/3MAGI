@@ -9,7 +9,7 @@ const loadCourse = async (lang) => {
     const mod = COURSE_LOADERS[`../data/education/courses/${lang}.js`];
     return mod ? (await mod()).default : null;
 };
-const TITLES = { latin: 'Latin', greek: 'Greek', hebrew: 'Hebrew', egyptian: 'Egyptian', sanskrit: 'Sanskrit', syriac: 'Syriac', arabic: 'Arabic' };
+const TITLES = { latin: 'Latin', greek: 'Greek', hebrew: 'Hebrew', egyptian: 'Egyptian', cuneiform: 'Cuneiform', sanskrit: 'Sanskrit', syriac: 'Syriac', arabic: 'Arabic' };
 // Courses in right-to-left scripts. Kept as a list so the hall page and this one agree.
 const RTL = ['hebrew', 'syriac', 'arabic'];
 
