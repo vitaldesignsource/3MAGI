@@ -47,9 +47,9 @@ export const SECTIONS = [
         hero: '3c02c02618c631f0a11d10fd90b4c1f0.webp',
         heroAlt: 'A scholar in dark dress praying at a desk before a vine-grown window whose mullions form a cross with a red rose at the crossing, flasks and an armillary sphere beside him',
         blurb: 'Origen’s restoration of all things, the divine darkness of Dionysius, '
-            + 'Eckhart’s ground of the soul, the Jesus Prayer, the Christian Cabala, '
-            + 'Böhme, Swedenborg, Russian Sophia — the inner tradition, with what the '
-            + 'churches actually ruled about each of them recorded beside it.',
+            + 'Eckhart’s ground of the soul, the Jesus Prayer, the Christian Cabala, the rose '
+            + 'and the cross, Böhme, Swedenborg, Russian Sophia — the inner tradition, with what '
+            + 'the churches actually ruled about each of them recorded beside it.',
     },
     { slug: 'map', title: 'The Map', kicker: 'Where It Happened',
         heroEffect: 'snow',
