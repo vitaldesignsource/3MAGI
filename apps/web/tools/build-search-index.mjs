@@ -187,6 +187,11 @@ for (const m of rosicrucian?.manifestos ?? []) push(
     CH, 'work', '', m.title, `${m.year} · ${m.place}`, m.says, m.slug, '/christianities/rosicrucian',
 );
 
+for (const d of rosicrucian?.days ?? []) push(
+    CH, 'current', '', `The Chymical Wedding, Day ${d.n}: ${d.title}`,
+    `Day ${d.n} of seven`, d.story, `day-${d.n}`, '/christianities/rosicrucian',
+);
+
 const bibles = await loadCh('bibles');
 for (const v of bibles?.versions ?? []) push(
     CH, 'work', v.native, v.name, `${v.year < 0 ? `${-v.year} BCE` : v.year} · ${v.language}`,

@@ -11172,6 +11172,14 @@ h3 {
 .ch-page .ch-kv ul,
 .ch-page .ch-symbol-body,
 .ch-page .ch-rc-says,
+.ch-page .ch-rc-day-story,
+.ch-page .ch-rc-day-quote p,
+.ch-page .ch-rc-day-quote footer,
+.ch-page .ch-rc-coda,
+.ch-page .ch-rc-latin,
+.ch-page .ch-rc-gloss,
+.ch-page .ch-rc-where,
+.ch-page .ch-rc-vault figcaption,
 .ch-page .ch-rc-claim,
 .ch-page .ch-rc-verdict,
 .ch-page .ch-rc-after-p,
@@ -12154,6 +12162,83 @@ figure.ch-gallery-card { margin: 0; }
 .ch-rc-chron-body > span { display: block; margin-top: 0.15rem; font-size: 0.9rem; color: rgba(222, 212, 196, 0.66); line-height: 1.6; }
 
 .ch-rc-after-p { color: rgba(232, 224, 208, 0.85); line-height: 1.75; max-width: 44rem; }
+
+/* --- the seven days --- */
+.ch-rc-days { list-style: none; margin: 1.8rem 0 0; padding: 0; display: grid; gap: 1.1rem; }
+.ch-rc-day {
+  border: 1px solid rgba(209, 173, 104, 0.18); border-radius: 3px;
+  background: rgba(20, 16, 11, 0.42); padding: 1.2rem 1.35rem 1.35rem;
+}
+.ch-rc-day-n {
+  margin: 0; color: rgba(209, 173, 104, 0.8); font-size: 0.68rem;
+  letter-spacing: 0.24em; text-transform: uppercase;
+}
+.ch-rc-day h3 { margin: 0.25rem 0 0.7rem; font-size: 1.12rem; }
+.ch-rc-day-story { margin: 0; color: rgba(232, 224, 208, 0.87); line-height: 1.75; }
+.ch-rc-day-quote {
+  margin: 1rem 0 0; padding: 0.85rem 0 0.85rem 1.15rem;
+  border-left: 2px solid rgba(209, 173, 104, 0.55);
+}
+.ch-rc-day-quote p {
+  margin: 0; color: #ecd9ae; font-style: italic; line-height: 1.8; text-wrap: pretty;
+}
+.ch-rc-day-quote footer {
+  margin-top: 0.6rem; font-size: 0.87rem; color: rgba(222, 212, 196, 0.62); line-height: 1.65;
+}
+.ch-rc-coda {
+  margin: 1.6rem 0 0; max-width: 46rem; color: rgba(232, 224, 208, 0.8);
+  line-height: 1.75; font-style: italic;
+}
+
+/* --- the vault --- */
+.ch-rc-vault-layout {
+  display: grid; gap: 1.6rem 2.2rem; margin-top: 1.6rem; align-items: start;
+  grid-template-columns: minmax(16rem, 21rem) minmax(0, 1fr);
+}
+.ch-rc-vault { margin: 0; }
+.ch-rc-vault-stage {
+  border: 1px solid rgba(209, 173, 104, 0.2); border-radius: 3px;
+  background: rgba(14, 11, 8, 0.6); padding: 1rem 1rem 0.8rem;
+}
+.ch-rc-vault-svg { display: block; width: 100%; height: auto; }
+.rcv-wall {
+  fill: rgba(28, 22, 15, 0.85); stroke: rgba(209, 173, 104, 0.62); stroke-width: 1.4;
+  stroke-linejoin: round;
+}
+.rcv-num { fill: rgba(209, 173, 104, 0.72); font-size: 10px; letter-spacing: 0.08em; }
+.rcv-sun line { stroke: rgba(236, 217, 174, 0.34); stroke-width: 1; stroke-linecap: round; }
+.rcv-sun-glow { fill: rgba(236, 217, 174, 0.05); }
+.rcv-altar { fill: rgba(20, 16, 11, 0.9); stroke: rgba(209, 173, 104, 0.72); stroke-width: 1.2; }
+.rcv-altar-inner { fill: none; stroke: rgba(209, 173, 104, 0.34); stroke-width: 0.8; }
+.rcv-altar-label { fill: rgba(236, 217, 174, 0.9); font-size: 8px; letter-spacing: 0.06em; }
+.ch-rc-vault-scale {
+  display: flex; justify-content: space-between; gap: 0.6rem; margin: 0.4rem 0 0;
+  font-size: 0.66rem; letter-spacing: 0.14em; text-transform: uppercase;
+  color: rgba(209, 173, 104, 0.62);
+}
+.ch-rc-vault figcaption {
+  margin-top: 0.7rem; font-size: 0.85rem; font-style: italic;
+  color: rgba(222, 212, 196, 0.6); line-height: 1.6;
+}
+.ch-rc-vault-parts { display: grid; gap: 1rem; }
+
+.ch-rc-inscriptions {
+  list-style: none; margin: 2rem 0 0; padding: 0;
+  display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+}
+.ch-rc-inscriptions li {
+  border-top: 1px solid rgba(209, 173, 104, 0.24); padding-top: 0.8rem;
+}
+.ch-rc-latin { margin: 0; color: #ecd9ae; font-style: italic; line-height: 1.6; }
+.ch-rc-gloss { margin: 0.4rem 0 0; color: rgba(232, 224, 208, 0.82); line-height: 1.65; }
+.ch-rc-where {
+  margin: 0.45rem 0 0; font-size: 0.8rem; color: rgba(222, 212, 196, 0.55); line-height: 1.55;
+}
+
+@media (max-width: 860px) {
+  .ch-rc-vault-layout { grid-template-columns: 1fr; }
+  .ch-rc-vault-stage { max-width: 22rem; }
+}
 .ch-rc-back { margin-top: 1.6rem; }
 .ch-rc-back a { color: #d1ad68; }
 

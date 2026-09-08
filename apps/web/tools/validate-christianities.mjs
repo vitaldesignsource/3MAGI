@@ -531,10 +531,42 @@ if (rosicrucian) {
     if ((rosicrucian.ledger ?? []).length && sound === 0) {
         fail('rosicrucian: every ledger row is against the tradition — a table with no sound row is a debunk, not a reckoning');
     }
+    // The seven days, and the rule that keeps the reading honest. A day may
+    // carry a quotation or not; what it may not do is carry one without saying
+    // where the wording comes from, because on this page the difference between
+    // quotation and summary is the whole discipline.
+    const days = rosicrucian.days ?? [];
+    if (days.length) {
+        const nums = days.map((d) => d.n);
+        if (JSON.stringify(nums) !== JSON.stringify(nums.map((_, i) => i + 1))) {
+            fail(`rosicrucian: the days are not numbered 1..${days.length}`);
+        }
+        for (const d of days) {
+            const where = `rosicrucian/day ${d.n}`;
+            if (!d.title) fail(`${where}: no title`);
+            if (!d.story || wordCount(d.story) < 20) fail(`${where}: the day is not told`);
+            if (!d.work) fail(`${where}: says nothing about what the day is doing`);
+            if (d.quote && !d.quote.note) fail(`${where}: a quotation with no note on where the wording comes from`);
+            if (d.quote && !d.quote.text) fail(`${where}: an empty quotation`);
+            checkContested(where, d);
+        }
+    }
+    // The vault is a diagram of a text and the page has to keep saying so.
+    const vault = rosicrucian.vault;
+    if (vault) {
+        if (vault.sides !== 7) fail('rosicrucian: the Fama gives the vault seven sides');
+        if (!vault.parts?.length) fail('rosicrucian: the vault has no labelled parts');
+        if (!/diagram of a text|not of an excavation|no such vault/i.test(vault.caption || '')) {
+            fail('rosicrucian: the vault figure must say on its face that it diagrams a description — nothing of the kind has been found');
+        }
+        for (const ins of vault.inscriptions ?? []) {
+            if (!ins.latin || !ins.english || !ins.where) fail('rosicrucian: an inscription needs its Latin, a translation and a location');
+        }
+    }
     for (const c of rosicrucian.chronology ?? []) {
         if (!c.year || !c.label) fail('rosicrucian: a chronology row needs a year and a label');
     }
-    notes.push(`rosicrucian: ${(rosicrucian.manifestos ?? []).length} manifestos, ${(rosicrucian.ledger ?? []).length} ledger rows (${sound} sound), ${(rosicrucian.chronology ?? []).length} dated`);
+    notes.push(`rosicrucian: ${(rosicrucian.manifestos ?? []).length} manifestos, ${days.length} days (${days.filter((d) => d.quote).length} quoted), ${(rosicrucian.ledger ?? []).length} ledger rows (${sound} sound), ${(rosicrucian.chronology ?? []).length} dated`);
 }
 
 // --- report ----------------------------------------------------------------
