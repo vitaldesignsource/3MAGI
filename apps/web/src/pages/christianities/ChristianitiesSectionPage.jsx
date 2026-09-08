@@ -356,6 +356,20 @@ function Creeds({ creeds }) {
     );
 }
 
+function GroupPortal({ portal }) {
+    if (!portal) return null;
+    return (
+        <Link className="edu-hall-card pw-door ch-group-portal" to={portal.to}>
+            <span className="pw-door-body">
+                <span className="ch-door-kicker">{portal.kicker}</span>
+                <h3>{portal.title}</h3>
+                <p className="edu-hall-blurb"><Rich t={portal.blurb} /></p>
+                <span className="edu-hall-enter" aria-hidden="true">{portal.enter} &rarr;</span>
+            </span>
+        </Link>
+    );
+}
+
 function Esoteric({ data, open, setOpen }) {
     return (
         <>
@@ -371,6 +385,7 @@ function Esoteric({ data, open, setOpen }) {
                     <p><Rich t={g.blurb} /></p>
                 </header>
                 <Plate item={g} wide />
+                <GroupPortal portal={g.portal} />
                 <div className="ch-entry-list">
                     {entries.map((e) => (
                         <Expandable key={e.slug} id={e.slug} open={open === e.slug}

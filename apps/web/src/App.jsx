@@ -23,6 +23,7 @@ const EducationCoursePage = lazy(() => import('./pages/EducationCoursePage'));
 const ChristianitiesPortalPage = lazy(() => import('./pages/christianities/ChristianitiesPortalPage'));
 const ChristianitiesMapPage = lazy(() => import('./pages/christianities/ChristianitiesMapPage'));
 const ChristianitiesCanonPage = lazy(() => import('./pages/christianities/ChristianitiesCanonPage'));
+const ChristianitiesRosicrucianPage = lazy(() => import('./pages/christianities/ChristianitiesRosicrucianPage'));
 const ChristianitiesSectionPage = lazy(() => import('./pages/christianities/ChristianitiesSectionPage'));
 const PowersPortalPage = lazy(() => import('./pages/powers/PowersPortalPage'));
 const PowersMapPage = lazy(() => import('./pages/powers/PowersMapPage'));
@@ -108,6 +109,7 @@ function App() {
                     <Route path="/christianities" element={<ChristianitiesPortalPage />} />
                     <Route path="/christianities/map" element={<ChristianitiesMapPage />} />
                     <Route path="/christianities/canon" element={<ChristianitiesCanonPage />} />
+                    <Route path="/christianities/rosicrucian" element={<ChristianitiesRosicrucianPage />} />
                     <Route path="/christianities/:section" element={<ChristianitiesSectionPage />} />
                     <Route path="/powers" element={<PowersPortalPage />} />
                     <Route path="/powers/map" element={<PowersMapPage />} />

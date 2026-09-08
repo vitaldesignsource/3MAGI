@@ -11168,7 +11168,17 @@ h3 {
 .ch-page .ch-selfname, .ch-page .ch-exonym, .ch-page .ch-lineage,
 .edu-page .edu-hall-blurb,
 .edu-page .ch-gallery-caption > span,
+.ch-page .ch-kv p,
+.ch-page .ch-kv ul,
 .ch-page .ch-symbol-body,
+.ch-page .ch-rc-says,
+.ch-page .ch-rc-claim,
+.ch-page .ch-rc-verdict,
+.ch-page .ch-rc-after-p,
+.ch-page .ch-rc-imprint dd,
+.ch-page .ch-rc-chron-body,
+.ch-page .ch-rc-key-note,
+.ch-page .ch-rc-sub,
 .ch-page .ch-creed-text,
 .ch-page .ch-words-bridge,
 .edu-page .edu-cog-noterow td,
@@ -12049,6 +12059,109 @@ figure.ch-gallery-card { margin: 0; }
   color: rgba(209, 173, 104, 0.75); font-size: 0.7rem; line-height: 1;
 }
 .ch-group:first-of-type .pw-divider { display: none; }
+
+/* ---------------------------------------------------------------------------
+   A door out of a current, and the page behind it.
+
+   The door reuses the portal's own .pw-door so it reads as the same kind of
+   object a reader already met on the Christianities landing — but it stands
+   alone rather than in a grid, so it is capped and centred instead of
+   stretching the full column.
+
+   The page itself (.ch-rc-page) has three shapes the section pages do not:
+   the triptych of books, the ledger, and the chronology. The ledger is the
+   load-bearing one — a claim, a verdict tag, and the evidence — and its tags
+   are colour-coded so that the two rows where the tradition is right are
+   visible at a glance and the thing does not read as a column of refusals. */
+.ch-group-portal {
+  display: block; max-width: 46rem; margin: 1.6rem auto 0;
+  border-color: rgba(209, 173, 104, 0.42);
+}
+.ch-group-portal:hover { border-color: rgba(209, 173, 104, 0.7); }
+.ch-group-portal .edu-hall-enter { color: #d1ad68; }
+
+/* --- the three books --- */
+.ch-rc-triptych {
+  display: grid; gap: 1.2rem; margin-top: 1.6rem;
+  grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+}
+.ch-rc-manifesto {
+  border: 1px solid rgba(209, 173, 104, 0.22); border-radius: 3px;
+  background: rgba(20, 16, 11, 0.5); padding: 1.3rem 1.4rem 1.5rem;
+}
+.ch-rc-manifesto header { margin-bottom: 0.9rem; }
+.ch-rc-year {
+  margin: 0; color: rgba(209, 173, 104, 0.8); font-size: 0.72rem;
+  letter-spacing: 0.24em;
+}
+.ch-rc-manifesto h3 { margin: 0.3rem 0 0.15rem; font-size: 1.15rem; }
+.ch-rc-sub { margin: 0; font-size: 0.85rem; font-style: italic; color: rgba(222, 212, 196, 0.62); }
+.ch-rc-imprint {
+  margin: 0 0 1rem; padding: 0.7rem 0; display: grid; gap: 0.35rem 1rem;
+  border-top: 1px solid rgba(209, 173, 104, 0.15);
+  border-bottom: 1px solid rgba(209, 173, 104, 0.15);
+}
+.ch-rc-imprint > div { display: flex; gap: 0.6rem; align-items: baseline; }
+.ch-rc-imprint dt {
+  flex: 0 0 6.5rem; color: rgba(209, 173, 104, 0.7); font-size: 0.66rem;
+  letter-spacing: 0.16em; text-transform: uppercase;
+}
+.ch-rc-imprint dd { margin: 0; font-size: 0.86rem; color: rgba(232, 224, 208, 0.82); }
+.ch-rc-says { margin: 0; color: rgba(232, 224, 208, 0.86); line-height: 1.7; }
+
+/* --- the ledger --- */
+.ch-rc-key { list-style: none; margin: 1.4rem 0 0; padding: 0; display: grid; gap: 0.45rem; }
+.ch-rc-key li { display: flex; gap: 0.7rem; align-items: baseline; flex-wrap: wrap; }
+.ch-rc-key-note { font-size: 0.85rem; color: rgba(222, 212, 196, 0.6); }
+.ch-rc-tag {
+  display: inline-block; padding: 0.13rem 0.5rem; border-radius: 2px;
+  font-size: 0.64rem; letter-spacing: 0.16em; text-transform: uppercase;
+  white-space: nowrap; border: 1px solid currentColor;
+}
+.ch-rc-tag.is-legend   { color: #c9a86a; }
+.ch-rc-tag.is-false    { color: #c98a72; }
+.ch-rc-tag.is-inverted { color: #b98fc0; }
+.ch-rc-tag.is-open     { color: #8fa8bd; }
+.ch-rc-tag.is-sound    { color: #92b58a; }
+
+.ch-rc-ledger { list-style: none; margin: 1.8rem 0 0; padding: 0; display: grid; gap: 1rem; }
+.ch-rc-row {
+  border: 1px solid rgba(209, 173, 104, 0.16); border-left-width: 2px;
+  border-radius: 3px; background: rgba(20, 16, 11, 0.4);
+  padding: 1.1rem 1.2rem 1.2rem;
+}
+.ch-rc-row.is-legend   { border-left-color: rgba(201, 168, 106, 0.75); }
+.ch-rc-row.is-false    { border-left-color: rgba(201, 138, 114, 0.75); }
+.ch-rc-row.is-inverted { border-left-color: rgba(185, 143, 192, 0.75); }
+.ch-rc-row.is-open     { border-left-color: rgba(143, 168, 189, 0.75); }
+.ch-rc-row.is-sound    { border-left-color: rgba(146, 181, 138, 0.8); }
+.ch-rc-claim {
+  margin: 0; font-size: 1.02rem; line-height: 1.6;
+  color: rgba(240, 233, 218, 0.94); text-wrap: pretty;
+}
+.ch-rc-standing { margin: 0.7rem 0 0.55rem; }
+.ch-rc-verdict { margin: 0; color: rgba(232, 224, 208, 0.8); line-height: 1.72; }
+
+/* --- the chronology --- */
+.ch-rc-chron { list-style: none; margin: 1.6rem 0 0; padding: 0; display: grid; gap: 0.9rem; }
+.ch-rc-chron li { display: flex; gap: 1.1rem; align-items: baseline; }
+.ch-rc-chron-year {
+  flex: 0 0 8.5rem; color: #d1ad68; font-size: 0.78rem; letter-spacing: 0.1em;
+  font-variant-numeric: tabular-nums; padding-top: 0.15rem;
+}
+.ch-rc-chron-body { display: block; }
+.ch-rc-chron-body strong { display: block; color: rgba(240, 233, 218, 0.92); font-weight: 500; }
+.ch-rc-chron-body > span { display: block; margin-top: 0.15rem; font-size: 0.9rem; color: rgba(222, 212, 196, 0.66); line-height: 1.6; }
+
+.ch-rc-after-p { color: rgba(232, 224, 208, 0.85); line-height: 1.75; max-width: 44rem; }
+.ch-rc-back { margin-top: 1.6rem; }
+.ch-rc-back a { color: #d1ad68; }
+
+@media (max-width: 640px) {
+  .ch-rc-imprint dt { flex-basis: 5.5rem; }
+  .ch-rc-chron li { display: block; }
+  .ch-rc-chron-year { display: block; margin-bottom: 0.2rem; }
+}
 
 /* --- the correspondence table keeps its pantheon column in view ------------- */
 .pw-corr-table th[scope="row"] {
