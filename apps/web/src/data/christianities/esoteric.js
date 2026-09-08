@@ -18,7 +18,17 @@ export default {
         { key: 'bridal', label: 'The Bridal Way', blurb: 'The Song of Songs read as the soul’s own story, and the tradition of love-mysticism that followed it out of the cloister and into the vernacular — much of it written by women.' },
         { key: 'speculative', label: 'The Speculative Middle Ages', blurb: 'Combinatory arts, learned ignorance, the coincidence of opposites, and the mysteries the romances carried where the schools could not follow.' },
         { key: 'renaissance', label: 'The Renaissance Synthesis', blurb: 'When Greek, Hebrew and Hermetic texts arrived together in Florence and a generation tried to fit them all inside Christianity.' },
-        { key: 'rosicrucian', label: 'The Rose and the Cross', blurb: 'Three anonymous pamphlets out of Lutheran Württemberg announced a brotherhood that almost certainly did not exist, and Europe spent a decade writing to it. What the search built is still standing — and the one order that verifiably existed used its power against the Enlightenment.' },
+        {
+            key: 'rosicrucian', label: 'The Rose and the Cross',
+            blurb: 'Three anonymous pamphlets out of Lutheran Württemberg announced a brotherhood that almost certainly did not exist, and Europe spent a decade writing to it. What the search built is still standing — and the one order that verifiably existed used its power against the Enlightenment.',
+            portal: {
+                to: '/christianities/rosicrucian',
+                kicker: 'A door off this current',
+                title: 'The Rosicrucian Portal',
+                blurb: 'The three manifestos of 1614–1616 set beside each other as physical books, a chronology from the manuscript Fama to the modern orders, and a ledger putting every claim about the brotherhood’s origins against what the record will bear.',
+                enter: 'Enter the portal',
+            },
+        },
         { key: 'theosophy', label: 'The Theosophers', blurb: 'Protestant Europe’s visionary underground: a shoemaker, a scientist, a Masonic magistrate, and the churches that could not quite expel them.' },
         { key: 'modern', label: 'The Modern Recovery', blurb: 'Sophia in Russia, Christ in anthroposophy, and the Hermetic Christianity of the twentieth century.' },
     ],

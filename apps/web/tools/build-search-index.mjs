@@ -180,6 +180,13 @@ for (const e of esoteric?.entries ?? []) push(
     CH, 'current', '', e.name, e.era, e.claim, e.slug, '/christianities/esoteric',
 );
 
+// The three founding books get their own records, pointing at the Rosicrucian
+// page rather than the current, because that is where they are set out.
+const rosicrucian = await loadCh('rosicrucian');
+for (const m of rosicrucian?.manifestos ?? []) push(
+    CH, 'work', '', m.title, `${m.year} · ${m.place}`, m.says, m.slug, '/christianities/rosicrucian',
+);
+
 const bibles = await loadCh('bibles');
 for (const v of bibles?.versions ?? []) push(
     CH, 'work', v.native, v.name, `${v.year < 0 ? `${-v.year} BCE` : v.year} · ${v.language}`,

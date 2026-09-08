@@ -495,10 +495,53 @@ if (creeds) {
     notes.push(`creeds: ${creeds.creeds.length}`);
 }
 
+// --- the Rosicrucian page --------------------------------------------------
+// Its own discipline, and a strict one, because a ledger is only worth having
+// if every row is falsifiable: each claim carries a standing drawn from the
+// declared key, and a verdict that says what the record actually shows.
+const rosicrucian = await load('rosicrucian');
+if (rosicrucian) {
+    const keys = new Set((rosicrucian.standings ?? []).map((s) => s.key));
+    if (keys.size < 2) fail('rosicrucian: the ledger needs a declared key of standings');
+    const seen = new Set();
+    for (const m of rosicrucian.manifestos ?? []) {
+        const where = `rosicrucian/${m.slug}`;
+        if (seen.has(m.slug)) fail(`${where}: duplicate slug`);
+        seen.add(m.slug);
+        for (const f of ['title', 'year', 'place', 'printer', 'language', 'says', 'authorship']) {
+            if (!m[f]) fail(`${where}: no ${f}`);
+        }
+        checkContested(where, m);
+    }
+    let sound = 0;
+    for (const [i, row] of (rosicrucian.ledger ?? []).entries()) {
+        const where = `rosicrucian/ledger[${i}]`;
+        if (!row.claim || wordCount(row.claim) < 5) fail(`${where}: the claim is too thin to be checkable`);
+        if (!keys.has(row.standing)) fail(`${where}: standing "${row.standing}" is not in the declared key`);
+        if (!row.verdict || wordCount(row.verdict) < 12) {
+            fail(`${where}: a verdict must show its working, not just rule`);
+        }
+        if (row.standing === 'sound') sound += 1;
+        checkContested(where, row);
+    }
+    // The rule this page exists to keep. A ledger on an esoteric current that
+    // refuses every claim is a debunk wearing a table's clothes; if nothing
+    // the tradition says survives contact with the evidence, that is a sign
+    // the evidence was not looked for.
+    if ((rosicrucian.ledger ?? []).length && sound === 0) {
+        fail('rosicrucian: every ledger row is against the tradition — a table with no sound row is a debunk, not a reckoning');
+    }
+    for (const c of rosicrucian.chronology ?? []) {
+        if (!c.year || !c.label) fail('rosicrucian: a chronology row needs a year and a label');
+    }
+    notes.push(`rosicrucian: ${(rosicrucian.manifestos ?? []).length} manifestos, ${(rosicrucian.ledger ?? []).length} ledger rows (${sound} sound), ${(rosicrucian.chronology ?? []).length} dated`);
+}
+
 // --- report ----------------------------------------------------------------
-const present = [christologies, branches, councils, canon, figures, symbols, mapsites, timeline,
-    gallery, tree, matrix, words, creeds, esoteric, bibles]
-    .filter(Boolean).length;
+const SECTION_DATA = [christologies, branches, councils, canon, figures, symbols, mapsites, timeline,
+    gallery, tree, matrix, words, creeds, esoteric, bibles, rosicrucian];
+const TOTAL = SECTION_DATA.length;
+const present = SECTION_DATA.filter(Boolean).length;
 if (present === 0) {
     console.log('christianities: scaffolded, awaiting content');
     process.exit(0);
@@ -513,4 +556,4 @@ if (errors.length) {
     for (const e of errors) console.error(`  ✗ ${e}`);
     process.exit(1);
 }
-console.log(`christianities: ${present}/15 sections — ${notes.join(' · ')} — validated`);
+console.log(`christianities: ${present}/${TOTAL} sections — ${notes.join(' · ')} — validated`);
