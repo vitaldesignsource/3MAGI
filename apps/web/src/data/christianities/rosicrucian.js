@@ -140,6 +140,100 @@ export default {
         { year: '1909–1945', label: 'The modern bodies', note: 'Heindel’s Rosicrucian Fellowship, Lewis’s AMORC, and the Lectorium Rosicrucianum in the Netherlands — three quite different religions under one emblem.' },
         { year: '1972', label: 'Yates publishes, and the field argues', note: 'The Rosicrucian Enlightenment convinces a generation of readers and few specialists; what survives is that magic belongs in intellectual history.' },
     ],
+    // The seven days. The book is the only one of the three that anybody reads
+    // for pleasure, and the page was describing it without letting anyone read
+    // it. The hall's rule holds: quotation is printed only where the wording is
+    // attested, and Foxcroft's English of 1690 — the version in which the book
+    // entered the language — is the text quoted. Everywhere else the day is
+    // summarised in the site's own words and says so.
+    weddingIntro: [
+        'The Chymical Wedding is told in the first person over seven days, and the shape is Genesis: a week of work ending in a new creation. It is also, and at the same time, an alchemical operation — the sequence of the days is the sequence of the work — and a comedy, in which the narrator is repeatedly the least impressive person in the room.',
+        'What follows is the story as it runs, with what each day is doing beneath it. Quotation is from Ezechiel Foxcroft’s English of 1690, which is where the book entered the language; where no wording is given, the day is summarised here rather than quoted, and the difference is deliberate.',
+    ],
+    days: [
+        {
+            n: 1,
+            title: 'The Invitation',
+            story: 'On the eve of Easter, at his table, an old man is interrupted by a storm and a winged herald who leaves him a letter written in gold on an azure ground. It invites him to a royal wedding, warns him to prepare, and is signed by the Bridegroom and the Bride. He is frightened rather than delighted, and remembers a vision of seven years in a tower.',
+            work: 'The call, and the fear of it. Note that the invitation already contains the test of the third day — the reader is told the terms before the narrator understands them.',
+            quote: {
+                text: 'This day, this day, this, this / The Royal Wedding is. / Art thou thereto by birth inclined, / And unto joy of God designed? / Then mayest thou to the mountain tend, / Whereon three stately Temples stand, / And there see all from end to end. / Keep watch, and ward, / Thy self regard; / Unless with diligence thou bathe, / The Wedding can’t thee harmless save; / He will damage that here delays; / Let him beware too light that weighs.',
+                note: 'The last line is the whole of the third day, announced on the first. Underneath the verse stood *Sponsus and Sponsa* — the Bridegroom and the Bride.',
+            },
+        },
+        {
+            n: 2,
+            title: 'The Road, and the Gates',
+            story: 'He dresses for it — a white linen coat, a blood-red ribbon bound cross-ways over the shoulder, and four red roses in his hat — takes bread, salt and water, and goes out into a forest where four ways part. He is deliberating when he throws his bread to a white dove, a raven comes to drive her off, he chases the raven, and finds he has been carried onto the right road by the pursuit. Three gates admit him, each taking one of his tokens; at the last a virgin writes down his name.',
+            work: 'He arrives at the right road by accident, chasing a bird, having not chosen it. This is the book being funny and serious at once, and it is why the narrator is not a hero.',
+            quote: {
+                text: 'He put on his white linen coat, girded his loins with a blood-red ribbon bound cross-ways over his shoulder, and in his hat he stuck four red roses, that he might the sooner by this token be taken notice of amongst the throng.',
+                note: 'The rose and the cross, worn on the body, in the only one of the three books whose author is known. It is the nearest thing the founding texts have to an explanation of the name — and it explains nothing, being simply what he put on.',
+            },
+        },
+        {
+            n: 3,
+            title: 'The Weighing',
+            story: 'In a great hall hung with golden scales, watched by a virgin in red velvet and two hundred armed men, every guest is weighed against seven weights. Most of the company — who spent the previous night boasting of the arts they commanded — prove too light. They are stripped of their pretensions and put out, some ransomed, some scourged. The narrator, who had thought himself the least qualified man present, holds every weight.',
+            work: 'The hinge of the book, and the reason it survives as literature: the test is not of knowledge but of not having claimed any. Those who came to display an art fail; the one who came expecting to be turned away passes.',
+            quote: null,
+        },
+        {
+            n: 4,
+            title: 'The Comedy, and the Beheading',
+            story: 'The survivors climb to the royal hall and watch a play in seven acts — a princess cast into the sea, stolen by a Moor, recovered and married. When it ends, the six royal persons are beheaded in earnest by the same black executioner, their blood caught in golden cups, and the executioner is then beheaded himself. The bodies are coffined. The company is told the royal persons will be restored, and is not told how.',
+            work: 'The *nigredo* — the blackening, the death of the material. An alchemical operation cannot proceed without the dissolution of what it starts from, and the play immediately before it is not decoration: the audience is shown the story as fiction and then made to watch it happen.',
+            quote: null,
+        },
+        {
+            n: 5,
+            title: 'Venus, and the Voyage',
+            story: 'Exploring below the castle with a page, the narrator finds a chamber where Lady Venus lies asleep and uncovered, and looks. The page is appalled. Afterwards the coffins are carried down to the shore and the company sails across a lake in ships bearing lanterns, one of them made in the shape of a five-pointed star, while sirens sing them a song about love. They reach the Tower of Olympus.',
+            work: 'The lapse, and the narrator does not yet know it is one. Everything that happens to him on the seventh day is settled here, in a room he was not stopped from entering.',
+            quote: null,
+        },
+        {
+            n: 6,
+            title: 'The Tower of Olympus',
+            story: 'Seven storeys of work, and the guests are the labourers. The bodies are reduced, distilled, and the essence drawn off; an egg is made and hatched; the bird that comes out is fed on the blood of the beheaded kings, grows, is bathed, loses its feathers, and is itself killed and burnt. From its ashes two small bodies are moulded, a boy and a girl, grown to full size by degrees, and their souls are brought down and blown into them with a trumpet. The royal pair wake.',
+            work: 'The whole operation, in one day: dissolution, conjunction, the whitening, the feeding of the tincture, and the resurrection of the King and Queen — the *rebis*, the two made one and living. And it is done by hand, by tired people carrying things up stairs.',
+            quote: null,
+        },
+        {
+            n: 7,
+            title: 'The Doorkeeper',
+            story: 'The company sails home in twelve ships under flags of the zodiac and is made Knights of the Golden Stone, swearing to ascribe all to God, to serve the sick freely, to keep the order’s secrets, and not to use their standing for worldly rank. Then the narrator is asked about the chamber below, and says what he saw. He is condemned to be the doorkeeper of the door he had opened — taking the place of the porter he had himself been permitted to release, who had been serving the same sentence for the same offence. The text breaks off before the morning.',
+            work: 'The ending refuses the reward it has spent six days promising, and the loop is exact: the man he freed was there for looking at Venus, and now he stands in his place. The book’s last joke is also its doctrine — the one who sees the mystery does not get to leave it.',
+            quote: null,
+        },
+    ],
+    weddingCoda: 'The 1616 printing ends in mid-air, with a note that some leaves are wanting and the narrator returning home, and the interruption is so well placed that readers have argued ever since about whether it is an accident. It is the same question the whole tradition raises in miniature: a door that stops exactly where it would have to open.',
+
+    // The vault, drawn from the Fama's own measurements. Labelled for what it
+    // is — a diagram of a description. Nothing of the kind has been found, and
+    // the page says so on the figure rather than in a footnote.
+    vaultIntro: [
+        'The Fama describes the tomb with the precision of a surveyor, and that precision is the point: it is not a vision but a room, with dimensions. Whoever wrote it wanted the reader to be able to build it.',
+        'The plan below is drawn from those measurements and from nothing else. No such vault has ever been found, and none is expected; what is being diagrammed is a paragraph.',
+    ],
+    vault: {
+        sides: 7,
+        sideWidth: 'five foot broad',
+        height: 'eight foot high',
+        caption: 'The vault in plan, at the measurements the Fama gives. A diagram of a text, not of an excavation.',
+        parts: [
+            { key: 'walls', label: 'Seven walls', note: 'Each five foot broad and eight foot high, and each divided and figured over its whole surface — the seven sides carrying books, instruments, mirrors, bells and burning lamps.' },
+            { key: 'sun', label: 'The sun in the roof', note: 'No daylight reaches the chamber. It is lit from the ceiling by a sun of the builders’ own making, still burning after a hundred and twenty years — the detail that tells you what kind of text this is.' },
+            { key: 'altar', label: 'The round altar', note: 'At the centre, carrying a brass plate and the founder’s inscription, and standing directly over the body.' },
+            { key: 'body', label: 'The body beneath', note: 'Found whole and uncorrupted under the altar, holding a book of vellum lettered in gold.' },
+            { key: 'floor', label: 'Floor and ceiling', note: 'Divided and figured like the walls, and read by the brothers as a map of the upper and lower worlds — the room built as a model of the whole.' },
+        ],
+        inscriptions: [
+            { latin: 'Post CXX Annos Patebo', english: 'After a hundred and twenty years I shall open.', where: 'On the door, found behind the plaster.' },
+            { latin: 'Hoc universi compendium unius mihi sepulchrum feci', english: 'This compendium of the universe I made in my lifetime to be my tomb.', where: 'On the altar, with the founder’s initials.' },
+            { latin: 'Ex Deo nascimur, in Jesu morimur, per Spiritum Sanctum reviviscimus', english: 'Of God we are born, in Jesus we die, by the Holy Spirit we live again.', where: 'The order’s motto, taken from the vault.' },
+        ],
+    },
     afterword: [
         'The honest summary is the uncomfortable one. The brotherhood was invented; the invention was serious; and the effects are real, continuous, and still running. Its authors wanted a reformation of learning and got, instead, four centuries of people looking for a door.',
         'The emblem itself was to hand before any of it. Luther designed a seal in 1530 — a black cross in a red heart, on a white rose — and explained every element of it in a letter. Andreae’s family arms are a St Andrew’s cross with four roses. A Württemberg Lutheran writing under the sign of a rosy cross was writing under two signs already his own, and the manifestos never explain the name because they did not have to.',

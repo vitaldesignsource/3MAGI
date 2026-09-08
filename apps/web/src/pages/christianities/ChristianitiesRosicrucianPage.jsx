@@ -6,6 +6,7 @@ import SiteFooter from '../../components/SiteFooter';
 import { loadData } from './lib';
 import Rich from './rich';
 import PortalHero from './PortalHero';
+import RosicrucianVault from './RosicrucianVault';
 
 // The Rose and the Cross, off the Inner Tradition.
 //
@@ -88,6 +89,61 @@ function ChristianitiesRosicrucianPage() {
                     <div className="ch-rc-triptych">
                         {page.manifestos.map((m) => <Manifesto key={m.slug} m={m} />)}
                     </div>
+                </section>
+
+                <section className="ch-rc-days-wrap" aria-labelledby="rc-days-heading">
+                    <span className="pw-divider" aria-hidden="true" />
+                    <header className="edu-section-head">
+                        <p className="kicker">The Chymical Wedding</p>
+                        <h2 id="rc-days-heading">The seven days</h2>
+                        {(page.weddingIntro ?? []).map((p, i) => <p key={i}><Rich t={p} /></p>)}
+                    </header>
+                    <ol className="ch-rc-days">
+                        {(page.days ?? []).map((d) => (
+                            <li key={d.n} className="ch-rc-day">
+                                <p className="ch-rc-day-n">Day {d.n}</p>
+                                <h3>{d.title}</h3>
+                                <p className="ch-rc-day-story"><Rich t={d.story} /></p>
+                                {d.quote && (
+                                    <blockquote className="ch-rc-day-quote">
+                                        <p>{d.quote.text}</p>
+                                        <footer><Rich t={d.quote.note} /></footer>
+                                    </blockquote>
+                                )}
+                                <div className="ch-kv"><span>What the day is doing</span><p><Rich t={d.work} /></p></div>
+                            </li>
+                        ))}
+                    </ol>
+                    {page.weddingCoda && <p className="ch-rc-coda"><Rich t={page.weddingCoda} /></p>}
+                </section>
+
+                <section className="ch-rc-vault-wrap" aria-labelledby="rc-vault-heading">
+                    <span className="pw-divider" aria-hidden="true" />
+                    <header className="edu-section-head">
+                        <p className="kicker">The Fama, in plan</p>
+                        <h2 id="rc-vault-heading">A diagram of a paragraph</h2>
+                        {(page.vaultIntro ?? []).map((p, i) => <p key={i}><Rich t={p} /></p>)}
+                    </header>
+                    <div className="ch-rc-vault-layout">
+                        <RosicrucianVault vault={page.vault} />
+                        <div className="ch-rc-vault-parts">
+                            {(page.vault?.parts ?? []).map((pt) => (
+                                <div className="ch-kv" key={pt.key}>
+                                    <span>{pt.label}</span>
+                                    <p><Rich t={pt.note} /></p>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                    <ul className="ch-rc-inscriptions">
+                        {(page.vault?.inscriptions ?? []).map((ins, i) => (
+                            <li key={i}>
+                                <p className="ch-rc-latin">{ins.latin}</p>
+                                <p className="ch-rc-gloss">{ins.english}</p>
+                                <p className="ch-rc-where">{ins.where}</p>
+                            </li>
+                        ))}
+                    </ul>
                 </section>
 
                 <section className="ch-rc-ledger-wrap" aria-labelledby="rc-ledger-heading">
