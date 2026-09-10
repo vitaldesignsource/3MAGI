@@ -104,12 +104,6 @@ export const lampPostCategories = [
         glyph: '☉',
         items: [
             {
-                headline: 'Lives and Literacy in Ancient Egypt',
-                meta: 'Austin, Texas · Harry Ransom Center · Through August 2, 2026',
-                link: 'https://www.hrc.utexas.edu/exhibitions/2026/lives-and-literacy-in-ancient-egypt/',
-                copy: 'This exhibition contains rare papyri from Greco-Roman Egypt, including magical spells and texts rarely placed on public display. It is one of the best current opportunities in the United States to see authentic ancient writing connected with ritual and everyday religious practice.',
-            },
-            {
                 headline: 'A Witness to Witchcraft: Stewart Farrar and…',
                 meta: 'Cornwall, England · Museum of Witchcraft and Magic · 2026 Seasonal Exhibition',
                 link: 'https://museumofwitchcraftandmagic.co.uk',
