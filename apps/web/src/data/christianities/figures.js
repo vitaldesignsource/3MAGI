@@ -39,6 +39,10 @@ export default {
             "label": "Desert & Monastic"
         },
         {
+            "key": "missionary",
+            "label": "Apostles to the Nations"
+        },
+        {
             "key": "heresiarch",
             "label": "Condemned Teachers"
         },
@@ -684,6 +688,62 @@ export default {
             "role": "Pilgrim and letter-writer",
             "contribution": "A woman of some means, probably a nun or the head of a religious community, who travelled from the far west of the empire to Egypt, Sinai, Palestine, Syria and Constantinople and wrote home about it. The manuscript, discovered incomplete at Arezzo in 1884, is the earliest detailed account of Christian pilgrimage and by far the best evidence for how the liturgy was celebrated in fourth-century Jerusalem — the daily offices, the Holy Week processions, the Good Friday veneration of the wood of the cross, the catechesis of the newly baptised. Much of modern Western Holy Week descends from what she saw and described. Her Latin is unliterary and vivid, her curiosity indiscriminate, and she climbs Sinai at speed. She also visited Thecla's shrine at Seleucia and found there an old friend, the deaconess Marthana, running a community of women.",
             "fate": "Unknown; the manuscript breaks off at both ends.",
+            "quote": null
+        },
+        {
+            "slug": "gregory-the-illuminator",
+            "name": "Gregory the Illuminator",
+            "dates": "c. 257 - c. 331",
+            "categories": [
+                "missionary"
+            ],
+            "tradition": "The Armenian Apostolic Church, which holds him its first Catholicos",
+            "role": "Convert, prisoner, and the reason a kingdom changed religion",
+            "contribution": "The Armenian account has him a nobleman's son raised Christian in Cappadocia, returning to serve King Trdat, refusing to sacrifice, and being thrown into the pit at Khor Virap, where he survived thirteen years on food let down by a widow. The king, afflicted, sends for him; he is healed; and the kingdom is baptised. What follows matters more than the legend: Armenia adopts Christianity as the religion of the state, and does so as a small kingdom between Rome and Persia, which turns the conversion into a permanent political fact rather than a private one.",
+            "fate": "Armenian tradition dates the conversion to 301, which would make Armenia the first Christian state anywhere — twelve years before Constantine's edict of toleration, and the claim rests on that priority. Most modern historians prefer a date around 314, after the Edict of Milan, and proposals run from 284 to 325; the evidence does not settle it, and the portal records the tradition and the argument rather than choosing. Gregory withdrew to a hermitage in his last years and the office passed to his son, beginning a hereditary catholicosate. Etchmiadzin, where he is said to have seen the Only-Begotten descend and strike the ground, remains the seat.",
+            "quote": null
+        },
+        {
+            "slug": "frumentius",
+            "name": "Frumentius",
+            "dates": "d. c. 383",
+            "categories": [
+                "missionary"
+            ],
+            "tradition": "The Ethiopian Orthodox Tewahedo Church, which calls him Abba Salama, Father of Peace, and Kesate Birhan, Revealer of the Light",
+            "role": "Shipwrecked boy, royal tutor, and first bishop of Aksum",
+            "contribution": "Rufinus tells it from an eyewitness: a Tyrian philosopher takes two boys on a Red Sea voyage, the ship is seized at an Ethiopian port and the crew killed, and the boys are spared and taken to the court at Aksum. Frumentius rises to tutor the young prince Ezana and then to run the administration, gathers the Roman merchants for worship, and afterwards goes to Athanasius at Alexandria to ask for a bishop. Athanasius consecrates him and sends him back, which is the act that binds the Ethiopian church to Alexandria for the next sixteen hundred years — its patriarch was an Egyptian appointee until 1959.",
+            "fate": "The conversion is not only a literary claim. Ezana's coinage changes: the early issues carry the crescent and disc of the old cult and the later ones carry a cross, which is plausibly the first use of the cross on any coinage anywhere. And the independence shows immediately — Constantius II wrote to Ezana asking that Frumentius be sent to Alexandria for re-examination by the Arian bishop he had installed there, and was ignored.",
+            "quote": null
+        },
+        {
+            "slug": "cyril-and-methodius",
+            "name": "Cyril and Methodius",
+            "dates": "Cyril 826/7 - 869; Methodius c. 815 - 885",
+            "categories": [
+                "missionary",
+                "contested"
+            ],
+            "tradition": "Byzantine; claimed by the Orthodox and Catholic churches alike, and the ancestors of Slavonic Christianity",
+            "role": "Brothers from Thessalonica; philosopher and administrator; inventors of an alphabet",
+            "contribution": "Sent to Moravia in 863 at Prince Rastislav's request, they did what no other mission of the period attempted: rather than teach the converts Latin, they built a script for the language they found. Glagolitic is an original creation, not an adaptation, designed for Slavic sounds Greek and Latin letters could not carry, and into it they put the liturgy and the scriptures. The claim behind it is the one the portal keeps returning to — that a people is entitled to hear the mysteries in its own speech — and it was fought as heresy.",
+            "fate": "Their opponents held what is called the trilingual heresy: that only Hebrew, Greek and Latin, the three languages of the titulus on the cross, are fit for worship. The brothers argued the case at Venice and then at Rome, and Hadrian II approved the Slavonic liturgy; Cyril died there in 869 and lies at San Clemente. Methodius was made archbishop, and was then imprisoned for two and a half years by Bavarian bishops until a pope forced his release. After his death in 885 the disciples were expelled from Moravia and went to Bulgaria, where the alphabet now called Cyrillic was developed — named for Cyril, but probably the work of Clement of Ohrid, and a different script from the one he actually made. John Paul II declared them co-patrons of Europe in 1980, which settled nothing about who owns them.",
+            "quote": {
+                "text": "Does not God's rain fall upon all equally? Does not the sun shine on all? Do we not all breathe the air alike? Are you not ashamed to allow only three tongues, and to order all other peoples and tribes to be blind and deaf?",
+                "source": "The Life of Constantine, chapter 16, reporting Cyril's answer to the trilingualists at Venice"
+            }
+        },
+        {
+            "slug": "matteo-ricci",
+            "name": "Matteo Ricci",
+            "dates": "1552 - 1610",
+            "categories": [
+                "missionary"
+            ],
+            "tradition": "Society of Jesus; the China mission",
+            "role": "Mathematician, cartographer, and a European who was buried in Beijing",
+            "contribution": "He decided that the way into China was to become learned in Chinese terms, and did it: he mastered the classics, and after first wearing Buddhist robes changed to the silk of a Confucian scholar when he understood where authority actually lay. The world map he engraved in 1602 put China near the centre and was reprinted for the court; the True Meaning of the Lord of Heaven argued Christianity out of the Confucian canon rather than against it; and he concluded that the rites honouring ancestors and Confucius were civil acts of respect, not worship, and could therefore be kept by converts.",
+            "fate": "He reached Beijing in 1601 and was buried there by imperial grant in 1610, the first European given ground in the capital. The judgement about the rites did not survive him. Rival orders objected, Clement XI ruled against the Jesuit position, and Benedict XIV closed it in 1742 with Ex quo singulari, extending the ban to the Malabar rites in India as well; the Kangxi emperor, who had been favourable, responded by restricting Christian preaching. Pius XII reversed the prohibition by decree on 8 December 1939, two hundred years too late to matter. What was at issue was whether a convert must stop being Chinese, and the portal records that the answer was given twice, in opposite directions.",
             "quote": null
         },
         {
