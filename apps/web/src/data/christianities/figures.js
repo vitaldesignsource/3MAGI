@@ -1148,6 +1148,153 @@ export default {
             "contribution": "A Baptist mission catechist in the Belgian Congo who, on 6 April 1921 at Nkamba, laid hands on a sick woman and, in the account his church holds, healed her at the command of Christ. Thousands came; the mission stations emptied; workers left the colonial plantations to walk to Nkamba, which his followers call the New Jerusalem. His movement's own account presents him as the envoy sent to the Kongo people in fulfilment of prophecy, preaching monogamy, the renunciation of charms and ritual objects, sobriety and the reading of scripture in Kikongo. The colonial record presents him as a threat to public order and to the labour supply: after a few months of ministry the Belgian administration arrested him, and a military court sentenced him to death for sedition — a sentence commuted by King Albert I to life imprisonment. His church, legally recognised only in 1959, now numbers in the millions across central Africa.",
             "fate": "Imprisoned at Elisabethville, now Lubumbashi, for thirty years, and died there in 1951, having preached publicly for barely half a year. His body was returned to Nkamba in 1960.",
             "quote": null
+        },
+        {
+            "slug": "fausto-sozzini",
+            "name": "Fausto Sozzini",
+            "dates": "1539 - 1604",
+            "categories": [
+                "reformer",
+                "heresiarch"
+            ],
+            "tradition": "The Minor Reformed Church of Poland, called the Polish Brethren",
+            "role": "Layman, exile, and the theologian of a church that had no clergy to spare",
+            "contribution": "The most thorough dismantling of the inherited system attempted in the Reformation century. Sozzini held that Christ is a man, uniquely commissioned and now exalted, but not eternally pre-existent; that the atonement is not a satisfaction paid to divine justice, since a debt forgiven is not a debt paid; and that the soul is not naturally immortal but raised. He also argued, against nearly everyone in his century, that no magistrate may punish anyone for belief. He never took a formal office in the church he shaped, because as a layman he declined to be examined for one.",
+            "fate": "Died at Lusławice in Poland, where his gravestone was later broken up. The Racovian Catechism, published the year after his death and dedicated by its authors to James I of England, was burnt by the English Parliament in 1614 and by order of the Dutch authorities later; the Polish Brethren themselves were expelled from Poland by the Diet in 1658 and scattered to Transylvania, Prussia and the Netherlands. The influence, however, carried: Socinian is the word seventeenth-century English writers reached for when they meant a Christianity without the Trinity, and Locke and Newton both read these books carefully and were both accused of it.",
+            "quote": null
+        },
+        {
+            "slug": "joseph-smith",
+            "name": "Joseph Smith",
+            "dates": "1805 - 1844",
+            "categories": [
+                "reformer",
+                "modern",
+                "martyr"
+            ],
+            "tradition": "The Church of Jesus Christ of Latter-day Saints",
+            "role": "Prophet, translator, founder, and candidate for President of the United States",
+            "contribution": "He claimed a vision at fourteen in which the Father and the Son appeared as two distinct embodied persons, and everything distinctive in the theology follows from that: a Godhead of three separate beings one in purpose rather than in substance, a God who is himself embodied and was once a man, and human beings who are the same kind of being as God and may become as he is. Set against the Christologies door, this is the sharpest break in the whole portal — it does not adjust the Nicene settlement, it declines the categories the settlement was arguing in. He also produced scripture: the Book of Mormon in 1830, and afterwards the Doctrine and Covenants and the Book of Abraham.",
+            "fate": "Shot by a mob at Carthage Jail in Illinois on 27 June 1844, while awaiting trial and under the governor's pledge of protection, aged thirty-eight. The succession crisis split the movement into bodies that persist — the large church that went west under Brigham Young, and the Reorganized church, now Community of Christ, that stayed and kept his descendants as prophets.",
+            "quote": {
+                "text": "God himself was once as we are now, and is an exalted man, and sits enthroned in yonder heavens.",
+                "source": "The King Follett discourse, Nauvoo, April 1844, as reconstructed from four contemporary longhand reports"
+            }
+        },
+        {
+            "slug": "charles-taze-russell",
+            "name": "Charles Taze Russell",
+            "dates": "1852 - 1916",
+            "categories": [
+                "modern"
+            ],
+            "tradition": "The Bible Students, from whom Jehovah's Witnesses descend",
+            "role": "Haberdasher, publisher, and calculator of dates",
+            "contribution": "He rejected the Trinity, hellfire and the immortality of the soul together, on the ground that none of the three is in the text without the philosophy that was brought to it, and taught that Christ is the created Son, the first of God's works, who returned invisibly in 1874 to begin a harvest that would end the present order. Zion's Watch Tower began in 1879 and the six volumes of Studies in the Scriptures sold in the millions; the movement he built is the most successful of the nineteenth-century adventist bodies.",
+            "fate": "Died on a train near Pampa, Texas, in 1916. What matters for this portal is the discontinuity after him, which is routinely flattened: the name Jehovah's Witnesses was adopted in 1931 under his successor Rutherford, a substantial part of the Bible Student movement refused that reorganisation and continues separately to this day, and several of Russell's own teachings — including his chronology and his view of the Great Pyramid as a witness in stone — were subsequently dropped. He is the ancestor of the Witnesses and was not one.",
+            "quote": null
+        },
+        {
+            "slug": "albert-schweitzer",
+            "name": "Albert Schweitzer",
+            "dates": "1875 - 1965",
+            "categories": [
+                "modern"
+            ],
+            "tradition": "Alsatian Lutheran; afterwards Lambaréné",
+            "role": "New Testament scholar, organist, physician",
+            "contribution": "The Quest of the Historical Jesus, published in 1906, ended a century of liberal lives of Jesus by reading them: he showed that each biographer had produced a Jesus resembling himself, and that the method could not do otherwise. His own reconstruction was deliberately unwelcome — a thoroughly eschatological prophet who expected the Kingdom imminently, threw himself on the wheel of history to force it, and was broken by it. The conclusion that the historical Jesus is a stranger to the modern church is the position the Christologies door records, and Schweitzer is the reason it exists as a position.",
+            "fate": "He stopped. Having become a professor of theology and a Bach scholar of the first rank, he trained as a doctor and went in 1913 to Lambaréné in Gabon, where he ran a hospital for most of the next half-century; the Nobel Peace Prize came in 1952. The hospital's paternalism has been criticised since, and the critique is part of the record. He never retracted the book.",
+            "quote": {
+                "text": "He comes to us as One unknown, without a name, as of old, by the lake-side, He came to those men who knew Him not.",
+                "source": "The Quest of the Historical Jesus, closing paragraph, W. Montgomery's English of 1910"
+            }
+        },
+        {
+            "slug": "karl-barth",
+            "name": "Karl Barth",
+            "dates": "1886 - 1968",
+            "categories": [
+                "modern",
+                "reformer"
+            ],
+            "tradition": "Swiss Reformed",
+            "role": "Pastor, professor, and principal author of a confession written against a government",
+            "contribution": "His commentary on Romans, in its second edition of 1922, broke the liberal theology he had been trained in: God is not the highest human value but the one who addresses us from outside, and revelation is an act rather than a deposit. The Church Dogmatics that followed ran to thirteen part-volumes over thirty-five years and was left unfinished — the largest work of Christian theology since Aquinas, and organised throughout around the conviction that everything must be said christologically or not at all.",
+            "fate": "He drafted the Barmen Declaration of 1934, by which the Confessing Church refused the claim that any event, power or figure besides Jesus Christ could be a source of the church's proclamation — written while the German Christian movement was aligning the churches with the regime, and posted to Hitler personally. He would not open lectures with the Hitler salute or swear the oath unconditionally, and was removed from his chair at Bonn in 1935 and returned to Basel. After the war he argued, against the mood, for reconciliation with Germany and against rearmament on either side of the Cold War, and was widely disliked for both.",
+            "quote": {
+                "text": "Jesus Christ, as he is attested for us in Holy Scripture, is the one Word of God which we have to hear and which we have to trust and obey in life and in death.",
+                "source": "The Barmen Theological Declaration, thesis 1, May 1934"
+            }
+        },
+        {
+            "slug": "dietrich-bonhoeffer",
+            "name": "Dietrich Bonhoeffer",
+            "dates": "1906 - 1945",
+            "categories": [
+                "modern",
+                "martyr"
+            ],
+            "tradition": "German Lutheran; the Confessing Church",
+            "role": "Pastor, teacher of an illegal seminary, and conspirator",
+            "contribution": "Discipleship attacked what he called cheap grace — forgiveness preached without repentance and communion without confession — and insisted that the call of Christ is a call to come and die. The letters written from Tegel prison go further and are unfinished: they ask what Christianity becomes for a world that has learned to manage without the God brought in to fill its gaps, and float a religionless Christianity that he did not live to define. Because the fragments can be read several ways, he has been claimed by nearly every party since, which is a fact about his readers.",
+            "fate": "He returned to Germany in 1939 from the safety of New York because, he wrote, he would have no right to share in the restoration of Christian life there if he did not share the trials of the time. Through the Abwehr he joined the conspiracy against Hitler, having concluded that a Christian may have to take guilt upon himself rather than stay clean; arrested in April 1943, and hanged at Flossenbürg on 9 April 1945, two weeks before the camp was liberated. He was thirty-nine.",
+            "quote": {
+                "text": "When Christ calls a man, he bids him come and die.",
+                "source": "Nachfolge (Discipleship), 1937, chapter 2"
+            }
+        },
+        {
+            "slug": "maria-skobtsova",
+            "name": "Maria Skobtsova",
+            "dates": "1891 - 1945",
+            "categories": [
+                "modern",
+                "martyr",
+                "woman",
+                "mystic"
+            ],
+            "tradition": "Russian Orthodox in Paris",
+            "role": "Poet, revolutionary, twice divorced, and a nun who would not live in a convent",
+            "contribution": "She took monastic vows in 1932 on the explicit condition that her cell would be the city, and ran a house at 77 rue de Lourmel that fed and sheltered destitute Russian émigrés; her essays argue that the liturgy is unfinished when it ends, that the sacrament of the altar must be answered by the sacrament of the brother, and against a piety that uses the cloister to avoid people. It is one of the clearest Orthodox statements of an active, urban, secular holiness, and it was made in the face of considerable disapproval.",
+            "fate": "When the Germans occupied Paris, the house sheltered Jews and her chaplain Fr Dimitri Klepinin issued baptismal certificates to those who asked; after the Vélodrome d'Hiver round-up in 1942 she got into the stadium and helped bring children out in refuse bins. Arrested in February 1943 and sent to Ravensbrück, where she died in the gas chamber on 31 March 1945, Holy Saturday, a few days before the camp's liberation. The account that she went in place of another woman is reported by survivors and is not documented, and the portal records it as what it is. She, Klepinin, her son Yuri and Ilya Fondaminsky were glorified by the Ecumenical Patriarchate in January 2004; Yad Vashem numbers her among the Righteous Among the Nations.",
+            "quote": {
+                "text": "At the Last Judgment I shall not be asked whether I was successful in my ascetic exercises, but whether I fed the hungry, clothed the naked, visited the sick and the prisoner.",
+                "source": "Attributed in the memoirs of her circle and printed in the collected Essential Writings; no manuscript source is extant"
+            }
+        },
+        {
+            "slug": "john-xxiii",
+            "name": "John XXIII",
+            "dates": "1881 - 1963",
+            "categories": [
+                "modern"
+            ],
+            "tradition": "Roman Catholic",
+            "role": "Peasant's son, wartime diplomat, and the pope elected to do nothing",
+            "contribution": "He was seventy-six at his election in 1958 and was widely understood to be a placeholder. Within three months he announced an ecumenical council. Vatican II, which opened in 1962, admitted Protestant and Orthodox observers, turned the liturgy toward the vernacular, and produced on the church, on revelation, on religious liberty and on the non-Christian religions documents that changed what the largest church on earth said about everyone outside it — including a repudiation of the charge of deicide against the Jewish people, for which he had personally pressed.",
+            "fate": "He died of stomach cancer in June 1963 between the first and second sessions, having steered none of the results; the council was carried on and closed by Paul VI. Earlier, as apostolic delegate in Istanbul during the war, he had issued transit documents and baptismal certificates that helped Jews escape, a record that was not publicised in his lifetime. Canonized in 2014, alongside John Paul II, in a pairing widely read as balancing the two directions the council left behind.",
+            "quote": {
+                "text": "We will open the windows of the Church so that we can see out and the people can see in.",
+                "source": "Widely attributed and not found in his written works; the aggiornamento he did write of is documented in the bull Humanae Salutis, 1961"
+            }
+        },
+        {
+            "slug": "oscar-romero",
+            "name": "Óscar Romero",
+            "dates": "1917 - 1980",
+            "categories": [
+                "modern",
+                "martyr"
+            ],
+            "tradition": "Roman Catholic, El Salvador",
+            "role": "Archbishop, broadcaster, and a conservative appointment who changed",
+            "contribution": "This is the part usually told wrongly. He was chosen as Archbishop of San Salvador in 1977 precisely because he was cautious and doctrinally safe, and the country's reforming clergy were dismayed by the appointment. Three weeks later his friend Rutilio Grande was murdered, and Romero went to the body. What followed was a weekly homily broadcast by radio across the country in which he read out the names of the disappeared and the killed, a practice that made the archdiocesan station the most listened-to in El Salvador and the most frequently bombed. He never described himself as a liberation theologian and his authority was pastoral rather than academic.",
+            "fate": "On 24 March 1980, the day after he had publicly ordered soldiers in the name of God to stop the repression and disobey orders to kill, he was shot through the heart while celebrating Mass at the chapel of the Divine Providence hospital. The funeral was fired on and dozens died. Rome moved slowly for decades, the cause held up over whether he had died for the faith or for a political position; he was declared a martyr in 2015 and canonized in 2018.",
+            "quote": {
+                "text": "In the name of God, and in the name of this suffering people, I beg you, I beseech you, I order you in the name of God: stop the repression.",
+                "source": "Homily, San Salvador cathedral, 23 March 1980, the day before his murder"
+            }
         }
     ]
 };
