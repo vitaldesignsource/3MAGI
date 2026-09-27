@@ -104,12 +104,6 @@ export const lampPostCategories = [
         glyph: '☉',
         items: [
             {
-                headline: 'Lives and Literacy in Ancient Egypt',
-                meta: 'Austin, Texas · Harry Ransom Center · Through August 2, 2026',
-                link: 'https://www.hrc.utexas.edu/exhibitions/2026/lives-and-literacy-in-ancient-egypt/',
-                copy: 'This exhibition contains rare papyri from Greco-Roman Egypt, including magical spells and texts rarely placed on public display. It is one of the best current opportunities in the United States to see authentic ancient writing connected with ritual and everyday religious practice.',
-            },
-            {
                 headline: 'A Witness to Witchcraft: Stewart Farrar and…',
                 meta: 'Cornwall, England · Museum of Witchcraft and Magic · 2026 Seasonal Exhibition',
                 link: 'https://museumofwitchcraftandmagic.co.uk',
@@ -246,6 +240,15 @@ export const lampPostCategories = [
                     { label: 'Archaeology Magazine', url: 'https://archaeology.org/news/2026/02/18/unique-cone-shaped-vessels-may-have-been-beeswax-lamps/' },
                 ]
             },
+            {
+                headline: 'The tomb of Sekhentyu-Ptah, Royal Chamberlain, at Saqqara',
+                meta: 'Egypt · Bubasteion Necropolis · Announced August–September 2026',
+                copy: "Egypt's Ministry of Tourism and Antiquities announced the discovery of an intact Old Kingdom tomb belonging to Sekhentyu-Ptah, a high official who held the titles Royal Chamberlain, Overseer of All the Works of the King, and Keeper of the Secrets of Royal Decrees. The funerary chapel preserved its false door in situ, together with a complete set of inscribed alabaster ritual tools — an offering table, a purification basin, an ewer, and a disc — still standing where they had been placed. The surrounding burial shafts, evidently reused across later periods, also produced a wooden falcon statue, painted funerary cartonnage, and more than a hundred faience ushabti figures. Because the ritual equipment survived undisturbed and in position, the find is unusually informative about how an Old Kingdom funerary chapel was actually furnished and used, rather than how later texts describe it.",
+                links: [
+                    { label: 'Smithsonian Magazine', url: 'https://www.smithsonianmag.com/smart-news/archaeologists-discover-a-4000-year-old-tomb-with-a-false-door-at-egypts-ancient-saqqara-necropolis-180989438/' },
+                    { label: 'Archaeology Magazine', url: 'https://archaeology.org/news/2026/09/01/4000-year-old-tomb-unearthed-in-saqqara/' },
+                ]
+            },
         ],
     },
     {
@@ -342,9 +345,13 @@ export const lampPostCategories = [
         glyph: '▣',
         items: [
             {
-                headline: 'A reassessment of ritual purity language in temple inscriptions',
-                meta: 'Peer-Reviewed · Summary',
-                copy: 'A recent paper reexamines formulaic purity language across a corpus of temple inscriptions, arguing the phrasing tracks an evolving theology of threshold and access rather than static ritual law.',
+                headline: 'Phytolith evidence for 25,000 years of ritual burning at Cloggs Cave',
+                meta: 'Frontiers in Environmental Archaeology · 2026 · DOI 10.3389/fearc.2026.1871928',
+                copy: "A study by Elle Grono, Bruno David and colleagues, undertaken with the GunaiKurnai Land and Waters Aboriginal Corporation, examined microscopic plant remains from Cloggs Cave in southeastern Australia. Phytolith analysis shows that whole grass plants — stems, leaves, flowers and roots together — were deliberately gathered from outside the cave, carried in, spread in thin layers, and burned, a practice the deposits suggest recurred for as long as 25,000 years. The pattern corresponds to nineteenth-century ethnographic accounts of GunaiKurnai mulla-mullung, knowledge-holders who used the resulting ash in magic, healing, cursing and other spiritual practices. It is a rare case in which an archaeological signature can be checked against a documented ritual grammar rather than reconstructed from silence.",
+                links: [
+                    { label: 'Frontiers in Environmental Archaeology (open access)', url: 'https://www.frontiersin.org/journals/environmental-archaeology/articles/10.3389/fearc.2026.1871928/full' },
+                    { label: 'Smithsonian Magazine', url: 'https://www.smithsonianmag.com/smart-news/aboriginal-spiritual-leaders-performed-magic-healing-cursing-rituals-in-this-australian-cave-for-25000-years-new-research-finds-180989178/' },
+                ]
             },
         ],
     },
@@ -405,6 +412,12 @@ export const lampPostCategories = [
         title: 'New Book Releases',
         glyph: '▤',
         items: [
+            {
+                headline: 'The Book of Fo',
+                meta: 'Edward Vaughan Kenealy · Aula Lucis · Forthcoming',
+                link: 'https://aulalucis.com/forthcoming/',
+                copy: "Aula Lucis is preparing the first reprint of The Book of Fo, originally published in London in 1878 as the third and final volume of Edward Vaughan Kenealy's trilogy on Adam-Oannes, Enoch and Fo-Hi as successive Messengers from God to Man. Kenealy self-published the trilogy in small numbers in the nineteenth century and it has not been reissued since. The book's discourses range across mysticism, mythology, cosmology and comparative theology. Aula Lucis intends to follow it with reprints of the trilogy's other two volumes.",
+            },
             {
                 headline: 'On Dreams',
                 meta: 'Synesius · Aula Lucis · Presale',
