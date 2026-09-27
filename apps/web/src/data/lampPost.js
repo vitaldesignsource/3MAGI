@@ -104,21 +104,26 @@ export const lampPostCategories = [
         glyph: '☉',
         items: [
             {
-                headline: 'Lives and Literacy in Ancient Egypt',
-                meta: 'Austin, Texas · Harry Ransom Center · Through August 2, 2026',
-                link: 'https://www.hrc.utexas.edu/exhibitions/2026/lives-and-literacy-in-ancient-egypt/',
-                copy: 'This exhibition contains rare papyri from Greco-Roman Egypt, including magical spells and texts rarely placed on public display. It is one of the best current opportunities in the United States to see authentic ancient writing connected with ritual and everyday religious practice.',
+                headline: "Tarot's Renaissance origins and modern afterlives, side by side",
+                meta: 'New York · The Morgan Library & Museum · June 26 – October 4, 2026',
+                link: 'https://www.themorgan.org/exhibitions/tarot',
+                copy: 'The Morgan Library & Museum has brought together some 380 objects — fifteenth-century Italian tarocchi cards, later decks, manuscripts, and audiovisual material — for an exhibition presented in two connected halves. "Renaissance Symbols" traces the game\'s origins in Quattrocento Italy; "Modern Visions" follows the 1909 Rider-Waite-Smith deck\'s influence on artists including André Breton, Leonora Carrington, Remedios Varo, and Betye Saar. It is one of the more substantial museum treatments of tarot\'s actual history, as distinct from its popular use, currently on view anywhere.',
+                links: [
+                    { label: 'The Morgan Library & Museum', url: 'https://www.themorgan.org/exhibitions/tarot' },
+                    { label: 'Smithsonian Magazine', url: 'https://www.smithsonianmag.com/smart-news/see-visions-of-the-past-and-future-in-this-new-york-city-exhibition-on-the-renaissance-roots-of-tarot-cards-180988940/' },
+                ],
             },
             {
-                headline: 'A Witness to Witchcraft: Stewart Farrar and…',
-                meta: 'Cornwall, England · Museum of Witchcraft and Magic · 2026 Seasonal Exhibition',
-                link: 'https://museumofwitchcraftandmagic.co.uk',
-                copy: "The museum's 2026 exhibition focuses on Stewart Farrar and the development of modern witchcraft. Farrar was an author, journalist, initiate, and major recorder of Alexandrian Wicca. The exhibition draws upon manuscripts, photographs, ritual objects, correspondence, and archival material.",
+                headline: 'A Witness to Witchcraft: Stewart Farrar and the Modern Craft',
+                meta: 'Cornwall, England · Museum of Witchcraft and Magic · Opened March 19, 2026',
+                link: 'https://museumofwitchcraftandmagic.co.uk/news/a-witness-to-witchcraft/',
+                copy: "The museum's 2026 seasonal exhibition focuses on Stewart Farrar and the development of modern witchcraft. Farrar was an author, journalist, initiate, and major recorder of Alexandrian Wicca. The exhibition draws upon manuscripts, photographs, ritual objects, correspondence, and archival material.",
             },
             {
                 headline: 'The Haunted Warren Museum',
-                meta: 'Salem, Massachusetts · August 27 – November 1, 2026',
-                copy: 'The Warren collection is scheduled for a temporary public presentation in Salem, including the Annabelle doll and objects associated with Ed and Lorraine Warren\'s paranormal investigations. Best approached as paranormal popular culture and entertainment rather than scholarly occult history.',
+                meta: 'Salem, Massachusetts · August 27 – December 23, 2026',
+                link: 'https://www.salem.org/listing/haunted-warren-museum/',
+                copy: 'The Warren collection is on temporary public display in Salem, including the Annabelle doll and objects associated with Ed and Lorraine Warren\'s paranormal investigations. Best approached as paranormal popular culture and entertainment rather than scholarly occult history.',
             },
         ],
     },
@@ -246,6 +251,24 @@ export const lampPostCategories = [
                     { label: 'Archaeology Magazine', url: 'https://archaeology.org/news/2026/02/18/unique-cone-shaped-vessels-may-have-been-beeswax-lamps/' },
                 ]
             },
+            {
+                headline: 'Golden tongues for the dead at Oxyrhynchus',
+                meta: 'Egypt · El-Bahnasa, Minya · announced April 2026',
+                copy: "A University of Barcelona team excavating the Roman-period cemetery at Oxyrhynchus, in Egypt's El-Bahnasa district, has recovered small tongues of gold — and one of copper — placed inside the mouths of the dead. Alongside them lay twenty-nine djed-pillar amulets, small figures of Horus and Isis, and plaques showing Harpocrates flanked by Isis and Nephthys. Archaeologists connect the gold tongues to the belief that the dead required the power of speech to address the gods of the afterlife, a practice known from earlier Ptolemaic burials but rarely recovered with this much surrounding ritual apparatus intact. One burial also held a papyrus fragment preserving lines from the Iliad's Catalogue of Ships, folded into a mummy's wrapping.",
+                links: [
+                    { label: 'Archaeology Magazine', url: 'https://archaeologymag.com/2026/04/roman-cemetery-in-minya-reveals-golden-tongues/' },
+                    { label: 'HeritageDaily report', url: 'https://www.heritagedaily.com/2026/04/ancient-dead-with-gold-tongues-discovered-in-minya/157832' },
+                ]
+            },
+            {
+                headline: 'A well opened for a goddess, closed with the dead',
+                meta: 'Italy · Kainua, Marzabotto · announced August 2026',
+                copy: "Excavators working in the sacred precinct of Uni at the Etruscan city of Kainua, near Marzabotto in Emilia-Romagna, have uncovered a ritual well whose deposits span the life of the settlement. At its foundation, in the late sixth or early fifth century BCE, two bronze female figurines and a bronze plate were lowered into the shaft as offerings to the goddess; preserved in low-oxygen, waterlogged fill, the bronze still carries its original lustre. Centuries later the well appears to have been ritually closed with the burial of two adult skeletons, though the excavation team — led by Elisabetta Govi, professor of Etruscology at the University of Bologna — has not established how those individuals died. The find gives an unusually continuous physical record of an Etruscan foundation rite, from opening to closing.",
+                links: [
+                    { label: 'University of Bologna (DISCI)', url: 'https://disci.unibo.it/en/research/archaeological-missions/archaeological-missions-italy/etruscan-city-kainua-marzabotto' },
+                    { label: 'Live Science', url: 'https://www.livescience.com/archaeology/archaeologists-discover-etruscan-well-that-was-ritually-opened-with-offerings-for-a-goddess-and-closed-with-human-bodies' },
+                ]
+            },
         ],
     },
     {
@@ -342,9 +365,13 @@ export const lampPostCategories = [
         glyph: '▣',
         items: [
             {
-                headline: 'A reassessment of ritual purity language in temple inscriptions',
-                meta: 'Peer-Reviewed · Summary',
-                copy: 'A recent paper reexamines formulaic purity language across a corpus of temple inscriptions, arguing the phrasing tracks an evolving theology of threshold and access rather than static ritual law.',
+                headline: 'A field-wide reassessment of curse tablets in the Roman West',
+                meta: 'Alex Mullen · Journal of Roman Studies · 2026',
+                copy: "Alex Mullen, of the University of Nottingham, surveys the recent wave of scholarship on Roman-period curse tablets from Britain and the western provinces, reading corpora including Sánchez Natalías's collection of non-Greek tablets, Tomlin's edition of the Uley finds, and McKie's study of cursing practice and society against one another. The article asks what the distribution, materials, and phrasing of curses across these regional bodies of evidence can say about literacy, ritual specialism, and the people who felt driven to write them. It is a useful scholarly frame for judging how unusual, or how ordinary, any single newly excavated tablet — such as the Heerlen find reported elsewhere on this page — actually is.",
+                links: [
+                    { label: 'Journal of Roman Studies (DOI)', url: 'https://doi.org/10.1017/S0075435826101397' },
+                    { label: 'Cambridge University Press', url: 'https://www.cambridge.org/core/journals/journal-of-roman-studies/article/cursing-and-curse-tablets-in-the-roman-west/F6EB452071D0E962A93611DD4305193B' },
+                ],
             },
         ],
     },
@@ -405,6 +432,12 @@ export const lampPostCategories = [
         title: 'New Book Releases',
         glyph: '▤',
         items: [
+            {
+                headline: 'Ronald Hutton turns from British paganism to eight ancient goddesses',
+                meta: 'Ronald Hutton · Yale University Press · October 27, 2026',
+                link: 'https://yalebooks.yale.edu/book/9780300290721/goddesses/',
+                copy: "Hutton's forthcoming Goddesses: A History of Love and War moves from his usual ground in British folklore and modern paganism to trace eight goddesses of love and war across the ancient Mediterranean and Near East, among them Sumerian Inanna, Greek Aphrodite, and Egyptian Hathor. The book is due from Yale University Press on October 27, 2026, running to 304 pages. Given Hutton's record — The Triumph of the Moon remains a standard reference on the sources of modern witchcraft — this is likely to be read closely by anyone tracking how these figures have been reconstructed, and reinvented, across centuries of source material.",
+            },
             {
                 headline: 'On Dreams',
                 meta: 'Synesius · Aula Lucis · Presale',
