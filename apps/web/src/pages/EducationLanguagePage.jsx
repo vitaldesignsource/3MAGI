@@ -1,6 +1,7 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { Helmet } from 'react-helmet';
 import { Link, useParams, Navigate } from 'react-router-dom';
+import ScriptoriumSay, { useSay } from '../components/ScriptoriumSay';
 import ThirdLampHeader from '../components/ThirdLampHeader';
 import ThirdLampFooter from '../components/ThirdLampFooter';
 import ScriptoriumCorpus from '../components/ScriptoriumCorpus';
@@ -128,6 +129,7 @@ function EducationLanguagePage() {
     const data = bundle?.data;
 
     const rtl = ['hebrew', 'arabic', 'syriac', 'aramaic', 'persian', 'mandaic', 'avestan', 'phoenician'].includes(lang);
+    const say = useSay(lang);
 
     const lexicon = useMemo(() => {
         if (!data) return [];
@@ -291,6 +293,7 @@ function EducationLanguagePage() {
                                     {letter.alt && <div><dt>{letter.altLabel || 'Other script'}</dt><dd className="edu-glyph">{letter.alt}</dd></div>}
                                     {corr && corr.has(letter.name) && <div><dt>Correspondence</dt><dd>{corr.get(letter.name)}</dd></div>}
                                 </dl>
+                                <ScriptoriumSay say={say} idx={selected} letter={letter.name} hall={lang} />
                                 <p className="edu-plaque-note">{letter.note}</p>
                             </div>
                         </aside>

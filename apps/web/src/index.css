@@ -12068,6 +12068,146 @@ figure.ch-gallery-card { margin: 0; }
 }
 .ch-group:first-of-type .pw-divider { display: none; }
 
+/* "Hear it" — the pronunciation strip, recovered with its recordings from the
+   compiled deploy build of source commit d79f864. Rules are the live
+   stylesheet's own, re-expanded from the minified build. */
+.edu-say {
+  margin:1rem 0 .9rem;
+  padding-top:.9rem;
+  border-top:1px solid rgba(209,173,104,.18);
+}
+.edu-say-row {
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  gap:.5rem;
+}
+.edu-say-label {
+  font-family:Cinzel,Georgia,serif;
+  font-size:.7rem;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+  color:#d1ad68b3;
+  margin-right:.2rem;
+}
+.edu-say-btn {
+  display:inline-flex;
+  align-items:center;
+  gap:.4rem;
+  padding:.32rem .75rem;
+  border:1px solid rgba(209,173,104,.34);
+  background:#16110c99;
+  font-family:Georgia,Times New Roman,serif;
+  font-size:.84rem;
+  color:#eee4d0e0;
+  cursor:pointer;
+  transition:border-color .16s ease,color .16s ease,background .16s ease;
+}
+.edu-say-btn:hover {
+  border-color:#d1ad68b3;
+  color:#f6ead0;
+}
+.edu-say-btn.is-playing {
+  border-color:#d1ad68d9;
+  background:#d1ad681f;
+  color:#f6ead0;
+}
+.edu-say-mark {
+  font-size:.62em;
+  color:#d1ad68d9;
+}
+.edu-say-why {
+  padding:.3rem .2rem;
+  border:0;
+  background:none;
+  cursor:pointer;
+  font-family:Georgia,Times New Roman,serif;
+  font-style:italic;
+  font-size:.8rem;
+  color:#c6baa699;
+  text-decoration:underline;
+  text-underline-offset:3px;
+  text-decoration-color:#d1ad684d;
+}
+.edu-say-why:hover {
+  color:#e2d8c6e6;
+}
+.edu-say-note {
+  margin-top:.75rem;
+  padding:.8rem .95rem;
+  border-left:2px solid rgba(209,173,104,.3);
+  background:#120e0a80;
+}
+.edu-say-note p {
+  margin:0 0 .5rem;
+  font-family:Georgia,Times New Roman,serif;
+  font-size:.85rem;
+  line-height:1.7;
+  color:#e2d8c6c7;
+}
+.edu-say-note p:last-child {
+  margin-bottom:0;
+}
+.edu-say-note strong {
+  color:#d1ad68e6;
+  font-weight:400;
+}
+.edu-say-ipa {
+  font-family:Gentium Plus,Charis SIL,Georgia,serif;
+  color:#eee4d0e6;
+}
+.edu-say-system {
+  margin-bottom:1rem;
+}
+.edu-say-system:last-of-type {
+  margin-bottom:.4rem;
+}
+.edu-say-sysline {
+  margin-bottom:.35rem!important;
+}
+.edu-say-conf {
+  margin-left:.5rem;
+  padding:.05rem .4rem;
+  border:1px solid rgba(180,150,110,.4);
+  font-family:Cinzel,Georgia,serif;
+  font-size:.6rem;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+  color:#ceb48ccc;
+}
+.edu-say-conf.is-low {
+  border-color:#be82648c;
+  color:#d6a082e6;
+}
+.edu-say-why-text {
+  color:#e2d8c6cc!important;
+}
+.edu-say-compromise em {
+  color:#d1ad68d9;
+  font-style:normal;
+  letter-spacing:.04em;
+}
+.edu-say-sysnote {
+  padding-left:.8rem;
+  border-left:1px solid rgba(209,173,104,.22);
+  font-style:italic;
+  color:#c6baa6a8!important;
+  font-size:.8rem!important;
+}
+.edu-say-hallnote {
+  margin-top:.8rem!important;
+  padding-top:.7rem;
+  border-top:1px solid rgba(209,173,104,.16);
+  font-style:italic;
+  color:#c6baa69e!important;
+  font-size:.8rem!important;
+}
+.edu-say-caveat {
+  font-style:italic;
+  color:#c6baa694!important;
+  font-size:.8rem!important;
+}
+
 /* Hall hero art, recovered with the images from the compiled deploy build of
    source commit d79f864. A hall without art degrades to the plain hero. */
 .edu-lang-hero.has-image {
