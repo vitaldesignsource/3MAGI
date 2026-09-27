@@ -55,6 +55,163 @@ export default {
             oddity: 'It is the only one of the three that anybody reads for pleasure. Formally strange, frequently funny, and structurally an alchemical operation in which the reader who wants the recipe is handed a moral education instead — it is the direct ancestor of the initiatic narrative as a genre.',
         },
     ],
+    // The six agreements. The page had been diagramming the Fama for three
+    // sections without ever printing a word of it, which is an odd way to treat
+    // the founding document. The wording is Vaughan's English of 1652 — the
+    // hall's rule holds, and the note says where it comes from. What stands
+    // under each article is the site's own and is marked as such by being a
+    // separate field.
+    rulesIntro: [
+        'In the middle of the story of the founder’s death the Fama stops and lists, in six numbered articles, what the brothers agreed among themselves. It is the only place in the founding documents where the brotherhood says plainly what it is, and what it turns out to be is an administrative document: a constitution for eight people, with a meeting, a succession procedure and an absence note.',
+        'The wording below is Thomas Vaughan’s English of 1652, printed at London as *The Fame and Confession of the Fraternity of R:C:*, which is how the Fama has been read in English ever since. Everything under an article is this page’s, not the Fama’s.',
+    ],
+    rules: [
+        {
+            n: 1,
+            label: 'To cure the sick, and that gratis',
+            text: 'That none of them should profess any other thing, then to cure the sick, and that gratis.',
+            after: 'The first article and the only one nobody ever dropped. It comes back as an oath in the Chymical Wedding, where the new-made Knights of the Golden Stone swear to serve the sick freely and to take no worldly rank for it; Maier expounds it at length in the Themis aurea; and it is still being kept — Heindel’s Rosicrucian Fellowship has run a healing department out of Oceanside for more than a century. A movement with no verifiable founder has held to its first rule for four hundred years.',
+        },
+        {
+            n: 2,
+            label: 'No habit, but the custom of the country',
+            text: 'None of the Posterity should be constrained to wear one certain kind of habit, but therein to follow the custom of the Country.',
+            after: 'This is the whole of the brotherhood’s famous invisibility: not a magical property but a rule about clothes. Wear what the locals wear and you cannot be picked out of a crowd. The Paris placards of 1623 took the word at its other value and announced deputies of the College *visible and invisible* in the city, and the pun has been read as sorcery ever since. Every order that later took the name broke this article first — the Societas Rosicruciana, the Golden Dawn and AMORC all vest, and the robes are the most recognisable thing about them.',
+        },
+        {
+            n: 3,
+            label: 'The day C., at the house S. Spiritus',
+            text: 'That every year upon the day C. they should meet together at the house S. Spiritus, or to write the cause of his absence.',
+            after: 'The one article that would have left a record. A named building and a fixed date, both given as initials: the house Sancti Spiritus has never been identified with any real place, and the day C. has been read as Corpus Christi, as the C of the founder’s own name, and as nothing in particular. An annual general meeting with an attendance requirement and a written excuse for absence is precisely the sort of arrangement that generates paper. No paper exists.',
+        },
+        {
+            n: 4,
+            label: 'Each to find the one who succeeds him',
+            text: 'Every Brother should look out for a worthy person, who after his discease might succeed him.',
+            after: 'Succession by co-option, which fixes the membership for good: eight men, replaced one at a time. It is the article that makes the brotherhood impossible to join, and it explains the strangest fact of the furore — several hundred open letters, and not one answer. There was no procedure for answering them even in the brotherhood’s own constitution. It is also the first article every real order abandoned; the Gold- und Rosenkreuz recruited in the thousands out of the Masonic lodges.',
+        },
+        {
+            n: 5,
+            label: 'C. R. their seal, mark and character',
+            text: 'The word C. R. should be their Seal, Mark, and Character.',
+            after: 'Kept, and kept visibly. The altar in the vault carries initials and not a name, the Fama calls its own founder Fra. C.R.C. through most of its length, and initial-for-name becomes a habit the tradition never loses — down to the Latin mottoes of the Golden Dawn grades. The man who put this article into English did it under the name Eugenius Philalethes, which on the evidence of article five is entirely in order.',
+        },
+        {
+            n: 6,
+            label: 'Secret one hundred years',
+            text: 'The Fraternity should remain secret one hundred years.',
+            after: 'The only article with arithmetic in it, and the arithmetic does not close. The brothers agree to a hundred years of silence in the founder’s lifetime; the door of the vault promises a hundred and twenty; the founder dies in 1484 and the tomb is opened in 1604; the Fama is in print in 1614 and was circulating in manuscript by about 1610. Whichever clock you start, the brotherhood is late. The discrepancy has been read as careless composition and as deliberate cipher, and there is no settling it from inside the text.',
+        },
+    ],
+    rulesCoda: 'Michael Maier wrote a book about these six sentences. The *Themis aurea* of 1618 — *the laws of the fraternity of the Rosie Crosse* in the English of 1656 — takes the articles in turn and expounds each at length, and it is worth being clear about what that means. The fullest account of Rosicrucian practice printed in the seventeenth century is a commentary, by a man who stated he was not a member, on six sentences from a book whose probable author would declare the whole business a chaos the following year.',
+
+    // The furore. The ledger's last row rests on a number — four hundred works
+    // in a decade — and a number on its own is not evidence. These are the
+    // books the number is made of, with their side declared, because who was
+    // on which side is the most misremembered thing about the affair.
+    furoreIntro: [
+        'Europe answered the manifestos in print, and the answer is the phenomenon. What follows is not the four hundred; it is the dozen that set the terms, in the order they appeared. Watch who is on which side. The two men who built the doctrine were not members and said so in the books that built it; the man who wrote the third manifesto spent 1619 disowning it; and the most serious attack came from a chemist who objected to the chemistry.',
+    ],
+    sides: [
+        { key: 'for', label: 'In its defence', note: 'Written to answer the attacks — in every case by someone who denied being a member.' },
+        { key: 'doctrine', label: 'Where the doctrine came from', note: 'Not arguments about the brotherhood, but the books an educated public mistook for its teaching.' },
+        { key: 'against', label: 'Against it', note: 'Written to refute, on theological or medical grounds.' },
+        { key: 'apart', label: 'Taken apart', note: 'Written to establish what had actually happened, by the methods of the archive.' },
+        { key: 'satire', label: 'At its expense', note: 'Written to make it ridiculous — sometimes by people who had wanted to believe it.' },
+        { key: 'disowned', label: 'Disowning it', note: 'Written by its own author, to be rid of it.' },
+        { key: 'instead', label: 'Instead of it', note: 'The thing he wrote once he had given up on the brotherhood.' },
+        { key: 'english', label: 'Into English', note: 'The translation that carried the manifestos into the language that would take them furthest.' },
+    ],
+    furore: [
+        {
+            year: '1612',
+            author: 'Adam Haslmayr',
+            slug: 'haslmayr-antwort',
+            title: 'Antwort an die lobwürdige Brüderschafft der Theosophen vom RosenCreutz',
+            side: 'for',
+            note: 'The first public word about the brotherhood, printed two years before the Fama itself, by a Tyrolean schoolmaster and notary who had read a manuscript copy and answered it in print. In August of the same year the authorities took him, and he went to the Genoese galleys for four and a half years. The earliest hard fact in Rosicrucian history is a man punished for wanting to join.',
+        },
+        {
+            year: '1615',
+            author: 'Andreas Libavius',
+            slug: 'libavius-analysis',
+            title: 'Analysis confessionis Fraternitatis de Rosea Cruce',
+            side: 'against',
+            note: 'The most serious attack, and the only one from inside a laboratory. Libavius had written what is generally counted the first systematic chemistry textbook, the *Alchemia* of 1597, and he was rector of the Gymnasium at Coburg and an Aristotelian. He read the Confessio twice over: as theology, where he held that Scripture promises no perfection of the world before the Second Coming, and as medicine, where he held the Paracelsian cures to be dangerous quackery. Both Fludd and Maier answered him.',
+        },
+        {
+            year: '1616',
+            author: 'Robert Fludd',
+            slug: 'fludd-apologia',
+            title: 'Apologia Compendiaria Fraternitatem de Rosea Cruce ... abluens',
+            side: 'for',
+            note: 'An English physician, writing in Latin at Leiden, defends a German brotherhood he has never met against a German chemist — and says in the text that he is not one of them. Expanded the next year into the *Tractatus Apologeticus*. It made his reputation across Europe as a Rosicrucian, which he was not, and the reputation outlived every argument in the book.',
+        },
+        {
+            year: '1617',
+            author: 'Michael Maier',
+            slug: 'maier-silentium',
+            title: 'Silentium post clamores',
+            side: 'for',
+            note: 'Silence after the clamour, and Maier has the awkward brief: the brotherhood has been shouted at for three years and has not replied. His answer is that the silence is proper — the wise do not answer a crowd, and the worthy are found without advertisement. It is the argument every unfalsifiable tradition has made since, and he makes it well. He also states plainly that he is not a member and has met none.',
+        },
+        {
+            year: '1617',
+            author: 'Michael Maier',
+            slug: 'maier-atalanta',
+            title: 'Atalanta fugiens',
+            side: 'doctrine',
+            note: 'Not a defence, and the most beautiful book in the whole controversy: fifty emblems, each with a motto, an epigram, a prose discourse, and a fugue in three voices to be sung — Atalanta fleeing, Hippomenes pursuing, the golden apple falling behind. Printed at Oppenheim for Johann Theodore de Bry, with the plates engraved after Matthäus Merian. What the seventeenth century took Rosicrucianism to *be*, it largely learnt here, from a book that never argues for it.',
+        },
+        {
+            year: '1618',
+            author: 'Michael Maier',
+            slug: 'maier-themis',
+            title: 'Themis aurea',
+            side: 'for',
+            note: 'The laws of the fraternity, article by article — a full commentary on the six agreements above, and the most substantial account of Rosicrucian practice printed in the century. The English of 1656 has, bound in at the back, an epistle to the Fraternity in Latin *from some here in England*: a letter to nobody, printed and sold with the book.',
+        },
+        {
+            year: '1619',
+            author: 'Johann Valentin Andreae',
+            slug: 'andreae-turris-babel',
+            title: 'Turris Babel sive judiciorum de Fraternitate Rosaceae Crucis chaos',
+            side: 'disowned',
+            note: 'The Tower of Babel, or the chaos of judgements concerning the Fraternity of the Rosy Cross: twenty-five dialogues in which the author of the Chymical Wedding surveys five years of argument and walks out of it. He does not stop wanting the general reformation — he wants it for the rest of his life — he stops believing there is anybody there to do it. The founding author is the tradition’s first debunker, and the hunt went on without him for four centuries.',
+        },
+        {
+            year: '1619',
+            author: 'Johann Valentin Andreae',
+            slug: 'andreae-christianopolis',
+            title: 'Reipublicae Christianopolitanae descriptio',
+            side: 'instead',
+            note: 'Christianopolis: a city on a square island, a hundred citizens, government by the learned, and a curriculum set out room by room. Printed at Strasbourg by the heirs of Lazarus Zetzner, who had printed the Chymical Wedding three years before. It is everything the manifestos promised, with a street plan and no secret — the same year he printed the book giving up on the secret.',
+        },
+        {
+            year: '1623',
+            author: 'Gabriel Naudé',
+            slug: 'naude-instruction',
+            title: 'Instruction à la France sur la vérité de l’histoire des Frères de la Roze-Croix',
+            side: 'apart',
+            note: 'The placards go up in Paris in the summer; by the end of the year a twenty-three-year-old medical student — later librarian to Mazarin, and the man who wrote the first treatise on how to build a library — has published the book that ends the affair in France. His method is the modern one: read the documents, date them, ask who profits. He does it without believing in magic and without much moral heat, which is why it still reads well. Descartes, back from Germany and rumoured to be one of them, took care to be seen about town.',
+        },
+        {
+            year: '1631',
+            author: 'Jan Amos Comenius',
+            slug: 'comenius-labyrint',
+            title: 'Labyrint světa a ráj srdce',
+            side: 'satire',
+            note: 'The Labyrinth of the World and the Paradise of the Heart, in Czech, with a whole chapter on the brotherhood. The pilgrim watches the Rose Brethren open their treasury and put painted boxes up for sale under splendid titles — a guide to the great world and the little, a harmony of the two cosmoses, the Christian Cabala, which are Fludd’s titles with the serial numbers filed off — and the buyers who cannot resist opening them find nothing inside at all. The dealer explains that the contents are invisible to any but the sons of science. Comenius had been close enough to the movement that the opening of his own first chapter is a paraphrase of Andreae.',
+        },
+        {
+            year: '1652',
+            author: 'Thomas Vaughan, as Eugenius Philalethes',
+            slug: 'vaughan-fame-and-confession',
+            title: 'The Fame and Confession of the Fraternity of R:C:',
+            side: 'english',
+            note: 'The manifestos into English at last, thirty-eight years late, in the middle of the English revolution, by a Welsh alchemist and clergyman writing under a pseudonym. Every English sentence of the Fama on this page is his. The tradition arrived in the language that would carry it furthest by way of a translator who did not use his own name.',
+        },
+    ],
     ledgerIntro: [
         'The Rosicrucian literature is unusually rich in claims that can actually be checked, and checking them is more interesting than either believing or debunking. What follows is every load-bearing claim made about the tradition’s origins — by its adherents and by its detractors — with what the record will bear beside it.',
         'The ledger is not a debunk. Two of these rows come out in the tradition’s favour, and the last one is as firmly established as anything here.',
@@ -123,6 +280,75 @@ export default {
             verdict: 'Something like four hundred works appeared within a decade, and Gilly’s catalogue lists over three hundred and fifty for 1610 to 1660. Freemasonry’s higher degrees, the Golden Dawn and their descendants all trace to documents that were, by their probable author’s own account, fiction. The search for the brotherhood is the phenomenon — and a fiction a continent takes seriously has stopped being only a fiction.',
         },
     ],
+    // The descent. The ledger adjudicates claims one at a time; this takes the
+    // line as a whole, and its shape is the argument. Left column is what each
+    // body says about where it came from, right column is what can be shown,
+    // and the row in the middle carries nothing on the right — because nothing
+    // is there. The gap is drawn rather than described.
+    descentIntro: [
+        'Every Rosicrucian body has an account of where it came from, and the accounts are meant to join up into one line running from a tomb in Germany to a lodge room in London or a campus in California. Set the claim beside the record and the line is legible for what it is.',
+        'Read down the left and you have four centuries of continuous transmission. Read down the right and there is a seventy-year hole in the middle that nothing crosses.',
+    ],
+    descent: [
+        {
+            era: '1378–1484',
+            claimed: 'Christian Rosenkreuz travels to Damascus, Damcar, Egypt and Fez, returns with a philosophy, and founds a brotherhood of eight sworn to the six articles.',
+            documented: 'Nothing. No trace of the man, the journey or the brotherhood exists outside the manifestos and what descends from them. The earliest physical trace of any of it is a manuscript circulating in Tyrol around 1610.',
+        },
+        {
+            era: '1610–1616',
+            claimed: 'The brotherhood breaks its silence and publishes its report, its confession, and the account of its founder’s wedding.',
+            documented: 'Three anonymous books out of Kassel and Strasbourg, from a circle of Lutheran reformers around Tübingen. The third is claimed by Andreae in his own autobiography among the writings of his youth, and called a jest.',
+        },
+        {
+            era: '1616–1623',
+            claimed: 'Brothers of the order write publicly in its defence, and what they write is its teaching.',
+            documented: 'Maier and Fludd write at great length and both state in the texts that they are not members and have met none. The doctrine an educated public took to be Rosicrucian was manufactured in the defence of it, by outsiders, after the fact.',
+        },
+        {
+            era: '1710',
+            claimed: 'Sincerus Renatus publishes the order’s real constitutions, as held.',
+            documented: 'Samuel Richter, a Silesian pastor, prints degrees, officers and rules for a Brotherhood of the Golden and Rosy Cross — the first workable constitution the tradition ever had, and a century later than the manifestos. Nothing connects it to 1614 but the name.',
+        },
+        {
+            era: '1757–1790s',
+            claimed: 'The Gold- und Rosenkreuz is the brotherhood of the Fama, continuing under another name.',
+            documented: 'A real order at last — thousands of members, recruiting out of the Masonic lodges of Germany and Austria, with a functioning grade system. Its grade system is a Masonic invention of the 1750s, and its one link to 1614 is Richter’s book, which it used as a source. Its most powerful member put the Edict on Religion through the Prussian ministry in 1788.',
+        },
+        {
+            era: '1790s–1866',
+            gap: true,
+            claimed: 'The chain is unbroken. The order did not end; it withdrew, and worked invisibly until the time was right to appear again.',
+            documented: null,
+            note: 'Seventy-odd years in which no Rosicrucian organisation can be shown to have existed anywhere. The Gold- und Rosenkreuz goes quiet within a few years of the Edict and nothing takes its place. Every modern body crosses this silence, and every one of them crosses it by assertion.',
+        },
+        {
+            era: '1866–67',
+            claimed: 'The Societas Rosicruciana in Anglia revives the society on older Rosicrucian authority — rituals recovered, and an initiation received abroad.',
+            documented: 'Robert Wentworth Little, who had worked in the office of the Grand Secretary at Freemasons’ Hall, produced four rituals he said he had found there; Kenneth Mackenzie said he had been initiated by an adept in Austria. Master Masons only, and no document from before Little’s own hand. The society itself, to its credit, has never claimed a provable link. Westcott and Mathers met inside it.',
+        },
+        {
+            era: '1888',
+            claimed: 'The Golden Dawn opens under a warrant from Fräulein Anna Sprengel of Nuremberg, chief of a German Rosicrucian order.',
+            documented: 'Westcott wrote the letters himself; Ellic Howe and R. A. Gilbert traced the forgery in the archives, and no trace of Sprengel has ever been found. The Cipher Manuscripts are real objects of uncertain origin. What was built on the forged warrant is the most influential magical system in the English language, and it works on people who know the warrant was forged.',
+        },
+        {
+            era: '1909–1911',
+            claimed: 'Max Heindel receives the Western Wisdom Teachings directly from an Elder Brother of the Rose Cross in 1908, and founds the Rosicrucian Fellowship to give them out.',
+            documented: 'Heindel travelled to Germany in 1907 with Alma von Brandis to hear Rudolf Steiner lecture, and published the *Rosicrucian Cosmo-Conception* in 1909 with a dedication to Steiner in the first edition. Steiner called it plagiarism outright. The Fellowship settled at Oceanside and has run a healing department there ever since — the only body in the succession that visibly keeps the Fama’s first article.',
+        },
+        {
+            era: '1909–1915',
+            claimed: 'H. Spencer Lewis is initiated at Toulouse in 1909 by members of an international Rosicrucian council and given the mission of reactivating the order in America, which descends from the mystery schools of Egypt.',
+            documented: 'AMORC is founded in New York in 1915 by a successful advertising man, and grows by the methods of his trade into the largest Rosicrucian body in the world. The Toulouse initiation rests on Lewis’s own account and no second witness. The Egyptian descent has no historical support of any kind, and the order’s later writers have quietly softened it.',
+        },
+        {
+            era: '1924 / 1935',
+            claimed: 'The Lectorium Rosicrucianum was founded at Haarlem on 24 August 1924.',
+            documented: '1924 is the year the Leene brothers *joined* Max Heindel’s Rosicrucian Fellowship. They were given charge of its Dutch branch in 1929 and left in 1935, with Catharose de Petri, to found a body of their own. The founding date was fixed afterwards, on the year of the joining — a documented case of a Rosicrucian origin being moved backwards in the record, with the paperwork on both sides of the move still extant.',
+        },
+    ],
+    descentCoda: 'The hole is the interesting part. Every modern Rosicrucian body is post-1866, and every one of them crosses the seventy years by assertion — a charter from a person who cannot be found, an initiation abroad with no second witness, teachings from an Elder Brother who happens to agree with a lecturer the author had gone to hear, a founding date set on the year of a joining. It does not follow that they are frauds; three of them have outlasted most of the churches that condemned them, and the first article is better kept among them than among their critics. What follows is that Rosicrucian descent is a literary genre with settled conventions, and that the conventions were fixed in 1614 by a book about a door that opened after a hundred and twenty years.',
     chronologyIntro: 'What actually happened, in order.',
     chronology: [
         { year: 'c. 1610', label: 'The Fama circulates in manuscript', note: 'Copies are moving in Tyrol and beyond, years before any printing.' },

@@ -11187,6 +11187,11 @@ h3 {
 .ch-page .ch-rc-chron-body,
 .ch-page .ch-rc-key-note,
 .ch-page .ch-rc-sub,
+.ch-page .ch-rc-rule-text p,
+.ch-page .ch-rc-rule h3,
+.ch-page .ch-rc-book-note,
+.ch-page .ch-rc-desc-col p,
+.ch-page .ch-rc-desc-void,
 .ch-page .ch-creed-text,
 .ch-page .ch-words-bridge,
 .edu-page .edu-cog-noterow td,
@@ -12452,10 +12457,136 @@ figure.ch-gallery-card { margin: 0; }
 .ch-rc-back { margin-top: 1.6rem; }
 .ch-rc-back a { color: #d1ad68; }
 
+/* --- the six agreements: a numbered constitution, quoted ------------------- */
+.ch-rc-rules { list-style: none; margin: 1.8rem 0 0; padding: 0; display: grid; gap: 1.1rem; }
+.ch-rc-rule {
+  padding: 1.15rem 1.3rem 1.25rem;
+  border: 1px solid rgba(201, 168, 106, 0.16);
+  border-radius: 3px;
+  background: linear-gradient(180deg, rgba(28, 23, 18, 0.5), rgba(18, 15, 12, 0.32));
+}
+.ch-rc-rule-n {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.7rem; line-height: 1; color: rgba(201, 168, 106, 0.42);
+}
+.ch-rc-rule h3 { margin: 0.3rem 0 0; font-size: 1.05rem; font-weight: 500; }
+.ch-rc-rule-text {
+  margin: 0.5rem 0 0.95rem; padding: 0 0 0 1rem;
+  border-left: 2px solid rgba(201, 168, 106, 0.5);
+}
+.ch-rc-rule-text p {
+  margin: 0; font-size: 1.04rem; line-height: 1.7;
+  color: #ecd9ae; font-style: italic;
+}
+
+/* --- four hundred books: a shelf with the side declared -------------------- */
+.ch-rc-side {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 0.74rem; letter-spacing: 0.15em; text-transform: uppercase;
+  white-space: nowrap;
+}
+.ch-rc-side.is-for       { color: #92b58a; }
+.ch-rc-side.is-doctrine  { color: #c9a86a; }
+.ch-rc-side.is-against   { color: #c98a72; }
+.ch-rc-side.is-apart     { color: #8fa8bd; }
+.ch-rc-side.is-satire    { color: #b98fc0; }
+.ch-rc-side.is-disowned  { color: #bd9a8a; }
+.ch-rc-side.is-instead   { color: #8fbdb1; }
+.ch-rc-side.is-english   { color: #a8a2bd; }
+
+.ch-rc-furore { list-style: none; margin: 1.8rem 0 0; padding: 0; display: grid; gap: 1rem; }
+.ch-rc-book {
+  display: grid; grid-template-columns: 4.2rem 1fr; gap: 1.1rem;
+  padding: 1.05rem 1.2rem 1.15rem;
+  border: 1px solid rgba(201, 168, 106, 0.13);
+  border-left: 2px solid rgba(201, 168, 106, 0.3);
+  border-radius: 3px;
+  background: rgba(24, 20, 16, 0.4);
+}
+.ch-rc-book.is-for      { border-left-color: rgba(146, 181, 138, 0.7); }
+.ch-rc-book.is-doctrine { border-left-color: rgba(201, 168, 106, 0.75); }
+.ch-rc-book.is-against  { border-left-color: rgba(201, 138, 114, 0.75); }
+.ch-rc-book.is-apart    { border-left-color: rgba(143, 168, 189, 0.75); }
+.ch-rc-book.is-satire   { border-left-color: rgba(185, 143, 192, 0.75); }
+.ch-rc-book.is-disowned { border-left-color: rgba(189, 154, 138, 0.8); }
+.ch-rc-book.is-instead  { border-left-color: rgba(143, 189, 177, 0.75); }
+.ch-rc-book.is-english  { border-left-color: rgba(168, 162, 189, 0.8); }
+.ch-rc-book-year {
+  margin: 0.15rem 0 0;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 0.95rem; letter-spacing: 0.08em; color: #c9a86a;
+}
+.ch-rc-book-body { min-width: 0; }
+.ch-rc-book-body h3 { margin: 0; font-size: 1rem; font-weight: 500; }
+.ch-rc-book-author {
+  display: block;
+  font-size: 0.78rem; letter-spacing: 0.14em; text-transform: uppercase;
+  color: rgba(222, 212, 196, 0.62);
+}
+.ch-rc-book-title {
+  display: block; margin-top: 0.22rem;
+  font-style: italic; font-size: 1.05rem; color: rgba(240, 233, 218, 0.94);
+}
+.ch-rc-book-side { margin: 0.5rem 0 0.55rem; }
+.ch-rc-book-note { margin: 0; color: rgba(232, 224, 208, 0.8); line-height: 1.72; }
+
+/* --- the descent chart. Two columns, and the empty one is the argument ----- */
+.ch-rc-descent { list-style: none; margin: 1.8rem 0 0; padding: 0; display: grid; gap: 1rem; }
+.ch-rc-desc {
+  padding: 1.1rem 1.25rem 1.2rem;
+  border: 1px solid rgba(201, 168, 106, 0.13);
+  border-radius: 3px;
+  background: rgba(24, 20, 16, 0.36);
+}
+.ch-rc-desc-era {
+  margin: 0 0 0.85rem;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 1rem; letter-spacing: 0.1em; color: #c9a86a;
+}
+.ch-rc-desc-pair { display: grid; grid-template-columns: 1fr 1fr; gap: 1.4rem; }
+.ch-rc-desc-col { position: relative; padding-left: 0.95rem; border-left: 1px solid rgba(201, 168, 106, 0.18); }
+.ch-rc-desc-col.is-claimed { border-left-color: rgba(201, 168, 106, 0.45); }
+.ch-rc-desc-col.is-documented { border-left-color: rgba(143, 168, 189, 0.5); }
+.ch-rc-desc-label {
+  margin: 0 0 0.4rem;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 0.72rem; letter-spacing: 0.17em; text-transform: uppercase;
+  color: rgba(222, 212, 196, 0.5);
+}
+.ch-rc-desc-col.is-claimed .ch-rc-desc-label { color: rgba(201, 168, 106, 0.72); }
+.ch-rc-desc-col.is-documented .ch-rc-desc-label { color: rgba(143, 168, 189, 0.78); }
+.ch-rc-desc-col p:not(.ch-rc-desc-label) {
+  margin: 0; font-size: 0.93rem; line-height: 1.72; color: rgba(232, 224, 208, 0.82);
+}
+.ch-rc-desc-note {
+  margin-top: 0.6rem !important;
+  color: rgba(222, 212, 196, 0.66) !important;
+}
+.ch-rc-desc-void {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.15rem !important; font-style: italic;
+  color: rgba(143, 168, 189, 0.85) !important;
+}
+/* The seventy years nothing crosses. The row says so by being drawn open. */
+.ch-rc-desc.is-gap {
+  border-style: dashed;
+  border-color: rgba(143, 168, 189, 0.35);
+  background: none;
+}
+.ch-rc-desc.is-gap .ch-rc-desc-era { color: rgba(143, 168, 189, 0.9); }
+.ch-rc-desc.is-gap .ch-rc-desc-col.is-documented { border-left-style: dashed; }
+
+@media (max-width: 860px) {
+  .ch-rc-desc-pair { grid-template-columns: 1fr; gap: 1.1rem; }
+}
+
 @media (max-width: 640px) {
   .ch-rc-imprint dt { flex-basis: 5.5rem; }
   .ch-rc-chron li { display: block; }
   .ch-rc-chron-year { display: block; margin-bottom: 0.2rem; }
+  .ch-rc-book { grid-template-columns: 1fr; gap: 0.5rem; }
+  .ch-rc-book-year { margin: 0; }
 }
 
 /* --- the correspondence table keeps its pantheon column in view ------------- */
