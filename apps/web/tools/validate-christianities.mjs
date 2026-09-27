@@ -513,6 +513,76 @@ if (rosicrucian) {
         }
         checkContested(where, m);
     }
+    // The six agreements are quoted primary text, and the hall's rule is that a
+    // quotation says where its wording comes from. On this page the wording is
+    // Vaughan's English of 1652; if the introduction stops saying so, the
+    // quotations have lost their provenance and the section is passing one
+    // translator's choices off as the Fama's own.
+    const rules = rosicrucian.rules ?? [];
+    if (rules.length) {
+        const rIntro = [rosicrucian.rulesIntro ?? []].flat().join(' ');
+        if (!/Vaughan|1652|translat/i.test(rIntro)) {
+            fail('rosicrucian: the six agreements are quoted, and nothing says whose English they are quoted in');
+        }
+        const ns = rules.map((r) => r.n);
+        if (JSON.stringify(ns) !== JSON.stringify(ns.map((_, i) => i + 1))) {
+            fail(`rosicrucian: the agreements are not numbered 1..${rules.length}`);
+        }
+        for (const r of rules) {
+            const where = `rosicrucian/rule ${r.n}`;
+            if (!r.text) fail(`${where}: no text — the article itself is what is being printed`);
+            // The article and the gloss are different kinds of writing and the
+            // page keeps them in different fields for that reason. An article
+            // with no gloss has been printed without being accounted for.
+            if (!r.after || wordCount(r.after) < 15) fail(`${where}: says nothing about what became of it`);
+            checkContested(where, r);
+        }
+    }
+
+    // The furore. The ledger's last row rests on a count of books, and this is
+    // where the books are named. The discipline is the balance: a reception
+    // section carrying only the attacks is a debunk, and one carrying only the
+    // defences is advertising. Both sides have to be on the shelf.
+    const sides = new Set((rosicrucian.sides ?? []).map((x) => x.key));
+    const furore = rosicrucian.furore ?? [];
+    if (furore.length) {
+        if (sides.size < 2) fail('rosicrucian: the furore needs a declared key of sides');
+        for (const [i, b] of furore.entries()) {
+            const where = `rosicrucian/furore[${i}] ${b.title || ''}`.trim();
+            for (const f of ['year', 'author', 'title', 'note']) {
+                if (!b[f]) fail(`${where}: no ${f}`);
+            }
+            if (!sides.has(b.side)) fail(`${where}: side "${b.side}" is not in the declared key`);
+            if (wordCount(b.note) < 15) fail(`${where}: a book is listed without being accounted for`);
+            checkContested(where, b);
+        }
+        const bySide = new Set(furore.map((b) => b.side));
+        if (!bySide.has('for')) fail('rosicrucian: the furore lists no book written in the tradition\u2019s defence — that is a debunk, not a reception');
+        if (!bySide.has('against')) fail('rosicrucian: the furore lists no book written against the tradition — that is advertising, not a reception');
+    }
+
+    // The descent chart. Its force is the empty column, and an empty column has
+    // to be declared: a row may leave the record blank only by marking itself a
+    // gap and saying what the gap is. And a chart that draws seventy years of
+    // silence without saying what follows from it is innuendo, not an argument.
+    const descent = rosicrucian.descent ?? [];
+    let gaps = 0;
+    for (const [i, r] of descent.entries()) {
+        const where = `rosicrucian/descent[${i}] ${r.era || ''}`.trim();
+        if (!r.era) fail(`${where}: no era`);
+        // The section's own rule: the claim is given as its holders make it.
+        if (!r.claimed || wordCount(r.claimed) < 8) fail(`${where}: the claim is not stated as its holders make it`);
+        if (r.gap) gaps += 1;
+        if (!r.documented && !(r.gap && r.note)) {
+            fail(`${where}: the record column is empty and the row does not declare itself a gap and say what the gap is`);
+        }
+        if (r.documented && wordCount(r.documented) < 10) fail(`${where}: the record does not show its working`);
+        checkContested(where, r);
+    }
+    if (gaps && !rosicrucian.descentCoda) {
+        fail('rosicrucian: the descent chart draws a gap in the record and says nothing about what follows from it');
+    }
+
     let sound = 0;
     for (const [i, row] of (rosicrucian.ledger ?? []).entries()) {
         const where = `rosicrucian/ledger[${i}]`;
@@ -566,7 +636,7 @@ if (rosicrucian) {
     for (const c of rosicrucian.chronology ?? []) {
         if (!c.year || !c.label) fail('rosicrucian: a chronology row needs a year and a label');
     }
-    notes.push(`rosicrucian: ${(rosicrucian.manifestos ?? []).length} manifestos, ${days.length} days (${days.filter((d) => d.quote).length} quoted), ${(rosicrucian.ledger ?? []).length} ledger rows (${sound} sound), ${(rosicrucian.chronology ?? []).length} dated`);
+    notes.push(`rosicrucian: ${(rosicrucian.manifestos ?? []).length} manifestos, ${rules.length} agreements, ${days.length} days (${days.filter((d) => d.quote).length} quoted), ${furore.length} books of the furore, ${(rosicrucian.ledger ?? []).length} ledger rows (${sound} sound), ${descent.length} descent rows (${gaps} gap), ${(rosicrucian.chronology ?? []).length} dated`);
 }
 
 // --- report ----------------------------------------------------------------

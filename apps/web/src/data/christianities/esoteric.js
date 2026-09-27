@@ -25,7 +25,7 @@ export default {
                 to: '/christianities/rosicrucian',
                 kicker: 'A door off this current',
                 title: 'The Rosicrucian Portal',
-                blurb: 'The three manifestos of 1614–1616 set beside each other as physical books, a chronology from the manuscript Fama to the modern orders, and a ledger putting every claim about the brotherhood’s origins against what the record will bear.',
+                blurb: 'The three manifestos of 1614–1616 set beside each other as physical books, the six articles the brotherhood agreed among themselves, the seven days of the Chymical Wedding, the vault drawn to the measurements the Fama gives, the dozen books Europe answered with — and two reckonings: a ledger putting every claim about the origins against what the record will bear, and a chart of the descent that leaves the seventy years nothing crosses visibly empty.',
                 enter: 'Enter the portal',
             },
         },

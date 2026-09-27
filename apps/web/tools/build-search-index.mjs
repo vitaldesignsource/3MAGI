@@ -194,6 +194,28 @@ for (const d of rosicrucian?.days ?? []) push(
     `Day ${d.n} of seven`, d.story, `day-${d.n}`, '/christianities/rosicrucian',
 );
 
+// The Fama's six articles. Searched for by their contents — the house S.
+// Spiritus, the day C., curing the sick gratis — so the article text is the
+// description and the gist is the name.
+for (const r of rosicrucian?.rules ?? []) push(
+    CH, 'note', '', `The ${['first', 'second', 'third', 'fourth', 'fifth', 'sixth'][r.n - 1]} agreement: ${r.label}`,
+    'The six articles of the Fama', r.text, `rule-${r.n}`, '/christianities/rosicrucian',
+);
+
+// The furore. Every one of these is a real book with a findable title, and
+// several of them (Atalanta fugiens, Turris Babel) are looked for by name.
+for (const b of rosicrucian?.furore ?? []) push(
+    CH, 'work', '', b.title, `${b.year} · ${b.author}`, b.note, b.slug, '/christianities/rosicrucian',
+);
+
+// The descent. The era is a poor search target and the bodies are full of good
+// ones — Sprengel, Toulouse, Haarlem — so both columns go in the description.
+for (const r of rosicrucian?.descent ?? []) push(
+    CH, 'note', '', `The descent: ${r.era}`, 'Claimed against documented',
+    [r.claimed, r.documented, r.note].filter(Boolean).join(' — '),
+    'rc-descent-heading', '/christianities/rosicrucian',
+);
+
 // The Witnesses, on the Canon page: the manuscripts by siglum, and the four
 // notes beneath them. Recovered with the dataset itself from the deploy build.
 const codices = await loadCh('codices');

@@ -1355,6 +1355,61 @@ export default {
                 "text": "In the name of God, and in the name of this suffering people, I beg you, I beseech you, I order you in the name of God: stop the repression.",
                 "source": "Homily, San Salvador cathedral, 23 March 1980, the day before his murder"
             }
+        },
+        {
+            "slug": "johann-valentin-andreae",
+            "name": "Johann Valentin Andreae",
+            "dates": "1586–1654",
+            "categories": [
+                "reformer",
+                "mystic"
+            ],
+            "tradition": "Lutheran; Württemberg",
+            "role": "Pastor and theologian, court preacher at Stuttgart, abbot of Bebenhausen",
+            "contribution": "The only named author of any founding Rosicrucian document, and a man who spent his life trying to be known for something else. Out of a circle of young Lutheran reformers at Tübingen came three anonymous pamphlets of 1614–1616 announcing a secret brotherhood holding the reformation of the whole wide world; Andreae claimed the third of them, the Chymical Wedding, in his own autobiography, among the writings of his youth, and called it a jest. Europe read all three as a summons and answered in several hundred books. What he actually wanted is set out in the work he signed: Christianopolis in 1619, a city of a hundred citizens governed by learning, with the curriculum given room by room and no secret in it anywhere, and the *societates christianae* — small, real, corresponding fellowships of the devout, which he spent decades trying to found and which reached Comenius and, through him, the whole Pietist movement. He is the hinge of the esoteric current he disowned and of the practical reform he meant.",
+            "fate": "Court preacher at Stuttgart through the ruin of the Thirty Years War, abbot of Bebenhausen from 1650, named to Adelberg in the year he died. He is remembered almost entirely for the one book of his youth he tried hardest to be rid of.",
+            "quote": {
+                "text": "a ludibrium which surprisingly some esteem and explicate with subtle investigations, is plainly futile and betrays the vanity of the curious",
+                "source": "Of the Chymical Wedding, in his autobiography, the Vita ab ipso conscripta, published long after his death"
+            }
+        },
+        {
+            "slug": "adam-haslmayr",
+            "name": "Adam Haslmayr",
+            "dates": "c. 1560 – c. 1630",
+            "categories": [
+                "mystic",
+                "contested"
+            ],
+            "tradition": "Paracelsian, and a Lutheran sympathiser living in Catholic Tyrol",
+            "role": "Schoolmaster, organist and notary in Tyrol",
+            "contribution": "The earliest datable fact in Rosicrucian history is a man punished for wanting to join. Around 1610 Haslmayr read a manuscript copy of the Fama — years before it was printed — and in 1612 published the first public answer to it, addressed to the praiseworthy brotherhood of the Theosophers of the Rose Cross and offering himself as their servant. In August of the same year the Tyrolean authorities took him and he was sentenced to four and a half years at the oar in the Genoese galleys. His pamphlet is the proof that the manifestos circulated in manuscript before 1614, which is why the whole chronology of the movement has to be pushed back a decade; and his sentence is why the brotherhood's own claim to be persecuted was never quite absurd. He was recovered for the record only in the 1990s, when Carlos Gilly's archival work made him the first herald of the manifestos rather than a footnote in their reception.",
+            "fate": "Four and a half years in the galleys, and back at an organ afterwards. He died about 1630 in obscurity. His side of the argument was condemned where he lived and honoured in the tradition he announced, which is the whole of his position in the record."
+        },
+        {
+            "slug": "michael-maier",
+            "name": "Michael Maier",
+            "dates": "c. 1568–1622",
+            "categories": [
+                "mystic"
+            ],
+            "tradition": "Lutheran; Holstein, the imperial court at Prague, and England",
+            "role": "Physician, count palatine to Rudolf II, and the finest emblem-maker the alchemical tradition produced",
+            "contribution": "The doctrine the seventeenth century took to be Rosicrucian was largely manufactured by Maier, in the defence of a brotherhood he stated in print that he had never met. *Silentium post clamores* in 1617 answered the obvious objection — three years of shouting and no reply from the brothers — by arguing that the silence was proper, since the wise do not answer a crowd; the *Themis aurea* of 1618 took the Fama's six articles one at a time and expounded each at length, and is still the fullest account of Rosicrucian practice printed in the century. His masterpiece is neither. *Atalanta fugiens*, also of 1617, is fifty emblems each carrying a motto, an epigram, a prose discourse and a fugue in three voices to be sung — Atalanta fleeing, Hippomenes after her, the golden apple falling behind — printed at Oppenheim with plates engraved after Matthäus Merian. It is a book meant to be looked at, read and performed at once, and nothing else in the literature is remotely like it.",
+            "fate": "Died at Magdeburg in 1622, in his early fifties and in reduced circumstances. The city that held his grave was destroyed nine years later in the sack of 1631."
+        },
+        {
+            "slug": "robert-fludd",
+            "name": "Robert Fludd",
+            "dates": "1574–1637",
+            "categories": [
+                "mystic",
+                "apologist"
+            ],
+            "tradition": "Church of England; a Paracelsian inside the College of Physicians",
+            "role": "Physician and cosmologist, the most systematic Christian occultist England produced",
+            "contribution": "His great work is a Christian cosmology and is usually mistaken for something else. The *Utriusque Cosmi Historia* of 1617–1621 — the history of both worlds, the great and the small — begins where Genesis begins, with light called out of the dark, and hangs everything from that act: the divine monochord strung between earth and the hand of God, man as the small world answering the large, the whole engraved for de Bry at Oppenheim in plates that have been reprinted ever since by people with no interest in his theology. In 1616 he answered the German attacks on the Rosicrucian brotherhood in the *Apologia Compendiaria*, expanded the next year as the *Tractatus Apologeticus*, and stated in the text that he was not a member and had met none — which did nothing at all to stop Europe reading him as the order's English spokesman. He quarrelled in print with Kepler over whether the world's harmonies are real or figurative, and with Gassendi and Mersenne over most of the rest, and he lost those arguments in a way that has made him easy to patronise and hard to do without.",
+            "fate": "Died at his house in Coleman Street in London in 1637, a Fellow of the College of Physicians that had refused him more than once for his Paracelsian opinions, and was buried at Bearsted in Kent, under a monument in the parish church."
         }
     ]
 };

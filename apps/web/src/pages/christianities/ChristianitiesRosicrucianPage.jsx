@@ -13,10 +13,17 @@ import RosicrucianVault from './RosicrucianVault';
 // The current itself — thirteen entries — lives in esoteric.js and is shown
 // here in the same expandable form the section uses, so there is one copy of
 // it and not two. What earns this page its own address is the material the
-// entry list cannot hold: the three founding books set beside each other as
-// physical objects, and a ledger that states claim by claim what the record
-// will bear. The entries narrate; the ledger adjudicates. Those are different
-// jobs and they want different shapes.
+// entry list cannot hold, and it falls into three jobs that want three shapes:
+//
+//   the texts       the three books as physical objects, the Fama's own six
+//                   articles, the seven days of the Wedding, the vault in plan
+//   the reception    the dozen books the four-hundred-book claim is made of,
+//                   with each one's side declared
+//   the reckoning    the ledger, claim by claim, and the descent chart, which
+//                   sets every body's account of itself against the record and
+//                   leaves the seventy-year hole visibly empty
+//
+// The entries narrate. The ledger adjudicates. The descent chart draws.
 
 const GROUP = 'rosicrucian';
 
@@ -65,6 +72,7 @@ function ChristianitiesRosicrucianPage() {
 
     const entries = (current?.entries ?? []).filter((e) => e.group === GROUP);
     const label = Object.fromEntries((page.standings ?? []).map((s) => [s.key, s.label]));
+    const sideLabel = Object.fromEntries((page.sides ?? []).map((s) => [s.key, s.label]));
 
     return (
         <div className="third-lamp-scope edu-page ch-page ch-rc-page">
@@ -91,6 +99,26 @@ function ChristianitiesRosicrucianPage() {
                     </div>
                 </section>
 
+
+                <section className="ch-rc-rules-wrap" aria-labelledby="rc-rules-heading">
+                    <span className="pw-divider" aria-hidden="true" />
+                    <header className="edu-section-head">
+                        <p className="kicker">The Fama, in its own words</p>
+                        <h2 id="rc-rules-heading">Six agreements</h2>
+                        {(page.rulesIntro ?? []).map((p, i) => <p key={i}><Rich t={p} /></p>)}
+                    </header>
+                    <ol className="ch-rc-rules">
+                        {(page.rules ?? []).map((r) => (
+                            <li key={r.n} id={`rule-${r.n}`} className="ch-rc-rule">
+                                <p className="ch-rc-rule-n" aria-hidden="true">{r.n}</p>
+                                <h3>{r.label}</h3>
+                                <blockquote className="ch-rc-rule-text"><p>{r.text}</p></blockquote>
+                                <div className="ch-kv"><span>What became of it</span><p><Rich t={r.after} /></p></div>
+                            </li>
+                        ))}
+                    </ol>
+                    {page.rulesCoda && <p className="ch-rc-coda"><Rich t={page.rulesCoda} /></p>}
+                </section>
                 <section className="ch-rc-days-wrap" aria-labelledby="rc-days-heading">
                     <span className="pw-divider" aria-hidden="true" />
                     <header className="edu-section-head">
@@ -146,6 +174,40 @@ function ChristianitiesRosicrucianPage() {
                     </ul>
                 </section>
 
+
+                <section className="ch-rc-furore-wrap" aria-labelledby="rc-furore-heading">
+                    <span className="pw-divider" aria-hidden="true" />
+                    <header className="edu-section-head">
+                        <p className="kicker">1612 &middot; 1652</p>
+                        <h2 id="rc-furore-heading">Four hundred books</h2>
+                        {(page.furoreIntro ?? []).map((p, i) => <p key={i}><Rich t={p} /></p>)}
+                    </header>
+                    <ul className="ch-rc-key">
+                        {(page.sides ?? []).map((s) => (
+                            <li key={s.key}>
+                                <span className={`ch-rc-side is-${s.key}`}>{s.label}</span>
+                                <span className="ch-rc-key-note">{s.note}</span>
+                            </li>
+                        ))}
+                    </ul>
+                    <ol className="ch-rc-furore">
+                        {(page.furore ?? []).map((b, i) => (
+                            <li key={b.slug ?? i} id={b.slug} className={`ch-rc-book is-${b.side}`}>
+                                <p className="ch-rc-book-year">{b.year}</p>
+                                <div className="ch-rc-book-body">
+                                    <h3>
+                                        <span className="ch-rc-book-author">{b.author}</span>
+                                        <cite className="ch-rc-book-title">{b.title}</cite>
+                                    </h3>
+                                    <p className="ch-rc-book-side">
+                                        <span className={`ch-rc-side is-${b.side}`}>{sideLabel[b.side] ?? b.side}</span>
+                                    </p>
+                                    <p className="ch-rc-book-note"><Rich t={b.note} /></p>
+                                </div>
+                            </li>
+                        ))}
+                    </ol>
+                </section>
                 <section className="ch-rc-ledger-wrap" aria-labelledby="rc-ledger-heading">
                     <span className="pw-divider" aria-hidden="true" />
                     <header className="edu-section-head">
@@ -176,6 +238,36 @@ function ChristianitiesRosicrucianPage() {
                     </ol>
                 </section>
 
+
+                <section className="ch-rc-descent-wrap" aria-labelledby="rc-descent-heading">
+                    <span className="pw-divider" aria-hidden="true" />
+                    <header className="edu-section-head">
+                        <p className="kicker">The line</p>
+                        <h2 id="rc-descent-heading">Claimed and documented</h2>
+                        {(page.descentIntro ?? []).map((p, i) => <p key={i}><Rich t={p} /></p>)}
+                    </header>
+                    <ol className="ch-rc-descent">
+                        {(page.descent ?? []).map((r, i) => (
+                            <li key={i} className={`ch-rc-desc${r.gap ? ' is-gap' : ''}`}>
+                                <p className="ch-rc-desc-era">{r.era}</p>
+                                <div className="ch-rc-desc-pair">
+                                    <div className="ch-rc-desc-col is-claimed">
+                                        <p className="ch-rc-desc-label">Claimed</p>
+                                        <p><Rich t={r.claimed} /></p>
+                                    </div>
+                                    <div className="ch-rc-desc-col is-documented">
+                                        <p className="ch-rc-desc-label">Documented</p>
+                                        {r.documented
+                                            ? <p><Rich t={r.documented} /></p>
+                                            : <p className="ch-rc-desc-void">Nothing.</p>}
+                                        {r.note && <p className="ch-rc-desc-note"><Rich t={r.note} /></p>}
+                                    </div>
+                                </div>
+                            </li>
+                        ))}
+                    </ol>
+                    {page.descentCoda && <p className="ch-rc-coda"><Rich t={page.descentCoda} /></p>}
+                </section>
                 <section className="ch-rc-chron-wrap" aria-labelledby="rc-chron-heading">
                     <span className="pw-divider" aria-hidden="true" />
                     <header className="edu-section-head">
