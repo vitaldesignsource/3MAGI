@@ -1,0 +1,1174 @@
+// christianities/christologies — authored and fact-checked by the doctrine pipeline
+// (30 corrections applied by the verifier before landing).
+export default {
+    "intro": [
+        "The question is older than the church, older than the gospels, older than any word in this vocabulary. Mark sets it on a road near Caesarea Philippi, and puts it in Jesus's own mouth: not what the crowds are saying, but — whom say ye that I am? Every entry below is an answer to that sentence. Some were given by bishops and some by shoemakers, some in Greek and some in Coptic and some in nineteenth-century German; several were given by people who were later burned, exiled, mutilated or forgotten for giving them. None of them was given carelessly.",
+        "For the first five centuries the church defined itself chiefly by ruling answers out. This is worth stating plainly, because the creeds are usually read as positive statements and they are not, or not mainly. Nicaea's most precise language is in its anathemas. Chalcedon's central achievement is four adverbs, every one of them a negation: without confusion, without change, without division, without separation. The councils drew fences and declined to say what stood inside them. What the church knew, and knew with increasing exactness, was where the ground gave way.",
+        "And the losers did not vanish. This is the fact the standard textbook narrative most often obscures, and the reason this portal is plural. Some sixty million Christians belong to the Oriental Orthodox churches, which have never signed Chalcedon; the Church of the East, which never received Ephesus, sent missionaries to India and to Tang China while Rome was still recovering from the Goths; the Latin and Greek churches, having agreed on every christological question in this list, then divided over other things entirely. Several of the largest and oldest churches on earth exist because a body of bishops refused a council, and in more than one case the modern dialogues have concluded that the refusal was about words rather than about faith.",
+        "So this page states each answer as its holders stated it. Where a position is known only through its opponents' quotations — and for Arius's Thalia, for the Ebionites, for Valentinus, that is very nearly all we have — the page says so, and treats the hostile witness as a witness rather than as a transcript. Where a name is a charge rather than a description, the page flags it: 'Nestorian', which the Church of the East rejects; 'monophysite', which is an accusation and not the position of the churches accused of it; the 'Robber Council', which is Leo's polemic; 'semi-Arian' and 'Spirit-fighter', which nobody applied to himself. Where scholarship divides, the division is named. Nothing here is invented, and no tradition is described in terms it would not recognise as fair — including the traditions that anathematised one another, and including those that are alive, and growing, and would like to be asked."
+    ],
+    "entries": [
+        {
+            "slug": "ebionite",
+            "name": "The Ebionites: a wholly human Messiah",
+            "term": {
+                "native": "אֶבְיוֹנִים",
+                "translit": "ebyonim",
+                "meaning": "the poor — the name they appear to have taken for themselves, from the poor of the Beatitudes and of the Jerusalem church"
+            },
+            "claim": "Jesus was a man, born to Joseph and Mary in the ordinary way, chosen and anointed as Israel's Messiah; and the Law he kept binds those who follow him.",
+            "exposition": [
+                "The name is contested at its root. Origen derives it from the Hebrew for 'poor' — sometimes plainly, as a description of the group, and sometimes with a jab at the poverty of their understanding of the Law; Eusebius, less kindly still, says they were so called because of the poor and mean opinions they held of Christ; Tertullian and Epiphanius supply a founder named Ebion, whom no one has ever found. The likeliest account remains the simplest: a Jewish community that called itself what the Jerusalem church had been called.",
+                "Irenaeus describes them about 180, and his account is the fullest we have: they agree that the world was made by God, they use the Gospel according to Matthew only, they repudiate the Apostle Paul as an apostate from the Law, they practise circumcision and persevere in the customs the Law enjoins, and, he adds with distaste, they adore Jerusalem as if it were the house of God. Origen adds a distinction his successors ignored — that there were two sorts of them, those who accepted the virgin birth and those who did not.",
+                "What they were claiming was continuity. Jesus of Nazareth had not founded a new religion. The movement was a movement within Israel; the Messiah was the prophet like Moses, raised up from among his brethren, a man on whom God's Spirit rested — and therefore the covenant, the Sabbath and the circumcision of the flesh stood exactly where they had always stood. A gentile church keeping neither was, on their account, the innovation requiring defence.",
+                "Everything we know of them we know from men who were arguing against them; not one line of their own writing survives except in quotation. Whether they represent a genuine survival of the Jerusalem church of James, or a second-century group reconstructing a Judaic Christianity after the fact, is a live scholarly division and turns largely on how much weight the hostile sources can bear. The heresiologists also disagree among themselves — Epiphanius distinguishes Ebionites from Nazoraeans, and how far that distinction reflects anything on the ground is unsettled."
+            ],
+            "scripture": [
+                {
+                    "ref": "Deuteronomy 18:15",
+                    "how": "a prophet like unto Moses, raised up from among the brethren — the Messiah as a man, and the pattern for what a deliverer is"
+                },
+                {
+                    "ref": "Matthew 5:17–18",
+                    "how": "'Think not that I am come to destroy the law, or the prophets: I am not come to destroy, but to fulfil' — the standing obligation of Torah on the Messiah's followers"
+                },
+                {
+                    "ref": "Acts 2:22",
+                    "how": "Peter at Pentecost calls him 'a man approved of God among you by miracles' — the earliest preaching, on their reading, names him a man"
+                },
+                {
+                    "ref": "Psalm 2:7",
+                    "how": "'this day have I begotten thee' — sonship conferred at a moment, on a man"
+                },
+                {
+                    "ref": "Matthew 1:18–25",
+                    "how": "the opponents' text: the virgin conception, which the gospel used by the Ebionites is reported by Epiphanius to have lacked"
+                }
+            ],
+            "heldBy": "Jewish followers of Jesus in Palestine and the Transjordan from the second century into the fourth, described by Irenaeus, Origen, Eusebius and Epiphanius; related to, and in Epiphanius distinct from, the Nazoraeans.",
+            "opposedBy": "Irenaeus of Lyons, Tertullian, Origen, Eusebius of Caesarea and Epiphanius of Salamis, all arguing from the virgin birth and from the pre-existence of the Word.",
+            "council": "None. They lay outside the reach of the imperial church and were written out by the heresiologists rather than judged by a synod.",
+            "aftermath": "They vanish from the record after the fourth century, by which time the church was overwhelmingly gentile and the question of Torah observance had ceased to be a live one. Their literature went with them; the fragments of a Jewish-Christian gospel tradition preserved in patristic quotation are all that may be theirs, and even that attribution is argued.",
+            "today": "No communion descends from them. The christology itself — a Jesus who did not exist before he was born, wholly a man and wholly the Messiah — is held now by Christadelphians, by biblical unitarians, and by some Unitarian congregations, all of whom reached it by reading the New Testament rather than by any line of descent, and none of whom accept the ancient label.",
+            "status": "condemned"
+        },
+        {
+            "slug": "docetism",
+            "name": "Docetism: he only seemed",
+            "term": {
+                "native": "δοκεῖν",
+                "translit": "dokein",
+                "meaning": "to seem, to appear — whence δοκηταί, those who say Christ only appeared to suffer"
+            },
+            "claim": "The Son of God did not truly take flesh, suffer or die; the body, the blood and the cross were appearance and not reality.",
+            "exposition": [
+                "The label is an opponent's. The earliest surviving use is by Serapion, bishop of Antioch about the year 200, writing to the church at Rhossus about the Gospel of Peter and speaking of the successors of those who began it, 'whom we call Docetae' — preserved by Eusebius. No group is known to have used the word of itself.",
+                "The impulse behind it is not contempt for Jesus but reverence for God. If God is impassible, the passion cannot touch him. If flesh is corruptible, then to say that God was carried in a womb, that he sweated and bled and rotted, is not humility but blasphemy. Docetism is what happens when the doctrine of God is held so firmly that the incarnation must give way.",
+                "Ignatius of Antioch, being taken to Rome to die — traditionally about 110, on Eusebius's dating, though a good many scholars now argue for a date decades later — answers it with his own body. Against those who say that Christ suffered only in appearance, he replies that if that is so, then he himself is in chains for nothing, and is dying for nothing, and lies concerning the Lord. It is the first recorded argument from martyrdom: a man about to be eaten by animals has a stake in whether the crucifixion was real.",
+                "Docetism is a tendency rather than a sect. It runs through Marcion, through the Valentinian and Sethian schools, through Manichaeism. It should not be extended to Islam, though the comparison is often made carelessly: the Qur'an says of the crucifixion that they did not kill him and did not crucify him, but so it was made to appear to them, and Muslim exegesis of that verse is itself various. The concern there is the honour and divine protection of a prophet, not a metaphysical revulsion at flesh, and no Muslim tradition holds the christology this entry describes.",
+                "Some recent scholarship argues that 'docetism' is too blunt an instrument altogether, gathering under one word positions that differ considerably from one another — a Christ with a heavenly body, a Christ whose body is real but not ours, a Christ who is pure appearance. The single word flattens three arguments into one."
+            ],
+            "scripture": [
+                {
+                    "ref": "1 John 4:2–3",
+                    "how": "'Every spirit that confesseth that Jesus Christ is come in the flesh is of God' — the earliest datable rebuttal, and the test it proposes"
+                },
+                {
+                    "ref": "2 John 7",
+                    "how": "'many deceivers are entered into the world, who confess not that Jesus Christ is come in the flesh'"
+                },
+                {
+                    "ref": "Philippians 2:7",
+                    "how": "'in the likeness of men… and being found in fashion as a man' — read by docetists as likeness rather than reality"
+                },
+                {
+                    "ref": "Romans 8:3",
+                    "how": "'in the likeness of sinful flesh' — the same noun, ὁμοίωμα, pressed the same way"
+                },
+                {
+                    "ref": "Luke 24:39",
+                    "how": "'handle me, and see; for a spirit hath not flesh and bones, as ye see me have' — the risen Christ answering it in advance"
+                }
+            ],
+            "heldBy": "No single body. Teachers within the Marcionite, Valentinian, Basilidean, Sethian and later Manichaean traditions; identified as a party by Serapion and treated as one by every heresiologist after him.",
+            "opposedBy": "Ignatius of Antioch, Polycarp, Irenaeus, Tertullian, and the author of the Johannine letters, who makes confession of the flesh the criterion of a true spirit.",
+            "council": "Never condemned by name at an ecumenical council, because the whole conciliar tradition is built on its refusal: Nicaea's 'was made flesh, and became man' and Chalcedon's 'consubstantial with us according to the manhood' are its answer.",
+            "aftermath": "It was defeated by liturgy as much as by argument. A church that gathered weekly around bread and wine identified as a body given and blood shed had made the reality of the flesh the centre of its worship, and could not indefinitely hold a doctrine that emptied it.",
+            "today": "No church teaches it, and every church leans towards it in practice — in the popular piety that finds Christ's hunger, ignorance, fear and death faintly embarrassing, and quietly imagines a divine figure walking through a human life without being touched by it. Preachers have been complaining about this for eighteen centuries.",
+            "status": "condemned"
+        },
+        {
+            "slug": "marcion",
+            "name": "Marcion: the Christ of the alien God",
+            "term": {
+                "native": "Ἀντιθέσεις",
+                "translit": "Antitheseis",
+                "meaning": "contradictions — the title of Marcion's lost book, setting the God of the Law against the God of the Gospel, page against page"
+            },
+            "claim": "The Christ who appeared in Galilee was sent by a God until then unknown: not the Creator of Genesis, not the God of Israel, and not the Messiah the prophets had promised.",
+            "exposition": [
+                "Marcion of Sinope was a shipowner from Pontus who came to Rome about 140, gave the church there two hundred thousand sesterces, and was expelled with the money returned to him; Tertullian's reckoning puts the breach in 144. He then built a church of his own, with its own bishops, its own liturgy and its own scriptures, and it spread across the empire at a speed that terrified his opponents.",
+                "His argument was moral before it was metaphysical. The God who hardened Pharaoh's heart, who commanded the slaughter of the Canaanites, who declares himself jealous and says he creates evil, is a just God and a real one — but he is not the Father whom Jesus revealed, who is pure goodness and had never been heard of before. The Antitheses set the two testaments side by side and let the contrast do the work. It should be said, since the argument recurs, that this is a reading of the Hebrew scriptures that Jews and Christians alike have always rejected as a caricature of what those books say about God.",
+                "The christology follows. A Christ born of a woman would belong to the Creator's world and the Creator's line. Marcion's Christ is not born: he descends in the fifteenth year of Tiberius and appears at Capernaum, adult, unheralded, without genealogy, infancy or Bethlehem. He is not the Messiah of the prophets, because the prophets were speaking of somebody else, who has not yet come.",
+                "He compiled what is, on the evidence we have, the first Christian canon: one gospel, close to Luke, which he called simply the Euangelion, and ten letters of Paul, the Apostolikon — Paul being for him the only apostle who had understood. Whether the church's own canon was formed in reaction to his is disputed. Harnack said yes and made it the centre of his case; more recent work argues that canon-formation was already under way and Marcion accelerated rather than caused it. A further and sharper argument runs now over whether his gospel is an abridgement of Luke, as the fathers said, or a witness to something earlier that Luke expanded — a minority position, but held by serious scholars.",
+                "Adolf von Harnack's Marcion: Das Evangelium vom fremden Gott, published in 1921, made him a modern figure and did not conceal its author's sympathy: Harnack thought the church had been right to keep the Old Testament in the second century, and wrong to be still keeping it in the twentieth. The book is the reason Marcion is argued about today rather than merely catalogued."
+            ],
+            "scripture": [
+                {
+                    "ref": "Luke 5:36–38",
+                    "how": "the new patch on the old garment, the new wine in old bottles — Marcion's charter text for the incompatibility of the two dispensations"
+                },
+                {
+                    "ref": "Galatians 1:6–9",
+                    "how": "'another gospel' — Paul as the one apostle who saw that the message was new, and everyone else as judaisers"
+                },
+                {
+                    "ref": "2 Corinthians 4:4",
+                    "how": "'the god of this world hath blinded the minds of them which believe not' — read as the Creator himself"
+                },
+                {
+                    "ref": "Isaiah 45:7",
+                    "how": "'I make peace, and create evil: I the LORD do all these things' — Marcion's exhibit for the character of the Creator"
+                },
+                {
+                    "ref": "Matthew 5:17",
+                    "how": "the opponents' text: 'Think not that I am come to destroy the law, or the prophets' — which Marcion's gospel did not contain"
+                }
+            ],
+            "heldBy": "Marcion and the Marcionite church, which had its own hierarchy and endured for centuries, chiefly in Syria and Mesopotamia; Theodoret of Cyrrhus claims in his letters to have brought more than a thousand Marcionites into the church in his own diocese in the fifth century.",
+            "opposedBy": "Justin Martyr, who wrote a treatise against him that Irenaeus knew and that is now lost; Irenaeus; Tertullian, whose five books Against Marcion are the fullest refutation and the chief source for what Marcion actually wrote; and Ephrem the Syrian, who was still fighting Marcionites in the fourth century.",
+            "council": "None. He was expelled by the Roman congregation, and the answer became structural rather than conciliar: the rule of faith, and after it every creed, opens by confessing one God, the Father Almighty, maker of heaven and earth.",
+            "aftermath": "The Marcionite church outlived its founder by centuries in the East; the sources suggest its remnants were drawn off by Manichaeism before the Arab conquests removed the region from Byzantine view, though the details of that decline are thinly attested. Its most lasting effect was on its enemies: the pressure to answer Marcion is one of the forces that produced the fourfold gospel, the fixed Pauline collection and the creed's first article.",
+            "today": "No Marcionite church survives, though small groups claim the name. The impulse recurs in every generation — wherever it is proposed that the God of the Hebrew scriptures and the Father of Jesus are morally incompatible, and that Christianity would be improved by unhitching itself from the Old Testament. The proposal is always presented as new.",
+            "status": "condemned"
+        },
+        {
+            "slug": "gnostic-christ",
+            "name": "The Valentinian and Sethian Christ: the aeon upon the body of Jesus",
+            "term": {
+                "native": "αἰών",
+                "translit": "aiōn",
+                "meaning": "age, everlasting one — in these systems an emanation of the divine Fullness, the πλήρωμα, of which the Saviour is one"
+            },
+            "claim": "The divine Saviour is an aeon of the heavenly Fullness who descended upon the man Jesus and brought the knowledge that awakens the spirit in those who have it; and what the powers of this world laid hold of at the cross was not what they supposed.",
+            "exposition": [
+                "Two related families of texts, and it matters that they are two. The Valentinians were a school: Valentinus, an Alexandrian who taught at Rome about 140 and who, Tertullian says with evident pleasure, had expected to be made bishop there; then his pupils Ptolemy, Heracleon, Theodotus and Marcus, who wrote commentaries, letters and a great deal of poetry. The Sethians are a body of writings rather than a known community, tracing the elect to Seth, the third son of Adam, and mostly recovered from the ground at Nag Hammadi in 1945.",
+                "The reports must be sorted with care, and the older handbooks did not sort them. The clearest statement that the divine Christ departed before the passion belongs to Cerinthus, of whom Irenaeus writes that Christ departed from Jesus, and that then Jesus suffered and rose again, while Christ remained impassible. Of the Valentinians proper Irenaeus reports something subtler: that the cry of dereliction was read of Sophia, deserted by the light, rather than of a Saviour quitting a man. What the school does hold consistently is a distinction between the Saviour who descends at the Jordan and the visible life in which he is met — a separation of subjects rather than a denial that Jesus suffered.",
+                "The best-attested word of Valentinus himself is a fragment Clement of Alexandria preserved from a letter to Agathopous: Jesus, he wrote, endured all things and was continent, and he ate and drank in a manner peculiar to himself, the food not passing out of him, for he was not subject to corruption. It is not quite docetism. It is a claim about what a body becomes when the divine is in it.",
+                "The Sethian texts go further and are stranger. The Second Treatise of the Great Seth has the Saviour say that it was another, Simon, who bore the cross on his shoulder, and that he was laughing at their ignorance; the Coptic Apocalypse of Peter sets a living, laughing Jesus above the cross while the powers nail what they take to be him. The laughter is not cruelty. It is the point of the whole system: the rulers of this world believed they could kill the Saviour, and in believing it they proved they had never understood what he was.",
+                "Since 1945 the whole field has changed. Where Irenaeus and Tertullian were once the only witnesses, there are now thirteen codices in Coptic, and the argument has moved on: a substantial body of scholarship now holds that 'Gnosticism' is not a coherent category at all but a heresiological construct, while others retain it for the Sethian corpus specifically. The dispute is unresolved and is about how to describe the evidence, not about what the evidence says."
+            ],
+            "scripture": [
+                {
+                    "ref": "John 1:14",
+                    "how": "'the Word was made flesh' read as indwelling — the aeon dwelling in a vessel rather than becoming one"
+                },
+                {
+                    "ref": "Mark 15:34",
+                    "how": "'why hast thou forsaken me' — read by separationist christologies of the Christ leaving Jesus, and by the Valentinians, in Irenaeus's report, of Sophia deserted by the light"
+                },
+                {
+                    "ref": "Matthew 3:16–17",
+                    "how": "the descent of the dove at the Jordan — where, on this reading, the union begins"
+                },
+                {
+                    "ref": "1 Corinthians 2:14–15",
+                    "how": "the natural man and the spiritual man — the charter text for the Valentinian division of humanity"
+                },
+                {
+                    "ref": "1 John 4:2",
+                    "how": "the opponents' text: confession of Jesus Christ come in the flesh as the mark of the Spirit of God"
+                }
+            ],
+            "heldBy": "Valentinus and his pupils Ptolemy, Heracleon, Theodotus and Marcus; the anonymous authors of the Sethian treatises; communities in Egypt, Rome, Gaul and the Rhône valley substantial enough to require a bishop's full attention for years.",
+            "opposedBy": "Irenaeus of Lyons, whose Against Heresies was written precisely against the Valentinians in his own diocese; Tertullian, Hippolytus, Clement and Origen; and, from wholly outside Christianity, the philosopher Plotinus, who devoted a treatise of the Enneads to refuting them.",
+            "council": "None. They were argued and written out rather than voted out; by the time councils existed, the school had already lost.",
+            "aftermath": "Their books were destroyed or simply not copied, and for sixteen centuries the school was known only through its opponents' summaries. Then in December 1945, near Nag Hammadi in Upper Egypt, thirteen leather-bound codices were dug out of a jar, and the Valentinians and Sethians were heard in their own voices for the first time since antiquity.",
+            "today": "There is no line of descent. There are self-consciously revived Gnostic churches, chiefly in Europe and North America; there is the long influence of the texts on Theosophy and on C. G. Jung, who read them as psychology; and there is a very large general readership, since the Nag Hammadi library has been in cheap English translation since 1977 and has never been out of print.",
+            "status": "condemned"
+        },
+        {
+            "slug": "adoptionism",
+            "name": "Adoptionism: the man whom God adopted",
+            "term": {
+                "native": "δύναμις",
+                "translit": "dynamis",
+                "meaning": "power — the divine power that came to rest upon the man Jesus, from which 'dynamic monarchianism' takes its name"
+            },
+            "claim": "Jesus was a man upon whom the power of God descended at his baptism, so that he became Son of God by adoption and by God's decree, and not by nature or by eternal generation.",
+            "exposition": [
+                "Both the usual names are modern. 'Adoptionism' describes the mechanism; 'dynamic monarchianism' describes the motive, which was the defence of the μοναρχία, the sole rule of the one God, against any suggestion that a second divine being stood beside him. Its holders thought of themselves not as innovators but as the last defenders of the faith the church had always had.",
+                "Theodotus the Cobbler brought it from Byzantium to Rome about 190 and was excommunicated by Victor, bishop of Rome. The anonymous treatise Eusebius preserves against his followers — the so-called Little Labyrinth, often but not certainly ascribed to Hippolytus — brings a charge that reads oddly as an accusation: that they applied grammar, textual criticism and Aristotelian logic to scripture, and preferred Euclid and Galen to the prophets. It is the first recorded complaint that biblical scholarship produces heresy.",
+                "Paul of Samosata, bishop of Antioch and, on Eusebius's account, the holder of a salaried imperial office under the Palmyrene regime, is the position's most famous holder. A synod at Antioch deposed him in 268. He is reported to have taught that the Logos was God's own impersonal wisdom, dwelling in the man Jesus as in a temple, and that Jesus was from below — a man in whom God dwelt, not God who became man.",
+                "And here is the irony that ought to be told to every student of the fourth century: that same synod, in condemning Paul, also rejected the word ὁμοούσιος, apparently because in his mouth it collapsed Father and Son into a single thing. Fifty-seven years later the same word became the test of orthodoxy at Nicaea, and both Athanasius and Hilary had to write pages explaining that Paul had meant something else by it. The vocabulary of orthodoxy was not fixed; it was being made.",
+                "The sources need handling with care. Everything we have of Paul comes through his enemies and through acts that Nicene editors had reason to shape, and how much of the reported doctrine is his own remains an open question."
+            ],
+            "scripture": [
+                {
+                    "ref": "Acts 2:36",
+                    "how": "'God hath made that same Jesus… both Lord and Christ' — a making, in time, of one who was a man"
+                },
+                {
+                    "ref": "Acts 10:38",
+                    "how": "'God anointed Jesus of Nazareth with the Holy Ghost and with power' — the anointing as the event that constitutes him"
+                },
+                {
+                    "ref": "Psalm 2:7",
+                    "how": "'Thou art my Son; this day have I begotten thee' — with the emphasis on 'this day'"
+                },
+                {
+                    "ref": "Mark 1:10–11",
+                    "how": "the Spirit descending and the voice at the Jordan — read as the moment of adoption, not the disclosure of an eternal fact"
+                },
+                {
+                    "ref": "John 8:58",
+                    "how": "the opponents' text: 'Before Abraham was, I am'"
+                }
+            ],
+            "heldBy": "Theodotus of Byzantium and Theodotus the Banker at Rome; Artemon; Paul of Samosata at Antioch; and, in a quite different eighth-century form turning on the word 'adoptive' and concerning the humanity only, Elipandus of Toledo and Felix of Urgel in Spain.",
+            "opposedBy": "Victor of Rome, the author of the Little Labyrinth, and the synod of Antioch of 268; and for the Spanish form, Alcuin, Beatus of Liébana and the court of Charlemagne.",
+            "council": "Antioch, 268 — a local synod, which deposed Paul of Samosata and rejected the word Nicaea would later require. The Spanish adoptionism was condemned at Regensburg in 792 and at Frankfurt in 794.",
+            "aftermath": "It was overtaken rather than refuted. The Logos christology of the apologists had already given the church a way of speaking of a pre-existent Son, and once that framework was in place, an adoption in time had nowhere to happen.",
+            "today": "Held in substance by Unitarians and biblical unitarians, and by Christadelphians in a form that also denies pre-existence; none of them uses the ancient name of itself. It also has a considerable scholarly afterlife: a body of critical work argues that something like it is what the oldest strata of the New Testament actually say, and that the higher christologies are a development — a reading vigorously contested by other scholars who find a very high christology in the earliest material of all.",
+            "status": "condemned"
+        },
+        {
+            "slug": "modalism",
+            "name": "Modalism: Father, Son and Spirit as modes of one",
+            "term": {
+                "native": "μοναρχία",
+                "translit": "monarchia",
+                "meaning": "single rule, sole sovereignty — the divine unity that the modalists took themselves to be defending"
+            },
+            "claim": "God is one person who has made himself known as Father, as Son and as Holy Spirit; the three are names of one and not three who are one.",
+            "exposition": [
+                "Every name this position has is its opponents'. Patripassianism is the charge that it makes the Father suffer; Sabellianism names a man; modalism is a modern coinage. Its holders called themselves nothing in particular, and thought they were simply confessing that God is one, as Israel had always confessed.",
+                "The line runs from Noetus of Smyrna to Praxeas at Rome to Sabellius, who was active in Rome about 215 and excommunicated by Callistus around 220. Tertullian's tract against Praxeas opens with the most quotable sentence in the whole controversy: that Praxeas did two works of the devil at Rome — he put the Paraclete to flight and he crucified the Father. Sabellius is reported to have spoken of God as a monad extending itself, and Epiphanius attributes to him the image of the sun: one body, with its round shape, its light and its heat as three operations.",
+                "The position's strength is real and should not be understated. It protects monotheism absolutely; it takes the Fourth Gospel's identifications at face value — I and my Father are one; he that hath seen me hath seen the Father; and it never has to explain how three can be one, because it never says they are three.",
+                "Its cost was pressed by the opponents in the form of questions rather than propositions. To whom does Jesus pray in Gethsemane? Who raises him from the dead? What is happening at the Jordan, when the voice speaks from heaven and the Spirit descends and the Son stands in the water — a single God performing a ventriloquism upon himself? The trinitarian answer was built out of the difficulty of these questions rather than out of any speculative preference for the number three."
+            ],
+            "scripture": [
+                {
+                    "ref": "John 10:30",
+                    "how": "'I and my Father are one' — read as identity rather than unity of will or being"
+                },
+                {
+                    "ref": "John 14:9",
+                    "how": "'he that hath seen me hath seen the Father'"
+                },
+                {
+                    "ref": "Isaiah 44:6",
+                    "how": "'I am the first, and I am the last; and beside me there is no God'"
+                },
+                {
+                    "ref": "Colossians 2:9",
+                    "how": "'in him dwelleth all the fulness of the Godhead bodily'"
+                },
+                {
+                    "ref": "John 17:1–5",
+                    "how": "the opponents' text: the Son addressing the Father, and asking back a glory he had with him before the world was"
+                }
+            ],
+            "heldBy": "Noetus of Smyrna, Praxeas, Sabellius; and, on Hippolytus's contested accusation, the Roman bishops Zephyrinus and Callistus, who were at any rate more sympathetic to it than he thought decent.",
+            "opposedBy": "Tertullian, Hippolytus, Origen and Dionysius of Alexandria; and by the whole fourth-century settlement, which had to fight it on one flank while fighting Arius on the other.",
+            "council": "Sabellius was excommunicated at Rome about 220. The position is anathematised by name at the First Council of Constantinople in 381, whose opening canon condemns the heresy of the Sabellians along with the Eunomians or Anomoeans, the Arians or Eudoxians, the Semi-Arians or Pneumatomachi, the Marcellians, the Photinians and the Apollinarians.",
+            "aftermath": "It never quite died, because the pressure that produces it never goes away: any preacher trying to explain the Trinity in three minutes will reach for water, ice and steam, and will have preached Sabellius before the sentence is finished. Trinitarian theology has spent seventeen centuries producing better analogies, without conspicuous success.",
+            "today": "Held now, in a form its holders distinguish from Sabellius and on grounds they draw from Acts rather than from any third-century teacher, by the Oneness Pentecostal churches, which have their own entry on this page and their own account of themselves; and reached accidentally, every year, by a great many well-meaning Christians in ordinary conversation.",
+            "status": "condemned"
+        },
+        {
+            "slug": "logos-christology",
+            "name": "Logos christology: the Word through whom the worlds were made",
+            "term": {
+                "native": "λόγος",
+                "translit": "logos",
+                "meaning": "word, reason, argument — and, in Stoic and Philonic usage, the rational principle that orders the cosmos"
+            },
+            "claim": "The Word who was with God and was God is the Son: God's own reason, uttered and made a distinct person, through whom all things were made and who has now become flesh.",
+            "exposition": [
+                "The apologists of the second century were writing for educated pagans who thought Christianity an eastern superstition, and the Logos was the bridge they had been handed. The Stoics used the word for the rational structure of the universe; Philo had used it for God's mediating power; and the Fourth Gospel had already claimed it. Justin Martyr, Tatian, Athenagoras and Theophilus of Antioch built an entire christology on it.",
+                "Justin is startlingly frank about the cost, in a way that would have ended a career two centuries later. The Logos, he tells Trypho, is another God and Lord besides the Maker of all things, distinct from him who made all things — 'numerically, I mean, not in will'. In the middle of the second century this is apologetics. In the middle of the fourth it is anathema. Reading Justin is the quickest way to learn that orthodoxy has a history.",
+                "His image for how a second can come from the first without dividing it is the one that lasted: fire kindled from fire, which is not lessened when it has kindled another, but remains the same. Nicaea's light from light is Justin's picture, with the subordination taken out of it.",
+                "His most generous move is the doctrine of the seminal Word, the λόγος σπερματικός: the Word is scattered as seed through the whole human race, so that those who lived according to reason lived with Christ before Christ. Socrates and Heraclitus, Justin says, were Christians. It is among the most open sentences written by anyone in the second century, and it was written by a man who was executed for his faith.",
+                "And there is the door that would later be walked through. Theophilus of Antioch distinguished the Word within God from the Word uttered — the λόγος ἐνδιάθετος from the λόγος προφορικός — and had the Son's distinct existence begin when God spoke him forth for the making of the world. That is a Son with a beginning. Arius did not invent his question; he inherited it from the church's own apologists."
+            ],
+            "scripture": [
+                {
+                    "ref": "John 1:1–3, 14",
+                    "how": "the prologue: the Word with God, the Word as God, the Word as agent of creation, the Word made flesh"
+                },
+                {
+                    "ref": "Proverbs 8:22–31",
+                    "how": "Wisdom beside the LORD before the world — the passage every party in the next two centuries would need to control"
+                },
+                {
+                    "ref": "Psalm 33:6",
+                    "how": "'By the word of the LORD were the heavens made' — creation by utterance"
+                },
+                {
+                    "ref": "1 Corinthians 8:6",
+                    "how": "'one Lord Jesus Christ, by whom are all things' — the earliest formula assigning creation to the Son"
+                },
+                {
+                    "ref": "Hebrews 1:3",
+                    "how": "'the brightness of his glory, and the express image of his person' — the derivation that does not diminish"
+                }
+            ],
+            "heldBy": "Justin Martyr, Tatian, Athenagoras and Theophilus of Antioch; then Hippolytus, Tertullian, Clement and Origen. It is the mainstream of Christian thought in the second and third centuries, not a party within it.",
+            "opposedBy": "The monarchians on both flanks: the modalists, who thought it produced two Gods, and the adoptionists, who thought a second divine being was one too many. And, retrospectively, by fourth-century Nicenes, who found the apologists' subordinationism an embarrassment and quoted them selectively.",
+            "council": "None judged it, because it was the framework within which the later judgments were made. The Nicene creed is a Logos christology from which the subordination has been surgically removed.",
+            "aftermath": "It gave the church the vocabulary in which the fourth century could be argued, and then was corrected by the argument it made possible. Nobody who signed at Nicaea would have been comfortable with Justin's sentence about another God; nobody at Nicaea could have got there without him.",
+            "today": "Every Nicene church holds a Logos christology, and recites one every Sunday. The specifically second-century version, with its frank ranking of Father above Son, survives chiefly in the honest observation of historians that the apologists could not have signed the creed their successors wrote.",
+            "status": "tolerated"
+        },
+        {
+            "slug": "origen",
+            "name": "Origen: eternal generation, and the subordination question",
+            "term": {
+                "native": "ἀεὶ γεννᾶται",
+                "translit": "aei gennatai",
+                "meaning": "he is always being begotten — the generation of the Son as an eternal act rather than a past event"
+            },
+            "claim": "The Son is begotten of the Father eternally, without beginning and without ceasing; and yet he is not the Father, and in the order of the Godhead he stands second.",
+            "exposition": [
+                "Origen's decisive contribution, on which every later party depended without exception, was to make the begetting of the Son eternal. Not an event at the head of time, but a relation with no beginning: the Father does not beget the Son once, as a man begets a son, but always, as light gives out brightness. There never was when he was not. Take that sentence away and the fourth-century argument cannot even be stated.",
+                "And the same Origen calls the Son a second God; observes that in the prologue of John the Father is ὁ θεός with the article and the Son is θεός without it; and teaches that prayer is properly offered to the Father through the Son, and not to the Son as to the Father. In the fourth century both sides quoted him against each other, and both sides were quoting him accurately. He had not been answering their question.",
+                "There is a problem of transmission underneath all of this. Most of the systematic work survives only in Rufinus's Latin, and Rufinus admitted in his preface that he had smoothed passages he thought had been corrupted by heretics; Jerome, after their quarrel, translated the same passages to damage him. A good deal of what 'Origen taught' is a question about a translator's honesty.",
+                "The condemnations are themselves unsettled. Nine anathemas were issued under Justinian in a letter to the patriarch Menas and ratified by a local synod at Constantinople in 543; fifteen further anathemas are associated with the Second Council of Constantinople in 553. Whether the ecumenical council itself issued them is genuinely disputed among scholars: some hold that it did; others that the fifteen belong to a separate synod; others that they were passed by the assembled bishops before the council formally opened, which would leave Origen condemned but not by an ecumenical act. This is not pedantry. A great deal of Eastern theology descends from a man whose conciliar standing has never been settled.",
+                "What was condemned, in any case, was mostly not his christology. It was the pre-existence of souls, the restoration of all things, and a set of positions held by sixth-century Origenists which may not have been his at all."
+            ],
+            "scripture": [
+                {
+                    "ref": "Hebrews 1:3",
+                    "how": "'the brightness of his glory' — brightness is never later than the light: Origen's demonstration of eternal generation"
+                },
+                {
+                    "ref": "Wisdom 7:25–26",
+                    "how": "'the brightness of the everlasting light' — the text behind Hebrews and behind the argument; deuterocanonical, and so scripture for some of the churches on this page and not for others"
+                },
+                {
+                    "ref": "John 1:1",
+                    "how": "the presence and absence of the definite article before θεός — Origen's evidence for a real distinction of rank"
+                },
+                {
+                    "ref": "John 14:28",
+                    "how": "'my Father is greater than I'"
+                },
+                {
+                    "ref": "Proverbs 8:22",
+                    "how": "'The Lord created me as the beginning of his ways' in the Greek — a text Origen could handle and Arius would weaponise"
+                }
+            ],
+            "heldBy": "Origen of Alexandria and Caesarea, and the tradition running through Gregory Thaumaturgus, Eusebius of Caesarea, the Cappadocians and, in another direction entirely, Evagrius of Pontus.",
+            "opposedBy": "Methodius of Olympus in his own century; then Epiphanius, Jerome after 393, Theophilus of Alexandria, and the emperor Justinian, who had political as well as theological reasons for wanting the Origenist monks of Palestine dealt with.",
+            "council": "A local synod at Constantinople in 543; and anathemas attached to the Second Council of Constantinople in 553, whose conciliar standing scholars continue to dispute.",
+            "aftermath": "His books were burned or left uncopied, and he became the great unmentionable whose ideas everyone used. The doctrine of eternal generation — 'begotten, not made' — passed into the creed of the whole church under other men's names.",
+            "today": "Every church that says 'begotten of the Father before all worlds' is speaking Origen's sentence. His universalism has been recovered and defended in the last century by theologians in several communions, and proposals for his formal rehabilitation surface periodically; the fact that nobody is quite certain what he was condemned for, or by whom, has not made them easier to settle.",
+            "status": "unresolved"
+        },
+        {
+            "slug": "arianism",
+            "name": "Arianism: there was when he was not",
+            "term": {
+                "native": "ἦν ποτε ὅτε οὐκ ἦν",
+                "translit": "ēn pote hote ouk ēn",
+                "meaning": "there was when he was not — the phrase Nicaea anathematised by name"
+            },
+            "claim": "The Son is the first and highest of God's works, brought into being before all ages by the Father's will and out of nothing; therefore he is not eternal and not of the Father's own substance.",
+            "exposition": [
+                "Arius was a presbyter of the Baucalis church in Alexandria whose quarrel with his bishop began about 318. His concern was to protect the one unbegotten God. If the Son is also unbegotten, there are two ultimate beings and monotheism has gone. If he is begotten, then he had a beginning, because that is what begetting means. Arius drew the conclusion and would not be talked out of it.",
+                "His own writings survive almost entirely in the quotations of his enemies, and the Thalia is the sharpest case. It was a work in verse, and Athanasius derides it by likening its metre to the loose Sotadean measure of the banquet. It reaches us only through Athanasius, who paraphrases it in the Orations against the Arians and quotes it at greater length in De Synodis: that the Father is foreign from the Son in essence, for he is without beginning; that the Son does not know his own essence; that we praise him as without beginning because of him who has a beginning. His two reports do not agree with each other, and which stands closer to Arius's words is an unsettled scholarly question. These are the words of a hostile witness reporting a document his readers could check, and they must be read as exactly that — neither dismissed nor treated as a transcript. Two letters of Arius, to Eusebius of Nicomedia and to Alexander of Alexandria, survive in fuller and less polemical transmission, and are the safer ground.",
+                "Note carefully what Arius did not say. He did not say that Christ was merely a man; he did not deny his pre-existence; he did not deny that he should be honoured. He said the Son was a perfect creature, unlike every other creature, through whom everything else was made. The question was never whether Christ was exalted. It was whether he was God in the same sense as the Father is God.",
+                "This was not a fringe movement. For most of the fourth century after Nicaea it held the imperial court; Constantius II backed it; Athanasius was exiled five times, some seventeen years in all. Jerome's line that the whole world groaned and marvelled to find itself Arian records a real defeat and not a rhetorical flourish. Strictly, the imperial party of those decades is better called Homoian, after its formula that the Son is 'like' the Father: 'Arian' was largely its opponents' word for it, and few of the bishops it covers would have owned Arius as a master.",
+                "And it had a second life beyond the empire. Ulfilas, consecrated about 341, translated the Bible into Gothic and converted the Goths; through them the faith passed to the Vandals, Lombards and Burgundians. So a non-Nicene Christianity ruled Spain, Italy and North Africa for two centuries after it had lost the argument in the East. The Visigoths conformed at the Third Council of Toledo in 589, and the Lombards, the last of them, only in the seventh century."
+            ],
+            "scripture": [
+                {
+                    "ref": "Proverbs 8:22",
+                    "how": "'The Lord created me as the beginning of his ways' in the Greek Old Testament — the Arian proof-text, spoken by Wisdom of herself"
+                },
+                {
+                    "ref": "Colossians 1:15",
+                    "how": "'the firstborn of every creature' — firstborn read as first-made"
+                },
+                {
+                    "ref": "John 14:28",
+                    "how": "'my Father is greater than I'"
+                },
+                {
+                    "ref": "Mark 13:32",
+                    "how": "'of that day and that hour knoweth no man… neither the Son, but the Father' — ignorance in the Son"
+                },
+                {
+                    "ref": "Mark 10:18",
+                    "how": "'Why callest thou me good? there is none good but one, that is, God'"
+                }
+            ],
+            "heldBy": "Arius; Eusebius of Nicomedia and the court bishops; the Homoian episcopate of the middle decades; later and far more radically Aetius and Eunomius, who held the Son unlike the Father in substance; the emperors Constantius II and Valens; Ulfilas and the Germanic churches.",
+            "opposedBy": "Alexander of Alexandria; Athanasius, who paid for it with some seventeen years of exile; Hilary of Poitiers in the West; and the Cappadocians, whose distinction of one substance in three persons finally made the Nicene word usable in Greek.",
+            "council": "Nicaea, 325, which anathematised by name those who say 'there was when he was not', 'before being begotten he was not', 'he came into being out of things that are not', and those who call the Son of another hypostasis or substance, or created, or subject to alteration or change. Reaffirmed and made final at Constantinople in 381.",
+            "aftermath": "It lost by attrition rather than by argument: three generations of exiles, depositions, imperial reversals and rival creeds, ending in a settlement at Constantinople in 381 that owed as much to the moderates it had frightened as to Athanasius.",
+            "today": "No church calls itself Arian, and none claims descent from him. Jehovah's Witnesses hold a christology that historians describe as structurally similar, and Christadelphians and some Unitarians hold low christologies of other shapes; each of these reached its position by reading scripture rather than by any line from Alexandria, and the Witnesses in particular reject the identification.",
+            "status": "condemned"
+        },
+        {
+            "slug": "nicene-homoousios",
+            "name": "The Nicene homoousios: of one being with the Father",
+            "term": {
+                "native": "ὁμοούσιος",
+                "translit": "homoousios",
+                "meaning": "of the same being or substance — consubstantial, coessential"
+            },
+            "claim": "The Son is begotten of the Father's own being: God from God, light from light, true God from true God, begotten and not made, of one substance with the Father.",
+            "exposition": [
+                "Constantine convoked the council at Nicaea in Bithynia in the summer of 325 — the first council of the whole church and the first summoned by an emperor, which is a fact about the shape of everything that followed. Tradition counts three hundred and eighteen bishops; Eusebius, who was there, gives about two hundred and fifty, and the traditional number is almost certainly borrowed from the three hundred and eighteen trained servants of Abram in Genesis.",
+                "The word ὁμοούσιος was not in scripture and had a bad history: a synod at Antioch had rejected it in 268 in the course of condemning Paul of Samosata. It was chosen precisely because of what it excluded. Athanasius tells the story: every biblical formula the council tried — 'of God', 'the power of God', 'the image of God' — the Arian party proved willing to sign with a private reservation. The council needed a word they could not sign, and this was it.",
+                "What it settled and what it did not. It did not settle the relation of οὐσία and ὑπόστασις: the creed's own anathema treats them as synonyms, and for the next fifty years Greeks and Latins could not tell whether they were agreeing or not, since the Latin substantia translated the first and the Greek hypostasis looked like the second. The Cappadocians' formula — one οὐσία in three ὑποστάσεις — is what eventually made the settlement speakable, and it came the better part of sixty years after the council.",
+                "Nicaea did not end the argument; it started it. Athanasius himself scarcely used the word for two decades afterwards. The creed most churches recite is not the creed of 325 but its expansion at Constantinople in 381, with the third article on the Spirit that the first council had left as a single clause."
+            ],
+            "scripture": [
+                {
+                    "ref": "John 1:1",
+                    "how": "'and the Word was God' — the anarthrous θεός read as full predication of deity"
+                },
+                {
+                    "ref": "John 10:30",
+                    "how": "'I and my Father are one'"
+                },
+                {
+                    "ref": "John 8:58",
+                    "how": "'Before Abraham was, I am' — existence without beginning, in the Son's own mouth"
+                },
+                {
+                    "ref": "Hebrews 1:3",
+                    "how": "'the express image of his person' — χαρακτὴρ τῆς ὑποστάσεως αὐτοῦ, the very words the argument would turn on"
+                },
+                {
+                    "ref": "Philippians 2:6",
+                    "how": "'being in the form of God, thought it not robbery to be equal with God'"
+                }
+            ],
+            "heldBy": "Alexander and then Athanasius of Alexandria; Ossius of Corduba; Marcellus of Ancyra, whose version of it was itself condemned; the Cappadocians; and after 381 the whole imperial church.",
+            "opposedBy": "Arius and Eusebius of Nicomedia at the time; and afterwards by a wide spectrum of bishops who were not Arians at all but thought the word unscriptural, or thought it Sabellian, or both.",
+            "council": "Nicaea, 325, and confirmed at Constantinople, 381, in the creed that Catholics, Orthodox, Oriental Orthodox, the Church of the East, Anglicans, Lutherans and Reformed all still recite.",
+            "aftermath": "Fifty-six years of exile, deposition, imperial pressure and competing creeds followed the council that was supposed to have finished the matter — and the word survived them all, largely because Athanasius refused to let it go and because the alternatives, when written out, satisfied nobody.",
+            "today": "It is the single christological formula that the whole divided family holds in common. Churches that anathematise one another over Chalcedon, over the papacy, over the procession of the Spirit, say this together and mean the same thing by it.",
+            "status": "vindicated"
+        },
+        {
+            "slug": "homoiousios",
+            "name": "Homoiousios: the one-iota difference",
+            "term": {
+                "native": "ὁμοιούσιος",
+                "translit": "homoiousios",
+                "meaning": "of like being — differing from ὁμοούσιος by a single added iota, which turns the omicron into the diphthong οι"
+            },
+            "claim": "The Son is like the Father in being — truly like, and like in all respects — but not identical in substance, for that would make Father and Son one thing under two names.",
+            "exposition": [
+                "Gibbon derided a furious contest excited by the difference of a single diphthong, and the joke has been repeated ever since by people who have not asked what the difference was for. It was this. To Eastern ears, to say the Son is of the same substance as the Father risked saying that Father and Son are one thing with two names — which is Sabellianism, which the East had already condemned, and which the West kept sounding as though it believed. To say 'of like substance' was to insist on the Son's full likeness while keeping Father and Son really distinct.",
+                "The party — Basil of Ancyra, George of Laodicea, and the bishops who met at Ancyra in 358 — were not Arians and did not think they were. They condemned the Anomoeans, who held the Son to be unlike the Father, as vigorously as any Nicene did. 'Semi-Arian' is a name their opponents gave them, and it is not a description they would have recognised.",
+                "The decisive concession came from Athanasius, of all people. In De Synodis he wrote that those who accept everything else defined at Nicaea and doubt only about the Coessential must not be treated as enemies; that we discuss the matter with them as brothers with brothers, who mean what we mean, and dispute only about the word; and he named Basil of Ancyra as such a man. The single hardest man of the fourth century decided that the iota was a matter of vocabulary, and the settlement became possible.",
+                "Most of the party signed at Constantinople in 381. The formula that stands is theirs as much as anyone's, because what made ὁμοούσιος usable in Greek was the Cappadocian distinction between one substance and three persons — precisely the distinction the homoiousians had been reaching for when they refused the word."
+            ],
+            "scripture": [
+                {
+                    "ref": "Colossians 1:15",
+                    "how": "'the image of the invisible God' — an image is like its original and is not its original"
+                },
+                {
+                    "ref": "Hebrews 1:3",
+                    "how": "'the express image of his person' — the same argument from likeness, pressed for real distinction"
+                },
+                {
+                    "ref": "John 5:19",
+                    "how": "'what things soever he doeth, these also doeth the Son likewise' — likeness in operation as the key to likeness in being"
+                },
+                {
+                    "ref": "John 14:28",
+                    "how": "'my Father is greater than I' — held to require a real distinction of persons, not of divinity"
+                },
+                {
+                    "ref": "John 10:30",
+                    "how": "the opposing text: 'I and my Father are one', which they read of unity and not of identity"
+                }
+            ],
+            "heldBy": "Basil of Ancyra, George of Laodicea, Eustathius of Sebaste and the bishops of the Ancyran synod of 358; a large part of the Eastern episcopate through the middle decades of the century.",
+            "opposedBy": "Both extremes: the Anomoeans, who thought it conceded too much, and the strict Nicenes, who thought it conceded too little — until Athanasius decided that on this point his own side had been misreading them.",
+            "council": "Ancyra, 358; the twin councils of Seleucia and Ariminum in 359, which the court manipulated against them; and Constantinople, 381, where the party was absorbed rather than defeated.",
+            "aftermath": "It disappeared as a party by being agreed with. The Nicene word was retained and the homoiousian anxiety was met by a distinction of terms, which is the usual way large theological arguments actually end.",
+            "today": "Nobody holds it as a party, and every Nicene Christian holds half of it: the insistence that Father and Son are really distinct, and not two names for one, is now simply orthodoxy. The episode is worth remembering as evidence that the losers of a doctrinal argument are sometimes people who were making a point that had to be conceded.",
+            "status": "tolerated"
+        },
+        {
+            "slug": "pneumatomachi",
+            "name": "Pneumatomachianism: the same argument, about the Spirit",
+            "term": {
+                "native": "πνευματομάχοι",
+                "translit": "pneumatomachoi",
+                "meaning": "Spirit-fighters — the name given them by their opponents; they did not use it of themselves"
+            },
+            "claim": "The Holy Spirit is not God but the first and highest of the ministering spirits, brought into being through the Son.",
+            "exposition": [
+                "Once the Son's full divinity was settled, the question moved one place along. The men who denied it of the Spirit accepted Nicaea about the Son; several had been homoiousians who came over. They were called Macedonians, after Macedonius of Constantinople, on evidence that is thin, and Spirit-fighters by Athanasius and the Cappadocians. Both names belong to their enemies.",
+                "Their argument was strictly scriptural, and it is not weak. The New Testament nowhere calls the Spirit God in so many words. Nowhere is prayer addressed to the Spirit. The Spirit is given, poured out, sent — the grammar of a gift rather than a giver. If the church wished to add a third divine person, let it produce the text.",
+                "Basil of Caesarea's On the Holy Spirit of 375 does not answer with a proof-text, because there was not one. He answers from worship: the Spirit is named with the Father and the Son in the baptismal formula that makes Christians; the church's doxology gives the Spirit the same glory; and what is worshipped is God. It is an argument from what the church does to what the church must believe, and it is one of the most consequential moves in Christian theology.",
+                "Constantinople in 381 did not use ὁμοούσιος of the Spirit either. It said instead: the Lord, the giver of life, who proceedeth from the Father, who with the Father and the Son together is worshipped and glorified, who spake by the prophets. Divinity confessed by worship rather than asserted by substance-language. Gregory of Nazianzus, who wanted the council to say plainly that the Spirit is God, thought the compromise cowardly, resigned the chair and went home. The creed the world recites is the one he lost."
+            ],
+            "scripture": [
+                {
+                    "ref": "Matthew 28:19",
+                    "how": "the single name of Father, Son and Holy Ghost in baptism — Basil's decisive argument"
+                },
+                {
+                    "ref": "Acts 5:3–4",
+                    "how": "'thou hast not lied unto men, but unto God' — of a lie told to the Holy Ghost"
+                },
+                {
+                    "ref": "1 Corinthians 2:10–11",
+                    "how": "'the Spirit searcheth all things, yea, the deep things of God' — only God knows God"
+                },
+                {
+                    "ref": "Amos 4:13",
+                    "how": "the Pneumatomachian text, and it works only in Greek: the Hebrew has God creating the wind, but the Septuagint's κτίζων πνεῦμα could be read as creating the Spirit. Gregory of Nazianzus and Didymus both had to answer it"
+                },
+                {
+                    "ref": "John 15:26",
+                    "how": "'the Spirit of truth, which proceedeth from the Father' — a procession that would itself divide East and West"
+                }
+            ],
+            "heldBy": "Macedonius of Constantinople, to whom the party is attributed on thin evidence; Eustathius of Sebaste, once Basil's friend; and a substantial body of bishops who accepted the Son's divinity and stopped there.",
+            "opposedBy": "Athanasius in his Letters to Serapion, Basil of Caesarea, Gregory of Nazianzus, Gregory of Nyssa, Didymus the Blind and Ambrose in the West.",
+            "council": "Constantinople, 381, whose first canon names them among the condemned heresies and whose third article of the creed is the answer to them.",
+            "aftermath": "They disappeared within a generation, and the creed's careful reticence has been read ever since as though it said what Gregory wanted it to say. The Spirit's full deity became doctrine by the route Basil proposed: through the practice of worship rather than through a demonstration from texts.",
+            "today": "No church holds it as such. The underlying objection — that the Spirit's personal deity is under-attested in scripture — is raised now by Unitarians, by Jehovah's Witnesses, who hold the Spirit to be God's active force rather than a person, and by some Oneness Pentecostals, for whom Spirit is a name of the one God in action. Each states the case in its own terms, and none accepts the ancient nickname.",
+            "status": "condemned"
+        },
+        {
+            "slug": "apollinarianism",
+            "name": "Apollinarianism: the Word in place of the human mind",
+            "term": {
+                "native": "νοῦς",
+                "translit": "nous",
+                "meaning": "mind, the rational soul — the element in the human being that Apollinaris held the Word supplied in his own person"
+            },
+            "claim": "In Christ the divine Word took a human body and its animating soul, and himself occupied the place of the human rational mind.",
+            "exposition": [
+                "Apollinaris of Laodicea was a friend of Athanasius and one of the ablest defenders of Nicaea, and his christology was an attempt to answer a serious question that nobody else had yet answered: how is the incarnate Christ one? If he has a complete human being in him, mind and will included, then there are two centres of decision in him, and the incarnation is a partnership rather than a person.",
+                "His solution used the tripartite anthropology available to him — body, animating soul, rational mind — and let the Word occupy the third place. The result is unambiguously one subject with one source of action, which is exactly what he was after, and which is what Cyril would later be after by another route.",
+                "The answer that finished it is Gregory of Nazianzus's, in his first letter to Cledonius, and it is one sentence: 'that which he has not assumed he has not healed; but that which is united to his Godhead is also saved.' If Christ has no human mind, then the human mind — which, Gregory argues, was where the fall began, since it was the mind that received the command and disobeyed — is precisely the part of us left unredeemed.",
+                "And then the irony that shaped the next two centuries. Apollinaris was condemned, and his followers preserved his writings under the names of Athanasius, Julius of Rome and Gregory Thaumaturgus. The formula 'one incarnate nature of God the Word', which Cyril of Alexandria took to be Athanasius's and made the centre of his christology, came out of that pseudonymous corpus. The fifth century's greatest defender of Christ's complete humanity was building on sentences written by the man condemned for denying it."
+            ],
+            "scripture": [
+                {
+                    "ref": "John 1:14",
+                    "how": "'the Word was made flesh' — σάρξ, flesh, and not 'man': Apollinaris's own text"
+                },
+                {
+                    "ref": "1 Corinthians 15:47",
+                    "how": "'the second man is the Lord from heaven' — a humanity that comes down rather than one wholly taken from below"
+                },
+                {
+                    "ref": "1 Thessalonians 5:23",
+                    "how": "'spirit and soul and body' — the threefold anthropology his christology required"
+                },
+                {
+                    "ref": "Hebrews 2:17",
+                    "how": "the answer: 'in all things it behoved him to be made like unto his brethren'"
+                },
+                {
+                    "ref": "Luke 2:52",
+                    "how": "'Jesus increased in wisdom and stature' — a mind that grows, which a divine mind does not"
+                }
+            ],
+            "heldBy": "Apollinaris of Laodicea and his school, chiefly in Syria; and, long after the condemnation, by the anonymous transmitters who kept his books alive under other men's names.",
+            "opposedBy": "Gregory of Nazianzus, Gregory of Nyssa, Basil of Caesarea, Epiphanius, and Damasus at Rome; and, without knowing it, by everyone who afterwards insisted that Christ has a human will.",
+            "council": "Condemned at Rome in 377, at Alexandria, and finally by name at the First Council of Constantinople in 381, whose opening canon lists the Apollinarians among the anathematised.",
+            "aftermath": "The party dissolved and the books went underground into the pseudonymous corpus, from which they exercised more influence than they ever had under their author's name. Its question outlived its answer: how one person can act through two complete natures is precisely what Chalcedon would decline to explain.",
+            "today": "No body holds it. The instinct survives wherever devotion imagines the infant in the manger knowing all things, or Christ's human ignorance as a performance — which is to say, in a great deal of ordinary piety, and in more Christmas carols than one would expect.",
+            "status": "condemned"
+        },
+        {
+            "slug": "antiochene-nestorius",
+            "name": "The Antiochene two natures, and Nestorius",
+            "term": {
+                "native": "συνάφεια",
+                "translit": "synapheia",
+                "meaning": "conjunction, joining — the Antiochene word for the union, chosen to keep the natures unconfused"
+            },
+            "claim": "The Word and the man assumed are two complete natures conjoined in one person, so that what belongs to the manhood is not predicated of the Godhead as though God had been born or had died.",
+            "exposition": [
+                "The school of Antioch — Diodore of Tarsus, then Theodore of Mopsuestia, then Nestorius — began from the integrity of the humanity, and for a soteriological reason. If the Word is to redeem the human race, he must assume a complete man, with a human mind that can learn and a human will that can be tempted and can obey; a humanity that is only a costume redeems nothing. And God, being impassible, cannot in strict speech be said to have been born, or to have grown, or to have died.",
+                "The quarrel broke over a word. Nestorius, made archbishop of Constantinople in 428, objected to θεοτόκος, God-bearer, as a title for Mary — not because he denied the incarnation but because the word seemed to him to say that the Godhead had a beginning in a womb. He proposed Χριστοτόκος, Christ-bearer, as covering both natures at once, and said repeatedly that he would accept θεοτόκος if it were understood rightly. It was not a concession his opponents were interested in.",
+                "Cyril of Alexandria answered with twelve anathemas. The council at Ephesus in 431 opened on 22 June before the Syrian bishops had arrived, deposed Nestorius on its first day, and was met on 26 June by a rival synod of the Syrians when they got there, which deposed Cyril. Both sides appealed to the emperor. The procedure of Ephesus has been argued about ever since, and by no means only by partisans.",
+                "Nestorius wrote his own defence in exile: the Book of Heracleides of Damascus, in which he denies that he ever taught two sons or two Christs, and, reading Leo's Tome, says that this is what he had believed all along. The book was lost for fourteen centuries. A Syriac copy was made in 1889 at Qudshanis in the Hakkari mountains, Paul Bedjan edited the Syriac at Paris in 1910, and the English translation of Driver and Hodgson appeared in 1925; the manuscript is thought to have perished in the catastrophe that overtook those mountains during the First World War.",
+                "The Church of the East rejects the name 'Nestorian' as an exonym imposed by others, and the rejection is historically as well as pastorally justified: its christology descends from Theodore of Mopsuestia, not from Nestorius, and was fixed by Babai the Great in the Book of Union — two kyāne (ܟܝܢܐ, natures) and two qnome (ܩܢܘܡܐ) in one parsopa (ܦܪܨܘܦܐ). On 11 November 1994 Pope John Paul II and Catholicos-Patriarch Mar Dinkha IV signed a Common Christological Declaration confessing the same faith in the incarnation and recognising as legitimate both 'Mother of God' and 'Mother of Christ our God and Saviour'. The quarrel about the word took fifteen hundred and sixty-three years to close."
+            ],
+            "scripture": [
+                {
+                    "ref": "Luke 2:52",
+                    "how": "'Jesus increased in wisdom and stature, and in favour with God and man' — a real human growth requires a real human nature to grow"
+                },
+                {
+                    "ref": "Hebrews 4:15",
+                    "how": "'in all points tempted like as we are, yet without sin' — temptation requires a human will that could have done otherwise"
+                },
+                {
+                    "ref": "Hebrews 5:8",
+                    "how": "'though he were a Son, yet learned he obedience by the things which he suffered'"
+                },
+                {
+                    "ref": "Philippians 2:8",
+                    "how": "'became obedient unto death' — obedience is offered by a creature to God"
+                },
+                {
+                    "ref": "Galatians 4:4",
+                    "how": "the opposing text: 'God sent forth his Son, made of a woman' — Cyril's warrant for θεοτόκος"
+                }
+            ],
+            "heldBy": "Diodore of Tarsus, Theodore of Mopsuestia, Theodoret of Cyrrhus and Nestorius; and, in its own distinct and independently developed form, the Assyrian Church of the East and the Ancient Church of the East.",
+            "opposedBy": "Cyril of Alexandria and the council of Ephesus of 431; and, in the matter of the Three Chapters, the Second Council of Constantinople of 553, which condemned the person and writings of Theodore a hundred and twenty-five years after his death, and writings of Theodoret and of Ibas some ninety years after theirs.",
+            "council": "Ephesus, 431, which deposed Nestorius and made θεοτόκος the test of communion.",
+            "aftermath": "Nestorius died in exile in Egypt about twenty years later. The Syriac-speaking churches east of the Roman frontier, who had had no part in the council and who honoured Theodore as 'the Interpreter', declined to accept a condemnation reached in an empire that was not theirs — and became, under Persian and then Muslim rule, a missionary church that reached India, Central Asia and Chang'an, the Tang capital on the site of modern Xi'an, where the stele of 781 records their presence.",
+            "today": "The Assyrian Church of the East and the Ancient Church of the East, several hundred thousand faithful between them, scattered by a century of massacre and displacement. The Chaldean Catholic Church and the Syro-Malabar Church grew from the same East Syriac root and are far larger, but they are in full communion with Rome and confess the Chalcedonian definition. None of these churches accepts the name their opponents gave them, and no careful historian now uses it of them without saying so.",
+            "status": "divided"
+        },
+        {
+            "slug": "cyril-one-nature",
+            "name": "Cyril's one incarnate nature",
+            "term": {
+                "native": "μία φύσις τοῦ θεοῦ λόγου σεσαρκωμένη",
+                "translit": "mia physis tou theou logou sesarkōmenē",
+                "meaning": "one incarnate nature of God the Word"
+            },
+            "claim": "The Word himself is the single subject of everything Christ does and suffers; the union is out of two natures, and of the one who results one may speak as the one incarnate nature of the Word.",
+            "exposition": [
+                "Cyril's driving conviction was about salvation. It is not a man who saves us, and not a man in partnership with God, but God the Word who has made a human life his own. Therefore the one who is eternally begotten of the Father is the one who was born of Mary, hungered, wept and was crucified — not by a figure of speech, and not through a partner, but truly, in the flesh. Hence the exchange of properties pressed to its limit: his twelfth anathema confesses that the Word of God suffered in the flesh, a claim the sixth century would sharpen into the Theopaschite formula that one of the Trinity suffered in the flesh. Hence θεοτόκος, which for Cyril is not a statement about Mary at all but a statement about who her son is.",
+                "His formula he believed to be Athanasius's. It was not. It came out of the Apollinarian corpus circulating under Athanasius's name — which is why the sharpest defender of Christ's full humanity in the fifth century was quoting the man condemned for denying it. Cyril used φύσις where later usage would say ὑπόστασις; read with that substitution, his formula and Chalcedon's say the same thing, and that identification is the ground on which the divided churches have met in our own time.",
+                "He was also capable of settlement. In 433 he signed the Formula of Reunion with John of Antioch — a document in Antiochene language, confessing a union of two natures, and Christ consubstantial with the Father as to his Godhead and consubstantial with us as to his manhood — and then spent years defending his signature against his own hardliners, who thought he had sold Ephesus. The Formula is the single most important text for the claim that the two families were never as far apart as their slogans.",
+                "Cyril is not a comfortable figure and this page will not make him one. His conduct at Ephesus, the gifts distributed at the imperial court to secure the outcome, and the murder of the philosopher Hypatia by an Alexandrian mob in 415 are all argued about. Socrates Scholasticus, writing not long after and not friendly, records the murder and says it brought no small reproach upon Cyril and the Alexandrian church, without accusing him of ordering it; the pagan Damascius blames him directly; modern historians divide over how much of the city's violence he controlled and how much he had merely made possible."
+            ],
+            "scripture": [
+                {
+                    "ref": "John 1:14",
+                    "how": "'the Word was made flesh' — became, not merely inhabited"
+                },
+                {
+                    "ref": "Galatians 4:4",
+                    "how": "'God sent forth his Son, made of a woman, made under the law'"
+                },
+                {
+                    "ref": "1 Corinthians 2:8",
+                    "how": "'they would not have crucified the Lord of glory' — the crucified one named by a divine title"
+                },
+                {
+                    "ref": "Acts 20:28",
+                    "how": "'the church of God, which he hath purchased with his own blood' — noting that the manuscripts divide here between 'church of God' and 'church of the Lord', and the force of the text for this argument depends on which is read"
+                },
+                {
+                    "ref": "Hebrews 2:14",
+                    "how": "'he also himself likewise took part of the same' — the taking is by the Word himself"
+                }
+            ],
+            "heldBy": "Cyril of Alexandria and the Alexandrian school; Dioscorus after him; and, in the form Severus of Antioch gave it, the Oriental Orthodox churches to this day.",
+            "opposedBy": "Nestorius and the Antiochenes at the time, who thought it confused the natures; and afterwards by Chalcedonians who found the formula unusable without Cyril's own explanations attached to it.",
+            "council": "Ephesus, 431, which received his position; and Chalcedon, 451, which claimed to be following him while adopting language his followers could not accept.",
+            "aftermath": "His authority became the prize both sides fought over. Chalcedon appealed to Cyril; the churches that rejected Chalcedon appealed to Cyril; and the whole subsequent history is in large part an argument about which of them was reading him correctly.",
+            "today": "He is a saint and a doctor in the Catholic, Eastern Orthodox and Oriental Orthodox churches alike. Both the Chalcedonian and the miaphysite families read their own christology out of him, and the modern agreed statements between them rest on the conclusion that both have been reading him rightly, in different words.",
+            "status": "divided"
+        },
+        {
+            "slug": "eutychianism",
+            "name": "Eutychianism: the humanity swallowed up",
+            "term": {
+                "native": "σύγχυσις",
+                "translit": "synchysis",
+                "meaning": "commingling, confusion — the fusing of the natures, which Chalcedon's first adverb, ἀσυγχύτως, was written to forbid"
+            },
+            "claim": "After the union there is one nature in Christ, and his flesh is not of one substance with ours.",
+            "exposition": [
+                "Eutyches was an elderly archimandrite of a large monastery outside Constantinople, godfather to the eunuch Chrysaphius who ran the imperial household, and a fierce partisan of Cyril's memory. He was not a subtle theologian and never claimed to be, and his importance is entirely a function of what he provoked.",
+                "Summoned before the standing synod at Constantinople under Archbishop Flavian in November 448, he said: 'I confess that our Lord was of two natures before the union, but after the union I confess one nature.' Pressed further, he refused to say that Christ was consubstantial with us according to the manhood. That refusal, and not the arithmetic of natures, is what condemned him. If Christ's flesh is not our flesh, our flesh is not saved.",
+                "He appealed, and had the court. Theodosius II convoked a second council at Ephesus in August 449 under Dioscorus of Alexandria, which restored Eutyches, deposed Flavian, and refused to have Pope Leo's Tome read aloud. Flavian died shortly afterwards in exile; his supporters said, of injuries received. Leo called the assembly not a judgment but a robbery — latrocinium — and the 'Robber Council' has been its name in Western books ever since. That name is Leo's polemic and not a neutral title; the Oriental Orthodox, who honour Dioscorus as a confessor and reject his later deposition, do not use it, and this page uses 'the Second Council of Ephesus' when the point is the event rather than Leo's verdict on it.",
+                "The distinction that must never be blurred: what Eutyches held — a humanity absorbed, not consubstantial with ours — is not what the Oriental Orthodox churches hold. They are miaphysite, and they anathematised Eutyches themselves. To call them monophysite is to charge them with his position; it is an accusation made by their opponents and not a description they accept, and this page treats it as such."
+            ],
+            "scripture": [
+                {
+                    "ref": "John 1:14",
+                    "how": "'the Word was made flesh' — read as the flesh being taken up into and transformed by the divine"
+                },
+                {
+                    "ref": "1 Corinthians 15:47",
+                    "how": "'the second man is the Lord from heaven' — a heavenly rather than an earthly humanity"
+                },
+                {
+                    "ref": "Hebrews 2:14, 17",
+                    "how": "the answer: he took part of the same flesh and blood, and was made like unto his brethren in all things"
+                },
+                {
+                    "ref": "Luke 24:39",
+                    "how": "'a spirit hath not flesh and bones, as ye see me have' — after the resurrection, and still ours"
+                },
+                {
+                    "ref": "1 Timothy 2:5",
+                    "how": "'the man Christ Jesus' — the mediator is a man, and remains one"
+                }
+            ],
+            "heldBy": "Eutyches and his monastery, and briefly a party at the imperial court; almost nobody after 451, and nobody at all today.",
+            "opposedBy": "Flavian of Constantinople, Pope Leo, Theodoret of Cyrrhus, and — decisively for the record — the Alexandrian and Syrian churches themselves, who anathematised him while refusing Chalcedon.",
+            "council": "Condemned at the standing synod of Constantinople in November 448; restored at the Second Council of Ephesus in 449; condemned finally at Chalcedon in 451, whose definition is largely a set of fences built round his position.",
+            "aftermath": "His name outlived his following. Eutyches became the standing type of the error of confusing the natures, and the word every subsequent controversialist reached for when he wanted to accuse an opponent of it — which is how a great deal of unnecessary schism has been manufactured.",
+            "today": "No church holds it. Its chief importance now is negative: Eutyches is the man whose position an entire family of ancient churches has been accused of holding and does not hold, and disentangling that accusation from the record has taken fifteen centuries and is not finished.",
+            "status": "condemned"
+        },
+        {
+            "slug": "chalcedon",
+            "name": "The Chalcedonian Definition: two natures, one person",
+            "term": {
+                "native": "ἀσυγχύτως, ἀτρέπτως, ἀδιαιρέτως, ἀχωρίστως",
+                "translit": "asynchytōs, atreptōs, adiairetōs, achōristōs",
+                "meaning": "without confusion, without change, without division, without separation — the four adverbs"
+            },
+            "claim": "One and the same Christ, made known in two natures without confusion, without change, without division and without separation, the difference of the natures being in no way taken away by the union, concurring in one person and one hypostasis.",
+            "exposition": [
+                "The council met at Chalcedon, across the water from Constantinople, in October and November of 451, summoned by the new emperor Marcian and the empress Pulcheria. It was the largest council of the ancient church: the traditional figure is six hundred and thirty bishops, other ancient sources give about five hundred and twenty, and modern estimates of those actually present are lower still. Only a handful came from the Latin West.",
+                "The definition works almost entirely by negation. It does not say how the union happens; it says four things it is not. The first adverb answers Eutyches, the second forbids any change in the Godhead, and the third and fourth forbid the reduction of the union to a moral partnership. What is left in the middle is a mystery with a fence round it, which is precisely what the drafters intended and precisely what their critics found unsatisfying.",
+                "It also fixed a vocabulary that had not existed a hundred years earlier: φύσις for what Christ is, of which there are two, and ὑπόστασις and πρόσωπον for who he is, of which there is one. That is the Cappadocian grammar of the Trinity carried across into christology, and it is the reason the settlement could be stated at all.",
+                "There is a textual question at the heart of it. The definition as it stands reads that Christ is acknowledged in two natures — ἐν δύο φύσεσιν. The Alexandrian tradition would have said out of two natures, ἐκ δύο φύσεων, which is what Cyril's own language allows and what an earlier draft appears to have said before the Roman legates insisted on the change. A great deal of the subsequent division turns on a preposition, and the reader who thinks that trivial has not understood what the two prepositions were being used to protect.",
+                "And the council did one more thing, in its twenty-eighth canon, adopted at a late session on the last day of October when the Roman legates were not in the room: it gave Constantinople privileges equal to Rome's, on the ground that it was the imperial city. The legates protested the next day; Leo refused to confirm it. The council that settled the East's doctrine planted the argument that would eventually divide East from West."
+            ],
+            "scripture": [
+                {
+                    "ref": "Philippians 2:6–11",
+                    "how": "the form of God and the form of a servant — two 'forms', one who takes"
+                },
+                {
+                    "ref": "John 1:14",
+                    "how": "'the Word was made flesh, and dwelt among us' — the becoming and the dwelling held together"
+                },
+                {
+                    "ref": "Hebrews 4:15",
+                    "how": "'in all points tempted like as we are' — a complete humanity, the ground of ἀσυγχύτως"
+                },
+                {
+                    "ref": "Hebrews 13:8",
+                    "how": "'Jesus Christ the same yesterday, and to day, and for ever' — the ground of ἀτρέπτως"
+                },
+                {
+                    "ref": "Colossians 2:9",
+                    "how": "'in him dwelleth all the fulness of the Godhead bodily' — the ground of ἀχωρίστως"
+                }
+            ],
+            "heldBy": "Rome and Constantinople, and after them the Catholic, Eastern Orthodox, Anglican, Lutheran and Reformed churches; and, on the reading agreed in the modern dialogues, the Oriental Orthodox in substance if not in words.",
+            "opposedBy": "Dioscorus of Alexandria and the churches of Egypt, Syria and Armenia, who held that the definition surrendered Cyril and opened the door to the two-sons teaching whose usual name the Church of the East rejects.",
+            "council": "Chalcedon, 451 — the Fourth Ecumenical Council for those who receive it, and the beginning of a schism that has never closed for those who do not.",
+            "aftermath": "It held the Greek and Latin churches together and broke the eastern half of Christendom in two. A century and a half of imperial attempts to recover the dissenters — the Henotikon of 482, the condemnation of the Three Chapters in 553, monoenergism, monothelitism — failed one after another, and the Arab conquests of the seventh century removed the dissenting provinces from imperial reach and made the division permanent.",
+            "today": "Recited, taught and confessed by the great majority of Christians; and still unreceived by some sixty million Oriental Orthodox, whose objection is now formally acknowledged by their oldest opponents to have been about words rather than about faith.",
+            "status": "divided"
+        },
+        {
+            "slug": "miaphysitism",
+            "name": "Miaphysitism: one united nature, and expressly not monophysitism",
+            "term": {
+                "native": "μία φύσις",
+                "translit": "mia physis",
+                "meaning": "one nature — one as a composite unity, μία and not μόνη: the union of full divinity and full humanity in a single incarnate reality"
+            },
+            "claim": "Out of two natures, one: the divinity and the humanity of Christ are united in the one incarnate nature of the Word, without mingling, without confusion and without alteration.",
+            "exposition": [
+                "The Oriental Orthodox churches — Coptic, Syriac, Armenian Apostolic, Ethiopian Tewahedo, Eritrean Tewahedo and Malankara — hold Cyril's christology in the form Severus of Antioch gave it. They are miaphysite. They are expressly not monophysite, and the distinction is not a quibble: μία in Greek means one as a composite unity, while μόνος means one alone, and the whole argument rides on which is meant. To call them monophysite is to charge them with the position of Eutyches, whom they anathematise as firmly as Chalcedon did. It is an accusation made by their opponents, and this page records it as an accusation and not as a name.",
+                "The Ethiopian and Eritrean churches carry the answer in their own title. Tewahedo, from the Ge'ez ተዋሕዶ, means 'made one, unified' — the two natures united into one, without confusion. A church whose name is its christology has not been keeping that christology a secret.",
+                "What was refused at Chalcedon was a formula, not the humanity of Christ. To say that Christ is 'in two natures' after the union sounded, in Alexandrian ears, like leaving two things standing in him; and to sign it was to abandon Cyril, whom the council itself claimed to be following. The refusal cost them the empire, and they paid it.",
+                "The modern resolution is one of the great quiet achievements of ecumenical work. The joint commission of the Eastern Orthodox and Oriental Orthodox churches — meeting at the monastery of Anba Bishoy in Egypt in 1989 and at Chambésy in 1990 — agreed that both families 'have always loyally maintained the same authentic Orthodox Christological faith, and the unbroken continuity of the apostolic tradition, though they may have used Christological terms in different ways', and recommended that the mutual anathemas be lifted. Common declarations with Rome had said as much: Paul VI with Pope Shenouda III in 1973, John Paul II with Patriarch Ignatius Zakka I Iwas in 1984.",
+                "The settlement is not complete and should not be reported as though it were. The anathemas have not everywhere been formally lifted; Chalcedon remains unreceived; full communion has not been restored. What has changed is that the charge of denying Christ's humanity has been withdrawn by the churches that made it, after fifteen hundred years."
+            ],
+            "scripture": [
+                {
+                    "ref": "John 1:14",
+                    "how": "'the Word was made flesh' — one subject, one incarnate reality, not two things in proximity"
+                },
+                {
+                    "ref": "Philippians 2:7",
+                    "how": "'took upon him the form of a servant' — a taking that is a becoming, not an accompanying"
+                },
+                {
+                    "ref": "1 Corinthians 2:8",
+                    "how": "'they would not have crucified the Lord of glory' — the divine title borne by the crucified"
+                },
+                {
+                    "ref": "John 6:51",
+                    "how": "'the bread that I will give is my flesh, which I will give for the life of the world' — flesh that gives life because it is the Word's own"
+                },
+                {
+                    "ref": "Hebrews 2:14",
+                    "how": "'he also himself likewise took part of the same' — full humanity, insisted on as firmly here as at Chalcedon"
+                }
+            ],
+            "heldBy": "The Oriental Orthodox communion: the Coptic Orthodox Church of Alexandria, the Syriac Orthodox Church of Antioch, the Armenian Apostolic Church, the Ethiopian Orthodox Tewahedo Church, the Eritrean Orthodox Tewahedo Church and the Malankara Orthodox Syrian Church — some sixty million faithful by common estimate.",
+            "opposedBy": "The council of Chalcedon and the churches that receive it; the emperor Justinian, whose attempts at persuasion and at coercion both failed; and the Chalcedonian theologians Leontius of Byzantium and Maximus the Confessor, who refined the definition partly in answer to Severus.",
+            "council": "Chalcedon, 451, which they did not receive; and the Second Council of Constantinople, 553, which condemned the Three Chapters in an unsuccessful attempt to win them back.",
+            "aftermath": "They became national churches under Persian, then Arab, then Ottoman rule, and survived as minorities for more than a millennium — in Egypt, in Armenia, in Syria, and as the church of an independent Ethiopia. The twentieth century brought them the Armenian genocide, the Sayfo in which the Syriac Christians were massacred, and a century of pressure on the Copts.",
+            "today": "Living churches, among the oldest continuously existing institutions on earth, in Egypt, Armenia, Ethiopia, Eritrea, Syria and Kerala, with substantial diasporas. They are in dialogue and in partial agreement with Rome and with Constantinople, and they still do not sign Chalcedon.",
+            "status": "divided"
+        },
+        {
+            "slug": "monothelitism",
+            "name": "Monoenergism and Monothelitism: one activity, one will",
+            "term": {
+                "native": "θέλημα",
+                "translit": "thelēma",
+                "meaning": "will — and the question is whether Christ has one or two: δύο φυσικὰ θελήματα, two natural wills, was the answer that stood"
+            },
+            "claim": "Though the natures in Christ are two, there is in him a single divine-human activity, and a single will.",
+            "exposition": [
+                "This was the last imperial attempt to recover Egypt and Syria, and it was a political calculation before it was a theology. Sergius, patriarch of Constantinople, and the emperor Heraclius reasoned that those who could not accept two natures might accept two natures with one operation, and later one will. A union was actually achieved in Egypt on this basis in 633, under Cyrus of Alexandria. The Ecthesis of 638 imposed the formula; the Typos of 648, when it had begun to fail, simply forbade anyone to discuss the question at all.",
+                "It failed because Sophronius of Jerusalem and then Maximus the Confessor saw what it cost. A will belongs to a nature, not to a person: it is what a nature is for. If Christ has one will, he has one nature, and either his humanity is incomplete or Chalcedon was wrong. And in Gethsemane there are plainly two, and the gospel says so in six words: not my will, but thine, be done.",
+                "Maximus's positive account is the reason the argument matters. Christ's human will is real, and is freely and unfailingly conformed to the divine — and our salvation consists precisely in that, a human will healed and turned rather than overridden. A saved human being is not a human being whose will has been replaced.",
+                "He and Pope Martin I were arrested for refusing the Typos. Martin was tried at Constantinople and died in exile in the Crimea in 655. Maximus was tried, exiled, tried again, and in 662 had his tongue cut out and his right hand cut off — the organ of speech and the organ of writing, removed by a state that understood exactly what it was doing — and was sent to a fortress in Lazica, in what is now Georgia, where he died on 13 August of that year, in his early eighties.",
+                "The Third Council of Constantinople in 680–681 vindicated both men, defined two natural wills and two natural operations in Christ, and anathematised the monothelite patriarchs — and with them Pope Honorius I, who had written to Sergius approving the language of one will. A pope condemned by name by an ecumenical council for a christological error is a fact the First Vatican Council's debates on infallibility had to work round in 1870, and the Honorius case is still in every serious treatment of the question."
+            ],
+            "scripture": [
+                {
+                    "ref": "Luke 22:42",
+                    "how": "'not my will, but thine, be done' — the decisive text: two wills named in one sentence by the one who has them"
+                },
+                {
+                    "ref": "Matthew 26:39",
+                    "how": "'nevertheless not as I will, but as thou wilt' — the same, in Matthew's telling"
+                },
+                {
+                    "ref": "John 6:38",
+                    "how": "'I came down from heaven, not to do mine own will, but the will of him that sent me'"
+                },
+                {
+                    "ref": "Hebrews 5:8",
+                    "how": "'learned he obedience by the things which he suffered' — obedience requires a will that obeys"
+                },
+                {
+                    "ref": "John 5:30",
+                    "how": "'I seek not mine own will, but the will of the Father' — read by the one-will party as denying a distinct human willing"
+                }
+            ],
+            "heldBy": "Sergius, Pyrrhus and Paul of Constantinople; the emperors Heraclius and Constans II; Cyrus of Alexandria; and, in one letter, Pope Honorius I.",
+            "opposedBy": "Sophronius of Jerusalem, Pope Martin I, and above all Maximus the Confessor, who paid for the position with his tongue, his right hand and his life.",
+            "council": "Constantinople III, 680–681, the Sixth Ecumenical Council, which defined two natural wills and two natural operations in Christ and anathematised the contrary teaching and its authors.",
+            "aftermath": "The definition completed Chalcedon by drawing out what 'two natures' must mean when the natures are asked to act. It did not win back Egypt and Syria, which by 681 had been under Muslim rule for a generation, and the political purpose of the whole exercise had by then evaporated.",
+            "today": "No church teaches it. The Maronite Church of Lebanon was historically charged with monothelitism by Byzantine and later Latin writers, and rejects the charge, holding that it has always been in communion with Rome; historians remain divided about its seventh-century position, and the question is entangled with the polemics of the parties who first raised it.",
+            "status": "condemned"
+        },
+        {
+            "slug": "iconoclasm",
+            "name": "Iconoclasm: can the uncircumscribable be drawn?",
+            "term": {
+                "native": "ἀπερίγραπτος",
+                "translit": "aperigraptos",
+                "meaning": "uncircumscribable — that which cannot be bounded or contained, and therefore, the iconoclasts argued, cannot be depicted"
+            },
+            "claim": "No true image of Christ is possible: to paint him is either to circumscribe the Godhead or to depict a humanity cut off from it.",
+            "exposition": [
+                "The Byzantine quarrel over images, which ran from about 726 to 843 with an interval, is usually told as a fight about art. It was a christological argument, and the iconoclasts made the sharper opening move.",
+                "The Council of Hieria in 754, summoned by Constantine V, put it as a dilemma from which there is no obvious escape — the text survives only because Nicaea II quoted it in order to refute it. The painter makes an image and calls it Christ; the name Christ signifies God and man; so it is an image of God and man, and the painter has depicted the Godhead which cannot be represented, and mingled what should not be mingled. Whoever makes such an image therefore either mingles the Godhead with the manhood, which is Eutyches' error, or else represents the body of Christ as a person apart — the two-sons charge whose usual name the Church of the East rejects. Either way the painter is a heretic before he is an artist.",
+                "The defence came first from John of Damascus, writing safely outside the empire under Muslim rule, and it turned the argument round. The prohibition of images belongs to a covenant in which God had not been seen. 'I do not venerate matter; I venerate the Creator of matter, who became matter for my sake.' Because the Word truly became circumscribable — took a face, a height, a particular weight and colouring — to say that he cannot be depicted is to take back the incarnation.",
+                "Theodore the Studite pressed it into a formula. What an icon depicts is not a nature but a person; Christ's person is depictable precisely because it is enfleshed; and the honour paid to the image passes to its prototype. This is why the argument was worth a century of exiles and mutilations: it is the same argument as Chalcedon, conducted in paint.",
+                "The Second Council of Nicaea in 787 restored the images and drew the distinction the case required: προσκύνησις, veneration, may be offered to icons; λατρεία, adoration, belongs to God alone. Iconoclasm returned in 815 and ended in 843, still commemorated in the Orthodox churches on the first Sunday of Lent as the Triumph of Orthodoxy."
+            ],
+            "scripture": [
+                {
+                    "ref": "Exodus 20:4",
+                    "how": "'Thou shalt not make unto thee any graven image' — the iconoclast text; it is the second commandment in the Jewish and Reformed numbering, part of the first in the Catholic and Lutheran, and the numbering is itself part of the argument"
+                },
+                {
+                    "ref": "Deuteronomy 4:15–16",
+                    "how": "'ye saw no manner of similitude on the day that the LORD spake unto you' — no form was seen, so none may be made"
+                },
+                {
+                    "ref": "John 1:18",
+                    "how": "'No man hath seen God at any time' for the iconoclasts; and its second half, 'the only begotten Son… hath declared him', for the defenders"
+                },
+                {
+                    "ref": "Colossians 1:15",
+                    "how": "'who is the image of the invisible God' — εἰκών, the very word at issue, applied to Christ by Paul"
+                },
+                {
+                    "ref": "John 14:9",
+                    "how": "'he that hath seen me hath seen the Father' — a seeing that has already happened, in a body"
+                }
+            ],
+            "heldBy": "The emperors Leo III, Constantine V and Leo V; the Council of Hieria of 754; and a substantial part of the Byzantine army and episcopate.",
+            "opposedBy": "John of Damascus, Theodore the Studite, the patriarch Nikephoros, the empresses Irene and Theodora, and a great many monks, some of whom were blinded or had their faces branded for it.",
+            "council": "Hieria, 754, which condemned the images and which the iconodules refuse to number among the councils; Nicaea II, 787, the Seventh Ecumenical Council, which restored them; and the synod of 843 that ended the second iconoclasm for good.",
+            "aftermath": "The victory of the images shaped Orthodox worship permanently — the iconostasis, the theology of the icon as a window, the whole visual grammar of the Christian East. It also left a permanent argument with the West about the Frankish reception of Nicaea II, whose acts Charlemagne's theologians read in a defective Latin translation and rejected.",
+            "today": "The christological defence of images is doctrine in the Orthodox and Catholic churches. The iconoclast instinct is held on other grounds — from the commandment rather than from christology — by the Reformed tradition, which stripped the churches of northern Europe in the sixteenth century, and by the Anabaptist and Puritan traditions after it; and it is one of the abiding points of contact and friction between Christian, Jewish and Muslim accounts of what may be shown.",
+            "status": "condemned"
+        },
+        {
+            "slug": "socinianism",
+            "name": "Socinianism and rational unitarianism",
+            "term": {
+                "native": "ψιλὸς ἄνθρωπος",
+                "translit": "psilos anthrōpos",
+                "meaning": "a mere man — the charge their opponents brought, as it had been brought against every christology that denied pre-existence"
+            },
+            "claim": "There is one God, the Father; Jesus Christ is a man, miraculously conceived and uniquely exalted, who did not exist before he was born.",
+            "exposition": [
+                "The line runs from the Italian anti-trinitarians of the mid-sixteenth century — Michael Servetus, burned at Geneva in 1553 with Calvin's approval, and Lelio and Fausto Sozzini — to the Minor Reformed Church of Poland, whose members called themselves simply Brethren or Christians and whom their opponents called Arians and Socinians. The names by which they are remembered are not the names they used.",
+                "Their method mattered as much as their conclusions, and is the reason they were so dangerous to the confessional state: scripture read without the creeds, with grammar and reason as the only instruments, and a refusal of any doctrine that could not be stated in the Bible's own words. The Racovian Catechism was printed in Polish at Raków in 1605 and in Latin in 1609, with a dedication of breathtaking nerve to King James I of England; copies were publicly burnt in England in 1614. It denies the Trinity, the pre-existence of Christ, original sin and substitutionary atonement — and argues that Christ is nevertheless to be worshipped, because God exalted him.",
+                "On that last point they split. Ferenc Dávid in Transylvania concluded that Christ should not be invoked in prayer at all; Fausto Sozzini argued against him; Dávid was tried for innovation and died in the prison at Déva in 1579. It is a reminder that the tolerant were capable of their own heresy trials.",
+                "Poland closed on them: the academy and press at Raków were shut in 1638, and in 1658 the Sejm expelled the Brethren from the Commonwealth — convert or leave. They scattered to the Netherlands and Transylvania and printed their collected works at Amsterdam as the Bibliotheca Fratrum Polonorum, through which Socinian arguments entered English and Dutch theology, and from there the Enlightenment.",
+                "The Transylvanian church survived, and is the oldest continuously existing Unitarian body in the world. It had been recognised by the Diet of Torda in January 1568, in an edict declaring that faith is the gift of God and forbidding the persecution of preachers for their teaching — issued under John Sigismund Zápolya, the only Unitarian monarch in European history."
+            ],
+            "scripture": [
+                {
+                    "ref": "1 Timothy 2:5",
+                    "how": "'one God, and one mediator between God and men, the man Christ Jesus' — the Socinian text above all others"
+                },
+                {
+                    "ref": "John 17:3",
+                    "how": "'that they might know thee the only true God, and Jesus Christ, whom thou hast sent' — the Father alone named as the only true God"
+                },
+                {
+                    "ref": "1 Corinthians 8:6",
+                    "how": "'one God, the Father… and one Lord Jesus Christ' — two titles, deliberately not interchanged"
+                },
+                {
+                    "ref": "Acts 2:22",
+                    "how": "'a man approved of God among you' — the apostolic preaching in its plainest form"
+                },
+                {
+                    "ref": "John 1:1",
+                    "how": "the opponents' text, which the Socinians read of God's plan and word rather than of a pre-existent person"
+                }
+            ],
+            "heldBy": "Michael Servetus; Lelio and Fausto Sozzini; the Polish Brethren; the Unitarian Church of Transylvania; and in England John Biddle, Theophilus Lindsey and Joseph Priestley.",
+            "opposedBy": "Calvin and the Genevan magistracy; Lutheran and Reformed orthodoxy alike; the Catholic Counter-Reformation in Poland; and in England the machinery of blasphemy law, under which Biddle was imprisoned repeatedly and died in gaol in 1662.",
+            "council": "None. The condemnation was by state and confession rather than by council: an edict of the Polish Sejm, a public burning of books, and the ordinary apparatus of a confessional age.",
+            "aftermath": "The Polish church was destroyed and its literature exported; the Transylvanian church survived under the Torda settlement; and the arguments, in Latin, went into the libraries of Locke, Newton and the English deists, where they did rather more damage to the received orthodoxy than the Brethren had managed in Poland.",
+            "today": "The Unitarian Church of Transylvania in Romania and Hungary; the General Assembly of Unitarian and Free Christian Churches in Britain; the Unitarian Universalist Association in North America, most of which is no longer specifically Christian; and a growing biblical unitarian movement that holds the Socinian christology by the Socinian method and generally describes itself in those terms rather than by the old party name.",
+            "status": "condemned"
+        },
+        {
+            "slug": "kenoticism",
+            "name": "Kenotic christology: he emptied himself",
+            "term": {
+                "native": "κένωσις",
+                "translit": "kenōsis",
+                "meaning": "emptying — from ἑαυτὸν ἐκένωσεν, 'he emptied himself', in Philippians 2:7"
+            },
+            "claim": "In becoming man the Son laid aside, or ceased to exercise, certain divine attributes, so that the life of Jesus was genuinely lived within human limits.",
+            "exposition": [
+                "The problem is ancient and the urgency is modern. If Christ is omniscient, what is happening when he says that of that day and hour no one knows, not even the Son? If he is omnipresent, what is a body for? Chalcedon forbids confusing the natures but never explains how one subject can be at once limitless and limited, and the nineteenth century, reading the gospels with new historical seriousness, found the silence intolerable.",
+                "Gottfried Thomasius of Erlangen proposed the distinction that turned an intuition into a system: between God's essential attributes — holiness, truth, love — which the Son could not lay down without ceasing to be God, and the relative attributes he holds in relation to the world, namely omnipotence, omniscience and omnipresence, which he could and did lay down for the duration of the incarnation. The second part of his Christi Person und Werk appeared at Erlangen in 1855.",
+                "Others went further than he thought wise. W. F. Gess held that the Logos surrendered the divine self-consciousness altogether during the earthly life, which critics observed would leave the Trinity a duality for some thirty years.",
+                "It flowered again in Britain between 1880 and 1930. Charles Gore used it in Lux Mundi in 1889 to explain how Christ, citing a psalm as David's, could share his contemporaries' assumptions about who wrote it — which caused a considerable row; P. T. Forsyth, H. R. Mackintosh and Frank Weston gave it its most careful English statements.",
+                "Two objections stand, and neither has been answered to everyone's satisfaction. Grammatically, ἐκένωσεν in Philippians takes only a reflexive object and names nothing that was emptied out: the sentence says he emptied himself by taking the form of a servant, which may describe an addition rather than a subtraction. Metaphysically, can God set aside omnipotence and remain God, or is 'attribute' simply the wrong category for talking about the divine life? The older answer, Cyril's and, in a different key, the Lutheran doctrine of the hiddenness of the glory, was that nothing was laid down, but that the flesh was the veil."
+            ],
+            "scripture": [
+                {
+                    "ref": "Philippians 2:5–11",
+                    "how": "'made himself of no reputation' — ἑαυτὸν ἐκένωσεν, he emptied himself: the whole doctrine hangs on this verb"
+                },
+                {
+                    "ref": "Mark 13:32",
+                    "how": "'neither the Son, but the Father' — ignorance in the incarnate Son, stated by him"
+                },
+                {
+                    "ref": "Luke 2:52",
+                    "how": "'Jesus increased in wisdom and stature' — a real increase implies a real prior limit"
+                },
+                {
+                    "ref": "2 Corinthians 8:9",
+                    "how": "'though he was rich, yet for your sakes he became poor' — an impoverishment freely undertaken"
+                },
+                {
+                    "ref": "John 17:5",
+                    "how": "'the glory which I had with thee before the world was' — a glory set aside and asked back"
+                }
+            ],
+            "heldBy": "Gottfried Thomasius and the Erlangen Lutherans; W. F. Gess and F. H. R. Frank in Germany; Charles Gore, P. T. Forsyth, H. R. Mackintosh and Frank Weston in Britain; and a considerable body of analytic philosophers of religion since the 1980s.",
+            "opposedBy": "Catholic, Eastern Orthodox and confessional Reformed theology, on the ground that it compromises divine immutability; Isaak Dorner in the nineteenth century; and exegetes who deny that Philippians 2:7 says anything about laying down attributes.",
+            "council": "None. It has never been defined and never been condemned, which is itself worth noticing: it is the only major christological proposal to have been argued for a century and a half without a verdict.",
+            "aftermath": "It changed what preachers say more than what churches confess. The idea that Jesus genuinely did not know, genuinely learned, genuinely could be surprised, entered ordinary Christian speech through kenoticism and has stayed there, in communions whose formal theology rejects it.",
+            "today": "Widely held among Anglicans, Lutherans and evangelicals as the natural way to read the gospels' portrait of a limited Jesus; generally rejected by Catholic, Orthodox and confessional Reformed dogmatics; and vigorously alive in philosophical theology, where the question of whether a divine person can take on limits is now argued with the tools of modal logic.",
+            "status": "tolerated"
+        },
+        {
+            "slug": "oneness-pentecostalism",
+            "name": "Oneness Pentecostalism: the name of Jesus",
+            "term": {
+                "native": "ἐπὶ τῷ ὀνόματι Ἰησοῦ Χριστοῦ",
+                "translit": "epi tō onomati Iēsou Christou",
+                "meaning": "in the name of Jesus Christ — the baptismal formula of Acts 2:38, from which the movement takes its practice and its doctrine"
+            },
+            "claim": "God is one person, and Jesus is that one God in flesh; Father, Son and Spirit are names of the one Lord Jesus Christ, in whose name alone baptism is rightly given.",
+            "exposition": [
+                "It began inside Pentecostalism, at a camp meeting at Arroyo Seco near Los Angeles in April 1913, when R. E. McAlister observed in a baptismal sermon that the apostles in Acts baptised in the name of Jesus and not with the formula of Matthew 28. Frank Ewart and Glenn Cook developed the point and rebaptised each other in 1914; by 1915 the 'New Issue' had divided the young movement, and in 1916 the Assemblies of God adopted a trinitarian Statement of Fundamental Truths which excluded those who held it. The split has never healed, though both sides trace themselves to the same revival at Azusa Street in 1906.",
+                "The theology follows the practice rather than the reverse, and that order matters for understanding it. If there is one saving name, there is one who bears it. The fullness of the Godhead dwells bodily in Jesus; Father names God in his transcendence, Son names God in flesh, Spirit names God in action — not three centres of consciousness, but one God self-revealed in three ways.",
+                "Oneness believers do not accept the identification with Sabellius, and the grounds of their objection deserve to be stated. Sabellius is reported to have taught a succession of modes, one at a time; they hold that God is simultaneously Father in heaven and Son on earth throughout the incarnation, so that the Son may truly pray to the Father. And they say they reached the doctrine from Acts and Colossians rather than from any third-century teacher. Trinitarian critics and most historians answer that the structure is modalist whatever route was taken to it. The identification is contested, and this page records both accounts rather than settling between them.",
+                "The largest bodies are the United Pentecostal Church International, formed by merger in 1945, and the older Pentecostal Assemblies of the World, predominantly African-American, which was for several years in the 1910s and 1920s one of the very few racially integrated denominations in the United States before the pressures of segregation broke that integration apart.",
+                "One textual point should be recorded plainly, because it is honest and because the movement itself is candid about it: 1 Timothy 3:16 reads 'God was manifest in the flesh' in the Received Text that the movement generally follows, while the modern critical editions read 'who was manifest in the flesh'. The manuscript evidence for the shorter reading is strong, and the verse cannot carry the weight of the doctrine by itself; the argument is made from Colossians 2:9 and Acts, and stands or falls there."
+            ],
+            "scripture": [
+                {
+                    "ref": "Acts 2:38",
+                    "how": "'be baptized every one of you in the name of Jesus Christ' — the practice from which the doctrine is drawn"
+                },
+                {
+                    "ref": "Colossians 2:9",
+                    "how": "'in him dwelleth all the fulness of the Godhead bodily' — the fullness, not a third of it"
+                },
+                {
+                    "ref": "Isaiah 9:6",
+                    "how": "'his name shall be called… The mighty God, The everlasting Father' — the Son given the Father's own titles"
+                },
+                {
+                    "ref": "John 14:9",
+                    "how": "'he that hath seen me hath seen the Father'"
+                },
+                {
+                    "ref": "Matthew 28:19",
+                    "how": "the opposing text: the threefold name in the commission, which trinitarians read as three and Oneness believers as one name held by three titles"
+                }
+            ],
+            "heldBy": "The United Pentecostal Church International, the Pentecostal Assemblies of the World, the Apostolic Assembly of the Faith in Christ Jesus and its Mexican sister church, the True Jesus Church in China and Taiwan, and a great many independent apostolic congregations.",
+            "opposedBy": "Trinitarian Pentecostals from 1916 onwards, and the trinitarian churches generally, whose objection is the ancient one: that a God who is only one person cannot pray to himself, send himself, or be forsaken by himself on a cross.",
+            "council": "None. The exclusion was denominational, not conciliar — the Assemblies of God's Statement of Fundamental Truths of 1916, and the confessional bases of the bodies that followed it.",
+            "aftermath": "What began as a dispute over a baptismal formula produced a distinct and rapidly growing family of churches, strongest among the poor, and strongest of all outside the North Atlantic — which has meant that a christology the fourth century thought it had disposed of is now held by more people than at any time in history.",
+            "today": "Estimates of the worldwide Oneness constituency vary widely with which bodies are counted, from several million to well over twenty. Its adherents describe themselves as apostolic Christians, and reject 'modalist' as an ancient label that does not fit what they teach.",
+            "status": "revived"
+        },
+        {
+            "slug": "latter-day-saint",
+            "name": "Latter-day Saint christology",
+            "term": {
+                "native": "יְהוָה",
+                "translit": "YHWH",
+                "meaning": "the divine name of the Hebrew scriptures, rendered Jehovah in the King James tradition — in Latter-day Saint teaching, the name borne by the premortal Christ"
+            },
+            "claim": "Jesus Christ is the literal Son of God the Father, the Jehovah of the Old Testament, the firstborn of the Father's spirit children and the Only Begotten in the flesh; and the Father, the Son and the Holy Ghost are three distinct personages, one in purpose.",
+            "exposition": [
+                "Stated in the church's own terms. The Church of Jesus Christ of Latter-day Saints teaches that Jesus Christ is 'the Firstborn of the Father, the Only Begotten Son in the flesh', and that 'He was the Great Jehovah of the Old Testament, the Messiah of the New' — the words are from The Living Christ, the testimony of the church's apostles issued on the first day of 2000. He appeared, with his Father, to Joseph Smith in a grove in New York State in the spring of 1820.",
+                "The Godhead is three separate beings united in purpose rather than one substance in three persons, and the difference is stated bluntly in scripture the church regards as revealed: 'The Father has a body of flesh and bones as tangible as man's; the Son also; but the Holy Ghost has not a body of flesh and bones, but is a personage of Spirit' — Doctrine and Covenants 130:22, from instruction given at Ramus, Illinois, on 2 April 1843.",
+                "The relation to the councils is deliberate and explicit rather than accidental. Latter-day Saints hold that an apostasy followed the death of the apostles and that the creeds of the fourth and fifth centuries are the product of post-apostolic philosophy rather than of revelation. Their christology is restorationist: it does not sit on the Nicene spectrum, because it declines the terms in which that spectrum was drawn. The pre-existence it affirms is not the eternal generation of a consubstantial Son but the premortal existence of all human spirits, of whom Christ is the firstborn.",
+                "The comparison other Christians make — that this resembles Arianism, because the Son is subordinate and not of one substance with the Father — is one Latter-day Saints reject, and the differences are as large as the resemblance. The Son is not created out of nothing; the Father is embodied; the framework of οὐσία within which Arius and Athanasius conducted their argument is set aside rather than answered. It is not a fourth-century position; it is a nineteenth-century one, arrived at by revelation as its holders understand it.",
+                "Two things are true at once and should be said together. The church asks to be known by its full name and holds that it is Christian in the plain sense — Christ is at the centre of its worship, its scripture and its name. And most other churches do not recognise its baptism: the Catholic Church answered formally in 2001 that it does not, and the Orthodox and most Protestant bodies take the same view. The disagreement is genuine and doctrinal, not a misunderstanding to be cleared up."
+            ],
+            "scripture": [
+                {
+                    "ref": "Acts 7:55–56",
+                    "how": "Stephen sees 'Jesus standing on the right hand of God' — two beings, distinctly seen"
+                },
+                {
+                    "ref": "John 17:21",
+                    "how": "'that they all may be one, as thou, Father, art in me, and I in thee' — a unity of will offered as the pattern of the Godhead's own"
+                },
+                {
+                    "ref": "Colossians 1:15",
+                    "how": "'the firstborn of every creature' — read of the firstborn among the Father's spirit children"
+                },
+                {
+                    "ref": "Job 38:7",
+                    "how": "'when the morning stars sang together, and all the sons of God shouted for joy' — read of the premortal council"
+                },
+                {
+                    "ref": "Hebrews 12:9",
+                    "how": "'the Father of spirits' — a literal fatherhood of spirits, not a metaphor"
+                }
+            ],
+            "heldBy": "The Church of Jesus Christ of Latter-day Saints, with over seventeen million members of record worldwide.",
+            "opposedBy": "The Nicene churches, whose objection is that a Godhead of three separate beings united in purpose is not the monotheism the creeds confess, and that the rejection of the creeds severs the doctrine from the tradition that produced the New Testament canon it uses.",
+            "council": "None has judged it, and none could: the question is not conciliar but sacramental, and turns on whether the churches recognise one another's baptism. On that, the Catholic Church replied in the negative in 2001, and the Orthodox and most Protestant bodies concur.",
+            "aftermath": "A restorationist christology has produced, within two centuries, a worldwide church with its own scripture, temples, priesthood and missionary system — and a settled mutual non-recognition with the rest of Christendom that neither side expects to change.",
+            "today": "Held by the Latter-day Saints; and, in significantly different forms, by the Community of Christ and the other bodies of the Restoration, some of which have moved towards trinitarian language and some of which have not.",
+            "status": "divided"
+        },
+        {
+            "slug": "jehovahs-witnesses",
+            "name": "Jehovah's Witnesses: the firstborn of creation",
+            "term": {
+                "native": "θεὸς ἦν ὁ λόγος",
+                "translit": "theos ēn ho logos",
+                "meaning": "the Word was God — rendered in the New World Translation 'the Word was a god', on the ground that θεός here stands without the article"
+            },
+            "claim": "Jehovah alone is Almighty God; Jesus is his only-begotten Son, the first of his creations, through whom all other things were made, and he is not to be worshipped as God.",
+            "exposition": [
+                "Stated in their own terms. Jehovah's Witnesses teach that Jesus is 'the firstborn of all creation' and the 'only-begotten Son' because he was Jehovah's first and only direct creation; that since he is created he cannot be Almighty God; that there is no scriptural basis for the Trinity; and that worship belongs to Jehovah alone, so they do not worship Jesus. They identify him with the archangel Michael before his human life and after his resurrection, and understand the holy spirit as God's active force rather than a person.",
+                "Much turns on John 1:1, where the Greek reads θεὸς ἦν ὁ λόγος, with no article before θεός. The New World Translation renders it 'the Word was a god'. Greek scholarship overwhelmingly rejects that rendering, on the ground that a predicate noun preceding the verb is regularly anarthrous without being indefinite — a pattern set out by E. C. Colwell in 1933 and considerably refined since, notably by those who read the anarthrous predicate as qualitative. The Witnesses reply that the qualitative reading supports them rather than the traditional rendering, and that the received translation imports later doctrine into the grammar. The dispute is a real one about Greek, and it is conducted on both sides by people who know the language.",
+                "The history: the movement grew from the Bible Student groups gathered by Charles Taze Russell in Pennsylvania in the 1870s; the name Jehovah's Witnesses was adopted in 1931, from Isaiah 43:10, 'Ye are my witnesses, saith the LORD'.",
+                "The comparison with Arius must be made carefully, and this page makes it carefully. Historians regularly note the structural resemblance — a created, pre-existent Son, highest of creatures, agent of creation, not of the Father's own substance — and as a description of the shape that is fair. But there is no line of descent. The Witnesses derive the teaching from their own reading of scripture; they set aside the whole apparatus of substance-language in which the fourth century argued; and on worship they differ from Arius outright, since the sources indicate that Arius and his party did offer worship to the Son, which the Witnesses hold to be idolatry. The resemblance is real; the descent is not, and they reject the label.",
+                "Their refusal of the Trinity belongs with a set of convictions — political neutrality, refusal of military service, refusal of blood transfusion — that have made them a persecuted body rather than a merely dissenting one. Well over a thousand died in Nazi camps and prisons, where they were made to wear the purple triangle; and the organisation has been banned in Russia as extremist since 2017."
+            ],
+            "scripture": [
+                {
+                    "ref": "Colossians 1:15",
+                    "how": "'the firstborn of all creation' — firstborn read as first-created, and as part of the creation"
+                },
+                {
+                    "ref": "Revelation 3:14",
+                    "how": "'the beginning of the creation of God' — ἡ ἀρχὴ τῆς κτίσεως τοῦ θεοῦ, a title of Christ himself"
+                },
+                {
+                    "ref": "John 14:28",
+                    "how": "'my Father is greater than I'"
+                },
+                {
+                    "ref": "Proverbs 8:22",
+                    "how": "Wisdom created as the beginning of God's way — the same text Arius used, reached independently"
+                },
+                {
+                    "ref": "John 20:28",
+                    "how": "the opposing text: Thomas addresses the risen Christ as 'My Lord and my God'"
+                }
+            ],
+            "heldBy": "Jehovah's Witnesses, some eight and a half million active publishers in more than two hundred lands by their own annual report; and, on the question of the Son's created status though not on much else, some other Bible Student groups descended from the same origin.",
+            "opposedBy": "The trinitarian churches of every family, whose objection is the one Athanasius made: if the Son is a creature then either a creature is worshipped, or the honour the New Testament offers him is misplaced — and the New Testament plainly offers it.",
+            "council": "None. They regard the councils as the machinery of an apostasy and would not accept their jurisdiction; and no council has ever considered them.",
+            "aftermath": "A christology structurally like the one the fourth century condemned is now held, with no historical connection to it, by a highly organised worldwide body — which is a useful reminder that doctrinal positions are not only inherited but rediscovered, by people reading the same texts and asking the same question.",
+            "today": "The Witnesses themselves, present in most countries of the world and banned in several; and, in different forms and for different reasons, other groups that read the New Testament as teaching a created Son.",
+            "status": "divided"
+        },
+        {
+            "slug": "jesus-of-history",
+            "name": "The Jesus of history and the Christ of faith",
+            "term": {
+                "native": "κήρυγμα",
+                "translit": "kērygma",
+                "meaning": "proclamation, the thing preached — which Bultmann held was all the gospels offer, and all that faith requires"
+            },
+            "claim": "The Jesus reconstructed by historical method and the Christ confessed by the church are not the same figure, and the question is what may be built on which.",
+            "exposition": [
+                "The question opens with Hermann Samuel Reimarus, whose manuscript Lessing published anonymously in fragments between 1774 and 1778, arguing that Jesus was a Jewish political messiah whose mission failed and whose disciples invented the resurrection. It could not be answered by the older methods, and the nineteenth century exhausted itself trying.",
+                "David Friedrich Strauss's Das Leben Jesu of 1835 proposed that the gospel miracles were neither reports nor frauds but myth — the community's messianic expectation clothed in narrative. It cost him his academic career and set the terms of everything after it.",
+                "Albert Schweitzer closed the first phase in 1906 by reading the entire library and showing that each biographer had found a Jesus made in his own image; and then arguing that the real Jesus was a thoroughgoing eschatological prophet who expected the world to end, and was wrong. His conclusion — that Jesus comes to us as one unknown, and is known only in what he gives those who obey him — is the most quoted paragraph in the discipline.",
+                "Martin Kähler had already drawn the distinction that survives. His essay of 1892 set the so-called historical Jesus, the figure reconstructed behind the sources, against the historic, biblical Christ, the one who actually made history and whom the church proclaims. The gospels, Kähler argued, are not biographies and were never meant to yield one; they are passion narratives with extended introductions. Rudolf Bultmann drew the radical conclusion: the object of faith is the κήρυγμα, not the reconstructed man behind it.",
+                "The quest did not stop. A new quest opened with Ernst Käsemann in 1953; a third, from the late 1970s, has placed Jesus firmly inside second-Temple Judaism — E. P. Sanders, Geza Vermes, John P. Meier, N. T. Wright, Dale Allison — and disagrees profoundly about the result: apocalyptic prophet, Galilean sage, Torah-faithful teacher, restorer of Israel. Two things have changed permanently. Almost nobody now argues that he was anything other than a Jew, and almost nobody argues that the sources permit a biography in the modern sense."
+            ],
+            "scripture": [
+                {
+                    "ref": "Mark 8:29",
+                    "how": "'But whom say ye that I am?' — the question the whole enterprise is trying to answer, and the one the enterprise was founded to bracket"
+                },
+                {
+                    "ref": "1 Corinthians 15:3–8",
+                    "how": "the earliest creed and the earliest evidence, older than any gospel — the historian's best material and the believer's confession, in the same six verses"
+                },
+                {
+                    "ref": "2 Corinthians 5:16",
+                    "how": "'though we have known Christ after the flesh, yet now henceforth know we him no more' — Kähler's text, and Bultmann's"
+                },
+                {
+                    "ref": "Mark 13:30",
+                    "how": "'this generation shall not pass, till all these things be done' — Schweitzer's text, and the problem it poses"
+                },
+                {
+                    "ref": "John 20:31",
+                    "how": "'these are written, that ye might believe' — the evangelist's own statement that his book has an aim other than biography"
+                }
+            ],
+            "heldBy": "The liberal Protestant tradition from Schleiermacher and Harnack onward; the form critics; and, in various forms, most of the modern academy, Catholic scholarship included since the middle of the twentieth century.",
+            "opposedBy": "Kähler and Barth from within Protestantism, on the ground that faith cannot be made to rest on the shifting results of historical research; the Catholic magisterium of the anti-modernist period; and, more recently, scholars who argue the dichotomy is false because the gospels are in fact ancient biographies and were read as such.",
+            "council": "None. It is the one great christological argument that no council has ever addressed, because it is not about what Christ is but about what can be known, and by what method.",
+            "aftermath": "It has changed how the churches read their own scriptures more than it has changed what they confess. Historical criticism is taught in nearly every seminary of nearly every tradition, including several that formally deplore its conclusions.",
+            "today": "It is the working assumption of most university faculties of theology and religious studies, and the churches have absorbed it very unevenly — some treating the reconstructed Jesus as the church's necessary corrective, some as its solvent, and most preaching on Sunday as though the question had not been asked.",
+            "status": "unresolved"
+        }
+    ]
+};

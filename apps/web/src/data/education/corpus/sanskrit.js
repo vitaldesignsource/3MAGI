@@ -1,0 +1,681 @@
+// sanskrit corpus — the hall's shelf of sacred and esoteric texts.
+// Attributions, tables of contents, opening words and every link were
+// verified by the content pipeline; a null contents field means the work's
+// divisions could not be confirmed, not that it has none.
+export default {
+    note: 'The tradition draws its own dividing line, and it is sharper than any periodisation imposed from outside: śruti, \'what was heard\', the Veda as revelation received rather than composed, and smṛti, \'what is remembered\', which is everything else — epic, sūtra, purāṇa, tantra. Writing came late to this literature and was long held inferior to the trained voice; the Veda was carried orally with a fidelity that has no parallel elsewhere, and the recitational permutations — pada, krama, jaṭā, ghana — functioned as error-correcting codes, scrambling the word order so that any corruption would betray itself against the other patterns. Western philology places the composition of the Ṛgveda\'s older books somewhere around 1500–1200 BCE, but the range of serious proposals is itself wide, and the tradition holds the Veda to be apauruṣeya, without human author and without beginning; Indian scholars arguing from the Sarasvatī\'s dried course and from astronomical references have pressed for the fourth or third millennium. Both positions are recorded here, unreconciled, because they are not answers to the same question. This shelf runs from the hymns of the Ṛgveda to the tantras of Kashmir and the haṭha manuals that followed them — some three thousand years — and what stands on it is not one system but a long argument. \'Hinduism\' is a nineteenth-century umbrella held over traditions that disputed each other fiercely: Sāṃkhya\'s plural, unmoving selves against Advaita\'s single one, Vedānta\'s Veda-bound orthodoxy against the Śaiva Āgamas\' claim to a revelation of their own standing.',
+    works: [
+        {
+            slug: 'rgveda',
+            native: 'ऋग्वेद',
+            translit: 'Ṛgveda',
+            english: 'The Ṛgveda — Knowledge in Verses',
+            author: 'Anonymous ṛṣis of the Vedic clans. The hymns are ascribed by tradition to named seers and their lineages — Gṛtsamada, Viśvāmitra, Vāmadeva, Atri, Bharadvāja, Vasiṣṭha — and it is these families that give the six \'family books\' (Maṇḍalas II–VII) their distinct character and internal ordering. The tradition does not regard the seers as authors: they are those who saw (√dṛś) what had no maker, the Veda being apauruṣeya, not of human origin. The arrangement into ten maṇḍalas, the fixing of the Śākala recension and the elaborate apparatus of recitation are the work of later redactors whose names are not preserved.',
+            date: 'Composition of the family books is usually placed c. 1500–1200 BCE, with Maṇḍalas I and X later additions; serious proposals across the field run from roughly 1900 to 1100 BCE. Traditional reckoning makes the Veda beginningless, and Indian scholars arguing from the Sarasvatī and from astronomical data have placed it in the fourth or third millennium BCE. The oldest surviving manuscripts date only from about the eleventh century CE — some two and a half thousand years of transmission with no written witness at all.',
+            language: 'Vedic Sanskrit — an archaic stratum with a pitch accent, and with subjunctive and injunctive moods that classical Sanskrit lost',
+            volume: 'Śruti',
+            description: 'The oldest surviving composition in any Indo-Aryan language, and among the oldest in any Indo-European language: 1,028 hymns to Agni, Indra, Soma, the Aśvins, Uṣas and the rest, arranged in ten maṇḍalas. Most of it is liturgical praise and petition, but the tenth maṇḍala turns speculative, and two hymns there have shaped everything downstream. The Nāsadīya Sūkta (10.129), the Hymn of Creation, opens with neither being nor non-being and closes on a note almost unexampled in scripture — that the one who oversees this in the highest heaven knows, or perhaps does not know. The Puruṣa Sūkta (10.90) describes the sacrifice of a cosmic Person from whose dismembered body the worlds and the four social orders are made; it is the earliest textual warrant for varṇa, and it has been quarrelled over ever since, in Sanskrit and in English alike. The hymns were preserved in the Śākala recension by a mnemonic discipline of extraordinary rigour, in which the same text is recited in several scrambled orders so that error in one pattern shows up against the others.',
+            incipit: {
+                native: 'अग्निमीळे पुरोहितं यज्ञस्य देवमृत्विजम् । होतारं रत्नधातमम् ॥',
+                english: 'Agni I invoke, the household priest, the god and priest of sacrifice — the invoker, richest in treasure.',
+                note: 'Ṛgveda 1.1.1, the first words of the collection and among the most frequently quoted lines in Sanskrit. The retroflex ḷ (ळ) of īḷe is a Vedic feature; classical Sanskrit would give īḍe.',
+            },
+            contents: [
+                {
+                    heading: 'Maṇḍala I',
+                    english: '191 hymns. A later compilation of many authors, gathered into groups by poet and ordered within each group by deity and then by decreasing length; it opens the collection with the Agni hymns.',
+                },
+                {
+                    heading: 'Maṇḍala II',
+                    english: '43 hymns. The first of the six family books, attributed to Gṛtsamada and his line; dominated by Agni and Indra.',
+                },
+                {
+                    heading: 'Maṇḍala III',
+                    english: '62 hymns. The book of Viśvāmitra and the Kuśika family; it contains the Gāyatrī mantra (3.62.10), the most recited verse in Hinduism.',
+                },
+                {
+                    heading: 'Maṇḍala IV',
+                    english: '58 hymns. Attributed to Vāmadeva Gautama and his descendants.',
+                },
+                {
+                    heading: 'Maṇḍala V',
+                    english: '87 hymns. The book of Atri and the Atreyas; notable for its Maruts and its dawn hymns.',
+                },
+                {
+                    heading: 'Maṇḍala VI',
+                    english: '75 hymns. The book of Bharadvāja and his line; heavily Indra and Agni.',
+                },
+                {
+                    heading: 'Maṇḍala VII',
+                    english: '104 hymns. The book of Vasiṣṭha, which includes the great Varuṇa hymns and the account of the Battle of the Ten Kings (7.18).',
+                },
+                {
+                    heading: 'Maṇḍala VIII',
+                    english: '103 hymns. Largely the Kāṇva family, with a distinctive strophic metre; the Vālakhilya hymns (8.49–59) are an appendix within it.',
+                },
+                {
+                    heading: 'Maṇḍala IX',
+                    english: '114 hymns. The whole book addressed to Soma Pavamāna, \'Soma being purified\' — the pressing and straining of the ritual draught.',
+                },
+                {
+                    heading: 'Maṇḍala X',
+                    english: '191 hymns. The latest stratum, and the most philosophical: the Nāsadīya Sūkta (10.129), the Puruṣa Sūkta (10.90), the Hymn of Speech (10.125), funeral hymns and the dialogue of Yama and Yamī.',
+                },
+            ],
+            contentsNote: 'The ten-maṇḍala division is genuine and structural, not an editorial convenience: Maṇḍalas II–VII are the family books, each ascribed to one ṛṣi lineage and each internally ordered by deity and hymn-length, while I, VIII, IX and X are demonstrably later compilations. The hymn counts given follow the Śākala recension, the only one to survive complete, and sum to the traditional total of 1,028. A parallel and purely mechanical division into eight aṣṭakas, subdivided into adhyāyas and vargas, exists for recitational purposes and is used in some printed editions; it cuts across the maṇḍalas and carries no compositional meaning.',
+            editions: [
+                {
+                    label: 'Griffith, The Hymns of the Rigveda, vol. I (Benares: E. J. Lazarus, 1896)',
+                    url: 'https://archive.org/details/in.ernet.dli.2015.104118',
+                    note: 'Ralph T. H. Griffith\'s complete verse translation in its two-volume second edition. This first volume carries Books I to VI. Dated and often over-decorous, but still the most widely consulted public-domain rendering of the whole collection.',
+                },
+                {
+                    label: 'Griffith, The Hymns of the Rigveda, vol. II (Benares: E. J. Lazarus, 1897)',
+                    url: 'https://archive.org/details/in.ernet.dli.2015.104119',
+                    note: 'The second volume of the same edition, carrying Books VII to X — and so the speculative hymns of the tenth maṇḍala. With volume I above, the translation entire.',
+                },
+                {
+                    label: 'Müller, Rig-Veda-Sanhita with the commentary of Sāyaṇācārya (1849–74)',
+                    url: 'https://archive.org/details/rig-veda-sanhita',
+                    note: 'Max Müller\'s first printed edition of the Sanskrit text together with Sāyaṇa\'s fourteenth-century bhāṣya — the edition on which nearly all subsequent Western work rests. All volumes gathered in one item.',
+                },
+                {
+                    label: 'Wilson, Rig-veda Sanhitá, vol. I (London: Trübner, 1854–88)',
+                    url: 'https://archive.org/details/rigvedasanhitc01wils',
+                    note: 'H. H. Wilson\'s prose translation, made strictly through Sāyaṇa\'s eyes and therefore valuable as a witness to the traditional reading rather than to the Vedic text as philologists now construe it. This is the first volume; the set was completed after Wilson\'s death by Cowell and Webster, and finished in 1888, before Griffith\'s verse rendering was done. Later volumes are held under adjacent identifiers.',
+                },
+            ],
+        },
+        {
+            slug: 'principal-upanisads',
+            native: 'मुख्योपनिषदः',
+            translit: 'Mukhyopaniṣadaḥ',
+            english: 'The Principal Upaniṣads',
+            author: 'Anonymous and composite. The texts are staged as dialogue, and the speakers — Yājñavalkya, Uddālaka Āruṇi, Sanatkumāra, Naciketas, Śvetaketu, and the women Maitreyī and Gārgī Vācaknavī, who argue as sharply as any of the men — are literary presences as much as historical persons. Each Upaniṣad is affiliated to a Vedic school (śākhā) and stands at the end of a Brāhmaṇa or Āraṇyaka rather than free; the longer ones, Chāndogya and Bṛhadāraṇyaka in particular, are visibly stitched from earlier units of unequal age and idiom.',
+            date: 'Bṛhadāraṇyaka and Chāndogya, the two longest and oldest, are usually placed c. 700–600 BCE, before the Buddha; Kaṭha, Īśa, Muṇḍaka and Kena somewhere between the fifth and the first century BCE; Praśna and Māṇḍūkya perhaps as late as the first three centuries CE. The tradition makes no such gradations: all are śruti, the concluding portion of the Veda (vedānta) and coeval with it.',
+            language: 'Sanskrit — late Vedic in the older texts, shading towards classical in the later ones',
+            volume: 'Śruti',
+            description: 'The turn from sacrifice to enquiry. Where the hymns petition the gods and the Brāhmaṇas regulate the rite, the Upaniṣads ask what the rite is for, and answer by identifying the self within (ātman) with the ground of everything (brahman). The formulations became watchwords: tat tvam asi, \'that thou art\' (Chāndogya); neti neti, \'not this, not this\' (Bṛhadāraṇyaka); the two birds on one tree, one eating, one watching (Muṇḍaka); the self as rider in the chariot of the body (Kaṭha). With the Brahma Sūtras and the Bhagavad Gītā they constitute the prasthānatraya, the threefold foundation on which every Vedānta school is obliged to comment. Schopenhauer\'s remark that the Upaniṣads were the solace of his life and would be the solace of his death was made from a Latin rendering of a Persian translation, at two removes — a fair emblem of how this material first reached Europe.',
+            incipit: {
+                native: 'ईशा वास्यमिदं सर्वं यत्किञ्च जगत्यां जगत् ।',
+                english: 'All this — whatever moves in this moving world — is to be enveloped by the Lord.',
+                note: 'Īśa Upaniṣad 1. This is the opening of the Īśa, the shortest of the principal Upaniṣads and the first in the customary sequence, rather than the opening of a single book; the ten are a collection, not one work. The word īśā gives the Upaniṣad its name. The Īśa is unique in standing not at the end of a Brāhmaṇa but inside a Saṃhitā, as the fortieth and final adhyāya of the Vājasaneyi Saṃhitā of the White Yajurveda.',
+            },
+            contents: [
+                {
+                    heading: 'Īśa',
+                    english: 'White Yajurveda. Eighteen verses; the shortest. Renunciation and action held together; the famous paradox of the self that moves and does not move.',
+                },
+                {
+                    heading: 'Kena',
+                    english: 'Sāmaveda, Talavakāra Brāhmaṇa. \'By whom?\' — that by which the mind thinks but which the mind cannot think; closes with the parable of the gods humbled by a yakṣa.',
+                },
+                {
+                    heading: 'Kaṭha',
+                    english: 'Black Yajurveda. The boy Naciketas, given to Death by his father, extracts from Yama the teaching on what survives; the chariot simile and the razor\'s edge.',
+                },
+                {
+                    heading: 'Praśna',
+                    english: 'Atharvaveda. Six questions put to the sage Pippalāda by six students, on the origin of creatures, the vital breaths, sleep and the syllable OM.',
+                },
+                {
+                    heading: 'Muṇḍaka',
+                    english: 'Atharvaveda. The two knowledges, higher and lower, the lower including the Vedas themselves; the sacrifices as leaky boats; the two birds on one tree.',
+                },
+                {
+                    heading: 'Māṇḍūkya',
+                    english: 'Atharvaveda. Twelve verses only, expounding OM as the four states of the self — waking, dream, deep sleep, and the fourth (turīya) which is none of these.',
+                },
+                {
+                    heading: 'Taittirīya',
+                    english: 'Black Yajurveda. The five sheaths (kośas) from food to bliss; the graduation address to departing students; brahman defined as ānanda.',
+                },
+                {
+                    heading: 'Aitareya',
+                    english: 'Ṛgveda. Creation from the Self, the fashioning of the cosmic Person and the deities\' entry into the body; the declaration prajñānaṃ brahma.',
+                },
+                {
+                    heading: 'Chāndogya',
+                    english: 'Sāmaveda. Eight prapāṭhakas, the second-longest. The teaching of Uddālaka to Śvetaketu, ending nine times in tat tvam asi; Satyakāma Jābāla; the honey doctrine.',
+                },
+                {
+                    heading: 'Bṛhadāraṇyaka',
+                    english: 'White Yajurveda. The longest and probably the oldest. Yājñavalkya in debate at Janaka\'s court, his exchange with Gārgī, his parting instruction to Maitreyī, and neti neti.',
+                },
+            ],
+            contentsNote: 'This list is genuine in a specific and defensible sense: these ten are precisely the Upaniṣads on which Śaṅkara wrote, or is credited with, running commentaries, and the set has been treated as canonical ever since. It is not a closed canon, and the boundary is contested — Śvetāśvatara and Kauṣītaki are frequently added to make twelve or thirteen, Śaṅkara\'s authorship of the Māṇḍūkya commentary is itself disputed, and the Muktikā Upaniṣad\'s later list of 108 opens the category much wider. The order given here is the customary one, roughly shortest to longest, and is not chronological: Bṛhadāraṇyaka and Chāndogya, placed last, are the earliest by several centuries.',
+            editions: [
+                {
+                    label: 'Müller, The Upanishads, Part I — Sacred Books of the East vol. 1 (1879)',
+                    url: 'https://archive.org/details/sbe1theupanishadsmaxmuller_202002',
+                    note: 'Its own table of contents gives Chāndogya, Talavakāra (Kena), the Aitareya Āraṇyaka, Kauṣītaki-Brāhmaṇa and the Vājasaneyi-Saṃhitā (Īśa) Upaniṣad. Müller\'s diction is Victorian and his \'Self\' capitalisations interpretive, but the volume remains a standard reference.',
+                },
+                {
+                    label: 'Müller, The Upanishads, Part II — Sacred Books of the East vol. 15 (1884)',
+                    url: 'https://archive.org/details/mlbd.upanishadssacred0000vol-15.unse_x5j4',
+                    note: 'Contains Kaṭha, Muṇḍaka, Taittirīya, Bṛhadāraṇyaka, Śvetāśvatara, Praśna and Maitrāyaṇa. Motilal Banarsidass reprint of the Clarendon text.',
+                },
+                {
+                    label: 'Müller, The Upanishads, Part I (Oxford: Clarendon, 1879)',
+                    url: 'https://archive.org/details/upanishads01ml',
+                    note: 'The original Clarendon Press printing of the first part, catalogued as pt. 1 and digitised from the Princeton copy. Same text as the Sacred Books of the East volume above, in its first setting.',
+                },
+                {
+                    label: 'Müller, The Upanishads, Part II (Oxford: Clarendon, 1884)',
+                    url: 'https://archive.org/details/upanishads02ml',
+                    note: 'The original Clarendon printing of the second part, catalogued as pt. 2 — not, as is sometimes assumed, both parts in one. Digitised from the Princeton copy.',
+                },
+            ],
+        },
+        {
+            slug: 'bhagavad-gita',
+            native: 'भगवद्गीता',
+            translit: 'Bhagavadgītā',
+            english: 'The Song of the Blessed One',
+            author: 'Traditionally the work of Vyāsa (Kṛṣṇa Dvaipāyana), the legendary compiler of the Mahābhārata, the Vedas and the Purāṇas — a figure who functions in the tradition less as a person than as a principle of authorship, and to whom so much is attributed that single human authorship is not seriously maintainable. The Gītā is embedded in the Bhīṣma Parvan of the Mahābhārata, and is spoken by Kṛṣṇa to Arjuna but reported at two removes, by Saṃjaya to the blind king Dhṛtarāṣṭra. Scholars have long suspected the text of internal layering — a shorter Sāṃkhya-inflected core overlaid with theistic and Vedāntic material — though no reconstruction has won general assent.',
+            date: 'Usually placed between the second century BCE and the second century CE, with the first century BCE a common estimate; its relation to the growth of the Mahābhārata around it is unsettled. The tradition sets it at the opening of the Kali Yuga, conventionally reckoned from 3102 BCE.',
+            language: 'Sanskrit — epic, in the śloka metre with a passage of triṣṭubh at the theophany',
+            volume: 'Smṛti · Prasthānatraya',
+            description: 'Seven hundred verses spoken between two armies. Arjuna, seeing his kinsmen, teachers and friends arrayed against him, sets down his bow and refuses to fight; Kṛṣṇa\'s reply moves from consolation to a full theology of action, knowledge and devotion, and culminates in the eleventh chapter with the overwhelming vision of the universal form, in which Arjuna sees the warriors already devoured. Its power lies partly in its inclusiveness: the Gītā does not choose between karma, jñāna and bhakti but subordinates each to the others in turn, which is why it has been claimed with equal conviction by Śaṅkara, Rāmānuja, Madhva, Tilak, Gandhi and Aurobindo, all of whom commented on it and none of whom agreed. As the third member of the prasthānatraya it is one of the texts a Vedānta founder is obliged to expound before his school can be taken seriously.',
+            incipit: {
+                native: 'धर्मक्षेत्रे कुरुक्षेत्रे समवेता युयुत्सवः । मामकाः पाण्डवाश्चैव किमकुर्वत सञ्जय ॥',
+                english: 'On the field of dharma, on the field of Kuru, gathered together and eager to fight — what did they do, my men and the sons of Pāṇḍu, Saṃjaya?',
+                note: 'Bhagavad Gītā 1.1, prefixed in the text by the speaker-tag dhṛtarāṣṭra uvāca, \'Dhṛtarāṣṭra said\'. The blind king asks the only question in the poem that is never directly answered; commentators have made much of dharmakṣetre, and of the possessive māmakāḥ, \'my men\', set against \'the sons of Pāṇḍu\'.',
+            },
+            contents: [
+                {
+                    heading: '1. Arjuna-viṣāda-yoga',
+                    english: 'The Despondency of Arjuna. The armies are described, the conches sounded, and Arjuna\'s nerve fails.',
+                },
+                {
+                    heading: '2. Sāṅkhya-yoga',
+                    english: 'The Yoga of Discrimination. The imperishable self; the indestructibility of what is; the first statement of action without attachment to fruit.',
+                },
+                {
+                    heading: '3. Karma-yoga',
+                    english: 'The Yoga of Action. Why withdrawal is impossible; action as sacrifice; the wheel of the world kept turning.',
+                },
+                {
+                    heading: '4. Jñāna-karma-sannyāsa-yoga',
+                    english: 'The Yoga of Knowledge, Action and Renunciation. The doctrine of divine descent (avatāra); action in inaction.',
+                },
+                {
+                    heading: '5. Karma-sannyāsa-yoga',
+                    english: 'The Yoga of Renunciation of Action. Renunciation and disciplined action compared, and the second preferred.',
+                },
+                {
+                    heading: '6. Ātma-saṃyama-yoga',
+                    english: 'The Yoga of Self-Restraint. Meditative practice, posture and diet; the fate of one who falls short of the goal.',
+                },
+                {
+                    heading: '7. Jñāna-vijñāna-yoga',
+                    english: 'The Yoga of Knowledge and Discernment. The lower and higher natures of God; the four kinds who turn to him.',
+                },
+                {
+                    heading: '8. Akṣara-brahma-yoga',
+                    english: 'The Yoga of the Imperishable Absolute. The hour of death; the bright and dark paths; the days and nights of Brahmā.',
+                },
+                {
+                    heading: '9. Rāja-vidyā-rāja-guhya-yoga',
+                    english: 'The Yoga of Royal Knowledge and Royal Secret. The leaf, flower, fruit and water offered with devotion; the accessibility of grace.',
+                },
+                {
+                    heading: '10. Vibhūti-yoga',
+                    english: 'The Yoga of Divine Manifestations. Kṛṣṇa names himself as the pre-eminent instance of every class of thing.',
+                },
+                {
+                    heading: '11. Viśvarūpa-darśana-yoga',
+                    english: 'The Yoga of the Vision of the Universal Form. Arjuna is given the divine eye and sees the whole. At 11.32 comes kālo \'smi, \'I am Time, the world-destroying\' — the verse behind the celebrated English quotation, which renders kāla as \'Death\'.',
+                },
+                {
+                    heading: '12. Bhakti-yoga',
+                    english: 'The Yoga of Devotion. Worship of the manifest compared with meditation on the unmanifest; the marks of one dear to God.',
+                },
+                {
+                    heading: '13. Kṣetra-kṣetrajña-vibhāga-yoga',
+                    english: 'The Yoga of the Distinction between Field and Knower of the Field. Body, self and the relation of puruṣa to prakṛti.',
+                },
+                {
+                    heading: '14. Guṇatraya-vibhāga-yoga',
+                    english: 'The Yoga of the Division of the Three Guṇas. Sattva, rajas and tamas, and how one passes beyond them.',
+                },
+                {
+                    heading: '15. Puruṣottama-yoga',
+                    english: 'The Yoga of the Supreme Person. The inverted aśvattha tree with roots above; the perishable, the imperishable, and the highest.',
+                },
+                {
+                    heading: '16. Daivāsura-sampad-vibhāga-yoga',
+                    english: 'The Yoga of the Division between Divine and Demonic Endowments.',
+                },
+                {
+                    heading: '17. Śraddhātraya-vibhāga-yoga',
+                    english: 'The Yoga of the Threefold Division of Faith. Faith, food, austerity and giving, each in three grades.',
+                },
+                {
+                    heading: '18. Mokṣa-sannyāsa-yoga',
+                    english: 'The Yoga of Liberation by Renunciation. The longest chapter; the recapitulation, the passage on the duties proper to the four orders (18.41–48), and the final surrender.',
+                },
+            ],
+            contentsNote: 'The eighteen chapter divisions are integral to the text. The titles, however, come from the manuscript colophons rather than from the verses themselves, and while they are stable across the major recensions a few carry recognised variants: chapter six appears as Ātmasaṃyama-yoga or Dhyāna-yoga, chapter five as Karmasannyāsa-yoga or simply Sannyāsa-yoga, and chapter thirteen sometimes as Kṣetra-kṣetrajña-yoga. They should be read as traditional labels of long standing, not as authorial headings.',
+            editions: [
+                {
+                    label: 'Telang, The Bhagavadgîtâ with the Sanatsugâtîya and the Anugîtâ — Sacred Books of the East vol. 8 (Oxford: Clarendon, 1882)',
+                    url: 'https://archive.org/details/bhagavadgtwi00tela',
+                    note: 'Kāshināth Trimbak Telang\'s prose translation, with a substantial introduction on dating. Prints the Gītā alongside the two other didactic dialogues of the Mahābhārata, which usefully sets it in its epic context.',
+                },
+                {
+                    label: 'Arnold, The Song Celestial, or Bhagavad-Gītā (London: Trübner, 1906 printing)',
+                    url: 'https://archive.org/details/songcelestialorb00edwi',
+                    note: 'Sir Edwin Arnold\'s blank-verse rendering, first published 1885. Free with the sense and thoroughly Victorian in music, but it is the version through which the poem entered English literary consciousness — and the one Gandhi first read.',
+                },
+            ],
+        },
+        {
+            slug: 'yoga-sutras',
+            native: 'पातञ्जलयोगसूत्राणि',
+            translit: 'Pātañjalayogasūtrāṇi',
+            english: 'The Yoga Aphorisms of Patañjali',
+            author: 'Patañjali — a name, and very little more. The tradition identifies him with the grammarian Patañjali who wrote the Mahābhāṣya in the second century BCE, and further with an incarnation of the serpent Śeṣa said to have fallen into the palms of a woman named Gonikā; philology supports neither identification. Philipp Maas has argued, on manuscript evidence, that the sūtras and the so-called Vyāsa-Bhāṣya are a single composition by a single hand, the Pātañjalayogaśāstra — which would make the \'commentary\' not a later gloss but part of the work itself. The text is in any case largely a systematisation of practices and terminology already in circulation, some of it shared with Buddhist Abhidharma.',
+            date: 'Now generally placed c. 350–450 CE. Older handbooks give the second century BCE, on the strength of the identification with the grammarian.',
+            language: 'Sanskrit — classical, in the extreme compression of the sūtra style',
+            volume: 'Darśana',
+            description: 'One hundred and ninety-odd aphorisms, some of them three words long, constituting the foundational text of one of the six orthodox darśanas. The second sūtra gives the definition on which everything else rests — yogaś citta-vṛtti-nirodhaḥ, yoga is the stilling of the turnings of the mind — and the second pāda gives the eight limbs (aṣṭāṅga: yama, niyama, āsana, prāṇāyāma, pratyāhāra, dhāraṇā, dhyāna, samādhi) from which modern postural yoga takes its name, though posture is one limb of the eight and the text spends few words on it. Its metaphysics is essentially Sāṃkhya\'s, with an īśvara added as a special puruṣa and object of devotion. The third pāda\'s catalogue of siddhis — knowledge of past and future, invisibility, entering another\'s body — is often passed over by modern readers, but the text treats these as real and as obstacles.',
+            incipit: {
+                native: 'अथ योगानुशासनम् ॥',
+                english: 'Now, the exposition of yoga.',
+                note: 'Yoga Sūtra 1.1. The particle atha, \'now\', is the conventional opening of a Sanskrit śāstra and signals both auspiciousness and the assumption of a qualified student; anuśāsana implies a teaching handed down rather than newly devised.',
+            },
+            contents: [
+                {
+                    heading: '1. Samādhi Pāda',
+                    english: 'On absorption. The definition of yoga; the five kinds of mental turning; practice and dispassion; īśvara and the syllable OM; the obstacles; the grades of samādhi with and without seed.',
+                },
+                {
+                    heading: '2. Sādhana Pāda',
+                    english: 'On practice. The yoga of action (kriyā-yoga); the five afflictions (kleśas); the seer and the seen; and the first five of the eight limbs, from restraint through withdrawal of the senses.',
+                },
+                {
+                    heading: '3. Vibhūti Pāda',
+                    english: 'On powers. The last three limbs — concentration, meditation and absorption — taken together as saṃyama, and the extraordinary capacities said to follow from directing it upon various objects.',
+                },
+                {
+                    heading: '4. Kaivalya Pāda',
+                    english: 'On aloneness. The origins of the siddhis; a compressed argument against Buddhist idealism; the dissolution of the guṇas and the isolation of pure consciousness.',
+                },
+            ],
+            contentsNote: 'The four-pāda division is integral to the work and the names are those given in the text\'s own colophons. Sūtra totals differ between recensions and commentaries — editions print 194, 195 or 196 — the discrepancy turning on whether certain aphorisms, 3.22 and 4.16 in the usual numbering, are counted separately or treated as part of the commentary that surrounds them.',
+            editions: [
+                {
+                    label: 'Woods, The Yoga-System of Patañjali (Harvard Oriental Series vol. 17, 1914)',
+                    url: 'https://archive.org/details/yogasystemofpata00wooduoft',
+                    note: 'James Haughton Woods\'s translation of the sūtras together with the Yoga-Bhāṣya attributed to Vyāsa and Vācaspati Miśra\'s Tattva-vaiśāradī — the whole classical apparatus in one volume. The English is deliberately, almost painfully literal, which makes it the most useful version for study and the least readable for pleasure.',
+                },
+            ],
+        },
+        {
+            slug: 'samkhya-karika',
+            native: 'सांख्यकारिका',
+            translit: 'Sāṃkhyakārikā',
+            english: 'The Verses on Sāṃkhya',
+            author: 'Īśvarakṛṣṇa, of whom nothing is known beyond the name recorded in the closing verses and the claim there that he transmits a teaching descending from the sage Kapila through Āsuri and Pañcaśikha. The Kārikā is explicitly a summary of an older and largely lost literature — the Ṣaṣṭitantra, the \'system of sixty topics\', is named in it — so Īśvarakṛṣṇa is a redactor of an existing school rather than the founder of one. Kapila himself is a legendary figure, credited elsewhere with reducing the sons of Sagara to ash.',
+            date: 'Composed c. 350–450 CE. The firm terminus ante quem is the Chinese translation made by Paramārtha between 557 and 569 CE, which survives and is itself an important textual witness.',
+            language: 'Sanskrit — classical, in āryā metre',
+            volume: 'Darśana',
+            description: 'The oldest complete surviving text of the Sāṃkhya darśana, and the most rigorously dualist system India produced. Reality divides between puruṣa, consciousness that is plural, inactive and merely witnessing, and prakṛti, unconscious nature which alone acts and which evolves through twenty-three principles — intellect, ego-sense, mind, the senses and the elements — under the interplay of the three guṇas. Bondage is a mistake of attribution: the witness takes nature\'s activity for its own. The famous simile has prakṛti dancing before puruṣa like a dancer before an audience, and withdrawing once she has been seen. Sāṃkhya\'s categories were absorbed almost wholesale by the Yoga school, by Āyurveda and by the Purāṇas, but its cardinal claims — many selves rather than one, and no creator God — were rejected by Vedānta, which made the Kārikā a permanent opponent in Indian philosophical writing.',
+            incipit: {
+                native: 'दुःखत्रयाभिघाताज्जिज्ञासा तदपघातके हेतौ ।',
+                english: 'From the assault of the threefold suffering arises the desire to know the means of striking it down.',
+                note: 'Sāṃkhya Kārikā 1. The threefold suffering is that arising from oneself, from other creatures, and from the gods or fate. The work thus opens not from wonder but from pain, and treats philosophy as therapeutic from the first word.',
+            },
+            contents: null,
+            contentsNote: 'There are no divisions to give. The Kārikā is a single unbroken sequence of āryā verses with no chapters, sections or pādas of any kind; the topical headings one finds in modern editions and translations are the editors\' own, not the text\'s, and they differ from edition to edition. The received text runs to seventy-two verses, though editions print sixty-nine, seventy or seventy-one: Gauḍapāda\'s bhāṣya comments on only the first sixty-nine, while Paramārtha\'s Chinese version and the Yuktidīpikā support the longer count, and the closing two or three verses are widely held to be a later addition. To supply a table of contents here would be to present a modern outline as an ancient structure.',
+            editions: [
+                {
+                    label: 'Colebrooke and Wilson, The Sánkhya Káriká, or Memorial Verses on the Sánkhya Philosophy (Oxford: Oriental Translation Fund, 1837)',
+                    url: 'https://archive.org/details/snkhyakrikormem00colegoog',
+                    note: 'Henry Thomas Colebrooke\'s translation of the verses with H. H. Wilson\'s translation of the Bhāṣya attributed to Gauḍapāda — the first appearance of Sāṃkhya in English, and still serviceable.',
+                },
+                {
+                    label: 'Sinha, The Samkhya Philosophy (Sacred Books of the Hindus, Allahabad: Panini Office, 1915)',
+                    url: 'https://archive.org/details/thesamkhyaphilos00sinhuoft',
+                    note: 'Nandalal Sinha\'s compendium: the Sāṃkhya-pravacana-sūtra with Aniruddha\'s Vṛtti and Vijñānabhikṣu\'s Bhāṣya, extracts from Mahādeva\'s Vṛttisāra, the Tattva-samāsa, the Sāṃkhya Kārikā and the fragments of Pañcaśikha, bringing the school\'s principal texts together in one volume.',
+                },
+            ],
+        },
+        {
+            slug: 'brahma-sutras',
+            native: 'ब्रह्मसूत्राणि',
+            translit: 'Brahmasūtrāṇi',
+            english: 'The Aphorisms on Brahman (the Vedānta Sūtras)',
+            author: 'Bādarāyaṇa — who is named within the text itself, in the third person, alongside other teachers whose views are canvassed and sometimes rejected: Jaimini, Āśmarathya, Auḍulomi, Kāśakṛtsna, Kārṣṇājini. That internal debate tells strongly against single authorship of the whole in its present form. Tradition identifies Bādarāyaṇa with Vyāsa, and therefore with the author of the Mahābhārata and compiler of the Vedas; scholarship keeps them apart.',
+            date: 'The present redaction is generally placed c. 400–450 CE; earlier strata have been argued for anywhere between 200 BCE and 200 CE. Traditional reckoning assigns it to Vyāsa at the beginning of the Kali Yuga.',
+            language: 'Sanskrit — sūtra style at its most compressed, frequently unintelligible without a commentary',
+            volume: 'Darśana · Prasthānatraya',
+            description: 'Five hundred and fifty-odd aphorisms attempting to systematise the scattered and often inconsistent teachings of the Upaniṣads into a single doctrine. The compression is so severe that the text is genuinely underdetermined — many sūtras are two or three words — and this is not a defect but the condition of its later career: every school of Vedānta established itself by writing a commentary that read the same aphorisms differently. Śaṅkara found non-dualism in them, Rāmānuja qualified non-dualism, Madhva outright dualism, and Nimbārka, Vallabha and Baladeva each something else again, with each commentator maintaining that the others had misread the plain sense. As the second member of the prasthānatraya, the Brahma Sūtras are the text on which a would-be founder must show his hand.',
+            incipit: {
+                native: 'अथातो ब्रह्मजिज्ञासा ॥',
+                english: 'Now therefore, the enquiry into brahman.',
+                note: 'Brahma Sūtra 1.1.1, three words, on which Śaṅkara wrote many pages. The atha (\'now\') and ataḥ (\'therefore\') were themselves contested: Śaṅkara took the prerequisite to be the fourfold discipline of discrimination and dispassion, Rāmānuja the prior study of Mīmāṃsā.',
+            },
+            contents: [
+                {
+                    heading: '1. Samanvaya Adhyāya',
+                    english: 'On harmony. That the Upaniṣadic texts, rightly construed, all converge on brahman as the cause of the world — the chapter in which the commentators\' divergences are already most visible.',
+                },
+                {
+                    heading: '2. Avirodha Adhyāya',
+                    english: 'On non-contradiction. Objections answered — from Sāṃkhya, Vaiśeṣika, the Buddhists, the Jains, the Pāśupatas — and the internal consistency of the doctrine defended.',
+                },
+                {
+                    heading: '3. Sādhana Adhyāya',
+                    english: 'On the means. Transmigration and the states of the soul; the discipline of meditation; what is required of the seeker.',
+                },
+                {
+                    heading: '4. Phala Adhyāya',
+                    english: 'On the fruit. The passage at death, the path of the gods, and the nature of liberation — including the disputed question of whether the liberated soul returns.',
+                },
+            ],
+            contentsNote: 'The four adhyāyas and their traditional names are genuine and universally agreed. Each is further divided into four pādas, and the pādas into adhikaraṇas — clusters of sūtras treating a single topic — but the number and boundaries of the adhikaraṇas are themselves disputed between commentators, Śaṅkara counting them differently from Rāmānuja and Madhva differently again. Since even the internal articulation is a matter of interpretation, only the four adhyāyas are given here.',
+            editions: [
+                {
+                    label: 'Thibaut, The Vedânta-Sûtras with the commentary of Śaṅkarāchārya, Part I — Sacred Books of the East vol. 34 (Oxford: Clarendon, 1890)',
+                    url: 'https://archive.org/details/vedntasutrastr01bdar',
+                    note: 'George Thibaut\'s translation of the sūtras with Śaṅkara\'s bhāṣya entire. Thibaut\'s introduction argues, against Śaṅkara, that Rāmānuja\'s reading is closer to Bādarāyaṇa\'s intention — a bracing thing to find at the front of the standard Advaita translation.',
+                },
+                {
+                    label: 'Thibaut, The Vedânta-Sûtras with the commentary of Śaṅkarāchārya, Part II — Sacred Books of the East vol. 38 (Oxford: Clarendon, 1896)',
+                    url: 'https://archive.org/details/vedntasutrastr02bdar',
+                    note: 'The continuation, covering the second half of the work. Its title page confirms the volume as Sacred Books of the East XXXVIII; the Rāmānuja bhāṣya is a separate third part (vol. 48), not this one.',
+                },
+            ],
+        },
+        {
+            slug: 'vijnana-bhairava',
+            native: 'विज्ञानभैरवतन्त्रम्',
+            translit: 'Vijñānabhairavatantram',
+            english: 'The Vijñāna Bhairava Tantra — Bhairava of Consciousness',
+            author: 'Anonymous. The text presents itself as an extract from the Rudrayāmala Tantra, a work largely lost and whose surviving portions are of doubtful relation to it; such framing is a standard device of Śaiva scriptural authorship and cannot be taken as a historical claim. It is cast as dialogue: the Goddess asks Bhairava what the ultimate reality is, having found the doctrines she has been taught insufficient, and his answer is the body of the text.',
+            date: 'Usually placed in the eighth century CE, possibly the ninth. It is quoted by Abhinavagupta and commented on by Kṣemarāja, which fixes an upper limit around the year 1000.',
+            language: 'Sanskrit — in the anuṣṭubh of the tantric scriptures',
+            volume: 'Āgama · Kashmir Śaivism',
+            description: 'A jewel of the non-dual Śaivism of Kashmir, and one of the few tantric scriptures that is almost entirely method and almost entirely free of ritual apparatus. Bhairava answers the Goddess with a series of one hundred and twelve dhāraṇās — centring practices, each given in a verse or two, each a complete instruction. They are startling in range and in ordinariness: attend to the pause between out-breath and in-breath; hold the mind at the moment of falling asleep; look at a clear sky without support for the gaze; observe the state just before a sneeze, or in terror, or on the swing of a swing, or at the instant desire arises. No initiation, no image, no liturgy is required. The text\'s insistence that any experience whatever can be the doorway has made it the most portable of the Kashmiri scriptures, and also the most freely appropriated: it circulates widely in modern paraphrase, often with little indication of how much has been added.',
+            incipit: {
+                native: 'श्रुतं देव मया सर्वं रुद्रयामलसम्भवम् ।',
+                english: 'O God, I have heard it all — everything arising from the Rudrayāmala.',
+                note: 'Vijñāna Bhairava 1, the Goddess speaking. Her point in the following verses is that having heard the whole doctrine she still does not know what is essential in it, and the text proceeds from that dissatisfaction.',
+            },
+            contents: null,
+            contentsNote: 'There is nothing to list. The work is a single unbroken dialogue of some 162 or 163 verses with no chapters, sections or internal headings whatever. The 112 dhāraṇās are counted within it by later reckoning, but they are neither numbered nor titled nor grouped in the text itself; the thematic groupings found in modern editions come from commentators — Kṣemarāja\'s Uddyota, which survives only in part, and Śivopādhyāya\'s Vivṛti — or from translators, and they differ. Any chapter scheme presented here would be an invention.',
+            editions: [
+                {
+                    label: 'The Vijñāna Bhairava, ed. Mukunda Rāma Shāstri — Kashmir Series of Texts and Studies (Srinagar, 1918)',
+                    url: 'https://archive.org/details/in.ernet.dli.2015.326929',
+                    note: 'The Sanskrit text edited for the Kashmir Series, with Śivopādhyāya\'s Vivṛti and, for the earlier verses, the surviving portion of Kṣemarāja\'s Uddyota. This is the edition on which all subsequent work rests. Sanskrit only; no English translation.',
+                },
+            ],
+        },
+        {
+            slug: 'siva-sutras',
+            native: 'शिवसूत्राणि',
+            translit: 'Śivasūtrāṇi',
+            english: 'The Śiva Sūtras',
+            author: 'Vasugupta. The tradition holds that the sūtras were not composed but found: Śiva revealed their location to Vasugupta in a dream, and he discovered them inscribed on a rock — the Śaṅkarapāla — on the Mahādeva mountain near Śrīnagar, the rock turning over at his touch to show the text. Kṣemarāja, whose Vimarśinī is the standard commentary, reports this; other accounts make Vasugupta the recipient of an oral transmission. His disciple Kallaṭa is credited with the sūtras\' dissemination.',
+            date: 'Early ninth century CE. Vasugupta is conventionally placed c. 800–850.',
+            language: 'Sanskrit — sūtra style, extremely terse',
+            volume: 'Āgama · Kashmir Śaivism',
+            description: 'The foundational text of the Trika, the non-dual Śaivism of Kashmir, and the counterweight in that tradition to the dualist Śaiva Siddhānta that preceded it in the valley. Its seventy-odd aphorisms are arranged in three awakenings, each corresponding to one of the three means (upāyas) by which recognition may occur, graded from the most direct to the most laborious: the divine means, in which the true nature is realised without technique at all; the empowered means, working through mantra and the energy of awareness; and the individual means, working through breath, body and the ordinary instruments of the person. The ordering is deliberately inverted with respect to difficulty — the highest comes first, and the lower means are offered to those who cannot take it. The first sūtra is two words and states the whole system.',
+            incipit: {
+                native: 'चैतन्यमात्मा ॥',
+                english: 'Consciousness is the self.',
+                note: 'Śiva Sūtra 1.1. Caitanya here is not passive awareness but consciousness understood as free and self-referring activity — the point of the aphorism, on Kṣemarāja\'s reading, being that absolute freedom is the very nature of what one already is.',
+            },
+            contents: [
+                {
+                    heading: '1. Śāmbhavopāya',
+                    english: 'The Divine Means (also Śāmbhava Unmeṣa). The most direct: realisation through the immediate grace of Śiva, without support of mantra or breath. Opens with caitanyam ātmā and moves through the nature of bondage, the states of consciousness and the identity of the wakeful.',
+                },
+                {
+                    heading: '2. Śāktopāya',
+                    english: 'The Empowered Means (Śākta Unmeṣa). The shortest section. Realisation through the energy of awareness: the mind as mantra, effort as the means of attainment, the body of knowledge as the ground.',
+                },
+                {
+                    heading: '3. Āṇavopāya',
+                    english: 'The Individual Means (Āṇava Unmeṣa). The longest and most practical: work with breath, the vital centres, the senses and the states of waking, dream and deep sleep, for those to whom the higher means are not yet open.',
+                },
+            ],
+            contentsNote: 'The threefold division is integral to the work and named for the three upāyas, which are the architecture of Trika practice; this is genuine contents, not a commentator\'s imposition. The sūtra counts do vary by commentary — Kṣemarāja\'s Vimarśinī gives twenty-two, ten and forty-five, seventy-seven in all, while Bhāskara\'s Vārttika divides certain aphorisms differently and reaches a slightly higher total. The section names likewise appear in two forms, as upāyas and as unmeṣas (\'unfoldings\'), both traditional.',
+            editions: [
+                {
+                    label: 'The Sūtras of Vasu Gupta with the commentary of Kṣemarāja — Kashmir Series of Texts and Studies (Srinagar, 1912)',
+                    url: 'https://archive.org/details/in.ernet.dli.2015.487259',
+                    note: 'The Sanskrit text with Kṣemarāja\'s Śivasūtravimarśinī, from the Kashmir Series edited under J. C. Chatterji. The primary scholarly edition. Sanskrit only.',
+                },
+                {
+                    label: 'Śiva Sūtra Vimarśinī, translated by P. T. Srinivasa Iyengar (Allahabad, 1912)',
+                    url: 'https://archive.org/details/zpgm-shiva-sutra-vimarshini-p.-t.-shrinivas-iyengar',
+                    note: 'The earliest English rendering of the sūtras with Kṣemarāja\'s commentary. The scan carries the line \'First Edition; Allahabad, 1912\' in its front matter, which settles the printing.',
+                },
+            ],
+        },
+        {
+            slug: 'spanda-karikas',
+            native: 'स्पन्दकारिकाः',
+            translit: 'Spandakārikāḥ',
+            english: 'The Verses on Vibration',
+            author: 'Genuinely disputed, and disputed since the ninth century rather than by modern scholarship. Kallaṭa, in his Vṛtti, presents the verses as his teacher Vasugupta\'s, and Kṣemarāja follows him; other authorities, including Bhāskara, make Kallaṭa himself the author and Vasugupta only the source of the doctrine. A third position holds that Vasugupta composed them as an exposition of the Śiva Sūtras. The question has never been settled and probably cannot be.',
+            date: 'Ninth century CE, within a generation of the Śiva Sūtras.',
+            language: 'Sanskrit — anuṣṭubh verse',
+            volume: 'Āgama · Kashmir Śaivism',
+            description: 'Fifty-odd verses that give the Trika its central image and its name for the absolute\'s activity: spanda, the throb or vibration by which consciousness, though itself unmoving, appears as the world. The opening verse locates creation and dissolution in the opening and closing of Śiva\'s eyes, and the text works outward from that: the self is recognised not in withdrawal from experience but in the pulse at the junctures of experience — between two thoughts, between waking and sleep, at the peak of intense emotion, wherever the ordinary flow catches. Where the Śiva Sūtras are aphoristic to the point of opacity, the Spanda Kārikās argue, and they became the doctrinal bridge between the sūtras and the elaborate systematisation that Utpaladeva and Abhinavagupta would build on top of them.',
+            incipit: {
+                native: 'यस्योन्मेषनिमेषाभ्यां जगतः प्रलयोदयौ ।',
+                english: 'He by whose opening and closing of the eyes the world dissolves and arises.',
+                note: 'Spanda Kārikā 1. Unmeṣa and nimeṣa — opening and shutting — are the technical terms for the outward and inward turns of the divine awareness, and the verse makes cosmology a matter of attention rather than of manufacture.',
+            },
+            contents: null,
+            contentsNote: 'No division can be given honestly. The text runs to fifty-one, fifty-two or fifty-three verses depending on the recension, and the sectioning belongs to the commentaries rather than to the kārikās themselves. Kṣemarāja\'s Spandanirṇaya arranges the verses in four niḥṣyandas; Rāmakaṇṭha\'s Vivṛti also uses niḥṣyandas — the Kashmir Series printing of it opens \'prathamo niḥṣyandaḥ\' — but draws the boundaries elsewhere and counts the verses differently, and Utpalavaiṣṇava\'s Pradīpikā agrees with neither. Since the divisions are a commentator\'s reading and the readings conflict, none is presented here as the work\'s own contents.',
+            editions: [
+                {
+                    label: 'The Spanda Kārikās with the Vivṛti of Rāmakaṇṭha — Kashmir Series of Texts and Studies vol. VI (Srinagar, 1913)',
+                    url: 'https://archive.org/details/thespandakarikas00vasuuoft',
+                    note: 'The Sanskrit text with Rāmakaṇṭha\'s commentary, from the Kashmir Series. Digitised from the University of Toronto copy.',
+                },
+                {
+                    label: 'The Spanda Kārikās with the Vivṛti of Rāmakaṇṭha (1913), Digital Library of India copy',
+                    url: 'https://archive.org/details/in.ernet.dli.2015.477572',
+                    note: 'A second scan of the same Kashmir Series volume, useful where the Toronto copy is unclear; its Devanagari title page confirms Rāmakaṇṭha\'s Vivṛti and the year, though the Archive\'s catalogue record names a different editor for it.',
+                },
+            ],
+        },
+        {
+            slug: 'tantraloka',
+            native: 'तन्त्रालोकः',
+            translit: 'Tantrālokaḥ',
+            english: 'Light on the Tantras',
+            author: 'Abhinavagupta — one of the few figures on this shelf who is unambiguously historical and unambiguously a single person. Philosopher, aesthetician, exegete and initiate in several lineages, he names his own teachers and his own parents in his works. The Tantrāloka is his summa. Jayaratha\'s thirteenth-century commentary, the Viveka, is effectively inseparable from it in transmission.',
+            date: 'Composed c. 990–1015 CE. Abhinavagupta flourished c. 950–1020 in Kashmir; Jayaratha, his commentator, flourished c. 1225–1275.',
+            language: 'Sanskrit — verse of great density and technical difficulty',
+            volume: 'Āgama · Kashmir Śaivism',
+            description: 'The most comprehensive treatment of non-dual Śaiva ritual, metaphysics and practice ever written, running to close to six thousand verses — some 5,859 — across thirty-seven āhnikas or \'day-lessons\'. It synthesises the whole Trika inheritance — the Mālinīvijayottara above all, which Abhinavagupta takes as his root scripture — with the Pratyabhijñā philosophy of Utpaladeva and Somānanda, and it treats everything from the metaphysics of the alphabet and the graded means of realisation to initiation, consecration, funerary rite and the transgressive Kaula practices that the tradition kept for its inner circles. It is not an introductory work and does not pretend to be; Abhinavagupta wrote the shorter Tantrasāra as a précis for those who could not manage it. Much of it remains untranslated into English.',
+            incipit: null,
+            contents: null,
+            contentsNote: 'The count of thirty-seven āhnikas is firm — it is the text\'s own division, and Jayaratha\'s Viveka follows it throughout. But the āhnikas bear no titles in the work itself. The descriptive chapter names that circulate in modern editions and secondary literature are editorial conveniences drawn from subject-matter, and they vary from edition to edition and from translator to translator. To print such labels here as the work\'s own contents would misrepresent a modern apparatus as a medieval structure, so none is given. The opening verse, which famously encodes the names of Abhinavagupta\'s parents in its epithets, is likewise omitted rather than reproduced from memory, since its compounds and sandhi cannot be reconstructed reliably without the text to hand.',
+            editions: [
+                {
+                    label: 'The Tantrāloka of Abhinava Gupta with the commentary of Rājānaka Jayaratha, vol. I — Kashmir Series of Texts and Studies (Allahabad, 1918–38)',
+                    url: 'https://archive.org/details/tantralokaofabhi01abhiuoft',
+                    note: 'The first volume of the twelve-volume Kashmir Series edition prepared by Mukunda Rāma Shāstri and Madhusudan Kaul Shāstri — the standard text, with Jayaratha\'s Viveka throughout. Sanskrit; the editorial matter is in English.',
+                },
+                {
+                    label: 'The Tantrāloka of Abhinava Gupta with Jayaratha\'s commentary, vol. V',
+                    url: 'https://archive.org/details/tantralokaofabhi05abhiuoft',
+                    note: 'A further volume of the same series, digitised from the University of Toronto set. Other volumes of the run are held under adjacent identifiers.',
+                },
+            ],
+        },
+        {
+            slug: 'devi-mahatmya',
+            native: 'देवीमाहात्म्यम्',
+            translit: 'Devīmāhātmyam',
+            english: 'The Glorification of the Goddess (Durgā Saptaśatī, Caṇḍī)',
+            author: 'Anonymous. The work is embedded in the Mārkaṇḍeya Purāṇa but is widely held to be an interpolation into it, and it circulates independently as often as within it. The narrative frame is doubled: the sage Mārkaṇḍeya relates to Krauṣṭuki how the sage Medhas told the deposed king Suratha and the cheated merchant Samādhi — both stripped of everything and both still unable to stop caring — the three stories of the Goddess.',
+            date: 'Usually placed c. 550–600 CE, with proposals running from the fourth to the seventh century. The Mārkaṇḍeya Purāṇa around it is older in its earlier portions.',
+            language: 'Sanskrit — anuṣṭubh narrative verse, with hymnic passages in more elaborate metres',
+            volume: 'Śākta · Purāṇa',
+            description: 'Seven hundred verses — hence Durgā Saptaśatī, \'the seven hundred to Durgā\' — and the first Sanskrit text to treat the Goddess not as a consort or an aspect but as the supreme reality in her own right, from whom the male gods derive their power and to whom they must appeal. It recounts three victories: Viṣṇu\'s defeat of Madhu and Kaiṭabha at the Goddess\'s instigation while he sleeps on the cosmic waters; the slaying of the buffalo-demon Mahiṣa by a warrior formed from the massed splendour of all the gods; and the long campaign against Śumbha and Niśumbha, in the course of which Kālī springs black and gaunt from the Goddess\'s furrowed brow and the seven Mātṛkās emerge from the male deities as their feminine powers. It is recited entire during Navarātri across India and is the foundational scripture of Śākta worship; the recitation carries its own elaborate liturgical apparatus of aṅgas, nyāsas and protective hymns that grew up around the text over centuries.',
+            incipit: {
+                native: 'सावर्णिः सूर्यतनयो यो मनुः कथ्यतेऽष्टमः ।',
+                english: 'Sāvarṇi, son of the Sun, who is called the eighth Manu —',
+                note: 'The first verse of Mārkaṇḍeya\'s narration, following the invocation oṃ namaś caṇḍikāyai. The text opens by announcing whose reign it will explain, and only then reaches back to the king and merchant whose despair occasions the telling.',
+            },
+            contents: [
+                {
+                    heading: 'Prathama Carita',
+                    english: 'The First Episode — chapter 1. Presided over by Mahākālī. Viṣṇu asleep on Śeṣa in the cosmic ocean; the Goddess as Yoganidrā withdrawing from him so that he may wake and destroy Madhu and Kaiṭabha. Ṛṣi: Brahmā.',
+                },
+                {
+                    heading: 'Madhyama Carita',
+                    english: 'The Middle Episode — chapters 2 to 4. Presided over by Mahālakṣmī. The gods, driven out by the buffalo-demon Mahiṣa, pour out their combined radiance; from it the Goddess is formed and armed by each in turn, and Mahiṣa is killed. Ṛṣi: Viṣṇu.',
+                },
+                {
+                    heading: 'Uttara Carita',
+                    english: 'The Final Episode — chapters 5 to 13. Presided over by Mahāsarasvatī. The war against Śumbha and Niśumbha and their generals Caṇḍa, Muṇḍa, Dhūmralocana and Raktabīja; the emergence of Kālī and of the seven Mother-goddesses; the closing hymns and the boons granted to Suratha and Samādhi. Ṛṣi: Rudra.',
+                },
+            ],
+            contentsNote: 'The thirteen adhyāyas are genuine, and the grouping of them into three caritas is genuine as well — not a modern convenience but a liturgical structure, each carita having its own presiding form of the Goddess, its own ṛṣi, its own metre and its own place in the recitational sequence. The caritas are given here in preference to chapter-by-chapter headings because the individual chapters carry no fixed titles; the colophon descriptions vary between editions. Chapter numbering also varies: within the Mārkaṇḍeya Purāṇa the text is conventionally cantos 81 to 93, but editions divide the surrounding purāṇa differently.',
+            editions: [
+                {
+                    label: 'Pargiter, The Mārkaṇḍeya Purāṇa (Bibliotheca Indica, Calcutta: Asiatic Society, 1904)',
+                    url: 'https://archive.org/details/in.ernet.dli.2015.47519',
+                    note: 'F. Eden Pargiter\'s complete English translation of the purāṇa, including the Devī Māhātmya in place within it — which is the honest way to encounter the text, since its interpolated position is part of its history. Pargiter\'s notes on the interpolation are worth the detour.',
+                },
+            ],
+        },
+        {
+            slug: 'hatha-yoga-pradipika',
+            native: 'हठयोगप्रदीपिका',
+            translit: 'Haṭhayogapradīpikā',
+            english: 'Light on Haṭha Yoga',
+            author: 'Svātmārāma, called Svātmārāma Yogīndra, about whom nothing is securely known. The work is openly a compilation: it names its authorities in a lineage running from Ādinātha through Matsyendranātha and Gorakṣanātha and some thirty other siddhas, and modern text-critical work has traced the majority of its verses to identifiable earlier sources — the Dattātreyayogaśāstra, the Vivekamārtaṇḍa (Gorakṣaśataka), the Amṛtasiddhi, the Śiva Saṃhitā, the Khecarīvidyā and others. Svātmārāma is thus an anthologist of genius rather than an author, and the text\'s coherence is his contribution.',
+            date: 'Mid-fifteenth century CE, conventionally c. 1450.',
+            language: 'Sanskrit — anuṣṭubh verse, plain and instructional',
+            volume: 'Haṭha',
+            description: 'The classic manual of haṭha yoga, and the text that consolidated a scattered body of practice into a single teachable system. Its logic is bodily and sequential: the postures first, to make the body steady; then the cleansing acts and the regulation of breath, to purify the channels; then the mudrās and bandhas — including khecarī, vajrolī and the rest, which sit uneasily with much modern practice and are set down here without apology — to arrest and reverse the downward flow of vital substance; and finally the dissolution of mind in samādhi through nāda, the inner sound. Svātmārāma is explicit that haṭha exists for the sake of rāja yoga and has no standing on its own. The book stands at the head of a small library of related manuals: the Gheraṇḍa Saṃhitā, a late-seventeenth-century Bengali text that teaches ghaṭastha yoga, \'the yoga of the pot\' — the body as a vessel to be fired — in seven graded lessons rather than eight limbs; and the Śiva Saṃhitā, in five paṭalas, which frames its practice within an explicitly Vedāntic metaphysics and, unusually, permits householders the whole path.',
+            incipit: {
+                native: 'श्रीआदिनाथाय नमोऽस्तु तस्मै येनोपदिष्टा हठयोगविद्या ।',
+                english: 'Reverence be to that Śrī Ādinātha, by whom the science of haṭha yoga was taught.',
+                note: 'Haṭha Yoga Pradīpikā 1.1. Ādinātha, the \'first lord\', is Śiva; the verse continues that the teaching was given as a stairway for one wishing to ascend to rāja yoga — subordinating the whole book to its object in its opening breath. Editions differ trivially in the sandhi of śrī-ādināthāya.',
+            },
+            contents: [
+                {
+                    heading: '1. Prathama Upadeśa',
+                    english: 'First Lesson. On āsana: the qualifications and obstacles, the lineage of siddhas, the yogin\'s dwelling and regimen, and the postures themselves — fifteen in this text, most of them seated.',
+                },
+                {
+                    heading: '2. Dvitīya Upadeśa',
+                    english: 'Second Lesson. On prāṇāyāma: the six purificatory acts (ṣaṭkarma), the nāḍīs and their cleansing, and the eight kumbhakas or breath-retentions.',
+                },
+                {
+                    heading: '3. Tṛtīya Upadeśa',
+                    english: 'Third Lesson. On mudrā: the ten seals and locks — mahāmudrā, mahābandha, mahāvedha, khecarī, uḍḍiyāna, mūla and jālandhara bandha, viparītakaraṇī, vajrolī and śakticālana — and the raising of kuṇḍalinī.',
+                },
+                {
+                    heading: '4. Caturtha Upadeśa',
+                    english: 'Fourth Lesson. On samādhi: the dissolution of mind, the identity of laya, unmanī and samādhi, and the practice of nādānusandhāna, attention to the inner sound.',
+                },
+            ],
+            contentsNote: 'The four-upadeśa division and its subject order are integral to the work; the lessons are numbered in the text\'s own colophons. Verse totals differ slightly between recensions, and the critical edition prepared at the Lonavla Institute prints a somewhat fuller text than the vulgate that underlies the older translations.',
+            editions: [
+                {
+                    label: 'Pancham Sinh, The Hatha Yoga Pradipika (Sacred Books of the Hindus, Allahabad: Panini Office, 1914)',
+                    url: 'https://archive.org/details/sacredbooksofthehindusvol15part3hathayogapradipikapanchamsinh_202002',
+                    note: 'The standard public-domain English version, printing the Sanskrit with the translation and drawing on Brahmānanda\'s Jyotsnā in the notes. Contrary to what is often said of it, this edition does not censor: the vajrolī, sahajolī and amarolī verses of the third lesson are all rendered, the Kāpālika passage included.',
+                },
+                {
+                    label: 'Vasu, The Śiva Saṃhitā (Sacred Books of the Hindus, Allahabad: Panini Office, 1914)',
+                    url: 'https://archive.org/details/sacredbooksofthehindusvol15sivasamhitawithsanskrittextscvasu1914_202002',
+                    note: 'Rai Bahadur Śrīśa Chandra Vasu\'s translation with the Sanskrit text. The Śiva Saṃhitā\'s five paṭalas set haṭha practice inside a Vedāntic frame and address the householder directly.',
+                },
+                {
+                    label: 'Vasu, The Gheraṇḍa Saṃhitā',
+                    url: 'https://archive.org/details/in.ernet.dli.2015.36514',
+                    note: 'The same translator\'s version of Gheraṇḍa\'s instruction to Caṇḍakāpāli — the seven lessons of ghaṭastha yoga, from the purificatory acts through āsana, mudrā, pratyāhāra, prāṇāyāma and dhyāna to samādhi. Note that it teaches seven limbs, not Patañjali\'s eight, omits the yamas and niyamas entirely, and counts twenty-five mudrās where the Pradīpikā counts ten.',
+                },
+            ],
+        },
+        {
+            slug: 'bhagavata-purana',
+            native: 'श्रीमद्भागवतपुराणम्',
+            translit: 'Śrīmadbhāgavatapurāṇam',
+            english: 'The Bhāgavata Purāṇa',
+            author: 'Traditionally Vyāsa, said to have composed it in his old age when the compilation of the Vedas and the Mahābhārata had left him unsatisfied, and to have taught it to his son Śuka, who recites it to King Parīkṣit in the seven days before Parīkṣit\'s death — the narrative frame of the whole. Scholarship treats the author as anonymous and the provenance as South Indian: the work knows the Tamil Āḻvār poet-saints and the geography of the Tamil country. Its Sanskrit is deliberately archaised in a Vedic direction and is unusually consistent across all twelve books, which has led several scholars to argue for a single hand rather than the accretive growth typical of purāṇas.',
+            date: 'Generally placed in the ninth or tenth century CE, with some arguing earlier. Traditional reckoning assigns it, with the other purāṇas, to Vyāsa at the opening of the Kali Yuga.',
+            language: 'Sanskrit — classical, with archaising Vedic colouring and considerable metrical variety',
+            volume: 'Purāṇa',
+            description: 'There are said to be eighteen mahāpurāṇas and a further eighteen upapurāṇas — encyclopaedic compilations of cosmology, genealogy, myth, geography, ritual and law which carried the tradition to those outside the Vedic schools, and which are the principal vehicle by which what is now called Hinduism actually reached most Hindus. The Bhāgavata is the most influential of them. Its twelve skandhas move from cosmology and the Sāṃkhya of Kapila through the dynasties of kings to the tenth book — by far the longest, and longer than several purāṇas entire — which gives the childhood of Kṛṣṇa at Vraja: the butter theft, the lifting of Govardhana, the rāsa-līlā danced with the gopīs on the autumn night. It set the terms for a thousand years of devotional poetry, painting, drama and music across every language of India. Its theology is a bhakti so absolute that it subordinates knowledge and ritual alike.',
+            incipit: {
+                native: 'जन्माद्यस्य यतोऽन्वयादितरतश्चार्थेष्वभिज्ञः स्वराट् ।',
+                english: 'From whom is the origin and the rest of this; who is conscious of all things directly and indirectly, and self-luminous —',
+                note: 'Bhāgavata Purāṇa 1.1.1, the opening of the invocation. The phrase janmādyasya yataḥ deliberately echoes Brahma Sūtra 1.1.2, staking the purāṇa\'s claim to Vedāntic standing in its first four words; svarāṭ, \'self-ruling\', is a Vedic term.',
+            },
+            contents: [
+                {
+                    heading: 'Skandha I',
+                    english: 'The frame. The sages at Naimiṣāraṇya question Sūta; the curse laid on Parīkṣit; the arrival of Śuka and the beginning of the seven days\' recitation.',
+                },
+                {
+                    heading: 'Skandha II',
+                    english: 'Śuka\'s teaching on the cosmic form, the process of creation, and the ten defining characteristics of a purāṇa.',
+                },
+                {
+                    heading: 'Skandha III',
+                    english: 'Vidura and Maitreya; the boar incarnation; and Kapila\'s exposition of Sāṃkhya to his mother Devahūti — the purāṇa\'s philosophical core.',
+                },
+                {
+                    heading: 'Skandha IV',
+                    english: 'The lineage of Svāyambhuva Manu; Dakṣa\'s sacrifice and Satī; the boy Dhruva; King Pṛthu; the allegory of Purañjana.',
+                },
+                {
+                    heading: 'Skandha V',
+                    english: 'Priyavrata and Ṛṣabha; the great geography of the earth-disc, the movement of the luminaries, and the hells.',
+                },
+                {
+                    heading: 'Skandha VI',
+                    english: 'Ajāmila saved by calling his son\'s name; Dakṣa\'s progeny; the Nārāyaṇa-kavaca; the war of Indra and Vṛtra.',
+                },
+                {
+                    heading: 'Skandha VII',
+                    english: 'Prahlāda\'s devotion and his father Hiraṇyakaśipu\'s rage; the man-lion incarnation; the duties of the social orders and stages of life.',
+                },
+                {
+                    heading: 'Skandha VIII',
+                    english: 'The Manus of the successive ages; the rescue of Gajendra the elephant; the churning of the ocean of milk; Vāmana the dwarf and Bali; the fish and the flood.',
+                },
+                {
+                    heading: 'Skandha IX',
+                    english: 'The solar and lunar dynasties, from Ikṣvāku through Rāma and Paraśurāma down to the line of Yadu into which Kṛṣṇa is born.',
+                },
+                {
+                    heading: 'Skandha X',
+                    english: 'The longest book. Kṛṣṇa\'s birth in the prison at Mathurā, the childhood among the cowherds of Vraja, the rāsa-līlā, the killing of Kaṃsa, and the founding of Dvārakā.',
+                },
+                {
+                    heading: 'Skandha XI',
+                    english: 'The self-destruction of the Yādavas; the Uddhava Gītā, Kṛṣṇa\'s last long teaching; his departure from the world.',
+                },
+                {
+                    heading: 'Skandha XII',
+                    english: 'The kings of the Kali Yuga and the character of the age; the branches of the Vedas; Mārkaṇḍeya; the death of Parīkṣit and the work\'s own colophon.',
+                },
+            ],
+            contentsNote: 'The division into twelve skandhas is genuine and integral, and the number is fixed. The skandhas are numbered rather than titled in the text itself, so what is given here for each is a description of its contents, not a traditional name — the subject-summaries are drawn from the books\' actual sequence and are reliable, but they should not be mistaken for headings the purāṇa supplies.',
+            editions: [
+                {
+                    label: 'Sinha, A Study of the Bhāgavata Purāṇa, or Esoteric Hinduism (Benares, 1901)',
+                    url: 'https://archive.org/details/a-study-of-the-bhagavata-purana',
+                    note: 'Purnendu Narayana Sinha\'s English rendering, running through all twelve skandhas in order and very possibly the only public-domain version to do so. It is abridged, and says so: his preface states that he has omitted details, poetical descriptions, prayers and adorations, together with Sūta\'s framing introduction and conclusion. It is also written in a Theosophical idiom and dedicated to Annie Besant. Read it for access to the narrative rather than for the commentary that surrounds it, and not as a substitute for a complete translation.',
+                },
+            ],
+        },
+    ],
+};

@@ -1,0 +1,105 @@
+export default {
+sections: [
+            {
+                id: 'introduction',
+                title: null,
+                lede: 'We all currently find ourselves in a very intriguing, wild and precarious situation. We all have the power of the Universe within not only the palms of our hands, but within our minds and bodies. Yes, we seem to be lost to the current situation that we come face to face with on a daily, minute-by-minute basis. What you experience isn\'t the true reality, but a perceived model of a perceived mode of existence. Yes, we are only seeing the world through a thin veil.',
+                paragraphs: [
+                    'Many thin veils, actually.',
+                    'We all are viewing our everyday experiences as Reality instead of understanding that we must question our perceptions and actions, maybe not as it\'s happening always but at least enough to get to the bottom of things. To get as close to the "Real Thing" as possible.',
+                    'We believe what we think, say, and do is real and is the actual "Reality." The term naive realism comes to mind. To mistake our perceptions of reality as reality itself. But what is actually going on?',
+                    'Come to think of it. If we can\'t get to that point of realization, how can we then ask what is... What is Magic? What is Mysticism? What is Philosophy? And why do they even matter? Why should we care to approach the world with the eyes of a hermetic alchemist? A Magician. A Philosopher. Why dig deeply under the surface of "things?"',
+                    'We humans with our primate nervous system and self-consciousness. All of us with the power of the Universe at our fingertips. The power of the "I".',
+                    'Now, what does this have to do with this proverb, "In the land of the blind, the one-eyed man is king"?',
+                    'Here is a proverb many of us have heard. Some of us have used it at precisely the right moment, while others simply throw it out there to sound witty, wise, or just to fill the void of conversation. Or, like me, these sayings become mantras waiting to be unpacked.',
+                    'Each one of us, you and me, has been in each one of these stages with this proverb, or others like it, at some point in our lives.',
+                    'That\'s not the issue here. The issue seems to be the lack of unpacking. Lack of dissection, reconfiguration, and integration. The lack of philosophizing.',
+                    'The issue seems to me to lie in how many people don\'t actually ask, Do I actually know what this proverb means? And are we exempt from its underlying meaning? Do I know what is going on?',
+                ],
+            },
+            {
+                id: 'the-question-of-sight',
+                title: 'The Question of Sight',
+                image: '/media/07970d8f9efbfff3d1776f938b105ced.webp',
+                imageAlt: 'A seated ruler surrounded by blindfolded attendants in a stone hall',
+                imageCaption: 'The One-Eyed King: partial sight mistaken for complete vision.',
+                paragraphs: [
+                    'Am I one of the blind masses of the land, or the one-eyed man? Or am I somehow both? Is there a way to be neither? Someone who thinks critically, questions deeply, and has the ability to open both eyes and, through time and practice, learn to see through the third? To possess real vision, cultivated through time and practice. The question then arises: Am I one who can put in the time and train myself through dedication, diligence, and passion? To be able to recognize that I, that we, are blind while believing and striving toward the opening of one eye at a time. Without becoming trapped in the process of becoming and thinking I\'ve finished because I have seen a partial truth and then mistaken it for the Truth, the Whole, for Reality.',
+                    'These are the types of questions I think need to be asked. Questions that I try to ask myself daily as the onslaught of information and noise rapidly descends upon me. Maybe I need to look directly into the mirror on the wall. Not falling for the trap of Narcissus which is vanity, pride, egotism, cruelty as I stare into myself, back at myself.',
+                    'When actually what is happening is I am trying not to be afraid of what looks back. The silence and stillness that is all around and within me. Can I let the light of transformation shine into the darkness? We all have blind spots, living as if my perception of reality is actually Reality, instead of understanding that it is only my perception of a perceived experience of perceived Reality.',
+                    'Let\'s not let our own shortsightedness, our own myopic thinking, stand in the way of truly unveiling who we are and who we can become. Neither the one-eyed man nor the masses of the blind.',
+                    'Yet I know that I am both and can transform and awaken into something else. Something more. Why is the one-eyed man king? Well, in the land of the blind, those who mistake partial truths for the whole often believe they have the right to rule. Who gives a person the right to rule? Who grants someone authority over others when one\'s own eye still tends toward blindness? When I or they can\'t even get my or their own lives in order.',
+                    'To think one can speak to others from a place of authority and not be questioned in return. To say and not do. To speak without following through with actions.',
+                    'That is our existential plight. To not turn away from anxiety, angst and despair. The confrontation with the myriad of possibilities before us that gives rise to said anxiety, angst and despair. That perhaps I don\'t know who I am or what I am to become.',
+                    'Yet I must still go on.',
+                ],
+            },
+            {
+                id: 'the-paradox',
+                title: 'The Paradox of Blindness',
+                image: '/media/30922d0198591ef15a67468327493476.webp',
+                imageAlt: 'A robed figure standing in a stone chamber with arched doorways and candlelight',
+                imageCaption: 'Confronting the Mirror: the moment of honest self-recognition.',
+                paragraphs: [
+                    'It\'s silly to think one is the one-eyed man who is king to the blind, and yet it\'s also strange to know you\'re the blind one here. To know I am the blind one means that I should most likely do something about my blindness. To think I am the one-eyed man who is king puts me in the predicament of not actually seeing the full picture.',
+                    'Why do I have only one eye? Where did my other eye go? What about the third one I\'ve heard about in stories? One must then take action and follow through with the steps to become fully able to see. To be able to answer these questions. Why do the blind lead the blind and think they have already awakened to the Truth of Things?',
+                    'Instead realizing what the parable is trying to show you. We are all blind and the one-eyed man is no better than the rest.',
+                    'Now my friend. It\'s okay that you are blind. At least we can start from somewhere. Start with honesty, because... it is about time to wake up.',
+                ],
+            },
+            {
+                id: 'unveiling-the-parable',
+                title: 'Unveiling the Parable',
+                paragraphs: [
+                    'We all go through it, are going through it, but not all of us know how to unveil the hard, dark parts of such proverbs. It is a real skill to be able to read between the lines. To understand that "the initiation never ended." It\'s all actually finally beginning. That as soon as one paradigm shifts another begins.',
+                    'Now, this particular parable we are talking about is commonly attributed to the Renaissance humanist and theologian Desiderius Erasmus. Does that really matter for what I am discussing? No. However, it\'s good to know where such a statement came from. Erasmus was a known advocate for classical literature, individualism, and, perhaps most importantly, critical thinking. All things that are to be loved and most definitely needed today.',
+                    'Earlier forms of this type of parable can be found in Aramaic texts and likely many other places throughout our history as human beings trying to figure out what we are, who we are, and why we are the way we are.',
+                    'But why, you ask, do I use this proverb? Well it can be a kind of mantra for awakening. To see that you are perceiving some perception of the perceived object of experience. That you are both fully blind, the one-eyed king as well as the fully awakened agent of order and chaos. That is where these three beautiful passions, practices and paradigms of experience come into play.',
+                    'The parable, it is one that comes back to me time and again in this day and age that we currently find ourselves in. From there, it naturally leads me into Magic, Mysticism, and Philosophy.',
+                ],
+            },
+            {
+                id: 'three-paths',
+                title: 'Magic, Mysticism, and Philosophy',
+                image: '/media/5015ff51e3f6ca93d6c10fba39658789.webp',
+                imageAlt: 'A man watching a prism split sunlight into a spectrum across a study table',
+                imageCaption: 'The Discipline of Seeing: cultivating vision through practice and dedication.',
+                paragraphs: [
+                    'The hardest thing to do is define these three words, since I truly believe they are three words that are trying to get at a similar experience all through their own way. Their own Mode-of-Being. Many, many different ways... yet still trying to help one come to terms with the inevitable thought, I am not who I think I am and I want to rise myself up from the ashes of my former self. I want to witness the Beauty of the World, the Universe, and of God.',
+                    'Magic, Mysticism and Philosophy can come in many ways yet the truth of the matter lies in that we are all human, playing the human game and these three words have experiences and practices that can help one understand the Parable of the One-Eyed King & The Blind.',
+                    'There are forces of nature that pervade around, through and within us all. And the first thing I must do is get down to brass tacks and be honest. I may be exactly what I dislike in the world. I most likely am the blind masses being led around like a carrot leading a donkey.',
+                ],
+            },
+            {
+                id: 'sovereign-magician',
+                title: 'The Sovereign Magician',
+                image: '/media/1dbc8b48746ad63d31b7000487d12cc1.webp',
+                imageAlt: 'A figure standing in a stone doorway at dawn, facing a desert landscape with sunrise',
+                imageCaption: 'Removing the Blindfold at Dawn: the moment of awakening to new vision.',
+                paragraphs: [
+                    'I am also using the power of the word to lead others around blindly, like the One-Eyed King. The question is: do you want to become a Sovereign Magician who is honest, authentic and has their own agency? Or will I continue to parrot what I have been told and not truly experience and witness the beauty of what it means to be human. To look into the mirror and confront the darkness of your own soul head-on.',
+                    'Until then, one cannot confront the darkness of the world. We live in wild times. We have always lived in strange, wild and precarious times. And it\'s finally time to wake up and see.',
+                ],
+            },
+        ],
+marginalia: {
+            eyebrow: 'Contemplative Reflection',
+            summary: 'On the parable of the one-eyed king, naive realism, and the work of becoming fully awake through critical questioning and honest self-examination.',
+            correspondences: [
+                { term: 'Theme', value: 'Awakening & Perception' },
+                { term: 'Tradition', value: 'Philosophical Inquiry' },
+                { term: 'Key Concept', value: 'The Third Eye' },
+            ],
+            figures: [
+                {
+                    name: 'Brandon Lee',
+                    role: 'Philosopher and host of Magus in the Media, exploring the intersection of consciousness, perception, and esoteric philosophy.',
+                    image: null,
+                    links: [
+                        { label: 'Magus in the Media', href: 'https://www.magusinthemedia.com', external: true },
+                    ],
+                },
+            ],
+            conversationLabel: 'The Author',
+        },
+};

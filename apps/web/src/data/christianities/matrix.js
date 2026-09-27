@@ -1,0 +1,692 @@
+// christianities/matrix — authored and fact-checked by the structures pipeline
+// (3 corrections applied by the verifier before landing).
+export default {
+    "intro": [
+        "Every row in this table is an answer to the same question — the one put to the disciples at Caesarea Philippi (Mark 8:29) — and every column is a question the ensuing arguments actually turned on. Read across a row and you have a position's shape; read down a column and you have the history of a single quarrel: whether the flesh was real (the second century's fight), whether the Son was made (the fourth's), whether the united Christ is one subject and one nature or two (the fifth's), one will or two (the seventh's). A 'q' means qualified — the cell where most of these positions actually live, since the great disputes were rarely about a bare yes or no; every q carries a note saying exactly how it is qualified, and the notes name their sources throughout.",
+        "Two cautions govern the whole. First, a table flattens what its holders spent lifetimes qualifying: Cyril of Alexandria and Leo of Rome both answer yes to 'one person', and the roads by which they reached that yes were different enough to divide churches to this day — treat each cell as a door into an argument, not a verdict on it. Second, several rows survive only in their opponents' summaries — the docetists through Ignatius, Marcion largely through Tertullian, Arius's Thalia through Athanasius's excerpts — and a hostile summary is evidence of what the opponent heard, not proof of what the holder taught; the holder line marks these cases. For the same reason the standard names are handled with tongs: many are exonyms or plain polemic ('Nestorian', 'monophysite', the 'Robber Council'), flagged in the label notes, with self-designations given wherever they are known. And where a tradition's own account and critical scholarship diverge, both are given, attributed."
+    ],
+    "questions": [
+        {
+            "key": "divine",
+            "label": "Fully divine?",
+            "gloss": "Is he God in the full, unqualified sense — whatever the Father is?"
+        },
+        {
+            "key": "human",
+            "label": "Fully human?",
+            "gloss": "Is the humanity complete — body, soul, and rational mind?"
+        },
+        {
+            "key": "body",
+            "label": "Real flesh?",
+            "gloss": "Was the body material and truly born, or only apparent?"
+        },
+        {
+            "key": "preexist",
+            "label": "Pre-existent?",
+            "gloss": "Did he exist before Mary — before the world?"
+        },
+        {
+            "key": "created",
+            "label": "A creature?",
+            "gloss": "Is the Son something made, with a beginning?"
+        },
+        {
+            "key": "oneperson",
+            "label": "One person?",
+            "gloss": "Is the incarnate Christ a single subject, or two conjoined?"
+        },
+        {
+            "key": "twonatures",
+            "label": "Two natures after the union?",
+            "gloss": "Do divinity and humanity remain two distinguishable natures once united?"
+        },
+        {
+            "key": "twowills",
+            "label": "Two wills?",
+            "gloss": "Are there two natural wills and operations, divine and human?"
+        }
+    ],
+    "positions": [
+        {
+            "key": "ebionite",
+            "label": "Ebionite",
+            "labelNote": "The name (Hebrew ebyonim, 'the poor') may be a self-designation; heresiologists re-derived it from a fictitious founder 'Ebion'. The position survives only in opponents' reports.",
+            "holder": "Jewish-Christian communities east of the Jordan, 2nd–4th c.; known almost entirely through hostile summaries in Irenaeus (Against Heresies 1.26.2), Origen, and Epiphanius (Panarion 30), which do not fully agree with one another.",
+            "answers": {
+                "divine": {
+                    "v": "no",
+                    "note": "The Messiah is a man justified by keeping the law (Irenaeus's summary); Epiphanius attributes to some a heavenly Christ-spirit descending on him — the hostile sources conflict."
+                },
+                "human": {
+                    "v": "yes",
+                    "note": "Emphatically; in Irenaeus's report, born of Joseph and Mary in the ordinary way."
+                },
+                "body": {
+                    "v": "yes",
+                    "note": null
+                },
+                "preexist": {
+                    "v": "q",
+                    "note": "No in Irenaeus's summary; Epiphanius (Panarion 30) credits some Ebionites with a pre-existent spirit entering Jesus — opponents' reports disagree, and no self-statement survives."
+                },
+                "created": {
+                    "v": "yes",
+                    "note": "A human being."
+                },
+                "oneperson": {
+                    "v": "yes",
+                    "note": null
+                },
+                "twonatures": {
+                    "v": "no",
+                    "note": "One nature, human; the category itself is anachronistic here."
+                },
+                "twowills": {
+                    "v": "no",
+                    "note": "A later category; a single human will is assumed."
+                }
+            }
+        },
+        {
+            "key": "docetic",
+            "label": "Docetic",
+            "labelNote": "'Docetic' (from dokein, 'to seem') is an opponents' umbrella term; no ancient writer applies it to himself. A tendency more than a school.",
+            "holder": "The opponents of Ignatius of Antioch (letters c. 110 on the traditional Eusebian dating; a minority of recent scholars date them later in the 2nd c.) and the users of the Gospel of Peter reported by Serapion of Antioch (in Eusebius, Church History 6.12). Survives only in hostile summaries.",
+            "answers": {
+                "divine": {
+                    "v": "q",
+                    "note": "The one who appears is a heavenly being, but the reports are too varied and too hostile to fix the grade of divinity claimed."
+                },
+                "human": {
+                    "v": "no",
+                    "note": null
+                },
+                "body": {
+                    "v": "no",
+                    "note": "The defining denial: the flesh was semblance. Ignatius counters that Christ was truly born, truly ate, truly suffered (To the Smyrnaeans 1–3, paraphrased)."
+                },
+                "preexist": {
+                    "v": "yes",
+                    "note": "As a heavenly visitor — so the hostile summaries imply."
+                },
+                "created": {
+                    "v": "no",
+                    "note": "Nothing in the reports treats the appearer as made; the Nicene question postdates them."
+                },
+                "oneperson": {
+                    "v": "yes",
+                    "note": "A single heavenly subject. The 'separationist' variant (the Christ departing from Jesus before the cross, as Irenaeus reports of Cerinthus) is filed nearby by historians but is a distinct mechanism."
+                },
+                "twonatures": {
+                    "v": "no",
+                    "note": "Only the divine is real."
+                },
+                "twowills": {
+                    "v": "no",
+                    "note": "A later category."
+                }
+            }
+        },
+        {
+            "key": "marcionite",
+            "label": "Marcionite",
+            "labelNote": "Named by opponents for its founder; Marcion's communities called themselves simply the church of Christ.",
+            "holder": "Marcion of Sinope (active in Rome, c. 140) and his church, which persisted in the East into the 5th c. His Antitheses is lost; the position survives chiefly in Tertullian's five-book refutation Against Marcion — a hostile summary, as modern Marcion scholarship (e.g. Judith Lieu) stresses.",
+            "answers": {
+                "divine": {
+                    "v": "q",
+                    "note": "Divine — but as the manifestation of the previously unknown good God, not of the creator God of Israel. The qualification is the whole system."
+                },
+                "human": {
+                    "v": "no",
+                    "note": "Per Tertullian's summary, Christ appears unborn, in the fifteenth year of Tiberius, without human generation."
+                },
+                "body": {
+                    "v": "no",
+                    "note": "A phantasm in Tertullian's hostile account; how far this states Marcion's own nuance is, scholars caution, unrecoverable."
+                },
+                "preexist": {
+                    "v": "yes",
+                    "note": null
+                },
+                "created": {
+                    "v": "no",
+                    "note": null
+                },
+                "oneperson": {
+                    "v": "yes",
+                    "note": null
+                },
+                "twonatures": {
+                    "v": "no",
+                    "note": "Only the divine visitor is real."
+                },
+                "twowills": {
+                    "v": "no",
+                    "note": "A later category."
+                }
+            }
+        },
+        {
+            "key": "valentinian",
+            "label": "Valentinian",
+            "labelNote": "The heresiologists' label; the movement saw itself as the spiritual (pneumatic) wing of the church, not a separate sect.",
+            "holder": "The school of Valentinus (Rome, c. 140–160) — Ptolemy, Heracleon, Theodotus; long known through Irenaeus and Clement's Excerpta ex Theodoto (opponents' and excerptors' summaries), now supplemented by Nag Hammadi texts (Gospel of Truth, Tripartite Tractate).",
+            "answers": {
+                "divine": {
+                    "v": "q",
+                    "note": "The Savior is divine as fruit of the Pleroma's aeons — divine within a graded emanation, below the ineffable Father."
+                },
+                "human": {
+                    "v": "q",
+                    "note": "A body prepared to be seen and touched, of psychic or (in the Eastern school) pneumatic substance; material flesh is denied. Irenaeus reports it passed through Mary as through a channel (Against Heresies 1.7.2, his summary)."
+                },
+                "body": {
+                    "v": "q",
+                    "note": "A real, tangible body in the narrative — but not of material substance; the schools differed on its constitution (so Hippolytus on the Eastern/Western split)."
+                },
+                "preexist": {
+                    "v": "yes",
+                    "note": "As Savior from the Pleroma."
+                },
+                "created": {
+                    "v": "q",
+                    "note": "Emanated, not made: 'creature' in the later Arian sense fits badly. Generation within the Pleroma is above the demiurge's creating."
+                },
+                "oneperson": {
+                    "v": "q",
+                    "note": "The accounts layer several figures — the Savior, the psychic Christ, Jesus — variously combined; the single-subject question does not map cleanly onto the system."
+                },
+                "twonatures": {
+                    "v": "q",
+                    "note": "More than two: pneumatic, psychic, and a specially furnished body are distinguished; the later binary grid does not fit."
+                },
+                "twowills": {
+                    "v": "no",
+                    "note": "The category postdates the system; never posed in these terms."
+                }
+            }
+        },
+        {
+            "key": "adoptionist",
+            "label": "Adoptionist (Dynamic Monarchian)",
+            "labelNote": "'Adoptionism' and 'dynamic Monarchianism' are opponents' and historians' labels; holders claimed to defend the monarchia, the sole rule of the one God. Distinct from the 8th-c. Spanish 'adoptionism' of Elipandus and Felix, a different dispute.",
+            "holder": "Theodotus the Cobbler (Rome, excommunicated by Victor c. 190, per the source quoted in Eusebius, Church History 5.28) and Paul of Samosata (bishop of Antioch, deposed 268/9). Paul's actual teaching is disputed; the synodal letters and fragments are hostile, and modern reconstructions differ.",
+            "answers": {
+                "divine": {
+                    "v": "no",
+                    "note": "God's power (dynamis) indwelt the man Jesus; opponents summarize the claim as making him a mere man (psilos anthropos)."
+                },
+                "human": {
+                    "v": "yes",
+                    "note": null
+                },
+                "body": {
+                    "v": "yes",
+                    "note": null
+                },
+                "preexist": {
+                    "v": "no",
+                    "note": "The man Jesus begins with Mary. Paul of Samosata allowed a pre-existent Word only as God's impersonal reason, per the fragments of the Antioch proceedings — a hostile and contested source."
+                },
+                "created": {
+                    "v": "yes",
+                    "note": "A human being, uniquely empowered."
+                },
+                "oneperson": {
+                    "v": "yes",
+                    "note": "One human person, indwelt by divine power."
+                },
+                "twonatures": {
+                    "v": "no",
+                    "note": "An indwelling of power in a man, not a union of natures."
+                },
+                "twowills": {
+                    "v": "no",
+                    "note": "One human will moved by God's power; the later question is not posed."
+                }
+            }
+        },
+        {
+            "key": "modalist",
+            "label": "Modalist (Sabellian)",
+            "labelNote": "'Sabellian' and 'Patripassian' are opponents' tags (Tertullian, Hippolytus); holders professed simply the one God. 'Modalism' is a modern historians' coinage.",
+            "holder": "Noetus of Smyrna (c. 200, known through Hippolytus, Against Noetus), Praxeas (known only through Tertullian's Against Praxeas), Sabellius (Rome, c. 220, known through Hippolytus and later reports). All survive chiefly in refutations.",
+            "answers": {
+                "divine": {
+                    "v": "yes",
+                    "note": "Fully — Christ is the one God himself, the Father appearing under the mode of Son; hence Tertullian's jibe 'Patripassian': the Father suffered."
+                },
+                "human": {
+                    "v": "q",
+                    "note": "The flesh is affirmed as real; a complete human interior life is simply not discussed in the surviving hostile reports."
+                },
+                "body": {
+                    "v": "yes",
+                    "note": null
+                },
+                "preexist": {
+                    "v": "q",
+                    "note": "As the one God, eternally; as 'Son', a mode that begins with the economy of incarnation."
+                },
+                "created": {
+                    "v": "no",
+                    "note": null
+                },
+                "oneperson": {
+                    "v": "yes",
+                    "note": "Radically so — the same person as the Father."
+                },
+                "twonatures": {
+                    "v": "q",
+                    "note": "Not their framework. Hippolytus (Refutation 9) reports Callistus distinguishing the visible man as Son from the indwelling spirit as Father — a two-ness, but not the later natures grid."
+                },
+                "twowills": {
+                    "v": "no",
+                    "note": "A later category; one divine subject throughout."
+                }
+            }
+        },
+        {
+            "key": "arian",
+            "label": "Arian (Eusebian / Homoian / Heteroousian)",
+            "labelNote": "'Arian' is Athanasius's polemical umbrella for a spectrum that mostly did not follow Arius personally; Eusebians, Homoians, and Heteroousians (Aetius, Eunomius) differed sharply among themselves — so the standard modern histories (R. P. C. Hanson, The Search for the Christian Doctrine of God, 1988).",
+            "holder": "Arius of Alexandria (condemned at Nicaea, 325; d. 336 — his Thalia survives only in Athanasius's hostile excerpts); the Homoian creeds of Ariminum–Seleucia (359); Eunomius of Cyzicus; Ulfila and the Gothic and Vandal churches for centuries after.",
+            "answers": {
+                "divine": {
+                    "v": "q",
+                    "note": "Divine as the unique pre-cosmic Son through whom all else was made — but not of the Father's own essence; God by grace and title, not fully as the Father is."
+                },
+                "human": {
+                    "v": "q",
+                    "note": "A real body, but on most Arian accounts no human soul — the Logos takes its place (Hanson's reading of the Eudoxian and Eunomian evidence)."
+                },
+                "body": {
+                    "v": "yes",
+                    "note": null
+                },
+                "preexist": {
+                    "v": "yes",
+                    "note": "Before the ages — yet with a beginning: \"there was when he was not\" — the slogan condemned in the anathemas of Nicaea (325) and reported as the teaching of Arius's Thalia by Athanasius (Against the Arians 1.5), a hostile transmission."
+                },
+                "created": {
+                    "v": "yes",
+                    "note": "The first and highest creature, made from nothing by the Father's will; Homoians softened the vocabulary, Eunomians sharpened it."
+                },
+                "oneperson": {
+                    "v": "yes",
+                    "note": null
+                },
+                "twonatures": {
+                    "v": "no",
+                    "note": "The Logos directly animates flesh; the sufferings reach the Logos himself — a consequence Nicene polemic turned against them."
+                },
+                "twowills": {
+                    "v": "no",
+                    "note": "One will, the Son's, itself subordinate to the Father's; the 7th-c. question is not posed in these terms."
+                }
+            }
+        },
+        {
+            "key": "apollinarian",
+            "label": "Apollinarian",
+            "labelNote": "Named for its teacher only after his condemnation; Apollinaris wrote as a defender of Nicaea, and several of his works survived under orthodox names (pseudo-Athanasius, pseudo-Gregory Thaumaturgus).",
+            "holder": "Apollinaris of Laodicea (c. 310 – c. 390, dating approximate), condemned at Constantinople (381); his party dwindled within decades. Key texts survive because they circulated under others' names (fragments collected by Lietzmann, 1904).",
+            "answers": {
+                "divine": {
+                    "v": "yes",
+                    "note": null
+                },
+                "human": {
+                    "v": "no",
+                    "note": "A true body and vital soul, but the rational mind (nous) is replaced by the Logos — the point Gregory of Nazianzus attacked: what is not assumed is not healed (Epistle 101, paraphrased)."
+                },
+                "body": {
+                    "v": "yes",
+                    "note": "Insistently real; later polemic accused his followers of teaching heavenly flesh, which the fragments do not clearly support — a historians' caution."
+                },
+                "preexist": {
+                    "v": "yes",
+                    "note": null
+                },
+                "created": {
+                    "v": "no",
+                    "note": null
+                },
+                "oneperson": {
+                    "v": "yes",
+                    "note": "The driving concern: one nature, one person, one energizing Logos."
+                },
+                "twonatures": {
+                    "v": "no",
+                    "note": "The mia-physis formula — one incarnate nature of the God the Word — originates with him; transmitted under Athanasius's name, it reached Cyril as an orthodox heirloom, a documented irony (Lietzmann's collection)."
+                },
+                "twowills": {
+                    "v": "no",
+                    "note": "Explicitly one: two complete self-determining principles cannot make one Christ, he argued (fragments in Lietzmann)."
+                }
+            }
+        },
+        {
+            "key": "antiochene",
+            "label": "Antiochene dyophysite (Church of the East)",
+            "labelNote": "Usually filed under 'Nestorianism' — an exonym and a polemical label the Church of the East rejects as a description of its faith; its own doctors are Diodore, Theodore 'the Interpreter', and only secondarily Nestorius. Scholars now avoid 'the Nestorian Church' as a misnomer (so Sebastian Brock, 1996).",
+            "holder": "Diodore of Tarsus (d. c. 390), Theodore of Mopsuestia (d. 428), Nestorius of Constantinople (deposed at Ephesus, 431 — a council he and his supporters rejected as uncanonical); the Church of the East from the late 5th c. — the Synod of Beth Lapat (484) is the traditional marker, though its acts are lost and were later annulled, and the earliest surviving dyophysite confession is that of the Synod of Acacius (486), a caution of critical scholarship — with the two-qnome formulation fixed by Babai the Great (early 7th c.). Nestorius's own apologia, the Bazaar of Heracleides, resurfaced in Syriac in 1889.",
+            "answers": {
+                "divine": {
+                    "v": "yes",
+                    "note": "God the Word, consubstantial with the Father; the tradition is fiercely Nicene."
+                },
+                "human": {
+                    "v": "yes",
+                    "note": "A complete man, rational soul included — the anti-Apollinarian anchor of the whole school."
+                },
+                "body": {
+                    "v": "yes",
+                    "note": null
+                },
+                "preexist": {
+                    "v": "yes",
+                    "note": "The Word; the assumed man begins in Mary."
+                },
+                "created": {
+                    "v": "q",
+                    "note": "No for the Word, yes for the assumed humanity — and the school insists the two answers never be mixed."
+                },
+                "oneperson": {
+                    "v": "q",
+                    "note": "One prosopon of union, but two hypostases (East-Syriac: two qnome, Babai the Great). Opponents heard 'two Sons'; Nestorius expressly denied that reading (Bazaar of Heracleides), and much critical scholarship since Bethune-Baker (1908) agrees the charge misdescribes him — Cyril's party did not."
+                },
+                "twonatures": {
+                    "v": "yes",
+                    "note": "Emphatically: unconfused, each keeping its own properties and operations."
+                },
+                "twowills": {
+                    "v": "yes",
+                    "note": "Two natural operations follow the two natures; when the 7th-c. question was finally posed, this tradition's logic answered on the two-wills side."
+                }
+            }
+        },
+        {
+            "key": "miaphysite",
+            "label": "Miaphysite (Cyrilline)",
+            "labelNote": "'Monophysite' is the opponents' label and is rejected by the Oriental Orthodox churches; the self-description is miaphysite, from Cyril's mia physis formula. Not Eutychian — this row condemns Eutyches too.",
+            "holder": "Cyril of Alexandria (d. 444) as read by Dioscorus of Alexandria (d. 454), Severus of Antioch (d. 538), Philoxenus of Mabbug (d. 523); today the Coptic, Syriac, Armenian, Ethiopian, Eritrean, and Malankara churches (Oriental Orthodox).",
+            "answers": {
+                "divine": {
+                    "v": "yes",
+                    "note": null
+                },
+                "human": {
+                    "v": "yes",
+                    "note": "Complete — body and rational soul, consubstantial with us; Severus condemned Eutychian denials of this as firmly as Chalcedon did."
+                },
+                "body": {
+                    "v": "yes",
+                    "note": null
+                },
+                "preexist": {
+                    "v": "yes",
+                    "note": null
+                },
+                "created": {
+                    "v": "no",
+                    "note": "Asked of the person of the incarnate Word, no; the humanity he made his own is created."
+                },
+                "oneperson": {
+                    "v": "yes",
+                    "note": "One incarnate nature of the God the Word (Cyril's formula): the union is hypostatic, the subject single."
+                },
+                "twonatures": {
+                    "v": "q",
+                    "note": "Out of two natures, one after the union; the two remain distinguishable in thought (Severus's en theoria), but counting two after the union was held to divide Christ. Both communions claim Cyril; the 1990 Chambésy agreed statement judged the difference largely terminological — hardliners on both sides dissent."
+                },
+                "twowills": {
+                    "v": "q",
+                    "note": "One activity of the incarnate Word (Severus): the human will and operation are real, but as the Word's own, never an independent acting principle. The two-wills question was framed only after the split, and the Oriental Orthodox answer it in Severan terms."
+                }
+            }
+        },
+        {
+            "key": "eutychian",
+            "label": "Eutychian",
+            "labelNote": "Known almost wholly through his condemnations — the minutes of the Home Synod of Constantinople (448) and Chalcedon (451). Whether Eutyches taught the absorption later called 'Eutychianism' is doubted by many historians, who find in the minutes a confused old monk more than a system.",
+            "holder": "Eutyches, archimandrite in Constantinople (c. 378–454); condemned 448, rehabilitated at Ephesus II (449) — the council Leo polemically dubbed the Latrocinium, 'Robber Council', a label and not a name — then condemned at Chalcedon (451) and afterwards repudiated by Chalcedonians and miaphysites alike.",
+            "answers": {
+                "divine": {
+                    "v": "yes",
+                    "note": null
+                },
+                "human": {
+                    "v": "q",
+                    "note": "At the 448 hearing he long resisted confessing Christ consubstantial with us, then yielded under pressure (Acts of the Home Synod, 448); what he positively held is disputed — absorption of the humanity is his opponents' inference."
+                },
+                "body": {
+                    "v": "yes",
+                    "note": "Real flesh from the Virgin he affirmed; its consubstantiality with ours was the sticking point."
+                },
+                "preexist": {
+                    "v": "yes",
+                    "note": null
+                },
+                "created": {
+                    "v": "no",
+                    "note": null
+                },
+                "oneperson": {
+                    "v": "yes",
+                    "note": null
+                },
+                "twonatures": {
+                    "v": "no",
+                    "note": "His confessed formula at the 448 trial: from two natures before the union, one nature after it."
+                },
+                "twowills": {
+                    "v": "no",
+                    "note": "By implication one; the question itself belongs to the following two centuries."
+                }
+            }
+        },
+        {
+            "key": "chalcedonian",
+            "label": "Chalcedonian",
+            "labelNote": null,
+            "holder": "The Council of Chalcedon (451), building on Leo's Tome and Cyril's letters; the Eastern Orthodox, Catholic, and (with qualifications) magisterial Protestant churches since. Re-anchored in Cyril's single subject by Constantinople II (553) — the reading historians call neo-Chalcedonian, a modern term.",
+            "answers": {
+                "divine": {
+                    "v": "yes",
+                    "note": null
+                },
+                "human": {
+                    "v": "yes",
+                    "note": "Complete: body, soul, and rational mind, consubstantial with us."
+                },
+                "body": {
+                    "v": "yes",
+                    "note": null
+                },
+                "preexist": {
+                    "v": "yes",
+                    "note": null
+                },
+                "created": {
+                    "v": "no",
+                    "note": "Of the person of the Word, no; the assumed human nature is created."
+                },
+                "oneperson": {
+                    "v": "yes",
+                    "note": "One person and one hypostasis, made known in two natures."
+                },
+                "twonatures": {
+                    "v": "yes",
+                    "note": "Neither confused nor changed, neither divided nor separated — the Definition's four negations; each nature keeps its properties, concurring in the one person."
+                },
+                "twowills": {
+                    "v": "yes",
+                    "note": "Made explicit only at Constantinople III (680–681); Chalcedon's own silence on will and operation is what left the monothelite door open."
+                }
+            }
+        },
+        {
+            "key": "monothelite",
+            "label": "Monothelite / Monoenergist",
+            "labelNote": "'Monothelite' is the label of the victors of 681; proponents framed the one-will and one-energy formulas as Chalcedonian peace terms toward the miaphysites, not a new school.",
+            "holder": "Sergius of Constantinople and the emperor Heraclius (the Ekthesis, 638); Cyrus of Alexandria (Pact of Union, 633); Pope Honorius I by letter — his condemnation in 681 has been debated ever since. Opposed by Maximus the Confessor (d. 662) and condemned at Constantinople III (680–681). The Maronite church's historical relation to the doctrine is disputed; its own tradition denies it ever held it.",
+            "answers": {
+                "divine": {
+                    "v": "yes",
+                    "note": null
+                },
+                "human": {
+                    "v": "yes",
+                    "note": "Affirmed with Chalcedon — though Maximus's objection was precisely that a humanity without its own natural will is not complete."
+                },
+                "body": {
+                    "v": "yes",
+                    "note": null
+                },
+                "preexist": {
+                    "v": "yes",
+                    "note": null
+                },
+                "created": {
+                    "v": "no",
+                    "note": null
+                },
+                "oneperson": {
+                    "v": "yes",
+                    "note": "The one-will claim located willing in the one person — the move Maximus contested: will belongs to nature, not person."
+                },
+                "twonatures": {
+                    "v": "yes",
+                    "note": "Professed; the whole project presented itself as a defense of Chalcedon's two natures."
+                },
+                "twowills": {
+                    "v": "no",
+                    "note": "One will (thelema) and, in the earlier monoenergist phase, one activity (energeia); condemned at Constantinople III (680–681), which defined two natural wills, the human freely following the divine."
+                }
+            }
+        },
+        {
+            "key": "socinian",
+            "label": "Socinian / Unitarian",
+            "labelNote": "'Socinian' from Fausto Sozzini, applied by opponents; the communities called themselves the Polish Brethren, later Unitarian.",
+            "holder": "Fausto Sozzini (d. 1604) and the Polish Brethren (Racovian Catechism, 1605); Transylvanian Unitarians from Ferenc Dávid (d. 1579); English and American Unitarians (Priestley, Channing), 18th–19th c.",
+            "answers": {
+                "divine": {
+                    "v": "no",
+                    "note": "A true man uniquely conceived, commissioned, raised, and exalted; the Racovian Catechism nonetheless directs worship to the exalted Christ — the point on which Sozzini broke with Dávid's non-adorantism."
+                },
+                "human": {
+                    "v": "yes",
+                    "note": null
+                },
+                "body": {
+                    "v": "yes",
+                    "note": null
+                },
+                "preexist": {
+                    "v": "no",
+                    "note": "The signature denial, aimed at Arians as much as at Nicenes; John's prologue is read as new-creation language."
+                },
+                "created": {
+                    "v": "yes",
+                    "note": "A human being — virginally conceived, in the Racovian account."
+                },
+                "oneperson": {
+                    "v": "yes",
+                    "note": null
+                },
+                "twonatures": {
+                    "v": "no",
+                    "note": "The two-natures doctrine is expressly rejected in the Racovian Catechism as making one person two substances."
+                },
+                "twowills": {
+                    "v": "no",
+                    "note": "One human will."
+                }
+            }
+        },
+        {
+            "key": "kenotic",
+            "label": "Kenotic (19th–early 20th c.)",
+            "labelNote": null,
+            "holder": "Gottfried Thomasius (Erlangen, writing in the 1850s), W. F. Gess (the more radical form), Charles Gore (Lux Mundi, 1889, and after), P. T. Forsyth (1909) and H. R. Mackintosh (1912) in Britain — all framing Philippians 2:7 as the key, and all intending to stand within Chalcedon.",
+            "answers": {
+                "divine": {
+                    "v": "q",
+                    "note": "The same divine Son in identity, but self-emptied — on Thomasius's scheme, of the relative attributes (omniscience, omnipotence, omnipresence) for the earthly life; critics from his contemporaries to analytic theology ask whether that is still full divinity."
+                },
+                "human": {
+                    "v": "yes",
+                    "note": "The school's driving motive: a genuinely limited, growing, learning human consciousness (Mark 13:32 taken at face value)."
+                },
+                "body": {
+                    "v": "yes",
+                    "note": null
+                },
+                "preexist": {
+                    "v": "yes",
+                    "note": null
+                },
+                "created": {
+                    "v": "no",
+                    "note": null
+                },
+                "oneperson": {
+                    "v": "yes",
+                    "note": "A single self-limited subject — in Gess so single that the divine consciousness sleeps in the man; Gore keeps more distance."
+                },
+                "twonatures": {
+                    "v": "q",
+                    "note": "Affirmed verbally, within Chalcedonian intent; but with divine attributes suspended, critics (surveyed by A. B. Bruce, 1876) argued the divine nature has been changed — which Chalcedon's own negations forbid."
+                },
+                "twowills": {
+                    "v": "q",
+                    "note": "The school divides: Gore and Forsyth keep two wills with the divine self-restrained; Gess tends toward a single developing will."
+                }
+            }
+        },
+        {
+            "key": "spiritchristology",
+            "label": "Spirit christology (modern)",
+            "labelNote": "'Spirit christology' names a family: this row states its non-incarnational form (Lampe, Haight), not the trinitarian Spirit-christologies that supplement rather than replace Logos christology.",
+            "holder": "G. W. H. Lampe (God as Spirit, 1977), Roger Haight (Jesus Symbol of God, 1999 — the subject of a CDF notification, 2004); antecedents claimed in the 'Spirit' language of some 2nd-c. writers, a genealogy critical scholarship treats with caution.",
+            "answers": {
+                "divine": {
+                    "v": "q",
+                    "note": "God as Spirit truly present and active in and through this man (Lampe); whether an inspiration model can say 'fully divine' of Jesus himself is the standing objection — stated officially in the 2004 notification on Haight."
+                },
+                "human": {
+                    "v": "yes",
+                    "note": null
+                },
+                "body": {
+                    "v": "yes",
+                    "note": null
+                },
+                "preexist": {
+                    "v": "no",
+                    "note": "No pre-existent personal Logos distinct from God; what pre-exists is God the Spirit, not Jesus."
+                },
+                "created": {
+                    "v": "yes",
+                    "note": "The man Jesus is a creature, indwelt and inspired without measure."
+                },
+                "oneperson": {
+                    "v": "yes",
+                    "note": "One human subject; God's presence in him is not a second self."
+                },
+                "twonatures": {
+                    "v": "no",
+                    "note": "The model deliberately replaces the two-natures grid with indwelling and inspiration."
+                },
+                "twowills": {
+                    "v": "no",
+                    "note": "One human will, wholly responsive to the Spirit; the Maximian question is dissolved rather than answered."
+                }
+            }
+        }
+    ]
+};

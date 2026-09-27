@@ -1,0 +1,566 @@
+// armenian hall extension — numbers and glossed first readings.
+// Arithmetic and era conversions recomputed, citations checked, scripts
+// verified against unicodedata by the content pipeline.
+export default {
+    numbers: {
+        note: 'Mashtots did not borrow a numeral system; he built one into the alphabet while he was making it. The thirty-six letters of the original order carry four clean ranks of nine and nothing else: Ա to Թ the units, Ժ to Ղ the tens, Ճ to Ջ the hundreds, Ռ to Ք the thousands. Thirty-six letters is exactly four ranks of nine, and it is hard to believe the fit is accidental. Greek, working with an inherited alphabet of twenty-four letters, had to keep three signs long dead as sounds — digamma, koppa, sampi — merely to fill its ranks; Hebrew\'s plain letters stop at 400 and must climb by combination or by the five final forms. Armenian needed neither expedient. That the scheme is closed, and closed early, shows in the two letters added centuries later, Օ and Ֆ: they carry no value at all, having arrived after the counting was finished. The system is additive and written from the largest value to the smallest, with no zero and no place value, so ՊՀԳ is simply 800 + 70 + 3; and because letter and number are one thing, the scribe numbering his quires, the chronicler dating a siege and the lector marking a chapter are all performing the same act of writing. The alphabet opens at Ա, the first letter of Աստուած, and closes at Ք, the first letter of Քրիստոս — which is also to say that the count closes at 9,000 on the letter that begins the name of Christ. The reckoning these letters most often carry is the Great Armenian Era, Թուական Հայոց. Armenian sources also call it the Հայկազեան era, and the Torgomean, Askanazean, Aramean and Yabetean besides, after one or another eponymous ancestor; colophons use the names interchangeably, so the name on the page does not tell you the count has changed. Its first year began on 11 July 552 of the Julian calendar, and to convert one adds 551. Sanjian, whose volume of colophons follows Xačikyan\'s chronology, is careful not to give the rule flat: the starting point of the era, he writes, is still a matter of debate. The preponderant view makes 552 the first year; a minority argues for 553, on the ground that the two-hundred-year cycle the Armenians had previously followed ran out in 552. What is worth noticing is that both parties still add 551 in practice, so the conversion is firmer than the theory beneath it. The convention used throughout this hall is the plain one: N + 551 gives the Julian year in which Armenian year N opened. Because that year is 365 days exactly and opens in July rather than January, it runs on into the following Julian year, and a colophon written in its later months belongs to 551 + N + 1 by our reckoning. Where the month is not given — and it usually is not — the single-year answer is the opening year, and claims no more than that. Drift there was, and a great deal of it. Armenia\'s own year was a wandering one: twelve months of thirty days with five epagomenal days, the Աւելեաց, appended after the twelfth, 365 exactly, with nothing to catch the missing quarter-day, so the Armenian new year slid backwards through the Julian calendar by a day every four years. By 1084 the 532-year Easter cycle had run out — 1084 − 551 = 533, which is 1 + 532, the cycle counted from the era\'s own first year — and Yovhannes Sarkawag fixed the first day of the year against the Julian calendar, at 11 August, and counted six epagomenal days instead of five in every fourth year. The count that begins from his reform is the Lesser Armenian Era, and a colophon may use either. Its conversion carries a convention of its own, which Sanjian states exactly: add 1083 to a date falling between 11 August and 31 December, and 1084 to one falling between 1 January and 10 August. What rescues the arithmetic is the scribes\' own habit of dating twice or three times over. Beside the Great Armenian Era a colophon will set one or another Era of the Creation, and Sanjian counts four in common Armenian use: the Imperial or Byzantine, from 5508 BC; the Septuagint, which began at 5200 but which Armenians generally reckoned from 5198; the Alexandrine, reckoned from 5423 but taken by Armenian sources at 5425; and the Armenian era of the seventh-century mathematician Anania Širakaci, from 5281. Two figures check each other, and where they disagree the disagreement is itself evidence. A colophon is called a յիշատակարան, a yišatakaran — a memorial, a monument — from the verb յիշեմ, to remember, to recollect, to record. Its business was never only the date.',
+        digits: [
+            {
+                glyph: 'Ա',
+                value: 1,
+                name: 'Ayb',
+                unicodeName: 'ARMENIAN CAPITAL LETTER AYB (U+0531)',
+            },
+            {
+                glyph: 'Բ',
+                value: 2,
+                name: 'Ben',
+                unicodeName: 'ARMENIAN CAPITAL LETTER BEN (U+0532)',
+            },
+            {
+                glyph: 'Գ',
+                value: 3,
+                name: 'Gim',
+                unicodeName: 'ARMENIAN CAPITAL LETTER GIM (U+0533)',
+            },
+            {
+                glyph: 'Դ',
+                value: 4,
+                name: 'Da',
+                unicodeName: 'ARMENIAN CAPITAL LETTER DA (U+0534)',
+            },
+            {
+                glyph: 'Ե',
+                value: 5,
+                name: 'Ečʻ',
+                unicodeName: 'ARMENIAN CAPITAL LETTER ECH (U+0535)',
+            },
+            {
+                glyph: 'Զ',
+                value: 6,
+                name: 'Za',
+                unicodeName: 'ARMENIAN CAPITAL LETTER ZA (U+0536)',
+            },
+            {
+                glyph: 'Է',
+                value: 7,
+                name: 'Ē',
+                unicodeName: 'ARMENIAN CAPITAL LETTER EH (U+0537) — the traditional name is Ē; Unicode\'s \'EH\' is not the letter Ե, whose Unicode name is ECH',
+            },
+            {
+                glyph: 'Ը',
+                value: 8,
+                name: 'Ətʻ',
+                unicodeName: 'ARMENIAN CAPITAL LETTER ET (U+0538)',
+            },
+            {
+                glyph: 'Թ',
+                value: 9,
+                name: 'Tʻo',
+                unicodeName: 'ARMENIAN CAPITAL LETTER TO (U+0539) — the aspirate tʻ, quite distinct from Տ, TIWN (U+054F), which is 4,000',
+            },
+            {
+                glyph: 'Ժ',
+                value: 10,
+                name: 'Žē',
+                unicodeName: 'ARMENIAN CAPITAL LETTER ZHE (U+053A)',
+            },
+            {
+                glyph: 'Ի',
+                value: 20,
+                name: 'Ini',
+                unicodeName: 'ARMENIAN CAPITAL LETTER INI (U+053B)',
+            },
+            {
+                glyph: 'Լ',
+                value: 30,
+                name: 'Liwn',
+                unicodeName: 'ARMENIAN CAPITAL LETTER LIWN (U+053C)',
+            },
+            {
+                glyph: 'Խ',
+                value: 40,
+                name: 'Xē',
+                unicodeName: 'ARMENIAN CAPITAL LETTER XEH (U+053D)',
+            },
+            {
+                glyph: 'Ծ',
+                value: 50,
+                name: 'Ca',
+                unicodeName: 'ARMENIAN CAPITAL LETTER CA (U+053E) — 50; its near-twin in the Unicode naming, Ց, CO (U+0551), is 6,000',
+            },
+            {
+                glyph: 'Կ',
+                value: 60,
+                name: 'Ken',
+                unicodeName: 'ARMENIAN CAPITAL LETTER KEN (U+053F)',
+            },
+            {
+                glyph: 'Հ',
+                value: 70,
+                name: 'Ho',
+                unicodeName: 'ARMENIAN CAPITAL LETTER HO (U+0540)',
+            },
+            {
+                glyph: 'Ձ',
+                value: 80,
+                name: 'Ja',
+                unicodeName: 'ARMENIAN CAPITAL LETTER JA (U+0541) — 80; Ջ, JHEH (U+054B), is 900',
+            },
+            {
+                glyph: 'Ղ',
+                value: 90,
+                name: 'Łat',
+                unicodeName: 'ARMENIAN CAPITAL LETTER GHAD (U+0542) — traditionally Łat or Ghat',
+            },
+            {
+                glyph: 'Ճ',
+                value: 100,
+                name: 'Čē',
+                unicodeName: 'ARMENIAN CAPITAL LETTER CHEH (U+0543) — 100; Չ, CHA (U+0549), is 700 and Ջ, JHEH (U+054B), is 900. Unicode\'s three CH- names are the likeliest place in this table to go wrong',
+            },
+            {
+                glyph: 'Մ',
+                value: 200,
+                name: 'Men',
+                unicodeName: 'ARMENIAN CAPITAL LETTER MEN (U+0544)',
+            },
+            {
+                glyph: 'Յ',
+                value: 300,
+                name: 'Yi',
+                unicodeName: 'ARMENIAN CAPITAL LETTER YI (U+0545) — 300; Ւ, YIWN (U+0552), is 7,000. Three letters of difference in the Unicode name, a factor of more than twenty in the value',
+            },
+            {
+                glyph: 'Ն',
+                value: 400,
+                name: 'Nu',
+                unicodeName: 'ARMENIAN CAPITAL LETTER NOW (U+0546) — traditionally Nu',
+            },
+            {
+                glyph: 'Շ',
+                value: 500,
+                name: 'Ša',
+                unicodeName: 'ARMENIAN CAPITAL LETTER SHA (U+0547)',
+            },
+            {
+                glyph: 'Ո',
+                value: 600,
+                name: 'Vo',
+                unicodeName: 'ARMENIAN CAPITAL LETTER VO (U+0548) — 600; followed by ւ it forms the digraph ու for u, which remains two letters and two values, never one',
+            },
+            {
+                glyph: 'Չ',
+                value: 700,
+                name: 'Čʻa',
+                unicodeName: 'ARMENIAN CAPITAL LETTER CHA (U+0549)',
+            },
+            {
+                glyph: 'Պ',
+                value: 800,
+                name: 'Pē',
+                unicodeName: 'ARMENIAN CAPITAL LETTER PEH (U+054A)',
+            },
+            {
+                glyph: 'Ջ',
+                value: 900,
+                name: 'J̌ē',
+                unicodeName: 'ARMENIAN CAPITAL LETTER JHEH (U+054B)',
+            },
+            {
+                glyph: 'Ռ',
+                value: 1000,
+                name: 'Ṙa',
+                unicodeName: 'ARMENIAN CAPITAL LETTER RA (U+054C) — the trilled ṙ; Ր, REH (U+0550), is 5,000',
+            },
+            {
+                glyph: 'Ս',
+                value: 2000,
+                name: 'Sē',
+                unicodeName: 'ARMENIAN CAPITAL LETTER SEH (U+054D)',
+            },
+            {
+                glyph: 'Վ',
+                value: 3000,
+                name: 'Vew',
+                unicodeName: 'ARMENIAN CAPITAL LETTER VEW (U+054E)',
+            },
+            {
+                glyph: 'Տ',
+                value: 4000,
+                name: 'Tiwn',
+                unicodeName: 'ARMENIAN CAPITAL LETTER TIWN (U+054F)',
+            },
+            {
+                glyph: 'Ր',
+                value: 5000,
+                name: 'Rē',
+                unicodeName: 'ARMENIAN CAPITAL LETTER REH (U+0550)',
+            },
+            {
+                glyph: 'Ց',
+                value: 6000,
+                name: 'Cʻo',
+                unicodeName: 'ARMENIAN CAPITAL LETTER CO (U+0551)',
+            },
+            {
+                glyph: 'Ւ',
+                value: 7000,
+                name: 'Hiwn',
+                unicodeName: 'ARMENIAN CAPITAL LETTER YIWN (U+0552) — traditionally Hiwn; 7,000, not to be taken for Յ, YI (U+0545), which is 300',
+            },
+            {
+                glyph: 'Փ',
+                value: 8000,
+                name: 'Pʻiwr',
+                unicodeName: 'ARMENIAN CAPITAL LETTER PIWR (U+0553)',
+            },
+            {
+                glyph: 'Ք',
+                value: 9000,
+                name: 'Kʻē',
+                unicodeName: 'ARMENIAN CAPITAL LETTER KEH (U+0554) — the last letter of Mashtots\'s order and the last value in it',
+            },
+        ],
+        examples: [
+            {
+                native: 'ԹՎ ՊՀԳ',
+                value: 873,
+                note: 'Պ (800) + Հ (70) + Գ (3) = 873. The two letters in front are not part of the sum: ԹՎ is the abbreviation for թուին, \'in the year\', with which a dated colophon opens, and it is read as a word, not counted. The year is not invented for the demonstration. At the monastery of Sanahin the scribes Lazar and Yohanes finished a Gospel and wrote that it was completed in the year 873 of the Haykazean Era, in which year there came a terrible plague, as an admonition for their sins; they fix it further by the reign of Alekʻsandr of Georgia and the rule in Armenia of the Turkmen Iskandar (Sanjian, Colophons of Armenian Manuscripts, 1301–1480: A Source for Middle Eastern History, under 1424, no. 3, from Xačikyan, XV Dari, I, no. 332, p. 315). 873 + 551 = 1424.',
+            },
+            {
+                native: 'ՉԿԲ',
+                value: 762,
+                note: 'Չ (700) + Կ (60) + Բ (2) = 762. The opening sign repays a second look, because the units and the hundreds are near neighbours in the ear and not at all in the eye: Չ, CHA, is 700, while Է, EH, is 7 — set the one for the other and 762 collapses to 69. Here the manuscript checks its own arithmetic. The scribe Stepʻanos, copying a portion of a Holy Bible, dated his work by two eras at once: 762 of the Haykazean Era, and 6821 of Adam in the Imperial or Byzantine reckoning from 5508 BC. Both resolve to the same year — 762 + 551 = 1313, and 6821 − 5508 = 1313 (Xačikyan, XIV Dari, no. 130b, p. 96, cited by Sanjian). The Byzantine subtraction carries a convention that ought to be stated rather than assumed: that year begins on 1 September, so Anno Mundi 6821 runs from 1 September 1312 to 31 August 1313, and subtracting 5508 names the Julian year of its January-to-August stretch — which is the stretch the two counts agree on. Double dating of this kind is common in the colophons, and it is the reason Armenian manuscript chronology is unusually firm: two independent counts, written by the same hand, on the same page.',
+            },
+            {
+                native: 'ՅԼԶ',
+                value: 336,
+                note: 'Յ (300) + Լ (30) + Զ (6) = 336; 336 + 551 = 887, the year of the Lazarian Gospel, now Matenadaran MS 6200 — the oldest complete dated Armenian manuscript to survive. Each word of that qualification is load-bearing: the Gospel of Queen Mlkʻe at San Lazzaro carries the earlier date of 862, but it is imperfect and its colophon has been argued over, so 887 remains the earliest year for which a whole dated Armenian book stands on a shelf. Three letters for a year, which is the whole economy of the system. Note the trap in the first sign: Յ is ARMENIAN CAPITAL LETTER YI and worth 300, while Ւ is ARMENIAN CAPITAL LETTER YIWN and worth 7,000.',
+            },
+            {
+                native: 'ՔՋՂԹ',
+                value: 9999,
+                note: 'Ք (9,000) + Ջ (900) + Ղ (90) + Թ (9) = 9,999: the ceiling of the four ranks, and the largest number the letters can write without a bar. Four signs, one from each rank, in descending order — the maximum any year needs. The Armenian era will not exhaust them until its year 9,999, which by the convention used here (N + 551) falls in 10,550 of our reckoning.',
+            },
+            {
+                native: 'Ա̅',
+                value: 10000,
+                note: 'Above the ceiling, Armenian raises a rank with a bar: a line drawn over a letter multiplies its value by ten thousand, so Ա̅ is 10,000 and Բ̅ is 20,000, with the unbarred letters resuming additively beneath — Բ̅ followed by Ր (5,000) gives 25,000. Honesty about the setting is owed here. The bar has no codepoint of its own, and what stands in this field is the Armenian letter followed by U+0305 COMBINING OVERLINE, a general-purpose mark borrowed from outside the Armenian block because the block offers nothing for the work. It is the one character in this hall\'s Armenian that is not Armenian, and it is a typographic makeshift for a stroke the scribes simply drew.',
+            },
+        ],
+        special: 'The bar is the mark to watch, because it does more than one job and looks much the same doing each. Drawn over a numeral it multiplies by ten thousand, as above. Drawn across the top of a word it is the patiw ՟ (U+055F ARMENIAN ABBREVIATION MARK), which signals a sacred contraction — ԱԾ standing for Աստուած, ՅՍ ՔՍ for Yisus Kʻristos — and in the manuscripts a line over letters is also, more loosely, what tells a reader that the letters are to be counted rather than sounded. Multiply, or contract, or simply \'this is a number\': only the context decides, and the hand that drew it did not always distinguish. Two further cautions for anyone setting Armenian numerals in type. The first is the sentence-end: Armenian closes with the verjaket ։ (U+0589 ARMENIAN FULL STOP), which on most screens is indistinguishable from the colon : (U+003A), and a file quietly retyped with the colon has stopped being Armenian without looking any different. The second is that the numeral letters are the majuscules; modern Armenian writes its ordinary figures with European digits and keeps the letters for ordinals — Գարեգին Բ. for Garegin II, Գ. գլուխ for chapter three — much as English keeps Roman numerals for the same offices. The old count survives, in other words, exactly where counting has become a form of naming.',
+    },
+    readings: [
+        {
+            title: 'In the Beginning Was the Word',
+            source: 'John 1:1 in Classical Armenian (Grabar), in the text of the Zohrab Bible — Աստուածաշունչ, Astuacašunčʻ, edited by Yovhannēs Zōhrapean, Venice, 1805, long the standard printed recension of the Armenian scriptures',
+            words: [
+                {
+                    native: 'Ի',
+                    translit: 'i',
+                    gloss: 'in, from (preposition, here with the ablative)',
+                },
+                {
+                    native: 'սկզբանէ',
+                    translit: 'skzbanē',
+                    gloss: 'beginning (ablative singular of սկիզբն)',
+                },
+                {
+                    native: 'էր',
+                    translit: 'ēr',
+                    gloss: 'was (third singular imperfect of եմ, \'to be\')',
+                },
+                {
+                    native: 'Բանն',
+                    translit: 'Bann',
+                    gloss: 'the Word (բան, \'word, speech, reason\', with the postposed definite article -ն)',
+                },
+                {
+                    native: 'եւ',
+                    translit: 'ew',
+                    gloss: 'and',
+                },
+                {
+                    native: 'Բանն',
+                    translit: 'Bann',
+                    gloss: 'the Word',
+                },
+                {
+                    native: 'էր',
+                    translit: 'ēr',
+                    gloss: 'was',
+                },
+                {
+                    native: 'առ',
+                    translit: 'aṙ',
+                    gloss: 'with, beside, unto (preposition with the accusative)',
+                },
+                {
+                    native: 'Աստուած',
+                    translit: 'Astuac',
+                    gloss: 'God',
+                },
+                {
+                    native: 'եւ',
+                    translit: 'ew',
+                    gloss: 'and',
+                },
+                {
+                    native: 'Աստուած',
+                    translit: 'Astuac',
+                    gloss: 'God',
+                },
+                {
+                    native: 'էր',
+                    translit: 'ēr',
+                    gloss: 'was',
+                },
+                {
+                    native: 'Բանն',
+                    translit: 'Bann',
+                    gloss: 'the Word',
+                },
+            ],
+            translation: 'In the beginning was the Word, and the Word was with God, and the Word was God.',
+            note: 'Thirteen words, three of them the same verb and three of them the same noun: the Armenian keeps the Greek\'s hammering repetition without softening it. Բան is a genuine equivalent of λόγος rather than a calque — it means word, speech, discourse and reason at once — and the translators reached for it without hesitation, which tells you how much philosophical Greek the fifth century had already digested. The article is the point of grammar to watch. Armenian has no separate word for \'the\'; it suffixes -ն, and here it is fixed on Բանն in all three clauses while Աստուած stands bare, so that the distinction the Greek draws in its third clause between ὁ λόγος and θεός falls out of Armenian\'s own machinery. It was Mathurin Veyssière de La Croze who called this version the queen of versions, long before anyone could set it systematically against the Greek witnesses, and modern criticism has been broadly kind to the compliment: the Armenian Gospels preserve readings of real weight. Behind them many scholars posit an earlier Armenian version made from Syriac, older than the Greek recension eventually followed — an argued reconstruction rather than a surviving book, and worth naming as such. Note also that the word for \'was\' here, էր, is written with Է — the letter that carries the value 7.',
+            grid: null,
+        },
+        {
+            title: 'Our Father Who Art in Heaven',
+            source: 'Matthew 6:9 in Classical Armenian; the Hayr mer, the Lord\'s Prayer of the Armenian Church',
+            words: [
+                {
+                    native: 'Հայր',
+                    translit: 'hayr',
+                    gloss: 'Father',
+                },
+                {
+                    native: 'մեր',
+                    translit: 'mer',
+                    gloss: 'our (possessive, following its noun, as Armenian prefers)',
+                },
+                {
+                    native: 'որ',
+                    translit: 'or',
+                    gloss: 'who (relative pronoun)',
+                },
+                {
+                    native: 'յերկինս',
+                    translit: 'yerkins',
+                    gloss: 'in the heavens (the preposition ի becomes յ before a vowel, with երկինս, accusative plural of երկին)',
+                },
+                {
+                    native: 'ես',
+                    translit: 'es',
+                    gloss: 'art (second singular present of եմ)',
+                },
+                {
+                    native: 'սուրբ',
+                    translit: 'surb',
+                    gloss: 'holy',
+                },
+                {
+                    native: 'եղիցի',
+                    translit: 'ełicʻi',
+                    gloss: 'let it become (third singular aorist subjunctive of լինիմ)',
+                },
+                {
+                    native: 'անուն',
+                    translit: 'anun',
+                    gloss: 'name',
+                },
+                {
+                    native: 'քո',
+                    translit: 'kʻo',
+                    gloss: 'thy',
+                },
+            ],
+            translation: 'Our Father who art in the heavens, holy be thy name.',
+            note: 'Grabar ceased to be spoken but never fell silent, and this is where a visitor hears it: the Divine Liturgy is still sung in the classical tongue, and this prayer has a settled place in the daily office and the liturgy alike. Three things in nine words repay attention. The possessives follow their nouns — hayr mer, anun kʻo — which is Armenian\'s ordinary order and gives the prayer its steady, unhurried tread. The preposition ի has become յ before the vowel of երկինս, a small automatic courtesy of the language that a beginner meets here first. And the plural \'heavens\' is the Greek\'s, kept faithfully: Armenian says in the heavens, not in heaven. That word, երկին, turns up again in the opening line of the oldest surviving Armenian song, where it stands beside the verb երկնէր, \'was in travail\'. The two are not related; the song\'s line is built on their accidental likeness of sound, which is a different and better trick.',
+            grid: null,
+        },
+        {
+            title: 'From the Depths of the Heart',
+            source: 'Grigor Narekatsi, Մատեան ողբերգութեան (Book of Lamentation), the rubric standing at the head of the work over Բան Ա and taken by tradition as a title for the whole; composed at the monastery of Narek near the south-eastern shore of Lake Van, c. 1002–1003',
+            words: [
+                {
+                    native: 'Ի',
+                    translit: 'i',
+                    gloss: 'from, out of (preposition with the ablative)',
+                },
+                {
+                    native: 'խորոց',
+                    translit: 'xorocʻ',
+                    gloss: 'the depths (ablative plural of խոր, \'deep\')',
+                },
+                {
+                    native: 'սրտից',
+                    translit: 'srticʻ',
+                    gloss: 'of the heart (genitive-ablative plural of սիրտ, \'heart\'; Armenian has the plural where English idiom takes the singular)',
+                },
+                {
+                    native: 'խաւսք',
+                    translit: 'xawskʻ',
+                    gloss: 'words, speech (plural; written խօսք in later orthography)',
+                },
+                {
+                    native: 'ընդ',
+                    translit: 'ənd',
+                    gloss: 'with',
+                },
+                {
+                    native: 'Աստուծոյ',
+                    translit: 'Astucoy',
+                    gloss: 'God (genitive-dative of Աստուած)',
+                },
+            ],
+            translation: 'Words with God from the depths of the heart.',
+            note: 'Ninety-five prayers stand under this heading, each called a Բան, and the first of them opens: Ձա՜յն հառաչանաց հեծութեան ողբոց սրտից աղաղակի, Քեզ վերընծայեմ, տեսողդ գաղտնեաց — the voice of the sighing of the groaning of the laments of the crying of hearts, I offer up to thee, who seest what is hidden. The rubric\'s սրտից is plural, hearts; the translation above takes the English singular and says so rather than pretending the grammar away. Two details of the writing are worth stopping over. The rubric spells \'words\' as խաւսք, with the diphthong աւ; later printing gives խօսք, and the letter Օ was added to the alphabet centuries after Mashtots precisely to carry that sound, so this one word shows why a thirty-six-letter alphabet became a thirty-eight-letter one. And in Ձա՜յն the exclamation mark sits inside the word, over the vowel of the stressed syllable, where every other European tradition would put it at the end of the clause: Armenian punctuates the breath rather than the sentence. That mark is an editor\'s, not the scribe\'s — the classical manuscripts do not point the line — but the convention it follows is Armenian to the bone. The book is known in Armenian households simply as the Narek, and it has been used as much as a healing text as a literary one, kept in the house and read over the sick — a use the tradition records, and one this hall reports rather than sets out. Pope Francis declared its author a Doctor of the Church on 12 April 2015.',
+            grid: null,
+        },
+        {
+            title: 'Heaven Was in Travail',
+            source: 'Movses Khorenatsi, Պատմութիւն Հայոց (History of the Armenians) I.31 (numbered I.32 in some editions), quoting a song he attributes to the singers of the wine-rich district of Goghtn',
+            words: [
+                {
+                    native: 'Երկնէր',
+                    translit: 'erknēr',
+                    gloss: 'was in travail, was in birth-pangs (third singular imperfect of երկնել)',
+                },
+                {
+                    native: 'երկին',
+                    translit: 'erkin',
+                    gloss: 'heaven, sky',
+                },
+                {
+                    native: 'երկնէր',
+                    translit: 'erknēr',
+                    gloss: 'was in travail',
+                },
+                {
+                    native: 'երկիր',
+                    translit: 'erkir',
+                    gloss: 'earth',
+                },
+                {
+                    native: 'երկնէր',
+                    translit: 'erknēr',
+                    gloss: 'was in travail',
+                },
+                {
+                    native: 'եւ',
+                    translit: 'ew',
+                    gloss: 'and, also',
+                },
+                {
+                    native: 'ծովն',
+                    translit: 'covn',
+                    gloss: 'the sea (ծով with the article -ն)',
+                },
+                {
+                    native: 'ծիրանի',
+                    translit: 'cirani',
+                    gloss: 'purple, crimson',
+                },
+            ],
+            translation: 'Heaven was in travail, earth was in travail, the crimson sea too was in travail.',
+            note: 'This is the one substantial survival of pre-Christian Armenian verse. Khorenatsi preserves shorter snatches elsewhere — of Artashes and Satenik, of Artavazd — but nothing else at this length, and nothing else that is a hymn to a god. The song runs on: the sea in labour with the little red reed; through the reed\'s stalk smoke rising, through the reed\'s stalk flame rising — ընդ եղեգան փող ծուխ ելանէր, ընդ եղեգան փող բոց ելանէր — and out of the flame a flaxen-haired boy running, who had hair of fire and a beard of flame, and whose eyes were suns. The historian adds, in his own voice, that he heard this sung to the փանդիռ with his own ears. What survives, then, survives because a Christian writer composing the national history thought a pagan birth-song worth setting down, and because the men of Goghtn were still singing it when he passed through. That last sentence carries an argued attribution and should be read as one: the History presents its author as a fifth-century pupil of Mashtots, and Armenian tradition has always held him so, but a substantial body of modern scholarship dates the work to the eighth century, which would put a long stretch between the singing and the ear that claims to have heard it. The song\'s own antiquity is not in doubt. Vahagn is the Armenian form of a name shared with Iranian Vərəθraγna, and his epithet is վիշապաքաղ, dragon-reaper; Khorenatsi notes that the singers also gave him battles with dragons very like the labours of Heracles. No translation carries the sound of the first line, which turns entirely on assonance: erknēr, erkin, erkir — travail, heaven, earth, three words that in Armenian are almost one and etymologically are not one at all. Printed editions differ in small things; here the digraph is set as եւ, which modern typography and several editions contract to the ligature և, and the reed\'s stalk is փող, where one widely circulated text has փոխ.',
+            grid: null,
+        },
+        {
+            title: 'In the Name of the Father',
+            source: 'The trinitarian doxology of the Armenian Church, and the formula with which an Armenian hmayil — the amulet-scroll — commonly opens',
+            words: [
+                {
+                    native: 'Յանուն',
+                    translit: 'yanun',
+                    gloss: 'in the name (the preposition ի in its pre-vocalic form յ, prefixed to անուն, \'name\')',
+                },
+                {
+                    native: 'Հօր',
+                    translit: 'hōr',
+                    gloss: 'of the Father (genitive of հայր)',
+                },
+                {
+                    native: 'եւ',
+                    translit: 'ew',
+                    gloss: 'and',
+                },
+                {
+                    native: 'Որդւոյ',
+                    translit: 'ordwoy',
+                    gloss: 'of the Son (genitive of որդի)',
+                },
+                {
+                    native: 'եւ',
+                    translit: 'ew',
+                    gloss: 'and',
+                },
+                {
+                    native: 'Հոգւոյն',
+                    translit: 'hogwoyn',
+                    gloss: 'of the Spirit (genitive of հոգի, with the article -ն)',
+                },
+                {
+                    native: 'Սրբոյ',
+                    translit: 'srboy',
+                    gloss: 'Holy (genitive of սուրբ, agreeing with Հոգւոյն)',
+                },
+                {
+                    native: 'ամէն',
+                    translit: 'amēn',
+                    gloss: 'amen',
+                },
+            ],
+            translation: 'In the name of the Father and of the Son and of the Holy Spirit. Amen.',
+            note: 'The hmayil is a genre, and it is the genre rather than its contents that this hall sets out. The word comes, on James R. Russell\'s account, from Arabic ḥamāʾil; the object is a scroll of parchment or paper often no more than a few inches wide and running when unrolled to several metres and occasionally a good deal more, carrying prayers, psalms, gospel passages, sharakans, the conversion narrative and prayer attributed to Cyprian, and matter against the demons, interleaved with ranks of painted angels and saints. They were carried on the person or kept at home, and were especially prized by travellers; they were popular from roughly the fifteenth century into the nineteenth, with the richly illuminated form coming in from the seventeenth, and they were printed as well as copied. Russell has written the fullest account of them in English, and modern facsimile editions of individual scrolls have begun to appear; this hall names no single edition, having been unable to check one to the standard it holds itself to. What is glossed above is the doxology at the head of such a scroll, which is also the ordinary opening of Armenian prayer; the operative formulae a hmayil goes on to carry are described here and not set out. That is a deliberate line. These scrolls belong to a devotion that is still living, and a hall may point at a thing without handing it over.',
+            grid: null,
+        },
+        {
+            title: 'To Know Wisdom',
+            source: 'Proverbs 1:2 in Classical Armenian — the sentence Koriwn reports as the first written in the new alphabet; Koriwn, Վարք Մաշտոցի (Life of Mashtots), composed soon after Mashtots\'s death in 440 and the earliest original work in the Armenian language',
+            words: [
+                {
+                    native: 'Ճանաչել',
+                    translit: 'čanačʻel',
+                    gloss: 'to know, to recognise (infinitive)',
+                },
+                {
+                    native: 'զիմաստութիւն',
+                    translit: 'zimastutʻiwn',
+                    gloss: 'wisdom (accusative, with the object-marking prefix զ-)',
+                },
+                {
+                    native: 'եւ',
+                    translit: 'ew',
+                    gloss: 'and',
+                },
+                {
+                    native: 'զխրատ',
+                    translit: 'zxrat',
+                    gloss: 'instruction, discipline (accusative with զ-)',
+                },
+                {
+                    native: 'իմանալ',
+                    translit: 'imanal',
+                    gloss: 'to understand (infinitive)',
+                },
+                {
+                    native: 'զբանս',
+                    translit: 'zbans',
+                    gloss: 'words (accusative plural with զ-)',
+                },
+                {
+                    native: 'հանճարոյ',
+                    translit: 'hančaroy',
+                    gloss: 'of understanding, of prudence (genitive of հանճար)',
+                },
+            ],
+            translation: 'To know wisdom and instruction, to understand words of understanding.',
+            note: 'Koriwn was Mashtots\'s own pupil, and his Life is the first original composition in Armenian — so the language\'s first book is a biography of the man who made its letters, written by someone who watched him do it. According to that book the letters were tried out on this verse, and the choice is not neutral: an alphabet invented so that scripture should be heard in Armenian begins by writing down a definition of what learning is for. Three of the seven words carry the prefix զ-, the particle that marks a definite direct object. Greek and Latin have nothing corresponding to it, and learning to see it is one of the first disciplines of reading Grabar. The noun բան here, in the plural զբանս, is the same word that opens the Gospel of John: words of understanding, and the Word that was in the beginning. And the sentence opens on Ճ — the letter that carries the value 100.',
+            grid: null,
+        },
+    ],
+    correspondences: null,
+};

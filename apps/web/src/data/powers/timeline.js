@@ -1,0 +1,207 @@
+// powers/timeline — the long argument about who is in the air. Every event
+// carries a dating note, because in this portal the dates are the argument:
+// the gap between a tradition's reckoning and the scholars' is often the
+// most interesting thing on the line.
+export default {
+    note: 'From the first divine name pressed into clay to the daimon’s modern recovery. Where a tradition dates an event differently from the scholarship, both are given and each is named.',
+    events: [
+        {
+            slug: 'first-divine-names', title: 'The first written gods', native: '𒀭',
+            kind: 'text', year: -3200, end: null, circa: true, circaEnd: false,
+            description: 'Proto-cuneiform tablets from Uruk carry the star-sign before certain names: the first time in human history that divinity is marked in writing.',
+            dating: 'Archaeological, from the Eanna precinct’s Uruk IV levels; the absolute dates rest on stratigraphy and are given as approximate by the excavators themselves.',
+        },
+        {
+            slug: 'pyramid-texts', title: 'The Pyramid Texts', native: '𓊹',
+            kind: 'text', year: -2350, end: null, circa: true, circaEnd: false,
+            description: 'Carved in the burial chambers at Saqqara: the oldest substantial religious literature in the world, full of gods, hostile powers, and the spells for passing them.',
+            dating: 'Fifth and Sixth Dynasty by Egyptian chronology; the conventional dates rest on the king lists cross-checked against astronomical notices, with a margin of decades.',
+        },
+        {
+            slug: 'enheduanna', title: 'Enheduanna signs a hymn', native: null,
+            kind: 'text', year: -2300, end: null, circa: true, circaEnd: false,
+            description: 'The daughter of Sargon, high priestess at Ur, composes the Exaltation of Inanna and names herself in it — the first author in history to sign a work, and the work is a hymn to a goddess.',
+            dating: 'By the reign of Sargon of Akkad, itself dated on the middle chronology; the surviving copies are Old Babylonian school texts some five centuries later, which some scholars weigh against the attribution.',
+        },
+        {
+            slug: 'baal-cycle', title: 'The Baal Cycle written at Ugarit', native: null,
+            kind: 'text', year: -1350, end: null, circa: true, circaEnd: false,
+            description: 'The scribe Ilimilku records the storm-god’s war with Sea and Death on tablets that will lie unread until 1929.',
+            dating: 'From the scribal colophon naming Ilimilku and his king; the tablets’ archaeological context in the destruction level anchors the terminus.',
+        },
+        {
+            slug: 'zarathustra', title: 'Zarathustra and the daeva inversion', native: null,
+            kind: 'reform', year: -1000, end: null, circa: true, circaEnd: false,
+            description: 'The Gathas set Ahura Mazda and the Bounteous Immortals against the daevas — and turn a shared Indo-Iranian word for “god” into the name for a demon.',
+            dating: 'The widest dispute in this portal: linguistic comparison with Vedic Sanskrit puts the Old Avestan hymns near 1000 BCE or earlier, while the Zoroastrian tradition’s own reckoning — “258 years before Alexander” — gives the sixth century. Both positions are held by serious scholars; the line is drawn at the linguistic date and the traditional one is stated here.',
+        },
+        {
+            slug: 'isaiah-seraphim', title: 'Isaiah sees the seraphim', native: 'שרפים',
+            kind: 'vision', year: -740, end: null, circa: true, circaEnd: false,
+            description: 'Above the throne stand the burning ones, six-winged, calling holy to one another — the only place in the Hebrew Bible where the word names beings of the court.',
+            dating: 'The vision is dated in the text itself to the year King Uzziah died, conventionally 740 BCE; the composition of the chapter is dated variously, and the passage is generally taken as belonging to the prophet’s own material.',
+        },
+        {
+            slug: 'hesiod-daimones', title: 'Hesiod names the guardians', native: 'δαίμονες',
+            kind: 'text', year: -700, end: null, circa: true, circaEnd: false,
+            description: 'Works and Days describes the golden race become daimones — pure spirits, givers of wealth, watching over justice, clothed in mist. The word’s highest moment.',
+            dating: 'Conventional dating of Hesiod to around 700 BCE on linguistic and historical grounds; ancient sources place him near Homer without agreeing which came first.',
+        },
+        {
+            slug: 'ezekiel-chariot', title: 'Ezekiel’s chariot', native: 'מרכבה',
+            kind: 'vision', year: -593, end: null, circa: true, circaEnd: false,
+            description: 'By the river Chebar in exile: the four living creatures, the wheels full of eyes, the likeness of a throne. Every later Jewish mystical tradition of ascent takes this chapter as its charter.',
+            dating: 'The book dates the vision precisely to the fifth year of Jehoiachin’s exile; the correspondence to the Babylonian records makes this among the more securely dated visions in scripture.',
+        },
+        {
+            slug: 'socrates-sign', title: 'The trial of Socrates', native: 'δαιμόνιον',
+            kind: 'event', year: -399, end: null, circa: false, circaEnd: false,
+            description: 'Athens condemns him partly for “introducing new daimonia” — and he tells the jury his own inner sign, which only ever forbids, has been silent all morning.',
+            dating: 'Fixed by the Athenian archon list; one of the few securely dated events in this timeline.',
+        },
+        {
+            slug: 'symposium', title: 'Diotima defines the middle', native: null,
+            kind: 'text', year: -385, end: null, circa: true, circaEnd: false,
+            description: 'In the Symposium the daimonic is given its charter: between god and mortal, carrying prayers up and answers down, binding the universe together because the divine does not mix with the human directly.',
+            dating: 'Composition of the dialogue is placed in the 380s BCE on stylistic grounds; the dramatic date is 416.',
+        },
+        {
+            slug: 'book-of-watchers-w', title: 'The Watchers fall', native: 'עירין',
+            kind: 'text', year: -300, end: null, circa: true, circaEnd: false,
+            description: 'Two hundred angels descend on Hermon, teach the forbidden arts, father the giants — and the ghosts of the giants become the evil spirits of the world. Western demonology has its origin story.',
+            dating: 'The Aramaic manuscripts from Qumran cave 4 are palaeographically dated to the second century BCE, which places composition in the third at the latest.',
+        },
+        {
+            slug: 'septuagint-daimonia', title: 'A translator writes daimonia', native: 'δαιμόνια',
+            kind: 'text', year: -200, end: null, circa: true, circaEnd: false,
+            description: 'Rendering the psalms into Greek, the Alexandrian translators use daimonia for the gods of the nations — the single lexical choice that turns Hesiod’s guardians into the enemy.',
+            dating: 'The Torah was translated in the third century BCE by the Letter of Aristeas’ account; the Psalms followed, and the second century is the usual estimate. The Letter itself is legendary in its details, which scholars have known since Humphrey Hody in 1685.',
+        },
+        {
+            slug: 'sabbath-songs', title: 'The Songs of the Sabbath Sacrifice', native: null,
+            kind: 'text', year: -100, end: null, circa: true, circaEnd: false,
+            description: 'At Qumran, thirteen songs walk the congregation through the heavenly temple and its seven priesthoods: the community prays in one choir with the angels.',
+            dating: 'Palaeographic dating of the Qumran copies to the first century BCE; a copy found at Masada shows the text circulated beyond the settlement.',
+        },
+        {
+            slug: 'apocryphon-john-w', title: 'The archons named', native: null,
+            kind: 'text', year: 180, end: null, circa: true, circaEnd: false,
+            description: 'The Apocryphon of John gives the gnostic cosmos its fullest form: Sophia’s solitary act, the blind maker’s boast, and the answer from above — “you are mistaken, Samael.”',
+            dating: 'Irenaeus knows a version around 180, which fixes the terminus ante quem; the surviving Coptic copies are fourth-century.',
+        },
+        {
+            slug: 'magical-papyri-w', title: 'The magical papyri at work', native: null,
+            kind: 'text', year: 200, end: 400, circa: true, circaEnd: true,
+            description: 'Greek, Egyptian and Jewish divine names share a page in working spellbooks: Iao, Abrasax, Osiris and Helios summoned in a single breath by practitioners indifferent to whose theology was offended.',
+            dating: 'The surviving manuscripts range from the second century BCE to the fifth CE; the great Theban cache’s exact provenance was obscured by the nineteenth-century antiquities trade.',
+        },
+        {
+            slug: 'de-mysteriis-w', title: 'Iamblichus defends the daimones', native: null,
+            kind: 'text', year: 300, end: null, circa: true, circaEnd: false,
+            description: 'Answering Porphyry, the De mysteriis sets out the classes of divine beings and argues that rite, not argument alone, raises the soul — late paganism’s manifesto.',
+            dating: 'Placed around 300 CE from Iamblichus’ career; the work circulated anonymously as the “Reply of Abamon” and was attributed to him by Proclus.',
+        },
+        {
+            slug: 'laodicea-canon', title: 'A council forbids angel-worship', native: null,
+            kind: 'council', year: 364, end: null, circa: true, circaEnd: false,
+            description: 'Canon 35 of Laodicea condemns those who leave the church to invoke angels — evidence, by its own prohibition, of how widespread the practice had become.',
+            dating: 'The synod is usually placed between 363 and 364; its canons circulated widely and their exact date is inferred rather than recorded.',
+        },
+        {
+            slug: 'dionysius-hierarchy', title: 'The nine choirs fixed', native: 'ἱεραρχία',
+            kind: 'text', year: 500, end: null, circa: true, circaEnd: false,
+            description: 'The Celestial Hierarchy arranges the angels in three triads, coins the word hierarchy to describe it, and — under an apostolic pseudonym — settles Christian angelology for a thousand years.',
+            dating: 'First cited at the Constantinople colloquy of 532, and dependent on Proclus (d. 485), which brackets composition to around 500. The apostolic attribution was demolished by Valla and Erasmus in the fifteenth and sixteenth centuries.',
+        },
+        {
+            slug: 'philae-close', title: 'The last Egyptian temple closes', native: null,
+            kind: 'event', year: 537, end: null, circa: true, circaEnd: false,
+            description: 'Justinian’s officers close Philae and remove the statues. The gods of the Two Lands had been receiving offerings for three and a half thousand years.',
+            dating: 'Procopius reports the closure under Justinian; the precise year is debated within a decade or so of 537.',
+        },
+        {
+            slug: 'quran-jinn', title: 'The jinn keep their standing', native: 'جن',
+            kind: 'text', year: 632, end: null, circa: false, circaEnd: false,
+            description: 'The Quran preserves the middle world rather than demonizing it: the jinn are created of smokeless fire, morally accountable, and given a sura of their own — and Iblis is one of them, not a fallen angel.',
+            dating: 'The year of the Prophet’s death, by which the revelation is complete; the standard codex follows within two decades under ʿUthman.',
+        },
+        {
+            slug: 'kojiki-w', title: 'Kojiki presented to the court', native: '古事記',
+            kind: 'text', year: 712, end: null, circa: false, circaEnd: false,
+            description: 'Japan’s oldest book records the kami of the creation, the sun goddess in her cave, and the imperial descent — a pantheon and a political charter in one volume.',
+            dating: 'Dated by its own preface to the fifth year of Wadō; the Nihon Shoki follows in 720 with variant versions given side by side.',
+        },
+        {
+            slug: 'rome-745', title: 'Rome strikes the angel names', native: null,
+            kind: 'council', year: 745, end: null, circa: false, circaEnd: false,
+            description: 'A Roman synod under Pope Zachary, alarmed at angel-magic, limits the names that may be invoked to Michael, Gabriel and Raphael — and Uriel loses his Western standing while keeping it in the East.',
+            dating: 'The synod’s acts are preserved in the correspondence surrounding Aldebert; the list of proscribed names is recorded there.',
+        },
+        {
+            slug: 'hekhalot-redaction', title: 'The palaces are written down', native: 'היכלות',
+            kind: 'text', year: 800, end: null, circa: true, circaEnd: false,
+            description: 'The hekhalot texts take their surviving shape: seven palaces, gatekeepers demanding seals, and Enoch enthroned as Metatron — with the warning about the heretic who saw him seated kept inside the text.',
+            dating: 'Redaction is placed between the fifth and ninth centuries; the texts attribute themselves to second-century rabbis, and Schäfer’s manuscript work showed there are no stable “books” to date in the first place.',
+        },
+        {
+            slug: 'ficino-hermetica', title: 'Ficino translates the Hermetica', native: null,
+            kind: 'text', year: 1463, end: null, circa: false, circaEnd: false,
+            description: 'At Cosimo de’ Medici’s insistence, Plato waits: the Corpus Hermeticum is Latinized first, in the belief that Hermes Trismegistus was Moses’ contemporary. The Renaissance revival of the powers begins here.',
+            dating: 'Firmly dated by Ficino’s correspondence. The belief in the corpus’s Egyptian antiquity was demolished by Isaac Casaubon in 1614, who showed on linguistic grounds that the texts are of the Roman period.',
+        },
+        {
+            slug: 'pico-theses', title: 'Pico’s nine hundred theses', native: null,
+            kind: 'text', year: 1486, end: null, circa: false, circaEnd: false,
+            description: 'The young count proposes, among nine hundred propositions, that no science better proves Christ’s divinity than magic and Kabbalah. Thirteen are condemned; the Oration prefacing them becomes a manifesto of ascent.',
+            dating: 'Printed in December 1486; the papal commission’s condemnation followed in 1487, and Pico’s Apologia in 1487.',
+        },
+        {
+            slug: 'weyer-catalogue', title: 'Weyer prints the demons — for mercy',
+            native: null, kind: 'text', year: 1577, end: null, circa: false, circaEnd: false,
+            description: 'The Pseudomonarchia daemonum lists sixty-nine spirits with their ranks and legions, inside a book arguing that women accused of witchcraft are ill rather than guilty. The catalogue outlived the argument and became the Goetia.',
+            dating: 'Printed as an appendix to the 1577 edition of De praestigiis daemonum; the underlying material is older manuscript tradition.',
+        },
+        {
+            slug: 'dee-sessions', title: 'Dee and Kelley begin', native: null,
+            kind: 'event', year: 1582, end: 1587, circa: false, circaEnd: false,
+            description: 'Five years of recorded sessions produce an angelic language, the Watchtowers, the ninety-one governors and the Calls of the Aethyrs — minuted with a scholar’s precision, hour by hour.',
+            dating: 'Dated from Dee’s own diaries, which record each session’s date and participants; among the best-documented magical operations in European history.',
+        },
+        {
+            slug: 'casaubon-hermetica', title: 'Casaubon dates the Hermetica', native: null,
+            kind: 'event', year: 1614, end: null, circa: false, circaEnd: false,
+            description: 'Philology cuts the ground from under the Renaissance revival: the Hermetic texts are shown to be Roman-era Greek, not Egyptian antiquity — and the esoteric tradition carries on regardless.',
+            dating: 'Published in Casaubon’s De rebus sacris et ecclesiasticis exercitationes XVI (1614); the conclusion has stood, though scholars now allow older Egyptian material inside the Greek.',
+        },
+        {
+            slug: 'golden-dawn-enochian', title: 'The Golden Dawn rebuilds the Watchtowers', native: null,
+            kind: 'event', year: 1888, end: 1900, circa: false, circaEnd: true,
+            description: 'Dee’s manuscripts, printed to discredit them, become the basis of the most elaborate practical angelology of the modern West — worked in a London order whose members included Yeats.',
+            dating: 'The order is founded in 1888; the Enochian material is developed through the 1890s, and the order fragments after 1900.',
+        },
+        {
+            slug: 'seven-sermons', title: 'Jung writes as Basilides', native: 'Αβρασαξ',
+            kind: 'text', year: 1916, end: null, circa: false, circaEnd: false,
+            description: 'The Seven Sermons to the Dead, privately printed and attributed to a second-century gnostic, put Abraxas at the centre — and the daimonic re-enters modern conversation through psychology rather than theology.',
+            dating: 'Written and privately printed in 1916; the fuller record in the Red Book was withheld until 2009 by the family’s decision.',
+        },
+        {
+            slug: 'nag-hammadi-find', title: 'The jar at Nag Hammadi', native: null,
+            kind: 'event', year: 1945, end: null, circa: false, circaEnd: false,
+            description: 'Farmers digging for fertilizer break open a sealed jar containing thirteen codices. The aeons and archons speak in their own voices for the first time in sixteen centuries.',
+            dating: 'December 1945 by the finders’ accounts, collected decades later; some details of the discovery story are disputed by scholars who have re-interviewed the participants.',
+        },
+        {
+            slug: 'qumran-find', title: 'The caves at Qumran', native: null,
+            kind: 'event', year: 1947, end: 1956, circa: false, circaEnd: false,
+            description: 'Eleven caves yield the Aramaic Enoch, the angelic sabbath songs, the War Scroll’s armies of light — and the working angelology of Judaism in the century before the Gospels.',
+            dating: 'The first cave is found in 1947 and the eleventh in 1956; publication of the full corpus took another four decades, and the delay is itself a chapter of the field’s history.',
+        },
+        {
+            slug: 'red-book', title: 'The Red Book published', native: null,
+            kind: 'text', year: 2009, end: null, circa: false, circaEnd: false,
+            description: 'Jung’s illuminated record of his confrontations with the figures he insisted he had not invented finally appears — and the argument about what the daimonic is resumes with the evidence on the table.',
+            dating: 'Published October 2009 after decades of family deliberation; the manuscript was written between 1913 and about 1930.',
+        },
+    ],
+};

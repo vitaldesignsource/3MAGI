@@ -1,0 +1,593 @@
+// Classical Chinese corpus — the Daoist Canon.
+// Every link verified; a null contents field means the divisions could
+// not be confirmed, not that the work has none.
+export default {
+    note: 'Audit complete. Thirteen works, all schema fields preserved. Every Chinese character was passed through unicodedata.name(): 465 distinct graphs, all CJK Unified Ideographs or permitted CJK punctuation, traditional throughout, with the six simplified graphs occurring only inside passages that explicitly label them as such. All 34 edition URLs return 200 with the effective URL matching the requested one, and every ctext resource number was opened and its title read to confirm it holds the text claimed. Wilhelm/Baynes appears nowhere as a link and only in a statement that it remains in copyright. The Daodejing entry states the Mawangdui reversal correctly: both silk manuscripts place De before Dao. Thirty corrections were made; the three that matter most are a dead Suwen link that redirected to the ctext homepage, a Cantong qi contents array whose three juan ranges were all wrong, and a Carus edition whose linked volume was an English-only extract rather than the parallel Chinese-English text the note described. Nothing operative appears anywhere in the corpus: the Dadong zhenjing\'s recitation instructions and the Baopuzi\'s elixir chapters are named and described but no procedure, proportion, apparatus, breath-count, posture or invocation is reproduced.',
+    works: [
+        {
+            slug: 'daode-jing',
+            native: '道德經',
+            translit: 'Dàodé jīng',
+            english: 'The Classic of the Way and Its Power',
+            author: 'Attributed to 老子 Lǎozǐ (Lao Tzu), \'the Old Master\' — a name that is a title rather than a name. The earliest biography, in Sima Qian\'s Shiji (c. 100 BCE), is already an admission of ignorance: it offers Li Er 李耳, styled Lao Dan 老聃, an archivist of Zhou whom Confucius is said to have consulted; then Lao Laizi 老萊子, a contemporary of Confucius who also wrote a book; then the Grand Scribe Dan 太史儋, who lived a century and a half later. Sima Qian declines to decide. The text itself names no one, and its rhymed, aphoristic, frequently self-contradicting surface reads as an accretion of sayings rather than the work of one hand.',
+            date: 'The received text was fixed by the third century CE in the recensions carrying the commentaries of Wang Bi 王弼 (226–249) and of the semi-legendary Heshang Gong 河上公. Behind it lies a manuscript record that has been transformed since 1973. The Mawangdui 馬王堆 silk manuscripts from Tomb 3 at Changsha, sealed in 168 BCE, give two nearly complete copies, A and B. The Guodian 郭店 bamboo slips from Tomb 1 at Jingmen, Hubei, excavated in 1993 and dated to about 300 BCE, give roughly two thousand graphs of Laozi material in three bundles, corresponding to portions of some thirty-one of the received chapters — the oldest witness to the text by two centuries. A further Han bamboo Laozi in the Peking University collection, donated to the university in 2009 and reaching it from the antiquities market rather than from an excavation, is dated to the second century BCE; that unprovenanced status is a genuine methodological problem and is noted here rather than passed over.',
+            language: 'Classical Chinese (文言), in rhymed and largely tetrasyllabic aphorism',
+            volume: 'The Ancestral Books',
+            description: 'Five thousand-odd characters — the Dàodé jīng (Tao Te Ching in the older romanisation) — and by most counts the most translated book in the world after the Bible, and translated so variously that two versions of the same chapter frequently share no sentence. Its subject is dào 道, the way things go, which cannot be named without ceasing to be itself; and dé 德, the power or integrity that accrues to whatever accords with it. Its political programme is wúwéi 無為, non-coercive action, government that does not grind; its images are the uncarved block, the valley, water, the female, the empty hub that makes the wheel useful. For the tradition on this shelf the book is not primarily philosophy. Laozi was deified as Taishang Laojun 太上老君, the Most High Lord Lao, and the Daode jing became a revealed scripture: the Xiang\'er 想爾 commentary from Dunhuang reads it as the instruction of a god to the early Celestial Masters community, and the internal alchemists read it, a millennium later, as a manual of the body. That a text can be read as metaphysics, as statecraft, as scripture and as physiology, by people who were in earnest about each, is the first thing this hall has to teach.',
+            incipit: {
+                native: '道可道，非常道。名可名，非常名。',
+                english: 'A way that can be spoken of is not the constant Way; a name that can be named is not the constant name.',
+                note: 'Chapter 1 in the received Wang Bi text. The Mawangdui silks read 恆 héng, \'constant\', where the received text has 常 cháng — the substitution was forced by the naming taboo on the personal name of Emperor Wen of Han, Liu Heng 劉恆 (r. 180–157 BCE). A single avoided character thus dates a whole family of manuscripts, and the word the received text has lost is the sharper of the two.',
+            },
+            contents: [
+                {
+                    heading: '道經 Dào jīng',
+                    english: 'Chapters 1–37, the \'Classic of the Way\', so called because it opens with the word dào. Chiefly cosmological and apophatic.',
+                },
+                {
+                    heading: '德經 Dé jīng',
+                    english: 'Chapters 38–81, the \'Classic of Power\', so called because it opens with the word dé. Chiefly ethical and political, though the division is loose and neither half is pure.',
+                },
+            ],
+            contentsNote: 'The two-part division is old and the titles are simply taken from each half\'s first word — but the order is not stable. Both Mawangdui manuscripts put the Dé section first, giving a De–Dao jing rather than a Dao–De jing, and the Han Feizi\'s early citations follow the same sequence; the received order may be a later inversion, and \'Daode jing\' may therefore name the book backwards. The eighty-one-chapter division is not marked in the Mawangdui silks at all, and its numerological tidiness — nine nines — suggests an editor rather than an author. The Guodian slips are not a shorter Laozi in the received order but three separate bundles whose contents interleave with the received chapters in no discernible sequence, which is why the question of whether they represent an early Laozi or the raw material from which one was later made remains genuinely open.',
+            editions: [
+                {
+                    label: 'Chinese Text Project — 道德經 with Legge\'s translation in parallel',
+                    url: 'https://ctext.org/dao-de-jing',
+                    note: 'The received text chapter by chapter, each character clickable to a dictionary entry, with James Legge\'s 1891 English beside it — the page names Legge as its translator, so what the reader gets is a genuine public-domain version and not a machine rendering. The most useful single page for reading the Chinese and an English version together.',
+                },
+                {
+                    label: 'Legge, The Texts of Tâoism, Part I (Sacred Books of the East XXXIX, Oxford, 1891)',
+                    url: 'https://archive.org/details/wg939',
+                    note: 'Legge\'s Tâo Teh King complete, with a long introduction that argues out the authenticity question as it stood before any manuscript was found. Also carries Kwang-3ze (Zhuangzi) books I–XVII.',
+                },
+                {
+                    label: 'Carus, Lao-Tze\'s Tao-Teh-King: Chinese-English, with Introduction, Transliteration and Notes (Chicago: Open Court, 1898)',
+                    url: 'https://archive.org/details/laotzestaotehkin00laoz',
+                    note: 'Paul Carus prints the Chinese text, a transliteration and a very literal English rendering in parallel — clumsy as literature, but it lets a reader without Chinese see exactly which graph is being made to carry which English word. Note that Carus\'s better-known Canon of Reason and Virtue (1913) is not this book: its own foreword calls it an extract from the larger work, and it carries the English alone.',
+                },
+                {
+                    label: 'Chinese Text Project — 郭店楚墓竹簡, the Guodian bamboo slips',
+                    url: 'https://ctext.org/wiki.pl?if=en&res=990316',
+                    note: 'The transcribed Guodian corpus, whose first item is the Laozi in its three bundles 甲, 乙 and 丙. The other texts in the tomb — the Taiyi shengshui, the Ziyi, the Wuxing — are worth reading beside it as the intellectual company the book kept in about 300 BCE.',
+                },
+            ],
+        },
+        {
+            slug: 'zhuangzi',
+            native: '莊子',
+            translit: 'Zhuāngzǐ',
+            english: 'The Book of Master Zhuang',
+            author: '莊周 Zhuāng Zhōu (Chuang Chou), conventionally c. 369–286 BCE, of whom almost nothing is known beyond a short and partly anecdotal Shiji notice placing him as a minor official at Meng in the state of Song. The seven Inner Chapters (內篇) are generally accepted as substantially his; the fifteen Outer (外篇) and eleven Miscellaneous (雜篇) are the work of later writers of several distinct persuasions, which A. C. Graham influentially sorted into a Primitivist, a Yangist and a Syncretist stratum. The book as we have it is a school, not a man.',
+            date: 'Composition from the late fourth to the second century BCE. The received text of thirty-three chapters is the recension of Guo Xiang 郭象 (d. 312 CE), who cut down a fifty-two-chapter version — the figure given in the Han shu bibliographic treatise — discarding what he judged spurious. Lu Deming\'s preface to the Jingdian shiwen reports that the fifty-two-chapter text stood at seven Inner, twenty-eight Outer, fourteen Miscellaneous and three \'Explanations\'. What Guo Xiang threw away is lost; some of it may have been the best of it.',
+            language: 'Classical Chinese, in the most inventive prose the language possesses — fable, dialogue, mock-logic and sustained rhapsody',
+            volume: 'The Ancestral Books',
+            description: 'The Daode jing states; the Zhuangzi (Chuang Tzu) argues, mocks, and tells stories. Its recurring move is to unsettle the standpoint from which a judgement is made: the great bird and the cicada who cannot conceive of its flight; the debate that neither disputant nor umpire can settle because any umpire already agrees with one of them; Cook Ding\'s blade that has not been sharpened in nineteen years because it goes where the joints already are; the man who dreamt he was a butterfly and cannot say which way round the dream runs. It is the source of the tradition\'s vocabulary for the accomplished person — the 真人 zhēnrén, the Perfected — and of its most quoted image of adaptive skill. It is also the text that Daoism, Chan Buddhism and Chinese poetry all raid without acknowledgement. The Guo Xiang commentary that carries it is inseparable from it and is itself a major philosophical work; the Shishuo xinyu preserves an accusation that Guo Xiang lifted it from Xiang Xiu 向秀, which has never been settled and probably cannot be.',
+            incipit: {
+                native: '北冥有魚，其名為鯤。鯤之大，不知其幾千里也。',
+                english: 'In the northern darkness there is a fish, and its name is Kun. The Kun is so vast that no one knows how many thousand li it measures.',
+                note: 'The opening of 逍遙遊, wandering free and unbound, the first of the Inner Chapters. 鯤 kūn is elsewhere a word for fish roe — the smallest thing there is, used here for the largest, and the joke is in the graph before it is in the story.',
+            },
+            contents: [
+                {
+                    heading: '內篇 Nèi piān — Inner Chapters',
+                    english: 'Seven chapters, each with a three-character thematic title of a kind found nowhere else in the book: 逍遙遊, free wandering; 齊物論, the equalising of things; 養生主, what matters in nourishing life; 人間世, in the human world; 德充符, the tokens of power made full; 大宗師, the great ancestral teacher; 應帝王, responding to emperors and kings. These are the core, and the only part widely credited to Zhuang Zhou himself.',
+                },
+                {
+                    heading: '外篇 Wài piān — Outer Chapters',
+                    english: 'Fifteen chapters, titled from their opening words rather than their subject. Uneven, sometimes brilliant, sometimes flatly polemical; the Primitivist chapters here attack Confucian civilisation with a vehemence the Inner Chapters never show.',
+                },
+                {
+                    heading: '雜篇 Zá piān — Miscellaneous Chapters',
+                    english: 'Eleven chapters, the most heterogeneous of the three groups: dialogues, fragments, a Yangist defence of the individual life, and the closing 天下, a survey of the philosophical schools that is the earliest history of Chinese thought and describes Zhuang Zhou himself in the third person.',
+                },
+            ],
+            contentsNote: 'The threefold division is Guo Xiang\'s, imposed when he reduced fifty-two chapters to thirty-three, and it should not be read as a statement of date — some Outer material is early and some Inner phrasing may be late. But it is not arbitrary either: the Inner Chapters alone carry topical titles, and they cohere in vocabulary and argument in a way the rest does not. The final chapter 天下 stands apart again, and reads as an editor\'s colophon to the whole collection.',
+            editions: [
+                {
+                    label: 'Chinese Text Project — 莊子 with Legge\'s translation in parallel',
+                    url: 'https://ctext.org/zhuangzi',
+                    note: 'All thirty-three chapters in the Guo Xiang recension, Chinese and English side by side, with the Inner, Outer and Miscellaneous divisions kept. The English is Legge\'s, and the site says so on each chapter page.',
+                },
+                {
+                    label: 'Giles, Chuang Tzŭ: Mystic, Moralist, and Social Reformer (London: Quaritch, 1889)',
+                    url: 'https://archive.org/details/chuangtzumysticm00chua',
+                    note: 'Herbert Giles\'s complete version, and still the most readable of the public-domain translations: free with the Chinese where Legge is scrupulous, but it catches the comedy, which Legge does not. Giles interleaves the traditional commentary in smaller type, so the reader sees how the text was actually received.',
+                },
+                {
+                    label: 'Legge, The Texts of Tâoism, Part II (Sacred Books of the East XL, Oxford, 1891)',
+                    url: 'https://archive.org/details/wg940',
+                    note: 'Kwang-3ze books XVIII–XXXIII, completing the translation begun in SBE XXXIX. The volume then continues with the Thâi-Shang tractate and eight appendices of shorter Daoist texts, including the Yin Fû King.',
+                },
+            ],
+        },
+        {
+            slug: 'yijing',
+            native: '易經',
+            translit: 'Yìjīng',
+            english: 'The Classic of Changes',
+            author: 'Anonymous and stratified. Tradition assigns the eight trigrams to the culture-hero Fu Xi 伏羲, the sixty-four hexagrams and their judgements to King Wen of Zhou 周文王 while imprisoned by the last Shang king, the line statements to his son the Duke of Zhou 周公, and the Ten Wings to Confucius. None of these attributions can be sustained on the evidence, though each mattered to the age that made it: the Wings are demonstrably of several hands and several centuries, and the Great Treatise contains material that cannot be pre-Han. The core text — the 周易 Zhōu Yì proper, judgements and line statements — is anonymous divination literature.',
+            date: 'The core text is usually placed in the Western Zhou, around the ninth century BCE, on the evidence of its language and the historical allusions embedded in it. The Ten Wings accumulated between roughly the fourth century BCE and the early Han. A silk manuscript of the Yi from Mawangdui, sealed with the tomb in 168 BCE, gives the hexagrams in an entirely different sequence and carries commentaries — 二三子問, 繫辭, 衷 (also cited as 易之義), 要, 繆和 and 昭力 — that are only partly those of the received Ten Wings, which shows the commentarial tradition still fluid at that date.',
+            language: 'Archaic Chinese in the core text — terse, rhymed, frequently opaque; the Wings in the classical language of the Warring States and Han',
+            volume: 'The Ancestral Books',
+            description: 'A Bronze Age manual for consulting milfoil stalks (the I Ching of older romanisation, and of every bookshop) which became the first of the Five Classics and then the master-key of Chinese cosmology. Sixty-four hexagrams, each six lines of yin or yang, each with a judgement and six line statements; the lines change, and so one hexagram becomes another, which is where the book gets its name. It is on this shelf because everything in internal alchemy is written in its notation. Qián 乾 and Kūn 坤 are the crucible and the furnace; Kǎn 坎 and Lí 離 are the true lead and the true mercury within the body; the twelve \'sovereign hexagrams\' 十二消息卦 map the waxing and waning of yang across the year and, by analogy, across the practitioner\'s night; the nàjiǎ 納甲 system correlates trigram lines with the phases of the moon. Read the Cantong qi without the Yijing and it is nonsense syllables. It is also, on the traditional account, the one classic to escape the Qin proscription of 213 BCE, having been exempted as a book of divination — which, if true, is an irony worth sitting with.',
+            incipit: {
+                native: '乾：元亨，利貞。',
+                english: 'Qian: originating and penetrating; advantageous and firm.',
+                note: 'The judgement on the first hexagram, six unbroken lines. These four graphs 元亨利貞 are among the most contested in Chinese literature: the Ten Wings read them as four cardinal virtues, while modern philology, following the parallels in other judgements, reads them as the flat technical language of divination — \'a grand offering; the augury is favourable\'. Both readings are given here because both have been believed by serious people for two thousand years.',
+            },
+            contents: [
+                {
+                    heading: '上經 Shàng jīng',
+                    english: 'The upper canon: hexagrams 1–30, opening with Qian and Kun and closing with Kan and Li.',
+                },
+                {
+                    heading: '下經 Xià jīng',
+                    english: 'The lower canon: hexagrams 31–64, closing with Jiji 既濟 \'Already Across\' and Weiji 未濟 \'Not Yet Across\' — completion followed by incompletion, which is the book\'s last word.',
+                },
+                {
+                    heading: '彖傳 Tuàn zhuàn (Wings 1–2)',
+                    english: 'Commentary on the Judgements, in two parts matching the two canons; explains each hexagram\'s judgement from the constitution of its trigrams.',
+                },
+                {
+                    heading: '象傳 Xiàng zhuàn (Wings 3–4)',
+                    english: 'Commentary on the Images, in two parts: a \'great image\' drawing a moral from each hexagram\'s trigram pair, and a \'small image\' on each individual line.',
+                },
+                {
+                    heading: '繫辭傳 Xìcí zhuàn (Wings 5–6)',
+                    english: 'The Great Treatise, in two parts. The philosophical heart of the whole apparatus, and the source of the formulae that the alchemists take over wholesale — including the remark that Qian and Kun are the gateway of the Changes.',
+                },
+                {
+                    heading: '文言傳 Wényán zhuàn (Wing 7)',
+                    english: 'Commentary on the Words, an extended treatment of the first two hexagrams only, evidently the survivor of a series that was never completed or has not survived.',
+                },
+                {
+                    heading: '說卦傳 Shuōguà zhuàn (Wing 8)',
+                    english: 'Discussion of the Trigrams: the correlative tables — trigram to direction, season, family member, body part, animal — on which all later Chinese cosmological science is built.',
+                },
+                {
+                    heading: '序卦傳 Xùguà zhuàn (Wing 9)',
+                    english: 'The Sequence of the Hexagrams, deriving the received order as a chain of consequences. Traditional and modern commentators have alike found it the least satisfying of the Wings.',
+                },
+                {
+                    heading: '雜卦傳 Zá guà zhuàn (Wing 10)',
+                    english: 'Miscellaneous Notes on the Hexagrams: brief rhymed contrasts, pairing hexagrams by opposition rather than by the received sequence.',
+                },
+            ],
+            contentsNote: 'The structure above is that of the received text, in which the Tuan and Xiang commentaries have been broken up and distributed under the individual hexagrams rather than kept as separate treatises — an editorial rearrangement traditionally credited to the Han scholar Fei Zhi 費直 and complete in the Wang Bi text. The \'Ten Wings\' therefore number ten only if the three double Wings are counted twice, which is how the tradition counts them. The Mawangdui manuscript shows that neither the hexagram sequence nor the set of commentaries was settled in the second century BCE.',
+            editions: [
+                {
+                    label: 'Legge, The Yî King (Sacred Books of the East XVI, Oxford, 1882)',
+                    url: 'https://archive.org/details/wg916',
+                    note: 'The full text with all ten Wings, and an introduction in which Legge sets out, with visible irritation, why he cannot accept the traditional attributions. Dry, literal, and the standard public-domain English version. The Wilhelm–Baynes translation, which many readers know, remains in copyright and is not linked here.',
+                },
+                {
+                    label: 'Chinese Text Project — 周易, text and Wings with translation',
+                    url: 'https://ctext.org/book-of-changes',
+                    note: 'The Chinese with Legge\'s English in parallel, hexagram by hexagram, and the Xici and the other Wings as separate navigable texts.',
+                },
+                {
+                    label: 'Legge, The Sacred Books of China: the Yî King (IGNCA scan, SBE XVI)',
+                    url: 'https://archive.org/details/in.gov.ignca.20915',
+                    note: 'A second scan of the same 1882 volume, from the Indira Gandhi National Centre for the Arts collection; useful when the first is slow or its plates are unclear.',
+                },
+            ],
+        },
+        {
+            slug: 'taiping-jing',
+            native: '太平經',
+            translit: 'Tàipíng jīng',
+            english: 'The Scripture of Great Peace',
+            author: 'Anonymous, and presented as revealed rather than composed: the bulk of the text is dialogue in which a Celestial Master 天師 answers questions put by disciples called 真人, the Perfected. The Hou Han shu reports that one Gong Chong 宮崇 presented at court, in the reign of Emperor Shun (126–144), a book in 170 juan called the Taiping qingling shu 太平清領書 which his master Gan Ji 干吉 (also written Yu Ji 于吉) had received beside a spring. The Han shu records an earlier and separate attempt, by Gan Zhongke 甘忠可 under Emperor Cheng, to present a Taiping scripture of his own; he was imprisoned for it and died there. Whether any of these books is the ancestor of the surviving text is unresolved. Ge Hong\'s catalogue of about 320 lists a 太平經 in fifty juan, which is neither the 170 of the Hou Han shu notice nor the 57 that now survive.',
+            date: 'Contested. The received text contains material that is plausibly second-century CE and material that is demonstrably later; the consensus is that a Han core has been repeatedly overwritten, and that the text as transmitted took shape over the Six Dynasties and Tang. Its association with the Way of Great Peace 太平道 of Zhang Jue 張角 and with the Yellow Turban rising of 184 CE is asserted by later sources and is plausible in outline, but no surviving passage can be securely tied to that movement.',
+            language: 'Classical Chinese of a markedly plain, repetitive, colloquially inflected kind — closer to spoken instruction than to literary prose',
+            volume: 'Revelation and Community',
+            description: 'The Taiping jing (T\'ai-p\'ing ching) is the earliest large-scale Daoist scripture, and the least like anything a reader expects. Its subject is the restoration of Great Peace — an ordered cosmos in which heaven, earth and humanity are in accord — and its method is an unremitting moral and social critique. It denounces the hoarding of grain and of knowledge, the killing of infant girls, and the refusal to teach; it argues that heaven\'s response to human conduct is mechanical and immediate. Its most consequential idea is 承負 chéngfù, \'inherited burden\': that misfortune is not the fault of the sufferer but the accumulated debt of ancestors, transmitted down the generations — a theodicy that explains the suffering of the good without appeal to a later life, and one that shaped Chinese religious ethics long after the text itself was half lost. Of the original 170 juan, 57 survive in the Ming canon.',
+            incipit: {
+                native: '問曰：三統轉輪，有去有來，民必有主，姓字可得知乎？',
+                english: 'The question was put: the three cycles turn, there is departing and there is coming; the people must have a lord — may his surname and given name be known?',
+                note: 'The opening of the 甲 (jiǎ) section of the Taiping jing chao, the Tang abridgement, which is where a reader of the received text now begins. It should be read with a warning attached: the original jiǎ section is lost, and what stands in its place in the Chao is widely held to be a substitution. The passage that follows the question answers it with the descent of a saviour Lord Li and the salvation of a remnant of \'seed-people\', which is Shangqing messianic material of a much later date than anything Han. The scripture as we have it is therefore acephalous — this is the opening of the transmission, not of the book.',
+            },
+            contents: null,
+            contentsNote: 'The original scripture was arranged in 170 juan grouped into ten sections named for the ten celestial stems, 甲 to 癸, seventeen juan to a section. That structure is known, but the text that would fill it is not: only 57 juan survive in the Zhengtong Daozang, with substantial gaps. What supplements them is a Tang abridgement, the 太平經鈔 attributed to Lüqiu Fangyuan 閭丘方遠 (d. 902), which preserves all ten stem-sections in summary, and a short digest, the 太平經聖君秘旨. The single most valuable witness is not in the canon at all: Dunhuang manuscript S.4226, a Tang scroll giving the titles of all 170 juan, against which the extent of the loss can finally be measured. A full table of contents is therefore withheld here, because any that could be printed would be a table of what is missing.',
+            editions: [
+                {
+                    label: 'Chinese Text Project — 太平經鈔, the Tang abridgement (Zhengtong Daozang text)',
+                    url: 'https://ctext.org/wiki.pl?if=en&res=877415',
+                    note: 'All ten stem-sections of the Chao, 甲 to 癸, one to a juan, from the Ming canon. The most convenient way to see the shape of the whole scripture, provided one remembers that a summary is what is being read.',
+                },
+                {
+                    label: 'Chinese Text Project — 太平經聖君秘旨',
+                    url: 'https://ctext.org/wiki.pl?if=en&res=402054',
+                    note: 'The short digest of \'the Holy Lord\'s secret directions\', also from the Ming canon: a compressed selection of passages on the conservation of vital breath and spirit, and a useful check on the Chao.',
+                },
+                {
+                    label: 'Chinese Text Project — 太平經合校, the collated text in the 170-juan frame',
+                    url: 'https://ctext.org/wiki.pl?if=en&res=110513',
+                    note: 'The surviving canon juan, the Chao and the scattered fragments assembled into the 170-juan frame that S.4226 makes it possible to reconstruct, and presented here in three blocks (juan 1–50, 51–100, 101–170). This is Wang Ming\'s 王明 collation of 1960, the standard modern edition on which all study of the scripture depends — an editorial reconstruction, not a witness in its own right, and a modern work still in copyright; the ctext page records no editor, which is worth knowing before citing it. No public-domain English translation of the Taiping jing exists.',
+                },
+            ],
+        },
+        {
+            slug: 'duren-jing',
+            native: '元始無量度人上品妙經',
+            translit: 'Yuánshǐ wúliàng dùrén shàngpǐn miàojīng',
+            english: 'The Wondrous Scripture of the Upper Chapters on the Limitless Salvation of Humankind, of Primordial Beginning',
+            author: 'Presented as the speech of 元始天尊 Yuánshǐ Tiānzūn, the Celestial Worthy of Primordial Beginning, at the dawn of a cosmic cycle — the 元始 standing at the head of the title is that deity\'s name, not a description of the book. Its human origin is placed by Tang and later sources with 葛巢甫 Gě Cháofǔ, a kinsman of Ge Hong usually described as his grandnephew, who between roughly 397 and 402 produced the first Lingbao 靈寶 scriptures and back-dated their transmission to his ancestor Ge Xuan 葛玄. The scripture\'s own account of itself, in which it is recited ten times before an assembly of gods and the deaf hear and the blind see, is the only account it offers.',
+            date: 'The scripture proper, now the first juan, belongs to the Lingbao revelations of about 400 CE. The text as printed in the Ming canon runs to sixty-one juan: juan 2 to 61 are a Northern Song expansion, associated with the Shenxiao 神霄 movement patronised by Emperor Huizong (r. 1100–1126), which multiplies the original by supplying a matching chapter for every conceivable application. The received book is thus one short fourth-century scripture wearing a twelfth-century encyclopaedia. The canon carries it under more than one title — the sixty-one-juan text stands as 靈寶無量度人上品妙經 and the commentated text as 元始無量度人上品妙經, both of them shortenings of the fuller 太上洞玄靈寶無量度人上品妙經 — so a catalogue search on one form will miss the other.',
+            language: 'Classical Chinese, in a high liturgical register, with long passages of transcribed celestial speech that is not Chinese at all',
+            volume: 'Revelation and Community',
+            description: 'The Duren jing (Tu-jen ching) is the scripture with which the Zhengtong Daozang opens — it stands first in the Cavern of Perfection, ahead of the Laozi and everything else, which is a statement about what the compilers thought a canon was for. Its innovation is universality. Where the Shangqing revelations offered ascent to an elite of adepts, the Duren jing offers salvation without limit and without discrimination: 仙道貴生，無量度人, \'the way of the immortals values life; it saves people without measure\' — a formula that the tradition has never stopped quoting, and whose debt to Mahāyāna Buddhist universalism is obvious and was obvious at the time. Embedded in it are the 大梵隱語, the \'hidden language of the Great Brahmā\': stanzas of transliterated celestial syllables which mean nothing in Chinese and are not intended to, being the sounds by which the cosmos is maintained. It remains a living liturgical text, recited for the dead and for the living in Daoist temples today.',
+            incipit: {
+                native: '道言：昔於始青天中碧落空歌大浮黎土，受元始度人無量上品。',
+                english: 'The Dao spoke: of old, in the Heaven of Primal Azure, in the Empty Song of the Jade Void, in the Great Floating Land of Li, I received the Upper Chapters of the Primordial Beginning on the Limitless Salvation of Humankind.',
+                note: 'The first line of juan 1. The place-names are untranslatable in the ordinary sense: 碧落 and 大浮黎土 are celestial toponyms whose components can be construed but whose reference is a cosmography, not a geography, and any English is a paraphrase. The line is normalised here: the Zhengtong Daozang prints 无 for 無 at just this point, though it writes 無 everywhere else in the same juan. 无 is an ancient variant of the same word and not the modern simplified form, which happens to be the identical graph.',
+            },
+            contents: [
+                {
+                    heading: '卷一 — the scripture proper',
+                    english: 'The original fourth-century text, and the only juan the canon leaves without a chapter title: the Celestial Worthy\'s ten recitations and their effects; the assembly of the gods of the ten directions; the three stanzas of the 元始靈書, the \'Numinous Writ of Primordial Beginning\', in upper, middle and lower parts; and the 大梵隱語, the hidden language of the Great Brahmā.',
+                },
+                {
+                    heading: '卷二–卷六十一 — the Song expansion',
+                    english: 'Sixty further juan, each a titled 品 or \'chapter\' applying the scripture to a particular end: 玉宸大道品 opens the series, and what follows runs through the securing of the state, the averting of prodigies, the pacifying of armies, the generation of yin and yang, the courses of sun and moon, the ten directions, and at the last 永斷輪轉品, the severing of transmigration. Each supplies its own celestial writ modelled on the original.',
+                },
+            ],
+            contentsNote: 'The division is real and important, and collapsing it is the commonest error made about this book. Juan 1 alone is the scripture that Six Dynasties and Tang Daoists knew, and it is short enough to recite at a sitting; the sixty juan that follow are a Song accretion of a quite different character and purpose. The commentaries in the canon bear this out: the 四註, gathering the readings of Yan Dong 嚴東, Xue Youqi 薛幽棲, Li Shaowei 李少微 and Cheng Xuanying 成玄英, comment on juan 1 alone, though the commentary itself runs to four juan and carries its own preface, glossary and phonetic notes.',
+            editions: [
+                {
+                    label: 'Chinese Text Project — 靈寶無量度人上品妙經 in 61 juan (Zhengtong Daozang text)',
+                    url: 'https://ctext.org/wiki.pl?if=en&res=188916',
+                    note: 'The whole received text from the Ming canon. Juan 1 is the fourth-century scripture and carries no chapter title; the sixty titled 品 that follow are the Song expansion, and the shape of the accretion is visible at a glance in the table of contents. No public-domain English translation exists.',
+                },
+                {
+                    label: 'Chinese Text Project — 元始無量度人上品妙經四註, the Four Commentaries',
+                    url: 'https://ctext.org/wiki.pl?if=en&res=452900',
+                    note: 'The scripture with four early commentaries printed together — Yan Dong, Xue Youqi, Li Shaowei and Cheng Xuanying, the last of them the Tang Chongxuan scholar — in four juan, with a preface by the Northern Song master Chen Jingyuan 陳景元, a 經說 and a 釋音 of the sounds. The standard way the text was actually studied, and the fastest route to seeing how the celestial syllables were construed.',
+                },
+            ],
+        },
+        {
+            slug: 'dadong-zhenjing',
+            native: '上清大洞真經',
+            translit: 'Shàngqīng dàdòng zhēnjīng',
+            english: 'The Authentic Scripture of the Great Cavern, of Highest Clarity',
+            author: 'Revealed, not written. Between 364 and 370 CE at Jurong, south-east of the Jin capital, the medium 楊羲 Yáng Xī (330–386) received nocturnal visitations from perfected beings — among them 魏華存 Wèi Huácún (252–334), a Celestial Master libationer become the Lady of the Southern Peak — and wrote down what they dictated for his patrons 許謐 Xǔ Mì and his son 許翽 Xǔ Huì. The Dadong zhenjing is the highest of the scriptures so received. A century and a half later 陶弘景 Táo Hóngjǐng (456–536) hunted down the surviving autographs, authenticated them by handwriting, and edited the corpus; his 真誥 Zhēngào is the record of that work and one of the most extraordinary documents in Chinese religious history.',
+            date: 'The revelations of 364–370; the Ming canon text is a much later recension, collated at Maoshan by 蔣宗瑛 Jiǎng Zōngyīng, thirty-eighth patriarch of Shangqing, who died in 1281, and prefaced by 朱自英 Zhū Zìyīng (986–1029), the twenty-third. How much of the fourth-century scripture survives inside that thirteenth-century recension is a real question and not a settled one; forgery and re-revelation both operated on this corpus almost from the moment it appeared, as Tao Hongjing himself complains.',
+            language: 'Classical Chinese, largely in four-character liturgical verse, dense with names that occur nowhere outside this corpus',
+            volume: 'Revelation and Community',
+            description: 'The Dadong zhenjing (Ta-tung chen-ching) is the founding scripture of Shangqing 上清, Highest Clarity, the tradition that gave medieval Daoism its literary prestige and its interior turn. Where earlier practice sought elixirs and communal absolution, Shangqing sought ascent by visualisation: the adept summons the gods who inhabit his own body and the stars, holds their forms and names steadily in mind, and travels. The Dadong zhenjing is the instrument of the highest such practice, thirty-nine chapters each keyed to a deity of the upper body and the heavens — its own preface puts it that the thirty-nine thearchs of Highest Clarity descend into thirty-nine gates within the adept\'s body, and each has set down a chapter at the gate it governs. It is important to be plain about what this shelf will not do: the received text consists very largely of operative instruction, and none of it is reproduced or summarised here. It is a working liturgical book, in use, and it is described rather than taught.',
+            incipit: null,
+            contents: [
+                {
+                    heading: '序 and 後序',
+                    english: 'Prefaces opening and closing the received recension. The first is signed by Zhu Ziying 朱自英, twenty-third Shangqing patriarch, and sets out the scripture\'s transmission and the authority of the Maoshan line; the closing one argues the scripture\'s case in Confucian terms, opening from the Yijing rather than from any Daoist text.',
+                },
+                {
+                    heading: '卷一 誦經玉訣',
+                    english: '\'Jade Instructions for Reciting the Scripture\': the preparatory matter that governs how the thirty-nine chapters are to be used. Operative throughout, and not summarised here.',
+                },
+                {
+                    heading: '三十九章道經 — the thirty-nine Dao chapters',
+                    english: 'The scripture proper, one chapter to each of thirty-nine perfected beings, from 高上虛皇君, the High Sovereign of the Void, down through the lords of the Great Tenuity, the Yellow Elder of the Centre 中央黃老君, the Azure Lad of Fangzhu in the Eastern Sea 青童君, and the Great Thearch of the Fusang tree 扶桑大帝. Each chapter names its deity, gives its verse, and belongs to a station in the body and the sky.',
+                },
+                {
+                    heading: '徊風混合帝一祕訣',
+                    english: 'A concluding secret instruction on the merging of the Whirling Wind with the One Thearch, standing after the thirty-nine chapters and glossed in the opening preface. Printed thus in the Ming canon text digitised by ctext; the title is more usually cited with 迴 for 徊, two graphs of the same sense and separate origin.',
+                },
+            ],
+            contentsNote: 'The count of thirty-nine chapters is stable across the recensions, one chapter to each of the thirty-nine perfected whom the scripture addresses. The prefatory and concluding material varies between editions, and the Ming canon preserves more than one version of this scripture; the sixth-century form can be partly reconstructed from Tao Hongjing\'s citations and from Dunhuang fragments, but not recovered. Note also that the chapter titles listed in the canon\'s own table of contents, which name the deity addressed, are not always the titles standing at the head of the chapters themselves, which name the god invoked first within them.',
+            editions: [
+                {
+                    label: 'Chinese Text Project — 上清大洞真經 (Zhengtong Daozang text)',
+                    url: 'https://ctext.org/wiki.pl?if=en&res=966018',
+                    note: 'The complete Ming canon recension, with the collator\'s name — 茅山上清三十八代宗師蔣宗瑛校勘 — standing at the head of the juan, so that the reader is told at once that this is a thirteenth-century Maoshan text and not a fourth-century autograph. No public-domain English translation exists.',
+                },
+                {
+                    label: 'Chinese Text Project — 上清大洞真經玉訣音義',
+                    url: 'https://ctext.org/wiki.pl?if=en&res=859316',
+                    note: 'The glossary of sounds and senses attached to the scripture\'s jade instructions, compiled by the Northern Song master Chen Jingyuan 陳景元 (d. 1094) — evidence that much of this corpus\'s vocabulary was already obscure to readers seven centuries closer to it than we are.',
+                },
+            ],
+        },
+        {
+            slug: 'huangting-jing',
+            native: '黃庭經',
+            translit: 'Huángtíng jīng',
+            english: 'The Scripture of the Yellow Court',
+            author: 'Anonymous. The Inner Effulgences text is ascribed within the Shangqing tradition to revelation through 魏華存 Wèi Huácún, and it circulates in that milieu from the late fourth century; the Outer Effulgences text is earlier and unattached to any name. The calligraphic tradition attaches the scripture to 王羲之 Wáng Xīzhī (303–361), whose transcription of it survives in rubbings; the famous anecdote of the calligrapher who copied a Daoist scripture in exchange for a flock of geese is told of the Daode jing in the Jin shu, and only migrated to the Huangting jing in later retellings.',
+            date: 'The 外景 Outer text is quoted by the fourth century and is listed simply as 黃庭經 in the catalogue of scriptures Ge Hong set out in the Baopuzi around 320 — which fixes a terminus that predates the Shangqing revelations entirely. The 內景 Inner text is the later and longer of the two, and belongs with the Shangqing corpus of the 360s or somewhat after. Which came first was disputed for centuries; the Outer is now generally taken as prior, though the relation is one of reworking rather than of simple expansion.',
+            language: 'Classical Chinese in seven-syllable rhymed verse throughout — a metre chosen for memorisation and chanting, not for reading',
+            volume: 'The Body and Its Gods',
+            description: 'The Huangting jing (Huang-t\'ing ching) is the book that made the body a country. Its premise is that the organs and cavities are inhabited: each viscus has a resident god with a name, a style, a colour, a costume and a height in inches, and the practitioner\'s task is to know them, keep them in place, and stop them leaving — for death, in this physiology, is the departure of the body\'s gods. It maps the three Cinnabar Fields 三丹田 in head, chest and abdomen, and the Nine Palaces 九宮 within the skull behind the point called 泥丸 níwán. The Yellow Court itself is variously located, and the ambiguity is old: the spleen, the centre of the body, the space between the kidneys. It is the single most influential text on the interior landscape in the tradition, and the whole later vocabulary of internal alchemy — the fields, the passes, the palaces — is drawn from it. Its verses are meant to be chanted, and are still chanted.',
+            incipit: {
+                native: '上清紫霞虛皇前，太上大道玉晨君，閑居蘂珠作七言。',
+                english: 'Before the Void Sovereign in the purple mists of Highest Clarity, the Most High Great Dao, Lord of the Jade Dawn, dwelling at leisure in the Stamen-Pearl chamber, composed these lines of seven words.',
+                note: 'The opening of the first section, 上清章第一, of the Inner Effulgences text, and the reading of the Ming canon, which prints 蘂 where other editions have the commoner 蕊 — variant shapes of one graph. The last clause is the scripture describing its own metre — an unusual self-consciousness, and a signal that what follows is to be sung.',
+            },
+            contents: [
+                {
+                    heading: '太上黃庭內景玉經 — the Inner Effulgences',
+                    english: 'Thirty-six numbered sections, each titled from its opening words: 上清章第一 through to 沐浴章第三十六. Sections nine to fourteen work systematically through the organs in a fixed order — lungs, heart, liver, kidneys, spleen, gallbladder — naming the god of each; other sections turn to the passes 三關, the palaces of the head and the circulation of breath.',
+                },
+                {
+                    heading: '太上黃庭外景玉經 — the Outer Effulgences',
+                    english: 'Three juan, upper, middle and lower, without further internal division. Shorter, plainer and less populated with deities than the Inner text, and correspondingly harder to date.',
+                },
+            ],
+            contentsNote: 'The thirty-six-section division of the Inner text and its section titles are stable across the canon\'s recensions and across the commentaries; the numbering has been part of how the text is used, since sections are assigned for recitation. A third text, the 太上黃庭中景經 or \'Middle Effulgences\', also stands in the canon; it is later than both and is generally treated as a supplement rather than as one of a set of three.',
+            editions: [
+                {
+                    label: 'Chinese Text Project — 太上黃庭內景玉經 (Zhengtong Daozang text)',
+                    url: 'https://ctext.org/wiki.pl?if=en&res=674366',
+                    note: 'The Inner Effulgences complete in its thirty-six sections on a single page, from the Ming canon. No public-domain English translation exists; the poem is dense with proper names and is very hard to render at all.',
+                },
+                {
+                    label: 'Chinese Text Project — 太上黃庭外景玉經 (Zhengtong Daozang text)',
+                    url: 'https://ctext.org/wiki.pl?if=en&res=993896',
+                    note: 'The Outer Effulgences in its three juan, upper, middle and lower — the older and shorter text, and the one Ge Hong is likely to have known.',
+                },
+                {
+                    label: 'Chinese Text Project — 修真十書黃庭內景玉經註',
+                    url: 'https://ctext.org/wiki.pl?if=en&res=52646',
+                    note: 'The Inner text with commentary as it stands in the 修真十書, the Song compendium of cultivation manuals, which is where most later readers met it.',
+                },
+            ],
+        },
+        {
+            slug: 'huangdi-neijing',
+            native: '黃帝內經',
+            translit: 'Huángdì nèijīng',
+            english: 'The Inner Canon of the Yellow Thearch',
+            author: 'Anonymous and multiple, framed as dialogue: the Yellow Thearch 黃帝 questions his minister 岐伯 Qíbó, and sometimes Bo Gao or Lei Gong, on the constitution of the body and the causes of illness. The attribution to Huangdi is a genre convention of the late Warring States and Han, by which technical knowledge was given a mythical warrant; nobody in the tradition has ever taken it as a claim about authorship in our sense.',
+            date: 'Compiled between roughly the second century BCE and the second century CE from strata of visibly different date and doctrine — parts of the Suwen contradict other parts outright. The Han shu bibliography lists a 黃帝內經 in eighteen juan; whether that book is this book is unprovable and often doubted. The Suwen as we read it is the recension of Wang Bing 王冰, completed in 762, who reordered the received chapters and inserted seven long treatises on the Five Circulatory Phases and Six Qi 五運六氣 that are absent from all earlier witnesses and are almost certainly his own supplement. The Lingshu travelled separately, was largely lost in China, and the received text descends from an edition of 1155 by Shi Song 史崧.',
+            language: 'Classical Chinese, in a technical register whose terminology is often the earliest attestation of the term',
+            volume: 'The Body and Its Gods',
+            description: 'The Huangdi neijing (Huang-ti nei-ching) is a medical classic, and it belongs on a Daoist shelf because in this hall medicine, alchemy and cultivation are one system with three vocabularies. The Neijing supplies the framework everything else assumes: qì 氣 (ch\'i) and its circulation; yin and yang as a relation rather than a pair of things; the Five Phases 五行 and the correspondences that bind organ to season to flavour to emotion to sound; the vessels along which the body is needled. Its opening chapter is not about disease at all but about the preservation of life — why the ancients reached a hundred years with their movements undiminished and their descendants are decrepit at fifty — and its answer, that they lived in accord with the patterns and did not squander their essence, is the premise from which the whole cultivation literature departs. Ge Hong, Sun Simiao and Zhang Boduan all argue inside this physiology.',
+            incipit: {
+                native: '昔在黃帝，生而神靈，弱而能言，幼而徇齊，長而敦敏，成而登天。',
+                english: 'Of old there was the Yellow Thearch: numinous from birth, able to speak while still a weakling, quick and even-tempered as a child, earnest and acute as he grew; and when he was complete, he ascended to heaven.',
+                note: 'The opening of 上古天真論, the first treatise of the Suwen. The last clause 成而登天 was already awkward for medical readers, since it makes the interlocutor of a clinical dialogue a departed immortal; Wang Bing\'s commentary works hard on it. Note that the ctext text writes 歧 for 岐 in Qibo\'s name throughout, one of several long-standing orthographic variants in this corpus.',
+            },
+            contents: [
+                {
+                    heading: '素問 Sùwèn — Basic Questions',
+                    english: 'Eighty-one treatises in twenty-four juan, in Wang Bing\'s arrangement of 762. Cosmology, the correspondences, diagnosis by the pulse, the doctrine of the five phases; two of the eighty-one were already lost before Wang Bing and are represented by later substitutes.',
+                },
+                {
+                    heading: '靈樞 Língshū — The Divine Pivot',
+                    english: 'Eighty-one treatises in twelve juan, in Shi Song\'s arrangement of 1155. Chiefly the theory and practice of needling: the vessels, the points, the nine needles, and the spirits that must be settled before the needle is set.',
+                },
+            ],
+            contentsNote: 'The symmetry of eighty-one and eighty-one is not accidental and is not original; it is the product of editorial arrangement, nine nines being an auspicious completeness, and it should be read as a claim about wholeness rather than as a count of what was received. A third witness must be named beside these two: the 黃帝內經太素, Yang Shangshan\'s Sui or early Tang recension, which arranges the same material topically rather than by treatise and was lost in China but survived in a manuscript at Ninna-ji in Kyoto. Where the Taisu disagrees with Wang Bing, it is often the older reading.',
+            editions: [
+                {
+                    label: 'Chinese Text Project — 黃帝內經, Suwen and Lingshu',
+                    url: 'https://ctext.org/huangdi-neijing',
+                    note: 'Both parts complete in Chinese, treatise by treatise, with a character-level dictionary; the base text is the 四部叢刊 printing of the 重廣補註黃帝內經素問, and the Taisu and other witnesses are offered in parallel. In simplified script the title is 黄帝内经, which is how most mainland editions and databases present it. The site does show an English, but it is labelled as the work of \'AI and Chinese Text Project users\' and has no scholarly standing; Ilza Veith\'s partial version of the Suwen (1949) and all later published translations remain in copyright, so there is no public-domain English rendering to link.',
+                },
+                {
+                    label: 'Chinese Text Project — 素問, the Basic Questions',
+                    url: 'https://ctext.org/huangdi-neijing/suwen',
+                    note: 'The eighty-one treatises of the Suwen taken separately, which is how the text is normally cited and read. Note the URL: the hyphenated form ctext.org/huangdi-neijing/su-wen, which older citations use, now redirects to the site\'s front page and will lose the reader.',
+                },
+            ],
+        },
+        {
+            slug: 'baopuzi',
+            native: '抱朴子',
+            translit: 'Bàopǔzǐ',
+            english: 'The Master Who Embraces Simplicity',
+            author: '葛洪 Gě Hóng (283–343), styled Zhichuan 稚川, of a southern gentry family at Jurong; Baopuzi, \'he who embraces the uncarved block\', is the sobriquet he gives himself throughout. He is one of the very few authors on this shelf who is a person, with a career, a temper and a signed autobiographical postface. He names his teacher Zheng Yin 鄭隱 and his great-uncle Ge Xuan 葛玄, from whom he claims the Taiqing 太清 alchemical scriptures descended, and he complains at length about the credulity, avarice and incompetence of his contemporaries.',
+            date: 'Completed in the years around 317–320, in the confusion after the fall of the north and the founding of the Eastern Jin at Jiankang. Ge Hong\'s own postface states that he wrote twenty juan of Inner Chapters and fifty of Outer Chapters, and that figure matches what survives, though the text has suffered in transmission and some chapters are certainly damaged.',
+            language: 'Classical Chinese in an ornate, heavily parallel Six Dynasties prose — Ge Hong is a stylist, and the Inner Chapters open with a rhapsody rather than an argument',
+            volume: 'The Cinnabar Books',
+            description: 'The Baopuzi (Pao-p\'u-tzu) is the indispensable witness to what southern Chinese religion actually contained on the eve of the great revelations. Ge Hong argues, against sceptics he names, that transcendence is attainable by technique; that it requires elixirs, not merely breathing and herbs; and that the requisite books exist and he has seen them. The Inner Chapters are consequently part polemic, part survey and part catalogue — the chapter 遐覽, \'Into the Distance\', lists by title the several hundred scriptures and talismanic charts in Zheng Yin\'s library, most of which are otherwise unknown and nearly all of which are lost, making it the earliest Daoist bibliography we possess. On the alchemy this shelf will say only what history requires. Chapters 4 (金丹, \'the golden elixir\') and 16 (黃白, \'yellow and white\', which is to say gold and silver) concern the compounding of elixirs from cinnabar — mercury sulphide — together with lead, arsenic minerals and mercury itself, and no detail of any preparation is reproduced here. These substances killed the people who took them: several Tang emperors are recorded to have died of elixirs, and the traditional tally runs to five or six. That is a fact about the history of this tradition, and the tradition itself came to acknowledge it; the turn towards internal alchemy in the Tang and Song is in part a response to a body count.',
+            incipit: {
+                native: '抱朴子曰：玄者，自然之始祖，而萬殊之大宗也。',
+                english: 'The Master Who Embraces Simplicity said: the Mystery is the first ancestor of what is so of itself, and the great progenitor of the ten thousand differences.',
+                note: 'The opening of 暢玄, \'Expounding the Mystery\', the first of the Inner Chapters. 玄 xuán — dark, mysterious, the colour of the sky before dawn — is the term Ge Hong takes from the Daode jing\'s first chapter and makes the ground of his whole system.',
+            },
+            contents: [
+                {
+                    heading: '內篇 Nèi piān — Inner Chapters',
+                    english: 'Twenty chapters on transcendence: the Mystery; the reality of immortals; the reception of teaching; the golden elixir; the correction of vulgar error; the interior gods; medicinal plants; the projection of gold and silver; the prohibitions of the mountains; and, as the nineteenth, the bibliography of Zheng Yin\'s library. This is the Daoist half, and the one that placed the book in the canon.',
+                },
+                {
+                    heading: '外篇 Wài piān — Outer Chapters',
+                    english: 'Fifty chapters on society and office: the duties of ministers, the assessment of talent, the abuses of the age, literary judgement, and a closing autobiography. Broadly Confucian in outlook, and written, Ge Hong says, by the same man for a different purpose.',
+                },
+            ],
+            contentsNote: 'The division into Inner and Outer is Ge Hong\'s own and is explicit in his postface — it is not the retrospective sorting that produced the analogous divisions in the Zhuangzi. He states plainly that the Inner Chapters treat of gods, transcendents, recipes, medicines and the exorcism of evil, and the Outer of human success and failure and the affairs of the world, and he defends the double authorship of the two halves against the objection that a man ought to have one mind.',
+            editions: [
+                {
+                    label: 'Chinese Text Project — 抱朴子, Inner and Outer Chapters',
+                    url: 'https://ctext.org/baopuzi',
+                    note: 'The full Chinese text of both halves with a character-level dictionary, from the 四部叢刊 printing of the 抱朴子內外篇. The English shown alongside is labelled as the work of \'AI and Chinese Text Project users\' and should not be cited as a translation; James Ware\'s published version of the Inner Chapters (1966) is in copyright and is not linked, and there is no public-domain translation of either half.',
+                },
+                {
+                    label: 'Chinese Text Project — 抱朴子內篇',
+                    url: 'https://ctext.org/baopuzi/nei-pian',
+                    note: 'The twenty Inner Chapters taken separately, including 遐覽 with its catalogue of the lost scriptures Ge Hong saw in his teacher\'s library.',
+                },
+            ],
+        },
+        {
+            slug: 'cantong-qi',
+            native: '周易參同契',
+            translit: 'Zhōuyì cāntóngqì',
+            english: 'The Token for the Agreement of the Three, According to the Book of Changes',
+            author: 'Attributed to 魏伯陽 Wèi Bóyáng (Wei Po-yang), of whom nothing is known outside Ge Hong\'s Shenxian zhuan, where he appears as an adept of Wu who tested an elixir on a dog. Matter appended to the text names two further figures, 徐從事 Xu Congshi and 淳于叔通 Chunyu Shutong, as having had a hand in it, and the tradition has never been able to decide whether these are collaborators, transmitters or fictions. The \'three\' of the title are variously explained as the Changes, the Huang-Lao teaching and the work of the furnace; or as three men; or as the three agents of the process. The book does not say.',
+            date: 'Genuinely disputed, and the dispute matters. Tradition places it in the Eastern Han and 142 CE is often cited. Against this: no securely datable citation of the text is earlier than the Tang; the earliest complete recension to survive is that of 彭曉 Péng Xiǎo, whose commentary is dated 947; and the text\'s technical vocabulary and its verse forms have been argued to belong to a later stratum. The prevailing modern view — Fukui Kōjun, Chen Guofu, and more recently Fabrizio Pregadio — is that a Han core, if there was one, has been enlarged and reshaped over several centuries into the composite we read. Both positions are recorded here without reconciliation.',
+            language: 'Classical Chinese in rhymed four- and five-syllable verse, deliberately obscure — the text says of itself that it speaks in figures',
+            volume: 'The Cinnabar Books',
+            description: 'The Cantong qi (Ts\'an-t\'ung-ch\'i), called 萬古丹經王, \'the king of the elixir scriptures of all ages\', is the single most commented-upon text in the alchemical corpus. It is a work of correlation rather than instruction: it takes the hexagrams of the Yijing, the sexagenary cycle, the phases of the moon and the divisions of the year, and shows them to be one pattern, then declares that pattern also to be the pattern of the work. Qian and Kun are the vessel; Kan and Li are the active agents; the twelve sovereign hexagrams give the rhythm of the process. Because the Cantong qi never says whether its furnace stands on the ground or inside the practitioner, it could be and was read both ways: as an outer-alchemical treatise by Tang commentators, and as the founding scripture of internal alchemy by Song and later ones. No detail of any preparation is reproduced here, and none should be sought in it — the text is written to be unusable by anyone without a teacher, which is a design decision and not an accident.',
+            incipit: {
+                native: '乾坤者，《易》之門戶，眾卦之父母。',
+                english: 'Qian and Kun are the gateway of the Changes, the father and mother of all the hexagrams.',
+                note: 'The opening of the first section in Peng Xiao\'s 947 recension, which takes its section title from this very line. It is a deliberate reworking of the Great Treatise of the Yijing, which asks 乾坤其易之門邪 — \'are Qian and Kun not the gateway of the Changes?\' The alchemist turns the classic\'s question into a premise, and the whole book proceeds from it.',
+            },
+            contents: [
+                {
+                    heading: '卷上 — upper juan, sections 1–28',
+                    english: 'The cosmological foundation: Qian and Kun as gateway and vessel, the four \'breeding\' hexagrams, the hexagrams that mark the days of the lunar month, the pairing of the cyclical stems with the moon\'s phases, and the first statements about correspondence between the celestial pattern and the work. It closes at 明者省厥旨章第二十八, \'let the discerning consider its purport\'.',
+                },
+                {
+                    heading: '卷中 — middle juan, sections 29–73',
+                    english: 'The cycle of the year traced hexagram by hexagram — Fu, Lin, Tai, Dazhuang, Guai, Qian, then Gou, Dun, Pi, Guan and Bo, at sections 49 to 59 — with the ordering of the process keyed to it; and the polemical sections dismissing the many wrong methods and their practitioners, at 世問多學士章第三十四 and 世人好小術章第六十七.',
+                },
+                {
+                    heading: '卷下 — sections 74–90',
+                    english: 'Recapitulation, the section headed 補塞遺脫章第八十四, \'stopping the gaps and omissions\', and the closing autobiographical verses at 會稽鄙夫章第八十八, in which the author calls himself a rustic of Kuaiji.',
+                },
+            ],
+            contentsNote: 'This division into three juan and ninety sections is Peng Xiao\'s, made in 947, and is an editor\'s grid laid over a text that carries no such articulation of its own; even the section titles are simply the opening words of each passage. Other recensions in the canon divide quite differently — some into three 篇 with an appended 五相類, some into thirty-five titled sections, some not at all — and the ordering of passages varies between them, which is one reason the text is so hard to date. Any table of contents for the Cantong qi is a statement about a commentator, not about the book.',
+            editions: [
+                {
+                    label: 'Chinese Text Project — 周易參同契分章通真義, Peng Xiao\'s recension of 947',
+                    url: 'https://ctext.org/wiki.pl?if=en&res=855200',
+                    note: 'The earliest surviving complete recension, in three juan and ninety sections, with Peng Xiao\'s commentary, from the Ming canon; the separate 目錄 page lists all ninety section titles and shows where each juan begins and ends. The base text for almost all later work. No public-domain English translation exists.',
+                },
+                {
+                    label: 'Chinese Text Project — 周易參同契, Chu Huagu\'s recension in thirty-five sections',
+                    url: 'https://ctext.org/wiki.pl?if=en&res=125136',
+                    note: 'The Song commentator Chu Huagu 儲華穀 divides the same material into thirty-five titled sections, from 大易總敘章第一 to 自敘啟後章第三十五. Set beside Peng Xiao\'s ninety, it shows at a glance how unstable the text\'s articulation is — and that both editors keep a 補塞遺脫 section, at wholly different points in their counts.',
+                },
+                {
+                    label: 'Chinese Text Project — 周易參同契考異, the collation attributed to Zhu Xi',
+                    url: 'https://ctext.org/wiki.pl?if=en&res=155036',
+                    note: 'An \'examination of variants\' attributed to the Neo-Confucian philosopher Zhu Xi (1130–1200), who is said to have issued it under a pseudonym rather than his own name; ctext records the author as unknown. That the most austere of the Song classicists should have worked on an alchemical scripture at all says something about how far this text\'s authority reached beyond its own tradition. Printed here from the 守山閣叢書 rather than from the canon, and bound with an unrelated Daoist commentary in the same collection.',
+                },
+            ],
+        },
+        {
+            slug: 'wuzhen-pian',
+            native: '悟真篇',
+            translit: 'Wùzhēn piān',
+            english: 'Folios on Awakening to Perfection',
+            author: '張伯端 Zhāng Bóduān (Chang Po-tuan, c. 984–1082), styled Pingshu 平叔 and known as 紫陽真人 the Perfected of Purple Yang; a minor official of Tiantai in Zhejiang. He states in his own preface that he received the teaching from a master at Chengdu in 1069 after a lifetime of fruitless searching, and does not name him; the commentators do not agree on who he was, one of them calling him only the Elder of Qingcheng, while later tradition identified him with Liu Haichan 劉海蟾 and made Zhang the first of the Five Patriarchs of the Southern Lineage 南宗. That lineage was articulated by writers of the following centuries, and is a claim about spiritual descent rather than a documented succession; it is recorded here as the tradition\'s own account of itself.',
+            date: 'The preface is dated to the 熙寧 era, cyclical year yǐmǎo 乙卯 — that is, 1075. The received text was in circulation within Zhang\'s lifetime and was commented upon within a century of his death; unusually for this shelf, the date and the author are both secure.',
+            language: 'Classical Chinese, entirely in verse: regulated poems, quatrains and lyrics to set tunes',
+            volume: 'The Cinnabar Books',
+            description: 'The Wuzhen pian (Wu-chen p\'ien) is, with the Cantong qi, one of the two pillars of 內丹 nèidān (nei-tan), internal alchemy — and the one that made the transposition explicit. Zhang Boduan takes over the whole apparatus of the furnace, the lead, the mercury, the firing times and the cyclical phases, and states that the crucible is the practitioner\'s own body and that anyone melting minerals has misread the books. Its images are notorious and deliberate: the infant, the lovely maid, the yellow sprout, the marriage of the yin and yang souls. The poems are addressed to a reader who already has a teacher, and they say so; the tradition\'s own commentators disagree about them, which is the surest sign that the text is not a set of instructions in code but a set of markers for something learned elsewhere. Nothing operative is set out here. A note on the title: older printings write it 悟眞篇, with 眞 where this shelf gives 真 — and the same holds for the 上清大洞真經 above. The two are shapes of one character, the first the orthodox form descended from the seal script and the second the standard modern traditional one; nothing turns on the choice, and both are traditional. A final peculiarity: in the fuller recensions the collection ends with a group of Chan songs and gāthās, in which Zhang argues that alchemy perfects the life but that without Chan the nature is left unsettled — a Daoist text closing by giving the last word to Buddhism.',
+            incipit: {
+                native: '不求大道出迷途，縱負賢材豈丈夫。',
+                english: 'If you do not seek the Great Way to get clear of the road of delusion, then for all your gifts and talent, what sort of man are you?',
+                note: 'The first couplet of the first of the sixteen seven-syllable regulated poems. The whole collection begins as a reproach rather than a doctrine, which is a fair warning of its temper.',
+            },
+            contents: [
+                {
+                    heading: '七言律詩十六首 — sixteen regulated poems in seven-syllable lines',
+                    english: 'Printed as two sets of eight, and standing as juan 1 and 2 of the 三註 recension. The tradition reads the number as the \'two eights\' 二八 — the balanced ounces of true lead and true mercury — and takes these poems as the statement of principle.',
+                },
+                {
+                    heading: '七言絕句六十四首 — sixty-four quatrains in seven-syllable lines',
+                    english: 'Printed as two sets of thirty-two, juan 3 and 4, and matched by the tradition to the sixty-four hexagrams of the Yijing. The most heavily commented part of the book.',
+                },
+                {
+                    heading: '五言一首 — one poem in five-syllable lines',
+                    english: 'A single short poem, read as standing for the undivided One, or the Great Ultimate, before the divisions. It opens juan 5.',
+                },
+                {
+                    heading: '西江月十二首 — twelve lyrics to the tune \'Moon over the West River\'',
+                    english: 'Standing with the five-syllable poem in juan 5, matched to the twelve months and by extension to the twelve stages of the yearly and daily cycle. Some recensions add a thirteenth lyric and a further five quatrains.',
+                },
+                {
+                    heading: '禪宗歌頌 — songs and gāthās of the Chan school',
+                    english: 'An appendix of Buddhist verses — 性地頌, 無罪福, 三界惟心, 圓通, a 心經頌 on the Heart Sūtra, and the 禪定指迷歌, the \'Song of Pointing Out the Way in Chan Meditation\'. Not spurious, but not universally transmitted either: it stands as juan 30 of the 修真十書 recension, and is absent from the 三註, which ends with the fifth juan and Zhang\'s postface.',
+                },
+            ],
+            contentsNote: 'The numerology of 16, 64, 1 and 12 is asserted by Zhang himself in the postface and by every commentator after him; whether the poems were composed to those counts or the counts fitted afterwards is not recoverable. The additional lyric and quatrains, and the presence of the Chan appendix at all, differ between the canon recensions — the 修真十書 version and the 三註 version are not the same book — so the totals given in different modern accounts will not always agree, and an account that reports the Chan verses as part of the standard text is describing only one witness.',
+            editions: [
+                {
+                    label: 'Chinese Text Project — 紫陽真人悟真篇三註 (Zhengtong Daozang text)',
+                    url: 'https://ctext.org/wiki.pl?if=en&res=956241',
+                    note: 'The poems in five juan with the three commentaries printed together — 紫賢薛道光, 子野陸墅 and 上陽子陳致虛, as the text names them at the head of each juan. The standard scholarly form, and the one that shows how differently three committed readers construed the same quatrain. Note that it carries the poems and the postface only: the Chan appendix is not in it. No public-domain English translation exists.',
+                },
+                {
+                    label: 'Chinese Text Project — 修真十書悟真篇 (Zhengtong Daozang text)',
+                    url: 'https://ctext.org/wiki.pl?if=en&res=659474',
+                    note: 'The recension standing at juan 26–30 of the Song compendium 修真十書, which is where the Chan appendix survives: juan 30 carries the 禪宗歌頌 entire, opening with Zhang\'s own statement of why a book on the elixir should end in Buddhist verse. The indispensable second witness against the 三註.',
+                },
+            ],
+        },
+        {
+            slug: 'yinfu-jing',
+            native: '黃帝陰符經',
+            translit: 'Huángdì yīnfú jīng',
+            english: 'The Yellow Thearch\'s Scripture of the Hidden Tally',
+            author: 'Attributed to the Yellow Thearch, which is to say anonymous. Its appearance in history is the work of 李筌 Lǐ Quán (fl. mid-eighth century), a military writer and Daoist who claimed to have found the scripture walled up in a stone chamber at Mount Song — the canon still styles him 少室山李筌, Li Quan of Shaoshi, after the peak in question — and who supplied it with the first commentary. Most scholars regard the text as a Tang composition, and a good many regard Li Quan himself as its author; a minority argue for a sixth-century date on the strength of its vocabulary. There is no manuscript or citation before Li Quan.',
+            date: 'Eighth century for the text\'s emergence; the composition date is exactly the question at issue. It circulates in two recensions, one of a little over three hundred characters and one of a little over four hundred — the canon text runs to roughly four hundred and fifty graphs of scripture — and the longer is not simply the shorter with additions: the relation between them is one of the standing problems of the field.',
+            language: 'Classical Chinese, of an extreme and studied terseness; whole doctrines are compressed into four graphs',
+            volume: 'The Cinnabar Books',
+            description: 'The Yinfu jing (Yin-fu ching): four hundred-odd characters that carry more commentary per graph than anything else in the canon — more than twenty commentaries stand in the Ming canon alone, and the Quanzhen 全真 masters returned to it again and again. Its doctrine is unsentimental to the point of shock: heaven and earth and the ten thousand things stand in a relation of mutual robbery, 盜, and the sage\'s art is to steal in his turn, at the right moment. It denies that heaven is benevolent — 天之無恩而大恩生, \'heaven shows no kindness, and thereby great kindness is born\' — and it locates the whole of practice in timing rather than in virtue. The internal alchemists read it as a scripture of the appropriation of the celestial mechanism by the human one; the strategists read it as a manual of war, and Li Quan, who wrote on both, presumably saw no difference.',
+            incipit: {
+                native: '觀天之道，執天之行，盡矣。',
+                english: 'Observe the way of heaven; hold to the workings of heaven. That is all.',
+                note: 'The opening sentence, and among the most quoted lines in the tradition. 盡矣 — \'it is complete\', \'that exhausts it\' — is a Confucian idiom of sufficiency put to a purpose the Analects would not have recognised. The transcribed canon text titles the work 黃帝隂符經, printing 隂 for 陰: an orthographic variant of the same word, not a different one.',
+            },
+            contents: [
+                {
+                    heading: '神仙抱一演道章上',
+                    english: 'Upper section: \'Divine Immortals Embracing the One, Setting Forth the Way\'. The five thieves 五賊, the mechanism of heaven and man — 天性人也，人心機也 — and the sage who knows the workings and cultivates them.',
+                },
+                {
+                    heading: '富國安民演法章中',
+                    english: 'Middle section: \'Enriching the State and Settling the People, Setting Forth the Method\'. The mutual robbery of heaven, earth, the myriad things and humankind, and the three powers 三才 that are settled when the three thefts are in order.',
+                },
+                {
+                    heading: '強兵戰勝演術章下',
+                    english: 'Lower section: \'Strengthening the Army and Winning the Battle, Setting Forth the Art\'. The blind who hear well and the deaf who see well; the eye as the seat of the mechanism, 機在目; the closing statements on the way that is so of itself and cannot be contravened.',
+                },
+            ],
+            contentsNote: 'This threefold division, with its titles, is that of the four-hundred-character recension as printed in the Ming canon; the shorter recension ends partway through what is here the middle section, which is one of the arguments for regarding the remainder as an accretion. Some commentators divide instead into three 篇 without titles, and some print the text undivided. The division is therefore genuine to the transmitted text but not necessarily to the composition. A caution for anyone reading the ctext transcription: its first heading is set as 神仙抱一演道童上, with 童 for 章, which is an artefact of optical character recognition and not a variant.',
+            editions: [
+                {
+                    label: 'Chinese Text Project — 黃帝陰符經 (Zhengtong Daozang text)',
+                    url: 'https://ctext.org/wiki.pl?if=en&res=579905',
+                    note: 'The complete longer recension with its three section headings, from the Ming canon, on a single page. The site records three versions of the work in all, which can be set side by side.',
+                },
+                {
+                    label: 'Legge, The Texts of Tâoism, Part II (Sacred Books of the East XL, Oxford, 1891), Appendix II',
+                    url: 'https://archive.org/details/wg940',
+                    note: 'Legge\'s translation, as \'the Yin Fû King, or Classic of the Harmony of the Seen and the Unseen\', with a preliminary note in which he rehearses Li Quan\'s story and declines to believe it. The most accessible public-domain English version.',
+                },
+                {
+                    label: 'Chinese Text Project — 黃帝陰符經疏, Li Quan\'s commentary',
+                    url: 'https://ctext.org/wiki.pl?if=en&res=640834',
+                    note: 'The commentary transmitted under Li Quan\'s name, in a preface and three juan — the reading of the man who put the scripture into circulation. Its section headings read 富國安人 where the canon\'s bare text reads 富國安民: the graph 民 has been avoided out of respect for the personal name of Emperor Taizong, Li Shimin 李世民, and the substitution dates the commentary as surely as a colophon would.',
+                },
+            ],
+        },
+        {
+            slug: 'yunji-qiqian',
+            native: '雲笈七籤',
+            translit: 'Yúnjí qīqiān',
+            english: 'Seven Slips from the Cloudy Satchel',
+            author: '張君房 Zhāng Jūnfáng (c. 961–1042), a scholar-official who took over the direction of an imperial canon project from Qi Guan 戚綸, whom he replaced. He is a compiler, not an author: the book is quotation throughout, from some seven hundred earlier works, and Zhang\'s contribution is the selection, the arrangement and a preface.',
+            date: 'The underlying canon, the 大宋天宮寶藏 in 4,565 juan, was completed in 1016 and presented in seven manuscript sets in 1019. The anthology drawn from it carries a preface dated about 1028–1029. It was commissioned under Emperor Zhenzong and dedicated to him, but he died in 1022 and it was presented to his successor Renzong — a small tangle characteristic of this book\'s history.',
+            language: 'Classical Chinese of every register the Daoist corpus contains, since almost every word of it is quoted from somewhere else',
+            volume: 'The Canon Anthologised',
+            description: 'The Yunji qiqian (Yün-chi ch\'i-ch\'ien), the \'little canon\' 小道藏 — and the most useful single book on this shelf, because it is a photograph of a canon that no longer exists. Zhang Junfang assembled it from the Song canon of 1016, and that canon was destroyed; several hundred of the works he quotes survive nowhere else, or survive only in versions later than his. Its title encodes the canon\'s own architecture: the \'seven\' are the Three Caverns and the Four Supplements, and the cloudy satchel is the book-bag of a Daoist. What it gathers is the whole medieval science of the person — cosmogony, the history of the transmissions, the interior gods, breathing, gymnastics, dietetics, dreams, talismans, the biographies of transcendents, and a substantial body of alchemical poetry. Kristofer Schipper characterised it as a handbook to the Tang religion of nourishing life and a key to the art and literature of that period, and this is not an overstatement: the Daoism that poets such as Li Bai and Li Shangyin moved among is in here. In simplified script the title appears as 云笈七签, worth knowing before searching a mainland database.',
+            incipit: {
+                native: '老君指歸曰：太上之象，莫高乎道德。',
+                english: 'The Laojun zhigui says: among the images of the Most High, none stands higher than the Way and its Power.',
+                note: 'The opening of juan 1, the 道德部 or \'Section on the Way and its Power\' — and, characteristically, a quotation: the anthology begins by citing the Laozi zhigui attributed to the Han recluse Yan Zun 嚴遵. The line is normalised here. The Siku quanshu text, which is the one available online, prints 徳 for 德 and 髙 for 高 throughout, and titles the book 雲笈七籖 with 籖 for 籤; these are variant shapes of the same words, not different words, and a search on the standard graphs will not find them.',
+            },
+            contents: null,
+            contentsNote: 'The received anthology runs to 122 juan, plus an unnumbered 卷首 — Zhang\'s own preface says 120, and the discrepancy has never been satisfactorily explained — grouped into thirty-seven 部 or thematic sections. The juan boundaries are firm and the section boundaries are not separately marked in the digitised text, so no full table is printed here. The opening sequence can be given with confidence, having been checked against the text: juan 1 道德部, the Way and its Power; juan 2 混元混洞開闢劫運部, on primordial chaos, the opening out of the world and the cycles of the kalpas; juan 3 道教本始部, on the origins of the teaching; juan 4 道教經法傳授部, on the transmission of the scriptures and their methods. From there the anthology proceeds outward from cosmogony to institution and inward to the body.',
+            editions: [
+                {
+                    label: 'Chinese Text Project — 雲笈七籤 in 122 juan (Siku quanshu text)',
+                    url: 'https://ctext.org/wiki.pl?if=en&res=152882',
+                    note: 'The complete anthology, juan by juan, from the Qianlong-era Siku quanshu recension, with an introductory account of the text\'s history. Read it knowing that this printing uses the variant graphs described in the note on the incipit above. No public-domain English translation exists, and none of the whole exists in any language.',
+                },
+                {
+                    label: 'Internet Archive — 正統道藏, the Zhengtong Daoist Canon in a thirty-six-volume facsimile',
+                    url: 'https://archive.org/details/daozang05_202201',
+                    note: 'A scan of the modern facsimile reprint of the Ming canon, complete as thirty-six numbered volume files despite the \'05\' in the item\'s identifier. A user upload rather than a scholarly edition, with no editorial apparatus and no volume index of its own, and offered here as a way to see the canon as a physical object rather than as a text to cite; the Yunji qiqian stands in it among the Four Supplements, in the 太玄 division.',
+                },
+            ],
+        },
+    ],
+};

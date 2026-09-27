@@ -1,0 +1,70 @@
+export default {
+sections: [
+            {
+                id: 'wob-embodied',
+                title: null,
+                image: '/media/a27680a409bcf7fa88d303d06bc541ea.webp',
+                imageCaption: 'The earliest mode of being: present, embodied, attuned to immediate environment.',
+                lede: 'In early human history, survival demands required individuals to remain closely attuned to the present moment. Immediate environmental pressures—such as securing food, avoiding danger, and responding to changing conditions—necessitated a form of living that was largely non-temporal. Under such conditions, little cognitive energy could be devoted to sustained reflection on the past or projection into the future; consciousness was therefore predominantly oriented toward the present moment.',
+                paragraphs: [
+                    'Within this context, decision-making can be described as a form of habitual reactivity. That is, behavior was guided primarily by direct responsiveness to environmental stimuli. Human action unfolded in accordance with external conditions and, more broadly, in rhythm with natural cycles. In contemporary terms, this mode of processing is sometimes associated with what is called "bottom-up" cognition, where sensory input and affective responses play a primary role in shaping behavior before higher-order reasoning intervenes. Although simplified, this framework loosely corresponds to models in which neural processing flows from more evolutionarily ancient systems toward more recently developed neocortical regions.',
+                ],
+            },
+            {
+                id: 'wob-abstract',
+                title: null,
+                paragraphs: [
+                    'As human societies developed increasing control over their environments through agriculture, animal husbandry, architecture, and technological innovation, the immediacy of survival pressures was gradually reduced. This shift introduced a novel condition: leisure. With the partial alleviation of constant environmental demands, cognitive resources could be reallocated. Human consciousness began to extend beyond the immediacy of present experience, enabling sustained reflection on the past and anticipation of the future.',
+                    'This transition also marked a shift in the dominant mode of cognition. Rather than relying primarily on reactive, stimulus-driven processes, individuals increasingly engaged in deliberative reasoning. In simplified terms, decision-making began to reflect a more "top-down" orientation, in which abstract thought, planning, and conceptual frameworks shaped perception and action. This expansion of temporal awareness, encompassing memory, anticipation, and symbolic reasoning, also contributed to the emergence of complex cultural and religious systems, which often situate human life within broader metaphysical narratives.',
+                ],
+            },
+            {
+                id: 'wob-fragmented',
+                title: null,
+                image: '/media/ed6842c1d4232f607771d4597eb60a79.webp',
+                imageCaption: 'Modern consciousness: distracted, mediated, suspended between reaction and abstraction.',
+                paragraphs: [
+                    'In the contemporary world, however, a tension appears to have emerged between these modes of cognition. On the one hand, modern environments, characterized by constant stimulation, technological mediation, and rapid information flow, foster reactive behavioral patterns reminiscent of earlier "bottom-up" processes. On the other hand, individuals remain heavily engaged in abstract thought, often preoccupied with past experiences or future projections. The result may be a fragmentation of attention, in which neither grounded presence nor fully integrated reasoning is consistently achieved.',
+                    'From this perspective, the central problem is not the existence of either mode, but their imbalance. The capacity for reflective, top-down reasoning has not been meaningfully integrated with a stable awareness of the present moment. Instead, immediacy has been displaced by distraction, while reasoning often operates in ways detached from lived experience.',
+                ],
+            },
+            {
+                id: 'wob-diagram',
+                type: 'quadrant-diagram',
+                title: null,
+                paragraphs: [],
+            },
+            {
+                id: 'wob-integrated',
+                title: null,
+                image: '/media/15266b37362429cd6df41c7e9bc4baff.webp',
+                imageCaption: 'Practical wisdom: reflective thought held in tension with present-moment awareness.',
+                paragraphs: [
+                    'What follows from this analysis is that a rebalancing is required. Decision-making should be guided more deliberately by higher-order cognitive processes, while consciousness itself should be re-anchored in present-moment awareness. In this formulation, the ideal condition is not a return to purely reactive existence, nor an escape into abstract reasoning, but a synthesis: a mode of being in which reflective thought operates in harmony with a grounded sense of immediacy.',
+                    'This is not to say that this synthesis should be one\'s only cognitive position — there are obvious conditions that demand a shift into projective planning or survival reactivity. But it should be one\'s resting or default mode of being. And there is reason to think the payoff is considerable. When reflective thought stays anchored in present experience, reasoning is continually checked against what is actually in front of us, rather than running free in abstraction; and present awareness, in turn, is given shape and direction by that reasoning. Judgment formed this way is responsive to particulars without being merely reactive to them, which is close to what Aristotle meant by phronesis, the practical wisdom that knows not just what is good in general but what this situation calls for. A life lived in that balance is also plausibly what he meant by eudaimonia: not fleeting pleasure, but the sustained flourishing that comes from acting well and knowingly.',
+                    'Re-wiring one\'s own way of being is no small task. But we live in an era of unusual fortune — chief among its gifts being the capacity for retrospection. Abundant knowledge of both the present and the past lets us see the imbalance clearly and take corrective action: to reclaim dominion over the only things truly ours — our thoughts, our words, our actions — and to hold them, at once, in reasoned reflection and grounded presence. For anyone hoping to build a life that is both fruitful and navigable, there may be no worthier goal.',
+                ],
+            },
+        ],
+marginalia: {
+            eyebrow: 'Ways of Being',
+            summary: 'A synthesis of presence and reflection: the practical wisdom that comes from holding bottom-up awareness and top-down reasoning in balance.',
+            correspondences: [
+                { term: 'Tradition', value: 'Aristotelian Ethics' },
+                { term: 'Concept', value: 'Phronesis' },
+                { term: 'Theme', value: 'Eudaimonia' },
+            ],
+            conversationLabel: 'The Author',
+            figures: [
+                {
+                    name: 'Jacob Trayer',
+                    role: 'Freemason, esoteric scholar, Grand Orator of the Grand Lodge of Arizona, and co-founder of Tria Prima.',
+                    image: '/media/fac6744621da1f040468be8de464350f.webp',
+                    links: [
+                        { label: 'Author Bio', href: '/third-lamp/authors#jake-treyer' },
+                        { label: 'Tria Prima', href: 'https://triaprima.co/' },
+                    ],
+                },
+            ],
+        },
+};
