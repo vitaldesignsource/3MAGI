@@ -74,6 +74,34 @@ export default {
             },
         },
         {
+            key: 'iranian',
+            label: 'Iran',
+            cells: {
+                sky: { name: 'Ahura Mazda', note: 'Not a sky-father but a mind: the Wise Lord has no consort, no birth and no succession myth, and holds the world in the order called aša.' },
+                storm: { name: 'Tishtrya', note: 'The rain-star, Sirius, who fights the drought-demon Apaosha at the sea in the form of a white horse and whose victory is the monsoon — the office exists but is astronomical.' },
+                sun: { name: 'Hvar Khshaeta', note: 'The undying, swift-horsed sun, and a yazata rather than a ruler; Mithra is repeatedly confused with him and is not him.' },
+                love: { name: 'Anahita', note: 'The waters before love: fertility, the source of all rivers, and the one Avestan divinity the texts trouble to describe head to foot.' },
+                war: { name: 'Verethragna', note: 'Not war but the breaking of resistance, and encountered as ten successive shapes — wind, bull, horse, camel, boar, youth, raven, ram, goat, swordsman.' },
+                wisdom: { name: 'Vohu Manah', note: 'Good Mind, first of the Bounteous Immortals: wisdom here is an aspect of the god rather than a separate god, which is what makes this pantheon unlike the others in the table.' },
+                underworld: { name: 'Angra Mainyu', note: 'The office is not a kingdom of the dead but the adversary principle itself; the dead are judged at the Chinvat Bridge and the House of the Lie is a destination, not a court.' },
+                trickster: { name: '—', note: 'Genuinely absent, and the absence is the doctrine. Where the cosmos is a standing choice between truth and the Lie, a figure who profits by crossing the line cannot be given a seat at the table — he would simply be on the other side of it.' },
+            },
+        },
+        {
+            key: 'celtic',
+            label: 'Ireland',
+            cells: {
+                sky: { name: 'The Dagda', note: 'Not a sky god: the high god here is the competent one, holding weather, abundance and time by way of a club, a cauldron and a harp.' },
+                storm: { name: '—', note: 'No thunderer survives in the Irish material. Gaulish Taranis, whose name is simply "thunder", is attested on the continent and has no Irish counterpart — an absence that may be real or may be what the monks left out.' },
+                sun: { name: 'Lugh', note: 'Called a sun god throughout the nineteenth century on the strength of his brightness and his harvest festival; the philology does not support it, and the portal records the identification as a modern one.' },
+                love: { name: 'Sovereignty herself', note: 'Ireland gives the office to the land: a goddess of the territory chooses the king by accepting him, and Medb, Ériu and the Morrígan all hold the role. Union is political before it is erotic.' },
+                war: { name: 'The Morrígan', note: 'Who does not fight. She prophesies, obstructs, washes the armour of the doomed and settles on the corpse — battle as something determined rather than waged.' },
+                wisdom: { name: 'Ogma', note: 'Champion and man of letters, credited with inventing the ogam script that carries his name — the Irish pairing of strength with literacy in one body.' },
+                underworld: { name: 'Donn', note: 'The dark one, whose house off the south-west coast is where the Irish dead gather; the sídh mounds are the other country, and Manannán apportions them after the defeat.' },
+                trickster: { name: 'Manannán mac Lir', note: 'Threshold rather than mischief: the mist that hides, the boat that needs no oar, and the poem that tells Bran the sea he is rowing on is a flowering plain.' },
+            },
+        },
+        {
             key: 'roman', label: 'Rome',
             cells: {
                 sky: { name: 'Jupiter', note: 'Iuppiter Optimus Maximus on the Capitol — the same Indo-European sky-father name as Zeus, but a magistrate’s god, bound to auspices and the state.' },

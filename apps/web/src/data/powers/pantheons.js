@@ -21,15 +21,145 @@ export default {
           imageCaption: 'The household by their attributes: the loom and the city, the staff and the throne, the lyre, the ivy and the cup, and the torches at the threshold — Athena, Zeus, Apollo, Dionysus, Hekate.',
           label: 'Olympus', blurb: 'The best-documented family in the ancient world, and the one whose quarrels the West kept quoting.' },
         { key: 'norse', label: 'Ásgarðr', blurb: 'Æsir and Vanir, written down in Iceland two centuries after the conversion — the record is Christian, the matter is not.' },
+        { key: 'celtic', label: 'The Tuatha Dé', blurb: 'The gods of Ireland, and the hardest case in this table: every word of them survives in manuscripts written by Christian monks, who set them down not as gods but as an earlier race of people. What is recovered here is recovered through that frame, and the frame is part of the evidence.' },
         { key: 'vedic', image: '46d3ef2547e831ac42fce5cf8decf09c.webp',
           imageAlt: 'A priest tending a fire altar before a bronze Nataraja at a riverside temple while a canopied Durga image is carried past on the wet ghats under a lightning storm',
           imageCaption: 'Agni first, then the procession: the fire fed before Śiva’s dance while Durgā is carried along the ghats — the one pantheon in this portal that never stopped.',
           label: 'The Vedic and Hindu Gods', blurb: 'From the hymns of the Rigveda to the living devotions of a billion people — the one pantheon in this portal that never stopped.' },
+        { key: 'iranian', label: 'The Wise Lord and the Lie', blurb: 'The gods of Iran, set here beside the Vedic gods because they are the same gods inverted: daēva and devá are one word, and in Iran it came to mean demon. A pantheon reorganised by a prophet into a choice between two spirits.' },
         { key: 'yoruba', label: 'The Òrìṣà', blurb: 'The gods of Ile-Ife and Yorubaland, carried across the Atlantic in the holds of ships and alive on three continents.' },
         { key: 'roman', label: 'Rome', blurb: 'A pantheon of magistrates: gods bound by procedure, addressed by exact formula, and expanded by treaty whenever Rome absorbed a people who had their own.' },
         { key: 'kami', label: 'The Kami', blurb: 'The powers of Japan — of whom the Kojiki says there are eight million, meaning uncountable.' },
     ],
     entries: [
+        // --- Iran ----------------------------------------------------------
+        // No Avestan script is printed here. The site self-hosts no Avestan
+        // face and almost no system carries the block, so the names would
+        // reach most readers as empty boxes; the Avestan forms are given in
+        // the prose instead, where they cost nothing.
+        {
+            slug: 'ahura-mazda', name: 'Ahura Mazda', lang: 'latin',
+            domain: 'Wisdom, creation, and the order called aša', group: 'iranian',
+            exposition: [
+                'Avestan *Ahura Mazdā*, the Wise Lord, and in Middle Persian Ohrmazd. He is not a sky-father promoted, and he is not a king of a family of gods: he has no consort in the oldest texts, no birth, and no myth of succession. What he has is thought. The Gāthās, the hymns attributed to Zarathustra himself and the oldest Iranian material we possess, address him as a mind that made the world by thinking it and holds it in an order — *aša*, truth, rightness, the way things are when they are as they should be.',
+                'The Achaemenid kings put him on the cliffs. Darius at Behistun credits every province and every victory to him by name and says plainly that he did these things by the favour of Ahura Mazda, which makes this the earliest imperial monotheism on the record, five centuries before Constantine and with an inscription you can still climb to.',
+            ],
+            cult: 'Fire temples, where the flame is tended and is not itself worshipped; the Yasna liturgy, still celebrated.',
+            interpretatio: 'Greek writers called him Oromasdes and made Zoroaster a magus of enormous antiquity; the identification of Ahura Mazda with the Jewish God was argued in antiquity and is still argued.',
+        },
+        {
+            slug: 'angra-mainyu', name: 'Angra Mainyu', lang: 'latin',
+            domain: 'The destructive spirit, the Lie, and the choice against order', group: 'iranian',
+            exposition: [
+                'Avestan *Aŋra Mainiiu*, the Destructive Spirit; Middle Persian Ahriman. He is the single most consequential religious idea Iran gave the world, and he is routinely described wrongly. He is not a fallen angel, not a rebel, and not a creature: in the Gāthās two Spirits are twins who meet at the beginning and *choose*, one the truth and one the Lie, and everything that follows from either follows from that choice.',
+                'This is dualism as decision rather than as substance, and it puts a strain on the system that Iranian theology never entirely resolved. If Ahura Mazda is wholly good and made everything, where did the other twin come from? Zurvanism answered by making both the sons of Time, which orthodoxy rejected; the orthodox answer keeps the two co-primordial and limits the conflict to a fixed term that good is certain to win. The argument is the same one Christian theology would have about evil, held several centuries earlier and with the opposite starting assumptions.',
+            ],
+            cult: 'None, by definition, though later Zoroastrian practice is full of rites for driving off what belongs to him.',
+            interpretatio: 'Plutarch renders him Areimanios and reports the doctrine accurately enough to be useful; the Devil of later Judaism and Christianity is frequently derived from him, on evidence that is suggestive and not conclusive.',
+        },
+        {
+            slug: 'mithra', name: 'Mithra', lang: 'latin',
+            domain: 'The contract, the oath, the pastures, and the light before sunrise', group: 'iranian',
+            exposition: [
+                'The name is a common noun before it is a god: *miθra* means contract. He is what happens when an agreement is treated as a being — the god who watches whether you keep your word, with a thousand ears and ten thousand eyes, and who destroys the *mithradruj*, the one who lies to a contract. The Mihr Yašt, the hymn to him, is one of the longest and finest in the Avesta, and it is essentially about bad faith.',
+                'He is also the one Iranian god whose afterlife is a scholarly problem. The Roman mysteries of Mithras — the underground chambers, the grades of initiation, the bull-killing — share the name and very little that can be demonstrated. Franz Cumont’s account, which derived the Roman cult straight from Iran, held the field for two-thirds of the twentieth century and was broken open at the Manchester congress of 1971; Richard Gordon’s objection is the hard one, that the tauroctony central to every Roman shrine has no Iranian precedent and looks like a Roman invention. Positions now range from a weak Iranian inheritance to nothing shared but the name, and there is no consensus. The portal keeps them apart and says why.',
+            ],
+            cult: 'The Mihragān festival, at the autumn equinox and second only to Nowruz; oaths sworn on fire and water.',
+            interpretatio: 'Vedic Mitra is the same god by descent, and also the god of the contract — the clearest single proof that the two traditions were once one.',
+        },
+        {
+            slug: 'anahita', name: 'Anahita', lang: 'latin',
+            domain: 'The waters, fertility, and the strength of heroes', group: 'iranian',
+            exposition: [
+                'Avestan *Arədvī Sūrā Anāhitā* — the Moist, the Strong, the Undefiled — and the exception to almost everything else in this family. Where the Avesta generally declines to describe its divinities, the Ābān Yašt spends verse after verse on her: a tall young woman in a beaver-skin cloak and golden shoes, with a jewelled diadem, standing at the source of all the waters of the world, to whom the heroes come and ask.',
+                'She is also where Iranian aniconism broke. Artaxerxes II set up statues of her in Susa, Ecbatana and Babylon and named her in his inscriptions beside Ahura Mazda and Mithra — the first Achaemenid to name any god but Mazda, and the first to give any of them an image. Whether she is originally Iranian, or a Mesopotamian goddess of the Ishtar line taken in and renamed, is not settled.',
+            ],
+            cult: 'Temples with images under the later Achaemenids and the Sasanians; shrines at springs, several of which are still visited.',
+            interpretatio: 'Equated by Greeks with Aphrodite and with Artemis, by Mesopotamians with Ishtar, and in Armenia continued as Anahit, whose sanctuary at Erëz was the richest in the country.',
+        },
+        {
+            slug: 'verethragna', name: 'Verethragna', lang: 'latin',
+            domain: 'Victory — specifically the breaking of resistance', group: 'iranian',
+            exposition: [
+                'Avestan *Vərəθraγna*, which is not "victory" in the abstract but the smashing of the thing that stands in the way. The Bahrām Yašt is unlike any other hymn in the collection: it simply lists the ten shapes in which he comes to Zarathustra — a wind, a bull with golden horns, a white horse, a rutting camel, a boar, a youth of fifteen, a raven, a ram, a wild goat, and a man with a golden sword. No narrative, no temple, no genealogy. A god who is a sequence of appearances.',
+                'The raven is the one that travelled. His feather, carried, is said to make the bearer unassailable, and the association of victory with a bird persists across Iranian and Armenian material long after the theology around it was replaced.',
+            ],
+            cult: 'Invoked before battle and in healing; the twentieth day of the month is his, and so is the planet Mars in the later system.',
+            interpretatio: 'Greeks called him Herakles. Armenian Vahagn descends directly from him, with a birth-hymn — out of fire, out of reed, with hair of flame — that is one of the few scraps of pre-Christian Armenian verse to survive at all.',
+        },
+        {
+            slug: 'sraosha', name: 'Sraosha', lang: 'latin',
+            domain: 'Hearkening, obedience, and the guarding of the soul after death', group: 'iranian',
+            exposition: [
+                'The name means listening — the act of hearing and heeding, treated as a being. He is the one who stays on the earth at night when the other divinities withdraw, and who stands watch over the world while it sleeps, which makes him the guard rather than the general.',
+                'His particular office is the three nights. After death the soul remains near the body for three days, and on the dawn of the fourth it is brought to the Chinvat Bridge to be weighed, where the bridge broadens to a road for the righteous and narrows to a blade for the rest. Sraosha conducts it there. His bird is the cock, whose crowing at dawn is his voice calling the sleeper to get up and work — which is the traceable origin of the long European folklore in which a cock’s crow disperses the things of the night.',
+            ],
+            cult: 'Invoked at every dawn and in the rites of the three nights; his hymn is among the most recited in living Zoroastrian practice.',
+            interpretatio: 'Frequently compared to the psychopomp angels of Jewish and Christian tradition, and to Michael in particular, on function rather than on any demonstrated line of descent.',
+        },
+
+        // --- Ireland -------------------------------------------------------
+        {
+            slug: 'the-dagda', name: 'The Dagda', native: 'In Dagda', lang: 'latin',
+            domain: 'Abundance, the weather, time, and competence at everything', group: 'celtic',
+            exposition: [
+                'The name means the Good God, and the texts are careful to say it means good *at* things rather than morally good: asked what he can do, he answers that he can do everything the rest of them can do between them. He is also called Eochaid Ollathair, the All-Father, and Ruad Rofhessa, the Lord of Great Knowledge.',
+                'He carries three objects and each one is a joke with a theology inside it. A club so heavy it rides on wheels, which kills with one end and restores life with the other. A cauldron from which no company ever went away unsatisfied. And a harp that will not sound for anyone else, and which, when he calls it, comes to him through the air killing nine men on the way, and then plays the three strains — sorrow, laughter, sleep — and puts the seasons back in order. The Cath Maige Tuired, which is where most of this is, also has him eating porridge out of a hole in the ground with a ladle big enough to hold a man and a woman, and it is not clear the monks writing it down meant us to be entirely respectful.',
+            ],
+            cult: 'None recorded. Everything here is literary, written down centuries after Ireland was Christian.',
+            interpretatio: 'Compared to Gaulish Sucellus, the god with the mallet, and — by Caesar’s scheme, loosely — to Dis Pater as the ancestor of the Gauls.',
+        },
+        {
+            slug: 'the-morrigan', name: 'The Morrígan', native: 'Morrígan', lang: 'latin',
+            domain: 'Sovereignty, battle, prophecy, and the shape of what is coming', group: 'celtic',
+            exposition: [
+                'Even the name is contested. *Mor-* may be Old Irish *mór*, great, giving the Great Queen; or it may be an older element meaning terror or phantom, giving the Phantom Queen. Both are defended. She appears alone and she appears as one of three with Badb and Macha, and the boundary between the individual and the triad is not stable in the sources, which is characteristic rather than careless.',
+                'To call her a war goddess is to miss what she does. She does not fight; she determines. She offers herself to Cú Chulainn, is refused, and thereafter appears at the fords as an eel, a wolf and a heifer to obstruct him; she washes the armour of a man who does not yet know he is going to die; she settles on his shoulder as a crow when he is finally dead, which is how the hero’s enemies know it is safe to approach. Sovereignty in Irish literature is female and is given, and she is the clearest surviving form of that idea.',
+            ],
+            cult: 'None recorded. The Táin and the Cath Maige Tuired are literature from a Christian scriptorium.',
+            interpretatio: 'Often set beside the Gaulish Cathubodua and, at a greater distance, the Norse valkyries, who also choose rather than fight.',
+        },
+        {
+            slug: 'lugh', name: 'Lugh', native: 'Lug Lámfada', lang: 'latin',
+            domain: 'Every skill at once; kingship, and the harvest', group: 'celtic',
+            exposition: [
+                'His epithet is Lámfada, of the long arm, and his title is Samildánach, skilled in all the arts together. The scene that defines him is an admissions interview: he comes to the gate of Tara and the doorkeeper tells him no one enters without an art. He offers wright, smith, champion, harper, warrior, poet, historian, sorcerer, physician, cupbearer, brazier — and each time is told Tara already has one. He asks whether Tara has anyone who is all of them at once. It does not, and he is let in.',
+                'He then leads the Tuatha Dé against the Fomorians and kills their king Balor, his own grandfather, whose single eye destroys whatever it looks at — with a sling-stone, through the eye, at the moment it is being opened. The festival Lugnasad, which he founds in mourning for his foster-mother Tailtiu, kept his name through the whole Christian millennium and is still in the Irish word for August.',
+            ],
+            cult: 'Lugnasad at the start of the harvest; assemblies with games and legal business attached, at Tailtiu and elsewhere.',
+            interpretatio: 'Continental Lugus stands behind a great many place names — Lugdunum, which is Lyon, chief among them. Caesar’s “Mercury”, the god he says the Gauls honour most and call the inventor of all arts, is generally taken to be him.',
+        },
+        {
+            slug: 'brigid', name: 'Brigid', native: 'Brigit', lang: 'latin',
+            domain: 'Poetry, smithcraft, healing — and fire through all three', group: 'celtic',
+            exposition: [
+                'Daughter of the Dagda, and described in the glossaries as three sisters of one name: a Brigit of poets, a Brigit of smiths, a Brigit of healers. The common element is fire under discipline — the forge, the inspiration, the fever — and the Irish word for her name is glossed as the exalted one.',
+                'And then the problem, which is the most argued question in the field. Saint Brigid of Kildare shares the name, the associations — poetry, healing, smithcraft, livestock, fire — and a feast day falling on Imbolc; a perpetual flame was kept at Kildare and tended by women. Continuity looks obvious, and the obviousness is exactly why it is disputed. The textual scholars point out that the earliest Life is seventh-century, written inside a functioning church with its own reasons, and that shared concerns need not mean transmission; Kim McCone’s reading has the saint deliberately constructed out of genuinely Irish material rather than either inherited or imported; Séamas Ó Catháin proposed simply calling the figure a Holy Woman to stop the argument foreclosing. The honest position is that nobody has settled it, and this portal does not settle it either.',
+            ],
+            cult: 'Imbolc at the start of February; at Kildare a fire kept by nineteen women in turn, extinguished at the Reformation and relit in 1993.',
+            interpretatio: 'The Gaulish Brigantia and the British tribal name Brigantes are the same element; the goddess and the saint are compared to one another constantly and identified at the reader’s risk.',
+        },
+        {
+            slug: 'manannan', name: 'Manannán mac Lir', native: 'Manannán mac Lir', lang: 'latin',
+            domain: 'The sea, the mist, and the country on the other side of it', group: 'celtic',
+            exposition: [
+                'Son of Lir, which is to say son of the sea. He rides the waves in a chariot as though they were a plain — the poem in the Voyage of Bran has him describing to Bran, mid-ocean, what Bran cannot see: that the sea Bran is rowing across is a flowering meadow, and the salmon are calves, and the two of them are in the same place looking at different worlds. It is the single best statement in Irish of what the Otherworld is, and it is not a location but a way of seeing.',
+                'He owns the useful things: a boat that goes where its owner wishes without sail or oar, a horse that runs on water, a sword that leaves no wound unfinished, a cloak he shakes between two lovers so that they never meet again, and the *féth fíada*, the mist that hides. After the Tuatha Dé are driven under the hills he is the one who apportions the mounds among them — a god given, in the Christian reworking, the administrative job of the defeated.',
+            ],
+            cult: 'None recorded; the Isle of Man carries his name and kept rent paid to him in rushes into the modern period.',
+            interpretatio: 'Welsh Manawydan fab Llŷr is the same figure by name; Manx and Irish folklore kept him longer than almost any other, which is unusual for a god of the first rank.',
+        },
+        {
+            slug: 'nuada', name: 'Nuada', native: 'Nuadu Airgetlám', lang: 'latin',
+            domain: 'Kingship, and the rule that kingship can be lost', group: 'celtic',
+            exposition: [
+                'Nuadu of the Silver Arm, king of the Tuatha Dé, and the entry that carries the most political theory. At the first battle of Mag Tuired he loses an arm; because a king of Ireland may not have a blemish, he must give up the kingship at once, and does. The physician Dian Cécht makes him an arm of silver, and later Dian Cécht’s son Miach grows flesh over it, and Nuada is restored to the kingship — after which Dian Cécht kills his son out of professional jealousy, and from the son’s grave grow three hundred and sixty-five herbs, one for each sinew and joint, which the physician’s daughter sorts and their father scatters.',
+                'Then Nuada meets Lugh, sees what he is, and gives him the kingship for thirteen days to fight the war. The blemish rule is not decoration: Irish law really did hold that the land answers to the body of its king, and a maimed king means a failed harvest. It is the same idea as the sovereignty goddess, seen from the other end.',
+            ],
+            cult: 'None recorded.',
+            interpretatio: 'British Nodens, who has an actual temple — the late Roman sanctuary at Lydney in Gloucestershire, with dogs and healing and a mosaic — is the same name, and is the closest thing the Irish material has to archaeological ground.',
+        },
+
         {
             slug: 'anu', name: 'An / Anu', native: '𒀭', lang: 'cuneiform',
             domain: 'The sky; the authority behind authority', group: 'mesopotamian',
@@ -560,6 +690,50 @@ export default {
             ],
             cult: 'Usa Jingū in Kyushu; Iwashimizu near Kyoto; Tsurugaoka Hachimangū at Kamakura.',
             interpretatio: 'The clearest instance in this table of a god who was simultaneously and officially a figure in two religions.',
+        },
+        // --- Rome's own ----------------------------------------------------
+        // The Jupiter entry already argues that the Roman gods are not Greek
+        // gods in togas. These four are the evidence for it: the four with no
+        // Greek counterpart worth the name.
+        {
+            slug: 'janus', name: 'Janus', native: 'IANVS', lang: 'latin',
+            domain: 'Beginnings, doorways, and the act of passing through', group: 'roman',
+            exposition: [
+                'The one major Roman god with no Greek equivalent at all, which is why he matters out of proportion to his myths — he has almost none. He has two faces, looking both ways, because a door is the same door from either side. He is named first in every prayer, before Jupiter, because a beginning has to be got through before anything else can happen; the first month is his, and so is the first light of any day.',
+                'The Ianus Geminus in the Forum was a passage with doors at each end that stood open while Rome had an army in the field and were shut when it did not. Before Augustus they had been shut twice in the whole of Roman memory, once under Numa and once after the First Punic War. Augustus shut them three times himself and put it in his own account of his reign, which tells you exactly what the gesture was worth.',
+            ],
+            cult: 'The Agonalia on 9 January; the rex sacrorum sacrificing at the Regia; his name invoked at the opening of every rite.',
+            interpretatio: 'None that holds. Greek writers had to explain him, and their attempts — a king of Latium, an aspect of chaos — read as attempts.',
+        },
+        {
+            slug: 'vesta', name: 'Vesta', native: 'VESTA', lang: 'latin',
+            domain: 'The hearth of the household and of the state', group: 'roman',
+            exposition: [
+                'Her temple is round, has no statue, and contains a fire. That is the whole theology: the goddess is not represented because she is present, and what is tended is not an image of her but her. The flame was relit each first of March and had to burn the rest of the year; its going out was a prodigy requiring expiation, and the Vestal on duty was whipped.',
+                'The six Vestals were taken between six and ten years old, served thirty years, and were the only women in Rome free of a father’s or husband’s legal power — they could make wills and give evidence, which no other woman could. The price was chastity, and the penalty for breaking it was to be walled up alive in an underground chamber with a little bread and water, in a field outside the Colline Gate. Rome, which executed freely, would not shed a Vestal’s blood; the form of the punishment is a precise statement of what she was.',
+            ],
+            cult: 'The Vestalia in June, when the temple opened to married women; the ashes swept out on the fifteenth and thrown in the Tiber.',
+            interpretatio: 'Equated with Hestia, who has the same office and almost none of the same institutional weight — the comparison flatters Greece and misleads about Rome.',
+        },
+        {
+            slug: 'lares-penates', name: 'The Lares and the Penates', native: 'LARES ET PENATES', lang: 'latin',
+            domain: 'The household, its store, and the crossroads', group: 'roman',
+            exposition: [
+                'This is the religion most Romans actually practised. Nearly every house had a lararium, a painted niche or small cabinet, and in it the Lares — usually two dancing youths with drinking horns — and the Penates, the powers of the storeroom, the *penus*, from which the household is fed. Offerings were small and daily: a little food at meals, garlands on the Kalends, first fruits. No temple, no priesthood, no myth.',
+                'Outside the door the same cult was public. The Lares Compitales had shrines where roads met, and the Compitalia was celebrated by the people of the neighbourhood, including slaves, who hung woollen dolls at the crossroads — one for each free person in the house and a ball for each slave. Augustus reorganised the whole system into the Lares Augusti and attached his own genius to it, which put the emperor into three hundred neighbourhood shrines without requiring anyone to call him a god.',
+            ],
+            cult: 'Daily at the lararium; the Compitalia in early January; the genius of the paterfamilias honoured on his birthday.',
+            interpretatio: 'No Greek equivalent. The nearest comparison is not to a god at all but to the ancestor cults of China and of west Africa, and the comparison is better than most in this table.',
+        },
+        {
+            slug: 'saturn', name: 'Saturn', native: 'SATVRNVS', lang: 'latin',
+            domain: 'Sowing, the age before the present one, and its yearly return', group: 'roman',
+            exposition: [
+                'An old Italian god of sowing whose temple at the foot of the Capitol held the state treasury, and whose statue inside it was kept bound with woollen cords all year and unbound for his festival. The reign of Saturn was the age before law, when there was no property and no slavery, and the point of the festival is that it comes back.',
+                'At the Saturnalia in December the courts closed, the toga was put off for informal dress, gambling was legal, gifts were exchanged, a household chose a mock king whose orders had to be obeyed, and masters served their slaves at table. It is the clearest surviving example of an inversion licensed from inside a social order rather than against it, and Roman writers were entirely conscious of what it was doing. One further detail is worth having: his sacrifice was performed with the head uncovered, the Greek rite, where every other Roman sacrifice was made with the head veiled — an exception preserved so long that nobody could explain it.',
+            ],
+            cult: 'The Saturnalia from 17 December, which ran three days, then five, then seven, over the objections of moralists.',
+            interpretatio: 'Identified with Kronos, and through the Greek scheme with the planet, the day and the metal lead — the line by which he entered alchemy and stayed there.',
         },
         {
             slug: 'jupiter', name: 'Jupiter', native: 'IVPPITER', lang: 'latin',
