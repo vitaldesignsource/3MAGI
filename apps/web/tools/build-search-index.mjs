@@ -24,6 +24,7 @@ const load = async (p) => {
 const HALLS = [
     'latin', 'greek', 'hebrew', 'egyptian', 'cuneiform', 'sanskrit', 'arabic',
     'tibetan', 'syriac', 'coptic', 'aramaic', 'persian', 'armenian', 'geez', 'chinese', 'slavonic',
+    'mandaic', 'avestan', 'ugaritic', 'phoenician',
 ];
 const TITLES = {
     latin: 'Latin', greek: 'Greek', hebrew: 'Hebrew', egyptian: 'Egyptian',
@@ -31,6 +32,7 @@ const TITLES = {
     tibetan: 'Tibetan', syriac: 'Syriac', coptic: 'Coptic', aramaic: 'Aramaic',
     persian: 'Persian', armenian: 'Armenian', geez: 'Geʼez',
     chinese: 'Classical Chinese', slavonic: 'Church Slavonic',
+    mandaic: 'Mandaic', avestan: 'Avestan', ugaritic: 'Ugaritic', phoenician: 'Phoenician',
 };
 
 const records = [];
@@ -190,6 +192,18 @@ for (const m of rosicrucian?.manifestos ?? []) push(
 for (const d of rosicrucian?.days ?? []) push(
     CH, 'current', '', `The Chymical Wedding, Day ${d.n}: ${d.title}`,
     `Day ${d.n} of seven`, d.story, `day-${d.n}`, '/christianities/rosicrucian',
+);
+
+// The Witnesses, on the Canon page: the manuscripts by siglum, and the four
+// notes beneath them. Recovered with the dataset itself from the deploy build.
+const codices = await loadCh('codices');
+for (const c of codices?.entries ?? []) push(
+    CH, 'manuscript', c.siglum, c.name, `${c.ga} \u00b7 ${c.date}`,
+    c.proves, c.slug, '/christianities/canon',
+);
+for (const n of codices?.commentary ?? []) push(
+    CH, 'note', '', n.heading, 'On the manuscripts',
+    Array.isArray(n.body) ? n.body[0] : n.body, n.slug, '/christianities/canon',
 );
 
 const bibles = await loadCh('bibles');

@@ -40,12 +40,15 @@ function ChristianitiesCanonPage() {
     const [activeTrad, setActiveTrad] = useState(null);
     const [openBook, setOpenBook] = useState(null);
     const [bibles, setBibles] = useState(null);
+    const [codices, setCodices] = useState(null);
     const [openVersion, setOpenVersion] = useState(null);
+    const [openCodex, setOpenCodex] = useState(null);
 
     useEffect(() => {
         let alive = true;
         loadData('canon').then((d) => { if (alive) setData(d); });
         loadData('bibles').then((b) => { if (alive && b?.versions?.length) setBibles(b); });
+        loadData('codices').then((c) => { if (alive && c?.entries?.length) setCodices(c); });
         return () => { alive = false; };
     }, []);
 
@@ -184,6 +187,105 @@ function ChristianitiesCanonPage() {
                         </aside>
                     )}
                 </section>
+
+                {codices && (
+                    <section className="ch-codices" aria-labelledby="ch-codices-heading">
+                        <header className="edu-section-head">
+                            <p className="kicker">The Books Behind the Lists</p>
+                            <h2 id="ch-codices-heading">The Witnesses</h2>
+                            {codices.intro.map((p, i) => <p key={i}><Rich t={p} /></p>)}
+                        </header>
+
+                        <div className="edu-kinship-scroll ch-codex-scroll" role="region"
+                            aria-label="The great codices compared" tabIndex={0}>
+                            <table className="edu-cognates-table ch-codex-table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Codex</th>
+                                        <th scope="col">Written</th>
+                                        <th scope="col">Columns</th>
+                                        <th scope="col">Mark 16:9&ndash;20</th>
+                                        <th scope="col">Bound in beyond the canon</th>
+                                        <th scope="col">Where it is</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {codices.entries.map((c) => (
+                                        <tr key={c.slug}>
+                                            <th scope="row">
+                                                <span className="ch-codex-siglum">{c.siglum}</span>{c.name}
+                                            </th>
+                                            <td>{c.date}</td>
+                                            <td>{c.columns}</td>
+                                            <td className={c.longEnding ? 'st-in' : 'st-out'}>
+                                                {c.longEnding ? '\u25cf present' : '\u00b7 absent'}
+                                            </td>
+                                            <td>{c.extras}</td>
+                                            <td>{c.city}</td>
+                                        </tr>
+                                    ))}
+                                </tbody>
+                            </table>
+                        </div>
+
+                        {codices.groups.map((g) => {
+                            const rows = codices.entries.filter((c) => c.group === g.key);
+                            if (!rows.length) return null;
+                            return (
+                                <div className="ch-codex-group" key={g.key}>
+                                    <header className="edu-section-head ch-codex-grouphead">
+                                        <h3>{g.label}</h3>
+                                        {g.blurb && <p><Rich t={g.blurb} /></p>}
+                                    </header>
+                                    <div className="ch-entry-list">
+                                        {rows.map((c) => (
+                                            <article key={c.slug} id={c.slug}
+                                                className={`ch-entry${openCodex === c.slug ? ' is-open' : ''}`}>
+                                                <button type="button" className="ch-entry-head"
+                                                    aria-expanded={openCodex === c.slug}
+                                                    onClick={() => setOpenCodex(openCodex === c.slug ? null : c.slug)}>
+                                                    <span className="ch-entry-titles">
+                                                        <span className="ch-entry-name">
+                                                            <span className="ch-codex-siglum">{c.siglum}</span>{c.name}
+                                                        </span>
+                                                        <span className="ch-entry-sub">
+                                                            {[c.ga, c.native, c.date].filter(Boolean).join(' \u00b7 ')}
+                                                        </span>
+                                                    </span>
+                                                </button>
+                                                {openCodex === c.slug && (
+                                                    <div className="ch-entry-body">
+                                                        {(c.exposition ?? []).map((t, i) => <p key={i}><Rich t={t} /></p>)}
+                                                        <div className="ch-kv"><span>What it contains</span><p><Rich t={c.contains} /></p></div>
+                                                        {c.markEnding && (
+                                                            <div className="ch-kv"><span>The end of Mark</span><p><Rich t={c.markEnding} /></p></div>
+                                                        )}
+                                                        <div className="ch-kv"><span>The hand and the page</span><p><Rich t={c.script} /></p></div>
+                                                        <div className="ch-kv"><span>Where it was made</span><p><Rich t={c.place} /></p></div>
+                                                        <div className="ch-kv"><span>Where it rests</span><p><Rich t={c.home} /></p></div>
+                                                        <div className="ch-kv"><span>Reading it</span><p><Rich t={c.access} /></p></div>
+                                                        <div className="ch-kv"><span>What it proves</span><p><Rich t={c.proves} /></p></div>
+                                                        {c.sources && <div className="ch-kv"><span>Sources</span><p><Rich t={c.sources} /></p></div>}
+                                                    </div>
+                                                )}
+                                            </article>
+                                        ))}
+                                    </div>
+                                </div>
+                            );
+                        })}
+
+                        {(codices.commentary ?? []).map((n) => (
+                            <div className="ch-codex-commentary" key={n.slug}>
+                                <h3>{n.heading}</h3>
+                                {(Array.isArray(n.body) ? n.body : [n.body]).map((t, i) => <p key={i}><Rich t={t} /></p>)}
+                            </div>
+                        ))}
+                        {(codices.outro ?? []).map((t, i) => (
+                            <p className="ch-codex-outro" key={i}><Rich t={t} /></p>
+                        ))}
+                    </section>
+                )}
 
                 {bibles && (
                     <section className="ch-bibles has-atmosphere" aria-labelledby="ch-bibles-heading"
