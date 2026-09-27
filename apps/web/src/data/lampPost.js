@@ -104,21 +104,28 @@ export const lampPostCategories = [
         glyph: '☉',
         items: [
             {
-                headline: 'Lives and Literacy in Ancient Egypt',
-                meta: 'Austin, Texas · Harry Ransom Center · Through August 2, 2026',
-                link: 'https://www.hrc.utexas.edu/exhibitions/2026/lives-and-literacy-in-ancient-egypt/',
-                copy: 'This exhibition contains rare papyri from Greco-Roman Egypt, including magical spells and texts rarely placed on public display. It is one of the best current opportunities in the United States to see authentic ancient writing connected with ritual and everyday religious practice.',
+                headline: 'Tarot! Renaissance Symbols, Modern Visions',
+                meta: 'New York · The Morgan Library & Museum · Through October 4, 2026',
+                copy: "Built around the Morgan's own Visconti-Sforza cards, this exhibition reunites most of the surviving figural cards from that fifteenth-century deck with those held by the Accademia Carrara in Bergamo — the first time the majority of the deck has been shown together in North America. A second section follows tarot's reinvention from the 1909 Rider-Waite-Smith deck through its adoption by Surrealist and later artists, including André Breton, Leonora Carrington, Remedios Varo, and Betye Saar. The show closes October 4, so there is not much runway left to see the Visconti-Sforza cards reunited.",
+                links: [
+                    { label: 'The Morgan Library & Museum', url: 'https://www.themorgan.org/exhibitions/tarot' },
+                    { label: 'Smithsonian Magazine', url: 'https://www.smithsonianmag.com/smart-news/see-visions-of-the-past-and-future-in-this-new-york-city-exhibition-on-the-renaissance-roots-of-tarot-cards-180988940/' },
+                ],
             },
             {
                 headline: 'A Witness to Witchcraft: Stewart Farrar and…',
-                meta: 'Cornwall, England · Museum of Witchcraft and Magic · 2026 Seasonal Exhibition',
+                meta: 'Cornwall, England · Museum of Witchcraft and Magic · Through October 31, 2026',
                 link: 'https://museumofwitchcraftandmagic.co.uk',
                 copy: "The museum's 2026 exhibition focuses on Stewart Farrar and the development of modern witchcraft. Farrar was an author, journalist, initiate, and major recorder of Alexandrian Wicca. The exhibition draws upon manuscripts, photographs, ritual objects, correspondence, and archival material.",
             },
             {
                 headline: 'The Haunted Warren Museum',
-                meta: 'Salem, Massachusetts · August 27 – November 1, 2026',
-                copy: 'The Warren collection is scheduled for a temporary public presentation in Salem, including the Annabelle doll and objects associated with Ed and Lorraine Warren\'s paranormal investigations. Best approached as paranormal popular culture and entertainment rather than scholarly occult history.',
+                meta: 'Salem, Massachusetts · August 27 – December 23, 2026',
+                copy: 'The Warren collection is on temporary public display in Salem, including the Annabelle doll and objects associated with Ed and Lorraine Warren\'s paranormal investigations, before the touring collection moves on. Best approached as paranormal popular culture and entertainment rather than scholarly occult history.',
+                links: [
+                    { label: 'Haunted Warren Museum', url: 'https://hauntedwarrenmuseum.com/' },
+                    { label: 'Destination Salem listing', url: 'https://www.salem.org/listing/haunted-warren-museum/' },
+                ],
             },
         ],
     },
@@ -246,6 +253,24 @@ export const lampPostCategories = [
                     { label: 'Archaeology Magazine', url: 'https://archaeology.org/news/2026/02/18/unique-cone-shaped-vessels-may-have-been-beeswax-lamps/' },
                 ]
             },
+            {
+                headline: 'A fragment of the Iliad found inside an Egyptian mummy',
+                meta: 'Oxyrhynchus, Egypt · University of Barcelona mission · Announced April 2026',
+                copy: "During its November–December 2025 season at Oxyrhynchus, the University of Barcelona's archaeological mission opened Tomb 65 in Sector 22 and found a Roman-era mummy with a sealed papyrus packet resting on its abdomen. Analysis by papyrologist Leah Mascia and professor Ignasi-Xavier Adiego identified the text as lines from the Catalogue of Ships in Book II of the Iliad. Earlier seasons at the site had recovered papyri placed in the same position on other bodies, but always carrying explicitly magical or ritual content; this is the first time a literary text has been found occupying what appears to be the same protective role. It suggests that, for at least one Roman-era Egyptian, Homer's verse could stand in for a spell.",
+                links: [
+                    { label: 'University of Barcelona announcement', url: 'https://web.ub.edu/en/web/actualitat/w/oxyrhynchus-iliad-homer' },
+                    { label: 'Smithsonian Magazine', url: 'https://www.smithsonianmag.com/smart-news/archaeologists-unearth-a-papyrus-fragment-from-the-iliad-tucked-inside-the-wrappings-of-a-1600-year-old-egyptian-mummy-180988603/' },
+                ]
+            },
+            {
+                headline: 'A ritual well to the goddess Uni at Kainua',
+                meta: 'Marzabotto, Italy · University of Bologna · Announced August 2026',
+                copy: "The University of Bologna's thirty-ninth excavation campaign at Kainua, the Etruscan planned city near Marzabotto, uncovered a well within the sacred precinct dedicated to the goddess Uni. Excavators recovered two bronze female statuettes, an unusually fine bronze bowl, and the remains of two adults from inside it. The team argues the objects were deliberately deposited rather than lost, and that the well served ceremonies tied to water and possibly to the city's own founding, not merely as infrastructure. It is a rare case where a well-stratified, well-documented deposit lets a sequence of votive practice be read directly, rather than reconstructed from scattered finds.",
+                links: [
+                    { label: 'Archaeology Magazine', url: 'https://archaeology.org/news/2026/08/07/bronze-artifacts-discovered-at-bottom-of-etruscan-well/' },
+                    { label: 'HeritageDaily', url: 'https://www.heritagedaily.com/2026/08/etruscan-votive-offerings-found-in-ritual-well/158867' },
+                ]
+            },
         ],
     },
     {
@@ -333,6 +358,15 @@ export const lampPostCategories = [
                     { label: 'JSTOR', url: 'https://www.jstor.org/stable/j.ctvndv65s' },
                 ]
             },
+            {
+                headline: 'The Latin Hermes in Translation',
+                meta: 'Attrell, Bartlett, Porreca & Stefani · Corpus Christianorum in Translation, Vol. 50 · Brepols, 2026',
+                copy: "This new volume gathers the Latin Hermetic corpus outside the familiar Corpus Hermeticum: the Asclepius, the medieval Glosses on Trismegistus, the Book of Six Principles of Things, and the Book of 24 Philosophers. All four translations are based on the recent critical editions in the Hermes Latinus sub-series, with introductions and notes aimed at making texts that are usually cited rather than read properly accessible to students and scholars. Because three of the four works are medieval rather than ancient, the collection also traces how 'Hermes' kept being reinvented by Latin readers long after the Greek Corpus Hermeticum itself had dropped out of circulation in the West.",
+                links: [
+                    { label: 'Corpus Christianorum', url: 'https://www.corpuschristianorum.org/post/the-latin-hermes-in-translation' },
+                    { label: 'Brepols', url: 'https://www.brepols.net/products/IS-9782503609836-1' },
+                ]
+            },
         ],
     },
     {
@@ -342,9 +376,13 @@ export const lampPostCategories = [
         glyph: '▣',
         items: [
             {
-                headline: 'A reassessment of ritual purity language in temple inscriptions',
-                meta: 'Peer-Reviewed · Summary',
-                copy: 'A recent paper reexamines formulaic purity language across a corpus of temple inscriptions, arguing the phrasing tracks an evolving theology of threshold and access rather than static ritual law.',
+                headline: 'Cursing and Curse Tablets in the Roman West',
+                meta: 'Alex Mullen · Journal of Roman Studies 116 (2026) · Cambridge University Press',
+                copy: "Published online in April 2026, this survey article works through curse tablets across the Roman West: where they were deposited, what cursing practices they encode, and how local languages — including Gaulish — surface within a genre usually assumed to be written in Latin. Mullen treats defixiones as a writing technology rather than a curiosity, tracing how formulae, deposition contexts, and multilingualism vary by region and period. It is a useful frame for reading a single tablet, such as the Heerlen find reported elsewhere on this page, against the wider pattern of the practice.",
+                links: [
+                    { label: 'Journal of Roman Studies, Cambridge Core', url: 'https://www.cambridge.org/core/journals/journal-of-roman-studies/article/cursing-and-curse-tablets-in-the-roman-west/F6EB452071D0E962A93611DD4305193B' },
+                    { label: 'DOI: 10.1017/S0075435826101397', url: 'https://doi.org/10.1017/S0075435826101397' },
+                ],
             },
         ],
     },
