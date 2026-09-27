@@ -43,6 +43,10 @@ export default {
             "label": "Condemned Teachers"
         },
         {
+            "key": "contested",
+            "label": "Condemned Here, Honoured There"
+        },
+        {
             "key": "martyr",
             "label": "Martyrs"
         },
@@ -68,7 +72,9 @@ export default {
             "slug": "gregory-the-great",
             "name": "Gregory the Great",
             "dates": "c. 540–604",
-            "categories": ["latin-father"],
+            "categories": [
+                "latin-father"
+            ],
             "tradition": "Rome; counted a Doctor of the Church in the West and among the Three Holy Hierarchs' company in Eastern devotion, where he is called the Dialogist",
             "role": "Prefect of Rome turned monk turned pope",
             "contribution": "He inherited a city of ruins and plague and governed it in practice as well as in name \\u2014 negotiating with the Lombards, feeding Rome from the papal estates, and reorganising the church's administration so thoroughly that the medieval papacy is substantially his invention. He sent Augustine to Canterbury in 596 and gave him the instruction that made the English mission work: do not destroy the temples, purify them, so that the people may resort to the places they are used to. His Pastoral Rule became the standard manual for bishops for a thousand years, his Dialogues gave the West the life of Benedict, and his Moralia on Job shaped medieval exegesis. He preferred to call himself servus servorum Dei, servant of the servants of God, and the title stuck to the office. The plainchant that carries his name was codified long after him and is not his work in any direct sense.",
@@ -82,7 +88,9 @@ export default {
             "slug": "bede",
             "name": "Bede",
             "dates": "c. 673–735",
-            "categories": ["latin-father"],
+            "categories": [
+                "latin-father"
+            ],
             "tradition": "Northumbria; the only Englishman named a Doctor of the Church",
             "role": "Monk of Jarrow, historian, chronologist",
             "contribution": "He entered the monastery at seven and by his own account never left the north of England, and from that one library produced the Ecclesiastical History of the English People \\u2014 the work that made a nation's story tellable and, incidentally, popularised dating from the Incarnation, anno Domini, which is why the world now numbers its years as it does. His care about sources is startling for the period: he names his informants, distinguishes what he has read from what he was told, and says when he does not know. He also wrote on chronology, orthography and scripture, and was finishing a translation of John's gospel into English on the day he died.",
@@ -93,7 +101,10 @@ export default {
             "slug": "anselm",
             "name": "Anselm of Canterbury",
             "dates": "1033–1109",
-            "categories": ["latin-father", "mystic"],
+            "categories": [
+                "latin-father",
+                "mystic"
+            ],
             "tradition": "Norman Bec, then Canterbury",
             "role": "Abbot, archbishop, and the first great scholastic",
             "contribution": "He gave theology two things it has never put down. The first is the ontological argument of the Proslogion \\u2014 that than which nothing greater can be conceived cannot exist in the understanding alone \\u2014 which has been refuted and revived continuously for nine hundred years, by Aquinas and Kant against, by Descartes, Leibniz and Plantinga for. The second is the satisfaction theory of the atonement in Cur Deus Homo: sin as a debt of honour owed to God that only God can pay and only man ought to, so that the God-man is the necessary solution. Both begin from a method he named: faith seeking understanding, believing in order to understand rather than understanding in order to believe.",
@@ -107,7 +118,9 @@ export default {
             "slug": "symeon-new-theologian",
             "name": "Symeon the New Theologian",
             "dates": "949–1022",
-            "categories": ["mystic"],
+            "categories": [
+                "mystic"
+            ],
             "tradition": "Byzantine",
             "role": "Abbot of St Mamas in Constantinople",
             "contribution": "Only three men in the Orthodox tradition carry the title Theologian, and Symeon is the third. He insisted, against a church establishment that found it disorderly, that direct conscious experience of God as light is available now and is the point of the Christian life \\u2014 and that a person who has not had it should not pretend otherwise. His Hymns of Divine Love describe his own experiences with an immediacy that has few parallels in Greek Christian writing, and he went further still in holding that the authority to bind and loose belongs to those who have the Spirit, whether or not they are ordained.",
@@ -121,7 +134,10 @@ export default {
             "slug": "bernard-of-clairvaux",
             "name": "Bernard of Clairvaux",
             "dates": "1090–1153",
-            "categories": ["mystic", "latin-father"],
+            "categories": [
+                "mystic",
+                "latin-father"
+            ],
             "tradition": "Cistercian",
             "role": "Abbot of Clairvaux and the most powerful voice in twelfth-century Europe",
             "contribution": "He arrived at C\\u00eeteaux with thirty companions and left an order of hundreds of houses. His eighty-six sermons on the Song of Songs \\u2014 which reached only the beginning of the third chapter \\u2014 set the pattern for Western bridal mysticism, and his treatise On Loving God moves through four degrees from loving oneself for one's own sake to loving oneself for God's. He was also a formidable political operator: he settled a papal schism, opposed Abelard at Sens, and preached the Second Crusade, whose catastrophic failure he took upon himself.",
@@ -135,7 +151,10 @@ export default {
             "slug": "bonaventure",
             "name": "Bonaventure",
             "dates": "c. 1217–1274",
-            "categories": ["mystic", "latin-father"],
+            "categories": [
+                "mystic",
+                "latin-father"
+            ],
             "tradition": "Franciscan",
             "role": "Minister General of the Franciscans; the Seraphic Doctor",
             "contribution": "He held the Franciscan order together in the generation after Francis, when it was tearing itself apart between those who wanted the rule kept literally and those who wanted a learned order \\u2014 and he did it by writing the official life of Francis and ordering the earlier ones destroyed, a decision historians have not stopped arguing about. His Journey of the Mind into God, written on the mountain where Francis received the stigmata, maps the ascent through the created world, through the mind, and past both into a darkness where the intellect stops and love goes on.",
@@ -564,7 +583,8 @@ export default {
             "dates": "c. 386 - c. 451",
             "categories": [
                 "antiochene",
-                "heresiarch"
+                "heresiarch",
+                "contested"
             ],
             "tradition": "The Assyrian Church of the East rejects 'Nestorian' as an exonym imposed from outside; it honours the Antiochene tradition he represented, commemorates him among its teachers, and rejects the doctrine attached to his name",
             "role": "Archbishop of Constantinople, deposed 431",
@@ -591,7 +611,8 @@ export default {
             "dates": "c. 465 - 538",
             "categories": [
                 "syriac-father",
-                "antiochene"
+                "antiochene",
+                "contested"
             ],
             "tradition": "Syriac Orthodox, Coptic Orthodox, Armenian Apostolic — the Crown of the Syrians, chief doctor of miaphysite Christology",
             "role": "Patriarch of Antioch, 512-518",
@@ -732,6 +753,120 @@ export default {
             "role": "Bishop of Ávila, ascetic reformer",
             "contribution": "Led a rigorous ascetic movement of laypeople and clergy in Spain — fasting, night vigils, retreat to country estates for study, and the reading of apocryphal scriptures, with women participating as teachers. His opponents charged Manichaeism and sorcery; the treatises recovered at Würzburg in 1885, generally accepted as his or his circle's, show an ascetic biblicism of an unusual cast rather than the dualism alleged. He appealed to the imperial court against his episcopal accusers and was tried at Trier before the usurper Magnus Maximus on a charge of maleficium — sorcery, a capital crime under Roman law — and executed with several companions. He is the first Christian put to death by the state at the instance of churchmen for heresy. Martin of Tours and Ambrose both protested the resort to the secular sword, and Martin refused communion with the bishops who had procured it.",
             "fate": "Beheaded at Trier in 385, with several companions. His body was returned to Spain and venerated as a martyr's; some scholars have proposed, without proof, that the shrine at Compostela is his.",
+            "quote": null
+        },
+        {
+            "slug": "paul-of-samosata",
+            "name": "Paul of Samosata",
+            "dates": "bishop of Antioch c. 260 - deposed 268",
+            "categories": [
+                "heresiarch",
+                "antiochene"
+            ],
+            "tradition": "Antioch, under Palmyrene rule",
+            "role": "Bishop, imperial financial officer, and the first test case for a word",
+            "contribution": "The best-attested early adoptionist: on the account of his opponents he taught that Jesus was a man in whom the Word dwelt as in no other, that the union was one of will and indwelling rather than of being, and that he was therefore a man who became God rather than God who became man. Nothing of his own writing survives whole; every sentence attributed to him comes through the synod that removed him, which is a limitation worth stating before any summary of his views.",
+            "fate": "Deposed by a synod at Antioch in 268, after earlier synods had failed to convict him, and removed from the church building only when Aurelian took the city and ruled that it belonged to whoever was in communion with Rome — the first recorded instance of a Roman emperor settling a Christian property dispute. The long tail is stranger: that synod rejected the term homoousios because of the sense Paul gave it, and fifty-seven years later Nicaea made the same word the test of orthodoxy. Fourth-century writers had to explain the reversal, and Athanasius and Basil both do.",
+            "quote": {
+                "text": "The synod at Antioch rejected the word, not because they did not hold the thing, but because of the sense in which he who was condemned had used it.",
+                "source": "The substance of the defence offered by Athanasius, De synodis 43-45, and by Basil, Letter 52"
+            }
+        },
+        {
+            "slug": "sabellius",
+            "name": "Sabellius",
+            "dates": "fl. c. 215 at Rome",
+            "categories": [
+                "heresiarch"
+            ],
+            "tradition": "Rome, probably out of Libya",
+            "role": "Teacher, and afterwards a label",
+            "contribution": "The name attached to modalism — that Father, Son and Spirit are not three who are one but one who is three times named, a single divine person presenting successively as creator, redeemer and sanctifier. The attraction is obvious and durable: it protects monotheism absolutely and costs nothing in devotion, and it keeps resurfacing under other names for eighteen centuries.",
+            "fate": "Excommunicated by Callistus of Rome about 220. He is the most shadowy figure in this section: not one line of his own survives, the reports come from Hippolytus and Epiphanius who were hostile and writing later, and much of what is called Sabellianism was probably never his. The word outlived any knowledge of the man so completely that by the fourth century it had become a general-purpose accusation, thrown at Marcellus of Ancyra, at Nicene theologians by their opponents, and eventually at almost anyone who stressed the unity too hard.",
+            "quote": null
+        },
+        {
+            "slug": "apollinaris",
+            "name": "Apollinaris of Laodicea",
+            "dates": "c. 310 - c. 390",
+            "categories": [
+                "heresiarch"
+            ],
+            "tradition": "Laodicea in Syria",
+            "role": "Bishop, grammarian, and Athanasius’s ally against the Arians",
+            "contribution": "He asked the question the Nicene settlement had left open. If the Word truly became flesh, what happened to the human mind of Jesus? His answer was that the Word took a human body and soul but supplied the rational mind himself, so that there is one nature and no possibility of two wills pulling against each other. It is a tidy solution, it comes from a man who had fought Arianism at real cost, and it was rejected because of what it implied about us rather than about Christ.",
+            "fate": "Condemned at Rome in 377 and at Constantinople in 381. Gregory of Nazianzus gave the answer that settled it and that has been quoted ever since: what is not assumed is not healed. Then the afterlife: his followers preserved his works by circulating them under the names of Athanasius, Gregory Thaumaturgus and Julius of Rome, and those forgeries were quoted as orthodox authorities for twelve hundred years before nineteenth-century scholarship unpicked them — which means some of the patristic proof-texts used against his own position were written by him.",
+            "quote": {
+                "text": "That which is not assumed is not healed; but that which is united to God is saved.",
+                "source": "Gregory of Nazianzus, Letter 101, to Cledonius, against Apollinaris"
+            }
+        },
+        {
+            "slug": "basil-of-ancyra",
+            "name": "Basil of Ancyra",
+            "dates": "physician, then bishop; deposed 360",
+            "categories": [
+                "heresiarch"
+            ],
+            "tradition": "Ancyra in Galatia",
+            "role": "Leader of the one-iota party",
+            "contribution": "The ablest spokesman for homoiousios — that the Son is of like being with the Father rather than of the same being. The position is routinely treated as a fudge and was not: Basil and his party held that homoousios risked collapsing Father and Son into one person, which is exactly what Sabellius had done, and that like in being guarded a real distinction without conceding that the Son was a creature. They were much closer to Nicaea than to Arius and said so.",
+            "fate": "Crushed between the two sides he was trying to hold apart. The homoiousians were outmanoeuvred by the Acacians at Constantinople in 360 and Basil was deposed and exiled; within twenty years the Nicene party had won outright and his name survived mainly as a byword for splitting a hair. Athanasius, who had no reason to be generous, wrote that those who accept everything else in the Nicene faith and dispute only the word are not to be treated as enemies — an assessment of this party from the man they had opposed.",
+            "quote": null
+        },
+        {
+            "slug": "theodore-of-mopsuestia",
+            "name": "Theodore of Mopsuestia",
+            "dates": "c. 350 - 428",
+            "categories": [
+                "antiochene",
+                "contested"
+            ],
+            "tradition": "Antioch, then Mopsuestia in Cilicia",
+            "role": "Exegete, bishop, and the teacher behind a century of argument",
+            "contribution": "The greatest of the Antiochene interpreters and, in the Church of the East, simply the Interpreter. He read scripture historically and grammatically against the Alexandrian habit of allegory, asking what a text meant to the people who first heard it; he refused to read most of the Psalms as prophecies of Christ; and he set out a christology of two natures in which the assumed man is genuinely a man, with a will and a moral life of his own, joined to the Word by good pleasure. Nestorius was his pupil, and the controversy that broke over Nestorius is in substance an argument about Theodore.",
+            "fate": "He died in 428 in peace, in communion, and honoured — and was condemned a hundred and twenty-five years later. The Three Chapters, anathematised at Constantinople in 553 to conciliate the miaphysites, comprised Theodore’s person and writings, Theodoret’s writings against Cyril, and a letter of Ibas. Most of his Greek works were destroyed after it, and what survives does so in Syriac, in the church that never accepted the condemnation. To the Chalcedonian world he is a condemned heretic; to the Assyrian Church of the East he is a doctor of the faith whose exegesis is normative, and both statements are accurate about the same man.",
+            "quote": null
+        },
+        {
+            "slug": "eutyches",
+            "name": "Eutyches",
+            "dates": "c. 380 - c. 456",
+            "categories": [
+                "heresiarch"
+            ],
+            "tradition": "Constantinople",
+            "role": "Archimandrite, and the occasion of Chalcedon",
+            "contribution": "An elderly and influential monk with powerful friends at court, who pushed opposition to Nestorius past the point Cyril had stopped at. His formula was two natures before the union, one after; pressed at his trial, he would not say that Christ is consubstantial with us, which is the sentence that ended him. He was not a theologian of the first rank and did not intend a system; what he did was state carelessly what many people suspected they believed, and force everyone else to say precisely what they did.",
+            "fate": "Condemned at the Home Synod under Flavian in 448, rehabilitated at the second council of Ephesus in 449 with Dioscorus presiding, and condemned again at Chalcedon in 451; he died in exile. The point that matters most for this portal is what followed his name. Eutychianism became the standard Chalcedonian charge against the Oriental Orthodox — that they held the humanity swallowed up in the divinity — and the Oriental Orthodox churches anathematise Eutyches themselves and always have. The conflation is the accusation, not the position.",
+            "quote": null
+        },
+        {
+            "slug": "dioscorus",
+            "name": "Dioscorus of Alexandria",
+            "dates": "patriarch 444 - deposed 451, died 454",
+            "categories": [
+                "alexandrian",
+                "contested"
+            ],
+            "tradition": "Alexandria",
+            "role": "Patriarch, president of a council, and a saint on one side of a line",
+            "contribution": "Cyril’s archdeacon and successor, who inherited both his christology and his methods and had less of his subtlety. He presided at the second council of Ephesus in 449, which restored Eutyches and deposed Flavian — the assembly Leo of Rome called the Robber Council, which is his polemical name for it and is how it is still generally known. Dioscorus held Cyril’s one incarnate nature of the Word and regarded Chalcedon as a betrayal of it.",
+            "fate": "Deposed at Chalcedon in 451 — and the grounds are worth stating exactly, because they are constantly misreported. He was condemned in the third session for contumacy, having refused three summonses to appear, together with canonical charges about his conduct at Ephesus and his excommunication of Leo. He was not convicted of a heresy. He died in exile at Gangra three years later. He is a saint of the Coptic Orthodox Church and of the Oriental Orthodox communion generally, commemorated in their liturgy, and he is a heresiarch in Chalcedonian churches; the portal records both because the division that followed is the largest in this section.",
+            "quote": null
+        },
+        {
+            "slug": "theodoret",
+            "name": "Theodoret of Cyrrhus",
+            "dates": "c. 393 - c. 466",
+            "categories": [
+                "antiochene",
+                "contested"
+            ],
+            "tradition": "Cyrrhus in Syria",
+            "role": "Bishop, historian, and the man condemned for what he wrote against the winner",
+            "contribution": "The last great Antiochene, and the most useful writer of the period to anyone doing history: his Ecclesiastical History continues Eusebius, his Religious History is the best source for Syrian ascetics, and his Eranistes is a dialogue against Eutychian christology written before Chalcedon settled the question. He fought Cyril of Alexandria hard and in print, and he was right about Eutyches before almost anybody.",
+            "fate": "Deposed at the second council of Ephesus in 449 and restored at Chalcedon in 451 — but only after the assembly made him stand up and anathematise Nestorius, his friend, aloud, which he did with visible reluctance and which the acts record. A century later his writings against Cyril were condemned in the Three Chapters at Constantinople in 553, while he himself was not, so that a man received as orthodox by an ecumenical council had part of his life’s work anathematised by another. He remains a saint in the Chalcedonian churches and the condemnation stands, which is one of the more awkward arrangements in this portal.",
             "quote": null
         },
         {
