@@ -20,6 +20,8 @@ export default {
           imageCaption: 'The left hand of the ledger: the sent-away walking into the wilderness, the accuser at his post, and the mustered two hundred on the far rise.',
           label: 'The Adversaries', blurb: 'Accusers, rebels, and wardens of the left hand — each tradition’s account given in its own terms.' },
         { key: 'pleroma', label: 'Powers of the Pleroma', blurb: 'The great figures of the gnostic drama, and one name that outgrew every system that used it.' },
+        { key: 'mandaean', label: 'The Great Life', blurb: 'The powers of Mandaeism — the one gnostic religion that never stopped, with its own scriptures, its own priests, and a liturgy performed continuously along the rivers of southern Iraq until the displacement of the last twenty years.' },
+        { key: 'manichaean', label: 'The Father of Greatness', blurb: 'The powers of the religion Mani built to be translated, which ran from Spain to the Chinese coast, held Augustine for nine years, and ended in a temple in Fujian.' },
     ],
     entries: [
         {
@@ -201,6 +203,53 @@ export default {
             elsewhere: 'A near-double of the satan of Job, with paperwork; Ethiopia, which canonized Jubilees, kept his file open.',
         },
         {
+            slug: 'invisible-spirit', name: 'The Invisible Spirit', native: 'Μονάς', lang: 'greek',
+            title: 'The one the system cannot describe',
+            group: 'pleroma', tradition: 'Gnostic (Sethian)',
+            exposition: [
+                'At the head of the Pleroma stands what the Apocryphon of John calls the Invisible Virgin Spirit, and the text spends its opening pages explaining that nothing can be said about it. It is not corporeal, not incorporeal, not great, not small, not a quantity, not a creature; it is not divinity, and it is not blessedness, because those are words for things below it. The passage is the longest sustained apophatic statement to survive from the ancient world, and it predates Dionysius the Areopagite — the acknowledged father of negative theology in Christianity — by three or four centuries.',
+                'What follows from that is the whole architecture. Because the One cannot be approached, it must be *unfolded*: it sees itself in the light-water around it and that self-seeing stands forth as Barbelo, and from her the rest. Every aeon in the Pleroma exists because the first principle is unreachable, which makes the entire drama — including Sophia’s fall and this world — a consequence of the opening page.',
+            ],
+            attested: 'Apocryphon of John (Nag Hammadi II,1; III,1; IV,1 and the Berlin Codex), the negative predications at the start; Allogenes and the Three Steles of Seth for the same theology in a more technical register.',
+            office: 'The unknowable source from which the Pleroma unfolds, and which it cannot reach back into.',
+            elsewhere: 'The Way of Unknowing in Christianities runs the same argument inside the church — Dionysius, Eckhart, the Cloud — and arrives by a different road at the same refusal to describe.',
+        },
+        {
+            slug: 'barbelo', name: 'Barbelo', native: 'Βαρβηλώ', lang: 'greek',
+            title: 'The first thought; the Mother-Father', group: 'pleroma', tradition: 'Gnostic (Sethian)',
+            exposition: [
+                'Before anything is emanated, the Invisible Spirit sees itself in the light-water surrounding it, and that self-knowledge stands forth as Barbelo — the first thought, the forethought, called the Mother-Father and the first man. Everything else in the Pleroma unfolds through her, which makes her the second principle of the entire system.',
+                'The etymology of the name is unsettled and the guesses are old: Hebrew phrases meaning “in four is God,” Coptic constructions, Greek corruptions. The portal keeps the plural, as it does for Abrasax and Yaldabaoth: the great gnostic names resist their own philology.',
+            ],
+            attested: 'Apocryphon of John (Nag Hammadi and the Berlin Codex); Irenaeus, Against Heresies I.29, for a “Barbelognostic” school.',
+            office: 'The first emanation and the womb of the Pleroma; a whole family of texts is named Barbeloite after her.',
+            elsewhere: 'Sophia is her youngest aeon, which sets the tragedy of this system inside the shape Barbelo established.',
+        },
+        {
+            slug: 'autogenes', name: 'The Autogenes', native: 'Αὐτογενής', lang: 'greek',
+            title: 'The self-begotten; the gnostic Christ',
+            group: 'pleroma', tradition: 'Gnostic (Sethian)',
+            exposition: [
+                'From Barbelo and the Invisible Spirit comes the Only-Begotten, called Autogenes — self-generated — and anointed by the Spirit, which is what the word Christ means and is the only sense in which the title is used here. He is set over the whole Pleroma, and the four great Luminaries with their aeons are established under him, each with a name: Harmozel, Oroiael, Daveithai, Eleleth.',
+                'Two things are worth holding on to. First, this Christ is a cosmological office rather than a human life: he is the ordering principle of the fullness, and in the Sethian texts his connection to Jesus of Nazareth is asserted in a frame and not argued in the body. Second, it is Eleleth, one of his Luminaries, who in the Hypostasis of the Archons comes down to explain matters to Norea — the system’s way of answering a question a human being actually asked.',
+            ],
+            attested: 'Apocryphon of John for the generation and the four Luminaries; the Gospel of the Egyptians (Nag Hammadi III,2 and IV,2), where the same figure is central.',
+            office: 'Head of the Pleroma under Barbelo; the one through whom the aeons are ordered.',
+            elsewhere: 'The Understandings of Christ in Christianities sets this beside every other answer the centuries gave — and this one is generally missing from those surveys, which is why it is here.',
+        },
+        {
+            slug: 'seth', name: 'Seth', native: 'Σήθ', lang: 'greek',
+            title: 'The third son, and the race descended from him',
+            group: 'pleroma', tradition: 'Gnostic (Sethian)',
+            exposition: [
+                'Genesis gives Adam a third son after Abel is killed and Cain is exiled, and says almost nothing else about him. A body of texts takes that silence and builds in it: Seth is the son who carries the image, his seed is the spiritual race, and the history of the world is the history of that seed being preserved through flood and fire by figures sent down to protect it. The Three Steles of Seth are hymns he is said to have written; the Gospel of the Egyptians makes him the author of its own revelation.',
+                'The entries in this company that carry the label Sethian carry it on his account. It is worth saying that the label is a modern scholarly construction rather than a name anyone used of themselves, and that its coherence has been argued over hard — Michael Williams proposed dismantling the category of gnosticism altogether, and the debate has not ended. The portal uses the term because the texts do cluster, and flags it because the cluster is ours.',
+            ],
+            attested: 'The Three Steles of Seth (VII,5); the Gospel of the Egyptians (III,2; IV,2); the Apocalypse of Adam (V,5), where Adam transmits the revelation to Seth.',
+            office: 'Ancestor and guarantor of the spiritual race; in some texts a saviour who descends repeatedly.',
+            elsewhere: 'Genesis 4:25 and 5:3 are the whole biblical basis, which makes this the clearest case in the portal of an entire literature grown in a gap between two verses.',
+        },
+        {
             slug: 'sophia', name: 'Sophia', native: 'Σοφία', lang: 'greek',
             title: 'Wisdom, fallen and returning', group: 'pleroma', tradition: 'Gnostic (with biblical roots)',
             exposition: [
@@ -221,6 +270,64 @@ export default {
             attested: 'Apocryphon of John; Hypostasis of the Archons; On the Origin of the World (Nag Hammadi, 2nd–3rd century compositions in 4th-century copies).',
             office: 'Rule of the seven; the counterfeit of creation.',
             elsewhere: 'His boast is Isaiah 45:5 requoted with hostile intent — the sharpest example in the portal of one scripture weaponized inside another.',
+        },
+        {
+            slug: 'seven-archons', name: 'The Seven Archons', native: null, lang: null,
+            title: 'The rulers of the planetary gates', group: 'pleroma', tradition: 'Gnostic (Sethian)',
+            exposition: [
+                'Yaldabaoth makes seven rulers for seven heavens and names them, and the names are a scandal by design: Iao, Sabaoth, Adonaios, Eloaios, Astaphaios, Ailoaios, Oraios — divine names and titles from the Jewish scriptures, redistributed as the jailers of the world. Each holds a planetary gate; each demands a password from the ascending soul.',
+                'This is where gnostic literature is most obviously a counter-reading rather than a separate religion. The names are not invented; they are taken, and the taking is the argument.',
+            ],
+            attested: 'Apocryphon of John; Origen, Contra Celsum VI, preserving the Ophite diagram with its seven gates.',
+            office: 'Custody of the seven planetary spheres between the soul and the Pleroma.',
+            elsewhere: 'The same names recur on magical gems and in the papyri without any hostility at all, invoked as simple names of power — which is the strongest evidence that the magicians and the theologians were not reading the same way.',
+        },
+        {
+            slug: 'sabaoth', name: 'Sabaoth', native: 'Σαβαώθ', lang: 'greek',
+            title: 'The archon who repented', group: 'pleroma', tradition: 'Gnostic (Sethian)',
+            exposition: [
+                'One of Yaldabaoth’s seven turns. Seeing the power of Sophia’s light, Sabaoth condemns his own father, is raised to the seventh heaven, given a chariot of cherubim and set over the powers — the one figure in the gnostic cosmos who changes sides and is promoted for it.',
+                'It is a startling episode in a literature usually accused of flat dualism: the system has an escape hatch, and it is offered not to a human being but to a ruler of the lower world. Whether this reflects an attempt to accommodate the God of the Jewish scriptures rather than simply reject him is one of the field’s open questions.',
+            ],
+            attested: 'The Hypostasis of the Archons and On the Origin of the World (Nag Hammadi).',
+            office: 'Ruler of the seventh heaven after his repentance, seated on a throne of light.',
+            elsewhere: 'The name is the Hebrew tsevaot, “hosts,” as in Lord of Hosts — so this is the God of armies given a conversion narrative inside somebody else’s cosmology.',
+        },
+        {
+            slug: 'norea', name: 'Norea', native: 'Νωρέα', lang: 'greek',
+            title: 'The daughter who refuses',
+            group: 'pleroma', tradition: 'Gnostic (Sethian)',
+            exposition: [
+                'Eve’s daughter, and the one human being in this literature who wins an argument with the rulers of the world. When Noah will not let her aboard, she blows on the ark and burns it — twice. When the archons come to her as they came to her mother and tell her that her mother came to them, she answers that they did not know their own mother but their female counterpart, and that she is not their descendant but from the world above. Then she cries out to God, and the great angel Eleleth comes down and tells her what the world actually is.',
+                'The scene matters structurally. Everywhere else in this company the revelation descends because the plot requires it; here it descends because a woman shouted for it, and the text lets her interrogate the angel afterwards. Whatever else these books are, this passage is one of the few places in ancient religious literature where a female character demands an explanation and is given one.',
+            ],
+            attested: 'The Hypostasis of the Archons (Nag Hammadi II,4); The Thought of Norea (IX,2), a short hymn addressed to her; Irenaeus and Epiphanius report Norea traditions from outside.',
+            office: 'The undefiled one; the human party to a revelation she asks for.',
+            elsewhere: 'Jewish and Mandaean traditions know a Noah’s-wife figure by related names — Naamah, Nuraita — and the relationship between them is unsettled.',
+        },
+        {
+            slug: 'achamoth', name: 'Achamoth', native: 'Ἀχαμώθ', lang: 'greek',
+            title: 'The lower Wisdom',
+            group: 'pleroma', tradition: 'Gnostic (Valentinian)',
+            exposition: [
+                'The Valentinians solved the Sophia problem by splitting her in two. The Sophia who reached for the Father stays inside the Pleroma, restored; what is cast out is her formless intention, and that is Achamoth — the name is simply Hebrew *ḥokhmah*, wisdom, carried into Greek and treated as a separate person.',
+                'She is outside the fullness and does not know it, and her passions become the substance of the world: her grief becomes the wet element, her fear the cold, her bewilderment the solid, and her turning back toward the light becomes soul. The demiurge is her son, made without her knowing what she was doing, and he builds a world out of his mother’s feelings while believing himself alone. It is the most psychologically exact cosmology in antiquity, and it is why Valentinian gnosis was the version the church fathers took seriously enough to refute at length.',
+            ],
+            attested: 'Irenaeus, Against Heresies I.4–5, reporting the Ptolemaean system in detail; the Tripartite Tractate (I,5) for a Valentinian account from the inside.',
+            office: 'The wisdom outside the Pleroma, out of whose passions the material world is condensed.',
+            elsewhere: 'Ḥokhmah in the Scriptorium’s Hebrew hall is the same word, and the Sophia entry above is the same figure before the Valentinians divided her.',
+        },
+        {
+            slug: 'horos', name: 'Horos', native: 'Ὅρος', lang: 'greek',
+            title: 'The Limit, also called the Cross',
+            group: 'pleroma', tradition: 'Gnostic (Valentinian)',
+            exposition: [
+                'A boundary rather than a being, and the most interesting piece of engineering in the Valentinian system. When Sophia’s reaching threatens to dissolve her into the Father, Horos is put forth to stop it — to fence the Pleroma, to hold the aeons in their places, and to separate what belongs inside from what does not. He has a second name, Stauros, which is the ordinary Greek word for cross.',
+                'That doubling is the whole Valentinian method in one word. The cross is not primarily an execution here but a structure: the thing that both divides and supports, that keeps the fullness from collapsing into its own source. A Valentinian reading the passion narrative and a bishop reading it were using the same text and not the same word, and the argument between them was never going to be settled by exegesis.',
+            ],
+            attested: 'Irenaeus, Against Heresies I.2–3; the Gospel of Truth (I,3) for the cross as revelation rather than transaction.',
+            office: 'To bound the Pleroma, to arrest the fall, and to separate the restored Sophia from what was cast out.',
+            elsewhere: 'The Symbolism door in Christianities follows the cross as an image nobody would draw for three centuries; this is what it meant to the people who did draw it early.',
         },
         {
             slug: 'abrasax', name: 'Abrasax', native: 'Αβρασαξ', lang: 'greek',
@@ -311,38 +418,110 @@ export default {
             office: 'Command of the spirits of darkness; the adversary in a two-sided war rather than a prosecutor in a court.',
             elsewhere: 'One of the four crown princes in later demonology, and a king in the Goetia — where the pattern of abstraction hardening into person is complete.',
         },
+        // --- Mandaean -------------------------------------------------------
+        // No Mandaic script is printed. The site does self-host the face, so
+        // the block would render — but these forms would be set by
+        // transliterating into the script rather than read off an attested
+        // manuscript, and the portal's rule is that a sign is printed only
+        // where it is securely read. The names are given in the standard
+        // scholarly transliteration instead.
         {
-            slug: 'barbelo', name: 'Barbelo', native: 'Βαρβηλώ', lang: 'greek',
-            title: 'The first thought; the Mother-Father', group: 'pleroma', tradition: 'Gnostic (Sethian)',
+            slug: 'hayyi-rabbi', name: 'Hayyi Rabbi',
+            title: 'The Great Life',
+            group: 'mandaean', tradition: 'Mandaean',
             exposition: [
-                'Before anything is emanated, the Invisible Spirit sees itself in the light-water surrounding it, and that self-knowledge stands forth as Barbelo — the first thought, the forethought, called the Mother-Father and the first man. Everything else in the Pleroma unfolds through her, which makes her the second principle of the entire system.',
-                'The etymology of the name is unsettled and the guesses are old: Hebrew phrases meaning “in four is God,” Coptic constructions, Greek corruptions. The portal keeps the plural, as it does for Abrasax and Yaldabaoth: the great gnostic names resist their own philology.',
+                'The supreme being of the only gnostic religion that never stopped. *Hiia Rbia*, the Great Life, is light, living water and the source of the worlds of light; Mandaean prayer is addressed to the Life, Mandaean baptism is performed in flowing water called *yardna* after the Jordan, and the dead are said to return to the Life rather than to a heaven.',
+                'The tradition is not a survival in the antiquarian sense. Mandaeans have communities and priests and a liturgy performed continuously, and their scriptures — the Ginza Rabba, the Book of John, the Qulasta — are their own books rather than reconstructions. What has happened instead is displacement: a population concentrated for centuries along the rivers of southern Iraq and Khuzestan has been scattered since 2003, and the language now has more speakers outside the region than in it.',
             ],
-            attested: 'Apocryphon of John (Nag Hammadi and the Berlin Codex); Irenaeus, Against Heresies I.29, for a “Barbelognostic” school.',
-            office: 'The first emanation and the womb of the Pleroma; a whole family of texts is named Barbeloite after her.',
-            elsewhere: 'Sophia is her youngest aeon, which sets the tragedy of this system inside the shape Barbelo established.',
+            attested: 'The Ginza Rabba; the Qulasta, the collected liturgies; the Mandaean Book of John. Manuscripts are late but the tradition is continuous and the language is a living Eastern Aramaic.',
+            office: 'The source of light and life, from which the worlds of light and the *uthras* proceed.',
+            elsewhere: 'Mandaeans revere John the Baptist and reject Jesus, which makes them the one community that took the side the gospels did not — and the Scriptorium self-hosts a Mandaic face for exactly this script.',
         },
         {
-            slug: 'seven-archons', name: 'The Seven Archons', native: null, lang: null,
-            title: 'The rulers of the planetary gates', group: 'pleroma', tradition: 'Gnostic (Sethian)',
+            slug: 'abatur', name: 'Abatur',
+            title: 'The weigher of souls',
+            group: 'mandaean', tradition: 'Mandaean',
             exposition: [
-                'Yaldabaoth makes seven rulers for seven heavens and names them, and the names are a scandal by design: Iao, Sabaoth, Adonaios, Eloaios, Astaphaios, Ailoaios, Oraios — divine names and titles from the Jewish scriptures, redistributed as the jailers of the world. Each holds a planetary gate; each demands a password from the ascending soul.',
-                'This is where gnostic literature is most obviously a counter-reading rather than a separate religion. The names are not invented; they are taken, and the taking is the argument.',
+                'Third of the great emanations, and the one with a job. Abatur sits at the boundary between the worlds of light and what lies below, with a pair of scales, and every soul that rises is weighed there. He is also called the Ancient and the father of the *uthras*, the beings of light who are the nearest Mandaean equivalent to angels.',
+                'The scales are the point of contact with everything else in this portal: the Egyptian weighing of the heart against the feather, the Zoroastrian reckoning at the Chinvat Bridge, the Michael of Christian iconography holding a balance. Four traditions with no common source arrive independently at the same instrument, which is either a fact about the afterlife or a fact about us.',
             ],
-            attested: 'Apocryphon of John; Origen, Contra Celsum VI, preserving the Ophite diagram with its seven gates.',
-            office: 'Custody of the seven planetary spheres between the soul and the Pleroma.',
-            elsewhere: 'The same names recur on magical gems and in the papyri without any hostility at all, invoked as simple names of power — which is the strongest evidence that the magicians and the theologians were not reading the same way.',
+            attested: 'The Ginza Rabba, the accounts of the ascent of the soul; the Mandaean priestly commentaries.',
+            office: 'To weigh the ascending soul at the frontier of the world of light.',
+            elsewhere: 'Anubis at the scales in the Two Lands, and Sraosha at the Chinvat Bridge, do the same office in this portal with no line of descent between them.',
         },
         {
-            slug: 'sabaoth', name: 'Sabaoth', native: 'Σαβαώθ', lang: 'greek',
-            title: 'The archon who repented', group: 'pleroma', tradition: 'Gnostic (Sethian)',
+            slug: 'ptahil', name: 'Ptahil',
+            title: 'The one who shaped the world, and could not finish it',
+            group: 'mandaean', tradition: 'Mandaean',
             exposition: [
-                'One of Yaldabaoth’s seven turns. Seeing the power of Sophia’s light, Sabaoth condemns his own father, is raised to the seventh heaven, given a chariot of cherubim and set over the powers — the one figure in the gnostic cosmos who changes sides and is promoted for it.',
-                'It is a startling episode in a literature usually accused of flat dualism: the system has an escape hatch, and it is offered not to a human being but to a ruler of the lower world. Whether this reflects an attempt to accommodate the God of the Jewish scriptures rather than simply reject him is one of the field’s open questions.',
+                'Abatur’s son, sent down to form the material world, and the Mandaean demiurge — but a milder one than Yaldabaoth. Ptahil is not a blind usurper boasting that he is alone; he is a subordinate given a task he is not quite equal to. He shapes the earth and the body of Adam, and the body will not stand up. The soul has to be sent from above to make it live, which is done without him and partly against him.',
+                'The distinction is worth holding. Sethian gnosis makes the maker of the world an ignorant tyrant and the world a prison; Mandaean thought makes him an inadequate craftsman working under instructions, and leaves the world a mixture rather than a trap. Mandaeans do not withdraw from the world, marry, or refuse to work, and this figure is why the system does not require them to.',
             ],
-            attested: 'The Hypostasis of the Archons and On the Origin of the World (Nag Hammadi).',
-            office: 'Ruler of the seventh heaven after his repentance, seated on a throne of light.',
-            elsewhere: 'The name is the Hebrew tsevaot, “hosts,” as in Lord of Hosts — so this is the God of armies given a conversion narrative inside somebody else’s cosmology.',
+            attested: 'The Ginza Rabba, the cosmogonic books.',
+            office: 'To form the world and the body of the first man, under a commission from above.',
+            elsewhere: 'Set beside Yaldabaoth in this company, the two demiurges make the clearest available case that gnostic systems are not one system.',
+        },
+        {
+            slug: 'ruha', name: 'Ruha',
+            title: 'The Spirit, and mother of the seven',
+            group: 'mandaean', tradition: 'Mandaean',
+            exposition: [
+                'The name is the ordinary Aramaic word for spirit — the same word that is feminine in Syriac, and that the early Syriac church used of the Holy Spirit. In Mandaean cosmology Ruha is the mother of the seven planets and the twelve signs, and she works against the ascent of souls; she is the ruler of the world of darkness who is nevertheless the sister of the light, and the texts are not comfortable about her.',
+                'This is one of the sharpest reversals in the comparative record, and it cuts against the portal’s own Christianities material: what is venerated as the feminine Spirit in Syriac Christianity, brooding over the waters, is in the tradition next door along the same rivers the adversary of the soul’s return. Both are reading the same word.',
+            ],
+            attested: 'The Ginza Rabba; the Book of John, where she figures in the accounts of the planets.',
+            office: 'Mother of the seven planets; obstruction of the soul at the gates.',
+            elsewhere: 'The Syriac hall in the Scriptorium holds *rūḥā* as a feminine noun and the theology built on it — the same three letters read in opposite directions by neighbours.',
+        },
+
+        // --- Manichaean -----------------------------------------------------
+        {
+            slug: 'father-of-greatness', name: 'The Father of Greatness',
+            title: 'The King of the Paradise of Light',
+            group: 'manichaean', tradition: 'Manichaean',
+            exposition: [
+                'Mani, who was born in Mesopotamia about 216 and died in a Sasanian prison around 276, built a religion designed from the start to be translated, and its first principle travels under many names: the Father of Greatness in Syriac, Zurvan in the Middle Persian texts, and in China a figure assimilated to the Buddha of Light. He dwells in the Land of Light with his five dwellings, over against a Kingdom of Darkness that was never made and is co-eternal with him.',
+                'The system proceeds by *evocation* rather than creation: the Father calls forth the Mother of Life, who calls forth the Primal Man, and when that defence fails he calls forth a second series — the Beloved of the Lights, the Great Builder, the Living Spirit — and then a third. Nothing is made out of nothing and nobody is punished for a fall; the whole drama is a rescue operation, conducted in stages, against an attack the light did not invite.',
+            ],
+            attested: 'The Coptic Kephalaia and Psalm-Book from Medinet Madi; the Cologne Mani Codex for Mani’s own beginnings; Iranian and Uyghur fragments from Turfan; Augustine, who belonged to the religion for nine years and then wrote against it.',
+            office: 'Source of the Land of Light and of the three evocations by which the light is recovered.',
+            elsewhere: 'Zoroastrian dualism stands behind this and is not the same: Iran has two spirits who choose, Mani has two natures that were always there.',
+        },
+        {
+            slug: 'primal-man', name: 'The Primal Man',
+            title: 'The first defender, and the first casualty',
+            group: 'manichaean', tradition: 'Manichaean',
+            exposition: [
+                'Called Ohrmizd in the Iranian texts — the name of the Zoroastrian high god, demoted here to a champion, which tells you how deliberately Mani worked. He is armed with the Five Bright Elements and sent out to meet the attack of Darkness, and he loses. The elements are devoured, and the light that is now scattered through the material world is his armour, eaten.',
+                'Everything after this is consequence. Every particle of light caught in matter is a fragment of the first defender; the sun and moon are vessels ferrying it home; the Manichaean discipline of diet and of not injuring plants is not asceticism for its own sake but salvage work on a body. The defeat is also, in the system’s logic, the trap: the light in matter is what holds the darkness still.',
+            ],
+            attested: 'The Kephalaia; the Šābuhragān, Mani’s own summary written for Shapur I; the Turfan fragments.',
+            office: 'To meet the first attack, and by losing to seed the world with light that must be recovered.',
+            elsewhere: 'The pattern — a defeat that is also the mechanism of rescue — is the structural opposite of Sophia’s fall, which is an error rather than a sacrifice.',
+        },
+        {
+            slug: 'living-spirit', name: 'The Living Spirit',
+            title: 'The builder of the cosmos out of the enemy',
+            group: 'manichaean', tradition: 'Manichaean',
+            exposition: [
+                'Evoked in the second series, he goes down, reaches out to the defeated Primal Man, and draws him up — the handclasp between them is the gesture Manichaean art returns to and the origin of the Manichaean greeting. Then, with his five sons, he builds the universe.',
+                'He builds it out of the bodies of the demons. The heavens are stretched from their skins, the mountains raised from their bones, the seas from their fluids; the cosmos is not a good creation and not a prison but a machine — an engine assembled from the corpse of the enemy for the single purpose of distilling light back out of matter. It is the most mechanical cosmology in the ancient world and the least sentimental.',
+            ],
+            attested: 'The Kephalaia; Theodore bar Konai’s Syriac summary, which preserves the sequence in detail from a hostile source; the Chinese Traité and Hymnscroll.',
+            office: 'To raise the Primal Man, and to construct the world as an apparatus for the liberation of light.',
+            elsewhere: 'Compare the Babylonian Marduk building the world from Tiamat’s body — the same act, two and a half thousand years earlier and a few hundred miles away.',
+        },
+        {
+            slug: 'third-messenger', name: 'The Third Messenger',
+            title: 'The one who works by being looked at',
+            group: 'manichaean', tradition: 'Manichaean',
+            exposition: [
+                'The third evocation, and the most uncomfortable episode in the system to summarise honestly. The Messenger displays himself to the imprisoned powers in a form each finds desirable — male to the female demons and female to the male — and their arousal makes them release the light they have swallowed. The light rises; what the demons cast off falls back and becomes, in the myth, the origin of plants, and of animals, and of human sexual generation.',
+                'Hence the shape of Manichaean practice. The Elect ate no meat, drank no wine, and did not reproduce, because reproduction traps light in a new body and prolongs the work; the Hearers, who did all three, supported them and hoped to be born Elect. Augustine, who spent nine years as a Hearer, is our most detailed hostile witness precisely because he had been inside.',
+            ],
+            attested: 'Theodore bar Konai; the Kephalaia; Augustine, De haeresibus and De natura boni, reporting the myth from memory and with intent.',
+            office: 'To extract the swallowed light from the powers of darkness by the seduction of the archons.',
+            elsewhere: 'The Cao’an temple in Fujian, whose statue of Mani as the Buddha of Light was carved in 1339, is the last surviving Manichaean building anywhere — the religion ran from Spain to the Chinese coast and ended on it.',
         },
     ],
 };
