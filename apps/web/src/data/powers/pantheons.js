@@ -251,6 +251,18 @@ export default {
             interpretatio: 'Hermes; then Hermes Trismegistus, patron of the alchemists — the single most consequential interpretatio in this table.',
         },
         {
+            slug: 'hermes-trismegistus', name: 'Hermes Trismegistus', native: 'Ἑρμῆς ὁ Τρισμέγιστος', lang: 'greek',
+            domain: 'Revelation in writing; the mind that knows itself divine',
+            group: 'egyptian',
+            exposition: [
+                'Not a god of Egypt and not a god of Greece, but the thing that grew in the seam between them. Greek-speaking Egypt identified Thoth with Hermes; the Egyptian epithet that called Thoth twice-great and thrice-great came across with him; and somewhere in Roman Egypt that compound name acquired a biography, a pupil and a body of writing. This table calls the Thoth-Hermes identification the most consequential interpretatio in it, and he is what the identification produced.',
+                'The texts that carry his name are not one thing. The philosophical Hermetica — the seventeen treatises of the Corpus, the Asclepius, the Stobaean fragments — teach the ascent of the mind through the spheres and were composed in Greek between roughly the first and third centuries. The technical Hermetica, far bulkier and far less read, are astrological, alchemical and magical handbooks under the same authority. Both were taken as the work of one ancient Egyptian sage, and the confusion was productive: the philosophy lent dignity to the operations, and the operations gave the philosophy something to do.',
+                'The Renaissance believed he had lived before Moses, or beside him, and that belief did the work. Cosimo de\u2019 Medici had Ficino set Plato aside in 1462 to translate the Corpus first, precisely because the older witness mattered more; Ficino read the Poimandres as a pagan Genesis and built a Christian Hermetism on it. Then Isaac Casaubon dated the Greek to the Roman period in 1614 and the pedigree collapsed in a single book. What did not collapse is the tradition, which carried straight on and is still running — which is the most instructive thing in this table about how little a genealogy has to do with whether something works on people.',
+            ],
+            cult: 'None in the ordinary sense. What he has instead is a readership, continuously from Roman Egypt to the present, and a signature on other people\u2019s books.',
+            interpretatio: 'Thoth and Hermes at once, by construction; Mercurius to the Latin alchemists; and in Islamic tradition frequently identified with Idrīs and so with Enoch, which gives him a third scripture to stand in.',
+        },
+        {
             slug: 'el', name: 'El', native: 'אל', lang: 'hebrew',
             domain: 'The aged father of the gods; the assembly', group: 'levantine',
             exposition: [
