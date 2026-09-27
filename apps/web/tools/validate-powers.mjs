@@ -121,6 +121,23 @@ if (pantheons) {
         }
         if (g.image && !g.imageAlt) fail(`pantheons/${g.key}: group image without alt text`);
     }
+    // The correspondence table's whole claim is that you can walk between the
+    // families. A family with no row in it is a hole in the floor, so the two
+    // datasets have to agree — and the table provides "—" with a note for an
+    // office a tradition genuinely lacks, which is a different thing from
+    // leaving the family out.
+    const corrForFamilies = await load('correspondences');
+    if (corrForFamilies) {
+        const rows = new Set(corrForFamilies.pantheons.map((x) => x.key));
+        for (const g of pantheons.groups) {
+            if (!rows.has(g.key)) {
+                fail(`pantheons: "${g.key}" has no row in the correspondence table — every family must be walkable`);
+            }
+        }
+        for (const k of rows) {
+            if (!groups.has(k)) fail(`correspondences: row "${k}" is not a pantheon family`);
+        }
+    }
     notes.push(`pantheons: ${pantheons.entries.length} deities in ${pantheons.groups.length} families`);
 }
 
