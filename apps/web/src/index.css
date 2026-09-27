@@ -12068,6 +12068,76 @@ figure.ch-gallery-card { margin: 0; }
 }
 .ch-group:first-of-type .pw-divider { display: none; }
 
+/* Hall hero art, recovered with the images from the compiled deploy build of
+   source commit d79f864. A hall without art degrades to the plain hero. */
+.edu-lang-hero.has-image {
+  position: relative; padding-top: 3rem; padding-bottom: 2.5rem; isolation: isolate;
+}
+.edu-lang-hero-figure {
+  position: absolute; z-index: -1; top: 0; bottom: 0; left: 50%;
+  width: 100vw; transform: translateX(-50%); overflow: hidden;
+}
+.edu-lang-hero-figure img {
+  width: 100%; height: 100%; object-fit: cover; object-position: center 40%;
+  filter: saturate(0.82) brightness(0.62);
+}
+.edu-lang-hero-scrim {
+  position: absolute; inset: 0;
+  background: linear-gradient(180deg, rgba(8, 6, 4, 0.62), rgba(8, 6, 4, 0.34) 38%, rgba(8, 6, 4, 0.88)),
+              radial-gradient(ellipse at 50% 45%, rgba(8, 6, 4, 0) 30%, rgba(8, 6, 4, 0.55));
+}
+.edu-lang-hero.has-image h1,
+.edu-lang-hero.has-image .kicker,
+.edu-lang-hero.has-image .edu-hero-sub,
+.edu-lang-hero.has-image .edu-lang-hero-sample { text-shadow: 0 2px 18px rgba(0, 0, 0, 0.75); }
+.edu-lang-hero-caption {
+  max-width: 40rem; margin: 1.4rem auto 0; font-family: Georgia, "Times New Roman", serif;
+  font-style: italic; font-size: 0.9rem; line-height: 1.75;
+  color: rgba(226, 216, 198, 0.72); text-shadow: 0 2px 14px rgba(0, 0, 0, 0.8);
+}
+
+/* ---------------------------------------------------------------------------
+   The Witnesses — the great codices, on the Canon page beneath the comparison
+   of the lists. Recovered from the compiled deploy build of source commit
+   d79f864: the data and these rules are the live site's own, re-expanded from
+   the minified stylesheet, and only the component around them is rewritten. */
+.ch-codex-siglum {
+  display: inline-block; margin-right: 0.55rem; min-width: 1.6rem;
+  padding: 0.05rem 0.35rem; border: 1px solid rgba(209, 173, 104, 0.42);
+  font-family: Georgia, "Times New Roman", serif; font-size: 0.92em;
+  text-transform: none; color: #e8cf92; text-align: center; letter-spacing: 0.02em;
+}
+.ch-codex-table th[scope="row"] { white-space: nowrap; }
+.ch-codex-table td { font-size: 0.86rem; line-height: 1.5; vertical-align: top; }
+.ch-codex-table td.st-in { color: rgba(209, 173, 104, 0.9); white-space: nowrap; }
+.ch-codex-table td.st-out { color: rgba(198, 186, 166, 0.5); white-space: nowrap; }
+.ch-codex-group { margin-bottom: 2.6rem; }
+.ch-codex-grouphead { margin-bottom: 1.2rem; }
+.ch-codex-grouphead h3 {
+  margin: 0 0 0.5rem; font-family: "Cinzel", Georgia, serif;
+  font-size: 1.22rem; color: #f0e9da; letter-spacing: 0.04em;
+}
+.ch-codex-grouphead p {
+  max-width: 46rem; margin: 0 auto; font-family: Georgia, "Times New Roman", serif;
+  font-size: 0.95rem; line-height: 1.85; color: rgba(226, 216, 198, 0.76);
+}
+.ch-codex-commentary {
+  max-width: 46rem; margin: 2.6rem auto 0; padding-top: 1.6rem;
+  border-top: 1px solid rgba(209, 173, 104, 0.18);
+}
+.ch-codex-commentary h3 {
+  margin: 0 0 0.8rem; font-family: "Cinzel", Georgia, serif;
+  font-size: 1.1rem; color: #f0e9da; letter-spacing: 0.03em;
+}
+.ch-codex-commentary p {
+  margin: 0 0 0.9rem; font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.85; color: rgba(232, 222, 204, 0.8);
+}
+.ch-codex-outro {
+  max-width: 46rem; margin: 1.4rem auto 0; font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.85; color: rgba(226, 216, 198, 0.78);
+}
+
 /* ---------------------------------------------------------------------------
    A door out of a current, and the page behind it.
 

@@ -30,6 +30,13 @@ export const HALLS = [
     { slug: 'chinese', name: 'Classical Chinese', glyph: '道', sample: '內丹', blurb: 'The literary language of the Daoist canon: alchemy inner and outer, talismans, thunder rites, and the cosmology of the Yijing.' },
 
     { slug: 'slavonic', name: 'Church Slavonic', glyph: 'Ⱄ', sample: 'ѣ · Ⱅ', blurb: 'Two alphabets for one tongue — Glagolitic then Cyrillic — carrying apocrypha, Bogomil dualism, and the forbidden books the Slavic church listed by name.' },
+
+    // Recovered from the compiled deploy build of source commit d79f864, which
+    // was never pushed. Registry entries and order are the live site's own.
+    { slug: 'mandaic', name: 'Mandaic', glyph: 'ࡀ', sample: 'ࡌࡀࡍࡃࡀ ࡖࡄࡉࡉࡀ', blurb: 'The last living Gnostics, whose alphabet is itself a doctrine — twenty-four letters that begin and end with the same sign, so the sequence closes on itself rather than stopping.' },
+    { slug: 'avestan', name: 'Avestan', glyph: '𐬀', sample: '𐬀𐬴𐬆𐬨 𐬬𐬊𐬵𐬏', blurb: 'An alphabet invented to stop a liturgy drifting: fifty-odd letters devised in the Sasanian period so that a thousand years of oral transmission could be fixed without loss.' },
+    { slug: 'ugaritic', name: 'Ugaritic', glyph: '𐎀', sample: '𐎛𐎍', blurb: 'The first alphabet, pressed into clay in wedges — thirty signs in an order the Latin alphabet still keeps, and abecedaries from Ras Shamra that prove it.' },
+    { slug: 'phoenician', name: 'Phoenician', glyph: '𐤀', sample: '𐤌𐤋𐤒𐤓𐤕', blurb: 'Twenty-two consonants that became Hebrew, Aramaic, Greek and through Greek these letters — the most consequential technology in the history of writing, and it fits on one line.' },
 ];
 
 const TRADITION_LABELS = {

@@ -70,7 +70,29 @@ const CORPUS_COPY = {
     chinese: { kicker: 'The Shelf', heading: 'The Daoist Canon' },
     slavonic: { kicker: 'The Shelf', heading: 'The Slavic Shelf' },
 };
-const TITLES = { latin: 'Latin', greek: 'Greek', hebrew: 'Hebrew', egyptian: 'Egyptian', cuneiform: 'Cuneiform', sanskrit: 'Sanskrit', arabic: 'Arabic', tibetan: 'Tibetan', syriac: 'Syriac', coptic: 'Coptic', aramaic: 'Aramaic', persian: 'Persian', armenian: 'Armenian', geez: 'Geʼez', chinese: 'Classical Chinese', slavonic: 'Church Slavonic' };
+// Hall hero art. Recovered from the compiled deploy build of source commit
+// d79f864: the images were shipped to the live site and never committed to
+// source, and this map with them. The four halls recovered alongside have no
+// art of their own, and the hero degrades to the plain one without it.
+const HERO = {
+    latin: { image: "scriptorium-latin.webp", alt: "A hooded monk in a dark habit writing with a quill at a sloped lectern, a large illuminated manuscript open before him with a decorated initial in red and gold; candles at either side, shelves of chained books behind, and a cloister arcade visible through a stone window in blue rain-light.", caption: "The chain on the shelf is the detail worth noticing: a book was worth more than the desk it sat on, and worth securing to it." },
+    greek: { image: "scriptorium-greek.webp", alt: "An elderly Orthodox monk in a black kalimavkion holding open a large Greek manuscript while a younger scribe beside him writes with a reed pen; stone columns, a domed church and cypresses beyond, the Aegean under a heavy evening sky, and a small dish of blue pigment on the table.", caption: "Two men and one book: the older reads aloud, the younger writes. Almost every ancient text that survives came through a room arranged like this." },
+    hebrew: { image: "scriptorium-hebrew.webp", alt: "A bearded man in a kippah and dark vest writing with a quill on a sheet of parchment, a rolled scroll lying across the table beside him; a brass oil lamp, small ink pots and a ball of thread, in a stone-vaulted room with rain against an arched window at night.", caption: "A scribe of Torah works under rules of extraordinary severity — the letters counted, the errors uncorrectable, the whole sheet buried if the Name is spoiled." },
+    egyptian: { image: "scriptorium-egyptian.webp", alt: "A shaven scribe in white linen seated cross-legged on the floor, brush in hand, a papyrus roll unrolled across a low support; palettes of red and black pigment beside him, and walls covered from floor to ceiling in painted sunk-relief hieroglyphs, lit by a high slot window.", caption: "He sits on the floor with the roll across his lap, which is how every seated-scribe statue in every museum is posed — the pose is the profession." },
+    cuneiform: { image: "scriptorium-cuneiform.webp", alt: "A man guiding a boy’s hand as he presses a reed stylus into a wet clay tablet; more tablets stacked on reed shelves behind, a bowl of water and a lump of clay to hand, and a mudbrick doorway opening onto a sunlit courtyard beneath a massive mudbrick wall.", caption: "The edubba, the tablet house. The exercise tablets that survive are mostly students’ — which is why we can read Sumerian at all." },
+    sanskrit: { image: "scriptorium-sanskrit.webp", alt: "A white-haired brahmin with a forehead mark and rudraksha beads incising a palm leaf with a stylus at a low desk, a younger man beside him threading a bundle of finished leaves; carved stone pillars, bundled manuscripts tied in cloth, a brass lamp, and heavy monsoon rain on wet stone.", caption: "Palm leaf rots. Every manuscript here is a copy of a copy, recopied each few generations — the text survives because the object does not." },
+    arabic: { image: "scriptorium-arabic.webp", alt: "A turbaned scholar writing at a low table crowded with bound books and scrolls, a second man reading behind him; a brass armillary sphere at his elbow, hanging lamps overhead, carved screens, and a moonlit courtyard with a reflecting pool and orange trees.", caption: "The armillary sphere is not decoration. In the translation movement the same workshop handled Galen, Ptolemy and the Quran, and the same hands ruled the lines for all three." },
+    tibetan: { image: "scriptorium-tibetan.webp", alt: "Two monks in maroon robes in a dark room; one unwrapping a cloth-bound pecha, the other writing on a long narrow unbound leaf; shelves stacked with cloth-wrapped long-format texts, a butter lamp burning, and a window onto snow peaks above cloud.", caption: "The pecha keeps the shape of the Indian palm-leaf book — long, narrow, unbound, wrapped in cloth — in a country that has no palms." },
+    syriac: { image: "scriptorium-syriac.webp", alt: "Two bearded men in undyed robes; the nearer writing in a large open codex with a reed pen, the further reading a wooden-boarded book; a rack of scrolls behind, an oil lamp, and arid limestone hills and a stone courtyard through a tall arch.", caption: "From rooms like this Greek philosophy reached Baghdad — translated first into Syriac, and only then into Arabic." },
+    coptic: { image: "scriptorium-coptic.webp", alt: "A hooded monk sewing a codex binding with a needle and thread, another writing at a second table behind him; loose leaves and gathered quires spread across the boards, reed pens in a jar, and desert cliffs with a small whitewashed monastery through the open door.", caption: "He is sewing, not writing — and the sewn codex is the Egyptian monks’ contribution to the history of the book." },
+    aramaic: { image: "scriptorium-aramaic.webp", alt: "Two men in white linen at a heavy table; the nearer writing on a papyrus sheet with a reed pen, the other tying a rolled document with cord; more rolls stacked beside them, clay sealings and inscribed ostraca on the table, and the Nile with a mudbrick fortress and palms beyond.", caption: "Imperial Aramaic ran an empire from Egypt to the Indus in one chancery hand — the first script most of the ancient Near East had in common." },
+    persian: { image: "scriptorium-persian.webp", alt: "Two artists in patterned robes at a long table illuminating a bordered page with fine brushes; dishes of ground pigment in blue, red and ochre ranged in front of them, blue tile mosaic on the walls, a glass lamp, and a twilight garden of cypresses after rain.", caption: "Lapis for the blue, ground and washed and reground. The most expensive thing in the room is the colour." },
+    armenian: { image: "scriptorium-armenian.webp", alt: "A bearded monk in a black pointed hood painting a gold-ground miniature into an open codex, a second monk grinding pigment behind him; a bundle of loose leaves tied with cord, quills in a copper vessel, and a carved khachkar cross-stone and conical-domed church in the rain outside.", caption: "Mesrop Mashtots invented this alphabet around 405 in order to translate — which makes Armenian a script created for a library that did not yet exist." },
+    geez: { image: "scriptorium-geez.webp", alt: "A scribe in a white shamma writing Geʼez in red and black on a parchment leaf, another binding a wooden-boarded book with cord behind him; a cross-embossed leather satchel-binding on the floor, incense smoking, and a round highland church in mist through the doorway.", caption: "This is the church that kept Enoch and Jubilees when every other tradition let them go — and the parchment is goat, prepared on the premises." },
+    chinese: { image: "scriptorium-chinese.webp", alt: "A scholar in grey robes writing with a brush on bamboo slips at a lacquered table, a standing attendant holding an open book; a brush pot, an ink stone, and a garden of pine and scholar’s rock through open lattice doors in heavy rain.", caption: "Bamboo slips, bound with cord and rolled — the reason Chinese was written in columns, and the reason a book was once something you unrolled sideways." },
+    slavonic: { image: "scriptorium-slavonic.webp", alt: "Two black-robed bearded monks in skufia caps writing in large open books, one drawing an initial in red ink; a wooden book press beside them, a wall fresco of Christ above, candles burning, and a stone window onto snow-covered pines.", caption: "An alphabet made for a translation: Cyril and Methodius devised it in the ninth century so that Slavs could hear the liturgy in their own tongue." },
+};
+const TITLES = { latin: 'Latin', greek: 'Greek', hebrew: 'Hebrew', egyptian: 'Egyptian', cuneiform: 'Cuneiform', sanskrit: 'Sanskrit', arabic: 'Arabic', tibetan: 'Tibetan', syriac: 'Syriac', coptic: 'Coptic', aramaic: 'Aramaic', persian: 'Persian', armenian: 'Armenian', geez: 'Geʼez', chinese: 'Classical Chinese', slavonic: 'Church Slavonic', mandaic: 'Mandaic', avestan: 'Avestan', ugaritic: 'Ugaritic', phoenician: 'Phoenician' };
 
 const DOMAIN_LABEL = (d) => d.replace(/-/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase());
 
@@ -105,7 +127,7 @@ function EducationLanguagePage() {
 
     const data = bundle?.data;
 
-    const rtl = ['hebrew', 'arabic', 'syriac', 'aramaic', 'persian'].includes(lang);
+    const rtl = ['hebrew', 'arabic', 'syriac', 'aramaic', 'persian', 'mandaic', 'avestan', 'phoenician'].includes(lang);
 
     const lexicon = useMemo(() => {
         if (!data) return [];
@@ -173,13 +195,21 @@ function EducationLanguagePage() {
             )}
 
             <main className="edu-main">
-                <section className="edu-hero edu-lang-hero">
+                <section className={`edu-hero edu-lang-hero${HERO[lang] ? ' has-image' : ''}`}>
+                    {HERO[lang] && (
+                        <div className="edu-lang-hero-figure">
+                            <img src={`/media/${HERO[lang].image}`} alt={HERO[lang].alt}
+                                loading="eager" decoding="async" />
+                            <span className="edu-lang-hero-scrim" />
+                        </div>
+                    )}
                     <p className="kicker">
                         <Link to="/third-lamp/education">The Scriptorium</Link> · Language Hall
                     </p>
                     <h1>{TITLES[lang]}</h1>
                     {hall && <p className="edu-lang-hero-sample edu-glyph" dir={rtl ? 'rtl' : undefined}>{hall.sample}</p>}
                     {data.intro && <p className="edu-hero-sub">{data.intro}</p>}
+                    {HERO[lang] && <p className="edu-lang-hero-caption">{HERO[lang].caption}</p>}
                     <nav className="edu-section-nav" aria-label="Sections of this hall">
                         {sections.map((sec) => (
                             <a key={sec.id} href={`#${sec.id}`}>{sec.label}</a>

@@ -19,6 +19,7 @@ const src = (p) => path.join(web, 'src/data/education', p);
 const HALLS = [
     'latin', 'greek', 'hebrew', 'egyptian', 'cuneiform', 'sanskrit', 'arabic',
     'tibetan', 'syriac', 'coptic', 'aramaic', 'persian', 'armenian', 'geez', 'chinese', 'slavonic',
+    'mandaic', 'avestan', 'ugaritic', 'phoenician',
 ];
 
 // Unicode ranges each hall's native strings are allowed to draw on. Latin,
