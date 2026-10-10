@@ -104,10 +104,13 @@ export const lampPostCategories = [
         glyph: '☉',
         items: [
             {
-                headline: 'Lives and Literacy in Ancient Egypt',
-                meta: 'Austin, Texas · Harry Ransom Center · Through August 2, 2026',
-                link: 'https://www.hrc.utexas.edu/exhibitions/2026/lives-and-literacy-in-ancient-egypt/',
-                copy: 'This exhibition contains rare papyri from Greco-Roman Egypt, including magical spells and texts rarely placed on public display. It is one of the best current opportunities in the United States to see authentic ancient writing connected with ritual and everyday religious practice.',
+                headline: 'Fire and Gold: a new permanent gallery for the art of alchemy',
+                meta: 'Philadelphia · Science History Institute · Opened October 7, 2026',
+                copy: "The Science History Institute has opened Fire and Gold: The Art of Alchemy, 1450–1850, a new permanent exhibition in its Fisher Gallery drawn from the Institute's own holdings of alchemical paintings and rare books. The full collection runs to roughly ninety works; only about sixteen are shown at a time, rotating every six months, so repeat visits will turn up different material. Admission is free, with self-guided viewing on alternating Thursday and Saturday slots, and the Institute recommends registering ahead given the gallery's small size.",
+                links: [
+                    { label: 'Science History Institute — exhibition page', url: 'https://sciencehistory.org/visit/exhibitions/fire-and-gold-the-art-of-alchemy-1450-1850/' },
+                    { label: 'Science History Institute — press release', url: 'https://www.sciencehistory.org/about/press/science-history-institutes-new-permanent-exhibition-showcases-paintings-and-rare-books-on-alchemy/' },
+                ],
             },
             {
                 headline: 'A Witness to Witchcraft: Stewart Farrar and…',
@@ -183,6 +186,24 @@ export const lampPostCategories = [
         title: 'Archaeological Discoveries of Symbolic Weight',
         glyph: '△',
         items: [
+            {
+                headline: 'A suovetaurilium relief and an imperial-cult altar at Aquinum',
+                meta: 'Aquino, Italy · University of Salento · Announced October 2026',
+                copy: "Excavations led by Giuseppe Ceraudo at the Roman colony of Aquinum, near modern Aquino in Lazio, were presented to the public on 3 October 2026. Among the finds is a stone stele carved with an ox, a ram, and a pig — the sacrificial triad of the suovetaurilium, one of Roman religion's most solemn rites — though the stone had been pulled from its original setting and reused as paving, so its first context is lost. A separate marble fragment allows a partial reconstruction of a votive altar inscription naming the Genius of Augustus, the Lares of Augustus, and a freedman sevir Augustalis, tying the monument to the imperial cult. Both readings are presented as provisional pending further study.",
+                links: [
+                    { label: 'GreekReporter', url: 'https://greekreporter.com/2026/10/06/roman-monument-rare-sacrificial-ritual/' },
+                    { label: "Finestre sull'Arte", url: 'https://www.finestresullarte.info/en/archaeology/aquino-frosinone-the-university-of-salento-discovers-two-artifacts-linked-to-roman-religion' },
+                ],
+            },
+            {
+                headline: 'A late Iron Age votive precinct uncovered near Cirencester',
+                meta: 'Gloucestershire · Royal Agricultural University · Reported June 2026',
+                copy: "A training excavation led by Professor Mark Horton at the Royal Agricultural University has shown that a hoard first found by a metal detectorist in 2020 sat within a deliberately marked sacred precinct: a cobbled pavement, worn as though by repeated procession, surrounding a central deposit of coins, iron spearheads, and miniature bronze shields, swords, and scabbards. Many of the coins carry the three-tailed horse associated with the Dobunni, whose capital at Bagendon lies only a few miles away, and the site is dated to the late Iron Age, on the eve of the Roman invasion. Current Archaeology notes how little is known of pre-Roman British religion beyond later literary sources, which makes this kind of direct, dateable votive evidence unusually valuable. The hoard has been declared Treasure and acquired by the Corinium Museum in Cirencester, which is now raising funds for its conservation and display.",
+                links: [
+                    { label: 'Royal Agricultural University', url: 'https://www.rau.ac.uk/about-rau/news-and-events/news/university-archaeologists-uncover-ancient-celtic-sacred-site' },
+                    { label: 'Current Archaeology (via The Past)', url: 'https://the-past.com/news/iron-age-votive-site-uncovered-near-cirencester/' },
+                ],
+            },
             {
                 headline: 'An Egyptian-style curse tablet from the Roman Netherlands',
                 meta: 'Heerlen · 2026 · Heidelberg University',
@@ -341,6 +362,14 @@ export const lampPostCategories = [
         title: 'Notable Academic Papers',
         glyph: '▣',
         items: [
+            {
+                headline: 'From Cato to the bronzes of Ticinum: healing magic across five centuries',
+                meta: 'Francisco Marco Simón · Acta Classica Universitatis Scientiarum Debreceniensis, 2026',
+                copy: "Francisco Marco Simón's new paper sets the magical-medical incantations attributed to Cato the Elder — themselves echoing early Greco-Egyptian magical papyri, gems, and execratory tablets — against two third-century CE bronze inscriptions from Ticinum, modern Pavia, which invoke protective deities on behalf of whoever carries them. Read together across roughly five centuries, the two cases trace a continuous Roman habit of binding words, metal, and divine address into portable instruments of protection and cure. The paper runs pp. 115–124 in Acta Classica Universitatis Scientiarum Debreceniensis, the University of Debrecen's peer-reviewed annual.",
+                links: [
+                    { label: 'Acta Classica Universitatis Scientiarum Debreceniensis', url: 'https://ojs.lib.unideb.hu/classica/article/view/17037' },
+                ],
+            },
             {
                 headline: 'A reassessment of ritual purity language in temple inscriptions',
                 meta: 'Peer-Reviewed · Summary',
