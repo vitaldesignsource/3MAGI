@@ -104,10 +104,20 @@ export const lampPostCategories = [
         glyph: '☉',
         items: [
             {
-                headline: 'Lives and Literacy in Ancient Egypt',
-                meta: 'Austin, Texas · Harry Ransom Center · Through August 2, 2026',
-                link: 'https://www.hrc.utexas.edu/exhibitions/2026/lives-and-literacy-in-ancient-egypt/',
-                copy: 'This exhibition contains rare papyri from Greco-Roman Egypt, including magical spells and texts rarely placed on public display. It is one of the best current opportunities in the United States to see authentic ancient writing connected with ritual and everyday religious practice.',
+                headline: "Houdini's Library",
+                meta: 'Austin, Texas · Harry Ransom Center · August 29, 2026 – January 24, 2027',
+                link: 'https://www.hrc.utexas.edu/exhibitions/2026/houdinis-library/',
+                copy: "Marking the centenary of Harry Houdini's death, the Harry Ransom Center draws on the personal library it acquired from his estate in 1958 — books, manuscripts, and ephemera gathered across his career as a collector and bibliophile rather than a performer. Holdings on display include a first edition of Reginald Scot's 1584 The Discoverie of Witchcraft, among the earliest English texts to treat conjuring and witchcraft as separate subjects. The exhibition is organized by Dr. Eric Colleary, the Center's Cline Curator of Theatre and Performing Arts. Admission is free, with docent tours offered. This replaces the Center's Lives and Literacy in Ancient Egypt exhibition, which closed in early August 2026.",
+            },
+            {
+                headline: 'Cursed! The Power of Magic in the Ancient World',
+                meta: 'New York · Institute for the Study of the Ancient World, NYU · September 17 – December 13, 2026',
+                link: 'https://www.nyu.edu/about/news-publications/news/2026/august/isaw-presents--cursed--the-power-of-magic-in-the-ancient-world.html',
+                copy: "Organized by the Toledo Museum of Art and guest-curated by Jeffrey Spier, former senior curator of antiquities at the J. Paul Getty Museum, this exhibition gathers roughly fifty objects spanning Mesopotamia, Egypt, Greece, and Rome from about 2000 BCE to 300 CE. Curse tablets, protective amulets, love charms, and magical papyri are drawn largely from international loans, presented as evidence of an ordinary, practical recourse rather than a marginal superstition. Admission to ISAW is free. The run includes a gallery talk with Spier and a lecture on Egyptian magical practice by Foy Scalf.",
+                links: [
+                    { label: 'NYU announcement', url: 'https://www.nyu.edu/about/news-publications/news/2026/august/isaw-presents--cursed--the-power-of-magic-in-the-ancient-world.html' },
+                    { label: 'The Collector: interview with curator Jeffrey Spier', url: 'https://www.thecollector.com/jeffrey-spier-ancient-magic-exhibition/' },
+                ],
             },
             {
                 headline: 'A Witness to Witchcraft: Stewart Farrar and…',
@@ -183,6 +193,24 @@ export const lampPostCategories = [
         title: 'Archaeological Discoveries of Symbolic Weight',
         glyph: '△',
         items: [
+            {
+                headline: 'A ritual offering unsealed at Huaca Pucllana',
+                meta: 'Lima, Peru · August 2026 · Associated Press',
+                copy: "In August 2026, archaeologists led by Gladys Paz uncovered the skeleton of an adult man laid inside a canal at the base of Huaca Pucllana, an adobe-and-clay ceremonial complex of the Lima culture dating to around 650 CE. The body lay on its left side, skull turned toward the pyramid and the Pacific, apparently placed there deliberately as the canal — which fed a ceremonial pool near the site's main entrance — was closed off. Paz believes the remains will help clarify how the Lima culture conducted rites tied to the closing and consecration of such features. The Lima culture flourished along the central Peruvian coast from roughly the first to seventh centuries CE, and burials of this kind continue to surface beneath the modern city.",
+                links: [
+                    { label: 'Associated Press, via ABC News', url: 'https://abcnews.com/International/wireStory/archaeologists-unveil-skeletal-remains-believed-ritual-offering-lima-135752877' },
+                    { label: 'Euronews', url: 'https://www.euronews.com/culture/2026/08/20/archaeologists-uncover-human-offering-at-ancient-ceremonial-site-in-lima' },
+                ]
+            },
+            {
+                headline: 'Twin foundation offerings beneath a Maya structure in Yucatán',
+                meta: 'Yaxché de Peón, Ucú, Mexico · announced March 2026 · INAH',
+                copy: "Mexico's National Institute of Anthropology and History (INAH) announced in March 2026 the discovery of two Preclassic Maya ritual deposits, dated to roughly 1000 BCE–250 CE, found within the construction fill of a rectangular structure at Yaxché de Peón, in the municipality of Ucú. The offerings — among them a gourd-shaped ceramic vessel associated with fertility and sustenance — were buried before the building rose above them, consistent with Maya practice of consecrating a site ahead of construction. The find emerged from salvage excavations tied to the Mérida–Progreso rail bypass, a project connected to the Tren Maya line; INAH dates the discovery itself to January 21, 2026.",
+                links: [
+                    { label: 'INAH Boletín 102 (PDF)', url: 'https://www.inah.gob.mx/images/boletines/2026/102/Boletin_102.pdf' },
+                    { label: 'Vanguardia report', url: 'https://vanguardia.com.mx/noticias/mexico/inah-encuentra-deposito-ritual-de-hace-miles-de-anos-yaxche-de-peon-yucatan-cerca-del-tren-maya-BL19564577' },
+                ]
+            },
             {
                 headline: 'An Egyptian-style curse tablet from the Roman Netherlands',
                 meta: 'Heerlen · 2026 · Heidelberg University',
@@ -405,6 +433,12 @@ export const lampPostCategories = [
         title: 'New Book Releases',
         glyph: '▤',
         items: [
+            {
+                headline: 'The Kybalion for Witches',
+                meta: 'Claudiney Prieto · Llewellyn Publications · July 2026',
+                link: 'https://www.llewellyn.com/product.php?ean=9780738781785',
+                copy: "Brazilian author and practitioner Claudiney Prieto reworks the seven Hermetic principles of the century-old Kybalion through the lens of contemporary witchcraft, pairing a theoretical section (Ratio Hermetica) with a practical one (Praxis Hermetica) of rituals and meditations built around each principle. Llewellyn published the 492-page paperback in July 2026. It joins a small but persistent genre of books reconciling the Kybalion's New Thought origins — usually traced to William Walker Atkinson's 1908 original, published pseudonymously as 'Three Initiates' — with modern Craft practice.",
+            },
             {
                 headline: 'On Dreams',
                 meta: 'Synesius · Aula Lucis · Presale',
