@@ -104,21 +104,44 @@ export const lampPostCategories = [
         glyph: '☉',
         items: [
             {
-                headline: 'Lives and Literacy in Ancient Egypt',
-                meta: 'Austin, Texas · Harry Ransom Center · Through August 2, 2026',
-                link: 'https://www.hrc.utexas.edu/exhibitions/2026/lives-and-literacy-in-ancient-egypt/',
-                copy: 'This exhibition contains rare papyri from Greco-Roman Egypt, including magical spells and texts rarely placed on public display. It is one of the best current opportunities in the United States to see authentic ancient writing connected with ritual and everyday religious practice.',
+                headline: "Houdini's Library",
+                meta: 'Austin, Texas · Harry Ransom Center · August 29, 2026 – January 24, 2027',
+                link: 'https://www.hrc.utexas.edu/exhibitions/2026/houdinis-library/',
+                copy: "Marking the centenary of Harry Houdini's death, the Harry Ransom Center draws on the personal library it acquired in 1958 — books, manuscripts, and ephemera gathered across his career as a collector and bibliophile rather than a performer. Holdings on display include a first edition of Reginald Scot's 1584 The Discoverie of Witchcraft, often described as the first English-language book to explain conjuring tricks. The exhibition is organized by Dr. Eric Colleary, the Center's Cline Curator of Theatre and Performing Arts. Admission is free, with docent tours offered.",
             },
             {
-                headline: 'A Witness to Witchcraft: Stewart Farrar and…',
-                meta: 'Cornwall, England · Museum of Witchcraft and Magic · 2026 Seasonal Exhibition',
-                link: 'https://museumofwitchcraftandmagic.co.uk',
-                copy: "The museum's 2026 exhibition focuses on Stewart Farrar and the development of modern witchcraft. Farrar was an author, journalist, initiate, and major recorder of Alexandrian Wicca. The exhibition draws upon manuscripts, photographs, ritual objects, correspondence, and archival material.",
+                headline: 'Cursed! The Power of Magic in the Ancient World',
+                meta: 'New York · Institute for the Study of the Ancient World, NYU · September 17 – December 13, 2026',
+                link: 'https://www.nyu.edu/about/news-publications/news/2026/august/isaw-presents--cursed--the-power-of-magic-in-the-ancient-world.html',
+                copy: "Organized by the Toledo Museum of Art and guest-curated by Jeffrey Spier, former senior curator of antiquities at the J. Paul Getty Museum, this exhibition gathers roughly fifty objects spanning Mesopotamia, Egypt, Greece, and Rome from about 2000 BCE to 300 CE. Curse tablets, protective amulets, love charms, and magical papyri are drawn from national and international collections, presented as evidence of an ordinary, practical recourse rather than a marginal superstition. Admission to ISAW is free. Spier gave a curator's gallery talk on September 17, and Foy Scalf lectures on the culture of magic in ancient Egypt on November 4.",
+                links: [
+                    { label: 'NYU announcement', url: 'https://www.nyu.edu/about/news-publications/news/2026/august/isaw-presents--cursed--the-power-of-magic-in-the-ancient-world.html' },
+                    { label: 'The Collector: interview with curator Jeffrey Spier', url: 'https://www.thecollector.com/jeffrey-spier-ancient-magic-exhibition/' },
+                ],
+            },
+            {
+                headline: 'Fire and Gold: a new permanent gallery for the art of alchemy',
+                meta: 'Philadelphia · Science History Institute · Opened October 7, 2026',
+                copy: "The Science History Institute has opened Fire and Gold: The Art of Alchemy, 1450–1850, a new permanent exhibition in its Fisher Gallery drawn from the Institute's own holdings of alchemical paintings and rare books. The full collection runs to roughly ninety works; only about sixteen are shown at a time, rotating every six months, so repeat visits will turn up different material. Admission is free, with self-guided viewing on alternating Thursday and Saturday slots, and the Institute recommends registering ahead given the gallery's small size.",
+                links: [
+                    { label: 'Science History Institute — exhibition page', url: 'https://sciencehistory.org/visit/exhibitions/fire-and-gold-the-art-of-alchemy-1450-1850/' },
+                    { label: 'Science History Institute — press release', url: 'https://www.sciencehistory.org/about/press/science-history-institutes-new-permanent-exhibition-showcases-paintings-and-rare-books-on-alchemy/' },
+                ],
+            },
+            {
+                headline: 'A Witness to Witchcraft: Stewart Farrar and the Modern Craft',
+                meta: 'Cornwall, England · Museum of Witchcraft and Magic · Through October 31, 2026',
+                link: 'https://museumofwitchcraftandmagic.co.uk/exhibitions/a-witness-to-witchcraft/',
+                copy: "The museum's 2026 seasonal exhibition focuses on Stewart Farrar and the development of modern witchcraft. Farrar was an author, journalist, initiate, and major recorder of Alexandrian Wicca. The exhibition draws upon manuscripts, photographs, ritual objects, correspondence, and archival material.",
             },
             {
                 headline: 'The Haunted Warren Museum',
-                meta: 'Salem, Massachusetts · August 27 – November 1, 2026',
-                copy: 'The Warren collection is scheduled for a temporary public presentation in Salem, including the Annabelle doll and objects associated with Ed and Lorraine Warren\'s paranormal investigations. Best approached as paranormal popular culture and entertainment rather than scholarly occult history.',
+                meta: 'Salem, Massachusetts · August 27 – December 23, 2026',
+                copy: 'The Warren collection is on temporary public display in Salem, including the Annabelle doll and objects associated with Ed and Lorraine Warren\'s paranormal investigations, before the touring collection moves on. Best approached as paranormal popular culture and entertainment rather than scholarly occult history.',
+                links: [
+                    { label: 'Haunted Warren Museum', url: 'https://hauntedwarrenmuseum.com/' },
+                    { label: 'Destination Salem listing', url: 'https://www.salem.org/listing/haunted-warren-museum/' },
+                ],
             },
         ],
     },
@@ -184,6 +207,42 @@ export const lampPostCategories = [
         glyph: '△',
         items: [
             {
+                headline: 'A suovetaurilium relief and an imperial-cult altar at Aquinum',
+                meta: 'Aquino, Italy · University of Salento · Announced October 2026',
+                copy: "Excavations led by Giuseppe Ceraudo at the Roman colony of Aquinum, near modern Aquino in Lazio, were presented to the public on 3 October 2026. Among the finds is a stone stele carved with an ox, a ram, and a pig — the sacrificial triad of the suovetaurilium, one of Roman religion's most solemn rites — though the stone had been pulled from its original setting and reused as paving, so its first context is lost. A separate marble fragment allows a partial reconstruction of a votive altar inscription naming the Genius of Augustus, the Lares of Augustus, and a freedman sevir Augustalis, tying the monument to the imperial cult. Both readings are presented as provisional pending further study.",
+                links: [
+                    { label: 'GreekReporter', url: 'https://greekreporter.com/2026/10/06/roman-monument-rare-sacrificial-ritual/' },
+                    { label: "Finestre sull'Arte", url: 'https://www.finestresullarte.info/en/archaeology/aquino-frosinone-the-university-of-salento-discovers-two-artifacts-linked-to-roman-religion' },
+                ],
+            },
+            {
+                headline: 'A late Iron Age votive precinct uncovered near Cirencester',
+                meta: 'Gloucestershire · Royal Agricultural University · Reported June 2026',
+                copy: 'A training excavation led by Professor Mark Horton at the Royal Agricultural University has shown that a hoard first found by a metal detectorist in 2020 sat within a deliberately marked sacred precinct: a cobbled pavement, worn as though by repeated procession, surrounding a central deposit of coins, with spears, some of iron and some miniature bronze, pushed into the soil around it and miniature bronze shields, swords, and scabbards scattered nearby. Many of the coins carry the three-tailed horse associated with the Dobunni, whose capital at Bagendon lies only a few miles away, and the site is dated to the late Iron Age, on the eve of the Roman invasion. Horton notes how little is known of Iron Age religion beyond the literary sources written by classical authors, which makes this kind of direct, dateable votive evidence unusually valuable. The hoard has been declared Treasure and acquired by the Corinium Museum in Cirencester, which is now raising funds for its conservation and display.',
+                links: [
+                    { label: 'Royal Agricultural University', url: 'https://www.rau.ac.uk/about-rau/news-and-events/news/university-archaeologists-uncover-ancient-celtic-sacred-site' },
+                    { label: 'Current Archaeology (via The Past)', url: 'https://the-past.com/news/iron-age-votive-site-uncovered-near-cirencester/' },
+                ],
+            },
+            {
+                headline: 'A ritual offering unsealed at Huaca Pucllana',
+                meta: 'Lima, Peru · August 2026 · Associated Press',
+                copy: 'In August 2026, archaeologists led by Gladys Paz unveiled the skeleton of an adult, believed to be a man, laid inside a canal at the base of Huaca Pucllana, an adobe-and-clay ceremonial complex of the Lima culture; the burial context is preliminarily dated to around 650 CE. The body lay on its left side, skull turned toward the pyramid and the Pacific, apparently placed there deliberately as the canal — which was linked to a ceremonial pool — was closed off. Paz believes the remains will help clarify how the Lima culture conducted rites tied to the closing of such features. The Lima culture flourished along the central Peruvian coast from roughly the first to seventh centuries CE, and burials of this kind continue to surface beneath the modern city.',
+                links: [
+                    { label: 'Associated Press, via ABC News', url: 'https://abcnews.com/International/wireStory/archaeologists-unveil-skeletal-remains-believed-ritual-offering-lima-135752877' },
+                    { label: 'Euronews', url: 'https://www.euronews.com/culture/2026/08/20/archaeologists-uncover-human-offering-at-ancient-ceremonial-site-in-lima' },
+                ],
+            },
+            {
+                headline: 'Twin foundation offerings beneath a Maya structure in Yucatán',
+                meta: 'Yaxché de Peón, Ucú, Mexico · announced March 2026 · INAH',
+                copy: "Mexico's National Institute of Anthropology and History (INAH) announced in March 2026 the discovery of two Preclassic Maya ritual deposits, dated to roughly 1000 BCE–250 CE, found beneath the construction fill of a rectangular structure at Yaxché de Peón, in the municipality of Ucú. The offerings — among them a gourd-shaped ceramic vessel associated with fertility and sustenance — were buried before the building rose above them, consistent with Maya practice of consecrating a site ahead of construction. The find emerged from salvage excavations tied to the Mérida–Progreso rail bypass, a project connected to the Tren Maya line; INAH dates the discovery itself to January 21, 2026.",
+                links: [
+                    { label: 'INAH Boletín 102 (PDF)', url: 'https://www.inah.gob.mx/images/boletines/2026/102/Boletin_102.pdf' },
+                    { label: 'Vanguardia report', url: 'https://vanguardia.com.mx/noticias/mexico/inah-encuentra-deposito-ritual-de-hace-miles-de-anos-yaxche-de-peon-yucatan-cerca-del-tren-maya-BL19564577' },
+                ],
+            },
+            {
                 headline: 'An Egyptian-style curse tablet from the Roman Netherlands',
                 meta: 'Heerlen · 2026 · Heidelberg University',
                 copy: 'Researchers at Heidelberg University recently deciphered a second-century CE lead tablet excavated at Coriovallum, now Heerlen. Although discovered in the far north of the Roman world, it contains an ancient Greek binding spell constructed in an Egyptian magical style. It invokes gods or daimones and includes three magical signs called characteres. This is extraordinarily relevant to the study of the Western magical tradition because it demonstrates that Egyptian, Greek, Roman, Near Eastern, Jewish, and eventually Christian magical currents were already merging and traveling across the empire. It is physical evidence of the same syncretic atmosphere from which the Greek Magical Papyri emerged.',
@@ -245,6 +304,34 @@ export const lampPostCategories = [
                     { label: 'Phys.org on the study', url: 'https://phys.org/news/2026-02-ancient-cone-vessels-beeswax-lamps.html' },
                     { label: 'Archaeology Magazine', url: 'https://archaeology.org/news/2026/02/18/unique-cone-shaped-vessels-may-have-been-beeswax-lamps/' },
                 ]
+            },
+            {
+                headline: 'A fragment of the Iliad found inside an Egyptian mummy',
+                meta: 'Oxyrhynchus, Egypt · University of Barcelona mission · Announced April 2026',
+                copy: "During its November–December 2025 season at Oxyrhynchus, the University of Barcelona's archaeological mission opened Tomb 65 in Sector 22 and found a Roman-era mummy with a sealed papyrus packet resting on its abdomen. Analysis by papyrologist Leah Mascia and professor Ignasi-Xavier Adiego identified the text as lines from the Catalogue of Ships in Book II of the Iliad. Earlier seasons at the site had recovered papyri placed in the same position on other bodies, but always carrying explicitly magical or ritual content; the team describes this as the first time a Greek literary text has been found deliberately incorporated into the mummification process. Why it was put there remains open. Adiego has said a protective purpose is much harder to account for with a literary text than with a spell, and that the team cannot yet explain it, though Homeric verses do turn up in Greco-Egyptian amulets and spell handbooks.",
+                links: [
+                    { label: 'University of Barcelona announcement', url: 'https://web.ub.edu/en/web/actualitat/w/oxyrhynchus-iliad-homer' },
+                    { label: 'Smithsonian Magazine', url: 'https://www.smithsonianmag.com/smart-news/archaeologists-unearth-a-papyrus-fragment-from-the-iliad-tucked-inside-the-wrappings-of-a-1600-year-old-egyptian-mummy-180988603/' },
+                ],
+            },
+            {
+                headline: 'A well opened for a goddess, closed with the dead',
+                meta: 'Italy · Kainua, Marzabotto · announced August 2026',
+                copy: 'Excavators working in the sacred precinct of Uni at the Etruscan city of Kainua, near Marzabotto in Emilia-Romagna, have uncovered a ritual well whose deposits mark both the beginning and the end of its use. At its foundation, in the late sixth or early fifth century BCE, two bronze female figurines and a bronze plate were placed in the shaft as offerings to the goddess; preserved in low-oxygen, waterlogged fill, the bronze still carries its original lustre. Later the well appears to have been ritually closed with the remains of two adults, though the excavation team — led by Elisabetta Govi, professor of Etruscology at the University of Bologna — has not established when or how those individuals died. The find gives a rare physical record of Etruscan ritual at both the opening and the closing of a sacred well.',
+                links: [
+                    { label: 'University of Bologna (DISCI)', url: 'https://disci.unibo.it/en/research/archaeological-missions/archaeological-missions-italy/etruscan-city-kainua-marzabotto' },
+                    { label: 'Live Science', url: 'https://www.livescience.com/archaeology/archaeologists-discover-etruscan-well-that-was-ritually-opened-with-offerings-for-a-goddess-and-closed-with-human-bodies' },
+                    { label: 'Archaeology Magazine', url: 'https://archaeology.org/news/2026/08/07/bronze-artifacts-discovered-at-bottom-of-etruscan-well/' },
+                ],
+            },
+            {
+                headline: 'The tomb of Sekhentyu-Ptah, Royal Chamberlain, at Saqqara',
+                meta: 'Egypt · Saqqara, west of the Bubasteion · Announced August 2026',
+                copy: "Egypt's Ministry of Tourism and Antiquities announced the discovery of an intact Old Kingdom tomb belonging to Sekhentyu-Ptah, a high official who held the titles Royal Chamberlain, Overseer of All the Works of the King, and Keeper of the Secrets of Royal Decrees. The funerary chapel preserved its false door in situ, together with a complete set of inscribed alabaster ritual tools — an offering table, a purification basin, an ewer, and a disc — still standing where they had been placed. The surrounding burial shafts, evidently reused across later periods, also produced a wooden falcon statue, painted funerary cartonnage, and more than a hundred faience ushabti figures. Because the ritual equipment survived undisturbed and in position, the find is unusually informative about how an Old Kingdom funerary chapel was actually furnished and used, rather than how later texts describe it.",
+                links: [
+                    { label: 'Smithsonian Magazine', url: 'https://www.smithsonianmag.com/smart-news/archaeologists-discover-a-4000-year-old-tomb-with-a-false-door-at-egypts-ancient-saqqara-necropolis-180989438/' },
+                    { label: 'Archaeology Magazine', url: 'https://archaeology.org/news/2026/09/01/4000-year-old-tomb-unearthed-in-saqqara/' },
+                ],
             },
         ],
     },
@@ -333,6 +420,15 @@ export const lampPostCategories = [
                     { label: 'JSTOR', url: 'https://www.jstor.org/stable/j.ctvndv65s' },
                 ]
             },
+            {
+                headline: 'The Latin Hermes in Translation',
+                meta: 'Attrell, Bartlett, Porreca & Stefani · Corpus Christianorum in Translation, Vol. 50 · Brepols, 2026',
+                copy: "This new volume gathers the Latin Hermetic corpus outside the familiar Corpus Hermeticum: the Asclepius, the medieval Glosses on Trismegistus, the Book of Six Principles of Things, and the Book of 24 Philosophers. All four translations are based on the most recent critical editions, published in the Hermes Latinus sub-series of the Corpus Christianorum and in Textes et Études du Moyen Âge, with introductions and notes aimed at making texts that are usually cited rather than read properly accessible to students and scholars. Because three of the four works are medieval rather than ancient, the collection also traces how 'Hermes' kept being reinvented by Latin readers long after the Greek Corpus Hermeticum itself had dropped out of circulation in the West.",
+                links: [
+                    { label: 'Corpus Christianorum', url: 'https://www.corpuschristianorum.org/post/the-latin-hermes-in-translation' },
+                    { label: 'Brepols', url: 'https://www.brepols.net/products/IS-9782503609836-1' },
+                ],
+            },
         ],
     },
     {
@@ -342,9 +438,30 @@ export const lampPostCategories = [
         glyph: '▣',
         items: [
             {
-                headline: 'A reassessment of ritual purity language in temple inscriptions',
-                meta: 'Peer-Reviewed · Summary',
-                copy: 'A recent paper reexamines formulaic purity language across a corpus of temple inscriptions, arguing the phrasing tracks an evolving theology of threshold and access rather than static ritual law.',
+                headline: 'Cursing and Curse Tablets in the Roman West',
+                meta: 'Alex Mullen · Journal of Roman Studies (2026) · Cambridge University Press',
+                copy: "Published online in April 2026, this review article reads three recent books on curse tablets from the Roman West against one another: Celia Sánchez Natalías's Sylloge of Defixiones from the Roman West, R. S. O. Tomlin's The Uley Tablets, and Stuart McKie's Living and Cursing in the Roman West. Mullen presses on what these corpora can and cannot tell us, cautioning against dating tablets by handwriting and stressing the linguistic stakes of the 'Un-Latin' texts from Uley, in a western corpus where roughly one curse in ten mixes languages or scripts. It is a useful frame for reading a single tablet, such as the Heerlen find reported elsewhere on this page, against the wider pattern of the practice.",
+                links: [
+                    { label: 'Journal of Roman Studies, Cambridge Core', url: 'https://www.cambridge.org/core/journals/journal-of-roman-studies/article/cursing-and-curse-tablets-in-the-roman-west/F6EB452071D0E962A93611DD4305193B' },
+                    { label: 'DOI: 10.1017/S0075435826101397', url: 'https://doi.org/10.1017/S0075435826101397' },
+                ],
+            },
+            {
+                headline: 'Phytolith evidence for 25,000 years of ritual burning at Cloggs Cave',
+                meta: 'Frontiers in Environmental Archaeology · 2026 · DOI 10.3389/fearc.2026.1871928',
+                copy: "A study by Elle Grono, Bruno David and colleagues, undertaken with the GunaiKurnai Land and Waters Aboriginal Corporation, examined microscopic plant remains from Cloggs Cave in southeastern Australia. Phytolith analysis shows that whole grass plants — stems, leaves, flowers and roots together — were deliberately gathered from outside the cave, carried in, spread in thin layers, and burned, a practice the deposits suggest recurred for as long as 25,000 years. The pattern corresponds to nineteenth-century ethnographic accounts of GunaiKurnai mulla-mullung, knowledge-holders who used the resulting ash in magic, healing, cursing and other spiritual practices. It is a rare case in which an archaeological signature can be checked against a documented ritual grammar rather than reconstructed from silence.",
+                links: [
+                    { label: 'Frontiers in Environmental Archaeology (open access)', url: 'https://www.frontiersin.org/journals/environmental-archaeology/articles/10.3389/fearc.2026.1871928/full' },
+                    { label: 'Smithsonian Magazine', url: 'https://www.smithsonianmag.com/smart-news/aboriginal-spiritual-leaders-performed-magic-healing-cursing-rituals-in-this-australian-cave-for-25000-years-new-research-finds-180989178/' },
+                ],
+            },
+            {
+                headline: 'From Cato to the bronzes of Ticinum: healing magic across five centuries',
+                meta: 'Francisco Marco Simón · Acta Classica Universitatis Scientiarum Debreceniensis, 2026',
+                copy: "Francisco Marco Simón's new paper sets the magical-medical incantations attributed to Cato the Elder — which share features with early Greco-Egyptian magical papyri, gems, and execratory tablets — against two third-century CE bronze inscriptions from Ticinum, modern Pavia, which invoke protective deities on behalf of whoever carries them. Reading two very different rituals each in its own context, from the second century BCE to the third century CE, the paper draws out what they reveal about magical-religious healing practice in ancient Rome. The paper runs pp. 115–124 in Acta Classica Universitatis Scientiarum Debreceniensis, the University of Debrecen's peer-reviewed annual.",
+                links: [
+                    { label: 'Acta Classica Universitatis Scientiarum Debreceniensis', url: 'https://ojs.lib.unideb.hu/classica/article/view/17037' },
+                ],
             },
         ],
     },
@@ -405,6 +522,24 @@ export const lampPostCategories = [
         title: 'New Book Releases',
         glyph: '▤',
         items: [
+            {
+                headline: 'Ronald Hutton turns from British paganism to eight ancient goddesses',
+                meta: 'Ronald Hutton · Yale University Press · October 27, 2026',
+                link: 'https://yalebooks.yale.edu/book/9780300290721/goddesses/',
+                copy: "Hutton's Goddesses: A History of Love and War moves from his usual ground in British folklore and modern paganism to trace eight goddesses of love and war across the ancient world from Mesopotamia to western Europe, among them Sumerian Inanna, Greek Aphrodite, and Egyptian Hathor. Yale University Press publishes it on October 27, 2026, at 320 pages. Given Hutton's record — The Triumph of the Moon remains a standard reference on the sources of modern witchcraft — this is likely to be read closely by anyone tracking how these figures have been reconstructed, and reinvented, across centuries of source material.",
+            },
+            {
+                headline: 'The Book of Fo',
+                meta: 'Edward Vaughan Kenealy · Aula Lucis · Forthcoming',
+                link: 'https://aulalucis.com/forthcoming/',
+                copy: "Aula Lucis is preparing the first reprint of The Book of Fo, originally published in London in 1878 as the third and final volume of Edward Vaughan Kenealy's trilogy on Adam-Oannes, Enoch and Fo-Hi as successive Messengers from God to Man. The book's discourses range across mysticism, mythology, cosmology, theology, history and religion. Aula Lucis intends to follow it with reprints of the trilogy's other two volumes.",
+            },
+            {
+                headline: 'The Kybalion for Witches',
+                meta: 'Claudiney Prieto · Llewellyn Publications · July 2026',
+                link: 'https://www.llewellyn.com/product.php?ean=9780738781785',
+                copy: "Brazilian author and practitioner Claudiney Prieto reworks the seven Hermetic principles of the century-old Kybalion through the lens of contemporary witchcraft, pairing a theoretical section (Ratio Hermetica) with a practical one (Praxis Hermetica) of rituals and meditations built around each principle. Llewellyn published the 492-page paperback in July 2026. It joins a small but persistent genre of books reconciling the Kybalion's New Thought origins — usually traced to William Walker Atkinson's 1908 original, published pseudonymously as 'Three Initiates' — with modern Craft practice.",
+            },
             {
                 headline: 'On Dreams',
                 meta: 'Synesius · Aula Lucis · Presale',
