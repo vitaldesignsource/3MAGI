@@ -346,7 +346,7 @@ export default {
             slug: 'odin', name: 'Óðinn', native: null, lang: null,
             domain: 'Wisdom bought with sacrifice; poetry, war, the dead', group: 'norse',
             exposition: [
-                'Odin pays. He gives an eye at Mímir’s well for a drink of wisdom; he hangs nine nights on the windswept tree, “myself given to myself,” to take up the runes screaming; he steals the mead of poetry in a stolen shape. Every gift he holds was bought at a price he names.',
+                'Odin pays. He gives an eye at Mímir’s well for a drink of wisdom; he hangs nine nights on the windswept tree, given as an offering to himself, to take up the runes screaming; he steals the mead of poetry in a stolen shape. Every gift he holds was bought at a price he names.',
                 'What we have of him is written by Christians: Snorri’s Edda in the 1220s and the poems copied into the Codex Regius. That does not make the matter false, but it makes the record a translation — and the portal says so rather than pretending to a pagan source.',
             ],
             cult: 'Uppsala, where Adam of Bremen reports a great temple and nine-yearly sacrifices — a hostile source, and the archaeology is still argued.',

@@ -466,7 +466,7 @@ export default {
             title: 'The Spirit, and mother of the seven',
             group: 'mandaean', tradition: 'Mandaean',
             exposition: [
-                'The name is the ordinary Aramaic word for spirit — the same word that is feminine in Syriac, and that the early Syriac church used of the Holy Spirit. In Mandaean cosmology Ruha is the mother of the seven planets and the twelve signs, and she works against the ascent of souls; she is the ruler of the world of darkness who is nevertheless the sister of the light, and the texts are not comfortable about her.',
+                'The name is the ordinary Aramaic word for spirit — the same word that is feminine in Syriac, and that the early Syriac church used of the Holy Spirit. In Mandaean cosmology Ruha is the mother of the seven planets and the twelve signs, and she works against the ascent of souls; she is queen of the world of darkness, beside her son Ur, and nevertheless the sister of the light, and the texts are not comfortable about her.',
                 'This is one of the sharpest reversals in the comparative record, and it cuts against the portal’s own Christianities material: what is venerated as the feminine Spirit in Syriac Christianity, brooding over the waters, is in the tradition next door along the same rivers the adversary of the soul’s return. Both are reading the same word.',
             ],
             attested: 'The Ginza Rabba; the Book of John, where she figures in the accounts of the planets.',
@@ -480,7 +480,7 @@ export default {
             title: 'The King of the Paradise of Light',
             group: 'manichaean', tradition: 'Manichaean',
             exposition: [
-                'Mani, who was born in Mesopotamia about 216 and died in a Sasanian prison around 276, built a religion designed from the start to be translated, and its first principle travels under many names: the Father of Greatness in Syriac, Zurvan in the Middle Persian texts, and in China a figure assimilated to the Buddha of Light. He dwells in the Land of Light with his five dwellings, over against a Kingdom of Darkness that was never made and is co-eternal with him.',
+                'Mani, who was born in Mesopotamia about 216 and died in a Sasanian prison in 274 or 277, built a religion designed from the start to be translated, and its first principle travels under many names: the Father of Greatness in Syriac, Zurvan in the Middle Persian texts, and in China a figure assimilated to the Buddha of Light. He dwells in the Land of Light with his five dwellings, over against a Kingdom of Darkness that was never made and is co-eternal with him.',
                 'The system proceeds by *evocation* rather than creation: the Father calls forth the Mother of Life, who calls forth the Primal Man, and when that defence fails he calls forth a second series — the Beloved of the Lights, the Great Builder, the Living Spirit — and then a third. Nothing is made out of nothing and nobody is punished for a fall; the whole drama is a rescue operation, conducted in stages, against an attack the light did not invite.',
             ],
             attested: 'The Coptic Kephalaia and Psalm-Book from Medinet Madi; the Cologne Mani Codex for Mani’s own beginnings; Iranian and Uyghur fragments from Turfan; Augustine, who belonged to the religion for nine years and then wrote against it.',
@@ -505,7 +505,7 @@ export default {
             group: 'manichaean', tradition: 'Manichaean',
             exposition: [
                 'Evoked in the second series, he goes down, reaches out to the defeated Primal Man, and draws him up — the handclasp between them is the gesture Manichaean art returns to and the origin of the Manichaean greeting. Then, with his five sons, he builds the universe.',
-                'He builds it out of the bodies of the demons. The heavens are stretched from their skins, the mountains raised from their bones, the seas from their fluids; the cosmos is not a good creation and not a prison but a machine — an engine assembled from the corpse of the enemy for the single purpose of distilling light back out of matter. It is the most mechanical cosmology in the ancient world and the least sentimental.',
+                'He builds it out of the bodies of the demons. The heavens are stretched from their skins — by the Mother of Life, in Theodore bar Konai’s account — the mountains raised from their bones, the seas from their fluids; the cosmos is not a good creation and not a prison but a machine — an engine assembled from the corpse of the enemy for the single purpose of distilling light back out of matter. It is the most mechanical cosmology in the ancient world and the least sentimental.',
             ],
             attested: 'The Kephalaia; Theodore bar Konai’s Syriac summary, which preserves the sequence in detail from a hostile source; the Chinese Traité and Hymnscroll.',
             office: 'To raise the Primal Man, and to construct the world as an apparatus for the liberation of light.',

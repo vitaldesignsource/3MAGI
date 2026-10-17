@@ -117,7 +117,7 @@ export default {
             slug: 'dionysius-hierarchy', title: 'The nine choirs fixed', native: 'ἱεραρχία',
             kind: 'text', year: 500, end: null, circa: true, circaEnd: false,
             description: 'The Celestial Hierarchy arranges the angels in three triads, coins the word hierarchy to describe it, and — under an apostolic pseudonym — settles Christian angelology for a thousand years.',
-            dating: 'First cited at the Constantinople colloquy of 532, and dependent on Proclus (d. 485), which brackets composition to around 500. The apostolic attribution was demolished by Valla and Erasmus in the fifteenth and sixteenth centuries.',
+            dating: 'First cited by Severus of Antioch between about 518 and 528, argued over at the Constantinople colloquy of 532, and dependent on Proclus (d. 485), which brackets composition to around 500. The apostolic attribution was doubted by Valla and Erasmus in the fifteenth and sixteenth centuries and disproved by Hugo Koch and Josef Stiglmayr in 1895.',
         },
         {
             slug: 'philae-close', title: 'The last Egyptian temple closes', native: null,
@@ -152,7 +152,7 @@ export default {
         {
             slug: 'zohar-castile', title: 'The Zohar appears in Castile', native: 'ספר הזוהר',
             kind: 'text', year: 1280, end: 1286, circa: true, circaEnd: true,
-            description: 'Quires in an archaizing Aramaic begin to circulate, offered as the teaching of a second-century Galilean sage. For the powers the book is decisive: the demonic is given an emanated order of its own, the sitra aḥra or “other side,” Samael and Lilith — already paired by Castilian kabbalists a generation before — rule it as a couple, and what happens among angels and demons is read as the outworking of what happens within God.',
+            description: 'Quires in an archaizing Aramaic begin to circulate, offered as the teaching of a second-century Galilean sage. For the powers the book is decisive: the demonic is given an emanated order of its own, the sitra aḥra or “other side,” Samael and his consort — Lilith, where the text names her, a pairing Castilian kabbalists had made a generation before — rule it together, and what happens among angels and demons is read as the outworking of what happens within God.',
             dating: 'The tradition holds the book to be the teaching of Shimon bar Yochai, hidden and later recovered. Scholem argued in 1941 for composition in Castile between about 1280 and 1286 by Moses de León of Guadalajara (d. 1305), chiefly on the evidence of the language, and Isaac of Acre reported that de León’s widow denied there had ever been an ancient manuscript. Liebes, Meroz and Abrams have since moved the question from one author to a circle and from a book to strata laid down over decades; a second-century date for the whole is defended by no academic historian, and held by the tradition still.',
         },
         {

@@ -215,7 +215,7 @@ export default {
                 "Extinct as a living faith. Its last community persisted in Fujian; the Cao'an near Jinjiang, with a carved Mani figure dated 1339, survives as the only Manichaean temple building in the world, now maintained as a Buddhist site.",
                 "Augustine's anti-Manichaean writings shaped western thinking on evil, free will and the goodness of creation for a thousand years — the influence of an opponent is part of the story."
             ],
-            "christology": "Three figures bear the name Jesus: the Jesus of Light, a redeemer who awakens Adam; the suffering Jesus (Jesus patibilis) diffused in the world's matter as trapped light; and the historical Jesus, a messenger whose crucifixion was in appearance only, since a being of Light cannot suffer in flesh. Christian opponents objected on all three counts — the denial of a real incarnation, of a good creation, and that the God of the Old Testament is the Father of Christ.",
+            "christology": "At least three figures bear the name Jesus: the Jesus of Light, a redeemer who awakens Adam; the suffering Jesus (Jesus patibilis) diffused in the world's matter as trapped light; and the historical Jesus, a messenger whose crucifixion was in appearance only, since a being of Light cannot suffer in flesh. Christian opponents objected on all three counts — the denial of a real incarnation, of a good creation, and that the God of the Old Testament is the Father of Christ.",
             "today": null
         },
         {

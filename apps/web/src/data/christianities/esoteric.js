@@ -111,7 +111,7 @@ export default {
             claim: 'That God can be spoken of in the vernacular, by women, without vows and without a rule.',
             exposition: [
                 'Across the Low Countries and the Rhineland, women lived in semi-religious communities without permanent vows, supporting themselves, and wrote about God in Dutch, Low German and Old French rather than Latin. Hadewijch of Brabant wrote poems of minne — a love that is both God and the violence of wanting God — with a technical precision borrowed from courtly verse. Mechthild of Magdeburg’s Flowing Light of the Godhead is among the first mystical works in German.',
-                'Marguerite Porete wrote The Mirror of Simple Souls, in which the soul annihilated in love passes beyond the need for the virtues and even for the Church’s ministrations. She refused to withdraw it, refused to speak at her trial, and was burned at Paris in 1310 — the first execution for mystical heresy in the West. The book survived anonymously, was read widely for centuries, and was only reattributed to her in 1946.',
+                'Marguerite Porete wrote The Mirror of Simple Souls, in which the soul annihilated in love passes beyond the need for the virtues and even for the Church’s ministrations. She refused to withdraw it, refused to speak at her trial, and was burned at Paris in 1310 — among the first executions for mystical heresy in the West. The book survived anonymously, was read widely for centuries, and was only reattributed to her in 1946.',
             ],
             sources: 'Hadewijch, Poems and Visions; Mechthild, Das fließende Licht der Gottheit; Porete, Le Mirouer des simples âmes; the Council of Vienne’s decree Ad nostrum (1312).',
             reception: 'Porete burned in 1310; the beguines condemned as a class at Vienne in 1312, with exceptions that let many communities continue. The last Belgian beguine died in 2013.',
@@ -327,7 +327,7 @@ export default {
             claim: 'God is beyond assertion and beyond denial, and the ascent ends in a darkness brighter than light.',
             exposition: [
                 'The Mystical Theology is three pages long and among the most consequential documents in Christian history. Its author strips away every name from God — not merely the unworthy ones but the worthy ones, and finally the denials themselves — until the soul enters “the divine darkness” where it knows by unknowing.',
-                'Written by the same Syrian who arranged the nine angelic choirs, under the borrowed name of Paul’s Athenian convert. The Renaissance proved the pseudonym; the theology outlived the proof entirely, and the negative way it charted runs straight through Eriugena, Eckhart, the Cloud author and John of the Cross.',
+                'Written by the same Syrian who arranged the nine angelic choirs, under the borrowed name of Paul’s Athenian convert. The Renaissance doubted the pseudonym and the nineteenth century proved it; the theology outlived the proof entirely, and the negative way it charted runs straight through Eriugena, Eckhart, the Cloud author and John of the Cross.',
             ],
             sources: 'Pseudo-Dionysius, De mystica theologia and De divinis nominibus; Eriugena’s 9th-century Latin translation carried it west.',
             reception: 'Received as near-apostolic for a millennium, cited by Aquinas some seventeen hundred times, and never repudiated when the attribution collapsed.',
@@ -618,7 +618,7 @@ export default {
                 'The prose is nearly impenetrable and the influence is immense: William Law in England, the Pietists in Germany, Gichtel and Pordage, Blake, Hegel and Schelling, and Berdyaev in Russia. He is the most consequential Protestant mystic and the least readable.',
             ],
             sources: 'Aurora (1612); The Way to Christ; Mysterium Magnum; De signatura rerum.',
-            reception: 'Silenced by the Görlitz town council and the Lutheran pastor Gregorius Richter; his books circulated in manuscript and were printed abroad after his death.',
+            reception: 'Silenced by the Görlitz town council and the Lutheran pastor Gregorius Richter; his books circulated in manuscript and were mostly printed abroad after his death.',
             today: 'A major figure in the history of philosophy — Hegel called him the first German philosopher — and a continuing presence in Christian theosophy.',
         },
         {

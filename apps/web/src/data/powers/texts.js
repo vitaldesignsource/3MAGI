@@ -141,7 +141,7 @@ export default {
         {
             slug: 'celestial-hierarchy', name: 'De caelesti hierarchia', native: 'Περὶ τῆς οὐρανίας ἱεραρχίας', lang: 'greek',
             year: 500,
-            dating: 'Around 500 CE; first cited in 532. The author writes as Paul’s convert of Acts 17, first century',
+            dating: 'Around 500 CE; first cited by Severus of Antioch between about 518 and 528, and argued over at Constantinople in 532. The author writes as Paul’s convert of Acts 17, first century',
             tradition: 'Christian (Greek)',
             exposition: [
                 'The book that fixed the nine choirs. Its author, writing in Greek saturated with Proclus, arranges the angels in three triads and explains the whole arrangement as a hierarchy of illumination: each rank receives light in the measure it can bear and passes it down. He also coins the word hierarchia to say it.',
