@@ -15,7 +15,7 @@ export default {
             imageAlt: 'A robed celebrant at an altar beneath a towering wall of graded tiers, each rank carved with its own disc and countenance, light falling from an oculus above',
             imageCaption: 'The scheme as architecture: rank above rank up a single wall, each tier taking the light in the measure it can bear and handing it down — which is the doctrine, not a metaphor for it.',
             exposition: [
-                'The most influential angelology ever written is pseudonymous. Its author writes as Dionysius the Areopagite, converted by Paul in Athens; his actual Greek is saturated with Proclus, and the church has known since scholars pressed the point in the Renaissance that he worked around the year 500, probably in Syria. The pseudonym succeeded so completely that for a thousand years the book carried near-apostolic weight.',
+                'The most influential angelology ever written is pseudonymous. Its author writes as Dionysius the Areopagite, converted by Paul in Athens; his actual Greek is saturated with Proclus, and the scholars who doubted him in the Renaissance were proved right in 1895, when Koch and Stiglmayr showed his debt to Proclus: he worked around the year 500, probably in Syria. The pseudonym succeeded so completely that for a thousand years the book carried near-apostolic weight.',
                 'The Celestial Hierarchy arranges the angels in three triads of three — not as bureaucracy but as optics: each rank receives the divine light and passes it down in a form the rank below can bear. Nothing skips a step. The scheme is Neoplatonic mediation baptized, and it governed angelology in Greek and Latin alike once Eriugena translated it in the ninth century.',
             ],
             ranks: [
@@ -29,7 +29,7 @@ export default {
                 { native: 'Ἀρχάγγελοι', lang: 'greek', name: 'Archangels', gloss: 'chief messengers for the great announcements' },
                 { native: 'Ἄγγελοι', lang: 'greek', name: 'Angels', gloss: 'the messengers nearest to us' },
             ],
-            source: 'Pseudo-Dionysius, De caelesti hierarchia, chapters 6–9; first securely cited at the Constantinople colloquy of 532.',
+            source: 'Pseudo-Dionysius, De caelesti hierarchia, chapters 6–9; first cited by Severus of Antioch between about 518 and 528, and argued over at the Constantinople colloquy of 532.',
             stakes: 'Whether creation is reached by cascade — every later dispute about mediation, sacrament and priesthood borrowed this ladder’s logic, as the author intended: his church hierarchy mirrors his celestial one.',
         },
         {

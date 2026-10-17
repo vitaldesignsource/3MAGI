@@ -130,7 +130,7 @@ export default {
         {
             key: 'vedic', label: 'Vedic & Hindu',
             cells: {
-                sky: { name: 'Dyaus; later Viṣṇu / Śiva', note: 'Dyaus Pitar is the linguistic cousin of Zeus and Jupiter but is nearly inert already in the Rigveda — the oldest name in the row and the least worshipped.' },
+                sky: { name: 'Varuṇa; Dyaus; later Viṣṇu / Śiva', note: 'Varuṇa is the Rigveda’s sovereign, keeper of ṛta, who sees and binds; Indra, the most-hymned, is its champion. Dyaus Pitar, cousin of Zeus and Jupiter, is the oldest name in the row and nearly inert already in the hymns; both give way to Viṣṇu and Śiva.' },
                 storm: { name: 'Indra', note: 'A quarter of the Rigveda, and then a long demotion: the head of the Vedic pantheon ends as a minor rain-king in the Puranas and a pupil in the Buddhist texts.' },
                 sun: { name: 'Sūrya; Savitṛ', note: 'The Gāyatrī mantra, recited daily for three thousand years, addresses Savitṛ — this is the most continuously spoken cell in the table.' },
                 love: { name: 'Kāma; Lakṣmī', note: 'Kāma is desire itself, burnt to ash by Śiva’s third eye and restored bodiless; Lakṣmī is fortune and beauty as a goddess of the household.' },
@@ -164,6 +164,19 @@ export default {
                 wisdom: { name: 'Omoikane', note: '“Serving-mind”: the kami convened to devise the plan that lures Amaterasu from the cave — wisdom as committee counsel.' },
                 underworld: { name: 'Izanami', note: 'She goes to Yomi in death and cannot return; her husband looks at her there against her word, and the parting sets the ratio of daily deaths to daily births.' },
                 trickster: { name: 'Susanoo; the kitsune', note: 'Susanoo is the disruptive one; the fox as messenger of Inari carries the shape-shifting trickster load in folk practice.' },
+            },
+        },
+        {
+            key: 'mexica', label: 'Mexica',
+            cells: {
+                sky: { name: 'Tezcatlipoca; Ometeotl', note: 'Sahagún’s Jupiter is Tezcatlipoca, invisible and everywhere. Ometeotl, the dual lord of the highest heaven, was made central by Miguel León-Portilla, but the sources record no temple or feast for him, and his place at the summit is argued.' },
+                storm: { name: 'Tlaloc', note: 'Among the deepest roots in the row: the goggle-eyed rain god is at Teotihuacan centuries before the Mexica. A maize country farmed by the rains puts its storm at the top, beside the war god, as the introduction to this hall predicts.' },
+                sun: { name: 'Tonatiuh', note: 'The sun of the present age, the fifth, set moving by the self-sacrifice of the gods and kept moving, the theology held, by human blood. The face at the centre of the Sun Stone is traditionally his, and is argued over.' },
+                love: { name: 'Tlazolteotl; Xochiquetzal', note: 'Sahagún called Tlazolteotl another Venus, which catches the desire and misses the confession she presided over. Xochiquetzal, Flower Quetzal-Feather, holds the gentler half of the office — flowers, weaving, beauty — and is the closer match to the Venus of the poets.' },
+                war: { name: 'Huitzilopochtli', note: 'The Mexica’s own god, carried from Aztlan in a bundle, and the friars’ Hercules. War here is a debt owed to the sun as much as a policy of state, and the two are not easily told apart.' },
+                wisdom: { name: 'Quetzalcoatl', note: 'Patron of the priests’ school and of the arts the Mexica believed the Toltecs had taught — learning held by a feathered serpent who is also the wind. The cell is clean; almost nothing else about him is.' },
+                underworld: { name: 'Mictlantecuhtli; Mictecacihuatl', note: 'A couple, ruling the dead of ordinary deaths. The office is narrower than Hades’: the drowned went to Tlaloc and the battle-dead to the sun, because the Mexica sorted the dead by how they died, not how they lived.' },
+                trickster: { name: 'Tezcatlipoca; Xolotl', note: 'Tezcatlipoca, the sorcerer who undoes Quetzalcoatl at Tula, is the trickster as sovereign and sits twice in this row. Xolotl, Quetzalcoatl’s dog-headed twin, is usually read as the one who goes below with the sun; in Book 7 he flees sacrifice and is caught as an axolotl.' },
             },
         },
     ],

@@ -113,7 +113,7 @@ export default {
                 'Across the Low Countries and the Rhineland, women lived in semi-religious communities without permanent vows, supporting themselves, and wrote about God in Dutch, Low German and Old French rather than Latin. Hadewijch of Brabant wrote poems of minne — a love that is both God and the violence of wanting God — with a technical precision borrowed from courtly verse. Mechthild of Magdeburg’s Flowing Light of the Godhead is among the first mystical works in German.',
                 'Marguerite Porete wrote The Mirror of Simple Souls, in which the soul annihilated in love passes beyond the need for the virtues and even for the Church’s ministrations. She refused to withdraw it, refused to speak at her trial, and was burned at Paris in 1310 — among the first executions for mystical heresy in the West. The book survived anonymously, was read widely for centuries, and was only reattributed to her in 1946.',
             ],
-            sources: 'Hadewijch, Poems and Visions; Mechthild, Das fließende Licht der Gottheit; Porete, Le Mirouer des simples âmes; the Council of Vienne’s decree Ad nostrum (1312).',
+            sources: 'Hadewijch, Poems and Visions; Mechthild, Das fließende Licht der Gottheit; Porete, Le Mirouer des simples ames; the Council of Vienne’s decree Ad nostrum (1312).',
             reception: 'Porete burned in 1310; the beguines condemned as a class at Vienne in 1312, with exceptions that let many communities continue. The last Belgian beguine died in 2013.',
             today: 'A major field in medieval studies and in feminist theology, and Porete’s Mirror is now read as one of the boldest mystical texts in any language.',
         },

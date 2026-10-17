@@ -1923,7 +1923,7 @@ export default {
                 {
                     "year": 510,
                     "title": "The church of the tradition",
-                    "desc": "The community's tradition holds that the old church was founded in 510 by a king of Villarvattom, a Christian line remembered in its histories, and rebuilt by Sabor and Aproth, Persian bishops it places in the ninth century, to whom it was dedicated before the synod. These are traditions and are set down as such: the church's documented history begins with 1599."
+                    "desc": "The community's tradition holds that the old church was founded in 510 by a king of Villarvattom, a Christian line remembered in its histories, and rebuilt by Sabor and Aproth, Persian bishops it places in the ninth century; its dedication before the synod is given by some as theirs and by others as Mary's. These are traditions and are set down as such: the church's documented history begins with 1599."
                 },
                 {
                     "year": 1599,
@@ -1933,7 +1933,7 @@ export default {
                 {
                     "year": 1599,
                     "title": "Saints removed, books condemned",
-                    "desc": "The synod takes the church's dedication from Sabor and Aproth and gives it to All Saints, and lists the Syriac books to be surrendered and burnt. How much burned is unknown: István Perczel and the cataloguers of the Hill Museum have found condemned texts surviving in Kerala's collections, so the fire was real and less thorough than the decree."
+                    "desc": "The synod strikes Sabor and Aproth from the list of saints — after it, on one account, this church was rededicated to All Saints — and lists the Syriac books to be surrendered and burnt. How much burned is unknown: István Perczel and the cataloguers of the Hill Museum have found condemned texts surviving in Kerala's collections, so the fire was real and less thorough than the decree."
                 },
                 {
                     "year": 1606,

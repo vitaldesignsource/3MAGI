@@ -220,6 +220,19 @@ export default {
             "quote": null
         },
         {
+            "slug": "mary-magdalene",
+            "name": "Mary Magdalene",
+            "dates": "first century",
+            "categories": [
+                "apostolic",
+                "woman"
+            ],
+            "tradition": "Universal; honoured in the Orthodox churches as Myrrhbearer and Equal-to-the-Apostles, and kept on 22 July in the Catholic and Anglican calendars",
+            "role": "Disciple from Magdala, witness at the cross and first witness of the resurrection",
+            "contribution": "The gospels say less about her than her afterlife does, and nothing to her discredit. Luke names her first among the women who travelled with Jesus and the Twelve and provided for them, and says seven demons had gone out of her — in the gospels' idiom an affliction, not a sin. All four gospels put her at the empty tomb, and in John the risen Jesus appears to her first and sends her to the disciples, to whom she announces that she has seen the Lord — the seed of the later title apostle of the apostles. Nothing in the New Testament makes her a prostitute, or the unnamed sinful woman who anoints Jesus in Luke 7, or Mary of Bethany. Gregory the Great fixed that identification for the West in a homily of 591 that read the three women as one and the seven demons as all the vices; it gave the West its penitent, and the name of the Magdalen asylums, the last Irish one closing in 1996. The Eastern churches never adopted it. The *Gospel of Mary*, probably of the second century, makes her the disciple who receives a teaching the others resist; no ancient text makes her Jesus's wife, and the papyrus fragment announced in 2012 that seemed to is generally agreed to be a modern forgery.",
+            "fate": "The gospels leave her at the tomb, and her end is unknown. Eastern tradition takes her to Ephesus; Western legend lands her in Provence, gives her a cave of penance at La Sainte-Baume, and supplies two rival bodies, at Vézelay from the eleventh century and at Saint-Maximin, where one was found in 1279. Rome took nearly fourteen centuries to undo the conflation in its liturgy: the calendar reform of 1969 dropped the word penitent from her memorial on 22 July and changed its gospel from Luke 7 to John 20; in 2016, at Pope Francis's wish, it was raised to a feast with a new preface naming her apostle of the apostles; and in 2021 Mary of Bethany was given a commemoration of her own, beside Martha and Lazarus, on 29 July."
+        },
+        {
             "slug": "clement-of-rome",
             "name": "Clement of Rome",
             "dates": "fl. c. 96",
@@ -555,6 +568,20 @@ export default {
             }
         },
         {
+            "slug": "evagrius-ponticus",
+            "name": "Evagrius Ponticus",
+            "dates": "c. 345–399",
+            "categories": [
+                "desert",
+                "mystic",
+                "contested"
+            ],
+            "tradition": "The Egyptian desert, at Nitria and Kellia; condemned with Origen in the Greek and Latin churches, and read as a master in the Syriac ones, whose contemplative vocabulary is largely his",
+            "role": "Deacon of the capital turned desert monk; the first systematic analyst of the inner life",
+            "contribution": "Born at Ibora in Pontus, made a reader by Basil and a deacon under Gregory of Nazianzus, he was a dazzling controversialist in Constantinople in the years of the council of 381, until an attachment to the wife of a man of rank and a warning dream sent him out of the city. On the Mount of Olives Melania the Elder nursed him through months of fever and drew from him a promise to take the habit; in 383 he went to Egypt — two years at Nitria and fourteen at Kellia, copying books for his living. There he treated his own mind as a field of observation. The *Praktikos* maps eight thoughts, from gluttony to pride, by how each arrives and what each wants; the *Antirrhetikos* answers every one with verses of scripture, counter-sayings for use in combat. Above them he set *apatheia*, the stilling of the passions, whose child he called love, and above that pure prayer. His list went west through Cassian and, reordered by Gregory the Great, became the seven deadly sins; his psychology went east into Syriac and became the grammar of its mysticism. He also held, after Origen, that minds fell from an original unity and will be restored to it — the speculation that cost him his name.",
+            "fate": "Died at Kellia at Epiphany, probably in 399, aged fifty-four by Palladius's account — shortly before Theophilus of Alexandria turned on the Origenist monks and drove his friends the Tall Brothers out of Egypt. Condemned with Origen and Didymus in the proceedings of 553, a sentence later councils repeated, he lost his name in Greek: what survived was copied under other men's, chiefly Nilus's, so that the Philokalia prints his treatise on prayer as the work of Nilus. The Syriac churches kept what the Greek lost, including the unpurged *Kephalaia Gnostica* that Antoine Guillaumont published in 1958."
+        },
+        {
             "slug": "john-cassian",
             "name": "John Cassian",
             "dates": "c. 360 - c. 435",
@@ -567,6 +594,22 @@ export default {
             "contribution": "Spent years among the monks of Scetis in Egypt and then carried what he had learned to southern Gaul, founding houses for men and for women at Marseille. The Institutes give the outward form of monastic life and treat the eight principal faults — Evagrius's list, which Gregory the Great later reworked into the seven deadly sins. The Conferences present the teaching as recorded dialogues with the Egyptian elders, and are the most searching ancient analysis of prayer, discernment and the movement of thought; Benedict prescribed them to be read aloud in his monasteries. On grace he resisted Augustine's later predestinarianism while agreeing that grace is necessary — a position the late sixteenth century labelled semi-Pelagian, a term he never heard and would have rejected.",
             "fate": "Died at Marseille. The Council of Orange in 529 rejected the position associated with him, without naming him.",
             "quote": null
+        },
+        {
+            "slug": "benedict-of-nursia",
+            "name": "Benedict of Nursia",
+            "dates": "c. 480 – c. 547",
+            "categories": [
+                "desert"
+            ],
+            "tradition": "Latin West; the patriarch of Western monasticism, whose Rule is still kept by Benedictines, Cistercians and Trappists, and who is also in the Orthodox calendar",
+            "role": "Hermit of Subiaco, abbot of Monte Cassino, author of a rule for monks",
+            "contribution": "Almost everything known of his life comes from one source, the second book of Gregory the Great's *Dialogues*, written about 593–594, half a century after his death — and Gregory was collecting wonders, not writing a chronicle. On that account he left Rome in disgust, lived three years as a hermit in a cave at Subiaco, was made abbot by monks who then tried to poison him, and moved, by the traditional date in 529, to Monte Cassino. What outlived the legend is the Rule: a prologue and seventy-three chapters for a *dominici schola servitii*, a school for the Lord's service, dividing the day between the Divine Office, manual work and sacred reading, under an abbot bound to consult the whole community, the younger included, because the Lord often shows the younger what is better. It allows wine, receives every guest as Christ, and asks for stability, one house for life. Most scholars now accept that it abridges and gentles a longer anonymous text, the Rule of the Master, and Benedict calls his own a little rule for beginners. It was one rule among several until Louis the Pious and Benedict of Aniane imposed it on the monasteries of the empire at Aachen in 816–817. The motto *ora et labora*, which every guidebook gives him, is not in it.",
+            "fate": "Died at Monte Cassino, by Gregory's account standing in the oratory, held up by his monks after receiving communion, six days after ordering open the tomb in which he had laid his sister Scholastica; he was buried with her. The traditional date, 21 March 547, is a later reckoning. The abbey was sacked by the Lombards late in the sixth century and by the Saracens in 883, thrown down by an earthquake in 1349 and destroyed by Allied bombing in February 1944, and rebuilt each time; Paul VI consecrated the rebuilt basilica on 24 October 1964 and the same day named Benedict patron of Europe. The monks of Fleury on the Loire hold that his bones were carried there from the ruins in the seventh century; Monte Cassino holds that they are still on the mountain.",
+            "quote": {
+                "text": "Listen carefully, my son, to the master's instructions, and attend to them with the ear of your heart.",
+                "source": "Rule of Benedict, Prologue 1, in RB 1980, ed. Timothy Fry (Liturgical Press, 1981)"
+            }
         },
         {
             "slug": "cyril-of-alexandria",
@@ -623,6 +666,19 @@ export default {
             "contribution": "The intellectual architect of the miaphysite position after Chalcedon: one incarnate nature of God the Word, composite out of two, in which divinity and humanity remain distinct in contemplation but never divide into two natures in fact. Monophysite, the term long used against this position in the West, is an exonym his tradition rejects, and rightly: he was a Cyrilline to the core and condemned Eutyches as firmly as he condemned the Tome of Leo, holding that Chalcedon's 'in two natures' conceded too much to Nestorius. Against the Grammarian is his major work. Almost all his Greek was destroyed after his condemnation; he survives in Syriac translation — homilies, letters, hymns still sung in the Syriac Orthodox office. Modern Christological dialogues between the Oriental Orthodox and both the Eastern Orthodox and Rome have concluded that his position and Chalcedon's differ largely in terminology, and joint declarations to that effect have been signed.",
             "fate": "Deposed in 518 on the accession of the emperor Justin and fled to Egypt; formally anathematised at a synod in Constantinople in 536; died in Egypt in 538.",
             "quote": null
+        },
+        {
+            "slug": "pseudo-dionysius",
+            "name": "Pseudo-Dionysius the Areopagite",
+            "dates": "fl. c. 500",
+            "categories": [
+                "mystic",
+                "syriac-father"
+            ],
+            "tradition": "Received as the work of Paul's own convert in Greek, Syriac, Armenian, Slavonic and Latin Christianity for a thousand years; the author, writing in Greek, was probably a Syrian and remains anonymous",
+            "role": "Anonymous author of the Corpus Areopagiticum, writing as Paul's Athenian convert",
+            "contribution": "Four treatises and ten letters — the *Divine Names*, the *Mystical Theology*, the *Celestial Hierarchy* and the *Ecclesiastical Hierarchy* — by an author who signs himself Dionysius, Paul's convert of the Areopagus in Acts 17, writes to Timothy and to the apostle John as contemporaries, and recalls watching the darkness at the crucifixion from Heliopolis. The theology is the late Neoplatonism of Proclus put to Christian use, so thoroughly that readers still argue over which of the two has the upper hand: a God beyond being, praised by the names creation lends him and then unnamed; a cosmos ordered as a *hierarchy* — the word is his coinage — in which light descends rank by rank through nine orders of angels and is answered on earth by bishop, priest and deacon; and an ascent that ends in a darkness beyond knowing. The books surface in the early sixth century in the hands of Severus of Antioch's party, and at a colloquy in Constantinople in 532 the Chalcedonian Hypatius of Ephesus asked why, if they were apostolic, neither Athanasius nor Cyril had ever cited them. The question was set aside for nine hundred years. Sergius of Reshaina put them into Syriac before 536, John of Scythopolis's scholia made them safe for Chalcedonians, and Eriugena's Latin carried them into the schools.",
+            "fate": "Unknown, because the man is. Lorenzo Valla doubted the attribution in the fifteenth century and Erasmus put the doubt into print; Luther judged him more Platonist than Christian. His date was fixed in 1895, when Hugo Koch and Josef Stiglmayr showed independently that his pages on evil closely follow a treatise of Proclus, who died in 485. Peter the Iberian, Severus himself and even Damascius, the last head of the Athenian school, have been proposed as the author, and none has carried the field. In France the Areopagite had long since been fused, above all by Abbot Hilduin of Saint-Denis in the 830s, with Denis, martyr-bishop of Paris; Abelard, a monk there, found that quoting Bede against the identification made the abbey unsafe for him. The authority survived the collapse of the credentials almost untouched."
         },
         {
             "slug": "babai-the-great",
@@ -704,6 +760,19 @@ export default {
             "quote": null
         },
         {
+            "slug": "nino-of-georgia",
+            "name": "Nino of Georgia",
+            "dates": "fourth century; the conversion of Kartli is usually placed in the 320s or 330s",
+            "categories": [
+                "missionary",
+                "woman"
+            ],
+            "tradition": "The Georgian Orthodox Church, which honours her as Equal-to-the-Apostles and Enlightener of Georgia; venerated throughout the Orthodox world and in the West",
+            "role": "Captive woman, healer, and the evangelist of a kingdom",
+            "contribution": "The oldest account does not name her. Rufinus of Aquileia, writing his *Ecclesiastical History* about 402, says he had the story from Bacurius, a prince of the Iberians — the kingdom of Kartli in eastern Georgia — who told it to him while holding a Roman command in Palestine: a Christian woman held captive among them, noticed for her chastity and her nights of prayer, laid a sick child on her haircloth and it recovered; the queen recovered too; the king, lost in a sudden darkness while hunting, called on her God and found his way home; and when one column of the church he then built could not be raised, she prayed through the night and it stood. The king sent to Constantine for clergy. Georgian tradition, in the *Conversion of Kartli*, whose oldest full copy was made at Shatberdi in 973, supplies a name and a history: Nino, a Cappadocian raised in Jerusalem, who came to Kartli through Armenia carrying a cross of vine-wood bound with her own hair, and whose converts at Mtskheta were Queen Nana and King Mirian III. A kingdom took the faith early, and as a kingdom, through a foreign woman with no office and no protector; and the earliest record, written from outside, leaves her nameless and still gives her the credit.",
+            "fate": "Georgian tradition has her withdraw at the end to Bodbe in Kakheti, where she had baptised the queen of Kakheti, and die there; it adds that the king's men could not move her coffin to Mtskheta, and so she was buried where she lay. Her grave at Bodbe is kept by a convent of nuns to this day. The cross of vines the tradition gives her became the emblem of the Georgian church, and the relic venerated as that cross is at Sioni Cathedral in Tbilisi."
+        },
+        {
             "slug": "frumentius",
             "name": "Frumentius",
             "dates": "d. c. 383",
@@ -715,6 +784,18 @@ export default {
             "contribution": "Rufinus tells it from an eyewitness: a Tyrian philosopher takes two boys on a Red Sea voyage, the ship is seized at an Ethiopian port and the crew killed, and the boys are spared and taken to the court at Aksum. Frumentius rises to tutor the young prince Ezana and then to run the administration, gathers the Roman merchants for worship, and afterwards goes to Athanasius at Alexandria to ask for a bishop. Athanasius consecrates him and sends him back, which is the act that binds the Ethiopian church to Alexandria for the next sixteen hundred years — its patriarch was an Egyptian appointee until 1959.",
             "fate": "The conversion is not only a literary claim. Ezana's coinage changes: the early issues carry the crescent and disc of the old cult and the later ones carry a cross, which is plausibly the first use of the cross on any coinage anywhere. And the independence shows immediately — Constantius II wrote to Ezana asking that Frumentius be sent to Alexandria for re-examination by the Arian bishop he had installed there, and was ignored.",
             "quote": null
+        },
+        {
+            "slug": "patrick",
+            "name": "Patrick",
+            "dates": "fifth century; the annals give 461 and 493, among other years, for his death",
+            "categories": [
+                "missionary"
+            ],
+            "tradition": "Ireland; honoured by Catholics, Orthodox and Anglicans alike, and never canonised by any procedure — his cult is older than the process",
+            "role": "Briton, slave, and bishop among the Irish",
+            "contribution": "Two short Latin texts are accepted as his — the *Confessio*, a defence of his mission written late in life, and a letter excommunicating the soldiers of a British warlord, Coroticus — and nearly everything else told of him is later. He was born in Roman Britain, the son of Calpornius, a deacon and town councillor, at a place he calls Bannavem Taburniae, never located. At about sixteen he was seized by Irish raiders and spent six years herding and praying, he says, a hundred times a day, before he escaped. Back in Britain he dreamed that the Irish were calling him to walk among them again, and he returned as a bishop. The letter, against men who had killed and enslaved newly baptised converts, was written by a former slave. He was not the first bishop in Ireland: Prosper of Aquitaine records that Pope Celestine sent Palladius in 431 to the Irish who already believed in Christ. The Paschal fire at Slane comes from Muirchú's Life, written late in the seventh century as Armagh pressed its claim to primacy. The snakes come later still — Bede, who remarks that no snake can live in Ireland, never names Patrick in the *Ecclesiastical History* — and the shamrock is not tied to the Trinity in writing before the eighteenth century.",
+            "fate": "Neither his own writings nor any contemporary record says when or where he died, and the dating is a real problem rather than a detail. The Irish annals give 432 for his coming — a year that looks borrowed from Palladius — and enter his death under more than one year, 457, 461 and 493 among them; historians divide between an earlier chronology and a later one that sets his work in the second half of the century, and T. F. O'Rahilly's theory of two Patricks, put forward in 1942, has not settled it. Saul claims his death and Downpatrick his grave; Armagh claimed his authority, which was the more valuable inheritance. His feast is kept on 17 March, the day the early calendars give for his death."
         },
         {
             "slug": "cyril-and-methodius",
@@ -732,6 +813,18 @@ export default {
                 "text": "Does not God's rain fall upon all equally? Does not the sun shine on all? Do we not all breathe the air alike? Are you not ashamed to allow only three tongues, and to order all other peoples and tribes to be blind and deaf?",
                 "source": "The Life of Constantine, chapter 16, reporting Cyril's answer to the trilingualists at Venice"
             }
+        },
+        {
+            "slug": "bartolome-de-las-casas",
+            "name": "Bartolomé de las Casas",
+            "dates": "1484–1566",
+            "categories": [
+                "missionary"
+            ],
+            "tradition": "Spanish Catholic; Dominican friar and bishop; the crown's Protector of the Indians, claimed since as a forerunner by Latin American liberation theology",
+            "role": "Colonist turned friar, bishop of Chiapas, and the Indians' advocate at the Spanish court",
+            "contribution": "He went out to Hispaniola in 1502 as a settler, held Taíno labourers in *encomienda* — a grant of native labour — and served, after his ordination, as a chaplain in the conquest of Cuba, where he saw the massacre at Caonao. Others had spoken first: in December 1511 the Dominican Antonio de Montesinos asked the colonists from the pulpit by what right they held the Indians in so cruel a servitude, a sermon known chiefly because Las Casas wrote it down. In 1514, preparing a sermon of his own, he read in Ecclesiasticus that an offering from what is wrongly gained is stained; he gave up his Indians and spent the next fifty years making the same argument to anyone who would listen. He entered the Dominicans in 1522 and wrote *De unico vocationis modo*, arguing that faith may be offered only by persuasion, never by force. He helped secure the New Laws of 1542, which forbade new encomiendas and were partly revoked after the colonists rose; as bishop of Chiapas he told his confessors to refuse absolution to encomenderos who would not make restitution. At Valladolid in 1550–1551 he answered Juan Ginés de Sepúlveda, who argued from Aristotle that the Indians were natural slaves who might be subdued by war; the judges never delivered a collective verdict.",
+            "fate": "The *Brevísima relación de la destrucción de las Indias* of 1552 was translated within a generation into Dutch, French and English, and Spain's enemies made it a founding text of what was later named the Black Legend. His figures for the dead are rhetorical and beyond checking, and historians still argue how far the collapse of the island peoples was due to disease and how far to war and forced labour — an argument about proportions, not about whether it happened. The darkest line in his record he drew himself: about 1516 he proposed that colonists be allowed African slaves to spare the Indians, and wrote in his *Historia de las Indias* that he repented of it, since the same reasoning condemned both. He died at Madrid in July 1566; the *Historia* was not printed until 1875–1876."
         },
         {
             "slug": "matteo-ricci",
@@ -771,6 +864,19 @@ export default {
             "contribution": "The most sophisticated of the teachers the heresiologists grouped as Gnostic, and by Tertullian's hostile report a candidate for the Roman episcopate who left the church when passed over. The Valentinian systems describe a fullness of divine aeons, a fall within it through Sophia's presumption, the resulting production of the material world by a lesser craftsman, and the salvation of the spiritual element in humanity through knowledge. His pupils — Ptolemy, Heracleon, Theodotus — wrote the first Christian commentaries on scripture, Heracleon on John. The Gospel of Truth, found at Nag Hammadi and plausibly his, is a meditation of real beauty on the terror of ignorance and the joy of being found. Nag Hammadi complicated the older picture considerably: some of what Irenaeus reported proved accurate, some proved systematised polemic.",
             "fate": "Left Rome and effectively disappears from the record; Epiphanius, writing much later, says he ended in Cyprus. His school flourished for two centuries.",
             "quote": null
+        },
+        {
+            "slug": "mani",
+            "name": "Mani",
+            "dates": "216–274/277",
+            "categories": [
+                "heresiarch",
+                "contested"
+            ],
+            "tradition": "The Religion of Light, whose scriptures he wrote; to the churches the arch-heretic, to most historians the founder of a distinct world religion that ran from Roman Africa to the Chinese coast",
+            "role": "Prophet, author of his own scriptures, and in his own words an apostle of Jesus Christ",
+            "contribution": "He was born in Babylonia in 216 and raised in the baptist community his father had joined. The Cologne Mani Codex, a Greek book the size of a matchbox, preserves through his disciples' testimony his own account of a heavenly Twin who came to him at twelve and at twenty-four, and of his break with the baptists, whose washing of body and food he declared useless. He then wrote his own scriptures — the *Living Gospel*, the *Treasure of Life* and his letters in an Aramaic close to Syriac, and for Shapur I the *Shabuhragan* in Middle Persian — so that disciples could not corrupt his teaching as, he held, they had corrupted that of the Buddha, Zoroaster and Jesus. To Christians he spoke their language: his gospel and his letters opened, in Paul's manner, by naming him an apostle of Jesus Christ, and he taught that the Paraclete promised in John's gospel had come to him. The churches heard a heretic, and Augustine, a Hearer for nine years, wrote a shelf of books against him. Most historians place Mani outside Christianity, as the founder of a faith that wore Christian, Zoroastrian and Buddhist dress by design. He stands here because he claimed the name, and because his church returned the charge: its bishop Faustus, as Augustine preserves him, called the catholics semi-Christians.",
+            "fate": "Protected by Shapur I and his son Hormizd, he lost the court under Bahram I, when the Zoroastrian clergy — among them, it is usually thought, the priest Kerdir, whose own inscriptions boast of striking at rival religions — turned the king against him. He died in chains at Bet Lapat, Gundeshapur, after twenty-six days by his church's account, in 274 or 277. The Coptic texts call it his crucifixion, and the Bema feast kept its memory around a raised judgement-seat set for the absent apostle. The religion lasted more than a thousand years and the word outlasted the religion: Manichaean was the charge the churches threw at Priscillianists, Paulicians, Bogomils and Cathars, mostly without evidence of descent."
         },
         {
             "slug": "arius",
@@ -853,7 +959,7 @@ export default {
                 "heresiarch"
             ],
             "tradition": "Laodicea in Syria",
-            "role": "Bishop, grammarian, and Athanasius’s ally against the Arians",
+            "role": "Bishop, grammarian, and Athanasius's ally against the Arians",
             "contribution": "He asked the question the Nicene settlement had left open. If the Word truly became flesh, what happened to the human mind of Jesus? His answer was that the Word took a human body and soul but supplied the rational mind himself, so that there is one nature and no possibility of two wills pulling against each other. It is a tidy solution, it comes from a man who had fought Arianism at real cost, and it was rejected because of what it implied about us rather than about Christ.",
             "fate": "Condemned at Rome in 377 and at Constantinople in 381. Gregory of Nazianzus gave the answer that settled it and that has been quoted ever since: what is not assumed is not healed. Then the afterlife: his followers preserved his works by circulating them under the names of Athanasius, Gregory Thaumaturgus and Julius of Rome, and those forgeries were quoted as orthodox authorities for twelve hundred years before nineteenth-century scholarship unpicked them — which means some of the patristic proof-texts used against his own position were written by him.",
             "quote": {
@@ -885,7 +991,7 @@ export default {
             "tradition": "Antioch, then Mopsuestia in Cilicia",
             "role": "Exegete, bishop, and the teacher behind a century of argument",
             "contribution": "The greatest of the Antiochene interpreters and, in the Church of the East, simply the Interpreter. He read scripture historically and grammatically against the Alexandrian habit of allegory, asking what a text meant to the people who first heard it; he refused to read most of the Psalms as prophecies of Christ; and he set out a christology of two natures in which the assumed man is genuinely a man, with a will and a moral life of his own, joined to the Word by good pleasure. Nestorius was his pupil, and the controversy that broke over Nestorius is in substance an argument about Theodore.",
-            "fate": "He died in 428 in peace, in communion, and honoured — and was condemned a hundred and twenty-five years later. The Three Chapters, anathematised at Constantinople in 553 to conciliate the miaphysites, comprised Theodore’s person and writings, Theodoret’s writings against Cyril, and a letter of Ibas. Most of his Greek works were destroyed after it, and what survives does so in Syriac, in the church that never accepted the condemnation. To the Chalcedonian world he is a condemned heretic; to the Assyrian Church of the East he is a doctor of the faith whose exegesis is normative, and both statements are accurate about the same man.",
+            "fate": "He died in 428 in peace, in communion, and honoured — and was condemned a hundred and twenty-five years later. The Three Chapters, anathematised at Constantinople in 553 to conciliate the miaphysites, comprised Theodore's person and writings, Theodoret's writings against Cyril, and a letter of Ibas. Most of his Greek works were destroyed after it, and what survives does so in Syriac, in the church that never accepted the condemnation. To the Chalcedonian world he is a condemned heretic; to the Assyrian Church of the East he is a doctor of the faith whose exegesis is normative, and both statements are accurate about the same man.",
             "quote": null
         },
         {
@@ -911,7 +1017,7 @@ export default {
             ],
             "tradition": "Alexandria",
             "role": "Patriarch, president of a council, and a saint on one side of a line",
-            "contribution": "Cyril’s archdeacon and successor, who inherited both his christology and his methods and had less of his subtlety. He presided at the second council of Ephesus in 449, which restored Eutyches and deposed Flavian — the assembly Leo of Rome called the Robber Council, which is his polemical name for it and is how it is still generally known. Dioscorus held Cyril’s one incarnate nature of the Word and regarded Chalcedon as a betrayal of it.",
+            "contribution": "Cyril's archdeacon and successor, who inherited both his christology and his methods and had less of his subtlety. He presided at the second council of Ephesus in 449, which restored Eutyches and deposed Flavian — the assembly Leo of Rome called the Robber Council, which is his polemical name for it and is how it is still generally known. Dioscorus held Cyril's one incarnate nature of the Word and regarded Chalcedon as a betrayal of it.",
             "fate": "Deposed at Chalcedon in 451 — and the grounds are worth stating exactly, because they are constantly misreported. He was condemned in the third session for contumacy, having refused three summonses to appear, together with canonical charges about his conduct at Ephesus and his excommunication of Leo. He was not convicted of a heresy. He died in exile at Gangra three years later. He is a saint of the Coptic Orthodox Church and of the Oriental Orthodox communion generally, commemorated in their liturgy, and he is a heresiarch in Chalcedonian churches; the portal records both because the division that followed is the largest in this section.",
             "quote": null
         },
@@ -926,7 +1032,7 @@ export default {
             "tradition": "Cyrrhus in Syria",
             "role": "Bishop, historian, and the man condemned for what he wrote against the winner",
             "contribution": "The last great Antiochene, and the most useful writer of the period to anyone doing history: his Ecclesiastical History continues Eusebius, his Religious History is the best source for Syrian ascetics, and his Eranistes is a dialogue against Eutychian christology written before Chalcedon settled the question. He fought Cyril of Alexandria hard and in print, and he was right about Eutyches before almost anybody.",
-            "fate": "Deposed at the second council of Ephesus in 449 and restored at Chalcedon in 451 — but only after the assembly made him stand up and anathematise Nestorius, his friend, aloud, which he did with visible reluctance and which the acts record. A century later his writings against Cyril were condemned in the Three Chapters at Constantinople in 553, while he himself was not, so that a man received as orthodox by an ecumenical council had part of his life’s work anathematised by another. He remains a saint in the Chalcedonian churches and the condemnation stands, which is one of the more awkward arrangements in this portal.",
+            "fate": "Deposed at the second council of Ephesus in 449 and restored at Chalcedon in 451 — but only after the assembly made him stand up and anathematise Nestorius, his friend, aloud, which he did with visible reluctance and which the acts record. A century later his writings against Cyril were condemned in the Three Chapters at Constantinople in 553, while he himself was not, so that a man received as orthodox by an ecumenical council had part of his life's work anathematised by another. He remains a saint in the Chalcedonian churches and the condemnation stands, which is one of the more awkward arrangements in this portal.",
             "quote": null
         },
         {
@@ -1001,6 +1107,33 @@ export default {
             "quote": null
         },
         {
+            "slug": "marguerite-porete",
+            "name": "Marguerite Porete",
+            "dates": "d. 1310",
+            "categories": [
+                "woman",
+                "mystic",
+                "heresiarch"
+            ],
+            "tradition": "A beguine of Hainaut, writing in Old French; condemned at Paris as a relapsed heretic, and read for six centuries without her name",
+            "role": "Beguine, author of The Mirror of Simple Souls",
+            "contribution": "Almost everything known of her life comes from the process that ended it. She was a beguine of Hainaut — a woman living a religious life without vows or a rule — and she wrote, in Old French, *Le Mirouer des simples ames*, a dialogue chiefly among Love, Reason and the Soul, part courtly allegory and part scholastic disputation, broken by verse. Its soul, annihilated in love, passes through seven states to a freedom in which it takes leave of the Virtues, has no will of its own and needs nothing the Church dispenses; the book calls the institution, governed by Reason, Holy Church the Little, and sets above it a greater church upheld by the souls that Love has freed. Reason objects throughout and is overruled at every turn. Between 1296 and 1306 Guy of Colmieu, bishop of Cambrai, had the book burned at Valenciennes in her presence and forbade her to circulate it. She went on circulating it, and at some point — whether before or after the burning is uncertain — sought the opinion of three churchmen, among them the Paris master Godfrey of Fontaines, whose approval, as some copies give it, came with a caution that the book was not for many readers.",
+            "fate": "Arrested about 1308, she was handed to the Dominican inquisitor William of Paris and held for a year and a half, refusing throughout to take the oath. In April 1310 twenty-one masters of theology, judging extracted articles rather than the book, found it heretical; on 31 May she was condemned as a relapsed heretic, and on 1 June burned in the Place de Grève, with a composure that, a chronicler says, moved onlookers to tears. Her one known defender, Guiard of Cressonessart, the self-styled Angel of Philadelphia, was imprisoned for life. The *Mirror* survived by losing her name: copied in French and translated into Latin, Italian and Middle English, it was read, not least in English charterhouses, as the work of an anonymous contemplative until Romana Guarnieri matched it to the trial record in 1946."
+        },
+        {
+            "slug": "meister-eckhart",
+            "name": "Meister Eckhart",
+            "dates": "c. 1260 – c. 1328",
+            "categories": [
+                "mystic",
+                "contested"
+            ],
+            "tradition": "Dominican; Latin West — Erfurt, Paris, Strasbourg, Cologne; never canonised and never formally rehabilitated, and read far beyond his order and his church",
+            "role": "Master of theology at Paris, provincial of Saxony, preacher at Strasbourg and Cologne",
+            "contribution": "A Thuringian who entered the Dominicans at Erfurt, he rose as far as the order could take a man: master of theology at Paris in 1302 — the title that became his name — and regent there a second time in 1311–1313, an honour the order is usually said to have given before only to Aquinas; first provincial of the new province of Saxony; then vicar at Strasbourg with charge of the order's nuns, and teacher at Cologne. In Latin he wrote for the schools, planning an *Opus tripartitum* on a scale he never came near finishing. In German he preached to Dominican nuns and beguine communities, and the sermons, many surviving only in his hearers' copies, carry what he is still read for: the ground of the soul, the birth of the Word in it, detachment above love, and a poverty that wants nothing, knows nothing and has nothing, and is free even of God. He held himself an orthodox master, and defended himself as one who had said in plain German to plain hearers what the schools said in Latin. The archbishop of Cologne, Heinrich of Virneburg, did not agree.",
+            "fate": "Heinrich opened inquisitorial proceedings in 1326. Eckhart answered the lists of suspect articles point by point, declared his orthodoxy publicly in the Dominican church at Cologne in February 1327, appealed to the pope and went to Avignon. He died before the verdict, probably in 1328 and probably at Avignon; neither the day nor the place is recorded. John XXII's bull *In agro dominico*, dated 27 March 1329, condemned twenty-eight propositions and recorded that he had revoked them before his death insofar as they could be taken in a heretical sense — a submission to a verdict he did not live to hear. The bull was addressed to the province of Cologne, and the sermons went on being copied, sometimes without his name; Tauler and Suso carried the teaching on, Suso in open defence of him."
+        },
+        {
             "slug": "julian-of-norwich",
             "name": "Julian of Norwich",
             "dates": "c. 1343 - after 1416",
@@ -1045,6 +1178,19 @@ export default {
             "contribution": "Teresa was of converso descent — her grandfather a Jew reconciled by the Inquisition at Toledo, a fact that shadowed her whole career — and spent some twenty years in a comfortable, worldly convent before a conversion in her late thirties, after which she founded reformed houses across Castile in the teeth of ecclesiastical and civil opposition. The Interior Castle maps the soul as a crystal castle of seven dwellings and is the most systematic account of contemplative prayer written by anyone who had actually made the journey; the Life and the Way of Perfection are its companions. She wrote under Inquisitorial scrutiny, with humour, irony and a constant strategic self-deprecation about being a mere woman. John, the young friar she recruited to the reform, was one of the greatest lyric poets in the Spanish language: the Spiritual Canticle, the Dark Night and the Living Flame of Love are poems first, with prose commentaries attached at his readers' request. His doctrine is the via negativa made practical — the nights of sense and spirit strip the soul of everything it can grasp, including consolation in prayer and every idea of God, because nothing created is God. The dark night is his, and describes not depression but the withdrawal of felt grace as an act of grace.",
             "fate": "Teresa died at Alba de Tormes on a founding journey and was canonised in 1622; in September 1970 she became the first woman named a Doctor of the Church. John was imprisoned by his own unreformed brethren at Toledo from December 1577, in a cell some ten feet by six, and escaped through a window nine months later with the poems in his head; later stripped of office by his own reformed order in a faction fight, he died of an infection at Úbeda at forty-nine.",
             "quote": null
+        },
+        {
+            "slug": "ignatius-of-loyola",
+            "name": "Ignatius of Loyola",
+            "dates": "1491–1556",
+            "categories": [
+                "reformer",
+                "mystic"
+            ],
+            "tradition": "Roman Catholic; founder of the Society of Jesus",
+            "role": "Basque soldier, pilgrim, and first superior general of the Jesuits",
+            "contribution": "Born Íñigo López de Loyola in Gipuzkoa, the youngest of thirteen children, he was by his own account a worldly soldier until a French cannonball broke his leg at Pamplona in 1521. Convalescing, he noticed that daydreams of knightly glory left him dry and daydreams of outdoing the saints left him content — the seed of his rules for the discernment of spirits. Months of penance and scruples at Manresa, ending in an illumination beside the river Cardoner, gave him the core of the *Spiritual Exercises*: not a book to be read but a director's manual for a retreat of about a month, opening on the principle that human beings are created to praise, reverence and serve God. Twice jailed in Spain as a suspected *alumbrado*, he went on to Paris, where six companions, Francis Xavier among them, took vows with him at Montmartre in 1534. Paul III approved the Society of Jesus in 1540, an order with no choir office and no habit whose professed vowed to go wherever the pope sent them. It was founded for missions, not to fight Protestants; the defence of the faith was written in beside its propagation only in 1550. His Rules for thinking with the Church would have the faithful hold the white they see to be black if the hierarchical church so defined it.",
+            "fate": "Elected the first superior general in 1541, he governed the Society from Rome for fifteen years, drafting its Constitutions and keeping up a correspondence of several thousand letters, and died there on 31 July 1556, more suddenly than his companions expected, leaving an order of about a thousand men. The autobiography he dictated in his last years to Luís Gonçalves da Câmara speaks of him in the third person and calls him only the pilgrim. Beatified in 1609 and canonised in 1622 alongside Francis Xavier, Teresa of Ávila, Philip Neri and Isidore the Farmer. The Society was suppressed by Clement XIV in 1773 and restored by Pius VII in 1814, and in 2013 one of its members was elected pope for the first time."
         },
         {
             "slug": "john-wycliffe",
@@ -1410,6 +1556,19 @@ export default {
             "role": "Physician and cosmologist, the most systematic Christian occultist England produced",
             "contribution": "His great work is a Christian cosmology and is usually mistaken for something else. The *Utriusque Cosmi Historia* of 1617–1621 — the history of both worlds, the great and the small — begins where Genesis begins, with light called out of the dark, and hangs everything from that act: the divine monochord strung between earth and the hand of God, man as the small world answering the large, the whole engraved for de Bry at Oppenheim in plates that have been reprinted ever since by people with no interest in his theology. In 1616 he answered the German attacks on the Rosicrucian brotherhood in the *Apologia Compendiaria*, expanded the next year as the *Tractatus Apologeticus*, and stated in the text that he was not a member and had met none — which did nothing at all to stop Europe reading him as the order's English spokesman. He quarrelled in print with Kepler over whether the world's harmonies are real or figurative, and with Gassendi and Mersenne over most of the rest, and he lost those arguments in a way that has made him easy to patronise and hard to do without.",
             "fate": "Died at his house in Coleman Street in London in 1637, a Fellow of the College of Physicians that had refused him more than once for his Paracelsian opinions, and was buried at Bearsted in Kent, under a monument in the parish church."
+        },
+        {
+            "slug": "jacob-boehme",
+            "name": "Jacob Böhme",
+            "dates": "1575–1624",
+            "categories": [
+                "mystic",
+                "contested"
+            ],
+            "tradition": "Lutheran layman of Görlitz in Upper Lusatia; silenced at his own pastor's instance, and called the Teutonic Philosopher by the theosophers, Pietists and English Behmenists who read and printed him",
+            "role": "Shoemaker of Görlitz, visionary and theosopher",
+            "contribution": "Born to a farming family at Alt Seidenberg near Görlitz, a herd-boy and then an apprentice cobbler, he became a master shoemaker and citizen of Görlitz in 1599. In 1600, by the account of his first biographer Abraham von Franckenberg, the gleam of sunlight on a pewter vessel opened to him what he took to be the inward ground of all things; a further illumination in 1610 set him writing, and *Aurora* — the *Morgenröte im Aufgang* of 1612, left unfinished — was the first result. Everything after it, from *De tribus principiis* to *De signatura rerum* and *Mysterium Magnum*, works at one vision: a God who comes to know himself in a birth out of the groundless, through a dark fire of wrath and a light fire of love, so that wrath belongs to God's own nature and the fall of Lucifer and of Adam is a turning into the fire and away from the light. The vocabulary is Paracelsian, of salt, sulphur, mercury and signatures; the piety is Lutheran, if the orthodoxy was not — scripture, rebirth, Christ born in the soul. His readers, physicians, Silesian nobles and alchemists, copied his manuscripts and sent him questions, and he answered with a cobbler's plainness about his learning, which was slight, and a seer's confidence about everything else.",
+            "fate": "A copy of *Aurora* reached Gregorius Richter, chief pastor of Görlitz, who denounced him from the pulpit; in 1613 the town council took the manuscript and forbade him to write. He kept silence for some five years, living by a trade in woollen gloves, then began again. When *Der Weg zu Christo* appeared in 1624, the only book of his printed in his lifetime, Richter attacked him in print and the council asked him to leave. He went to Dresden, where by his friends' account the court theologians heard him without condemning him, and died at Görlitz on 17 November 1624, asking, Franckenberg says, whether those around him heard the music. The clergy buried him under protest. Gichtel printed the collected works at Amsterdam in 1682; by then John Sparrow's translations had carried him into English."
         }
     ]
 };

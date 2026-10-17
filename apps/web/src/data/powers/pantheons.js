@@ -30,6 +30,7 @@ export default {
         { key: 'yoruba', label: 'The Òrìṣà', blurb: 'The gods of Ile-Ife and Yorubaland, carried across the Atlantic in the holds of ships and alive on three continents.' },
         { key: 'roman', label: 'Rome', blurb: 'A pantheon of magistrates: gods bound by procedure, addressed by exact formula, and expanded by treaty whenever Rome absorbed a people who had their own.' },
         { key: 'kami', label: 'The Kami', blurb: 'The powers of Japan — of whom the Kojiki says there are eight million, meaning uncountable.' },
+        { key: 'mexica', label: 'The Fifth Sun', blurb: 'The gods of Tenochtitlan, known chiefly through the friars who came to end their cult and wrote the rites down so that preachers could recognize them. The excavated temple, and a handful of painted books from before the conquest, none certainly Mexica, are the check on what they wrote.' },
     ],
     entries: [
         // --- Iran ----------------------------------------------------------
@@ -353,6 +354,16 @@ export default {
             interpretatio: 'Mercury in the Roman interpretatio — hence Wednesday, Óðinsdagr, standing where dies Mercurii stands in the Latin week.',
         },
         {
+            slug: 'frigg', name: 'Frigg', native: null, lang: null,
+            domain: 'Foreknowledge kept silent, and the queen’s household', group: 'norse',
+            exposition: [
+                'Odin’s wife, Baldr’s mother, and the goddess who knows what is coming and does not say: Lokasenna has it said of her that she knows all fates though she speaks none of them, and Snorri repeats it. She keeps her own hall, Fensalir, and her own household, Fulla closest in it, who carries her box, minds her shoes and shares her secrets. Her power in the stories is the domestic kind, and it is real: in the prose frame of Grímnismál she proves her husband’s foster-son a bad host by sending Fulla ahead to warn the king against the very guest Odin is about to become.',
+                'Her foreknowledge does not save her son. She takes an oath from fire and water, iron and stone, sickness, beasts and poison that none of them will harm Baldr, and passes over the mistletoe as too young to swear. Unusually, the record of her is not only Icelandic. Paul the Deacon in the eighth century tells, as a fable he thinks ridiculous, how Frea tricked her husband Godan into giving the Lombards victory and their name; and a charm written down in Germany in the ninth or tenth century names Friia beside her sister Volla — Snorri’s Fulla, some three centuries early.',
+            ],
+            cult: 'Hardly any distinct from Freyja’s: a few Swedish place-names claimed for her, and Friday, which the philologists divide between her and Freyja.',
+            interpretatio: 'Venus by way of the week, if Friday is hers — Old English Frīgedæg for dies Veneris; set beside Hera as the sovereign’s wife, and like Hera at her best when outwitting him.',
+        },
+        {
             slug: 'freyja', name: 'Freyja', native: null, lang: null,
             domain: 'Love, gold, war’s chosen dead, seiðr', group: 'norse',
             exposition: [
@@ -363,6 +374,16 @@ export default {
             interpretatio: 'Venus in the Latin week — Friday, Frjádagr — though the philologists still argue whether the day is hers or Frigg’s.',
         },
         {
+            slug: 'freyr', name: 'Freyr', native: null, lang: null,
+            domain: 'Rain and sunshine, the harvest, peace and pleasure', group: 'norse',
+            exposition: [
+                'Snorri calls him the most glorious of the gods and gives him the weather a farmer cares about — rain, sunshine, and what the earth yields — so that he is the one to pray to for good seasons and for peace. He is Njǫrðr’s son and Freyja’s brother, of the Vanir, and his name is a title, lord, as hers is lady. He also gave his sword away. Skírnismál has him sit in Odin’s high seat, see the giant’s daughter Gerðr, and fall so sick with wanting her that his servant Skírnir must win her for him, with gifts and then with threats; the sword is Skírnir’s price, and it is why at the end Freyr meets the fire-giant Surtr without it.',
+                'An outsider describes his cult most plainly. Adam of Bremen, writing in the 1070s, puts his image with Thor’s and Wodan’s in the temple at Uppsala as Fricco, giver of peace and pleasure, made with an enormous phallus and sacrificed to at weddings. The Icelanders are warier and funnier. Snorri’s Ynglinga saga makes him a king at Uppsala whose death was kept from the Swedes for three years, their taxes poured into his mound while the good seasons held; Hrafnkels saga has a chieftain kill a man for riding the stallion he shared with Freyr, and give up the gods once his enemies have killed the horse.',
+            ],
+            cult: 'Uppsala, on Adam’s report; place-names across Sweden, Svealand above all; and perhaps the seated ithyphallic bronze from Rällinge in Södermanland.',
+            interpretatio: 'Adam’s Latin calls the image’s phallus a priapus, which is as near as the interpretatio comes; his father Njǫrðr’s name is the same word as Nerthus, the earth-mother Tacitus reports drawn in a wagon among the Angles and their neighbours.',
+        },
+        {
             slug: 'indra', name: 'Indra', native: 'इन्द्र', lang: 'devanagari',
             domain: 'The thunderbolt; the slaying of the obstruction', group: 'vedic',
             exposition: [
@@ -371,6 +392,16 @@ export default {
             ],
             cult: 'Vedic ritual — the soma sacrifice above all; the Indra-dhvaja festival in later India.',
             interpretatio: 'Compared to Zeus and Thor as the Indo-European thunderer, and — pointedly — to Zoroastrian Indra, who appears there among the daevas: the same name kept and inverted across the Iranian border.',
+        },
+        {
+            slug: 'varuna', name: 'Varuṇa', native: 'वरुण', lang: 'devanagari',
+            domain: 'Sovereignty, the order called ṛta, and the noose', group: 'vedic',
+            exposition: [
+                'Indra has a quarter of the Rigveda and Varuṇa about a dozen hymns of his own, and it is Varuṇa the poets fear. A hymn to Indra and Varuṇa together calls one universal king, *samrāj*, and the other self-ruler, and the first is usually taken to be Varuṇa: Indra wins the battles, Varuṇa rules. He guards *ṛta*, the order that keeps the rivers running and men to their word. He sees everything — the sun is called the eye of Mitra and Varuṇa, and he has spies through the world — and his feats are a ruler’s rather than a champion’s: he measures out the earth with the sun as with a rod, and pours the rivers into one ocean without filling it. With Mitra, the contract, he makes a pair: the bond, and what enforces it.',
+                'He is also the god the poets approach about sin. In the book of the Vasiṣṭhas the poet asks what he has done that Varuṇa should want to destroy his friend, and pleads that the fault was drink, anger, dice and heedlessness, not his own will. The punishment is bodily: in the Aitareya Brāhmaṇa King Hariścandra, who vowed his son to Varuṇa and kept putting off the sacrifice, is struck with dropsy, and the substitute victim Śunaḥśepa goes free only by praising god after god until his fetters fall. Then Varuṇa dwindles. As *asura* slides towards demon, he becomes lord of the waters and regent of the west: the sovereign of the oldest hymns ends as an admiral.',
+            ],
+            cult: 'The soma rite’s closing bath, which the Śatapatha Brāhmaṇa makes a loosing of his noose; today, Sindhi devotion to Jhulelal, held to be his incarnation.',
+            interpretatio: 'Named with Mitra, Indra and the Nāsatyas in a Hittite treaty with Mitanni of the fourteenth century BCE; once derived from Ouranos, which most philologists no longer allow; set beside Ahura Mazda, attractively and unprovably; Suiten in Japanese Buddhism.',
         },
         {
             slug: 'agni', name: 'Agni', native: 'अग्नि', lang: 'devanagari',
@@ -426,10 +457,10 @@ export default {
             slug: 'sango', name: 'Ṣàngó', native: null, lang: null,
             domain: 'Thunder, the double axe, kingship and justice', group: 'yoruba',
             exposition: [
-                'Ṣàngó was a king of Òyó before he was a god — the fourth alaafin, remembered as terrible and magnificent, who took his own life and became thunder. His axe falls on liars and thieves; a house struck by lightning was a house judged, and his priests alone could clear the site.',
+                'Ṣàngó was a king of Ọ̀yọ́ before he was a god — the fourth alaafin, remembered as terrible and magnificent, who took his own life and became thunder. His axe falls on liars and thieves; a house struck by lightning was a house judged, and his priests alone could clear the site.',
                 'Carried across the Atlantic, he became Changó in Cuban Lucumí and Xangô in Brazilian Candomblé, and in the syncretism of enslavement he was masked as Saint Barbara — whose legend also turns on lightning.',
             ],
-            cult: 'Òyó; the Ṣàngó festival at Koso; and the terreiros and casas of the Americas.',
+            cult: 'Ọ̀yọ́; the Ṣàngó festival at Koso; and the terreiros and casas of the Americas.',
             interpretatio: 'Paired with Saint Barbara in the Caribbean; the double-axe portfolio invites comparison with Zeus and Thor, and Yoruba scholarship treats such pairing with justified caution.',
         },
         {
@@ -441,6 +472,16 @@ export default {
             ],
             cult: 'Ise Jingū — rebuilt to identical specification every twenty years, a practice running since the seventh century.',
             interpretatio: 'Resisted the Buddhist honji suijaku system unevenly: medieval theology paired her with the cosmic Buddha Dainichi, which Shinto reformers later undid.',
+        },
+        {
+            slug: 'tsukuyomi', name: 'Tsukuyomi', native: '月読', lang: 'cjk',
+            domain: 'The moon, the counting of months, and the night', group: 'kami',
+            exposition: [
+                'When Izanagi washes off the pollution of Yomi, Amaterasu is born from his left eye, Tsukuyomi from his right and Susanoo from his nose. Amaterasu is given the High Plain of Heaven, Susanoo the sea, and Tsukuyomi the realm of the night — and that is very nearly all the Kojiki says of him. The name is usually read as moon-counting, the moon as reckoner of the months; the Nihon Shoki adds other spellings, moon-night-seeing and moon-bow, and neither text plainly says whether the kami is male or female.',
+                'The one myth of his own is in a Nihon Shoki variant. Amaterasu sends him down to the food-goddess Ukemochi, who welcomes him by bringing up rice from her mouth facing the land, fish facing the sea and game facing the hills; disgusted to be fed from a mouth, he kills her, and from her body come cattle and horses, millet, silkworms, rice, wheat and beans. Amaterasu will not look at him again, which is why sun and moon keep apart, by day and by night. The Kojiki gives the killing of a food-goddess to Susanoo instead — a fair measure of the two court compilations: the Nihon Shoki keeps its variants, the Kojiki chooses.',
+            ],
+            cult: 'Tsukiyomi-no-miya, among the associated shrines of Ise at both the Inner and the Outer Shrine; the Tsukiyomi shrine at Matsuo in Kyoto.',
+            interpretatio: 'A moon usually taken as male beside a female sun, as in the Norse Máni and Sól; the murdered food-goddess is a standard East Asian instance of what Adolf Jensen named the Hainuwele myth.',
         },
 
         {
@@ -604,6 +645,26 @@ export default {
             interpretatio: 'Mars in the Roman interpretatio, which reads the war and misses the law.',
         },
         {
+            slug: 'baldr', name: 'Baldr', native: null, lang: null,
+            domain: 'The best of the gods, and the death that cannot be undone', group: 'norse',
+            exposition: [
+                'Snorri’s portrait is of a god so fair that light shines from him, the wisest of the Æsir, the most eloquent and the most merciful — with one strange property, that none of his judgements can be fulfilled. It is the most exact thing anyone says of him. Baldr does almost nothing in the myths; what he does is die. His mother takes an oath from every thing in the world, or nearly, not to harm him, the gods make a sport of throwing at him what cannot hurt, and Loki puts a dart of mistletoe into the hand of the blind god Hǫðr and guides his aim.',
+                'Hel will give him back if everything in the world weeps for him, and everything does except a giantess in a cave, who is supposed to have been Loki. Vafþrúðnismál ends on the one unrecorded detail of the funeral, what Odin said into his dead son’s ear before the pyre — a question only Odin can answer, which is how the giant learns whom he has been talking to. Saxo, writing in Denmark around 1200, tells another story entirely, in which Balderus is a warrior and a rival in love, mortally wounded by Hotherus. Whether the Icelandic Baldr belongs to the old religion or is a Christ-shadow cast back over it has been argued since Sophus Bugge in the 1880s; in the poems he returns only once the world has ended and been made again.',
+            ],
+            cult: 'None secure: a few claimed place-names, and a sanctuary, Baldrshagi, in a late legendary saga, Friðþjófs saga.',
+            interpretatio: 'Compared to Christ constantly, and to the dying gods since Frazer, who titled the last part of The Golden Bough Balder the Beautiful (1913) and took the mistletoe for the golden bough itself.',
+        },
+        {
+            slug: 'heimdallr', name: 'Heimdallr', native: null, lang: null,
+            domain: 'The watchman at the bridge, and the horn at the end', group: 'norse',
+            exposition: [
+                'He guards Bifrǫst, the rainbow bridge between the gods and the world, and Snorri gives him the senses the post requires: he needs less sleep than a bird, sees a hundred leagues by night as by day, and hears the grass grow on the earth and the wool on the sheep. He is the whitest of the Æsir, his teeth are gold, and he is the son of nine mothers, which the sources state and never explain. At the end he blows the Gjallarhorn, and he and Loki kill each other.',
+                'Almost everything else is a fragment. Vǫluspá opens by asking a hearing of all the holy races, greater and lesser, the sons of Heimdallr — humankind, it seems, as his children — and Rígsþula, in its single manuscript, has a god called Rígr, whom its prose identifies with him, sleep his way through three households and father the thrall, the farmer and the earl. Húsdrápa, composed late in the tenth century and probably before Iceland’s conversion, has him fight Loki for a jewel Snorri takes to be Freyja’s necklace — the two of them, Snorri adds, in the shape of seals. And Snorri knows, without telling it, a story in which a man’s head pierced him through; it was in a poem, Heimdalargaldr, of which he quotes only the god’s own claim to nine mothers.',
+            ],
+            cult: 'None attested. The figure with a horn on the tenth-century Gosforth Cross in Cumbria, a Christian monument, is often taken to be him.',
+            interpretatio: 'Set beside the angel of the last trumpet, as much of Vǫluspá’s ending is set beside Revelation; Rígsþula’s three estates are compared to the Indian varṇas — a likeness of structure, not proof of descent.',
+        },
+        {
             slug: 'sarasvati', name: 'Sarasvatī', native: 'सरस्वती', lang: 'devanagari',
             domain: 'Speech, learning, music — and a river', group: 'vedic',
             exposition: [
@@ -672,6 +733,16 @@ export default {
             ],
             cult: 'Yasaka Shrine in Kyoto and the Gion Matsuri; Susa and the Izumo region.',
             interpretatio: 'Conflated with the Buddhist Gozu Tennō in the medieval period, and disentangled again by the Meiji separation of kami and buddhas.',
+        },
+        {
+            slug: 'okuninushi', name: 'Ōkuninushi', native: '大国主', lang: 'cjk',
+            domain: 'The making and the surrender of the land; the ties between people', group: 'kami',
+            exposition: [
+                'The Kojiki gives him five names and a cycle that fills much of its book of the gods. As Ōnamuji he carries the bags for his eighty brothers on their way to court a princess of Inaba, and tells the hare they have tricked how to heal itself. They kill him twice, and twice he is brought back to life. He escapes to Susanoo’s country below, marries Susanoo’s daughter, survives a room of snakes, a room of centipedes and wasps and a burning field, and runs off with the old god’s sword, bow and koto while Susanoo sleeps with his hair tied to the rafters. Susanoo shouts after him to be Ōkuninushi, Master of the Great Land, and he is; with the tiny Sukunabikona, who comes over the sea in a seed-pod boat, he makes the country.',
+                'Then heaven decides the land belongs to Amaterasu’s line. The first envoys go over to him and do not report; at last Takemikazuchi sits cross-legged on a sword-point planted in the waves at Inasa, one son submits, the other is beaten and flees to Suwa, and Ōkuninushi yields on a single condition — a dwelling with pillars sunk in the bedrock and crossbeams reaching heaven. A Nihon Shoki variant has him keep the hidden things in exchange for the visible. Many read a real settlement between Yamato and Izumo under the myth; what is certain is that it reaches us through court compilations with every reason to tell it so. The Izumo fudoki of 733, written in the province, calls him the Great God Who Made the Realm under Heaven.',
+            ],
+            cult: 'Izumo Taisha, where worshippers clap four times, not two, and where by folk tradition the kami gather each tenth month to settle the ties between people.',
+            interpretatio: 'Read as daikoku, his name met Daikokuten, the Buddhist Mahākāla, and the two merged into the Daikoku of the Seven Lucky Gods; Hirata Atsutane made him ruler of the unseen world where the souls of the dead remain.',
         },
         {
             slug: 'izanagi-izanami', name: 'Izanagi and Izanami', native: '伊邪那岐', lang: 'cjk',
@@ -786,6 +857,82 @@ export default {
             ],
             cult: 'The temple on the Aventine; Mercuralia in May; and shrines the length of the Rhine frontier.',
             interpretatio: 'Hermes outright; Odin by Roman report; and, through Hermes, the ancestor of Hermes Trismegistus.',
+        },
+
+        // --- Tenochtitlan --------------------------------------------------
+        // No native script. Nahuatl has been written in Latin letters since the
+        // sixteenth century, and the pre-conquest books are painted rather than
+        // spelled. Nearly everything below comes through friars' books written
+        // after 1521; the group blurb says so and each entry says where it bears.
+        {
+            slug: 'tezcatlipoca', name: 'Tezcatlipoca', native: null, lang: null,
+            domain: 'Night, rule, sorcery, and the reversal of fortune', group: 'mexica',
+            exposition: [
+                'The name is usually rendered Smoking Mirror, and the mirror is obsidian: in the painted books he wears one at the side of his head and often has another in place of a foot. The Mexica called him Titlacahuan, we are his slaves; Yohualli Ehecatl, night and wind; Moyocoyatzin, roughly he who does as he pleases; Necoc Yaotl, the enemy of both sides. The long formal prayers Sahagún collected in Book 6 address him at every moment of dread — plague, poverty, war, the making of a ruler — as the one who sees into every house, gives wealth and takes it back, and owes no one an explanation. He belongs to no side, and that is the theology rather than a defect in it.',
+                'His feast was Toxcatl, the fifth month in Sahagún’s count, and it is among the rites the friars set down most fully. A young captive without bodily flaw lived for a year as the god’s *ixiptla* — his image, a word that does not separate representing the god from being him — taught the flute and courtly speech, saluted in the streets, and given four young women as wives for his last days. Then he climbed a small temple, breaking a flute on each step, and was killed at the top. The rite was cut short in May 1520, when Pedro de Alvarado’s men fell on the dancers in the great precinct during Toxcatl, and the killing provoked the rising that drove the Spaniards from the city.',
+            ],
+            cult: 'Tenochtitlan, his temple in the great precinct, its remains now under the old Archbishop’s Palace; Toxcatl, the fifth month.',
+            interpretatio: 'Sahagún calls him another Jupiter, invisible and present everywhere, attributes of the friar’s own God; the refutation appended to the same book makes him the Devil. The black mirror linked to John Dee is, by recent analysis, Mexican obsidian.',
+        },
+        {
+            slug: 'quetzalcoatl', name: 'Quetzalcoatl', native: null, lang: null,
+            domain: 'Wind, priesthood, the arts — and the making of the present humanity', group: 'mexica',
+            exposition: [
+                'The name joins the quetzal, whose green tail feathers the Mexica prized above gold, to the serpent, and the feathered serpent is far older than they were: it ripples along a temple at Teotihuacan more than a thousand years before Tenochtitlan. As Ehecatl he is the wind — Sahagún’s Spanish says he swept the road for the rain gods — and his temples were round. He was patron of the *calmecac*, the priests’ school, and the two high priests of the Templo Mayor carried his name as a title. In the Legend of the Suns, a Nahuatl text of 1558, he goes down to Mictlan for the bones of an earlier humanity, wins them from its lord, and bleeds from his own member on the ground bone to make the people now living.',
+                'Then there is the man. Topiltzin Quetzalcoatl, priest-king of Tula, is in the Mexica telling a ruler of the golden age whom the sorcerer Tezcatlipoca tricked into drunkenness and shame, and who went away east — promising, in some versions, to return. The Annals of Cuauhtitlan give him a birth and a death in years named One Reed, and 1519 was a year One Reed: the story that Moctezuma took Cortés for the returning god, told in Book 12 of the Florentine Codex, has been repeated ever since. Cortés’ own letters report a speech about a departed lord without naming the god, and Susan Gillespie and Camilla Townsend among others have argued that the identification was assembled after the conquest, by Nahuas and Spaniards both. The case is strong and not quite closed.',
+            ],
+            cult: 'Cholula, the pilgrimage city of the Feathered Serpent; round temples of Ehecatl across the valley, one still standing in Mexico City’s Pino Suárez metro station.',
+            interpretatio: 'Kukulkan and Q’uq’umatz are his name in Maya tongues. Durán thought him perhaps an apostle, and on 12 December 1794 Servando Teresa de Mier preached at Guadalupe that he had been Saint Thomas, and was exiled for it.',
+        },
+        {
+            slug: 'huitzilopochtli', name: 'Huitzilopochtli', native: null, lang: null,
+            domain: 'War, the migration, and the destiny of one people', group: 'mexica',
+            exposition: [
+                'The name is usually glossed Hummingbird of the South, or of the Left, and he was the Mexica’s own — not an ancient Mesoamerican power but a tribal god, carried in a bundle on his priests’ backs on the long migration from Aztlan, speaking from it and telling them where to stop: at the eagle on the cactus, by the traditional date in 1325. Book 3 of the Florentine Codex tells his birth. On Coatepec, Serpent Mountain, the goddess Coatlicue tucked a ball of feathers into her waistband while sweeping and conceived. Her daughter Coyolxauhqui and her four hundred sons resolved to kill her for the shame, and as they reached the summit he was born fully armed, cut Coyolxauhqui down with the fire serpent, and sent her body tumbling in pieces to the foot of the mountain.',
+                'The Templo Mayor was that mountain built again, and the city proved it by accident. In February 1978 electricity workers digging in the centre of Mexico City struck a great carved disc of the dismembered Coyolxauhqui, lying at the foot of the stairs to his shrine — exactly where the myth leaves her. The excavation that followed has confirmed much of what the friars wrote, the great skull rack beside the temple among it, dug from 2015. What the ground does not settle is the arithmetic: the chroniclers’ figures for the sacrifices at the temple’s rededication in 1487 run into the tens of thousands, and modern estimates are far lower and much disputed.',
+            ],
+            cult: 'Tenochtitlan — the southern of the twin shrines on the Templo Mayor; Panquetzaliztli, the fifteenth month, when his amaranth-dough image was killed and eaten.',
+            interpretatio: 'Sahagún’s Nahuatl calls him only a man, a sorcerer, a maker of war; the Spanish beside it is usually quoted as making him another Hercules. In 1590 Acosta read the eaten image as the Devil’s mimicry of communion.',
+        },
+        {
+            slug: 'tlaloc', name: 'Tlaloc', native: null, lang: null,
+            domain: 'Rain, lightning, the water inside the mountains — and the dead he takes', group: 'mexica',
+            exposition: [
+                'One of the oldest offices in this family and among the most widely held: a goggle-eyed, fanged rain god is painted and carved at Teotihuacan centuries before the Mexica arrived, and archaeologists call him Tlaloc there by courtesy. The etymology is disputed; most readings build on *tlalli*, earth. He lives in the mountains, which are hollow and full of water, and his helpers the *tlaloque* pour the rain from jars — when they break them, one sixteenth-century account says, it thunders. His paradise, Tlalocan, a place of green abundance, received those he killed himself: the drowned, the lightning-struck, the dead of dropsy, sores and the other diseases held to be his, who were buried, Sahagún’s informants said, rather than burned.',
+                'He was also fed with children, and here the friars’ testimony, which a modern reader might hope to discount, has been confirmed in the ground. Book 2 of the Florentine Codex describes children killed on the mountain tops and at the whirlpool in the lake in the first months of the year, their tears taken as a sign that rain would come; Offering 48 at the Templo Mayor held the remains of more than forty children, laid on his side of the temple. That side had stood beside Huitzilopochtli’s since the earliest stage the excavators reached: the newcomers’ war god and everyone’s rain god at the same height, and the Mexica evidently thought it unwise to choose.',
+            ],
+            cult: 'The northern shrine of the Templo Mayor; Mount Tlaloc, whose summit precinct the valley’s rulers climbed yearly, by Durán’s account; Pantitlan, the lake’s whirlpool.',
+            interpretatio: 'Chaac among the Maya and Cocijo among the Zapotecs hold the same office. The Christian calendar kept his errand: on Holy Cross day, 3 May, some Nahua communities, notably in Guerrero, still climb hills to petition for rain.',
+        },
+        {
+            slug: 'tonatiuh', name: 'Tonatiuh', native: null, lang: null,
+            domain: 'The sun of the present age, and the debt it is owed', group: 'mexica',
+            exposition: [
+                'The name is simply the word for the sun, and the sun is the present world: this is the Fifth Sun, after four earlier ages destroyed — by jaguars, wind, a rain of fire and a flood, in an order the sources do not agree on. Book 7 of the Florentine Codex tells how this one began. The gods gathered in the dark at Teotihuacan to choose a sun. The splendid Tecuciztecatl volunteered and four times shied from the fire; the poor, sore-covered Nanahuatzin leapt in at once and rose in the east. Tecuciztecatl followed and rose as a second sun, until a god threw a rabbit in his face, which is the rabbit in the moon. Then the new sun would not move, and the gods gave their own lives to set it going.',
+                'The debt runs the other way after that. A sun set going by the death of gods is kept going by the blood of people, and the sources say so without embarrassment: warriors who died in battle or on the stone escorted him from sunrise to noon, women who died in childbirth from noon to sunset, and the captive’s heart was his food. How far this theology explains the scale of Mexica sacrifice, and how far it dressed a policy of terror, is one of the real arguments in the field. His face is traditionally seen at the centre of the great Sun Stone, dug up in the Zócalo on 17 December 1790; Tlaltecuhtli, the earth, and the sun at night have both been argued for it instead.',
+            ],
+            cult: 'Tenochtitlan, where by Durán’s account the eagle and jaguar warriors kept his feast on Four Movement, this sun’s day-name; the *cuauhxicalli*, eagle vessel for hearts.',
+            interpretatio: 'Sol and Helios by convention. The Nahuas gave his name to the fair-haired Pedro de Alvarado, who led the killing at Toxcatl. The Sun Stone became a national emblem, keeping the god’s face and dropping his diet.',
+        },
+        {
+            slug: 'tlazolteotl', name: 'Tlazolteotl', native: null, lang: null,
+            domain: 'Desire, its transgressions, and the confession that cleared them', group: 'mexica',
+            exposition: [
+                'The name means Filth Goddess — *tlazolli* is refuse, the sweepings of the floor — and her other name, Tlaelquani, means Eater of Filth. The filth is sexual transgression, and she governed it from both ends: she stirred the desire and she took away the stain. Book 1 of the Florentine Codex makes her four sisters under one name and describes the rite that most held the friars’ attention. Someone who had sinned against her went to one of her soothsayers, who consulted the book of days for a fitting date; then, with incense on the fire, the penitent told everything before Tezcatlipoca, took a penance of fasting and of the tongue pierced with thorns, and was released. It could be done only once, on a promise not to sin again, so it was put off until old age.',
+                'In the painted books she wears raw cotton in her headdress, spindles and a crescent nose-ornament, and she is generally said to have come from the Huastec country on the Gulf coast, whose cotton and whose ornaments those are. She is bound up with childbirth and with Toci, Our Grandmother, the mother of the gods, with whom the sources often merge her at Ochpaniztli, the festival of sweeping — and sweeping, for the Mexica, was a religious act. The friars’ difficulty with her is the reader’s: a goddess of lust who also presided over confession does not fall into the categories they had brought, and she is hard to describe without making her either a scandal or a saint.',
+            ],
+            cult: 'Confession before her soothsayers, on a day the calendar chose; Ochpaniztli, the eleventh month; the Huastec Gulf coast, by tradition her country.',
+            interpretatio: 'Sahagún calls her another Venus, which catches the desire and misses the absolution. What struck him was the confession: Book 6 sets it down as the auricular confession the Nahuas made before their conversion — the sacrament’s own name.',
+        },
+        {
+            slug: 'mictlantecuhtli', name: 'Mictlantecuhtli', native: null, lang: null,
+            domain: 'The dead of ordinary deaths, and the road they take', group: 'mexica',
+            exposition: [
+                'Lord of Mictlan, ruling with his consort Mictecacihuatl over most of the dead — for the Mexica sorted the dead by how they died rather than how they had lived. Warriors killed in battle or on the stone, and women who died in childbirth, went to the house of the sun; the drowned and the lightning-struck went to Tlaloc; nearly everyone else came to him. The appendix to Book 3 of the Florentine Codex describes the road: cut papers and provisions for a journey of four years, past mountains that clash together, a serpent, a wind of obsidian blades, and at last a wide river crossed with the help of a little dog, killed and burned with the body for the purpose. Nothing in the account resembles a judgement. The road is simply hard for everyone.',
+                'He has little myth of his own beyond one bad bargain. In the Legend of the Suns he guards the bones of the earlier humanity, sets Quetzalcoatl an impossible task for them — to sound a conch shell that has no holes — and loses them anyway, though a pit dug at his order and a covey of quail make the thief stumble and scatter them on the way out. His finest surviving images are two life-size clay figures excavated in the House of the Eagles beside the Templo Mayor: the ribs bare, the liver hanging beneath them, the crown pierced, probably to take hair. They are among the most accomplished things the Mexica made, and they portray the death that comes to everyone.',
+            ],
+            cult: 'Thinly recorded: the House of the Eagles, where his figures stood; the months Durán calls the little and great feasts of the dead.',
+            interpretatio: 'The friars made Mictlan hell, and Nahuatl catechisms used its name for it, putting a judgement into a country that had sorted the dead by how they died. The Day of the Dead’s Mexica ancestry is partly real, partly argued.',
         },
     ],
 };

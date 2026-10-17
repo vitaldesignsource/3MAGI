@@ -438,6 +438,18 @@ export default {
             elsewhere: 'Mandaeans revere John the Baptist and reject Jesus, which makes them the one community that took the side the gospels did not — and the Scriptorium self-hosts a Mandaic face for exactly this script.',
         },
         {
+            slug: 'yushamin', name: 'Yushamin',
+            title: 'The Second Life, the rebel forgiven',
+            group: 'mandaean', tradition: 'Mandaean',
+            exposition: [
+                'Below the Great Life the texts set a descending series — Yushamin the Second Life, Abatur the Third, Ptahil the Fourth — and the trouble starts at the first step down, not at the bottom. Yushamin overreaches: in the Right Ginza, on the usual summary, he and his sons resolve to take a hand in creation without the leave of the First Life, and he is cast down for it. Not into the darkness: he is an *uthra* in disgrace, not a devil. The Book of John opens with his rebellion against the King of Light, and ends it in reconciliation.',
+                'One of his sons carries a petition for his father’s forgiveness to the King of Light, and it is granted over Manda d-Hayyi’s objection. Yushamin has a second career in the priests’ books: in the texts of ritual instruction, as Drower read them, he is the heavenly prototype of the priest who makes mistakes in a rite, and Buckley holds the two sides together — a being of light beyond reproach, and the pattern of the officiant who gets it wrong. The name may join the divine name Yao to the Aramaic for heaven: a proposal, not a proof.',
+            ],
+            attested: 'The Right Ginza; the Book of John, chapters 1–10 (the rebellion and the reconciliation); the texts of ritual instruction, as reported by Drower.',
+            office: 'The Second Life; the rebel reconciled; in the ritual texts, the prototype of the priest who errs.',
+            elsewhere: 'Sabaoth, in the Pleroma company, changes sides and is promoted; Yushamin rebels and is forgiven. Both systems leave a door open for a power on the wrong side of the line, and the Mandaic hall adds Ptahil, promised forgiveness at the end.',
+        },
+        {
             slug: 'abatur', name: 'Abatur',
             title: 'The weigher of souls',
             group: 'mandaean', tradition: 'Mandaean',
@@ -462,16 +474,52 @@ export default {
             elsewhere: 'Set beside Yaldabaoth in this company, the two demiurges make the clearest available case that gnostic systems are not one system.',
         },
         {
+            slug: 'manda-d-hayyi', name: 'Manda d-Hayyi',
+            title: 'The Knowledge of Life, sent down',
+            group: 'mandaean', tradition: 'Mandaean',
+            exposition: [
+                'The name is a phrase: *Manda d-Hiia*, the Knowledge of Life — the Life’s own knowing, personified and sent. He is the foremost of the envoys of light, and he does the work other religions give to a redeemer: he goes down, he speaks, he fetches souls home. No death is asked of him; the rescue comes by instruction and by washing. The people’s own name, *mandaiia*, is derived by Lidzbarski and Macuch from *manda*; if that holds, the Mandaeans are the one community surviving from late antiquity known to call itself, in effect, the knowers.',
+                'The Right Ginza’s fifth book holds a scene a reader of the gospels will recognise. He comes to John at the Jordan as a boy of three years and a day and asks to be baptised; John baptises him, and is then taken up into the world of light — the greater coming to the lesser, as in Matthew, with a different candidate in the water. The Book of John keeps the other half of the gospel scene and turns it: there Jesus asks for baptism, and John refuses him until a letter comes from the house of Abatur.',
+            ],
+            attested: 'The Right Ginza, for his descent and (book 5, chapter 4, in Lidzbarski’s numbering) the baptism by John; the Book of John, for Yushamin’s forgiveness. Both are compilations of unequal age, redacted after the Arab conquest.',
+            office: 'Messenger and revealer of the Life; bearer of *manda* to the earth; the boy John baptises before he is taken up.',
+            elsewhere: 'His is the kind of figure Reitzenstein and Bultmann set behind the revealer of the Fourth Gospel, sent down from the light and returning; the Mandaic timeline follows that argument from 1921 to its retreat. *Manda* is simply the Aramaic for gnosis.',
+        },
+        {
+            slug: 'hibil-ziwa', name: 'Hibil Ziwa',
+            title: 'The descent into the dark, and the washing after',
+            group: 'mandaean', tradition: 'Mandaean',
+            exposition: [
+                'The name is Abel’s — Hibil is its Mandaic form — and *ziwa* is radiance: Hibil Ziwa is the being of light who bears it, at times hard to tell apart from Manda d-Hayyi. His office is the descent. Before he goes down the King of Light baptises him in three hundred and sixty Jordans — the number swells in some tellings — and clothes him in as many robes of light. Then he goes down through the worlds of darkness one after another, taking their mysteries and sealing Krun, the lowest of them, on the way.',
+                'He comes back with Ruha, leading her up on the pretext of taking her to her parents, and seals her in a world of neither light nor darkness, where she bears Ur; when Ur sees the light in his mother’s mirror and resolves to storm it, Hibil takes the mirror and binds him. Then he must be washed again, because he has been where he has been. The priestly scroll of the descent, the Baptism of Hibil Ziwa, is a commentary on baptism; by the rule as reported, a polluted priest is cleansed by three hundred and sixty immersions in succession — Hibil’s number.',
+            ],
+            attested: 'The Right Ginza, book 5, chapter 1 in Lidzbarski’s numbering; the Diwan of the Baptism of Hibil Ziwa (DC 35), published by Drower in 1953 together with the Haran Gawaita.',
+            office: 'To descend into the dark, take its mysteries, bring up Ruha and bind Ur — and be washed on the way back.',
+            elsewhere: 'The Hymn of the Pearl, in the Syriac hall, sends a prince down into Egypt who must himself be called home; the builders of the gnostic redeemer myth read it beside the Mandaean descents, and the relation is not settled.',
+        },
+        {
             slug: 'ruha', name: 'Ruha',
             title: 'The Spirit, and mother of the seven',
             group: 'mandaean', tradition: 'Mandaean',
             exposition: [
-                'The name is the ordinary Aramaic word for spirit — the same word that is feminine in Syriac, and that the early Syriac church used of the Holy Spirit. In Mandaean cosmology Ruha is the mother of the seven planets and the twelve signs, and she works against the ascent of souls; she is queen of the world of darkness, beside her son Ur, and nevertheless the sister of the light, and the texts are not comfortable about her.',
+                'The name is the ordinary Aramaic word for spirit — the same word that is feminine in Syriac, and that the early Syriac church used of the Holy Spirit. In Mandaean cosmology Ruha is the mother of the seven planets and the twelve signs, and she works against the ascent of souls; she is queen of the world of darkness, beside her son Ur, and nevertheless titled Ruha ḏ-Qudša, the Holy Spirit, and the texts are not comfortable about her.',
                 'This is one of the sharpest reversals in the comparative record, and it cuts against the portal’s own Christianities material: what is venerated as the feminine Spirit in Syriac Christianity, brooding over the waters, is in the tradition next door along the same rivers the adversary of the soul’s return. Both are reading the same word.',
             ],
             attested: 'The Ginza Rabba; the Book of John, where she figures in the accounts of the planets.',
             office: 'Mother of the seven planets; obstruction of the soul at the gates.',
             elsewhere: 'The Syriac hall in the Scriptorium holds *rūḥā* as a feminine noun and the theology built on it — the same three letters read in opposite directions by neighbours.',
+        },
+        {
+            slug: 'ur-mandaean', name: 'Ur',
+            title: 'The dragon-king of the world below',
+            group: 'mandaean', tradition: 'Mandaean',
+            exposition: [
+                'The crowned power of the world below — not its deepest, which is Krun, but its king, with Ruha as his queen and his mother. He is born in the sealed world where Hibil Ziwa has left her, and is drawn as a dragon or great serpent; one Ginza passage gives the King of Darkness a lion’s head, a dragon’s body and an eagle’s wings. Seeing the world of light in his mother’s mirror, he resolves to storm it against her counsel, and Hibil takes the mirror and binds him. By him Ruha bears the seven planets and the twelve signs.',
+                'His passports are Iranian and Hebrew at once. Rudolph, writing on Mandaeism’s Iranian elements for the Encyclopaedia Iranica, finds the snake-like Ur reminiscent of Aži Dahāka, the three-headed dragon of the Avesta. The Ginza also calls him Leviathan, sometimes keeping the two apart, and Jaan Lahe (2025) traces that Leviathan’s demonic character chiefly to Psalm 74 and Isaiah 27, more probably by way of post-biblical Jewish than Christian tradition. In the rites he is the serpent on the *skandola*, the iron seal pressed on new graves and newborns’ navels; a priest told Drower that Hibil Ziwa brought it up out of the darkness with Ruha.',
+            ],
+            attested: 'The Right Ginza, book 5 in Lidzbarski’s numbering (Hibil Ziwa’s descent), and the passages naming him Leviathan; the Book of John; E. S. Drower, The Mandaeans of Iraq and Iran (1937), for the *skandola*.',
+            office: 'King of the world of darkness; would-be stormer of the light, bound; by Ruha, father of the planets and the signs.',
+            elsewhere: 'The Manichaean King of Darkness, in the next company, has nearly the same composite body — lion’s head, eagle’s shoulders, dragon’s belly — and the Apocryphon of John gives Yaldabaoth a lion’s face on a serpent; but Ur, unlike Yaldabaoth, makes no world.',
         },
 
         // --- Manichaean -----------------------------------------------------
@@ -486,6 +534,18 @@ export default {
             attested: 'The Coptic Kephalaia and Psalm-Book from Medinet Madi; the Cologne Mani Codex for Mani’s own beginnings; Iranian and Uyghur fragments from Turfan; Augustine, who belonged to the religion for nine years and then wrote against it.',
             office: 'Source of the Land of Light and of the three evocations by which the light is recovered.',
             elsewhere: 'Zoroastrian dualism stands behind this and is not the same: Iran has two spirits who choose, Mani has two natures that were always there.',
+        },
+        {
+            slug: 'mother-of-life', name: 'The Mother of Life',
+            title: 'The first called, who sent her son to the frontier',
+            group: 'manichaean', tradition: 'Manichaean',
+            exposition: [
+                'When the darkness came up against the frontier of the light, the Father of Greatness would not, on Theodore bar Konai’s account, send out his five dwellings, which had been made for peace, but resolved to go himself. What went was his evocation: he called forth the Mother of Life, and she called forth the Primal Man. That is the first evocation as Theodore and the Coptic Kephalaia set it out, and as the Acts of Archelaus reported it in the fourth century. Her names change with the languages of the mission; in Chinese she is the Good Mother.',
+                'She is less a heroine than a hinge, and the myth comes back to her whenever the rescue changes hands. When her son lies defeated it is she, with the Living Spirit, who goes down to the edge of the dark to bring him back. And when the Spirit’s sons have killed and flayed the captured archons, Theodore’s summary has them carry the skins to her. She stretches them out as the heavens, while the carcasses are thrown down to make the earths — ten heavens and eight earths, by the usual Manichaean count.',
+            ],
+            attested: 'The Kephalaia; Theodore bar Konai, Liber Scholiorum; the Acts of Archelaus, in Turbo’s summary, with its Greek preserved by Epiphanius, Panarion 66; Middle Persian, Parthian and Sogdian fragments from Turfan; the Chinese Hymnscroll from Dunhuang.',
+            office: 'The first evocation: to call forth the Primal Man, then to share in his rescue and the building of the heavens.',
+            elsewhere: 'Barbelo holds the same place among this portal’s Powers of the Pleroma: the first power the highest principle brings forth is a mother, in her case a Mother-Father. No line of descent between the two has been shown.',
         },
         {
             slug: 'primal-man', name: 'The Primal Man',
@@ -522,6 +582,54 @@ export default {
             attested: 'Theodore bar Konai; the Kephalaia; Augustine, De haeresibus and De natura boni, reporting the myth from memory and with intent.',
             office: 'To extract the swallowed light from the powers of darkness by the seduction of the archons.',
             elsewhere: 'The Cao’an temple in Fujian, whose statue of Mani as the Buddha of Light was carved in 1339, is the last surviving Manichaean building anywhere — the religion ran from Spain to the Chinese coast and ended on it.',
+        },
+        {
+            slug: 'maiden-of-light', name: 'The Maiden of Light',
+            title: 'The beauty shown to the archons, and the flash in the storm',
+            group: 'manichaean', tradition: 'Manichaean',
+            exposition: [
+                'Also called the Virgin of Light, she belongs to the third evocation: on the usual reading of the Kephalaia’s chapter on the five fathers, the Third Messenger calls her forth with the Column of Glory and Jesus the Splendour. Some witnesses give the Messenger both forms, as his entry does; others divide the work, with the Maiden showing herself to the male powers so that they let go of the light they hold. Augustine, quoting the Manichaean Thesaurus in De natura boni, has the powers of light appear in male beauty to the female race of darkness and in female beauty to the male.',
+                'She also has weather. In the Iranian texts she is Sadwēs, a star name taken from the Avesta, and she is usually read there as a bringer of rain. In Chinese she became Dianguang, Lightning, and the Royal Buddha of Lightning. The power sent to undo the archons by being looked at became, at the far end of the road, a flash in the storm.',
+            ],
+            attested: 'The Kephalaia, for her place among the Messenger’s powers; the Turfan texts, where she is Sadwēs; Augustine, De natura boni 44, quoting the Thesaurus; the Chinese texts, where she is Lightning.',
+            office: 'With the Third Messenger, to draw the swallowed light out of the powers of darkness; further east, a power of weather.',
+            elsewhere: 'Pistis Sophia, among this portal’s texts, has its own Virgin of Light, who judges souls and seals them before they return to bodies. The name is shared, the office differs, and any borrowing either way is unsettled.',
+        },
+        {
+            slug: 'jesus-the-splendour', name: 'Jesus the Splendour',
+            title: 'The one who woke Adam',
+            group: 'manichaean', tradition: 'Manichaean',
+            exposition: [
+                'Manichaeism has more than one Jesus, and this is the cosmic one — *Yišoʿ Zīwā* in Theodore bar Konai’s Syriac. In the Kephalaia’s chain of five fathers he proceeds from the Third Messenger, and the Light Nous from him. His great act is an awakening. Adam, made by the demons in the Messenger’s image, lies in a sleep like death. In Theodore’s summary Jesus comes to him, wakes him, drives off the deceiving demon and binds the great female archon. Adam looks at himself and knows what he is; Jesus raises him and makes him taste of the Tree of Life; and Adam weeps.',
+                'The other Jesuses stand around him. There is the Jesus who walked in Judaea and, in the western teaching at least, had no body of real flesh. There is the suffering Jesus, *Jesus patibilis* — the light bound in the world and hanging from every tree — in the creed of the Manichaean bishop Faustus that Augustine answers in Contra Faustum 20. And there is the Jesus who comes as judge at the world’s end in Mani’s Šābuhragān. Whether these are one figure in several offices or several under one name is argued in the modern literature, which is why the counts differ.',
+            ],
+            attested: 'Theodore bar Konai for the awakening of Adam; the Kephalaia, chapter 7, for his place among the five fathers; the Turfan texts; Augustine, Contra Faustum 20.2, for the suffering Jesus; the Šābuhragān for the judge.',
+            office: 'To wake the first man to what he is; in the Kephalaia’s scheme, the father from whom the Light Nous proceeds.',
+            elsewhere: 'Majella Franzmann’s Jesus in the Manichaean Writings (2003) is the place to start on the plural. The Understandings of Christ in Christianities counts Manichaeism among the traditions docetism runs through; the Autogenes is another Christ who is an office first.',
+        },
+        {
+            slug: 'light-nous', name: 'The Light Nous',
+            title: 'The mind that comes to rebuild the self',
+            group: 'manichaean', tradition: 'Manichaean',
+            exposition: [
+                'Also called the Light Mind or the Great Nous — *Manohmēd rōšn* in Parthian — he proceeds from Jesus the Splendour in the Kephalaia’s chain of the five fathers, and in the church’s teaching he is the one who sends the apostles, one to each generation; Mani was the last of them. The Living Spirit’s work was cosmic; this one’s is personal. The Light Nous comes into the believer, subdues the old self that matter has built, and raises the new self from the five faculties of mind that Theodore bar Konai lists as the five dwellings of the Father.',
+                'He is the reason Manichaeism could be a church and not only a cosmology. In the system’s terms, every believer in whom the new self has come to power is ground the Light Nous has taken. The demons who ruled the old self are not destroyed there but bound, much as the Living Spirit bound the archons into the fabric of the world: the person is rebuilt on the pattern of the cosmos. The text that tells it at length, the Sermon on the Light-Nous, survives in Parthian, Sogdian and Uyghur fragments from Central Asia and in a Chinese version from Dunhuang.',
+            ],
+            attested: 'The Kephalaia, chapter 7; the Sermon on the Light-Nous — Parthian and Sogdian versions edited by Sundermann (Berliner Turfantexte 17, 1992), Uyghur fragments, and the Chinese Traité; Theodore bar Konai for the five faculties.',
+            office: 'To send the apostles, and in each believer to subdue the old self and build the new.',
+            elsewhere: 'Paul supplies the vocabulary, the old self put off and the new put on (Colossians 3:9–10; Ephesians 4:22–24), and the Manichaeans read it as a mechanism. Ptahil and the Living Spirit build worlds; this builder’s site is a person.',
+        },
+        {
+            slug: 'king-of-darkness', name: 'The King of Darkness',
+            title: 'The other root, which nothing made',
+            group: 'manichaean', tradition: 'Manichaean',
+            exposition: [
+                'The King of Darkness has no origin story, because he has no origin: the darkness is a root as old as the light, and nothing in the system made it. Its land lies over against the Land of Light in five worlds — smoke, fire, wind, water and darkness, though the lists disagree about the order — each with its own ruler, and the King wears all five at once: the Kephalaia gives him one body with the forms of lion, demon, eagle, dragon and fish. Theodore bar Konai’s Syriac calls him the King of Darkness; the Iranian texts call him Ahriman.',
+                'He did not want the light until he saw it. The darkness is a war of all against all until the light is glimpsed at the frontier; then its powers turn on it together, and the attack is appetite, not policy. The Iranian texts give that appetite a female name, Āz, Greed, who has Adam and Eve made in the image of the Messenger she has glimpsed. At the end, after a fire the Šābuhragān says will burn for 1,468 years, what remains of the darkness is shut away — the Coptic books call it the *bōlos*, the lump. He is never destroyed, only sealed.',
+            ],
+            attested: 'The Kephalaia, chapters 6 and 27, for the composite form; the Coptic books from Medinet Madi for the *bōlos*; Theodore bar Konai; the Šābuhragān and other Turfan texts; Augustine, Contra epistulam fundamenti and De natura boni.',
+            office: 'Ruler of the five worlds of darkness: the appetite that starts the drama, and the prisoner with whom it ends.',
+            elsewhere: 'Ahriman is borrowed, like Ohrmizd for the Primal Man; its owner, Angra Mainyu, stands in the pantheons under The Wise Lord and the Lie. A Ginza passage cited under Ur builds a Mandaean King of Darkness from much the same parts.',
         },
     ],
 };
