@@ -216,6 +216,21 @@ for (const r of rosicrucian?.descent ?? []) push(
     'rc-descent-heading', '/christianities/rosicrucian',
 );
 
+// The grades. People search for the names themselves — Zelator, Adeptus
+// Minor, Ipsissimus — so each rung is a record, carrying its line of descent.
+for (const g of rosicrucian?.grades ?? []) push(
+    CH, 'note', '', `${g.gd} (${g.num})`, 'The Rosicrucian grades',
+    g.added
+        ? `Added by the Golden Dawn in 1888, with no earlier Rosicrucian grade behind it. On the Tree: ${g.sefira}.`
+        : `Gold- und Rosenkreuz ${g.gurc} → Societas Rosicruciana ${g.sria} → Golden Dawn ${g.gd}. On the Tree: ${g.sefira}.`,
+    'rc-grades-heading', '/christianities/rosicrucian',
+);
+
+// The historians: their books are looked for by title.
+for (const w of rosicrucian?.scholarship ?? []) push(
+    CH, 'work', '', w.work, `${w.year} · ${w.author}`, w.argued, w.slug, '/christianities/rosicrucian',
+);
+
 // The Witnesses, on the Canon page: the manuscripts by siglum, and the four
 // notes beneath them. Recovered with the dataset itself from the deploy build.
 const codices = await loadCh('codices');

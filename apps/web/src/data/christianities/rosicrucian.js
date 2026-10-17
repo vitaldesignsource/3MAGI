@@ -9,6 +9,11 @@
 export default {
     kicker: 'Christianities · The Inner Tradition',
     title: 'The Rose and the Cross',
+    // The emblem in the hero. The portal had told the emblem's story twice —
+    // in the ledger and in the afterword — without ever showing it.
+    emblem: {
+        caption: 'Luther’s seal as his letter of 8 July 1530 to Lazarus Spengler describes it, and no more — which is why it lacks the green leaves later versions add. A diagram of a letter, not a copy of any seal.',
+    },
     intro: [
         'Between 1614 and 1616 three anonymous pamphlets came out of Lutheran Württemberg announcing a secret brotherhood, a hundred and twenty years old, holding the reformation of the whole wide world and ready at last to declare it. Europe answered in print — several hundred books and open letters within a decade — and nobody found them.',
         'Almost everything written about the Rosicrucians since has failed in one of two directions: taking the brotherhood at its word, or dismissing the whole thing as a hoax and stopping there. Both are wrong, and the second is now the commoner error. There was no order. There was, demonstrably, a movement — and the search for a brotherhood that did not exist built Freemasonry’s higher degrees, the Golden Dawn, and a good deal of what the modern West means by initiation.',
@@ -349,6 +354,38 @@ export default {
         },
     ],
     descentCoda: 'The hole is the interesting part. Every modern Rosicrucian body is post-1866, and every one of them crosses the seventy years by assertion — a charter from a person who cannot be found, an initiation abroad with no second witness, teachings from an Elder Brother who happens to agree with a lecturer the author had gone to hear, a founding date set on the year of a joining. It does not follow that they are frauds; three of them have outlasted most of the churches that condemned them, and the first article is better kept among them than among their critics. What follows is that Rosicrucian descent is a literary genre with settled conventions, and that the conventions were fixed in 1614 by a book about a door that opened after a hundred and twenty years.',
+    // The grades. The descent chart's whole argument is an empty column, and it
+    // would be dishonest to leave the impression that nothing at all crossed.
+    // One thing did, and it is documented: the names of the grades. Each row
+    // reads across three orders; a rung the Golden Dawn added is marked as an
+    // addition, and the validator will not let the table imply a descent for a
+    // grade that has none.
+    gradesIntro: [
+        'The chart above leaves the record empty for seventy years, and it is right to. But one thing did cross the gap, and it is not a charter, a person or a doctrine. It is a list of names.',
+        'The Gold- und Rosenkreuz took its members up a ladder of nine grades. The Societas Rosicruciana in Anglia has the same nine, in the same order, rendered into the singular — and the rituals Robert Wentworth Little said he found at Freemasons’ Hall are taken by the society’s own historians to have been the German order’s first four. Those originals have never been produced; the names are the evidence, and the names are not in doubt. The Golden Dawn took the ladder from the Societas whole, added a rung at each end, and hung it on the Tree of Life.',
+    ],
+    gradeColumns: [
+        { key: 'gurc', label: 'Gold- und Rosenkreuz', where: 'German and Austrian lodges, 1770s' },
+        { key: 'sria', label: 'Societas Rosicruciana', where: 'London, 1866–67' },
+        { key: 'gd', label: 'Golden Dawn', where: 'London, 1888' },
+        { key: 'num', label: 'Grade = Sephirah', where: 'added 1888' },
+        { key: 'sefira', label: 'On the Tree', where: 'added 1888' },
+    ],
+    grades: [
+        { gurc: null, sria: null, gd: 'Neophyte', num: '0=0', sefira: 'Not yet on the Tree', added: true },
+        { gurc: 'Juniores', sria: 'Zelator', gd: 'Zelator', num: '1=10', sefira: 'Malkuth' },
+        { gurc: 'Theoretici', sria: 'Theoricus', gd: 'Theoricus', num: '2=9', sefira: 'Yesod' },
+        { gurc: 'Practici', sria: 'Practicus', gd: 'Practicus', num: '3=8', sefira: 'Hod' },
+        { gurc: 'Philosophi', sria: 'Philosophus', gd: 'Philosophus', num: '4=7', sefira: 'Netzach' },
+        { gurc: 'Adepti Minores', sria: 'Adeptus Minor', gd: 'Adeptus Minor', num: '5=6', sefira: 'Tiphareth' },
+        { gurc: 'Adepti Majores', sria: 'Adeptus Major', gd: 'Adeptus Major', num: '6=5', sefira: 'Geburah' },
+        { gurc: 'Adepti Exempti', sria: 'Adeptus Exemptus', gd: 'Adeptus Exemptus', num: '7=4', sefira: 'Chesed' },
+        { gurc: 'Magistri', sria: 'Magister', gd: 'Magister Templi', num: '8=3', sefira: 'Binah' },
+        { gurc: 'Magi', sria: 'Magus', gd: 'Magus', num: '9=2', sefira: 'Chokmah' },
+        { gurc: null, sria: null, gd: 'Ipsissimus', num: '10=1', sefira: 'Kether', added: true },
+    ],
+    gradesNote: 'Listed in the order a member climbed, from the lowest rung. The German names vary between sources — Waite gives the first grade as *Zelatores vel Juniores*, which is where the English Zelator comes from — but the nine and their order do not.',
+    gradesCoda: 'Read across, and for once on this page the descent is real and exact: nine names, in order, from German lodges of the 1770s to a London society of the 1860s to the Golden Dawn of 1888. Read the last two columns and you can see what 1888 added — a rung below and a rung above, a numbering, and the Kabbalah. In each Golden Dawn grade the first number counts up from the candidate and the second counts down the Tree from the crown, and they cross in the middle. The grade at the crossing, 5=6, is Tiphareth, the sphere of the sun, and it is the grade at which the Second Order took its members into a seven-sided vault built on the Fama’s description — the room in the diagram above, lit by a sun of its own making, set at last at the sun’s own place on the Tree. The top three rungs were reserved for the Third Order, the Secret Chiefs, whose standing is in the chart above.',
     chronologyIntro: 'What actually happened, in order.',
     chronology: [
         { year: 'c. 1610', label: 'The Fama circulates in manuscript', note: 'Copies are moving in Tyrol and beyond, years before any printing.' },
@@ -365,6 +402,103 @@ export default {
         { year: '1888', label: 'The Golden Dawn opens on a forged warrant', note: 'The Cipher Manuscripts, and letters from a Nuremberg adept who never existed.' },
         { year: '1909–1945', label: 'The modern bodies', note: 'Heindel’s Rosicrucian Fellowship, Lewis’s AMORC, and the Lectorium Rosicrucianum in the Netherlands — three quite different religions under one emblem.' },
         { year: '1972', label: 'Yates publishes, and the field argues', note: 'The Rosicrucian Enlightenment convinces a generation of readers and few specialists; what survives is that magic belongs in intellectual history.' },
+    ],
+    // The scholarship. The ledger gives verdicts, and a reader is entitled to
+    // know whose work they rest on and how that work has itself fared. Each
+    // row says what was argued and what is left of it now — the same two
+    // questions the ledger asks of the tradition, asked of its historians.
+    scholarshipIntro: [
+        'Two centuries of argument, and the argument has a shape. It begins by asking whether the brotherhood existed, moves on to who wrote the books, and arrives — late, and in the archives — at the question of what the books did. These are the works that moved it, with what each argued and what is left of it.',
+    ],
+    scholarship: [
+        {
+            year: '1804',
+            slug: 'buhle-1804',
+            author: 'Johann Gottlieb Buhle',
+            work: 'Über den Ursprung und die vornehmsten Schicksale der Orden der Rosenkreuzer und Freymaurer',
+            argued: 'That Andreae wrote the manifestos and the brotherhood was his invention — and that the Rosicrucian idea passed to England by way of Fludd and became Freemasonry.',
+            stands: 'The authorship case stands, refined almost beyond recognition. The Masonic descent is the part nobody has ever documented, and the chart on this page is in a sense the long answer to it.',
+        },
+        {
+            year: '1824',
+            slug: 'de-quincey-1824',
+            author: 'Thomas De Quincey',
+            work: 'Historico-Critical Inquiry into the Origin of the Rosicrucians and the Free-Masons',
+            argued: 'Buhle’s case, in English, in the London Magazine — and substantially Buhle’s text, abridged, which is how most English readers first met the argument.',
+            stands: 'Of interest now chiefly as the channel. A tradition with its own record of borrowed teaching entered English scholarship by way of an abridgement.',
+        },
+        {
+            year: '1870',
+            slug: 'jennings-1870',
+            author: 'Hargrave Jennings',
+            work: 'The Rosicrucians: Their Rites and Mysteries',
+            argued: 'That the Rosicrucians were the keepers of a universal religion of fire and the generative principle, traceable through every cult of antiquity.',
+            stands: 'Worthless as history and influential anyway. It was in print and being read in the years the Societas Rosicruciana and the Golden Dawn were taking shape, and it supplied a good deal of the atmosphere.',
+        },
+        {
+            year: '1887',
+            slug: 'waite-1887',
+            author: 'A. E. Waite',
+            work: 'The Real History of the Rosicrucians',
+            argued: 'That the brotherhood’s claims to antiquity collapse on inspection — and, unusually for its moment, it printed the documents so the reader could check, Vaughan’s English of the Fama and Confessio among them.',
+            stands: 'Superseded in detail, never in method. Waite went on to the much fuller *Brotherhood of the Rosy Cross* of 1924, and in between joined the Golden Dawn: the historian of the descent became, for a while, a row in it.',
+        },
+        {
+            year: '1928',
+            slug: 'peuckert-1928',
+            author: 'Will-Erich Peuckert',
+            work: 'Die Rosenkreutzer: Zur Geschichte einer Reformation',
+            argued: 'That the manifestos belong to the Paracelsian and chiliastic reform movements of Lutheran Germany, and are to be read as a reformation rather than as the notices of a secret society.',
+            stands: 'The frame almost everyone now works inside, though Peuckert is less read than the people who took it from him.',
+        },
+        {
+            year: '1972',
+            slug: 'yates-1972',
+            author: 'Frances Yates',
+            work: 'The Rosicrucian Enlightenment',
+            argued: 'That the manifestos were the voice of a hermetic and political movement around Frederick V of the Palatinate and Elizabeth Stuart, destroyed with Frederick’s cause at the White Mountain in 1620, whose ideals passed to England and the Royal Society.',
+            stands: 'Enormously read and widely doubted. The Palatine link is circumstantial, and the Royal Society thread is the row this page’s ledger marks undocumented. What survived her was the larger claim — that magic belongs in intellectual history — and that one has won.',
+        },
+        {
+            year: '1979',
+            slug: 'vickers-1979',
+            author: 'Brian Vickers',
+            work: 'Frances Yates and the Writing of History',
+            argued: 'In the Journal of Modern History: that Yates offered a vivid narrative with little solid evidence under it, and built her hermetic tradition by assertion rather than demonstration.',
+            stands: 'The standard critique, and largely accepted for the Rosicrucian book in particular — though Vickers was answered in his turn for making the occult tradition as monolithic as the Yates he was attacking.',
+        },
+        {
+            year: '1982–87',
+            slug: 'edighoffer-1982',
+            author: 'Roland Edighoffer',
+            work: 'Rose-Croix et société idéale selon Johann Valentin Andreae',
+            argued: 'That the manifestos and Andreae’s ideal of a reformed Christian society cannot be separated, and that they make sense only inside Lutheran theology and the Tübingen circle.',
+            stands: 'The foundation of modern Andreae studies, and the reason the page’s first section can name the circle with confidence.',
+        },
+        {
+            year: '1992',
+            slug: 'mcintosh-1992',
+            author: 'Christopher McIntosh',
+            work: 'The Rose Cross and the Age of Reason',
+            argued: 'Followed the Gold- und Rosenkreuz through the courts and lodges of Central Europe, and set it against the Enlightenment it lived alongside — as opposition rather than as part.',
+            stands: 'The work behind the ledger’s inverted row: the one Rosicrucian order that verifiably existed was on the side of reaction.',
+        },
+        {
+            year: '1994–95',
+            slug: 'gilly-1994',
+            author: 'Carlos Gilly',
+            work: 'Adam Haslmayr; Cimelia Rhodostaurotica',
+            argued: 'From the manuscripts, chiefly those gathered in the Bibliotheca Philosophica Hermetica in Amsterdam: that the Fama was circulating years before 1614, that Haslmayr was its first herald, and how the furore actually spread from hand to hand.',
+            stands: 'The archive that settled the chronology. Most of the hard dates on this page rest on it.',
+        },
+        {
+            year: '1998',
+            slug: 'dickson-akerman-1998',
+            author: 'Donald R. Dickson; Susanna Åkerman',
+            work: 'The Tessera of Antilia; Rose Cross over the Baltic',
+            argued: 'Dickson, that real, small, documented brotherhoods — Andreae’s own among them — grew up in the wake of the fictional one. Åkerman, that the movement’s millenarian reading had a northern life of its own, through Johannes Bureus in Sweden.',
+            stands: 'Between them, the turn from asking whether the brotherhood existed to asking what people did because they believed it might.',
+        },
     ],
     // The seven days. The book is the only one of the three that anybody reads
     // for pleasure, and the page was describing it without letting anyone read
