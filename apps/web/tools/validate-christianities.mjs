@@ -615,6 +615,22 @@ if (rosicrucian) {
         checkContested(where, w);
     }
 
+    // The signs. Each is a redraw of a named original, and the page's whole
+    // discipline is that a drawing says what it follows: so every sign must
+    // name a dated original, say what the drawing keeps and what is its own,
+    // and point at a drawing that exists.
+    for (const g of rosicrucian.signs ?? []) {
+        const where = `rosicrucian/sign ${g.key || '?'}`;
+        for (const f of ['key', 'title', 'year', 'image', 'alt', 'about', 'drawn', 'source']) {
+            if (!g[f]) fail(`${where}: no ${f}`);
+        }
+        if (g.image && !existsSync(path.join(web, 'public/media', g.image))) fail(`${where}: drawing ${g.image} not in public/media`);
+        if (g.drawn && wordCount(g.drawn) < 15) fail(`${where}: a redrawn sign must say what the drawing follows and what is its own`);
+        if (g.source && !/\b1\d{3}\b/.test(g.source)) fail(`${where}: the source must name a dated original`);
+        if (g.alt && wordCount(g.alt) < 8) fail(`${where}: alt text too thin to describe the drawing`);
+        checkContested(where, g);
+    }
+
     // The emblem is drawn from a letter, as the vault is drawn from a
     // paragraph, and it has to say so on its face.
     if (rosicrucian.emblem && !/diagram of a letter|not a copy/i.test(rosicrucian.emblem.caption || '')) {
@@ -674,7 +690,7 @@ if (rosicrucian) {
     for (const c of rosicrucian.chronology ?? []) {
         if (!c.year || !c.label) fail('rosicrucian: a chronology row needs a year and a label');
     }
-    notes.push(`rosicrucian: ${(rosicrucian.manifestos ?? []).length} manifestos, ${rules.length} agreements, ${days.length} days (${days.filter((d) => d.quote).length} quoted), ${furore.length} books of the furore, ${(rosicrucian.ledger ?? []).length} ledger rows (${sound} sound), ${descent.length} descent rows (${gaps} gap), ${grades.length} grades (${grades.filter((g) => g.added).length} added), ${(rosicrucian.scholarship ?? []).length} historians, ${(rosicrucian.chronology ?? []).length} dated`);
+    notes.push(`rosicrucian: ${(rosicrucian.manifestos ?? []).length} manifestos, ${rules.length} agreements, ${days.length} days (${days.filter((d) => d.quote).length} quoted), ${furore.length} books of the furore, ${(rosicrucian.ledger ?? []).length} ledger rows (${sound} sound), ${descent.length} descent rows (${gaps} gap), ${grades.length} grades (${grades.filter((g) => g.added).length} added), ${(rosicrucian.scholarship ?? []).length} historians, ${(rosicrucian.signs ?? []).length} signs, ${(rosicrucian.chronology ?? []).length} dated`);
 }
 
 // --- report ----------------------------------------------------------------
