@@ -16,7 +16,8 @@ import LutherRose from './LutherRose';
 // it and not two. What earns this page its own address is the material the
 // entry list cannot hold, and it falls into three jobs that want three shapes:
 //
-//   the texts       the three books as physical objects, the Fama's own six
+//   the texts       the three books as physical objects, six authentic signs
+//                   redrawn from named originals, the Fama's own six
 //                   articles, the seven days of the Wedding, the vault in plan
 //   the reception    the dozen books the four-hundred-book claim is made of,
 //                   with each one's side declared
@@ -89,7 +90,7 @@ function ChristianitiesRosicrucianPage() {
             <PortalHero
                 kickerLink="/christianities/esoteric" kickerLinkLabel="The Inner Tradition"
                 kicker="The Rose and the Cross" title={page.title} intro={page.intro}
-                emblem={page.emblem ? <LutherRose caption={page.emblem.caption} /> : null} />
+                emblem={page.emblem ? <LutherRose caption={page.emblem.caption} alt={page.signs?.find((g) => g.key === 'luther-rose')?.alt} /> : null} />
 
             <main className="edu-main">
                 <section className="ch-rc-books" aria-labelledby="rc-books-heading">
@@ -104,6 +105,31 @@ function ChristianitiesRosicrucianPage() {
                     </div>
                 </section>
 
+
+                <section className="ch-rc-signs-wrap" aria-labelledby="rc-signs-heading">
+                    <span className="pw-divider" aria-hidden="true" />
+                    <header className="edu-section-head">
+                        <p className="kicker">The signs</p>
+                        <h2 id="rc-signs-heading">Six emblems, from their originals</h2>
+                        {(page.signsIntro ?? []).map((p, i) => <p key={i}><Rich t={p} /></p>)}
+                    </header>
+                    <div className="ch-rc-signs">
+                        {(page.signs ?? []).map((g) => (
+                            <figure key={g.key} id={`sign-${g.key}`} className="ch-rc-sign">
+                                <div className="ch-rc-sign-art">
+                                    <img src={`/media/${g.image}`} alt={g.alt} width="400" height="400" loading="lazy" decoding="async" />
+                                </div>
+                                <figcaption>
+                                    <p className="ch-rc-year">{g.year}</p>
+                                    <h3>{g.title}</h3>
+                                    <p className="ch-rc-sign-about"><Rich t={g.about} /></p>
+                                    <div className="ch-kv"><span>What is drawn</span><p><Rich t={g.drawn} /></p></div>
+                                    <p className="ch-rc-sign-source"><Rich t={g.source} /></p>
+                                </figcaption>
+                            </figure>
+                        ))}
+                    </div>
+                </section>
 
                 <section className="ch-rc-rules-wrap" aria-labelledby="rc-rules-heading">
                     <span className="pw-divider" aria-hidden="true" />

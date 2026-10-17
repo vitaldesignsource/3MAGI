@@ -226,6 +226,11 @@ for (const g of rosicrucian?.grades ?? []) push(
     'rc-grades-heading', '/christianities/rosicrucian',
 );
 
+// The signs: looked for by name — the Monas, the Luther rose, the lamen.
+for (const g of rosicrucian?.signs ?? []) push(
+    CH, 'symbol', '', g.title, `${g.year} \u00b7 a Rosicrucian sign`, g.about, `sign-${g.key}`, '/christianities/rosicrucian',
+);
+
 // The historians: their books are looked for by title.
 for (const w of rosicrucian?.scholarship ?? []) push(
     CH, 'work', '', w.work, `${w.year} · ${w.author}`, w.argued, w.slug, '/christianities/rosicrucian',

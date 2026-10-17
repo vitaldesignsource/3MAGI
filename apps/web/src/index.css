@@ -11191,6 +11191,8 @@ h3 {
 .ch-page .ch-rc-rule h3,
 .ch-page .ch-rc-emblem figcaption,
 .ch-page .ch-rc-book-title,
+.ch-page .ch-rc-sign-about,
+.ch-page .ch-rc-sign-source,
 .ch-page .ch-rc-grades td,
 .ch-page .ch-rc-grades-note,
 .ch-page .ch-rc-book-note,
@@ -12588,20 +12590,45 @@ figure.ch-gallery-card { margin: 0; }
 /* --- Luther's rose in the hero: a diagram of a letter ---------------------- */
 .ch-rc-emblem { margin: 0 auto 1.4rem; max-width: 30rem; text-align: center; }
 .ch-rc-emblem-svg {
-  display: block; width: 8.5rem; height: auto; margin: 0 auto;
+  display: block; width: 8.5rem; height: 8.5rem; margin: 0 auto;
   filter: drop-shadow(0 8px 22px rgba(0, 0, 0, 0.5));
 }
-.ch-rc-emblem .lr-ring { fill: #c9a24e; }
-.ch-rc-emblem .lr-field { fill: #7ea6cc; }
-.ch-rc-emblem .lr-petal { fill: #f3eee3; stroke: rgba(60, 46, 30, 0.3); stroke-width: 1; }
-.ch-rc-emblem .lr-heart-bed { stroke: none; }
-.ch-rc-emblem .lr-heart { fill: #ad2730; }
-.ch-rc-emblem .lr-cross { fill: #0d0b0a; }
 .ch-rc-emblem figcaption {
   margin: 0.75rem auto 0; max-width: 26rem;
   font-size: 0.78rem; line-height: 1.55; font-style: italic;
   color: rgba(222, 212, 196, 0.6);
 }
+
+/* --- the signs: six emblems, each from a named original ------------------- */
+.ch-rc-signs {
+  margin: 1.8rem 0 0;
+  display: grid; gap: 1.2rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.ch-rc-sign {
+  margin: 0; display: flex; flex-direction: column;
+  border: 1px solid rgba(201, 168, 106, 0.16); border-radius: 3px;
+  background: linear-gradient(180deg, rgba(28, 23, 18, 0.55), rgba(18, 15, 12, 0.35));
+  overflow: hidden;
+}
+.ch-rc-sign-art {
+  aspect-ratio: 1 / 1; padding: 1.4rem;
+  display: grid; place-items: center;
+  background: radial-gradient(circle at 50% 45%, rgba(201, 168, 106, 0.07), rgba(13, 11, 10, 0) 70%), #0d0b0a;
+  border-bottom: 1px solid rgba(201, 168, 106, 0.12);
+}
+.ch-rc-sign-art img { width: 100%; height: 100%; object-fit: contain; display: block; }
+.ch-rc-sign figcaption { padding: 1rem 1.15rem 1.2rem; display: flex; flex-direction: column; gap: 0.15rem; }
+.ch-rc-sign h3 { margin: 0.2rem 0 0.6rem; font-size: 1.08rem; font-weight: 500; }
+.ch-rc-sign-about { margin: 0 0 0.4rem; font-size: 0.93rem; line-height: 1.68; color: rgba(232, 224, 208, 0.84); }
+.ch-rc-sign .ch-kv p { font-size: 0.88rem; }
+.ch-rc-sign-source {
+  margin: 0.75rem 0 0; padding-top: 0.7rem;
+  border-top: 1px solid rgba(201, 168, 106, 0.12);
+  font-size: 0.78rem; line-height: 1.55; color: rgba(222, 212, 196, 0.55);
+}
+@media (max-width: 1100px) { .ch-rc-signs { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 680px) { .ch-rc-signs { grid-template-columns: 1fr; } }
 
 /* --- the grades: the one table on the page where the descent is real ------- */
 .ch-rc-grades-scroll {

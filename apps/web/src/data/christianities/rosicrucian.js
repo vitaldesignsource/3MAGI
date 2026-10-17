@@ -60,6 +60,79 @@ export default {
             oddity: 'It is the only one of the three that anybody reads for pleasure. Formally strange, frequently funny, and structurally an alchemical operation in which the reader who wants the recipe is handed a moral education instead — it is the direct ancestor of the initiatic narrative as a genre.',
         },
     ],
+    // The signs. Six emblems the tradition used or was given, each redrawn
+    // from a named original. None is a photograph — the originals are a seal
+    // ring, woodcuts, an engraving and a manuscript paper, and image archives
+    // are not reachable from where these were made — so each drawing says what
+    // it follows, what it keeps and what is its own. The validator holds every
+    // sign to that.
+    signsIntro: [
+        'The tradition is full of signs, and the page has so far drawn only a room. These are six it actually used, or was given, in the order of their originals: a reformer’s seal, a family’s arms, a mathematician’s monad printed beside the first invitation, the seal on that invitation, a title-page emblem from the furore, and the badge the Golden Dawn’s adepts made for themselves.',
+        'Each is redrawn from a named original and says what the drawing follows. Where the record gives a colour, the drawing uses it; where it does not, the drawing is an engraver’s gold on black, and says so. Nothing is added that the original does not carry.',
+    ],
+    signs: [
+        {
+            key: 'luther-rose',
+            title: 'Luther’s seal, the Luther rose',
+            year: '1530',
+            image: 'rosicrucian/luther-rose.svg',
+            alt: 'A round seal. A gold ring encloses a sky-blue field, on which lies a white rose of five rounded petals, one pointing upwards. In the middle of the rose is a large upright red heart, and inside the heart a black Latin cross.',
+            about: 'Luther’s books bore a rose before he explained it: by 1524 Wittenberg printers set a rose device at the end of his authorised editions as a mark of authenticity. The explanation came on 8 July 1530, from the Coburg, when Lazarus Spengler asked whether the seal was right. He took it as the mark of his theology and glossed every part: a black cross, for faith in the Crucified; a heart left its natural colour, because the cross mortifies but does not kill; a white rose, not red, for the joy and peace of faith; a sky-blue field, for the heavenly joy to come; a gold ring, because that bliss has no end.',
+            drawn: 'Follows the letter’s five elements and tinctures: a black Latin cross in an upright red heart, the heart in the middle of a white rose of five petals, on a sky-blue field within a gold ring. Shapes, proportions and the petal set (one uppermost) are conventional, not traced from an original. Shading is modelling only. Sepals, initials and mottoes are omitted as unconfirmed; the letter names no green.',
+            source: 'Martin Luther, letter to Lazarus Spengler, Veste Coburg, 8 July 1530 (WA Br 5, no. 1628), written in answer to Spengler’s question whether Luther’s seal (“Petschaft”) had been rightly made. Related originals, named here but not inspected for this drawing: the gold signet ring with Luther’s arms cut in carnelian, a gift of Prince John Frederick of Saxony, which a grandson of Luther gave to Elector John George I, as J. L. Sponsel records in *Das Grüne Gewölbe zu Dresden*, vol. 3 (1929); and the rose device printed with an Agnus Dei at the end of *Das Ander teyl des alten testaments* (Wittenberg: Christian Döring and Lucas Cranach, 1524) as a mark of Luther’s authorised editions.',
+        },
+        {
+            key: 'andreae-arms',
+            title: 'The arms of Andreae',
+            year: '1554',
+            image: 'rosicrucian/andreae-arms.svg',
+            alt: 'A heraldic shield with a flat top, straight sides and a rounded base. A broad red diagonal cross runs from corner to corner across its silver field. A red five-petalled rose sits in each of the four spaces between the arms of the cross.',
+            about: 'The arms of the Andreae of Württemberg: argent, a saltire gules between four roses gules. That is, a red St Andrew’s cross on silver, with a red rose in each angle. For a family called Andreae, the saltire needs no gloss. They are the arms of Jakob Andreae, a Waiblingen smith’s son who became chancellor of Tübingen and one of the chief authors of the Formula of Concord. His grandson Johann Valentin bore them after him. It is often said that Jakob modelled them on Luther’s seal, but no evidence for that could be found.',
+            drawn: 'Follows the blazon as Siebmacher is quoted: a silver field with a red saltire running to the edges, and four red five-petalled roses of one size in its angles. Some depictions show the saltire couped. The roses are wholly red, with outlined seeds and no barbs, because no other tincture is recorded. The round-based German shield is a period convention. Helm, crest and mantling are left out.',
+            source: 'These are the arms of the theologian Jakob Andreae (1528–1590). Bernhard Peter reports that a Wappenbrief dated 10 September 1554 granted them to him. The drawing follows the blazon for Jakob Andreae in J. Siebmacher’s *großes und allgemeines Wappenbuch*, Bürgerliche Wappen, vol. 9 (Nuremberg: Bauer & Raspe), as the forum Heraldik im Netz quotes it: ‘In Silber ein rotes Andreaskreuz von vier roten Rosen bewinkelt’. The plate itself was not seen.',
+        },
+        {
+            key: 'monas',
+            title: 'The Hieroglyphic Monad',
+            year: '1564',
+            image: 'rosicrucian/monas.svg',
+            alt: 'A slender gold sign on a dark ground. A thin crescent moon, horns up, rests on a ring with a dot at its centre. Below the ring hangs a cross with a short upper arm and a long lower stem. At the foot of the stem two semicircles meet at a single point and curve down and up again, like a pair of cups.',
+            about: 'John Dee’s *Monas hieroglyphica*, printed at Antwerp by Willem Silvius in 1564 and addressed to Maximilian, King of the Romans, takes twenty-four theorems to build one sign out of the point, the line and the circle. The Moon’s horns stand over the Sun, and the point at the Sun’s centre is the Earth. Below them hang the cross of the four elements and, at the foot, the sign of Aries, for fire. Dee prescribed even the thickness of its lines. Fifty-two years later it was printed beside the invitation in the *Chymical Wedding*, whose text never says a word about it.',
+            drawn: 'Follows Dee’s Theorem XXIII. Every part has the body he prescribes, a quarter of his line AB. The crescent’s inner arc is struck with the lunar radius from a centre moved by that same quarter. The nine-part height is his. The width, the radii, where the bar sits and which way Aries opens are reconstruction. The lettering is omitted, and the printed black becomes gold.',
+            source: 'John Dee, *Monas hieroglyphica* (Antwerp: Willem Silvius, 1564), addressed to Maximilian, King of the Romans, of Bohemia and of Hungary. The sign follows Dee’s construction in the theorems, with the weight of its lines and the shape of its crescent taken from Theorem XXIII. It was printed again beside the text of the invitation in the *Chymische Hochzeit Christiani Rosencreutz* (Strasbourg: Lazarus Zetzner, 1616), p. 5. That page number is the one cited in ‘The Hermetic Frontispiece’, *Ambix*, 2017.',
+        },
+        {
+            key: 'wedding-seal',
+            title: 'The seal of the wedding invitation',
+            year: '1616',
+            image: 'rosicrucian/wedding-seal.svg',
+            alt: 'A round wax seal drawn in gold on a dark ground. A slender Latin cross stands in the centre. Around it runs the legend IN HOC SIGNO + VINCES in spaced Roman capitals, read clockwise from the top, with a small equal-armed cross between SIGNO and VINCES.',
+            about: 'The first sign in the Chymical Wedding, and the narrator reads it before he reads the letter. On the eve of Easter a winged herald leaves him an invitation. Looking it over, he finds it shut with a little seal. In the German of 1616 the seal bears ‘ein zartes Creütz’, a delicate cross, and the inscription ‘In hoc signo + vinces’. The words name a sign, and the sign stands among them. Foxcroft’s English of 1690 calls it ‘a curious cross’. The motto is the Latin form of the Greek words that Eusebius says Constantine saw beside a cross in the sky. The narrator is ‘the more comforted’, since such a seal is ‘little acceptable, and much less useful, to the devil’.',
+            drawn: 'The text gives a little seal that shut the letter, a delicate or ‘curious’ cross, and the inscription In hoc signo + vinces. The German sets a small cross between SIGNO and VINCES, and the drawing keeps it. Everything else is the drawing’s: the round form, the wax and its gold, the ruled band, the Roman capitals read clockwise from the top, the plain Latin cross and the size.',
+            source: '[Johann Valentin Andreae, anonymously], *Chymische Hochzeit Christiani Rosencreutz. Anno 1459*, Strasbourg: heirs of Lazarus Zetzner, 1616 — the First Day, the letter of invitation (“ein klein Sigill … Darauff war ein zartes Creütz gegraben, mit der Inscription: In hoc signo + vinces”); in English as *The Hermetick Romance: or, The Chymical Wedding*, translated by E[zechiel] Foxcroft, London: A. Sowle, 1690',
+        },
+        {
+            key: 'dat-rosa',
+            title: 'Dat Rosa Mel Apibus',
+            year: '1629',
+            image: 'rosicrucian/dat-rosa.svg',
+            alt: 'A large rose of seven circles of seven petals on a stem shaped like a Latin cross, with a finely toothed leaf at the end of each arm. One bee rests on the rose and five more fly towards it. On the left, two seven-rayed spiders’ webs fill a post-and-rail trellis hung with vine leaves and a bunch of grapes. On the right stand four domed straw hives. Above, in an arc, is the motto DAT ROSA MEL APIBUS. Drawn in gold on dark.',
+            about: 'The title vignette of *Summum Bonum* (1629), a defence of Fludd and the Rosicrucians against the Minim friar Marin Mersenne, printed under the name Joachim Frizius. It has long been laid at Fludd’s door, and he did take the emblem into his own *Clavis*. The motto says what the picture shows: the rose gives honey to the bees. The rose has seven circles of seven petals and grows on a cross-shaped stem, so the Rosy Cross becomes a plant. Four hives stand on the right. On the left, two spiders’ webs, each also divided in seven, hang on a grape trellis. Joscelyn Godwin read the spiders as lunar and the bees as solar, with the rose reconciling the two.',
+            drawn: 'Follows Joscelyn Godwin’s published description of the 1629 plate: a rose of seven circles of seven petals on a cross-shaped stem, a grape trellis on the left with two seven-rayed webs, four hives on the right, bees, and the motto above. Merian’s landscape is left out. The trellis, leaves and hives are schematic. The number and placement of the bees were not checked against the plate.',
+            source: 'The engraved title vignette of *Summum Bonum* (no place printed; usually given as [Frankfurt], 1629). The book appeared under the name ‘Joachim Frizius’ and was long attributed to Robert Fludd. The plate names no engraver. Adam McLean gives the design to Matthäus Merian, who had used a similar grouping in emblem 21 of Jacob à Bruck’s *Emblemata moralia & bellica* (Strasbourg, 1615).',
+        },
+        {
+            key: 'gd-rose-cross',
+            title: 'The Rose Cross lamen of the Golden Dawn',
+            year: '1890s',
+            image: 'rosicrucian/gd-rose-cross.svg',
+            alt: 'The Golden Dawn’s Rose Cross lamen. A cross has a yellow upper arm, a red left arm, a blue right arm and a longer lower arm. Each arm ends in three rounded lobes marked with the alchemical signs of Sulphur, Salt and Mercury, and each carries a pentagram with elemental signs at its points. Below the centre, a white section holds a black hexagram with the planetary signs. Under it is a square quartered in citrine, russet, olive and black. Plain white rays fill the angles between the arms. At the centre, a rose of twenty-two petals in three rows of rainbow colours surrounds a white disc holding a small gold cross with a red five-petalled rose and four green rays.',
+            about: 'The badge of the Golden Dawn’s Second Order, made by each adept and worn only among adepts: most of the Order’s correspondences, arranged for the breast. The four arms are the elements in their colours, each ending in Sulphur, Salt and Mercury and each bearing its pentagram; the white beneath the rose belongs to the Spirit and the planets. The white rays are the divine light, and the Order’s paper says their letters and symbols refer to the keyword I.N.R.I. The rose of twenty-two petals is the Hebrew alphabet as the Sefer Yetzirah divides it — three, seven, twelve — and adepts traced the sigils of names across it.',
+            drawn: 'Follows the Order’s colour scheme as transcribed: yellow Air above, scarlet Fire left, blue Water right, Malkuth’s colours below, a black hexagram on white, petals in their letters’ colours with Heh uppermost and Lamed lowest. The petals’ Hebrew letters and the rays’ lettering are left out as unconfirmed; the rest of the petal order and the lobes’ principles are reasoned. The gold keyline is the drawing’s own.',
+            source: 'Hermetic Order of the Golden Dawn, Second Order (R.R. et A.C.), London: the Rose Cross lamen of the Adeptus Minor grade, described in the Order’s manuscript paper on the lamen (1890s, undated); printed in Israel Regardie, *The Golden Dawn*, 4 vols (Chicago: Aries Press, 1937–40).',
+        },
+    ],
+
     // The six agreements. The page had been diagramming the Fama for three
     // sections without ever printing a word of it, which is an odd way to treat
     // the founding document. The wording is Vaughan's English of 1652 — the
