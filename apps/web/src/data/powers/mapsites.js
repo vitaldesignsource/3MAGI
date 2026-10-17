@@ -2,7 +2,7 @@
 // over. Coordinates are real; the build gate checks the fixed ones against
 // their true positions. Spans are the working life of the cult or school.
 export default {
-    intro: 'Thirty-two places where the unseen was addressed: the temples that fed the oldest named gods, the oracles that answered kings, the caves and cells where the visions were written down, and the desks where a Renaissance scholar wrote what he believed the angels dictated.',
+    intro: 'Thirty-seven places where the unseen was addressed: the temples that fed the oldest named gods, the oracles that answered kings, the caves and cells where the visions were written down, and the desks where a Renaissance scholar wrote what he believed the angels dictated.',
     sites: [
         {
             slug: 'uruk', name: 'Uruk', modern: 'Warka, Iraq', lat: 31.32, lon: 45.64,
@@ -272,6 +272,53 @@ export default {
             events: [
                 { year: 1916, title: 'The Seven Sermons', desc: 'Printed privately, attributed to Basilides of Alexandria, with Abraxas at the centre.' },
                 { year: 2009, title: 'The Red Book published', desc: 'The illuminated record of the visions appears at last, and the argument about what Jung meant begins again with the evidence in hand.' },
+            ],
+        },
+        {
+            slug: 'medinet-madi', name: 'Medinet Madi', modern: 'Fayum, Egypt', lat: 29.19, lon: 30.64,
+            categories: ['temple', 'text'], from: -1800, to: 450,
+            blurb: 'Ancient Narmouthis, on the desert edge of the Fayum, where the cobra harvest goddess Renenutet kept a temple from the Middle Kingdom into Roman times. Around 1929 diggers in the town turned up Coptic papyrus books — the Kephalaia, the Psalm-Book, the Homilies — and the western church of Mani, known for fifteen centuries almost wholly from its enemies, was heard in its own words.',
+            events: [
+                { year: -1800, title: 'The temple of Renenutet', desc: 'Amenemhat III and his successor build a sanctuary for the harvest goddess and the crocodile god Sobek, which the Ptolemies will enlarge.' },
+                { year: -80, title: 'The hymns of Isidorus', desc: 'Four Greek hymns signed by one Isidorus are cut at the gateway; the first hails the local goddess as Isis and gathers the names other peoples call her by — interpretatio carved at the door.' },
+                { year: 400, title: 'The Manichaean books', desc: 'Coptic translations of the church’s own books are copied, in a dialect of Upper Egypt rather than the Fayum’s own, and kept in the town.' },
+            ],
+        },
+        {
+            slug: 'southern-marshes', name: 'The Southern Marshes', modern: 'Ahwar, southern Iraq', lat: 31.15, lon: 46.95,
+            categories: ['temple'], from: 200, to: null,
+            blurb: 'The Mandaeans built no temple city: a mandi is a reed hut beside any flowing water, and the religion goes where the rivers go. The evidence keeps returning to this landscape — to the baptists of the marshes among whom Mani’s father lived, to the river towns at the marsh edge where the twentieth-century community baptized in the name of the Life and kept its goldsmiths’ shops — until the drainage of the 1990s took most of the water and the violence after 2003 most of the people.',
+            events: [
+                { year: 987, title: 'The washers of the marshes', desc: 'Ibn al-Nadim’s Fihrist places the Mughtasila, those who wash themselves, in the marshes and puts Mani’s father among them. Most scholars now take them for the Elchasaite baptists who raised Mani; whether they were also kin to the Mandaeans has never been settled.' },
+                { year: 1831, title: 'The cholera', desc: 'By the community’s own account nearly every priest dies, and the priesthood has to be rebuilt from literate laymen who had watched the rites.' },
+                { year: 1991, title: 'The drainage', desc: 'After the uprising the government drains the marshes; by the decade’s end most of the wetland is gone, and a religion whose central rite needs flowing water loses much of its water before it loses its people.' },
+            ],
+        },
+        {
+            slug: 'kocho', name: 'Kocho', modern: 'Gaochang, near Turpan, China', lat: 42.85, lon: 89.53,
+            categories: ['text', 'temple'], from: 850, to: 1300,
+            blurb: 'A capital of the Uyghur kingdom founded in the Turfan oasis after the steppe empire fell in 840, where the religion its khagans had adopted in 762 kept royal patronage for more than a century more. The German expeditions of 1902–14 carried its fragments to Berlin — hymns in Middle Persian, Parthian, Sogdian and Old Uyghur, painted leaves of the Elect in white — and Mani’s eastern church became legible. Part of the Turfan collection was destroyed when Berlin was bombed.',
+            events: [
+                { year: 900, title: 'A Manichaean court', desc: 'The Elect live in monasteries the court endows, and hymns are still sung in Middle Persian and Parthian — church languages by now — in the script Mani was said to have devised himself.' },
+                { year: 1000, title: 'The turn to the Buddha', desc: 'Around the turn of the eleventh century the court goes over to Buddhism, and some Manichaean foundations pass to the new religion.' },
+            ],
+        },
+        {
+            slug: 'izumo', name: 'Izumo Taisha', modern: 'Izumo, Japan', lat: 35.402, lon: 132.685,
+            categories: ['temple'], from: 659, to: null,
+            blurb: 'Ōkuninushi’s shrine, and in the Kojiki the price of a surrender: the master of the land yields it to the sun goddess’s descendants on condition that he is housed in a hall with pillars sunk to the bedrock and beams reaching heaven. In the tenth month, by popular tradition, every kami in the country gathers here — which is why, the folk etymology says, the rest of Japan calls it the month without gods.',
+            events: [
+                { year: 659, title: 'The order to repair', desc: 'Under this year the Nihon Shoki records an order to the hereditary chief of Izumo to repair the shrine of the great god — usually, though not by everyone, read as this one.' },
+                { year: 2000, title: 'The great pillars', desc: 'Three cedar trunks bound into a single post some three metres across are dug up in the precinct, from a medieval rebuilding — and the tradition of a hall twice the present height looks less like a boast.' },
+            ],
+        },
+        {
+            slug: 'tenochtitlan', name: 'Tenochtitlan', modern: 'Mexico City, Mexico', lat: 19.435, lon: -99.131,
+            categories: ['temple'], from: 1325, to: 1521,
+            blurb: 'The Mexica island city, founded by tradition where their god’s promised sign appeared — an eagle on a cactus growing from a rock — and centred on the Templo Mayor, twin shrines to Huitzilopochtli and Tlaloc on one stepped mountain, built over itself in seven main phases. The conquerors pulled it down after 1521; in 1978 electricity workers struck the carved disc of the dismembered Coyolxauhqui, and the temple came back up from under the colonial city.',
+            events: [
+                { year: 1325, title: 'The sign on the island', desc: 'The conventional founding date, from the native annals: the wandering Mexica see the eagle their god had promised and, by their own histories, build him a first shrine of reeds and mud.' },
+                { year: 1487, title: 'The great rededication', desc: 'Ahuitzotl completes his brother Tizoc’s enlargement of the temple and dedicates it with the largest sacrifice the colonial chroniclers record, in numbers historians still argue over.' },
             ],
         },
     ],
