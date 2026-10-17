@@ -12651,6 +12651,10 @@ figure.ch-gallery-card { margin: 0; }
 .ch-rc-map-svg .rcm-ring { fill: rgba(11, 10, 9, 0.6); stroke: #c9a86a; stroke-width: 2; stroke-dasharray: 3 2.5; }
 .ch-rc-map-svg .rcm-region { fill: rgba(201, 168, 106, 0.06); stroke: #c9a86a; stroke-width: 1.4; stroke-dasharray: 4 4; }
 .ch-rc-map-svg .rcm-num-bg { fill: #8fa8bd; stroke: #0b0a09; stroke-width: 1.5; }
+.ch-rc-map-svg .rcm-leader { stroke: rgba(201, 168, 106, 0.7); stroke-width: 1; }
+.ch-rc-map-svg .rcm-leader.is-doc { stroke: rgba(143, 168, 189, 0.8); }
+.ch-rc-map-svg .rcm-true { fill: #c9a86a; }
+.ch-rc-map-svg .rcm-true.is-doc { fill: #8fa8bd; }
 .ch-rc-map-svg .rcm-num { font: 600 10px Georgia, 'Times New Roman', serif; fill: #0b0a09; pointer-events: none; }
 .ch-rc-map-svg .rcm-label {
   font: italic 13px Georgia, 'Times New Roman', serif; fill: #ecd9ae;
@@ -12696,6 +12700,14 @@ figure.ch-gallery-card { margin: 0; }
 .ch-rc-map-unloc { color: rgba(201, 168, 106, 0.75); font-size: 0.85rem; }
 .ch-rc-map-note { display: block; margin-top: 0.15rem; font-size: 0.86rem; line-height: 1.6; color: rgba(222, 212, 196, 0.66); }
 @media (max-width: 760px) { .ch-rc-map-keys { grid-template-columns: 1fr; } }
+/* On a phone the whole map would shrink its names to a few pixels: keep it at
+   a readable size and let it pan inside the frame instead. */
+.ch-rc-map-pan { overflow-x: auto; -webkit-overflow-scrolling: touch; overscroll-behavior-x: contain; }
+.ch-rc-map-swipe { display: none; }
+@media (max-width: 640px) {
+    .ch-rc-map-pan .ch-rc-map-svg { width: 760px; max-width: none; }
+    .ch-rc-map-swipe { display: inline; }
+}
 
 /* --- the grades: the one table on the page where the descent is real ------- */
 .ch-rc-grades-scroll {

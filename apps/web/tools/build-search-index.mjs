@@ -231,6 +231,12 @@ for (const g of rosicrucian?.signs ?? []) push(
     CH, 'symbol', '', g.title, `${g.year} \u00b7 a Rosicrucian sign`, g.about, `sign-${g.key}`, '/christianities/rosicrucian',
 );
 
+// The map: every place with a location, claimed or documented, so a search
+// for Kassel or Damascus finds the portal's map.
+for (const p of [...(rosicrucian?.map?.journey ?? []), ...(rosicrucian?.map?.places ?? [])].filter((x) => x.located)) push(
+    CH, 'site', '', p.name, `${p.year} \u00b7 the Rosicrucian map, ${p.layer}`, p.note, 'rc-map-heading', '/christianities/rosicrucian',
+);
+
 // The historians: their books are looked for by title.
 for (const w of rosicrucian?.scholarship ?? []) push(
     CH, 'work', '', w.work, `${w.year} · ${w.author}`, w.argued, w.slug, '/christianities/rosicrucian',
