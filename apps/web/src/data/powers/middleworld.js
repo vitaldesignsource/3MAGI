@@ -8,7 +8,7 @@
 export default {
     intro: [
         'A narrative shows the fall; a table shows the shape of what fell. Each tradition below was asked the same six questions about the beings between the high god and the human world, and the answers diverge in ways the story alone does not make obvious.',
-        'The column that matters most is the last one. A tradition that lets a person have a spirit of their own — a genius, a guardian, a fravashi, an inner sign — is describing something very different from one in which every middle being is an enemy, however similar the vocabulary looks from outside.',
+        'The column that matters most is the last one. A tradition that lets a person have a spirit of their own — a genius, a guardian, a fravashi, an orí chosen before birth, an inner sign — is describing something very different from one in which every middle being is an enemy, however similar the vocabulary looks from outside.',
     ],
     questions: [
         { key: 'mixed', label: 'Morally mixed?', gloss: 'Are these beings good and bad both, or uniformly one or the other?' },
@@ -105,6 +105,28 @@ export default {
                 treat: { v: 'q', note: 'The operator commands rather than bargains, and in divine names — which is either an exorcism run backwards or exactly what the church said it was.' },
                 ranked: { v: 'yes', note: 'Obsessively: kings, dukes, presidents, marquises, each with a seal and a legion count. The Goetia is an administrative document as much as a magical one.' },
                 personal: { v: 'q', note: 'The Abramelin operation aims at knowledge and conversation of the Holy Guardian Angel — the personal spirit recovered as the whole goal of the work.' },
+            },
+        },
+        {
+            key: 'kami', label: 'Japanese Kami & Yōkai', era: '8th c. CE onward',
+            cells: {
+                mixed: { v: 'yes', note: 'Motoori Norinaga says outright that the word takes in the evil and the uncanny with the good. There are kami of calamity, the Magatsuhi, and one kami may show a rough soul beside a gentle one.' },
+                mortal: { v: 'q', note: 'They can die — Izanami dies of burns from bearing the kami of fire — but death is a change of station rather than an end: she goes on as the great kami of Yomi.' },
+                human: { v: 'yes', note: 'The dangerous dead above all: Sugawara no Michizane died in exile in 903, and after the deaths and the lightning that followed he was enshrined at Kitano as Tenjin — now the patron of examination candidates.' },
+                treat: { v: 'yes', note: 'Kami are fed and addressed by formula, and the cure for an angry ghost is a shrine; the court’s pacification rite, the goryō-e, is first recorded in 863. Oni are driven out instead, with beans at Setsubun.' },
+                ranked: { v: 'q', note: 'The kami were graded as courtiers are — Inari rose to senior first rank — and the Engishiki of 927 registers 2,861 shrines by class. The yōkai stay a crowd: a night parade of a hundred demons.' },
+                personal: { v: 'q', note: 'Of place and kin rather than of the person: a newborn is presented to the tutelary kami of its birthplace, the ubusunagami, and counted among its ujiko — a guardian shared with the whole neighbourhood.' },
+            },
+        },
+        {
+            key: 'yoruba', label: 'Yoruba Òrìṣà & Ajogun', era: 'Oral tradition; recorded from the 19th c.',
+            cells: {
+                mixed: { v: 'yes', note: 'Twice over. The òrìṣà, though counted among the benevolent powers, are temperamental — Ṣọ̀pọ̀nná sends smallpox and is safer called by a praise-name — and opposite them stand the ajogun, warlords against humanity, hostile without remainder.' },
+                mortal: { v: 'q', note: 'Death is one of them, not their fate: Ikú heads the list of the ajogun. Of the deified dead it is said they did not die — Ọba kò so, insist Ṣàngó’s devotees: the king did not hang.' },
+                human: { v: 'yes', note: 'Ṣàngó is remembered as an alaafin of Ọ̀yọ́, and the ancestors return as egúngún masquerades. Whether the òrìṣà began as people is argued: Idowu held the great ones primordial, and the king grafted onto an older thunder-power, Jàkúta.' },
+                treat: { v: 'yes', note: 'Ẹbọ, sacrifice, is the whole grammar: Ifá prescribes it, Èṣù carries it, and it buys off even the ajogun. Karin Barber argued that the bond runs both ways: devotees make an òrìṣà great, and may abandon it.' },
+                ranked: { v: 'q', note: 'Numbered rather than ranked: four hundred and one is a figure for the uncountable. Ifá, in Wande Abimbola’s account, sets òrìṣà and ajogun on opposite sides with Èṣù between; which òrìṣà leads varies from town to town.' },
+                personal: { v: 'yes', note: 'Orí, the inner head, chosen kneeling in ọ̀run before birth — a destiny that is also a deity, with its own shrine. No òrìṣà, the proverb says, can help a person whose orí does not consent.' },
             },
         },
         {

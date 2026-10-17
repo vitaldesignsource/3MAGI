@@ -96,6 +96,12 @@ export default {
             dating: 'The surviving manuscripts range from the second century BCE to the fifth CE; the great Theban cache’s exact provenance was obscured by the nineteenth-century antiquities trade.',
         },
         {
+            slug: 'mani-preaches', title: 'Mani goes out to preach', native: 'σύζυγος',
+            kind: 'reform', year: 240, end: 242, circa: true, circaEnd: true,
+            description: 'At twenty-four, by his disciples’ account, the heavenly Twin who had first come to Mani as a boy returned and told him to go out. He broke with the baptists who had raised him over whether washing the body and the food could purify anything, sailed to India, and came back to preach before Shapur I — the start of a church that would run from Roman Africa to the coast of China, giving its powers whatever local names would carry them.',
+            dating: 'The Cologne Mani Codex sets the Twin’s second coming when Mani was twenty-four, in the year Ardashir took Hatra and Shapur was crowned — 240 on the usual reckoning, which agrees with the conventional birth in 216, itself resting on Manichaean and Islamic chronographers who do not entirely agree. The audience with Shapur is usually put in 242 or 243, and the dates turn partly on whether Shapur’s reign is counted from his coronation beside his father or from his father’s death.',
+        },
+        {
             slug: 'de-mysteriis-w', title: 'Iamblichus defends the daimones', native: null,
             kind: 'text', year: 300, end: null, circa: true, circaEnd: false,
             description: 'Answering Porphyry, the De mysteriis sets out the classes of divine beings and argues that rite, not argument alone, raises the soul — late paganism’s manifesto.',
@@ -144,6 +150,12 @@ export default {
             dating: 'Redaction is placed between the fifth and ninth centuries; the texts attribute themselves to second-century rabbis, and Schäfer’s manuscript work showed there are no stable “books” to date in the first place.',
         },
         {
+            slug: 'zohar-castile', title: 'The Zohar appears in Castile', native: 'ספר הזוהר',
+            kind: 'text', year: 1280, end: 1286, circa: true, circaEnd: true,
+            description: 'Quires in an archaizing Aramaic begin to circulate, offered as the teaching of a second-century Galilean sage. For the powers the book is decisive: the demonic is given an emanated order of its own, the sitra aḥra or “other side,” Samael and Lilith — already paired by Castilian kabbalists a generation before — rule it as a couple, and what happens among angels and demons is read as the outworking of what happens within God.',
+            dating: 'The tradition holds the book to be the teaching of Shimon bar Yochai, hidden and later recovered. Scholem argued in 1941 for composition in Castile between about 1280 and 1286 by Moses de León of Guadalajara (d. 1305), chiefly on the evidence of the language, and Isaac of Acre reported that de León’s widow denied there had ever been an ancient manuscript. Liebes, Meroz and Abrams have since moved the question from one author to a circle and from a book to strata laid down over decades; a second-century date for the whole is defended by no academic historian, and held by the tradition still.',
+        },
+        {
             slug: 'ficino-hermetica', title: 'Ficino translates the Hermetica', native: null,
             kind: 'text', year: 1463, end: null, circa: false, circaEnd: false,
             description: 'At Cosimo de’ Medici’s insistence, Plato waits: the Corpus Hermeticum is Latinized first, in the belief that Hermes Trismegistus was Moses’ contemporary. The Renaissance revival of the powers begins here.',
@@ -156,10 +168,22 @@ export default {
             dating: 'Printed in December 1486; the papal commission’s condemnation followed in 1487, and Pico’s Apologia in 1487.',
         },
         {
+            slug: 'templo-mayor-1487', title: 'The Templo Mayor rededicated', native: null,
+            kind: 'event', year: 1487, end: null, circa: false, circaEnd: false,
+            description: 'In the sacred precinct of Tenochtitlan, Ahuitzotl completes the enlargement his brother Tizoc had begun and dedicates the twin shrines of Huitzilopochtli and Tlaloc — the war god’s side built as Coatepec, the Serpent Mountain where he was born armed and cut his sister down. By Durán’s account lords of rival cities were invited to watch; it is the largest sacrifice the chroniclers record, and the chroniclers are the difficulty.',
+            dating: 'The year Eight Reed of the Mexica count, which the colonial annals set against 1487; the event is not in doubt. The numbers are: the sources run as high as Durán’s more than eighty thousand victims, modern estimates run far lower, and historians remain divided over how much of any figure to believe. Archaeology has recovered the building stages but cannot count the dead from them.',
+        },
+        {
             slug: 'weyer-catalogue', title: 'Weyer prints the demons — for mercy',
             native: null, kind: 'text', year: 1577, end: null, circa: false, circaEnd: false,
             description: 'The Pseudomonarchia daemonum lists sixty-nine spirits with their ranks and legions, inside a book arguing that women accused of witchcraft are ill rather than guilty. The catalogue outlived the argument and became the Goetia.',
             dating: 'Printed as an appendix to the 1577 edition of De praestigiis daemonum; the underlying material is older manuscript tradition.',
+        },
+        {
+            slug: 'florentine-codex', title: 'Sahagún’s Florentine Codex', native: null,
+            kind: 'text', year: 1577, end: null, circa: true, circaEnd: false,
+            description: 'Twelve books in two columns, Nahuatl and Spanish, with more than two thousand pictures by Nahua painters: the encyclopaedia of the Mexica world that the Franciscan Bernardino de Sahagún compiled with Nahua scholars of the college at Tlatelolco, its first book given to the gods. It was made so that missionaries could recognize what they meant to uproot, from the testimony of elders who remembered the rites — and it is now the fullest account of those rites there is.',
+            dating: 'The interviews behind it began at Tepepulco around 1558 and continued at Tlatelolco and in Mexico City; the fair copy now in Florence is usually dated between about 1575 and 1577. A royal order of 1577 called in all such writing on native religion, and the copy went to Spain soon afterwards. The year is the usual end of the copying rather than a recorded day, and the name is that of the Medici library that came to own it.',
         },
         {
             slug: 'dee-sessions', title: 'Dee and Kelley begin', native: null,
@@ -186,6 +210,12 @@ export default {
             dating: 'Written and privately printed in 1916; the fuller record in the Red Book was withheld until 2009 by the family’s decision.',
         },
         {
+            slug: 'medinet-madi-find', title: 'The Manichaean books at Medinet Madi', native: null,
+            kind: 'event', year: 1929, end: 1930, circa: true, circaEnd: false,
+            description: 'Diggers in the ruins of a Fayum town turn up a cache of papyrus codices in Coptic: the Kephalaia, the Psalm-Book, the Homilies and more. The Father of Greatness, the Primal Man and the Living Spirit, known in the West until then mainly through their opponents — Augustine first among them — are heard in the words of their own church: damaged, fragmentary, and still being read.',
+            dating: 'The codices were found by local diggers rather than excavators and reached Carl Schmidt through the Cairo trade in 1930; the dealers’ trail led back to Medinet Madi, and Schmidt and Hans Jakob Polotsky announced the find in 1933. The books were divided between Berlin and Alfred Chester Beatty, whose share is in Dublin; part of the Berlin share went missing at the end of the Second World War, and the edition is still unfinished nearly a century on. The books themselves are dated to around 400.',
+        },
+        {
             slug: 'nag-hammadi-find', title: 'The jar at Nag Hammadi', native: null,
             kind: 'event', year: 1945, end: null, circa: false, circaEnd: false,
             description: 'Farmers digging for fertilizer break open a sealed jar containing thirteen codices. The aeons and archons speak in their own voices for the first time in sixteen centuries.',
@@ -196,6 +226,12 @@ export default {
             kind: 'event', year: 1947, end: 1956, circa: false, circaEnd: false,
             description: 'Eleven caves yield the Aramaic Enoch, the angelic sabbath songs, the War Scroll’s armies of light — and the working angelology of Judaism in the century before the Gospels.',
             dating: 'The first cave is found in 1947 and the eleventh in 1956; publication of the full corpus took another four decades, and the delay is itself a chapter of the field’s history.',
+        },
+        {
+            slug: 'cologne-codex-published', title: 'The Cologne Mani Codex published', native: 'Περὶ τῆς γέννης τοῦ σώματος αὐτοῦ',
+            kind: 'text', year: 1970, end: null, circa: false, circaEnd: false,
+            description: 'A parchment book about the size of a matchbox, in Greek, gives Mani’s youth in the testimonies of his disciples: the baptists who raised him, their founder Alchasaios, the Twin who visited him, and the quarrel over washing that drove him out. Mani turns out to have grown up inside a Jewish-Christian baptist community, and the Iranian or Mandaean cradles earlier scholars had proposed for his religion have had to make room.',
+            dating: 'Announced by Albert Henrichs and Ludwig Koenen in the Zeitschrift für Papyrologie und Epigraphik in 1970, after the codex reached the Cologne papyrus collection through the antiquities trade; the text appeared there in instalments through the 1970s and early 1980s, and in a critical edition by Koenen and Cornelia Römer in 1988. Where in Egypt it was found is unrecorded, and the copy is dated on palaeographic grounds to the fourth or fifth century.',
         },
         {
             slug: 'red-book', title: 'The Red Book published', native: null,

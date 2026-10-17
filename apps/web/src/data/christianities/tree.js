@@ -371,6 +371,17 @@ export default {
             "adherents": "~400,000"
         },
         {
+            "id": "shakers",
+            "label": "Shakers",
+            "selfName": "United Society of Believers in Christ's Second Appearing",
+            "parent": "quakers",
+            "from": 1747,
+            "to": null,
+            "status": "disputed",
+            "note": "\"Shaking Quakers\" mocked the trembling worship of the Wardleys' society at Bolton and Manchester (1747, drawn here), set under the Quakers by tradition rather than record; Ann Lee brought it to New York in 1774. In its own account the church of Christ's second appearing, through a woman; trinitarian churches exclude it over a Father-Mother God and the rejection of the Trinity. Three remained at Sabbathday Lake, Maine, one a novice (2025).",
+            "adherents": "3 (2025; one a novice)"
+        },
+        {
             "id": "methodist",
             "label": "Methodist Churches",
             "selfName": null,
@@ -446,6 +457,17 @@ export default {
             "status": "disputed",
             "note": "Charles Taze Russell's Bible Students (from 1870; the present name from 1931) grew out of the Adventist milieu — the historians' placement, drawn here. In their own account they are first-century Christianity restored and the rest of Christendom apostate; trinitarian churches in turn exclude them over nontrinitarian teaching — the disputed status records both exclusions.",
             "adherents": "~9 million"
+        },
+        {
+            "id": "christian-science",
+            "label": "Christian Science",
+            "selfName": "Church of Christ, Scientist",
+            "parent": "reformed",
+            "from": 1879,
+            "to": null,
+            "status": "disputed",
+            "note": "Mary Baker Eddy's church, voted into being in 1879 to \"reinstate primitive Christianity and its lost element of healing\" — in its own account Christianity's lost healing recovered, and the triune God confessed as Life, Truth and Love. Trinitarian churches deny it the family name, since it reads God as divine Principle, distinguishes Jesus from the Christ-idea and keeps no water baptism; drawn from Eddy's Congregationalist upbringing: milieu, not pedigree.",
+            "adherents": "not published (estimates vary widely)"
         },
         {
             "id": "african-instituted",

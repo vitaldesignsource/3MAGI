@@ -1,7 +1,7 @@
 // christianities/mapsites — authored and fact-checked by the fabric pipeline
 // (25 corrections applied by the verifier before landing).
 export default {
-    "intro": "Forty-four places, plotted from real coordinates. The map of the year 100 is not the map of 451, and neither is the map of 1906: the Church of the East reached the Chinese capital in 635, two centuries before Ansgar preached at Birka and five before Uppsala had an archbishop of its own; the oldest church building yet identified is a converted house on the Euphrates frontier; and the fastest-spreading Christianity of the last century began in a Los Angeles building that had been serving as a stable. Where a community's memory of its own beginning and the documentary record are different kinds of evidence, both are set down here, and each is named for what it is.",
+    "intro": "Fifty places, plotted from real coordinates. The map of the year 100 is not the map of 451, and neither is the map of 1906: the Church of the East reached the Chinese capital in 635, two centuries before Ansgar preached at Birka and five before Uppsala had an archbishop of its own; the oldest church building yet identified is a converted house on the Euphrates frontier; and the fastest-spreading Christianity of the last century began in a Los Angeles building that had been serving as a stable. Where a community's memory of its own beginning and the documentary record are different kinds of evidence, both are set down here, and each is named for what it is.",
     "sites": [
         {
             "slug": "jerusalem",
@@ -1736,6 +1736,255 @@ export default {
                     "year": 2019,
                     "title": "A tomos",
                     "desc": "The Ecumenical Patriarch grants autocephaly to the Orthodox Church of Ukraine in January 2019, holding that Kyiv was never lawfully transferred to Moscow in 1686; the Moscow Patriarchate rejects the act and had broken communion with Constantinople over it the previous October. Both positions are argued from the same canons, and Ukrainian Orthodoxy remains divided between jurisdictions."
+                }
+            ]
+        },
+        {
+            "slug": "monte-cassino",
+            "name": "Monte Cassino",
+            "modern": "Cassino, Lazio, Italy",
+            "lat": 41.49,
+            "lon": 13.814,
+            "categories": [
+                "monastic",
+                "translation"
+            ],
+            "from": 529,
+            "to": null,
+            "blurb": "The hilltop where Benedict of Nursia built his monastery over a shrine of Apollo and, on the usual view, wrote the Rule most Western monks have lived by since the ninth century. Lombards, Saracens, an earthquake and Allied bombers have each destroyed the abbey, and it has been rebuilt every time on the same rock.",
+            "events": [
+                {
+                    "year": 529,
+                    "title": "Benedict on the mountain",
+                    "desc": "Gregory the Great's Dialogues, written about 593, say Benedict came here from Subiaco, overturned an altar of Apollo the country people still used, and built oratories to Martin and John the Baptist. The year 529 is a later convention, not Gregory's, and his is the only early life; Francis Clark argued in 1987 that the Dialogues are not Gregory's at all, and most scholars have not followed him."
+                },
+                {
+                    "year": 580,
+                    "title": "The Lombards",
+                    "desc": "Lombard raiders sack the monastery about 580 — 577 and later years are also given — and the monks carry the Rule to Rome, settling beside the Lateran. The mountain stays empty for more than a century, until Petronax of Brescia restores the house at Gregory II's urging about 718."
+                },
+                {
+                    "year": 1071,
+                    "title": "Desiderius builds",
+                    "desc": "Alexander II consecrates Abbot Desiderius's new church on 1 October 1071. Leo of Ostia's chronicle says Desiderius sent to Constantinople for mosaicists and had young monks of the house taught the art; in the years that followed Constantine the African, a monk here, was putting Arabic medicine into Latin, and he dedicated the theoretical half of his Pantegni to the abbot."
+                },
+                {
+                    "year": 1944,
+                    "title": "The bombing",
+                    "desc": "Allied bombers destroy the abbey on 15 February 1944, believing German troops are using it. They were not inside; German paratroops occupied the ruins afterwards and held them until the Polish II Corps took the height on 18 May. Civilians sheltering in the abbey died in the raid; the aged abbot, Gregorio Diamare, came out alive with a handful of monks."
+                },
+                {
+                    "year": 1964,
+                    "title": "Patron of Europe",
+                    "desc": "Paul VI consecrates the rebuilt basilica on 24 October 1964, during the Second Vatican Council, and the same day names Benedict patron of Europe in the apostolic letter Pacis nuntius. It had been rebuilt where it was and as it was, and from the valley it looks much as it did before the bombs."
+                }
+            ]
+        },
+        {
+            "slug": "toledo",
+            "name": "Toledo",
+            "modern": null,
+            "lat": 39.857,
+            "lon": -4.024,
+            "categories": [
+                "council",
+                "translation"
+            ],
+            "from": 400,
+            "to": null,
+            "blurb": "The Visigothic royal city, where eighteen numbered councils between 400 and the early eighth century made law for church and kingdom together, and where bishops professed that the Spirit proceeds from the Father and the Son — the doctrine, and in time the word, that would divide East and West. Its Christians kept their own liturgy under Muslim rule, and a cathedral chapel still celebrates it every morning.",
+            "events": [
+                {
+                    "year": 400,
+                    "title": "Against Priscillian",
+                    "desc": "Bishops under Patronus meet in September 400 to receive back the followers of Priscillian, the ascetic bishop of Ávila beheaded at Trier about 385 — the first Christian executed on the accusation of fellow bishops. They confirm the Nicene faith and issue twenty canons; it is the first of the councils of Toledo."
+                },
+                {
+                    "year": 589,
+                    "title": "Reccared's council",
+                    "desc": "In May 589 the Visigothic king Reccared, a Catholic since 587, sets before the bishops a profession renouncing the Homoian faith of his people, and the Gothic bishops who abjure are received with their clergy into the Catholic hierarchy. The council orders the creed recited at every Mass in the Eastern manner, and its profession has the Spirit proceeding from the Father and the Son."
+                },
+                {
+                    "year": 633,
+                    "title": "Isidore's council",
+                    "desc": "The Fourth Council meets in December 633 in the church of Saint Leocadia, probably with Isidore of Seville presiding, and imposes one liturgical order on the whole kingdom. It also provides for the schooling of clergy and legislates harshly against baptised Jews who had returned to Judaism — one of a long series of Toledan measures against the Jews of Spain."
+                },
+                {
+                    "year": 1085,
+                    "title": "Alfonso VI enters",
+                    "desc": "Alfonso VI of León-Castile takes the city on 25 May 1085 by capitulation rather than assault, and the Cluniac monk Bernard of Sédirac becomes its archbishop. The Roman rite displaces the old Hispanic one, which survives in a few Mozarabic parishes; within a century the city's translators, Gerard of Cremona chief among them, are turning Arabic science into Latin."
+                },
+                {
+                    "year": 1502,
+                    "title": "The Mozarabic chapel",
+                    "desc": "Cardinal Francisco Jiménez de Cisneros has the old rite's books printed, the missal in 1500 and the breviary in 1502, and endows a chapel in the cathedral with chaplains to keep the rite. Scholars now speak of a neo-Mozarabic rite, as much reinvented as restored; the Hispano-Mozarabic Mass is still said in the chapel each morning."
+                }
+            ]
+        },
+        {
+            "slug": "whitby",
+            "name": "Whitby",
+            "modern": "North Yorkshire, England",
+            "lat": 54.488,
+            "lon": -0.607,
+            "categories": [
+                "monastic",
+                "council",
+                "translation"
+            ],
+            "from": 657,
+            "to": 1539,
+            "blurb": "A double monastery of men and women on the cliff above the Esk, ruled by a royal abbess, where a Northumbrian king chose between the Irish and the Roman reckonings of Easter and a layman who minded the cattle became the first English poet whose name is known. The ruin on the headland is the church of the Benedictine abbey that replaced it.",
+            "events": [
+                {
+                    "year": 657,
+                    "title": "Hild's foundation",
+                    "desc": "Hild, a great-niece of King Edwin baptised with him in 627, acquires ten hides at Streanæshalch and founds a monastery there, two years after Oswiu vowed his infant daughter to God for his victory at the Winwæd; the child grew up in Hild's house. Bede says kings as well as ordinary people sought her counsel, and that five men trained there became bishops."
+                },
+                {
+                    "year": 664,
+                    "title": "The synod",
+                    "desc": "Oswiu calls the Irish and Roman parties to Hild's house. Bede reports that the quarrel ran through the king's own household: in some years he was keeping Easter, as Iona taught, while his queen, raised in Kent, was still keeping Palm Sunday. Wilfrid argues from Peter and the practice of the whole Church, Colmán from John, and the king decides for the keeper of the keys."
+                },
+                {
+                    "year": 680,
+                    "title": "Hild and Cædmon",
+                    "desc": "Hild dies on 17 November 680 after six years of illness. In her time Cædmon, a layman of the house, was given in a dream, on a night when it was his turn to mind the cattle, the gift of turning scripture into English song. Bede gives his first hymn only in a Latin paraphrase; the English words survive added to copies of Bede made within a few years of his death."
+                },
+                {
+                    "year": 1078,
+                    "title": "Reinfrid",
+                    "desc": "The first house did not survive the Danish wars — a later tradition dates its destruction to 867 — and it lay in ruins until Reinfrid, a soldier of the Conqueror turned monk of Evesham, received the ruined church from William de Percy about 1078. The community he gathered became a Benedictine abbey early in the twelfth century."
+                },
+                {
+                    "year": 1539,
+                    "title": "Surrender",
+                    "desc": "The abbey is dissolved under Henry VIII in 1539, its lands sold and its buildings stripped. The great Gothic church, begun in the thirteenth century, is left roofless on the cliff, a landmark from the sea and, in 1897, a setting for Bram Stoker's Dracula."
+                }
+            ]
+        },
+        {
+            "slug": "dordrecht",
+            "name": "Dordrecht",
+            "modern": null,
+            "lat": 51.814,
+            "lon": 4.661,
+            "categories": [
+                "reformation",
+                "council",
+                "schism",
+                "translation"
+            ],
+            "from": 1572,
+            "to": null,
+            "blurb": "The oldest town of Holland, where the rebel States first met in 1572 and where, half a century later, an international Reformed synod ruled on grace against the followers of Arminius and resolved on a new Dutch Bible. It sat in a militia hall pulled down in 1857; the Grote Kerk, where it opened and where its canons were read aloud, still stands.",
+            "events": [
+                {
+                    "year": 1572,
+                    "title": "The free States",
+                    "desc": "On 19 July 1572 deputies of the rebel towns of Holland meet here without royal summons — Amsterdam, still loyal to the king, stays away — recognise William of Orange as the king's lawful stadholder, and declare freedom of worship. The Grote Kerk passes to the Reformed the same year; the freedom promised to Catholic worship is soon withdrawn."
+                },
+                {
+                    "year": 1618,
+                    "title": "The synod opens",
+                    "desc": "On 13 November 1618 the national synod called by the States General opens with a service in the Grote Kerk, delegates from Great Britain, the Palatinate, Hesse, Nassau-Wetteravia, the Swiss cantons, Geneva, Bremen and Emden sitting with the Dutch; Louis XIII forbade the French Reformed to come. In its first sessions it resolves on a new Bible translated from the original languages."
+                },
+                {
+                    "year": 1619,
+                    "title": "The Remonstrants dismissed",
+                    "desc": "The Remonstrant ministers, cited as defendants rather than seated as delegates, contest the synod's procedure for weeks. On 14 January 1619 the president, Johannes Bogerman, loses his temper and sends them away, and the synod goes on to judge their teaching from their writings."
+                },
+                {
+                    "year": 1619,
+                    "title": "The canons read",
+                    "desc": "On 6 May 1619 the delegates process to the Grote Kerk to hear the canons read: five heads of doctrine answering the Remonstrance's five articles, the third and fourth joined. A week later Johan van Oldenbarnevelt, the statesman who had protected the Remonstrants, is beheaded at The Hague."
+                },
+                {
+                    "year": 1632,
+                    "title": "A second confession",
+                    "desc": "On 21 April 1632 Mennonite leaders meeting in the town adopt an eighteen-article confession: nonresistance, no oaths, foot washing, the shunning of the excommunicated. Swiss Brethren in Alsace accepted it in 1660 and the Amish hold to it still, so that Dordrecht names two statements of faith from opposite ends of the Reformation."
+                }
+            ]
+        },
+        {
+            "slug": "udayamperoor",
+            "name": "Udayamperoor",
+            "modern": "Ernakulam district, Kerala, India",
+            "lat": 9.914,
+            "lon": 76.363,
+            "categories": [
+                "council",
+                "schism"
+            ],
+            "from": 510,
+            "to": null,
+            "blurb": "A village south-east of Kochi, Diamper to the Portuguese, whose old church housed the synod of 1599 at which the Archbishop of Goa brought the Saint Thomas Christians under Latin rule. The synod is the community's longest argument with itself: each church descended from the division that followed reads it differently, and none has forgotten it.",
+            "events": [
+                {
+                    "year": 510,
+                    "title": "The church of the tradition",
+                    "desc": "The community's tradition holds that the old church was founded in 510 by a king of Villarvattom, a Christian line remembered in its histories, and rebuilt by Sabor and Aproth, Persian bishops it places in the ninth century, to whom it was dedicated before the synod. These are traditions and are set down as such: the church's documented history begins with 1599."
+                },
+                {
+                    "year": 1599,
+                    "title": "The synod",
+                    "desc": "From 20 June 1599 Aleixo de Menezes, Augustinian Archbishop of Goa, sits here with 153 priests and some 660 lay representatives, and in a week passes more than two hundred decrees. They forbid the commemoration of the Patriarch of Babylon, condemn as Nestorian — a label the Church of the East rejects — the teachers the community had honoured, and require celibacy of its priests."
+                },
+                {
+                    "year": 1599,
+                    "title": "Saints removed, books condemned",
+                    "desc": "The synod takes the church's dedication from Sabor and Aproth and gives it to All Saints, and lists the Syriac books to be surrendered and burnt. How much burned is unknown: István Perczel and the cataloguers of the Hill Museum have found condemned texts surviving in Kerala's collections, so the fire was real and less thorough than the decree."
+                },
+                {
+                    "year": 1606,
+                    "title": "The acts in print",
+                    "desc": "The decrees are printed in Portuguese at Coimbra in 1606 with António de Gouveia's account of the archbishop's journey. Francisco Ros, the Jesuit whom Rome had made bishop over this church, complained in 1604 that Menezes altered the text he sent to Rome after the synod rose, so what was read here and what was printed may not be the same."
+                },
+                {
+                    "year": 1694,
+                    "title": "An English reading",
+                    "desc": "Michael Geddes, formerly chaplain to the English merchants at Lisbon, publishes the decrees in English in 1694 inside a history of the Malabar church whose title promises an account of the violent methods of the Roman prelates. For long it was how English readers knew the Saint Thomas Christians — as Protestants before the Reformation, which was more Geddes's argument than their history."
+                }
+            ]
+        },
+        {
+            "slug": "cluny",
+            "name": "Cluny",
+            "modern": "Saône-et-Loire, France",
+            "lat": 46.434,
+            "lon": 4.659,
+            "categories": [
+                "monastic",
+                "translation"
+            ],
+            "from": 910,
+            "to": 1790,
+            "blurb": "A Burgundian abbey given to Saints Peter and Paul and to no lay lord, which became the head of the largest monastic network the West had seen, its abbots counselling popes and emperors and its third church the largest in Christendom until the new St Peter's. The Revolution sold that church for its stone; one arm of a transept and its bell tower are most of what remains.",
+            "events": [
+                {
+                    "year": 910,
+                    "title": "The charter",
+                    "desc": "William, duke of Aquitaine, gives his estate at Cluny to the apostles Peter and Paul, puts the monks under the pope's protection, and forbids any lord, bishop or even pope to seize their property; Berno is the first abbot. Freedom from the bishop of Mâcon's jurisdiction came later, by papal privileges of about 998 and of 1024."
+                },
+                {
+                    "year": 1049,
+                    "title": "Hugh the Great",
+                    "desc": "Hugh is elected abbot at twenty-five and rules for sixty years, while houses across Europe are given to Cluny or placed under its obedience. He is godfather to the emperor Henry IV and is at Canossa in 1077 pleading for him with Gregory VII; Cluny's reform and the papacy's are allies, but not the same project."
+                },
+                {
+                    "year": 1095,
+                    "title": "Urban's altar",
+                    "desc": "Urban II, once prior of Cluny, consecrates the high altar of the new abbey church on 25 October 1095, on his way to the council at Clermont where he will preach the crusade. Begun in 1088 and dedicated in 1130, the church remained the largest in the Latin world until the rebuilding of St Peter's in Rome."
+                },
+                {
+                    "year": 1143,
+                    "title": "The Qur'an in Latin",
+                    "desc": "Peter the Venerable, visiting Spain in 1142, pays Robert of Ketton and others to put the Qur'an and a body of Islamic writings into Latin; Robert finishes his Qur'an in 1143. Peter meant the collection for refutation, and in a later treatise addressed Muslims as one coming to them with words rather than arms. Robert's version, printed at Basel in 1543, was the Latin Qur'an Europe chiefly read until Marracci's of 1698."
+                },
+                {
+                    "year": 1790,
+                    "title": "Suppressed and quarried",
+                    "desc": "The Revolution dissolves the monastic orders in 1790 and the monks disperse. The abbey church is sold in 1798 and demolished for its stone over the following quarter-century; what survives is the south arm of the great transept with its octagonal tower, standing over a town that absorbed much of the rest."
                 }
             ]
         }
