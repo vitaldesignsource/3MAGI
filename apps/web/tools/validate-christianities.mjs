@@ -361,6 +361,10 @@ if (esoteric) {
     }
     for (const g of esoteric.groups) {
         if (!esoteric.entries.some((e) => e.group === g.key)) fail(`esoteric: group "${g.key}" is empty`);
+        // A door that wears signs must point at drawings that exist.
+        for (const src of g.portal?.emblems ?? []) {
+            if (!existsSync(path.join(web, 'public/media', src))) fail(`esoteric/${g.key}: door emblem ${src} not in public/media`);
+        }
     }
     notes.push(`esoteric: ${esoteric.entries.length} in ${esoteric.groups.length} currents`);
 }

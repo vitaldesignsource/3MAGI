@@ -8,6 +8,7 @@ import Rich from './rich';
 import PortalHero from './PortalHero';
 import RosicrucianVault from './RosicrucianVault';
 import LutherRose from './LutherRose';
+import RosicrucianMap from './RosicrucianMap';
 
 // The Rose and the Cross, off the Inner Tradition.
 //
@@ -24,8 +25,9 @@ import LutherRose from './LutherRose';
 //   the reckoning    the ledger, claim by claim; the descent chart, which
 //                   sets every body's account of itself against the record and
 //                   leaves the seventy-year hole visibly empty; the grades, the
-//                   one thing that demonstrably did cross it; and the
-//                   historians, asked the same two questions as the tradition
+//                   one thing that demonstrably did cross it; the map, claimed
+//                   and documented on one coastline; and the historians,
+//                   asked the same two questions as the tradition
 //
 // The entries narrate. The ledger adjudicates. The descent chart draws. The
 // emblem in the hero is Luther's seal, drawn from his letter (LutherRose.jsx).
@@ -354,6 +356,19 @@ function ChristianitiesRosicrucianPage() {
                         ))}
                     </ol>
                 </section>
+
+                {page.map && (
+                    <section className="ch-rc-map-wrap" aria-labelledby="rc-map-heading">
+                        <span className="pw-divider" aria-hidden="true" />
+                        <header className="edu-section-head">
+                            <p className="kicker">The map</p>
+                            <h2 id="rc-map-heading">Where it happened</h2>
+                            {(page.mapIntro ?? []).map((p, i) => <p key={i}><Rich t={p} /></p>)}
+                        </header>
+                        <RosicrucianMap map={page.map} />
+                        {page.map.journeyNote && <p className="ch-rc-coda"><Rich t={page.map.journeyNote} /></p>}
+                    </section>
+                )}
 
                 <section className="ch-rc-schol-wrap" aria-labelledby="rc-schol-heading">
                     <span className="pw-divider" aria-hidden="true" />
