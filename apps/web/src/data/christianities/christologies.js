@@ -811,6 +811,96 @@ export default {
             "status": "divided"
         },
         {
+            "slug": "theopaschism",
+            "name": "Theopaschism: one of the Trinity suffered in the flesh",
+            "term": {
+                "native": "εἷς τῆς ἁγίας Τριάδος",
+                "translit": "heis tēs hagias Triados",
+                "meaning": "one of the Holy Trinity — the heart of the formula, sung in the Byzantine liturgy and required by the tenth anathema of 553"
+            },
+            "claim": "The one who was crucified is one of the Holy Trinity, God the Word himself: he suffered, not in his divinity, which remains impassible, but in the flesh he had made his own.",
+            "exposition": [
+                "Chalcedon had called Christ one person in two natures, one and the same Son, God the Word, but not in terms its critics could not read another way. Its opponents suspected that the definition left room for a second subject, a man beside God doing the suffering on his behalf. The formula closed the room. If one may say, with no qualification but the flesh, that one of the Trinity was crucified, then there is one subject in Christ, and he is God. Cyril's twelfth anathema had said as much of the Word; what was new was naming the subject from inside the Trinity.",
+                "The idea had a bad history in the capital before it had a good one. At Antioch in the 470s, on the usual ascription, the anti-Chalcedonian patriarch Peter the Fuller added to the Trisagion a clause confessing the one crucified for us. When the emperor Anastasius had the addition sung in Constantinople in 512 the city rose against him, and he went into the Hippodrome without his diadem and offered to abdicate. To Chalcedonian ears the language sounded like the opposing party's slogan; to Latin ears, like the old heresy that made the Father suffer.",
+                "It was carried over to the Chalcedonian side by monks from Scythia Minor led by John Maxentius. In Constantinople in 519, as the schism between Rome and the East was being healed, they pressed it as the proof of a Chalcedon that did not divide Christ. The papal legates distrusted it, and some of the monks took it to Rome, where Pope Hormisdas kept them waiting for months and would not approve it; they left in 520. Their warmest allies were the African bishops exiled in Sardinia, Fulgentius of Ruspe among them.",
+                "What the pope declined the emperor adopted. Justinian, whose letters to Rome in 519 wavered over the monks, came round to their formula and as emperor made it law: an edict of 533 confessed Christ as one of the Holy Trinity, and Pope John II approved it in 534, condemning the Sleepless monks of Constantinople who refused it. The hymn Only-begotten Son, ascribed by Byzantine tradition to Justinian and sung near the opening of the Divine Liturgy, carries the phrase still. In 553 the Second Council of Constantinople wrote the formula into its tenth anathema.",
+                "Its precision lies in its last words. It does not say that the Godhead suffered, which every party denied; it says that the Word suffered in his own flesh — Cyril's paradox of the impassible one who suffers. Modern theologies of a suffering God, from Kazoh Kitamori's Theology of the Pain of God (1946) to Jürgen Moltmann's The Crucified God (1972), are often filed under the same name, but they claim what the sixth century expressly did not: suffering in the divine nature itself. Historians of doctrine keep the two apart."
+            ],
+            "scripture": [
+                {
+                    "ref": "1 Corinthians 2:8",
+                    "how": "'they would not have crucified the Lord of glory' — the text behind the anathema of 553, which names the crucified Lord of glory and one of the Holy Trinity in the same breath"
+                },
+                {
+                    "ref": "1 Peter 4:1",
+                    "how": "'Christ hath suffered for us in the flesh' — the source of the qualifying phrase on which the whole formula turns"
+                },
+                {
+                    "ref": "Acts 3:15",
+                    "how": "'And killed the Prince of life' — the author of life named as the one put to death"
+                },
+                {
+                    "ref": "Galatians 2:20",
+                    "how": "'the Son of God, who loved me, and gave himself for me' — the Son who gives himself is the eternal Son, and not a man beside him"
+                },
+                {
+                    "ref": "Malachi 3:6",
+                    "how": "the opponents' text: 'For I am the LORD, I change not' — the immutability that made the formula sound, to Latin and Antiochene ears, like making God mortal"
+                }
+            ],
+            "heldBy": "John Maxentius and the Scythian monks; Fulgentius of Ruspe and the African bishops in Sardinia; Justinian, who made it imperial law in 533; Pope John II; after 553 the Byzantine and Latin churches; and in substance the Oriental Orthodox, since Peter the Fuller's day.",
+            "opposedBy": "Pope Hormisdas and his legates at Constantinople, who would not endorse it; the Sleepless monks of Constantinople, condemned for rejecting it; and, on grounds that have not changed, the Church of the East, whose theology keeps the suffering on the side of the humanity and will not make the impassible Word its subject.",
+            "council": "Constantinople II, 553, whose tenth anathema condemns anyone who will not confess that our Lord Jesus Christ, crucified in the flesh, is true God, Lord of glory and one of the Holy Trinity — after Justinian's edict of 533 and John II's approval of 534 had already made it the faith of the empire and of Rome.",
+            "aftermath": "It became the standard reading of Chalcedon in the Byzantine and Latin churches — the hinge of what historians call neo-Chalcedonianism — and the reading on which the modern agreed statements with the Oriental Orthodox depend. It did not win back the dissenters it was partly meant for, who had been saying something like it since the 470s and wanted Chalcedon set aside, not glossed.",
+            "today": "Confessed by the Eastern Orthodox and Catholic churches, and sung at almost every Byzantine Divine Liturgy in the hymn Only-begotten Son; held in substance by the Oriental Orthodox, whose Trisagion still carries the clause about the crucifixion; declined by the Church of the East. The twentieth-century theologies of a suffering God that borrowed its name hold a different doctrine, and are argued over in every major communion.",
+            "status": "vindicated"
+        },
+        {
+            "slug": "aphthartodocetism",
+            "name": "Aphthartodocetism: the incorruptible body",
+            "term": {
+                "native": "ἀφθαρσία",
+                "translit": "aphtharsia",
+                "meaning": "incorruption — freedom from φθορά, which meant both the decay of the grave and the flesh's whole liability to hunger, pain and death"
+            },
+            "claim": "The body of Christ was incorruptible from the moment of the union, because it was sinless flesh; he hungered, suffered and died truly, but by his own will and not by any necessity of his nature.",
+            "exposition": [
+                "This was a quarrel between allies. In 518 the new emperor Justin restored Chalcedon, and among the bishops who fled to Egypt were Severus, the deposed patriarch of Antioch, and Julian, bishop of Halicarnassus in Caria — both enemies of the council, both Cyril's men. In exile they fell out over a question Chalcedon had never asked: was the body of Christ, before the resurrection, corruptible? Their exchange of letters and treatises, probably in the 520s, became one of the most damaging arguments the anti-Chalcedonian movement ever had, and it was with itself.",
+                "Julian's argument began with Adam. Corruption, and with it death, entered the world through sin; Christ was conceived without sin; therefore the flesh he took was the flesh of Adam before the fall, incorruptible from its first moment — not humanity changed into something else, but humanity as God first made it. He did not deny that Christ hungered, wept and died; he insisted that each was real and each voluntary, permitted by the Word when and as he willed, not undergone as ours are, because we cannot help it. His opponents' names for his followers, Phantasiasts and Aphthartodocetae, said that he made the passion a phantom; René Draguet's study of 1924 concluded that he did nothing of the kind, and that his case rested on original sin.",
+                "Severus answered in a series of treatises, preserved like almost everything of his only in Syriac. Hunger, thirst, weariness, fear and death are the blameless passions of human nature; Christ took that nature as it now is, mortal and passible, to heal it from the inside, and a body exempt from them would not be ours. Incorruption is what the resurrection gave that body, not what it had in the womb. Both men agreed that it saw no decay in the tomb; what divided them was what φθορά meant. The Julianists called the Severans Phthartolatrae, worshippers of the corruptible, and the two nicknames are a fair measure of the temperature.",
+                "The quarrel split Egypt. When the patriarch of Alexandria died in 535 the two parties set up rival successors — Theodosius for the followers of Severus, Gaianus for the followers of Julian — and Gaianus held the city for about three months until imperial troops restored his rival. Gaianites and Theodosians were the names of rival communities for long afterwards.",
+                "Its strangest convert, if he was one, was the emperor. Evagrius Scholasticus reports that Justinian in his last years issued an edict declaring the body of Christ incorruptible, deposed Eutychius of Constantinople for refusing it in January 565, and was moving against Anastasius of Antioch when he died that November. No text of the edict survives, and Evagrius is its only contemporary witness; whether Justinian embraced Julian's doctrine, issued a Chalcedonian version of it, or issued nothing at all, and whether Eutychius fell for another reason, is still disputed."
+            ],
+            "scripture": [
+                {
+                    "ref": "Psalm 16:10",
+                    "how": "'neither wilt thou suffer thine Holy One to see corruption' — common ground: both parties agreed the body never decayed, and the quarrel was over what came before the tomb"
+                },
+                {
+                    "ref": "Romans 5:12",
+                    "how": "'by one man sin entered into the world, and death by sin' — the incorruptibilist premise: corruption is the wage of sin, and the sinless one does not owe it"
+                },
+                {
+                    "ref": "John 10:18",
+                    "how": "'No man taketh it from me, but I lay it down of myself' — suffering and death as acts of will, not of nature"
+                },
+                {
+                    "ref": "Hebrews 4:15",
+                    "how": "'in all points tempted like as we are, yet without sin' — pressed by both sides, the one leaning on its first clause and the other on its last"
+                },
+                {
+                    "ref": "1 Corinthians 15:42",
+                    "how": "the opponents' text: 'It is sown in corruption; it is raised in incorruption' — incorruption as the gift of the resurrection, not the condition of the body before it"
+                }
+            ],
+            "heldBy": "Julian of Halicarnassus and his followers — called Julianists, and in Egypt Gaianites after their patriarch Gaianus — who for a time had bishops of their own; and, if Evagrius reports him rightly, the emperor Justinian at the end of his life.",
+            "opposedBy": "Severus of Antioch and the party that took his name, which condemned Julian; Theodosius of Alexandria; and on the Chalcedonian side Leontius of Byzantium, who wrote against the incorruptibilists, and the patriarchs Eutychius of Constantinople and Anastasius of Antioch, who on Evagrius's account refused Justinian's edict.",
+            "council": "None that the divided churches would all recognise. Among the anti-Chalcedonians it was settled by Severus's treatises and the condemnations of his party; in the imperial church it was answered chiefly by theologians, and its one moment of official favour — Justinian's late edict — ended with his death in 565.",
+            "aftermath": "Severus's answer prevailed in the churches that followed him, and the Julianists dwindled into a sect and then into a name. But the quarrel cost the anti-Chalcedonian movement its unity just as it was building a hierarchy of its own, and it handed Chalcedonian controversialists a weapon: Phantasiast became a charge to throw at any church suspected of thinking Christ's humanity less than ours, the Armenian church above all, whose early relation to Julian's teaching historians still argue.",
+            "today": "No church holds it; the Coptic and Syriac Orthodox follow Severus, as on most things. The question has come back from the other side. Edward Irving was deposed by the Church of Scotland in 1833 for teaching that the Word took fallen human nature, and Karl Barth and T. F. Torrance taught something like it: whether Christ assumed the flesh of Adam before the fall or after it is Julian's question given the other answer, and it is argued still.",
+            "status": "condemned"
+        },
+        {
             "slug": "monothelitism",
             "name": "Monoenergism and Monothelitism: one activity, one will",
             "term": {
@@ -898,6 +988,51 @@ export default {
             "council": "Hieria, 754, which condemned the images and which the iconodules refuse to number among the councils; Nicaea II, 787, the Seventh Ecumenical Council, which restored them; and the synod of 843 that ended the second iconoclasm for good.",
             "aftermath": "The victory of the images shaped Orthodox worship permanently — the iconostasis, the theology of the icon as a window, the whole visual grammar of the Christian East. It also left a permanent argument with the West about the Frankish reception of Nicaea II, whose acts Charlemagne's theologians read in a defective Latin translation and rejected.",
             "today": "The christological defence of images is doctrine in the Orthodox and Catholic churches. The iconoclast instinct is held on other grounds — from the commandment rather than from christology — by the Reformed tradition, which stripped the churches of northern Europe in the sixteenth century, and by the Anabaptist and Puritan traditions after it; and it is one of the abiding points of contact and friction between Christian, Jewish and Muslim accounts of what may be shown.",
+            "status": "condemned"
+        },
+        {
+            "slug": "spanish-adoptionism",
+            "name": "Spanish Adoptionism: the adoptive son of Toledo",
+            "term": {
+                "native": "filius adoptivus",
+                "translit": "filius adoptivus",
+                "meaning": "adoptive son — the title Elipandus and Felix gave to Christ in his humanity, while confessing him in his divinity the Son by nature"
+            },
+            "claim": "Christ is Son of God in two ways: in his divinity by nature, as the eternal Word; in his humanity by adoption and grace, as the firstborn among many brethren.",
+            "exposition": [
+                "This is not the adoptionism of Theodotus and Paul of Samosata, and the shared name has caused confusion ever since. Nobody in eighth-century Toledo doubted that the Word was eternal God or that Christ is one person; Elipandus and Felix held themselves faithful to the councils. The question was narrower: when the one Christ is called Son of God, is the title said of him in the same way in respect of both natures? Their answer was no. In his divinity he is Son by nature; in the humanity he assumed, which is a creature, he is Son by adoption and by grace.",
+                "The argument had a geography. Toledo, the old Visigothic capital, had been under Muslim rule since the conquest that began in 711, and its archbishop still claimed to lead the church of Spain. Elipandus's language drew fire in the 780s from Beatus, a monk of Liébana in the Christian kingdom of Asturias, and from Etherius, in a joint treatise of 785. When Felix, bishop of Urgel, took his side, the quarrel crossed into lands Charlemagne claimed and became a matter for the Frankish court.",
+                "Elipandus defended it as an inheritance. The Visigothic fathers and the Toledan liturgy had spoken of the adoption of the man the Word assumed, and he cited them; to abandon the language was to abandon Toledo's own tradition at outsiders' demand. It had a pastoral logic as well: if Christ's humanity is son by grace, then he is truly our brother, the firstborn among many brethren, and our adoption rests on his. Elipandus's letters survive; Felix's writings are known only from his opponents' quotations.",
+                "The opponents' answer was that sonship belongs to a person, not to a nature. There is one Christ and one Son; if the one born of Mary is the natural Son of God, he cannot also be an adoptive son without becoming two sons — and to Alcuin and his allies that was Nestorius come again. Felix recanted before Charlemagne's synod at Regensburg in 792 and again before Pope Hadrian in Rome, then returned to Muslim Spain and resumed teaching. In 794 the council of Frankfurt condemned the doctrine in its first chapter. At Aachen in 799, after six days of argument with Alcuin, who wrote seven books against him, Felix recanted a third time.",
+                "How to judge it is still argued. Its opponents' charge was long the textbook verdict; John Cavadini's The Last Christology of the West (1993) argued instead that the Spaniards were extending a Western tradition, Augustinian at its root, and that Alcuin, reading them as heirs of Nestorius, misunderstood them. The dispute was also about authority: Toledo's primacy over a church under Muslim rule, the Asturian church's independence of it, and the Frankish appetite for policing its neighbours' faith. That the language was easier to defend before Muslim neighbours is often suggested and has never been proved."
+            ],
+            "scripture": [
+                {
+                    "ref": "Romans 8:29",
+                    "how": "'that he might be the firstborn among many brethren' — the charter text: a firstborn shares the standing of those born after him, and theirs is adoption"
+                },
+                {
+                    "ref": "Galatians 4:4–5",
+                    "how": "'made of a woman, made under the law… that we might receive the adoption of sons' — the Son made under the law, and the adoption his coming purchases"
+                },
+                {
+                    "ref": "Romans 1:3–4",
+                    "how": "'made of the seed of David according to the flesh; And declared to be the Son of God with power' — two ways of being Son, by the flesh and by the Spirit"
+                },
+                {
+                    "ref": "Hebrews 2:11",
+                    "how": "'he is not ashamed to call them brethren' — a brotherhood with the adopted, read as a share in their adoption"
+                },
+                {
+                    "ref": "Romans 8:32",
+                    "how": "the opponents' text: 'He that spared not his own Son' — the Son given up to death called God's own, and not adoptive"
+                }
+            ],
+            "heldBy": "Elipandus, archbishop of Toledo under the emirate of Córdoba, and Felix, bishop of Urgel, with the bishops of Spain who followed Toledo's lead; and, on their own account, the Visigothic fathers and the Toledan liturgy, whose language they claimed to keep.",
+            "opposedBy": "Beatus of Liébana and Etherius, in the kingdom of Asturias; Pope Hadrian I; Paulinus of Aquileia; Alcuin of York, who wrote against both men; Agobard of Lyon; and Charlemagne, who made it the business of three synods.",
+            "council": "Regensburg, 792, where Felix first recanted; Frankfurt, 794, whose first chapter condemned the doctrine; and Aachen, 799, where Felix recanted again after disputing with Alcuin.",
+            "aftermath": "Felix lived out his life under supervision at Lyon, in the keeping of Archbishop Leidrad, and when he died, about 818, Leidrad's successor Agobard found among his papers a statement of the old teaching and wrote a treatise against the dead man. Elipandus, beyond the reach of any Frankish synod, died, probably early in the ninth century, without having recanted. As a cause, it did not outlive the two of them.",
+            "today": "No church holds it. It survives as a scholastic question — Thomas Aquinas asked whether Christ as man may be called the adopted son of God and answered no, on the Carolingian ground that sonship belongs to a person and not to a nature (Summa Theologiae III, q. 23, a. 4) — and as a historians' case, reopened by the argument that the last christology the Latin West produced on its own was condemned for an error it may not have held.",
             "status": "condemned"
         },
         {

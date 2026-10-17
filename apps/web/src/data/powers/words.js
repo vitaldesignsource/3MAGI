@@ -22,6 +22,20 @@ export default {
             fate: 'Gave every European language its word for the being — and lost its plain sense entirely. Evangelion, “good message,” keeps the old root visible inside “gospel.”',
         },
         {
+            slug: 'kerub', native: 'כרוב', translit: 'keruv', lang: 'hebrew',
+            literal: 'cherub — origin uncertain; often linked, not securely, with Akkadian kāribu, “one who blesses”',
+            story: 'Guards and furniture before they are anything else: posted east of the garden, beaten in gold over the ark, carved ten cubits high in Solomon’s inner shrine, the seat of a God enthroned upon them. The usual etymology joins the word to Akkadian kāribu, an intercessor, or the rarer kurību, apparently a protective spirit; the resemblance is real, the derivation unproven. Most scholars now picture the cherub as a winged sphinx.',
+            livesIn: 'Genesis 3:24; Exodus 25:18–22; 1 Samuel 4:4, the Lord enthroned upon them; 1 Kings 6:23–28; Psalm 18:10, where God rides one; Ezekiel 10.',
+            fate: 'Transliterated, not translated — the King James Genesis doubles the plural to Cherubims — so meanings were supplied: Dionysius, citing those who knew Hebrew, read fullness of knowledge. Renaissance art merged it with the putto, and in English a rosy child is a cherub.',
+        },
+        {
+            slug: 'saraph', native: 'שרף', translit: 'saraf', lang: 'hebrew',
+            literal: 'burning one — from the verb to burn; outside Isaiah 6, always a snake, sometimes a flying one',
+            story: 'Outside Isaiah’s throne-room the saraf is a snake. God sends burning serpents among the people, and Moses is told to make a saraf and set it on a pole — the bronze serpent still receiving Israel’s incense when Hezekiah broke it. Hence many scholars picture Isaiah’s six-winged seraphim as winged cobras, like the uraeus on Hebrew seals; the chapter gives them faces, feet, a hand and voices, and never says serpent.',
+            livesIn: 'Numbers 21:6–9; Deuteronomy 8:15; 2 Kings 18:4; Isaiah 6; Isaiah 14:29 and 30:6, the King James “fiery flying serpent.”',
+            fate: 'One scene sufficed: the seraphim head Dionysius’ nine choirs, their threefold holy became the Sanctus, and on La Verna in 1224 Francis was said to see a crucified man with a seraph’s six wings as he received the stigmata — hence the Seraphic Father.',
+        },
+        {
             slug: 'daimon', native: 'δαίμων', translit: 'daimōn', lang: 'greek',
             literal: 'divine power; an apportioner of lots — possibly from daiomai, to divide',
             story: 'The most consequential word in this portal. In Homer it can mean a god plainly; in Hesiod it names the honoured dead who guard the living; in Plato it is the whole class of beings between gods and mortals, through which everything passes. Then the Greek Bible chose it to render the gods of the nations, the apologists identified those gods as fallen spirits, and the word arrived in English as “demon.”',
@@ -48,6 +62,13 @@ export default {
             story: 'The Hebrew Bible uses shedim twice, both times for beings the nations sacrifice to. The likely origin is the Akkadian šēdu — the guardian bull-colossus at the palace gate, a positive being, the winged protector now in every major museum. A protective spirit of one culture named the illicit spirit of its neighbour.',
             livesIn: 'Deuteronomy 32:17 and Psalm 106:37; abundantly in later rabbinic literature, where the shedim acquire an entire natural history.',
             fate: 'Rendered daimonia in the Greek and daemonia in the Latin; the museum guardians and the scriptural demons are the same word, two valuations apart.',
+        },
+        {
+            slug: 'satan', native: 'שטן', translit: 'satan', lang: 'hebrew',
+            literal: 'adversary; the one who obstructs or accuses — the related verb means to oppose',
+            story: 'In Numbers and Samuel a satan is whoever stands in the way: the Lord’s angel blocking Balaam’s road, David as the Philistines fear he may prove in battle. In Job and Zechariah it takes the article and becomes an office — ha-satan, the accuser at the heavenly court. In 1 Chronicles 21:1 it stands bare where 2 Samuel 24 has the Lord inciting David; whether it is yet a name is argued.',
+            livesIn: 'Numbers 22:22, 32; 1 Samuel 29:4; 1 Kings 11:14–25; 1 Chronicles 21:1, against 2 Samuel 24:1; Job 1–2; Zechariah 3:1–2; the Gospels, as Satanas.',
+            fate: 'For the accuser of Job and Zechariah the Septuagint chose diabolos, the slanderer — whence devil — and the New Testament also kept the Aramaic Satanas as a name. English holds one office twice, translated and transliterated, and has forgotten it was an office.',
         },
         {
             slug: 'jinn-word', native: 'جن', translit: 'jinn', lang: 'arabic',
@@ -90,6 +111,20 @@ export default {
             story: 'Greek theos and Latin deus look like cousins and are not: deus descends from the Indo-European sky-word that gives Zeus and Dyaus, while theos comes from somewhere else entirely, its root still argued. Two of the West’s central words for god, side by side for two millennia, from different ancestors.',
             livesIn: 'From Homer through the philosophers to the Greek New Testament and the creeds.',
             fate: 'Gave theology, theurgy, apotheosis and enthusiasm — enthousiasmos, having the god within. Its disputed etymology is a reminder that the vocabulary of the divine is older than the records that carry it.',
+        },
+        {
+            slug: 'archon', native: 'ἄρχων', translit: 'archōn', lang: 'greek',
+            literal: 'ruler; the one who goes first — participle of archein, to begin and to rule',
+            story: 'A civic title before a cosmic one: Athens chose nine archons a year, and the eponymous archon gave the year its name. The church’s Greek Daniel gives the title to Michael and to the angelic princes of Persia and Greece; Paul’s archons of this age would not have crucified the Lord of glory had they understood — human rulers or powers behind them, still argued. Gnostic texts made them planetary jailers.',
+            livesIn: 'The Athenian archon lists; Daniel 10:13–21 and 12:1 in Theodotion’s Greek; John 12:31; 1 Corinthians 2:6–8; Ephesians 2:2; the Hypostasis of the Archons.',
+            fate: 'Its sister noun archē means both beginning and rule, so John’s first line and the nine choirs’ Principalities share a noun. The archons live on in alternative spirituality as hidden managers of a captive humanity; the Athenian magistrates seldom get a mention.',
+        },
+        {
+            slug: 'aion', native: 'αἰών', translit: 'aiōn', lang: 'greek',
+            literal: 'lifetime, age, eternity — cognate with Latin aevum',
+            story: 'In Homer aiōn is a lifetime, almost a life-force, which departs with the psychē at death. Heraclitus made it a child playing a board game, to whom the kingship belongs; Plato stretched it to eternity, of which time is the moving image. The Septuagint used it for Hebrew ʿolam, the New Testament for this age and the age to come, and the Valentinians for persons — the paired aeons of the fullness.',
+            livesIn: 'Homer; Heraclitus, fragment 52; Plato, Timaeus 37d; the Septuagint and the New Testament; Irenaeus’ report of the Valentinians; the magical papyri.',
+            fate: 'Latin often rendered it saeculum, so the doxology’s ages of ages became the Prayer Book’s world without end; aevum, its cognate, gave English age and eternity. Geologists made the eon their largest unit of time: a word for one life now measures the earth’s.',
         },
     ],
 };

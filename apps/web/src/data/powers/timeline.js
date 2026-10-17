@@ -213,7 +213,7 @@ export default {
             slug: 'medinet-madi-find', title: 'The Manichaean books at Medinet Madi', native: null,
             kind: 'event', year: 1929, end: 1930, circa: true, circaEnd: false,
             description: 'Diggers in the ruins of a Fayum town turn up a cache of papyrus codices in Coptic: the Kephalaia, the Psalm-Book, the Homilies and more. The Father of Greatness, the Primal Man and the Living Spirit, known in the West until then mainly through their opponents — Augustine first among them — are heard in the words of their own church: damaged, fragmentary, and still being read.',
-            dating: 'The codices were found by local diggers rather than excavators and reached Carl Schmidt through the Cairo trade in 1930; the dealers’ trail led back to Medinet Madi, and Schmidt and Hans Jakob Polotsky announced the find in 1933. The books were divided between Berlin and Alfred Chester Beatty, whose share is in Dublin; part of the Berlin share went missing at the end of the Second World War, and the edition is still unfinished nearly a century on. The books themselves are dated to around 400.',
+            dating: 'The codices were found by local diggers rather than excavators and reached Carl Schmidt through the antiquities trade in 1930; the dealers’ trail led back to Medinet Madi, and Schmidt and Hans Jakob Polotsky announced the find in 1933. The books were divided between Berlin and Alfred Chester Beatty, whose share is in Dublin; part of the Berlin share went missing at the end of the Second World War, and the edition is still unfinished nearly a century on. The books themselves are dated to around 400.',
         },
         {
             slug: 'nag-hammadi-find', title: 'The jar at Nag Hammadi', native: null,

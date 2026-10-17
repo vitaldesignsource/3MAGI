@@ -261,6 +261,58 @@ export default {
             "againstWhom": "The Roman magisterium — and, on a second front, radical spiritualists who dispensed with churchly interpretation altogether",
             "counterpart": "scriptura et traditio — the Tridentine pairing of written books and unwritten traditions",
             "aftermath": "Still the formal dividing line of Protestantism; modern dialogue — and the Catholic Dei Verbum (1965), with its language of a single wellspring of revelation — has narrowed the gap without closing it."
+        },
+        {
+            "slug": "christos",
+            "native": "Χριστός",
+            "translit": "Christos",
+            "lang": "greek",
+            "literal": "anointed — the verbal adjective of chriein, to rub or smear with oil",
+            "coined": "Classical Greek used it of salves and ointments; the Septuagint made it render the Hebrew mashiach, the anointed king or priest; a title of the expected deliverer by the 1st century BCE (Psalms of Solomon 17); so constant in Paul's letters of the 50s CE that it is already close to a name. Acts 11:26 places the coinage Christianoi, Christ's partisans, at Antioch.",
+            "fight": "The first Christian argument was over this word: is the crucified Jesus of Nazareth the anointed one Israel awaited? Paul calls a crucified Christ a stumbling block to Jews and foolishness to Greeks (1 Corinthians 1:23), and Justin Martyr's Dialogue with Trypho (mid-2nd century) spends much of its length on whether the Scriptures foretell such a Christ; its Trypho grants a suffering Messiah and balks at a crucified one, cursed by the Law. A second front opened inside the church, where Cerinthus, in Irenaeus's report, divided the heavenly Christ from the man Jesus who died.",
+            "wieldedBy": "Paul above all, for whom the crucified Christ is the whole message; the evangelists, Mark building toward Peter's confession (Mark 8:29); Justin Martyr and the apologists",
+            "againstWhom": "The synagogue's refusal of a crucified Messiah; and, on a second front, those who would part the Christ from Jesus — the denial 1 John 2:22 calls antichrist",
+            "counterpart": "מָשִׁיחַ (mashiach, anointed) — the Hebrew it translates, which entered Greek a second time as the loanword Messias (John 1:41, 4:25)",
+            "aftermath": "Matthew Novenson's Christ among the Messiahs (2012) contests the long-standing view that for Paul the title is already a proper name, reading it as an honorific. Outsiders confused it with chrēstos, good; whether Suetonius's Chrestus is Christ is disputed. Esoteric Christianity, from the Theosophical Society to Rudolf Steiner, again distinguishes the Christ from Jesus; its holders call this the title's inner sense, the churches the separation 1 John opposed."
+        },
+        {
+            "slug": "ekklesia",
+            "native": "ἐκκλησία",
+            "translit": "ekklēsia",
+            "lang": "greek",
+            "literal": "assembly — from ek-kalein, to call out: the citizens summoned to meet",
+            "coined": "Classical civic Greek, the name of the citizen assembly of Athens; taken up by the Septuagint for the qahal, the assembly of Israel; used by Paul in the 50s CE of the gatherings of believers, and in Colossians and Ephesians of the whole church. In the Gospels it occurs in only two verses, both in Matthew (16:18 and 18:17).",
+            "fight": "Is the ekklesia the gathered people of God or the visible institution bearing the name? When William Tyndale's New Testament (Worms, 1526) rendered it congregation, Thomas More's Dialogue Concerning Heresies (1529) charged him with translating the church out of the Bible — and by the same method the priest into a senior, penance into repentance, charity into love. Tyndale's Answer (1531) replied that the Greek meant the assembly of believers, not the clergy; More's Confutation followed at enormous length. The King James translators settled it for English: the third of their 1604 rules kept church, not congregation.",
+            "wieldedBy": "Thomas More and the defenders of the visible, hierarchical church; and the King James translators, bound by rule to keep it",
+            "againstWhom": "Tyndale and the Reformers' congregation; and every party since the Donatists that has located the true assembly somewhere other than the institution bearing its name",
+            "counterpart": "συναγωγή (synagōgē, gathering) — the Septuagint's other word for Israel's assembly; church and synagogue divided them, though James 2:2 uses it of a Christian gathering",
+            "aftermath": "English church, like German Kirche, comes on the usual etymology not from it but from kyriakon, the Lord's house; the Romance languages kept ecclesia. The sermon on the called-out ones presses a root sense that ordinary Greek, so far as the evidence shows, no longer carried. Alfred Loisy's remark (L'Évangile et l'Église, 1902) that Jesus announced the kingdom and what came was the church, meant as a defense, is still quoted as an indictment."
+        },
+        {
+            "slug": "mysterion",
+            "native": "μυστήριον",
+            "translit": "mystērion",
+            "lang": "greek",
+            "literal": "a secret, a rite of initiation — from myein, to close the lips or eyes",
+            "coined": "Classical religious Greek, above all the mysteries of Eleusis; the Septuagint's word for the revealed secret in Daniel 2, where it renders the Aramaic raz; in the Gospels at Mark 4:11 and its parallels, and about twenty times in the Pauline letters, where the mystery is God's purpose long hidden and now disclosed. Ephesians 3:9, in the critical text, joins it to oikonomia.",
+            "fight": "The first fight was with the cults whose word it was: Justin Martyr (First Apology 66) explained the likeness between the Eucharist and the bread and cup of the Mithraic rites as demonic imitation, and Clement of Alexandria's Exhortation to the Greeks mocked the mysteries of Eleusis and then claimed their vocabulary of initiation for Christ. The second was modern: the history-of-religions school (Richard Reitzenstein's Die hellenistischen Mysterienreligionen, 1910) argued that Paul's baptism and supper were shaped by the cults, and scholars such as Arthur Darby Nock answered that the parallels were later and thinner than claimed.",
+            "wieldedBy": "Paul, for the hidden purpose of God disclosed in Christ; the Greek fathers, for the rites themselves; Clement of Alexandria against the cults",
+            "againstWhom": "The pagan mysteries, whose language it took over and turned against them; in the modern dispute, the derivation of Christian rites from the cults",
+            "counterpart": "sacramentum — the Latin rendering, beside the loanword mysterium, which moved the word from the language of secrecy to that of oaths",
+            "aftermath": "The Orthodox kept the word, and speak of the holy mysteries; they count seven — a number that entered Greek usage under Latin influence in the late 13th century, on the usual account — but hold the count less strictly than the West. Odo Casel's Das christliche Kultmysterium (1932) brought the word back into Catholic liturgical thought, and the Second Vatican Council's language of the paschal mystery is often traced in part to him."
+        },
+        {
+            "slug": "sacramentum",
+            "native": "sacramentum",
+            "translit": "sacramentum",
+            "lang": "latin",
+            "literal": "a sacred binding — from sacrare, to consecrate: the soldier's oath; in old Roman law, a staked deposit",
+            "coined": "Legal and military Latin. Pliny's letter to Trajan (Epistles 10.96, c. 112) reports that the Christians bound themselves by a sacramentum to commit no crime; Tertullian (c. 200) made it a theological term, and the Old Latin Bible used it for mysterion — whether he followed that usage or helped set it is argued. The Vulgate keeps it at Ephesians 5:32, sacramentum hoc magnum est.",
+            "fight": "The translation made a theology. A Greek mystery is hidden and disclosed; a Latin sacramentum binds — Tertullian likened baptism to the soldier's oath — and the West built its account of the rites on it: Augustine's sacred sign, Peter Lombard's seven (Sentences IV, mid-12th century), taught at Florence in 1439 and defined at Trent in 1547. Because the Vulgate rendered Ephesians 5:32 as sacramentum, marriage could be argued a sacrament; Luther's The Babylonian Captivity of the Church (1520) answered that the Greek said only mystery, and cut the seven to three, and strictly to two.",
+            "wieldedBy": "Tertullian, Augustine, the scholastics from Peter Lombard to Thomas Aquinas, and the Councils of Florence and Trent",
+            "againstWhom": "The Reformers, who kept the word and cut the number; and Zwingli, who read it in its Roman sense as a pledge, not a channel of grace (1525)",
+            "counterpart": "μυστήριον (mystērion) — the Greek it rendered, and the word the Eastern churches kept",
+            "aftermath": "Seven sacraments remain Catholic dogma; most Protestant churches keep two, baptism and the Lord's Supper, and many Baptists prefer ordinance precisely to escape the word's freight. The Second Vatican Council stretched it back toward Paul, calling the church itself a kind of sacrament in Christ (Lumen Gentium 1, 1964) — the Latin word, after seventeen centuries and more, edging back toward the Greek one it had replaced."
         }
     ],
     "intro": [

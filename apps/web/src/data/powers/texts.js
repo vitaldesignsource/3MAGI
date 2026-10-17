@@ -55,6 +55,18 @@ export default {
             access: 'VanderKam’s critical edition and translation; canonical scripture in Ethiopia, where the Ge‘ez text is read as such.',
         },
         {
+            slug: 'ascension-of-isaiah', name: 'The Ascension of Isaiah', native: null, lang: null,
+            year: 120,
+            dating: 'Late 1st to 2nd century CE, in two parts that may differ in date; complete only in Ge‘ez',
+            tradition: 'Early Christian apocalyptic',
+            exposition: [
+                'Two works sewn into one. In the first five chapters King Manasseh, given over to Beliar, has Isaiah sawn in half with a wooden saw on a false prophet’s accusation. In the last six an angel takes the prophet up past the firmament, where Samael’s hosts fight among themselves, through heavens of rising glory to the seventh, where the Beloved and the angel of the Holy Spirit worship the Great Glory.',
+                'The Beloved then comes down through the same heavens in the likeness of each heaven’s angels, unknown to the powers; he is born, crucified and goes down to the dead, and on the way back, undisguised, is worshipped by angels asking how he passed them unrecognized. Older scholarship read the martyrdom as a Jewish legend Christianized; Norelli reads both halves as Christian, and the vision as the earlier.',
+            ],
+            carries: 'Seven heavens graded by glory, the right hand above the left; Samael and Beliar, not always kept apart; the redeemer’s descent in disguise.',
+            access: 'The Corpus Christianorum critical edition (1995), with Norelli’s commentary; Knibb’s English in Charlesworth’s Old Testament Pseudepigrapha. Laurence first printed the Ge‘ez in 1819.',
+        },
+        {
             slug: 'apocryphon-of-john', name: 'The Apocryphon of John', native: null, lang: null,
             year: 150,
             dating: 'Composed 2nd century CE; the Nag Hammadi copies are 4th-century Coptic',
@@ -139,6 +151,30 @@ export default {
             access: 'Schmidt–MacDermot edition and translation (1978); the Askew Codex is in the British Library.',
         },
         {
+            slug: 'sefer-yetzirah', name: 'Sefer Yetzirah', native: 'ספר יצירה', lang: 'hebrew',
+            year: 400,
+            dating: 'Most scholars place it in the 3rd–6th centuries CE, a minority in the 9th, and the tradition gives it to Abraham; the first firm evidence is 10th-century commentary',
+            tradition: 'Jewish (pre-kabbalistic cosmology)',
+            exposition: [
+                'A few pages that make a world out of grammar. God engraves creation by thirty-two paths of wisdom: ten sefirot — not yet attributes of God but primordial numbers, depths of beginning and end, good and evil, above, below and the four directions — and twenty-two letters: three mothers for air, water and fire, seven doubles for the planets and the days, twelve simples for the signs and the months.',
+                'Angels barely appear — one passage forms the throne and its attendants out of fire — and that is why it belongs here: its powers are not persons to be summoned but the signs by which things were made. The Talmud tells of rabbis who made a calf by the laws of formation, and of Rava, who made a man that did not answer; Rashi read this book into the story.',
+            ],
+            carries: 'The sefirot and letters as instruments of creation; the 231 gates; the letters’ elements, planets and signs, which the Golden Dawn rearranged on the paths of its Tree.',
+            access: 'Hayman’s edition (2004), with the recensions in parallel; Kaplan’s translation; Westcott’s, which the Golden Dawn read. Postel’s Latin (Paris, 1552) preceded the first Hebrew printing, Mantua 1562.',
+        },
+        {
+            slug: 'cologne-mani-codex', name: 'The Cologne Mani Codex', native: 'Περὶ τῆς γέννης τοῦ σώματος αὐτοῦ', lang: 'greek',
+            year: 400,
+            dating: 'A Greek parchment of the 4th or 5th century, dated by its hand; probably translated from an Aramaic compilation of the testimony of Mani’s first disciples',
+            tradition: 'Manichaean',
+            exposition: [
+                'The smallest book on this shelf: a parchment codex about four and a half centimetres by under four, from an unrecorded findspot in Egypt. Under the running title On the Origin of His Body it assembles a life of Mani from excerpts, each under a disciple’s name: the boy raised among baptists who washed themselves and their food, and the heavenly Twin whose revelation took him out of them.',
+                'Before it, Mani’s youth was known chiefly from Islamic chronographers and Christian polemic. The Codex gives his own church’s account, sets him in a line of ascended forefathers — Adam, Sethel, Enosh, Shem and Enoch, whose apocalypses it quotes — and names the baptists’ founder Alchasaios, whom most scholars take for Elchasai, the Jewish-Christian prophet the church fathers denounced. How those baptists stand to the Mandaeans is still argued.',
+            ],
+            carries: 'The Twin, Mani’s heavenly double — half guardian angel, half second self; the forefathers’ apocalypses; an inside witness to the baptists who raised him.',
+            access: 'Koenen and Römer’s critical edition (1988), after instalments in the Zeitschrift für Papyrologie und Epigraphik; Cameron and Dewey’s English of the part then published (1979).',
+        },
+        {
             slug: 'celestial-hierarchy', name: 'De caelesti hierarchia', native: 'Περὶ τῆς οὐρανίας ἱεραρχίας', lang: 'greek',
             year: 500,
             dating: 'Around 500 CE; first cited by Severus of Antioch between about 518 and 528, and argued over at Constantinople in 532. The author writes as Paul’s convert of Acts 17, first century',
@@ -149,6 +185,18 @@ export default {
             ],
             carries: 'Seraphim to angels in nine ranks; the theology of mediated light; the vocabulary of hierarchy itself.',
             access: 'Luibheid’s Classics of Western Spirituality translation; Eriugena’s ninth-century Latin version is what the medieval West actually read.',
+        },
+        {
+            slug: 'ginza-rabba', name: 'The Ginza Rabba', native: null, lang: null,
+            year: 650,
+            dating: 'A compilation of unequal age: its polemic against Islam puts the final redaction in the 7th century or later, while some of its hymns are argued to be centuries older',
+            tradition: 'Mandaean',
+            exposition: [
+                'The Great Treasure is two books bound head to tail. The Right Ginza, in eighteen tractates, gives the making of the worlds, the descents of Manda d-Hayyi and Hibil Ziwa, the body Ptahil fashions that will not stand until a soul is sent from above, moral instruction, and polemic against Jews, Christians and Muslims. The Left, three books on the soul’s rise past the watch-houses, belongs to the dead.',
+                'It is the one book on this shelf written by gnostics for a community that still uses it, not dug from a jar or rebuilt from enemies’ quotations — and so it reaches us in late copies, with translations resting mainly on Petermann’s printing of 1867. Its colophons, headed in the Left Ginza by a woman, Šlama daughter of Qidra, are argued to reach back to the second or third century.',
+            ],
+            carries: 'Hayyi Rabbi and the uthras; Abatur at the scales; Ptahil the inadequate demiurge; Ruha, mother of the planets and signs; the watch-houses on the soul’s way home.',
+            access: 'Lidzbarski’s German translation (1925) remains the standard; complete English versions have appeared only in this century, beginning with Carlos Gelbert’s (2011).',
         },
         {
             slug: 'sefer-hekhalot', name: 'Sefer Hekhalot (3 Enoch)', native: 'ספר היכלות', lang: 'hebrew',
@@ -211,6 +259,18 @@ export default {
             access: 'Hedegård’s critical edition (2002); Peterson’s English translation.',
         },
         {
+            slug: 'zohar', name: 'The Zohar', native: 'ספר הזוהר', lang: 'hebrew',
+            year: 1280,
+            dating: 'Circulating in Castile from the 1280s; scholarship gives the main body to Moses de León and a circle around him, the tradition to Shimon bar Yochai in the 2nd century',
+            tradition: 'Jewish (Castilian Kabbalah)',
+            exposition: [
+                'A mystical midrash on the Torah in archaizing Aramaic: Shimon bar Yochai and his companions wander Galilee opening the hidden sense of Scripture — the sefirot as the limbs and countenance of the divine, the Shekhinah in exile, a union above that conduct below can hasten or delay. By the sixteenth century much of the Jewish world set it beside the Bible and the Talmud as a third canonical book.',
+                'Its gift to this portal is the left hand. The Zohar gives impurity a structure that mirrors holiness — the sitra aḥra, the other side, with its qelippot, husks round the holy kernel — and sets Samael and his consort over it: Lilith, where the text names her. Isaac ha-Kohen had paired them a generation before; the Zohar made the pairing canonical, and the Lurianic schools built on it.',
+            ],
+            carries: 'The sefirot as the divine structure; the sitra aḥra and its husks; Samael and Lilith as rulers of the other side; the Shekhinah in exile.',
+            access: 'The Pritzker Edition (2004–2017): nine volumes by Daniel Matt, three by Nathan Wolski and Joel Hecker. The occult revival read Mathers’ Kabbalah Unveiled (1887), from Knorr von Rosenroth’s Latin.',
+        },
+        {
             slug: 'agrippa-three-books', name: 'Three Books of Occult Philosophy', native: 'De occulta philosophia libri tres', lang: 'latin',
             year: 1533,
             dating: 'Drafted 1510; published in full 1533',
@@ -221,6 +281,18 @@ export default {
             ],
             carries: 'The three worlds; the planetary and angelic tables; the Renaissance synthesis of Kabbalah, Hermetism and Neoplatonism.',
             access: 'Tyson’s annotated edition of the 1651 Freake translation; Perrone Compagni’s Latin critical edition.',
+        },
+        {
+            slug: 'arbatel', name: 'Arbatel of Magic', native: 'Arbatel de magia veterum', lang: 'latin',
+            year: 1575,
+            dating: 'Printed anonymously at Basel by Pietro Perna in 1575, probably edited by Theodor Zwinger; the author is unknown, though Joseph Peterson has proposed Jacques Gohory',
+            tradition: 'Paracelsian Christian magic',
+            exposition: [
+                'It promises nine books on the magic of the ancients — Olympic, Hesiodic, Sibylline, Pythagorean and Hermetic among them, and last the prophetic magic that depends on the Word of God alone — and delivers one: the Isagoge, forty-nine aphorisms in seven septenaries. Much of it is counsel rather than technique, and the magic it describes is a gift God grants the pious, not a power wrung from spirits.',
+                'The third septenary made it famous: the seven Olympic spirits — Aratron, Bethor, Phaleg, Och, Hagith, Ophiel and Phul — who govern the universe’s provinces under God and rule the world in turn for 490 years apiece; by the book’s reckoning Hagith’s age ended in 1900. Weigel, Arndt, Khunrath, Fludd and Adam Haslmayr are counted among those it inspired, and it may be the first book to set theosophia beside anthroposophia.',
+            ],
+            carries: 'The seven Olympic spirits and their provinces; a planetary government of history in ages of 490 years; magic as a grace given to the pious.',
+            access: 'Peterson’s Latin–English edition (2009); Robert Turner’s English of 1655, bound with the pseudo-Agrippan Fourth Book and the Heptameron, is the one the English tradition read.',
         },
         {
             slug: 'dee-diaries', name: 'The Angelic Diaries of John Dee', native: null, lang: null,
