@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
 <title>Dat Rosa Mel Apibus</title>
-<desc>After the title vignette of Summum Bonum ([Frankfurt], 1629): a rose of seven circles of seven petals on a cross-shaped stem, a bee alighted on it and others in flight; on the left a grape trellis with two spiders’ webs of seven rays; on the right four beehives; above, the motto Dat Rosa Mel Apibus.</desc>
+<desc>After the title vignette of Summum Bonum ([Frankfurt], 1629): a rose of seven circles of seven petals over a thorny, cross-shaped stem, a bee alighted on it and others in flight; on the left a grape trellis with two spiders’ webs of seven rays; on the right four beehives; above, the motto Dat Rosa Mel Apibus.</desc>
 <defs>
 <linearGradient id="pg0" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#1f170c"/><stop offset="0.8" stop-color="#3a2a14"/><stop offset="0.9" stop-color="#9a7a42"/><stop offset="0.97" stop-color="#d2b475"/><stop offset="1" stop-color="#ecd9ae"/></linearGradient>
 <linearGradient id="pg1" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#1f170c"/><stop offset="0.77" stop-color="#3a2a14"/><stop offset="0.89" stop-color="#9a7a42"/><stop offset="0.97" stop-color="#d2b475"/><stop offset="1" stop-color="#ecd9ae"/></linearGradient>
@@ -18,7 +18,9 @@
 <g id="bee"><ellipse cx="-1" cy="-6.4" rx="7.4" ry="3" transform="rotate(-24 -1 -6.4)" fill="#ecd9ae" fill-opacity=".35" stroke="#ecd9ae" stroke-width=".8"/><ellipse cx="-1" cy="6.4" rx="7.4" ry="3" transform="rotate(24 -1 6.4)" fill="#ecd9ae" fill-opacity=".35" stroke="#ecd9ae" stroke-width=".8"/><ellipse cx="-6" cy="0" rx="7" ry="4" fill="#c9a86a" stroke="#1d150b" stroke-width=".8"/><path d="M -3.6 -3.8 Q -2.6 0 -3.6 3.8 M -7 -3.8 Q -6 0 -7 3.8 M -10.2 -2.7 Q -9.5 0 -10.2 2.7" fill="none" stroke="#1d150b" stroke-width="1.2"/><circle cx="2.4" cy="0" r="3.2" fill="#a8864c" stroke="#1d150b" stroke-width=".8"/><circle cx="6.8" cy="0" r="2.4" fill="#8a6c38" stroke="#1d150b" stroke-width=".8"/><path d="M 8.6 -1 Q 11.2 -2.4 12.4 -4.8 M 8.6 1 Q 11.2 2.4 12.4 4.8" fill="none" stroke="#c9a86a" stroke-width=".8"/></g>
 <g id="beeshade" fill="#0d0b0a"><ellipse cx="-1" cy="-6.4" rx="9" ry="4.4" transform="rotate(-24 -1 -6.4)"/><ellipse cx="-1" cy="6.4" rx="9" ry="4.4" transform="rotate(24 -1 6.4)"/><ellipse cx="-1" cy="0" rx="13" ry="5.6"/></g>
 <g id="skep"><path d="M -12.5 0 L -12.5 -1.29 L -12.48 -2.58 L -12.46 -3.88 L -12.41 -5.17 L -12.35 -6.46 L -12.27 -7.75 L -12.17 -9.04 L -12.04 -10.33 L -11.89 -11.63 L -11.71 -12.92 L -11.5 -14.21 L -11.25 -15.5 L -10.97 -16.79 L -10.65 -18.08 L -10.28 -19.38 L -9.86 -20.67 L -9.38 -21.96 L -8.83 -23.25 L -8.19 -24.54 L -7.44 -25.83 L -6.55 -27.13 L -5.43 -28.42 L -3.9 -29.71 L 0 -31 L 3.9 -29.71 L 5.43 -28.42 L 6.55 -27.13 L 7.44 -25.83 L 8.19 -24.54 L 8.83 -23.25 L 9.38 -21.96 L 9.86 -20.67 L 10.28 -19.38 L 10.65 -18.08 L 10.97 -16.79 L 11.25 -15.5 L 11.5 -14.21 L 11.71 -12.92 L 11.89 -11.63 L 12.04 -10.33 L 12.17 -9.04 L 12.27 -7.75 L 12.35 -6.46 L 12.41 -5.17 L 12.46 -3.88 L 12.48 -2.58 L 12.5 -1.29 L 12.5 0 Z" fill="url(#sk)" stroke="#1d150b" stroke-width="1" stroke-linejoin="round"/><path d="M -12.07 -3.4 Q 0 -1.8 12.07 -3.4 M -11.93 -6.8 Q 0 -5.2 11.93 -6.8 M -11.66 -10.2 Q 0 -8.6 11.66 -10.2 M -11.2 -13.6 Q 0 -12 11.2 -13.6 M -10.52 -17 Q 0 -15.4 10.52 -17 M -9.55 -20.4 Q 0 -18.8 9.55 -20.4 M -8.17 -23.8 Q 0 -22.2 8.17 -23.8 M -6.09 -27.2 Q 0 -25.6 6.09 -27.2 " fill="none" stroke="#3a2a14" stroke-width=".85"/><path d="M -3.2 0 V -2.6 A 3.2 3.2 0 0 1 3.2 -2.6 V 0 Z" fill="#0d0b0a" stroke="#1d150b" stroke-width=".6"/></g>
+<path id="thorn" d="M 0 -4 C 2.6 -3.4 5.6 -1.2 8.4 3.4 C 5.4 1.6 2.6 1.2 0 3.2 Z" fill="#b8975c" stroke="#1d150b" stroke-width=".9" stroke-linejoin="round"/>
 </defs>
+<g transform="translate(0 6)">
 <text font-family="Georgia, 'Times New Roman', serif" font-size="24" letter-spacing="2.6" fill="#c9a86a"><textPath href="#motto" startOffset="50%" text-anchor="middle">DAT ROSA MEL APIBUS</textPath></text>
 <path d="M 8 352 H 392" stroke="#c9a86a" stroke-width="1.6" fill="none"/>
 <path d="M 101 352 L 99 347 M 104 352 L 104 345 M 107 352 L 109 347 M 119 352 L 117 347 M 122 352 L 122 345 M 125 352 L 127 347 M 143 352 L 141 347 M 146 352 L 146 345 M 149 352 L 151 347 M 163 352 L 161 347 M 166 352 L 166 345 M 169 352 L 171 347 M 231 352 L 229 347 M 234 352 L 234 345 M 237 352 L 239 347 M 251 352 L 249 347 M 254 352 L 254 345 M 257 352 L 259 347 M 273 352 L 271 347 M 276 352 L 276 345 M 279 352 L 281 347 " stroke="#a8864c" stroke-width="1" stroke-linecap="round" fill="none" opacity=".8"/>
@@ -33,10 +35,22 @@
 <g transform="translate(70 208) rotate(20)"><path d="M 0 2.4 C -0.91 4.3 -2.66 5.99 -4.58 6.31 C -4.87 4.38 -7.45 4.3 -6.28 2.04 C -8.55 0.9 -7.69 -0.81 -8.75 -2.84 C -6.69 -3.86 -6.39 -5.75 -3.88 -5.34 C -3.5 -7.86 -1.75 -8.22 0 -10 C 1.75 -8.22 3.5 -7.86 3.88 -5.34 C 6.39 -5.75 6.69 -3.86 8.75 -2.84 C 7.69 -0.81 8.55 0.9 6.28 2.04 C 7.45 4.3 4.87 4.38 4.58 6.31 C 2.66 5.99 0.91 4.3 0 2.4 Z" fill="#9a7a42" stroke="#1d150b" stroke-width=".8" stroke-linejoin="round"/><path d="M 0 1.5 L 0 -7.8 M 0 1.5 L 7.42 -2.41 M 0 1.5 L 4.58 6.31 M 0 1.5 L -4.58 6.31 M 0 1.5 L -7.42 -2.41 " stroke="#3a2a14" stroke-width=".6" fill="none"/></g>
 <g transform="translate(100 230) rotate(60)"><path d="M 0 2.16 C -0.82 3.87 -2.4 5.39 -4.13 5.68 C -4.38 3.95 -6.7 3.87 -5.65 1.84 C -7.7 0.81 -6.92 -0.73 -7.87 -2.56 C -6.02 -3.48 -5.75 -5.18 -3.49 -4.81 C -3.15 -7.07 -1.57 -7.39 0 -9 C 1.57 -7.39 3.15 -7.07 3.49 -4.81 C 5.75 -5.18 6.02 -3.48 7.87 -2.56 C 6.92 -0.73 7.7 0.81 5.65 1.84 C 6.7 3.87 4.38 3.95 4.13 5.68 C 2.4 5.39 0.82 3.87 0 2.16 Z" fill="#9a7a42" stroke="#1d150b" stroke-width=".8" stroke-linejoin="round"/><path d="M 0 1.35 L 0 -7.02 M 0 1.35 L 6.68 -2.17 M 0 1.35 L 4.13 5.68 M 0 1.35 L -4.13 5.68 M 0 1.35 L -6.68 -2.17 " stroke="#3a2a14" stroke-width=".6" fill="none"/></g>
 <path d="M 84 214 V 226" stroke="#c9a86a" stroke-width="1"/><g fill="#b08f55" stroke="#1d150b" stroke-width=".7"><circle cx="76.2" cy="229" r="2.7"/><circle cx="81.4" cy="229" r="2.7"/><circle cx="86.6" cy="229" r="2.7"/><circle cx="91.8" cy="229" r="2.7"/><circle cx="78.8" cy="233.7" r="2.7"/><circle cx="84" cy="233.7" r="2.7"/><circle cx="89.2" cy="233.7" r="2.7"/><circle cx="78.8" cy="238.4" r="2.7"/><circle cx="84" cy="238.4" r="2.7"/><circle cx="89.2" cy="238.4" r="2.7"/><circle cx="81.4" cy="243.1" r="2.7"/><circle cx="86.6" cy="243.1" r="2.7"/><circle cx="84" cy="247.8" r="2.7"/></g>
-<use href="#skep" transform="translate(300 352) scale(1)"/>
-<use href="#skep" transform="translate(326 352) scale(1)"/>
-<use href="#skep" transform="translate(352 352) scale(1)"/>
-<use href="#skep" transform="translate(378 352) scale(1)"/>
+<use href="#skep" transform="translate(276.5 352) scale(1.3)"/>
+<use href="#skep" transform="translate(309 352) scale(1.3)"/>
+<use href="#skep" transform="translate(341.5 352) scale(1.3)"/>
+<use href="#skep" transform="translate(374 352) scale(1.3)"/>
+<use href="#thorn" transform="translate(203.51 284) rotate(-8)"/>
+<use href="#thorn" transform="translate(196.33 300) scale(-1 1) rotate(-8)"/>
+<use href="#thorn" transform="translate(203.86 318) rotate(-8)"/>
+<use href="#thorn" transform="translate(195.98 334) scale(-1 1) rotate(-8)"/>
+<use href="#thorn" transform="translate(197.00 234) scale(-1 1) rotate(-8)"/>
+<use href="#thorn" transform="translate(203.10 244) rotate(-8)"/>
+<use href="#thorn" transform="translate(151 259.57) rotate(-100)"/>
+<use href="#thorn" transform="translate(177 259.03) rotate(-100)"/>
+<use href="#thorn" transform="translate(223 259.03) scale(-1 1) rotate(-100)"/>
+<use href="#thorn" transform="translate(249 259.57) scale(-1 1) rotate(-100)"/>
+<use href="#thorn" transform="translate(164 264.70) scale(1 -1) rotate(-100)"/>
+<use href="#thorn" transform="translate(236 264.70) scale(-1 -1) rotate(-100)"/>
 <path d="M 195.2 352 L 196.6 214 L 203.4 214 L 204.8 352 Z" fill="url(#st)" stroke="#1d150b" stroke-width="1.1"/>
 <path d="M 140 259.2 Q 170 258.2 198 258 L 202 258 Q 230 258.2 260 259.2 L 260 264.8 Q 230 265.8 202 266 L 198 266 Q 170 265.8 140 264.8 Z" fill="url(#sth)" stroke="#1d150b" stroke-width="1.1"/>
 <path d="M 197.8 266 L 197 351 M 198 258 L 198 216" stroke="#ecd9ae" stroke-opacity=".7" stroke-width=".9" fill="none"/>
@@ -61,5 +75,7 @@
 <use href="#bee" transform="translate(112 206) rotate(-42) scale(1.25)"/>
 <use href="#bee" transform="translate(322 112) rotate(160) scale(1.25)"/>
 <use href="#bee" transform="translate(340 200) rotate(-160) scale(1.25)"/>
-<use href="#bee" transform="translate(318 290) rotate(-128) scale(1.25)"/>
+<use href="#bee" transform="translate(318 282) rotate(-128) scale(1.25)"/>
+
+</g>
 </svg>
