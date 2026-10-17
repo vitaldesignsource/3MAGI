@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+<title>Luther’s seal, the Luther rose</title>
+<desc>A black cross in a heart of its natural red colour; the heart set in the middle of a white rose of five petals; the rose on a sky-blue field; a gold ring round the field. Tinctures as Luther gives them in his letter to Lazarus Spengler, 8 July 1530.</desc>
+<defs>
+<linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ecd9ae"/><stop offset=".5" stop-color="#c9a86a"/><stop offset="1" stop-color="#8f6d37"/></linearGradient>
+<radialGradient id="s" cx="200" cy="190" r="178" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#9ccaee"/><stop offset=".7" stop-color="#77ade0"/><stop offset="1" stop-color="#5a92c6"/></radialGradient>
+<radialGradient id="w" cx="200" cy="200" r="160" gradientUnits="userSpaceOnUse"><stop offset=".3" stop-color="#d9d2c4"/><stop offset=".62" stop-color="#f3eee4"/><stop offset=".9" stop-color="#fffdf8"/></radialGradient>
+<radialGradient id="h" cx="172" cy="158" r="150" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#d6463f"/><stop offset=".5" stop-color="#b1242a"/><stop offset="1" stop-color="#7f141b"/></radialGradient>
+</defs>
+<circle cx="200" cy="200" r="183" fill="none" stroke="url(#g)" stroke-width="18"/>
+<circle cx="200" cy="200" r="188.6" fill="none" stroke="#f6e9c8" stroke-opacity=".6" stroke-width="1"/>
+<circle cx="200" cy="200" r="192" fill="none" stroke="#4a361b" stroke-width="1.6"/>
+<circle cx="200" cy="200" r="174" fill="url(#s)" stroke="#4a361b" stroke-width="1.6"/>
+<path d="M132.02 106.43A68 68 0 1 1 267.98 106.43A68 68 0 1 1 310 235.74A68 68 0 1 1 200 315.66A68 68 0 1 1 90 235.74A68 68 0 1 1 132.02 106.43Z" fill="#2c4f73" fill-opacity=".28" transform="translate(2 4)"/>
+<path d="M132.02 106.43A68 68 0 1 1 267.98 106.43A68 68 0 1 1 310 235.74A68 68 0 1 1 200 315.66A68 68 0 1 1 90 235.74A68 68 0 1 1 132.02 106.43Z" fill="url(#w)" stroke="#2a2119" stroke-width="2.4" stroke-linejoin="round"/>
+<path d="M267.39 107.24L225.86 164.4M309.05 235.43L241.85 213.6M200 314.66L200 244M90.95 235.43L158.15 213.6M132.61 107.24L174.14 164.4" stroke="#b9b0a0" stroke-opacity=".55" stroke-width="7" stroke-linecap="round" fill="none"/>
+<path d="M267.39 107.24L225.86 164.4M309.05 235.43L241.85 213.6M200 314.66L200 244M90.95 235.43L158.15 213.6M132.61 107.24L174.14 164.4" stroke="#2a2119" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+<path d="M200 290C176 268 124 226 124 178C124 145 146 123 171 123C188 123 198 133 200 143C202 133 212 123 229 123C254 123 276 145 276 178C276 226 224 268 200 290Z" fill="#4d4436" fill-opacity=".3" transform="translate(2 4)"/>
+<path d="M200 290C176 268 124 226 124 178C124 145 146 123 171 123C188 123 198 133 200 143C202 133 212 123 229 123C254 123 276 145 276 178C276 226 224 268 200 290Z" fill="url(#h)" stroke="#2a1512" stroke-width="2.2" stroke-linejoin="round"/>
+<path d="M192 152h16v26h31v16h-31v68h-16v-68h-31v-16h31z" fill="#141010"/>
+</svg>
