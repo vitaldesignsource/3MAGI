@@ -360,6 +360,13 @@ function GroupPortal({ portal }) {
     if (!portal) return null;
     return (
         <Link className="edu-hall-card pw-door ch-group-portal" to={portal.to}>
+            {portal.emblems?.length > 0 && (
+                <span className="ch-group-portal-signs" aria-hidden="true">
+                    {portal.emblems.map((src) => (
+                        <img key={src} src={`/media/${src}`} alt="" width="44" height="44" loading="lazy" decoding="async" />
+                    ))}
+                </span>
+            )}
             <span className="pw-door-body">
                 <span className="ch-door-kicker">{portal.kicker}</span>
                 <h3>{portal.title}</h3>

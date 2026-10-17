@@ -11193,6 +11193,9 @@ h3 {
 .ch-page .ch-rc-book-title,
 .ch-page .ch-rc-sign-about,
 .ch-page .ch-rc-sign-source,
+.ch-page .ch-rc-map-note,
+.ch-page .ch-rc-map-name,
+.ch-page .ch-rc-map-active,
 .ch-page .ch-rc-grades td,
 .ch-page .ch-rc-grades-note,
 .ch-page .ch-rc-book-note,
@@ -12307,6 +12310,13 @@ figure.ch-gallery-card { margin: 0; }
   border-color: rgba(209, 173, 104, 0.42);
 }
 .ch-group-portal:hover { border-color: rgba(209, 173, 104, 0.7); }
+.ch-group-portal-signs {
+  display: flex; justify-content: center; gap: 0.9rem; flex-wrap: wrap;
+  padding: 1.2rem 1rem 0.2rem;
+}
+.ch-group-portal-signs img { width: 44px; height: 44px; object-fit: contain; opacity: 0.92; transition: transform 300ms ease, opacity 300ms ease; }
+.ch-group-portal:hover .ch-group-portal-signs img { opacity: 1; transform: translateY(-2px); }
+@media (prefers-reduced-motion: reduce) { .ch-group-portal:hover .ch-group-portal-signs img { transform: none; } }
 .ch-group-portal .edu-hall-enter { color: #d1ad68; }
 
 /* --- the three books --- */
@@ -12629,6 +12639,75 @@ figure.ch-gallery-card { margin: 0; }
 }
 @media (max-width: 1100px) { .ch-rc-signs { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 680px) { .ch-rc-signs { grid-template-columns: 1fr; } }
+
+/* --- where it happened: claimed in gold and dashed, documented in blue ------ */
+.ch-rc-map { margin: 1.8rem 0 0; }
+.ch-rc-map-figure { margin: 0; border: 1px solid rgba(201, 168, 106, 0.16); border-radius: 3px; overflow: hidden; background: #0b0a09; }
+.ch-rc-map-svg { display: block; width: 100%; height: auto; }
+.ch-rc-map-svg .rcm-sea { fill: #0b0d10; }
+.ch-rc-map-svg .rcm-land { fill: #1c1813; stroke: rgba(201, 168, 106, 0.22); stroke-width: 0.8; }
+.ch-rc-map-svg .rcm-route { fill: none; stroke: #c9a86a; stroke-width: 2; stroke-dasharray: 7 6; stroke-linecap: round; opacity: 0.85; }
+.ch-rc-map-svg .rcm-dot { fill: #c9a86a; stroke: #0b0a09; stroke-width: 1.5; }
+.ch-rc-map-svg .rcm-ring { fill: rgba(11, 10, 9, 0.6); stroke: #c9a86a; stroke-width: 2; stroke-dasharray: 3 2.5; }
+.ch-rc-map-svg .rcm-region { fill: rgba(201, 168, 106, 0.06); stroke: #c9a86a; stroke-width: 1.4; stroke-dasharray: 4 4; }
+.ch-rc-map-svg .rcm-num-bg { fill: #8fa8bd; stroke: #0b0a09; stroke-width: 1.5; }
+.ch-rc-map-svg .rcm-leader { stroke: rgba(201, 168, 106, 0.7); stroke-width: 1; }
+.ch-rc-map-svg .rcm-leader.is-doc { stroke: rgba(143, 168, 189, 0.8); }
+.ch-rc-map-svg .rcm-true { fill: #c9a86a; }
+.ch-rc-map-svg .rcm-true.is-doc { fill: #8fa8bd; }
+.ch-rc-map-svg .rcm-num { font: 600 10px Georgia, 'Times New Roman', serif; fill: #0b0a09; pointer-events: none; }
+.ch-rc-map-svg .rcm-label {
+  font: italic 13px Georgia, 'Times New Roman', serif; fill: #ecd9ae;
+  paint-order: stroke; stroke: #0b0a09; stroke-width: 3.5px; stroke-linejoin: round;
+}
+.ch-rc-map-svg .rcm-pt { cursor: pointer; outline: none; }
+.ch-rc-map-svg .rcm-pt:focus-visible .rcm-num-bg,
+.ch-rc-map-svg .rcm-pt:focus-visible .rcm-dot,
+.ch-rc-map-svg .rcm-pt:focus-visible .rcm-ring { stroke: #ecd9ae; stroke-width: 2.5; }
+.ch-rc-map-svg .rcm-pt.is-active .rcm-num-bg { fill: #ecd9ae; }
+.ch-rc-map-svg .rcm-pt.is-active .rcm-dot, .ch-rc-map-svg .rcm-pt.is-active .rcm-ring { fill: #ecd9ae; }
+.ch-rc-map-svg .rcm-pt.is-active .rcm-region { fill: rgba(201, 168, 106, 0.18); }
+.ch-rc-map-svg .rcm-legend-bg { fill: rgba(11, 10, 9, 0.82); stroke: rgba(201, 168, 106, 0.2); }
+.ch-rc-map-svg .rcm-legend-t { font: 12px Georgia, 'Times New Roman', serif; fill: rgba(232, 224, 208, 0.85); }
+.ch-rc-map-active {
+  padding: 0.75rem 1rem; min-height: 3.2rem;
+  border-top: 1px solid rgba(201, 168, 106, 0.14);
+  font-size: 0.9rem; line-height: 1.6; color: rgba(232, 224, 208, 0.85);
+}
+.ch-rc-map-active strong { color: #ecd9ae; font-weight: 500; }
+.ch-rc-map-hint { color: rgba(222, 212, 196, 0.5); font-style: italic; }
+.ch-rc-map-year { color: #c9a86a; }
+.ch-rc-map-keys { margin-top: 1.2rem; display: grid; grid-template-columns: 1fr 1fr; gap: 1.4rem; }
+.ch-rc-map-key h3 {
+  margin: 0 0 0.6rem; font-size: 0.8rem; letter-spacing: 0.16em; text-transform: uppercase;
+  font-family: "Cormorant Garamond", Georgia, serif;
+}
+.ch-rc-map-key.is-claimed h3 { color: #c9a86a; }
+.ch-rc-map-key.is-documented h3 { color: #8fa8bd; }
+.ch-rc-map-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.55rem; }
+.ch-rc-map-list li {
+  position: relative; padding: 0.45rem 0.6rem 0.5rem 2.1rem; border-radius: 3px; cursor: pointer;
+  border-left: 2px solid transparent;
+}
+.ch-rc-map-key.is-claimed .ch-rc-map-list li { padding-left: 0.8rem; border-left-color: rgba(201, 168, 106, 0.35); border-left-style: dashed; }
+.ch-rc-map-list li.is-active { background: rgba(201, 168, 106, 0.07); }
+.ch-rc-map-n {
+  position: absolute; left: 0.45rem; top: 0.5rem;
+  width: 1.2rem; height: 1.2rem; border-radius: 50%; display: grid; place-items: center;
+  background: #8fa8bd; color: #0b0a09; font: 600 0.68rem Georgia, serif;
+}
+.ch-rc-map-name { display: block; color: rgba(240, 233, 218, 0.92); font-size: 0.95rem; }
+.ch-rc-map-unloc { color: rgba(201, 168, 106, 0.75); font-size: 0.85rem; }
+.ch-rc-map-note { display: block; margin-top: 0.15rem; font-size: 0.86rem; line-height: 1.6; color: rgba(222, 212, 196, 0.66); }
+@media (max-width: 760px) { .ch-rc-map-keys { grid-template-columns: 1fr; } }
+/* On a phone the whole map would shrink its names to a few pixels: keep it at
+   a readable size and let it pan inside the frame instead. */
+.ch-rc-map-pan { overflow-x: auto; -webkit-overflow-scrolling: touch; overscroll-behavior-x: contain; }
+.ch-rc-map-swipe { display: none; }
+@media (max-width: 640px) {
+    .ch-rc-map-pan .ch-rc-map-svg { width: 760px; max-width: none; }
+    .ch-rc-map-swipe { display: inline; }
+}
 
 /* --- the grades: the one table on the page where the descent is real ------- */
 .ch-rc-grades-scroll {

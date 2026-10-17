@@ -361,6 +361,10 @@ if (esoteric) {
     }
     for (const g of esoteric.groups) {
         if (!esoteric.entries.some((e) => e.group === g.key)) fail(`esoteric: group "${g.key}" is empty`);
+        // A door that wears signs must point at drawings that exist.
+        for (const src of g.portal?.emblems ?? []) {
+            if (!existsSync(path.join(web, 'public/media', src))) fail(`esoteric/${g.key}: door emblem ${src} not in public/media`);
+        }
     }
     notes.push(`esoteric: ${esoteric.entries.length} in ${esoteric.groups.length} currents`);
 }
@@ -631,6 +635,33 @@ if (rosicrucian) {
         checkContested(where, g);
     }
 
+    // The map. 'Documented' is a claim about the record, so a documented place
+    // must have a real location; a place the text does not locate may be drawn
+    // as a region but never pinned (RosicrucianMap does the drawing). Every
+    // stage of the Fama's journey is a claim, and the journey must carry its
+    // note on what the text does and does not locate.
+    const rmap = rosicrucian.map;
+    if (rmap) {
+        const F = { minLon: -11, maxLon: 50, minLat: 17, maxLat: 57 };
+        const keysSeen = new Set();
+        for (const p of [...(rmap.journey ?? []), ...(rmap.places ?? [])]) {
+            const where = `rosicrucian/map ${p.key || '?'}`;
+            if (keysSeen.has(p.key)) fail(`${where}: duplicate key`);
+            keysSeen.add(p.key);
+            for (const f of ['key', 'name', 'year', 'note']) if (!p[f]) fail(`${where}: no ${f}`);
+            if (!['claimed', 'documented'].includes(p.layer)) fail(`${where}: layer "${p.layer}" is neither claimed nor documented`);
+            if (p.layer === 'documented' && !p.located) fail(`${where}: a documented place must have a real location`);
+            if (p.located && !(Number.isFinite(p.lat) && Number.isFinite(p.lon))) fail(`${where}: located but no coordinates`);
+            if (!p.located && (rmap.places ?? []).includes(p)) fail(`${where}: not located, so it may be drawn only as a region on the journey, never pinned as a place`);
+            if (Number.isFinite(p.lat) && (p.lat < F.minLat || p.lat > F.maxLat || p.lon < F.minLon || p.lon > F.maxLon)) {
+                fail(`${where}: ${p.lat}, ${p.lon} is outside the map's frame`);
+            }
+            checkContested(where, p);
+        }
+        if ((rmap.journey ?? []).some((p) => p.layer !== 'claimed')) fail('rosicrucian/map: every stage of the Fama’s journey is a claim');
+        if ((rmap.journey ?? []).length && !rmap.journeyNote) fail('rosicrucian/map: the journey needs its note on what the Fama does and does not locate');
+    }
+
     // The emblem is drawn from a letter, as the vault is drawn from a
     // paragraph, and it has to say so on its face.
     if (rosicrucian.emblem && !/diagram of a letter|not a copy/i.test(rosicrucian.emblem.caption || '')) {
@@ -690,7 +721,7 @@ if (rosicrucian) {
     for (const c of rosicrucian.chronology ?? []) {
         if (!c.year || !c.label) fail('rosicrucian: a chronology row needs a year and a label');
     }
-    notes.push(`rosicrucian: ${(rosicrucian.manifestos ?? []).length} manifestos, ${rules.length} agreements, ${days.length} days (${days.filter((d) => d.quote).length} quoted), ${furore.length} books of the furore, ${(rosicrucian.ledger ?? []).length} ledger rows (${sound} sound), ${descent.length} descent rows (${gaps} gap), ${grades.length} grades (${grades.filter((g) => g.added).length} added), ${(rosicrucian.scholarship ?? []).length} historians, ${(rosicrucian.signs ?? []).length} signs, ${(rosicrucian.chronology ?? []).length} dated`);
+    notes.push(`rosicrucian: ${(rosicrucian.manifestos ?? []).length} manifestos, ${rules.length} agreements, ${days.length} days (${days.filter((d) => d.quote).length} quoted), ${furore.length} books of the furore, ${(rosicrucian.ledger ?? []).length} ledger rows (${sound} sound), ${descent.length} descent rows (${gaps} gap), ${grades.length} grades (${grades.filter((g) => g.added).length} added), ${(rosicrucian.scholarship ?? []).length} historians, ${(rosicrucian.signs ?? []).length} signs, ${(rosicrucian.map?.places ?? []).length + (rosicrucian.map?.journey ?? []).length} places on the map, ${(rosicrucian.chronology ?? []).length} dated`);
 }
 
 // --- report ----------------------------------------------------------------

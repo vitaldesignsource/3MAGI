@@ -1,38 +1,42 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
   <title>The Hieroglyphic Monad of John Dee (Antwerp, 1564)</title>
   <!--
-    After John Dee, Monas hieroglyphica (Antwerp: Willem Silvius, 1564).
-    Unit u = 36, taken as both the fundamental and Dee's AB [reconstruction].
-    Theorem XXIII: the whole line CK is nine
-    parts, one of them the fundamental; here K, the centre of the lunar circle,
-    is at (200,38) and C at (200,362), 9u below it.
-    Body of every part = AB/4 = 9 (Theorem XXIII: parallels set either side of
-    the lines of the cross, a quarter or a fifth of AB apart; the solar ring a
-    line parallel to the original periphery; the crescent's second arc struck
-    with the original lunar radius from a centre moved the same distance).
-      Moon   outer arc r = 2u about K; inner arc r = 2u about (200,29)
-      Sun    original periphery r = u about (200,146); ring 9 wide inside it;
-             the visible central point
-      Cross  two equal lines of 4u: bar halved (2u + 2u) at y = 218;
-             upright from the Sun (y = 182) to the common point (y = 326),
-             1u above the bar and 3u below  [reconstruction]
-      Aries  two semicircles r = u joined in one common point (200,326)
-    Lettering and construction lines omitted. Monochrome, as printed.
+    After John Dee, Monas hieroglyphica (Antwerp: Willem Silvius, 1564),
+    Theorem XXIII, as given in the English translations (Hamilton-Jones 1947
+    and the texts derived from it). AB, the fundamental, u = 36.
+      A, the meeting of the cross: (200,252). Line CAK is the axis.
+      AB = u upward (B = 216, foot of the Sun); AC = 3 AB downward (C = 360).
+      Cross of the elements: the quaternary AB, AC, AD, AE.
+        AD = AE = 2u (derived: CK = 9 parts forces AD = 2 AB), so the bar
+        DE = 4u equals the upright BC = 4u, cut 1 : 3 at A.
+      Sun: BI = AD up the axis (I = 144); circle about I with radius IB = 2u,
+        cutting AK at R (72). Body: one line parallel inside the periphery.
+        The centre I is the one centre left visible.
+      Moon: RK = AB (K = 36); half-circle about K with radius AD = 2u.
+        Second arc with the same radius about a point AB/4 from K towards R
+        (45). The lunar arc therefore runs through the upper Sun.
+      Aries: at C a line OCQ at right angles to AC; CM = CN = AB;
+        semicircles CHO about M (164,360) and CGQ about N (236,360), joined
+        in C. Drawn standing on OCQ, so that CK, nine parts, is the whole
+        height [orientation inferred, not seen in the woodcut].
+      Body of every line AB/4 = 9 (Theorem XXIII: a quarter or a fifth of AB).
+    Lettering, construction lines and centres other than I omitted.
+    Printed in black; gold here.
   -->
   <defs>
-    <linearGradient id="g" gradientUnits="userSpaceOnUse" x1="110" y1="20" x2="290" y2="380">
+    <linearGradient id="g" gradientUnits="userSpaceOnUse" x1="110" y1="30" x2="290" y2="370">
       <stop offset="0" stop-color="#ecd9ae"/>
       <stop offset="0.3" stop-color="#c9a86a"/>
       <stop offset="1" stop-color="#c9a86a"/>
     </linearGradient>
   </defs>
   <g fill="url(#g)">
-    <path d="M128.141 33.5A72 72 0 1 0 271.859 33.5A72 72 0 0 1 128.141 33.5Z"/>
-    <circle cx="200" cy="146" r="6"/>
+    <path d="M128.141 40.5A72 72 0 1 0 271.859 40.5A72 72 0 0 1 128.141 40.5Z"/>
+    <circle cx="200" cy="144" r="7"/>
   </g>
   <g fill="none" stroke="url(#g)" stroke-width="9" stroke-linecap="butt" stroke-linejoin="round">
-    <circle cx="200" cy="146" r="31.5"/>
-    <path d="M200 178V326M128 218H272"/>
-    <path d="M128 326A36 36 0 0 0 200 326A36 36 0 0 0 272 326"/>
+    <circle cx="200" cy="144" r="67.5"/>
+    <path d="M200 210V360M128 252H272"/>
+    <path d="M128 360A36 36 0 0 1 200 360M200 360A36 36 0 0 1 272 360"/>
   </g>
 </svg>

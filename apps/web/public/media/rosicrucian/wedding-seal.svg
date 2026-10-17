@@ -18,23 +18,23 @@
 </g>
 <!-- the legend: IN HOC SIGNO + VINCES -->
 <g font-family="Georgia, 'Times New Roman', serif" font-size="42" text-anchor="middle" fill="url(#relief)" stroke="#c9a86a" stroke-width=".4">
-<text transform="rotate(13.24 200 200)" x="200" y="90">I</text>
-<text transform="rotate(30.82 200 200)" x="200" y="90">N</text>
-<text transform="rotate(60.03 200 200)" x="200" y="90">H</text>
-<text transform="rotate(81.58 200 200)" x="200" y="90">O</text>
-<text transform="rotate(101.5 200 200)" x="200" y="90">C</text>
-<text transform="rotate(127.19 200 200)" x="200" y="90">S</text>
-<text transform="rotate(142.88 200 200)" x="200" y="90">I</text>
-<text transform="rotate(160.26 200 200)" x="200" y="90">G</text>
-<text transform="rotate(181.17 200 200)" x="200" y="90">N</text>
-<text transform="rotate(202.17 200 200)" x="200" y="90">O</text>
-<text transform="rotate(253.5 200 200)" x="200" y="90">V</text>
-<text transform="rotate(270.19 200 200)" x="200" y="90">I</text>
-<text transform="rotate(287.77 200 200)" x="200" y="90">N</text>
-<text transform="rotate(307.82 200 200)" x="200" y="90">C</text>
-<text transform="rotate(326.87 200 200)" x="200" y="90">E</text>
-<text transform="rotate(345.1 200 200)" x="200" y="90">S</text>
-<path transform="rotate(228.22 200 200)" d="M197.95 65.9H202.05V73.45H209.6V77.55H202.05V85.1H197.95V77.55H190.4V73.45H197.95Z"/>
+<text transform="rotate(20.09 200 200)" x="200" y="88.5">I</text>
+<text transform="rotate(37.08 200 200)" x="200" y="88.5">N</text>
+<text transform="rotate(64.65 200 200)" x="200" y="88.5">H</text>
+<text transform="rotate(85.56 200 200)" x="200" y="88.5">O</text>
+<text transform="rotate(104.87 200 200)" x="200" y="88.5">C</text>
+<text transform="rotate(128.96 200 200)" x="200" y="88.5">S</text>
+<text transform="rotate(144.08 200 200)" x="200" y="88.5">I</text>
+<text transform="rotate(160.87 200 200)" x="200" y="88.5">G</text>
+<text transform="rotate(181.16 200 200)" x="200" y="88.5">N</text>
+<text transform="rotate(201.52 200 200)" x="200" y="88.5">O</text>
+<text transform="rotate(249.66 200 200)" x="200" y="88.5">V</text>
+<text transform="rotate(265.77 200 200)" x="200" y="88.5">I</text>
+<text transform="rotate(282.76 200 200)" x="200" y="88.5">N</text>
+<text transform="rotate(302.19 200 200)" x="200" y="88.5">C</text>
+<text transform="rotate(320.64 200 200)" x="200" y="88.5">E</text>
+<text transform="rotate(338.27 200 200)" x="200" y="88.5">S</text>
+<path transform="rotate(225.97 200 200)" d="M197.95 64.4H202.05V71.95H209.6V76.05H202.05V83.6H197.95V76.05H190.4V71.95H197.95Z"/>
 </g>
 <!-- the cross, in relief -->
 <use href="#cross" transform="translate(1.3 1.3)" fill="#0d0b0a" fill-opacity=".6"/>

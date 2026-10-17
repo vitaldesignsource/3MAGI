@@ -27,6 +27,9 @@ export default {
                 title: 'The Rosicrucian Portal',
                 blurb: 'The three manifestos of 1614–1616 set beside each other as physical books, the six articles the brotherhood agreed among themselves, the seven days of the Chymical Wedding, the vault drawn to the measurements the Fama gives, the dozen books Europe answered with — and two reckonings: a ledger putting every claim about the origins against what the record will bear, and a chart of the descent that leaves the seventy years nothing crosses visibly empty.',
                 enter: 'Enter the portal',
+                // the door wears the portal's six signs, drawn from their originals
+                emblems: ['rosicrucian/luther-rose.svg', 'rosicrucian/andreae-arms.svg', 'rosicrucian/monas.svg',
+                    'rosicrucian/wedding-seal.svg', 'rosicrucian/dat-rosa.svg', 'rosicrucian/gd-rose-cross.svg'],
             },
         },
         { key: 'theosophy', label: 'The Theosophers', blurb: 'Protestant Europe’s visionary underground: a shoemaker, a scientist, a Masonic magistrate, and the churches that could not quite expel them.' },
