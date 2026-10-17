@@ -652,6 +652,7 @@ if (rosicrucian) {
             if (!['claimed', 'documented'].includes(p.layer)) fail(`${where}: layer "${p.layer}" is neither claimed nor documented`);
             if (p.layer === 'documented' && !p.located) fail(`${where}: a documented place must have a real location`);
             if (p.located && !(Number.isFinite(p.lat) && Number.isFinite(p.lon))) fail(`${where}: located but no coordinates`);
+            if (!p.located && (rmap.places ?? []).includes(p)) fail(`${where}: not located, so it may be drawn only as a region on the journey, never pinned as a place`);
             if (Number.isFinite(p.lat) && (p.lat < F.minLat || p.lat > F.maxLat || p.lon < F.minLon || p.lon > F.maxLon)) {
                 fail(`${where}: ${p.lat}, ${p.lon} is outside the map's frame`);
             }
