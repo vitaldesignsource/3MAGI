@@ -115,12 +115,11 @@ export const lampPostCategories = [
                 link: 'https://www.nyu.edu/about/news-publications/news/2026/august/isaw-presents--cursed--the-power-of-magic-in-the-ancient-world.html',
                 copy: "Organized by the Toledo Museum of Art and guest-curated by Jeffrey Spier, former senior curator of antiquities at the J. Paul Getty Museum, this exhibition gathers roughly fifty objects spanning Mesopotamia, Egypt, Greece, and Rome from about 2000 BCE to 300 CE. Curse tablets, protective amulets, love charms, and magical papyri are drawn from national and international collections, presented as evidence of an ordinary, practical recourse rather than a marginal superstition. Admission to ISAW is free. Spier gave a curator's gallery talk on September 17, and Foy Scalf lectures on the culture of magic in ancient Egypt on November 4.",
                 links: [
-                    { label: 'NYU announcement', url: 'https://www.nyu.edu/about/news-publications/news/2026/august/isaw-presents--cursed--the-power-of-magic-in-the-ancient-world.html' },
                     { label: 'The Collector: interview with curator Jeffrey Spier', url: 'https://www.thecollector.com/jeffrey-spier-ancient-magic-exhibition/' },
                 ],
             },
             {
-                headline: 'Fire and Gold: a new permanent gallery for the art of alchemy',
+                headline: 'Fire and Gold: a new permanent exhibition on the art of alchemy',
                 meta: 'Philadelphia · Science History Institute · Opened October 7, 2026',
                 copy: "The Science History Institute has opened Fire and Gold: The Art of Alchemy, 1450–1850, a new permanent exhibition in its Fisher Gallery drawn from the Institute's own holdings of alchemical paintings and rare books. The full collection runs to roughly ninety works; only about sixteen are shown at a time, rotating every six months, so repeat visits will turn up different material. Admission is free, with self-guided viewing on alternating Thursday and Saturday slots, and the Institute recommends registering ahead given the gallery's small size.",
                 links: [
@@ -208,8 +207,8 @@ export const lampPostCategories = [
         items: [
             {
                 headline: 'A suovetaurilium relief and an imperial-cult altar at Aquinum',
-                meta: 'Aquino, Italy · University of Salento · Announced October 2026',
-                copy: "Excavations led by Giuseppe Ceraudo at the Roman colony of Aquinum, near modern Aquino in Lazio, were presented to the public on 3 October 2026. Among the finds is a stone stele carved with an ox, a ram, and a pig — the sacrificial triad of the suovetaurilium, one of Roman religion's most solemn rites — though the stone had been pulled from its original setting and reused as paving, so its first context is lost. A separate marble fragment allows a partial reconstruction of a votive altar inscription naming the Genius of Augustus, the Lares of Augustus, and a freedman sevir Augustalis, tying the monument to the imperial cult. Both readings are presented as provisional pending further study.",
+                meta: 'Aquino, Italy · University of Salento · announced October 2026',
+                copy: "Excavations led by Giuseppe Ceraudo at the Roman colony of Aquinum, near modern Aquino in Lazio, were presented to the public on October 3, 2026. Among the finds is a stone stele carved with an ox, a ram, and a pig — the sacrificial triad of the suovetaurilium, one of Roman religion's most solemn rites — though the stone had been pulled from its original setting and reused as paving, so its first context is lost. A separate marble fragment allows a partial reconstruction of a votive altar inscription naming the Genius of Augustus, the Lares of Augustus, and a freedman sevir Augustalis, tying the monument to the imperial cult. Both readings are presented as provisional pending further study.",
                 links: [
                     { label: 'GreekReporter', url: 'https://greekreporter.com/2026/10/06/roman-monument-rare-sacrificial-ritual/' },
                     { label: "Finestre sull'Arte", url: 'https://www.finestresullarte.info/en/archaeology/aquino-frosinone-the-university-of-salento-discovers-two-artifacts-linked-to-roman-religion' },
@@ -307,11 +306,12 @@ export const lampPostCategories = [
             },
             {
                 headline: 'A fragment of the Iliad found inside an Egyptian mummy',
-                meta: 'Oxyrhynchus, Egypt · University of Barcelona mission · Announced April 2026',
-                copy: "During its November–December 2025 season at Oxyrhynchus, the University of Barcelona's archaeological mission opened Tomb 65 in Sector 22 and found a Roman-era mummy with a sealed papyrus packet resting on its abdomen. Analysis by papyrologist Leah Mascia and professor Ignasi-Xavier Adiego identified the text as lines from the Catalogue of Ships in Book II of the Iliad. Earlier seasons at the site had recovered papyri placed in the same position on other bodies, but always carrying explicitly magical or ritual content; the team describes this as the first time a Greek literary text has been found deliberately incorporated into the mummification process. Why it was put there remains open. Adiego has said a protective purpose is much harder to account for with a literary text than with a spell, and that the team cannot yet explain it, though Homeric verses do turn up in Greco-Egyptian amulets and spell handbooks.",
+                meta: 'Oxyrhynchus, Egypt · University of Barcelona mission · announced April 2026',
+                copy: "During its November–December 2025 season at Oxyrhynchus, the University of Barcelona's archaeological mission opened Tomb 65 in Sector 22 and found a Roman-era mummy with a sealed papyrus packet resting on its abdomen. Analysis by papyrologist Leah Mascia and professor Ignasi-Xavier Adiego identified the text as lines from the Catalogue of Ships in Book II of the Iliad. Earlier seasons at the site had recovered papyri placed in the same position on other bodies, but always carrying explicitly magical or ritual content; the team describes this as the first time a Greek literary text has been found deliberately incorporated into the mummification process. Why it was put there remains open. Adiego has said a protective purpose is much harder to account for with a literary text than with a spell, and that the team cannot yet explain it, though Homeric verses do turn up in Greco-Egyptian amulets and spell handbooks. The same tomb group yielded small tongues of gold, and one of copper, placed in the mouths of the dead, a practice tied to the belief that the dead needed the power of speech in the afterlife.",
                 links: [
                     { label: 'University of Barcelona announcement', url: 'https://web.ub.edu/en/web/actualitat/w/oxyrhynchus-iliad-homer' },
                     { label: 'Smithsonian Magazine', url: 'https://www.smithsonianmag.com/smart-news/archaeologists-unearth-a-papyrus-fragment-from-the-iliad-tucked-inside-the-wrappings-of-a-1600-year-old-egyptian-mummy-180988603/' },
+                    { label: 'Archaeology Magazine: the gold tongues', url: 'https://archaeologymag.com/2026/04/roman-cemetery-in-minya-reveals-golden-tongues/' },
                 ],
             },
             {
@@ -326,7 +326,7 @@ export const lampPostCategories = [
             },
             {
                 headline: 'The tomb of Sekhentyu-Ptah, Royal Chamberlain, at Saqqara',
-                meta: 'Egypt · Saqqara, west of the Bubasteion · Announced August 2026',
+                meta: 'Egypt · Saqqara, west of the Bubasteion · announced August 2026',
                 copy: "Egypt's Ministry of Tourism and Antiquities announced the discovery of an intact Old Kingdom tomb belonging to Sekhentyu-Ptah, a high official who held the titles Royal Chamberlain, Overseer of All the Works of the King, and Keeper of the Secrets of Royal Decrees. The funerary chapel preserved its false door in situ, together with a complete set of inscribed alabaster ritual tools — an offering table, a purification basin, an ewer, and a disc — still standing where they had been placed. The surrounding burial shafts, evidently reused across later periods, also produced a wooden falcon statue, painted funerary cartonnage, and more than a hundred faience ushabti figures. Because the ritual equipment survived undisturbed and in position, the find is unusually informative about how an Old Kingdom funerary chapel was actually furnished and used, rather than how later texts describe it.",
                 links: [
                     { label: 'Smithsonian Magazine', url: 'https://www.smithsonianmag.com/smart-news/archaeologists-discover-a-4000-year-old-tomb-with-a-false-door-at-egypts-ancient-saqqara-necropolis-180989438/' },
@@ -423,7 +423,7 @@ export const lampPostCategories = [
             {
                 headline: 'The Latin Hermes in Translation',
                 meta: 'Attrell, Bartlett, Porreca & Stefani · Corpus Christianorum in Translation, Vol. 50 · Brepols, 2026',
-                copy: "This new volume gathers the Latin Hermetic corpus outside the familiar Corpus Hermeticum: the Asclepius, the medieval Glosses on Trismegistus, the Book of Six Principles of Things, and the Book of 24 Philosophers. All four translations are based on the most recent critical editions, published in the Hermes Latinus sub-series of the Corpus Christianorum and in Textes et Études du Moyen Âge, with introductions and notes aimed at making texts that are usually cited rather than read properly accessible to students and scholars. Because three of the four works are medieval rather than ancient, the collection also traces how 'Hermes' kept being reinvented by Latin readers long after the Greek Corpus Hermeticum itself had dropped out of circulation in the West.",
+                copy: "This new volume gathers the Latin Hermetic corpus outside the familiar Corpus Hermeticum: the Asclepius, the medieval Glosses on Trismegistus, the Book of Six Principles of Things, and the Book of 24 Philosophers. All four translations are based on the most recent critical editions, published in the Hermes Latinus sub-series of the Corpus Christianorum and in Textes et Études du Moyen Âge, with introductions and notes meant to open to students and scholars texts that are more often cited than read. Because three of the four works are medieval rather than ancient, the collection also traces how 'Hermes' kept being reinvented by Latin readers long after the Greek Corpus Hermeticum itself had dropped out of circulation in the West.",
                 links: [
                     { label: 'Corpus Christianorum', url: 'https://www.corpuschristianorum.org/post/the-latin-hermes-in-translation' },
                     { label: 'Brepols', url: 'https://www.brepols.net/products/IS-9782503609836-1' },
