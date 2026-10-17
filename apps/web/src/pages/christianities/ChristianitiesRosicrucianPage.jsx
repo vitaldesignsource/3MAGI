@@ -7,6 +7,7 @@ import { loadData } from './lib';
 import Rich from './rich';
 import PortalHero from './PortalHero';
 import RosicrucianVault from './RosicrucianVault';
+import LutherRose from './LutherRose';
 
 // The Rose and the Cross, off the Inner Tradition.
 //
@@ -19,11 +20,14 @@ import RosicrucianVault from './RosicrucianVault';
 //                   articles, the seven days of the Wedding, the vault in plan
 //   the reception    the dozen books the four-hundred-book claim is made of,
 //                   with each one's side declared
-//   the reckoning    the ledger, claim by claim, and the descent chart, which
+//   the reckoning    the ledger, claim by claim; the descent chart, which
 //                   sets every body's account of itself against the record and
-//                   leaves the seventy-year hole visibly empty
+//                   leaves the seventy-year hole visibly empty; the grades, the
+//                   one thing that demonstrably did cross it; and the
+//                   historians, asked the same two questions as the tradition
 //
-// The entries narrate. The ledger adjudicates. The descent chart draws.
+// The entries narrate. The ledger adjudicates. The descent chart draws. The
+// emblem in the hero is Luther's seal, drawn from his letter (LutherRose.jsx).
 
 const GROUP = 'rosicrucian';
 
@@ -84,7 +88,8 @@ function ChristianitiesRosicrucianPage() {
 
             <PortalHero
                 kickerLink="/christianities/esoteric" kickerLinkLabel="The Inner Tradition"
-                kicker="The Rose and the Cross" title={page.title} intro={page.intro} />
+                kicker="The Rose and the Cross" title={page.title} intro={page.intro}
+                emblem={page.emblem ? <LutherRose caption={page.emblem.caption} /> : null} />
 
             <main className="edu-main">
                 <section className="ch-rc-books" aria-labelledby="rc-books-heading">
@@ -268,6 +273,42 @@ function ChristianitiesRosicrucianPage() {
                     </ol>
                     {page.descentCoda && <p className="ch-rc-coda"><Rich t={page.descentCoda} /></p>}
                 </section>
+
+                <section className="ch-rc-grades-wrap" aria-labelledby="rc-grades-heading">
+                    <span className="pw-divider" aria-hidden="true" />
+                    <header className="edu-section-head">
+                        <p className="kicker">The grades</p>
+                        <h2 id="rc-grades-heading">What was handed down</h2>
+                        {(page.gradesIntro ?? []).map((p, i) => <p key={i}><Rich t={p} /></p>)}
+                    </header>
+                    <div className="ch-rc-grades-scroll" role="region" aria-labelledby="rc-grades-heading" tabIndex={0}>
+                        <table className="ch-rc-grades">
+                            <thead>
+                                <tr>
+                                    {(page.gradeColumns ?? []).map((c) => (
+                                        <th key={c.key} scope="col" className={`is-${c.key}`}>
+                                            <span>{c.label}</span>
+                                            <small>{c.where}</small>
+                                        </th>
+                                    ))}
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {(page.grades ?? []).map((g, i) => (
+                                    <tr key={i} className={g.added ? 'is-added' : undefined}>
+                                        {(page.gradeColumns ?? []).map((c) => (
+                                            <td key={c.key} className={`is-${c.key}`}>
+                                                {g[c.key] ?? <span className="ch-rc-grades-none" title="No such grade">&mdash;</span>}
+                                            </td>
+                                        ))}
+                                    </tr>
+                                ))}
+                            </tbody>
+                        </table>
+                    </div>
+                    {page.gradesNote && <p className="ch-rc-grades-note"><Rich t={page.gradesNote} /></p>}
+                    {page.gradesCoda && <p className="ch-rc-coda"><Rich t={page.gradesCoda} /></p>}
+                </section>
                 <section className="ch-rc-chron-wrap" aria-labelledby="rc-chron-heading">
                     <span className="pw-divider" aria-hidden="true" />
                     <header className="edu-section-head">
@@ -283,6 +324,30 @@ function ChristianitiesRosicrucianPage() {
                                     <strong>{c.label}</strong>
                                     <span><Rich t={c.note} /></span>
                                 </span>
+                            </li>
+                        ))}
+                    </ol>
+                </section>
+
+                <section className="ch-rc-schol-wrap" aria-labelledby="rc-schol-heading">
+                    <span className="pw-divider" aria-hidden="true" />
+                    <header className="edu-section-head">
+                        <p className="kicker">The scholarship</p>
+                        <h2 id="rc-schol-heading">Who has argued what</h2>
+                        {(page.scholarshipIntro ?? []).map((p, i) => <p key={i}><Rich t={p} /></p>)}
+                    </header>
+                    <ol className="ch-rc-furore ch-rc-schol">
+                        {(page.scholarship ?? []).map((w) => (
+                            <li key={w.slug} id={w.slug} className="ch-rc-book is-schol">
+                                <p className="ch-rc-book-year">{w.year}</p>
+                                <div className="ch-rc-book-body">
+                                    <h3>
+                                        <span className="ch-rc-book-author">{w.author}</span>
+                                        <cite className="ch-rc-book-title">{w.work}</cite>
+                                    </h3>
+                                    <div className="ch-kv"><span>Argued</span><p><Rich t={w.argued} /></p></div>
+                                    <div className="ch-kv"><span>What is left of it</span><p><Rich t={w.stands} /></p></div>
+                                </div>
                             </li>
                         ))}
                     </ol>

@@ -11189,6 +11189,10 @@ h3 {
 .ch-page .ch-rc-sub,
 .ch-page .ch-rc-rule-text p,
 .ch-page .ch-rc-rule h3,
+.ch-page .ch-rc-emblem figcaption,
+.ch-page .ch-rc-book-title,
+.ch-page .ch-rc-grades td,
+.ch-page .ch-rc-grades-note,
 .ch-page .ch-rc-book-note,
 .ch-page .ch-rc-desc-col p,
 .ch-page .ch-rc-desc-void,
@@ -12581,12 +12585,74 @@ figure.ch-gallery-card { margin: 0; }
   .ch-rc-desc-pair { grid-template-columns: 1fr; gap: 1.1rem; }
 }
 
+/* --- Luther's rose in the hero: a diagram of a letter ---------------------- */
+.ch-rc-emblem { margin: 0 auto 1.4rem; max-width: 30rem; text-align: center; }
+.ch-rc-emblem-svg {
+  display: block; width: 8.5rem; height: auto; margin: 0 auto;
+  filter: drop-shadow(0 8px 22px rgba(0, 0, 0, 0.5));
+}
+.ch-rc-emblem .lr-ring { fill: #c9a24e; }
+.ch-rc-emblem .lr-field { fill: #7ea6cc; }
+.ch-rc-emblem .lr-petal { fill: #f3eee3; stroke: rgba(60, 46, 30, 0.3); stroke-width: 1; }
+.ch-rc-emblem .lr-heart-bed { stroke: none; }
+.ch-rc-emblem .lr-heart { fill: #ad2730; }
+.ch-rc-emblem .lr-cross { fill: #0d0b0a; }
+.ch-rc-emblem figcaption {
+  margin: 0.75rem auto 0; max-width: 26rem;
+  font-size: 0.78rem; line-height: 1.55; font-style: italic;
+  color: rgba(222, 212, 196, 0.6);
+}
+
+/* --- the grades: the one table on the page where the descent is real ------- */
+.ch-rc-grades-scroll {
+  margin: 1.8rem 0 0; overflow-x: auto;
+  border: 1px solid rgba(201, 168, 106, 0.16); border-radius: 3px;
+  background: rgba(24, 20, 16, 0.4);
+}
+.ch-rc-grades-scroll:focus-visible { outline: 1px solid rgba(201, 168, 106, 0.6); outline-offset: 2px; }
+.ch-rc-grades { width: 100%; min-width: 40rem; border-collapse: collapse; }
+.ch-rc-grades th {
+  text-align: left; vertical-align: bottom;
+  padding: 0.85rem 0.9rem 0.7rem;
+  border-bottom: 1px solid rgba(201, 168, 106, 0.3);
+}
+.ch-rc-grades th span {
+  display: block;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 0.76rem; letter-spacing: 0.14em; text-transform: uppercase; color: #c9a86a;
+}
+.ch-rc-grades th small {
+  display: block; margin-top: 0.22rem;
+  font-size: 0.72rem; font-style: italic; color: rgba(222, 212, 196, 0.5);
+}
+.ch-rc-grades td {
+  padding: 0.55rem 0.9rem;
+  border-bottom: 1px solid rgba(201, 168, 106, 0.08);
+  font-size: 0.95rem; color: rgba(232, 224, 208, 0.86);
+}
+.ch-rc-grades tbody tr:last-child td { border-bottom: none; }
+.ch-rc-grades td.is-num { color: #c9a86a; white-space: nowrap; font-variant-numeric: tabular-nums; }
+/* What 1888 added is shaded, so the eye can see where the inheritance stops. */
+.ch-rc-grades th.is-num, .ch-rc-grades th.is-sefira,
+.ch-rc-grades td.is-num, .ch-rc-grades td.is-sefira { background: rgba(143, 168, 189, 0.06); }
+.ch-rc-grades th.is-num span, .ch-rc-grades th.is-sefira span { color: rgba(143, 168, 189, 0.9); }
+.ch-rc-grades tr.is-added td.is-gd { color: rgba(143, 168, 189, 0.95); font-style: italic; }
+.ch-rc-grades-none { color: rgba(222, 212, 196, 0.28); }
+.ch-rc-grades-note { margin: 0.8rem 0 0; font-size: 0.85rem; line-height: 1.6; color: rgba(222, 212, 196, 0.6); }
+
+/* --- the historians, on the same shelf as the furore ----------------------- */
+.ch-rc-book.is-schol { border-left-color: rgba(201, 168, 106, 0.5); }
+.ch-rc-book.is-schol .ch-kv { margin-top: 0.65rem; }
+
 @media (max-width: 640px) {
   .ch-rc-imprint dt { flex-basis: 5.5rem; }
   .ch-rc-chron li { display: block; }
   .ch-rc-chron-year { display: block; margin-bottom: 0.2rem; }
   .ch-rc-book { grid-template-columns: 1fr; gap: 0.5rem; }
   .ch-rc-book-year { margin: 0; }
+  .ch-rc-grades { min-width: 34rem; }
+  .ch-rc-grades th, .ch-rc-grades td { padding-left: 0.65rem; padding-right: 0.65rem; }
+  .ch-rc-grades td { font-size: 0.88rem; }
 }
 
 /* --- the correspondence table keeps its pantheon column in view ------------- */

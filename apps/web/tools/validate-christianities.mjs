@@ -583,6 +583,44 @@ if (rosicrucian) {
         fail('rosicrucian: the descent chart draws a gap in the record and says nothing about what follows from it');
     }
 
+    // The grades: the one table on the page where the descent is real. The
+    // risk is the opposite of the chart's — that it implies an inheritance for
+    // rungs that have none. A grade with no earlier name must say it was added,
+    // and a grade marked added must not carry an earlier name.
+    const grades = rosicrucian.grades ?? [];
+    const gcols = new Set((rosicrucian.gradeColumns ?? []).map((c) => c.key));
+    if (grades.length) {
+        for (const k of ['gurc', 'sria', 'gd', 'num']) {
+            if (!gcols.has(k)) fail(`rosicrucian: the grades table has no "${k}" column`);
+        }
+        for (const [i, g] of grades.entries()) {
+            const where = `rosicrucian/grades[${i}] ${g.gd || ''}`.trim();
+            if (!g.gd) fail(`${where}: a row with no Golden Dawn grade`);
+            if (!/^\d+=\d+$/.test(g.num || '')) fail(`${where}: "${g.num}" is not a grade number of the form n=m`);
+            const inherited = Boolean(g.gurc || g.sria);
+            if (!inherited && !g.added) fail(`${where}: no earlier name and not marked as an addition — the table would imply a descent it does not have`);
+            if (inherited && g.added) fail(`${where}: marked as an addition but carries an earlier name`);
+        }
+        if (!rosicrucian.gradesCoda) fail('rosicrucian: the grades table says nothing about what it shows');
+    }
+
+    // The historians, asked the tradition's two questions: what did they
+    // argue, and what is left of it.
+    for (const [i, w] of (rosicrucian.scholarship ?? []).entries()) {
+        const where = `rosicrucian/scholarship[${i}] ${w.author || ''}`.trim();
+        for (const f of ['slug', 'year', 'author', 'work', 'argued', 'stands']) {
+            if (!w[f]) fail(`${where}: no ${f}`);
+        }
+        if (w.stands && wordCount(w.stands) < 8) fail(`${where}: says too little about what is left of the argument`);
+        checkContested(where, w);
+    }
+
+    // The emblem is drawn from a letter, as the vault is drawn from a
+    // paragraph, and it has to say so on its face.
+    if (rosicrucian.emblem && !/diagram of a letter|not a copy/i.test(rosicrucian.emblem.caption || '')) {
+        fail('rosicrucian: the emblem must say on its face that it is drawn from a description, not copied from a seal');
+    }
+
     let sound = 0;
     for (const [i, row] of (rosicrucian.ledger ?? []).entries()) {
         const where = `rosicrucian/ledger[${i}]`;
@@ -636,7 +674,7 @@ if (rosicrucian) {
     for (const c of rosicrucian.chronology ?? []) {
         if (!c.year || !c.label) fail('rosicrucian: a chronology row needs a year and a label');
     }
-    notes.push(`rosicrucian: ${(rosicrucian.manifestos ?? []).length} manifestos, ${rules.length} agreements, ${days.length} days (${days.filter((d) => d.quote).length} quoted), ${furore.length} books of the furore, ${(rosicrucian.ledger ?? []).length} ledger rows (${sound} sound), ${descent.length} descent rows (${gaps} gap), ${(rosicrucian.chronology ?? []).length} dated`);
+    notes.push(`rosicrucian: ${(rosicrucian.manifestos ?? []).length} manifestos, ${rules.length} agreements, ${days.length} days (${days.filter((d) => d.quote).length} quoted), ${furore.length} books of the furore, ${(rosicrucian.ledger ?? []).length} ledger rows (${sound} sound), ${descent.length} descent rows (${gaps} gap), ${grades.length} grades (${grades.filter((g) => g.added).length} added), ${(rosicrucian.scholarship ?? []).length} historians, ${(rosicrucian.chronology ?? []).length} dated`);
 }
 
 // --- report ----------------------------------------------------------------

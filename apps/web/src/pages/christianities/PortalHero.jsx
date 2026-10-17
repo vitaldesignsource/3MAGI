@@ -10,8 +10,12 @@ import Rich from './rich';
 //
 // Without an image it degrades to the plain hero the portals used before, so
 // a door whose art has not arrived still opens correctly.
+//
+// A page whose subject is a drawn device rather than a scene can pass that
+// device as `emblem`; it sits above the kicker, and pages that pass nothing
+// render exactly as before.
 
-function PortalHero({ image, alt, kicker, kickerLink, kickerLinkLabel, title, intro, grand, effect, children }) {
+function PortalHero({ image, alt, kicker, kickerLink, kickerLinkLabel, title, intro, grand, effect, emblem, children }) {
     return (
         <section className={`edu-hero ch-hero${image ? ' has-image' : ''}${grand ? ' is-grand' : ''}`}>
             {image && (
@@ -26,6 +30,7 @@ function PortalHero({ image, alt, kicker, kickerLink, kickerLinkLabel, title, in
                 </div>
             )}
             <div className="ch-hero-copy">
+                {emblem}
                 <p className="kicker">
                     {kickerLink
                         ? <><Link to={kickerLink}>{kickerLinkLabel}</Link> · {kicker}</>
