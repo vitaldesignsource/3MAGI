@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useLayoutEffect, useRef, useState } from 'react';
+import '@/styles/powers-diagrams.css';
 
 // Precise diagrams for four ladders. Each is drawn from the structure the
 // tradition actually asserts, not from a generic template: the Dionysian
@@ -9,16 +10,57 @@ import React from 'react';
 // that broke.
 //
 // All are pure SVG, currentColor-driven, and labelled for screen readers.
+//
+// On a phone the 500-unit drawings would shrink to a 6–8px stamp, so the
+// stage holds them at reading size and pans instead (powers-diagrams.css).
+// It starts at the centre, where each drawing's subject sits, and it becomes
+// a focusable, labelled region only while it actually pans, so the desktop
+// keyboard order and landmarks are unchanged.
 
 const F = 'Cinzel, Georgia, serif';
 
 function Frame({ title, desc, viewBox, children, note }) {
+    const stageRef = useRef(null);
+    const [pans, setPans] = useState(false);
+
+    useLayoutEffect(() => {
+        const s = stageRef.current;
+        if (!s) return undefined;
+        let panning = false;
+        // Which edges still hide drawing: the soft fade shows only there.
+        const edges = () => {
+            const max = s.scrollWidth - s.clientWidth;
+            s.toggleAttribute('data-at-start', s.scrollLeft <= 1);
+            s.toggleAttribute('data-at-end', s.scrollLeft >= max - 1);
+        };
+        const measure = () => {
+            const now = s.scrollWidth > s.clientWidth + 1;
+            if (now && !panning) s.scrollLeft = (s.scrollWidth - s.clientWidth) / 2;
+            panning = now;
+            setPans(now);
+            edges();
+        };
+        measure();
+        s.addEventListener('scroll', edges, { passive: true });
+        const ro = typeof ResizeObserver === 'function' ? new ResizeObserver(measure) : null;
+        if (ro) ro.observe(s);
+        else window.addEventListener('resize', measure);
+        return () => {
+            s.removeEventListener('scroll', edges);
+            if (ro) ro.disconnect();
+            else window.removeEventListener('resize', measure);
+        };
+    }, []);
+
     return (
         <figure className="pw-diagram">
-            <svg viewBox={viewBox} role="img" aria-label={`${title}. ${desc}`}
-                className="pw-diagram-svg">
-                {children}
-            </svg>
+            <div className="pw-diagram-stage" ref={stageRef}
+                {...(pans ? { role: 'region', 'aria-label': title, tabIndex: 0 } : {})}>
+                <svg viewBox={viewBox} role="img" aria-label={`${title}. ${desc}`}
+                    className="pw-diagram-svg">
+                    {children}
+                </svg>
+            </div>
             {note && <figcaption>{note}</figcaption>}
         </figure>
     );
