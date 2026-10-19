@@ -662,6 +662,148 @@ if (rosicrucian) {
         if ((rmap.journey ?? []).length && !rmap.journeyNote) fail('rosicrucian/map: the journey needs its note on what the Fama does and does not locate');
     }
 
+    // The Fama's own line. The text gives its brothers as initials, so the
+    // initials are the record; anything put to them is a guess and lives in
+    // the note. A quotation must say whose English it is, and so must the rule.
+    const brethren = rosicrucian.brethren ?? [];
+    if (brethren.length) {
+        const seenB = new Set();
+        if (!rosicrucian.brethrenRule?.quote || !rosicrucian.brethrenRule?.translation) {
+            fail('rosicrucian/brethren: the rule of succession must be quoted, with its translation named');
+        }
+        for (const b of brethren) {
+            const where = `rosicrucian/brother ${b.key || '?'}`;
+            if (seenB.has(b.key)) fail(`${where}: duplicate key`);
+            seenB.add(b.key);
+            if (!b.initials) fail(`${where}: no initials — they are all the text gives`);
+            if (!Number.isInteger(b.generation) || b.generation < 0 || b.generation > 3) fail(`${where}: generation must be 0–3`);
+            if (!b.says || wordCount(b.says) < 6) fail(`${where}: does not say what the Fama says of him`);
+            if (b.quote && !b.quoteTranslation) fail(`${where}: a quotation without its translation`);
+            checkContested(where, b);
+        }
+        if (brethren.filter((b) => b.founder).length !== 1) fail('rosicrucian/brethren: the line must have exactly one founder');
+        if (brethren.some((b) => b.founder && b.generation !== 0)) fail('rosicrucian/brethren: the founder stands in generation 0');
+    }
+
+    // The lines. Every body has a founding year, a place and a note; every
+    // link joins two bodies that exist and declares its kind. A documented
+    // link (warrant, members, schism, absorbed) cannot run backwards in time,
+    // a claim must say what is missing, and no documented body may sit inside
+    // the gap the page says is empty.
+    const lines = rosicrucian.lines;
+    if (lines) {
+        const kindKeys = new Set((lines.kinds ?? []).map((k) => k.key));
+        for (const k of ['warrant', 'members', 'schism', 'claimed', 'literary']) {
+            if (!kindKeys.has(k)) fail(`rosicrucian/lines: the key does not explain "${k}"`);
+        }
+        const body = new Map();
+        for (const b of lines.bodies ?? []) {
+            const where = `rosicrucian/lines ${b.key || '?'}`;
+            if (body.has(b.key)) fail(`${where}: duplicate key`);
+            body.set(b.key, b);
+            if (!b.name || !b.founded || !Number.isFinite(b.foundedYear)) fail(`${where}: needs a name, a founding date and a founding year`);
+            if (!b.place) fail(`${where}: no place`);
+            if (!b.note || wordCount(b.note) < 15) fail(`${where}: the note must say what it was and what is documented`);
+            if (!b.source || !/\b1\d{3}\b|\b20\d{2}\b/.test(b.source)) fail(`${where}: the source must cite dated work`);
+            if (!Number.isInteger(b.col) || b.col < 0 || b.col > 5) fail(`${where}: col must be 0–5`);
+            if ((b.short || b.name).length > 24) fail(`${where}: the diagram label is too long (${(b.short || b.name).length} > 24)`);
+            if (lines.gap && !b.claimedOnly && b.foundedYear > lines.gap.from && b.foundedYear < lines.gap.to) {
+                fail(`${where}: founded ${b.foundedYear}, inside the gap the page says is empty — only a body whose existence is merely claimed may stand there`);
+            }
+            checkContested(where, b);
+        }
+        const DOCUMENTED = new Set(['warrant', 'members', 'schism', 'absorbed']);
+        const pairs = new Set();
+        for (const [i, l] of (lines.links ?? []).entries()) {
+            const where = `rosicrucian/lines link ${l.from}→${l.to}`;
+            if (!body.has(l.from) || !body.has(l.to)) { fail(`${where}: joins a body that is not on the chart`); continue; }
+            if (l.from === l.to) fail(`${where}: a body cannot descend from itself`);
+            if (!kindKeys.has(l.kind)) fail(`${where}: kind "${l.kind}" is not in the key`);
+            if (pairs.has(`${l.from}>${l.to}>${l.kind}`)) fail(`${where}: drawn twice`);
+            pairs.add(`${l.from}>${l.to}>${l.kind}`);
+            if (!l.note || wordCount(l.note) < 8) fail(`${where}: a link must give its evidence, or say what is missing`);
+            if (DOCUMENTED.has(l.kind) && body.get(l.to).foundedYear < body.get(l.from).foundedYear) {
+                fail(`${where}: a documented link runs backwards in time`);
+            }
+            if (l.kind === 'claimed' && !/no |not |never|undocumented|unsupported|without|nothing|contradict|cannot|forg/i.test(l.note)) {
+                fail(`${where}: a claimed link must say what the record lacks`);
+            }
+            checkContested(`${where} [${i}]`, l);
+        }
+        for (const b of lines.bodies ?? []) {
+            if (b.family !== 'manifestos' && !(lines.links ?? []).some((l) => l.to === b.key || l.from === b.key)) {
+                fail(`rosicrucian/lines ${b.key}: stands on the chart with no link to anything`);
+            }
+        }
+    }
+
+    // Connected figures. Every link points at someone on the page, carries
+    // a standing, and gives its evidence; a figure page named must exist.
+    const people = rosicrucian.people ?? [];
+    if (people.length) {
+        const circleKeys = new Set((rosicrucian.circles ?? []).map((c) => c.key));
+        const personKeys = new Set();
+        const figureSlugs = new Set((figures?.entries ?? []).map((f) => f.slug));
+        const VERB = new Set(['wrote-with', 'corresponded', 'defended', 'answered', 'attacked', 'printed', 'translated', 'initiated', 'chartered', 'split-from', 'taught', 'read', 'patron', 'succeeded']);
+        for (const p of people) {
+            if (personKeys.has(p.key)) fail(`rosicrucian/person ${p.key}: duplicate key`);
+            personKeys.add(p.key);
+        }
+        for (const p of people) {
+            const where = `rosicrucian/person ${p.key}`;
+            if (!p.name || !p.dates) fail(`${where}: needs a name and dates`);
+            if (!circleKeys.has(p.circle)) fail(`${where}: circle "${p.circle}" is not declared`);
+            if (!p.role || wordCount(p.role) < 10) fail(`${where}: the role must say what part he or she played`);
+            if (p.figureSlug && !figureSlugs.has(p.figureSlug)) fail(`${where}: figure page "${p.figureSlug}" does not exist`);
+            for (const l of p.links ?? []) {
+                if (!personKeys.has(l.to)) fail(`${where}: links to "${l.to}", who is not on the page`);
+                if (l.to === p.key) fail(`${where}: links to himself`);
+                if (!VERB.has(l.kind)) fail(`${where}: link kind "${l.kind}" has no wording`);
+                if (!['documented', 'claimed', 'disputed'].includes(l.standing)) fail(`${where}: link to ${l.to} has no standing`);
+                if (!l.note || wordCount(l.note) < 6) fail(`${where}: link to ${l.to} gives no evidence`);
+            }
+            checkContested(where, p);
+        }
+        for (const c of rosicrucian.circles ?? []) {
+            if (!people.some((p) => p.circle === c.key)) fail(`rosicrucian/circle ${c.key}: declared but empty`);
+        }
+    }
+
+    // How the sign travelled: each passage joins two signs on the page and is
+    // graded on the ledger's own scale.
+    const stationKeys = new Set();
+    for (const s of rosicrucian.signStations ?? []) {
+        if (!s.key || !s.title || !s.year) fail(`rosicrucian/station ${s.key || '?'}: needs a key, a title and a year`);
+        stationKeys.add(s.key);
+    }
+    const signKeys = new Set((rosicrucian.signs ?? []).map((g) => g.key));
+    for (const k of stationKeys) if (signKeys.has(k)) fail(`rosicrucian/station ${k}: is also a sign`);
+    for (const [i, p] of (rosicrucian.signPassages ?? []).entries()) {
+        const where = `rosicrucian/passage[${i}] ${p.from}→${p.to}`;
+        const known = (k) => signKeys.has(k) || stationKeys.has(k);
+        if (!known(p.from) || !known(p.to)) fail(`${where}: joins a point that is neither a sign nor a declared station`);
+        if (!keys.has(p.standing)) fail(`${where}: standing "${p.standing}" is not in the declared key`);
+        if (!p.note || wordCount(p.note) < 12) fail(`${where}: a passage must show its working`);
+        checkContested(where, p);
+    }
+    // A station is a point in the story with no emblem of its own; it earns
+    // its place only by joining the chain to a drawn sign somewhere.
+    for (const k of stationKeys) {
+        if (!(rosicrucian.signPassages ?? []).some((p) => (p.from === k && signKeys.has(p.to)) || (p.to === k && signKeys.has(p.from)))) {
+            fail(`rosicrucian/station ${k}: never joins a drawn sign`);
+        }
+    }
+
+    // The portal emblems (src/data/emblems.js) are original compositions, and
+    // each must say so: the file must exist, and the caption must call it
+    // made for its page, so that no reader takes it for a historical object.
+    const emblemsMod = await import(new URL('../src/data/emblems.js', import.meta.url));
+    for (const [k, e] of Object.entries(emblemsMod.default ?? {})) {
+        if (!e.image || !existsSync(path.join(web, 'public/media', e.image))) fail(`emblems/${k}: image ${e.image} not in public/media`);
+        if (!e.alt || wordCount(e.alt) < 12) fail(`emblems/${k}: alt text too thin to describe the drawing`);
+        if (!/made for (this|the) (page|portal)/i.test(e.caption || '')) fail(`emblems/${k}: the caption must say the emblem was made for this page`);
+    }
+
     // The emblem is drawn from a letter, as the vault is drawn from a
     // paragraph, and it has to say so on its face.
     if (rosicrucian.emblem && !/diagram of a letter|not a copy/i.test(rosicrucian.emblem.caption || '')) {
@@ -721,7 +863,7 @@ if (rosicrucian) {
     for (const c of rosicrucian.chronology ?? []) {
         if (!c.year || !c.label) fail('rosicrucian: a chronology row needs a year and a label');
     }
-    notes.push(`rosicrucian: ${(rosicrucian.manifestos ?? []).length} manifestos, ${rules.length} agreements, ${days.length} days (${days.filter((d) => d.quote).length} quoted), ${furore.length} books of the furore, ${(rosicrucian.ledger ?? []).length} ledger rows (${sound} sound), ${descent.length} descent rows (${gaps} gap), ${grades.length} grades (${grades.filter((g) => g.added).length} added), ${(rosicrucian.scholarship ?? []).length} historians, ${(rosicrucian.signs ?? []).length} signs, ${(rosicrucian.map?.places ?? []).length + (rosicrucian.map?.journey ?? []).length} places on the map, ${(rosicrucian.chronology ?? []).length} dated`);
+    notes.push(`rosicrucian: ${(rosicrucian.manifestos ?? []).length} manifestos, ${rules.length} agreements, ${days.length} days (${days.filter((d) => d.quote).length} quoted), ${furore.length} books of the furore, ${(rosicrucian.ledger ?? []).length} ledger rows (${sound} sound), ${descent.length} descent rows (${gaps} gap), ${grades.length} grades (${grades.filter((g) => g.added).length} added), ${(rosicrucian.scholarship ?? []).length} historians, ${(rosicrucian.signs ?? []).length} signs, ${(rosicrucian.map?.places ?? []).length + (rosicrucian.map?.journey ?? []).length} places on the map, ${(rosicrucian.chronology ?? []).length} dated, ${(rosicrucian.brethren ?? []).length} brothers of the Fama, ${(rosicrucian.lines?.bodies ?? []).length} bodies and ${(rosicrucian.lines?.links ?? []).length} links in the lines, ${(rosicrucian.people ?? []).length} people in ${(rosicrucian.circles ?? []).length} circles, ${(rosicrucian.signPassages ?? []).length} passages of the sign`);
 }
 
 // --- report ----------------------------------------------------------------

@@ -272,13 +272,19 @@ const LETTER_SUM_HALLS = new Set([
     'hebrew', 'greek', 'arabic', 'persian', 'syriac', 'aramaic', 'coptic', 'armenian',
 ]);
 
+// Whether a hall has a reckoner at all. The hall's contents menu asks this
+// too, so it never offers a link to a section that will not render.
+// Latin and Egyptian reckon from the Numbers section's digits; the rest
+// reckon from the alphabet, and need no Numbers section to work.
+export function hasReckoner(lang, letters, numbers) {
+    if (!COPY[lang]) return false;
+    if (!LETTER_SUM_HALLS.has(lang)) return Boolean(numbers);
+    return letters.some((l) => l.value != null);
+}
+
 function ScriptoriumReckoner({ lang, letters, numbers }) {
     const copy = COPY[lang];
-    if (!copy) return null;
-    // Latin and Egyptian reckon from the Numbers section's digits; the rest
-    // reckon from the alphabet, and need no Numbers section to work.
-    if (!LETTER_SUM_HALLS.has(lang) && !numbers) return null;
-    if (LETTER_SUM_HALLS.has(lang) && !letters.some((l) => l.value != null)) return null;
+    if (!hasReckoner(lang, letters, numbers)) return null;
 
     return (
         <section className="edu-reckoner" aria-labelledby="edu-reckoner-heading">

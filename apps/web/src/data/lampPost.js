@@ -39,10 +39,10 @@ export const lampPostCategories = [
             },
             {
                 headline: 'Arabic Fragments of Thābit ibn Qurra\'s Book of Talismans',
-                meta: 'Cambridge Genizah · Recently Identified',
-                copy: 'Fragments of the original Arabic version of Thābit ibn Qurra\'s treatise on astrological images were recently identified among the Cambridge Genizah materials. The work explains how celestial influences could be captured within constructed images and talismans. Especially important because much of this tradition had previously survived only through Latin transmission.',
+                meta: 'Cambridge Genizah · T-S Ar. 29.51 and T-S Ar. 43.274 · Published 2021',
+                copy: 'Fragments of a Judaeo-Arabic text of Thābit ibn Qurra\'s treatise on astrological images were identified by Gideon Bohak among the Cambridge Genizah materials and published with Charles Burnett in 2021, followed by Pseudo-Ptolemy\'s On the Images. The work explains how celestial influences could be captured within constructed images and talismans. Especially important because much of this tradition had previously survived only through Latin transmission.',
                 links: [
-                    { label: 'IET Archives discussion', url: 'https://archives.ietdl.org', external: true },
+                    { label: 'Cambridge University Library, Genizah Research Unit', url: 'https://genizahfragments.lib.cam.ac.uk/2022/01/14/book-thabit-ibn-qurra-on-talismans-by-gideon-bohak-and-charles-burnett/', external: true },
                 ],
             },
             {
@@ -66,16 +66,13 @@ export const lampPostCategories = [
                 meta: 'Herculaneum · X-ray Imaging · 2025',
                 copy: 'In 2025, X-ray imaging revealed that the carbonized scroll PHerc. 172 contains part of On Vices by the Epicurean philosopher Philodemus. Adjacent to esotericism rather than an occult manuscript, but the larger Herculaneum project is extremely consequential: hundreds of unread philosophical scrolls remain, and future virtual unwrapping could recover otherwise lost works of ancient philosophy.',
                 links: [
-                    { label: 'Report on the identification', url: 'https://www.theherculaneumsociety.org', external: true },
+                    { label: 'Smithsonian Magazine on the identification', url: 'https://www.smithsonianmag.com/smart-news/these-ancient-scrolls-have-been-a-tantalizing-mystery-for-2000-years-researchers-just-deciphered-a-title-for-the-first-time-180986639/', external: true },
                 ],
             },
             {
                 headline: 'Montemonaco Manuscript No. 40 (Speculative)',
                 meta: 'Apennines · New Interpretation 2025',
                 copy: 'Montemonaco Manuscript No. 40 received a new interpretation in 2025 connecting it with alchemists, magical practice, and traditions surrounding the Apennine Sibyl. Fascinating but presently resting largely on an independent researcher\'s reading — a developing hypothesis rather than an established discovery.',
-                links: [
-                    { label: 'Paper and DOI information', url: 'https://doi.org', external: true },
-                ],
             },
         ],
     },
@@ -271,7 +268,7 @@ export const lampPostCategories = [
             {
                 headline: 'A Roman curse formula blending Egyptian and Greek magical grammar',
                 meta: 'Heerlen · characteres & sphragides',
-                copy: 'The Heerlen tablet deserves a second emphasis because its characteres are particularly significant. These enigmatic signs occur throughout late-antique magical texts, gems, amulets, and curse tablets. They appear to function neither as ordinary writing nor merely as decoration. They were treated as supra-linguistic signatures — graphic vessels intended to establish contact with invisible powers. For your own metaphysical system, these signs could be studied as sphragides: seals that compress name, force, intention, and spiritual identity into a single operative figure.',
+                copy: 'The Heerlen tablet deserves a second emphasis because its characteres are particularly significant. These enigmatic signs occur throughout late-antique magical texts, gems, amulets, and curse tablets. They appear to function neither as ordinary writing nor merely as decoration. They were treated as supra-linguistic signatures — graphic vessels intended to establish contact with invisible powers. Read in a metaphysical register, these signs could be studied as sphragides: seals that compress name, force, intention, and spiritual identity into a single operative figure.',
                 links: [
                     { label: 'Phys.org on the inscription', url: 'https://phys.org/news/2026-06-ancient-curse-tablet-rare-greek.html' },
                     { label: 'Archaeology Magazine', url: 'https://archaeology.org/news/2026/06/19/roman-curse-tablet-from-the-netherlands-studied/' },
@@ -366,7 +363,7 @@ export const lampPostCategories = [
                 meta: 'New Translation · Corpus Hermeticum',
                 copy: "This is probably the most important recent release for the field. Litwa presents a fresh translation of the Corpus Hermeticum and related Hermetic writings, emphasizing their initiatory structure, Egyptian religious background, divine rebirth, ascent of consciousness, and salvation through gnōsis. The significant difference is textual: Litwa draws upon Christian Wildberg's new critical work, which attempts to identify marginal comments and later interpolations that may have entered the body of the Hermetic texts during manuscript transmission. Some questionable passages are separated or moved into notes, producing a more coherent philosophical sequence. This translation may allow the Hermetica to be read less like a disorderly anthology and more like a graded passage through revelation, purification, cosmic understanding, and spiritual regeneration.",
                 links: [
-                    { label: 'Cambridge University Press', url: 'https://www.cambridge.org/core/books/hermetica-ii/5B0BD7C5C0EA0429CCF2D444AD84558C' },
+                    { label: 'Watkins Books listing', url: 'https://shop.watkinsbooks.com/products/hermetica-i-by-david-litwa-trans' },
                 ]
             },
             {
@@ -493,7 +490,7 @@ export const lampPostCategories = [
                 cta: 'Conference details',
                 headline: 'EnochiaCon 2026: The Third Annual Dee & Kelley Conference',
                 meta: 'November 6–8, 2026 · Austin, Texas · In-Person & Online',
-                copy: 'The third annual Dee & Kelley Conference convenes in downtown Austin (8VC, 907 South Congress Avenue) for an intensive three-day gathering focused on John Dee, Edward Kelley, Enochian magic, ceremonial practice, Renaissance Hermeticism, grimoires, alchemy, and adjacent esoteric currents. The conference runs Friday through Sunday night with both in-person and live Zoom attendance. Streamed lectures are recorded and available to registrants; practical workshops (limited to ~20 in-person participants each) are not recorded or streamed. Current presenter lineup includes Jason Louv, Ashen Chassan, Scott Michael Stenwick, Dr. Terry Burns, David Rankine, Dr. Al Cummins, Ike Baker, Melissa Seims, Robert Podgurski, Maria Montgomery, Joseph L. Flatley, Lon Milo DuQuette, P.D. Newman, Frater Eleftheria, Dr. Ashley Evans, Frater R.C., Frater R.P.G., Ronnie Pontiac, Jeff Contreras, Dr. David Hill, and Temple Louv. Announced practical workshops include Scrying and Drawing Spirits into Crystals (Ashen Chassan), Enochian Wealth Magick (Scott Michael Stenwick), Enochian Magic: The Opening by Watchtower (Dr. Terry Burns), The Embodied Magician (Temple Louv), The Vijnana Bhairava Tantra as Embodied Vimana (Craig Williams), Enochian Parts of the Earth (Frater Eleftheria), and Mastering the Lesser Ritual of the Pentagram (Frater R.C.). Registration: $350 through August 31; price increases September 1. Includes November conference, June Spring Workshops, annual ARS membership, and access to recordings. In-person capacity: 72 (currently over half full). Nearby hotel blocks: $149–$169/night. Lunchtime sandwich buffet included. This is part of a four-conference sequence culminating July 13, 2027—John Dee\'s 500th birthday—with a planned gathering in Prague connected to Edward Kelley\'s tower.',
+                copy: 'The third annual Dee & Kelley Conference convenes in downtown Austin (8VC, 907 South Congress Avenue) for an intensive three-day gathering focused on John Dee, Edward Kelley, Enochian magic, ceremonial practice, Renaissance Hermeticism, grimoires, alchemy, and adjacent esoteric currents. The conference runs Friday through Sunday night with both in-person and live Zoom attendance. Streamed lectures are recorded and available to registrants; practical workshops (limited to ~20 in-person participants each) are not recorded or streamed. Current presenter lineup includes Jason Louv, Ashen Chassan, Scott Michael Stenwick, Dr. Terry Burns, David Rankine, Dr. Al Cummins, Ike Baker, Melissa Seims, Robert Podgurski, Maria Montgomery, Joseph L. Flatley, Lon Milo DuQuette, P.D. Newman, Frater Eleftheria, Dr. Ashley Evans, Frater R.C., Frater R.P.G., Ronnie Pontiac, Jeff Contreras, Dr. David Hill, and Temple Louv. Announced practical workshops include Scrying and Drawing Spirits into Crystals (Ashen Chassan), Enochian Wealth Magick (Scott Michael Stenwick), Enochian Magic: The Opening by Watchtower (Dr. Terry Burns), The Embodied Magician (Temple Louv), The Vijnana Bhairava Tantra as Embodied Vimana (Craig Williams), Enochian Parts of the Earth (Frater Eleftheria), and Mastering the Lesser Ritual of the Pentagram (Frater R.C.). Early registration ($350) closed August 31; check the conference site for current pricing. Registration includes the November conference, June Spring Workshops, annual ARS membership, and access to recordings. In-person capacity: 72. Nearby hotel blocks: $149–$169/night. Lunchtime sandwich buffet included. This is part of a four-conference sequence culminating July 13, 2027—John Dee\'s 500th birthday—with a planned gathering in Prague connected to Edward Kelley\'s tower.',
                 link: 'https://arcaneresearchsociety.com',
             },
             {
@@ -853,7 +850,7 @@ export const lampPostCategories = [
             {
                 headline: 'The church that put a corpse on trial',
                 meta: 'Ecclesiastical Oddity · 897 CE',
-                copy: 'In 897, Pope Formosus was exhumed, dressed in papal vestments, and seated upon a throne to stand trial before his successor. A deacon answered for the dead pontiff, who was convicted, stripped of office, mutilated, and cast into the Tiber.',
+                copy: 'In 897, Pope Formosus was exhumed, dressed in papal vestments, and seated upon a throne to stand trial before Pope Stephen VI. A deacon answered for the dead pontiff, who was convicted, stripped of office, mutilated, and cast into the Tiber.',
                 link: 'https://www.britannica.com/biography/Pope-Formosus',
             },
             {

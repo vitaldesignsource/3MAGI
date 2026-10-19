@@ -19,7 +19,7 @@ export default {
             literal: 'messenger; the bearer of an announcement',
             story: 'Ordinary Greek. Homer’s heralds are angeloi, and so is the runner with news from the battle. The Septuagint translators used it for mal’akh because it matched exactly, and in so doing handed the later church a word that would stop meaning “messenger” and start meaning “heavenly being.”',
             livesIn: 'Homer onward; the Septuagint; the New Testament, where the shift is already visible.',
-            fate: 'Gave every European language its word for the being — and lost its plain sense entirely. Evangelion, “good message,” keeps the old root visible inside “gospel.”',
+            fate: 'Gave every European language its word for the being — and lost its plain sense entirely. Evangelion, “good message,” keeps the old root visible in “evangelist”; “gospel,” Old English gōdspel, translates it rather than descending from it.',
         },
         {
             slug: 'kerub', native: 'כרוב', translit: 'keruv', lang: 'hebrew',

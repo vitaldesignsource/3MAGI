@@ -95,7 +95,7 @@ export default {
             "categories": [
                 "latin-father"
             ],
-            "tradition": "Northumbria; the only Englishman named a Doctor of the Church",
+            "tradition": "Northumbria; named a Doctor of the Church in 1899, and the only Englishman so named until John Henry Newman in 2025",
             "role": "Monk of Jarrow, historian, chronologist",
             "contribution": "He entered the monastery at seven and by his own account never left the north of England, and from that one library produced the Ecclesiastical History of the English People — the work that made a nation's story tellable and, incidentally, popularised dating from the Incarnation, anno Domini, which is why the world now numbers its years as it does. His care about sources is startling for the period: he names his informants, distinguishes what he has read from what he was told, and says when he does not know. He also wrote on chronology, orthography and scripture, and was finishing a translation of John's gospel into English on the day he died.",
             "fate": "Died at Jarrow in 735, dictating to the last; his student Cuthbert's letter describing it is among the most affecting accounts of a death in medieval literature.",
@@ -165,7 +165,7 @@ export default {
             "fate": "Died at the Second Council of Lyons in 1274, during the negotiations for reunion with the Greeks; named a Doctor of the Church in 1588.",
             "quote": {
                 "text": "Ask grace, not learning; desire, not understanding.",
-                "source": "Itinerarium mentis in Deum, prologue"
+                "source": "Itinerarium mentis in Deum 7.6"
             }
         },
         {
@@ -1447,7 +1447,7 @@ export default {
             "fate": "He returned to Germany in 1939 from the safety of New York because, he wrote, he would have no right to share in the restoration of Christian life there if he did not share the trials of the time. Through the Abwehr he joined the conspiracy against Hitler, having concluded that a Christian may have to take guilt upon himself rather than stay clean; arrested in April 1943, and hanged at Flossenbürg on 9 April 1945, two weeks before the camp was liberated. He was thirty-nine.",
             "quote": {
                 "text": "When Christ calls a man, he bids him come and die.",
-                "source": "Nachfolge (Discipleship), 1937, chapter 2"
+                "source": "Nachfolge (Discipleship), 1937, chapter 4, 'Discipleship and the Cross'"
             }
         },
         {
@@ -1463,7 +1463,7 @@ export default {
             "tradition": "Russian Orthodox in Paris",
             "role": "Poet, revolutionary, twice divorced, and a nun who would not live in a convent",
             "contribution": "She took monastic vows in 1932 on the explicit condition that her cell would be the city, and ran a house at 77 rue de Lourmel that fed and sheltered destitute Russian émigrés; her essays argue that the liturgy is unfinished when it ends, that the sacrament of the altar must be answered by the sacrament of the brother, and against a piety that uses the cloister to avoid people. It is one of the clearest Orthodox statements of an active, urban, secular holiness, and it was made in the face of considerable disapproval.",
-            "fate": "When the Germans occupied Paris, the house sheltered Jews and her chaplain Fr Dimitri Klepinin issued baptismal certificates to those who asked; after the Vélodrome d'Hiver round-up in 1942 she got into the stadium and helped bring children out in refuse bins. Arrested in February 1943 and sent to Ravensbrück, where she died in the gas chamber on 31 March 1945, Holy Saturday, a few days before the camp's liberation. The account that she went in place of another woman is reported by survivors and is not documented, and the portal records it as what it is. She, Klepinin, her son Yuri and Ilya Fondaminsky were glorified by the Ecumenical Patriarchate in January 2004; Yad Vashem numbers her among the Righteous Among the Nations.",
+            "fate": "When the Germans occupied Paris, the house sheltered Jews and her chaplain Fr Dimitri Klepinin issued baptismal certificates to those who asked; after the Vélodrome d'Hiver round-up in 1942 she got into the stadium and helped bring children out in refuse bins. Arrested in February 1943 and sent to Ravensbrück, where she died in the gas chamber on 31 March 1945, Holy Saturday, a month before the camp's liberation on 30 April. The account that she went in place of another woman is reported by survivors and is not documented, and the portal records it as what it is. She, Klepinin, her son Yuri and Ilya Fondaminsky were glorified by the Ecumenical Patriarchate in January 2004; Yad Vashem numbers her among the Righteous Among the Nations.",
             "quote": {
                 "text": "At the Last Judgment I shall not be asked whether I was successful in my ascetic exercises, but whether I fed the hungry, clothed the naked, visited the sick and the prisoner.",
                 "source": "Attributed in the memoirs of her circle and printed in the collected Essential Writings; no manuscript source is extant"

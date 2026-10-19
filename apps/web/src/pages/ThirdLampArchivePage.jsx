@@ -5,6 +5,17 @@ import ThirdLampHeader from '../components/ThirdLampHeader';
 import ThirdLampFooter from '../components/ThirdLampFooter';
 import ThirdLampFeaturedContributors from '../components/ThirdLampFeaturedContributors';
 import { articles, traditionMeta, disciplineMeta } from '../data/articles';
+
+// The archive's own counts, taken from the index so they cannot go stale the
+// way the hand-written count did once the archive outgrew it.
+const ONES = ['', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten', 'eleven', 'twelve', 'thirteen', 'fourteen', 'fifteen', 'sixteen', 'seventeen', 'eighteen', 'nineteen'];
+const TENS = ['', '', 'twenty', 'thirty', 'forty', 'fifty', 'sixty', 'seventy', 'eighty', 'ninety'];
+const inWords = (n) => (n < 20 ? ONES[n] : TENS[Math.floor(n / 10)] + (n % 10 ? `-${ONES[n % 10]}` : ''));
+const capital = (s) => s.charAt(0).toUpperCase() + s.slice(1);
+const roman = (n) => [[50, 'L'], [40, 'XL'], [10, 'X'], [9, 'IX'], [5, 'V'], [4, 'IV'], [1, 'I']]
+    .reduce((acc, [v, r]) => { while (n >= v) { acc += r; n -= v; } return acc; }, '');
+const NOTES = articles.length;
+const TRADITIONS = new Set(articles.flatMap((a) => (a.traditions || []).filter((t) => traditionMeta[t]))).size;
 function ThirdLampArchivePage() {
   const [query, setQuery] = useState('');
   const [activeFilter, setActiveFilter] = useState(null);
@@ -81,6 +92,7 @@ function ThirdLampArchivePage() {
   return <>
             <Helmet>
                 <title>The Living Archive | The Third Lamp</title>
+                <meta name="description" content="The Living Archive of The Third Lamp: every essay and field note, searchable, and filtered by tradition and by discipline." />
             </Helmet>
 
             <div className="third-lamp-scope">
@@ -122,13 +134,13 @@ function ThirdLampArchivePage() {
                     <h1><span>The&nbsp;</span><span>Living</span><span className="archive-hero-kicker">follow the currents between ideas</span><span>Archive</span></h1>
                     <p className="archive-hero-subtext"><span style={{
               color: "rgba(222, 212, 196, 0.72)"
-            }}>Fourteen field notes · eight connected traditions · one unfolding inquiry.</span></p>
+            }}>{capital(inWords(NOTES))} field notes · {inWords(TRADITIONS)} connected traditions · one unfolding inquiry.</span></p>
 
                 <div className="archive-hero-search">
                     <div className="archive-search-shell">
                         <span className="archive-search-glyph" aria-hidden="true">⌕</span>
                         <input className="archive-search" type="search" placeholder="Search the hidden archive…" aria-label="Search the archive" value={query} onChange={e => setQuery(e.target.value)} />
-                        <span className="archive-search-ledger" aria-hidden="true">XIV</span>
+                        <span className="archive-search-ledger" aria-hidden="true">{roman(NOTES)}</span>
                     </div>
                     <div className="archive-control-meta">
                         <span>Volume I · Living index</span>
@@ -136,7 +148,7 @@ function ThirdLampArchivePage() {
                 setQuery('');
                 setActiveFilter(null);
               }}>Reveal all entries</button>
-                        <span>Fourteen field notes catalogued</span>
+                        <span>{capital(inWords(NOTES))} field notes catalogued</span>
                     </div>
                 </div>
                 </section>
@@ -147,7 +159,7 @@ function ThirdLampArchivePage() {
                     <div className="archive-search-shell">
                         <span className="archive-search-glyph" aria-hidden="true">⌕</span>
                         <input className="archive-search" type="search" placeholder="Search the hidden archive…" aria-label="Search the archive" value={query} onChange={e => setQuery(e.target.value)} />
-                        <span className="archive-search-ledger" aria-hidden="true">XIV</span>
+                        <span className="archive-search-ledger" aria-hidden="true">{roman(NOTES)}</span>
                     </div>
                     <div className="archive-control-meta">
                         <span>Volume I · Living index</span>
@@ -155,7 +167,7 @@ function ThirdLampArchivePage() {
               setQuery('');
               setActiveFilter(null);
             }}>Reveal all entries</button>
-                        <span>Fourteen field notes catalogued</span>
+                        <span>{capital(inWords(NOTES))} field notes catalogued</span>
                     </div>
                 </section>
 

@@ -291,7 +291,7 @@ export default {
             "to": null,
             "status": "living",
             "note": "Catholics who refused Vatican I's definition of papal infallibility (1870), organizing under the see of Utrecht (whose own breach with Rome dates to 1724) in the Union of Utrecht of 1889 — faithful to the ancient undivided faith in their account, a schism in Rome's. In full communion with Anglicans since the Bonn Agreement (1931).",
-            "adherents": "~300,000"
+            "adherents": "~100,000"
         },
         {
             "id": "lutheran",

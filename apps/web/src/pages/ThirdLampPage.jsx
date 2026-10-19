@@ -61,7 +61,7 @@ const leadStories = [{
   author: 'James Oliva',
   type: 'Occult Modernity · Inquiry',
   number: '03',
-  title: 'The Right to Question: Esotericism, UFOs, and the Infinite Unknown',
+  title: 'Strange Allies: Esotericism, UFOs, and the Preservation of Thought',
   copy: 'Two stigmatized fields of inquiry — the esoteric and the ufological — share a single ancestor: the refusal to stop asking.',
   image: '/media/3311c2125979a66c91ad798141b1adc2.webp',
   minutes: '11 min'
@@ -173,6 +173,7 @@ function ThirdLampPage() {
   return <>
             <Helmet>
                 <title>The Third Lamp | Three Magi Press</title>
+                <meta name="description" content="The Third Lamp, the digital esoteric magazine of Three Magi Press: essays, research, art and field notes where the visible and the invisible are read as one text." />
             </Helmet>
 
             <div className="third-lamp-scope">
@@ -192,7 +193,7 @@ function ThirdLampPage() {
                         <p className="tl-entrance-est">
                             <span aria-hidden="true">⟡</span> Est. for the Living Traditions <span aria-hidden="true">⟡</span>
                         </p>
-                        <p className="tl-entrance-desc">An independent house for esoteric enquirer &amp; the Alchemical Mind — where the visible and the invisible are read as one text.</p>
+                        <p className="tl-entrance-desc">An independent house for the esoteric enquirer &amp; the Alchemical Mind — where the visible and the invisible are read as one text.</p>
 
                         <EntranceSignup />
                     </div>

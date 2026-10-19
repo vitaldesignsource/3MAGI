@@ -66,7 +66,7 @@ const authors = [
         topics: ['Freemasonry', 'Hellenistic astrology', 'Neoplatonism', 'Hermeticism', 'Rosicrucianism'],
         work: [
             { href: 'https://triaprima.co/', label: 'Tria Prima', meta: 'Co-founder · Esoteric Publishing & Podcast', external: true },
-            { href: 'https://podcasts.apple.com/', label: 'Tria Prima Podcast', meta: 'Host · Apple Podcasts', external: true },
+            { href: 'https://blubrry.com/triaprima/', label: 'Tria Prima Podcast', meta: 'Co-host · Podcast', external: true },
             { href: 'https://ascensionlodge89.org/', label: 'Ascension Lodge No. 89', meta: 'Charter Senior Deacon', external: true },
             { href: 'https://www.azmasons.org/', label: 'Grand Lodge of Arizona', meta: 'Grand Orator', external: true },
             { href: 'https://triaprima.co/', label: 'Element Mist', meta: 'Co-founder', external: true },
@@ -230,6 +230,7 @@ function ThirdLampAuthorsPage() {
         <>
             <Helmet>
                 <title>Authors | The Third Lamp</title>
+                <meta name="description" content="The writers, editors, translators and contemplative scholars of The Third Lamp, working where sacred history, philosophy and living tradition meet." />
             </Helmet>
 
             <div className="third-lamp-scope">

@@ -9,6 +9,11 @@ const loadCourse = async (lang) => {
     const mod = COURSE_LOADERS[`../data/education/courses/${lang}.js`];
     return mod ? (await mod()).default : null;
 };
+const COUNT_WORDS = ['no', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten', 'eleven', 'twelve'];
+const lessonCount = (n) => {
+    const w = COUNT_WORDS[n] ?? String(n);
+    return `${/^[aeio]|^eight|^eleven/.test(w) ? 'An' : 'A'} ${w}-lesson`;
+};
 const TITLES = { latin: 'Latin', greek: 'Greek', hebrew: 'Hebrew', egyptian: 'Egyptian', cuneiform: 'Cuneiform', sanskrit: 'Sanskrit', syriac: 'Syriac', arabic: 'Arabic' };
 // Courses in right-to-left scripts. Kept as a list so the hall page and this one agree.
 const RTL = ['hebrew', 'syriac', 'arabic'];
@@ -168,8 +173,14 @@ function EducationCoursePage() {
     return (
         <div className="third-lamp-scope edu-page edu-course-page">
             <Helmet>
-                <title>{`${course.title} — The Scriptorium — The Third Lamp`}</title>
-                <meta name="description" content={`${course.title}: ${course.tagline} An eight-lesson ${TITLES[lang]} course in The Third Lamp's Scriptorium.`} />
+                {/* Each lesson has its own address, so it gets its own title and
+                    description rather than nine pages answering to the course's. */}
+                <title>{lesson
+                    ? `Lesson ${lesson.number}: ${lesson.title} — ${course.title} — The Scriptorium`
+                    : `${course.title} — The Scriptorium — The Third Lamp`}</title>
+                <meta name="description" content={lesson && lesson.aim
+                    ? `Lesson ${lesson.number} of ${course.lessons.length} in ${course.title}, the ${TITLES[lang]} course of The Third Lamp's Scriptorium: ${lesson.aim}`
+                    : `${course.title}: ${course.tagline} ${lessonCount(course.lessons.length)} ${TITLES[lang]} course in The Third Lamp's Scriptorium.`} />
             </Helmet>
             <ThirdLampHeader />
 

@@ -16,7 +16,7 @@ export default {
             year: -250, dateLabel: '3rd–1st centuries BCE', language: 'Koine Greek',
             madeFrom: 'Hebrew texts older than the Masoretic tradition, and in places a different Hebrew text entirely',
             by: 'Jewish translators at Alexandria',
-            note: 'The Letter of Aristeas tells of seventy-two elders producing seventy-two identical translations in seventy-two days; the story is a legend of the second century BCE and the name stuck. Begun with the Torah and extended over generations, it is the Old Testament of the New Testament writers, who quote it far more often than the Hebrew, and it remains the canonical Old Testament of the Orthodox churches.',
+            note: 'The Letter of Aristeas, a legend of the second century BCE, tells of seventy-two elders rendering the Law in seventy-two days; Philo later added that they worked apart and produced identical versions, and the name stuck. Begun with the Torah and extended over generations, it is the Old Testament of the New Testament writers, who quote it far more often than the Hebrew, and it remains the canonical Old Testament of the Orthodox churches.',
             standing: 'Canonical scripture in the Eastern Orthodox tradition; the basis of the Old Latin, Coptic, Armenian, Ethiopic and Slavonic versions.',
         },
         {

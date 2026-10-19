@@ -25,7 +25,7 @@ export default {
                 },
                 {
                     "text": "he suffered under Pontius Pilate, was crucified, died, and was buried.",
-                    "note": "The one proper name in the creed besides Mary's: Pilate nails the confession to a date in Roman history. 'Died' (mortuus) is another late arrival, absent from the Old Roman Symbol — added, with the descent clause, to leave no room for the thought that the death was less than real."
+                    "note": "The one proper name in the creed besides those of Jesus and Mary: Pilate nails the confession to a date in Roman history. 'Died' (mortuus) is another late arrival, absent from the Old Roman Symbol — added, with the descent clause, to leave no room for the thought that the death was less than real."
                 },
                 {
                     "text": "He descended to the dead.",

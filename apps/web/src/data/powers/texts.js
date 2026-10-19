@@ -73,7 +73,7 @@ export default {
             tradition: 'Gnostic (Sethian)',
             exposition: [
                 'The fullest account of the gnostic cosmos: the unknowable Invisible Spirit, the emanation of the aeons, Sophia’s solitary act, the birth of the lion-faced Yaldabaoth, his boast that there is no god beside him, the answer from above — “you are mistaken, Samael” — and the making of Adam by three hundred and sixty-five angels, each named, each responsible for a part of the body.',
-                'Irenaeus knew a version of it around 180, which anchors the dating; four copies survived in the jar at Nag Hammadi, so it was central to whoever buried them.',
+                'Irenaeus knew a version of it around 180, which anchors the dating; three copies survived in the jar at Nag Hammadi, so it was central to whoever buried them.',
             ],
             carries: 'The aeons and archons; the demiurge’s ignorance; the divine spark in matter; the ascent past the planetary rulers.',
             access: 'Meyer’s Nag Hammadi Scriptures; the Berlin Codex preserves an independent version.',

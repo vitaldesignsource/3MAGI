@@ -444,7 +444,7 @@ export default {
             meaning: 'Untranslated. Modern scholarship files such names as voces magicae — itself a modern coinage; the ancient phrase ὀνόματα βάρβαρα belongs mainly to the philosophers who wrote about the rites, not to the handbooks themselves',
             context: 'PGM VII.311–16; recurring across the corpus and common on Greco-Egyptian gems and amulets, including third-century tablets against epilepsy',
             value: null,
-            note: 'One of the standing names of power in the rites, and rarely alone — it travels in company with ΑΚΡΑΜΜΑΧΑΜΑΡΕΙ and the other fixed formulae. Its spelling drifts from copy to copy (ΣΕΣΕΓΓΕΝ- for ΣΕΣΕΝΓΕΝ-, with the second element written -ΒΑΡΦΑΡΑΓΓΗΣ or -ΒΑΡΦΑΡΑΓΓΗΣ variously divided), which is itself evidence that the scribes copied a sound rather than a sense. A Semitic derivation has often been proposed and none has won general assent; the honest position is that the name is not translated.',
+            note: 'One of the standing names of power in the rites, and rarely alone — it travels in company with ΑΚΡΑΜΜΑΧΑΜΑΡΕΙ and the other fixed formulae. Its spelling drifts from copy to copy (ΣΕΣΕΓΓΕΝ- for ΣΕΣΕΝΓΕΝ-, with the second element written -ΒΑΡΦΑΡΑΓΓΗΣ or -ΒΑΡΦΑΡΑΝΓΗΣ, variously divided), which is itself evidence that the scribes copied a sound rather than a sense. A Semitic derivation has often been proposed and none has won general assent; the honest position is that the name is not translated.',
         },
         {
             native: 'Ἁρποκράτης',

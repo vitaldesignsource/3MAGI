@@ -21,6 +21,7 @@ function BooksPage() {
         <>
             <Helmet>
                 <title>Books | Three Magi Press</title>
+                <meta name="description" content="The Architecture of the Unseen: seven books of ritual, symbol and transmutation, from first principles and the living medium to sacred measure, the microcosm and the return to source." />
             </Helmet>
 
             <SiteHeader />

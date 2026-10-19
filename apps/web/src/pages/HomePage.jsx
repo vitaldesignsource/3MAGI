@@ -43,6 +43,7 @@ function HomePage() {
         <>
             <Helmet>
                 <title>Three Magi Press | Hermetic, Occult &amp; Alchemical Books</title>
+                <meta name="description" content="Three Magi Press publishes hermetic, occult and alchemical books, and The Third Lamp: a digital esoteric magazine of sacred history, living tradition, and the hidden architecture of ideas." />
             </Helmet>
 
             <SiteHeader />

@@ -560,6 +560,7 @@ function ThirdLampContributePage() {
         <div className="third-lamp-scope">
             <Helmet>
                 <title>The Open Gate | Contribute to The Third Lamp</title>
+                <meta name="description" content="The Open Gate: how to contribute essays, research, art, interviews, translations and field notes to The Third Lamp, and what its editors look for." />
             </Helmet>
             <ThirdLampHeader active="contribute" />
 
@@ -746,7 +747,7 @@ function ThirdLampContributePage() {
                             <figure>
                                 <img loading="lazy" decoding="async" src="/media/fac6744621da1f040468be8de464350f.webp" alt="Jacob Trayer" />
                                 <figcaption>
-                                    <strong>Jake Treyer</strong>
+                                    <strong>Jake Trayer</strong>
                                     <small>Freemason · Esoteric Scholar</small>
                                 </figcaption>
                             </figure>

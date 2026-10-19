@@ -8,6 +8,7 @@ import Rich from '../christianities/rich';
 import Plate from '../christianities/Plate';
 import DIAGRAMS from './HierarchyDiagrams';
 import PortalHero from '../christianities/PortalHero';
+import PortalEmblem from '../christianities/PortalEmblem';
 
 // One page, five doors of The Powers: hierarchies, host, pantheons, daimons,
 // texts. The Map has its own page. The chrome, the expandable discipline and
@@ -409,6 +410,7 @@ function PowersSectionPage() {
             </Helmet>
             <SiteHeader />
             <PortalHero image={meta.hero} alt={meta.heroAlt} effect={meta.heroEffect}
+                emblem={<PortalEmblem name={`powers/${meta.slug}`} />}
                 kickerLink="/powers" kickerLinkLabel="The Powers"
                 kicker={meta.kicker} title={meta.title} intro={data?.intro} />
             <main className="edu-main">

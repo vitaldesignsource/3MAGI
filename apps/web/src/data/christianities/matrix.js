@@ -131,7 +131,7 @@ export default {
         {
             "key": "marcionite",
             "label": "Marcionite",
-            "labelNote": "Named by opponents for its founder; Marcion's communities called themselves simply the church of Christ.",
+            "labelNote": "Named for its founder, chiefly by opponents — though a Syrian inscription of 318/19 from Lebaba (Deir Ali) shows one congregation styling itself the 'synagogue of the Marcionists'.",
             "holder": "Marcion of Sinope (active in Rome, c. 140) and his church, which persisted in the East into the 5th c. His Antitheses is lost; the position survives chiefly in Tertullian's five-book refutation Against Marcion — a hostile summary, as modern Marcion scholarship (e.g. Judith Lieu) stresses.",
             "answers": {
                 "divine": {
@@ -360,7 +360,7 @@ export default {
                 },
                 "twonatures": {
                     "v": "no",
-                    "note": "The mia-physis formula — one incarnate nature of the God the Word — originates with him; transmitted under Athanasius's name, it reached Cyril as an orthodox heirloom, a documented irony (Lietzmann's collection)."
+                    "note": "The mia-physis formula — one incarnate nature of God the Word — originates with him; transmitted under Athanasius's name, it reached Cyril as an orthodox heirloom, a documented irony (Lietzmann's collection)."
                 },
                 "twowills": {
                     "v": "no",
@@ -436,7 +436,7 @@ export default {
                 },
                 "oneperson": {
                     "v": "yes",
-                    "note": "One incarnate nature of the God the Word (Cyril's formula): the union is hypostatic, the subject single."
+                    "note": "One incarnate nature of God the Word (Cyril's formula): the union is hypostatic, the subject single."
                 },
                 "twonatures": {
                     "v": "q",
