@@ -13,6 +13,7 @@ import EMBLEMS from '../../data/emblems';
 import DoorStrip from './DoorStrip';
 import '../../styles/powers-hero.css';
 import '../../styles/powers-doors.css';
+import '../../styles/powers-tables.css';
 
 // One page, five doors of The Powers: hierarchies, host, pantheons, daimons,
 // texts. The Map has its own page. The chrome, the expandable discipline and
@@ -232,7 +233,13 @@ function Host({ data, open, toggle }) {
     });
 }
 
-function Pantheons({ data, open, toggle }) {
+// Every god's 'Interpretatio' carries a way back to its family's row in the
+// Table of Correspondences; the table's keys are the group keys.
+function Pantheons({ data, open, toggle, corrRows }) {
+    const interpretatio = (group) => (corrRows?.has(group)
+        ? <>Interpretatio<Link className="pw-kv-jump" to={`#corr-${group}`}
+            aria-label="This family's row in the Table of Correspondences">✦</Link></>
+        : 'Interpretatio');
     return data.groups.map((g) => {
         const entries = data.entries.filter((e) => e.group === g.key);
         if (!entries.length) return null;
@@ -252,7 +259,7 @@ function Pantheons({ data, open, toggle }) {
                             sub={e.domain} badge={null}>
                             {e.exposition.map((p, i) => <p key={i}><Rich t={p} /></p>)}
                             {kv('Cult', e.cult)}
-                            {kv('Interpretatio', e.interpretatio)}
+                            {kv(interpretatio(e.group), e.interpretatio)}
                         </Expandable>
                     ))}
                 </div>
@@ -295,12 +302,63 @@ function Texts({ data, open, toggle }) {
     );
 }
 
+// The two comparison tables share their row discipline. A row's name is a
+// real disclosure button (the whole row still answers the mouse), and its
+// notes open beneath as a ledger pinned to the visible width of the scroller,
+// so they read in place however far the cells have been scrolled sideways.
+function RowHead({ label, isOpen, controls, onToggle }) {
+    return (
+        <th scope="row">
+            <button type="button" className="pw-row-toggle" aria-expanded={isOpen}
+                aria-controls={controls}
+                onClick={(ev) => { ev.stopPropagation(); onToggle(); }}>
+                <span>{label}</span>
+                <span className="pw-row-chev" aria-hidden="true" />
+            </button>
+        </th>
+    );
+}
+
+function NotesRow({ id, span, lead, notes }) {
+    return (
+        <tr id={id} className="edu-cog-noterow">
+            <td colSpan={span}>
+                <div className="pw-notes">
+                    {lead}
+                    <dl>
+                        {notes.map(({ key, label, note }) => (
+                            <React.Fragment key={key}>
+                                <dt>{label}</dt>
+                                <dd><Rich t={note} /></dd>
+                            </React.Fragment>
+                        ))}
+                    </dl>
+                </div>
+            </td>
+        </tr>
+    );
+}
+
+// #corr-<family> names a row of the Table of Correspondences (the ✦ beside
+// every god's Interpretatio leads there).
+const corrRowOf = (hash) => {
+    const h = decodeURIComponent((hash || '').slice(1));
+    return h.startsWith('corr-') ? h.slice(5) : null;
+};
+
 // The Table of Correspondences — pantheons against the great offices, in the
 // canon-table's clothes. Cells hold names; the open row tells the stories.
 function Correspondences({ table, entries }) {
     const [openRow, setOpenRow] = useState(
-        () => (typeof window !== 'undefined' ? decodeURIComponent(window.location.hash.slice(1)) : '') || null,
+        () => (typeof window !== 'undefined' ? corrRowOf(window.location.hash) : null),
     );
+    // the key as well as the hash: a second ✦ to the same family, after its
+    // row was closed, opens it again
+    const { hash, key } = useLocation();
+    useEffect(() => {
+        const row = corrRowOf(hash);
+        if (row) setOpenRow(row);
+    }, [hash, key]);
 
     // A cell that names a god this page actually writes up should be a way in.
     // Entry names carry aliases across the slash ("Utu / Shamash"), so index
@@ -309,8 +367,8 @@ function Correspondences({ table, entries }) {
         const m = new Map();
         for (const e of entries ?? []) {
             for (const alias of e.name.split('/')) {
-                const key = alias.trim().toLowerCase();
-                if (key && !m.has(key)) m.set(key, e.slug);
+                const k = alias.trim().toLowerCase();
+                if (k && !m.has(k)) m.set(k, e.slug);
             }
         }
         return m;
@@ -327,7 +385,8 @@ function Correspondences({ table, entries }) {
                 <React.Fragment key={i}>
                     {i > 0 && '; '}
                     {slug
-                        ? <Link className="pw-corr-link" to={`#${slug}`}>{label}</Link>
+                        // the god's entry, not the row: the click stops here
+                        ? <Link className="pw-corr-link" to={`#${slug}`} onClick={(ev) => ev.stopPropagation()}>{label}</Link>
                         : label}
                 </React.Fragment>
             );
@@ -348,7 +407,12 @@ function Correspondences({ table, entries }) {
                     <thead>
                         <tr>
                             <th scope="col" className="ch-canon-bookcol">Pantheon</th>
-                            {table.roles.map((r) => <th scope="col" key={r.key} title={r.gloss}>{r.label}</th>)}
+                            {table.roles.map((r) => (
+                                <th scope="col" key={r.key}>
+                                    <span>{r.label}</span>
+                                    <span className="pw-corr-gloss">{r.gloss}</span>
+                                </th>
+                            ))}
                         </tr>
                     </thead>
                     <tbody>
@@ -357,11 +421,13 @@ function Correspondences({ table, entries }) {
                             const notes = table.roles
                                 .map((r) => ({ r, c: p.cells[r.key] }))
                                 .filter((x) => x.c?.note);
+                            const toggleRow = () => setOpenRow(isOpen ? null : p.key);
                             return (
                                 <React.Fragment key={p.key}>
                                     <tr id={`corr-${p.key}`} className={`has-note ${isOpen ? 'is-open' : ''}`}
-                                        onClick={() => setOpenRow(isOpen ? null : p.key)}>
-                                        <th scope="row">{p.label}</th>
+                                        onClick={toggleRow}>
+                                        <RowHead label={p.label} isOpen={isOpen}
+                                            controls={`corr-note-${p.key}`} onToggle={toggleRow} />
                                         {table.roles.map((r) => (
                                             <td key={r.key} className="pw-corr-cell"
                                                 title={p.cells[r.key]?.note || undefined}>
@@ -370,13 +436,8 @@ function Correspondences({ table, entries }) {
                                         ))}
                                     </tr>
                                     {isOpen && notes.length > 0 && (
-                                        <tr className="edu-cog-noterow">
-                                            <td colSpan={table.roles.length + 1}>
-                                                {notes.map(({ r, c }) => (
-                                                    <p key={r.key}><em>{r.label}</em> — <Rich t={c.note} /></p>
-                                                ))}
-                                            </td>
-                                        </tr>
+                                        <NotesRow id={`corr-note-${p.key}`} span={table.roles.length + 1}
+                                            notes={notes.map(({ r, c }) => ({ key: r.key, label: r.label, note: c.note }))} />
                                     )}
                                 </React.Fragment>
                             );
@@ -389,9 +450,13 @@ function Correspondences({ table, entries }) {
     );
 }
 
+// The three answers are drawn, not set in a font, and each is named for a
+// screen reader with the legend's own words.
+const ANSWER = { yes: 'yes', q: 'qualified', no: 'no' };
+const Mark = ({ v }) => <span className={`mw-mark is-${v}`} aria-hidden="true" />;
+
 function MiddleWorld({ table }) {
     const [openRow, setOpenRow] = useState(null);
-    const MARK = { yes: '●', no: '·', q: '◐' };
     return (
         <section className="ch-matrix has-atmosphere" id="pw-mw" aria-labelledby="pw-mw-heading"
             style={{ '--atmo': "url(/media/fbb3fbfe09076061ed01862a58c394e9.webp)" }}>
@@ -407,7 +472,7 @@ function MiddleWorld({ table }) {
                         <tr>
                             <th scope="col" className="ch-canon-bookcol">Tradition</th>
                             {table.questions.map((q) => (
-                                <th scope="col" key={q.key} title={q.gloss}>{q.label}</th>
+                                <th scope="col" key={q.key} title={q.gloss}><span className="mw-q">{q.label}</span></th>
                             ))}
                         </tr>
                     </thead>
@@ -417,30 +482,36 @@ function MiddleWorld({ table }) {
                             const notes = table.questions
                                 .map((q) => ({ q, c: t.cells[q.key] }))
                                 .filter((x) => x.c?.note);
+                            const toggleRow = () => setOpenRow(isOpen ? null : t.key);
                             return (
                                 <React.Fragment key={t.key}>
                                     <tr className={`has-note ${isOpen ? 'is-open' : ''}`}
-                                        onClick={() => setOpenRow(isOpen ? null : t.key)}>
-                                        <th scope="row">{t.label}</th>
+                                        onClick={toggleRow}>
+                                        <RowHead label={t.label} isOpen={isOpen}
+                                            controls={`mw-note-${t.key}`} onToggle={toggleRow} />
                                         {table.questions.map((q) => {
-                                            const c = t.cells[q.key];
+                                            const v = t.cells[q.key]?.v || 'no';
                                             return (
-                                                <td key={q.key} className={`ch-canon-cell st-${c?.v || 'no'}`}
+                                                <td key={q.key} className={`ch-canon-cell st-${v}`}
                                                     title={`${t.label} — ${q.label}`}>
-                                                    {MARK[c?.v] || '·'}
+                                                    <Mark v={v} /><span className="sr-only">{ANSWER[v]}</span>
                                                 </td>
                                             );
                                         })}
                                     </tr>
                                     {isOpen && (
-                                        <tr className="edu-cog-noterow">
-                                            <td colSpan={table.questions.length + 1}>
-                                                <p className="ch-matrix-holder"><em>Era.</em> {t.era}</p>
-                                                {notes.map(({ q, c }) => (
-                                                    <p key={q.key}><em>{q.label}</em> — <Rich t={c.note} /></p>
-                                                ))}
-                                            </td>
-                                        </tr>
+                                        <NotesRow id={`mw-note-${t.key}`} span={table.questions.length + 1}
+                                            lead={<p className="ch-matrix-holder"><em>Era.</em> {t.era}</p>}
+                                            notes={notes.map(({ q, c }) => ({
+                                                key: q.key,
+                                                label: (
+                                                    <span className="pw-notes-key">
+                                                        <Mark v={c.v || 'no'} />
+                                                        <span>{q.label}<span className="sr-only"> ({ANSWER[c.v || 'no']})</span></span>
+                                                    </span>
+                                                ),
+                                                note: c.note,
+                                            }))} />
                                     )}
                                 </React.Fragment>
                             );
@@ -545,6 +616,10 @@ function SectionPage() {
     }, [data, hash, key]);
 
     const index = useMemo(() => indexFor(data, extras), [data, extras]);
+    const corrRows = useMemo(
+        () => (extras.correspondences ? new Set(extras.correspondences.pantheons.map((p) => p.key)) : null),
+        [extras],
+    );
 
     if (!meta || !Renderer) return <Navigate to="/powers" replace />;
     if (state === 'loading') {
@@ -566,7 +641,7 @@ function SectionPage() {
                 kicker={meta.kicker} title={meta.title} intro={data?.intro} />
             <main className="edu-main">
                 {index && <PageIndex items={index.items} variant={index.variant} />}
-                {data && <Renderer data={data} open={open} toggle={toggle} />}
+                {data && <Renderer data={data} open={open} toggle={toggle} corrRows={corrRows} />}
                 {extras.correspondences && <Correspondences table={extras.correspondences} entries={data?.entries} />}
                 {extras.middleworld && <MiddleWorld table={extras.middleworld} />}
                 {extras.words && <PowersWords words={extras.words} />}

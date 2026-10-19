@@ -9,6 +9,7 @@ import PortalHero from '../christianities/PortalHero';
 import PortalEmblem from '../christianities/PortalEmblem';
 import EMBLEMS from '../../data/emblems';
 import '../../styles/powers-hero.css';
+import '../../styles/powers-tables.css';
 import { SECTION_BY_SLUG } from './lib';
 import LAND from '../../data/powers/mapland';
 import DoorStrip from './DoorStrip';
