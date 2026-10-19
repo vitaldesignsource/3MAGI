@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+<title>Steiner’s Rose Cross (1910)</title>
+<desc>Follows the 1910 text and its colours: a black cross, and seven red, radiant roses in a circle where the beams cross. The Latin form of the cross, its proportions, the roses’ petals and the size of the circle are the drawing’s own. The text names no ground, so the dark ground and the gold keyline that lets the black cross show are the drawing’s own too. The green ring, leaves, stars and lettering of later renderings are left out, because the text does not have them.</desc>
+<!--
+  After Rudolf Steiner, Die Geheimwissenschaft im Umriss (Leipzig: Max Altmann,
+  1910), the chapter on knowledge of the higher worlds and initiation (GA 13);
+  in English as Occult Science - An Outline and An Outline of Esoteric Science.
+  The text, not any later rendering: a black cross, and seven red, radiant roses
+  set in a circle at the place where the beams cross.
+  From the text: the black of the cross, the red of the roses, their number (7),
+    their arrangement in a circle, and its place at the crossing of the beams.
+  The drawing's own:
+    the Latin form of the cross (the text says only "a black cross"; the Latin
+      form is the convention of the tradition's renderings);
+    upright 320 tall, y 40 to 360, 40 wide; crossbar 220 long, x 90 to 310,
+      40 wide, centred at y 150; crossing at (200,150);
+    the circle of the roses, radius 62, centred exactly on the crossing, one
+      rose at its top, the others every 360/7 degrees; the circle not drawn;
+    each rose about 34 across: five petals in two rows, the inner row turned
+      36 degrees, a darker centre; each turned so a petal points outward;
+    the soft lighter glow behind each rose, the drawing's reading of "radiant"
+      (no rays);
+    the ground: the text names none; the house's dark ground is used, with a
+      gold keyline about 2 wide round the whole outline of the cross so that
+      the black shows on it.
+  Left out: the green wreath or ring joining the roses, leaves, stars,
+    inscriptions and any frame, common in later anthroposophical renderings
+    and absent from the 1910 text.
+  Uncertain: whether a version of the image was shown at the Munich congress
+    of May 1907. An editorial note to GA 264 reports a Rosicrucian seal first
+    given for that congress, with a blue ground, a black cross and seven stars,
+    which may be a different image; not verified.
+-->
+<defs>
+<linearGradient id="k" gradientUnits="userSpaceOnUse" x1="90" y1="40" x2="310" y2="360"><stop offset="0" stop-color="#ecd9ae"/><stop offset=".3" stop-color="#c9a86a"/><stop offset="1" stop-color="#c9a86a"/></linearGradient>
+<radialGradient id="glow"><stop offset="0" stop-color="#ff9a7c" stop-opacity=".62"/><stop offset=".55" stop-color="#e2523f" stop-opacity=".28"/><stop offset="1" stop-color="#c22c26" stop-opacity="0"/></radialGradient>
+<linearGradient id="ro" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#6e1018"/><stop offset=".55" stop-color="#b1242a"/><stop offset="1" stop-color="#d9493f"/></linearGradient>
+<linearGradient id="ri" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#8a161e"/><stop offset=".6" stop-color="#c3302f"/><stop offset="1" stop-color="#e8624f"/></linearGradient>
+<radialGradient id="rc" cx=".42" cy=".4" r=".6"><stop offset="0" stop-color="#7a1418"/><stop offset="1" stop-color="#3a080c"/></radialGradient>
+<path id="po" d="M0 -3C-6 -3.5 -10.4 -8.6 -9.7 -12.4C-9 -15.9 -4.6 -17.2 0 -17.2C4.6 -17.2 9 -15.9 9.7 -12.4C10.4 -8.6 6 -3.5 0 -3Z" fill="url(#ro)" stroke="#3a0a0d" stroke-width=".8" stroke-linejoin="round"/>
+<path id="pi" d="M0 -1.8C-3.7 -2.1 -6.3 -5.3 -5.8 -7.8C-5.3 -10 -2.8 -10.7 0 -10.7C2.8 -10.7 5.3 -10 5.8 -7.8C6.3 -5.3 3.7 -2.1 0 -1.8Z" fill="url(#ri)" stroke="#3a0a0d" stroke-width=".7" stroke-linejoin="round"/>
+<g id="rose">
+<use href="#po"/><use href="#po" transform="rotate(72)"/><use href="#po" transform="rotate(144)"/><use href="#po" transform="rotate(216)"/><use href="#po" transform="rotate(288)"/>
+<circle r="10.6" fill="#2a0609" fill-opacity=".4"/>
+<g transform="rotate(36)"><use href="#pi"/><use href="#pi" transform="rotate(72)"/><use href="#pi" transform="rotate(144)"/><use href="#pi" transform="rotate(216)"/><use href="#pi" transform="rotate(288)"/></g>
+<circle r="3.6" fill="url(#rc)" stroke="#2a0609" stroke-width=".6"/>
+</g>
+</defs>
+<!-- the black cross -->
+<path d="M180 40H220V130H310V170H220V360H180V170H90V130H180Z" fill="#000"/>
+<!-- the radiance behind the roses -->
+<g fill="url(#glow)">
+<circle cx="200" cy="88" r="27"/>
+<circle cx="248.47" cy="111.34" r="27"/>
+<circle cx="260.45" cy="163.8" r="27"/>
+<circle cx="226.9" cy="205.86" r="27"/>
+<circle cx="173.1" cy="205.86" r="27"/>
+<circle cx="139.55" cy="163.8" r="27"/>
+<circle cx="151.53" cy="111.34" r="27"/>
+</g>
+<!-- the gold keyline round the whole outline of the cross, above the radiance -->
+<path d="M180 40H220V130H310V170H220V360H180V170H90V130H180Z" fill="none" stroke="url(#k)" stroke-width="2" stroke-linejoin="miter"/>
+<!-- the seven red roses, in a circle about the crossing (200,150) -->
+<use href="#rose" transform="translate(200 88)"/>
+<use href="#rose" transform="translate(248.47 111.34) rotate(51.43)"/>
+<use href="#rose" transform="translate(260.45 163.8) rotate(102.86)"/>
+<use href="#rose" transform="translate(226.9 205.86) rotate(154.29)"/>
+<use href="#rose" transform="translate(173.1 205.86) rotate(205.71)"/>
+<use href="#rose" transform="translate(139.55 163.8) rotate(257.14)"/>
+<use href="#rose" transform="translate(151.53 111.34) rotate(308.57)"/>
+</svg>

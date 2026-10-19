@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+<title>The parted fire: one fire, twelve tongues</title>
+<!--
+  The parted fire. An original emblem drawn in 2026 for the Christianities portal
+  of Three Magi Press. It is not a historical object and not the badge of any
+  church, order or movement.
+  Made from:
+  - Acts 2:1-11. "And there appeared unto them cloven tongues like as of fire, and
+    it sat upon each of them" (2:3, KJV); Greek diamerizomenai glossai hosei pyros,
+    tongues as of fire being parted among them. Each hearer heard them "in his own
+    language" (2:6, 2:8). Acts is in every Christian canon, the 22-book Syriac
+    Peshitta included, and every ancient communion, and nearly every church, keeps
+    Pentecost. The Fathers read the day as Babel reversed: one confession heard in
+    many tongues. To read the parting as plurality present from the start is this
+    emblem's own reading, not a claim about the text.
+  - The Byzantine Pentecost icon: heaven as a segment of concentric bands at the
+    top edge, with rays going down, one to each of the company. Here the bands
+    darken toward the centre, the Palaiologan way of showing uncreated light as
+    darkness, with a few stars as on many heaven segments. The count of twelve is
+    the icon's, which usually seats Paul at the head with Peter, and often Luke and
+    Mark; in Acts the Twelve are completed by Matthias (1:26), and the "all" of 2:1
+    may be the hundred and twenty of 1:15. Tongues over each of the company are
+    already in the Syriac Rabbula Gospels (586).
+  - No dove (Acts 2 has wind and fire, not a dove), no cross, and gold only: red
+    for Pentecost is a Latin usage and Slavic Orthodox vest in green, so the fire
+    takes no church's colour. The image is the shared feast, not the badge of the
+    Pentecostal movement, and it is unrelated to the United Methodist cross and
+    flame.
+  Geometry: the twelve rays leave one point, the bright source at (200,32), which
+  is the centre of the heaven circles. The tongue tips lie on a circle through
+  that point (centre (200,162), radius 130), 20 degrees of arc apart, so by the
+  inscribed-angle theorem the rays leave the source at equal angles of 10 degrees.
+  Inside the dark centre of heaven the rays are seen converging; under the two
+  outer bands they are hidden; below heaven they come out. Each ray tapers from
+  1.6 to 4.5 units and stops 7 short of its own tongue. The twelve tongues are one
+  shape, the right six its mirror image, each leaning toward the source in
+  proportion to its ray's angle with the tip curling back toward upright, and each
+  with an ivory inner tongue rising into its neck. Nothing stands on the axis
+  below the source.
+-->
+<defs>
+<radialGradient id="halo" cx="200" cy="200" r="200" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#0d0b0a" stop-opacity=".85"/><stop offset=".8" stop-color="#0d0b0a" stop-opacity=".8"/><stop offset="1" stop-color="#0d0b0a" stop-opacity="0"/></radialGradient>
+<linearGradient id="g" x1="0" y1="0" x2="0" y2="400" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ecd9ae"/><stop offset=".55" stop-color="#c9a86a"/><stop offset="1" stop-color="#a8874f"/></linearGradient>
+<radialGradient id="ray" cx="200" cy="32" r="260" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ecd9ae"/><stop offset=".3" stop-color="#d9bf86"/><stop offset="1" stop-color="#c9a86a" stop-opacity=".7"/></radialGradient>
+<linearGradient id="fo" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f4e8cc"/><stop offset=".45" stop-color="#e2c993"/><stop offset="1" stop-color="#a8874f"/></linearGradient>
+<clipPath id="in"><circle cx="200" cy="200" r="176.8"/></clipPath>
+</defs>
+<circle cx="200" cy="200" r="200" fill="url(#halo)"/>
+<g clip-path="url(#in)">
+<circle cx="200" cy="32" r="24" fill="#0d0b0a"/>
+<path fill="url(#ray)" fill-opacity=".75" d="M198.8 36.9L175.8 283.1L180.3 283.5L200.4 37.1ZM197.9 36.6L134.6 267.3L139 268.5L199.5 37ZM197.2 36.2L101.3 238.4L105.4 240.3L198.6 36.9ZM196.5 35.6L80 199.5L83.7 202L197.8 36.6ZM195.9 35L73.3 155.6L76.4 158.7L197 36.1ZM195.4 34.2L82.2 111.7L84.8 115.4L196.4 35.5ZM199.6 37.1L219.7 283.5L224.2 283.1L201.2 36.9ZM200.5 37L261 268.5L265.4 267.3L202.1 36.6ZM201.4 36.9L294.6 240.3L298.7 238.4L202.8 36.2ZM202.2 36.6L316.3 202L320 199.5L203.5 35.6ZM203 36.1L323.6 158.7L326.7 155.6L204.1 35ZM203.6 35.5L315.2 115.4L317.8 111.7L204.6 34.2Z"/>
+<path fill="#0d0b0a" fill-rule="evenodd" d="M140 32a60 60 0 1 0 120 0a60 60 0 1 0 -120 0ZM176 32a24 24 0 1 1 48 0a24 24 0 1 1 -48 0Z"/>
+<path fill="#a8874f" fill-opacity=".22" fill-rule="evenodd" d="M140 32a60 60 0 1 0 120 0a60 60 0 1 0 -120 0ZM158 32a42 42 0 1 1 84 0a42 42 0 1 1 -84 0Z"/>
+<path fill="#a8874f" fill-opacity=".1" fill-rule="evenodd" d="M158 32a42 42 0 1 0 84 0a42 42 0 1 0 -84 0ZM176 32a24 24 0 1 1 48 0a24 24 0 1 1 -48 0Z"/>
+<g fill="none" stroke="#c9a86a"><circle cx="200" cy="32" r="60" stroke-width="2.6"/><circle cx="200" cy="32" r="42" stroke-width="1.8"/><circle cx="200" cy="32" r="24" stroke-width="1.6"/></g>
+<g fill="#ecd9ae"><circle cx="155.8" cy="57.5" r="2"/><circle cx="177.6" cy="77.8" r="2"/><circle cx="222.4" cy="77.8" r="2"/><circle cx="244.2" cy="57.5" r="2"/></g></g>
+<circle cx="200" cy="200" r="186" fill="none" stroke="url(#g)" stroke-width="5"/>
+<circle cx="200" cy="200" r="178" fill="none" stroke="#a8874f" stroke-width="2.4"/>
+<circle cx="200" cy="32" r="3.6" fill="#fbf3df"/>
+<g fill="url(#fo)"><path d="M177.4 290C172.1 293.3 168.9 298.4 168.6 304.4C168.4 310.5 173.4 314.2 175.7 320.4C178 326.6 178.5 333.5 177 338.7C174.9 344.6 171.2 347.9 166.9 347.7C162.6 347.4 158.5 344.2 157.9 338.5C157.3 332.4 159.8 327.4 162.6 322.3C165.5 317.3 164.9 310.3 166.9 303.5C168.9 296.6 172.6 292.4 177.4 290Z"/><path d="M135 274.6C129.4 277.5 125.8 282.3 125.1 288.3C124.3 294.3 129 298.4 130.7 304.8C132.4 311.2 132.2 318.3 130.1 323.3C127.4 329 123.4 331.9 119.1 331.1C114.9 330.4 111.1 326.7 111.2 321.1C111.3 315 114.2 310.3 117.5 305.5C120.8 300.8 120.9 293.8 123.5 287.2C126 280.6 130 276.6 135 274.6Z"/><path d="M100.4 245.6C94.7 248 90.7 252.5 89.5 258.5C88.2 264.4 92.5 268.9 93.6 275.5C94.6 282.1 93.7 289.1 91.1 293.9C87.8 299.3 83.5 301.7 79.3 300.5C75.2 299.3 71.8 295.2 72.5 289.7C73.2 283.7 76.6 279.3 80.4 274.9C84.1 270.5 84.8 263.6 87.9 257.3C91 250.9 95.2 247.3 100.4 245.6Z"/><path d="M77.8 206.5C71.9 208.5 67.6 212.7 65.9 218.5C64.1 224.3 68 229.2 68.5 235.9C68.9 242.5 67.2 249.5 64.1 254C60.2 259.1 55.7 261 51.7 259.3C47.7 257.7 44.8 253.3 46.1 247.8C47.4 242 51.2 238 55.4 234.1C59.5 230 60.8 223.2 64.5 217.2C68.1 211 72.6 207.8 77.8 206.5Z"/><path d="M70 162C63.9 163.6 59.3 167.5 57.1 173.1C54.8 178.7 58.3 183.9 58.1 190.6C57.9 197.4 55.5 204.2 51.9 208.4C47.5 213 42.7 214.4 39 212.3C35.2 210.2 32.8 205.5 34.7 200.3C36.6 194.7 40.7 191.1 45.3 187.6C49.7 184 51.6 177.4 55.8 171.7C59.9 165.8 64.6 162.9 70 162Z"/><path d="M77.8 117.5C71.7 118.7 66.7 122.2 64.1 127.6C61.4 133 64.3 138.5 63.6 145.2C62.6 151.9 59.6 158.5 55.5 162.3C50.6 166.5 45.7 167.4 42.2 164.8C38.7 162.3 36.9 157.4 39.2 152.4C41.7 147.1 46.2 144 51 141C55.8 137.8 58.3 131.4 62.9 126.1C67.5 120.6 72.4 118.1 77.8 117.5Z"/><path d="M222.6 290C227.9 293.3 231.1 298.4 231.4 304.4C231.6 310.5 226.6 314.2 224.3 320.4C222 326.6 221.5 333.5 223 338.7C225.1 344.6 228.8 347.9 233.1 347.7C237.4 347.4 241.5 344.2 242.1 338.5C242.7 332.4 240.2 327.4 237.4 322.3C234.5 317.3 235.1 310.3 233.1 303.5C231.1 296.6 227.4 292.4 222.6 290Z"/><path d="M265 274.6C270.6 277.5 274.2 282.3 274.9 288.3C275.7 294.3 271 298.4 269.3 304.8C267.6 311.2 267.8 318.3 269.9 323.3C272.6 329 276.6 331.9 280.9 331.1C285.1 330.4 288.9 326.7 288.8 321.1C288.7 315 285.8 310.3 282.5 305.5C279.2 300.8 279.1 293.8 276.5 287.2C274 280.6 270 276.6 265 274.6Z"/><path d="M299.6 245.6C305.3 248 309.3 252.5 310.5 258.5C311.8 264.4 307.5 268.9 306.4 275.5C305.4 282.1 306.3 289.1 308.9 293.9C312.2 299.3 316.5 301.7 320.7 300.5C324.8 299.3 328.2 295.2 327.5 289.7C326.8 283.7 323.4 279.3 319.6 274.9C315.9 270.5 315.2 263.6 312.1 257.3C309 250.9 304.8 247.3 299.6 245.6Z"/><path d="M322.2 206.5C328.1 208.5 332.4 212.7 334.1 218.5C335.9 224.3 332 229.2 331.5 235.9C331.1 242.5 332.8 249.5 335.9 254C339.8 259.1 344.3 261 348.3 259.3C352.3 257.7 355.2 253.3 353.9 247.8C352.6 242 348.8 238 344.6 234.1C340.5 230 339.2 223.2 335.5 217.2C331.9 211 327.4 207.8 322.2 206.5Z"/><path d="M330 162C336.1 163.6 340.7 167.5 342.9 173.1C345.2 178.7 341.7 183.9 341.9 190.6C342.1 197.4 344.5 204.2 348.1 208.4C352.5 213 357.3 214.4 361 212.3C364.8 210.2 367.2 205.5 365.3 200.3C363.4 194.7 359.3 191.1 354.7 187.6C350.3 184 348.4 177.4 344.2 171.7C340.1 165.8 335.4 162.9 330 162Z"/><path d="M322.2 117.5C328.3 118.7 333.3 122.2 335.9 127.6C338.6 133 335.7 138.5 336.4 145.2C337.4 151.9 340.4 158.5 344.5 162.3C349.4 166.5 354.3 167.4 357.8 164.8C361.3 162.3 363.1 157.4 360.8 152.4C358.3 147.1 353.8 144 349 141C344.2 137.8 341.7 131.4 337.1 126.1C332.5 120.6 327.6 118.1 322.2 117.5Z"/></g>
+<path fill="#fbf3df" d="M173.3 296.8C170.5 300.2 169.5 305.3 170.9 311.5C172.4 317.6 174.3 322.9 173.1 328.9C172 334.1 169.7 336.6 167.5 336.4C165.4 336.3 163.8 334.1 163.9 331.1C164.1 326.7 166.5 322.5 167.6 317.4C168.8 311.4 168.7 301.8 173.3 296.8ZM130.3 281.1C127.3 284.2 125.8 289.3 126.8 295.5C127.7 301.7 129.1 307.2 127.3 313.1C125.7 318.1 123.1 320.4 121 320C118.8 319.7 117.5 317.3 117.9 314.3C118.6 310.1 121.4 306.1 123 301.1C124.6 295.2 125.4 285.7 130.3 281.1ZM95.3 251.7C92 254.6 90.1 259.5 90.5 265.8C90.8 272.1 91.7 277.7 89.4 283.5C87.2 288.3 84.4 290.3 82.4 289.7C80.3 289.1 79.2 286.6 79.9 283.7C81 279.5 84.1 275.9 86.2 271C88.4 265.3 90 255.9 95.3 251.7ZM72.2 212.2C68.8 214.8 66.5 219.6 66.3 225.9C66 232.2 66.4 237.9 63.5 243.4C60.8 248 57.9 249.7 55.9 248.9C53.9 248.1 53 245.5 54.1 242.7C55.6 238.7 59 235.3 61.5 230.7C64.2 225.2 66.6 216 72.2 212.2ZM64 167.3C60.3 169.7 57.6 174.2 56.9 180.5C56.1 186.8 55.9 192.5 52.4 197.7C49.3 202 46.2 203.4 44.3 202.4C42.4 201.4 41.8 198.7 43.1 196C45 192.2 48.8 189.2 51.7 184.9C54.9 179.7 58.1 170.7 64 167.3ZM71.4 122.4C67.6 124.5 64.5 128.8 63.3 135C61.8 141.2 61.1 146.9 57.2 151.7C53.6 155.7 50.4 156.8 48.6 155.6C46.8 154.4 46.5 151.7 48.1 149.1C50.3 145.5 54.4 142.9 57.7 138.9C61.3 134 65.3 125.3 71.4 122.4ZM226.7 296.8C229.5 300.2 230.5 305.3 229.1 311.5C227.6 317.6 225.7 322.9 226.9 328.9C228 334.1 230.3 336.6 232.5 336.4C234.6 336.3 236.2 334.1 236.1 331.1C235.9 326.7 233.5 322.5 232.4 317.4C231.2 311.4 231.3 301.8 226.7 296.8ZM269.7 281.1C272.7 284.2 274.2 289.3 273.2 295.5C272.3 301.7 270.9 307.2 272.7 313.1C274.3 318.1 276.9 320.4 279 320C281.2 319.7 282.5 317.3 282.1 314.3C281.4 310.1 278.6 306.1 277 301.1C275.4 295.2 274.6 285.7 269.7 281.1ZM304.7 251.7C308 254.6 309.9 259.5 309.5 265.8C309.2 272.1 308.3 277.7 310.6 283.5C312.8 288.3 315.6 290.3 317.6 289.7C319.7 289.1 320.8 286.6 320.1 283.7C319 279.5 315.9 275.9 313.8 271C311.6 265.3 310 255.9 304.7 251.7ZM327.8 212.2C331.2 214.8 333.5 219.6 333.7 225.9C334 232.2 333.6 237.9 336.5 243.4C339.2 248 342.1 249.7 344.1 248.9C346.1 248.1 347 245.5 345.9 242.7C344.4 238.7 341 235.3 338.5 230.7C335.8 225.2 333.4 216 327.8 212.2ZM336 167.3C339.7 169.7 342.4 174.2 343.1 180.5C343.9 186.8 344.1 192.5 347.6 197.7C350.7 202 353.8 203.4 355.7 202.4C357.6 201.4 358.2 198.7 356.9 196C355 192.2 351.2 189.2 348.3 184.9C345.1 179.7 341.9 170.7 336 167.3ZM328.6 122.4C332.4 124.5 335.5 128.8 336.7 135C338.2 141.2 338.9 146.9 342.8 151.7C346.4 155.7 349.6 156.8 351.4 155.6C353.2 154.4 353.5 151.7 351.9 149.1C349.7 145.5 345.6 142.9 342.3 138.9C338.7 134 334.7 125.3 328.6 122.4Z"/>
+</svg>

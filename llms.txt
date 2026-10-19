@@ -1,13 +1,88 @@
-## Pages
-- [| The Third Lamp`}](/articles/:slug): No description available
-- [About | The Third Lamp](/third-lamp/about): No description available
-- [Books | Three Magi Press](/books): No description available
-- [Contact — The Third Lamp](/third-lamp/contact): Write to the editors of The Third Lamp: editorial enquiries, membership questions, permissions, tips for The Lamp Post, and press.
-- [Membership | The Third Lamp](/plans): Support The Third Lamp and read the full archive: monthly, yearly, or a single lifetime offering.
-- [Restore access | The Third Lamp](/restore): No description available
-- [The Living Archive | The Third Lamp](/third-lamp/archive): No description available
-- [The Open Gate | Contribute to The Third Lamp](/third-lamp/contribute): No description available
-- [The Scriptorium — The Third Lamp](/third-lamp/education): The Third Lamp
-- [The Third Lamp | Three Magi Press](/third-lamp): No description available
-- [Three Magi Press | Hermetic, Occult & Alchemical Books](/): No description available
-- [Welcome | The Third Lamp](/welcome): No description available
+# Three Magi Press
+
+> Three Magi Press publishes hermetic, occult and alchemical books and The Third Lamp, a digital magazine of esoteric history, with three reference portals: Christianities, The Powers, and the Scriptorium of sacred languages. Claims are kept apart from the documentary record throughout.
+
+## Three Magi Press
+- [Home](https://threemagipress.com/): Three Magi Press publishes hermetic, occult and alchemical books, and The Third Lamp: a digital esoteric magazine of sacred history, living tradition, and the hidden architecture of ideas.
+- [Books](https://threemagipress.com/books): The Architecture of the Unseen: seven books of ritual, symbol and transmutation, from first principles and the living medium to sacred measure, the microcosm and the return to source.
+
+## The Third Lamp
+- [The Third Lamp](https://threemagipress.com/third-lamp): The Third Lamp, the digital esoteric magazine of Three Magi Press: essays, research, art and field notes where the visible and the invisible are read as one text.
+- [The Living Archive](https://threemagipress.com/third-lamp/archive): The Living Archive of The Third Lamp: every essay and field note, searchable, and filtered by tradition and by discipline.
+- [The Lamp Post](https://threemagipress.com/third-lamp/lamp-post): The Lamp Post, The Third Lamp’s bulletin of the esoteric world: newly surfaced manuscripts, exhibitions, auctions, archaeology, translations, papers and new books, each with its source.
+- [Authors](https://threemagipress.com/third-lamp/authors): The writers, editors, translators and contemplative scholars of The Third Lamp, working where sacred history, philosophy and living tradition meet.
+- [About](https://threemagipress.com/third-lamp/about): About The Third Lamp: essays, research, art, field notes, interviews and translations devoted to the hidden dimensions of reality, without sacrificing discernment, craft or intellectual seriousness.
+- [The Open Gate: contribute](https://threemagipress.com/third-lamp/contribute): The Open Gate: how to contribute essays, research, art, interviews, translations and field notes to The Third Lamp, and what its editors look for.
+- [Contact](https://threemagipress.com/third-lamp/contact): Write to the editors of The Third Lamp: editorial enquiries, membership questions, permissions, tips for The Lamp Post, and press.
+
+## Essays
+- [The Secret Inside the Seed: Ontology, Teleology, and the Hidden Direction of Being](https://threemagipress.com/articles/the-secret-inside-the-seed): Every claim about purpose conceals a claim about being. What a thing is, and what it is becoming, are one question asked twice.
+- [The Stars of the Dead: Stellar Immortality, Ancestral Ascent, and the Lights That Never Die](https://threemagipress.com/articles/the-stars-of-the-dead): The earliest heaven was not a place above the earth. It was a condition of no longer setting.
+- [Phanes: The God Who Became Visible: The Orphic mystery of the cosmic egg, the first light, and the divine life concealed within creation](https://threemagipress.com/articles/phanes-the-god-who-became-visible): Before Apollo carried the sun there was a radiance with no sky to shine through. What must happen for the hidden to become visible?
+- [Fire Above the Stars: The Chaldean Oracles and the Lost Art of Becoming Divine](https://threemagipress.com/articles/fire-above-the-stars): A scripture that survives only as sparks quoted inside other books, and the proposition that the soul must become able to receive the divine.
+- [The Black Mirror of Fire](https://threemagipress.com/articles/black-mirror-of-fire): Obsidian, the volcanic stone of vision, shadow, and hidden power.
+- [Melchizedek and the Eternal Priest-King](https://threemagipress.com/articles/melchizedek-eternal-priest-king): The hidden order beyond temple, tribe, and time. (members)
+- [Herculaneum](https://threemagipress.com/articles/herculaneum): The buried library beneath Vesuvius and the reawakening of the ancient mind. (members)
+- [The Lodge and the Totem: Freemasonry, Symbolic Brotherhood, and the Ancient Mystery of the Sacred Emblem](https://threemagipress.com/articles/lodge-and-totem): Freemasonry, symbolic brotherhood, and the sacred emblem. (members)
+- [The Underground Lightning: Vril, Vital Magnetism, and the Dangerous Dream of a Hidden Life-Force](https://threemagipress.com/articles/underground-lightning): From Mesmer's animal magnetism to Bulwer-Lytton's vril to the dark political fantasies of the twentieth century — a hidden electrical force haunts the modern esoteric imagination. (members)
+- [Ways of Being](https://threemagipress.com/articles/ways-of-being): On presence, reflection, and the integration of cognition into a grounded mode of being.
+- [The Myth Is More Real Than The Facts: Mythopoeia and Reality in the Information Age](https://threemagipress.com/articles/myth-is-more-real-than-facts): Modernity did not destroy myth — it simply forgot that it was still making it. On mythopoeia, archetypalization, and the sacred mechanics of meaning-making.
+- [The World Is an Offering. I Am. The Sacrifice.](https://threemagipress.com/articles/the-world-is-an-offering): A diptych of handwritten verse and woodcut-style relief print on sacrifice, offering, and the altar of becoming.
+- [Unfamiliar Territory](https://threemagipress.com/articles/unfamiliar-territory): A cautionary account of inexperienced astral projection, the dangers of the hidden world, and the necessity of proper initiation and guidance.
+- [Strange Allies: Esotericism, UFOs, and the Preservation of Thought](https://threemagipress.com/articles/the-right-to-question): Two stigmatized fields of inquiry — the esoteric and the ufological — share a single ancestor: the refusal to stop asking.
+- [The Twice Born: Theurgy, Orthodoxy, and the Alchemical Christ](https://threemagipress.com/articles/the-twice-born)
+- [The Art of Learning to See](https://threemagipress.com/articles/the-art-of-learning-to-see): On the parable of the one-eyed king, the nature of perception, and the work of becoming fully awake.
+- [Occult Symbols as Technologies of the Practitioner](https://threemagipress.com/articles/occult-symbols-technologies-practitioner): What if the symbol does not first change the world — but first changes the person using it? On sigils, talismans, and the mechanics of magick as a technology of attention, memory, and perception.
+- [Three Months Upon the Scales](https://threemagipress.com/articles/three-months-upon-the-scales): Who knew that a heart could be weighed for three months straight? In the Hall, there is no time; only the hour of the night.
+
+## Christianities
+- [Christianities](https://threemagipress.com/christianities): A portal on the family of Christianities: every understanding of Christ, the branches and sects, the councils and their arguments, the making of the different Bibles, the figures, the symbols, and an interactive map and timeline.
+- [The Understandings of Christ](https://threemagipress.com/christianities/christologies): Every major answer the centuries gave — Ebionite to Chalcedonian, Arian to kenotic — each stated as its holders stated it, with the scripture each side carried into the argument.
+- [The Branches](https://threemagipress.com/christianities/branches): From the first communities to the newest movements: the churches, schools and sects, each with its own name for itself, its lineage, and what became of it.
+- [The Councils and the Arguments](https://threemagipress.com/christianities/councils): Jerusalem to Vatican II — what question each council faced, what it decided, who refused, and which church exists today because of that refusal.
+- [The Making of the Bibles](https://threemagipress.com/christianities/canon): How the different Bibles were assembled: the criteria, the councils, the printers — and a table of every book against every canon, from the Tanakh's 24 to the Ethiopian 81.
+- [The Figures](https://threemagipress.com/christianities/figures): The people the arguments happened through: apostles and apologists, desert mothers and doctors, the condemned and the canonized.
+- [The Symbolism](https://threemagipress.com/christianities/symbols): Chi-Rho to khachkar: where each sign came from, what it meant, who used it — and how long the cross itself took to become an image anyone would draw.
+- [The Inner Tradition](https://threemagipress.com/christianities/esoteric): Origen’s restoration of all things, the divine darkness of Dionysius, Eckhart’s ground of the soul, the Jesus Prayer, the Christian Cabala, the rose and the cross, Böhme, Swedenborg, Russian Sophia — the inner tradition, with what the churches actually ruled about each of them recorded beside it.
+- [The Map](https://threemagipress.com/christianities/map): An interactive map of the Christianities: councils, patriarchates, schools, missions, martyrdoms and revivals, filtered by era, from the Mediterranean cradle to the world.
+- [The Rose and the Cross](https://threemagipress.com/christianities/rosicrucian): The Rosicrucian manifestos of 1614–1616, the brotherhood nobody could find, and a ledger of every claim about its origins set against what the record will bear — from the tomb of Christian Rosenkreuz to the Golden Dawn's forged warrant.
+
+## The Powers
+- [The Powers](https://threemagipress.com/powers): A portal on angels, angelology, daimons, and the gods: the hierarchies and choirs, the named beings, the pantheons and their correspondences, the daimonic middle world, the primary texts, and an interactive map and timeline.
+- [The Hierarchies](https://threemagipress.com/powers/hierarchies): How the traditions ordered the unseen: the nine choirs of Dionysius, Maimonides’ ten ranks, the Amesha Spentas, the archons and aeons — every ladder set out with its rungs.
+- [The Host](https://threemagipress.com/powers/host): Michael and Gabriel, Metatron and Raziel, Iblis and Azazel, Sophia and the daimon of Socrates — the beings themselves, each in its own tradition’s words.
+- [The Pantheons](https://threemagipress.com/powers/pantheons): Sumer to Yorubaland, Olympus to the kami — the great families, their members, and the table of correspondences that lets one walk between them.
+- [The Daimons](https://threemagipress.com/powers/daimons): The daimon before it was a demon: Hesiod’s watchers, Socrates’ inner voice, the jinn, the daeva inversion, and how the middle spirits were pushed down the ladder.
+- [The Texts](https://threemagipress.com/powers/texts): The Book of the Watchers to the Celestial Hierarchy, the Enuma Elish to the Kojiki — the primary works, what each one carries, and where to read it.
+- [The Map](https://threemagipress.com/powers/map): An interactive map of the cults, oracles, visions and schools of the powers: Uruk to Teotihuacan, Delphi to Ise, Qumran to Mortlake.
+
+## The Scriptorium
+- [The Scriptorium](https://threemagipress.com/third-lamp/education): The Third Lamp's education portal: a reading room of public-domain esoteric books in PDF, and language halls for Latin, Greek, Hebrew, Egyptian, Cuneiform, Sanskrit, Arabic, Tibetan, Syriac, Coptic, Aramaic, Persian, Armenian, Geʼez, Classical Chinese and Church Slavonic — alphabets, divine names, sacred texts and lexicons.
+- [The Latin hall](https://threemagipress.com/third-lamp/education/latin): The working tongue of alchemy, liturgy, and the printed grimoire — the language the Western tradition thinks in.
+- [The Greek hall](https://threemagipress.com/third-lamp/education/greek): The alphabet of the mysteries: gnosis, logos, and the number-letters of isopsephy.
+- [The Hebrew hall](https://threemagipress.com/third-lamp/education/hebrew): Twenty-two letters held to be the instruments of creation itself — the grammar of Kabbalah.
+- [The Egyptian hall](https://threemagipress.com/third-lamp/education/egyptian): The hieroglyphs of the House of Life: sacred writing where image, sound, and power are one.
+- [The Cuneiform hall](https://threemagipress.com/third-lamp/education/cuneiform): Sumerian and Akkadian pressed into clay — the oldest writing, and the oldest gods to be written down.
+- [The Sanskrit hall](https://threemagipress.com/third-lamp/education/sanskrit): The perfected tongue: mantra, Veda, and a grammar its own tradition treated as revelation.
+- [The Arabic hall](https://threemagipress.com/third-lamp/education/arabic): The letters of the Qur’an, and after them the lettrism, alchemy, and Sufi metaphysics of the Islamic world.
+- [The Tibetan hall](https://threemagipress.com/third-lamp/education/tibetan): Vajrayāna in its own script: tantra, subtle body, the bardo, and the treasures hidden for later ages.
+- [The Syriac hall](https://threemagipress.com/third-lamp/education/syriac): The Aramaic of the eastern churches — mystical theology, angelology, and the channel by which Greek learning reached Arabic.
+- [The Coptic hall](https://threemagipress.com/third-lamp/education/coptic): Egypt writing itself in Greek letters: the Gnostic library, the desert fathers, and a Christian magic still full of older gods.
+- [The Aramaic hall](https://threemagipress.com/third-lamp/education/aramaic): The lingua franca of empires — incantation bowls, Mandaean scripture, and the demonology of late antiquity.
+- [The Persian hall](https://threemagipress.com/third-lamp/education/persian): Illuminationist philosophy, Sufi poetry, and the talismanic and alchemical sciences of the Iranian world.
+- [The Armenian hall](https://threemagipress.com/third-lamp/education/armenian): A script made for scripture: apocrypha, Solomonic magic, amulet scrolls, and visionary literature preserved nowhere else.
+- [The Geʼez hall](https://threemagipress.com/third-lamp/education/geez): The liturgical tongue of Ethiopia, which alone preserved Enoch entire — with its magic scrolls, its angels and its demons.
+- [The Classical Chinese hall](https://threemagipress.com/third-lamp/education/chinese): The literary language of the Daoist canon: alchemy inner and outer, talismans, thunder rites, and the cosmology of the Yijing.
+- [The Church Slavonic hall](https://threemagipress.com/third-lamp/education/slavonic): Two alphabets for one tongue — Glagolitic then Cyrillic — carrying apocrypha, Bogomil dualism, and the forbidden books the Slavic church listed by name.
+- [The Mandaic hall](https://threemagipress.com/third-lamp/education/mandaic): The last living Gnostics, whose alphabet is itself a doctrine — twenty-four letters that begin and end with the same sign, so the sequence closes on itself rather than stopping.
+- [The Avestan hall](https://threemagipress.com/third-lamp/education/avestan): An alphabet invented to stop a liturgy drifting: fifty-odd letters devised in the Sasanian period so that a thousand years of oral transmission could be fixed without loss.
+- [The Ugaritic hall](https://threemagipress.com/third-lamp/education/ugaritic): The first alphabet, pressed into clay in wedges — thirty signs in an order the Latin alphabet still keeps, and abecedaries from Ras Shamra that prove it.
+- [The Phoenician hall](https://threemagipress.com/third-lamp/education/phoenician): Twenty-two consonants that became Hebrew, Aramaic, Greek and through Greek these letters — the most consequential technology in the history of writing, and it fits on one line.
+- [The Greatest Name](https://threemagipress.com/third-lamp/education/arabic/course): Eight lessons from the twenty-eight letters to the Light Verse — and the Basmala reckoned at 786. 8 lessons.
+- [Before the Alphabet](https://threemagipress.com/third-lamp/education/cuneiform/course): Eight lessons from the first accounts at Uruk to the opening of the Babylonian creation epic — and the square root of two, read off a tablet of 1800 BC. 8 lessons.
+- [The Scribe's First Year](https://threemagipress.com/third-lamp/education/egyptian/course): Eight lessons from the first sign to a whole line of the offering formula — the sentence carved on Egyptian monuments more often than any other. 8 lessons.
+- [Reading the Mysteries](https://threemagipress.com/third-lamp/education/greek/course): Eight lessons from the four-and-twenty letters to ἐν ἀρχῇ ἦν ὁ λόγος. 8 lessons.
+- [The Letters of Creation](https://threemagipress.com/third-lamp/education/hebrew/course): Eight lessons from the shape of the aleph to the Shema and the first mishnah of Sefer Yetzirah. 8 lessons.
+- [An Alchemist's Latin](https://threemagipress.com/third-lamp/education/latin/course): Eight lessons, from the twenty-three letters of Rome to the Emerald Tablet read whole. 8 lessons.
+- [The Perfected Tongue](https://threemagipress.com/third-lamp/education/sanskrit/course): Eight lessons from the first vowel to the Gāyatrī — the verse recited at dawn for three thousand years — read in its own script, with every word accounted for. 8 lessons.
+- [Fire in the Letters](https://threemagipress.com/third-lamp/education/syriac/course): Eight lessons from the twenty-two letters to Ephrem on Fire and Spirit — and a manuscript dated from its own colophon. 8 lessons.
