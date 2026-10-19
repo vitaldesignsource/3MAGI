@@ -560,6 +560,7 @@ function ThirdLampContributePage() {
         <div className="third-lamp-scope">
             <Helmet>
                 <title>The Open Gate | Contribute to The Third Lamp</title>
+                <meta name="description" content="The Open Gate: how to contribute essays, research, art, interviews, translations and field notes to The Third Lamp, and what its editors look for." />
             </Helmet>
             <ThirdLampHeader active="contribute" />
 

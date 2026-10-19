@@ -8,6 +8,7 @@ function ThirdLampAboutPage() {
   return <>
             <Helmet>
                 <title>About | The Third Lamp</title>
+                <meta name="description" content="About The Third Lamp: essays, research, art, field notes, interviews and translations devoted to the hidden dimensions of reality, without sacrificing discernment, craft or intellectual seriousness." />
             </Helmet>
 
             <div className="third-lamp-scope">

@@ -230,6 +230,7 @@ function ThirdLampAuthorsPage() {
         <>
             <Helmet>
                 <title>Authors | The Third Lamp</title>
+                <meta name="description" content="The writers, editors, translators and contemplative scholars of The Third Lamp, working where sacred history, philosophy and living tradition meet." />
             </Helmet>
 
             <div className="third-lamp-scope">

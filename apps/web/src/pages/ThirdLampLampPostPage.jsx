@@ -168,6 +168,7 @@ function ThirdLampLampPostPage() {
         <>
             <Helmet>
                 <title>The Lamp Post | The Third Lamp | Three Magi Press</title>
+                <meta name="description" content="The Lamp Post, The Third Lamp’s bulletin of the esoteric world: newly surfaced manuscripts, exhibitions, auctions, archaeology, translations, papers and new books, each with its source." />
             </Helmet>
 
             <div className="third-lamp-scope">
