@@ -12067,8 +12067,9 @@ figure.ch-gallery-card { margin: 0; }
 }
 
 /* --- the ranks as a ladder --------------------------------------------------
-   A hierarchy printed as a flat list argues nothing. Each rung steps in and
-   dims very slightly as the light descends, against a rail. */
+   A hierarchy printed as a flat list argues nothing. Each rung steps in
+   against a rail; its mark dims as the light descends, while the words keep
+   full contrast (numerals and dimming: styles/powers-diagrams.css). */
 .pw-ranks.is-ladder {
   list-style: none; padding-left: 0; position: relative;
   margin-left: 0.4rem; border-left: 1px solid rgba(179, 139, 70, 0.28);
@@ -12076,7 +12077,6 @@ figure.ch-gallery-card { margin: 0; }
 .pw-ranks.is-ladder li {
   position: relative;
   padding-left: calc(1.5rem + var(--rung, 0) * 0.42rem);
-  opacity: calc(1 - var(--rung, 0) * 0.045);
 }
 .pw-rung-mark {
   position: absolute; left: calc(var(--rung, 0) * 0.42rem); top: 0.62em;
