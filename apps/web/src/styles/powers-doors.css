@@ -4,8 +4,10 @@
    Christianities pages that use the same classes do not change.
    Read top to bottom: the reader's place (anchors, plates), the register
    of entries, the entry head, the open entry as a printed page, the index
-   under the hero and the group openers, the door strip at the foot, and the
-   reduced-motion block that stills all of it. */
+   under the hero and the group openers, the door strip at the foot, the
+   plates and teasers of the daimons list, the spine of the ordered lists,
+   the words as lexicon cards, and the reduced-motion block that stills all
+   of it. */
 
 /* ---------------------------------------------------------------------------
    The reader's place. The site header is fixed; its real height is written
@@ -515,6 +517,142 @@
 }
 
 /* ---------------------------------------------------------------------------
+   Plates in the closed list (daimons, where every entry has one): a small
+   square crop at the left of the head, muted until the hand or the focus
+   reaches it, full colour once open; and the entry's own closing line as an
+   italic teaser under the head, gone when the entry opens. */
+.pw-page .ch-entry-head.has-thumb {
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  /* the second row takes any height the plate adds, so the teaser sits
+     right under the titles */
+  grid-template-rows: auto 1fr;
+  grid-template-areas: "thumb titles toggle" "thumb teaser toggle";
+  /* the shared head's flex gap would also part the rows */
+  row-gap: 0;
+}
+.pw-page .ch-entry-head.has-thumb.has-badge {
+  grid-template-columns: auto minmax(0, 1fr) auto auto;
+  grid-template-areas: "thumb titles badge toggle" "thumb teaser teaser toggle";
+}
+.pw-page .ch-entry-head.has-thumb > .ch-entry-thumb { grid-area: thumb; }
+.pw-page .ch-entry-head.has-thumb > .ch-entry-titles { grid-area: titles; }
+.pw-page .ch-entry-head.has-thumb > .ch-entry-teaser { grid-area: teaser; }
+.pw-page .ch-entry-head.has-thumb > .ch-entry-badge { grid-area: badge; }
+.pw-page .ch-entry-head.has-thumb > .ch-entry-toggle { grid-area: toggle; }
+
+.pw-page .ch-entry-thumb {
+  display: block;
+  align-self: start;
+  width: 4.5rem; height: 4.5rem;
+  overflow: hidden;
+  border: 1px solid rgba(179, 139, 70, 0.35);
+  background: #15110c;
+}
+.pw-page .ch-entry-thumb img {
+  display: block;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  filter: saturate(0.55) brightness(0.8);
+  transition: filter 300ms ease;
+}
+.pw-page .ch-entry-head:hover .ch-entry-thumb img,
+.pw-page .ch-entry-head:focus-visible .ch-entry-thumb img,
+.pw-page .ch-entry.is-open .ch-entry-thumb img { filter: none; }
+
+.pw-page .ch-entry-teaser {
+  display: block;
+  margin-top: 0.35rem;
+  font: italic 0.92rem/1.55 Georgia, "Times New Roman", serif;
+  letter-spacing: 0.005em;
+  color: rgba(236, 217, 174, 0.74);
+  text-wrap: pretty;
+}
+
+/* a phone keeps C's restack: the plate stands beside the tradition and the
+   title, and the teaser runs the full width beneath them */
+@media (max-width: 640px) {
+  .pw-page .ch-entry-head.has-thumb,
+  .pw-page .ch-entry-head.has-thumb.has-badge {
+    grid-template-columns: auto minmax(0, 1fr) auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: "thumb titles toggle" "teaser teaser teaser";
+    column-gap: 0.85rem;
+    row-gap: 0.3rem;
+  }
+  .pw-page .ch-entry-head.has-thumb.has-badge {
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: "thumb badge toggle" "thumb titles titles" "teaser teaser teaser";
+  }
+  .pw-page .ch-entry-thumb { width: 3.4rem; height: 3.4rem; }
+  .pw-page .ch-entry-teaser { margin-top: 0.2rem; }
+}
+
+/* ---------------------------------------------------------------------------
+   The spine. Lists that run in time order (hierarchies, daimons, texts) hang
+   from a fine gold line in the left gutter, a hollow house diamond at each
+   entry that fills gold for the open one. Only where the gutter is wide. */
+@media (min-width: 1000px) {
+  .pw-page .pw-spine { position: relative; }
+  .pw-page .pw-spine::before {
+    content: "";
+    position: absolute;
+    /* centred on the diamonds below */
+    left: calc(-2rem - 0.5px);
+    top: 0.5rem; bottom: 0.5rem;
+    width: 1px;
+    background: linear-gradient(180deg, transparent, rgba(179, 139, 70, 0.45) 3%,
+      rgba(179, 139, 70, 0.45) 97%, transparent);
+    pointer-events: none;
+  }
+  .pw-page .pw-spine > .ch-entry::after {
+    content: "";
+    position: absolute;
+    left: calc(-2rem - 3.5px);
+    top: 1.5rem;
+    width: 7px; height: 7px;
+    transform: rotate(45deg);
+    border: 1px solid rgba(209, 173, 104, 0.75);
+    background: #0b0a08;
+    pointer-events: none;
+  }
+  .pw-page .pw-spine > .ch-entry.is-open::after {
+    background: #d1ad68;
+    box-shadow: 0 0 10px rgba(209, 173, 104, 0.5);
+  }
+}
+
+/* ---------------------------------------------------------------------------
+   The words as lexicon cards: two to a row where there is room, one on a
+   phone, the native word large above its transliteration, and the open
+   word across the whole row. The cards keep a frame of their own here, in
+   place of the register's hairlines. */
+.pw-page .ch-words .ch-entry-list {
+  max-width: 62rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 24rem), 1fr));
+  gap: 0.8rem;
+  border: 0;
+}
+.pw-page .ch-words .ch-entry,
+.pw-page .ch-words .ch-entry:last-child {
+  border: 1px solid rgba(179, 139, 70, 0.22);
+}
+.pw-page .ch-words .ch-entry.is-open {
+  grid-column: 1 / -1;
+  margin: 0;
+  /* one gold frame, not the register's outline outside a border */
+  outline: 0;
+  border-color: rgba(209, 173, 104, 0.45);
+}
+.pw-page .ch-words .ch-word-native {
+  display: block;
+  margin: 0 0 0.2rem;
+  font-size: 1.9rem;
+  line-height: 1.15;
+  text-shadow: 0 0 18px rgba(209, 173, 104, 0.25);
+}
+
+/* ---------------------------------------------------------------------------
    Reduced motion: the unfold, the chevron, the rails, the seal lift and the
    smooth scroll all still. */
 @keyframes pw-unfold {
@@ -530,7 +668,8 @@
   .pw-page .ch-entry-close,
   .pw-page .pw-doorstrip-home,
   .pw-page .pw-doorstrip li a,
-  .pw-page .pw-doorstrip-seal { transition: none; }
+  .pw-page .pw-doorstrip-seal,
+  .pw-page .ch-entry-thumb img { transition: none; }
   .pw-page .ch-entry-body { animation: none; }
   .pw-page .pw-doorstrip li a:hover .pw-doorstrip-seal { transform: none; }
 }

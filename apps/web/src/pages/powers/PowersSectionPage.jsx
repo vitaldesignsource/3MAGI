@@ -95,13 +95,23 @@ function useEntryToggle(open, setOpen) {
 // under the page title and 3 under a group's h2; the heading takes the
 // button's look, not the global h2/h3 sizes. A native name is its own line
 // above the English one, tagged with its language.
-function Expandable({ id, head, sub, badge, native, level = 2, children, open, onToggle }) {
+// A door whose every entry has a plate may show it small in the head
+// (`thumb`), and a line from the entry under the closed head (`teaser`).
+// Both stay out of the accessible name: the plate and the line belong to the
+// body, and the teaser goes as soon as the entry opens.
+function Expandable({ id, head, sub, badge, native, thumb, teaser, level = 2, children, open, onToggle }) {
     const H = `h${level}`;
+    const headClass = `ch-entry-head${badge ? ' has-badge' : ''}${thumb ? ' has-thumb' : ''}`;
     return (
         <article id={id} className={`ch-entry${open ? ' is-open' : ''}`}>
             <H className="ch-entry-h">
-                <button type="button" id={`${id}-head`} className={`ch-entry-head${badge ? ' has-badge' : ''}`}
+                <button type="button" id={`${id}-head`} className={headClass}
                     aria-expanded={open} aria-controls={`${id}-body`} onClick={onToggle}>
+                    {thumb && (
+                        <span className="ch-entry-thumb" aria-hidden="true">
+                            <img src={`/media/${thumb}`} alt="" loading="lazy" decoding="async" width="72" height="72" />
+                        </span>
+                    )}
                     <span className="ch-entry-titles">
                         {native?.text && (
                             <bdi className="edu-glyph ch-entry-native" lang={native.lang} data-script={native.script}>{native.text}</bdi>
@@ -109,6 +119,7 @@ function Expandable({ id, head, sub, badge, native, level = 2, children, open, o
                         <span className="ch-entry-name">{head}</span>
                         {sub && <span className="ch-entry-sub">{sub}</span>}
                     </span>
+                    {teaser && !open && <span className="ch-entry-teaser" aria-hidden="true"><Rich t={teaser} /></span>}
                     {badge && <span className="ch-entry-badge">{badge}</span>}
                     <span className="ch-entry-toggle" aria-hidden="true" />
                 </button>
@@ -168,9 +179,11 @@ function indexFor(data, extras) {
     return { variant: 'flat', items };
 }
 
+// Hierarchies, Daimons and Texts run in time order: their lists carry the
+// gold spine (pw-spine), drawn in the left gutter on a wide screen.
 function Hierarchies({ data, open, toggle }) {
     return (
-        <div className="ch-entry-list">
+        <div className="ch-entry-list pw-spine">
             {data.entries.map((e) => (
                 <Expandable key={e.slug} id={e.slug} open={open === e.slug} level={2}
                     onToggle={() => toggle(e.slug)}
@@ -268,12 +281,17 @@ function Pantheons({ data, open, toggle, corrRows }) {
     });
 }
 
+// Every daimons entry has its plate, so the closed list shows them small, and
+// each entry's 'The shift' as its teaser: read down, the twelve lines are the
+// long demotion. A door where only some entries have plates keeps plain heads.
 function Daimons({ data, open, toggle }) {
+    const plated = data.entries.every((e) => e.image);
     return (
-        <div className="ch-entry-list">
+        <div className="ch-entry-list pw-spine">
             {data.entries.map((e) => (
                 <Expandable key={e.slug} id={e.slug} open={open === e.slug} level={2}
                     onToggle={() => toggle(e.slug)}
+                    thumb={plated ? e.image : undefined} teaser={plated ? e.shift : undefined}
                     head={e.name} sub={e.era} badge={e.tradition}>
                     <Plate item={e} />
                     {e.exposition.map((p, i) => <p key={i}><Rich t={p} /></p>)}
@@ -287,7 +305,7 @@ function Daimons({ data, open, toggle }) {
 
 function Texts({ data, open, toggle }) {
     return (
-        <div className="ch-entry-list">
+        <div className="ch-entry-list pw-spine">
             {data.entries.map((e) => (
                 <Expandable key={e.slug} id={e.slug} open={open === e.slug} level={2}
                     onToggle={() => toggle(e.slug)}
