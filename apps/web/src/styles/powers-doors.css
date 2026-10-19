@@ -1,0 +1,536 @@
+/* The Powers — the door pages below the hero.
+   The entry lists, tables and dividers are the Christianities machinery,
+   shared outright, so every rule here is held to `.pw-page`: the
+   Christianities pages that use the same classes do not change.
+   Read top to bottom: the reader's place (anchors, plates), the register
+   of entries, the entry head, the open entry as a printed page, the index
+   under the hero and the group openers, the door strip at the foot, and the
+   reduced-motion block that stills all of it. */
+
+/* ---------------------------------------------------------------------------
+   The reader's place. The site header is fixed; its real height is written
+   to --pw-header by the page (it wraps to a second line at some widths), so
+   a deep link lands the entry's name just below it, never under it. */
+.pw-page {
+  --pw-header: 94px;
+}
+.pw-page .ch-entry,
+.pw-page .ch-matrix,
+.pw-page .ch-words,
+.pw-page .pw-index,
+.pw-page tr[id] {
+  scroll-margin-top: calc(var(--pw-header) + 1.1rem);
+}
+/* a group opens with its numbered medallion, which stands above the rule */
+.pw-page .ch-group {
+  scroll-margin-top: calc(var(--pw-header) + 2.4rem);
+}
+
+/* a wide group plate keeps its frame before the picture arrives, so a jump
+   to an entry below it is not moved by a late image */
+.pw-page .pw-entry-figure.is-wide .pw-plate-stage {
+  aspect-ratio: 16 / 9;
+  max-height: 380px;
+}
+.pw-page .pw-entry-figure.is-wide img {
+  height: 100%;
+  max-height: none;
+}
+
+/* ---------------------------------------------------------------------------
+   The register. One ruled column, hairlines between the rows, not a stack
+   of boxes; a gold rail grows down the left of the row under the hand, and
+   only the open entry becomes a framed, warmer leaf. */
+.pw-page .ch-entry-list {
+  gap: 0;
+  border-block: 1px solid rgba(179, 139, 70, 0.45);
+}
+.pw-page .ch-entry {
+  position: relative;
+  border: 0;
+  border-bottom: 1px solid rgba(179, 139, 70, 0.16);
+  background: transparent;
+  transition: background-color 200ms ease, box-shadow 200ms ease;
+}
+.pw-page .ch-entry:last-child { border-bottom: 0; }
+.pw-page .ch-entry::before {
+  content: "";
+  position: absolute; z-index: 3;
+  left: 0; top: 0; bottom: 0; width: 2px;
+  background: #c9a86a;
+  transform: scaleY(0); transform-origin: top;
+  transition: transform 280ms cubic-bezier(0.22, 1, 0.36, 1);
+  pointer-events: none;
+}
+.pw-page .ch-entry:hover::before,
+.pw-page .ch-entry.is-open::before { transform: scaleY(1); }
+.pw-page .ch-entry.is-open {
+  margin: 0.5rem 0;
+  outline: 1px solid rgba(209, 173, 104, 0.45);
+  background: linear-gradient(180deg, rgba(30, 24, 16, 0.95), rgba(16, 13, 10, 0.9) 14rem);
+  box-shadow: inset 0 1px 0 rgba(236, 217, 174, 0.14), 0 14px 36px rgba(0, 0, 0, 0.4);
+}
+/* rows that sit over a section's photograph keep a ground of their own */
+.pw-page .has-atmosphere .ch-entry:not(.is-open) { background: rgba(10, 8, 6, 0.78); }
+
+/* the heading that holds each toggle takes the button's look, not the
+   global h2/h3 display sizes */
+.pw-page .ch-entry-h {
+  margin: 0;
+  font: inherit;
+  letter-spacing: inherit;
+  line-height: inherit;
+  color: inherit;
+  text-wrap: inherit;
+}
+
+/* ---------------------------------------------------------------------------
+   The entry head: titles, the tradition, and a drawn chevron that turns
+   when the entry opens. The tradition is an unboxed gold label, top-aligned
+   with the title and never dimmed, however often it repeats. */
+.pw-page .ch-entry-head {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  column-gap: 1.1rem;
+  align-items: start;
+}
+.pw-page .ch-entry-head.has-badge { grid-template-columns: minmax(0, 1fr) auto auto; }
+.pw-page .ch-entry-head:focus-visible {
+  outline: 2px solid #d1ad68;
+  outline-offset: -3px;
+}
+.pw-page .ch-entry-name { overflow-wrap: anywhere; }
+.pw-page .ch-entry-badge {
+  border: 0; padding: 0;
+  margin-top: 0.25rem;
+  max-width: 15rem;
+  text-align: right;
+  font-size: 0.7rem; letter-spacing: 0.14em; line-height: 1.55;
+  color: rgba(209, 173, 104, 0.9);
+}
+.pw-page .ch-entry-toggle {
+  flex: none;
+  align-self: center;
+  width: 0.55rem; height: 0.55rem;
+  margin-right: 0.15rem;
+  border-right: 1px solid #d1ad68;
+  border-bottom: 1px solid #d1ad68;
+  transform: translateY(-2px) rotate(45deg);
+  transition: transform 240ms ease;
+}
+.pw-page .ch-entry.is-open .ch-entry-toggle { transform: translateY(2px) rotate(-135deg); }
+
+/* open: a hairline under the head and the name in pale gold */
+.pw-page .ch-entry.is-open .ch-entry-head {
+  border-bottom: 1px solid rgba(179, 139, 70, 0.2);
+  margin-bottom: 1.1rem;
+}
+.pw-page .ch-entry.is-open .ch-entry-name { color: #ecd9ae; }
+
+/* the native name: its own line above the English one, so the English names
+   share one left edge down the list; each script at its optical size */
+.pw-page .ch-entry-native {
+  display: block;
+  margin-bottom: 0.15rem;
+  text-align: left;
+  color: #ecd9ae;
+  font-size: 1.05rem;
+  line-height: 1.3;
+}
+.pw-page .ch-entry-native[data-script="hieroglyphic"] { font-size: 1.4rem; }
+.pw-page .ch-entry-native[data-script="cuneiform"] { font-size: 0.95rem; }
+.pw-page .ch-entry-native[data-script="latin"] {
+  font-family: Georgia, "Times New Roman", serif;
+  font-style: italic;
+  font-size: 0.95rem;
+  color: rgba(236, 217, 174, 0.85);
+}
+/* Japanese in a Mincho face where the reader has one (the Chinese Song
+   stack serves :lang(zh)) */
+.pw-page .edu-glyph:lang(ja) {
+  font-family: "Hiragino Mincho ProN", "Yu Mincho", "YuMincho", "Noto Serif CJK JP",
+               "Source Han Serif JP", "Noto Serif JP", "Songti SC", "Noto Serif CJK SC", "SimSun", serif;
+}
+/* the bridge sentence quotes 𒀭; the cuneiform face claims only its own block */
+.pw-page .ch-words-bridge {
+  font-family: Georgia, "TL Cuneiform", "Times New Roman", serif;
+}
+
+/* a phone restacks rather than squeezes: the tradition becomes a kicker
+   line beside the chevron, and the title takes the whole width */
+@media (max-width: 640px) {
+  .pw-page .ch-entry-head,
+  .pw-page .ch-entry-head.has-badge {
+    grid-template-columns: minmax(0, 1fr) auto;
+    grid-template-areas: "titles toggle";
+    padding: 0.85rem 0.95rem;
+    row-gap: 0.3rem;
+  }
+  .pw-page .ch-entry-head.has-badge { grid-template-areas: "badge toggle" "titles titles"; }
+  .pw-page .ch-entry-titles { grid-area: titles; }
+  .pw-page .ch-entry-badge {
+    grid-area: badge;
+    max-width: none;
+    text-align: left;
+    margin: 0;
+    font-size: 0.64rem; letter-spacing: 0.18em;
+  }
+  .pw-page .ch-entry-toggle {
+    grid-area: toggle;
+    align-self: start;
+    margin-top: 0.3rem;
+  }
+}
+
+/* ---------------------------------------------------------------------------
+   The open entry as a printed page: a reading measure, the back-matter set
+   off after a hairline as label and text, the crux last and in pale gold,
+   and a tall plate beside the text at its true proportions. */
+.pw-page .ch-entry-body { display: flow-root; }
+@media (min-width: 761px) {
+  .pw-page .ch-entry-body { padding: 0.2rem clamp(1.2rem, 3.5vw, 2.4rem) 1.6rem; }
+}
+/* about 70 characters of the 1.01rem Georgia to the line (the full card
+   ran to 105–110) */
+.pw-page .ch-entry-body > p,
+.pw-page .ch-entry-body > .ch-kv { max-width: 30rem; }
+/* the ladder's rungs are short lines, each stepped in: give them room to
+   stay on one line */
+.pw-page .ch-entry-body > .ch-kv.is-ranks { max-width: 40rem; }
+
+.pw-page .ch-entry-body > .ch-kv:not(.is-ranks) {
+  border-top: 1px solid rgba(179, 139, 70, 0.16);
+  padding-top: 0.9rem;
+  margin-top: 1rem;
+}
+.pw-page .ch-entry-body > .ch-kv:not(.is-ranks) + .ch-kv {
+  border-top: 0;
+  margin-top: 0.5rem;
+}
+.pw-page .ch-kv > span {
+  font-size: 0.72rem;
+  color: rgba(209, 173, 104, 0.9);
+}
+@media (min-width: 761px) {
+  .pw-page .ch-entry-body > .ch-kv:not(.is-ranks) {
+    display: grid;
+    grid-template-columns: 9.5rem minmax(0, 1fr);
+    column-gap: 1.4rem;
+    /* the label sits in its own column, so the text keeps the prose measure */
+    max-width: 40.9rem;
+    clear: both;
+  }
+  .pw-page .ch-entry-body > .ch-kv:not(.is-ranks) > span {
+    margin: 0;
+    padding-top: 0.42rem;
+  }
+}
+.pw-page .ch-entry-body > .ch-kv.is-crux,
+.pw-page .ch-entry-body > .ch-kv + .ch-kv.is-crux {
+  border-top: 0;
+  margin-top: 1.1rem;
+  border-left: 2px solid rgba(209, 173, 104, 0.6);
+  padding: 0.8rem 1.1rem;
+  background: linear-gradient(90deg, rgba(28, 22, 15, 0.75), rgba(28, 22, 15, 0));
+}
+.pw-page .ch-kv.is-crux p { color: #ecd9ae; font-size: 1.06rem; }
+.pw-page .ch-kv.is-source p { font-size: 0.92rem; color: rgba(222, 212, 196, 0.78); }
+
+@media (min-width: 761px) {
+  /* narrow enough that the lines beside it keep the full measure */
+  .pw-page .pw-entry-figure.is-portrait {
+    float: right;
+    width: min(36%, 15.5rem);
+    margin: 0.35rem 0 1.2rem 1.6rem;
+  }
+  .pw-page .pw-entry-figure.is-portrait img { max-height: none; height: auto; }
+  .pw-page .ch-entry-body .pw-diagram,
+  .pw-page .ch-entry-body .ch-kv.is-ranks { clear: both; }
+}
+
+/* a long open entry keeps its head pinned under the site header until it
+   ends, and closes from its foot as well as its head */
+@media (min-width: 761px) {
+  .pw-page .ch-entry.is-open > .ch-entry-h {
+    position: sticky;
+    top: var(--pw-header);
+    z-index: 2;
+    /* opaque: the ladder and the prose pass beneath it */
+    background: #1c1610;
+    box-shadow: 0 10px 18px -14px rgba(0, 0, 0, 0.9);
+  }
+}
+.pw-page .ch-entry-close {
+  display: flex; align-items: center; gap: 0.6rem;
+  width: fit-content;
+  min-height: 44px;
+  clear: both;
+  margin: 1.6rem auto 0;
+  padding: 0.45rem 1.1rem;
+  background: none;
+  border: 1px solid rgba(209, 173, 104, 0.35);
+  color: #d1ad68;
+  font: 500 0.7rem/1 "Cinzel", Georgia, serif;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: border-color 180ms ease, color 180ms ease;
+}
+.pw-page .ch-entry-close::after {
+  content: "";
+  width: 0.4rem; height: 0.4rem;
+  border-left: 1px solid currentColor;
+  border-top: 1px solid currentColor;
+  transform: translateY(0.12rem) rotate(45deg);
+}
+.pw-page .ch-entry-close:hover { color: #ecd9ae; border-color: rgba(209, 173, 104, 0.7); }
+.pw-page .ch-entry-close:focus-visible { outline: 2px solid #d1ad68; outline-offset: 2px; }
+
+/* ---------------------------------------------------------------------------
+   On this page: one ruled band under the hero. Doors with groups list them
+   numbered, with their counts; doors without list their entries. */
+.pw-page .pw-index {
+  max-width: 62rem;
+  margin: 0 auto clamp(2rem, 5vw, 3.5rem);
+  padding: 0.9rem 0;
+  border-block: 1px solid rgba(179, 139, 70, 0.3);
+}
+.pw-page .pw-index ol { list-style: none; margin: 0; padding: 0; }
+.pw-page .pw-index a {
+  font-family: "Cinzel", Georgia, serif;
+  font-size: 0.82rem;
+  letter-spacing: 0.05em;
+  color: #ecd9ae;
+  text-decoration: none;
+}
+.pw-page .pw-index a:hover { color: #f6ead0; box-shadow: inset 0 -1px 0 #d1ad68; }
+.pw-page .pw-index a:focus-visible { color: #f6ead0; outline: 2px solid #d1ad68; outline-offset: 2px; }
+
+.pw-page .pw-index.is-groups ol {
+  counter-reset: pw-idx;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+  column-gap: 1.6rem;
+}
+.pw-page .pw-index.is-groups li { counter-increment: pw-idx; display: flex; }
+.pw-page .pw-index.is-groups a {
+  flex: 1;
+  display: flex; align-items: baseline; gap: 0.6rem;
+  min-height: 44px;
+  padding: 0.55rem 0.3rem;
+  border-bottom: 1px dotted rgba(179, 139, 70, 0.2);
+}
+.pw-page .pw-index.is-groups a::before {
+  content: counter(pw-idx, upper-roman);
+  flex: none;
+  min-width: 2rem;
+  font-size: 0.68rem;
+  letter-spacing: 0.06em;
+  color: rgba(209, 173, 104, 0.8);
+}
+.pw-page .pw-index li.is-table a::before { content: "✦"; }
+.pw-page .pw-index-count {
+  margin-left: auto;
+  padding-left: 0.4rem;
+  font: 0.8rem Georgia, "Times New Roman", serif;
+  color: rgba(222, 212, 196, 0.66);
+}
+
+/* the flat index: the entries' names in a centred run, each hung from the
+   house diamond; the sections that follow the list carry the ✦ */
+.pw-page .pw-index.is-flat { max-width: 52rem; }
+.pw-page .pw-index.is-flat ol {
+  display: flex; flex-wrap: wrap; justify-content: center;
+  gap: 0.35rem 1.25rem;
+  max-width: 52rem;
+  margin: 0 auto;
+}
+.pw-page .pw-index.is-flat li { display: flex; align-items: baseline; }
+.pw-page .pw-index.is-flat li::before {
+  content: "";
+  flex: none;
+  width: 4px; height: 4px;
+  margin-right: 0.55rem;
+  transform: translateY(-0.2em) rotate(45deg);
+  border: 1px solid rgba(209, 173, 104, 0.7);
+}
+.pw-page .pw-index.is-flat li.is-section::before {
+  content: "✦";
+  width: auto; height: auto;
+  border: 0;
+  transform: none;
+  font-size: 0.66rem;
+  color: rgba(209, 173, 104, 0.85);
+}
+.pw-page .pw-index.is-flat a { display: inline-block; padding: 0.2rem 0; }
+
+@media (max-width: 760px) {
+  .pw-page .pw-index.is-groups ol { grid-template-columns: 1fr 1fr; column-gap: 0.8rem; }
+  .pw-page .pw-index a { font-size: 0.76rem; }
+  .pw-page .pw-index.is-flat ol { justify-content: flex-start; }
+  .pw-page .pw-index.is-groups a::before { min-width: 1.6rem; }
+}
+
+/* ---------------------------------------------------------------------------
+   Group openers. Every company and family opens with a roman-numeral
+   medallion that matches its numeral in the index, the first included; the
+   plain ✦ divider loses the dark chip it carried, so it sits clean on any
+   ground; and the group's h2 steps down so the Table stays the culmination. */
+.pw-page .edu-main { counter-reset: pw-grp; }
+.pw-page .ch-group { counter-increment: pw-grp; }
+.pw-page .ch-group:first-of-type .pw-divider { display: block; }
+.pw-page .pw-divider {
+  background: linear-gradient(90deg, transparent, rgba(179, 139, 70, 0.5) 40%,
+    transparent 46%, transparent 54%, rgba(179, 139, 70, 0.5) 60%, transparent);
+}
+.pw-page .pw-divider::after { background: none; }
+.pw-page .ch-group .pw-divider::after {
+  content: counter(pw-grp, upper-roman);
+  width: 2.6rem; height: 2.6rem;
+  padding: 0;
+  display: grid; place-items: center;
+  border: 1px solid rgba(209, 173, 104, 0.55);
+  border-radius: 50%;
+  background: radial-gradient(circle, #15110c 62%, #0c0a08);
+  font: 0.72rem "Cinzel", Georgia, serif;
+  letter-spacing: 0.04em;
+  color: #d1ad68;
+  box-shadow: 0 0 18px rgba(209, 173, 104, 0.12);
+}
+.pw-page .ch-group .edu-section-head h2 { font-size: clamp(2rem, 4.2vw, 3.5rem); }
+
+/* a section kicker speaks in the display voice, like the hero's: the
+   reading-voice rule meant for the section's prose had caught it too.
+   Held to the door pages' own <main> (it follows the door hero), so the
+   /powers landing reads the same whether or not a door was visited first. */
+.pw-page .ch-hero.is-door ~ .edu-main .edu-section-head p.kicker {
+  font-family: "Cinzel", Georgia, "Times New Roman", serif;
+  letter-spacing: 0.14em;
+}
+@media (max-width: 760px) {
+  .pw-page .ch-hero.is-door ~ .edu-main .edu-section-head p.kicker { letter-spacing: 0.22em; }
+}
+
+/* ---------------------------------------------------------------------------
+   The door strip at the foot of every door: the way back to The Powers and
+   the six doors in order, each with its seal; the current one marked. */
+.pw-page .pw-doorstrip {
+  max-width: 62rem;
+  margin: clamp(3rem, 6vw, 5rem) auto 0;
+  text-align: center;
+}
+.pw-page .pw-doorstrip .pw-divider { margin-top: 0; }
+.pw-page .pw-doorstrip-home {
+  display: inline-block;
+  margin-bottom: 1.4rem;
+  padding: 0.35rem 0.1rem;
+  font: 0.72rem "Cinzel", Georgia, serif;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: #d1ad68;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(209, 173, 104, 0.45);
+  transition: color 180ms ease, border-color 180ms ease;
+}
+.pw-page .pw-doorstrip-home:hover { color: #ecd9ae; border-color: #ecd9ae; }
+.pw-page .pw-doorstrip-home:focus-visible { color: #ecd9ae; outline: 2px solid #d1ad68; outline-offset: 3px; }
+.pw-page .pw-doorstrip ul {
+  list-style: none;
+  margin: 0; padding: 0;
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 0.8rem;
+}
+.pw-page .pw-doorstrip li a {
+  position: relative;
+  display: grid;
+  justify-items: center;
+  align-content: start;
+  gap: 0.35rem;
+  height: 100%;
+  padding: 0.95rem 0.5rem 1rem;
+  border: 1px solid rgba(179, 139, 70, 0.18);
+  color: inherit;
+  text-decoration: none;
+  transition: border-color 200ms ease, background-color 200ms ease;
+}
+.pw-page .pw-doorstrip li a:hover { border-color: rgba(209, 173, 104, 0.6); }
+.pw-page .pw-doorstrip li a:focus-visible {
+  border-color: rgba(209, 173, 104, 0.6);
+  outline: 2px solid #d1ad68;
+  outline-offset: 2px;
+}
+/* the door the reader is in: a firmer frame, a warm ground and a gold bar
+   along its top edge; its words stay at full strength */
+.pw-page .pw-doorstrip li a[aria-current="page"] {
+  border-color: rgba(209, 173, 104, 0.5);
+  background: rgba(179, 139, 70, 0.07);
+  box-shadow: inset 0 2px 0 #c9a86a;
+}
+.pw-page .pw-doorstrip-seal {
+  display: block;
+  width: 3.25rem; height: 3.25rem;
+  margin-bottom: 0.2rem;
+  filter: drop-shadow(0 6px 14px rgba(0, 0, 0, 0.55));
+  transition: transform 420ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+.pw-page .pw-doorstrip li a:hover .pw-doorstrip-seal { transform: translateY(-2px) scale(1.04); }
+/* a seal not yet drawn: an empty ring holding the house diamond, the same
+   size as a seal so every tile sets its words on one line */
+.pw-page .pw-doorstrip-mark {
+  display: grid; place-items: center;
+  width: 3.25rem; height: 3.25rem;
+  margin-bottom: 0.2rem;
+  border: 1px solid rgba(209, 173, 104, 0.32);
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(209, 173, 104, 0.08), transparent 70%);
+}
+.pw-page .pw-doorstrip-mark::before {
+  content: "";
+  width: 0.6rem; height: 0.6rem;
+  transform: rotate(45deg);
+  border: 1px solid #d1ad68;
+}
+/* the kicker keeps a two-line slot and sits at its foot, so the titles in a
+   row share one line whether their kickers wrap or not */
+.pw-page .pw-doorstrip-kicker {
+  display: flex; align-items: flex-end; justify-content: center;
+  min-height: 3em;
+  text-wrap: balance;
+  font-size: 0.6rem;
+  letter-spacing: 0.16em;
+  line-height: 1.5;
+  text-transform: uppercase;
+  color: rgba(209, 173, 104, 0.85);
+}
+.pw-page .pw-doorstrip-title {
+  font: 0.86rem/1.3 "Cinzel", Georgia, serif;
+  color: #ecd9ae;
+}
+@media (max-width: 900px) {
+  .pw-page .pw-doorstrip ul { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+@media (max-width: 560px) {
+  .pw-page .pw-doorstrip ul { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.6rem; }
+}
+
+/* ---------------------------------------------------------------------------
+   Reduced motion: the unfold, the chevron, the rails, the seal lift and the
+   smooth scroll all still. */
+@keyframes pw-unfold {
+  from { opacity: 0; transform: translateY(-4px); }
+}
+.pw-page .ch-entry-body { animation: pw-unfold 260ms ease-out; }
+
+@media (prefers-reduced-motion: reduce) {
+  html:has(.ch-hero.is-door) { scroll-behavior: auto; }
+  .pw-page .ch-entry,
+  .pw-page .ch-entry::before,
+  .pw-page .ch-entry-toggle,
+  .pw-page .ch-entry-close,
+  .pw-page .pw-doorstrip-home,
+  .pw-page .pw-doorstrip li a,
+  .pw-page .pw-doorstrip-seal { transition: none; }
+  .pw-page .ch-entry-body { animation: none; }
+  .pw-page .pw-doorstrip li a:hover .pw-doorstrip-seal { transform: none; }
+}

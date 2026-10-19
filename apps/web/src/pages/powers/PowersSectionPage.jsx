@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from 'react';
+import React, { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
 import { Helmet } from 'react-helmet';
 import { Link, useParams, useLocation, Navigate } from 'react-router-dom';
 import SiteHeader from '../../components/SiteHeader';
@@ -10,7 +10,9 @@ import DIAGRAMS from './HierarchyDiagrams';
 import PortalHero from '../christianities/PortalHero';
 import PortalEmblem from '../christianities/PortalEmblem';
 import EMBLEMS from '../../data/emblems';
+import DoorStrip from './DoorStrip';
 import '../../styles/powers-hero.css';
+import '../../styles/powers-doors.css';
 
 // One page, five doors of The Powers: hierarchies, host, pantheons, daimons,
 // texts. The Map has its own page. The chrome, the expandable discipline and
@@ -22,38 +24,161 @@ const EXTRAS = {
     daimons: ['middleworld', 'words'],
 };
 
-function Expandable({ id, head, sub, badge, children, open, onToggle }) {
+// The section titles that the page index also names, written once.
+const CORR_TITLE = 'The Table of Correspondences';
+const MW_TITLE = 'The Middle World, Compared';
+const WORDS_TITLE = 'The words';
+
+// The data's `lang` names a script; the page needs a language tag, so that a
+// screen reader voices the name in its own language and :lang() font rules
+// apply. The Irish gods are written in the Latin alphabet but in Old Irish.
+const LANG = {
+    hebrew: 'he', arabic: 'ar', greek: 'grc', latin: 'la', cjk: 'ja',
+    cuneiform: 'akk', devanagari: 'sa', hieroglyphic: 'egy',
+};
+const langOf = (e) => (e.lang === 'latin' && e.group === 'celtic' ? 'sga' : LANG[e.lang]);
+const nativeOf = (e) => (e.native ? { text: e.native, script: e.lang, lang: langOf(e) } : undefined);
+
+// The site header is fixed, and it wraps to a second line at some widths, so
+// its real height is held in --pw-header: the anchors clear it, and an open
+// entry's head pins just beneath it.
+const headerBottom = () => document.querySelector('.site-header')?.getBoundingClientRect().bottom ?? 94;
+
+function useHeaderClearance(ref, ready) {
+    useLayoutEffect(() => {
+        const root = ref.current;
+        const header = document.querySelector('.site-header');
+        if (!root || !header) return undefined;
+        const set = () => root.style.setProperty('--pw-header', `${Math.round(header.getBoundingClientRect().height)}px`);
+        set();
+        if (typeof ResizeObserver === 'undefined') return undefined;
+        const ro = new ResizeObserver(set);
+        ro.observe(header);
+        return () => ro.disconnect();
+    }, [ref, ready]);
+}
+
+// One entry open at a time keeps the reader's place. Opening B while a tall A
+// above it is open collapses A and would fling B's head far above the screen,
+// so after every toggle the head just opened (or just closed) is brought back
+// under the header when it has left the comfortable band. The open entry is
+// mirrored into the address bar without the router: navigate() would wake
+// ScrollToTop, and react-router keeps its own index in history.state, so that
+// state is handed back unchanged.
+function useEntryToggle(open, setOpen) {
+    const pending = useRef(null);
+    const toggle = useCallback((slug) => {
+        const next = open === slug ? null : slug;
+        pending.current = slug;
+        setOpen(next);
+        window.history.replaceState(window.history.state, '',
+            next ? `#${encodeURIComponent(next)}` : window.location.pathname + window.location.search);
+    }, [open, setOpen]);
+    useLayoutEffect(() => {
+        const slug = pending.current;
+        pending.current = null;
+        if (!slug) return;
+        const el = document.getElementById(slug);
+        if (!el) return;
+        const top = el.getBoundingClientRect().top;
+        if (top < headerBottom() + 4 || top > window.innerHeight * 0.75) {
+            const still = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+            el.scrollIntoView({ block: 'start', behavior: still ? 'instant' : 'smooth' });
+        }
+    }, [open]);
+    return toggle;
+}
+
+// An entry is the WAI accordion: a heading that holds the toggle, and a
+// region the toggle controls. `level` is 2 where the entries sit straight
+// under the page title and 3 under a group's h2; the heading takes the
+// button's look, not the global h2/h3 sizes. A native name is its own line
+// above the English one, tagged with its language.
+function Expandable({ id, head, sub, badge, native, level = 2, children, open, onToggle }) {
+    const H = `h${level}`;
     return (
         <article id={id} className={`ch-entry${open ? ' is-open' : ''}`}>
-            <button type="button" className="ch-entry-head" onClick={onToggle} aria-expanded={open}>
-                <span className="ch-entry-titles">
-                    <span className="ch-entry-name">{head}</span>
-                    {sub && <span className="ch-entry-sub">{sub}</span>}
-                </span>
-                {badge && <span className="ch-entry-badge">{badge}</span>}
-            </button>
-            {open && <div className="ch-entry-body">{children}</div>}
+            <H className="ch-entry-h">
+                <button type="button" id={`${id}-head`} className={`ch-entry-head${badge ? ' has-badge' : ''}`}
+                    aria-expanded={open} aria-controls={`${id}-body`} onClick={onToggle}>
+                    <span className="ch-entry-titles">
+                        {native?.text && (
+                            <bdi className="edu-glyph ch-entry-native" lang={native.lang} data-script={native.script}>{native.text}</bdi>
+                        )}
+                        <span className="ch-entry-name">{head}</span>
+                        {sub && <span className="ch-entry-sub">{sub}</span>}
+                    </span>
+                    {badge && <span className="ch-entry-badge">{badge}</span>}
+                    <span className="ch-entry-toggle" aria-hidden="true" />
+                </button>
+            </H>
+            {open && (
+                <div className="ch-entry-body" id={`${id}-body`} role="region" aria-labelledby={`${id}-head`}>
+                    {children}
+                    {/* the button goes with the body it closes, so focus
+                        returns to the head the reader is brought back to */}
+                    <button type="button" className="ch-entry-close"
+                        onClick={() => { onToggle(); document.getElementById(`${id}-head`)?.focus({ preventScroll: true }); }}
+                        aria-describedby={`${id}-head`}>Close</button>
+                </div>
+            )}
         </article>
     );
 }
 
-const kv = (label, value) => (value
-    ? <div className="ch-kv"><span>{label}</span><p><Rich t={value} /></p></div>
+// A label and its text. `mod` marks the back-matter's roles: the citation
+// (is-source) and the line the entry exists to deliver (is-crux).
+const kv = (label, value, mod) => (value
+    ? <div className={`ch-kv${mod ? ` ${mod}` : ''}`}><span>{label}</span><p><Rich t={value} /></p></div>
     : null);
 
+// "On this page": the groups with their counts where a door has groups, the
+// entries themselves where it has none, and the sections that follow them.
+function PageIndex({ items, variant }) {
+    if (!items?.length) return null;
+    return (
+        <nav className={`pw-index is-${variant}`} aria-label="On this page">
+            <ol>
+                {items.map((it) => (
+                    <li key={it.href} className={it.mark ? `is-${it.mark}` : undefined}>
+                        <Link to={it.href}>
+                            <span className="pw-index-label">{it.label}</span>
+                            {it.count != null && <span className="pw-index-count">{it.count}</span>}
+                        </Link>
+                    </li>
+                ))}
+            </ol>
+        </nav>
+    );
+}
 
-function Hierarchies({ data, open, setOpen }) {
+function indexFor(data, extras) {
+    if (!data) return null;
+    if (data.groups?.length) {
+        const items = data.groups
+            .map((g) => ({ href: `#${g.key}`, label: g.label, count: data.entries.filter((e) => e.group === g.key).length }))
+            .filter((it) => it.count > 0);
+        if (extras.correspondences) items.push({ href: '#pw-corr', label: CORR_TITLE, mark: 'table' });
+        return { variant: 'groups', items };
+    }
+    const items = data.entries.map((e) => ({ href: `#${e.slug}`, label: e.name }));
+    if (extras.middleworld) items.push({ href: '#pw-mw', label: MW_TITLE, mark: 'section' });
+    if (extras.words) items.push({ href: '#pw-words', label: WORDS_TITLE, mark: 'section' });
+    return { variant: 'flat', items };
+}
+
+function Hierarchies({ data, open, toggle }) {
     return (
         <div className="ch-entry-list">
             {data.entries.map((e) => (
-                <Expandable key={e.slug} id={e.slug} open={open === e.slug}
-                    onToggle={() => setOpen(open === e.slug ? null : e.slug)}
+                <Expandable key={e.slug} id={e.slug} open={open === e.slug} level={2}
+                    onToggle={() => toggle(e.slug)}
                     head={e.name} sub={e.era} badge={e.tradition}>
                     <Plate item={e} />
                     {e.exposition.map((p, i) => <p key={i}><Rich t={p} /></p>)}
                     {DIAGRAMS[e.slug] && React.createElement(DIAGRAMS[e.slug])}
                     {e.ranks?.length > 0 && (
-                        <div className="ch-kv"><span>The ranks, highest first</span>
+                        <div className="ch-kv is-ranks"><span>The ranks, highest first</span>
                             <ol className="pw-ranks is-ladder">
                                 {e.ranks.map((r, i) => (
                                     <li key={i} style={{ '--rung': i }}>
@@ -68,20 +193,20 @@ function Hierarchies({ data, open, setOpen }) {
                             </ol>
                         </div>
                     )}
-                    {kv('Source', e.source)}
-                    {kv('What turns on it', e.stakes)}
+                    {kv('Source', e.source, 'is-source')}
+                    {kv('What turns on it', e.stakes, 'is-crux')}
                 </Expandable>
             ))}
         </div>
     );
 }
 
-function Host({ data, open, setOpen }) {
+function Host({ data, open, toggle }) {
     return data.groups.map((g) => {
         const entries = data.entries.filter((e) => e.group === g.key);
         if (!entries.length) return null;
         return (
-            <section key={g.key} className="ch-group">
+            <section key={g.key} className="ch-group" id={g.key}>
                 <span className="pw-divider" aria-hidden="true" />
                 <header className="edu-section-head">
                     <h2>{g.label}</h2>
@@ -90,9 +215,9 @@ function Host({ data, open, setOpen }) {
                 <Plate item={g} wide />
                 <div className="ch-entry-list">
                     {entries.map((e) => (
-                        <Expandable key={e.slug} id={e.slug} open={open === e.slug}
-                            onToggle={() => setOpen(open === e.slug ? null : e.slug)}
-                            head={<>{e.native && <span className="edu-glyph pw-head-native">{e.native}</span>}{e.name}</>}
+                        <Expandable key={e.slug} id={e.slug} open={open === e.slug} level={3}
+                            onToggle={() => toggle(e.slug)}
+                            native={nativeOf(e)} head={e.name}
                             sub={e.title} badge={e.tradition}>
                             <Plate item={e} />
                             {e.exposition.map((p, i) => <p key={i}><Rich t={p} /></p>)}
@@ -107,7 +232,7 @@ function Host({ data, open, setOpen }) {
     });
 }
 
-function Pantheons({ data, open, setOpen }) {
+function Pantheons({ data, open, toggle }) {
     return data.groups.map((g) => {
         const entries = data.entries.filter((e) => e.group === g.key);
         if (!entries.length) return null;
@@ -121,9 +246,9 @@ function Pantheons({ data, open, setOpen }) {
                 <Plate item={g} wide />
                 <div className="ch-entry-list">
                     {entries.map((e) => (
-                        <Expandable key={e.slug} id={e.slug} open={open === e.slug}
-                            onToggle={() => setOpen(open === e.slug ? null : e.slug)}
-                            head={<>{e.native && <span className="edu-glyph pw-head-native">{e.native}</span>}{e.name}</>}
+                        <Expandable key={e.slug} id={e.slug} open={open === e.slug} level={3}
+                            onToggle={() => toggle(e.slug)}
+                            native={nativeOf(e)} head={e.name}
                             sub={e.domain} badge={null}>
                             {e.exposition.map((p, i) => <p key={i}><Rich t={p} /></p>)}
                             {kv('Cult', e.cult)}
@@ -136,30 +261,30 @@ function Pantheons({ data, open, setOpen }) {
     });
 }
 
-function Daimons({ data, open, setOpen }) {
+function Daimons({ data, open, toggle }) {
     return (
         <div className="ch-entry-list">
             {data.entries.map((e) => (
-                <Expandable key={e.slug} id={e.slug} open={open === e.slug}
-                    onToggle={() => setOpen(open === e.slug ? null : e.slug)}
+                <Expandable key={e.slug} id={e.slug} open={open === e.slug} level={2}
+                    onToggle={() => toggle(e.slug)}
                     head={e.name} sub={e.era} badge={e.tradition}>
                     <Plate item={e} />
                     {e.exposition.map((p, i) => <p key={i}><Rich t={p} /></p>)}
-                    {kv('Source', e.source)}
-                    {kv('The shift', e.shift)}
+                    {kv('Source', e.source, 'is-source')}
+                    {kv('The shift', e.shift, 'is-crux')}
                 </Expandable>
             ))}
         </div>
     );
 }
 
-function Texts({ data, open, setOpen }) {
+function Texts({ data, open, toggle }) {
     return (
         <div className="ch-entry-list">
             {data.entries.map((e) => (
-                <Expandable key={e.slug} id={e.slug} open={open === e.slug}
-                    onToggle={() => setOpen(open === e.slug ? null : e.slug)}
-                    head={<>{e.native && <span className="edu-glyph pw-head-native">{e.native}</span>}{e.name}</>}
+                <Expandable key={e.slug} id={e.slug} open={open === e.slug} level={2}
+                    onToggle={() => toggle(e.slug)}
+                    native={nativeOf(e)} head={e.name}
                     sub={e.dating} badge={e.tradition}>
                     {e.exposition.map((p, i) => <p key={i}><Rich t={p} /></p>)}
                     {kv('What it carries', e.carries)}
@@ -210,10 +335,10 @@ function Correspondences({ table, entries }) {
     };
 
     return (
-        <section className="ch-matrix" aria-labelledby="pw-corr-heading">
+        <section className="ch-matrix" id="pw-corr" aria-labelledby="pw-corr-heading">
             <header className="edu-section-head">
                 <p className="kicker">Interpretatio</p>
-                <h2 id="pw-corr-heading">The Table of Correspondences</h2>
+                <h2 id="pw-corr-heading">{CORR_TITLE}</h2>
                 {table.intro.map((p, i) => <p key={i}><Rich t={p} /></p>)}
             </header>
             <Plate item={table} wide />
@@ -268,11 +393,11 @@ function MiddleWorld({ table }) {
     const [openRow, setOpenRow] = useState(null);
     const MARK = { yes: '●', no: '·', q: '◐' };
     return (
-        <section className="ch-matrix has-atmosphere" aria-labelledby="pw-mw-heading"
+        <section className="ch-matrix has-atmosphere" id="pw-mw" aria-labelledby="pw-mw-heading"
             style={{ '--atmo': "url(/media/fbb3fbfe09076061ed01862a58c394e9.webp)" }}>
             <header className="edu-section-head">
                 <p className="kicker">The Same Six Questions</p>
-                <h2 id="pw-mw-heading">The Middle World, Compared</h2>
+                <h2 id="pw-mw-heading">{MW_TITLE}</h2>
                 {table.intro.map((p, i) => <p key={i}><Rich t={p} /></p>)}
             </header>
             <div className="edu-kinship-scroll ch-canon-scroll" role="region"
@@ -332,23 +457,30 @@ function PowersWords({ words }) {
     const [open, setOpen] = useState(
         () => (typeof window !== 'undefined' ? decodeURIComponent(window.location.hash.slice(1)) : '') || null,
     );
+    const toggle = useEntryToggle(open, setOpen);
+    // a link to one of the words, followed on this page, opens it too
+    const { hash, key } = useLocation();
+    useEffect(() => {
+        const slug = decodeURIComponent(hash.slice(1));
+        if (words.entries.some((w) => w.slug === slug)) setOpen(slug);
+    }, [hash, key, words]);
     return (
-        <section className="ch-words has-atmosphere" aria-labelledby="pw-words-heading"
+        <section className="ch-words has-atmosphere" id="pw-words" aria-labelledby="pw-words-heading"
             style={{ '--atmo': "url(/media/9ad6bf37aaf6af0156ee6d451166ad5e.webp)" }}>
             <header className="edu-section-head">
                 <p className="kicker">One Word, Two Fates</p>
-                <h2 id="pw-words-heading">The words</h2>
+                <h2 id="pw-words-heading">{WORDS_TITLE}</h2>
                 {words.intro.map((p, i) => <p key={i}><Rich t={p} /></p>)}
             </header>
             <div className="ch-entry-list">
                 {words.entries.map((w) => (
-                    <Expandable key={w.slug} id={w.slug} open={open === w.slug}
-                        onToggle={() => setOpen(open === w.slug ? null : w.slug)}
-                        head={<><span className="edu-glyph ch-word-native">{w.native}</span> {w.translit}</>}
+                    <Expandable key={w.slug} id={w.slug} open={open === w.slug} level={3}
+                        onToggle={() => toggle(w.slug)}
+                        head={<>{w.native && <><bdi className="edu-glyph ch-word-native" lang={LANG[w.lang]}>{w.native}</bdi> </>}{w.translit}</>}
                         sub={w.literal} badge={w.lang}>
                         <p><Rich t={w.story} /></p>
                         {kv('Where it lives', w.livesIn)}
-                        {w.fate && kv('Its fate', w.fate)}
+                        {w.fate && kv('Its fate', w.fate, 'is-crux')}
                     </Expandable>
                 ))}
             </div>
@@ -367,15 +499,18 @@ const RENDERERS = {
     daimons: Daimons, texts: Texts,
 };
 
-function PowersSectionPage() {
+function SectionPage() {
     const { section } = useParams();
-    const { hash } = useLocation();
+    const { hash, key } = useLocation();
     const meta = SECTION_BY_SLUG[section];
     const Renderer = RENDERERS[section];
     const [data, setData] = useState(null);
     const [extras, setExtras] = useState({});
     const [state, setState] = useState('loading');
     const [open, setOpen] = useState(null);
+    const toggle = useEntryToggle(open, setOpen);
+    const root = useRef(null);
+    useHeaderClearance(root, state);
 
     useEffect(() => {
         let alive = true;
@@ -394,9 +529,22 @@ function PowersSectionPage() {
         return () => { alive = false; };
     }, [section, Renderer]);
 
+    // A #slug opens its entry. The location key is watched as well as the
+    // hash: after a toggle has cleared the address bar the router still
+    // holds the old hash, so a second link to the same entry (from the index
+    // or the table) changes only the key, and ScrollToTop does not move. The
+    // second frame lands the target after any entry above it has collapsed.
     useEffect(() => {
-        if (data && hash) setOpen(decodeURIComponent(hash.slice(1)));
-    }, [data, hash]);
+        if (!data || !hash) return undefined;
+        const slug = decodeURIComponent(hash.slice(1));
+        setOpen(slug);
+        let raf = requestAnimationFrame(() => {
+            raf = requestAnimationFrame(() => document.getElementById(slug)?.scrollIntoView({ block: 'start', behavior: 'instant' }));
+        });
+        return () => cancelAnimationFrame(raf);
+    }, [data, hash, key]);
+
+    const index = useMemo(() => indexFor(data, extras), [data, extras]);
 
     if (!meta || !Renderer) return <Navigate to="/powers" replace />;
     if (state === 'loading') {
@@ -405,7 +553,7 @@ function PowersSectionPage() {
     if (!data && Object.keys(extras).length === 0) return <Navigate to="/powers" replace />;
 
     return (
-        <div className="third-lamp-scope edu-page ch-page pw-page">
+        <div className="third-lamp-scope edu-page ch-page pw-page" ref={root}>
             <Helmet>
                 <title>{`${meta.title} — The Powers — Three Magi Press`}</title>
                 <meta name="description" content={meta.blurb} />
@@ -417,14 +565,24 @@ function PowersSectionPage() {
                 kickerLink="/powers" kickerLinkLabel="The Powers"
                 kicker={meta.kicker} title={meta.title} intro={data?.intro} />
             <main className="edu-main">
-                {data && <Renderer data={data} open={open} setOpen={setOpen} />}
+                {index && <PageIndex items={index.items} variant={index.variant} />}
+                {data && <Renderer data={data} open={open} toggle={toggle} />}
                 {extras.correspondences && <Correspondences table={extras.correspondences} entries={data?.entries} />}
                 {extras.middleworld && <MiddleWorld table={extras.middleworld} />}
                 {extras.words && <PowersWords words={extras.words} />}
+                <DoorStrip current={section} />
             </main>
             <SiteFooter />
         </div>
     );
+}
+
+// Each door mounts afresh. The door strip moves the reader from one door to
+// the next on this same route, and the new door's list must never be drawn
+// for a moment with the last door's data.
+function PowersSectionPage() {
+    const { section } = useParams();
+    return <SectionPage key={section} />;
 }
 
 export default PowersSectionPage;

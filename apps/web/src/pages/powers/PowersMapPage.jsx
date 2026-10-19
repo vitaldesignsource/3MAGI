@@ -11,6 +11,7 @@ import EMBLEMS from '../../data/emblems';
 import '../../styles/powers-hero.css';
 import { SECTION_BY_SLUG } from './lib';
 import LAND from '../../data/powers/mapland';
+import DoorStrip from './DoorStrip';
 
 // The Map of the Powers. Two frames — the Old World at 1:10m and the whole
 // planet at 1:50m — drawn from Natural Earth land polygons clipped to each
@@ -228,6 +229,8 @@ function PowersMapPage() {
                     alike.
                     Choose an era to watch the population change.
                 </p>
+
+                <DoorStrip current="map" />
             </main>
             <SiteFooter />
         </div>
