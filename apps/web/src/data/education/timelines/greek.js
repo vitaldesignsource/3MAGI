@@ -75,7 +75,7 @@ export default {
             circa: false,
             circaEnd: null,
             description: 'Alexander marked out the city on the shore by Rhakotis in 331 BCE, in the same season as his march to the oracle of Ammon at Siwa, where the god\'s prophet greeted him as son. Under the Ptolemies it became the one place where Greek philosophy, Egyptian temple learning and the Jewish scriptures were housed in a single library and thought in a single language. The Septuagint, Philo, the Hermetica, Basilides and Valentinus, Clement, Origen and Plotinus\' own teacher all belong to this city: the fusion this timeline traces has an address.',
-            dating: 'The year is secure on Arrian\'s authority. The day — 25 Tybi, 7 April — comes from the Alexander Romance, and whether the founding preceded the journey to Siwa (Arrian) or followed it (Plutarch) is unsettled.',
+            dating: 'The year is secure on Arrian\'s authority. The day — 25 Tybi, 7 April — comes from the Alexander Romance, and whether the founding preceded the journey to Siwa (Arrian, Plutarch) or followed it (Diodorus, Curtius, Justin) is unsettled.',
         },
         {
             slug: 'septuagint',
@@ -231,7 +231,7 @@ export default {
             circa: false,
             circaEnd: false,
             description: 'Head of the Athenian school for nearly fifty years, Proclus systematised the whole inheritance: the 211 propositions of the Elements of Theology, the Platonic Theology, commentaries on the Timaeus, Parmenides and Republic, and hymns to gods whose public worship was by then illegal. He kept the Egyptian fasts as well as the Greek and performed rites, Marinus says, on behalf of a city that had ceased to perform them for itself. Through the Arabic Book of Causes and the Greek of Dionysius the Areopagite his metaphysics entered Islamic and Christian thought under other names.',
-            dating: 'Marinus\' Life preserves a horoscope from which Proclus\' birth is computed to 8 February 412 and his death to 17 April 485 — among the few dates in this hall fixed by the heavens themselves. That the Liber de causis was an abridgement of his Elements was recognised only in 1268, when Aquinas read it against Moerbeke\'s new translation.',
+            dating: 'Marinus\' Life preserves a horoscope from which Proclus\' birth is computed to 8 February 412 and his death to 17 April 485 — among the few dates in this hall fixed by the heavens themselves. That the Liber de causis was an abridgement of his Elements was recognised only about 1272, when Aquinas read it against Moerbeke\'s translation of 1268.',
         },
         {
             slug: 'justinian-academy',

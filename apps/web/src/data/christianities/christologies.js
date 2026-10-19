@@ -183,7 +183,7 @@ export default {
             "heldBy": "Valentinus and his pupils Ptolemy, Heracleon, Theodotus and Marcus; the anonymous authors of the Sethian treatises; communities in Egypt, Rome, Gaul and the Rhône valley substantial enough to require a bishop's full attention for years.",
             "opposedBy": "Irenaeus of Lyons, whose Against Heresies was written precisely against the Valentinians in his own diocese; Tertullian, Hippolytus, Clement and Origen; and, from wholly outside Christianity, the philosopher Plotinus, who devoted a treatise of the Enneads to refuting them.",
             "council": "None. They were argued and written out rather than voted out; by the time councils existed, the school had already lost.",
-            "aftermath": "Their books were destroyed or simply not copied, and for sixteen centuries the school was known only through its opponents' summaries. Then in December 1945, near Nag Hammadi in Upper Egypt, thirteen leather-bound codices were dug out of a jar, and the Valentinians and Sethians were heard in their own voices for the first time since antiquity.",
+            "aftermath": "Their books were destroyed or simply not copied, and for sixteen centuries the school was known only through its opponents' summaries. Then in December 1945, near Nag Hammadi in Upper Egypt, twelve leather-bound codices and the loose leaves of a thirteenth were dug out of a jar, and the Valentinians and Sethians were heard in their own voices for the first time since antiquity.",
             "today": "There is no line of descent. There are self-consciously revived Gnostic churches, chiefly in Europe and North America; there is the long influence of the texts on Theosophy and on C. G. Jung, who read them as psychology; and there is a very large general readership, since the Nag Hammadi library has been in cheap English translation since 1977 and has never been out of print.",
             "status": "condemned"
         },
@@ -1253,7 +1253,7 @@ export default {
                     "how": "the opposing text: Thomas addresses the risen Christ as 'My Lord and my God'"
                 }
             ],
-            "heldBy": "Jehovah's Witnesses, some eight and a half million active publishers in more than two hundred lands by their own annual report; and, on the question of the Son's created status though not on much else, some other Bible Student groups descended from the same origin.",
+            "heldBy": "Jehovah's Witnesses, some nine million active publishers in more than two hundred lands by their own annual report; and, on the question of the Son's created status though not on much else, some other Bible Student groups descended from the same origin.",
             "opposedBy": "The trinitarian churches of every family, whose objection is the one Athanasius made: if the Son is a creature then either a creature is worshipped, or the honour the New Testament offers him is misplaced — and the New Testament plainly offers it.",
             "council": "None. They regard the councils as the machinery of an apostasy and would not accept their jurisdiction; and no council has ever considered them.",
             "aftermath": "A christology structurally like the one the fourth century condemned is now held, with no historical connection to it, by a highly organised worldwide body — which is a useful reminder that doctrinal positions are not only inherited but rediscovered, by people reading the same texts and asking the same question.",

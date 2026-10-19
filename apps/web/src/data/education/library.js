@@ -40,7 +40,7 @@ export default {
             author: 'trans. W. Wynn Westcott',
             year: '1893',
             tradition: 'kabbalah',
-            description: 'Westcott\'s 1893 translation of the terse cosmogonic treatise on the twenty-two letters and ten Sephiroth, with the Thirty-Two Paths of Wisdom appended. It is the version through which the Sepher Yetzirah entered the curriculum of the Hermetic Order of the Golden Dawn.',
+            description: 'Westcott\'s translation, here in its second edition of 1893 (the first appeared in 1887), of the terse cosmogonic treatise on the twenty-two letters and ten Sephiroth, with the Thirty-Two Paths of Wisdom appended. It is the version through which the Sepher Yetzirah entered the curriculum of the Hermetic Order of the Golden Dawn.',
             source: 'Internet Archive',
             pdfUrl: 'https://archive.org/download/sepheryetzirahb00rittgoog/sepheryetzirahb00rittgoog.pdf',
             detailUrl: 'https://archive.org/details/sepheryetzirahb00rittgoog',

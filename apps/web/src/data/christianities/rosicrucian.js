@@ -15,7 +15,7 @@ export default {
         caption: 'Luther’s seal as his letter of 8 July 1530 to Lazarus Spengler describes it, and no more — which is why it lacks the green leaves later versions add. A diagram of a letter, not a copy of any seal.',
     },
     intro: [
-        'Between 1614 and 1616 three anonymous pamphlets came out of Lutheran Württemberg announcing a secret brotherhood, a hundred and twenty years old, holding the reformation of the whole wide world and ready at last to declare it. Europe answered in print — several hundred books and open letters within a decade — and nobody found them.',
+        'Between 1614 and 1616 three anonymous pamphlets came out of Lutheran Württemberg announcing a secret brotherhood, its founder’s tomb newly opened after a hundred and twenty years, holding the reformation of the whole wide world and ready at last to declare it. Europe answered in print — several hundred books and open letters within a decade — and nobody found them.',
         'Almost everything written about the Rosicrucians since has failed in one of two directions: taking the brotherhood at its word, or dismissing the whole thing as a hoax and stopping there. Both are wrong, and the second is now the commoner error. There was no order. There was, demonstrably, a movement — and the search for a brotherhood that did not exist built Freemasonry’s higher degrees, the Golden Dawn, and a good deal of what the modern West means by initiation.',
     ],
     manifestoIntro: 'Three books, two cities, two languages, three years. Only the third has an author who admitted to it.',
@@ -52,7 +52,7 @@ export default {
             sub: 'The Chymical Wedding of Christian Rosenkreutz, Anno 1459',
             year: '1616',
             place: 'Strasbourg',
-            printer: 'Lazarus Zetzner',
+            printer: 'The heirs of Lazarus Zetzner',
             language: 'German',
             circulating: 'Written about 1605, a decade before it was printed',
             says: 'Not a manifesto at all but a novel: seven days, told in the first person, in which an old man is summoned to a royal wedding, weighed, made to watch a king and queen killed and distilled into a new pair, and created a Knight of the Golden Stone — then fails at the last through a lapse of curiosity and is appointed doorkeeper.',
@@ -223,7 +223,7 @@ export default {
             slug: 'fludd-apologia',
             title: 'Apologia Compendiaria Fraternitatem de Rosea Cruce ... abluens',
             side: 'for',
-            note: 'An English physician, writing in Latin at Leiden, defends a German brotherhood he has never met against a German chemist — and says in the text that he is not one of them. Expanded the next year into the *Tractatus Apologeticus*. It made his reputation across Europe as a Rosicrucian, which he was not, and the reputation outlived every argument in the book.',
+            note: 'An English physician in London, writing in Latin and printing at Leiden, defends a German brotherhood he has never met against a German chemist — and says in the text that he is not one of them. Expanded the next year into the *Tractatus Apologeticus*. It made his reputation across Europe as a Rosicrucian, which he was not, and the reputation outlived every argument in the book.',
         },
         {
             year: '1617',

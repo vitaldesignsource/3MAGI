@@ -15,7 +15,7 @@ export default {
         { key: 'levantine', image: '2f17f27124a7fd535bfcd83380aacf4e.webp',
           imageAlt: 'An aged enthroned figure beneath a stone portico above the sea, a striding man with a mace on the cliff, and an armed woman climbing toward them under a breaking storm',
           imageCaption: 'The council of El: the grey father enthroned at the source of the waters, the storm-god striding out with his mace, and Anat coming up the headland — the household the Bible argues with.',
-          label: 'Canaan and Ugarit', blurb: 'The pantheon the Bible argues with — recovered in 1929 when a farmer’s plough hit a tomb at Ras Shamra.' },
+          label: 'Canaan and Ugarit', blurb: 'The pantheon the Bible argues with — recovered from 1929, after a farmer’s plough hit a tomb near Ras Shamra in 1928.' },
         { key: 'hellenic', image: '1619a44c6259f6d76461aa368786d3b4.webp',
           imageAlt: 'A colonnaded Greek house at night: a woman at a great loom with a model city, a bearded man enthroned with a staff, a youth playing a lyre, an ivy-crowned reveller reclining with wine, and a torch-bearer in a far doorway',
           imageCaption: 'The household by their attributes: the loom and the city, the staff and the throne, the lyre, the ivy and the cup, and the torches at the threshold — Athena, Zeus, Apollo, Dionysus, Hekate.',
@@ -43,7 +43,7 @@ export default {
             domain: 'Wisdom, creation, and the order called aša', group: 'iranian',
             exposition: [
                 'Avestan *Ahura Mazdā*, the Wise Lord, and in Middle Persian Ohrmazd. He is not a sky-father promoted, and he is not a king of a family of gods: he has no consort in the oldest texts, no birth, and no myth of succession. What he has is thought. The Gāthās, the hymns attributed to Zarathustra himself and the oldest Iranian material we possess, address him as a mind that made the world by thinking it and holds it in an order — *aša*, truth, rightness, the way things are when they are as they should be.',
-                'The Achaemenid kings put him on the cliffs. Darius at Behistun credits every province and every victory to him by name and says plainly that he did these things by the favour of Ahura Mazda, which makes this the earliest imperial monotheism on the record, five centuries before Constantine and with an inscription you can still climb to.',
+                'The Achaemenid kings put him on the cliffs. Darius at Behistun credits every province and every victory to him by name and says plainly that he did these things by the favour of Ahura Mazda, which makes this an imperial faith in one supreme god eight centuries before Constantine — not quite monotheism, since the same text also names “the other gods who are” — and with an inscription you can still climb to.',
             ],
             cult: 'Fire temples, where the flame is tended and is not itself worshipped; the Yasna liturgy, still celebrated.',
             interpretatio: 'Greek writers called him Oromasdes and made Zoroaster a magus of enormous antiquity; the identification of Ahura Mazda with the Jewish God was argued in antiquity and is still argued.',
@@ -215,7 +215,7 @@ export default {
             slug: 'ra', name: 'Ra', native: '𓂋𓂝', lang: 'hieroglyphic',
             domain: 'The sun; kingship', group: 'egyptian',
             exposition: [
-                'Ra sails. The Egyptian sun is not a lamp but a journey: the day-barque across the sky, the night-barque through the twelve hours of the underworld, the nightly battle with the serpent Apep at the fourth hour, and the rebirth at dawn. The great funerary books — Amduat, Book of Gates — are guidebooks to that night voyage, written on royal tomb walls so the king could sail it too.',
+                'Ra sails. The Egyptian sun is not a lamp but a journey: the day-barque across the sky, the night-barque through the twelve hours of the underworld, the nightly battle with the serpent Apep at the seventh hour, and the rebirth at dawn. The great funerary books — Amduat, Book of Gates — are guidebooks to that night voyage, written on royal tomb walls so the king could sail it too.',
                 'By the New Kingdom the theology is fluently composite: Ra-Horakhty at dawn, Amun-Ra at Thebes, Atum-Ra at dusk. Egyptian religion had no difficulty holding several true accounts at once — the modern demand that only one be right would have puzzled its priests.',
             ],
             cult: 'Heliopolis (Iunu) — the Benben stone and the sun-temples of the Fifth Dynasty.',
@@ -258,7 +258,7 @@ export default {
             exposition: [
                 'Not a god of Egypt and not a god of Greece, but the thing that grew in the seam between them. Greek-speaking Egypt identified Thoth with Hermes; the Egyptian epithet that called Thoth twice-great and thrice-great came across with him; and somewhere in Roman Egypt that compound name acquired a biography, a pupil and a body of writing. This table calls the Thoth-Hermes identification the most consequential interpretatio in it, and he is what the identification produced.',
                 'The texts that carry his name are not one thing. The philosophical Hermetica — the seventeen treatises of the Corpus, the Asclepius, the Stobaean fragments — teach the ascent of the mind through the spheres and were composed in Greek between roughly the first and third centuries. The technical Hermetica, far bulkier and far less read, are astrological, alchemical and magical handbooks under the same authority. Both were taken as the work of one ancient Egyptian sage, and the confusion was productive: the philosophy lent dignity to the operations, and the operations gave the philosophy something to do.',
-                'The Renaissance believed he had lived before Moses, or beside him, and that belief did the work. Cosimo de\u2019 Medici had Ficino set Plato aside in 1462 to translate the Corpus first, precisely because the older witness mattered more; Ficino read the Poimandres as a pagan Genesis and built a Christian Hermetism on it. Then Isaac Casaubon dated the Greek to the Roman period in 1614 and the pedigree collapsed in a single book. What did not collapse is the tradition, which carried straight on and is still running — which is the most instructive thing in this table about how little a genealogy has to do with whether something works on people.',
+                'The Renaissance believed he had lived before Moses, or beside him, and that belief did the work. Cosimo de\u2019 Medici had Ficino set Plato aside in 1463 to translate the Corpus first, precisely because the older witness mattered more; Ficino read the Poimandres as a pagan Genesis and built a Christian Hermetism on it. Then Isaac Casaubon dated the Greek to the Roman period in 1614 and the pedigree collapsed in a single book. What did not collapse is the tradition, which carried straight on and is still running — which is the most instructive thing in this table about how little a genealogy has to do with whether something works on people.',
             ],
             cult: 'None in the ordinary sense. What he has instead is a readership, continuously from Roman Egypt to the present, and a signature on other people\u2019s books.',
             interpretatio: 'Thoth and Hermes at once, by construction; Mercurius to the Latin alchemists; and in Islamic tradition frequently identified with Idrīs and so with Enoch, which gives him a third scripture to stand in.',
@@ -468,7 +468,7 @@ export default {
             domain: 'The sun; the imperial line', group: 'kami',
             exposition: [
                 'The Kojiki (712 CE) tells how Amaterasu, offended by her brother Susanoo’s violence, hid in a cave and left the world in darkness — and how the assembled kami lured her out with a mirror, a jewel-tree and Uzume’s outrageous dance, so that light returned and could not be hidden again. The mirror is one of the three imperial regalia.',
-                'She is a rare thing in the world’s pantheons: a female sun at the head of the family, from whom the imperial house traced its descent — a claim with modern political history attached, formally renounced in 1946.',
+                'She is a rare thing in the world’s pantheons: a female sun at the head of the family, from whom the imperial house traced its descent — a claim with modern political history attached: the emperor’s rescript of 1946 disavowed the divinity built on it, though not the descent itself.',
             ],
             cult: 'Ise Jingū — rebuilt to identical specification every twenty years, a practice running since the seventh century.',
             interpretatio: 'Resisted the Buddhist honji suijaku system unevenly: medieval theology paired her with the cosmic Buddha Dainichi, which Shinto reformers later undid.',

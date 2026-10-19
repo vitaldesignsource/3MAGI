@@ -76,7 +76,7 @@ export default {
             categories: ['temple', 'text'], from: -1900, to: -1190,
             blurb: 'A Bronze Age port destroyed around 1190 BCE and forgotten until a farmer’s plough struck a tomb roof in 1928. The tablets recovered gave back the Canaanite pantheon in its own words — El, Baal, Anat — and turned the Bible’s quarrel with Baal into a documented conversation.',
             events: [
-                { year: -1350, title: 'The Baal Cycle written', desc: 'The scribe Ilimilku records the storm-god’s epic on tablets that will lie unread for three thousand years.' },
+                { year: -1250, title: 'The Baal Cycle written', desc: 'The scribe Ilimilku records the storm-god’s epic on tablets that will lie unread for three thousand years.' },
                 { year: -1190, title: 'Destruction', desc: 'The city falls in the Late Bronze collapse; the tablets are baked in the fire that preserves them.' },
             ],
         },
@@ -112,7 +112,7 @@ export default {
             blurb: 'The navel of the world, where the Pythia answered for a thousand years. Colonies were founded, wars begun and Socrates’ vocation confirmed on its responses, and its maxims — know thyself, nothing in excess — became philosophy’s doorposts.',
             events: [
                 { year: -546, title: 'Croesus tests the oracles', desc: 'Herodotus’ story of the king who checked Delphi’s accuracy before asking his real question — and then misread the answer.' },
-                { year: 393, title: 'Silence', desc: 'Theodosius closes the sanctuary; the last recorded response reportedly tells the emperor the fair-wrought hall has fallen.' },
+                { year: 393, title: 'Silence', desc: 'Theodosius closes the sanctuary. The last recorded response — that the fair-wrought hall has fallen — is reported a generation earlier, as the answer carried back to Julian.' },
             ],
         },
         {
@@ -170,7 +170,7 @@ export default {
             categories: ['temple'], from: -900, to: 600,
             blurb: 'Heliopolis of Syria: a Semitic storm-god’s high place rebuilt by Rome at colossal scale as Jupiter Heliopolitanus. Its foundation stones are among the largest ever quarried and moved, and the interpretatio is written into the architecture.',
             events: [
-                { year: 60, title: 'The great temple', desc: 'Roman construction on the Jupiter temple begins; the local Baal is now addressed in Latin.' },
+                { year: 60, title: 'The great temple', desc: 'The Jupiter temple, begun in the previous century, stands nearly complete under Nero; the local Baal is now addressed in Latin.' },
             ],
         },
         {

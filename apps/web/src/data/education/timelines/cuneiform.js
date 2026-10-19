@@ -194,7 +194,7 @@ export default {
             end: null,
             circa: false,
             circaEnd: null,
-            description: 'A twenty-seven-year-old schoolmaster at Göttingen, working from published copies of the Persepolis inscriptions and reportedly on a wager, reasoned that a recurring formula must name a king, son of a king, and recovered the values of a handful of Old Persian signs — Dārayavauš, Xšayāršā, Vištāspa. It was the first correct reading of any cuneiform sign in the modern world, and it was made without a single tablet in the room. The eighteen centuries of silence break here, on an inference about genealogy.',
+            description: 'A twenty-seven-year-old schoolmaster at Göttingen, working from published copies of the Persepolis inscriptions and reportedly on a wager, reasoned that a recurring formula must name a king, son of a king, and recovered the values of a handful of Old Persian signs — Dārayavauš, Xšayāršā, Vištāspa. It was the first correct reading of any cuneiform sign in the modern world, and it was made without a single tablet in the room. The seventeen centuries of silence break here, on an inference about genealogy.',
             dating: 'The memoir was read to the Göttingen Academy on 4 September 1802 and refused publication; it appeared only in 1815, as an appendix to A. H. L. Heeren\'s Ideen, and Grotefend\'s priority was properly acknowledged later still.',
         },
         {

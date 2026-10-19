@@ -54,7 +54,7 @@ export default {
             title: '“God heals” — the companion on the road', group: 'presence', tradition: 'Jewish · Christian',
             exposition: [
                 'Raphael gets the best story: in Tobit he walks incognito as the hired guide Azarias, binds the demon Asmodeus with fish-smoke, cures a father’s blindness, and only at the end unveils — “I am Raphael, one of the seven holy angels who present the prayers of the saints.” In 1 Enoch he binds Azazel hand and foot and buries him in darkness until the judgement.',
-                'He is the host’s physician and the patron of travellers, apothecaries and happy endings; the Renaissance painted him with Tobias and the fish more often than any scene but the Annunciation itself.',
+                'He is the host’s physician and the patron of travellers, apothecaries and happy endings; the Renaissance, and fifteenth-century Florence above all, painted him with Tobias and the fish again and again.',
             ],
             attested: 'Tobit 3:17 (3rd century BCE, by most datings of the book); 1 Enoch 10:4.',
             office: 'Healing; the binding of Azazel; one of the seven who enter before the Glory.',
@@ -298,7 +298,7 @@ export default {
             title: 'The daughter who refuses',
             group: 'pleroma', tradition: 'Gnostic (Sethian)',
             exposition: [
-                'Eve’s daughter, and the one human being in this literature who wins an argument with the rulers of the world. When Noah will not let her aboard, she blows on the ark and burns it — twice. When the archons come to her as they came to her mother and tell her that her mother came to them, she answers that they did not know their own mother but their female counterpart, and that she is not their descendant but from the world above. Then she cries out to God, and the great angel Eleleth comes down and tells her what the world actually is.',
+                'Eve’s daughter, and the one human being in this literature who wins an argument with the rulers of the world. When Noah will not let her aboard, she blows on the ark and burns it, and he must build it a second time. When the archons come to her as they came to her mother and tell her that her mother came to them, she answers that they did not know their own mother but their female counterpart, and that she is not their descendant but from the world above. Then she cries out to God, and the great angel Eleleth comes down and tells her what the world actually is.',
                 'The scene matters structurally. Everywhere else in this company the revelation descends because the plot requires it; here it descends because a woman shouted for it, and the text lets her interrogate the angel afterwards. Whatever else these books are, this passage is one of the few places in ancient religious literature where a female character demands an explanation and is given one.',
             ],
             attested: 'The Hypostasis of the Archons (Nag Hammadi II,4); The Thought of Norea (IX,2), a short hymn addressed to her; Irenaeus and Epiphanius report Norea traditions from outside.',
@@ -400,7 +400,7 @@ export default {
             slug: 'asmodeus', name: 'Asmodeus', native: 'אשמדאי', lang: 'hebrew',
             title: 'The wrecker of marriages, and Solomon’s builder', group: 'adversaries', tradition: 'Jewish',
             exposition: [
-                'In Tobit he kills seven bridegrooms before they can reach Sarah, and is driven off by the smoke of a fish’s heart and liver — the earliest exorcism-by-recipe in the Jewish canon. The Testament of Solomon then makes him the demon compelled to help build the Temple, and the Talmud tells a story in which he takes Solomon’s throne and ring and rules in his place while the king wanders as a beggar.',
+                'In Tobit he kills seven bridegrooms before they can reach Sarah, and is driven off by the smoke of a fish’s heart and liver — one of the earliest exorcisms-by-recipe in Jewish literature. The Testament of Solomon then makes him the demon compelled to help build the Temple, and the Talmud tells a story in which he takes Solomon’s throne and ring and rules in his place while the king wanders as a beggar.',
                 'His name is usually derived from Avestan aēšma-daēva, the demon of wrath, which would make him a direct Persian import — one of the clearest single loans in the whole demonological vocabulary.',
             ],
             attested: 'Tobit 3:8 and 8:2–3; Testament of Solomon 5; Babylonian Talmud, Gittin 68a–b.',

@@ -747,7 +747,7 @@ function ThirdLampContributePage() {
                             <figure>
                                 <img loading="lazy" decoding="async" src="/media/fac6744621da1f040468be8de464350f.webp" alt="Jacob Trayer" />
                                 <figcaption>
-                                    <strong>Jake Treyer</strong>
+                                    <strong>Jake Trayer</strong>
                                     <small>Freemason · Esoteric Scholar</small>
                                 </figcaption>
                             </figure>

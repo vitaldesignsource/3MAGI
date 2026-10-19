@@ -106,7 +106,7 @@ export default {
             cells: {
                 sky: { name: 'Jupiter', note: 'Iuppiter Optimus Maximus on the Capitol — the same Indo-European sky-father name as Zeus, but a magistrate’s god, bound to auspices and the state.' },
                 storm: { name: 'Jupiter', note: 'Fulgur and tonitrus are his; a place struck by lightning was fenced off as a bidental and left to him.' },
-                sun: { name: 'Sol', note: 'Marginal in the republic, then imperial: Aurelian’s Sol Invictus in 274 makes the sun a state god, three centuries after Egypt had made it ordinary.' },
+                sun: { name: 'Sol', note: 'Marginal in the republic, then imperial: Aurelian’s Sol Invictus in 274 makes the sun a state god, nearly three thousand years after Egypt had made it ordinary.' },
                 love: { name: 'Venus', note: 'A Roman goddess reshaped by the Greek Aphrodite and then adopted as ancestress by the Julii — theology in the service of a family tree.' },
                 war: { name: 'Mars', note: 'Not Ares in Roman clothes: Mars is a father of the people and a guardian of fields, honoured in March at the campaigning season’s open.' },
                 wisdom: { name: 'Minerva', note: 'Of the Capitoline triad with Jupiter and Juno; her Etruscan predecessor Menrva is the actual line of descent.' },
@@ -156,7 +156,7 @@ export default {
         {
             key: 'kami', label: 'Japan',
             cells: {
-                sky: { name: 'Amaterasu', note: 'A female sun at the head of the family — rare in this table — and the ancestress claimed by the imperial line until 1946.' },
+                sky: { name: 'Amaterasu', note: 'A female sun at the head of the family — rare in this table — and the ancestress claimed by the imperial line; the emperor’s 1946 rescript disavowed his divinity, not that descent.' },
                 storm: { name: 'Susanoo', note: 'Her brother, whose violence drives her into the cave; then, exiled, he kills the eight-headed serpent and finds the sword in its tail.' },
                 sun: { name: 'Amaterasu', note: 'Sky and sun are one cell here, which is precisely why the imperial claim carried the weight it did.' },
                 love: { name: '—', note: 'No single love deity; Izanagi and Izanami’s courtship carries the office in myth, and Benzaiten arrives later from India through Buddhism.' },

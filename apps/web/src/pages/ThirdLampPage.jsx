@@ -61,7 +61,7 @@ const leadStories = [{
   author: 'James Oliva',
   type: 'Occult Modernity · Inquiry',
   number: '03',
-  title: 'The Right to Question: Esotericism, UFOs, and the Infinite Unknown',
+  title: 'Strange Allies: Esotericism, UFOs, and the Preservation of Thought',
   copy: 'Two stigmatized fields of inquiry — the esoteric and the ufological — share a single ancestor: the refusal to stop asking.',
   image: '/media/3311c2125979a66c91ad798141b1adc2.webp',
   minutes: '11 min'

@@ -637,7 +637,7 @@ export default {
             ],
             "from": 348,
             "to": null,
-            "blurb": "Thirteen leather-bound papyrus codices, found in a sealed jar at the foot of a cliff in 1945, restored to the second and third centuries a whole library previously known only through the quotations of the men who refuted it. The texts are Coptic translations of Greek originals, and they include the Gospel of Thomas.",
+            "blurb": "Twelve leather-bound papyrus codices and the loose leaves of a thirteenth, found in a sealed jar at the foot of a cliff in 1945, restored to the second and third centuries a whole library previously known only through the quotations of the men who refuted it. The texts are Coptic translations of Greek originals, and they include the Gospel of Thomas.",
             "events": [
                 {
                     "year": 348,
@@ -652,7 +652,7 @@ export default {
                 {
                     "year": 1945,
                     "title": "The jar",
-                    "desc": "Men digging for fertiliser at the Jabal al-Tarif open a sealed jar in December 1945. What happened next — a blood feud, pages burned as fuel, a codex bought in Zurich and presented to Carl Jung — is known chiefly from interviews conducted decades later, and parts of it are now disputed."
+                    "desc": "Men digging for fertiliser at the Jabal al-Tarif open a sealed jar in December 1945. What happened next — a blood feud, pages burned as fuel, a codex bought for the Jung Institute in Zurich and presented to Carl Jung — is known chiefly from interviews conducted decades later, and parts of it are now disputed."
                 }
             ]
         },
@@ -847,7 +847,7 @@ export default {
                 {
                     "year": 1959,
                     "title": "Its own patriarch",
-                    "desc": "After sixteen centuries in which the Abuna was an Egyptian monk sent from Alexandria, the Ethiopian Orthodox Tewahedo Church becomes autocephalous and Basilios is made its first patriarch. Tewahedo means made one — the church's own word for its christology."
+                    "desc": "Sixteen centuries in which the Abuna was an Egyptian monk sent from Alexandria ended in 1951, when Basilios became the first Ethiopian to hold the office; now the Ethiopian Orthodox Tewahedo Church becomes autocephalous and Basilios is made its first patriarch. Tewahedo means made one — the church's own word for its christology."
                 }
             ]
         },
@@ -1637,7 +1637,7 @@ export default {
                 {
                     "year": 1853,
                     "title": "The temple begun",
-                    "desc": "Ground is broken on 6 April 1853 for a granite temple hauled from a canyon twenty miles away; it took forty years and was dedicated in 1893. Temples are not meeting houses: the ordinances performed in them, including baptism for the dead, are the distinctive practice of the church."
+                    "desc": "The cornerstones are laid on 6 April 1853 for a granite temple hauled from a canyon twenty miles away; it took forty years and was dedicated in 1893. Temples are not meeting houses: the ordinances performed in them, including baptism for the dead, are the distinctive practice of the church."
                 },
                 {
                     "year": 1890,
@@ -1678,7 +1678,7 @@ export default {
                 {
                     "year": 1510,
                     "title": "Two Romes have fallen",
-                    "desc": "Filofei, a monk of Pskov, writes to Grand Prince Vasily III that two Romes have fallen, the third stands, and there will not be a fourth. It was a warning about orthodoxy addressed to a ruler, not a programme of empire; the imperial reading of it came three centuries later."
+                    "desc": "Filofei, a monk of Pskov, writes to Grand Prince Vasily III — in a letter dated variously from about 1510 to the 1520s — that two Romes have fallen, the third stands, and there will not be a fourth. It was a warning about orthodoxy addressed to a ruler, not a programme of empire; the imperial reading of it came three centuries later."
                 },
                 {
                     "year": 1589,

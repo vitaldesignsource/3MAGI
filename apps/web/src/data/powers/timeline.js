@@ -25,9 +25,9 @@ export default {
         },
         {
             slug: 'baal-cycle', title: 'The Baal Cycle written at Ugarit', native: null,
-            kind: 'text', year: -1350, end: null, circa: true, circaEnd: false,
-            description: 'The scribe Ilimilku records the storm-god’s war with Sea and Death on tablets that will lie unread until 1929.',
-            dating: 'From the scribal colophon naming Ilimilku and his king; the tablets’ archaeological context in the destruction level anchors the terminus.',
+            kind: 'text', year: -1250, end: null, circa: true, circaEnd: false,
+            description: 'The scribe Ilimilku records the storm-god’s war with Sea and Death on tablets that will lie in the ground until the excavators reach them in the early 1930s.',
+            dating: 'From the scribal colophon naming Ilimilku and his king, Niqmaddu. Which Niqmaddu is disputed: the older view set the scribe in the fourteenth century under Niqmaddu II, but the identification with a later Niqmaddu, which places the tablets in the late thirteenth century close to the city’s destruction, is now the more widely held and fits their archaeological context in the destruction level.',
         },
         {
             slug: 'zarathustra', title: 'Zarathustra and the daeva inversion', native: null,
