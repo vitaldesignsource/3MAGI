@@ -8,6 +8,7 @@ import ScriptoriumSearch from '../../components/ScriptoriumSearch';
 import { SECTIONS, loadData } from './lib';
 import Rich from '../christianities/rich';
 import PortalHero from '../christianities/PortalHero';
+import PortalEmblem from '../christianities/PortalEmblem';
 
 // The Powers — the third portal. Angels, daimons, and the gods: the whole
 // population of the middle and upper air, across the traditions, with the
@@ -32,6 +33,7 @@ function PowersPortalPage() {
             <SiteHeader />
 
             <PortalHero grand effect="visitation"
+                emblem={<PortalEmblem name="powers" />}
                 image="9ab3ebc27f80a115b54e72bf04ef1d27.webp"
                 alt="A vast marble hall of niches holding a winged bronze figure, a veiled seated statue, a gilded many-winged relief and a panel of golden stars, one reader standing before them"
                 kicker="A Three Magi Press Portal"

@@ -8,6 +8,7 @@ import ScriptoriumSearch from '../../components/ScriptoriumSearch';
 import { SECTIONS, loadData } from './lib';
 import Rich from './rich';
 import PortalHero from './PortalHero';
+import PortalEmblem from './PortalEmblem';
 
 // Christianities — the portal landing. The plural is the thesis, and it is
 // the standard scholarly framing rather than a provocation: what history
@@ -35,6 +36,7 @@ function ChristianitiesPortalPage() {
             <SiteHeader />
 
                 <PortalHero effect="basilica"
+                emblem={<PortalEmblem name="christianities" />}
                 image="ed42c321d22d3f300a5d686660c12d86.webp"
                 alt="Two processions leaving one great basilica into the rain and walking apart — vested clergy in white and gold down the centre steps, dark-robed Eastern monks and priests bearing books and censers to the right — under a breaking storm"
                 kicker="A Three Magi Press Portal"

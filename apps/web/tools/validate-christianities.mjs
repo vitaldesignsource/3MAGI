@@ -794,6 +794,16 @@ if (rosicrucian) {
         }
     }
 
+    // The portal emblems (src/data/emblems.js) are original compositions, and
+    // each must say so: the file must exist, and the caption must call it
+    // made for its page, so that no reader takes it for a historical object.
+    const emblemsMod = await import(new URL('../src/data/emblems.js', import.meta.url));
+    for (const [k, e] of Object.entries(emblemsMod.default ?? {})) {
+        if (!e.image || !existsSync(path.join(web, 'public/media', e.image))) fail(`emblems/${k}: image ${e.image} not in public/media`);
+        if (!e.alt || wordCount(e.alt) < 12) fail(`emblems/${k}: alt text too thin to describe the drawing`);
+        if (!/made for (this|the) (page|portal)/i.test(e.caption || '')) fail(`emblems/${k}: the caption must say the emblem was made for this page`);
+    }
+
     // The emblem is drawn from a letter, as the vault is drawn from a
     // paragraph, and it has to say so on its face.
     if (rosicrucian.emblem && !/diagram of a letter|not a copy/i.test(rosicrucian.emblem.caption || '')) {
