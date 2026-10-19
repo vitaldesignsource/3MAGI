@@ -214,7 +214,7 @@ function ChristianitiesRosicrucianPage() {
                     </header>
                     <ol className="ch-rc-days">
                         {(page.days ?? []).map((d) => (
-                            <li key={d.n} className="ch-rc-day">
+                            <li key={d.n} id={`day-${d.n}`} className="ch-rc-day">
                                 <p className="ch-rc-day-n">Day {d.n}</p>
                                 <h3>{d.title}</h3>
                                 <p className="ch-rc-day-story"><Rich t={d.story} /></p>

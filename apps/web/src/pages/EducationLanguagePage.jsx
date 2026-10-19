@@ -7,7 +7,7 @@ import ThirdLampFooter from '../components/ThirdLampFooter';
 import ScriptoriumCorpus from '../components/ScriptoriumCorpus';
 import ScriptoriumTimeline from '../components/ScriptoriumTimeline';
 import ScriptoriumCurrents from '../components/ScriptoriumCurrents';
-import ScriptoriumReckoner from '../components/ScriptoriumReckoner';
+import ScriptoriumReckoner, { hasReckoner } from '../components/ScriptoriumReckoner';
 import ScriptoriumDrill from '../components/ScriptoriumDrill';
 import { HALLS } from './EducationPortalPage';
 
@@ -169,7 +169,7 @@ function EducationLanguagePage() {
     const sections = [
         data.letters.length > 0 && { id: 'edu-alphabet-heading', label: 'Alphabet' },
         ext.numbers && { id: 'edu-numbers-heading', label: 'Numbers' },
-        { id: 'edu-reckoner-heading', label: 'Reckoner' },
+        hasReckoner(lang, data.letters, ext.numbers) && { id: 'edu-reckoner-heading', label: 'Reckoner' },
         ext.readings.length > 0 && { id: 'edu-readings-heading', label: 'Readings' },
         hasPgm && { id: 'edu-pgm-heading', label: 'Magical Papyri' },
         currents && { id: 'edu-currents-heading', label: 'The Currents' },

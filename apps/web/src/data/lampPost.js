@@ -39,10 +39,10 @@ export const lampPostCategories = [
             },
             {
                 headline: 'Arabic Fragments of Thābit ibn Qurra\'s Book of Talismans',
-                meta: 'Cambridge Genizah · Recently Identified',
-                copy: 'Fragments of the original Arabic version of Thābit ibn Qurra\'s treatise on astrological images were recently identified among the Cambridge Genizah materials. The work explains how celestial influences could be captured within constructed images and talismans. Especially important because much of this tradition had previously survived only through Latin transmission.',
+                meta: 'Cambridge Genizah · T-S Ar. 29.51 and T-S Ar. 43.274 · Published 2021',
+                copy: 'Fragments of a Judaeo-Arabic text of Thābit ibn Qurra\'s treatise on astrological images were identified by Gideon Bohak among the Cambridge Genizah materials and published with Charles Burnett in 2021, followed by Pseudo-Ptolemy\'s On the Images. The work explains how celestial influences could be captured within constructed images and talismans. Especially important because much of this tradition had previously survived only through Latin transmission.',
                 links: [
-                    { label: 'IET Archives discussion', url: 'https://archives.ietdl.org', external: true },
+                    { label: 'Cambridge University Library, Genizah Research Unit', url: 'https://genizahfragments.lib.cam.ac.uk/2022/01/14/book-thabit-ibn-qurra-on-talismans-by-gideon-bohak-and-charles-burnett/', external: true },
                 ],
             },
             {
@@ -66,16 +66,13 @@ export const lampPostCategories = [
                 meta: 'Herculaneum · X-ray Imaging · 2025',
                 copy: 'In 2025, X-ray imaging revealed that the carbonized scroll PHerc. 172 contains part of On Vices by the Epicurean philosopher Philodemus. Adjacent to esotericism rather than an occult manuscript, but the larger Herculaneum project is extremely consequential: hundreds of unread philosophical scrolls remain, and future virtual unwrapping could recover otherwise lost works of ancient philosophy.',
                 links: [
-                    { label: 'Report on the identification', url: 'https://www.theherculaneumsociety.org', external: true },
+                    { label: 'Smithsonian Magazine on the identification', url: 'https://www.smithsonianmag.com/smart-news/these-ancient-scrolls-have-been-a-tantalizing-mystery-for-2000-years-researchers-just-deciphered-a-title-for-the-first-time-180986639/', external: true },
                 ],
             },
             {
                 headline: 'Montemonaco Manuscript No. 40 (Speculative)',
                 meta: 'Apennines · New Interpretation 2025',
                 copy: 'Montemonaco Manuscript No. 40 received a new interpretation in 2025 connecting it with alchemists, magical practice, and traditions surrounding the Apennine Sibyl. Fascinating but presently resting largely on an independent researcher\'s reading — a developing hypothesis rather than an established discovery.',
-                links: [
-                    { label: 'Paper and DOI information', url: 'https://doi.org', external: true },
-                ],
             },
         ],
     },

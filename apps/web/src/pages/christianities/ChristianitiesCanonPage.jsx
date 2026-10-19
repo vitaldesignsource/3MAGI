@@ -276,7 +276,7 @@ function ChristianitiesCanonPage() {
                         })}
 
                         {(codices.commentary ?? []).map((n) => (
-                            <div className="ch-codex-commentary" key={n.slug}>
+                            <div className="ch-codex-commentary" key={n.slug} id={n.slug}>
                                 <h3>{n.heading}</h3>
                                 {(Array.isArray(n.body) ? n.body : [n.body]).map((t, i) => <p key={i}><Rich t={t} /></p>)}
                             </div>

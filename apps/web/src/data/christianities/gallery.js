@@ -131,7 +131,7 @@ export default {
             title: 'The Shout',
             caption: 'Testimony rising over an upright piano — the Black Church, forged under slavery, that gave the family the spirituals, the civil-rights movement, and Azusa Street’s worldwide fire.',
             alt: 'A congregation in a wooden church, an elderly woman standing with her hand raised, a man playing piano',
-            link: '/christianities/map#azusa',
+            link: '/christianities/map#azusa-street',
         },
         {
             file: '0a5fc321c40a2bb3c0fe4a85dc82f795.webp',
