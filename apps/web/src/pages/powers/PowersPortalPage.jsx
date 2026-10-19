@@ -9,6 +9,7 @@ import { SECTIONS, loadData } from './lib';
 import Rich from '../christianities/rich';
 import PortalHero from '../christianities/PortalHero';
 import PortalEmblem from '../christianities/PortalEmblem';
+import EMBLEMS from '../../data/emblems';
 
 // The Powers — the third portal. Angels, daimons, and the gods: the whole
 // population of the middle and upper air, across the traditions, with the
@@ -65,6 +66,11 @@ function PowersPortalPage() {
                                     </span>
                                 )}
                                 <span className="pw-door-body">
+                                    {/* Each door wears its page's emblem as a seal on the seam
+                                        between picture and title; a door without one is as before. */}
+                                    {EMBLEMS[`powers/${s.slug}`] && (
+                                        <img className="pw-door-seal" src={`/media/${EMBLEMS[`powers/${s.slug}`].image}`} alt="" aria-hidden="true" width="72" height="72" loading="lazy" decoding="async" />
+                                    )}
                                     <span className="ch-door-kicker">{s.kicker}</span>
                                     <h3>{s.title}</h3>
                                     <p className="edu-hall-blurb"><Rich t={s.blurb} /></p>
