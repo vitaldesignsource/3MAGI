@@ -6,6 +6,9 @@ import SiteFooter from '../../components/SiteFooter';
 import { loadData } from './lib';
 import Rich from '../christianities/rich';
 import PortalHero from '../christianities/PortalHero';
+import PortalEmblem from '../christianities/PortalEmblem';
+import EMBLEMS from '../../data/emblems';
+import '../../styles/powers-hero.css';
 import { SECTION_BY_SLUG } from './lib';
 import LAND from '../../data/powers/mapland';
 
@@ -129,11 +132,15 @@ function PowersMapPage() {
                 <meta name="description" content="An interactive map of the cults, oracles, visions and schools of the powers: Uruk to Teotihuacan, Delphi to Ise, Qumran to Mortlake." />
             </Helmet>
             <SiteHeader />
-            <PortalHero image={SECTION_BY_SLUG.map?.hero} alt={SECTION_BY_SLUG.map?.heroAlt} effect={SECTION_BY_SLUG.map?.heroEffect}
+            <PortalHero door image={SECTION_BY_SLUG.map?.hero} alt={SECTION_BY_SLUG.map?.heroAlt} effect={SECTION_BY_SLUG.map?.heroEffect}
+                focus={SECTION_BY_SLUG.map?.heroFocus}
+                emblem={<PortalEmblem name="powers/map" bare />}
+                emblemNote={EMBLEMS['powers/map']?.caption}
                 kickerLink="/powers" kickerLinkLabel="The Powers"
                 kicker="Where They Were Named" title="The Map"
                 intro={data.intro ? [data.intro] : []} />
             <main className="edu-main">
+                <span className="pw-divider pw-hero-hinge" aria-hidden="true" />
 
                 <div className="ch-map-controls">
                     <div className="edu-filter-row" role="group" aria-label="Filter by era">

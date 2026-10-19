@@ -14,13 +14,25 @@ import Rich from './rich';
 // A page whose subject is a drawn device rather than a scene can pass that
 // device as `emblem`; it sits above the kicker, and pages that pass nothing
 // render exactly as before.
+//
+// Three further props are opt-in, and a page that passes none of them renders
+// exactly as before:
+//   door       marks the hero as one of the Powers doors (class `is-door`), so
+//              that door pages can be styled without touching the portals that
+//              share this component;
+//   emblemNote the emblem's making-note, set after the intro as a colophon
+//              (pair it with <PortalEmblem bare />, which then leaves its own
+//              caption off and points at this note);
+//   focus      an object-position for the image, for a picture whose subject
+//              sits away from the default crop.
 
-function PortalHero({ image, alt, kicker, kickerLink, kickerLinkLabel, title, intro, grand, effect, emblem, children }) {
+function PortalHero({ image, alt, kicker, kickerLink, kickerLinkLabel, title, intro, grand, effect, emblem, door, emblemNote, focus, children }) {
     return (
-        <section className={`edu-hero ch-hero${image ? ' has-image' : ''}${grand ? ' is-grand' : ''}`}>
+        <section className={`edu-hero ch-hero${image ? ' has-image' : ''}${grand ? ' is-grand' : ''}${door ? ' is-door' : ''}`}>
             {image && (
                 <div className="ch-hero-figure" aria-hidden={alt ? undefined : 'true'}>
-                    <img src={`/media/${image}`} alt={alt || ''} loading="eager" decoding="async" />
+                    <img src={`/media/${image}`} alt={alt || ''} loading="eager" decoding="async"
+                        style={focus ? { objectPosition: focus } : undefined} />
                     {effect && (
                         <span className={`ch-hero-light is-${effect}`} aria-hidden="true">
                             <span className="hl-a" /><span className="hl-b" />
@@ -40,6 +52,7 @@ function PortalHero({ image, alt, kicker, kickerLink, kickerLinkLabel, title, in
                 {(intro || []).map((p, i) => (
                     <p className="edu-hero-sub" key={i}><Rich t={p} /></p>
                 ))}
+                {emblemNote && <p id="hero-emblem-note" className="ch-hero-colophon">{emblemNote}</p>}
                 {children}
             </div>
         </section>
