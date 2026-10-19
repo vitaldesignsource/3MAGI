@@ -237,6 +237,20 @@ for (const p of [...(rosicrucian?.map?.journey ?? []), ...(rosicrucian?.map?.pla
     CH, 'site', '', p.name, `${p.year} \u00b7 the Rosicrucian map, ${p.layer}`, p.note, 'rc-map-heading', '/christianities/rosicrucian',
 );
 
+// The lines: every body that took the name, found by its own name (AMORC,
+// the Stella Matutina, the Lectorium) and opening the chart's list entry.
+for (const b of rosicrucian?.lines?.bodies ?? []) push(
+    CH, 'branch', '', b.name, `${b.founded} \u00b7 ${b.place} \u00b7 a Rosicrucian line`, b.note, `line-${b.key}`, '/christianities/rosicrucian',
+);
+
+// The people of the story and the brothers of the Fama, found by name.
+for (const p of rosicrucian?.people ?? []) push(
+    CH, 'figure', '', p.name, `${p.dates} \u00b7 the Rosicrucian circles`, p.role, `person-${p.key}`, '/christianities/rosicrucian',
+);
+for (const b of rosicrucian?.brethren ?? []) push(
+    CH, 'figure', '', b.initials, 'A brother of the Fama, named only by initials', b.says, `brother-${b.key}`, '/christianities/rosicrucian',
+);
+
 // The historians: their books are looked for by title.
 for (const w of rosicrucian?.scholarship ?? []) push(
     CH, 'work', '', w.work, `${w.year} · ${w.author}`, w.argued, w.slug, '/christianities/rosicrucian',

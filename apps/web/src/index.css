@@ -11196,6 +11196,21 @@ h3 {
 .ch-page .ch-rc-map-note,
 .ch-page .ch-rc-map-name,
 .ch-page .ch-rc-map-active,
+.ch-page .ch-rc-passage-pair span,
+.ch-page .ch-rc-brethren-rule,
+.ch-page .ch-rc-gen-note,
+.ch-page .ch-rc-brother-says,
+.ch-page .ch-rc-brother-quote,
+.ch-page .ch-rc-brother-joined,
+.ch-page .ch-rc-succession ol,
+.ch-page .ch-rc-lines-legend li,
+.ch-page .ch-rc-line-body > p,
+.ch-page .ch-rc-line-links,
+.ch-page .ch-rc-circles-focus,
+.ch-page .ch-rc-circle-head > p,
+.ch-page .ch-rc-person-role,
+.ch-page .ch-rc-person-links,
+.ch-page .ch-rc-person-dates,
 .ch-page .ch-rc-grades td,
 .ch-page .ch-rc-grades-note,
 .ch-page .ch-rc-book-note,
@@ -12708,6 +12723,130 @@ figure.ch-gallery-card { margin: 0; }
     .ch-rc-map-pan .ch-rc-map-svg { width: 760px; max-width: none; }
     .ch-rc-map-swipe { display: inline; }
 }
+
+/* --- how the sign travelled --- */
+.ch-rc-passages { margin: 2.4rem 0 0; }
+.ch-rc-passages h3 { margin: 0 0 0.5rem; font-size: 1.15rem; font-weight: 500; color: #ecd9ae; }
+.ch-rc-passages-intro { max-width: 46rem; margin: 0 0 1rem; color: rgba(232, 224, 208, 0.78); line-height: 1.75; }
+.ch-rc-passage-list { list-style: none; margin: 1.2rem 0 0; padding: 0; display: grid; gap: 0.9rem; }
+.ch-rc-passage { padding: 0.95rem 1.15rem 1rem; border: 1px solid rgba(201, 168, 106, 0.13); border-left-width: 3px; border-radius: 3px; background: rgba(24, 20, 16, 0.36); }
+.ch-rc-passage-pair { margin: 0; display: flex; flex-wrap: wrap; align-items: center; gap: 0.55rem 0.8rem; }
+.ch-rc-passage-pair a { display: inline-flex; align-items: center; gap: 0.55rem; color: #ecd9ae; text-decoration: none; }
+.ch-rc-passage-pair a:hover span { text-decoration: underline; text-underline-offset: 3px; }
+.ch-rc-passage-pair img { width: 44px; height: 44px; border-radius: 3px; background: #0d0b0a; border: 1px solid rgba(201, 168, 106, 0.18); }
+.ch-rc-passage-pair span { font-size: 0.95rem; }
+.ch-rc-passage-arrow { color: rgba(201, 168, 106, 0.7); font-size: 1.1rem; }
+
+/* --- the Fama's own line --- */
+.ch-rc-brethren-rule { margin: 1.6rem 0 0; padding: 1.1rem 1.3rem; border: 1px solid rgba(201, 168, 106, 0.18); border-radius: 3px; background: linear-gradient(180deg, rgba(28, 23, 18, 0.55), rgba(18, 15, 12, 0.3)); }
+.ch-rc-brethren-rule blockquote { margin: 0; padding: 0 0 0 1rem; border-left: 2px solid rgba(201, 168, 106, 0.5); }
+.ch-rc-brethren-rule blockquote p { margin: 0; color: #ecd9ae; font-style: italic; font-size: 1.04rem; line-height: 1.7; }
+.ch-rc-brethren-rule figcaption { margin: 0.55rem 0 0; font-size: 0.82rem; color: rgba(222, 212, 196, 0.6); }
+.ch-rc-brethren-rule-note { margin: 0.7rem 0 0; color: rgba(232, 224, 208, 0.8); line-height: 1.75; }
+.ch-rc-gens { margin: 1.6rem 0 0; display: grid; gap: 0; }
+.ch-rc-gen { position: relative; padding: 1.1rem 0 1.3rem 1.4rem; border-left: 1px solid rgba(201, 168, 106, 0.28); }
+.ch-rc-gen::before { content: ""; position: absolute; left: -5px; top: 1.45rem; width: 9px; height: 9px; border-radius: 50%; background: #c9a86a; }
+.ch-rc-gen-label { margin: 0; font-family: "Cinzel", Georgia, serif; font-size: 0.78rem; letter-spacing: 0.2em; color: rgba(209, 173, 104, 0.85); text-transform: uppercase; }
+.ch-rc-gen-note { margin: 0.35rem 0 0; max-width: 44rem; color: rgba(222, 212, 196, 0.7); line-height: 1.7; font-size: 0.95rem; }
+.ch-rc-gen-row { list-style: none; margin: 0.9rem 0 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(15.5rem, 1fr)); gap: 0.9rem; }
+.ch-rc-brother { padding: 0.95rem 1.05rem 1.05rem; border: 1px solid rgba(201, 168, 106, 0.14); border-radius: 3px; background: rgba(24, 20, 16, 0.4); }
+.ch-rc-brother-seal { margin: 0 0 0.5rem; }
+.ch-rc-brother-seal span {
+  display: inline-grid; place-items: center; min-width: 3.1rem; height: 3.1rem; padding: 0 0.5rem; border-radius: 999px;
+  border: 1px solid rgba(201, 168, 106, 0.55); box-shadow: inset 0 0 0 3px rgba(13, 11, 10, 1), inset 0 0 0 4px rgba(201, 168, 106, 0.25);
+  font-family: "Cinzel", Georgia, serif; font-size: 0.95rem; letter-spacing: 0.12em; color: #ecd9ae;
+}
+.ch-rc-brother h3 { margin: 0; font-size: 1rem; font-weight: 500; }
+.ch-rc-brother-joined { margin: 0.2rem 0 0; font-size: 0.82rem; color: rgba(209, 173, 104, 0.8); }
+.ch-rc-brother-says { margin: 0.5rem 0 0; color: rgba(232, 224, 208, 0.84); line-height: 1.7; font-size: 0.95rem; }
+.ch-rc-brother-quote { margin: 0.65rem 0 0; padding: 0 0 0 0.8rem; border-left: 2px solid rgba(201, 168, 106, 0.4); }
+.ch-rc-brother-quote p { margin: 0; color: #ecd9ae; font-style: italic; line-height: 1.65; font-size: 0.93rem; }
+.ch-rc-brother-quote footer { margin: 0.3rem 0 0; font-size: 0.78rem; color: rgba(222, 212, 196, 0.55); }
+.ch-rc-succession { margin: 1.4rem 0 0; padding: 1rem 1.25rem 1.1rem; border: 1px dashed rgba(201, 168, 106, 0.25); border-radius: 3px; }
+.ch-rc-succession h3 { margin: 0 0 0.5rem; font-size: 0.98rem; font-weight: 500; color: #ecd9ae; }
+.ch-rc-succession ol { margin: 0; padding-left: 1.2rem; color: rgba(232, 224, 208, 0.82); line-height: 1.75; }
+
+/* --- the lines --- */
+.ch-rc-lines { margin: 1.6rem 0 0; }
+.ch-rc-lines-legend { list-style: none; margin: 0 0 1rem; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr)); gap: 0.45rem 1.2rem; }
+.ch-rc-lines-legend li { display: flex; gap: 0.6rem; align-items: baseline; font-size: 0.86rem; color: rgba(222, 212, 196, 0.72); line-height: 1.55; }
+.ch-rc-lines-legend svg { flex: none; position: relative; top: 1px; }
+.ch-rc-lines-legend strong { color: #ecd9ae; font-weight: 500; }
+.ch-rc-lines-figure { margin: 0; border: 1px solid rgba(201, 168, 106, 0.16); border-radius: 3px; overflow: hidden; background: #0b0a09; }
+.ch-rc-lines-pan { overflow-x: auto; -webkit-overflow-scrolling: touch; overscroll-behavior-x: contain; }
+.ch-rc-lines-svg { display: block; width: 100%; height: auto; }
+.ch-rc-lines-svg .rcl-tick line { stroke: rgba(201, 168, 106, 0.08); stroke-width: 1; }
+.ch-rc-lines-svg .rcl-tick text { font: 11px Georgia, 'Times New Roman', serif; fill: rgba(201, 168, 106, 0.55); }
+.ch-rc-lines-svg .rcl-hatch { stroke: rgba(143, 168, 189, 0.16); stroke-width: 2; }
+.ch-rc-lines-svg .rcl-gap text { font: italic 13px Georgia, 'Times New Roman', serif; fill: rgba(143, 168, 189, 0.85); paint-order: stroke; stroke: #0b0a09; stroke-width: 4px; }
+.rcl-link { fill: none; stroke-linecap: round; }
+.rcl-link.is-warrant { stroke: #c9a86a; stroke-width: 2.6; }
+.rcl-link.is-members { stroke: #8fa8bd; stroke-width: 1.6; }
+.rcl-link.is-schism { stroke: #8fa8bd; stroke-width: 1.6; stroke-dasharray: 7 4; }
+.rcl-link.is-absorbed { stroke: rgba(143, 168, 189, 0.7); stroke-width: 1.2; stroke-dasharray: 2 3; }
+.rcl-link.is-claimed { stroke: #c9a86a; stroke-width: 1.6; stroke-dasharray: 1.5 4.5; opacity: 0.9; }
+.rcl-link.is-literary { stroke: rgba(222, 212, 196, 0.38); stroke-width: 1.1; stroke-dasharray: 10 3 2 3; }
+.ch-rc-lines-svg .rcl-arrowhead { fill: rgba(201, 168, 106, 0.7); }
+.ch-rc-lines-svg .rcl-edge { transition: opacity 0.15s; }
+.ch-rc-lines-svg .rcl-edge.is-dim { opacity: 0.12; }
+.ch-rc-lines-svg .rcl-edge.is-lit .rcl-link { stroke-width: 3; }
+.ch-rc-lines-svg .rcl-node { cursor: pointer; outline: none; transition: opacity 0.15s; }
+.ch-rc-lines-svg .rcl-node rect { fill: #17130f; stroke: rgba(201, 168, 106, 0.55); stroke-width: 1.2; }
+.ch-rc-lines-svg .rcl-node text { font: 12px Georgia, 'Times New Roman', serif; fill: #ecd9ae; pointer-events: none; }
+.ch-rc-lines-svg .rcl-node .rcl-year { font-size: 10px; fill: rgba(201, 168, 106, 0.7); }
+.ch-rc-lines-svg .rcl-node.is-dim { opacity: 0.28; }
+.ch-rc-lines-svg .rcl-node.is-active rect, .ch-rc-lines-svg .rcl-node:focus-visible rect { fill: #2a2117; stroke: #ecd9ae; stroke-width: 2; }
+.ch-rc-lines-svg .rcl-node.is-manifestos rect { stroke: #ecd9ae; }
+.ch-rc-lines-active { min-height: 3.2rem; }
+.ch-rc-lines-list { list-style: none; margin: 1.6rem 0 0; padding: 0; display: grid; gap: 0.75rem; }
+.ch-rc-line { display: grid; grid-template-columns: 6.2rem 1fr; gap: 1rem; padding: 0.95rem 1.1rem; border: 1px solid rgba(201, 168, 106, 0.12); border-radius: 3px; background: rgba(24, 20, 16, 0.32); scroll-margin-top: 6rem; }
+.ch-rc-line.is-active { border-color: rgba(201, 168, 106, 0.5); background: rgba(201, 168, 106, 0.06); }
+.ch-rc-line-year { margin: 0; font-family: "Cormorant Garamond", Georgia, serif; font-size: 1rem; letter-spacing: 0.06em; color: #c9a86a; }
+.ch-rc-line h3 { margin: 0; font-size: 1.02rem; font-weight: 500; }
+.ch-rc-line-meta { margin: 0.2rem 0 0.45rem; font-size: 0.84rem; color: rgba(209, 173, 104, 0.78); }
+.ch-rc-line-body > p { margin: 0; color: rgba(232, 224, 208, 0.84); line-height: 1.75; font-size: 0.96rem; }
+.ch-rc-line-links { list-style: none; margin: 0.6rem 0 0; padding: 0; display: grid; gap: 0.35rem; font-size: 0.88rem; color: rgba(222, 212, 196, 0.7); line-height: 1.6; }
+.ch-rc-line-links li { padding-left: 0.7rem; border-left: 2px solid rgba(143, 168, 189, 0.45); }
+.ch-rc-line-links li.is-warrant { border-left-color: #c9a86a; }
+.ch-rc-line-links li.is-claimed { border-left-style: dotted; border-left-color: #c9a86a; }
+.ch-rc-line-links li.is-schism { border-left-style: dashed; }
+.ch-rc-line-links li.is-literary { border-left-color: rgba(222, 212, 196, 0.3); }
+.ch-rc-line-links a { color: #ecd9ae; }
+.ch-rc-line-kind { font-family: "Cinzel", Georgia, serif; font-size: 0.72rem; letter-spacing: 0.14em; color: rgba(209, 173, 104, 0.9); text-transform: uppercase; }
+.ch-rc-line-source { margin: 0.55rem 0 0 !important; font-size: 0.8rem !important; color: rgba(222, 212, 196, 0.5) !important; }
+@media (max-width: 640px) {
+    .ch-rc-lines-pan .ch-rc-lines-svg { width: 820px; max-width: none; }
+    .ch-rc-line { grid-template-columns: 1fr; gap: 0.3rem; }
+}
+
+/* --- connected figures --- */
+.ch-rc-circles { margin: 1.4rem 0 0; }
+.ch-rc-circles-bar { display: flex; flex-wrap: wrap; gap: 0.5rem 0.7rem; align-items: center; position: sticky; top: 4.6rem; z-index: 2; padding: 0.55rem 0; background: linear-gradient(180deg, rgba(11, 10, 9, 0.96), rgba(11, 10, 9, 0.85)); }
+.ch-rc-circles-focus { margin: 0; font-size: 0.88rem; color: rgba(232, 224, 208, 0.78); }
+.ch-rc-circles-focus strong { color: #ecd9ae; font-weight: 500; }
+.ch-rc-circles-clear { margin-left: 0.35rem; background: none; border: 1px solid rgba(201, 168, 106, 0.4); color: #c9a86a; border-radius: 2px; padding: 0.05rem 0.45rem; font-size: 0.8rem; cursor: pointer; }
+.ch-rc-circle { margin: 1.8rem 0 0; }
+.ch-rc-circle-head h3 { margin: 0.25rem 0 0.3rem; font-size: 1.15rem; font-weight: 500; }
+.ch-rc-circle-head > p:not(.ch-rc-year) { margin: 0; max-width: 46rem; color: rgba(222, 212, 196, 0.72); line-height: 1.7; font-size: 0.95rem; }
+.ch-rc-people { list-style: none; margin: 0.9rem 0 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(19rem, 1fr)); gap: 0.85rem; }
+.ch-rc-person { padding: 0.9rem 1.05rem 1rem; border: 1px solid rgba(201, 168, 106, 0.13); border-radius: 3px; background: rgba(24, 20, 16, 0.38); scroll-margin-top: 9rem; transition: opacity 0.15s, border-color 0.15s; }
+.ch-rc-circles.has-active .ch-rc-person { opacity: 0.42; }
+.ch-rc-circles.has-active .ch-rc-person.is-active, .ch-rc-circles.has-active .ch-rc-person.is-linked { opacity: 1; }
+.ch-rc-person.is-active { border-color: #ecd9ae; background: rgba(201, 168, 106, 0.08); }
+.ch-rc-person.is-linked { border-color: rgba(201, 168, 106, 0.55); }
+.ch-rc-person-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.2rem 0.6rem; width: 100%; padding: 0; background: none; border: 0; text-align: left; cursor: pointer; color: inherit; }
+.ch-rc-person-name { font-family: "Cinzel", Georgia, serif; font-size: 1rem; color: #ecd9ae; }
+.ch-rc-person-dates { font-size: 0.82rem; color: rgba(209, 173, 104, 0.78); }
+.ch-rc-person-role { margin: 0.45rem 0 0; color: rgba(232, 224, 208, 0.84); line-height: 1.7; font-size: 0.95rem; }
+.ch-rc-person-links { list-style: none; margin: 0.6rem 0 0; padding: 0; display: grid; gap: 0.3rem; font-size: 0.86rem; color: rgba(222, 212, 196, 0.66); line-height: 1.55; }
+.ch-rc-person-links li { padding-left: 0.65rem; border-left: 2px solid rgba(143, 168, 189, 0.5); }
+.ch-rc-person-links li.is-claimed { border-left: 2px dotted #c9a86a; }
+.ch-rc-person-links li.is-disputed { border-left: 2px dashed rgba(201, 168, 106, 0.7); }
+.ch-rc-person-verb { color: rgba(209, 173, 104, 0.95); }
+.ch-rc-person-links a { color: #ecd9ae; }
+.ch-rc-person-standing { color: #c9a86a; }
+.ch-rc-person-more { margin: 0.6rem 0 0; font-size: 0.85rem; }
+.ch-rc-person-more a { color: #c9a86a; }
 
 /* --- the grades: the one table on the page where the descent is real ------- */
 .ch-rc-grades-scroll {

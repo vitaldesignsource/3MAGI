@@ -9,6 +9,9 @@ import PortalHero from './PortalHero';
 import RosicrucianVault from './RosicrucianVault';
 import LutherRose from './LutherRose';
 import RosicrucianMap from './RosicrucianMap';
+import RosicrucianLines from './RosicrucianLines';
+import RosicrucianBrethren from './RosicrucianBrethren';
+import RosicrucianCircles from './RosicrucianCircles';
 
 // The Rose and the Cross, off the Inner Tradition.
 //
@@ -31,6 +34,19 @@ import RosicrucianMap from './RosicrucianMap';
 //
 // The entries narrate. The ledger adjudicates. The descent chart draws. The
 // emblem in the hero is Luther's seal, drawn from his letter (LutherRose.jsx).
+//
+// Lines and connections, added since, each in its own component:
+//   the brethren     the line the Fama gives itself, initials only, under its
+//                    rule of succession (RosicrucianBrethren.jsx)
+//   the lines        every body that has claimed the name on one time axis,
+//                    each link drawn by its evidence (RosicrucianLines.jsx)
+//   the circles      the people, in the circles they moved in, every link
+//                    shown from both ends (RosicrucianCircles.jsx)
+//   the passages     how the rose and the cross got from one sign to the
+//                    next, each step graded like a ledger row
+
+const NUMBER = ['No', 'One', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine', 'Ten', 'Eleven', 'Twelve', 'Thirteen', 'Fourteen'];
+const numberWord = (n) => NUMBER[n] ?? String(n);
 
 const GROUP = 'rosicrucian';
 
@@ -112,7 +128,7 @@ function ChristianitiesRosicrucianPage() {
                     <span className="pw-divider" aria-hidden="true" />
                     <header className="edu-section-head">
                         <p className="kicker">The signs</p>
-                        <h2 id="rc-signs-heading">Six emblems, from their originals</h2>
+                        <h2 id="rc-signs-heading">{numberWord(page.signs?.length ?? 0)} emblems, from their originals</h2>
                         {(page.signsIntro ?? []).map((p, i) => <p key={i}><Rich t={p} /></p>)}
                     </header>
                     <div className="ch-rc-signs">
@@ -131,6 +147,29 @@ function ChristianitiesRosicrucianPage() {
                             </figure>
                         ))}
                     </div>
+                    {page.signPassages?.length > 0 && (
+                        <div className="ch-rc-passages">
+                            <h3 id="rc-passages-heading">How the sign travelled</h3>
+                            {(page.signPassagesIntro ?? []).map((p, i) => <p key={i} className="ch-rc-passages-intro"><Rich t={p} /></p>)}
+                            <ol className="ch-rc-passage-list">
+                                {page.signPassages.map((p, i) => {
+                                    const from = page.signs.find((g) => g.key === p.from);
+                                    const to = page.signs.find((g) => g.key === p.to);
+                                    return (
+                                        <li key={i} className={`ch-rc-passage ch-rc-row is-${p.standing}`}>
+                                            <p className="ch-rc-passage-pair">
+                                                <a href={`#sign-${p.from}`}><img src={`/media/${from?.image}`} alt="" width="44" height="44" loading="lazy" /><span>{from?.title}</span></a>
+                                                <span className="ch-rc-passage-arrow" aria-label="to">→</span>
+                                                <a href={`#sign-${p.to}`}><img src={`/media/${to?.image}`} alt="" width="44" height="44" loading="lazy" /><span>{to?.title}</span></a>
+                                            </p>
+                                            <p className="ch-rc-standing"><span className={`ch-rc-tag is-${p.standing}`}>{label[p.standing] ?? p.standing}</span></p>
+                                            <p className="ch-rc-verdict"><Rich t={p.note} /></p>
+                                        </li>
+                                    );
+                                })}
+                            </ol>
+                        </div>
+                    )}
                 </section>
 
                 <section className="ch-rc-rules-wrap" aria-labelledby="rc-rules-heading">
@@ -152,6 +191,20 @@ function ChristianitiesRosicrucianPage() {
                     </ol>
                     {page.rulesCoda && <p className="ch-rc-coda"><Rich t={page.rulesCoda} /></p>}
                 </section>
+
+                {page.brethren?.length > 0 && (
+                    <section className="ch-rc-brethren-wrap" aria-labelledby="rc-brethren-heading">
+                        <span className="pw-divider" aria-hidden="true" />
+                        <header className="edu-section-head">
+                            <p className="kicker">The Fama, its own line</p>
+                            <h2 id="rc-brethren-heading">Initials, and a rule of succession</h2>
+                            {(page.brethrenIntro ?? []).map((p, i) => <p key={i}><Rich t={p} /></p>)}
+                        </header>
+                        <RosicrucianBrethren rule={page.brethrenRule} brethren={page.brethren}
+                            generations={page.brethrenGenerations} succession={page.brethrenSuccession} />
+                        {page.brethrenCoda && <p className="ch-rc-coda"><Rich t={page.brethrenCoda} /></p>}
+                    </section>
+                )}
                 <section className="ch-rc-days-wrap" aria-labelledby="rc-days-heading">
                     <span className="pw-divider" aria-hidden="true" />
                     <header className="edu-section-head">
@@ -302,6 +355,19 @@ function ChristianitiesRosicrucianPage() {
                     {page.descentCoda && <p className="ch-rc-coda"><Rich t={page.descentCoda} /></p>}
                 </section>
 
+                {page.lines && (
+                    <section className="ch-rc-lines-wrap" aria-labelledby="rc-lines-heading">
+                        <span className="pw-divider" aria-hidden="true" />
+                        <header className="edu-section-head">
+                            <p className="kicker">The lines</p>
+                            <h2 id="rc-lines-heading">Every body that took the name</h2>
+                            {(page.linesIntro ?? []).map((p, i) => <p key={i}><Rich t={p} /></p>)}
+                        </header>
+                        <RosicrucianLines lines={page.lines} />
+                        {page.linesCoda && <p className="ch-rc-coda"><Rich t={page.linesCoda} /></p>}
+                    </section>
+                )}
+
                 <section className="ch-rc-grades-wrap" aria-labelledby="rc-grades-heading">
                     <span className="pw-divider" aria-hidden="true" />
                     <header className="edu-section-head">
@@ -367,6 +433,19 @@ function ChristianitiesRosicrucianPage() {
                         </header>
                         <RosicrucianMap map={page.map} />
                         {page.map.journeyNote && <p className="ch-rc-coda"><Rich t={page.map.journeyNote} /></p>}
+                    </section>
+                )}
+
+                {page.people?.length > 0 && (
+                    <section className="ch-rc-circles-wrap" aria-labelledby="rc-circles-heading">
+                        <span className="pw-divider" aria-hidden="true" />
+                        <header className="edu-section-head">
+                            <p className="kicker">Connected figures</p>
+                            <h2 id="rc-circles-heading">Who knew whom</h2>
+                            {(page.circlesIntro ?? []).map((p, i) => <p key={i}><Rich t={p} /></p>)}
+                        </header>
+                        <RosicrucianCircles circles={page.circles} people={page.people} />
+                        {page.circlesCoda && <p className="ch-rc-coda"><Rich t={page.circlesCoda} /></p>}
                     </section>
                 )}
 
