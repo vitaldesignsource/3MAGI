@@ -14,7 +14,9 @@ import Rich from './rich';
 // A link's kind is the claim the page makes about it, and the drawing says it
 // before the caption does: a warrant is a heavy line, shared members a plain
 // one, a schism is dashed, a claim is dotted gold with a question mark, and
-// a debt to printed books is a faint grey line.
+// a debt to printed books is a faint grey line. A body whose very existence
+// is only claimed (Sprengel's order) is drawn with a dashed outline, and is
+// the only kind allowed to sit inside the gap.
 
 const WIDTH = 1060;
 const TOP = 34;
@@ -125,7 +127,7 @@ function RosicrucianLines({ lines }) {
                             const w = nodeW(b);
                             const dim = touching && !touching.has(b.key);
                             return (
-                                <g key={b.key} className={`rcl-node is-${b.family}${active === b.key ? ' is-active' : ''}${dim ? ' is-dim' : ''}`}
+                                <g key={b.key} className={`rcl-node is-${b.family}${b.claimedOnly ? ' is-claimed-only' : ''}${active === b.key ? ' is-active' : ''}${dim ? ' is-dim' : ''}`}
                                     onClick={() => pick(b.key)} onPointerEnter={hover(b.key)} tabIndex={0} role="button"
                                     onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); pick(b.key); } }}
                                     aria-label={`${b.name}, ${b.founded}, ${b.place}`}>
@@ -153,7 +155,7 @@ function RosicrucianLines({ lines }) {
                     <li key={b.key} id={`line-${b.key}`} className={`ch-rc-line is-${b.family}${active === b.key ? ' is-active' : ''}`}>
                         <p className="ch-rc-line-year">{b.founded}</p>
                         <div className="ch-rc-line-body">
-                            <h3>{b.name}</h3>
+                            <h3>{b.name}{b.claimedOnly && <em className="ch-rc-line-claimed"> — existence claimed, not shown</em>}</h3>
                             <p className="ch-rc-line-meta">{b.place}{b.founders?.length ? ` · ${b.founders.join(', ')}` : ''}{b.ended ? ` · until ${b.ended}` : ''}</p>
                             <p><Rich t={b.note} /></p>
                             {linksOf(b.key).length > 0 && (

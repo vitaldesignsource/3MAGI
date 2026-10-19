@@ -681,7 +681,8 @@ if (rosicrucian) {
             if (b.quote && !b.quoteTranslation) fail(`${where}: a quotation without its translation`);
             checkContested(where, b);
         }
-        if (brethren.filter((b) => b.generation === 0).length !== 1) fail('rosicrucian/brethren: the line must have exactly one founder');
+        if (brethren.filter((b) => b.founder).length !== 1) fail('rosicrucian/brethren: the line must have exactly one founder');
+        if (brethren.some((b) => b.founder && b.generation !== 0)) fail('rosicrucian/brethren: the founder stands in generation 0');
     }
 
     // The lines. Every body has a founding year, a place and a note; every
@@ -706,8 +707,8 @@ if (rosicrucian) {
             if (!b.source || !/\b1\d{3}\b|\b20\d{2}\b/.test(b.source)) fail(`${where}: the source must cite dated work`);
             if (!Number.isInteger(b.col) || b.col < 0 || b.col > 5) fail(`${where}: col must be 0–5`);
             if ((b.short || b.name).length > 24) fail(`${where}: the diagram label is too long (${(b.short || b.name).length} > 24)`);
-            if (lines.gap && b.foundedYear > lines.gap.from && b.foundedYear < lines.gap.to) {
-                fail(`${where}: founded ${b.foundedYear}, inside the gap the page says is empty`);
+            if (lines.gap && !b.claimedOnly && b.foundedYear > lines.gap.from && b.foundedYear < lines.gap.to) {
+                fail(`${where}: founded ${b.foundedYear}, inside the gap the page says is empty — only a body whose existence is merely claimed may stand there`);
             }
             checkContested(where, b);
         }
@@ -770,10 +771,18 @@ if (rosicrucian) {
 
     // How the sign travelled: each passage joins two signs on the page and is
     // graded on the ledger's own scale.
+    const stationKeys = new Set();
+    for (const s of rosicrucian.signStations ?? []) {
+        if (!s.key || !s.title || !s.year) fail(`rosicrucian/station ${s.key || '?'}: needs a key, a title and a year`);
+        stationKeys.add(s.key);
+    }
+    const signKeys = new Set((rosicrucian.signs ?? []).map((g) => g.key));
+    for (const k of stationKeys) if (signKeys.has(k)) fail(`rosicrucian/station ${k}: is also a sign`);
     for (const [i, p] of (rosicrucian.signPassages ?? []).entries()) {
         const where = `rosicrucian/passage[${i}] ${p.from}→${p.to}`;
-        const signKeys = new Set((rosicrucian.signs ?? []).map((g) => g.key));
-        if (!signKeys.has(p.from) || !signKeys.has(p.to)) fail(`${where}: joins a sign that is not on the page`);
+        const known = (k) => signKeys.has(k) || stationKeys.has(k);
+        if (!known(p.from) || !known(p.to)) fail(`${where}: joins a point that is neither a sign nor a declared station`);
+        if (!signKeys.has(p.from) && !signKeys.has(p.to)) fail(`${where}: a passage must touch at least one drawn sign`);
         if (!keys.has(p.standing)) fail(`${where}: standing "${p.standing}" is not in the declared key`);
         if (!p.note || wordCount(p.note) < 12) fail(`${where}: a passage must show its working`);
         checkContested(where, p);

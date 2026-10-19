@@ -12736,6 +12736,12 @@ figure.ch-gallery-card { margin: 0; }
 .ch-rc-passage-pair img { width: 44px; height: 44px; border-radius: 3px; background: #0d0b0a; border: 1px solid rgba(201, 168, 106, 0.18); }
 .ch-rc-passage-pair span { font-size: 0.95rem; }
 .ch-rc-passage-arrow { color: rgba(201, 168, 106, 0.7); font-size: 1.1rem; }
+.ch-rc-passage-station { display: inline-flex; align-items: center; gap: 0.55rem; color: rgba(236, 217, 174, 0.85); font-size: 0.95rem; }
+.ch-rc-passage-station-mark { display: inline-grid; place-items: center; width: 44px; height: 44px; border: 1px dashed rgba(201, 168, 106, 0.35); border-radius: 3px; color: rgba(201, 168, 106, 0.6); font-size: 1.1rem; }
+.ch-rc-passage-station small { color: rgba(209, 173, 104, 0.75); font-size: 0.8rem; }
+.ch-rc-lines-svg .rcl-node.is-claimed-only rect { stroke-dasharray: 4 3; fill: rgba(23, 19, 15, 0.6); }
+.ch-rc-lines-svg .rcl-node.is-claimed-only text { font-style: italic; }
+.ch-rc-line-claimed { font-size: 0.82rem; color: #c9a86a; font-weight: 400; }
 
 /* --- the Fama's own line --- */
 .ch-rc-brethren-rule { margin: 1.6rem 0 0; padding: 1.1rem 1.3rem; border: 1px solid rgba(201, 168, 106, 0.18); border-radius: 3px; background: linear-gradient(180deg, rgba(28, 23, 18, 0.55), rgba(18, 15, 12, 0.3)); }

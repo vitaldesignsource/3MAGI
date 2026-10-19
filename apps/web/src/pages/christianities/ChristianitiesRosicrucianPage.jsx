@@ -153,14 +153,20 @@ function ChristianitiesRosicrucianPage() {
                             {(page.signPassagesIntro ?? []).map((p, i) => <p key={i} className="ch-rc-passages-intro"><Rich t={p} /></p>)}
                             <ol className="ch-rc-passage-list">
                                 {page.signPassages.map((p, i) => {
-                                    const from = page.signs.find((g) => g.key === p.from);
-                                    const to = page.signs.find((g) => g.key === p.to);
+                                    // A passage joins two drawn signs, or a sign and a station: a
+                                    // point in the story with no emblem of its own (the Fama's name).
+                                    const point = (k) => {
+                                        const g = page.signs.find((x) => x.key === k);
+                                        if (g) return <a href={`#sign-${k}`}><img src={`/media/${g.image}`} alt="" width="44" height="44" loading="lazy" /><span>{g.title}</span></a>;
+                                        const s = (page.signStations ?? []).find((x) => x.key === k);
+                                        return <span className="ch-rc-passage-station"><span className="ch-rc-passage-station-mark" aria-hidden="true">✛</span><span>{s?.title ?? k}{s?.year ? <small> · {s.year}</small> : null}</span></span>;
+                                    };
                                     return (
                                         <li key={i} className={`ch-rc-passage ch-rc-row is-${p.standing}`}>
                                             <p className="ch-rc-passage-pair">
-                                                <a href={`#sign-${p.from}`}><img src={`/media/${from?.image}`} alt="" width="44" height="44" loading="lazy" /><span>{from?.title}</span></a>
+                                                {point(p.from)}
                                                 <span className="ch-rc-passage-arrow" aria-label="to">→</span>
-                                                <a href={`#sign-${p.to}`}><img src={`/media/${to?.image}`} alt="" width="44" height="44" loading="lazy" /><span>{to?.title}</span></a>
+                                                {point(p.to)}
                                             </p>
                                             <p className="ch-rc-standing"><span className={`ch-rc-tag is-${p.standing}`}>{label[p.standing] ?? p.standing}</span></p>
                                             <p className="ch-rc-verdict"><Rich t={p.note} /></p>
