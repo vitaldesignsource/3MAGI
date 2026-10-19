@@ -468,7 +468,6 @@ export const articles = [
         discipline: 'mysticism',
         traditions: ['western-esoteric'],
         disciplines: ['mysticism', 'theurgy', 'hermeticism'],
-        dek: 'On occultists who renounce the mysteries to be born again, and why the second birth was the purpose of the mysteries all along.',
         image: '/media/5ad37a5d4a0fe7be9fe2afe319fd2dde.webp',
         imageAlt: 'Alchemical Christ and theurgy — the twice-born initiate between orthodoxy and operative Christian Hermeticism',
         heroImage: '/media/5ad37a5d4a0fe7be9fe2afe319fd2dde.webp',
