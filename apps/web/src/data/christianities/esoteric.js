@@ -29,7 +29,7 @@ export default {
                 enter: 'Enter the portal',
                 // the door wears the portal's six signs, drawn from their originals
                 emblems: ['rosicrucian/luther-rose.svg', 'rosicrucian/andreae-arms.svg', 'rosicrucian/monas.svg',
-                    'rosicrucian/wedding-seal.svg', 'rosicrucian/dat-rosa.svg', 'rosicrucian/gd-rose-cross.svg'],
+                    'rosicrucian/wedding-seal.svg', 'rosicrucian/speculum-college.svg', 'rosicrucian/dat-rosa.svg', 'rosicrucian/rose-croix-jewel.svg', 'rosicrucian/gd-rose-cross.svg', 'rosicrucian/steiner-rose-cross.svg'],
             },
         },
         { key: 'theosophy', label: 'The Theosophers', blurb: 'Protestant Europe’s visionary underground: a shoemaker, a scientist, a Masonic magistrate, and the churches that could not quite expel them.' },

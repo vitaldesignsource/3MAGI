@@ -39,6 +39,9 @@ const HEIGHT = TOP + SCALE[SCALE.length - 1][1] + 30;
 const TICKS = [1614, 1700, 1750, 1800, 1850, 1875, 1900, 1925];
 
 const nodeW = (b) => 16 + (b.short || b.name).length * 6.3;
+// Under each node only the year: the full founding note is in the caption
+// and the list, where it has room.
+const yearLabel = (b) => `${/^c\./.test(b.founded) ? 'c. ' : ''}${b.foundedYear}${b.claimedOnly ? ' · claimed' : ''}`;
 
 function RosicrucianLines({ lines }) {
     const [active, setActive] = useState(null);
@@ -133,7 +136,7 @@ function RosicrucianLines({ lines }) {
                                     aria-label={`${b.name}, ${b.founded}, ${b.place}`}>
                                     <rect x={x - w / 2} y={y - NODE_H / 2} width={w} height={NODE_H} rx="13" />
                                     <text x={x} y={y + 4} textAnchor="middle">{b.short || b.name}</text>
-                                    <text x={x} y={y + NODE_H / 2 + 11} textAnchor="middle" className="rcl-year">{b.founded}</text>
+                                    <text x={x} y={y + NODE_H / 2 + 11} textAnchor="middle" className="rcl-year">{yearLabel(b)}</text>
                                 </g>
                             );
                         })}
@@ -153,10 +156,13 @@ function RosicrucianLines({ lines }) {
             <ol className="ch-rc-lines-list">
                 {chronological.map((b) => (
                     <li key={b.key} id={`line-${b.key}`} className={`ch-rc-line is-${b.family}${active === b.key ? ' is-active' : ''}`}>
-                        <p className="ch-rc-line-year">{b.founded}</p>
+                        <details>
+                        <summary>
+                            <span className="ch-rc-line-year">{yearLabel(b)}</span>
+                            <span className="ch-rc-line-name">{b.name}{b.claimedOnly && <em className="ch-rc-line-claimed"> — existence claimed, not shown</em>}</span>
+                        </summary>
                         <div className="ch-rc-line-body">
-                            <h3>{b.name}{b.claimedOnly && <em className="ch-rc-line-claimed"> — existence claimed, not shown</em>}</h3>
-                            <p className="ch-rc-line-meta">{b.place}{b.founders?.length ? ` · ${b.founders.join(', ')}` : ''}{b.ended ? ` · until ${b.ended}` : ''}</p>
+                            <p className="ch-rc-line-meta">{b.founded} · {b.place}{b.founders?.length ? ` · ${b.founders.join(', ')}` : ''}{b.ended ? ` · until ${b.ended}` : ''}</p>
                             <p><Rich t={b.note} /></p>
                             {linksOf(b.key).length > 0 && (
                                 <ul className="ch-rc-line-links">
@@ -167,7 +173,7 @@ function RosicrucianLines({ lines }) {
                                             <li key={i} className={`is-${l.kind}`}>
                                                 <span className="ch-rc-line-kind">{kinds[l.kind]?.label ?? l.kind}</span>
                                                 {' '}{out ? 'to' : 'from'}{' '}
-                                                <a href={`#line-${other?.key}`} onClick={() => setActive(other?.key)}>{other?.name}</a>
+                                                <a href={`#line-${other?.key}`} onClick={() => { setActive(other?.key); const d = document.querySelector(`#line-${other?.key} details`); if (d) d.open = true; }}>{other?.name}</a>
                                                 {l.year ? <span className="ch-rc-map-year"> · {l.year}</span> : null}
                                                 <span className="ch-rc-line-note"> — <Rich t={l.note} /></span>
                                             </li>
@@ -177,6 +183,7 @@ function RosicrucianLines({ lines }) {
                             )}
                             {b.source && <p className="ch-rc-line-source"><Rich t={b.source} /></p>}
                         </div>
+                        </details>
                     </li>
                 ))}
             </ol>

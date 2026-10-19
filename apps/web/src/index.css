@@ -11197,6 +11197,7 @@ h3 {
 .ch-page .ch-rc-map-name,
 .ch-page .ch-rc-map-active,
 .ch-page .ch-rc-passage-pair span,
+.ch-page .ch-rc-passages-intro,
 .ch-page .ch-rc-brethren-rule,
 .ch-page .ch-rc-gen-note,
 .ch-page .ch-rc-brother-says,
@@ -12799,13 +12800,72 @@ figure.ch-gallery-card { margin: 0; }
 .ch-rc-lines-svg .rcl-node { cursor: pointer; outline: none; transition: opacity 0.15s; }
 .ch-rc-lines-svg .rcl-node rect { fill: #17130f; stroke: rgba(201, 168, 106, 0.55); stroke-width: 1.2; }
 .ch-rc-lines-svg .rcl-node text { font: 12px Georgia, 'Times New Roman', serif; fill: #ecd9ae; pointer-events: none; }
-.ch-rc-lines-svg .rcl-node .rcl-year { font-size: 10px; fill: rgba(201, 168, 106, 0.7); }
+.ch-rc-lines-svg .rcl-node .rcl-year { font-size: 10px; fill: rgba(201, 168, 106, 0.75); paint-order: stroke; stroke: #0b0a09; stroke-width: 3.5px; stroke-linejoin: round; }
 .ch-rc-lines-svg .rcl-node.is-dim { opacity: 0.28; }
 .ch-rc-lines-svg .rcl-node.is-active rect, .ch-rc-lines-svg .rcl-node:focus-visible rect { fill: #2a2117; stroke: #ecd9ae; stroke-width: 2; }
 .ch-rc-lines-svg .rcl-node.is-manifestos rect { stroke: #ecd9ae; }
 .ch-rc-lines-active { min-height: 3.2rem; }
 .ch-rc-lines-list { list-style: none; margin: 1.6rem 0 0; padding: 0; display: grid; gap: 0.75rem; }
-.ch-rc-line { display: grid; grid-template-columns: 6.2rem 1fr; gap: 1rem; padding: 0.95rem 1.1rem; border: 1px solid rgba(201, 168, 106, 0.12); border-radius: 3px; background: rgba(24, 20, 16, 0.32); scroll-margin-top: 6rem; }
+.ch-rc-line { padding: 0.7rem 1.1rem; border: 1px solid rgba(201, 168, 106, 0.12); border-radius: 3px; background: rgba(24, 20, 16, 0.32); scroll-margin-top: 6rem; }
+.ch-rc-line summary { display: flex; gap: 1rem; align-items: baseline; cursor: pointer; list-style: none; }
+.ch-rc-line summary::-webkit-details-marker, .ch-rc-passage summary::-webkit-details-marker, .ch-rc-more summary::-webkit-details-marker { display: none; }
+.ch-rc-line summary::after, .ch-rc-passage summary::after, .ch-rc-more summary::after { content: "+"; margin-left: auto; color: rgba(201, 168, 106, 0.7); font-size: 1.1rem; line-height: 1; }
+.ch-rc-line details[open] > summary::after, .ch-rc-passage details[open] > summary::after, .ch-rc-more[open] > summary::after { content: "–"; }
+.ch-rc-line-year { flex: none; min-width: 6.5rem; }
+.ch-rc-line-name { color: #ecd9ae; font-size: 1rem; }
+.ch-rc-line-body { margin-top: 0.6rem; }
+.ch-rc-passage summary { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem 1rem; cursor: pointer; list-style: none; }
+.ch-rc-passage details > .ch-rc-verdict { margin: 0.7rem 0 0; }
+.ch-rc-more { margin: 0.7rem 0 0; }
+.ch-rc-more summary { display: flex; cursor: pointer; list-style: none; font-family: "Cinzel", Georgia, serif; font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(209, 173, 104, 0.85); }
+.ch-rc-more p { margin: 0.4rem 0 0; color: rgba(232, 224, 208, 0.8); line-height: 1.7; font-size: 0.93rem; }
+.ch-rc-person-hint { margin: 0.5rem 0 0; font-size: 0.78rem; color: rgba(209, 173, 104, 0.55); font-style: italic; }
+
+/* --- the Fama's line, as a tree of seals with one brother open --- */
+.ch-rc-gen-row { display: flex; flex-wrap: wrap; gap: 0.6rem 0.7rem; grid-template-columns: none; }
+.ch-rc-gen-row > li { list-style: none; scroll-margin-top: 8rem; }
+button.ch-rc-brother-seal { margin: 0; padding: 0; background: none; border: 0; cursor: pointer; color: inherit; }
+button.ch-rc-brother-seal span { transition: background 0.15s, border-color 0.15s; }
+button.ch-rc-brother-seal:hover span, button.ch-rc-brother-seal:focus-visible span { border-color: #ecd9ae; }
+button.ch-rc-brother-seal.is-open span { background: rgba(201, 168, 106, 0.18); border-color: #ecd9ae; color: #fff3d6; }
+button.ch-rc-brother-seal.is-founder span { min-width: 3.8rem; height: 3.8rem; font-size: 1.05rem; }
+.ch-rc-brother { margin: 1.2rem 0 0; display: grid; grid-template-columns: auto 1fr; gap: 1.2rem; padding: 1.2rem 1.3rem; scroll-margin-top: 6rem; }
+.ch-rc-brother-big { margin: 0; }
+.ch-rc-brother-big span {
+  display: inline-grid; place-items: center; min-width: 5rem; height: 5rem; padding: 0 0.6rem; border-radius: 999px;
+  border: 1px solid rgba(201, 168, 106, 0.7); box-shadow: inset 0 0 0 4px #0d0b0a, inset 0 0 0 5px rgba(201, 168, 106, 0.3);
+  font-family: "Cinzel", Georgia, serif; font-size: 1.15rem; letter-spacing: 0.12em; color: #ecd9ae;
+}
+.ch-rc-brother h3 { font-size: 1.1rem; }
+details.ch-rc-succession summary { cursor: pointer; font-size: 0.98rem; color: #ecd9ae; }
+details.ch-rc-succession[open] summary { margin-bottom: 0.6rem; }
+@media (max-width: 640px) {
+    .ch-rc-brother { grid-template-columns: 1fr; gap: 0.6rem; }
+}
+
+/* --- connected figures, as an index of circles with one person open --- */
+.ch-rc-circles-grid { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); gap: 1.4rem; align-items: start; }
+.ch-rc-circle-index { list-style: none; margin: 0; padding: 0; display: grid; gap: 1.1rem; }
+.ch-rc-circle-index .ch-rc-circle { margin: 0; padding: 0 0 1rem; border-bottom: 1px solid rgba(201, 168, 106, 0.1); }
+.ch-rc-circle-index .ch-rc-circle h3 { margin: 0.2rem 0 0.55rem; font-size: 1.05rem; font-weight: 500; }
+.ch-rc-names { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0.4rem 0.45rem; }
+.ch-rc-names > li { scroll-margin-top: 8rem; }
+.ch-rc-name {
+  padding: 0.28rem 0.65rem; border-radius: 2px; cursor: pointer;
+  background: rgba(24, 20, 16, 0.5); border: 1px solid rgba(201, 168, 106, 0.22); color: rgba(236, 217, 174, 0.9);
+  font-family: Georgia, "Times New Roman", serif; font-size: 0.9rem; line-height: 1.3; transition: border-color 0.15s, background 0.15s;
+}
+.ch-rc-name:hover, .ch-rc-name:focus-visible { border-color: rgba(236, 217, 174, 0.8); }
+.ch-rc-name.is-linked { border-color: #c9a86a; background: rgba(201, 168, 106, 0.12); }
+.ch-rc-name.is-active { border-color: #ecd9ae; background: rgba(236, 217, 174, 0.2); color: #fff3d6; }
+.ch-rc-circles-grid > .ch-rc-person { position: sticky; top: 6rem; max-height: calc(100vh - 7rem); overflow-y: auto; padding: 1.1rem 1.2rem 1.2rem; opacity: 1; }
+.ch-rc-person h3 { margin: 0.25rem 0 0.2rem; font-family: "Cinzel", Georgia, serif; font-size: 1.1rem; font-weight: 400; color: #ecd9ae; }
+.ch-rc-person-to { padding: 0; background: none; border: 0; color: #ecd9ae; cursor: pointer; font: inherit; text-decoration: underline; text-underline-offset: 3px; text-decoration-color: rgba(201, 168, 106, 0.5); }
+.ch-rc-circles-bar { position: static; background: none; padding: 0 0 0.9rem; }
+@media (max-width: 900px) {
+    .ch-rc-circles-grid { grid-template-columns: 1fr; }
+    .ch-rc-circles-grid > .ch-rc-person { position: static; max-height: none; overflow: visible; scroll-margin-top: 6rem; }
+}
 .ch-rc-line.is-active { border-color: rgba(201, 168, 106, 0.5); background: rgba(201, 168, 106, 0.06); }
 .ch-rc-line-year { margin: 0; font-family: "Cormorant Garamond", Georgia, serif; font-size: 1rem; letter-spacing: 0.06em; color: #c9a86a; }
 .ch-rc-line h3 { margin: 0; font-size: 1.02rem; font-weight: 500; }
@@ -12822,12 +12882,12 @@ figure.ch-gallery-card { margin: 0; }
 .ch-rc-line-source { margin: 0.55rem 0 0 !important; font-size: 0.8rem !important; color: rgba(222, 212, 196, 0.5) !important; }
 @media (max-width: 640px) {
     .ch-rc-lines-pan .ch-rc-lines-svg { width: 820px; max-width: none; }
-    .ch-rc-line { grid-template-columns: 1fr; gap: 0.3rem; }
+    .ch-rc-line summary { flex-wrap: wrap; gap: 0.2rem 1rem; }
 }
 
 /* --- connected figures --- */
 .ch-rc-circles { margin: 1.4rem 0 0; }
-.ch-rc-circles-bar { display: flex; flex-wrap: wrap; gap: 0.5rem 0.7rem; align-items: center; position: sticky; top: 4.6rem; z-index: 2; padding: 0.55rem 0; background: linear-gradient(180deg, rgba(11, 10, 9, 0.96), rgba(11, 10, 9, 0.85)); }
+.ch-rc-circles-bar { display: flex; flex-wrap: wrap; gap: 0.5rem 0.7rem; align-items: center; }
 .ch-rc-circles-focus { margin: 0; font-size: 0.88rem; color: rgba(232, 224, 208, 0.78); }
 .ch-rc-circles-focus strong { color: #ecd9ae; font-weight: 500; }
 .ch-rc-circles-clear { margin-left: 0.35rem; background: none; border: 1px solid rgba(201, 168, 106, 0.4); color: #c9a86a; border-radius: 2px; padding: 0.05rem 0.45rem; font-size: 0.8rem; cursor: pointer; }

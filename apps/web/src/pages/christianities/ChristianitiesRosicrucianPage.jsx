@@ -163,13 +163,17 @@ function ChristianitiesRosicrucianPage() {
                                     };
                                     return (
                                         <li key={i} className={`ch-rc-passage ch-rc-row is-${p.standing}`}>
-                                            <p className="ch-rc-passage-pair">
-                                                {point(p.from)}
-                                                <span className="ch-rc-passage-arrow" aria-label="to">→</span>
-                                                {point(p.to)}
-                                            </p>
-                                            <p className="ch-rc-standing"><span className={`ch-rc-tag is-${p.standing}`}>{label[p.standing] ?? p.standing}</span></p>
-                                            <p className="ch-rc-verdict"><Rich t={p.note} /></p>
+                                            <details>
+                                                <summary>
+                                                    <span className="ch-rc-passage-pair">
+                                                        {point(p.from)}
+                                                        <span className="ch-rc-passage-arrow" aria-label="to">→</span>
+                                                        {point(p.to)}
+                                                    </span>
+                                                    <span className={`ch-rc-tag is-${p.standing}`}>{label[p.standing] ?? p.standing}</span>
+                                                </summary>
+                                                <p className="ch-rc-verdict"><Rich t={p.note} /></p>
+                                            </details>
                                         </li>
                                     );
                                 })}

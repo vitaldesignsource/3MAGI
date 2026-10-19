@@ -782,10 +782,16 @@ if (rosicrucian) {
         const where = `rosicrucian/passage[${i}] ${p.from}→${p.to}`;
         const known = (k) => signKeys.has(k) || stationKeys.has(k);
         if (!known(p.from) || !known(p.to)) fail(`${where}: joins a point that is neither a sign nor a declared station`);
-        if (!signKeys.has(p.from) && !signKeys.has(p.to)) fail(`${where}: a passage must touch at least one drawn sign`);
         if (!keys.has(p.standing)) fail(`${where}: standing "${p.standing}" is not in the declared key`);
         if (!p.note || wordCount(p.note) < 12) fail(`${where}: a passage must show its working`);
         checkContested(where, p);
+    }
+    // A station is a point in the story with no emblem of its own; it earns
+    // its place only by joining the chain to a drawn sign somewhere.
+    for (const k of stationKeys) {
+        if (!(rosicrucian.signPassages ?? []).some((p) => (p.from === k && signKeys.has(p.to)) || (p.to === k && signKeys.has(p.from)))) {
+            fail(`rosicrucian/station ${k}: never joins a drawn sign`);
+        }
     }
 
     // The emblem is drawn from a letter, as the vault is drawn from a
@@ -847,7 +853,7 @@ if (rosicrucian) {
     for (const c of rosicrucian.chronology ?? []) {
         if (!c.year || !c.label) fail('rosicrucian: a chronology row needs a year and a label');
     }
-    notes.push(`rosicrucian: ${(rosicrucian.manifestos ?? []).length} manifestos, ${rules.length} agreements, ${days.length} days (${days.filter((d) => d.quote).length} quoted), ${furore.length} books of the furore, ${(rosicrucian.ledger ?? []).length} ledger rows (${sound} sound), ${descent.length} descent rows (${gaps} gap), ${grades.length} grades (${grades.filter((g) => g.added).length} added), ${(rosicrucian.scholarship ?? []).length} historians, ${(rosicrucian.signs ?? []).length} signs, ${(rosicrucian.map?.places ?? []).length + (rosicrucian.map?.journey ?? []).length} places on the map, ${(rosicrucian.chronology ?? []).length} dated`);
+    notes.push(`rosicrucian: ${(rosicrucian.manifestos ?? []).length} manifestos, ${rules.length} agreements, ${days.length} days (${days.filter((d) => d.quote).length} quoted), ${furore.length} books of the furore, ${(rosicrucian.ledger ?? []).length} ledger rows (${sound} sound), ${descent.length} descent rows (${gaps} gap), ${grades.length} grades (${grades.filter((g) => g.added).length} added), ${(rosicrucian.scholarship ?? []).length} historians, ${(rosicrucian.signs ?? []).length} signs, ${(rosicrucian.map?.places ?? []).length + (rosicrucian.map?.journey ?? []).length} places on the map, ${(rosicrucian.chronology ?? []).length} dated, ${(rosicrucian.brethren ?? []).length} brothers of the Fama, ${(rosicrucian.lines?.bodies ?? []).length} bodies and ${(rosicrucian.lines?.links ?? []).length} links in the lines, ${(rosicrucian.people ?? []).length} people in ${(rosicrucian.circles ?? []).length} circles, ${(rosicrucian.signPassages ?? []).length} passages of the sign`);
 }
 
 // --- report ----------------------------------------------------------------
