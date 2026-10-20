@@ -129,6 +129,9 @@ function CompareTable({ table }) {
                                         <span className="edu-glyph mg-cmp-key-glyph" lang={hebrew ? 'he' : undefined}>{r.key}</span>
                                         <span className="mg-cmp-key-name">{r.name}</span>
                                     </Link>
+                                    {/* on a phone the Value column gives way to the drawn ones, and the
+                                        value rides in the key cell, which stays on screen */}
+                                    {hebrew && !r.final && <span className="mg-cmp-key-value">{r.value}</span>}
                                 </th>
                                 {runs.map((run) => {
                                     if (run.kind === 'band') {

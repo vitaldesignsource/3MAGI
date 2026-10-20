@@ -220,8 +220,17 @@
    of 100), so on a card it is set a little larger than the em, to stand as
    tall as a hall's letter beside it. */
 .mg-letter-card.is-drawn .edu-letter-glyph .mg-glyph:not(.is-figure) { width: 1.3em; height: 1.3em; }
-/* and so in the comparison tables' cells, beside the hall's letter */
-.mg-cmp-cell .mg-glyph:not(.is-figure) { width: 1.4em; height: 1.4em; }
+/* and so wherever a drawn sign stands among set letters at text size — the
+   comparison tables' cells, a search result, the transliterator's key and
+   breakdown — so that none is drawn smaller than the letters beside it, and
+   a ring-letter is not set below about 28 px, where its rings close up */
+.mg-cmp-cell .mg-glyph:not(.is-figure),
+.edu-search-native .mg-glyph:not(.is-figure),
+.mg-key-sign .mg-glyph:not(.is-figure),
+.mg-breakdown .mg-glyph:not(.is-figure) { width: 1.4em; height: 1.4em; }
+/* The drill's find mode is where ring-letters must be told apart: its four
+   choices are set large enough to fill their buttons as a set script's do. */
+.edu-drill-option-glyph .mg-glyph:not(.is-figure) { width: 1.9em; height: 1.9em; vertical-align: -0.45em; }
 .mg-letter-card .edu-letter-name { max-width: 100%; overflow-wrap: anywhere; }
 .mg-letter-card .edu-letter-name.is-long { font-size: 0.64rem; letter-spacing: 0.06em; }
 .mg-letter-sub {
@@ -462,6 +471,28 @@
   text-transform: uppercase;
 }
 .mg-plate-links { margin: 0.15rem 0 0; display: flex; flex-wrap: wrap; gap: 0.3rem 1.4rem; font-size: 0.84rem; }
+/* A page taller than it is wide would push its caption below the fold of a
+   laptop screen: on a wide screen it stands beside its caption, held to the
+   height left under the sticky header, and on a narrow one it is capped
+   lower, so the caption follows it onto the screen. */
+.mg-plate.is-portrait .mg-plate-frame img { max-height: min(64vh, 44rem); }
+@media (min-width: 1024px) {
+  .mg-plate.is-portrait {
+    display: grid;
+    grid-template-columns: minmax(0, 1.9fr) minmax(14rem, 1fr);
+    gap: 1.6rem;
+    align-items: start;
+  }
+  .mg-plate.is-portrait .mg-plate-frame img { max-height: min(calc(100vh - 8rem), 46rem); }
+  .mg-plate.is-portrait figcaption {
+    margin: 0;
+    padding-top: 0;
+    border-top: none;
+    padding-left: 1.4rem;
+    border-left: 1px solid rgba(179, 139, 70, 0.18);
+    align-content: start;
+  }
+}
 .mg-plate-links a {
   color: rgba(222, 212, 196, 0.8);
   text-decoration: none;
@@ -665,6 +696,9 @@
 /* --- the way on ------------------------------------------------------------------- */
 .mg-entry-nav a { display: inline-flex; align-items: center; gap: 0.45rem; }
 .mg-entry-nav .mg-nav-sign { color: #d1ad68; }
+/* a drawn door sign is held to the wing's floor for ring-letters (28 px), and
+   lets the chip's padding take the extra height, so the chips keep one size */
+.mg-entry-nav .mg-glyph.mg-nav-sign:not(.is-figure) { width: 1.75em; height: 1.75em; margin-block: -0.45em; }
 .mg-entry-nav .mg-nav-home { border-color: rgba(209, 173, 104, 0.6); color: #ecd9ae; }
 
 /* --- the portal --------------------------------------------------------------------- */
@@ -852,6 +886,35 @@
 .mg-cmp-final td, .mg-cmp-final th { background: rgba(10, 8, 6, 0.6); }
 .mg-cmp-final .mg-cmp-key-glyph { font-size: 1.15rem; color: rgba(240, 233, 218, 0.8); }
 .mg-cmp-final .mg-cmp-key-name { font-size: 0.8rem; color: rgba(236, 217, 174, 0.7); }
+.mg-cmp-key-value { display: none; }
+/* On a phone the table is wider than the screen: the Value and Ancestor
+   columns give way (the value rides in the key cell), the Hebrew key column
+   stays at the left edge while the signs scroll past it, and the table
+   scrolls inside its own frame, so its header row stays in view above them. */
+@media (max-width: 700px) {
+  .mg-compare-scroll:not(.is-all-pending) { max-height: min(78vh, 46rem); overflow: auto; overscroll-behavior-x: contain; }
+  .mg-compare-table:not(.is-all-pending) { min-width: 0; }
+  .mg-compare-table:not(.is-all-pending) .edu-cog-num,
+  .mg-compare-table:not(.is-all-pending) .mg-cmp-anc { display: none; }
+  .mg-compare-table:not(.is-all-pending) .mg-cmp-key {
+    position: sticky;
+    left: 0;
+    z-index: 1;
+    background: #110e0b;
+    box-shadow: inset -1px 0 0 rgba(179, 139, 70, 0.4), 6px 0 8px -6px rgba(0, 0, 0, 0.8);
+  }
+  .mg-compare-table:not(.is-all-pending) thead .mg-cmp-key { z-index: 2; background: #17130e; }
+  .mg-compare-table:not(.is-all-pending) tbody th.mg-cmp-key { position: sticky; padding-inline: 0.6rem 0.7rem; }
+  .mg-compare-table:not(.is-all-pending) .mg-cmp-final th.mg-cmp-key { background: #0c0a08; }
+  .mg-compare-table:not(.is-all-pending) .mg-cmp-key-value {
+    display: block;
+    margin-top: 0.05rem;
+    color: rgba(209, 173, 104, 0.85);
+    font-size: 0.75rem;
+    letter-spacing: 0.06em;
+  }
+  .mg-compare-table:not(.is-all-pending) .mg-cmp-key a { gap: 0.45rem; }
+}
 .mg-cmp-cell a { color: #f0e9da; font-size: 1.35rem; text-decoration: none; }
 .mg-cmp-cell a:hover { color: #d1ad68; }
 /* the alphabets whose forms are still being traced: one band beside the

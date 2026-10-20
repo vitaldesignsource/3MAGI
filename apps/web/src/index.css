@@ -10751,6 +10751,8 @@ h3 {
 .edu-axis {
   position: relative;
   height: 5.5rem;
+  /* room for the lanes a crowded axis needs (--reach, set by the timeline) */
+  min-height: calc(2 * var(--reach, 0px) + 2.4rem);
   margin: 0 0.5rem;
 }
 .edu-axis-line {
@@ -10759,34 +10761,63 @@ h3 {
   height: 1px;
   background: linear-gradient(90deg, transparent, rgba(209, 173, 104, 0.5) 8%, rgba(209, 173, 104, 0.5) 92%, transparent);
 }
+/* Each pin is a 24 px target (the WCAG minimum), transparent, with the
+   visible 14 px pin drawn inside it; a point pin stands above any span bar
+   it falls within, so the bar never hides it. */
 .edu-axis-pin {
   position: absolute;
-  top: calc(50% - 0.45rem);
-  width: 0.9rem;
-  height: 0.9rem;
-  margin-left: -0.45rem;
+  top: calc(50% - 0.75rem + var(--lane, 0px));
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-left: -0.75rem;
   padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  z-index: 1;
+}
+.edu-axis-pin::before {
+  content: "";
+  position: absolute;
+  inset: 0.3rem;
   border: 1px solid rgba(209, 173, 104, 0.7);
   border-radius: 50%;
   background: #14110d;
-  cursor: pointer;
   transition: background 180ms ease, border-color 180ms ease, transform 180ms ease;
 }
-.edu-axis-pin:hover { background: rgba(209, 173, 104, 0.5); transform: scale(1.25); }
-.edu-axis-pin.is-active {
+.edu-axis-pin:hover::before { background: rgba(209, 173, 104, 0.5); transform: scale(1.25); }
+.edu-axis-pin.is-active::before {
   background: #d1ad68;
   border-color: #ecd9ae;
   transform: scale(1.35);
   box-shadow: 0 0 14px rgba(209, 173, 104, 0.55);
 }
+.edu-axis-pin:focus-visible { outline: none; }
+.edu-axis-pin:focus-visible::before { outline: 2px solid #ecd9ae; outline-offset: 2px; }
 /* An event with real duration draws as a bar rather than a point. */
-.edu-axis-pin.is-span {
+.edu-axis-pin.is-span { margin-left: 0; min-width: 1.5rem; z-index: 0; }
+.edu-axis-pin.is-span::before {
+  inset: 0.3rem 0;
   border-radius: 0.45rem;
-  margin-left: 0;
-  min-width: 0.9rem;
   background: rgba(179, 139, 70, 0.28);
 }
-.edu-axis-pin.is-span.is-active { background: rgba(209, 173, 104, 0.75); }
+.edu-axis-pin.is-span.is-active::before { background: rgba(209, 173, 104, 0.75); }
+/* A point pin that would crowd another steps off the line onto a lane
+   (ScriptoriumTimeline sets --lane) and keeps a stem back to its date. */
+.edu-axis-pin.is-above::after,
+.edu-axis-pin.is-below::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  z-index: -1;
+  width: 1px;
+  margin-left: -0.5px;
+  background: rgba(209, 173, 104, 0.45);
+  pointer-events: none;
+}
+.edu-axis-pin.is-span::after { content: none; }
+.edu-axis-pin.is-above::after { top: calc(100% - 0.3rem); height: calc(-1 * var(--lane) - 0.45rem); }
+.edu-axis-pin.is-below::after { bottom: calc(100% - 0.3rem); height: calc(var(--lane) - 0.45rem); }
 .edu-axis-pin-label { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
 .edu-axis-scale {
   display: flex;

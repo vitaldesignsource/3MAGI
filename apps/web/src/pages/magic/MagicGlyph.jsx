@@ -1,17 +1,25 @@
-import React from 'react';
+import React, { useId } from 'react';
 import { textOf } from './sign';
 
-// The one renderer of a drawn letter. It draws a glyph EXACTLY as the glyph
-// kit's specimen sheet does (glyphkit/sheet.mjs) — the same viewBox, pen,
-// caps, joins and the same three element kinds with the same attributes — so
-// a sheet the illustrator reads is a faithful preview of the site:
+// The one renderer of a drawn letter. The glyph data are drawn as the glyph
+// kit stores them (glyphkit/README.md): the same viewBox, pen, caps and joins
+// and the same three element kinds —
 //
 //   <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="5.5"
 //        stroke-linecap="round" stroke-linejoin="round">
-//     <path d/>                                          the strokes
-//     <circle cx cy r=6 stroke-width="3.6"/>             each ring (Brille)
+//     <path d mask/>                                      the strokes
+//     <circle cx cy r stroke-width="3.6 | 2.6"/>          each ring (Brille)
 //     <circle cx cy r=2.6 fill="currentColor" stroke="none"/>   each dot
 //   </svg>
+//
+// — with two departures from the kit's specimen sheet, both made here so the
+// traced data stay as traced. Every stroke stops on its ring's centre line,
+// so the round cap of the 5.5 pen pokes about one unit into the ring's hole;
+// the path is masked by each ring's hole (radius r less half the ring pen),
+// which cuts the stroke back to the ring's inner edge and leaves the hole
+// round. And a ring drawn smaller than the house size (r 6) — the crowded
+// rings of the Malachim, the River's rings — takes a lighter pen, 2.6 for
+// 3.6, so that its hole stays open at the sizes the pages use.
 //
 // It is coloured by currentColor, so hover, the gold of a plaque and print's
 // black all reach it as they reach a real script. Without `size` it is one em
@@ -21,9 +29,13 @@ import { textOf } from './sign';
 // letter's strokes do. A null glyph draws the kit's own gap mark; the pages
 // show a pending letter otherwise.
 
+const HOUSE_RING = 6;
+const ringPen = (r) => (r < HOUSE_RING ? 2.6 : 3.6);
+
 const isFigure = (g) => Boolean(g && !String(g.d || '').trim() && (g.dots || []).length && !(g.rings || []).length);
 
 function MagicGlyph({ g, size, label, className }) {
+    const uid = useId();
     const a11y = label ? { role: 'img', 'aria-label': label } : { 'aria-hidden': true };
     const cls = size ? className : ['mg-glyph', isFigure(g) && 'is-figure', className].filter(Boolean).join(' ') || undefined;
     if (!g) {
@@ -34,11 +46,22 @@ function MagicGlyph({ g, size, label, className }) {
             </svg>
         );
     }
+    const rings = (g.rings ?? []).map(([x, y, r = HOUSE_RING]) => [x, y, r]);
+    // one mask per drawn glyph: its id must be unique on the page
+    const holes = rings.length && g.d ? `mg-holes${uid.replace(/[^A-Za-z0-9_-]/g, '')}` : null;
     return (
         <svg className={cls} width={size} height={size} viewBox="0 0 100 100" fill="none" stroke="currentColor"
             strokeWidth="5.5" strokeLinecap="round" strokeLinejoin="round" {...a11y}>
-            <path d={g.d} />
-            {(g.rings ?? []).map(([x, y, r = 6], i) => <circle key={`r${i}`} cx={x} cy={y} r={r} strokeWidth="3.6" />)}
+            {holes && (
+                <defs>
+                    <mask id={holes} maskUnits="userSpaceOnUse" x="-5" y="-5" width="110" height="110">
+                        <rect x="-5" y="-5" width="110" height="110" fill="#fff" stroke="none" />
+                        {rings.map(([x, y, r], i) => <circle key={i} cx={x} cy={y} r={r - ringPen(r) / 2} fill="#000" stroke="none" />)}
+                    </mask>
+                </defs>
+            )}
+            <path d={g.d} mask={holes ? `url(#${holes})` : undefined} />
+            {rings.map(([x, y, r], i) => <circle key={`r${i}`} cx={x} cy={y} r={r} strokeWidth={ringPen(r)} />)}
             {(g.dots ?? []).map(([x, y, r = 2.6], i) => <circle key={`d${i}`} cx={x} cy={y} r={r} fill="currentColor" stroke="none" />)}
         </svg>
     );

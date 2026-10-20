@@ -18,6 +18,10 @@ const letterIndexOf = (hash) => {
 };
 
 const CONFIDENCE = { high: 'secure', medium: 'varies in the sources', low: 'uncertain' };
+// A letter whose reservation is not the sources' disagreement (the Nine
+// Chambers' points, which no source prints and the site places) says what it
+// is in `formReason`, which the plaque gives in place of the generic word.
+const reservation = (l) => l.formReason || CONFIDENCE[l.formConfidence];
 // A value that only repeats the transliteration in capitals (the runes' sound
 // "F" beside the transliteration "f") is not printed twice.
 const repeatsTranslit = (l) => l.translit != null && l.value != null && String(l.value).toLowerCase() === String(l.translit).toLowerCase();
@@ -40,8 +44,8 @@ function ValueLink({ value, keyedTo, hallIndex }) {
 // so neither the card nor the plaque wears a sign or speaks of one.
 function Plaque({ letter, mod, keyedTo, hebrewKey, hallIndex, formless }) {
     const drawn = Boolean(letter.glyph);
-    const form = drawn ? `drawn — ${CONFIDENCE[letter.formConfidence]}`
-        : letter.char ? `set in the font — ${CONFIDENCE[letter.formConfidence]}`
+    const form = drawn ? `drawn — ${reservation(letter)}`
+        : letter.char ? `set in the font — ${reservation(letter)}`
             : 'not shown: still to be traced';
     return (
         <aside className={`edu-letter-plaque mg-plaque${formless ? ' is-formless' : ''}`} aria-live="polite">

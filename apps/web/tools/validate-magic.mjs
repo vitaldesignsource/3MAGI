@@ -272,6 +272,12 @@ for (const entry of all) {
         if (names.has(l.name)) fail(w, 'duplicate name');
         names.add(l.name);
         if (!['high', 'medium', 'low'].includes(l.formConfidence)) fail(w, 'formConfidence must be high | medium | low');
+        // a reason given in place of the generic confidence word says what is
+        // uncertain, briefly, and only where something is
+        if (l.formReason != null) {
+            if (typeof l.formReason !== 'string' || words(l.formReason) < 3 || words(l.formReason) > 16) fail(w, 'formReason is a short phrase of 3–16 words');
+            if (l.formConfidence === 'high') fail(w, 'a secure form needs no formReason');
+        }
         if (m.groups && !groups.has(l.group)) fail(w, `group "${l.group}" is not one of the module’s groups`);
         const hasGlyphKey = Object.prototype.hasOwnProperty.call(l, 'glyph');
         if (l.char && l.glyph) fail(w, 'a letter is either drawn (glyph) or set (char), not both');

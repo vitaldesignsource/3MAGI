@@ -204,7 +204,7 @@ function MagicAlphabetPage() {
                             <p>The printed page beside the drawings: the library’s own photograph, cropped and reduced for the web and otherwise unaltered. The caption names the copy.</p>
                         </SectionHead>
                         {plates.map((p) => (
-                            <figure className="mg-plate" key={p.file}>
+                            <figure className={`mg-plate${p.height > p.width ? ' is-portrait' : ''}`} key={p.file}>
                                 <div className="mg-plate-frame">
                                     <img src={`/media/${p.file}`} alt={p.alt} width={p.width} height={p.height} loading="lazy" decoding="async" />
                                 </div>
