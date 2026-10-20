@@ -13,6 +13,8 @@
 import { writeFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
+import { loadModules, loadRegistry } from './magic-lib.mjs';
+import { textOf } from '../src/pages/magic/sign.js';
 
 const here = path.dirname(fileURLToPath(import.meta.url));
 const web = path.resolve(here, '..');
@@ -33,6 +35,7 @@ const TITLES = {
     persian: 'Persian', armenian: 'Armenian', geez: 'Geʼez',
     chinese: 'Classical Chinese', slavonic: 'Church Slavonic',
     mandaic: 'Mandaic', avestan: 'Avestan', ugaritic: 'Ugaritic', phoenician: 'Phoenician',
+    magic: 'The Magical Scriptorium',
 };
 
 const records = [];
@@ -94,6 +97,38 @@ for (const b of library?.books ?? []) push(
     'library', 'book', '', b.title, `${b.author} · ${b.year}`,
     b.description, 'edu-library-heading',
 );
+
+// --- The Magical Scriptorium -------------------------------------------------
+// The wing's records carry their path (u), since the wing's routes are not the
+// halls'. A letter set in a face carries its character (n) as a hall's sign
+// does; a drawn letter has no text, so it carries its drawing (g) for the
+// result row to draw; a letter whose form is still being traced carries x.
+{
+    const registry = await loadRegistry();
+    const { modules, problems } = await loadModules(registry);
+    if (problems.length) throw new Error(`magic modules did not load: ${problems.join('; ')}`);
+    const MG = 'magic';
+    for (const e of [...registry.alphabets, ...registry.pages]) {
+        const m = modules[e.slug];
+        const url = `${registry.wing.path}/${e.slug}`;
+        push(MG, 'alphabet', '', m.title, (m.otherNames || e.otherNames || []).join(' · '), m.summary, '', url);
+        (m.letters || []).forEach((l, i) => {
+            const rec = { h: MG, k: 'sign', n: l.char ? textOf(l.char) : '', l: l.name,
+                s: [e.short, l.translit || l.planet || l.codepoint].filter(Boolean).join(' · '),
+                d: (l.note || '').slice(0, 180), a: `mg-letter-${i}`, u: url };
+            if (l.glyph) {
+                rec.g = { d: l.glyph.d };
+                if (l.glyph.rings?.length) rec.g.rings = l.glyph.rings;
+                if (l.glyph.dots?.length) rec.g.dots = l.glyph.dots;
+            } else if (!l.char) rec.x = 1;
+            records.push(rec);
+        });
+        for (const ev of m.transmission || []) {
+            const era = ev.when || `${ev.circa ? 'c. ' : ''}${ev.year < 0 ? `${-ev.year} BCE` : `${ev.year} CE`}`;
+            push(MG, 'event', '', ev.title, `${era} · ${e.short}`, ev.description, 'mg-transmission-heading', url);
+        }
+    }
+}
 
 // --- The Christianities portal --------------------------------------------
 // Same index, different door: records carry an explicit path (u) because the

@@ -11,6 +11,7 @@ import { existsSync, readdirSync, writeFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
 import { articles } from '../src/data/articles.js';
+import magic from '../src/data/education/magic/registry.js';
 
 const SITE = 'https://threemagipress.com';
 const here = path.dirname(fileURLToPath(import.meta.url));
@@ -77,6 +78,13 @@ const staticRoutes = [
     { loc: '/third-lamp/education/syriac/course',    priority: '0.6', changefreq: 'monthly' },
     { loc: '/third-lamp/education/arabic/course',    priority: '0.6', changefreq: 'monthly' },
     { loc: '/third-lamp/contact',     priority: '0.4', changefreq: 'yearly' },
+    // The Magical Scriptorium: the wing, its two tools, and every entry of its
+    // registry, read from the registry so a new alphabet is listed the day it
+    // is added.
+    { loc: magic.wing.path,                      priority: '0.7', changefreq: 'monthly' },
+    { loc: `${magic.wing.path}/compare`,         priority: '0.7', changefreq: 'monthly' },
+    { loc: `${magic.wing.path}/transliterate`,   priority: '0.7', changefreq: 'monthly' },
+    ...[...magic.alphabets, ...magic.pages].map((e) => ({ loc: `${magic.wing.path}/${e.slug}`, priority: '0.7', changefreq: 'monthly' })),
 ].map((r) => ({ ...r, lastmod: today }));
 
 // Gated essays are excluded: pointing a crawler at a URL that answers with a

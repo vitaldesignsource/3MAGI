@@ -15,6 +15,8 @@ import { existsSync, readdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import path from 'node:path';
 import { articles } from '../src/data/articles.js';
+import magic from '../src/data/education/magic/registry.js';
+import { scriptoriumDescription } from '../src/pages/magic/words.js';
 
 const SITE = 'https://threemagipress.com';
 const here = path.dirname(fileURLToPath(import.meta.url));
@@ -101,9 +103,19 @@ const sections = [
     ...powers.map((s) => line(`/powers/${s.slug}`, s.title, s.slug === 'map' ? describe('pages/powers/PowersMapPage.jsx') || s.blurb : s.blurb)),
     '',
     '## The Scriptorium',
-    line('/third-lamp/education', 'The Scriptorium', describe('pages/EducationPortalPage.jsx')),
+    // The portal's description is built from the hall names (pages/magic/words.js),
+    // so it is rebuilt here from the same list rather than read as a literal.
+    line('/third-lamp/education', 'The Scriptorium', scriptoriumDescription(halls.map((h) => h.name))),
     ...halls.map((h) => line(`/third-lamp/education/${h.slug}`, `The ${h.name} hall`, h.blurb)),
     ...courses.map((c) => line(`/third-lamp/education/${c.slug}/course`, c.title, `${c.tagline} ${c.lessons} lessons.`)),
+    '',
+    '## The Magical Scriptorium',
+    line(magic.wing.path, magic.wing.title, describe('pages/magic/MagicPortalPage.jsx')),
+    line(`${magic.wing.path}/compare`, 'The alphabets compared', describe('pages/magic/MagicComparePage.jsx')),
+    line(`${magic.wing.path}/transliterate`, 'The transliterator', describe('pages/magic/MagicTransliteratorPage.jsx')),
+    ...magic.alphabets.map((a) => line(`${magic.wing.path}/${a.slug}`, a.title,
+        `${a.blurb}${a.status === 'forms-pending' ? ' (Letterforms still being traced.)' : ''}`)),
+    ...magic.pages.map((p) => line(`${magic.wing.path}/${p.slug}`, p.title, p.blurb)),
     '',
 ];
 

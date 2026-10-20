@@ -15,9 +15,12 @@ const fmtYear = (y, circa) => {
     return `${circa ? 'c. ' : ''}${n} ${era}`;
 };
 
-const fmtRange = (e) => (e.end != null && e.end !== e.year)
+// An event may carry `when`: the date in its sources' own words ("8th
+// century", "late 19th century"), shown instead of the integer that only
+// places it on the axis.
+const fmtRange = (e) => (e.when ? e.when : (e.end != null && e.end !== e.year)
     ? `${fmtYear(e.year, e.circa)} – ${fmtYear(e.end, e.circaEnd)}`
-    : fmtYear(e.year, e.circa);
+    : fmtYear(e.year, e.circa));
 
 // A log-ish scale would distort antiquity; a plain linear axis over the
 // tradition's own span keeps proportions honest.
@@ -40,7 +43,9 @@ const KIND_LABEL = {
     discovery: 'Discovery',
 };
 
-function ScriptoriumTimeline({ timeline, rtl }) {
+// The heading props let a page hold more than one timeline (the Magical
+// Scriptorium's "How it was carried"); a hall passes none and is unchanged.
+function ScriptoriumTimeline({ timeline, rtl, kicker = 'In Order', heading = 'Timeline', headingId = 'edu-timeline-heading' }) {
     const [active, setActive] = useState(0);
     const listRef = useRef(null);
 
@@ -57,10 +62,10 @@ function ScriptoriumTimeline({ timeline, rtl }) {
     };
 
     return (
-        <section className="edu-timeline" aria-labelledby="edu-timeline-heading">
+        <section className="edu-timeline" aria-labelledby={headingId}>
             <header className="edu-section-head">
-                <p className="kicker">In Order</p>
-                <h2 id="edu-timeline-heading">Timeline</h2>
+                <p className="kicker">{kicker}</p>
+                <h2 id={headingId}>{heading}</h2>
                 {timeline.note && <p>{timeline.note}</p>}
             </header>
 
@@ -82,7 +87,7 @@ function ScriptoriumTimeline({ timeline, rtl }) {
                     ))}
                 </div>
                 <div className="edu-axis-scale" aria-hidden="true">
-                    <span>{fmtRange(events[0]).split(' – ')[0]}</span>
+                    <span>{fmtYear(events[0].year, events[0].circa)}</span>
                     <span>{fmtYear(Math.max(...events.map((e) => e.end ?? e.year)), false)}</span>
                 </div>
             </div>

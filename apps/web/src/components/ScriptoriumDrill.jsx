@@ -6,6 +6,9 @@ import React, { useCallback, useMemo, useState } from 'react';
 
 const ROUNDS = 10;
 const CHOICES = 4;
+// A drawn sign (an element, not text) has no name of its own; naming the
+// button after the letter would give the answer away, so it gets its place.
+const PLACES = ['First sign', 'Second sign', 'Third sign', 'Fourth sign'];
 
 const shuffle = (arr) => {
     const a = [...arr];
@@ -107,7 +110,7 @@ function ScriptoriumDrill({ letters, langTitle, rtl }) {
                         {mode === 'find' ? current.letter.name : current.letter.glyph}
                     </div>
                     <div className="edu-drill-options" role="group" aria-label="Which letter is this?">
-                        {current.options.map((o) => {
+                        {current.options.map((o, oi) => {
                             const isRight = picked != null && o.key === current.letter.name;
                             const isWrongPick = picked === o.key && o.key !== current.letter.name;
                             return (
@@ -116,6 +119,7 @@ function ScriptoriumDrill({ letters, langTitle, rtl }) {
                                     key={o.key}
                                     className={`edu-drill-option${o.glyph ? ' edu-drill-option-glyph edu-glyph' : ''}${isRight ? ' is-right' : ''}${isWrongPick ? ' is-wrong' : ''}`}
                                     dir={o.glyph && rtl ? 'rtl' : undefined}
+                                    aria-label={o.glyph && typeof o.show !== 'string' ? PLACES[oi] : undefined}
                                     onClick={() => pick(o.key)}
                                     disabled={picked != null}
                                 >

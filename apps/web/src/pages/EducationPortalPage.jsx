@@ -6,6 +6,11 @@ import ThirdLampFooter from '../components/ThirdLampFooter';
 import library from '../data/education/library';
 import ScriptoriumSearch from '../components/ScriptoriumSearch';
 import ScriptoriumCognates from '../components/ScriptoriumCognates';
+import { MagicDoor } from './magic/MagicDoors';
+import { Unstruck } from './magic/MagicGlyph';
+import { ALPHABETS, MAGIC_PATH, WING } from './magic/lib';
+import { capitalise, numberWord, scriptoriumDescription } from './magic/words';
+import '../styles/magic.css';
 
 // The Language Halls. The glyphs are the halls' door-signs: the Roman A,
 // Greek omega, Hebrew aleph, the ankh (Gardiner S34), the cuneiform sign AN
@@ -55,6 +60,9 @@ const TRADITION_LABELS = {
 
 function EducationPortalPage() {
     const [tradition, setTradition] = useState('all');
+    // The counts in the copy are read from HALLS and the wing's registry, not
+    // typed: the copy went on saying "sixteen" after the twentieth hall opened.
+    const halls = numberWord(HALLS.length);
 
     const traditions = useMemo(() => {
         const present = new Set(library.books.map((b) => b.tradition));
@@ -68,7 +76,7 @@ function EducationPortalPage() {
         <div className="third-lamp-scope edu-page">
             <Helmet>
                 <title>The Scriptorium — The Third Lamp</title>
-                <meta name="description" content="The Third Lamp's education portal: a reading room of public-domain esoteric books in PDF, and language halls for Latin, Greek, Hebrew, Egyptian, Cuneiform, Sanskrit, Arabic, Tibetan, Syriac, Coptic, Aramaic, Persian, Armenian, Geʼez, Classical Chinese and Church Slavonic — alphabets, divine names, sacred texts and lexicons." />
+                <meta name="description" content={scriptoriumDescription(HALLS.map((h) => h.name))} />
             </Helmet>
             <ThirdLampHeader />
 
@@ -78,7 +86,7 @@ function EducationPortalPage() {
                     <h1>The Scriptorium</h1>
                     <p className="edu-hero-sub">
                         A study hall for the serious reader: a library of the tradition's
-                        source texts, free to download, and sixteen language halls where the
+                        source texts, free to download, and {halls} language halls where the
                         sacred scripts are laid out to be learned — letter by letter,
                         name by name.
                     </p>
@@ -87,12 +95,12 @@ function EducationPortalPage() {
                     </div>
                 </section>
 
-                <ScriptoriumSearch />
+                <ScriptoriumSearch scripts={HALLS.length} />
 
                 <section className="edu-halls" aria-labelledby="edu-halls-heading">
                     <header className="edu-section-head">
                         <p className="kicker">The Language Halls</p>
-                        <h2 id="edu-halls-heading">Sixteen scripts, sixteen doors</h2>
+                        <h2 id="edu-halls-heading">{capitalise(halls)} scripts, {halls} doors</h2>
                         <p>Each hall holds the alphabet in full, the divine names written
                             as the tradition wrote them, and a working lexicon of the terms
                             a student actually meets.</p>
@@ -107,6 +115,28 @@ function EducationPortalPage() {
                                 <span className="edu-hall-enter" aria-hidden="true">Enter the hall →</span>
                             </Link>
                         ))}
+                    </div>
+                </section>
+
+                <section className="edu-halls edu-magic" aria-labelledby="edu-magic-heading">
+                    <header className="edu-section-head">
+                        <p className="kicker">{WING.kicker}</p>
+                        <h2 id="edu-magic-heading">{WING.title}</h2>
+                        <p>A wing for the magical and secret alphabets: the angelic scripts Agrippa printed, the
+                            Theban, the signs of the planets and the furnace, the runes — {numberWord(ALPHABETS.length)} alphabets
+                            and kinds of sign, each set beside the books that carried it.</p>
+                    </header>
+                    <div className="edu-hall-grid mg-door-grid is-compact">
+                        {ALPHABETS.map((a) => <MagicDoor key={a.slug} entry={a} compact />)}
+                    </div>
+                    <p className="mg-door-legend">
+                        <Unstruck /> An empty seal marks an alphabet whose letterforms are still being traced from
+                        the editions that printed them. Its door opens all the same: the history and the sources can be read now.
+                    </p>
+                    <div className="edu-magic-ways">
+                        <Link to={MAGIC_PATH}>Enter the wing →</Link>
+                        <Link to={`${MAGIC_PATH}/compare`}>The alphabets compared</Link>
+                        <Link to={`${MAGIC_PATH}/transliterate`}>The transliterator</Link>
                     </div>
                 </section>
 
