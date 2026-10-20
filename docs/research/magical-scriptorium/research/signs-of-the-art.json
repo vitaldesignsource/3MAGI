@@ -1,0 +1,1435 @@
+{
+ "key": "signs-of-the-art",
+ "title": "The Signs of the Art: Planets, Zodiac, Elements and Alchemical Characters",
+ "otherNames": [
+  "planetary symbols",
+  "zodiac glyphs",
+  "astronomical and astrological signs",
+  "alchemical symbols",
+  "chemical characters (characteres chymici)",
+  "geomantic figures (figurae geomanticae)"
+ ],
+ "family": "Not an alphabet. The shorthand signs (notae) of astronomy, astrology and alchemy, with the sixteen dot figures of geomancy. They stand for things, not sounds.",
+ "summary": "Not an alphabet but the shorthand of the heavens and the laboratory. In Alexander Jones's reading of the Roman-period astronomical papyri from Oxyrhynchus, the planet signs began as abbreviations of the planets' Greek names. The zodiac and alchemical signs are attested chiefly in medieval Greek and Latin manuscripts, and early modern printed tables standardised them. Agrippa treats the 'seals and characters' that the stars stamp on natural things (De occulta philosophia I.33), and the sixteen geomantic figures with the characters drawn from them (II.48, II.51). Unicode encoded the planet and zodiac signs in version 1.1 (1993) and an Alchemical Symbols block in 6.0 (2010). The geomantic figures are not encoded as of Unicode 15.0.",
+ "firstAttestation": {
+  "work": "Astronomical tables, almanacs and horoscopes on papyrus from Oxyrhynchus, published as P. Oxy. 4133-4300a",
+  "author": "anonymous scribes and astronomers; edited by Alexander Jones (1999)",
+  "date": "Roman period. The collection runs from about the 1st to the 5th century CE; I could not check which dated papyrus carries the earliest sign.",
+  "place": "Oxyrhynchus (el-Bahnasa), Egypt",
+  "locator": "A. Jones, Astronomical Papyri from Oxyrhynchus, vol. 1, introduction, on the symbols and abbreviations used in the papyri (page not verified).",
+  "notes": "This is the earliest attestation I can name, and only for the PLANET signs. It rests on Jones's edition as I recall it and as secondary summaries report it, not on any papyrus seen in this run. The zodiac glyphs are not attested this early in any source named here: the Greek horoscopes collected by Neugebauer and Van Hoesen usually write the sign names out or abbreviate them (recalled). For the ALCHEMICAL signs the earliest witnesses named here are the lists of signs in Byzantine manuscripts of the Greek alchemical corpus, chief among them Marcianus graecus 299 (10th or 11th century), printed by Berthelot (1887). The element triangles and most of the Unicode alchemical repertoire are attested here only from 17th- and 18th-century printed tables. Basis: recalled, not re-checked (web search was exhausted in this run)."
+ },
+ "transmission": [
+  {
+   "date": "c. 1st-5th c. CE",
+   "work": "Oxyrhynchus astronomical papyri (P. Oxy. 4133-4300a)",
+   "author": "anonymous; ed. A. Jones 1999",
+   "what": "Planet signs used as shorthand in the columns of ephemerides and almanacs. Jones reads them as abbreviations of the Greek planet names: Κρόνος (Saturn), Ζεύς (Jupiter), Θοῦρος (Mars), Φωσφόρος (Venus), Στίλβων (Mercury); Sun and Moon are pictures. Basis: recalled, not re-checked (web search was exhausted in this run)."
+  },
+  {
+   "date": "2nd c. CE (reported by Origen, mid-3rd c.)",
+   "work": "Celsus, The True Word, quoted in Origen, Contra Celsum VI.22",
+   "author": "Celsus; Origen",
+   "what": "A Mithraic 'ladder of seven gates' pairs metals with planets: lead with Kronos, tin with Aphrodite, bronze with Zeus, iron with Hermes, a mixed coinage alloy with Ares, silver with the Moon, gold with the Sun. This shows the pairing of metals and planets before it was fixed in the later form. Translation: H. Chadwick (1953). Basis: recalled, not re-checked (web search was exhausted in this run)."
+  },
+  {
+   "date": "6th c. CE",
+   "work": "Greek alchemical commentary ascribed to Olympiodorus (in Berthelot, Collection)",
+   "author": "Olympiodorus (ascribed)",
+   "what": "Gives a list that pairs electrum with Zeus and tin with Hermes, where the later standard pairs tin with Jupiter and quicksilver with Mercury. Basis: recalled, not re-checked (web search was exhausted in this run)."
+  },
+  {
+   "date": "10th or 11th c.",
+   "work": "Venice, Biblioteca Marciana, Marcianus graecus 299",
+   "author": "anonymous Byzantine scribe(s)",
+   "what": "The oldest major manuscript of the Greek alchemical corpus. It carries a list of signs for metals, minerals and operations; the metals are written with the planet signs. Berthelot printed this list and others in the Introduction to his Collection (1887). Folio not verified. Basis: recalled, not re-checked (web search was exhausted in this run)."
+  },
+  {
+   "date": "12th c.",
+   "work": "Latin translations of Arabic geomancy (among them the Ars geomantiae of Hugh of Santalla)",
+   "author": "Hugh of Santalla and other translators",
+   "what": "Bring the sixteen dot figures of ʿilm al-raml into Latin, with the Latin names Via, Populus, etc. (Charmasson 1980). Basis: recalled, not re-checked (web search was exhausted in this run)."
+  },
+  {
+   "date": "1478",
+   "work": "Paris, BnF, Parisinus graecus 2327",
+   "author": "copied by Theodoros Pelekanos (as recalled)",
+   "what": "A late Byzantine copy of the alchemical corpus with lists of signs, also used by Berthelot. Basis: recalled, not re-checked (web search was exhausted in this run)."
+  },
+  {
+   "date": "1530 (Antwerp)",
+   "work": "De incertitudine et vanitate scientiarum",
+   "author": "Heinrich Cornelius Agrippa",
+   "what": "Agrippa attacks the occult arts, geomancy among them, three years before he prints the full De occulta philosophia. Chapter not verified. Basis: recalled, not re-checked (web search was exhausted in this run)."
+  },
+  {
+   "date": "c. 1530-1531 (printed after 1541)",
+   "work": "Opus paramirum and related writings",
+   "author": "Paracelsus (Theophrastus von Hohenheim)",
+   "what": "Sets out the three principles (tria prima): sulphur, mercury and salt. The triad gives later tables their three 'principle' signs. Dates recalled. Basis: recalled, not re-checked (web search was exhausted in this run)."
+  },
+  {
+   "date": "July 1533 ([Cologne: J. Soter?])",
+   "work": "De occulta philosophia libri tres",
+   "author": "Heinrich Cornelius Agrippa",
+   "what": "I.33: stars stamp seals and characters on stones, plants and animals. II.48: the sixteen geomantic figures, 'the middle betwixt images and characters', assigned to planets and signs. II.51: characters 'made after the rule and imitation of celestials', with a table deriving them from the geomantic figures. II.52: characters drawn from things by likeness. Book I had been printed alone in 1531. Chapter numbers and titles recalled from the 1651 English; check against the 1533 scan. Basis: recalled, not re-checked (web search was exhausted in this run)."
+  },
+  {
+   "date": "1651 (London)",
+   "work": "Three Books of Occult Philosophy",
+   "author": "trans. J.F.",
+   "what": "English translation; the chapter titles quoted below are taken from it (as recalled). EEBO-TCP A26565."
+  },
+  {
+   "date": "1655 (London)",
+   "work": "Henry Cornelius Agrippa his Fourth Book of Occult Philosophy",
+   "author": "trans. Robert Turner",
+   "what": "Prints in English a treatise 'Of Geomancy' under Agrippa's name and an 'Astronomical Geomancy' ascribed to Gerard of Cremona. Both ascriptions are reported, not proven. Basis: recalled, not re-checked (web search was exhausted in this run)."
+  },
+  {
+   "date": "1701 (Nuremberg)",
+   "work": "Lexicon pharmaceutico-chymicum",
+   "author": "Johann Christoph Sommerhoff",
+   "what": "One of the large printed tables of chemical characters, including the element triangles. Basis: recalled, not re-checked (web search was exhausted in this run)."
+  },
+  {
+   "date": "1751",
+   "work": "Plantae hybridae (dissertation)",
+   "author": "Carl Linnaeus",
+   "what": "First use of the Mars and Venus signs for male and female, according to W. T. Stearn (1962). Basis: recalled, not re-checked (web search was exhausted in this run)."
+  },
+  {
+   "date": "1787 (Paris)",
+   "work": "Méthode de nomenclature chimique",
+   "author": "L.-B. Guyton de Morveau, A.-L. Lavoisier, C.-L. Berthollet, A.-F. de Fourcroy; new characters by J.-H. Hassenfratz and P.-A. Adet",
+   "what": "The new chemical nomenclature, with its own proposed signs, begins to replace the old alchemical characters; Dalton's circles (1808) and Berzelius's letters (1813-14) follow. Basis: recalled, not re-checked (web search was exhausted in this run)."
+  },
+  {
+   "date": "1887-1888 (Paris)",
+   "work": "Collection des anciens alchimistes grecs",
+   "author": "M. Berthelot and Ch.-Ém. Ruelle",
+   "what": "Edits the Greek alchemical corpus and prints the Byzantine lists of signs. Basis: recalled, not re-checked (web search was exhausted in this run)."
+  },
+  {
+   "date": "1899; 1928",
+   "work": "Die Geheimsymbole der Chemie und Medicin des Mittelalters; Alchemistische und chemische Zeichen",
+   "author": "G. W. Gessmann; F. Lüdy-Tenger",
+   "what": "Modern compilations of the signs, from which much of the modern repertoire is known. Not consulted. Basis: recalled, not re-checked (web search was exhausted in this run)."
+  },
+  {
+   "date": "June 1993",
+   "work": "The Unicode Standard 1.1",
+   "author": "Unicode Consortium",
+   "what": "Planet signs (U+2609, U+263D-U+2647) and zodiac signs (U+2648-U+2653) are encoded in the Miscellaneous Symbols block. Checked in this session against the Unicode Character Database shipped with Python 3.11 (UCD 14.0) and Perl 5.38 (UCD 15.0)."
+  },
+  {
+   "date": "October 2010",
+   "work": "The Unicode Standard 6.0",
+   "author": "Unicode Consortium",
+   "what": "Adds the Alchemical Symbols block, U+1F700-U+1F773 (116 characters). Checked in this session against the Unicode Character Database shipped with Python 3.11 (UCD 14.0) and Perl 5.38 (UCD 15.0)."
+  },
+  {
+   "date": "September 2022",
+   "work": "The Unicode Standard 15.0",
+   "author": "Unicode Consortium",
+   "what": "Adds U+1F774-U+1F776 (LOT OF FORTUNE, OCCULTATION, LUNAR ECLIPSE) and U+1F77B-U+1F77F (HAUMEA, MAKEMAKE, GONGGONG, QUAOAR, ORCUS) to the same block. No geomantic figures. Checked in this session against the Unicode Character Database shipped with Python 3.11 (UCD 14.0) and Perl 5.38 (UCD 15.0)."
+  }
+ ],
+ "claims": [
+  {
+   "claim": "The planet signs began as abbreviations of the planets' Greek names in Roman-period astronomical papyri.",
+   "standing": "documented",
+   "evidence": "Jones's edition of the Oxyrhynchus astronomical papyri (1999) is the basis usually cited. Basis: recalled, not re-checked (web search was exhausted in this run).",
+   "sources": [
+    "Jones 1999"
+   ]
+  },
+  {
+   "claim": "Saturn's sign comes from κρ (Κρόνος), Jupiter's from ζ (Ζεύς), Mars's from Θοῦρος, Venus's from Φωσφόρος, Mercury's from Στίλβων.",
+   "standing": "disputed",
+   "evidence": "This is the letter-by-letter reading reported from Jones. Earlier writers, Maunder (1934) among them, explained the signs as pictures of the gods' attributes. I could not check how firmly Jones commits to each letter. Present them as Jones's readings. Basis: recalled, not re-checked (web search was exhausted in this run).",
+   "sources": [
+    "Jones 1999",
+    "Maunder 1934"
+   ]
+  },
+  {
+   "claim": "The signs picture the gods' attributes: Saturn's sickle, Jupiter's thunderbolt, Mars's shield and spear, Venus's hand-mirror, Mercury's caduceus.",
+   "standing": "legend",
+   "evidence": "A very old and still popular reading. It explains the later shapes but not, on Jones's evidence, their origin. Report it as a reading. Basis: recalled, not re-checked (web search was exhausted in this run).",
+   "sources": [
+    "Maunder 1934",
+    "Jones 1999"
+   ]
+  },
+  {
+   "claim": "The crosses at the foot of Mercury and Venus, and on Saturn and Jupiter, are late additions to the signs.",
+   "standing": "disputed",
+   "evidence": "Secondary summaries say the crosses are not in the papyrus forms and became standard in late medieval and Renaissance copies. Not checked against plates. Do not say they were added 'to Christianise' the signs without a source. Basis: recalled, not re-checked (web search was exhausted in this run).",
+   "sources": [
+    "Jones 1999",
+    "Maunder 1934"
+   ]
+  },
+  {
+   "claim": "The zodiac glyphs are as old as the planet signs.",
+   "standing": "disputed",
+   "evidence": "In the Greek horoscopes collected by Neugebauer and Van Hoesen (1959) the signs are usually written out or abbreviated (recalled). The pictorial glyphs are a feature of medieval manuscripts. Proposed derivations such as Capricorn from τρ (τράγος) and Virgo from ΠΑΡ (Παρθένος) are unproven. Basis: recalled, not re-checked (web search was exhausted in this run).",
+   "sources": [
+    "Neugebauer and Van Hoesen 1959",
+    "Jones 1999"
+   ]
+  },
+  {
+   "claim": "Before late antiquity the pairing of metals and planets was not fixed.",
+   "standing": "documented",
+   "evidence": "Celsus's Mithraic ladder in Origen, Contra Celsum VI.22, gives tin to Aphrodite, bronze to Zeus and iron to Hermes. A list ascribed to Olympiodorus gives electrum to Zeus and tin to Hermes. The later standard is lead-Saturn, tin-Jupiter, iron-Mars, gold-Sun, copper-Venus, quicksilver-Mercury, silver-Moon. Basis: recalled, not re-checked (web search was exhausted in this run).",
+   "sources": [
+    "Origen, Contra Celsum VI.22, trans. Chadwick 1953",
+    "Berthelot and Ruelle 1887-88"
+   ]
+  },
+  {
+   "claim": "Byzantine manuscripts of Greek alchemy carry lists of signs for metals, minerals and operations, the metals written with planet signs.",
+   "standing": "documented",
+   "evidence": "Marcianus graecus 299 (10th or 11th c.) and Parisinus graecus 2327 (1478); lists printed by Berthelot (1887). Folios not verified. Basis: recalled, not re-checked (web search was exhausted in this run).",
+   "sources": [
+    "Berthelot and Ruelle 1887-88"
+   ]
+  },
+  {
+   "claim": "Alchemical signs were a secret code.",
+   "standing": "disputed",
+   "evidence": "They were mostly abbreviations, used in recipes, notebooks and pharmacy as the planet signs were in tables. Alchemical secrecy relied more on cover-names (Decknamen) than on the signs (Principe 2013). Some authors did use signs to hide matter from casual readers. Basis: recalled, not re-checked (web search was exhausted in this run).",
+   "sources": [
+    "Principe 2013"
+   ]
+  },
+  {
+   "claim": "The four element triangles are ancient.",
+   "standing": "disputed",
+   "evidence": "I can name no ancient or medieval source for them. They are standard in 17th- and 18th-century printed tables (e.g. Sommerhoff 1701). Their reading as halves of a hexagram cannot be dated here. Basis: recalled, not re-checked (web search was exhausted in this run).",
+   "sources": [
+    "Sommerhoff 1701",
+    "Gessmann 1899"
+   ]
+  },
+  {
+   "claim": "Paracelsus taught three principles, sulphur, mercury and salt, as the constituents of bodies.",
+   "standing": "documented",
+   "evidence": "Pagel (1958; 2nd ed. 1982) and Principe (2013). Opus paramirum, c. 1531, as recalled. Basis: recalled, not re-checked (web search was exhausted in this run).",
+   "sources": [
+    "Pagel 1958/1982",
+    "Principe 2013"
+   ]
+  },
+  {
+   "claim": "Agrippa teaches that every star stamps its seal and character on the things under it (stones, plants, animals and their members), and that these marks carry the star's virtue.",
+   "standing": "documented",
+   "evidence": "De occulta philosophia I.33, 'Of the Seals, and Characters of Naturall things' (J.F. 1651). This reports Agrippa's teaching, not its truth. Paraphrase from recall; check the wording. Basis: recalled, not re-checked (web search was exhausted in this run).",
+   "sources": [
+    "Agrippa 1533, I.33",
+    "J.F. 1651"
+   ]
+  },
+  {
+   "claim": "Agrippa places the geomantic figures between images and characters and assigns them to the planets in pairs.",
+   "standing": "documented",
+   "evidence": "De occulta philosophia II.48. The pairs as recalled: Via and Populus to the Moon; Fortuna maior and minor to the Sun; Acquisitio and Laetitia to Jupiter; Puer and Rubeus to Mars; Puella and Amissio to Venus; Coniunctio and Albus to Mercury; Carcer and Tristitia to Saturn; Caput and Cauda draconis to the Moon's nodes. Basis: recalled, not re-checked (web search was exhausted in this run).",
+   "sources": [
+    "Agrippa 1533, II.48",
+    "J.F. 1651"
+   ]
+  },
+  {
+   "claim": "Agrippa shows how to make characters by joining the points of the geomantic figures, with a table.",
+   "standing": "documented",
+   "evidence": "De occulta philosophia II.51. The table was not seen in this run, so no character from it is described. Basis: recalled, not re-checked (web search was exhausted in this run).",
+   "sources": [
+    "Agrippa 1533, II.51",
+    "J.F. 1651"
+   ]
+  },
+  {
+   "claim": "Agrippa wrote the treatise 'Of Geomancy' printed under his name.",
+   "standing": "attributed",
+   "evidence": "Printed among his works and in English by Turner (1655). The Fourth Book printed with it is spurious (Weyer's testimony, as the Latin hall already says); the geomancy's own authorship was not checked here. Basis: recalled, not re-checked (web search was exhausted in this run).",
+   "sources": [
+    "Turner 1655"
+   ]
+  },
+  {
+   "claim": "Gerard of Cremona wrote the 'Astronomical Geomancy'.",
+   "standing": "attributed",
+   "evidence": "So ascribed in print (Turner 1655). The ascription is doubted (Charmasson 1980, as recalled). Basis: recalled, not re-checked (web search was exhausted in this run).",
+   "sources": [
+    "Turner 1655",
+    "Charmasson 1980"
+   ]
+  },
+  {
+   "claim": "Geomancy reached Latin from Arabic ʿilm al-raml in the 12th century.",
+   "standing": "documented",
+   "evidence": "Hugh of Santalla's Ars geomantiae and other 12th-century translations (Charmasson 1980; Savage-Smith and Smith 1980). Basis: recalled, not re-checked (web search was exhausted in this run).",
+   "sources": [
+    "Charmasson 1980",
+    "Savage-Smith and Smith 1980"
+   ]
+  },
+  {
+   "claim": "Geomancy was revealed by the angel Gabriel to the prophet Idris (Enoch) or to Daniel.",
+   "standing": "legend",
+   "evidence": "Arabic geomancers' own account of the art's origin, reported as such by Savage-Smith and Smith (1980) (recalled). Basis: recalled, not re-checked (web search was exhausted in this run).",
+   "sources": [
+    "Savage-Smith and Smith 1980"
+   ]
+  },
+  {
+   "claim": "Linnaeus first used the Mars and Venus signs for male and female.",
+   "standing": "documented",
+   "evidence": "W. T. Stearn, Taxon 11 (1962): first in the dissertation Plantae hybridae, 1751. Basis: recalled, not re-checked (web search was exhausted in this run).",
+   "sources": [
+    "Stearn 1962"
+   ]
+  },
+  {
+   "claim": "Unicode encodes the planet and zodiac signs since 1.1 (1993), the Alchemical Symbols since 6.0 (2010), with additions in 15.0 (2022); it has no geomantic figures as of 15.0.",
+   "standing": "documented",
+   "evidence": "Checked in this session against the Unicode Character Database shipped with Python 3.11 (UCD 14.0) and Perl 5.38 (UCD 15.0). Unicode versions after 15.0 were not checked: I have an unverified recollection of a later proposal for geomantic figures.",
+   "sources": [
+    "Unicode Character Database 14.0 and 15.0 (local)"
+   ]
+  },
+  {
+   "claim": "The Unicode reference glyphs show the 'original' alchemical signs.",
+   "standing": "disputed",
+   "evidence": "The block encodes a selection of frequent signs in one chosen shape each; historical tables show many variants for the same substance (sal ammoniac, vitriol and the operations especially). The Noto renders made in this session show modern designs. Checked in this session against the Unicode Character Database shipped with Python 3.11 (UCD 14.0) and Perl 5.38 (UCD 15.0).",
+   "sources": [
+    "Unicode code chart U+1F700",
+    "Gessmann 1899",
+    "Lüdy-Tenger 1928"
+   ]
+  }
+ ],
+ "letters": [
+  {
+   "order": 1,
+   "name": "Sun",
+   "value": "the Sun (Helios, Sol); in alchemy, gold",
+   "translit": "☉ U+2609 SUN",
+   "numeric": null,
+   "form": "One open circle, centre (50,50), radius 38. One solid dot at the centre, radius 6. Nothing else.",
+   "formConfidence": "high",
+   "note": "Alchemy writes gold with this same sign. Unicode also has U+1F71A ALCHEMICAL SYMBOL FOR GOLD, whose Noto glyph adds a curling flourish to the circle; do not substitute it here. U+2609 is not in the Noto Sans Symbols 'symbols' subset probed in this session (it rendered as a missing glyph), which is one more reason to draw it.",
+   "group": "planet",
+   "codepoint": "U+2609",
+   "char": "☉",
+   "unicodeName": "SUN",
+   "earliestForm": "Secondary summaries of Jones's Oxyrhynchus edition report the Sun in the papyri as a circle with a single ray; the circle with a central dot is the medieval and modern standard. I could not check the papyrus forms. Basis: recalled, not re-checked (web search was exhausted in this run).",
+   "earliestConfidence": "low"
+  },
+  {
+   "order": 2,
+   "name": "Moon",
+   "value": "the Moon (Selene, Luna); in alchemy, silver",
+   "translit": "☽ U+263D FIRST QUARTER MOON",
+   "numeric": null,
+   "form": "A crescent with its horns to the LEFT, bulging right like a closing bracket ')'. Horn tips at (40,10) and (40,90). Outer edge: an arc from tip to tip bulging right to x=78. Inner edge: a shallower arc from tip to tip bulging right to x=58. The crescent is about 20 units thick at mid-height and tapers to points. It may be filled; Noto draws it as an outline (both arcs stroked, hollow inside).",
+   "formConfidence": "high",
+   "note": "Unicode has two crescents: U+263D FIRST QUARTER MOON (horns left, used here) and U+263E LAST QUARTER MOON (horns right). Alchemical silver is written with a crescent; U+1F71B ALCHEMICAL SYMBOL FOR SILVER has an unrelated Noto glyph (a ring with three small rings) and should not be used for the Moon.",
+   "group": "planet",
+   "codepoint": "U+263D",
+   "char": "☽",
+   "unicodeName": "FIRST QUARTER MOON",
+   "earliestForm": "A crescent from the earliest papyri onward; the direction of the horns varies between sources. Basis: recalled, not re-checked (web search was exhausted in this run).",
+   "earliestConfidence": "medium"
+  },
+  {
+   "order": 3,
+   "name": "Mercury",
+   "value": "the planet Mercury (Hermes, Stilbon); in alchemy, quicksilver and the principle Mercury",
+   "translit": "☿ U+263F MERCURY",
+   "numeric": null,
+   "form": "Three parts on one vertical axis x=50. (1) Horns: a half circle open upward, centre (50,8), radius 15, so its tips are at (35,8) and (65,8) and its lowest point at (50,23). (2) A circle, centre (50,40), radius 17, touching the horns at (50,23). (3) Below the circle a stem from (50,57) to (50,96), crossed at y=80 by a bar from x=36 to x=64.",
+   "formConfidence": "high",
+   "note": "Same sign serves for the alchemical metal quicksilver and for Mercury as one of the three principles (no. 25). Draw it once and reuse it.",
+   "group": "planet",
+   "codepoint": "U+263F",
+   "char": "☿",
+   "unicodeName": "MERCURY",
+   "earliestForm": "Reported, from Jones's edition of the Oxyrhynchus papyri, as an abbreviation of the planet's Greek name Στίλβων ('the gleaming one'), later reshaped and read as a caduceus. The cross at the foot is said to be a late addition. I could not check the papyrus forms. Basis: recalled, not re-checked (web search was exhausted in this run).",
+   "earliestConfidence": "low"
+  },
+  {
+   "order": 4,
+   "name": "Venus",
+   "value": "the planet Venus (Aphrodite, Phosphoros); in alchemy, copper",
+   "translit": "♀ U+2640 FEMALE SIGN",
+   "numeric": null,
+   "form": "A circle, centre (50,34), radius 24 (top at y=10, bottom at y=58). Below it a stem from (50,58) to (50,96), crossed at y=80 by a bar from x=34 to x=66.",
+   "formConfidence": "high",
+   "note": "Unicode names this character FEMALE SIGN. Label it 'Venus' on the page. Its use for 'female' goes back to Linnaeus (see claims).",
+   "group": "planet",
+   "codepoint": "U+2640",
+   "char": "♀",
+   "unicodeName": "FEMALE SIGN",
+   "earliestForm": "Reported as derived from the initial of the Greek name Φωσφόρος ('light-bringer'). The reading as Venus's hand-mirror is later interpretation. I could not check the papyrus forms. Basis: recalled, not re-checked (web search was exhausted in this run).",
+   "earliestConfidence": "low"
+  },
+  {
+   "order": 5,
+   "name": "Mars",
+   "value": "the planet Mars (Ares, Pyroeis); in alchemy, iron",
+   "translit": "♂ U+2642 MALE SIGN",
+   "numeric": null,
+   "form": "A circle, centre (38,62), radius 25. From the circle's upper right edge at 45 degrees (about (56,44)) a straight shaft runs up and right to (86,14). At its end a filled triangular arrowhead with its tip at (90,10) and its back corners at about (72,14) and (86,28). An open head of two short strokes from the tip, one horizontal and one vertical, is an accepted variant.",
+   "formConfidence": "high",
+   "note": "Unicode names this character MALE SIGN. Label it 'Mars' on the page.",
+   "group": "planet",
+   "codepoint": "U+2642",
+   "char": "♂",
+   "unicodeName": "MALE SIGN",
+   "earliestForm": "Reported as an abbreviation of Θοῦρος ('the impetuous'), a Greek astrological name of Mars, later reshaped into circle and arrow; the reading as shield and spear is later interpretation. I could not check the papyrus forms. Basis: recalled, not re-checked (web search was exhausted in this run).",
+   "earliestConfidence": "low"
+  },
+  {
+   "order": 6,
+   "name": "Jupiter",
+   "value": "the planet Jupiter (Zeus); in alchemy, tin",
+   "translit": "♃ U+2643 JUPITER",
+   "numeric": null,
+   "form": "Like an Arabic numeral 2 whose base runs on to the right and is cut by a tall upright. Upright: (72,10) to (72,92). Base bar: (20,68) to (72,68), meeting the upright, which stands above and below it. Hook: from (20,40) a curve rises to its top at (36,20), turns over to (52,30), and from there a straight stroke runs down and left to (24,68) on the base bar.",
+   "formConfidence": "high",
+   "note": "Older printed and manuscript forms vary a great deal in the hook; the upright and bar are constant.",
+   "group": "planet",
+   "codepoint": "U+2643",
+   "char": "♃",
+   "unicodeName": "JUPITER",
+   "earliestForm": "Reported as a zeta (Ζ of Ζεύς) with a horizontal abbreviation stroke through it, later read as a '4' or as a thunderbolt. I could not check the papyrus forms. Basis: recalled, not re-checked (web search was exhausted in this run).",
+   "earliestConfidence": "low"
+  },
+  {
+   "order": 7,
+   "name": "Saturn",
+   "value": "the planet Saturn (Kronos, Phainon); in alchemy, lead",
+   "translit": "♄ U+2644 SATURN",
+   "numeric": null,
+   "form": "Like a lowercase h whose upright is crossed near the top. Upright: (36,8) to (36,92). Crossbar: (22,22) to (50,22). Shoulder: from the upright at (36,52) an arch rises right to its top at (54,42) and comes down on the right at x=66 to about (66,62). From there the stroke goes on down as a gentle S, swinging slightly left and then right, to end at (70,92).",
+   "formConfidence": "high",
+   "note": "The tail is the most variable part: it may end in a hook curling left, or run straight down.",
+   "group": "planet",
+   "codepoint": "U+2644",
+   "char": "♄",
+   "unicodeName": "SATURN",
+   "earliestForm": "Reported as a monogram of the first letters of Κρόνος (kappa and rho) with an abbreviation stroke; later read as Kronos's sickle or scythe. I could not check the papyrus forms. Basis: recalled, not re-checked (web search was exhausted in this run).",
+   "earliestConfidence": "low"
+  },
+  {
+   "order": 8,
+   "name": "Aries",
+   "value": "the Ram; first sign, cardinal fire, house of Mars",
+   "translit": "♈ U+2648 ARIES",
+   "numeric": null,
+   "form": "A central upright from (50,34) to (50,92). From its top two horns spring outward: each rises, turns outward over the top and comes down on the outside, ending with a small inward curl. Left horn: from (50,34) up to (40,14), over to (24,12), down to (14,28), curling in to end at (20,42). The right horn mirrors it about x=50.",
+   "formConfidence": "high",
+   "note": "Unicode gives the zodiac signs East Asian Width W, and phones show them as coloured emoji by default; draw them as SVG, or follow the character with U+FE0E (text presentation).",
+   "group": "zodiac",
+   "codepoint": "U+2648",
+   "char": "♈",
+   "unicodeName": "ARIES",
+   "earliestForm": "Read as the ram's horns. No form earlier than medieval manuscripts can be named here. Basis: recalled, not re-checked (web search was exhausted in this run).",
+   "earliestConfidence": "low"
+  },
+  {
+   "order": 9,
+   "name": "Taurus",
+   "value": "the Bull; fixed earth, house of Venus",
+   "translit": "♉ U+2649 TAURUS",
+   "numeric": null,
+   "form": "A circle, centre (50,66), radius 22. Above it the horns: one arc from (12,14) curving down to touch the circle's top at (50,44) and up again to (88,14). The tips flick slightly outward.",
+   "formConfidence": "high",
+   "note": "Unicode gives the zodiac signs East Asian Width W, and phones show them as coloured emoji by default; draw them as SVG, or follow the character with U+FE0E (text presentation).",
+   "group": "zodiac",
+   "codepoint": "U+2649",
+   "char": "♉",
+   "unicodeName": "TAURUS",
+   "earliestForm": "Read as the bull's head and horns. No form earlier than medieval manuscripts can be named here. Basis: recalled, not re-checked (web search was exhausted in this run).",
+   "earliestConfidence": "low"
+  },
+  {
+   "order": 10,
+   "name": "Gemini",
+   "value": "the Twins; mutable air, house of Mercury",
+   "translit": "♊ U+264A GEMINI",
+   "numeric": null,
+   "form": "Like the Roman numeral II. Two uprights, x=34 and x=66, running from the top bar to the bottom bar. Top bar: a shallow arc from (16,12) through (50,20) to (84,12), its middle sagging. Bottom bar: a shallow arc from (16,88) through (50,80) to (84,88), its middle bowing up.",
+   "formConfidence": "high",
+   "note": "Unicode gives the zodiac signs East Asian Width W, and phones show them as coloured emoji by default; draw them as SVG, or follow the character with U+FE0E (text presentation).",
+   "group": "zodiac",
+   "codepoint": "U+264A",
+   "char": "♊",
+   "unicodeName": "GEMINI",
+   "earliestForm": "Read as the two twins standing side by side. No form earlier than medieval manuscripts can be named here. Basis: recalled, not re-checked (web search was exhausted in this run).",
+   "earliestConfidence": "low"
+  },
+  {
+   "order": 11,
+   "name": "Cancer",
+   "value": "the Crab; cardinal water, house of the Moon",
+   "translit": "♋ U+264B CANCER",
+   "numeric": null,
+   "form": "Two equal curls, one turned 180 degrees from the other, like '69' lying on its side. Upper curl: a ring at the left, centre (28,42), radius 11; from the ring's top a stroke sweeps right in a shallow arch (highest at about y=28) and ends at (88,36). Lower curl: the same shape rotated 180 degrees about (50,50): a ring at the right, centre (72,58), from whose bottom a stroke sweeps left in a shallow sag and ends at (12,64).",
+   "formConfidence": "high",
+   "note": "Unicode gives the zodiac signs East Asian Width W, and phones show them as coloured emoji by default; draw them as SVG, or follow the character with U+FE0E (text presentation).",
+   "group": "zodiac",
+   "codepoint": "U+264B",
+   "char": "♋",
+   "unicodeName": "CANCER",
+   "earliestForm": "Read as the crab's claws, or as two curls; no ancient form can be named here. Basis: recalled, not re-checked (web search was exhausted in this run).",
+   "earliestConfidence": "low"
+  },
+  {
+   "order": 12,
+   "name": "Leo",
+   "value": "the Lion; fixed fire, house of the Sun",
+   "translit": "♌ U+264C LEO",
+   "numeric": null,
+   "form": "A small ring at lower left, centre (34,70), radius 10. From the ring's upper right a stroke climbs into a high arch: up and right to its top at (58,18), then down the right side at about x=74 to (74,52). There it sweeps down and left to (62,86) and ends in a small turn to the right at (76,96).",
+   "formConfidence": "high",
+   "note": "Unicode gives the zodiac signs East Asian Width W, and phones show them as coloured emoji by default; draw them as SVG, or follow the character with U+FE0E (text presentation).",
+   "group": "zodiac",
+   "codepoint": "U+264C",
+   "char": "♌",
+   "unicodeName": "LEO",
+   "earliestForm": "Read as the lion's mane or tail. No form earlier than medieval manuscripts can be named here. Basis: recalled, not re-checked (web search was exhausted in this run).",
+   "earliestConfidence": "low"
+  },
+  {
+   "order": 13,
+   "name": "Virgo",
+   "value": "the Virgin; mutable earth, house of Mercury",
+   "translit": "♍ U+264D VIRGO",
+   "numeric": null,
+   "form": "Three uprights joined at the top by two arches, like a lowercase m: uprights at x=20, x=42 and x=64, from y=22 down to y=86; the first starts with a small hook at its top left. The third upright runs on below the others to about y=98. A narrow closed loop hangs on its right: from the third upright at about (64,50) a stroke goes up and right to (72,40), down the right side to (80,70), and back down and left across the third upright near (64,88), ending below and left at (54,98).",
+   "formConfidence": "medium",
+   "note": "Unicode gives the zodiac signs East Asian Width W, and phones show them as coloured emoji by default; draw them as SVG, or follow the character with U+FE0E (text presentation). Fonts differ most in the loop: some close it, some leave a simple crossing stroke.",
+   "group": "zodiac",
+   "codepoint": "U+264D",
+   "char": "♍",
+   "unicodeName": "VIRGO",
+   "earliestForm": "Proposed as a ligature of Greek ΠΑΡ (Παρθένος, virgin); the proposal is unproven. No form earlier than medieval manuscripts can be named here. Basis: recalled, not re-checked (web search was exhausted in this run).",
+   "earliestConfidence": "low"
+  },
+  {
+   "order": 14,
+   "name": "Libra",
+   "value": "the Scales; cardinal air, house of Venus",
+   "translit": "♎ U+264E LIBRA",
+   "numeric": null,
+   "form": "Two horizontal bars. Lower bar: (10,80) to (90,80). Upper bar at y=62: from (10,62) to (36,62), then a semicircular hump rising to (50,40) and coming down to (64,62), then on to (90,62). In Noto the hump's feet turn slightly outward into the bar, like an omega.",
+   "formConfidence": "high",
+   "note": "Unicode gives the zodiac signs East Asian Width W, and phones show them as coloured emoji by default; draw them as SVG, or follow the character with U+FE0E (text presentation).",
+   "group": "zodiac",
+   "codepoint": "U+264E",
+   "char": "♎",
+   "unicodeName": "LIBRA",
+   "earliestForm": "Read as the balance beam; also read as the sun setting on the horizon at the autumn equinox. Both are interpretations. Basis: recalled, not re-checked (web search was exhausted in this run).",
+   "earliestConfidence": "low"
+  },
+  {
+   "order": 15,
+   "name": "Scorpio",
+   "value": "the Scorpion; fixed water, house of Mars",
+   "translit": "♏ U+264F SCORPIUS",
+   "numeric": null,
+   "form": "Three uprights joined at the top by two arches, like a lowercase m: uprights at x=18, x=38 and x=58, from y=22 to y=86; the first starts with a small hook at its top left. The third upright runs on down to about y=90, curves right into a short stroke, and ends in a filled arrowhead pointing right (slightly downward) with its tip at (90,96).",
+   "formConfidence": "high",
+   "note": "Unicode gives the zodiac signs East Asian Width W, and phones show them as coloured emoji by default; draw them as SVG, or follow the character with U+FE0E (text presentation). Unicode spells the name SCORPIUS.",
+   "group": "zodiac",
+   "codepoint": "U+264F",
+   "char": "♏",
+   "unicodeName": "SCORPIUS",
+   "earliestForm": "Read as the scorpion's legs and sting. No form earlier than medieval manuscripts can be named here. Basis: recalled, not re-checked (web search was exhausted in this run).",
+   "earliestConfidence": "low"
+  },
+  {
+   "order": 16,
+   "name": "Sagittarius",
+   "value": "the Archer; mutable fire, house of Jupiter",
+   "translit": "♐ U+2650 SAGITTARIUS",
+   "numeric": null,
+   "form": "An arrow pointing up and to the right. Shaft: (18,88) to (82,24). Arrowhead: two strokes from the tip (82,24), one horizontal to the left, to (50,24), one vertical down, to (82,56). A cross-stroke, at right angles to the shaft, crosses it about a third of the way up: from (28,50) to (56,78).",
+   "formConfidence": "high",
+   "note": "Unicode gives the zodiac signs East Asian Width W, and phones show them as coloured emoji by default; draw them as SVG, or follow the character with U+FE0E (text presentation).",
+   "group": "zodiac",
+   "codepoint": "U+2650",
+   "char": "♐",
+   "unicodeName": "SAGITTARIUS",
+   "earliestForm": "The archer's arrow standing for the whole figure. No form earlier than medieval manuscripts can be named here. Basis: recalled, not re-checked (web search was exhausted in this run).",
+   "earliestConfidence": "low"
+  },
+  {
+   "order": 17,
+   "name": "Capricorn",
+   "value": "the Goat (goat-fish); cardinal earth, house of Saturn",
+   "translit": "♑ U+2651 CAPRICORN",
+   "numeric": null,
+   "form": "Begin at the top left with a small hook at (12,20); the stroke drops as an upright at x=24 to its foot at (24,90). From this upright at about y=50 a second stroke climbs right to a peak at (44,16) and comes down as an upright at x=54 to about y=78. There it turns into a small closed loop on the right (an oval about 22 wide and 16 tall, centred (72,82)). The stroke leaving the loop sweeps down and left beneath it, crossing the second upright, and ends at (36,100).",
+   "formConfidence": "medium",
+   "note": "Unicode gives the zodiac signs East Asian Width W, and phones show them as coloured emoji by default; draw them as SVG, or follow the character with U+FE0E (text presentation). The hardest sign to draw; check the drawing against a second font before publishing.",
+   "group": "zodiac",
+   "codepoint": "U+2651",
+   "char": "♑",
+   "unicodeName": "CAPRICORN",
+   "earliestForm": "Proposed as a ligature of Greek τρ (τράγος, goat); the proposal is unproven. Forms vary more than for any other sign. Basis: recalled, not re-checked (web search was exhausted in this run).",
+   "earliestConfidence": "low"
+  },
+  {
+   "order": 18,
+   "name": "Aquarius",
+   "value": "the Water-bearer; fixed air, house of Saturn",
+   "translit": "♒ U+2652 AQUARIUS",
+   "numeric": null,
+   "form": "Two identical zigzags, one above the other, each from x=12 to x=88. Each is a line of straight segments rising and falling with three peaks: upper zigzag between y=28 and y=42, lower between y=56 and y=70. Many fonts use smooth waves instead of zigzags; both are standard.",
+   "formConfidence": "high",
+   "note": "Unicode gives the zodiac signs East Asian Width W, and phones show them as coloured emoji by default; draw them as SVG, or follow the character with U+FE0E (text presentation).",
+   "group": "zodiac",
+   "codepoint": "U+2652",
+   "char": "♒",
+   "unicodeName": "AQUARIUS",
+   "earliestForm": "Read as water poured from the urn; often compared with the Egyptian hieroglyph for water, which is a comparison, not a shown derivation. Basis: recalled, not re-checked (web search was exhausted in this run).",
+   "earliestConfidence": "low"
+  },
+  {
+   "order": 19,
+   "name": "Pisces",
+   "value": "the Fishes; mutable water, house of Jupiter",
+   "translit": "♓ U+2653 PISCES",
+   "numeric": null,
+   "form": "Two arcs back to back, joined by a bar. Left arc like ')': from (26,10) to (26,90), bulging right to x=40. Right arc like '(': from (74,10) to (74,90), bulging left to x=60. Bar: (18,50) to (82,50), crossing both arcs.",
+   "formConfidence": "high",
+   "note": "Unicode gives the zodiac signs East Asian Width W, and phones show them as coloured emoji by default; draw them as SVG, or follow the character with U+FE0E (text presentation).",
+   "group": "zodiac",
+   "codepoint": "U+2653",
+   "char": "♓",
+   "unicodeName": "PISCES",
+   "earliestForm": "Read as two fishes tied by a cord, reduced to two arcs and a bar. No form earlier than medieval manuscripts can be named here. Basis: recalled, not re-checked (web search was exhausted in this run).",
+   "earliestConfidence": "low"
+  },
+  {
+   "order": 20,
+   "name": "Fire",
+   "value": "the element fire (hot and dry)",
+   "translit": "🜂 U+1F702 ALCHEMICAL SYMBOL FOR FIRE",
+   "numeric": null,
+   "form": "An equilateral triangle, point up, outline only. Corners: (50,12), (12,82), (88,82).",
+   "formConfidence": "high",
+   "note": "Points up because fire rises.",
+   "group": "element",
+   "codepoint": "U+1F702",
+   "char": "🜂",
+   "unicodeName": "ALCHEMICAL SYMBOL FOR FIRE",
+   "earliestForm": "No ancient or medieval source for the four triangles can be named here. They are standard in 17th- and 18th-century printed tables of chemical signs (e.g. J. C. Sommerhoff, Lexicon pharmaceutico-chymicum, Nuremberg 1701). The common reading of them as the two halves of a hexagram cannot be dated. Basis: recalled, not re-checked (web search was exhausted in this run).",
+   "earliestConfidence": "low"
+  },
+  {
+   "order": 21,
+   "name": "Air",
+   "value": "the element air (hot and moist)",
+   "translit": "🜁 U+1F701 ALCHEMICAL SYMBOL FOR AIR",
+   "numeric": null,
+   "form": "The fire triangle (corners (50,12), (12,82), (88,82)) with a horizontal bar across it at y=56, running from side to side and stopping at the sides.",
+   "formConfidence": "high",
+   "note": "Some old tables let the bar overhang the sides; Noto keeps it inside.",
+   "group": "element",
+   "codepoint": "U+1F701",
+   "char": "🜁",
+   "unicodeName": "ALCHEMICAL SYMBOL FOR AIR",
+   "earliestForm": "No ancient or medieval source for the four triangles can be named here. They are standard in 17th- and 18th-century printed tables of chemical signs (e.g. J. C. Sommerhoff, Lexicon pharmaceutico-chymicum, Nuremberg 1701). The common reading of them as the two halves of a hexagram cannot be dated. Basis: recalled, not re-checked (web search was exhausted in this run).",
+   "earliestConfidence": "low"
+  },
+  {
+   "order": 22,
+   "name": "Water",
+   "value": "the element water (cold and moist)",
+   "translit": "🜄 U+1F704 ALCHEMICAL SYMBOL FOR WATER",
+   "numeric": null,
+   "form": "An equilateral triangle, point down, outline only. Corners: (12,18), (88,18), (50,88).",
+   "formConfidence": "high",
+   "note": "The same triangle is the base of the monograms for aqua fortis and aqua regia (nos. 30, 31).",
+   "group": "element",
+   "codepoint": "U+1F704",
+   "char": "🜄",
+   "unicodeName": "ALCHEMICAL SYMBOL FOR WATER",
+   "earliestForm": "No ancient or medieval source for the four triangles can be named here. They are standard in 17th- and 18th-century printed tables of chemical signs (e.g. J. C. Sommerhoff, Lexicon pharmaceutico-chymicum, Nuremberg 1701). The common reading of them as the two halves of a hexagram cannot be dated. Basis: recalled, not re-checked (web search was exhausted in this run).",
+   "earliestConfidence": "low"
+  },
+  {
+   "order": 23,
+   "name": "Earth",
+   "value": "the element earth (cold and dry)",
+   "translit": "🜃 U+1F703 ALCHEMICAL SYMBOL FOR EARTH",
+   "numeric": null,
+   "form": "The water triangle (corners (12,18), (88,18), (50,88)) with a horizontal bar across it at y=44, running from side to side and stopping at the sides.",
+   "formConfidence": "high",
+   "note": "Not to be confused with U+2641 EARTH, the circle-and-cross sign used for the planet Earth and for antimony (no. 27).",
+   "group": "element",
+   "codepoint": "U+1F703",
+   "char": "🜃",
+   "unicodeName": "ALCHEMICAL SYMBOL FOR EARTH",
+   "earliestForm": "No ancient or medieval source for the four triangles can be named here. They are standard in 17th- and 18th-century printed tables of chemical signs (e.g. J. C. Sommerhoff, Lexicon pharmaceutico-chymicum, Nuremberg 1701). The common reading of them as the two halves of a hexagram cannot be dated. Basis: recalled, not re-checked (web search was exhausted in this run).",
+   "earliestConfidence": "low"
+  },
+  {
+   "order": 24,
+   "name": "Sulphur",
+   "value": "sulphur, the principle of combustibility (\"soul\") in the Paracelsian triad",
+   "translit": "🜍 U+1F70D ALCHEMICAL SYMBOL FOR SULFUR",
+   "numeric": null,
+   "form": "A triangle point up, corners (50,10), (16,62), (84,62), outline only. Below the middle of its base a stem from (50,62) to (50,96), crossed at y=78 by a bar from x=34 to x=66: a triangle standing on a cross.",
+   "formConfidence": "high",
+   "note": "Unicode's next two characters are related but different: U+1F70E PHILOSOPHERS SULFUR (the triangle standing on a forked support) and U+1F70F BLACK SULFUR (a double cross on a figure eight, the sign popularly called the 'Leviathan cross'). Keep them apart.",
+   "group": "principle",
+   "codepoint": "U+1F70D",
+   "char": "🜍",
+   "unicodeName": "ALCHEMICAL SYMBOL FOR SULFUR",
+   "earliestForm": "Greek alchemical sign lists use other signs for sulphur (θεῖον). The triangle on a cross is the early modern standard. Earliest occurrence not established here. Basis: recalled, not re-checked (web search was exhausted in this run).",
+   "earliestConfidence": "low"
+  },
+  {
+   "order": 25,
+   "name": "Mercury (principle)",
+   "value": "mercury, the principle of fusibility and volatility (\"spirit\") in the Paracelsian triad",
+   "translit": "☿ U+263F MERCURY",
+   "numeric": null,
+   "form": "Identical to no. 3 (Mercury): horns as a half circle open upward, centre (50,8), radius 15; circle centre (50,40), radius 17; stem (50,57) to (50,96) crossed at y=80 from x=36 to x=64.",
+   "formConfidence": "high",
+   "note": "Unicode encodes no separate alchemical mercury; quicksilver and the principle both use U+263F. Reuse the drawing of no. 3.",
+   "group": "principle",
+   "codepoint": "U+263F",
+   "char": "☿",
+   "unicodeName": "MERCURY",
+   "earliestForm": "The planetary sign used for quicksilver, carried over to the principle. See no. 3.",
+   "earliestConfidence": "low"
+  },
+  {
+   "order": 26,
+   "name": "Salt",
+   "value": "salt, the principle of fixity (\"body\") in the Paracelsian triad",
+   "translit": "🜔 U+1F714 ALCHEMICAL SYMBOL FOR SALT",
+   "numeric": null,
+   "form": "A circle, centre (50,50), radius 38, with one horizontal diameter from (12,50) to (88,50).",
+   "formConfidence": "high",
+   "note": "Compare nitre (U+1F715), the same circle with a VERTICAL diameter, and vitriol (no. 28).",
+   "group": "principle",
+   "codepoint": "U+1F714",
+   "char": "🜔",
+   "unicodeName": "ALCHEMICAL SYMBOL FOR SALT",
+   "earliestForm": "Standard in 17th- and 18th-century tables. Earliest occurrence not established here. Basis: recalled, not re-checked (web search was exhausted in this run).",
+   "earliestConfidence": "low"
+  },
+  {
+   "order": 27,
+   "name": "Antimony",
+   "value": "antimony (stibnite and the metal, regulus of antimony); also the sign of the planet Earth",
+   "translit": "♁ U+2641 EARTH",
+   "numeric": null,
+   "form": "A circle, centre (50,66), radius 24. Above it a stem from the top of the circle (50,42) up to (50,8), crossed at y=22 by a bar from x=36 to x=64. (Venus turned upside down; the shape of an orb with a cross.)",
+   "formConfidence": "high",
+   "note": "The Alchemical block has no plain 'antimony': it has U+1F72B ANTIMONY ORE (this sign with a small ring at the right end of the crossbar) and regulus forms. Using U+2641 EARTH for antimony is a convention; I recall the Unicode names list cross-referencing antimony here, but did not check it.",
+   "group": "substance",
+   "codepoint": "U+2641",
+   "char": "♁",
+   "unicodeName": "EARTH",
+   "earliestForm": "Standard in 17th-century chemical tables. Earliest occurrence not established here. Basis: recalled, not re-checked (web search was exhausted in this run).",
+   "earliestConfidence": "low"
+  },
+  {
+   "order": 28,
+   "name": "Vitriol",
+   "value": "vitriol (metal sulphates: green, blue and white vitriol) and oil of vitriol (sulphuric acid)",
+   "translit": "🜖 U+1F716 ALCHEMICAL SYMBOL FOR VITRIOL",
+   "numeric": null,
+   "form": "A circle, centre (50,50), radius 38. One vertical diameter from (50,12) to (50,88). One horizontal radius from the centre (50,50) to the right edge (88,50).",
+   "formConfidence": "high",
+   "note": "U+1F717 VITRIOL-2 is the mirror image (horizontal radius to the LEFT). Sources use both.",
+   "group": "substance",
+   "codepoint": "U+1F716",
+   "char": "🜖",
+   "unicodeName": "ALCHEMICAL SYMBOL FOR VITRIOL",
+   "earliestForm": "Standard in 17th- and 18th-century tables. Earliest occurrence not established here. Basis: recalled, not re-checked (web search was exhausted in this run).",
+   "earliestConfidence": "low"
+  },
+  {
+   "order": 29,
+   "name": "Sal ammoniac",
+   "value": "sal ammoniac (ammonium chloride)",
+   "translit": "🜹 U+1F739 ALCHEMICAL SYMBOL FOR SAL-AMMONIAC",
+   "numeric": null,
+   "form": "An eight-armed star of four straight strokes through the centre (50,50): a vertical (50,8) to (50,92); a horizontal (12,50) to (88,50); two diagonals (18,10) to (82,90) and (82,10) to (18,90).",
+   "formConfidence": "high",
+   "note": "Other tables draw sal ammoniac quite differently; this is the form Unicode encodes.",
+   "group": "substance",
+   "codepoint": "U+1F739",
+   "char": "🜹",
+   "unicodeName": "ALCHEMICAL SYMBOL FOR SAL-AMMONIAC",
+   "earliestForm": "One of several early modern signs for sal ammoniac. Earliest occurrence not established here. Basis: recalled, not re-checked (web search was exhausted in this run).",
+   "earliestConfidence": "low"
+  },
+  {
+   "order": 30,
+   "name": "Aqua fortis",
+   "value": "aqua fortis, \"strong water\" (nitric acid)",
+   "translit": "🜅 U+1F705 ALCHEMICAL SYMBOL FOR AQUAFORTIS",
+   "numeric": null,
+   "form": "A monogram of the water triangle and the letter F. Water triangle: corners (6,26), (66,26), (38,90). Its top edge runs on to the right to (95,26), making the top arm of an F whose stem is the triangle's right side. A shorter middle arm leaves the right side at (55,50) and runs right to (84,50).",
+   "formConfidence": "high",
+   "note": "U+1F705. The next two code points are aqua regia (U+1F706 and the AR ligature U+1F707).",
+   "group": "substance",
+   "codepoint": "U+1F705",
+   "char": "🜅",
+   "unicodeName": "ALCHEMICAL SYMBOL FOR AQUAFORTIS",
+   "earliestForm": "Built from the sign for water plus the initial of fortis: the construction is visible in the sign itself. Date of the first use not established here. Basis: recalled, not re-checked (web search was exhausted in this run).",
+   "earliestConfidence": "medium"
+  },
+  {
+   "order": 31,
+   "name": "Aqua regia",
+   "value": "aqua regia, \"royal water\" (nitric and hydrochloric acids), which dissolves gold",
+   "translit": "🜆 U+1F706 ALCHEMICAL SYMBOL FOR AQUA REGIA",
+   "numeric": null,
+   "form": "A monogram of the water triangle and the letter R. Water triangle: corners (4,26), (62,26), (37,90). An R is built on the triangle's right side as its stem: the bowl leaves the top right corner (62,26), swells right to x=90 and closes back on the side at about (50,58); the leg runs from about (68,58) down and right to (96,90).",
+   "formConfidence": "high",
+   "note": "U+1F707 AQUA REGIA-2 is a different sign (an AR ligature).",
+   "group": "substance",
+   "codepoint": "U+1F706",
+   "char": "🜆",
+   "unicodeName": "ALCHEMICAL SYMBOL FOR AQUA REGIA",
+   "earliestForm": "Built from the sign for water plus the initial of regia. Date of the first use not established here. Basis: recalled, not re-checked (web search was exhausted in this run).",
+   "earliestConfidence": "medium"
+  },
+  {
+   "order": 32,
+   "name": "Sublimation",
+   "value": "sublimation: heating a solid so that it rises as vapour and settles again above",
+   "translit": "🝞 U+1F75E ALCHEMICAL SYMBOL FOR SUBLIMATION",
+   "numeric": null,
+   "form": "Two parallel horizontal bars, upper (10,46) to (90,46) and lower (10,64) to (90,64). Each end of each bar carries a short tick slanting up to the right, about 8 units long. At the middle of the upper bar a small semicircular hump rises above it: from (42,46) up to (50,34) and down to (58,46).",
+   "formConfidence": "medium",
+   "note": "Read the hump as the matter rising. Its pair is precipitation (no. 33), the same sign with the hump hanging below.",
+   "group": "operation",
+   "codepoint": "U+1F75E",
+   "char": "🝞",
+   "unicodeName": "ALCHEMICAL SYMBOL FOR SUBLIMATION",
+   "earliestForm": "Forms of the operation signs vary widely between tables; this is the shape Unicode encodes, as drawn by Noto. Earliest occurrence not established here. Basis: recalled, not re-checked (web search was exhausted in this run).",
+   "earliestConfidence": "low"
+  },
+  {
+   "order": 33,
+   "name": "Precipitation",
+   "value": "precipitation: throwing down a solid out of a solution",
+   "translit": "🝟 U+1F75F ALCHEMICAL SYMBOL FOR PRECIPITATE",
+   "numeric": null,
+   "form": "The sublimation sign turned so that the hump hangs down: two parallel horizontal bars, upper (10,36) to (90,36) and lower (10,54) to (90,54), each end with a short slanting tick; at the middle of the LOWER bar a small semicircular hump hangs below it, from (42,54) down to (50,66) and up to (58,54).",
+   "formConfidence": "medium",
+   "note": "Pair of no. 32.",
+   "group": "operation",
+   "codepoint": "U+1F75F",
+   "char": "🝟",
+   "unicodeName": "ALCHEMICAL SYMBOL FOR PRECIPITATE",
+   "earliestForm": "Forms of the operation signs vary widely between tables; this is the shape Unicode encodes, as drawn by Noto. Earliest occurrence not established here. Basis: recalled, not re-checked (web search was exhausted in this run).",
+   "earliestConfidence": "low"
+  },
+  {
+   "order": 34,
+   "name": "Distillation",
+   "value": "distillation (Unicode: DISTILL)",
+   "translit": "🝠 U+1F760 ALCHEMICAL SYMBOL FOR DISTILL",
+   "numeric": null,
+   "form": "A long stroke and a short stroke meeting in a sharp peak, like a lopsided inverted V. The long stroke starts at the lower left (8,82) with a small hooked swash and climbs right to the peak at (78,30). From the peak a shorter, heavier stroke drops steeply to (94,90).",
+   "formConfidence": "medium",
+   "note": "Do not explain the shape (for instance as a retort) without a source.",
+   "group": "operation",
+   "codepoint": "U+1F760",
+   "char": "🝠",
+   "unicodeName": "ALCHEMICAL SYMBOL FOR DISTILL",
+   "earliestForm": "Forms of the operation signs vary widely between tables; this is the shape Unicode encodes, as drawn by Noto. Earliest occurrence not established here. Basis: recalled, not re-checked (web search was exhausted in this run).",
+   "earliestConfidence": "low"
+  },
+  {
+   "order": 35,
+   "name": "Putrefaction",
+   "value": "putrefaction: slow rotting of matter in gentle heat",
+   "translit": "🝤 U+1F764 ALCHEMICAL SYMBOL FOR PUTREFACTION",
+   "numeric": null,
+   "form": "An upright from (52,24) to (52,92) with two curved arms springing from it at about y=58. The left arm curves up and left to end at (18,34), finished with a short barb pointing left. The right arm curves up and right to (88,22) and ends in an arrowhead pointing up.",
+   "formConfidence": "medium",
+   "note": "",
+   "group": "operation",
+   "codepoint": "U+1F764",
+   "char": "🝤",
+   "unicodeName": "ALCHEMICAL SYMBOL FOR PUTREFACTION",
+   "earliestForm": "Forms of the operation signs vary widely between tables; this is the shape Unicode encodes, as drawn by Noto. Earliest occurrence not established here. Basis: recalled, not re-checked (web search was exhausted in this run).",
+   "earliestConfidence": "low"
+  },
+  {
+   "order": 36,
+   "name": "Via (the Way)",
+   "value": "geomantic figure; planet: Moon (Agrippa, De occulta philosophia II.48, as recalled)",
+   "translit": "no Unicode code point (none as of Unicode 15.0)",
+   "numeric": null,
+   "form": "Four rows of solid dots, radius 6, read from top to bottom. head row (y=14): ONE dot at x=50; neck row (y=38): ONE dot at x=50; body row (y=62): ONE dot at x=50; feet row (y=86): ONE dot at x=50. Pattern 1-1-1-1 (1 = one dot, 2 = two dots). 4 dots in all.",
+   "formConfidence": "high",
+   "note": "The dot pattern is the same in every Latin geomancy (Charmasson 1980; Skinner 1980), so the drawing is safe. Manuscripts write the points as dots, small circles or short strokes; I have not seen how the 1533 Agrippa prints them. The planet follows the Latin tradition that Agrippa repeats in II.48 (recalled). Zodiac attributions are deliberately NOT given: they differ between Agrippa, the geomancy ascribed to Gerard of Cremona and later sources. In II.51 Agrippa derives line-characters from each figure by joining its points; those characters are NOT described here and must be traced from the 1533 plate.",
+   "group": "geomantic",
+   "codepoint": null,
+   "char": null,
+   "unicodeName": null,
+   "earliestForm": "The sixteen figures reach Latin from Arabic ʿilm al-raml in the 12th century (Hugh of Santalla; Charmasson 1980). The Latin names given here are those of the medieval Latin tradition. Basis: recalled, not re-checked (web search was exhausted in this run).",
+   "earliestConfidence": "medium",
+   "rows": [
+    1,
+    1,
+    1,
+    1
+   ]
+  },
+  {
+   "order": 37,
+   "name": "Populus (the People)",
+   "value": "geomantic figure; planet: Moon (Agrippa, De occulta philosophia II.48, as recalled)",
+   "translit": "no Unicode code point (none as of Unicode 15.0)",
+   "numeric": null,
+   "form": "Four rows of solid dots, radius 6, read from top to bottom. head row (y=14): TWO dots at x=38 and x=62; neck row (y=38): TWO dots at x=38 and x=62; body row (y=62): TWO dots at x=38 and x=62; feet row (y=86): TWO dots at x=38 and x=62. Pattern 2-2-2-2 (1 = one dot, 2 = two dots). 8 dots in all.",
+   "formConfidence": "high",
+   "note": "The dot pattern is the same in every Latin geomancy (Charmasson 1980; Skinner 1980), so the drawing is safe. Manuscripts write the points as dots, small circles or short strokes; I have not seen how the 1533 Agrippa prints them. The planet follows the Latin tradition that Agrippa repeats in II.48 (recalled). Zodiac attributions are deliberately NOT given: they differ between Agrippa, the geomancy ascribed to Gerard of Cremona and later sources. In II.51 Agrippa derives line-characters from each figure by joining its points; those characters are NOT described here and must be traced from the 1533 plate.",
+   "group": "geomantic",
+   "codepoint": null,
+   "char": null,
+   "unicodeName": null,
+   "earliestForm": "The sixteen figures reach Latin from Arabic ʿilm al-raml in the 12th century (Hugh of Santalla; Charmasson 1980). The Latin names given here are those of the medieval Latin tradition. Basis: recalled, not re-checked (web search was exhausted in this run).",
+   "earliestConfidence": "medium",
+   "rows": [
+    2,
+    2,
+    2,
+    2
+   ]
+  },
+  {
+   "order": 38,
+   "name": "Coniunctio (the Joining)",
+   "value": "geomantic figure; planet: Mercury (Agrippa, De occulta philosophia II.48, as recalled)",
+   "translit": "no Unicode code point (none as of Unicode 15.0)",
+   "numeric": null,
+   "form": "Four rows of solid dots, radius 6, read from top to bottom. head row (y=14): TWO dots at x=38 and x=62; neck row (y=38): ONE dot at x=50; body row (y=62): ONE dot at x=50; feet row (y=86): TWO dots at x=38 and x=62. Pattern 2-1-1-2 (1 = one dot, 2 = two dots). 6 dots in all.",
+   "formConfidence": "high",
+   "note": "The dot pattern is the same in every Latin geomancy (Charmasson 1980; Skinner 1980), so the drawing is safe. Manuscripts write the points as dots, small circles or short strokes; I have not seen how the 1533 Agrippa prints them. The planet follows the Latin tradition that Agrippa repeats in II.48 (recalled). Zodiac attributions are deliberately NOT given: they differ between Agrippa, the geomancy ascribed to Gerard of Cremona and later sources. In II.51 Agrippa derives line-characters from each figure by joining its points; those characters are NOT described here and must be traced from the 1533 plate.",
+   "group": "geomantic",
+   "codepoint": null,
+   "char": null,
+   "unicodeName": null,
+   "earliestForm": "The sixteen figures reach Latin from Arabic ʿilm al-raml in the 12th century (Hugh of Santalla; Charmasson 1980). The Latin names given here are those of the medieval Latin tradition. Basis: recalled, not re-checked (web search was exhausted in this run).",
+   "earliestConfidence": "medium",
+   "rows": [
+    2,
+    1,
+    1,
+    2
+   ]
+  },
+  {
+   "order": 39,
+   "name": "Carcer (the Prison)",
+   "value": "geomantic figure; planet: Saturn (Agrippa, De occulta philosophia II.48, as recalled)",
+   "translit": "no Unicode code point (none as of Unicode 15.0)",
+   "numeric": null,
+   "form": "Four rows of solid dots, radius 6, read from top to bottom. head row (y=14): ONE dot at x=50; neck row (y=38): TWO dots at x=38 and x=62; body row (y=62): TWO dots at x=38 and x=62; feet row (y=86): ONE dot at x=50. Pattern 1-2-2-1 (1 = one dot, 2 = two dots). 6 dots in all.",
+   "formConfidence": "high",
+   "note": "The dot pattern is the same in every Latin geomancy (Charmasson 1980; Skinner 1980), so the drawing is safe. Manuscripts write the points as dots, small circles or short strokes; I have not seen how the 1533 Agrippa prints them. The planet follows the Latin tradition that Agrippa repeats in II.48 (recalled). Zodiac attributions are deliberately NOT given: they differ between Agrippa, the geomancy ascribed to Gerard of Cremona and later sources. In II.51 Agrippa derives line-characters from each figure by joining its points; those characters are NOT described here and must be traced from the 1533 plate.",
+   "group": "geomantic",
+   "codepoint": null,
+   "char": null,
+   "unicodeName": null,
+   "earliestForm": "The sixteen figures reach Latin from Arabic ʿilm al-raml in the 12th century (Hugh of Santalla; Charmasson 1980). The Latin names given here are those of the medieval Latin tradition. Basis: recalled, not re-checked (web search was exhausted in this run).",
+   "earliestConfidence": "medium",
+   "rows": [
+    1,
+    2,
+    2,
+    1
+   ]
+  },
+  {
+   "order": 40,
+   "name": "Fortuna maior (the Greater Fortune)",
+   "value": "geomantic figure; planet: Sun (Agrippa, De occulta philosophia II.48, as recalled)",
+   "translit": "no Unicode code point (none as of Unicode 15.0)",
+   "numeric": null,
+   "form": "Four rows of solid dots, radius 6, read from top to bottom. head row (y=14): TWO dots at x=38 and x=62; neck row (y=38): TWO dots at x=38 and x=62; body row (y=62): ONE dot at x=50; feet row (y=86): ONE dot at x=50. Pattern 2-2-1-1 (1 = one dot, 2 = two dots). 6 dots in all.",
+   "formConfidence": "high",
+   "note": "The dot pattern is the same in every Latin geomancy (Charmasson 1980; Skinner 1980), so the drawing is safe. Manuscripts write the points as dots, small circles or short strokes; I have not seen how the 1533 Agrippa prints them. The planet follows the Latin tradition that Agrippa repeats in II.48 (recalled). Zodiac attributions are deliberately NOT given: they differ between Agrippa, the geomancy ascribed to Gerard of Cremona and later sources. In II.51 Agrippa derives line-characters from each figure by joining its points; those characters are NOT described here and must be traced from the 1533 plate.",
+   "group": "geomantic",
+   "codepoint": null,
+   "char": null,
+   "unicodeName": null,
+   "earliestForm": "The sixteen figures reach Latin from Arabic ʿilm al-raml in the 12th century (Hugh of Santalla; Charmasson 1980). The Latin names given here are those of the medieval Latin tradition. Basis: recalled, not re-checked (web search was exhausted in this run).",
+   "earliestConfidence": "medium",
+   "rows": [
+    2,
+    2,
+    1,
+    1
+   ]
+  },
+  {
+   "order": 41,
+   "name": "Fortuna minor (the Lesser Fortune)",
+   "value": "geomantic figure; planet: Sun (Agrippa, De occulta philosophia II.48, as recalled)",
+   "translit": "no Unicode code point (none as of Unicode 15.0)",
+   "numeric": null,
+   "form": "Four rows of solid dots, radius 6, read from top to bottom. head row (y=14): ONE dot at x=50; neck row (y=38): ONE dot at x=50; body row (y=62): TWO dots at x=38 and x=62; feet row (y=86): TWO dots at x=38 and x=62. Pattern 1-1-2-2 (1 = one dot, 2 = two dots). 6 dots in all.",
+   "formConfidence": "high",
+   "note": "The dot pattern is the same in every Latin geomancy (Charmasson 1980; Skinner 1980), so the drawing is safe. Manuscripts write the points as dots, small circles or short strokes; I have not seen how the 1533 Agrippa prints them. The planet follows the Latin tradition that Agrippa repeats in II.48 (recalled). Zodiac attributions are deliberately NOT given: they differ between Agrippa, the geomancy ascribed to Gerard of Cremona and later sources. In II.51 Agrippa derives line-characters from each figure by joining its points; those characters are NOT described here and must be traced from the 1533 plate.",
+   "group": "geomantic",
+   "codepoint": null,
+   "char": null,
+   "unicodeName": null,
+   "earliestForm": "The sixteen figures reach Latin from Arabic ʿilm al-raml in the 12th century (Hugh of Santalla; Charmasson 1980). The Latin names given here are those of the medieval Latin tradition. Basis: recalled, not re-checked (web search was exhausted in this run).",
+   "earliestConfidence": "medium",
+   "rows": [
+    1,
+    1,
+    2,
+    2
+   ]
+  },
+  {
+   "order": 42,
+   "name": "Acquisitio (Gain)",
+   "value": "geomantic figure; planet: Jupiter (Agrippa, De occulta philosophia II.48, as recalled)",
+   "translit": "no Unicode code point (none as of Unicode 15.0)",
+   "numeric": null,
+   "form": "Four rows of solid dots, radius 6, read from top to bottom. head row (y=14): TWO dots at x=38 and x=62; neck row (y=38): ONE dot at x=50; body row (y=62): TWO dots at x=38 and x=62; feet row (y=86): ONE dot at x=50. Pattern 2-1-2-1 (1 = one dot, 2 = two dots). 6 dots in all.",
+   "formConfidence": "high",
+   "note": "The dot pattern is the same in every Latin geomancy (Charmasson 1980; Skinner 1980), so the drawing is safe. Manuscripts write the points as dots, small circles or short strokes; I have not seen how the 1533 Agrippa prints them. The planet follows the Latin tradition that Agrippa repeats in II.48 (recalled). Zodiac attributions are deliberately NOT given: they differ between Agrippa, the geomancy ascribed to Gerard of Cremona and later sources. In II.51 Agrippa derives line-characters from each figure by joining its points; those characters are NOT described here and must be traced from the 1533 plate.",
+   "group": "geomantic",
+   "codepoint": null,
+   "char": null,
+   "unicodeName": null,
+   "earliestForm": "The sixteen figures reach Latin from Arabic ʿilm al-raml in the 12th century (Hugh of Santalla; Charmasson 1980). The Latin names given here are those of the medieval Latin tradition. Basis: recalled, not re-checked (web search was exhausted in this run).",
+   "earliestConfidence": "medium",
+   "rows": [
+    2,
+    1,
+    2,
+    1
+   ]
+  },
+  {
+   "order": 43,
+   "name": "Amissio (Loss)",
+   "value": "geomantic figure; planet: Venus (Agrippa, De occulta philosophia II.48, as recalled)",
+   "translit": "no Unicode code point (none as of Unicode 15.0)",
+   "numeric": null,
+   "form": "Four rows of solid dots, radius 6, read from top to bottom. head row (y=14): ONE dot at x=50; neck row (y=38): TWO dots at x=38 and x=62; body row (y=62): ONE dot at x=50; feet row (y=86): TWO dots at x=38 and x=62. Pattern 1-2-1-2 (1 = one dot, 2 = two dots). 6 dots in all.",
+   "formConfidence": "high",
+   "note": "The dot pattern is the same in every Latin geomancy (Charmasson 1980; Skinner 1980), so the drawing is safe. Manuscripts write the points as dots, small circles or short strokes; I have not seen how the 1533 Agrippa prints them. The planet follows the Latin tradition that Agrippa repeats in II.48 (recalled). Zodiac attributions are deliberately NOT given: they differ between Agrippa, the geomancy ascribed to Gerard of Cremona and later sources. In II.51 Agrippa derives line-characters from each figure by joining its points; those characters are NOT described here and must be traced from the 1533 plate.",
+   "group": "geomantic",
+   "codepoint": null,
+   "char": null,
+   "unicodeName": null,
+   "earliestForm": "The sixteen figures reach Latin from Arabic ʿilm al-raml in the 12th century (Hugh of Santalla; Charmasson 1980). The Latin names given here are those of the medieval Latin tradition. Basis: recalled, not re-checked (web search was exhausted in this run).",
+   "earliestConfidence": "medium",
+   "rows": [
+    1,
+    2,
+    1,
+    2
+   ]
+  },
+  {
+   "order": 44,
+   "name": "Laetitia (Joy)",
+   "value": "geomantic figure; planet: Jupiter (Agrippa, De occulta philosophia II.48, as recalled)",
+   "translit": "no Unicode code point (none as of Unicode 15.0)",
+   "numeric": null,
+   "form": "Four rows of solid dots, radius 6, read from top to bottom. head row (y=14): ONE dot at x=50; neck row (y=38): TWO dots at x=38 and x=62; body row (y=62): TWO dots at x=38 and x=62; feet row (y=86): TWO dots at x=38 and x=62. Pattern 1-2-2-2 (1 = one dot, 2 = two dots). 7 dots in all.",
+   "formConfidence": "high",
+   "note": "The dot pattern is the same in every Latin geomancy (Charmasson 1980; Skinner 1980), so the drawing is safe. Manuscripts write the points as dots, small circles or short strokes; I have not seen how the 1533 Agrippa prints them. The planet follows the Latin tradition that Agrippa repeats in II.48 (recalled). Zodiac attributions are deliberately NOT given: they differ between Agrippa, the geomancy ascribed to Gerard of Cremona and later sources. In II.51 Agrippa derives line-characters from each figure by joining its points; those characters are NOT described here and must be traced from the 1533 plate.",
+   "group": "geomantic",
+   "codepoint": null,
+   "char": null,
+   "unicodeName": null,
+   "earliestForm": "The sixteen figures reach Latin from Arabic ʿilm al-raml in the 12th century (Hugh of Santalla; Charmasson 1980). The Latin names given here are those of the medieval Latin tradition. Basis: recalled, not re-checked (web search was exhausted in this run).",
+   "earliestConfidence": "medium",
+   "rows": [
+    1,
+    2,
+    2,
+    2
+   ]
+  },
+  {
+   "order": 45,
+   "name": "Tristitia (Sorrow)",
+   "value": "geomantic figure; planet: Saturn (Agrippa, De occulta philosophia II.48, as recalled)",
+   "translit": "no Unicode code point (none as of Unicode 15.0)",
+   "numeric": null,
+   "form": "Four rows of solid dots, radius 6, read from top to bottom. head row (y=14): TWO dots at x=38 and x=62; neck row (y=38): TWO dots at x=38 and x=62; body row (y=62): TWO dots at x=38 and x=62; feet row (y=86): ONE dot at x=50. Pattern 2-2-2-1 (1 = one dot, 2 = two dots). 7 dots in all.",
+   "formConfidence": "high",
+   "note": "The dot pattern is the same in every Latin geomancy (Charmasson 1980; Skinner 1980), so the drawing is safe. Manuscripts write the points as dots, small circles or short strokes; I have not seen how the 1533 Agrippa prints them. The planet follows the Latin tradition that Agrippa repeats in II.48 (recalled). Zodiac attributions are deliberately NOT given: they differ between Agrippa, the geomancy ascribed to Gerard of Cremona and later sources. In II.51 Agrippa derives line-characters from each figure by joining its points; those characters are NOT described here and must be traced from the 1533 plate.",
+   "group": "geomantic",
+   "codepoint": null,
+   "char": null,
+   "unicodeName": null,
+   "earliestForm": "The sixteen figures reach Latin from Arabic ʿilm al-raml in the 12th century (Hugh of Santalla; Charmasson 1980). The Latin names given here are those of the medieval Latin tradition. Basis: recalled, not re-checked (web search was exhausted in this run).",
+   "earliestConfidence": "medium",
+   "rows": [
+    2,
+    2,
+    2,
+    1
+   ]
+  },
+  {
+   "order": 46,
+   "name": "Puella (the Girl)",
+   "value": "geomantic figure; planet: Venus (Agrippa, De occulta philosophia II.48, as recalled)",
+   "translit": "no Unicode code point (none as of Unicode 15.0)",
+   "numeric": null,
+   "form": "Four rows of solid dots, radius 6, read from top to bottom. head row (y=14): ONE dot at x=50; neck row (y=38): TWO dots at x=38 and x=62; body row (y=62): ONE dot at x=50; feet row (y=86): ONE dot at x=50. Pattern 1-2-1-1 (1 = one dot, 2 = two dots). 5 dots in all.",
+   "formConfidence": "high",
+   "note": "The dot pattern is the same in every Latin geomancy (Charmasson 1980; Skinner 1980), so the drawing is safe. Manuscripts write the points as dots, small circles or short strokes; I have not seen how the 1533 Agrippa prints them. The planet follows the Latin tradition that Agrippa repeats in II.48 (recalled). Zodiac attributions are deliberately NOT given: they differ between Agrippa, the geomancy ascribed to Gerard of Cremona and later sources. In II.51 Agrippa derives line-characters from each figure by joining its points; those characters are NOT described here and must be traced from the 1533 plate.",
+   "group": "geomantic",
+   "codepoint": null,
+   "char": null,
+   "unicodeName": null,
+   "earliestForm": "The sixteen figures reach Latin from Arabic ʿilm al-raml in the 12th century (Hugh of Santalla; Charmasson 1980). The Latin names given here are those of the medieval Latin tradition. Basis: recalled, not re-checked (web search was exhausted in this run).",
+   "earliestConfidence": "medium",
+   "rows": [
+    1,
+    2,
+    1,
+    1
+   ]
+  },
+  {
+   "order": 47,
+   "name": "Puer (the Boy)",
+   "value": "geomantic figure; planet: Mars (Agrippa, De occulta philosophia II.48, as recalled)",
+   "translit": "no Unicode code point (none as of Unicode 15.0)",
+   "numeric": null,
+   "form": "Four rows of solid dots, radius 6, read from top to bottom. head row (y=14): ONE dot at x=50; neck row (y=38): ONE dot at x=50; body row (y=62): TWO dots at x=38 and x=62; feet row (y=86): ONE dot at x=50. Pattern 1-1-2-1 (1 = one dot, 2 = two dots). 5 dots in all.",
+   "formConfidence": "high",
+   "note": "The dot pattern is the same in every Latin geomancy (Charmasson 1980; Skinner 1980), so the drawing is safe. Manuscripts write the points as dots, small circles or short strokes; I have not seen how the 1533 Agrippa prints them. The planet follows the Latin tradition that Agrippa repeats in II.48 (recalled). Zodiac attributions are deliberately NOT given: they differ between Agrippa, the geomancy ascribed to Gerard of Cremona and later sources. In II.51 Agrippa derives line-characters from each figure by joining its points; those characters are NOT described here and must be traced from the 1533 plate.",
+   "group": "geomantic",
+   "codepoint": null,
+   "char": null,
+   "unicodeName": null,
+   "earliestForm": "The sixteen figures reach Latin from Arabic ʿilm al-raml in the 12th century (Hugh of Santalla; Charmasson 1980). The Latin names given here are those of the medieval Latin tradition. Basis: recalled, not re-checked (web search was exhausted in this run).",
+   "earliestConfidence": "medium",
+   "rows": [
+    1,
+    1,
+    2,
+    1
+   ]
+  },
+  {
+   "order": 48,
+   "name": "Albus (White)",
+   "value": "geomantic figure; planet: Mercury (Agrippa, De occulta philosophia II.48, as recalled)",
+   "translit": "no Unicode code point (none as of Unicode 15.0)",
+   "numeric": null,
+   "form": "Four rows of solid dots, radius 6, read from top to bottom. head row (y=14): TWO dots at x=38 and x=62; neck row (y=38): TWO dots at x=38 and x=62; body row (y=62): ONE dot at x=50; feet row (y=86): TWO dots at x=38 and x=62. Pattern 2-2-1-2 (1 = one dot, 2 = two dots). 7 dots in all.",
+   "formConfidence": "high",
+   "note": "The dot pattern is the same in every Latin geomancy (Charmasson 1980; Skinner 1980), so the drawing is safe. Manuscripts write the points as dots, small circles or short strokes; I have not seen how the 1533 Agrippa prints them. The planet follows the Latin tradition that Agrippa repeats in II.48 (recalled). Zodiac attributions are deliberately NOT given: they differ between Agrippa, the geomancy ascribed to Gerard of Cremona and later sources. In II.51 Agrippa derives line-characters from each figure by joining its points; those characters are NOT described here and must be traced from the 1533 plate.",
+   "group": "geomantic",
+   "codepoint": null,
+   "char": null,
+   "unicodeName": null,
+   "earliestForm": "The sixteen figures reach Latin from Arabic ʿilm al-raml in the 12th century (Hugh of Santalla; Charmasson 1980). The Latin names given here are those of the medieval Latin tradition. Basis: recalled, not re-checked (web search was exhausted in this run).",
+   "earliestConfidence": "medium",
+   "rows": [
+    2,
+    2,
+    1,
+    2
+   ]
+  },
+  {
+   "order": 49,
+   "name": "Rubeus (Red)",
+   "value": "geomantic figure; planet: Mars (Agrippa, De occulta philosophia II.48, as recalled)",
+   "translit": "no Unicode code point (none as of Unicode 15.0)",
+   "numeric": null,
+   "form": "Four rows of solid dots, radius 6, read from top to bottom. head row (y=14): TWO dots at x=38 and x=62; neck row (y=38): ONE dot at x=50; body row (y=62): TWO dots at x=38 and x=62; feet row (y=86): TWO dots at x=38 and x=62. Pattern 2-1-2-2 (1 = one dot, 2 = two dots). 7 dots in all.",
+   "formConfidence": "high",
+   "note": "The dot pattern is the same in every Latin geomancy (Charmasson 1980; Skinner 1980), so the drawing is safe. Manuscripts write the points as dots, small circles or short strokes; I have not seen how the 1533 Agrippa prints them. The planet follows the Latin tradition that Agrippa repeats in II.48 (recalled). Zodiac attributions are deliberately NOT given: they differ between Agrippa, the geomancy ascribed to Gerard of Cremona and later sources. In II.51 Agrippa derives line-characters from each figure by joining its points; those characters are NOT described here and must be traced from the 1533 plate.",
+   "group": "geomantic",
+   "codepoint": null,
+   "char": null,
+   "unicodeName": null,
+   "earliestForm": "The sixteen figures reach Latin from Arabic ʿilm al-raml in the 12th century (Hugh of Santalla; Charmasson 1980). The Latin names given here are those of the medieval Latin tradition. Basis: recalled, not re-checked (web search was exhausted in this run).",
+   "earliestConfidence": "medium",
+   "rows": [
+    2,
+    1,
+    2,
+    2
+   ]
+  },
+  {
+   "order": 50,
+   "name": "Caput draconis (the Dragon's Head)",
+   "value": "geomantic figure; planet: the Dragon's Head (the Moon's north node) (Agrippa, De occulta philosophia II.48, as recalled)",
+   "translit": "no Unicode code point (none as of Unicode 15.0)",
+   "numeric": null,
+   "form": "Four rows of solid dots, radius 6, read from top to bottom. head row (y=14): TWO dots at x=38 and x=62; neck row (y=38): ONE dot at x=50; body row (y=62): ONE dot at x=50; feet row (y=86): ONE dot at x=50. Pattern 2-1-1-1 (1 = one dot, 2 = two dots). 5 dots in all.",
+   "formConfidence": "high",
+   "note": "The dot pattern is the same in every Latin geomancy (Charmasson 1980; Skinner 1980), so the drawing is safe. Manuscripts write the points as dots, small circles or short strokes; I have not seen how the 1533 Agrippa prints them. The planet follows the Latin tradition that Agrippa repeats in II.48 (recalled). Zodiac attributions are deliberately NOT given: they differ between Agrippa, the geomancy ascribed to Gerard of Cremona and later sources. In II.51 Agrippa derives line-characters from each figure by joining its points; those characters are NOT described here and must be traced from the 1533 plate.",
+   "group": "geomantic",
+   "codepoint": null,
+   "char": null,
+   "unicodeName": null,
+   "earliestForm": "The sixteen figures reach Latin from Arabic ʿilm al-raml in the 12th century (Hugh of Santalla; Charmasson 1980). The Latin names given here are those of the medieval Latin tradition. Basis: recalled, not re-checked (web search was exhausted in this run).",
+   "earliestConfidence": "medium",
+   "rows": [
+    2,
+    1,
+    1,
+    1
+   ]
+  },
+  {
+   "order": 51,
+   "name": "Cauda draconis (the Dragon's Tail)",
+   "value": "geomantic figure; planet: the Dragon's Tail (the Moon's south node) (Agrippa, De occulta philosophia II.48, as recalled)",
+   "translit": "no Unicode code point (none as of Unicode 15.0)",
+   "numeric": null,
+   "form": "Four rows of solid dots, radius 6, read from top to bottom. head row (y=14): ONE dot at x=50; neck row (y=38): ONE dot at x=50; body row (y=62): ONE dot at x=50; feet row (y=86): TWO dots at x=38 and x=62. Pattern 1-1-1-2 (1 = one dot, 2 = two dots). 5 dots in all.",
+   "formConfidence": "high",
+   "note": "The dot pattern is the same in every Latin geomancy (Charmasson 1980; Skinner 1980), so the drawing is safe. Manuscripts write the points as dots, small circles or short strokes; I have not seen how the 1533 Agrippa prints them. The planet follows the Latin tradition that Agrippa repeats in II.48 (recalled). Zodiac attributions are deliberately NOT given: they differ between Agrippa, the geomancy ascribed to Gerard of Cremona and later sources. In II.51 Agrippa derives line-characters from each figure by joining its points; those characters are NOT described here and must be traced from the 1533 plate.",
+   "group": "geomantic",
+   "codepoint": null,
+   "char": null,
+   "unicodeName": null,
+   "earliestForm": "The sixteen figures reach Latin from Arabic ʿilm al-raml in the 12th century (Hugh of Santalla; Charmasson 1980). The Latin names given here are those of the medieval Latin tradition. Basis: recalled, not re-checked (web search was exhausted in this run).",
+   "earliestConfidence": "medium",
+   "rows": [
+    1,
+    1,
+    1,
+    2
+   ]
+  }
+ ],
+ "lettersSource": "Not an alphabet. The 'letters' are the 51 units the page will show. Nos. 1-35 are Unicode-encoded signs: 7 planets, 12 zodiac signs, 4 elements, 3 principles (Mercury shares its sign with the planet), 5 substances (antimony, vitriol, sal ammoniac, aqua fortis, aqua regia) and 4 operations (sublimation, precipitation, distillation, putrefaction). Nos. 36-51 are the 16 geomantic figures, which have no code point as of Unicode 15.0. Each 'form' describes the MODERN STANDARD shape, read off Noto Sans Symbols (@fontsource/noto-sans-symbols 5.3.0, rendered and examined on a 10 x 10 grid in this session) on a 100-unit box, y downward. It is not traced from Agrippa, from a manuscript or from the papyri. 'earliestForm' says what is known of the earliest shape; most of it is recalled and unverified, so no 'earliest form' variant should be drawn. The geomantic figures follow the standard dot patterns of Latin geomancy (Charmasson 1980; Skinner 1980), not Agrippa's 1533 plate, which was not seen. Each letter carries extra fields: group, codepoint, char, unicodeName, earliestForm, earliestConfidence (and rows for the geomantic figures, top to bottom).",
+ "uses": [
+  {
+   "use": "Shorthand in astronomical tables, ephemerides and horoscopes, where a sign fills a narrow column.",
+   "evidence": "Oxyrhynchus papyri (Jones 1999); Greek horoscopes (Neugebauer and Van Hoesen 1959); printed ephemerides and almanacs from the late 15th century. Basis: recalled, not re-checked (web search was exhausted in this run)."
+  },
+  {
+   "use": "Writing metals, substances and operations in alchemical and chemical recipes, laboratory notebooks and pharmacy.",
+   "evidence": "Greek lists in Marcianus gr. 299 (Berthelot 1887); early modern tables (Sommerhoff 1701); Isaac Newton's alchemical manuscripts use the signs freely (Newman 2019). Basis: recalled, not re-checked (web search was exhausted in this run)."
+  },
+  {
+   "use": "Engraving on talismans and in magical rites, as characters bearing the virtue of a planet or sign.",
+   "evidence": "Agrippa's teaching (I.33, II.51), reported as his teaching; see also the planetary seals of II.22 (sibling item planetary-seals). Basis: recalled, not re-checked (web search was exhausted in this run)."
+  },
+  {
+   "use": "Geomancy: four rows of points, made by marking dots at random and counting them, give a figure. Sixteen figures are combined in a chart and read for an answer.",
+   "evidence": "Charmasson 1980; Skinner 1980; the Arabic hall of the Scriptorium (ʿilm al-raml). Basis: recalled, not re-checked (web search was exhausted in this run)."
+  },
+  {
+   "use": "Modern science: Mars and Venus for male and female in biology; planet signs in older astronomy.",
+   "evidence": "Stearn 1962. Basis: recalled, not re-checked (web search was exhausted in this run)."
+  }
+ ],
+ "quotations": [
+  {
+   "text": "Of the Seals, and Characters of Naturall things.",
+   "translation": "J.F., Three Books of Occult Philosophy (London: R.W. for Gregory Moule, 1651), chapter title as recalled; check against EEBO-TCP A26565 before printing",
+   "source": "Agrippa, De occulta philosophia (1533), I.33 (chapter title)"
+  },
+  {
+   "text": "Of Geomanticall Figures, which are the middle betwixt Images and Characters.",
+   "translation": "J.F., Three Books of Occult Philosophy (London, 1651), chapter title as recalled; check against EEBO-TCP A26565 before printing",
+   "source": "Agrippa, De occulta philosophia (1533), II.48 (chapter title)"
+  },
+  {
+   "text": "Of Characters which are made after the rule and imitation of Celestials, and how with the table thereof they are deduced out of Geomanticall figures.",
+   "translation": "J.F., Three Books of Occult Philosophy (London, 1651), chapter title as recalled; the wording is the least certain of the four; check against EEBO-TCP A26565 before printing",
+   "source": "Agrippa, De occulta philosophia (1533), II.51 (chapter title)"
+  },
+  {
+   "text": "Of Characters which are drawn from things themselves by a certain likeness.",
+   "translation": "J.F., Three Books of Occult Philosophy (London, 1651), chapter title as recalled; check against EEBO-TCP A26565 before printing",
+   "source": "Agrippa, De occulta philosophia (1533), II.52 (chapter title)"
+  }
+ ],
+ "links": [
+  {
+   "to": "greek",
+   "relation": "The planet signs began as abbreviations of the planets' Greek names (Κρόνος, Ζεύς, Θοῦρος, Φωσφόρος, Στίλβων), on Jones's reading."
+  },
+  {
+   "to": "pgm",
+   "relation": "Same world: the astronomical papyri that carry the earliest planet signs come from Greek-writing Roman Egypt, where astrology and magic shared scribes and vocabulary."
+  },
+  {
+   "to": "latin",
+   "relation": "Agrippa's Latin chapters on characters (I.33, II.48, II.51, II.52), the Latin geomantic names, and the Paracelsian tria prima."
+  },
+  {
+   "to": "arabic",
+   "relation": "Geomancy comes from Arabic ʿilm al-raml; Arabic alchemy carried the Greek signs and theory into Latin."
+  },
+  {
+   "to": "syriac",
+   "relation": "The Syriac alchemical corpus (Berthelot and Duval, 1893) is a bridge between Greek and Arabic alchemy."
+  },
+  {
+   "to": "charakteres",
+   "relation": "Agrippa's 'characters of things' (I.33) and the characters drawn from geomantic figures (II.51) belong to the long practice of magical characters."
+  },
+  {
+   "to": "planetary-seals",
+   "relation": "The planetary seals of II.22 are a different set of signs from the planet signs shown here; do not confuse them."
+  },
+  {
+   "to": "celestial",
+   "relation": "Book III's angelic alphabets (III.29-30) are Agrippa's other kind of character; this page covers the signs of things, not of letters."
+  }
+ ],
+ "cautions": [
+  "Web search was exhausted before this item ran. Everything marked \"recalled\" rests on prior knowledge and must be checked before it is published. Unicode names, code points and version dates were checked locally and are safe.",
+  "Every \"form\" describes the modern standard shape (Noto Sans Symbols). Do not present any of these drawings as Agrippa's, a manuscript's or a papyrus's form. Label the plate \"modern standard forms\".",
+  "Do not draw an \"earliest form\" variant (papyrus Saturn, ray-Sun, etc.) from this file: none was seen.",
+  "Agrippa's II.51 characters derived from the geomantic figures, and any small plate of characters at the end of I.33, are NOT described here. If the page shows them, trace them from the 1533 scan (archive.org DeOccultaPhilosophiaLoc1533).",
+  "Geomantic zodiac attributions are deliberately left out. They differ between Agrippa, the Gerard of Cremona geomancy and the Golden Dawn tables; do not present the Golden Dawn table as Agrippa's.",
+  "Unicode calls Venus FEMALE SIGN and Mars MALE SIGN, and spells Scorpio SCORPIUS. Use the planet and sign names on the page.",
+  "U+2648-U+2653 (zodiac) render as coloured emoji on most phones. Draw them as SVG, or add U+FE0E after each.",
+  "U+1F71A GOLD and U+1F71B SILVER have unusual reference glyphs (a flourished sun; a ring with three small rings in Noto). Use the Sun and Moon signs for gold and silver, as the alchemists did.",
+  "U+1F70F BLACK SULFUR is the sign popularly called the \"Leviathan cross\", used today by a living organisation as an emblem. It is not shown here; if mentioned, do not reproduce it as an emblem.",
+  "Uranus, Neptune and Pluto (U+2645-U+2647) are modern signs and outside this page.",
+  "Agrippa chapter numbers and titles are recalled from the 1651 English. Check I.33, II.48, II.51 and II.52 against EEBO-TCP or the 1533 scan."
+ ],
+ "sources": [
+  {
+   "citation": "Alexander Jones, Astronomical Papyri from Oxyrhynchus (P. Oxy. 4133-4300a), 2 vols, Memoirs of the American Philosophical Society 233 (Philadelphia, 1999). Recalled; not consulted in this run.",
+   "url": ""
+  },
+  {
+   "citation": "O. Neugebauer and H. B. Van Hoesen, Greek Horoscopes, Memoirs of the American Philosophical Society 48 (Philadelphia, 1959). Recalled; not consulted.",
+   "url": ""
+  },
+  {
+   "citation": "A. S. D. Maunder, 'The origin of the symbols of the planets', The Observatory 57 (1934), 238-247. Volume and pages recalled.",
+   "url": ""
+  },
+  {
+   "citation": "W. T. Stearn, 'The origin of the male and female symbols of biology', Taxon 11 (1962), 109-113. Recalled.",
+   "url": ""
+  },
+  {
+   "citation": "Origen, Contra Celsum, trans. Henry Chadwick (Cambridge: Cambridge University Press, 1953), VI.22. Recalled.",
+   "url": ""
+  },
+  {
+   "citation": "M. Berthelot and Ch.-Ém. Ruelle, Collection des anciens alchimistes grecs, 3 vols (Paris, 1887-1888); Introduction on the manuscripts and the lists of signs. Recalled; pages not verified.",
+   "url": ""
+  },
+  {
+   "citation": "M. Berthelot and R. Duval, La chimie au moyen âge, tome II: L'alchimie syriaque (Paris, 1893). Cited as in the Scriptorium's Syriac hall.",
+   "url": ""
+  },
+  {
+   "citation": "Lawrence M. Principe, The Secrets of Alchemy (Chicago: University of Chicago Press, 2013). Recalled.",
+   "url": ""
+  },
+  {
+   "citation": "William R. Newman, Newton the Alchemist: Science, Enigma, and the Quest for Nature's 'Secret Fire' (Princeton: Princeton University Press, 2019). Recalled.",
+   "url": ""
+  },
+  {
+   "citation": "Walter Pagel, Paracelsus: An Introduction to Philosophical Medicine in the Era of the Renaissance (Basel: Karger, 1958; 2nd ed. 1982). Recalled.",
+   "url": ""
+  },
+  {
+   "citation": "Thérèse Charmasson, Recherches sur une technique divinatoire: la géomancie dans l'Occident médiéval (Geneva: Droz, 1980). Recalled.",
+   "url": ""
+  },
+  {
+   "citation": "Emilie Savage-Smith and Marion B. Smith, Islamic Geomancy and a Thirteenth-Century Divinatory Device (Malibu: Undena, 1980). Recalled.",
+   "url": ""
+  },
+  {
+   "citation": "Stephen Skinner, Terrestrial Astrology: Divination by Geomancy (London: Routledge & Kegan Paul, 1980). Recalled.",
+   "url": ""
+  },
+  {
+   "citation": "Matthew Melvin-Koushki, 'In Defense of Geomancy: Šaraf al-Dīn Yazdī Rebuts Ibn Ḫaldūn's Critique of the Occult Sciences', Arabica 64 (2017). Cited as in the Scriptorium's Arabic hall.",
+   "url": ""
+  },
+  {
+   "citation": "Heinrich Cornelius Agrippa, De occulta philosophia libri tres, [Cologne: J. Soter?], July 1533, I.33, II.48, II.51, II.52 (Library of Congress copy, digitised; URL from the sibling research; the chapters were not opened in this run).",
+   "url": "https://archive.org/details/DeOccultaPhilosophiaLoc1533"
+  },
+  {
+   "citation": "Agrippa 1533, C. G. Jung collection copy, digitised (URL from the sibling research).",
+   "url": "https://archive.org/details/DeOccultaPhilosophiaJungCollection1533"
+  },
+  {
+   "citation": "Agrippa, De occulta philosophia libri tres, ed. Vittoria Perrone Compagni (Leiden: Brill, 1992), Studies in the History of Christian Thought 48. Not consulted.",
+   "url": "https://books.google.com/books/about/De_Occulta_Philosophia.html?id=dCARYHTxmeIC"
+  },
+  {
+   "citation": "Agrippa, Three Books of Occult Philosophy, trans. J.F. (London: R.W. for Gregory Moule, 1651), EEBO-TCP A26565, table of contents (URL from the sibling research; the chapters were not opened in this run).",
+   "url": "https://quod.lib.umich.edu/e/eebo/A26565.0001.001?view=toc"
+  },
+  {
+   "citation": "Joseph H. Peterson (ed.), Agrippa, Of Occult Philosophy, Esoteric Archives (the 1651 text). The Book I and Book II page URLs are not known here, so none is given.",
+   "url": ""
+  },
+  {
+   "citation": "Robert Turner (trans.), Henry Cornelius Agrippa his Fourth Book of Occult Philosophy (London, 1655), with 'Of Geomancy' and 'Astronomical Geomancy'. Recalled.",
+   "url": ""
+  },
+  {
+   "citation": "Johann Christoph Sommerhoff, Lexicon pharmaceutico-chymicum Latino-Germanicum et Germanico-Latinum (Nuremberg, 1701). Recalled; not consulted.",
+   "url": ""
+  },
+  {
+   "citation": "Gustav Wilhelm Gessmann, Die Geheimsymbole der Chemie und Medicin des Mittelalters (Graz, 1899). Recalled; not consulted.",
+   "url": ""
+  },
+  {
+   "citation": "Fritz Lüdy-Tenger, Alchemistische und chemische Zeichen (Berlin, 1928). Recalled; not consulted.",
+   "url": ""
+  },
+  {
+   "citation": "The Unicode Standard, code chart for Alchemical Symbols, U+1F700-U+1F77F (not opened in this run; names checked against the local UCD).",
+   "url": "https://www.unicode.org/charts/PDF/U1F700.pdf"
+  },
+  {
+   "citation": "The Unicode Standard, code chart for Miscellaneous Symbols, U+2600-U+26FF (not opened in this run; names checked against the local UCD).",
+   "url": "https://www.unicode.org/charts/PDF/U2600.pdf"
+  },
+  {
+   "citation": "Unicode Character Database 14.0 (Python 3.11 unicodedata) and 15.0 (Perl 5.38 Unicode::UCD, incl. the Age property), queried in this session for every name, code point and version date given here.",
+   "url": ""
+  },
+  {
+   "citation": "Noto Sans Symbols, @fontsource/noto-sans-symbols 5.3.0 (SIL OFL), \"symbols\" subset, rendered with Pillow in this session (scratchpad tools_signs/planets.png, alch1.png, alch2.png, z1.png, z2.png).",
+   "url": ""
+  },
+  {
+   "citation": "Sibling research in this workflow: planetary-seals.json and charakteres.json (for the 1533 edition, the 1651 translation and their URLs).",
+   "url": ""
+  }
+ ],
+ "confidence": "SOLID (checked in this session): every code point, Unicode name and version date (1.1 in 1993 for the planet and zodiac signs; 6.0 in 2010 for U+1F700-1F773; 15.0 in 2022 for the later additions); the absence of geomantic figures from Unicode 15.0; the modern shapes of all 35 encoded signs, read off Noto renders; the dot patterns of the 16 geomantic figures (identical in every Latin geomancy). FAIRLY SOLID (recalled, widely reported): planet signs as abbreviations of the Greek names (Jones 1999); the late-antique metal-planet pairings (Celsus in Origen; Olympiodorus); the Byzantine sign lists (Marcianus gr. 299; Berthelot); the Paracelsian triad; the 12th-century arrival of geomancy in Latin; Agrippa's chapters I.33, II.48, II.51 and II.52 and their subjects; the planetary pairs of the geomantic figures; Linnaeus 1751 (Stearn). SHAKY: the letter-by-letter derivations of the planet signs, all 'earliest form' descriptions, every zodiac-glyph derivation, the first dates of the element triangles and of the alchemical operation signs, the exact wording of the four quoted chapter titles (II.51 least certain), page and folio numbers, Parisinus gr. 2327's copyist, the authorship of the geomancy treatises. NOT GIVEN: Agrippa's II.51 characters and any I.33 plate; geomantic zodiac attributions; quotations from chapter bodies."
+}

@@ -1,0 +1,906 @@
+{
+ "key": "aiq-bekar",
+ "title": "The Nine Chambers (Aiq Bekar)",
+ "otherNames": [
+  "the nine Chambers (J.F.'s 1651 English Agrippa, III.xxx, p. 442; verified in EEBO-TCP A26565)",
+  "Aiq Bekar / Aiq Beker / AIQ BKR, from the Hebrew mnemonic איק בכר (a later name: it does not occur anywhere in J.F.'s 1651 English, verified by a whole-text search; the 1533 Latin was not seen)",
+  "Ayak Bakar, Ayaq Bakhar (other spellings of the mnemonic; not checked against a named source)",
+  "Kabbalah (Qabalah) of the Nine Chambers (Golden Dawn-derived and popular usage, as the researcher recalls; not checked. It is not Agrippa's phrase in J.F. 1651, verified)",
+  "Cabalistic cipher of the nine chambers (descriptive)"
+ ],
+ "family": "A cipher-writing system, not an alphabet of new letters. The 27 Hebrew letters are grouped by numerical value into nine cells of a grid, and each letter is written as the lines that bound its cell plus one to three points. It is printed in the same chapter (III.30) as Agrippa's Celestial, Malachim and Transitus fluvii ('passing of the River') alphabets, after them (verified for the 1651 English, pp. 439-443). The Freemasons' ('pigpen') cipher, reported from the 18th century, uses the same mechanism; a descent from Agrippa is often asserted, but no document shows it.",
+ "summary": "Agrippa prints this way of writing Hebrew letters as geometric signs in De occulta philosophia III.30 (complete edition, 1533; heading and wording verified in J.F.'s 1651 English) and gives it as 'another fashion amongst the Cabalists'. The 27 Hebrew letters (22 plus five finals) are sorted by value into nine 'Chambers' of a grid of four lines crossing at right angles: 1-10-100 in the first, 2-20-200 in the second, and so on to 9-90-900. A letter is written as the part of the grid that bounds its chamber, with one, two or three points for the first, second or third letter of the chamber (the unit, the ten or the hundred), and the figures of a name such as Michael can be contracted into a single character, in which, J.F. says, the points are usually left out. The Freemasons' ('pigpen') cipher works the same way, but no document traces the descent.",
+ "firstAttestation": {
+  "work": "De occulta philosophia libri tres",
+  "author": "Heinrich Cornelius Agrippa von Nettesheim",
+  "date": "1533. The 1651 English closes with 'Anno M. D. XXXIII. In the Moneth of Iuly.' (J.F. 1651, p. 583; EEBO-TCP A26565, verified), which renders the colophon. The Latin 'Anno M.D.XXXIII. Mense Iulio' and the report of four or five issues dated 1533 come from the Utrecht and Eton catalogue records as cited by the sibling Malachim research (not re-seen here).",
+  "place": "[Cologne]. The imprint is unsigned. The printer is usually given as Johannes Soter; the Eton College catalogue is reported (sibling Celestial and Malachim research, not re-seen) to query it ('[J. Soter?]') and to note Adams's suggestion of Basel. Give both as attributions.",
+  "locator": "Book III, chapter 30. VERIFIED for the 1651 English (EEBO-TCP A26565, Wing A789): 'CHAP. XXX. Another manner of making Characters, delivered by Cabalists.' (p. 439). The chapter prints the Celestial (p. 439), Malachim (p. 440) and 'passing of the River' (p. 441) tables; the nine chambers follow on pp. 441-443 (the grid and the nine figures on p. 442, the Michael figures on p. 443; EEBO page images tcp:52070:236-237), then the 'gathering together of letters' method (pp. 443-444). The 1533 chapter number is taken from the 1651 translation, which follows the Latin order; the 1533 page or signature, the Latin heading, and whether the three alphabets share one woodcut there were not seen.",
+  "notes": "This is the earliest printing of the chamber-and-points script that can be named here. It is not evidence for the first record of the grouping itself: Agrippa gives the method to 'the Cabalists', and the mnemonic איק בכר is Hebrew, but no Jewish witness earlier than 1533 was found or checked. Agrippa sent a draft of the work to Trithemius, whose reply is dated 'From our Monastery of Peapolis, the 8. day of April, An. M. D. X.' (1651 front matter, verified), so the draft existed by 8 April 1510. It is reported to survive as Würzburg, Universitätsbibliothek, M. ch. q. 50 (sibling research; not seen). In 'To the Reader' Agrippa says that for the print 'we added some Chapters, and we inserted many things' (1651, verified), so the passage cannot be dated to the draft without the manuscript; Perrone Compagni's critical edition (Leiden: Brill, 1992) would settle it. Dates of 1531 in popular accounts probably confuse it with the 1531 printing of Book I alone (sibling research); Book I's dedication to Hermann von Wied, reprinted in the complete work, is dated 'From Mechlinia, Anno M. D. XXXI. In the moneth of January' (1651 front matter, verified)."
+ },
+ "transmission": [
+  {
+   "date": "before 1533 (undated here)",
+   "work": "Jewish letter-number tradition (mnemonic איק בכר)",
+   "author": "anonymous",
+   "what": "Agrippa calls the method 'another fashion amongst the Cabalists' (J.F. 1651, p. 441, verified). The researcher adds that in Jewish usage the nine groups serve gematria (letters of one group share a unit value) and letter-substitution; no source is named for this and it was not checked. No pre-1533 Jewish source was named or dated. Leave the date open."
+  },
+  {
+   "date": "by 8 April 1510 (date of Trithemius's reply)",
+   "work": "De occulta philosophia (manuscript draft dedicated to Trithemius)",
+   "author": "Agrippa",
+   "what": "Not checked for this chapter. Trithemius's reply is dated 8 April 1510 (1651 front matter, verified). The draft is reported as Würzburg UB M. ch. q. 50 (sibling research; not seen). Agrippa says he 'added some Chapters' for the print ('To the Reader', 1651, verified), so the passage cannot be dated 1510 without the manuscript."
+  },
+  {
+   "date": "1533 (July: the colophon as rendered at the end of the 1651 English, p. 583, verified)",
+   "work": "De occulta philosophia libri tres, III.30 ([Cologne: J. Soter?])",
+   "author": "Agrippa",
+   "what": "First printing known to this research. As the 1651 English renders it (verified): the 27 letters in three classes of nine and their meanings; the classes distributed into 'nine Chambers'; a grid of four parallel lines crossing at right angles; the nine 'particular figures' cut out of it; the points rule; then the name Michael 'extended with five figures', contracted to three, and then into one with the points omitted. The Latin wording and the woodcuts were not seen."
+  },
+  {
+   "date": "1651",
+   "work": "Three Books of Occult Philosophy (London: Printed by R.W. for Gregory Moule, 1651; Wing A789), Book III ch. XXX, pp. 439-443",
+   "author": "Agrippa, trans. 'J.F.' (the EEBO-TCP record: 'The translator is probably John French')",
+   "what": "The English translation (verified in EEBO-TCP A26565). It calls the cells 'Chambers' and the dots 'points' ('poynt' on p. 442, 'the points Notariacon' on p. 443). The TCP marks five figure blocks in the passage (the grid, the nine figures, and the Michael character in five, three and one figures, pp. 442-443); the figures themselves were not keyed and were not seen. Whether the 1651 cuts copy the 1533 forms faithfully is unchecked, so compare them with 1533 before drawing."
+  },
+  {
+   "date": "1745",
+   "work": "L'Ordre des Francs-Maçons trahi, et le secret des Mopses révélé (Amsterdam)",
+   "author": "attributed to Gabriel-Louis Pérau",
+   "what": "LOW CONFIDENCE. As the researcher recalls, this French exposure prints an 'alphabet des Francs-Maçons': Latin letters written as the lines of grid cells, distinguished by dots. If so, it would be one of the earliest dated Masonic witnesses. Not checked by the research or by the fact-check."
+  },
+  {
+   "date": "1794",
+   "work": "Gravestone of James Leeson, Trinity Churchyard, New York",
+   "author": "",
+   "what": "MEDIUM-LOW CONFIDENCE. As the researcher recalls, the stone carries a Masonic emblem and a short inscription in the Masonic grid cipher, and it is often cited as an American example. Not checked by the research or by the fact-check. Describe it; do not reproduce the emblem."
+  },
+  {
+   "date": "1888 onwards (published 1937-1940)",
+   "work": "Hermetic Order of the Golden Dawn papers; Israel Regardie, The Golden Dawn (Chicago: Aries Press, 1937-1940)",
+   "author": "Golden Dawn; Regardie (ed.)",
+   "what": "As the researcher recalls, 'Aiq Beker' or 'the Qabalah of the Nine Chambers' is taught there chiefly as a way to reduce letter values to units, so that a name can be traced as a sigil on a planetary magic square. Whether the papers also write letters as chamber-figures was not checked. The Golden Dawn has living successor orders: describe this use, do not reproduce their papers. Not checked."
+  },
+  {
+   "date": "1967",
+   "work": "The Codebreakers (New York: Macmillan)",
+   "author": "David Kahn",
+   "what": "The standard history of cryptography. As I recall, it treats the 'pigpen' as the Freemasons' cipher and notes its later popular and wartime use. Not consulted in this session; page not given."
+  },
+  {
+   "date": "1993",
+   "work": "Three Books of Occult Philosophy, ed. and annotated Donald Tyson (St Paul: Llewellyn)",
+   "author": "Donald Tyson (ed.), J.F. translation (Tyson's title page names the translator as James Freake: fact-checker's recollection, not re-verified)",
+   "what": "A modern annotated edition. As I recall, its notes and appendix on the magic squares explain the nine chambers ('Aiq Beker') and use the reduction to account for Agrippa's seals of the planetary intelligences. In copyright: paraphrase it, do not quote. Not checked."
+  }
+ ],
+ "claims": [
+  {
+   "claim": "In III.30 Agrippa divides the 27 Hebrew letters (22 plus five finals) into three classes of nine: units, tens and hundreds, the five finals counting 500-900. He then sets them in nine chambers of a grid, chamber n holding n, 10n and 100n.",
+   "standing": "documented",
+   "evidence": "Verified in J.F. 1651, III.xxx (EEBO-TCP A26565). p. 441: 'The twenty seven Characters of the Hebrews may be divided into three Classes, whereof every one [two illegible words] l[..]ters'; the TCP keyers could not read the words after 'every one', so the researcher's recalled 'shall contain nine letters' cannot be confirmed and must not be quoted. The third class 'hath the other four letters, with the five final, by order'. p. 442: 'They do now and then distribute these three Classes into nine Chambers, whereof the first is of unites, viz. intellectual, celestial and elemental: The second is of Twos. The third of Threes, and so of the rest'. Agrippa's numeral table (II.xix, 1651 p. 232, verified) gives the finals ך 500, ם 600, ן 700, ף 800, ץ 900. The 1533 Latin was not seen.",
+   "sources": [
+    "Agrippa, De occulta philosophia (1533), III.30 (not seen)",
+    "J.F. trans. 1651, III.xxx pp. 441-442 and II.xix p. 232 (EEBO-TCP A26565, verified)"
+   ]
+  },
+  {
+   "claim": "Each letter is written as the figure of its chamber: the lines of the grid that bound that cell. One point marks the first letter of the chamber, two the second and three the third.",
+   "standing": "documented",
+   "evidence": "Agrippa's own rule, verified in J.F. 1651, III.xxx, pp. 442-443: the Chambers 'are framed by the interfection [so the TCP keying; probably a misread long-s 'interſection'] of four paralell lines, intersecting themselves into right angles'; 'Out of which being dissected into parts, proceed nine particular figures'; these characterize their letter by points, 'which if itbe [sic, TCP] of one poynt shews the first letter of that Chamber; if of two, the second; if of three, the third letter'. The researcher's recalled wording ('if it be of the first note in its Chamber, it requires one point ...') does not occur and has been withdrawn. In each chamber the first, second and third letters are the unit, the ten and the hundred.",
+   "sources": [
+    "Agrippa 1533, III.30 (not seen)",
+    "J.F. 1651, III.xxx pp. 442-443 (EEBO-TCP A26565, verified)"
+   ]
+  },
+  {
+   "claim": "The three classes stand for three worlds. The units are intellectual things (the nine orders of angels), the tens celestial things (the nine orbs), and the hundreds inferior things (the four elements and five kinds of perfect compounds).",
+   "standing": "documented",
+   "evidence": "This is Agrippa's assertion, reported as his doctrine, not as a fact about the letters. Verified in J.F. 1651, III.xxx, p. 441: the first class are 'the seals or marks of simple numbers, and of intellectuall things, distributed into nine orders of Angels'; the second hath 'the marks of tens, and of Celestial things, in the nine Orbs of the heavens'; the third letters are 'marks of hundreds, and inferior things, viz. four simple Elements, and of five kinds of perfect compounds'.",
+   "sources": [
+    "J.F. 1651, III.xxx p. 441 (EEBO-TCP A26565, verified)"
+   ]
+  },
+  {
+   "claim": "The method comes from Jewish Kabbalah ('the Cabalists').",
+   "standing": "attributed",
+   "evidence": "Agrippa ascribes it to the Cabalists. The heading reads 'Another manner of making Characters, delivered by Cabalists' (p. 439), and the passage opens 'There is moreover another fashion amongst the Cabalists, formerly had in great esteem, but now it is so common, that it is placed amongst prophane things' (p. 441; J.F. 1651, verified; the researcher's 'There is also ... once had in great esteem' was misworded). The grouping by unit value and the mnemonic איק בכר are Jewish letter-number lore (researcher's statement; no source named). No pre-1533 Jewish witness of the chamber-figures-with-points script was found or checked.",
+   "sources": [
+    "Agrippa 1533, III.30 (not seen)",
+    "J.F. 1651, III.xxx pp. 439, 441 (EEBO-TCP A26565, verified)"
+   ]
+  },
+  {
+   "claim": "The names 'Aiq Bekar' and 'Kabbalah of the Nine Chambers' are Agrippa's.",
+   "standing": "disputed",
+   "evidence": "Verified for the 1651 English: J.F. speaks of 'nine Chambers' (p. 442), but a whole-text search of EEBO-TCP A26565 finds no 'Aiq', 'Beker' or 'Bekar', and no phrase such as 'Kabbalah (Cabala) of the Nine Chambers'. On that evidence the names are not Agrippa's in J.F.'s text. The 1533 Latin was not seen. The researcher attributes 'Qabalah of the Nine Chambers' to Golden Dawn-derived and popular literature; not checked.",
+   "sources": [
+    "J.F. 1651, III.xxx p. 442 and whole text (EEBO-TCP A26565, verified)",
+    "Regardie, The Golden Dawn (1937-1940) (not checked)",
+    "Wikipedia, 'Pigpen cipher' (not checked)"
+   ]
+  },
+  {
+   "claim": "Agrippa published the nine chambers in 1531.",
+   "standing": "disputed",
+   "evidence": "Popular accounts give 1531; the researcher recalls Wikipedia's 'Pigpen cipher' among them (not checked). Book III, which holds the chapter, was first printed in the complete edition of 1533 (colophon July 1533, rendered at the end of the 1651 English, p. 583, verified). The 1531 printings held Book I only (sibling research; their printers are recalled there, not verified). A possible source of the confusion, suggested by the fact-checker and not documented: Book I's dedication, reprinted in the complete work, is dated January 1531 (1651 front matter, verified). Use 1533.",
+   "sources": [
+    "J.F. 1651, colophon p. 583 and front matter (EEBO-TCP A26565, verified)",
+    "sibling research files agrippa.json and celestial.json (1531 vs 1533)",
+    "Wikipedia, 'Pigpen cipher' (not checked)"
+   ]
+  },
+  {
+   "claim": "The Freemasons' or 'pigpen' cipher descends from Agrippa's nine chambers.",
+   "standing": "disputed",
+   "evidence": "The two systems work the same way: a grid of two vertical and two horizontal lines is cut into nine cells, a letter is the set of lines bounding its cell, and dots separate letters that share a cell. Popular accounts state the descent. But no document is known that names Agrippa as the source of the Masonic cipher, and the steps between 1533 and the 1700s are unknown. The common modern pigpen key also uses X-shaped grids (as the researcher recalls Wikipedia; not checked), while Agrippa's text describes only the four-line grid (1651, p. 442, verified). Present this as a likely debt, not a proven one.",
+   "sources": [
+    "J.F. 1651, III.xxx p. 442 (verified)",
+    "Wikipedia, 'Pigpen cipher' (not checked)",
+    "Kahn, The Codebreakers (1967) (not consulted)"
+   ]
+  },
+  {
+   "claim": "Freemasons used a grid-and-dot cipher for the Latin alphabet in the 18th century.",
+   "standing": "attributed",
+   "evidence": "Reported, not seen: a printed 'alphabet des Francs-Maçons' in the 1745 exposure attributed to Pérau, and the 1794 gravestone of James Leeson in Trinity Churchyard, New York (both as the researcher recalls them). Neither witness was seen by the research or by the fact-check, so the standing is lowered from 'documented' to 'attributed' until one is verified.",
+   "sources": [
+    "[Pérau], L'Ordre des Francs-Maçons trahi (Amsterdam, 1745)",
+    "Leeson gravestone, Trinity Churchyard (1794)",
+    "Wikipedia, 'Pigpen cipher'"
+   ]
+  },
+  {
+   "claim": "The Rosicrucians used the cipher, hence 'Rosicrucian cipher'.",
+   "standing": "attributed",
+   "evidence": "The name is current in popular cryptography for a one-grid variant with several letters per cell, told apart by dots (researcher's recollection; not checked). No early Rosicrucian document using it is known to the researcher or the fact-checker, and the researcher knows of none in the manifestos of 1614-1616 (not checked). Report the name, not the use.",
+   "sources": [
+    "Wikipedia, 'Pigpen cipher'"
+   ]
+  },
+  {
+   "claim": "Napoleon used it (the 'Napoleon cipher').",
+   "standing": "legend",
+   "evidence": "'Napoleon cipher' is a popular alternative name for the pigpen (as the researcher recalls Wikipedia; not checked). No evidence is known that Napoleon used it.",
+   "sources": [
+    "Wikipedia, 'Pigpen cipher'"
+   ]
+  },
+  {
+   "claim": "Prisoners and soldiers used the pigpen in the American Civil War.",
+   "standing": "attributed",
+   "evidence": "Reported in popular cryptographic histories; the researcher associates it with Kahn (1967), but the passage and page were not checked by the research or the fact-check.",
+   "sources": [
+    "Kahn, The Codebreakers (1967)"
+   ]
+  },
+  {
+   "claim": "The nine chambers were used to reduce letter values so that names could be traced as sigils on Agrippa's planetary squares (II.22).",
+   "standing": "attributed",
+   "evidence": "This is the explanation in Golden Dawn teaching and in modern commentary (Tyson 1993, as recalled; neither checked). Agrippa does not mention the planetary tables in III.30 (1651, verified). In II.xxii ('Of the tables of the Planets ...', 1651 p. 239, verified) he says the seals and characters are drawn from the tables but leaves the method to the reader: 'Now how the seals, and Characters of the Stars, and spirits are drawn from these tables, the wise searcher, and he which shall understand the verifying of these tables, shall easily find out' (J.F. 1651, p. 242, verified). The reduction itself is arithmetic: every letter in a chamber reduces to the same unit.",
+   "sources": [
+    "J.F. 1651, II.xxii pp. 239, 242 and III.xxx (EEBO-TCP A26565, verified)",
+    "Regardie, The Golden Dawn (1937-1940) (not checked)",
+    "Tyson (ed.), Three Books of Occult Philosophy (1993) (not checked)"
+   ]
+  }
+ ],
+ "letters": [
+  {
+   "order": 1,
+   "name": "Aleph",
+   "value": "א",
+   "translit": "ʾ (glottal stop / vowel carrier)",
+   "numeric": 1,
+   "form": "Chamber 1 of 9, first (units) letter of the chamber, so one point. FIGURE (derived from Agrippa's verbal rule, NOT traced from the woodcut): a right angle opening up and to the right, like a capital L: a vertical stroke down the left side, turning at its foot into a horizontal stroke running right along the bottom. All strokes are straight and of equal weight, meeting at right angles. The figure is square, with sides of equal length, and there are no rings, curves or crossings. POINTS: one point in the middle of the space the figure encloses. The arrangement of the points is the site's own, because the woodcut was not seen. ORIENTATION UNVERIFIED: this assumes the grid runs in Hebrew order from the top right. If the 1533 grid runs from the top left, this letter takes the figure given here for chamber 3, which is this figure's mirror image.",
+   "formConfidence": "low",
+   "note": "The class of units ('intellectual things', the nine orders of angels). Chamber mnemonic איק (AIQ). Sides drawn: left, bottom. Suggested diagram path in a 0-100 box (the site's own diagram of the rule): d='M20 20 V80 H80', dots=[[50, 50]]. Numeric value 1. Fact-check: the figure and path are the correct cell boundaries under the stated layout and agree with the modern Aiq Bekar charts the fact-checker knows; not traced from a woodcut."
+  },
+  {
+   "order": 2,
+   "name": "Beth",
+   "value": "ב",
+   "translit": "b / v",
+   "numeric": 2,
+   "form": "Chamber 2 of 9, first (units) letter of the chamber, so one point. FIGURE (derived from Agrippa's verbal rule, NOT traced from the woodcut): a square cup open at the top: a vertical stroke down the left, a horizontal stroke along the bottom, and a vertical stroke up the right. All strokes are straight and of equal weight, meeting at right angles. The figure is square, with sides of equal length, and there are no rings, curves or crossings. POINTS: one point in the middle of the space the figure encloses. The arrangement of the points is the site's own, because the woodcut was not seen. This figure is the same whether the grid runs from the right or from the left, provided the chambers run in rows; if they run in columns, it becomes a bracket ([ or ]).",
+   "formConfidence": "medium",
+   "note": "The class of units ('intellectual things', the nine orders of angels). Chamber mnemonic בכר (BKR). Sides drawn: left, bottom, right. Suggested diagram path in a 0-100 box (the site's own diagram of the rule): d='M20 20 V80 H80 V20', dots=[[50, 50]]. Numeric value 2. Fact-check: the figure and path are the correct cell boundaries under the stated layout and agree with the modern Aiq Bekar charts the fact-checker knows; not traced from a woodcut."
+  },
+  {
+   "order": 3,
+   "name": "Gimel",
+   "value": "ג",
+   "translit": "g",
+   "numeric": 3,
+   "form": "Chamber 3 of 9, first (units) letter of the chamber, so one point. FIGURE (derived from Agrippa's verbal rule, NOT traced from the woodcut): a right angle opening up and to the left (a reversed L): a horizontal stroke along the bottom meeting a vertical stroke that rises up the right side. All strokes are straight and of equal weight, meeting at right angles. The figure is square, with sides of equal length, and there are no rings, curves or crossings. POINTS: one point in the middle of the space the figure encloses. The arrangement of the points is the site's own, because the woodcut was not seen. ORIENTATION UNVERIFIED: this assumes the grid runs in Hebrew order from the top right. If the 1533 grid runs from the top left, this letter takes the figure given here for chamber 1, which is this figure's mirror image.",
+   "formConfidence": "low",
+   "note": "The class of units ('intellectual things', the nine orders of angels). Chamber mnemonic גלש (GLSh). Sides drawn: bottom, right. Suggested diagram path in a 0-100 box (the site's own diagram of the rule): d='M20 80 H80 V20', dots=[[50, 50]]. Numeric value 3. Fact-check: the figure and path are the correct cell boundaries under the stated layout and agree with the modern Aiq Bekar charts the fact-checker knows; not traced from a woodcut."
+  },
+  {
+   "order": 4,
+   "name": "Daleth",
+   "value": "ד",
+   "translit": "d",
+   "numeric": 4,
+   "form": "Chamber 4 of 9, first (units) letter of the chamber, so one point. FIGURE (derived from Agrippa's verbal rule, NOT traced from the woodcut): a square bracket open on the right, like [ : a horizontal stroke along the top, a vertical stroke down the left, and a horizontal stroke along the bottom. All strokes are straight and of equal weight, meeting at right angles. The figure is square, with sides of equal length, and there are no rings, curves or crossings. POINTS: one point in the middle of the space the figure encloses. The arrangement of the points is the site's own, because the woodcut was not seen. ORIENTATION UNVERIFIED: this assumes the grid runs in Hebrew order from the top right. If the 1533 grid runs from the top left, this letter takes the figure given here for chamber 6, which is this figure's mirror image.",
+   "formConfidence": "low",
+   "note": "The class of units ('intellectual things', the nine orders of angels). Chamber mnemonic דמת (DMTh). Sides drawn: top, left, bottom. Suggested diagram path in a 0-100 box (the site's own diagram of the rule): d='M80 20 H20 V80 H80', dots=[[50, 50]]. Numeric value 4. Fact-check: the figure and path are the correct cell boundaries under the stated layout and agree with the modern Aiq Bekar charts the fact-checker knows; not traced from a woodcut."
+  },
+  {
+   "order": 5,
+   "name": "He",
+   "value": "ה",
+   "translit": "h",
+   "numeric": 5,
+   "form": "Chamber 5 of 9, first (units) letter of the chamber, so one point. FIGURE (derived from Agrippa's verbal rule, NOT traced from the woodcut): a closed square: all four sides drawn. All strokes are straight and of equal weight, meeting at right angles. The figure is square, with sides of equal length, and there are no rings, curves or crossings. POINTS: one point in the middle of the space the figure encloses. The arrangement of the points is the site's own, because the woodcut was not seen. This figure is the same under any reading order of the grid (the centre cell).",
+   "formConfidence": "medium",
+   "note": "The class of units ('intellectual things', the nine orders of angels). Chamber mnemonic הנך (HNK). Sides drawn: top, right, bottom, left. Suggested diagram path in a 0-100 box (the site's own diagram of the rule): d='M20 20 H80 V80 H20 Z', dots=[[50, 50]]. Numeric value 5. Fact-check: the figure and path are the correct cell boundaries under the stated layout and agree with the modern Aiq Bekar charts the fact-checker knows; not traced from a woodcut."
+  },
+  {
+   "order": 6,
+   "name": "Vav",
+   "value": "ו",
+   "translit": "v / w",
+   "numeric": 6,
+   "form": "Chamber 6 of 9, first (units) letter of the chamber, so one point. FIGURE (derived from Agrippa's verbal rule, NOT traced from the woodcut): a square bracket open on the left, like ] : a horizontal stroke along the top, a vertical stroke down the right, and a horizontal stroke along the bottom. All strokes are straight and of equal weight, meeting at right angles. The figure is square, with sides of equal length, and there are no rings, curves or crossings. POINTS: one point in the middle of the space the figure encloses. The arrangement of the points is the site's own, because the woodcut was not seen. ORIENTATION UNVERIFIED: this assumes the grid runs in Hebrew order from the top right. If the 1533 grid runs from the top left, this letter takes the figure given here for chamber 4, which is this figure's mirror image.",
+   "formConfidence": "low",
+   "note": "The class of units ('intellectual things', the nine orders of angels). Chamber mnemonic וסם (VSM). Sides drawn: top, right, bottom. Suggested diagram path in a 0-100 box (the site's own diagram of the rule): d='M20 20 H80 V80 H20', dots=[[50, 50]]. Numeric value 6. Fact-check: the figure and path are the correct cell boundaries under the stated layout and agree with the modern Aiq Bekar charts the fact-checker knows; not traced from a woodcut."
+  },
+  {
+   "order": 7,
+   "name": "Zayin",
+   "value": "ז",
+   "translit": "z",
+   "numeric": 7,
+   "form": "Chamber 7 of 9, first (units) letter of the chamber, so one point. FIGURE (derived from Agrippa's verbal rule, NOT traced from the woodcut): a right angle opening down and to the right, like Γ: a horizontal stroke along the top meeting a vertical stroke that runs down the left side. All strokes are straight and of equal weight, meeting at right angles. The figure is square, with sides of equal length, and there are no rings, curves or crossings. POINTS: one point in the middle of the space the figure encloses. The arrangement of the points is the site's own, because the woodcut was not seen. ORIENTATION UNVERIFIED: this assumes the grid runs in Hebrew order from the top right. If the 1533 grid runs from the top left, this letter takes the figure given here for chamber 9, which is this figure's mirror image.",
+   "formConfidence": "low",
+   "note": "The class of units ('intellectual things', the nine orders of angels). Chamber mnemonic זען (ZON (Z-ʿ-N)). Sides drawn: top, left. Suggested diagram path in a 0-100 box (the site's own diagram of the rule): d='M80 20 H20 V80', dots=[[50, 50]]. Numeric value 7. Fact-check: the figure and path are the correct cell boundaries under the stated layout and agree with the modern Aiq Bekar charts the fact-checker knows; not traced from a woodcut."
+  },
+  {
+   "order": 8,
+   "name": "Heth",
+   "value": "ח",
+   "translit": "ḥ (ch)",
+   "numeric": 8,
+   "form": "Chamber 8 of 9, first (units) letter of the chamber, so one point. FIGURE (derived from Agrippa's verbal rule, NOT traced from the woodcut): a square arch open at the bottom: a vertical stroke up the left, a horizontal stroke along the top, and a vertical stroke down the right. All strokes are straight and of equal weight, meeting at right angles. The figure is square, with sides of equal length, and there are no rings, curves or crossings. POINTS: one point in the middle of the space the figure encloses. The arrangement of the points is the site's own, because the woodcut was not seen. This figure is the same whether the grid runs from the right or from the left, provided the chambers run in rows; if they run in columns, it becomes a bracket ([ or ]).",
+   "formConfidence": "medium",
+   "note": "The class of units ('intellectual things', the nine orders of angels). Chamber mnemonic חפף (ChPP (ḤPP)). Sides drawn: left, top, right. Suggested diagram path in a 0-100 box (the site's own diagram of the rule): d='M20 80 V20 H80 V80', dots=[[50, 50]]. Numeric value 8. Fact-check: the figure and path are the correct cell boundaries under the stated layout and agree with the modern Aiq Bekar charts the fact-checker knows; not traced from a woodcut."
+  },
+  {
+   "order": 9,
+   "name": "Teth",
+   "value": "ט",
+   "translit": "ṭ",
+   "numeric": 9,
+   "form": "Chamber 9 of 9, first (units) letter of the chamber, so one point. FIGURE (derived from Agrippa's verbal rule, NOT traced from the woodcut): a right angle opening down and to the left, like the figure 7: a horizontal stroke along the top meeting a vertical stroke that runs down the right side. All strokes are straight and of equal weight, meeting at right angles. The figure is square, with sides of equal length, and there are no rings, curves or crossings. POINTS: one point in the middle of the space the figure encloses. The arrangement of the points is the site's own, because the woodcut was not seen. ORIENTATION UNVERIFIED: this assumes the grid runs in Hebrew order from the top right. If the 1533 grid runs from the top left, this letter takes the figure given here for chamber 7, which is this figure's mirror image.",
+   "formConfidence": "low",
+   "note": "The class of units ('intellectual things', the nine orders of angels). Chamber mnemonic טצץ (TTzTz (ṬṢṢ)). Sides drawn: top, right. Suggested diagram path in a 0-100 box (the site's own diagram of the rule): d='M20 20 H80 V80', dots=[[50, 50]]. Numeric value 9. Fact-check: the figure and path are the correct cell boundaries under the stated layout and agree with the modern Aiq Bekar charts the fact-checker knows; not traced from a woodcut."
+  },
+  {
+   "order": 10,
+   "name": "Yod",
+   "value": "י",
+   "translit": "y / i",
+   "numeric": 10,
+   "form": "Chamber 1 of 9, second (tens) letter of the chamber, so two points. FIGURE (derived from Agrippa's verbal rule, NOT traced from the woodcut): a right angle opening up and to the right, like a capital L: a vertical stroke down the left side, turning at its foot into a horizontal stroke running right along the bottom. All strokes are straight and of equal weight, meeting at right angles. The figure is square, with sides of equal length, and there are no rings, curves or crossings. POINTS: two points side by side, level, inside the figure. The arrangement of the points is the site's own, because the woodcut was not seen. ORIENTATION UNVERIFIED: this assumes the grid runs in Hebrew order from the top right. If the 1533 grid runs from the top left, this letter takes the figure given here for chamber 3, which is this figure's mirror image.",
+   "formConfidence": "low",
+   "note": "The class of tens ('celestial things', the nine orbs). Chamber mnemonic איק (AIQ). Sides drawn: left, bottom. Suggested diagram path in a 0-100 box (the site's own diagram of the rule): d='M20 20 V80 H80', dots=[[40, 50], [60, 50]]. Numeric value 10. Fact-check: the figure and path are the correct cell boundaries under the stated layout and agree with the modern Aiq Bekar charts the fact-checker knows; not traced from a woodcut."
+  },
+  {
+   "order": 11,
+   "name": "Kaph",
+   "value": "כ",
+   "translit": "k / kh",
+   "numeric": 20,
+   "form": "Chamber 2 of 9, second (tens) letter of the chamber, so two points. FIGURE (derived from Agrippa's verbal rule, NOT traced from the woodcut): a square cup open at the top: a vertical stroke down the left, a horizontal stroke along the bottom, and a vertical stroke up the right. All strokes are straight and of equal weight, meeting at right angles. The figure is square, with sides of equal length, and there are no rings, curves or crossings. POINTS: two points side by side, level, inside the figure. The arrangement of the points is the site's own, because the woodcut was not seen. This figure is the same whether the grid runs from the right or from the left, provided the chambers run in rows; if they run in columns, it becomes a bracket ([ or ]).",
+   "formConfidence": "medium",
+   "note": "The class of tens ('celestial things', the nine orbs). Chamber mnemonic בכר (BKR). Sides drawn: left, bottom, right. Suggested diagram path in a 0-100 box (the site's own diagram of the rule): d='M20 20 V80 H80 V20', dots=[[40, 50], [60, 50]]. Numeric value 20. Fact-check: the figure and path are the correct cell boundaries under the stated layout and agree with the modern Aiq Bekar charts the fact-checker knows; not traced from a woodcut."
+  },
+  {
+   "order": 12,
+   "name": "Lamed",
+   "value": "ל",
+   "translit": "l",
+   "numeric": 30,
+   "form": "Chamber 3 of 9, second (tens) letter of the chamber, so two points. FIGURE (derived from Agrippa's verbal rule, NOT traced from the woodcut): a right angle opening up and to the left (a reversed L): a horizontal stroke along the bottom meeting a vertical stroke that rises up the right side. All strokes are straight and of equal weight, meeting at right angles. The figure is square, with sides of equal length, and there are no rings, curves or crossings. POINTS: two points side by side, level, inside the figure. The arrangement of the points is the site's own, because the woodcut was not seen. ORIENTATION UNVERIFIED: this assumes the grid runs in Hebrew order from the top right. If the 1533 grid runs from the top left, this letter takes the figure given here for chamber 1, which is this figure's mirror image.",
+   "formConfidence": "low",
+   "note": "The class of tens ('celestial things', the nine orbs). Chamber mnemonic גלש (GLSh). Sides drawn: bottom, right. Suggested diagram path in a 0-100 box (the site's own diagram of the rule): d='M20 80 H80 V20', dots=[[40, 50], [60, 50]]. Numeric value 30. Fact-check: the figure and path are the correct cell boundaries under the stated layout and agree with the modern Aiq Bekar charts the fact-checker knows; not traced from a woodcut."
+  },
+  {
+   "order": 13,
+   "name": "Mem",
+   "value": "מ",
+   "translit": "m",
+   "numeric": 40,
+   "form": "Chamber 4 of 9, second (tens) letter of the chamber, so two points. FIGURE (derived from Agrippa's verbal rule, NOT traced from the woodcut): a square bracket open on the right, like [ : a horizontal stroke along the top, a vertical stroke down the left, and a horizontal stroke along the bottom. All strokes are straight and of equal weight, meeting at right angles. The figure is square, with sides of equal length, and there are no rings, curves or crossings. POINTS: two points side by side, level, inside the figure. The arrangement of the points is the site's own, because the woodcut was not seen. ORIENTATION UNVERIFIED: this assumes the grid runs in Hebrew order from the top right. If the 1533 grid runs from the top left, this letter takes the figure given here for chamber 6, which is this figure's mirror image.",
+   "formConfidence": "low",
+   "note": "The class of tens ('celestial things', the nine orbs). Chamber mnemonic דמת (DMTh). Sides drawn: top, left, bottom. Suggested diagram path in a 0-100 box (the site's own diagram of the rule): d='M80 20 H20 V80 H80', dots=[[40, 50], [60, 50]]. Numeric value 40. Fact-check: the figure and path are the correct cell boundaries under the stated layout and agree with the modern Aiq Bekar charts the fact-checker knows; not traced from a woodcut."
+  },
+  {
+   "order": 14,
+   "name": "Nun",
+   "value": "נ",
+   "translit": "n",
+   "numeric": 50,
+   "form": "Chamber 5 of 9, second (tens) letter of the chamber, so two points. FIGURE (derived from Agrippa's verbal rule, NOT traced from the woodcut): a closed square: all four sides drawn. All strokes are straight and of equal weight, meeting at right angles. The figure is square, with sides of equal length, and there are no rings, curves or crossings. POINTS: two points side by side, level, inside the figure. The arrangement of the points is the site's own, because the woodcut was not seen. This figure is the same under any reading order of the grid (the centre cell).",
+   "formConfidence": "medium",
+   "note": "The class of tens ('celestial things', the nine orbs). Chamber mnemonic הנך (HNK). Sides drawn: top, right, bottom, left. Suggested diagram path in a 0-100 box (the site's own diagram of the rule): d='M20 20 H80 V80 H20 Z', dots=[[40, 50], [60, 50]]. Numeric value 50. Fact-check: the figure and path are the correct cell boundaries under the stated layout and agree with the modern Aiq Bekar charts the fact-checker knows; not traced from a woodcut."
+  },
+  {
+   "order": 15,
+   "name": "Samekh",
+   "value": "ס",
+   "translit": "s",
+   "numeric": 60,
+   "form": "Chamber 6 of 9, second (tens) letter of the chamber, so two points. FIGURE (derived from Agrippa's verbal rule, NOT traced from the woodcut): a square bracket open on the left, like ] : a horizontal stroke along the top, a vertical stroke down the right, and a horizontal stroke along the bottom. All strokes are straight and of equal weight, meeting at right angles. The figure is square, with sides of equal length, and there are no rings, curves or crossings. POINTS: two points side by side, level, inside the figure. The arrangement of the points is the site's own, because the woodcut was not seen. ORIENTATION UNVERIFIED: this assumes the grid runs in Hebrew order from the top right. If the 1533 grid runs from the top left, this letter takes the figure given here for chamber 4, which is this figure's mirror image.",
+   "formConfidence": "low",
+   "note": "The class of tens ('celestial things', the nine orbs). Chamber mnemonic וסם (VSM). Sides drawn: top, right, bottom. Suggested diagram path in a 0-100 box (the site's own diagram of the rule): d='M20 20 H80 V80 H20', dots=[[40, 50], [60, 50]]. Numeric value 60. Fact-check: the figure and path are the correct cell boundaries under the stated layout and agree with the modern Aiq Bekar charts the fact-checker knows; not traced from a woodcut."
+  },
+  {
+   "order": 16,
+   "name": "Ayin",
+   "value": "ע",
+   "translit": "ʿ",
+   "numeric": 70,
+   "form": "Chamber 7 of 9, second (tens) letter of the chamber, so two points. FIGURE (derived from Agrippa's verbal rule, NOT traced from the woodcut): a right angle opening down and to the right, like Γ: a horizontal stroke along the top meeting a vertical stroke that runs down the left side. All strokes are straight and of equal weight, meeting at right angles. The figure is square, with sides of equal length, and there are no rings, curves or crossings. POINTS: two points side by side, level, inside the figure. The arrangement of the points is the site's own, because the woodcut was not seen. ORIENTATION UNVERIFIED: this assumes the grid runs in Hebrew order from the top right. If the 1533 grid runs from the top left, this letter takes the figure given here for chamber 9, which is this figure's mirror image.",
+   "formConfidence": "low",
+   "note": "The class of tens ('celestial things', the nine orbs). Chamber mnemonic זען (ZON (Z-ʿ-N)). Sides drawn: top, left. Suggested diagram path in a 0-100 box (the site's own diagram of the rule): d='M80 20 H20 V80', dots=[[40, 50], [60, 50]]. Numeric value 70. Fact-check: the figure and path are the correct cell boundaries under the stated layout and agree with the modern Aiq Bekar charts the fact-checker knows; not traced from a woodcut."
+  },
+  {
+   "order": 17,
+   "name": "Pe",
+   "value": "פ",
+   "translit": "p / ph",
+   "numeric": 80,
+   "form": "Chamber 8 of 9, second (tens) letter of the chamber, so two points. FIGURE (derived from Agrippa's verbal rule, NOT traced from the woodcut): a square arch open at the bottom: a vertical stroke up the left, a horizontal stroke along the top, and a vertical stroke down the right. All strokes are straight and of equal weight, meeting at right angles. The figure is square, with sides of equal length, and there are no rings, curves or crossings. POINTS: two points side by side, level, inside the figure. The arrangement of the points is the site's own, because the woodcut was not seen. This figure is the same whether the grid runs from the right or from the left, provided the chambers run in rows; if they run in columns, it becomes a bracket ([ or ]).",
+   "formConfidence": "medium",
+   "note": "The class of tens ('celestial things', the nine orbs). Chamber mnemonic חפף (ChPP (ḤPP)). Sides drawn: left, top, right. Suggested diagram path in a 0-100 box (the site's own diagram of the rule): d='M20 80 V20 H80 V80', dots=[[40, 50], [60, 50]]. Numeric value 80. Fact-check: the figure and path are the correct cell boundaries under the stated layout and agree with the modern Aiq Bekar charts the fact-checker knows; not traced from a woodcut."
+  },
+  {
+   "order": 18,
+   "name": "Tsade",
+   "value": "צ",
+   "translit": "ts (ṣ)",
+   "numeric": 90,
+   "form": "Chamber 9 of 9, second (tens) letter of the chamber, so two points. FIGURE (derived from Agrippa's verbal rule, NOT traced from the woodcut): a right angle opening down and to the left, like the figure 7: a horizontal stroke along the top meeting a vertical stroke that runs down the right side. All strokes are straight and of equal weight, meeting at right angles. The figure is square, with sides of equal length, and there are no rings, curves or crossings. POINTS: two points side by side, level, inside the figure. The arrangement of the points is the site's own, because the woodcut was not seen. ORIENTATION UNVERIFIED: this assumes the grid runs in Hebrew order from the top right. If the 1533 grid runs from the top left, this letter takes the figure given here for chamber 7, which is this figure's mirror image.",
+   "formConfidence": "low",
+   "note": "The class of tens ('celestial things', the nine orbs). Chamber mnemonic טצץ (TTzTz (ṬṢṢ)). Sides drawn: top, right. Suggested diagram path in a 0-100 box (the site's own diagram of the rule): d='M20 20 H80 V80', dots=[[40, 50], [60, 50]]. Numeric value 90. Fact-check: the figure and path are the correct cell boundaries under the stated layout and agree with the modern Aiq Bekar charts the fact-checker knows; not traced from a woodcut."
+  },
+  {
+   "order": 19,
+   "name": "Qoph",
+   "value": "ק",
+   "translit": "q",
+   "numeric": 100,
+   "form": "Chamber 1 of 9, third (hundreds) letter of the chamber, so three points. FIGURE (derived from Agrippa's verbal rule, NOT traced from the woodcut): a right angle opening up and to the right, like a capital L: a vertical stroke down the left side, turning at its foot into a horizontal stroke running right along the bottom. All strokes are straight and of equal weight, meeting at right angles. The figure is square, with sides of equal length, and there are no rings, curves or crossings. POINTS: three points in a level row inside the figure. The arrangement of the points is the site's own, because the woodcut was not seen. ORIENTATION UNVERIFIED: this assumes the grid runs in Hebrew order from the top right. If the 1533 grid runs from the top left, this letter takes the figure given here for chamber 3, which is this figure's mirror image.",
+   "formConfidence": "low",
+   "note": "The class of hundreds ('inferior things': the four elements and five kinds of perfect compounds). Chamber mnemonic איק (AIQ). Sides drawn: left, bottom. Suggested diagram path in a 0-100 box (the site's own diagram of the rule): d='M20 20 V80 H80', dots=[[35, 50], [50, 50], [65, 50]]. Numeric value 100. Fact-check: the figure and path are the correct cell boundaries under the stated layout and agree with the modern Aiq Bekar charts the fact-checker knows; not traced from a woodcut."
+  },
+  {
+   "order": 20,
+   "name": "Resh",
+   "value": "ר",
+   "translit": "r",
+   "numeric": 200,
+   "form": "Chamber 2 of 9, third (hundreds) letter of the chamber, so three points. FIGURE (derived from Agrippa's verbal rule, NOT traced from the woodcut): a square cup open at the top: a vertical stroke down the left, a horizontal stroke along the bottom, and a vertical stroke up the right. All strokes are straight and of equal weight, meeting at right angles. The figure is square, with sides of equal length, and there are no rings, curves or crossings. POINTS: three points in a level row inside the figure. The arrangement of the points is the site's own, because the woodcut was not seen. This figure is the same whether the grid runs from the right or from the left, provided the chambers run in rows; if they run in columns, it becomes a bracket ([ or ]).",
+   "formConfidence": "medium",
+   "note": "The class of hundreds ('inferior things': the four elements and five kinds of perfect compounds). Chamber mnemonic בכר (BKR). Sides drawn: left, bottom, right. Suggested diagram path in a 0-100 box (the site's own diagram of the rule): d='M20 20 V80 H80 V20', dots=[[35, 50], [50, 50], [65, 50]]. Numeric value 200. Fact-check: the figure and path are the correct cell boundaries under the stated layout and agree with the modern Aiq Bekar charts the fact-checker knows; not traced from a woodcut."
+  },
+  {
+   "order": 21,
+   "name": "Shin",
+   "value": "ש",
+   "translit": "sh / s",
+   "numeric": 300,
+   "form": "Chamber 3 of 9, third (hundreds) letter of the chamber, so three points. FIGURE (derived from Agrippa's verbal rule, NOT traced from the woodcut): a right angle opening up and to the left (a reversed L): a horizontal stroke along the bottom meeting a vertical stroke that rises up the right side. All strokes are straight and of equal weight, meeting at right angles. The figure is square, with sides of equal length, and there are no rings, curves or crossings. POINTS: three points in a level row inside the figure. The arrangement of the points is the site's own, because the woodcut was not seen. ORIENTATION UNVERIFIED: this assumes the grid runs in Hebrew order from the top right. If the 1533 grid runs from the top left, this letter takes the figure given here for chamber 1, which is this figure's mirror image.",
+   "formConfidence": "low",
+   "note": "The class of hundreds ('inferior things': the four elements and five kinds of perfect compounds). Chamber mnemonic גלש (GLSh). Sides drawn: bottom, right. Suggested diagram path in a 0-100 box (the site's own diagram of the rule): d='M20 80 H80 V20', dots=[[35, 50], [50, 50], [65, 50]]. Numeric value 300. Fact-check: the figure and path are the correct cell boundaries under the stated layout and agree with the modern Aiq Bekar charts the fact-checker knows; not traced from a woodcut."
+  },
+  {
+   "order": 22,
+   "name": "Tav",
+   "value": "ת",
+   "translit": "t / th",
+   "numeric": 400,
+   "form": "Chamber 4 of 9, third (hundreds) letter of the chamber, so three points. FIGURE (derived from Agrippa's verbal rule, NOT traced from the woodcut): a square bracket open on the right, like [ : a horizontal stroke along the top, a vertical stroke down the left, and a horizontal stroke along the bottom. All strokes are straight and of equal weight, meeting at right angles. The figure is square, with sides of equal length, and there are no rings, curves or crossings. POINTS: three points in a level row inside the figure. The arrangement of the points is the site's own, because the woodcut was not seen. ORIENTATION UNVERIFIED: this assumes the grid runs in Hebrew order from the top right. If the 1533 grid runs from the top left, this letter takes the figure given here for chamber 6, which is this figure's mirror image.",
+   "formConfidence": "low",
+   "note": "The class of hundreds ('inferior things': the four elements and five kinds of perfect compounds). Chamber mnemonic דמת (DMTh). Sides drawn: top, left, bottom. Suggested diagram path in a 0-100 box (the site's own diagram of the rule): d='M80 20 H20 V80 H80', dots=[[35, 50], [50, 50], [65, 50]]. Numeric value 400. Fact-check: the figure and path are the correct cell boundaries under the stated layout and agree with the modern Aiq Bekar charts the fact-checker knows; not traced from a woodcut."
+  },
+  {
+   "order": 23,
+   "name": "Final Kaph",
+   "value": "ך",
+   "translit": "k / kh (final)",
+   "numeric": 500,
+   "form": "Chamber 5 of 9, third (hundreds) letter of the chamber, so three points. FIGURE (derived from Agrippa's verbal rule, NOT traced from the woodcut): a closed square: all four sides drawn. All strokes are straight and of equal weight, meeting at right angles. The figure is square, with sides of equal length, and there are no rings, curves or crossings. POINTS: three points in a level row inside the figure. The arrangement of the points is the site's own, because the woodcut was not seen. This figure is the same under any reading order of the grid (the centre cell).",
+   "formConfidence": "medium",
+   "note": "The class of hundreds ('inferior things': the four elements and five kinds of perfect compounds). Chamber mnemonic הנך (HNK). Sides drawn: top, right, bottom, left. Suggested diagram path in a 0-100 box (the site's own diagram of the rule): d='M20 20 H80 V80 H20 Z', dots=[[35, 50], [50, 50], [65, 50]]. Numeric value 500 is the 'great' value of a final form. Agrippa puts the five finals in the third class as hundreds ('the other four letters, with the five final, by order', J.F. 1651 III.xxx p. 441, verified), and his numeral table gives this value (II.xix, 1651 p. 232, verified). If hebrew.js gives finals their ordinary values, the validator's numeric check must accept 500-900 for this item, or the numeric must be shown as the system's own. Fact-check: the figure and path are the correct cell boundaries under the stated layout and agree with the modern Aiq Bekar charts the fact-checker knows; not traced from a woodcut."
+  },
+  {
+   "order": 24,
+   "name": "Final Mem",
+   "value": "ם",
+   "translit": "m (final)",
+   "numeric": 600,
+   "form": "Chamber 6 of 9, third (hundreds) letter of the chamber, so three points. FIGURE (derived from Agrippa's verbal rule, NOT traced from the woodcut): a square bracket open on the left, like ] : a horizontal stroke along the top, a vertical stroke down the right, and a horizontal stroke along the bottom. All strokes are straight and of equal weight, meeting at right angles. The figure is square, with sides of equal length, and there are no rings, curves or crossings. POINTS: three points in a level row inside the figure. The arrangement of the points is the site's own, because the woodcut was not seen. ORIENTATION UNVERIFIED: this assumes the grid runs in Hebrew order from the top right. If the 1533 grid runs from the top left, this letter takes the figure given here for chamber 4, which is this figure's mirror image.",
+   "formConfidence": "low",
+   "note": "The class of hundreds ('inferior things': the four elements and five kinds of perfect compounds). Chamber mnemonic וסם (VSM). Sides drawn: top, right, bottom. Suggested diagram path in a 0-100 box (the site's own diagram of the rule): d='M20 20 H80 V80 H20', dots=[[35, 50], [50, 50], [65, 50]]. Numeric value 600 is the 'great' value of a final form. Agrippa puts the five finals in the third class as hundreds ('the other four letters, with the five final, by order', J.F. 1651 III.xxx p. 441, verified), and his numeral table gives this value (II.xix, 1651 p. 232, verified). If hebrew.js gives finals their ordinary values, the validator's numeric check must accept 500-900 for this item, or the numeric must be shown as the system's own. Fact-check: the figure and path are the correct cell boundaries under the stated layout and agree with the modern Aiq Bekar charts the fact-checker knows; not traced from a woodcut."
+  },
+  {
+   "order": 25,
+   "name": "Final Nun",
+   "value": "ן",
+   "translit": "n (final)",
+   "numeric": 700,
+   "form": "Chamber 7 of 9, third (hundreds) letter of the chamber, so three points. FIGURE (derived from Agrippa's verbal rule, NOT traced from the woodcut): a right angle opening down and to the right, like Γ: a horizontal stroke along the top meeting a vertical stroke that runs down the left side. All strokes are straight and of equal weight, meeting at right angles. The figure is square, with sides of equal length, and there are no rings, curves or crossings. POINTS: three points in a level row inside the figure. The arrangement of the points is the site's own, because the woodcut was not seen. ORIENTATION UNVERIFIED: this assumes the grid runs in Hebrew order from the top right. If the 1533 grid runs from the top left, this letter takes the figure given here for chamber 9, which is this figure's mirror image.",
+   "formConfidence": "low",
+   "note": "The class of hundreds ('inferior things': the four elements and five kinds of perfect compounds). Chamber mnemonic זען (ZON (Z-ʿ-N)). Sides drawn: top, left. Suggested diagram path in a 0-100 box (the site's own diagram of the rule): d='M80 20 H20 V80', dots=[[35, 50], [50, 50], [65, 50]]. Numeric value 700 is the 'great' value of a final form. Agrippa puts the five finals in the third class as hundreds ('the other four letters, with the five final, by order', J.F. 1651 III.xxx p. 441, verified), and his numeral table gives this value (II.xix, 1651 p. 232, verified). If hebrew.js gives finals their ordinary values, the validator's numeric check must accept 500-900 for this item, or the numeric must be shown as the system's own. Fact-check: the figure and path are the correct cell boundaries under the stated layout and agree with the modern Aiq Bekar charts the fact-checker knows; not traced from a woodcut."
+  },
+  {
+   "order": 26,
+   "name": "Final Pe",
+   "value": "ף",
+   "translit": "p / ph (final)",
+   "numeric": 800,
+   "form": "Chamber 8 of 9, third (hundreds) letter of the chamber, so three points. FIGURE (derived from Agrippa's verbal rule, NOT traced from the woodcut): a square arch open at the bottom: a vertical stroke up the left, a horizontal stroke along the top, and a vertical stroke down the right. All strokes are straight and of equal weight, meeting at right angles. The figure is square, with sides of equal length, and there are no rings, curves or crossings. POINTS: three points in a level row inside the figure. The arrangement of the points is the site's own, because the woodcut was not seen. This figure is the same whether the grid runs from the right or from the left, provided the chambers run in rows; if they run in columns, it becomes a bracket ([ or ]).",
+   "formConfidence": "medium",
+   "note": "The class of hundreds ('inferior things': the four elements and five kinds of perfect compounds). Chamber mnemonic חפף (ChPP (ḤPP)). Sides drawn: left, top, right. Suggested diagram path in a 0-100 box (the site's own diagram of the rule): d='M20 80 V20 H80 V80', dots=[[35, 50], [50, 50], [65, 50]]. Numeric value 800 is the 'great' value of a final form. Agrippa puts the five finals in the third class as hundreds ('the other four letters, with the five final, by order', J.F. 1651 III.xxx p. 441, verified), and his numeral table gives this value (II.xix, 1651 p. 232, verified). If hebrew.js gives finals their ordinary values, the validator's numeric check must accept 500-900 for this item, or the numeric must be shown as the system's own. Fact-check: the figure and path are the correct cell boundaries under the stated layout and agree with the modern Aiq Bekar charts the fact-checker knows; not traced from a woodcut."
+  },
+  {
+   "order": 27,
+   "name": "Final Tsade",
+   "value": "ץ",
+   "translit": "ts (final)",
+   "numeric": 900,
+   "form": "Chamber 9 of 9, third (hundreds) letter of the chamber, so three points. FIGURE (derived from Agrippa's verbal rule, NOT traced from the woodcut): a right angle opening down and to the left, like the figure 7: a horizontal stroke along the top meeting a vertical stroke that runs down the right side. All strokes are straight and of equal weight, meeting at right angles. The figure is square, with sides of equal length, and there are no rings, curves or crossings. POINTS: three points in a level row inside the figure. The arrangement of the points is the site's own, because the woodcut was not seen. ORIENTATION UNVERIFIED: this assumes the grid runs in Hebrew order from the top right. If the 1533 grid runs from the top left, this letter takes the figure given here for chamber 7, which is this figure's mirror image.",
+   "formConfidence": "low",
+   "note": "The class of hundreds ('inferior things': the four elements and five kinds of perfect compounds). Chamber mnemonic טצץ (TTzTz (ṬṢṢ)). Sides drawn: top, right. Suggested diagram path in a 0-100 box (the site's own diagram of the rule): d='M20 20 H80 V80', dots=[[35, 50], [50, 50], [65, 50]]. Numeric value 900 is the 'great' value of a final form. Agrippa puts the five finals in the third class as hundreds ('the other four letters, with the five final, by order', J.F. 1651 III.xxx p. 441, verified), and his numeral table gives this value (II.xix, 1651 p. 232, verified). If hebrew.js gives finals their ordinary values, the validator's numeric check must accept 500-900 for this item, or the numeric must be shown as the system's own. Fact-check: the figure and path are the correct cell boundaries under the stated layout and agree with the modern Aiq Bekar charts the fact-checker knows; not traced from a woodcut."
+  }
+ ],
+ "chambers": [
+  {
+   "chamber": 1,
+   "letters": [
+    "א",
+    "י",
+    "ק"
+   ],
+   "names": [
+    "Aleph",
+    "Yod",
+    "Qoph"
+   ],
+   "values": [
+    1,
+    10,
+    100
+   ],
+   "mnemonic": "איק",
+   "mnemonicTranslit": "AIQ",
+   "cellAssumed": "top right",
+   "sidesDrawn": [
+    "left",
+    "bottom"
+   ],
+   "figure": "a right angle opening up and to the right, like a capital L: a vertical stroke down the left side, turning at its foot into a horizontal stroke running right along the bottom",
+   "svgPath": "M20 20 V80 H80",
+   "ifGridRunsLeftToRight": "takes the figure of chamber 3",
+   "confidence": "low (depends on the grid's direction and on rows vs columns, which are unverified)"
+  },
+  {
+   "chamber": 2,
+   "letters": [
+    "ב",
+    "כ",
+    "ר"
+   ],
+   "names": [
+    "Beth",
+    "Kaph",
+    "Resh"
+   ],
+   "values": [
+    2,
+    20,
+    200
+   ],
+   "mnemonic": "בכר",
+   "mnemonicTranslit": "BKR",
+   "cellAssumed": "top centre",
+   "sidesDrawn": [
+    "left",
+    "bottom",
+    "right"
+   ],
+   "figure": "a square cup open at the top: a vertical stroke down the left, a horizontal stroke along the bottom, and a vertical stroke up the right",
+   "svgPath": "M20 20 V80 H80 V20",
+   "ifGridRunsLeftToRight": "unchanged (if rows)",
+   "confidence": "medium (independent of right/left direction if the chambers run in rows; in a column layout it becomes a bracket)"
+  },
+  {
+   "chamber": 3,
+   "letters": [
+    "ג",
+    "ל",
+    "ש"
+   ],
+   "names": [
+    "Gimel",
+    "Lamed",
+    "Shin"
+   ],
+   "values": [
+    3,
+    30,
+    300
+   ],
+   "mnemonic": "גלש",
+   "mnemonicTranslit": "GLSh",
+   "cellAssumed": "top left",
+   "sidesDrawn": [
+    "bottom",
+    "right"
+   ],
+   "figure": "a right angle opening up and to the left (a reversed L): a horizontal stroke along the bottom meeting a vertical stroke that rises up the right side",
+   "svgPath": "M20 80 H80 V20",
+   "ifGridRunsLeftToRight": "takes the figure of chamber 1",
+   "confidence": "low (depends on the grid's direction and on rows vs columns, which are unverified)"
+  },
+  {
+   "chamber": 4,
+   "letters": [
+    "ד",
+    "מ",
+    "ת"
+   ],
+   "names": [
+    "Daleth",
+    "Mem",
+    "Tav"
+   ],
+   "values": [
+    4,
+    40,
+    400
+   ],
+   "mnemonic": "דמת",
+   "mnemonicTranslit": "DMTh",
+   "cellAssumed": "middle right",
+   "sidesDrawn": [
+    "top",
+    "left",
+    "bottom"
+   ],
+   "figure": "a square bracket open on the right, like [ : a horizontal stroke along the top, a vertical stroke down the left, and a horizontal stroke along the bottom",
+   "svgPath": "M80 20 H20 V80 H80",
+   "ifGridRunsLeftToRight": "takes the figure of chamber 6",
+   "confidence": "low (depends on the grid's direction and on rows vs columns, which are unverified)"
+  },
+  {
+   "chamber": 5,
+   "letters": [
+    "ה",
+    "נ",
+    "ך"
+   ],
+   "names": [
+    "He",
+    "Nun",
+    "Final Kaph"
+   ],
+   "values": [
+    5,
+    50,
+    500
+   ],
+   "mnemonic": "הנך",
+   "mnemonicTranslit": "HNK",
+   "cellAssumed": "centre",
+   "sidesDrawn": [
+    "top",
+    "right",
+    "bottom",
+    "left"
+   ],
+   "figure": "a closed square: all four sides drawn",
+   "svgPath": "M20 20 H80 V80 H20 Z",
+   "ifGridRunsLeftToRight": "unchanged",
+   "confidence": "medium (the centre cell under any reading order; the placement of the points is unseen)"
+  },
+  {
+   "chamber": 6,
+   "letters": [
+    "ו",
+    "ס",
+    "ם"
+   ],
+   "names": [
+    "Vav",
+    "Samekh",
+    "Final Mem"
+   ],
+   "values": [
+    6,
+    60,
+    600
+   ],
+   "mnemonic": "וסם",
+   "mnemonicTranslit": "VSM",
+   "cellAssumed": "middle left",
+   "sidesDrawn": [
+    "top",
+    "right",
+    "bottom"
+   ],
+   "figure": "a square bracket open on the left, like ] : a horizontal stroke along the top, a vertical stroke down the right, and a horizontal stroke along the bottom",
+   "svgPath": "M20 20 H80 V80 H20",
+   "ifGridRunsLeftToRight": "takes the figure of chamber 4",
+   "confidence": "low (depends on the grid's direction and on rows vs columns, which are unverified)"
+  },
+  {
+   "chamber": 7,
+   "letters": [
+    "ז",
+    "ע",
+    "ן"
+   ],
+   "names": [
+    "Zayin",
+    "Ayin",
+    "Final Nun"
+   ],
+   "values": [
+    7,
+    70,
+    700
+   ],
+   "mnemonic": "זען",
+   "mnemonicTranslit": "ZON (Z-ʿ-N)",
+   "cellAssumed": "bottom right",
+   "sidesDrawn": [
+    "top",
+    "left"
+   ],
+   "figure": "a right angle opening down and to the right, like Γ: a horizontal stroke along the top meeting a vertical stroke that runs down the left side",
+   "svgPath": "M80 20 H20 V80",
+   "ifGridRunsLeftToRight": "takes the figure of chamber 9",
+   "confidence": "low (depends on the grid's direction and on rows vs columns, which are unverified)"
+  },
+  {
+   "chamber": 8,
+   "letters": [
+    "ח",
+    "פ",
+    "ף"
+   ],
+   "names": [
+    "Heth",
+    "Pe",
+    "Final Pe"
+   ],
+   "values": [
+    8,
+    80,
+    800
+   ],
+   "mnemonic": "חפף",
+   "mnemonicTranslit": "ChPP (ḤPP)",
+   "cellAssumed": "bottom centre",
+   "sidesDrawn": [
+    "left",
+    "top",
+    "right"
+   ],
+   "figure": "a square arch open at the bottom: a vertical stroke up the left, a horizontal stroke along the top, and a vertical stroke down the right",
+   "svgPath": "M20 80 V20 H80 V80",
+   "ifGridRunsLeftToRight": "unchanged (if rows)",
+   "confidence": "medium (independent of right/left direction if the chambers run in rows; in a column layout it becomes a bracket)"
+  },
+  {
+   "chamber": 9,
+   "letters": [
+    "ט",
+    "צ",
+    "ץ"
+   ],
+   "names": [
+    "Teth",
+    "Tsade",
+    "Final Tsade"
+   ],
+   "values": [
+    9,
+    90,
+    900
+   ],
+   "mnemonic": "טצץ",
+   "mnemonicTranslit": "TTzTz (ṬṢṢ)",
+   "cellAssumed": "bottom left",
+   "sidesDrawn": [
+    "top",
+    "right"
+   ],
+   "figure": "a right angle opening down and to the left, like the figure 7: a horizontal stroke along the top meeting a vertical stroke that runs down the right side",
+   "svgPath": "M20 20 H80 V80",
+   "ifGridRunsLeftToRight": "takes the figure of chamber 7",
+   "confidence": "low (depends on the grid's direction and on rows vs columns, which are unverified)"
+  }
+ ],
+ "lettersSource": "27 entries, one per Hebrew letter, in Agrippa's class order: the nine units Aleph-Teth, the nine tens Yod-Tsade, then Qoph, Resh, Shin, Tav and the five finals as hundreds (class order and final values verified in J.F. 1651, III.xxx p. 441 and II.xix p. 232). The extra key 'chambers' gives the nine cells, each with its three letters, its mnemonic (איק בכר גלש דמת הנך וסם זען חפף טצץ; arithmetic checked), the sides drawn and a suggested path (checked against the sides). NO FORM WAS TRACED. Neither the 1533 woodcut nor the 1651 cut was seen (EEBO-TCP keys the figures only as blank figure blocks). Each figure is deduced from Agrippa's verbal rule: Chambers 'framed by the interfection of four paralell lines, intersecting themselves into right angles', 'dissected into parts' into 'nine particular figures', plus one, two or three points (1651, p. 442, verified). The text does not give the layout ('as is expressed in this following figure'). The grid is ASSUMED to run in Hebrew order, row by row from the top right (chamber 1 top right, chamber 9 bottom left), the layout of the modern charts as the researcher and the fact-checker recall them. If the 1533 grid runs in rows from the top left, chambers 1/3, 4/6 and 7/9 swap figures and 2, 5, 8 stay. If it runs in columns from the top right, 1, 5 and 9 keep their figures and the rest change; in columns from the top left, only 5 is safe. One look at the figure settles all of it. The placement of the points is the site's own. Trace the grid, the nine figures and the Michael figures from III.30 in a 1533 copy, or check them against the 1651 cut (pp. 442-443, EEBO page image tcp:52070:237). Direction for the page: keyed to Hebrew, rtl.",
+ "uses": [
+  {
+   "use": "Making the 'character' (seal) of an angel's name: write each letter as its chamber figure, then run the figures together.",
+   "evidence": "Agrippa's worked example in III.30 is Michael (מיכאל). Verified in J.F. 1651, p. 443: 'as if thou wouldest frame the Character Michael [Hebrew], that comes forth thus, extended with five figures'; 'Which then are contracted to three figures, after this manner'; 'Which then are contracted into one, yet the points Notariacon are wont to be omitted, and then there comes forth such a Character of Michael.' (The researcher's recalled 'into one, yet more abbreviated' and 'all these are called by the name of Michael' do not occur and are withdrawn.) Under the assumed layout the five figures are: Mem, the [ bracket with two points; Yod, the L with two points; Kaph, the cup with two points; Aleph, the L with one point; Lamed, the reversed L with two points. The three-figure and one-figure forms cannot be worked out from the text and must be traced; the one-figure form carries no points. The chapter closes by saying that such characters do not compel angels: we 'devote and consecrate to them figures, and marks, by which we cannot any way compel them to us, but by which we rise up to them' (J.F. 1651, p. 444, verified)."
+  },
+  {
+   "use": "Reducing a name's numbers to units (gematria by chambers).",
+   "evidence": "All the letters in one chamber share a unit (Aleph, Yod and Qoph all reduce to 1, and so on). Later occultists used this to fit names onto the 3x3 to 9x9 planetary squares when tracing sigils (Golden Dawn; Tyson 1993; as recalled, not checked). Agrippa's III.30 does not describe this use (verified for 1651); in II.xxii he leaves the method of drawing the seals from the tables to 'the wise searcher' (J.F. 1651, p. 242, verified)."
+  },
+  {
+   "use": "Secret writing of the Latin alphabet: the Freemasons' or 'pigpen' cipher and its variants.",
+   "evidence": "The same grid-and-dot mechanism is reported for Latin letters from the 18th century on: Masonic exposures and gravestones, then popular puzzle books (none seen). A common modern key puts A-I in a plain grid, J-R in a dotted grid, S-V in a plain X and W-Z in a dotted X (Wikipedia, as recalled; not checked). The descent from Agrippa is plausible but undocumented."
+  }
+ ],
+ "quotations": [
+  {
+   "text": "CHAP. XXX. Another manner of making Characters, delivered by Cabalists.",
+   "translation": "J.F. (the EEBO-TCP record notes 'The translator is probably John French. Cf. DNB.'), Three Books of Occult Philosophy, London: Printed by R.W. for Gregory Moule, 1651 (Wing A789), Book III ch. XXX, p. 439. Verified word for word against the EEBO-TCP keyed text A26565 (keyed from the ProQuest page images); line-end hyphens joined.",
+   "source": "Agrippa, De occulta philosophia (1533) III.30; J.F. 1651, III.xxx, p. 439"
+  },
+  {
+   "text": "There is moreover another fashion amongst the Cabalists, formerly had in great esteem, but now it is so common, that it is placed amongst prophane things",
+   "translation": "J.F. (the EEBO-TCP record notes 'The translator is probably John French. Cf. DNB.'), Three Books of Occult Philosophy, London: Printed by R.W. for Gregory Moule, 1651 (Wing A789), Book III ch. XXX, p. 441. Verified word for word against the EEBO-TCP keyed text A26565 (keyed from the ProQuest page images); line-end hyphens joined.",
+   "source": "Agrippa, De occulta philosophia (1533) III.30; J.F. 1651, III.xxx, p. 441"
+  },
+  {
+   "text": "These Chambers are framed by the interfection of four paralell lines, intersecting themselves into right angles",
+   "translation": "J.F. (the EEBO-TCP record notes 'The translator is probably John French. Cf. DNB.'), Three Books of Occult Philosophy, London: Printed by R.W. for Gregory Moule, 1651 (Wing A789), Book III ch. XXX, p. 442. Verified word for word against the EEBO-TCP keyed text A26565 (keyed from the ProQuest page images); line-end hyphens joined. 'interfection' is the TCP reading (probably a misread long-s 'interſection'); check the page image (tcp:52070:237) before printing it.",
+   "source": "Agrippa, De occulta philosophia (1533) III.30; J.F. 1651, III.xxx, p. 442"
+  },
+  {
+   "text": "which if itbe of one poynt shews the first letter of that Chamber; if of two, the second; if of three, the third letter",
+   "translation": "J.F. (the EEBO-TCP record notes 'The translator is probably John French. Cf. DNB.'), Three Books of Occult Philosophy, London: Printed by R.W. for Gregory Moule, 1651 (Wing A789), Book III ch. XXX, p. 442-443. Verified word for word against the EEBO-TCP keyed text A26565 (keyed from the ProQuest page images); line-end hyphens joined. 'itbe' is the TCP reading; the TCP also marks a superscript 's' after 'poynt' at the page break. Check the page image before printing.",
+   "source": "Agrippa, De occulta philosophia (1533) III.30; J.F. 1651, III.xxx, p. 442-443"
+  },
+  {
+   "text": "as if thou wouldest frame the Character Michael [Hebrew], that comes forth thus, extended with five figures",
+   "translation": "J.F. (the EEBO-TCP record notes 'The translator is probably John French. Cf. DNB.'), Three Books of Occult Philosophy, London: Printed by R.W. for Gregory Moule, 1651 (Wing A789), Book III ch. XXX, p. 443. Verified word for word against the EEBO-TCP keyed text A26565 (keyed from the ProQuest page images); line-end hyphens joined. The Hebrew name was not keyed by the TCP.",
+   "source": "Agrippa, De occulta philosophia (1533) III.30; J.F. 1651, III.xxx, p. 443"
+  },
+  {
+   "text": "Which then are contracted into one, yet the points Notariacon are wont to be omitted, and then there comes forth such a Character of Michael.",
+   "translation": "J.F. (the EEBO-TCP record notes 'The translator is probably John French. Cf. DNB.'), Three Books of Occult Philosophy, London: Printed by R.W. for Gregory Moule, 1651 (Wing A789), Book III ch. XXX, p. 443. Verified word for word against the EEBO-TCP keyed text A26565 (keyed from the ProQuest page images); line-end hyphens joined.",
+   "source": "Agrippa, De occulta philosophia (1533) III.30; J.F. 1651, III.xxx, p. 443"
+  }
+ ],
+ "links": [
+  {
+   "to": "hebrew",
+   "relation": "The 27 letters, their values and the five finals (Agrippa's values verified in II.xix). The chambers group the hall's letters by unit value."
+  },
+  {
+   "to": "celestial",
+   "relation": "Printed in the same chapter (III.30), before the nine chambers (1651, p. 439)."
+  },
+  {
+   "to": "malachim",
+   "relation": "Printed in the same chapter (III.30), before the nine chambers (1651, p. 440)."
+  },
+  {
+   "to": "transitus-fluvii",
+   "relation": "Printed in the same chapter (III.30), immediately before the nine chambers (1651, p. 441)."
+  },
+  {
+   "to": "planetary-seals",
+   "relation": "Later occultists use the chamber reduction to trace names on the II.22 squares (attributed; Agrippa does not say so)."
+  },
+  {
+   "to": "latin",
+   "relation": "The later Freemasons' or pigpen cipher carries the mechanism over to the Latin letters (reported; the descent is undocumented)."
+  }
+ ],
+ "cautions": [
+  "Neither the research nor the fact-check could run a web search (the shared search budget was exhausted) or fetch a page. The fact-check verified the 1651 English against the EEBO-TCP keyed text A26565 (a local clone of the TCP repository). Everything else rests on recall or on the sibling research files and is marked so.",
+  "The grid's direction is unverified. Six of the nine figures (chambers 1, 3, 4, 6, 7 and 9) depend on whether the 1533 grid runs from the right, as assumed here, or from the left. Check the woodcut before drawing, or label the drawing as a diagram of the rule.",
+  "Agrippa's text does not give the layout of the grid ('as is expressed in this following figure', 1651 p. 442, verified). Rows are assumed. In columns from the top right, chambers 1, 5 and 9 keep their figures and the rest change; in columns from the top left, only chamber 5 is safe.",
+  "The number and arrangement of the points as printed (in a row, a triangle or a column) were not seen. The level row used here is the site's own.",
+  "Do not write 'Agrippa invented' this cipher. He ascribes it to the Cabalists. Do not write 'the Rosicrucians used it' or 'Napoleon used it'. Do not present the pigpen's descent from Agrippa as documented.",
+  "The fully contracted Michael character has no points ('the points Notariacon are wont to be omitted', 1651 p. 443). Do not add points to it.",
+  "Date the chapter 1533, not 1531.",
+  "Numeric values: in this system the finals are 500-900. If the site computes numeric from hebrew.js and that file gives finals their ordinary values (20, 40, 50, 80, 90), the page will be wrong for the finals. Show the system's values and say so.",
+  "The transliterator: the system writes Hebrew letters, not Latin ones. A Latin-to-Hebrew step would be the site's own and must be labelled as such. The contracted forms (several letters merged into one character) cannot be generated by rule from the text.",
+  "Living organisations: the Masonic cipher and Golden Dawn teaching circulate in living orders. Give a generic Latin key as a cryptographic illustration if wanted. Do not reproduce Masonic emblems, ritual texts or Golden Dawn papers. Describe the Leeson gravestone; do not reproduce it.",
+  "Quotations are J.F. 1651 (public domain), verified against EEBO-TCP A26565; two readings ('interfection', 'itbe ... poynt') should be checked against the page image before printing. Tyson's 1993 notes are in copyright and must be paraphrased. Barrett's Magus (1801) was not checked for whether it reprints the nine chambers.",
+  "Leads to check, not facts: whether della Porta's De furtivis literarum notis (Naples, 1563) or other 16th-17th-century cipher books print a grid-and-dot cipher, which would bridge 1533 and the Masonic 1700s; and the earliest Jewish source naming איק בכר."
+ ],
+ "sources": [
+  {
+   "citation": "Heinrich Cornelius Agrippa, De occulta philosophia libri tres, [Cologne: J. Soter?], 1533, Book III ch. 30 (a digitised Library of Congress copy is reported by the sibling research; not seen, URL withdrawn)",
+   "url": ""
+  },
+  {
+   "citation": "Agrippa, De occulta philosophia libri tres, ed. Vittoria Perrone Compagni, Leiden: Brill, 1992 (Studies in the History of Christian Thought 48, as reported by the sibling Malachim fact-check; not consulted; URL withdrawn)",
+   "url": ""
+  },
+  {
+   "citation": "Agrippa, Three Books of Occult Philosophy, trans. J.F., London: Printed by R.W. for Gregory Moule, 1651 (Wing A789), Book III ch. XXX pp. 439-444, Book II chs. XIX (p. 232) and XXII (pp. 239-242), front matter and p. 583: EEBO-TCP keyed text A26565 (CC0), read in a clone of the TCP repository (the URL is the clone's git remote, not a search result)",
+   "url": "https://github.com/textcreationpartnership/A26565"
+  },
+  {
+   "citation": "The same TCP text, Oxford HTML edition (URL printed in the repository README, not a search result)",
+   "url": "http://tei.it.ox.ac.uk/tcp/Texts-HTML/free/A26/A26565.html"
+  },
+  {
+   "citation": "Agrippa, Three Books of Occult Philosophy, trans. J.F. (1651), ed. Joseph H. Peterson, Esoteric Archives (not consulted; URL withdrawn)",
+   "url": ""
+  },
+  {
+   "citation": "Donald Tyson (ed.), Three Books of Occult Philosophy, St Paul: Llewellyn, 1993 (notes to III.30 and appendix on the magic squares; recalled, not consulted)",
+   "url": ""
+  },
+  {
+   "citation": "Israel Regardie, The Golden Dawn, 4 vols, Chicago: Aries Press, 1937-1940 ('Aiq Beker' as a reduction for sigils; recalled, not consulted)",
+   "url": ""
+  },
+  {
+   "citation": "David Kahn, The Codebreakers, New York: Macmillan, 1967 (pigpen / Freemasons' cipher; recalled, not consulted)",
+   "url": ""
+  },
+  {
+   "citation": "[attributed to Gabriel-Louis Pérau], L'Ordre des Francs-Maçons trahi, et le secret des Mopses révélé, Amsterdam, 1745 ('alphabet des Francs-Maçons'; recalled, low confidence)",
+   "url": ""
+  },
+  {
+   "citation": "Wikipedia, 'Pigpen cipher' (tertiary; cited only for what popular accounts claim: the 1531 date, the 'Rosicrucian' and 'Napoleon' names, the Leeson gravestone, the modern key; not checked; URL withdrawn)",
+   "url": ""
+  },
+  {
+   "citation": "Sibling research files celestial.json, malachim.verified.json and agrippa.json (1533 edition, printer, colophon, 1510 draft, the 1531 confusion), this project",
+   "url": ""
+  }
+ ],
+ "confidence": "SOLID (verified in J.F. 1651, EEBO-TCP A26565): the chapter (III.xxx, 'Another manner of making Characters, delivered by Cabalists', pp. 439-444); the 27 letters in three classes with the finals as hundreds; the three-worlds doctrine; the 'nine Chambers' holding the 1s, 2s, 3s and so on; the grid of four lines crossing at right angles; the nine figures; the points rule; the Michael example (five, three, one figures, the last without points); the ascription to the Cabalists; the absence of the names 'Aiq Bekar' and 'Kabbalah of the Nine Chambers' from J.F.'s text; Agrippa's final-letter values 500-900 (II.xix); July 1533 as rendered in the 1651 colophon; Trithemius's reply of 8 April 1510. The chamber contents and SVG paths are internally consistent. MEDIUM: the 1533 chapter number (taken from the 1651 translation); the figures for chambers 2, 5 and 8; the Golden Dawn reduction use. SHAKY: the grid's direction and row/column layout, and so the figures for chambers 1, 3, 4, 6, 7 and 9; where the points sit; the printer; the Masonic witnesses (1745 exposure, 1794 Leeson stone); the Civil War use; a pre-1533 Jewish source. UNPROVEN: the pigpen's descent from Agrippa. The 1533 print was not seen.",
+ "factcheck": {
+  "method": "WebSearch was unavailable (the turn's shared search budget was exhausted at the first query) and WebFetch failed DNS (esotericarchives.com). The checks rest on: (1) the EEBO-TCP keyed text of the 1651 English (A26565, Wing A789), cloned locally from github.com/textcreationpartnership/A26565 and read as data, with page numbers from its page-break markers; (2) a script check of the 27 values, the nine triads, the sides drawn and the SVG paths; (3) the sibling research files, cited as such; (4) the fact-checker's own knowledge, labelled where used.",
+  "corrections": [
+   "QUOTATION MISWORDED (quotations, claims[3]): 'There is also another fashion amongst the Cabalists, once had in great esteem' corrected to the 1651 text 'There is moreover another fashion amongst the Cabalists, formerly had in great esteem, but now it is so common, that it is placed amongst prophane things' (p. 441).",
+   "QUOTATION DOES NOT OCCUR (quotations, claims[1]): 'if it be of the first note in its Chamber, it requires one point; if the second, two points; if the third, three points' is not in J.F. 1651. Replaced by the actual wording 'which if itbe of one poynt shews the first letter of that Chamber; if of two, the second; if of three, the third letter' (pp. 442-443), with the TCP oddities flagged.",
+   "QUOTATION MISWORDED: 'as if thou wouldst write the character Michael' corrected to 'as if thou wouldest frame the Character Michael [Hebrew], that comes forth thus, extended with five figures' (p. 443).",
+   "QUOTATION spelling: 'these Chambers are framed by the intersection of four parallel lines' corrected to the TCP reading 'These Chambers are framed by the interfection of four paralell lines, intersecting themselves into right angles' (p. 442), with 'interfection' flagged as a probable long-s misreading to check on the page image.",
+   "uses[0]: the recalled phrases 'into one, yet more abbreviated' and 'all these are called by the name of Michael' do not occur in J.F. 1651. Replaced by the actual sentence 'Which then are contracted into one, yet the points Notariacon are wont to be omitted, and then there comes forth such a Character of Michael' (p. 443), added as a quotation. The one-figure Michael therefore has no points (added to summary, uses, cautions).",
+   "claims[0]: the recalled 'whereof every one shall contain nine letters' cannot be confirmed: the words after 'every one' are illegible gaps in the TCP keying (p. 441). Replaced by the verified wording with the gap marked.",
+   "All four quotations re-labelled: translator per the EEBO-TCP record ('The translator is probably John French. Cf. DNB.'); 'John Freake' removed (no source; Tyson 1993 is recalled to name James Freake, noted as unverified); imprint 'Printed by R.W. for Gregory Moule, 1651', Wing A789 and page numbers added. The 1651 chapter heading added as a verified quotation.",
+   "Chapter and pages VERIFIED for 1651: 'CHAP. XXX. Another manner of making Characters, delivered by Cabalists.' (p. 439); Celestial p. 439, Malachim p. 440, 'passing of the River' p. 441, nine chambers pp. 441-443, 'gathering together of letters' pp. 443-444. 'After the three-alphabet woodcut' replaced: in 1651 they are separate tables, and the 1533 single-woodcut layout was not seen. The 1533 chapter number is marked as taken from the translation.",
+   "II.22 VERIFIED as 'Of the tables of the Planets, their vertues, forms, and what Divine names, Intelligencies, and Spirits are set over them' (1651 p. 239). Added Agrippa's own statement that the method of drawing seals from the tables is left to 'the wise searcher' (p. 242) to claims[11] and uses[1].",
+   "Letter count, order and values VERIFIED: three classes with 'the other four letters, with the five final, by order' as hundreds (III.xxx p. 441); Agrippa's numeral table (II.xix p. 232) gives ך 500, ם 600, ן 700, ף 800, ץ 900. 'Agrippa (as recalled)' removed from the five final-letter notes. All 27 values, the nine mnemonic triads, the sides drawn and the SVG paths were checked by script and are consistent.",
+   "firstAttestation.date: July 1533 is now supported by the 1651 English's closing line 'Anno M. D. XXXIII. In the Moneth of Iuly.' (p. 583, verified); the Latin colophon wording is credited to the catalogue records cited by the sibling Malachim research.",
+   "1510: 'before 8 April 1510' changed to 'by 8 April 1510' (Trithemius's reply is dated 'the 8. day of April, An. M. D. X.', 1651 front matter, verified). Added Agrippa's 'we added some Chapters' ('To the Reader', verified), which forbids dating the passage to the draft.",
+   "1531 confusion: added that Book I's dedication (Mechelen, January 1531) is reprinted in the complete work (verified), as a possible, undocumented cause; 'confuse' softened to 'probably confuse'.",
+   "otherNames, claims[4]: VERIFIED by whole-text search that J.F. 1651 has 'nine Chambers' (p. 442) but no 'Aiq', 'Beker/Bekar' or 'Kabbalah (Cabala) of the Nine Chambers'. 'As recalled' removed for the 1651 English; the 1533 Latin remains unseen.",
+   "claims[7] (Freemasons in the 18th century): standing lowered from 'documented' to 'attributed'. Neither witness (1745 exposure, 1794 Leeson stone) was seen by anyone in this research.",
+   "family: 'It is the ancestor in mechanism' implied a descent nobody has documented; reworded to 'uses the same mechanism; a descent ... is often asserted, but no document shows it'. The 18th-century date of the Masonic cipher is marked as reported.",
+   "transmission (1651): 'Its plates are re-cut' (unsourced) replaced by 'whether the 1651 cuts copy the 1533 forms faithfully is unchecked'; added that the TCP marks five figure blocks but did not key the figures.",
+   "transmission (Golden Dawn): 'used for reduction, not for writing letters as chamber-figures' softened to 'chiefly for reduction', since the papers were not checked.",
+   "transmission (Jewish tradition): the statement that the nine groups serve gematria and substitution in Jewish usage is marked as the researcher's, with no named source.",
+   "LETTER FORMS judged: all nine figures and paths are the correct cell boundaries under the stated layout (Hebrew order, rows, from the top right), which agrees with the modern Aiq Bekar charts the fact-checker knows. Confidence kept: chambers 1, 3, 4, 6, 7, 9 low; 2 and 8 medium, now with the caveat that they become brackets if the chambers run in columns; 5 medium (secure under any reading order; points unseen).",
+   "cautions/lettersSource ERROR: 'In columns, only chamber 5 would keep its figure' is wrong. In columns from the top right (a transposition), chambers 1, 5 and 9 keep their figures; only in columns from the top left is 5 alone safe. Corrected.",
+   "URLs: none was seen in a search result (no search could run). Withdrawn: archive.org/details/DeOccultaPhilosophiaLoc1533 (also removed from lettersSource), the Google Books Perrone Compagni ID, the esotericarchives agripp3c link, the quod.lib.umich.edu EEBO div2 link, and the Wikipedia 'Pigpen cipher' link. Added the TCP GitHub repository (the clone's git remote) and the Oxford TCP HTML link (printed in the repository README), each labelled as seen locally, not in a search result.",
+   "links: added planetary-seals (the reduction for sigils, attributed); page numbers added to the celestial, malachim and transitus-fluvii relations; the latin relation marked as reported.",
+   "uses[0]: added the chapter's closing statement that such characters do not compel angels but are marks 'by which we rise up to them' (1651 p. 444, verified)."
+  ],
+  "unresolved": [
+   "LETTER FORMS: no figure was traced. The grid's direction (from the right or the left) and arrangement (rows or columns), and so the figures of chambers 1, 3, 4, 6, 7, 9 (and 2, 8 if columns), and the placement of the points, must be read from the 1533 woodcut or the 1651 cut (pp. 442-443, EEBO page image tcp:52070:237) before drawing; otherwise label the drawings 'a diagram of the rule'.",
+   "The contracted Michael characters (three figures; one figure without points) can only be traced from the woodcut.",
+   "1533 edition not seen: the Latin heading and wording of III.30, the chapter number itself, the page or signature, the woodcuts, the printer (Soter? / Basel per Adams, both as reported via the Eton record), and the four or five issues.",
+   "Whether the 1510 draft (reported as Würzburg UB M. ch. q. 50) contains this passage; Perrone Compagni 1992 would settle it.",
+   "The illegible TCP words in 'whereof every one [..] [..] l..ters' (p. 441); the reading 'interfection' (p. 442); 'itbe' and the superscript 's' after 'poynt' (pp. 442-443). Check against the page images before quoting.",
+   "Masonic witnesses: the 'alphabet des Francs-Maçons' in [Pérau], L'Ordre des Francs-Maçons trahi (Amsterdam, 1745), and the 1794 James Leeson gravestone (Trinity Churchyard, New York). Not checked.",
+   "Kahn, The Codebreakers (1967): the pigpen passage, its page, and the Civil War use. Not checked.",
+   "Golden Dawn (Regardie 1937-1940) and Tyson (1993): the 'Aiq Beker' reduction for sigils, the phrase 'Qabalah of the Nine Chambers', and Tyson's translator name (James Freake). Not checked.",
+   "What Wikipedia's 'Pigpen cipher' actually says (1531, 'Rosicrucian' and 'Napoleon' names, the modern key, the Leeson stone). Not checked.",
+   "A pre-1533 Jewish source for the chamber script or for the mnemonic איק בכר; the spellings 'Ayak Bakar', 'Ayaq Bakhar'; the lead on della Porta, De furtivis literarum notis (Naples, 1563), as a bridge to the Masonic cipher; whether Barrett's Magus (1801) reprints the nine chambers.",
+   "WITHDRAWN URLs, to restore only if a later pass sees them in search results: https://archive.org/details/DeOccultaPhilosophiaLoc1533 | https://books.google.com/books/about/De_Occulta_Philosophia.html?id=dCARYHTxmeIC | https://www.esotericarchives.com/agrippa/agripp3c.htm | https://quod.lib.umich.edu/e/eebo/A26565.0001.001/1:18.30?rgn=div2;view=fulltext | https://en.wikipedia.org/wiki/Pigpen_cipher"
+  ],
+  "readyToPublish": false
+ }
+}

@@ -1,0 +1,715 @@
+{
+  "key": "malachim",
+  "title": "Malachim (the Writing of the Angels, or Regal)",
+  "otherNames": [
+    "Malachim, or Melachim (Agrippa III.30, J.F. trans. 1651)",
+    "Scriptura Malachim (as given in a modern stock-image caption of the 1533 figure; whether the 1533 woodcut itself carries this label is unverified)",
+    "Writing of the Angels / Angelic writing",
+    "Regal writing",
+    "Secret Alphabet of Malachim (Mathers, Key of Solomon, 1889; wording not checked against the 1889 text)",
+    "Malchim (Museum of Witchcraft and Magic catalogue spelling; not re-verified)"
+  ],
+  "family": "Hebrew-keyed ring-letter alphabets (charaktêres / 'Brillenbuchstaben'). Its sisters are the Celestial Writing and Passing the River (Transitus fluvii), printed in the same chapter.",
+  "summary": "Malachim is a 22-letter alphabet keyed one-for-one to the Hebrew letters and drawn in strokes that end in small rings. Its earliest documented printing is in Agrippa's De occulta philosophia, Book III, chapter 30 (first complete edition, colophon July 1533), where it comes second of three alphabets, after the Celestial Writing and before Passing the River. Agrippa presents it as one of several scripts found 'amongst the Hebrews' and glosses the name 'of Angels, or Regal' (J.F. translation, 1651); the two spellings he gives, Malachim and Melachim, correspond to Hebrew mal'akhim, 'angels', and melakhim, 'kings'. No copy older than 1533 has been documented, and its later career runs through Barrett's Magus (1801) and Mathers's Key of Solomon (1889), which names it in a conjuration and identifies one pentacle inscription as written in it.",
+  "firstAttestation": {
+    "work": "De occulta philosophia libri tres",
+    "author": "Heinrich Cornelius Agrippa von Nettesheim",
+    "date": "1533. The colophon reads 'Anno M.D.XXXIII. Mense Iulio' (Utrecht and Eton catalogue records). Catalogues report four or five issues with this date.",
+    "place": "[Cologne]. The printer is usually given as Johannes Soter. Eton's catalogue queries this ('[J. Soter?]') and records Adams's suggestion of Basel.",
+    "locator": "Book III, chapter 30. The 1651 English heading is 'Another manner of making Characters, delivered by Cabalists'; the Latin heading was not checked. The Malachim is printed second of three alphabets, after the Celestial and before Transitus fluvii, which is the order in which the text introduces them. The claim that the three share one woodcut, one row each (Celestial top, Malachim middle, Transitus bottom), rests only on a stock-image caption that may describe a modern redrawing, and is unverified. The 1533 page and signature were not verified. For the 1651 English edition, dCode and a University of Chicago image caption give 'page 440'. That caption dates the book '1538', which is probably an error (the English title and the page point to the 1651 edition). The page is unverified.",
+    "notes": "This is the earliest printing of the Malachim that is documented here (but see the unresolved Pantheus 1530 question under 'transmission'). Agrippa sent a first draft of the work to Trithemius in 1510 (Würzburg, Universitätsbibliothek, M. ch. q. 50). It is not established whether that draft already has this chapter or these tables. Perrone Compagni's critical edition (Leiden: Brill, 1992; Studies in the History of Christian Thought 48), which takes account of the Würzburg manuscript, would settle it. Wikipedia's infobox reportedly gives 'Created: 1510'; that date belongs to the draft and is not evidence for the alphabet. Sites that give 1531 are confusing it with the 1531 printings, which contain Book I only."
+  },
+  "transmission": [
+    {
+      "date": "1510",
+      "work": "De occulta philosophia (manuscript draft sent to Trithemius; Würzburg UB M. ch. q. 50)",
+      "author": "Agrippa",
+      "what": "The early draft of the work. Whether it contains III.30's alphabets is unverified."
+    },
+    {
+      "date": "1523",
+      "work": "Miqneh Avram / Peculium Abrae (Venice: Daniel Bomberg)",
+      "author": "Abraham de Balmes",
+      "what": "Context, not the Malachim. According to Wikipedia ('Transitus Fluvii', sig. B6v) and the Rylands blog, this Hebrew-Latin grammar prints a ring-letter alphabet under a Hebrew 'river' name. The research gives the name as Ketav ever ha-nahar, 'script beyond the river'; that transliteration and gloss were not checked. If the report is right, printed ring-letter alphabets existed before 1533. Its relation to Agrippa's Passing the River is reported, not demonstrated here."
+    },
+    {
+      "date": "1530",
+      "work": "Voarchadumia contra alchimiam (Venice, 1530)",
+      "author": "Giovanni Agostino Pantheo (Pantheus)",
+      "what": "Possibly relevant, unverified. Pantheus is reported to print a 'transitus fluvii' alphabet and to connect it with Abraham (the research does not name the source of that report; probably Wikipedia 'Transitus Fluvii'). A Cipher Mysteries blog post (2009) reports a claim that this alphabet is 'a conglomeration of all three of Agrippa's alphabets'. If that is so, Malachim-like signs were in print three years before Agrippa, which would point to a shared source or to circulation of Agrippa's draft. The plate has not been seen. Wikipedia's page reference 'pp. 545-46' is not plausible for the 1530 Venice quarto and probably refers to a later collected reprint; it has been removed from this locator pending a check."
+    },
+    {
+      "date": "1533",
+      "work": "De occulta philosophia libri tres, III.30 ([Cologne: J. Soter?], colophon July 1533)",
+      "author": "Agrippa",
+      "what": "The first printing of the Malachim documented here. It is printed with the Hebrew letter names, second of three alphabets, and introduced in one sentence, which J.F. (1651) renders: 'There is also a writing which they call Malachim, or Melachim i. e. of Angels, or Regal'."
+    },
+    {
+      "date": "1651",
+      "work": "Three Books of Occult Philosophy (London: R.W. for Gregory Moule; Wellcome cites Wing A789)",
+      "author": "Agrippa, translated by 'J.F.' (catalogues give John French or John Freake)",
+      "what": "The English translation of III.30, with the tables re-cut. Wikipedia's Malachim table follows this edition. The page (440 per dCode) is unverified."
+    },
+    {
+      "date": "1675",
+      "work": "Bibliotheca magna rabbinica, vol. I (Rome)",
+      "author": "Giulio Bartolocci",
+      "what": "Omniglot says its Malachim chart is taken from 'Bartolozzi's Biblioteca Magna Rabbinica, 1675'. I could not verify the volume or page, and Omniglot's version differs from the 1651 one. Treat this as a lead."
+    },
+    {
+      "date": "1801",
+      "work": "The Magus, or Celestial Intelligencer (London: Lackington, Allen & Co.)",
+      "author": "Francis Barrett",
+      "what": "Reprints Agrippa's text of the chapter. The researcher located it in Book II, Part I, chapter XVI, following the sacred-texts transcription; that locator was not verified. A plate sets Theban, Celestial Writing, Malachim and Passing the River one above another."
+    },
+    {
+      "date": "1889",
+      "work": "The Key of Solomon the King (Clavicula Salomonis) (London, 1889)",
+      "author": "S. L. MacGregor Mathers (ed. and trans.), co-founder of the Hermetic Order of the Golden Dawn (1888)",
+      "what": "Two uses, both reported from search summaries of the sacred-texts and Esoteric Archives transcriptions and not checked against the 1889 text. (1) In a conjuration (located as Book I, chapter VII; unverified) the names are said to be written in heaven 'in the characters of Malachim', glossed as the tongue of the angels. A footnote by Mathers reportedly explains Malachim as formed from the positions of the stars, which is Agrippa's explanation of the Celestial, not of the Malachim. (2) Mathers identifies the inscription on the Sixth Pentacle of Mars (given as Figure 30; unverified), 'Elohim qeber', as written in the 'Secret Alphabet of Malachim'."
+    },
+    {
+      "date": "20th century",
+      "work": "Museum of Witchcraft and Magic, Richel collection, R/3/512, 'Drawing of the Malchim-alphabet'",
+      "author": "anonymous (Dutch-language notes)",
+      "what": "A hand-drawn copy of the alphabet with a note on the correct letter order, as the museum's online catalogue describes it (not re-verified). If the catalogue's dating is right, it is evidence of the alphabet's use in 20th-century private occult practice."
+    },
+    {
+      "date": "2025",
+      "work": "'Written in the Stars? Alphabets and Angels in Early Modern Europe', Journal of the History of Ideas 86.3, pp. 473-506",
+      "author": "Kirsten Macfarlane",
+      "what": "The scholarly account. It reconstructs how Brillenbuchstaben from medieval Jewish kabbalistic manuscripts were taken up by learned Christians as alphabets derived from the stars and authored by angels. The researcher read only the abstract and snippets; volume, issue and pages were not re-verified."
+    }
+  ],
+  "claims": [
+    {
+      "claim": "Agrippa printed the Malachim in De occulta philosophia III.30 (1533) with the Celestial and Passing the River.",
+      "standing": "documented",
+      "evidence": "The 1533 edition (digitised copies are reported at the Library of Congress, McGill and the Jung collection) and the 1651 English translation (EEBO-TCP A26565; Peterson's transcription) both have it in III.30, with the Celestial before it and Passing the River after it. A stock-image caption describes a figure with Scriptura Coelestis, Scriptura Malachim and Scriptura transitus fluvii from top to bottom. Whether that figure is the 1533 woodcut itself or a modern redrawing is unverified.",
+      "sources": [
+        "Agrippa 1533, III.30",
+        "J.F. trans. 1651, III.xxx (EEBO-TCP; Esoteric Archives)",
+        "Alamy caption of the 1533 woodcut"
+      ]
+    },
+    {
+      "claim": "The name means 'of Angels, or Regal'.",
+      "standing": "documented",
+      "evidence": "This is Agrippa's own gloss: 'Malachim, or Melachim i. e. of Angels, or Regal' (J.F. 1651). The two spellings answer to two Hebrew words, mal'akhim (מלאכים, 'messengers, angels') and melakhim (מלכים, 'kings'). The link to these Hebrew words is my lexical explanation; the Nu Isis compilation likewise ties 'Regal' to the Hebrew for 'kings'.",
+      "sources": [
+        "J.F. trans. 1651, III.xxx",
+        "Wikipedia 'Malachim' (mal'ach)",
+        "Nu Isis Working Group, Magical Scripts and Cipher Alphabets"
+      ]
+    },
+    {
+      "claim": "It is a writing of 'the Hebrews', handed down by the Cabalists.",
+      "standing": "attributed",
+      "evidence": "Agrippa attributes it so. The chapter is headed 'Another manner of making Characters, delivered by Cabalists' and opens 'Amongst the Hebrews I finde more fashions of Characters'. He does not name a Hebrew book or rabbi as his source.",
+      "sources": [
+        "J.F. trans. 1651, III.xxx"
+      ]
+    },
+    {
+      "claim": "The Malachim is older than Agrippa, a genuine Jewish or kabbalistic angelic alphabet.",
+      "standing": "disputed",
+      "evidence": "For: ring-ended charaktêres are well attested in Jewish magic from Late Antiquity onward (Bohak 2011). Macfarlane (2025) places such letters in medieval Jewish kabbalistic manuscripts. A printed ring-letter alphabet, Ketav ever ha-nahar, appears in de Balmes (Venice, 1523). The Rylands blog (Part II, 2022) shows that the term 'Malachim' labels an alphabet in a Jewish manuscript, British Library Or 10161, fol. 21v. That is a 17th- or 18th-century collection of recipes and charms once owned by Moses Gaster, and its letters are 'not entirely identical' to Agrippa's. Against: that manuscript postdates 1533 and may depend on Agrippa. No exemplar of this specific alphabet earlier than 1533 has been published. Wikipedia and Omniglot call it 'created by Agrippa', and dCode says it 'could be an invention' of his. Neither view is proven.",
+      "sources": [
+        "Bohak 2011",
+        "Macfarlane 2025 (abstract)",
+        "Rylands blog, 'Speaking to angels' Part II (2 Feb 2022)",
+        "Wikipedia 'Transitus Fluvii' (de Balmes 1523)",
+        "Wikipedia 'Malachim'",
+        "Omniglot",
+        "dCode"
+      ]
+    },
+    {
+      "claim": "Pantheus's Voarchadumia (Venice, 1530) already prints Malachim signs.",
+      "standing": "disputed",
+      "evidence": "A 2009 Cipher Mysteries blog post reports, at second hand, that Pantheus's 'transitus fluvii' alphabet is 'a conglomeration of all three of Agrippa's alphabets'. No scholarly study or plate seen confirms it.",
+      "sources": [
+        "Cipher Mysteries, 'The Voarchadumia & John Dee' (23 May 2009)",
+        "Pantheus 1530 (reported digitised by the BNC; plate not seen)"
+      ]
+    },
+    {
+      "claim": "Pietro d'Abano is the source of the Malachim.",
+      "standing": "disputed",
+      "evidence": "No source found credits the Malachim to Pietro d'Abano. The d'Abano attribution belongs to the Theban alphabet: according to Wikipedia ('Theban alphabet'), Trithemius's Polygraphia (1518) ascribes the Theban to Honorius of Thebes as relayed by Pietro d'Abano, and Agrippa prints the Theban in III.29. Any d'Abano credit for the Malachim is most likely a conflation of the two neighbouring chapters. (Whether Agrippa's own III.29 text repeats the d'Abano/Honorius ascription was not checked.)",
+      "sources": [
+        "Wikipedia 'Theban alphabet'",
+        "J.F. trans. 1651, III.xxix-xxx"
+      ]
+    },
+    {
+      "claim": "It was 'created in 1510'.",
+      "standing": "disputed",
+      "evidence": "This is Wikipedia's infobox date. 1510 is the year of Agrippa's manuscript draft, and that draft has not been shown to contain the alphabet. The first printing I can document is 1533.",
+      "sources": [
+        "Wikipedia 'Malachim'",
+        "Stanford Encyclopedia of Philosophy, 'Agrippa'",
+        "Eton and Utrecht catalogue records"
+      ]
+    },
+    {
+      "claim": "It is derived from the Hebrew and Greek alphabets.",
+      "standing": "disputed",
+      "evidence": "Wikipedia says so. The Hebrew keying is documented, because each sign is named for a Hebrew letter. A Greek derivation is not demonstrated in any source I found. Visual likeness of a few strokes to Greek letters is not evidence of descent.",
+      "sources": [
+        "Wikipedia 'Malachim'"
+      ]
+    },
+    {
+      "claim": "Malachim is a corrupted or re-ordered version of the Celestial alphabet.",
+      "standing": "disputed",
+      "evidence": "This is the opinion of a Quest magazine article (Theosophical Society in America), which says it 'seems to be a corrupted version of Celestial, with several of the letters switched around'. It is a modern judgement and is not argued from the sources.",
+      "sources": [
+        "Quest magazine, 'The Tongue of Angels' (Theosophical Society in America)"
+      ]
+    },
+    {
+      "claim": "The letters are formed from the positions of the stars.",
+      "standing": "legend",
+      "evidence": "Mathers (Key of Solomon, 1889) reportedly says this of the Malachim in a footnote; the wording is known only from search summaries and was not checked against the 1889 text. Agrippa says it only of the Celestial ('placed and figured amongst the Stars', J.F. 1651). If the footnote reads as reported, Mathers has carried the Celestial's explanation over to its sister script.",
+      "sources": [
+        "Mathers 1889, Book I ch. VII note (sacred-texts; Esoteric Archives)",
+        "J.F. trans. 1651, III.xxx"
+      ]
+    },
+    {
+      "claim": "The Golden Dawn used the Malachim, for example on talismans.",
+      "standing": "disputed",
+      "evidence": "Only a cipher-tool site (CipherChronicle) asserts this, without a source. I found no Golden Dawn ritual, knowledge lecture or manuscript that uses it. The Order's Cipher Manuscripts are written in Trithemius's cipher, not Malachim. The documented link is indirect: Mathers, a co-founder, used the Malachim in his 1889 Key of Solomon.",
+      "sources": [
+        "CipherChronicle 'Malachim'",
+        "Wikipedia 'Cipher Manuscripts'",
+        "Mathers 1889"
+      ]
+    },
+    {
+      "claim": "It is still used by high-degree Freemasons to a limited extent.",
+      "standing": "attributed",
+      "evidence": "Wikipedia and Omniglot say this without a source. A Masonic-ciphers chapter in a popular puzzle book includes a Malachim puzzle. Mackey's Encyclopedia of Freemasonry has an entry 'Alphabet, Angels'', but I could not read what it says. I found no ritual evidence.",
+      "sources": [
+        "Wikipedia 'Malachim'",
+        "Omniglot",
+        "Cracking Codes and Cryptograms For Dummies, ch. 8",
+        "Mackey, Encyclopedia of Freemasonry (entry not read)"
+      ]
+    },
+    {
+      "claim": "The Malachim has 23 signs, with two forms of Samekh.",
+      "standing": "disputed",
+      "evidence": "dCode and the Nu Isis compilation say so. A search summary of Wikipedia's 1651-based table shows a single Samech with an empty cell beside it. The 1533 woodcut must decide.",
+      "sources": [
+        "dCode",
+        "Nu Isis Working Group",
+        "Wikipedia 'Malachim'"
+      ]
+    }
+  ],
+  "letters": [
+    {
+      "order": 1,
+      "name": "Aleph",
+      "value": "א",
+      "translit": "' (glottal stop; vowel carrier)",
+      "numeric": 1,
+      "form": "NOT DESCRIBED. No image of this letter was seen (1533 woodcut, 1651 plate or Barrett's 1801 plate), and no text was found that describes its strokes. Family traits only, from a letter-list site (dCode): thin, mostly straight strokes, sometimes curved, ending in small circles. Do NOT draw it from the Hebrew letter's shape: nothing found shows that this letter resembles its Hebrew counterpart. Trace it from the Malachim alphabet (the second of the three printed in III.30) in a digitised copy of the 1533 edition (Library of Congress, McGill and Jung-collection copies are reported; repository identifiers withheld pending verification).",
+      "formConfidence": "low",
+      "note": "Order and value follow the Hebrew alphabet, to which the table is keyed. The numeric value is the standard Hebrew one, given for the transliterator; I found no evidence that Agrippa's Malachim table prints numbers. The spelling of the name is as the 1651 table gives it, as transcribed on Wikipedia's 'Malachim' page."
+    },
+    {
+      "order": 2,
+      "name": "Beth",
+      "value": "ב",
+      "translit": "b / v",
+      "numeric": 2,
+      "form": "NOT DESCRIBED. No image of this letter was seen (1533 woodcut, 1651 plate or Barrett's 1801 plate), and no text was found that describes its strokes. Family traits only, from a letter-list site (dCode): thin, mostly straight strokes, sometimes curved, ending in small circles. Do NOT draw it from the Hebrew letter's shape: nothing found shows that this letter resembles its Hebrew counterpart. Trace it from the Malachim alphabet (the second of the three printed in III.30) in a digitised copy of the 1533 edition (Library of Congress, McGill and Jung-collection copies are reported; repository identifiers withheld pending verification).",
+      "formConfidence": "low",
+      "note": "Order and value follow the Hebrew alphabet, to which the table is keyed. The numeric value is the standard Hebrew one, given for the transliterator; I found no evidence that Agrippa's Malachim table prints numbers. The spelling of the name is as the 1651 table gives it, as transcribed on Wikipedia's 'Malachim' page."
+    },
+    {
+      "order": 3,
+      "name": "Gimel",
+      "value": "ג",
+      "translit": "g",
+      "numeric": 3,
+      "form": "NOT DESCRIBED. No image of this letter was seen (1533 woodcut, 1651 plate or Barrett's 1801 plate), and no text was found that describes its strokes. Family traits only, from a letter-list site (dCode): thin, mostly straight strokes, sometimes curved, ending in small circles. Do NOT draw it from the Hebrew letter's shape: nothing found shows that this letter resembles its Hebrew counterpart. Trace it from the Malachim alphabet (the second of the three printed in III.30) in a digitised copy of the 1533 edition (Library of Congress, McGill and Jung-collection copies are reported; repository identifiers withheld pending verification).",
+      "formConfidence": "low",
+      "note": "Order and value follow the Hebrew alphabet, to which the table is keyed. The numeric value is the standard Hebrew one, given for the transliterator; I found no evidence that Agrippa's Malachim table prints numbers. The spelling of the name is as the 1651 table gives it, as transcribed on Wikipedia's 'Malachim' page."
+    },
+    {
+      "order": 4,
+      "name": "Daleth",
+      "value": "ד",
+      "translit": "d",
+      "numeric": 4,
+      "form": "NOT DESCRIBED. No image of this letter was seen (1533 woodcut, 1651 plate or Barrett's 1801 plate), and no text was found that describes its strokes. Family traits only, from a letter-list site (dCode): thin, mostly straight strokes, sometimes curved, ending in small circles. Do NOT draw it from the Hebrew letter's shape: nothing found shows that this letter resembles its Hebrew counterpart. Trace it from the Malachim alphabet (the second of the three printed in III.30) in a digitised copy of the 1533 edition (Library of Congress, McGill and Jung-collection copies are reported; repository identifiers withheld pending verification).",
+      "formConfidence": "low",
+      "note": "Order and value follow the Hebrew alphabet, to which the table is keyed. The numeric value is the standard Hebrew one, given for the transliterator; I found no evidence that Agrippa's Malachim table prints numbers. The spelling of the name is as the 1651 table gives it, as transcribed on Wikipedia's 'Malachim' page."
+    },
+    {
+      "order": 5,
+      "name": "He",
+      "value": "ה",
+      "translit": "h",
+      "numeric": 5,
+      "form": "NOT DESCRIBED. No image of this letter was seen (1533 woodcut, 1651 plate or Barrett's 1801 plate), and no text was found that describes its strokes. Family traits only, from a letter-list site (dCode): thin, mostly straight strokes, sometimes curved, ending in small circles. Do NOT draw it from the Hebrew letter's shape: nothing found shows that this letter resembles its Hebrew counterpart. Trace it from the Malachim alphabet (the second of the three printed in III.30) in a digitised copy of the 1533 edition (Library of Congress, McGill and Jung-collection copies are reported; repository identifiers withheld pending verification).",
+      "formConfidence": "low",
+      "note": "Order and value follow the Hebrew alphabet, to which the table is keyed. The numeric value is the standard Hebrew one, given for the transliterator; I found no evidence that Agrippa's Malachim table prints numbers. The spelling of the name is as the 1651 table gives it, as transcribed on Wikipedia's 'Malachim' page."
+    },
+    {
+      "order": 6,
+      "name": "Vau",
+      "value": "ו",
+      "translit": "v / w (also u, o)",
+      "numeric": 6,
+      "form": "NOT DESCRIBED. No image of this letter was seen (1533 woodcut, 1651 plate or Barrett's 1801 plate), and no text was found that describes its strokes. Family traits only, from a letter-list site (dCode): thin, mostly straight strokes, sometimes curved, ending in small circles. Do NOT draw it from the Hebrew letter's shape: nothing found shows that this letter resembles its Hebrew counterpart. Trace it from the Malachim alphabet (the second of the three printed in III.30) in a digitised copy of the 1533 edition (Library of Congress, McGill and Jung-collection copies are reported; repository identifiers withheld pending verification).",
+      "formConfidence": "low",
+      "note": "Order and value follow the Hebrew alphabet, to which the table is keyed. The numeric value is the standard Hebrew one, given for the transliterator; I found no evidence that Agrippa's Malachim table prints numbers. The spelling of the name is as the 1651 table gives it, as transcribed on Wikipedia's 'Malachim' page."
+    },
+    {
+      "order": 7,
+      "name": "Zain",
+      "value": "ז",
+      "translit": "z",
+      "numeric": 7,
+      "form": "NOT DESCRIBED. No image of this letter was seen (1533 woodcut, 1651 plate or Barrett's 1801 plate), and no text was found that describes its strokes. Family traits only, from a letter-list site (dCode): thin, mostly straight strokes, sometimes curved, ending in small circles. Do NOT draw it from the Hebrew letter's shape: nothing found shows that this letter resembles its Hebrew counterpart. Trace it from the Malachim alphabet (the second of the three printed in III.30) in a digitised copy of the 1533 edition (Library of Congress, McGill and Jung-collection copies are reported; repository identifiers withheld pending verification).",
+      "formConfidence": "low",
+      "note": "Order and value follow the Hebrew alphabet, to which the table is keyed. The numeric value is the standard Hebrew one, given for the transliterator; I found no evidence that Agrippa's Malachim table prints numbers. The spelling of the name is as the 1651 table gives it, as transcribed on Wikipedia's 'Malachim' page."
+    },
+    {
+      "order": 8,
+      "name": "Cheth",
+      "value": "ח",
+      "translit": "ḥ / ch",
+      "numeric": 8,
+      "form": "NOT DESCRIBED. No image of this letter was seen (1533 woodcut, 1651 plate or Barrett's 1801 plate), and no text was found that describes its strokes. Family traits only, from a letter-list site (dCode): thin, mostly straight strokes, sometimes curved, ending in small circles. Do NOT draw it from the Hebrew letter's shape: nothing found shows that this letter resembles its Hebrew counterpart. Trace it from the Malachim alphabet (the second of the three printed in III.30) in a digitised copy of the 1533 edition (Library of Congress, McGill and Jung-collection copies are reported; repository identifiers withheld pending verification).",
+      "formConfidence": "low",
+      "note": "Order and value follow the Hebrew alphabet, to which the table is keyed. The numeric value is the standard Hebrew one, given for the transliterator; I found no evidence that Agrippa's Malachim table prints numbers. The spelling of the name is as the 1651 table gives it, as transcribed on Wikipedia's 'Malachim' page."
+    },
+    {
+      "order": 9,
+      "name": "Teth",
+      "value": "ט",
+      "translit": "ṭ / t",
+      "numeric": 9,
+      "form": "NOT DESCRIBED. No image of this letter was seen (1533 woodcut, 1651 plate or Barrett's 1801 plate), and no text was found that describes its strokes. Family traits only, from a letter-list site (dCode): thin, mostly straight strokes, sometimes curved, ending in small circles. Do NOT draw it from the Hebrew letter's shape: nothing found shows that this letter resembles its Hebrew counterpart. Trace it from the Malachim alphabet (the second of the three printed in III.30) in a digitised copy of the 1533 edition (Library of Congress, McGill and Jung-collection copies are reported; repository identifiers withheld pending verification).",
+      "formConfidence": "low",
+      "note": "Order and value follow the Hebrew alphabet, to which the table is keyed. The numeric value is the standard Hebrew one, given for the transliterator; I found no evidence that Agrippa's Malachim table prints numbers. The name is in its conventional Agrippa-era spelling, with the modern form in brackets. It was not checked against the table."
+    },
+    {
+      "order": 10,
+      "name": "Iod (Yod)",
+      "value": "י",
+      "translit": "y / i / j",
+      "numeric": 10,
+      "form": "NOT DESCRIBED. No image of this letter was seen (1533 woodcut, 1651 plate or Barrett's 1801 plate), and no text was found that describes its strokes. Family traits only, from a letter-list site (dCode): thin, mostly straight strokes, sometimes curved, ending in small circles. Do NOT draw it from the Hebrew letter's shape: nothing found shows that this letter resembles its Hebrew counterpart. Trace it from the Malachim alphabet (the second of the three printed in III.30) in a digitised copy of the 1533 edition (Library of Congress, McGill and Jung-collection copies are reported; repository identifiers withheld pending verification).",
+      "formConfidence": "low",
+      "note": "Order and value follow the Hebrew alphabet, to which the table is keyed. The numeric value is the standard Hebrew one, given for the transliterator; I found no evidence that Agrippa's Malachim table prints numbers. The name is in its conventional Agrippa-era spelling, with the modern form in brackets. It was not checked against the table."
+    },
+    {
+      "order": 11,
+      "name": "Caph (Kaph)",
+      "value": "כ",
+      "translit": "k / kh",
+      "numeric": 20,
+      "form": "NOT DESCRIBED. This letter was not seen. The only clue is an individual, unaccepted Unicode proposal for Agrippa's alphabets (Willow McKinnis; not re-verified in this pass), which reportedly names 'Malachim Kaph' as one of the few signs in these scripts that 'show distinctive resemblances' to its Hebrew source. That would suggest, as an inference only, an outline like Hebrew Kaph (open on the left) with ring-ends. Do not draw it from this inference. Trace it from the Malachim alphabet (the second of the three printed in III.30) in a digitised copy of the 1533 edition (Library of Congress, McGill and Jung-collection copies are reported; repository identifiers withheld pending verification).",
+      "formConfidence": "low",
+      "note": "Order and value follow the Hebrew alphabet, to which the table is keyed. The numeric value is the standard Hebrew one, given for the transliterator; I found no evidence that Agrippa's Malachim table prints numbers. The name is in its conventional Agrippa-era spelling, with the modern form in brackets. It was not checked against the table. This is the one Malachim letter that a source says looks like its Hebrew counterpart. The resemblance rests on one unverified individual proposal; this is not an observation of the letter."
+    },
+    {
+      "order": 12,
+      "name": "Lamed",
+      "value": "ל",
+      "translit": "l",
+      "numeric": 30,
+      "form": "NOT DESCRIBED. No image of this letter was seen (1533 woodcut, 1651 plate or Barrett's 1801 plate), and no text was found that describes its strokes. Family traits only, from a letter-list site (dCode): thin, mostly straight strokes, sometimes curved, ending in small circles. Do NOT draw it from the Hebrew letter's shape: nothing found shows that this letter resembles its Hebrew counterpart. Trace it from the Malachim alphabet (the second of the three printed in III.30) in a digitised copy of the 1533 edition (Library of Congress, McGill and Jung-collection copies are reported; repository identifiers withheld pending verification).",
+      "formConfidence": "low",
+      "note": "Order and value follow the Hebrew alphabet, to which the table is keyed. The numeric value is the standard Hebrew one, given for the transliterator; I found no evidence that Agrippa's Malachim table prints numbers. The name is in its conventional Agrippa-era spelling, with the modern form in brackets. It was not checked against the table."
+    },
+    {
+      "order": 13,
+      "name": "Mem",
+      "value": "מ",
+      "translit": "m",
+      "numeric": 40,
+      "form": "NOT DESCRIBED. No image of this letter was seen (1533 woodcut, 1651 plate or Barrett's 1801 plate), and no text was found that describes its strokes. Family traits only, from a letter-list site (dCode): thin, mostly straight strokes, sometimes curved, ending in small circles. Do NOT draw it from the Hebrew letter's shape: nothing found shows that this letter resembles its Hebrew counterpart. Trace it from the Malachim alphabet (the second of the three printed in III.30) in a digitised copy of the 1533 edition (Library of Congress, McGill and Jung-collection copies are reported; repository identifiers withheld pending verification).",
+      "formConfidence": "low",
+      "note": "Order and value follow the Hebrew alphabet, to which the table is keyed. The numeric value is the standard Hebrew one, given for the transliterator; I found no evidence that Agrippa's Malachim table prints numbers. The name is in its conventional Agrippa-era spelling, with the modern form in brackets. It was not checked against the table."
+    },
+    {
+      "order": 14,
+      "name": "Nun",
+      "value": "נ",
+      "translit": "n",
+      "numeric": 50,
+      "form": "NOT DESCRIBED. No image of this letter was seen (1533 woodcut, 1651 plate or Barrett's 1801 plate), and no text was found that describes its strokes. Family traits only, from a letter-list site (dCode): thin, mostly straight strokes, sometimes curved, ending in small circles. Do NOT draw it from the Hebrew letter's shape: nothing found shows that this letter resembles its Hebrew counterpart. Trace it from the Malachim alphabet (the second of the three printed in III.30) in a digitised copy of the 1533 edition (Library of Congress, McGill and Jung-collection copies are reported; repository identifiers withheld pending verification).",
+      "formConfidence": "low",
+      "note": "Order and value follow the Hebrew alphabet, to which the table is keyed. The numeric value is the standard Hebrew one, given for the transliterator; I found no evidence that Agrippa's Malachim table prints numbers. The name is in its conventional Agrippa-era spelling, with the modern form in brackets. It was not checked against the table."
+    },
+    {
+      "order": 15,
+      "name": "Samech (Samekh)",
+      "value": "ס",
+      "translit": "s",
+      "numeric": 60,
+      "form": "NOT DESCRIBED. This letter was not seen. Two letter-list sources (dCode, and the Nu Isis Working Group compilation) say the Malachim has TWO signs for Samekh, which makes 23 signs for 22 letters. Nu Isis suggests the second sign may answer to a 'Samekh final' mentioned in some magical works. A search summary of Wikipedia's 1651-based table, however, shows one Samech with an empty cell beside it. Trace whatever the 1533 edition shows, and record both signs if it has two. Trace it from the Malachim alphabet (the second of the three printed in III.30) in a digitised copy of the 1533 edition (Library of Congress, McGill and Jung-collection copies are reported; repository identifiers withheld pending verification).",
+      "formConfidence": "low",
+      "note": "Order and value follow the Hebrew alphabet, to which the table is keyed. The numeric value is the standard Hebrew one, given for the transliterator; I found no evidence that Agrippa's Malachim table prints numbers. The name is in its conventional Agrippa-era spelling, with the modern form in brackets. It was not checked against the table. The site must decide how to show the variant. It is not an attested 'final' in Agrippa, and Hebrew has no final Samekh."
+    },
+    {
+      "order": 16,
+      "name": "Ain (Ayin)",
+      "value": "ע",
+      "translit": "ʿ (ayin)",
+      "numeric": 70,
+      "form": "NOT DESCRIBED. No image of this letter was seen (1533 woodcut, 1651 plate or Barrett's 1801 plate), and no text was found that describes its strokes. Family traits only, from a letter-list site (dCode): thin, mostly straight strokes, sometimes curved, ending in small circles. Do NOT draw it from the Hebrew letter's shape: nothing found shows that this letter resembles its Hebrew counterpart. Trace it from the Malachim alphabet (the second of the three printed in III.30) in a digitised copy of the 1533 edition (Library of Congress, McGill and Jung-collection copies are reported; repository identifiers withheld pending verification).",
+      "formConfidence": "low",
+      "note": "Order and value follow the Hebrew alphabet, to which the table is keyed. The numeric value is the standard Hebrew one, given for the transliterator; I found no evidence that Agrippa's Malachim table prints numbers. The name is in its conventional Agrippa-era spelling, with the modern form in brackets. It was not checked against the table."
+    },
+    {
+      "order": 17,
+      "name": "Pe",
+      "value": "פ",
+      "translit": "p / ph",
+      "numeric": 80,
+      "form": "NOT DESCRIBED. No image of this letter was seen (1533 woodcut, 1651 plate or Barrett's 1801 plate), and no text was found that describes its strokes. Family traits only, from a letter-list site (dCode): thin, mostly straight strokes, sometimes curved, ending in small circles. Do NOT draw it from the Hebrew letter's shape: nothing found shows that this letter resembles its Hebrew counterpart. Trace it from the Malachim alphabet (the second of the three printed in III.30) in a digitised copy of the 1533 edition (Library of Congress, McGill and Jung-collection copies are reported; repository identifiers withheld pending verification).",
+      "formConfidence": "low",
+      "note": "Order and value follow the Hebrew alphabet, to which the table is keyed. The numeric value is the standard Hebrew one, given for the transliterator; I found no evidence that Agrippa's Malachim table prints numbers. The name is in its conventional Agrippa-era spelling, with the modern form in brackets. It was not checked against the table."
+    },
+    {
+      "order": 18,
+      "name": "Zade (Tsade)",
+      "value": "צ",
+      "translit": "ts / ṣ",
+      "numeric": 90,
+      "form": "NOT DESCRIBED. No image of this letter was seen (1533 woodcut, 1651 plate or Barrett's 1801 plate), and no text was found that describes its strokes. Family traits only, from a letter-list site (dCode): thin, mostly straight strokes, sometimes curved, ending in small circles. Do NOT draw it from the Hebrew letter's shape: nothing found shows that this letter resembles its Hebrew counterpart. Trace it from the Malachim alphabet (the second of the three printed in III.30) in a digitised copy of the 1533 edition (Library of Congress, McGill and Jung-collection copies are reported; repository identifiers withheld pending verification).",
+      "formConfidence": "low",
+      "note": "Order and value follow the Hebrew alphabet, to which the table is keyed. The numeric value is the standard Hebrew one, given for the transliterator; I found no evidence that Agrippa's Malachim table prints numbers. The name is in its conventional Agrippa-era spelling, with the modern form in brackets. It was not checked against the table."
+    },
+    {
+      "order": 19,
+      "name": "Kuff (Qoph)",
+      "value": "ק",
+      "translit": "q",
+      "numeric": 100,
+      "form": "NOT DESCRIBED. No image of this letter was seen (1533 woodcut, 1651 plate or Barrett's 1801 plate), and no text was found that describes its strokes. Family traits only, from a letter-list site (dCode): thin, mostly straight strokes, sometimes curved, ending in small circles. Do NOT draw it from the Hebrew letter's shape: nothing found shows that this letter resembles its Hebrew counterpart. Trace it from the Malachim alphabet (the second of the three printed in III.30) in a digitised copy of the 1533 edition (Library of Congress, McGill and Jung-collection copies are reported; repository identifiers withheld pending verification).",
+      "formConfidence": "low",
+      "note": "Order and value follow the Hebrew alphabet, to which the table is keyed. The numeric value is the standard Hebrew one, given for the transliterator; I found no evidence that Agrippa's Malachim table prints numbers. The name is in its conventional Agrippa-era spelling, with the modern form in brackets. It was not checked against the table."
+    },
+    {
+      "order": 20,
+      "name": "Res (Resh)",
+      "value": "ר",
+      "translit": "r",
+      "numeric": 200,
+      "form": "NOT DESCRIBED. No image of this letter was seen (1533 woodcut, 1651 plate or Barrett's 1801 plate), and no text was found that describes its strokes. Family traits only, from a letter-list site (dCode): thin, mostly straight strokes, sometimes curved, ending in small circles. Do NOT draw it from the Hebrew letter's shape: nothing found shows that this letter resembles its Hebrew counterpart. Trace it from the Malachim alphabet (the second of the three printed in III.30) in a digitised copy of the 1533 edition (Library of Congress, McGill and Jung-collection copies are reported; repository identifiers withheld pending verification).",
+      "formConfidence": "low",
+      "note": "Order and value follow the Hebrew alphabet, to which the table is keyed. The numeric value is the standard Hebrew one, given for the transliterator; I found no evidence that Agrippa's Malachim table prints numbers. The name is in its conventional Agrippa-era spelling, with the modern form in brackets. It was not checked against the table."
+    },
+    {
+      "order": 21,
+      "name": "Schin (Shin)",
+      "value": "ש",
+      "translit": "sh / s",
+      "numeric": 300,
+      "form": "NOT DESCRIBED. No image of this letter was seen (1533 woodcut, 1651 plate or Barrett's 1801 plate), and no text was found that describes its strokes. Family traits only, from a letter-list site (dCode): thin, mostly straight strokes, sometimes curved, ending in small circles. Do NOT draw it from the Hebrew letter's shape: nothing found shows that this letter resembles its Hebrew counterpart. Trace it from the Malachim alphabet (the second of the three printed in III.30) in a digitised copy of the 1533 edition (Library of Congress, McGill and Jung-collection copies are reported; repository identifiers withheld pending verification).",
+      "formConfidence": "low",
+      "note": "Order and value follow the Hebrew alphabet, to which the table is keyed. The numeric value is the standard Hebrew one, given for the transliterator; I found no evidence that Agrippa's Malachim table prints numbers. The name is in its conventional Agrippa-era spelling, with the modern form in brackets. It was not checked against the table."
+    },
+    {
+      "order": 22,
+      "name": "Tau (Tav)",
+      "value": "ת",
+      "translit": "t / th",
+      "numeric": 400,
+      "form": "NOT DESCRIBED. No image of this letter was seen (1533 woodcut, 1651 plate or Barrett's 1801 plate), and no text was found that describes its strokes. Family traits only, from a letter-list site (dCode): thin, mostly straight strokes, sometimes curved, ending in small circles. Do NOT draw it from the Hebrew letter's shape: nothing found shows that this letter resembles its Hebrew counterpart. Trace it from the Malachim alphabet (the second of the three printed in III.30) in a digitised copy of the 1533 edition (Library of Congress, McGill and Jung-collection copies are reported; repository identifiers withheld pending verification).",
+      "formConfidence": "low",
+      "note": "Order and value follow the Hebrew alphabet, to which the table is keyed. The numeric value is the standard Hebrew one, given for the transliterator; I found no evidence that Agrippa's Malachim table prints numbers. The name is in its conventional Agrippa-era spelling, with the modern form in brackets. It was not checked against the table."
+    }
+  ],
+  "lettersSource": "Order, names and values: the 22 Hebrew letters in Hebrew order, which is how Agrippa keys the table; all sources the researcher consulted agree on this. The first eight name spellings (Aleph, Beth, Gimel, Daleth, He, Vau, Zain, Cheth) are reported as the 1651 table's, from Wikipedia's transcription; the rest are conventional Agrippa-era spellings, not checked against the table. Numeric values are the standard Hebrew ones, added for the transliterator, not printed by Agrippa as far as was found. No distinct final forms are reported, except a possible second Samekh (see letter 15). FORMS: NONE VERIFIED. All 22 are 'low'. No image or facsimile could be viewed, and no source describes the Malachim letters stroke by stroke. They must not be reconstructed from the Hebrew square letters. To draw them, trace the Malachim alphabet in III.30 of a digitised 1533 copy. Later settings (the 1651 English edition, Barrett's 1801 plate, Omniglot's chart, which Omniglot says follows Bartolocci 1675, and modern fonts) were not compared with 1533 and may differ, so do not substitute them silently. The research also mentions a '1550' re-cut, but no printer, place or source was given for it.",
+  "uses": [
+    {
+      "use": "Shown in Agrippa as one of the Hebrew 'fashions of characters'",
+      "evidence": "In III.30 Agrippa lists the most ancient script of Moses and the prophets (adding that the letters in use today were instituted by Esdras), then the Celestial, the Malachim and the Passing through the River, and prints their tables (J.F. 1651). He gives the Malachim no rite or recipe of its own. It sits between III.29 (characters and seals of spirits, with the Theban) and III.31 (characters received by revelation)."
+    },
+    {
+      "use": "Writing angelic and divine names in Solomonic magic",
+      "evidence": "Mathers's Key of Solomon (1889), as reported from search summaries of the online transcriptions (not checked against the 1889 text). In a conjuration (located as Book I, chapter VII; unverified) the names are 'written in Heaven in the characters of Malachim', which the text glosses as the tongue of the angels. The Sixth Pentacle of Mars (given as Figure 30; unverified) has the words 'Elohim qeber' ('Elohim hath covered', or 'protected', in Mathers's rendering) around its radii, and Mathers identifies them as Malachim. That identification is the editor's reading of the signs drawn in his manuscripts."
+    },
+    {
+      "use": "Learned display in collections of alphabets",
+      "evidence": "Barrett (1801) reprints it with Theban, Celestial and Passing the River. Omniglot names Bartolocci's Bibliotheca magna rabbinica (1675) as the source of its chart (unverified). Whether Vigenère (Traicté des chiffres, 1586), Duret (Thrésor, 1613) or Kircher (Oedipus Aegyptiacus, 1652-54) reprint the Malachim specifically, I could not verify."
+    },
+    {
+      "use": "Private occult practice in the 20th century",
+      "evidence": "A drawing of the 'Malchim-alphabet' with Dutch notes on letter order, Museum of Witchcraft and Magic, Richel collection R/3/512."
+    },
+    {
+      "use": "Modern substitution cipher, puzzle and font",
+      "evidence": "The McKinnis encoding proposal notes that in practice the script is 'largely used as a simple substitution cipher for the Latin alphabet'. dCode and Omniglot offer letter tables, and a For Dummies puzzle book uses it in its Masonic-cipher chapter. Any Latin-to-Malachim mapping is a modern convention, not Agrippa's."
+    }
+  ],
+  "quotations": [
+    {
+      "text": "Another manner of making Characters, delivered by Cabalists.",
+      "translation": "J.F. (catalogues give John French or John Freake), Three Books of Occult Philosophy, London: R.W. for Gregory Moule, 1651, as transcribed by EEBO-TCP (A26565) and Joseph H. Peterson (Esoteric Archives). The wording matches the fact-checker's recollection of this widely reproduced heading but was not re-viewed against the transcription in this pass.",
+      "source": "Agrippa, De occulta philosophia, Book III, chapter 30 (chapter heading)"
+    },
+    {
+      "text": "[Paraphrase, not a quotation] Agrippa opens the chapter by saying that he finds several kinds of characters among the Hebrews, the most ancient being the script used by Moses and the prophets.",
+      "translation": "Three Magi Press paraphrase of J.F.'s English (London: R.W. for Gregory Moule, 1651). The exact wording of the opening ('finde' or 'find') could not be confirmed against EEBO-TCP or Peterson, so it is not quoted.",
+      "source": "Agrippa, De occulta philosophia, Book III, chapter 30 (opening)"
+    },
+    {
+      "text": "There is also a writing which they call Malachim, or Melachim i. e. of Angels, or Regal; there is also another, which they call the passing through the River",
+      "translation": "J.F., London: R.W. for Gregory Moule, 1651, as transcribed in EEBO-TCP A26565 and by Joseph H. Peterson (Esoteric Archives). The wording matches the fact-checker's recollection of the passage but was not re-viewed against the transcription in this pass.",
+      "source": "Agrippa, De occulta philosophia, Book III, chapter 30"
+    }
+  ],
+  "links": [
+    {
+      "to": "hebrew",
+      "relation": "Its 22 signs are one-for-one stand-ins for the Hebrew letters, in Hebrew order."
+    },
+    {
+      "to": "celestial",
+      "relation": "Sister alphabet printed just before it in III.30. Mathers reportedly transferred the Celestial's star-origin explanation to the Malachim."
+    },
+    {
+      "to": "transitus",
+      "relation": "Sister alphabet printed just after it in III.30. A 2009 blog post reports a claim that Pantheus's 1530 'transitus fluvii' mixes signs from all three (unverified)."
+    },
+    {
+      "to": "theban",
+      "relation": "Printed in the preceding chapter (III.29). The Pietro d'Abano / Honorius attribution belongs to the Theban (Trithemius, Polygraphia, 1518, as reported by Wikipedia), not to the Malachim."
+    },
+    {
+      "to": "charakteres",
+      "relation": "The ring-ended charaktêres (Brillenbuchstaben) of Jewish magic are the graphic family it belongs to (Bohak 2011; Macfarlane 2025)."
+    },
+    {
+      "to": "pgm",
+      "relation": "Ring-letter charaktêres go back to Graeco-Egyptian magic (Bohak 2011)."
+    }
+  ],
+  "cautions": [
+    "LETTER FORMS ARE NOT DESCRIBED. Drawing 'Agrippa's Malachim' from this file would mean inventing it. The letters must be traced from the 1533 edition, or the wing must show a gap.",
+    "Do not say 'Agrippa invented it', and do not say 'it is an ancient angelic script'. Say that Agrippa printed it in 1533 as a writing found among the Hebrews, and that no earlier copy has been documented.",
+    "Do not date it 1510 (the draft) or 1531 (Book I only). The earliest documented printing is 1533, subject to the open Pantheus (1530) question.",
+    "Do not credit it to Pietro d'Abano; that attribution belongs to the Theban. Do not say the Golden Dawn used it; no evidence was found. The documented Victorian use is Mathers's Key of Solomon (1889), which is not a Golden Dawn document as such.",
+    "Do not say Mathers used it for 'angel names on a pentacle'. The pentacle inscription he identifies as Malachim reads 'Elohim qeber'.",
+    "Mathers's footnote reportedly says Malachim comes from star positions, which misapplies Agrippa's explanation of the Celestial. If the page quotes Mathers, it should say so.",
+    "Mathers's wording, chapter (Book I ch. VII) and figure number (Figure 30) come from search summaries of the sacred-texts and Esoteric Archives transcriptions. Check all three against the 1889 text before printing.",
+    "The British Library Or 10161 'Malachim' (17th-18th century, per the Rylands blog) postdates Agrippa. Do not present it as proof of an older Jewish origin.",
+    "Later editions set the tables afresh (1651 and Barrett 1801; Omniglot says its chart follows Bartolocci 1675; a '1550' re-cut is mentioned without any identification). They were not compared with 1533, so the page must name the edition it draws.",
+    "Pages and folios: the 1533 page and signature, the 1651 page (440 per dCode and a UChicago caption, which probably wrongly says '1538') and the de Balmes signature (B6v) are all unverified. Wikipedia's Pantheus pages (545-46) do not fit the 1530 edition and were removed.",
+    "That the three alphabets share one 1533 woodcut, with the Malachim as its middle row, rests on a stock-image caption only.",
+    "The 1533 printer is usually given as Johannes Soter of Cologne, but Eton reportedly queries it and records Adams's suggestion of Basel. Catalogues report four or five 1533 issues.",
+    "Agrippa does not state the reading direction, as far as was found. The left-to-right layout of the table is not evidence of the writing direction.",
+    "The Unicode proposal is an individual submission (Willow McKinnis). No evidence was found that it was accepted, and it was not re-verified in the fact-check.",
+    "Quotations 1 and 3 match the fact-checker's recollection of J.F. 1651 but were not re-viewed in the fact-check (no web access). Check them against EEBO-TCP A26565 before printing.",
+    "Source URLs were withheld because none could be re-seen in search results during the fact-check. They are listed under factcheck.unresolved for a re-check."
+  ],
+  "sources": [
+    {
+      "citation": "Heinrich Cornelius Agrippa, De occulta philosophia libri tres, [Cologne: J. Soter?], July 1533, III.30 (Library of Congress copy, digitised)",
+      "url": ""
+    },
+    {
+      "citation": "Agrippa 1533, McGill Osler Library copy (digitised; notes that the 1533 issues differ typographically)",
+      "url": ""
+    },
+    {
+      "citation": "Agrippa 1533, C. G. Jung collection copy (digitised; images on e-rara)",
+      "url": ""
+    },
+    {
+      "citation": "Eton College Library catalogue record of the 1533 edition (colophon 'Mense Iulio'; '[J. Soter?]'; Adams suggests Basel)",
+      "url": ""
+    },
+    {
+      "citation": "Utrecht University Library record of the 1533 edition (colophon 'Anno M.D.XXXIII. Mense Iulio'; 4 or 5 issues)",
+      "url": ""
+    },
+    {
+      "citation": "Wellcome Collection record of the 1533 edition ('A' variant, [July 1533])",
+      "url": ""
+    },
+    {
+      "citation": "Agrippa, De occulta philosophia libri tres, ed. Vittoria Perrone Compagni, Leiden: Brill, 1992 (Studies in the History of Christian Thought 48) (not consulted)",
+      "url": ""
+    },
+    {
+      "citation": "Agrippa, Three Books of Occult Philosophy, trans. J.F., London: R.W. for Gregory Moule, 1651, III.xxx (EEBO-TCP A26565)",
+      "url": ""
+    },
+    {
+      "citation": "The same, Book III part 3, ed. Joseph H. Peterson, Esoteric Archives",
+      "url": ""
+    },
+    {
+      "citation": "Wellcome Collection record of the 1651 translation (J.F[reake]; John French or John Freake; Wing A789)",
+      "url": ""
+    },
+    {
+      "citation": "Stanford Encyclopedia of Philosophy, 'Heinrich Cornelius Agrippa von Nettesheim' (1510 draft; 1533 edition)",
+      "url": ""
+    },
+    {
+      "citation": "Kirsten Macfarlane, 'Written in the Stars? Alphabets and Angels in Early Modern Europe', Journal of the History of Ideas 86.3 (2025), 473-506 (abstract and snippets only)",
+      "url": ""
+    },
+    {
+      "citation": "Macfarlane 2025, abstract (PhilPapers)",
+      "url": ""
+    },
+    {
+      "citation": "Gideon Bohak, 'The Charaktêres in Ancient and Medieval Jewish Magic', Acta Classica Universitatis Scientiarum Debreceniensis 47 (2011), 25-44",
+      "url": ""
+    },
+    {
+      "citation": "Rylands Library blog, 'Speaking to angels: Charaktêres in Jewish magical manuscripts', Part II (2 February 2022): Gaster Hebrew MS 177 fols. 44a-45a; BL Or 10161 fol. 21v 'Malachim'; de Balmes 1523",
+      "url": ""
+    },
+    {
+      "citation": "Wikipedia, 'Transitus Fluvii' (de Balmes 1523 sig. B6v; gives 'pp. 545-46' for Pantheus, which cannot be the 1530 edition's pages): a pointer only",
+      "url": ""
+    },
+    {
+      "citation": "Giovanni Agostino Pantheo, Voarchadumia contra alchimiam, Venice 1530 (reported digitised by the BNC; not seen)",
+      "url": ""
+    },
+    {
+      "citation": "Nick Pelling, Cipher Mysteries, 'The Voarchadumia & John Dee...' (23 May 2009): a blog, second-hand claim",
+      "url": ""
+    },
+    {
+      "citation": "Francis Barrett, The Magus, London 1801, Book II Part I ch. XVI (sacred-texts transcription)",
+      "url": ""
+    },
+    {
+      "citation": "Barrett 1801 plate of Theban, Celestial Writing, Malachim, Passing the River (Source Library)",
+      "url": ""
+    },
+    {
+      "citation": "Barrett, The Magus (1801), full scan on Wikimedia Commons",
+      "url": ""
+    },
+    {
+      "citation": "S. L. MacGregor Mathers, The Key of Solomon the King (1889), Book I ch. VII, conjuration and note (sacred-texts)",
+      "url": ""
+    },
+    {
+      "citation": "Mathers, Key of Solomon (1889), Sixth Pentacle of Mars, Figure 30 (sacred-texts)",
+      "url": ""
+    },
+    {
+      "citation": "Mathers, Key of Solomon, ed. Joseph H. Peterson, Esoteric Archives",
+      "url": ""
+    },
+    {
+      "citation": "Museum of Witchcraft and Magic, Richel collection, R/3/512, 'Drawing of the Malchim-alphabet'",
+      "url": ""
+    },
+    {
+      "citation": "University of Chicago Divinity School news (image caption 'Agrippa's Malachim Script, from Of Occult Philosophy, 1538, page 440')",
+      "url": ""
+    },
+    {
+      "citation": "Alamy stock image captioned as from the 1533 edition, naming Scriptura Coelestis (top), Scriptura Malachim (middle), Scriptura transitus fluvii (bottom); whether the image is the 1533 woodcut or a modern redrawing is unverified",
+      "url": ""
+    },
+    {
+      "citation": "Wikipedia, 'Malachim' (1510 infobox date; 'Hebrew and Greek'; Freemasons; 1651-based table): reported as a claim",
+      "url": ""
+    },
+    {
+      "citation": "Wikipedia, 'Theban alphabet' (d'Abano/Honorius attribution; Agrippa III.29)",
+      "url": ""
+    },
+    {
+      "citation": "Wikipedia, 'Cipher Manuscripts' (Golden Dawn cipher is Trithemius's)",
+      "url": ""
+    },
+    {
+      "citation": "Willow McKinnis, 'A Proposal to Encode the Mystical Alphabets of Heinrich Cornelius Agrippa' (individual proposal; personal copy)",
+      "url": ""
+    },
+    {
+      "citation": "Omniglot, 'Malachim alphabet' (letter list only; says its chart follows Bartolocci 1675)",
+      "url": ""
+    },
+    {
+      "citation": "dCode, 'Malachim Alphabet' (letter list only: 23 signs, two for Samech; 'page 440')",
+      "url": ""
+    },
+    {
+      "citation": "Nu Isis Working Group, 'Magical Scripts and Cipher Alphabets' (hobby compilation: no finals; Samekh variant)",
+      "url": ""
+    },
+    {
+      "citation": "Quest magazine, 'The Tongue of Angels' (Theosophical Society in America): an opinion on Malachim as a re-ordered Celestial",
+      "url": ""
+    },
+    {
+      "citation": "CipherChronicle, 'Malachim alphabet' (unsourced Golden Dawn/OTO claim)",
+      "url": ""
+    },
+    {
+      "citation": "Cracking Codes and Cryptograms For Dummies, ch. 8 'Masonic Ciphers' (Malachim puzzle)",
+      "url": ""
+    }
+  ],
+  "confidence": "SOLID (consistent with the fact-checker's own knowledge, but not re-verified against a viewed source in the fact-check): the Malachim is printed in Agrippa's De occulta philosophia III.30 in the complete edition (colophon July 1533), after the Celestial and before Passing the River. Agrippa glosses the name 'Malachim, or Melachim, i.e. of Angels, or Regal' (J.F. 1651) and presents it as a writing found among the Hebrews. Its 22 signs are keyed to the Hebrew letters in Hebrew order. It reached English readers in the 1651 J.F. translation and in Barrett's Magus (1801). REPORTED, NOT CHECKED: Mathers's Key of Solomon (1889) names it in a conjuration and identifies the Sixth Pentacle of Mars inscription ('Elohim qeber') as Malachim; the chapter, figure and footnote are unverified. SHAKY: every letter form (none seen; all 22 low), the second Samekh, every page or signature, the single-woodcut layout, whether the 1510 draft contains the alphabet, whether Pantheus (1530) already printed Malachim signs, and Bartolocci 1675 as a source. UNSUPPORTED: Pietro d'Abano as its source, Golden Dawn use, ongoing Masonic use, and Greek derivation.",
+  "factcheck": {
+    "checker": "independent fact-check pass (refutation mode)",
+    "method": "Own knowledge plus internal-consistency review. No web search was available (budget exhausted) and no page fetch was allowed.",
+    "corrections": [
+      "otherNames: 'Scriptura Malachim' was presented as the label of the 1533 woodcut row, but its only source is a stock-image caption that may describe a modern redrawing (e.g. a dictionary figure). It is now marked as a caption's label, with the woodcut label unverified. The Mathers and Museum spellings are also marked as not re-verified.",
+      "summary: 'first appears in print in ... 1533' stated as fact, although the file itself leaves open whether Pantheus (Venice, 1530) already printed Malachim-like signs. Changed to 'earliest documented printing'.",
+      "summary and confidence: said Mathers uses the Malachim 'for angel names on a pentacle'. The file's own evidence is that the pentacle inscription (Sixth Pentacle of Mars) reads 'Elohim qeber', a divine name plus a verb, not angel names. Reworded to 'identifies one pentacle inscription as written in it'.",
+      "summary: 'the middle row of a woodcut' rested only on a stock-image caption. It is replaced by the order the text itself gives (Celestial, Malachim, Passing the River), which J.F.'s 1651 wording supports.",
+      "firstAttestation.locator: 'middle row of a woodcut of three alphabets' downgraded from a fact to an unverified report (stock-image caption only). 'which must be an error' (UChicago '1538') softened to 'probably an error'.",
+      "firstAttestation.notes: 'which prints the 1510 text alongside' overstated the layout of Perrone Compagni's edition, which the researcher did not consult. Now 'which takes account of the Würzburg manuscript'. Series number added (Studies in the History of Christian Thought 48), from the checker's knowledge.",
+      "transmission 1533: the introductory sentence was put in quotation marks as 'Malachim, or Melachim, that is, of Angels, or Regal'. That wording matches neither the Latin nor J.F.'s 1651 text ('i. e.', as quotation 3 in this same file gives it). Replaced with J.F.'s wording, attributed.",
+      "transmission 1530 (Pantheus): Wikipedia's 'pp. 545-46' was attached to the 1530 Venice edition. A page range that high is not plausible for that short quarto; it probably refers to a later collected reprint. Removed from the locator and flagged. The 'entrusted to Abraham' report had no named source and is now marked as such.",
+      "transmission 1523 (de Balmes): 'It is the forerunner of Agrippa's Passing the River' stated a relationship the researcher had not seen demonstrated. It is now reported from Wikipedia and the Rylands blog, and the Hebrew transliteration and gloss are flagged as unchecked.",
+      "transmission 1801 (Barrett): the unsourced sentence 'Many modern charts copy this plate' was removed, and the chapter locator is marked unverified.",
+      "transmission 1889 (Mathers): the chapter number (Book I ch. VII), the figure number (Figure 30) and the footnote wording are now marked as coming from search summaries and unverified.",
+      "claims (Agrippa printed it in III.30): the evidence treated the stock-image caption as describing the 1533 woodcut. Now marked unverified.",
+      "claims (Pietro d'Abano): 'In III.29 Agrippa gives the Theban letters as Peter of Abano's, delivered by Honorius of Thebes' asserted Agrippa's own wording without a checked source. Re-attributed to Trithemius's Polygraphia (1518), as reported by Wikipedia, with the Agrippa wording flagged unchecked.",
+      "claims (star positions, standing 'legend'): Mathers's footnote is now reported as 'reportedly', because its wording comes only from search summaries (the file's own cautions said so).",
+      "letters (all 22 forms): the inference 'An encoding proposal names Malachim Kaph as one of the few letters that clearly resembles its Hebrew source, so most Malachim letters evidently do not' is a non-sequitur, and its source (an individual proposal) is unverified. Removed; the warning not to draw from the Hebrew shapes is kept on its own footing. References to the 'middle row of the woodcut' and the unverified archive.org identifier were removed from every form field. All 22 forms stay 'low' and undrawable; no form description was offered, so none could be judged inconsistent with the published forms.",
+      "lettersSource: 'whose forms differ' asserted a difference between the 1533, 1550, 1651, Bartolocci and Barrett forms that nobody compared. Now 'were not compared ... and may differ'. The unidentified '1550' re-cut is flagged. The archive.org identifier was removed.",
+      "uses (Agrippa): removed the unsourced interpretation 'That setting is what later readers took as licence to write angel names in it'.",
+      "uses (Mathers): the chapter and figure numbers are now flagged unverified, and 'Elohim hath covered' is attributed to Mathers's rendering.",
+      "quotations[1] ('Amongst the Hebrews I finde more fashions of Characters'): the spelling ('finde' in the original 1651 / EEBO-TCP, or 'find' in a modernised transcription) and the attribution to Peterson could not be confirmed. Replaced with a labelled paraphrase.",
+      "links: the 'row above / row below' layout was replaced by 'printed just before / just after', for consistency with the downgraded woodcut claim, and the Mathers and Pantheus reports are marked as reports.",
+      "cautions: updated to match the corrections above. Three were added (the pentacle wording, the stock-image woodcut layout, and no web access during the fact-check), and the one mixing 1550 and Bartolocci was rewritten.",
+      "sources: all 37 URLs were withheld (set to \"\"). None could be seen in search results during the fact-check (search budget exhausted, page fetch blocked), so none could be confirmed as not invented. They are kept in factcheck.unresolved for a later pass to restore. In particular, the very specific EEBO-TCP 'div2' URL, the Wellcome 'ymvvbx6a' URL said to be the Perrone Compagni record, and the UChicago news slug looked unlikely to have been seen as given."
+    ],
+    "unresolved": [
+      "No web search and no page fetch was possible during the fact-check (the shared search budget was exhausted before the first query, and direct fetching was blocked). Every check rests on the fact-checker's own knowledge and on the file's internal consistency; nothing was confirmed against a viewed source.",
+      "All 22 letter forms are undescribed (formConfidence low). The alphabet cannot be drawn until someone traces it from a viewed 1533 copy.",
+      "Letter count: 22 or 23 (a second Samekh, per dCode and Nu Isis, against one Samech in Wikipedia's 1651-based table). The 1533 edition must decide.",
+      "Name spellings for letters 9-22 (Teth to Tau) were not checked against the 1651 table, and the first eight rest on Wikipedia's transcription.",
+      "Whether the 1533 woodcut carries the label 'Scriptura Malachim' and sets the three alphabets as rows of one block (stock-image caption only).",
+      "The 1533 page and signature for III.30; the 1651 page (440 per dCode and the UChicago caption).",
+      "Whether the 1510 Würzburg draft (M. ch. q. 50) contains III.30's alphabets (check Perrone Compagni 1992).",
+      "Pantheus, Voarchadumia (Venice 1530): whether it prints Malachim-like signs; the correct locator (Wikipedia's 'pp. 545-46' does not fit the 1530 edition); the source of the 'entrusted to Abraham' report.",
+      "de Balmes, Miqneh Avram (Venice: Bomberg, 1523): the signature B6v and the Hebrew name and gloss 'Ketav ever ha-nahar, script beyond the river'.",
+      "Mathers, Key of Solomon (1889): the conjuration's chapter (given as Book I ch. VII), the footnote's wording, the Sixth Pentacle of Mars figure number (given as Figure 30), and the phrase 'Secret Alphabet of Malachim'.",
+      "Barrett, The Magus (1801): the chapter locator (given as Book II, Part I, ch. XVI).",
+      "Quotations 1 (the III.30 heading) and 3 (the Malachim sentence) were kept on the checker's recollection of J.F. 1651. Confirm their exact orthography against EEBO-TCP A26565 before printing.",
+      "Whether Agrippa's own III.29 text repeats the Honorius / Pietro d'Abano ascription of the Theban, or only Trithemius's Polygraphia (1518) does.",
+      "Secondary details reported but not re-verified: the Eton and Utrecht catalogue details (Soter queried, Adams's Basel, four or five issues), Wing A789 and EEBO-TCP A26565 for 1651, Macfarlane, JHI 86.3 (2025) pp. 473-506, the Rylands blog (2 Feb 2022; BL Or 10161 fol. 21v; Gaster Hebrew MS 177), the Museum of Witchcraft and Magic R/3/512, the McKinnis proposal, the Quest and CipherChronicle claims, and Mackey's 'Alphabet, Angels'' entry heading.",
+      "The 'Bartolocci 1675' source for Omniglot's chart, and the unidentified '1550' re-cut of the tables.",
+      "WITHHELD URLs, to restore only if a later pass sees them in search results: https://archive.org/details/DeOccultaPhilosophiaLoc1533 | https://archive.org/details/McGillLibrary-osl_henrici-cornelii-agrippae_folioA279o1533-19978 | https://archive.org/details/DeOccultaPhilosophiaJungCollection1533 | https://catalogue.etoncollege.com/B25098 | https://objects.library.uu.nl/reader/1874-452079/metadata | https://content.wellcomecollection.org/works/wsthg632 | https://wellcomecollection.org/works/ymvvbx6a | https://quod.lib.umich.edu/e/eebo/A26565.0001.001/1:18.30?rgn=div2;view=fulltext | https://www.esotericarchives.com/agrippa/agripp3c.htm | https://wellcomecollection.org/works/ftahuupv | https://plato.stanford.edu/archives/fall2015/entries/agrippa-nettesheim/ | https://muse.jhu.edu/article/966903 | https://philpapers.org/rec/MACWIT-14 | https://ojs.lib.unideb.hu/classica/article/view/8015 | https://rylandscollections.com/2022/02/02/speaking-to-angels-charakteres-in-jewish-magical-manuscripts-part-ii/ | https://en.wikipedia.org/wiki/Transitus_Fluvii | https://archive.org/details/ita-bnc-mag-00001097-001 | https://ciphermysteries.com/2009/05/23/the-voarchadumia-john-dee | https://www.sacred-texts.com/grim/magus/ma228.htm | https://sourcelibrary.org/artwork/magische-alphabete-barrett-the-magus | https://commons.wikimedia.org/wiki/File:The_Magus,_or_Celestial_Intelligencer_-_Barrett_-_1801.djvu | https://sacred-texts.com/grim/kos/kos12.htm | https://sacred-texts.com/grim/kos/kos30.htm | https://www.esotericarchives.com/solomon/ksol.htm | https://museumofwitchcraftandmagic.co.uk/richel/r3512-drawing-of-the-malchim-alphabet | https://divinity.uchicago.edu/news/kirsten-macfarlane-receives-2026-sofcb-best-essay-award | https://www.alamy.com/alphabets-secret-alphabets-a-large-number-of-the-secret-or-semi-secret-alphabets-used-in-magical-writings-were-derived-from-the-structure-of-the-22-letters-of-the-hebrew-alphabet-the-various-forms-were-based-on-graphic-consistencies-and-the-more-widely-used-of-these-were-known-as-the-celestial-writings-scriptura-coelestis-top-in-this-figure-the-writings-of-the-angels-scriptura-malachim-middle-alphabet-in-this-figure-and-the-writing-of-passing-the-river-scriptura-transitus-fluvii-bottom-in-this-figure-from-cornelius-agrippa-de-occulta-philosophia-1533-edition-image179622773.html | https://en.wikipedia.org/wiki/Malachim | https://en.wikipedia.org/wiki/Theban_alphabet | https://en.wikipedia.org/wiki/Cipher_Manuscripts | https://n1x1an.neocities.org/langs/con%20languages/proposals/malachim/ | https://www.omniglot.com/conscripts/malachim.htm | https://www.dcode.fr/malachim-alphabet | https://www.academia.edu/6664098/Magical_Scripts_and_cipher_Alphabets_Magical_Scripts_and_cipher_Alphabets_From_the_Nu_Isis_Working_Group_From_the_Nu_Isis_Working_Group_Magical_scripts_corresponding_to_Hebrew_Magical_scripts_corresponding_to_Hebrew_The_Characters_of_Celestial_Writing | https://www.theosophical.org/publications/quest-magazine/the-tongue-of-angels | https://www.cipherchronicle.com/en/methods/malachim | https://www.oreilly.com/library/view/cracking-codes-and/9780470591000/ch08.html"
+    ]
+  }
+}

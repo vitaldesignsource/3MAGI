@@ -5,6 +5,7 @@ import ThirdLampHeader from '../components/ThirdLampHeader';
 import ThirdLampFooter from '../components/ThirdLampFooter';
 import ShareButtons from '../components/ShareButtons';
 import AlchemicalPendulum from '../components/AlchemicalPendulum';
+import { NotFoundBeacon } from '../components/AnalyticsBeacon';
 import { articles, getArticleBySlug, traditionMeta, disciplineMeta, getCurrentIssueArticles, currentIssueSlugs } from '../data/articles';
 import { loadArticleContent } from '../data/articleContent';
 
@@ -236,6 +237,7 @@ function ArticlePage() {
                 <div className="third-lamp-scope">
                 <ThirdLampHeader />
                 <main className="article-not-found">
+                    <NotFoundBeacon />
                     <p className="eyebrow">Not found</p>
                     <h1>This essay has not yet been catalogued.</h1>
                     <p>The page you followed may have moved. Return to the living archive to keep reading.</p>
@@ -280,6 +282,7 @@ function ArticlePage() {
             <div className="third-lamp-scope">
                 <ThirdLampHeader />
                 <main className="article-not-found">
+                    {!offline && <NotFoundBeacon />}
                     <p className="eyebrow">{offline ? 'Unavailable' : 'Not found'}</p>
                     <h1>{offline ? 'This essay could not be retrieved.' : 'This essay has not yet been catalogued.'}</h1>
                     <p>{offline

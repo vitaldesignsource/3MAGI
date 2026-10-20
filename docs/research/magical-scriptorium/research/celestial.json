@@ -1,0 +1,611 @@
+{
+  "key": "celestial",
+  "title": "Celestial Writing (Scriptura coelestis)",
+  "otherNames": [
+    "Scriptura coelestis / Scriptura celestis",
+    "Celestial alphabet",
+    "Celestiall writing (J.F., 1651)",
+    "Celestial Writing (Barrett, 1801 plate)",
+    "Angelic script / Angelic alphabet (modern websites, e.g. Omniglot; not Agrippa's name for it)"
+  ],
+  "family": "Hebrew-based ring-letter (charaktêres / 'Brillenbuchstaben') alphabets: sister of Malachim and Transitus fluvii (Passing the River)",
+  "summary": "The Celestial Writing is a 22-letter alphabet, one letter for each Hebrew letter, made of thin strokes that end in small rings. Agrippa printed it in De occulta philosophia, Book III, chapter 30 (first complete edition, [Cologne], July 1533), alongside Malachim and Passing the River. Agrippa does not claim it as his own: he reports that the Hebrews call it 'celestial' because they show it placed and figured among the stars, as astrologers draw the images of the signs from the lines between stars. He gives it no rite or use. It reached English readers through the J.F. translation (London, 1651) and Francis Barrett's The Magus (London, 1801).",
+  "firstAttestation": {
+    "work": "De occulta philosophia libri tres",
+    "author": "Heinrich Cornelius Agrippa von Nettesheim",
+    "date": "1533 (the colophon gives July 1533)",
+    "place": "[Cologne]. The printer is usually given as Johannes Soter; Eton College's catalogue records the attribution with a query and notes Adams's suggestion of Basel. Catalogues report four or five issues dated 1533.",
+    "locator": "Book III, chapter 30. The 1651 English heading is 'Another manner of making Characters, delivered by Cabalists'. The Celestial is the top row of a woodcut of three alphabets (Celestial, Malachim, Transitus fluvii). I did not verify the 1533 page or signature.",
+    "notes": "This is the earliest printing of this alphabet I could document; I found no earlier exemplar. Agrippa's 1510 manuscript draft, which Trithemius received at St Jakob in Würzburg before 8 April 1510, has not been checked for this chapter. Perrone Compagni's critical edition (Brill, 1992) would settle whether the alphabets were already there. Websites that date the Celestial to 1531 are confusing it with the 1531 printings, which contained Book I only."
+  },
+  "transmission": [
+    {
+      "date": "before 8 April 1510",
+      "work": "De occulta philosophia (manuscript draft dedicated to Trithemius)",
+      "author": "Agrippa",
+      "what": "The early draft of the work. I have not verified whether it contained the chapter of Hebrew alphabets."
+    },
+    {
+      "date": "1523",
+      "work": "Miqneh Avram / Peculium Abrae (Venice: Daniel Bomberg)",
+      "author": "Abraham de Balmes",
+      "what": "Context, not the Celestial itself. This grammar prints a ring-letter alphabet called Ketav ever ha-nahar ('script beyond the river') as an example of derivative alphabets. Macfarlane calls it the first printed alphabet of this kind. It is the ancestor of Agrippa's Passing the River."
+    },
+    {
+      "date": "July 1533",
+      "work": "De occulta philosophia libri tres, III.30 ([Cologne: J. Soter?])",
+      "author": "Agrippa",
+      "what": "First printing of the Scriptura coelestis that I could document. It is set as a woodcut row naming the Hebrew letters, above the Malachim and Transitus fluvii rows, with one sentence explaining the name."
+    },
+    {
+      "date": "1538",
+      "work": "De originibus seu de Hebraicae linguae et gentis antiquitate (Paris)",
+      "author": "Guillaume Postel",
+      "what": "Parallel idea, not this alphabet. A bookseller's description of Gaffarel credits Postel with first arguing that the Hebrew letters can be read in the constellations."
+    },
+    {
+      "date": "1550",
+      "work": "De occulta philosophia (later Latin edition)",
+      "author": "Agrippa",
+      "what": "A later Latin printing with the passage and the alphabet tables. Travis Shores reproduces the three alphabets from this '1550 reprint', and Source Library hosts a 1550 copy of the passage. Its woodcuts are re-cut, so forms may differ from 1533; I did not compare them."
+    },
+    {
+      "date": "1613",
+      "work": "Thrésor de l'histoire des langues de cest univers (Cologny: Matthieu Berjon; posthumous)",
+      "author": "Claude Duret (d. 1611)",
+      "what": "Reprints a 'Scriptura Celestis'. Peterson cites it at p. 119 (giving the place as 'Cologne'). A hobby blog places Duret's related Solomonic alphabets at pp. 131-132. The page was not checked against a scan."
+    },
+    {
+      "date": "1629",
+      "work": "Curiositez inouyes sur la sculpture talismanique des Persans, horoscope des Patriarches, et lecture des estoilles (Paris)",
+      "author": "Jacques Gaffarel",
+      "what": "A different 'celestial writing'. It has two folding planispheres on which the constellations themselves form Hebrew letters, which Gaffarel credits to a 'R. Chomer'. It gave Agrippa's one-line etymology a full theory. English translation by Edmund Chilmead, Unheard-of Curiosities (London: Humphrey Moseley, 1650)."
+    },
+    {
+      "date": "1651",
+      "work": "Three Books of Occult Philosophy (London: R.W. for Gregory Moule)",
+      "author": "Agrippa, translated by 'J.F.'",
+      "what": "English translation of III.30 with the tables re-cut. One cipher site places the Celestial at p. 439; this is unverified."
+    },
+    {
+      "date": "1657",
+      "work": "Caelum orientis et prisci mundi (Copenhagen)",
+      "author": "Thomas Bang (Bangius)",
+      "what": "A study of letters and their origins. Macfarlane treats it as a learned response to two things: the Enoch fragments and the idea of celestial writing (above all Gaffarel's) as threats to Christian teaching on angels. The snippets I read characterise Bang's stance in conflicting ways."
+    },
+    {
+      "date": "1801",
+      "work": "The Magus, or Celestial Intelligencer (London: Lackington, Allen & Co.)",
+      "author": "Francis Barrett",
+      "what": "Book II, Part I, chapter XVI ('Another way of making characters, according to the Cabalists') copies Agrippa's text. A plate shows four registers: Theban, Celestial Writing, Malachim, Passing the River. This plate is the version most modern charts copy."
+    },
+    {
+      "date": "7 February 2016",
+      "work": "Esoteric Archives fonts",
+      "author": "Joseph H. Peterson",
+      "what": "Publishes a 'Celestial writing' font taken from De occulta philosophia III (1533), under a CC-BY 4.0 licence as stated on the fonts page."
+    },
+    {
+      "date": "2025",
+      "work": "'Written in the Stars? Alphabets and Angels in Early Modern Europe', Journal of the History of Ideas 86.3, pp. 473-506",
+      "author": "Kirsten Macfarlane",
+      "what": "The scholarly account of how Christian scholars came to treat Brillenbuchstaben from medieval Jewish kabbalistic manuscripts as star-derived, angel-authored alphabets."
+    }
+  ],
+  "claims": [
+    {
+      "claim": "The Hebrews call this writing 'celestial' because they show it placed and figured among the stars, just as astrologers draw the images of the signs from the lines of the stars.",
+      "standing": "documented",
+      "evidence": "This is documented only as Agrippa's report. The Latin (III.30) reads 'quam vocant coelestem, quia inter sydera collocatam ...'. The 1651 English reads 'a writing which they call Celestiall, because they shew it placed and figured amongst the Stars'. That the letters really come from star-figures is a claim Agrippa reports; he does not demonstrate it.",
+      "sources": [
+        "Agrippa 1533, III.30",
+        "J.F. trans. 1651, III.xxx (Peterson transcription; EEBO A26565)",
+        "FU Berlin Refubium PDF 4_7_Agrippa.pdf (Latin quotation)"
+      ]
+    },
+    {
+      "claim": "The letters are formed from the figures of the stars.",
+      "standing": "legend",
+      "evidence": "Agrippa's sentence is the only basis for this. It was later built into a theory by Postel (1538) and Gaffarel (1629). No source I found shows that any Celestial letter matches a real constellation.",
+      "sources": [
+        "Agrippa 1533, III.30",
+        "Peter Harrington catalogue on Gaffarel 1629 (citing Postel 1538)",
+        "Macfarlane 2025"
+      ]
+    },
+    {
+      "claim": "Agrippa invented the Celestial alphabet.",
+      "standing": "disputed",
+      "evidence": "Wikipedia and Omniglot say 'created by Agrippa'. Agrippa himself presents it as a script in use 'among the Hebrews' (apud illos). Macfarlane places such ring-ended letters in medieval Jewish kabbalistic manuscripts. No exemplar of this specific alphabet earlier than 1533 has been found, so its maker is unknown.",
+      "sources": [
+        "Agrippa 1533, III.30",
+        "Macfarlane 2025",
+        "Wikipedia 'Celestial Alphabet'",
+        "Omniglot"
+      ]
+    },
+    {
+      "claim": "The Celestial alphabet was made to communicate with angels.",
+      "standing": "attributed",
+      "evidence": "This is a modern website claim (Wikipedia, Omniglot). In III.30 Agrippa names only the Malachim as 'of Angels, or Regal' and assigns no use to the Celestial. The angelic reading of these scripts belongs to later learned readers (Macfarlane) and to the name 'Malachim'.",
+      "sources": [
+        "J.F. trans. 1651, III.xxx",
+        "Macfarlane 2025"
+      ]
+    },
+    {
+      "claim": "Its ring-ended strokes belong to the charaktêres tradition.",
+      "standing": "documented",
+      "evidence": "Bohak (2011) shows that ring-letter charaktêres are Graeco-Egyptian in origin and central to Jewish magical texts from Late Antiquity onward. The Rylands posts describe them as signs of angelic scripts (Hebrew ḥotamot, 'seals'). Linking Agrippa's Celestial specifically to this family is a graphic inference supported by Macfarlane's framing, not a stated derivation.",
+      "sources": [
+        "Bohak 2011",
+        "Rylands blog 2022 parts I-II",
+        "Macfarlane 2025"
+      ]
+    },
+    {
+      "claim": "Its first printing was in 1531.",
+      "standing": "disputed",
+      "evidence": "The 1531 printings (Paris, Antwerp, Cologne) contained Book I only. Book III, and with it chapter 30, first appeared in the complete edition of 1533.",
+      "sources": [
+        "Wikipedia 'Three Books of Occult Philosophy'",
+        "Wellcome and Eton catalogue records of the 1533 edition",
+        "Stanford Encyclopedia of Philosophy, 'Agrippa'"
+      ]
+    },
+    {
+      "claim": "It is the same as Dee and Kelley's 'Enochian' or 'celestial' alphabet.",
+      "standing": "disputed",
+      "evidence": "It is not. Enochian (1580s) is a separate alphabet that is sometimes also called 'celestial' or 'angelic'. Wikipedia warns against the confusion.",
+      "sources": [
+        "Wikipedia 'Celestial Alphabet'"
+      ]
+    },
+    {
+      "claim": "Grimoires wrote angel names in this alphabet on pentacles.",
+      "standing": "disputed",
+      "evidence": "This is documented for the sister scripts in Mathers's Key of Solomon (1889): Malachim around a pentacle of Mars and in a conjuration, and Passing the River in the Plate III pentacle. My searches found no grimoire passage that uses the Celestial specifically.",
+      "sources": [
+        "Mathers, Key of Solomon (Esoteric Archives; sacred-texts Plate III)"
+      ]
+    }
+  ],
+  "letters": [
+    {
+      "order": 1,
+      "name": "Aleph",
+      "value": "א",
+      "translit": "' (glottal stop) / vowel carrier",
+      "numeric": 1,
+      "form": "UNVERIFIED RECONSTRUCTION HINT, NOT AGRIPPA'S FORM AS SEEN: I could not view the 1533 woodcut or any facsimile. This describes the skeleton of the Hebrew square letter that the Celestial letter is reported to resemble, drawn in thin strokes with a small ring (ringlet) at each free stroke-end; most reproductions show open rings, some modern charts fill them as dots. Skeleton: one long diagonal from upper left to lower right; a short upper-right arm dropping from the top right onto the middle of the diagonal; a short lower-left leg rising from the bottom left to the diagonal. Rings at the free tips.",
+      "formConfidence": "low",
+      "note": "The value and order follow the Hebrew alphabet, which the table follows (all sources agree on 22 letters named after the Hebrew letters). The numeric value is the standard Hebrew one; the Celestial table itself is not known to print numbers. Do not draw from this text alone: check the glyph against the 1533 woodcut (Library of Congress copy, archive.org/details/DeOccultaPhilosophiaLoc1533) or Joseph H. Peterson's CC-BY 4.0 'Celestial writing' font, which he says is taken from the 1533 edition."
+    },
+    {
+      "order": 2,
+      "name": "Beth",
+      "value": "ב",
+      "translit": "b / v",
+      "numeric": 2,
+      "form": "UNVERIFIED RECONSTRUCTION HINT, NOT AGRIPPA'S FORM AS SEEN: I could not view the 1533 woodcut or any facsimile. This describes the skeleton of the Hebrew square letter that the Celestial letter is reported to resemble, drawn in thin strokes with a small ring (ringlet) at each free stroke-end; most reproductions show open rings, some modern charts fill them as dots. Skeleton: a top horizontal, a right-hand vertical, and a bottom horizontal that runs a little further left than the top; open on the left. Rings at the left ends of the top and bottom strokes.",
+      "formConfidence": "low",
+      "note": "The value and order follow the Hebrew alphabet, which the table follows (all sources agree on 22 letters named after the Hebrew letters). The numeric value is the standard Hebrew one; the Celestial table itself is not known to print numbers. Do not draw from this text alone: check the glyph against the 1533 woodcut (Library of Congress copy, archive.org/details/DeOccultaPhilosophiaLoc1533) or Joseph H. Peterson's CC-BY 4.0 'Celestial writing' font, which he says is taken from the 1533 edition."
+    },
+    {
+      "order": 3,
+      "name": "Gimel",
+      "value": "ג",
+      "translit": "g",
+      "numeric": 3,
+      "form": "UNVERIFIED RECONSTRUCTION HINT, NOT AGRIPPA'S FORM AS SEEN: I could not view the 1533 woodcut or any facsimile. This describes the skeleton of the Hebrew square letter that the Celestial letter is reported to resemble, drawn in thin strokes with a small ring (ringlet) at each free stroke-end; most reproductions show open rings, some modern charts fill them as dots. Skeleton: a near-vertical stem with a short foot kicking out to the lower left from its base. Rings at the top of the stem and the end of the foot.",
+      "formConfidence": "low",
+      "note": "The value and order follow the Hebrew alphabet, which the table follows (all sources agree on 22 letters named after the Hebrew letters). The numeric value is the standard Hebrew one; the Celestial table itself is not known to print numbers. Do not draw from this text alone: check the glyph against the 1533 woodcut (Library of Congress copy, archive.org/details/DeOccultaPhilosophiaLoc1533) or Joseph H. Peterson's CC-BY 4.0 'Celestial writing' font, which he says is taken from the 1533 edition."
+    },
+    {
+      "order": 4,
+      "name": "Daleth",
+      "value": "ד",
+      "translit": "d",
+      "numeric": 4,
+      "form": "UNVERIFIED RECONSTRUCTION HINT, NOT AGRIPPA'S FORM AS SEEN: I could not view the 1533 woodcut or any facsimile. This describes the skeleton of the Hebrew square letter that the Celestial letter is reported to resemble, drawn in thin strokes with a small ring (ringlet) at each free stroke-end; most reproductions show open rings, some modern charts fill them as dots. Skeleton: a horizontal top bar that overhangs a right-hand vertical descending from it. Rings at the left end of the bar and the foot of the vertical.",
+      "formConfidence": "low",
+      "note": "The value and order follow the Hebrew alphabet, which the table follows (all sources agree on 22 letters named after the Hebrew letters). The numeric value is the standard Hebrew one; the Celestial table itself is not known to print numbers. Do not draw from this text alone: check the glyph against the 1533 woodcut (Library of Congress copy, archive.org/details/DeOccultaPhilosophiaLoc1533) or Joseph H. Peterson's CC-BY 4.0 'Celestial writing' font, which he says is taken from the 1533 edition."
+    },
+    {
+      "order": 5,
+      "name": "He",
+      "value": "ה",
+      "translit": "h",
+      "numeric": 5,
+      "form": "UNVERIFIED RECONSTRUCTION HINT, NOT AGRIPPA'S FORM AS SEEN: I could not view the 1533 woodcut or any facsimile. This describes the skeleton of the Hebrew square letter that the Celestial letter is reported to resemble, drawn in thin strokes with a small ring (ringlet) at each free stroke-end; most reproductions show open rings, some modern charts fill them as dots. Skeleton: as Daleth, plus a short separate left vertical hanging below the bar without touching it. Rings at the free ends.",
+      "formConfidence": "low",
+      "note": "The value and order follow the Hebrew alphabet, which the table follows (all sources agree on 22 letters named after the Hebrew letters). The numeric value is the standard Hebrew one; the Celestial table itself is not known to print numbers. Do not draw from this text alone: check the glyph against the 1533 woodcut (Library of Congress copy, archive.org/details/DeOccultaPhilosophiaLoc1533) or Joseph H. Peterson's CC-BY 4.0 'Celestial writing' font, which he says is taken from the 1533 edition."
+    },
+    {
+      "order": 6,
+      "name": "Vau",
+      "value": "ו",
+      "translit": "v / w (also o, u as vowel letter)",
+      "numeric": 6,
+      "form": "UNVERIFIED RECONSTRUCTION HINT, NOT AGRIPPA'S FORM AS SEEN: I could not view the 1533 woodcut or any facsimile. This describes the skeleton of the Hebrew square letter that the Celestial letter is reported to resemble, drawn in thin strokes with a small ring (ringlet) at each free stroke-end; most reproductions show open rings, some modern charts fill them as dots. Skeleton: a single vertical stroke with a small head turned left at the top. Rings at top and foot.",
+      "formConfidence": "low",
+      "note": "The value and order follow the Hebrew alphabet, which the table follows (all sources agree on 22 letters named after the Hebrew letters). The numeric value is the standard Hebrew one; the Celestial table itself is not known to print numbers. Do not draw from this text alone: check the glyph against the 1533 woodcut (Library of Congress copy, archive.org/details/DeOccultaPhilosophiaLoc1533) or Joseph H. Peterson's CC-BY 4.0 'Celestial writing' font, which he says is taken from the 1533 edition."
+    },
+    {
+      "order": 7,
+      "name": "Zain",
+      "value": "ז",
+      "translit": "z",
+      "numeric": 7,
+      "form": "UNVERIFIED RECONSTRUCTION HINT, NOT AGRIPPA'S FORM AS SEEN: I could not view the 1533 woodcut or any facsimile. This describes the skeleton of the Hebrew square letter that the Celestial letter is reported to resemble, drawn in thin strokes with a small ring (ringlet) at each free stroke-end; most reproductions show open rings, some modern charts fill them as dots. Skeleton: a vertical stroke capped by a short head bar across its top. Rings at the bar ends and at the foot.",
+      "formConfidence": "low",
+      "note": "The value and order follow the Hebrew alphabet, which the table follows (all sources agree on 22 letters named after the Hebrew letters). The numeric value is the standard Hebrew one; the Celestial table itself is not known to print numbers. Do not draw from this text alone: check the glyph against the 1533 woodcut (Library of Congress copy, archive.org/details/DeOccultaPhilosophiaLoc1533) or Joseph H. Peterson's CC-BY 4.0 'Celestial writing' font, which he says is taken from the 1533 edition."
+    },
+    {
+      "order": 8,
+      "name": "Heth",
+      "value": "ח",
+      "translit": "ch / ḥ",
+      "numeric": 8,
+      "form": "UNVERIFIED RECONSTRUCTION HINT, NOT AGRIPPA'S FORM AS SEEN: I could not view the 1533 woodcut or any facsimile. This describes the skeleton of the Hebrew square letter that the Celestial letter is reported to resemble, drawn in thin strokes with a small ring (ringlet) at each free stroke-end; most reproductions show open rings, some modern charts fill them as dots. Skeleton: two verticals joined across the top by a bar (an inverted U, squared). Rings at both feet.",
+      "formConfidence": "low",
+      "note": "The value and order follow the Hebrew alphabet, which the table follows (all sources agree on 22 letters named after the Hebrew letters). The numeric value is the standard Hebrew one; the Celestial table itself is not known to print numbers. Do not draw from this text alone: check the glyph against the 1533 woodcut (Library of Congress copy, archive.org/details/DeOccultaPhilosophiaLoc1533) or Joseph H. Peterson's CC-BY 4.0 'Celestial writing' font, which he says is taken from the 1533 edition."
+    },
+    {
+      "order": 9,
+      "name": "Teth",
+      "value": "ט",
+      "translit": "t / ṭ",
+      "numeric": 9,
+      "form": "UNVERIFIED RECONSTRUCTION HINT, NOT AGRIPPA'S FORM AS SEEN: I could not view the 1533 woodcut or any facsimile. This describes the skeleton of the Hebrew square letter that the Celestial letter is reported to resemble, drawn in thin strokes with a small ring (ringlet) at each free stroke-end; most reproductions show open rings, some modern charts fill them as dots. Skeleton: a rounded bowl open at the top, its right arm rising and then turning in and down. Rings at the arm tips.",
+      "formConfidence": "low",
+      "note": "The value and order follow the Hebrew alphabet, which the table follows (all sources agree on 22 letters named after the Hebrew letters). The numeric value is the standard Hebrew one; the Celestial table itself is not known to print numbers. Do not draw from this text alone: check the glyph against the 1533 woodcut (Library of Congress copy, archive.org/details/DeOccultaPhilosophiaLoc1533) or Joseph H. Peterson's CC-BY 4.0 'Celestial writing' font, which he says is taken from the 1533 edition."
+    },
+    {
+      "order": 10,
+      "name": "Iod",
+      "value": "י",
+      "translit": "y / i / j",
+      "numeric": 10,
+      "form": "UNVERIFIED RECONSTRUCTION HINT, NOT AGRIPPA'S FORM AS SEEN: I could not view the 1533 woodcut or any facsimile. This describes the skeleton of the Hebrew square letter that the Celestial letter is reported to resemble, drawn in thin strokes with a small ring (ringlet) at each free stroke-end; most reproductions show open rings, some modern charts fill them as dots. Skeleton: a small short stroke hanging high in the letter space. Ring at its lower end (and possibly the upper).",
+      "formConfidence": "low",
+      "note": "The value and order follow the Hebrew alphabet, which the table follows (all sources agree on 22 letters named after the Hebrew letters). The numeric value is the standard Hebrew one; the Celestial table itself is not known to print numbers. Do not draw from this text alone: check the glyph against the 1533 woodcut (Library of Congress copy, archive.org/details/DeOccultaPhilosophiaLoc1533) or Joseph H. Peterson's CC-BY 4.0 'Celestial writing' font, which he says is taken from the 1533 edition."
+    },
+    {
+      "order": 11,
+      "name": "Caph",
+      "value": "כ",
+      "translit": "k / kh",
+      "numeric": 20,
+      "form": "UNVERIFIED RECONSTRUCTION HINT, NOT AGRIPPA'S FORM AS SEEN: I could not view the 1533 woodcut or any facsimile. This describes the skeleton of the Hebrew square letter that the Celestial letter is reported to resemble, drawn in thin strokes with a small ring (ringlet) at each free stroke-end; most reproductions show open rings, some modern charts fill them as dots. Skeleton: a rounded reversed-C: top stroke, curved right side, bottom stroke; open on the left. Rings at the two open ends.",
+      "formConfidence": "low",
+      "note": "The value and order follow the Hebrew alphabet, which the table follows (all sources agree on 22 letters named after the Hebrew letters). The numeric value is the standard Hebrew one; the Celestial table itself is not known to print numbers. Do not draw from this text alone: check the glyph against the 1533 woodcut (Library of Congress copy, archive.org/details/DeOccultaPhilosophiaLoc1533) or Joseph H. Peterson's CC-BY 4.0 'Celestial writing' font, which he says is taken from the 1533 edition."
+    },
+    {
+      "order": 12,
+      "name": "Lamed",
+      "value": "ל",
+      "translit": "l",
+      "numeric": 30,
+      "form": "UNVERIFIED RECONSTRUCTION HINT, NOT AGRIPPA'S FORM AS SEEN: I could not view the 1533 woodcut or any facsimile. This describes the skeleton of the Hebrew square letter that the Celestial letter is reported to resemble, drawn in thin strokes with a small ring (ringlet) at each free stroke-end; most reproductions show open rings, some modern charts fill them as dots. Skeleton: a tall ascender rising above the other letters, turning into a short horizontal to the right and then a stroke descending to the lower left. Rings at the top of the ascender and the end of the tail.",
+      "formConfidence": "low",
+      "note": "The value and order follow the Hebrew alphabet, which the table follows (all sources agree on 22 letters named after the Hebrew letters). The numeric value is the standard Hebrew one; the Celestial table itself is not known to print numbers. Do not draw from this text alone: check the glyph against the 1533 woodcut (Library of Congress copy, archive.org/details/DeOccultaPhilosophiaLoc1533) or Joseph H. Peterson's CC-BY 4.0 'Celestial writing' font, which he says is taken from the 1533 edition."
+    },
+    {
+      "order": 13,
+      "name": "Mem",
+      "value": "מ",
+      "translit": "m",
+      "numeric": 40,
+      "form": "UNVERIFIED RECONSTRUCTION HINT, NOT AGRIPPA'S FORM AS SEEN: I could not view the 1533 woodcut or any facsimile. This describes the skeleton of the Hebrew square letter that the Celestial letter is reported to resemble, drawn in thin strokes with a small ring (ringlet) at each free stroke-end; most reproductions show open rings, some modern charts fill them as dots. Skeleton: a near-closed square figure with a small gap at the lower left; the left side slants. Rings at the free ends.",
+      "formConfidence": "low",
+      "note": "The value and order follow the Hebrew alphabet, which the table follows (all sources agree on 22 letters named after the Hebrew letters). The numeric value is the standard Hebrew one; the Celestial table itself is not known to print numbers. Do not draw from this text alone: check the glyph against the 1533 woodcut (Library of Congress copy, archive.org/details/DeOccultaPhilosophiaLoc1533) or Joseph H. Peterson's CC-BY 4.0 'Celestial writing' font, which he says is taken from the 1533 edition."
+    },
+    {
+      "order": 14,
+      "name": "Nun",
+      "value": "נ",
+      "translit": "n",
+      "numeric": 50,
+      "form": "UNVERIFIED RECONSTRUCTION HINT, NOT AGRIPPA'S FORM AS SEEN: I could not view the 1533 woodcut or any facsimile. This describes the skeleton of the Hebrew square letter that the Celestial letter is reported to resemble, drawn in thin strokes with a small ring (ringlet) at each free stroke-end; most reproductions show open rings, some modern charts fill them as dots. Skeleton: a narrow version of Beth: short top, vertical, base. Rings at the free ends.",
+      "formConfidence": "low",
+      "note": "The value and order follow the Hebrew alphabet, which the table follows (all sources agree on 22 letters named after the Hebrew letters). The numeric value is the standard Hebrew one; the Celestial table itself is not known to print numbers. Do not draw from this text alone: check the glyph against the 1533 woodcut (Library of Congress copy, archive.org/details/DeOccultaPhilosophiaLoc1533) or Joseph H. Peterson's CC-BY 4.0 'Celestial writing' font, which he says is taken from the 1533 edition."
+    },
+    {
+      "order": 15,
+      "name": "Samech",
+      "value": "ס",
+      "translit": "s",
+      "numeric": 60,
+      "form": "UNVERIFIED RECONSTRUCTION HINT, NOT AGRIPPA'S FORM AS SEEN: I could not view the 1533 woodcut or any facsimile. This describes the skeleton of the Hebrew square letter that the Celestial letter is reported to resemble, drawn in thin strokes with a small ring (ringlet) at each free stroke-end; most reproductions show open rings, some modern charts fill them as dots. Skeleton: a closed rounded loop, flat-topped. Rings, if any, at the top corners. Wikipedia's article spells this letter 'Sameth'; the 1533 label spelling was not checked.",
+      "formConfidence": "low",
+      "note": "The value and order follow the Hebrew alphabet, which the table follows (all sources agree on 22 letters named after the Hebrew letters). The numeric value is the standard Hebrew one; the Celestial table itself is not known to print numbers. Do not draw from this text alone: check the glyph against the 1533 woodcut (Library of Congress copy, archive.org/details/DeOccultaPhilosophiaLoc1533) or Joseph H. Peterson's CC-BY 4.0 'Celestial writing' font, which he says is taken from the 1533 edition."
+    },
+    {
+      "order": 16,
+      "name": "Ain",
+      "value": "ע",
+      "translit": "' (pharyngeal) / vowel carrier",
+      "numeric": 70,
+      "form": "UNVERIFIED RECONSTRUCTION HINT, NOT AGRIPPA'S FORM AS SEEN: I could not view the 1533 woodcut or any facsimile. This describes the skeleton of the Hebrew square letter that the Celestial letter is reported to resemble, drawn in thin strokes with a small ring (ringlet) at each free stroke-end; most reproductions show open rings, some modern charts fill them as dots. Skeleton: two arms rising like a Y or V, the right arm carried down into a foot at the lower left. Rings at the two arm tips and the foot.",
+      "formConfidence": "low",
+      "note": "The value and order follow the Hebrew alphabet, which the table follows (all sources agree on 22 letters named after the Hebrew letters). The numeric value is the standard Hebrew one; the Celestial table itself is not known to print numbers. Do not draw from this text alone: check the glyph against the 1533 woodcut (Library of Congress copy, archive.org/details/DeOccultaPhilosophiaLoc1533) or Joseph H. Peterson's CC-BY 4.0 'Celestial writing' font, which he says is taken from the 1533 edition."
+    },
+    {
+      "order": 17,
+      "name": "Pe",
+      "value": "פ",
+      "translit": "p / f",
+      "numeric": 80,
+      "form": "UNVERIFIED RECONSTRUCTION HINT, NOT AGRIPPA'S FORM AS SEEN: I could not view the 1533 woodcut or any facsimile. This describes the skeleton of the Hebrew square letter that the Celestial letter is reported to resemble, drawn in thin strokes with a small ring (ringlet) at each free stroke-end; most reproductions show open rings, some modern charts fill them as dots. Skeleton: as Caph, with an inner hook from the top left curling down into the hollow. Rings at the free ends.",
+      "formConfidence": "low",
+      "note": "The value and order follow the Hebrew alphabet, which the table follows (all sources agree on 22 letters named after the Hebrew letters). The numeric value is the standard Hebrew one; the Celestial table itself is not known to print numbers. Do not draw from this text alone: check the glyph against the 1533 woodcut (Library of Congress copy, archive.org/details/DeOccultaPhilosophiaLoc1533) or Joseph H. Peterson's CC-BY 4.0 'Celestial writing' font, which he says is taken from the 1533 edition."
+    },
+    {
+      "order": 18,
+      "name": "Tzade",
+      "value": "צ",
+      "translit": "ts / ṣ",
+      "numeric": 90,
+      "form": "UNVERIFIED RECONSTRUCTION HINT, NOT AGRIPPA'S FORM AS SEEN: I could not view the 1533 woodcut or any facsimile. This describes the skeleton of the Hebrew square letter that the Celestial letter is reported to resemble, drawn in thin strokes with a small ring (ringlet) at each free stroke-end; most reproductions show open rings, some modern charts fill them as dots. Skeleton: a Y-like letter: a short right arm and a longer left arm meeting a base stroke that runs left. Rings at the arm tips and the base end.",
+      "formConfidence": "low",
+      "note": "The value and order follow the Hebrew alphabet, which the table follows (all sources agree on 22 letters named after the Hebrew letters). The numeric value is the standard Hebrew one; the Celestial table itself is not known to print numbers. Do not draw from this text alone: check the glyph against the 1533 woodcut (Library of Congress copy, archive.org/details/DeOccultaPhilosophiaLoc1533) or Joseph H. Peterson's CC-BY 4.0 'Celestial writing' font, which he says is taken from the 1533 edition."
+    },
+    {
+      "order": 19,
+      "name": "Kuff",
+      "value": "ק",
+      "translit": "q",
+      "numeric": 100,
+      "form": "UNVERIFIED RECONSTRUCTION HINT, NOT AGRIPPA'S FORM AS SEEN: I could not view the 1533 woodcut or any facsimile. This describes the skeleton of the Hebrew square letter that the Celestial letter is reported to resemble, drawn in thin strokes with a small ring (ringlet) at each free stroke-end; most reproductions show open rings, some modern charts fill them as dots. Skeleton: a top bar with a right-hand stroke curving down, plus a separate left vertical that drops below the baseline. Rings at the free ends.",
+      "formConfidence": "low",
+      "note": "The value and order follow the Hebrew alphabet, which the table follows (all sources agree on 22 letters named after the Hebrew letters). The numeric value is the standard Hebrew one; the Celestial table itself is not known to print numbers. Do not draw from this text alone: check the glyph against the 1533 woodcut (Library of Congress copy, archive.org/details/DeOccultaPhilosophiaLoc1533) or Joseph H. Peterson's CC-BY 4.0 'Celestial writing' font, which he says is taken from the 1533 edition."
+    },
+    {
+      "order": 20,
+      "name": "Resh",
+      "value": "ר",
+      "translit": "r",
+      "numeric": 200,
+      "form": "UNVERIFIED RECONSTRUCTION HINT, NOT AGRIPPA'S FORM AS SEEN: I could not view the 1533 woodcut or any facsimile. This describes the skeleton of the Hebrew square letter that the Celestial letter is reported to resemble, drawn in thin strokes with a small ring (ringlet) at each free stroke-end; most reproductions show open rings, some modern charts fill them as dots. Skeleton: a single rounded corner: top bar curving into a right-hand vertical. Rings at both ends.",
+      "formConfidence": "low",
+      "note": "The value and order follow the Hebrew alphabet, which the table follows (all sources agree on 22 letters named after the Hebrew letters). The numeric value is the standard Hebrew one; the Celestial table itself is not known to print numbers. Do not draw from this text alone: check the glyph against the 1533 woodcut (Library of Congress copy, archive.org/details/DeOccultaPhilosophiaLoc1533) or Joseph H. Peterson's CC-BY 4.0 'Celestial writing' font, which he says is taken from the 1533 edition."
+    },
+    {
+      "order": 21,
+      "name": "Shin",
+      "value": "ש",
+      "translit": "sh / s",
+      "numeric": 300,
+      "form": "UNVERIFIED RECONSTRUCTION HINT, NOT AGRIPPA'S FORM AS SEEN: I could not view the 1533 woodcut or any facsimile. This describes the skeleton of the Hebrew square letter that the Celestial letter is reported to resemble, drawn in thin strokes with a small ring (ringlet) at each free stroke-end; most reproductions show open rings, some modern charts fill them as dots. Skeleton: three upright arms rising from one shared base (a W or Ш shape). Rings at the three tops; this ring-topped three-pronged form is common to the whole family of ring-letter alphabets.",
+      "formConfidence": "low",
+      "note": "The value and order follow the Hebrew alphabet, which the table follows (all sources agree on 22 letters named after the Hebrew letters). The numeric value is the standard Hebrew one; the Celestial table itself is not known to print numbers. Do not draw from this text alone: check the glyph against the 1533 woodcut (Library of Congress copy, archive.org/details/DeOccultaPhilosophiaLoc1533) or Joseph H. Peterson's CC-BY 4.0 'Celestial writing' font, which he says is taken from the 1533 edition."
+    },
+    {
+      "order": 22,
+      "name": "Tau",
+      "value": "ת",
+      "translit": "t / th",
+      "numeric": 400,
+      "form": "UNVERIFIED RECONSTRUCTION HINT, NOT AGRIPPA'S FORM AS SEEN: I could not view the 1533 woodcut or any facsimile. This describes the skeleton of the Hebrew square letter that the Celestial letter is reported to resemble, drawn in thin strokes with a small ring (ringlet) at each free stroke-end; most reproductions show open rings, some modern charts fill them as dots. Skeleton: a top bar, a right-hand vertical, and a left vertical ending in a small foot turned left. Rings at the feet.",
+      "formConfidence": "low",
+      "note": "The value and order follow the Hebrew alphabet, which the table follows (all sources agree on 22 letters named after the Hebrew letters). The numeric value is the standard Hebrew one; the Celestial table itself is not known to print numbers. Do not draw from this text alone: check the glyph against the 1533 woodcut (Library of Congress copy, archive.org/details/DeOccultaPhilosophiaLoc1533) or Joseph H. Peterson's CC-BY 4.0 'Celestial writing' font, which he says is taken from the 1533 edition."
+    }
+  ],
+  "lettersSource": "Order, names and values: the Hebrew alphabet, which the table follows. All sources agree on 22 characters named for the Hebrew letters, and the modern charts show no separate final forms (this was not checked against the woodcut). Forms: NONE VERIFIED. No image or facsimile was viewable in this environment, and I found no text that describes the glyphs letter by letter. Each 'form' is a low-confidence hint giving the Hebrew square-letter skeleton plus ring-ends. The basis for it is that sources describe the set as Hebrew-derived glyphs with small circles at the extremities, and one encoding draft notes that most Celestial letters clearly resemble their Hebrew counterparts. To draw the letters, use the 1533 woodcut (top row of the three-alphabet figure in III.30; Library of Congress copy on archive.org) or Peterson's CC-BY 4.0 'Celestial writing' font taken from 1533. Do not use Barrett's 1801 plate or the re-cut 1550 and 1651 tables, whose forms may have drifted.",
+  "uses": [
+    {
+      "use": "Displayed in Agrippa as one of the Hebrew 'fashions of characters'",
+      "evidence": "III.30 lists the most ancient Mosaic script (with the remark that the letters in use today were instituted by Esdras), then the Celestial, Malachim and Passing the River, then prints the tables. The chapter then moves on to the Cabalists' 'nine chambers' method of making characters. No rite is attached to the Celestial."
+    },
+    {
+      "use": "Context of characters for spirits and angels in Book III",
+      "evidence": "It sits between III.29 (characters and seals of spirits, with the Theban letters that Agrippa says Peter of Abano gives as delivered by Honorius of Thebes) and III.31 (marks of spirits received by revelation). This setting is what later readers took as licence to write angel names in it."
+    },
+    {
+      "use": "Learned discussion of the origin of letters",
+      "evidence": "Duret (1613) reprints it in a history of languages. Gaffarel (1629) develops star-writing into a theory. Bang (1657) responds to the idea of celestial writing (Macfarlane 2025)."
+    },
+    {
+      "use": "Writing angel names on pentacles and talismans",
+      "evidence": "Not documented for the Celestial in the sources I found. Mathers's Key of Solomon (1889) uses Malachim and Passing the River for this. If the site mentions the practice, it should say it is attested for the sister scripts."
+    },
+    {
+      "use": "Modern substitution cipher, decoration and font",
+      "evidence": "dCode and Omniglot present it as a letter-for-letter substitution of Hebrew, and on Latin text. Peterson's font is from 2016. A 20th-century drawing of the alphabet with notes naming Postel and Agrippa is in the Museum of Witchcraft and Magic archive (R/6/859)."
+    }
+  ],
+  "quotations": [
+    {
+      "text": "There is also amongst them a writing which they call Celestiall, because they shew it placed and figured amongst the Stars",
+      "translation": "J.F. (traditionally identified as John Freake; Peterson argues John French), Three Books of Occult Philosophy, London: R.W. for Gregory Moule, 1651, as transcribed by Joseph H. Peterson (Esoteric Archives)",
+      "source": "Agrippa, De occulta philosophia, Book III, chapter 30"
+    },
+    {
+      "text": "Amongst the Hebrews I finde more fashions of Characters, whereof one is most ancient",
+      "translation": "J.F., London 1651, as transcribed by Joseph H. Peterson (Esoteric Archives)",
+      "source": "Agrippa, De occulta philosophia, Book III, chapter 30 (opening)"
+    },
+    {
+      "text": "quam vocant coelestem, quia inter sydera collocatam ...",
+      "translation": "Original Latin as quoted in the FU Berlin Refubium PDF '4_7_Agrippa.pdf'; the edition it follows was not checked. My own paraphrase: '[a script] which they call celestial, because [they show it] set among the stars ...'",
+      "source": "Agrippa, De occulta philosophia, Book III, chapter 30"
+    },
+    {
+      "text": "There is among them a writing which they call celestial, because they shew it placed and figured among the stars. There is also a writing which they call Malachim, or Melachim, i. e. of angels, or regal; there is also another, which they call the passing through the river, and the characters and figures of all which you may see in the following Plates.",
+      "translation": "Barrett's English, adapted from J.F. 1651; Francis Barrett, The Magus, London: Lackington, Allen & Co., 1801 (sacred-texts.com transcription)",
+      "source": "Barrett, The Magus, Book II, Part I, chapter XVI"
+    }
+  ],
+  "links": [
+    {
+      "to": "hebrew",
+      "relation": "Its 22 letters are one-for-one stand-ins for the Hebrew alphabet, in Hebrew order."
+    },
+    {
+      "to": "malachim",
+      "relation": "Sister alphabet printed with it in III.30; the next row of the same woodcut."
+    },
+    {
+      "to": "transitus-fluvii",
+      "relation": "Sister alphabet in III.30; descends from de Balmes's Ketav ever ha-nahar (Venice, 1523)."
+    },
+    {
+      "to": "theban",
+      "relation": "Printed in the preceding chapter (III.29); Barrett's 1801 plate sets Theban above the Celestial."
+    },
+    {
+      "to": "pgm",
+      "relation": "The ring-ended 'charaktêres' of Graeco-Egyptian magic are the graphic ancestors of ring-letter alphabets (Bohak 2011)."
+    },
+    {
+      "to": "greek",
+      "relation": "The word charaktêr, 'engraved mark', is Greek."
+    }
+  ],
+  "cautions": [
+    "LETTER FORMS ARE UNVERIFIED. Every 'form' is a reconstruction hint based on the Hebrew skeleton. Drawing them as 'Agrippa's Celestial' without checking the 1533 woodcut or Peterson's 1533-based font would present guesses as the source.",
+    "Book III, chapter 30 is headed (1651) 'Another manner of making Characters, delivered by Cabalists'. The phrase 'delivered by Angels' belongs to no chapter title I could verify. One search summary placed the passage under 'xxviii' on a Peterson sub-page, which I take to be a misreading, but it should be confirmed against the 1533 scan.",
+    "Do not date it 1531: Book III first appeared in 1533.",
+    "Do not call it 'invented by Agrippa' or say it was 'used to talk with angels'. Agrippa reports it as a Hebrew script and gives it no use.",
+    "Keep it apart from three other things: Dee and Kelley's Enochian (also called 'celestial' or 'angelic'), Gaffarel's 1629 constellation-letters (a different 'celestial writing'), and Postel's 1538 reading of Hebrew letters in the stars.",
+    "Later reprints re-cut the table (1550, 1651, Barrett 1801, Duret 1613), so forms may drift between editions. The page should name the edition it follows.",
+    "Peterson gives Duret's imprint as 'Cologne, 1613'. Library catalogues give Cologny (near Geneva), 1613, a posthumous edition (Duret died in 1611).",
+    "The printer of the 1533 edition is usually given as Johannes Soter of Cologne, but some catalogues query it (Adams suggests Basel).",
+    "Reading direction is unsettled (Wikipedia: left to right; dCode: right to left like Hebrew). Left-to-right order in the table is not evidence of writing direction.",
+    "Ring-ends: most reproductions show open ringlets and some modern charts show solid dots. Follow the source chosen.",
+    "Peterson's transcriptions carry a copyright notice. His fonts page states CC-BY 4.0; confirm the licence for the Celestial font on the page before embedding it, and credit it.",
+    "Pages and folios: the 1533 page and signature, the 1651 page (one cipher site says p. 439) and Barrett's plate placement are unverified."
+  ],
+  "sources": [
+    {
+      "citation": "Heinrich Cornelius Agrippa, De occulta philosophia libri tres, [Cologne: J. Soter?], July 1533, Book III ch. 30 (Library of Congress copy, digitised)",
+      "url": "https://archive.org/details/DeOccultaPhilosophiaLoc1533"
+    },
+    {
+      "citation": "Wellcome Collection catalogue record of the 1533 edition ([Cologne]: [Soter], [July 1533]; variant printings)",
+      "url": "https://wellcomecollection.org/works/wsthg632"
+    },
+    {
+      "citation": "Eton College Library catalogue record of the 1533 edition (printer 'J. Soter?'; Adams suggests Basel)",
+      "url": "https://catalogue.etoncollege.com/B25098"
+    },
+    {
+      "citation": "Agrippa, De occulta philosophia libri tres, ed. Vittoria Perrone Compagni, Leiden: Brill, 1992 (Studies in the History of Christian Thought 48); not consulted directly",
+      "url": "https://books.google.com/books/about/De_Occulta_Philosophia.html?id=dCARYHTxmeIC"
+    },
+    {
+      "citation": "Agrippa, Three Books of Occult Philosophy, trans. J.F., London 1651, Book III ch. 30, ed. Joseph H. Peterson, Esoteric Archives",
+      "url": "https://www.esotericarchives.com/agrippa/agripp3c.htm"
+    },
+    {
+      "citation": "Agrippa, Of Occult Philosophy Book III, Peterson's digital edition (part 1; Duret p. 119 note)",
+      "url": "https://www.esotericarchives.com/agrippa/op3.htm"
+    },
+    {
+      "citation": "Agrippa, Three Books of Occult Philosophy, trans. J.F., London 1651, EEBO-TCP A26565, Book III ch. 30",
+      "url": "https://quod.lib.umich.edu/e/eebo/A26565.0001.001/1:18.30?rgn=div2;view=fulltext"
+    },
+    {
+      "citation": "Joseph H. Peterson, Esoteric Archives fonts ('Celestial writing, from Agrippa de Occulta Philosophia III (1533)'; CC-BY 4.0)",
+      "url": "https://www.esotericarchives.com/fonts/"
+    },
+    {
+      "citation": "Esoteric Archives 'What's New' (Celestial Alphabet and Transitus Fluvii fonts added 7 Feb 2016)",
+      "url": "https://www.esotericarchives.com/whatsnew.htm"
+    },
+    {
+      "citation": "Kirsten Macfarlane, 'Written in the Stars? Alphabets and Angels in Early Modern Europe', Journal of the History of Ideas 86.3 (2025), 473-506, doi:10.1353/jhi.2025.a966903 (abstract and snippets only)",
+      "url": "https://muse.jhu.edu/article/966903"
+    },
+    {
+      "citation": "Gideon Bohak, 'The Charaktêres in Ancient and Medieval Jewish Magic', Acta Classica Universitatis Scientiarum Debreceniensis 47 (2011), 25-44",
+      "url": "https://ojs.lib.unideb.hu/classica/article/view/8015"
+    },
+    {
+      "citation": "Rylands Library blog, 'Speaking to angels: Charaktêres in Jewish magical manuscripts', Part I (25 Jan 2022)",
+      "url": "https://rylandscollections.com/2022/01/25/speaking-to-angels-charakteres-in-jewish-magical-manuscripts-part-i/"
+    },
+    {
+      "citation": "Rylands Library blog, 'Speaking to angels', Part II (2 Feb 2022): de Balmes's Ketav ever ha-nahar",
+      "url": "https://rylandscollections.com/2022/02/02/speaking-to-angels-charakteres-in-jewish-magical-manuscripts-part-ii/"
+    },
+    {
+      "citation": "Abraham de Balmes, Peculium Abrae / Miqneh Avram, Venice: Daniel Bomberg, 1523 (digitised)",
+      "url": "https://archive.org/details/ita-bnc-mag-00000617-001"
+    },
+    {
+      "citation": "Francis Barrett, The Magus, London 1801, Book II Part I ch. XVI (sacred-texts transcription)",
+      "url": "https://www.sacred-texts.com/grim/magus/ma228.htm"
+    },
+    {
+      "citation": "Francis Barrett, The Magus, London 1801, full scan (Wellcome b22006795) on Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:The_Magus,_or_Celestial_Intelligencer_(1801,_Francis_Barrett,_b22006795).pdf"
+    },
+    {
+      "citation": "Barrett 1801 plate: Theban, Celestial Writing, Malachim, Passing the River (Source Library)",
+      "url": "https://sourcelibrary.org/artwork/magische-alphabete-barrett-the-magus"
+    },
+    {
+      "citation": "Agrippa, De occulta philosophia, 1550 edition, the passage on the celestial script (Source Library)",
+      "url": "https://sourcelibrary.org/book/69b642051c1c21a373889f10/page-number/460"
+    },
+    {
+      "citation": "Jacques Gaffarel, Curiositez inouyes, Paris 1629 (digitised)",
+      "url": "https://archive.org/details/CuriositezInouyesSurLaSculpture"
+    },
+    {
+      "citation": "Peter Harrington, catalogue description of Gaffarel 1629 (planispheres; Postel 1538; 'Rabbi Khomer')",
+      "url": "https://www.peterharrington.co.uk/curiositez-inouyes-sur-la-sculpture-talismanique-des-persans-horoscope-des-patriarches-et-lecture-des-estoilles-158058.html"
+    },
+    {
+      "citation": "Gaffarel, Unheard-of Curiosities, trans. Edmund Chilmead, London 1650 (Science History Institute)",
+      "url": "https://digital.sciencehistory.org/works/fpj6eec"
+    },
+    {
+      "citation": "Linda Hall Library, 'Scientist of the Day: Jacques Gaffarel'",
+      "url": "https://www.lindahall.org/about/news/scientist-of-the-day/jacques-gaffarel/"
+    },
+    {
+      "citation": "Thomas Bang, Caelum orientis et prisci mundi, Copenhagen 1657 (digitised)",
+      "url": "https://archive.org/details/ethakedemclumo00bang"
+    },
+    {
+      "citation": "Claude Duret, Thrésor de l'histoire des langues de cest univers, 1613 (digitised)",
+      "url": "https://archive.org/details/fre_b1886963"
+    },
+    {
+      "citation": "Travis W. Shores, The Conjuror's Toolkit 1400-1800 (Dartmouth MA thesis, 2014): reproduces the three alphabets from the 1550 reprint",
+      "url": "https://www.academia.edu/11061452/The_Conjurors_Toolkit_1400_1800_Ciphers_Images_and_Magical_Cultures_of_Power_Within_the_Solomonic_Grimoires_Entire_Dartmouth_Masters_Thesis_"
+    },
+    {
+      "citation": "S. L. MacGregor Mathers (ed.), The Key of Solomon (1889), Esoteric Archives (Malachim used for angel names)",
+      "url": "https://www.esotericarchives.com/solomon/ksol.htm"
+    },
+    {
+      "citation": "Mathers, Key of Solomon, Plate III note (Passing of the River used for names of angelic orders)",
+      "url": "https://sacred-texts.com/book/the-key-of-solomon-the-king/plate-iii"
+    },
+    {
+      "citation": "Stanford Encyclopedia of Philosophy, 'Heinrich Cornelius Agrippa von Nettesheim' (1510 draft; 1533 completion)",
+      "url": "https://plato.stanford.edu/entries/agrippa-nettesheim/"
+    },
+    {
+      "citation": "FU Berlin Refubium, chapter PDF on Agrippa quoting the Latin of III.30 on the scriptura coelestis",
+      "url": "https://refubium.fu-berlin.de/bitstream/handle/fub188/6346/4_7_Agrippa.pdf"
+    },
+    {
+      "citation": "Museum of Witchcraft and Magic archive, R/6/859, drawing of the Celestial alphabet with notes",
+      "url": "https://museumofwitchcraftandmagic.co.uk/?p=27020"
+    },
+    {
+      "citation": "Omniglot, 'Angelic/Celestial alphabet' (letter list only)",
+      "url": "https://www.omniglot.com/conscripts/angelic.htm"
+    },
+    {
+      "citation": "dCode, 'Celestial Alphabet' (letter list only)",
+      "url": "https://www.dcode.fr/celestial-alphabet"
+    }
+  ],
+  "confidence": "SOLID: the alphabet is printed in Agrippa's De occulta philosophia III.30 in the complete edition of 1533, with Malachim and Transitus fluvii. Agrippa's one-sentence explanation of the name (the Hebrews show it placed and figured among the stars, as astrologers draw sign-images from star-lines) is solid. So are its 22 letters in Hebrew order, its reprinting in the 1651 English translation and in Barrett's Magus (1801, Book II Part I ch. XVI and plate), and Macfarlane's 2025 placing of such ring-letters in medieval Jewish kabbalistic manuscripts and early modern Christian scholarship. SHAKY: every letter form (none seen; all 22 are low-confidence hints) and all page and folio numbers. Also uncertain: whether the 1510 draft contained the chapter, the exact Latin wording beyond the opening clause, Duret's page (p. 119 per Peterson), Bang's precise stance, any documented use of the Celestial specifically on talismans (found only for its sister scripts), and the reading direction."
+}

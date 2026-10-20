@@ -1,0 +1,714 @@
+{
+  "key": "voynich",
+  "title": "The Voynich Manuscript (Beinecke MS 408) and its script",
+  "otherNames": [
+    "Beinecke MS 408 (Beinecke Rare Book and Manuscript Library, Yale University)",
+    "Voynichese (the informal name for the script and its 'language')",
+    "EVA, the European (later 'Extensible') Voynich Alphabet: the Latin-letter transcription alphabet of Gabriel Landini and René Zandbergen (1998)",
+    "The 'Roger Bacon cipher manuscript' (how Voynich and W. R. Newbold presented it; the Bacon attribution is legend, see claims)"
+  ],
+  "family": "Not a magical alphabet with a known key. It is an unread script known from one manuscript, with no Unicode encoding and no accepted sound values. It stands in the Magical Scriptorium beside the secret and cipher alphabets of the 15th–17th centuries because it is the most famous unread script in the European tradition. The manuscript itself has astrological and herbal pictures. No link to Trithemius, Agrippa or the angelic alphabets is documented.",
+  "summary": "Beinecke MS 408 at Yale is a small illustrated codex on vellum, about 240 pages, written throughout in a script found nowhere else. In 2009 the University of Arizona radiocarbon-dated its vellum to 1404–1438. It is documented in Prague from 1639 (Georg Baresch). Johannes Marcus Marci sent it to Athanasius Kircher in Rome with a letter dated 19 August 1665 or 1666, and the bookseller Wilfrid Voynich bought it from the Jesuits in 1912. Readers have proposed a cipher, a natural language in an invented script, a constructed language and a meaningless hoax. None of these readings is accepted.",
+  "firstAttestation": {
+    "work": "The manuscript itself, the only known witness of the script. The earliest document that mentions it is a letter from Georg Baresch to Athanasius Kircher, 1639.",
+    "author": "Unknown. The authors suggested in the 17th century (Roger Bacon) and the 20th (Dee, Kelley and others) are legend or hypothesis; see claims.",
+    "date": "Vellum: 1404–1438, by radiocarbon dating of four samples (University of Arizona, Greg Hodgins; samples taken in 2009, result announced by the university in February 2011). The writing is not dated directly. The ink analysis made at the same time (McCrone Associates) found nothing inconsistent with that period. First documentary mention: Baresch's letter to Kircher, 1639. The day, 27 April, is recalled by both the researcher and the fact-checker but was not verified in either pass.",
+    "place": "Unknown. Central Europe and northern Italy have been proposed, from the costumes, the castle with swallow-tail battlements on the 'rosettes' foldout, and the Romance month names on the zodiac pages. None of these settles it. Documented in Prague by 1639.",
+    "locator": "Beinecke Rare Book and Manuscript Library, Yale University, MS 408. A later hand numbered the leaves up to f. 116. About 14 numbered leaves are missing (as I recall, ff. 12, 59–64, 74, 91–92, 97–98 and 109–110), which leaves about 102. There are several foldouts. The Marci letter is kept with the manuscript.",
+    "notes": "Radiocarbon dates the death of the animals whose skins became the vellum, not the writing. Most scholars take the writing to be close to that date, because vellum was rarely stored for decades, but this is an inference. Before 2009, dates from the 13th century (Bacon) to the 16th (Panofsky, as reported in D'Imperio 1978) had been proposed. Basis: the researcher's prior knowledge. The fact-check could not test it against any source either (its web-search budget was also used up), so it is unverified. Fact-check: the f1r inscription 'Jacobj à Tepenece' would be an earlier trace of ownership (1608–1622) if it is contemporary with Horcicky, but it is written on the book itself, not in a separate document, and its date depends on whose hand it is (see claims). So 'the earliest document that mentions it' (1639) and 'the earliest trace of an owner' should not be run together on the page."
+  },
+  "transmission": [
+    {
+      "date": "1404–1438",
+      "work": "Beinecke MS 408 (the vellum)",
+      "author": "Unknown scribes. Prescott Currier (1976) saw at least two hands; Lisa Fagin Davis (2020) argued for five.",
+      "what": "Radiocarbon date of the vellum. The script, the illustrations and the text were made on it at an unknown date, presumably soon after. Basis: the researcher's prior knowledge. The fact-check could not test it against any source either (its web-search budget was also used up), so it is unverified."
+    },
+    {
+      "date": "1608–1622 (if the inscription is his)",
+      "work": "Beinecke MS 408, f. 1r, inscription at the foot of the page",
+      "author": "Jacobus Horcicky de Tepenec (Jakub Hořčický z Tepence, also called Sinapius), chemist and pharmacist at Rudolf II's court",
+      "what": "A faint inscription reading 'Jacobj à Tepenece', now legible only under ultraviolet light. Horcicky took the predicate 'de Tepenec' when he was ennobled in 1608, so the inscription cannot be earlier. He died in 1622. Whether it is his signature, or an owner's note added by someone else, is debated (Zandbergen, in Clemens 2016). Basis: the researcher's prior knowledge. The fact-check could not test it against any source either (its web-search budget was also used up), so it is unverified."
+    },
+    {
+      "date": "before 1612 (hearsay, reported c. 1665)",
+      "work": "Marci's letter to Kircher (see 1665/6)",
+      "author": "reported to Marci by 'Dr Raphael', who had taught Bohemian to Ferdinand III when Ferdinand was King of Bohemia. The letter gives no surname; he is generally identified as Raphael Sobiehrd-Mnishovsky (Rafael Soběhrd Mišovský, d. 1644; the identification and the death date are from memory, not verified)",
+      "what": "Says that Emperor Rudolf II (reigned 1576–1612) owned the book and paid 600 ducats to the man who brought it. No other document that confirms this is known to the researcher or the fact-checker. Report it as Marci's hearsay. Basis: the researcher's prior knowledge. The fact-check could not test it against any source either (its web-search budget was also used up), so it is unverified."
+    },
+    {
+      "date": "1639 (the day, 27 April, is recalled but not verified)",
+      "work": "Letter of Georg Baresch to Athanasius Kircher, among Kircher's correspondence in the archive of the Pontifical Gregorian University, Rome",
+      "author": "Georg Baresch (Baresius), Prague",
+      "what": "The earliest document that mentions the manuscript. Baresch, who owned it, asks Kircher for help in reading it. Kircher's Coptic book (Prodromus coptus, 1636) had made him the obvious person to ask. As the researcher recalls, Baresch had already sent Kircher a sample copied from it; the fact-checker recalls that Marci's later letter also says the former owner had once sent Kircher a copied portion (neither recollection verified). The letter was found in the 2000s; I could not check by whom. Basis: the researcher's prior knowledge. The fact-check could not test it against any source either (its web-search budget was also used up), so it is unverified."
+    },
+    {
+      "date": "c. 1662",
+      "work": "Baresch's bequest",
+      "author": "Georg Baresch → Johannes Marcus Marci",
+      "what": "Marci's 1665/6 letter says the book was left to him in the will of 'a very close friend'. This is generally identified as Baresch, who died about 1662 (date from memory). Some accounts put a stage between Baresch and Marci; this is not settled. Basis: the researcher's prior knowledge. The fact-check could not test it against any source either (its web-search budget was also used up), so it is unverified."
+    },
+    {
+      "date": "19 August 1665 or 1666 (the last digit of the year is unclear)",
+      "work": "Letter of Johannes Marcus Marci (Jan Marek Marci, 1595–1667) to Athanasius Kircher, Prague; it travelled with the book and is kept with it at the Beinecke",
+      "author": "Johannes Marcus Marci, physician and rector of the University of Prague",
+      "what": "Sends the book to Kircher in Rome. Reports what 'Dr Raphael' (generally identified as Mnishovsky) had told him: Rudolf II, the 600 ducats and Roger Bacon as author. Both the researcher and the fact-checker recall that Marci then says he suspends his own judgement (not verified). Voynich reported finding the letter with the manuscript after 1912. Basis: the researcher's prior knowledge. The fact-check could not test it against any source either (its web-search budget was also used up), so it is unverified."
+    },
+    {
+      "date": "1665/6 – 1870s",
+      "work": "Library of the Collegio Romano, Rome",
+      "author": "Athanasius Kircher (d. 1680) and the Jesuits",
+      "what": "Kircher never published anything on the manuscript, and no answer from him to Marci about it is known to me. It stayed in Jesuit hands. After the Italian state took over Rome (1870) and seized Jesuit property, part of the library, this book included, was reportedly kept as the private property of the Jesuit General Petrus Beckx and later moved to the Villa Mondragone at Frascati. This stage is from memory, at medium-low confidence. Basis: the researcher's prior knowledge. The fact-check could not test it against any source either (its web-search budget was also used up), so it is unverified."
+    },
+    {
+      "date": "1912",
+      "work": "Purchase at the Villa Mondragone, Frascati",
+      "author": "Wilfrid M. Voynich (Michał Habdank-Wojnicz, 1865–1930), antiquarian bookseller in London and later New York",
+      "what": "Voynich bought the manuscript from the Jesuits, with other manuscripts. For years he kept the source secret. He promoted it as a work of Roger Bacon, and the manuscript has carried his name ever since. The Voynich 100 conference was held at Villa Mondragone in 2012 for the centenary (medium confidence). Basis: the researcher's prior knowledge. The fact-check could not test it against any source either (its web-search budget was also used up), so it is unverified."
+    },
+    {
+      "date": "1921; 1928",
+      "work": "Lecture in Philadelphia (April 1921; the month is from memory); The Cipher of Roger Bacon, ed. Roland Grubb Kent (Philadelphia: University of Pennsylvania Press, 1928)",
+      "author": "William Romaine Newbold (1865–1926)",
+      "what": "The first well-known claim to have deciphered it. Newbold read microscopic 'shorthand' strokes as a Latin text by Bacon. John Matthews Manly showed in 1931 (Speculum 6) that the strokes are cracking of the ink, and that the method could produce whatever text one wanted. Basis: the researcher's prior knowledge. The fact-check could not test it against any source either (its web-search budget was also used up), so it is unverified."
+    },
+    {
+      "date": "1930 – 1969",
+      "work": "Ownership after Voynich",
+      "author": "Ethel Lilian Voynich (d. 1960) and Anne Nill; H. P. Kraus",
+      "what": "After Voynich died in 1930, the manuscript passed to his widow Ethel and to his secretary Anne Nill. Kraus, the New York dealer, bought it in 1961 (for $24,500, a figure from memory). He could not sell it, and in 1969 he gave it to Yale's Beinecke Library, where it is MS 408. Basis: the researcher's prior knowledge. The fact-check could not test it against any source either (its web-search budget was also used up), so it is unverified."
+    },
+    {
+      "date": "1944–1946; 1962–1963",
+      "work": "Friedman's first and second Voynich study groups",
+      "author": "William F. Friedman (with Elizebeth Friedman and wartime colleagues)",
+      "what": "Professional cryptanalysts made a full transcription (the 'FSG' alphabet) and analysed it statistically, without finding a solution. Friedman came to think it an early a priori constructed language; see quotations. Basis: the researcher's prior knowledge. The fact-check could not test it against any source either (its web-search budget was also used up), so it is unverified."
+    },
+    {
+      "date": "1967; 1976; 1978",
+      "work": "J. H. Tiltman, NSA Technical Journal (1967); P. H. Currier, papers at the 1976 seminar; M. E. D'Imperio, The Voynich Manuscript: An Elegant Enigma (NSA, 1978)",
+      "author": "John Tiltman; Prescott Currier; Mary D'Imperio",
+      "what": "Tiltman described the regular structure of the words. Currier found that the herbal pages fall into two statistically distinct 'languages', Currier A and B, which go with different hands. D'Imperio's monograph is still the standard survey of research up to 1978. Basis: the researcher's prior knowledge. The fact-check could not test it against any source either (its web-search budget was also used up), so it is unverified."
+    },
+    {
+      "date": "1998–1999",
+      "work": "EVA; the interlinear transcription file; the Takahashi transcription",
+      "author": "Gabriel Landini and René Zandbergen (EVA); Jorge Stolfi (interlinear file); Takeshi Takahashi (complete transcription)",
+      "what": "EVA gave the script a stroke-based Latin-letter transcription that could be pronounced. It was designed to record what is on the page without deciding which strokes form one glyph. The machine-readable transcriptions that followed are the basis of most later statistics. Zandbergen later maintained a revised transcription and file format (the ZL transcription, IVTFF). Basis: the researcher's prior knowledge. The fact-check could not test it against any source either (its web-search budget was also used up), so it is unverified."
+    },
+    {
+      "date": "2004",
+      "work": "'An Elegant Hoax? A Possible Solution to the Voynich Manuscript', Cryptologia 28; Scientific American, July 2004",
+      "author": "Gordon Rugg",
+      "what": "Showed that a table of word parts and a grille (a card with holes, of the kind Cardano published in 1550) can produce text with many Voynich-like features. He offered this as a possible hoax method, not as proof. Basis: the researcher's prior knowledge. The fact-check could not test it against any source either (its web-search budget was also used up), so it is unverified."
+    },
+    {
+      "date": "2009 (announced 2011)",
+      "work": "Radiocarbon dating and ink analysis, made for an Austrian television documentary",
+      "author": "Greg Hodgins and team, University of Arizona AMS Laboratory; McCrone Associates (inks)",
+      "what": "Dated the vellum to 1404–1438. This rules out authorship by Roger Bacon (d. c. 1292). It also means that a forgery by Dee, Kelley or Voynich would have needed a stock of century-old blank vellum. Basis: the researcher's prior knowledge. The fact-check could not test it against any source either (its web-search budget was also used up), so it is unverified."
+    },
+    {
+      "date": "2013–2020",
+      "work": "Statistical and palaeographical studies",
+      "author": "M. A. Montemurro and D. H. Zanette (PLoS ONE, 2013); T. Timm and A. Schinner (Cryptologia, 2020); L. Fagin Davis (Manuscript Studies, 2020)",
+      "what": "Montemurro and Zanette found words clustering by section, as keywords do in real texts. Timm and Schinner proposed that the text was generated by copying and altering earlier words ('self-citation'). Fagin Davis identified five scribal hands. These are the main recent lines of scholarship; none reads the text. Basis: the researcher's prior knowledge. The fact-check could not test it against any source either (its web-search budget was also used up), so it is unverified."
+    },
+    {
+      "date": "2016",
+      "work": "The Voynich Manuscript, ed. Raymond Clemens (New Haven: Yale University Press with the Beinecke Library)",
+      "author": "Raymond Clemens (ed.); introduction by Deborah E. Harkness; essays including René Zandbergen on the earliest owners",
+      "what": "The authorised full-colour facsimile, with essays on provenance, the physical book and the history of attempts to read it. The best single printed source for the page. Basis: the researcher's prior knowledge. The fact-check could not test it against any source either (its web-search budget was also used up), so it is unverified."
+    }
+  ],
+  "claims": [
+    {
+      "claim": "The vellum of MS 408 dates from 1404–1438.",
+      "standing": "documented",
+      "evidence": "Radiocarbon dating of four samples by the University of Arizona (Hodgins), 2009; announced in February 2011. It dates the skin, not the writing. Details of the individual samples and confidence intervals were not checked in this run. Basis: the researcher's prior knowledge. The fact-check could not test it against any source either (its web-search budget was also used up), so it is unverified.",
+      "sources": [
+        "University of Arizona press release, February 2011",
+        "Hodgins, paper at the Voynich 100 conference, Frascati, 2012 (medium confidence)",
+        "Clemens (ed.) 2016"
+      ]
+    },
+    {
+      "claim": "The ink and paint show nothing inconsistent with a 15th-century date.",
+      "standing": "documented",
+      "evidence": "Analysis by McCrone Associates, 2009, made in the same project as the radiocarbon tests. I did not check whether a full report was published. Basis: the researcher's prior knowledge. The fact-check could not test it against any source either (its web-search budget was also used up), so it is unverified.",
+      "sources": [
+        "Clemens (ed.) 2016",
+        "Zandbergen, voynich.nu"
+      ]
+    },
+    {
+      "claim": "Georg Baresch of Prague owned the manuscript by 1639 and asked Kircher to help read it.",
+      "standing": "documented",
+      "evidence": "Baresch's letter to Kircher (1639), in Kircher's correspondence, Pontifical Gregorian University. Marci's letters to Kircher are also relevant. Basis: the researcher's prior knowledge. The fact-check could not test it against any source either (its web-search budget was also used up), so it is unverified.",
+      "sources": [
+        "Zandbergen, 'Earliest Owners', in Clemens (ed.) 2016",
+        "Zandbergen, voynich.nu"
+      ]
+    },
+    {
+      "claim": "Marci sent the manuscript to Kircher with a letter dated 19 August 1665 or 1666.",
+      "standing": "documented",
+      "evidence": "The letter itself, kept with MS 408. The year is ambiguous in the letter, so both dates are given. Basis: the researcher's prior knowledge. The fact-check could not test it against any source either (its web-search budget was also used up), so it is unverified.",
+      "sources": [
+        "Beinecke MS 408 and the Marci letter",
+        "D'Imperio 1978",
+        "Clemens (ed.) 2016"
+      ]
+    },
+    {
+      "claim": "Emperor Rudolf II owned the manuscript and paid 600 ducats for it.",
+      "standing": "attributed",
+      "evidence": "Only Marci's letter says so, and Marci gives it as what 'Dr Raphael' (generally identified as Raphael Mnishovsky, d. 1644) had told him. It is hearsay: Marci wrote it down in 1665 or 1666, more than fifty years after Rudolf's death (1612), and Raphael must have told him before his own death. No independent record is known to the researcher or the fact-checker. The Horcicky inscription (if genuine) puts the book among Rudolf's courtiers, but does not prove that Rudolf owned it. Basis: the researcher's prior knowledge. The fact-check could not test it against any source either (its web-search budget was also used up), so it is unverified.",
+      "sources": [
+        "Marci letter, 1665/6",
+        "Zandbergen in Clemens (ed.) 2016"
+      ]
+    },
+    {
+      "claim": "Roger Bacon wrote the manuscript.",
+      "standing": "legend",
+      "evidence": "The opinion of 'Dr Raphael' (generally identified as Mnishovsky), as reported by Marci; taken up by Voynich and by Newbold (1921, 1928). Bacon died about 1292, so the radiocarbon date of the vellum (1404–1438) rules him out, unless the text is a later copy of a work of his, which no evidence supports. Basis: the researcher's prior knowledge. The fact-check could not test it against any source either (its web-search budget was also used up), so it is unverified.",
+      "sources": [
+        "Marci letter, 1665/6",
+        "Newbold 1928",
+        "Manly 1931",
+        "University of Arizona 2011"
+      ]
+    },
+    {
+      "claim": "John Dee brought the manuscript to Prague and sold it to Rudolf II.",
+      "standing": "disputed",
+      "evidence": "A conjecture of Voynich's, repeated by many since. It is often connected with an entry in Dee's diary recording that he received 630 ducats in October 1586; that entry does not name any book (from memory, low confidence). No document puts the manuscript in Dee's hands. Present it as a hypothesis, with this weakness. Basis: the researcher's prior knowledge. The fact-check could not test it against any source either (its web-search budget was also used up), so it is unverified.",
+      "sources": [
+        "D'Imperio 1978",
+        "Zandbergen, voynich.nu"
+      ]
+    },
+    {
+      "claim": "Edward Kelley (or Dee, or Voynich) forged the manuscript.",
+      "standing": "disputed",
+      "evidence": "Proposed at various times as a hoax hypothesis. It is not refuted outright, but since 2009 any such forger would have needed blank vellum a century or more old, and the ink analysis found nothing inconsistent with the period (which is weaker than showing that the inks date from it). The Baresch letter of 1639 rules out Voynich. Basis: the researcher's prior knowledge. The fact-check could not test it against any source either (its web-search budget was also used up), so it is unverified.",
+      "sources": [
+        "Rugg 2004 (Kelley as one possible hoaxer)",
+        "University of Arizona 2011"
+      ]
+    },
+    {
+      "claim": "The f1r inscription is Jacobus Horcicky de Tepenec's signature.",
+      "standing": "disputed",
+      "evidence": "The inscription 'Jacobj à Tepenece' is real and visible under UV light. Whether it is in Horcicky's own hand, or is an owner's note written by another person (perhaps a later owner or librarian), has been debated. Compare it with his known signatures before calling it a signature. Basis: the researcher's prior knowledge. The fact-check could not test it against any source either (its web-search budget was also used up), so it is unverified.",
+      "sources": [
+        "Zandbergen in Clemens (ed.) 2016"
+      ]
+    },
+    {
+      "claim": "Newbold deciphered the manuscript as a work of Roger Bacon (1921).",
+      "standing": "disputed",
+      "evidence": "Refuted by John Matthews Manly in Speculum 6 (1931). The microscopic 'shorthand' was cracking of the ink, and the anagramming method had no fixed rules. No one has defended Newbold since. Standing 'disputed' is used for a claim that was made and has been rejected. Basis: the researcher's prior knowledge. The fact-check could not test it against any source either (its web-search budget was also used up), so it is unverified.",
+      "sources": [
+        "Newbold 1928",
+        "Manly 1931"
+      ]
+    },
+    {
+      "claim": "The text falls into two statistically distinct varieties ('Currier A' and 'Currier B').",
+      "standing": "documented",
+      "evidence": "Currier's 1976 analysis. Different word and glyph frequencies mark sections in different hands. Later statistics confirm it, and the finding is widely accepted. Basis: the researcher's prior knowledge. The fact-check could not test it against any source either (its web-search budget was also used up), so it is unverified.",
+      "sources": [
+        "Currier 1976, in D'Imperio (ed.), New Research on the Voynich Manuscript (1976)",
+        "D'Imperio 1978"
+      ]
+    },
+    {
+      "claim": "Five scribes wrote the manuscript.",
+      "standing": "attributed",
+      "evidence": "Lisa Fagin Davis's palaeographical study (Manuscript Studies, 2020), building on Currier's two hands. It is a scholarly finding that others are still testing, not a consensus. Basis: the researcher's prior knowledge. The fact-check could not test it against any source either (its web-search budget was also used up), so it is unverified.",
+      "sources": [
+        "Fagin Davis 2020"
+      ]
+    },
+    {
+      "claim": "The text has some statistical features of natural language.",
+      "standing": "documented",
+      "evidence": "Word frequencies roughly follow Zipf's law, and some words cluster in particular sections as topic words do (Montemurro and Zanette 2013). These are measurements. Whether they show that the text has meaning is disputed: a careful generating method could produce some of them. Basis: the researcher's prior knowledge. The fact-check could not test it against any source either (its web-search budget was also used up), so it is unverified.",
+      "sources": [
+        "Montemurro and Zanette 2013",
+        "D'Imperio 1978"
+      ]
+    },
+    {
+      "claim": "The text also has features that are unusual for European languages.",
+      "standing": "documented",
+      "evidence": "Glyph-pair entropy is low (Bennett 1976). Words are built from rigid slots, and Stolfi described their structure as a paradigm. One- and two-glyph words are scarce, and long words are absent. The same or nearly the same word often repeats two or three times in a row. These measurements are the main obstacle to every proposed reading. Basis: the researcher's prior knowledge. The fact-check could not test it against any source either (its web-search budget was also used up), so it is unverified.",
+      "sources": [
+        "Bennett 1976",
+        "D'Imperio 1978",
+        "Stolfi (online papers, late 1990s–2000s)"
+      ]
+    },
+    {
+      "claim": "Hypothesis: a cipher (a known language, encrypted).",
+      "standing": "disputed",
+      "evidence": "Held by Newbold, by Leonell Strong (1945), by Robert Brumbaugh (1970s) and by others, each with a different system. Simple substitution is unlikely, because it would keep the letter statistics of the plaintext language, and the Voynich statistics match no known language. The ciphers attested before about 1440 that could give the observed word structure are few. No proposed cipher has produced connected text that someone else could reproduce. Basis: the researcher's prior knowledge. The fact-check could not test it against any source either (its web-search budget was also used up), so it is unverified.",
+      "sources": [
+        "D'Imperio 1978",
+        "Manly 1931"
+      ]
+    },
+    {
+      "claim": "Hypothesis: a natural language written in an invented script.",
+      "standing": "disputed",
+      "evidence": "Many languages have been proposed. Among them: an East Asian or tonal language (suggested on statistical grounds, among others by Stolfi); Nahuatl, from the plants (Tucker and Talbert, HerbalGram, 2013), though the vellum date is pre-Columbian; Hebrew (Hauer and Kondrak, computational, 2016–2018); a proto-Romance language (Cheshire, Romance Studies, 2019, rejected by medievalists; his university (Bristol) reportedly withdrew its news release, from memory, not verified); abbreviated Latin (Gibbs, TLS, 2017, rejected by specialists); and Stephen Bax's partial reading of a few names (2014). None has given verifiable connected text. Basis: the researcher's prior knowledge. The fact-check could not test it against any source either (its web-search budget was also used up), so it is unverified.",
+      "sources": [
+        "Tucker and Talbert 2013",
+        "Hauer and Kondrak 2016",
+        "Cheshire 2019",
+        "Bax 2014",
+        "Fagin Davis, public responses 2017–2019"
+      ]
+    },
+    {
+      "claim": "Hypothesis: a constructed (artificial) language.",
+      "standing": "disputed",
+      "evidence": "Held by William Friedman and John Tiltman: an a priori 'philosophical' language whose words are built by classification, which would explain the rigid word structure. The objection is that the known a priori language schemes are 17th-century (e.g. Wilkins, 1668), and nothing like them is known from the early 15th. The hypothesis cannot be tested without a key. Basis: the researcher's prior knowledge. The fact-check could not test it against any source either (its web-search budget was also used up), so it is unverified.",
+      "sources": [
+        "D'Imperio 1978",
+        "Friedman's anagram (see quotations)",
+        "Tiltman 1967"
+      ]
+    },
+    {
+      "claim": "Hypothesis: meaningless text (a hoax, or glossolalia).",
+      "standing": "disputed",
+      "evidence": "Rugg (2004) showed that a table-and-grille method could make text like this. Schinner (2007) argued that the statistics point to a stochastic process, and Timm and Schinner (2020) proposed a self-citation method. Kennedy and Churchill (2004) suggested glossolalia. The objections: the 15th-century date, the great labour involved, the clustering of words by section, and the Currier A/B distinction. Rugg's grille is a format Cardano published in 1550, though Rugg argues simpler tools would do. Basis: the researcher's prior knowledge. The fact-check could not test it against any source either (its web-search budget was also used up), so it is unverified.",
+      "sources": [
+        "Rugg 2004",
+        "Schinner 2007",
+        "Timm and Schinner 2020",
+        "Kennedy and Churchill 2004",
+        "Montemurro and Zanette 2013"
+      ]
+    },
+    {
+      "claim": "The zodiac pages have month names in a Romance language, written in Latin script.",
+      "standing": "documented",
+      "evidence": "The month names are there, in a hand different from the main script, and possibly later. Their language (Occitan, Catalan and French have each been proposed) is disputed, and so is whether the person who added them knew the original text. Basis: the researcher's prior knowledge. The fact-check could not test it against any source either (its web-search budget was also used up), so it is unverified.",
+      "sources": [
+        "Zandbergen, voynich.nu",
+        "Clemens (ed.) 2016"
+      ]
+    }
+  ],
+  "letters": [
+    {
+      "order": 1,
+      "name": "EVA o",
+      "value": "No accepted value. EVA letters are labels chosen because the glyph looks like them, not sound values.",
+      "translit": "o",
+      "numeric": null,
+      "form": "A small closed loop at x-height, round or slightly oval, the same size as the bowl of EVA a. It looks like a Latin minuscule o. Pen direction was not checked; draw it as a single closed curve with an even stroke.",
+      "formConfidence": "high",
+      "note": "Among the commonest glyphs. Very frequent at the start of words (ol, or, ok-, ot-) and after q (qo-). Find it in 'ol' and 'qokeedy'. The ranking by frequency is approximate and from memory; recount it from a transcription file (Takahashi, or Zandbergen's ZL/IVTFF) before printing any numbers. Basis: the researcher's prior knowledge. The fact-check could not test it against any source either (its web-search budget was also used up), so it is unverified. Fact-check: the description is consistent with the standard EVA charts as the fact-checker knows them, but no image or chart was seen in this pass. Grade kept at 'high': the shape is a plain closed curve."
+    },
+    {
+      "order": 2,
+      "name": "EVA e",
+      "value": "No accepted value. EVA letters are labels chosen because the glyph looks like them, not sound values.",
+      "translit": "e",
+      "numeric": null,
+      "form": "A small c: one open curve at x-height, open to the right, like a Latin c. It may have a very small upward tick at its top end. It is narrower than the ch 'bench' (unit 3) and is not joined to its neighbour at the top. It is often doubled (ee) and sometimes tripled.",
+      "formConfidence": "medium",
+      "note": "Find it in 'chedy', 'shedy', 'qokeedy'. Whether the top tick is always there was not checked; leave it off unless the traced folio shows it. EVA uses the letter e for this glyph; it does not mean the sound e. The ranking by frequency is approximate and from memory; recount it from a transcription file (Takahashi, or Zandbergen's ZL/IVTFF) before printing any numbers. Basis: the researcher's prior knowledge. The fact-check could not test it against any source either (its web-search budget was also used up), so it is unverified. Fact-check: the description is consistent with the standard EVA charts as the fact-checker knows them, but no image or chart was seen in this pass. Grade kept at 'medium'."
+    },
+    {
+      "order": 3,
+      "name": "EVA ch (the 'bench')",
+      "value": "No accepted value. EVA letters are labels chosen because the glyph looks like them, not sound values.",
+      "translit": "ch",
+      "numeric": null,
+      "form": "Two c-shaped curves side by side, both open to the right, at x-height. Their tops are joined by one short horizontal or slightly arched stroke running from the top of the left c to the top of the right c. The whole is about twice the width of EVA e. EVA writes it as two letters (c + h) because it splits glyphs into strokes, but in the manuscript it behaves as one unit.",
+      "formConfidence": "medium",
+      "note": "Very common, at the start and inside words: 'chedy', 'chol', 'chor', 'chey'. EVA c and h almost never occur except in ch, sh and the benched gallows (unit 19). The name 'bench' is the usual name among Voynich researchers; I could not check who coined it. The ranking by frequency is approximate and from memory; recount it from a transcription file (Takahashi, or Zandbergen's ZL/IVTFF) before printing any numbers. Basis: the researcher's prior knowledge. The fact-check could not test it against any source either (its web-search budget was also used up), so it is unverified. Fact-check: the description is consistent with the standard EVA charts as the fact-checker knows them, but no image or chart was seen in this pass. Grade kept at 'medium'."
+    },
+    {
+      "order": 4,
+      "name": "EVA y",
+      "value": "No accepted value. EVA letters are labels chosen because the glyph looks like them, not sound values.",
+      "translit": "y",
+      "numeric": null,
+      "form": "Like EVA a (unit 5), but the stroke on the right of the bowl runs well below the baseline and curves back to the left at its foot, so the glyph looks like a numeral 9. The bowl sits at x-height; the tail is about as long as the bowl is tall.",
+      "formConfidence": "medium",
+      "note": "Very common at the end of words ('-dy', '-ey', 'chedy', 'qokeedy'), and also found at the start of words. The older First Study Group and Currier transcriptions wrote this glyph as '9' (medium confidence, from memory). The ranking by frequency is approximate and from memory; recount it from a transcription file (Takahashi, or Zandbergen's ZL/IVTFF) before printing any numbers. Basis: the researcher's prior knowledge. The fact-check could not test it against any source either (its web-search budget was also used up), so it is unverified. Fact-check: the '9'-like form agrees with the standard account (the older transcriptions' '9'). Lowered from 'high' to 'medium' because the tail's length and the direction and size of its curl were stated without checking any folio; the fact-checker cannot confirm 'about as long as the bowl is tall'."
+    },
+    {
+      "order": 5,
+      "name": "EVA a",
+      "value": "No accepted value. EVA letters are labels chosen because the glyph looks like them, not sound values.",
+      "translit": "a",
+      "numeric": null,
+      "form": "A small round bowl like EVA o, with a short straight down-stroke against its right side that reaches the baseline and may end in a slight flick to the right. It looks like a one-storey Latin minuscule a. No stroke rises above x-height.",
+      "formConfidence": "medium",
+      "note": "Usually followed by i, l, r or n: 'aiin', 'daiin', 'al', 'ar', 'dar'. The ranking by frequency is approximate and from memory; recount it from a transcription file (Takahashi, or Zandbergen's ZL/IVTFF) before printing any numbers. Basis: the researcher's prior knowledge. The fact-check could not test it against any source either (its web-search budget was also used up), so it is unverified. Fact-check: the general form (bowl plus a short down-stroke on the right, like a one-storey a) agrees with the standard EVA charts as the fact-checker knows them. Lowered from 'high' to 'medium' because the details an illustrator needs (whether the down-stroke flicks right, how far it descends) were not checked against any folio in either pass."
+    },
+    {
+      "order": 6,
+      "name": "EVA d",
+      "value": "No accepted value. EVA letters are labels chosen because the glyph looks like them, not sound values.",
+      "translit": "d",
+      "numeric": null,
+      "form": "Like a numeral 8 whose top loop is not closed. A small bowl sits at x-height. From its right side a stroke rises above x-height and curls back over to the left, ending in a free tail. The older transcriptions wrote it '8'.",
+      "formConfidence": "medium",
+      "note": "Starts the commonest word, 'daiin', and is frequent before y ('dy', 'chedy'). How high the curl rises, and whether it touches the bowl again, should come from the traced folio. The ranking by frequency is approximate and from memory; recount it from a transcription file (Takahashi, or Zandbergen's ZL/IVTFF) before printing any numbers. Basis: the researcher's prior knowledge. The fact-check could not test it against any source either (its web-search budget was also used up), so it is unverified. Fact-check: consistent with the standard comparison to a numeral 8 (the older transcriptions' '8') as the fact-checker knows it. Grade kept at 'medium'; the height of the curl remains to be traced."
+    },
+    {
+      "order": 7,
+      "name": "EVA i",
+      "value": "No accepted value. EVA letters are labels chosen because the glyph looks like them, not sound values.",
+      "translit": "i",
+      "numeric": null,
+      "form": "A single short vertical stroke (a minim) at x-height, with no dot and no serif. It comes in runs of one, two or three (rarely four), and each run ends in n, r, l or m.",
+      "formConfidence": "high",
+      "note": "The 'ii' of 'aiin' and 'daiin'. Transcriptions disagree on how many minims some runs have, which is one reason EVA writes them stroke by stroke. The ranking by frequency is approximate and from memory; recount it from a transcription file (Takahashi, or Zandbergen's ZL/IVTFF) before printing any numbers. Basis: the researcher's prior knowledge. The fact-check could not test it against any source either (its web-search budget was also used up), so it is unverified. Fact-check: the description is consistent with the standard EVA charts as the fact-checker knows them, but no image or chart was seen in this pass. Grade kept at 'high': the shape is a single minim."
+    },
+    {
+      "order": 8,
+      "name": "EVA k (gallows)",
+      "value": "No accepted value. EVA letters are labels chosen because the glyph looks like them, not sound values.",
+      "translit": "k",
+      "numeric": null,
+      "form": "A 'gallows' glyph: tall (roughly two to three times x-height), with an upright stem rising from the baseline and a closed loop at the top. Of the four gallows, k and t are the plain forms. I cannot reliably say from memory which side of the stem the loop sits on, or how k differs in detail from t. Do not draw this glyph from this description alone: trace it from the Beinecke's own digital images of MS 408 (the words named in the note are good places to find it), and say which folio the drawing follows.",
+      "formConfidence": "low",
+      "note": "Very common inside words after o or e: 'qokeedy', 'qokedy', 'okaiin', 'chky'. The name 'gallows' is the usual name among researchers; I could not check who coined it. The ranking by frequency is approximate and from memory; recount it from a transcription file (Takahashi, or Zandbergen's ZL/IVTFF) before printing any numbers. Basis: the researcher's prior knowledge. The fact-check could not test it against any source either (its web-search budget was also used up), so it is unverified. Fact-check: agreed. The fact-checker cannot describe the gallows' loops and legs reliably from memory either. Keep 'low' and trace."
+    },
+    {
+      "order": 9,
+      "name": "EVA l",
+      "value": "No accepted value. EVA letters are labels chosen because the glyph looks like them, not sound values.",
+      "translit": "l",
+      "numeric": null,
+      "form": "A glyph with a stroke rising above x-height and a small loop near the baseline, often compared to a cursive Latin l. I am not sure of its exact construction (where the loop closes, and which way the top bends). Do not draw this glyph from this description alone: trace it from the Beinecke's own digital images of MS 408 (the words named in the note are good places to find it), and say which folio the drawing follows.",
+      "formConfidence": "low",
+      "note": "Common at the end of words and before o or k: 'ol', 'al', 'chol', 'shol', 'lkeedy'. On f1r it ends the second word, 'ykal'. The ranking by frequency is approximate and from memory; recount it from a transcription file (Takahashi, or Zandbergen's ZL/IVTFF) before printing any numbers. Basis: the researcher's prior knowledge. The fact-check could not test it against any source either (its web-search budget was also used up), so it is unverified. Fact-check: agreed, keep 'low'; do not draw without tracing."
+    },
+    {
+      "order": 10,
+      "name": "EVA r",
+      "value": "No accepted value. EVA letters are labels chosen because the glyph looks like them, not sound values.",
+      "translit": "r",
+      "numeric": null,
+      "form": "A short glyph at x-height, ending at the baseline, which early transcribers likened to a numeral 2. The form of its top (hook or small loop) is uncertain to me. Do not draw this glyph from this description alone: trace it from the Beinecke's own digital images of MS 408 (the words named in the note are good places to find it), and say which folio the drawing follows.",
+      "formConfidence": "low",
+      "note": "Mostly at the end of words: 'or', 'ar', 'dar', 'chor', 'shory'. The ranking by frequency is approximate and from memory; recount it from a transcription file (Takahashi, or Zandbergen's ZL/IVTFF) before printing any numbers. Basis: the researcher's prior knowledge. The fact-check could not test it against any source either (its web-search budget was also used up), so it is unverified. Fact-check: agreed, keep 'low'; do not draw without tracing."
+    },
+    {
+      "order": 11,
+      "name": "EVA q",
+      "value": "No accepted value. EVA letters are labels chosen because the glyph looks like them, not sound values.",
+      "translit": "q",
+      "numeric": null,
+      "form": "Like a numeral 4. A diagonal stroke comes down from upper right to lower left, a horizontal stroke runs back to the right, and an upright stem crosses that horizontal. The top of the stem and the top of the diagonal meet in a point or a small closed loop. Its height is about x-height or slightly more; how far the stem descends was not checked.",
+      "formConfidence": "medium",
+      "note": "Almost always the first glyph of a word and almost always followed by o: 'qo-' (the '4o' of the older transcriptions), as in 'qokeedy', 'qokain', 'qotedy'. The ranking by frequency is approximate and from memory; recount it from a transcription file (Takahashi, or Zandbergen's ZL/IVTFF) before printing any numbers. Basis: the researcher's prior knowledge. The fact-check could not test it against any source either (its web-search budget was also used up), so it is unverified. Fact-check: consistent with the standard comparison to a numeral 4 (the '4o' of the older transcriptions) as the fact-checker knows it. Grade kept at 'medium'; whether the top is a point or a closed loop, and the depth of the stem, must come from the traced folio."
+    },
+    {
+      "order": 12,
+      "name": "EVA t (gallows)",
+      "value": "No accepted value. EVA letters are labels chosen because the glyph looks like them, not sound values.",
+      "translit": "t",
+      "numeric": null,
+      "form": "The second plain gallows: tall, with an upright stem and a closed loop at the top, like k, but differing from it in the arrangement of its loop or loops. I cannot say from memory exactly how. Do not draw this glyph from this description alone: trace it from the Beinecke's own digital images of MS 408 (the words named in the note are good places to find it), and say which folio the drawing follows.",
+      "formConfidence": "low",
+      "note": "Common inside words: 'qotedy', 'otedy', 'chtey'. It also forms the benched gallows cth (unit 19). The ranking by frequency is approximate and from memory; recount it from a transcription file (Takahashi, or Zandbergen's ZL/IVTFF) before printing any numbers. Basis: the researcher's prior knowledge. The fact-check could not test it against any source either (its web-search budget was also used up), so it is unverified. Fact-check: agreed. The fact-checker cannot describe the gallows' loops and legs reliably from memory either. Keep 'low' and trace."
+    },
+    {
+      "order": 13,
+      "name": "EVA sh",
+      "value": "No accepted value. EVA letters are labels chosen because the glyph looks like them, not sound values.",
+      "translit": "sh",
+      "numeric": null,
+      "form": "The ch bench (unit 3) with a 'plume': a small curved stroke rising from the top of the left c and arching back over it, above x-height. The rest is as ch.",
+      "formConfidence": "medium",
+      "note": "Common at the start of words: 'shedy', 'shol', 'shory'. Whether the plume rises from the left c or from the joining stroke should be checked on the traced folio. The ranking by frequency is approximate and from memory; recount it from a transcription file (Takahashi, or Zandbergen's ZL/IVTFF) before printing any numbers. Basis: the researcher's prior knowledge. The fact-check could not test it against any source either (its web-search budget was also used up), so it is unverified. Fact-check: the description is consistent with the standard EVA charts as the fact-checker knows them, but no image or chart was seen in this pass. Grade kept at 'medium'."
+    },
+    {
+      "order": 14,
+      "name": "EVA n",
+      "value": "No accepted value. EVA letters are labels chosen because the glyph looks like them, not sound values.",
+      "translit": "n",
+      "numeric": null,
+      "form": "Ends a run of i-minims. It is a minim whose upper end turns into a curved stroke, so that 'iin' looks a little like a cursive 'iiv'. I am not sure which way the curve turns, or how far it rises. Do not draw this glyph from this description alone: trace it from the Beinecke's own digital images of MS 408 (the words named in the note are good places to find it), and say which folio the drawing follows.",
+      "formConfidence": "low",
+      "note": "Almost only at the end of words, after a or i: 'aiin', 'daiin', 'qokaiin', 'ain'. The ranking by frequency is approximate and from memory; recount it from a transcription file (Takahashi, or Zandbergen's ZL/IVTFF) before printing any numbers. Basis: the researcher's prior knowledge. The fact-check could not test it against any source either (its web-search budget was also used up), so it is unverified. Fact-check: agreed, keep 'low'; do not draw without tracing."
+    },
+    {
+      "order": 15,
+      "name": "EVA s",
+      "value": "No accepted value. EVA letters are labels chosen because the glyph looks like them, not sound values.",
+      "translit": "s",
+      "numeric": null,
+      "form": "Standing alone, it is the left half of sh: a c-curve with the same rising plume. EVA chose the letter so that sh = s + h. I have not seen enough examples to confirm that the alone form is always like that. Do not draw this glyph from this description alone: trace it from the Beinecke's own digital images of MS 408 (the words named in the note are good places to find it), and say which folio the drawing follows.",
+      "formConfidence": "low",
+      "note": "Found at the start and end of words: 'sol', 'sar', 'chs'. Some transcribers confuse it with r. The ranking by frequency is approximate and from memory; recount it from a transcription file (Takahashi, or Zandbergen's ZL/IVTFF) before printing any numbers. Basis: the researcher's prior knowledge. The fact-check could not test it against any source either (its web-search budget was also used up), so it is unverified. Fact-check: agreed, keep 'low'; do not draw without tracing."
+    },
+    {
+      "order": 16,
+      "name": "EVA p (ornate gallows)",
+      "value": "No accepted value. EVA letters are labels chosen because the glyph looks like them, not sound values.",
+      "translit": "p",
+      "numeric": null,
+      "form": "An ornate gallows: tall like t, with a larger or extra loop. In EVA, p is the ornate partner of t, as f is of k. Do not draw this glyph from this description alone: trace it from the Beinecke's own digital images of MS 408 (the words named in the note are good places to find it), and say which folio the drawing follows.",
+      "formConfidence": "low",
+      "note": "Found mostly in the first line of a paragraph, as is f. This pattern is widely reported and was noted by mid-20th-century analysts; I could not check who first recorded it. Example: 'pchedy'. The ranking by frequency is approximate and from memory; recount it from a transcription file (Takahashi, or Zandbergen's ZL/IVTFF) before printing any numbers. Basis: the researcher's prior knowledge. The fact-check could not test it against any source either (its web-search budget was also used up), so it is unverified. Fact-check: agreed, keep 'low'. The pairing 'p with t, f with k' is also the fact-checker's recollection of EVA, but it was not checked against the EVA chart (voynich.nu) in either pass; confirm it there before the page says so."
+    },
+    {
+      "order": 17,
+      "name": "EVA m",
+      "value": "No accepted value. EVA letters are labels chosen because the glyph looks like them, not sound values.",
+      "translit": "m",
+      "numeric": null,
+      "form": "Ends a run of i-minims or follows a. It is like n, but with a longer final stroke that sweeps down or round. Its exact form is uncertain to me. Do not draw this glyph from this description alone: trace it from the Beinecke's own digital images of MS 408 (the words named in the note are good places to find it), and say which folio the drawing follows.",
+      "formConfidence": "low",
+      "note": "Almost only at the end of words, and often at the end of a line: 'am', 'dam', 'aim', 'oram'. The ranking by frequency is approximate and from memory; recount it from a transcription file (Takahashi, or Zandbergen's ZL/IVTFF) before printing any numbers. Basis: the researcher's prior knowledge. The fact-check could not test it against any source either (its web-search budget was also used up), so it is unverified. Fact-check: agreed, keep 'low'; do not draw without tracing."
+    },
+    {
+      "order": 18,
+      "name": "EVA f (ornate gallows)",
+      "value": "No accepted value. EVA letters are labels chosen because the glyph looks like them, not sound values.",
+      "translit": "f",
+      "numeric": null,
+      "form": "The ornate partner of k: a tall gallows with a larger or extra loop. Do not draw this glyph from this description alone: trace it from the Beinecke's own digital images of MS 408 (the words named in the note are good places to find it), and say which folio the drawing follows.",
+      "formConfidence": "low",
+      "note": "Mostly in first lines of paragraphs. It is the first glyph of the manuscript in EVA: f1r, line 1, begins 'fachys ykal ar ataiin shol shory cth(?)res y kor sholdy' (as in the Takahashi transcription, from memory; check the line before you print it). The ranking by frequency is approximate and from memory; recount it from a transcription file (Takahashi, or Zandbergen's ZL/IVTFF) before printing any numbers. Basis: the researcher's prior knowledge. The fact-check could not test it against any source either (its web-search budget was also used up), so it is unverified. Fact-check: agreed, keep 'low'. The pairing 'p with t, f with k' is also the fact-checker's recollection of EVA, but it was not checked against the EVA chart (voynich.nu) in either pass; confirm it there before the page says so. Fact-check: the fact-checker recalls the same f1r line 1 reading, but recollection by two parties is not a source; check it in the Takahashi or ZL file before printing."
+    },
+    {
+      "order": 19,
+      "name": "Benched gallows: EVA cth, ckh, cph, cfh",
+      "value": "No accepted value. EVA letters are labels chosen because the glyph looks like them, not sound values.",
+      "translit": "cth / ckh / cph / cfh",
+      "numeric": null,
+      "form": "A gallows glyph drawn over a ch bench. The two c-curves of the bench sit at the foot of the gallows, one on each side of its stem, and the bench's joining stroke runs into or through the stem. EVA spells it c + gallows + h, so that it splits into the same strokes as ch with a gallows inside. Each of the four gallows can be benched. The gallows part has the low confidence of units 8, 12, 16 and 18. Do not draw this glyph from this description alone: trace it from the Beinecke's own digital images of MS 408 (the words named in the note are good places to find it), and say which folio the drawing follows.",
+      "formConfidence": "low",
+      "note": "The arrangement (bench + gallows) is solid; the gallows inside it is not. 'cth' is on f1r line 1; 'ckhy', 'cthy' and 'cphy' are common words. The ranking by frequency is approximate and from memory; recount it from a transcription file (Takahashi, or Zandbergen's ZL/IVTFF) before printing any numbers. Basis: the researcher's prior knowledge. The fact-check could not test it against any source either (its web-search budget was also used up), so it is unverified. Fact-check: lowered from 'medium' to 'low'. The bench-plus-gallows arrangement agrees with the fact-checker's knowledge of EVA (c + gallows + h), but the unit cannot be drawn without the gallows, which are 'low', and 'one on each side of its stem' assumes a single stem that the gallows descriptions do not establish."
+    },
+    {
+      "order": 20,
+      "name": "Rare glyphs ('weirdoes')",
+      "value": "No accepted value. EVA letters are labels chosen because the glyph looks like them, not sound values.",
+      "translit": "g, x, v, b, u, j, z and EVA '&' codes",
+      "numeric": null,
+      "form": "A card, not a glyph. EVA keeps the letters g, x, v, b, u, j and z for rare glyphs. Many forms found only once or a few times are written in EVA as numbered codes ('&' followed by a number). Researchers call these 'weirdoes'. Show two or three, traced from the manuscript with their folios, or show none.",
+      "formConfidence": "low",
+      "note": "How many there are depends on the transcription. Lisa Fagin Davis (2020) discusses how many distinct glyphs the script has. I could not check her count, and none is given here. The ranking by frequency is approximate and from memory; recount it from a transcription file (Takahashi, or Zandbergen's ZL/IVTFF) before printing any numbers. Basis: the researcher's prior knowledge. The fact-check could not test it against any source either (its web-search budget was also used up), so it is unverified. Fact-check: agreed, keep 'low'."
+    }
+  ],
+  "lettersSource": "THE UNITS ARE EVA GLYPHS, NOT LETTERS WITH VALUES. They are the commonest glyphs of the script, ranked roughly by frequency and labelled in EVA (European/Extensible Voynich Alphabet, Landini and Zandbergen, 1998). EVA spells complex glyphs as strings of simpler strokes (ch, sh, cth). The labels are visual conventions; they claim no sound. The descriptions are from memory of the manuscript and of EVA charts. No plate was checked in this run, because the web-search budget had run out. Forms marked 'low' (the four gallows, l, r, n, s, m and the rare glyphs) must be traced from the Beinecke's digital images of MS 408, citing the folio. Good places to look: f1r line 1 (f, y, k, l, a, r, i, n, sh, o, cth) and the 'qokeedy'/'daiin' pages of the bathing (biological) section (q, o, k, e, d, y, a, i, n). Do not draw from modern Voynich fonts without checking them against the manuscript. FACT-CHECK: 20 units, none with a value, which is correct for an undeciphered script. The 'order' field is a display order that approximates frequency from memory; it is not a verified frequency rank and the page must not present it as one. No unit's form was checked against an image or chart in either pass.",
+  "uses": [
+    {
+      "use": "Writing the whole text of MS 408: herbal, astronomical and astrological, 'balneological' (bathing), cosmological, pharmaceutical and 'recipe' sections",
+      "evidence": "The conventional section names come from the pictures, not from any reading of the text (D'Imperio 1978; Zandbergen). Approximate ranges: herbal ff. 1–66; astronomical and zodiac ff. 67–73; bathing ff. 75–84; the 'rosettes' foldout ff. 85–86; pharmaceutical ff. 87–102; short starred paragraphs ff. 103–116. These ranges are from memory; check them against the Beinecke foliation. Whether the book was ever used as a working herbal or medical handbook is unknown. Basis: the researcher's prior knowledge. The fact-check could not test it against any source either (its web-search budget was also used up), so it is unverified."
+    },
+    {
+      "use": "Labels on illustrations",
+      "evidence": "Single Voynich words stand beside plants, jars, stars and figures, especially in the pharmaceutical and astronomical sections. Because a label ought to name its picture, readers such as Bax (2014) have built their proposed readings on them. Basis: the researcher's prior knowledge. The fact-check could not test it against any source either (its web-search budget was also used up), so it is unverified."
+    },
+    {
+      "use": "A prized curiosity in early-modern Prague and Rome",
+      "evidence": "Baresch's letter of 1639 and Marci's of 1665/6 show learned owners trying to get the book read, and treating Kircher, known for his work on Coptic and hieroglyphs, as the man to do it. The story of 600 ducats (attributed) shows how highly it was valued. Basis: the researcher's prior knowledge. The fact-check could not test it against any source either (its web-search budget was also used up), so it is unverified."
+    },
+    {
+      "use": "A test case for 20th-century cryptanalysis and later for computational linguistics",
+      "evidence": "The Friedman study groups (1944–46, 1962–63), the NSA work of Tiltman, Currier and D'Imperio (1967–78), and statistical and machine-learning studies since 1998, all of which use EVA-based transcription files. Basis: the researcher's prior knowledge. The fact-check could not test it against any source either (its web-search budget was also used up), so it is unverified."
+    },
+    {
+      "use": "EVA as a working alphabet",
+      "evidence": "Researchers write, search and count the text in EVA, quoting words such as 'daiin' or 'qokeedy'. EVA was designed so that transcribers would not have to settle in advance which strokes make one glyph (Landini and Zandbergen 1998). It is a tool for transcription, not a reading. Basis: the researcher's prior knowledge. The fact-check could not test it against any source either (its web-search budget was also used up), so it is unverified."
+    }
+  ],
+  "quotations": [
+    {
+      "text": "[Paraphrase, not a quotation.] Marci writes that 'Dr Raphael', who had taught Bohemian to Ferdinand III when Ferdinand was King of Bohemia, said that the book had belonged to the Emperor Rudolf, who paid the man who brought it 600 ducats, and that Raphael thought the author was the Englishman Roger Bacon.",
+      "translation": "The fact-checker's own paraphrase of the Latin letter, not a published translation. The Latin wording in the research file was given from memory and could not be collated in this pass, so it is withheld from the page (it is kept in factcheck.unresolved for collation).",
+      "source": "Johannes Marcus Marci to Athanasius Kircher, Prague, 19 August 1665 or 1666; the letter is kept with Beinecke MS 408. Wording not verified."
+    },
+    {
+      "text": "[Paraphrase, not a quotation.] Friedman concluded, and hid the conclusion in an anagram, that the Voynich manuscript was an early attempt to construct an artificial or universal language of the a priori kind.",
+      "translation": "The fact-checker's paraphrase of Friedman's English. The exact wording could not be confirmed in this pass, so it is not given as a quotation.",
+      "source": "William F. Friedman. The anagram is reported (from memory, not verified) to have been printed in W. F. and E. S. Friedman, 'Acrostics, Anagrams, and Chaucer', Philological Quarterly 38 (1959), and its solution to be quoted in D'Imperio 1978. Verify both before printing."
+    }
+  ],
+  "links": [
+    {
+      "to": "latin",
+      "relation": "The Latin-script additions in the manuscript (month names, the last-page lines on f. 116v), Marci's Latin letter, and the 'abbreviated Latin' hypotheses (Feely 1943, Gibbs 2017)."
+    },
+    {
+      "to": "hebrew",
+      "relation": "One of the natural-language proposals (Hauer and Kondrak 2016–2018). The Hebrew hall can show why a computer 'match' to Hebrew is not a reading."
+    },
+    {
+      "to": "coptic",
+      "relation": "Kircher's Coptic work (Prodromus coptus, 1636) is why Baresch and Marci sent the manuscript to him in Rome."
+    },
+    {
+      "to": "trithemius",
+      "relation": "Context: Trithemius's Steganographia (manuscript, 1499 to about 1500) and Polygraphia (printed July 1518), dates as given in trithemius.verified.json, a search-backed sibling fact-check of this session, show what learned secret writing looked like about a century after the vellum was made. No connection with the Voynich script is documented."
+    },
+    {
+      "to": "enochian",
+      "relation": "The Dee and Kelley hypothesis (disputed): Voynich's conjecture that Dee sold the book to Rudolf II, and suggestions that Kelley forged it. The Enochian alphabet is another invented script from the same circle, but has a documented origin: Dee's record of the actions, British Library Sloane MS 3188, March to May 1583 (as in enochian.verified.json, a sibling fact-check of this session)."
+    },
+    {
+      "to": "theban",
+      "relation": "Contrast: a secret alphabet with a known key and a known printed source, beside a script with neither."
+    },
+    {
+      "to": "signs-of-the-art",
+      "relation": "The zodiac pages (ff. 70v–73v, approximately) have a picture of each sign (ram, bull and so on) at the centre of the medallion. As I recall, they do not use the astrological sign-glyphs; check this on the pages before the comparison is drawn."
+    }
+  ],
+  "cautions": [
+    "Never print a 'translation' or 'reading' of any Voynich word as if it were established. Every proposed reading is disputed. EVA words such as 'daiin' are transcription labels, not pronunciations.",
+    "Radiocarbon dates the vellum, not the writing. Write 'the vellum has been dated to 1404–1438', not 'the manuscript was written in 1404–1438'.",
+    "Rudolf II, the 600 ducats and Roger Bacon all come from one hearsay report in Marci's letter. Write 'Marci reports that Raphael Mnishovsky told him…', never 'Rudolf II bought it'.",
+    "Dee's ownership is a conjecture; there is no document behind it. Kelley's or Voynich's authorship is a hoax hypothesis; there is no document behind it either. Report them as such, with the objections.",
+    "The manuscript is not documented as having been used for magic. It belongs in the Magical Scriptorium because it is a secret or unknown script with astrological and herbal pictures, and the page should say so plainly.",
+    "LETTER FORMS: the four gallows (k, t, p, f), l, r, n, s, m and the rare glyphs are graded 'low'. Trace them from the Beinecke's images of MS 408, citing the folio, or leave a gap. A wrong glyph shown as 'Voynichese' is worse than none.",
+    "Transcriptions disagree on word spaces, on how many i-minims a run has, and on rare glyphs. When the page quotes an EVA word, name the transcription (Takahashi, or Zandbergen's ZL).",
+    "Folio ranges for the sections, the list of missing leaves, Baresch's death date and the 1639 letter's day are from memory. Check them against the Beinecke catalogue, Clemens (ed.) 2016 or voynich.nu before printing.",
+    "Images: use the Beinecke's own digital images, and check Yale's terms of use. I recall an open-access policy for public-domain works, but did not check it this run. Do not use the 2016 Yale facsimile's or other facsimiles' reproductions without permission.",
+    "Keep sensational claims (aliens, lost civilisations) off the page. They are not scholarship, and the house rule is to report traditions without mocking them; such claims are not a tradition.",
+    "VERIFICATION STATUS: nothing in this file has been checked against a source. The research pass and the fact-check pass both ran after the shared web-search budget was used up. Every date, folio, price, title, volume number and letter form is a lead to verify (Beinecke catalogue and images; Clemens (ed.) 2016; D'Imperio 1978; voynich.nu) before it is printed."
+  ],
+  "sources": [
+    {
+      "citation": "Beinecke Rare Book and Manuscript Library, Yale University, MS 408 (the Voynich Manuscript), with the letter of Johannes Marcus Marci to Athanasius Kircher, 19 August 1665/6, kept with it. Primary. The Beinecke publishes digital images of the whole manuscript (URL not checked in this run).",
+      "url": ""
+    },
+    {
+      "citation": "Raymond Clemens (ed.), The Voynich Manuscript, introduction by Deborah E. Harkness (New Haven: Beinecke Rare Book and Manuscript Library and Yale University Press, 2016). The authorised facsimile, with essays including René Zandbergen, 'Earliest Owners'.",
+      "url": ""
+    },
+    {
+      "citation": "Mary E. D'Imperio, The Voynich Manuscript: An Elegant Enigma (Fort George G. Meade, MD: National Security Agency/Central Security Service, 1978). Declassified; the standard survey up to 1978.",
+      "url": ""
+    },
+    {
+      "citation": "M. E. D'Imperio (ed.), New Research on the Voynich Manuscript: Proceedings of a Seminar, 30 November 1976 (Washington, 1976), with Prescott H. Currier's papers on 'languages' A and B and the hands. Details from memory.",
+      "url": ""
+    },
+    {
+      "citation": "John H. Tiltman, 'The Voynich Manuscript: \"The Most Mysterious Manuscript in the World\"', NSA Technical Journal 12 (1967). Volume number from memory.",
+      "url": ""
+    },
+    {
+      "citation": "William Romaine Newbold, The Cipher of Roger Bacon, ed. Roland Grubb Kent (Philadelphia: University of Pennsylvania Press, 1928).",
+      "url": ""
+    },
+    {
+      "citation": "John Matthews Manly, 'Roger Bacon and the Voynich MS', Speculum 6 (1931).",
+      "url": ""
+    },
+    {
+      "citation": "William Ralph Bennett Jr., Scientific and Engineering Problem-Solving with the Computer (Englewood Cliffs, NJ: Prentice-Hall, 1976): the entropy analysis of the Voynich text.",
+      "url": ""
+    },
+    {
+      "citation": "Gordon Rugg, 'An Elegant Hoax? A Possible Solution to the Voynich Manuscript', Cryptologia 28.1 (2004); and 'The Mystery of the Voynich Manuscript', Scientific American 291.1 (July 2004).",
+      "url": ""
+    },
+    {
+      "citation": "Andreas Schinner, 'The Voynich Manuscript: Evidence of the Hoax Hypothesis', Cryptologia 31.2 (2007).",
+      "url": ""
+    },
+    {
+      "citation": "Torsten Timm and Andreas Schinner, 'A Possible Generating Algorithm of the Voynich Manuscript', Cryptologia 44.1 (2020).",
+      "url": ""
+    },
+    {
+      "citation": "Marcelo A. Montemurro and Damián H. Zanette, 'Keywords and Co-Occurrence Patterns in the Voynich Manuscript: An Information-Theoretic Analysis', PLoS ONE 8.6 (2013).",
+      "url": ""
+    },
+    {
+      "citation": "Lisa Fagin Davis, 'How Many Glyphs and How Many Scribes? Digital Paleography and the Voynich Manuscript', Manuscript Studies 5.1 (2020).",
+      "url": ""
+    },
+    {
+      "citation": "University of Arizona news release, 'UA Experts Determine Age of Book \"Nobody Can Read\"', February 2011 (Greg Hodgins, AMS Laboratory). Title from memory.",
+      "url": ""
+    },
+    {
+      "citation": "Arthur O. Tucker and Rexford H. Talbert, 'A Preliminary Analysis of the Botany, Zoology, and Mineralogy of the Voynich Manuscript', HerbalGram 100 (2013).",
+      "url": ""
+    },
+    {
+      "citation": "Bradley Hauer and Grzegorz Kondrak, 'Decoding Anagrammed Texts Written in an Unknown Language and Script', Transactions of the Association for Computational Linguistics 4 (2016).",
+      "url": ""
+    },
+    {
+      "citation": "Gerard Cheshire, 'The Language and Writing System of MS408 (Voynich) Explained', Romance Studies 37.1 (2019). Cited as a rejected proposal.",
+      "url": ""
+    },
+    {
+      "citation": "Gerry Kennedy and Rob Churchill, The Voynich Manuscript (London: Orion, 2004): the glossolalia suggestion and a general history.",
+      "url": ""
+    },
+    {
+      "citation": "René Zandbergen, The Voynich MS (website): provenance, EVA, transcriptions (ZL, IVTFF) and the history of research. A serious researcher's site; its individual pages were not checked in this run. (URL removed by the fact-check: it was not seen in any search result in either pass.)",
+      "url": ""
+    },
+    {
+      "citation": "Gabriel Landini and René Zandbergen, EVA (European, later Extensible, Voynich Alphabet), 1998, with Jorge Stolfi's interlinear transcription file and Takeshi Takahashi's complete transcription (1999). Documented on voynich.nu.",
+      "url": ""
+    }
+  ],
+  "confidence": "FACT-CHECK STATUS: not verified. The fact-check had no web search (the shared per-turn budget was exhausted before its first query), so it could confirm nothing against a named source; it made only the corrections that follow from the file's own statements, from sibling verified files, or from the house rules (quotations replaced by paraphrases, the unseen URL dropped, three form grades lowered, the 'Dr Raphael' identification reported as an identification). The fact-checker's own knowledge agrees with the researcher's 'SOLID' list below, but agreement between two recollections is not a source. NOT READY TO PUBLISH until a search-backed pass clears factcheck.unresolved. RESEARCHER'S ASSESSMENT: SOLID (standard facts, though not re-checked in this run): the shelfmark Beinecke MS 408; Kraus's gift to Yale in 1969; the radiocarbon date of 1404–1438 (University of Arizona, samples 2009, announced 2011); Marci's letter to Kircher, dated 19 August 1665 or 1666, and its report of Rudolf II, 600 ducats and Roger Bacon; Voynich's purchase from the Jesuits at the Villa Mondragone in 1912; Newbold's claim and Manly's refutation; the Friedman study groups; Currier A and B; D'Imperio 1978; EVA by Landini and Zandbergen (1998); the four hypotheses and the main published proposals for each; the absence of any accepted decipherment. FAIRLY SURE: Baresch's letter of 1639 (the day, 27 April, less so); the Horcicky inscription and the 1608 ennoblement; the Collegio Romano and Beckx stage; the section names; the forms of o, a, y, i, q, d, e, ch and sh, and the bench-plus-gallows layout. SHAKY: the list of missing folios and the section folio ranges; Baresch's death about 1662; the price Kraus paid; the Dee diary entry of 630 ducats; the details of where Friedman's anagram was published; the exact Latin of Marci's sentence; journal volume and issue numbers. LETTER FORMS: ten of the twenty units are 'low', namely the four gallows, l, r, n, s, m and the rare-glyph card; trace them from the Beinecke images. No search results were available for this item (the shared web-search budget was used up before it began), so everything here is from my prior knowledge. Only one URL is given (the voynich.nu home page, a well-known domain); no other URL could be checked.",
+  "factcheck": {
+    "corrections": [
+      "firstAttestation.notes: added that the f1r Horcicky inscription, if contemporary, is an earlier ownership trace (1608–1622) than the 1639 letter, so the page must not call the 1639 letter the earliest evidence of ownership; it is only the earliest separate document that mentions the book.",
+      "firstAttestation.date: 'as I recall, 27 April 1639' reworded so that only the year 1639 is asserted and the day is flagged as unverified recollection.",
+      "transmission (before 1612) and claims (Rudolf II; Roger Bacon): the letter names only 'Dr Raphael', tutor in Bohemian to Ferdinand III; 'Raphael Mnishovsky' is a later identification, now reported as such instead of as the letter's own words.",
+      "transmission (before 1612): removed 'no record of the purchase in Rudolf's papers was found'. It implies a search of Rudolf's papers that no named source reports; replaced by 'no confirming document is known to the researcher or the fact-checker'.",
+      "claims (Rudolf II): 'at least a generation after Rudolf's death' made exact: Marci wrote in 1665/6, over fifty years after 1612; his informant (d. 1644, from memory) told him earlier.",
+      "claims (forgery): 'the inks match the period' overstated the McCrone result as the file itself reports it ('nothing inconsistent with that period'); reworded to match.",
+      "claims (natural language): the withdrawal of the University of Bristol's Cheshire news release is now marked as reported and unverified, and the university is named.",
+      "letters: formConfidence lowered for unit 4 (EVA y) and unit 5 (EVA a) from 'high' to 'medium' (general form standard; stroke details unchecked), and for unit 19 (benched gallows) from 'medium' to 'low' (cannot be drawn without the 'low' gallows). Every unit's note now carries the fact-checker's judgement of its form.",
+      "lettersSource: states that 'order' is a display order approximating frequency from memory, not a verified rank.",
+      "quotations[0] (Marci): the Latin was given from memory and could not be confirmed against the letter or a published transcription, so the text is replaced by a clearly labelled paraphrase; the researcher's Latin is moved to factcheck.unresolved for collation.",
+      "quotations[1] (Friedman): the sentence could not be confirmed against D'Imperio 1978 or the 1959 article, so it is replaced by a labelled paraphrase; the commonly quoted wording is kept in factcheck.unresolved for collation.",
+      "links (trithemius, enochian): dates aligned with, and credited to, the sibling verified files (Steganographia manuscript 1499 to about 1500; Polygraphia printed July 1518; Enochian alphabet 1583, Sloane MS 3188). No Agrippa or Trithemius chapter is cited anywhere in this file, so none needed checking.",
+      "sources: the one URL (https://www.voynich.nu/) was removed: neither the research pass nor the fact-check saw it in a search result, and the house rule allows no unseen URL. The citation is kept.",
+      "cautions: added a verification-status caution for the page builders.",
+      "Throughout (62 fields): the research file's 'Basis: my prior knowledge; not re-checked' sentences now say that the fact-check could not check them either."
+    ],
+    "unresolved": [
+      "WHOLE FILE: the fact-check could not run a single web search (the shared per-turn budget of 200 searches was used up before it began). No date, folio, shelfmark, price, title or quotation in this file is confirmed by a source seen in this run. A follow-up, search-backed pass is needed.",
+      "Radiocarbon: 1404–1438, four samples, Greg Hodgins (University of Arizona), sampled 2009, announced February 2011; the news release's title 'UA Experts Determine Age of Book \"Nobody Can Read\"' (from memory); the ORF documentary context; whether Hodgins presented at Voynich 100 (Frascati, 2012). Check the UA release and Hodgins's paper.",
+      "McCrone Associates ink and paint analysis (2009): whether a report was published, and its exact finding.",
+      "Baresch's letter to Kircher: the day (27 April 1639), its archive and locator in the Kircher correspondence (Pontifical Gregorian University), and who found it and when.",
+      "Marci's letter: the date 19 August 1665 or 1666; that Marci suspends judgement; that it says the former owner had sent Kircher a copied portion. The researcher's Latin, withheld from the page, for collation against the letter or voynich.nu's transcription: 'Dr. Raphael Ferdinandi tertii tum Regis Boemiae in lingua Boemica instructor dicti libri fuisse Rudolphi Imperatoris, pro quo ipse latori qui librum attulisset 600 ducatos persolverit. Authorem autem esse putabat Rogerium Bacconem Anglum.'",
+      "'Dr Raphael' = Raphael Sobiehrd-Mnishovsky: the identification, his dates (d. 1644) and his post as tutor in Bohemian to Ferdinand III.",
+      "Horcicky de Tepenec: ennobled 1608, died 1622; the reading 'Jacobj à Tepenece'; the debate on whose hand it is (Zandbergen in Clemens 2016, not seen).",
+      "Baresch's death (c. 1662) and the bequest to Marci; whether any intermediate owner stood between them.",
+      "Collegio Romano, Petrus Beckx and Villa Mondragone stage (1870s–1912); Voynich's 1912 purchase there.",
+      "Newbold: the April 1921 Philadelphia lecture (month and venue); The Cipher of Roger Bacon (1928, ed. Kent). Manly, 'Roger Bacon and the Voynich MS', Speculum 6 (1931): issue and pages.",
+      "Ownership 1930–1969: Ethel Voynich (d. 1960) and Anne Nill; Kraus's purchase in 1961 and the price ($24,500, from memory); the gift to Yale in 1969.",
+      "Friedman: First Study Group 1944–1946 and second group 1962–1963; the anagram's printing in Philological Quarterly 38 (1959); when its solution was released. The wording withheld from the page, for collation with D'Imperio 1978: 'The Voynich MSS was an early attempt to construct an artificial or universal language of the a priori type.'",
+      "Tiltman, NSA Technical Journal 12 (1967): volume and issue; Currier's papers in D'Imperio (ed.), New Research on the Voynich Manuscript, seminar of 30 November 1976: title and date.",
+      "Codicology: the list of missing leaves (ff. 12, 59–64, 74, 91–92, 97–98, 109–110), the count of about 102 surviving leaves, the foliation hand, the foldouts; the section folio ranges in uses[0]; the zodiac pages ff. 70v–73v and whether they use astrological sign-glyphs.",
+      "Journal details in sources: Cryptologia 28.1 (2004), 31.2 (2007), 44.1 (2020); Scientific American 291.1 (July 2004); PLoS ONE 8.6 (2013); Manuscript Studies 5.1 (2020); HerbalGram 100 (2013); TACL 4 (2016); Romance Studies 37.1 (2019); Bennett 1976 (Prentice-Hall).",
+      "Clemens (ed.) 2016: the Harkness introduction and the title of Zandbergen's essay ('Earliest Owners').",
+      "Dee's diary entry of 630 ducats (October 1586): the date and wording, and that it names no book.",
+      "Cheshire 2019: the University of Bristol's withdrawal of its news release. Gibbs, TLS, 2017. Bax 2014. Kennedy and Churchill 2004 (Orion) on glossolalia.",
+      "EVA: 1998, Landini and Zandbergen, 'European' later 'Extensible'; Takahashi's complete transcription (1999); Stolfi's interlinear file; the ZL transcription and IVTFF.",
+      "f1r line 1 in EVA ('fachys ykal ar ataiin shol shory cth(?)res y kor sholdy'): check in the Takahashi or ZL file before printing.",
+      "Letter forms: units 8, 9, 10, 12, 14, 15, 16, 17, 18, 19 and 20 are 'low' and must be traced from the Beinecke images of MS 408 with the folio cited, or left as gaps; the 'medium' units (2, 3, 4, 5, 6, 11, 13) also need a traced folio for their stroke details. Confirm the EVA pairing p~t and f~k on the EVA chart.",
+      "Frequency order of the letter units: recount from a transcription file before any ranking or number is printed.",
+      "Yale's open-access terms for the Beinecke images of MS 408."
+    ]
+  }
+}
