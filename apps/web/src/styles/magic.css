@@ -1054,7 +1054,7 @@
 .mg-cmp-cell a { color: #f0e9da; font-size: 1.35rem; text-decoration: none; }
 /* a letter with no sign: the dash must still be readable (the halls' quieter
    dash is left as it is) */
-.mg-cmp-cell .edu-cog-gap { color: rgba(179, 139, 70, 0.8); }
+.mg-cmp-cell .edu-cog-gap { color: rgba(209, 173, 104, 0.8); }
 .mg-cmp-cell a:hover { color: #d1ad68; }
 /* the alphabets whose forms are still being traced: one band beside the
    rows, under one header that names them, with one sentence — not a column
