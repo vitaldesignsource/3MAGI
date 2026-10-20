@@ -212,6 +212,10 @@ const BENIGN_FETCH_ERRORS = [
 	// The paywall answering "not a member" is the system working, not a fault.
 	// api/essay.php returns 402/401 by design for a gated or unpublished essay.
 	[/api\\/essay\\.php/i, /members_only|preview_required|not_found/i],
+	// The owner's dashboard answers 401/429/503 for "signed out", "wrong
+	// password", "locked for 15 minutes" and "not set up yet": states the
+	// /admin page shows, not faults.
+	[/api\\/admin\\.php/i, /"code":"(unauthenticated|bad_credentials|locked|not_configured)"/],
 ];
 
 function isBenignFetchError(url, body) {

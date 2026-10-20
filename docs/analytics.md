@@ -197,6 +197,25 @@ and it is not in `sitemap.xml`, `llms.txt` or the site search.
   longer about an identifiable person.
 - The CSV export contains IP addresses. Treat downloaded files accordingly.
 
+## The dashboard, section by section
+
+Open `/admin` (on a phone too). One row of controls scopes everything below
+it: the range (today, yesterday, 7, 30 or 90 days, 12 months, or two chosen
+days), "Compare with previous period" (the same length of time just before)
+and "Include my own visits". Days and hours follow the browser's time zone.
+Every chart can be read with the arrow keys and opened as a table.
+
+| Section | What it shows |
+|---|---|
+| Overview | visitors, visits, pageviews, views per visit, bounce rate, average visit, live now; traffic per hour (ranges of two days or less) or per day; top pages, sources, countries |
+| Pages | every page with views, visitors, entries, exits, engaged time, scroll depth and change; groups (essays, Scriptorium, portals …) and "under a path"; the biggest risers. Click a page for where its readers came from, the pages before and after it, its daily trend, its page facts, speed and crawler fetches |
+| Sources | channels (search engines, social, AI assistants, other sites, direct), each source opening onto its hosts, referring pages and landing pages; UTM campaigns |
+| Visitors | the live panel (last five minutes, refreshed every 15 s while the tab is visible) and the visit log, filterable by IP, page, country, device, channel, source and kind (people, bots, headless). Click an address for everything it did within the retention period |
+| Search | the site search's top queries, the queries that found nothing, searches per day |
+| SEO | search-engine visits and landing pages; crawlers (per day, per page, robots.txt / sitemap.xml / llms.txt fetches, addresses with the reverse-DNS check); page health; Core Web Vitals; not-found pages and who links to them; sitemap coverage; links to Search Console, Bing Webmaster Tools and PageSpeed Insights |
+| Technology | devices, browsers and versions, systems, window widths, screens, languages, countries |
+| Settings | storage, record counts, retention and the last prune, **Prune now**, **Export CSV** (for the range chosen above), the server, which secrets are set (never their values), password re-hash advice, and whether this browser is excluded |
+
 ## Troubleshooting (what the Settings section can say)
 
 | Message | Fix |
@@ -217,6 +236,8 @@ and it is not in `sitemap.xml`, `llms.txt` or the site search.
 | `public/api/crawl.php` | crawler log; always the real file |
 | `public/api/admin.php` | the dashboard API (`?a=login|logout|me|stats|visitors|visitor|live|crawlers|seo|export|verify-bot|prune|health`) |
 | `tests/analytics-php/` | `run-tests.php` (all behaviour, ~470 checks), `router.php` (`.htaccess` for `php -S`), `seed.php` (weeks of synthetic traffic), `serve.sh`, `make-secrets.php` (throwaway credentials) |
+| `src/pages/admin/` | the `/admin` UI: its own lazy chunk and stylesheet. `AdminPage.jsx` (sign-in, setup steps, the shell), `sections/*.jsx`, `charts.jsx` (hand-drawn SVG), `api.js` (the only network code) |
+| `tests/analytics-e2e/` | `run.sh`: seeds a database, serves the build, and drives Chromium through every section at 1280 and 390 px, checking figures against SQL; screenshots in `TL_E2E_SHOTS` |
 
 The beacon's event format and every API response are specified field by field
 in the contract the beacon and UI were built against; the tests pin it.
@@ -224,6 +245,7 @@ in the contract the beacon and UI were built against; the tests pin it.
 ```sh
 php apps/web/tests/analytics-php/run-tests.php        # needs PHP 8 with pdo_sqlite and curl; port 4301
 cd apps/web && npm run build && tests/analytics-php/serve.sh   # the built site + a seeded dashboard on :4301
+apps/web/tests/analytics-e2e/run.sh                   # the dashboard UI end to end (after a build); port 4303
 ```
 
 Adding a crawler: add a row to `TA_CRAWLERS` and the same token, in the same

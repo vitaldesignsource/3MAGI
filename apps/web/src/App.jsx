@@ -32,6 +32,8 @@ const ArticlePage = lazy(() => import('./pages/ArticlePage'));
 const PlansPage = lazy(() => import('./pages/PlansPage'));
 const WelcomePage = lazy(() => import('./pages/WelcomePage'));
 const RestoreAccessPage = lazy(() => import('./pages/RestoreAccessPage'));
+// The owner's dashboard: its own chunk (and stylesheet), never linked from the site.
+const AdminPage = lazy(() => import('./pages/admin/AdminPage'));
 
 // Route chunks are small and arrive fast; an empty fallback avoids a flash of
 // spinner on the way in. The page keeps its dark background from <body>.
@@ -118,6 +120,7 @@ function App() {
                     <Route path="/plans" element={<PlansPage />} />
                     <Route path="/welcome" element={<WelcomePage />} />
                     <Route path="/restore" element={<RestoreAccessPage />} />
+                    <Route path="/admin" element={<AdminPage />} />
                 </Routes>
                 </Suspense>
                 </RouteBoundary>
