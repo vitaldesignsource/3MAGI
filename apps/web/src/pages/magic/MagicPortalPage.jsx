@@ -7,7 +7,7 @@ import ScriptoriumSearch from '../../components/ScriptoriumSearch';
 import PortalEmblem from '../christianities/PortalEmblem';
 import { DoorLegend, MagicDoor } from './MagicDoors';
 import FitTitle from './FitTitle';
-import { ALPHABETS, GROUPS, MAGIC_PATH, PAGES, STATUS_LABEL, WING, capitalise, entryPath, numberWord, textOf } from './lib';
+import { ALPHABETS, GROUPS, MAGIC_PATH, PAGES, STATUS_LABEL, WING, canonicalUrl, capitalise, entryPath, numberWord, textOf } from './lib';
 import compare from '../../data/education/magic/compare.generated';
 import '../../styles/magic.css';
 
@@ -47,6 +47,7 @@ function MagicPortalPage() {
             <Helmet>
                 <title>The Magical Scriptorium — The Scriptorium — The Third Lamp</title>
                 <meta name="description" content="The Magical Scriptorium, a wing of The Third Lamp's Scriptorium: the magical and secret alphabets — the Hebrew-keyed ring-letter alphabets Agrippa printed in 1533, the Theban, the signs of the planets and the furnace, the runes — with the books that carried them, what is documented and what is claimed, a comparison of the alphabets and a transliterator." />
+                <link rel="canonical" href={canonicalUrl(MAGIC_PATH)} />
             </Helmet>
             <ThirdLampHeader />
 
@@ -89,7 +90,7 @@ function MagicPortalPage() {
                             <div className="edu-hall-grid mg-door-grid" role="list" aria-labelledby="mg-group-open">
                                 {open.map((a) => (
                                     <div role="listitem" key={a.slug} className="mg-door-cell">
-                                        <MagicDoor entry={a} />
+                                        <MagicDoor entry={a} level={4} />
                                     </div>
                                 ))}
                             </div>
@@ -111,7 +112,7 @@ function MagicPortalPage() {
                                     <div className="edu-hall-grid mg-door-grid is-compact" role="list" aria-labelledby={`mg-group-${g.key}`}>
                                         {members.map((a) => (
                                             <div role="listitem" key={a.slug} className="mg-door-cell">
-                                                <MagicDoor entry={a} stub={compare.entries[a.slug]?.stub} compact />
+                                                <MagicDoor entry={a} stub={compare.entries[a.slug]?.stub} compact level={5} />
                                             </div>
                                         ))}
                                     </div>
@@ -161,7 +162,10 @@ function MagicPortalPage() {
                     </div>
                 </section>
 
-                <ScriptoriumSearch />
+                {/* the halls' placeholder carries a hieroglyph, which would fetch the
+                    Egyptian face on a page that shows no other: the wing's names one of
+                    its own alphabets in its place */}
+                <ScriptoriumSearch placeholder="sefirah · ḥaqq · אין סוף · Theban · execration" />
 
                 <nav className="edu-hall-nav" aria-label="Back to the Scriptorium">
                     <Link to="/third-lamp/education">← The Scriptorium</Link>

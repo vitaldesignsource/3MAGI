@@ -5,7 +5,7 @@ import ThirdLampHeader from '../../components/ThirdLampHeader';
 import ThirdLampFooter from '../../components/ThirdLampFooter';
 import { Sign } from './MagicGlyph';
 import FitTitle from './FitTitle';
-import { ENTRY_BY_SLUG, MAGIC_PATH, WING, entryPath } from './lib';
+import { ENTRY_BY_SLUG, MAGIC_PATH, WING, canonicalUrl, entryPath } from './lib';
 import { transliterate } from './transliterate';
 import compare from '../../data/education/magic/compare.generated';
 import '../../styles/magic.css';
@@ -38,10 +38,13 @@ function MagicTransliteratorPage() {
     // What a screen reader hears: one plain line — the alphabet, the
     // transliteration, what was passed over — once typing settles. The written
     // signs, the breakdown and the report are for the eye and are not
-    // announced on every keystroke.
-    const spoken = result && result.words.length > 0
-        ? `${scheme.short}: ${result.plain}${result.ignored.length ? `. Passed over: ${result.ignored.join(' ')}` : ''}`
-        : '';
+    // announced on every keystroke. Text that writes nothing (Latin typed into
+    // a Hebrew-keyed alphabet, punctuation alone) is announced too, with why.
+    const passedOver = result?.ignored.length ? `. Passed over: ${result.ignored.join(' ')}` : '';
+    const notHebrew = result?.nonHebrew ? `. ${scheme.short} is keyed to the Hebrew letters, so other letters are passed over` : '';
+    const spoken = !result ? ''
+        : result.words.length > 0 ? `${scheme.short}: ${result.plain}${passedOver}${notHebrew}`
+            : `${scheme.short}: nothing written${passedOver}${notHebrew}`;
     const [status, setStatus] = useState(spoken);
     useEffect(() => {
         const t = setTimeout(() => setStatus(spoken), SETTLE_MS);
@@ -68,6 +71,7 @@ function MagicTransliteratorPage() {
             <Helmet>
                 <title>The Transliterator — The Magical Scriptorium — The Third Lamp</title>
                 <meta name="description" content="Write in a magical or secret alphabet: type, and see the text written sign by sign, with every convention the tool follows printed beneath it." />
+                <link rel="canonical" href={canonicalUrl(`${MAGIC_PATH}/transliterate`)} />
             </Helmet>
             <ThirdLampHeader />
 

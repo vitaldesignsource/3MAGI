@@ -5,7 +5,7 @@ import ThirdLampHeader from '../../components/ThirdLampHeader';
 import ThirdLampFooter from '../../components/ThirdLampFooter';
 import { Sign, Unstruck } from './MagicGlyph';
 import FitTitle from './FitTitle';
-import { ENTRY_BY_SLUG, MAGIC_PATH, WING, capitalise, entryPath, numberWord } from './lib';
+import { ENTRY_BY_SLUG, MAGIC_PATH, WING, canonicalUrl, capitalise, entryPath, numberWord } from './lib';
 import compare from '../../data/education/magic/compare.generated';
 import '../../styles/magic.css';
 
@@ -171,6 +171,7 @@ function MagicComparePage() {
             <Helmet>
                 <title>The Alphabets Compared — The Magical Scriptorium — The Third Lamp</title>
                 <meta name="description" content="The magical alphabets side by side: those keyed to the Hebrew letters beside the Hebrew letters and their Phoenician ancestor, and those keyed to the Latin letters beside the Latin alphabet, every cell drawn from the alphabet's own data." />
+                <link rel="canonical" href={canonicalUrl(`${MAGIC_PATH}/compare`)} />
             </Helmet>
             <ThirdLampHeader />
 

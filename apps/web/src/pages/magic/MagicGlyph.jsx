@@ -57,8 +57,9 @@ function MagicGlyph({ g, size, label, className }) {
     if (!g) {
         return (
             <svg className={cls} width={size} height={size} viewBox="0 0 100 100" {...a11y}>
-                <rect x="10" y="10" width="80" height="80" fill="none" stroke="#6b5a3a" strokeDasharray="4 4" />
-                <text x="50" y="56" textAnchor="middle" fontSize="12" fill="#8a7650">gap</text>
+                <rect x="10" y="10" width="80" height="80" fill="none" stroke="currentColor" strokeOpacity="0.55" strokeDasharray="4 4" />
+                {/* the word is legible only at the kit's size; at text size it would be a speck */}
+                {size >= 100 && <text x="50" y="56" textAnchor="middle" fontSize="12" fill="currentColor" fillOpacity="0.7">gap</text>}
             </svg>
         );
     }

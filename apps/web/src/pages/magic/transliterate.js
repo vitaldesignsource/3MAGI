@@ -14,10 +14,16 @@
 // result says which was done, and how many marks of pointing it removed.
 
 // The Reckoner's strip ranges (ScriptoriumReckoner.jsx): combining marks,
-// Hebrew points and cantillation, Arabic harakat, Syriac vowel points.
+// Hebrew points and cantillation, Arabic harakat, Syriac vowel points. The
+// Hebrew punctuation inside the points' block is not pointing and is kept
+// out: maqaf (U+05BE), which joins two words and so is read as a word break,
+// paseq (U+05C0), sof pasuq (U+05C3) and nun hafukha (U+05C6), which are
+// passed over and listed like any other punctuation.
 const STRIP_RANGES = [[0x0300, 0x036F], [0x0591, 0x05C7], [0x0610, 0x061A], [0x064B, 0x065F],
     [0x0670, 0x0670], [0x06D6, 0x06ED], [0x0730, 0x074A]];
-const isStripped = (cp) => STRIP_RANGES.some(([a, b]) => cp >= a && cp <= b);
+const HEBREW_PUNCTUATION = new Set([0x05BE, 0x05C0, 0x05C3, 0x05C6]);
+const MAQAF = '\u05BE';
+const isStripped = (cp) => !HEBREW_PUNCTUATION.has(cp) && STRIP_RANGES.some(([a, b]) => cp >= a && cp <= b);
 const stripPointing = (s) => Array.from(s.normalize('NFD')).filter((c) => !isStripped(c.codePointAt(0))).join('');
 // How many marks stripPointing removes, so the result can say so.
 const countPointing = (s) => Array.from(s.normalize('NFD')).filter((c) => isStripped(c.codePointAt(0))).length;
@@ -43,6 +49,7 @@ export function transliterate(text, scheme) {
         pointing = countPointing(text);
         for (const c of stripPointing(text)) {
             if (isSpace(c)) { space(); continue; }
+            if (c === MAQAF) { space(); ignored.add(c); continue; }
             if (scheme.finals && scheme.finals[c]) {
                 const base = scheme.finals[c];
                 const own = byKey.has(c);
@@ -61,11 +68,14 @@ export function transliterate(text, scheme) {
     } else {
         const s = text.normalize('NFC').toLowerCase();
         const multi = [...(scheme.folds || [])].sort((a, b) => b.from.length - a.from.length);
+        // a fold is tested against only as many characters as the longest fold
+        // has, so a long paste is read in linear time, not quadratic
+        const longest = Math.max(1, ...multi.map((f) => Array.from(f.from).length));
         const chars = Array.from(s);
         for (let i = 0; i < chars.length;) {
             const c = chars[i];
             if (isSpace(c)) { space(); i += 1; continue; }
-            const rest = chars.slice(i).join('');
+            const rest = chars.slice(i, i + longest).join('');
             const fold = multi.find((f) => rest.startsWith(f.from) && Array.from(f.to).every((k) => byKey.has(k)));
             if (fold) {
                 put(fold.from, Array.from(fold.to), fold.note);

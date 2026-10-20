@@ -116,6 +116,12 @@ for (const b of library?.books ?? []) push(
 // not repeated in every result, and a gap letter of a Latin-keyed alphabet
 // that has nothing of its own (its name is its letter, its note the shared
 // one) is left out: a search for the alphabet would otherwise list A to Z.
+// The units of a page that is not an alphabet are not signs, and are not
+// indexed as signs: the lineage's books (kind 'lineage'), the author's
+// chapters ('chapter'), and the kinds of alphabet Ibn Waḥshiyya's catalogue
+// gathers ('alphabet'). A book or a chapter has no form to trace, so it does
+// not carry x.
+const UNIT_KIND = { 'the-books': 'lineage', agrippa: 'chapter', 'ibn-wahshiyya': 'alphabet' };
 {
     const registry = await loadRegistry();
     const { modules, problems } = await loadModules(registry);
@@ -132,7 +138,7 @@ for (const b of library?.books ?? []) push(
             const gap = !l.glyph && !l.char;
             const own = l.note && l.note !== shared ? l.note : '';
             if (gap && !own && e.keyedTo === 'latin' && l.value != null && String(l.name) === String(l.value)) return;
-            const rec = { h: MG, k: 'sign', n: l.char ? textOf(l.char) : '', l: l.name,
+            const rec = { h: MG, k: UNIT_KIND[e.slug] || 'sign', n: l.char ? textOf(l.char) : '', l: l.name,
                 s: [e.short, l.translit || l.planet || l.codepoint].filter(Boolean).join(' · '),
                 d: own.slice(0, 180), a: `mg-letter-${i}`, u: url };
             if (l.glyph) {
@@ -150,7 +156,7 @@ for (const b of library?.books ?? []) push(
                 // the ruled square of its side, as its card does
                 rec.t = l.rows.length;
                 if (e.signScale) rec.z = e.signScale;
-            } else if (!l.char) rec.x = 1;
+            } else if (!l.char && !pages.has(e.slug)) rec.x = 1;
             records.push(rec);
         });
         for (const ev of m.transmission || []) {

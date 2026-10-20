@@ -298,7 +298,8 @@ export function LetterGrid({ mod, letters, keyedTo = 'none', direction = 'ltr', 
                 // its length as --mg-word).
                 const [, main, sub] = /^(.+?)\s*\((.+)\)$/.exec(String(l.name)) || [null, String(l.name), null];
                 const longest = Math.max(...main.split(/\s+/).map((w) => [...w].length));
-                const long = longest >= (formless ? 9 : 10);
+                // a page of titles sets every title at one size (magic.css)
+                const long = !formless && longest >= 10;
                 return (
                     <span className={`edu-letter-name${long ? ' is-long' : ''}`} style={long ? { '--mg-word': longest } : undefined}>
                         {main}{sub && <>{' '}<span className="mg-letter-sub">{sub}</span></>}
@@ -332,7 +333,7 @@ export function LetterGrid({ mod, letters, keyedTo = 'none', direction = 'ltr', 
         return (
             <>
                 <div
-                    className={`edu-letter-grid mg-letter-groups${longNames ? ' has-long-names' : ''}`}
+                    className={`edu-letter-grid mg-letter-groups${longNames ? ' has-long-names' : ''}${formless ? ' is-formless' : ''}`}
                     role="listbox"
                     aria-label={label}
                     aria-activedescendant={letter ? `mg-letter-${selected}` : undefined}
@@ -357,7 +358,7 @@ export function LetterGrid({ mod, letters, keyedTo = 'none', direction = 'ltr', 
                                 <span>{g.label}</span>{g.note && <em>{isolate(g.note)}</em>}
                             </p>
                             <div
-                                className={`edu-letter-grid mg-cols${quartered ? ' is-quartered' : ''}${thirded ? ' is-thirded' : ''}${halved ? ' is-halved' : ''}`}
+                                className={`edu-letter-grid mg-cols${quartered ? ' is-quartered' : ''}${thirded ? ' is-thirded' : ''}${halved ? ' is-halved' : ''}${formless ? ' is-formless' : ''}`}
                                 style={{ '--mg-cols': cols }}
                                 role="listbox"
                                 aria-labelledby={`mg-group-${g.key}`}

@@ -231,10 +231,12 @@
   .is-quartered .mg-letter-card .edu-letter-name { font-size: 0.6rem; letter-spacing: 0.03em; overflow-wrap: normal; }
 }
 /* A letter or a section reached by its address (a search result, the section
-   menu) stops below the sticky site header, not under it. */
+   menu) stops below the sticky site header, not under it: the header is about
+   97px tall on a phone, so the margin leaves a clear line above the card's
+   top border. */
 .mg-letter-card,
 .mg-page [id^="mg-"],
-.mg-page .edu-section-head h2 { scroll-margin-top: 6rem; }
+.mg-page .edu-section-head h2 { scroll-margin-top: 7rem; }
 .mg-letter-card .edu-letter-glyph { min-height: 1.25em; display: flex; align-items: center; justify-content: center; }
 /* A drawn sign keeps a margin inside its em box (the kit's body is 80 units
    of 100), so on a card it is set a little larger than the em, to stand as
@@ -269,17 +271,17 @@
    and the word's length (--mg-word, from Letters.jsx) against the card's width
    gives the size, never above the other names' and never below 0.58rem. An
    upper-case letter of the face is at most about 0.75em wide, with 0.1em of
-   tracking. A page of titles (the books, the chapters: is-formless) keeps
-   one smaller size for all its long titles, so a grid of them reads evenly. */
+   tracking. A page of titles (the books, the chapters: is-formless) sets
+   every title at one size and gives its cards room for the longest word, so
+   a grid of them reads evenly. */
 .mg-letter-card { container-type: inline-size; }
 .mg-letter-card .edu-letter-name.is-long {
   font-size: clamp(0.58rem, calc(100cqi / (var(--mg-word, 12) * 0.88)), 0.74rem);
   letter-spacing: 0.1em;
 }
-.mg-letter-card.is-formless .edu-letter-name.is-long { font-size: 0.64rem; letter-spacing: 0.06em; }
-@media (max-width: 640px) {
-  .mg-letter-card.is-formless .edu-letter-name.is-long { font-size: 0.58rem; letter-spacing: 0.02em; }
-}
+.mg-letter-card.is-formless .edu-letter-name { font-size: 0.72rem; letter-spacing: 0.06em; }
+.edu-letter-grid.is-formless,
+.edu-letter-grid.mg-cols.is-formless { grid-template-columns: repeat(auto-fill, minmax(8.4rem, 1fr)); }
 .mg-letter-sub {
   display: block;
   margin-top: 0.1rem;
@@ -434,7 +436,7 @@
   padding: 0.6rem 0.3rem 0.6rem 0;
   border-bottom: 1px solid rgba(179, 139, 70, 0.1);
   break-inside: avoid;
-  scroll-margin-top: 6rem;
+  scroll-margin-top: 7rem;
   transition: background 160ms ease;
 }
 .mg-reg.is-target { background: rgba(179, 139, 70, 0.15); box-shadow: inset 2px 0 0 #d1ad68; }
@@ -443,7 +445,7 @@
 .mg-reg-no {
   grid-row: 1 / span 3;
   padding: 0.32rem 0 0 0.3rem;
-  color: rgba(209, 173, 104, 0.55);
+  color: rgba(209, 173, 104, 0.8);
   font-size: 0.78rem;
   font-variant-numeric: tabular-nums;
 }
@@ -453,8 +455,8 @@
 .mg-reg-name a:hover { color: #fff3d6; border-color: #ecd9ae; }
 .mg-reg-label {
   margin-right: 0.15rem;
-  color: rgba(209, 173, 104, 0.6);
-  font-size: 0.6rem;
+  color: rgba(209, 173, 104, 0.8);
+  font-size: 0.66rem;
   letter-spacing: 0.16em;
   text-transform: uppercase;
 }
@@ -890,7 +892,10 @@
 .mg-door.is-compact .edu-hall-glyph { font-size: 2.3rem; }
 .mg-door.is-compact .mg-door-sign { min-height: 2.4rem; }
 .mg-door.is-compact .mg-door-sign .mg-unstruck { width: 1.9rem; height: 1.9rem; }
-.mg-door.is-compact h3 { font-size: 0.8rem; letter-spacing: 0.1em; line-height: 1.35; }
+/* a door's name keeps the hall card's look at whatever rank the page's outline
+   gives it (h3 on the Scriptorium portal, h4 and h5 on the wing's) */
+.mg-door .mg-door-title { margin: 0.35em 0 0; font-family: "Cinzel", Georgia, "Times New Roman", serif; font-weight: 500; line-height: 1.12; color: #f4f0e7; letter-spacing: 0.14em; text-transform: uppercase; font-size: 1rem; }
+.mg-door.is-compact .mg-door-title { font-size: 0.8rem; letter-spacing: 0.1em; line-height: 1.35; }
 .mg-door-legend {
   display: flex;
   align-items: center;
@@ -912,9 +917,9 @@
 @media (max-width: 640px) {
   .mg-door-grid.is-compact { grid-template-columns: minmax(0, 1fr); gap: 0.45rem; }
   .mg-door.is-compact { flex-direction: row; justify-content: flex-start; gap: 0.95rem; padding: 0.65rem 1rem; text-align: left; }
-  .mg-door.is-compact .mg-door-sign { flex: 0 0 2rem; min-height: 2rem; font-size: 1.6rem; }
+  .mg-door.is-compact .mg-door-sign { flex: 0 0 2rem; min-height: 2rem; font-size: 1.75rem; }
   .mg-door.is-compact .mg-door-sign .mg-unstruck { width: 1.55rem; height: 1.55rem; }
-  .mg-door.is-compact h3 { margin: 0; font-size: 0.82rem; }
+  .mg-door.is-compact .mg-door-title { margin: 0; font-size: 0.82rem; }
   .mg-door.is-compact:hover { transform: none; }
 }
 
@@ -1047,6 +1052,9 @@
   .mg-compare-table:not(.is-all-pending) .mg-cmp-key a { gap: 0.45rem; }
 }
 .mg-cmp-cell a { color: #f0e9da; font-size: 1.35rem; text-decoration: none; }
+/* a letter with no sign: the dash must still be readable (the halls' quieter
+   dash is left as it is) */
+.mg-cmp-cell .edu-cog-gap { color: rgba(179, 139, 70, 0.8); }
 .mg-cmp-cell a:hover { color: #d1ad68; }
 /* the alphabets whose forms are still being traced: one band beside the
    rows, under one header that names them, with one sentence — not a column
@@ -1125,8 +1133,11 @@
 }
 .mg-writ-word { display: inline-flex; flex-wrap: wrap; justify-content: center; gap: 0.06em; }
 .mg-writ .mg-glyph { filter: drop-shadow(0 0 12px rgba(209, 173, 104, 0.3)); }
+/* a long run with no spaces (a pasted address, a German compound) breaks
+   where it must, so it never widens the column past the screen */
 .mg-writ-plain,
-.mg-writ-text { margin: 0.8rem 0 0; color: rgba(222, 212, 196, 0.8); }
+.mg-writ-text { margin: 0.8rem 0 0; color: rgba(222, 212, 196, 0.8); overflow-wrap: anywhere; }
+.mg-translit-report p { overflow-wrap: anywhere; }
 .mg-writ-plain span,
 .mg-writ-text > span,
 .mg-translit-report span {
@@ -1194,7 +1205,7 @@
 
 /* --- small screens --------------------------------------------------------------------- */
 @media (max-width: 900px) {
-  .mg-translit-body { grid-template-columns: 1fr; grid-template-rows: auto; grid-template-areas: "input" "out" "conventions"; }
+  .mg-translit-body { grid-template-columns: minmax(0, 1fr); grid-template-rows: auto; grid-template-areas: "input" "out" "conventions"; }
 }
 @media (max-width: 720px) {
   .mg-drawn .ch-kv { grid-template-columns: 1fr; }

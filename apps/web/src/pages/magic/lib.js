@@ -27,6 +27,8 @@ export const ENTRIES = [...registry.alphabets, ...registry.pages];
 export const ENTRY_BY_SLUG = Object.fromEntries(ENTRIES.map((e) => [e.slug, e]));
 export const MAGIC_PATH = registry.wing.path;
 export const entryPath = (slug) => `${MAGIC_PATH}/${slug}`;
+// The address a wing page gives as its canonical URL (the sitemap's origin).
+export const canonicalUrl = (path) => `https://threemagipress.com${path}`;
 
 // Number words for derived counts (shared with the node tools).
 export { numberWord, capitalise } from './words';

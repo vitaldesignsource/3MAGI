@@ -1,6 +1,7 @@
 import React, { useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
 import { Helmet } from 'react-helmet';
 import { Link, Navigate, useParams } from 'react-router-dom';
+import { NotFoundBeacon } from '../../components/AnalyticsBeacon';
 import ThirdLampHeader from '../../components/ThirdLampHeader';
 import ThirdLampFooter from '../../components/ThirdLampFooter';
 import ScriptoriumTimeline from '../../components/ScriptoriumTimeline';
@@ -9,7 +10,7 @@ import MagicGlyph, { Sign, Unstruck } from './MagicGlyph';
 import FitTitle from './FitTitle';
 import { isolate } from './Bidi';
 import { LetterGrid, PendingLedger } from './Letters';
-import { ALPHABETS, ENTRIES, ENTRY_BY_SLUG, MAGIC_PATH, STANDINGS, WING, entryPath, loadEntry, textOf } from './lib';
+import { ALPHABETS, ENTRIES, ENTRY_BY_SLUG, MAGIC_PATH, STANDINGS, WING, canonicalUrl, entryPath, loadEntry, textOf } from './lib';
 import '../../styles/magic.css';
 
 // One page per entry of the Magical Scriptorium, in the idiom of a language
@@ -127,7 +128,9 @@ function MagicAlphabetPage() {
             : (mod?.valueLabel && String(l.value).toLowerCase() !== String(l.translit).toLowerCase() ? l.value : null),
     })), [shown, reg, mod]);
 
-    if (!entry) return <Navigate to={MAGIC_PATH} replace />;
+    // an unknown address returns to the wing, recorded first as a miss for the
+    // owner's 404 list
+    if (!entry) return <><NotFoundBeacon /><Navigate to={MAGIC_PATH} replace /></>;
     if (loadError) throw loadError;
     if (!mod || (keyed && !keys)) return <div className="third-lamp-scope edu-page mg-page" aria-busy="true" style={{ minHeight: '100vh' }} />;
 
@@ -178,6 +181,7 @@ function MagicAlphabetPage() {
             <Helmet>
                 <title>{`${mod.title} — The Magical Scriptorium — The Third Lamp`}</title>
                 <meta name="description" content={mod.summary} />
+                <link rel="canonical" href={canonicalUrl(entryPath(entry.slug))} />
             </Helmet>
             <ThirdLampHeader />
 

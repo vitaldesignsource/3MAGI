@@ -11,7 +11,9 @@ import { entryPath, STATUS_LABEL } from './lib';
 // blurb kept as the link's title); the wing's own portal gives the full card,
 // with its blurb, to the alphabets that can be read in full now. A compact
 // door states its status to a screen reader only: the empty seal says it to
-// the eye, and DoorLegend keys the seal once, under the row.
+// the eye, and DoorLegend keys the seal once, under the row. `level` is the
+// rank of the door's name in the page's outline: a door stands one level
+// below the heading of the row it is in.
 
 export function statusLine(entry, stub) {
     if (entry.status === 'forms-pending') return STATUS_LABEL['forms-pending'];
@@ -19,8 +21,9 @@ export function statusLine(entry, stub) {
     return null;
 }
 
-export function MagicDoor({ entry, stub = false, compact = false }) {
+export function MagicDoor({ entry, stub = false, compact = false, level = 3 }) {
     const status = statusLine(entry, stub);
+    const Title = `h${Math.min(6, Math.max(2, level))}`;
     return (
         <Link className={`edu-hall-card mg-door${compact ? ' is-compact' : ''}${entry.status === 'forms-pending' ? ' is-pending' : ''}`}
             to={entryPath(entry.slug)} title={compact ? entry.blurb : undefined}>
@@ -28,7 +31,7 @@ export function MagicDoor({ entry, stub = false, compact = false }) {
                 style={entry.signScale ? { '--mg-scale': entry.signScale } : undefined}>
                 {entry.door ? <Sign of={entry.door} /> : <Unstruck />}
             </span>
-            <h3>{compact ? entry.short : entry.title}</h3>
+            <Title className="mg-door-title">{compact ? entry.short : entry.title}</Title>
             {!compact && entry.otherNames && entry.otherNames[0] && <p className="edu-hall-sample mg-door-names">{entry.otherNames[0]}</p>}
             {!compact && <p className="edu-hall-blurb">{entry.blurb}</p>}
             {/* the Scriptorium portal's compact row keys the empty seal once, in a

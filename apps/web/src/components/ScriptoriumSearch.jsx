@@ -24,8 +24,9 @@ const KIND_LABEL = {
     sign: 'Sign', name: 'Divine name', term: 'Lexicon', current: 'Current',
     work: 'Text', event: 'Timeline', lesson: 'Lesson', book: 'Reading Room',
     // the Magical Scriptorium: its alphabets, and its pages that are not
-    // alphabets (the author, the lineage of the books)
-    alphabet: 'Alphabet', page: 'Page',
+    // alphabets (the author, the lineage of the books), and those pages' units:
+    // the books of the lineage and the author's chapters
+    alphabet: 'Alphabet', page: 'Page', lineage: 'Book', chapter: 'Chapter',
     // the Christianities portal
     christology: 'Christology', branch: 'Branch', council: 'Council',
     dispute: 'Argument', canon: 'Canon', figure: 'Figure', symbol: 'Symbol',
@@ -33,7 +34,7 @@ const KIND_LABEL = {
     // the Powers portal
     order: 'Hierarchy', being: 'Being', deity: 'Deity',
 };
-const KIND_ORDER = ['name', 'term', 'sign', 'alphabet', 'page', 'current', 'work', 'event', 'lesson', 'book',
+const KIND_ORDER = ['name', 'term', 'sign', 'alphabet', 'page', 'lineage', 'chapter', 'current', 'work', 'event', 'lesson', 'book',
     'figure', 'branch', 'council', 'dispute', 'christology', 'creed', 'canon', 'symbol', 'site',
     'manuscript', 'note', 'deity', 'being', 'order'];
 
@@ -87,7 +88,7 @@ function score(rec, q, qFolded) {
     return 0;
 }
 
-function ScriptoriumSearch({ scope = 'scriptorium', scripts = null }) {
+function ScriptoriumSearch({ scope = 'scriptorium', scripts = null, placeholder = null }) {
     const sc = SCOPES[scope];
     const [query, setQuery] = useState('');
     const [index, setIndex] = useState(null);
@@ -169,7 +170,7 @@ function ScriptoriumSearch({ scope = 'scriptorium', scripts = null }) {
                     onChange={(e) => setQuery(e.target.value)}
                     onFocus={ensureIndex}
                     onKeyDown={(e) => { if (e.key === 'Enter' && state === 'ready') trackSearch(query, results.length, true); }}
-                    placeholder={sc.placeholder}
+                    placeholder={placeholder || sc.placeholder}
                     aria-label={sc.heading}
                     aria-describedby="edu-search-status"
                 />

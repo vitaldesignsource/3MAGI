@@ -122,11 +122,12 @@ function App() {
                     <Route path="/third-lamp/education/magic/transliterate" element={<MagicTransliteratorPage />} />
                     {MagicKitPage && <Route path="/third-lamp/education/magic/kit" element={<MagicKitPage />} />}
                     <Route path="/third-lamp/education/magic/:alphabet" element={<MagicAlphabetPage />} />
-                    {/* Anything deeper returns to the wing. /magic/course/:lesson is named
+                    {/* Anything deeper returns to the wing, and is recorded as a miss for
+                        the owner's 404 list first. /magic/course/:lesson is named
                         outright: as a splat it would rank below the halls'
                         :lang/course/:lesson, which would take it as lang "magic". */}
-                    <Route path="/third-lamp/education/magic/course/:lesson" element={<Navigate to="/third-lamp/education/magic" replace />} />
-                    <Route path="/third-lamp/education/magic/*" element={<Navigate to="/third-lamp/education/magic" replace />} />
+                    <Route path="/third-lamp/education/magic/course/:lesson" element={<><NotFoundBeacon /><Navigate to="/third-lamp/education/magic" replace /></>} />
+                    <Route path="/third-lamp/education/magic/*" element={<><NotFoundBeacon /><Navigate to="/third-lamp/education/magic" replace /></>} />
                     <Route path="/third-lamp/education/:lang" element={<EducationLanguagePage />} />
                     <Route path="/third-lamp/education/:lang/course" element={<EducationCoursePage />} />
                     <Route path="/third-lamp/education/:lang/course/:lesson" element={<EducationCoursePage />} />
