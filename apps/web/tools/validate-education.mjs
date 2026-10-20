@@ -1,11 +1,10 @@
 #!/usr/bin/env node
 // Validates the Scriptorium's data before it can be built.
 //
-// The portal now carries fourteen halls of hand-checked scholarship in ten
-// scripts, and the failure modes are quiet ones: a Cyrillic о standing in for
-// a Latin one, a letter value that disagrees with the sum printed beside it, a
-// timeline whose span ends before it begins, an edition link that is not a
-// link. None of those break a build on their own; all of them are wrong on a
+// The portal now carries twenty halls of hand-checked scholarship, and the
+// failure modes are quiet ones: a Cyrillic о standing in for a Latin one, a
+// letter value that disagrees with the sum printed beside it, a timeline
+// whose span ends before it begins, an edition link that is not a link. None of those break a build on their own; all of them are wrong on a
 // published page. This runs as the first step of `npm run build` and fails it.
 
 import { readFileSync, existsSync } from 'node:fs';

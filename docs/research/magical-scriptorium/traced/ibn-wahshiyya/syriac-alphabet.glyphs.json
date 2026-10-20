@@ -1,0 +1,810 @@
+{
+ "slug": "syriac-alphabet",
+ "title": "الباب الثاني في الاقلام السبعة المشهورة . الفصل الاول من الباب الثاني في القلم السرياني — Hammer: \"CHAPTER II. The seven most celebrated old alphabets. SECTION I. The Syrian alphabet, (v. orig. p. 9.)\" [English p. 4]",
+ "primary": {
+  "copy": "Wellcome Library, London, copy of Joseph Hammer (trans.), Ancient Alphabets and Hieroglyphic Characters Explained (London: W. Bulmer and Co., 1806), digitised for the Internet Archive, item b22039910 (https://archive.org/details/b22039910); rights field: Creative Commons Public Domain Mark",
+  "work": "Kitāb Shawq al-mustahām fī maʿrifat rumūz al-aqlām, ascribed to Ibn Waḥshiyya, in the Arabic text printed by Joseph Hammer with his English version",
+  "date": "1806 (the printing; the imprint of the volume)",
+  "locator": "Arabic part, printed page 9 (printed \"9\" and \"٩\"), Bāb II, faṣl 1; scan leaf 214 (BookReader n213, https://archive.org/details/b22039910/page/n213); Hammer's English cites it as \"v. orig. p. 9\" (English p. 4)",
+  "plate": "plates/ibn-wahshiyya/syriac-alphabet/table.png (crop x 470-1890, y 1290-2305 of b22039910_jp2/b22039910_0214.jp2, the item's processed JP2, at full size)"
+ },
+ "table": "The Syriac pen (القلم السرياني), the first of the seven pens the heading calls famous (الاقلام السبعة المشهورة; Hammer: \"the seven most celebrated old alphabets\"): 22 signs in three rows (9, 8, 5), read right to left, each with an Arabic letter printed beneath it, in abjad order from ا to ت; the six letters ث خ ذ ض ظ غ have no sign in this table. Every label was read from the scan and agrees with the order given here.",
+ "conventions": "Centre-line strokes with the kit pen (5.5). The print's letters are cursive, made with a pen of thick and thin strokes; the centre of the pen's track is traced, and heavy terminals are not widened. Small closed loops that are the bowls of these letters (hāʾ, fāʾ, qāf), printed at full weight, are drawn as path loops, not as kit rings: they are counters of cursive letters, not the light ring-ends of the charaktêres. Heads printed as solid balls (ḥāʾ, yāʾ, rāʾ) are drawn as dots at their printed size, the solid triangular head of shīn as a small closed triangle filled by the pen. The points of dāl and rāʾ are dots. The forms are not corrected towards any chart of Syriac: they are drawn as printed.",
+ "variantsDefault": "Compared by the independent checker (2026-10-20) with two other copies of the 1806 printing scanned for the Internet Archive: the Getty Research Institute copy (item ancientalphabets01ibnw, page image n215) and the University of North Carolina at Chapel Hill copy (item ancientalphabets00ibnw, page image n14), both Arabic p. 9, registered onto the Wellcome master and cut to the same cells. The form of this sign is the same in all three copies. The book prints two more Syriac tables in its last section (Arabic pp. 117 and 118), not traced here.",
+ "urlsFetched": {
+  "urls": [
+   "https://archive.org/details/b22039910",
+   "https://archive.org/details/b22039910/page/n213",
+   "https://archive.org/metadata/ancientalphabets01ibnw",
+   "https://archive.org/metadata/ancientalphabets00ibnw",
+   "https://archive.org/download/ancientalphabets01ibnw/page/n215.jpg",
+   "https://archive.org/download/ancientalphabets00ibnw/page/n14.jpg"
+  ],
+  "note": "The first two were fetched by the tracing stage on 2026-10-20 and answered HTTP 200 (status checked only; the page images were already cut from the JP2 master listed under plate). The other four were fetched by the independent checker on 2026-10-20 and answered HTTP 200: the two metadata records name the copies (Getty Research Institute; University of North Carolina at Chapel Hill; both dated 1806, neither has a rights field), and the two page images, served through a redirect to the BookReaderImages.php service on ia801907 / ia600702.us.archive.org, were used only to compare forms; nothing from them is reproduced."
+ },
+ "letters": [
+  {
+   "order": 1,
+   "name": "alif",
+   "value": "ا",
+   "glyph": {
+    "d": "M 53 24.5 C 53.5 29.5 58.5 31 62.5 33.5 C 65.5 35.5 66.5 38.5 66 41.5 L 41.5 59.5 C 37.5 63 35 67.5 34 72.5",
+    "rings": [],
+    "dots": []
+   },
+   "strokes": "One stroke: from a heavy head at the top it bends right to a corner, then runs in a long straight diagonal down to the left and ends in a short downward foot.",
+   "formConfidence": "high",
+   "note": "",
+   "source": {
+    "plate": "plates/ibn-wahshiyya/syriac-alphabet/table.png (crop x 470-1890, y 1290-2305 of b22039910_jp2/b22039910_0214.jp2, the item's processed JP2, at full size)",
+    "position_as_printed": "row 1, sign 1 of 9 counting from the right (the table reads right to left); sign 1 of 22 in the table",
+    "label_as_printed": "ا (printed beneath the sign)",
+    "cell_geometry": {
+     "plate_crop_xywh": [
+      1209,
+      -23,
+      200,
+      200
+     ],
+     "master_xywh": [
+      1679,
+      1267,
+      200,
+      200
+     ],
+     "upscale": "2.25x Lanczos to 450 px"
+    }
+   },
+   "variants": "Compared by the independent checker (2026-10-20) with two other copies of the 1806 printing scanned for the Internet Archive: the Getty Research Institute copy (item ancientalphabets01ibnw, page image n215) and the University of North Carolina at Chapel Hill copy (item ancientalphabets00ibnw, page image n14), both Arabic p. 9, registered onto the Wellcome master and cut to the same cells. The form of this sign is the same in all three copies. The book prints two more Syriac tables in its last section (Arabic pp. 117 and 118), not traced here."
+  },
+  {
+   "order": 2,
+   "name": "bāʾ",
+   "value": "ب",
+   "glyph": {
+    "d": "M 41.5 52.5 C 41 47 42 43 46.5 41 C 55.5 37.5 65 43.5 73 53 M 30.8 45 L 27.4 56 C 27 58.8 29 59.6 33 59.4 C 46 58.5 62 57 74 52.5",
+    "rings": [],
+    "dots": []
+   },
+   "strokes": "Two strokes: a bowl that hooks in at its left end and arches over to the right; below it a base line, which begins in a short upright leaning to the right at the left end and rises at the right to meet the bowl.",
+   "formConfidence": "high",
+   "note": "",
+   "source": {
+    "plate": "plates/ibn-wahshiyya/syriac-alphabet/table.png (crop x 470-1890, y 1290-2305 of b22039910_jp2/b22039910_0214.jp2, the item's processed JP2, at full size)",
+    "position_as_printed": "row 1, sign 2 of 9 counting from the right (the table reads right to left); sign 2 of 22 in the table",
+    "label_as_printed": "ب (printed beneath the sign)",
+    "cell_geometry": {
+     "plate_crop_xywh": [
+      1067,
+      -16,
+      200,
+      200
+     ],
+     "master_xywh": [
+      1537,
+      1274,
+      200,
+      200
+     ],
+     "upscale": "2.25x Lanczos to 450 px"
+    }
+   },
+   "variants": "Compared by the independent checker (2026-10-20) with two other copies of the 1806 printing scanned for the Internet Archive: the Getty Research Institute copy (item ancientalphabets01ibnw, page image n215) and the University of North Carolina at Chapel Hill copy (item ancientalphabets00ibnw, page image n14), both Arabic p. 9, registered onto the Wellcome master and cut to the same cells. The form of this sign is the same in all three copies. The book prints two more Syriac tables in its last section (Arabic pp. 117 and 118), not traced here."
+  },
+  {
+   "order": 3,
+   "name": "jīm",
+   "value": "ج",
+   "glyph": {
+    "d": "M 19.5 29.5 C 26.5 37.5 33 45.5 41.5 48.5 C 51.5 62 66 71 80.5 70.5 C 83.5 68 83 62.5 80 59.5 C 70 53 58 48.5 46 43 C 40.5 35 33 28 23.5 25 M 46.3 41.5 L 41 48",
+    "rings": [],
+    "dots": []
+   },
+   "strokes": "One stroke drawn as a long narrow loop slanting down to the right, closed at its lower end; its two sides are pinched together about a third of the way up and open into two prongs at the upper left.",
+   "formConfidence": "high",
+   "note": "The two sides touch at the pinch in all three copies compared, closing the long lower counter; a short join is drawn there. The upper part, between the two prongs, is open at its top-left end in the Wellcome and Getty copies and closed in the UNC copy; it is drawn open.",
+   "source": {
+    "plate": "plates/ibn-wahshiyya/syriac-alphabet/table.png (crop x 470-1890, y 1290-2305 of b22039910_jp2/b22039910_0214.jp2, the item's processed JP2, at full size)",
+    "position_as_printed": "row 1, sign 3 of 9 counting from the right (the table reads right to left); sign 3 of 22 in the table",
+    "label_as_printed": "ج (printed beneath the sign)",
+    "cell_geometry": {
+     "plate_crop_xywh": [
+      916,
+      -18,
+      200,
+      200
+     ],
+     "master_xywh": [
+      1386,
+      1272,
+      200,
+      200
+     ],
+     "upscale": "2.25x Lanczos to 450 px"
+    }
+   },
+   "variants": "Compared by the independent checker (2026-10-20) with two other copies of the 1806 printing scanned for the Internet Archive: the Getty Research Institute copy (item ancientalphabets01ibnw, page image n215) and the University of North Carolina at Chapel Hill copy (item ancientalphabets00ibnw, page image n14), both Arabic p. 9, registered onto the Wellcome master and cut to the same cells. The form of this sign is the same in all three copies. The book prints two more Syriac tables in its last section (Arabic pp. 117 and 118), not traced here."
+  },
+  {
+   "order": 4,
+   "name": "dāl",
+   "value": "د",
+   "glyph": {
+    "d": "M 45.5 36 C 52 36.5 58 40 57.5 45.5 C 57 51.5 47.5 52 40 49",
+    "rings": [],
+    "dots": [
+     [
+      56.9,
+      65.6,
+      4
+     ]
+    ]
+   },
+   "strokes": "A hook open to the left: from a heavy head at the upper left it curves round to the right and back to the left; a dot below.",
+   "formConfidence": "high",
+   "note": "",
+   "source": {
+    "plate": "plates/ibn-wahshiyya/syriac-alphabet/table.png (crop x 470-1890, y 1290-2305 of b22039910_jp2/b22039910_0214.jp2, the item's processed JP2, at full size)",
+    "position_as_printed": "row 1, sign 4 of 9 counting from the right (the table reads right to left); sign 4 of 22 in the table",
+    "label_as_printed": "د (printed beneath the sign)",
+    "cell_geometry": {
+     "plate_crop_xywh": [
+      746,
+      -7,
+      200,
+      200
+     ],
+     "master_xywh": [
+      1216,
+      1283,
+      200,
+      200
+     ],
+     "upscale": "2.25x Lanczos to 450 px"
+    }
+   },
+   "variants": "Compared by the independent checker (2026-10-20) with two other copies of the 1806 printing scanned for the Internet Archive: the Getty Research Institute copy (item ancientalphabets01ibnw, page image n215) and the University of North Carolina at Chapel Hill copy (item ancientalphabets00ibnw, page image n14), both Arabic p. 9, registered onto the Wellcome master and cut to the same cells. The form of this sign is the same in all three copies. The book prints two more Syriac tables in its last section (Arabic pp. 117 and 118), not traced here."
+  },
+  {
+   "order": 5,
+   "name": "hāʾ",
+   "value": "ه",
+   "glyph": {
+    "d": "M 42.5 43.5 C 40 45.5 33 45.5 30.5 42 C 28.5 38.5 32 35.5 36.5 35.8 C 41 36 42.5 39.5 44 41.5 C 50 43.5 57 39.5 64 40.5 C 69 41.5 69.5 47 69.5 52 L 69 63.5",
+    "rings": [],
+    "dots": []
+   },
+   "strokes": "One stroke: a small closed oval loop at the left, from which the line runs to the right and turns down into a long descender.",
+   "formConfidence": "high",
+   "note": "",
+   "source": {
+    "plate": "plates/ibn-wahshiyya/syriac-alphabet/table.png (crop x 470-1890, y 1290-2305 of b22039910_jp2/b22039910_0214.jp2, the item's processed JP2, at full size)",
+    "position_as_printed": "row 1, sign 5 of 9 counting from the right (the table reads right to left); sign 5 of 22 in the table",
+    "label_as_printed": "ه (printed beneath the sign)",
+    "cell_geometry": {
+     "plate_crop_xywh": [
+      590,
+      6,
+      200,
+      200
+     ],
+     "master_xywh": [
+      1060,
+      1296,
+      200,
+      200
+     ],
+     "upscale": "2.25x Lanczos to 450 px"
+    }
+   },
+   "variants": "Compared by the independent checker (2026-10-20) with two other copies of the 1806 printing scanned for the Internet Archive: the Getty Research Institute copy (item ancientalphabets01ibnw, page image n215) and the University of North Carolina at Chapel Hill copy (item ancientalphabets00ibnw, page image n14), both Arabic p. 9, registered onto the Wellcome master and cut to the same cells. The form of this sign is the same in all three copies. The book prints two more Syriac tables in its last section (Arabic pp. 117 and 118), not traced here."
+  },
+  {
+   "order": 6,
+   "name": "wāw",
+   "value": "و",
+   "glyph": {
+    "d": "M 45.5 41 C 49 39.5 53 39.5 56 40.5 C 59.5 42 61 46 61 51 C 61 57.5 56.5 62 50.5 62 C 44.5 62 40.5 58 40.5 52.5 L 40 48.5",
+    "rings": [],
+    "dots": []
+   },
+   "strokes": "One stroke closing almost into a ring: from a heavy square end at the upper left it runs over the top, down the right side, round the bottom and up the left side, stopping just short of where it began.",
+   "formConfidence": "high",
+   "note": "",
+   "source": {
+    "plate": "plates/ibn-wahshiyya/syriac-alphabet/table.png (crop x 470-1890, y 1290-2305 of b22039910_jp2/b22039910_0214.jp2, the item's processed JP2, at full size)",
+    "position_as_printed": "row 1, sign 6 of 9 counting from the right (the table reads right to left); sign 6 of 22 in the table",
+    "label_as_printed": "و (printed beneath the sign)",
+    "cell_geometry": {
+     "plate_crop_xywh": [
+      456,
+      -7,
+      200,
+      200
+     ],
+     "master_xywh": [
+      926,
+      1283,
+      200,
+      200
+     ],
+     "upscale": "2.25x Lanczos to 450 px"
+    }
+   },
+   "variants": "Compared by the independent checker (2026-10-20) with two other copies of the 1806 printing scanned for the Internet Archive: the Getty Research Institute copy (item ancientalphabets01ibnw, page image n215) and the University of North Carolina at Chapel Hill copy (item ancientalphabets00ibnw, page image n14), both Arabic p. 9, registered onto the Wellcome master and cut to the same cells. The form of this sign is the same in all three copies. The book prints two more Syriac tables in its last section (Arabic pp. 117 and 118), not traced here."
+  },
+  {
+   "order": 7,
+   "name": "zāy",
+   "value": "ز",
+   "glyph": {
+    "d": "M 48.8 33 C 50.2 41 50.2 53 49.6 66.5",
+    "rings": [],
+    "dots": []
+   },
+   "strokes": "One short upright stroke, heavier at its top.",
+   "formConfidence": "high",
+   "note": "",
+   "source": {
+    "plate": "plates/ibn-wahshiyya/syriac-alphabet/table.png (crop x 470-1890, y 1290-2305 of b22039910_jp2/b22039910_0214.jp2, the item's processed JP2, at full size)",
+    "position_as_printed": "row 1, sign 7 of 9 counting from the right (the table reads right to left); sign 7 of 22 in the table",
+    "label_as_printed": "ز (printed beneath the sign)",
+    "cell_geometry": {
+     "plate_crop_xywh": [
+      342,
+      -12,
+      200,
+      200
+     ],
+     "master_xywh": [
+      812,
+      1278,
+      200,
+      200
+     ],
+     "upscale": "2.25x Lanczos to 450 px"
+    }
+   },
+   "variants": "Compared by the independent checker (2026-10-20) with two other copies of the 1806 printing scanned for the Internet Archive: the Getty Research Institute copy (item ancientalphabets01ibnw, page image n215) and the University of North Carolina at Chapel Hill copy (item ancientalphabets00ibnw, page image n14), both Arabic p. 9, registered onto the Wellcome master and cut to the same cells. The form of this sign is the same in all three copies. The book prints two more Syriac tables in its last section (Arabic pp. 117 and 118), not traced here."
+  },
+  {
+   "order": 8,
+   "name": "ḥāʾ",
+   "value": "ح",
+   "glyph": {
+    "d": "M 31.5 46 L 31.5 52.5 C 32 54.5 34 55 37 54.5 L 60 53 M 43.5 53.5 L 43 43.5",
+    "rings": [],
+    "dots": [
+     [
+      63.5,
+      47,
+      6
+     ]
+    ]
+   },
+   "strokes": "A base line turned up at its left end, with an upright tooth rising from it near the left and a solid ball-shaped head at its right end.",
+   "formConfidence": "high",
+   "note": "",
+   "source": {
+    "plate": "plates/ibn-wahshiyya/syriac-alphabet/table.png (crop x 470-1890, y 1290-2305 of b22039910_jp2/b22039910_0214.jp2, the item's processed JP2, at full size)",
+    "position_as_printed": "row 1, sign 8 of 9 counting from the right (the table reads right to left); sign 8 of 22 in the table",
+    "label_as_printed": "ح (printed beneath the sign)",
+    "cell_geometry": {
+     "plate_crop_xywh": [
+      200,
+      -7,
+      200,
+      200
+     ],
+     "master_xywh": [
+      670,
+      1283,
+      200,
+      200
+     ],
+     "upscale": "2.25x Lanczos to 450 px"
+    }
+   },
+   "variants": "Compared by the independent checker (2026-10-20) with two other copies of the 1806 printing scanned for the Internet Archive: the Getty Research Institute copy (item ancientalphabets01ibnw, page image n215) and the University of North Carolina at Chapel Hill copy (item ancientalphabets00ibnw, page image n14), both Arabic p. 9, registered onto the Wellcome master and cut to the same cells. The form of this sign is the same in all three copies. The book prints two more Syriac tables in its last section (Arabic pp. 117 and 118), not traced here."
+  },
+  {
+   "order": 9,
+   "name": "ṭāʾ",
+   "value": "ط",
+   "glyph": {
+    "d": "M 36.5 32 C 41 40 46.5 47.5 53 53 C 58.5 57.5 62 62.5 61 67.5 C 59.5 73.5 50.5 75 44 71.5 C 40 68.5 41 61 46 56.5 C 51.5 51 58.5 44.5 60.5 37 C 60 32 57.5 28.5 55.5 25.5",
+    "rings": [],
+    "dots": []
+   },
+   "strokes": "One stroke: from the upper left it runs down, loops round below and crosses itself, then rises to a short hook at the upper right.",
+   "formConfidence": "high",
+   "note": "",
+   "source": {
+    "plate": "plates/ibn-wahshiyya/syriac-alphabet/table.png (crop x 470-1890, y 1290-2305 of b22039910_jp2/b22039910_0214.jp2, the item's processed JP2, at full size)",
+    "position_as_printed": "row 1, sign 9 of 9 counting from the right (the table reads right to left); sign 9 of 22 in the table",
+    "label_as_printed": "ط (printed beneath the sign)",
+    "cell_geometry": {
+     "plate_crop_xywh": [
+      47,
+      -6,
+      200,
+      200
+     ],
+     "master_xywh": [
+      517,
+      1284,
+      200,
+      200
+     ],
+     "upscale": "2.25x Lanczos to 450 px"
+    }
+   },
+   "variants": "Compared by the independent checker (2026-10-20) with two other copies of the 1806 printing scanned for the Internet Archive: the Getty Research Institute copy (item ancientalphabets01ibnw, page image n215) and the University of North Carolina at Chapel Hill copy (item ancientalphabets00ibnw, page image n14), both Arabic p. 9, registered onto the Wellcome master and cut to the same cells. The form of this sign is the same in all three copies. The book prints two more Syriac tables in its last section (Arabic pp. 117 and 118), not traced here."
+  },
+  {
+   "order": 10,
+   "name": "yāʾ",
+   "value": "ي",
+   "glyph": {
+    "d": "M 42.5 41.5 C 40 45 38.5 50 39.5 54 C 41 55.5 46 55 52 54",
+    "rings": [],
+    "dots": [
+     [
+      56.5,
+      49,
+      6.5
+     ]
+    ]
+   },
+   "strokes": "A short stroke curving down and turning right along the base into a solid ball-shaped head.",
+   "formConfidence": "high",
+   "note": "",
+   "source": {
+    "plate": "plates/ibn-wahshiyya/syriac-alphabet/table.png (crop x 470-1890, y 1290-2305 of b22039910_jp2/b22039910_0214.jp2, the item's processed JP2, at full size)",
+    "position_as_printed": "row 2, sign 1 of 8 counting from the right (the table reads right to left); sign 10 of 22 in the table",
+    "label_as_printed": "ي (printed beneath the sign)",
+    "cell_geometry": {
+     "plate_crop_xywh": [
+      1232,
+      345,
+      200,
+      200
+     ],
+     "master_xywh": [
+      1702,
+      1635,
+      200,
+      200
+     ],
+     "upscale": "2.25x Lanczos to 450 px"
+    }
+   },
+   "variants": "Compared by the independent checker (2026-10-20) with two other copies of the 1806 printing scanned for the Internet Archive: the Getty Research Institute copy (item ancientalphabets01ibnw, page image n215) and the University of North Carolina at Chapel Hill copy (item ancientalphabets00ibnw, page image n14), both Arabic p. 9, registered onto the Wellcome master and cut to the same cells. The form of this sign is the same in all three copies. The book prints two more Syriac tables in its last section (Arabic pp. 117 and 118), not traced here."
+  },
+  {
+   "order": 11,
+   "name": "kāf",
+   "value": "ك",
+   "glyph": {
+    "d": "M 68.5 27 C 74 25.5 80 28.5 80.5 34 C 81 38.5 77 41 72 43 C 62 46 50 48.5 38 49 L 21.5 49 M 49.5 39.5 L 50.5 52 C 50.5 61 46.5 66.5 40 69.5 C 33 72 26 72.5 20.5 73.5",
+    "rings": [],
+    "dots": []
+   },
+   "strokes": "Two strokes: a hook at the upper right running into a long heavy bar to the left; and a stem crossing the bar, curving down and away to the left as a base stroke.",
+   "formConfidence": "high",
+   "note": "The bar is the heaviest stroke of the table and ends square at the left, a little deeper than its own width; that end is the cut of the pen, not a separate stroke, and is drawn with the round pen.",
+   "source": {
+    "plate": "plates/ibn-wahshiyya/syriac-alphabet/table.png (crop x 470-1890, y 1290-2305 of b22039910_jp2/b22039910_0214.jp2, the item's processed JP2, at full size)",
+    "position_as_printed": "row 2, sign 2 of 8 counting from the right (the table reads right to left); sign 11 of 22 in the table",
+    "label_as_printed": "ك (printed beneath the sign)",
+    "cell_geometry": {
+     "plate_crop_xywh": [
+      1036,
+      340,
+      200,
+      200
+     ],
+     "master_xywh": [
+      1506,
+      1630,
+      200,
+      200
+     ],
+     "upscale": "2.25x Lanczos to 450 px"
+    }
+   },
+   "variants": "Compared by the independent checker (2026-10-20) with two other copies of the 1806 printing scanned for the Internet Archive: the Getty Research Institute copy (item ancientalphabets01ibnw, page image n215) and the University of North Carolina at Chapel Hill copy (item ancientalphabets00ibnw, page image n14), both Arabic p. 9, registered onto the Wellcome master and cut to the same cells. The form of this sign is the same in all three copies. The book prints two more Syriac tables in its last section (Arabic pp. 117 and 118), not traced here."
+  },
+  {
+   "order": 12,
+   "name": "lām",
+   "value": "ل",
+   "glyph": {
+    "d": "M 28.5 28 C 35 44 42 58.5 50 71.5 C 53 73.5 57 72.5 60 68 M 40 28 C 46 42 53 55 60 68 L 71 72",
+    "rings": [],
+    "dots": []
+   },
+   "strokes": "Two parallel strokes slanting down to the right, joined at the foot, with a short tail to the right.",
+   "formConfidence": "high",
+   "note": "",
+   "source": {
+    "plate": "plates/ibn-wahshiyya/syriac-alphabet/table.png (crop x 470-1890, y 1290-2305 of b22039910_jp2/b22039910_0214.jp2, the item's processed JP2, at full size)",
+    "position_as_printed": "row 2, sign 3 of 8 counting from the right (the table reads right to left); sign 12 of 22 in the table",
+    "label_as_printed": "ل (printed beneath the sign)",
+    "cell_geometry": {
+     "plate_crop_xywh": [
+      878,
+      346,
+      200,
+      200
+     ],
+     "master_xywh": [
+      1348,
+      1636,
+      200,
+      200
+     ],
+     "upscale": "2.25x Lanczos to 450 px"
+    }
+   },
+   "variants": "Compared by the independent checker (2026-10-20) with two other copies of the 1806 printing scanned for the Internet Archive: the Getty Research Institute copy (item ancientalphabets01ibnw, page image n215) and the University of North Carolina at Chapel Hill copy (item ancientalphabets00ibnw, page image n14), both Arabic p. 9, registered onto the Wellcome master and cut to the same cells. The form of this sign is the same in all three copies. The book prints two more Syriac tables in its last section (Arabic pp. 117 and 118), not traced here."
+  },
+  {
+   "order": 13,
+   "name": "mīm",
+   "value": "م",
+   "glyph": {
+    "d": "M 34 63 C 38 57 41 52 45 47.5 C 49 42.5 54 37.5 61 37.5 C 68 37.5 71.5 43 68.5 49 C 64.5 55 54 53 47 50 C 41 47 35 43 31.5 37.5",
+    "rings": [],
+    "dots": []
+   },
+   "strokes": "One stroke: from the lower left it rises to the right into a loop and comes back across itself to end at the upper left.",
+   "formConfidence": "high",
+   "note": "",
+   "source": {
+    "plate": "plates/ibn-wahshiyya/syriac-alphabet/table.png (crop x 470-1890, y 1290-2305 of b22039910_jp2/b22039910_0214.jp2, the item's processed JP2, at full size)",
+    "position_as_printed": "row 2, sign 4 of 8 counting from the right (the table reads right to left); sign 13 of 22 in the table",
+    "label_as_printed": "م (printed beneath the sign)",
+    "cell_geometry": {
+     "plate_crop_xywh": [
+      736,
+      356,
+      200,
+      200
+     ],
+     "master_xywh": [
+      1206,
+      1646,
+      200,
+      200
+     ],
+     "upscale": "2.25x Lanczos to 450 px"
+    }
+   },
+   "variants": "Compared by the independent checker (2026-10-20) with two other copies of the 1806 printing scanned for the Internet Archive: the Getty Research Institute copy (item ancientalphabets01ibnw, page image n215) and the University of North Carolina at Chapel Hill copy (item ancientalphabets00ibnw, page image n14), both Arabic p. 9, registered onto the Wellcome master and cut to the same cells. The form of this sign is the same in all three copies. The book prints two more Syriac tables in its last section (Arabic pp. 117 and 118), not traced here."
+  },
+  {
+   "order": 14,
+   "name": "nūn",
+   "value": "ن",
+   "glyph": {
+    "d": "M 67.5 69.5 C 60 61 50 55 42 49.5 C 37 46 33 43 33.5 40.5 C 37 38 46 42 54 46 C 60 49 65 50.5 67.5 47.5 C 69 42 64 35 60.5 29.5",
+    "rings": [],
+    "dots": []
+   },
+   "strokes": "One stroke folded on itself: from the lower right it runs up to a heavy point at the left, back to the right, and up into a short arm.",
+   "formConfidence": "high",
+   "note": "",
+   "source": {
+    "plate": "plates/ibn-wahshiyya/syriac-alphabet/table.png (crop x 470-1890, y 1290-2305 of b22039910_jp2/b22039910_0214.jp2, the item's processed JP2, at full size)",
+    "position_as_printed": "row 2, sign 5 of 8 counting from the right (the table reads right to left); sign 14 of 22 in the table",
+    "label_as_printed": "ن (printed beneath the sign)",
+    "cell_geometry": {
+     "plate_crop_xywh": [
+      582,
+      352,
+      200,
+      200
+     ],
+     "master_xywh": [
+      1052,
+      1642,
+      200,
+      200
+     ],
+     "upscale": "2.25x Lanczos to 450 px"
+    }
+   },
+   "variants": "Compared by the independent checker (2026-10-20) with two other copies of the 1806 printing scanned for the Internet Archive: the Getty Research Institute copy (item ancientalphabets01ibnw, page image n215) and the University of North Carolina at Chapel Hill copy (item ancientalphabets00ibnw, page image n14), both Arabic p. 9, registered onto the Wellcome master and cut to the same cells. The form of this sign is the same in all three copies. The book prints two more Syriac tables in its last section (Arabic pp. 117 and 118), not traced here."
+  },
+  {
+   "order": 15,
+   "name": "sīn",
+   "value": "س",
+   "glyph": {
+    "d": "M 22.5 59.5 C 28 59.5 35 57 40 54 C 38.5 50 39 45 43 42.5 C 48 40 54 42 57.5 44.5 C 62 41 69 39.5 74.5 42.5 C 77 45 76.5 48.5 74.5 50 C 64 54.5 51 55 40 54 M 57.5 44.5 L 58.5 53.5",
+    "rings": [],
+    "dots": []
+   },
+   "strokes": "A tail from the left running into a closed body of two loops side by side, divided by a short upright.",
+   "formConfidence": "high",
+   "note": "",
+   "source": {
+    "plate": "plates/ibn-wahshiyya/syriac-alphabet/table.png (crop x 470-1890, y 1290-2305 of b22039910_jp2/b22039910_0214.jp2, the item's processed JP2, at full size)",
+    "position_as_printed": "row 2, sign 6 of 8 counting from the right (the table reads right to left); sign 15 of 22 in the table",
+    "label_as_printed": "س (printed beneath the sign)",
+    "cell_geometry": {
+     "plate_crop_xywh": [
+      392,
+      343,
+      200,
+      200
+     ],
+     "master_xywh": [
+      862,
+      1633,
+      200,
+      200
+     ],
+     "upscale": "2.25x Lanczos to 450 px"
+    }
+   },
+   "variants": "Compared by the independent checker (2026-10-20) with two other copies of the 1806 printing scanned for the Internet Archive: the Getty Research Institute copy (item ancientalphabets01ibnw, page image n215) and the University of North Carolina at Chapel Hill copy (item ancientalphabets00ibnw, page image n14), both Arabic p. 9, registered onto the Wellcome master and cut to the same cells. The form of this sign is the same in all three copies. The book prints two more Syriac tables in its last section (Arabic pp. 117 and 118), not traced here."
+  },
+  {
+   "order": 16,
+   "name": "ʿayn",
+   "value": "ع",
+   "glyph": {
+    "d": "M 31.5 35.5 C 35 42 38.5 50 42 57.5 C 43.5 61 47 61.5 52 61 L 68 60 M 45 34.5 C 48.5 42 53 51 57.5 60",
+    "rings": [],
+    "dots": []
+   },
+   "strokes": "Two parallel strokes slanting down to the right onto a base line that runs out to the right.",
+   "formConfidence": "high",
+   "note": "",
+   "source": {
+    "plate": "plates/ibn-wahshiyya/syriac-alphabet/table.png (crop x 470-1890, y 1290-2305 of b22039910_jp2/b22039910_0214.jp2, the item's processed JP2, at full size)",
+    "position_as_printed": "row 2, sign 7 of 8 counting from the right (the table reads right to left); sign 16 of 22 in the table",
+    "label_as_printed": "ع (printed beneath the sign)",
+    "cell_geometry": {
+     "plate_crop_xywh": [
+      233,
+      359,
+      200,
+      200
+     ],
+     "master_xywh": [
+      703,
+      1649,
+      200,
+      200
+     ],
+     "upscale": "2.25x Lanczos to 450 px"
+    }
+   },
+   "variants": "Compared by the independent checker (2026-10-20) with two other copies of the 1806 printing scanned for the Internet Archive: the Getty Research Institute copy (item ancientalphabets01ibnw, page image n215) and the University of North Carolina at Chapel Hill copy (item ancientalphabets00ibnw, page image n14), both Arabic p. 9, registered onto the Wellcome master and cut to the same cells. The form of this sign is the same in all three copies. The book prints two more Syriac tables in its last section (Arabic pp. 117 and 118), not traced here."
+  },
+  {
+   "order": 17,
+   "name": "fāʾ",
+   "value": "ف",
+   "glyph": {
+    "d": "M 47.8 50.2 L 51.7 38.2 C 52.5 36.8 54.7 36.8 55.6 38.3 L 59.9 48.3 L 61.2 50.5 C 63 53.5 64.2 56 64.2 58.5 C 64.2 61 62 62.4 58.5 62.6 L 34 63 M 47.8 50.2 L 59.9 48.3",
+    "rings": [],
+    "dots": []
+   },
+   "strokes": "A small closed triangular loop at the top, its apex blunt and its base sloping up to the right, whose right side runs on down and turns into a base line to the left.",
+   "formConfidence": "high",
+   "note": "",
+   "source": {
+    "plate": "plates/ibn-wahshiyya/syriac-alphabet/table.png (crop x 470-1890, y 1290-2305 of b22039910_jp2/b22039910_0214.jp2, the item's processed JP2, at full size)",
+    "position_as_printed": "row 2, sign 8 of 8 counting from the right (the table reads right to left); sign 17 of 22 in the table",
+    "label_as_printed": "ف (printed beneath the sign)",
+    "cell_geometry": {
+     "plate_crop_xywh": [
+      108,
+      348,
+      200,
+      200
+     ],
+     "master_xywh": [
+      578,
+      1638,
+      200,
+      200
+     ],
+     "upscale": "2.25x Lanczos to 450 px"
+    }
+   },
+   "variants": "Compared by the independent checker (2026-10-20) with two other copies of the 1806 printing scanned for the Internet Archive: the Getty Research Institute copy (item ancientalphabets01ibnw, page image n215) and the University of North Carolina at Chapel Hill copy (item ancientalphabets00ibnw, page image n14), both Arabic p. 9, registered onto the Wellcome master and cut to the same cells. The form of this sign is the same in all three copies. The book prints two more Syriac tables in its last section (Arabic pp. 117 and 118), not traced here."
+  },
+  {
+   "order": 18,
+   "name": "ṣād",
+   "value": "ص",
+   "glyph": {
+    "d": "M 47.5 29.5 L 58 29 L 65 38.5 L 63.5 46 L 56 52.5 C 62.5 50 69.5 52 71.5 57 C 73 63 68 68.5 58 71.5 C 46 74.5 32 70 25.5 59",
+    "rings": [],
+    "dots": []
+   },
+   "strokes": "One stroke: a heavy wedge-shaped head at the top, a sharp turn back down to the left into a point, then a bowl swinging out to the right, round below to the left and up.",
+   "formConfidence": "high",
+   "note": "",
+   "source": {
+    "plate": "plates/ibn-wahshiyya/syriac-alphabet/table.png (crop x 470-1890, y 1290-2305 of b22039910_jp2/b22039910_0214.jp2, the item's processed JP2, at full size)",
+    "position_as_printed": "row 3, sign 1 of 5 counting from the right (the table reads right to left); sign 18 of 22 in the table",
+    "label_as_printed": "ص (printed beneath the sign)",
+    "cell_geometry": {
+     "plate_crop_xywh": [
+      960,
+      710,
+      200,
+      200
+     ],
+     "master_xywh": [
+      1430,
+      2000,
+      200,
+      200
+     ],
+     "upscale": "2.25x Lanczos to 450 px"
+    }
+   },
+   "variants": "Compared by the independent checker (2026-10-20) with two other copies of the 1806 printing scanned for the Internet Archive: the Getty Research Institute copy (item ancientalphabets01ibnw, page image n215) and the University of North Carolina at Chapel Hill copy (item ancientalphabets00ibnw, page image n14), both Arabic p. 9, registered onto the Wellcome master and cut to the same cells. The form of this sign is the same in all three copies. The book prints two more Syriac tables in its last section (Arabic pp. 117 and 118), not traced here."
+  },
+  {
+   "order": 19,
+   "name": "qāf",
+   "value": "ق",
+   "glyph": {
+    "d": "M 24.5 43.5 L 25 52 C 26 55.5 29 56.5 33 56.5 C 42 56 52 54 62 50 C 64.5 47 66 42 70.5 40.5 C 75 39.5 78.5 43.5 76.5 47.5 C 74.5 51 68.5 52 63 50",
+    "rings": [],
+    "dots": []
+   },
+   "strokes": "A short upright at the left turning into a base line that rises at the right into a small closed loop.",
+   "formConfidence": "high",
+   "note": "",
+   "source": {
+    "plate": "plates/ibn-wahshiyya/syriac-alphabet/table.png (crop x 470-1890, y 1290-2305 of b22039910_jp2/b22039910_0214.jp2, the item's processed JP2, at full size)",
+    "position_as_printed": "row 3, sign 2 of 5 counting from the right (the table reads right to left); sign 19 of 22 in the table",
+    "label_as_printed": "ق (printed beneath the sign)",
+    "cell_geometry": {
+     "plate_crop_xywh": [
+      764,
+      730,
+      200,
+      200
+     ],
+     "master_xywh": [
+      1234,
+      2020,
+      200,
+      200
+     ],
+     "upscale": "2.25x Lanczos to 450 px"
+    }
+   },
+   "variants": "Compared by the independent checker (2026-10-20) with two other copies of the 1806 printing scanned for the Internet Archive: the Getty Research Institute copy (item ancientalphabets01ibnw, page image n215) and the University of North Carolina at Chapel Hill copy (item ancientalphabets00ibnw, page image n14), both Arabic p. 9, registered onto the Wellcome master and cut to the same cells. The form of this sign is the same in all three copies. The book prints two more Syriac tables in its last section (Arabic pp. 117 and 118), not traced here."
+  },
+  {
+   "order": 20,
+   "name": "rāʾ",
+   "value": "ر",
+   "glyph": {
+    "d": "M 37.5 62 C 41 65.5 47 68 53 67.5 C 58.5 67 61 62 60 56",
+    "rings": [],
+    "dots": [
+     [
+      54,
+      50.5,
+      7
+     ],
+     [
+      50.5,
+      32,
+      4
+     ]
+    ]
+   },
+   "strokes": "A solid ball-shaped head with a tail hooking down and round to the left; a dot above.",
+   "formConfidence": "high",
+   "note": "",
+   "source": {
+    "plate": "plates/ibn-wahshiyya/syriac-alphabet/table.png (crop x 470-1890, y 1290-2305 of b22039910_jp2/b22039910_0214.jp2, the item's processed JP2, at full size)",
+    "position_as_printed": "row 3, sign 3 of 5 counting from the right (the table reads right to left); sign 20 of 22 in the table",
+    "label_as_printed": "ر (printed beneath the sign)",
+    "cell_geometry": {
+     "plate_crop_xywh": [
+      612,
+      708,
+      200,
+      200
+     ],
+     "master_xywh": [
+      1082,
+      1998,
+      200,
+      200
+     ],
+     "upscale": "2.25x Lanczos to 450 px"
+    }
+   },
+   "variants": "Compared by the independent checker (2026-10-20) with two other copies of the 1806 printing scanned for the Internet Archive: the Getty Research Institute copy (item ancientalphabets01ibnw, page image n215) and the University of North Carolina at Chapel Hill copy (item ancientalphabets00ibnw, page image n14), both Arabic p. 9, registered onto the Wellcome master and cut to the same cells. The form of this sign is the same in all three copies. The book prints two more Syriac tables in its last section (Arabic pp. 117 and 118), not traced here."
+  },
+  {
+   "order": 21,
+   "name": "shīn",
+   "value": "ش",
+   "glyph": {
+    "d": "M 34.5 37.5 C 29 41 26 47 27 52.5 C 28.5 58 35 59.5 42 58.5 C 49 57.5 56 54.5 61 50 M 61 38.5 L 69.5 45 L 61 50.5 Z",
+    "rings": [],
+    "dots": [
+     [
+      63.8,
+      44.7,
+      2.2
+     ]
+    ]
+   },
+   "strokes": "A hook curving down from the upper left and along the base into a solid triangular head at the right.",
+   "formConfidence": "high",
+   "note": "",
+   "source": {
+    "plate": "plates/ibn-wahshiyya/syriac-alphabet/table.png (crop x 470-1890, y 1290-2305 of b22039910_jp2/b22039910_0214.jp2, the item's processed JP2, at full size)",
+    "position_as_printed": "row 3, sign 4 of 5 counting from the right (the table reads right to left); sign 21 of 22 in the table",
+    "label_as_printed": "ش (printed beneath the sign)",
+    "cell_geometry": {
+     "plate_crop_xywh": [
+      468,
+      722,
+      200,
+      200
+     ],
+     "master_xywh": [
+      938,
+      2012,
+      200,
+      200
+     ],
+     "upscale": "2.25x Lanczos to 450 px"
+    }
+   },
+   "variants": "Compared by the independent checker (2026-10-20) with two other copies of the 1806 printing scanned for the Internet Archive: the Getty Research Institute copy (item ancientalphabets01ibnw, page image n215) and the University of North Carolina at Chapel Hill copy (item ancientalphabets00ibnw, page image n14), both Arabic p. 9, registered onto the Wellcome master and cut to the same cells. The form of this sign is the same in all three copies. The book prints two more Syriac tables in its last section (Arabic pp. 117 and 118), not traced here."
+  },
+  {
+   "order": 22,
+   "name": "tāʾ",
+   "value": "ت",
+   "glyph": {
+    "d": "M 37 28 C 37.5 35 40 40 41 46 C 41.5 54 41 61 40 68.5 C 46 66.5 52 62 58.5 64.5 C 62 66 64.5 68 66.5 70",
+    "rings": [],
+    "dots": []
+   },
+   "strokes": "An upright stem, heavy at its top, whose foot turns to the right into a low arch.",
+   "formConfidence": "high",
+   "note": "The Wellcome scan shows a faint, thin slanted tick about 20 units above the stem (table.png x 410-424, y 712-738). It is absent from the same place in the Getty and UNC copies (see variants), so it is a mark of the Wellcome copy, not of the printed sign, and is not drawn.",
+   "source": {
+    "plate": "plates/ibn-wahshiyya/syriac-alphabet/table.png (crop x 470-1890, y 1290-2305 of b22039910_jp2/b22039910_0214.jp2, the item's processed JP2, at full size)",
+    "position_as_printed": "row 3, sign 5 of 5 counting from the right (the table reads right to left); sign 22 of 22 in the table",
+    "label_as_printed": "ت (printed beneath the sign)",
+    "cell_geometry": {
+     "plate_crop_xywh": [
+      328,
+      725,
+      200,
+      200
+     ],
+     "master_xywh": [
+      798,
+      2015,
+      200,
+      200
+     ],
+     "upscale": "2.25x Lanczos to 450 px"
+    }
+   },
+   "variants": "Compared by the independent checker (2026-10-20) with two other copies of the 1806 printing scanned for the Internet Archive: the Getty Research Institute copy (item ancientalphabets01ibnw, page image n215) and the University of North Carolina at Chapel Hill copy (item ancientalphabets00ibnw, page image n14), both Arabic p. 9, registered onto the Wellcome master and cut to the same cells. The form of this sign is the same in all three copies; the faint tick above it in the Wellcome scan is not in the other two. The book prints two more Syriac tables in its last section (Arabic pp. 117 and 118), not traced here."
+  }
+ ]
+}

@@ -1,0 +1,1131 @@
+{
+ "slug": "hermes-abu-tat",
+ "title": "الفصل الثاني عشر من الباب الرابع في صفة قلم الحكيم هرمس ابوطاط الذي كتب الصنعة الشريفة . وصنع باقليم الصعيد كنوزا وبرابي ونواويس كاهنية له ولولده . ورصدها ورمزها بهذا القلم . الذي استخرجه من السرب المظلم — Hammer: \"SECTION XII. The alphabet of Hermes Abootat the philosopher. … extracted from the regions of darkness, (v. orig. p. 34.)\" [Chapter IV, English pp. 6-7]",
+ "primary": {
+  "copy": "Wellcome Library, London, copy of Joseph Hammer (trans.), Ancient Alphabets and Hieroglyphic Characters Explained (London: W. Bulmer and Co., 1806), digitised for the Internet Archive, item b22039910 (https://archive.org/details/b22039910); rights field: Creative Commons Public Domain Mark",
+  "work": "Kitāb Shawq al-mustahām fī maʿrifat rumūz al-aqlām, ascribed to Ibn Waḥshiyya, in the Arabic text printed by Joseph Hammer with his English version",
+  "date": "1806 (the printing; the imprint of the volume)",
+  "locator": "Arabic part, printed page 34, Bāb IV, faṣl 12; scan leaf 189 (BookReader n188, https://archive.org/details/b22039910/page/n188); Hammer's English cites it as \"v. orig. p. 34\" (English pp. 6-7)",
+  "plate": "plates/ibn-wahshiyya/hermes-abu-tat/table.png (crop x 240-1640, y 1395-2320 of b22039910_jp2/b22039910_0189.jp2, the item's processed JP2, at full size)"
+ },
+ "table": "The pen of the sage Hirmis Abū Ṭāṭ (هرمس ابوطاط; Hammer: \"Hermes Abootat\"). In this file's own paraphrase of the Arabic heading: he wrote on the noble art, made treasures, temples (barābī) and priestly tombs (nawāwīs) in the province of al-Ṣaʿīd for himself and his son, and guarded and encoded them with this pen, which he brought out of the dark tunnel (السرب المظلم). Hammer's English renders the last words \"extracted from the regions of darkness\". 28 signs in three rows (10, 9, 9), read right to left, each with an Arabic letter printed beneath it, in abjad order from ا to غ; every label was read from the scan and agrees with that order. The ascription to Hermes is the book's.",
+ "conventions": "Centre-line strokes with the kit pen (5.5), heavier than the print's fine line (about 3-4 units). Small open circles at stroke ends are kit rings, with r set to the centre line of the printed ring (4.5-6.3); the stroke stops at the ring's edge, and the ring is placed where the print has it even where that is not quite on the line of the stroke. Signs that are themselves closed figures (alif's oval, hāʾ's shield, lām's and ghayn's triangles, the oval of bāʾ, khāʾ's bow) are drawn as closed paths, not as rings. The pennant of ṣād is a closed triangle path. Separator points between the signs are not part of any sign.",
+ "variantsDefault": "Compared by the independent checker (2026-10-20) with two other copies of the 1806 printing scanned for the Internet Archive: the Getty Research Institute copy (item ancientalphabets01ibnw, page image n190) and the University of North Carolina at Chapel Hill copy (item ancientalphabets00ibnw, page image n39), both Arabic p. 34, registered onto the Wellcome master and cut to the same cells. The form of this sign is the same in all three copies. The book prints another table it gives to Hermes on Arabic p. 16, not traced here.",
+ "urlsFetched": {
+  "urls": [
+   "https://archive.org/details/b22039910",
+   "https://archive.org/details/b22039910/page/n188",
+   "https://archive.org/metadata/ancientalphabets01ibnw",
+   "https://archive.org/metadata/ancientalphabets00ibnw",
+   "https://archive.org/download/ancientalphabets01ibnw/page/n190.jpg",
+   "https://archive.org/download/ancientalphabets00ibnw/page/n39.jpg"
+  ],
+  "note": "The first two were fetched by the tracing stage on 2026-10-20 and answered HTTP 200 (status checked only; the page images were already cut from the JP2 master listed under plate). The other four were fetched by the independent checker on 2026-10-20 and answered HTTP 200: the two metadata records name the copies (Getty Research Institute; University of North Carolina at Chapel Hill; both dated 1806, neither has a rights field), and the two page images, served through a redirect to the BookReaderImages.php service, were used only to compare forms; nothing from them is reproduced."
+ },
+ "letters": [
+  {
+   "order": 1,
+   "name": "alif",
+   "value": "ا",
+   "glyph": {
+    "d": "M 58.3 50 C 58.3 53.4 54.7 56.2 50.3 56.2 C 45.9 56.2 42.3 53.4 42.3 50 C 42.3 46.6 45.9 43.8 50.3 43.8 C 54.7 43.8 58.3 46.6 58.3 50 Z",
+    "rings": [],
+    "dots": []
+   },
+   "strokes": "A single small closed oval, wider than tall, standing alone.",
+   "formConfidence": "high",
+   "note": "",
+   "source": {
+    "plate": "plates/ibn-wahshiyya/hermes-abu-tat/table.png (crop x 240-1640, y 1395-2320 of b22039910_jp2/b22039910_0189.jp2, the item's processed JP2, at full size)",
+    "position_as_printed": "row 1, sign 1 of 10 counting from the right (the table reads right to left); sign 1 of 28 in the table",
+    "label_as_printed": "ا (printed beneath the sign)",
+    "cell_geometry": {
+     "plate_crop_xywh": [
+      1206,
+      -36,
+      200,
+      200
+     ],
+     "master_xywh": [
+      1446,
+      1359,
+      200,
+      200
+     ],
+     "upscale": "2.25x Lanczos to 450 px"
+    }
+   },
+   "variants": "Compared by the independent checker (2026-10-20) with two other copies of the 1806 printing scanned for the Internet Archive: the Getty Research Institute copy (item ancientalphabets01ibnw, page image n190) and the University of North Carolina at Chapel Hill copy (item ancientalphabets00ibnw, page image n39), both Arabic p. 34, registered onto the Wellcome master and cut to the same cells. The form of this sign is the same in all three copies. The book prints another table it gives to Hermes on Arabic p. 16, not traced here."
+  },
+  {
+   "order": 2,
+   "name": "bāʾ",
+   "value": "ب",
+   "glyph": {
+    "d": "M 59.8 34.4 C 60.3 37.4 56.7 40.5 51.7 41.4 C 46.7 42.3 42.2 40.6 41.6 37.6 C 41.1 34.6 44.7 31.5 49.7 30.6 C 54.7 29.7 59.2 31.4 59.8 34.4 Z M 51.3 41.5 L 51.6 70.5",
+    "rings": [],
+    "dots": []
+   },
+   "strokes": "An upright stem hanging from the middle of a flat closed oval at its top; the oval tilts a little, its left end lower.",
+   "formConfidence": "high",
+   "note": "",
+   "source": {
+    "plate": "plates/ibn-wahshiyya/hermes-abu-tat/table.png (crop x 240-1640, y 1395-2320 of b22039910_jp2/b22039910_0189.jp2, the item's processed JP2, at full size)",
+    "position_as_printed": "row 1, sign 2 of 10 counting from the right (the table reads right to left); sign 2 of 28 in the table",
+    "label_as_printed": "ب (printed beneath the sign)",
+    "cell_geometry": {
+     "plate_crop_xywh": [
+      1124,
+      -30,
+      200,
+      200
+     ],
+     "master_xywh": [
+      1364,
+      1365,
+      200,
+      200
+     ],
+     "upscale": "2.25x Lanczos to 450 px"
+    }
+   },
+   "variants": "Compared by the independent checker (2026-10-20) with two other copies of the 1806 printing scanned for the Internet Archive: the Getty Research Institute copy (item ancientalphabets01ibnw, page image n190) and the University of North Carolina at Chapel Hill copy (item ancientalphabets00ibnw, page image n39), both Arabic p. 34, registered onto the Wellcome master and cut to the same cells. The form of this sign is the same in all three copies. The book prints another table it gives to Hermes on Arabic p. 16, not traced here."
+  },
+  {
+   "order": 3,
+   "name": "jīm",
+   "value": "ج",
+   "glyph": {
+    "d": "M 69 59 L 58 30.5 L 37.2 56.5",
+    "rings": [
+     [
+      36.6,
+      62.5,
+      6
+     ]
+    ],
+    "dots": []
+   },
+   "strokes": "A peaked stroke like an inverted V: the right leg ends plain, the left leg ends in a ring hanging below its foot.",
+   "formConfidence": "high",
+   "note": "",
+   "source": {
+    "plate": "plates/ibn-wahshiyya/hermes-abu-tat/table.png (crop x 240-1640, y 1395-2320 of b22039910_jp2/b22039910_0189.jp2, the item's processed JP2, at full size)",
+    "position_as_printed": "row 1, sign 3 of 10 counting from the right (the table reads right to left); sign 3 of 28 in the table",
+    "label_as_printed": "ج (printed beneath the sign)",
+    "cell_geometry": {
+     "plate_crop_xywh": [
+      1032,
+      -36,
+      200,
+      200
+     ],
+     "master_xywh": [
+      1272,
+      1359,
+      200,
+      200
+     ],
+     "upscale": "2.25x Lanczos to 450 px"
+    }
+   },
+   "variants": "Compared by the independent checker (2026-10-20) with two other copies of the 1806 printing scanned for the Internet Archive: the Getty Research Institute copy (item ancientalphabets01ibnw, page image n190) and the University of North Carolina at Chapel Hill copy (item ancientalphabets00ibnw, page image n39), both Arabic p. 34, registered onto the Wellcome master and cut to the same cells. The form of this sign is the same in all three copies. The book prints another table it gives to Hermes on Arabic p. 16, not traced here."
+  },
+  {
+   "order": 4,
+   "name": "dāl",
+   "value": "د",
+   "glyph": {
+    "d": "M 44.7 25.6 L 63.5 45 C 57 50 48.5 55.5 45.2 60.8",
+    "rings": [
+     [
+      42.7,
+      66.2,
+      6
+     ]
+    ],
+    "dots": []
+   },
+   "strokes": "Two strokes meeting at a point on the right like a >: the upper one runs plain from the upper left, the lower one ends at the lower left in a ring.",
+   "formConfidence": "high",
+   "note": "",
+   "source": {
+    "plate": "plates/ibn-wahshiyya/hermes-abu-tat/table.png (crop x 240-1640, y 1395-2320 of b22039910_jp2/b22039910_0189.jp2, the item's processed JP2, at full size)",
+    "position_as_printed": "row 1, sign 4 of 10 counting from the right (the table reads right to left); sign 4 of 28 in the table",
+    "label_as_printed": "د (printed beneath the sign)",
+    "cell_geometry": {
+     "plate_crop_xywh": [
+      924,
+      -32,
+      200,
+      200
+     ],
+     "master_xywh": [
+      1164,
+      1363,
+      200,
+      200
+     ],
+     "upscale": "2.25x Lanczos to 450 px"
+    }
+   },
+   "variants": "Compared by the independent checker (2026-10-20) with two other copies of the 1806 printing scanned for the Internet Archive: the Getty Research Institute copy (item ancientalphabets01ibnw, page image n190) and the University of North Carolina at Chapel Hill copy (item ancientalphabets00ibnw, page image n39), both Arabic p. 34, registered onto the Wellcome master and cut to the same cells. The form of this sign is the same in all three copies. The book prints another table it gives to Hermes on Arabic p. 16, not traced here."
+  },
+  {
+   "order": 5,
+   "name": "hāʾ",
+   "value": "ه",
+   "glyph": {
+    "d": "M 49.5 32 C 44 38 37 44 34.5 50 C 31.5 58 39 64.5 50 64.5 C 61 64.5 67.5 58 66.5 50 C 65.5 42 57 37.5 49.5 32 Z",
+    "rings": [],
+    "dots": [
+     [
+      50.6,
+      50.6,
+      2.8
+     ]
+    ]
+   },
+   "strokes": "A closed shield-shaped outline, pointed at the top and round below, with a solid dot at its centre.",
+   "formConfidence": "high",
+   "note": "The central point is printed as a small lozenge; it is drawn as a round dot.",
+   "source": {
+    "plate": "plates/ibn-wahshiyya/hermes-abu-tat/table.png (crop x 240-1640, y 1395-2320 of b22039910_jp2/b22039910_0189.jp2, the item's processed JP2, at full size)",
+    "position_as_printed": "row 1, sign 5 of 10 counting from the right (the table reads right to left); sign 5 of 28 in the table",
+    "label_as_printed": "ه (printed beneath the sign)",
+    "cell_geometry": {
+     "plate_crop_xywh": [
+      822,
+      -24,
+      200,
+      200
+     ],
+     "master_xywh": [
+      1062,
+      1371,
+      200,
+      200
+     ],
+     "upscale": "2.25x Lanczos to 450 px"
+    }
+   },
+   "variants": "Compared by the independent checker (2026-10-20) with two other copies of the 1806 printing scanned for the Internet Archive: the Getty Research Institute copy (item ancientalphabets01ibnw, page image n190) and the University of North Carolina at Chapel Hill copy (item ancientalphabets00ibnw, page image n39), both Arabic p. 34, registered onto the Wellcome master and cut to the same cells. The form of this sign is the same in all three copies. The book prints another table it gives to Hermes on Arabic p. 16, not traced here."
+  },
+  {
+   "order": 6,
+   "name": "wāw",
+   "value": "و",
+   "glyph": {
+    "d": "M 24 63.5 L 23.8 38 L 59 37 C 62 37 64.3 37.6 65.4 39.5",
+    "rings": [
+     [
+      69.5,
+      44.3,
+      6.3
+     ]
+    ],
+    "dots": []
+   },
+   "strokes": "An upright and a top bar meeting in a square corner at the upper left; the bar ends at the right in a ring that hangs below it.",
+   "formConfidence": "high",
+   "note": "",
+   "source": {
+    "plate": "plates/ibn-wahshiyya/hermes-abu-tat/table.png (crop x 240-1640, y 1395-2320 of b22039910_jp2/b22039910_0189.jp2, the item's processed JP2, at full size)",
+    "position_as_printed": "row 1, sign 6 of 10 counting from the right (the table reads right to left); sign 6 of 28 in the table",
+    "label_as_printed": "و (printed beneath the sign)",
+    "cell_geometry": {
+     "plate_crop_xywh": [
+      700,
+      -28,
+      200,
+      200
+     ],
+     "master_xywh": [
+      940,
+      1367,
+      200,
+      200
+     ],
+     "upscale": "2.25x Lanczos to 450 px"
+    }
+   },
+   "variants": "Compared by the independent checker (2026-10-20) with two other copies of the 1806 printing scanned for the Internet Archive: the Getty Research Institute copy (item ancientalphabets01ibnw, page image n190) and the University of North Carolina at Chapel Hill copy (item ancientalphabets00ibnw, page image n39), both Arabic p. 34, registered onto the Wellcome master and cut to the same cells. The form of this sign is the same in all three copies. The book prints another table it gives to Hermes on Arabic p. 16, not traced here."
+  },
+  {
+   "order": 7,
+   "name": "zāy",
+   "value": "ز",
+   "glyph": {
+    "d": "M 33.7 40.8 C 35.5 38.3 40 38.6 44 37.9 L 73 33 L 74.8 68.5 M 46.2 57.8 L 72.8 44.5 M 46.9 67.5 L 73.6 55.5",
+    "rings": [
+     [
+      30.6,
+      45.2,
+      5.4
+     ]
+    ],
+    "dots": []
+   },
+   "strokes": "A ring at the left from which a bar rises to the upper right and turns down as an upright; two shorter parallel bars slant up from the left to meet the upright.",
+   "formConfidence": "high",
+   "note": "",
+   "source": {
+    "plate": "plates/ibn-wahshiyya/hermes-abu-tat/table.png (crop x 240-1640, y 1395-2320 of b22039910_jp2/b22039910_0189.jp2, the item's processed JP2, at full size)",
+    "position_as_printed": "row 1, sign 7 of 10 counting from the right (the table reads right to left); sign 7 of 28 in the table",
+    "label_as_printed": "ز (printed beneath the sign)",
+    "cell_geometry": {
+     "plate_crop_xywh": [
+      552,
+      -26,
+      200,
+      200
+     ],
+     "master_xywh": [
+      792,
+      1369,
+      200,
+      200
+     ],
+     "upscale": "2.25x Lanczos to 450 px"
+    }
+   },
+   "variants": "Compared by the independent checker (2026-10-20) with two other copies of the 1806 printing scanned for the Internet Archive: the Getty Research Institute copy (item ancientalphabets01ibnw, page image n190) and the University of North Carolina at Chapel Hill copy (item ancientalphabets00ibnw, page image n39), both Arabic p. 34, registered onto the Wellcome master and cut to the same cells. The form of this sign is the same in all three copies. The book prints another table it gives to Hermes on Arabic p. 16, not traced here."
+  },
+  {
+   "order": 8,
+   "name": "ḥāʾ",
+   "value": "ح",
+   "glyph": {
+    "d": "M 22 40 L 32.5 28.5 L 47 54 C 51.5 48 55.5 43 58.5 39 C 62 34.5 66 30 72.5 30 C 76.5 30 78.2 32 78.2 34.5 C 78.2 37 76 38.4 72.5 39 C 70 39.4 68 39.9 66 40.3 M 24.5 60 L 60 59.8 C 62.5 59.8 64.6 60 66.5 61.7",
+    "rings": [
+     [
+      71,
+      65.6,
+      6
+     ]
+    ],
+    "dots": []
+   },
+   "strokes": "A zigzag rising from the left to a peak, dropping to a V and rising again into an open curl at the upper right; beneath it a level bar ending at the right in a ring that hangs below.",
+   "formConfidence": "medium",
+   "note": "The ambiguous detail is the curl at the upper right: it turns back on itself but does not close into a ring in any of the three copies compared (no enclosed paper); it is drawn as an open curl, its end kept clear of the rising stroke so that the gap still shows at the kit's pen weight.",
+   "source": {
+    "plate": "plates/ibn-wahshiyya/hermes-abu-tat/table.png (crop x 240-1640, y 1395-2320 of b22039910_jp2/b22039910_0189.jp2, the item's processed JP2, at full size)",
+    "position_as_printed": "row 1, sign 8 of 10 counting from the right (the table reads right to left); sign 8 of 28 in the table",
+    "label_as_printed": "ح (printed beneath the sign)",
+    "cell_geometry": {
+     "plate_crop_xywh": [
+      412,
+      -33,
+      200,
+      200
+     ],
+     "master_xywh": [
+      652,
+      1362,
+      200,
+      200
+     ],
+     "upscale": "2.25x Lanczos to 450 px"
+    }
+   },
+   "variants": "Compared by the independent checker (2026-10-20) with two other copies of the 1806 printing scanned for the Internet Archive: the Getty Research Institute copy (item ancientalphabets01ibnw, page image n190) and the University of North Carolina at Chapel Hill copy (item ancientalphabets00ibnw, page image n39), both Arabic p. 34, registered onto the Wellcome master and cut to the same cells. The form of this sign is the same in all three copies. The book prints another table it gives to Hermes on Arabic p. 16, not traced here."
+  },
+  {
+   "order": 9,
+   "name": "ṭāʾ",
+   "value": "ط",
+   "glyph": {
+    "d": "M 16.4 50 C 15.1 47.3 16 43.5 21 40.5 C 31 34.5 50 29.5 64.5 26.5 L 65.5 72 M 46.5 66.5 C 46.5 59 50 54.5 57 52 C 66 49 76 48 86 47.5 L 86.7 58",
+    "rings": [
+     [
+      18.7,
+      55,
+      5.5
+     ]
+    ],
+    "dots": []
+   },
+   "strokes": "Two strokes: a long arch rising from a ring at the lower left to a corner at the upper right and dropping as an upright; and a lower arch rising from below on the left, crossing the upright and turning down at its right end.",
+   "formConfidence": "high",
+   "note": "",
+   "source": {
+    "plate": "plates/ibn-wahshiyya/hermes-abu-tat/table.png (crop x 240-1640, y 1395-2320 of b22039910_jp2/b22039910_0189.jp2, the item's processed JP2, at full size)",
+    "position_as_printed": "row 1, sign 9 of 10 counting from the right (the table reads right to left); sign 9 of 28 in the table",
+    "label_as_printed": "ط (printed beneath the sign)",
+    "cell_geometry": {
+     "plate_crop_xywh": [
+      228,
+      -27,
+      200,
+      200
+     ],
+     "master_xywh": [
+      468,
+      1368,
+      200,
+      200
+     ],
+     "upscale": "2.25x Lanczos to 450 px"
+    }
+   },
+   "variants": "Compared by the independent checker (2026-10-20) with two other copies of the 1806 printing scanned for the Internet Archive: the Getty Research Institute copy (item ancientalphabets01ibnw, page image n190) and the University of North Carolina at Chapel Hill copy (item ancientalphabets00ibnw, page image n39), both Arabic p. 34, registered onto the Wellcome master and cut to the same cells. The form of this sign is the same in all three copies. The book prints another table it gives to Hermes on Arabic p. 16, not traced here."
+  },
+  {
+   "order": 10,
+   "name": "yāʾ",
+   "value": "ي",
+   "glyph": {
+    "d": "M 26.5 35.8 C 23.5 35.5 21.8 33 21.8 30.5 C 21.8 28 24 26.8 27.3 26.8 C 30.5 26.8 32.6 28.8 32.9 32 L 33.2 71 M 33.1 49.2 L 78 47.8 M 59 48.6 L 58.5 72 M 72.9 47.9 L 72.7 69.5",
+    "rings": [],
+    "dots": []
+   },
+   "strokes": "A tall stem with a small open curl at its top; from its middle a bar runs to the right, with two legs hanging from it, like a comb of three teeth.",
+   "formConfidence": "high",
+   "note": "A faint smudge to the upper right of the bar (about x 76-81, y 35-38) is lighter than the sign and is not drawn. The curl at the top of the stem does not close in any of the three copies compared; its end is kept clear of the stem so that the gap shows at the kit's pen weight.",
+   "source": {
+    "plate": "plates/ibn-wahshiyya/hermes-abu-tat/table.png (crop x 240-1640, y 1395-2320 of b22039910_jp2/b22039910_0189.jp2, the item's processed JP2, at full size)",
+    "position_as_printed": "row 1, sign 10 of 10 counting from the right (the table reads right to left); sign 10 of 28 in the table",
+    "label_as_printed": "ي (printed beneath the sign)",
+    "cell_geometry": {
+     "plate_crop_xywh": [
+      63,
+      -26,
+      200,
+      200
+     ],
+     "master_xywh": [
+      303,
+      1369,
+      200,
+      200
+     ],
+     "upscale": "2.25x Lanczos to 450 px"
+    }
+   },
+   "variants": "Compared by the independent checker (2026-10-20) with two other copies of the 1806 printing scanned for the Internet Archive: the Getty Research Institute copy (item ancientalphabets01ibnw, page image n190) and the University of North Carolina at Chapel Hill copy (item ancientalphabets00ibnw, page image n39), both Arabic p. 34, registered onto the Wellcome master and cut to the same cells. The form of this sign is the same in all three copies. The book prints another table it gives to Hermes on Arabic p. 16, not traced here."
+  },
+  {
+   "order": 11,
+   "name": "kāf",
+   "value": "ك",
+   "glyph": {
+    "d": "M 44 38.7 C 45.2 40.3 45.2 42 45.2 45 L 45.6 72 M 45.5 56 L 62.5 41 M 62.8 37 L 63.3 65",
+    "rings": [
+     [
+      40.6,
+      34.5,
+      5.4
+     ]
+    ],
+    "dots": []
+   },
+   "strokes": "Two uprights joined by a diagonal rising from the middle of the left one to the top of the right one; the left upright ends at its top in a ring set to the left.",
+   "formConfidence": "high",
+   "note": "",
+   "source": {
+    "plate": "plates/ibn-wahshiyya/hermes-abu-tat/table.png (crop x 240-1640, y 1395-2320 of b22039910_jp2/b22039910_0189.jp2, the item's processed JP2, at full size)",
+    "position_as_printed": "row 2, sign 1 of 9 counting from the right (the table reads right to left); sign 11 of 28 in the table",
+    "label_as_printed": "ك (printed beneath the sign)",
+    "cell_geometry": {
+     "plate_crop_xywh": [
+      1194,
+      306,
+      200,
+      200
+     ],
+     "master_xywh": [
+      1434,
+      1701,
+      200,
+      200
+     ],
+     "upscale": "2.25x Lanczos to 450 px"
+    }
+   },
+   "variants": "Compared by the independent checker (2026-10-20) with two other copies of the 1806 printing scanned for the Internet Archive: the Getty Research Institute copy (item ancientalphabets01ibnw, page image n190) and the University of North Carolina at Chapel Hill copy (item ancientalphabets00ibnw, page image n39), both Arabic p. 34, registered onto the Wellcome master and cut to the same cells. The form of this sign is the same in all three copies. The book prints another table it gives to Hermes on Arabic p. 16, not traced here."
+  },
+  {
+   "order": 12,
+   "name": "lām",
+   "value": "ل",
+   "glyph": {
+    "d": "M 34 50.5 L 49.5 30.5 C 55 35.5 61.5 42 65.5 49.5 Z M 49.5 30.5 L 49.5 70",
+    "rings": [],
+    "dots": []
+   },
+   "strokes": "A closed triangle with an upright running from its apex through its base and on down, like an arrowhead on a shaft.",
+   "formConfidence": "high",
+   "note": "",
+   "source": {
+    "plate": "plates/ibn-wahshiyya/hermes-abu-tat/table.png (crop x 240-1640, y 1395-2320 of b22039910_jp2/b22039910_0189.jp2, the item's processed JP2, at full size)",
+    "position_as_printed": "row 2, sign 2 of 9 counting from the right (the table reads right to left); sign 12 of 28 in the table",
+    "label_as_printed": "ل (printed beneath the sign)",
+    "cell_geometry": {
+     "plate_crop_xywh": [
+      1078,
+      300,
+      200,
+      200
+     ],
+     "master_xywh": [
+      1318,
+      1695,
+      200,
+      200
+     ],
+     "upscale": "2.25x Lanczos to 450 px"
+    }
+   },
+   "variants": "Compared by the independent checker (2026-10-20) with two other copies of the 1806 printing scanned for the Internet Archive: the Getty Research Institute copy (item ancientalphabets01ibnw, page image n190) and the University of North Carolina at Chapel Hill copy (item ancientalphabets00ibnw, page image n39), both Arabic p. 34, registered onto the Wellcome master and cut to the same cells. The form of this sign is the same in all three copies. The book prints another table it gives to Hermes on Arabic p. 16, not traced here."
+  },
+  {
+   "order": 13,
+   "name": "mīm",
+   "value": "م",
+   "glyph": {
+    "d": "M 51.7 33.1 C 51.8 37 49.5 41 49 44.8 M 42.5 45 L 57.5 45.5 M 53 45.5 L 47 54.8 M 42 55 L 58 55 M 52 55 L 47 64.8 M 40 65.5 L 57.5 65.5 M 54 65.5 L 48 72.5",
+    "rings": [
+     [
+      51.2,
+      29.3,
+      3.8
+     ]
+    ],
+    "dots": []
+   },
+   "strokes": "A small ring at the top, from which a zigzag stem descends, crossed by three short level bars.",
+   "formConfidence": "medium",
+   "note": "The ambiguous detail is how the zigzag meets the bars: the sign is small (the bars are about 30 px long in the scan) and heavily inked, and the diagonals seem to leave and join each bar a little in from its ends, so it is drawn as a zigzag stem crossed by three bars rather than as a stack of Z's.",
+   "source": {
+    "plate": "plates/ibn-wahshiyya/hermes-abu-tat/table.png (crop x 240-1640, y 1395-2320 of b22039910_jp2/b22039910_0189.jp2, the item's processed JP2, at full size)",
+    "position_as_printed": "row 2, sign 3 of 9 counting from the right (the table reads right to left); sign 13 of 28 in the table",
+    "label_as_printed": "م (printed beneath the sign)",
+    "cell_geometry": {
+     "plate_crop_xywh": [
+      954,
+      297,
+      200,
+      200
+     ],
+     "master_xywh": [
+      1194,
+      1692,
+      200,
+      200
+     ],
+     "upscale": "2.25x Lanczos to 450 px"
+    }
+   },
+   "variants": "Compared by the independent checker (2026-10-20) with two other copies of the 1806 printing scanned for the Internet Archive: the Getty Research Institute copy (item ancientalphabets01ibnw, page image n190) and the University of North Carolina at Chapel Hill copy (item ancientalphabets00ibnw, page image n39), both Arabic p. 34, registered onto the Wellcome master and cut to the same cells. The form of this sign is the same in all three copies. The book prints another table it gives to Hermes on Arabic p. 16, not traced here."
+  },
+  {
+   "order": 14,
+   "name": "nūn",
+   "value": "ن",
+   "glyph": {
+    "d": "M 39.6 37.5 C 38.6 38.6 38.3 40.5 38.5 43 L 41.5 67 L 61 67.5 M 41.6 66.5 L 60 48",
+    "rings": [
+     [
+      42.5,
+      34,
+      4.5
+     ]
+    ],
+    "dots": []
+   },
+   "strokes": "An upright with a ring at its top, set to the right, a base bar running right from its foot and a diagonal rising from the foot to the upper right.",
+   "formConfidence": "high",
+   "note": "",
+   "source": {
+    "plate": "plates/ibn-wahshiyya/hermes-abu-tat/table.png (crop x 240-1640, y 1395-2320 of b22039910_jp2/b22039910_0189.jp2, the item's processed JP2, at full size)",
+    "position_as_printed": "row 2, sign 4 of 9 counting from the right (the table reads right to left); sign 14 of 28 in the table",
+    "label_as_printed": "ن (printed beneath the sign)",
+    "cell_geometry": {
+     "plate_crop_xywh": [
+      832,
+      300,
+      200,
+      200
+     ],
+     "master_xywh": [
+      1072,
+      1695,
+      200,
+      200
+     ],
+     "upscale": "2.25x Lanczos to 450 px"
+    }
+   },
+   "variants": "Compared by the independent checker (2026-10-20) with two other copies of the 1806 printing scanned for the Internet Archive: the Getty Research Institute copy (item ancientalphabets01ibnw, page image n190) and the University of North Carolina at Chapel Hill copy (item ancientalphabets00ibnw, page image n39), both Arabic p. 34, registered onto the Wellcome master and cut to the same cells. The form of this sign is the same in all three copies. The book prints another table it gives to Hermes on Arabic p. 16, not traced here."
+  },
+  {
+   "order": 15,
+   "name": "sīn",
+   "value": "س",
+   "glyph": {
+    "d": "M 47.5 69.5 C 40 70 30 72 24 71.5 C 20 71 20 67 24.5 64.5 L 58 47 C 61.5 45.3 64.5 45 67.3 46.6 M 59 26.5 C 60.5 33 62 39 64.5 45",
+    "rings": [
+     [
+      72,
+      49.5,
+      5.5
+     ]
+    ],
+    "dots": []
+   },
+   "strokes": "A long stroke doubling back at the lower left like a narrow <, its upper arm rising to the right into a ring; a short stroke drops from above onto the arm beside the ring.",
+   "formConfidence": "high",
+   "note": "",
+   "source": {
+    "plate": "plates/ibn-wahshiyya/hermes-abu-tat/table.png (crop x 240-1640, y 1395-2320 of b22039910_jp2/b22039910_0189.jp2, the item's processed JP2, at full size)",
+    "position_as_printed": "row 2, sign 5 of 9 counting from the right (the table reads right to left); sign 15 of 28 in the table",
+    "label_as_printed": "س (printed beneath the sign)",
+    "cell_geometry": {
+     "plate_crop_xywh": [
+      697,
+      300,
+      200,
+      200
+     ],
+     "master_xywh": [
+      937,
+      1695,
+      200,
+      200
+     ],
+     "upscale": "2.25x Lanczos to 450 px"
+    }
+   },
+   "variants": "Compared by the independent checker (2026-10-20) with two other copies of the 1806 printing scanned for the Internet Archive: the Getty Research Institute copy (item ancientalphabets01ibnw, page image n190) and the University of North Carolina at Chapel Hill copy (item ancientalphabets00ibnw, page image n39), both Arabic p. 34, registered onto the Wellcome master and cut to the same cells. The form of this sign is the same in all three copies. The book prints another table it gives to Hermes on Arabic p. 16, not traced here."
+  },
+  {
+   "order": 16,
+   "name": "ʿayn",
+   "value": "ع",
+   "glyph": {
+    "d": "M 29.2 34.4 L 47 57.8 M 58.9 39.4 C 57.5 39.4 56.8 40 56 41.3 L 47 57.8",
+    "rings": [
+     [
+      47.7,
+      62.5,
+      4.5
+     ],
+     [
+      64.2,
+      37,
+      5.5
+     ]
+    ],
+    "dots": []
+   },
+   "strokes": "A V of two straight strokes: a ring hangs below the point where they meet, and the right arm turns at its upper end into a ring that sits to its right; the left arm ends plain.",
+   "formConfidence": "high",
+   "note": "",
+   "source": {
+    "plate": "plates/ibn-wahshiyya/hermes-abu-tat/table.png (crop x 240-1640, y 1395-2320 of b22039910_jp2/b22039910_0189.jp2, the item's processed JP2, at full size)",
+    "position_as_printed": "row 2, sign 6 of 9 counting from the right (the table reads right to left); sign 16 of 28 in the table",
+    "label_as_printed": "ع (printed beneath the sign)",
+    "cell_geometry": {
+     "plate_crop_xywh": [
+      548,
+      304,
+      200,
+      200
+     ],
+     "master_xywh": [
+      788,
+      1699,
+      200,
+      200
+     ],
+     "upscale": "2.25x Lanczos to 450 px"
+    }
+   },
+   "variants": "Compared by the independent checker (2026-10-20) with two other copies of the 1806 printing scanned for the Internet Archive: the Getty Research Institute copy (item ancientalphabets01ibnw, page image n190) and the University of North Carolina at Chapel Hill copy (item ancientalphabets00ibnw, page image n39), both Arabic p. 34, registered onto the Wellcome master and cut to the same cells. The form of this sign is the same in all three copies. The book prints another table it gives to Hermes on Arabic p. 16, not traced here."
+  },
+  {
+   "order": 17,
+   "name": "fāʾ",
+   "value": "ف",
+   "glyph": {
+    "d": "M 25 29 L 25.5 70 M 26 48.5 L 63.9 46.4",
+    "rings": [
+     [
+      69.7,
+      46.5,
+      5.8
+     ]
+    ],
+    "dots": []
+   },
+   "strokes": "An upright with a bar running to the right from its middle and ending in a ring.",
+   "formConfidence": "high",
+   "note": "",
+   "source": {
+    "plate": "plates/ibn-wahshiyya/hermes-abu-tat/table.png (crop x 240-1640, y 1395-2320 of b22039910_jp2/b22039910_0189.jp2, the item's processed JP2, at full size)",
+    "position_as_printed": "row 2, sign 7 of 9 counting from the right (the table reads right to left); sign 17 of 28 in the table",
+    "label_as_printed": "ف (printed beneath the sign)",
+    "cell_geometry": {
+     "plate_crop_xywh": [
+      400,
+      302,
+      200,
+      200
+     ],
+     "master_xywh": [
+      640,
+      1697,
+      200,
+      200
+     ],
+     "upscale": "2.25x Lanczos to 450 px"
+    }
+   },
+   "variants": "Compared by the independent checker (2026-10-20) with two other copies of the 1806 printing scanned for the Internet Archive: the Getty Research Institute copy (item ancientalphabets01ibnw, page image n190) and the University of North Carolina at Chapel Hill copy (item ancientalphabets00ibnw, page image n39), both Arabic p. 34, registered onto the Wellcome master and cut to the same cells. The form of this sign is the same in all three copies. The book prints another table it gives to Hermes on Arabic p. 16, not traced here."
+  },
+  {
+   "order": 18,
+   "name": "ṣād",
+   "value": "ص",
+   "glyph": {
+    "d": "M 45.5 24 L 54 46 C 56.5 52 58 57 58 63 C 58 69 53.5 72.5 47.5 72.5 C 42.5 72.5 40 69.5 41 65.5 C 42 62 45 60 48 59 M 23.5 50.5 L 67.8 43.6 M 65.7 37.5 L 76.2 42.7 L 69.2 49 Z",
+    "rings": [],
+    "dots": []
+   },
+   "strokes": "A stroke dropping from the top, crossing a bar and curling round at the foot into an open hook; the bar rises to the right and ends in a small closed triangle, like a pennant.",
+   "formConfidence": "high",
+   "note": "The pennant at the right end of the bar is a closed triangle, not a round ring, and is drawn as one; at the kit's pen weight its opening is smaller than in the print.",
+   "source": {
+    "plate": "plates/ibn-wahshiyya/hermes-abu-tat/table.png (crop x 240-1640, y 1395-2320 of b22039910_jp2/b22039910_0189.jp2, the item's processed JP2, at full size)",
+    "position_as_printed": "row 2, sign 8 of 9 counting from the right (the table reads right to left); sign 18 of 28 in the table",
+    "label_as_printed": "ص (printed beneath the sign)",
+    "cell_geometry": {
+     "plate_crop_xywh": [
+      240,
+      300,
+      200,
+      200
+     ],
+     "master_xywh": [
+      480,
+      1695,
+      200,
+      200
+     ],
+     "upscale": "2.25x Lanczos to 450 px"
+    }
+   },
+   "variants": "Compared by the independent checker (2026-10-20) with two other copies of the 1806 printing scanned for the Internet Archive: the Getty Research Institute copy (item ancientalphabets01ibnw, page image n190) and the University of North Carolina at Chapel Hill copy (item ancientalphabets00ibnw, page image n39), both Arabic p. 34, registered onto the Wellcome master and cut to the same cells. The form of this sign is the same in all three copies. The book prints another table it gives to Hermes on Arabic p. 16, not traced here."
+  },
+  {
+   "order": 19,
+   "name": "qāf",
+   "value": "ق",
+   "glyph": {
+    "d": "M 19.3 48 L 45.5 36.5 L 49 51.5 C 51 59.5 56 63 63 62 C 71 61 77.5 54 78 48 C 78.2 45.5 78.2 43.5 77.7 41.6 M 36 58.7 L 62 44",
+    "rings": [
+     [
+      74,
+      38.3,
+      5
+     ]
+    ],
+    "dots": []
+   },
+   "strokes": "A stroke rising from the left to a corner, dropping and sweeping round below to rise on the right into a ring at the top; a short bar slants across the descent.",
+   "formConfidence": "high",
+   "note": "",
+   "source": {
+    "plate": "plates/ibn-wahshiyya/hermes-abu-tat/table.png (crop x 240-1640, y 1395-2320 of b22039910_jp2/b22039910_0189.jp2, the item's processed JP2, at full size)",
+    "position_as_printed": "row 2, sign 9 of 9 counting from the right (the table reads right to left); sign 19 of 28 in the table",
+    "label_as_printed": "ق (printed beneath the sign)",
+    "cell_geometry": {
+     "plate_crop_xywh": [
+      82,
+      307,
+      200,
+      200
+     ],
+     "master_xywh": [
+      322,
+      1702,
+      200,
+      200
+     ],
+     "upscale": "2.25x Lanczos to 450 px"
+    }
+   },
+   "variants": "Compared by the independent checker (2026-10-20) with two other copies of the 1806 printing scanned for the Internet Archive: the Getty Research Institute copy (item ancientalphabets01ibnw, page image n190) and the University of North Carolina at Chapel Hill copy (item ancientalphabets00ibnw, page image n39), both Arabic p. 34, registered onto the Wellcome master and cut to the same cells. The form of this sign is the same in all three copies. The book prints another table it gives to Hermes on Arabic p. 16, not traced here."
+  },
+  {
+   "order": 20,
+   "name": "rāʾ",
+   "value": "ر",
+   "glyph": {
+    "d": "M 29.8 43 C 33 33 41 28 50 28 C 59 28 67 32 71.3 39 M 50 28 L 50 72 M 28.2 57.3 L 59.5 57.4",
+    "rings": [
+     [
+      65.5,
+      57.5,
+      6
+     ]
+    ],
+    "dots": []
+   },
+   "strokes": "An arch over an upright that drops from its crown; a bar crosses the upright and ends at the right in a ring.",
+   "formConfidence": "high",
+   "note": "",
+   "source": {
+    "plate": "plates/ibn-wahshiyya/hermes-abu-tat/table.png (crop x 240-1640, y 1395-2320 of b22039910_jp2/b22039910_0189.jp2, the item's processed JP2, at full size)",
+    "position_as_printed": "row 3, sign 1 of 9 counting from the right (the table reads right to left); sign 20 of 28 in the table",
+    "label_as_printed": "ر (printed beneath the sign)",
+    "cell_geometry": {
+     "plate_crop_xywh": [
+      1198,
+      638,
+      200,
+      200
+     ],
+     "master_xywh": [
+      1438,
+      2033,
+      200,
+      200
+     ],
+     "upscale": "2.25x Lanczos to 450 px"
+    }
+   },
+   "variants": "Compared by the independent checker (2026-10-20) with two other copies of the 1806 printing scanned for the Internet Archive: the Getty Research Institute copy (item ancientalphabets01ibnw, page image n190) and the University of North Carolina at Chapel Hill copy (item ancientalphabets00ibnw, page image n39), both Arabic p. 34, registered onto the Wellcome master and cut to the same cells. The form of this sign is the same in all three copies. The book prints another table it gives to Hermes on Arabic p. 16, not traced here."
+  },
+  {
+   "order": 21,
+   "name": "shīn",
+   "value": "ش",
+   "glyph": {
+    "d": "M 54 38.8 C 55 42 50 51 46.1 60.2",
+    "rings": [
+     [
+      52,
+      34.2,
+      5
+     ],
+     [
+      47.5,
+      65.5,
+      5.5
+     ]
+    ],
+    "dots": []
+   },
+   "strokes": "A short slanting stroke with a ring at each end: one above to the right, one below to the left, like a figure 8 drawn open.",
+   "formConfidence": "high",
+   "note": "",
+   "source": {
+    "plate": "plates/ibn-wahshiyya/hermes-abu-tat/table.png (crop x 240-1640, y 1395-2320 of b22039910_jp2/b22039910_0189.jp2, the item's processed JP2, at full size)",
+    "position_as_printed": "row 3, sign 2 of 9 counting from the right (the table reads right to left); sign 21 of 28 in the table",
+    "label_as_printed": "ش (printed beneath the sign)",
+    "cell_geometry": {
+     "plate_crop_xywh": [
+      1060,
+      632,
+      200,
+      200
+     ],
+     "master_xywh": [
+      1300,
+      2027,
+      200,
+      200
+     ],
+     "upscale": "2.25x Lanczos to 450 px"
+    }
+   },
+   "variants": "Compared by the independent checker (2026-10-20) with two other copies of the 1806 printing scanned for the Internet Archive: the Getty Research Institute copy (item ancientalphabets01ibnw, page image n190) and the University of North Carolina at Chapel Hill copy (item ancientalphabets00ibnw, page image n39), both Arabic p. 34, registered onto the Wellcome master and cut to the same cells. The form of this sign is the same in all three copies. The book prints another table it gives to Hermes on Arabic p. 16, not traced here."
+  },
+  {
+   "order": 22,
+   "name": "tāʾ",
+   "value": "ت",
+   "glyph": {
+    "d": "M 46.6 36 C 45.6 37.2 45.5 39 45.5 41 L 46.2 74 M 23.8 53.5 L 63.2 52.6",
+    "rings": [
+     [
+      50.5,
+      31.5,
+      6
+     ],
+     [
+      69.2,
+      52.8,
+      6
+     ]
+    ],
+    "dots": []
+   },
+   "strokes": "An upright with a ring at its top, set to the right like a P; a bar crosses it and ends at the right in a ring.",
+   "formConfidence": "high",
+   "note": "",
+   "source": {
+    "plate": "plates/ibn-wahshiyya/hermes-abu-tat/table.png (crop x 240-1640, y 1395-2320 of b22039910_jp2/b22039910_0189.jp2, the item's processed JP2, at full size)",
+    "position_as_printed": "row 3, sign 3 of 9 counting from the right (the table reads right to left); sign 22 of 28 in the table",
+    "label_as_printed": "ت (printed beneath the sign)",
+    "cell_geometry": {
+     "plate_crop_xywh": [
+      918,
+      634,
+      200,
+      200
+     ],
+     "master_xywh": [
+      1158,
+      2029,
+      200,
+      200
+     ],
+     "upscale": "2.25x Lanczos to 450 px"
+    }
+   },
+   "variants": "Compared by the independent checker (2026-10-20) with two other copies of the 1806 printing scanned for the Internet Archive: the Getty Research Institute copy (item ancientalphabets01ibnw, page image n190) and the University of North Carolina at Chapel Hill copy (item ancientalphabets00ibnw, page image n39), both Arabic p. 34, registered onto the Wellcome master and cut to the same cells. The form of this sign is the same in all three copies. The book prints another table it gives to Hermes on Arabic p. 16, not traced here."
+  },
+  {
+   "order": 23,
+   "name": "thāʾ",
+   "value": "ث",
+   "glyph": {
+    "d": "M 37.5 26.5 L 50.5 40 L 62.5 27 M 50.5 40 L 51.4 73 M 25.5 49.2 L 32.5 51.6 L 26.5 53.8 M 32.5 51.6 L 63.2 52.2",
+    "rings": [
+     [
+      68.5,
+      54,
+      5.5
+     ]
+    ],
+    "dots": []
+   },
+   "strokes": "A Y on an upright: two arms meeting above a stem; a bar crosses the stem, forked at its left end and ending at the right in a ring.",
+   "formConfidence": "high",
+   "note": "The left end of the bar is split into a small fork about 5 units long. It is blurred into a blot in the Wellcome scan and heavily inked in the Getty copy, but the UNC copy prints it clearly as two prongs, so it is drawn as a fork.",
+   "source": {
+    "plate": "plates/ibn-wahshiyya/hermes-abu-tat/table.png (crop x 240-1640, y 1395-2320 of b22039910_jp2/b22039910_0189.jp2, the item's processed JP2, at full size)",
+    "position_as_printed": "row 3, sign 4 of 9 counting from the right (the table reads right to left); sign 23 of 28 in the table",
+    "label_as_printed": "ث (printed beneath the sign)",
+    "cell_geometry": {
+     "plate_crop_xywh": [
+      770,
+      631,
+      200,
+      200
+     ],
+     "master_xywh": [
+      1010,
+      2026,
+      200,
+      200
+     ],
+     "upscale": "2.25x Lanczos to 450 px"
+    }
+   },
+   "variants": "Compared by the independent checker (2026-10-20) with two other copies of the 1806 printing scanned for the Internet Archive: the Getty Research Institute copy (item ancientalphabets01ibnw, page image n190) and the University of North Carolina at Chapel Hill copy (item ancientalphabets00ibnw, page image n39), both Arabic p. 34, registered onto the Wellcome master and cut to the same cells. The form is the same in all three copies; the fork at the left end of the bar is clearest in the UNC copy. The book prints another table it gives to Hermes on Arabic p. 16, not traced here."
+  },
+  {
+   "order": 24,
+   "name": "khāʾ",
+   "value": "خ",
+   "glyph": {
+    "d": "M 33 70.5 C 45 62 58 53 63 42 C 66 34 61 28.5 52 27.5 C 44 27 37 29 35.5 33.5 C 34.5 38 38 39.5 44 39.5 L 55 39.2 M 52 40.5 C 48.5 48 45.5 56 42.5 64",
+    "rings": [],
+    "dots": []
+   },
+   "strokes": "A tail at the lower left rising into a large closed bow: the stroke runs up the right side, over the top and back along a level line, from which a second line runs down to rejoin the tail.",
+   "formConfidence": "high",
+   "note": "",
+   "source": {
+    "plate": "plates/ibn-wahshiyya/hermes-abu-tat/table.png (crop x 240-1640, y 1395-2320 of b22039910_jp2/b22039910_0189.jp2, the item's processed JP2, at full size)",
+    "position_as_printed": "row 3, sign 5 of 9 counting from the right (the table reads right to left); sign 24 of 28 in the table",
+    "label_as_printed": "خ (printed beneath the sign)",
+    "cell_geometry": {
+     "plate_crop_xywh": [
+      640,
+      628,
+      200,
+      200
+     ],
+     "master_xywh": [
+      880,
+      2023,
+      200,
+      200
+     ],
+     "upscale": "2.25x Lanczos to 450 px"
+    }
+   },
+   "variants": "Compared by the independent checker (2026-10-20) with two other copies of the 1806 printing scanned for the Internet Archive: the Getty Research Institute copy (item ancientalphabets01ibnw, page image n190) and the University of North Carolina at Chapel Hill copy (item ancientalphabets00ibnw, page image n39), both Arabic p. 34, registered onto the Wellcome master and cut to the same cells. The form of this sign is the same in all three copies. The book prints another table it gives to Hermes on Arabic p. 16, not traced here."
+  },
+  {
+   "order": 25,
+   "name": "dhāl",
+   "value": "ذ",
+   "glyph": {
+    "d": "M 38.1 40.1 C 40 42.5 44 44 50 45.5 L 71.5 50 C 62 52 50 55 46 57.5 S 43.2 59.7 41.8 61.7",
+    "rings": [
+     [
+      34.3,
+      35.5,
+      6
+     ],
+     [
+      38.8,
+      66,
+      5.2
+     ]
+    ],
+    "dots": []
+   },
+   "strokes": "Two strokes meeting in a point on the right like a >, each ending at the left in a ring.",
+   "formConfidence": "high",
+   "note": "",
+   "source": {
+    "plate": "plates/ibn-wahshiyya/hermes-abu-tat/table.png (crop x 240-1640, y 1395-2320 of b22039910_jp2/b22039910_0189.jp2, the item's processed JP2, at full size)",
+    "position_as_printed": "row 3, sign 6 of 9 counting from the right (the table reads right to left); sign 25 of 28 in the table",
+    "label_as_printed": "ذ (printed beneath the sign)",
+    "cell_geometry": {
+     "plate_crop_xywh": [
+      515,
+      636,
+      200,
+      200
+     ],
+     "master_xywh": [
+      755,
+      2031,
+      200,
+      200
+     ],
+     "upscale": "2.25x Lanczos to 450 px"
+    }
+   },
+   "variants": "Compared by the independent checker (2026-10-20) with two other copies of the 1806 printing scanned for the Internet Archive: the Getty Research Institute copy (item ancientalphabets01ibnw, page image n190) and the University of North Carolina at Chapel Hill copy (item ancientalphabets00ibnw, page image n39), both Arabic p. 34, registered onto the Wellcome master and cut to the same cells. The form of this sign is the same in all three copies. The book prints another table it gives to Hermes on Arabic p. 16, not traced here."
+  },
+  {
+   "order": 26,
+   "name": "ḍād",
+   "value": "ض",
+   "glyph": {
+    "d": "M 33.3 37 L 59.3 71 M 33.3 73 L 58.3 36.1",
+    "rings": [
+     [
+      62,
+      33.1,
+      4.8
+     ]
+    ],
+    "dots": []
+   },
+   "strokes": "Two straight strokes crossing like an X; the one rising to the right ends in a ring.",
+   "formConfidence": "high",
+   "note": "",
+   "source": {
+    "plate": "plates/ibn-wahshiyya/hermes-abu-tat/table.png (crop x 240-1640, y 1395-2320 of b22039910_jp2/b22039910_0189.jp2, the item's processed JP2, at full size)",
+    "position_as_printed": "row 3, sign 7 of 9 counting from the right (the table reads right to left); sign 26 of 28 in the table",
+    "label_as_printed": "ض (printed beneath the sign)",
+    "cell_geometry": {
+     "plate_crop_xywh": [
+      394,
+      630,
+      200,
+      200
+     ],
+     "master_xywh": [
+      634,
+      2025,
+      200,
+      200
+     ],
+     "upscale": "2.25x Lanczos to 450 px"
+    }
+   },
+   "variants": "Compared by the independent checker (2026-10-20) with two other copies of the 1806 printing scanned for the Internet Archive: the Getty Research Institute copy (item ancientalphabets01ibnw, page image n190) and the University of North Carolina at Chapel Hill copy (item ancientalphabets00ibnw, page image n39), both Arabic p. 34, registered onto the Wellcome master and cut to the same cells. The form of this sign is the same in all three copies. The book prints another table it gives to Hermes on Arabic p. 16, not traced here."
+  },
+  {
+   "order": 27,
+   "name": "ẓāʾ",
+   "value": "ظ",
+   "glyph": {
+    "d": "M 28 40.5 L 39 71 L 51 28 L 65.3 59.9",
+    "rings": [
+     [
+      68.3,
+      64.5,
+      5.5
+     ]
+    ],
+    "dots": []
+   },
+   "strokes": "A zigzag of three straight strokes, down, up to a high peak and down again to the right, ending in a ring.",
+   "formConfidence": "high",
+   "note": "",
+   "source": {
+    "plate": "plates/ibn-wahshiyya/hermes-abu-tat/table.png (crop x 240-1640, y 1395-2320 of b22039910_jp2/b22039910_0189.jp2, the item's processed JP2, at full size)",
+    "position_as_printed": "row 3, sign 8 of 9 counting from the right (the table reads right to left); sign 27 of 28 in the table",
+    "label_as_printed": "ظ (printed beneath the sign)",
+    "cell_geometry": {
+     "plate_crop_xywh": [
+      265,
+      627,
+      200,
+      200
+     ],
+     "master_xywh": [
+      505,
+      2022,
+      200,
+      200
+     ],
+     "upscale": "2.25x Lanczos to 450 px"
+    }
+   },
+   "variants": "Compared by the independent checker (2026-10-20) with two other copies of the 1806 printing scanned for the Internet Archive: the Getty Research Institute copy (item ancientalphabets01ibnw, page image n190) and the University of North Carolina at Chapel Hill copy (item ancientalphabets00ibnw, page image n39), both Arabic p. 34, registered onto the Wellcome master and cut to the same cells. The form of this sign is the same in all three copies. The book prints another table it gives to Hermes on Arabic p. 16, not traced here."
+  },
+  {
+   "order": 28,
+   "name": "ghayn",
+   "value": "غ",
+   "glyph": {
+    "d": "M 75.5 50.4 L 24.4 28 L 15 71 Z",
+    "rings": [
+     [
+      80.8,
+      51.8,
+      5.5
+     ]
+    ],
+    "dots": []
+   },
+   "strokes": "A long closed triangle pointing to the right, with a ring at its point.",
+   "formConfidence": "high",
+   "note": "",
+   "source": {
+    "plate": "plates/ibn-wahshiyya/hermes-abu-tat/table.png (crop x 240-1640, y 1395-2320 of b22039910_jp2/b22039910_0189.jp2, the item's processed JP2, at full size)",
+    "position_as_printed": "row 3, sign 9 of 9 counting from the right (the table reads right to left); sign 28 of 28 in the table",
+    "label_as_printed": "غ (printed beneath the sign)",
+    "cell_geometry": {
+     "plate_crop_xywh": [
+      98,
+      634,
+      200,
+      200
+     ],
+     "master_xywh": [
+      338,
+      2029,
+      200,
+      200
+     ],
+     "upscale": "2.25x Lanczos to 450 px"
+    }
+   },
+   "variants": "Compared by the independent checker (2026-10-20) with two other copies of the 1806 printing scanned for the Internet Archive: the Getty Research Institute copy (item ancientalphabets01ibnw, page image n190) and the University of North Carolina at Chapel Hill copy (item ancientalphabets00ibnw, page image n39), both Arabic p. 34, registered onto the Wellcome master and cut to the same cells. The form of this sign is the same in all three copies. The book prints another table it gives to Hermes on Arabic p. 16, not traced here."
+  }
+ ]
+}

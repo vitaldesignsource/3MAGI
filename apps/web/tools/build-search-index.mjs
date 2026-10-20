@@ -4,7 +4,7 @@
 // events.
 //
 // The index is built here rather than in the browser so the portal chunk stays
-// small: fourteen halls of data is well over a megabyte of JavaScript, and a
+// small: twenty halls of data is well over a megabyte of JavaScript, and a
 // reader who never searches should never download it. The search component
 // fetches this file once, on the first keystroke.
 //
@@ -13,6 +13,8 @@
 import { writeFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
+import { loadModules, loadRegistry } from './magic-lib.mjs';
+import { sharedNote, textOf } from '../src/pages/magic/sign.js';
 
 const here = path.dirname(fileURLToPath(import.meta.url));
 const web = path.resolve(here, '..');
@@ -33,6 +35,7 @@ const TITLES = {
     persian: 'Persian', armenian: 'Armenian', geez: 'Geʼez',
     chinese: 'Classical Chinese', slavonic: 'Church Slavonic',
     mandaic: 'Mandaic', avestan: 'Avestan', ugaritic: 'Ugaritic', phoenician: 'Phoenician',
+    magic: 'The Magical Scriptorium',
 };
 
 const records = [];
@@ -44,9 +47,16 @@ const push = (h, k, n, l, s, d, a, u) => {
     records.push(r);
 };
 
+// The Scriptorium's counts, for the copy that quotes them (the Home page's
+// card): written beside the index so the numbers cannot fall behind the halls.
+const stats = { halls: 0, signs: 0, names: 0, courses: 0 };
+
 for (const hall of HALLS) {
     const d = await load(`${hall}.js`);
     if (!d) continue;
+    stats.halls++;
+    stats.signs += d.letters.length;
+    stats.names += d.divineNames.length;
 
     d.letters.forEach((l, i) => push(
         hall, 'sign', l.glyph, l.name, l.translit,
@@ -83,6 +93,7 @@ for (const hall of HALLS) {
     }
 
     const course = await load(`courses/${hall}.js`);
+    if (course) stats.courses++;
     for (const l of course?.lessons ?? []) push(
         hall, 'lesson', '', l.title, `Lesson ${l.number} · ${course.title}`,
         l.aim, `lesson-${l.number}`,
@@ -94,6 +105,81 @@ for (const b of library?.books ?? []) push(
     'library', 'book', '', b.title, `${b.author} · ${b.year}`,
     b.description, 'edu-library-heading',
 );
+
+// --- The Magical Scriptorium -------------------------------------------------
+// The wing's records carry their path (u), since the wing's routes are not the
+// halls'. An alphabet is kind 'alphabet'; the author and the lineage pages are
+// kind 'page'. A letter set in a face carries its character (n) as a hall's
+// sign does; a drawn letter has no text, so it carries its drawing (g) for the
+// result row to draw; a letter whose form is still being traced carries x.
+// The gap note an alphabet's letters share is given once on its page, so it is
+// not repeated in every result, and a gap letter of a Latin-keyed alphabet
+// that has nothing of its own (its name is its letter, its note the shared
+// one) is left out: a search for the alphabet would otherwise list A to Z.
+// The units of a page that is not an alphabet are not signs, and are not
+// indexed as signs: the lineage's books (kind 'lineage') and the author's
+// chapters ('chapter'). A book or a chapter has no form to trace, so it does
+// not carry x.
+const UNIT_KIND = { 'the-books': 'lineage', agrippa: 'chapter' };
+{
+    const registry = await loadRegistry();
+    const { modules, problems } = await loadModules(registry);
+    if (problems.length) throw new Error(`magic modules did not load: ${problems.join('; ')}`);
+    const MG = 'magic';
+    const pages = new Set(registry.pages.map((p) => p.slug));
+    for (const e of [...registry.alphabets, ...registry.pages]) {
+        const m = modules[e.slug];
+        const url = `${registry.wing.path}/${e.slug}`;
+        push(MG, pages.has(e.slug) ? 'page' : 'alphabet', '', m.title, (m.otherNames || e.otherNames || []).join(' · '), m.summary, '', url);
+        const letters = m.letters || [];
+        const shared = sharedNote(letters);
+        // A group that is a printed table (the Shawq's) is a record of its own,
+        // kind 'table', found by its name and leading to its heading; and its
+        // letters carry the table's short name and the value printed beneath
+        // them, so that five alifs are five results, each with its table.
+        const groupOf = (l) => (m.groups || []).find((g) => g.key === l.group) || null;
+        for (const g of m.groups || []) {
+            if (!g.heading) continue;
+            const where = (g.facts || []).find((f) => /^where/i.test(f.label))?.text || '';
+            push(MG, 'table', '', g.label, [e.short, g.note].filter(Boolean).join(' · '),
+                [where, g.about].filter(Boolean).join(' — '), `mg-group-${g.key}`, url);
+        }
+        // tables shown as printed, not drawn
+        for (const t of m.facsimiles?.tables || []) {
+            push(MG, 'table', '', t.label, [e.short, t.note].filter(Boolean).join(' · '), t.about, `mg-facsimile-${t.key}`, url);
+        }
+        letters.forEach((l, i) => {
+            const gap = !l.glyph && !l.char;
+            const own = l.note && l.note !== shared ? l.note : '';
+            if (gap && !own && e.keyedTo === 'latin' && l.value != null && String(l.name) === String(l.value)) return;
+            const table = groupOf(l)?.heading ? groupOf(l).short : null;
+            const rec = { h: MG, k: UNIT_KIND[e.slug] || 'sign', n: l.char ? textOf(l.char) : '', l: l.name,
+                s: [e.short, table, l.translit || l.planet || l.codepoint || (m.valueLang ? l.value : null)].filter(Boolean).join(' · '),
+                d: own.slice(0, 180), a: `mg-letter-${i}`, u: url };
+            if (l.glyph) {
+                rec.g = { d: l.glyph.d };
+                if (l.glyph.rings?.length) rec.g.rings = l.glyph.rings;
+                if (l.glyph.dots?.length) rec.g.dots = l.glyph.dots;
+                // a fine-lined figure's pen at text size (MagicGlyph's textPen),
+                // and the rings it draws there where its traced rings close up
+                if (l.glyph.textPen != null) rec.g.textPen = l.glyph.textPen;
+                if (l.glyph.textPen != null && l.glyph.textRings?.length) rec.g.textRings = l.glyph.textRings;
+                // the alphabet's signScale, so a result draws the sign at the size its pages do
+                if (e.signScale) rec.g.z = e.signScale;
+            } else if (Array.isArray(l.rows) && Array.isArray(l.rows[0])) {
+                // a table of numbers is not a form waiting to be traced: it wears
+                // the ruled square of its side, as its card does
+                rec.t = l.rows.length;
+                if (e.signScale) rec.z = e.signScale;
+            } else if (!l.char && !pages.has(e.slug)) rec.x = 1;
+            records.push(rec);
+        });
+        for (const ev of m.transmission || []) {
+            const era = ev.when || `${ev.circa ? 'c. ' : ''}${ev.year < 0 ? `${-ev.year} BCE` : `${ev.year} CE`}`;
+            push(MG, 'event', '', ev.title, `${era} · ${e.short}`, ev.description, 'mg-transmission-heading', url);
+        }
+    }
+}
 
 // --- The Christianities portal --------------------------------------------
 // Same index, different door: records carry an explicit path (u) because the
@@ -331,7 +417,19 @@ const out = { halls: TITLES, records };
 const file = path.join(web, 'public/scriptorium-index.json');
 writeFileSync(file, JSON.stringify(out), 'utf8');
 
+// src/data/education/portal/stats.generated.js — the counts the Home page
+// quotes. Like the index, it is rewritten by every build and committed.
+const statsFile = path.join(web, 'src/data/education/portal/stats.generated.js');
+writeFileSync(statsFile, [
+    '// GENERATED by tools/build-search-index.mjs — do not edit. The Scriptorium\'s',
+    '// counts, read from the halls\' own data: halls, signs (letters), divine names,',
+    '// and courses. The Home page builds its Scriptorium card from these.',
+    `export default ${JSON.stringify(stats)};`,
+    '',
+].join('\n'), 'utf8');
+
 const kb = (JSON.stringify(out).length / 1024).toFixed(0);
 const byKind = records.reduce((m, r) => (m[r.k] = (m[r.k] || 0) + 1, m), {});
 console.log(`search index: ${records.length} records (${kb}KB) — `
     + Object.entries(byKind).map(([k, n]) => `${n} ${k}`).join(', '));
+console.log(`scriptorium stats: ${stats.halls} halls, ${stats.signs} signs, ${stats.names} names, ${stats.courses} courses → ${path.relative(web, statsFile)}`);

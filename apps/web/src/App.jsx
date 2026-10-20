@@ -1,5 +1,5 @@
 import React, { Suspense, lazy } from 'react';
-import { Route, Routes, BrowserRouter as Router, Link, useLocation } from 'react-router-dom';
+import { Navigate, Route, Routes, BrowserRouter as Router, Link, useLocation } from 'react-router-dom';
 import ScrollToTop from './components/ScrollToTop';
 import AlchemicalCursor from './components/AlchemicalCursor';
 import AnalyticsBeacon, { NotFoundBeacon } from './components/AnalyticsBeacon';
@@ -21,6 +21,13 @@ const ThirdLampContactPage = lazy(() => import('./pages/ThirdLampContactPage'));
 const EducationPortalPage = lazy(() => import('./pages/EducationPortalPage'));
 const EducationLanguagePage = lazy(() => import('./pages/EducationLanguagePage'));
 const EducationCoursePage = lazy(() => import('./pages/EducationCoursePage'));
+const MagicPortalPage = lazy(() => import('./pages/magic/MagicPortalPage'));
+const MagicComparePage = lazy(() => import('./pages/magic/MagicComparePage'));
+const MagicTransliteratorPage = lazy(() => import('./pages/magic/MagicTransliteratorPage'));
+const MagicAlphabetPage = lazy(() => import('./pages/magic/MagicAlphabetPage'));
+// The glyph kit's proof sheet is a development tool, not site content: in a
+// production build this is null and Rollup drops the page and its chunk.
+const MagicKitPage = import.meta.env.DEV ? lazy(() => import('./pages/magic/MagicKitPage')) : null;
 const ChristianitiesPortalPage = lazy(() => import('./pages/christianities/ChristianitiesPortalPage'));
 const ChristianitiesMapPage = lazy(() => import('./pages/christianities/ChristianitiesMapPage'));
 const ChristianitiesCanonPage = lazy(() => import('./pages/christianities/ChristianitiesCanonPage'));
@@ -107,6 +114,20 @@ function App() {
                     <Route path="/third-lamp/lamp-post" element={<ThirdLampLampPostPage />} />
                     <Route path="/third-lamp/contact" element={<ThirdLampContactPage />} />
                     <Route path="/third-lamp/education" element={<EducationPortalPage />} />
+                    {/* The Magical Scriptorium. Declared before the halls' :lang routes:
+                        static segments outrank :lang, and the order settles the one tie
+                        (/magic/course), which the wing's registry reserves. */}
+                    <Route path="/third-lamp/education/magic" element={<MagicPortalPage />} />
+                    <Route path="/third-lamp/education/magic/compare" element={<MagicComparePage />} />
+                    <Route path="/third-lamp/education/magic/transliterate" element={<MagicTransliteratorPage />} />
+                    {MagicKitPage && <Route path="/third-lamp/education/magic/kit" element={<MagicKitPage />} />}
+                    <Route path="/third-lamp/education/magic/:alphabet" element={<MagicAlphabetPage />} />
+                    {/* Anything deeper returns to the wing, and is recorded as a miss for
+                        the owner's 404 list first. /magic/course/:lesson is named
+                        outright: as a splat it would rank below the halls'
+                        :lang/course/:lesson, which would take it as lang "magic". */}
+                    <Route path="/third-lamp/education/magic/course/:lesson" element={<><NotFoundBeacon /><Navigate to="/third-lamp/education/magic" replace /></>} />
+                    <Route path="/third-lamp/education/magic/*" element={<><NotFoundBeacon /><Navigate to="/third-lamp/education/magic" replace /></>} />
                     <Route path="/third-lamp/education/:lang" element={<EducationLanguagePage />} />
                     <Route path="/third-lamp/education/:lang/course" element={<EducationCoursePage />} />
                     <Route path="/third-lamp/education/:lang/course/:lesson" element={<EducationCoursePage />} />

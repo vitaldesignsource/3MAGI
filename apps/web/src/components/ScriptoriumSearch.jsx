@@ -1,5 +1,8 @@
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
+import MagicGlyph, { TableMark, Unstruck } from '../pages/magic/MagicGlyph';
+import { numberWord } from '../pages/magic/words';
+import { isolate } from '../pages/magic/Bidi';
 import { trackSearch } from '../lib/analytics';
 
 // Search across every hall at once — signs, divine names, lexicon, currents,
@@ -7,9 +10,9 @@ import { trackSearch } from '../lib/analytics';
 //
 // The index is a static JSON file built at compile time and fetched once, on
 // the first keystroke, so a reader who never searches never pays for it. Two
-// things make it worth having: the portal now holds thirteen hundred entries
-// across fourteen scripts, and a reader who half-remembers a word will not
-// know which hall it lives in — which is exactly the question a cross-hall
+// things make it worth having: the index holds thousands of entries across
+// every hall and the Magical Scriptorium, and a reader who half-remembers a
+// word will not know which hall it lives in — which is exactly the question a cross-hall
 // search answers and a per-hall one cannot.
 
 const INDEX_URL = '/scriptorium-index.json';
@@ -21,16 +24,21 @@ const fold = (s) => s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
 const KIND_LABEL = {
     sign: 'Sign', name: 'Divine name', term: 'Lexicon', current: 'Current',
     work: 'Text', event: 'Timeline', lesson: 'Lesson', book: 'Reading Room',
+    // the Magical Scriptorium: its alphabets, and its pages that are not
+    // alphabets (the author, the lineage of the books), those pages' units (the
+    // books of the lineage and the author's chapters), and the printed tables a
+    // book of alphabets gathers (the Shawq's)
+    alphabet: 'Alphabet', page: 'Page', table: 'Table', lineage: 'Book', chapter: 'Chapter',
     // the Christianities portal
     christology: 'Christology', branch: 'Branch', council: 'Council',
     dispute: 'Argument', canon: 'Canon', figure: 'Figure', symbol: 'Symbol',
-    site: 'Place', creed: 'Creed',
+    site: 'Place', creed: 'Creed', manuscript: 'Manuscript', note: 'Note',
     // the Powers portal
     order: 'Hierarchy', being: 'Being', deity: 'Deity',
 };
-const KIND_ORDER = ['name', 'term', 'sign', 'current', 'work', 'event', 'lesson', 'book',
+const KIND_ORDER = ['name', 'term', 'sign', 'alphabet', 'table', 'page', 'lineage', 'chapter', 'current', 'work', 'event', 'lesson', 'book',
     'figure', 'branch', 'council', 'dispute', 'christology', 'creed', 'canon', 'symbol', 'site',
-    'deity', 'being', 'order'];
+    'manuscript', 'note', 'deity', 'being', 'order'];
 
 // The same index serves two portals; each search box sees only its own half.
 // Christianities records are marked h === 'ch' and carry their path outright.
@@ -39,8 +47,12 @@ const SCOPES = {
         pool: (r) => r.h !== 'ch' && r.h !== 'pw',
         kicker: 'Across Every Hall',
         heading: 'Search the Scriptorium',
-        blurb: 'Signs, divine names, lexicon, currents, primary texts, timelines '
-            + 'and lessons — in fourteen scripts. Type in English or paste the script itself.',
+        // The number of scripts is passed in by the portal that knows it, so
+        // the sentence cannot fall behind the halls; the same box searches the
+        // Magical Scriptorium too, and says so.
+        blurb: (scripts) => 'Signs, divine names, lexicon, currents, primary texts, timelines '
+            + `and lessons — ${scripts ? `in ${numberWord(scripts)} scripts and in the Magical Scriptorium` : 'in every hall and in the Magical Scriptorium'}. `
+            + 'Type in English or paste the script itself.',
         placeholder: 'sefirah · ḥaqq · אין סוף · 𓋹 · execration',
         empty: 'Nothing in the Scriptorium answers to',
     },
@@ -79,7 +91,7 @@ function score(rec, q, qFolded) {
     return 0;
 }
 
-function ScriptoriumSearch({ scope = 'scriptorium' }) {
+function ScriptoriumSearch({ scope = 'scriptorium', scripts = null, placeholder = null }) {
     const sc = SCOPES[scope];
     const [query, setQuery] = useState('');
     const [index, setIndex] = useState(null);
@@ -151,7 +163,7 @@ function ScriptoriumSearch({ scope = 'scriptorium' }) {
             <header className="edu-section-head">
                 <p className="kicker">{sc.kicker}</p>
                 <h2 id="edu-search-heading">{sc.heading}</h2>
-                <p>{sc.blurb}</p>
+                <p>{typeof sc.blurb === 'function' ? sc.blurb(scripts) : sc.blurb}</p>
             </header>
 
             <div className="edu-search-box">
@@ -161,7 +173,7 @@ function ScriptoriumSearch({ scope = 'scriptorium' }) {
                     onChange={(e) => setQuery(e.target.value)}
                     onFocus={ensureIndex}
                     onKeyDown={(e) => { if (e.key === 'Enter' && state === 'ready') trackSearch(query, results.length, true); }}
-                    placeholder={sc.placeholder}
+                    placeholder={placeholder || sc.placeholder}
                     aria-label={sc.heading}
                     aria-describedby="edu-search-status"
                 />
@@ -190,12 +202,27 @@ function ScriptoriumSearch({ scope = 'scriptorium' }) {
                 <ul className="edu-search-results">
                     {shown.map((r, i) => (
                         <li key={`${r.h}-${r.k}-${r.l}-${i}`}>
-                            <Link to={hrefFor(r)}>
-                                {r.n && <span className="edu-search-native edu-glyph">{r.n}</span>}
+                            {/* a drawn sign stands beside its title, centred on its first
+                                line, at the size its page draws it (the row carries the scale) */}
+                            <Link to={hrefFor(r)} className={!r.n && (r.g || r.t) ? 'has-sign' : undefined}
+                                style={!r.n && (r.g?.z || r.z) ? { '--mg-scale': r.g?.z || r.z } : undefined}>
+                                {/* a drawn letter of the Magical Scriptorium has no text to show,
+                                    one whose form is still being traced has nothing yet, and a
+                                    table of numbers wears its ruled square */}
+                                {r.n
+                                    ? <span className="edu-search-native edu-glyph">{r.n}</span>
+                                    : r.g
+                                        ? <span className="edu-search-native edu-glyph"><MagicGlyph g={r.g} /></span>
+                                        : r.t
+                                            ? <span className="edu-search-native edu-glyph"><TableMark side={r.t} /></span>
+                                            : r.x ? <span className="edu-search-native"><Unstruck /></span> : null}
                                 <span className="edu-search-body">
                                     <span className="edu-search-label">{r.l}</span>
-                                    {r.s && <span className="edu-search-sub">{r.s}</span>}
-                                    {r.d && <span className="edu-search-detail">{r.d}</span>}
+                                    {/* a subtitle or detail may quote Arabic or Hebrew (the letter
+                                        printed beneath a sign of the Shawq): each run is isolated,
+                                        named by its language and set upright (index.css) */}
+                                    {r.s && <span className="edu-search-sub">{isolate(r.s)}</span>}
+                                    {r.d && <span className="edu-search-detail">{isolate(r.d)}</span>}
                                 </span>
                                 <span className="edu-search-tag">
                                     {KIND_LABEL[r.k]}

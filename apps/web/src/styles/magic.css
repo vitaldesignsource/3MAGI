@@ -1,0 +1,1423 @@
+/* =====================================================================
+   The Magical Scriptorium — a wing of the Scriptorium.
+   Only what the halls' edu- classes lack: the drawn-glyph box, the
+   unstruck seal that marks a form still being traced, the ledger that
+   stands in for a letter grid until it is, the drawn-from block, the
+   claims with their standing, the passages with their translators, the
+   comparison bands and the transliterator. The palette, the faces and the
+   card idioms are the halls' own. Imported by the wing's pages only.
+   ===================================================================== */
+
+/* The wing's prose names signs inline — a rune or an ogham feather mark in a
+   note, an Arabic title beside its transliteration, a planet's sign in a
+   claim. Every serif stack below therefore names the halls' script faces
+   (--edu-script-faces, index.css) ahead of Georgia: each face is scoped by
+   unicode-range to its own block, so Latin text is untouched and a sign that
+   Georgia lacks is set in the site's face instead of a system fallback. */
+
+/* A Hebrew or Arabic run quoted in italic prose (Bidi.jsx isolates each
+   one) stands upright: neither face has an italic, and a slanted Naskh or
+   square Hebrew is only the browser's synthesis. */
+.mg-page bdi[dir="rtl"] { font-style: normal; }
+
+/* --- the signs ------------------------------------------------------- */
+/* A drawn letter is one em square and takes its colour from the text, so
+   every size and colour the halls give a glyph reaches it unchanged. The
+   global reset makes svg a block; a glyph sits in the line like a letter. */
+.mg-glyph {
+  display: inline-block;
+  /* --mg-scale: an alphabet's signScale (registry.js), set where its signs stand */
+  width: calc(1em * var(--mg-scale, 1));
+  height: calc(1em * var(--mg-scale, 1));
+  vertical-align: -0.12em;
+  overflow: visible;
+}
+.mg-char { display: inline-block; }
+/* A figure of points only (the geomantic figures) does not fill an em as a
+   letter's strokes do; at text size — the cards, the drill, search results —
+   it gets a larger box, and in the plaque and the hero it keeps the em. */
+.mg-glyph.is-figure { width: 1.45em; height: 1.45em; vertical-align: -0.3em; }
+.edu-plaque-glyph .mg-glyph.is-figure,
+.mg-hero-signs .mg-glyph.is-figure,
+.mg-variant-sign .mg-glyph.is-figure { width: 1em; height: 1em; vertical-align: -0.12em; }
+/* a glyph that names a lighter pen (the geomantic figures' asterisks) takes it
+   where it is drawn large, so its short arms are not filled in */
+.edu-plaque-glyph .mg-glyph.has-pen path { stroke-width: var(--mg-pen, 5.5); }
+/* a fine-lined figure (MagicGlyph's textPen) draws its rings with its strokes'
+   pen, so in the plaque they take its own measured weight too */
+.edu-plaque-glyph .mg-glyph.has-pen .mg-ring { stroke-width: var(--mg-pen, 3.6); }
+/* where such a figure's traced rings close up at text size, it draws larger
+   text rings everywhere but the plaque, and its traced rings in the plaque */
+.mg-glyph .mg-ring.is-traced { display: none; }
+.edu-plaque-glyph .mg-glyph .mg-ring.is-traced { display: inline; }
+.edu-plaque-glyph .mg-glyph .mg-ring.is-text { display: none; }
+
+/* The unstruck seal: an empty ring with a dashed inner ring, where a form
+   is still to be traced — the mark of this wing, as the empty seal is the
+   Powers doors' mark for an emblem not yet drawn. */
+.mg-unstruck {
+  position: relative;
+  display: inline-block;
+  width: 0.9em;
+  height: 0.9em;
+  vertical-align: -0.1em;
+  border: 1px solid rgba(209, 173, 104, 0.42);
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(209, 173, 104, 0.07), transparent 70%);
+}
+.mg-unstruck::before {
+  content: "";
+  position: absolute;
+  inset: 22%;
+  border: 1px dashed rgba(209, 173, 104, 0.5);
+  border-radius: 50%;
+}
+.mg-unstruck::after {
+  content: "";
+  position: absolute;
+  left: 50%; top: 50%;
+  width: 3px; height: 3px;
+  margin: -1.5px 0 0 -1.5px;
+  border-radius: 50%;
+  background: rgba(209, 173, 104, 0.55);
+}
+.mg-unstruck-lg { width: 3rem; height: 3rem; flex-shrink: 0; }
+
+/* the glow the halls give a text glyph, given to a drawn one */
+.edu-plaque-glyph .mg-glyph,
+.edu-hall-glyph .mg-glyph,
+.edu-drill-glyph .mg-glyph,
+.mg-hero-signs .mg-glyph { filter: drop-shadow(0 0 14px rgba(209, 173, 104, 0.32)); }
+
+/* --- hero ---------------------------------------------------------------- */
+.mg-hero .kicker a { color: inherit; text-decoration: none; border-bottom: 1px solid rgba(209, 173, 104, 0.35); }
+.mg-hero .kicker a:hover { color: #ecd9ae; }
+/* A title is capped to the width of its longest word and to its length
+   (lib.js fitStyle: two lines on a wide screen, three on a phone), so
+   "Transliterator" sets as large as the column allows and never runs past it,
+   and a long name never fills the first screen. The rest of a long title
+   ("the Writing of the Angels") stands beneath the name, smaller. */
+.mg-page .edu-hero h1.mg-fit {
+  font-size: min(clamp(4rem, 11vw, 10rem),
+    calc((min(100vw, 1180px) - 2 * clamp(1.25rem, 4vw, 2.5rem)) / var(--mg-fit, 1)));
+  text-wrap: balance;
+}
+@media (max-width: 620px) {
+  .mg-page .edu-hero h1.mg-fit { font-size: min(clamp(3rem, 14vw, 4.4rem), calc((100vw - 2.6rem) / var(--mg-fit-sm, var(--mg-fit, 1)))); }
+}
+.mg-h1-sub {
+  display: block;
+  margin-top: 0.35em;
+  font-size: 0.4em;
+  letter-spacing: 0.1em;
+  line-height: 1.3;
+  color: rgba(236, 217, 174, 0.88);
+}
+@media (max-width: 620px) {
+  .mg-h1-sub { font-size: max(0.42em, 1.15rem); letter-spacing: 0.06em; }
+}
+.mg-hero-sample { margin: 0.4rem 0 1.6rem; }
+.mg-hero-signs {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.2em 0.55em;
+  /* centred, because a row that wraps is narrowed to even lines (HeroSigns) */
+  margin: 0 auto;
+  font-size: clamp(2rem, 5vw, 2.8rem);
+  line-height: 1.2;
+  color: #d1ad68;
+  text-shadow: 0 0 26px rgba(209, 173, 104, 0.3);
+}
+.mg-hero-caption {
+  margin: 0.6rem 0 0;
+  color: rgba(209, 173, 104, 0.7);
+  font-family: var(--edu-script-faces), Georgia, "Times New Roman", serif;
+  font-style: italic;
+  font-size: 0.9rem;
+}
+.mg-hero-names {
+  max-width: 40rem;
+  margin: 1.1rem auto 0;
+  color: rgba(222, 212, 196, 0.6);
+  font-family: var(--edu-script-faces), Georgia, "Times New Roman", serif;
+  font-style: italic;
+  font-size: 0.92rem;
+  line-height: 1.7;
+}
+.mg-hero-names span {
+  font-family: "Cinzel", Georgia, serif;
+  font-style: normal;
+  font-size: 0.68rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(209, 173, 104, 0.75);
+  margin-right: 0.4rem;
+}
+.mg-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin: 0 0 1.4rem;
+  padding: 0.4rem 0.95rem 0.4rem 0.7rem;
+  border: 1px solid rgba(209, 173, 104, 0.35);
+  border-radius: 999px;
+  color: rgba(236, 217, 174, 0.88);
+  font-size: 0.7rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  background: rgba(24, 19, 14, 0.6);
+}
+.mg-status .mg-unstruck { font-size: 1.2rem; }
+.mg-hero-glyphs { flex-wrap: wrap; }
+
+/* the opening paragraphs of an entry, read like the halls' intros */
+.mg-intro {
+  max-width: 44rem;
+  margin: 0 auto;
+}
+.mg-intro p {
+  margin: 0 0 1.1em;
+  color: rgba(232, 224, 208, 0.82);
+  font-family: var(--edu-script-faces), Georgia, "Times New Roman", serif;
+  font-size: 1.04rem;
+  line-height: 1.85;
+}
+
+/* --- the letters -------------------------------------------------------- */
+.mg-letter-groups.is-grouped { display: flex; flex-direction: column; gap: 1.6rem; }
+.mg-group-label {
+  display: flex;
+  align-items: baseline;
+  gap: 0.8rem;
+  margin: 0 0 0.75rem;
+  padding-bottom: 0.45rem;
+  border-bottom: 1px solid rgba(179, 139, 70, 0.2);
+  color: rgba(209, 173, 104, 0.85);
+  font-size: 0.72rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+/* a printed table's label is an h3 (Letters.jsx): it keeps the label's
+   weight and measure, not the site's heading face */
+h3.mg-group-label { font-weight: 400; line-height: 1.45; }
+.mg-group-label em {
+  color: rgba(222, 212, 196, 0.62);
+  font-family: var(--edu-script-faces), Georgia, "Times New Roman", serif;
+  font-size: 0.85rem;
+  letter-spacing: 0.02em;
+  text-transform: none;
+}
+/* A group that is a printed table (the Shawq's): its name in the serif, in
+   its own case (the translator's spellings stay as he printed them), its kind
+   as the small tracked tag; then its heading as printed, right to left in the
+   halls' Arabic face, the translator's English, the book's claim and its
+   page, and a note. */
+.mg-letter-group.has-head .mg-group-label {
+  flex-wrap: wrap;
+  row-gap: 0.3rem;
+  color: #ecd9ae;
+  font-family: var(--edu-script-faces), Georgia, "Times New Roman", serif;
+  font-size: 1.12rem;
+  letter-spacing: 0.01em;
+  line-height: 1.45;
+  text-transform: none;
+}
+.mg-letter-group.has-head .mg-group-label em {
+  font-family: "Cinzel", Georgia, serif;
+  font-style: normal;
+  font-size: 0.64rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: rgba(209, 173, 104, 0.8);
+}
+/* the heading as printed stands at the right of the group, where its table
+   begins; the facts and the note keep a reading measure at the left */
+.mg-table-head { display: grid; gap: 0.6rem; margin: 0 0 1.1rem; }
+.mg-table-facts, .mg-table-about { max-width: 56rem; }
+.mg-table-heading {
+  margin: 0;
+  color: rgba(236, 226, 206, 0.92);
+  font-size: 1.22rem;
+  line-height: 1.95;
+  text-align: right;
+}
+.mg-table-facts { margin: 0; display: grid; gap: 0.4rem; }
+.mg-table-facts > div { display: grid; grid-template-columns: 11.5rem minmax(0, 1fr); gap: 0.9rem; align-items: baseline; }
+.mg-table-facts dt {
+  color: rgba(209, 173, 104, 0.75);
+  font-family: "Cinzel", Georgia, serif;
+  font-size: 0.64rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+.mg-table-facts dd,
+.mg-table-about {
+  margin: 0;
+  color: rgba(232, 224, 208, 0.8);
+  font-family: var(--edu-script-faces), Georgia, "Times New Roman", serif;
+  font-size: 0.92rem;
+  line-height: 1.65;
+}
+.mg-table-about { color: rgba(222, 212, 196, 0.68); font-style: italic; }
+@media (max-width: 600px) {
+  .mg-table-facts > div { grid-template-columns: minmax(0, 1fr); gap: 0.1rem; }
+  .mg-table-heading { font-size: 1.08rem; }
+}
+/* a value in another script (the Arabic letter printed under each of the
+   Shawq's signs) stands under the name in that script's face, upright */
+.mg-letter-card .mg-letter-value { font-style: normal; }
+.edu-page .mg-value-script { font-style: normal; font-size: 1.1rem; line-height: 1.5; color: rgba(236, 217, 174, 0.92); }
+.edu-letter-card .mg-value-script { font-size: 1.05rem; line-height: 1.3; }
+@media (min-width: 900px) {
+  .edu-letter-grid.mg-cols { grid-template-columns: repeat(var(--mg-cols), minmax(0, 1fr)); }
+}
+/* the futhark's ættir, four to a row below 900px: two clean rows of four */
+@media (max-width: 899px) {
+  .edu-letter-grid.mg-cols.is-quartered { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  /* the nine chambers' classes, three to a row: a class laid out as its
+     chambers stand in the grid, read from the right */
+  .edu-letter-grid.mg-cols.is-thirded { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+/* groups of four or five (the planets: a table, then its seal and its
+   characters) stand two to a row on a phone, the table of an odd group
+   across the row, so that no group ends in a lone card */
+@media (max-width: 600px) {
+  .edu-letter-grid.mg-cols.is-halved { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .is-halved .mg-letter-card.is-wide { grid-column: 1 / -1; }
+}
+/* four to a row on a phone leaves a card about 80px wide: the names (the
+   reconstructed *þurisaz, *kaunan) are set smaller so they break at spaces,
+   not inside a word */
+@media (max-width: 480px) {
+  .edu-letter-grid.mg-cols.is-quartered { gap: 0.45rem; }
+  .is-quartered .mg-letter-card { padding-inline: 0.15rem; }
+  .is-quartered .mg-letter-card .edu-letter-name { font-size: 0.6rem; letter-spacing: 0.03em; overflow-wrap: normal; }
+}
+/* A letter or a section reached by its address (a search result, the section
+   menu) stops below the sticky site header, not under it. The header's real
+   height is written to --tl-header-h by the page (it grows with the screen
+   and wraps to two lines on a narrow phone); the floor is its height at each
+   width once its fonts are in, so an address followed before they arrive, or
+   before the script runs, still clears it. */
+.mg-page { --mg-header-floor: 5rem; }
+@media (max-width: 640px) { .mg-page { --mg-header-floor: 6.1rem; } }
+@media (max-width: 374px) { .mg-page { --mg-header-floor: 7.6rem; } }
+.mg-letter-card,
+.mg-page [id^="mg-"],
+.mg-page .edu-section-head h2 { scroll-margin-top: calc(max(var(--tl-header-h, 0px), var(--mg-header-floor)) + 1rem); }
+.mg-letter-card .edu-letter-glyph { min-height: 1.25em; display: flex; align-items: center; justify-content: center; }
+/* A drawn sign keeps a margin inside its em box (the kit's body is 80 units
+   of 100), so on a card it is set a little larger than the em, to stand as
+   tall as a hall's letter beside it. */
+.mg-letter-card.is-drawn .edu-letter-glyph .mg-glyph:not(.is-figure) { width: calc(1.3em * var(--mg-scale, 1)); height: calc(1.3em * var(--mg-scale, 1)); }
+/* An alphabet whose names are long single words (the Icelandic staves) sets
+   its cards wider, so a name breaks between words or not at all. */
+.edu-letter-grid.has-long-names { grid-template-columns: repeat(auto-fill, minmax(8.6rem, 1fr)); }
+/* A table of numbers wears a small ruled square, and an honest gap the glyph
+   kit's own gap mark, quieter and smaller than a sign but standing in a
+   drawn sign's box, so the titles of a row of cards share one line. */
+.mg-letter-card.is-table .edu-letter-glyph .mg-glyph,
+.mg-letter-card.is-gap .edu-letter-glyph .mg-glyph { width: 1.3em; height: 1.3em; opacity: 0.7; }
+.mg-letter-card.is-table .edu-letter-glyph,
+.mg-letter-card.is-gap .edu-letter-glyph { min-height: calc(1.3em * var(--mg-scale, 1)); }
+.mg-table-mark { color: rgba(209, 173, 104, 0.85); }
+/* and so wherever a drawn sign stands among set letters at text size — the
+   comparison tables' cells, a search result, the transliterator's key and
+   breakdown — so that none is drawn smaller than the letters beside it, and
+   a ring-letter is not set below about 28 px, where its rings close up */
+.mg-cmp-cell .mg-glyph:not(.is-figure),
+.edu-search-native .mg-glyph:not(.is-figure),
+.mg-key-sign .mg-glyph:not(.is-figure),
+.mg-fold-to .mg-glyph:not(.is-figure),
+.mg-breakdown .mg-glyph:not(.is-figure) { width: calc(1.4em * var(--mg-scale, 1)); height: calc(1.4em * var(--mg-scale, 1)); }
+/* The drill sets a sign's name in Cinzel, as the letter cards do, and like
+   them in capitals: Cinzel has no ṭ ḥ ṣ ḍ ẓ, and in lower case those would
+   fall back to a serif's small letter among Cinzel's capitals (“AFLĀṭŪN’S
+   PEN”); in capitals they fall back to a capital (“AFLĀṬŪN’S PEN”). */
+.mg-page .edu-drill-option:not(.edu-drill-option-glyph),
+.mg-page .edu-drill-prompt-name { text-transform: uppercase; }
+/* The drill's find mode is where ring-letters must be told apart: its four
+   choices are set large enough to fill their buttons as a set script's do. */
+.edu-drill-option-glyph .mg-glyph:not(.is-figure) { width: calc(1.9em * var(--mg-scale, 1)); height: calc(1.9em * var(--mg-scale, 1)); vertical-align: -0.45em; }
+.mg-letter-card .edu-letter-name { max-width: 100%; overflow-wrap: anywhere; }
+/* A name with a word of ten letters or more (TAPHTHARTHARATH, ÆGISHJÁLMUR) is
+   set down only as far as its own card needs: the card is a size container,
+   and the word's length (--mg-word, from Letters.jsx) against the card's width
+   gives the size, never above the other names' and never below 0.58rem. An
+   upper-case letter of the face is at most about 0.75em wide, with 0.1em of
+   tracking. A page of titles (the books, the chapters: is-formless) sets
+   every title at one size and gives its cards room for the longest word, so
+   a grid of them reads evenly. */
+.mg-letter-card { container-type: inline-size; }
+.mg-letter-card .edu-letter-name.is-long {
+  font-size: clamp(0.58rem, calc(100cqi / (var(--mg-word, 12) * 0.88)), 0.74rem);
+  letter-spacing: 0.1em;
+}
+.mg-letter-card.is-formless .edu-letter-name { font-size: 0.72rem; letter-spacing: 0.06em; }
+.edu-letter-grid.is-formless,
+.edu-letter-grid.mg-cols.is-formless { grid-template-columns: repeat(auto-fill, minmax(8.4rem, 1fr)); }
+.mg-letter-sub {
+  display: block;
+  margin-top: 0.1rem;
+  font-family: var(--edu-script-faces), Georgia, "Times New Roman", serif;
+  font-size: 0.72rem;
+  font-style: italic;
+  letter-spacing: 0.01em;
+  text-transform: none;
+  color: rgba(222, 212, 196, 0.6);
+}
+.mg-letter-card .edu-letter-translit { min-height: 1.1em; }
+
+/* A page of the wing that is not an alphabet (the author's chapters, the
+   lineage's books) has no sign to show: its cards are titles, set in from the
+   top a little so a row of them still reads as a row of cards, and its plaque
+   is a single column of text. */
+.mg-letter-card.is-formless { justify-content: center; padding-block: 1rem 0.9rem; min-height: 5.2rem; }
+.mg-plaque.is-formless { grid-template-columns: 1fr; }
+/* under tables that are h3, the plaque's name is an h4, styled as the halls'
+   plaque name (.edu-plaque-body h3) */
+.edu-plaque-body h4.mg-plaque-name {
+  margin: 0 0 0.6em;
+  color: #f4f0e7;
+  font-family: "Cinzel", Georgia, "Times New Roman", serif;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.12;
+  display: flex;
+  align-items: baseline;
+  gap: 0.7rem;
+  flex-wrap: wrap;
+}
+@media (max-width: 640px) {
+  .edu-plaque-body h4.mg-plaque-name { justify-content: center; }
+}
+
+/* the plaque */
+.mg-plaque .edu-plaque-glyph { display: flex; align-items: center; justify-content: center; min-height: 1.2em; }
+/* a table's numbers, rows from the top: a cell read two ways is left open,
+   a cell restored from the sums is set in italic, each keyed below */
+.mg-square { margin: 0 0 0.9rem; max-width: 100%; overflow-x: auto; }
+.mg-square table { border-collapse: collapse; margin: 0; font-variant-numeric: tabular-nums lining-nums; }
+.mg-square td {
+  min-width: 1.9em;
+  padding: 0.18em 0.35em;
+  border: 1px solid rgba(179, 139, 70, 0.32);
+  color: #ecd9ae;
+  font-family: var(--edu-script-faces), Georgia, "Times New Roman", serif;
+  font-size: 0.92rem;
+  line-height: 1.4;
+  text-align: center;
+}
+.mg-square td.is-open, .mg-square-key.is-open { color: rgba(209, 173, 104, 0.6); }
+.mg-square td.is-restored, .mg-square-key.is-restored { font-style: italic; color: #f3e3bd; background: rgba(209, 173, 104, 0.09); }
+.mg-square figcaption { display: flex; flex-wrap: wrap; gap: 0.2rem 1.2rem; margin-top: 0.45rem; font-size: 0.8rem; color: rgba(222, 212, 196, 0.62); }
+.mg-square-key { display: inline-block; min-width: 1.2em; margin-right: 0.3rem; padding: 0 0.2em; border: 1px solid rgba(179, 139, 70, 0.32); text-align: center; }
+@media (max-width: 640px) {
+  .mg-square table { margin: 0 auto; }
+  .mg-square figcaption { justify-content: center; }
+}
+@media (max-width: 480px) {
+  .mg-square td { min-width: 1.6em; padding: 0.12em 0.2em; font-size: 0.78rem; }
+}
+.mg-plaque-gloss {
+  color: rgba(222, 212, 196, 0.62);
+  font-family: var(--edu-script-faces), Georgia, "Times New Roman", serif;
+  font-style: italic;
+  font-size: 1rem;
+  font-weight: 400;
+}
+.mg-plaque .edu-plaque-body dd.mg-translit { font-family: var(--edu-script-faces), Georgia, "Times New Roman", serif; font-style: italic; }
+.mg-codepoint { font-size: 0.88rem; letter-spacing: 0.02em; }
+.mg-plaque-poems {
+  padding-top: 0.6rem;
+  border-top: 1px solid rgba(179, 139, 70, 0.16);
+}
+.mg-plaque-strokes { margin: 0 0 0.6rem; color: rgba(232, 224, 208, 0.8); }
+.mg-plaque-strokes span,
+.mg-variants-label {
+  margin-right: 0.45rem;
+  font-family: "Cinzel", Georgia, serif;
+  font-size: 0.7rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: rgba(209, 173, 104, 0.7);
+}
+.mg-value-link { color: #ecd9ae; border-bottom: 1px solid rgba(209, 173, 104, 0.4); text-decoration: none; }
+.mg-value-link:hover { color: #fff3d6; border-color: #ecd9ae; }
+.mg-variants { margin-top: 0.9rem; }
+.mg-variants ul { list-style: none; margin: 0.4rem 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0.8rem 1.4rem; }
+.mg-variants li { display: flex; flex-wrap: wrap; align-items: center; gap: 0.6rem; }
+/* on a narrow plaque the sign and its source share a line and the note runs
+   full width under them, read as source then comment, not as two columns */
+@media (max-width: 600px) {
+  .mg-variants li { gap: 0.3rem 0.6rem; text-align: left; }
+  .mg-variant-source { flex: 1 1 10rem; min-width: 0; }
+  .mg-variant-note { flex-basis: 100%; }
+}
+.mg-variant-sign { font-size: 2rem; color: #d1ad68; }
+.mg-variant-source { font-size: 0.85rem; color: rgba(222, 212, 196, 0.75); }
+.mg-variant-note { font-size: 0.85rem; color: rgba(222, 212, 196, 0.55); font-style: italic; }
+
+/* --- forms being traced: the notice and the ledger ------------------------ */
+.mg-pending-notice {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  max-width: 46rem;
+  margin: 0 auto 1.6rem;
+  padding: 1.15rem 1.4rem;
+  border: 1px solid rgba(209, 173, 104, 0.38);
+  outline: 1px solid rgba(209, 173, 104, 0.14);
+  outline-offset: 4px;
+  background: linear-gradient(135deg, rgba(28, 22, 15, 0.92), rgba(14, 11, 9, 0.95));
+}
+.mg-pending-kicker {
+  margin: 0 0 0.3rem;
+  color: rgba(209, 173, 104, 0.8);
+  font-size: 0.68rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+}
+.mg-pending-text {
+  margin: 0;
+  color: rgba(240, 233, 218, 0.9);
+  font-family: var(--edu-script-faces), Georgia, "Times New Roman", serif;
+  font-size: 1.02rem;
+  line-height: 1.7;
+}
+.mg-register-wrap {
+  border: 1px solid rgba(179, 139, 70, 0.3);
+  background: rgba(13, 11, 9, 0.85);
+}
+.mg-register-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.3rem 1.2rem;
+  margin: 0;
+  padding: 0.75rem 1.2rem;
+  border-bottom: 1px solid rgba(179, 139, 70, 0.3);
+  background: #17130e;
+  color: rgba(209, 173, 104, 0.78);
+  font-size: 0.7rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+.mg-register-head em {
+  color: rgba(222, 212, 196, 0.62);
+  font-family: var(--edu-script-faces), Georgia, "Times New Roman", serif;
+  font-size: 0.86rem;
+  letter-spacing: 0.02em;
+  text-transform: none;
+}
+/* the register reads down its columns, as a printed index does */
+.mg-register {
+  list-style: none;
+  margin: 0;
+  padding: 0.5rem 1.2rem 0.9rem;
+  columns: 3 15rem;
+  column-gap: 2.4rem;
+  column-rule: 1px solid rgba(179, 139, 70, 0.14);
+}
+.mg-reg {
+  display: grid;
+  grid-template-columns: 2.1rem minmax(0, 1fr);
+  column-gap: 0.4rem;
+  padding: 0.6rem 0.3rem 0.6rem 0;
+  border-bottom: 1px solid rgba(179, 139, 70, 0.1);
+  break-inside: avoid;
+  scroll-margin-top: 7rem;
+  transition: background 160ms ease;
+}
+.mg-reg.is-target { background: rgba(179, 139, 70, 0.15); box-shadow: inset 2px 0 0 #d1ad68; }
+.mg-reg:focus { outline: none; }
+.mg-reg:focus-visible { outline: 1px solid rgba(209, 173, 104, 0.7); outline-offset: -1px; }
+.mg-reg-no {
+  grid-row: 1 / span 3;
+  padding: 0.32rem 0 0 0.3rem;
+  color: rgba(209, 173, 104, 0.8);
+  font-size: 0.78rem;
+  font-variant-numeric: tabular-nums;
+}
+.mg-reg-line { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.15rem 0.9rem; }
+.mg-reg-name { color: #ecd9ae; font-family: "Cinzel", Georgia, serif; font-size: 1.12rem; letter-spacing: 0.06em; }
+.mg-reg-name a { color: inherit; text-decoration: none; border-bottom: 1px solid rgba(209, 173, 104, 0.3); }
+.mg-reg-name a:hover { color: #fff3d6; border-color: #ecd9ae; }
+.mg-reg-label {
+  margin-right: 0.15rem;
+  color: rgba(209, 173, 104, 0.8);
+  font-size: 0.66rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+.mg-reg-value, .mg-reg-num { color: rgba(232, 224, 208, 0.82); }
+.mg-reg-value .edu-glyph { font-size: 1.3rem; color: #ecd9ae; }
+.mg-reg-translit { color: rgba(222, 212, 196, 0.7); font-family: var(--edu-script-faces), Georgia, "Times New Roman", serif; font-style: italic; }
+.mg-reg-note,
+.mg-reg-valuenote {
+  grid-column: 2;
+  margin-top: 0.3rem;
+  color: rgba(222, 212, 196, 0.72);
+  font-family: var(--edu-script-faces), Georgia, "Times New Roman", serif;
+  font-size: 0.9rem;
+  line-height: 1.62;
+}
+.mg-reg-valuenote { color: rgba(209, 173, 104, 0.75); font-style: italic; }
+
+/* --- set and drawn ---------------------------------------------------------- */
+.mg-drawn {
+  max-width: 56rem;
+  margin: 0 auto;
+  padding: clamp(1.2rem, 3vw, 1.8rem) clamp(1.2rem, 3vw, 2rem);
+  border: 1px solid rgba(179, 139, 70, 0.25);
+  background: rgba(16, 13, 10, 0.82);
+}
+.mg-drawn .ch-kv {
+  display: grid;
+  grid-template-columns: 11.5rem minmax(0, 1fr);
+  gap: 0.2rem 1.8rem;
+  margin: 0;
+  padding: 1rem 0;
+  border-top: 1px solid rgba(179, 139, 70, 0.16);
+}
+.mg-drawn .ch-kv:first-child { border-top: none; padding-top: 0.2rem; }
+.mg-drawn .ch-kv:last-child { padding-bottom: 0.2rem; }
+.mg-drawn .ch-kv > span { margin: 0.42rem 0 0; font-family: "Cinzel", Georgia, serif; line-height: 1.5; }
+.mg-drawn .ch-kv p { font-family: var(--edu-script-faces), Georgia, "Times New Roman", serif; font-size: 0.97rem; line-height: 1.75; }
+
+/* --- the page itself ------------------------------------------------------ */
+/* The library's photograph of the printed page, in the drawn-from block's
+   frame. The paper keeps its own colour; the frame is the wing's. A tall
+   page is held to the screen's height, so the figures and the caption can be
+   read together. */
+.mg-plate {
+  /* the tallest the image may stand (--mh), set per kind of plate below */
+  --mh: min(82vh, 56rem);
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: clamp(0.7rem, 2vw, 1.2rem);
+  border: 1px solid rgba(179, 139, 70, 0.25);
+  background: rgba(16, 13, 10, 0.82);
+}
+.mg-plate + .mg-plate { margin-top: 1.6rem; }
+.mg-plate-frame { display: flex; justify-content: center; }
+/* The image's box does not wait for the image: its width is the frame's, or
+   what its height cap allows at its own proportions (--ar, set from the
+   module's width and height), and never more than its own width (--pw), so
+   the plates hold their place while they load and a jump to a later section
+   lands where it should. */
+.mg-plate-frame img {
+  display: block;
+  flex: none;
+  aspect-ratio: var(--ar);
+  width: min(100%, calc(var(--mh) * var(--ar)), var(--pw, 100%));
+  height: auto;
+  max-width: 100%;
+  max-height: var(--mh);
+  border: 1px solid rgba(209, 173, 104, 0.22);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+}
+.mg-plate figcaption {
+  max-width: 50rem;
+  margin: 1rem auto 0;
+  padding-top: 0.85rem;
+  border-top: 1px solid rgba(179, 139, 70, 0.18);
+  display: grid;
+  gap: 0.45rem;
+}
+.mg-plate-caption {
+  margin: 0;
+  color: rgba(236, 226, 206, 0.88);
+  font-family: var(--edu-script-faces), Georgia, "Times New Roman", serif;
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+.mg-plate-rights {
+  margin: 0;
+  color: rgba(222, 212, 196, 0.62);
+  font-family: var(--edu-script-faces), Georgia, "Times New Roman", serif;
+  font-size: 0.84rem;
+  line-height: 1.6;
+}
+.mg-plate-rights span {
+  margin-right: 0.45rem;
+  color: rgba(209, 173, 104, 0.75);
+  font-family: "Cinzel", Georgia, serif;
+  font-size: 0.68rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+.mg-plate-links { margin: 0.15rem 0 0; display: flex; flex-wrap: wrap; gap: 0.3rem 1.4rem; font-size: 0.84rem; }
+/* A page taller than it is wide would push its caption below the fold of a
+   laptop screen: on a wide screen it stands beside its caption, held to the
+   height left under the sticky header, and on a narrow one it is capped
+   lower, so the caption follows it onto the screen. */
+.mg-plate.is-portrait { --mh: min(64vh, 44rem); }
+@media (min-width: 1024px) {
+  .mg-plate.is-portrait {
+    display: grid;
+    grid-template-columns: minmax(0, 1.9fr) minmax(14rem, 1fr);
+    gap: 1.6rem;
+    align-items: start;
+  }
+  .mg-plate.is-portrait { --mh: min(calc(100vh - 8rem), 46rem); }
+  .mg-plate.is-portrait figcaption {
+    margin: 0;
+    padding-top: 0;
+    border-top: none;
+    padding-left: 1.4rem;
+    border-left: 1px solid rgba(179, 139, 70, 0.18);
+    align-content: start;
+  }
+}
+/* A set of pages (the seven tables of II.22) stands as a grid of plates, two
+   to a row on a wide screen, each image held to one height so a row reads as
+   a row; the captions follow their plates, and the bibliographic line and the
+   rights statement they share close the set. An odd last plate takes the
+   whole row, its caption beside it, so no plate stands beside an empty cell. */
+.mg-plates.is-set .mg-plate-list {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 1.4rem;
+  max-width: 76rem;
+  margin: 0 auto;
+}
+.mg-plates.is-set .mg-plate,
+.mg-plates.is-set .mg-plate.is-portrait { --mh: 30rem; display: flex; flex-direction: column; align-items: stretch; max-width: none; margin: 0; }
+.mg-plates.is-set .mg-plate.is-portrait { --mh: min(36rem, 80vh); }
+.mg-plates.is-set .mg-plate-frame { align-items: center; }
+.mg-plates.is-set .mg-plate figcaption,
+.mg-plates.is-set .mg-plate.is-portrait figcaption {
+  margin: 1rem 0 0;
+  padding: 0.85rem 0 0;
+  border-left: none;
+  border-top: 1px solid rgba(179, 139, 70, 0.18);
+}
+@media (min-width: 900px) {
+  .mg-plates.is-set .mg-plate-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .mg-plates.is-set .mg-plate:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: min(calc(var(--mh) * var(--ar)), 60%) minmax(14rem, 24rem);
+    justify-content: center;
+    align-items: start;
+    gap: 1.6rem;
+  }
+  .mg-plates.is-set .mg-plate:last-child:nth-child(odd) figcaption {
+    margin: 0;
+    padding: 0 0 0 1.4rem;
+    border-top: none;
+    border-left: 1px solid rgba(179, 139, 70, 0.18);
+    align-content: start;
+  }
+}
+.mg-plates-rights { max-width: 50rem; margin: 1.4rem auto 0; }
+/* The values printed with signs shown as printed, not drawn: row by row,
+   each row's values spaced as the page spaces them, in the page's script
+   and direction. */
+.mg-plate-values { margin: 0; display: grid; gap: 0.35rem; }
+.mg-plate-values > div { display: grid; grid-template-columns: minmax(7rem, 11rem) minmax(0, 1fr); gap: 0.8rem; align-items: baseline; }
+.mg-plate-values dt {
+  color: rgba(209, 173, 104, 0.75);
+  font-family: "Cinzel", Georgia, serif;
+  font-size: 0.62rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+.mg-plate-values dd {
+  margin: 0;
+  color: rgba(236, 226, 206, 0.88);
+  font-family: var(--edu-script-faces), Georgia, "Times New Roman", serif;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+.mg-plate-values dd.is-list { display: flex; flex-wrap: wrap; gap: 0.15rem 0.6rem; }
+.mg-plate-values dd.is-script { font-size: 1.12rem; line-height: 1.7; gap: 0.1rem 0.75rem; }
+@media (max-width: 600px) {
+  .mg-plate-values > div { grid-template-columns: minmax(0, 1fr); gap: 0.05rem; }
+}
+/* a caption set beside its plate (the odd last plate of a set, a tall page on
+   a wide screen) is a narrow column: there the row's name stands above its
+   values, as on a phone, and the values keep the column's width */
+@media (min-width: 900px) {
+  .mg-plates.is-set .mg-plate:last-child:nth-child(odd) .mg-plate-values > div { grid-template-columns: minmax(0, 1fr); gap: 0.05rem; }
+}
+@media (min-width: 1024px) {
+  .mg-plates:not(.is-set) .mg-plate.is-portrait .mg-plate-values > div { grid-template-columns: minmax(0, 1fr); gap: 0.05rem; }
+}
+/* the printed page parts its values with points; a value of two words
+   (Physical Good, نون مد) is told from the next by a point after it */
+.mg-plate-values dd.is-list > span:not(:last-child)::after {
+  content: "·";
+  margin-inline-start: 0.6rem;
+  color: rgba(209, 173, 104, 0.55);
+}
+/* the tables shown as printed: each under its own heading, its pages a set */
+.mg-facsimile + .mg-facsimile { margin-top: 2.6rem; }
+.mg-facsimile-head { max-width: 54rem; margin: 0 auto 1.2rem; text-align: left; }
+.mg-facsimile-head h3 {
+  margin: 0;
+  color: #ecd9ae;
+  font-family: var(--edu-script-faces), Georgia, "Times New Roman", serif;
+  font-size: 1.15rem;
+  font-weight: 400;
+  line-height: 1.45;
+}
+.mg-facsimile-note {
+  margin: 0.25rem 0 0;
+  color: rgba(209, 173, 104, 0.8);
+  font-family: "Cinzel", Georgia, serif;
+  font-size: 0.64rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+.mg-facsimile-about {
+  margin: 0.6rem 0 0;
+  color: rgba(232, 224, 208, 0.8);
+  font-family: var(--edu-script-faces), Georgia, "Times New Roman", serif;
+  font-size: 0.95rem;
+  line-height: 1.75;
+}
+.mg-plate-links a {
+  color: rgba(222, 212, 196, 0.8);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(209, 173, 104, 0.35);
+}
+.mg-plate-links a:hover { color: #ecd9ae; border-color: #ecd9ae; }
+
+/* --- the first witness --------------------------------------------------- */
+.mg-witness {
+  max-width: 50rem;
+  margin: 0 auto;
+  padding: clamp(1.3rem, 3vw, 2rem);
+  border: 1px solid rgba(209, 173, 104, 0.3);
+  background: linear-gradient(180deg, rgba(24, 19, 14, 0.9), rgba(13, 11, 9, 0.93));
+}
+.mg-witness-date {
+  margin: 0 0 0.5rem;
+  color: rgba(209, 173, 104, 0.85);
+  font-size: 0.74rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  line-height: 1.6;
+}
+.mg-witness h3 {
+  margin: 0 0 0.9rem;
+  color: #f0e9da;
+  font-family: var(--edu-script-faces), Georgia, "Times New Roman", serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.45;
+}
+.mg-witness dl { margin: 0 0 0.6rem; display: grid; gap: 0.5rem; }
+.mg-witness dl > div { display: grid; grid-template-columns: 7.5rem 1fr; gap: 1rem; align-items: baseline; }
+.mg-witness dt {
+  color: rgba(209, 173, 104, 0.7);
+  font-size: 0.68rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+.mg-witness dd,
+.mg-witness-notes {
+  margin: 0;
+  color: rgba(232, 224, 208, 0.82);
+  font-family: var(--edu-script-faces), Georgia, "Times New Roman", serif;
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+.mg-witness-notes { padding-top: 0.8rem; border-top: 1px solid rgba(179, 139, 70, 0.2); color: rgba(222, 212, 196, 0.68); }
+
+/* --- what is claimed ---------------------------------------------------------- */
+.mg-key { list-style: none; margin: 0 auto 1.4rem; padding: 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 0.5rem 1.6rem; max-width: 52rem; }
+.mg-key li { display: flex; gap: 0.55rem; align-items: baseline; }
+.mg-key-note { font-family: var(--edu-script-faces), Georgia, "Times New Roman", serif; font-size: 0.86rem; color: rgba(222, 212, 196, 0.6); }
+.mg-tag {
+  display: inline-block;
+  padding: 0.13rem 0.5rem;
+  border: 1px solid currentColor;
+  border-radius: 2px;
+  font-size: 0.62rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.mg-tag.is-documented { color: #92b58a; }
+.mg-tag.is-attributed { color: #8fa8bd; }
+.mg-tag.is-disputed   { color: #b98fc0; }
+.mg-tag.is-legend     { color: #c9a86a; }
+.mg-ledger-claims { list-style: none; margin: 0 auto; padding: 0; display: grid; gap: 0.9rem; max-width: 56rem; }
+.mg-claim {
+  padding: 1.05rem 1.2rem 1.15rem;
+  border: 1px solid rgba(209, 173, 104, 0.16);
+  border-left-width: 2px;
+  border-radius: 3px;
+  background: rgba(20, 16, 11, 0.45);
+}
+.mg-claim.is-documented { border-left-color: rgba(146, 181, 138, 0.8); }
+.mg-claim.is-attributed { border-left-color: rgba(143, 168, 189, 0.75); }
+.mg-claim.is-disputed   { border-left-color: rgba(185, 143, 192, 0.75); }
+.mg-claim.is-legend     { border-left-color: rgba(201, 168, 106, 0.75); }
+.mg-claim-text { margin: 0; color: rgba(240, 233, 218, 0.94); font-family: var(--edu-script-faces), Georgia, "Times New Roman", serif; font-size: 1.02rem; line-height: 1.6; }
+.mg-claim-standing { margin: 0.6rem 0 0.5rem; }
+.mg-claim-evidence { margin: 0; color: rgba(232, 224, 208, 0.78); font-family: var(--edu-script-faces), Georgia, "Times New Roman", serif; font-size: 0.95rem; line-height: 1.72; }
+.mg-claim-sources { margin: 0.55rem 0 0; color: rgba(209, 173, 104, 0.72); font-family: var(--edu-script-faces), Georgia, "Times New Roman", serif; font-style: italic; font-size: 0.84rem; line-height: 1.6; }
+
+/* --- uses, kin, cautions, sources --------------------------------------------- */
+.mg-use-list,
+.mg-link-list,
+.mg-caution-list,
+.mg-source-list { max-width: 52rem; margin: 0 auto; padding: 0; }
+.mg-use-list { list-style: none; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 22rem), 1fr)); gap: 1rem; max-width: 62rem; }
+.mg-use-list li { padding: 1.1rem 1.2rem; border: 1px solid rgba(179, 139, 70, 0.22); background: rgba(16, 13, 10, 0.8); }
+.mg-use-list h3 { margin: 0 0 0.45rem; color: #ecd9ae; font-size: 0.98rem; line-height: 1.4; letter-spacing: 0.04em; }
+.mg-use-list p { margin: 0; color: rgba(222, 212, 196, 0.72); font-family: var(--edu-script-faces), Georgia, "Times New Roman", serif; font-size: 0.93rem; line-height: 1.7; }
+.mg-link-list { list-style: none; display: grid; gap: 0; }
+.mg-link-list li { display: grid; grid-template-columns: minmax(9rem, 14rem) 1fr; gap: 0.4rem 1.6rem; padding: 0.9rem 0.3rem; border-top: 1px solid rgba(179, 139, 70, 0.16); }
+.mg-link-list li:last-child { border-bottom: 1px solid rgba(179, 139, 70, 0.16); }
+.mg-link-list a { color: #ecd9ae; letter-spacing: 0.06em; text-decoration: none; }
+.mg-link-list a:hover { color: #fff3d6; }
+.mg-link-list p { margin: 0; color: rgba(222, 212, 196, 0.72); font-family: var(--edu-script-faces), Georgia, "Times New Roman", serif; font-size: 0.94rem; line-height: 1.7; }
+.mg-caution-list { list-style: none; display: grid; gap: 0.7rem; }
+.mg-caution-list li {
+  position: relative;
+  padding: 0.2rem 0 0.2rem 1.6rem;
+  color: rgba(232, 224, 208, 0.8);
+  font-family: var(--edu-script-faces), Georgia, "Times New Roman", serif;
+  font-size: 0.97rem;
+  line-height: 1.75;
+}
+.mg-caution-list li::before {
+  content: "";
+  position: absolute;
+  left: 0.2rem; top: 0.72rem;
+  width: 0.45rem; height: 0.45rem;
+  transform: rotate(45deg);
+  border: 1px solid rgba(209, 173, 104, 0.7);
+}
+.mg-source-list { counter-reset: src; list-style: none; display: grid; gap: 0; }
+.mg-source-list li {
+  counter-increment: src;
+  display: grid;
+  grid-template-columns: 2rem 1fr auto;
+  gap: 0.2rem 1rem;
+  align-items: baseline;
+  padding: 0.65rem 0.3rem;
+  border-top: 1px solid rgba(179, 139, 70, 0.13);
+  color: rgba(222, 212, 196, 0.78);
+  font-family: var(--edu-script-faces), Georgia, "Times New Roman", serif;
+  font-size: 0.92rem;
+  line-height: 1.6;
+}
+.mg-source-list li::before { content: counter(src); color: rgba(209, 173, 104, 0.55); font-size: 0.78rem; font-variant-numeric: tabular-nums; }
+.mg-source-list a {
+  color: rgba(209, 173, 104, 0.85);
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+  border-bottom: 1px solid rgba(209, 173, 104, 0.3);
+}
+.mg-source-list a:hover { color: #ecd9ae; border-color: #ecd9ae; }
+
+/* --- in their words ------------------------------------------------------------ */
+.mg-quote-list { display: grid; gap: 1.2rem; max-width: 52rem; margin: 0 auto; }
+.mg-quote {
+  margin: 0;
+  padding: clamp(1.2rem, 3vw, 1.8rem) clamp(1.2rem, 3vw, 2rem);
+  border: 1px solid rgba(179, 139, 70, 0.25);
+  background: rgba(16, 13, 10, 0.82);
+}
+.mg-quote blockquote { margin: 0; }
+.mg-quote blockquote p {
+  margin: 0;
+  color: rgba(240, 233, 218, 0.92);
+  font-family: var(--edu-script-faces), Georgia, "Times New Roman", serif;
+  font-size: 1.06rem;
+  line-height: 1.7;
+}
+.mg-quote-original p { font-style: italic; color: rgba(236, 217, 174, 0.92); }
+.mg-quote-paraphrase {
+  margin: 0.8rem 0 0;
+  padding-left: 0.9rem;
+  border-left: 1px solid rgba(209, 173, 104, 0.35);
+  color: rgba(232, 224, 208, 0.82);
+  font-family: var(--edu-script-faces), Georgia, "Times New Roman", serif;
+  font-size: 0.98rem;
+  line-height: 1.7;
+}
+.mg-quote-paraphrase span,
+.mg-quote figcaption cite {
+  display: block;
+  margin-bottom: 0.2rem;
+  color: rgba(209, 173, 104, 0.72);
+  font-family: "Cinzel", Georgia, serif;
+  font-style: normal;
+  font-size: 0.68rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+.mg-quote figcaption { margin-top: 1rem; padding-top: 0.75rem; border-top: 1px solid rgba(179, 139, 70, 0.18); display: grid; gap: 0.3rem; }
+.mg-quote figcaption cite { margin: 0; letter-spacing: 0.1em; text-transform: none; font-size: 0.86rem; color: rgba(236, 217, 174, 0.85); }
+.mg-quote-translation,
+.mg-quote-note { color: rgba(222, 212, 196, 0.62); font-family: var(--edu-script-faces), Georgia, "Times New Roman", serif; font-size: 0.86rem; line-height: 1.6; }
+.mg-quote-note { font-style: italic; }
+
+/* --- a page still being written ------------------------------------------------- */
+.mg-stub-panel {
+  display: flex;
+  gap: 1.3rem;
+  align-items: flex-start;
+  max-width: 46rem;
+  margin: 0 auto;
+  padding: 1.4rem 1.6rem;
+  border: 1px solid rgba(209, 173, 104, 0.32);
+  outline: 1px solid rgba(209, 173, 104, 0.12);
+  outline-offset: 4px;
+  background: linear-gradient(135deg, rgba(28, 22, 15, 0.92), rgba(14, 11, 9, 0.95));
+}
+.mg-stub-panel h2 { margin: 0.15rem 0 0.5rem; color: #ecd9ae; font-size: 1.25rem; line-height: 1.3; }
+.mg-stub-panel p { margin: 0; color: rgba(232, 224, 208, 0.8); font-family: var(--edu-script-faces), Georgia, "Times New Roman", serif; line-height: 1.75; }
+
+/* --- the way on ------------------------------------------------------------------- */
+.mg-entry-nav a { display: inline-flex; align-items: center; gap: 0.45rem; }
+.mg-entry-nav .mg-nav-sign { color: #d1ad68; }
+/* a drawn door sign is held to the wing's floor for ring-letters (28 px), and
+   lets the chip's padding take the extra height, so the chips keep one size;
+   an alphabet's signScale enlarges the drawing, not its box */
+.mg-entry-nav .mg-glyph.mg-nav-sign:not(.is-figure) { width: 1.75em; height: 1.75em; margin-block: -0.45em; transform: scale(var(--mg-scale, 1)); }
+.mg-entry-nav .mg-nav-home { border-color: rgba(209, 173, 104, 0.6); color: #ecd9ae; }
+
+/* --- the portal --------------------------------------------------------------------- */
+.mg-group { margin-top: 2.6rem; }
+.mg-group:first-of-type { margin-top: 0; }
+.mg-group.is-compact { margin-top: 1.9rem; }
+.mg-group-head {
+  margin: 0 0 1.1rem;
+  padding-bottom: 0.6rem;
+  border-bottom: 1px solid rgba(179, 139, 70, 0.22);
+}
+.mg-group-head h3,
+.mg-group-head h4 { margin: 0; color: #ecd9ae; font-size: 1.05rem; letter-spacing: 0.12em; text-transform: uppercase; }
+.mg-group.is-compact .mg-group-head { margin-bottom: 0.9rem; padding-bottom: 0.45rem; border-bottom-color: rgba(179, 139, 70, 0.16); }
+.mg-group.is-compact .mg-group-head h4 { font-size: 0.86rem; letter-spacing: 0.14em; color: rgba(236, 217, 174, 0.9); }
+.mg-group-head p { margin: 0.3rem 0 0; color: rgba(222, 212, 196, 0.66); font-family: var(--edu-script-faces), Georgia, "Times New Roman", serif; font-style: italic; font-size: 0.92rem; }
+/* the alphabets still in preparation, after those open now */
+.mg-rest { margin-top: 3.4rem; }
+.mg-rest-head {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 0 0 0.4rem;
+}
+.mg-rest-head::before,
+.mg-rest-head::after { content: ""; flex: 1; height: 1px; background: rgba(179, 139, 70, 0.3); }
+.mg-rest-head h3 { margin: 0; color: rgba(209, 173, 104, 0.9); font-size: 0.8rem; letter-spacing: 0.24em; text-transform: uppercase; }
+.mg-door-cell { display: flex; }
+.mg-door { width: 100%; }
+.mg-door-sign { display: flex; align-items: center; justify-content: center; min-height: 3.2rem; }
+/* every door's sign keeps one box, so the names below line up across a row;
+   an alphabet's signScale enlarges the drawing inside it (overflow is visible) */
+.mg-door-sign .mg-glyph:not(.is-figure) { width: 1em; height: 1em; transform: scale(var(--mg-scale, 1)); }
+.mg-door-sign .mg-unstruck { width: 2.6rem; height: 2.6rem; vertical-align: middle; }
+.mg-door.is-pending .edu-hall-glyph { text-shadow: none; }
+.mg-door-names { font-family: var(--edu-script-faces), Georgia, "Times New Roman", serif; font-size: 0.95rem; }
+.mg-door-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  margin-top: 0.2rem;
+  padding: 0.18rem 0.6rem;
+  border: 1px dashed rgba(209, 173, 104, 0.45);
+  border-radius: 999px;
+  color: rgba(222, 212, 196, 0.72);
+  font-size: 0.64rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+.mg-door:hover .mg-unstruck { border-color: rgba(209, 173, 104, 0.75); }
+.mg-door:hover .mg-unstruck::before { border-color: rgba(236, 217, 174, 0.8); }
+
+/* the wing's full doors keep one width, however few share a row; the compact
+   doors (the Scriptorium portal's row, and the wing's alphabets in
+   preparation) are smaller */
+.mg-door-grid:not(.is-compact) { grid-template-columns: repeat(auto-fill, minmax(min(100%, 230px), 1fr)); }
+/* the doors open now: a centred row of wider cards, however few */
+.mg-open .mg-door-grid { grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 310px)); justify-content: center; }
+.mg-door-grid.is-compact { grid-template-columns: repeat(auto-fill, minmax(min(100%, 124px), 1fr)); gap: 0.8rem; }
+.mg-door.is-compact { padding: 1.3rem 0.8rem 1.1rem; gap: 0.4rem; }
+.mg-door.is-compact .edu-hall-glyph { font-size: 2.3rem; }
+.mg-door.is-compact .mg-door-sign { min-height: 2.4rem; }
+.mg-door.is-compact .mg-door-sign .mg-unstruck { width: 1.9rem; height: 1.9rem; }
+/* a door's name keeps the hall card's look at whatever rank the page's outline
+   gives it (h3 on the Scriptorium portal, h4 and h5 on the wing's) */
+.mg-door .mg-door-title { margin: 0.35em 0 0; font-family: "Cinzel", Georgia, "Times New Roman", serif; font-weight: 500; line-height: 1.12; color: #f4f0e7; letter-spacing: 0.14em; text-transform: uppercase; font-size: 1rem; }
+.mg-door.is-compact .mg-door-title { font-size: 0.8rem; letter-spacing: 0.1em; line-height: 1.35; }
+.mg-door-legend {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7rem;
+  max-width: 46rem;
+  margin: 1.2rem auto 0;
+  color: rgba(222, 212, 196, 0.6);
+  font-family: var(--edu-script-faces), Georgia, "Times New Roman", serif;
+  font-style: italic;
+  font-size: 0.92rem;
+  line-height: 1.6;
+  text-align: left;
+}
+.mg-door-legend .mg-unstruck { width: 1.5rem; height: 1.5rem; flex-shrink: 0; }
+/* On a phone a compact door is a row — its seal or sign beside its name — and
+   the doors stand one under another, so a group of five never ends in a door
+   on its own. */
+@media (max-width: 640px) {
+  .mg-door-grid.is-compact { grid-template-columns: minmax(0, 1fr); gap: 0.45rem; }
+  .mg-door.is-compact { flex-direction: row; justify-content: flex-start; gap: 0.95rem; padding: 0.65rem 1rem; text-align: left; }
+  .mg-door.is-compact .mg-door-sign { flex: 0 0 2rem; min-height: 2rem; font-size: 1.75rem; }
+  .mg-door.is-compact .mg-door-sign .mg-unstruck { width: 1.55rem; height: 1.55rem; }
+  .mg-door.is-compact .mg-door-title { margin: 0; font-size: 0.82rem; }
+  .mg-door.is-compact:hover { transform: none; }
+}
+
+/* the wing's doorway on the Scriptorium portal */
+.edu-magic-ways { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.8rem; margin-top: 1.6rem; }
+.edu-magic-ways a {
+  border: 1px solid rgba(179, 139, 70, 0.4);
+  padding: 0.65rem 1.3rem;
+  color: rgba(236, 217, 174, 0.9);
+  font-size: 0.8rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  transition: border-color 180ms ease, color 180ms ease, background 180ms ease;
+}
+.edu-magic-ways a:first-child { border-color: rgba(209, 173, 104, 0.75); background: rgba(179, 139, 70, 0.12); }
+.edu-magic-ways a:hover { border-color: #ecd9ae; color: #fff3d6; }
+
+.mg-tool-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); gap: 1.2rem; max-width: 62rem; margin: 0 auto; }
+.mg-tool {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  padding: 1.6rem 1.6rem 1.4rem;
+  border: 1px solid rgba(179, 139, 70, 0.32);
+  background: linear-gradient(180deg, rgba(24, 20, 14, 0.85), rgba(12, 10, 8, 0.9));
+  transition: transform 240ms ease, border-color 240ms ease, box-shadow 240ms ease;
+}
+.mg-tool:hover { transform: translateY(-3px); border-color: rgba(209, 173, 104, 0.6); box-shadow: 0 14px 34px rgba(0, 0, 0, 0.45); }
+.mg-tool-kicker { color: rgba(209, 173, 104, 0.8); font-size: 0.7rem; letter-spacing: 0.2em; text-transform: uppercase; }
+.mg-tool-title { color: #f4f0e7; font-size: 1.2rem; letter-spacing: 0.06em; }
+.mg-tool-line { color: rgba(222, 212, 196, 0.72); font-family: var(--edu-script-faces), Georgia, "Times New Roman", serif; font-size: 0.95rem; line-height: 1.65; }
+.mg-tool-enter { margin-top: auto; padding-top: 0.6rem; color: rgba(209, 173, 104, 0.8); font-size: 0.78rem; letter-spacing: 0.18em; text-transform: uppercase; }
+.mg-page-grid { grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 25rem)); justify-content: center; }
+.mg-page-card h3 a { color: inherit; text-decoration: none; border-bottom: 1px solid rgba(209, 173, 104, 0.3); }
+.mg-page-card h3 a:hover { color: #fff3d6; }
+.mg-page-card .mg-door-status { align-self: flex-start; margin-top: 0.8rem; }
+
+/* --- the alphabets compared ---------------------------------------------------- */
+.mg-compare-waiting a { color: #ecd9ae; border-bottom: 1px solid rgba(209, 173, 104, 0.35); text-decoration: none; }
+.mg-compare-waiting a:hover { color: #fff3d6; border-color: #ecd9ae; }
+.mg-compare-waiting {
+  max-width: 46rem;
+  margin: 0 auto 1.2rem;
+  padding-left: 0.9rem;
+  border-left: 1px dashed rgba(209, 173, 104, 0.5);
+  color: rgba(222, 212, 196, 0.72);
+  font-family: var(--edu-script-faces), Georgia, "Times New Roman", serif;
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+.mg-compare-table { min-width: 40rem; }
+.mg-compare-table tbody tr { cursor: default; }
+/* every column of the table is pending: the table keeps only its real
+   columns' width, centred, and the band beside them */
+.mg-compare-scroll.is-all-pending { width: fit-content; max-width: 100%; margin-inline: auto; }
+.mg-compare-table.is-all-pending { width: auto; min-width: 0; margin-inline: auto; }
+/* (the 1% widths that keep the key columns narrow in a full-width table would
+   stretch an auto-width one to the container, so they are dropped here) */
+.mg-compare-table.is-all-pending .mg-cmp-key,
+.mg-compare-table.is-all-pending .mg-cmp-anc { width: auto; }
+.mg-compare-table.is-all-pending .edu-cog-num { padding-inline: 0.9rem; }
+.mg-compare-table th.is-pending {
+  width: 15rem;
+  min-width: 15rem;
+  white-space: normal;
+  color: rgba(209, 173, 104, 0.8);
+  border-left: 1px dashed rgba(209, 173, 104, 0.3);
+  border-right: 1px dashed rgba(209, 173, 104, 0.3);
+}
+.mg-cmp-th-note {
+  display: block;
+  margin-bottom: 0.3rem;
+  color: rgba(222, 212, 196, 0.68);
+  font-size: 0.68rem;
+  letter-spacing: 0.16em;
+}
+.mg-cmp-th-names { display: block; line-height: 1.7; letter-spacing: 0.12em; }
+.mg-cmp-th-names a { color: rgba(209, 173, 104, 0.9); border-bottom: 1px solid rgba(209, 173, 104, 0.3); }
+.mg-cmp-th-names a:hover { color: #ecd9ae; border-color: #ecd9ae; }
+/* the key column takes only the width it needs; the signs share the rest */
+.mg-compare-table .mg-cmp-key { width: 1%; text-align: left; white-space: nowrap; }
+.mg-compare-table tbody th.mg-cmp-key {
+  position: static;
+  padding: 0.45rem 0.9rem 0.45rem 0.7rem;
+  border-bottom: 1px solid rgba(179, 139, 70, 0.12);
+  background: rgba(23, 19, 14, 0.55);
+  font-size: inherit;
+  font-weight: 400;
+  letter-spacing: normal;
+  text-transform: none;
+}
+/* the ancestor: a plain table cell holding a flex row (a flex cell would
+   leave the table and break the row's rules) */
+.mg-compare-table .mg-cmp-anc { width: 1%; text-align: left; white-space: nowrap; padding-right: 1rem; }
+.mg-cmp-anc-in { display: inline-flex; align-items: center; gap: 0.6rem; }
+.mg-cmp-key a { display: inline-flex; align-items: baseline; gap: 0.6rem; color: inherit; text-decoration: none; }
+.mg-cmp-key-glyph { font-size: 1.35rem; color: #f0e9da; min-width: 1.4rem; }
+.mg-cmp-key-name { color: #ecd9ae; font-style: italic; font-family: var(--edu-script-faces), Georgia, "Times New Roman", serif; font-size: 0.9rem; }
+.mg-cmp-key a:hover .mg-cmp-key-name { color: #fff3d6; }
+.mg-cmp-final td, .mg-cmp-final th { background: rgba(10, 8, 6, 0.6); }
+.mg-cmp-final .mg-cmp-key-glyph { font-size: 1.15rem; color: rgba(240, 233, 218, 0.8); }
+.mg-cmp-final .mg-cmp-key-name { font-size: 0.8rem; color: rgba(236, 217, 174, 0.7); }
+.mg-cmp-key-value { display: none; }
+/* On a phone the table is wider than the screen: the Value and Ancestor
+   columns give way (the value rides in the key cell), the Hebrew key column
+   stays at the left edge while the signs scroll past it, and the table
+   scrolls inside its own frame, so its header row stays in view above them. */
+@media (max-width: 700px) {
+  .mg-compare-scroll:not(.is-all-pending) { max-height: min(78vh, 46rem); overflow: auto; overscroll-behavior-x: contain; }
+  .mg-compare-table:not(.is-all-pending) { min-width: 0; }
+  .mg-compare-table:not(.is-all-pending) .edu-cog-num,
+  .mg-compare-table:not(.is-all-pending) .mg-cmp-anc { display: none; }
+  .mg-compare-table:not(.is-all-pending) .mg-cmp-key {
+    position: sticky;
+    left: 0;
+    z-index: 1;
+    background: #110e0b;
+    box-shadow: inset -1px 0 0 rgba(179, 139, 70, 0.4), 6px 0 8px -6px rgba(0, 0, 0, 0.8);
+  }
+  .mg-compare-table:not(.is-all-pending) thead .mg-cmp-key { z-index: 2; background: #17130e; }
+  .mg-compare-table:not(.is-all-pending) tbody th.mg-cmp-key { position: sticky; padding-inline: 0.6rem 0.7rem; }
+  .mg-compare-table:not(.is-all-pending) .mg-cmp-final th.mg-cmp-key { background: #0c0a08; }
+  .mg-compare-table:not(.is-all-pending) .mg-cmp-key-value {
+    display: block;
+    margin-top: 0.05rem;
+    color: rgba(209, 173, 104, 0.85);
+    font-size: 0.75rem;
+    letter-spacing: 0.06em;
+  }
+  .mg-compare-table:not(.is-all-pending) .mg-cmp-key a { gap: 0.45rem; }
+}
+.mg-cmp-cell a { color: #f0e9da; font-size: 1.35rem; text-decoration: none; }
+/* a letter with no sign: the dash must still be readable (the halls' quieter
+   dash is left as it is) */
+.mg-cmp-cell .edu-cog-gap { color: rgba(209, 173, 104, 0.8); }
+.mg-cmp-cell a:hover { color: #d1ad68; }
+/* the alphabets whose forms are still being traced: one band beside the
+   rows, under one header that names them, with one sentence — not a column
+   of empty boxes each */
+.mg-compare-table td.mg-cmp-pending {
+  width: 15rem;
+  vertical-align: top;
+  padding: 1.6rem 1.2rem;
+  border-left: 1px dashed rgba(209, 173, 104, 0.3);
+  border-right: 1px dashed rgba(209, 173, 104, 0.3);
+  background: radial-gradient(ellipse at 50% 8rem, rgba(209, 173, 104, 0.06), transparent 18rem), rgba(16, 13, 10, 0.55);
+  cursor: default;
+}
+.mg-cmp-band {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.9rem;
+  color: rgba(222, 212, 196, 0.78);
+  font-family: var(--edu-script-faces), Georgia, "Times New Roman", serif;
+  font-style: italic;
+  font-size: 0.95rem;
+  line-height: 1.65;
+  text-align: center;
+  white-space: normal;
+}
+.mg-cmp-band .mg-unstruck { width: 2.6rem; height: 2.6rem; }
+/* On a phone the band would push the table's real columns off the screen; it
+   is dropped there, and the paragraph above the table, which names and links
+   the same alphabets and says the same of them, stands for it. */
+@media (max-width: 640px) {
+  .mg-compare-table th.is-pending,
+  .mg-compare-table td.mg-cmp-pending { display: none; }
+}
+
+/* --- the transliterator -------------------------------------------------------- */
+.edu-filter.is-pending { opacity: 0.55; cursor: not-allowed; border-style: dashed; }
+.edu-filter.is-pending:hover { color: rgba(222, 212, 196, 0.75); border-color: rgba(179, 139, 70, 0.35); }
+.mg-translit-body {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr);
+  grid-template-areas: "input conventions" "out conventions";
+  /* the input row keeps its own height; the long conventions panel spills
+     into the output's row, not between the input and what it writes */
+  grid-template-rows: auto 1fr;
+  align-items: start;
+  gap: 1.4rem 2.4rem;
+}
+.mg-translit-body > .edu-reckoner-body { grid-area: input; max-width: none; margin: 0; }
+.mg-translit-out { grid-area: out; min-height: 6rem; text-align: center; }
+.mg-conventions { grid-area: conventions; }
+.mg-translit-hint {
+  margin: 0.6rem 0 0;
+  color: rgba(222, 212, 196, 0.55);
+  font-family: var(--edu-script-faces), Georgia, "Times New Roman", serif;
+  font-style: italic;
+  font-size: 0.88rem;
+  text-align: center;
+}
+.mg-writ {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.2em 0.9em;
+  padding: 1.1rem 1rem;
+  border-top: 1px solid rgba(179, 139, 70, 0.25);
+  border-bottom: 1px solid rgba(179, 139, 70, 0.25);
+  /* an alphabet's signScale enlarges its signs; on a phone the floor is
+     divided by it, so a scaled sign takes the same width as any other and a
+     word of eight letters still fits on a line */
+  font-size: clamp(calc(2.2rem / var(--mg-scale, 1)), 5vw, 3rem);
+  line-height: 1.25;
+  color: #d1ad68;
+  text-shadow: 0 0 26px rgba(209, 173, 104, 0.28);
+  overflow-wrap: anywhere;
+}
+.mg-writ-word { display: inline-flex; flex-wrap: wrap; justify-content: center; gap: 0.06em; }
+.mg-writ .mg-glyph { filter: drop-shadow(0 0 12px rgba(209, 173, 104, 0.3)); }
+/* a long run with no spaces (a pasted address, a German compound) breaks
+   where it must, so it never widens the column past the screen */
+.mg-writ-plain,
+.mg-writ-text { margin: 0.8rem 0 0; color: rgba(222, 212, 196, 0.8); overflow-wrap: anywhere; }
+.mg-translit-report p { overflow-wrap: anywhere; }
+.mg-writ-plain span,
+.mg-writ-text > span,
+.mg-translit-report span {
+  margin-right: 0.5rem;
+  color: rgba(209, 173, 104, 0.72);
+  font-size: 0.68rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+.mg-writ-plain em { font-family: var(--edu-script-faces), Georgia, "Times New Roman", serif; font-size: 1.05rem; }
+.mg-writ-text bdi { font-size: 1.2rem; color: #ecd9ae; }
+.mg-copy {
+  margin-left: 0.7rem;
+  padding: 0.18rem 0.6rem;
+  border: 1px solid rgba(179, 139, 70, 0.4);
+  background: transparent;
+  color: rgba(236, 217, 174, 0.85);
+  font-size: 0.66rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.mg-copy:hover { border-color: #ecd9ae; }
+.mg-breakdown { margin-top: 1.1rem; }
+.mg-breakdown .edu-reckoner-pair .edu-glyph { font-size: 1.5rem; }
+.mg-translit-report { margin-top: 0.9rem; }
+.mg-translit-report p { margin: 0.35rem 0 0; color: rgba(222, 212, 196, 0.72); font-family: var(--edu-script-faces), Georgia, "Times New Roman", serif; font-size: 0.9rem; }
+.mg-conventions {
+  padding: 1.3rem 1.4rem;
+  border: 1px solid rgba(209, 173, 104, 0.3);
+  background: linear-gradient(180deg, rgba(24, 19, 14, 0.9), rgba(13, 11, 9, 0.93));
+}
+.mg-conventions h3 { margin: 0 0 0.6rem; color: #ecd9ae; font-size: 1rem; letter-spacing: 0.08em; line-height: 1.4; }
+.mg-conventions > p { margin: 0 0 0.9rem; color: rgba(232, 224, 208, 0.8); font-family: var(--edu-script-faces), Georgia, "Times New Roman", serif; font-size: 0.93rem; line-height: 1.7; }
+.mg-conventions .mg-conventions-note { color: rgba(222, 212, 196, 0.6); font-style: italic; font-size: 0.88rem; }
+.mg-conventions .mg-conventions-note a { color: #ecd9ae; border-bottom: 1px solid rgba(209, 173, 104, 0.35); font-style: normal; }
+.mg-fold-table { width: 100%; border-collapse: collapse; margin: 0 0 0.9rem; font-size: 0.9rem; }
+.mg-fold-table caption {
+  caption-side: top;
+  text-align: left;
+  padding-bottom: 0.4rem;
+  color: rgba(209, 173, 104, 0.72);
+  font-size: 0.66rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+.mg-fold-table th { color: rgba(209, 173, 104, 0.6); font-weight: 400; font-size: 0.62rem; letter-spacing: 0.14em; text-transform: uppercase; text-align: left; padding: 0.3rem 0.4rem; border-bottom: 1px solid rgba(179, 139, 70, 0.25); }
+.mg-fold-table td { padding: 0.4rem; border-bottom: 1px solid rgba(179, 139, 70, 0.12); color: rgba(222, 212, 196, 0.72); font-family: var(--edu-script-faces), Georgia, "Times New Roman", serif; vertical-align: baseline; }
+.mg-fold-from { font-style: italic; color: #ecd9ae !important; white-space: nowrap; }
+.mg-fold-to { white-space: nowrap; }
+.mg-fold-to .edu-glyph { font-size: 1.25rem; color: #ecd9ae; margin-right: 0.4rem; }
+/* a traced sign (key-grid size, by the rule above) sits on the row's line by
+   its middle, not by the foot of its box, so it does not ride above the text */
+.mg-fold-to .mg-glyph:not(.is-figure) { vertical-align: middle; }
+.mg-fold-to em { color: rgba(209, 173, 104, 0.75); }
+.mg-key-label { margin: 0.4rem 0 0.5rem !important; color: rgba(209, 173, 104, 0.72) !important; font-family: "Cinzel", Georgia, serif !important; font-size: 0.66rem !important; letter-spacing: 0.18em; text-transform: uppercase; }
+.mg-key-grid { list-style: none; margin: 0 0 0.9rem; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(2.7rem, 1fr)); gap: 0.35rem; }
+.mg-key-grid li { display: flex; flex-direction: column; align-items: center; padding: 0.3rem 0.2rem; border: 1px solid rgba(179, 139, 70, 0.18); }
+.mg-key-sign { font-size: 1.3rem; color: #ecd9ae; line-height: 1.3; }
+.mg-key-letter { font-family: var(--edu-script-faces), Georgia, "Times New Roman", serif; font-style: italic; font-size: 0.78rem; color: rgba(209, 173, 104, 0.75); }
+
+/* --- the reading voice, in the wing ------------------------------------------------ */
+.edu-page .mg-hero .edu-hero-sub,
+.edu-page .mg-portal .edu-hall-blurb { font-family: var(--edu-script-faces), Georgia, "Times New Roman", serif; }
+
+/* --- small screens --------------------------------------------------------------------- */
+@media (max-width: 900px) {
+  .mg-translit-body { grid-template-columns: minmax(0, 1fr); grid-template-rows: auto; grid-template-areas: "input" "out" "conventions"; }
+}
+@media (max-width: 720px) {
+  .mg-drawn .ch-kv { grid-template-columns: 1fr; }
+  .mg-drawn .ch-kv > span { margin: 0 0 0.2rem; }
+  .mg-link-list li { grid-template-columns: 1fr; }
+  .mg-witness dl > div { grid-template-columns: 1fr; gap: 0.15rem; }
+}
+@media (max-width: 640px) {
+  /* a register of bare letters packs into a grid, the noted letters across
+     it; the order still runs A, B, C … row by row */
+  .mg-register.is-bare {
+    columns: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(4.5rem, 1fr));
+    column-gap: 0.6rem;
+  }
+  .mg-register.is-bare .mg-reg.has-note { grid-column: 1 / -1; }
+  .mg-register.is-bare .mg-reg:not(.has-note) { grid-template-columns: 1.6rem minmax(0, 1fr); }
+  .mg-pending-notice, .mg-stub-panel { flex-direction: column; align-items: flex-start; gap: 0.8rem; padding: 1rem 1.1rem; }
+  .mg-pending-notice { outline-offset: 3px; }
+  .mg-register { padding: 0.3rem 0.9rem 0.7rem; }
+  .mg-register-head { padding: 0.7rem 0.9rem; }
+  .mg-source-list li { grid-template-columns: 1.6rem 1fr; }
+  .mg-source-list a { grid-column: 2; justify-self: start; white-space: normal; overflow-wrap: anywhere; }
+  .mg-group-head { display: block; }
+  .mg-group-head p { margin-top: 0.3rem; }
+  .mg-status { font-size: 0.64rem; letter-spacing: 0.14em; }
+}
+
+/* --- reduced motion ------------------------------------------------------------------------ */
+@media (prefers-reduced-motion: reduce) {
+  .mg-tool, .mg-door, .mg-reg, .edu-magic-ways a { transition: none; }
+  .mg-tool:hover, .mg-door:hover { transform: none; }
+}
+
+/* --- print -------------------------------------------------------------------------------- */
+@media print {
+  .mg-copy, .mg-tool-grid, .mg-entry-nav, .edu-filter-row { display: none !important; }
+  .mg-unstruck, .mg-unstruck::before { border-color: #999 !important; }
+  .mg-pending-notice, .mg-stub-panel, .mg-claim, .mg-quote, .mg-witness, .mg-drawn { border: 1px solid #bbb !important; outline: none !important; break-inside: avoid; }
+  .mg-compare-table td.mg-cmp-pending { background: none !important; }
+}
+
+/* The one line a grid of letters announces when its selection changes
+   (Letters.jsx): read out, not shown. */
+.mg-live {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
