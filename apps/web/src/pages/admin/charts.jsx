@@ -23,12 +23,19 @@ export function useWidth(initial = 640) {
     return [setEl, width, el];
 }
 
-/** Round axis ticks: 0 … a clean maximum in `count` steps. */
-export function niceTicks(max, count = 4) {
+/**
+ * Round axis ticks: 0 … a clean maximum in about `count` steps. The charts
+ * plot counts, so by default every step is a whole number of at least 1: a
+ * fractional step (0.5, 2.5) would be labelled by rounding, and a peak of 2
+ * would read 0, 1, 1, 2, 2.
+ */
+export function niceTicks(max, count = 4, { integer = true } = {}) {
     if (!(max > 0)) return { max: 1, ticks: [0, 1] };
     const raw = max / count;
     const mag = 10 ** Math.floor(Math.log10(raw));
-    const step = [1, 2, 2.5, 5, 10].map((m) => m * mag).find((s) => s >= raw) || 10 * mag;
+    const whole = (s) => Math.abs(s - Math.round(s)) < 1e-9;
+    const steps = [1, 2, 2.5, 5, 10].map((m) => m * mag).filter((s) => !integer || (s >= 1 && whole(s)));
+    const step = steps.find((s) => s >= raw) || (integer ? Math.max(1, 10 * mag) : 10 * mag);
     const top = Math.ceil(max / step) * step;
     const ticks = [];
     for (let v = 0; v <= top + step / 2; v += step) ticks.push(Math.round(v * 1000) / 1000);
@@ -44,6 +51,18 @@ function linePath(xs, ys) {
  * previous period (aligned bucket for bucket) as a thin grey line. A
  * crosshair follows the pointer or the arrow keys and reads both values.
  */
+// Roughly how long a bucket lasts. A local day around a clock change is an
+// hour off, which only moves the moment a bucket stops counting as unfinished.
+const BUCKET_S = { hour: 3600, day: 86400, week: 7 * 86400, month: 31 * 86400 };
+
+/** Is the last bucket still filling (today, this hour)? Its count is partial,
+ *  so a chart must not draw it as a fall. Points carry their bucket's start
+ *  `ts` in seconds. */
+export function lastIsPartial(points, granularity, nowS = Date.now() / 1000) {
+    const last = points && points.length ? points[points.length - 1] : null;
+    return !!last && Number.isFinite(Number(last.ts)) && nowS < Number(last.ts) + (BUCKET_S[granularity] ?? 86400);
+}
+
 export function TimeChart({
     points, previous, valueKey, name, prevName = 'Previous period', granularity = 'day',
     showPrevious = true, height = 220, format = int, caption, tableLabel,
@@ -55,6 +74,10 @@ export function TimeChart({
     const descId = useId();
     const n = points ? points.length : 0;
     const prev = showPrevious && previous && previous.length ? previous : null;
+    // The current hour or day is still filling: its segment is drawn dashed
+    // and labelled "so far" rather than read as a drop.
+    const partial = n > 1 && lastIsPartial(points, granularity);
+    const soFar = partial ? ` (${granularity === 'hour' ? 'this hour' : granularity === 'day' ? 'today' : 'this ' + granularity} so far)` : '';
 
     const geo = useMemo(() => {
         const vals = (points || []).map((p) => Number(p[valueKey]) || 0);
@@ -90,8 +113,9 @@ export function TimeChart({
         const total = geo.vals.reduce((a, b) => a + b, 0);
         const ptotal = geo.pvals.reduce((a, b) => a + b, 0);
         return `${name} per ${granularity}, ${lab(0)} to ${lab(n - 1)}. Highest ${format(geo.vals[hi])} (${lab(hi)}), lowest ${format(geo.vals[lo])} (${lab(lo)}), sum of ${granularity}s ${format(total)}`
-            + (prev ? `; previous period ${format(ptotal)}.` : '.');
-    }, [geo, n, name, points, granularity, format, prev]);
+            + (prev ? `; previous period ${format(ptotal)}.` : '.')
+            + (partial ? ` The last ${granularity} is not over yet, so its figure is partial.` : '');
+    }, [geo, n, name, points, granularity, format, prev, partial]);
 
     if (!n) {
         return <p className="adm-empty">No data in this range.</p>;
@@ -119,17 +143,18 @@ export function TimeChart({
     };
 
     const a = active;
-    const tipText = a === null ? '' : `${bucketLabel(points[a].label, granularity, { long: true })}: ${name} ${format(geo.vals[a])}`
+    const tipText = a === null ? '' : `${bucketLabel(points[a].label, granularity, { long: true })}${partial && a === n - 1 ? soFar : ''}: ${name} ${format(geo.vals[a])}`
         + (prev && prev[a] ? `; ${prevName.toLowerCase()} (${bucketLabel(prev[a].label, granularity, { long: true })}) ${format(geo.pvals[a])}` : '');
     const right = a !== null && geo.xs[a] > width * 0.58;
 
     return (
         <figure className="adm-chart">
             {caption && <figcaption className="adm-chart-cap">{caption}</figcaption>}
-            {prev && (
+            {(prev || partial) && (
                 <ul className="adm-legend" aria-label="Legend">
-                    <li><span className="adm-key adm-key-cur" aria-hidden="true" />{name}, this period</li>
-                    <li><span className="adm-key adm-key-prev" aria-hidden="true" />{prevName}</li>
+                    <li><span className="adm-key adm-key-cur" aria-hidden="true" />{name}{prev ? ', this period' : ''}</li>
+                    {prev && <li><span className="adm-key adm-key-prev" aria-hidden="true" />{prevName}</li>}
+                    {partial && <li><span className="adm-key adm-key-partial" aria-hidden="true" />{soFar.trim().replace(/^\(|\)$/g, '').replace(/^./, (c) => c.toUpperCase())}</li>}
                 </ul>
             )}
             <div
@@ -167,12 +192,25 @@ export function TimeChart({
                     {prev && geo.pxs.length > 1 && (
                         <path className="adm-line-prev" d={linePath(geo.pxs, geo.pys)} />
                     )}
-                    {n > 1 && (
-                        <>
-                            <path className="adm-area" d={`${linePath(geo.xs, geo.ys)}L${geo.xs[n - 1].toFixed(1)},${geo.y(0).toFixed(1)}L${geo.xs[0].toFixed(1)},${geo.y(0).toFixed(1)}Z`} />
-                            <path className="adm-line" d={linePath(geo.xs, geo.ys)} />
-                        </>
-                    )}
+                    {n > 1 && (() => {
+                        // With an unfinished last bucket the area and the solid line stop
+                        // at the last complete one; a dashed segment and an open dot carry on.
+                        const k = partial ? n - 1 : n;
+                        const xs = geo.xs.slice(0, k);
+                        const ys = geo.ys.slice(0, k);
+                        return (
+                            <>
+                                {k > 1 && <path className="adm-area" d={`${linePath(xs, ys)}L${xs[k - 1].toFixed(1)},${geo.y(0).toFixed(1)}L${xs[0].toFixed(1)},${geo.y(0).toFixed(1)}Z`} />}
+                                {k > 1 && <path className="adm-line" d={linePath(xs, ys)} />}
+                                {partial && (
+                                    <>
+                                        <path className="adm-line adm-line-partial" d={`M${geo.xs[n - 2].toFixed(1)},${geo.ys[n - 2].toFixed(1)}L${geo.xs[n - 1].toFixed(1)},${geo.ys[n - 1].toFixed(1)}`} />
+                                        <circle className="adm-dot-open" cx={geo.xs[n - 1]} cy={geo.ys[n - 1]} r={3.5} />
+                                    </>
+                                )}
+                            </>
+                        );
+                    })()}
                     {n === 1 && <circle className="adm-dot" cx={geo.xs[0]} cy={geo.ys[0]} r={4} />}
                     {a !== null && (
                         <g>
@@ -184,7 +222,7 @@ export function TimeChart({
                 </svg>
                 {a !== null && (
                     <div className="adm-tip" style={right ? { right: width - geo.xs[a] + 12 } : { left: geo.xs[a] + 12 }} aria-hidden="true">
-                        <div className="adm-tip-when">{bucketLabel(points[a].label, granularity, { long: true })}</div>
+                        <div className="adm-tip-when">{bucketLabel(points[a].label, granularity, { long: true })}{partial && a === n - 1 ? soFar : ''}</div>
                         <div className="adm-tip-row"><span className="adm-key adm-key-cur" /><strong>{format(geo.vals[a])}</strong> <span>{name}</span></div>
                         {prev && prev[a] && (
                             <div className="adm-tip-row"><span className="adm-key adm-key-prev" /><strong>{format(geo.pvals[a])}</strong> <span>{bucketLabel(prev[a].label, granularity, { long: true })}</span></div>
@@ -225,17 +263,21 @@ export function TimeChart({
 }
 
 /** A small line with the last point marked. Decorative: the number sits beside it. */
-export function Sparkline({ values, width = 96, height = 26 }) {
+/** `partial`: the last value is an unfinished bucket, drawn dashed and open. */
+export function Sparkline({ values, width = 96, height = 26, partial = false }) {
     if (!values || values.length < 2) return null;
+    const n = values.length;
     const max = Math.max(1, ...values);
-    const xs = values.map((_, i) => 2 + (i * (width - 4)) / (values.length - 1));
+    const xs = values.map((_, i) => 2 + (i * (width - 4)) / (n - 1));
     const ys = values.map((v) => height - 3 - (v / max) * (height - 6));
-    const d = linePath(xs, ys);
+    const k = partial ? n - 1 : n;
+    const d = linePath(xs.slice(0, k), ys.slice(0, k));
     return (
         <svg className="adm-spark" width={width} height={height} viewBox={`0 0 ${width} ${height}`} aria-hidden="true" focusable="false">
-            <path className="adm-area" d={`${d}L${xs[xs.length - 1]},${height}L${xs[0]},${height}Z`} />
-            <path className="adm-line adm-line-thin" d={d} />
-            <circle className="adm-dot" cx={xs[xs.length - 1]} cy={ys[ys.length - 1]} r={2.5} />
+            {k > 1 && <path className="adm-area" d={`${d}L${xs[k - 1]},${height}L${xs[0]},${height}Z`} />}
+            {k > 1 && <path className="adm-line adm-line-thin" d={d} />}
+            {partial && <path className="adm-line adm-line-thin adm-line-partial" d={`M${xs[n - 2]},${ys[n - 2]}L${xs[n - 1]},${ys[n - 1]}`} />}
+            <circle className={partial ? 'adm-dot-open' : 'adm-dot'} cx={xs[n - 1]} cy={ys[n - 1]} r={2.5} />
         </svg>
     );
 }

@@ -1,5 +1,6 @@
-import React, { useCallback, useEffect, useRef, useState } from 'react';
-import { ApiError, apiGet, useApi } from '../api';
+import React, { useEffect, useState } from 'react';
+import { ApiError, useApi } from '../api';
+import { useLive } from '../live';
 import { useNow } from '../charts';
 import { ChannelTag, CountryName, IpButton, PageButton, RankTable, SectionHead } from '../common';
 import { ago, CHANNEL_LABELS, dateTime, DEVICE_LABELS, duration, int, time } from '../format';
@@ -7,7 +8,6 @@ import { useDash } from '../state';
 import { Badge, Card, DataTable, ErrorNote, Facts, Loadable, Loading, Pager, Path, usePhone, Verdict } from '../ui';
 
 const FILTERS = ['f_ip', 'f_page', 'f_country', 'f_device', 'f_channel', 'f_source', 'f_agent'];
-const LIVE_MS = 15000;
 
 export default function Visitors() {
     const { sp } = useDash();
@@ -180,37 +180,6 @@ function VisitFilters({ f }) {
             </div>
         </form>
     );
-}
-
-/** Polls `live` every 15 s while the tab is visible; pausable. */
-function useLive(includeOwner) {
-    const [state, setState] = useState({ data: null, error: null, at: null });
-    const [paused, setPaused] = useState(false);
-    const busy = useRef(false);
-
-    const load = useCallback(async () => {
-        if (busy.current || document.visibilityState === 'hidden') return;
-        busy.current = true;
-        try {
-            const data = await apiGet('live', includeOwner ? { include_owner: 1 } : {});
-            setState({ data, error: null, at: Date.now() });
-        } catch (error) {
-            if (!(error && error.name === 'AbortError')) setState((s) => ({ ...s, error }));
-        } finally {
-            busy.current = false;
-        }
-    }, [includeOwner]);
-
-    useEffect(() => {
-        if (paused) return undefined;
-        load();
-        const t = setInterval(load, LIVE_MS);
-        const onVis = () => { if (document.visibilityState === 'visible') load(); };
-        document.addEventListener('visibilitychange', onVis);
-        return () => { clearInterval(t); document.removeEventListener('visibilitychange', onVis); };
-    }, [load, paused]);
-
-    return { ...state, paused, setPaused, reload: load };
 }
 
 function LivePanel() {

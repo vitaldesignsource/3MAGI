@@ -43,9 +43,10 @@ const ADMIN_ACTIONS = [
     'health' => 'GET',
 ];
 const ADMIN_SECTIONS = ['overview', 'pages', 'page', 'sources', 'search', 'technology'];
-const ADMIN_LOGIN_BUCKET = 'admin-login';
-const ADMIN_LOGIN_MAX = 5;
-const ADMIN_LOGIN_WINDOW = 900;
+const ADMIN_LOGIN_MAX = 5;            // failed sign-ins per network (IPv4 address, IPv6 /64)…
+const ADMIN_LOGIN_WINDOW = 900;       // …in 15 minutes
+const ADMIN_LOGIN_GLOBAL_MAX = 30;    // failed sign-ins from everyone together…
+const ADMIN_LOGIN_GLOBAL_WINDOW = 3600; // …in an hour
 const ADMIN_FAIL_MESSAGE = 'That email and password do not match.';
 
 // ------------------------------------------------------------- helpers ---
@@ -223,6 +224,63 @@ function admin_normEmail(string $e): string
     return strtolower(trim($e));
 }
 
+/** Did this request reach the server over HTTPS? X-Forwarded-Proto counts
+ *  only from a proxy on this machine or the host's private network, where a
+ *  visitor cannot be: from anyone else it is just a header they chose. */
+function admin_isHttps(): bool
+{
+    $https = strtolower((string) ($_SERVER['HTTPS'] ?? ''));
+    if ($https !== '' && $https !== 'off') {
+        return true;
+    }
+    if ((string) ($_SERVER['SERVER_PORT'] ?? '') === '443' || strtolower((string) ($_SERVER['REQUEST_SCHEME'] ?? '')) === 'https') {
+        return true;
+    }
+    $proto = strtolower(trim(explode(',', (string) ($_SERVER['HTTP_X_FORWARDED_PROTO'] ?? ''))[0]));
+    $peer = (string) ($_SERVER['REMOTE_ADDR'] ?? '');
+    $internal = filter_var($peer, FILTER_VALIDATE_IP) !== false
+        && filter_var($peer, FILTER_VALIDATE_IP, FILTER_FLAG_NO_PRIV_RANGE | FILTER_FLAG_NO_RES_RANGE) === false;
+    return $proto === 'https' && $internal;
+}
+
+/** Where the sign-in limits are counted: files of their own (not shared with
+ *  the membership endpoints' limits), outside the web root. */
+function admin_rateDir(): ?string
+{
+    $dir = sys_get_temp_dir() . '/tl-admin-rate';
+    if (!is_dir($dir) && !@mkdir($dir, 0700, true) && !is_dir($dir)) {
+        return null;
+    }
+    return $dir;
+}
+
+/** [this network's file, everyone's file], or nulls when the folder is unusable. */
+function admin_loginFiles(): array
+{
+    $dir = admin_rateDir();
+    if ($dir === null) {
+        return [null, null];
+    }
+    if (random_int(1, 20) === 1) {
+        $cutoff = time() - 2 * ADMIN_LOGIN_GLOBAL_WINDOW;
+        foreach (glob($dir . '/login-*.json') ?: [] as $old) {
+            if (@filemtime($old) < $cutoff) {
+                @unlink($old);
+            }
+        }
+    }
+    return [$dir . '/login-' . hash('sha256', ta_netKey(clientIp())) . '.json', $dir . '/login-all.json'];
+}
+
+/** For the Settings page: failed sign-ins from everyone in the last hour. */
+function admin_loginStatus(int $now): array
+{
+    [, $all] = admin_loginFiles();
+    $n = $all === null ? 0 : rateLimitCount($all, ADMIN_LOGIN_GLOBAL_WINDOW, $now);
+    return ['failures_last_hour' => $n, 'limit_per_hour' => ADMIN_LOGIN_GLOBAL_MAX, 'per_network' => ADMIN_LOGIN_MAX,
+        'per_network_window_s' => ADMIN_LOGIN_WINDOW, 'under_attack' => $n >= ADMIN_LOGIN_GLOBAL_MAX];
+}
+
 /** A hash of the same algorithm and cost as the real one, that no password
  *  matches. Verifying against it when the email is wrong makes both failures
  *  cost the same time. */
@@ -248,7 +306,20 @@ if ($method !== ADMIN_ACTIONS[$action]) {
     fail(405, 'Method not allowed.', 'method');
 }
 
+// Over plain HTTP the email, the password and the session token would cross
+// the network readable by anyone on the way (and the browser would drop the
+// Secure cookie anyway). Only localhost is exempt, for development and tests.
+if (!admin_isHttps() && !isLocalRequest()) {
+    $host = strtolower((string) ($_SERVER['HTTP_HOST'] ?? ''));
+    $url = preg_match('/^[a-z0-9.-]{1,253}$/', $host) ? 'https://' . $host . '/admin' : null;
+    respond(403, ['ok' => false, 'error' => 'The dashboard works only over HTTPS.' . ($url !== null ? " Open $url instead." : ''),
+        'code' => 'https_required', 'https_url' => $url]);
+}
+
 $missing = ta_adminMissing();
+if ($missing === []) {
+    ta_db(5000); // opened once here, so every check below shares it
+}
 
 if ($action === 'health') {
     $session = $missing === [] ? ta_adminFromCookie($now) : null;
@@ -256,7 +327,7 @@ if ($action === 'health') {
         // Signed out (or not set up): only whether setup is complete.
         respond(200, ['ok' => true, 'authenticated' => false, 'configured' => $missing === [], 'missing' => $missing]);
     }
-    respond(200, ['ok' => true] + ta_reportHealth(ta_db(5000), $now, $session));
+    respond(200, ['ok' => true] + ta_reportHealth(ta_db(5000), $now, $session) + ['login' => admin_loginStatus($now)]);
 }
 
 if ($missing !== []) {
@@ -272,9 +343,26 @@ if ($method === 'POST') {
 }
 
 if ($action === 'login') {
-    if (rateLimitExceeded(ADMIN_LOGIN_BUCKET, ADMIN_LOGIN_MAX, ADMIN_LOGIN_WINDOW)) {
+    // Every attempt takes its slot BEFORE the password is checked, in one
+    // locked step per bucket, so a burst of parallel guesses cannot all slip
+    // past the count while each is still being verified. A sign-in that
+    // succeeds gives its slots back: the buckets count failures.
+    [$netFile, $allFile] = admin_loginFiles();
+    $mine = $netFile === null ? null : rateLimitTake($netFile, ADMIN_LOGIN_MAX, ADMIN_LOGIN_WINDOW, $now);
+    if ($mine === false) {
         header('Retry-After: ' . ADMIN_LOGIN_WINDOW);
         respond(429, ['ok' => false, 'error' => 'Too many attempts. Try again in 15 minutes.', 'code' => 'locked', 'retry_after' => ADMIN_LOGIN_WINDOW]);
+    }
+    // Rotating addresses (every IPv6 /64, a proxy pool) meets a ceiling for
+    // the whole site; a signed-in browser keeps working meanwhile.
+    $all = $allFile === null ? null : rateLimitTake($allFile, ADMIN_LOGIN_GLOBAL_MAX, ADMIN_LOGIN_GLOBAL_WINDOW, $now);
+    if ($all === false) {
+        if ($mine === true) {
+            rateLimitGiveBack((string) $netFile, $now);
+        }
+        header('Retry-After: ' . ADMIN_LOGIN_GLOBAL_WINDOW);
+        respond(429, ['ok' => false, 'error' => 'Sign-in is paused: too many failed attempts from many addresses in the last hour. Try again later.',
+            'code' => 'locked_all', 'retry_after' => ADMIN_LOGIN_GLOBAL_WINDOW]);
     }
     $email = is_string($body['email'] ?? null) ? (string) $body['email'] : '';
     $password = is_string($body['password'] ?? null) ? (string) $body['password'] : '';
@@ -284,8 +372,13 @@ if ($action === 'login') {
     // Exactly one password_verify on every path, against a hash of the same cost.
     $verified = password_verify($tooLong ? '' : $password, $emailOk ? $realHash : admin_dummyHash($realHash));
     if (!$emailOk || $tooLong || $password === '' || !$verified) {
-        rateLimitRecord(ADMIN_LOGIN_BUCKET, ADMIN_LOGIN_WINDOW);
-        fail(401, ADMIN_FAIL_MESSAGE, 'bad_credentials');
+        fail(401, ADMIN_FAIL_MESSAGE, 'bad_credentials'); // the slots taken above stay: they are the failure
+    }
+    if ($mine === true) {
+        rateLimitGiveBack((string) $netFile, $now);
+    }
+    if ($all === true) {
+        rateLimitGiveBack((string) $allFile, $now);
     }
     $token = ta_adminIssue($now);
     if ($token === '') {
@@ -296,8 +389,23 @@ if ($action === 'login') {
 }
 
 if ($action === 'logout') {
+    // Signing out with a valid session ends every session, here and on any
+    // copy of the cookie (ta_adminRevokeAll). A request without one only
+    // clears this browser's cookie: a stranger cannot sign the owner out.
+    $revoked = false;
+    if (ta_adminFromCookie($now) !== null) {
+        $db = ta_db(5000);
+        if ($db !== null) {
+            try {
+                ta_adminRevokeAll($db);
+                $revoked = true;
+            } catch (Throwable) {
+                $revoked = false;
+            }
+        }
+    }
     admin_cookie('', $now - 3600);
-    respond(200, ['ok' => true]);
+    respond(200, ['ok' => true, 'revoked' => $revoked]);
 }
 
 $session = ta_adminFromCookie($now);

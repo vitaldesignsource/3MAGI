@@ -418,7 +418,9 @@ function ta_reportOverview(PDO $db, array $range, bool $owner, int $now): array
         'top_pages' => array_map(static fn($r) => ['path' => $r['path'], 'views' => (int) $r['views'], 'visitors' => (int) $r['visitors']], $pages),
         'top_sources' => array_map(static fn($r) => ta_sourceRow($r) + ['visits' => (int) $r['visits'], 'visitors' => (int) $r['visitors']], $sources),
         'top_countries' => array_map(static fn($r) => ta_countryRow($r['country']) + ['visits' => (int) $r['visits'], 'visitors' => (int) $r['visitors']], $countries),
-        'excluded' => ['owner_pageviews' => (int) $ex['o'], 'bot_pageviews' => (int) $ex['b'], 'headless_pageviews' => (int) $ex['h']],
+        // With include_owner the owner's views are in the figures above, so
+        // none of them is left out.
+        'excluded' => ['owner_pageviews' => $owner ? 0 : (int) $ex['o'], 'bot_pageviews' => (int) $ex['b'], 'headless_pageviews' => (int) $ex['h']],
     ];
 }
 
@@ -582,12 +584,25 @@ function ta_reportPage(PDO $db, array $range, bool $owner, string $path, ?array 
         [$path, $range['prev_from'], $range['prev_to']]);
     $sources = ta_all($db, 'SELECT s.channel, s.source, COUNT(*) AS n FROM pageviews p JOIN sessions s ON s.id = p.session_id
         WHERE p.path = ? AND p.ts >= ? AND p.ts < ? AND p.seq = 1 AND ' . ta_who('p', $owner) . ' GROUP BY s.channel, s.source ORDER BY n DESC LIMIT 50', $a);
-    $prevPages = ta_all($db, 'SELECT pr.path, COUNT(*) AS n FROM pageviews p JOIN pageviews pr ON pr.session_id = p.session_id AND pr.seq = p.seq - 1
-        WHERE p.path = ? AND p.ts >= ? AND p.ts < ? AND ' . ta_who('p', $owner) . ' GROUP BY pr.path ORDER BY n DESC LIMIT 50', $a);
-    $nextPages = ta_all($db, 'SELECT nx.path, COUNT(*) AS n FROM pageviews p JOIN pageviews nx ON nx.session_id = p.session_id AND nx.seq = p.seq + 1
-        WHERE p.path = ? AND p.ts >= ? AND p.ts < ? AND ' . ta_who('p', $owner) . ' GROUP BY nx.path ORDER BY n DESC LIMIT 50', $a);
+    // The page a view came from is the in-app referrer the beacon reported
+    // (prev_path): a reader who opens three essays from an index in new tabs
+    // came to each of them from the index, whatever order the tabs report in.
+    // Only a view with no referrer at all falls back to the view before it
+    // in the visit.
+    $prevPages = ta_all($db, 'SELECT COALESCE(p.prev_path, pr.path) AS path, COUNT(*) AS n FROM pageviews p
+        LEFT JOIN pageviews pr ON p.prev_path IS NULL AND p.ref IS NULL AND pr.session_id = p.session_id AND pr.seq = p.seq - 1
+        WHERE p.path = ? AND p.ts >= ? AND p.ts < ? AND ' . ta_who('p', $owner) . ' AND COALESCE(p.prev_path, pr.path) IS NOT NULL
+        GROUP BY 1 ORDER BY n DESC, 1 LIMIT 50', $a);
+    // The pages opened from this one, later in the same visit, by the same rule.
+    $nextPages = ta_all($db, 'SELECT nx.path, COUNT(DISTINCT nx.id) AS n FROM pageviews p
+        JOIN pageviews nx ON nx.session_id = p.session_id AND nx.seq > p.seq
+            AND (nx.prev_path = p.path OR (nx.prev_path IS NULL AND nx.ref IS NULL AND nx.seq = p.seq + 1))
+        WHERE p.path = ? AND p.ts >= ? AND p.ts < ? AND ' . ta_who('p', $owner) . ' GROUP BY nx.path ORDER BY n DESC, nx.path LIMIT 50', $a);
     $views = (int) ($t['views'] ?? 0);
-    $withNext = array_sum(array_map(static fn($r) => (int) $r['n'], $nextPages));
+    // Views that were the last of their visit, counted in full (not from the
+    // first 50 next pages above).
+    $last = (int) (ta_one($db, 'SELECT COUNT(*) AS n FROM pageviews p WHERE p.path = ? AND p.ts >= ? AND p.ts < ? AND ' . ta_who('p', $owner) . '
+        AND NOT EXISTS (SELECT 1 FROM pageviews nx WHERE nx.session_id = p.session_id AND nx.seq > p.seq)', $a)['n'] ?? 0);
     $facts = ta_one($db, 'SELECT * FROM page_facts WHERE path = ?', [$path]);
     $vit = ta_all($db, 'SELECT v.lcp, v.cls, v.inp, v.fcp, v.ttfb FROM vitals v WHERE v.path = ? AND v.ts >= ? AND v.ts < ? AND ' . ta_who('v', $owner), $a);
     $crawls = ta_all($db, 'SELECT bot, COUNT(*) AS n, MAX(ts) AS last FROM crawls WHERE path = ? AND ts >= ? AND ts < ? GROUP BY bot ORDER BY n DESC', $a);
@@ -611,7 +626,7 @@ function ta_reportPage(PDO $db, array $range, bool $owner, string $path, ?array 
         'sources' => array_map(static fn($r) => ta_sourceRow($r) + ['entries' => (int) $r['n']], $sources),
         'previous_pages' => array_map(static fn($r) => ['path' => $r['path'], 'views' => (int) $r['n']], $prevPages),
         'next_pages' => array_map(static fn($r) => ['path' => $r['path'], 'views' => (int) $r['n']], $nextPages),
-        'left_site' => max(0, $views - $withNext),
+        'left_site' => $last,
         'series' => [
             'granularity' => $range['granularity'],
             'points' => array_map(static fn($p) => ['ts' => $p['ts'], 'label' => $p['label'], 'views' => $p['pageviews'], 'visitors' => $p['visitors']],
@@ -972,9 +987,10 @@ function ta_reportCrawlers(PDO $db, array $range, ?string $bot, ?array $sitemap)
         $where .= ' AND c.bot = ?';
         $args[] = $bot;
     }
-    $t = ta_one($db, "SELECT COUNT(*) AS n, COUNT(DISTINCT c.bot) AS b, COUNT(DISTINCT c.path) AS p,
+    // "Pages" are pages: robots.txt, sitemap.xml and llms.txt are counted apart.
+    $t = ta_one($db, "SELECT COUNT(*) AS n, COUNT(DISTINCT c.bot) AS b, COUNT(DISTINCT CASE WHEN c.kind = 'page' THEN c.path END) AS p,
         COALESCE(SUM(c.verdict = 'verified'), 0) AS v, COALESCE(SUM(c.verdict = 'failed'), 0) AS f FROM crawls c WHERE $where", $args);
-    $bots = ta_all($db, "SELECT c.bot, COUNT(*) AS n, COUNT(DISTINCT c.path) AS p, COUNT(DISTINCT c.ip) AS ips, MAX(c.ts) AS last,
+    $bots = ta_all($db, "SELECT c.bot, COUNT(*) AS n, COUNT(DISTINCT CASE WHEN c.kind = 'page' THEN c.path END) AS p, COUNT(DISTINCT c.ip) AS ips, MAX(c.ts) AS last,
         COALESCE(SUM(c.verdict = 'verified'), 0) AS v, COALESCE(SUM(c.verdict = 'failed'), 0) AS f
         FROM crawls c WHERE $where GROUP BY c.bot ORDER BY n DESC", $args);
     $buckets = ta_buckets($range['from'], $range['to'], $range['granularity'], $range['tz']);
@@ -1048,30 +1064,7 @@ function ta_reportCrawlers(PDO $db, array $range, ?string $bot, ?array $sitemap)
 
 // -------------------------------------------------------------------- SEO ---
 
-/** Paths listed in sitemap.xml on disk, or null with the reason. */
-function ta_sitemapPaths(?string &$error = null): ?array
-{
-    $root = (string) ($_SERVER['DOCUMENT_ROOT'] ?? '');
-    $file = ($root !== '' ? rtrim($root, '/') : dirname(__DIR__)) . '/sitemap.xml';
-    if (!is_file($file) || !is_readable($file)) {
-        $error = 'sitemap.xml was not found in the web root.';
-        return null;
-    }
-    $xml = (string) @file_get_contents($file, false, null, 0, 10 * 1024 * 1024);
-    if (!preg_match_all('#<loc>\s*([^<\s]+)\s*</loc>#i', $xml, $m)) {
-        $error = 'sitemap.xml lists no URLs.';
-        return null;
-    }
-    $paths = [];
-    foreach ($m[1] as $loc) {
-        $loc = html_entity_decode($loc, ENT_QUOTES | ENT_XML1, 'UTF-8');
-        $p = ta_cleanPath((string) (parse_url($loc, PHP_URL_PATH) ?? '/') ?: '/');
-        if ($p !== null) {
-            $paths[$p] = true;
-        }
-    }
-    return array_keys($paths);
-}
+// ta_sitemapPaths() lives in _analytics.php: hit.php needs it too.
 
 function ta_canonicalPath(?string $canonical, string $pagePath): ?string
 {
@@ -1369,11 +1362,37 @@ function ta_csvCell($v): string
     return $s;
 }
 
+/**
+ * One CSV field. Numbers are written bare; every other value is neutralised
+ * (ta_csvCell) and then ALWAYS put in double quotes, inner quotes doubled.
+ * fputcsv() quotes only fields holding a comma, a quote or white space, and a
+ * spreadsheet in a locale whose list separator is ";" (German, French, Dutch,
+ * Spanish, Italian Excel) splits an unquoted field at each ";", so a stored
+ * "x;=HYPERLINK(…);" would become a cell of its own that starts with "=".
+ * Inside quotes a ";" (or ",") never splits a field.
+ */
+function ta_csvField($v): string
+{
+    if ($v === null) {
+        return '';
+    }
+    if (is_int($v) || is_float($v) || is_bool($v)) {
+        return ta_csvCell($v);
+    }
+    return '"' . str_replace('"', '""', ta_csvCell($v)) . '"';
+}
+
+/** @param resource $out */
+function ta_csvRow($out, array $cells): void
+{
+    fwrite($out, implode(',', array_map('ta_csvField', $cells)) . "\n");
+}
+
 /** Write the CSV for $table to $out. Timestamps become ISO 8601 UTC. */
 function ta_exportCsv(PDO $db, string $table, int $from, int $to, $out): int
 {
     $spec = TA_EXPORTS[$table];
-    fputcsv($out, $spec['cols'], ',', '"', '');
+    fwrite($out, implode(',', $spec['cols']) . "\n"); // constant [a-z_] names
     $st = $db->prepare($spec['sql']);
     $st->execute([$from, $to]);
     $n = 0;
@@ -1384,9 +1403,9 @@ function ta_exportCsv(PDO $db, string $table, int $from, int $to, $out): int
             if (str_ends_with($col, '_utc') && $v !== null) {
                 $v = gmdate('Y-m-d\TH:i:s\Z', (int) $v);
             }
-            $cells[] = ta_csvCell($v);
+            $cells[] = $v;
         }
-        fputcsv($out, $cells, ',', '"', '');
+        ta_csvRow($out, $cells);
         $n++;
     }
     return $n;
@@ -1404,7 +1423,7 @@ function ta_reportHealth(?PDO $db, int $now, ?array $session): array
         $keys[$k] = ta_secret($k) !== '';
     }
     $all = ta_secrets();
-    foreach (['analytics_dir', 'analytics_ip_days', 'analytics_keep_days', 'analytics_timezone', 'site_url'] as $k) {
+    foreach (['analytics_dir', 'analytics_ip_days', 'analytics_keep_days', 'analytics_timezone', 'analytics_max_mb', 'site_url'] as $k) {
         $keys[$k] = isset($all[$k]) && $all[$k] !== '';
     }
     $rows = null;
@@ -1440,7 +1459,9 @@ function ta_reportHealth(?PDO $db, int $now, ?array $session): array
         'configured' => ta_adminMissing() === [],
         'keys' => $keys,
         'password_needs_rehash' => $hash !== '' && password_needs_rehash($hash, PASSWORD_DEFAULT),
-        'rehash_advice' => 'Make a new hash with: php -r \'echo password_hash("your new password", PASSWORD_DEFAULT), PHP_EOL;\' and paste it into tl-secrets.php as admin_password_hash. Every signed-in browser is signed out.',
+        // The password is typed at the prompt, never written into the command:
+        // a command line is saved in the shell's history file.
+        'rehash_advice' => 'Make a new hash as in setup step 2: run php -r \'echo password_hash(trim(fgets(STDIN)), PASSWORD_DEFAULT), PHP_EOL;\', type the password, press Enter, and paste the line it prints into tl-secrets.php as admin_password_hash. Every signed-in browser is signed out.',
         'php_version' => PHP_VERSION,
         'pdo_sqlite' => extension_loaded('pdo_sqlite'),
         'sqlite_version' => $sqlite,
@@ -1455,8 +1476,12 @@ function ta_reportHealth(?PDO $db, int $now, ?array $session): array
             'source' => $source,
             'size_bytes' => $size,
             'wal_bytes' => $wal,
+            'max_bytes' => ta_maxBytes(),
+            'full' => $size + $wal >= ta_maxBytes(),
             'schema_version' => $schema,
         ],
+        'limits' => ['per_network_10min' => ta_hitLimit(), 'beacon_per_minute' => TA_HIT_GLOBAL_PER_MIN,
+            'crawl_per_network_10min' => TA_CRAWL_LOG_LIMIT, 'crawl_per_minute' => TA_CRAWL_GLOBAL_PER_MIN],
         'rows' => $rows,
         'oldest' => $oldest,
         'newest' => $newest,

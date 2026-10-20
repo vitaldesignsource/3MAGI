@@ -354,9 +354,14 @@ ta_record($db, pv('/third-lamp'), ctx(['now' => $t0 + 1500]));
 $s = qa($db, "SELECT * FROM sessions WHERE landing = '/'");
 check('a visit that runs across midnight stays one visit', count($s) === 1 && (int) $s[0]['pageviews'] === 3, $s);
 $hashes = array_column(qa($db, "SELECT visitor FROM pageviews WHERE session_id = ? ORDER BY seq", [$s[0]['id']]), 'visitor');
-check('  …but the new day has a new visitor hash', $hashes[0] === $hashes[1] && $hashes[2] !== $hashes[0], $hashes);
+// One visit is one visitor: the view after midnight keeps the visit's hash, so
+// the visitor is not counted twice (once per UTC day) for a single visit.
+check('  …and keeps one visitor hash, so it is not counted twice', count($hashes) === 3 && count(array_unique($hashes)) === 1, $hashes);
 ta_record($db, pv('/'), ctx(['now' => $t0 + 1500 + TA_SESSION_GAP + 1]));
 check('30 minutes of silence ends the visit', (int) qv($db, "SELECT COUNT(*) FROM sessions WHERE ip = '203.0.113.7' AND ua LIKE '%Windows%'") === 2);
+// That fresh visit falls on the new day, so it takes the new day's hash.
+$next = (string) qv($db, 'SELECT visitor FROM pageviews ORDER BY ts DESC, rowid DESC LIMIT 1');
+check('  …and a new visit on the new day has the new day\'s visitor hash', $next !== '' && $next !== $hashes[0], [$hashes[0], $next]);
 ta_record($db, pv('/'), ctx(['now' => $t0 + 3 * 86400]));
 $salts = array_column(qa($db, "SELECT key FROM meta WHERE key LIKE 'salt:%' ORDER BY key"), 'key');
 check('old daily salts are deleted (today and yesterday at most)', count($salts) <= 2 && end($salts) === 'salt:' . gmdate('Y-m-d', $t0 + 3 * 86400), $salts);
@@ -541,6 +546,66 @@ function currentPassFromToken(string $t): ?array
     return validPassShape($p) ? $p : null;
 }
 
+// ------------------------------------- regressions for the review findings ---
+section('review fixes: CSV quoting, User-Agent cleaning, networks');
+check('a text field is always quoted, so a ";" cannot split it in semicolon-locale Excel', ta_csvField('x;=1+1;') === '"x;=1+1;"', ta_csvField('x;=1+1;'));
+check('  …the formula guard still applies inside the quotes', ta_csvField('=1+1;x') === "\"'=1+1;x\"", ta_csvField('=1+1;x'));
+check('  …inner quotes are doubled; numbers stay bare', ta_csvField('a"b') === '"a""b"' && ta_csvField(42) === '42');
+$dirty = ta_cleanUa("Mozilla/5.0 \x1b[31mRED\x1b[0m \x07\x01\x7f end");
+check('control characters leave a User-Agent before it is stored', !preg_match('/[\x00-\x1F\x7F]/', $dirty) && str_contains($dirty, 'RED'), $dirty);
+check('IPv6 addresses in one /64 share a limit key', ta_netKey('2001:db8:1:2::1') === ta_netKey('2001:db8:1:2:ffff:ffff:ffff:9'));
+check('  …a different /64 does not', ta_netKey('2001:db8:1:2::1') !== ta_netKey('2001:db8:1:3::1'));
+check('  …an IPv4-mapped address counts as its IPv4 address', ta_netKey('::ffff:203.0.113.5') === ta_netKey('203.0.113.5'));
+check('  …each IPv4 address is its own network', ta_netKey('203.0.113.5') !== ta_netKey('203.0.113.6'));
+
+section('review fixes: the sign-in limit holds under parallel attempts');
+// Twelve processes take from one bucket at the same instant; with the lock
+// held across read, check and write, exactly the limit (5) get a slot.
+$raceFile = "$WORK/race-login.json";
+@unlink($raceFile);
+$start = microtime(true) + 0.6;
+$code = 'require ' . var_export("$PUBLIC/api/_lib.php", true) . '; time_sleep_until(' . var_export($start, true) . '); echo var_export(rateLimitTake(' . var_export($raceFile, true) . ', 5, 900), true);';
+$procs = [];
+$pipes = [];
+for ($i = 0; $i < 12; $i++) {
+    $procs[$i] = proc_open([PHP_BINARY, '-r', $code], [1 => ['pipe', 'w'], 2 => ['pipe', 'w']], $pipes[$i]);
+}
+$taken = 0;
+$outs = [];
+foreach ($procs as $i => $p) {
+    $out = trim((string) stream_get_contents($pipes[$i][1]));
+    fclose($pipes[$i][1]);
+    fclose($pipes[$i][2]);
+    proc_close($p);
+    $outs[] = $out;
+    $taken += $out === 'true' ? 1 : 0;
+}
+check('12 attempts at the same instant: exactly 5 take a slot', $taken === 5, $outs);
+check('  …and the file holds exactly 5 stamps', count(json_decode((string) file_get_contents($raceFile), true) ?: []) === 5);
+
+section('review fixes: crawler checks, page facts, unmeasured scroll');
+check('a PTR lookup that returns the address itself (no answer) → error, not failed',
+    ta_verifyCrawlerIp('66.249.66.1', 'Googlebot', $rev('66.249.66.1'), $fwd(['66.249.66.1']))['verdict'] === 'error');
+$db = useDataDir("$WORK/data-unit/facts");
+$facts = static fn(string $t) => ['title' => $t, 'description' => 'About the books.', 'canonical' => 'https://threemagipress.com/books',
+    'robots' => '', 'lang' => 'en', 'h1' => 1, 'og_title' => true, 'og_image' => true, 'img_no_alt' => 0];
+$title = static fn() => qv($db, "SELECT title FROM page_facts WHERE path = '/books'");
+ta_record($db, pv('/books', ['facts' => $facts('Books')]), ctx(['now' => 1790000000, 'ip' => '203.0.113.7']));
+check('the first report of a page\'s facts is kept', $title() === 'Books', $title());
+ta_record($db, pv('/books', ['facts' => $facts('FORGED')]), ctx(['now' => 1790000100, 'ip' => '198.51.100.9']));
+check('one different report does not replace them', $title() === 'Books', $title());
+ta_record($db, pv('/books', ['facts' => $facts('FORGED')]), ctx(['now' => 1790000200, 'ip' => '198.51.100.77']));
+check('  …nor does the same network again (one witness)', $title() === 'Books', $title());
+ta_record($db, pv('/books', ['facts' => $facts('FORGED')]), ctx(['now' => 1790000300, 'ip' => '192.0.2.5']));
+check('  …a second network reporting the same does', $title() === 'FORGED', $title());
+$db = useDataDir("$WORK/data-unit/scroll");
+$sv = pv('/books');
+ta_record($db, $sv, ctx());
+ta_record($db, ['type' => 'engage', 'view' => $sv['view'], 'seconds' => 12], ctx(['now' => 1790000030]));
+$row = qa($db, 'SELECT engaged_s, scroll_pct FROM pageviews WHERE view_id = ?', [$sv['view']])[0] ?? [];
+check('an engagement with time but no scroll measurement leaves scroll unknown (NULL), not 0',
+    (int) ($row['engaged_s'] ?? -1) === 12 && array_key_exists('scroll_pct', $row) && $row['scroll_pct'] === null, $row);
+
 section('.htaccess crawler-log block and robots.txt');
 $ht = (string) file_get_contents("$PUBLIC/.htaccess");
 check('block is clearly marked', substr_count($ht, '>>> crawler log >>>') === 1 && substr_count($ht, '<<< crawler log <<<') === 1);
@@ -693,9 +758,20 @@ function adminPost(string $action, array $body, ?string $cookie = null, ?array $
 
 function clearRate(): void
 {
-    global $WORK;
-    foreach (glob("$WORK/tmp/tl-membership-rate/*") ?: [] as $f) {
+    global $WORK, $DATA;
+    foreach (array_merge(glob("$WORK/tmp/tl-membership-rate/*") ?: [], glob("$WORK/tmp/tl-admin-rate/*") ?: []) as $f) {
         @unlink($f);
+    }
+    // The collection limits live in the analytics database (rate_log).
+    $file = isset($DATA) ? "$DATA/analytics.sqlite" : '';
+    if ($file !== '' && is_file($file)) {
+        try {
+            $pdo = new PDO('sqlite:' . $file);
+            $pdo->setAttribute(PDO::ATTR_TIMEOUT, 5);
+            $pdo->exec('DELETE FROM rate_log');
+        } catch (Throwable) {
+            // no rate_log yet: nothing to clear
+        }
     }
 }
 
@@ -922,6 +998,22 @@ foreach (['a=stats&range=forever' => 'range', 'a=stats&section=secrets' => 'sect
     $r = adminGet($q, $COOKIE);
     check("400 for $q", $r['status'] === 400 && ($r['json']['param'] ?? '') === $param, [$r['status'], $r['json']]);
 }
+
+section('review fixes: sign-out ends every session; plain HTTP is refused');
+clearRate();
+$c1 = cookieFrom(adminPost('login', ['email' => $EMAIL, 'password' => $PASSWORD]));
+$c2 = cookieFrom(adminPost('login', ['email' => $EMAIL, 'password' => $PASSWORD]));
+check('two browsers signed in', $c1 !== null && $c2 !== null && adminGet('a=me', (string) $c2)['status'] === 200);
+$r = adminPost('logout', [], $c1);
+check('sign-out answers that it revoked the sessions', $r['status'] === 200 && ($r['json']['revoked'] ?? false) === true, $r['json']);
+check('  …a saved copy of that cookie no longer works', adminGet('a=me', (string) $c1)['status'] === 401);
+check('  …nor does the other browser\'s session', adminGet('a=me', (string) $c2)['status'] === 401);
+$r = http('POST', '/api/admin.php?a=login', ['headers' => ['Host: threemagipress.com', 'Origin: https://threemagipress.com', 'Content-Type: application/json'],
+    'body' => (string) json_encode(['email' => $EMAIL, 'password' => $PASSWORD])]);
+check('sign-in over plain HTTP from a real host → 403 https_required', $r['status'] === 403 && ($r['json']['code'] ?? '') === 'https_required', [$r['status'], $r['json']]);
+check('  …and sets no cookie', cookieFrom($r) === null);
+clearRate();
+$COOKIE = cookieFrom(adminPost('login', ['email' => $EMAIL, 'password' => $PASSWORD]));
 
 section('owner hits are flagged (the admin cookie rides along to /api/hit.php)');
 $r = beacon(pv('/owner-was-here', ['view' => 'owner-view-1']), null, $COOKIE);

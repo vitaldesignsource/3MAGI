@@ -223,6 +223,9 @@
 .adm-line-prev { fill: none; stroke: var(--prev); stroke-width: 1.5; stroke-linejoin: round; stroke-linecap: round; }
 .adm-crosshair { stroke: rgba(231, 223, 207, 0.38); stroke-width: 1; shape-rendering: crispEdges; }
 .adm-dot { fill: var(--mark); stroke: var(--panel); stroke-width: 2; }
+/* The unfinished last hour or day: dashed, with an open dot. */
+.adm-line-partial { stroke-dasharray: 4 4; }
+.adm-dot-open { fill: var(--panel); stroke: var(--mark); stroke-width: 1.75; }
 .adm-dot-prev { fill: var(--prev); stroke: var(--panel); stroke-width: 2; }
 .adm-tip {
   position: absolute; top: 6px; z-index: 2; pointer-events: none; min-width: 9rem; max-width: 16rem;
@@ -237,6 +240,7 @@
 .adm-key { display: inline-block; width: 16px; height: 2px; border-radius: 1px; vertical-align: middle; }
 .adm-key-cur { background: var(--mark); height: 2.5px; }
 .adm-key-prev { background: var(--prev); }
+.adm-key-partial { height: 0; border-top: 2.5px dashed var(--mark); background: none; }
 .adm-chart-table { margin-top: 6px; font-size: 0.85rem; }
 .adm-chart-table summary, .adm details > summary { cursor: pointer; color: var(--gold); }
 .adm-chart-table summary { font-size: 0.82rem; font-family: var(--sans); width: fit-content; }
@@ -292,6 +296,11 @@ th[aria-sort] .adm-sort-mark { opacity: 1; }
 .adm-path, .adm-ip, .adm-ua, .adm-query { overflow-wrap: break-word; }
 /* Secondary strings (referrers, host names) may break anywhere rather than widen a column. */
 .adm-sub .adm-path, .adm-refs .adm-path, .adm-verdict-cell .adm-path, .adm-hosts .adm-path, .adm-query { overflow-wrap: anywhere; }
+/* Inside any table cell, a path or a source name breaks anywhere rather than
+   paint past the cell (a button keeps its min-content width otherwise); it
+   only breaks when the cell is too narrow to hold it whole. */
+.adm td .adm-path, .adm td .adm-source > span { overflow-wrap: anywhere; min-width: 0; max-width: 100%; }
+.adm td .adm-source { flex-wrap: wrap; max-width: 100%; }
 .adm-path { font-family: var(--sans); font-size: 0.88em; }
 .adm-ip { font-family: var(--mono); font-size: 0.86em; }
 .adm-ua { font-family: var(--mono); font-size: 0.78rem; color: var(--text-2); }
@@ -495,6 +504,7 @@ th[aria-sort] .adm-sort-mark { opacity: 1; }
 }
 .adm-warn { border-color: rgba(229, 184, 77, 0.45); background: rgba(250, 178, 25, 0.06); }
 .adm-error p, .adm-warn p { margin: 0 0 6px; }
+.adm-signout-error { margin: 12px clamp(16px, 3vw, 32px) 0; }
 .adm-error-title { font-weight: 700; color: var(--text); }
 .adm-error-fix { color: var(--text-2); }
 .adm-ok { color: var(--up); font-size: 0.9rem; }

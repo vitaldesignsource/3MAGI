@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { ApiError, apiPost } from './api';
+import { ApiError, apiPost, insecureOrigin } from './api';
 import { useNow } from './charts';
 
 // The way in: the sign-in form, and the setup steps shown instead of it
@@ -46,6 +46,11 @@ export function Login({ notice, onSignedIn, onNotConfigured }) {
     const submit = async (e) => {
         e.preventDefault();
         if (busy || locked) return;
+        if (insecureOrigin()) {
+            // Never send the password over plain http (the server would refuse it, but only after reading it).
+            setError({ kind: 'bad', text: 'This page is not on a secure (https) address, so the password was not sent. Open the https address and sign in there.' });
+            return;
+        }
         setBusy(true);
         setError(null);
         try {
@@ -58,11 +63,15 @@ export function Login({ notice, onSignedIn, onNotConfigured }) {
                 onNotConfigured((err.body && err.body.missing) || []);
                 return;
             }
-            if (code === 'locked') {
+            if (code === 'locked' || code === 'locked_all') {
                 const s = Number(err.body && err.body.retry_after) || 900;
                 setLockSeconds(s);
                 setLockedUntil(Date.now() + s * 1000);
-                setError({ kind: 'locked', text: 'Too many failed attempts from this connection. Sign-in is paused; it reopens by itself.' });
+                setError({ kind: 'locked', text: code === 'locked'
+                    ? 'Too many failed attempts from this connection. Sign-in is paused; it reopens by itself.'
+                    : 'Too many failed attempts from many addresses in the last hour: sign-in is paused for everyone and reopens by itself. A browser that is already signed in keeps working.' });
+            } else if (code === 'https_required') {
+                setError({ kind: 'bad', text: err.message || 'The dashboard works only over HTTPS.' });
             } else if (code === 'bad_credentials') {
                 setError({ kind: 'bad', text: err.message || 'That email and password do not match.' });
                 setPassword('');

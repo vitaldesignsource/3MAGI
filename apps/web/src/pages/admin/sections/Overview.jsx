@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
-import { useApi } from '../api';
-import { Sparkline, TimeChart } from '../charts';
+import React, { useEffect, useState } from 'react';
+import { ApiError, useApi } from '../api';
+import { lastIsPartial, Sparkline, TimeChart } from '../charts';
 import { CountryName, PageButton, RankTable, SectionHead, SourceName } from '../common';
 import { dec2, duration, int, pct } from '../format';
+import { useLive } from '../live';
 import { useDash } from '../state';
 import { Card, ErrorNote, Kpi, Loadable, Loading, Segmented } from '../ui';
 
@@ -13,9 +14,15 @@ const METRICS = [
 ];
 
 export default function Overview() {
-    const { params, compare, go } = useDash();
+    const { params, compare, go, global, unauthenticated } = useDash();
     const { data, error, loading, reload } = useApi('stats', { section: 'overview', ...params });
     const [metric, setMetric] = useState('visitors');
+    // The overview's own answer gives the first figure; from then on the tile
+    // follows `live` every 15 s, as the Visitors section's live panel does.
+    const live = useLive(!!params.include_owner, { immediate: false });
+    useEffect(() => {
+        if (live.error instanceof ApiError && live.error.code === 'unauthenticated') unauthenticated();
+    }, [live.error, unauthenticated]);
 
     if (!data) {
         return (
@@ -28,12 +35,14 @@ export default function Overview() {
 
     const k = data.kpis;
     const pts = data.series.points;
-    const spark = (key) => <Sparkline values={pts.map((p) => p[key])} />;
+    const partialDay = lastIsPartial(pts, data.series.granularity);
+    const spark = (key) => <Sparkline values={pts.map((p) => p[key])} partial={partialDay} />;
     const prev = (kpi, f = int) => (compare ? `previous ${f(kpi.previous)}` : null);
     // Ratios (per visit, bounce, length) mean nothing against a period with no visits.
     const hasPrev = k.visits.previous > 0;
     const ratioPrev = (kpi, f) => (compare ? (hasPrev ? `previous ${f(kpi.previous)}` : 'no visits before') : null);
     const metricLabel = METRICS.find((m) => m.value === metric).label;
+    const liveNow = live.data && live.owner === !!params.include_owner ? live.data : data.live;
 
     return (
         <>
@@ -48,8 +57,8 @@ export default function Overview() {
                     <Kpi label="Bounce rate" value={pct(k.bounce_rate.value)} kpi={compare && hasPrev && k.bounce_rate} kind="points" goodWhenUp={false}
                         previousText={ratioPrev(k.bounce_rate, pct)} note="visits of one page" />
                     <Kpi label="Average visit" value={duration(k.avg_visit_s.value)} kpi={compare && hasPrev && k.avg_visit_s} previousText={ratioPrev(k.avg_visit_s, duration)} />
-                    <Kpi live label="Live now" value={int(data.live.visitors)}
-                        note={<>{int(data.live.pageviews)} pageviews in the last 5 min · <button type="button" className="adm-link" onClick={() => go({ v: 'visitors' })}>watch</button></>} />
+                    <Kpi live label="Live now" value={int(liveNow.visitors)}
+                        note={<>{int(liveNow.pageviews)} pageviews in the last 5 min · <button type="button" className="adm-link" onClick={() => go({ v: 'visitors' })}>watch</button></>} />
                 </dl>
 
                 <Card title="Traffic" id="ov-traffic"
@@ -86,9 +95,13 @@ export default function Overview() {
                 </div>
 
                 <p className="adm-footnote">
-                    Visitors are counted per day: one person on three days counts three times (no cookies are used).
-                    {' '}Not counted here: {int(data.excluded.owner_pageviews)} of your own pageviews,
-                    {' '}{int(data.excluded.bot_pageviews)} from bots and {int(data.excluded.headless_pageviews)} from headless browsers.
+                    Visitors are counted per day, a day that ends at midnight UTC{/^(Etc\/)?UTC$/.test(params.tz) ? '' : `, not in ${params.tz}`}: one person on three days counts three times (no cookies are used).
+                    {global.owner ? (
+                        <>{' '}Your own pageviews are included. Not counted here: {int(data.excluded.bot_pageviews)} from bots and {int(data.excluded.headless_pageviews)} from headless browsers.</>
+                    ) : (
+                        <>{' '}Not counted here: {int(data.excluded.owner_pageviews)} of your own pageviews,
+                            {' '}{int(data.excluded.bot_pageviews)} from bots and {int(data.excluded.headless_pageviews)} from headless browsers.</>
+                    )}
                 </p>
             </Loadable>
         </>

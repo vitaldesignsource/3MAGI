@@ -439,10 +439,11 @@ function rateLimitFile(string $bucket): ?string
 }
 
 /**
- * @param int $window seconds the count covers. Defaults to RATE_LIMIT_WINDOW;
- *                    the dashboard login uses 900 (5 failures per 15 minutes).
+ * @param int $window seconds the count covers. Defaults to RATE_LIMIT_WINDOW.
  *                    Keep any window at or under RATE_LIMIT_WINDOW * 2, the age
  *                    at which the sweep in rateLimitRecord() deletes a file.
+ *                    Where parallel requests must not slip past the limit (the
+ *                    dashboard sign-in), use rateLimitTake() instead.
  */
 function rateLimitExceeded(string $bucket, int $max = RATE_LIMIT_MAX, int $window = RATE_LIMIT_WINDOW): bool
 {
@@ -480,4 +481,94 @@ function rateLimitRecord(string $bucket, int $window = RATE_LIMIT_WINDOW): void
             }
         }
     }
+}
+
+/**
+ * Take one slot from the bucket in $file, atomically. The read, the check and
+ * the write happen under one exclusive lock, so parallel requests cannot all
+ * pass a check that only some of them should: rateLimitExceeded() followed by
+ * rateLimitRecord() leaves a gap between the two, and two writers there each
+ * overwrite the other's stamp. Stamps older than $window are dropped first.
+ *
+ * @return bool|null true: taken; false: the bucket already holds $max stamps;
+ *                   null: the file could not be used (the caller decides
+ *                   whether that fails open)
+ */
+function rateLimitTake(string $file, int $max, int $window, ?int $now = null): ?bool
+{
+    $now ??= time();
+    $fh = @fopen($file, 'c+');
+    if ($fh === false) {
+        return null;
+    }
+    try {
+        if (!flock($fh, LOCK_EX)) {
+            return null;
+        }
+        $stamps = rateLimitStamps($fh, $now - $window);
+        if (count($stamps) >= $max) {
+            return false;
+        }
+        $stamps[] = $now;
+        rateLimitWriteStamps($fh, $stamps);
+        return true;
+    } finally {
+        @flock($fh, LOCK_UN);
+        fclose($fh);
+    }
+}
+
+/** Remove one stamp $stamp that rateLimitTake() added (an attempt that turned
+ *  out not to be a failure gives its slot back). */
+function rateLimitGiveBack(string $file, int $stamp): void
+{
+    $fh = @fopen($file, 'c+');
+    if ($fh === false) {
+        return;
+    }
+    if (flock($fh, LOCK_EX)) {
+        $stamps = rateLimitStamps($fh, PHP_INT_MIN);
+        $i = array_search($stamp, $stamps, true);
+        if ($i !== false) {
+            array_splice($stamps, (int) $i, 1);
+            rateLimitWriteStamps($fh, $stamps);
+        }
+        flock($fh, LOCK_UN);
+    }
+    fclose($fh);
+}
+
+/** How many stamps in $file are younger than $window seconds. */
+function rateLimitCount(string $file, int $window, ?int $now = null): int
+{
+    $fh = @fopen($file, 'r');
+    if ($fh === false) {
+        return 0;
+    }
+    $n = 0;
+    if (flock($fh, LOCK_SH)) {
+        $n = count(rateLimitStamps($fh, ($now ?? time()) - $window));
+        flock($fh, LOCK_UN);
+    }
+    fclose($fh);
+    return $n;
+}
+
+/** @param resource $fh */
+function rateLimitStamps($fh, int $floor): array
+{
+    rewind($fh);
+    $raw = stream_get_contents($fh);
+    $stamps = is_string($raw) && $raw !== '' ? json_decode($raw, true) : [];
+    $stamps = is_array($stamps) ? $stamps : [];
+    return array_values(array_filter($stamps, static fn($t) => is_int($t) && $t > $floor));
+}
+
+/** @param resource $fh */
+function rateLimitWriteStamps($fh, array $stamps): void
+{
+    ftruncate($fh, 0);
+    rewind($fh);
+    fwrite($fh, (string) json_encode(array_values($stamps)));
+    fflush($fh);
 }

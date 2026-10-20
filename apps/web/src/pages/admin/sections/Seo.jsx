@@ -307,8 +307,10 @@ function Health({ d }) {
     return (
         <>
             <p className="adm-lede">
-                {int(d.pages_checked)} pages checked from what readers' browsers reported (the latest report per page, not limited to the range).
+                {int(d.pages_checked)} pages checked from what readers' browsers reported (not limited to the range).
                 {' '}{int(withIssues)} have something to look at.
+                {' '}These facts are reported, not verified: anyone can send a report, so a change is taken only once readers on two different networks report the same.
+                {' '}Look at the live page before changing its tags.
             </p>
             <div className="adm-chips" role="group" aria-label="Show pages with one issue">
                 <button type="button" className="adm-chip" aria-pressed={!issue} onClick={() => setIssue('')}>All <span className="adm-chip-n">{int(d.pages.length)}</span></button>

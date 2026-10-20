@@ -10,8 +10,13 @@
  * docs/analytics.md.
  *
  * Drops silently: anything but POST, bodies over 8 KB, a foreign or missing
- * Origin/Referer, more than 240 events per IP per 10 minutes, malformed JSON,
- * unknown event types, and every storage problem.
+ * Origin/Referer, malformed JSON, more than 240 events per network (an IPv4
+ * address, an IPv6 /64) per 10 minutes, more than 600 events a minute from
+ * everyone together, anything once the database has reached its size ceiling,
+ * unknown event types, and every storage problem (including a write lock held
+ * longer than TA_HIT_BUSY_MS: a dropped event, never a waiting worker).
+ * The limits live in the analytics database, not in files beside the
+ * membership endpoints' rate limits, so a flood here cannot slow those down.
  */
 
 declare(strict_types=1);
@@ -44,22 +49,18 @@ try {
     if (!ta_beaconOriginOk($_SERVER)) {
         exit;
     }
-    if (rateLimitExceeded('analytics-hit', ta_hitLimit())) {
-        exit;
-    }
-    rateLimitRecord('analytics-hit');
-
     $event = json_decode($body, true, 6);
     if (!is_array($event)) {
         exit;
     }
-    $db = ta_db(1500);
+    $db = ta_db(TA_HIT_BUSY_MS);
     if ($db === null) {
         exit;
     }
     $now = time();
-    $ctx = ta_requestContext(ta_adminFromCookie($now) !== null);
-    ta_record($db, $event, $ctx);
+    $ctx = ta_requestContext(ta_adminFromCookie($now, $db) !== null);
+    $ctx['now'] = $now;
+    ta_recordLimited($db, $event, $ctx);
     if (random_int(1, TA_PRUNE_ODDS) === 1) {
         ta_maintain($db, $now);
     }

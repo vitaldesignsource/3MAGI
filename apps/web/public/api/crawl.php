@@ -49,6 +49,15 @@ $status = is_file($file) && is_readable($file) ? 200 : 404;
 if (function_exists('header_remove')) {
     header_remove('X-Powered-By');
 }
+// Where PHP cannot end the request before the logging below (Apache with
+// mod_php has neither finish function), a compressed reply would be sent
+// chunked, and its last chunk would wait for this script to exit, logging
+// included. Uncompressed, the Content-Length set below ends the reply as soon
+// as the file is out. LiteSpeed and PHP-FPM end the request early instead
+// and keep their compression.
+if (!function_exists('litespeed_finish_request') && !function_exists('fastcgi_finish_request') && function_exists('apache_setenv')) {
+    @apache_setenv('no-gzip', '1');
+}
 http_response_code($status);
 if ($status === 200) {
     header('Content-Type: ' . $type);
@@ -98,7 +107,10 @@ try {
         @flush();
     }
     require_once __DIR__ . '/_analytics.php';
-    $db = ta_db(800);
+    // A short wait for the write lock: a busy database costs one crawl row,
+    // not a PHP worker held while a crawler's next request queues behind it.
+    // Maintenance never runs from here (hit.php and the dashboard run it).
+    $db = ta_db(TA_CRAWL_BUSY_MS);
     if ($db !== null) {
         ta_logCrawl($db, [
             'now' => time(),
@@ -108,9 +120,6 @@ try {
             'status' => $status,
             'method' => $method,
         ]);
-        if (random_int(1, TA_PRUNE_ODDS) === 1) {
-            ta_maintain($db, time());
-        }
     }
 } catch (Throwable) {
     // Never let the crawler log be the reason anything fails.

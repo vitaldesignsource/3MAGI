@@ -126,6 +126,7 @@ export function Rating({ rating }) {
 export function Verdict({ verdict }) {
     if (verdict === 'verified') return <Badge tone="good">verified</Badge>;
     if (verdict === 'failed') return <Badge tone="bad" title="Reverse DNS did not confirm this address">claims to be · failed check</Badge>;
+    if (verdict === 'error') return <Badge tone="neutral" title="Reverse DNS gave no answer (no PTR record, or the lookup failed). It is checked again later.">claims to be · no answer yet</Badge>;
     return <Badge tone="neutral" title={verdict ? `Check result: ${verdict}` : 'Not checked'}>claims to be</Badge>;
 }
 

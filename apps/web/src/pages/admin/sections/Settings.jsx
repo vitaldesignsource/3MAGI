@@ -27,6 +27,7 @@ const KEY_NOTES = {
     analytics_ip_days: 'optional: days full IPs are kept (90)',
     analytics_keep_days: 'optional: days data is kept (730)',
     analytics_timezone: 'optional: default time zone',
+    analytics_max_mb: 'optional: size at which recording stops (1024)',
     site_url: 'optional: the canonical site address',
 };
 
@@ -66,11 +67,25 @@ export default function Settings() {
     const s = data.storage || {};
     const lp = data.last_prune;
     const tb = data.this_browser || {};
+    const lg = data.login || null;
 
     return (
         <>
             <SectionHead title="Settings" sub="Storage, retention and this server" />
             <ErrorNote error={error} onRetry={reload} />
+            {lg && lg.under_attack && (
+                <div className="adm-error" role="alert">
+                    <p className="adm-error-title">Sign-in under attack</p>
+                    <p>{int(lg.failures_last_hour)} failed sign-ins from many addresses in the last hour. Sign-in is paused for everyone until they are an hour old; browsers already signed in, like this one, keep working.</p>
+                    <p className="adm-small">If this goes on, consider a longer, unguessable password (Secrets file, below).</p>
+                </div>
+            )}
+            {s.full && (
+                <div className="adm-error" role="alert">
+                    <p className="adm-error-title">The database has reached its size ceiling ({bytes(s.max_bytes)}): nothing new is being recorded.</p>
+                    <p className="adm-error-fix"><strong>How to fix it:</strong> lower analytics_keep_days and press Prune now, or raise analytics_max_mb in tl-secrets.php if the hosting plan has room.</p>
+                </div>
+            )}
             <Loadable loading={loading}>
                 <div className="adm-grid-2">
                     <Card title="You" id="set-you">
@@ -79,7 +94,11 @@ export default function Settings() {
                             ['Session ends', dateTime(expires, params.tz, { year: true })],
                             ['This browser', tb.excluded ? <><Badge tone="good">excluded from the stats</Badge></> : <Badge>counted</Badge>],
                             ['Your own pageviews, last 30 days', int(tb.owner_pageviews_30d)],
+                            ...(lg ? [['Failed sign-ins, last hour', `${int(lg.failures_last_hour)} (sign-in pauses for everyone at ${int(lg.limit_per_hour)})`]] : []),
                         ]} />
+                        <p className="adm-small adm-muted">
+                            Signing out ends every session at once: this browser's and any other signed in with this password.
+                        </p>
                         <p className="adm-small adm-muted">
                             A browser is kept out of the stats exactly while it is signed in here: the sign-in cookie travels with its pageviews.
                             Sign in once on each device you read the site on (phone included) to exclude it. Signing out counts it again.
@@ -98,7 +117,7 @@ export default function Settings() {
                             ['Folder', s.dir ? <span className="adm-path">{s.dir}</span> : '–'],
                             ['Database', s.file ? <span className="adm-path">{s.file}</span> : '–'],
                             ['Chosen by', { default: 'default (beside public_html)', secrets: 'analytics_dir in the secrets file', env: 'TL_ANALYTICS_DIR (test setting)' }[s.source] || s.source || '–'],
-                            ['Size', `${bytes(s.size_bytes)}${s.wal_bytes ? ` + ${bytes(s.wal_bytes)} journal` : ''}`],
+                            ['Size', `${bytes(s.size_bytes)}${s.wal_bytes ? ` + ${bytes(s.wal_bytes)} journal` : ''}${s.max_bytes ? ` of at most ${bytes(s.max_bytes)}` : ''}`],
                             ['Schema version', s.schema_version ?? '–'],
                             ['Oldest record', dateTime(data.oldest, params.tz, { year: true })],
                             ['Newest record', dateTime(data.newest, params.tz, { year: true })],

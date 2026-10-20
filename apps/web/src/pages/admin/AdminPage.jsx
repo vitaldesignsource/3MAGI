@@ -1,7 +1,7 @@
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { Helmet } from 'react-helmet';
 import { Link, useNavigate, useSearchParams } from 'react-router-dom';
-import { ApiError, apiGet, apiPost, browserTimeZone, clearCache, onUnauthenticated } from './api';
+import { ApiError, apiGet, apiPost, browserTimeZone, clearCache, insecureOrigin, onUnauthenticated } from './api';
 import { GateMessage, Login, Setup } from './Auth';
 import { DashContext, patchSearch, RANGES, rangeParams, readGlobal, SECTIONS } from './state';
 import Overview from './sections/Overview';
@@ -37,8 +37,14 @@ function isFramed() {
     }
 }
 
+function httpsUrl() {
+    const { hostname, pathname, search } = window.location;
+    return `https://${hostname}${pathname}${search}`;
+}
+
 export default function AdminPage() {
-    const [auth, setAuth] = useState(() => (isFramed() ? { status: 'framed' } : { status: 'checking' }));
+    const [auth, setAuth] = useState(() => (isFramed() ? { status: 'framed' } : insecureOrigin() ? { status: 'insecure' } : { status: 'checking' }));
+    const [signOutState, setSignOutState] = useState({ busy: false, error: null });
 
     const check = useCallback(async () => {
         setAuth({ status: 'checking' });
@@ -59,11 +65,12 @@ export default function AdminPage() {
         } catch (e) {
             if (e instanceof ApiError && e.code === 'unauthenticated') setAuth({ status: 'login' });
             else if (e instanceof ApiError && e.code === 'not_configured') setAuth({ status: 'setup', missing: (e.body && e.body.missing) || [] });
+            else if (e instanceof ApiError && e.code === 'https_required') setAuth({ status: 'insecure' });
             else setAuth({ status: 'error', error: e });
         }
     }, []);
 
-    useEffect(() => { if (!isFramed()) check(); }, [check]);
+    useEffect(() => { if (!isFramed() && !insecureOrigin()) check(); }, [check]);
 
     useEffect(() => {
         onUnauthenticated(() => {
@@ -73,14 +80,35 @@ export default function AdminPage() {
         return () => onUnauthenticated(null);
     }, []);
 
+    // The session cookie is HttpOnly: only the server's answer can clear it.
+    // So "signed out" is shown only once that answer has come back; a failed
+    // request (a dropped connection on a phone) leaves the dashboard open and
+    // says so, with a retry, instead of claiming a sign-out that did not happen.
     const signOut = useCallback(async () => {
-        try { await apiPost('logout', {}); } catch { /* signed out locally either way */ }
+        setSignOutState({ busy: true, error: null });
+        let res;
+        try {
+            res = await apiPost('logout', {});
+        } catch (e) {
+            setSignOutState({ busy: false, error: e instanceof ApiError ? e : new ApiError(0, null) });
+            return;
+        }
+        setSignOutState({ busy: false, error: null });
         clearCache();
-        setAuth({ status: 'login', notice: 'You are signed out. This browser counts in the stats again.' });
+        const where = res && res.revoked ? 'You are signed out, here and on every other browser.' : 'You are signed out on this browser.';
+        setAuth({ status: 'login', notice: `${where} This browser counts in the stats again.` });
     }, []);
 
     let body;
-    if (auth.status === 'framed') {
+    if (auth.status === 'insecure') {
+        body = (
+            <GateMessage title="Open the dashboard over HTTPS">
+                <p className="adm-gate-lede">This page was opened over plain http, where a password would cross the network unencrypted. Nothing has been sent.</p>
+                <p><a className="adm-btn adm-btn-primary" href={httpsUrl()}>Open the secure address</a></p>
+                <p className="adm-gate-small">To have every visitor sent to https automatically, turn on <strong>Force HTTPS</strong> for the domain in hPanel (Security → SSL).</p>
+            </GateMessage>
+        );
+    } else if (auth.status === 'framed') {
         // Never offer the sign-in form inside another site's frame (clickjacking).
         body = (
             <GateMessage title="Open the dashboard in its own tab">
@@ -106,7 +134,9 @@ export default function AdminPage() {
             </GateMessage>
         );
     } else {
-        body = <Dashboard email={auth.email} expires={auth.expires} signOut={signOut} unauthenticated={() => setAuth({ status: 'login', notice: 'Your session has ended. Please sign in again.' })} />;
+        body = <Dashboard email={auth.email} expires={auth.expires} signOut={signOut} signOutState={signOutState}
+            dismissSignOutError={() => setSignOutState({ busy: false, error: null })}
+            unauthenticated={() => setAuth({ status: 'login', notice: 'Your session has ended. Please sign in again.' })} />;
     }
 
     return (
@@ -120,7 +150,7 @@ export default function AdminPage() {
     );
 }
 
-function Dashboard({ email, expires, signOut, unauthenticated }) {
+function Dashboard({ email, expires, signOut, signOutState, dismissSignOutError, unauthenticated }) {
     const [sp] = useSearchParams();
     const navigate = useNavigate();
     const global = useMemo(() => readGlobal(sp), [sp]);
@@ -163,9 +193,23 @@ function Dashboard({ email, expires, signOut, unauthenticated }) {
                 <div className="adm-top-right">
                     <span className="adm-who" title={email}>{email}</span>
                     <a className="adm-btn adm-btn-quiet" href="/">Site</a>
-                    <button type="button" className="adm-btn adm-btn-quiet" onClick={signOut}>Sign out</button>
+                    <button type="button" className="adm-btn adm-btn-quiet" onClick={signOut} disabled={signOutState.busy}>
+                        {signOutState.busy ? 'Signing out…' : 'Sign out'}
+                    </button>
                 </div>
             </header>
+            {signOutState.error && (
+                <div className="adm-error adm-signout-error" role="alert">
+                    <p className="adm-error-title">Could not sign out: you are still signed in.</p>
+                    <p>{signOutState.error.code === 'network'
+                        ? 'The server could not be reached. Check the connection and try again.'
+                        : `The server answered: ${signOutState.error.message}`}</p>
+                    <p>
+                        <button type="button" className="adm-btn" onClick={signOut} disabled={signOutState.busy}>Try again</button>
+                        {' '}<button type="button" className="adm-btn adm-btn-quiet" onClick={dismissSignOutError}>Dismiss</button>
+                    </p>
+                </div>
+            )}
             <nav className="adm-tabs" aria-label="Dashboard sections">
                 <ul>
                     {SECTIONS.map((s) => (

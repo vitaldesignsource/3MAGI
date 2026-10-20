@@ -29,14 +29,23 @@ if (PHP_SAPI !== 'cli' && isset($_SERVER['SCRIPT_FILENAME'])
     exit;
 }
 
-const TA_SCHEMA_VERSION = 1;
+const TA_SCHEMA_VERSION = 2;
 const TA_DB_FILE = 'analytics.sqlite';
 const TA_SESSION_GAP = 1800;          // 30 minutes of silence ends a visit
 const TA_LIVE_WINDOW = 300;           // "live now" = the last 5 minutes
 const TA_IP_DAYS_DEFAULT = 90;
 const TA_KEEP_DAYS_DEFAULT = 730;
-const TA_HIT_LIMIT = 240;             // events per IP per 10 minutes
-const TA_CRAWL_LOG_LIMIT = 300;       // crawl rows logged per IP per 10 minutes (serving is never limited)
+const TA_HIT_LIMIT = 240;             // events per network (IPv4 address, IPv6 /64) per 10 minutes
+const TA_CRAWL_LOG_LIMIT = 300;       // crawl rows logged per network per 10 minutes (serving is never limited)
+const TA_RATE_WINDOW = 600;           // the per-network windows above
+const TA_HIT_GLOBAL_PER_MIN = 600;    // beacon events stored per minute, all networks together
+const TA_CRAWL_GLOBAL_PER_MIN = 600;  // crawl rows logged per minute, all networks together
+const TA_MAX_MB_DEFAULT = 1024;       // collection stops once the database reaches this size
+const TA_FACTS_NEW_PER_DAY = 50;      // paths outside sitemap.xml that may gain page facts per day
+const TA_FACTS_CONFIRM_DAYS = 14;     // how long a changed report waits for a second network to agree
+const TA_HIT_BUSY_MS = 250;           // collection waits this long for the write lock, then drops the event
+const TA_CRAWL_BUSY_MS = 100;
+const TA_MAINTAIN_BATCH = 500;        // rows masked or deleted per transaction
 const TA_MAX_BODY = 8192;
 const TA_PRUNE_ODDS = 200;            // about one hit in 200 runs maintenance
 const TA_PRUNE_MIN_GAP = 3600;        // …but not more than once an hour
@@ -123,6 +132,12 @@ function ta_keepDays(): int
 function ta_hitLimit(): int
 {
     return ta_secretInt('analytics_hit_limit', TA_HIT_LIMIT, 10, 100000);
+}
+
+/** The database size at which collection stops (bytes; analytics_max_mb). */
+function ta_maxBytes(): int
+{
+    return ta_secretInt('analytics_max_mb', TA_MAX_MB_DEFAULT, 1, 1048576) * 1048576;
 }
 
 /** The public origin, for building links out (Search Console, PageSpeed). */
@@ -465,6 +480,26 @@ function ta_migrations(): array
                 checked_ts INTEGER NOT NULL
             )',
         ],
+        2 => [
+            // The collection limits: one row per admitted event, keyed on a
+            // hash of the network (never the address), deleted after an hour.
+            'CREATE TABLE IF NOT EXISTS rate_log (k TEXT NOT NULL, ts INTEGER NOT NULL)',
+            'CREATE INDEX IF NOT EXISTS rate_log_k ON rate_log(k, ts)',
+            'CREATE INDEX IF NOT EXISTS rate_log_ts ON rate_log(ts)',
+            // Lookups that ran inside the write lock as full scans.
+            'CREATE INDEX IF NOT EXISTS vitals_view ON vitals(view_id)',
+            'CREATE INDEX IF NOT EXISTS vitals_session ON vitals(session_id)',
+            'CREATE INDEX IF NOT EXISTS searches_session ON searches(session_id)',
+            // Maintenance reads only the rows it has work for.
+            'CREATE INDEX IF NOT EXISTS sessions_unmasked ON sessions(last_ts) WHERE ip_masked = 0',
+            'CREATE INDEX IF NOT EXISTS crawls_unmasked ON crawls(ts) WHERE ip_masked = 0',
+            "CREATE INDEX IF NOT EXISTS sessions_ua_left ON sessions(last_ts) WHERE ip_masked = 1 AND ua <> ''",
+            // A changed page-facts report waits here until a reader on a second
+            // network reports the same (ta_storeFacts).
+            'ALTER TABLE page_facts ADD COLUMN cand_hash TEXT',
+            'ALTER TABLE page_facts ADD COLUMN cand_net TEXT',
+            'ALTER TABLE page_facts ADD COLUMN cand_ts INTEGER',
+        ],
     ];
 }
 
@@ -495,6 +530,27 @@ function ta_migrate(PDO $db): void
         }
         throw $e;
     }
+}
+
+/** The database and its write-ahead journal, in bytes, as on disk now. */
+function ta_storageBytes(): int
+{
+    [$dir] = ta_dataDir();
+    $file = $dir . '/' . TA_DB_FILE;
+    $n = 0;
+    foreach ([$file, $file . '-wal'] as $f) {
+        clearstatcache(true, $f);
+        $s = @filesize($f);
+        $n += is_int($s) ? $s : 0;
+    }
+    return $n;
+}
+
+/** Past the size ceiling nothing more is written: a flood can fill the
+ *  dashboard with junk, but never the hosting account's disk. */
+function ta_storageFull(?int $maxBytes = null): bool
+{
+    return ta_storageBytes() >= ($maxBytes ?? ta_maxBytes());
 }
 
 function ta_meta(PDO $db, string $key): ?string
@@ -563,7 +619,14 @@ function ta_tx(PDO $db, callable $fn)
 
 // ---------------------------------------------------------- validation ---
 
-/** Untrusted text: valid UTF-8, no control characters, trimmed, capped. */
+/** Control characters (C0, DEL, C1): a terminal reading an export or the
+ *  database would act on them (clear the screen, rewrite earlier lines). */
+const TA_CONTROL_RE = '/[\x00-\x1F\x7F\x{80}-\x{9F}]+/u';
+/** Bidirectional overrides and isolates: they reorder how text is shown. */
+const TA_BIDI_RE = '/[\x{202A}-\x{202E}\x{2066}-\x{2069}]/u';
+
+/** Untrusted text: valid UTF-8, no control characters or bidi overrides,
+ *  trimmed, capped. */
 function ta_text($v, int $max): ?string
 {
     if (!is_string($v)) {
@@ -572,12 +635,28 @@ function ta_text($v, int $max): ?string
     if (!mb_check_encoding($v, 'UTF-8')) {
         $v = mb_convert_encoding($v, 'UTF-8', 'UTF-8');
     }
-    $v = preg_replace('/[\x00-\x1F\x7F]+/u', ' ', $v) ?? '';
+    $v = preg_replace(TA_CONTROL_RE, ' ', $v) ?? '';
+    $v = preg_replace(TA_BIDI_RE, '', $v) ?? '';
     $v = trim(preg_replace('/\s{2,}/u', ' ', $v) ?? '');
     if ($v === '') {
         return null;
     }
     return mb_substr($v, 0, $max);
+}
+
+/** A User-Agent header as it may be stored: valid UTF-8, control characters
+ *  and bidi overrides replaced by spaces, at most 500 characters. Every other
+ *  stored string goes through ta_text() or ta_cleanPath(); this is the same
+ *  rule for the one header kept verbatim. */
+function ta_cleanUa($v): string
+{
+    $v = is_string($v) ? $v : '';
+    if (!mb_check_encoding($v, 'UTF-8')) {
+        $v = mb_convert_encoding($v, 'UTF-8', 'UTF-8');
+    }
+    $v = preg_replace(TA_CONTROL_RE, ' ', $v) ?? '';
+    $v = preg_replace(TA_BIDI_RE, ' ', $v) ?? '';
+    return mb_substr(trim($v), 0, 500);
 }
 
 function ta_int($v, int $min, int $max): ?int
@@ -615,6 +694,11 @@ function ta_cleanPath($v): ?string
         $v = $decoded;
     }
     if (preg_match('/[\x00-\x1F\x7F]/', $v)) {
+        return null;
+    }
+    // C1 controls and bidi overrides: no real path has them, and they make a
+    // stored path display as something else (U+202E flips the text after it).
+    if (preg_match('/[\x{80}-\x{9F}\x{202A}-\x{202E}\x{2066}-\x{2069}]/u', $v) === 1) {
         return null;
     }
     $v = preg_replace('#/{2,}#', '/', $v) ?? $v;
@@ -674,6 +758,31 @@ function ta_maskIp(string $ip): string
 function ta_isMaskedForm(string $ip): bool
 {
     return ta_maskIp($ip) === $ip;
+}
+
+/**
+ * The network a limit counts, as text: IPv4 as it is; IPv4-mapped IPv6 as the
+ * IPv4 address it carries; any other IPv6 as its /64. A home connection or a
+ * VPS is normally handed a whole /64 (2^64 addresses), so counting each IPv6
+ * address on its own would give one machine an endless supply of fresh limits.
+ */
+function ta_netKey(string $ip): string
+{
+    $bin = @inet_pton($ip);
+    if ($bin === false) {
+        return $ip;
+    }
+    if (strlen($bin) === 4) {
+        return (string) inet_ntop($bin);
+    }
+    if (strlen($bin) === 16) {
+        if (str_starts_with($bin, str_repeat("\0", 10) . "\xff\xff")) {
+            return (string) inet_ntop(substr($bin, 12));
+        }
+        $net = inet_ntop(substr($bin, 0, 8) . str_repeat("\0", 8));
+        return ($net === false ? $ip : $net) . '/64';
+    }
+    return $ip;
 }
 
 // --------------------------------------------------- user agents, bots ---
@@ -1174,7 +1283,7 @@ function ta_requestContext(bool $owner = false): array
     return [
         'now' => time(),
         'ip' => (string) ($_SERVER['REMOTE_ADDR'] ?? '0.0.0.0'),
-        'ua' => mb_substr((string) ($_SERVER['HTTP_USER_AGENT'] ?? ''), 0, 500),
+        'ua' => ta_cleanUa($_SERVER['HTTP_USER_AGENT'] ?? ''),
         'host' => strtolower((string) ($_SERVER['HTTP_HOST'] ?? '')),
         'accept_language' => (string) ($_SERVER['HTTP_ACCEPT_LANGUAGE'] ?? ''),
         'owner' => $owner,
@@ -1182,6 +1291,75 @@ function ta_requestContext(bool $owner = false): array
 }
 
 const TA_EVENT_TYPES = ['pageview', 'engage', 'vitals', 'search', 'notfound', 'outbound'];
+
+// ----------------------------------------------------- collection limits ---
+
+/** The rate_log key for a kind of event ('h' beacon, 'c' crawl) from one
+ *  network. A hash, so the table never holds an address. */
+function ta_rateKey(string $kind, string $ip): string
+{
+    return $kind . ':' . substr(hash('sha256', ta_netKey($ip)), 0, 20);
+}
+
+/** Would one more event be admitted? A read, outside any write lock, so a
+ *  flood that is over its limit costs no lock at all. */
+function ta_admitPeek(PDO $db, string $kind, string $ip, int $now, int $perNet, int $perMinute): bool
+{
+    $st = $db->prepare('SELECT COUNT(*) FROM rate_log WHERE k = ? AND ts > ?');
+    $st->execute([ta_rateKey($kind, $ip), $now - TA_RATE_WINDOW]);
+    if ((int) $st->fetchColumn() >= $perNet) {
+        return false;
+    }
+    $st = $db->prepare('SELECT COUNT(*) FROM rate_log WHERE ts > ? AND substr(k, 1, 2) = ?');
+    $st->execute([$now - 60, $kind . ':']);
+    return (int) $st->fetchColumn() < $perMinute;
+}
+
+/**
+ * Admit one event: at most $perNet per network in TA_RATE_WINDOW and at most
+ * $perMinute from everyone together in the last minute. Call inside the write
+ * transaction that stores the event, so the check and the count are one step.
+ */
+function ta_admit(PDO $db, string $kind, string $ip, int $now, int $perNet, int $perMinute): bool
+{
+    return ta_tx($db, function () use ($db, $kind, $ip, $now, $perNet, $perMinute) {
+        if (!ta_admitPeek($db, $kind, $ip, $now, $perNet, $perMinute)) {
+            return false;
+        }
+        $db->prepare('INSERT INTO rate_log (k, ts) VALUES (?, ?)')->execute([ta_rateKey($kind, $ip), $now]);
+        if (random_int(1, 100) === 1) {
+            $db->prepare('DELETE FROM rate_log WHERE ts <= ?')->execute([$now - TA_RATE_WINDOW]);
+        }
+        return true;
+    });
+}
+
+/**
+ * hit.php's door: the limits, then the event, in one write transaction.
+ * Returns what ta_record() returns, or 'rate_limited' / 'storage_full'.
+ *
+ * @param array{per_net?:int,per_minute?:int,max_bytes?:int} $limits (tests)
+ */
+function ta_recordLimited(PDO $db, array $ev, array $ctx, array $limits = []): string
+{
+    $now = (int) ($ctx['now'] ?? time());
+    $ctx['now'] = $now;
+    $ip = (string) ($ctx['ip'] ?? '0.0.0.0');
+    $perNet = $limits['per_net'] ?? ta_hitLimit();
+    $perMinute = $limits['per_minute'] ?? TA_HIT_GLOBAL_PER_MIN;
+    if (ta_storageFull($limits['max_bytes'] ?? null)) {
+        return 'storage_full';
+    }
+    if (!ta_admitPeek($db, 'h', $ip, $now, $perNet, $perMinute)) {
+        return 'rate_limited';
+    }
+    return ta_tx($db, function () use ($db, $ev, $ctx, $ip, $now, $perNet, $perMinute) {
+        if (!ta_admit($db, 'h', $ip, $now, $perNet, $perMinute)) {
+            return 'rate_limited';
+        }
+        return ta_record($db, $ev, $ctx);
+    });
+}
 
 /**
  * Store one beacon event. Returns 'stored' or the reason it was dropped
@@ -1195,7 +1373,7 @@ function ta_record(PDO $db, array $ev, array $ctx): string
         return 'bad_type';
     }
     $ctx += ['now' => time(), 'ip' => '0.0.0.0', 'ua' => '', 'host' => '', 'accept_language' => '', 'owner' => false];
-    $ctx['ua'] = mb_substr((string) $ctx['ua'], 0, 500);
+    $ctx['ua'] = ta_cleanUa($ctx['ua']);
     $agent = ta_classifyAgent($ctx['ua']);
     $ctx['agent'] = $agent['class'];
     $ctx['bot'] = $agent['bot'];
@@ -1292,6 +1470,9 @@ function ta_recordPageview(PDO $db, array $ev, array $ctx): string
         $visitors = ta_visitorIds($db, $ctx);
         $session = ta_activeSession($db, $visitors, $now);
         $owner = $ctx['owner'] ? 1 : 0;
+        // A visit keeps the visitor hash it began with, also when it runs past
+        // midnight UTC (when the salt changes): one visit is one visitor.
+        $visitor = $session !== null ? (string) $session['visitor'] : $visitors[0];
 
         if ($session !== null) {
             $sid = (string) $session['id'];
@@ -1341,7 +1522,7 @@ function ta_recordPageview(PDO $db, array $ev, array $ctx): string
         $db->prepare('INSERT INTO pageviews (view_id, ts, session_id, visitor, seq, path, prev_path, channel, source, ref, ref_host, is_404, agent, owner)
             VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)')
             ->execute([
-                $view, $now, $sid, $visitors[0], $seq, $path,
+                $view, $now, $sid, $visitor, $seq, $path,
                 $ref['kind'] === 'internal' ? $ref['path'] : null,
                 $ref['kind'] === 'external' ? $ref['channel'] : null,
                 $ref['kind'] === 'external' ? $ref['name'] : null,
@@ -1351,20 +1532,130 @@ function ta_recordPageview(PDO $db, array $ev, array $ctx): string
             ]);
 
         if ($facts !== null && $ctx['agent'] === 'human') {
-            $db->prepare('INSERT INTO page_facts (path, ts, view_id, title, description, canonical, robots, lang, h1_count, og_title, og_image, img_no_alt)
-                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-                ON CONFLICT(path) DO UPDATE SET ts = excluded.ts, view_id = excluded.view_id, title = excluded.title,
-                    description = excluded.description, canonical = excluded.canonical, robots = excluded.robots,
-                    lang = excluded.lang, h1_count = excluded.h1_count, og_title = excluded.og_title,
-                    og_image = excluded.og_image, img_no_alt = excluded.img_no_alt
-                WHERE excluded.ts >= page_facts.ts')
-                ->execute([
-                    $path, $now, $view, $facts['title'], $facts['description'], $facts['canonical'], $facts['robots'],
-                    $facts['lang'], $facts['h1_count'], $facts['og_title'], $facts['og_image'], $facts['img_no_alt'],
-                ]);
+            ta_storeFacts($db, $path, $view, $facts, (string) $ctx['ip'], $now);
         }
         return 'stored';
     });
+}
+
+const TA_FACT_FIELDS = ['title', 'description', 'canonical', 'robots', 'lang', 'h1_count', 'og_title', 'og_image', 'img_no_alt'];
+
+/** One fingerprint for a set of facts (a ta_cleanFacts() array or a row). */
+function ta_factsHash(array $f): string
+{
+    $vals = [];
+    foreach (TA_FACT_FIELDS as $k) {
+        $v = $f[$k] ?? null;
+        $vals[] = $v === null ? null : (string) $v;
+    }
+    return substr(hash('sha256', (string) json_encode($vals)), 0, 16);
+}
+
+/** The reporter's network for agreeing on facts: IPv4 /24, IPv6 /48 (the
+ *  masked form), hashed. Two reports from one network are one witness. */
+function ta_factsNet(string $ip): string
+{
+    return substr(hash('sha256', 'facts|' . ta_maskIp($ip)), 0, 16);
+}
+
+/**
+ * Store a report of a page's facts. A browser's report is not proof: anyone
+ * can send one. So the first report for a path is kept; a report that agrees
+ * with what is stored refreshes it (and dismisses any pending challenger); a
+ * report that differs waits as the challenger until a reader on another
+ * network reports the very same facts, and only then replaces them. Paths
+ * outside sitemap.xml gain facts at most TA_FACTS_NEW_PER_DAY a day, so a
+ * flood of invented paths cannot fill the table.
+ *
+ * @return string facts_new | facts_confirmed | facts_changed | facts_pending | facts_capped
+ */
+function ta_storeFacts(PDO $db, string $path, ?string $view, array $facts, string $ip, int $now): string
+{
+    $hash = ta_factsHash($facts);
+    $net = ta_factsNet($ip);
+    $st = $db->prepare('SELECT * FROM page_facts WHERE path = ?');
+    $st->execute([$path]);
+    $cur = $st->fetch();
+    $set = static fn() => $db->prepare('UPDATE page_facts SET ts = ?, view_id = ?, title = ?, description = ?, canonical = ?, robots = ?,
+            lang = ?, h1_count = ?, og_title = ?, og_image = ?, img_no_alt = ?, cand_hash = NULL, cand_net = NULL, cand_ts = NULL WHERE path = ?')
+        ->execute([$now, $view, $facts['title'], $facts['description'], $facts['canonical'], $facts['robots'], $facts['lang'],
+            $facts['h1_count'], $facts['og_title'], $facts['og_image'], $facts['img_no_alt'], $path]);
+    if ($cur === false) {
+        if (!in_array($path, ta_sitemapPaths() ?? [], true) && !ta_factsNewToday($db, $now)) {
+            return 'facts_capped';
+        }
+        $db->prepare('INSERT INTO page_facts (path, ts, view_id, title, description, canonical, robots, lang, h1_count, og_title, og_image, img_no_alt)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)')
+            ->execute([$path, $now, $view, $facts['title'], $facts['description'], $facts['canonical'], $facts['robots'],
+                $facts['lang'], $facts['h1_count'], $facts['og_title'], $facts['og_image'], $facts['img_no_alt']]);
+        return 'facts_new';
+    }
+    if (ta_factsHash($cur) === $hash) {
+        $db->prepare('UPDATE page_facts SET ts = MAX(ts, CAST(? AS INTEGER)), view_id = ?, cand_hash = NULL, cand_net = NULL, cand_ts = NULL WHERE path = ?')
+            ->execute([$now, $view, $path]);
+        return 'facts_confirmed';
+    }
+    $fresh = $cur['cand_ts'] !== null && (int) $cur['cand_ts'] >= $now - TA_FACTS_CONFIRM_DAYS * 86400;
+    if ($fresh && $cur['cand_hash'] === $hash) {
+        if ($cur['cand_net'] !== $net) {
+            $set();
+            return 'facts_changed';
+        }
+        return 'facts_pending'; // the same network again is still one witness
+    }
+    $db->prepare('UPDATE page_facts SET cand_hash = ?, cand_net = ?, cand_ts = ? WHERE path = ?')->execute([$hash, $net, $now, $path]);
+    return 'facts_pending';
+}
+
+/** Count one new non-sitemap path with facts today; false once the day's
+ *  allowance is spent. */
+function ta_factsNewToday(PDO $db, int $now): bool
+{
+    $key = 'facts_new:' . gmdate('Y-m-d', $now);
+    $n = (int) (ta_meta($db, $key) ?? 0);
+    if ($n >= TA_FACTS_NEW_PER_DAY) {
+        return false;
+    }
+    if ($n === 0) {
+        $db->prepare("DELETE FROM meta WHERE key LIKE 'facts_new:%' AND key < ?")->execute([$key]);
+    }
+    ta_setMeta($db, $key, (string) ($n + 1));
+    return true;
+}
+
+/** Paths listed in sitemap.xml on disk (read once per request), or null with
+ *  the reason. */
+function ta_sitemapPaths(?string &$error = null): ?array
+{
+    static $cache = [];
+    $root = (string) ($_SERVER['DOCUMENT_ROOT'] ?? '');
+    $file = ($root !== '' ? rtrim($root, '/') : dirname(__DIR__)) . '/sitemap.xml';
+    if (array_key_exists($file, $cache)) {
+        [$paths, $error] = $cache[$file];
+        return $paths;
+    }
+    $paths = null;
+    $error = null;
+    if (!is_file($file) || !is_readable($file)) {
+        $error = 'sitemap.xml was not found in the web root.';
+    } else {
+        $xml = (string) @file_get_contents($file, false, null, 0, 10 * 1024 * 1024);
+        if (!preg_match_all('#<loc>\s*([^<\s]+)\s*</loc>#i', $xml, $m)) {
+            $error = 'sitemap.xml lists no URLs.';
+        } else {
+            $set = [];
+            foreach ($m[1] as $loc) {
+                $loc = html_entity_decode($loc, ENT_QUOTES | ENT_XML1, 'UTF-8');
+                $p = ta_cleanPath((string) (parse_url($loc, PHP_URL_PATH) ?? '/') ?: '/');
+                if ($p !== null) {
+                    $set[$p] = true;
+                }
+            }
+            $paths = array_keys($set);
+        }
+    }
+    $cache[$file] = [$paths, $error];
+    return $paths;
 }
 
 /** The pageview an event refers to, if it belongs to the same visitor. */
@@ -1399,8 +1690,20 @@ function ta_recordEngage(PDO $db, array $ev, array $ctx): string
         if ($pv === null) {
             return 'unknown_view';
         }
-        $db->prepare('UPDATE pageviews SET engaged_s = MAX(COALESCE(engaged_s, 0), CAST(? AS INTEGER)), scroll_pct = MAX(COALESCE(scroll_pct, 0), CAST(? AS INTEGER)) WHERE id = ?')
-            ->execute([$seconds ?? 0, $scroll ?? 0, $pv['id']]);
+        // A figure the beacon did not measure stays unknown (NULL, which the
+        // averages leave out); it is never stored as 0.
+        $set = [];
+        $args = [];
+        if ($seconds !== null) {
+            $set[] = 'engaged_s = MAX(COALESCE(engaged_s, 0), CAST(? AS INTEGER))';
+            $args[] = $seconds;
+        }
+        if ($scroll !== null) {
+            $set[] = 'scroll_pct = MAX(COALESCE(scroll_pct, 0), CAST(? AS INTEGER))';
+            $args[] = $scroll;
+        }
+        $args[] = $pv['id'];
+        $db->prepare('UPDATE pageviews SET ' . implode(', ', $set) . ' WHERE id = ?')->execute($args);
         if ($seconds !== null) {
             // Visible time only: a tab left in the background does not stretch the visit.
             $until = min((int) $ctx['now'], (int) $pv['ts'] + $seconds);
@@ -1560,9 +1863,9 @@ function ta_crawlKind(string $path): string
  * Record one crawler request. $c: now, ip, ua, path, status, method.
  * Returns 'stored' or why not.
  */
-function ta_logCrawl(PDO $db, array $c): string
+function ta_logCrawl(PDO $db, array $c, array $limits = []): string
 {
-    $ua = mb_substr((string) ($c['ua'] ?? ''), 0, 500);
+    $ua = ta_cleanUa($c['ua'] ?? '');
     $known = ta_knownCrawler($ua);
     if ($known === null) {
         // Only the .htaccess block's crawlers are logged; a person or script
@@ -1577,19 +1880,58 @@ function ta_logCrawl(PDO $db, array $c): string
     $ip = (string) ($c['ip'] ?? '0.0.0.0');
     $method = strtoupper((string) ($c['method'] ?? 'GET')) === 'HEAD' ? 'HEAD' : 'GET';
     $now = (int) ($c['now'] ?? time());
-    // Anyone can claim to be Googlebot. Past this many rows from one address
-    // in ten minutes the visit is still served, just no longer written down.
-    $st = $db->prepare('SELECT COUNT(*) FROM crawls WHERE ip = ? AND ts >= ?');
-    $st->execute([$ip, $now - 600]);
-    if ((int) $st->fetchColumn() >= TA_CRAWL_LOG_LIMIT) {
+    if (ta_storageFull($limits['max_bytes'] ?? null)) {
+        return 'storage_full';
+    }
+    // Anyone can claim to be Googlebot. Past this many rows from one network
+    // (an IPv4 address, an IPv6 /64) in ten minutes, or from everyone in a
+    // minute, the visit is still served, just no longer written down.
+    $perNet = $limits['per_net'] ?? TA_CRAWL_LOG_LIMIT;
+    $perMinute = $limits['per_minute'] ?? TA_CRAWL_GLOBAL_PER_MIN;
+    if (!ta_admitPeek($db, 'c', $ip, $now, $perNet, $perMinute)) {
         return 'rate_limited';
     }
-    $st = $db->prepare('SELECT verdict FROM bot_verdicts WHERE ip = ? AND bot = ?');
-    $st->execute([$ip, $bot]);
-    $verdict = $st->fetchColumn();
-    $db->prepare('INSERT INTO crawls (ts, path, kind, bot, ua, ip, ip_masked, status, method, verdict) VALUES (?, ?, ?, ?, ?, ?, 0, ?, ?, ?)')
-        ->execute([$now, $path, ta_crawlKind($path), $bot, $ua, $ip, (int) ($c['status'] ?? 200), $method, $verdict === false ? null : $verdict]);
-    return 'stored';
+    return ta_tx($db, function () use ($db, $ip, $now, $perNet, $perMinute, $bot, $path, $ua, $method, $c) {
+        if (!ta_admit($db, 'c', $ip, $now, $perNet, $perMinute)) {
+            return 'rate_limited';
+        }
+        // The reverse-DNS verdict belongs to the address and the operator: a
+        // Google address checked as Googlebot is as verified when it fetches
+        // as Google-InspectionTool.
+        $st = $db->prepare('SELECT bot, verdict FROM bot_verdicts WHERE ip = ?');
+        $st->execute([$ip]);
+        $v = $st->fetch();
+        $verdict = $v !== false && $v['verdict'] !== 'error' && ta_sameOperator((string) $v['bot'], $bot) ? (string) $v['verdict'] : null;
+        $db->prepare('INSERT INTO crawls (ts, path, kind, bot, ua, ip, ip_masked, status, method, verdict) VALUES (?, ?, ?, ?, ?, ?, 0, ?, ?, ?)')
+            ->execute([$now, $path, ta_crawlKind($path), $bot, $ua, $ip, (int) ($c['status'] ?? 200), $method, $verdict]);
+        return 'stored';
+    });
+}
+
+/** Two crawler names from the same operator (the same verification family). */
+function ta_sameOperator(string $a, string $b): bool
+{
+    if ($a === $b) {
+        return true;
+    }
+    $fa = ta_crawlerFamily($a);
+    return $fa !== '' && $fa === ta_crawlerFamily($b);
+}
+
+/** Every crawler name of $bot's operator. */
+function ta_operatorNames(string $bot): array
+{
+    $family = ta_crawlerFamily($bot);
+    if ($family === '') {
+        return [$bot];
+    }
+    $names = [];
+    foreach (TA_CRAWLERS as [, $name, $f]) {
+        if ($f === $family) {
+            $names[] = $name;
+        }
+    }
+    return $names;
 }
 
 // ----------------------------------------------------- bot verification ---
@@ -1625,8 +1967,12 @@ function ta_verifyCrawlerIp(string $ip, string $bot, ?callable $reverse = null, 
         return $out;
     };
     $ptr = $reverse($ip);
+    // gethostbyaddr() answers with the address itself both when there is no
+    // PTR record and when the resolver timed out or could not be reached, so
+    // that answer proves nothing either way: "error", checked again later,
+    // never "failed" (which the dashboard reads as "impostor, likely").
     if (!is_string($ptr) || $ptr === '' || $ptr === $ip) {
-        return ['verdict' => $ptr === false ? 'error' : 'failed', 'ptr' => null];
+        return ['verdict' => 'error', 'ptr' => null];
     }
     $ptr = strtolower(rtrim($ptr, '.'));
     $under = false;
@@ -1649,7 +1995,8 @@ function ta_verifyCrawlerIp(string $ip, string $bot, ?callable $reverse = null, 
     return ['verdict' => 'failed', 'ptr' => $ptr];
 }
 
-/** Store a verdict and stamp it on every logged crawl from that address. */
+/** Store a verdict and stamp it on every logged crawl from that address by a
+ *  crawler of the same operator (Google's crawlers share their addresses). */
 function ta_saveVerdict(PDO $db, string $ip, string $bot, array $v, int $now): void
 {
     ta_tx($db, function () use ($db, $ip, $bot, $v, $now) {
@@ -1657,7 +2004,10 @@ function ta_saveVerdict(PDO $db, string $ip, string $bot, array $v, int $now): v
             ON CONFLICT(ip) DO UPDATE SET bot = excluded.bot, verdict = excluded.verdict, ptr = excluded.ptr, checked_ts = excluded.checked_ts')
             ->execute([$ip, $bot, $v['verdict'], $v['ptr'], $now]);
         if ($v['verdict'] !== 'error') {
-            $db->prepare('UPDATE crawls SET verdict = ? WHERE ip = ? AND bot = ? AND ip_masked = 0')->execute([$v['verdict'], $ip, $bot]);
+            $names = ta_operatorNames($bot);
+            $ph = implode(',', array_fill(0, count($names), '?'));
+            $db->prepare("UPDATE crawls SET verdict = ? WHERE ip = ? AND ip_masked = 0 AND bot IN ($ph)")
+                ->execute(array_merge([$v['verdict'], $ip], $names));
         }
     });
 }
@@ -1666,48 +2016,99 @@ function ta_saveVerdict(PDO $db, string $ip, string $bot, array $v, int $now): v
 
 /**
  * Mask full IPs past the IP window, delete events past the keep window, drop
- * cached verdicts for masked addresses. Throttled unless $force.
- * Returns the summary (also stored as meta last_prune) or null if skipped.
+ * cached verdicts whose address is no longer kept whole. Throttled unless
+ * $force. Returns the summary (also stored as meta last_prune) or null if
+ * skipped.
+ *
+ * The work is done TA_MAINTAIN_BATCH rows per transaction, each step reading
+ * only the rows it has work for (the partial indexes of schema 2), so the
+ * write lock that beacons and crawler rows wait on is held for milliseconds
+ * at a time, however large the database has grown.
  */
 function ta_maintain(PDO $db, int $now, bool $force = false): ?array
 {
-    if (!$force) {
-        $last = json_decode((string) ta_meta($db, 'last_prune'), true);
-        if (is_array($last) && (int) ($last['ts'] ?? 0) > $now - TA_PRUNE_MIN_GAP) {
-            return null;
+    $claimed = ta_tx($db, function () use ($db, $now, $force) {
+        if (!$force) {
+            $last = json_decode((string) ta_meta($db, 'last_prune'), true);
+            $claim = (int) (ta_meta($db, 'prune_claim') ?? 0);
+            if ((is_array($last) && (int) ($last['ts'] ?? 0) > $now - TA_PRUNE_MIN_GAP) || $claim > $now - TA_PRUNE_MIN_GAP) {
+                return false;
+            }
         }
+        ta_setMeta($db, 'prune_claim', (string) $now);
+        return true;
+    });
+    if (!$claimed) {
+        return null;
     }
     $ipCut = $now - ta_ipDays() * 86400;
     $keepCut = $now - ta_keepDays() * 86400;
-    $summary = ta_tx($db, function () use ($db, $ipCut, $keepCut, $now) {
-        $masked = ['sessions' => 0, 'crawls' => 0];
-        foreach (['sessions' => 'last_ts', 'crawls' => 'ts'] as $table => $col) {
-            $st = $db->prepare("SELECT DISTINCT ip FROM $table WHERE ip_masked = 0 AND $col < ?");
-            $st->execute([$ipCut]);
-            $up = $db->prepare("UPDATE $table SET ip = ?, ip_masked = 1 WHERE ip = ? AND ip_masked = 0 AND $col < ?");
-            foreach ($st->fetchAll(PDO::FETCH_COLUMN) as $ip) {
-                $up->execute([ta_maskIp((string) $ip), $ip, $ipCut]);
-                $masked[$table] += $up->rowCount();
-            }
-        }
-        // Masked sessions keep their parsed browser and OS; the raw UA string,
-        // which can be close to unique, goes with the address.
-        $db->prepare("UPDATE sessions SET ua = '' WHERE ip_masked = 1 AND ua <> '' AND last_ts < ?")->execute([$ipCut]);
-        $st = $db->prepare('DELETE FROM bot_verdicts WHERE checked_ts < ?');
-        $st->execute([$ipCut]);
-        $verdicts = $st->rowCount();
+    $batch = TA_MAINTAIN_BATCH;
+    // Run $step (one batch, in its own transaction) until it does less than a batch.
+    $loop = static function (callable $step) use ($db, $batch): int {
+        $total = 0;
+        do {
+            $n = (int) ta_tx($db, $step);
+            $total += $n;
+        } while ($n >= $batch);
+        return $total;
+    };
 
-        $deleted = [];
-        foreach (['pageviews' => 'ts', 'sessions' => 'last_ts', 'vitals' => 'ts', 'searches' => 'ts', 'notfound' => 'ts',
-                  'outbound' => 'ts', 'crawls' => 'ts', 'page_facts' => 'ts'] as $table => $col) {
-            $st = $db->prepare("DELETE FROM $table WHERE $col < ?");
-            $st->execute([$keepCut]);
-            $deleted[$table] = $st->rowCount();
+    $masked = ['sessions' => 0, 'crawls' => 0];
+    // Masked sessions keep their parsed browser and OS; the raw UA string,
+    // which can be close to unique, goes with the address.
+    $masked['sessions'] = $loop(static function () use ($db, $ipCut, $batch) {
+        $st = $db->prepare('SELECT rowid AS r, ip FROM sessions INDEXED BY sessions_unmasked WHERE ip_masked = 0 AND last_ts < ? LIMIT ' . $batch);
+        $st->execute([$ipCut]);
+        $up = $db->prepare("UPDATE sessions SET ip = ?, ip_masked = 1, ua = '' WHERE rowid = ?");
+        $rows = $st->fetchAll();
+        foreach ($rows as $r) {
+            $up->execute([ta_maskIp((string) $r['ip']), $r['r']]);
         }
-        $summary = ['ts' => $now, 'masked' => $masked, 'deleted' => $deleted, 'verdicts_dropped' => $verdicts,
-                    'ip_days' => ta_ipDays(), 'keep_days' => ta_keepDays()];
+        return count($rows);
+    });
+    $masked['crawls'] = $loop(static function () use ($db, $ipCut, $batch) {
+        $st = $db->prepare('SELECT rowid AS r, ip FROM crawls INDEXED BY crawls_unmasked WHERE ip_masked = 0 AND ts < ? LIMIT ' . $batch);
+        $st->execute([$ipCut]);
+        $up = $db->prepare('UPDATE crawls SET ip = ?, ip_masked = 1 WHERE rowid = ?');
+        $rows = $st->fetchAll();
+        foreach ($rows as $r) {
+            $up->execute([ta_maskIp((string) $r['ip']), $r['r']]);
+        }
+        return count($rows);
+    });
+    // Masked before the raw UA went with the address (older versions).
+    $loop(static function () use ($db, $ipCut, $batch) {
+        $st = $db->prepare("UPDATE sessions SET ua = '' WHERE rowid IN (SELECT rowid FROM sessions INDEXED BY sessions_ua_left
+            WHERE ip_masked = 1 AND ua <> '' AND last_ts < ? LIMIT $batch)");
+        $st->execute([$ipCut]);
+        return $st->rowCount();
+    });
+
+    // A verdict names a full address (and its PTR often spells it out): it
+    // goes when no crawl from that address is kept unmasked, or when it is as
+    // old as the IP window itself.
+    $verdicts = (int) ta_tx($db, static function () use ($db, $ipCut) {
+        $st = $db->prepare('DELETE FROM bot_verdicts WHERE checked_ts < ?
+            OR NOT EXISTS (SELECT 1 FROM crawls c WHERE c.ip = bot_verdicts.ip AND c.ip_masked = 0)');
+        $st->execute([$ipCut]);
+        return $st->rowCount();
+    });
+
+    $deleted = [];
+    foreach (['pageviews' => 'ts', 'sessions' => 'last_ts', 'vitals' => 'ts', 'searches' => 'ts', 'notfound' => 'ts',
+              'outbound' => 'ts', 'crawls' => 'ts', 'page_facts' => 'ts'] as $table => $col) {
+        $deleted[$table] = $loop(static function () use ($db, $table, $col, $keepCut, $batch) {
+            $st = $db->prepare("DELETE FROM $table WHERE rowid IN (SELECT rowid FROM $table WHERE $col < ? LIMIT $batch)");
+            $st->execute([$keepCut]);
+            return $st->rowCount();
+        });
+    }
+    $summary = ['ts' => $now, 'masked' => $masked, 'deleted' => $deleted, 'verdicts_dropped' => $verdicts,
+                'ip_days' => ta_ipDays(), 'keep_days' => ta_keepDays()];
+    ta_tx($db, static function () use ($db, $now, $summary) {
+        $db->prepare('DELETE FROM rate_log WHERE ts <= ?')->execute([$now - TA_RATE_WINDOW]);
         ta_setMeta($db, 'last_prune', (string) json_encode($summary));
-        return $summary;
     });
     try {
         $db->exec('PRAGMA incremental_vacuum');
@@ -1774,17 +2175,47 @@ function ta_adminFingerprint(): string
     return substr(hash('sha256', ta_secret('admin_password_hash')), 0, 16);
 }
 
+/**
+ * The sign-out generation: every session token carries the generation it was
+ * issued in, and signing out moves the generation on, so every token issued
+ * before — on this browser or copied off it — stops working at once ("sign
+ * out everywhere"; there is one owner). Kept in the analytics database; null
+ * when the database cannot be read.
+ */
+function ta_adminGeneration(?PDO $db): ?int
+{
+    if ($db === null) {
+        return null;
+    }
+    try {
+        return (int) (ta_meta($db, 'admin_generation') ?? 0);
+    } catch (Throwable) {
+        return null;
+    }
+}
+
+/** Sign every session out. Returns the new generation. */
+function ta_adminRevokeAll(PDO $db): int
+{
+    return (int) ta_tx($db, static function () use ($db) {
+        $g = (int) (ta_meta($db, 'admin_generation') ?? 0) + 1;
+        ta_setMeta($db, 'admin_generation', (string) $g);
+        return $g;
+    });
+}
+
 /** Needs _lib.php (signPayload). */
-function ta_adminIssue(int $now): string
+function ta_adminIssue(int $now, ?PDO $db = null): string
 {
     if (!function_exists('signPayload') || ta_adminMissing() !== []) {
         return '';
     }
-    return signPayload(['v' => 1, 'iat' => $now, 'exp' => $now + TA_ADMIN_TTL, 'ph' => ta_adminFingerprint()], TA_ADMIN_DOMAIN);
+    $g = ta_adminGeneration($db ?? ta_db()) ?? 0;
+    return signPayload(['v' => 1, 'iat' => $now, 'exp' => $now + TA_ADMIN_TTL, 'ph' => ta_adminFingerprint(), 'g' => $g], TA_ADMIN_DOMAIN);
 }
 
 /** The verified admin session payload, or null. Needs _lib.php (verifyToken). */
-function ta_adminVerify(string $token, int $now): ?array
+function ta_adminVerify(string $token, int $now, ?PDO $db = null): ?array
 {
     if ($token === '' || strlen($token) > 1024 || !function_exists('verifyToken') || ta_adminMissing() !== []) {
         return null;
@@ -1796,7 +2227,8 @@ function ta_adminVerify(string $token, int $now): ?array
     $iat = $p['iat'] ?? null;
     $exp = $p['exp'] ?? null;
     $ph = $p['ph'] ?? null;
-    if (!is_int($iat) || !is_int($exp) || !is_string($ph)) {
+    $g = $p['g'] ?? 0;
+    if (!is_int($iat) || !is_int($exp) || !is_string($ph) || !is_int($g)) {
         return null;
     }
     if ($exp <= $now || $iat > $now + 60 || $exp - $iat > TA_ADMIN_TTL) {
@@ -1805,11 +2237,18 @@ function ta_adminVerify(string $token, int $now): ?array
     if (!hash_equals(ta_adminFingerprint(), $ph)) {
         return null;
     }
+    // Signed out since this token was issued. (With the database unreadable
+    // the generation is unknown and the other checks stand alone: the owner
+    // must still reach the health page that says what is wrong.)
+    $current = ta_adminGeneration($db ?? ta_db());
+    if ($current !== null && $g !== $current) {
+        return null;
+    }
     return $p;
 }
 
-function ta_adminFromCookie(int $now): ?array
+function ta_adminFromCookie(int $now, ?PDO $db = null): ?array
 {
     $raw = $_COOKIE[TA_ADMIN_COOKIE] ?? '';
-    return is_string($raw) ? ta_adminVerify($raw, $now) : null;
+    return is_string($raw) ? ta_adminVerify($raw, $now, $db) : null;
 }

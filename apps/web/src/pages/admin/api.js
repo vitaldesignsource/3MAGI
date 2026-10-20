@@ -17,6 +17,15 @@ export class ApiError extends Error {
     }
 }
 
+/** Plain http on a real host: a password would cross the network in the
+ *  clear, so the dashboard sends nothing and points to https instead. (The
+ *  server refuses too, but only after the request has been sent.) */
+export function insecureOrigin() {
+    const { protocol, hostname } = window.location;
+    const local = hostname === 'localhost' || hostname === '127.0.0.1' || hostname === '[::1]' || hostname === '::1';
+    return protocol !== 'https:' && !local;
+}
+
 /** The browser's IANA time zone: day boundaries and chart labels follow it. */
 export function browserTimeZone() {
     try {
