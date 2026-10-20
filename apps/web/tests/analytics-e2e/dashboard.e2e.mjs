@@ -622,6 +622,17 @@ async function gates() {
         await ctx.close();
     }
 
+    {
+        // Inside another site's frame the dashboard offers no sign-in form.
+        const fctx = await browser.newContext({ viewport: { width: 1000, height: 700 } });
+        const fpage = await fctx.newPage();
+        await fpage.setContent(`<iframe src="${BASE}/admin" style="width:900px;height:600px"></iframe>`);
+        const frame = await (await fpage.waitForSelector('iframe')).contentFrame();
+        await frame.waitForSelector('.adm-gate-title');
+        check('framed: refuses to show the sign-in form', /its own tab/.test(await frame.textContent('.adm-gate-title')) && !(await frame.$('#adm-email')));
+        await fctx.close();
+    }
+
     const ctx = await browser.newContext({ viewport: { width: 390, height: 844 }, timezoneId: TZ, locale: LOCALE });
     const page = await ctx.newPage();
     const con = watch(page, 'lockout');

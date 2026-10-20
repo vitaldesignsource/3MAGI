@@ -1,4 +1,4 @@
-import React, { useEffect, useId, useLayoutEffect, useMemo, useState } from 'react';
+import React, { useEffect, useId, useLayoutEffect, useMemo, useRef, useState } from 'react';
 import { bucketLabel, int, short } from './format';
 
 // Hand-drawn inline SVG charts. No chart library: a time series (line + wash,
@@ -51,6 +51,7 @@ export function TimeChart({
     const [wrapRef, width, wrapEl] = useWidth();
     const [active, setActive] = useState(null);
     const [keyboard, setKeyboard] = useState(false);
+    const pointerFocus = useRef(false);
     const descId = useId();
     const n = points ? points.length : 0;
     const prev = showPrevious && previous && previous.length ? previous : null;
@@ -140,10 +141,14 @@ export function TimeChart({
                 aria-label={`${name} chart. Use the left and right arrow keys to read each ${granularity}.`}
                 aria-describedby={descId}
                 onPointerMove={(e) => { setKeyboard(false); pick(e.clientX); }}
-                onPointerDown={(e) => { setKeyboard(false); pick(e.clientX); }}
+                onPointerDown={(e) => { pointerFocus.current = true; setKeyboard(false); pick(e.clientX); }}
                 onPointerLeave={() => setActive(null)}
                 onKeyDown={onKey}
-                onFocus={() => { if (active === null) { setKeyboard(true); setActive(n - 1); } }}
+                onFocus={() => {
+                    // Focus by Tab starts the reading at the latest bucket; a click keeps where it landed.
+                    if (!pointerFocus.current && active === null) { setKeyboard(true); setActive(n - 1); }
+                    pointerFocus.current = false;
+                }}
                 onBlur={() => setActive(null)}
             >
                 <svg width={width} height={height} aria-hidden="true" focusable="false">

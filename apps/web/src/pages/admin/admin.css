@@ -286,7 +286,7 @@ th[aria-sort] .adm-sort-mark { opacity: 1; }
 
 .adm-path, .adm-ip, .adm-ua, .adm-query { overflow-wrap: break-word; }
 /* Secondary strings (referrers, host names) may break anywhere rather than widen a column. */
-.adm-sub .adm-path, .adm-refs .adm-path, .adm-verdict-cell .adm-path, .adm-hosts .adm-path { overflow-wrap: anywhere; }
+.adm-sub .adm-path, .adm-refs .adm-path, .adm-verdict-cell .adm-path, .adm-hosts .adm-path, .adm-query { overflow-wrap: anywhere; }
 .adm-path { font-family: var(--sans); font-size: 0.88em; }
 .adm-ip { font-family: var(--mono); font-size: 0.86em; }
 .adm-ua { font-family: var(--mono); font-size: 0.78rem; color: var(--text-2); }
@@ -514,8 +514,9 @@ th[aria-sort] .adm-sort-mark { opacity: 1; }
 .adm-missing { margin: 0 0 14px; }
 .adm-missing li { padding: 2px 0; }
 .adm-missing code { color: var(--down); }
-.adm-steps { margin: 18px 0 0; padding: 0 0 0 20px; }
-.adm-steps > li { margin: 0 0 16px; }
+.adm-steps { margin: 18px 0 0; padding: 0 0 0 22px; list-style: decimal outside; }
+.adm-steps > li { margin: 0 0 16px; padding-left: 4px; }
+.adm-steps > li::marker { color: var(--gold); font-family: var(--caps); }
 .adm-steps h2 { margin: 0 0 4px; font-family: var(--caps); font-weight: 500; font-size: 1rem; letter-spacing: 0.04em; }
 .adm-steps p { margin: 0 0 8px; color: var(--text-2); }
 .adm-steps pre {
@@ -545,6 +546,11 @@ th[aria-sort] .adm-sort-mark { opacity: 1; }
   .adm-filters-form { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .adm-inline-form input { width: 100%; flex: 1 1 10rem; }
   .adm-source-body { padding-left: 0; }
+  /* Filter chips scroll sideways in their own row instead of filling the screen. */
+  .adm-chips { flex-wrap: nowrap; overflow-x: auto; overscroll-behavior-x: contain; padding-bottom: 6px; scrollbar-width: thin; }
+  .adm-chip { flex: none; white-space: nowrap; }
+  .adm-toolbar { align-items: stretch; }
+  .adm-toolbar .adm-chips { width: 100%; }
   .adm-custom input[type="date"] { flex: 1 1 8.5rem; }
 }
 

@@ -18,8 +18,8 @@ function Frame({ children, wide = false }) {
     );
 }
 
-function remaining(ms) {
-    const s = Math.max(0, Math.ceil(ms / 1000));
+function remaining(ms, cap) {
+    const s = Math.min(cap, Math.max(0, Math.round(ms / 1000)));
     const m = Math.floor(s / 60);
     return m ? `${m} min ${String(s % 60).padStart(2, '0')} s` : `${s} s`;
 }
@@ -31,6 +31,7 @@ export function Login({ notice, onSignedIn, onNotConfigured }) {
     const [busy, setBusy] = useState(false);
     const [error, setError] = useState(null);
     const [lockedUntil, setLockedUntil] = useState(0);
+    const [lockSeconds, setLockSeconds] = useState(900);
     const now = useNow(1000);
     const passRef = useRef(null);
     const locked = lockedUntil > now;
@@ -59,6 +60,7 @@ export function Login({ notice, onSignedIn, onNotConfigured }) {
             }
             if (code === 'locked') {
                 const s = Number(err.body && err.body.retry_after) || 900;
+                setLockSeconds(s);
                 setLockedUntil(Date.now() + s * 1000);
                 setError({ kind: 'locked', text: 'Too many failed attempts from this connection. Sign-in is paused; it reopens by itself.' });
             } else if (code === 'bad_credentials') {
@@ -80,7 +82,7 @@ export function Login({ notice, onSignedIn, onNotConfigured }) {
             <h1 className="adm-gate-title">The owner's dashboard</h1>
             <p className="adm-gate-lede">Sign in to see traffic, sources, visitors and search health.</p>
             {notice && !error && <p className="adm-notice" role="status">{notice}</p>}
-            <form className="adm-login" onSubmit={submit} noValidate={false}>
+            <form className="adm-login" onSubmit={submit}>
                 <div className="adm-field">
                     <label htmlFor="adm-email">Email</label>
                     <input id="adm-email" type="email" name="email" autoComplete="username" required value={email}
@@ -102,7 +104,7 @@ export function Login({ notice, onSignedIn, onNotConfigured }) {
                     {error && (
                         <>
                             <p>{error.text}</p>
-                            {error.kind === 'locked' && locked && <p className="adm-countdown">Try again in {remaining(lockedUntil - now)}.</p>}
+                            {error.kind === 'locked' && locked && <p className="adm-countdown">Try again in {remaining(lockedUntil - now, lockSeconds)}.</p>}
                         </>
                     )}
                 </div>

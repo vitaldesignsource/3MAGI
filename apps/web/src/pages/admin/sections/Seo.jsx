@@ -423,7 +423,13 @@ function NotFound({ d }) {
                             render: (r) => (
                                 <ul className="adm-refs">
                                     {r.referrers.map((x, i) => (
-                                        <li key={`${i}-${x.ref}`}>{x.ref === null ? <span className="adm-muted">no referrer (typed or bookmarked)</span> : <Path>{x.ref}</Path>}{x.ref && x.ref.startsWith('/') && <span className="adm-muted"> (on this site)</span>} <span className="adm-num">{int(x.hits)}</span></li>
+                                        <li key={`${i}-${x.ref}`}>
+                                            <span>
+                                                {x.ref === null ? <span className="adm-muted">no referrer (typed or bookmarked)</span> : <Path>{x.ref}</Path>}
+                                                {x.ref && x.ref.startsWith('/') && <span className="adm-muted"> (on this site)</span>}
+                                            </span>
+                                            <span className="adm-num">{int(x.hits)}</span>
+                                        </li>
                                     ))}
                                 </ul>
                             ),

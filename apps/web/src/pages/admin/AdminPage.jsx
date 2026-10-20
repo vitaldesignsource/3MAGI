@@ -29,8 +29,16 @@ const VIEWS = {
     settings: Settings,
 };
 
+function isFramed() {
+    try {
+        return window.top !== window.self;
+    } catch {
+        return true; // a cross-origin parent: framed
+    }
+}
+
 export default function AdminPage() {
-    const [auth, setAuth] = useState({ status: 'checking' });
+    const [auth, setAuth] = useState(() => (isFramed() ? { status: 'framed' } : { status: 'checking' }));
 
     const check = useCallback(async () => {
         setAuth({ status: 'checking' });
@@ -55,7 +63,7 @@ export default function AdminPage() {
         }
     }, []);
 
-    useEffect(() => { check(); }, [check]);
+    useEffect(() => { if (!isFramed()) check(); }, [check]);
 
     useEffect(() => {
         onUnauthenticated(() => {
@@ -72,7 +80,15 @@ export default function AdminPage() {
     }, []);
 
     let body;
-    if (auth.status === 'checking') {
+    if (auth.status === 'framed') {
+        // Never offer the sign-in form inside another site's frame (clickjacking).
+        body = (
+            <GateMessage title="Open the dashboard in its own tab">
+                <p className="adm-gate-lede">For safety the dashboard does not work inside another page.</p>
+                <p><a className="adm-btn adm-btn-primary" href="/admin" target="_top" rel="noopener">Open the dashboard</a></p>
+            </GateMessage>
+        );
+    } else if (auth.status === 'checking') {
         body = <main className="adm-gate" id="adm-main" aria-busy="true"><p className="adm-loading" role="status"><span className="adm-spinner" aria-hidden="true" />Opening the dashboard…</p></main>;
     } else if (auth.status === 'setup') {
         body = <Setup missing={auth.missing} />;
