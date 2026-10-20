@@ -72,7 +72,7 @@ export default {
             order: 3, name: 'Agrippa’s draft', group: 'before',
             value: 'Not established whether it holds any of the alphabets', translit: 'Würzburg manuscript, 1509–10', numeric: 1510,
             glyph: null, formConfidence: 'high',
-            note: 'Now Würzburg, Universitätsbibliothek, M. ch. q. 50. For the print of 1533 Agrippa says, in the English of 1651, “we added some Chapters”; which ones is not known.',
+            note: 'Reported to be at Würzburg, Universitätsbibliothek, M. ch. q. 50 (not seen for this page). For the print of 1533 Agrippa says, in the English of 1651, “we added some Chapters”; which ones is not known.',
         },
         {
             order: 4, name: 'Trithemius, Polygraphia', group: 'print',
@@ -472,7 +472,7 @@ export default {
             evidence: 'Agrippa says only that it is so called “quia inter sydera collocatam & figuratam ostendunt” (1533), in J.F.’s English “because they shew it placed and figured amongst the Stars” (1651, p. 439). In II.51 he gives the heavens to the Malachim too, calling it the true characters of the heavens. Postel (1538, by a bookseller’s description) and Gaffarel (1629) built theories of star-letters; no source found shows any Celestial letter matching a constellation.',
             sources: ['Agrippa (1533) and J.F. (1651), III.30 and II.51', 'Gaffarel, Curiositez inouyes (1629)', 'Macfarlane (2025)'] },
         { claim: 'Agrippa’s draft of 1510 already contained the alphabets.', standing: 'disputed',
-            evidence: 'Not established either way. The draft survives at Würzburg (Universitätsbibliothek, M. ch. q. 50), and Perrone Compagni’s edition (1992) takes account of it. Agrippa’s address to the reader says that for the print “we added some Chapters, and we inserted many things” (J.F., 1651): enlargement, but not which chapters.',
+            evidence: 'Not established either way. The draft is reported to survive at Würzburg (Universitätsbibliothek, M. ch. q. 50), and Perrone Compagni’s edition (1992) is reported to take account of it; neither was seen for this page. Agrippa’s address to the reader says that for the print “we added some Chapters, and we inserted many things” (J.F., 1651): enlargement, but not which chapters.',
             sources: ['Stanford Encyclopedia of Philosophy, “Agrippa von Nettesheim”', 'J.F. (1651), “To the Reader”', 'Perrone Compagni (1992)'] },
         { claim: 'The Alphabet of the Magi came down from an angel.', standing: 'legend',
             evidence: 'Ambrogio (1539), as Wikipedia reports him, says its letters were invented by Gamaliel and handed down in a book called the Liber ignis, associated with the angel Raphiel; Fry (1799) reports Ambrogio as saying the angel Raphael gave it to Adam; Duret (1613) prints it as the characters of the angel Raphael. These record what was believed about the invention of writing, not who made the signs.',
