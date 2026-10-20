@@ -1,0 +1,1330 @@
+{
+ "slug": "galdrastafir",
+ "plates": [
+  {
+   "file": "galdrastafir-aegishjalmur-lbs143-f11r.png",
+   "table": "Ægishjálmur ('Ægirz hialmur') with its six-line caption — the oldest eight-armed figure NAMED ægishjálmur (research: 10v or 11r; it is 11r)",
+   "letters": [
+    {
+     "position": 1,
+     "label_as_printed": "Ægirz hialmur (first words of the caption above the figure; no label beside the figure)",
+     "value": "ægishjálmur, eight-armed"
+    }
+   ],
+   "source": {
+    "work": "Galdrakver (ff. 1r–7v 'Himnabréf', a letter from heaven, inc. 'Það sunnudaga bréf …'; ff. 8r–27v 'Galdrar', charms and staves, inc. 'Þessir eru þeir níu hjálparhringar …')",
+    "author": "One unknown scribe (handrit.is); later owned by Bishop Hannes Finnsson",
+    "edition": "manuscript (no printed edition used; handrit.is notes the manuscript was published as 'Galdrakver' in 2004)",
+    "date": "1670 (handrit.is origDate, cert. medium)",
+    "place": "Iceland",
+    "printer": null,
+    "copy": "Landsbókasafn Íslands – Háskólabókasafn, Reykjavík, Lbs 143 8vo (parchment, ii + 27 + ii leaves, 124–127 x 77–80 mm)",
+    "repository": "handrit.is image database (myndir.handrit.is, 'Myndagagnagrunnur'), Landsbókasafn Íslands – Háskólabókasafn; catalogue description from the handrit.is TEI record Lbs08-0143-is.xml (public GitHub repo Handrit/manuscripts, commit 905c93a, 2026-10-19)",
+    "identifier": "Lbs 143 8vo",
+    "image_index": "serial 26 (0-based) in the myndir.handrit.is document; page label '0011r'",
+    "printed_locator": "fol. 11r (folio number '11' written top right)",
+    "page_url": "https://myndir.handrit.is/document/Handrit.is/Lbs%20143%208vo/?page=26",
+    "image_url": "https://myndir.handrit.is/file/Handrit.is/Lbs%20143%208vo/26/SECONDARY_DISPLAY",
+    "catalogue_url": "https://handrit.is/manuscript/view/is/Lbs08-0143 (handrit.is URL pattern; the catalogue pages answer with an hCaptcha bot check and were not read)",
+    "rights": "No rights or licence statement is shown on the image server (myndir.handrit.is) page or file. The handrit.is TEI catalogue record for this manuscript has <availability status=\"restricted\">: 'Aðgangur aðeins mögulegur í fræðilegum tilgangi.' (access possible only for scholarly purposes). The manuscript itself is pre-1900. Permission to publish the photograph is NOT established; ask Landsbókasafn Íslands – Háskólabókasafn (handrit@handrit.is)."
+   },
+   "crop": {
+    "geometry_in_source_image": "880x1150+20+115",
+    "source_image_px": "1030x1710",
+    "crop_px": "880x1150"
+   },
+   "caption_as_written": "My diplomatic reading (uncertain points in brackets): 'Ægirz hialmur h[ann] sk[al] / giorast á blý og þrycka / [í] enni sier [þann?] á von á / óvin sinum að h[ann] mæti / h[onu]m og muntu hann yfirvinna / (h[ann] er so f[...] h[...] ept[ir] [...])'. Paraphrase (mine): 'Ægir's helm: it shall be made in lead and pressed on the forehead [of one] who expects to meet his enemy, and you will overcome him.' The last, bracketed line is not legible to me. Note the spelling Ægirz/Ægirs-, not Ægis-.",
+   "form_as_seen": "Small central circle; eight straight arms at roughly 45 degrees cross at the centre inside the circle. Every arm carries THREE short crossbars about half-way out and ends in a CURVED fork: an arc set across the arm, its horns pointing outward, with the shaft running up to it (a crescent-trident). No ring-ends. Freehand, so arms and arcs are not exactly equal, but all eight arms are of the same type. The arm-ends are curved, not the straight-pronged tridents of modern reproductions."
+  },
+  {
+   "file": "galdrastafir-aegishjalmur-lbs143-f11r-figure.png",
+   "table": "Ægishjálmur, figure only (for tracing)",
+   "letters": [
+    {
+     "position": 1,
+     "label_as_printed": "(none beside the figure; caption above begins 'Ægirz hialmur')",
+     "value": "ægishjálmur, eight-armed"
+    }
+   ],
+   "source": {
+    "work": "Galdrakver (ff. 1r–7v 'Himnabréf', a letter from heaven, inc. 'Það sunnudaga bréf …'; ff. 8r–27v 'Galdrar', charms and staves, inc. 'Þessir eru þeir níu hjálparhringar …')",
+    "author": "One unknown scribe (handrit.is); later owned by Bishop Hannes Finnsson",
+    "edition": "manuscript (no printed edition used; handrit.is notes the manuscript was published as 'Galdrakver' in 2004)",
+    "date": "1670 (handrit.is origDate, cert. medium)",
+    "place": "Iceland",
+    "printer": null,
+    "copy": "Landsbókasafn Íslands – Háskólabókasafn, Reykjavík, Lbs 143 8vo (parchment, ii + 27 + ii leaves, 124–127 x 77–80 mm)",
+    "repository": "handrit.is image database (myndir.handrit.is, 'Myndagagnagrunnur'), Landsbókasafn Íslands – Háskólabókasafn; catalogue description from the handrit.is TEI record Lbs08-0143-is.xml (public GitHub repo Handrit/manuscripts, commit 905c93a, 2026-10-19)",
+    "identifier": "Lbs 143 8vo",
+    "image_index": "serial 26 (0-based) in the myndir.handrit.is document; page label '0011r'",
+    "printed_locator": "fol. 11r",
+    "page_url": "https://myndir.handrit.is/document/Handrit.is/Lbs%20143%208vo/?page=26",
+    "image_url": "https://myndir.handrit.is/file/Handrit.is/Lbs%20143%208vo/26/SECONDARY_DISPLAY",
+    "catalogue_url": "https://handrit.is/manuscript/view/is/Lbs08-0143 (handrit.is URL pattern; the catalogue pages answer with an hCaptcha bot check and were not read)",
+    "rights": "No rights or licence statement is shown on the image server (myndir.handrit.is) page or file. The handrit.is TEI catalogue record for this manuscript has <availability status=\"restricted\">: 'Aðgangur aðeins mögulegur í fræðilegum tilgangi.' (access possible only for scholarly purposes). The manuscript itself is pre-1900. Permission to publish the photograph is NOT established; ask Landsbókasafn Íslands – Háskólabókasafn (handrit@handrit.is)."
+   },
+   "crop": {
+    "geometry_in_source_image": "830x700+35+560",
+    "source_image_px": "1030x1710",
+    "crop_px": "830x700"
+   },
+   "form_as_seen": "Small central circle; eight straight arms at roughly 45 degrees cross at the centre inside the circle. Every arm carries THREE short crossbars about half-way out and ends in a CURVED fork: an arc set across the arm, its horns pointing outward, with the shaft running up to it (a crescent-trident). No ring-ends. Freehand, so arms and arcs are not exactly equal, but all eight arms are of the same type. The arm-ends are curved, not the straight-pronged tridents of modern reproductions."
+  },
+  {
+   "file": "galdrastafir-aegishjalmur-variant-am434a-f4vb.png",
+   "table": "Unnamed EIGHT-armed stave (catalogued as a variation of the ægishjálmur), c. 1490–1510",
+   "letters": [
+    {
+     "position": 1,
+     "label_as_printed": "(no label read)",
+     "value": "eight-armed stave, arm-ends crossed/forked"
+    }
+   ],
+   "source": {
+    "work": "Leechbook (lækningabók) with charms, staves, runes and a lunarium; ed. Kålund, Den islandske lægebog (1907)",
+    "author": "Anonymous",
+    "edition": "manuscript (no printed edition used)",
+    "date": "s. XV2, c. 1490–1510 (handrit.is, after Kålund, Katalog II 483)",
+    "place": "Iceland",
+    "printer": null,
+    "copy": "Den Arnamagnæanske Samling, København, AM 434 a 12mo (parchment, 40 leaves, 104 x 77 mm, two columns)",
+    "repository": "handrit.is image database (myndir.handrit.is, 'Myndagagnagrunnur'), Landsbókasafn Íslands – Háskólabókasafn; catalogue description from the handrit.is TEI record AM12-0434-a-en.xml (public GitHub repo Handrit/manuscripts, commit 905c93a, 2026-10-19)",
+    "identifier": "AM 434 a 12mo",
+    "image_index": "serial 7 (0-based) in the myndir.handrit.is document; page label '0004v'",
+    "printed_locator": "fol. 4v, column b",
+    "page_url": "https://myndir.handrit.is/document/Handrit.is/AM%20434%20a%2012mo/?page=7",
+    "image_url": "https://myndir.handrit.is/file/Handrit.is/AM%20434%20a%2012mo/7/SECONDARY_DISPLAY",
+    "catalogue_url": "https://handrit.is/manuscript/view/en/AM12-0434-a (handrit.is URL pattern; the catalogue pages answer with an hCaptcha bot check and were not read)",
+    "rights": "No rights or licence statement is shown on the image server page or file, and the handrit.is TEI record (Den Arnamagnæanske Samling, København) has no availability statement. The manuscript is c. 1490–1510. Permission to publish the photograph is NOT established; ask Den Arnamagnæanske Samling, Copenhagen (via handrit@handrit.is)."
+   },
+   "crop": {
+    "geometry_in_source_image": "420x430+990+860",
+    "source_image_px": "1812x2593",
+    "crop_px": "420x430"
+   },
+   "form_as_seen": "Eight straight arms from a common centre (no central circle). Each arm ends in a short crossing stroke or fork (X-like), some with a hook; heavy ink.",
+   "notes": "handrit.is (AM 434 a 12mo, en): 'Magical staves, which seem to be variations of Ægishjálmur (Helm of Awe), are found on ff. 4vb-5vb.' The surrounding text is abbreviated late-medieval script and was NOT transcribed; I did not read the name ægishjálmur on these leaves. Leaf/column from the handrit.is image label and the two-column layout."
+  },
+  {
+   "file": "galdrastafir-aegishjalmur-variant-am434a-f5ra.png",
+   "table": "Unnamed EIGHT-armed stave with ring-ends, with groups of single letters to its right and below",
+   "letters": [
+    {
+     "position": 1,
+     "label_as_printed": "(no name read) letters beside it, read approximately (15th-c. forms, uncertain): right of the stave, three lines 'R R' / 'r · f ·' / 'a · a · g'; below, 'f · o · g · g · b · g …'",
+     "value": "eight-armed stave with ring-ends"
+    }
+   ],
+   "source": {
+    "work": "Leechbook (lækningabók) with charms, staves, runes and a lunarium; ed. Kålund, Den islandske lægebog (1907)",
+    "author": "Anonymous",
+    "edition": "manuscript (no printed edition used)",
+    "date": "s. XV2, c. 1490–1510 (handrit.is, after Kålund, Katalog II 483)",
+    "place": "Iceland",
+    "printer": null,
+    "copy": "Den Arnamagnæanske Samling, København, AM 434 a 12mo (parchment, 40 leaves, 104 x 77 mm, two columns)",
+    "repository": "handrit.is image database (myndir.handrit.is, 'Myndagagnagrunnur'), Landsbókasafn Íslands – Háskólabókasafn; catalogue description from the handrit.is TEI record AM12-0434-a-en.xml (public GitHub repo Handrit/manuscripts, commit 905c93a, 2026-10-19)",
+    "identifier": "AM 434 a 12mo",
+    "image_index": "serial 8 (0-based) in the myndir.handrit.is document; page label '0005r'",
+    "printed_locator": "fol. 5r, column a",
+    "page_url": "https://myndir.handrit.is/document/Handrit.is/AM%20434%20a%2012mo/?page=8",
+    "image_url": "https://myndir.handrit.is/file/Handrit.is/AM%20434%20a%2012mo/8/SECONDARY_DISPLAY",
+    "catalogue_url": "https://handrit.is/manuscript/view/en/AM12-0434-a (handrit.is URL pattern; the catalogue pages answer with an hCaptcha bot check and were not read)",
+    "rights": "No rights or licence statement is shown on the image server page or file, and the handrit.is TEI record (Den Arnamagnæanske Samling, København) has no availability statement. The manuscript is c. 1490–1510. Permission to publish the photograph is NOT established; ask Den Arnamagnæanske Samling, Copenhagen (via handrit@handrit.is)."
+   },
+   "crop": {
+    "geometry_in_source_image": "560x390+170+1025",
+    "source_image_px": "1812x2593",
+    "crop_px": "560x390",
+    "recut": "2026-10-20 by checker; old geometry 380x340+190+1040 cut off the letter groups right of the stave and the end of the row below"
+   },
+   "form_as_seen": "Eight straight arms from a centre point, each ending in a small open circle (ring-end); the lower ring touched with red.",
+   "notes": "handrit.is (AM 434 a 12mo, en): 'Magical staves, which seem to be variations of Ægishjálmur (Helm of Awe), are found on ff. 4vb-5vb.' The surrounding text is abbreviated late-medieval script and was NOT transcribed; I did not read the name ægishjálmur on these leaves. Leaf/column from the handrit.is image label and the two-column layout."
+  },
+  {
+   "file": "galdrastafir-staves-am434a-f5rb.png",
+   "table": "Three small FOUR-armed crosses with ring-ends, followed by a block of dotted single letters (four lines, the first beside the third cross)",
+   "letters": [
+    {
+     "position": 1,
+     "label_as_printed": "(none)",
+     "value": "four-armed cross, ring-ends"
+    },
+    {
+     "position": 2,
+     "label_as_printed": "(none)",
+     "value": "four-armed cross, ring-ends"
+    },
+    {
+     "position": 3,
+     "label_as_printed": "(none)",
+     "value": "four-armed cross, ring-ends"
+    }
+   ],
+   "source": {
+    "work": "Leechbook (lækningabók) with charms, staves, runes and a lunarium; ed. Kålund, Den islandske lægebog (1907)",
+    "author": "Anonymous",
+    "edition": "manuscript (no printed edition used)",
+    "date": "s. XV2, c. 1490–1510 (handrit.is, after Kålund, Katalog II 483)",
+    "place": "Iceland",
+    "printer": null,
+    "copy": "Den Arnamagnæanske Samling, København, AM 434 a 12mo (parchment, 40 leaves, 104 x 77 mm, two columns)",
+    "repository": "handrit.is image database (myndir.handrit.is, 'Myndagagnagrunnur'), Landsbókasafn Íslands – Háskólabókasafn; catalogue description from the handrit.is TEI record AM12-0434-a-en.xml (public GitHub repo Handrit/manuscripts, commit 905c93a, 2026-10-19)",
+    "identifier": "AM 434 a 12mo",
+    "image_index": "serial 8 (0-based) in the myndir.handrit.is document; page label '0005r'",
+    "printed_locator": "fol. 5r, column b",
+    "page_url": "https://myndir.handrit.is/document/Handrit.is/AM%20434%20a%2012mo/?page=8",
+    "image_url": "https://myndir.handrit.is/file/Handrit.is/AM%20434%20a%2012mo/8/SECONDARY_DISPLAY",
+    "catalogue_url": "https://handrit.is/manuscript/view/en/AM12-0434-a (handrit.is URL pattern; the catalogue pages answer with an hCaptcha bot check and were not read)",
+    "rights": "No rights or licence statement is shown on the image server page or file, and the handrit.is TEI record (Den Arnamagnæanske Samling, København) has no availability statement. The manuscript is c. 1490–1510. Permission to publish the photograph is NOT established; ask Den Arnamagnæanske Samling, Copenhagen (via handrit@handrit.is)."
+   },
+   "crop": {
+    "geometry_in_source_image": "610x535+740+1015",
+    "source_image_px": "1812x2593",
+    "crop_px": "610x535",
+    "recut": "2026-10-20 by checker; old geometry 560x320+760+1020 cut through the letter block under the crosses"
+   },
+   "notes": "handrit.is (AM 434 a 12mo, en): 'Magical staves, which seem to be variations of Ægishjálmur (Helm of Awe), are found on ff. 4vb-5vb.' The surrounding text is abbreviated late-medieval script and was NOT transcribed; I did not read the name ægishjálmur on these leaves. Leaf/column from the handrit.is image label and the two-column layout. Checker (2026-10-20): the crosses carry no name; the letter block after them reads approximately 'k · q · c · g' / 'q · 9 · ð · ð · ð · ð ·' / 'b · c · a · d · f · R b' / 'q · l · m · f · m · B' (15th-c. forms, not a secure transcription)."
+  },
+  {
+   "file": "galdrastafir-stave-am434a-f5vb.png",
+   "table": "Unnamed FOUR-armed stave with forked ends (possibly the 'four-armed' helm the research mentions; not confirmed)",
+   "letters": [
+    {
+     "position": 1,
+     "label_as_printed": "(no label read)",
+     "value": "four-armed stave, forked ends"
+    }
+   ],
+   "source": {
+    "work": "Leechbook (lækningabók) with charms, staves, runes and a lunarium; ed. Kålund, Den islandske lægebog (1907)",
+    "author": "Anonymous",
+    "edition": "manuscript (no printed edition used)",
+    "date": "s. XV2, c. 1490–1510 (handrit.is, after Kålund, Katalog II 483)",
+    "place": "Iceland",
+    "printer": null,
+    "copy": "Den Arnamagnæanske Samling, København, AM 434 a 12mo (parchment, 40 leaves, 104 x 77 mm, two columns)",
+    "repository": "handrit.is image database (myndir.handrit.is, 'Myndagagnagrunnur'), Landsbókasafn Íslands – Háskólabókasafn; catalogue description from the handrit.is TEI record AM12-0434-a-en.xml (public GitHub repo Handrit/manuscripts, commit 905c93a, 2026-10-19)",
+    "identifier": "AM 434 a 12mo",
+    "image_index": "serial 9 (0-based) in the myndir.handrit.is document; page label '0005v'",
+    "printed_locator": "fol. 5v, column b",
+    "page_url": "https://myndir.handrit.is/document/Handrit.is/AM%20434%20a%2012mo/?page=9",
+    "image_url": "https://myndir.handrit.is/file/Handrit.is/AM%20434%20a%2012mo/9/SECONDARY_DISPLAY",
+    "catalogue_url": "https://handrit.is/manuscript/view/en/AM12-0434-a (handrit.is URL pattern; the catalogue pages answer with an hCaptcha bot check and were not read)",
+    "rights": "No rights or licence statement is shown on the image server page or file, and the handrit.is TEI record (Den Arnamagnæanske Samling, København) has no availability statement. The manuscript is c. 1490–1510. Permission to publish the photograph is NOT established; ask Den Arnamagnæanske Samling, Copenhagen (via handrit@handrit.is)."
+   },
+   "crop": {
+    "geometry_in_source_image": "300x230+1080+1240",
+    "source_image_px": "1812x2593",
+    "crop_px": "300x230"
+   },
+   "notes": "handrit.is (AM 434 a 12mo, en): 'Magical staves, which seem to be variations of Ægishjálmur (Helm of Awe), are found on ff. 4vb-5vb.' The surrounding text is abbreviated late-medieval script and was NOT transcribed; I did not read the name ægishjálmur on these leaves. Leaf/column from the handrit.is image label and the two-column layout."
+  },
+  {
+   "file": "galdrastafir-vegvisir-huld-ib383-p60.png",
+   "table": "Vegvísir, No. XXVII — figure only",
+   "letters": [
+    {
+     "position": 1,
+     "label_as_printed": "Nº XXVII. Vegvísir.",
+     "value": "vegvísir"
+    }
+   ],
+   "source": {
+    "work": "Huld ('Huld það er letur og rúnar með hendi Geirs Vigfússonar'): alphabets, number-scripts and runes, then 30 numbered staves",
+    "author": "Geir Vigfússon (1813–1880), Akureyri; sole hand (handrit.is)",
+    "edition": "manuscript (no printed edition used)",
+    "date": "1860 (handrit.is origDate, cert. medium); fol. 1r note 'Frá Geir Vigfússyni á Akureyri 1874' (provenance: sent 1874); p. 5 (fol. 3r) writes 'Annus Christi' in Greek numerals glossed 1869",
+    "place": "Iceland (Akureyri)",
+    "printer": null,
+    "copy": "Landsbókasafn Íslands – Háskólabókasafn, Reykjavík, ÍB 383 4to (paper, i + 27 + i leaves, 220 x 270 mm, oblong; 27v blank)",
+    "repository": "handrit.is image database (myndir.handrit.is, 'Myndagagnagrunnur'), Landsbókasafn Íslands – Háskólabókasafn; catalogue description from the handrit.is TEI record IB04-0383-is.xml (public GitHub repo Handrit/manuscripts, commit 905c93a, 2026-10-19)",
+    "identifier": "ÍB 383 4to",
+    "image_index": "serial 55 (0-based) in the myndir.handrit.is document; page label '0026v'",
+    "printed_locator": "p. 60 (page number written top left) = fol. 26v",
+    "page_url": "https://myndir.handrit.is/document/Handrit.is/%C3%8DB%20383%204to/?page=55",
+    "image_url": "https://myndir.handrit.is/file/Handrit.is/%C3%8DB%20383%204to/55/SECONDARY_DISPLAY",
+    "catalogue_url": "https://handrit.is/manuscript/view/is/IB04-0383 (handrit.is URL pattern; the catalogue pages answer with an hCaptcha bot check and were not read)",
+    "rights": "No rights or licence statement is shown on the image server (myndir.handrit.is) page or file. The handrit.is TEI catalogue record for this manuscript has <availability status=\"restricted\">: 'Aðgangur aðeins mögulegur í fræðilegum tilgangi.' (access possible only for scholarly purposes). The manuscript itself is pre-1900. Permission to publish the photograph is NOT established; ask Landsbókasafn Íslands – Háskólabókasafn (handrit@handrit.is)."
+   },
+   "crop": {
+    "geometry_in_source_image": "1200x1235+610+695",
+    "source_image_px": "3487x2880",
+    "crop_px": "1200x1235"
+   },
+   "caption_as_written": "Written vertically either side of the figure, ð written d: right side, top to bottom: 'Beri madur stafi þessa á sér villist madur ekki í'; left side, bottom to top: 'hridum né vondu vedri þó ókunnugur sé.—'. Normalised: 'Beri maður stafi þessa á sér villist maður ekki í hríðum né vondu veðri þó ókunnugur sé.' Plural 'stafi þessa'; ending 'sé'.",
+   "form_as_seen": "Eight straight arms meet at a POINT: no central circle and no enclosing ring. Each arm ends differently (no rotational symmetry): N a square-shouldered three-pronged fork over three crossbars; NE a bracket/E-shaped fork with crossbars and a small hooked crescent; E crossbars, a crescent and an E-shaped comb; SE three oblique crossbars and a hooked crescent; S a wide flat comb whose teeth carry short crossbars; SW a crescent with crossbars and a small fork; W a long comb of four teeth with a crossbar; NW a ring-end with crossbars and a hook. Trace arm by arm from the image."
+  },
+  {
+   "file": "galdrastafir-vegvisir-huld-ib383-p60-panel.png",
+   "table": "Vegvísir, No. XXVII — whole panel with heading, both caption lines and No. XXIX below",
+   "letters": [
+    {
+     "position": 1,
+     "label_as_printed": "Nº XXVII. Vegvísir.",
+     "value": "vegvísir"
+    },
+    {
+     "position": 2,
+     "label_as_printed": "Nº XXIX.",
+     "value": "unnamed horizontal stave (No. XXIX)"
+    }
+   ],
+   "source": {
+    "work": "Huld ('Huld það er letur og rúnar með hendi Geirs Vigfússonar'): alphabets, number-scripts and runes, then 30 numbered staves",
+    "author": "Geir Vigfússon (1813–1880), Akureyri; sole hand (handrit.is)",
+    "edition": "manuscript (no printed edition used)",
+    "date": "1860 (handrit.is origDate, cert. medium); fol. 1r note 'Frá Geir Vigfússyni á Akureyri 1874' (provenance: sent 1874); p. 5 (fol. 3r) writes 'Annus Christi' in Greek numerals glossed 1869",
+    "place": "Iceland (Akureyri)",
+    "printer": null,
+    "copy": "Landsbókasafn Íslands – Háskólabókasafn, Reykjavík, ÍB 383 4to (paper, i + 27 + i leaves, 220 x 270 mm, oblong; 27v blank)",
+    "repository": "handrit.is image database (myndir.handrit.is, 'Myndagagnagrunnur'), Landsbókasafn Íslands – Háskólabókasafn; catalogue description from the handrit.is TEI record IB04-0383-is.xml (public GitHub repo Handrit/manuscripts, commit 905c93a, 2026-10-19)",
+    "identifier": "ÍB 383 4to",
+    "image_index": "serial 55 (0-based) in the myndir.handrit.is document; page label '0026v'",
+    "printed_locator": "p. 60 = fol. 26v",
+    "page_url": "https://myndir.handrit.is/document/Handrit.is/%C3%8DB%20383%204to/?page=55",
+    "image_url": "https://myndir.handrit.is/file/Handrit.is/%C3%8DB%20383%204to/55/SECONDARY_DISPLAY",
+    "catalogue_url": "https://handrit.is/manuscript/view/is/IB04-0383 (handrit.is URL pattern; the catalogue pages answer with an hCaptcha bot check and were not read)",
+    "rights": "No rights or licence statement is shown on the image server (myndir.handrit.is) page or file. The handrit.is TEI catalogue record for this manuscript has <availability status=\"restricted\">: 'Aðgangur aðeins mögulegur í fræðilegum tilgangi.' (access possible only for scholarly purposes). The manuscript itself is pre-1900. Permission to publish the photograph is NOT established; ask Landsbókasafn Íslands – Háskólabókasafn (handrit@handrit.is)."
+   },
+   "crop": {
+    "geometry_in_source_image": "1340x2130+560+385",
+    "source_image_px": "3487x2880",
+    "crop_px": "1340x2130"
+   },
+   "caption_as_written": "Written vertically either side of the figure, ð written d: right side, top to bottom: 'Beri madur stafi þessa á sér villist madur ekki í'; left side, bottom to top: 'hridum né vondu vedri þó ókunnugur sé.—'. Normalised: 'Beri maður stafi þessa á sér villist maður ekki í hríðum né vondu veðri þó ókunnugur sé.' Plural 'stafi þessa'; ending 'sé'.",
+   "form_as_seen": "Eight straight arms meet at a POINT: no central circle and no enclosing ring. Each arm ends differently (no rotational symmetry): N a square-shouldered three-pronged fork over three crossbars; NE a bracket/E-shaped fork with crossbars and a small hooked crescent; E crossbars, a crescent and an E-shaped comb; SE three oblique crossbars and a hooked crescent; S a wide flat comb whose teeth carry short crossbars; SW a crescent with crossbars and a small fork; W a long comb of four teeth with a crossbar; NW a ring-end with crossbars and a hook. Trace arm by arm from the image."
+  },
+  {
+   "file": "galdrastafir-no-xxix-huld-ib383-p60.png",
+   "table": "No. XXIX (no name), a horizontal stave with bind-rune-like signs on a line and a ligature below",
+   "letters": [
+    {
+     "position": 1,
+     "label_as_printed": "Nº XXIX.",
+     "value": "unnamed stave"
+    }
+   ],
+   "source": {
+    "work": "Huld ('Huld það er letur og rúnar með hendi Geirs Vigfússonar'): alphabets, number-scripts and runes, then 30 numbered staves",
+    "author": "Geir Vigfússon (1813–1880), Akureyri; sole hand (handrit.is)",
+    "edition": "manuscript (no printed edition used)",
+    "date": "1860 (handrit.is origDate, cert. medium); fol. 1r note 'Frá Geir Vigfússyni á Akureyri 1874' (provenance: sent 1874); p. 5 (fol. 3r) writes 'Annus Christi' in Greek numerals glossed 1869",
+    "place": "Iceland (Akureyri)",
+    "printer": null,
+    "copy": "Landsbókasafn Íslands – Háskólabókasafn, Reykjavík, ÍB 383 4to (paper, i + 27 + i leaves, 220 x 270 mm, oblong; 27v blank)",
+    "repository": "handrit.is image database (myndir.handrit.is, 'Myndagagnagrunnur'), Landsbókasafn Íslands – Háskólabókasafn; catalogue description from the handrit.is TEI record IB04-0383-is.xml (public GitHub repo Handrit/manuscripts, commit 905c93a, 2026-10-19)",
+    "identifier": "ÍB 383 4to",
+    "image_index": "serial 55 (0-based) in the myndir.handrit.is document; page label '0026v'",
+    "printed_locator": "p. 60 = fol. 26v",
+    "page_url": "https://myndir.handrit.is/document/Handrit.is/%C3%8DB%20383%204to/?page=55",
+    "image_url": "https://myndir.handrit.is/file/Handrit.is/%C3%8DB%20383%204to/55/SECONDARY_DISPLAY",
+    "catalogue_url": "https://handrit.is/manuscript/view/is/IB04-0383 (handrit.is URL pattern; the catalogue pages answer with an hCaptcha bot check and were not read)",
+    "rights": "No rights or licence statement is shown on the image server (myndir.handrit.is) page or file. The handrit.is TEI catalogue record for this manuscript has <availability status=\"restricted\">: 'Aðgangur aðeins mögulegur í fræðilegum tilgangi.' (access possible only for scholarly purposes). The manuscript itself is pre-1900. Permission to publish the photograph is NOT established; ask Landsbókasafn Íslands – Háskólabókasafn (handrit@handrit.is)."
+   },
+   "crop": {
+    "geometry_in_source_image": "1330x590+565+1905",
+    "source_image_px": "3487x2880",
+    "crop_px": "1330x590"
+   }
+  },
+  {
+   "file": "galdrastafir-thjofastafur-xxviii-huld-ib383-p60.png",
+   "table": "Þjófastafur, No. XXVIII — eight-armed figure with varied arm-ends",
+   "letters": [
+    {
+     "position": 1,
+     "label_as_printed": "Nº XXVIII. Þjófastafur.",
+     "value": "þjófastafur (eight-armed)"
+    }
+   ],
+   "source": {
+    "work": "Huld ('Huld það er letur og rúnar með hendi Geirs Vigfússonar'): alphabets, number-scripts and runes, then 30 numbered staves",
+    "author": "Geir Vigfússon (1813–1880), Akureyri; sole hand (handrit.is)",
+    "edition": "manuscript (no printed edition used)",
+    "date": "1860 (handrit.is origDate, cert. medium); fol. 1r note 'Frá Geir Vigfússyni á Akureyri 1874' (provenance: sent 1874); p. 5 (fol. 3r) writes 'Annus Christi' in Greek numerals glossed 1869",
+    "place": "Iceland (Akureyri)",
+    "printer": null,
+    "copy": "Landsbókasafn Íslands – Háskólabókasafn, Reykjavík, ÍB 383 4to (paper, i + 27 + i leaves, 220 x 270 mm, oblong; 27v blank)",
+    "repository": "handrit.is image database (myndir.handrit.is, 'Myndagagnagrunnur'), Landsbókasafn Íslands – Háskólabókasafn; catalogue description from the handrit.is TEI record IB04-0383-is.xml (public GitHub repo Handrit/manuscripts, commit 905c93a, 2026-10-19)",
+    "identifier": "ÍB 383 4to",
+    "image_index": "serial 55 (0-based) in the myndir.handrit.is document; page label '0026v'",
+    "printed_locator": "p. 60 = fol. 26v",
+    "page_url": "https://myndir.handrit.is/document/Handrit.is/%C3%8DB%20383%204to/?page=55",
+    "image_url": "https://myndir.handrit.is/file/Handrit.is/%C3%8DB%20383%204to/55/SECONDARY_DISPLAY",
+    "catalogue_url": "https://handrit.is/manuscript/view/is/IB04-0383 (handrit.is URL pattern; the catalogue pages answer with an hCaptcha bot check and were not read)",
+    "rights": "No rights or licence statement is shown on the image server (myndir.handrit.is) page or file. The handrit.is TEI catalogue record for this manuscript has <availability status=\"restricted\">: 'Aðgangur aðeins mögulegur í fræðilegum tilgangi.' (access possible only for scholarly purposes). The manuscript itself is pre-1900. Permission to publish the photograph is NOT established; ask Landsbókasafn Íslands – Háskólabókasafn (handrit@handrit.is)."
+   },
+   "crop": {
+    "geometry_in_source_image": "1460x1810+1885+390",
+    "source_image_px": "3487x2880",
+    "crop_px": "1460x1810"
+   },
+   "caption_as_written": "'Sé stafur þessi ristur á [runic word] utan og innan með [runes] og [runes]' (runic words not transcribed).",
+   "form_as_seen": "Eight arms from a point; ends: N a branched (tree-like) device; NW a branched device; NE crossbars; E and W asterisk-like crossings; SE and SW clusters of oblique strokes; S a plain crossbar (inverted T)."
+  },
+  {
+   "file": "galdrastafir-thjofastafur-xvii-huld-ib383-p57.png",
+   "table": "Þjófastafur, No. XVII — with both vertical captions",
+   "letters": [
+    {
+     "position": 1,
+     "label_as_printed": "Nº XVII. Þjófastafur",
+     "value": "þjófastafur"
+    }
+   ],
+   "source": {
+    "work": "Huld ('Huld það er letur og rúnar með hendi Geirs Vigfússonar'): alphabets, number-scripts and runes, then 30 numbered staves",
+    "author": "Geir Vigfússon (1813–1880), Akureyri; sole hand (handrit.is)",
+    "edition": "manuscript (no printed edition used)",
+    "date": "1860 (handrit.is origDate, cert. medium); fol. 1r note 'Frá Geir Vigfússyni á Akureyri 1874' (provenance: sent 1874); p. 5 (fol. 3r) writes 'Annus Christi' in Greek numerals glossed 1869",
+    "place": "Iceland (Akureyri)",
+    "printer": null,
+    "copy": "Landsbókasafn Íslands – Háskólabókasafn, Reykjavík, ÍB 383 4to (paper, i + 27 + i leaves, 220 x 270 mm, oblong; 27v blank)",
+    "repository": "handrit.is image database (myndir.handrit.is, 'Myndagagnagrunnur'), Landsbókasafn Íslands – Háskólabókasafn; catalogue description from the handrit.is TEI record IB04-0383-is.xml (public GitHub repo Handrit/manuscripts, commit 905c93a, 2026-10-19)",
+    "identifier": "ÍB 383 4to",
+    "image_index": "serial 52 (0-based) in the myndir.handrit.is document; page label '0025r'",
+    "printed_locator": "p. 57 (page number written top right) = fol. 25r",
+    "page_url": "https://myndir.handrit.is/document/Handrit.is/%C3%8DB%20383%204to/?page=52",
+    "image_url": "https://myndir.handrit.is/file/Handrit.is/%C3%8DB%20383%204to/52/SECONDARY_DISPLAY",
+    "catalogue_url": "https://handrit.is/manuscript/view/is/IB04-0383 (handrit.is URL pattern; the catalogue pages answer with an hCaptcha bot check and were not read)",
+    "rights": "No rights or licence statement is shown on the image server (myndir.handrit.is) page or file. The handrit.is TEI catalogue record for this manuscript has <availability status=\"restricted\">: 'Aðgangur aðeins mögulegur í fræðilegum tilgangi.' (access possible only for scholarly purposes). The manuscript itself is pre-1900. Permission to publish the photograph is NOT established; ask Landsbókasafn Íslands – Háskólabókasafn (handrit@handrit.is)."
+   },
+   "crop": {
+    "geometry_in_source_image": "1520x1030+180+340",
+    "source_image_px": "3487x2880",
+    "crop_px": "1520x1030",
+    "recut": "2026-10-20 by checker; old geometry 1520x1000+180+340 clipped the descender of 'þá' at the foot of the right-hand caption"
+   },
+   "caption_as_written": "Left, vertical, reading upward: 'Lát þennan staf undir dyra' (the line ends at the frame; the word is not finished on that side). Right, vertical, four lines: a line of runes (not transcribed), then 'og mun honum bregða þá / yfir hann stígur ef sekur er / í þjófnaði frá þér.—' (ð is written d in this hand). Paraphrase (mine): put this stave under the door…, and he will start when he steps over it, if he is guilty of theft from you.",
+   "form_as_seen": "A rectangle-like frame of two horizontal bars joined by two outward-bowed arcs; two long diagonals cross at the centre and end in ring-ends; a central vertical shaft with a small circle-and-oval device at the centre; small ovals on the horizontal mid-line; three trident-like forks on top and three comb-forks below."
+  },
+  {
+   "file": "galdrastafir-thjofastafur-xviii-huld-ib383-p57.png",
+   "table": "Þjófastafur, No. XVIII — curved figure with an eye",
+   "letters": [
+    {
+     "position": 1,
+     "label_as_printed": "Nº XVIII. Þjófastafur,",
+     "value": "þjófastafur"
+    }
+   ],
+   "source": {
+    "work": "Huld ('Huld það er letur og rúnar með hendi Geirs Vigfússonar'): alphabets, number-scripts and runes, then 30 numbered staves",
+    "author": "Geir Vigfússon (1813–1880), Akureyri; sole hand (handrit.is)",
+    "edition": "manuscript (no printed edition used)",
+    "date": "1860 (handrit.is origDate, cert. medium); fol. 1r note 'Frá Geir Vigfússyni á Akureyri 1874' (provenance: sent 1874); p. 5 (fol. 3r) writes 'Annus Christi' in Greek numerals glossed 1869",
+    "place": "Iceland (Akureyri)",
+    "printer": null,
+    "copy": "Landsbókasafn Íslands – Háskólabókasafn, Reykjavík, ÍB 383 4to (paper, i + 27 + i leaves, 220 x 270 mm, oblong; 27v blank)",
+    "repository": "handrit.is image database (myndir.handrit.is, 'Myndagagnagrunnur'), Landsbókasafn Íslands – Háskólabókasafn; catalogue description from the handrit.is TEI record IB04-0383-is.xml (public GitHub repo Handrit/manuscripts, commit 905c93a, 2026-10-19)",
+    "identifier": "ÍB 383 4to",
+    "image_index": "serial 52 (0-based) in the myndir.handrit.is document; page label '0025r'",
+    "printed_locator": "p. 57 = fol. 25r",
+    "page_url": "https://myndir.handrit.is/document/Handrit.is/%C3%8DB%20383%204to/?page=52",
+    "image_url": "https://myndir.handrit.is/file/Handrit.is/%C3%8DB%20383%204to/52/SECONDARY_DISPLAY",
+    "catalogue_url": "https://handrit.is/manuscript/view/is/IB04-0383 (handrit.is URL pattern; the catalogue pages answer with an hCaptcha bot check and were not read)",
+    "rights": "No rights or licence statement is shown on the image server (myndir.handrit.is) page or file. The handrit.is TEI catalogue record for this manuscript has <availability status=\"restricted\">: 'Aðgangur aðeins mögulegur í fræðilegum tilgangi.' (access possible only for scholarly purposes). The manuscript itself is pre-1900. Permission to publish the photograph is NOT established; ask Landsbókasafn Íslands – Háskólabókasafn (handrit@handrit.is)."
+   },
+   "crop": {
+    "geometry_in_source_image": "1400x1040+1630+350",
+    "source_image_px": "3487x2880",
+    "crop_px": "1400x1040"
+   },
+   "caption_as_written": "'Viljir þú að einn steli þá rist staf þennan á [runic word] er hann [runic word] af' (runic words not transcribed)."
+  },
+  {
+   "file": "galdrastafir-thjofastafir-xix-huld-ib383-p57.png",
+   "table": "Þjófastafir, No. XIX — a ROW of 13 cipher-like signs, not a single figure",
+   "letters": [
+    {
+     "position": 1,
+     "label_as_printed": "(sign 1 of 13 in the row; no individual labels)",
+     "value": "sign in a row"
+    },
+    {
+     "position": 2,
+     "label_as_printed": "(sign 2 of 13 in the row; no individual labels)",
+     "value": "sign in a row"
+    },
+    {
+     "position": 3,
+     "label_as_printed": "(sign 3 of 13 in the row; no individual labels)",
+     "value": "sign in a row"
+    },
+    {
+     "position": 4,
+     "label_as_printed": "(sign 4 of 13 in the row; no individual labels)",
+     "value": "sign in a row"
+    },
+    {
+     "position": 5,
+     "label_as_printed": "(sign 5 of 13 in the row; no individual labels)",
+     "value": "sign in a row"
+    },
+    {
+     "position": 6,
+     "label_as_printed": "(sign 6 of 13 in the row; no individual labels)",
+     "value": "sign in a row"
+    },
+    {
+     "position": 7,
+     "label_as_printed": "(sign 7 of 13 in the row; no individual labels)",
+     "value": "sign in a row"
+    },
+    {
+     "position": 8,
+     "label_as_printed": "(sign 8 of 13 in the row; no individual labels)",
+     "value": "sign in a row"
+    },
+    {
+     "position": 9,
+     "label_as_printed": "(sign 9 of 13 in the row; no individual labels)",
+     "value": "sign in a row"
+    },
+    {
+     "position": 10,
+     "label_as_printed": "(sign 10 of 13 in the row; no individual labels)",
+     "value": "sign in a row"
+    },
+    {
+     "position": 11,
+     "label_as_printed": "(sign 11 of 13 in the row; no individual labels)",
+     "value": "sign in a row"
+    },
+    {
+     "position": 12,
+     "label_as_printed": "(sign 12 of 13 in the row; no individual labels)",
+     "value": "sign in a row"
+    },
+    {
+     "position": 13,
+     "label_as_printed": "(sign 13 of 13 in the row; no individual labels)",
+     "value": "sign in a row"
+    }
+   ],
+   "source": {
+    "work": "Huld ('Huld það er letur og rúnar með hendi Geirs Vigfússonar'): alphabets, number-scripts and runes, then 30 numbered staves",
+    "author": "Geir Vigfússon (1813–1880), Akureyri; sole hand (handrit.is)",
+    "edition": "manuscript (no printed edition used)",
+    "date": "1860 (handrit.is origDate, cert. medium); fol. 1r note 'Frá Geir Vigfússyni á Akureyri 1874' (provenance: sent 1874); p. 5 (fol. 3r) writes 'Annus Christi' in Greek numerals glossed 1869",
+    "place": "Iceland (Akureyri)",
+    "printer": null,
+    "copy": "Landsbókasafn Íslands – Háskólabókasafn, Reykjavík, ÍB 383 4to (paper, i + 27 + i leaves, 220 x 270 mm, oblong; 27v blank)",
+    "repository": "handrit.is image database (myndir.handrit.is, 'Myndagagnagrunnur'), Landsbókasafn Íslands – Háskólabókasafn; catalogue description from the handrit.is TEI record IB04-0383-is.xml (public GitHub repo Handrit/manuscripts, commit 905c93a, 2026-10-19)",
+    "identifier": "ÍB 383 4to",
+    "image_index": "serial 52 (0-based) in the myndir.handrit.is document; page label '0025r'",
+    "printed_locator": "p. 57 = fol. 25r",
+    "page_url": "https://myndir.handrit.is/document/Handrit.is/%C3%8DB%20383%204to/?page=52",
+    "image_url": "https://myndir.handrit.is/file/Handrit.is/%C3%8DB%20383%204to/52/SECONDARY_DISPLAY",
+    "catalogue_url": "https://handrit.is/manuscript/view/is/IB04-0383 (handrit.is URL pattern; the catalogue pages answer with an hCaptcha bot check and were not read)",
+    "rights": "No rights or licence statement is shown on the image server (myndir.handrit.is) page or file. The handrit.is TEI catalogue record for this manuscript has <availability status=\"restricted\">: 'Aðgangur aðeins mögulegur í fræðilegum tilgangi.' (access possible only for scholarly purposes). The manuscript itself is pre-1900. Permission to publish the photograph is NOT established; ask Landsbókasafn Íslands – Háskólabókasafn (handrit@handrit.is)."
+   },
+   "crop": {
+    "geometry_in_source_image": "1460x800+190+1290",
+    "source_image_px": "3487x2880",
+    "crop_px": "1460x800"
+   },
+   "caption_as_written": "'Til að sjá þjóf þá rist stafi þessa á sonefnda [cipher word, underlined] og haf undir hendi þér.—' ('sonefnda' = svonefnda, 'so-called')."
+  },
+  {
+   "file": "galdrastafir-thjofastafir-xx-huld-ib383-p57.png",
+   "table": "Þjófastafir, No. XX — two lines of about 20 cipher-like signs, not a single figure",
+   "letters": [
+    {
+     "position": 1,
+     "label_as_printed": "(about 20 signs in two lines, count approximate; no individual labels)",
+     "value": "row of signs"
+    }
+   ],
+   "source": {
+    "work": "Huld ('Huld það er letur og rúnar með hendi Geirs Vigfússonar'): alphabets, number-scripts and runes, then 30 numbered staves",
+    "author": "Geir Vigfússon (1813–1880), Akureyri; sole hand (handrit.is)",
+    "edition": "manuscript (no printed edition used)",
+    "date": "1860 (handrit.is origDate, cert. medium); fol. 1r note 'Frá Geir Vigfússyni á Akureyri 1874' (provenance: sent 1874); p. 5 (fol. 3r) writes 'Annus Christi' in Greek numerals glossed 1869",
+    "place": "Iceland (Akureyri)",
+    "printer": null,
+    "copy": "Landsbókasafn Íslands – Háskólabókasafn, Reykjavík, ÍB 383 4to (paper, i + 27 + i leaves, 220 x 270 mm, oblong; 27v blank)",
+    "repository": "handrit.is image database (myndir.handrit.is, 'Myndagagnagrunnur'), Landsbókasafn Íslands – Háskólabókasafn; catalogue description from the handrit.is TEI record IB04-0383-is.xml (public GitHub repo Handrit/manuscripts, commit 905c93a, 2026-10-19)",
+    "identifier": "ÍB 383 4to",
+    "image_index": "serial 52 (0-based) in the myndir.handrit.is document; page label '0025r'",
+    "printed_locator": "p. 57 = fol. 25r",
+    "page_url": "https://myndir.handrit.is/document/Handrit.is/%C3%8DB%20383%204to/?page=52",
+    "image_url": "https://myndir.handrit.is/file/Handrit.is/%C3%8DB%20383%204to/52/SECONDARY_DISPLAY",
+    "catalogue_url": "https://handrit.is/manuscript/view/is/IB04-0383 (handrit.is URL pattern; the catalogue pages answer with an hCaptcha bot check and were not read)",
+    "rights": "No rights or licence statement is shown on the image server (myndir.handrit.is) page or file. The handrit.is TEI catalogue record for this manuscript has <availability status=\"restricted\">: 'Aðgangur aðeins mögulegur í fræðilegum tilgangi.' (access possible only for scholarly purposes). The manuscript itself is pre-1900. Permission to publish the photograph is NOT established; ask Landsbókasafn Íslands – Háskólabókasafn (handrit@handrit.is)."
+   },
+   "crop": {
+    "geometry_in_source_image": "1400x900+1630+1300",
+    "source_image_px": "3487x2880",
+    "crop_px": "1400x900"
+   },
+   "caption_as_written": "'Rist stafi þessa á [runic word] og legg undir höfuð þér, og muntu þá í svefni þjófinn sjá' (runic word not transcribed)."
+  },
+  {
+   "file": "galdrastafir-salomons-insigli-xxi-huld-ib383-p58.png",
+   "table": "Salomons Insigli, No. XXI — an eight-armed figure of the ægishjálmur type under another name (comparison)",
+   "letters": [
+    {
+     "position": 1,
+     "label_as_printed": "Nº XXI. Salomons Insigli.",
+     "value": "Solomon's seal (eight-armed)"
+    }
+   ],
+   "source": {
+    "work": "Huld ('Huld það er letur og rúnar með hendi Geirs Vigfússonar'): alphabets, number-scripts and runes, then 30 numbered staves",
+    "author": "Geir Vigfússon (1813–1880), Akureyri; sole hand (handrit.is)",
+    "edition": "manuscript (no printed edition used)",
+    "date": "1860 (handrit.is origDate, cert. medium); fol. 1r note 'Frá Geir Vigfússyni á Akureyri 1874' (provenance: sent 1874); p. 5 (fol. 3r) writes 'Annus Christi' in Greek numerals glossed 1869",
+    "place": "Iceland (Akureyri)",
+    "printer": null,
+    "copy": "Landsbókasafn Íslands – Háskólabókasafn, Reykjavík, ÍB 383 4to (paper, i + 27 + i leaves, 220 x 270 mm, oblong; 27v blank)",
+    "repository": "handrit.is image database (myndir.handrit.is, 'Myndagagnagrunnur'), Landsbókasafn Íslands – Háskólabókasafn; catalogue description from the handrit.is TEI record IB04-0383-is.xml (public GitHub repo Handrit/manuscripts, commit 905c93a, 2026-10-19)",
+    "identifier": "ÍB 383 4to",
+    "image_index": "serial 53 (0-based) in the myndir.handrit.is document; page label '0025v'",
+    "printed_locator": "p. 58 = fol. 25v",
+    "page_url": "https://myndir.handrit.is/document/Handrit.is/%C3%8DB%20383%204to/?page=53",
+    "image_url": "https://myndir.handrit.is/file/Handrit.is/%C3%8DB%20383%204to/53/SECONDARY_DISPLAY",
+    "catalogue_url": "https://handrit.is/manuscript/view/is/IB04-0383 (handrit.is URL pattern; the catalogue pages answer with an hCaptcha bot check and were not read)",
+    "rights": "No rights or licence statement is shown on the image server (myndir.handrit.is) page or file. The handrit.is TEI catalogue record for this manuscript has <availability status=\"restricted\">: 'Aðgangur aðeins mögulegur í fræðilegum tilgangi.' (access possible only for scholarly purposes). The manuscript itself is pre-1900. Permission to publish the photograph is NOT established; ask Landsbókasafn Íslands – Háskólabókasafn (handrit@handrit.is)."
+   },
+   "crop": {
+    "geometry_in_source_image": "1300x1060+580+390",
+    "source_image_px": "3487x2880",
+    "crop_px": "1300x1060"
+   },
+   "caption_as_written": "'Berist á sér til varnar' (to be carried on oneself for protection).",
+   "form_as_seen": "Eight arms from a point; each arm ends in a trident-like fork with crossbars and an arc; resembles the Lbs 143 8vo helm more than the Huld vegvísir."
+  },
+  {
+   "file": "galdrastafir-vegvisir-lbs2917a-p27.png",
+   "table": "„Vegvísir“, No. 27 — second witness (Olgeir Geirsson, 1868–69)",
+   "letters": [
+    {
+     "position": 1,
+     "label_as_printed": "Nº 27 … „Vegvísir.“",
+     "value": "vegvísir"
+    }
+   ],
+   "source": {
+    "work": "Galdrakver, lófalestur (numbered staves Nos. 1–124 with a register)",
+    "author": "Olgeir Geirsson (handrit.is)",
+    "edition": "manuscript (no printed edition used)",
+    "date": "1868–1869 (handrit.is)",
+    "place": "Iceland",
+    "printer": null,
+    "copy": "Landsbókasafn Íslands – Háskólabókasafn, Reykjavík, Lbs 2917 a 4to (paper, 58 leaves, 206 x 167 mm, blue paper)",
+    "repository": "handrit.is image database (myndir.handrit.is, 'Myndagagnagrunnur'), Landsbókasafn Íslands – Háskólabókasafn; catalogue description from the handrit.is TEI record Lbs04-2917a-is.xml (public GitHub repo Handrit/manuscripts, commit 905c93a, 2026-10-19)",
+    "identifier": "Lbs 2917 a 4to",
+    "image_index": "serial 32 (0-based) in the myndir.handrit.is document; page label '0015r'",
+    "printed_locator": "p. 27 (page number written top right) = fol. 15r; stave No. 27 ('Og fleira')",
+    "page_url": "https://myndir.handrit.is/document/Handrit.is/Lbs%202917%20a%204to/?page=32",
+    "image_url": "https://myndir.handrit.is/file/Handrit.is/Lbs%202917%20a%204to/32/SECONDARY_DISPLAY",
+    "catalogue_url": "https://handrit.is/manuscript/view/is/Lbs04-2917a (handrit.is URL pattern; the catalogue pages answer with an hCaptcha bot check and were not read)",
+    "rights": "No rights or licence statement is shown on the image server (myndir.handrit.is) page or file. The handrit.is TEI catalogue record for this manuscript has <availability status=\"restricted\">: 'Aðgangur aðeins mögulegur í fræðilegum tilgangi.' (access possible only for scholarly purposes). The manuscript itself is pre-1900. Permission to publish the photograph is NOT established; ask Landsbókasafn Íslands – Háskólabókasafn (handrit@handrit.is)."
+   },
+   "crop": {
+    "geometry_in_source_image": "1700x1620+115+370",
+    "source_image_px": "2099x2688",
+    "crop_px": "1700x1620"
+   },
+   "caption_as_written": "'beri maður þennan staf á sér mun maður trauðla [runes, probably villist] í [runes, probably hríð] eða veða [runes] og eins [runes].' (runic words not transcribed; my tentative readings in brackets).",
+   "form_as_seen": "Same scheme and arm-end repertoire as Huld No. XXVII: eight arms meeting at a point, no central circle, no ring; NW ring-end; S comb with crossbarred teeth; W four-toothed comb."
+  },
+  {
+   "file": "galdrastafir-aegishjalmur-fagri-lbs2917a-p51.png",
+   "table": "Ægirshjálmur fagri (hinn gamli), No. 83 — circle-enclosed variant (register, fol. 4r: 'Ægishjalmur (fagri)')",
+   "letters": [
+    {
+     "position": 1,
+     "label_as_printed": "Ægirshjálmur fagri. (hinn gamli.)",
+     "value": "ægishjálmur"
+    }
+   ],
+   "source": {
+    "work": "Galdrakver, lófalestur (numbered staves Nos. 1–124 with a register)",
+    "author": "Olgeir Geirsson (handrit.is)",
+    "edition": "manuscript (no printed edition used)",
+    "date": "1868–1869 (handrit.is)",
+    "place": "Iceland",
+    "printer": null,
+    "copy": "Landsbókasafn Íslands – Háskólabókasafn, Reykjavík, Lbs 2917 a 4to (paper, 58 leaves, 206 x 167 mm, blue paper)",
+    "repository": "handrit.is image database (myndir.handrit.is, 'Myndagagnagrunnur'), Landsbókasafn Íslands – Háskólabókasafn; catalogue description from the handrit.is TEI record Lbs04-2917a-is.xml (public GitHub repo Handrit/manuscripts, commit 905c93a, 2026-10-19)",
+    "identifier": "Lbs 2917 a 4to",
+    "image_index": "serial 56 (0-based) in the myndir.handrit.is document; page label '0027r'",
+    "printed_locator": "p. 51 = fol. 27r; stave No. 83",
+    "page_url": "https://myndir.handrit.is/document/Handrit.is/Lbs%202917%20a%204to/?page=56",
+    "image_url": "https://myndir.handrit.is/file/Handrit.is/Lbs%202917%20a%204to/56/SECONDARY_DISPLAY",
+    "catalogue_url": "https://handrit.is/manuscript/view/is/Lbs04-2917a (handrit.is URL pattern; the catalogue pages answer with an hCaptcha bot check and were not read)",
+    "rights": "No rights or licence statement is shown on the image server (myndir.handrit.is) page or file. The handrit.is TEI catalogue record for this manuscript has <availability status=\"restricted\">: 'Aðgangur aðeins mögulegur í fræðilegum tilgangi.' (access possible only for scholarly purposes). The manuscript itself is pre-1900. Permission to publish the photograph is NOT established; ask Landsbókasafn Íslands – Háskólabókasafn (handrit@handrit.is)."
+   },
+   "crop": {
+    "geometry_in_source_image": "1650x1130+80+290",
+    "source_image_px": "2090x2682",
+    "crop_px": "1650x1130"
+   },
+   "caption_as_written": "'Sofa með fullu túngli og flæði sjá-|far, og muntu sjá þjófinn í svefni.—' (ð written d; 'sjáfar' = sjávar). Paraphrase (mine): sleep [on it] at full moon and high tide, and you will see the thief in your sleep.",
+   "form_as_seen": "Large enclosing circle; eight arms from a central dot ending in ball-ends; the four diagonals carry a small circle; the four orthogonal arms carry stepped ladder-like devices of bars and dots with S-hooks."
+  },
+  {
+   "file": "galdrastafir-aegishjalmur-2-lbs2917a-p72.png",
+   "table": "Ægishjálmur (2), No. 119 — eight-armed tine-and-crossbar type",
+   "letters": [
+    {
+     "position": 1,
+     "label_as_printed": "Ægishjálmur (2)",
+     "value": "ægishjálmur"
+    }
+   ],
+   "source": {
+    "work": "Galdrakver, lófalestur (numbered staves Nos. 1–124 with a register)",
+    "author": "Olgeir Geirsson (handrit.is)",
+    "edition": "manuscript (no printed edition used)",
+    "date": "1868–1869 (handrit.is)",
+    "place": "Iceland",
+    "printer": null,
+    "copy": "Landsbókasafn Íslands – Háskólabókasafn, Reykjavík, Lbs 2917 a 4to (paper, 58 leaves, 206 x 167 mm, blue paper)",
+    "repository": "handrit.is image database (myndir.handrit.is, 'Myndagagnagrunnur'), Landsbókasafn Íslands – Háskólabókasafn; catalogue description from the handrit.is TEI record Lbs04-2917a-is.xml (public GitHub repo Handrit/manuscripts, commit 905c93a, 2026-10-19)",
+    "identifier": "Lbs 2917 a 4to",
+    "image_index": "serial 77 (0-based) in the myndir.handrit.is document; page label '0037v'",
+    "printed_locator": "p. 72 = fol. 37v; stave No. 119",
+    "page_url": "https://myndir.handrit.is/document/Handrit.is/Lbs%202917%20a%204to/?page=77",
+    "image_url": "https://myndir.handrit.is/file/Handrit.is/Lbs%202917%20a%204to/77/SECONDARY_DISPLAY",
+    "catalogue_url": "https://handrit.is/manuscript/view/is/Lbs04-2917a (handrit.is URL pattern; the catalogue pages answer with an hCaptcha bot check and were not read)",
+    "rights": "No rights or licence statement is shown on the image server (myndir.handrit.is) page or file. The handrit.is TEI catalogue record for this manuscript has <availability status=\"restricted\">: 'Aðgangur aðeins mögulegur í fræðilegum tilgangi.' (access possible only for scholarly purposes). The manuscript itself is pre-1900. Permission to publish the photograph is NOT established; ask Landsbókasafn Íslands – Háskólabókasafn (handrit@handrit.is)."
+   },
+   "crop": {
+    "geometry_in_source_image": "1660x1130+290+330",
+    "source_image_px": "2084x2711",
+    "crop_px": "1660x1130"
+   },
+   "form_as_seen": "Eight arms from a point (no central circle); each with three crossbars and a small three-pronged fork at the end. Closest of the witnesses seen to the modern 'standard' helm."
+  },
+  {
+   "file": "galdrastafir-ginnir-1-lbs2917a-p60.png",
+   "table": "Galdrastafurinn Ginnir (1), No. 99",
+   "letters": [
+    {
+     "position": 1,
+     "label_as_printed": "Galdrastafurinn Ginnir. (1.)",
+     "value": "Ginnir (numbered as one series with Ginfaxi 2 and 3)"
+    }
+   ],
+   "source": {
+    "work": "Galdrakver, lófalestur (numbered staves Nos. 1–124 with a register)",
+    "author": "Olgeir Geirsson (handrit.is)",
+    "edition": "manuscript (no printed edition used)",
+    "date": "1868–1869 (handrit.is)",
+    "place": "Iceland",
+    "printer": null,
+    "copy": "Landsbókasafn Íslands – Háskólabókasafn, Reykjavík, Lbs 2917 a 4to (paper, 58 leaves, 206 x 167 mm, blue paper)",
+    "repository": "handrit.is image database (myndir.handrit.is, 'Myndagagnagrunnur'), Landsbókasafn Íslands – Háskólabókasafn; catalogue description from the handrit.is TEI record Lbs04-2917a-is.xml (public GitHub repo Handrit/manuscripts, commit 905c93a, 2026-10-19)",
+    "identifier": "Lbs 2917 a 4to",
+    "image_index": "serial 65 (0-based) in the myndir.handrit.is document; page label '0031v'",
+    "printed_locator": "p. 60 = fol. 31v; stave No. 99",
+    "page_url": "https://myndir.handrit.is/document/Handrit.is/Lbs%202917%20a%204to/?page=65",
+    "image_url": "https://myndir.handrit.is/file/Handrit.is/Lbs%202917%20a%204to/65/SECONDARY_DISPLAY",
+    "catalogue_url": "https://handrit.is/manuscript/view/is/Lbs04-2917a (handrit.is URL pattern; the catalogue pages answer with an hCaptcha bot check and were not read)",
+    "rights": "No rights or licence statement is shown on the image server (myndir.handrit.is) page or file. The handrit.is TEI catalogue record for this manuscript has <availability status=\"restricted\">: 'Aðgangur aðeins mögulegur í fræðilegum tilgangi.' (access possible only for scholarly purposes). The manuscript itself is pre-1900. Permission to publish the photograph is NOT established; ask Landsbókasafn Íslands – Háskólabókasafn (handrit@handrit.is)."
+   },
+   "crop": {
+    "geometry_in_source_image": "1700x2110+300+360",
+    "source_image_px": "2075x2676",
+    "crop_px": "1700x2110"
+   },
+   "form_as_seen": "Eight long arms crossing in a central circle; each arm ends in a square bracket-fork."
+  },
+  {
+   "file": "galdrastafir-angurgapi-1-lbs2917a-p61.png",
+   "table": "Galdrastafurinn Ángurgapi (1), No. 100",
+   "letters": [
+    {
+     "position": 1,
+     "label_as_printed": "Galdrastafurinn Ángurgapi.—(1.)",
+     "value": "Angurgapi"
+    }
+   ],
+   "source": {
+    "work": "Galdrakver, lófalestur (numbered staves Nos. 1–124 with a register)",
+    "author": "Olgeir Geirsson (handrit.is)",
+    "edition": "manuscript (no printed edition used)",
+    "date": "1868–1869 (handrit.is)",
+    "place": "Iceland",
+    "printer": null,
+    "copy": "Landsbókasafn Íslands – Háskólabókasafn, Reykjavík, Lbs 2917 a 4to (paper, 58 leaves, 206 x 167 mm, blue paper)",
+    "repository": "handrit.is image database (myndir.handrit.is, 'Myndagagnagrunnur'), Landsbókasafn Íslands – Háskólabókasafn; catalogue description from the handrit.is TEI record Lbs04-2917a-is.xml (public GitHub repo Handrit/manuscripts, commit 905c93a, 2026-10-19)",
+    "identifier": "Lbs 2917 a 4to",
+    "image_index": "serial 66 (0-based) in the myndir.handrit.is document; page label '0032r'",
+    "printed_locator": "p. 61 = fol. 32r; stave No. 100",
+    "page_url": "https://myndir.handrit.is/document/Handrit.is/Lbs%202917%20a%204to/?page=66",
+    "image_url": "https://myndir.handrit.is/file/Handrit.is/Lbs%202917%20a%204to/66/SECONDARY_DISPLAY",
+    "catalogue_url": "https://handrit.is/manuscript/view/is/Lbs04-2917a (handrit.is URL pattern; the catalogue pages answer with an hCaptcha bot check and were not read)",
+    "rights": "No rights or licence statement is shown on the image server (myndir.handrit.is) page or file. The handrit.is TEI catalogue record for this manuscript has <availability status=\"restricted\">: 'Aðgangur aðeins mögulegur í fræðilegum tilgangi.' (access possible only for scholarly purposes). The manuscript itself is pre-1900. Permission to publish the photograph is NOT established; ask Landsbókasafn Íslands – Háskólabókasafn (handrit@handrit.is)."
+   },
+   "crop": {
+    "geometry_in_source_image": "1760x2200+110+340",
+    "source_image_px": "2075x2676",
+    "crop_px": "1760x2200"
+   },
+   "form_as_seen": "Four-armed cross from a double circle containing a drawn face; each arm crossed by three arcs whose ends are small curled forks."
+  },
+  {
+   "file": "galdrastafir-ginfaxi-2-lbs2917a-p69.png",
+   "table": "Ginfaxi (2), No. 113",
+   "letters": [
+    {
+     "position": 1,
+     "label_as_printed": "Ginfaxi. (2) rammasti galdrastafur.",
+     "value": "Ginfaxi"
+    }
+   ],
+   "source": {
+    "work": "Galdrakver, lófalestur (numbered staves Nos. 1–124 with a register)",
+    "author": "Olgeir Geirsson (handrit.is)",
+    "edition": "manuscript (no printed edition used)",
+    "date": "1868–1869 (handrit.is)",
+    "place": "Iceland",
+    "printer": null,
+    "copy": "Landsbókasafn Íslands – Háskólabókasafn, Reykjavík, Lbs 2917 a 4to (paper, 58 leaves, 206 x 167 mm, blue paper)",
+    "repository": "handrit.is image database (myndir.handrit.is, 'Myndagagnagrunnur'), Landsbókasafn Íslands – Háskólabókasafn; catalogue description from the handrit.is TEI record Lbs04-2917a-is.xml (public GitHub repo Handrit/manuscripts, commit 905c93a, 2026-10-19)",
+    "identifier": "Lbs 2917 a 4to",
+    "image_index": "serial 74 (0-based) in the myndir.handrit.is document; page label '0036r'",
+    "printed_locator": "p. 69 = fol. 36r; stave No. 113",
+    "page_url": "https://myndir.handrit.is/document/Handrit.is/Lbs%202917%20a%204to/?page=74",
+    "image_url": "https://myndir.handrit.is/file/Handrit.is/Lbs%202917%20a%204to/74/SECONDARY_DISPLAY",
+    "catalogue_url": "https://handrit.is/manuscript/view/is/Lbs04-2917a (handrit.is URL pattern; the catalogue pages answer with an hCaptcha bot check and were not read)",
+    "rights": "No rights or licence statement is shown on the image server (myndir.handrit.is) page or file. The handrit.is TEI catalogue record for this manuscript has <availability status=\"restricted\">: 'Aðgangur aðeins mögulegur í fræðilegum tilgangi.' (access possible only for scholarly purposes). The manuscript itself is pre-1900. Permission to publish the photograph is NOT established; ask Landsbókasafn Íslands – Háskólabókasafn (handrit@handrit.is)."
+   },
+   "crop": {
+    "geometry_in_source_image": "1690x1160+100+330",
+    "source_image_px": "2075x2687",
+    "crop_px": "1690x1160"
+   },
+   "caption_as_written": "'Ginfaxi (2) rammasti galdrastafur' — I read 'rammasti' ('most powerful'); the first letter could be taken for v.",
+   "form_as_seen": "Two semicircles back to back (opening outward), crossed by two horizontal bars; all ends small curled forks."
+  },
+  {
+   "file": "galdrastafir-angurgapi-2-lbs2917a-p69.png",
+   "table": "Ángurgapi (2), No. 114",
+   "letters": [
+    {
+     "position": 1,
+     "label_as_printed": "Ángurgapi (2) rammasti galdrastafur,",
+     "value": "Angurgapi"
+    }
+   ],
+   "source": {
+    "work": "Galdrakver, lófalestur (numbered staves Nos. 1–124 with a register)",
+    "author": "Olgeir Geirsson (handrit.is)",
+    "edition": "manuscript (no printed edition used)",
+    "date": "1868–1869 (handrit.is)",
+    "place": "Iceland",
+    "printer": null,
+    "copy": "Landsbókasafn Íslands – Háskólabókasafn, Reykjavík, Lbs 2917 a 4to (paper, 58 leaves, 206 x 167 mm, blue paper)",
+    "repository": "handrit.is image database (myndir.handrit.is, 'Myndagagnagrunnur'), Landsbókasafn Íslands – Háskólabókasafn; catalogue description from the handrit.is TEI record Lbs04-2917a-is.xml (public GitHub repo Handrit/manuscripts, commit 905c93a, 2026-10-19)",
+    "identifier": "Lbs 2917 a 4to",
+    "image_index": "serial 74 (0-based) in the myndir.handrit.is document; page label '0036r'",
+    "printed_locator": "p. 69 = fol. 36r; stave No. 114",
+    "page_url": "https://myndir.handrit.is/document/Handrit.is/Lbs%202917%20a%204to/?page=74",
+    "image_url": "https://myndir.handrit.is/file/Handrit.is/Lbs%202917%20a%204to/74/SECONDARY_DISPLAY",
+    "catalogue_url": "https://handrit.is/manuscript/view/is/Lbs04-2917a (handrit.is URL pattern; the catalogue pages answer with an hCaptcha bot check and were not read)",
+    "rights": "No rights or licence statement is shown on the image server (myndir.handrit.is) page or file. The handrit.is TEI catalogue record for this manuscript has <availability status=\"restricted\">: 'Aðgangur aðeins mögulegur í fræðilegum tilgangi.' (access possible only for scholarly purposes). The manuscript itself is pre-1900. Permission to publish the photograph is NOT established; ask Landsbókasafn Íslands – Háskólabókasafn (handrit@handrit.is)."
+   },
+   "crop": {
+    "geometry_in_source_image": "1690x1130+100+1480",
+    "source_image_px": "2075x2687",
+    "crop_px": "1690x1130"
+   },
+   "form_as_seen": "Like No. 113 but with ONE horizontal bar."
+  },
+  {
+   "file": "galdrastafir-ginfaxi-3-lbs2917a-p73.png",
+   "table": "Ginfaxi (3), No. 121 (the register on fol. 5r lists No. 121 as 'Ginnir (3)')",
+   "letters": [
+    {
+     "position": 1,
+     "label_as_printed": "Ginfaxi (3)",
+     "value": "Ginfaxi / Ginnir"
+    }
+   ],
+   "source": {
+    "work": "Galdrakver, lófalestur (numbered staves Nos. 1–124 with a register)",
+    "author": "Olgeir Geirsson (handrit.is)",
+    "edition": "manuscript (no printed edition used)",
+    "date": "1868–1869 (handrit.is)",
+    "place": "Iceland",
+    "printer": null,
+    "copy": "Landsbókasafn Íslands – Háskólabókasafn, Reykjavík, Lbs 2917 a 4to (paper, 58 leaves, 206 x 167 mm, blue paper)",
+    "repository": "handrit.is image database (myndir.handrit.is, 'Myndagagnagrunnur'), Landsbókasafn Íslands – Háskólabókasafn; catalogue description from the handrit.is TEI record Lbs04-2917a-is.xml (public GitHub repo Handrit/manuscripts, commit 905c93a, 2026-10-19)",
+    "identifier": "Lbs 2917 a 4to",
+    "image_index": "serial 78 (0-based) in the myndir.handrit.is document; page label '0038r'",
+    "printed_locator": "p. 73 = fol. 38r; stave No. 121",
+    "page_url": "https://myndir.handrit.is/document/Handrit.is/Lbs%202917%20a%204to/?page=78",
+    "image_url": "https://myndir.handrit.is/file/Handrit.is/Lbs%202917%20a%204to/78/SECONDARY_DISPLAY",
+    "catalogue_url": "https://handrit.is/manuscript/view/is/Lbs04-2917a (handrit.is URL pattern; the catalogue pages answer with an hCaptcha bot check and were not read)",
+    "rights": "No rights or licence statement is shown on the image server (myndir.handrit.is) page or file. The handrit.is TEI catalogue record for this manuscript has <availability status=\"restricted\">: 'Aðgangur aðeins mögulegur í fræðilegum tilgangi.' (access possible only for scholarly purposes). The manuscript itself is pre-1900. Permission to publish the photograph is NOT established; ask Landsbókasafn Íslands – Háskólabókasafn (handrit@handrit.is)."
+   },
+   "crop": {
+    "geometry_in_source_image": "1680x1110+120+330",
+    "source_image_px": "2084x2711",
+    "crop_px": "1680x1110"
+   },
+   "form_as_seen": "Four-armed cross through a circle; each arm has an S-curl and ends in a small comb."
+  },
+  {
+   "file": "galdrastafir-vegvisir-lbs4627-f17v.png",
+   "table": "„Vegvísir“ — third witness, with heading and Christian lines",
+   "letters": [
+    {
+     "position": 1,
+     "label_as_printed": "hann heitir „Vegvísir“",
+     "value": "vegvísir"
+    }
+   ],
+   "source": {
+    "work": "Galdrakver",
+    "author": "Three unknown hands (handrit.is); owned by Benedikt Jóhannsson (from Eyjafjörður); deposited 1993",
+    "edition": "manuscript (no printed edition used)",
+    "date": "19th century (handrit.is, cert. low)",
+    "place": "Iceland",
+    "printer": null,
+    "copy": "Landsbókasafn Íslands – Háskólabókasafn, Reykjavík, Lbs 4627 8vo (paper, 32 leaves, 160 x 110 mm)",
+    "repository": "handrit.is image database (myndir.handrit.is, 'Myndagagnagrunnur'), Landsbókasafn Íslands – Háskólabókasafn; catalogue description from the handrit.is TEI record Lbs08-4627-is.xml (public GitHub repo Handrit/manuscripts, commit 905c93a, 2026-10-19)",
+    "identifier": "Lbs 4627 8vo",
+    "image_index": "serial 35 (0-based) in the myndir.handrit.is document; page label '0017v'",
+    "printed_locator": "fol. 17v (no page number seen)",
+    "page_url": "https://myndir.handrit.is/document/Handrit.is/Lbs%204627%208vo/?page=35",
+    "image_url": "https://myndir.handrit.is/file/Handrit.is/Lbs%204627%208vo/35/SECONDARY_DISPLAY",
+    "catalogue_url": "https://handrit.is/manuscript/view/is/Lbs08-4627 (handrit.is URL pattern; the catalogue pages answer with an hCaptcha bot check and were not read)",
+    "rights": "No rights or licence statement is shown on the image server (myndir.handrit.is) page or file. The handrit.is TEI catalogue record for this manuscript has <availability status=\"restricted\">: 'Aðgangur aðeins mögulegur í fræðilegum tilgangi.' (access possible only for scholarly purposes). The manuscript itself is pre-1900. Permission to publish the photograph is NOT established; ask Landsbókasafn Íslands – Háskólabókasafn (handrit@handrit.is)."
+   },
+   "crop": {
+    "geometry_in_source_image": "1150x1720+150+170",
+    "source_image_px": "1300x2072",
+    "crop_px": "1150x1720"
+   },
+   "caption_as_written": "Heading: 'Að maður villist ekki. Geym þennan staf undir þinni vinstri hendi, hann heitir „Vegvísir“'; left margin, vertical: 'Guð gefi mér lukku og blessun í Jesú nafni'; below: 'og mun hann duga þér, hafir þú trú á honum — ef guð vill, trúa í Jesú nafni —' (spelling normalised a little).",
+   "form_as_seen": "Same scheme as Huld (eight arms from a point, no circle, no ring) with different details: NW large ring-end with crescent crossbars; N trident over crossbars; S comb of five crossbarred teeth."
+  },
+  {
+   "file": "galdrastafir-thjofastafur-lbs4627-f14v.png",
+   "table": "Unnamed eight-armed thief-detection stave (pencil, faint)",
+   "letters": [
+    {
+     "position": 1,
+     "label_as_printed": "(no name; the text calls it 'staf' for knowing who steals)",
+     "value": "thief-detection stave"
+    }
+   ],
+   "source": {
+    "work": "Galdrakver",
+    "author": "Three unknown hands (handrit.is); owned by Benedikt Jóhannsson (from Eyjafjörður); deposited 1993",
+    "edition": "manuscript (no printed edition used)",
+    "date": "19th century (handrit.is, cert. low)",
+    "place": "Iceland",
+    "printer": null,
+    "copy": "Landsbókasafn Íslands – Háskólabókasafn, Reykjavík, Lbs 4627 8vo (paper, 32 leaves, 160 x 110 mm)",
+    "repository": "handrit.is image database (myndir.handrit.is, 'Myndagagnagrunnur'), Landsbókasafn Íslands – Háskólabókasafn; catalogue description from the handrit.is TEI record Lbs08-4627-is.xml (public GitHub repo Handrit/manuscripts, commit 905c93a, 2026-10-19)",
+    "identifier": "Lbs 4627 8vo",
+    "image_index": "serial 29 (0-based) in the myndir.handrit.is document; page label '0014v'",
+    "printed_locator": "fol. 14v",
+    "page_url": "https://myndir.handrit.is/document/Handrit.is/Lbs%204627%208vo/?page=29",
+    "image_url": "https://myndir.handrit.is/file/Handrit.is/Lbs%204627%208vo/29/SECONDARY_DISPLAY",
+    "catalogue_url": "https://handrit.is/manuscript/view/is/Lbs08-4627 (handrit.is URL pattern; the catalogue pages answer with an hCaptcha bot check and were not read)",
+    "rights": "No rights or licence statement is shown on the image server (myndir.handrit.is) page or file. The handrit.is TEI catalogue record for this manuscript has <availability status=\"restricted\">: 'Aðgangur aðeins mögulegur í fræðilegum tilgangi.' (access possible only for scholarly purposes). The manuscript itself is pre-1900. Permission to publish the photograph is NOT established; ask Landsbókasafn Íslands – Háskólabókasafn (handrit@handrit.is)."
+   },
+   "crop": {
+    "geometry_in_source_image": "1060x1650+200+240",
+    "source_image_px": "1288x2080",
+    "crop_px": "1060x1650"
+   },
+   "caption_as_written": "'Á sama máta má líka, til að vita hvor frá manni stelur [written over, darker ink], rista seinasta (næsta) staf á munnlaugarbotn, utan og innan, með fullu [drawn moon face] og flóði; en sumir rita hann á blýplötu, með nýjum stálknífi, á sunnudag um miðdag, leggja síðan undir höfuð sér, og mun þig þjófinn dreyma; les pater noster' (spelling normalised a little; my reading)."
+  },
+  {
+   "file": "galdrastafir-gapandi-ginfaxi-lbs2413-f20v.png",
+   "table": "Gapandi and Ginfaxi, the wrestling pair, with caption",
+   "letters": [
+    {
+     "position": 1,
+     "label_as_printed": "Gap|andi (written inside the left figure, split by its shaft)",
+     "value": "Gapandi (the research calls it Gapaldur)"
+    },
+    {
+     "position": 2,
+     "label_as_printed": "Gin|faxi (written across the right figure)",
+     "value": "Ginfaxi"
+    }
+   ],
+   "source": {
+    "work": "Rúna- og galdrakver",
+    "author": "One unknown scribe (handrit.is); bought 1934 from Jónas Egilsson á Völlum",
+    "edition": "manuscript (no printed edition used)",
+    "date": "c. 1800 (handrit.is: 1780–1820)",
+    "place": "Iceland",
+    "printer": null,
+    "copy": "Landsbókasafn Íslands – Háskólabókasafn, Reykjavík, Lbs 2413 8vo (paper, i + 74 + i leaves, 101 x 81 mm)",
+    "repository": "handrit.is image database (myndir.handrit.is, 'Myndagagnagrunnur'), Landsbókasafn Íslands – Háskólabókasafn; catalogue description from the handrit.is TEI record Lbs08-2413-is.xml (public GitHub repo Handrit/manuscripts, commit 905c93a, 2026-10-19)",
+    "identifier": "Lbs 2413 8vo",
+    "image_index": "serial 43 (0-based) in the myndir.handrit.is document; page label '0020v'",
+    "printed_locator": "fol. 20v (no page number seen)",
+    "page_url": "https://myndir.handrit.is/document/Handrit.is/Lbs%202413%208vo/?page=43",
+    "image_url": "https://myndir.handrit.is/file/Handrit.is/Lbs%202413%208vo/43/SECONDARY_DISPLAY",
+    "catalogue_url": "https://handrit.is/manuscript/view/is/Lbs08-2413 (handrit.is URL pattern; the catalogue pages answer with an hCaptcha bot check and were not read)",
+    "rights": "No rights or licence statement is shown on the image server (myndir.handrit.is) page or file. The handrit.is TEI catalogue record for this manuscript has <availability status=\"restricted\">: 'Aðgangur aðeins mögulegur í fræðilegum tilgangi.' (access possible only for scholarly purposes). The manuscript itself is pre-1900. Permission to publish the photograph is NOT established; ask Landsbókasafn Íslands – Háskólabókasafn (handrit@handrit.is)."
+   },
+   "crop": {
+    "geometry_in_source_image": "821x580+190+130",
+    "source_image_px": "1011x1341",
+    "crop_px": "821x580"
+   },
+   "caption_as_written": "'Ginfaxi á hæl, Gapandi á tá, taktu á sem fyrri, því nú liggur á.' (Ginfaxi on the heel, Gapandi on the toe.) The next spell begins 'Viljir þú glíma vel; R[ist] þ[enn]a st[af] á ...'.",
+   "form_as_seen": "Gapandi: a three-sided frame (top bar and two uprights ending in ring-ends) with a central shaft topped by a small looped device and ending below in a three-pronged arch, a double crossbar on the shaft. Ginfaxi: a four-armed cross, each arm ending in a crescent crossed by a double bar."
+  },
+  {
+   "file": "galdrastafir-niu-aegishjalmar-lbs2413-f31v.png",
+   "table": "'Þetta eru þeir níu Ægirs Hjálmar' — the nine helms, with caption",
+   "letters": [
+    {
+     "position": 1,
+     "label_as_printed": "(helm 1 of 9; no individual labels; row 1 has 6, row 2 has 3)",
+     "value": "ægishjálmur variant"
+    },
+    {
+     "position": 2,
+     "label_as_printed": "(helm 2 of 9; no individual labels; row 1 has 6, row 2 has 3)",
+     "value": "ægishjálmur variant"
+    },
+    {
+     "position": 3,
+     "label_as_printed": "(helm 3 of 9; no individual labels; row 1 has 6, row 2 has 3)",
+     "value": "ægishjálmur variant"
+    },
+    {
+     "position": 4,
+     "label_as_printed": "(helm 4 of 9; no individual labels; row 1 has 6, row 2 has 3)",
+     "value": "ægishjálmur variant"
+    },
+    {
+     "position": 5,
+     "label_as_printed": "(helm 5 of 9; no individual labels; row 1 has 6, row 2 has 3)",
+     "value": "ægishjálmur variant"
+    },
+    {
+     "position": 6,
+     "label_as_printed": "(helm 6 of 9; no individual labels; row 1 has 6, row 2 has 3)",
+     "value": "ægishjálmur variant"
+    },
+    {
+     "position": 7,
+     "label_as_printed": "(helm 7 of 9; no individual labels; row 1 has 6, row 2 has 3)",
+     "value": "ægishjálmur variant"
+    },
+    {
+     "position": 8,
+     "label_as_printed": "(helm 8 of 9; no individual labels; row 1 has 6, row 2 has 3)",
+     "value": "ægishjálmur variant"
+    },
+    {
+     "position": 9,
+     "label_as_printed": "(helm 9 of 9; no individual labels; row 1 has 6, row 2 has 3)",
+     "value": "ægishjálmur variant"
+    }
+   ],
+   "source": {
+    "work": "Rúna- og galdrakver",
+    "author": "One unknown scribe (handrit.is); bought 1934 from Jónas Egilsson á Völlum",
+    "edition": "manuscript (no printed edition used)",
+    "date": "c. 1800 (handrit.is: 1780–1820)",
+    "place": "Iceland",
+    "printer": null,
+    "copy": "Landsbókasafn Íslands – Háskólabókasafn, Reykjavík, Lbs 2413 8vo (paper, i + 74 + i leaves, 101 x 81 mm)",
+    "repository": "handrit.is image database (myndir.handrit.is, 'Myndagagnagrunnur'), Landsbókasafn Íslands – Háskólabókasafn; catalogue description from the handrit.is TEI record Lbs08-2413-is.xml (public GitHub repo Handrit/manuscripts, commit 905c93a, 2026-10-19)",
+    "identifier": "Lbs 2413 8vo",
+    "image_index": "serial 65 (0-based) in the myndir.handrit.is document; page label '0031v'",
+    "printed_locator": "fol. 31v",
+    "page_url": "https://myndir.handrit.is/document/Handrit.is/Lbs%202413%208vo/?page=65",
+    "image_url": "https://myndir.handrit.is/file/Handrit.is/Lbs%202413%208vo/65/SECONDARY_DISPLAY",
+    "catalogue_url": "https://handrit.is/manuscript/view/is/Lbs08-2413 (handrit.is URL pattern; the catalogue pages answer with an hCaptcha bot check and were not read)",
+    "rights": "No rights or licence statement is shown on the image server (myndir.handrit.is) page or file. The handrit.is TEI catalogue record for this manuscript has <availability status=\"restricted\">: 'Aðgangur aðeins mögulegur í fræðilegum tilgangi.' (access possible only for scholarly purposes). The manuscript itself is pre-1900. Permission to publish the photograph is NOT established; ask Landsbókasafn Íslands – Háskólabókasafn (handrit@handrit.is)."
+   },
+   "crop": {
+    "geometry_in_source_image": "841x700+170+520",
+    "source_image_px": "1011x1353",
+    "crop_px": "841x700"
+   },
+   "caption_as_written": "'Þetta eru þeir níu Ægirs Hjálmar sem enginn má án vera sem með nokkra [cipher word] fer, og skal hvör 99 brúkaður vera.—' (my reading; the cipher word is not decoded).",
+   "form_as_seen": "Nine different small figures: two eight-armed stars with hooked and crescent ends, a double-barred cross with E-ends, a large crescent-and-T figure, a cross with crescent ends, an X with a central ring, a cross with T-ends, a horizontal line with ring-ends, and a plain double-barred cross."
+  }
+ ],
+ "legibility": "Huld (ÍB 383 4to, 3487x2880 px) and Lbs 2917 a 4to (c. 2100x2700 px) are sharp: every stroke and caption is clear at full size. Lbs 143 8vo (1030x1710 px, parchment, sooty) is legible; the figure is clear, the caption mostly readable, its last line not. AM 434 a 12mo (1812x2593 px) figures are clear but tiny (each c. 300-430 px); captions are abbreviated 15th-c. script I did not transcribe. Lbs 4627 8vo fol. 14v is faint pencil. Lbs 2413 8vo (c. 1011x1350 px) is legible but low resolution (figures 60-120 px each on fol. 31v).",
+ "problems": [
+  "handrit.is catalogue pages (manuscript/view, browse, search, XML) answer with an hCaptcha 'security check' for automated traffic; I did not try to get past it. Images came from the separate image database myndir.handrit.is, which is not gated; descriptions from the TEI records in the public GitHub repository Handrit/manuscripts.",
+  "Highest resolution available: myndir.handrit.is serves one JPEG per page (SECONDARY_DISPLAY); the 'high quality' PDF wraps the same pixels.",
+  "No image-level rights statement was found anywhere; publication of the photographs is not cleared (see each plate's rights).",
+  "Galdrabók (Stockholm, ATA) not found in digitised form; no folder on myndir.handrit.is; Lindqvist 1921 and Kålund 1907 not on archive.org (catalogue query). WebSearch budget was exhausted, so other hosts (Riksantikvarieämbetet, Alvin) were not searched.",
+  "No leaf found for Smjörhnútur or Hulinhjálmur; no stave named 'Gapaldur' found (Gapandi instead).",
+  "Captions in runes and cipher are described, not transcribed."
+ ],
+ "findings": [
+  "Shelfmarks: the Huld manuscript is ÍB 383 4to (handrit.is), not Lbs 143 8vo; Lbs 143 8vo is the parchment Galdrakver dated 1670 (cert. medium). The task text's 'Huld manuscript (Lbs 143 8vo, 1847)' conflates them.",
+  "Huld date: handrit.is gives 1860 (cert. medium). Fol. 1r carries the note 'Frá Geir Vigfússyni á Akureyri 1874' (provenance). On p. 5 (fol. 3r) the scribe writes 'Annus Christi' in Greek acrophonic numerals and glosses it '1869'. Neither 1847 nor 1860 was seen on the leaves viewed; 1869 may be the year that page was written (not proof for the whole book).",
+  "Huld vegvísir locator: p. 60 is fol. 26v (handrit.is label 0026v; '60' written top left), not fol. 27r. Fol. 27r is the next page (No. XXX Herðslustafir, unnumbered) and 27v is blank. The 'one account' giving 26v is right by the repository's foliation.",
+  "Huld vegvísir caption as written: 'Beri madur stafi þessa á sér villist madur ekki í' (right, downward) / 'hridum né vondu vedri þó ókunnugur sé.—' (left, upward). This confirms the plural 'stafi þessa' and the ending 'sé', not 'sá'.",
+  "Huld vegvísir form: the eight arms meet at a POINT, with no central circle and no enclosing ring. The research's 'small central circle' does not fit Huld, Lbs 2917 a or Lbs 4627.",
+  "Huld numbers its staves I–XXX (pp. 51–60 and fol. 27r). The vegvísir is No. XXVII, which confirms '30 staves'. The numbering of pages 41–50 is absent (fol. 21 is blank or ruled), so page and folio numbers do not run in step.",
+  "Huld names no ægishjálmur, Gapaldur, Ginfaxi, Smjörhnútur or Hulinhjálmur among Nos. I–XXX. The eight-armed figure of the helm type there is No. XXI 'Salomons Insigli' (p. 58, 'Berist á sér til varnar').",
+  "Þjófastafur in Huld covers different kinds of thing: No. XVII (a framed figure with diagonals), No. XVIII (a curved figure with an eye), Nos. XIX and XX (ROWS of 13 and about 20 cipher-like signs, not one figure) and No. XXVIII (eight-armed, p. 60). The headings differ in number: Nos. XVII, XVIII and XXVIII read 'Þjófastafur' (singular), Nos. XIX and XX 'Þjófastafir' (plural).",
+  "Lbs 143 8vo: the eight-armed helm is on fol. 11r (folio '11' written; label 0011r), so Crazy Alchemist's locator is right and Gelmir's 10v is not; 10v holds an alphabet and small staves. The caption spells it 'Ægirz hialmur' and says to make it in lead and press it on the forehead before meeting an enemy.",
+  "Lbs 143 8vo helm form: a central circle, eight arms each with THREE crossbars, and each arm ending in a CURVED crescent-fork. These are not the straight-pronged tridents of modern reproductions.",
+  "AM 434 a 12mo is in Copenhagen (Den Arnamagnæanske Samling, per handrit.is), dated s. XV² (1490–1510, after Kålund's Katalog). It already has EIGHT-armed staves on fol. 4vb (forked ends) and fol. 5ra (ring-ends), besides four-armed ones (5rb, 5vb); handrit.is calls the staves on ff. 4vb–5vb 'variations of Ægishjálmur'. So 'the eight-armed form first appears in Lbs 143 8vo' holds only for a figure NAMED ægishjálmur. The captions were not transcribed and the name was not read on these leaves.",
+  "Wrestling pair: in Lbs 2413 8vo, fol. 20v, the names are 'Ginfaxi' and 'Gapandi', not Gapaldur. The caption reads 'Ginfaxi á hæl, Gapandi á tá, taktu á sem fyrri, því nú liggur á', which puts Ginfaxi on the HEEL and Gapandi on the TOE. That is the reverse of the research's placement (Gapaldur under the heel, Ginfaxi under the toes). No right or left foot is named.",
+  "Lbs 2917 a 4to (Olgeir Geirsson, 1868–69) uses one name for different figures. No. 99 'Ginnir (1)' (p. 60), No. 113 'Ginfaxi (2)' (p. 69) and No. 121 'Ginfaxi (3)' (p. 73) are three unlike figures numbered as one series, and the register (fol. 5r) lists No. 121 as 'Ginnir (3)'. Angurgapi (1) is No. 100 (p. 61) and Angurgapi (2) No. 114 (p. 69). No 'Gapaldur' appears in the register (Nos. 1–124).",
+  "Lbs 2917 a 4to vegvísir: No. 27 on p. 27 (fol. 15r), titled „Vegvísir“, with the caption 'beri maður þennan staf á sér mun maður trauðla [runes] í [runes] …'. This confirms Vlasatý's p. 27. Its figure follows the Huld figure closely.",
+  "Lbs 4627 8vo vegvísir: fol. 17v, 'Að maður villist ekki. Geym þennan staf undir þinni vinstri hendi, hann heitir „Vegvísir“', with Christian lines ('Guð gefi mér lukku og blessun í Jesú nafni …'). The instruction is to keep it under the LEFT hand. The figure follows the Huld scheme with different details, so 'visibly different' is true of the details only.",
+  "Lbs 2413 8vo, fol. 31v, confirms from the manuscript the 'nine helms': 'Þetta eru þeir níu Ægirs Hjálmar sem enginn má án vera … og skal hvör 99 brúkaður vera', followed by nine different small figures. The manuscript spells the name Ægirs-, as Lbs 143 8vo does.",
+  "Lbs 2917 a 4to No. 83 'Ægirshjálmur fagri (hinn gamli)' (p. 51; so spelled on the page, 'Ægishjalmur (fagri)' in the register) is a circle-enclosed figure used to see a thief in one's sleep. No. 119 'Ægishjálmur (2)' (p. 72) is the tine-and-crossbar type closest to the modern standard, but without a central circle.",
+  "Dates and contents from the handrit.is TEI records: Lbs 2413 8vo is c. 1800 (1780–1820), 74 leaves, one hand. Lbs 4627 8vo is 19th century (cert. low), 32 leaves, three hands, from Eyjafjörður. Lbs 2917 a 4to is Olgeir Geirsson, 1868–1869, 58 leaves.",
+  "The TEI records of the Landsbókasafn manuscripts carry <availability status='restricted'>: 'Aðgangur aðeins mögulegur í fræðilegum tilgangi'. No image licence was found."
+ ],
+ "missing": [
+  "Galdrabók (Stockholm, ATA Ämb 2 F 16:26): no digitised images found. myndir.handrit.is has no folder for it, and no Lindqvist 1921 is on archive.org (catalogue query). The WebSearch budget was used up, so the Swedish hosts were not searched.",
+  "Smjörhnútur: no leaf found (not among Huld I–XXX or the Lbs 2917 a register 1–124; Lbs 2413 and Lbs 143 not read exhaustively).",
+  "Hulinhjálmur / Huliðshjálmur: no leaf found (same scope).",
+  "Gapaldur under that name: not found. Gapandi (Lbs 2413 8vo fol. 20v) was found instead.",
+  "AM 434 a 12mo captions: not transcribed (abbreviated 15th-c. script). The Hólmavík attribution of the wrestling staves to AM 434 a was not checked beyond ff. 1r–5v and 38r–40v.",
+  "handrit.is catalogue pages: behind an hCaptcha bot check and not read. TEI descriptions were taken from the public GitHub repository Handrit/manuscripts instead.",
+  "Image rights: no licence statement found for any image. Permission to publish the photographs is not established."
+ ],
+ "notes": [
+  "Shelfmark correction: the Huld manuscript is ÍB 383 4to; Lbs 143 8vo is the 1670 parchment Galdrakver (the task text's 'Huld manuscript (Lbs 143 8vo, 1847)' mixes them).",
+  "Leaf numbers are those of the handrit.is image labels (printNumber); page numbers are as written in the manuscripts.",
+  "Crops keep a small margin; geometry is given in source-image pixels so they can be re-cut from the full images.",
+  "Downloaded full-size source images are in /tmp/claude-0/-home-user-3MAGI/681e04fd-d4fb-530c-94a3-2eb5e517d73c/scratchpad/gald_dl/<ms>/s<serial>.jpg; TEI records in .../gald_dl/tei/."
+ ],
+ "checked": {
+  "by": "independent checker (Claude), 2026-10-20",
+  "method": [
+   "Read every crop and every context page in the folder (27 crops, 23 context pages), with enlarged and rotated sub-crops of every label and caption.",
+   "Re-fetched each manuscript's page list from myndir.handrit.is and every source image (SECONDARY_DISPLAY) used: all byte-identical to the saved copies; page lists identical.",
+   "Re-cut every crop from its source image by its stated geometry: all 27 matched pixel for pixel (before the three re-cuts below).",
+   "Matched every page_url/image_url serial to the repository's page label (printNumber) and the written page/folio number on the leaf.",
+   "Re-read the TEI records (and re-fetched Lbs08-0143-is.xml from GitHub Handrit/manuscripts at commit 905c93a: identical); re-fetched the myndir.handrit.is document page (no rights text) and handrit.is/about (no licence named). handrit.is catalogue pages still answer 403 with an hCaptcha check."
+  ],
+  "corrections": [
+   {
+    "file": "(all Landsbókasafn plates: 0,1,6-26)",
+    "field": "source.rights",
+    "was": "'Aðgangur aðeins mögulegur í fræðilegum tilgangi'",
+    "now": "'Aðgangur aðeins mögulegur í fræðilegum tilgangi.'",
+    "why": "Quotation made exact: the TEI <availability status=\"restricted\"><p> ends with a full stop (re-read in IB04-0383-is.xml, Lbs04-2917a-is.xml, Lbs08-0143-is.xml, Lbs08-2413-is.xml, Lbs08-4627-is.xml)."
+   },
+   {
+    "file": "galdrastafir-aegishjalmur-lbs143-f11r.png",
+    "field": "source.work",
+    "was": "Galdrakver (charm book; hymns ff. 1r–7v, charms and staves ff. 8r–27v)",
+    "now": "Galdrakver (ff. 1r–7v 'Himnabréf', a letter from heaven, inc. 'Það sunnudaga bréf …'; ff. 8r–27v 'Galdrar', charms and staves, inc. 'Þessir eru þeir níu hjálparhringar …')",
+    "why": "The TEI record (msItem 1.1) calls ff. 1r–7v 'Himnabréf' (a heavenly/Sunday letter), not hymns."
+   },
+   {
+    "file": "galdrastafir-aegishjalmur-lbs143-f11r.png",
+    "field": "source.edition",
+    "was": "manuscript (no printed edition used)",
+    "now": "manuscript (no printed edition used; handrit.is notes the manuscript was published as 'Galdrakver' in 2004)",
+    "why": "The TEI record (bibl type primary-1, target Galdra2004a) records a 2004 edition titled Galdrakver; the manifest implied none existed."
+   },
+   {
+    "file": "galdrastafir-aegishjalmur-lbs143-f11r-figure.png",
+    "field": "source.work",
+    "was": "Galdrakver (charm book; hymns ff. 1r–7v, charms and staves ff. 8r–27v)",
+    "now": "Galdrakver (ff. 1r–7v 'Himnabréf', a letter from heaven, inc. 'Það sunnudaga bréf …'; ff. 8r–27v 'Galdrar', charms and staves, inc. 'Þessir eru þeir níu hjálparhringar …')",
+    "why": "The TEI record (msItem 1.1) calls ff. 1r–7v 'Himnabréf' (a heavenly/Sunday letter), not hymns."
+   },
+   {
+    "file": "galdrastafir-aegishjalmur-lbs143-f11r-figure.png",
+    "field": "source.edition",
+    "was": "manuscript (no printed edition used)",
+    "now": "manuscript (no printed edition used; handrit.is notes the manuscript was published as 'Galdrakver' in 2004)",
+    "why": "The TEI record (bibl type primary-1, target Galdra2004a) records a 2004 edition titled Galdrakver; the manifest implied none existed."
+   },
+   {
+    "file": "galdrastafir-aegishjalmur-variant-am434a-f5ra.png",
+    "field": "crop",
+    "was": {
+     "geometry_in_source_image": "380x340+190+1040",
+     "source_image_px": "1812x2593",
+     "crop_px": "380x340"
+    },
+    "now": {
+     "geometry_in_source_image": "560x390+170+1025",
+     "source_image_px": "1812x2593",
+     "crop_px": "560x390",
+     "recut": "2026-10-20 by checker; old geometry 380x340+190+1040 cut off the letter groups right of the stave and the end of the row below"
+    },
+    "why": "The old crop stopped at x=570 and dropped the letters written beside the stave ('R R', 'r · f ·', 'a · a · g') and the end of the row below; re-cut from the same source image (myndir.handrit.is serial 8)."
+   },
+   {
+    "file": "galdrastafir-aegishjalmur-variant-am434a-f5ra.png",
+    "field": "table",
+    "was": "Unnamed EIGHT-armed stave with ring-ends, with a row of letters below",
+    "now": "Unnamed EIGHT-armed stave with ring-ends, with groups of single letters to its right and below",
+    "why": "Table name now mentions the letter groups that belong with the stave."
+   },
+   {
+    "file": "galdrastafir-aegishjalmur-variant-am434a-f5ra.png",
+    "field": "letters.0.label_as_printed",
+    "was": "(no label read; letters below read approximately 'f · o · g · g · b')",
+    "now": "(no name read) letters beside it, read approximately (15th-c. forms, uncertain): right of the stave, three lines 'R R' / 'r · f ·' / 'a · a · g'; below, 'f · o · g · g · b · g …'",
+    "why": "Old label gave only 'f · o · g · g · b', which is the left half of the row below; the letters to the right had been cut off."
+   },
+   {
+    "file": "galdrastafir-staves-am434a-f5rb.png",
+    "field": "crop",
+    "was": {
+     "geometry_in_source_image": "560x320+760+1020",
+     "source_image_px": "1812x2593",
+     "crop_px": "560x320"
+    },
+    "now": {
+     "geometry_in_source_image": "610x535+740+1015",
+     "source_image_px": "1812x2593",
+     "crop_px": "610x535",
+     "recut": "2026-10-20 by checker; old geometry 560x320+760+1020 cut through the letter block under the crosses"
+    },
+    "why": "The old crop ended at y=1340, in the middle of a block of dotted single letters that runs from beside the third cross down to the line before the next charm ('… Ef þu legg…'); re-cut to keep the whole block."
+   },
+   {
+    "file": "galdrastafir-staves-am434a-f5rb.png",
+    "field": "table",
+    "was": "Three small FOUR-armed crosses with ring-ends, with letters",
+    "now": "Three small FOUR-armed crosses with ring-ends, followed by a block of dotted single letters (four lines, the first beside the third cross)",
+    "why": "Table name now records the letter block that the crop now includes."
+   },
+   {
+    "file": "galdrastafir-thjofastafur-xvii-huld-ib383-p57.png",
+    "field": "letters.0.label_as_printed",
+    "was": "Nº XVII. Þjófastafir",
+    "now": "Nº XVII. Þjófastafur",
+    "why": "The heading ends -afur (f + u + r: three minims after the f), as in No. XVIII, not -afir as in Nos. XIX and XX."
+   },
+   {
+    "file": "galdrastafir-thjofastafur-xvii-huld-ib383-p57.png",
+    "field": "table",
+    "was": "Þjófastafir, No. XVII — with both vertical captions",
+    "now": "Þjófastafur, No. XVII — with both vertical captions",
+    "why": "Heading is singular 'Þjófastafur'."
+   },
+   {
+    "file": "galdrastafir-thjofastafur-xvii-huld-ib383-p57.png",
+    "field": "caption_as_written",
+    "was": "Left, vertical: 'Lát þennan staf undir dyra[...]'; right, vertical: a line of runes, then '...og mun honum bregða [...] yfir hann [...] dagur ef stelur [...] frá þér.—' (partly read).",
+    "now": "Left, vertical, reading upward: 'Lát þennan staf undir dyra' (the line ends at the frame; the word is not finished on that side). Right, vertical, four lines: a line of runes (not transcribed), then 'og mun honum bregða þá / yfir hann stígur ef sekur er / í þjófnaði frá þér.—' (ð is written d in this hand). Paraphrase (mine): put this stave under the door…, and he will start when he steps over it, if he is guilty of theft from you.",
+    "why": "Old reading '…yfir hann [...] dagur ef stelur [...] frá þér' is wrong: the lines read 'yfir hann stígur ef sekur er / í þjófnaði frá þér', and the first Latin-letter line ends 'þá'."
+   },
+   {
+    "file": "galdrastafir-thjofastafur-xvii-huld-ib383-p57.png",
+    "field": "crop",
+    "was": {
+     "geometry_in_source_image": "1520x1000+180+340",
+     "source_image_px": "3487x2880",
+     "crop_px": "1520x1000"
+    },
+    "now": {
+     "geometry_in_source_image": "1520x1030+180+340",
+     "source_image_px": "3487x2880",
+     "crop_px": "1520x1030",
+     "recut": "2026-10-20 by checker; old geometry 1520x1000+180+340 clipped the descender of 'þá' at the foot of the right-hand caption"
+    },
+    "why": "Bottom edge moved down 30 px so the last caption word 'þá' is whole (the top of the next heading 'Nº XIX' was already in the old crop)."
+   },
+   {
+    "file": "galdrastafir-thjofastafur-xxviii-huld-ib383-p60.png",
+    "field": "letters.0.label_as_printed",
+    "was": "Nº XXVIII. Þjófastafir.",
+    "now": "Nº XXVIII. Þjófastafur.",
+    "why": "Heading reads 'Þjófastafur.' (three minims after the f, then the full stop), not 'Þjófastafir.'"
+   },
+   {
+    "file": "galdrastafir-thjofastafur-xxviii-huld-ib383-p60.png",
+    "field": "table",
+    "was": "Þjófastafir, No. XXVIII — eight-armed figure with varied arm-ends",
+    "now": "Þjófastafur, No. XXVIII — eight-armed figure with varied arm-ends",
+    "why": "Heading is singular."
+   },
+   {
+    "file": "galdrastafir-thjofastafir-xix-huld-ib383-p57.png",
+    "field": "caption_as_written",
+    "was": "'Til að sjá þjóf þá rist stafi þessa á sonefuda [cipher word, underlined] og haf undir hendi þér.—'",
+    "now": "'Til að sjá þjóf þá rist stafi þessa á sonefnda [cipher word, underlined] og haf undir hendi þér.—' ('sonefnda' = svonefnda, 'so-called').",
+    "why": "'sonefuda' was a misreading of 'sonefnda' (n, not u: the two minims are joined at the top)."
+   },
+   {
+    "file": "galdrastafir-aegishjalmur-fagri-lbs2917a-p51.png",
+    "field": "letters.0.label_as_printed",
+    "was": "Ægishjálmur fagri. (hinn gamli.)",
+    "now": "Ægirshjálmur fagri. (hinn gamli.)",
+    "why": "The label is spelled Ægirs- (an r stands between 'gi' and the long s, the same r-form as in '-hjálmur' and 'fagri'); No. 119 on p. 72 is spelled 'Ægishjálmur'. The register (fol. 4r, p. 5) lists No. 83 as 'Ægishjalmur (fagri) (1)'."
+   },
+   {
+    "file": "galdrastafir-aegishjalmur-fagri-lbs2917a-p51.png",
+    "field": "table",
+    "was": "Ægishjálmur fagri (hinn gamli), No. 83 — circle-enclosed variant",
+    "now": "Ægirshjálmur fagri (hinn gamli), No. 83 — circle-enclosed variant (register, fol. 4r: 'Ægishjalmur (fagri)')",
+    "why": "Spelling as written on the page."
+   },
+   {
+    "file": "galdrastafir-aegishjalmur-fagri-lbs2917a-p51.png",
+    "field": "caption_as_written",
+    "was": "'Sofa með fullu tungli og flad[?]-|far, og muntu sjá þjófinn í svefni.' (my reading; the use is to see a thief in one's sleep).",
+    "now": "'Sofa með fullu túngli og flæði sjá-|far, og muntu sjá þjófinn í svefni.—' (ð written d; 'sjáfar' = sjávar). Paraphrase (mine): sleep [on it] at full moon and high tide, and you will see the thief in your sleep.",
+    "why": "Old reading 'og flad[?]-|far' left out 'sjá-': the line ends 'flæði sjá-' and the next begins '=far' (flæði sjávar, high tide)."
+   },
+   {
+    "file": "galdrastafir-angurgapi-1-lbs2917a-p61.png",
+    "field": "letters.0.label_as_printed",
+    "was": "Galdrastafurinn Angurgapi.—(1.)",
+    "now": "Galdrastafurinn Ángurgapi.—(1.)",
+    "why": "An acute stroke stands over the A of the label (the register, fol. 4v, writes „Angurgapi\" without it)."
+   },
+   {
+    "file": "galdrastafir-angurgapi-1-lbs2917a-p61.png",
+    "field": "table",
+    "was": "Galdrastafurinn Angurgapi (1), No. 100",
+    "now": "Galdrastafurinn Ángurgapi (1), No. 100",
+    "why": "Spelling as written on the page."
+   },
+   {
+    "file": "galdrastafir-angurgapi-2-lbs2917a-p69.png",
+    "field": "letters.0.label_as_printed",
+    "was": "Angurgapi (2) rammasti galdrastafur,",
+    "now": "Ángurgapi (2) rammasti galdrastafur,",
+    "why": "An acute stroke stands over the A, as on p. 61 (register fol. 5r: 'Angurgapi (2)')."
+   },
+   {
+    "file": "galdrastafir-angurgapi-2-lbs2917a-p69.png",
+    "field": "table",
+    "was": "Angurgapi (2), No. 114",
+    "now": "Ángurgapi (2), No. 114",
+    "why": "Spelling as written on the page."
+   },
+   {
+    "file": "galdrastafir-thjofastafur-lbs4627-f14v.png",
+    "field": "caption_as_written",
+    "was": "'Á sama máta má líka, til að vita hvor frá manni stelur, rista seinasta (næsta) staf á mannlaugarbotn utan og innan, með fullu [tungli] og flóði; en sumir rita hann á blýplötu ... leggja síðan undir höfuð sér, og mun þig þjófinn dreyma; les pater noster' (partly normalised; my reading).",
+    "now": "'Á sama máta má líka, til að vita hvor frá manni stelur [written over, darker ink], rista seinasta (næsta) staf á munnlaugarbotn, utan og innan, með fullu [drawn moon face] og flóði; en sumir rita hann á blýplötu, með nýjum stálknífi, á sunnudag um miðdag, leggja síðan undir höfuð sér, og mun þig þjófinn dreyma; les pater noster' (spelling normalised a little; my reading).",
+    "why": "'mannlaugarbotn' was a misreading of 'munnlaugar botn' (munnlaug, a wash-basin); the passage left out as '…' reads 'með nýjum stálknífi, á sunnudag um miðdag'."
+   }
+  ],
+  "verified_without_change": [
+   "All 27 locators: serials and labels agree (Lbs 143 26=0011r; AM 434 a 7=0004v, 8=0005r, 9=0005v; ÍB 383 52=0025r, 53=0025v, 55=0026v; Lbs 2917 a 32=0015r, 56=0027r, 65=0031v, 66=0032r, 74=0036r, 77=0037v, 78=0038r; Lbs 4627 29=0014v, 35=0017v; Lbs 2413 43=0020v, 65=0031v). Written page numbers seen: Huld 57, 58, 60 (running head 'Huld'); Lbs 2917 a 27, 51, 61, 72, 73 and register pp. 5–7; Lbs 143 folio '11'.",
+   "Running heads/headings confirm the tables: Huld 'Nº XXVII. Vegvísir.', 'Nº XXI. Salomons Insigli.', 'Nº XVIII. Þjófastafur,', 'Nº XIX/XX. Þjófastafir', 'Nº XXIX.'; Lbs 2917 a 'Og Fleira' p. 27 and 'Galdrastafir' pp. 51–73, Nos. 27, 83, 99, 100, 113, 114, 119, 121; register fol. 5r lists 121 as 'Ginnir (3)'.",
+   "Huld vegvísir caption ('Beri madur stafi þessa á sér villist madur ekki í' / 'hridum ne vondu vedri þó ókunnugur sé.—'), Lbs 2413 fol. 20v ('Ginfaxi á hæl, Gapandi á tá …'; labels Gap|andi left, Gin|faxi right), fol. 31v ('Þetta eru þeir níu Ægirs Hjálmar …', 6 + 3 figures), Lbs 4627 fol. 17v heading and Christian lines, Lbs 143 'Ægirz hialmur' and folio 11, Huld p. 5 'Annus Christi … 1869'.",
+   "Form descriptions checked against the crops (Lbs 143 circle + 8 arms × 3 crossbars + crescent forks; Huld/Lbs 2917 a/Lbs 4627 vegvísir arms meeting at a point; No. 119 three crossbars and curved forks; Nos. 99, 100, 113, 114, 121).",
+   "Remaining crops: nothing of the figure, its number/heading, its label or its caption is cut off (the figure-only crops 1 and 6 cut the side captions on purpose)."
+  ],
+  "open_points": [
+   "Rights: no image licence exists on myndir.handrit.is or handrit.is; the TEI <availability> sits in the record's publicationStmt and so strictly describes the catalogue record, not the photographs. Publication permission is still not established for any plate.",
+   "AM 434 a letter groups (plates 3 and 4) are given as approximate readings only.",
+   "Huld vegvísir caption: whether 'ne' carries an accent ('né') could not be decided at the image resolution."
+  ]
+ }
+}

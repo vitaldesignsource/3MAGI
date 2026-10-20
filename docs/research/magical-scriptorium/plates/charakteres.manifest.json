@@ -1,0 +1,2449 @@
+{
+ "slug": "charakteres",
+ "plates": [
+  {
+   "file": "charakteres-pgm36-col7-eitrem1925-plVII.png",
+   "table": "PGM XXXVI = P. Oslo 1, col. vii: the signs and figure after l. 185 of the \"Lysipharmakon\" (Eitrem ll. 178-185, then \"Magicae litterae et signa (vide tab. VII). Figura magica\"). Photograph of the papyrus.",
+   "letters": [
+    {
+     "position": 1,
+     "label_as_printed": "(none)",
+     "value": "none (charaktēr)",
+     "form": "circle crossed by a diagonal X, with a dot in each quarter"
+    },
+    {
+     "position": 2,
+     "label_as_printed": "(none)",
+     "value": null,
+     "form": "cursive kappa: upright with a hooked top and two arms to the right"
+    },
+    {
+     "position": 3,
+     "label_as_printed": "(none)",
+     "value": null,
+     "form": "reversed epsilon (Э-like): an arc open to the left with a horizontal bar"
+    },
+    {
+     "position": 4,
+     "label_as_printed": "(none)",
+     "value": null,
+     "form": "saltire (X) with a ring at each of the four ends; short stroke(s) below the lower right ring"
+    },
+    {
+     "position": 5,
+     "label_as_printed": "(none)",
+     "value": "none",
+     "form": "faint ring-ended crossing sign (a second X with rings), preceded by short strokes; partly effaced",
+     "note": "uncertain reading"
+    },
+    {
+     "position": 6,
+     "label_as_printed": "(none)",
+     "value": null,
+     "form": "square containing a vertical stroke and a horizontal near the top (box with Π/T inside)"
+    },
+    {
+     "position": 7,
+     "label_as_printed": "(none)",
+     "value": null,
+     "form": "large open circle"
+    },
+    {
+     "position": 8,
+     "label_as_printed": "(none)",
+     "value": "none",
+     "form": "3-like / ϡ-like curve with small looped flourishes (δ-loops) above and below",
+     "note": "uncertain extent"
+    },
+    {
+     "position": 9,
+     "label_as_printed": "(row 2) Greek-looking letters",
+     "value": "not determined",
+     "form": "letter group; checker reads \"ΝΥϖ ΙΤΛ(Α?)ΙϢΙΤΠ(?)\" - last letter Π-like and partly lost; probably letters, not signs",
+     "note": "read as letters; uncertain"
+    },
+    {
+     "position": 10,
+     "label_as_printed": "(none)",
+     "value": null,
+     "form": "box (rough rectangle) crossed by its two diagonals, the diagonals and sides overshooting the corners; about nine open rings - at the ends of the overshooting strokes and free-standing round the box (top-left, top-middle, top-right, upper-left, mid-left, lower-left, bottom-middle, bottom, lower-right) - plus two filled blobs on the right side"
+    },
+    {
+     "position": 11,
+     "label_as_printed": "(none)",
+     "value": "none",
+     "form": "cursive scrawl ending in a long wavy tail (perhaps a serpent)",
+     "note": "uncertain"
+    },
+    {
+     "position": 12,
+     "label_as_printed": "(row 3) Greek-looking letters",
+     "value": "not determined",
+     "form": "\"Ε ⊏ θ λ\"-like group: Ε; a box open on the right (⊏) with a short stroke above it; θ with its crossbar run out to the right; λ",
+     "note": "uncertain; below it begins the drawn figure (a crowned figure and a smaller figure), not cropped in full"
+    }
+   ],
+   "source": {
+    "work": "Papyri Osloenses, Fasc. I: Magical Papyri (edition, translation and commentary of P. Oslo 1-5; \"with thirteen plates\")",
+    "author": "S. Eitrem (ed.)",
+    "edition": "first and only edition",
+    "date": "1925",
+    "place": "Oslo",
+    "printer": "Published by Det Norske Videnskaps-Akademi i Oslo; on commission by J. Dybwad (printer not recorded)",
+    "copy": "Duke University Libraries, call number \"P. Oslo\", barcode D05064480R (vol. I)",
+    "repository": "Internet Archive (collections papyrology, duke_libraries)",
+    "identifier": "papyriosloensesunse",
+    "rights": "Repository: the Internet Archive item papyriosloensesunse carries no \"rights\", \"licenseurl\" or \"possible-copyright-status\" field in its metadata (checked 2026-10-20 at archive.org/metadata/papyriosloensesunse). HathiTrust catalog (checked 2026-10-20): mdp.39015010705146 (University of Michigan, enumcron \"P.EDN. P.Oslo v.1-2\") rightsCode \"pdus\", usRightsString \"Full view\"; the three Duke copies (dul1.ark:/13960/s27g0p6bq0r = vol. I, s2w0w7tvq2q, s25twn0vj00) rightsCode \"ic\", \"Limited (search-only)\". Assessment (not a repository statement): published 1925, so public domain in the US; Eitrem (IA associated-names \"Eitrem, S. (Samson), 1872-1966\") died 1966, so his own text may be protected in life+70 countries until the end of 2036; the plates are collotypes of the ancient papyrus and their status outside the US was not determined.",
+    "image_index": "n170 (Internet Archive leaf index, 0-based)",
+    "printed_locator": "Plate VII, caption \"Pap. Osl. No. 1, Col. vii\"; text on p. 10 (image n17): ll. 178-185 then \"Magicae litterae et signa (vide tab. VII). Figura magica\"",
+    "page_url": "https://archive.org/details/papyriosloensesunse/page/n170/mode/1up",
+    "image_url": "https://archive.org/download/papyriosloensesunse/page/n170.jpg",
+    "iiif_url": "https://iiif.archive.org/iiif/papyriosloensesunse$170/full/full/0/default.jpg"
+   }
+  },
+  {
+   "file": "charakteres-pgm36-col8-eitrem1925-plVIII.png",
+   "table": "PGM XXXVI = P. Oslo 1, col. viii: the signs after \"Ἀδωναί //\" at l. 203 of the agōgē (Eitrem ll. 189-210, printed \"... λέγω η χαρι-| κτῆρας οὕτως· δώς γ' ἀμοὶ τὴν χάριν πάντων, | Ἀδωναί // Litterae et signa magica (vide tab. VIII).\" - Eitrem's apparatus to 202: \"δῶς l. δός\"), above the vowel figure ll. 204-210. Photograph.",
+   "letters": [
+    {
+     "position": 1,
+     "label_as_printed": "(none)",
+     "value": null,
+     "form": "asterisk: upright stroke with a ring at top and a heavy blob at the foot, crossed by two diagonals ending in rings (six ring-ends)"
+    },
+    {
+     "position": 2,
+     "label_as_printed": "(none)",
+     "value": null,
+     "form": "open triangle (Δ)"
+    },
+    {
+     "position": 3,
+     "label_as_printed": "(none)",
+     "value": "none",
+     "form": "small arch (∩) with a dot above",
+     "note": "uncertain"
+    },
+    {
+     "position": 4,
+     "label_as_printed": "(none)",
+     "value": null,
+     "form": "b-like: upright with a closed loop at the lower right"
+    },
+    {
+     "position": 5,
+     "label_as_printed": "(none)",
+     "value": null,
+     "form": "ear-shaped sign: reversed C (Ↄ) enclosing a small curl"
+    },
+    {
+     "position": 6,
+     "label_as_printed": "\"ιαω\" written inside",
+     "value": "none (frame round the name Iaō)",
+     "form": "rectangle with rings at the corners (strokes overshoot), enclosing the word ιαω; top line extended into a long stroke"
+    },
+    {
+     "position": 7,
+     "label_as_printed": "(none)",
+     "value": null,
+     "form": "cross (+) with a ring at each of the four ends"
+    },
+    {
+     "position": 8,
+     "label_as_printed": "(none)",
+     "value": null,
+     "form": "horizontal base with a ring at each end and two uprights rising from it, each topped by a ring (ring-ended ⊔)"
+    }
+   ],
+   "source": {
+    "work": "Papyri Osloenses, Fasc. I: Magical Papyri (edition, translation and commentary of P. Oslo 1-5; \"with thirteen plates\")",
+    "author": "S. Eitrem (ed.)",
+    "edition": "first and only edition",
+    "date": "1925",
+    "place": "Oslo",
+    "printer": "Published by Det Norske Videnskaps-Akademi i Oslo; on commission by J. Dybwad (printer not recorded)",
+    "copy": "Duke University Libraries, call number \"P. Oslo\", barcode D05064480R (vol. I)",
+    "repository": "Internet Archive (collections papyrology, duke_libraries)",
+    "identifier": "papyriosloensesunse",
+    "rights": "Repository: the Internet Archive item papyriosloensesunse carries no \"rights\", \"licenseurl\" or \"possible-copyright-status\" field in its metadata (checked 2026-10-20 at archive.org/metadata/papyriosloensesunse). HathiTrust catalog (checked 2026-10-20): mdp.39015010705146 (University of Michigan, enumcron \"P.EDN. P.Oslo v.1-2\") rightsCode \"pdus\", usRightsString \"Full view\"; the three Duke copies (dul1.ark:/13960/s27g0p6bq0r = vol. I, s2w0w7tvq2q, s25twn0vj00) rightsCode \"ic\", \"Limited (search-only)\". Assessment (not a repository statement): published 1925, so public domain in the US; Eitrem (IA associated-names \"Eitrem, S. (Samson), 1872-1966\") died 1966, so his own text may be protected in life+70 countries until the end of 2036; the plates are collotypes of the ancient papyrus and their status outside the US was not determined.",
+    "image_index": "n172 (Internet Archive leaf index, 0-based)",
+    "printed_locator": "Plate VIII, caption \"Pap. Osl. No. 1, Col. viii\"; text p. 11 (image n18): l. 203 \"Ἀδωναί // Litterae et signa magica (vide tab. VIII)\"",
+    "page_url": "https://archive.org/details/papyriosloensesunse/page/n172/mode/1up",
+    "image_url": "https://archive.org/download/papyriosloensesunse/page/n172.jpg",
+    "iiif_url": "https://iiif.archive.org/iiif/papyriosloensesunse$172/full/full/0/default.jpg"
+   },
+   "note": "A 3/ʒ-like mark stands at the right end of the α-row of the vowel figure on the plate; Eitrem's typeset vowel figure (p. 11) does not print it."
+  },
+  {
+   "file": "charakteres-pgm36-col11-eitrem1925-plXI.png",
+   "table": "PGM XXXVI = P. Oslo 1, col. xi: the row of signs after l. 263 (Eitrem ll. 256-263, \"Λαβὼν ὄστρακον ἀπὸ τρι[ό]δου τρίγονον ...\"; then \"Magicae litterae (vide tab. XI).\"). Photograph.",
+   "letters": [
+    {
+     "position": 1,
+     "label_as_printed": "(none)",
+     "value": null,
+     "form": "Y/γ-like: two strokes meeting low, the left arm curling over into a ring at the top, rings at the right arm and at the foot"
+    },
+    {
+     "position": 2,
+     "label_as_printed": "(none)",
+     "value": null,
+     "form": "saltire (X) with a ring at each end"
+    },
+    {
+     "position": 3,
+     "label_as_printed": "(none)",
+     "value": null,
+     "form": "open box (⊔): two uprights joined at the bottom, each upright topped by a ring (9-shapes)"
+    },
+    {
+     "position": 4,
+     "label_as_printed": "(none)",
+     "value": null,
+     "form": "Γ: upright with a ring at the foot, top bar running right to a ring"
+    },
+    {
+     "position": 5,
+     "label_as_printed": "(none)",
+     "value": null,
+     "form": "two ring-topped strokes side by side, not joined: (a) a ring at the top with a stroke slanting down-left to a ring at the foot; (b) a ring at the top with a stroke running down and curving right into a ring at lower right",
+     "note": "may be two signs (the row would then have 7)"
+    },
+    {
+     "position": 6,
+     "label_as_printed": "(none)",
+     "value": null,
+     "form": "small Λ with a ring at each foot and a short stroke at the apex"
+    }
+   ],
+   "source": {
+    "work": "Papyri Osloenses, Fasc. I: Magical Papyri (edition, translation and commentary of P. Oslo 1-5; \"with thirteen plates\")",
+    "author": "S. Eitrem (ed.)",
+    "edition": "first and only edition",
+    "date": "1925",
+    "place": "Oslo",
+    "printer": "Published by Det Norske Videnskaps-Akademi i Oslo; on commission by J. Dybwad (printer not recorded)",
+    "copy": "Duke University Libraries, call number \"P. Oslo\", barcode D05064480R (vol. I)",
+    "repository": "Internet Archive (collections papyrology, duke_libraries)",
+    "identifier": "papyriosloensesunse",
+    "rights": "Repository: the Internet Archive item papyriosloensesunse carries no \"rights\", \"licenseurl\" or \"possible-copyright-status\" field in its metadata (checked 2026-10-20 at archive.org/metadata/papyriosloensesunse). HathiTrust catalog (checked 2026-10-20): mdp.39015010705146 (University of Michigan, enumcron \"P.EDN. P.Oslo v.1-2\") rightsCode \"pdus\", usRightsString \"Full view\"; the three Duke copies (dul1.ark:/13960/s27g0p6bq0r = vol. I, s2w0w7tvq2q, s25twn0vj00) rightsCode \"ic\", \"Limited (search-only)\". Assessment (not a repository statement): published 1925, so public domain in the US; Eitrem (IA associated-names \"Eitrem, S. (Samson), 1872-1966\") died 1966, so his own text may be protected in life+70 countries until the end of 2036; the plates are collotypes of the ancient papyrus and their status outside the US was not determined.",
+    "image_index": "n178 (Internet Archive leaf index, 0-based)",
+    "printed_locator": "Plate XI, caption \"Pap. Osl. No. 1, Col. xi\"; text p. 13 (image n20): after l. 263 \"Magicae litterae (vide tab. XI)\"",
+    "page_url": "https://archive.org/details/papyriosloensesunse/page/n178/mode/1up",
+    "image_url": "https://archive.org/download/papyriosloensesunse/page/n178.jpg",
+    "iiif_url": "https://iiif.archive.org/iiif/papyriosloensesunse$178/full/full/0/default.jpg"
+   }
+  },
+  {
+   "file": "charakteres-pgm36-col12-eitrem1925-plXII.png",
+   "table": "PGM XXXVI = P. Oslo 1, col. xii: two rows of signs at l. 280 of the \"Charitēsion\" (Eitrem ll. 275-279, then \"Magicae litterae et signa (v. tab. XII)\"). Photograph; the right end is damaged.",
+   "letters": [
+    {
+     "position": 1,
+     "label_as_printed": "(none)",
+     "value": "none",
+     "form": "ɯ-like cup (U with a rounded base and a middle stroke)",
+     "note": "left edge abraded; before it, at the abraded left end, are traces of one or two further signs (a blot with strokes, a small ρ-like loop, marks beside the vertical crack) - not listed; the top of the cup runs on into the bar of no. 2"
+    },
+    {
+     "position": 2,
+     "label_as_printed": "(none)",
+     "value": "none",
+     "form": "long horizontal bar carrying a ring and ending in a cross (—O—+)",
+     "note": "may be one sign or three"
+    },
+    {
+     "position": 3,
+     "label_as_printed": "(none)",
+     "value": null,
+     "form": "small open circle"
+    },
+    {
+     "position": 4,
+     "label_as_printed": "(none)",
+     "value": null,
+     "form": "group of four S-shaped squiggles (ʂʂʂʂ)"
+    },
+    {
+     "position": 5,
+     "label_as_printed": "(none)",
+     "value": null,
+     "form": "box quartered by a cross, strokes overshooting (⊞), heavily inked"
+    },
+    {
+     "position": 6,
+     "label_as_printed": "(none)",
+     "value": null,
+     "form": "hook joined to a horizontal bar (ᑕ—)"
+    },
+    {
+     "position": 7,
+     "label_as_printed": "(none)",
+     "value": null,
+     "form": "upright crossed by short horizontals (╪)"
+    },
+    {
+     "position": 8,
+     "label_as_printed": "(none)",
+     "value": null,
+     "form": "ℓ-like: upright with a loop at the top and a foot stroke"
+    },
+    {
+     "position": 9,
+     "label_as_printed": "T",
+     "value": null,
+     "form": "T"
+    },
+    {
+     "position": 10,
+     "label_as_printed": "(none)",
+     "value": null,
+     "form": "circle with a dot or blot inside"
+    },
+    {
+     "position": 11,
+     "label_as_printed": "(none)",
+     "value": null,
+     "form": "upright with a blob/ring at the top, crossed by two horizontal bars (the upper longer), with a long descender (‡-like)",
+     "note": "after it, in the damaged right end, traces of further signs (not transcribed)"
+    },
+    {
+     "position": 12,
+     "label_as_printed": "(row 2)",
+     "value": null,
+     "form": "long horizontal with a short upright hanging below its middle (⊤-like), joined on the right to a cross whose upright is partly lost in the vertical crack (a diagonal stroke also crosses it)",
+     "note": "one sign or two; damaged"
+    },
+    {
+     "position": 13,
+     "label_as_printed": "(none)",
+     "value": null,
+     "form": "box crossed by a diagonal X (⊠), strokes overshooting"
+    },
+    {
+     "position": 14,
+     "label_as_printed": "B",
+     "value": null,
+     "form": "B"
+    },
+    {
+     "position": 15,
+     "label_as_printed": "Z",
+     "value": null,
+     "form": "Z: top bar, diagonal, longer bottom bar (no crossbar)"
+    },
+    {
+     "position": 16,
+     "label_as_printed": "Η?",
+     "value": "none",
+     "form": "small H-like sign",
+     "note": "uncertain"
+    }
+   ],
+   "source": {
+    "work": "Papyri Osloenses, Fasc. I: Magical Papyri (edition, translation and commentary of P. Oslo 1-5; \"with thirteen plates\")",
+    "author": "S. Eitrem (ed.)",
+    "edition": "first and only edition",
+    "date": "1925",
+    "place": "Oslo",
+    "printer": "Published by Det Norske Videnskaps-Akademi i Oslo; on commission by J. Dybwad (printer not recorded)",
+    "copy": "Duke University Libraries, call number \"P. Oslo\", barcode D05064480R (vol. I)",
+    "repository": "Internet Archive (collections papyrology, duke_libraries)",
+    "identifier": "papyriosloensesunse",
+    "rights": "Repository: the Internet Archive item papyriosloensesunse carries no \"rights\", \"licenseurl\" or \"possible-copyright-status\" field in its metadata (checked 2026-10-20 at archive.org/metadata/papyriosloensesunse). HathiTrust catalog (checked 2026-10-20): mdp.39015010705146 (University of Michigan, enumcron \"P.EDN. P.Oslo v.1-2\") rightsCode \"pdus\", usRightsString \"Full view\"; the three Duke copies (dul1.ark:/13960/s27g0p6bq0r = vol. I, s2w0w7tvq2q, s25twn0vj00) rightsCode \"ic\", \"Limited (search-only)\". Assessment (not a repository statement): published 1925, so public domain in the US; Eitrem (IA associated-names \"Eitrem, S. (Samson), 1872-1966\") died 1966, so his own text may be protected in life+70 countries until the end of 2036; the plates are collotypes of the ancient papyrus and their status outside the US was not determined.",
+    "image_index": "n180 (Internet Archive leaf index, 0-based)",
+    "printed_locator": "Plate XII, caption \"Pap. Osl. No. 1, Col. xii\"; text p. 14 (image n21): l. 280 \"Magicae litterae et signa (v. tab. XII)\"",
+    "page_url": "https://archive.org/details/papyriosloensesunse/page/n180/mode/1up",
+    "image_url": "https://archive.org/download/papyriosloensesunse/page/n180.jpg",
+    "iiif_url": "https://iiif.archive.org/iiif/papyriosloensesunse$180/full/full/0/default.jpg"
+   },
+   "note": "Eitrem's apparatus to l. 278 (p. 14): \"χ linea transversa deleta (neque idem est signum quod in sequentibus signis magicis bis repetitur)\" - he distinguishes the cancelled χ from a sign that recurs twice in the following signs."
+  },
+  {
+   "file": "charakteres-pgm36-178-187-eitrem1925-p10-text.png",
+   "table": "PGM XXXVI ll. 178-185 (+ note to plate VII): Eitrem's typeset text. Context only - Eitrem does not print the signs; his text refers the reader to the plate.",
+   "letters": [],
+   "source": {
+    "work": "Papyri Osloenses, Fasc. I: Magical Papyri (edition, translation and commentary of P. Oslo 1-5; \"with thirteen plates\")",
+    "author": "S. Eitrem (ed.)",
+    "edition": "first and only edition",
+    "date": "1925",
+    "place": "Oslo",
+    "printer": "Published by Det Norske Videnskaps-Akademi i Oslo; on commission by J. Dybwad (printer not recorded)",
+    "copy": "Duke University Libraries, call number \"P. Oslo\", barcode D05064480R (vol. I)",
+    "repository": "Internet Archive (collections papyrology, duke_libraries)",
+    "identifier": "papyriosloensesunse",
+    "rights": "Repository: the Internet Archive item papyriosloensesunse carries no \"rights\", \"licenseurl\" or \"possible-copyright-status\" field in its metadata (checked 2026-10-20 at archive.org/metadata/papyriosloensesunse). HathiTrust catalog (checked 2026-10-20): mdp.39015010705146 (University of Michigan, enumcron \"P.EDN. P.Oslo v.1-2\") rightsCode \"pdus\", usRightsString \"Full view\"; the three Duke copies (dul1.ark:/13960/s27g0p6bq0r = vol. I, s2w0w7tvq2q, s25twn0vj00) rightsCode \"ic\", \"Limited (search-only)\". Assessment (not a repository statement): published 1925, so public domain in the US; Eitrem (IA associated-names \"Eitrem, S. (Samson), 1872-1966\") died 1966, so his own text may be protected in life+70 countries until the end of 2036; the plates are collotypes of the ancient papyrus and their status outside the US was not determined.",
+    "image_index": "n17 (Internet Archive leaf index, 0-based)",
+    "printed_locator": "p. 10, ll. 178-185 (+ note to plate VII)",
+    "page_url": "https://archive.org/details/papyriosloensesunse/page/n17/mode/1up",
+    "image_url": "https://archive.org/download/papyriosloensesunse/page/n17.jpg",
+    "iiif_url": "https://iiif.archive.org/iiif/papyriosloensesunse$17/full/full/0/default.jpg"
+   }
+  },
+  {
+   "file": "charakteres-pgm36-189-210-eitrem1925-p11-text.png",
+   "table": "PGM XXXVI ll. 189-210 (+ note to plate VIII): Eitrem's typeset text. Context only - Eitrem does not print the signs; his text refers the reader to the plate.",
+   "letters": [],
+   "source": {
+    "work": "Papyri Osloenses, Fasc. I: Magical Papyri (edition, translation and commentary of P. Oslo 1-5; \"with thirteen plates\")",
+    "author": "S. Eitrem (ed.)",
+    "edition": "first and only edition",
+    "date": "1925",
+    "place": "Oslo",
+    "printer": "Published by Det Norske Videnskaps-Akademi i Oslo; on commission by J. Dybwad (printer not recorded)",
+    "copy": "Duke University Libraries, call number \"P. Oslo\", barcode D05064480R (vol. I)",
+    "repository": "Internet Archive (collections papyrology, duke_libraries)",
+    "identifier": "papyriosloensesunse",
+    "rights": "Repository: the Internet Archive item papyriosloensesunse carries no \"rights\", \"licenseurl\" or \"possible-copyright-status\" field in its metadata (checked 2026-10-20 at archive.org/metadata/papyriosloensesunse). HathiTrust catalog (checked 2026-10-20): mdp.39015010705146 (University of Michigan, enumcron \"P.EDN. P.Oslo v.1-2\") rightsCode \"pdus\", usRightsString \"Full view\"; the three Duke copies (dul1.ark:/13960/s27g0p6bq0r = vol. I, s2w0w7tvq2q, s25twn0vj00) rightsCode \"ic\", \"Limited (search-only)\". Assessment (not a repository statement): published 1925, so public domain in the US; Eitrem (IA associated-names \"Eitrem, S. (Samson), 1872-1966\") died 1966, so his own text may be protected in life+70 countries until the end of 2036; the plates are collotypes of the ancient papyrus and their status outside the US was not determined.",
+    "image_index": "n18 (Internet Archive leaf index, 0-based)",
+    "printed_locator": "p. 11, ll. 189-210 (+ note to plate VIII)",
+    "page_url": "https://archive.org/details/papyriosloensesunse/page/n18/mode/1up",
+    "image_url": "https://archive.org/download/papyriosloensesunse/page/n18.jpg",
+    "iiif_url": "https://iiif.archive.org/iiif/papyriosloensesunse$18/full/full/0/default.jpg"
+   }
+  },
+  {
+   "file": "charakteres-pgm36-256-263-eitrem1925-p13-text.png",
+   "table": "PGM XXXVI ll. 256-263 (+ note to plate XI): Eitrem's typeset text. Context only - Eitrem does not print the signs; his text refers the reader to the plate.",
+   "letters": [],
+   "source": {
+    "work": "Papyri Osloenses, Fasc. I: Magical Papyri (edition, translation and commentary of P. Oslo 1-5; \"with thirteen plates\")",
+    "author": "S. Eitrem (ed.)",
+    "edition": "first and only edition",
+    "date": "1925",
+    "place": "Oslo",
+    "printer": "Published by Det Norske Videnskaps-Akademi i Oslo; on commission by J. Dybwad (printer not recorded)",
+    "copy": "Duke University Libraries, call number \"P. Oslo\", barcode D05064480R (vol. I)",
+    "repository": "Internet Archive (collections papyrology, duke_libraries)",
+    "identifier": "papyriosloensesunse",
+    "rights": "Repository: the Internet Archive item papyriosloensesunse carries no \"rights\", \"licenseurl\" or \"possible-copyright-status\" field in its metadata (checked 2026-10-20 at archive.org/metadata/papyriosloensesunse). HathiTrust catalog (checked 2026-10-20): mdp.39015010705146 (University of Michigan, enumcron \"P.EDN. P.Oslo v.1-2\") rightsCode \"pdus\", usRightsString \"Full view\"; the three Duke copies (dul1.ark:/13960/s27g0p6bq0r = vol. I, s2w0w7tvq2q, s25twn0vj00) rightsCode \"ic\", \"Limited (search-only)\". Assessment (not a repository statement): published 1925, so public domain in the US; Eitrem (IA associated-names \"Eitrem, S. (Samson), 1872-1966\") died 1966, so his own text may be protected in life+70 countries until the end of 2036; the plates are collotypes of the ancient papyrus and their status outside the US was not determined.",
+    "image_index": "n20 (Internet Archive leaf index, 0-based)",
+    "printed_locator": "p. 13, ll. 256-263 (+ note to plate XI)",
+    "page_url": "https://archive.org/details/papyriosloensesunse/page/n20/mode/1up",
+    "image_url": "https://archive.org/download/papyriosloensesunse/page/n20.jpg",
+    "iiif_url": "https://iiif.archive.org/iiif/papyriosloensesunse$20/full/full/0/default.jpg"
+   }
+  },
+  {
+   "file": "charakteres-pgm36-275-280-eitrem1925-p14-text.png",
+   "table": "PGM XXXVI ll. 275-280 (+ note to plate XII): Eitrem's typeset text. Context only - Eitrem does not print the signs; his text refers the reader to the plate.",
+   "letters": [],
+   "source": {
+    "work": "Papyri Osloenses, Fasc. I: Magical Papyri (edition, translation and commentary of P. Oslo 1-5; \"with thirteen plates\")",
+    "author": "S. Eitrem (ed.)",
+    "edition": "first and only edition",
+    "date": "1925",
+    "place": "Oslo",
+    "printer": "Published by Det Norske Videnskaps-Akademi i Oslo; on commission by J. Dybwad (printer not recorded)",
+    "copy": "Duke University Libraries, call number \"P. Oslo\", barcode D05064480R (vol. I)",
+    "repository": "Internet Archive (collections papyrology, duke_libraries)",
+    "identifier": "papyriosloensesunse",
+    "rights": "Repository: the Internet Archive item papyriosloensesunse carries no \"rights\", \"licenseurl\" or \"possible-copyright-status\" field in its metadata (checked 2026-10-20 at archive.org/metadata/papyriosloensesunse). HathiTrust catalog (checked 2026-10-20): mdp.39015010705146 (University of Michigan, enumcron \"P.EDN. P.Oslo v.1-2\") rightsCode \"pdus\", usRightsString \"Full view\"; the three Duke copies (dul1.ark:/13960/s27g0p6bq0r = vol. I, s2w0w7tvq2q, s25twn0vj00) rightsCode \"ic\", \"Limited (search-only)\". Assessment (not a repository statement): published 1925, so public domain in the US; Eitrem (IA associated-names \"Eitrem, S. (Samson), 1872-1966\") died 1966, so his own text may be protected in life+70 countries until the end of 2036; the plates are collotypes of the ancient papyrus and their status outside the US was not determined.",
+    "image_index": "n21 (Internet Archive leaf index, 0-based)",
+    "printed_locator": "p. 14, ll. 275-280 (+ note to plate XII)",
+    "page_url": "https://archive.org/details/papyriosloensesunse/page/n21/mode/1up",
+    "image_url": "https://archive.org/download/papyriosloensesunse/page/n21.jpg",
+    "iiif_url": "https://iiif.archive.org/iiif/papyriosloensesunse$21/full/full/0/default.jpg"
+   }
+  },
+  {
+   "file": "charakteres-pgm7-193-196-kenyon1893.png",
+   "table": "PGM VII = P. Lond. 121, ll. 193-196, \"πρὸς σκορπίου πληγήν\" (against a scorpion sting): the charaktêres to be written on clean papyrus and bound on the sting (paraphrase mine). L. 196 ends \"ΓΤ · χαρ ια\". Wessely prints \"γι¯ χαρ/ ια\" in that place, and his note to 196 reads \"l. γίγνεται χαρακτῆρες ιγ´ das macht aus 11 Zeichen\" - his printed numeral ιγ´ (13) contradicts his own count of 11 and the papyrus's ια; probably a misprint for ια´.",
+   "letters": [
+    {
+     "position": 1,
+     "label_as_printed": "ω",
+     "value": "not determined",
+     "form": "omega (first item of the row)",
+     "note": "Wessely prints the same ω; counted, the row gives 11 items with it"
+    },
+    {
+     "position": 2,
+     "label_as_printed": "⍏",
+     "value": "none",
+     "form": "arrow-like sign (⍏)",
+     "note": "Kenyon's Index of Symbols gives ⍏ = δεῖνa elsewhere; here inside the counted row"
+    },
+    {
+     "position": 3,
+     "label_as_printed": "Τ",
+     "value": null,
+     "form": "T"
+    },
+    {
+     "position": 4,
+     "label_as_printed": "Τ",
+     "value": null,
+     "form": "T"
+    },
+    {
+     "position": 5,
+     "label_as_printed": "(none)",
+     "value": "none",
+     "form": "rectangle with a small triangle (flag) at its upper left corner",
+     "note": "Wessely: small Δ above-left of a small □"
+    },
+    {
+     "position": 6,
+     "label_as_printed": "⍏",
+     "value": null,
+     "form": "arrow-like sign (⍏)"
+    },
+    {
+     "position": 7,
+     "label_as_printed": "ϙ",
+     "value": null,
+     "form": "9-shaped sign (koppa-like)"
+    },
+    {
+     "position": 8,
+     "label_as_printed": "ϙ",
+     "value": null,
+     "form": "9-shaped sign (koppa-like)"
+    },
+    {
+     "position": 9,
+     "label_as_printed": "Ζ",
+     "value": null,
+     "form": "Z"
+    },
+    {
+     "position": 10,
+     "label_as_printed": "(none)",
+     "value": null,
+     "form": "rectangle with a small triangle at its upper left (as no. 5)"
+    },
+    {
+     "position": 11,
+     "label_as_printed": "α β α α να να α β (letters on the arms)",
+     "value": "none",
+     "form": "eight-armed star (two diagonals, a vertical and a horizontal), its arms labelled with the letters α, β, να"
+    },
+    {
+     "position": 12,
+     "label_as_printed": "ΓΤ ·",
+     "value": "not determined",
+     "form": "Γ (with a heavy foot) followed by a Τ, then a raised dot",
+     "note": "Wessely prints \"γι¯\" (abbreviation) in this place, not a sign"
+    }
+   ],
+   "source": {
+    "work": "Greek Papyri in the British Museum: Catalogue, with Texts, vol. I (section 3, \"Magical Papyri\"; Papyrus CXXI, headed \"3rd cent.\", p. 83)",
+    "author": "F. G. Kenyon (ed.)",
+    "edition": "1893 (vol. I; the accompanying portfolio of Facsimiles was not found)",
+    "date": "1893",
+    "place": "London",
+    "printer": "Printed by order of the Trustees of the British Museum (title page); colophon \"London: printed by William Clowes and Sons, Limited, Stamford Street and Charing Cross.\" (from the item's OCR)",
+    "copy": "Brigham Young University, Harold B. Lee Library, call number DAG1052",
+    "repository": "Internet Archive (collections brigham_young_university, americana)",
+    "identifier": "greekpapyriinbri01brit",
+    "rights": "Repository: the Internet Archive item greekpapyriinbri01brit carries no \"rights\", \"licenseurl\" or \"possible-copyright-status\" field (checked 2026-10-20). Assessment (not a repository statement): published 1893; Kenyon (IA creator \"Kenyon, Frederic G. (Frederic George), Sir, 1863-1952\") died 1952, so public domain in the US and in life+70 countries (including the UK) since 1 January 2023. Other scans of the same volume, neither with a rights field: Cornell cu31924022695088 (no volume number in its metadata) and Princeton Theological Seminary greekpapyriinbri01brit_0 (\"v.1\").",
+    "image_index": "n117 (Internet Archive leaf index, 0-based)",
+    "printed_locator": "p. 90, Pap. CXXI ll. 193-196",
+    "page_url": "https://archive.org/details/greekpapyriinbri01brit/page/n117/mode/1up",
+    "image_url": "https://archive.org/download/greekpapyriinbri01brit/page/n117.jpg",
+    "iiif_url": "https://iiif.archive.org/iiif/greekpapyriinbri01brit$117/full/full/0/default.jpg"
+   }
+  },
+  {
+   "file": "charakteres-pgm7-193-196-wessely1893.png",
+   "table": "PGM VII = P. Lond. 121, ll. 193-196 (Wessely's numbering agrees with Kenyon's here: margin \"195\" stands at \"τον χαρτην και εσ[τ]αι ...\"); the same scorpion-sting charm in Wessely's edition, for comparison with Kenyon. The crop also shows ll. 197-198 and grey show-through of the facing page.",
+   "letters": [
+    {
+     "position": 1,
+     "label_as_printed": "ω",
+     "value": null,
+     "form": "omega"
+    },
+    {
+     "position": 2,
+     "label_as_printed": "⍏",
+     "value": null,
+     "form": "arrow-like sign"
+    },
+    {
+     "position": 3,
+     "label_as_printed": "Τ",
+     "value": null,
+     "form": "T"
+    },
+    {
+     "position": 4,
+     "label_as_printed": "Τ",
+     "value": null,
+     "form": "T"
+    },
+    {
+     "position": 5,
+     "label_as_printed": "Δ□",
+     "value": null,
+     "form": "small Δ set above-left of a small square"
+    },
+    {
+     "position": 6,
+     "label_as_printed": "⍏",
+     "value": null,
+     "form": "arrow-like sign"
+    },
+    {
+     "position": 7,
+     "label_as_printed": "ϙ",
+     "value": null,
+     "form": "9-shape"
+    },
+    {
+     "position": 8,
+     "label_as_printed": "ϙ",
+     "value": null,
+     "form": "9-shape"
+    },
+    {
+     "position": 9,
+     "label_as_printed": "Ζ",
+     "value": null,
+     "form": "Z"
+    },
+    {
+     "position": 10,
+     "label_as_printed": "Δ□",
+     "value": null,
+     "form": "small Δ above-left of a small square"
+    },
+    {
+     "position": 11,
+     "label_as_printed": "α β / α α / να να / α β α",
+     "value": null,
+     "form": "eight-armed star with letters on its arms",
+     "note": "a small τ is printed below the star (Kenyon has none); its status not determined"
+    },
+    {
+     "position": 12,
+     "label_as_printed": "γι¯ χαρ/ ια",
+     "value": "11",
+     "form": "abbreviation, not a sign: γί(νονται) χαρ(ακτῆρες) ια´",
+     "note": "Wessely's note to 196 (p. 26) reads \"l. γίγνεται χαρακτῆρες ιγ´ das macht aus 11 Zeichen\": the printed numeral is ιγ´ (13), against his own \"11\" and the text's ια - probably a misprint"
+    }
+   ],
+   "source": {
+    "work": "\"Neue griechische Zauberpapyri\", Denkschriften der Kaiserlichen Akademie der Wissenschaften, Philosophisch-historische Classe, Bd. 42 (1893), Abh. II (pp. 1-96 of the Abhandlung); P. Lond. CXXI is Wessely's papyrus edited from p. 1",
+    "author": "C. Wessely",
+    "edition": "first edition (Denkschriften 42, \"Zweiundvierzigster Band, Wien, 1893\")",
+    "date": "1893",
+    "place": "Wien",
+    "printer": "\"In Commission bei F. Tempsky\" (title page of Bd. 42); \"Druck von Adolf Holzhausen, k. und k. Hof- und Universitäts-Buchdrucker in Wien\" (same title page, from the item's OCR)",
+    "copy": "University of Toronto, Robarts Library, call number AAA-0727 (vols. 41-42 scanned as one item)",
+    "repository": "Internet Archive (collections robarts, toronto)",
+    "identifier": "denkschriften4142ster",
+    "rights": "Repository: the Internet Archive item denkschriften4142ster carries no \"rights\" or \"licenseurl\" field; its metadata \"notes\" field reads \"No copyright page found.\" (checked 2026-10-20). Assessment (not a repository statement): published 1893; Wessely died 1931, so public domain in the US and in life+70 countries.",
+    "image_index": "n629 (Internet Archive leaf index, 0-based)",
+    "printed_locator": "p. 26 (header \"26 II. Abhandlung: C. Wessely.\"), margin numbers 190-210; the heading \"Recto, Columne 12.\" follows l. 205",
+    "page_url": "https://archive.org/details/denkschriften4142ster/page/n629/mode/1up",
+    "image_url": "https://archive.org/download/denkschriften4142ster/page/n629.jpg",
+    "iiif_url": "https://iiif.archive.org/iiif/denkschriften4142ster$629/full/full/0/default.jpg"
+   }
+  },
+  {
+   "file": "charakteres-pgm7-215-218-kenyon1893.png",
+   "table": "PGM VII = P. Lond. 121, ll. 215-217 and the figure printed after l. 217: \"Ἀφροδίτης στήλην πρὸς φιλίαν καὶ χάριν καὶ πρᾶξιν καὶ φίλους\" (Aphrodite's stele for friendship, favour, success and friends: engrave on a tin leaf with a bronze stylus; paraphrase mine), with the drawn stele. L. 218 (φυλακτηριον ...) follows the figure, outside the crop.",
+   "letters": [
+    {
+     "position": 1,
+     "label_as_printed": "ρο (in the tab)",
+     "value": "letters",
+     "form": "semicircular tab on top of the frame containing ρο"
+    },
+    {
+     "position": 2,
+     "label_as_printed": "υ β",
+     "value": "letters",
+     "form": "letters υ β (upper left inside the frame)"
+    },
+    {
+     "position": 3,
+     "label_as_printed": "(none)",
+     "value": null,
+     "form": "Y: upright stem forking into two short arms (the left one hooked), with a small ring set just above the fork between the arms; the arm ends are plain",
+     "note": "Wessely prints Ψ here"
+    },
+    {
+     "position": 4,
+     "label_as_printed": "(none)",
+     "value": null,
+     "form": "saltire (X) with a ring at each end"
+    },
+    {
+     "position": 5,
+     "label_as_printed": "(none)",
+     "value": null,
+     "form": "ψ-like: V with a central stem (ѱ)"
+    },
+    {
+     "position": 6,
+     "label_as_printed": "δαμνα μενευς ακραμμα χαμαρει",
+     "value": "words",
+     "form": "four lines of voces inside a double-lined triangle",
+     "note": "first letter hand-drawn as a 6-shape = δ; it is not Kenyon's σ"
+    },
+    {
+     "position": 7,
+     "label_as_printed": "· · · / τος / ππο",
+     "value": "letters",
+     "form": "letters in the right margin of the frame"
+    },
+    {
+     "position": 8,
+     "label_as_printed": "(none)",
+     "value": null,
+     "form": "eight-armed star with a ring at each end"
+    },
+    {
+     "position": 9,
+     "label_as_printed": "πν",
+     "value": "letters",
+     "form": "letters"
+    }
+   ],
+   "source": {
+    "work": "Greek Papyri in the British Museum: Catalogue, with Texts, vol. I (section 3, \"Magical Papyri\"; Papyrus CXXI, headed \"3rd cent.\", p. 83)",
+    "author": "F. G. Kenyon (ed.)",
+    "edition": "1893 (vol. I; the accompanying portfolio of Facsimiles was not found)",
+    "date": "1893",
+    "place": "London",
+    "printer": "Printed by order of the Trustees of the British Museum (title page); colophon \"London: printed by William Clowes and Sons, Limited, Stamford Street and Charing Cross.\" (from the item's OCR)",
+    "copy": "Brigham Young University, Harold B. Lee Library, call number DAG1052",
+    "repository": "Internet Archive (collections brigham_young_university, americana)",
+    "identifier": "greekpapyriinbri01brit",
+    "rights": "Repository: the Internet Archive item greekpapyriinbri01brit carries no \"rights\", \"licenseurl\" or \"possible-copyright-status\" field (checked 2026-10-20). Assessment (not a repository statement): published 1893; Kenyon (IA creator \"Kenyon, Frederic G. (Frederic George), Sir, 1863-1952\") died 1952, so public domain in the US and in life+70 countries (including the UK) since 1 January 2023. Other scans of the same volume, neither with a rights field: Cornell cu31924022695088 (no volume number in its metadata) and Princeton Theological Seminary greekpapyriinbri01brit_0 (\"v.1\").",
+    "image_index": "n118 (Internet Archive leaf index, 0-based)",
+    "printed_locator": "p. 91, Pap. CXXI ll. 215-217 and the figure after l. 217",
+    "page_url": "https://archive.org/details/greekpapyriinbri01brit/page/n118/mode/1up",
+    "image_url": "https://archive.org/download/greekpapyriinbri01brit/page/n118.jpg",
+    "iiif_url": "https://iiif.archive.org/iiif/greekpapyriinbri01brit$118/full/full/0/default.jpg"
+   }
+  },
+  {
+   "file": "charakteres-pgm7-215-221-wessely1893.png",
+   "table": "PGM VII = P. Lond. 121, ll. 214-226 (Wessely numbering): the same Aphrodite stele in Wessely's edition. Wessely counts the figure as ll. 218-223, so after it his numbering runs six ahead of Kenyon's (Wessely 224 \"φυλακτηριον ...\" = Kenyon 218). Variants against Kenyon noted per item.",
+   "letters": [
+    {
+     "position": 1,
+     "label_as_printed": "ο ο (under an arc)",
+     "value": "not determined",
+     "form": "arc with two small circles beneath",
+     "note": "Kenyon: ρο"
+    },
+    {
+     "position": 2,
+     "label_as_printed": "⌒ β",
+     "value": "letters?",
+     "form": "small arc and β",
+     "note": "Kenyon: υ β"
+    },
+    {
+     "position": 3,
+     "label_as_printed": "Ψ",
+     "value": "none",
+     "form": "Ψ",
+     "note": "Kenyon: Y with a small ring above the fork"
+    },
+    {
+     "position": 4,
+     "label_as_printed": "(none)",
+     "value": null,
+     "form": "saltire with a ring at each end"
+    },
+    {
+     "position": 5,
+     "label_as_printed": "Ψ",
+     "value": "none",
+     "form": "Ψ (shorter, Y-like)",
+     "note": "Kenyon: ѱ-like"
+    },
+    {
+     "position": 6,
+     "label_as_printed": "δαμνα μενευς ακραμμα χαμαρει",
+     "value": "words",
+     "form": "voces inside a double-lined triangle",
+     "note": "Kenyon also δαμνα (hand-drawn 6-shaped δ)"
+    },
+    {
+     "position": 7,
+     "label_as_printed": "τοσ / τωω",
+     "value": "letters",
+     "form": "letters, upper right",
+     "note": "Kenyon: τος / ππο"
+    },
+    {
+     "position": 8,
+     "label_as_printed": "(none)",
+     "value": null,
+     "form": "eight-armed star with a ring at each end"
+    },
+    {
+     "position": 9,
+     "label_as_printed": "Π Υ",
+     "value": "letters",
+     "form": "letters",
+     "note": "Kenyon: πν"
+    }
+   ],
+   "source": {
+    "work": "\"Neue griechische Zauberpapyri\", Denkschriften der Kaiserlichen Akademie der Wissenschaften, Philosophisch-historische Classe, Bd. 42 (1893), Abh. II (pp. 1-96 of the Abhandlung); P. Lond. CXXI is Wessely's papyrus edited from p. 1",
+    "author": "C. Wessely",
+    "edition": "first edition (Denkschriften 42, \"Zweiundvierzigster Band, Wien, 1893\")",
+    "date": "1893",
+    "place": "Wien",
+    "printer": "\"In Commission bei F. Tempsky\" (title page of Bd. 42); \"Druck von Adolf Holzhausen, k. und k. Hof- und Universitäts-Buchdrucker in Wien\" (same title page, from the item's OCR)",
+    "copy": "University of Toronto, Robarts Library, call number AAA-0727 (vols. 41-42 scanned as one item)",
+    "repository": "Internet Archive (collections robarts, toronto)",
+    "identifier": "denkschriften4142ster",
+    "rights": "Repository: the Internet Archive item denkschriften4142ster carries no \"rights\" or \"licenseurl\" field; its metadata \"notes\" field reads \"No copyright page found.\" (checked 2026-10-20). Assessment (not a repository statement): published 1893; Wessely died 1931, so public domain in the US and in life+70 countries.",
+    "image_index": "n630 (Internet Archive leaf index, 0-based)",
+    "printed_locator": "p. 27 (header \"Neue griechische Zauberpapyri. 27\"), margin numbers 215-225",
+    "page_url": "https://archive.org/details/denkschriften4142ster/page/n630/mode/1up",
+    "image_url": "https://archive.org/download/denkschriften4142ster/page/n630.jpg",
+    "iiif_url": "https://iiif.archive.org/iiif/denkschriften4142ster$630/full/full/0/default.jpg"
+   },
+   "note": "In l. 214 (not above it) Wessely prints two symbols, \"λευκον επιγρ/ [σ-like sign] εις το μελαν επιγραφ/ © και περιαπτε\". Kenyon prints his ἥλιος and σελήνη (☾) sorts in the same places, and his Index of Symbols (p. 251) cites p. 91 for both: they are sun/moon abbreviations in Kenyon's reading, not charaktêres. Wessely draws the outer frame open (top and left sides only); Kenyon closes it."
+  },
+  {
+   "file": "charakteres-pgm7-389-404-kenyon1893.png",
+   "table": "PGM VII = P. Lond. 121, ll. 389-404 (Kenyon p. 97): (a) ll. 390-392 \"νικητικὸν δρομέως\" (victory charm for a runner): two charaktêres to be written with a bronze stylus on his big toenails; (b) ll. 396-404 \"φιμωτικὸν καὶ ὑποτακτικόν ... καὶ κάτοχος\": signs and voces engraved on a lead lamella and placed beside one untimely dead (paraphrase mine).",
+   "letters": [
+    {
+     "position": 1,
+     "label_as_printed": "(l. 392)",
+     "value": null,
+     "form": "eight-armed asterisk with a ring (dot) at each end"
+    },
+    {
+     "position": 2,
+     "label_as_printed": "(l. 392)",
+     "value": null,
+     "form": "Γ joined to a Τ along one top bar, with four rings: at the foot of the Γ, on the bar where Γ and Τ meet, at the right end of the Τ's bar, and at the foot of the Τ"
+    },
+    {
+     "position": 3,
+     "label_as_printed": "(l. 399)",
+     "value": null,
+     "form": "hourglass (two triangles point to point, ⧗)"
+    },
+    {
+     "position": 4,
+     "label_as_printed": "(l. 399)",
+     "value": null,
+     "form": "hourglass inside a rectangle"
+    },
+    {
+     "position": 5,
+     "label_as_printed": "(l. 399)",
+     "value": null,
+     "form": "circle containing an X and dots (⊗ with dots), double outline"
+    },
+    {
+     "position": 6,
+     "label_as_printed": "(l. 399)",
+     "value": null,
+     "form": "eight-armed asterisk with ring ends"
+    },
+    {
+     "position": 7,
+     "label_as_printed": "(l. 399)",
+     "value": null,
+     "form": "hourglass (⧗)"
+    },
+    {
+     "position": 8,
+     "label_as_printed": "ω",
+     "value": "letter",
+     "form": "ω (letter)"
+    },
+    {
+     "position": 9,
+     "label_as_printed": "϶",
+     "value": null,
+     "form": "reversed epsilon with bar"
+    },
+    {
+     "position": 10,
+     "label_as_printed": "(l. 399)",
+     "value": null,
+     "form": "m-like: two rounded arches whose three feet are joined by a flat base line (a B lying on its back)"
+    },
+    {
+     "position": 11,
+     "label_as_printed": "(l. 399)",
+     "value": null,
+     "form": "Y standing on a horizontal bar (⊻)"
+    },
+    {
+     "position": 12,
+     "label_as_printed": "(l. 399)",
+     "value": null,
+     "form": "inverted Y / λ under a horizontal bar (⊼)"
+    },
+    {
+     "position": 13,
+     "label_as_printed": "(l. 399)",
+     "value": null,
+     "form": "circle with an X (⊗)"
+    },
+    {
+     "position": 14,
+     "label_as_printed": "ε",
+     "value": "letter",
+     "form": "ε (letter)"
+    },
+    {
+     "position": 15,
+     "label_as_printed": "(l. 400)",
+     "value": null,
+     "form": "two Y-forms on a common base line (ΥΥ underlined)"
+    },
+    {
+     "position": 16,
+     "label_as_printed": "(l. 400) · · L □",
+     "value": "not determined",
+     "form": "two dots, L, small square",
+     "note": "Kenyon's Index of Symbols (p. 251) gives L = ἔτους and □ = ὄνομα, but cites neither for p. 97; his ἀπό sign is a different, cursive form. Status here not settled"
+    },
+    {
+     "position": 17,
+     "label_as_printed": "(l. 401) ∃",
+     "value": null,
+     "form": "reversed E"
+    },
+    {
+     "position": 18,
+     "label_as_printed": "(l. 401)",
+     "value": null,
+     "form": "short horizontal with a fork at each end, each fork opening outward (>—<)"
+    },
+    {
+     "position": 19,
+     "label_as_printed": "(l. 401)",
+     "value": null,
+     "form": "ʒ-like hook"
+    },
+    {
+     "position": 20,
+     "label_as_printed": "(l. 401)",
+     "value": null,
+     "form": "≻-like (two strokes joining a horizontal)"
+    },
+    {
+     "position": 21,
+     "label_as_printed": "(l. 401)",
+     "value": null,
+     "form": "long shallow crescent (◡) with a parallel stroke"
+    },
+    {
+     "position": 22,
+     "label_as_printed": "Χ β · ιιι",
+     "value": "letters",
+     "form": "letters and strokes"
+    },
+    {
+     "position": 23,
+     "label_as_printed": "(l. 402)",
+     "value": null,
+     "form": "lozenge with a short bar above it and a short tail below"
+    },
+    {
+     "position": 24,
+     "label_as_printed": "κ",
+     "value": "letter",
+     "form": "κ"
+    },
+    {
+     "position": 25,
+     "label_as_printed": "(l. 402)",
+     "value": null,
+     "form": "Ψ-like with a crossbar (¥/Ψ on a stem)"
+    },
+    {
+     "position": 26,
+     "label_as_printed": "(l. 402)",
+     "value": null,
+     "form": "Φ with a ring at the top of the upright and another at its foot"
+    },
+    {
+     "position": 27,
+     "label_as_printed": "(l. 402)",
+     "value": null,
+     "form": "Χ with a small mark beneath (Χ over L)"
+    },
+    {
+     "position": 28,
+     "label_as_printed": "ъ β",
+     "value": "not determined",
+     "form": "ъ-like sign and β"
+    }
+   ],
+   "source": {
+    "work": "Greek Papyri in the British Museum: Catalogue, with Texts, vol. I (section 3, \"Magical Papyri\"; Papyrus CXXI, headed \"3rd cent.\", p. 83)",
+    "author": "F. G. Kenyon (ed.)",
+    "edition": "1893 (vol. I; the accompanying portfolio of Facsimiles was not found)",
+    "date": "1893",
+    "place": "London",
+    "printer": "Printed by order of the Trustees of the British Museum (title page); colophon \"London: printed by William Clowes and Sons, Limited, Stamford Street and Charing Cross.\" (from the item's OCR)",
+    "copy": "Brigham Young University, Harold B. Lee Library, call number DAG1052",
+    "repository": "Internet Archive (collections brigham_young_university, americana)",
+    "identifier": "greekpapyriinbri01brit",
+    "rights": "Repository: the Internet Archive item greekpapyriinbri01brit carries no \"rights\", \"licenseurl\" or \"possible-copyright-status\" field (checked 2026-10-20). Assessment (not a repository statement): published 1893; Kenyon (IA creator \"Kenyon, Frederic G. (Frederic George), Sir, 1863-1952\") died 1952, so public domain in the US and in life+70 countries (including the UK) since 1 January 2023. Other scans of the same volume, neither with a rights field: Cornell cu31924022695088 (no volume number in its metadata) and Princeton Theological Seminary greekpapyriinbri01brit_0 (\"v.1\").",
+    "image_index": "n124 (Internet Archive leaf index, 0-based)",
+    "printed_locator": "p. 97, Pap. CXXI ll. 389-404",
+    "page_url": "https://archive.org/details/greekpapyriinbri01brit/page/n124/mode/1up",
+    "image_url": "https://archive.org/download/greekpapyriinbri01brit/page/n124.jpg",
+    "iiif_url": "https://iiif.archive.org/iiif/greekpapyriinbri01brit$124/full/full/0/default.jpg"
+   },
+   "note": "L. 389 \"εἰς τὰ σπλάγχνα τῆς ⍏ ∫ ⍏\": ⍏ is Kenyon's δεῖνα symbol (his word index lists \"εἰς τὰ σπλάγχνα τῆς δεῖνα, 97\"); ∫ is presumably a further abbreviation. Neither belongs to the charaktêres."
+  },
+  {
+   "file": "charakteres-pgm7-587-590-kenyon1893.png",
+   "table": "PGM VII = P. Lond. 121, ll. 587-590 (end of the phylactery with the ouroboros; Kenyon p. 103): \"τὰ δὲ □□ μέσον τοῦ δράκοντος καὶ οἱ χαρακτῆρες οὕτως ὡς ὑπόκειται\" (the names inside the serpent and the charaktêres, as below; paraphrase mine).",
+   "letters": [
+    {
+     "position": 1,
+     "label_as_printed": "(none)",
+     "value": null,
+     "form": "Λ with a ring at the apex and at each foot"
+    },
+    {
+     "position": 2,
+     "label_as_printed": "(none)",
+     "value": "none",
+     "form": "comb: a horizontal base with four uprights rising from it - the first taller and ring-topped, then three short - the base running on into a small ν",
+     "note": "ν may be a letter"
+    },
+    {
+     "position": 3,
+     "label_as_printed": "(none)",
+     "value": null,
+     "form": "W with rings at the tops of all three strokes (the middle stroke shorter)"
+    },
+    {
+     "position": 4,
+     "label_as_printed": "(none)",
+     "value": null,
+     "form": "Z with a ring at the left end of the top bar; the diagonal ends in a small closed loop resting on the long bottom bar"
+    },
+    {
+     "position": 5,
+     "label_as_printed": "·",
+     "value": "not determined",
+     "form": "raised dot (small ring)"
+    },
+    {
+     "position": 6,
+     "label_as_printed": "(none)",
+     "value": null,
+     "form": "Z with a ring at the upper left end (a small tick above it) and a ring at the lower right end"
+    },
+    {
+     "position": 7,
+     "label_as_printed": "((",
+     "value": null,
+     "form": "two parallel arcs"
+    },
+    {
+     "position": 8,
+     "label_as_printed": "(none)",
+     "value": null,
+     "form": "triangle pointing right (▷)"
+    }
+   ],
+   "source": {
+    "work": "Greek Papyri in the British Museum: Catalogue, with Texts, vol. I (section 3, \"Magical Papyri\"; Papyrus CXXI, headed \"3rd cent.\", p. 83)",
+    "author": "F. G. Kenyon (ed.)",
+    "edition": "1893 (vol. I; the accompanying portfolio of Facsimiles was not found)",
+    "date": "1893",
+    "place": "London",
+    "printer": "Printed by order of the Trustees of the British Museum (title page); colophon \"London: printed by William Clowes and Sons, Limited, Stamford Street and Charing Cross.\" (from the item's OCR)",
+    "copy": "Brigham Young University, Harold B. Lee Library, call number DAG1052",
+    "repository": "Internet Archive (collections brigham_young_university, americana)",
+    "identifier": "greekpapyriinbri01brit",
+    "rights": "Repository: the Internet Archive item greekpapyriinbri01brit carries no \"rights\", \"licenseurl\" or \"possible-copyright-status\" field (checked 2026-10-20). Assessment (not a repository statement): published 1893; Kenyon (IA creator \"Kenyon, Frederic G. (Frederic George), Sir, 1863-1952\") died 1952, so public domain in the US and in life+70 countries (including the UK) since 1 January 2023. Other scans of the same volume, neither with a rights field: Cornell cu31924022695088 (no volume number in its metadata) and Princeton Theological Seminary greekpapyriinbri01brit_0 (\"v.1\").",
+    "image_index": "n130 (Internet Archive leaf index, 0-based)",
+    "printed_locator": "p. 103, Pap. CXXI ll. 587-590",
+    "page_url": "https://archive.org/details/greekpapyriinbri01brit/page/n130/mode/1up",
+    "image_url": "https://archive.org/download/greekpapyriinbri01brit/page/n130.jpg",
+    "iiif_url": "https://iiif.archive.org/iiif/greekpapyriinbri01brit$130/full/full/0/default.jpg"
+   },
+   "note": "\"□□\" in l. 587 is the abbreviation for ὀνόματα and \"⍏\" in l. 590 is δεῖνα - Kenyon's Index of Symbols (p. 251) cites p. 103 for both - not charaktêres. Kenyon's introduction (p. 84) says the recto \"concludes with a diagram of a serpent with his tail in his own mouth, enclosing magical signs and words\"; that diagram was not located in the printed text examined."
+  },
+  {
+   "file": "charakteres-pgm7-919-930-kenyon1893.png",
+   "table": "PGM VII = P. Lond. 121, ll. 920-930 (Kenyon p. 113): the charm on an \"Isiac\" leaf (λεπίδα Ἰσιακήν) engraved with a bronze stylus and worn, and the start of a subjection charm on lead (ll. 926-930) (paraphrase mine). Signs at l. 924, after \"εἰσὶν δὲ οἱ χαρακτῆρες\". Kenyon's note: \"Lines 919-924. Directions for the construction of a charm or amulet, to be worn on the person. Lines 925-939. Another amulet.\" L. 919 (a row \"ↄↄↄↄ—ↄↄↄ—ↄↄↄ—\") stands just above the crop.",
+   "letters": [
+    {
+     "position": 1,
+     "label_as_printed": "(l. 924)",
+     "value": null,
+     "form": "Π with a flat top, and a small italic ο set beneath it"
+    },
+    {
+     "position": 2,
+     "label_as_printed": "(l. 924)",
+     "value": null,
+     "form": "reference-mark ※ (X with four dots)"
+    },
+    {
+     "position": 3,
+     "label_as_printed": "υ",
+     "value": "letter",
+     "form": "υ"
+    },
+    {
+     "position": 4,
+     "label_as_printed": "33",
+     "value": "not determined",
+     "form": "two 3-shapes"
+    },
+    {
+     "position": 5,
+     "label_as_printed": "(l. 924)",
+     "value": null,
+     "form": "wavy stroke ending in a hook (∾)"
+    },
+    {
+     "position": 6,
+     "label_as_printed": "(l. 924)",
+     "value": null,
+     "form": "small 4-like sign"
+    },
+    {
+     "position": 7,
+     "label_as_printed": "(l. 924)",
+     "value": null,
+     "form": "asterisk of eight arms: rings at the ends of the upper-left, left, right, lower-left and lower-right arms; the upper-right arm ends in a wavy hook; the vertical arms are plain"
+    },
+    {
+     "position": 8,
+     "label_as_printed": "μο",
+     "value": "letters",
+     "form": "μο"
+    },
+    {
+     "position": 9,
+     "label_as_printed": "(l. 924)",
+     "value": null,
+     "form": "horizontal stroke ending in a ring (—o)"
+    },
+    {
+     "position": 10,
+     "label_as_printed": "(l. 924)",
+     "value": null,
+     "form": "ring with a horizontal stroke (o—)"
+    },
+    {
+     "position": 11,
+     "label_as_printed": "(l. 924)",
+     "value": null,
+     "form": "ring with a long tapering wedge running up to the right (spoon-shape)",
+     "note": "identical to Kenyon's ἥλιος (sun) sort - Index of Symbols p. 251, which cites p. 113 - and to the sort in l. 915 (\"δους και [sun] μη δειξης\"); whether it is a charaktêr here or the sun abbreviation is not settled"
+    },
+    {
+     "position": 12,
+     "label_as_printed": "κ ϶ ϶ κ",
+     "value": "letters / signs",
+     "form": "κ, two reversed epsilons, κ"
+    }
+   ],
+   "source": {
+    "work": "Greek Papyri in the British Museum: Catalogue, with Texts, vol. I (section 3, \"Magical Papyri\"; Papyrus CXXI, headed \"3rd cent.\", p. 83)",
+    "author": "F. G. Kenyon (ed.)",
+    "edition": "1893 (vol. I; the accompanying portfolio of Facsimiles was not found)",
+    "date": "1893",
+    "place": "London",
+    "printer": "Printed by order of the Trustees of the British Museum (title page); colophon \"London: printed by William Clowes and Sons, Limited, Stamford Street and Charing Cross.\" (from the item's OCR)",
+    "copy": "Brigham Young University, Harold B. Lee Library, call number DAG1052",
+    "repository": "Internet Archive (collections brigham_young_university, americana)",
+    "identifier": "greekpapyriinbri01brit",
+    "rights": "Repository: the Internet Archive item greekpapyriinbri01brit carries no \"rights\", \"licenseurl\" or \"possible-copyright-status\" field (checked 2026-10-20). Assessment (not a repository statement): published 1893; Kenyon (IA creator \"Kenyon, Frederic G. (Frederic George), Sir, 1863-1952\") died 1952, so public domain in the US and in life+70 countries (including the UK) since 1 January 2023. Other scans of the same volume, neither with a rights field: Cornell cu31924022695088 (no volume number in its metadata) and Princeton Theological Seminary greekpapyriinbri01brit_0 (\"v.1\").",
+    "image_index": "n140 (Internet Archive leaf index, 0-based)",
+    "printed_locator": "p. 113, Pap. CXXI ll. 920-930 (l. 919 just above the crop)",
+    "page_url": "https://archive.org/details/greekpapyriinbri01brit/page/n140/mode/1up",
+    "image_url": "https://archive.org/download/greekpapyriinbri01brit/page/n140.jpg",
+    "iiif_url": "https://iiif.archive.org/iiif/greekpapyriinbri01brit$140/full/full/0/default.jpg"
+   },
+   "note": "\"Ⲛ\" (hatched N) in ll. 920 and 925 is not in Kenyon's Index of Symbols. The boxed sign at the end of l. 927 (not 929) is an abbreviation: the index cites p. 113 under ὀνόματα (⊡, □□)."
+  },
+  {
+   "file": "charakteres-pgm7-931-939-kenyon1893.png",
+   "table": "PGM VII = P. Lond. 121, ll. 931-939 (Kenyon p. 114, col. 27): the framed panel of charaktêres and voces for the \"ὑποτακτικόν\" lead lamella from a mule's yoke (begun l. 926).",
+   "letters": [
+    {
+     "position": 1,
+     "label_as_printed": "(top row)",
+     "value": null,
+     "form": "triangle with internal horizontal hatching (striped Δ / Α)"
+    },
+    {
+     "position": 2,
+     "label_as_printed": "Ρ",
+     "value": "letter?",
+     "form": "P"
+    },
+    {
+     "position": 3,
+     "label_as_printed": "(top row)",
+     "value": null,
+     "form": "Ζ with a ring at the upper left and lower right ends"
+    },
+    {
+     "position": 4,
+     "label_as_printed": "(top row)",
+     "value": null,
+     "form": "reference-mark ※"
+    },
+    {
+     "position": 5,
+     "label_as_printed": "(top row)",
+     "value": null,
+     "form": "reversed E (∃) whose middle bar crosses the upright and projects to the right"
+    },
+    {
+     "position": 6,
+     "label_as_printed": "ʒ (left column)",
+     "value": null,
+     "form": "ʒ"
+    },
+    {
+     "position": 7,
+     "label_as_printed": "γ",
+     "value": null,
+     "form": "γ"
+    },
+    {
+     "position": 8,
+     "label_as_printed": "(left column)",
+     "value": null,
+     "form": "m-like (ϻ)"
+    },
+    {
+     "position": 9,
+     "label_as_printed": "ο",
+     "value": null,
+     "form": "ο"
+    },
+    {
+     "position": 10,
+     "label_as_printed": "z",
+     "value": null,
+     "form": "z"
+    },
+    {
+     "position": 11,
+     "label_as_printed": "b",
+     "value": null,
+     "form": "b"
+    },
+    {
+     "position": 12,
+     "label_as_printed": "(left column)",
+     "value": null,
+     "form": "upright with a ring at each end (ring-ended staff)"
+    },
+    {
+     "position": 13,
+     "label_as_printed": "(right column)",
+     "value": null,
+     "form": "ʒ/3 whose top stroke runs left as a horizontal ending in a small ring"
+    },
+    {
+     "position": 14,
+     "label_as_printed": "(right column)",
+     "value": null,
+     "form": "> with a small ring at its upper end"
+    },
+    {
+     "position": 15,
+     "label_as_printed": "ς",
+     "value": null,
+     "form": "ς / ϛ"
+    },
+    {
+     "position": 16,
+     "label_as_printed": "ζ",
+     "value": null,
+     "form": "ζ"
+    },
+    {
+     "position": 17,
+     "label_as_printed": "(bottom line) Ν π >——< λ ω",
+     "value": "letters",
+     "form": "letters with a bar between > and <"
+    }
+   ],
+   "source": {
+    "work": "Greek Papyri in the British Museum: Catalogue, with Texts, vol. I (section 3, \"Magical Papyri\"; Papyrus CXXI, headed \"3rd cent.\", p. 83)",
+    "author": "F. G. Kenyon (ed.)",
+    "edition": "1893 (vol. I; the accompanying portfolio of Facsimiles was not found)",
+    "date": "1893",
+    "place": "London",
+    "printer": "Printed by order of the Trustees of the British Museum (title page); colophon \"London: printed by William Clowes and Sons, Limited, Stamford Street and Charing Cross.\" (from the item's OCR)",
+    "copy": "Brigham Young University, Harold B. Lee Library, call number DAG1052",
+    "repository": "Internet Archive (collections brigham_young_university, americana)",
+    "identifier": "greekpapyriinbri01brit",
+    "rights": "Repository: the Internet Archive item greekpapyriinbri01brit carries no \"rights\", \"licenseurl\" or \"possible-copyright-status\" field (checked 2026-10-20). Assessment (not a repository statement): published 1893; Kenyon (IA creator \"Kenyon, Frederic G. (Frederic George), Sir, 1863-1952\") died 1952, so public domain in the US and in life+70 countries (including the UK) since 1 January 2023. Other scans of the same volume, neither with a rights field: Cornell cu31924022695088 (no volume number in its metadata) and Princeton Theological Seminary greekpapyriinbri01brit_0 (\"v.1\").",
+    "image_index": "n141 (Internet Archive leaf index, 0-based)",
+    "printed_locator": "p. 114, Pap. CXXI ll. 931-939 (col. 27)",
+    "page_url": "https://archive.org/details/greekpapyriinbri01brit/page/n141/mode/1up",
+    "image_url": "https://archive.org/download/greekpapyriinbri01brit/page/n141.jpg",
+    "iiif_url": "https://iiif.archive.org/iiif/greekpapyriinbri01brit$141/full/full/0/default.jpg"
+   },
+   "note": "Inside the frame: νολεανουν / εβρεβα / ολοθιερον / δενδενξουν / τουβαντωνι κατεχε / τὴν ὀργὴν τοῦ ⍏ καὶ πάν/των τὸν θυμὸν κ(αὶ) τὰς γλώσσας ἵνα / μὴ δυνηθῶσιν λαλεῖν τῷ ⍏ - ⍏ = δεῖνα."
+  },
+  {
+   "file": "charakteres-pgm4-0409-0433-eleven-wessely1888.png",
+   "table": "PGM IV, the spell headed \"Wunderbarer Liebeszwang\" in Preisendanz's translation (beginning at IV 296): at IV 406-408 the user is told to write on the other side of the plate the heart and the charaktêres \"as below\" (paraphrase mine; Preisendanz: \"εἶτα γράψον εἰς ἕτερον μέρος | τοῦ πλατύματος τὴν καρδίαν καὶ τοὺς χα|ρακτῆρας, ὡς ὑπόκειται·\"). These are the ELEVEN charaktêres beside the heart-shaped logos (IV 409-433; Wessely \"f. 6 Verso\"); Wessely prints this page in landscape layout (line numbers 410-430 rotated).",
+   "letters": [
+    {
+     "position": 1,
+     "label_as_printed": "(none)",
+     "value": null,
+     "form": "asterisk (six/eight arms), lower-left arm curled"
+    },
+    {
+     "position": 2,
+     "label_as_printed": "(none)",
+     "value": null,
+     "form": "ring crossed by a horizontal that runs on to a second ring (⊖—○)"
+    },
+    {
+     "position": 3,
+     "label_as_printed": "(none)",
+     "value": null,
+     "form": "long upright crossed at mid-height by a short bar ending in two short uprights (H on a long stem, ╫)"
+    },
+    {
+     "position": 4,
+     "label_as_printed": "(none)",
+     "value": null,
+     "form": "triangle with a ring at each of its three corners, apex to the left"
+    },
+    {
+     "position": 5,
+     "label_as_printed": "(none)",
+     "value": null,
+     "form": "3-shape with a long S-hook rising from its top"
+    },
+    {
+     "position": 6,
+     "label_as_printed": "(none)",
+     "value": null,
+     "form": "upright ending in a ring at the foot"
+    },
+    {
+     "position": 7,
+     "label_as_printed": "(none)",
+     "value": null,
+     "form": "upright with a ring at the top and the foot, a horizontal arm to the right, two small rings stacked beside it"
+    },
+    {
+     "position": 8,
+     "label_as_printed": "(none)",
+     "value": null,
+     "form": "curved Ν/Λ: stroke rising from the left, falling to a ring at bottom right, with a ring at the top right end"
+    },
+    {
+     "position": 9,
+     "label_as_printed": "(none)",
+     "value": null,
+     "form": "wheel: circle divided into eight sectors by four diameters, a dot in each sector"
+    },
+    {
+     "position": 10,
+     "label_as_printed": "(none)",
+     "value": null,
+     "form": "upright crossed by three S-hooks"
+    },
+    {
+     "position": 11,
+     "label_as_printed": "(none)",
+     "value": null,
+     "form": "central ring with curved arms radiating to rings (top left, top right, lower right) and a hooked lower arm"
+    }
+   ],
+   "source": {
+    "work": "\"Griechische Zauberpapyrus von Paris und London\", Denkschriften der Kaiserlichen Akademie der Wissenschaften, Philosophisch-historische Classe, Bd. 36 (1888), 2. Abtheilung, pp. 27-208 (\"vorgelegt in der Sitzung am 11. Jänner 1887\")",
+    "author": "C. Wessely",
+    "edition": "first edition",
+    "date": "1888",
+    "place": "Wien",
+    "printer": "Druck von Adolf Holzhausen, k. k. Hof- und Universitäts-Buchdrucker, Wien (title-page verso, from OCR)",
+    "copy": "Google Books scan; the holding library is not named in the Internet Archive record (\"Book digitized by Google and uploaded by ARLIMA\")",
+    "repository": "Internet Archive (collection arlima)",
+    "identifier": "DenkschriftenPhilHist36",
+    "rights": "Repository: the Internet Archive item DenkschriftenPhilHist36 has licenseurl \"http://creativecommons.org/publicdomain/mark/1.0/\" (Public Domain Mark 1.0; checked 2026-10-20). The scan opens with Google's notice leaf, whose \"Usage guidelines\" ask users to \"Make non-commercial use of the files\" and to \"Maintain attribution\" - a request by Google, not a copyright claim. Published 1888; Wessely died 1931.",
+    "image_index": "n444 (Internet Archive leaf index, 0-based)",
+    "printed_locator": "p. 55 (\"f. 6 Verso\"), ll. 410-430 margin numbers",
+    "page_url": "https://archive.org/details/DenkschriftenPhilHist36/page/n444/mode/1up",
+    "image_url": "https://archive.org/download/DenkschriftenPhilHist36/page/n444.jpg",
+    "iiif_url": "https://iiif.archive.org/iiif/DenkschriftenPhilHist36$444/full/full/0/default.jpg"
+   },
+   "note": "ORIENTATION UNVERIFIED: Wessely sets the heart-logos and vowel columns sideways and the sign rows horizontally; whether each sign is printed upright as written on the papyrus must be checked against BnF suppl. gr. 574 fol. 6v before tracing. Preisendanz (PGM I p. 86) does not print these signs at all: he gives the placeholders \"elf Zauberzeichen\" and \"zehn Zauberzeichen\"."
+  },
+  {
+   "file": "charakteres-pgm4-0409-0433-ten-wessely1888.png",
+   "table": "PGM IV 409-433: the TEN charaktêres beside the heart-shaped logos (Wessely p. 55, lower row; = Preisendanz's \"zehn Zauberzeichen\").",
+   "letters": [
+    {
+     "position": 1,
+     "label_as_printed": "(none)",
+     "value": null,
+     "form": "triangle pointing right with rings at its two left corners (one ring dotted)"
+    },
+    {
+     "position": 2,
+     "label_as_printed": "(none)",
+     "value": null,
+     "form": "upright with a hooked flag at the top, ending in a ring at the foot"
+    },
+    {
+     "position": 3,
+     "label_as_printed": "(none)",
+     "value": null,
+     "form": "upright with two small rings either side of its top, a crossbar near the foot, and a large ring beneath"
+    },
+    {
+     "position": 4,
+     "label_as_printed": "(none)",
+     "value": null,
+     "form": "triangle with a ring at each corner, apex right"
+    },
+    {
+     "position": 5,
+     "label_as_printed": "(none)",
+     "value": null,
+     "form": "T (upright with top bar) with a hooked spur to the left at mid-height"
+    },
+    {
+     "position": 6,
+     "label_as_printed": "(none)",
+     "value": null,
+     "form": "reversed C with a ring at each end and a short bar to the right at its middle"
+    },
+    {
+     "position": 7,
+     "label_as_printed": "(none)",
+     "value": null,
+     "form": "cursive looped sign (ω with a tall looped ascender)"
+    },
+    {
+     "position": 8,
+     "label_as_printed": "(none)",
+     "value": null,
+     "form": "saltire (×) with a small ring beside its left and right angles"
+    },
+    {
+     "position": 9,
+     "label_as_printed": "(none)",
+     "value": null,
+     "form": "horseshoe arc with rings at both tips set on a larger ring (like the sign ♉)"
+    },
+    {
+     "position": 10,
+     "label_as_printed": "(none)",
+     "value": null,
+     "form": "long looped flourish ending in a long tail"
+    }
+   ],
+   "source": {
+    "work": "\"Griechische Zauberpapyrus von Paris und London\", Denkschriften der Kaiserlichen Akademie der Wissenschaften, Philosophisch-historische Classe, Bd. 36 (1888), 2. Abtheilung, pp. 27-208 (\"vorgelegt in der Sitzung am 11. Jänner 1887\")",
+    "author": "C. Wessely",
+    "edition": "first edition",
+    "date": "1888",
+    "place": "Wien",
+    "printer": "Druck von Adolf Holzhausen, k. k. Hof- und Universitäts-Buchdrucker, Wien (title-page verso, from OCR)",
+    "copy": "Google Books scan; the holding library is not named in the Internet Archive record (\"Book digitized by Google and uploaded by ARLIMA\")",
+    "repository": "Internet Archive (collection arlima)",
+    "identifier": "DenkschriftenPhilHist36",
+    "rights": "Repository: the Internet Archive item DenkschriftenPhilHist36 has licenseurl \"http://creativecommons.org/publicdomain/mark/1.0/\" (Public Domain Mark 1.0; checked 2026-10-20). The scan opens with Google's notice leaf, whose \"Usage guidelines\" ask users to \"Make non-commercial use of the files\" and to \"Maintain attribution\" - a request by Google, not a copyright claim. Published 1888; Wessely died 1931.",
+    "image_index": "n444 (Internet Archive leaf index, 0-based)",
+    "printed_locator": "p. 55 (\"f. 6 Verso\" / \"f. 7 Recto\" below)",
+    "page_url": "https://archive.org/details/DenkschriftenPhilHist36/page/n444/mode/1up",
+    "image_url": "https://archive.org/download/DenkschriftenPhilHist36/page/n444.jpg",
+    "iiif_url": "https://iiif.archive.org/iiif/DenkschriftenPhilHist36$444/full/full/0/default.jpg"
+   },
+   "note": "Same orientation caution as the eleven-sign row."
+  },
+  {
+   "file": "charakteres-pgm4-0409-0433-preisendanz1928-placeholders.png",
+   "table": "PGM IV 405-433 in Preisendanz (p. 86, page header \"IV 403—454\", margin \"Bl. 6 v.\"): the heart-shaped logos with the placeholders \"zehn Zauberzeichen\" (ten magic signs, left) and \"elf Zauberzeichen\" (eleven magic signs, right). Context only - shows that PGM I does not reproduce these signs.",
+   "letters": [],
+   "source": {
+    "work": "Papyri Graecae Magicae: Die griechischen Zauberpapyri, Bd. I (Pap. I-VI)",
+    "author": "K. Preisendanz (ed.), with A. Abt, S. Eitrem, L. Fahz, A. Jacoby, G. Möller, R. Wünsch",
+    "edition": "first edition, vol. I",
+    "date": "1928",
+    "place": "Leipzig and Berlin",
+    "printer": "\"Leipzig · Verlag und Druck von B. G. Teubner · Berlin\" (title page, from the item's OCR): publisher and printer",
+    "copy": "Claremont School of Theology Library (stamp \"Theology Library, Claremont, Calif.\", no. 31859; IA col_number COL-658)",
+    "repository": "Internet Archive (collections claremont_school_of_theology, internetarchivebooks)",
+    "identifier": "papyrigraecaemag0001unse_x4f6",
+    "rights": "Repository: the Internet Archive item papyrigraecaemag0001unse_x4f6 carries no \"rights\" or \"licenseurl\" field and is not access-restricted (checked 2026-10-20). Assessment (not a repository statement): published 1928, so public domain in the US (works published 1930 or earlier). Preisendanz died 1968, so the editor's own text, translation and apparatus may be protected in life+70 countries until the end of 2038. The only other PGM volume on archive.org, papyrigraecaemag0002unse (vol. 2, dated 1973, \"Stutgardiae : In aedibus B.G. Teubneri\"), has access-restricted-item \"true\".",
+    "image_index": "n106 (Internet Archive leaf index, 0-based)",
+    "printed_locator": "p. 86, IV 403-454, margin \"Bl. 6 v.\"",
+    "page_url": "https://archive.org/details/papyrigraecaemag0001unse_x4f6/page/n106/mode/1up",
+    "image_url": "https://archive.org/download/papyrigraecaemag0001unse_x4f6/page/n106.jpg",
+    "iiif_url": "https://iiif.archive.org/iiif/papyrigraecaemag0001unse_x4f6$106/full/full/0/default.jpg"
+   }
+  },
+  {
+   "file": "charakteres-pgm4-1889-1890-preisendanz1928.png",
+   "table": "PGM IV, love spell with a dog figure of pitch and wax (Preisendanz page header \"IV 1844-1927\"): \"ἐπίγραψον εἰς τὰς πλευρὰς τοῦ κυνὸς τοὺς χαρακτῆρας τούτους\" (write these charaktêres on the dog's sides; paraphrase mine), IV 1889-1890.",
+   "letters": [
+    {
+     "position": 1,
+     "label_as_printed": "Χ",
+     "value": null,
+     "form": "Χ"
+    },
+    {
+     "position": 2,
+     "label_as_printed": "Ζ",
+     "value": null,
+     "form": "Ζ (no overbar)"
+    },
+    {
+     "position": 3,
+     "label_as_printed": "Ō",
+     "value": null,
+     "form": "Ο with an overbar"
+    },
+    {
+     "position": 4,
+     "label_as_printed": "Π̄",
+     "value": null,
+     "form": "Π with an overbar"
+    },
+    {
+     "position": 5,
+     "label_as_printed": "▭",
+     "value": null,
+     "form": "open rectangle, wider than high"
+    },
+    {
+     "position": 6,
+     "label_as_printed": "Ψ",
+     "value": null,
+     "form": "Ψ"
+    },
+    {
+     "position": 7,
+     "label_as_printed": "Χ",
+     "value": null,
+     "form": "Χ"
+    },
+    {
+     "position": 8,
+     "label_as_printed": "‖",
+     "value": "none",
+     "form": "Preisendanz's every-fifth-line marker, not a sign"
+    },
+    {
+     "position": 9,
+     "label_as_printed": "V",
+     "value": null,
+     "form": "V"
+    },
+    {
+     "position": 10,
+     "label_as_printed": "Ψ",
+     "value": null,
+     "form": "Ψ"
+    }
+   ],
+   "source": {
+    "work": "Papyri Graecae Magicae: Die griechischen Zauberpapyri, Bd. I (Pap. I-VI)",
+    "author": "K. Preisendanz (ed.), with A. Abt, S. Eitrem, L. Fahz, A. Jacoby, G. Möller, R. Wünsch",
+    "edition": "first edition, vol. I",
+    "date": "1928",
+    "place": "Leipzig and Berlin",
+    "printer": "\"Leipzig · Verlag und Druck von B. G. Teubner · Berlin\" (title page, from the item's OCR): publisher and printer",
+    "copy": "Claremont School of Theology Library (stamp \"Theology Library, Claremont, Calif.\", no. 31859; IA col_number COL-658)",
+    "repository": "Internet Archive (collections claremont_school_of_theology, internetarchivebooks)",
+    "identifier": "papyrigraecaemag0001unse_x4f6",
+    "rights": "Repository: the Internet Archive item papyrigraecaemag0001unse_x4f6 carries no \"rights\" or \"licenseurl\" field and is not access-restricted (checked 2026-10-20). Assessment (not a repository statement): published 1928, so public domain in the US (works published 1930 or earlier). Preisendanz died 1968, so the editor's own text, translation and apparatus may be protected in life+70 countries until the end of 2038. The only other PGM volume on archive.org, papyrigraecaemag0002unse (vol. 2, dated 1973, \"Stutgardiae : In aedibus B.G. Teubneri\"), has access-restricted-item \"true\".",
+    "image_index": "n150 (Internet Archive leaf index, 0-based)",
+    "printed_locator": "p. 130, IV 1844-1927; line number 1890 in the margin; fol. \"Bl. 21 v.\" (Bl. 22 r. begins after l. 1895)",
+    "page_url": "https://archive.org/details/papyrigraecaemag0001unse_x4f6/page/n150/mode/1up",
+    "image_url": "https://archive.org/download/papyrigraecaemag0001unse_x4f6/page/n150.jpg",
+    "iiif_url": "https://iiif.archive.org/iiif/papyrigraecaemag0001unse_x4f6$150/full/full/0/default.jpg"
+   }
+  },
+  {
+   "file": "charakteres-pgm4-1889-1890-wessely1888.png",
+   "table": "PGM IV 1885-1892 (Wessely numbering): the same dog-spell charaktêres in Wessely 1888, for comparison.",
+   "letters": [
+    {
+     "position": 1,
+     "label_as_printed": "Χ",
+     "value": null,
+     "form": "Χ"
+    },
+    {
+     "position": 2,
+     "label_as_printed": "Ζ̄",
+     "value": "none",
+     "form": "Ζ with an overbar",
+     "note": "Preisendanz: no overbar"
+    },
+    {
+     "position": 3,
+     "label_as_printed": "Ō",
+     "value": null,
+     "form": "Ο with an overbar"
+    },
+    {
+     "position": 4,
+     "label_as_printed": "Π̄",
+     "value": null,
+     "form": "Π with an overbar"
+    },
+    {
+     "position": 5,
+     "label_as_printed": "▇",
+     "value": "none",
+     "form": "dark, mottled filled rectangle",
+     "note": "Preisendanz: open rectangle"
+    },
+    {
+     "position": 6,
+     "label_as_printed": "ψ",
+     "value": null,
+     "form": "ψ"
+    },
+    {
+     "position": 7,
+     "label_as_printed": "Χ",
+     "value": null,
+     "form": "Χ"
+    },
+    {
+     "position": 8,
+     "label_as_printed": "Υ",
+     "value": "none",
+     "form": "Υ",
+     "note": "Preisendanz: V"
+    },
+    {
+     "position": 9,
+     "label_as_printed": "ψ",
+     "value": null,
+     "form": "ψ"
+    }
+   ],
+   "source": {
+    "work": "\"Griechische Zauberpapyrus von Paris und London\", Denkschriften der Kaiserlichen Akademie der Wissenschaften, Philosophisch-historische Classe, Bd. 36 (1888), 2. Abtheilung, pp. 27-208 (\"vorgelegt in der Sitzung am 11. Jänner 1887\")",
+    "author": "C. Wessely",
+    "edition": "first edition",
+    "date": "1888",
+    "place": "Wien",
+    "printer": "Druck von Adolf Holzhausen, k. k. Hof- und Universitäts-Buchdrucker, Wien (title-page verso, from OCR)",
+    "copy": "Google Books scan; the holding library is not named in the Internet Archive record (\"Book digitized by Google and uploaded by ARLIMA\")",
+    "repository": "Internet Archive (collection arlima)",
+    "identifier": "DenkschriftenPhilHist36",
+    "rights": "Repository: the Internet Archive item DenkschriftenPhilHist36 has licenseurl \"http://creativecommons.org/publicdomain/mark/1.0/\" (Public Domain Mark 1.0; checked 2026-10-20). The scan opens with Google's notice leaf, whose \"Usage guidelines\" ask users to \"Make non-commercial use of the files\" and to \"Maintain attribution\" - a request by Google, not a copyright claim. Published 1888; Wessely died 1931.",
+    "image_index": "n480 (Internet Archive leaf index, 0-based)",
+    "printed_locator": "p. 91, ll. 1885-1890 (signs in ll. 1889-1890)",
+    "page_url": "https://archive.org/details/DenkschriftenPhilHist36/page/n480/mode/1up",
+    "image_url": "https://archive.org/download/DenkschriftenPhilHist36/page/n480.jpg",
+    "iiif_url": "https://iiif.archive.org/iiif/DenkschriftenPhilHist36$480/full/full/0/default.jpg"
+   }
+  },
+  {
+   "file": "charakteres-pgm4-2706-2707-preisendanz1928.png",
+   "table": "PGM IV 2705-2707: \"φυλακτήριον εἰς πέταλον ἀργυροῦν\" (phylactery on a silver leaf, the protective amulet that closes the Selene slander spell; paraphrase mine): two rows of signs, DRAWN in Preisendanz (not typeset letters).",
+   "letters": [
+    {
+     "position": 1,
+     "label_as_printed": "(row 1)",
+     "value": null,
+     "form": "closed loop with a tail (sideways 6)"
+    },
+    {
+     "position": 2,
+     "label_as_printed": "(row 1)",
+     "value": "none",
+     "form": "reversed C followed by a double horizontal bar (Ↄ=)",
+     "note": "may be two signs"
+    },
+    {
+     "position": 3,
+     "label_as_printed": "(row 1)",
+     "value": null,
+     "form": "V"
+    },
+    {
+     "position": 4,
+     "label_as_printed": "(row 1)",
+     "value": null,
+     "form": "Ϝ-like: upright whose top bends right, with a horizontal arm to the right just below the top"
+    },
+    {
+     "position": 5,
+     "label_as_printed": "(row 1)",
+     "value": null,
+     "form": "the same Ϝ-like sign"
+    },
+    {
+     "position": 6,
+     "label_as_printed": "(row 1)",
+     "value": null,
+     "form": "oval with a bar inside (θ-like), heavily inked"
+    },
+    {
+     "position": 7,
+     "label_as_printed": "(row 1)",
+     "value": null,
+     "form": "Ϝ/Γ-like sign"
+    },
+    {
+     "position": 8,
+     "label_as_printed": "(row 1)",
+     "value": null,
+     "form": "Y with curved arms"
+    },
+    {
+     "position": 9,
+     "label_as_printed": "(row 1)",
+     "value": null,
+     "form": "ʒ-like: Z with a hooked descender"
+    },
+    {
+     "position": 10,
+     "label_as_printed": "(row 2)",
+     "value": null,
+     "form": "hook curling into a descender with a foot (ϛ-like)"
+    },
+    {
+     "position": 11,
+     "label_as_printed": "(row 2)",
+     "value": null,
+     "form": "∈"
+    },
+    {
+     "position": 12,
+     "label_as_printed": "(row 2)",
+     "value": null,
+     "form": "saltire with curved arms and a ring at each end (⌘-like)"
+    },
+    {
+     "position": 13,
+     "label_as_printed": "(row 2)",
+     "value": null,
+     "form": "Π"
+    },
+    {
+     "position": 14,
+     "label_as_printed": "(row 2)",
+     "value": null,
+     "form": "small ring-ended asterisk with a double tick (″) at upper right"
+    },
+    {
+     "position": 15,
+     "label_as_printed": "(row 2)",
+     "value": null,
+     "form": "⊥ (inverted T)"
+    }
+   ],
+   "source": {
+    "work": "Papyri Graecae Magicae: Die griechischen Zauberpapyri, Bd. I (Pap. I-VI)",
+    "author": "K. Preisendanz (ed.), with A. Abt, S. Eitrem, L. Fahz, A. Jacoby, G. Möller, R. Wünsch",
+    "edition": "first edition, vol. I",
+    "date": "1928",
+    "place": "Leipzig and Berlin",
+    "printer": "\"Leipzig · Verlag und Druck von B. G. Teubner · Berlin\" (title page, from the item's OCR): publisher and printer",
+    "copy": "Claremont School of Theology Library (stamp \"Theology Library, Claremont, Calif.\", no. 31859; IA col_number COL-658)",
+    "repository": "Internet Archive (collections claremont_school_of_theology, internetarchivebooks)",
+    "identifier": "papyrigraecaemag0001unse_x4f6",
+    "rights": "Repository: the Internet Archive item papyrigraecaemag0001unse_x4f6 carries no \"rights\" or \"licenseurl\" field and is not access-restricted (checked 2026-10-20). Assessment (not a repository statement): published 1928, so public domain in the US (works published 1930 or earlier). Preisendanz died 1968, so the editor's own text, translation and apparatus may be protected in life+70 countries until the end of 2038. The only other PGM volume on archive.org, papyrigraecaemag0002unse (vol. 2, dated 1973, \"Stutgardiae : In aedibus B.G. Teubneri\"), has access-restricted-item \"true\".",
+    "image_index": "n178 (Internet Archive leaf index, 0-based)",
+    "printed_locator": "p. 158, IV 2680-2731; margin number 2705",
+    "page_url": "https://archive.org/details/papyrigraecaemag0001unse_x4f6/page/n178/mode/1up",
+    "image_url": "https://archive.org/download/papyrigraecaemag0001unse_x4f6/page/n178.jpg",
+    "iiif_url": "https://iiif.archive.org/iiif/papyrigraecaemag0001unse_x4f6$178/full/full/0/default.jpg"
+   }
+  },
+  {
+   "file": "charakteres-pgm4-2706-2707-wessely1888.png",
+   "table": "PGM IV 2703-2709 (Wessely numbering; \"f. 30 Recto\" at the head of p. 112; the signs are ll. 2706-2707, the top line 2703 is partly cut by the crop): the same silver-leaf phylactery, TYPESET by Wessely with Greek and fount sorts - compare the drawn forms in Preisendanz.",
+   "letters": [
+    {
+     "position": 1,
+     "label_as_printed": "©",
+     "value": "none",
+     "form": "circle containing a smaller arc",
+     "note": "Preisendanz: sideways-6 loop"
+    },
+    {
+     "position": 2,
+     "label_as_printed": "(sort)",
+     "value": "none",
+     "form": "T/Γ-like sort with a tilde above",
+     "note": "Preisendanz: Ↄ="
+    },
+    {
+     "position": 3,
+     "label_as_printed": "Υ",
+     "value": "none",
+     "form": "Υ",
+     "note": "Preisendanz: V"
+    },
+    {
+     "position": 4,
+     "label_as_printed": "ϵ/Ϝ",
+     "value": null,
+     "form": "rounded F-like sort"
+    },
+    {
+     "position": 5,
+     "label_as_printed": "ϵ/Ϝ",
+     "value": null,
+     "form": "rounded F-like sort"
+    },
+    {
+     "position": 6,
+     "label_as_printed": "Θ",
+     "value": null,
+     "form": "Θ"
+    },
+    {
+     "position": 7,
+     "label_as_printed": "ϵ/Ϝ",
+     "value": null,
+     "form": "rounded F-like sort"
+    },
+    {
+     "position": 8,
+     "label_as_printed": "Υ",
+     "value": null,
+     "form": "Υ"
+    },
+    {
+     "position": 9,
+     "label_as_printed": "Ξ/ξ",
+     "value": null,
+     "form": "ξ-like with a small mark above (ž-like)"
+    },
+    {
+     "position": 10,
+     "label_as_printed": "G",
+     "value": null,
+     "form": "G-like (Ⴚ)"
+    },
+    {
+     "position": 11,
+     "label_as_printed": "Є",
+     "value": null,
+     "form": "Є"
+    },
+    {
+     "position": 12,
+     "label_as_printed": "Χ",
+     "value": "none",
+     "form": "Χ",
+     "note": "Preisendanz: ring-ended saltire"
+    },
+    {
+     "position": 13,
+     "label_as_printed": "Π",
+     "value": null,
+     "form": "Π"
+    },
+    {
+     "position": 14,
+     "label_as_printed": "°",
+     "value": null,
+     "form": "small ring"
+    },
+    {
+     "position": 15,
+     "label_as_printed": "Τ°",
+     "value": "none",
+     "form": "Τ followed closely by a raised small ο carrying a short stroke above it",
+     "note": "Preisendanz: ring-ended asterisk with ″"
+    },
+    {
+     "position": 16,
+     "label_as_printed": "⊥",
+     "value": null,
+     "form": "⊥"
+    }
+   ],
+   "source": {
+    "work": "\"Griechische Zauberpapyrus von Paris und London\", Denkschriften der Kaiserlichen Akademie der Wissenschaften, Philosophisch-historische Classe, Bd. 36 (1888), 2. Abtheilung, pp. 27-208 (\"vorgelegt in der Sitzung am 11. Jänner 1887\")",
+    "author": "C. Wessely",
+    "edition": "first edition",
+    "date": "1888",
+    "place": "Wien",
+    "printer": "Druck von Adolf Holzhausen, k. k. Hof- und Universitäts-Buchdrucker, Wien (title-page verso, from OCR)",
+    "copy": "Google Books scan; the holding library is not named in the Internet Archive record (\"Book digitized by Google and uploaded by ARLIMA\")",
+    "repository": "Internet Archive (collection arlima)",
+    "identifier": "DenkschriftenPhilHist36",
+    "rights": "Repository: the Internet Archive item DenkschriftenPhilHist36 has licenseurl \"http://creativecommons.org/publicdomain/mark/1.0/\" (Public Domain Mark 1.0; checked 2026-10-20). The scan opens with Google's notice leaf, whose \"Usage guidelines\" ask users to \"Make non-commercial use of the files\" and to \"Maintain attribution\" - a request by Google, not a copyright claim. Published 1888; Wessely died 1931.",
+    "image_index": "n501 (Internet Archive leaf index, 0-based)",
+    "printed_locator": "p. 112 (\"f. 30 Recto\"), margin 2705",
+    "page_url": "https://archive.org/details/DenkschriftenPhilHist36/page/n501/mode/1up",
+    "image_url": "https://archive.org/download/DenkschriftenPhilHist36/page/n501.jpg",
+    "iiif_url": "https://iiif.archive.org/iiif/DenkschriftenPhilHist36$501/full/full/0/default.jpg"
+   }
+  },
+  {
+   "file": "charakteres-sethian-tablet6-wuensch1898.png",
+   "table": "\"Sethian\" curse tablet no. 6 (lead, Rome), 7 x 8 cm, in Wünsch's hand drawing; first published by Matter, Excursion gnostique pl. XII (Wünsch's note). Ring-letters surround a donkey-headed figure.",
+   "letters": [
+    {
+     "position": 1,
+     "label_as_printed": "(various)",
+     "value": "none",
+     "form": "ring-ended signs in the margins: Ν with rings, saltire with a ring at each end inside a circle, asterisk with eight ring-ended arms, ring-ended Α/Λ, a ⊣ with rings, small boxes with rings at the corners, \"%/o\" (percent-like) signs",
+     "note": "not transcribed sign by sign; trace from the crop"
+    }
+   ],
+   "source": {
+    "work": "Sethianische Verfluchungstafeln aus Rom",
+    "author": "R. Wünsch",
+    "edition": "first edition",
+    "date": "1898",
+    "place": "Leipzig",
+    "printer": "B. G. Teubner (publisher, from the IA description)",
+    "copy": "holding library not stated (patron upload to Internet Archive, collection gerard-porte-library)",
+    "repository": "Internet Archive",
+    "identifier": "Sethianische",
+    "rights": "Repository: the Internet Archive item Sethianische has licenseurl \"http://creativecommons.org/publicdomain/mark/1.0/\" (Public Domain Mark 1.0; checked 2026-10-20). Published 1898; Wuensch died 1915.",
+    "image_index": "n19 (Internet Archive leaf index, 0-based)",
+    "printed_locator": "p. 10, \"B. Griechische Tafeln\", no. 6 (\"Tafel von 7·8 cm Größe\")",
+    "page_url": "https://archive.org/details/Sethianische/page/n19/mode/1up",
+    "image_url": "https://archive.org/download/Sethianische/page/n19.jpg",
+    "iiif_url": "https://iiif.archive.org/iiif/Sethianische$19/full/full/0/default.jpg"
+   },
+   "note": "Wünsch, p. 5 (image n14): the state of the tablets made \"mechanische Wiedergabe ... durch Photographie oder Durchreibung\" impossible, so he made hand drawings (\"Abzeichnungen\") which \"eine mechanische Reproduktion natürlich nie ersetzen können\". These are an editor's freehand copies, not facsimiles."
+  },
+  {
+   "file": "charakteres-sethian-tablet7-wuensch1898.png",
+   "table": "\"Sethian\" curse tablet no. 7 (lead, Rome), 8 x 12 cm, in Wünsch's hand drawing: rows of ring-ended letters and signs around a bust.",
+   "letters": [
+    {
+     "position": 1,
+     "label_as_printed": "(various)",
+     "value": "none",
+     "form": "rows of ring-ended forms: Ν, Κ, Λ/Δ with ring feet, Φ, ring-ended crosses on long horizontal bars (three or four uprights with rings above and below), ⊕ circles, Ε/Ꞓ forms",
+     "note": "not transcribed sign by sign (about 70 forms); trace from the crop"
+    }
+   ],
+   "source": {
+    "work": "Sethianische Verfluchungstafeln aus Rom",
+    "author": "R. Wünsch",
+    "edition": "first edition",
+    "date": "1898",
+    "place": "Leipzig",
+    "printer": "B. G. Teubner (publisher, from the IA description)",
+    "copy": "holding library not stated (patron upload to Internet Archive, collection gerard-porte-library)",
+    "repository": "Internet Archive",
+    "identifier": "Sethianische",
+    "rights": "Repository: the Internet Archive item Sethianische has licenseurl \"http://creativecommons.org/publicdomain/mark/1.0/\" (Public Domain Mark 1.0; checked 2026-10-20). Published 1898; Wuensch died 1915.",
+    "image_index": "n20 (Internet Archive leaf index, 0-based)",
+    "printed_locator": "p. 11, no. 7 (\"Tafel von 8·12 cm Größe\")",
+    "page_url": "https://archive.org/details/Sethianische/page/n20/mode/1up",
+    "image_url": "https://archive.org/download/Sethianische/page/n20.jpg",
+    "iiif_url": "https://iiif.archive.org/iiif/Sethianische$20/full/full/0/default.jpg"
+   },
+   "note": "Same caution as no. 6: Wünsch's own drawing."
+  },
+  {
+   "file": "charakteres-concordance-preisendanz1928-pIX.png",
+   "table": "Context: Preisendanz's list of PGM numbers (PGM I, Vorrede p. IX): \"IV. Paris, Bibliothèque Nationale, Suppl. grec 574 (Anast. 1073)\", \"VII. London, British Museum CXXI\".",
+   "letters": [],
+   "source": {
+    "work": "Papyri Graecae Magicae: Die griechischen Zauberpapyri, Bd. I (Pap. I-VI)",
+    "author": "K. Preisendanz (ed.), with A. Abt, S. Eitrem, L. Fahz, A. Jacoby, G. Möller, R. Wünsch",
+    "edition": "first edition, vol. I",
+    "date": "1928",
+    "place": "Leipzig and Berlin",
+    "printer": "\"Leipzig · Verlag und Druck von B. G. Teubner · Berlin\" (title page, from the item's OCR): publisher and printer",
+    "copy": "Claremont School of Theology Library (stamp \"Theology Library, Claremont, Calif.\", no. 31859; IA col_number COL-658)",
+    "repository": "Internet Archive (collections claremont_school_of_theology, internetarchivebooks)",
+    "identifier": "papyrigraecaemag0001unse_x4f6",
+    "rights": "Repository: the Internet Archive item papyrigraecaemag0001unse_x4f6 carries no \"rights\" or \"licenseurl\" field and is not access-restricted (checked 2026-10-20). Assessment (not a repository statement): published 1928, so public domain in the US (works published 1930 or earlier). Preisendanz died 1968, so the editor's own text, translation and apparatus may be protected in life+70 countries until the end of 2038. The only other PGM volume on archive.org, papyrigraecaemag0002unse (vol. 2, dated 1973, \"Stutgardiae : In aedibus B.G. Teubneri\"), has access-restricted-item \"true\".",
+    "image_index": "n17 (Internet Archive leaf index, 0-based)",
+    "printed_locator": "p. IX (Vorrede)",
+    "page_url": "https://archive.org/details/papyrigraecaemag0001unse_x4f6/page/n17/mode/1up",
+    "image_url": "https://archive.org/download/papyrigraecaemag0001unse_x4f6/page/n17.jpg",
+    "iiif_url": "https://iiif.archive.org/iiif/papyrigraecaemag0001unse_x4f6$17/full/full/0/default.jpg"
+   }
+  },
+  {
+   "file": "charakteres-concordance-preisendanz1928-pX.png",
+   "table": "Context: Preisendanz's list, p. X: \"XXXVI. Oslo, Univ. Bibl. 1\".",
+   "letters": [],
+   "source": {
+    "work": "Papyri Graecae Magicae: Die griechischen Zauberpapyri, Bd. I (Pap. I-VI)",
+    "author": "K. Preisendanz (ed.), with A. Abt, S. Eitrem, L. Fahz, A. Jacoby, G. Möller, R. Wünsch",
+    "edition": "first edition, vol. I",
+    "date": "1928",
+    "place": "Leipzig and Berlin",
+    "printer": "\"Leipzig · Verlag und Druck von B. G. Teubner · Berlin\" (title page, from the item's OCR): publisher and printer",
+    "copy": "Claremont School of Theology Library (stamp \"Theology Library, Claremont, Calif.\", no. 31859; IA col_number COL-658)",
+    "repository": "Internet Archive (collections claremont_school_of_theology, internetarchivebooks)",
+    "identifier": "papyrigraecaemag0001unse_x4f6",
+    "rights": "Repository: the Internet Archive item papyrigraecaemag0001unse_x4f6 carries no \"rights\" or \"licenseurl\" field and is not access-restricted (checked 2026-10-20). Assessment (not a repository statement): published 1928, so public domain in the US (works published 1930 or earlier). Preisendanz died 1968, so the editor's own text, translation and apparatus may be protected in life+70 countries until the end of 2038. The only other PGM volume on archive.org, papyrigraecaemag0002unse (vol. 2, dated 1973, \"Stutgardiae : In aedibus B.G. Teubneri\"), has access-restricted-item \"true\".",
+    "image_index": "n18 (Internet Archive leaf index, 0-based)",
+    "printed_locator": "p. X (Vorrede)",
+    "page_url": "https://archive.org/details/papyrigraecaemag0001unse_x4f6/page/n18/mode/1up",
+    "image_url": "https://archive.org/download/papyrigraecaemag0001unse_x4f6/page/n18.jpg",
+    "iiif_url": "https://iiif.archive.org/iiif/papyrigraecaemag0001unse_x4f6$18/full/full/0/default.jpg"
+   }
+  }
+ ],
+ "context_pages": [
+  "charakteres-page-eitrem1925-p10-n17.jpg",
+  "charakteres-page-eitrem1925-p11-n18.jpg",
+  "charakteres-page-eitrem1925-p13-n20.jpg",
+  "charakteres-page-eitrem1925-p14-n21.jpg",
+  "charakteres-page-eitrem1925-plVII-n170.jpg",
+  "charakteres-page-eitrem1925-plVIII-n172.jpg",
+  "charakteres-page-eitrem1925-plXI-n178.jpg",
+  "charakteres-page-eitrem1925-plXII-n180.jpg",
+  "charakteres-page-kenyon1893-p103-n130.jpg",
+  "charakteres-page-kenyon1893-p113-n140.jpg",
+  "charakteres-page-kenyon1893-p114-n141.jpg",
+  "charakteres-page-kenyon1893-p90-n117.jpg",
+  "charakteres-page-kenyon1893-p91-n118.jpg",
+  "charakteres-page-kenyon1893-p97-n124.jpg",
+  "charakteres-page-preisendanz1928-p130-n150.jpg",
+  "charakteres-page-preisendanz1928-p158-n178.jpg",
+  "charakteres-page-preisendanz1928-p86-n106.jpg",
+  "charakteres-page-preisendanz1928-pIX-n17.jpg",
+  "charakteres-page-preisendanz1928-pX-n18.jpg",
+  "charakteres-page-wessely1888-p112-n501.jpg",
+  "charakteres-page-wessely1888-p55-n444.jpg",
+  "charakteres-page-wessely1888-p91-n480.jpg",
+  "charakteres-page-wessely1893-p26-n629.jpg",
+  "charakteres-page-wessely1893-p27-n630.jpg",
+  "charakteres-page-wuensch1898-p10-n19.jpg",
+  "charakteres-page-wuensch1898-p11-n20.jpg",
+  "charakteres-page-wuensch1898-p5-n14.jpg"
+ ],
+ "legibility": "Kenyon 1893 (typeset, with special sorts for the signs) and Wessely 1888/1893 (typeset) are sharp at 300-600 ppi; every sign in the crops is complete. Preisendanz 1928 is a camera scan (360 ppi) of a photo-offset page; legible. Eitrem's plates are halftone collotypes of the papyrus: forms are legible but stroke ends, small rings and faint signs are blurred by the screen and papyrus fibres - transcriptions of plates VII, VIII, XI and XII are provisional. Wünsch's drawings are clear but are his freehand copies.",
+ "problems": [
+  "Preisendanz PGM II (1931), which holds PGM VII and XXXVI, could not be used: the only archive.org copy is the 1973-74 second edition, access-restricted; the 1931 first edition enters the US public domain on 1 January 2027.",
+  "The British Museum photographic Facsimiles (portfolio issued with Kenyon vols. I-III, 1893) were not found; Kenyon's and Wessely's typeset sign forms are editors' approximations, not traces of the papyrus.",
+  "PGM IV 409-433: the only print found with these signs is Wessely 1888, laid out sideways; sign orientation must be checked against the manuscript (BnF suppl. gr. 574, fol. 6v).",
+  "Kenyon prints scribal abbreviation symbols in the same line as charaktêres (⍏ = δεῖνα, □ = ὄνομα, □□ = ὀνόματα, and symbols for ἥλιος and σελήνη: Index of Symbols, pp. 251-2). The tracer must not draw these as charaktêres; for VII 196 the papyrus's own count (11) suggests that the two ⍏-shaped forms there ARE counted among the charaktêres.",
+  "HathiTrust page images are blocked from this environment (HTTP 403 \"Blocked from HathiTrust\"); the search budget was exhausted before Gallica (BnF suppl. gr. 574) or the British Library could be located.",
+  "Archive.org page-number metadata is unreliable for the Kenyon scan (its page_numbers.json is off by 5 here) and the hOCR page index of PGM I is offset by one leaf; every printed page given here was read from the image itself."
+ ],
+ "notes": "Image indexes are Internet Archive leaf numbers (0-based), as used in https://archive.org/download/<id>/page/n<k>.jpg. Crops are taken from those full-resolution JPEGs. Translations of Greek in the \"table\" fields are my own paraphrases. Concordance confirmed in print (Preisendanz 1928, pp. IX-X): PGM IV = Paris, BN suppl. gr. 574; PGM VII = P. Lond. CXXI; PGM XXXVI = P. Oslo 1. Eitrem 1925 dates P. Oslo 1 \"IV. saec. p. Chr.\" (head of the edition of No. 1, image n12); Kenyon heads P. Lond. CXXI \"3rd cent.\" (p. 83).",
+ "checked": {
+  "by": "independent checker",
+  "date": "2026-10-20",
+  "method": "Read every crop and every context page listed; re-fetched all 27 context leaves from archive.org/download/<id>/page/n<k>.jpg (each matches the saved context page, grey RMSE 0.6-1.5%) and located every crop inside its stated leaf by sub-image search (match 0.3-9.6% vs 12-19% for a wrong leaf). Running heads/captions read on the leaves: Plates VII, VIII, XI, XII captioned 'Pap. Osl. No. 1, Col. vii/viii/xi/xii'; Eitrem pp. 10, 11, 13, 14; Kenyon pp. 90, 91, 97, 103, 113, 114; Kenyon Index of Symbols p. 251 (n278); Wessely 1893 pp. 26, 27; Wessely 1888 pp. 55, 91, 112; Preisendanz pp. IX, X, 86, 130, 158; Wuensch pp. 5, 10, 11. Rights re-read from archive.org/metadata and the HathiTrust catalog API; printers from the items' OCR.",
+  "confirmed": [
+   "All locators (leaf indexes and printed pages) are right; no sign is cut off in any crop.",
+   "Concordance (Preisendanz pp. IX-X): IV = Paris, BN Suppl. grec 574 (Anast. 1073); VII = London, BM CXXI; XXXVI = Oslo, Univ. Bibl. 1.",
+   "Eitrem 1925 title page 'With thirteen plates'; 'IV. saec. p. Chr.' (OCR); Kenyon p. 83 'Papyrus CXXI.—3rd cent.'; Kenyon p. 84 serpent quotation verbatim.",
+   "Eitrem apparatus to 278 quoted correctly; Wuensch p. 5 quotations and tablet sizes (7·8 cm, 8·12 cm) correct; Wessely 1888 article pp. 27-208 confirmed by the volume's contents list."
+  ],
+  "corrections": [
+   {
+    "where": "all plates",
+    "field": "source.rights",
+    "why": "rewritten so that what the repository says is quoted (licenseurl / absence of rights fields / IA notes / Google usage leaf / HathiTrust rightsCode) and the copyright reasoning is labelled as assessment"
+   },
+   {
+    "where": "Kenyon, Wessely 1893, Preisendanz plates",
+    "field": "source.printer",
+    "why": "printer is recorded in the books: Kenyon colophon William Clowes and Sons; Denkschriften Bd. 42 title page Adolf Holzhausen; PGM I title page 'Verlag und Druck von B. G. Teubner'"
+   },
+   {
+    "where": "plate VII pos 9",
+    "field": "form",
+    "was": "\"ΝΥϢ ΙΤΑΙϢΤΙ\"-like letter group (probably letters/vowels, not signs)",
+    "now": "letter group; checker reads \"ΝΥϖ ΙΤΛ(Α?)ΙϢΙΤΠ(?)\" - last letter Π-like and partly lost; probably letters, not signs",
+    "why": "re-read on the full-resolution leaf n170: the 4th letter of the second group shows no crossbar (Λ rather than Α) and the group ends in a Π-like letter"
+   },
+   {
+    "where": "plate VII pos 10",
+    "field": "form",
+    "was": "rectangle crossed by its two diagonals, with rings at the corners and at the ends of overshooting strokes (about 8 rings)",
+    "now": "box (rough rectangle) crossed by its two diagonals, the diagonals and sides overshooting the corners; about nine open rings - at the ends of the overshooting strokes and free-standing round the box (top-left, top-middle, top-right, upper-left, mid-left, lower-left, bottom-middle, bottom, lower-right) - plus two filled blobs on the right side",
+    "why": "counted on the full-resolution leaf: about nine open rings and two filled blobs, not 'about 8 rings'; some rings stand free of the strokes"
+   },
+   {
+    "where": "plate VII pos 12",
+    "field": "form",
+    "was": "\"Ε Γ ϑ λ\"-like group",
+    "now": "\"Ε ⊏ θ λ\"-like group: Ε; a box open on the right (⊏) with a short stroke above it; θ with its crossbar run out to the right; λ",
+    "why": "re-read: the second letter is a box open on the right, not a plain Γ"
+   },
+   {
+    "where": "plate VIII table",
+    "field": "table",
+    "was": "PGM XXXVI = P. Oslo 1, col. viii: the signs after \"Ἀδωναί //\" at l. 203 of the agōgē (Eitrem ll. 189-210: \"... λέγω ἡ χαρι|κτῆρας οὕτως· δός γ᾽ ἀμοὶ τὴν χάριν πάντων, Ἀδωναί // Litterae et signa magica (vide tab. VIII)\"), above the vowel figure ll. 204-210. Photograph.",
+    "now": "PGM XXXVI = P. Oslo 1, col. viii: the signs after \"Ἀδωναί //\" at l. 203 of the agōgē (Eitrem ll. 189-210, printed \"... λέγω η χαρι-| κτῆρας οὕτως· δώς γ' ἀμοὶ τὴν χάριν πάντων, | Ἀδωναί // Litterae et signa magica (vide tab. VIII).\" - Eitrem's apparatus to 202: \"δῶς l. δός\"), above the vowel figure ll. 204-210. Photograph.",
+    "why": "Eitrem prints η without breathing and δώς (corrected to δός only in his apparatus), not 'ἡ' and 'δός'"
+   },
+   {
+    "where": "plate XI table",
+    "field": "table",
+    "was": "PGM XXXVI = P. Oslo 1, col. xi: the row of signs after l. 263 (Eitrem ll. 256-263, \"Λαβὼν ὄστρακον ἀπὸ τριόδου ...\"; then \"Magicae litterae (vide tab. XI)\"). Photograph.",
+    "now": "PGM XXXVI = P. Oslo 1, col. xi: the row of signs after l. 263 (Eitrem ll. 256-263, \"Λαβὼν ὄστρακον ἀπὸ τρι[ό]δου τρίγονον ...\"; then \"Magicae litterae (vide tab. XI).\"). Photograph.",
+    "why": "quotation brought into line with the print (τρι[ό]δου τρίγονον)"
+   },
+   {
+    "where": "plate XI pos 5",
+    "field": "form",
+    "was": "Λ/Ν-like: from a ring at lower left up to a ring at the top, then a long stroke down to the right ending in a ring",
+    "now": "two ring-topped strokes side by side, not joined: (a) a ring at the top with a stroke slanting down-left to a ring at the foot; (b) a ring at the top with a stroke running down and curving right into a ring at lower right",
+    "why": "the full-resolution leaf n178 shows two separate top rings and no stroke joining them; the manifest had merged them into one Λ/Ν with a single top ring"
+   },
+   {
+    "where": "plate XII pos 1",
+    "field": "note",
+    "was": "left edge abraded",
+    "now": "left edge abraded; before it, at the abraded left end, are traces of one or two further signs (a blot with strokes, a small ρ-like loop, marks beside the vertical crack) - not listed; the top of the cup runs on into the bar of no. 2",
+    "why": "traces before no. 1 were not mentioned"
+   },
+   {
+    "where": "plate XII pos 11",
+    "field": "form",
+    "was": "cross with a long descender and a blob/ring at the top (ring-headed cross)",
+    "now": "upright with a blob/ring at the top, crossed by two horizontal bars (the upper longer), with a long descender (‡-like)",
+    "why": "zoom shows two crossbars, not one"
+   },
+   {
+    "where": "plate XII pos 12",
+    "field": "form",
+    "was": "long-armed cross (+) with a long stem",
+    "now": "long horizontal with a short upright hanging below its middle (⊤-like), joined on the right to a cross whose upright is partly lost in the vertical crack (a diagonal stroke also crosses it)",
+    "why": "re-read on the full-resolution leaf: not a simple long-armed cross"
+   },
+   {
+    "where": "plate XII pos 15",
+    "field": "form",
+    "was": "Z with a horizontal bar",
+    "now": "Z: top bar, diagonal, longer bottom bar (no crossbar)",
+    "why": "'Z with a horizontal bar' implied a crossbar; there is none"
+   },
+   {
+    "where": "Kenyon 193-196 table",
+    "field": "table",
+    "was": "PGM VII = P. Lond. 121, ll. 193-196, \"πρὸς σκορπίου πληγήν\" (against a scorpion sting): the charaktêres to be written on clean papyrus and bound on the sting (paraphrase mine). L. 196 ends \"χαρ ια\", read by Wessely as \"γί(νονται) χαρ(ακτῆρες) ια´\" (= 11 charaktêres).",
+    "now": "PGM VII = P. Lond. 121, ll. 193-196, \"πρὸς σκορπίου πληγήν\" (against a scorpion sting): the charaktêres to be written on clean papyrus and bound on the sting (paraphrase mine). L. 196 ends \"ΓΤ · χαρ ια\". Wessely prints \"γι¯ χαρ/ ια\" in that place, and his note to 196 reads \"l. γίγνεται χαρακτῆρες ιγ´ das macht aus 11 Zeichen\" - his printed numeral ιγ´ (13) contradicts his own count of 11 and the papyrus's ια; probably a misprint for ια´.",
+    "why": "Wessely's note prints ιγ´, not ια´; the manifest's ellipsis hid the discrepancy"
+   },
+   {
+    "where": "Kenyon 196 pos 12",
+    "field": "label_as_printed",
+    "was": "(none)",
+    "now": "ΓΤ ·",
+    "why": "Kenyon's sort is Γ followed by Τ, then a raised dot"
+   },
+   {
+    "where": "Kenyon 196 pos 12",
+    "field": "form",
+    "was": "\"┌┼\": Γ-shape followed by a cross, plus a raised dot",
+    "now": "Γ (with a heavy foot) followed by a Τ, then a raised dot",
+    "why": "the second element is a Τ (bar at the top), not a cross"
+   },
+   {
+    "where": "Wessely 1893 193-196 table",
+    "field": "table",
+    "was": "PGM VII = P. Lond. 121, ll. 187-196 (Wessely numbering); the same scorpion-sting charm in Wessely's edition, for comparison with Kenyon.",
+    "now": "PGM VII = P. Lond. 121, ll. 193-196 (Wessely's numbering agrees with Kenyon's here: margin \"195\" stands at \"τον χαρτην και εσ[τ]αι ...\"); the same scorpion-sting charm in Wessely's edition, for comparison with Kenyon. The crop also shows ll. 197-198 and grey show-through of the facing page.",
+    "why": "the crop shows ll. 193-198 in Wessely's numbering, not 187-196"
+   },
+   {
+    "where": "Wessely 196 pos 11",
+    "field": "label_as_printed",
+    "was": "α β / α α / να να / α α β",
+    "now": "α β / α α / να να / α β α",
+    "why": "bottom row printed α (left), β (under the upright), α (right)"
+   },
+   {
+    "where": "Wessely 196 pos 12",
+    "field": "note",
+    "was": "Wessely's note to 196: 'l. γίγνεται χαρακτῆρες ... das macht aus 11 Zeichen'",
+    "now": "Wessely's note to 196 (p. 26) reads \"l. γίγνεται χαρακτῆρες ιγ´ das macht aus 11 Zeichen\": the printed numeral is ιγ´ (13), against his own \"11\" and the text's ια - probably a misprint",
+    "why": "quotation completed; it prints ιγ´"
+   },
+   {
+    "where": "Wessely 1893 193-196",
+    "field": "source.printed_locator",
+    "why": "page carries margin numbers 190, 195, 200, 205 and 210"
+   },
+   {
+    "where": "Kenyon 215 table",
+    "field": "table",
+    "was": "PGM VII = P. Lond. 121, ll. 215-218: \"Ἀφροδίτης στήλην πρὸς φιλίαν καὶ χάριν καὶ πρᾶξιν καὶ φίλους\" (Aphrodite's stele for friendship, favour, success and friends: engrave on a tin leaf with a bronze stylus; paraphrase mine), with the drawn stele.",
+    "now": "PGM VII = P. Lond. 121, ll. 215-217 and the figure printed after l. 217: \"Ἀφροδίτης στήλην πρὸς φιλίαν καὶ χάριν καὶ πρᾶξιν καὶ φίλους\" (Aphrodite's stele for friendship, favour, success and friends: engrave on a tin leaf with a bronze stylus; paraphrase mine), with the drawn stele. L. 218 (φυλακτηριον ...) follows the figure, outside the crop.",
+    "why": "Kenyon's l. 218 is the next charm (φυλακτηριον προς ριγοπυρετιον), below the figure; the stele text is ll. 215-217"
+   },
+   {
+    "where": "Kenyon 215",
+    "field": "source.printed_locator",
+    "was": "p. 91, Pap. CXXI ll. 215-218 and figure"
+   },
+   {
+    "where": "Kenyon 215 pos 2",
+    "field": "label_as_printed",
+    "was": "ν β",
+    "now": "υ β",
+    "why": "Kenyon prints upsilon (υ), not nu"
+   },
+   {
+    "where": "Kenyon 215 pos 2",
+    "field": "form",
+    "was": "letters ν β (upper left inside the frame)",
+    "now": "letters υ β (upper left inside the frame)",
+    "why": "upsilon"
+   },
+   {
+    "where": "Kenyon 215 pos 3",
+    "field": "form",
+    "was": "Y with a ring at the top of the stem? (Ϋ-like, rings at the arm ends)",
+    "now": "Y: upright stem forking into two short arms (the left one hooked), with a small ring set just above the fork between the arms; the arm ends are plain",
+    "why": "zoom shows no rings at the arm ends; a single small ring floats above the fork"
+   },
+   {
+    "where": "Kenyon 215 pos 6",
+    "field": "label_as_printed",
+    "was": "σαμνα μενευς ακραμμα χαμαρει",
+    "now": "δαμνα μενευς ακραμμα χαμαρει",
+    "why": "the first letter in Kenyon's drawn triangle is a 6-shaped δ (hand-lettered), not σ; Wessely reads δαμνα too"
+   },
+   {
+    "where": "Kenyon 215 pos 7",
+    "field": "label_as_printed",
+    "was": "… τος πππ(ο?)",
+    "now": "· · · / τος / ππο",
+    "why": "Kenyon prints three dots, τος, ππο in the right margin"
+   },
+   {
+    "where": "Wessely 1893 stele table",
+    "field": "table",
+    "was": "PGM VII = P. Lond. 121, ll. 213-226 (Wessely numbering): the same Aphrodite stele in Wessely's edition. Variants against Kenyon noted per item.",
+    "now": "PGM VII = P. Lond. 121, ll. 214-226 (Wessely numbering): the same Aphrodite stele in Wessely's edition. Wessely counts the figure as ll. 218-223, so after it his numbering runs six ahead of Kenyon's (Wessely 224 \"φυλακτηριον ...\" = Kenyon 218). Variants against Kenyon noted per item.",
+    "why": "crop begins at l. 214 (λευκον επιγρ/); and the numbering divergence after the figure is visible on the page"
+   },
+   {
+    "where": "Wessely stele pos 2",
+    "field": "note",
+    "was": "Kenyon: ν β",
+    "now": "Kenyon: υ β",
+    "why": "Kenyon prints υ, not ν"
+   },
+   {
+    "where": "Wessely stele pos 3",
+    "field": "note",
+    "was": "Kenyon: ring-topped Y",
+    "now": "Kenyon: Y with a small ring above the fork",
+    "why": "Kenyon's form corrected"
+   },
+   {
+    "where": "Wessely stele pos 6",
+    "field": "note",
+    "was": "Kenyon: σαμνα",
+    "now": "Kenyon also δαμνα (hand-drawn 6-shaped δ)",
+    "why": "Kenyon does not print σαμνα"
+   },
+   {
+    "where": "Wessely stele note",
+    "field": "note",
+    "was": "Above l. 214 Wessely prints two symbols (a crescent-like ☌/ϭ and ©) in \"λευκον επιγρ/ ... εις το μελαν επιγραφ/ ... και περιαπτε\"; these look like abbreviation symbols (sun/moon), not charaktêres - not verified.",
+    "now": "In l. 214 (not above it) Wessely prints two symbols, \"λευκον επιγρ/ [σ-like sign] εις το μελαν επιγραφ/ © και περιαπτε\". Kenyon prints his ἥλιος and σελήνη (☾) sorts in the same places, and his Index of Symbols (p. 251) cites p. 91 for both: they are sun/moon abbreviations in Kenyon's reading, not charaktêres. Wessely draws the outer frame open (top and left sides only); Kenyon closes it.",
+    "why": "verified against Kenyon p. 91 and Kenyon's Index of Symbols, p. 251 (leaf n278)"
+   },
+   {
+    "where": "Kenyon 392 pos 2",
+    "field": "form",
+    "was": "Γ joined to a T: both feet and the right arm end in rings (ring-ended Γ-Τ ligature)",
+    "now": "Γ joined to a Τ along one top bar, with four rings: at the foot of the Γ, on the bar where Γ and Τ meet, at the right end of the Τ's bar, and at the foot of the Τ",
+    "why": "zoom shows four rings, including one on the bar at the junction"
+   },
+   {
+    "where": "Kenyon 399 pos 10",
+    "field": "form",
+    "was": "m-like sign with a flat top (Ш-like with rounded arches)",
+    "now": "m-like: two rounded arches whose three feet are joined by a flat base line (a B lying on its back)",
+    "why": "the top is rounded and the base flat; 'flat top' was wrong"
+   },
+   {
+    "where": "Kenyon 400 pos 16",
+    "field": "note",
+    "was": "Kenyon's index lists L = ἀπό and □ = ὄνομα in other papyri; status here not settled",
+    "now": "Kenyon's Index of Symbols (p. 251) gives L = ἔτους and □ = ὄνομα, but cites neither for p. 97; his ἀπό sign is a different, cursive form. Status here not settled",
+    "why": "the index does not give L = ἀπό; L = ἔτους (pp. 8-170), ἀπό has its own sign (pp. 143-156)"
+   },
+   {
+    "where": "Kenyon 401 pos 18",
+    "field": "form",
+    "was": "two crossing strokes meeting a horizontal (⤚-like, \"fish-tail\")",
+    "now": "short horizontal with a fork at each end, each fork opening outward (>—<)",
+    "why": "re-read at high zoom"
+   },
+   {
+    "where": "Kenyon 402 pos 23",
+    "field": "form",
+    "was": "lozenge with a hooked top (◊ with a tick)",
+    "now": "lozenge with a short bar above it and a short tail below",
+    "why": "zoom: bar above and tail below, no hook"
+   },
+   {
+    "where": "Kenyon 402 pos 26",
+    "field": "form",
+    "was": "φ with a ring at the foot (ring-footed phi)",
+    "now": "Φ with a ring at the top of the upright and another at its foot",
+    "why": "zoom shows rings at both ends"
+   },
+   {
+    "where": "Kenyon 588 pos 1",
+    "field": "form",
+    "was": "Λ with a ring at each foot",
+    "now": "Λ with a ring at the apex and at each foot",
+    "why": "zoom shows three rings"
+   },
+   {
+    "where": "Kenyon 588 pos 2",
+    "field": "form",
+    "was": "comb: a horizontal base with three uprights rising from it, the first with a small ring, followed by a small ν",
+    "now": "comb: a horizontal base with four uprights rising from it - the first taller and ring-topped, then three short - the base running on into a small ν",
+    "why": "four uprights, not three"
+   },
+   {
+    "where": "Kenyon 588 pos 3",
+    "field": "form",
+    "was": "W/ω-like with rings at the tops of the outer strokes",
+    "now": "W with rings at the tops of all three strokes (the middle stroke shorter)",
+    "why": "high zoom shows a ring on the middle stroke too"
+   },
+   {
+    "where": "Kenyon 588 pos 4",
+    "field": "form",
+    "was": "Ζ/ʒ with a looped hook at the top left and a curl at the foot",
+    "now": "Z with a ring at the left end of the top bar; the diagonal ends in a small closed loop resting on the long bottom bar",
+    "why": "the top-left is a ring, not a looped hook"
+   },
+   {
+    "where": "Kenyon 588 pos 6",
+    "field": "form",
+    "was": "Ζ with a ring at the upper left end and a ring at the lower right end",
+    "now": "Z with a ring at the upper left end (a small tick above it) and a ring at the lower right end",
+    "why": "tick above the ring added"
+   },
+   {
+    "where": "Kenyon 587 note",
+    "field": "note",
+    "was": "\"□□\" in l. 587 is the abbreviation for ὀνόματα (Kenyon's Index of Symbols, p. 251) and \"⍏\" in l. 590 is δεῖνα - not charaktêres. Kenyon's introduction (p. 84) says the recto ends \"with a diagram of a serpent with his tail in his own mouth, enclosing magical signs and words\"; that diagram was not located in the printed text examined.",
+    "now": "\"□□\" in l. 587 is the abbreviation for ὀνόματα and \"⍏\" in l. 590 is δεῖνα - Kenyon's Index of Symbols (p. 251) cites p. 103 for both - not charaktêres. Kenyon's introduction (p. 84) says the recto \"concludes with a diagram of a serpent with his tail in his own mouth, enclosing magical signs and words\"; that diagram was not located in the printed text examined.",
+    "why": "index entries checked on leaf n278: ὀνόματα 102-104, δεῖνα 103-108"
+   },
+   {
+    "where": "Kenyon 919 table",
+    "field": "table",
+    "was": "PGM VII = P. Lond. 121, ll. 919-930 (Kenyon p. 113): the charm on an \"Isiac\" leaf (λεπίδα Ἰσιακήν) engraved with a bronze stylus and worn (ll. 919-925), and the start of a subjection charm on lead (ll. 926-930) (paraphrase mine). Signs at l. 924, after \"εἰσὶν δὲ οἱ χαρακτῆρες\".",
+    "now": "PGM VII = P. Lond. 121, ll. 920-930 (Kenyon p. 113): the charm on an \"Isiac\" leaf (λεπίδα Ἰσιακήν) engraved with a bronze stylus and worn, and the start of a subjection charm on lead (ll. 926-930) (paraphrase mine). Signs at l. 924, after \"εἰσὶν δὲ οἱ χαρακτῆρες\". Kenyon's note: \"Lines 919-924. Directions for the construction of a charm or amulet, to be worn on the person. Lines 925-939. Another amulet.\" L. 919 (a row \"ↄↄↄↄ—ↄↄↄ—ↄↄↄ—\") stands just above the crop.",
+    "why": "the crop begins at l. 920 (margin 920 at 'Ν θαυμαστου'); l. 919 is outside it"
+   },
+   {
+    "where": "Kenyon 919-930",
+    "field": "source.printed_locator",
+    "was": "p. 113, Pap. CXXI ll. 919-930"
+   },
+   {
+    "where": "Kenyon 924 pos 1",
+    "field": "form",
+    "was": "hooked-top upright (┐) with a ring at the foot",
+    "now": "Π with a flat top, and a small italic ο set beneath it",
+    "why": "zoom: a Π with an ο below, not a ring-footed ┐"
+   },
+   {
+    "where": "Kenyon 924 pos 7",
+    "field": "form",
+    "was": "asterisk with eight ring-ended arms",
+    "now": "asterisk of eight arms: rings at the ends of the upper-left, left, right, lower-left and lower-right arms; the upper-right arm ends in a wavy hook; the vertical arms are plain",
+    "why": "zoom: five ring-ends, not eight"
+   },
+   {
+    "where": "Kenyon 924 pos 11",
+    "field": "note",
+    "why": "the 'spoon' is Kenyon's ἥλιος sort"
+   },
+   {
+    "where": "Kenyon 919 note",
+    "field": "note",
+    "was": "\"Ⲛ\" (hatched N) in ll. 920 and 925 and \"⊡\" in l. 929 are probably abbreviation symbols; not verified against Kenyon's index.",
+    "now": "\"Ⲛ\" (hatched N) in ll. 920 and 925 is not in Kenyon's Index of Symbols. The boxed sign at the end of l. 927 (not 929) is an abbreviation: the index cites p. 113 under ὀνόματα (⊡, □□).",
+    "why": "the box stands in l. 927; checked against the index"
+   },
+   {
+    "where": "Kenyon 931 pos 5",
+    "field": "form",
+    "was": "reversed E with a hooked top (Ǝ-like)",
+    "now": "reversed E (∃) whose middle bar crosses the upright and projects to the right",
+    "why": "zoom: no hooked top; the middle bar runs through"
+   },
+   {
+    "where": "Kenyon 931 pos 13",
+    "field": "form",
+    "was": "ʒ with a ring/hook at the top",
+    "now": "ʒ/3 whose top stroke runs left as a horizontal ending in a small ring",
+    "why": "refined from zoom"
+   },
+   {
+    "where": "Wessely 1888 eleven table",
+    "field": "table",
+    "was": "PGM IV, the spell headed \"Wunderbarer Liebeszwang\" in Preisendanz's translation (beginning at IV 296): at IV 404-406 the user is told to write on the other side of the plate the heart and the charaktêres \"as below\" (paraphrase mine). These are the ELEVEN charaktêres beside the heart-shaped logos (IV 409-433; Wessely \"f. 6 Verso\"); Wessely prints this page in landscape layout (line numbers 410-430 rotated).",
+    "now": "PGM IV, the spell headed \"Wunderbarer Liebeszwang\" in Preisendanz's translation (beginning at IV 296): at IV 406-408 the user is told to write on the other side of the plate the heart and the charaktêres \"as below\" (paraphrase mine; Preisendanz: \"εἶτα γράψον εἰς ἕτερον μέρος | τοῦ πλατύματος τὴν καρδίαν καὶ τοὺς χα|ρακτῆρας, ὡς ὑπόκειται·\"). These are the ELEVEN charaktêres beside the heart-shaped logos (IV 409-433; Wessely \"f. 6 Verso\"); Wessely prints this page in landscape layout (line numbers 410-430 rotated).",
+    "why": "by Preisendanz's line marks and apparatus (406 '[τὸ] ἕτ.', 408 'ὑποκειται') the instruction is IV 406-408, not 404-406"
+   },
+   {
+    "where": "Preisendanz placeholders table",
+    "field": "table",
+    "was": "PGM IV 403-433 in Preisendanz (p. 86, \"Bl. 6 v.\"): the heart-shaped logos with the placeholders \"zehn Zauberzeichen\" (ten magic signs) and \"elf Zauberzeichen\" (eleven magic signs). Context only - shows that PGM I does not reproduce these signs.",
+    "now": "PGM IV 405-433 in Preisendanz (p. 86, page header \"IV 403—454\", margin \"Bl. 6 v.\"): the heart-shaped logos with the placeholders \"zehn Zauberzeichen\" (ten magic signs, left) and \"elf Zauberzeichen\" (eleven magic signs, right). Context only - shows that PGM I does not reproduce these signs.",
+    "why": "the crop starts in l. 405 ('ἡ δεῖνα μετ\\' ἐμοῦ'); 403-454 is the page header"
+   },
+   {
+    "where": "Wessely 1888 dog table",
+    "field": "table",
+    "was": "PGM IV 1884-1892 (Wessely numbering): the same dog-spell charaktêres in Wessely 1888, for comparison.",
+    "now": "PGM IV 1885-1892 (Wessely numbering): the same dog-spell charaktêres in Wessely 1888, for comparison.",
+    "why": "crop begins at l. 1885 (margin 1885)"
+   },
+   {
+    "where": "Preisendanz 2706 pos 4",
+    "field": "form",
+    "was": "Ϝ-like: upright with a horizontal arm to the right and a short spur to the left at the top",
+    "now": "Ϝ-like: upright whose top bends right, with a horizontal arm to the right just below the top",
+    "why": "high zoom shows no spur to the left"
+   },
+   {
+    "where": "Wessely 1888 2706 table",
+    "field": "table",
+    "was": "PGM IV 2703-2707 (Wessely numbering; \"f. 30 Recto\" at the head of p. 112): the same silver-leaf phylactery, TYPESET by Wessely with Greek and fount sorts - compare the drawn forms in Preisendanz.",
+    "now": "PGM IV 2703-2709 (Wessely numbering; \"f. 30 Recto\" at the head of p. 112; the signs are ll. 2706-2707, the top line 2703 is partly cut by the crop): the same silver-leaf phylactery, TYPESET by Wessely with Greek and fount sorts - compare the drawn forms in Preisendanz.",
+    "why": "crop runs to l. 2709"
+   },
+   {
+    "where": "Wessely 2706 pos 9",
+    "field": "form",
+    "was": "ξ-like",
+    "now": "ξ-like with a small mark above (ž-like)",
+    "why": "zoom shows a mark above"
+   },
+   {
+    "where": "Wessely 2706 pos 15",
+    "field": "form",
+    "was": "T with a small ring above right",
+    "now": "Τ followed closely by a raised small ο carrying a short stroke above it",
+    "why": "two sorts set close together"
+   }
+  ]
+ }
+}

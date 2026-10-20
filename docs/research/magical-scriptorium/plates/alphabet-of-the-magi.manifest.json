@@ -1,0 +1,939 @@
+{
+ "slug": "alphabet-of-the-magi",
+ "plates": [
+  {
+   "file": "alphabet-of-the-magi-1539-bncr-raphiel.png",
+   "table": "Ambrogio 1539: the 22 characters which, he reports, Raziel says the angel Raphiel gave written to Adam (no heading; introduced 'Quarum quidem literarum figurae, & nomina sunt infrascripta, videlicet.'). This is the alphabet Duret 1613 heads 'Characteres de l'Ange Raphael' and Mathers 1889 (Plate XV) heads 'Alphabet of the Magi'. Biblioteca Nazionale Centrale di Roma copy.",
+   "layout": "3 rows read RIGHT to LEFT in Hebrew order, each Latin-letter Hebrew name printed UNDER its sign. Row 1: 8 signs (Aleph at far right ... Hhet at far left). Row 2: 8 signs (Teth ... Ain). Row 3: 6 signs (Phe ... Thau), right-aligned, followed at the LEFT by a printed point and a fleuron, which are space-fillers and carry no label. 22 signs in all; no final forms.",
+   "letters": [
+    {
+     "position": 1,
+     "row": 1,
+     "column_from_right": 1,
+     "label_as_printed": "Aleph.",
+     "value": "א",
+     "label_placement": "below the sign",
+     "form_note": "observer's orientation note only (trace from the image): lambda-like pair of strokes joined at the foot to a right-hand upright with a short head-stroke; free dot to the right at mid-height"
+    },
+    {
+     "position": 2,
+     "row": 1,
+     "column_from_right": 2,
+     "label_as_printed": "Beth.",
+     "value": "ב",
+     "label_placement": "below the sign",
+     "form_note": "observer's orientation note only (trace from the image): small upright zigzag (like a narrow 3 / ʒ) standing on a short horizontal foot"
+    },
+    {
+     "position": 3,
+     "row": 1,
+     "column_from_right": 3,
+     "label_as_printed": "Gimel.",
+     "value": "ג",
+     "label_placement": "below the sign",
+     "form_note": "observer's orientation note only (trace from the image): flat bracket open to the left: heavy long lower bar, short right-hand upright, thinner short upper bar"
+    },
+    {
+     "position": 4,
+     "row": 1,
+     "column_from_right": 4,
+     "label_as_printed": "Daleth.",
+     "value": "ד",
+     "label_placement": "below the sign",
+     "form_note": "observer's orientation note only (trace from the image): single heavy horizontal bar, left end slightly hooked down, right end rising in an upward spur"
+    },
+    {
+     "position": 5,
+     "row": 1,
+     "column_from_right": 5,
+     "label_as_printed": "He.",
+     "value": "ה",
+     "label_placement": "below the sign",
+     "form_note": "observer's orientation note only (trace from the image): T-form: top bar and central stem ending in a small closed ring at the foot"
+    },
+    {
+     "position": 6,
+     "row": 1,
+     "column_from_right": 6,
+     "label_as_printed": "Vau.",
+     "value": "ו",
+     "label_placement": "below the sign",
+     "form_note": "observer's orientation note only (trace from the image): vertical zigzag of angular strokes"
+    },
+    {
+     "position": 7,
+     "row": 1,
+     "column_from_right": 7,
+     "label_as_printed": "Zain.",
+     "value": "ז",
+     "label_placement": "below the sign",
+     "form_note": "observer's orientation note only (trace from the image): b-like looped upright joined to an M-like double arch"
+    },
+    {
+     "position": 8,
+     "row": 1,
+     "column_from_right": 8,
+     "label_as_printed": "Hhet.",
+     "value": "ח",
+     "label_placement": "below the sign",
+     "form_note": "observer's orientation note only (trace from the image): 3-like double bowl whose lower stroke runs out as a long diagonal down-left; free dot to the right (a fainter dot also at the left)",
+     "copy_note": "BNCR: dot clearly at right, a fainter dot at left; no tick (the LOC copy shows a small tick after the right dot)."
+    },
+    {
+     "position": 9,
+     "row": 2,
+     "column_from_right": 1,
+     "label_as_printed": "Teth.",
+     "value": "ט",
+     "label_placement": "below the sign",
+     "form_note": "observer's orientation note only (trace from the image): Π-like frame whose right leg runs below the line and curls down-left into a hook; free dot to the right"
+    },
+    {
+     "position": 10,
+     "row": 2,
+     "column_from_right": 2,
+     "label_as_printed": "Iod.",
+     "value": "י",
+     "label_placement": "below the sign",
+     "form_note": "observer's orientation note only (trace from the image): comb/harp-like: four upright strokes on a curved base that sweeps down-left as a tail; a short dot/dash at lower right"
+    },
+    {
+     "position": 11,
+     "row": 2,
+     "column_from_right": 3,
+     "label_as_printed": "Caph.",
+     "value": "כ",
+     "label_placement": "below the sign",
+     "form_note": "observer's orientation note only (trace from the image): reversed C with a short serif at the upper-left tip"
+    },
+    {
+     "position": 12,
+     "row": 2,
+     "column_from_right": 4,
+     "label_as_printed": "Lamed.",
+     "value": "ל",
+     "label_placement": "below the sign",
+     "form_note": "observer's orientation note only (trace from the image): 3-like form with flat top bar, lower bowl ending in a curl; a colon-like pair of dots inside at the right"
+    },
+    {
+     "position": 13,
+     "row": 2,
+     "column_from_right": 5,
+     "label_as_printed": "Mem.",
+     "value": "מ",
+     "label_placement": "below the sign",
+     "form_note": "observer's orientation note only (trace from the image): small inverted V at left joined to a stroke ending in a spiral at upper right, with a tail sweeping down-left beneath"
+    },
+    {
+     "position": 14,
+     "row": 2,
+     "column_from_right": 6,
+     "label_as_printed": "Nun.",
+     "value": "נ",
+     "label_placement": "below the sign",
+     "form_note": "observer's orientation note only (trace from the image): right-angled bracket (open left) on a heavy base bar, with an S-like hooked stroke at the top left"
+    },
+    {
+     "position": 15,
+     "row": 2,
+     "column_from_right": 7,
+     "label_as_printed": "Samech.",
+     "value": "ס",
+     "label_placement": "below the sign",
+     "form_note": "observer's orientation note only (trace from the image): U-shaped cup, left arm topped by a leftward bar, right arm hooked; a small curl with a dot inside"
+    },
+    {
+     "position": 16,
+     "row": 2,
+     "column_from_right": 8,
+     "label_as_printed": "Ain.",
+     "value": "ע",
+     "label_placement": "below the sign",
+     "form_note": "observer's orientation note only (trace from the image): Π-like frame: top bar with two legs, the left leg bowed"
+    },
+    {
+     "position": 17,
+     "row": 3,
+     "column_from_right": 1,
+     "label_as_printed": "Phe.",
+     "value": "פ",
+     "label_placement": "below the sign",
+     "form_note": "observer's orientation note only (trace from the image): Γ-like top (heavy bar and left stem) with a small 3-like stroke hanging under the right end of the bar, ending in a closed ring below the line"
+    },
+    {
+     "position": 18,
+     "row": 3,
+     "column_from_right": 2,
+     "label_as_printed": "Zadai.",
+     "value": "צ",
+     "label_placement": "below the sign",
+     "form_note": "observer's orientation note only (trace from the image): ω/W-like form: short Z-like stroke at upper left joined to a U whose right arm rises tall"
+    },
+    {
+     "position": 19,
+     "row": 3,
+     "column_from_right": 3,
+     "label_as_printed": "Coph.",
+     "value": "ק",
+     "label_placement": "below the sign",
+     "form_note": "observer's orientation note only (trace from the image): top bar running into a bowl at the right (like a reversed P), with a small cross-stroked stem below the middle"
+    },
+    {
+     "position": 20,
+     "row": 3,
+     "column_from_right": 4,
+     "label_as_printed": "Res.",
+     "value": "ר",
+     "label_placement": "below the sign",
+     "form_note": "observer's orientation note only (trace from the image): U-shaped bowl with a small squared hook turned inward from the top of the left arm"
+    },
+    {
+     "position": 21,
+     "row": 3,
+     "column_from_right": 5,
+     "label_as_printed": "Sin.",
+     "value": "ש",
+     "label_placement": "below the sign",
+     "form_note": "observer's orientation note only (trace from the image): U-shaped bowl with a wavy upright stroke standing inside from the base to above the rim"
+    },
+    {
+     "position": 22,
+     "row": 3,
+     "column_from_right": 6,
+     "label_as_printed": "Thau.",
+     "value": "ת",
+     "label_placement": "below the sign",
+     "form_note": "observer's orientation note only (trace from the image): I-beam/T: heavy top bar, stem and foot, with a small open box attached to the right of the stem under the top bar"
+    }
+   ],
+   "source": {
+    "work": "Introductio in Chaldaicam linguam, Syriacam, atque Armenicam, & decem alias linguas. Characterum differentium alphabeta, circiter quadraginta, & eorundem inuicem conformatio. Mystica et cabalistica quamplurima scitu digna. Et descriptio ac simulachrum Phagoti Afranij (title as given by archive.org and LOC); the alphabets stand in the appendix whose running heads read 'APPENDIX MVLTARVM' (versos) / 'DIVERSARVMQ. LITERARVM.' (rectos)",
+    "author": "Teseo Ambrogio degli Albonesi (Theseus Ambrosius), 1469-1540 (LOC heading 'Ambrogio, Teseo, 1469-1540')",
+    "edition": "First edition. LOC collation: 215, [1] leaves (final leaf blank); signatures a-z4 A-2H4; errata on leaf 215.",
+    "date": "1539; this copy's colophon (archive.org n430) reads 'Anno à Virginis Partu. 1539. Kal. Martij.' (= 1 March 1539), i.e. the March issue",
+    "place": "Pavia ('Excudebat Papiae', colophon)",
+    "printer": "Giovanni Maria Simonetta of Cremona ('Ioan. Maria Simoneta Cremonen.'), 'In Canonica Sancti Petri in Caelo Aureo. Sumptibus & Typis, Autoris libri' (colophon as read on the scan)",
+    "copy": "Biblioteca Nazionale Centrale di Roma (archive.org contributor: 'National Central Library of Rome'). Shelfmark NOT confirmed: the front pastedown (n1) carries a yellow 'Biblioteca Nazionale' label reading '6 | 11 K | 5' and the pencil mark '6-1.d.14'; a flyleaf (n3) has '6.-1.d.48' struck through. Not checked against the BNCR catalogue.",
+    "repository": "Internet Archive (Google Books digitisation, uploaded by the BUB tool; collection europeanlibraries)",
+    "identifier": "bub_gb_yUkKq_QnrnwC (Google Books yUkKq_QnrnwC; ark:/13960/t3vt4r58c)",
+    "image_index": "n409 (0-based BookReader index; scandata leafNum 409; file bub_gb_yUkKq_QnrnwC_0409.jp2). Preceding page fol. 202v = n408; fol. 202r = n407.",
+    "printed_locator": "fol. 203r (headline 'DIVERSARVMQ. LITERARVM. 203'), the upper of the two tables on the page; by count sig. 2E3r (fol. 202r is signed 'Ee ii', checked on n407; LOC collation a-z4 A-2H4); no signature is printed on 203r. The introducing sentence begins near the foot of fol. 202v ('In secundo quippe tractatu ... à Camaliele fuisse'); the 'inuentas.' printed alone at the foot of 202v is the catchword, and the word itself opens fol. 203r ('inuentas. Angelũ Raphiel ...'). Wikipedia's 'pp. 202f.' therefore = fols. 202v-203r.",
+    "page_url": "https://archive.org/details/bub_gb_yUkKq_QnrnwC/page/n409/mode/1up",
+    "image_url": "https://archive.org/download/bub_gb_yUkKq_QnrnwC/bub_gb_yUkKq_QnrnwC_jp2.zip/bub_gb_yUkKq_QnrnwC_jp2%2Fbub_gb_yUkKq_QnrnwC_0409.jp2 (jp2 master, 1880x2500; crop geometry 1440x650+220+474, re-cut by the checker). The page/n409.jpg derivative (https://archive.org/download/bub_gb_yUkKq_QnrnwC/page/n409.jpg, same size) gives the same region; the IIIF image server (https://iiif.archive.org/iiif/bub_gb_yUkKq_QnrnwC$409/...) still answered HTTP 504 on a region request at check time.",
+    "rights": "archive.org licenseurl: http://creativecommons.org/publicdomain/mark/1.0/ (Creative Commons Public Domain Mark 1.0). The page image carries a 'Digitized by Google' watermark (outside the crop)."
+   },
+   "crop_note": "The bottom edge now takes in the tops of the ascenders of the next text line ('¶Posuit autem ibidem Raziel ...'): the descender of the 'p' in 'Coph.' reaches below the top of that line, so the label row cannot be shown whole without them. They are text, not part of the table."
+  },
+  {
+   "file": "alphabet-of-the-magi-1539-loc-raphiel.png",
+   "table": "Same table, same edition: Library of Congress copy (second impression witness).",
+   "layout": "As in the BNCR copy: 3 rows read right to left, labels under the signs, point and fleuron at the left of row 3.",
+   "letters": [
+    {
+     "position": 1,
+     "row": 1,
+     "column_from_right": 1,
+     "label_as_printed": "Aleph.",
+     "value": "א",
+     "label_placement": "below the sign",
+     "form_note": "observer's orientation note only (trace from the image): lambda-like pair of strokes joined at the foot to a right-hand upright with a short head-stroke; free dot to the right at mid-height"
+    },
+    {
+     "position": 2,
+     "row": 1,
+     "column_from_right": 2,
+     "label_as_printed": "Beth.",
+     "value": "ב",
+     "label_placement": "below the sign",
+     "form_note": "observer's orientation note only (trace from the image): small upright zigzag (like a narrow 3 / ʒ) standing on a short horizontal foot"
+    },
+    {
+     "position": 3,
+     "row": 1,
+     "column_from_right": 3,
+     "label_as_printed": "Gimel.",
+     "value": "ג",
+     "label_placement": "below the sign",
+     "form_note": "observer's orientation note only (trace from the image): flat bracket open to the left: heavy long lower bar, short right-hand upright, thinner short upper bar"
+    },
+    {
+     "position": 4,
+     "row": 1,
+     "column_from_right": 4,
+     "label_as_printed": "Daleth.",
+     "value": "ד",
+     "label_placement": "below the sign",
+     "form_note": "observer's orientation note only (trace from the image): single heavy horizontal bar, left end slightly hooked down, right end rising in an upward spur"
+    },
+    {
+     "position": 5,
+     "row": 1,
+     "column_from_right": 5,
+     "label_as_printed": "He.",
+     "value": "ה",
+     "label_placement": "below the sign",
+     "form_note": "observer's orientation note only (trace from the image): T-form: top bar and central stem ending in a small closed ring at the foot"
+    },
+    {
+     "position": 6,
+     "row": 1,
+     "column_from_right": 6,
+     "label_as_printed": "Vau.",
+     "value": "ו",
+     "label_placement": "below the sign",
+     "form_note": "observer's orientation note only (trace from the image): vertical zigzag of angular strokes"
+    },
+    {
+     "position": 7,
+     "row": 1,
+     "column_from_right": 7,
+     "label_as_printed": "Zain.",
+     "value": "ז",
+     "label_placement": "below the sign",
+     "form_note": "observer's orientation note only (trace from the image): b-like looped upright joined to an M-like double arch"
+    },
+    {
+     "position": 8,
+     "row": 1,
+     "column_from_right": 8,
+     "label_as_printed": "Hhet.",
+     "value": "ח",
+     "label_placement": "below the sign",
+     "form_note": "observer's orientation note only (trace from the image): 3-like double bowl whose lower stroke runs out as a long diagonal down-left; free dot to the right (a fainter dot also at the left)",
+     "copy_note": "LOC: dots at both left and right of the sign plus a small slanting tick after the right dot (not in BNCR; probably an inking/type mark, not part of the letter)."
+    },
+    {
+     "position": 9,
+     "row": 2,
+     "column_from_right": 1,
+     "label_as_printed": "Teth.",
+     "value": "ט",
+     "label_placement": "below the sign",
+     "form_note": "observer's orientation note only (trace from the image): Π-like frame whose right leg runs below the line and curls down-left into a hook; free dot to the right"
+    },
+    {
+     "position": 10,
+     "row": 2,
+     "column_from_right": 2,
+     "label_as_printed": "Iod.",
+     "value": "י",
+     "label_placement": "below the sign",
+     "form_note": "observer's orientation note only (trace from the image): comb/harp-like: four upright strokes on a curved base that sweeps down-left as a tail; a short dot/dash at lower right"
+    },
+    {
+     "position": 11,
+     "row": 2,
+     "column_from_right": 3,
+     "label_as_printed": "Caph.",
+     "value": "כ",
+     "label_placement": "below the sign",
+     "form_note": "observer's orientation note only (trace from the image): reversed C with a short serif at the upper-left tip"
+    },
+    {
+     "position": 12,
+     "row": 2,
+     "column_from_right": 4,
+     "label_as_printed": "Lamed.",
+     "value": "ל",
+     "label_placement": "below the sign",
+     "form_note": "observer's orientation note only (trace from the image): 3-like form with flat top bar, lower bowl ending in a curl; a colon-like pair of dots inside at the right"
+    },
+    {
+     "position": 13,
+     "row": 2,
+     "column_from_right": 5,
+     "label_as_printed": "Mem.",
+     "value": "מ",
+     "label_placement": "below the sign",
+     "form_note": "observer's orientation note only (trace from the image): small inverted V at left joined to a stroke ending in a spiral at upper right, with a tail sweeping down-left beneath"
+    },
+    {
+     "position": 14,
+     "row": 2,
+     "column_from_right": 6,
+     "label_as_printed": "Nun.",
+     "value": "נ",
+     "label_placement": "below the sign",
+     "form_note": "observer's orientation note only (trace from the image): right-angled bracket (open left) on a heavy base bar, with an S-like hooked stroke at the top left"
+    },
+    {
+     "position": 15,
+     "row": 2,
+     "column_from_right": 7,
+     "label_as_printed": "Samech.",
+     "value": "ס",
+     "label_placement": "below the sign",
+     "form_note": "observer's orientation note only (trace from the image): U-shaped cup, left arm topped by a leftward bar, right arm hooked; a small curl with a dot inside"
+    },
+    {
+     "position": 16,
+     "row": 2,
+     "column_from_right": 8,
+     "label_as_printed": "Ain.",
+     "value": "ע",
+     "label_placement": "below the sign",
+     "form_note": "observer's orientation note only (trace from the image): Π-like frame: top bar with two legs, the left leg bowed"
+    },
+    {
+     "position": 17,
+     "row": 3,
+     "column_from_right": 1,
+     "label_as_printed": "Phe.",
+     "value": "פ",
+     "label_placement": "below the sign",
+     "form_note": "observer's orientation note only (trace from the image): Γ-like top (heavy bar and left stem) with a small 3-like stroke hanging under the right end of the bar, ending in a closed ring below the line"
+    },
+    {
+     "position": 18,
+     "row": 3,
+     "column_from_right": 2,
+     "label_as_printed": "Zadai.",
+     "value": "צ",
+     "label_placement": "below the sign",
+     "form_note": "observer's orientation note only (trace from the image): ω/W-like form: short Z-like stroke at upper left joined to a U whose right arm rises tall"
+    },
+    {
+     "position": 19,
+     "row": 3,
+     "column_from_right": 3,
+     "label_as_printed": "Coph.",
+     "value": "ק",
+     "label_placement": "below the sign",
+     "form_note": "observer's orientation note only (trace from the image): top bar running into a bowl at the right (like a reversed P), with a small cross-stroked stem below the middle"
+    },
+    {
+     "position": 20,
+     "row": 3,
+     "column_from_right": 4,
+     "label_as_printed": "Res.",
+     "value": "ר",
+     "label_placement": "below the sign",
+     "form_note": "observer's orientation note only (trace from the image): U-shaped bowl with a small squared hook turned inward from the top of the left arm"
+    },
+    {
+     "position": 21,
+     "row": 3,
+     "column_from_right": 5,
+     "label_as_printed": "Sin.",
+     "value": "ש",
+     "label_placement": "below the sign",
+     "form_note": "observer's orientation note only (trace from the image): U-shaped bowl with a wavy upright stroke standing inside from the base to above the rim"
+    },
+    {
+     "position": 22,
+     "row": 3,
+     "column_from_right": 6,
+     "label_as_printed": "Thau.",
+     "value": "ת",
+     "label_placement": "below the sign",
+     "form_note": "observer's orientation note only (trace from the image): I-beam/T: heavy top bar, stem and foot, with a small open box attached to the right of the stem under the top bar"
+    }
+   ],
+   "source": {
+    "work": "Introductio in Chaldaicam linguam, Syriacam, atque Armenicam, & decem alias linguas. Characterum differentium alphabeta, circiter quadraginta, & eorundem inuicem conformatio. Mystica et cabalistica quamplurima scitu digna. Et descriptio ac simulachrum Phagoti Afranij (title as given by archive.org and LOC); the alphabets stand in the appendix whose running heads read 'APPENDIX MVLTARVM' (versos) / 'DIVERSARVMQ. LITERARVM.' (rectos)",
+    "author": "Teseo Ambrogio degli Albonesi (Theseus Ambrosius), 1469-1540 (LOC heading 'Ambrogio, Teseo, 1469-1540')",
+    "edition": "First edition (same as above). LOC notes: title page in red and black; leaf a4v and gathering c in red and black; LC copy has duplicate copies of gathering P (leaves 149-152).",
+    "date": "1539; LOC transcribes the colophon '... anno à virginis partu 1539, Kal. Martij.' (March issue, as the BNCR copy)",
+    "place": "Pavia",
+    "printer": "Giovanni Maria Simonetta ('Excudebat Papiae Ioan. Maria Simoneta Cremonen. in canonica Sancti Petri in caelo aureo, sumptibus & typis autoris libri', LOC imprint from colophon)",
+    "copy": "Library of Congress, Music Division, call number PJ3021 .A6 (LOC note: armorial stamp 'Bib. Com. Ravenna' on recto of leaf 2). The record also lists Microfilm Music 5000 Item A-030, Reel 6 (1982); the digital images are grayscale, and whether they were made from that microfilm was not established.",
+    "repository": "Library of Congress (Books About Music Before 1800 collection; resource muspre1800-100282)",
+    "identifier": "LCCN 09016522",
+    "image_index": "0210 of 224 (two-page spread fol. 202v | fol. 203r; table on the right-hand page)",
+    "printed_locator": "fol. 203r (headline 'DIVERSARVMQ. LITERARVM. 203'), the upper of the two tables on the page; by count sig. 2E3r (fol. 202r is signed 'Ee ii', checked on n407; LOC collation a-z4 A-2H4); no signature is printed on 203r. The introducing sentence begins near the foot of fol. 202v ('In secundo quippe tractatu ... à Camaliele fuisse'); the 'inuentas.' printed alone at the foot of 202v is the catchword, and the word itself opens fol. 203r ('inuentas. Angelũ Raphiel ...'). Wikipedia's 'pp. 202f.' therefore = fols. 202v-203r.",
+    "page_url": "https://www.loc.gov/resource/music.muspre1800-100282/?sp=210",
+    "image_url": "https://tile.loc.gov/storage-services/public/music/muspre1800-100282/0210.jp2 (3790x2543 grayscale; crop geometry 1300x562+2000+544, re-cut by the checker). IIIF: https://tile.loc.gov/image-services/iiif/public:music:muspre1800-100282:0210/full/pct:100/0/default.jpg",
+    "rights": "LOC item rights: 'The contents of the Library of Congress Books About Music Before 1800 Collection are in the public domain and are free to use or reuse. Credit Line: Library of Congress, Music Division.'",
+    "page_url_note": "The HTML viewer still returns HTTP 403 to this environment, but the same URL with &fo=json returned 200 and gives segment id 'http://www.loc.gov/resource/music.muspre1800-100282/?sp=210' with page file 0210.jp2 (segment_count 224). Item record: https://www.loc.gov/item/09016522/."
+   },
+   "crop_note": "The bottom two rows touch the very tops of the next text line ('¶Posuit ...'); they are text, not part of the table."
+  },
+  {
+   "file": "alphabet-of-the-magi-1613-duret-ottawa-raphael.png",
+   "table": "LATER WITNESS (not the first printing): Duret 1613, 'Characteres de l'Ange Raphael.' (heading as printed), framed table, with the heading included in the crop.",
+   "layout": "Heading above a double-ruled frame; 3 rows read right to left; italic labels under the signs. Row 3 has 6 signs and NO point or fleuron. Re-cut, not a reprint of Ambrogio's block: forms are close but differ in detail (see letters).",
+   "letters": [
+    {
+     "position": 1,
+     "row": 1,
+     "column_from_right": 1,
+     "label_as_printed": "Aleph.",
+     "value": "א",
+     "label_placement": "below the sign (italic)"
+    },
+    {
+     "position": 2,
+     "row": 1,
+     "column_from_right": 2,
+     "label_as_printed": "Beth.",
+     "value": "ב",
+     "label_placement": "below the sign (italic)",
+     "copy_note": "Microfiche: no separate point is distinguishable after this label (the swash or final stroke runs into the next label); the point is supplied by analogy with the other labels. Letters are certain."
+    },
+    {
+     "position": 3,
+     "row": 1,
+     "column_from_right": 3,
+     "label_as_printed": "Gimel.",
+     "value": "ג",
+     "label_placement": "below the sign (italic)"
+    },
+    {
+     "position": 4,
+     "row": 1,
+     "column_from_right": 4,
+     "label_as_printed": "Daleth.",
+     "value": "ד",
+     "label_placement": "below the sign (italic)",
+     "copy_note": "Microfiche: no separate point is distinguishable after this label (the swash or final stroke runs into the next label); the point is supplied by analogy with the other labels. Letters are certain."
+    },
+    {
+     "position": 5,
+     "row": 1,
+     "column_from_right": 5,
+     "label_as_printed": "He.",
+     "value": "ה",
+     "label_placement": "below the sign (italic)"
+    },
+    {
+     "position": 6,
+     "row": 1,
+     "column_from_right": 6,
+     "label_as_printed": "Vau.",
+     "value": "ו",
+     "label_placement": "below the sign (italic)",
+     "compared_with_1539": "zigzag ends in a curled tail (no curl in 1539)",
+     "copy_note": "Microfiche: no separate point is distinguishable after this label (the swash or final stroke runs into the next label); the point is supplied by analogy with the other labels. Letters are certain."
+    },
+    {
+     "position": 7,
+     "row": 1,
+     "column_from_right": 7,
+     "label_as_printed": "Zain.",
+     "value": "ז",
+     "label_placement": "below the sign (italic)",
+     "compared_with_1539": "left loop and M-part drawn with a descending curled tail at left"
+    },
+    {
+     "position": 8,
+     "row": 1,
+     "column_from_right": 8,
+     "label_as_printed": "Hheth.",
+     "value": "ח",
+     "label_placement": "below the sign (italic)",
+     "copy_note": "Microfiche: no separate point is distinguishable after this label (the swash or final stroke runs into the next label); the point is supplied by analogy with the other labels. Letters are certain."
+    },
+    {
+     "position": 9,
+     "row": 2,
+     "column_from_right": 1,
+     "label_as_printed": "Teth.",
+     "value": "ט",
+     "label_placement": "below the sign (italic)"
+    },
+    {
+     "position": 10,
+     "row": 2,
+     "column_from_right": 2,
+     "label_as_printed": "Iod.",
+     "value": "י",
+     "label_placement": "below the sign (italic)",
+     "compared_with_1539": "VARIANT: a small reversed-C hook with a tail and a following dot (close to the Caph form), not the comb-like sign of 1539",
+     "copy_note": "Microfiche: the point after 'Iod' shows as a colon-like double point (probably a point plus a fiche speck); recorded as a point."
+    },
+    {
+     "position": 11,
+     "row": 2,
+     "column_from_right": 3,
+     "label_as_printed": "Caph.",
+     "value": "כ",
+     "label_placement": "below the sign (italic)",
+     "copy_note": "Microfiche: no separate point is distinguishable after this label (the swash or final stroke runs into the next label); the point is supplied by analogy with the other labels. Letters are certain."
+    },
+    {
+     "position": 12,
+     "row": 2,
+     "column_from_right": 4,
+     "label_as_printed": "Lamed.",
+     "value": "ל",
+     "label_placement": "below the sign (italic)"
+    },
+    {
+     "position": 13,
+     "row": 2,
+     "column_from_right": 5,
+     "label_as_printed": "Mem.",
+     "value": "מ",
+     "label_placement": "below the sign (italic)"
+    },
+    {
+     "position": 14,
+     "row": 2,
+     "column_from_right": 6,
+     "label_as_printed": "Nun.",
+     "value": "נ",
+     "label_placement": "below the sign (italic)"
+    },
+    {
+     "position": 15,
+     "row": 2,
+     "column_from_right": 7,
+     "label_as_printed": "Samech.",
+     "value": "ס",
+     "label_placement": "below the sign (italic)"
+    },
+    {
+     "position": 16,
+     "row": 2,
+     "column_from_right": 8,
+     "label_as_printed": "Ain.",
+     "value": "ע",
+     "label_placement": "below the sign (italic)"
+    },
+    {
+     "position": 17,
+     "row": 3,
+     "column_from_right": 1,
+     "label_as_printed": "Phe.",
+     "value": "פ",
+     "label_placement": "below the sign (italic)"
+    },
+    {
+     "position": 18,
+     "row": 3,
+     "column_from_right": 2,
+     "label_as_printed": "Zadaj.",
+     "value": "צ",
+     "label_placement": "below the sign (italic)"
+    },
+    {
+     "position": 19,
+     "row": 3,
+     "column_from_right": 3,
+     "label_as_printed": "Coph.",
+     "value": "ק",
+     "label_placement": "below the sign (italic)"
+    },
+    {
+     "position": 20,
+     "row": 3,
+     "column_from_right": 4,
+     "label_as_printed": "Res.",
+     "value": "ר",
+     "label_placement": "below the sign (italic)"
+    },
+    {
+     "position": 21,
+     "row": 3,
+     "column_from_right": 5,
+     "label_as_printed": "Sin.",
+     "value": "ש",
+     "label_placement": "below the sign (italic)",
+     "compared_with_1539": "VARIANT: an S-shaped stroke inside the U-bowl, where 1539 has a wavy upright"
+    },
+    {
+     "position": 22,
+     "row": 3,
+     "column_from_right": 6,
+     "label_as_printed": "Thau.",
+     "value": "ת",
+     "label_placement": "below the sign (italic)"
+    }
+   ],
+   "source": {
+    "work": "Thresor de l'histoire des langues de cest univers",
+    "author": "Claude Duret (d. 1611; published posthumously)",
+    "edition": "1613 edition (title-page imprint as read on the scan, n1: 'Imprimé à Cologny, par Matth. Berjon, Pour la société Caldoriene. CIƆ IƆC XIII. Avec Privilege du Roy Tres-Chrestien.')",
+    "date": "1613",
+    "place": "Cologny",
+    "printer": "Matthieu Berjon, for the 'société Caldoriene'",
+    "copy": "University of Ottawa microfiche (archive.org contributor/sponsor; archive.org call_number b1886963). The filmed copy is not an Ottawa book: its title page (n1) bears a round 'BIBLIOTHECAE REGIAE' stamp with fleurs-de-lis (the French royal library) and the manuscript marks 'Z. 1233' and 'X 10 A.'; the present holding library and shelfmark were not confirmed. The fiche target (n0) reads 'Les microfiches ci-jointes présentent certains défauts ou lacunes inhérents au document original ... Graphisme défectueux / Document original de trés mauvaise qualité' (sic, 'trés').",
+    "repository": "Internet Archive",
+    "identifier": "fre_b1886963",
+    "image_index": "n153 (0-based BookReader index = scandata leafNum 153; archive.org page-number file gives pageNumber '117' for leaf 153)",
+    "printed_locator": "p. 117 (headline 'Langues de cest Vniuers. 117'; signature 'P 3' at the foot), in chap. X, headed 'De l'origine de la langue Hebraique & de ses Characteres. CHAP. X.' on p. 115 (n151, signed 'P 2'). Running heads: versos 'Histoire de l'Origine des', rectos 'Langues de cest Vniuers.' The table follows the sentence ending '... selon que nous le deduisons amplement ci apres au rapport de Theseus Ambrosius au lieu ci apres allegué.' and is captioned 'Characteres de l'Ange Raphael.'",
+    "page_url": "https://archive.org/details/fre_b1886963/page/n153/mode/1up",
+    "image_url": "https://archive.org/download/fre_b1886963/page/n153.jpg (3322x3992 grayscale; crop geometry 1940x1680+560+960)",
+    "rights": "archive.org gives no rights or license statement for this item (fields rights/licenseurl empty). The 1613 work is out of copyright by age; the repository states nothing about the reproduction."
+   }
+  },
+  {
+   "file": "alphabet-of-the-magi-1889-mathers-wellcome-plate-xv.png",
+   "table": "LATER WITNESS (source of the English name): Mathers, Key of Solomon, Plate XV 'The Mystical Alphabets' — crop of the first two column groups only: 'Hebrew Alphabet' and 'Alphabet of the Magi' (headers included).",
+   "layout": "The Magi column has two sub-columns: Aleph-Nun (14 rows) on the left, Samekh-Tau (8 rows) on the right, each row aligned with the Hebrew square letter in the 'Hebrew Alphabet' column (whose second sub-column continues with five finals that have no Magi form). Letter names stand in the 'Names of the Letters' column at the far right of the plate (in the page view, not in this crop).",
+   "letters": [
+    {
+     "position": 1,
+     "subcolumn": 1,
+     "row": 1,
+     "label_as_printed": "א",
+     "name_as_printed_in_names_column": "Aleph",
+     "value": "א",
+     "label_placement": "Hebrew square letter in the 'Hebrew Alphabet' column of the same row (left of the crop); name in the 'Names of the Letters' column at the far right of the plate (outside this crop; see page view)"
+    },
+    {
+     "position": 2,
+     "subcolumn": 1,
+     "row": 2,
+     "label_as_printed": "ב",
+     "name_as_printed_in_names_column": "Beth",
+     "value": "ב",
+     "label_placement": "Hebrew square letter in the 'Hebrew Alphabet' column of the same row (left of the crop); name in the 'Names of the Letters' column at the far right of the plate (outside this crop; see page view)"
+    },
+    {
+     "position": 3,
+     "subcolumn": 1,
+     "row": 3,
+     "label_as_printed": "ג",
+     "name_as_printed_in_names_column": "Gimel",
+     "value": "ג",
+     "label_placement": "Hebrew square letter in the 'Hebrew Alphabet' column of the same row (left of the crop); name in the 'Names of the Letters' column at the far right of the plate (outside this crop; see page view)",
+     "compared_with_1539": "lower bar ends at the left in an added downward foot"
+    },
+    {
+     "position": 4,
+     "subcolumn": 1,
+     "row": 4,
+     "label_as_printed": "ד",
+     "name_as_printed_in_names_column": "Daleth",
+     "value": "ד",
+     "label_placement": "Hebrew square letter in the 'Hebrew Alphabet' column of the same row (left of the crop); name in the 'Names of the Letters' column at the far right of the plate (outside this crop; see page view)",
+     "compared_with_1539": "drawn as a sideways I: bar with short upright serifs at both ends (1539: left end hooked down, right end an upward spur)"
+    },
+    {
+     "position": 5,
+     "subcolumn": 1,
+     "row": 5,
+     "label_as_printed": "ה",
+     "name_as_printed_in_names_column": "He'",
+     "value": "ה",
+     "label_placement": "Hebrew square letter in the 'Hebrew Alphabet' column of the same row (left of the crop); name in the 'Names of the Letters' column at the far right of the plate (outside this crop; see page view)",
+     "name_note": "The mark after the 'e' is an acute-like stroke set above and to the right of the letter (i.e. 'Hé' / 'Pé', Mathers' spelling in the letterpress, e.g. p. 114 'the Letter Hé'); the apostrophe transcribes that stroke."
+    },
+    {
+     "position": 6,
+     "subcolumn": 1,
+     "row": 6,
+     "label_as_printed": "ו",
+     "name_as_printed_in_names_column": "Vau",
+     "value": "ו",
+     "label_placement": "Hebrew square letter in the 'Hebrew Alphabet' column of the same row (left of the crop); name in the 'Names of the Letters' column at the far right of the plate (outside this crop; see page view)"
+    },
+    {
+     "position": 7,
+     "subcolumn": 1,
+     "row": 7,
+     "label_as_printed": "ז",
+     "name_as_printed_in_names_column": "Zaïn",
+     "value": "ז",
+     "label_placement": "Hebrew square letter in the 'Hebrew Alphabet' column of the same row (left of the crop); name in the 'Names of the Letters' column at the far right of the plate (outside this crop; see page view)"
+    },
+    {
+     "position": 8,
+     "subcolumn": 1,
+     "row": 8,
+     "label_as_printed": "ח",
+     "name_as_printed_in_names_column": "Cheth",
+     "value": "ח",
+     "label_placement": "Hebrew square letter in the 'Hebrew Alphabet' column of the same row (left of the crop); name in the 'Names of the Letters' column at the far right of the plate (outside this crop; see page view)"
+    },
+    {
+     "position": 9,
+     "subcolumn": 1,
+     "row": 9,
+     "label_as_printed": "ט",
+     "name_as_printed_in_names_column": "Teth",
+     "value": "ט",
+     "label_placement": "Hebrew square letter in the 'Hebrew Alphabet' column of the same row (left of the crop); name in the 'Names of the Letters' column at the far right of the plate (outside this crop; see page view)",
+     "compared_with_1539": "two dots after the sign (one in 1539)"
+    },
+    {
+     "position": 10,
+     "subcolumn": 1,
+     "row": 10,
+     "label_as_printed": "י",
+     "name_as_printed_in_names_column": "Yod",
+     "value": "י",
+     "label_placement": "Hebrew square letter in the 'Hebrew Alphabet' column of the same row (left of the crop); name in the 'Names of the Letters' column at the far right of the plate (outside this crop; see page view)",
+     "compared_with_1539": "VARIANT: reversed-C hook with a tail and a dot, as in Duret 1613, not the 1539 comb"
+    },
+    {
+     "position": 11,
+     "subcolumn": 1,
+     "row": 11,
+     "label_as_printed": "כ",
+     "name_as_printed_in_names_column": "Kaph",
+     "value": "כ",
+     "label_placement": "Hebrew square letter in the 'Hebrew Alphabet' column of the same row (left of the crop); name in the 'Names of the Letters' column at the far right of the plate (outside this crop; see page view)"
+    },
+    {
+     "position": 12,
+     "subcolumn": 1,
+     "row": 12,
+     "label_as_printed": "ל",
+     "name_as_printed_in_names_column": "Lamed",
+     "value": "ל",
+     "label_placement": "Hebrew square letter in the 'Hebrew Alphabet' column of the same row (left of the crop); name in the 'Names of the Letters' column at the far right of the plate (outside this crop; see page view)"
+    },
+    {
+     "position": 13,
+     "subcolumn": 1,
+     "row": 13,
+     "label_as_printed": "מ",
+     "name_as_printed_in_names_column": "Mem",
+     "value": "מ",
+     "label_placement": "Hebrew square letter in the 'Hebrew Alphabet' column of the same row (left of the crop); name in the 'Names of the Letters' column at the far right of the plate (outside this crop; see page view)"
+    },
+    {
+     "position": 14,
+     "subcolumn": 1,
+     "row": 14,
+     "label_as_printed": "נ",
+     "name_as_printed_in_names_column": "Nun",
+     "value": "נ",
+     "label_placement": "Hebrew square letter in the 'Hebrew Alphabet' column of the same row (left of the crop); name in the 'Names of the Letters' column at the far right of the plate (outside this crop; see page view)"
+    },
+    {
+     "position": 15,
+     "subcolumn": 2,
+     "row": 1,
+     "label_as_printed": "ס",
+     "name_as_printed_in_names_column": "Samekh",
+     "value": "ס",
+     "label_placement": "Hebrew square letter in the 'Hebrew Alphabet' column of the same row (left of the crop); name in the 'Names of the Letters' column at the far right of the plate (outside this crop; see page view)"
+    },
+    {
+     "position": 16,
+     "subcolumn": 2,
+     "row": 2,
+     "label_as_printed": "ע",
+     "name_as_printed_in_names_column": "Ayin",
+     "value": "ע",
+     "label_placement": "Hebrew square letter in the 'Hebrew Alphabet' column of the same row (left of the crop); name in the 'Names of the Letters' column at the far right of the plate (outside this crop; see page view)"
+    },
+    {
+     "position": 17,
+     "subcolumn": 2,
+     "row": 3,
+     "label_as_printed": "פ",
+     "name_as_printed_in_names_column": "Pe'",
+     "value": "פ",
+     "label_placement": "Hebrew square letter in the 'Hebrew Alphabet' column of the same row (left of the crop); name in the 'Names of the Letters' column at the far right of the plate (outside this crop; see page view)",
+     "name_note": "The mark after the 'e' is an acute-like stroke set above and to the right of the letter (i.e. 'Hé' / 'Pé', Mathers' spelling in the letterpress, e.g. p. 114 'the Letter Hé'); the apostrophe transcribes that stroke."
+    },
+    {
+     "position": 18,
+     "subcolumn": 2,
+     "row": 4,
+     "label_as_printed": "צ",
+     "name_as_printed_in_names_column": "Tzaddi",
+     "value": "צ",
+     "label_placement": "Hebrew square letter in the 'Hebrew Alphabet' column of the same row (left of the crop); name in the 'Names of the Letters' column at the far right of the plate (outside this crop; see page view)"
+    },
+    {
+     "position": 19,
+     "subcolumn": 2,
+     "row": 5,
+     "label_as_printed": "ק",
+     "name_as_printed_in_names_column": "Qoph",
+     "value": "ק",
+     "label_placement": "Hebrew square letter in the 'Hebrew Alphabet' column of the same row (left of the crop); name in the 'Names of the Letters' column at the far right of the plate (outside this crop; see page view)"
+    },
+    {
+     "position": 20,
+     "subcolumn": 2,
+     "row": 6,
+     "label_as_printed": "ר",
+     "name_as_printed_in_names_column": "Resh",
+     "value": "ר",
+     "label_placement": "Hebrew square letter in the 'Hebrew Alphabet' column of the same row (left of the crop); name in the 'Names of the Letters' column at the far right of the plate (outside this crop; see page view)"
+    },
+    {
+     "position": 21,
+     "subcolumn": 2,
+     "row": 7,
+     "label_as_printed": "ש",
+     "name_as_printed_in_names_column": "Schin",
+     "value": "ש",
+     "label_placement": "Hebrew square letter in the 'Hebrew Alphabet' column of the same row (left of the crop); name in the 'Names of the Letters' column at the far right of the plate (outside this crop; see page view)",
+     "compared_with_1539": "VARIANT: S-like stroke inside the U, as in Duret 1613"
+    },
+    {
+     "position": 22,
+     "subcolumn": 2,
+     "row": 8,
+     "label_as_printed": "ת",
+     "name_as_printed_in_names_column": "Tau",
+     "value": "ת",
+     "label_placement": "Hebrew square letter in the 'Hebrew Alphabet' column of the same row (left of the crop); name in the 'Names of the Letters' column at the far right of the plate (outside this crop; see page view)"
+    }
+   ],
+   "source": {
+    "work": "The Key of Solomon the King (Clavicula Salomonis), now first translated and edited from ancient MSS in the British Museum",
+    "author": "S. Liddell MacGregor Mathers (ed., tr.)",
+    "edition": "First edition, limited to 500 numbered copies (Wellcome MARC 500). Wellcome MARC 300 gives 'viii, 114 pages, xv leaves of plates', but this copy also has a p. 115 ('The Qabalistical Invocation of Solomon', ending 'THE END', n156) after p. 114 ('(HERE ENDETH THE FRAGMENT OF THE KEY OF SOLOMON.)'): the record and the copy disagree by that page.",
+    "date": "1889 (title page: 'LONDON / GEORGE REDWAY / YORK STREET COVENT GARDEN / 1889', as read in this copy's OCR text b24884431_djvu.txt and in the Wellcome MARC 260); the preface is signed 'S. LIDDELL MACGREGOR MATHERS. London, October, 1888.' (same OCR text; checked).",
+    "place": "London",
+    "printer": "George Redway (publisher, per Wellcome MARC)",
+    "copy": "Wellcome Collection, London (record b24884431; print record b1542215x; archive.org shelfmark field 'BVA.CA'); Wellcome library stamp on p. 114.",
+    "repository": "Internet Archive (Wellcome Library digitisation)",
+    "identifier": "b24884431 (ark:/13960/t5cc5413t; OCLC 956546658)",
+    "image_index": "n154 (0-based BookReader index; scandata leafNum 155, because leaf 0 is excluded from the access images). n155 is the blank verso of the plate.",
+    "printed_locator": "Plate XV (unpaginated plate leaf). The 'Directions to Binder' leaf (n157) places Plate XV 'At the end of the book'; in this copy it is bound between p. 114 (n153) and p. 115 (n156).",
+    "page_url": "https://archive.org/details/b24884431/page/n154/mode/1up",
+    "image_url": "https://archive.org/download/b24884431/page/n154.jpg (2474x3409; crop geometry 760x3010+45+335)",
+    "rights": "archive.org rights field: 'This work is available under the Creative Commons, Public Domain Mark' (http://creativecommons.org/publicdomain/mark/1.0/); contributor/sponsor Wellcome Library."
+   }
+  }
+ ],
+ "page_views": [
+  "alphabet-of-the-magi-page-1539-bncr-f202v.jpg",
+  "alphabet-of-the-magi-page-1539-bncr-f203r.jpg",
+  "alphabet-of-the-magi-page-1539-loc-f202v-f203r.jpg",
+  "alphabet-of-the-magi-page-1613-duret-ottawa-p117.jpg",
+  "alphabet-of-the-magi-page-1889-mathers-wellcome-plate-xv.jpg"
+ ],
+ "legibility": "1539 BNCR (colour, 1880 px page): every sign and label complete and sharp; faint show-through of the ring-letter alphabets printed on fol. 203v sits behind the signs (grey, distinguishable from the black print). 1539 LOC (grayscale, 3790 px spread): same signs, slightly heavier inking, crisp labels, faint show-through. The two copies agree sign for sign, including the dots, the point and the fleuron, so the table is printed (not added by hand) in both. 1613 Duret: microfiche, high-contrast and specky but every sign and italic label is legible. 1889 Mathers: clean lithographed plate on blue paper; all forms legible.",
+ "problems": [
+  "The archive.org IIIF image server still answered HTTP 504 for n409 at check time; the BNCR crop is now cut directly from the jp2 master (fetched singly from bub_gb_yUkKq_QnrnwC_jp2.zip), so it no longer carries the extra JPEG generation of the page/n409.jpg derivative.",
+  "Free dots belong to several signs (Aleph, Hhet, Teth, Iod at right; Lamed has a colon-like pair; Samech a dot inside). They appear identically in both 1539 copies and should be traced as part of the forms. The point and fleuron at the left of row 3 are space-fillers, not letters.",
+  "LOC copy only: a small slanting tick after the Hhet sign (absent in BNCR); treat as an accidental mark unless a third copy shows it.",
+  "Teth's tail descends into the label line, between 'Iod.' and 'Teth.' — the curl is part of the sign, not of the label.",
+  "BNCR shelfmark not confirmed (labels '6 | 11 K | 5' and pencil '6-1.d.14' on the pastedown).",
+  "Only the March issue ('Kal. Martij') was seen, in both copies; the April issue reported by ADER was not found or compared.",
+  "Checker: both 1539 crops as first cut clipped the label row at the bottom (the descender of the 'p' in 'Coph.' by c. 10 px in both copies; in BNCR also the last c. 3 px of the point after 'Phe.'); re-cut taller (BNCR 1440x638 -> 1440x650, LOC 1300x550 -> 1300x562, same origins), so the strips now include the tops of the next text line.",
+  "Duret 1613: several label points are not visible on the fiche (see copy_note on Hheth, Vau, Daleth, Beth, Caph, Iod)."
+ ],
+ "notes": [
+  "First printing confirmed on the page: Ambrogio, Introductio, Pavia 1539, fol. 203r. Labels as printed, right to left: 'Hhet. Zain. Vau. He. Daleth. Gimel. Beth. Aleph.' / 'Ain. Samech. Nun. Mem. Lamed. Caph. Iod. Teth.' / 'Thau. Sin. Res. Coph. Zadai. Phe.' — exactly 22 signs, no finals, every label in its Hebrew place; nothing is paired with an unexpected letter.",
+  "TEXT AROUND THE TABLE (transcribed from the BNCR scan, fols. 202v-203r; normalised: long s to s, æ to ae ('Adae', 'figurae'), e caudata to e ('preciosis', printed 'pręciosis'), accent dropped in 'sanè'; abbreviations 'Angelũ' and 'atqꝫ' expanded to 'Angelum', 'atque'; the catchword 'inuentas' at the foot of 202v is not repeated): 'In secundo quippe tractatu, in quo de lapidibus preciosis loquitur Raziel, reprobata illorum opinione qui dicunt, viginti duas literas, de quibus ibi loquitur, à Camaliele fuisse inuentas. Angelum Raphiel, in libro qui dicitur liber ignis, illas Adae Protoplasto dedisse scriptas asseuerat, & ob id filios Adam eas recusare non posse. Quarum quidem literarum figurae, & nomina sunt infrascripta, videlicet.' After the table: 'Posuit autem ibidem Raziel, dictarum literarum interpretationem, atque virtutem, alio prorsus quam beatus Hieronymus, & diuerso posuerit modo, de qua sane expositione, nullam omnino faciendam esse curam censeo.' OWN PARAPHRASE (not a published translation): In the second treatise [of the Raziel book], where Raziel speaks of precious stones, he rejects the opinion of those who say that the twenty-two letters he discusses there were invented by Camaliel; he asserts that the angel Raphiel, in the book called the Book of Fire, gave them to Adam the first-made man in writing, so that Adam's sons cannot refuse them. Their shapes and names follow. Raziel also gives an interpretation and power of the letters quite different from St Jerome's, which Ambrogio says need not be heeded. (Whether 'in libro qui dicitur liber ignis' goes with Raziel's assertion or with Raphiel's gift is grammatically open; Duret 1613, p. 117, reads it as a second place where Raziel says this: 'au second traité de ses institutions ... & au liure intitulé du feu'.)",
+  "The source Ambrogio names is the Raziel book among the manuscripts of Antonio de Fantis of Treviso that he says he read and excerpted (fol. 202v: '... memini me vidisse opera, Razielis, Picatricis, Bailum, Mercurij, Petri Apponis, Salomonis, ac interpretis illius Apollonij ...').",
+  "The table that follows on the same page (fol. 203r, lower) is a DIFFERENT alphabet, introduced 'Ex varijs praeterea qui Solomoni attribuuntur libris, & interprete eius Apollonio infrascriptos literarum characteres ... desumpsimus' (labels 'Hheth ... Aleph', 'Ain ... Lamech ... Ioth ... Teth', 'Thau. Sin. Res. Coph. Sade. Phe.'). Do not crop or trace it as the Alphabet of the Magi. The Apollonius connection in Ambrogio belongs to this second table, not to the Raphiel alphabet.",
+  "Identity check: Mathers' 'Alphabet of the Magi' column (Plate XV) gives the same signs in the same Hebrew assignments as Ambrogio's Raphiel table for almost every letter, and Duret 1613 p. 117 gives them under 'Characteres de l'Ange Raphael' citing 'Theseus Ambrosius'. Mathers agrees with Duret, not Ambrogio, at Yod (hooked reversed C with dot) and Shin (S inside the U), so Mathers' plate descends through Duret or a Duret-derived chart, not directly from the 1539 cut.",
+  "Voarchadumia checked: Pantheus, Voarchadumia contra alchimiam, Venice: Giovanni Tacuino, April 1530 (Biblioteca Nazionale Centrale di Firenze, Magl. 1.6.584; archive.org ita-bnc-mag-00001097-001, images n35-n41, fols. 12r-15r) prints four alphabets: the common square Hebrew, the 'Moses on Sinai' characters (square Hebrew forms), the 'transitu fluuii ... Abrae' characters (fol. 14r) and the Enoch alphabet keyed to A-Z (fols. 14v-15r). None is the Raphiel / Magi alphabet. Ambrogio himself (fol. 202r) lists exactly these four from Pantheus. The images there carry 'Copyright © 2011 ProQuest LLC' (Early European Books) and no archive.org license, so no plate was saved from them.",
+  "Use the 1539 BNCR crop as the tracing master (colour, sharp); check every sign against the LOC crop."
+ ],
+ "checked": {
+  "by": "independent checker (re-fetched every source page and the repository metadata on 2026-10-20)",
+  "verified_unchanged": [
+   "All four crops are the named table in the named work: BNCR and LOC fol. 203r under the headline 'DIVERSARVMQ. LITERARVM. 203', upper table, introduced by 'Quarum quidem literarum figurae, & nomina sunt infrascripta, videlicet.'; Duret p. 117 under the caption 'Characteres de l'Ange Raphael.'; Mathers Plate XV 'The Mystical Alphabets', columns 'Hebrew Alphabet' and 'Alphabet of the Magi'.",
+   "Crop geometries reproduce exactly from the stated sources (BNCR from n409, LOC from 0210.jp2 pixel-identical, Duret from n153.jpg pixel-identical, Mathers from n154.jpg pixel-identical); all five page views match their source pages.",
+   "Every printed label, in the printed order, in all four plates (1539: 'Hhet. Zain. Vau. He. Daleth. Gimel. Beth. Aleph.' / 'Ain. Samech. Nun. Mem. Lamed. Caph. Iod. Teth.' / 'Thau. Sin. Res. Coph. Zadai. Phe.'; Duret 'Hheth', 'Zadaj'; Mathers names column Aleph ... Nun, Samekh ... Tau with 'Zaïn', 'Schin', 'Tzaddi', 'Qoph').",
+   "Locators: BNCR n409 = scandata leaf 409 (no non-access leaves), fol. 202r = n407 signed 'Ee ii' with catchword 'dat'; LOC 0210 is file 210 of 224; Duret leaf 153 = p. 117; Mathers p. 114 = n153, plate = n154, blank verso n155, p. 115 = n156, Directions to Binder n157 ('XV ... At the end of the book').",
+   "Colophon (n430) 'Excudebat Papiae. Ioan. Maria Simoneta Cremonen. In Canonica Sancti Petri in Caelo Aureo. Sumptibus & Typis, Autoris libri. Anno à Virginis Partu. 1539. Kal. Martij.'; BNCR pastedown label '6 | 11 K | 5', pencil '6-1.d.14.', flyleaf '6.-1.d.48' struck through; Duret title-page imprint.",
+   "Rights, re-read from the repositories: archive.org bub_gb_yUkKq_QnrnwC licenseurl http://creativecommons.org/publicdomain/mark/1.0/ (no rights field); LOC item rights 'The contents of the Library of Congress Books About Music Before 1800 Collection are in the public domain and are free to use or reuse. Credit Line: Library of Congress, Music Division.'; archive.org fre_b1886963 has no rights or licenseurl field; archive.org b24884431 rights 'This work is available under the Creative Commons, Public Domain Mark' linked to http://creativecommons.org/publicdomain/mark/1.0/."
+  ],
+  "corrected": [
+   "BNCR crop re-cut 1440x638 -> 1440x650 (+220+474): the old bottom edge clipped the descender of the 'p' in 'Coph.' (c. 10 px) and the last c. 3 px of the point after 'Phe.'. Now cut from the jp2 master instead of the page/n409.jpg derivative.",
+   "LOC crop re-cut 1300x550 -> 1300x562 (+2000+544): the old bottom edge clipped the descender of the 'p' in 'Coph.' by c. 10 px.",
+   "1539 printed_locator (both copies): 'inuentas.' at the foot of fol. 202v is the catchword; the sentence on 202v ends '... à Camaliele fuisse' and 'inuentas.' is printed at the head of 203r.",
+   "LOC page_url: replaced the prose-plus-item-URL with the page URL https://www.loc.gov/resource/music.muspre1800-100282/?sp=210, now verified through its JSON form (HTML still 403); note moved to page_url_note.",
+   "Duret printed_locator: 'chapter text on Adam's letters' replaced by the printed chapter, chap. X 'De l'origine de la langue Hebraique & de ses Characteres.' (heading p. 115, sig. P 2).",
+   "Duret copy: the fiche was filmed from a copy bearing a 'BIBLIOTHECAE REGIAE' stamp and the marks 'Z. 1233', 'X 10 A.' (French royal library), not from an Ottawa-owned book; fiche-target quotation corrected to the printed 'trés'.",
+   "Duret letters: copy_note added where the fiche shows no point after the label (Hheth, Vau, Daleth, Beth, Caph) and where it shows a colon-like mark (Iod).",
+   "Mathers: preface date now checked ('London, October, 1888'); collation discrepancy recorded (MARC 'viii, 114 pages' vs p. 115 present in this copy); n154 = scandata leaf 155 explained; shelfmark field 'BVA.CA' added; note on the acute-like stroke in 'He'' and 'Pe''.",
+   "TEXT AROUND THE TABLE note: the normalisations actually made (æ, ę, sanè, atqꝫ) are now declared."
+  ],
+  "originals_kept_at": "/tmp/claude-0/-home-user-3MAGI/681e04fd-d4fb-530c-94a3-2eb5e517d73c/scratchpad/check-magi/orig/"
+ }
+}
