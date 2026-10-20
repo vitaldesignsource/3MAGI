@@ -16,6 +16,26 @@
   RewriteRule ^(assets|media|fonts)/ - [R=404,L]
   # Gated essay bodies are not a route; never hand them to index.html.
   RewriteRule ^tl-essays(/|$) - [R=404,L]
+  # >>> crawler log >>> -----------------------------------------------------
+  # Known crawlers asking for an app route, "/", robots.txt, sitemap.xml or
+  # llms.txt are answered by api/crawl.php, which streams exactly the file
+  # these rules would have served (same bytes, type and caching, status 200)
+  # and only then records the visit for the owner's dashboard. People never
+  # pass through it. To switch the crawler log off, delete everything from
+  # the ">>> crawler log" line to the "<<< crawler log" line. The crawler
+  # names are the TA_CRAWLERS table in api/_analytics.php, in the same order.
+  RewriteCond %{REQUEST_METHOD} ^(GET|HEAD)$
+  RewriteCond %{REQUEST_URI} !^/api/
+  RewriteCond %{DOCUMENT_ROOT}/api/crawl.php -f
+  RewriteCond %{HTTP_USER_AGENT} (Google-InspectionTool|Storebot-Google|AdsBot-Google|Mediapartners-Google|GoogleOther|Googlebot|bingbot|BingPreview|adidxbot|msnbot|DuckDuckBot|DuckAssistBot|YandexBot|YandexImages|Baiduspider|Applebot|facebookexternalhit|facebookcatalog|meta-externalagent|Twitterbot|LinkedInBot|Slackbot|Discordbot|TelegramBot|Pinterestbot|redditbot|ChatGPT-User|OAI-SearchBot|GPTBot|Claude-User|Claude-SearchBot|ClaudeBot|Perplexity-User|PerplexityBot|CCBot|Amazonbot|Bytespider|SemrushBot|AhrefsBot|MJ12bot|DotBot|PetalBot|SeznamBot|Qwantbot|archive\.org_bot) [NC]
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^ api/crawl.php [L]
+  RewriteCond %{REQUEST_METHOD} ^(GET|HEAD)$
+  RewriteCond %{DOCUMENT_ROOT}/api/crawl.php -f
+  RewriteCond %{HTTP_USER_AGENT} (Google-InspectionTool|Storebot-Google|AdsBot-Google|Mediapartners-Google|GoogleOther|Googlebot|bingbot|BingPreview|adidxbot|msnbot|DuckDuckBot|DuckAssistBot|YandexBot|YandexImages|Baiduspider|Applebot|facebookexternalhit|facebookcatalog|meta-externalagent|Twitterbot|LinkedInBot|Slackbot|Discordbot|TelegramBot|Pinterestbot|redditbot|ChatGPT-User|OAI-SearchBot|GPTBot|Claude-User|Claude-SearchBot|ClaudeBot|Perplexity-User|PerplexityBot|CCBot|Amazonbot|Bytespider|SemrushBot|AhrefsBot|MJ12bot|DotBot|PetalBot|SeznamBot|Qwantbot|archive\.org_bot) [NC]
+  RewriteRule ^(robots\.txt|sitemap\.xml|llms\.txt)?$ api/crawl.php [L]
+  # <<< crawler log <<< -----------------------------------------------------
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d
   RewriteRule ^ index.html [L]

@@ -438,7 +438,13 @@ function rateLimitFile(string $bucket): ?string
     return $dir . '/' . $bucket . '-' . hash('sha256', clientIp()) . '.json';
 }
 
-function rateLimitExceeded(string $bucket, int $max = RATE_LIMIT_MAX): bool
+/**
+ * @param int $window seconds the count covers. Defaults to RATE_LIMIT_WINDOW;
+ *                    the dashboard login uses 900 (5 failures per 15 minutes).
+ *                    Keep any window at or under RATE_LIMIT_WINDOW * 2, the age
+ *                    at which the sweep in rateLimitRecord() deletes a file.
+ */
+function rateLimitExceeded(string $bucket, int $max = RATE_LIMIT_MAX, int $window = RATE_LIMIT_WINDOW): bool
 {
     $file = rateLimitFile($bucket);
     if ($file === null) {
@@ -447,12 +453,12 @@ function rateLimitExceeded(string $bucket, int $max = RATE_LIMIT_MAX): bool
     $raw = @file_get_contents($file);
     $stamps = $raw === false ? [] : json_decode($raw, true);
     $stamps = is_array($stamps) ? $stamps : [];
-    $floor = time() - RATE_LIMIT_WINDOW;
+    $floor = time() - $window;
     $stamps = array_values(array_filter($stamps, static fn($t) => is_int($t) && $t > $floor));
     return count($stamps) >= $max;
 }
 
-function rateLimitRecord(string $bucket): void
+function rateLimitRecord(string $bucket, int $window = RATE_LIMIT_WINDOW): void
 {
     $file = rateLimitFile($bucket);
     if ($file === null) {
@@ -461,7 +467,7 @@ function rateLimitRecord(string $bucket): void
     $raw = @file_get_contents($file);
     $stamps = $raw === false ? [] : json_decode($raw, true);
     $stamps = is_array($stamps) ? $stamps : [];
-    $floor = time() - RATE_LIMIT_WINDOW;
+    $floor = time() - $window;
     $stamps = array_values(array_filter($stamps, static fn($t) => is_int($t) && $t > $floor));
     $stamps[] = time();
     @file_put_contents($file, json_encode($stamps), LOCK_EX);
