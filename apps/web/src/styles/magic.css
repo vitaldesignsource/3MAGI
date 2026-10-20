@@ -26,8 +26,9 @@
    global reset makes svg a block; a glyph sits in the line like a letter. */
 .mg-glyph {
   display: inline-block;
-  width: 1em;
-  height: 1em;
+  /* --mg-scale: an alphabet's signScale (registry.js), set where its signs stand */
+  width: calc(1em * var(--mg-scale, 1));
+  height: calc(1em * var(--mg-scale, 1));
   vertical-align: -0.12em;
   overflow: visible;
 }
@@ -219,7 +220,7 @@
 /* A drawn sign keeps a margin inside its em box (the kit's body is 80 units
    of 100), so on a card it is set a little larger than the em, to stand as
    tall as a hall's letter beside it. */
-.mg-letter-card.is-drawn .edu-letter-glyph .mg-glyph:not(.is-figure) { width: 1.3em; height: 1.3em; }
+.mg-letter-card.is-drawn .edu-letter-glyph .mg-glyph:not(.is-figure) { width: calc(1.3em * var(--mg-scale, 1)); height: calc(1.3em * var(--mg-scale, 1)); }
 /* and so wherever a drawn sign stands among set letters at text size — the
    comparison tables' cells, a search result, the transliterator's key and
    breakdown — so that none is drawn smaller than the letters beside it, and
@@ -227,10 +228,10 @@
 .mg-cmp-cell .mg-glyph:not(.is-figure),
 .edu-search-native .mg-glyph:not(.is-figure),
 .mg-key-sign .mg-glyph:not(.is-figure),
-.mg-breakdown .mg-glyph:not(.is-figure) { width: 1.4em; height: 1.4em; }
+.mg-breakdown .mg-glyph:not(.is-figure) { width: calc(1.4em * var(--mg-scale, 1)); height: calc(1.4em * var(--mg-scale, 1)); }
 /* The drill's find mode is where ring-letters must be told apart: its four
    choices are set large enough to fill their buttons as a set script's do. */
-.edu-drill-option-glyph .mg-glyph:not(.is-figure) { width: 1.9em; height: 1.9em; vertical-align: -0.45em; }
+.edu-drill-option-glyph .mg-glyph:not(.is-figure) { width: calc(1.9em * var(--mg-scale, 1)); height: calc(1.9em * var(--mg-scale, 1)); vertical-align: -0.45em; }
 .mg-letter-card .edu-letter-name { max-width: 100%; overflow-wrap: anywhere; }
 .mg-letter-card .edu-letter-name.is-long { font-size: 0.64rem; letter-spacing: 0.06em; }
 .mg-letter-sub {
@@ -698,7 +699,7 @@
 .mg-entry-nav .mg-nav-sign { color: #d1ad68; }
 /* a drawn door sign is held to the wing's floor for ring-letters (28 px), and
    lets the chip's padding take the extra height, so the chips keep one size */
-.mg-entry-nav .mg-glyph.mg-nav-sign:not(.is-figure) { width: 1.75em; height: 1.75em; margin-block: -0.45em; }
+.mg-entry-nav .mg-glyph.mg-nav-sign:not(.is-figure) { width: calc(1.75em * var(--mg-scale, 1)); height: calc(1.75em * var(--mg-scale, 1)); margin-block: -0.45em; }
 .mg-entry-nav .mg-nav-home { border-color: rgba(209, 173, 104, 0.6); color: #ecd9ae; }
 
 /* --- the portal --------------------------------------------------------------------- */

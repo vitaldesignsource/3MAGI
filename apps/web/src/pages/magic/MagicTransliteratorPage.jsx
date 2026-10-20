@@ -5,7 +5,7 @@ import ThirdLampHeader from '../../components/ThirdLampHeader';
 import ThirdLampFooter from '../../components/ThirdLampFooter';
 import { Sign } from './MagicGlyph';
 import FitTitle from './FitTitle';
-import { MAGIC_PATH, WING, entryPath } from './lib';
+import { ENTRY_BY_SLUG, MAGIC_PATH, WING, entryPath } from './lib';
 import { transliterate } from './transliterate';
 import compare from '../../data/education/magic/compare.generated';
 import '../../styles/magic.css';
@@ -105,7 +105,8 @@ function MagicTransliteratorPage() {
                     </div>
 
                     {scheme && (
-                        <div className="mg-translit-body">
+                        <div className="mg-translit-body"
+                            style={ENTRY_BY_SLUG[scheme.slug]?.signScale ? { '--mg-scale': ENTRY_BY_SLUG[scheme.slug].signScale } : undefined}>
                             <div className="edu-reckoner-body">
                                 <input
                                     type="text"

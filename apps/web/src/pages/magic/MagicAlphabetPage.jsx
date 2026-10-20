@@ -127,7 +127,8 @@ function MagicAlphabetPage() {
     const [faWhen, ...faDated] = fa ? String(fa.date).split(' — ') : [];
 
     return (
-        <div className="third-lamp-scope edu-page edu-lang-page mg-page" data-hall={`magic-${entry.slug}`} data-status={entry.status}>
+        <div className="third-lamp-scope edu-page edu-lang-page mg-page" data-hall={`magic-${entry.slug}`} data-status={entry.status}
+            style={reg?.signScale ? { '--mg-scale': reg.signScale } : undefined}>
             <Helmet>
                 <title>{`${mod.title} — The Magical Scriptorium — The Third Lamp`}</title>
                 <meta name="description" content={mod.summary} />
@@ -365,7 +366,7 @@ function MagicAlphabetPage() {
                 <nav className="edu-hall-nav mg-entry-nav" aria-label="The Magical Scriptorium">
                     <Link to={MAGIC_PATH} className="mg-nav-home">← {WING.title}</Link>
                     {others.map((e) => (
-                        <Link key={e.slug} to={entryPath(e.slug)}>
+                        <Link key={e.slug} to={entryPath(e.slug)} style={{ '--mg-scale': e.signScale || 1 }}>
                             {e.door ? <Sign of={e.door} className="mg-nav-sign" /> : null}{e.short}
                         </Link>
                     ))}

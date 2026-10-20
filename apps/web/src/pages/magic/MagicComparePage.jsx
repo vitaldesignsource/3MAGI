@@ -5,7 +5,7 @@ import ThirdLampHeader from '../../components/ThirdLampHeader';
 import ThirdLampFooter from '../../components/ThirdLampFooter';
 import { Sign, Unstruck } from './MagicGlyph';
 import FitTitle from './FitTitle';
-import { MAGIC_PATH, WING, capitalise, entryPath, numberWord } from './lib';
+import { ENTRY_BY_SLUG, MAGIC_PATH, WING, capitalise, entryPath, numberWord } from './lib';
 import compare from '../../data/education/magic/compare.generated';
 import '../../styles/magic.css';
 
@@ -148,7 +148,8 @@ function CompareTable({ table }) {
                                     const c = run.column;
                                     const cell = r.cells[c.slug];
                                     return (
-                                        <td key={c.slug} className="edu-cog-cell mg-cmp-cell">
+                                        <td key={c.slug} className="edu-cog-cell mg-cmp-cell"
+                                            style={ENTRY_BY_SLUG[c.slug]?.signScale ? { '--mg-scale': ENTRY_BY_SLUG[c.slug].signScale } : undefined}>
                                             {cell && cell.sign
                                                 ? <Link to={`${entryPath(c.slug)}#mg-letter-${cell.i}`} title={cell.name}><Sign of={cell.sign} label={`${c.short} ${cell.name}`} /></Link>
                                                 : <span className="edu-cog-gap" role="img" aria-label="no sign">—</span>}

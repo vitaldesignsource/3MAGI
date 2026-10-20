@@ -24,7 +24,8 @@ export function MagicDoor({ entry, stub = false, compact = false }) {
     return (
         <Link className={`edu-hall-card mg-door${compact ? ' is-compact' : ''}${entry.status === 'forms-pending' ? ' is-pending' : ''}`}
             to={entryPath(entry.slug)} title={compact ? entry.blurb : undefined}>
-            <span className="edu-hall-glyph mg-door-sign" aria-hidden="true">
+            <span className="edu-hall-glyph mg-door-sign" aria-hidden="true"
+                style={entry.signScale ? { '--mg-scale': entry.signScale } : undefined}>
                 {entry.door ? <Sign of={entry.door} /> : <Unstruck />}
             </span>
             <h3>{compact ? entry.short : entry.title}</h3>

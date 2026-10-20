@@ -13,6 +13,12 @@
 // values point into ('hebrew' | 'latin'), or 'none'. direction is the way its
 // table and its writing run, and the way the arrow keys walk its letters.
 //
+// signScale (optional) sets an alphabet's drawn signs larger, all by one
+// factor, where they were traced in a cell generous for their size (the
+// tables of 1518 and 1539, Dee's leaf): the drawing and the signs' sizes
+// relative to one another are unchanged, and they stand as tall as the
+// letters beside them in the cards, the comparison tables and the tools.
+//
 // The alphabets are NOT halls: they are not in the halls' HALLS (data/education/portal/halls.js),
 // and their modules live in this subfolder, out of reach of the halls' glob.
 
@@ -60,7 +66,9 @@ const registry = {
         {
             slug: 'theban', group: 'agrippan', title: 'The Theban Alphabet', short: 'Theban',
             otherNames: ['the alphabet of Honorius surnamed the Theban', 'the witches’ alphabet'],
-            keyedTo: 'latin', direction: 'ltr', status: 'forms-pending', door: null,
+            keyedTo: 'latin', direction: 'ltr', status: 'ready', signScale: 1.35,
+            // door: its A, as drawn on its page from the table of 1518 (the validator checks it is one of the page's own signs)
+            door: { glyph: { d: 'M 38.5 26.2 L 60.8 24.8 M 45.4 26.8 L 45.4 35.3 L 51.8 35.5 M 52 25 L 52 52 C 52.6 55.2 58.7 55.2 58.9 50.6 C 59 47.3 55.8 46.2 52.2 47.2' } },
             blurb: 'A cipher of the Latin letters, first printed by Trithemius in 1518 and ascribed by him to Honorius of Thebes.',
         },
         {
@@ -74,19 +82,25 @@ const registry = {
         {
             slug: 'enochian', group: 'secret', title: 'The Enochian Alphabet', short: 'Enochian',
             otherNames: ['the Angelical alphabet', 'Dee’s alphabet'],
-            keyedTo: 'latin', direction: 'rtl', status: 'forms-pending', door: null,
+            keyedTo: 'latin', direction: 'rtl', status: 'ready', signScale: 1.3,
+            // door: its Pa, the first form on f. 104, as drawn on its page (the validator checks it is one of the page's own signs)
+            door: { glyph: { d: 'M 29 33 L 36.5 34 C 43 44 50 54 54.5 67.5 C 58.5 64 62 60 62.3 54 L 62.3 48.5 C 66.5 46.5 69.8 43.5 69.6 39 C 69.4 35 66 34.5 62 34.8 C 59 35 56 35.5 56 39.6 M 57.8 47 L 61.8 48' } },
             blurb: 'Twenty-one letters that John Dee recorded in 1583 from what Edward Kelley reported seeing in the shew-stone.',
         },
         {
             slug: 'alphabet-of-the-magi', group: 'secret', title: 'The Alphabet of the Magi', short: 'Magi',
             otherNames: ['the characters of the angel Raphael (Duret, 1613)'],
-            keyedTo: 'hebrew', direction: 'rtl', status: 'forms-pending', door: null,
+            keyedTo: 'hebrew', direction: 'rtl', status: 'ready', signScale: 1.25,
+            // door: its Aleph, as drawn on its page from the table of 1539 (the validator checks it is one of the page's own signs)
+            door: { glyph: { d: 'M 23 40.5 C 24.5 36 31 35 34 40 C 38 45 42 50 42.5 56 L 43 68 L 64 68 L 64.5 37 L 75 36.5 M 34 48 L 24 70 L 32 69', dots: [[23.6, 40.1, 3.7], [77.4, 49.8, 3.2]] } },
             blurb: 'A variant of the Hebrew alphabet whose earliest known printing is at Pavia in 1539, later credited — without a source — to Paracelsus.',
         },
         {
             slug: 'trithemius', group: 'secret', title: 'Trithemius and the Secret Alphabets', short: 'Trithemius',
             otherNames: ['the Polygraphia', 'the Steganographia'],
-            keyedTo: 'none', direction: 'ltr', status: 'forms-pending', door: null,
+            keyedTo: 'none', direction: 'ltr', status: 'ready', signScale: 1.6,
+            // door: the a of the alchemist's alphabet, as drawn on its page (the validator checks it is one of the page's own signs)
+            door: { glyph: { d: 'M 51.4 32.9 C 58.08 32.9 63.5 38.32 63.5 45 C 63.5 51.68 58.08 57.1 51.4 57.1 C 44.72 57.1 39.3 51.68 39.3 45 C 39.3 38.32 44.72 32.9 51.4 32.9 Z', dots: [[51.3, 45.4, 2.9]] } },
             blurb: 'The abbot of Sponheim, whose books of secret writing carried cipher alphabets into print and into Agrippa’s hands.',
         },
         {

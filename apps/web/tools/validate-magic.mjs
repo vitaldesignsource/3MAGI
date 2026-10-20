@@ -30,6 +30,8 @@ const sameGlyph = (a, b) => canon(a) === canon(b);
 // no rights statement is never shown.
 const PLATE_REPOSITORIES = [
     { credit: 'Library of Congress, Rare Book and Special Collections Division', rights: /not aware of any U\.S\. copyright or any other restrictions/ },
+    // the Music Division's Books About Music Before 1800 collection
+    { credit: 'Library of Congress, Music Division', rights: /in the public domain and are free to use or reuse/ },
     { credit: 'e-rara', rights: /Public Domain Mark/ },
     { credit: 'Wellcome Collection', rights: /Public Domain Mark/ },
 ];
@@ -151,6 +153,10 @@ for (const a of registry.alphabets) {
     if (!groupKeys.has(a.group)) fail(where, `unknown group "${a.group}"`);
     if (!KEYED.includes(a.keyedTo)) fail(where, `keyedTo must be one of ${KEYED.join(' | ')}`);
     if (!DIRS.includes(a.direction)) fail(where, 'direction must be ltr or rtl');
+    // one factor for all of an alphabet's drawn signs, so the drawings and
+    // their sizes relative to one another stay as traced
+    if (a.signScale != null && !(typeof a.signScale === 'number' && a.signScale >= 1 && a.signScale <= 2)) fail(where, 'signScale, if given, is a number from 1 to 2');
+    if (a.signScale != null && a.status !== 'ready') fail(where, 'a forms-pending alphabet has no signs to scale');
     if (a.door) {
         if (a.status !== 'ready') fail(where, 'a forms-pending alphabet has no door sign: no form may be shown before it is traced');
         if (a.door.char) {
