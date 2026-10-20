@@ -226,6 +226,57 @@ Every chart can be read with the arrow keys and opened as a table.
 | database could not be opened / prepared | rename `tl-analytics/analytics.sqlite` (keep it if you want the history); a new one is created on the next visit |
 | "The dashboard is not configured" | add the keys in step 3 |
 
+## The beacon (what runs in a visitor's browser)
+
+`src/lib/analytics.js` — no dependencies, about 9 KB minified (4 KB gzipped),
+in the entry bundle so a reader who leaves within a second is still counted. It
+adds nothing to the page, sets no cookie, uses no storage, and talks only to
+`/api/hit.php`. Every entry point is wrapped so that a fault in it is swallowed,
+never thrown into the app.
+
+Where it is wired in:
+
+| Place | What it reports |
+|---|---|
+| `src/components/AnalyticsBeacon.jsx`, mounted inside the router in `App.jsx` | every route change (react-router's location and navigation type) |
+| `NotFoundBeacon` (same file): the unmatched-route fallback in `App.jsx`, and the "not catalogued" states of `ArticlePage.jsx` | a not-found page; it renders nothing, so an unknown URL looks exactly as it did before |
+| `src/components/ScriptoriumSearch.jsx` (the Scriptorium, Powers and Christianities search boxes) | a query, with the number of results |
+| one delegated click listener on the document | links to other sites |
+
+When each event goes out (one small JSON object per request, by
+`navigator.sendBeacon` as `text/plain`, so there is no CORS preflight; `fetch`
+with `keepalive` if sendBeacon is missing or refuses):
+
+| Event | When | Notes |
+|---|---|---|
+| `pageview` | ~1.2 s after a route change, on an idle moment, once the route has finished loading (nothing on the page is `aria-busy`, up to 8 s) — or at once if the reader leaves or hides the tab sooner | path only (no query, no hash); `document.referrer` and the UTM tags on the landing view, the previous path (flagged internal) afterwards; screen, window width, language, time zone, GPC; the page facts (title, description, canonical, robots, `<html lang>`, h1 count, og:title/og:image present, images without alt) — only read while that page is the one on screen. A change of hash or query on the same path is not a new view; a `replace` redirect before the view was reported (an unknown hall sent back to its portal) counts only the page the reader saw, with the original referrer. |
+| `engage` | when the page is hidden or the route changes; sent again a second later if its pageview had only just gone out (so it cannot arrive first) | visible seconds on that view (a background tab does not count), deepest scroll % |
+| `vitals` | once per landing, when the page is first hidden | TTFB, FCP, LCP, CLS, INP from PerformanceObserver (no library), measured from activation for a prerendered page; the navigation type |
+| `search` | when the reader pauses 1.5 s on a query or presses Enter (and when they leave with one pending) | trimmed, lower-cased, at most 80 characters, at least 2; the same query twice in a row on one page is one search |
+| `notfound` | when a not-found page renders | path, and the referrer as for the pageview |
+| `outbound` | a click (or middle click) on a link to another host | the host only, and the path it was clicked from |
+
+**It never runs** in development (`import.meta.env.DEV`), on `/admin` (nor
+does it send vitals for a visit that began there), when `navigator.webdriver`
+is true, in a headless browser (`HeadlessChrome`, Lighthouse/PageSpeed and the
+like in the User-Agent), on a page that is only being prerendered (it waits
+until the reader actually opens it), or outside http(s).
+
+**The test door.** End-to-end tests drive the built site with Playwright,
+whose browser reports `navigator.webdriver`. Adding `?tl_analytics_test=1` to
+the first URL a page loads lets the beacon run under automation and in a
+headless User-Agent — **only when the host is `localhost`, `127.0.0.1` or
+`[::1]`**; on any other host the flag does nothing. The decision is held in
+memory for that page load (nothing is stored), and the flag itself is never
+reported (paths are sent without their query). Production is unaffected: no
+visitor reaches the site on a loopback address.
+
+A known edge: a view that is closed within ~1.2 s sends its pageview and its
+engage together as the page unloads. They are separate requests and may reach
+the server in either order; an engage that arrives before its pageview is
+dropped by `hit.php` (`unknown_view`), so such a view has no engagement time
+recorded (it would have been 0–1 s). Views that last longer are unaffected.
+
 ## For developers
 
 | File | Role |
@@ -235,7 +286,9 @@ Every chart can be read with the arrow keys and opened as a table.
 | `public/api/hit.php` | beacon receiver; always 204 |
 | `public/api/crawl.php` | crawler log; always the real file |
 | `public/api/admin.php` | the dashboard API (`?a=login|logout|me|stats|visitors|visitor|live|crawlers|seo|export|verify-bot|prune|health`) |
-| `tests/analytics-php/` | `run-tests.php` (all behaviour, ~470 checks), `router.php` (`.htaccess` for `php -S`), `seed.php` (weeks of synthetic traffic), `serve.sh`, `make-secrets.php` (throwaway credentials) |
+| `src/lib/analytics.js` | the beacon (above) |
+| `src/components/AnalyticsBeacon.jsx` | the router hook-up (`AnalyticsBeacon`) and the not-found marker (`NotFoundBeacon`) |
+| `tests/analytics-php/` | `run-tests.php` (all behaviour, ~470 checks), `router.php` (`.htaccess` for `php -S`), `seed.php` (weeks of synthetic traffic), `serve.sh`, `make-secrets.php` (throwaway credentials), `beacon-e2e.mjs` (the beacon in real browsers against the built site) |
 | `src/pages/admin/` | the `/admin` UI: its own lazy chunk and stylesheet. `AdminPage.jsx` (sign-in, setup steps, the shell), `sections/*.jsx`, `charts.jsx` (hand-drawn SVG), `api.js` (the only network code) |
 | `tests/analytics-e2e/` | `run.sh`: seeds a database, serves the build, and drives Chromium through every section at 1280 and 390 px, checking figures against SQL; screenshots in `TL_E2E_SHOTS` |
 
@@ -244,6 +297,7 @@ in the contract the beacon and UI were built against; the tests pin it.
 
 ```sh
 php apps/web/tests/analytics-php/run-tests.php        # needs PHP 8 with pdo_sqlite and curl; port 4301
+node apps/web/tests/analytics-php/beacon-e2e.mjs      # after npm run build; Playwright + PHP; port 4302 (--port=…)
 cd apps/web && npm run build && tests/analytics-php/serve.sh   # the built site + a seeded dashboard on :4301
 apps/web/tests/analytics-e2e/run.sh                   # the dashboard UI end to end (after a build); port 4303
 ```
