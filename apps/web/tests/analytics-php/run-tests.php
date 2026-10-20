@@ -933,6 +933,7 @@ check('five failures are all 401', $r['status'] === 401);
 $r = adminPost('login', ['email' => $EMAIL, 'password' => $PASSWORD]);
 check('the sixth attempt is 429 even with the right password', $r['status'] === 429 && ($r['json']['code'] ?? '') === 'locked' && hdr($r, 'retry-after') === '900', [$r['status'], $r['json']]);
 check('  …and sets no cookie', cookieFrom($r) === null);
+check('setup-file is gone once the dashboard is set up (404)', adminPost('setup-file', ['email' => $EMAIL, 'password' => 'another long password'])['status'] === 404);
 clearRate();
 $r = adminPost('login', ['email' => $EMAIL, 'password' => str_repeat('a', 2000)]);
 check('an absurdly long password is refused like any other', $r['status'] === 401 && $r['json']['error'] === ADMIN_FAIL_MESSAGE_TEST);
@@ -1199,6 +1200,26 @@ check('login → 503', adminPost('login', ['email' => $EMAIL, 'password' => $PAS
 check('health → configured: false', (http('GET', '/api/admin.php?a=health')['json']['configured'] ?? null) === false);
 beacon(pv('/still-counting', ['view' => 'partial-view']));
 check('collection does not depend on the dashboard being set up', (int) qv(useDataDir("$WORK/data-partial"), "SELECT COUNT(*) FROM pageviews WHERE view_id = 'partial-view'") === 1);
+clearRate();
+$r = adminPost('setup-file', ['email' => ' Owner@Example.test ', 'password' => 'correct horse battery']);
+check('setup-file (not set up) → 200 with the secrets file text', $r['status'] === 200 && str_starts_with((string) ($r['json']['file'] ?? ''), '<?php'), [$r['status'], $r['json']]);
+file_put_contents("$WORK/setup-made.php", (string) ($r['json']['file'] ?? ''));
+$made = (static fn(string $f) => require $f)("$WORK/setup-made.php");
+check('  …the file is valid PHP and its hash verifies the password', is_array($made) && password_verify('correct horse battery', (string) ($made['admin_password_hash'] ?? '')));
+check('  …the email is trimmed and lower-cased; the password itself is nowhere in it',
+    ($made['admin_email'] ?? '') === 'owner@example.test' && !str_contains((string) $r['body'], 'correct horse battery'));
+check('  …no cookie_secret when the server already has one', is_array($made) && !array_key_exists('cookie_secret', $made) && ($r['json']['new_cookie_secret'] ?? null) === false);
+check('setup-file refuses a password under 12 characters', adminPost('setup-file', ['email' => 'a@example.test', 'password' => 'short'])['status'] === 400);
+check('setup-file refuses a malformed email', adminPost('setup-file', ['email' => 'not an email', 'password' => 'long enough password'])['status'] === 400);
+check('setup-file without this site\'s Origin → 403', adminPost('setup-file', ['email' => 'a@example.test', 'password' => 'long enough password'], null, ['Content-Type: application/json'])['status'] === 403);
+clearRate();
+writeSecrets("$WORK/tl-secrets-empty.php", []);
+serverStart("$WORK/www", ['TL_SECRETS_FILE' => "$WORK/tl-secrets-empty.php", 'TL_ANALYTICS_DIR' => "$WORK/data-empty"], 'empty');
+$r = adminPost('setup-file', ['email' => 'owner@example.test', 'password' => 'correct horse battery']);
+file_put_contents("$WORK/setup-made-2.php", (string) ($r['json']['file'] ?? ''));
+$made = (static fn(string $f) => require $f)("$WORK/setup-made-2.php");
+check('with no secrets at all, setup-file adds a fresh 64-hex cookie_secret', is_array($made) && (bool) preg_match('/^[0-9a-f]{64}$/', (string) ($made['cookie_secret'] ?? '')));
+clearRate();
 
 $crawlerChecks = static function (string $label) use ($INDEX, $ROBOTS, $SITEMAP, $GOOGLEBOT) {
     foreach (['/' => $INDEX, '/powers/map' => $INDEX, '/robots.txt' => $ROBOTS, '/sitemap.xml' => $SITEMAP] as $path => $bytes) {

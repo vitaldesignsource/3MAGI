@@ -41,6 +41,7 @@ const ADMIN_ACTIONS = [
     'verify-bot' => 'POST',
     'prune' => 'POST',
     'health' => 'GET',
+    'setup-file' => 'POST',
 ];
 const ADMIN_SECTIONS = ['overview', 'pages', 'page', 'sources', 'search', 'technology'];
 const ADMIN_LOGIN_MAX = 5;            // failed sign-ins per network (IPv4 address, IPv6 /64)…
@@ -328,6 +329,50 @@ if ($action === 'health') {
         respond(200, ['ok' => true, 'authenticated' => false, 'configured' => $missing === [], 'missing' => $missing]);
     }
     respond(200, ['ok' => true] + ta_reportHealth(ta_db(5000), $now, $session) + ['login' => admin_loginStatus($now)]);
+}
+
+// While the dashboard is not set up, the setup page can write the secrets
+// file for the owner: they type the email and password once (over HTTPS, as
+// at sign-in), and get back the lines to paste into tl-secrets.php: the email,
+// a bcrypt hash of the password and, when missing, a fresh cookie_secret.
+// Nothing is stored and nothing is granted: the answer is only text, useful
+// to whoever can write the file above public_html. Once the keys are in place
+// the action is gone (404).
+if ($action === 'setup-file') {
+    if ($missing === []) {
+        fail(404, 'The dashboard is already set up.', 'configured');
+    }
+    if (!admin_sameOriginPost()) {
+        fail(403, 'Request refused.', 'csrf');
+    }
+    // bcrypt is slow on purpose: the same per-network allowance as sign-in.
+    [$netFile] = admin_loginFiles();
+    if ($netFile !== null && rateLimitTake($netFile, ADMIN_LOGIN_MAX, ADMIN_LOGIN_WINDOW, $now) === false) {
+        header('Retry-After: ' . ADMIN_LOGIN_WINDOW);
+        respond(429, ['ok' => false, 'error' => 'Too many attempts. Try again in 15 minutes.', 'code' => 'locked', 'retry_after' => ADMIN_LOGIN_WINDOW]);
+    }
+    $body = admin_jsonBody();
+    $email = is_string($body['email'] ?? null) ? trim((string) $body['email']) : '';
+    $password = is_string($body['password'] ?? null) ? (string) $body['password'] : '';
+    if ($email === '' || strlen($email) > 254 || filter_var($email, FILTER_VALIDATE_EMAIL) === false) {
+        fail(400, 'Enter the email address you will sign in with.', 'bad_email');
+    }
+    if (mb_strlen($password) < 12 || strlen($password) > 1024) {
+        fail(400, 'Choose a password of at least 12 characters.', 'weak_password');
+    }
+    $q = static fn(string $v) => "'" . str_replace(['\\', "'"], ['\\\\', "\\'"], $v) . "'";
+    $lines = [
+        "    'admin_email'         => " . $q(strtolower($email)) . ',',
+        "    'admin_password_hash' => " . $q((string) password_hash($password, PASSWORD_DEFAULT)) . ',',
+    ];
+    if (in_array('cookie_secret', $missing, true)) {
+        $lines[] = "    'cookie_secret'       => " . $q(bin2hex(random_bytes(32))) . ', // signs sessions; changing it signs everyone out';
+    }
+    $file = "<?php\n// Three Magi Press: server secrets. Keep this file ONE LEVEL ABOVE public_html,\n"
+        . "// named tl-secrets.php. Never put it inside public_html; never commit it.\n"
+        . "// admin_password_hash is a one-way hash: the password itself is not here.\n"
+        . "return [\n" . implode("\n", $lines) . "\n];\n";
+    respond(200, ['ok' => true, 'file' => $file, 'lines' => implode("\n", $lines), 'new_cookie_secret' => in_array('cookie_secret', $missing, true)]);
 }
 
 if ($missing !== []) {

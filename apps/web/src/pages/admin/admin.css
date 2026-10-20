@@ -583,3 +583,11 @@ th[aria-sort] .adm-sort-mark { opacity: 1; }
   .adm-line, .adm-line-prev { stroke: CanvasText; }
   .adm-bar > span, .adm-strip-fill, .adm-area { fill: Highlight; background: Highlight; }
 }
+
+/* The setup page's own file maker. */
+.adm-setup-file { margin: 18px 0 8px; padding: 14px 16px; border: 1px solid var(--line); border-radius: 6px; background: var(--panel); }
+.adm-setup-file h2, .adm-setup-or { margin: 0 0 6px; font-family: var(--caps); font-weight: 500; font-size: 1.05rem; letter-spacing: 0.04em; }
+.adm-setup-or { margin-top: 22px; }
+.adm-setup-file > p { margin: 0 0 10px; color: var(--text-2); }
+.adm-setup-file .adm-steps h3 { margin: 0 0 4px; font-family: var(--caps); font-weight: 500; font-size: 0.95rem; letter-spacing: 0.04em; }
+.adm-steps pre.adm-setup-out { white-space: pre-wrap; overflow-wrap: anywhere; overflow-x: visible; }

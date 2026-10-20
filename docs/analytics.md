@@ -77,6 +77,19 @@ and from the dashboard's **Prune now** button. There is no cron job to set up.
 
 ## Setting it up
 
+**The quick way.** After the first deploy, open `https://threemagipress.com/admin`.
+While the secrets file lacks the dashboard keys, the page shows a short form:
+type the email you will sign in with and choose a password (12 characters or
+more). The server answers with the text of `tl-secrets.php` — the email, a
+bcrypt hash of the password and, if missing, a fresh `cookie_secret` — and
+keeps nothing. Copy it, then in hPanel → **Files → File Manager** go up one
+level from `public_html`, create `tl-secrets.php` there, paste, save, and
+reload `/admin`. (If a `tl-secrets.php` already exists, add only the lines
+between `return [` and `];`.) The form is answered only over HTTPS, from the
+site's own origin, at most five times per network in 15 minutes, and it is
+gone (404) as soon as the keys are in place. Steps 1–3 below do the same by
+hand.
+
 ### 1. PHP extension
 
 hPanel → **Advanced → PHP Configuration → PHP Extensions**: make sure

@@ -132,6 +132,125 @@ const KEY_TEXT = {
     admin_password_hash: 'admin_password_hash',
 };
 
+// While the dashboard is not set up, the server can write the secrets file's
+// lines for the owner (admin.php?a=setup-file): the email, a bcrypt hash of
+// the password and, if missing, a fresh cookie_secret. The password goes to
+// the server once, over HTTPS, exactly as at sign-in; nothing is stored. The
+// owner copies the text into tl-secrets.php through hPanel's File Manager.
+function SetupFile({ missing }) {
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+    const [again, setAgain] = useState('');
+    const [show, setShow] = useState(false);
+    const [busy, setBusy] = useState(false);
+    const [error, setError] = useState(null);
+    const [result, setResult] = useState(null);
+    const [copied, setCopied] = useState(false);
+    const outRef = useRef(null);
+    const hasOtherKeys = missing && !missing.includes('cookie_secret');
+
+    const submit = async (e) => {
+        e.preventDefault();
+        if (busy) return;
+        if (insecureOrigin()) {
+            setError('This page is not on a secure (https) address, so the password was not sent. Open the https address and try again.');
+            return;
+        }
+        if (password !== again) {
+            setError('The two passwords are not the same.');
+            return;
+        }
+        setBusy(true);
+        setError(null);
+        setCopied(false);
+        try {
+            const res = await apiPost('setup-file', { email: email.trim(), password });
+            setPassword('');
+            setAgain('');
+            setResult(res);
+            requestAnimationFrame(() => outRef.current && outRef.current.focus());
+        } catch (err) {
+            setError(err.message || 'The server could not make the file. Try again.');
+        } finally {
+            setBusy(false);
+        }
+    };
+
+    const text = result ? (hasOtherKeys ? result.lines : result.file) : '';
+    const copy = async () => {
+        try {
+            await navigator.clipboard.writeText(text);
+            setCopied(true);
+        } catch {
+            if (outRef.current) {
+                const r = document.createRange();
+                r.selectNodeContents(outRef.current);
+                const sel = window.getSelection();
+                sel.removeAllRanges();
+                sel.addRange(r);
+            }
+        }
+    };
+
+    return (
+        <section className="adm-setup-file" aria-labelledby="adm-setup-file-title">
+            <h2 id="adm-setup-file-title">The quick way: let this page write the file</h2>
+            <p>Type the email you will sign in with and choose the password. The server returns the file's text with a one-way hash of the password; the password itself is not in it and nothing is kept.</p>
+            {!result ? (
+                <form className="adm-login" onSubmit={submit}>
+                    <div className="adm-field">
+                        <label htmlFor="adm-setup-email">Email</label>
+                        <input id="adm-setup-email" type="email" autoComplete="username" required value={email}
+                            onChange={(e) => setEmail(e.target.value)} autoCapitalize="off" spellCheck={false} />
+                    </div>
+                    <div className="adm-field">
+                        <label htmlFor="adm-setup-password">Password (at least 12 characters)</label>
+                        <div className="adm-pass">
+                            <input id="adm-setup-password" type={show ? 'text' : 'password'} autoComplete="new-password" required minLength={12} maxLength={1024}
+                                value={password} onChange={(e) => setPassword(e.target.value)} />
+                            <button type="button" className="adm-btn adm-btn-quiet" onClick={() => setShow((v) => !v)} aria-pressed={show} aria-controls="adm-setup-password adm-setup-again">
+                                {show ? 'Hide' : 'Show'}
+                            </button>
+                        </div>
+                    </div>
+                    <div className="adm-field">
+                        <label htmlFor="adm-setup-again">The same password again</label>
+                        <input id="adm-setup-again" type={show ? 'text' : 'password'} autoComplete="new-password" required maxLength={1024}
+                            value={again} onChange={(e) => setAgain(e.target.value)} />
+                    </div>
+                    <div role="alert" className={error ? 'adm-login-error is-bad' : 'adm-login-error'}>{error && <p>{error}</p>}</div>
+                    <button type="submit" className="adm-btn adm-btn-primary" disabled={busy}>{busy ? 'Making the file…' : 'Make the file'}</button>
+                </form>
+            ) : (
+                <>
+                    <ol className="adm-steps">
+                        <li>
+                            <h3>Copy this</h3>
+                            <pre ref={outRef} tabIndex={-1} className="adm-setup-out"><code>{text}</code></pre>
+                            <p>
+                                <button type="button" className="adm-btn adm-btn-primary" onClick={copy}>{copied ? 'Copied' : 'Copy'}</button>
+                                {' '}<button type="button" className="adm-btn adm-btn-quiet" onClick={() => { setResult(null); setCopied(false); }}>Start again</button>
+                            </p>
+                        </li>
+                        <li>
+                            <h3>Paste it into the secrets file</h3>
+                            {hasOtherKeys ? (
+                                <p>Open <code>tl-secrets.php</code> (one level above <code>public_html</code>) in hPanel → Files → File Manager, and paste these lines inside its <code>return [ … ];</code>, beside the keys already there. Save.</p>
+                            ) : (
+                                <p>In hPanel → Files → File Manager, open the folder that <em>contains</em> <code>public_html</code> (go up one level from it). Create a new file named exactly <code>tl-secrets.php</code>, paste, and save. If a <code>tl-secrets.php</code> is already there, add only the lines between <code>return [</code> and <code>];</code> to it instead.</p>
+                            )}
+                        </li>
+                        <li>
+                            <h3>Reload this page and sign in</h3>
+                            <p>With that email and password. This page stops offering the file once the keys are in place.</p>
+                        </li>
+                    </ol>
+                </>
+            )}
+        </section>
+    );
+}
+
 export function Setup({ missing }) {
     return (
         <Frame wide>
@@ -143,6 +262,8 @@ export function Setup({ missing }) {
                 <ul className="adm-missing">{missing.map((k) => <li key={k}><code>{KEY_TEXT[k] || k}</code></li>)}</ul>
             )}
             <p className="adm-gate-small">Visits are being recorded regardless; only the dashboard waits for these. The full guide is <code>docs/analytics.md</code> in the site's repository.</p>
+            <SetupFile missing={missing} />
+            <h2 className="adm-setup-or">Or by hand, with PHP on a computer or over SSH</h2>
             <ol className="adm-steps">
                 <li>
                     <h2>Check PHP's SQLite extension</h2>
