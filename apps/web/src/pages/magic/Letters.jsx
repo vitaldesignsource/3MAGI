@@ -107,8 +107,11 @@ const valueProps = (mod) => (mod.valueLang
 // `formless` is a page of the wing that is not an alphabet (the author's
 // chapters, the lineage's books): its entries have no form to show or trace,
 // so neither the card nor the plaque wears a sign or speaks of one.
+// Under tables that are headings of their own (the Shawq's, each an h3), the
+// plaque's letter is a heading one step down, so the outline nests.
 function Plaque({ letter, mod, keyedTo, hebrewKey, hallIndex, formless }) {
     const drawn = Boolean(letter.glyph);
+    const Name = (mod.groups || []).some((g) => g.heading) ? 'h4' : 'h3';
     const table = isTable(letter);
     const form = formOf(letter);
     // not a live region: the whole entry (a long note, a table of up to 81
@@ -122,11 +125,11 @@ function Plaque({ letter, mod, keyedTo, hebrewKey, hallIndex, formless }) {
                 </div>
             )}
             <div className="edu-plaque-body">
-                <h3>
+                <Name className="mg-plaque-name">
                     {letter.name}
                     {letter.gloss && letter.gloss !== letter.value ? <span className="mg-plaque-gloss">{letter.gloss}</span> : null}
                     {drawn && letter.formConfidence === 'low' ? <span className="edu-plaque-badge">drawn with reservation</span> : null}
-                </h3>
+                </Name>
                 <dl>
                     {letter.value != null && !(keyedTo === 'none' && repeatsTranslit(letter)) && (
                         <div><dt>{mod.valueLabel || 'Stands for'}</dt><dd {...valueProps(mod)}><ValueLink value={letter.value} keyedTo={keyedTo} hallIndex={hallIndex} /></dd></div>
@@ -364,12 +367,16 @@ export function LetterGrid({ mod, letters, keyedTo = 'none', direction = 'ltr', 
         <div className="mg-letter-groups is-grouped" role="group" aria-label={label}>
             {groups.map((g) => {
                 const holds = g.items.some(([, i]) => i === selected);
+                const GroupLabel = g.heading ? 'h3' : 'p';
                 return (
                     <React.Fragment key={g.key}>
                         <div className={`mg-letter-group${g.heading ? ' has-head' : ''}`}>
-                            <p className="mg-group-label" id={`mg-group-${g.key}`} dir="ltr">
+                            {/* a printed table is a heading of the page's outline, so a
+                                reader moving by headings reaches each table; a plain group
+                                (the planets, the ættir) stays a label */}
+                            <GroupLabel className="mg-group-label" id={`mg-group-${g.key}`} dir="ltr">
                                 <span>{isolate(g.label)}</span>{g.note && <em>{isolate(g.note)}</em>}
-                            </p>
+                            </GroupLabel>
                             {/* a group that is a printed table (the Shawq's) shows its
                                 heading as printed, then what is known of it — the
                                 translator's English, the book's claim, its page — and a

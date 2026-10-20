@@ -492,7 +492,6 @@
  "check": {
   "by": "independent checker (not the tracer)",
   "date": "2026-10-20",
-  "summary": "Every sign compared with the Wellcome print and with the Getty and UNC copies, registered onto the same cells: label and order, strokes, joins, direction, ends, dots and proportion. Corrected: ق (redrawn as a zigzag whose outer strokes meet the long stroke at its tips), س (the dot between the legs added), ب (the base now runs past the foot of the left side), ت (the bar extended to its printed length); ف re-rated high (the dash above it is a mark of the Wellcome copy only).",
-  "rebuildWarning": "tools/build.py regenerates glyphs.json from tools/meta_<id>.py and work/<id>_geom.json. The checker mirrored its geometry corrections into work/<id>_geom.json, but the corrected strokes, notes, confidences, variants, cells and otherCopies live only in this file (and in check/tools/apply.py), so build.py must not be re-run without carrying them over."
+  "summary": "Every sign compared with the Wellcome print and with the Getty and UNC copies, registered onto the same cells: label and order, strokes, joins, direction, ends, dots and proportion. Corrected: ق (redrawn as a zigzag whose outer strokes meet the long stroke at its tips), س (the dot between the legs added), ب (the base now runs past the foot of the left side), ت (the bar extended to its printed length); ف re-rated high (the dash above it is a mark of the Wellcome copy only)."
  }
 }

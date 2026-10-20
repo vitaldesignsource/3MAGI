@@ -166,6 +166,22 @@ function MagicAlphabetPage() {
         return () => { alive = false; };
     }, [keyed, keys]);
 
+    // The site header is sticky and wraps to two lines on a narrow phone: its
+    // real height goes to --tl-header-h, from which the wing's anchors take
+    // their scroll margin (magic.css), so a table, a plate or a letter reached
+    // by its address stops below the header, not under it.
+    const ready = Boolean(mod);
+    useLayoutEffect(() => {
+        const header = document.querySelector('.tl-header');
+        if (!header) return undefined;
+        const root = document.documentElement;
+        const set = () => root.style.setProperty('--tl-header-h', `${Math.ceil(header.getBoundingClientRect().height)}px`);
+        set();
+        const ro = typeof ResizeObserver === 'undefined' ? null : new ResizeObserver(set);
+        ro?.observe(header);
+        return () => { ro?.disconnect(); root.style.removeProperty('--tl-header-h'); };
+    }, [ready]);
+
     const letters = useMemo(() => mod?.letters || [], [mod]);
     const shown = useMemo(() => letters.filter((l) => l.glyph || l.char), [letters]);
     // Where the same name stands in several groups (alif in each of the
@@ -350,6 +366,10 @@ function MagicAlphabetPage() {
                             {mod.drawing.follows && <div className="ch-kv"><span>{pending ? 'To be traced from' : 'Drawn from'}</span><p>{isolate(mod.drawing.follows)}</p></div>}
                             {mod.drawing.drawn && <div className="ch-kv"><span>What is drawn</span><p>{isolate(mod.drawing.drawn)}</p></div>}
                             {mod.drawing.variants && <div className="ch-kv"><span>Where the editions differ</span><p>{isolate(mod.drawing.variants)}</p></div>}
+                            {/* a book of many tables (the Shawq's): which of them are drawn
+                                and why, and how the book sets its values under its signs */}
+                            {mod.drawing.chosen && <div className="ch-kv"><span>The tables chosen</span><p>{isolate(mod.drawing.chosen)}</p></div>}
+                            {mod.drawing.keys && <div className="ch-kv"><span>How the tables are keyed</span><p>{isolate(mod.drawing.keys)}</p></div>}
                         </div>
                     </section>
                 )}

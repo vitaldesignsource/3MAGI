@@ -2,6 +2,7 @@ import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { Link } from 'react-router-dom';
 import MagicGlyph, { TableMark, Unstruck } from '../pages/magic/MagicGlyph';
 import { numberWord } from '../pages/magic/words';
+import { isolate } from '../pages/magic/Bidi';
 import { trackSearch } from '../lib/analytics';
 
 // Search across every hall at once — signs, divine names, lexicon, currents,
@@ -215,8 +216,11 @@ function ScriptoriumSearch({ scope = 'scriptorium', scripts = null }) {
                                             : r.x ? <span className="edu-search-native"><Unstruck /></span> : null}
                                 <span className="edu-search-body">
                                     <span className="edu-search-label">{r.l}</span>
-                                    {r.s && <span className="edu-search-sub">{r.s}</span>}
-                                    {r.d && <span className="edu-search-detail">{r.d}</span>}
+                                    {/* a subtitle or detail may quote Arabic or Hebrew (the letter
+                                        printed beneath a sign of the Shawq): each run is isolated,
+                                        named by its language and set upright (index.css) */}
+                                    {r.s && <span className="edu-search-sub">{isolate(r.s)}</span>}
+                                    {r.d && <span className="edu-search-detail">{isolate(r.d)}</span>}
                                 </span>
                                 <span className="edu-search-tag">
                                     {KIND_LABEL[r.k]}

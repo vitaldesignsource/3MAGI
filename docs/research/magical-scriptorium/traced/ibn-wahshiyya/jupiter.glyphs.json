@@ -300,7 +300,7 @@
     "plate": "Hammer 1806, Arabic p. 48, leaf 175 of Internet Archive b22039910 (b22039910_0175.jp2); cell = leaf pixels x 1400-1568, y 1417-1585",
     "position_as_printed": "row 2, 1st from the right (rows read from right to left)",
     "label_as_printed": "ط (the Arabic letter printed under the sign)",
-    "drawnFrom": "Getty copy, Internet Archive ancientalphabets01ibnw, page n176 (Arabic p. 48), row 2, 1st from the right, cut in the frame of the Wellcome cell above (registration in check/other/getty/jupiter/registration.json); the UNC copy (ancientalphabets00ibnw, page n53) agrees. The Wellcome cell (cellWellcome) shows the incomplete print."
+    "drawnFrom": "Getty copy, Internet Archive ancientalphabets01ibnw, page n176 (Arabic p. 48), row 2, 1st from the right, cut in the frame of the Wellcome cell above, registered onto the Wellcome page; the UNC copy (ancientalphabets00ibnw, page n53) agrees. The Wellcome cell (cellWellcome) shows the incomplete print."
    },
    "variants": "Wellcome copy: two separate bars with rings at their left ends, no right-hand side. Getty copy (ancientalphabets01ibnw, page n176) and UNC copy (ancientalphabets00ibnw, page n53): a closed right-hand side joins the bars (in the UNC copy it stands about 2 units further right than in the Getty copy)."
   },
@@ -947,7 +947,6 @@
  "check": {
   "by": "independent checker (not the tracer)",
   "date": "2026-10-20",
-  "summary": "Every sign compared with the Wellcome print and with the Getty and UNC copies, registered onto the same cells: label and order, strokes, joins, direction, ends, rings and balls, and proportion. Corrected: ط (redrawn as a closed ⊐ from the Getty and UNC copies; the Wellcome copy lacks its right-hand side), خ (upper end a ring, not a ball), ف (lower right end a ring, not a ball); notes of ز and س extended with the other copies' evidence.",
-  "rebuildWarning": "tools/build.py regenerates glyphs.json from tools/meta_<id>.py and work/<id>_geom.json. The checker mirrored its geometry corrections into work/<id>_geom.json, but the corrected strokes, notes, confidences, variants, cells and otherCopies live only in this file (and in check/tools/apply.py), so build.py must not be re-run without carrying them over."
+  "summary": "Every sign compared with the Wellcome print and with the Getty and UNC copies, registered onto the same cells: label and order, strokes, joins, direction, ends, rings and balls, and proportion. Corrected: ط (redrawn as a closed ⊐ from the Getty and UNC copies; the Wellcome copy lacks its right-hand side), خ (upper end a ring, not a ball), ف (lower right end a ring, not a ball); notes of ز and س extended with the other copies' evidence."
  }
 }
