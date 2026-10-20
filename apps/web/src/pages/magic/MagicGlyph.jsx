@@ -33,7 +33,14 @@ import { textOf } from './sign';
 // figures' printed asterisks, whose six short arms the 5.5 pen fills in at
 // plaque size): it is carried as --mg-pen and has-pen, and magic.css gives it
 // to the strokes in the plaque only; at text size the house pen stands.
+//
+// A figure drawn in fine lines (the Icelandic staves, whose crossbars and
+// forks the house pen fills into blots at every size) names `textPen` as well:
+// the pen it is drawn with everywhere but the plaque, where `pen` — its own
+// measured weight — takes over. Its rings are drawn with the same pen as its
+// strokes, as the specimen sheet drawn at the print's pen draws them.
 
+const HOUSE_PEN = 5.5;
 const HOUSE_RING = 6;
 const ringPen = (r) => (r < HOUSE_RING ? 2.6 : 3.6);
 
@@ -52,22 +59,28 @@ function MagicGlyph({ g, size, label, className }) {
         );
     }
     const rings = (g.rings ?? []).map(([x, y, r = HOUSE_RING]) => [x, y, r]);
+    const textPen = g.textPen ?? null;
+    // a ring's pen: the house ring pen, or a fine-lined figure's own pen
+    const penOf = (r) => (textPen != null ? Math.min(ringPen(r), textPen) : ringPen(r));
+    // the hole the strokes are masked by is the lightest the ring is ever drawn
+    // with, so the round caps never reach into it at any size
+    const lightest = (r) => Math.min(penOf(r), g.pen ?? Infinity);
     // one mask per drawn glyph: its id must be unique on the page
     const holes = rings.length && g.d ? `mg-holes${uid.replace(/[^A-Za-z0-9_-]/g, '')}` : null;
     return (
         <svg className={cls} width={size} height={size} viewBox="0 0 100 100" fill="none" stroke="currentColor"
-            strokeWidth="5.5" strokeLinecap="round" strokeLinejoin="round" {...a11y}
+            strokeWidth={textPen ?? HOUSE_PEN} strokeLinecap="round" strokeLinejoin="round" {...a11y}
             style={g.pen && !size ? { '--mg-pen': g.pen } : undefined}>
             {holes && (
                 <defs>
                     <mask id={holes} maskUnits="userSpaceOnUse" x="-5" y="-5" width="110" height="110">
                         <rect x="-5" y="-5" width="110" height="110" fill="#fff" stroke="none" />
-                        {rings.map(([x, y, r], i) => <circle key={i} cx={x} cy={y} r={r - ringPen(r) / 2} fill="#000" stroke="none" />)}
+                        {rings.map(([x, y, r], i) => <circle key={i} cx={x} cy={y} r={Math.max(0, r - lightest(r) / 2)} fill="#000" stroke="none" />)}
                     </mask>
                 </defs>
             )}
             <path d={g.d} mask={holes ? `url(#${holes})` : undefined} />
-            {rings.map(([x, y, r], i) => <circle key={`r${i}`} cx={x} cy={y} r={r} strokeWidth={ringPen(r)} />)}
+            {rings.map(([x, y, r], i) => <circle key={`r${i}`} className={textPen != null ? 'mg-ring' : undefined} cx={x} cy={y} r={r} strokeWidth={penOf(r)} />)}
             {(g.dots ?? []).map(([x, y, r = 2.6], i) => <circle key={`d${i}`} cx={x} cy={y} r={r} fill="currentColor" stroke="none" />)}
         </svg>
     );

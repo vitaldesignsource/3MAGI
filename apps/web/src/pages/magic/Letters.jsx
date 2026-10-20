@@ -1,6 +1,6 @@
 import React, { useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Sign, Unstruck } from './MagicGlyph';
+import MagicGlyph, { Sign, Unstruck } from './MagicGlyph';
 import { sharedNote } from './sign';
 import { isolate } from './Bidi';
 
@@ -27,6 +27,67 @@ const reservation = (l) => l.formReason || CONFIDENCE[l.formConfidence];
 const repeatsTranslit = (l) => l.translit != null && l.value != null && String(l.value).toLowerCase() === String(l.translit).toLowerCase();
 const POEMS = [['oldEnglish', 'Old English'], ['norwegian', 'Norwegian'], ['icelandic', 'Icelandic']];
 
+// An entry that is a table of numbers (the planets' magic squares) is not a
+// figure: its card wears a small ruled square of its side, and its plaque
+// gives the numbers. A letter of a ready alphabet with no form is an honest
+// gap, and wears the glyph kit's own gap mark, as the specimen sheet does —
+// not the unstruck seal, which marks a form still being traced.
+// (A geomantic figure's `rows` is a flat list of its point counts, not a table.)
+const isTable = (l) => Array.isArray(l.rows) && Array.isArray(l.rows[0]);
+
+function TableMark({ side }) {
+    const lo = 16, hi = 84, step = (hi - lo) / side;
+    const lines = Array.from({ length: side - 1 }, (_, i) => lo + step * (i + 1));
+    return (
+        <svg className="mg-glyph mg-table-mark" viewBox="0 0 100 100" fill="none" stroke="currentColor" aria-hidden="true">
+            <rect x={lo} y={lo} width={hi - lo} height={hi - lo} strokeWidth="4.5" />
+            {lines.map((v) => <path key={v} d={`M ${v} ${lo} V ${hi} M ${lo} ${v} H ${hi}`} strokeWidth={side > 6 ? 1.6 : 2.4} />)}
+        </svg>
+    );
+}
+
+// The sign a card or plaque wears: the table mark, the drawn or set sign, or
+// (on a ready page) the kit's gap mark.
+function LetterSign({ letter }) {
+    if (isTable(letter)) return <TableMark side={letter.rows.length} />;
+    if (!letter.glyph && !letter.char) return <MagicGlyph g={null} />;
+    return <Sign of={letter} />;
+}
+
+// A table's numbers, rows from the top, as the module gives them: a cell the
+// sources read two ways is left open, and a cell restored from the sums is
+// marked, each with its key under the table.
+function SquareTable({ letter }) {
+    const restored = new Set((letter.restoredCells || []).map(([r, c]) => `${r}-${c}`));
+    const open = letter.rows.some((row) => row.some((v) => v == null));
+    return (
+        <figure className="mg-square">
+            <table aria-label={`${letter.name}: ${letter.rows.length} rows of ${letter.rows.length}, read from the top`}>
+                <tbody>
+                    {letter.rows.map((row, r) => (
+                        <tr key={r}>
+                            {row.map((v, c) => {
+                                const fixed = restored.has(`${r + 1}-${c + 1}`);
+                                return (
+                                    <td key={c} className={v == null ? 'is-open' : fixed ? 'is-restored' : undefined}>
+                                        {v == null ? <span aria-label="read two ways">·</span> : v}
+                                    </td>
+                                );
+                            })}
+                        </tr>
+                    ))}
+                </tbody>
+            </table>
+            {(open || restored.size > 0) && (
+                <figcaption>
+                    {open && <span><span className="mg-square-key is-open">·</span> read two ways: see the note</span>}
+                    {restored.size > 0 && <span><span className="mg-square-key is-restored">n</span> unreadable in the transcription, restored from the sums</span>}
+                </figcaption>
+            )}
+        </figure>
+    );
+}
+
 // The hall a keyed value points into, with a link to that letter there.
 function ValueLink({ value, keyedTo, hallIndex }) {
     if (keyedTo === 'none' || hallIndex == null) return <>{value}</>;
@@ -44,14 +105,16 @@ function ValueLink({ value, keyedTo, hallIndex }) {
 // so neither the card nor the plaque wears a sign or speaks of one.
 function Plaque({ letter, mod, keyedTo, hebrewKey, hallIndex, formless }) {
     const drawn = Boolean(letter.glyph);
+    const table = isTable(letter);
     const form = drawn ? `drawn — ${reservation(letter)}`
         : letter.char ? `set in the font — ${reservation(letter)}`
-            : 'not shown: still to be traced';
+            : table ? 'a table of numbers, given below; not a figure'
+                : 'not drawn — the note says why';
     return (
         <aside className={`edu-letter-plaque mg-plaque${formless ? ' is-formless' : ''}`} aria-live="polite">
             {!formless && (
                 <div className="edu-plaque-glyph edu-glyph" aria-hidden="true">
-                    <Sign of={letter} />
+                    <LetterSign letter={letter} />
                 </div>
             )}
             <div className="edu-plaque-body">
@@ -79,6 +142,7 @@ function Plaque({ letter, mod, keyedTo, hebrewKey, hallIndex, formless }) {
                     </dl>
                 )}
                 {drawn && letter.strokes && <p className="mg-plaque-strokes"><span>Drawn</span> {letter.strokes}</p>}
+                {table && <SquareTable letter={letter} />}
                 {letter.note && <p className="edu-plaque-note">{isolate(letter.note)}</p>}
                 {(letter.variants || []).length > 0 && (
                     <div className="mg-variants">
@@ -179,6 +243,8 @@ export function LetterGrid({ mod, letters, keyedTo = 'none', direction = 'ltr', 
     const cols = mod.groups ? (uniform && sizes[0] <= 9 ? sizes[0] : Math.min(8, Math.max(...sizes))) : null;
     const quartered = Boolean(mod.groups) && sizes.every((n) => n % 4 === 0);
     const thirded = Boolean(mod.groups) && !quartered && sizes.every((n) => n % 3 === 0);
+    // groups of four or five (the planets) stand two to a row on a phone
+    const halved = Boolean(mod.groups) && !quartered && !thirded && Math.max(...sizes) <= 5;
 
     const onKeyDown = (e) => {
         const last = letters.length - 1;
@@ -193,7 +259,9 @@ export function LetterGrid({ mod, letters, keyedTo = 'none', direction = 'ltr', 
         document.getElementById(`mg-letter-${next}`)?.focus({ preventScroll: true });
     };
 
-    const card = ([l, i]) => (
+    // `wide`: the first card of an odd group, set across the row where the
+    // group stands two to a row (is-halved), so the group ends evenly
+    const card = ([l, i], wide = false) => (
         <button
             type="button"
             key={`${l.name}-${i}`}
@@ -201,10 +269,10 @@ export function LetterGrid({ mod, letters, keyedTo = 'none', direction = 'ltr', 
             role="option"
             aria-selected={selected === i}
             tabIndex={selected === i ? 0 : -1}
-            className={`edu-letter-card mg-letter-card${selected === i ? ' is-selected' : ''}${l.glyph ? ' is-drawn' : ''}${formless ? ' is-formless' : ''}`}
+            className={`edu-letter-card mg-letter-card${selected === i ? ' is-selected' : ''}${l.glyph ? ' is-drawn' : isTable(l) ? ' is-table' : !l.char && !formless ? ' is-gap' : ''}${formless ? ' is-formless' : ''}${wide ? ' is-wide' : ''}`}
             onClick={() => choose(i)}
         >
-            {!formless && <span className="edu-letter-glyph edu-glyph" dir={rtl ? 'rtl' : undefined}><Sign of={l} /></span>}
+            {!formless && <span className="edu-letter-glyph edu-glyph" dir={rtl ? 'rtl' : undefined}><LetterSign letter={l} /></span>}
             {/* a long word is set smaller so it breaks at a space, not inside the
                 word; a page's titles ("II.48 · Geomantic figures") sit in
                 tracked capitals with no sign above them, and break a letter sooner */}
@@ -232,17 +300,19 @@ export function LetterGrid({ mod, letters, keyedTo = 'none', direction = 'ltr', 
     // without sitting inside a listbox: a reader who clicks a planet sees its
     // plaque below the planets, not a screen or more further down.
     if (!mod.groups) {
+        // a name of eleven letters or more in one word needs a wider card
+        const longNames = letters.some((l) => String(l.name).split(/\s+/).some((w) => w.length >= 11));
         return (
             <>
                 <div
-                    className="edu-letter-grid mg-letter-groups"
+                    className={`edu-letter-grid mg-letter-groups${longNames ? ' has-long-names' : ''}`}
                     role="listbox"
                     aria-label={label}
                     aria-activedescendant={letter ? `mg-letter-${selected}` : undefined}
                     onKeyDown={onKeyDown}
                     dir={rtl ? 'rtl' : undefined}
                 >
-                    {groups[0].items.map(card)}
+                    {groups[0].items.map((it) => card(it))}
                 </div>
                 {plaque}
             </>
@@ -259,7 +329,7 @@ export function LetterGrid({ mod, letters, keyedTo = 'none', direction = 'ltr', 
                                 <span>{g.label}</span>{g.note && <em>{isolate(g.note)}</em>}
                             </p>
                             <div
-                                className={`edu-letter-grid mg-cols${quartered ? ' is-quartered' : ''}${thirded ? ' is-thirded' : ''}`}
+                                className={`edu-letter-grid mg-cols${quartered ? ' is-quartered' : ''}${thirded ? ' is-thirded' : ''}${halved ? ' is-halved' : ''}`}
                                 style={{ '--mg-cols': cols }}
                                 role="listbox"
                                 aria-labelledby={`mg-group-${g.key}`}
@@ -267,7 +337,7 @@ export function LetterGrid({ mod, letters, keyedTo = 'none', direction = 'ltr', 
                                 onKeyDown={onKeyDown}
                                 dir={rtl ? 'rtl' : undefined}
                             >
-                                {g.items.map(card)}
+                                {g.items.map((it, k) => card(it, halved && k === 0 && g.items.length % 2 === 1))}
                             </div>
                         </div>
                         {holds && plaque}

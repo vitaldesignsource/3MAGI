@@ -103,6 +103,9 @@ function MagicAlphabetPage() {
             : anyDrawn ? 'How the letters are drawn' : 'How the signs are set';
     const sample = (mod.sample?.orders || []).map((o) => letters[o - 1]).filter(Boolean);
     const plates = stub ? [] : (mod.plates || []);
+    // Several plates from one repository share one rights statement: it is
+    // given once, under the set, and each caption keeps its credit line.
+    const sharedRights = plates.length > 1 && plates.every((p) => p.rights === plates[0].rights) ? plates[0].rights : null;
     const others = ENTRIES.filter((e) => e.slug !== entry.slug);
 
     const sections = stub ? [] : [
@@ -200,10 +203,13 @@ function MagicAlphabetPage() {
                 )}
 
                 {plates.length > 0 && (
-                    <section className="mg-plates" aria-labelledby="mg-plates-heading">
+                    <section className={`mg-plates${plates.length > 1 ? ' is-set' : ''}`} aria-labelledby="mg-plates-heading">
                         <SectionHead kicker="The Page Itself" id="mg-plates-heading" title={plates.length > 1 ? 'The pages as printed' : 'The page as printed'}>
-                            <p>The printed page beside the drawings: the library’s own photograph, cropped and reduced for the web and otherwise unaltered. The caption names the copy.</p>
+                            <p>{mod.platesNote
+                                ? isolate(mod.platesNote)
+                                : `The printed page beside the drawings: the library’s own photograph, cropped and reduced for the web and otherwise unaltered. The caption names the copy.`}</p>
                         </SectionHead>
+                        <div className="mg-plate-list">
                         {plates.map((p) => (
                             <figure className={`mg-plate${p.height > p.width ? ' is-portrait' : ''}`} key={p.file}>
                                 <div className="mg-plate-frame">
@@ -211,7 +217,7 @@ function MagicAlphabetPage() {
                                 </div>
                                 <figcaption>
                                     <p className="mg-plate-caption">{isolate(p.caption)}</p>
-                                    <p className="mg-plate-rights"><span>Rights</span> {isolate(p.rights)}</p>
+                                    {!sharedRights && <p className="mg-plate-rights"><span>Rights</span> {isolate(p.rights)}</p>}
                                     <p className="mg-plate-links">
                                         <a href={`/media/${p.file}`} target="_blank" rel="noopener noreferrer">The image at full size</a>
                                         {p.url && (
@@ -223,6 +229,8 @@ function MagicAlphabetPage() {
                                 </figcaption>
                             </figure>
                         ))}
+                        </div>
+                        {sharedRights && <p className="mg-plate-rights mg-plates-rights"><span>Rights</span> {isolate(sharedRights)}</p>}
                     </section>
                 )}
 

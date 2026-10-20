@@ -21,6 +21,9 @@ export const BAD_GLYPHS = [
     ['a dot given as an object', { d: '', dots: [{ x: 50, y: 50 }] }],
     ['a pen heavier than the house pen', { d: 'M 10 10 L 20 20', pen: 8 }],
     ['a pen given as a string', { d: 'M 10 10 L 20 20', pen: '2.4' }],
+    ['a text pen heavier than the house pen', { d: 'M 10 10 L 20 20', pen: 1, textPen: 6 }],
+    ['a text pen with no plaque pen', { d: 'M 10 10 L 20 20', textPen: 2 }],
+    ['a plaque pen heavier than the text pen', { d: 'M 10 10 L 20 20', pen: 3, textPen: 2 }],
     ['a negative ring radius', { d: 'M 20 20 L 50 50', rings: [[50, 50, -6]] }],
     ['a ring centred on the stroke end, so the stroke crosses its hole', { d: 'M 20 20 L 50 50', rings: [[50, 50]] }],
     ['a ring eleven units past the stroke end', { d: 'M 20 50 L 50 50', rings: [[61, 50]] }],
@@ -34,6 +37,7 @@ export const GOOD_GLYPHS = [
     ['a stroke that stops at the edge of its ring', { d: 'M 20 50 L 44 50', rings: [[50, 50]] }],
     ['a larger ring, the stroke stopping at its edge', { d: 'M 20 50 L 42 50', rings: [[50, 50, 8]] }],
     ['an arc', { d: 'M 20 50 A 30 30 0 0 1 80 50' }],
+    ['a fine-lined figure with its own pens', { d: 'M 20 50 L 48.8 50', rings: [[50, 50, 1.2]], pen: 1, textPen: 1.5 }],
     ['a figure of points only', { d: '', rings: [], dots: [[34, 14, 8], [66, 14, 8], [50, 38, 8], [50, 62, 8], [50, 86, 8]] }],
 ];
 

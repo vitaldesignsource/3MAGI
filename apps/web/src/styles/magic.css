@@ -43,6 +43,9 @@
 /* a glyph that names a lighter pen (the geomantic figures' asterisks) takes it
    where it is drawn large, so its short arms are not filled in */
 .edu-plaque-glyph .mg-glyph.has-pen path { stroke-width: var(--mg-pen, 5.5); }
+/* a fine-lined figure (MagicGlyph's textPen) draws its rings with its strokes'
+   pen, so in the plaque they take its own measured weight too */
+.edu-plaque-glyph .mg-glyph.has-pen .mg-ring { stroke-width: var(--mg-pen, 3.6); }
 
 /* The unstruck seal: an empty ring with a dashed inner ring, where a form
    is still to be traced — the mark of this wing, as the empty seal is the
@@ -206,6 +209,13 @@
      chambers stand in the grid, read from the right */
   .edu-letter-grid.mg-cols.is-thirded { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 }
+/* groups of four or five (the planets: a table, then its seal and its
+   characters) stand two to a row on a phone, the table of an odd group
+   across the row, so that no group ends in a lone card */
+@media (max-width: 600px) {
+  .edu-letter-grid.mg-cols.is-halved { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .is-halved .mg-letter-card.is-wide { grid-column: 1 / -1; }
+}
 /* four to a row on a phone leaves a card about 80px wide: the names (the
    reconstructed *þurisaz, *kaunan) are set smaller so they break at spaces,
    not inside a word */
@@ -224,6 +234,14 @@
    of 100), so on a card it is set a little larger than the em, to stand as
    tall as a hall's letter beside it. */
 .mg-letter-card.is-drawn .edu-letter-glyph .mg-glyph:not(.is-figure) { width: calc(1.3em * var(--mg-scale, 1)); height: calc(1.3em * var(--mg-scale, 1)); }
+/* An alphabet whose names are long single words (the Icelandic staves) sets
+   its cards wider, so a name breaks between words or not at all. */
+.edu-letter-grid.has-long-names { grid-template-columns: repeat(auto-fill, minmax(8.6rem, 1fr)); }
+/* A table of numbers wears a small ruled square, and an honest gap the glyph
+   kit's own gap mark, both at a drawn sign's size and quieter than a sign. */
+.mg-letter-card.is-table .edu-letter-glyph .mg-glyph,
+.mg-letter-card.is-gap .edu-letter-glyph .mg-glyph { width: 1.3em; height: 1.3em; opacity: 0.7; }
+.mg-table-mark { color: rgba(209, 173, 104, 0.85); }
 /* and so wherever a drawn sign stands among set letters at text size — the
    comparison tables' cells, a search result, the transliterator's key and
    breakdown — so that none is drawn smaller than the letters beside it, and
@@ -262,6 +280,31 @@
 
 /* the plaque */
 .mg-plaque .edu-plaque-glyph { display: flex; align-items: center; justify-content: center; min-height: 1.2em; }
+/* a table's numbers, rows from the top: a cell read two ways is left open,
+   a cell restored from the sums is set in italic, each keyed below */
+.mg-square { margin: 0 0 0.9rem; max-width: 100%; overflow-x: auto; }
+.mg-square table { border-collapse: collapse; margin: 0; font-variant-numeric: tabular-nums lining-nums; }
+.mg-square td {
+  min-width: 1.9em;
+  padding: 0.18em 0.35em;
+  border: 1px solid rgba(179, 139, 70, 0.32);
+  color: #ecd9ae;
+  font-family: var(--edu-script-faces), Georgia, "Times New Roman", serif;
+  font-size: 0.92rem;
+  line-height: 1.4;
+  text-align: center;
+}
+.mg-square td.is-open, .mg-square-key.is-open { color: rgba(209, 173, 104, 0.6); }
+.mg-square td.is-restored, .mg-square-key.is-restored { font-style: italic; color: #f3e3bd; background: rgba(209, 173, 104, 0.09); }
+.mg-square figcaption { display: flex; flex-wrap: wrap; gap: 0.2rem 1.2rem; margin-top: 0.45rem; font-size: 0.8rem; color: rgba(222, 212, 196, 0.62); }
+.mg-square-key { display: inline-block; min-width: 1.2em; margin-right: 0.3rem; padding: 0 0.2em; border: 1px solid rgba(179, 139, 70, 0.32); text-align: center; }
+@media (max-width: 640px) {
+  .mg-square table { margin: 0 auto; }
+  .mg-square figcaption { justify-content: center; }
+}
+@media (max-width: 480px) {
+  .mg-square td { min-width: 1.6em; padding: 0.12em 0.2em; font-size: 0.78rem; }
+}
 .mg-plaque-gloss {
   color: rgba(222, 212, 196, 0.62);
   font-family: var(--edu-script-faces), Georgia, "Times New Roman", serif;
@@ -505,6 +548,29 @@
     align-content: start;
   }
 }
+/* A set of pages (the seven tables of II.22) stands as a grid of plates, each
+   image held to one height so a row reads as a row; the captions follow
+   their plates, and the one rights statement they share closes the set. */
+.mg-plates.is-set .mg-plate-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr));
+  gap: 1.4rem;
+  max-width: 76rem;
+  margin: 0 auto;
+}
+.mg-plates.is-set .mg-plate,
+.mg-plates.is-set .mg-plate.is-portrait { display: flex; flex-direction: column; align-items: stretch; max-width: none; margin: 0; }
+.mg-plates.is-set .mg-plate-frame { align-items: center; }
+.mg-plates.is-set .mg-plate-frame img { max-height: 30rem; }
+.mg-plates.is-set .mg-plate.is-portrait .mg-plate-frame img { max-height: min(36rem, 80vh); }
+.mg-plates.is-set .mg-plate figcaption,
+.mg-plates.is-set .mg-plate.is-portrait figcaption {
+  margin: 1rem 0 0;
+  padding: 0.85rem 0 0;
+  border-left: none;
+  border-top: 1px solid rgba(179, 139, 70, 0.18);
+}
+.mg-plates-rights { max-width: 50rem; margin: 1.4rem auto 0; }
 .mg-plate-links a {
   color: rgba(222, 212, 196, 0.8);
   text-decoration: none;

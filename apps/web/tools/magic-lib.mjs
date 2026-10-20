@@ -107,6 +107,13 @@ export function glyphProblems(g) {
     }
     // a lighter pen for where the glyph is drawn large (MagicGlyph.jsx)
     if (g.pen != null && !(isNum(g.pen) && g.pen > 0 && g.pen < 5.5)) out.push(`glyph.pen, if given, is a pen lighter than the house 5.5 (got ${g.pen})`);
+    // a fine-lined figure's pen at every size but the plaque's (MagicGlyph.jsx):
+    // lighter than the house pen, and given with its plaque pen, never heavier
+    if (g.textPen != null) {
+        if (!(isNum(g.textPen) && g.textPen > 0 && g.textPen < 5.5)) out.push(`glyph.textPen, if given, is a pen lighter than the house 5.5 (got ${g.textPen})`);
+        else if (!isNum(g.pen)) out.push('glyph.textPen is given with glyph.pen, the figure’s own weight in the plaque');
+        else if (g.pen > g.textPen) out.push(`glyph.pen (${g.pen}) is the figure’s own weight and is not heavier than its textPen (${g.textPen})`);
+    }
     const rings = g.rings ?? [];
     const dots = g.dots ?? [];
     let cmds;

@@ -1,4 +1,4 @@
-// Charaktêres: the Ring-Letters — forms pending.
+// Charaktêres: the Ring-Letters — five signs drawn from named plates.
 //
 // From the wing's research file charakteres.verified.json, with its fact-check
 // corrections applied. This entry is not an alphabet: its units are thirteen
@@ -7,9 +7,13 @@
 // Chnoubis sign of the gems, and the seven seals of Arabic magic in their
 // standard order. None is keyed to a sound, so every value is null.
 //
-// No form is drawn. Each sign keeps glyph: null until it is traced from the
-// source named in drawing.pending; the three kinds are to be shown by traced,
-// named examples, never by a composed drawing. Points the fact-check left
+// Five signs are drawn, each traced from a named plate (traced/charakteres/
+// glyphs.json; the traced path data unchanged): the three kinds and the sign
+// of P. Oslo 1 from Eitrem's plates of 1925, the Sethian sign from Wünsch's
+// drawing of 1898. The three kinds are shown by those named examples, never by
+// a composed drawing. The Chnoubis sign and the seven seals keep glyph: null,
+// for no plate of a gem or of the seals was gathered. No page is shown: the
+// copies used carry no repository's rights statement. Points the fact-check left
 // unresolved are left out (Frankfurter's hieroglyph thesis, Sepher ha-Razim,
 // the Glagolitic article, Sefer Raziel, Panteo, de Balmes's Hebrew label,
 // Macfarlane's "first printed" wording, Mathers, Dzwiza's sign count, the
@@ -31,13 +35,13 @@ export default {
     family: 'Not an alphabet: a stock of invented signs that stand for no sounds, made in the magic of Roman Egypt and the Roman world and carried on in Jewish, Coptic, Arabic and Latin magic. Many end their strokes in small rings. Medieval Jewish manuscripts set ring-ended signs one for one against the Hebrew letters as alphabets, and the three alphabets of Agrippa’s De occulta philosophia III.30 belong to that family, though no letter of them has been traced to a particular ancient sign.',
     keyedTo: 'none',
     direction: 'ltr',
-    status: 'forms-pending',
+    status: 'ready',
     summary: 'Charaktêres are invented signs that spell nothing. They appear in the Greek magical handbooks, curse tablets, amulets and gems of the Roman imperial period; the handbooks tell the user to copy them exactly, and some texts treat them as powers in their own right. Many end their strokes in small circles, hence the modern names ring-letters and Brillenbuchstaben. Jewish practitioners took them over in late antiquity, and Arabic magic has kindred signs in the seven seals. Medieval Jewish manuscripts set ring-ended signs one for one against the Hebrew letters as alphabets, and printed books carried alphabets of this kind into European learned magic: a Hebrew grammar printed at Venice in 1523 is reported to carry one, and Agrippa printed three in 1533.',
     intro: [
         'In the Greek magical handbooks of Roman Egypt, beside the names of gods and the strings of magical words, stand rows of signs that belong to no alphabet. Some are built on Greek capitals; many end their strokes in small circles, the rings that give them their modern names, ring-letters and, in German, Brillenbuchstaben, “spectacle letters”. They spell nothing and stand for no sound. The Greeks called them charaktêres, engraved or stamped marks. The handbooks tell the user to copy them exactly, some texts treat them as powers in their own right, and they were drawn on papyrus, scratched on lead curse tablets and thin metal amulets, and cut into gems.',
         'Modern scholarship treats them as made in that world: Richard Gordon writes of them as invented signs, and the University of Manchester’s Rylands blog dates them to roughly the second or third century CE. Late-antique writers took note of them. Augustine sets among the superstitions the marks that people call characteres, and Iamblichus, answering Porphyry, criticises those who think that standing on charaktêres is enough to bring inspiration. Jewish practitioners took the signs over and wrote them beside the names of angels; Gideon Bohak follows them from ancient amulets into medieval Jewish magic, where the usual Hebrew word for them is ḥotamot, “seals”, and where, on the Rylands blog’s account, they were generally treated as a script belonging to the angels. Arabic magic has kindred signs, best known as the seven seals, which within their tradition together stand for the Greatest Name of God.',
         'In medieval Jewish manuscripts the signs took a new shape: ring-ended signs set one for one against the twenty-two Hebrew letters, as alphabets. Early modern Christian scholars, as Kirsten Macfarlane describes, read these as celestial letters written by angels. A Hebrew grammar printed at Venice in 1523 is reported to carry one; Agrippa printed three in 1533, as writings found among the Hebrews, and named no source. The family likeness is plain. The descent of any one of their letters from any one ancient sign has not been shown.',
-        'This page therefore shows signs, not an alphabet: three kinds of ring-sign, defined by the features the studies name, the signs of two ancient sources named by their editions, the Chnoubis sign of the gems, and the seven seals of Arabic magic. No form is shown until it has been traced from a named edition or photograph; a drawing presented as an ancient sign that was not taken from one would be worse than a gap.',
+        'This page therefore shows signs, not an alphabet: three kinds of ring-sign, defined by the features the studies name, the signs of two ancient sources named by their editions, the Chnoubis sign of the gems, and the seven seals of Arabic magic. Each sign drawn is traced from a named plate, and the kinds are shown by named examples; the Chnoubis sign and the seven seals, for which no plate was to hand, are left undrawn, for a drawing presented as an ancient sign that was not taken from one would be worse than a gap.',
     ],
     firstAttestation: {
         work: 'No single first text: the Greek magical handbooks on papyrus, lead curse tablets, metal amulets (lamellae) and engraved gems of the Roman imperial period',
@@ -49,12 +53,16 @@ export default {
         notes: 'Because the signs have no first text, this names typical witnesses, not a first attestation. Richard Gordon’s study of 2011 is titled for them as invented signs: “Signa nova et inaudita: The Theory and Practice of Invented Signs (charaktêres) in Graeco-Egyptian Magical Texts”.',
     },
     drawing: {
-        pending: 'No sign is shown yet: each will appear when it has been traced from a named source. The signs of P. Oslo 1 are to be traced from the plates of Eitrem’s edition (Oslo, 1925), those of the Sethian tablets from Wünsch’s drawings (1898), the Chnoubis sign from photographs of gems in the Campbell Bonner Magical Gems Database, and the seven seals from a published plate in Winkler (1930) or Canaan (1937). Each of the three kinds of ring-sign will be shown by an example traced from one of these sources and named beside it, not by a composed drawing.',
-        follows: 'S. Eitrem, Papyri Osloenses I (Oslo, 1925), the plates of P. Oslo 1; R. Wünsch, Sethianische Verfluchungstafeln aus Rom (1898); the Campbell Bonner Magical Gems Database (CBd-152 and others); for the seven seals, a plate in H. A. Winkler, Siegel und Charaktere in der muhammedanischen Zauberei (1930), or in T. Canaan, “The Decipherment of Arabic Talismans” (1937).',
-        variants: 'One drawing is one witness, not the sign: scribes copied imperfectly, and copies of the same sign differ. Ring-ends may be drawn open or filled, and each tracing follows its own source without mixing the two. On the gems the Chnoubis sign’s bar may cross the curves, run below them (CBd-152) or be missing (CBd-1332); the seven seals vary from copy to copy, the first between a five- and a six-pointed star.',
+        follows: 'For the three kinds of ring-sign and the signs of P. Oslo 1 (PGM XXXVI): S. Eitrem, Papyri Osloenses, Fasc. I: Magical Papyri (Oslo: Det Norske Videnskaps-Akademi, 1925), the collotype plates of the papyrus — Plate VIII (“Pap. Osl. No. 1, Col. viii”) for the cross and the asterisk, Plate XI (“Col. xi”) for the stroke and the Γ — to which his text refers at pp. 11 and 13, in the Duke University Libraries copy (call number P. Oslo), digitised at the Internet Archive as papyriosloensesunse, leaves n172 and n178. For the Sethian tablets: R. Wünsch, Sethianische Verfluchungstafeln aus Rom (Leipzig: Teubner, 1898), p. 11, his drawing of tablet no. 7, in a copy uploaded to the Internet Archive whose holding library is not stated (leaf n20). Neither page is reproduced: the Duke copy’s digitisation carries no rights statement, and the copy of Wünsch is a private upload.',
+        drawn: 'Each sign is one example, traced as the centre line of its strokes from the photograph of the papyrus or from Wünsch’s drawing, at one scale for each source, so that the signs of one plate keep their sizes against one another. The drawing keeps what the source shows: the strokes and their bends, which ends are open rings and which are filled, and the ball at the foot of the asterisk, drawn as a dot. The rest is the site’s convention: one even round pen for the scribe’s strokes; the rings drawn as open circles at their measured centres, those of Wünsch’s Ν a little larger than he draws them; and blots of ink, fibres of the papyrus and specks that may or may not be marks left out, each note saying where. The three kinds are shown by these named examples, not by composed drawings. The Chnoubis sign and the seven seals are not drawn: no plate of a gem or of the seals was gathered.',
+        variants: 'One drawing is one witness, not the sign: scribes copied imperfectly, and copies of the same sign differ. No second copy of P. Oslo 1 could be compared — Eitrem’s typeset text refers the reader to the plates, Preisendanz’s second volume (1931) was not to hand, and only the Duke copy of Eitrem was seen — and for tablet no. 7 the lead was not seen and only one copy of Wünsch was used. Beside them the signs were compared with those printed by Kenyon (1893) and Wessely (1888, 1893) for PGM IV and VII, and with Wünsch’s tablet no. 6: there most four-ringed signs are saltires, the ring-ended asterisks have eight arms, not six, and none has a ball at its foot, and the Ν of tablet no. 7 recurs with fewer rings. On the gems the Chnoubis sign’s bar may cross the curves, run below them (CBd-152) or be missing (CBd-1332); the seven seals vary from copy to copy, the first between a five- and a six-pointed star.',
+    },
+    sample: {
+        orders: [1, 2, 3, 4, 5],
+        caption: 'A ring-ended stroke, cross and Γ and an asterisk from P. Oslo 1, and a Ν from a Sethian tablet.',
     },
     lettersTitle: 'The Signs',
-    scriptNote: 'Thirteen entries, none of them a letter. The first three are kinds of ring-sign, defined by the features the studies name, not signs of one object; then come the signs of a papyrus and of a group of curse tablets, named by their editions; the Chnoubis sign of the gems; and the seven seals of Arabic magic, in their standard order. None stands for a sound.',
+    scriptNote: 'Thirteen entries, none of them a letter. The first three are kinds of ring-sign, defined by the features the studies name, not signs of one object, each shown by one named example; then come the signs of a papyrus and of a group of curse tablets, named by their editions; the Chnoubis sign of the gems; and the seven seals of Arabic magic, in their standard order. None stands for a sound.',
     groups: [
         { key: 'kind', label: 'Three kinds of ring-sign', note: 'defined by the features the studies name' },
         { key: 'witness', label: 'Two ancient sources', note: 'named by their editions' },
@@ -62,32 +70,44 @@ export default {
         { key: 'seal', label: 'The seven seals', note: 'of Arabic magic, in their standard order' },
     ],
     letters: [
-        { order: 1, name: 'The ring-ended stroke', group: 'kind', value: null, translit: null, numeric: null, glyph: null, formConfidence: 'medium',
-            note: 'The simplest ring-sign: one straight stroke with a small ring at each end, the pair of rings that the German Brillenbuchstaben likens to spectacles. Ring-ends are the feature that every study cited here names. The kind will be shown by an example traced from one of the editions named above.' },
-        { order: 2, name: 'The ring-ended cross', group: 'kind', value: null, translit: null, numeric: null, glyph: null, formConfidence: 'medium',
-            note: 'Two strokes crossing at right angles, upright or slanting, with a ring at each of the four free ends. That this is a common shape among the ring-signs has yet to be confirmed from a plate, and the kind waits on an example traced from one of the editions named above.' },
-        { order: 3, name: 'The ring-ended capital', group: 'kind', value: null, translit: null, numeric: null, glyph: null, formConfidence: 'medium',
-            note: 'Many charaktêres are built on Greek capitals, upright or reversed, with rings or extra strokes added. Gordon (2011), as a later study reports him, counts thirty “basal signs” from which charaktêres are made, among them Α and Η. The kind will be shown by such a capital with rings at its free ends, traced from a named source.' },
-        { order: 4, name: 'The signs of P. Oslo 1 (PGM XXXVI)', group: 'witness', value: null, translit: null, numeric: null, glyph: null, formConfidence: 'low',
-            note: 'A magical handbook on papyrus, usually dated to the 4th century CE and known for its drawings and its rows of charaktêres. Its signs are to be traced from the plates of Eitrem’s edition (Oslo, 1925); no description of them is offered before then.' },
-        { order: 5, name: 'The signs of the Sethian tablets', group: 'witness', value: null, translit: null, numeric: null, glyph: null, formConfidence: 'low',
-            note: 'Lead curse tablets from Rome that carry drawn figures and charaktêres side by side, published by R. Wünsch in 1898 as “Sethian” curse tablets. Their signs are to be traced from his drawings.' },
-        { order: 6, name: 'The Chnoubis sign', group: 'gem', value: null, translit: null, numeric: null, glyph: null, formConfidence: 'high',
-            note: 'Three upright S-shaped curves crossed through their middles by one horizontal bar, with no rings: the sign of the gems, a contrast to the ring-letters. The Kelsey Museum describes one as “three reversed curves crossed by a horizontal line”. On one gem the bar runs below the curves (CBd-152), on another it is missing (CBd-1332), and on a third the curves lie over the body of the lion-headed serpent (CBd-1693).' },
-        { order: 7, name: 'The seal', group: 'seal', value: null, translit: 'khātam', numeric: null, glyph: null, formConfidence: 'medium',
-            note: 'The verses on the seven seals open, in paraphrase, with three staves set in a row after a seal. Lloyd Graham reports that the series begins with a star, a pentagram or a hexagram as the copy has it, and that al-Būnī gives this sign and the next to the Qurʾān.' },
-        { order: 8, name: 'The three staves', group: 'seal', value: null, translit: 'thalāth ʿiṣiyy', numeric: null, glyph: null, formConfidence: 'medium',
-            note: 'Second of the seven, and named in the opening half-line of the verses, which sets the three staves in a row after the seal.' },
+        { order: 1, name: 'The ring-ended stroke', group: 'kind', value: null, translit: null, numeric: null, formConfidence: 'medium',
+            glyph: { d: 'M 56.0 37.9 C 55.6 47 53.8 56 50.6 61.5 Q 48.4 69.6 44.6 70.5', rings: [[57.5, 33.1, 5], [40, 68.6, 5]] },
+            strokes: 'One stroke slanting down to the left from a ring at its top and turning at the foot into a second ring.',
+            formReason: 'one sign or half of one: the plate cannot say',
+            note: 'The simplest ring-sign: one straight stroke with a small ring at each end, the pair of rings that the German Brillenbuchstaben likens to spectacles. Ring-ends are the feature that every study cited here names. The example drawn is from P. Oslo 1, col. xi (Eitrem 1925, Plate XI), the left half of the fifth group in the row of signs after l. 263: almost straight, turning left at its foot into the lower ring. That group is two ring-topped strokes side by side, not joined, spaced like the other signs of the row, so whether it is one sign or two the plate cannot say. A dark fibre of the papyrus crosses the top ring, whose size is taken from its open left half.' },
+        { order: 2, name: 'The ring-ended cross', group: 'kind', value: null, translit: null, numeric: null, formConfidence: 'medium',
+            glyph: { d: 'M 50.1 28.4 C 50.6 42 49.6 52 47.6 59 Q 46 65 45.5 73.8 M 28.3 42.5 C 32 42.2 36 43.8 44 43.9 L 70.9 44.4', rings: [[49.5, 23.4, 5], [44.9, 78.8, 5], [24.2, 45.5, 5], [75.9, 45, 5]] },
+            strokes: 'An upright crossed above its middle by a level bar at right angles, with a ring on each of the four ends.',
+            formReason: 'a dark mark beside the upright may be a dot',
+            note: 'Two strokes crossing at right angles, upright or slanting, with a ring at each of the four free ends. The example drawn is from P. Oslo 1, col. viii (Eitrem 1925, Plate VIII), the seventh sign after “Ἀδωναί” at l. 203: the bar crosses above the middle, so the lower arm is the longest. A small round mark as dark as the ink sits in its lower right angle, a dot or a drop from the pen; it is not drawn. In the prints compared for this page most four-ringed crosses slant, as saltires; the upright ones stand in other arrangements, as on Wünsch’s tablets, where ring-ended uprights cross a long ring-ended bar.' },
+        { order: 3, name: 'The ring-ended capital', group: 'kind', value: null, translit: null, numeric: null, formConfidence: 'high',
+            glyph: { d: 'M 60.7 32.4 C 56.5 36.2 49 33.8 43.8 30.4 Q 41.6 46 36.6 64.7', rings: [[64.6, 29.3, 5], [34.6, 69.3, 5]] },
+            strokes: 'A Γ: an upright leaning slightly left with a ring at its foot, and a bar from its top running right into a ring.',
+            note: 'Many charaktêres are built on Greek capitals, upright or reversed, with rings or extra strokes added. Gordon (2011), as a later study reports him, counts thirty “basal signs” from which charaktêres are made, among them Α and Η. The example drawn is a Γ from P. Oslo 1, col. xi (Eitrem 1925, Plate XI), the fourth sign after l. 263, with a ring at each free end and none at the corner; whether Gordon counts Γ among his basal signs was not checked.' },
+        { order: 4, name: 'The signs of P. Oslo 1 (PGM XXXVI)', group: 'witness', value: null, translit: null, numeric: null, formConfidence: 'high',
+            glyph: { d: 'M 46.5 29.7 C 47.8 36 47.8 48 46.2 55 Q 45 62 45.2 77.2 M 28.1 34.3 Q 39 37.5 47.2 44.4 Q 56.5 50.4 71.4 53.6 M 65.3 34.7 Q 56 36.6 47.2 44.4 Q 35 51 26.4 62.5', rings: [[44.9, 25.5, 4.5], [23.6, 33.7, 4.5], [69.8, 34, 4.5], [75.9, 53.9, 4.5], [23.8, 66.2, 4.5]], dots: [[44.7, 78, 4.8]] },
+            strokes: 'An asterisk: an upright with a ring at the top and a solid ball at the foot, crossed by two diagonals that bend where they meet it, each diagonal ending in a ring at both ends.',
+            note: 'A magical handbook on papyrus, usually dated to the 4th century CE (“IV. saec. p. Chr.” in Eitrem’s edition) and known for its drawings and its rows of charaktêres, which stand on four of Eitrem’s plates, VII, VIII, XI and XII; his printed text does not reproduce them but refers to the plates. One sign stands for them here: the first after “Ἀδωναί” at l. 203, col. viii (Plate VIII), an asterisk of six ends, five of them open rings and the foot of the upright a solid ball, drawn as a dot. The crossing is blotted, so whether the diagonals are two strokes or four arms meeting there cannot be seen.' },
+        { order: 5, name: 'The signs of the Sethian tablets', group: 'witness', value: null, translit: null, numeric: null, formConfidence: 'high',
+            glyph: { d: 'M 32.4 23.9 L 32.2 63.5 Q 32 67.5 29.9 70.4 M 32.4 23.9 C 42 37.4 60 60.4 71.3 70.9 M 70.4 31.6 C 70.6 44 72.8 57 71.2 75.2', rings: [[31.7, 20.4, 3.5], [70.7, 28.1, 3.5], [28.4, 73.5, 3.5], [70.4, 78.9, 3.5]] },
+            strokes: 'A Ν with a ring on each of its four ends: two uprights, and a diagonal from the foot of the upper left ring down to the right upright, which it joins a little above the lower right ring.',
+            note: 'Lead curse tablets from Rome that carry drawn figures and charaktêres side by side, published by R. Wünsch in 1898 as “Sethian” curse tablets. Their signs are known from his drawings, which are his own freehand copies: he says that the state of the lead made a photograph or a rubbing impossible (p. 5). One sign stands for them here, from his drawing of tablet no. 7 (8 × 12 cm; p. 11): a Ν with a ring on each of its four ends, the first of three ring-ended signs to the right of the bust’s head. Its rings are drawn a little larger than Wünsch draws them, and close up into dots at text size. The same tablet has other Ν forms, with fewer rings, a dotted upright or a hook in place of a ring.' },
+        { order: 6, name: 'The Chnoubis sign', group: 'gem', value: null, translit: null, numeric: null, glyph: null, formConfidence: 'low',
+            note: 'Three upright S-shaped curves crossed through their middles by one horizontal bar, with no rings: the sign of the gems, a contrast to the ring-letters. The Kelsey Museum describes one as “three reversed curves crossed by a horizontal line”. On one gem the bar runs below the curves (CBd-152), on another it is missing (CBd-1332), and on a third the curves lie over the body of the lion-headed serpent (CBd-1693). It is not drawn: none of the plates gathered for this page shows an engraved gem, and a drawing must be traced from a gem that shows the bar through the middle, or be labelled with its own variant.' },
+        { order: 7, name: 'The seal', group: 'seal', value: null, translit: 'khātam', numeric: null, glyph: null, formConfidence: 'low',
+            note: 'The verses on the seven seals open, in paraphrase, with three staves set in a row after a seal. Lloyd Graham reports that the series begins with a star, a pentagram or a hexagram as the copy has it, and that al-Būnī gives this sign and the next to the Qurʾān. It is not drawn: no plate of the seven seals, in Winkler (1930) or Canaan (1937), was gathered for this page.' },
+        { order: 8, name: 'The three staves', group: 'seal', value: null, translit: 'thalāth ʿiṣiyy', numeric: null, glyph: null, formConfidence: 'low',
+            note: 'Second of the seven, and named in the opening half-line of the verses, which sets the three staves in a row after the seal. It is not drawn: no plate of the seven seals, in Winkler (1930) or Canaan (1937), was gathered for this page.' },
         { order: 9, name: 'The mīm', group: 'seal', value: null, translit: null, numeric: null, glyph: null, formConfidence: 'low',
-            note: 'A sign like the Arabic letter mīm (م), given with the ladder to the Gospel in al-Būnī’s grouping as Graham reports it. Whether its loop is filled or open, and whether it keeps a stub of a tail, is for the plate to show.' },
+            note: 'A sign like the Arabic letter mīm (م), given with the ladder to the Gospel in al-Būnī’s grouping as Graham reports it. Whether its loop is filled or open, and whether it keeps a stub of a tail, is for the plate to show. It is not drawn: no plate of the seven seals, in Winkler (1930) or Canaan (1937), was gathered for this page.' },
         { order: 10, name: 'The ladder', group: 'seal', value: null, translit: null, numeric: null, glyph: null, formConfidence: 'low',
-            note: 'The fourth seal is read as a ladder (Graham). How many uprights and rungs it has is not settled by the descriptions available.' },
-        { order: 11, name: 'The four strokes', group: 'seal', value: null, translit: null, numeric: null, glyph: null, formConfidence: 'medium',
-            note: 'Fifth of the seven, and the first of the three signs that al-Būnī, as Graham reports, gives to the Torah. How the strokes stand and end is for the plate to show.' },
-        { order: 12, name: 'The hāʾ', group: 'seal', value: null, translit: null, numeric: null, glyph: null, formConfidence: 'medium',
-            note: 'A sign like the Arabic letter hāʾ (ه), sixth of the seven, which Graham calls the split hāʾ. Whether it takes the two-eyed form of the letter (ھ) waits on a plate.' },
+            note: 'The fourth seal is read as a ladder (Graham). How many uprights and rungs it has is not settled by the descriptions available. It is not drawn: no plate of the seven seals, in Winkler (1930) or Canaan (1937), was gathered for this page.' },
+        { order: 11, name: 'The four strokes', group: 'seal', value: null, translit: null, numeric: null, glyph: null, formConfidence: 'low',
+            note: 'Fifth of the seven, and the first of the three signs that al-Būnī, as Graham reports, gives to the Torah. How the strokes stand and end is for the plate to show. It is not drawn: no plate of the seven seals, in Winkler (1930) or Canaan (1937), was gathered for this page.' },
+        { order: 12, name: 'The hāʾ', group: 'seal', value: null, translit: null, numeric: null, glyph: null, formConfidence: 'low',
+            note: 'A sign like the Arabic letter hāʾ (ه), sixth of the seven, which Graham calls the split hāʾ. Whether it takes the two-eyed form of the letter (ھ) waits on a plate. It is not drawn: no plate of the seven seals, in Winkler (1930) or Canaan (1937), was gathered for this page.' },
         { order: 13, name: 'The wāw', group: 'seal', value: null, translit: null, numeric: null, glyph: null, formConfidence: 'low',
-            note: 'A sign like the Arabic letter wāw (و), the last of the seven and the third of those al-Būnī is reported to give to the Torah. Graham calls it the inverted wāw; which way it is turned is to be taken from a plate.' },
+            note: 'A sign like the Arabic letter wāw (و), the last of the seven and the third of those al-Būnī is reported to give to the Torah. Graham calls it the inverted wāw; which way it is turned is to be taken from a plate. It is not drawn: no plate of the seven seals, in Winkler (1930) or Canaan (1937), was gathered for this page.' },
     ],
     transmission: [
         { slug: 'imperial', title: 'Handbooks, tablets, amulets and gems', kind: 'practice', year: 100, end: 300, circa: true, circaEnd: true, when: 'Roman imperial period',
@@ -214,7 +234,7 @@ export default {
         { to: 'theban', relation: 'A contrast: keyed to the Latin letters, and not a ring-letter alphabet.' },
     ],
     cautions: [
-        'No sign is shown on this page yet. The first three entries are kinds, not signs of a particular papyrus, tablet or gem, and each will be shown by a named, traced example.',
+        'The first three entries are kinds, not signs of a particular papyrus, tablet or gem; each is shown by one named, traced example, which is one witness, not the kind. The Chnoubis sign and the seven seals are not drawn.',
         'The ancient charaktêres are not an alphabet or a cipher. Setting ring-signs against letters is medieval.',
         '“The angelic script” is a later explanation, not a fact about the signs: later Jewish and Christian users called ring-letter alphabets the writing of the angels.',
         'The seven seals and the Greatest Name belong to living Islamic devotional and amulet practice, and are described here, not endorsed or mocked. The tradition ascribes the seals’ discovery and their verses to ʿAlī; that ascription is legend.',
@@ -222,7 +242,7 @@ export default {
         'Brillenbuchstaben, “spectacle letters”, is a modern scholarly term, not an ancient one.',
         'Copies of the same sign differ, because scribes copied imperfectly. One drawing is one witness, not the sign.',
         'Iamblichus reports Porphyry’s account of standing on charaktêres in order to criticise it; he neither endorses nor neutrally describes the practice.',
-        'The standard editions of the ancient material (Preisendanz, Betz, Wünsch, Eitrem, Bonner) are named as works of reference and as the sources to trace from; this page cites no page or plate in them.',
+        'The standard editions of the ancient material (Preisendanz, Betz, Bonner) are named as works of reference. The drawings cite Eitrem’s Plates VIII and XI and Wünsch’s p. 11, and the page cites no other page or plate in them.',
     ],
     sources: [
         { citation: 'Gideon Bohak, “The Charaktêres in Ancient and Medieval Jewish Magic”, Acta Classica Universitatis Scientiarum Debreceniensis 47 (2011), 25–44 (open access).', url: 'https://ojs.lib.unideb.hu/classica/article/view/8015' },
@@ -238,7 +258,9 @@ export default {
         { citation: 'K. Preisendanz (ed.), Papyri Graecae Magicae: Die griechischen Zauberpapyri, 2 vols (Leipzig and Berlin: Teubner, 1928–31; 2nd ed. A. Henrichs, Stuttgart, 1973–74).' },
         { citation: 'H. D. Betz (ed.), The Greek Magical Papyri in Translation, Including the Demotic Spells (Chicago: University of Chicago Press, 1986; 2nd ed. 1992).' },
         { citation: 'S. Eitrem, Papyri Osloenses I: Magical Papyri (Oslo, 1925): P. Oslo 1 (PGM XXXVI).' },
+        { citation: 'The same, Duke University Libraries copy, digitised at the Internet Archive: Plates VIII and XI, from which four of the signs are traced.', url: 'https://archive.org/details/papyriosloensesunse/page/n172/mode/1up' },
         { citation: 'R. Wünsch, Sethianische Verfluchungstafeln aus Rom (Leipzig: Teubner, 1898).' },
+        { citation: 'The same, a copy digitised at the Internet Archive (holding library not stated): p. 11, tablet no. 7, from which the Sethian sign is traced.', url: 'https://archive.org/details/Sethianische/page/n20/mode/1up' },
         { citation: 'C. Bonner, Studies in Magical Amulets, Chiefly Graeco-Egyptian (Ann Arbor: University of Michigan Press, 1950).' },
         { citation: 'Campbell Bonner Magical Gems Database, CBd-152: three S-shaped lines with a horizontal line below.', url: 'https://cbd.mfab.hu/cbd/152' },
         { citation: 'Kelsey Museum of Archaeology, “The Art and Science of Healing”: stomach amulets with the Chnoubis sign.', url: 'https://exhibitions.kelsey.lsa.umich.edu/art-science-healing/stomach1.php' },

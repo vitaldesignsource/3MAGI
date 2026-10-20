@@ -1,4 +1,4 @@
-// The Voynich Script — forms pending.
+// The Voynich Script — the glyphs drawn from Beinecke MS 408.
 //
 // From the wing's research file voynich.verified.json. Both the research pass
 // and its fact-check ran after the web-search budget was spent, so the file's
@@ -14,8 +14,9 @@
 // dates and anagram, the list of lost leaves and the section folios, journal
 // volumes and issues, the f1r line in EVA, the EVA pairing of the ornate
 // gallows, and any frequency ranking. The research's one URL was struck out by
-// the fact-check, so no source carries a link. Both quotations were withheld
-// for want of a checked text, so none is given.
+// the fact-check; the only links are to the Library's own images, which the
+// tracing used. Both quotations were withheld for want of a checked text, so
+// none is given.
 //
 // The review (with a few web searches) changed three points against the
 // research: Tiltman reported Friedman's constructed-language view and did not
@@ -27,8 +28,12 @@
 // "usually cited", and only a reply to Marci is said to be unknown.
 //
 // The units are EVA glyphs, not letters with values: an undeciphered script has
-// none. No form is drawn; every glyph is glyph: null until it is traced from the
-// Beinecke's images of MS 408 with its folio named.
+// none. Nineteen are drawn, each traced from one instance in the Beinecke's
+// images of MS 408, with its word, folio and line named in its note
+// (traced/voynich/glyphs.json, independently checked; the traced path data
+// unchanged). The class of rare glyphs keeps glyph: null. No image is shown:
+// Yale's record for the images carries a caution, not a statement that they
+// are free of restrictions.
 export default {
     slug: 'voynich',
     title: 'The Voynich Script',
@@ -40,7 +45,7 @@ export default {
     family: 'Not a magical alphabet with a known key, but an unread script known from one manuscript, with no Unicode encoding and no accepted sound values. It stands beside the secret and cipher alphabets of the fifteenth to seventeenth centuries because it is the most famous unread script of the European tradition. No link with Trithemius, Agrippa or the angelic alphabets is documented.',
     keyedTo: 'none',
     direction: 'ltr',
-    status: 'forms-pending',
+    status: 'ready',
     summary: 'Beinecke MS 408 at Yale is a small illustrated book on vellum, written throughout in a script found in no other document. Radiocarbon tests place its vellum in the early fifteenth century; it is first documented in Prague, in 1639, and it takes its name from the bookseller Wilfrid Voynich, who bought it and made it famous. It has been read as a cipher, as a natural language in an invented script, as a constructed language and as a meaningless hoax; no reading has been accepted.',
     intro: [
         'Beinecke MS 408 is a small book of vellum leaves, painted with plants, with diagrams of the stars and medallions of the zodiac, with figures bathing and with jars, and written from beginning to end in a script found in no other document. Its readers have named its sections from the pictures — herbal, astronomical, “balneological”, pharmaceutical — because the text has given them nothing else to name them by. No reading of it has been accepted.',
@@ -58,53 +63,99 @@ export default {
         notes: 'Radiocarbon dates the death of the animals whose skins became the vellum, not the writing. Most scholars take the writing to be close in date, because vellum was seldom kept blank for decades, but that is an inference. Before the tests, dates from the thirteenth century (for Bacon) to the sixteenth had been proposed. A faint inscription at the foot of the first leaf, read as the name of Jacobus Horcicky de Tepenec, a chemist at the court of Rudolf II, may be an older trace of an owner than Baresch’s letter; but it is written in the book, not in a separate document, and whose hand wrote it is debated.',
     },
     drawing: {
-        pending: 'The glyphs are being traced from the manuscript itself — Beinecke MS 408, on vellum of the early fifteenth century (the radiocarbon range usually cited is 1404–1438) — in the Beinecke Library’s own digital images, each drawing naming the folio it follows. Until a glyph is traced, no form is shown.',
-        follows: 'Beinecke MS 408, the only witness of the script: each glyph from a named folio. Modern Voynich fonts and charts are not used as a base.',
-        variants: 'There are no editions to differ, only one manuscript and its transcriptions. The transcriptions disagree on where words divide, on how many minims some runs hold and on the rare glyphs; and the hands differ — Prescott Currier saw at least two, and Lisa Fagin Davis has argued for five.',
+        follows: 'Beinecke Rare Book and Manuscript Library, Yale University, MS 408, the only witness of the script, in the Library’s own digital images (Yale Digital Collections, object 2002046): sixteen glyphs from f. 2r (image 1006078), m from f. 4r (image 1006082), and p and f from f. 6r (image 1006086) — all in quire 1, the herbal section, in Currier’s language A and one hand. Each glyph is one instance in a named word, its folio and line as in the ZL transliteration of Zandbergen and Landini (version 3b, 13 May 2025). The images are not reproduced here: Yale’s record for them states no open licence.',
+        drawn: 'Each glyph is traced as the centre line of the scribe’s strokes, all at one scale from pages photographed at one scale, so that they keep their sizes relative to one another — an o a quarter to a third of a gallows’ height — but each is centred in its own box, not set on a common writing line. The drawing keeps what the ink shows: which loops close and which stay open, where strokes cross, the feet and flicks at the ends of minims, and a hairline where it runs on. The rest is the site’s convention: one even round pen for the scribe’s varying stroke, and for p and f an instance from mid-paragraph, where the first lines of paragraphs draw them larger and more freely. Of the four benched gallows only cth is drawn, and the class of rare glyphs, which has no one form, is not drawn.',
+        variants: 'There are no editions to differ, only one manuscript and its transcriptions, so each glyph was compared with itself elsewhere in the book: in other words of quire 1, in the same hand, and in the Currier B hands of f. 78r and f. 103r, which make the same constructions with differences of slant, size and length — y’s tail bends back in f. 78r, and sh’s plume is shorter and rounder there. Every traced instance was also compared with an older set of photographs of MS 408, uploaded to the Internet Archive in 2008 without a stated source, which show the same strokes. The transcriptions disagree on where words divide, on how many minims some runs hold and on the rare glyphs; and the hands differ — Prescott Currier saw at least two, and Lisa Fagin Davis has argued for five. Modern Voynich fonts and charts are not used as a base.',
+    },
+    sample: {
+        orders: [8, 12, 16, 18],
+        caption: 'The four gallows, k, t, p and f, as written on ff. 2r and 6r.',
     },
     lettersTitle: 'The Glyphs',
-    scriptNote: 'Twenty units, named in EVA, the transcription alphabet researchers commonly use. Each EVA letter was chosen for the look of a glyph and claims no sound: the script has no accepted values and no numbers. EVA writes some single glyphs as strings of strokes — the “bench” as ch, a gallows set over a bench as cth — so that a transcriber need not decide in advance which strokes make one sign. The example words are EVA spellings as researchers commonly quote them. The order is the site’s own, for display; it is not a ranking by frequency.',
+    scriptNote: 'Twenty units, named in EVA, the transcription alphabet researchers commonly use. Each EVA letter was chosen for the look of a glyph and claims no sound: the script has no accepted values and no numbers. EVA writes some single glyphs as strings of strokes — the “bench” as ch, a gallows set over a bench as cth — so that a transcriber need not decide in advance which strokes make one sign. The example words are EVA spellings as researchers commonly quote them. Each drawn glyph is one instance, traced from a named word on a named folio. The order is the site’s own, for display; it is not a ranking by frequency.',
     letters: [
-        { order: 1, name: 'o', value: null, translit: 'o', numeric: null, glyph: null, formConfidence: 'high',
-            note: 'Like a Latin minuscule o: a small closed loop on the line. It often begins a word — ol, or, ok-, ot- — and q is almost always followed by it, as in qokeedy.' },
-        { order: 2, name: 'e', value: null, translit: 'e', numeric: null, glyph: null, formConfidence: 'medium',
-            note: 'A small curve open to the right, like a Latin c, narrower than the bench and not joined to its neighbour. It stands single in chedy and shedy, doubled in qokeedy, and is sometimes tripled. EVA calls it e for its look; it does not stand for the sound e.' },
-        { order: 3, name: 'ch', value: null, translit: 'ch', numeric: null, glyph: null, formConfidence: 'medium',
-            note: 'The “bench”, as researchers call it: two c-curves side by side, joined across their tops by one short stroke. EVA spells it with two letters because it writes the script stroke by stroke, but on the page it behaves as one sign, at the start of words and within them: chedy, chol, chor, chey. EVA’s c and h scarcely occur except in this sign, in sh and in the benched gallows.' },
-        { order: 4, name: 'y', value: null, translit: 'y', numeric: null, glyph: null, formConfidence: 'medium',
-            note: 'A bowl like that of a, but with the stroke on its right running below the line and curling back to the left, so that it looks like a numeral 9; the older transcriptions wrote it so. Common at the end of words (-dy, -ey: chedy, qokeedy), it also begins them.' },
-        { order: 5, name: 'a', value: null, translit: 'a', numeric: null, glyph: null, formConfidence: 'medium',
-            note: 'A small round bowl with a short down-stroke against its right side, like a one-storey Latin a; nothing rises above the line. It is usually followed by i, l, r or n: aiin, daiin, al, ar, dar.' },
-        { order: 6, name: 'd', value: null, translit: 'd', numeric: null, glyph: null, formConfidence: 'medium',
-            note: 'Like a numeral 8 with its upper loop left open: a small bowl, with a stroke rising from its right side above the line and curling back to the left. The older transcriptions wrote it 8. It begins the much-repeated word daiin and often stands before y: dy, chedy.' },
-        { order: 7, name: 'i', value: null, translit: 'i', numeric: null, glyph: null, formConfidence: 'high',
-            note: 'A single short upright stroke, a minim, with no dot. It comes in runs of one, two or three, rarely four, and every run ends in n, r, l or m — the ii of aiin and daiin. Transcriptions disagree on how many minims some runs hold, one reason EVA writes them stroke by stroke.' },
-        { order: 8, name: 'k', value: null, translit: 'k', numeric: null, glyph: null, formConfidence: 'low',
-            note: 'A “gallows”: one of four tall glyphs with an upright stem and a loop at the top, and with t one of the two plain ones. Common inside words, mostly after o or e — qokeedy, qokedy, okaiin — and also after the bench, as in chky. What distinguishes it from t will be shown by the tracing.' },
-        { order: 9, name: 'l', value: null, translit: 'l', numeric: null, glyph: null, formConfidence: 'low',
-            note: 'Often likened to a cursive Latin l: a stroke rising above the line, with a small loop near its foot; where the loop closes, and which way the top bends, are uncertain. Common at the end of words and before o or k: ol, al, chol, shol, lkeedy.' },
-        { order: 10, name: 'r', value: null, translit: 'r', numeric: null, glyph: null, formConfidence: 'low',
-            note: 'A short glyph ending on the line, which early transcribers likened to a numeral 2; whether its top is a hook or a small loop is uncertain. Mostly at the end of words — or, ar, dar, chor — or before a final y, as in shory.' },
-        { order: 11, name: 'q', value: null, translit: 'q', numeric: null, glyph: null, formConfidence: 'medium',
-            note: 'Like a numeral 4; the older transcriptions wrote the pair qo as 4o. It is almost always the first glyph of a word and almost always followed by o: qokeedy, qokain, qotedy. Whether its top closes in a point or in a small loop is uncertain.' },
-        { order: 12, name: 't', value: null, translit: 't', numeric: null, glyph: null, formConfidence: 'low',
-            note: 'The second plain gallows: tall, with an upright stem and a loop at the top like k, from which it differs in the arrangement of its loop or loops. Common inside words — qotedy, otedy, chtey — and it is the gallows of the benched cth.' },
-        { order: 13, name: 'sh', value: null, translit: 'sh', numeric: null, glyph: null, formConfidence: 'medium',
-            note: 'The bench with a “plume”: a small curved stroke rising from its top and arching back over it. Common at the start of words: shedy, shol, shory. Whether the plume springs from the left curve or from the joining stroke is uncertain.' },
-        { order: 14, name: 'n', value: null, translit: 'n', numeric: null, glyph: null, formConfidence: 'low',
-            note: 'Closes a run of i-minims: a minim whose top turns into a curved stroke, so that iin looks a little like a cursive iiv; which way the curve turns is uncertain. Almost only at the end of a word, after a or i: aiin, daiin, qokaiin, ain.' },
-        { order: 15, name: 's', value: null, translit: 's', numeric: null, glyph: null, formConfidence: 'low',
-            note: 'Standing alone it is described as the left half of sh — a c-curve with the same rising plume — which is why EVA chose the letter, so that sh is s with h. Found at the start and the end of words: sol, sar, chs. Some transcribers confuse it with r.' },
-        { order: 16, name: 'p', value: null, translit: 'p', numeric: null, glyph: null, formConfidence: 'low',
-            note: 'One of the two ornate gallows, tall like t, with a larger or an extra loop. Like f, it stands mostly in the first line of a paragraph, as in pchedy.' },
-        { order: 17, name: 'm', value: null, translit: 'm', numeric: null, glyph: null, formConfidence: 'low',
-            note: 'Like n, but with a longer final stroke that sweeps down or round; its exact form is uncertain. It closes a run of minims or follows a, almost only at the end of a word and often at the end of a line: am, dam, aim, oram.' },
-        { order: 18, name: 'f', value: null, translit: 'f', numeric: null, glyph: null, formConfidence: 'low',
-            note: 'The other ornate gallows: tall, with a larger or an extra loop than the plain gallows have. Like p, it stands mostly in the first lines of paragraphs.' },
-        { order: 19, name: 'cth, ckh, cph, cfh', value: null, translit: 'cth, ckh, cph, cfh', numeric: null, glyph: null, formConfidence: 'low',
-            note: 'A gallows set over a bench: the two c-curves of ch at its foot, and the bench’s joining stroke running into or through it. EVA spells it c, gallows, h, and each of the four gallows can be benched; cthy, ckhy and cphy are common words.' },
+        { order: 1, name: 'o', value: null, translit: 'o', numeric: null, formConfidence: 'high',
+            glyph: { d: 'M 52.8 42.3 C 57.1 41.9 59.1 46.1 58 50.4 C 56.8 55.1 52.5 58.2 48.9 57.9 C 44.9 57.6 43.2 53.3 44.1 49.7 C 45.3 45.4 49.1 42.7 52.8 42.3 Z' },
+            strokes: 'One small closed oval on the line, leaning slightly to the right, about as tall as the bowl of a.',
+            note: 'Like a Latin minuscule o: a small closed loop on the line. It often begins a word — ol, or, ok-, ot- — and q is almost always followed by it, as in qokeedy. Drawn from otchal, f. 2r, line 1.' },
+        { order: 2, name: 'e', value: null, translit: 'e', numeric: null, formConfidence: 'high',
+            glyph: { d: 'M 49.5 41.7 C 44.8 40.3 39.1 41.9 37.7 45.7 C 34.8 50.4 37.4 54.6 43 54.6 C 48.1 54.2 51.4 52.7 54.3 51.5' },
+            strokes: 'One small c-curve open to the right: from its head it turns left, down round the bowl and runs out to the right along the line. No tick at the head.',
+            note: 'A small curve open to the right, like a Latin c, narrower than the bench and not joined to its neighbour. It stands single in chedy and shedy, doubled in qokeedy, and is sometimes tripled. EVA calls it e for its look; it does not stand for the sound e. Drawn from qokey, f. 2r, line 9; no instance checked has a tick at its head.' },
+        { order: 3, name: 'ch', value: null, translit: 'ch', numeric: null, formConfidence: 'high',
+            glyph: { d: 'M 39.1 42.9 C 35.8 44.3 35.2 50 35.8 52.4 C 36.5 56.2 41 57.2 48.1 56.5 M 39.1 42.9 L 65.2 42.2 M 71.3 42.4 C 67.1 42.4 64 44.8 63.7 49.1 C 63.8 53.3 66.7 55.6 70.9 55.7 L 74.4 55' },
+            strokes: 'Two c-curves side by side on the line, joined across their heads by one straight stroke that runs from the head of the left c to the head of the right c, whose head projects a little beyond the join.',
+            note: 'The “bench”, as researchers call it: two c-curves side by side, joined across their tops by one short stroke. EVA spells it with two letters because it writes the script stroke by stroke, but on the page it behaves as one sign, at the start of words and within them: chedy, chol, chor, chey. EVA’s c and h scarcely occur except in this sign, in sh and in the benched gallows. Drawn from chy, f. 2r, line 3: the joining stroke runs straight from the head of the left c to the head of the right one, which projects a little beyond it.' },
+        { order: 4, name: 'y', value: null, translit: 'y', numeric: null, formConfidence: 'high',
+            glyph: { d: 'M 54.6 32 C 48.1 30.6 43.4 34.8 43.6 39.6 C 43.9 45.3 48.6 47.6 52.4 45.4 M 53.8 31.6 C 57.4 33.7 60.4 39.4 60.6 46.5 C 60.9 54.7 58.1 63.3 53.2 69.5' },
+            strokes: 'A small bowl, and from its head a stroke that bulges out to the right and runs down well below the line, ending towards the lower left: a 9.',
+            note: 'A bowl like that of a, with the stroke on its right running down below the line, so that it looks like a numeral 9; the older transcriptions wrote it so. Common at the end of words (-dy, -ey: chedy, qokeedy), it also begins them. Drawn from chy, f. 2r, line 3: in this hand the tail runs down to the lower left and does not curl back; in the Currier B hand of f. 78r it is longer and bends back to the left at its foot.' },
+        { order: 5, name: 'a', value: null, translit: 'a', numeric: null, formConfidence: 'medium',
+            glyph: { d: 'M 53.8 43.4 C 49.1 41.5 45.3 44.8 45.3 49.5 C 45.6 53.5 50 56.2 55.8 54.6 M 53.4 43 C 55.2 46.7 56.6 50.9 57.6 54 C 58.8 55.2 60.9 54.1 62.6 52.3' },
+            strokes: 'A small bowl (a c-curve) closed against a short minim on its right; the minim slants from the head of the bowl down to the line and ends in a small flick up to the right. Nothing rises above or falls below the line.',
+            formReason: 'the bowl and the down-stroke merge in the ink',
+            note: 'A small round bowl with a short down-stroke against its right side, like a one-storey Latin a; nothing rises above the line. It is usually followed by i, l, r or n: aiin, daiin, al, ar, dar. Drawn from daiin, f. 2r, line 1. At this size the right side of the bowl and the down-stroke merge into one dark band, so whether the bowl is a c joined to a minim or a closed loop with a stem cannot be seen; the down-stroke ends in a small flick up to the right.' },
+        { order: 6, name: 'd', value: null, translit: 'd', numeric: null, formConfidence: 'medium',
+            glyph: { d: 'M 55.6 44.4 C 57.9 41.6 58.2 37 53.3 35.5 C 48.4 34.2 46.6 38.9 47.7 42.7 C 49.5 46.3 52.8 48.4 54.6 50.5 C 56.9 53.9 55.3 61 50.3 62.8 C 44.6 64.1 41.7 61 42.7 57.5 C 43.4 53.9 46.7 51.3 50.5 50.4' },
+            strokes: 'Two loops one above the other like an 8, in one stroke: from the right of the upper loop over its head and down its left side, diagonally across the waist to the right, round the lower bowl (down its right side, under it, up its left side) and back to the waist. The upper loop ends just short of the waist.',
+            formReason: 'the upper loop is open here and closed elsewhere',
+            note: 'Like a numeral 8: a lower bowl and, above it, a smaller loop made by the same stroke. The older transcriptions wrote it 8. It begins the much-repeated word daiin and often stands before y: dy, chedy. Drawn from daiin, f. 2r, line 1, where the upper loop stops a hair short of the waist and is just open; in other instances, such as dals on f. 2r, line 4, it closes.' },
+        { order: 7, name: 'i', value: null, translit: 'i', numeric: null, formConfidence: 'high',
+            glyph: { d: 'M 51.6 44 C 53.3 48.4 55.1 52.9 56.9 56.2 C 58.2 57.5 60.1 56.9 62 55.2' },
+            strokes: 'A single short minim slanting down to the right and ending on the line in a small foot turned up to the right; no dot.',
+            note: 'A single short stroke, a minim, with no dot; in this hand it slants down to the right and ends on the line in a small foot turned up to the right. It comes in runs of one, two or three, rarely four, and every run ends in n, r, l or m — the ii of aiin and daiin. Transcriptions disagree on how many minims some runs hold, one reason EVA writes them stroke by stroke. Drawn from the first i of daiin, f. 2r, line 1.' },
+        { order: 8, name: 'k', value: null, translit: 'k', numeric: null, formConfidence: 'high',
+            glyph: { d: 'M 37.5 27.3 C 36.7 39.7 37.1 58.6 36.7 73.8 M 37.1 43.1 L 50.2 43.6 M 52.6 42.1 C 59.5 41.1 64.7 33 64.2 27.3 C 63.8 23.1 57.6 22.1 54.3 22.6 C 51.4 23.1 50.2 27.3 49.9 33 L 49.6 60.5 C 49.9 66.2 49.8 71.4 50.4 73.6 C 51.1 75 53 74 54.4 71.1' },
+            strokes: 'A gallows: two upright stems about three times the height of o, joined by a short bar a little above their middle; the right stem rises into a closed loop that swells out to the right above the bar; the right stem ends on the line in a small foot turned to the right.',
+            note: 'A “gallows”: one of four tall glyphs with an upright stem and a loop at the top, and with t one of the two plain ones. Common inside words, mostly after o or e — qokeedy, qokedy, okaiin — and also after the bench, as in chky. It has two stems joined by a short bar and one loop, rising from its right stem; t has a second, smaller loop to the left. Drawn from kol, f. 2r, line 9.' },
+        { order: 9, name: 'l', value: null, translit: 'l', numeric: null, formConfidence: 'high',
+            glyph: { d: 'M 43.4 65.6 C 44.6 61.8 47.6 56.8 49.9 52.8 C 52 48.1 54.8 41.9 56.3 36.9 C 51.5 37.2 45.9 39.3 43.3 43.2 C 42 46.7 43.4 50.5 46.8 53.2 C 51.2 55.8 55.8 58.4 59 60.8' },
+            strokes: 'A pointed loop over a crossing: from the lower left a stroke rises to the right to a point at the top right, turns back across the top and down the left side, crosses the first stroke at the waist just above the line, and runs out to the lower right.',
+            note: 'Often likened to a cursive Latin l. As drawn from chol, f. 2r, line 5, it is a pointed loop rising only a little above o, made by a stroke that crosses itself just above the line, with its two free ends pointing down to the left and right; the lower-left end thins to a hairline whose length varies from word to word. Common at the end of words and before o or k: ol, al, chol, shol, lkeedy.' },
+        { order: 10, name: 'r', value: null, translit: 'r', numeric: null, formConfidence: 'high',
+            glyph: { d: 'M 52.7 37.7 C 52.7 33.9 56 32 59.5 32.5 C 63.7 32.9 65.2 37.7 64.6 41.9 C 64 47.6 60.3 51.6 56.8 54.6 C 53.4 55.2 50.8 57.2 51.2 60.2 C 51.8 63.4 57 65.4 62.6 67.6' },
+            strokes: 'A short stroke like a numeral 2: a small open hook at the top left, an arch over to the right, a slant down to the left into a small rounded base on the line, from which the foot runs out down to the right.',
+            note: 'A short glyph ending on the line, which early transcribers likened to a numeral 2: an open hook at the top, not a loop, an arch, and a small rounded base on the line from which the foot runs down to the right. Mostly at the end of words — or, ar, dar, chor — or before a final y, as in shory. Drawn from dorchory, f. 2r, line 2. It is easily confused with s, which ends in a full c-curve at the foot.' },
+        { order: 11, name: 'q', value: null, translit: 'q', numeric: null, formConfidence: 'high',
+            glyph: { d: 'M 61.4 21.6 C 51.9 26.3 41.5 31.5 35.4 36.2 C 40.5 39.1 45.3 40.7 50 40.1 C 55.7 39.6 61.4 38.4 67.1 37.7 M 61.4 21.6 C 62.1 31 61.4 45.3 60.7 54.7 C 60.1 64.2 59 72.8 57.9 79.4' },
+            strokes: 'Like a numeral 4: a stem that rises above the x-height and runs well below the line; from its top a stroke slants down to the left to a sharp point and returns to the right as a level bar, crossing the stem at about x-height and running on towards the next glyph.',
+            note: 'Like a numeral 4; the older transcriptions wrote the pair qo as 4o. It is almost always the first glyph of a word and almost always followed by o: qokeedy, qokain, qotedy. Its head closes in a point, not a loop, and its stem runs well below the line. Drawn from qoy, f. 2r, line 8.' },
+        { order: 12, name: 't', value: null, translit: 't', numeric: null, formConfidence: 'high',
+            glyph: { d: 'M 41.3 22.5 C 40.5 35.8 40.1 54.7 39.4 76.1 M 45.7 21.6 C 38.6 21.6 30.1 25.3 28.7 31 C 28.2 33.4 32 34.6 36.7 34.8 L 52.8 36.9 C 59.5 37.5 67.5 35.8 72.3 32.5 C 75.1 29.6 73.2 24.4 68.5 22.5 C 63.3 21.1 56.6 21.6 54.3 25.3 C 53 28.2 52.8 32 52.8 36.9 C 52.3 50 50.9 64.2 49.8 76.8 C 50.8 77.5 52.4 77 53.6 75.6' },
+            strokes: 'A gallows with two loops: two upright stems hang from one long stroke about two-thirds of their height up; at each end this stroke curls up into a loop, a small one to the left over the left stem and a broad one to the right over the right stem; the right stem ends on the line in a small foot.',
+            note: 'The second plain gallows: tall like k, but with two loops, a small one to the left and a broad one to the right, curled up from the ends of one long stroke from which its two stems hang. Common inside words — qotedy, otedy, chtey — and it is the gallows of the benched cth. Drawn from otchal, f. 2r, line 1.' },
+        { order: 13, name: 'sh', value: null, translit: 'sh', numeric: null, formConfidence: 'high',
+            glyph: { d: 'M 39.1 62.1 C 35.3 62.7 33.9 67 34.6 69.8 C 35.6 73.1 39.6 73.4 44.3 73.1 L 51.4 72.5 M 39.1 62.1 C 45.3 59.9 51.9 60.6 58.1 60.5 L 79.2 58.6 M 74.4 60 C 70.6 62.2 67.2 65.4 66.9 68.8 C 66.8 72.4 69.4 74.5 73.4 74.6 L 83.4 73.4 M 58.3 60.3 C 60 52.8 60.6 45.2 59.5 40 C 58.5 35.2 57.1 30.5 55.5 30.2 C 53.3 30 50.5 35.7 50.8 41.9 C 50.9 43.1 51.7 44 52.4 44.6' },
+            strokes: 'The bench ch with a plume: from the joining stroke, between the two c-curves, a stroke rises high above the line, turns over at the top and comes down a short way on the left, as a tall narrow hook open at the bottom.',
+            note: 'The bench with a “plume”: a small curved stroke rising from its top and arching back over it. Common at the start of words: shedy, shol, shory. In shol, f. 2r, line 8, from which it is drawn, the plume springs from the joining stroke, not from the left curve; in the Currier B hand of f. 78r it is shorter and rounder.' },
+        { order: 14, name: 'n', value: null, translit: 'n', numeric: null, formConfidence: 'high',
+            glyph: { d: 'M 54.4 54.8 C 55.2 58 57.6 62.2 60.6 64.3 C 63.8 66 67.5 65.6 70.9 62.7 C 75.1 58.4 76.1 51.8 73.2 47.1 C 69.4 40.4 61.4 36.6 51.9 36.2 C 43.4 33.8 33.9 33.4 27.2 35.3' },
+            strokes: 'A minim whose foot turns into a broad curve: from its head it runs down to the line, rounds to the right and up, swells out to the right and returns to the left as a long, nearly level stroke above the x-height, reaching back over the i-minims before it.',
+            note: 'Closes a run of i-minims: a minim whose foot turns to the right into a broad curve, which swells out and returns to the left as a long stroke arching back over the minims before it, so that iin looks a little like a cursive iiv. Almost only at the end of a word, after a or i: aiin, daiin, qokaiin, ain. Drawn from the end of daiin, f. 2r, line 1.' },
+        { order: 15, name: 's', value: null, translit: 's', numeric: null, formConfidence: 'high',
+            glyph: { d: 'M 45.7 37 C 43.4 37.5 41.9 35.6 43.2 34.1 C 45.3 31.7 51.9 31.2 57.6 32.2 C 62.8 33.1 65 38.6 64.5 43.4 C 64 49.1 58.1 52.2 50.9 53.8 C 43.4 54.4 39.2 56.4 39 60.9 C 39 66.2 42.4 68.9 46.4 68.7 C 50.2 68.3 53.5 66.6 55.9 63.5' },
+            strokes: 'A c-curve on the line whose head runs on up to the right into a plume that arches over to the left and ends in a small hook above the c; the foot of the c turns up at the right.',
+            note: 'Standing alone it is described as the left half of sh — a c-curve with the same rising plume — which is why EVA chose the letter, so that sh is s with h. Found at the start and the end of words: sol, sar, chs. Some transcribers confuse it with r. Drawn from the word s, one glyph alone, on f. 2r, line 8: a c-curve whose head runs up into a plume arching over to the left, its foot turning up at the right.' },
+        { order: 16, name: 'p', value: null, translit: 'p', numeric: null, formConfidence: 'high',
+            glyph: { d: 'M 43.6 20.6 C 43.6 35.8 44.3 54.7 44.2 69 C 44.2 75 43.9 79.6 43.5 83.4 M 49.2 21.8 C 44.5 20.2 38.5 19.4 33.5 20.3 C 28.4 21.4 25 25.3 24.9 29.6 C 25.1 33.6 29 35.9 33.3 36.5 L 62.2 37.5 C 61.7 31 63.6 23 71.2 20.6 C 76.9 19.2 83.1 22 83.1 26.8 C 83.1 32.5 75 36.2 67.4 37.3 L 62.2 37.5 C 64.6 42 66 48.5 63.3 52.4 C 57.5 54.2 48.4 53.1 42.8 52.8 C 36.1 52.5 29.5 52.2 25.7 54.4 C 20.9 57.9 17.6 64.7 15.7 70.4' },
+            strokes: 'An ornate gallows: one tall stem; at its top a loop, whose top begins just right of the stem, curls out to the left and returns as a bar to the right, where a broad loop rises; from the foot of that loop a short upright drops to a second bar, which runs back left across the stem and sweeps down to the lower left as a long leg.',
+            note: 'One of the two ornate gallows. Like f, it stands mostly in the first line of a paragraph, as in pchedy, where it is drawn larger and with a freer hand. Drawn from pchar, f. 6r, line 8, in mid-paragraph: it has the small left loop and broad right loop of t, and adds a second bar that crosses the stem and sweeps down to the lower left as a long leg. The ink of f. 6r is pale, but every stroke can be followed.' },
+        { order: 17, name: 'm', value: null, translit: 'm', numeric: null, formConfidence: 'medium',
+            glyph: { d: 'M 52.8 61.9 C 48.1 62.8 43.4 60 41.3 56.3 C 40.7 53.8 41.1 51.9 42.8 51.5 C 46.2 52.7 51.9 50.8 56.1 47.2 C 52.4 42.9 47.2 35.8 45.7 30.1 C 44.6 25.9 48.6 25.1 52.8 25.1 C 57 25.6 61.4 28.8 61.6 34.3 C 61.9 39.6 59.5 43.4 57.8 46.7 C 60.4 50.9 63.7 55.7 65.2 61.4 C 65.9 65.2 65.2 69 63.7 72.4' },
+            strokes: 'A small closed loop above the line, like the head of d; from its waist one stroke runs down to the left and curls back to the right as a small open hook on the line, and another runs down to the right, below the line, as a long tail.',
+            formReason: 'the lower-left hook is open here, a loop or blot elsewhere',
+            note: 'It closes a run of minims or follows a, almost only at the end of a word and often at the end of a line: am, dam, aim, oram. It is sometimes likened to n with a longer final stroke, but as drawn from chom, f. 4r, line 2, it is not like n: a small closed loop above the line, like the head of d, from whose waist a hook runs down to the left and a long tail down to the right, below the line. The hook is open here, and in other instances a filled loop or a blot of ink; a short tick just left of it may be the pen’s entry and is not drawn.' },
+        { order: 18, name: 'f', value: null, translit: 'f', numeric: null, formConfidence: 'medium',
+            glyph: { d: 'M 47.2 29.1 C 48.7 40.5 49.7 54.7 50.1 69 L 50.4 81.3 M 49.3 40.3 L 62.2 39.6 C 61.8 33.9 63.2 25.3 68.4 21.1 C 73.6 17.8 80.3 20.6 80.7 26.8 C 81.2 32.9 74.6 36.7 67.9 37.7 L 62.2 39.6 C 63 45.3 63.2 50.9 61.8 53.8 C 57.5 55.2 50.9 54 45.2 54.7 C 36.6 56.2 27.2 61.9 21.1 68.5' },
+            strokes: 'An ornate gallows like k: one stem; a bar from the stem to the right, where a broad loop rises; from the foot of the loop a short upright drops to a second bar that runs back left across the stem and sweeps down to the lower left as a long leg. No loop to the left of the stem.',
+            formReason: 'a faint mark beside the stem is not drawn',
+            note: 'The other ornate gallows. Like p, it stands mostly in the first lines of paragraphs. Drawn from foeear, f. 6r, line 3, in mid-paragraph: it has only the right loop of k, with the second bar and long leg of p. A faint, paler mark just left of the top of the stem, which has no clear shape, is not drawn.' },
+        { order: 19, name: 'cth, ckh, cph, cfh', value: null, translit: 'cth, ckh, cph, cfh', numeric: null, formConfidence: 'high',
+            glyph: { d: 'M 27.6 55.6 C 23.4 56.4 19.6 59.6 19.4 63.8 C 19.3 68.6 23.6 72.6 29 72.8 L 32.8 71.8 M 21.8 60.6 C 35.8 60.9 50 61.9 64.2 61.4 C 70.9 60.9 76.6 59.5 82.2 59.7 M 76.1 60.4 C 73.7 62.8 73.2 67.1 74.7 69.4 C 76.6 72.3 80.8 72.3 82.8 69.4 M 40.7 26.3 L 40.5 73.7 M 59 40.1 C 58.1 50 56.8 61.4 55.9 72.8 M 40.7 26.3 C 33.9 27.7 27.2 32.9 25.2 37.7 C 24.7 40 28.2 40.5 32 40.3 L 59 40.1 C 60 33.9 63.3 29.6 69 29.1 C 74.2 28.8 78.7 31 78.6 34.4 C 78.4 39.1 73.2 41.3 66.1 41.8 L 59 40.1' },
+            strokes: 'The gallows t standing in a wide bench: the left c of the bench stands outside t’s left stem and the right c outside its right stem; the bench’s joining stroke runs straight across both stems at about x-height; t’s two stems run from its loops at the top down to the line.',
+            note: 'A gallows set over a bench: the two c-curves of ch at its foot, and the bench’s joining stroke running into or through it. EVA spells it c, gallows, h, and each of the four gallows can be benched; cthy, ckhy and cphy are common words. Drawn: cth, from cthy, f. 2r, line 6, with the bench drawn wide enough for its two c-curves to stand outside the gallows’ stems; ckh, cph and cfh, built the same way, are not drawn separately.' },
         { order: 20, name: 'g, x, v, b, u, j, z', value: null, translit: 'g, x, v, b, u, j, z', numeric: null, glyph: null, formConfidence: 'low',
-            note: 'Not one glyph but a class. EVA keeps these letters for rare glyphs, and writes many forms found only once or a few times as numbered codes, an ampersand followed by a number; researchers call them “weirdoes”. How many there are depends on the transcription, and no count is given here.' },
+            note: 'Not one glyph but a class. EVA keeps these letters for rare glyphs, and writes many forms found only once or a few times as numbered codes, an ampersand followed by a number; researchers call them “weirdoes”. How many there are depends on the transcription, and no count is given here. No one drawing can stand for a class, so none is shown.' },
     ],
     transmission: [
         { slug: 'vellum', title: 'The vellum', kind: 'manuscript', year: 1404, end: 1438, circa: true, circaEnd: true, when: 'early 15th century (the vellum)',
@@ -227,11 +278,12 @@ export default {
         'Rudolf II, the 600 ducats and Roger Bacon all come from one hearsay report: Marci’s letter repeats what “Doctor Raphael” had told him. No other document is known to confirm any of the three.',
         'That Dee owned the book is a conjecture, and that Kelley, Dee or Voynich forged it is a hoax hypothesis; no document stands behind either. Baresch’s letter of 1639 rules out Voynich.',
         'The manuscript is not documented as having been used for magic. It stands in this wing as the most famous unread script of the European tradition, in a book of astrological and herbal pictures.',
-        'No glyph is drawn yet. A wrong glyph shown as the script would be worse than a gap, so each form waits to be traced from the manuscript with its folio named, and no modern Voynich font is used in its place.',
+        'Each glyph is drawn from one instance in the manuscript, with its word, folio and line named; other instances and other hands differ in slant, size and detail. No modern Voynich font is used in its place.',
         'The transcriptions disagree on where words divide, on how many minims a run holds and on the rare glyphs, so every count of words or glyphs depends on the transcription used. The glyphs on this page stand in a display order, not ranked by frequency.',
     ],
     sources: [
         { citation: 'Beinecke Rare Book and Manuscript Library, Yale University, MS 408 (the Voynich Manuscript), with the letter of Johannes Marcus Marci to Athanasius Kircher kept with it. The Beinecke publishes digital images of the whole manuscript.' },
+        { citation: 'Yale Digital Collections, Beinecke MS 408 (“Cipher manuscript”), object 2002046: the Library’s digital images, from which the glyphs are traced (ff. 2r, 4r and 6r).', url: 'https://collections.library.yale.edu/catalog/2002046' },
         { citation: 'Raymond Clemens (ed.), The Voynich Manuscript (New Haven: Beinecke Rare Book and Manuscript Library and Yale University Press, 2016): the authorised facsimile, with essays on the book’s history, its making and the attempts to read it.' },
         { citation: 'Mary E. D’Imperio, The Voynich Manuscript: An Elegant Enigma (Fort George G. Meade, MD: National Security Agency/Central Security Service, 1978): the standard survey of research to its date.' },
         { citation: 'Prescott H. Currier, papers on the manuscript’s two “languages”, A and B, and its hands, as reported in D’Imperio (1978).' },
@@ -251,5 +303,6 @@ export default {
         { citation: 'Jorge Stolfi, papers on the structure of Voynich words, published online.' },
         { citation: 'Gabriel Landini and René Zandbergen, EVA, the transcription alphabet of the script, with the machine-readable transcriptions built on it.' },
         { citation: 'René Zandbergen, The Voynich MS (website): the manuscript’s provenance, EVA, the transcriptions and the history of research.' },
+        { citation: 'René Zandbergen and Gabriel Landini, the ZL transliteration of MS 408 (IVTFF file ZL3b-n.txt, version 3b of 13 May 2025), from the same website: the word and line readings by which each drawn glyph’s instance is named.' },
     ],
 };

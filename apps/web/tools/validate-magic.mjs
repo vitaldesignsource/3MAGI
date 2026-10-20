@@ -303,6 +303,24 @@ for (const entry of all) {
             gapCount++;
             if (words(l.note) < 8) fail(w, 'a null glyph needs a note of at least 8 words saying why it is a gap');
         }
+        // a table of numbers (the planets' squares; a geomantic figure's rows
+        // are a flat list of point counts): a square of its side, every cell a
+        // number from 1 to side² or left open where the module gives both
+        // readings, the restored cells inside it, and nothing drawn
+        if (Array.isArray(l.rows) && Array.isArray(l.rows[0])) {
+            const n = Array.isArray(l.rows) ? l.rows.length : 0;
+            if (!n || !l.rows.every((row) => Array.isArray(row) && row.length === n)) fail(w, 'rows must be a square: as many cells in each row as there are rows');
+            else {
+                if (l.side != null && l.side !== n) fail(w, `side ${l.side} does not match the ${n} rows`);
+                const cells = l.rows.flat();
+                if (cells.some((v) => v != null && !(Number.isInteger(v) && v >= 1 && v <= n * n))) fail(w, `every cell is a number from 1 to ${n * n}, or null`);
+                if (cells.some((v) => v == null) && !l.doubtfulRows) fail(w, 'a cell left open needs doubtfulRows, giving the readings');
+                for (const rc of l.restoredCells || []) {
+                    if (!Array.isArray(rc) || rc.length !== 2 || !rc.every((k) => Number.isInteger(k) && k >= 1 && k <= n)) fail(w, `restoredCells: ${JSON.stringify(rc)} is not a [row, column] of the table`);
+                }
+            }
+            if (l.glyph) fail(w, 'a table is given as numbers, not drawn');
+        }
         for (const [k, v] of (l.variants || []).entries()) {
             if (!v.source) fail(`${w} variant ${k + 1}`, 'a variant names the edition it is drawn from');
             if (v.glyph) for (const p of glyphProblems(v.glyph)) fail(`${w} variant ${k + 1}`, p);
@@ -351,6 +369,7 @@ for (const entry of all) {
         fail(`${where}/drawing`, 'a ready alphabet has no pending notice: remove drawing.pending');
     }
     if (m.plates != null) checkPlates(where, m.plates);
+    if (m.platesNote != null && (!m.plates?.length || words(m.platesNote) < 8)) fail(`${where}/platesNote`, 'platesNote introduces the plates in at least 8 words, and only where there are plates');
 
     // transliteration
     const t = m.transliteration;
@@ -393,4 +412,4 @@ if (errors.length) {
 }
 const full = all.filter((e) => modules[e.slug] && !modules[e.slug].stub).length;
 for (const n of notes.slice(0, 10)) console.log(`  · ${n}`);
-console.log(`magic: ${all.length} entries (${full} full, ${all.length - full} stubs) · ${letterCount} letters — ${setCount} set, ${drawnCount} drawn, ${gapCount} forms pending — validated`);
+console.log(`magic: ${all.length} entries (${full} full, ${all.length - full} stubs) · ${letterCount} letters — ${setCount} set, ${drawnCount} drawn, ${gapCount} not shown (forms pending, gaps and tables) — validated`);

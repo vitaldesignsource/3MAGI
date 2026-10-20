@@ -52,17 +52,17 @@ export default {
   "voynich": {
    "stub": false,
    "letters": 20,
-   "shown": 0
+   "shown": 19
   },
   "charakteres": {
    "stub": false,
    "letters": 13,
-   "shown": 0
+   "shown": 5
   },
   "planetary-seals": {
    "stub": false,
    "letters": 30,
-   "shown": 0
+   "shown": 23
   },
   "signs-of-the-art": {
    "stub": false,
@@ -72,7 +72,7 @@ export default {
   "galdrastafir": {
    "stub": false,
    "letters": 7,
-   "shown": 0
+   "shown": 5
   },
   "runes": {
    "stub": false,
