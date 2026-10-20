@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Sign, Unstruck } from './MagicGlyph';
-import { entryPath, STATUS_LABEL } from './lib';
+import { ALPHABETS, entryPath, STATUS_LABEL } from './lib';
 
 // A door into one alphabet of the wing, in the halls' card idiom. A door whose
 // forms are still being traced wears an empty seal-ring where a hall wears its
@@ -44,8 +44,10 @@ export function MagicDoor({ entry, stub = false, compact = false, level = 3 }) {
     );
 }
 
-// The key to the empty seal, given once under a row of compact doors.
+// The key to the empty seal, given once under a row of compact doors, and
+// only while some alphabet wears one.
 export function DoorLegend() {
+    if (!ALPHABETS.some((a) => a.status === 'forms-pending')) return null;
     return (
         <p className="mg-door-legend">
             <Unstruck /> An empty seal marks an alphabet whose letterforms are still being traced from

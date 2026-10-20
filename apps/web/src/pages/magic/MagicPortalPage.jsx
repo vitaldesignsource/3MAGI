@@ -40,6 +40,18 @@ function MagicPortalPage() {
     // a set character or a drawn glyph)
     const anySet = open.some((a) => a.door?.char);
     const anyDrawn = open.some((a) => a.door?.glyph);
+    // The line under the heading says what is still in hand only while
+    // something is: no "the forms of none are being traced".
+    const pending = [
+        tracing > 0 && `the forms of ${numberWord(tracing)} are being traced from the editions that first printed them, and their doors say so`,
+        writing > 0 && `${numberWord(writing)} more ${writing === 1 ? 'is' : 'are'} being written`,
+    ].filter(Boolean).join('; ');
+    const status = `${capitalise(shown === ALPHABETS.length ? `all ${numberWord(shown)}` : numberWord(shown))} can be read with their signs now.`
+        + (pending ? ` ${capitalise(pending)}. Every door opens: ${anyStub
+            ? 'a page still in preparation gives its summary and its sources.'
+            : 'a page whose forms are still being traced gives its history, its claims and its sources now.'}` : '');
+    // the doors that are not yet open, if any
+    const anyRest = ALPHABETS.some((a) => !isOpen.has(a.slug));
     const how = anySet && anyDrawn ? 'the signs set in type or drawn from the printed page'
         : anyDrawn ? 'the signs drawn from the printed page' : 'the signs set in type';
     return (
@@ -72,12 +84,7 @@ function MagicPortalPage() {
                     <header className="edu-section-head">
                         <p className="kicker">{WING.kicker}</p>
                         <h2 id="mg-alphabets-heading">{capitalise(numberWord(ALPHABETS.length))} alphabets and kinds of sign</h2>
-                        <p>{capitalise(numberWord(shown))} can be read with their signs now. The forms of {numberWord(tracing)} are being
-                            traced from the editions that first printed them, and their doors say so{writing > 0
-                                ? `; ${numberWord(writing)} more ${writing === 1 ? 'is' : 'are'} being written` : ''}. Every
-                            door opens: {anyStub
-                                ? 'a page still in preparation gives its summary and its sources.'
-                                : 'a page whose forms are still being traced gives its history, its claims and its sources now.'}</p>
+                        <p>{status}</p>
                     </header>
                     {open.length > 0 && (
                         <div className="mg-group mg-open">
@@ -96,7 +103,7 @@ function MagicPortalPage() {
                             </div>
                         </div>
                     )}
-                    <div className="mg-rest">
+                    {anyRest && <div className="mg-rest">
                         <div className="mg-rest-head">
                             <h3 id="mg-rest-heading">{anyStub ? 'In preparation' : STATUS_LABEL['forms-pending']}</h3>
                         </div>
@@ -120,7 +127,7 @@ function MagicPortalPage() {
                             );
                         })}
                         <DoorLegend />
-                    </div>
+                    </div>}
                 </section>
 
                 <section className="mg-tools" aria-labelledby="mg-tools-heading">
