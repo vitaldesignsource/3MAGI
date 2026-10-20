@@ -10615,7 +10615,7 @@ h3 {
 .edu-page .edu-glyph {
   font-family: "TL Hieroglyphs", "TL Cuneiform", "TL Devanagari", "TL Arabic",
                "TL Tibetan", "TL Syriac", "TL Coptic", "TL Mandaic", "TL Armenian", "TL Ethiopic",
-               "TL Glagolitic", "TL Cyrillic Ext",
+               "TL Glagolitic", "TL Cyrillic Ext", "TL Phoenician", "TL Runic", "TL Ogham", "TL Signs",
                "Palatino", "Palatino Linotype", "Book Antiqua", "Times New Roman", serif;
 }
 /* Running prose quotes signs inline as well — an exercise that asks the reader
@@ -10627,7 +10627,8 @@ h3 {
 :root {
   --edu-script-faces: "TL Hieroglyphs", "TL Cuneiform", "TL Devanagari", "TL Arabic",
                       "TL Tibetan", "TL Syriac", "TL Coptic", "TL Mandaic", "TL Armenian",
-                      "TL Ethiopic", "TL Glagolitic", "TL Cyrillic Ext";
+                      "TL Ethiopic", "TL Glagolitic", "TL Cyrillic Ext", "TL Phoenician",
+                      "TL Runic", "TL Ogham", "TL Signs";
 }
 /* Tibetan stacks vertically and Ethiopic sits on a heavy baseline; both need
    more leading than a Latin face at the same size. */
@@ -11012,9 +11013,24 @@ h3 {
 }
 .edu-drill-option-glyph { font-size: 1.6rem; line-height: 1.5; }
 
-/* Phoenician — the ancestor row of the kinship table. */
+/* Phoenician — the ancestor row of the kinship table. Until the face was named
+   in the two script stacks above, it was declared here and never used. */
 @font-face { font-family: "TL Phoenician"; src: url("/fonts/TLPhoenician.woff2") format("woff2");
   font-weight: 400; font-style: normal; font-display: swap; unicode-range: U+10900-1091F; }
+
+/* The Magical Scriptorium sets three of its alphabets as text, not drawings:
+   the runes, the ogham, and the planetary, zodiacal and alchemical signs.
+   Where every file comes from is recorded in public/fonts/SOURCES.txt, and the
+   licence is in public/fonts/OFL.txt. TL Signs is cut to exactly the 34 code
+   points of the Signs of the Art, and its unicode-range names those and no more. */
+@font-face { font-family: "TL Runic"; src: url("/fonts/TLRunic.woff2") format("woff2");
+  font-weight: 400; font-style: normal; font-display: swap; unicode-range: U+16A0-16F8; }
+@font-face { font-family: "TL Ogham"; src: url("/fonts/TLOgham.woff2") format("woff2");
+  font-weight: 400; font-style: normal; font-display: swap; unicode-range: U+1680-169C; }
+@font-face { font-family: "TL Signs"; src: url("/fonts/TLSigns.woff2") format("woff2");
+  font-weight: 400; font-style: normal; font-display: swap;
+  unicode-range: U+2609, U+263D, U+263F-2644, U+2648-2653, U+1F701-1F706, U+1F70D, U+1F714,
+                 U+1F716, U+1F739, U+1F75E-1F760, U+1F764; }
 
 
 /* keyboard focus on the letter grid */
