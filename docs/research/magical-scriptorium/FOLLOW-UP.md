@@ -35,11 +35,11 @@ and the proposed fix. Points already fixed are in the commit history, not here.
    from the data. The values are true, but they change wording that is
    already on the site, and the search blurb now also says the box searches the
    Magical Scriptorium.
-   Fix: the corrections stand in a commit of their own, "Scriptorium counts:
-   correct the live wording on Home and the portal", directly after a commit
-   that restores the live wording, so either can be kept. Record the owner's
-   explicit approval in the PR description, or revert that one commit to keep
-   the live wording.
+   Fix: the corrections stand in a commit of their own (a45b457, "Scriptorium
+   counts: correct the live wording on Home and the portal"), directly after a
+   commit that restores the live wording. They were published with the wing,
+   because the old counts were false; if the owner prefers the old wording,
+   revert that one commit.
 
 3. **Shared components that change pages outside the wing.**
    Where: `ScriptoriumTimeline.jsx` (lanes and 24px pins), `ScriptoriumDrill.jsx`
@@ -56,11 +56,12 @@ and the proposed fix. Points already fixed are in the commit history, not here.
 
 4. **A library record that answered 500.**
    Where: `theban.js` and `trithemius.js`, the citation of the Zetzner
-   Polygraphia of 1600 (`https://www.historickefondy.cz/Record/cbvk.stjvkcb1020804900`).
-   What: the record returned 500 to the review and again on 20 October 2026;
-   the Wayback Machine holds no copy.
-   Fix: re-check before publishing; if it is still down, keep the citation
-   and drop the URL.
+   Polygraphia of 1600 (Czech library record cbvk.stjvkcb1020804900 at
+   historickefondy.cz).
+   What: the record returned 500 to the review and again before publishing
+   on 20 October 2026, and the Wayback Machine holds no copy, so the citation
+   was kept and its URL dropped.
+   Fix: if the record answers again, restore the URL in both citations.
 
 ## Later
 

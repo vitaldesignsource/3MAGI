@@ -349,7 +349,7 @@ export default {
         { citation: 'The same, Metropolitan Museum of Art record (the woodcuts, given to Hans Springinklee).', url: 'https://www.metmuseum.org/art/collection/search/358137' },
         { citation: 'The same, Christie’s lot description (Oppenheim: Jakob Köbel).', url: 'https://www.christies.com.cn/lot/lot-1074989' },
         { citation: 'The same, ABAA bookseller’s description (the alphabets placed in Book V).', url: 'https://abaa.org/book/1376710462' },
-        { citation: 'Ioannis Trithemii Libri Polygraphiae VI (Strasbourg: Lazarus Zetzner, 1600), 612 pp., library record: a later paginated edition.', url: 'https://www.historickefondy.cz/Record/cbvk.stjvkcb1020804900' },
+        { citation: 'Ioannis Trithemii Libri Polygraphiae VI (Strasbourg: Lazarus Zetzner, 1600), 612 pp., library record: a later paginated edition.' },
         { citation: 'Maximilian Gamer (ed.), Die Polygraphia des Johannes Trithemius nach der handschriftlichen Fassung, 2 vols (Leiden: Brill, 2022): the manuscript version of 1508; publisher’s description.', url: 'https://books.google.com/books/about/Die_Polygraphia_des_Johannes_Trithemius.html?id=oR14EAAAQBAJ' },
         { citation: 'Trithemius, Polygraphie, et universelle escriture cabalistique, trans. Gabriel de Collange (Paris: [Benoît Prévost] for Jacques Kerver, 1561): the Theban page, fol. 184v (Wikimedia Commons).', url: 'https://commons.wikimedia.org/wiki/File:Theban_Alphabet_in_Trithemius,_Polygraphie_(1561),_184v.tif' },
         { citation: 'The same translation, Boston Public Library copy, Internet Archive.', url: 'https://archive.org/details/polygraphieetvni00trit' },
