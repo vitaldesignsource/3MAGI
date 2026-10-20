@@ -1,0 +1,442 @@
+{
+  "key": "alphabet-of-the-magi",
+  "title": "The Alphabet of the Magi",
+  "otherNames": [
+    "Alphabet of the Magi (usual English name in modern reference charts)",
+    "Magi alphabet",
+    "'Paracelsus' alphabet' / Alphabet of the Magi of Paracelsus (the modern attribution)",
+    "Alphabet des Mages: the French form it would carry if it originates with Paul Christian. This is a hypothesis; I have not seen that label in print."
+  ],
+  "family": "A magical alphabet keyed, as commonly charted, to the 22 Hebrew letters in Hebrew order with Latin values. That keying is unverified. It is usually listed beside Agrippa's Theban, Celestial, Malachim and Transitus fluvii, but it is NOT one of Agrippa's alphabets, and its graphic relation to the ring-letter (Brillenbuchstaben) family is unverified. Its documented home is modern occultist and reference literature. It is credited to Paracelsus without a cited passage.",
+  "summary": "The 'Alphabet of the Magi' is a magical alphabet that modern reference works credit to Paracelsus (1493/94–1541). They say he used it to engrave the names of angels on talismans for healing and protection. None of those works cites a book, chapter or folio, and I know of no edition of Paracelsus that prints it. The Archidoxis magica, the magical book most often tied to 'Paracelsian' talismans, is held to be spurious. The first printing is not established here. The leading but unverified candidate is the French occultist Paul Christian's Histoire de la magie (Paris, 1870).",
+  "firstAttestation": {
+    "work": "NOT ESTABLISHED. Leading candidate, unverified: Paul Christian, Histoire de la magie, du monde surnaturel et de la fatalité à travers les temps et les peuples.",
+    "author": "Paul Christian (pseudonym of Jean-Baptiste Pitois, 1811–1877), if the candidate holds",
+    "date": "1870, the date of the candidate book (prior knowledge; some catalogue records may give 1871). Whether the alphabet is actually in it is unverified.",
+    "place": "Paris: Furne, Jouvet et Cie (prior knowledge)",
+    "locator": "Unknown. I could not check whether the alphabet appears in the 1870 text or plates, or on what page or figure.",
+    "notes": "Why Christian is the candidate. (1) The values the alphabet is usually charted with (Hebrew order rendered A B G D E U/V Z H Th I C/K L M N X O F/P Ts Q R S T) match, to my recollection, the letter-values Christian gives his 22 arcana. (2) 'Magi' is his vocabulary: 'the Star of the Magi' and 'the Crown of the Magi' are among his arcana. (3) He is documented as crediting his own constructions to ancient authorities: he presents an Egyptian initiation 'from Iamblichus' that Iamblichus does not contain (Decker, Depaulis and Dummett 1996). None of this is proof. Earlier candidates I could not exclude: Christian's own L'Homme rouge des Tuileries (Paris, 1863); the pseudo-Paracelsian Archidoxis magica in Huser's edition (1589–1591) or in Turner's English (1656); and the alphabet compendia, e.g. Claude Duret, Thrésor de l'histoire des langues (1613). Each must be checked before the page names a first printing."
+  },
+  "transmission": [
+    {
+      "date": "1589–1591",
+      "work": "Bücher und Schrifften (collected edition)",
+      "author": "Paracelsus, ed. Johannes Huser",
+      "what": "First gathered edition of the writings under Paracelsus' name (dates from the house timeline). It carries the magical books, among them the Archidoxis magica, whose planetary and zodiacal seals with names and characters are what the talisman story leans on. I could NOT check whether any alphabet called 'of the Magi' appears in it; I know of none."
+    },
+    {
+      "date": "1656",
+      "work": "Paracelsus of the Supreme Mysteries of Nature (includes the Archidoxes of Magic)",
+      "author": "Paracelsus (attributed), tr. Robert Turner",
+      "what": "The English route for the Archidoxis magica's seals and their instructions for engraving on metals at set hours (prior knowledge). I could not confirm that it contains an alphabet of the Magi. Reprinted as The Archidoxes of Magic with an introduction by Stephen Skinner (London: Askin, 1975), per prior knowledge."
+    },
+    {
+      "date": "1870",
+      "work": "Histoire de la magie, du monde surnaturel et de la fatalité à travers les temps et les peuples",
+      "author": "Paul Christian (J.-B. Pitois)",
+      "what": "CANDIDATE first printing, unverified. It contains Christian's 22 'arcana', each tied to a Hebrew-order letter with a Latin value and number, and his chapters on talismans. The alphabet's usual values seem to derive from this framework, but I could not confirm that the glyph table itself is printed here."
+    },
+    {
+      "date": "1952",
+      "work": "The History and Practice of Magic",
+      "author": "Paul Christian, tr. James Kirkup and Julian Shaw, ed. Ross Nichols",
+      "what": "English translation (London: Forge Press, 1952; New York: Citadel, 1963; both from prior knowledge). It is the likely route for the English name 'Alphabet of the Magi', if the Christian origin holds. Unverified."
+    },
+    {
+      "date": "undated (online)",
+      "work": "Omniglot, 'Alphabet of the Magi' (conscripts section)",
+      "author": "Simon Ager (ed.)",
+      "what": "Modern web reference, recalled from memory: it repeats that Paracelsus devised the alphabet and used it to engrave angel names on healing and protective talismans, and it gives a letter chart. Usable only for the letter list, never for the history (house rule)."
+    }
+  ],
+  "claims": [
+    {
+      "claim": "Paracelsus devised the Alphabet of the Magi.",
+      "standing": "attributed",
+      "evidence": "Modern reference charts (Omniglot, as I recall it) make the attribution, but none that I know cites a work, chapter, folio or edition. I know of no genuine or pseudo-Paracelsian text that prints an alphabet under this name. That is prior knowledge, not a fresh search. The page should report it as 'attributed to Paracelsus in modern reference works', never 'Paracelsus devised it'.",
+      "sources": [
+        "Omniglot, 'Alphabet of the Magi' (letter list only; URL not verified in this session)",
+        "Karl Sudhoff (ed.), Paracelsus, Sämtliche Werke, Abt. I, 1922–1933 (not consulted)"
+      ]
+    },
+    {
+      "claim": "Paracelsus used it to engrave the names of angels on talismans that cure disease and protect from harm.",
+      "standing": "legend",
+      "evidence": "This is the stock description of its use in modern reference charts, recalled from Omniglot. I found no early source that describes it. Paracelsian talisman instructions, chiefly the pseudo-Paracelsian Archidoxis magica, prescribe seals engraved with names and characters, but I could not confirm that any of them uses an alphabet of this name.",
+      "sources": [
+        "Omniglot, 'Alphabet of the Magi' (recalled)",
+        "Paracelsus (attrib.), Archidoxes of Magic, tr. Robert Turner, 1656 (not consulted)"
+      ]
+    },
+    {
+      "claim": "The alphabet is found in Paracelsus' Archidoxis magica.",
+      "standing": "disputed",
+      "evidence": "This is sometimes implied by linking the alphabet to Paracelsian talismans. I could not verify it either way. Even if it were true, it would not make the alphabet Paracelsus' own, because the Archidoxis magica is 'spurious by common consent' (house timeline, latin.js, following Sudhoff's sorting of the corpus).",
+      "sources": [
+        "House timeline entry 'Paracelsus', apps/web/src/data/education/timelines/latin.js",
+        "Karl Sudhoff (ed.), Paracelsus, Sämtliche Werke, 1922–1933 (not consulted)"
+      ]
+    },
+    {
+      "claim": "It is not one of the alphabets printed by Agrippa.",
+      "standing": "documented",
+      "evidence": "Agrippa's De occulta philosophia (1533) prints the Theban in III.29 and the Celestial, Malachim and Transitus fluvii in the three-row woodcut of III.30. The sibling research verified this from the 1533 and 1651 texts, and none of these is called the 'Alphabet of the Magi'. Whenever it is shown beside them, the page should say it comes from a different, later tradition.",
+      "sources": [
+        "Agrippa, De occulta philosophia, [Cologne], July 1533, III.29–30 (verified by sibling research)",
+        "Agrippa, Three Books of Occult Philosophy, tr. J.F., London 1651, III.xxx (EEBO-TCP A26565)"
+      ]
+    },
+    {
+      "claim": "It first appears in Paul Christian's Histoire de la magie (Paris, 1870).",
+      "standing": "disputed",
+      "evidence": "This is a working hypothesis, not established. For it: the alphabet's usual Latin values match Christian's arcana letter-values, and 'Magi' is his vocabulary (all from prior knowledge). Against it, or not yet excluded: an earlier source such as Christian's L'Homme rouge des Tuileries (1863), the Paracelsian editions, or a 17th-century alphabet compendium. I could not check the 1870 book's plates or text.",
+      "sources": [
+        "Paul Christian, Histoire de la magie, Paris: Furne, Jouvet et Cie, 1870 (not consulted)",
+        "Paul Christian, The History and Practice of Magic, tr. Kirkup and Shaw, 1952 (not consulted in this session)"
+      ]
+    },
+    {
+      "claim": "Paul Christian credited his own constructions to ancient authorities.",
+      "standing": "documented",
+      "evidence": "His account of an Egyptian initiation, with its 22 arcana, is presented as drawn from Iamblichus, but Iamblichus' De mysteriis contains no such account. Decker, Depaulis and Dummett treat Christian as an inventor of the 'Egyptian' occult tarot (prior knowledge of that book). This bears on the attribution only by analogy: it shows a habit of crediting new material to old names. It does not show that he made up the Paracelsus link.",
+      "sources": [
+        "Ronald Decker, Thierry Depaulis and Michael Dummett, A Wicked Pack of Cards: The Origins of the Occult Tarot, London: Duckworth, 1996 (not consulted in this session)"
+      ]
+    },
+    {
+      "claim": "The alphabet is keyed to the 22 Hebrew letters, in Hebrew order, with Latin values.",
+      "standing": "disputed",
+      "evidence": "This is how I recall modern charts laying it out. I could not view any chart or printed source in this session, so the order, the count and the values must all be checked against the first printing before the transliterator uses them.",
+      "sources": [
+        "Omniglot, 'Alphabet of the Magi' (recalled; letter list only)"
+      ]
+    }
+  ],
+  "letters": [
+    {
+      "order": 1,
+      "name": "Aleph",
+      "value": "א",
+      "translit": "A",
+      "numeric": 1,
+      "form": "NOT DESCRIBED. I could not see any image of this alphabet in this session, and I know of no text that describes its letters stroke by stroke. I will not reconstruct it from memory of modern charts. It is often listed beside Agrippa's ring-letter alphabets, but do NOT borrow forms from the Celestial, Malachim or Transitus fluvii, or from the Hebrew square letter: no source I can name says how far they are related. Leave a gap until the letter can be traced from the first printing, once that printing is identified (leading candidate: Paul Christian, Histoire de la magie, Paris 1870, unverified).",
+      "formConfidence": "low",
+      "note": "SCAFFOLD. The Hebrew order and value are an assumption: modern charts of this alphabet are, to my recollection, laid out as 22 signs in Hebrew order. That has not been checked against any printed source. The Latin value 'A' is the one I recall from those charts. It matches the letter-value Paul Christian gives this position in his 22 'arcana' (The History and Practice of Magic, tr. Kirkup and Shaw, 1952), as I recall that book. Both are unverified. The numeric value is the standard Hebrew one, given for the transliterator. I do not know that any chart of this alphabet prints numbers."
+    },
+    {
+      "order": 2,
+      "name": "Beth",
+      "value": "ב",
+      "translit": "B",
+      "numeric": 2,
+      "form": "NOT DESCRIBED. I could not see any image of this alphabet in this session, and I know of no text that describes its letters stroke by stroke. I will not reconstruct it from memory of modern charts. It is often listed beside Agrippa's ring-letter alphabets, but do NOT borrow forms from the Celestial, Malachim or Transitus fluvii, or from the Hebrew square letter: no source I can name says how far they are related. Leave a gap until the letter can be traced from the first printing, once that printing is identified (leading candidate: Paul Christian, Histoire de la magie, Paris 1870, unverified).",
+      "formConfidence": "low",
+      "note": "SCAFFOLD. The Hebrew order and value are an assumption: modern charts of this alphabet are, to my recollection, laid out as 22 signs in Hebrew order. That has not been checked against any printed source. The Latin value 'B' is the one I recall from those charts. It matches the letter-value Paul Christian gives this position in his 22 'arcana' (The History and Practice of Magic, tr. Kirkup and Shaw, 1952), as I recall that book. Both are unverified. The numeric value is the standard Hebrew one, given for the transliterator. I do not know that any chart of this alphabet prints numbers."
+    },
+    {
+      "order": 3,
+      "name": "Gimel",
+      "value": "ג",
+      "translit": "G",
+      "numeric": 3,
+      "form": "NOT DESCRIBED. I could not see any image of this alphabet in this session, and I know of no text that describes its letters stroke by stroke. I will not reconstruct it from memory of modern charts. It is often listed beside Agrippa's ring-letter alphabets, but do NOT borrow forms from the Celestial, Malachim or Transitus fluvii, or from the Hebrew square letter: no source I can name says how far they are related. Leave a gap until the letter can be traced from the first printing, once that printing is identified (leading candidate: Paul Christian, Histoire de la magie, Paris 1870, unverified).",
+      "formConfidence": "low",
+      "note": "SCAFFOLD. The Hebrew order and value are an assumption: modern charts of this alphabet are, to my recollection, laid out as 22 signs in Hebrew order. That has not been checked against any printed source. The Latin value 'G' is the one I recall from those charts. It matches the letter-value Paul Christian gives this position in his 22 'arcana' (The History and Practice of Magic, tr. Kirkup and Shaw, 1952), as I recall that book. Both are unverified. The numeric value is the standard Hebrew one, given for the transliterator. I do not know that any chart of this alphabet prints numbers."
+    },
+    {
+      "order": 4,
+      "name": "Daleth",
+      "value": "ד",
+      "translit": "D",
+      "numeric": 4,
+      "form": "NOT DESCRIBED. I could not see any image of this alphabet in this session, and I know of no text that describes its letters stroke by stroke. I will not reconstruct it from memory of modern charts. It is often listed beside Agrippa's ring-letter alphabets, but do NOT borrow forms from the Celestial, Malachim or Transitus fluvii, or from the Hebrew square letter: no source I can name says how far they are related. Leave a gap until the letter can be traced from the first printing, once that printing is identified (leading candidate: Paul Christian, Histoire de la magie, Paris 1870, unverified).",
+      "formConfidence": "low",
+      "note": "SCAFFOLD. The Hebrew order and value are an assumption: modern charts of this alphabet are, to my recollection, laid out as 22 signs in Hebrew order. That has not been checked against any printed source. The Latin value 'D' is the one I recall from those charts. It matches the letter-value Paul Christian gives this position in his 22 'arcana' (The History and Practice of Magic, tr. Kirkup and Shaw, 1952), as I recall that book. Both are unverified. The numeric value is the standard Hebrew one, given for the transliterator. I do not know that any chart of this alphabet prints numbers."
+    },
+    {
+      "order": 5,
+      "name": "He",
+      "value": "ה",
+      "translit": "E",
+      "numeric": 5,
+      "form": "NOT DESCRIBED. I could not see any image of this alphabet in this session, and I know of no text that describes its letters stroke by stroke. I will not reconstruct it from memory of modern charts. It is often listed beside Agrippa's ring-letter alphabets, but do NOT borrow forms from the Celestial, Malachim or Transitus fluvii, or from the Hebrew square letter: no source I can name says how far they are related. Leave a gap until the letter can be traced from the first printing, once that printing is identified (leading candidate: Paul Christian, Histoire de la magie, Paris 1870, unverified).",
+      "formConfidence": "low",
+      "note": "SCAFFOLD. The Hebrew order and value are an assumption: modern charts of this alphabet are, to my recollection, laid out as 22 signs in Hebrew order. That has not been checked against any printed source. The Latin value 'E' is the one I recall from those charts. It matches the letter-value Paul Christian gives this position in his 22 'arcana' (The History and Practice of Magic, tr. Kirkup and Shaw, 1952), as I recall that book. Both are unverified. The numeric value is the standard Hebrew one, given for the transliterator. I do not know that any chart of this alphabet prints numbers."
+    },
+    {
+      "order": 6,
+      "name": "Vau",
+      "value": "ו",
+      "translit": "U / V",
+      "numeric": 6,
+      "form": "NOT DESCRIBED. I could not see any image of this alphabet in this session, and I know of no text that describes its letters stroke by stroke. I will not reconstruct it from memory of modern charts. It is often listed beside Agrippa's ring-letter alphabets, but do NOT borrow forms from the Celestial, Malachim or Transitus fluvii, or from the Hebrew square letter: no source I can name says how far they are related. Leave a gap until the letter can be traced from the first printing, once that printing is identified (leading candidate: Paul Christian, Histoire de la magie, Paris 1870, unverified).",
+      "formConfidence": "low",
+      "note": "SCAFFOLD. The Hebrew order and value are an assumption: modern charts of this alphabet are, to my recollection, laid out as 22 signs in Hebrew order. That has not been checked against any printed source. The Latin value 'U / V' is the one I recall from those charts. It matches the letter-value Paul Christian gives this position in his 22 'arcana' (The History and Practice of Magic, tr. Kirkup and Shaw, 1952), as I recall that book. Both are unverified. The numeric value is the standard Hebrew one, given for the transliterator. I do not know that any chart of this alphabet prints numbers."
+    },
+    {
+      "order": 7,
+      "name": "Zain",
+      "value": "ז",
+      "translit": "Z",
+      "numeric": 7,
+      "form": "NOT DESCRIBED. I could not see any image of this alphabet in this session, and I know of no text that describes its letters stroke by stroke. I will not reconstruct it from memory of modern charts. It is often listed beside Agrippa's ring-letter alphabets, but do NOT borrow forms from the Celestial, Malachim or Transitus fluvii, or from the Hebrew square letter: no source I can name says how far they are related. Leave a gap until the letter can be traced from the first printing, once that printing is identified (leading candidate: Paul Christian, Histoire de la magie, Paris 1870, unverified).",
+      "formConfidence": "low",
+      "note": "SCAFFOLD. The Hebrew order and value are an assumption: modern charts of this alphabet are, to my recollection, laid out as 22 signs in Hebrew order. That has not been checked against any printed source. The Latin value 'Z' is the one I recall from those charts. It matches the letter-value Paul Christian gives this position in his 22 'arcana' (The History and Practice of Magic, tr. Kirkup and Shaw, 1952), as I recall that book. Both are unverified. The numeric value is the standard Hebrew one, given for the transliterator. I do not know that any chart of this alphabet prints numbers."
+    },
+    {
+      "order": 8,
+      "name": "Heth",
+      "value": "ח",
+      "translit": "H",
+      "numeric": 8,
+      "form": "NOT DESCRIBED. I could not see any image of this alphabet in this session, and I know of no text that describes its letters stroke by stroke. I will not reconstruct it from memory of modern charts. It is often listed beside Agrippa's ring-letter alphabets, but do NOT borrow forms from the Celestial, Malachim or Transitus fluvii, or from the Hebrew square letter: no source I can name says how far they are related. Leave a gap until the letter can be traced from the first printing, once that printing is identified (leading candidate: Paul Christian, Histoire de la magie, Paris 1870, unverified).",
+      "formConfidence": "low",
+      "note": "SCAFFOLD. The Hebrew order and value are an assumption: modern charts of this alphabet are, to my recollection, laid out as 22 signs in Hebrew order. That has not been checked against any printed source. The Latin value 'H' is the one I recall from those charts. It matches the letter-value Paul Christian gives this position in his 22 'arcana' (The History and Practice of Magic, tr. Kirkup and Shaw, 1952), as I recall that book. Both are unverified. The numeric value is the standard Hebrew one, given for the transliterator. I do not know that any chart of this alphabet prints numbers."
+    },
+    {
+      "order": 9,
+      "name": "Teth",
+      "value": "ט",
+      "translit": "Th",
+      "numeric": 9,
+      "form": "NOT DESCRIBED. I could not see any image of this alphabet in this session, and I know of no text that describes its letters stroke by stroke. I will not reconstruct it from memory of modern charts. It is often listed beside Agrippa's ring-letter alphabets, but do NOT borrow forms from the Celestial, Malachim or Transitus fluvii, or from the Hebrew square letter: no source I can name says how far they are related. Leave a gap until the letter can be traced from the first printing, once that printing is identified (leading candidate: Paul Christian, Histoire de la magie, Paris 1870, unverified).",
+      "formConfidence": "low",
+      "note": "SCAFFOLD. The Hebrew order and value are an assumption: modern charts of this alphabet are, to my recollection, laid out as 22 signs in Hebrew order. That has not been checked against any printed source. The Latin value 'Th' is the one I recall from those charts. It matches the letter-value Paul Christian gives this position in his 22 'arcana' (The History and Practice of Magic, tr. Kirkup and Shaw, 1952), as I recall that book. Both are unverified. The numeric value is the standard Hebrew one, given for the transliterator. I do not know that any chart of this alphabet prints numbers."
+    },
+    {
+      "order": 10,
+      "name": "Yod",
+      "value": "י",
+      "translit": "I / J / Y",
+      "numeric": 10,
+      "form": "NOT DESCRIBED. I could not see any image of this alphabet in this session, and I know of no text that describes its letters stroke by stroke. I will not reconstruct it from memory of modern charts. It is often listed beside Agrippa's ring-letter alphabets, but do NOT borrow forms from the Celestial, Malachim or Transitus fluvii, or from the Hebrew square letter: no source I can name says how far they are related. Leave a gap until the letter can be traced from the first printing, once that printing is identified (leading candidate: Paul Christian, Histoire de la magie, Paris 1870, unverified).",
+      "formConfidence": "low",
+      "note": "SCAFFOLD. The Hebrew order and value are an assumption: modern charts of this alphabet are, to my recollection, laid out as 22 signs in Hebrew order. That has not been checked against any printed source. The Latin value 'I / J / Y' is the one I recall from those charts. It matches the letter-value Paul Christian gives this position in his 22 'arcana' (The History and Practice of Magic, tr. Kirkup and Shaw, 1952), as I recall that book. Both are unverified. The numeric value is the standard Hebrew one, given for the transliterator. I do not know that any chart of this alphabet prints numbers."
+    },
+    {
+      "order": 11,
+      "name": "Kaph",
+      "value": "כ",
+      "translit": "C / K",
+      "numeric": 20,
+      "form": "NOT DESCRIBED. I could not see any image of this alphabet in this session, and I know of no text that describes its letters stroke by stroke. I will not reconstruct it from memory of modern charts. It is often listed beside Agrippa's ring-letter alphabets, but do NOT borrow forms from the Celestial, Malachim or Transitus fluvii, or from the Hebrew square letter: no source I can name says how far they are related. Leave a gap until the letter can be traced from the first printing, once that printing is identified (leading candidate: Paul Christian, Histoire de la magie, Paris 1870, unverified).",
+      "formConfidence": "low",
+      "note": "SCAFFOLD. The Hebrew order and value are an assumption: modern charts of this alphabet are, to my recollection, laid out as 22 signs in Hebrew order. That has not been checked against any printed source. The Latin value 'C / K' is the one I recall from those charts. It matches the letter-value Paul Christian gives this position in his 22 'arcana' (The History and Practice of Magic, tr. Kirkup and Shaw, 1952), as I recall that book. Both are unverified. The numeric value is the standard Hebrew one, given for the transliterator. I do not know that any chart of this alphabet prints numbers."
+    },
+    {
+      "order": 12,
+      "name": "Lamed",
+      "value": "ל",
+      "translit": "L",
+      "numeric": 30,
+      "form": "NOT DESCRIBED. I could not see any image of this alphabet in this session, and I know of no text that describes its letters stroke by stroke. I will not reconstruct it from memory of modern charts. It is often listed beside Agrippa's ring-letter alphabets, but do NOT borrow forms from the Celestial, Malachim or Transitus fluvii, or from the Hebrew square letter: no source I can name says how far they are related. Leave a gap until the letter can be traced from the first printing, once that printing is identified (leading candidate: Paul Christian, Histoire de la magie, Paris 1870, unverified).",
+      "formConfidence": "low",
+      "note": "SCAFFOLD. The Hebrew order and value are an assumption: modern charts of this alphabet are, to my recollection, laid out as 22 signs in Hebrew order. That has not been checked against any printed source. The Latin value 'L' is the one I recall from those charts. It matches the letter-value Paul Christian gives this position in his 22 'arcana' (The History and Practice of Magic, tr. Kirkup and Shaw, 1952), as I recall that book. Both are unverified. The numeric value is the standard Hebrew one, given for the transliterator. I do not know that any chart of this alphabet prints numbers."
+    },
+    {
+      "order": 13,
+      "name": "Mem",
+      "value": "מ",
+      "translit": "M",
+      "numeric": 40,
+      "form": "NOT DESCRIBED. I could not see any image of this alphabet in this session, and I know of no text that describes its letters stroke by stroke. I will not reconstruct it from memory of modern charts. It is often listed beside Agrippa's ring-letter alphabets, but do NOT borrow forms from the Celestial, Malachim or Transitus fluvii, or from the Hebrew square letter: no source I can name says how far they are related. Leave a gap until the letter can be traced from the first printing, once that printing is identified (leading candidate: Paul Christian, Histoire de la magie, Paris 1870, unverified).",
+      "formConfidence": "low",
+      "note": "SCAFFOLD. The Hebrew order and value are an assumption: modern charts of this alphabet are, to my recollection, laid out as 22 signs in Hebrew order. That has not been checked against any printed source. The Latin value 'M' is the one I recall from those charts. It matches the letter-value Paul Christian gives this position in his 22 'arcana' (The History and Practice of Magic, tr. Kirkup and Shaw, 1952), as I recall that book. Both are unverified. The numeric value is the standard Hebrew one, given for the transliterator. I do not know that any chart of this alphabet prints numbers."
+    },
+    {
+      "order": 14,
+      "name": "Nun",
+      "value": "נ",
+      "translit": "N",
+      "numeric": 50,
+      "form": "NOT DESCRIBED. I could not see any image of this alphabet in this session, and I know of no text that describes its letters stroke by stroke. I will not reconstruct it from memory of modern charts. It is often listed beside Agrippa's ring-letter alphabets, but do NOT borrow forms from the Celestial, Malachim or Transitus fluvii, or from the Hebrew square letter: no source I can name says how far they are related. Leave a gap until the letter can be traced from the first printing, once that printing is identified (leading candidate: Paul Christian, Histoire de la magie, Paris 1870, unverified).",
+      "formConfidence": "low",
+      "note": "SCAFFOLD. The Hebrew order and value are an assumption: modern charts of this alphabet are, to my recollection, laid out as 22 signs in Hebrew order. That has not been checked against any printed source. The Latin value 'N' is the one I recall from those charts. It matches the letter-value Paul Christian gives this position in his 22 'arcana' (The History and Practice of Magic, tr. Kirkup and Shaw, 1952), as I recall that book. Both are unverified. The numeric value is the standard Hebrew one, given for the transliterator. I do not know that any chart of this alphabet prints numbers."
+    },
+    {
+      "order": 15,
+      "name": "Samekh",
+      "value": "ס",
+      "translit": "X",
+      "numeric": 60,
+      "form": "NOT DESCRIBED. I could not see any image of this alphabet in this session, and I know of no text that describes its letters stroke by stroke. I will not reconstruct it from memory of modern charts. It is often listed beside Agrippa's ring-letter alphabets, but do NOT borrow forms from the Celestial, Malachim or Transitus fluvii, or from the Hebrew square letter: no source I can name says how far they are related. Leave a gap until the letter can be traced from the first printing, once that printing is identified (leading candidate: Paul Christian, Histoire de la magie, Paris 1870, unverified).",
+      "formConfidence": "low",
+      "note": "SCAFFOLD. The Hebrew order and value are an assumption: modern charts of this alphabet are, to my recollection, laid out as 22 signs in Hebrew order. That has not been checked against any printed source. The Latin value 'X' is the one I recall from those charts. It matches the letter-value Paul Christian gives this position in his 22 'arcana' (The History and Practice of Magic, tr. Kirkup and Shaw, 1952), as I recall that book. Both are unverified. The numeric value is the standard Hebrew one, given for the transliterator. I do not know that any chart of this alphabet prints numbers. 'X' for Samekh (not S) is the transliteration habit of 19th-century French occultism; that is the house reason to suspect a French origin. This is an inference, not a documented fact."
+    },
+    {
+      "order": 16,
+      "name": "Ayin",
+      "value": "ע",
+      "translit": "O",
+      "numeric": 70,
+      "form": "NOT DESCRIBED. I could not see any image of this alphabet in this session, and I know of no text that describes its letters stroke by stroke. I will not reconstruct it from memory of modern charts. It is often listed beside Agrippa's ring-letter alphabets, but do NOT borrow forms from the Celestial, Malachim or Transitus fluvii, or from the Hebrew square letter: no source I can name says how far they are related. Leave a gap until the letter can be traced from the first printing, once that printing is identified (leading candidate: Paul Christian, Histoire de la magie, Paris 1870, unverified).",
+      "formConfidence": "low",
+      "note": "SCAFFOLD. The Hebrew order and value are an assumption: modern charts of this alphabet are, to my recollection, laid out as 22 signs in Hebrew order. That has not been checked against any printed source. The Latin value 'O' is the one I recall from those charts. It matches the letter-value Paul Christian gives this position in his 22 'arcana' (The History and Practice of Magic, tr. Kirkup and Shaw, 1952), as I recall that book. Both are unverified. The numeric value is the standard Hebrew one, given for the transliterator. I do not know that any chart of this alphabet prints numbers. 'O' for Ayin is the same 19th-century French occultist convention, and the same caveat applies."
+    },
+    {
+      "order": 17,
+      "name": "Pe",
+      "value": "פ",
+      "translit": "F / P",
+      "numeric": 80,
+      "form": "NOT DESCRIBED. I could not see any image of this alphabet in this session, and I know of no text that describes its letters stroke by stroke. I will not reconstruct it from memory of modern charts. It is often listed beside Agrippa's ring-letter alphabets, but do NOT borrow forms from the Celestial, Malachim or Transitus fluvii, or from the Hebrew square letter: no source I can name says how far they are related. Leave a gap until the letter can be traced from the first printing, once that printing is identified (leading candidate: Paul Christian, Histoire de la magie, Paris 1870, unverified).",
+      "formConfidence": "low",
+      "note": "SCAFFOLD. The Hebrew order and value are an assumption: modern charts of this alphabet are, to my recollection, laid out as 22 signs in Hebrew order. That has not been checked against any printed source. The Latin value 'F / P' is the one I recall from those charts. It matches the letter-value Paul Christian gives this position in his 22 'arcana' (The History and Practice of Magic, tr. Kirkup and Shaw, 1952), as I recall that book. Both are unverified. The numeric value is the standard Hebrew one, given for the transliterator. I do not know that any chart of this alphabet prints numbers."
+    },
+    {
+      "order": 18,
+      "name": "Tsade",
+      "value": "צ",
+      "translit": "Ts",
+      "numeric": 90,
+      "form": "NOT DESCRIBED. I could not see any image of this alphabet in this session, and I know of no text that describes its letters stroke by stroke. I will not reconstruct it from memory of modern charts. It is often listed beside Agrippa's ring-letter alphabets, but do NOT borrow forms from the Celestial, Malachim or Transitus fluvii, or from the Hebrew square letter: no source I can name says how far they are related. Leave a gap until the letter can be traced from the first printing, once that printing is identified (leading candidate: Paul Christian, Histoire de la magie, Paris 1870, unverified).",
+      "formConfidence": "low",
+      "note": "SCAFFOLD. The Hebrew order and value are an assumption: modern charts of this alphabet are, to my recollection, laid out as 22 signs in Hebrew order. That has not been checked against any printed source. The Latin value 'Ts' is the one I recall from those charts. It matches the letter-value Paul Christian gives this position in his 22 'arcana' (The History and Practice of Magic, tr. Kirkup and Shaw, 1952), as I recall that book. Both are unverified. The numeric value is the standard Hebrew one, given for the transliterator. I do not know that any chart of this alphabet prints numbers."
+    },
+    {
+      "order": 19,
+      "name": "Qoph",
+      "value": "ק",
+      "translit": "Q",
+      "numeric": 100,
+      "form": "NOT DESCRIBED. I could not see any image of this alphabet in this session, and I know of no text that describes its letters stroke by stroke. I will not reconstruct it from memory of modern charts. It is often listed beside Agrippa's ring-letter alphabets, but do NOT borrow forms from the Celestial, Malachim or Transitus fluvii, or from the Hebrew square letter: no source I can name says how far they are related. Leave a gap until the letter can be traced from the first printing, once that printing is identified (leading candidate: Paul Christian, Histoire de la magie, Paris 1870, unverified).",
+      "formConfidence": "low",
+      "note": "SCAFFOLD. The Hebrew order and value are an assumption: modern charts of this alphabet are, to my recollection, laid out as 22 signs in Hebrew order. That has not been checked against any printed source. The Latin value 'Q' is the one I recall from those charts. It matches the letter-value Paul Christian gives this position in his 22 'arcana' (The History and Practice of Magic, tr. Kirkup and Shaw, 1952), as I recall that book. Both are unverified. The numeric value is the standard Hebrew one, given for the transliterator. I do not know that any chart of this alphabet prints numbers."
+    },
+    {
+      "order": 20,
+      "name": "Resh",
+      "value": "ר",
+      "translit": "R",
+      "numeric": 200,
+      "form": "NOT DESCRIBED. I could not see any image of this alphabet in this session, and I know of no text that describes its letters stroke by stroke. I will not reconstruct it from memory of modern charts. It is often listed beside Agrippa's ring-letter alphabets, but do NOT borrow forms from the Celestial, Malachim or Transitus fluvii, or from the Hebrew square letter: no source I can name says how far they are related. Leave a gap until the letter can be traced from the first printing, once that printing is identified (leading candidate: Paul Christian, Histoire de la magie, Paris 1870, unverified).",
+      "formConfidence": "low",
+      "note": "SCAFFOLD. The Hebrew order and value are an assumption: modern charts of this alphabet are, to my recollection, laid out as 22 signs in Hebrew order. That has not been checked against any printed source. The Latin value 'R' is the one I recall from those charts. It matches the letter-value Paul Christian gives this position in his 22 'arcana' (The History and Practice of Magic, tr. Kirkup and Shaw, 1952), as I recall that book. Both are unverified. The numeric value is the standard Hebrew one, given for the transliterator. I do not know that any chart of this alphabet prints numbers."
+    },
+    {
+      "order": 21,
+      "name": "Shin",
+      "value": "ש",
+      "translit": "S",
+      "numeric": 300,
+      "form": "NOT DESCRIBED. I could not see any image of this alphabet in this session, and I know of no text that describes its letters stroke by stroke. I will not reconstruct it from memory of modern charts. It is often listed beside Agrippa's ring-letter alphabets, but do NOT borrow forms from the Celestial, Malachim or Transitus fluvii, or from the Hebrew square letter: no source I can name says how far they are related. Leave a gap until the letter can be traced from the first printing, once that printing is identified (leading candidate: Paul Christian, Histoire de la magie, Paris 1870, unverified).",
+      "formConfidence": "low",
+      "note": "SCAFFOLD. The Hebrew order and value are an assumption: modern charts of this alphabet are, to my recollection, laid out as 22 signs in Hebrew order. That has not been checked against any printed source. The Latin value 'S' is the one I recall from those charts. It matches the letter-value Paul Christian gives this position in his 22 'arcana' (The History and Practice of Magic, tr. Kirkup and Shaw, 1952), as I recall that book. Both are unverified. The numeric value is the standard Hebrew one, given for the transliterator. I do not know that any chart of this alphabet prints numbers. Christian's Shin is the arcanum he numbers 0 (as I recall); that is irrelevant to the glyph."
+    },
+    {
+      "order": 22,
+      "name": "Tav",
+      "value": "ת",
+      "translit": "T",
+      "numeric": 400,
+      "form": "NOT DESCRIBED. I could not see any image of this alphabet in this session, and I know of no text that describes its letters stroke by stroke. I will not reconstruct it from memory of modern charts. It is often listed beside Agrippa's ring-letter alphabets, but do NOT borrow forms from the Celestial, Malachim or Transitus fluvii, or from the Hebrew square letter: no source I can name says how far they are related. Leave a gap until the letter can be traced from the first printing, once that printing is identified (leading candidate: Paul Christian, Histoire de la magie, Paris 1870, unverified).",
+      "formConfidence": "low",
+      "note": "SCAFFOLD. The Hebrew order and value are an assumption: modern charts of this alphabet are, to my recollection, laid out as 22 signs in Hebrew order. That has not been checked against any printed source. The Latin value 'T' is the one I recall from those charts. It matches the letter-value Paul Christian gives this position in his 22 'arcana' (The History and Practice of Magic, tr. Kirkup and Shaw, 1952), as I recall that book. Both are unverified. The numeric value is the standard Hebrew one, given for the transliterator. I do not know that any chart of this alphabet prints numbers."
+    }
+  ],
+  "lettersSource": "SCAFFOLD ONLY. No table seen. The 22 rows follow the Hebrew alphabet, with the Latin values I recall from modern charts. Those values coincide with Paul Christian's arcana letter-values as I recall them from The History and Practice of Magic (tr. Kirkup and Shaw, 1952). Nothing here has been checked against a printed table. FORMS: NONE VERIFIED; all 22 are 'low' and marked NOT DESCRIBED. To draw the letters, first identify the earliest printed table. Check Christian 1870 and its 1952 English translation, Christian 1863, the Paracelsian editions (Huser 1589–1591; Turner 1656) and Duret 1613 (archive.org/details/fre_b1886963). Trace from that table and name it. Do not draw from Omniglot, from modern fonts, or by analogy with Agrippa's Malachim or Celestial.",
+  "uses": [
+    {
+      "use": "Engraving angel names on talismans (the attributed Paracelsian use)",
+      "evidence": "This is asserted in modern reference charts (Omniglot, recalled) without a cited source; treat it as legend. The Paracelsian talisman literature (the spurious Archidoxis magica) prescribes engraved seals with names and characters. I could not confirm that any of those seals uses this alphabet."
+    },
+    {
+      "use": "Engraving names on rings ('the Magi engraved names on rings')",
+      "evidence": "I could not trace this story to any source I can name. It may be a version of the talisman claim above, or it may come from Christian's chapters on talismans and rings. Unverified. Do not print it without a source."
+    },
+    {
+      "use": "Name-divination and number-work within Paul Christian's arcana (possible)",
+      "evidence": "This is an inference. If the alphabet belongs to Christian's framework, its letters carry the arcana values he uses to read a name as numbers and arcana. I found no source that says the glyphs themselves were used this way."
+    },
+    {
+      "use": "Modern ceremonial and folk-magical practice (writing names on talismans and the like)",
+      "evidence": "It circulates in modern magical handbooks, web charts and fonts as a 'secret alphabet' for talismanic writing. That is general knowledge, and I could not cite a specific source in this session."
+    }
+  ],
+  "quotations": [],
+  "links": [
+    {
+      "to": "hebrew",
+      "relation": "As commonly charted, its 22 signs stand for the Hebrew letters in Hebrew order. This is unverified."
+    },
+    {
+      "to": "latin",
+      "relation": "The charts give Latin values (A, B, G, D, E, U/V, Z, H, Th, I, C/K, L, M, N, X, O, F/P, Ts, Q, R, S, T), which point to a 19th-century French occultist setting."
+    },
+    {
+      "to": "malachim",
+      "relation": "Often listed beside it and sometimes thought to resemble it. Malachim is documented in Agrippa 1533 III.30; the Alphabet of the Magi is not. Any graphic relation between the two is unverified."
+    },
+    {
+      "to": "celestial",
+      "relation": "It is often shown in the same 'magical alphabets' charts as the Celestial, which is Agrippa's (1533 III.30); the Alphabet of the Magi is not Agrippa's."
+    },
+    {
+      "to": "transitus-fluvii",
+      "relation": "Listed in the same modern charts. Transitus fluvii has a documented history (de Balmes 1523; Agrippa 1533); the Alphabet of the Magi has none that I could establish."
+    },
+    {
+      "to": "theban",
+      "relation": "Contrast: Theban carries a named early-modern attribution (Trithemius ascribes it to Honorius of Thebes). The 'Magi' alphabet's Paracelsus attribution has no early source located."
+    }
+  ],
+  "cautions": [
+    "NO SEARCH RAN FOR THIS ITEM: the shared web-search budget was used up before this item began. Every date, edition and attribution below Agrippa's (which the sibling files verified) is prior knowledge and must be checked before publication.",
+    "Never write 'Paracelsus invented / devised the Alphabet of the Magi'. Write 'modern reference works attribute it to Paracelsus; no passage in his writings has been identified'.",
+    "Do not present the Archidoxis magica as Paracelsus' own. The house timeline calls it spurious by common consent.",
+    "Do not place it among Agrippa's alphabets. De occulta philosophia III.29–30 (1533) prints Theban, Celestial, Malachim and Transitus fluvii, and none of them is this alphabet.",
+    "Do not name Paul Christian (1870) as the first printing on the page until the book has been checked. That attribution is a hypothesis built on matching letter-values and vocabulary.",
+    "LETTER FORMS ARE NOT DESCRIBED. Drawing 'Paracelsus' Alphabet of the Magi' from this file would mean inventing it. Also, do not borrow Malachim or Celestial forms by analogy.",
+    "Even the order, count and Latin values of the letters are recollections of modern charts. The transliterator should not ship this alphabet until a printed table is checked.",
+    "The story of names engraved on rings has no source in this file.",
+    "No quotation is given. I would not quote Christian, Turner or Omniglot from memory.",
+    "URLs: only those already verified by sibling research are given. The Omniglot, Gallica or archive.org pages for Christian's book are left blank rather than guessed (Omniglot files these alphabets under /conscripts/, not /writing/)."
+  ],
+  "sources": [
+    {
+      "citation": "Paul Christian [Jean-Baptiste Pitois], Histoire de la magie, du monde surnaturel et de la fatalité à travers les temps et les peuples, Paris: Furne, Jouvet et Cie, 1870 (candidate first printing; not consulted in this session)",
+      "url": ""
+    },
+    {
+      "citation": "Paul Christian, The History and Practice of Magic, tr. James Kirkup and Julian Shaw, ed. Ross Nichols, London: Forge Press, 1952; New York: Citadel, 1963 (not consulted in this session)",
+      "url": ""
+    },
+    {
+      "citation": "Paul Christian, L'Homme rouge des Tuileries, Paris, 1863 (earlier Christian book to check for the alphabet; not consulted)",
+      "url": ""
+    },
+    {
+      "citation": "Ronald Decker, Thierry Depaulis and Michael Dummett, A Wicked Pack of Cards: The Origins of the Occult Tarot, London: Duckworth, 1996 (on Christian's arcana and his false 'Iamblichus' source; not consulted in this session)",
+      "url": ""
+    },
+    {
+      "citation": "Paracelsus (attrib.), Paracelsus of the Supreme Mysteries of Nature, incl. the Archidoxes of Magic, tr. Robert Turner, London, 1656; reissued as The Archidoxes of Magic, intro. Stephen Skinner, London: Askin, 1975 (not consulted)",
+      "url": ""
+    },
+    {
+      "citation": "Karl Sudhoff (ed.), Theophrast von Hohenheim gen. Paracelsus, Sämtliche Werke, Abt. I, 1922–1933 (for the genuine/spurious division; not consulted)",
+      "url": ""
+    },
+    {
+      "citation": "Three Magi Press house timeline, 'Paracelsus' (Huser 1589–1591; Archidoxis magica 'spurious by common consent'), apps/web/src/data/education/timelines/latin.js",
+      "url": ""
+    },
+    {
+      "citation": "Heinrich Cornelius Agrippa, De occulta philosophia libri tres, [Cologne], July 1533, III.29–30 (Library of Congress copy, digitised; checked by sibling research for which alphabets Agrippa prints)",
+      "url": "https://archive.org/details/DeOccultaPhilosophiaLoc1533"
+    },
+    {
+      "citation": "Agrippa, Three Books of Occult Philosophy, tr. J.F., London: R.W. for Gregory Moule, 1651, III.xxx (EEBO-TCP A26565)",
+      "url": "https://quod.lib.umich.edu/e/eebo/A26565.0001.001/1:18.30?rgn=div2;view=fulltext"
+    },
+    {
+      "citation": "Claude Duret, Thrésor de l'histoire des langues de cest univers, 1613 (digitised; an alphabet compendium to check for an earlier 'alphabet des Mages'; not checked for this item)",
+      "url": "https://archive.org/details/fre_b1886963"
+    },
+    {
+      "citation": "Omniglot, 'Alphabet of the Magi' (conscripts section; letter list only, per house rule; recalled, URL not verified in this session)",
+      "url": ""
+    }
+  ],
+  "confidence": "SOLID: it is not one of Agrippa's alphabets (III.29–30, 1533, verified by the sibling files). Also solid: the Archidoxis magica, the Paracelsian magical book behind the talisman story, is regarded as spurious (house timeline, following Sudhoff). PROBABLE but unverified in this session: modern reference works make the Paracelsus attribution without citing a passage, and I know of no Paracelsian edition that prints the alphabet. SHAKY: the first printing. Paul Christian's Histoire de la magie (Paris, 1870) is only the leading candidate, chosen because its arcana letter-values seem to match the alphabet's usual values. The 22-letter Hebrew-order layout and the Latin values are recollections. The ring-engraving story has no source. NONE: no letter form is described; all 22 are low and must be traced from a printed table once one is identified. BASIS: no web search could be run for this item, because the session's shared search budget was spent before it began. Everything in this file rests on (a) my prior knowledge, which is unverified in this session, (b) facts already verified by the sibling research files (celestial, malachim, transitus-fluvii, theban) and (c) the site's own Paracelsus timeline entry (apps/web/src/data/education/timelines/latin.js). Each claim says which."
+}

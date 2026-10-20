@@ -26,3 +26,11 @@ apps/web/public/llms.txt
 
 # generated at build by apps/web/tools/generate-sitemap.mjs
 apps/web/public/sitemap.xml
+
+# Secrets and the analytics database live above the web root on the server;
+# a local run must never be able to commit either.
+tl-secrets.php
+tl-analytics/
+*.sqlite
+*.sqlite-wal
+*.sqlite-shm

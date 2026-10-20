@@ -12,6 +12,7 @@ export default {
             slug: 'dionysian-ninefold', name: 'The Nine Choirs of Dionysius',
             era: 'c. 500 CE', tradition: 'Christian',
             image: 'f88f1e7b776e8375d5e34cae7f088c5d.webp',
+            imageShape: 'portrait',
             imageAlt: 'A robed celebrant at an altar beneath a towering wall of graded tiers, each rank carved with its own disc and countenance, light falling from an oculus above',
             imageCaption: 'The scheme as architecture: rank above rank up a single wall, each tier taking the light in the measure it can bear and handing it down — which is the doctrine, not a metaphor for it.',
             exposition: [
@@ -95,6 +96,7 @@ export default {
             slug: 'hekhalot-palaces', name: 'The Seven Palaces',
             era: 'redacted 5th–9th centuries CE', tradition: 'Jewish (merkavah)',
             image: 'afa126e3d85d2f83aaff57827ceefac2.webp',
+            imageShape: 'portrait',
             imageAlt: 'A rock-cut temple facade of lamplit chambers stacked one above another into the storm, white-robed figures with scrolls gathered below',
             imageCaption: 'Palace above palace: the ascent as the hekhalot literature imagines it, with the names carried like passports past every gate.',
             exposition: [
@@ -109,6 +111,7 @@ export default {
             slug: 'islamic-ranks', name: 'The Angels of Islam',
             era: '7th century CE onward', tradition: 'Islamic',
             image: 'f61517891c4952e92821d4cd208b2147.webp',
+            imageShape: 'portrait',
             imageAlt: 'Vast translucent winged figures filling the sky above a mosque courtyard at sunset, a reader seated with a lamp on the wet marble',
             imageCaption: 'Made of light, filling the horizon: the tradition says the Prophet twice saw Jibril unveiled, wings from east to west.',
             exposition: [
@@ -168,6 +171,7 @@ export default {
             slug: 'enochian-dee', name: 'The Watchtowers of Dr. Dee',
             era: '1582–1587 CE', tradition: 'Early modern angel magic',
             image: '8d6b06ff5f256d1a67b0067e833bf0e7.webp',
+            imageShape: 'portrait',
             imageAlt: 'Two men in Elizabethan dress at a velvet table with an obsidian sphere between them, easels of angelic diagrams around the dark room',
             imageCaption: 'The shew-stone between them: Kelley watched, Dee wrote, and the tables came through one letter at a time.',
             exposition: [

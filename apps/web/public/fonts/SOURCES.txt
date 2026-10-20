@@ -1,0 +1,111 @@
+The fonts in this folder, and where each file comes from
+========================================================
+
+Licence. Every Noto face listed below is licensed under the SIL Open Font
+License, Version 1.1. The licence text and the copyright notice of each Noto
+project are in OFL.txt, beside this file. The TC-Seraphine family is not a
+Noto face. OFL.txt does not cover it, and this file does not record it.
+
+Provenance. Each file is either a COPY, byte for byte, of one script subset
+from a @fontsource package (checked with cmp), or a CUT made from such
+subsets by the script named in its entry. The packages were fetched with
+`npm pack <package>@5.3.0` and unpacked. They were never installed, so they
+are not in package.json or the lockfile for these files. The 12 @fontsource
+entries in package.json record the older faces only.
+
+The @font-face rules and their unicode-range lines are in src/index.css. Every
+family is named in both script stacks there: `.edu-page .edu-glyph` and
+`--edu-script-faces`.
+
+
+Copies (file  <-  package, subset file; font version in the name table)
+-----------------------------------------------------------------------
+
+NotoSansEgyptianHieroglyphs.woff2  "TL Hieroglyphs"
+    <- @fontsource/noto-sans-egyptian-hieroglyphs@5.3.0,
+       files/noto-sans-egyptian-hieroglyphs-egyptian-hieroglyphs-400-normal.woff2
+       Noto Sans Egyptian Hieroglyphs, Version 2.002
+NotoSansCuneiform.woff2  "TL Cuneiform"
+    <- @fontsource/noto-sans-cuneiform@5.3.0, files/noto-sans-cuneiform-cuneiform-400-normal.woff2
+       Noto Sans Cuneiform, Version 2.001
+NotoSerifDevanagari.woff2  "TL Devanagari"
+    <- @fontsource/noto-serif-devanagari@5.3.0, files/noto-serif-devanagari-devanagari-400-normal.woff2
+       Noto Serif Devanagari, Version 2.006
+NotoNaskhArabic.woff2  "TL Arabic"
+    <- @fontsource/noto-naskh-arabic@5.3.0, files/noto-naskh-arabic-arabic-400-normal.woff2
+       Noto Naskh Arabic, Version 2.021
+TLTibetan.woff2  "TL Tibetan"
+    <- @fontsource/noto-serif-tibetan@5.3.0, files/noto-serif-tibetan-tibetan-400-normal.woff2
+       Noto Serif Tibetan, Version 2.103
+TLSyriac.woff2  "TL Syriac"
+    <- @fontsource/noto-sans-syriac@5.3.0, files/noto-sans-syriac-syriac-400-normal.woff2
+       Noto Sans Syriac, Version 3.000
+TLCoptic.woff2  "TL Coptic"
+    <- @fontsource/noto-sans-coptic@5.3.0, files/noto-sans-coptic-coptic-400-normal.woff2
+       Noto Sans Coptic, Version 2.004
+TLMandaic.woff2  "TL Mandaic"
+    <- @fontsource/noto-sans-mandaic@5.3.0, files/noto-sans-mandaic-mandaic-400-normal.woff2
+       Noto Sans Mandaic, Version 2.003
+TLArmenian.woff2  "TL Armenian"
+    <- @fontsource/noto-serif-armenian@5.3.0, files/noto-serif-armenian-armenian-400-normal.woff2
+       Noto Serif Armenian, Version 2.008
+TLEthiopic.woff2  "TL Ethiopic"
+    <- @fontsource/noto-serif-ethiopic@5.3.0, files/noto-serif-ethiopic-ethiopic-400-normal.woff2
+       Noto Serif Ethiopic, Version 2.102
+TLGlagolitic.woff2  "TL Glagolitic"
+    <- @fontsource/noto-sans-glagolitic@5.3.0, files/noto-sans-glagolitic-glagolitic-400-normal.woff2
+       Noto Sans Glagolitic, Version 2.004
+TLCyrillicExt.woff2  "TL Cyrillic Ext"
+    <- @fontsource/noto-sans-glagolitic@5.3.0, files/noto-sans-glagolitic-cyrillic-ext-400-normal.woff2
+       Noto Sans Glagolitic, Version 2.004
+TLPhoenician.woff2  "TL Phoenician"
+    <- @fontsource/noto-sans-phoenician@5.3.0, files/noto-sans-phoenician-phoenician-400-normal.woff2
+       Noto Sans Phoenician, Version 2.001. Subset U+10900-1091B, U+1091F.
+TLRunic.woff2  "TL Runic"  (6,588 bytes)
+    <- @fontsource/noto-sans-runic@5.3.0, files/noto-sans-runic-runic-400-normal.woff2
+       Noto Sans Runic, Version 2.002. Subset U+16A0-16F8: the whole Runic block
+       to the end of the Unicode 7 additions, so it includes the Elder Futhark,
+       the Younger Futhark and the futhorc rows.
+TLOgham.woff2  "TL Ogham"  (3,896 bytes)
+    <- @fontsource/noto-sans-ogham@5.3.0, files/noto-sans-ogham-ogham-400-normal.woff2
+       Noto Sans Ogham, Version 2.001. Subset U+1680-169C: the space mark,
+       the twenty feda, the five forfeda, peith, and the two feather marks.
+
+
+Cut
+---
+
+TLSigns.woff2  "TL Signs"  (3,540 bytes, 34 code points)
+    Made by tools/fonts/build-tlsigns.py (Python 3.11, fontTools 4.67.0,
+    brotli 1.2.0). The script is in the repository, and a rebuild with those
+    versions gives the same bytes. It takes:
+      33 code points from @fontsource/noto-sans-symbols@5.3.0,
+         files/noto-sans-symbols-symbols-400-normal.woff2
+         (Noto Sans Symbols, Version 2.003);
+       1 code point, U+2609 SUN, from @fontsource/noto-sans-symbols-2@5.3.0,
+         files/noto-sans-symbols-2-symbols-400-normal.woff2
+         (Noto Sans Symbols 2, Version 2.008). Noto Sans Symbols has no Sun.
+    The script merges them into one font. It keeps every outline and advance
+    unchanged, and it checks them against the sources. It drops what single
+    signs do not need: hinting, layout tables and vertical-writing metrics.
+    It sets the line metrics to Noto Sans's own 1069 / -293, the same as
+    TLRunic. Every sign's ink lies within y -222..765. Noto Sans Symbols'
+    own 1480 / -570 would open up any line of prose that quotes a sign. The
+    font is renamed "TL Signs", and its copyright notice is kept.
+
+    The code points are exactly the Unicode-encoded units of the Signs of
+    the Art (the planets, the zodiac, and the alchemical elements,
+    principles, substances and operations):
+      planets     U+2609 SUN, U+263D FIRST QUARTER MOON, U+263F MERCURY,
+                  U+2640 FEMALE SIGN (Venus), U+2642 MALE SIGN (Mars),
+                  U+2643 JUPITER, U+2644 SATURN
+      zodiac      U+2648 ARIES .. U+2653 PISCES (twelve)
+      elements    U+1F701 AIR, U+1F702 FIRE, U+1F703 EARTH, U+1F704 WATER
+      principles  U+1F70D SULFUR, U+263F MERCURY, U+1F714 SALT
+      substances  U+2641 EARTH (antimony), U+1F716 VITRIOL,
+                  U+1F739 SAL-AMMONIAC, U+1F705 AQUAFORTIS, U+1F706 AQUA REGIA
+      operations  U+1F75E SUBLIMATION, U+1F75F PRECIPITATE, U+1F760 DISTILL,
+                  U+1F764 PUTREFACTION
+    The @font-face unicode-range names these and nothing else. If the signs
+    module gains a sign, add it to the script and to that unicode-range,
+    rebuild, and update this entry.

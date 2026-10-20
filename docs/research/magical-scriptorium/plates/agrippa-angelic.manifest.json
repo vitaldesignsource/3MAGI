@@ -1,0 +1,2952 @@
+{
+ "slug": "agrippa-angelic",
+ "plates": [
+  {
+   "file": "agrippa-angelic-1533-loc-celestial.png",
+   "table": "Scriptura Coelestis (Celestial writing)",
+   "letters": [
+    {
+     "position": 1,
+     "row": 1,
+     "from_right": 1,
+     "label_as_printed": "Aleph.",
+     "value": "א (Aleph)"
+    },
+    {
+     "position": 2,
+     "row": 1,
+     "from_right": 2,
+     "label_as_printed": "Beth.",
+     "value": "ב (Beth)"
+    },
+    {
+     "position": 3,
+     "row": 1,
+     "from_right": 3,
+     "label_as_printed": "Gimel.",
+     "value": "ג (Gimel)"
+    },
+    {
+     "position": 4,
+     "row": 1,
+     "from_right": 4,
+     "label_as_printed": "Daleth ,",
+     "value": "ד (Daleth)"
+    },
+    {
+     "position": 5,
+     "row": 1,
+     "from_right": 5,
+     "label_as_printed": "He.",
+     "value": "ה (He)"
+    },
+    {
+     "position": 6,
+     "row": 1,
+     "from_right": 6,
+     "label_as_printed": "Vau.",
+     "value": "ו (Vav)"
+    },
+    {
+     "position": 7,
+     "row": 1,
+     "from_right": 7,
+     "label_as_printed": "Zain.",
+     "value": "ז (Zain)"
+    },
+    {
+     "position": 8,
+     "row": 1,
+     "from_right": 8,
+     "label_as_printed": "Cheth.",
+     "value": "ח (Het)"
+    },
+    {
+     "position": 9,
+     "row": 1,
+     "from_right": 9,
+     "label_as_printed": "Theth",
+     "value": "ט (Teth)"
+    },
+    {
+     "position": 10,
+     "row": 2,
+     "from_right": 1,
+     "label_as_printed": "Iod",
+     "value": "י (Yod)"
+    },
+    {
+     "position": 11,
+     "row": 2,
+     "from_right": 2,
+     "label_as_printed": "Caph",
+     "value": "כ (Kaph)"
+    },
+    {
+     "position": 12,
+     "row": 2,
+     "from_right": 3,
+     "label_as_printed": "Lamed",
+     "value": "ל (Lamed)"
+    },
+    {
+     "position": 13,
+     "row": 2,
+     "from_right": 4,
+     "label_as_printed": "Mem",
+     "value": "מ (Mem)"
+    },
+    {
+     "position": 14,
+     "row": 2,
+     "from_right": 5,
+     "label_as_printed": "Nun",
+     "value": "נ (Nun)"
+    },
+    {
+     "position": 15,
+     "row": 2,
+     "from_right": 6,
+     "label_as_printed": "Samech",
+     "value": "ס (Samekh)"
+    },
+    {
+     "position": 16,
+     "row": 2,
+     "from_right": 7,
+     "label_as_printed": "Ain",
+     "value": "ע (Ayin)"
+    },
+    {
+     "position": 17,
+     "row": 2,
+     "from_right": 8,
+     "label_as_printed": "Pe",
+     "value": "פ (Pe)"
+    },
+    {
+     "position": 18,
+     "row": 2,
+     "from_right": 9,
+     "label_as_printed": "Zade",
+     "value": "צ (Tsade)"
+    },
+    {
+     "position": 19,
+     "row": 3,
+     "from_right": 1,
+     "label_as_printed": "Kuff",
+     "value": "ק (Qoph)"
+    },
+    {
+     "position": 20,
+     "row": 3,
+     "from_right": 2,
+     "label_as_printed": "Res",
+     "value": "ר (Resh)"
+    },
+    {
+     "position": 21,
+     "row": 3,
+     "from_right": 3,
+     "label_as_printed": "Shin",
+     "value": "ש (Shin)"
+    },
+    {
+     "position": 22,
+     "row": 3,
+     "from_right": 4,
+     "label_as_printed": "Tau",
+     "value": "ת (Tau)"
+    }
+   ],
+   "letter_count": 22,
+   "rows_as_printed": [
+    9,
+    9,
+    4
+   ],
+   "reading_order": "Rows run right to left (Aleph at the right end of row 1); positions are counted right to left, top to bottom.",
+   "source": {
+    "work": "De occulta philosophia libri tres",
+    "author": "Heinrich Cornelius Agrippa von Nettesheim",
+    "edition": "First complete edition (Books I-III), one of the 'four or five issues' dated 1533 that catalogues report (Osler note, B.O. 1746)",
+    "date": "July 1533: colophon 'OCCVLTAE PHILOSOPHIAE HENrici Cornelii Agrippae, Finis. Anno M. D. XXXIII. Mense Iulio.' (read in the LoC copy, loc.gov sequence 366, p. CCCLXII). The LoC record's note gives it as 'Dated at end: Anno MDXXIIII. Mense Iulio.', a slip in the record.",
+    "place": "[Cologne]",
+    "printer": "[Johannes Soter] (bracketed attribution in the catalogues)",
+    "copy": "Library of Congress, Rare Book and Special Collections Division, BF1598.A3 O4 1533 (LCCN 20007812)",
+    "repository": "Library of Congress (loc.gov); mirrored at archive.org as DeOccultaPhilosophiaLoc1533",
+    "identifier": "loc.gov item 20007812; resource rbc.2009gen12345 (370 images; former URL rbc0001.2009gen12345); archive.org DeOccultaPhilosophiaLoc1533 (files named 2009gen12345)",
+    "image_index": "loc.gov sequence 277 (0277.jp2); archive.org leaf n276 (0-based)",
+    "printed_locator": "Lib. III, Caput XXX ('Alius characterizandi modus, à Cabalistis traditus.'), p. CCLXXIII (misprinted 'CCXLXXIII' in this setting), sig. z3r ('z iii')",
+    "page_url": "https://www.loc.gov/resource/rbc.2009gen12345/?sp=277",
+    "image_url": "https://tile.loc.gov/storage-services/public/rbc/2009gen12345/0277.jp2",
+    "rights": "Library of Congress (loc.gov item record): 'The Library of Congress is not aware of any U.S. copyright or any other restrictions in the documents in this collection.' Credit line: 'Library of Congress, Rare Book and Special Collections Division'. The archive.org mirror (DeOccultaPhilosophiaLoc1533) carries the Public Domain Mark 1.0 (http://creativecommons.org/publicdomain/mark/1.0/)."
+   },
+   "crop": {
+    "from": "0277.jp2 (3344x4622 px, LoC master JP2, decoded losslessly to PNG)",
+    "geometry": "2030x1033+340+2795"
+   },
+   "legibility": "Excellent; every sign and label legible; heading 'Scriptura Cœlestis' included.",
+   "notes": "Setting A (shared with McGill and NLM copies): row-1 labels carry full stops ('Daleth' followed by a comma; 'Theth' without stop)."
+  },
+  {
+   "file": "agrippa-angelic-1533-loc-malachim.png",
+   "table": "Scriptura Malachim",
+   "letters": [
+    {
+     "position": 1,
+     "row": 1,
+     "from_right": 1,
+     "label_as_printed": "Aleph",
+     "value": "א (Aleph)"
+    },
+    {
+     "position": 2,
+     "row": 1,
+     "from_right": 2,
+     "label_as_printed": "Beth",
+     "value": "ב (Beth)"
+    },
+    {
+     "position": 3,
+     "row": 1,
+     "from_right": 3,
+     "label_as_printed": "Gimel",
+     "value": "ג (Gimel)"
+    },
+    {
+     "position": 4,
+     "row": 1,
+     "from_right": 4,
+     "label_as_printed": "Daleth",
+     "value": "ד (Daleth)"
+    },
+    {
+     "position": 5,
+     "row": 1,
+     "from_right": 5,
+     "label_as_printed": "He",
+     "value": "ה (He)"
+    },
+    {
+     "position": 6,
+     "row": 1,
+     "from_right": 6,
+     "label_as_printed": "Vau",
+     "value": "ו (Vav)"
+    },
+    {
+     "position": 7,
+     "row": 1,
+     "from_right": 7,
+     "label_as_printed": "Zain",
+     "value": "ז (Zain)"
+    },
+    {
+     "position": 8,
+     "row": 2,
+     "from_right": 1,
+     "label_as_printed": "Cheth",
+     "value": "ח (Het)"
+    },
+    {
+     "position": 9,
+     "row": 2,
+     "from_right": 2,
+     "label_as_printed": "Theth",
+     "value": "ט (Teth)"
+    },
+    {
+     "position": 10,
+     "row": 2,
+     "from_right": 3,
+     "label_as_printed": "Iod",
+     "value": "י (Yod)"
+    },
+    {
+     "position": 11,
+     "row": 2,
+     "from_right": 4,
+     "label_as_printed": "Caph",
+     "value": "כ (Kaph)"
+    },
+    {
+     "position": 12,
+     "row": 2,
+     "from_right": 5,
+     "label_as_printed": "Lamed",
+     "value": "ל (Lamed)"
+    },
+    {
+     "position": 13,
+     "row": 2,
+     "from_right": 6,
+     "label_as_printed": "Mem",
+     "value": "מ (Mem)"
+    },
+    {
+     "position": 14,
+     "row": 2,
+     "from_right": 7,
+     "label_as_printed": "Nun",
+     "value": "נ (Nun)"
+    },
+    {
+     "position": 15,
+     "row": 3,
+     "from_right": 1,
+     "label_as_printed": "Tau",
+     "value": "ת (Tau)",
+     "note": "The ladder-like sign (verticals joined by a cross-bar with rings) is the one printed under 'Tau'."
+    },
+    {
+     "position": 16,
+     "row": 3,
+     "from_right": 2,
+     "label_as_printed": "Shin",
+     "value": "ש (Shin)",
+     "note": "The zigzag sign (an N/Lambda-like figure with ring ends) is the one printed under the Shin label."
+    },
+    {
+     "position": 17,
+     "row": 3,
+     "from_right": 3,
+     "label_as_printed": "Samech",
+     "value": "ס (Samekh)",
+     "note": "First of TWO signs labelled Samech (reading right to left): the six-armed star/asterisk with ring ends."
+    },
+    {
+     "position": 18,
+     "row": 3,
+     "from_right": 4,
+     "label_as_printed": "Samech",
+     "value": "ס (Samekh)",
+     "note": "Second of TWO signs labelled Samech (reading right to left): the candlestick-like sign (several ringed branches on a stem with a ringed foot)."
+    },
+    {
+     "position": 19,
+     "row": 3,
+     "from_right": 5,
+     "label_as_printed": "Ain",
+     "value": "ע (Ayin)",
+     "note": "From here the row returns to Hebrew order (Ain, Pe, Zade, Kuff, Res), i.e. Tau, Shin and the two Samechs are printed before Ain, out of Hebrew order."
+    },
+    {
+     "position": 20,
+     "row": 3,
+     "from_right": 6,
+     "label_as_printed": "Pe",
+     "value": "פ (Pe)"
+    },
+    {
+     "position": 21,
+     "row": 3,
+     "from_right": 7,
+     "label_as_printed": "Zade",
+     "value": "צ (Tsade)"
+    },
+    {
+     "position": 22,
+     "row": 3,
+     "from_right": 8,
+     "label_as_printed": "Kuff",
+     "value": "ק (Qoph)"
+    },
+    {
+     "position": 23,
+     "row": 3,
+     "from_right": 9,
+     "label_as_printed": "Res",
+     "value": "ר (Resh)"
+    }
+   ],
+   "letter_count": 23,
+   "rows_as_printed": [
+    7,
+    7,
+    9
+   ],
+   "reading_order": "Rows run right to left (Aleph at the right end of row 1); positions are counted right to left, top to bottom.",
+   "source": {
+    "work": "De occulta philosophia libri tres",
+    "author": "Heinrich Cornelius Agrippa von Nettesheim",
+    "edition": "First complete edition (Books I-III), one of the 'four or five issues' dated 1533 that catalogues report (Osler note, B.O. 1746)",
+    "date": "July 1533: colophon 'OCCVLTAE PHILOSOPHIAE HENrici Cornelii Agrippae, Finis. Anno M. D. XXXIII. Mense Iulio.' (read in the LoC copy, loc.gov sequence 366, p. CCCLXII). The LoC record's note gives it as 'Dated at end: Anno MDXXIIII. Mense Iulio.', a slip in the record.",
+    "place": "[Cologne]",
+    "printer": "[Johannes Soter] (bracketed attribution in the catalogues)",
+    "copy": "Library of Congress, Rare Book and Special Collections Division, BF1598.A3 O4 1533 (LCCN 20007812)",
+    "repository": "Library of Congress (loc.gov); mirrored at archive.org as DeOccultaPhilosophiaLoc1533",
+    "identifier": "loc.gov item 20007812; resource rbc.2009gen12345 (370 images; former URL rbc0001.2009gen12345); archive.org DeOccultaPhilosophiaLoc1533 (files named 2009gen12345)",
+    "image_index": "loc.gov sequence 278 (0278.jp2); archive.org leaf n277",
+    "printed_locator": "Lib. III, Cap. XXX; heading 'Scriptura Malachim' at the foot of p. CCLXXIII (z3r); the signs on p. CCLXXIIII, [sig. z3v]",
+    "page_url": "https://www.loc.gov/resource/rbc.2009gen12345/?sp=278",
+    "image_url": "https://tile.loc.gov/storage-services/public/rbc/2009gen12345/0278.jp2",
+    "rights": "Library of Congress (loc.gov item record): 'The Library of Congress is not aware of any U.S. copyright or any other restrictions in the documents in this collection.' Credit line: 'Library of Congress, Rare Book and Special Collections Division'. The archive.org mirror (DeOccultaPhilosophiaLoc1533) carries the Public Domain Mark 1.0 (http://creativecommons.org/publicdomain/mark/1.0/)."
+   },
+   "crop": {
+    "from": "0278.jp2 (3575x4606 px)",
+    "geometry": "2065x987+1085+485"
+   },
+   "legibility": "Excellent. Brown foxing spots between Vau and He and to the right of Beth (row 1) are paper stains, not strokes.",
+   "notes": "The heading is on the facing recto (p. 273), so it is not in this crop; see agrippa-angelic-page-1533-loc-p273.jpg."
+  },
+  {
+   "file": "agrippa-angelic-1533-loc-transitus-fluvii.png",
+   "table": "Scriptura transitus fluuii (Passing of the River)",
+   "letters": [
+    {
+     "position": 1,
+     "row": 1,
+     "from_right": 1,
+     "label_as_printed": "Aleph",
+     "value": "א (Aleph)"
+    },
+    {
+     "position": 2,
+     "row": 1,
+     "from_right": 2,
+     "label_as_printed": "Beth",
+     "value": "ב (Beth)"
+    },
+    {
+     "position": 3,
+     "row": 1,
+     "from_right": 3,
+     "label_as_printed": "Gimel",
+     "value": "ג (Gimel)"
+    },
+    {
+     "position": 4,
+     "row": 1,
+     "from_right": 4,
+     "label_as_printed": "Daleth",
+     "value": "ד (Daleth)"
+    },
+    {
+     "position": 5,
+     "row": 1,
+     "from_right": 5,
+     "label_as_printed": "He",
+     "value": "ה (He)"
+    },
+    {
+     "position": 6,
+     "row": 1,
+     "from_right": 6,
+     "label_as_printed": "Vau",
+     "value": "ו (Vav)"
+    },
+    {
+     "position": 7,
+     "row": 1,
+     "from_right": 7,
+     "label_as_printed": "Zain",
+     "value": "ז (Zain)"
+    },
+    {
+     "position": 8,
+     "row": 1,
+     "from_right": 8,
+     "label_as_printed": "Cheth",
+     "value": "ח (Het)"
+    },
+    {
+     "position": 9,
+     "row": 2,
+     "from_right": 1,
+     "label_as_printed": "Theth",
+     "value": "ט (Teth)"
+    },
+    {
+     "position": 10,
+     "row": 2,
+     "from_right": 2,
+     "label_as_printed": "Iod",
+     "value": "י (Yod)"
+    },
+    {
+     "position": 11,
+     "row": 2,
+     "from_right": 3,
+     "label_as_printed": "Caph",
+     "value": "כ (Kaph)"
+    },
+    {
+     "position": 12,
+     "row": 2,
+     "from_right": 4,
+     "label_as_printed": "Lamed",
+     "value": "ל (Lamed)"
+    },
+    {
+     "position": 13,
+     "row": 2,
+     "from_right": 5,
+     "label_as_printed": "Mem",
+     "value": "מ (Mem)"
+    },
+    {
+     "position": 14,
+     "row": 2,
+     "from_right": 6,
+     "label_as_printed": "Nun",
+     "value": "נ (Nun)"
+    },
+    {
+     "position": 15,
+     "row": 2,
+     "from_right": 7,
+     "label_as_printed": "Samech",
+     "value": "ס (Samekh)"
+    },
+    {
+     "position": 16,
+     "row": 3,
+     "from_right": 1,
+     "label_as_printed": "Ain",
+     "value": "ע (Ayin)"
+    },
+    {
+     "position": 17,
+     "row": 3,
+     "from_right": 2,
+     "label_as_printed": "Pe",
+     "value": "פ (Pe)"
+    },
+    {
+     "position": 18,
+     "row": 3,
+     "from_right": 3,
+     "label_as_printed": "Zade",
+     "value": "צ (Tsade)"
+    },
+    {
+     "position": 19,
+     "row": 3,
+     "from_right": 4,
+     "label_as_printed": "Kuph",
+     "value": "ק (Qoph)"
+    },
+    {
+     "position": 20,
+     "row": 3,
+     "from_right": 5,
+     "label_as_printed": "Res",
+     "value": "ר (Resh)"
+    },
+    {
+     "position": 21,
+     "row": 3,
+     "from_right": 6,
+     "label_as_printed": "Schin",
+     "value": "ש (Shin)"
+    },
+    {
+     "position": 22,
+     "row": 3,
+     "from_right": 7,
+     "label_as_printed": "Tau",
+     "value": "ת (Tau)"
+    }
+   ],
+   "letter_count": 22,
+   "rows_as_printed": [
+    8,
+    7,
+    7
+   ],
+   "reading_order": "Rows run right to left (Aleph at the right end of row 1); positions are counted right to left, top to bottom.",
+   "source": {
+    "work": "De occulta philosophia libri tres",
+    "author": "Heinrich Cornelius Agrippa von Nettesheim",
+    "edition": "First complete edition (Books I-III), one of the 'four or five issues' dated 1533 that catalogues report (Osler note, B.O. 1746)",
+    "date": "July 1533: colophon 'OCCVLTAE PHILOSOPHIAE HENrici Cornelii Agrippae, Finis. Anno M. D. XXXIII. Mense Iulio.' (read in the LoC copy, loc.gov sequence 366, p. CCCLXII). The LoC record's note gives it as 'Dated at end: Anno MDXXIIII. Mense Iulio.', a slip in the record.",
+    "place": "[Cologne]",
+    "printer": "[Johannes Soter] (bracketed attribution in the catalogues)",
+    "copy": "Library of Congress, Rare Book and Special Collections Division, BF1598.A3 O4 1533 (LCCN 20007812)",
+    "repository": "Library of Congress (loc.gov); mirrored at archive.org as DeOccultaPhilosophiaLoc1533",
+    "identifier": "loc.gov item 20007812; resource rbc.2009gen12345 (370 images; former URL rbc0001.2009gen12345); archive.org DeOccultaPhilosophiaLoc1533 (files named 2009gen12345)",
+    "image_index": "loc.gov sequence 278 (0278.jp2); archive.org leaf n277",
+    "printed_locator": "Lib. III, Cap. XXX, p. CCLXXIIII [sig. z3v], below the Malachim",
+    "page_url": "https://www.loc.gov/resource/rbc.2009gen12345/?sp=278",
+    "image_url": "https://tile.loc.gov/storage-services/public/rbc/2009gen12345/0278.jp2",
+    "rights": "Library of Congress (loc.gov item record): 'The Library of Congress is not aware of any U.S. copyright or any other restrictions in the documents in this collection.' Credit line: 'Library of Congress, Rare Book and Special Collections Division'. The archive.org mirror (DeOccultaPhilosophiaLoc1533) carries the Public Domain Mark 1.0 (http://creativecommons.org/publicdomain/mark/1.0/)."
+   },
+   "crop": {
+    "from": "0278.jp2 (3575x4606 px)",
+    "geometry": "2015x1062+1095+1478"
+   },
+   "legibility": "Excellent; heading included."
+  },
+  {
+   "file": "agrippa-angelic-1533-mcgill-celestial.png",
+   "table": "Scriptura Coelestis (Celestial writing)",
+   "letters": [
+    {
+     "position": 1,
+     "row": 1,
+     "from_right": 1,
+     "label_as_printed": "Aleph.",
+     "value": "א (Aleph)"
+    },
+    {
+     "position": 2,
+     "row": 1,
+     "from_right": 2,
+     "label_as_printed": "Beth.",
+     "value": "ב (Beth)"
+    },
+    {
+     "position": 3,
+     "row": 1,
+     "from_right": 3,
+     "label_as_printed": "Gimel.",
+     "value": "ג (Gimel)"
+    },
+    {
+     "position": 4,
+     "row": 1,
+     "from_right": 4,
+     "label_as_printed": "Daleth ,",
+     "value": "ד (Daleth)"
+    },
+    {
+     "position": 5,
+     "row": 1,
+     "from_right": 5,
+     "label_as_printed": "He.",
+     "value": "ה (He)"
+    },
+    {
+     "position": 6,
+     "row": 1,
+     "from_right": 6,
+     "label_as_printed": "Vau.",
+     "value": "ו (Vav)"
+    },
+    {
+     "position": 7,
+     "row": 1,
+     "from_right": 7,
+     "label_as_printed": "Zain.",
+     "value": "ז (Zain)"
+    },
+    {
+     "position": 8,
+     "row": 1,
+     "from_right": 8,
+     "label_as_printed": "Cheth.",
+     "value": "ח (Het)"
+    },
+    {
+     "position": 9,
+     "row": 1,
+     "from_right": 9,
+     "label_as_printed": "Theth",
+     "value": "ט (Teth)"
+    },
+    {
+     "position": 10,
+     "row": 2,
+     "from_right": 1,
+     "label_as_printed": "Iod",
+     "value": "י (Yod)"
+    },
+    {
+     "position": 11,
+     "row": 2,
+     "from_right": 2,
+     "label_as_printed": "Caph",
+     "value": "כ (Kaph)"
+    },
+    {
+     "position": 12,
+     "row": 2,
+     "from_right": 3,
+     "label_as_printed": "Lamed",
+     "value": "ל (Lamed)"
+    },
+    {
+     "position": 13,
+     "row": 2,
+     "from_right": 4,
+     "label_as_printed": "Mem",
+     "value": "מ (Mem)"
+    },
+    {
+     "position": 14,
+     "row": 2,
+     "from_right": 5,
+     "label_as_printed": "Nun",
+     "value": "נ (Nun)"
+    },
+    {
+     "position": 15,
+     "row": 2,
+     "from_right": 6,
+     "label_as_printed": "Samech",
+     "value": "ס (Samekh)"
+    },
+    {
+     "position": 16,
+     "row": 2,
+     "from_right": 7,
+     "label_as_printed": "Ain",
+     "value": "ע (Ayin)"
+    },
+    {
+     "position": 17,
+     "row": 2,
+     "from_right": 8,
+     "label_as_printed": "Pe",
+     "value": "פ (Pe)"
+    },
+    {
+     "position": 18,
+     "row": 2,
+     "from_right": 9,
+     "label_as_printed": "Zade",
+     "value": "צ (Tsade)"
+    },
+    {
+     "position": 19,
+     "row": 3,
+     "from_right": 1,
+     "label_as_printed": "Kuff",
+     "value": "ק (Qoph)"
+    },
+    {
+     "position": 20,
+     "row": 3,
+     "from_right": 2,
+     "label_as_printed": "Res",
+     "value": "ר (Resh)"
+    },
+    {
+     "position": 21,
+     "row": 3,
+     "from_right": 3,
+     "label_as_printed": "Shin",
+     "value": "ש (Shin)"
+    },
+    {
+     "position": 22,
+     "row": 3,
+     "from_right": 4,
+     "label_as_printed": "Tau",
+     "value": "ת (Tau)"
+    }
+   ],
+   "letter_count": 22,
+   "rows_as_printed": [
+    9,
+    9,
+    4
+   ],
+   "reading_order": "Rows run right to left (Aleph at the right end of row 1); positions are counted right to left, top to bottom.",
+   "source": {
+    "work": "De occulta philosophia libri tres",
+    "author": "Heinrich Cornelius Agrippa von Nettesheim",
+    "edition": "First complete edition (Books I-III), one of the 'four or five issues' dated 1533 that catalogues report (Osler note, B.O. 1746)",
+    "date": "July 1533 (McGill MARC 260: '[Cologne] : [Soter], July 1533.', note 'date from colophon'); this copy's colophon not checked. The LoC copy's colophon reads 'Anno M. D. XXXIII. Mense Iulio.'",
+    "place": "[Cologne]",
+    "printer": "[Johannes Soter] (bracketed attribution in the catalogues)",
+    "copy": "McGill University Library, Osler Library of the History of Medicine, Bibliotheca Osleriana no. 1746 ('a thick-paper copy'); shelfmark not given in the archive.org record (identifier contains 'folioA279o1533')",
+    "repository": "Internet Archive (McGill University Library digitisation)",
+    "identifier": "McGillLibrary-osl_henrici-cornelii-agrippae_folioA279o1533-19978",
+    "image_index": "archive.org leaf n288 (0-based; file _0288.jp2)",
+    "printed_locator": "Lib. III, Caput XXX, p. CCLXXIII (misprinted 'CCXLXXIII'), sig. z3r",
+    "page_url": "https://archive.org/details/McGillLibrary-osl_henrici-cornelii-agrippae_folioA279o1533-19978/page/n288/mode/1up",
+    "image_url": "https://iiif.archive.org/iiif/McGillLibrary-osl_henrici-cornelii-agrippae_folioA279o1533-19978$288/full/full/0/default.jpg",
+    "rights": "No rights or licence statement: none in the archive.org item metadata (contributor: McGill University Library; uploader digitization.library@mcgill.ca), in the item's MARC record, or in the archive.org collection records 'mcgilluniversity' and 'mcgilluniversityosler'. McGill's own terms for this digitisation were not checked on McGill's website. The 1533 book itself is out of copyright."
+   },
+   "crop": {
+    "from": "IIIF full JPEG 5560x8111 px (600 ppi)",
+    "geometry": "3280x1654+220+4876"
+   },
+   "legibility": "Excellent; the sharpest 1533 image (highest resolution)."
+  },
+  {
+   "file": "agrippa-angelic-1533-mcgill-malachim.png",
+   "table": "Scriptura Malachim",
+   "letters": [
+    {
+     "position": 1,
+     "row": 1,
+     "from_right": 1,
+     "label_as_printed": "Aleph",
+     "value": "א (Aleph)"
+    },
+    {
+     "position": 2,
+     "row": 1,
+     "from_right": 2,
+     "label_as_printed": "Beth",
+     "value": "ב (Beth)"
+    },
+    {
+     "position": 3,
+     "row": 1,
+     "from_right": 3,
+     "label_as_printed": "Gimel",
+     "value": "ג (Gimel)"
+    },
+    {
+     "position": 4,
+     "row": 1,
+     "from_right": 4,
+     "label_as_printed": "Daleth",
+     "value": "ד (Daleth)"
+    },
+    {
+     "position": 5,
+     "row": 1,
+     "from_right": 5,
+     "label_as_printed": "He",
+     "value": "ה (He)"
+    },
+    {
+     "position": 6,
+     "row": 1,
+     "from_right": 6,
+     "label_as_printed": "Vau",
+     "value": "ו (Vav)"
+    },
+    {
+     "position": 7,
+     "row": 1,
+     "from_right": 7,
+     "label_as_printed": "Zain",
+     "value": "ז (Zain)"
+    },
+    {
+     "position": 8,
+     "row": 2,
+     "from_right": 1,
+     "label_as_printed": "Cheth",
+     "value": "ח (Het)"
+    },
+    {
+     "position": 9,
+     "row": 2,
+     "from_right": 2,
+     "label_as_printed": "Theth",
+     "value": "ט (Teth)"
+    },
+    {
+     "position": 10,
+     "row": 2,
+     "from_right": 3,
+     "label_as_printed": "Iod",
+     "value": "י (Yod)"
+    },
+    {
+     "position": 11,
+     "row": 2,
+     "from_right": 4,
+     "label_as_printed": "Caph",
+     "value": "כ (Kaph)"
+    },
+    {
+     "position": 12,
+     "row": 2,
+     "from_right": 5,
+     "label_as_printed": "Lamed",
+     "value": "ל (Lamed)"
+    },
+    {
+     "position": 13,
+     "row": 2,
+     "from_right": 6,
+     "label_as_printed": "Mem",
+     "value": "מ (Mem)"
+    },
+    {
+     "position": 14,
+     "row": 2,
+     "from_right": 7,
+     "label_as_printed": "Nun",
+     "value": "נ (Nun)"
+    },
+    {
+     "position": 15,
+     "row": 3,
+     "from_right": 1,
+     "label_as_printed": "Tau",
+     "value": "ת (Tau)",
+     "note": "The ladder-like sign (verticals joined by a cross-bar with rings) is the one printed under 'Tau'."
+    },
+    {
+     "position": 16,
+     "row": 3,
+     "from_right": 2,
+     "label_as_printed": "Shin",
+     "value": "ש (Shin)",
+     "note": "The zigzag sign (an N/Lambda-like figure with ring ends) is the one printed under the Shin label."
+    },
+    {
+     "position": 17,
+     "row": 3,
+     "from_right": 3,
+     "label_as_printed": "Samech",
+     "value": "ס (Samekh)",
+     "note": "First of TWO signs labelled Samech (reading right to left): the six-armed star/asterisk with ring ends."
+    },
+    {
+     "position": 18,
+     "row": 3,
+     "from_right": 4,
+     "label_as_printed": "Samech",
+     "value": "ס (Samekh)",
+     "note": "Second of TWO signs labelled Samech (reading right to left): the candlestick-like sign (several ringed branches on a stem with a ringed foot)."
+    },
+    {
+     "position": 19,
+     "row": 3,
+     "from_right": 5,
+     "label_as_printed": "Ain",
+     "value": "ע (Ayin)",
+     "note": "From here the row returns to Hebrew order (Ain, Pe, Zade, Kuff, Res), i.e. Tau, Shin and the two Samechs are printed before Ain, out of Hebrew order."
+    },
+    {
+     "position": 20,
+     "row": 3,
+     "from_right": 6,
+     "label_as_printed": "Pe",
+     "value": "פ (Pe)"
+    },
+    {
+     "position": 21,
+     "row": 3,
+     "from_right": 7,
+     "label_as_printed": "Zade",
+     "value": "צ (Tsade)"
+    },
+    {
+     "position": 22,
+     "row": 3,
+     "from_right": 8,
+     "label_as_printed": "Kuff",
+     "value": "ק (Qoph)"
+    },
+    {
+     "position": 23,
+     "row": 3,
+     "from_right": 9,
+     "label_as_printed": "Res",
+     "value": "ר (Resh)"
+    }
+   ],
+   "letter_count": 23,
+   "rows_as_printed": [
+    7,
+    7,
+    9
+   ],
+   "reading_order": "Rows run right to left (Aleph at the right end of row 1); positions are counted right to left, top to bottom.",
+   "source": {
+    "work": "De occulta philosophia libri tres",
+    "author": "Heinrich Cornelius Agrippa von Nettesheim",
+    "edition": "First complete edition (Books I-III), one of the 'four or five issues' dated 1533 that catalogues report (Osler note, B.O. 1746)",
+    "date": "July 1533 (McGill MARC 260: '[Cologne] : [Soter], July 1533.', note 'date from colophon'); this copy's colophon not checked. The LoC copy's colophon reads 'Anno M. D. XXXIII. Mense Iulio.'",
+    "place": "[Cologne]",
+    "printer": "[Johannes Soter] (bracketed attribution in the catalogues)",
+    "copy": "McGill University Library, Osler Library of the History of Medicine, Bibliotheca Osleriana no. 1746 ('a thick-paper copy'); shelfmark not given in the archive.org record (identifier contains 'folioA279o1533')",
+    "repository": "Internet Archive (McGill University Library digitisation)",
+    "identifier": "McGillLibrary-osl_henrici-cornelii-agrippae_folioA279o1533-19978",
+    "image_index": "archive.org leaf n289",
+    "printed_locator": "Lib. III, Cap. XXX; heading at foot of p. CCLXXIII (z3r); signs on p. CCLXXIIII [z3v]",
+    "page_url": "https://archive.org/details/McGillLibrary-osl_henrici-cornelii-agrippae_folioA279o1533-19978/page/n289/mode/1up",
+    "image_url": "https://iiif.archive.org/iiif/McGillLibrary-osl_henrici-cornelii-agrippae_folioA279o1533-19978$289/full/full/0/default.jpg",
+    "rights": "No rights or licence statement: none in the archive.org item metadata (contributor: McGill University Library; uploader digitization.library@mcgill.ca), in the item's MARC record, or in the archive.org collection records 'mcgilluniversity' and 'mcgilluniversityosler'. McGill's own terms for this digitisation were not checked on McGill's website. The 1533 book itself is out of copyright."
+   },
+   "crop": {
+    "from": "IIIF full JPEG 5560x8111 px",
+    "geometry": "3330x1620+1950+1150"
+   },
+   "legibility": "Excellent. Two dirt specks between Daleth and Gimel (row 1) are not part of any sign."
+  },
+  {
+   "file": "agrippa-angelic-1533-mcgill-transitus-fluvii.png",
+   "table": "Scriptura transitus fluuii (Passing of the River)",
+   "letters": [
+    {
+     "position": 1,
+     "row": 1,
+     "from_right": 1,
+     "label_as_printed": "Aleph",
+     "value": "א (Aleph)"
+    },
+    {
+     "position": 2,
+     "row": 1,
+     "from_right": 2,
+     "label_as_printed": "Beth",
+     "value": "ב (Beth)"
+    },
+    {
+     "position": 3,
+     "row": 1,
+     "from_right": 3,
+     "label_as_printed": "Gimel",
+     "value": "ג (Gimel)"
+    },
+    {
+     "position": 4,
+     "row": 1,
+     "from_right": 4,
+     "label_as_printed": "Daleth",
+     "value": "ד (Daleth)"
+    },
+    {
+     "position": 5,
+     "row": 1,
+     "from_right": 5,
+     "label_as_printed": "He",
+     "value": "ה (He)"
+    },
+    {
+     "position": 6,
+     "row": 1,
+     "from_right": 6,
+     "label_as_printed": "Vau",
+     "value": "ו (Vav)"
+    },
+    {
+     "position": 7,
+     "row": 1,
+     "from_right": 7,
+     "label_as_printed": "Zain",
+     "value": "ז (Zain)"
+    },
+    {
+     "position": 8,
+     "row": 1,
+     "from_right": 8,
+     "label_as_printed": "Cheth",
+     "value": "ח (Het)"
+    },
+    {
+     "position": 9,
+     "row": 2,
+     "from_right": 1,
+     "label_as_printed": "Theth",
+     "value": "ט (Teth)"
+    },
+    {
+     "position": 10,
+     "row": 2,
+     "from_right": 2,
+     "label_as_printed": "Iod",
+     "value": "י (Yod)"
+    },
+    {
+     "position": 11,
+     "row": 2,
+     "from_right": 3,
+     "label_as_printed": "Caph",
+     "value": "כ (Kaph)"
+    },
+    {
+     "position": 12,
+     "row": 2,
+     "from_right": 4,
+     "label_as_printed": "Lamed",
+     "value": "ל (Lamed)"
+    },
+    {
+     "position": 13,
+     "row": 2,
+     "from_right": 5,
+     "label_as_printed": "Mem",
+     "value": "מ (Mem)"
+    },
+    {
+     "position": 14,
+     "row": 2,
+     "from_right": 6,
+     "label_as_printed": "Nun",
+     "value": "נ (Nun)"
+    },
+    {
+     "position": 15,
+     "row": 2,
+     "from_right": 7,
+     "label_as_printed": "Samech",
+     "value": "ס (Samekh)"
+    },
+    {
+     "position": 16,
+     "row": 3,
+     "from_right": 1,
+     "label_as_printed": "Ain",
+     "value": "ע (Ayin)"
+    },
+    {
+     "position": 17,
+     "row": 3,
+     "from_right": 2,
+     "label_as_printed": "Pe",
+     "value": "פ (Pe)"
+    },
+    {
+     "position": 18,
+     "row": 3,
+     "from_right": 3,
+     "label_as_printed": "Zade",
+     "value": "צ (Tsade)"
+    },
+    {
+     "position": 19,
+     "row": 3,
+     "from_right": 4,
+     "label_as_printed": "Kuph",
+     "value": "ק (Qoph)"
+    },
+    {
+     "position": 20,
+     "row": 3,
+     "from_right": 5,
+     "label_as_printed": "Res",
+     "value": "ר (Resh)"
+    },
+    {
+     "position": 21,
+     "row": 3,
+     "from_right": 6,
+     "label_as_printed": "Schin",
+     "value": "ש (Shin)"
+    },
+    {
+     "position": 22,
+     "row": 3,
+     "from_right": 7,
+     "label_as_printed": "Tau",
+     "value": "ת (Tau)"
+    }
+   ],
+   "letter_count": 22,
+   "rows_as_printed": [
+    8,
+    7,
+    7
+   ],
+   "reading_order": "Rows run right to left (Aleph at the right end of row 1); positions are counted right to left, top to bottom.",
+   "source": {
+    "work": "De occulta philosophia libri tres",
+    "author": "Heinrich Cornelius Agrippa von Nettesheim",
+    "edition": "First complete edition (Books I-III), one of the 'four or five issues' dated 1533 that catalogues report (Osler note, B.O. 1746)",
+    "date": "July 1533 (McGill MARC 260: '[Cologne] : [Soter], July 1533.', note 'date from colophon'); this copy's colophon not checked. The LoC copy's colophon reads 'Anno M. D. XXXIII. Mense Iulio.'",
+    "place": "[Cologne]",
+    "printer": "[Johannes Soter] (bracketed attribution in the catalogues)",
+    "copy": "McGill University Library, Osler Library of the History of Medicine, Bibliotheca Osleriana no. 1746 ('a thick-paper copy'); shelfmark not given in the archive.org record (identifier contains 'folioA279o1533')",
+    "repository": "Internet Archive (McGill University Library digitisation)",
+    "identifier": "McGillLibrary-osl_henrici-cornelii-agrippae_folioA279o1533-19978",
+    "image_index": "archive.org leaf n289",
+    "printed_locator": "Lib. III, Cap. XXX, p. CCLXXIIII [z3v]",
+    "page_url": "https://archive.org/details/McGillLibrary-osl_henrici-cornelii-agrippae_folioA279o1533-19978/page/n289/mode/1up",
+    "image_url": "https://iiif.archive.org/iiif/McGillLibrary-osl_henrici-cornelii-agrippae_folioA279o1533-19978$289/full/full/0/default.jpg",
+    "rights": "No rights or licence statement: none in the archive.org item metadata (contributor: McGill University Library; uploader digitization.library@mcgill.ca), in the item's MARC record, or in the archive.org collection records 'mcgilluniversity' and 'mcgilluniversityosler'. McGill's own terms for this digitisation were not checked on McGill's website. The 1533 book itself is out of copyright."
+   },
+   "crop": {
+    "from": "IIIF full JPEG 5560x8111 px",
+    "geometry": "3330x1760+1950+2770"
+   },
+   "legibility": "Excellent; heading included."
+  },
+  {
+   "file": "agrippa-angelic-1533-jung-celestial.png",
+   "table": "Scriptura Coelestis (Celestial writing)",
+   "letters": [
+    {
+     "position": 1,
+     "row": 1,
+     "from_right": 1,
+     "label_as_printed": "Aleph",
+     "value": "א (Aleph)"
+    },
+    {
+     "position": 2,
+     "row": 1,
+     "from_right": 2,
+     "label_as_printed": "Beth",
+     "value": "ב (Beth)"
+    },
+    {
+     "position": 3,
+     "row": 1,
+     "from_right": 3,
+     "label_as_printed": "Gimel",
+     "value": "ג (Gimel)"
+    },
+    {
+     "position": 4,
+     "row": 1,
+     "from_right": 4,
+     "label_as_printed": "Daleth",
+     "value": "ד (Daleth)"
+    },
+    {
+     "position": 5,
+     "row": 1,
+     "from_right": 5,
+     "label_as_printed": "He",
+     "value": "ה (He)"
+    },
+    {
+     "position": 6,
+     "row": 1,
+     "from_right": 6,
+     "label_as_printed": "Vau",
+     "value": "ו (Vav)"
+    },
+    {
+     "position": 7,
+     "row": 1,
+     "from_right": 7,
+     "label_as_printed": "Zain",
+     "value": "ז (Zain)"
+    },
+    {
+     "position": 8,
+     "row": 1,
+     "from_right": 8,
+     "label_as_printed": "Cheth",
+     "value": "ח (Het)"
+    },
+    {
+     "position": 9,
+     "row": 1,
+     "from_right": 9,
+     "label_as_printed": "Theth",
+     "value": "ט (Teth)"
+    },
+    {
+     "position": 10,
+     "row": 2,
+     "from_right": 1,
+     "label_as_printed": "Iod",
+     "value": "י (Yod)"
+    },
+    {
+     "position": 11,
+     "row": 2,
+     "from_right": 2,
+     "label_as_printed": "Caph",
+     "value": "כ (Kaph)"
+    },
+    {
+     "position": 12,
+     "row": 2,
+     "from_right": 3,
+     "label_as_printed": "Lamed",
+     "value": "ל (Lamed)"
+    },
+    {
+     "position": 13,
+     "row": 2,
+     "from_right": 4,
+     "label_as_printed": "Mem",
+     "value": "מ (Mem)"
+    },
+    {
+     "position": 14,
+     "row": 2,
+     "from_right": 5,
+     "label_as_printed": "Nun",
+     "value": "נ (Nun)"
+    },
+    {
+     "position": 15,
+     "row": 2,
+     "from_right": 6,
+     "label_as_printed": "Samech",
+     "value": "ס (Samekh)"
+    },
+    {
+     "position": 16,
+     "row": 2,
+     "from_right": 7,
+     "label_as_printed": "Ain",
+     "value": "ע (Ayin)"
+    },
+    {
+     "position": 17,
+     "row": 2,
+     "from_right": 8,
+     "label_as_printed": "Pe",
+     "value": "פ (Pe)"
+    },
+    {
+     "position": 18,
+     "row": 2,
+     "from_right": 9,
+     "label_as_printed": "Zade",
+     "value": "צ (Tsade)"
+    },
+    {
+     "position": 19,
+     "row": 3,
+     "from_right": 1,
+     "label_as_printed": "Kuff",
+     "value": "ק (Qoph)"
+    },
+    {
+     "position": 20,
+     "row": 3,
+     "from_right": 2,
+     "label_as_printed": "Res",
+     "value": "ר (Resh)"
+    },
+    {
+     "position": 21,
+     "row": 3,
+     "from_right": 3,
+     "label_as_printed": "Schin",
+     "value": "ש (Shin)"
+    },
+    {
+     "position": 22,
+     "row": 3,
+     "from_right": 4,
+     "label_as_printed": "Tau",
+     "value": "ת (Tau)"
+    }
+   ],
+   "letter_count": 22,
+   "rows_as_printed": [
+    9,
+    9,
+    4
+   ],
+   "reading_order": "Rows run right to left (Aleph at the right end of row 1); positions are counted right to left, top to bottom.",
+   "source": {
+    "work": "De occulta philosophia libri tres",
+    "author": "Heinrich Cornelius Agrippa von Nettesheim",
+    "edition": "First complete edition (Books I-III), one of the 'four or five issues' dated 1533 that catalogues report (Osler note, B.O. 1746)",
+    "date": "[1533] (e-rara METS dateIssued '[1533]'); this copy's colophon not checked. The LoC copy of the same edition reads 'Anno M. D. XXXIII. Mense Iulio.'",
+    "place": "[Cologne]",
+    "printer": "[Johannes Soter] (bracketed attribution in the catalogues)",
+    "copy": "Stiftung der Werke von C.G. Jung, Zürich (C.G. Jung's library); no shelfmark published (e-rara shelfLocator 'Online')",
+    "repository": "e-rara.ch (DOI 10.3931/e-rara-4309; record 1343192; VD16 ZV 269); mirrored at archive.org as DeOccultaPhilosophiaJungCollection1533",
+    "identifier": "e-rara 1343192 (canvas images 1343489, 1343490); DOI https://doi.org/10.3931/e-rara-4309",
+    "image_index": "e-rara canvas 295 of 393 (image id 1343489, label 'CCLXXIII'); archive.org mirror leaf n294",
+    "printed_locator": "Lib. III, Caput XXX, p. CCLXXIII (correctly numbered in this setting), sig. z3r",
+    "page_url": "https://www.e-rara.ch/cgj/content/pageview/1343489",
+    "image_url": "https://www.e-rara.ch/i3f/v21/1343489/full/full/0/default.jpg",
+    "rights": "e-rara: Public Domain Mark 1.0 (METS accessCondition 'PDM 1.0', https://creativecommons.org/publicdomain/mark/1.0/; IIIF manifest licence https://creativecommons.org/publicdomain/mark/1.0/deed.de); attribution 'e-rara, the platform for digitized rare books from Swiss institutions'. The archive.org mirror (DeOccultaPhilosophiaJungCollection1533) also carries PDM 1.0."
+   },
+   "crop": {
+    "from": "e-rara IIIF full 2550x3675 px (the repository's maximum)",
+    "geometry": "1630x830+250+2058"
+   },
+   "legibility": "Good; all signs and labels legible; paper browned and foxed. A trace of the descenders of the text line above may show at the top edge.",
+   "notes": "Setting B: labels without full stops; row 3 reads 'Schin' (setting A: 'Shin')."
+  },
+  {
+   "file": "agrippa-angelic-1533-jung-malachim.png",
+   "table": "Scriptura Malachim",
+   "letters": [
+    {
+     "position": 1,
+     "row": 1,
+     "from_right": 1,
+     "label_as_printed": "Aleph",
+     "value": "א (Aleph)",
+     "note": "In this copy the middle ring at the top of Aleph prints open (Y-shaped); LoC and McGill show a closed ring."
+    },
+    {
+     "position": 2,
+     "row": 1,
+     "from_right": 2,
+     "label_as_printed": "Beth",
+     "value": "ב (Beth)"
+    },
+    {
+     "position": 3,
+     "row": 1,
+     "from_right": 3,
+     "label_as_printed": "Gimel",
+     "value": "ג (Gimel)"
+    },
+    {
+     "position": 4,
+     "row": 1,
+     "from_right": 4,
+     "label_as_printed": "Daleth",
+     "value": "ד (Daleth)"
+    },
+    {
+     "position": 5,
+     "row": 1,
+     "from_right": 5,
+     "label_as_printed": "He",
+     "value": "ה (He)"
+    },
+    {
+     "position": 6,
+     "row": 1,
+     "from_right": 6,
+     "label_as_printed": "Vau",
+     "value": "ו (Vav)"
+    },
+    {
+     "position": 7,
+     "row": 1,
+     "from_right": 7,
+     "label_as_printed": "Zain",
+     "value": "ז (Zain)"
+    },
+    {
+     "position": 8,
+     "row": 2,
+     "from_right": 1,
+     "label_as_printed": "Cheth",
+     "value": "ח (Het)"
+    },
+    {
+     "position": 9,
+     "row": 2,
+     "from_right": 2,
+     "label_as_printed": "Theth",
+     "value": "ט (Teth)"
+    },
+    {
+     "position": 10,
+     "row": 2,
+     "from_right": 3,
+     "label_as_printed": "Iod",
+     "value": "י (Yod)"
+    },
+    {
+     "position": 11,
+     "row": 2,
+     "from_right": 4,
+     "label_as_printed": "Caph",
+     "value": "כ (Kaph)"
+    },
+    {
+     "position": 12,
+     "row": 2,
+     "from_right": 5,
+     "label_as_printed": "Lamed",
+     "value": "ל (Lamed)"
+    },
+    {
+     "position": 13,
+     "row": 2,
+     "from_right": 6,
+     "label_as_printed": "Mem",
+     "value": "מ (Mem)"
+    },
+    {
+     "position": 14,
+     "row": 2,
+     "from_right": 7,
+     "label_as_printed": "Nun",
+     "value": "נ (Nun)"
+    },
+    {
+     "position": 15,
+     "row": 3,
+     "from_right": 1,
+     "label_as_printed": "Tau",
+     "value": "ת (Tau)",
+     "note": "The ladder-like sign (verticals joined by a cross-bar with rings) is the one printed under 'Tau'."
+    },
+    {
+     "position": 16,
+     "row": 3,
+     "from_right": 2,
+     "label_as_printed": "Scin",
+     "value": "ש (Shin)",
+     "note": "Printed 'Scin' in this setting (LoC/McGill setting: 'Shin'). The zigzag sign."
+    },
+    {
+     "position": 17,
+     "row": 3,
+     "from_right": 3,
+     "label_as_printed": "Samech",
+     "value": "ס (Samekh)",
+     "note": "First of TWO signs labelled Samech (reading right to left): the six-armed star/asterisk with ring ends."
+    },
+    {
+     "position": 18,
+     "row": 3,
+     "from_right": 4,
+     "label_as_printed": "Samech",
+     "value": "ס (Samekh)",
+     "note": "Second of TWO signs labelled Samech (reading right to left): the candlestick-like sign (several ringed branches on a stem with a ringed foot). In this copy the ring at the foot of the stem prints as an open arc (damaged or under-inked); LoC and McGill show a closed ring."
+    },
+    {
+     "position": 19,
+     "row": 3,
+     "from_right": 5,
+     "label_as_printed": "Ain",
+     "value": "ע (Ayin)",
+     "note": "From here the row returns to Hebrew order (Ain, Pe, Zade, Kuff, Res), i.e. Tau, Shin and the two Samechs are printed before Ain, out of Hebrew order."
+    },
+    {
+     "position": 20,
+     "row": 3,
+     "from_right": 6,
+     "label_as_printed": "Pe",
+     "value": "פ (Pe)"
+    },
+    {
+     "position": 21,
+     "row": 3,
+     "from_right": 7,
+     "label_as_printed": "Zade",
+     "value": "צ (Tsade)"
+    },
+    {
+     "position": 22,
+     "row": 3,
+     "from_right": 8,
+     "label_as_printed": "Kuff",
+     "value": "ק (Qoph)"
+    },
+    {
+     "position": 23,
+     "row": 3,
+     "from_right": 9,
+     "label_as_printed": "Res",
+     "value": "ר (Resh)"
+    }
+   ],
+   "letter_count": 23,
+   "rows_as_printed": [
+    7,
+    7,
+    9
+   ],
+   "reading_order": "Rows run right to left (Aleph at the right end of row 1); positions are counted right to left, top to bottom.",
+   "source": {
+    "work": "De occulta philosophia libri tres",
+    "author": "Heinrich Cornelius Agrippa von Nettesheim",
+    "edition": "First complete edition (Books I-III), one of the 'four or five issues' dated 1533 that catalogues report (Osler note, B.O. 1746)",
+    "date": "[1533] (e-rara METS dateIssued '[1533]'); this copy's colophon not checked. The LoC copy of the same edition reads 'Anno M. D. XXXIII. Mense Iulio.'",
+    "place": "[Cologne]",
+    "printer": "[Johannes Soter] (bracketed attribution in the catalogues)",
+    "copy": "Stiftung der Werke von C.G. Jung, Zürich (C.G. Jung's library); no shelfmark published (e-rara shelfLocator 'Online')",
+    "repository": "e-rara.ch (DOI 10.3931/e-rara-4309; record 1343192; VD16 ZV 269); mirrored at archive.org as DeOccultaPhilosophiaJungCollection1533",
+    "identifier": "e-rara 1343192 (canvas images 1343489, 1343490); DOI https://doi.org/10.3931/e-rara-4309",
+    "image_index": "e-rara canvas 296 of 393 (image id 1343490, label 'CCLXXIIII'); archive.org mirror leaf n295",
+    "printed_locator": "Lib. III, Cap. XXX; heading at foot of p. CCLXXIII (z3r); signs on p. CCLXXIIII [z3v]",
+    "page_url": "https://www.e-rara.ch/cgj/content/pageview/1343490",
+    "image_url": "https://www.e-rara.ch/i3f/v21/1343490/full/full/0/default.jpg",
+    "rights": "e-rara: Public Domain Mark 1.0 (METS accessCondition 'PDM 1.0', https://creativecommons.org/publicdomain/mark/1.0/; IIIF manifest licence https://creativecommons.org/publicdomain/mark/1.0/deed.de); attribution 'e-rara, the platform for digitized rare books from Swiss institutions'. The archive.org mirror (DeOccultaPhilosophiaJungCollection1533) also carries PDM 1.0."
+   },
+   "crop": {
+    "from": "e-rara IIIF full 2550x3675 px",
+    "geometry": "1665x794+600+238"
+   },
+   "legibility": "Good. The top edge includes the foot of the running head; the label row and the signs are complete. Two rings are imperfect in this impression (Aleph top-middle; foot of the candlestick Samech) - trace those from LoC or McGill."
+  },
+  {
+   "file": "agrippa-angelic-1533-jung-transitus-fluvii.png",
+   "table": "Scriptura transitus fluuii (Passing of the River)",
+   "letters": [
+    {
+     "position": 1,
+     "row": 1,
+     "from_right": 1,
+     "label_as_printed": "Aleph",
+     "value": "א (Aleph)"
+    },
+    {
+     "position": 2,
+     "row": 1,
+     "from_right": 2,
+     "label_as_printed": "Beth",
+     "value": "ב (Beth)"
+    },
+    {
+     "position": 3,
+     "row": 1,
+     "from_right": 3,
+     "label_as_printed": "Gimel",
+     "value": "ג (Gimel)"
+    },
+    {
+     "position": 4,
+     "row": 1,
+     "from_right": 4,
+     "label_as_printed": "Daleth",
+     "value": "ד (Daleth)"
+    },
+    {
+     "position": 5,
+     "row": 1,
+     "from_right": 5,
+     "label_as_printed": "He",
+     "value": "ה (He)"
+    },
+    {
+     "position": 6,
+     "row": 1,
+     "from_right": 6,
+     "label_as_printed": "Vau",
+     "value": "ו (Vav)"
+    },
+    {
+     "position": 7,
+     "row": 1,
+     "from_right": 7,
+     "label_as_printed": "Zain",
+     "value": "ז (Zain)"
+    },
+    {
+     "position": 8,
+     "row": 1,
+     "from_right": 8,
+     "label_as_printed": "Cheth",
+     "value": "ח (Het)"
+    },
+    {
+     "position": 9,
+     "row": 2,
+     "from_right": 1,
+     "label_as_printed": "Theth",
+     "value": "ט (Teth)"
+    },
+    {
+     "position": 10,
+     "row": 2,
+     "from_right": 2,
+     "label_as_printed": "Iod",
+     "value": "י (Yod)"
+    },
+    {
+     "position": 11,
+     "row": 2,
+     "from_right": 3,
+     "label_as_printed": "Caph",
+     "value": "כ (Kaph)"
+    },
+    {
+     "position": 12,
+     "row": 2,
+     "from_right": 4,
+     "label_as_printed": "Lamed",
+     "value": "ל (Lamed)"
+    },
+    {
+     "position": 13,
+     "row": 2,
+     "from_right": 5,
+     "label_as_printed": "Mem",
+     "value": "מ (Mem)"
+    },
+    {
+     "position": 14,
+     "row": 2,
+     "from_right": 6,
+     "label_as_printed": "Nun",
+     "value": "נ (Nun)"
+    },
+    {
+     "position": 15,
+     "row": 2,
+     "from_right": 7,
+     "label_as_printed": "Samech",
+     "value": "ס (Samekh)"
+    },
+    {
+     "position": 16,
+     "row": 3,
+     "from_right": 1,
+     "label_as_printed": "Ain",
+     "value": "ע (Ayin)"
+    },
+    {
+     "position": 17,
+     "row": 3,
+     "from_right": 2,
+     "label_as_printed": "Pe",
+     "value": "פ (Pe)"
+    },
+    {
+     "position": 18,
+     "row": 3,
+     "from_right": 3,
+     "label_as_printed": "Zade",
+     "value": "צ (Tsade)"
+    },
+    {
+     "position": 19,
+     "row": 3,
+     "from_right": 4,
+     "label_as_printed": "Kuph",
+     "value": "ק (Qoph)"
+    },
+    {
+     "position": 20,
+     "row": 3,
+     "from_right": 5,
+     "label_as_printed": "Res",
+     "value": "ר (Resh)"
+    },
+    {
+     "position": 21,
+     "row": 3,
+     "from_right": 6,
+     "label_as_printed": "Schin",
+     "value": "ש (Shin)"
+    },
+    {
+     "position": 22,
+     "row": 3,
+     "from_right": 7,
+     "label_as_printed": "Tau",
+     "value": "ת (Tau)"
+    }
+   ],
+   "letter_count": 22,
+   "rows_as_printed": [
+    8,
+    7,
+    7
+   ],
+   "reading_order": "Rows run right to left (Aleph at the right end of row 1); positions are counted right to left, top to bottom.",
+   "source": {
+    "work": "De occulta philosophia libri tres",
+    "author": "Heinrich Cornelius Agrippa von Nettesheim",
+    "edition": "First complete edition (Books I-III), one of the 'four or five issues' dated 1533 that catalogues report (Osler note, B.O. 1746)",
+    "date": "[1533] (e-rara METS dateIssued '[1533]'); this copy's colophon not checked. The LoC copy of the same edition reads 'Anno M. D. XXXIII. Mense Iulio.'",
+    "place": "[Cologne]",
+    "printer": "[Johannes Soter] (bracketed attribution in the catalogues)",
+    "copy": "Stiftung der Werke von C.G. Jung, Zürich (C.G. Jung's library); no shelfmark published (e-rara shelfLocator 'Online')",
+    "repository": "e-rara.ch (DOI 10.3931/e-rara-4309; record 1343192; VD16 ZV 269); mirrored at archive.org as DeOccultaPhilosophiaJungCollection1533",
+    "identifier": "e-rara 1343192 (canvas images 1343489, 1343490); DOI https://doi.org/10.3931/e-rara-4309",
+    "image_index": "e-rara canvas 296 of 393 (image id 1343490); archive.org mirror leaf n295",
+    "printed_locator": "Lib. III, Cap. XXX, p. CCLXXIIII [z3v]",
+    "page_url": "https://www.e-rara.ch/cgj/content/pageview/1343490",
+    "image_url": "https://www.e-rara.ch/i3f/v21/1343490/full/full/0/default.jpg",
+    "rights": "e-rara: Public Domain Mark 1.0 (METS accessCondition 'PDM 1.0', https://creativecommons.org/publicdomain/mark/1.0/; IIIF manifest licence https://creativecommons.org/publicdomain/mark/1.0/deed.de); attribution 'e-rara, the platform for digitized rare books from Swiss institutions'. The archive.org mirror (DeOccultaPhilosophiaJungCollection1533) also carries PDM 1.0."
+   },
+   "crop": {
+    "from": "e-rara IIIF full 2550x3675 px",
+    "geometry": "1655x852+610+1028"
+   },
+   "legibility": "Good; heading included."
+  },
+  {
+   "file": "agrippa-angelic-1651-wellcome-celestial.png",
+   "table": "Celestiall writing",
+   "letters": [
+    {
+     "position": 1,
+     "row": 1,
+     "from_right": 1,
+     "label_as_printed": "Aleph",
+     "value": "א (Aleph)"
+    },
+    {
+     "position": 2,
+     "row": 1,
+     "from_right": 2,
+     "label_as_printed": "Beth",
+     "value": "ב (Beth)"
+    },
+    {
+     "position": 3,
+     "row": 1,
+     "from_right": 3,
+     "label_as_printed": "Gimel",
+     "value": "ג (Gimel)"
+    },
+    {
+     "position": 4,
+     "row": 1,
+     "from_right": 4,
+     "label_as_printed": "Daleth",
+     "value": "ד (Daleth)"
+    },
+    {
+     "position": 5,
+     "row": 1,
+     "from_right": 5,
+     "label_as_printed": "He",
+     "value": "ה (He)"
+    },
+    {
+     "position": 6,
+     "row": 1,
+     "from_right": 6,
+     "label_as_printed": "Vau",
+     "value": "ו (Vav)"
+    },
+    {
+     "position": 7,
+     "row": 1,
+     "from_right": 7,
+     "label_as_printed": "Zain",
+     "value": "ז (Zain)"
+    },
+    {
+     "position": 8,
+     "row": 2,
+     "from_right": 1,
+     "label_as_printed": "Cheth",
+     "value": "ח (Het)"
+    },
+    {
+     "position": 9,
+     "row": 2,
+     "from_right": 2,
+     "label_as_printed": "Theth",
+     "value": "ט (Teth)"
+    },
+    {
+     "position": 10,
+     "row": 2,
+     "from_right": 3,
+     "label_as_printed": "Iod",
+     "value": "י (Yod)"
+    },
+    {
+     "position": 11,
+     "row": 2,
+     "from_right": 4,
+     "label_as_printed": "Caph",
+     "value": "כ (Kaph)"
+    },
+    {
+     "position": 12,
+     "row": 2,
+     "from_right": 5,
+     "label_as_printed": "Lamed",
+     "value": "ל (Lamed)"
+    },
+    {
+     "position": 13,
+     "row": 2,
+     "from_right": 6,
+     "label_as_printed": "Mem",
+     "value": "מ (Mem)"
+    },
+    {
+     "position": 14,
+     "row": 2,
+     "from_right": 7,
+     "label_as_printed": "Nun",
+     "value": "נ (Nun)"
+    },
+    {
+     "position": 15,
+     "row": 3,
+     "from_right": 1,
+     "label_as_printed": "Samech",
+     "value": "ס (Samekh)"
+    },
+    {
+     "position": 16,
+     "row": 3,
+     "from_right": 2,
+     "label_as_printed": "Ain",
+     "value": "ע (Ayin)"
+    },
+    {
+     "position": 17,
+     "row": 3,
+     "from_right": 3,
+     "label_as_printed": "Pe",
+     "value": "פ (Pe)"
+    },
+    {
+     "position": 18,
+     "row": 3,
+     "from_right": 4,
+     "label_as_printed": "Zade",
+     "value": "צ (Tsade)"
+    },
+    {
+     "position": 19,
+     "row": 3,
+     "from_right": 5,
+     "label_as_printed": "Kuff",
+     "value": "ק (Qoph)"
+    },
+    {
+     "position": 20,
+     "row": 3,
+     "from_right": 6,
+     "label_as_printed": "Res",
+     "value": "ר (Resh)"
+    },
+    {
+     "position": 21,
+     "row": 3,
+     "from_right": 7,
+     "label_as_printed": "Shin",
+     "value": "ש (Shin)"
+    },
+    {
+     "position": 22,
+     "row": 3,
+     "from_right": 8,
+     "label_as_printed": "Tau",
+     "value": "ת (Tau)"
+    }
+   ],
+   "letter_count": 22,
+   "rows_as_printed": [
+    7,
+    7,
+    8
+   ],
+   "reading_order": "Rows run right to left (Aleph at the right end of row 1); positions are counted right to left, top to bottom.",
+   "source": {
+    "work": "Three Books of Occult Philosophy",
+    "author": "Henry Cornelius Agrippa of Nettesheim, translated by J.F. (probably John French)",
+    "edition": "First English edition (Wing A789; ESTC R11002)",
+    "date": "1651",
+    "place": "London",
+    "printer": "Printed by R.W. for Gregory Moule",
+    "copy": "Wellcome Collection, London, shelfmark EPB/B/10377 (Wellcome catalogue work ftahuupv, item i13141946; copy note: 'Copy 1 Note: First 4 leaves (including front. & t.p.) wanting.')",
+    "repository": "Internet Archive (Wellcome Library / UK Medical Heritage Library digitisation)",
+    "identifier": "b30335231 (OCLC 606597706)",
+    "image_index": "archive.org file _0453.jp2 = scandata leaf 453 = IIIF index $453; BookReader page n452 (scandata leaf 0 is a colour card that the reader skips, so reader n = leaf - 1)",
+    "printed_locator": "Book III, CHAP. XXX ('Another manner of making Characters, delivered by Cabalists.'), p. 439, sig. Ff4r ('Ff 4')",
+    "page_url": "https://archive.org/details/b30335231/page/n452/mode/1up",
+    "image_url": "https://iiif.archive.org/iiif/b30335231$453/full/full/0/default.jpg",
+    "rights": "archive.org item rights field: 'This work is available under the Creative Commons, Public Domain Mark' (http://creativecommons.org/publicdomain/mark/1.0/); contributor Wellcome Library. Wellcome Collection catalogue (work ftahuupv): the IIIF digital copy (https://iiif.wellcomecollection.org/presentation/v2/b30335231) carries licence 'Public Domain Mark'."
+   },
+   "crop": {
+    "from": "IIIF full JPEG 2910x3791 px",
+    "geometry": "2100x1347+210+1893"
+   },
+   "legibility": "Legible, but heavy show-through: the Malachim signs of p. 440 appear as faint reversed ghosts among the Celestial signs. Trace only the dark strokes."
+  },
+  {
+   "file": "agrippa-angelic-1651-wellcome-malachim.png",
+   "table": "The writing called Malachim.",
+   "letters": [
+    {
+     "position": 1,
+     "row": 1,
+     "from_right": 1,
+     "label_as_printed": "Aleph",
+     "value": "א (Aleph)"
+    },
+    {
+     "position": 2,
+     "row": 1,
+     "from_right": 2,
+     "label_as_printed": "Beth",
+     "value": "ב (Beth)"
+    },
+    {
+     "position": 3,
+     "row": 1,
+     "from_right": 3,
+     "label_as_printed": "Gimel",
+     "value": "ג (Gimel)"
+    },
+    {
+     "position": 4,
+     "row": 1,
+     "from_right": 4,
+     "label_as_printed": "Daleth",
+     "value": "ד (Daleth)"
+    },
+    {
+     "position": 5,
+     "row": 1,
+     "from_right": 5,
+     "label_as_printed": "He",
+     "value": "ה (He)"
+    },
+    {
+     "position": 6,
+     "row": 1,
+     "from_right": 6,
+     "label_as_printed": "Vau",
+     "value": "ו (Vav)"
+    },
+    {
+     "position": 7,
+     "row": 2,
+     "from_right": 1,
+     "label_as_printed": "Zain",
+     "value": "ז (Zain)"
+    },
+    {
+     "position": 8,
+     "row": 2,
+     "from_right": 2,
+     "label_as_printed": "Cheth",
+     "value": "ח (Het)"
+    },
+    {
+     "position": 9,
+     "row": 2,
+     "from_right": 3,
+     "label_as_printed": "Teth",
+     "value": "ט (Teth)"
+    },
+    {
+     "position": 10,
+     "row": 2,
+     "from_right": 4,
+     "label_as_printed": "Iod",
+     "value": "י (Yod)"
+    },
+    {
+     "position": 11,
+     "row": 2,
+     "from_right": 5,
+     "label_as_printed": "Caph",
+     "value": "כ (Kaph)"
+    },
+    {
+     "position": 12,
+     "row": 3,
+     "from_right": 1,
+     "label_as_printed": "Lamed",
+     "value": "ל (Lamed)"
+    },
+    {
+     "position": 13,
+     "row": 3,
+     "from_right": 2,
+     "label_as_printed": "Mem",
+     "value": "מ (Mem)"
+    },
+    {
+     "position": 14,
+     "row": 3,
+     "from_right": 3,
+     "label_as_printed": "Nun",
+     "value": "נ (Nun)"
+    },
+    {
+     "position": 15,
+     "row": 3,
+     "from_right": 4,
+     "label_as_printed": "Tau",
+     "value": "ת (Tau)",
+     "note": "Ladder-like sign, as in 1533."
+    },
+    {
+     "position": 16,
+     "row": 3,
+     "from_right": 5,
+     "label_as_printed": "Schin",
+     "value": "ש (Shin)",
+     "note": "Zigzag sign, as in 1533."
+    },
+    {
+     "position": 17,
+     "row": 3,
+     "from_right": 6,
+     "label_as_printed": "Samech",
+     "value": "ס (Samekh)",
+     "note": "First of TWO signs labelled Samech (reading right to left): six-armed star/asterisk, as in 1533."
+    },
+    {
+     "position": 18,
+     "row": 3,
+     "from_right": 7,
+     "label_as_printed": "Samech",
+     "value": "ס (Samekh)",
+     "note": "Second of TWO signs labelled Samech: candlestick-like sign, as in 1533. The 1651 setting keeps the 1533 sequence (… Nun, Tau, Shin, Samech, Samech, Ain …) but reflows it into four rows."
+    },
+    {
+     "position": 19,
+     "row": 4,
+     "from_right": 1,
+     "label_as_printed": "Ain",
+     "value": "ע (Ayin)"
+    },
+    {
+     "position": 20,
+     "row": 4,
+     "from_right": 2,
+     "label_as_printed": "Pe",
+     "value": "פ (Pe)"
+    },
+    {
+     "position": 21,
+     "row": 4,
+     "from_right": 3,
+     "label_as_printed": "Zade",
+     "value": "צ (Tsade)"
+    },
+    {
+     "position": 22,
+     "row": 4,
+     "from_right": 4,
+     "label_as_printed": "Kuff",
+     "value": "ק (Qoph)"
+    },
+    {
+     "position": 23,
+     "row": 4,
+     "from_right": 5,
+     "label_as_printed": "Res",
+     "value": "ר (Resh)"
+    }
+   ],
+   "letter_count": 23,
+   "rows_as_printed": [
+    6,
+    5,
+    7,
+    5
+   ],
+   "reading_order": "Rows run right to left (Aleph at the right end of row 1); positions are counted right to left, top to bottom.",
+   "source": {
+    "work": "Three Books of Occult Philosophy",
+    "author": "Henry Cornelius Agrippa of Nettesheim, translated by J.F. (probably John French)",
+    "edition": "First English edition (Wing A789; ESTC R11002)",
+    "date": "1651",
+    "place": "London",
+    "printer": "Printed by R.W. for Gregory Moule",
+    "copy": "Wellcome Collection, London, shelfmark EPB/B/10377 (Wellcome catalogue work ftahuupv, item i13141946; copy note: 'Copy 1 Note: First 4 leaves (including front. & t.p.) wanting.')",
+    "repository": "Internet Archive (Wellcome Library / UK Medical Heritage Library digitisation)",
+    "identifier": "b30335231 (OCLC 606597706)",
+    "image_index": "archive.org file _0454.jp2 = scandata leaf 454 = IIIF index $454; BookReader page n453 (scandata leaf 0 is a colour card that the reader skips, so reader n = leaf - 1)",
+    "printed_locator": "Book III, Chap. XXX, p. 440 [sig. Ff4v]",
+    "page_url": "https://archive.org/details/b30335231/page/n453/mode/1up",
+    "image_url": "https://iiif.archive.org/iiif/b30335231$454/full/full/0/default.jpg",
+    "rights": "archive.org item rights field: 'This work is available under the Creative Commons, Public Domain Mark' (http://creativecommons.org/publicdomain/mark/1.0/); contributor Wellcome Library. Wellcome Collection catalogue (work ftahuupv): the IIIF digital copy (https://iiif.wellcomecollection.org/presentation/v2/b30335231) carries licence 'Public Domain Mark'."
+   },
+   "crop": {
+    "from": "IIIF full JPEG 3074x3825 px",
+    "geometry": "2180x2380+720+555"
+   },
+   "legibility": "Legible; show-through of the p. 439 Celestial (reversed) in the lower left; a stray printed 'i' left of row 1 and a dash left of row 3 are not part of the signs."
+  },
+  {
+   "file": "agrippa-angelic-1651-wellcome-transitus-fluvii.png",
+   "table": "The writing called the passing of the River.",
+   "letters": [
+    {
+     "position": 1,
+     "row": 1,
+     "from_right": 1,
+     "label_as_printed": "Aleph",
+     "value": "א (Aleph)"
+    },
+    {
+     "position": 2,
+     "row": 1,
+     "from_right": 2,
+     "label_as_printed": "Beth",
+     "value": "ב (Beth)"
+    },
+    {
+     "position": 3,
+     "row": 1,
+     "from_right": 3,
+     "label_as_printed": "Gimel",
+     "value": "ג (Gimel)"
+    },
+    {
+     "position": 4,
+     "row": 1,
+     "from_right": 4,
+     "label_as_printed": "Daleth",
+     "value": "ד (Daleth)"
+    },
+    {
+     "position": 5,
+     "row": 1,
+     "from_right": 5,
+     "label_as_printed": "He",
+     "value": "ה (He)"
+    },
+    {
+     "position": 6,
+     "row": 1,
+     "from_right": 6,
+     "label_as_printed": "Vau",
+     "value": "ו (Vav)"
+    },
+    {
+     "position": 7,
+     "row": 1,
+     "from_right": 7,
+     "label_as_printed": "Zain",
+     "value": "ז (Zain)"
+    },
+    {
+     "position": 8,
+     "row": 2,
+     "from_right": 1,
+     "label_as_printed": "Cheth",
+     "value": "ח (Het)"
+    },
+    {
+     "position": 9,
+     "row": 2,
+     "from_right": 2,
+     "label_as_printed": "Teth",
+     "value": "ט (Teth)"
+    },
+    {
+     "position": 10,
+     "row": 2,
+     "from_right": 3,
+     "label_as_printed": "Iod",
+     "value": "י (Yod)"
+    },
+    {
+     "position": 11,
+     "row": 2,
+     "from_right": 4,
+     "label_as_printed": "Caph",
+     "value": "כ (Kaph)"
+    },
+    {
+     "position": 12,
+     "row": 2,
+     "from_right": 5,
+     "label_as_printed": "Lamed",
+     "value": "ל (Lamed)"
+    },
+    {
+     "position": 13,
+     "row": 2,
+     "from_right": 6,
+     "label_as_printed": "Mem",
+     "value": "מ (Mem)"
+    },
+    {
+     "position": 14,
+     "row": 2,
+     "from_right": 7,
+     "label_as_printed": "Nun",
+     "value": "נ (Nun)"
+    },
+    {
+     "position": 15,
+     "row": 2,
+     "from_right": 8,
+     "label_as_printed": "Samech",
+     "value": "ס (Samekh)"
+    },
+    {
+     "position": 16,
+     "row": 3,
+     "from_right": 1,
+     "label_as_printed": "Ain",
+     "value": "ע (Ayin)"
+    },
+    {
+     "position": 17,
+     "row": 3,
+     "from_right": 2,
+     "label_as_printed": "Pe",
+     "value": "פ (Pe)"
+    },
+    {
+     "position": 18,
+     "row": 3,
+     "from_right": 3,
+     "label_as_printed": "Zade",
+     "value": "צ (Tsade)"
+    },
+    {
+     "position": 19,
+     "row": 3,
+     "from_right": 4,
+     "label_as_printed": "Kuph",
+     "value": "ק (Qoph)"
+    },
+    {
+     "position": 20,
+     "row": 3,
+     "from_right": 5,
+     "label_as_printed": "Res",
+     "value": "ר (Resh)"
+    },
+    {
+     "position": 21,
+     "row": 3,
+     "from_right": 6,
+     "label_as_printed": "Schin",
+     "value": "ש (Shin)"
+    },
+    {
+     "position": 22,
+     "row": 3,
+     "from_right": 7,
+     "label_as_printed": "Tau",
+     "value": "ת (Tau)"
+    }
+   ],
+   "letter_count": 22,
+   "rows_as_printed": [
+    7,
+    8,
+    7
+   ],
+   "reading_order": "Rows run right to left (Aleph at the right end of row 1); positions are counted right to left, top to bottom.",
+   "source": {
+    "work": "Three Books of Occult Philosophy",
+    "author": "Henry Cornelius Agrippa of Nettesheim, translated by J.F. (probably John French)",
+    "edition": "First English edition (Wing A789; ESTC R11002)",
+    "date": "1651",
+    "place": "London",
+    "printer": "Printed by R.W. for Gregory Moule",
+    "copy": "Wellcome Collection, London, shelfmark EPB/B/10377 (Wellcome catalogue work ftahuupv, item i13141946; copy note: 'Copy 1 Note: First 4 leaves (including front. & t.p.) wanting.')",
+    "repository": "Internet Archive (Wellcome Library / UK Medical Heritage Library digitisation)",
+    "identifier": "b30335231 (OCLC 606597706)",
+    "image_index": "archive.org file _0455.jp2 = scandata leaf 455 = IIIF index $455; BookReader page n454 (scandata leaf 0 is a colour card that the reader skips, so reader n = leaf - 1)",
+    "printed_locator": "Book III, Chap. XXX, p. 441 [sig. Ff5r]",
+    "page_url": "https://archive.org/details/b30335231/page/n454/mode/1up",
+    "image_url": "https://iiif.archive.org/iiif/b30335231$455/full/full/0/default.jpg",
+    "rights": "archive.org item rights field: 'This work is available under the Creative Commons, Public Domain Mark' (http://creativecommons.org/publicdomain/mark/1.0/); contributor Wellcome Library. Wellcome Collection catalogue (work ftahuupv): the IIIF digital copy (https://iiif.wellcomecollection.org/presentation/v2/b30335231) carries licence 'Public Domain Mark'."
+   },
+   "crop": {
+    "from": "IIIF full JPEG 2910x3791 px",
+    "geometry": "2230x1830+240+533"
+   },
+   "legibility": "Legible, but the grid of the 'nine chambers' figure and Hebrew letters from p. 442 show through as ghost lines crossing rows 2-3; they are not part of the signs."
+  },
+  {
+   "file": "agrippa-angelic-1651-ia-threebooksoccult-celestial.png",
+   "table": "Celestiall writing",
+   "letters": [
+    {
+     "position": 1,
+     "row": 1,
+     "from_right": 1,
+     "label_as_printed": "Aleph",
+     "value": "א (Aleph)"
+    },
+    {
+     "position": 2,
+     "row": 1,
+     "from_right": 2,
+     "label_as_printed": "Beth",
+     "value": "ב (Beth)"
+    },
+    {
+     "position": 3,
+     "row": 1,
+     "from_right": 3,
+     "label_as_printed": "Gimel",
+     "value": "ג (Gimel)"
+    },
+    {
+     "position": 4,
+     "row": 1,
+     "from_right": 4,
+     "label_as_printed": "Daleth",
+     "value": "ד (Daleth)"
+    },
+    {
+     "position": 5,
+     "row": 1,
+     "from_right": 5,
+     "label_as_printed": "He",
+     "value": "ה (He)"
+    },
+    {
+     "position": 6,
+     "row": 1,
+     "from_right": 6,
+     "label_as_printed": "Vau",
+     "value": "ו (Vav)"
+    },
+    {
+     "position": 7,
+     "row": 1,
+     "from_right": 7,
+     "label_as_printed": "Zain",
+     "value": "ז (Zain)"
+    },
+    {
+     "position": 8,
+     "row": 2,
+     "from_right": 1,
+     "label_as_printed": "Cheth",
+     "value": "ח (Het)"
+    },
+    {
+     "position": 9,
+     "row": 2,
+     "from_right": 2,
+     "label_as_printed": "Theth",
+     "value": "ט (Teth)"
+    },
+    {
+     "position": 10,
+     "row": 2,
+     "from_right": 3,
+     "label_as_printed": "Iod",
+     "value": "י (Yod)"
+    },
+    {
+     "position": 11,
+     "row": 2,
+     "from_right": 4,
+     "label_as_printed": "Caph",
+     "value": "כ (Kaph)"
+    },
+    {
+     "position": 12,
+     "row": 2,
+     "from_right": 5,
+     "label_as_printed": "Lamed",
+     "value": "ל (Lamed)"
+    },
+    {
+     "position": 13,
+     "row": 2,
+     "from_right": 6,
+     "label_as_printed": "Mem",
+     "value": "מ (Mem)"
+    },
+    {
+     "position": 14,
+     "row": 2,
+     "from_right": 7,
+     "label_as_printed": "Nun",
+     "value": "נ (Nun)"
+    },
+    {
+     "position": 15,
+     "row": 3,
+     "from_right": 1,
+     "label_as_printed": "Samech",
+     "value": "ס (Samekh)"
+    },
+    {
+     "position": 16,
+     "row": 3,
+     "from_right": 2,
+     "label_as_printed": "Ain",
+     "value": "ע (Ayin)"
+    },
+    {
+     "position": 17,
+     "row": 3,
+     "from_right": 3,
+     "label_as_printed": "Pe",
+     "value": "פ (Pe)"
+    },
+    {
+     "position": 18,
+     "row": 3,
+     "from_right": 4,
+     "label_as_printed": "Zade",
+     "value": "צ (Tsade)"
+    },
+    {
+     "position": 19,
+     "row": 3,
+     "from_right": 5,
+     "label_as_printed": "Kuff",
+     "value": "ק (Qoph)"
+    },
+    {
+     "position": 20,
+     "row": 3,
+     "from_right": 6,
+     "label_as_printed": "Res",
+     "value": "ר (Resh)"
+    },
+    {
+     "position": 21,
+     "row": 3,
+     "from_right": 7,
+     "label_as_printed": "Shin",
+     "value": "ש (Shin)"
+    },
+    {
+     "position": 22,
+     "row": 3,
+     "from_right": 8,
+     "label_as_printed": "Tau",
+     "value": "ת (Tau)"
+    }
+   ],
+   "letter_count": 22,
+   "rows_as_printed": [
+    7,
+    7,
+    8
+   ],
+   "reading_order": "Rows run right to left (Aleph at the right end of row 1); positions are counted right to left, top to bottom.",
+   "source": {
+    "work": "Three Books of Occult Philosophy",
+    "author": "Henry Cornelius Agrippa of Nettesheim, translated by J.F. (probably John French)",
+    "edition": "First English edition (Wing A789; ESTC R11002)",
+    "date": "1651",
+    "place": "London",
+    "printer": "Printed by R.W. for Gregory Moule",
+    "copy": "UNVERIFIED. Holding library not stated; the page images match in layout and show-through the Michigan State University Libraries scan 'threebooksoccult' (archive.lib.msu.edu/AFS/dmc/arts/public/all/threebooksoccult/, 700-px GIFs), which Wikimedia Commons credits as the source of its 1651 DjVu; not confirmed to be the same copy",
+    "repository": "Internet Archive, community upload",
+    "identifier": "threebooksoccult",
+    "image_index": "archive.org leaf n465",
+    "printed_locator": "Book III, CHAP. XXX, p. 439, sig. Ff4r",
+    "page_url": "https://archive.org/details/threebooksoccult/page/n465/mode/1up",
+    "image_url": "https://archive.org/download/threebooksoccult/page/n465_w3000.jpg (returned 4938x6426, which is half the original page image: scandata origWidth x origHeight 9876x12852)",
+    "rights": "NONE STATED. Community upload (archive.org collections 'opensource', 'community'; uploaded 2023-04-23 by a private uploader); no holding library, no rights or licence field. The 1651 book is out of copyright, but the scan's origin and terms are unverified: use for cross-checking only unless cleared."
+   },
+   "crop": {
+    "from": "BookReader JPEG 4938x6426 px (half-resolution derivative of the 9876x12852 original)",
+    "geometry": "3920x2462+480+3140"
+   },
+   "legibility": "Very good; much less show-through than the Wellcome copy. Supplementary witness only (provenance unverified)."
+  },
+  {
+   "file": "agrippa-angelic-1651-ia-threebooksoccult-malachim.png",
+   "table": "The writing called Malachim.",
+   "letters": [
+    {
+     "position": 1,
+     "row": 1,
+     "from_right": 1,
+     "label_as_printed": "Aleph",
+     "value": "א (Aleph)"
+    },
+    {
+     "position": 2,
+     "row": 1,
+     "from_right": 2,
+     "label_as_printed": "Beth",
+     "value": "ב (Beth)"
+    },
+    {
+     "position": 3,
+     "row": 1,
+     "from_right": 3,
+     "label_as_printed": "Gimel",
+     "value": "ג (Gimel)"
+    },
+    {
+     "position": 4,
+     "row": 1,
+     "from_right": 4,
+     "label_as_printed": "Daleth",
+     "value": "ד (Daleth)"
+    },
+    {
+     "position": 5,
+     "row": 1,
+     "from_right": 5,
+     "label_as_printed": "He",
+     "value": "ה (He)"
+    },
+    {
+     "position": 6,
+     "row": 1,
+     "from_right": 6,
+     "label_as_printed": "Vau",
+     "value": "ו (Vav)"
+    },
+    {
+     "position": 7,
+     "row": 2,
+     "from_right": 1,
+     "label_as_printed": "Zain",
+     "value": "ז (Zain)"
+    },
+    {
+     "position": 8,
+     "row": 2,
+     "from_right": 2,
+     "label_as_printed": "Cheth",
+     "value": "ח (Het)"
+    },
+    {
+     "position": 9,
+     "row": 2,
+     "from_right": 3,
+     "label_as_printed": "Teth",
+     "value": "ט (Teth)"
+    },
+    {
+     "position": 10,
+     "row": 2,
+     "from_right": 4,
+     "label_as_printed": "Iod",
+     "value": "י (Yod)"
+    },
+    {
+     "position": 11,
+     "row": 2,
+     "from_right": 5,
+     "label_as_printed": "Caph",
+     "value": "כ (Kaph)"
+    },
+    {
+     "position": 12,
+     "row": 3,
+     "from_right": 1,
+     "label_as_printed": "Lamed",
+     "value": "ל (Lamed)"
+    },
+    {
+     "position": 13,
+     "row": 3,
+     "from_right": 2,
+     "label_as_printed": "Mem",
+     "value": "מ (Mem)"
+    },
+    {
+     "position": 14,
+     "row": 3,
+     "from_right": 3,
+     "label_as_printed": "Nun",
+     "value": "נ (Nun)"
+    },
+    {
+     "position": 15,
+     "row": 3,
+     "from_right": 4,
+     "label_as_printed": "Tau",
+     "value": "ת (Tau)",
+     "note": "Ladder-like sign, as in 1533."
+    },
+    {
+     "position": 16,
+     "row": 3,
+     "from_right": 5,
+     "label_as_printed": "Schin",
+     "value": "ש (Shin)",
+     "note": "Zigzag sign, as in 1533."
+    },
+    {
+     "position": 17,
+     "row": 3,
+     "from_right": 6,
+     "label_as_printed": "Samech",
+     "value": "ס (Samekh)",
+     "note": "First of TWO signs labelled Samech (reading right to left): six-armed star/asterisk, as in 1533."
+    },
+    {
+     "position": 18,
+     "row": 3,
+     "from_right": 7,
+     "label_as_printed": "Samech",
+     "value": "ס (Samekh)",
+     "note": "Second of TWO signs labelled Samech: candlestick-like sign, as in 1533. The 1651 setting keeps the 1533 sequence (… Nun, Tau, Shin, Samech, Samech, Ain …) but reflows it into four rows."
+    },
+    {
+     "position": 19,
+     "row": 4,
+     "from_right": 1,
+     "label_as_printed": "Ain",
+     "value": "ע (Ayin)"
+    },
+    {
+     "position": 20,
+     "row": 4,
+     "from_right": 2,
+     "label_as_printed": "Pe",
+     "value": "פ (Pe)"
+    },
+    {
+     "position": 21,
+     "row": 4,
+     "from_right": 3,
+     "label_as_printed": "Zade",
+     "value": "צ (Tsade)"
+    },
+    {
+     "position": 22,
+     "row": 4,
+     "from_right": 4,
+     "label_as_printed": "Kuff",
+     "value": "ק (Qoph)"
+    },
+    {
+     "position": 23,
+     "row": 4,
+     "from_right": 5,
+     "label_as_printed": "Res",
+     "value": "ר (Resh)"
+    }
+   ],
+   "letter_count": 23,
+   "rows_as_printed": [
+    6,
+    5,
+    7,
+    5
+   ],
+   "reading_order": "Rows run right to left (Aleph at the right end of row 1); positions are counted right to left, top to bottom.",
+   "source": {
+    "work": "Three Books of Occult Philosophy",
+    "author": "Henry Cornelius Agrippa of Nettesheim, translated by J.F. (probably John French)",
+    "edition": "First English edition (Wing A789; ESTC R11002)",
+    "date": "1651",
+    "place": "London",
+    "printer": "Printed by R.W. for Gregory Moule",
+    "copy": "UNVERIFIED. Holding library not stated; the page images match in layout and show-through the Michigan State University Libraries scan 'threebooksoccult' (archive.lib.msu.edu/AFS/dmc/arts/public/all/threebooksoccult/, 700-px GIFs), which Wikimedia Commons credits as the source of its 1651 DjVu; not confirmed to be the same copy",
+    "repository": "Internet Archive, community upload",
+    "identifier": "threebooksoccult",
+    "image_index": "archive.org leaf n466",
+    "printed_locator": "Book III, Chap. XXX, p. 440 [Ff4v]",
+    "page_url": "https://archive.org/details/threebooksoccult/page/n466/mode/1up",
+    "image_url": "https://archive.org/download/threebooksoccult/page/n466_w3000.jpg (returned 4932x6432, which is half the original page image: scandata origWidth x origHeight 9864x12864)",
+    "rights": "NONE STATED. Community upload (archive.org collections 'opensource', 'community'; uploaded 2023-04-23 by a private uploader); no holding library, no rights or licence field. The 1651 book is out of copyright, but the scan's origin and terms are unverified: use for cross-checking only unless cleared."
+   },
+   "crop": {
+    "from": "BookReader JPEG 4932x6432 px (half-resolution derivative of the 9864x12864 original)",
+    "geometry": "3960x4350+560+662"
+   },
+   "legibility": "Very good; faint show-through of the p. 439 table below row 3 and around row 4."
+  },
+  {
+   "file": "agrippa-angelic-1651-ia-threebooksoccult-transitus-fluvii.png",
+   "table": "The writing called the passing of the River.",
+   "letters": [
+    {
+     "position": 1,
+     "row": 1,
+     "from_right": 1,
+     "label_as_printed": "Aleph",
+     "value": "א (Aleph)"
+    },
+    {
+     "position": 2,
+     "row": 1,
+     "from_right": 2,
+     "label_as_printed": "Beth",
+     "value": "ב (Beth)"
+    },
+    {
+     "position": 3,
+     "row": 1,
+     "from_right": 3,
+     "label_as_printed": "Gimel",
+     "value": "ג (Gimel)"
+    },
+    {
+     "position": 4,
+     "row": 1,
+     "from_right": 4,
+     "label_as_printed": "Daleth",
+     "value": "ד (Daleth)"
+    },
+    {
+     "position": 5,
+     "row": 1,
+     "from_right": 5,
+     "label_as_printed": "He",
+     "value": "ה (He)"
+    },
+    {
+     "position": 6,
+     "row": 1,
+     "from_right": 6,
+     "label_as_printed": "Vau",
+     "value": "ו (Vav)"
+    },
+    {
+     "position": 7,
+     "row": 1,
+     "from_right": 7,
+     "label_as_printed": "Zain",
+     "value": "ז (Zain)"
+    },
+    {
+     "position": 8,
+     "row": 2,
+     "from_right": 1,
+     "label_as_printed": "Cheth",
+     "value": "ח (Het)"
+    },
+    {
+     "position": 9,
+     "row": 2,
+     "from_right": 2,
+     "label_as_printed": "Teth",
+     "value": "ט (Teth)"
+    },
+    {
+     "position": 10,
+     "row": 2,
+     "from_right": 3,
+     "label_as_printed": "Iod",
+     "value": "י (Yod)"
+    },
+    {
+     "position": 11,
+     "row": 2,
+     "from_right": 4,
+     "label_as_printed": "Caph",
+     "value": "כ (Kaph)"
+    },
+    {
+     "position": 12,
+     "row": 2,
+     "from_right": 5,
+     "label_as_printed": "Lamed",
+     "value": "ל (Lamed)"
+    },
+    {
+     "position": 13,
+     "row": 2,
+     "from_right": 6,
+     "label_as_printed": "Mem",
+     "value": "מ (Mem)"
+    },
+    {
+     "position": 14,
+     "row": 2,
+     "from_right": 7,
+     "label_as_printed": "Nun",
+     "value": "נ (Nun)"
+    },
+    {
+     "position": 15,
+     "row": 2,
+     "from_right": 8,
+     "label_as_printed": "Samech",
+     "value": "ס (Samekh)"
+    },
+    {
+     "position": 16,
+     "row": 3,
+     "from_right": 1,
+     "label_as_printed": "Ain",
+     "value": "ע (Ayin)"
+    },
+    {
+     "position": 17,
+     "row": 3,
+     "from_right": 2,
+     "label_as_printed": "Pe",
+     "value": "פ (Pe)"
+    },
+    {
+     "position": 18,
+     "row": 3,
+     "from_right": 3,
+     "label_as_printed": "Zade",
+     "value": "צ (Tsade)"
+    },
+    {
+     "position": 19,
+     "row": 3,
+     "from_right": 4,
+     "label_as_printed": "Kuph",
+     "value": "ק (Qoph)"
+    },
+    {
+     "position": 20,
+     "row": 3,
+     "from_right": 5,
+     "label_as_printed": "Res",
+     "value": "ר (Resh)"
+    },
+    {
+     "position": 21,
+     "row": 3,
+     "from_right": 6,
+     "label_as_printed": "Schin",
+     "value": "ש (Shin)"
+    },
+    {
+     "position": 22,
+     "row": 3,
+     "from_right": 7,
+     "label_as_printed": "Tau",
+     "value": "ת (Tau)"
+    }
+   ],
+   "letter_count": 22,
+   "rows_as_printed": [
+    7,
+    8,
+    7
+   ],
+   "reading_order": "Rows run right to left (Aleph at the right end of row 1); positions are counted right to left, top to bottom.",
+   "source": {
+    "work": "Three Books of Occult Philosophy",
+    "author": "Henry Cornelius Agrippa of Nettesheim, translated by J.F. (probably John French)",
+    "edition": "First English edition (Wing A789; ESTC R11002)",
+    "date": "1651",
+    "place": "London",
+    "printer": "Printed by R.W. for Gregory Moule",
+    "copy": "UNVERIFIED. Holding library not stated; the page images match in layout and show-through the Michigan State University Libraries scan 'threebooksoccult' (archive.lib.msu.edu/AFS/dmc/arts/public/all/threebooksoccult/, 700-px GIFs), which Wikimedia Commons credits as the source of its 1651 DjVu; not confirmed to be the same copy",
+    "repository": "Internet Archive, community upload",
+    "identifier": "threebooksoccult",
+    "image_index": "archive.org leaf n467",
+    "printed_locator": "Book III, Chap. XXX, p. 441 [Ff5r]",
+    "page_url": "https://archive.org/details/threebooksoccult/page/n467/mode/1up",
+    "image_url": "https://archive.org/download/threebooksoccult/page/n467_w3000.jpg (returned 4917x6432, which is half the original page image: scandata origWidth x origHeight 9834x12864)",
+    "rights": "NONE STATED. Community upload (archive.org collections 'opensource', 'community'; uploaded 2023-04-23 by a private uploader); no holding library, no rights or licence field. The 1651 book is out of copyright, but the scan's origin and terms are unverified: use for cross-checking only unless cleared."
+   },
+   "crop": {
+    "from": "BookReader JPEG 4917x6432 px (half-resolution derivative of the 9834x12864 original)",
+    "geometry": "4000x3320+640+590"
+   },
+   "legibility": "Good; a paper crease runs through the row-3 labels (Res, Kuph, Zade) and the p. 442 grid shows through faintly."
+  }
+ ],
+ "page_views": [
+  "agrippa-angelic-page-1533-jung-p273.jpg",
+  "agrippa-angelic-page-1533-jung-p274.jpg",
+  "agrippa-angelic-page-1533-loc-p273.jpg",
+  "agrippa-angelic-page-1533-loc-p274.jpg",
+  "agrippa-angelic-page-1533-mcgill-p273.jpg",
+  "agrippa-angelic-page-1533-mcgill-p274.jpg",
+  "agrippa-angelic-page-1651-ia-threebooksoccult-p439.jpg",
+  "agrippa-angelic-page-1651-ia-threebooksoccult-p440.jpg",
+  "agrippa-angelic-page-1651-ia-threebooksoccult-p441.jpg",
+  "agrippa-angelic-page-1651-wellcome-p439.jpg",
+  "agrippa-angelic-page-1651-wellcome-p440.jpg",
+  "agrippa-angelic-page-1651-wellcome-p441.jpg"
+ ],
+ "legibility": "All 15 crops show every sign complete with its printed label legible. Best for tracing 1533: McGill (5560 px page) and LoC (3344-3575 px master JP2); Jung/e-rara (2550 px) is good but has two imperfect rings in the Malachim. 1651: the archive.org 'threebooksoccult' scan is cleaner than Wellcome, which has heavy show-through; Wellcome is the copy with a stated rights mark.",
+ "problems": [
+  "1651 Wellcome copy: strong show-through on all three pages (reversed ghosts of the facing table; on p. 441 the ruled grid of the p. 442 'nine chambers' figure). Tracers must ignore the faint strokes.",
+  "Jung copy (e-rara): Malachim Aleph top-middle ring prints open (Y-shaped) and the foot ring of the candlestick-shaped Samech prints as an open arc; LoC and McGill have closed rings.",
+  "archive.org 'threebooksoccult' (1651): community upload with no holding library or rights statement; treat as a cross-check, not as the named tracing source, until its provenance is confirmed.",
+  "McGill copy on archive.org: no rights statement in the item metadata.",
+  "The Jung mirror on archive.org (3825 px) looks softer than e-rara's 2550-px IIIF (apparently an upscaled derivative); the crops use e-rara.",
+  "In 1533 the Malachim heading ('Scriptura Malachim') is at the foot of p. 273 and the signs are on p. 274, so the 1533 Malachim crops have no heading; the page views show it.",
+  "Crops are PNG re-encodings of the delivered images (LoC: decoded from the master JP2; the others from JPEG derivatives). No other processing (no contrast change, rotation or cleanup)."
+ ],
+ "notes": [
+  "Chapter verified from the book: 1533 Lib. III, 'Alius characterizandi modus, à Cabalistis traditus. Caput XXX.' (the Theban alphabet, which closes the preceding chapter, stands at the top of the same page; that chapter is Lib. III 'De characteribus & sigillis spirituum. Caput XXIX', headed on p. CCLXXII (McGill leaf n287)); 1651 Book III, 'CHAP. XXX. Another manner of making Characters, delivered by Cabalists.'",
+  "1533 layout: Celestial in 3 rows of 9, 9 and 4 signs; Malachim 7, 7 and 9 (23 signs); Transitus fluvii 8, 7 and 7. 1651 layout: 7, 7, 8; Malachim 6, 5, 7, 5 (23 signs); 7, 8, 7. Every table runs right to left with the label set above each sign.",
+  "Two typesettings of 1533 pp. 273-274 were seen. Setting A (LoC, McGill, and the NLM copy archive.org 2213011R.nlm.nih.gov, leaves n290-n291, viewed but not cropped): recto misnumbered 'CCXLXXIII', Celestial row-1 labels with full stops, 'Shin' in Celestial and Malachim. Setting B (Jung/e-rara): 'CCLXXIII', no full stops, 'Schin' (Celestial) and 'Scin' (Malachim), and different line endings and spellings in the text (e.g. 'fragmēta' for 'fragmenta'). The signs look the same in both settings: in Malachim row 3 their positions, as fractions of the row width, agree within about 0.5% across LoC, McGill and Jung. That suggests the signs were printed from the same cuts while the labels were reset, but it is not proven.",
+  "McGill copy: the Theban table on p. 273 lacks the 'K' label (a dot stands in its place); LoC and NLM, in the same setting, print 'K'. This is a press variant, relevant to the Theban plates. Checked: NLM n290 prints 'K'. The Jung copy (setting B) prints a lower-case 'k'.",
+  "1533 to 1651 sign variant seen: in the Celestial, the 1651 Gimel has a third ring at the foot of its vertical (1533: rings only at the top of the vertical and the left end of the bar). The other Celestial signs and the Malachim and Transitus signs agree in structure on visual comparison (not measured stroke by stroke).",
+  "Page views for context are saved as agrippa-angelic-page-<edition>-<copy>-p<page>.jpg (1400 px wide)."
+ ],
+ "checked": {
+  "by": "independent checker (Magical Scriptorium workflow)",
+  "date": "2026-10-20",
+  "scope": "Read every crop (15) and every context page (12). For each crop: confirmed the work, edition and page from the running head and chapter title on the context page; reviewed edge-darkness profiles of every crop edge and zoomed every edge where ink came near it; read every label against the print in printed order (all 15 label lists and row counts are right as recorded); re-fetched and checked locators and rights from loc.gov JSON, e-rara IIIF manifest + METS, archive.org metadata + scandata, the Wellcome catalogue API and BookReader page thumbnails.",
+  "corrections": [
+   "agrippa-angelic-1651-wellcome-celestial.png: page_url https://archive.org/details/b30335231/page/n453/mode/1up opened p. 440, not p. 439; corrected to /page/n452. image_index 'archive.org leaf n453 (0-based; _0453.jp2)' corrected (the jp2/IIIF number 453 was right, the reader index is n452). image_url (IIIF $453) was already right.",
+   "agrippa-angelic-1651-wellcome-malachim.png: page_url https://archive.org/details/b30335231/page/n454/mode/1up opened p. 441, not p. 440; corrected to /page/n453. image_index 'archive.org leaf n454' corrected (the jp2/IIIF number 454 was right, the reader index is n453). image_url (IIIF $454) was already right.",
+   "agrippa-angelic-1651-wellcome-transitus-fluvii.png: page_url https://archive.org/details/b30335231/page/n455/mode/1up opened p. 442, not p. 441; corrected to /page/n454. image_index 'archive.org leaf n455' corrected (the jp2/IIIF number 455 was right, the reader index is n454). image_url (IIIF $455) was already right.",
+   "All three Wellcome plates: shelfmark '10377/B' corrected to 'EPB/B/10377' (Wellcome Collection catalogue API, item i13141946); the catalogue's 'Public Domain Mark' licence added beside the archive.org rights field.",
+   "threebooksoccult (3 plates): image_url said 'served at full size'; the _w3000 JPEG is half the original (scandata 9876x12852, 9864x12864, 9834x12864). crop.from relabelled; geometry unchanged.",
+   "1533 plates: date 'July 1533 (colophon, per catalogue records)' replaced by what each source actually says. The colophon was read in the LoC copy ('Anno M. D. XXXIII. Mense Iulio.', sequence 366). The LoC record's note mistranscribes it as 'MDXXIIII'. e-rara gives only '[1533]' for the Jung copy.",
+   "McGill (3 plates): rights extended. The item MARC record and the two archive.org collection records were checked and carry no rights statement either. The statement remains 'none stated'.",
+   "notes[0]: the chapter the Theban table closes was left unchecked. It is Caput XXIX, 'De characteribus & sigillis spirituum', headed on p. CCLXXII (McGill n287).",
+   "notes (Theban K): confirmed that NLM prints 'K' and added that the Jung copy (setting B) prints lower-case 'k'."
+  ],
+  "verified_without_change": [
+   "Labels and printed order: all 15 plates match the print, including setting A full stops and 'Daleth ,' in the LoC and McGill Celestial plates, Jung 'Schin' (Celestial) and 'Scin' (Malachim), 1651 'Theth' (Celestial) vs 'Teth' (Malachim, Transitus), the 1533 and 1651 Malachim sequence Tau, Shin, Samech (star), Samech (candlestick), and Ain.",
+   "Rows: 1533 9/9/4, 7/7/9, 8/7/7; 1651 7/7/8, 6/5/7/5, 7/8/7.",
+   "Nothing cut off. The closest calls were re-fetched from the repository. LoC Celestial: heading ink starts 2 px below the crop top. Jung Malachim: the Kuff crescent ends on the crop's last row, and e-rara shows paper from the next row. Jung Celestial: about 8 px clear above 'Scriptura Malachim'. Wellcome Transitus: the 'R' of 'River' clears the top edge.",
+   "Context: 1533 'LIBER TERTIVS.' / 'DE OCCVLTA PHILOSOPHIA.', 'Alius characterizandi modus, a Cabalistis traditus. Caput XXX.', 'CCXLXXIII' (LoC, McGill, NLM) vs 'CCLXXIII' (Jung), 'z iii'. 1651 'Book III. Of Occult Philosophy.', 'CHAP. XXX. Another manner of making Characters, delivered by Cabalists.', pp. 439-441, 'Ff 4'.",
+   "Image indexes: loc.gov sp 277/278 = pp. 273/274 (3344x4622 and 3575x4606). archive.org DeOccultaPhilosophiaLoc1533 n276/n277. McGill n288/n289 (scandata has no skipped leaves; 5560x8111, 600 dpi). e-rara canvases 295/296 labelled CCLXXIII/CCLXXIIII. Jung mirror n294/n295. NLM n290/n291. threebooksoccult n465-n467 = pp. 439-441. Wellcome IIIF $453-$455 = pp. 439-441 (2910x3791, 3074x3825, 2910x3791).",
+   "Rights quotations match the repositories. LoC item rights field and credit line. e-rara METS accessCondition 'PDM 1.0' (xlink https://creativecommons.org/publicdomain/mark/1.0/) and IIIF licence .../deed.de with attribution. archive.org licenseurl PDM 1.0 on both 2013 mirrors. Wellcome archive.org rights field. threebooksoccult has no rights field and sits in collections opensource/community, uploaded 2023-04-23.",
+   "1533 to 1651 variant: the 1651 Celestial Gimel has a third ring at the foot of the vertical; 1533 has none there.",
+   "threebooksoccult vs MSU: MSU's p. 441 GIF (ANL465.gif, 700 px) shows the same show-through pattern as threebooksoccult n467 (ghost grid lines in the same places). This is consistent with the same copy, but provenance is still unconfirmed."
+  ],
+  "not_verified": [
+   "The Wikimedia Commons credit for the 1651 DjVu: the Commons API rate-limited the request.",
+   "The claim that Malachim row-3 sign positions agree within about 0.5% across LoC, McGill and Jung: not re-measured.",
+   "The McGill IIIF full-size JPEG: iiif.archive.org returned 504 for McGill; size confirmed from scandata instead."
+  ]
+ }
+}

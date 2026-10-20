@@ -1,0 +1,451 @@
+{
+  "key": "ibn-wahshiyya",
+  "title": "Ibn Waḥshiyya and the Riddles of the Ancient Scripts (Shawq al-mustahām)",
+  "otherNames": [
+    "Kitāb Shawq al-mustahām fī maʿrifat rumūz al-aqlām (شوق المستهام في معرفة رموز الأقلام)",
+    "Ancient Alphabets and Hieroglyphic Characters Explained (Joseph Hammer's English title, London, 1806)",
+    "Abū Bakr Aḥmad ibn ʿAlī ibn Waḥshiyya al-Nabaṭī (the usual modern form of the author's name)",
+    "'Ahmad Bin Abubekr Bin Wahshih' (the form on Hammer's 1806 title page, which turns the kunya Abū Bakr into a father's name)",
+    "aqlām, 'pens', i.e. scripts (Arabic word for these alphabets)",
+    "al-khawātim, 'the seals' (Arabic, for the related seal-signs of talismanic practice; not the title of this book)"
+  ],
+  "family": "Not a single alphabet. A book, ascribed to Ibn Waḥshiyya, that catalogues many scripts: real scripts of earlier peoples, alphabets credited to Hermes and to the Greek sages, planetary alphabets, and Egyptian hieroglyphs given Arabic letter values. It belongs to the Arabic literature of aqlām, 'scripts'. Its ring-ended alphabets of the 'sages', like the seven seal-signs (al-khawātim) of talismanic practice, are ones that scholars connect with the charaktêres of late-antique magic (see claims).",
+  "summary": "Shawq al-mustahām is an Arabic catalogue of 'ancient' alphabets. It is ascribed to Ibn Waḥshiyya, the Iraqi writer active about 900–930 who gave out the Nabatean Agriculture; Jaakko Hämeen-Anttila (2006) questions whether the Shawq is his. Beside scripts of real peoples, it gives alphabets credited to Hermes, to Greek sages and to the planets, and it presents Egyptian hieroglyphs as signs with Arabic letter values. Joseph Hammer printed the Arabic with an English version in London in 1806 as Ancient Alphabets and Hieroglyphic Characters Explained. Okasha El Daly (2005) argues that the book gets some hieroglyph sound values right and sees that some signs stand for ideas rather than sounds; that reading is disputed, and the decipherment of hieroglyphs is Champollion's work of 1822.",
+  "firstAttestation": {
+    "work": "Kitāb Shawq al-mustahām fī maʿrifat rumūz al-aqlām",
+    "author": "ascribed to Abū Bakr Aḥmad ibn ʿAlī ibn Waḥshiyya; authorship doubted (Hämeen-Anttila 2006)",
+    "date": "If the ascription holds, late 9th or early 10th century CE: Ibn Waḥshiyya's Nabatean Agriculture was dictated in 318 AH / 930–31 CE according to its transmitter (Hämeen-Anttila 2006). The date of the earliest surviving manuscript of the Shawq was not established in this run. The first printed edition is Hammer's, London, 1806.",
+    "place": "Iraq is Ibn Waḥshiyya's milieu; where the Shawq itself was written is not known. Hammer's copy came, by his account as I recall it, from Cairo.",
+    "locator": "Printed text and English version: J. Hammer, Ancient Alphabets and Hieroglyphic Characters Explained (London: W. Bulmer and Co., 1806). Page numbers for individual alphabets were not checked in this run.",
+    "notes": "Basis: the researcher's prior knowledge; not re-checked by the researcher. Fact-check (this pass): no web search was possible (the turn's shared search budget was already used up), so this rests on the checker's knowledge, not on a source seen in this run. No shelfmark is given because none could be checked. Neither the researcher nor the checker knows of an autograph, so the surviving copies are presumably later than the author, but no copy has been dated here. The Hijri dates were checked arithmetically (tabular calendar): 318 AH runs from about February 930 to January 931 CE, so '930–31' is right."
+  },
+  "transmission": [
+    {
+      "date": "c. 900–930 CE (318 AH / 930–31 CE for the Nabatean Agriculture)",
+      "work": "al-Filāḥa al-Nabaṭiyya (Nabatean Agriculture) and the other works under his name",
+      "author": "Ibn Waḥshiyya; transmitted by his pupil Abū Ṭālib al-Zayyāt",
+      "what": "Fixes the author's date. The Nabatean Agriculture presents itself as a translation of ancient 'Nabataean' (Aramaic, Iraqi) books. In Ibn Waḥshiyya, 'Nabataean' means the Aramaic-speaking country people of Iraq, not the Nabataeans of Petra. The Shawq claims to unlock the scripts of such ancient books. Sources: Hämeen-Anttila 2006; T. Fahd, 'Ibn Waḥshiyya', EI2 III (1971). Basis: my prior knowledge; not re-checked in this run (the shared web-search budget was used up before this item began)."
+    },
+    {
+      "date": "377 AH / 987–88 CE",
+      "work": "Kitāb al-Fihrist",
+      "author": "Ibn al-Nadīm",
+      "what": "The Baghdad bookseller's catalogue has a notice of Ibn Waḥshiyya and his books (English: B. Dodge, The Fihrist of al-Nadīm, 1970). Its first discourse also surveys the scripts of the nations, the same ground the Shawq covers. I did not check whether the Fihrist names the Shawq. Basis: my prior knowledge; not re-checked in this run (the shared web-search budget was used up before this item began). The Hijri year was checked arithmetically: 377 AH runs from about May 987 to April 988 CE."
+    },
+    {
+      "date": "undated manuscripts (earliest not established)",
+      "work": "Manuscript copies of Shawq al-mustahām",
+      "author": "anonymous copyists",
+      "what": "The book survives in manuscript. Its tables of alphabets were re-copied, varied and added to like the other aqlām of the sages. Number, dates and shelfmarks of the copies were not checked in this run. Basis: my prior knowledge; not re-checked in this run (the shared web-search budget was used up before this item began)."
+    },
+    {
+      "date": "1806",
+      "work": "Ancient Alphabets and Hieroglyphic Characters Explained; with an Account of the Egyptian Priests, their Classes, Initiation, and Sacrifices (London: W. Bulmer and Co.)",
+      "author": "Joseph Hammer (from 1835 Joseph von Hammer-Purgstall, 1774–1856), then in the Austrian diplomatic service",
+      "what": "First printing. The Arabic text and its alphabets are given with an English version and offered to European readers as a key to the hieroglyphs, a live question since the Rosetta Stone reached London in 1802. Wording of the title and imprint follows my memory of the title page; check it against a scan. Basis: my prior knowledge; not re-checked in this run (the shared web-search budget was used up before this item began)."
+    },
+    {
+      "date": "1822",
+      "work": "Lettre à M. Dacier relative à l'alphabet des hiéroglyphes phonétiques (Paris)",
+      "author": "Jean-François Champollion",
+      "what": "Context, not transmission. The decipherment that worked came from bilingual inscriptions and Coptic, not from this book. Any influence of Hammer's volume on Champollion is unproved (see claims). Basis: my prior knowledge; not re-checked in this run (the shared web-search budget was used up before this item began)."
+    },
+    {
+      "date": "2005",
+      "work": "Egyptology: The Missing Millennium. Ancient Egypt in Medieval Arabic Writings (London: UCL Press)",
+      "author": "Okasha El Daly",
+      "what": "Re-reads the Shawq's hieroglyph section, with other medieval Arabic writers on Egypt. He argues that Ibn Waḥshiyya got some sign values right and saw that some signs mark meaning rather than sound. The book revived the Shawq's reputation and drew popular claims that Arabs deciphered hieroglyphs before Champollion. Basis: my prior knowledge; not re-checked in this run (the shared web-search budget was used up before this item began). The series name 'Encounters with Ancient Egypt' given by the researcher was removed by the fact-checker: neither could confirm it."
+    },
+    {
+      "date": "2006",
+      "work": "The Last Pagans of Iraq: Ibn Waḥshiyya and His Nabatean Agriculture (Leiden: Brill)",
+      "author": "Jaakko Hämeen-Anttila",
+      "what": "The standard modern study of Ibn Waḥshiyya. It sorts the works under his name into those likely his and those doubtful, and it doubts the Shawq. The exact wording and page of his verdict were not checked in this run. Basis: my prior knowledge; not re-checked in this run (the shared web-search budget was used up before this item began)."
+    }
+  ],
+  "claims": [
+    {
+      "claim": "Ibn Waḥshiyya was a real author active in Iraq about 900–930. His Nabatean Agriculture was dictated in 318 AH / 930–31 CE.",
+      "standing": "documented",
+      "evidence": "The transmitter's preface to the Nabatean Agriculture, as analysed by Hämeen-Anttila (2006); Fahd's EI2 article. Basis: my prior knowledge; not re-checked in this run (the shared web-search budget was used up before this item began). Fact-checker's caution: the checker half-remembers that some scholars have asked whether the transmitter Abū Ṭālib al-Zayyāt, rather than Ibn Waḥshiyya, composed the Nabatean Agriculture. This was not checked; if Hämeen-Anttila (2006) records such a view, give it beside his own.",
+      "sources": [
+        "Hämeen-Anttila 2006",
+        "Fahd, EI2 III (1971)"
+      ]
+    },
+    {
+      "claim": "Shawq al-mustahām is by Ibn Waḥshiyya.",
+      "standing": "disputed",
+      "evidence": "The manuscripts and Hammer's edition carry his name. Hämeen-Anttila (2006) doubts it and treats it as one of the works later attached to his name; El Daly (2005) works with it as Ibn Waḥshiyya's. Give both views. Basis: my prior knowledge; not re-checked in this run (the shared web-search budget was used up before this item began).",
+      "sources": [
+        "Hämeen-Anttila 2006",
+        "El Daly 2005",
+        "Hammer 1806"
+      ]
+    },
+    {
+      "claim": "The book catalogues several dozen scripts: scripts of real peoples, alphabets credited to Hermes and to named Greek sages, planetary alphabets and Egyptian hieroglyphs with Arabic letter values.",
+      "standing": "documented",
+      "evidence": "Contents of Hammer's 1806 edition as I recall them; the hieroglyph part is in Hammer's title. The exact number of alphabets and the order of the chapters were not checked, so give no count on the page. Basis: my prior knowledge; not re-checked in this run (the shared web-search budget was used up before this item began).",
+      "sources": [
+        "Hammer 1806"
+      ]
+    },
+    {
+      "claim": "The alphabets credited to Hermes, Plato, Pythagoras and the other sages are the scripts those men wrote in.",
+      "standing": "legend",
+      "evidence": "This is the book's own frame. No such alphabet is found in any Greek source. They belong to the stock of ring-ended magical alphabets (aqlām of the sages) known from Arabic and other magical manuscripts. Arabic belief in an ancient Hermes as the first teacher of writing and the sciences is traced by van Bladel (2009). Report it as 'the book ascribes this alphabet to Hermes', never 'Hermes' alphabet'. Basis: my prior knowledge; not re-checked in this run (the shared web-search budget was used up before this item began).",
+      "sources": [
+        "Hammer 1806",
+        "van Bladel 2009",
+        "Bohak 2011 (on ring-letters generally)"
+      ]
+    },
+    {
+      "claim": "The book explains Egyptian hieroglyphs: it treats them as letters with Arabic values, with some signs standing for whole words or ideas.",
+      "standing": "documented",
+      "evidence": "This is the book's claim, made in its hieroglyph section and in Hammer's title. That the book makes the claim is documented; that the claim is right is a separate question (next item). Basis: my prior knowledge; not re-checked in this run (the shared web-search budget was used up before this item began).",
+      "sources": [
+        "Hammer 1806",
+        "El Daly 2005"
+      ]
+    },
+    {
+      "claim": "Ibn Waḥshiyya (partly) deciphered hieroglyphs: he got some sign values right and understood that some signs mark meaning (determinatives), centuries before Champollion.",
+      "standing": "disputed",
+      "evidence": "El Daly (2005) argues it, matching a number of the book's values with modern ones. Against: the authorship is doubted (Hämeen-Anttila 2006). The book's framework, one sign per Arabic letter, is wrong for Egyptian. Many of its 'hieroglyphs' are not attested Egyptian signs. A few right values can come from Coptic, which kept the old words, or from chance. And no Egyptian text is known to have been read with the book. The working decipherment is Champollion's (1822). Present it as El Daly's argument, with the objections. Basis: my prior knowledge; not re-checked in this run (the shared web-search budget was used up before this item began). I could not check how many values El Daly counts as right, or name a published review, so give neither.",
+      "sources": [
+        "El Daly 2005",
+        "Hämeen-Anttila 2006",
+        "Champollion 1822"
+      ]
+    },
+    {
+      "claim": "Hammer found the manuscript in Cairo.",
+      "standing": "attributed",
+      "evidence": "Hammer's own account in the 1806 volume, as I recall it. He was in Egypt with the British and Ottoman forces in 1801. Basis: my prior knowledge; not re-checked in this run (the shared web-search budget was used up before this item began).",
+      "sources": [
+        "Hammer 1806"
+      ]
+    },
+    {
+      "claim": "Hammer's book helped Champollion decipher the hieroglyphs.",
+      "standing": "disputed",
+      "evidence": "The claim turns up in popular retellings. I know of no documentary evidence that the book shaped Champollion's method, and the 1822 Lettre rests on cartouches, the bilingual inscriptions and Coptic. At most it was one of the books in circulation. Do not print it as fact. Basis: my prior knowledge; not re-checked in this run (the shared web-search budget was used up before this item began).",
+      "sources": [
+        "Champollion 1822",
+        "El Daly 2005"
+      ]
+    },
+    {
+      "claim": "Arabic talismanic practice uses ring-ended 'scripts of the sages' (aqlām) and a fixed row of seven seal-signs, al-khawātim al-sabʿa. In the tradition they are read as the Greatest Name of God, and a poem describes them; its first half-line runs 'three staffs set in a row after a seal'.",
+      "standing": "documented",
+      "evidence": "The seven seals and their poem are in the corpus under al-Būnī's name (d. 622/1225 or 630/1232–3, the two dates the house Arabic hall also gives, arabic.js). The printed Shams al-maʿārif al-kubrā is a much later compilation (Gardiner 2012, as the Arabic hall also states; a Brill chapter on the earliest works of the Corpus Bunianum likewise says the Shams al-maʿārif was falsely attributed to him, per charakteres.verified.json, a search-backed sibling fact-check of this session). The classic study is Winkler 1930 (bibliography confirmed by search in charakteres.verified.json). The reading of the seven signs as the Greatest Name is reported by Graham (per the same fact-check). Seals and amulets carry the signs (Porter 2011). Tradition gives the poem to ʿAlī ibn Abī Ṭālib and tells that he found the seven shapes carved on a rock (Graham, per charakteres.verified.json); that is legend. This is the setting the Shawq belongs to, not a claim about the Shawq itself. Basis otherwise: the researcher's prior knowledge. Fact-check (this pass): no web search was possible (the turn's shared search budget was already used up), so this rests on the checker's knowledge, not on a source seen in this run.",
+      "sources": [
+        "Winkler 1930",
+        "Gardiner 2012",
+        "Coulon 2017",
+        "Porter 2011",
+        "Savage-Smith (ed.) 2004",
+        "Graham (academia.edu), as reported in charakteres.verified.json"
+      ]
+    },
+    {
+      "claim": "The ring-ended Arabic aqlām and the seven seals descend from the charaktêres of Graeco-Egyptian magic.",
+      "standing": "attributed",
+      "evidence": "Scholars argue it from shared ring-ended forms and from the Jewish and Christian links between them (Winkler 1930, as recalled; Bohak 2011; the charakteres sibling file). No unbroken line of manuscripts proves it sign by sign. Say 'scholars connect them'. Basis: my prior knowledge; not re-checked in this run (the shared web-search budget was used up before this item began).",
+      "sources": [
+        "Winkler 1930",
+        "Bohak 2011",
+        "Porter 2011"
+      ]
+    }
+  ],
+  "letters": [
+    {
+      "order": 1,
+      "name": "Scripts of the ancient nations",
+      "value": "Arabic letters (each table is keyed to the Arabic alphabet; abjad order is likely but was not checked)",
+      "translit": "aqlām al-umam (descriptive label, mine)",
+      "numeric": null,
+      "form": "CARD, NOTHING TO DRAW FROM THIS TEXT. The book gives tables for the scripts of peoples, real and legendary: as I recall, Syriac, 'Nabataean' or Chaldaean, Hebrew, Greek, Coptic, South Arabian (musnad), Persian and Indian. Copied by Arabic scribes, the real scripts are often garbled. Show a facsimile crop from Hammer 1806 (public domain) beside the real script from the matching Scriptorium hall, so readers can see how far the copy has drifted. Do not redraw these from modern charts.",
+      "formConfidence": "medium",
+      "note": "'formConfidence' grades the card's facts (that the book has this kind of table), not a drawing. The list of peoples is from memory; trim it to what the facsimile shows. Basis: my prior knowledge; not re-checked in this run (the shared web-search budget was used up before this item began). Fact-check: the category is consistent with the checker's knowledge of the book, so 'medium' stands; the list of peoples is not (Coptic, Persian and Indian in particular could not be confirmed by either), so print none of it before the facsimile is seen."
+    },
+    {
+      "order": 2,
+      "name": "The Hermetic alphabets",
+      "value": "Arabic letters",
+      "translit": "aqlām Hirmis (descriptive label)",
+      "numeric": null,
+      "form": "CARD, NOTHING TO DRAW FROM THIS TEXT. One or more alphabets the book ascribes to Hermes. Arabic tradition knew three Hermeses (van Bladel 2009), and the book may label its tables by them. As I recall, the forms are of the ring-ended magical kind: thin strokes ending in small circles. No letter-level description is given here. Draw only from a facsimile of the 1806 plates.",
+      "formConfidence": "medium",
+      "note": "Wording on the page: 'an alphabet the book ascribes to Hermes'. How many Hermetic tables there are, and under which Hermes, was not checked. Basis: my prior knowledge; not re-checked in this run (the shared web-search budget was used up before this item began). Fact-check: consistent with the checker's knowledge; 'medium' stands. Not seen in a facsimile."
+    },
+    {
+      "order": 3,
+      "name": "The alphabets of the sages and philosophers",
+      "value": "Arabic letters",
+      "translit": "aqlām al-ḥukamāʾ, 'pens of the sages' (descriptive label)",
+      "numeric": null,
+      "form": "CARD, NOTHING TO DRAW FROM THIS TEXT. Alphabets ascribed to named ancient philosophers and physicians in Arabic name-forms. Plato, Pythagoras, Socrates, Aristotle, Hippocrates and Asclepius are the kind of names I recall; check each one against the facsimile before printing. Many are ring-letter alphabets, close in style to the charaktêres. No letter-level description is given here.",
+      "formConfidence": "medium",
+      "note": "The heart of the 'aqlām of the sages' tradition. The ascriptions are the book's (legend). These sages are not known to have used any secret script. Basis: my prior knowledge; not re-checked in this run (the shared web-search budget was used up before this item began). Fact-check: consistent with the checker's knowledge; 'medium' stands for the category only. The six names are a list of the kind expected, not a checked list."
+    },
+    {
+      "order": 4,
+      "name": "The planetary alphabets",
+      "value": "Arabic letters",
+      "translit": "aqlām al-kawākib al-sabʿa (descriptive label)",
+      "numeric": null,
+      "form": "CARD, NOTHING TO DRAW FROM THIS TEXT. As I recall, one alphabet for each of the seven planets (Saturn, Jupiter, Mars, Sun, Venus, Mercury, Moon), for writing under that planet's rule. Expected to be ring-ended. No letter-level description is given here.",
+      "formConfidence": "medium",
+      "note": "No link to Agrippa's planetary seals and characters (De occulta philosophia II.22) or to his Hebrew-keyed alphabets (III.30) is known. Show them side by side only as a parallel, never as a source. The chapter numbers are confirmed by sibling fact-checks against the 1651 English (EEBO-TCP A26565): II.xxii, 'Of the tables of the Planets ...', p. 239 (planetary-seals.verified.json); III.xxx, 'Another manner of making Characters, delivered by Cabalists', p. 439 (celestial.verified.json). Also check the facsimile for zodiacal alphabets (twelve signs), which the researcher half-remembers and could not confirm. Fact-check: the category is consistent with the checker's knowledge; 'medium' stands. Basis otherwise: the researcher's prior knowledge."
+    },
+    {
+      "order": 5,
+      "name": "The tree alphabets",
+      "value": "Arabic letters",
+      "translit": "al-mushajjar, 'the tree-shaped' (term as I recall it)",
+      "numeric": null,
+      "form": "CARD, NOTHING TO DRAW FROM THIS TEXT. As I recall, scripts built on an upright stem, with each letter told apart by the number and side of short branch strokes, a principle like Irish ogham and Norse cipher-runes. No letter-level description is given here, and the stem-and-branch principle must not be used to invent letters.",
+      "formConfidence": "low",
+      "note": "The likeness to ogham has drawn 19th-century antiquarians and later fringe epigraphers to Hammer's tables. It shows a shared cipher principle, not a historical connection. Whether the term mushajjar is the book's own was not checked. Basis: my prior knowledge; not re-checked in this run (the shared web-search budget was used up before this item began). Fact-check: lowered from 'medium' to 'low'. The file's own confidence section calls the tree alphabets shaky, and neither the term mushajjar nor the stem-and-branch description could be checked against a plate."
+    },
+    {
+      "order": 6,
+      "name": "Hieroglyphs read as letters",
+      "value": "Arabic letters (one or more hieroglyph-like signs for each letter)",
+      "translit": "",
+      "numeric": null,
+      "form": "CARD, NOTHING TO DRAW FROM THIS TEXT. The book's tables pair hieroglyph-like signs with Arabic letters. Some are recognisable Egyptian signs and many are not. Show a facsimile crop beside the true Egyptian sign and its modern value (from the Egyptian hall), marked agree or disagree only where a published comparison (El Daly 2005) supports it.",
+      "formConfidence": "medium",
+      "note": "This is the unit at the centre of the El Daly debate (see claims). Fact-check: lowered from 'high' to 'medium'. Hammer's title (itself unchecked in this run) says only that hieroglyphic characters are 'explained'; that the book sets them out as tables keyed to the Arabic letters, and that 'many' are not Egyptian signs, rests on memory, and no plate or page of El Daly was seen. Basis: the researcher's prior knowledge; not re-checked."
+    },
+    {
+      "order": 7,
+      "name": "Hieroglyphs read as signs for things and ideas",
+      "value": "words and ideas, not letters",
+      "translit": "",
+      "numeric": null,
+      "form": "CARD, NOTHING TO DRAW FROM THIS TEXT. Signs that the book explains by what they mean rather than how they sound. El Daly links this to the determinatives of Egyptian writing. Show the book's explanation beside the modern one, credited to El Daly.",
+      "formConfidence": "medium",
+      "note": "That the book treats some signs as symbols is El Daly's main point. Whether this is insight or the old Greek idea of symbolic hieroglyphs (as in Horapollo's Hieroglyphica) in a new setting is the heart of the dispute. Basis: my prior knowledge; not re-checked in this run (the shared web-search budget was used up before this item began). Fact-check: consistent with the checker's knowledge of El Daly's argument; 'medium' stands."
+    }
+  ],
+  "lettersSource": "NOT A SINGLE ALPHABET. The seven units are the kinds of script the Shawq is recalled to list (an eighth, 'the alphabet of the Kabbalists', was removed by the fact-checker because neither researcher nor checker could confirm it exists), shown as cards. 'form' says what each card holds, and 'formConfidence' grades the card's facts (that the book has that kind of table), since nothing is described for drawing. No glyph is described: I saw no plate in this run, and drawing from memory would put invented letters under Ibn Waḥshiyya's name. Draw only from a public-domain scan of Hammer, Ancient Alphabets and Hieroglyphic Characters Explained (London, 1806), citing the page. Not from modern 'Ibn Wahshiyya' fonts or charts that give no page.",
+  "uses": [
+    {
+      "use": "A key to the scripts in which the books of the ancients were said to be written, on talismans, alchemy and the sciences.",
+      "evidence": "The book's own stated purpose, as I recall it from Hammer's English; it fits the claims of the Nabatean Agriculture to translate ancient books. Basis: my prior knowledge; not re-checked in this run (the shared web-search budget was used up before this item began)."
+    },
+    {
+      "use": "A stock of alphabets for writing talismans and amulets, so that names are written in 'the pens of the sages'.",
+      "evidence": "Arabic talismanic manuals and objects use ring-ended aqlām and the seven seals (Porter 2011; Coulon 2017; Savage-Smith (ed.) 2004). That users took their alphabets from the Shawq in particular was not shown. Basis: my prior knowledge; not re-checked in this run (the shared web-search budget was used up before this item began)."
+    },
+    {
+      "use": "In Europe, a proposed key to the hieroglyphs before the decipherment.",
+      "evidence": "Hammer's 1806 title and presentation. No correct reading of an Egyptian text is known to have come from it. Basis: my prior knowledge; not re-checked in this run (the shared web-search budget was used up before this item began)."
+    },
+    {
+      "use": "In modern scholarship, evidence for medieval Arabic interest in ancient Egypt.",
+      "evidence": "El Daly 2005, whose case for real insight is disputed. Even its critics can grant the interest. Basis: my prior knowledge; not re-checked in this run (the shared web-search budget was used up before this item began)."
+    },
+    {
+      "use": "In modern occult charts and fringe epigraphy, a source of 'ancient' alphabets.",
+      "evidence": "General observation. The tables circulate without page references, and the tree alphabets have been compared with ogham. No specific modern author is named here, because none was checked. Basis: my prior knowledge; not re-checked in this run (the shared web-search budget was used up before this item began)."
+    }
+  ],
+  "quotations": [
+    {
+      "text": "شوق المستهام في معرفة رموز الأقلام (Shawq al-mustahām fī maʿrifat rumūz al-aqlām)",
+      "translation": "My own paraphrase, not a published translation: 'The longing of the love-crazed [seeker] to know the ciphers of the scripts'. (mustahām: one made distracted by love; rumūz: symbols, riddles, ciphers; aqlām: pens, hence scripts.) The brief's rendering, 'The book of the frenzied devotee's desire to learn the riddles of ancient scripts', could not be traced to a named translator in this run, so do not print it as anyone's translation. Fact-check: the Arabic title is the form standard in the scholarship as both researcher and checker know it; it was not seen in a source in this run. The checker thinks the brief's rendering may be the unattributed gloss in English Wikipedia's 'Ibn Wahshiyya' article; that was not checked, and it is still no one's named translation.",
+      "source": "Title of the work, as given in Hammer 1806 and in modern scholarship (Hämeen-Anttila 2006; El Daly 2005)"
+    },
+    {
+      "text": "[Paraphrase, not a quotation] Hammer's English title promises that ancient alphabets and hieroglyphic characters are explained, with an account of the Egyptian priests: their classes, their initiation and their sacrifices.",
+      "translation": "Fact-checker's own paraphrase of Joseph Hammer's English title (London, 1806). The exact wording could not be checked against a scan, so it is not given as a quotation; the full title as recalled stays in the source list for checking.",
+      "source": "Hammer 1806, title page"
+    },
+    {
+      "text": "Arabic, first half-line only: ثلاث عصي صففت بعد خاتم. [Paraphrase, not a quotation, of the whole line] Three staffs set in a row after a seal [the star], with something like a straightened spear-point on their heads.",
+      "translation": "Own paraphrase; no published translation is quoted. The first half-line ('three staves lined up after a seal') was seen in Arabic in a search-backed sibling fact-check (charakteres.verified.json); this checker did not see it and cannot confirm its exact spelling. The second half-line (على رأسها مثل السنان المقوم, as the researcher recalls it) was not confirmed by anyone and is withheld from the page: print the paraphrase only for that half.",
+      "source": "Opening line of the poem on the seven seals (al-khawātim al-sabʿa), carried in the corpus under al-Būnī's name (Shams al-maʿārif); studied by Winkler 1930. Its ascription to ʿAlī ibn Abī Ṭālib is traditional (legend). Not from the Shawq. Line or page in a printed text not established."
+    }
+  ],
+  "links": [
+    {
+      "to": "arabic",
+      "relation": "The Arabic hall: the science of letters, al-Būnī and the Shams al-maʿārif problem, and the language of the book."
+    },
+    {
+      "to": "egyptian",
+      "relation": "The hieroglyphs the book claims to explain. Each claimed value is checked there against the modern reading. (Hall key 'egyptian' checked: the site has apps/web/src/data/education/themes/egyptian.js.)"
+    },
+    {
+      "to": "coptic",
+      "relation": "Coptic kept Egyptian words alive and may account for the few values the book gets right. It was also Champollion's key."
+    },
+    {
+      "to": "syriac",
+      "relation": "Syriac and Iraqi Aramaic ('Nabataean' in Ibn Waḥshiyya's sense) are among the scripts of ancient peoples the book lists."
+    },
+    {
+      "to": "hebrew",
+      "relation": "The Hebrew script, which the researcher recalls among the scripts of peoples the book lists (to be confirmed from the facsimile)."
+    },
+    {
+      "to": "greek",
+      "relation": "The Greek sages to whom the book ascribes alphabets."
+    },
+    {
+      "to": "pgm",
+      "relation": "The Greek magical papyri: the late-antique charaktêres behind the ring-ended aqlām."
+    },
+    {
+      "to": "charakteres",
+      "relation": "The ring-letter family to which the sages' alphabets and the seven seals belong."
+    },
+    {
+      "to": "celestial",
+      "relation": "Parallel: a Hebrew-keyed ring-letter alphabet in the Latin tradition (Agrippa III.30). No borrowing from the Shawq is known."
+    },
+    {
+      "to": "malachim",
+      "relation": "Parallel: a Hebrew-keyed ring-letter alphabet in the Latin tradition (Agrippa III.30). No borrowing from the Shawq is known."
+    },
+    {
+      "to": "planetary-seals",
+      "relation": "Contrast: Agrippa's planetary seals and characters, beside the Shawq's planetary alphabets. No known link."
+    },
+    {
+      "to": "trithemius",
+      "relation": "Parallel genre: Trithemius's Polygraphia (printed July 1518) also prints a catalogue of alphabets, real and attributed. The one entry verified so far is the alphabet he ascribes to 'Honorius surnamed the Theban'; the rest is not inventoried and the book number (V or VI) is unsettled (trithemius.verified.json)."
+    },
+    {
+      "to": "runes",
+      "relation": "Contrast: the stem-and-branch principle of the Shawq's tree alphabets, also found in Norse cipher-runes (and Irish ogham). No historical connection is claimed."
+    }
+  ],
+  "cautions": [
+    "Every factual statement here rests on prior knowledge. The researcher's search budget ran out before this item began, and the fact-checker's did too: no web search was made in either pass. A few points are backed by search-backed sibling fact-checks (Agrippa II.22 and III.30; the Polygraphia of July 1518; Winkler 1930; the first half-line of the seven-seals poem) and by the house Arabic hall (al-Būnī's dates; Gardiner on the Shams al-maʿārif). Everything else needs one check against the named source before publication.",
+    "Never write 'Ibn Waḥshiyya deciphered the hieroglyphs'. Write 'El Daly argues that the book attributed to Ibn Waḥshiyya gives correct values for some signs', and give the objections.",
+    "Keep the ascription open: 'ascribed to Ibn Waḥshiyya' or 'the Shawq attributed to Ibn Waḥshiyya', since Hämeen-Anttila (2006) doubts it.",
+    "No glyph may be drawn from this file. Use only facsimile crops of Hammer 1806 (public domain), or tracings of them, with page references. Modern 'Ibn Wahshiyya alphabet' fonts and web charts are not sources.",
+    "'Nabataean' (Nabaṭī) in Ibn Waḥshiyya means the Aramaic-speaking people of Iraq, not the Nabataeans of Petra. Do not link to the Petra Nabataean script on that basis.",
+    "The Shawq is not the Picatrix (Ghāyat al-ḥakīm) and not al-Būnī's Shams al-maʿārif. The seven seals belong to the Būnian corpus and to talismanic practice; do not say the Shawq contains them unless a facsimile shows it.",
+    "Report the ascriptions of alphabets to Hermes, Plato and others as the book's (legend), and the poem of the seven seals' ascription to ʿAlī as tradition.",
+    "Hammer's title page gives the name as 'Ahmad Bin Abubekr Bin Wahshih', which garbles the usual Abū Bakr Aḥmad ibn ʿAlī ibn Waḥshiyya. Quote it as Hammer prints it and explain the difference.",
+    "Do not repeat the story that Hammer's book helped Champollion unless a source is found. Champollion's 1822 decipherment rests on other evidence.",
+    "The seven seals are still used on amulets today. Describe them historically and neither endorse nor mock their use.",
+    "Do not show an 'alphabet of the Kabbalists' card unless the 1806 facsimile shows such a table under that label. It was removed here because it is unconfirmed. The label may have drifted in from Agrippa III.30, whose 1651 heading reads 'delivered by Cabalists'; that is the checker's guess, not a finding.",
+    "Do not print the series name 'Encounters with Ancient Egypt' for El Daly 2005, or the second half-line of the seven-seals poem in Arabic, until each is checked."
+  ],
+  "sources": [
+    {
+      "citation": "J. Hammer (trans.), Ancient Alphabets and Hieroglyphic Characters Explained; with an Account of the Egyptian Priests, their Classes, Initiation, and Sacrifices, in the Arabic Language by Ahmad Bin Abubekr Bin Wahshih (London: W. Bulmer and Co., 1806). Primary: Arabic text with English version. Public domain. Title, imprint and name form as recalled by the researcher; they agree with the fact-checker's memory and with the short form in charakteres.verified.json, but no scan or catalogue record was seen.",
+      "url": ""
+    },
+    {
+      "citation": "Okasha El Daly, Egyptology: The Missing Millennium. Ancient Egypt in Medieval Arabic Writings (London: UCL Press, 2005). Series designation removed as unconfirmed.",
+      "url": ""
+    },
+    {
+      "citation": "Jaakko Hämeen-Anttila, The Last Pagans of Iraq: Ibn Waḥshiyya and His Nabatean Agriculture (Leiden: Brill, 2006).",
+      "url": ""
+    },
+    {
+      "citation": "T. Fahd, 'Ibn Waḥshiyya', Encyclopaedia of Islam, 2nd ed., vol. III (Leiden: Brill, 1971).",
+      "url": ""
+    },
+    {
+      "citation": "T. Fahd (ed.), al-Filāḥa al-Nabaṭiyya, 3 vols (Damascus: Institut français de Damas, 1993–98). Edition of the Nabatean Agriculture.",
+      "url": ""
+    },
+    {
+      "citation": "Martin Levey, Medieval Arabic Toxicology: The Book on Poisons of Ibn Waḥshīya and Its Relation to Early Indian and Greek Texts (Transactions of the American Philosophical Society, n.s. 56.7, 1966).",
+      "url": ""
+    },
+    {
+      "citation": "Bayard Dodge (trans.), The Fihrist of al-Nadīm: A Tenth-Century Survey of Muslim Culture, 2 vols (New York: Columbia University Press, 1970).",
+      "url": ""
+    },
+    {
+      "citation": "Kevin van Bladel, The Arabic Hermes: From Pagan Sage to Prophet of Science (Oxford: Oxford University Press, 2009).",
+      "url": ""
+    },
+    {
+      "citation": "Noah Gardiner, 'Forbidden Knowledge? Notes on the Production, Transmission, and Reception of the Major Works of Aḥmad al-Būnī', Journal of Arabic and Islamic Studies 12 (2012).",
+      "url": ""
+    },
+    {
+      "citation": "Jean-Charles Coulon, La magie en terre d'Islam au Moyen Âge (Paris: CTHS, 2017).",
+      "url": ""
+    },
+    {
+      "citation": "H. A. Winkler, Siegel und Charaktere in der muhammedanischen Zauberei (Berlin and Leipzig: de Gruyter, 1930; Studien zur Geschichte und Kultur des islamischen Orients 7). The classic study of the seals and ring-letters, including the seven seals. Bibliography confirmed by search in charakteres.verified.json; no URL given here because this checker saw none.",
+      "url": ""
+    },
+    {
+      "citation": "Lloyd D. Graham, 'The Seven Seals of Judeo-Islamic Magic: Possible Origins of the Symbols' (independent paper, academia.edu), as reported in charakteres.verified.json. Not peer-reviewed as far as that check saw; use with care. No URL given here because this checker saw none.",
+      "url": ""
+    },
+    {
+      "citation": "Venetia Porter, Arabic and Persian Seals and Amulets in the British Museum (London: British Museum, 2011).",
+      "url": ""
+    },
+    {
+      "citation": "Emilie Savage-Smith (ed.), Magic and Divination in Early Islam (Aldershot: Ashgate, 2004; The Formation of the Classical Islamic World 42).",
+      "url": ""
+    },
+    {
+      "citation": "Gideon Bohak, 'The Charaktêres in Ancient and Medieval Jewish Magic', Acta Classica Universitatis Scientiarum Debreceniensis 47 (2011), 25–44 (pages and open-access status as given in charakteres.verified.json, a search-backed sibling fact-check of this session; no URL is given here because this checker saw none).",
+      "url": ""
+    },
+    {
+      "citation": "J.-F. Champollion, Lettre à M. Dacier relative à l'alphabet des hiéroglyphes phonétiques (Paris, 1822).",
+      "url": ""
+    }
+  ],
+  "confidence": "Fact-check: no source was seen in this pass (the search budget was used up), so nothing below has moved from 'recalled' to 'confirmed' except where a sibling fact-check or the house Arabic hall backs it. BACKED BY SIBLING CHECKS OR HOUSE TEXT: Agrippa II.22 and III.30 as chapter numbers; the Polygraphia printed July 1518 and its Theban entry; Winkler 1930; the first half-line of the seven-seals poem; al-Būnī's two death dates; Gardiner on the later Shams al-maʿārif al-kubrā. KNOWN TO BOTH RESEARCHER AND CHECKER BUT NOT CHECKED: Ibn Waḥshiyya's period and the Nabatean Agriculture's date of 318/930–31 (the conversion is right); Hammer's English edition (London, 1806), its title and imprint; El Daly's 2005 book and its thesis; Hämeen-Anttila's 2006 monograph and his doubts about the Shawq (strength and page unknown); Champollion's 1822 Lettre; the standard bibliography. FAIRLY SURE: the kinds of alphabet in units 1–4 and 6–7. SHAKY: the tree alphabets (unit 5, now 'low'); the 'alphabet of the Kabbalists' (removed); the number of alphabets; zodiacal tables; the internal date of the Shawq; the second half-line of the poem; Hammer's Cairo copy; any claim about Champollion's or Kircher's use of the book. No glyph forms are given. No URLs are given: none was seen by the researcher or the checker.",
+  "factcheck": {
+    "corrections": [
+      "Basis of this check: the web search budget (200 calls per turn, shared by every agent in it) was already used up when this pass began, so no search was made and no page was fetched. The checks below rest on the fact-checker's own knowledge, on internal consistency, on arithmetic, on search-backed sibling fact-checks of this session (planetary-seals, celestial, trithemius and charakteres .verified.json) and on the house Arabic hall (apps/web/src/data/education/themes/arabic.js).",
+      "Agrippa chapters confirmed through sibling fact-checks against the 1651 English (EEBO-TCP A26565): II.22 = 'CHAP. XXII. Of the tables of the Planets ...', p. 239 (planetary-seals.verified.json); III.30 = 'CHAP. XXX. Another manner of making Characters, delivered by Cabalists', p. 439 (celestial.verified.json). The planetary-alphabets note now cites them.",
+      "Trithemius link corrected. 'Polygraphia (1518) also prints a catalogue of alphabets ascribed to ancient figures' overstated what is verified. It now reads: printed July 1518; a catalogue of alphabets, real and attributed, whose one verified entry is the alphabet ascribed to 'Honorius surnamed the Theban'; book number (V or VI) unsettled (trithemius.verified.json).",
+      "Family field corrected. It stated as fact that the ring-ended aqlām and the seven seals 'carry on the charaktêres of late-antique magic'. The file's own claims section rates that link 'attributed', so the family line now says scholars connect them.",
+      "Letter unit 5, 'The alphabet of the Kabbalists', removed from the letter table and the units renumbered (now seven). Neither researcher nor checker could confirm that the book has such a table. The checker suspects the label drifted in from Agrippa III.30's 1651 heading ('delivered by Cabalists'); that is a guess and is recorded only as a caution. The hebrew and malachim links and lettersSource were adjusted.",
+      "Tree alphabets (now unit 5): formConfidence lowered from medium to low. The file's own confidence section calls them shaky, and the term mushajjar and the stem-and-branch description were not checked against a plate.",
+      "Hieroglyphs read as letters (now unit 6): formConfidence lowered from high to medium. Hammer's title says only that the characters are 'explained'. That the book sets them out as tables keyed to Arabic letters, and that many are not Egyptian signs, rests on memory; no plate and no El Daly page was seen.",
+      "Other letter units: the forms are cards, not glyphs, and are consistent with the checker's knowledge of the book. Scripts of the nations, Hermetic, sages', planetary and 'ideas' units keep 'medium'. Notes now say the lists of peoples and of sages' names are not checked lists. No glyph is described anywhere, so no stroke description could be wrong.",
+      "Quotation 2 (Hammer's English title): the text could not be checked against a scan, so it is replaced with a labelled paraphrase. The recalled full title stays in the source list, flagged for checking.",
+      "Quotation 3 (seven-seals poem): only the first half-line is kept in Arabic, as seen in a search-backed sibling check (charakteres.verified.json). The second half-line (على رأسها مثل السنان المقوم), confirmed by no one, is withheld, and the whole line is given as a labelled paraphrase. Source line now names Winkler 1930.",
+      "Seven-seals claim: the claim text now gives the first half-line only. The evidence adds Winkler 1930 (bibliography search-confirmed in charakteres.verified.json), Graham for the 'Greatest Name' reading and for the legend that ʿAlī found the shapes carved on a rock, and the Brill Corpus Bunianum chapter (via the same sibling) supporting 'later compilation'. al-Būnī's dates (622/1225 or 630/1232–3) match the house Arabic hall. Winkler 1930 and Graham were added to sources, with no URLs.",
+      "Summary: 'Hämeen-Anttila (2006) doubts that the Shawq is his' softened to 'questions whether the Shawq is his'. The strength and page of his verdict are unknown, and the sibling charakteres check words it as 'discusses whether it is genuinely Ibn Waḥshiyya's'.",
+      "El Daly 2005: the series designation 'Encounters with Ancient Egypt' was removed from the transmission entry and the source list. Neither the researcher nor the checker could confirm it.",
+      "Bohak 2011: page range 25–44 added, as given in charakteres.verified.json (search-backed). The URL that sibling saw is not copied, because this checker saw no search result.",
+      "First attestation: 'A later copy than the author is certain' reworded. No autograph is known to either, so the copies are presumably later, but none is dated here.",
+      "Hijri dates checked arithmetically (tabular calendar). 318 AH is about February 930 to January 931 CE, so '930–31' is right. 377 AH is about May 987 to April 988 CE, so '987–88' is right.",
+      "Claim on Ibn Waḥshiyya's historicity: a caution added. The checker half-remembers that some scholars have asked whether the transmitter Abū Ṭālib al-Zayyāt composed the work; this is unverified.",
+      "Link keys checked against the repository. The 'egyptian' hall exists (themes/egyptian.js) though the brief's shape list omits it. The sibling item keys charakteres, celestial, malachim, planetary-seals, trithemius and runes all exist as research files.",
+      "URLs: the file had none, and none was added. Nothing had to be dropped as invented.",
+      "Confidence, cautions and lettersSource rewritten to match the above (seven units; what is sibling-backed versus recalled)."
+    ],
+    "unresolved": [
+      "No web search was possible in this pass, so no fact in this file has been confirmed by the checker against an external source. Run one search-backed check before publication; the user can send a follow-up to continue once the search budget is available.",
+      "Hammer 1806: exact title-page wording, the imprint (W. Bulmer and Co.; seller), the name form 'Ahmad Bin Abubekr Bin Wahshih', and page numbers for each alphabet. Needs a scan (public domain).",
+      "Hammer's own account of finding the manuscript in Cairo, his presence in Egypt in 1801, and where his manuscript is now.",
+      "First attestation: the earliest surviving manuscript of the Shawq, its date and shelfmark, and the number of copies. None was established.",
+      "Hämeen-Anttila 2006: the wording, strength and page of his verdict on the Shawq; whether he records any view that Abū Ṭālib al-Zayyāt was the real author of the Nabatean Agriculture.",
+      "El Daly 2005: chapter and pages for the Shawq; how many sign values he counts as right; his determinatives argument in his own words; the series designation; a published review or critique to cite for the objections.",
+      "Whether the Fihrist (377/987–88) names the Shawq among Ibn Waḥshiyya's works.",
+      "Contents of the Shawq, all from memory: the list of peoples' scripts (especially Coptic, Persian, Indian); the number and labels of the Hermetic tables; the sages' names; the seven planetary alphabets; any zodiacal alphabets; the tree alphabets and the term mushajjar; whether an 'alphabet of the Kabbalists' exists at all; the total number of alphabets.",
+      "Seven-seals poem: the second half-line in Arabic, and a printed locator (al-Būnī text or Winkler 1930 page).",
+      "Bibliography known to the checker but not search-checked: Fahd, EI2 III (1971) and pages; Fahd's edition of al-Filāḥa al-Nabaṭiyya (IFD, 1993–98, vol. dates); Levey, TAPS n.s. 56.7 (1966); Dodge 1970; van Bladel 2009; Gardiner, JAIS 12 (2012) and pages; Coulon 2017; Porter 2011; Savage-Smith (ed.) 2004 (FCIW 42); Champollion's full 1822 title.",
+      "The brief's English rendering of the title ('the frenzied devotee's desire ...'): its provenance (possibly English Wikipedia) is unconfirmed; it is not a named translation in any case.",
+      "Hammer's name: that 'von Hammer-Purgstall' dates from 1835 is recalled; the checker believes 'von Hammer' was used earlier. Check before printing the name history.",
+      "Champollion and Kircher: no evidence was seen either way about their use of the book. Keep the claim 'disputed' and do not print it as fact.",
+      "Sibling-backed points (Agrippa II.22/III.30 headings and pages, the Polygraphia of July 1518, Winkler 1930, Bohak's pages, the first half-line of the poem, the Graham material) were not seen by this checker. They rest on the sibling fact-checks named in the corrections."
+    ]
+  }
+}

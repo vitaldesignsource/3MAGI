@@ -1,0 +1,628 @@
+{
+  "key": "alphabet-of-the-magi",
+  "title": "The Alphabet of the Magi",
+  "otherNames": [
+    "Alphabet of the Magi: the English name. Wikipedia reports that S. L. MacGregor Mathers used it for this alphabet on Plate XV of his Key of Solomon (preface dated October 1888; title page 1889).",
+    "The characters of the angel Raphael: Claude Duret's label in his Thrésor (1613), citing Ambrogio. Reported by Wikipedia and by the Lyon library blog on Duret (bibulyon.hypotheses.org).",
+    "Alphabet of the Magi of Paracelsus / 'Paracelsus' alphabet': the modern attribution, e.g. Omniglot ('invented by ... Paracelsus in the 16th century').",
+    "Alphabet of Apollonius of Tyana: found only on dCode. No historical source was found, and dCode may not be used for history under the house rule. Do not print it as an attested name.",
+    "Alphabet des mages: the caption of a Flickr image (user cenacledelarc, 2010) says the image is an extract from Paul Christian's Histoire de la magie (1870). The image was not seen, so it is unverified whether its letters are this alphabet."
+  ],
+  "family": "A variant of the Hebrew alphabet. Wikipedia describes the earliest printed version (Teseo Ambrogio, Pavia 1539) as variant glyphs labelled Aleph, Beth, Gimel, Daleth and so on through Thau, i.e. keyed to the Hebrew letters in Hebrew order. That rests on Wikipedia; the 1539 print was not viewed. It is NOT one of Agrippa's alphabets (De occulta philosophia III.29–30). It is often charted beside his Celestial, Malachim and Transitus fluvii, but its graphic relation to that ring-letter (Brillenbuchstaben) family is unverified. Its documented route runs through alphabet compendia: Ambrogio 1539, Duret 1613 and Fry 1799. Mathers then printed it under the name 'Alphabet of the Magi' (1888). The Paracelsus attribution is later than all of these, and no source cites a passage for it.",
+  "summary": "The 'Alphabet of the Magi' is a variant of the Hebrew alphabet. Its earliest known printing is in Teseo Ambrogio degli Albonesi's Introductio in Chaldaicam linguam (Pavia, 1539). According to Wikipedia (the 1539 print was not viewed), Ambrogio says the letters were held to have been invented by Gamaliel and handed down in a book called Liber ignis, associated with the angel Raphiel. Claude Duret reprinted it in 1613 as 'the characters of the angel Raphael', Edmund Fry in his Pantographia (1799), and S. L. MacGregor Mathers on Plate XV of his Key of Solomon (1888) under the name 'Alphabet of the Magi'. Modern reference charts credit it to Paracelsus and say he engraved angels' names with it on healing and protective talismans, but no source found cites a passage of Paracelsus for this.",
+  "firstAttestation": {
+    "work": "Introductio in Chaldaicam linguam, Syriacam, atque Armenicam, & decem alias linguas. Characterum differentium alphabeta, circiter quadraginta, & eorundem inuicem conformatio. Mystica et cabalistica quamplurima scitu digna. Et descriptio ac simulachrum Phagoti Afranij. Title as given in the WorldCat (OCLC 954792662) and Library of Congress (09016522) records.",
+    "author": "Teseo Ambrogio degli Albonesi (Theseus Ambrosius ex comitibus Albonesii). Dates 1469–1540 per the Library of Congress heading and Wikipedia; the ADER (Paris) auction catalogue gives c. 1469–c. 1540.",
+    "date": "1539 (LOC, WorldCat, ADER). ADER reports that the first edition exists in two issues, with March and April calendar dates in the colophon. It does not say whether the alphabet differs between them.",
+    "place": "Pavia: Giovanni Maria Simonetta (ADER auction catalogue).",
+    "locator": "Two readings, unresolved. Wikipedia ('Alphabet of the Magi') cites 'pp. 202f.', not checked against a scan. But the book is foliated, not paginated (ADER: 215 ff. plus 1 blank), and Wikipedia's article on Ambrogio puts the appendix of alphabets at fols. 193–213. The reference is therefore probably to fol. 202 and the following leaf, with recto/verso not established. Confirm on the Internet Archive scan (bub_gb_yUkKq_QnrnwC) or the Library of Congress copy before the page prints a locator.",
+    "notes": "This replaces the research file's candidate, Paul Christian's Histoire de la magie (1870). That candidate is refuted: the alphabet was printed at least three times before 1870 (Ambrogio 1539, Duret 1613, Fry 1799). BASIS: Wikipedia's 'Alphabet of the Magi', which names the work and the page. Three other sources agree. dCode says the first known publication was Ambrosius's in 1539; it is listed only as agreeing, since the house rule bars it for history. Wikipedia quotes Fry, who reports Ambrosius's account. The Lyon library blog on Duret (bibulyon.hypotheses.org) says Duret's 'alphabet of the Angel Raphael' is taken from Theseus Ambrosius. The primary print was NOT viewed: there is no page fetching, and images cannot be downloaded. TWO CAUTIONS from the ADER description. (1) The book prints some of its c. 38–40 alphabets and leaves spaces in which others were added by hand in ink, so a given copy's forms may be hand-drawn and may differ from copy to copy. (2) There are two issues. AN EARLIER PRINTING IS NOT EXCLUDED. The same Flickr caption says Christian's 'alphabet des mages' also appears 'with many others' in Pantheus's Voarchadumia. Wikipedia's Transitus Fluvii article dates that book to Venice, 1530, but its bibliography cites a 1550 copy. If the Voarchadumia alphabet is this one, the first attestation moves to 1530. Unverified."
+  },
+  "transmission": [
+    {
+      "date": "1539",
+      "work": "Introductio in Chaldaicam linguam, Syriacam, atque Armenicam, & decem alias linguas (Pavia: G. M. Simonetta)",
+      "author": "Teseo Ambrogio degli Albonesi (Theseus Ambrosius)",
+      "what": "Earliest known printing. Ambrogio gives the alphabet among about forty alphabets, in an appendix at fols. 193–213 (per Wikipedia's Ambrogio article), as variant Hebrew glyphs labelled Aleph to Thau. Per Wikipedia, it differs from his other Semitic variants because he reports that these letters were said to have been invented by Gamaliel and handed down in a book called Liber ignis associated with the angel Raphiel; Wikipedia tags that sentence 'clarification needed'. The primary print was not viewed."
+    },
+    {
+      "date": "1589–1591",
+      "work": "Bücher und Schrifften (collected edition, Basel)",
+      "author": "Paracelsus, ed. Johannes Huser",
+      "what": "First collected edition of the writings under Paracelsus' name. The dates come from the house timeline, which is not an independent source. Joseph H. Peterson's Esoteric Archives edition of the Archidoxis magica states that the text first appeared in 1591, in Huser's collected works. Wikipedia asserts that this alphabet 'is described' in the Archidoxis magica, but gives no page and is tagged 'page needed'. No such passage was found."
+    },
+    {
+      "date": "1613",
+      "work": "Thrésor de l'histoire des langues de cest univers (Cologny: M. Berjon; USTC 1700883)",
+      "author": "Claude Duret (1570?–1611), published posthumously",
+      "what": "Reprints the alphabet as 'the characters of the angel Raphael', citing Ambrogio (Wikipedia). The Lyon library blog on Duret (bibulyon.hypotheses.org) says Duret reproduces an alphabet of the Angel Raphael taken from Theseus Ambrosius, without taking a position on its authenticity. Imprints vary: USTC gives Cologny; the same blog notes copies with Geneva and Cologny addresses; Open Library names the printer M. Berjon. The page is DISPUTED: Wikipedia says p. 117, but its own Google Books link points to p. 125 (PA125)."
+    },
+    {
+      "date": "1656",
+      "work": "Of the Supreme Mysteries of Nature (includes the Archidoxes of Magic), London: N. Brook and J. Harison",
+      "author": "Paracelsus (attributed), tr. Robert Turner",
+      "what": "English route for the pseudo-Paracelsian Archidoxis magica, whose zodiacal and planetary seals carry names and characters. The imprint comes from a search result describing Turner's edition. A Wellcome Collection record describes a 1975 reprint; the publisher (Askin) and Stephen Skinner's introduction rest on prior knowledge. Wikipedia names Turner's translation as the English route for the alphabet, but gives no page ('page needed'), and this check found no passage."
+    },
+    {
+      "date": "1799",
+      "work": "Pantographia (London)",
+      "author": "Edmund Fry",
+      "what": "Reproduces the alphabet, pp. 28–29 according to Wikipedia. PARAPHRASE (not a quotation; the wording seen is Wikipedia's transcription and was not checked against the 1799 print): Fry reports Ambrosius's assertion that the angel Raphael brought this character from heaven and gave it to Adam, who used it to compose psalms after his expulsion from the earthly paradise. This Raphael-and-Adam story differs from the Gamaliel and Liber ignis account that Wikipedia gives for Ambrogio himself; both are reported versions. The heading under which Fry prints it was not confirmed."
+    },
+    {
+      "date": "1870",
+      "work": "Histoire de la magie, du monde surnaturel et de la fatalité à travers les temps et les peuples (Paris: Furne, Jouvet et Cie)",
+      "author": "P. Christian (Jean-Baptiste Pitois, 1811–1877)",
+      "what": "NOT the first printing (see 1539, 1613, 1799). The imprint and date are confirmed by dealer listings (livre-rare-book, AbeBooks) and the Gallica record, and Pitois's dates by Wikipedia. Dealers describe 16 woodcut plates; another listing gives 15. A Flickr image captioned 'Alphabet des mages' is described by its uploader as an extract from this book. The image was not seen, so neither its plate or page nor its identity with this alphabet is verified."
+    },
+    {
+      "date": "1888 (preface dated October 1888; title page 1889)",
+      "work": "The Key of Solomon the King (Clavicula Salomonis), Plate XV, 'The Mystical Alphabets'",
+      "author": "S. Liddell MacGregor Mathers (ed., tr.)",
+      "what": "Prints the alphabet on Plate XV under the name 'Alphabet of the Magi' (Wikipedia). The plate's title, 'The Mystical Alphabets', is from the sacred-texts.com table of contents. This is the earliest use of the English name found in this check; whether Mathers coined it is not established. The publisher (George Redway) rests on prior knowledge."
+    },
+    {
+      "date": "1952",
+      "work": "The History and Practice of Magic (2 vols)",
+      "author": "Paul Christian, tr. James Kirkup and Julian Shaw, ed. Ross Nichols",
+      "what": "English translation, London: Forge Press, 1952 (Penn catalogue; translators and editor per the Folger catalogue). First American edition: New York, Citadel, 1963 (Penn). Whether it reproduces any alphabet was not checked. The research file's suggestion that this was the route for the English name is withdrawn, because Mathers used the name in 1888."
+    },
+    {
+      "date": "undated (online)",
+      "work": "Omniglot, 'Alphabet of the Magi' (omniglot.com/conscripts/magi.htm)",
+      "author": "Simon Ager (ed.)",
+      "what": "Modern web reference. Search snippets show that it states the alphabet was 'invented by Theophrastus Bombastus von Hohenheim (also known as Paracelsus) in the 16th century' and that 'He used it to engrave the names of angels on talismans'. It also gives a letter chart, which was not seen. It may be used only for the letter list, never for the history (house rule)."
+    }
+  ],
+  "claims": [
+    {
+      "claim": "Paracelsus devised the Alphabet of the Magi.",
+      "standing": "attributed",
+      "evidence": "Omniglot states that it 'was invented by Theophrastus Bombastus von Hohenheim (also known as Paracelsus) in the 16th century' (wording seen in search snippets). No source found cites a work, chapter or folio of Paracelsus for it. The earliest known printing, Ambrogio 1539, appeared two years before Paracelsus' death. As reported, it gives a different pedigree (Gamaliel, Liber ignis, the angel Raphiel) and does not name Paracelsus. Wikipedia and the Voynich wiki treat the attribution as later. The page should write 'attributed to Paracelsus in modern reference works; no passage in his writings has been identified'.",
+      "sources": [
+        "Omniglot, 'Alphabet of the Magi' (attribution only; not usable for history)",
+        "Wikipedia, 'Alphabet of the Magi' (en.wikipedia.org, read through search snippets only)",
+        "Teseo Ambrogio degli Albonesi, Introductio in Chaldaicam linguam, Syriacam, atque Armenicam, & decem alias linguas, Pavia 1539 (not viewed; reported by Wikipedia)"
+      ]
+    },
+    {
+      "claim": "Paracelsus used it to engrave the names of angels on talismans that cure disease and protect from harm.",
+      "standing": "legend",
+      "evidence": "The stock modern description. Omniglot: 'He used it to engrave the names of angels on talismans which he claimed could treat illnesses and provide protection' (search snippet). No early source describes it. Wikipedia's lead calls the alphabet one 'used for inscriptions in talismans in 17th-century occultism', but no source for that sentence was checked.",
+      "sources": [
+        "Omniglot, 'Alphabet of the Magi'",
+        "Wikipedia, 'Alphabet of the Magi' (en.wikipedia.org, read through search snippets only)"
+      ]
+    },
+    {
+      "claim": "The alphabet is found in Paracelsus' Archidoxis magica.",
+      "standing": "disputed",
+      "evidence": "Wikipedia asserts that the alphabet 'is described in the pseudo-Paracelsian Archidoxis magica, translated into English by R. Turner (1656)', but tags the claim 'page needed'. This check found no passage. Even if it were true, it would not make the alphabet Paracelsus' own, and it could not be the first printing: per Peterson, the Archidoxis magica first appeared in Huser's edition in 1591, and Ambrogio printed the alphabet in 1539. On authenticity, the house timeline's 'spurious by common consent' is stronger than the sources seen. Wikipedia calls the work pseudo-Paracelsian and reports Wolfgang Schneider's 1982 study as finding it spurious, though perhaps partly from Paracelsus' lifetime. Peterson's Esoteric Archives page reportedly says Schneider thought the first four books could be genuine, and raises Jacques Gohory as a possible author. The two reports of Schneider disagree; both are given.",
+      "sources": [
+        "Wikipedia, 'Alphabet of the Magi' (en.wikipedia.org, read through search snippets only)",
+        "Wikipedia, 'Archidoxis magica'",
+        "Joseph H. Peterson (ed.), Archidoxes of Magic, Esoteric Archives (esotericarchives.com/solomon/archidox.htm), read through search snippets",
+        "House timeline 'Paracelsus', apps/web/src/data/education/timelines/latin.js (internal; not independent)"
+      ]
+    },
+    {
+      "claim": "It is not one of the alphabets printed by Agrippa.",
+      "standing": "documented",
+      "evidence": "Re-verified in this pass from the EEBO-TCP transcription of the 1651 English (A26565, local clone in the scratchpad). III.29, 'Of the Characters and Seals of spirits', begins on p. 437. Its letters 'which Peter Apponus notes, as delivered by Honorius of Thebes' are on p. 438. III.30, 'Another manner of making Characters, delivered by Cabalists', begins on p. 439 and names the Celestial, Malachim and 'the passing through the River'. The word 'Magi' does not occur anywhere in the 1651 text. For 1533, Wikipedia ('Theban alphabet') gives III.29 and Omniglot gives III.30 for the River script. The Library of Congress holds the Cologne 1533 edition (item 20007812), which was not viewed.",
+      "sources": [
+        "Agrippa, Three Books of Occult Philosophy, tr. J.F., London: R.W. for Gregory Moule, 1651, III.29–30, pp. 437–441 (EEBO-TCP A26565)",
+        "Agrippa, De occulta philosophia libri tres, [Cologne] 1533 (LOC item 20007812; not viewed)",
+        "Wikipedia, 'Theban alphabet'"
+      ]
+    },
+    {
+      "claim": "It first appears in Paul Christian's Histoire de la magie (Paris, 1870).",
+      "standing": "disputed",
+      "evidence": "REFUTED as stated. The alphabet is reported in print in 1539 (Ambrogio), 1613 (Duret) and 1799 (Fry), all before 1870. At most, Christian is a later witness. A Flickr caption says an 'Alphabet des mages' image comes from his book, and the same caption says the alphabet is also in Pantheus's Voarchadumia. The image was not seen, and its identity with this alphabet is unverified.",
+      "sources": [
+        "Wikipedia, 'Alphabet of the Magi' (en.wikipedia.org, read through search snippets only)",
+        "Flickr, 'Alphabet des mages' (cenacledelarc, 2010; caption only)",
+        "Paul Christian, Histoire de la magie, Paris: Furne, Jouvet et Cie, 1870 (not viewed)"
+      ]
+    },
+    {
+      "claim": "Paul Christian credited his own constructions to ancient authorities.",
+      "standing": "documented",
+      "evidence": "The blog 'Egypt in the tarot' quotes Decker, Depaulis and Dummett, who judge Christian's 'Egyptian initiation' to be his invention from start to finish, with not one word matching Iamblichus' On the Mysteries. The blog adds that Christian's footnote cites a specific edition, a 1687 Oxford folio of Iamblichus. The book itself is confirmed as published (London: Duckworth, 1996; WorldCat), but its page was not seen. Since the Christian hypothesis is refuted, this claim no longer bears on the alphabet's origin. It is context only, for the 'alphabet des mages' label.",
+      "sources": [
+        "Ronald Decker, Thierry Depaulis and Michael Dummett, A Wicked Pack of Cards: The Origins of the Occult Tarot, London: Duckworth, 1996 (not seen; page needed)",
+        "'Egypt in the tarot: Paul Christian & Co., 2. Christian's \"Egyptian Initiation\" and its influence' (blog, 2017), quoting the above"
+      ]
+    },
+    {
+      "claim": "In its earliest printing the signs are labelled with the Hebrew letter names, Aleph to Thau, in Hebrew order.",
+      "standing": "documented",
+      "evidence": "Wikipedia says Ambrosius gives variant glyphs of the Hebrew alphabet, labelled Aleph, Beth, Gimel, Daleth and so on to Thau. This rests on Wikipedia; the 1539 print was not viewed. That the set is exactly the 22 non-final letters, with no finals or extra signs, was NOT independently confirmed: only Grokipedia, an unreliable source, states 22.",
+      "sources": [
+        "Wikipedia, 'Alphabet of the Magi' (en.wikipedia.org, read through search snippets only)",
+        "Teseo Ambrogio degli Albonesi, Introductio in Chaldaicam linguam, Syriacam, atque Armenicam, & decem alias linguas, Pavia 1539 (not viewed; reported by Wikipedia)"
+      ]
+    },
+    {
+      "claim": "The alphabet carries the Latin values A, B, G, D, E, U/V, Z, H, Th, I/J/Y, C/K, L, M, N, X, O, F/P, Ts, Q, R, S, T.",
+      "standing": "disputed",
+      "evidence": "These values are not reported for the 1539 printing, which labels the signs by Hebrew letter names. They are modern conventions. Per a search summary of dCode's table, dCode gives Samekh = X and Tav = T, and warns that no exact Hebrew–Latin correspondence exists. Omniglot's values were not seen. A secondary site that reprints Papus partly confirms that Paul Christian's arcana use similar values: XVII, 'the Star of the Magi', under F/P (80), and XXI, 'the Crown of the Magi', under T (400). That shows a shared 19th-century convention, not an origin. Use the values only as the site's transliteration convention, and label them so.",
+      "sources": [
+        "dCode, 'Alphabet of the Magi' (letter list only)",
+        "'The Tarot of Paul Christian (1870)', green-door.narod.ru (secondary; reprints Papus)"
+      ]
+    },
+    {
+      "claim": "Ambrogio reports that the letters were invented by Gamaliel and handed down in a book called Liber ignis, associated with the angel Raphiel.",
+      "standing": "legend",
+      "evidence": "This is Ambrogio's reported pedigree for the letters, per Wikipedia, which tags the sentence 'clarification needed'. Report it as 'Ambrogio says these letters were held to have been invented by Gamaliel...', never as fact. Fry's 1799 version is different: Raphael brought them from heaven to Adam. Both versions should be given and attributed.",
+      "sources": [
+        "Wikipedia, 'Alphabet of the Magi' (en.wikipedia.org, read through search snippets only)",
+        "Teseo Ambrogio degli Albonesi, Introductio in Chaldaicam linguam, Syriacam, atque Armenicam, & decem alias linguas, Pavia 1539 (not viewed; reported by Wikipedia)",
+        "Edmund Fry, Pantographia, London 1799, pp. 28–29 (as quoted by Wikipedia)"
+      ]
+    },
+    {
+      "claim": "Claude Duret reprinted it in 1613 as 'the characters of the angel Raphael', citing Ambrogio.",
+      "standing": "documented",
+      "evidence": "Two independent secondary reports: Wikipedia, and the Lyon library blog on Duret (bibulyon.hypotheses.org/7710). The page is disputed: Wikipedia gives p. 117, but its own Google Books link points to p. 125. Not checked against a scan.",
+      "sources": [
+        "Wikipedia, 'Alphabet of the Magi' (en.wikipedia.org, read through search snippets only)",
+        "'Enthousiasme pour la langue à la fin de la Renaissance : le Thresor de Claude Duret', Lyon library blog (bibulyon.hypotheses.org)",
+        "Claude Duret, Thrésor de l'histoire des langues de cest univers, Cologny 1613 (USTC 1700883; not viewed)"
+      ]
+    },
+    {
+      "claim": "S. L. MacGregor Mathers printed it under the name 'Alphabet of the Magi' on Plate XV of his Key of Solomon.",
+      "standing": "documented",
+      "evidence": "Wikipedia says so, and dCode and the Voynich wiki repeat it, probably from Wikipedia. The sacred-texts.com table of contents confirms that Plate XV is 'The Mystical Alphabets'. The plate itself was not seen. The preface is dated October 1888 and the title page 1889. Whether the name is older (e.g. Christian's French 'alphabet des mages', 1870) is not established.",
+      "sources": [
+        "Wikipedia, 'Alphabet of the Magi' (en.wikipedia.org, read through search snippets only)",
+        "S. L. MacGregor Mathers, The Key of Solomon the King, London 1889 (preface October 1888), Plate XV; table of contents at sacred-texts.com/grim/kos/"
+      ]
+    }
+  ],
+  "letters": [
+    {
+      "order": 1,
+      "name": "Aleph",
+      "value": "א",
+      "translit": "A",
+      "numeric": 1,
+      "form": "NOT DESCRIBED. No image of this alphabet was seen, in research or in fact-check, and no text describes its letters stroke by stroke. Do not reconstruct the forms from memory of modern charts or fonts. Do not borrow them from the Celestial, Malachim or Transitus fluvii, or from the Hebrew square letter: no source says how far they are related. The earliest printing is now identified: Teseo Ambrogio, Introductio, Pavia 1539, near fol. (or p.) 202 per Wikipedia. Trace from a scan of that print (Internet Archive bub_gb_yUkKq_QnrnwC; Library of Congress 09016522), compare Duret 1613 and Mathers 1888, Plate XV, and say where they differ. Caution: per the ADER auction description, some of the 1539 alphabets were added by hand in ink, so the forms may vary from copy to copy. Name the copy traced.",
+      "formConfidence": "low",
+      "note": "ORDER AND HEBREW VALUE: per Wikipedia, Ambrogio (1539) labels his variant glyphs with the Hebrew letter names in Hebrew order, Aleph to Thau. This is position 1, value א (Aleph). The print was not viewed, and the exact count of 22 is not independently confirmed. LATIN VALUE 'A': a modern-chart convention, not in the 1539 source. Use it only as the site's transliteration, and label it so. The research file's tie to Paul Christian's arcana is withdrawn as evidence of origin. NUMERIC 1: the standard Hebrew value, supplied for the transliterator; no source seen prints numbers with this alphabet."
+    },
+    {
+      "order": 2,
+      "name": "Beth",
+      "value": "ב",
+      "translit": "B",
+      "numeric": 2,
+      "form": "NOT DESCRIBED. No image of this alphabet was seen, in research or in fact-check, and no text describes its letters stroke by stroke. Do not reconstruct the forms from memory of modern charts or fonts. Do not borrow them from the Celestial, Malachim or Transitus fluvii, or from the Hebrew square letter: no source says how far they are related. The earliest printing is now identified: Teseo Ambrogio, Introductio, Pavia 1539, near fol. (or p.) 202 per Wikipedia. Trace from a scan of that print (Internet Archive bub_gb_yUkKq_QnrnwC; Library of Congress 09016522), compare Duret 1613 and Mathers 1888, Plate XV, and say where they differ. Caution: per the ADER auction description, some of the 1539 alphabets were added by hand in ink, so the forms may vary from copy to copy. Name the copy traced.",
+      "formConfidence": "low",
+      "note": "ORDER AND HEBREW VALUE: per Wikipedia, Ambrogio (1539) labels his variant glyphs with the Hebrew letter names in Hebrew order, Aleph to Thau. This is position 2, value ב (Beth). The print was not viewed, and the exact count of 22 is not independently confirmed. LATIN VALUE 'B': a modern-chart convention, not in the 1539 source. Use it only as the site's transliteration, and label it so. The research file's tie to Paul Christian's arcana is withdrawn as evidence of origin. NUMERIC 2: the standard Hebrew value, supplied for the transliterator; no source seen prints numbers with this alphabet."
+    },
+    {
+      "order": 3,
+      "name": "Gimel",
+      "value": "ג",
+      "translit": "G",
+      "numeric": 3,
+      "form": "NOT DESCRIBED. No image of this alphabet was seen, in research or in fact-check, and no text describes its letters stroke by stroke. Do not reconstruct the forms from memory of modern charts or fonts. Do not borrow them from the Celestial, Malachim or Transitus fluvii, or from the Hebrew square letter: no source says how far they are related. The earliest printing is now identified: Teseo Ambrogio, Introductio, Pavia 1539, near fol. (or p.) 202 per Wikipedia. Trace from a scan of that print (Internet Archive bub_gb_yUkKq_QnrnwC; Library of Congress 09016522), compare Duret 1613 and Mathers 1888, Plate XV, and say where they differ. Caution: per the ADER auction description, some of the 1539 alphabets were added by hand in ink, so the forms may vary from copy to copy. Name the copy traced.",
+      "formConfidence": "low",
+      "note": "ORDER AND HEBREW VALUE: per Wikipedia, Ambrogio (1539) labels his variant glyphs with the Hebrew letter names in Hebrew order, Aleph to Thau. This is position 3, value ג (Gimel). The print was not viewed, and the exact count of 22 is not independently confirmed. LATIN VALUE 'G': a modern-chart convention, not in the 1539 source. Use it only as the site's transliteration, and label it so. The research file's tie to Paul Christian's arcana is withdrawn as evidence of origin. NUMERIC 3: the standard Hebrew value, supplied for the transliterator; no source seen prints numbers with this alphabet."
+    },
+    {
+      "order": 4,
+      "name": "Daleth",
+      "value": "ד",
+      "translit": "D",
+      "numeric": 4,
+      "form": "NOT DESCRIBED. No image of this alphabet was seen, in research or in fact-check, and no text describes its letters stroke by stroke. Do not reconstruct the forms from memory of modern charts or fonts. Do not borrow them from the Celestial, Malachim or Transitus fluvii, or from the Hebrew square letter: no source says how far they are related. The earliest printing is now identified: Teseo Ambrogio, Introductio, Pavia 1539, near fol. (or p.) 202 per Wikipedia. Trace from a scan of that print (Internet Archive bub_gb_yUkKq_QnrnwC; Library of Congress 09016522), compare Duret 1613 and Mathers 1888, Plate XV, and say where they differ. Caution: per the ADER auction description, some of the 1539 alphabets were added by hand in ink, so the forms may vary from copy to copy. Name the copy traced.",
+      "formConfidence": "low",
+      "note": "ORDER AND HEBREW VALUE: per Wikipedia, Ambrogio (1539) labels his variant glyphs with the Hebrew letter names in Hebrew order, Aleph to Thau. This is position 4, value ד (Daleth). The print was not viewed, and the exact count of 22 is not independently confirmed. LATIN VALUE 'D': a modern-chart convention, not in the 1539 source. Use it only as the site's transliteration, and label it so. The research file's tie to Paul Christian's arcana is withdrawn as evidence of origin. NUMERIC 4: the standard Hebrew value, supplied for the transliterator; no source seen prints numbers with this alphabet."
+    },
+    {
+      "order": 5,
+      "name": "He",
+      "value": "ה",
+      "translit": "E",
+      "numeric": 5,
+      "form": "NOT DESCRIBED. No image of this alphabet was seen, in research or in fact-check, and no text describes its letters stroke by stroke. Do not reconstruct the forms from memory of modern charts or fonts. Do not borrow them from the Celestial, Malachim or Transitus fluvii, or from the Hebrew square letter: no source says how far they are related. The earliest printing is now identified: Teseo Ambrogio, Introductio, Pavia 1539, near fol. (or p.) 202 per Wikipedia. Trace from a scan of that print (Internet Archive bub_gb_yUkKq_QnrnwC; Library of Congress 09016522), compare Duret 1613 and Mathers 1888, Plate XV, and say where they differ. Caution: per the ADER auction description, some of the 1539 alphabets were added by hand in ink, so the forms may vary from copy to copy. Name the copy traced.",
+      "formConfidence": "low",
+      "note": "ORDER AND HEBREW VALUE: per Wikipedia, Ambrogio (1539) labels his variant glyphs with the Hebrew letter names in Hebrew order, Aleph to Thau. This is position 5, value ה (He). The print was not viewed, and the exact count of 22 is not independently confirmed. LATIN VALUE 'E': a modern-chart convention, not in the 1539 source. Use it only as the site's transliteration, and label it so. The research file's tie to Paul Christian's arcana is withdrawn as evidence of origin. NUMERIC 5: the standard Hebrew value, supplied for the transliterator; no source seen prints numbers with this alphabet."
+    },
+    {
+      "order": 6,
+      "name": "Vau",
+      "value": "ו",
+      "translit": "U / V",
+      "numeric": 6,
+      "form": "NOT DESCRIBED. No image of this alphabet was seen, in research or in fact-check, and no text describes its letters stroke by stroke. Do not reconstruct the forms from memory of modern charts or fonts. Do not borrow them from the Celestial, Malachim or Transitus fluvii, or from the Hebrew square letter: no source says how far they are related. The earliest printing is now identified: Teseo Ambrogio, Introductio, Pavia 1539, near fol. (or p.) 202 per Wikipedia. Trace from a scan of that print (Internet Archive bub_gb_yUkKq_QnrnwC; Library of Congress 09016522), compare Duret 1613 and Mathers 1888, Plate XV, and say where they differ. Caution: per the ADER auction description, some of the 1539 alphabets were added by hand in ink, so the forms may vary from copy to copy. Name the copy traced.",
+      "formConfidence": "low",
+      "note": "ORDER AND HEBREW VALUE: per Wikipedia, Ambrogio (1539) labels his variant glyphs with the Hebrew letter names in Hebrew order, Aleph to Thau. This is position 6, value ו (Vau). The print was not viewed, and the exact count of 22 is not independently confirmed. LATIN VALUE 'U / V': a modern-chart convention, not in the 1539 source. Use it only as the site's transliteration, and label it so. The research file's tie to Paul Christian's arcana is withdrawn as evidence of origin. NUMERIC 6: the standard Hebrew value, supplied for the transliterator; no source seen prints numbers with this alphabet."
+    },
+    {
+      "order": 7,
+      "name": "Zain",
+      "value": "ז",
+      "translit": "Z",
+      "numeric": 7,
+      "form": "NOT DESCRIBED. No image of this alphabet was seen, in research or in fact-check, and no text describes its letters stroke by stroke. Do not reconstruct the forms from memory of modern charts or fonts. Do not borrow them from the Celestial, Malachim or Transitus fluvii, or from the Hebrew square letter: no source says how far they are related. The earliest printing is now identified: Teseo Ambrogio, Introductio, Pavia 1539, near fol. (or p.) 202 per Wikipedia. Trace from a scan of that print (Internet Archive bub_gb_yUkKq_QnrnwC; Library of Congress 09016522), compare Duret 1613 and Mathers 1888, Plate XV, and say where they differ. Caution: per the ADER auction description, some of the 1539 alphabets were added by hand in ink, so the forms may vary from copy to copy. Name the copy traced.",
+      "formConfidence": "low",
+      "note": "ORDER AND HEBREW VALUE: per Wikipedia, Ambrogio (1539) labels his variant glyphs with the Hebrew letter names in Hebrew order, Aleph to Thau. This is position 7, value ז (Zain). The print was not viewed, and the exact count of 22 is not independently confirmed. LATIN VALUE 'Z': a modern-chart convention, not in the 1539 source. Use it only as the site's transliteration, and label it so. The research file's tie to Paul Christian's arcana is withdrawn as evidence of origin. NUMERIC 7: the standard Hebrew value, supplied for the transliterator; no source seen prints numbers with this alphabet."
+    },
+    {
+      "order": 8,
+      "name": "Heth",
+      "value": "ח",
+      "translit": "H",
+      "numeric": 8,
+      "form": "NOT DESCRIBED. No image of this alphabet was seen, in research or in fact-check, and no text describes its letters stroke by stroke. Do not reconstruct the forms from memory of modern charts or fonts. Do not borrow them from the Celestial, Malachim or Transitus fluvii, or from the Hebrew square letter: no source says how far they are related. The earliest printing is now identified: Teseo Ambrogio, Introductio, Pavia 1539, near fol. (or p.) 202 per Wikipedia. Trace from a scan of that print (Internet Archive bub_gb_yUkKq_QnrnwC; Library of Congress 09016522), compare Duret 1613 and Mathers 1888, Plate XV, and say where they differ. Caution: per the ADER auction description, some of the 1539 alphabets were added by hand in ink, so the forms may vary from copy to copy. Name the copy traced.",
+      "formConfidence": "low",
+      "note": "ORDER AND HEBREW VALUE: per Wikipedia, Ambrogio (1539) labels his variant glyphs with the Hebrew letter names in Hebrew order, Aleph to Thau. This is position 8, value ח (Heth). The print was not viewed, and the exact count of 22 is not independently confirmed. LATIN VALUE 'H': a modern-chart convention, not in the 1539 source. Use it only as the site's transliteration, and label it so. The research file's tie to Paul Christian's arcana is withdrawn as evidence of origin. NUMERIC 8: the standard Hebrew value, supplied for the transliterator; no source seen prints numbers with this alphabet."
+    },
+    {
+      "order": 9,
+      "name": "Teth",
+      "value": "ט",
+      "translit": "Th",
+      "numeric": 9,
+      "form": "NOT DESCRIBED. No image of this alphabet was seen, in research or in fact-check, and no text describes its letters stroke by stroke. Do not reconstruct the forms from memory of modern charts or fonts. Do not borrow them from the Celestial, Malachim or Transitus fluvii, or from the Hebrew square letter: no source says how far they are related. The earliest printing is now identified: Teseo Ambrogio, Introductio, Pavia 1539, near fol. (or p.) 202 per Wikipedia. Trace from a scan of that print (Internet Archive bub_gb_yUkKq_QnrnwC; Library of Congress 09016522), compare Duret 1613 and Mathers 1888, Plate XV, and say where they differ. Caution: per the ADER auction description, some of the 1539 alphabets were added by hand in ink, so the forms may vary from copy to copy. Name the copy traced.",
+      "formConfidence": "low",
+      "note": "ORDER AND HEBREW VALUE: per Wikipedia, Ambrogio (1539) labels his variant glyphs with the Hebrew letter names in Hebrew order, Aleph to Thau. This is position 9, value ט (Teth). The print was not viewed, and the exact count of 22 is not independently confirmed. LATIN VALUE 'Th': a modern-chart convention, not in the 1539 source. Use it only as the site's transliteration, and label it so. The research file's tie to Paul Christian's arcana is withdrawn as evidence of origin. NUMERIC 9: the standard Hebrew value, supplied for the transliterator; no source seen prints numbers with this alphabet."
+    },
+    {
+      "order": 10,
+      "name": "Yod",
+      "value": "י",
+      "translit": "I / J / Y",
+      "numeric": 10,
+      "form": "NOT DESCRIBED. No image of this alphabet was seen, in research or in fact-check, and no text describes its letters stroke by stroke. Do not reconstruct the forms from memory of modern charts or fonts. Do not borrow them from the Celestial, Malachim or Transitus fluvii, or from the Hebrew square letter: no source says how far they are related. The earliest printing is now identified: Teseo Ambrogio, Introductio, Pavia 1539, near fol. (or p.) 202 per Wikipedia. Trace from a scan of that print (Internet Archive bub_gb_yUkKq_QnrnwC; Library of Congress 09016522), compare Duret 1613 and Mathers 1888, Plate XV, and say where they differ. Caution: per the ADER auction description, some of the 1539 alphabets were added by hand in ink, so the forms may vary from copy to copy. Name the copy traced.",
+      "formConfidence": "low",
+      "note": "ORDER AND HEBREW VALUE: per Wikipedia, Ambrogio (1539) labels his variant glyphs with the Hebrew letter names in Hebrew order, Aleph to Thau. This is position 10, value י (Yod). The print was not viewed, and the exact count of 22 is not independently confirmed. LATIN VALUE 'I / J / Y': a modern-chart convention, not in the 1539 source. Use it only as the site's transliteration, and label it so. The research file's tie to Paul Christian's arcana is withdrawn as evidence of origin. NUMERIC 10: the standard Hebrew value, supplied for the transliterator; no source seen prints numbers with this alphabet."
+    },
+    {
+      "order": 11,
+      "name": "Kaph",
+      "value": "כ",
+      "translit": "C / K",
+      "numeric": 20,
+      "form": "NOT DESCRIBED. No image of this alphabet was seen, in research or in fact-check, and no text describes its letters stroke by stroke. Do not reconstruct the forms from memory of modern charts or fonts. Do not borrow them from the Celestial, Malachim or Transitus fluvii, or from the Hebrew square letter: no source says how far they are related. The earliest printing is now identified: Teseo Ambrogio, Introductio, Pavia 1539, near fol. (or p.) 202 per Wikipedia. Trace from a scan of that print (Internet Archive bub_gb_yUkKq_QnrnwC; Library of Congress 09016522), compare Duret 1613 and Mathers 1888, Plate XV, and say where they differ. Caution: per the ADER auction description, some of the 1539 alphabets were added by hand in ink, so the forms may vary from copy to copy. Name the copy traced.",
+      "formConfidence": "low",
+      "note": "ORDER AND HEBREW VALUE: per Wikipedia, Ambrogio (1539) labels his variant glyphs with the Hebrew letter names in Hebrew order, Aleph to Thau. This is position 11, value כ (Kaph). The print was not viewed, and the exact count of 22 is not independently confirmed. LATIN VALUE 'C / K': a modern-chart convention, not in the 1539 source. Use it only as the site's transliteration, and label it so. The research file's tie to Paul Christian's arcana is withdrawn as evidence of origin. NUMERIC 20: the standard Hebrew value, supplied for the transliterator; no source seen prints numbers with this alphabet."
+    },
+    {
+      "order": 12,
+      "name": "Lamed",
+      "value": "ל",
+      "translit": "L",
+      "numeric": 30,
+      "form": "NOT DESCRIBED. No image of this alphabet was seen, in research or in fact-check, and no text describes its letters stroke by stroke. Do not reconstruct the forms from memory of modern charts or fonts. Do not borrow them from the Celestial, Malachim or Transitus fluvii, or from the Hebrew square letter: no source says how far they are related. The earliest printing is now identified: Teseo Ambrogio, Introductio, Pavia 1539, near fol. (or p.) 202 per Wikipedia. Trace from a scan of that print (Internet Archive bub_gb_yUkKq_QnrnwC; Library of Congress 09016522), compare Duret 1613 and Mathers 1888, Plate XV, and say where they differ. Caution: per the ADER auction description, some of the 1539 alphabets were added by hand in ink, so the forms may vary from copy to copy. Name the copy traced.",
+      "formConfidence": "low",
+      "note": "ORDER AND HEBREW VALUE: per Wikipedia, Ambrogio (1539) labels his variant glyphs with the Hebrew letter names in Hebrew order, Aleph to Thau. This is position 12, value ל (Lamed). The print was not viewed, and the exact count of 22 is not independently confirmed. LATIN VALUE 'L': a modern-chart convention, not in the 1539 source. Use it only as the site's transliteration, and label it so. The research file's tie to Paul Christian's arcana is withdrawn as evidence of origin. NUMERIC 30: the standard Hebrew value, supplied for the transliterator; no source seen prints numbers with this alphabet."
+    },
+    {
+      "order": 13,
+      "name": "Mem",
+      "value": "מ",
+      "translit": "M",
+      "numeric": 40,
+      "form": "NOT DESCRIBED. No image of this alphabet was seen, in research or in fact-check, and no text describes its letters stroke by stroke. Do not reconstruct the forms from memory of modern charts or fonts. Do not borrow them from the Celestial, Malachim or Transitus fluvii, or from the Hebrew square letter: no source says how far they are related. The earliest printing is now identified: Teseo Ambrogio, Introductio, Pavia 1539, near fol. (or p.) 202 per Wikipedia. Trace from a scan of that print (Internet Archive bub_gb_yUkKq_QnrnwC; Library of Congress 09016522), compare Duret 1613 and Mathers 1888, Plate XV, and say where they differ. Caution: per the ADER auction description, some of the 1539 alphabets were added by hand in ink, so the forms may vary from copy to copy. Name the copy traced.",
+      "formConfidence": "low",
+      "note": "ORDER AND HEBREW VALUE: per Wikipedia, Ambrogio (1539) labels his variant glyphs with the Hebrew letter names in Hebrew order, Aleph to Thau. This is position 13, value מ (Mem). The print was not viewed, and the exact count of 22 is not independently confirmed. LATIN VALUE 'M': a modern-chart convention, not in the 1539 source. Use it only as the site's transliteration, and label it so. The research file's tie to Paul Christian's arcana is withdrawn as evidence of origin. NUMERIC 40: the standard Hebrew value, supplied for the transliterator; no source seen prints numbers with this alphabet."
+    },
+    {
+      "order": 14,
+      "name": "Nun",
+      "value": "נ",
+      "translit": "N",
+      "numeric": 50,
+      "form": "NOT DESCRIBED. No image of this alphabet was seen, in research or in fact-check, and no text describes its letters stroke by stroke. Do not reconstruct the forms from memory of modern charts or fonts. Do not borrow them from the Celestial, Malachim or Transitus fluvii, or from the Hebrew square letter: no source says how far they are related. The earliest printing is now identified: Teseo Ambrogio, Introductio, Pavia 1539, near fol. (or p.) 202 per Wikipedia. Trace from a scan of that print (Internet Archive bub_gb_yUkKq_QnrnwC; Library of Congress 09016522), compare Duret 1613 and Mathers 1888, Plate XV, and say where they differ. Caution: per the ADER auction description, some of the 1539 alphabets were added by hand in ink, so the forms may vary from copy to copy. Name the copy traced.",
+      "formConfidence": "low",
+      "note": "ORDER AND HEBREW VALUE: per Wikipedia, Ambrogio (1539) labels his variant glyphs with the Hebrew letter names in Hebrew order, Aleph to Thau. This is position 14, value נ (Nun). The print was not viewed, and the exact count of 22 is not independently confirmed. LATIN VALUE 'N': a modern-chart convention, not in the 1539 source. Use it only as the site's transliteration, and label it so. The research file's tie to Paul Christian's arcana is withdrawn as evidence of origin. NUMERIC 50: the standard Hebrew value, supplied for the transliterator; no source seen prints numbers with this alphabet."
+    },
+    {
+      "order": 15,
+      "name": "Samekh",
+      "value": "ס",
+      "translit": "X",
+      "numeric": 60,
+      "form": "NOT DESCRIBED. No image of this alphabet was seen, in research or in fact-check, and no text describes its letters stroke by stroke. Do not reconstruct the forms from memory of modern charts or fonts. Do not borrow them from the Celestial, Malachim or Transitus fluvii, or from the Hebrew square letter: no source says how far they are related. The earliest printing is now identified: Teseo Ambrogio, Introductio, Pavia 1539, near fol. (or p.) 202 per Wikipedia. Trace from a scan of that print (Internet Archive bub_gb_yUkKq_QnrnwC; Library of Congress 09016522), compare Duret 1613 and Mathers 1888, Plate XV, and say where they differ. Caution: per the ADER auction description, some of the 1539 alphabets were added by hand in ink, so the forms may vary from copy to copy. Name the copy traced.",
+      "formConfidence": "low",
+      "note": "ORDER AND HEBREW VALUE: per Wikipedia, Ambrogio (1539) labels his variant glyphs with the Hebrew letter names in Hebrew order, Aleph to Thau. This is position 15, value ס (Samekh). The print was not viewed, and the exact count of 22 is not independently confirmed. LATIN VALUE 'X': a modern-chart convention, not in the 1539 source. Use it only as the site's transliteration, and label it so. The research file's tie to Paul Christian's arcana is withdrawn as evidence of origin. NUMERIC 60: the standard Hebrew value, supplied for the transliterator; no source seen prints numbers with this alphabet. dCode's table, per a search summary, also gives X for Samekh. The research file's inference that X points to a French origin is withdrawn: as reported, the 1539 source labels the signs by Hebrew letter names (its spelling for this one was not seen), not by Latin values."
+    },
+    {
+      "order": 16,
+      "name": "Ayin",
+      "value": "ע",
+      "translit": "O",
+      "numeric": 70,
+      "form": "NOT DESCRIBED. No image of this alphabet was seen, in research or in fact-check, and no text describes its letters stroke by stroke. Do not reconstruct the forms from memory of modern charts or fonts. Do not borrow them from the Celestial, Malachim or Transitus fluvii, or from the Hebrew square letter: no source says how far they are related. The earliest printing is now identified: Teseo Ambrogio, Introductio, Pavia 1539, near fol. (or p.) 202 per Wikipedia. Trace from a scan of that print (Internet Archive bub_gb_yUkKq_QnrnwC; Library of Congress 09016522), compare Duret 1613 and Mathers 1888, Plate XV, and say where they differ. Caution: per the ADER auction description, some of the 1539 alphabets were added by hand in ink, so the forms may vary from copy to copy. Name the copy traced.",
+      "formConfidence": "low",
+      "note": "ORDER AND HEBREW VALUE: per Wikipedia, Ambrogio (1539) labels his variant glyphs with the Hebrew letter names in Hebrew order, Aleph to Thau. This is position 16, value ע (Ayin). The print was not viewed, and the exact count of 22 is not independently confirmed. LATIN VALUE 'O': a modern-chart convention, not in the 1539 source. Use it only as the site's transliteration, and label it so. The research file's tie to Paul Christian's arcana is withdrawn as evidence of origin. NUMERIC 70: the standard Hebrew value, supplied for the transliterator; no source seen prints numbers with this alphabet. The research file's inference that O points to a French origin is withdrawn, for the same reason as at Samekh."
+    },
+    {
+      "order": 17,
+      "name": "Pe",
+      "value": "פ",
+      "translit": "F / P",
+      "numeric": 80,
+      "form": "NOT DESCRIBED. No image of this alphabet was seen, in research or in fact-check, and no text describes its letters stroke by stroke. Do not reconstruct the forms from memory of modern charts or fonts. Do not borrow them from the Celestial, Malachim or Transitus fluvii, or from the Hebrew square letter: no source says how far they are related. The earliest printing is now identified: Teseo Ambrogio, Introductio, Pavia 1539, near fol. (or p.) 202 per Wikipedia. Trace from a scan of that print (Internet Archive bub_gb_yUkKq_QnrnwC; Library of Congress 09016522), compare Duret 1613 and Mathers 1888, Plate XV, and say where they differ. Caution: per the ADER auction description, some of the 1539 alphabets were added by hand in ink, so the forms may vary from copy to copy. Name the copy traced.",
+      "formConfidence": "low",
+      "note": "ORDER AND HEBREW VALUE: per Wikipedia, Ambrogio (1539) labels his variant glyphs with the Hebrew letter names in Hebrew order, Aleph to Thau. This is position 17, value פ (Pe). The print was not viewed, and the exact count of 22 is not independently confirmed. LATIN VALUE 'F / P': a modern-chart convention, not in the 1539 source. Use it only as the site's transliteration, and label it so. The research file's tie to Paul Christian's arcana is withdrawn as evidence of origin. NUMERIC 80: the standard Hebrew value, supplied for the transliterator; no source seen prints numbers with this alphabet."
+    },
+    {
+      "order": 18,
+      "name": "Tsade",
+      "value": "צ",
+      "translit": "Ts",
+      "numeric": 90,
+      "form": "NOT DESCRIBED. No image of this alphabet was seen, in research or in fact-check, and no text describes its letters stroke by stroke. Do not reconstruct the forms from memory of modern charts or fonts. Do not borrow them from the Celestial, Malachim or Transitus fluvii, or from the Hebrew square letter: no source says how far they are related. The earliest printing is now identified: Teseo Ambrogio, Introductio, Pavia 1539, near fol. (or p.) 202 per Wikipedia. Trace from a scan of that print (Internet Archive bub_gb_yUkKq_QnrnwC; Library of Congress 09016522), compare Duret 1613 and Mathers 1888, Plate XV, and say where they differ. Caution: per the ADER auction description, some of the 1539 alphabets were added by hand in ink, so the forms may vary from copy to copy. Name the copy traced.",
+      "formConfidence": "low",
+      "note": "ORDER AND HEBREW VALUE: per Wikipedia, Ambrogio (1539) labels his variant glyphs with the Hebrew letter names in Hebrew order, Aleph to Thau. This is position 18, value צ (Tsade). The print was not viewed, and the exact count of 22 is not independently confirmed. LATIN VALUE 'Ts': a modern-chart convention, not in the 1539 source. Use it only as the site's transliteration, and label it so. The research file's tie to Paul Christian's arcana is withdrawn as evidence of origin. NUMERIC 90: the standard Hebrew value, supplied for the transliterator; no source seen prints numbers with this alphabet."
+    },
+    {
+      "order": 19,
+      "name": "Qoph",
+      "value": "ק",
+      "translit": "Q",
+      "numeric": 100,
+      "form": "NOT DESCRIBED. No image of this alphabet was seen, in research or in fact-check, and no text describes its letters stroke by stroke. Do not reconstruct the forms from memory of modern charts or fonts. Do not borrow them from the Celestial, Malachim or Transitus fluvii, or from the Hebrew square letter: no source says how far they are related. The earliest printing is now identified: Teseo Ambrogio, Introductio, Pavia 1539, near fol. (or p.) 202 per Wikipedia. Trace from a scan of that print (Internet Archive bub_gb_yUkKq_QnrnwC; Library of Congress 09016522), compare Duret 1613 and Mathers 1888, Plate XV, and say where they differ. Caution: per the ADER auction description, some of the 1539 alphabets were added by hand in ink, so the forms may vary from copy to copy. Name the copy traced.",
+      "formConfidence": "low",
+      "note": "ORDER AND HEBREW VALUE: per Wikipedia, Ambrogio (1539) labels his variant glyphs with the Hebrew letter names in Hebrew order, Aleph to Thau. This is position 19, value ק (Qoph). The print was not viewed, and the exact count of 22 is not independently confirmed. LATIN VALUE 'Q': a modern-chart convention, not in the 1539 source. Use it only as the site's transliteration, and label it so. The research file's tie to Paul Christian's arcana is withdrawn as evidence of origin. NUMERIC 100: the standard Hebrew value, supplied for the transliterator; no source seen prints numbers with this alphabet."
+    },
+    {
+      "order": 20,
+      "name": "Resh",
+      "value": "ר",
+      "translit": "R",
+      "numeric": 200,
+      "form": "NOT DESCRIBED. No image of this alphabet was seen, in research or in fact-check, and no text describes its letters stroke by stroke. Do not reconstruct the forms from memory of modern charts or fonts. Do not borrow them from the Celestial, Malachim or Transitus fluvii, or from the Hebrew square letter: no source says how far they are related. The earliest printing is now identified: Teseo Ambrogio, Introductio, Pavia 1539, near fol. (or p.) 202 per Wikipedia. Trace from a scan of that print (Internet Archive bub_gb_yUkKq_QnrnwC; Library of Congress 09016522), compare Duret 1613 and Mathers 1888, Plate XV, and say where they differ. Caution: per the ADER auction description, some of the 1539 alphabets were added by hand in ink, so the forms may vary from copy to copy. Name the copy traced.",
+      "formConfidence": "low",
+      "note": "ORDER AND HEBREW VALUE: per Wikipedia, Ambrogio (1539) labels his variant glyphs with the Hebrew letter names in Hebrew order, Aleph to Thau. This is position 20, value ר (Resh). The print was not viewed, and the exact count of 22 is not independently confirmed. LATIN VALUE 'R': a modern-chart convention, not in the 1539 source. Use it only as the site's transliteration, and label it so. The research file's tie to Paul Christian's arcana is withdrawn as evidence of origin. NUMERIC 200: the standard Hebrew value, supplied for the transliterator; no source seen prints numbers with this alphabet."
+    },
+    {
+      "order": 21,
+      "name": "Shin",
+      "value": "ש",
+      "translit": "S",
+      "numeric": 300,
+      "form": "NOT DESCRIBED. No image of this alphabet was seen, in research or in fact-check, and no text describes its letters stroke by stroke. Do not reconstruct the forms from memory of modern charts or fonts. Do not borrow them from the Celestial, Malachim or Transitus fluvii, or from the Hebrew square letter: no source says how far they are related. The earliest printing is now identified: Teseo Ambrogio, Introductio, Pavia 1539, near fol. (or p.) 202 per Wikipedia. Trace from a scan of that print (Internet Archive bub_gb_yUkKq_QnrnwC; Library of Congress 09016522), compare Duret 1613 and Mathers 1888, Plate XV, and say where they differ. Caution: per the ADER auction description, some of the 1539 alphabets were added by hand in ink, so the forms may vary from copy to copy. Name the copy traced.",
+      "formConfidence": "low",
+      "note": "ORDER AND HEBREW VALUE: per Wikipedia, Ambrogio (1539) labels his variant glyphs with the Hebrew letter names in Hebrew order, Aleph to Thau. This is position 21, value ש (Shin). The print was not viewed, and the exact count of 22 is not independently confirmed. LATIN VALUE 'S': a modern-chart convention, not in the 1539 source. Use it only as the site's transliteration, and label it so. The research file's tie to Paul Christian's arcana is withdrawn as evidence of origin. NUMERIC 300: the standard Hebrew value, supplied for the transliterator; no source seen prints numbers with this alphabet. The research file's aside on Christian's arcanum 0 was removed: it is irrelevant to the glyph and was unverified."
+    },
+    {
+      "order": 22,
+      "name": "Tav",
+      "value": "ת",
+      "translit": "T",
+      "numeric": 400,
+      "form": "NOT DESCRIBED. No image of this alphabet was seen, in research or in fact-check, and no text describes its letters stroke by stroke. Do not reconstruct the forms from memory of modern charts or fonts. Do not borrow them from the Celestial, Malachim or Transitus fluvii, or from the Hebrew square letter: no source says how far they are related. The earliest printing is now identified: Teseo Ambrogio, Introductio, Pavia 1539, near fol. (or p.) 202 per Wikipedia. Trace from a scan of that print (Internet Archive bub_gb_yUkKq_QnrnwC; Library of Congress 09016522), compare Duret 1613 and Mathers 1888, Plate XV, and say where they differ. Caution: per the ADER auction description, some of the 1539 alphabets were added by hand in ink, so the forms may vary from copy to copy. Name the copy traced.",
+      "formConfidence": "low",
+      "note": "ORDER AND HEBREW VALUE: per Wikipedia, Ambrogio (1539) labels his variant glyphs with the Hebrew letter names in Hebrew order, Aleph to Thau. This is position 22, value ת (Thau). The print was not viewed, and the exact count of 22 is not independently confirmed. LATIN VALUE 'T': a modern-chart convention, not in the 1539 source. Use it only as the site's transliteration, and label it so. The research file's tie to Paul Christian's arcana is withdrawn as evidence of origin. NUMERIC 400: the standard Hebrew value, supplied for the transliterator; no source seen prints numbers with this alphabet. dCode's table, per a search summary, gives T for Tav. The Christian arcanum note (Shin as arcanum 0) was removed as irrelevant to the glyph."
+    }
+  ],
+  "lettersSource": "SCAFFOLD ONLY. No table was seen. The 22 rows follow the Hebrew alphabet: per Wikipedia, the earliest printing (Teseo Ambrogio, Introductio in Chaldaicam linguam, Pavia 1539, 'pp. 202f.', probably fols. 202ff.) labels the signs with the Hebrew letter names, Aleph to Thau. The count of 22 is not independently confirmed. The Latin transliteration values are modern-chart conventions, not from 1539. FORMS: none described; all 22 are 'low'. To draw the letters, trace them from the 1539 print (Internet Archive bub_gb_yUkKq_QnrnwC, or the Library of Congress copy) and name the copy, because some alphabets in that book were inked in by hand. Then compare Duret 1613 (Google Books JgNFAAAAcAAJ; p. 117 or p. 125 disputed) and Mathers 1888, Plate XV. Do not draw from Omniglot, dCode, modern fonts, or by analogy with Agrippa's Malachim or Celestial.",
+  "uses": [
+    {
+      "use": "A specimen in Renaissance and early-modern alphabet compendia",
+      "evidence": "Documented: Ambrogio prints it among about forty alphabets (1539), Duret reprints it (1613), and Fry reproduces it (1799). Per Wikipedia and the Lyon library blog; the prints were not viewed."
+    },
+    {
+      "use": "Engraving angel names on talismans (the attributed Paracelsian use)",
+      "evidence": "Legend. Asserted by Omniglot without a cited source. Wikipedia's lead speaks of talisman inscriptions in 17th-century occultism, and no source for that was checked. The Archidoxis magica prescribes seals with names and characters, but no passage using this alphabet was found."
+    },
+    {
+      "use": "Reference plate for ceremonial magic",
+      "evidence": "Mathers includes it on Plate XV, 'The Mystical Alphabets', of his Key of Solomon (1888/1889). Per Wikipedia and the sacred-texts.com table of contents. Whether Mathers' text prescribes it for any pentacle was not checked."
+    },
+    {
+      "use": "Modern practice and circulation",
+      "evidence": "Modern web charts and free fonts circulate it as a 'magical alphabet' for writing names (Omniglot links free fonts, per search snippets). This shows modern circulation only; it is not evidence of historical use."
+    }
+  ],
+  "quotations": [],
+  "links": [
+    {
+      "to": "hebrew",
+      "relation": "In its earliest printing (Ambrogio 1539, per Wikipedia) the signs are variant glyphs labelled with the Hebrew letter names in Hebrew order, Aleph to Thau."
+    },
+    {
+      "to": "latin",
+      "relation": "Modern charts add Latin values (A, B, G, D, E, U/V, Z, H, Th, I/J/Y, C/K, L, M, N, X, O, F/P, Ts, Q, R, S, T). These are later conventions, not in the 1539 print."
+    },
+    {
+      "to": "malachim",
+      "relation": "Often charted beside it. Malachim is Agrippa's (1651 English III.30, p. 439, verified); the Alphabet of the Magi is not. Any graphic relation is unverified."
+    },
+    {
+      "to": "celestial",
+      "relation": "Often shown in the same 'magical alphabets' charts as the Celestial, which Agrippa prints (1651 III.30, p. 439, verified). The Alphabet of the Magi is not Agrippa's; it comes by a separate route (Ambrogio 1539, Duret 1613)."
+    },
+    {
+      "to": "transitus-fluvii",
+      "relation": "Listed in the same modern charts. Both have Renaissance printings, by separate routes. Transitus fluvii: Wikipedia gives de Balmes, Peculium Abrae, Venice 1523, sig. B6v, and Agrippa III.30. The Alphabet of the Magi: Ambrogio 1539 and Duret 1613."
+    },
+    {
+      "to": "theban",
+      "relation": "Both alphabets come with attributions, reported as such. Theban: Agrippa gives the letters 'which Peter Apponus notes, as delivered by Honorius of Thebes' (1651 III.29, p. 438, verified), and Wikipedia says Trithemius' Polygraphia (1518) attributes it to Honorius of Thebes. Alphabet of the Magi: Ambrogio reports a Gamaliel and Liber ignis pedigree, and modern charts ascribe it to Paracelsus."
+    }
+  ],
+  "cautions": [
+    "This fact-check ran WebSearch only: no page fetching, and no images. The search budget ran out before every point could be closed (see unresolved). The 1539, 1613 and 1799 prints were NOT viewed; their contents and locators rest on Wikipedia, corroborated where stated.",
+    "Never write 'Paracelsus invented / devised the Alphabet of the Magi'. Write 'modern reference works attribute it to Paracelsus; it is printed in 1539 by Teseo Ambrogio, who gives it a different pedigree, and no passage in Paracelsus' writings has been identified'.",
+    "Do not name Paul Christian (1870) as the first printing. That candidate is refuted by printings in 1539, 1613 and 1799.",
+    "Report Ambrogio's pedigree as his report: the letters were held to have been invented by Gamaliel and handed down in a Liber ignis associated with the angel Raphiel. Report Fry's Raphael-to-Adam story as Fry's report of Ambrogio. Neither is fact, and the two versions differ.",
+    "Locators are not settled: Ambrogio 'pp. 202f.' (Wikipedia) against a foliated book (fols. 193–213 for the alphabets); Duret p. 117 against p. 125. Print neither until checked on a scan.",
+    "Do not present the Archidoxis magica as Paracelsus' own. Do not call it 'spurious by common consent' without a source either: the reports of Schneider (1982) disagree on whether parts are genuine.",
+    "Do not place it among Agrippa's alphabets. De occulta philosophia III.29–30 prints the Honorius letters, the Celestial, Malachim and 'passing through the River' (verified in the 1651 English, pp. 437–441), and the word 'Magi' does not occur in that text.",
+    "LETTER FORMS ARE NOT DESCRIBED. Drawing the alphabet from this file would mean inventing it. Trace from the 1539 print, and name the copy, because some of its alphabets were inked in by hand.",
+    "The Latin values are modern conventions. The transliterator may use them only if they are labelled as the site's convention, not as the alphabet's own.",
+    "No quotation is given. Fry's sentence is known only through Wikipedia's transcription and is given as a paraphrase. Omniglot's wording is seen, but Omniglot may not be used for history.",
+    "The ring-engraving story and Christian-style name-divination have no source and were removed."
+  ],
+  "sources": [
+    {
+      "citation": "Teseo Ambrogio degli Albonesi, Introductio in Chaldaicam linguam, Syriacam, atque Armenicam, & decem alias linguas..., Pavia: G. M. Simonetta, 1539 (Internet Archive scan; not viewed in this pass)",
+      "url": "https://archive.org/details/bub_gb_yUkKq_QnrnwC"
+    },
+    {
+      "citation": "The same, Library of Congress record and digitised copy (heading: Ambrogio, Teseo, 1469–1540)",
+      "url": "https://www.loc.gov/item/09016522/"
+    },
+    {
+      "citation": "ADER (Paris), auction lot 1: Albonesi, Introductio, 1539. Collation 215 ff.; two issues; some alphabets added by hand in ink",
+      "url": "https://ader-paris.fr/en/l/11721702"
+    },
+    {
+      "citation": "Wikipedia, 'Alphabet of the Magi' (Ambrogio 1539 pp. 202f.; Duret 1613 p. 117; Fry 1799 pp. 28–29; Mathers Plate XV; Archidoxis claim tagged 'page needed'); read through search snippets",
+      "url": "https://en.wikipedia.org/wiki/Alphabet_of_the_Magi"
+    },
+    {
+      "citation": "Wikipedia, 'Teseo Ambrogio degli Albonesi' (appendix of alphabets, fols. 193–213)",
+      "url": "https://en.wikipedia.org/wiki/Teseo_Ambrogio_degli_Albonesi"
+    },
+    {
+      "citation": "Claude Duret, Thrésor de l'histoire des langues de cest univers, Cologny, 1613 (USTC 1700883)",
+      "url": "https://www.ustc.ac.uk/editions/1700883"
+    },
+    {
+      "citation": "Claude Duret, Thrésor..., Google Books copy",
+      "url": "https://books.google.com/books/about/Thresor_de_l_histoire_des_langues_de_ces.html?id=JgNFAAAAcAAJ"
+    },
+    {
+      "citation": "Lyon library blog (bibulyon.hypotheses.org; the search snippet ties it to the Bibliothèque Diderot de Lyon's copies), 'Enthousiasme pour la langue à la fin de la Renaissance : le Thresor de Claude Duret' (Duret's alphabet of the Angel Raphael, from Theseus Ambrosius)",
+      "url": "https://bibulyon.hypotheses.org/7710"
+    },
+    {
+      "citation": "Edmund Fry, Pantographia, London, 1799 (Google Books copy; pp. 28–29 per Wikipedia, not viewed)",
+      "url": "https://books.google.com/books/about/Pantographia.html?id=UQcJAAAAQAAJ"
+    },
+    {
+      "citation": "The Public Domain Review, 'Pantographia: A Specimen Book of All the Alphabets Known on Earth (1799)'",
+      "url": "https://publicdomainreview.org/collection/pantographia"
+    },
+    {
+      "citation": "S. L. MacGregor Mathers (ed.), The Key of Solomon the King (Clavicula Salomonis), London 1889 (preface October 1888); table of contents incl. 'Plate XV: The Mystical Alphabets', sacred-texts.com",
+      "url": "https://sacred-texts.com/grim/kos/"
+    },
+    {
+      "citation": "Joseph H. Peterson (ed.), The Key of Solomon, Esoteric Archives digital edition",
+      "url": "https://www.esotericarchives.com/solomon/ksol.htm"
+    },
+    {
+      "citation": "Paracelsus (attrib.), Archidoxes of Magic, from R. Turner's 1656 English, ed. Joseph H. Peterson, Esoteric Archives (first printed 1591 in Huser's edition, per Peterson)",
+      "url": "https://esotericarchives.com/solomon/archidox.htm"
+    },
+    {
+      "citation": "Wikipedia, 'Archidoxis magica' (pseudo-Paracelsian; Schneider 1982)",
+      "url": "https://en.wikipedia.org/wiki/Archidoxis_magica"
+    },
+    {
+      "citation": "Paul Christian [J.-B. Pitois], Histoire de la magie, du monde surnaturel et de la fatalité à travers les temps et les peuples, Paris: Furne, Jouvet et Cie, [1870] (Gallica; not viewed)",
+      "url": "https://gallica.bnf.fr/ark:/12148/bpt6k2029696.texteImage"
+    },
+    {
+      "citation": "The same, Internet Archive scan (not viewed)",
+      "url": "https://archive.org/details/PaulChristianJeanBaptistePitoisHistoireDeLaMagie"
+    },
+    {
+      "citation": "Flickr, 'Alphabet des mages' (cenacledelarc, 2010): caption says the image is from Christian's Histoire de la magie, and that the alphabet is also in Pantheus's Voarchadumia. Weak source; image not seen",
+      "url": "https://www.flickr.com/photos/13098604@N07/4588164541"
+    },
+    {
+      "citation": "Paul Christian, The History and Practice of Magic, tr. James Kirkup and Julian Shaw, ed. Ross Nichols, London: Forge Press, 1952 (Folger catalogue record); New York: Citadel, 1963",
+      "url": "https://catalog.folger.edu/record/38204"
+    },
+    {
+      "citation": "Ronald Decker, Thierry Depaulis and Michael Dummett, A Wicked Pack of Cards: The Origins of the Occult Tarot, London: Duckworth, 1996 (WorldCat; not consulted)",
+      "url": "https://search.worldcat.org/oclc/34919726"
+    },
+    {
+      "citation": "'Egypt in the tarot: Paul Christian & Co., 2. Christian's \"Egyptian Initiation\" and its influence' (blog, 2017; quotes Decker, Depaulis and Dummett)",
+      "url": "http://egyptinthetarot.blogspot.com/2017/09/paul-christians-egyptian-initiation-and.html"
+    },
+    {
+      "citation": "Kirsten Macfarlane, 'Written in the Stars? Alphabets and Angels in Early Modern Europe', Journal of the History of Ideas 86.3 (2025), 473–506 (on Brillenbuchstaben and angelic alphabets; whether it treats this alphabet is unverified; to consult)",
+      "url": "https://muse.jhu.edu/article/966903"
+    },
+    {
+      "citation": "Heinrich Cornelius Agrippa, De occulta philosophia libri tres, [Cologne] 1533 (Library of Congress copy; not viewed)",
+      "url": "https://www.loc.gov/item/20007812"
+    },
+    {
+      "citation": "Agrippa, Three Books of Occult Philosophy, tr. J.F., London: R.W. for Gregory Moule, 1651, III.29–30, pp. 437–441 (EEBO-TCP A26565; verified from the TCP transcription)",
+      "url": "https://quod.lib.umich.edu/e/eebo/A26565.0001.001?view=toc"
+    },
+    {
+      "citation": "Omniglot, 'Alphabet of the Magi' (letter list only, per house rule)",
+      "url": "https://omniglot.com/conscripts/magi.htm"
+    },
+    {
+      "citation": "dCode, 'Alphabet of the Magi' (letter list only, per house rule)",
+      "url": "https://www.dcode.fr/alphabet-of-the-magi"
+    },
+    {
+      "citation": "Three Magi Press house timeline, 'Paracelsus', apps/web/src/data/education/timelines/latin.js (internal; not independent)",
+      "url": ""
+    }
+  ],
+  "confidence": "SOLID: it is not one of Agrippa's alphabets (1651 English III.29–30 verified directly; 'Magi' absent). FAIRLY SOLID (consistent secondary reports, primary not viewed): the earliest known printing is Teseo Ambrogio, Introductio, Pavia 1539, where the signs are labelled with the Hebrew letter names in Hebrew order and given a Gamaliel / Liber ignis / Raphiel pedigree. It was reprinted by Duret (1613) as 'the characters of the angel Raphael' and by Fry (1799), and named 'Alphabet of the Magi' on Mathers' Plate XV (1888). REFUTED: Paul Christian 1870 as the first printing. ATTRIBUTION ONLY: Paracelsus as inventor, and his talisman use. SHAKY: the locators (Ambrogio pages or folios; Duret p. 117 or p. 125); the presence of the alphabet in the Archidoxis magica (Wikipedia, 'page needed'); a possible earlier witness in Pantheus' Voarchadumia (1530); the exact count of 22. NONE: no letter form is described. All 22 are 'low' and must be traced from the 1539 print, naming the copy.",
+  "factcheck": {
+    "checker": "independent fact-check pass (refutation mode), with WebSearch",
+    "method": "WebSearch only (standard and extended modes). No page fetching (per the brief) and no images. The shared search budget ran out partway through. Agrippa's 1651 III.29–30 was re-verified programmatically from the EEBO-TCP XML of A26565 already in the scratchpad (chapter heads, page breaks, the Honorius sentence, the III.30 names, and the absence of 'Magi'). This pass supersedes an earlier, search-less fact-check written to the same path.",
+    "corrections": [
+      "firstAttestation: REPLACED. The research file had 'not established; leading candidate Paul Christian, Histoire de la magie, 1870'. Wikipedia ('Alphabet of the Magi') gives the earliest printing as Teseo Ambrogio degli Albonesi, Introductio in Chaldaicam linguam, Pavia 1539, 'pp. 202f.', and dCode, the Lyon library blog (via Duret) and Fry (via Wikipedia) corroborate it. Imprint (G. M. Simonetta), collation and two issues from the ADER catalogue; title from WorldCat and LOC; dates 1469–1540 from LOC and Wikipedia.",
+      "firstAttestation.locator: Wikipedia's 'pp. 202f.' conflicts with the book's foliation (ADER: 215 ff.; Wikipedia's Ambrogio article: alphabets at fols. 193–213). Both readings are given; probably fol. 202ff.",
+      "claims[4] (Christian 1870 the first appearance): refuted by the printings of 1539, 1613 and 1799. Rewritten as refuted; the standing stays 'disputed' because the schema has no 'refuted'.",
+      "summary and family: rewritten around the documented route (Ambrogio 1539, Duret 1613, Fry 1799, Mathers 1888). The research file had said 'its documented home is modern occultist and reference literature', which is wrong.",
+      "transmission: added Ambrogio 1539, Duret 1613 (with its p. 117 / p. 125 conflict), Fry 1799 (pp. 28–29, Raphael-to-Adam report, paraphrased) and Mathers 1888/1889 Plate XV ('The Mystical Alphabets', per sacred-texts.com). Reordered chronologically.",
+      "transmission (1952 English): withdrawn the claim that it was 'the likely route for the English name'. Mathers used 'Alphabet of the Magi' in 1888. Forge Press 1952 confirmed by Penn and Folger records, Kirkup and Shaw tr. and Nichols ed. by Folger, Citadel 1963 by Penn.",
+      "transmission (1870): Furne, Jouvet et Cie and [1870] confirmed by dealer listings and the Gallica record. Plates reported as 16 (or 15). Pitois' dates 1811–1877 confirmed by Wikipedia.",
+      "transmission (1656): Turner's title is given as Of the Supreme Mysteries of Nature, London: N. Brook and J. Harison, per a search result. The 1975 reprint is confirmed only as 'a 1975 reprint' (Wellcome record); Askin and Skinner are still prior knowledge.",
+      "transmission (Huser): added Peterson's statement that the Archidoxis magica first appeared in 1591, in Huser's edition. So it postdates Ambrogio's 1539 printing and cannot be the source of the alphabet.",
+      "claims[2] (Archidoxis magica): the research file said no one implies it. In fact Wikipedia asserts it outright, without a page ('page needed'). The evidence is rewritten, and the standing stays disputed.",
+      "claims[2] / cautions: 'spurious by common consent' (house timeline) softened. Wikipedia and Peterson's page report Schneider (1982) differently: spurious, perhaps partly contemporary; or the first four books possibly genuine. Both are given.",
+      "claims[6] (Hebrew order and Latin values): split into two. Hebrew-order labelling Aleph–Thau is documented (per Wikipedia's description of Ambrogio). The Latin values are disputed: they are modern-chart conventions, with dCode's Samekh = X and Tav = T seen in a search summary.",
+      "claims added: Ambrogio's Gamaliel / Liber ignis / Raphiel pedigree (legend, attributed to Ambrogio); Duret's 'characters of the angel Raphael' (documented by Wikipedia and the Lyon blog); Mathers' name on Plate XV (documented by Wikipedia, plate title per sacred-texts).",
+      "claims[0] and claims[1]: Omniglot's actual wording is now quoted from search snippets for the attribution and the talisman legend; it was previously 'recalled'. It is still used only to show what the modern attribution says.",
+      "claims[5] (Christian credited his inventions to ancient authorities): now supported by a blog quoting Decker, Depaulis and Dummett, whose book is confirmed in WorldCat (Duckworth, 1996). Marked as no longer bearing on the origin.",
+      "claims[3] (not Agrippa's): evidence re-verified from the 1651 TCP text: III.29 p. 437; the Honorius letters p. 438 ('which Peter Apponus notes, as delivered by Honorius of Thebes'); III.30 p. 439; 'Magi' absent. The research file's 'verified from the 1533 and 1651 texts' was an overstatement: 1533 rests only on Wikipedia and Omniglot chapter numbers.",
+      "otherNames: added 'the characters of the angel Raphael' (Duret, 1613). The 'Alphabet des mages' hypothesis is replaced by what was actually found, a Flickr caption tying the label to Christian's 1870 book (image unseen). 'Alphabet of Apollonius of Tyana' is listed as dCode-only and not to be printed as attested.",
+      "letters (all 22): the Hebrew order, Hebrew characters (U+05D0–U+05EA) and numeric values checked programmatically and correct. Notes rewritten: order and value now rest on the Wikipedia description of Ambrogio, not on 'recollection of modern charts'. The Latin values are relabelled as modern conventions. The tie to Christian's arcana is withdrawn as evidence of origin.",
+      "letters[14] and letters[15] (Samekh X, Ayin O): removed the research file's inference that these values point to a 19th-century French origin. The alphabet is documented in 1539, with Hebrew letter names.",
+      "letters[20] (Shin): removed the aside on Christian's arcanum 0, which was irrelevant to the glyph and unverified.",
+      "letters (forms): all 22 stay NOT DESCRIBED, 'low'. There is no description to judge against the published forms. The form text now names the 1539 print as the source to trace, and warns that its alphabets were partly hand-inked, so forms may vary from copy to copy.",
+      "uses: removed 'engraving names on rings' (no source) and 'name-divination within Christian's arcana' (an inference about a refuted hypothesis). Added the documented use as a specimen in compendia (1539, 1613, 1799) and Mathers' Plate XV.",
+      "links: the latin relation no longer says the values point to a French occultist setting. The theban relation now quotes Agrippa 1651 p. 438 and reports Trithemius' attribution via Wikipedia. The transitus-fluvii relation gives de Balmes 1523, sig. B6v, per Wikipedia.",
+      "sources: WITHDRAWN https://archive.org/details/DeOccultaPhilosophiaLoc1533 (not seen in any search result), replaced by the LOC 1533 copy https://www.loc.gov/item/20007812 (seen). WITHDRAWN https://quod.lib.umich.edu/e/eebo/A26565.0001.001/1:18.30?rgn=div2;view=fulltext (deep link not seen), replaced by https://quod.lib.umich.edu/e/eebo/A26565.0001.001?view=toc (seen). WITHDRAWN https://archive.org/details/fre_b1886963 (not seen), replaced by USTC 1700883 and Google Books JgNFAAAAcAAJ (both seen). Every URL now in the file appeared in a search result in this pass.",
+      "sources: added Ambrogio (Internet Archive, LOC, ADER), Wikipedia (two articles), the Lyon blog, Fry (Google Books, Public Domain Review), Mathers (sacred-texts, Esoteric Archives), Peterson's Archidoxes, Christian (Gallica, Internet Archive, Flickr), the Folger record, WorldCat for Decker, Depaulis and Dummett, the 'Egypt in the tarot' blog, Macfarlane 2025 (JHI), dCode and Omniglot (letter list only).",
+      "cautions and confidence: rewritten. The 'no search ran' caution is replaced by an account of what was and was not checked."
+    ],
+    "unresolved": [
+      "Ambrogio 1539 locator: pages or folios? Wikipedia says 'pp. 202f.', but the book is foliated (fols. 193–213 hold the alphabets). Check the Internet Archive scan bub_gb_yUkKq_QnrnwC: leaf, recto or verso, and the heading Ambrogio gives the alphabet.",
+      "Ambrogio's own wording on Gamaliel, the Liber ignis and Raphiel (Wikipedia: 'clarification needed'). Read the Latin on the scan, then give the original with a labelled paraphrase. Also check whether the 1539 copy's glyphs are printed or hand-inked, and whether the March and April issues differ.",
+      "Letter count: exactly 22 (no finals, no extra signs) is not independently confirmed; only Grokipedia, which is unreliable, says 22.",
+      "Duret 1613 page: p. 117 (Wikipedia text) or p. 125 (Wikipedia's Google Books link)? Check the Google Books copy JgNFAAAAcAAJ or the Gallica facsimile.",
+      "Fry 1799 pp. 28–29: confirm the page numbers, Fry's heading for the alphabet, and the exact wording before quoting. For now it is a paraphrase from Wikipedia's transcription.",
+      "Mathers Plate XV: confirm on a scan that the plate prints this alphabet under the label 'Alphabet of the Magi'. Confirm the publisher (George Redway, London 1889, prior knowledge).",
+      "Earlier witness: per a Flickr caption, the alphabet is in Pantheus' Voarchadumia. Wikipedia's Transitus Fluvii article dates that book to Venice 1530, though its bibliography cites a 1550 copy. If the alphabet is there, the first attestation moves before 1539. Check.",
+      "Christian 1870: does the 'alphabet des mages' plate print this alphabet or a different one, and on what page or plate? Is the Paracelsus attribution first made there? (A lead only.)",
+      "Archidoxis magica: is there any passage, in Huser 1591 or Turner 1656, that prints or describes this alphabet? Wikipedia asserts it without a page. Also settle what Schneider (1982) concluded on authenticity, since the reports differ.",
+      "Origin of the name 'Alphabet of the Magi': is Mathers (1888) the first English use, and does Christian's French label (1870) refer to the same signs?",
+      "'Alphabet of Apollonius of Tyana' (dCode): find a historical source or drop the name. A blog ties Ambrogio's Solomonic alphabets to Apollonius as translator, but these may be different alphabets.",
+      "Macfarlane, JHI 86.3 (2025): check whether it treats Ambrogio's Raphael alphabet. It would be the best scholarly source for the page.",
+      "Decker, Depaulis and Dummett 1996: give the page for the Iamblichus point if the page keeps that claim.",
+      "Turner 1656 imprint (N. Brook and J. Harison) and the 1975 reprint (Askin, introduction by Stephen Skinner): confirm in a catalogue.",
+      "Omniglot's letter chart and Latin values were not seen. Confirm them before the transliterator relies on any Latin value."
+    ],
+    "removedUrls": [
+      "https://archive.org/details/DeOccultaPhilosophiaLoc1533",
+      "https://quod.lib.umich.edu/e/eebo/A26565.0001.001/1:18.30?rgn=div2;view=fulltext",
+      "https://archive.org/details/fre_b1886963"
+    ],
+    "readyToPublish": false
+  }
+}

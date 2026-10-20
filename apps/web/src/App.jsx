@@ -2,6 +2,7 @@ import React, { Suspense, lazy } from 'react';
 import { Route, Routes, BrowserRouter as Router, Link, useLocation } from 'react-router-dom';
 import ScrollToTop from './components/ScrollToTop';
 import AlchemicalCursor from './components/AlchemicalCursor';
+import AnalyticsBeacon, { NotFoundBeacon } from './components/AnalyticsBeacon';
 
 // The landing page ships in the entry bundle so first paint needs no second
 // round-trip. Every other route is its own chunk, fetched on first visit —
@@ -32,6 +33,8 @@ const ArticlePage = lazy(() => import('./pages/ArticlePage'));
 const PlansPage = lazy(() => import('./pages/PlansPage'));
 const WelcomePage = lazy(() => import('./pages/WelcomePage'));
 const RestoreAccessPage = lazy(() => import('./pages/RestoreAccessPage'));
+// The owner's dashboard: its own chunk (and stylesheet), never linked from the site.
+const AdminPage = lazy(() => import('./pages/admin/AdminPage'));
 
 // Route chunks are small and arrive fast; an empty fallback avoids a flash of
 // spinner on the way in. The page keeps its dark background from <body>.
@@ -90,6 +93,7 @@ function App() {
         <Router>
                 <AlchemicalCursor />
                 <ScrollToTop />
+                <AnalyticsBeacon />
                 <RouteBoundary>
                 <Suspense fallback={<RouteFallback />}>
                 <Routes>
@@ -118,6 +122,10 @@ function App() {
                     <Route path="/plans" element={<PlansPage />} />
                     <Route path="/welcome" element={<WelcomePage />} />
                     <Route path="/restore" element={<RestoreAccessPage />} />
+                    <Route path="/admin" element={<AdminPage />} />
+                    {/* No route matched: the page stays as it always was (empty);
+                        the beacon records the miss for the owner's 404 list. */}
+                    <Route path="*" element={<NotFoundBeacon />} />
                 </Routes>
                 </Suspense>
                 </RouteBoundary>

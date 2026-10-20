@@ -1,5 +1,6 @@
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
+import { trackSearch } from '../lib/analytics';
 
 // Search across every hall at once — signs, divine names, lexicon, currents,
 // primary works, timeline events, lessons and the Reading Room.
@@ -122,6 +123,12 @@ function ScriptoriumSearch({ scope = 'scriptorium' }) {
         return KIND_ORDER.filter((k) => present.has(k));
     }, [results]);
 
+    // The owner's dashboard lists what readers look for and what finds
+    // nothing; the beacon keeps only a query the reader paused on or submitted.
+    useEffect(() => {
+        if (state === 'ready') trackSearch(query, results.length, false);
+    }, [query, results.length, state]);
+
     const shown = kind === 'all' ? results : results.filter((r) => r.k === kind);
 
     // Reset the filter whenever it would otherwise hide everything.
@@ -153,6 +160,7 @@ function ScriptoriumSearch({ scope = 'scriptorium' }) {
                     value={query}
                     onChange={(e) => setQuery(e.target.value)}
                     onFocus={ensureIndex}
+                    onKeyDown={(e) => { if (e.key === 'Enter' && state === 'ready') trackSearch(query, results.length, true); }}
                     placeholder={sc.placeholder}
                     aria-label={sc.heading}
                     aria-describedby="edu-search-status"

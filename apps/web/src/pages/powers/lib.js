@@ -14,6 +14,8 @@ export const SECTIONS = [
         slug: 'hierarchies', title: 'The Hierarchies', kicker: 'Rank Upon Rank',
         heroEffect: 'oculus',
         hero: '4a9360dd4a6ab74ba2ab13f85f3d00b4.webp',
+        // a portrait picture: frame the tiers rising to the oculus, not one frieze row
+        heroFocus: 'center 16%',
         heroAlt: 'A vast dome carved with concentric rings of angels, rank upon rank ascending toward the light of the oculus, a scribe at work far below',
         blurb: 'How the traditions ordered the unseen: the nine choirs of '
             + 'Dionysius, Maimonides’ ten ranks, the Amesha Spentas, the '

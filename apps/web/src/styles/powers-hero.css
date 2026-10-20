@@ -1,0 +1,95 @@
+/* The Powers — the hero of the six door pages.
+   PortalHero is shared with the Christianities pages and the Powers landing,
+   so every rule here is held to a door hero: `.pw-page .ch-hero.is-door`,
+   which only PowersSectionPage and PowersMapPage ask for (the `door` prop).
+   Read top to bottom the hero runs emblem, kicker, title, intro, and closes
+   with the emblem's making-note as a colophon. */
+
+/* the picture dissolves into the ground instead of ending on a ruled line
+   that would cut through the title pulled up over it */
+.pw-page .ch-hero.is-door.has-image .ch-hero-figure {
+  border-bottom: 0;
+  -webkit-mask-image: linear-gradient(180deg, #000 68%, transparent);
+  mask-image: linear-gradient(180deg, #000 68%, transparent);
+}
+
+/* the hero closes on its colophon, so the ground after it is a breath, not
+   a gap */
+.pw-page .ch-hero.is-door.has-image {
+  padding-bottom: clamp(2rem, 3.5vw, 2.5rem);
+  margin-bottom: clamp(1.5rem, 4vw, 2.5rem);
+}
+
+/* a door title sets on one line from tablet width up (about 90px at 1280);
+   phones keep the site's ≤760px rule, whose 4rem cap this floor meets, so
+   the size never steps down across the breakpoint */
+@media (min-width: 761px) {
+  .ch-page.pw-page .ch-hero.is-door h1 {
+    font-size: clamp(4rem, 7vw, 6rem);
+    line-height: 0.95;
+  }
+}
+
+/* on the flat ground a faint gold glow, not a black shadow that muddies it */
+.pw-page .ch-hero.is-door.has-image h1 {
+  text-shadow: 0 0 26px rgba(209, 173, 104, 0.16), 0 4px 18px rgba(0, 0, 0, 0.55);
+}
+
+/* the kicker's way back to The Powers reads as a link */
+.pw-page .ch-hero.is-door .kicker a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(209, 173, 104, 0.45);
+  transition: color 180ms ease, border-color 180ms ease;
+}
+.pw-page .ch-hero.is-door .kicker a:hover,
+.pw-page .ch-hero.is-door .kicker a:focus-visible {
+  color: #ecd9ae;
+  border-color: #ecd9ae;
+}
+.pw-page .ch-hero.is-door .kicker a:focus-visible {
+  outline: 2px solid #d1ad68;
+  outline-offset: 3px;
+  border-radius: 1px;
+}
+
+/* the intro: two paragraphs that read as two, the first a touch brighter */
+.pw-page .ch-hero.is-door .edu-hero-sub { text-wrap: pretty; }
+.pw-page .ch-hero.is-door .edu-hero-sub + .edu-hero-sub { margin-top: 0.9em; }
+.pw-page .ch-hero.is-door h1 + .edu-hero-sub { color: rgba(236, 226, 206, 0.9); }
+@media (max-width: 760px) {
+  /* prose on a phone wants a fixed left edge; the title stays centred */
+  .pw-page .ch-hero.is-door .edu-hero-sub {
+    text-align: left;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+  }
+}
+
+/* the emblem's making-note closes the hero as a colophon, under a short
+   gold rule (about 5.8:1 on the ground) */
+.pw-page .ch-hero.is-door .ch-hero-colophon {
+  max-width: 28rem;
+  margin: 1.6rem auto 0;
+  font: italic 0.8rem/1.6 Georgia, "Times New Roman", serif;
+  letter-spacing: 0.005em;
+  color: rgba(222, 212, 196, 0.64);
+  text-wrap: pretty;
+}
+.pw-page .ch-hero.is-door .ch-hero-colophon::before {
+  content: "";
+  display: block;
+  width: 6rem;
+  height: 1px;
+  margin: 0 auto 0.95rem;
+  background: linear-gradient(90deg, transparent, rgba(209, 173, 104, 0.7), transparent);
+}
+
+/* the Map's hinge from hero to controls: the ✦ divider, close under the hero */
+.pw-page .pw-hero-hinge {
+  margin-top: 0.5rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pw-page .ch-hero.is-door .kicker a { transition: none; }
+}
