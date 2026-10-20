@@ -9,7 +9,7 @@ import ScriptoriumCognates from '../components/ScriptoriumCognates';
 import { HALLS } from '../data/education/portal/halls';
 import { DoorLegend, MagicDoor } from './magic/MagicDoors';
 import { ALPHABETS, MAGIC_PATH, WING } from './magic/lib';
-import { numberWord } from './magic/words';
+import { capitalise, numberWord, scriptoriumDescription } from './magic/words';
 import '../styles/magic.css';
 
 const TRADITION_LABELS = {
@@ -28,6 +28,9 @@ const TRADITION_LABELS = {
 
 function EducationPortalPage() {
     const [tradition, setTradition] = useState('all');
+    // The counts in the copy are read from HALLS and the wing's registry, not
+    // typed: the copy went on saying "sixteen" after the twentieth hall opened.
+    const halls = numberWord(HALLS.length);
 
     const traditions = useMemo(() => {
         const present = new Set(library.books.map((b) => b.tradition));
@@ -41,7 +44,7 @@ function EducationPortalPage() {
         <div className="third-lamp-scope edu-page">
             <Helmet>
                 <title>The Scriptorium — The Third Lamp</title>
-                <meta name="description" content="The Third Lamp's education portal: a reading room of public-domain esoteric books in PDF, and language halls for Latin, Greek, Hebrew, Egyptian, Cuneiform, Sanskrit, Arabic, Tibetan, Syriac, Coptic, Aramaic, Persian, Armenian, Geʼez, Classical Chinese and Church Slavonic — alphabets, divine names, sacred texts and lexicons." />
+                <meta name="description" content={scriptoriumDescription(HALLS.map((h) => h.name))} />
             </Helmet>
             <ThirdLampHeader />
 
@@ -51,7 +54,7 @@ function EducationPortalPage() {
                     <h1>The Scriptorium</h1>
                     <p className="edu-hero-sub">
                         A study hall for the serious reader: a library of the tradition's
-                        source texts, free to download, and sixteen language halls where the
+                        source texts, free to download, and {halls} language halls where the
                         sacred scripts are laid out to be learned — letter by letter,
                         name by name.
                     </p>
@@ -61,13 +64,12 @@ function EducationPortalPage() {
                     </div>
                 </section>
 
-                {/* the live wording; the correction is a commit of its own */}
-                <ScriptoriumSearch scripts={14} />
+                <ScriptoriumSearch scripts={HALLS.length} />
 
                 <section className="edu-halls" aria-labelledby="edu-halls-heading">
                     <header className="edu-section-head">
                         <p className="kicker">The Language Halls</p>
-                        <h2 id="edu-halls-heading">Sixteen scripts, sixteen doors</h2>
+                        <h2 id="edu-halls-heading">{capitalise(halls)} scripts, {halls} doors</h2>
                         <p>Each hall holds the alphabet in full, the divine names written
                             as the tradition wrote them, and a working lexicon of the terms
                             a student actually meets.</p>

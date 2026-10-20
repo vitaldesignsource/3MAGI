@@ -18,6 +18,7 @@ import { articles } from '../src/data/articles.js';
 import { HALLS as halls } from '../src/data/education/portal/halls.js';
 import magic from '../src/data/education/magic/registry.js';
 import compare from '../src/data/education/magic/compare.generated.js';
+import { scriptoriumDescription } from '../src/pages/magic/words.js';
 
 const SITE = 'https://threemagipress.com';
 const here = path.dirname(fileURLToPath(import.meta.url));
@@ -115,7 +116,9 @@ const sections = [
     ...powers.map((s) => line(`/powers/${s.slug}`, s.title, s.slug === 'map' ? describe('pages/powers/PowersMapPage.jsx') || s.blurb : s.blurb)),
     '',
     '## The Scriptorium',
-    line('/third-lamp/education', 'The Scriptorium', describe('pages/EducationPortalPage.jsx')),
+    // The portal's description is built from the hall names (pages/magic/words.js),
+    // so it is rebuilt here from the same list rather than read as a literal.
+    line('/third-lamp/education', 'The Scriptorium', scriptoriumDescription(halls.map((h) => h.name))),
     ...halls.map((h) => line(`/third-lamp/education/${h.slug}`, `The ${h.name} hall`, h.blurb)),
     ...courses.map((c) => line(`/third-lamp/education/${c.slug}/course`, c.title, `${c.tagline} ${c.lessons} lessons.`)),
     '',

@@ -46,9 +46,10 @@ const SCOPES = {
         kicker: 'Across Every Hall',
         heading: 'Search the Scriptorium',
         // The number of scripts is passed in by the portal that knows it, so
-        // the sentence cannot fall behind the halls.
+        // the sentence cannot fall behind the halls; the same box searches the
+        // Magical Scriptorium too, and says so.
         blurb: (scripts) => 'Signs, divine names, lexicon, currents, primary texts, timelines '
-            + `and lessons — ${scripts ? `in ${numberWord(scripts)} scripts` : 'in every hall and in the Magical Scriptorium'}. `
+            + `and lessons — ${scripts ? `in ${numberWord(scripts)} scripts and in the Magical Scriptorium` : 'in every hall and in the Magical Scriptorium'}. `
             + 'Type in English or paste the script itself.',
         placeholder: 'sefirah · ḥaqq · אין סוף · 𓋹 · execration',
         empty: 'Nothing in the Scriptorium answers to',
