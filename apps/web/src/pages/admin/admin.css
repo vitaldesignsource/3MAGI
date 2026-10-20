@@ -327,6 +327,11 @@ th[aria-sort] .adm-sort-mark { opacity: 1; }
   }
   .adm-table.is-stack td.is-primary { grid-column: 1 / -1; font-size: 0.95rem; padding-bottom: 2px; }
   .adm-table.is-stack td.is-primary::before { content: none; }
+  /* A long path in a half-width card cell (a button keeps its min-content
+     width) breaks anywhere rather than paint over its neighbour. */
+  .adm-table.is-stack .adm-path { overflow-wrap: anywhere; max-width: 100%; }
+  /* An IPv6 address does not fit half a phone's width on one line. */
+  .adm-table.is-stack .adm-ip { white-space: normal; overflow-wrap: anywhere; max-width: 100%; }
   .adm-table.is-stack tbody tr:hover td { background: none; }
 }
 

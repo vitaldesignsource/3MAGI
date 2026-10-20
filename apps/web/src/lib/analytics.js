@@ -521,16 +521,18 @@ function sendVitals() {
  * The router's location changed (or the app mounted). `navigationType` is
  * react-router's: a REPLACE before the old view was even reported is a
  * redirect, so the old path was never really seen and the new one inherits
- * its referrer.
+ * its referrer. `pathname` is the location the change was for (calls made
+ * while this module was still loading arrive late, in order); without it,
+ * the address bar's.
  */
-export const pageChanged = guard((navigationType) => {
+export const pageChanged = guard((navigationType, pathname) => {
     if (!start()) return;
     if (document.prerendering) {
         if (!waitingForActivation) {
             waitingForActivation = true;
             document.addEventListener('prerenderingchange', guard(() => {
                 waitingForActivation = false;
-                pageChanged('POP');
+                pageChanged('POP', pathname);
             }), { once: true });
         }
         return;
@@ -540,7 +542,7 @@ export const pageChanged = guard((navigationType) => {
         vitalsStarted = true;
         startVitals();
     }
-    const path = normPath(location.pathname);
+    const path = normPath(typeof pathname === 'string' ? pathname : location.pathname);
     if (current && current.path === path) return; // a hash or query change is the same view
     flushSearch();
     const prev = current;
@@ -584,10 +586,11 @@ export const trackSearch = guard((query, results, submitted) => {
     else searchTimer = setTimeout(guard(flushSearch), SEARCH_PAUSE_MS);
 });
 
-/** The app rendered its not-found page for the current URL. */
-export const trackNotFound = guard(() => {
+/** The app rendered its not-found page for `pathname` (default: the current URL). */
+export const trackNotFound = guard((pathname) => {
     if (status !== 1) return;
-    if (!current || current.path !== normPath(location.pathname)) pageChanged('PUSH');
+    const here = normPath(typeof pathname === 'string' ? pathname : location.pathname);
+    if (!current || current.path !== here) pageChanged('PUSH', here);
     const view = current;
     if (!view || view.skip || view.notFound) return;
     view.notFound = true;

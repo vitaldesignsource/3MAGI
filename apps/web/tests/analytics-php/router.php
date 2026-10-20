@@ -18,9 +18,24 @@
  *
  * Environment for the API (TL_SECRETS_FILE, TL_ANALYTICS_DIR) is inherited
  * from the shell that starts the server.
+ *
+ * Test hook: a request from this machine (127.0.0.1 / ::1) may carry
+ * `X-TL-Test-Client-IP: <address>` to stand for a visitor at that address,
+ * so one run can play several people (tests/analytics-e2e/system.e2e.mjs).
+ * It only rewrites REMOTE_ADDR for the scripts behind this router; this
+ * router is never deployed (the live site runs .htaccess), and the shipped
+ * PHP has no such override.
  */
 
 declare(strict_types=1);
+
+$testIp = $_SERVER['HTTP_X_TL_TEST_CLIENT_IP'] ?? null;
+unset($_SERVER['HTTP_X_TL_TEST_CLIENT_IP']);
+if (is_string($testIp) && in_array((string) ($_SERVER['REMOTE_ADDR'] ?? ''), ['127.0.0.1', '::1'], true)
+    && filter_var($testIp, FILTER_VALIDATE_IP) !== false) {
+    $_SERVER['REMOTE_ADDR'] = $testIp;
+}
+unset($testIp);
 
 $root = rtrim((string) $_SERVER['DOCUMENT_ROOT'], '/');
 $uri = (string) ($_SERVER['REQUEST_URI'] ?? '/');

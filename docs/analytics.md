@@ -229,10 +229,14 @@ Every chart can be read with the arrow keys and opened as a table.
 ## The beacon (what runs in a visitor's browser)
 
 `src/lib/analytics.js` — no dependencies, about 9 KB minified (4 KB gzipped),
-in the entry bundle so a reader who leaves within a second is still counted. It
+built as its own chunk. `AnalyticsBeacon.jsx` (in the entry bundle, a few
+hundred bytes) fetches it right after the app's first render and hands it the
+route changes that happened meanwhile, in order, so the entry bundle grows by
+under half a kilobyte gzipped and first paint never waits for analytics. It
 adds nothing to the page, sets no cookie, uses no storage, and talks only to
 `/api/hit.php`. Every entry point is wrapped so that a fault in it is swallowed,
-never thrown into the app.
+never thrown into the app; if the chunk fails to load, analytics is simply off
+for that page load.
 
 Where it is wired in:
 
@@ -271,7 +275,9 @@ memory for that page load (nothing is stored), and the flag itself is never
 reported (paths are sent without their query). Production is unaffected: no
 visitor reaches the site on a loopback address.
 
-A known edge: a view that is closed within ~1.2 s sends its pageview and its
+Known edges: a reader who leaves before the beacon's chunk has arrived (a
+fraction of a second after the first render, one small cached request) is not
+counted. A view that is closed within ~1.2 s sends its pageview and its
 engage together as the page unloads. They are separate requests and may reach
 the server in either order; an engage that arrives before its pageview is
 dropped by `hit.php` (`unknown_view`), so such a view has no engagement time
@@ -288,9 +294,9 @@ recorded (it would have been 0–1 s). Views that last longer are unaffected.
 | `public/api/admin.php` | the dashboard API (`?a=login|logout|me|stats|visitors|visitor|live|crawlers|seo|export|verify-bot|prune|health`) |
 | `src/lib/analytics.js` | the beacon (above) |
 | `src/components/AnalyticsBeacon.jsx` | the router hook-up (`AnalyticsBeacon`) and the not-found marker (`NotFoundBeacon`) |
-| `tests/analytics-php/` | `run-tests.php` (all behaviour, ~470 checks), `router.php` (`.htaccess` for `php -S`), `seed.php` (weeks of synthetic traffic), `serve.sh`, `make-secrets.php` (throwaway credentials), `beacon-e2e.mjs` (the beacon in real browsers against the built site) |
+| `tests/analytics-php/` | `run-tests.php` (all behaviour, ~480 checks), `router.php` (`.htaccess` for `php -S`, plus a loopback-only `X-TL-Test-Client-IP` header so one run can play visitors at several addresses; the router is never deployed), `seed.php` (weeks of synthetic traffic), `serve.sh`, `make-secrets.php` (throwaway credentials), `beacon-e2e.mjs` (the beacon in real browsers against the built site) |
 | `src/pages/admin/` | the `/admin` UI: its own lazy chunk and stylesheet. `AdminPage.jsx` (sign-in, setup steps, the shell), `sections/*.jsx`, `charts.jsx` (hand-drawn SVG), `api.js` (the only network code) |
-| `tests/analytics-e2e/` | `run.sh`: seeds a database, serves the build, and drives Chromium through every section at 1280 and 390 px, checking figures against SQL; screenshots in `TL_E2E_SHOTS` |
+| `tests/analytics-e2e/` | `run.sh`: seeds a database, serves the build, and drives Chromium through every section at 1280 and 390 px, checking figures against SQL; screenshots in `TL_E2E_SHOTS`. `system.e2e.mjs`: the whole system from an empty database — six scripted readers (own address, browser, window, language, time zone, referrer; Google, UTM, Reddit, ChatGPT, GPC, a broken link), a Googlebot and GPTBot crawl with curl, the owner reading while signed in — then every dashboard section checked against the journeys, SQL and the API at 1280 and 390 px; finally crawl.php with the data folder unwritable (needs `setpriv`) |
 
 The beacon's event format and every API response are specified field by field
 in the contract the beacon and UI were built against; the tests pin it.
@@ -299,7 +305,8 @@ in the contract the beacon and UI were built against; the tests pin it.
 php apps/web/tests/analytics-php/run-tests.php        # needs PHP 8 with pdo_sqlite and curl; port 4301
 node apps/web/tests/analytics-php/beacon-e2e.mjs      # after npm run build; Playwright + PHP; port 4302 (--port=…)
 cd apps/web && npm run build && tests/analytics-php/serve.sh   # the built site + a seeded dashboard on :4301
-apps/web/tests/analytics-e2e/run.sh                   # the dashboard UI end to end (after a build); port 4303
+apps/web/tests/analytics-e2e/run.sh                   # the dashboard UI end to end (after a build); ports 4303 and 4304
+node apps/web/tests/analytics-e2e/system.e2e.mjs      # the whole system from an empty database (after a build); port 4305 (--port=…)
 ```
 
 Adding a crawler: add a row to `TA_CRAWLERS` and the same token, in the same
