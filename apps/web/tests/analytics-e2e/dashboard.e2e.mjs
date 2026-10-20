@@ -352,6 +352,24 @@ async function desktop() {
     await inspect(page, 'desktop-03-overview-7d');
     await crossCheckOverview(page, api, 'overview 7d');
 
+    // Keyboard: every stop from the top shows a focus ring.
+    await page.focus('.adm-skip'); // the first stop on the page
+    const stops = [];
+    for (let i = 0; i < 24; i += 1) {
+        await page.keyboard.press('Tab');
+        const st = await page.evaluate(() => {
+            const a = document.activeElement;
+            if (!a || a === document.body) return null; // past the last control
+            const ring = (el) => { const cs = el && getComputedStyle(el); return !!cs && cs.outlineStyle !== 'none' && parseFloat(cs.outlineWidth) > 0; };
+            return { what: `${a.tagName.toLowerCase()} ${(a.getAttribute('aria-label') || a.textContent || a.value || '').trim().slice(0, 24)}`, ring: ring(a) || ring(a.nextElementSibling) };
+        });
+        if (!st) break;
+        stops.push(st);
+    }
+    check(`keyboard: ${stops.length} focus stops walked`, stops.length >= 15, stops.length);
+    const noRing = stops.filter((st) => !st.ring);
+    check('keyboard: every focus stop shows a ring', noRing.length === 0, noRing);
+
     // Chart by keyboard.
     await page.focus('.adm-chart-plot');
     await page.keyboard.press('ArrowLeft');

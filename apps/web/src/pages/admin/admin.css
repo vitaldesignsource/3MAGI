@@ -356,8 +356,9 @@ th[aria-sort] .adm-sort-mark { opacity: 1; }
   min-height: 34px; padding: 5px 9px; background: var(--field); color: var(--text);
   border: 1px solid rgba(231, 223, 207, 0.22); border-radius: 3px; font-family: var(--sans); font-size: 0.9rem; min-width: 0;
 }
-.adm input::placeholder { color: #6f6b62; }
-.adm input:focus, .adm select:focus { border-color: var(--gold); outline: none; box-shadow: 0 0 0 1px var(--gold); }
+.adm input::placeholder { color: #8a8478; }
+.adm input:is([type="text"], [type="email"], [type="password"], [type="date"]):focus, .adm select:focus { border-color: var(--gold); outline: none; box-shadow: 0 0 0 1px var(--gold); }
+.adm-check input:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
 .adm input[aria-invalid="true"] { border-color: var(--down); }
 .adm input:disabled { opacity: 0.55; }
 .adm select { padding-right: 24px; }
