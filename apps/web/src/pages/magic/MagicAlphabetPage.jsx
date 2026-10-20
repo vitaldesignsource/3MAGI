@@ -15,8 +15,9 @@ import '../../styles/magic.css';
 // One page per entry of the Magical Scriptorium, in the idiom of a language
 // hall: the hero with its section menu, the letters (a grid and plaque when
 // the forms can be shown, a ledger when they are being traced), the printed
-// page itself where a copy may be shown, how the signs are set or drawn and
-// from what, the first witness, the books that carried
+// page itself where a copy may be shown, the tables a book prints that are
+// shown as printed rather than drawn (the Shawq's pictorial hieroglyphs), how
+// the signs are set or drawn and from what, the first witness, the books that carried
 // it, the claims with their standing, its uses, the passages in their own
 // words with whose translation they are, the cautions and the sources.
 // A stub shows its summary and sources and says that the page is coming.
@@ -28,6 +29,55 @@ const HALL_TITLES = {
 const linkTarget = (to) => (to === 'pgm' ? '/third-lamp/education/greek#edu-pgm-heading'
     : ENTRY_BY_SLUG[to] ? entryPath(to) : `/third-lamp/education/${to}`);
 const linkTitle = (to) => ENTRY_BY_SLUG[to]?.title || HALL_TITLES[to] || to;
+
+// One printed page: the library's photograph, its caption, the rights where
+// they are not given once for the set, its links — and, where its signs are
+// shown as printed rather than drawn, the values printed with them, row by
+// row, as text (`values`: { label, items | text, lang }).
+const RTL = new Set(['ar', 'he', 'syr']);
+function Plate({ p, sharedRights }) {
+    return (
+        // --ar and --pw give the image its box before it loads, so a
+        // set of lazy plates does not grow the page under a reader
+        <figure className={`mg-plate${p.height > p.width ? ' is-portrait' : ''}`}
+            style={{ '--ar': p.width / p.height, '--pw': `${p.width}px` }}>
+            <div className="mg-plate-frame">
+                <img src={`/media/${p.file}`} alt={p.alt} width={p.width} height={p.height} loading="lazy" decoding="async" />
+            </div>
+            <figcaption>
+                <p className="mg-plate-caption">{isolate(p.caption)}</p>
+                {(p.values || []).length > 0 && (
+                    <dl className="mg-plate-values">
+                        {p.values.map((v) => (
+                            <div key={v.label}>
+                                <dt>{v.label}</dt>
+                                {v.items
+                                    ? <dd lang={v.lang} dir={RTL.has(v.lang) ? 'rtl' : undefined}
+                                        className={`is-list${RTL.has(v.lang) ? ' edu-glyph is-script' : ''}`}>
+                                        {v.items.map((it, i) => <span key={i}>{it}</span>)}
+                                    </dd>
+                                    : <dd>{isolate(v.text)}</dd>}
+                            </div>
+                        ))}
+                    </dl>
+                )}
+                {!sharedRights && <p className="mg-plate-rights"><span>Rights</span> {isolate(p.rights)}</p>}
+                <p className="mg-plate-links">
+                    <a href={`/media/${p.file}`} target="_blank" rel="noopener noreferrer">The image at full size</a>
+                    {p.url && (
+                        <a href={p.url} target="_blank" rel="noopener noreferrer">
+                            The whole page at {new URL(p.url).hostname.replace(/^www\./, '')}
+                        </a>
+                    )}
+                </p>
+            </figcaption>
+        </figure>
+    );
+}
+
+// Several plates from one repository share one rights statement: it is
+// given once, under the set, and each caption keeps its credit line.
+const sharedRightsOf = (plates) => (plates.length > 1 && plates.every((p) => p.rights === plates[0].rights) ? plates[0].rights : null);
 
 function SectionHead({ kicker, id, title, children }) {
     return (
@@ -118,8 +168,13 @@ function MagicAlphabetPage() {
 
     const letters = useMemo(() => mod?.letters || [], [mod]);
     const shown = useMemo(() => letters.filter((l) => l.glyph || l.char), [letters]);
+    // Where the same name stands in several groups (alif in each of the
+    // Shawq's tables), the drill names each sign with its group, so that
+    // four choices are never two of one name.
     const drillLetters = useMemo(() => shown.map((l) => ({
         ...l,
+        name: mod?.groups && shown.some((o) => o !== l && o.name === l.name)
+            ? `${l.name} (${mod.groups.find((g) => g.key === l.group)?.short || l.group})` : l.name,
         glyph: l.char ? textOf(l.char) : <MagicGlyph g={l.glyph} />,
         translit: l.translit || l.planet || '',
         // a value that only repeats the transliteration in capitals is not shown twice
@@ -146,14 +201,18 @@ function MagicAlphabetPage() {
             : anyDrawn ? `How the ${unit ? unit.many : 'letters'} are drawn` : 'How the signs are set';
     const sample = (mod.sample?.orders || []).map((o) => letters[o - 1]).filter(Boolean);
     const plates = stub ? [] : (mod.plates || []);
-    // Several plates from one repository share one rights statement: it is
-    // given once, under the set, and each caption keeps its credit line.
-    const sharedRights = plates.length > 1 && plates.every((p) => p.rights === plates[0].rights) ? plates[0].rights : null;
+    const sharedRights = sharedRightsOf(plates);
+    // tables shown as printed, not drawn (the Shawq's pictorial hieroglyphs),
+    // each a set of plates under its own heading
+    const facs = stub ? null : (mod.facsimiles || null);
+    const facPlates = facs ? facs.tables.flatMap((t) => t.plates) : [];
+    const facRights = sharedRightsOf(facPlates);
     const others = ENTRIES.filter((e) => e.slug !== entry.slug);
 
     const sections = stub ? [] : [
         letters.length > 0 && { id: 'mg-letters-heading', label: lettersTitle.replace(/^The /, '') },
-        plates.length > 0 && { id: 'mg-plates-heading', label: 'The page' },
+        plates.length > 0 && { id: 'mg-plates-heading', label: plates.length > 1 ? 'The pages' : 'The page' },
+        facPlates.length > 0 && { id: 'mg-facsimiles-heading', label: facs.navLabel || 'As printed' },
         mod.drawing && { id: 'mg-drawing-heading', label: pending ? 'The forms' : 'Set and drawn' },
         mod.firstAttestation && { id: 'mg-attestation-heading', label: 'First witness' },
         (mod.transmission || []).length > 0 && { id: 'mg-transmission-heading', label: 'Hand to hand' },
@@ -253,31 +312,32 @@ function MagicAlphabetPage() {
                                 : `The printed page beside the drawings: the library’s own photograph, cropped and reduced for the web and otherwise unaltered. The caption names the copy.`}</p>
                         </SectionHead>
                         <div className="mg-plate-list">
-                        {plates.map((p) => (
-                            // --ar and --pw give the image its box before it loads, so a
-                            // set of lazy plates does not grow the page under a reader
-                            <figure className={`mg-plate${p.height > p.width ? ' is-portrait' : ''}`} key={p.file}
-                                style={{ '--ar': p.width / p.height, '--pw': `${p.width}px` }}>
-                                <div className="mg-plate-frame">
-                                    <img src={`/media/${p.file}`} alt={p.alt} width={p.width} height={p.height} loading="lazy" decoding="async" />
-                                </div>
-                                <figcaption>
-                                    <p className="mg-plate-caption">{isolate(p.caption)}</p>
-                                    {!sharedRights && <p className="mg-plate-rights"><span>Rights</span> {isolate(p.rights)}</p>}
-                                    <p className="mg-plate-links">
-                                        <a href={`/media/${p.file}`} target="_blank" rel="noopener noreferrer">The image at full size</a>
-                                        {p.url && (
-                                            <a href={p.url} target="_blank" rel="noopener noreferrer">
-                                                The whole page at {new URL(p.url).hostname.replace(/^www\./, '')}
-                                            </a>
-                                        )}
-                                    </p>
-                                </figcaption>
-                            </figure>
-                        ))}
+                            {plates.map((p) => <Plate key={p.file} p={p} sharedRights={sharedRights} />)}
                         </div>
                         {mod.platesSource && <p className="mg-plate-rights mg-plates-rights"><span>Source</span> {isolate(mod.platesSource)}</p>}
                         {sharedRights && <p className="mg-plate-rights mg-plates-rights"><span>Rights</span> {isolate(sharedRights)}</p>}
+                    </section>
+                )}
+
+                {facPlates.length > 0 && (
+                    <section className="mg-plates mg-facsimiles is-set" aria-labelledby="mg-facsimiles-heading">
+                        <SectionHead kicker={facs.kicker || 'As Printed'} id="mg-facsimiles-heading" title={facs.title}>
+                            {facs.note && <p>{isolate(facs.note)}</p>}
+                        </SectionHead>
+                        {facs.tables.map((t) => (
+                            <div className="mg-facsimile" key={t.key}>
+                                <header className="mg-facsimile-head" id={`mg-facsimile-${t.key}`}>
+                                    <h3>{isolate(t.label)}</h3>
+                                    {t.note && <p className="mg-facsimile-note">{isolate(t.note)}</p>}
+                                    {t.about && <p className="mg-facsimile-about">{isolate(t.about)}</p>}
+                                </header>
+                                <div className="mg-plate-list">
+                                    {t.plates.map((p) => <Plate key={p.file} p={p} sharedRights={facRights} />)}
+                                </div>
+                            </div>
+                        ))}
+                        {facs.source && <p className="mg-plate-rights mg-plates-rights"><span>Source</span> {isolate(facs.source)}</p>}
+                        {facRights && <p className="mg-plate-rights mg-plates-rights"><span>Rights</span> {isolate(facRights)}</p>}
                     </section>
                 )}
 

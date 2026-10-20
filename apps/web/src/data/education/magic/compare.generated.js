@@ -46,8 +46,8 @@ export default {
   },
   "ibn-wahshiyya": {
    "stub": false,
-   "letters": 6,
-   "shown": 0
+   "letters": 128,
+   "shown": 128
   },
   "voynich": {
    "stub": false,

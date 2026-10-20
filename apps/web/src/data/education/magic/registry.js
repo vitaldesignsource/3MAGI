@@ -108,8 +108,11 @@ const registry = {
         {
             slug: 'ibn-wahshiyya', group: 'secret', title: 'The Ancient Alphabets of Ibn Waḥshiyya', short: 'Ibn Waḥshiyya',
             otherNames: ['Shawq al-mustahām', 'Ancient Alphabets and Hieroglyphic Characters Explained (1806)'],
-            keyedTo: 'none', direction: 'ltr', status: 'forms-pending', door: null,
-            blurb: 'An Arabic catalogue of the alphabets of Hermes, the sages and the planets, printed in London with an English version in 1806.',
+            // its tables are printed, and drawn, reading from the right
+            keyedTo: 'none', direction: 'rtl', status: 'ready', signScale: 1.6,
+            // door: the jīm of Jupiter's pen, as drawn from Arabic p. 48 (the validator checks it is one of the page's own signs)
+            door: { glyph: { d: 'M 29.7 43.1 L 40.3 42.1 L 59.8 28.4 L 68.5 42 L 75 51.8 L 81 62 Q 82 65.5 84 67.3 M 40.3 42.1 L 52.3 58.7 M 52.3 58.7 L 68.5 42 L 86.3 23.5', rings: [[23.2, 43.6, 6.5], [52.1, 66.2, 7.5]] } },
+            blurb: 'An Arabic catalogue of the alphabets of Hermes, the sages, the planets and the ancient kings, printed in London with an English version in 1806.',
         },
         {
             slug: 'voynich', group: 'secret', title: 'The Voynich Script', short: 'Voynich',

@@ -1,0 +1,1878 @@
+{
+ "book": "Joseph Hammer (trans.), Ancient Alphabets and Hieroglyphic Characters Explained; with an Account of the Egyptian Priests, their Classes, Initiation, and Sacrifices, in the Arabic Language by Ahmad Bin Abubekr Bin Wahshih; and in English by Joseph Hammer (London: W. Bulmer and Co., 1806)",
+ "copy": "Wellcome Library copy, Internet Archive identifier b22039910 (Creative Commons Public Domain Mark per its rights field). Page images: the item's processed JP2s (b22039910_jp2.zip), leaf numbers from b22039910_scandata.xml; n = leaf - 1 (checked against https://archive.org/download/b22039910/page/n<N>.jpg for ten leaves).",
+ "howTheBookIsLaidOut": "English part first (translator's preface pp. i-xxi, author's preface, English text pp. 3-54), then the Arabic part, paginated 1-136 from the back of the volume (Hammer: \"page 4 of the Arabic text beginning from the right\"). The letter tables are printed in the Arabic part and cited in Hammer's English as \"v. orig. p.\" The English part reprints only the four hieroglyph series (English pp. 17-40), the Hermesian letter table (pp. 43-46) and the inline sign groups (pp. 48-49). In a left-to-right scan the Arabic pages run backwards: Arabic page p = leaf 223 - p.",
+ "tableCount": 86,
+ "countBreakdown": {
+  "letterTables": 82,
+  "byChapter": {
+   "Bāb I (usual alphabets)": 5,
+   "Bāb II (seven famous ancient pens)": 7,
+   "Bāb III (seven famous sages)": 7,
+   "Bāb IV (24 later pens of the sages)": 24,
+   "Bāb V (seven planets)": 7,
+   "Bāb VI (twelve zodiac signs)": 12,
+   "Bāb VII (ancient kings)": 10,
+   "al-Khātima al-farīda (Hammer: Appendix)": 10
+  },
+  "hieroglyphSignTables": 4,
+  "hammerSays": "Translator's preface p. iv: \"the eighty alphabets herein deciphered\"; p. xii: \"the four tables of hieroglyphics\". 82 letter tables are printed; counting the Indian \"three different sorts\" (pp. 6-8) as one alphabet gives 80. Whether Hammer counted so is not stated."
+ },
+ "kinds": {
+  "register": [
+   "Scripts of the ancient peoples",
+   "The alphabets ascribed to Hermes",
+   "The alphabets of the sages",
+   "The planetary alphabets",
+   "Hieroglyphs read as letters",
+   "Hieroglyphs read as signs of things and ideas"
+  ],
+  "outsideRegister": "Bāb I usual alphabets (5 tables), Bāb VI zodiac (12), Bāb VII kings (10)"
+ },
+ "notTables": [
+  {
+   "what": "The figure \"Bahumid and Khuruf\" (هذا الشكل بجملته عندهم هو السر المسمي بهوميد وخروف)",
+   "page": {
+    "printed": "Arabic p. 90",
+    "leaf": 133,
+    "n": 132
+   },
+   "english": "English p. 22 (leaf 52)",
+   "why": "one composite figure, not a table of signs"
+  },
+  {
+   "what": "Groups of signs set inline in the account of the Nabaṭ's animal-headed figures (the sick man, the violent death, poison, plague, honours, the perfect sage)",
+   "page": {
+    "printed": "Arabic pp. 123-125",
+    "leaves": [
+     100,
+     99,
+     98
+    ]
+   },
+   "english": "English pp. 48-49 (leaves 78-79)",
+   "why": "signs within running text, not tables"
+  }
+ ],
+ "tables": [
+  {
+   "id": "kufi",
+   "chapter": "Bāb I, faṣl 1",
+   "page": {
+    "printed": "Arabic p. 4",
+    "leaf": 219,
+    "n": 218
+   },
+   "headingArabic": "وهذه صورة القلم الكوفي المسمى بالسوري كما تراه",
+   "headingHammer": "CHAPTER I. The three usual (Oriental) alphabets, viz: the Cufic, the Maghrabin, and the Indian. SECTION I. The Cufic alphabet. Our Lord Ismael (peace be with him!) was the first who spoke Arabic, and who wrote the Cufic, of which nine different sorts were used. The ground of all of them is the Cufic alphabet, known by the name of Súrí. (See page 4 of the Arabic text beginning from the right.) [English p. 3]",
+   "attribution": "The Kufic script \"called al-Sūrī\"; Hammer's English gives its first writer as Ismael.",
+   "signs": 28,
+   "order": "abjad (ا ب ج د ه و ز ح ط ي ك ل م ن س ع ف ص ق ر ش ت ث خ ذ ض ظ غ)",
+   "kind": "Outside the register",
+   "kindNote": "Book's own class: \"the three usual alphabets\" (an Arabic script). Nearest register kind: Scripts of the ancient peoples.",
+   "valuesPrinted": "yes: an Arabic letter printed under each sign",
+   "legibility": "clear",
+   "seq": 1,
+   "chosenToTrace": false
+  },
+  {
+   "id": "maghribi",
+   "chapter": "Bāb I, faṣl 2",
+   "page": {
+    "printed": "Arabic p. 5",
+    "leaf": 218,
+    "n": 217
+   },
+   "headingArabic": "الفصل الثاني من الباب الاول في معرفة القلم المغربي وهو الاندلسي كما ترى صورته هكذا",
+   "headingHammer": "SECTION II. The Maghrabin (western) or Andalusian alphabet, (v. orig. p. 5.) [English p. 3]",
+   "attribution": "The Maghribī or Andalusian script.",
+   "signs": 29,
+   "order": "alphabetical in the Maghribī arrangement (… ل م ن ص ض ع غ ف ق س ش ه و لا ي), with lām-alif",
+   "kind": "Outside the register",
+   "kindNote": "Book's class: \"the three usual alphabets\" (an Arabic script). Nearest: Scripts of the ancient peoples.",
+   "valuesPrinted": "yes: an Arabic letter printed under each sign",
+   "legibility": "clear",
+   "seq": 2,
+   "chosenToTrace": false
+  },
+  {
+   "id": "indian-1",
+   "chapter": "Bāb I, faṣl 3, first sort",
+   "page": {
+    "printed": "Arabic p. 6",
+    "leaf": 217,
+    "n": 216
+   },
+   "headingArabic": "الفصل الثالث من الباب الاول في معرفة القلم الهندي وهو ثلثة انواع النوع الاول منها",
+   "headingHammer": "SECTION III. The Indian alphabet of three different sorts, (v. orig. p. 6, 7, 8.) [English p. 4]",
+   "attribution": "The Indian script (numerals), first of three sorts.",
+   "signs": 27,
+   "valuesPrinted": "by group only: nine groups of three numerals (units, tens, hundreds), each group headed by its letters ايقغ . بكر . جلش . دمت . هنث . وسخ . زعذ . حفض . طصظ",
+   "order": "the numerical (ayqagh) grouping of the abjad",
+   "kind": "Outside the register",
+   "kindNote": "Book's class: \"the three usual alphabets\" (numerals). Nearest: Scripts of the ancient peoples.",
+   "legibility": "clear",
+   "seq": 3,
+   "chosenToTrace": false
+  },
+  {
+   "id": "indian-2",
+   "chapter": "Bāb I, faṣl 3, second sort",
+   "page": {
+    "printed": "Arabic p. 7",
+    "leaf": 216,
+    "n": 215
+   },
+   "headingArabic": "النوع الثاني من الهندي",
+   "headingHammer": "(within Section III, as above)",
+   "attribution": "The Indian script, second sort.",
+   "signs": 28,
+   "order": "abjad (ا ب ج د ه و ز ح ط ي ك ل م ن س ع ف ص ق ر ش ت ث خ ذ ض ظ غ)",
+   "kind": "Outside the register",
+   "kindNote": "Numerals used for letters. Nearest: Scripts of the ancient peoples.",
+   "valuesPrinted": "yes: an Arabic letter printed under each sign",
+   "legibility": "clear",
+   "seq": 4,
+   "chosenToTrace": false
+  },
+  {
+   "id": "indian-3",
+   "chapter": "Bāb I, faṣl 3, third sort",
+   "page": {
+    "printed": "Arabic p. 8",
+    "leaf": 215,
+    "n": 214
+   },
+   "headingArabic": "النوع الثالث من القلم الهندي",
+   "headingHammer": "(within Section III, as above)",
+   "attribution": "The Indian script, third sort.",
+   "signs": 28,
+   "order": "abjad (ا ب ج د ه و ز ح ط ي ك ل م ن س ع ف ص ق ر ش ت ث خ ذ ض ظ غ)",
+   "kind": "Outside the register",
+   "kindNote": "Numerals used for letters. Nearest: Scripts of the ancient peoples.",
+   "valuesPrinted": "yes: an Arabic letter printed under each sign",
+   "legibility": "clear",
+   "seq": 5,
+   "chosenToTrace": false
+  },
+  {
+   "id": "syriac",
+   "chapter": "Bāb II, faṣl 1",
+   "page": {
+    "printed": "Arabic p. 9",
+    "leaf": 214,
+    "n": 213
+   },
+   "headingArabic": "الباب الثاني في الاقلام السبعة المشهورة . الفصل الاول من الباب الثاني في القلم السرياني",
+   "headingHammer": "CHAPTER II. The seven most celebrated old alphabets. SECTION I. The Syrian alphabet, (v. orig. p. 9.) [English p. 4]",
+   "attribution": "The Syriac pen, first of \"the seven famous pens\".",
+   "signs": 22,
+   "order": "abjad, the 22 letters ا to ت only (no ث خ ذ ض ظ غ)",
+   "kind": "Scripts of the ancient peoples",
+   "valuesPrinted": "yes: an Arabic letter printed under each sign",
+   "legibility": "clear",
+   "job": {
+    "id": "syriac-alphabet",
+    "use": "trace",
+    "dir": "plates/ibn-wahshiyya/syriac-alphabet"
+   },
+   "seq": 6,
+   "kindNote": "",
+   "chosenToTrace": true
+  },
+  {
+   "id": "nabati-old",
+   "chapter": "Bāb II, faṣl 2",
+   "page": {
+    "printed": "Arabic p. 10",
+    "leaf": 213,
+    "n": 212
+   },
+   "headingArabic": "الفصل الثاني من الباب الثاني في القلم النبطي القديم",
+   "headingHammer": "SECTION II. The old Nabathean alphabet, (v. orig. p. 10) [English p. 4]",
+   "attribution": "The old Nabaṭī pen.",
+   "signs": 28,
+   "order": "abjad (ا ب ج د ه و ز ح ط ي ك ل م ن س ع ف ص ق ر ش ت ث خ ذ ض ظ غ)",
+   "kind": "Scripts of the ancient peoples",
+   "valuesPrinted": "yes: an Arabic letter printed under each sign",
+   "legibility": "clear",
+   "seq": 7,
+   "kindNote": "",
+   "chosenToTrace": false
+  },
+  {
+   "id": "hebrew",
+   "chapter": "Bāb II, faṣl 3",
+   "page": {
+    "printed": "Arabic p. 11",
+    "leaf": 212,
+    "n": 211
+   },
+   "headingArabic": "الفصل الثالث من الباب الثاني في القلم العبراني",
+   "headingHammer": "SECTION III. The Hebrew alphabet, (v. orig. p. 11.) [English p. 4]",
+   "attribution": "The Hebrew pen.",
+   "signs": 23,
+   "valuesPrinted": "yes, but row 2 reads ي ك ل م ن ه س ع (ه printed a second time) and row 3 ف ص ق ر ش ت",
+   "order": "abjad to ت (with the repeated ه)",
+   "kind": "Scripts of the ancient peoples",
+   "legibility": "clear",
+   "seq": 8,
+   "kindNote": "",
+   "chosenToTrace": false
+  },
+  {
+   "id": "barbawi",
+   "chapter": "Bāb II, faṣl 4",
+   "page": {
+    "printed": "Arabic p. 12",
+    "leaf": 211,
+    "n": 210
+   },
+   "headingArabic": "الفصل الرابع من الباب الثاني في القلم البرباوي",
+   "headingHammer": "SECTION IV. The Berrabian alphabet, (v. orig. p. 12.) [English p. 4]",
+   "attribution": "The Barbāwī pen.",
+   "signs": 29,
+   "order": "alphabetical (hijāʾī: ا ب ت ث ج ح خ د ذ ر ز س ش ص ض ط ظ ع غ ف ق ك ل م ن ه و ي), with lām-alif (لا) as an extra sign",
+   "kind": "Scripts of the ancient peoples",
+   "valuesPrinted": "yes: an Arabic letter printed under each sign",
+   "legibility": "clear",
+   "seq": 9,
+   "kindNote": "",
+   "chosenToTrace": false
+  },
+  {
+   "id": "laqmi",
+   "chapter": "Bāb II, faṣl 5",
+   "page": {
+    "printed": "Arabic p. 13",
+    "leaf": 210,
+    "n": 209
+   },
+   "headingArabic": "الفصل الخامس من الباب الثاني في القلم لقمي",
+   "headingHammer": "SECTION V. The Lukumian alphabet, (v. orig. p. 13.) [English p. 4]",
+   "attribution": "The Laqmī pen.",
+   "signs": 28,
+   "order": "abjad (ا ب ج د ه و ز ح ط ي ك ل م ن س ع ف ص ق ر ش ت ث خ ذ ض ظ غ)",
+   "kind": "Scripts of the ancient peoples",
+   "valuesPrinted": "yes: an Arabic letter printed under each sign",
+   "legibility": "clear",
+   "seq": 10,
+   "kindNote": "",
+   "chosenToTrace": false
+  },
+  {
+   "id": "musnad",
+   "chapter": "Bāb II, faṣl 6",
+   "page": {
+    "printed": "Arabic p. 14",
+    "leaf": 209,
+    "n": 208
+   },
+   "headingArabic": "الفصل السادس من الباب الثاني في القلم المسند",
+   "headingHammer": "SECTION VI. The Musnad or (Hamyaritic) alphabet, (v. orig. p. 14.) [English p. 4]",
+   "attribution": "The Musnad pen.",
+   "signs": 28,
+   "order": "alphabetical, but rows printed ا ب ت ث ج ح / خ د ذ ر ز س ش / ص ض ع غ ف ق ط ظ / ك ل م ن ه و ي (ط ظ after ق)",
+   "kind": "Scripts of the ancient peoples",
+   "valuesPrinted": "yes: an Arabic letter printed under each sign",
+   "legibility": "clear",
+   "seq": 11,
+   "kindNote": "",
+   "chosenToTrace": false
+  },
+  {
+   "id": "greek",
+   "chapter": "Bāb II, faṣl 7",
+   "page": {
+    "printed": "Arabic p. 15",
+    "leaf": 208,
+    "n": 207
+   },
+   "headingArabic": "الفصل السابع من الباب الثاني في القلم المسمي باليوناني قلم الحكما",
+   "headingHammer": "SECTION VII. The Greek alphabet, commonly called the alphabet of the philosophers, (v. orig. p. 15.) [English p. 4]",
+   "attribution": "The Greek pen, \"called the pen of the sages\".",
+   "signs": 25,
+   "order": "abjad to ذ",
+   "kind": "Scripts of the ancient peoples",
+   "kindNote": "The book also calls it \"the pen of the sages\" (قلم الحكما).",
+   "valuesPrinted": "yes: an Arabic letter printed under each sign",
+   "legibility": "clear",
+   "seq": 12,
+   "chosenToTrace": false
+  },
+  {
+   "id": "hermes",
+   "chapter": "Bāb III, faṣl 1",
+   "page": {
+    "printed": "Arabic p. 16",
+    "leaf": 207,
+    "n": 206
+   },
+   "headingArabic": "الباب الثالث في معرفة الاقلام الحكما السبعة المشهورين . وهم هرمس . واقليمون . وافلاطون . وفيثاغورس . واسقلينوس . وسقراط . وارسطوس . الفصل الاول من الباب الثالث في قلم هرمس كما ترى",
+   "headingHammer": "CHAPTER III. The particular Alphabets (or rather Cyphers) of the seven most celebrated Philosophers. SECTION I. The alphabet of Hermes, (v. orig. p. 16.) [English pp. 4-5]",
+   "attribution": "Hermes, first of \"the seven famous sages\".",
+   "signs": 21,
+   "valuesPrinted": "partly: 21 signs under 22 letters; in row 3 ر and ش are printed together under one sign (unresolved whether a sign is missing)",
+   "order": "abjad to ت",
+   "legibility": "clear, but several signs are pictorial (a bird, a tree, a face)",
+   "kind": "The alphabets ascribed to Hermes",
+   "kindNote": "The book itself counts Hermes among the seven sages (p. 16 heading).",
+   "seq": 13,
+   "chosenToTrace": false
+  },
+  {
+   "id": "aqlimun",
+   "chapter": "Bāb III, faṣl 2",
+   "page": {
+    "printed": "Arabic p. 17",
+    "leaf": 206,
+    "n": 205
+   },
+   "headingArabic": "الفصل الثاني من الباب الثالث صفة قلم الحكيم اقليمون صاحب العجايب والعلم",
+   "headingHammer": "SECTION II. The alphabet of Cleomenes, (v. orig. p. 17.) [English p. 5]",
+   "attribution": "The sage Aqlīmūn, \"master of wonders and knowledge\" (Hammer: Cleomenes).",
+   "signs": 22,
+   "order": "abjad to ت",
+   "kind": "The alphabets of the sages",
+   "valuesPrinted": "yes: an Arabic letter printed under each sign",
+   "legibility": "clear",
+   "seq": 14,
+   "kindNote": "",
+   "chosenToTrace": false
+  },
+  {
+   "id": "aflatun",
+   "chapter": "Bāb III, faṣl 3",
+   "page": {
+    "printed": "Arabic p. 18",
+    "leaf": 205,
+    "n": 204
+   },
+   "headingArabic": "الفصل الثالث من الباب الثالث في صفة قلم الحكيم افلاطون",
+   "headingHammer": "SECTION III. The alphabet of Plato, (v. orig. p. 18.) [English p. 5]",
+   "attribution": "The sage Aflāṭūn (Plato).",
+   "signs": 22,
+   "order": "abjad to ت",
+   "legibility": "clear; the sign for ه is a single heavy dot, told from the separator dots only by size",
+   "kind": "The alphabets of the sages",
+   "valuesPrinted": "yes: an Arabic letter printed under each sign",
+   "job": {
+    "id": "plato",
+    "use": "trace",
+    "dir": "plates/ibn-wahshiyya/plato"
+   },
+   "seq": 15,
+   "kindNote": "",
+   "chosenToTrace": true
+  },
+  {
+   "id": "fithaghuras",
+   "chapter": "Bāb III, faṣl 4",
+   "page": {
+    "printed": "Arabic p. 19",
+    "leaf": 204,
+    "n": 203
+   },
+   "headingArabic": "الفصل الرابع من الباب الثالث في صفة قلم الحكيم فيثاغورس الوحيد",
+   "headingHammer": "SECTION IV. The alphabet of Pythagoras, (v. orig. p. 19.) [English p. 5]",
+   "attribution": "The sage Fīthāghūras \"the unique\" (Pythagoras).",
+   "signs": 22,
+   "order": "abjad to ت",
+   "kind": "The alphabets of the sages",
+   "valuesPrinted": "yes: an Arabic letter printed under each sign",
+   "legibility": "clear",
+   "seq": 16,
+   "kindNote": "",
+   "chosenToTrace": false
+  },
+  {
+   "id": "asqlibiyus",
+   "chapter": "Bāb III, faṣl 5",
+   "page": {
+    "printed": "Arabic p. 20",
+    "leaf": 203,
+    "n": 202
+   },
+   "headingArabic": "الفصل الخامس من الباب الثالث في صفة قلم الحكيم اسقليبوس",
+   "headingHammer": "SECTION V. The alphabet of Scalinus, (v. orig. p. 20.) [English p. 5]",
+   "attribution": "The sage Asqlībūs (spelled اسقلينوس in the list on p. 16; Hammer: Scalinus).",
+   "signs": 22,
+   "order": "abjad to ت",
+   "kind": "The alphabets of the sages",
+   "valuesPrinted": "yes: an Arabic letter printed under each sign",
+   "legibility": "clear",
+   "seq": 17,
+   "kindNote": "",
+   "chosenToTrace": false
+  },
+  {
+   "id": "suqrat",
+   "chapter": "Bāb III, faṣl 6",
+   "page": {
+    "printed": "Arabic p. 21",
+    "leaf": 202,
+    "n": 201
+   },
+   "headingArabic": "الفصل السادس من الباب الثالث في صفة قلم الحكيم سقراط",
+   "headingHammer": "SECTION VI. The alphabet of Socrates, (v. orig. p. 21.) [English p. 5]",
+   "attribution": "The sage Suqrāṭ (Socrates).",
+   "signs": 25,
+   "order": "abjad to ذ",
+   "kind": "The alphabets of the sages",
+   "valuesPrinted": "yes: an Arabic letter printed under each sign",
+   "legibility": "clear",
+   "seq": 18,
+   "kindNote": "",
+   "chosenToTrace": false
+  },
+  {
+   "id": "aristus",
+   "chapter": "Bāb III, faṣl 7",
+   "page": {
+    "printed": "Arabic p. 22",
+    "leaf": 201,
+    "n": 200
+   },
+   "headingArabic": "الفصل السابع من الباب الثالث في صفة قلم الحكيم ارسطوس",
+   "headingHammer": "SECTION VII. The alphabet of Aristotle, (v. orig. p. 22.) [English p. 5]",
+   "attribution": "The sage Arisṭūs (Hammer: Aristotle).",
+   "signs": 31,
+   "valuesPrinted": "partly: 31 signs under 25 letters (row 2: 8 signs, 4 letters ي ك ل م; row 3: 8 signs, 6 letters ن س ع ف ص ق)",
+   "order": "abjad to ذ",
+   "legibility": "clear print; the pairing of signs and letters in rows 2-3 is unresolved",
+   "kind": "The alphabets of the sages",
+   "seq": 19,
+   "kindNote": "",
+   "chosenToTrace": false
+  },
+  {
+   "id": "balinas",
+   "chapter": "Bāb IV, faṣl 1",
+   "page": {
+    "printed": "Arabic p. 23",
+    "leaf": 200,
+    "n": 199
+   },
+   "headingArabic": "الباب الرابع من شوق المستهام في معرفة رموز الاقلام في ذكر الاقلام التي ظهرت بعد هذه السبعة . واسم واضعها من الحكما الذين تقدموا واشتهروا بالعلوم والمعارف . كل ياتي علي ترتيبه . فافهم . [الفصل الاول … : section line not transcribed]",
+   "headingHammer": "CHAPTER IV. The four-and-twenty Alphabets, (or rather Cyphers,) that were used after the seven preceding, by the most celebrated Philosophers and learned Men. SECTION I. The alphabet of Belinos, the philosopher, (v. orig. p. 23.) [English p. 5]",
+   "attribution": "The sage Balīnās (Hammer: Belinos).",
+   "signs": 29,
+   "order": "alphabetical (hijāʾī: ا ب ت ث ج ح خ د ذ ر ز س ش ص ض ط ظ ع غ ف ق ك ل م ن ه و ي), with lām-alif (لا) as an extra sign",
+   "kind": "The alphabets of the sages",
+   "valuesPrinted": "yes: an Arabic letter printed under each sign",
+   "legibility": "clear",
+   "seq": 20,
+   "kindNote": "",
+   "chosenToTrace": false
+  },
+  {
+   "id": "barbawi-surid",
+   "chapter": "Bāb IV, faṣl 2",
+   "page": {
+    "printed": "Arabic p. 24",
+    "leaf": 199,
+    "n": 198
+   },
+   "headingArabic": "الفصل الثاني من الباب الرابع في صفة القلم البرباوي لسوريد الحكيم وهو عجيب",
+   "headingHammer": "SECTION II. Another Berrabian alphabet invented by the philosopher Soorid, (v. orig. p. 24.) [English p. 5]",
+   "attribution": "The Barbāwī pen of the sage Sūrīd.",
+   "signs": 29,
+   "order": "alphabetical (hijāʾī: ا ب ت ث ج ح خ د ذ ر ز س ش ص ض ط ظ ع غ ف ق ك ل م ن ه و ي), with lām-alif (لا) as an extra sign",
+   "kind": "The alphabets of the sages",
+   "valuesPrinted": "yes: an Arabic letter printed under each sign",
+   "legibility": "clear",
+   "seq": 21,
+   "kindNote": "",
+   "chosenToTrace": false
+  },
+  {
+   "id": "farnajiyush",
+   "chapter": "Bāb IV, faṣl 3",
+   "page": {
+    "printed": "Arabic p. 25",
+    "leaf": 198,
+    "n": 197
+   },
+   "headingArabic": "الفصل الثالث من الباب الرابع في صفة القلم الذي وضعه الحكيم فرنجيوش الفيلسوف وقد لغز به كتب الحكمة",
+   "headingHammer": "SECTION III. The alphabet of the philosopher, Pherentius, who wrote therewith his philosophical books, (v. orig. p. 25.) [English p. 5]",
+   "attribution": "The sage Faranjiyūsh (Hammer: Pherentius).",
+   "signs": 29,
+   "order": "alphabetical (hijāʾī: ا ب ت ث ج ح خ د ذ ر ز س ش ص ض ط ظ ع غ ف ق ك ل م ن ه و ي), with lām-alif (لا) as an extra sign",
+   "kind": "The alphabets of the sages",
+   "valuesPrinted": "yes: an Arabic letter printed under each sign",
+   "legibility": "clear",
+   "seq": 22,
+   "kindNote": "",
+   "chosenToTrace": false
+  },
+  {
+   "id": "batlimus",
+   "chapter": "Bāb IV, faṣl 4",
+   "page": {
+    "printed": "Arabic p. 26",
+    "leaf": 197,
+    "n": 196
+   },
+   "headingArabic": "الفصل الرابع من الباب الرابع في القم [sic] المعلق الذي وضعه الحكيم بطليموس اليوناني كما تري",
+   "headingHammer": "SECTION IV. The Moallak, or suspended alphabet, invented by Ptolomy the Greek, (v. orig. p. 26.) [English p. 6]",
+   "attribution": "The \"suspended\" pen of the sage Baṭlīmūs the Greek (Ptolemy).",
+   "signs": 28,
+   "valuesPrinted": "yes, but ر and ز are not printed and ق appears twice (end of row 2, start of row 3)",
+   "order": "alphabetical (ر ز skipped)",
+   "kind": "The alphabets of the sages",
+   "legibility": "clear",
+   "seq": 23,
+   "kindNote": "",
+   "chosenToTrace": false
+  },
+  {
+   "id": "marqunus",
+   "chapter": "Bāb IV, faṣl 5",
+   "page": {
+    "printed": "Arabic p. 27",
+    "leaf": 196,
+    "n": 195
+   },
+   "headingArabic": "الفصل الخامس من الباب الرابع في صفة القلم المربوط للحكيم مرقونس وقد رمز به كتب الطلسمات",
+   "headingHammer": "SECTION V. The Marboot or connected alphabet, invented by Marconos? the philosopher. He wrote therewith books on talismans, (v. orig. p. 27.) [English p. 6]",
+   "attribution": "The \"bound\" pen of the sage Marqūnus, for books of talismans.",
+   "signs": 27,
+   "valuesPrinted": "yes, but ر and ز are not printed",
+   "order": "alphabetical (ر ز skipped)",
+   "kind": "The alphabets of the sages",
+   "legibility": "clear",
+   "seq": 24,
+   "kindNote": "",
+   "chosenToTrace": false
+  },
+  {
+   "id": "maryanus",
+   "chapter": "Bāb IV, faṣl 6",
+   "page": {
+    "printed": "Arabic p. 28",
+    "leaf": 195,
+    "n": 194
+   },
+   "headingArabic": "الفصل السادس من الباب الرابع في صفة القلم الجرجاني للحكيم مريانوس",
+   "headingHammer": "SECTION VI. The Giorgian alphabet, invented by philosopher Marjanòs, (v. orig. p. 28.) [English p. 6]",
+   "attribution": "The Jurjānī pen of the sage Maryānūs.",
+   "signs": 28,
+   "order": "alphabetical (hijāʾī: ا ب ت ث ج ح خ د ذ ر ز س ش ص ض ط ظ ع غ ف ق ك ل م ن ه و ي)",
+   "kind": "The alphabets of the sages",
+   "valuesPrinted": "yes: an Arabic letter printed under each sign",
+   "legibility": "clear",
+   "seq": 25,
+   "kindNote": "",
+   "chosenToTrace": false
+  },
+  {
+   "id": "nabati-old-2",
+   "chapter": "Bāb IV, faṣl 7",
+   "page": {
+    "printed": "Arabic p. 29",
+    "leaf": 194,
+    "n": 193
+   },
+   "headingArabic": "الفصل السابع من الباب الرابع في صفة القلم النبطي القديم",
+   "headingHammer": "SECTION VII. The old Nabathean alphabet, (v. orig. p. 29.) [English p. 6]",
+   "attribution": "The old Nabaṭī pen (a second table under this name, among the sages' pens).",
+   "signs": 29,
+   "order": "alphabetical (hijāʾī: ا ب ت ث ج ح خ د ذ ر ز س ش ص ض ط ظ ع غ ف ق ك ل م ن ه و ي), with lām-alif (لا) as an extra sign",
+   "kind": "Scripts of the ancient peoples",
+   "kindNote": "Printed in the chapter of the sages' pens, but named for a people.",
+   "valuesPrinted": "yes: an Arabic letter printed under each sign",
+   "legibility": "clear",
+   "seq": 26,
+   "chosenToTrace": false
+  },
+  {
+   "id": "maghnis",
+   "chapter": "Bāb IV, faṣl 8",
+   "page": {
+    "printed": "Arabic p. 30",
+    "leaf": 193,
+    "n": 192
+   },
+   "headingArabic": "الفصل الثامن من الباب الرابع في صفة القلم الاحمر الذي وضعه الحكيم مغنيس الفيلسوف",
+   "headingHammer": "SECTION VIII. The red alphabet, invented and used by the philosopher Magnis, (v. orig. p. 30.) [English p. 6]",
+   "attribution": "The \"red\" pen of the sage Maghnīs.",
+   "signs": 29,
+   "order": "alphabetical (hijāʾī: ا ب ت ث ج ح خ د ذ ر ز س ش ص ض ط ظ ع غ ف ق ك ل م ن ه و ي), with lām-alif (لا) as an extra sign",
+   "kind": "The alphabets of the sages",
+   "valuesPrinted": "yes: an Arabic letter printed under each sign",
+   "legibility": "clear",
+   "seq": 27,
+   "kindNote": "",
+   "chosenToTrace": false
+  },
+  {
+   "id": "ghamighashir",
+   "chapter": "Bāb IV, faṣl 9",
+   "page": {
+    "printed": "Arabic p. 31",
+    "leaf": 192,
+    "n": 191
+   },
+   "headingArabic": "الفصل التاسع من الباب الرابع في صفة القلم الطلسمي للحكيم غاميغاشير الفيلسوف اليوناني",
+   "headingHammer": "SECTION IX. The Talisman alphabet, invented by the Greek philosopher Ghámígháshír? (v. orig. p. 31.) [English p. 6]",
+   "attribution": "The talismanic pen of the Greek sage Ghāmīghāshīr.",
+   "signs": 29,
+   "order": "alphabetical (hijāʾī: ا ب ت ث ج ح خ د ذ ر ز س ش ص ض ط ظ ع غ ف ق ك ل م ن ه و ي), with lām-alif (لا) as an extra sign",
+   "kind": "The alphabets of the sages",
+   "valuesPrinted": "yes: an Arabic letter printed under each sign",
+   "legibility": "clear",
+   "seq": 28,
+   "kindNote": "",
+   "chosenToTrace": false
+  },
+  {
+   "id": "haliyawush",
+   "chapter": "Bāb IV, faṣl 10",
+   "page": {
+    "printed": "Arabic p. 32",
+    "leaf": 191,
+    "n": 190
+   },
+   "headingArabic": "الفصل العاشر من الباب الرابع في صفة القلم الرمزي الذي وضعه الحكيم هلياوش اليوناني واصطلح عليه في كتبه",
+   "headingHammer": "SECTION X. The mysterious alphabet, invented by Heliaosh? the Greek philosopher, who used it in his books, (v. orig. p. 32) [English p. 6]",
+   "attribution": "The \"cipher\" pen of the Greek sage Haliyāwush.",
+   "signs": 28,
+   "order": "abjad (ا ب ج د ه و ز ح ط ي ك ل م ن س ع ف ص ق ر ش ت ث خ ذ ض ظ غ)",
+   "kind": "The alphabets of the sages",
+   "valuesPrinted": "yes: an Arabic letter printed under each sign",
+   "legibility": "clear",
+   "seq": 29,
+   "kindNote": "",
+   "chosenToTrace": false
+  },
+  {
+   "id": "qustujis",
+   "chapter": "Bāb IV, faṣl 11",
+   "page": {
+    "printed": "Arabic p. 33",
+    "leaf": 190,
+    "n": 189
+   },
+   "headingArabic": "الفصل الحادي عشر من الباب الرابع في صفة قلم الحكيم قسطوجيس اليوناني وقد كتب بهذا القلم ثلثماية وستين كتابا في علم الصنعة الالهية . وفي علم الطلسم . والنيرنج والسحر . ودعوات الكواكب . والنجوم . وتسخير الروحانية",
+   "headingHammer": "SECTION XI. The alphabet of Costoodjis the Greek philosopher. He wrote in this alphabet, three hundred and sixty books on divinity, talismans, astrology, magic, influence of planets and fixed stars, and on the conjuration of spirits, (v. orig. p. 33.) [English p. 6]",
+   "attribution": "The Greek sage Qusṭūjīs, said to have written 360 books in it.",
+   "signs": 28,
+   "order": "abjad (ا ب ج د ه و ز ح ط ي ك ل م ن س ع ف ص ق ر ش ت ث خ ذ ض ظ غ)",
+   "kind": "The alphabets of the sages",
+   "valuesPrinted": "yes: an Arabic letter printed under each sign",
+   "legibility": "clear",
+   "seq": 30,
+   "kindNote": "",
+   "chosenToTrace": false
+  },
+  {
+   "id": "hermes-abu-tat",
+   "chapter": "Bāb IV, faṣl 12",
+   "page": {
+    "printed": "Arabic p. 34",
+    "leaf": 189,
+    "n": 188
+   },
+   "headingArabic": "الفصل الثاني عشر من الباب الرابع في صفة قلم الحكيم هرمس ابوطاط الذي كتب الصنعة الشريفة . وصنع باقليم الصعيد كنوزا وبرابي ونواويس كاهنية له ولولده . ورصدها ورمزها بهذا القلم . الذي استخرجه من السرب المظلم",
+   "headingHammer": "SECTION XII. The alphabet of Hermes Abootat the philosopher. He wrote on the noble art (of philosophical secrets.) He constructed in upper Egypt treasure chambers, and set up stones containing magic inscriptions, which he locked, and guarded by the charm of this alphabet, extracted from the regions of darkness, (v. orig. p. 34.) [English pp. 6-7]",
+   "attribution": "The sage Hirmis Abū Ṭāṭ, who drew it \"from the dark tunnel\".",
+   "signs": 28,
+   "order": "abjad (ا ب ج د ه و ز ح ط ي ك ل م ن س ع ف ص ق ر ش ت ث خ ذ ض ظ غ)",
+   "kind": "The alphabets ascribed to Hermes",
+   "kindNote": "Printed among the sages' pens (Bāb IV), but the book gives it to a Hermes.",
+   "valuesPrinted": "yes: an Arabic letter printed under each sign",
+   "legibility": "clear",
+   "job": {
+    "id": "hermes-abu-tat",
+    "use": "trace",
+    "dir": "plates/ibn-wahshiyya/hermes-abu-tat"
+   },
+   "seq": 31,
+   "chosenToTrace": true
+  },
+  {
+   "id": "qalfatriyus",
+   "chapter": "Bāb IV, faṣl 13",
+   "page": {
+    "printed": "Arabic p. 35",
+    "leaf": 188,
+    "n": 187
+   },
+   "headingArabic": "الفصل الثالث عشر من الباب الرابع في صفة قلم الحكيم قلفطريوس صاحب السيميا والقلفطريات والطلسم والنيرنجات والسحر والدك والسعيدة . وقد تداولت الحكما والفلاسفة هذا القلم في كتبها وعلومها دون غيرها من الاقلام … [continues]",
+   "headingHammer": "SECTION XIII. The alphabet of Colphotorios the philosopher. He was deeply learned in the knowledge of spirits and cabalistic spells, in talismans, astrological aspects, and in the magic and black art. … (v. orig. p. 35.) [English p. 7]",
+   "attribution": "The sage Qalfaṭriyūs.",
+   "signs": 28,
+   "order": "abjad (ا ب ج د ه و ز ح ط ي ك ل م ن س ع ف ص ق ر ش ت ث خ ذ ض ظ غ)",
+   "legibility": "clear; elaborate ring-ended signs",
+   "kind": "The alphabets of the sages",
+   "valuesPrinted": "yes: an Arabic letter printed under each sign",
+   "seq": 32,
+   "kindNote": "",
+   "chosenToTrace": false
+  },
+  {
+   "id": "siyuryanus",
+   "chapter": "Bāb IV, faṣl 14",
+   "page": {
+    "printed": "Arabic p. 36",
+    "leaf": 187,
+    "n": 186
+   },
+   "headingArabic": "الفصل الرابع عشر من الباب الرابع في صفة قلم الحكيم سيوريانوس الذي الف كتب الفلك . واسرار النجوم . والطلسمات وخواصها . والرصد . وعمل خواتيم الكواكب . وتسخير روحانياتها وجلبها",
+   "headingHammer": "SECTION XIV. The alphabet of Syourianos the philosopher, (v. orig. p. 36.) He wrote in this alphabet on astronomy, and the secrets of the stars; on talismans, and their qualities; on magic alarm-posts; on the effects of planet-rings; and on the invocation and conjuration of spirits. [English p. 7]",
+   "attribution": "The sage Siyūriyānūs, author of books on the sphere, the stars, talismans and the making of planetary seals (خواتيم الكواكب).",
+   "signs": 28,
+   "order": "abjad (ا ب ج د ه و ز ح ط ي ك ل م ن س ع ف ص ق ر ش ت ث خ ذ ض ظ غ)",
+   "legibility": "clear; ring-letters with many small rings",
+   "kind": "The alphabets of the sages",
+   "valuesPrinted": "yes: an Arabic letter printed under each sign",
+   "job": {
+    "id": "siyuryanus",
+    "use": "trace",
+    "dir": "plates/ibn-wahshiyya/siyuryanus"
+   },
+   "seq": 33,
+   "kindNote": "",
+   "chosenToTrace": true
+  },
+  {
+   "id": "filawus",
+   "chapter": "Bāb IV, faṣl 15",
+   "page": {
+    "printed": "Arabic p. 37",
+    "leaf": 186,
+    "n": 185
+   },
+   "headingArabic": "الفصل الخامس عشر من الباب الرابع في صفة قلم الحكيم فيلاوس الذى وضع الدخنات العجيبة . والتراكيب الغريبة . والطلسم . والنيرنج . والسحر . وصنع كنزا بالاهرام . ورصده بالارصاد العجيبة",
+   "headingHammer": "SECTION XV. The alphabet of Philaos the philosopher, (v. orig. p. 37.) He invented miraculous fumigations, marvellous compounds, talismans, and astrological tables. He constructed the treasure-chambers in the pyramids, … [English p. 7]",
+   "attribution": "The sage Fīlāwus.",
+   "signs": 28,
+   "order": "abjad (ا ب ج د ه و ز ح ط ي ك ل م ن س ع ف ص ق ر ش ت ث خ ذ ض ظ غ)",
+   "kind": "The alphabets of the sages",
+   "valuesPrinted": "yes: an Arabic letter printed under each sign",
+   "legibility": "clear",
+   "seq": 34,
+   "kindNote": "",
+   "chosenToTrace": false
+  },
+  {
+   "id": "diskuridus-tree",
+   "chapter": "Bāb IV, faṣl 16",
+   "page": {
+    "printed": "Arabic p. 38",
+    "leaf": 185,
+    "n": 184
+   },
+   "headingArabic": "الفصل السادس عشر من الباب الرابع في صفة قلم الحكيم ديسقوريدوس وهو المشجر الذي كتب كتاب الاعشاب والنبات . وخواصها ومنافعها ومضارها واسرارها . وقد تداوله الحكما من بعده في الكتب",
+   "headingHammer": "SECTION XVI. The alphabet of Dioscorides the philosopher, commonly called the Tree alphabet, (v. orig. p. 38.) He wrote on trees, shrubs, and herbs, … [English p. 8]",
+   "attribution": "The sage Dīsqūrīdūs (Dioscorides); \"it is the mushajjar\" (tree-shaped).",
+   "signs": 28,
+   "order": "abjad (ا ب ج د ه و ز ح ط ي ك ل م ن س ع ف ص ق ر ش ت ث خ ذ ض ظ غ)",
+   "legibility": "clear; stem-and-branch signs",
+   "kind": "The alphabets of the sages",
+   "kindNote": "One of the two \"tree\" (mushajjar) alphabets.",
+   "valuesPrinted": "yes: an Arabic letter printed under each sign",
+   "seq": 35,
+   "chosenToTrace": false
+  },
+  {
+   "id": "dawudi",
+   "chapter": "Bāb IV, faṣl 17",
+   "page": {
+    "printed": "Arabic p. 39",
+    "leaf": 184,
+    "n": 183
+   },
+   "headingArabic": "الفصل السابع عشر من الباب الرابع في صفة القلم الداودي وهذا القلم كثير الاستعمال ببلاد الهند . يستعملونها الحكما في كتب الطب والحكمة وكتب السياسة وهو مشهور",
+   "headingHammer": "SECTION XVII. The Davidian alphabet, (v. orig. p. 38.) [sic: the table is on p. 39] This alphabet was particularly used in India, … [English p. 8]",
+   "attribution": "The Dāwūdī pen, \"much used in India\".",
+   "signs": 29,
+   "order": "alphabetical (hijāʾī: ا ب ت ث ج ح خ د ذ ر ز س ش ص ض ط ظ ع غ ف ق ك ل م ن ه و ي), with lām-alif (لا) as an extra sign",
+   "kind": "The alphabets of the sages",
+   "kindNote": "In the sages' chapter, but no sage is named.",
+   "valuesPrinted": "yes: an Arabic letter printed under each sign",
+   "legibility": "clear",
+   "seq": 36,
+   "chosenToTrace": false
+  },
+  {
+   "id": "dhimuqratis",
+   "chapter": "Bāb IV, faṣl 18",
+   "page": {
+    "printed": "Arabic p. 40",
+    "leaf": 183,
+    "n": 182
+   },
+   "headingArabic": "الفصل الثامن عشر من الباب الرابع في صفة قلم الحكيم ذيمقراطيس وهذا القلم كان مقبولا عند حكما اليونان . يلغزون ويرمزون به كتبهم . ويزعمون ان هذا القلم اهدته له روحانية كوكب عطارد . وهو في السرب المظلم",
+   "headingHammer": "SECTION XVIII. The alphabet of Democrates the philosopher, (v. orig. p. 40.) … They believed it to be the same with the Mercurial alphabet extracted from the regions of darkness. [English p. 8]",
+   "attribution": "The sage Dhīmuqrāṭīs, given it (they claim) by the spirit of the planet Mercury.",
+   "signs": 28,
+   "order": "alphabetical (hijāʾī: ا ب ت ث ج ح خ د ذ ر ز س ش ص ض ط ظ ع غ ف ق ك ل م ن ه و ي)",
+   "kind": "The alphabets of the sages",
+   "valuesPrinted": "yes: an Arabic letter printed under each sign",
+   "legibility": "clear",
+   "seq": 37,
+   "kindNote": "",
+   "chosenToTrace": false
+  },
+  {
+   "id": "aqbat",
+   "chapter": "Bāb IV, faṣl 19",
+   "page": {
+    "printed": "Arabic p. 41",
+    "leaf": 182,
+    "n": 181
+   },
+   "headingArabic": "الفصل التاسع عشر من الباب الرابع في صفة قلم حكما الاقباط واكثر ما يرمزون به كتب الدفاين والمطالب والكنوز والخبايا . وكتب الصنعة الشريفة الالهية . وهذا القلم مخترعه قفطريم من اولاد نوح عليه السلام . وقد يستعمل في الحساب",
+   "headingHammer": "SECTION XIX. The alphabet of the Cophtic Egyptian philosophers, (v. orig. p. 41.) … Kophtrim, one of Noah's descendants, invented this alphabet. It is even now used in calculation. [English p. 8]",
+   "attribution": "The sages of the Copts; invented by Qifṭrīm of the sons of Noah; \"used in calculation\".",
+   "signs": 28,
+   "order": "abjad (ا ب ج د ه و ز ح ط ي ك ل م ن س ع ف ص ق ر ش ت ث خ ذ ض ظ غ)",
+   "kind": "The alphabets of the sages",
+   "valuesPrinted": "yes: an Arabic letter printed under each sign",
+   "legibility": "clear",
+   "seq": 38,
+   "kindNote": "",
+   "chosenToTrace": false
+  },
+  {
+   "id": "farghani",
+   "chapter": "Bāb IV, faṣl 20",
+   "page": {
+    "printed": "Arabic p. 42",
+    "leaf": 181,
+    "n": 180
+   },
+   "headingArabic": "الفصل العشرون من الباب الرابع في صفة القلم الفرغاني وهذا القلم اخترعه سبعة من حكما الروم . وكتبوا به كتبا كثيرة في علم السيميا والكيميا والطب . وكان رئيسهم ديوجانس الاكبر ملك الروم . واشتهر في زمانه ونسي",
+   "headingHammer": "SECTION XX. The Farganian alphabet, (v. orig. p. 42.) It was invented by seven Roman philosophers, … Their principal was Diojánes, the great Roman king. [English pp. 8-9]",
+   "attribution": "Seven sages of al-Rūm, led by Diyūjānis.",
+   "signs": 28,
+   "order": "abjad (ا ب ج د ه و ز ح ط ي ك ل م ن س ع ف ص ق ر ش ت ث خ ذ ض ظ غ)",
+   "kind": "The alphabets of the sages",
+   "valuesPrinted": "yes: an Arabic letter printed under each sign",
+   "legibility": "clear",
+   "seq": 39,
+   "kindNote": "",
+   "chosenToTrace": false
+  },
+  {
+   "id": "zusim",
+   "chapter": "Bāb IV, faṣl 21",
+   "page": {
+    "printed": "Arabic p. 43",
+    "leaf": 180,
+    "n": 179
+   },
+   "headingArabic": "الفصل الحادي والعشرون من الباب الرابع في صفة قلم الحكيم زوسيم العبري وهو القلم الذي اصطلح عليه حكما العبرانيين من القدما . ورمزوا به كتب الحكمة الشريفة . وكانت موجودة في القدس",
+   "headingHammer": "SECTION XXI. The alphabet of Zosimus, a Jew philosopher, (v. orig. p. 43.) … [English p. 9]",
+   "attribution": "The Hebrew sage Zūsīm.",
+   "signs": 28,
+   "order": "alphabetical (hijāʾī: ا ب ت ث ج ح خ د ذ ر ز س ش ص ض ط ظ ع غ ف ق ك ل م ن ه و ي)",
+   "legibility": "clear; partly pictorial (birds, fish)",
+   "kind": "The alphabets of the sages",
+   "valuesPrinted": "yes: an Arabic letter printed under each sign",
+   "seq": 40,
+   "kindNote": "",
+   "chosenToTrace": false
+  },
+  {
+   "id": "marshul",
+   "chapter": "Bāb IV, faṣl 22",
+   "page": {
+    "printed": "Arabic p. 44",
+    "leaf": 179,
+    "n": 178
+   },
+   "headingArabic": "الفصل الثاني والعشرون من الباب الرابع في صفة قلم الحكيم مارشول صاحب العجايب والغرايب الذي الف الكتب في العلوم والفنون",
+   "headingHammer": "SECTION XXII. The alphabet of Marshol the philosopher, (v. orig. p. 44.) [English p. 9]",
+   "attribution": "The sage Mārshūl.",
+   "signs": 28,
+   "order": "abjad (ا ب ج د ه و ز ح ط ي ك ل م ن س ع ف ص ق ر ش ت ث خ ذ ض ظ غ)",
+   "kind": "The alphabets of the sages",
+   "valuesPrinted": "yes: an Arabic letter printed under each sign",
+   "legibility": "clear",
+   "seq": 41,
+   "kindNote": "",
+   "chosenToTrace": false
+  },
+  {
+   "id": "arkaghanis",
+   "chapter": "Bāb IV, faṣl 23",
+   "page": {
+    "printed": "Arabic p. 45",
+    "leaf": 178,
+    "n": 177
+   },
+   "headingArabic": "الفصل الثالث والعشرون من الباب الرابع في صفة قلم الحكيم اركغانيس اليوناني صاحب التراكيب العجيبة . والاخلاط والدخن الغريبة . واعمال الترياقات الملوكية . والادوية العجيبة الفعل والتاثيرات",
+   "headingHammer": "SECTION XXIII. The alphabet of Arcadjinis the Greek philosopher, (v. orig. p. 45.) [English p. 9]",
+   "attribution": "The Greek sage Arkaghānis.",
+   "signs": 27,
+   "valuesPrinted": "yes, but ه is not printed",
+   "order": "alphabetical (ه skipped)",
+   "kind": "The alphabets of the sages",
+   "legibility": "clear",
+   "seq": 42,
+   "kindNote": "",
+   "chosenToTrace": false
+  },
+  {
+   "id": "aflatun-tree",
+   "chapter": "Bāb IV, faṣl 24",
+   "page": {
+    "printed": "Arabic p. 46",
+    "leaf": 177,
+    "n": 176
+   },
+   "headingArabic": "الفصل الرابع والعشرون من الباب الرابع في صفة القلم المشجر الطبيعي لافلاطون الحكيم ذكر انه جرب لكل حرف خواص ومنافع لامور شتي",
+   "headingHammer": "SECTION XXIV. The alphabet of Plato the Greek philosopher, (v. orig. p. 46.) It is said that each letter of this alphabet had different imports, according to the affair and thing treated of. [English p. 9]",
+   "attribution": "\"The natural tree pen\" of the sage Aflāṭūn (Plato).",
+   "signs": 30,
+   "valuesPrinted": "yes; ع and ه are printed again at the end of the last row",
+   "order": "abjad (with ع and ه repeated at the end)",
+   "legibility": "clear; stem-and-branch signs",
+   "kind": "The alphabets of the sages",
+   "kindNote": "The second \"tree\" (mushajjar) alphabet; Hammer's English does not call it so.",
+   "seq": 43,
+   "chosenToTrace": false
+  },
+  {
+   "id": "zuhal",
+   "chapter": "Bāb V, faṣl 1",
+   "page": {
+    "printed": "Arabic p. 47",
+    "leaf": 176,
+    "n": 175
+   },
+   "headingArabic": "الباب الخامس من كتاب شوق المستهام في معرفة رموز الاقلام في معرفة اقلام الكواكب السبعة من زحل الي القمر . الفصل الاول من الباب الخامس في صفة معرفة قلم كوكب زحل",
+   "headingHammer": "CHAPTER V. The Alphabets of the Seven Planets. SECTION I. The alphabet of Saturn, (v. orig. p. 47.) [English p. 10]",
+   "attribution": "The planet Saturn (Zuḥal).",
+   "signs": 28,
+   "order": "abjad (ا ب ج د ه و ز ح ط ي ك ل م ن س ع ف ص ق ر ش ت ث خ ذ ض ظ غ)",
+   "legibility": "clear; some signs pictorial (a skull-like face)",
+   "kind": "The planetary alphabets",
+   "valuesPrinted": "yes: an Arabic letter printed under each sign",
+   "seq": 44,
+   "kindNote": "",
+   "chosenToTrace": false
+  },
+  {
+   "id": "mushtari",
+   "chapter": "Bāb V, faṣl 2",
+   "page": {
+    "printed": "Arabic p. 48",
+    "leaf": 175,
+    "n": 174
+   },
+   "headingArabic": "الفصل الثاني من الباب الخامس في صفة قلم كوكب المشتري وهيته كما تري فافهم",
+   "headingHammer": "SECTION II. The alphabet of Jupiter, (v. orig. p. 48.) [English p. 10]",
+   "attribution": "The planet Jupiter (al-Mushtarī).",
+   "signs": 28,
+   "order": "abjad (ا ب ج د ه و ز ح ط ي ك ل م ن س ع ف ص ق ر ش ت ث خ ذ ض ظ غ)",
+   "legibility": "clear; ring-ended signs, a few with heavy filled ends",
+   "kind": "The planetary alphabets",
+   "valuesPrinted": "yes: an Arabic letter printed under each sign",
+   "job": {
+    "id": "jupiter",
+    "use": "trace",
+    "dir": "plates/ibn-wahshiyya/jupiter"
+   },
+   "seq": 45,
+   "kindNote": "",
+   "chosenToTrace": true
+  },
+  {
+   "id": "mirrikh",
+   "chapter": "Bāb V, faṣl 3",
+   "page": {
+    "printed": "Arabic p. 49",
+    "leaf": 174,
+    "n": 173
+   },
+   "headingArabic": "الفصل الثالث من الباب الخامس في صفة قلم الحكيم بهرام وهو قلم كوكب المريخ كما تراه",
+   "headingHammer": "SECTION III. The alphabet of Mars, or philosopher Behram, (v. orig. p. 49.) [English p. 10]",
+   "attribution": "The sage Bahrām, \"the pen of the planet Mars\".",
+   "signs": 28,
+   "order": "abjad (ا ب ج د ه و ز ح ط ي ك ل م ن س ع ف ص ق ر ش ت ث خ ذ ض ظ غ)",
+   "kind": "The planetary alphabets",
+   "valuesPrinted": "yes: an Arabic letter printed under each sign",
+   "legibility": "clear",
+   "seq": 46,
+   "kindNote": "",
+   "chosenToTrace": false
+  },
+  {
+   "id": "shams",
+   "chapter": "Bāb V, faṣl 4",
+   "page": {
+    "printed": "Arabic p. 50",
+    "leaf": 173,
+    "n": 172
+   },
+   "headingArabic": "الفصل الرابع من الباب الخامس في صفة قلم كوكب الشمس سلطان الفلك",
+   "headingHammer": "SECTION IV. The alphabet of the sun, the lord of heaven, (v. orig. p. 50.) [English p. 10]",
+   "attribution": "The Sun, \"sultan of the sphere\".",
+   "signs": 28,
+   "order": "abjad (ا ب ج د ه و ز ح ط ي ك ل م ن س ع ف ص ق ر ش ت ث خ ذ ض ظ غ)",
+   "legibility": "clear; rayed discs and a sun face (pictorial)",
+   "kind": "The planetary alphabets",
+   "valuesPrinted": "yes: an Arabic letter printed under each sign",
+   "seq": 47,
+   "kindNote": "",
+   "chosenToTrace": false
+  },
+  {
+   "id": "zuhara",
+   "chapter": "Bāb V, faṣl 5",
+   "page": {
+    "printed": "Arabic p. 51",
+    "leaf": 172,
+    "n": 171
+   },
+   "headingArabic": "الفصل الخامس من الباب الخامس في صفة قلم كوكب الزهره اناهيد مطربة الفلك كما تري",
+   "headingHammer": "SECTION V. The alphabet of Venus, Anaitis, the celestial dancer, (v. orig. p. 51.) [English p. 10]",
+   "attribution": "Venus, \"Anāhīd, singer of the sphere\".",
+   "signs": 28,
+   "order": "abjad (ا ب ج د ه و ز ح ط ي ك ل م ن س ع ف ص ق ر ش ت ث خ ذ ض ظ غ)",
+   "kind": "The planetary alphabets",
+   "valuesPrinted": "yes: an Arabic letter printed under each sign",
+   "legibility": "clear",
+   "seq": 48,
+   "kindNote": "",
+   "chosenToTrace": false
+  },
+  {
+   "id": "utarid",
+   "chapter": "Bāb V, faṣl 6",
+   "page": {
+    "printed": "Arabic p. 52",
+    "leaf": 171,
+    "n": 170
+   },
+   "headingArabic": "الفصل السادس من الباب الخامس في صفة قلم كوكب عطارد وهو هرمس كاتب الفلك كما تري",
+   "headingHammer": "SECTION VI. The alphabet of Mercury or Hermes, the secretary of heaven, (v. orig. p. 52.) [English p. 10]",
+   "attribution": "Mercury, \"who is Hermes, scribe of the sphere\".",
+   "signs": 28,
+   "order": "abjad (ا ب ج د ه و ز ح ط ي ك ل م ن س ع ف ص ق ر ش ت ث خ ذ ض ظ غ)",
+   "legibility": "clear; linear stems with cross-bars",
+   "kind": "The planetary alphabets",
+   "kindNote": "Also tied to Hermes by the heading.",
+   "valuesPrinted": "yes: an Arabic letter printed under each sign",
+   "seq": 49,
+   "chosenToTrace": false
+  },
+  {
+   "id": "qamar",
+   "chapter": "Bāb V, faṣl 7",
+   "page": {
+    "printed": "Arabic p. 53",
+    "leaf": 170,
+    "n": 169
+   },
+   "headingArabic": "الفصل السابع من الباب الخامس في صفة قلم كوكب القمر كما تري",
+   "headingHammer": "SECTION VII. The alphabet of the moon, (v. orig. p. 53.) [English p. 10]",
+   "attribution": "The Moon.",
+   "signs": 28,
+   "order": "abjad (ا ب ج د ه و ز ح ط ي ك ل م ن س ع ف ص ق ر ش ت ث خ ذ ض ظ غ)",
+   "legibility": "clear; crescents and circles",
+   "kind": "The planetary alphabets",
+   "valuesPrinted": "yes: an Arabic letter printed under each sign",
+   "seq": 50,
+   "kindNote": "",
+   "chosenToTrace": false
+  },
+  {
+   "id": "zodiac-hamal",
+   "chapter": "Bāb VI, faṣl 1",
+   "page": {
+    "printed": "Arabic p. 54",
+    "leaf": 169,
+    "n": 168
+   },
+   "headingArabic": "الباب السادس من شوق المستهام في معرفة رموز الاقلام في ذكر اقلام البروج الاثنى عشر من الحمل الي الحوت . [الفصل الاول … الحمل: section line not transcribed]",
+   "headingHammer": "CHAPTER VI. The Alphabets of the Twelve Constellations. SECTION I. The alphabet of Aries, under the influence of Mars, (v. orig. p. 54.) [English p. 10]",
+   "attribution": "The sign Aries (with its planet, where the heading names one).",
+   "signs": 28,
+   "valuesPrinted": "yes: an Arabic letter printed under each sign",
+   "order": "abjad (ا ب ج د ه و ز ح ط ي ك ل م ن س ع ف ص ق ر ش ت ث خ ذ ض ظ غ)",
+   "kind": "Outside the register",
+   "kindNote": "Book's class: the alphabets of the twelve signs of the zodiac (Bāb VI). Nearest register kind: The planetary alphabets.",
+   "legibility": "clear",
+   "seq": 51,
+   "chosenToTrace": false
+  },
+  {
+   "id": "zodiac-thawr",
+   "chapter": "Bāb VI, faṣl 2",
+   "page": {
+    "printed": "Arabic p. 55",
+    "leaf": 168,
+    "n": 167
+   },
+   "headingArabic": "الفصل الثاني من الباب السادس في صفة قلم برج الثور وكوكبه الزهرة",
+   "headingHammer": "SECTION II. The alphabet of Taurus, under the influence of Venus, (v. orig. p. 55.) [English p. 11]",
+   "attribution": "The sign Taurus (with its planet, where the heading names one).",
+   "signs": 28,
+   "valuesPrinted": "partly: the last letter of row 2 reads ض where ص is expected (unresolved)",
+   "order": "abjad (ا ب ج د ه و ز ح ط ي ك ل م ن س ع ف ص ق ر ش ت ث خ ذ ض ظ غ)",
+   "kind": "Outside the register",
+   "kindNote": "Book's class: the alphabets of the twelve signs of the zodiac (Bāb VI). Nearest register kind: The planetary alphabets.",
+   "legibility": "clear",
+   "seq": 52,
+   "chosenToTrace": false
+  },
+  {
+   "id": "zodiac-jawza",
+   "chapter": "Bāb VI, faṣl 3",
+   "page": {
+    "printed": "Arabic p. 56",
+    "leaf": 167,
+    "n": 166
+   },
+   "headingArabic": "الفصل الثالث من الباب السادس في صفة قلم برج الجوزا وكوكبه عطارد",
+   "headingHammer": "SECTION III. The alphabet of the Gemini, under the influence of Mercury, (v. orig. p. 66.) [sic: the table is on p. 56] [English p. 11]",
+   "attribution": "The sign Gemini (with its planet, where the heading names one).",
+   "signs": 28,
+   "valuesPrinted": "yes: an Arabic letter printed under each sign",
+   "order": "abjad (ا ب ج د ه و ز ح ط ي ك ل م ن س ع ف ص ق ر ش ت ث خ ذ ض ظ غ)",
+   "kind": "Outside the register",
+   "kindNote": "Book's class: the alphabets of the twelve signs of the zodiac (Bāb VI). Nearest register kind: The planetary alphabets.",
+   "legibility": "clear",
+   "seq": 53,
+   "chosenToTrace": false
+  },
+  {
+   "id": "zodiac-saratan",
+   "chapter": "Bāb VI, faṣl 4",
+   "page": {
+    "printed": "Arabic p. 57",
+    "leaf": 166,
+    "n": 165
+   },
+   "headingArabic": "الفصل الرابع من الباب السادس في صفة قلم برج السرطان وكوكبه القمر",
+   "headingHammer": "SECTION IV. The alphabet of Cancer, under the influence of the Moon, (v. orig. p. 57.) [English p. 11]",
+   "attribution": "The sign Cancer (with its planet, where the heading names one).",
+   "signs": 28,
+   "valuesPrinted": "yes: an Arabic letter printed under each sign",
+   "order": "abjad (ا ب ج د ه و ز ح ط ي ك ل م ن س ع ف ص ق ر ش ت ث خ ذ ض ظ غ)",
+   "kind": "Outside the register",
+   "kindNote": "Book's class: the alphabets of the twelve signs of the zodiac (Bāb VI). Nearest register kind: The planetary alphabets.",
+   "legibility": "clear",
+   "seq": 54,
+   "chosenToTrace": false
+  },
+  {
+   "id": "zodiac-asad",
+   "chapter": "Bāb VI, faṣl 5",
+   "page": {
+    "printed": "Arabic p. 58",
+    "leaf": 165,
+    "n": 164
+   },
+   "headingArabic": "الفصل الخامس من الباب السادس في صفة قلم برج الاسد وكوكبه الشمس",
+   "headingHammer": "SECTION V. The alphabet of Leo, under the influence of the Sun, (v. orig. p. 58.) [English p. 11]",
+   "attribution": "The sign Leo (with its planet, where the heading names one).",
+   "signs": 28,
+   "valuesPrinted": "yes: an Arabic letter printed under each sign",
+   "order": "abjad (ا ب ج د ه و ز ح ط ي ك ل م ن س ع ف ص ق ر ش ت ث خ ذ ض ظ غ)",
+   "kind": "Outside the register",
+   "kindNote": "Book's class: the alphabets of the twelve signs of the zodiac (Bāb VI). Nearest register kind: The planetary alphabets.",
+   "legibility": "clear",
+   "seq": 55,
+   "chosenToTrace": false
+  },
+  {
+   "id": "zodiac-sunbula",
+   "chapter": "Bāb VI, faṣl 6",
+   "page": {
+    "printed": "Arabic p. 59",
+    "leaf": 164,
+    "n": 163
+   },
+   "headingArabic": "الفصل السادس من الباب السادس في صفة قلم برج السنبلة وعطارد",
+   "headingHammer": "SECTION VI. The alphabet of the Virgin, influenced by Mercury, (v. orig. p. 59.) [English p. 11]",
+   "attribution": "The sign Virgo (with its planet, where the heading names one).",
+   "signs": 28,
+   "valuesPrinted": "yes: an Arabic letter printed under each sign",
+   "order": "abjad (ا ب ج د ه و ز ح ط ي ك ل م ن س ع ف ص ق ر ش ت ث خ ذ ض ظ غ)",
+   "kind": "Outside the register",
+   "kindNote": "Book's class: the alphabets of the twelve signs of the zodiac (Bāb VI). Nearest register kind: The planetary alphabets.",
+   "legibility": "clear",
+   "seq": 56,
+   "chosenToTrace": false
+  },
+  {
+   "id": "zodiac-mizan",
+   "chapter": "Bāb VI, faṣl 7",
+   "page": {
+    "printed": "Arabic p. 60",
+    "leaf": 163,
+    "n": 162
+   },
+   "headingArabic": "الفصل السابع من الباب السادس في صفة قلم برج الميزان",
+   "headingHammer": "SECTION VII. The alphabet of Libra, (v. orig. p. 60.) [English p. 11]",
+   "attribution": "The sign Libra (with its planet, where the heading names one).",
+   "signs": 28,
+   "valuesPrinted": "yes: an Arabic letter printed under each sign",
+   "order": "abjad (ا ب ج د ه و ز ح ط ي ك ل م ن س ع ف ص ق ر ش ت ث خ ذ ض ظ غ)",
+   "kind": "Outside the register",
+   "kindNote": "Book's class: the alphabets of the twelve signs of the zodiac (Bāb VI). Nearest register kind: The planetary alphabets.",
+   "legibility": "clear",
+   "seq": 57,
+   "chosenToTrace": false
+  },
+  {
+   "id": "zodiac-aqrab",
+   "chapter": "Bāb VI, faṣl 8",
+   "page": {
+    "printed": "Arabic p. 61",
+    "leaf": 162,
+    "n": 161
+   },
+   "headingArabic": "الفصل الثامن من الباب السادس في صفة قلم برج العقرب وهذا القلم من جملة الاقلام المكتومة في دخاير الكلدانيين . وقد رمزوا به كتب الارصاد والاسرار التي تتعلق بكوكب المريخ . الذي فاضت روحانية ما … علي الكاهن العارف اربياسيوس النبطي",
+   "headingHammer": "SECTION VIII. The alphabet of Scorpio, (v. orig. p. 61.) This alphabet was very much used by the Chaldeans … transmitted by spiritual inspiration through Marshimine to the soothsayer Arbiasios, the Nabathean. [English p. 11]",
+   "attribution": "The sign Scorpio (with its planet, where the heading names one).",
+   "signs": 28,
+   "valuesPrinted": "yes: an Arabic letter printed under each sign",
+   "order": "abjad (ا ب ج د ه و ز ح ط ي ك ل م ن س ع ف ص ق ر ش ت ث خ ذ ض ظ غ)",
+   "kind": "Outside the register",
+   "kindNote": "Book's class: the alphabets of the twelve signs of the zodiac (Bāb VI). Nearest register kind: The planetary alphabets.",
+   "legibility": "clear",
+   "seq": 58,
+   "chosenToTrace": false
+  },
+  {
+   "id": "zodiac-qaws",
+   "chapter": "Bāb VI, faṣl 9",
+   "page": {
+    "printed": "Arabic p. 62",
+    "leaf": 161,
+    "n": 160
+   },
+   "headingArabic": "الفصل التاسع من الباب السادس في صفة قلم برج القوس وكوكبه المشتري",
+   "headingHammer": "SECTION IX. The alphabet of Sagittarius, influenced by Jupiter, (v. orig. p. 62.) [English p. 11]",
+   "attribution": "The sign Sagittarius (with its planet, where the heading names one).",
+   "signs": 28,
+   "valuesPrinted": "yes: an Arabic letter printed under each sign",
+   "order": "abjad (ا ب ج د ه و ز ح ط ي ك ل م ن س ع ف ص ق ر ش ت ث خ ذ ض ظ غ)",
+   "kind": "Outside the register",
+   "kindNote": "Book's class: the alphabets of the twelve signs of the zodiac (Bāb VI). Nearest register kind: The planetary alphabets.",
+   "legibility": "clear",
+   "seq": 59,
+   "chosenToTrace": false
+  },
+  {
+   "id": "zodiac-jady",
+   "chapter": "Bāb VI, faṣl 10",
+   "page": {
+    "printed": "Arabic p. 63",
+    "leaf": 160,
+    "n": 159
+   },
+   "headingArabic": "الفصل العاشر من الباب السادس في صفة قلم برج الجدي وزحل وهذا القلم مما اختص به حكما بابل والفرس واخفوه . ثم ظهر بعد انقراضهم في كتب اسرارهم وخبايا كنوزهم التي نهبتها اليونان . ثم استعمله حكما مصر في علم الفلك",
+   "headingHammer": "SECTION X. The alphabet of Capricorn under the influence of Saturn, (v. orig. p. 63.) … [English pp. 11-12]",
+   "attribution": "The sign Capricorn (with its planet, where the heading names one).",
+   "signs": 28,
+   "valuesPrinted": "yes: an Arabic letter printed under each sign",
+   "order": "abjad (ا ب ج د ه و ز ح ط ي ك ل م ن س ع ف ص ق ر ش ت ث خ ذ ض ظ غ)",
+   "kind": "Outside the register",
+   "kindNote": "Book's class: the alphabets of the twelve signs of the zodiac (Bāb VI). Nearest register kind: The planetary alphabets.",
+   "legibility": "clear",
+   "seq": 60,
+   "chosenToTrace": false
+  },
+  {
+   "id": "zodiac-dalw",
+   "chapter": "Bāb VI, faṣl 11",
+   "page": {
+    "printed": "Arabic p. 64",
+    "leaf": 159,
+    "n": 158
+   },
+   "headingArabic": "الفصل الحادي عشر من الباب السادس في صفة قلم برج الدلو كوكبه زحل وهو من جملة الاقلام المنسوبة للكلدانيين والصابيين وبه رتبوا كتب صلواتهم ودعواتهم واسرار نواميسهم الخاصة . مما فاضت به عليهم روحانيته",
+   "headingHammer": "SECTION XI. The alphabet of the sign Aquarius, under the influence of Saturn, (v. orig. p. 64.) … [English p. 12]",
+   "attribution": "The sign Aquarius (with its planet, where the heading names one).",
+   "signs": 30,
+   "valuesPrinted": "partly: 30 signs; the last row (3 signs) carries غ and two further labels not resolved",
+   "order": "abjad (ا ب ج د ه و ز ح ط ي ك ل م ن س ع ف ص ق ر ش ت ث خ ذ ض ظ غ)",
+   "kind": "Outside the register",
+   "kindNote": "Book's class: the alphabets of the twelve signs of the zodiac (Bāb VI). Nearest register kind: The planetary alphabets.",
+   "legibility": "clear",
+   "seq": 61,
+   "chosenToTrace": false
+  },
+  {
+   "id": "zodiac-hut",
+   "chapter": "Bāb VI, faṣl 12",
+   "page": {
+    "printed": "Arabic p. 65",
+    "leaf": 158,
+    "n": 157
+   },
+   "headingArabic": "الفصل الثاني عشر من الباب السادس في صفة قلم برج الحوت",
+   "headingHammer": "SECTION XII. The alphabet of Pisces, (v. orig. p. 65.) [English p. 12]",
+   "attribution": "The sign Pisces (with its planet, where the heading names one).",
+   "signs": 28,
+   "valuesPrinted": "yes: an Arabic letter printed under each sign",
+   "order": "abjad (ا ب ج د ه و ز ح ط ي ك ل م ن س ع ف ص ق ر ش ت ث خ ذ ض ظ غ)",
+   "kind": "Outside the register",
+   "kindNote": "Book's class: the alphabets of the twelve signs of the zodiac (Bāb VI). Nearest register kind: The planetary alphabets.",
+   "legibility": "clear",
+   "seq": 62,
+   "chosenToTrace": false
+  },
+  {
+   "id": "king-barduwis",
+   "chapter": "Bāb VII, faṣl 1",
+   "page": {
+    "printed": "Arabic p. 68",
+    "leaf": 155,
+    "n": 154
+   },
+   "headingArabic": "الفصل الاول من الباب السابع في صفة قلم الملك بردويس السرياني وقد رمز جميع كتبه واسراره بهذا القلم الذي اخترعه من دقايق الحكمة الالهية والنواميس الطبيعية . وهذه صفته كما تري",
+   "headingHammer": "CHAPTER VII. Alphabets of ancient Kings, viz: the Kings of Syria, the Hermesian Kings of Egypt, the Pharaohs, the Canaanites, Curds, Casdanians, Persians and Cophts. SECTION I. The alphabet of king Berdois the Syrian, (v. orig. p. 68.) [English p. 12]",
+   "attribution": "King Bardūwīs the Syrian.",
+   "signs": 29,
+   "order": "alphabetical (hijāʾī: ا ب ت ث ج ح خ د ذ ر ز س ش ص ض ط ظ ع غ ف ق ك ل م ن ه و ي), with lām-alif (لا) as an extra sign",
+   "kind": "Outside the register",
+   "legibility": "clear",
+   "kindNote": "Book's class: the alphabets of ancient kings (Bāb VII). Not in the register; nearest: Scripts of the ancient peoples.",
+   "valuesPrinted": "yes: an Arabic letter printed under each sign",
+   "seq": 63,
+   "chosenToTrace": false
+  },
+  {
+   "id": "king-rasyut",
+   "chapter": "Bāb VII, faṣl 2",
+   "page": {
+    "printed": "Arabic p. 69",
+    "leaf": 154,
+    "n": 153
+   },
+   "headingArabic": "الفصل الثاني من الباب السابع في ذكر قلم الملك رسيوت الفرعوني المصري الذي وضع الارصاد والطلاسم العجيبة . وكلها بهذا القلم القديم الوضع",
+   "headingHammer": "SECTION II. The alphabet of king Resiut, the Egyptian Pharaoh, (v. orig. p. 69.) [English p. 12]",
+   "attribution": "King Rasyūt, the Pharaonic Egyptian.",
+   "signs": 28,
+   "order": "alphabetical (hijāʾī: ا ب ت ث ج ح خ د ذ ر ز س ش ص ض ط ظ ع غ ف ق ك ل م ن ه و ي)",
+   "kind": "Outside the register",
+   "legibility": "clear",
+   "kindNote": "Book's class: the alphabets of ancient kings (Bāb VII). Not in the register; nearest: Scripts of the ancient peoples.",
+   "valuesPrinted": "yes: an Arabic letter printed under each sign",
+   "seq": 64,
+   "chosenToTrace": false
+  },
+  {
+   "id": "king-kimas",
+   "chapter": "Bāb VII, faṣl 3",
+   "page": {
+    "printed": "Arabic p. 70",
+    "leaf": 153,
+    "n": 152
+   },
+   "headingArabic": "الفصل الثالث من الباب السابع في ذكر قلم الملك كيماس الهرمسي الذي كتب في علم الفلك نحو مايتين كتاب . وفي الاسرار الطبيعية . وفي خواص النبات والعقاقير . وصفته هكذا",
+   "headingHammer": "SECTION III. The alphabet of king Kimas the Hermesian, (v. orig. p. 70.) [English p. 13]",
+   "attribution": "King Kīmās the Hermesian.",
+   "signs": 29,
+   "order": "alphabetical (hijāʾī: ا ب ت ث ج ح خ د ذ ر ز س ش ص ض ط ظ ع غ ف ق ك ل م ن ه و ي), with lām-alif (لا) as an extra sign",
+   "kind": "Outside the register",
+   "legibility": "clear",
+   "kindNote": "Book's class: the alphabets of ancient kings (Bāb VII). Not in the register; the king is called Hermesian.",
+   "valuesPrinted": "yes: an Arabic letter printed under each sign",
+   "seq": 65,
+   "chosenToTrace": false
+  },
+  {
+   "id": "king-mihrarish",
+   "chapter": "Bāb VII, faṣl 4",
+   "page": {
+    "printed": "Arabic p. 71",
+    "leaf": 152,
+    "n": 151
+   },
+   "headingArabic": "الفصل الرابع من الباب السابع في ذكر قلم الملك مهراريش وكان كاهنا بارعا في العلوم الحكمية . والنواميس الالهية . والف كتبا كثيرة في ساير الفنون . وهذا القلم من جملة اقلامه كما تري",
+   "headingHammer": "SECTION IV. The alphabet of king Mehrarish, (v. orig. p. 71.) [English p. 13]",
+   "attribution": "King Mihrārīsh, a priest.",
+   "signs": 28,
+   "order": "alphabetical (hijāʾī: ا ب ت ث ج ح خ د ذ ر ز س ش ص ض ط ظ ع غ ف ق ك ل م ن ه و ي)",
+   "kind": "Outside the register",
+   "legibility": "clear; a bird sign among them",
+   "kindNote": "Book's class: the alphabets of ancient kings (Bāb VII). Not in the register; nearest: Scripts of the ancient peoples.",
+   "valuesPrinted": "yes: an Arabic letter printed under each sign",
+   "seq": 66,
+   "chosenToTrace": false
+  },
+  {
+   "id": "king-tabrinus",
+   "chapter": "Bāb VII, faṣl 5",
+   "page": {
+    "printed": "Arabic p. 72",
+    "leaf": 151,
+    "n": 150
+   },
+   "headingArabic": "الفصل الخامس من الباب السابع في ذكر قلم الملك طبرينوس الكاهن وهو من جملة الاقلام التي كانوا الفراعنة يكتبوا بها علي النواويس",
+   "headingHammer": "SECTION V. The alphabet of king Taberinos the soothsayer, (v. orig. p. 72.) [English p. 13]",
+   "attribution": "King Ṭabrīnūs the priest; a pen the Pharaohs wrote on the nawāwīs.",
+   "signs": 28,
+   "order": "alphabetical (hijāʾī: ا ب ت ث ج ح خ د ذ ر ز س ش ص ض ط ظ ع غ ف ق ك ل م ن ه و ي)",
+   "kind": "Outside the register",
+   "legibility": "clear",
+   "kindNote": "Book's class: the alphabets of ancient kings (Bāb VII). Not in the register; nearest: Scripts of the ancient peoples.",
+   "valuesPrinted": "yes: an Arabic letter printed under each sign",
+   "seq": 67,
+   "chosenToTrace": false
+  },
+  {
+   "id": "king-diyusmus",
+   "chapter": "Bāb VII, faṣl 6",
+   "page": {
+    "printed": "Arabic p. 73",
+    "leaf": 150,
+    "n": 149
+   },
+   "headingArabic": "الفصل السادس من الباب السابع في ذكر قلم الملك ديوسموس المصري احد الفراعنة المشهورين بالكهانة السحر وانواع الطلسمات والنارنجات . وهذه صورته هكذا",
+   "headingHammer": "SECTION VI. The alphabet of king Diosmos, the Egyptian, (v. orig. p. 73.) [English p. 13]",
+   "attribution": "King Diyūsmūs the Egyptian, one of the Pharaohs.",
+   "signs": 28,
+   "order": "alphabetical (hijāʾī: ا ب ت ث ج ح خ د ذ ر ز س ش ص ض ط ظ ع غ ف ق ك ل م ن ه و ي)",
+   "kind": "Outside the register",
+   "legibility": "clear; a bird sign among them",
+   "kindNote": "Book's class: the alphabets of ancient kings (Bāb VII). Not in the register; nearest: Scripts of the ancient peoples.",
+   "valuesPrinted": "yes: an Arabic letter printed under each sign",
+   "seq": 68,
+   "chosenToTrace": false
+  },
+  {
+   "id": "king-barhimiyus",
+   "chapter": "Bāb VII, faṣl 7",
+   "page": {
+    "printed": "Arabic p. 74",
+    "leaf": 149,
+    "n": 148
+   },
+   "headingArabic": "الفصل السابع من الباب السابع في ذكر قلم الملك برهميوس المصري هذا القلم من قديم الزمان كانت سحرا فرعون ومصر تستعمله . ثم انتقل الي كهنا بلاد الهند والصين",
+   "headingHammer": "SECTION VII. The alphabet of king Berhemios the Egyptian, (v. orig. p. 74.) [English p. 13]",
+   "attribution": "King Barhimiyūs the Egyptian.",
+   "signs": 28,
+   "order": "alphabetical (hijāʾī: ا ب ت ث ج ح خ د ذ ر ز س ش ص ض ط ظ ع غ ف ق ك ل م ن ه و ي)",
+   "kind": "Outside the register",
+   "legibility": "clear",
+   "kindNote": "Book's class: the alphabets of ancient kings (Bāb VII). Not in the register; nearest: Scripts of the ancient peoples.",
+   "valuesPrinted": "yes: an Arabic letter printed under each sign",
+   "seq": 69,
+   "chosenToTrace": false
+  },
+  {
+   "id": "king-sa",
+   "chapter": "Bāb VII, faṣl 8",
+   "page": {
+    "printed": "Arabic p. 75",
+    "leaf": 148,
+    "n": 147
+   },
+   "headingArabic": "الفصل الثامن من الباب السابع في ذكر قلم الملك صا[ااا] الكاهن [name printed as صا followed by repeated alifs] وهو من السحرا السبعة . الذين كانوا ملوكا وحكما وكهنا وسحرا وفلاسفة بمصر . وملكوها وعمروها . وبنوا فيها مدنا عظيمة الي الان",
+   "headingHammer": "SECTION VIII. The alphabet of king Saaa, the soothsayer, (v. orig. p. 75.) [English pp. 13-14]",
+   "attribution": "King \"Ṣāaa\" the priest, one of the seven sorcerer-kings of Egypt.",
+   "signs": 29,
+   "order": "alphabetical (hijāʾī: ا ب ت ث ج ح خ د ذ ر ز س ش ص ض ط ظ ع غ ف ق ك ل م ن ه و ي), with lām-alif (لا) as an extra sign",
+   "kind": "Outside the register",
+   "legibility": "clear",
+   "kindNote": "Book's class: the alphabets of ancient kings (Bāb VII). Not in the register; nearest: Scripts of the ancient peoples.",
+   "valuesPrinted": "yes: an Arabic letter printed under each sign",
+   "seq": 70,
+   "chosenToTrace": false
+  },
+  {
+   "id": "king-balbis",
+   "chapter": "Bāb VII, faṣl 9",
+   "page": {
+    "printed": "Arabic p. 76",
+    "leaf": 147,
+    "n": 146
+   },
+   "headingArabic": "الفصل التاسع من الباب السابع في ذكر قلم الملك بلبيس الذي بني مدينة طولها اربعة فراسخ . وصنع فيها عجايب كثيره . وكتب بهذا القلم كتبا كثيرة . وهو هذا",
+   "headingHammer": "SECTION IX. The alphabet of king Belbeis, (v. orig. p. 76.) [English p. 14]",
+   "attribution": "King Balbīs, builder of a city four parasangs long.",
+   "signs": 28,
+   "order": "alphabetical (hijāʾī: ا ب ت ث ج ح خ د ذ ر ز س ش ص ض ط ظ ع غ ف ق ك ل م ن ه و ي)",
+   "kind": "Outside the register",
+   "legibility": "clear",
+   "kindNote": "Book's class: the alphabets of ancient kings (Bāb VII). Not in the register; nearest: Scripts of the ancient peoples.",
+   "valuesPrinted": "yes: an Arabic letter printed under each sign",
+   "seq": 71,
+   "chosenToTrace": false
+  },
+  {
+   "id": "king-qaftarim",
+   "chapter": "Bāb VII, faṣl 10",
+   "page": {
+    "printed": "Arabic p. 77",
+    "leaf": 146,
+    "n": 145
+   },
+   "headingArabic": "الفصل العاشر من الباب السابع في ذكر قلم الملك قفطريم المصري صاحب الطلسمات وارصاد العجيبة . والصور والكنوز الغريبة . وكان هذا القلم كتب به جميع العلوم وهذه صورته",
+   "headingHammer": "SECTION X. The alphabet of king Cophtrim, the Egyptian, (v. orig. p. 77.) [English p. 14]",
+   "attribution": "King Qafṭrīm the Egyptian.",
+   "signs": 28,
+   "order": "alphabetical (hijāʾī: ا ب ت ث ج ح خ د ذ ر ز س ش ص ض ط ظ ع غ ف ق ك ل م ن ه و ي)",
+   "kind": "Outside the register",
+   "legibility": "clear",
+   "kindNote": "Book's class: the alphabets of ancient kings (Bāb VII). Not in the register; nearest: Scripts of the ancient peoples.",
+   "valuesPrinted": "yes: an Arabic letter printed under each sign",
+   "seq": 72,
+   "chosenToTrace": false
+  },
+  {
+   "id": "hieroglyphs-celestial",
+   "chapter": "Bāb VIII, faṣl 1, the celestial signs",
+   "page": {
+    "printed": "Arabic pp. 82-84",
+    "leaves": [
+     141,
+     140,
+     139
+    ],
+    "n": [
+     140,
+     139,
+     138
+    ],
+    "englishReprint": "English pp. 17-18 (leaves 47-48)"
+   },
+   "headingArabic": "الفصل الاول من الباب الثامن في ذكر قلم الحكيم هرمس الاكبر وهو القلم المكتوب علي البرابي والهرمات . والنواويس . والاحجار والهياكل القديمة . من زمن الفراعنة الاول . واعلم ان هذا القلم ليس كساير الاقلام مرتبا علي الحروف بل هو رموز واشارات … [p. 81]; … فاولا نبدا بالاثار العلوية وصور اشكالها الدالة علي اسما[يها] … بلسانهم الهرمسي كما وجدناه . وهذه صورتها كما تري [p. 82]",
+   "headingHammer": "CHAPTER VIII. The Alphabets called Hermesian, viz. of the Disciples of Hermes, or the first dynasty of the Kings in Egypt, as we find them in the Writings of the Ancients. … SECTION I. Alphabet of the philosopher Hermes the great. … Let us begin with the celestial objects, and the figures by which they were expressed in the Hermesian language represented as we have found them. [English pp. 14-18; signs on pp. 17-18]",
+   "attribution": "Hermes al-Akbar (Hammer: Hermes the great); the book says the signs are written on temples, pyramids and coffins from the time of the first Pharaohs.",
+   "signs": "about 44 (English pp. 17-18: 26 + 18)",
+   "valuesPrinted": "not letters: each sign has its meaning printed beneath as an Arabic word (English words in Hammer's reprint)",
+   "order": "by subject (no letter order)",
+   "legibility": "clear; pictorial signs",
+   "kind": "Hieroglyphs read as signs of things and ideas",
+   "seq": 73,
+   "kindNote": "",
+   "chosenToTrace": false
+  },
+  {
+   "id": "hieroglyphs-first-series",
+   "chapter": "Bāb VIII, faṣl 1, martaba 1",
+   "page": {
+    "printed": "Arabic pp. 85-89",
+    "leaves": [
+     138,
+     137,
+     136,
+     135,
+     134
+    ],
+    "n": [
+     137,
+     136,
+     135,
+     134,
+     133
+    ],
+    "englishReprint": "English pp. 19-22 (leaves 49-52)"
+   },
+   "headingArabic": "المرتبة الاولي في ذكر الاسما الحيوانية واشكالها مفردا مفردا من ساير الانواع وافعالها وحركاتها [p. 85]",
+   "headingHammer": "THE FIRST SERIES. Hieroglyphics to express Words relative to Animal Actions and Affections. [English pp. 19-22]",
+   "attribution": "Hermes al-Akbar (Hammer: Hermes the great); the book says the signs are written on temples, pyramids and coffins from the time of the first Pharaohs.",
+   "signs": "about 106 (Arabic pp. 85-89: 21 + 22 + 25 + 25 + 13, counted at sheet scale)",
+   "valuesPrinted": "not letters: each sign has its meaning printed beneath as an Arabic word (English words in Hammer's reprint)",
+   "order": "by subject (no letter order)",
+   "legibility": "clear; pictorial signs",
+   "kind": "Hieroglyphs read as signs of things and ideas",
+   "job": {
+    "id": "first-series-hieroglyphs",
+    "use": "facsimile",
+    "dir": "plates/ibn-wahshiyya/first-series-hieroglyphs"
+   },
+   "seq": 74,
+   "kindNote": "",
+   "chosenToTrace": false
+  },
+  {
+   "id": "hieroglyphs-plants",
+   "chapter": "Bāb VIII, faṣl 1, martaba 2",
+   "page": {
+    "printed": "Arabic pp. 101-107",
+    "leaves": [
+     122,
+     121,
+     120,
+     119,
+     118,
+     117,
+     116
+    ],
+    "n": [
+     121,
+     120,
+     119,
+     118,
+     117,
+     116,
+     115
+    ],
+    "englishReprint": "English pp. 31-35 (leaves 61-65)"
+   },
+   "headingArabic": "المرتبة الثانية في ذكر صور الاشكال الدالة علي ذوات المفردات النباتية وانواعها [p. 91]; في ذكر الاشكال النباتية فافهم [p. 101]",
+   "headingHammer": "SECOND SERIES. Hieroglyphics significant of Words relating to Trees and Plants, and their Produce. [English pp. 31-35]",
+   "attribution": "Hermes al-Akbar (Hammer: Hermes the great); the book says the signs are written on temples, pyramids and coffins from the time of the first Pharaohs.",
+   "signs": "about 132 (Arabic pp. 101-107, counted at sheet scale)",
+   "valuesPrinted": "not letters: each sign has its meaning printed beneath as an Arabic word (English words in Hammer's reprint)",
+   "order": "by subject (no letter order)",
+   "legibility": "clear; pictorial signs",
+   "kind": "Hieroglyphs read as signs of things and ideas",
+   "seq": 75,
+   "kindNote": "",
+   "chosenToTrace": false
+  },
+  {
+   "id": "hieroglyphs-minerals",
+   "chapter": "Bāb VIII, faṣl 1, martaba 3",
+   "page": {
+    "printed": "Arabic pp. 108-113",
+    "leaves": [
+     115,
+     114,
+     113,
+     112,
+     111,
+     110
+    ],
+    "n": [
+     114,
+     113,
+     112,
+     111,
+     110,
+     109
+    ],
+    "englishReprint": "English pp. 36-40 (leaves 66-70)"
+   },
+   "headingArabic": "المرتبة الثالثة في ذكر صور الاشكال المعدنية التي اصطلح عليها الهرامسة الاشراقية والمشايية . وقد ذكرها دوشام الكاهن في كتابه … [p. 107]; في صور الاشكال المعدنية [p. 108]",
+   "headingHammer": "THE FOURTH SERIES. Hieroglyphics expressive of Words and Ideas belonging to Minerals. [English p. 36; English p. 35 calls the same list \"the Third Series of Hieroglyphics\"] [English pp. 36-40]",
+   "attribution": "Hermes al-Akbar (Hammer: Hermes the great); the book says the signs are written on temples, pyramids and coffins from the time of the first Pharaohs.",
+   "signs": "about 119 (Arabic pp. 108-113, counted at sheet scale)",
+   "valuesPrinted": "not letters: each sign has its meaning printed beneath as an Arabic word (English words in Hammer's reprint)",
+   "order": "by subject (no letter order)",
+   "legibility": "clear; pictorial signs",
+   "kind": "Hieroglyphs read as signs of things and ideas",
+   "seq": 76,
+   "kindNote": "",
+   "chosenToTrace": false
+  },
+  {
+   "id": "shishim",
+   "chapter": "al-Khātima al-farīda (Hammer: Appendix)",
+   "page": {
+    "printed": "Arabic p. 114",
+    "leaf": 109,
+    "n": 108
+   },
+   "headingArabic": "الخاتمة الفريدة في ذكر اقلام ادعت طايفة من قوم النبط والكلدانيين والصابية انها كانت تستعمل قبل الطوفان . فاول قلم شيشيم الذي كتب به الصحف علي طين الحكمة . واحرقه بالنار فصار فخارا وهوهذا القلم المبارك كما تراه",
+   "headingHammer": "APPENDIX. Antidiluvian Alphabets preserved by the Nabatheans, Chaldeans, and Sabeans. The first called the Shíshím alphabet, was used for writing sentences of wisdom on clay, which being burnt became pottery (v. orig. p. 114.) [English p. 41]",
+   "attribution": "The antediluvian Shīshīm pen, as claimed by \"a party of the Nabaṭ, the Chaldeans and the Sabians\".",
+   "signs": 28,
+   "order": "abjad (ا ب ج د ه و ز ح ط ي ك ل م ن س ع ف ص ق ر ش ت ث خ ذ ض ظ غ)",
+   "legibility": "clear; linear geometric signs",
+   "kind": "Scripts of the ancient peoples",
+   "kindNote": "Book's class: antediluvian alphabets. Nearest: Scripts of the ancient peoples.",
+   "valuesPrinted": "yes: an Arabic letter printed under each sign",
+   "seq": 77,
+   "chosenToTrace": false
+  },
+  {
+   "id": "pharaonic-antediluvian",
+   "chapter": "al-Khātima al-farīda",
+   "page": {
+    "printed": "Arabic p. 115",
+    "leaf": 108,
+    "n": 107
+   },
+   "headingArabic": "وهذا ايضا قلم قديم تزعم فراعنة مصر انه كان يستعمل قبل الطوفان . وكانوا يتبركون به . ويكتبون بهذا القلم كتب دعواتهم التي يقرونها في هياكلهم قدام اصنامهم . وقد رايت بارض الصعيد نواويسا وبرابي واحجارا مرقومة بهذا القلم . فيحتمل ان يكون ذلك صحيحا كما ذكروه . وتبعت في ذلك راي النبط والكلدانيين وهذه صفة حروفه",
+   "headingHammer": "The following alphabet was also used by the Pharaohs, who convinced of its being an antidiluvian one, used to write with it the books of prayer and liturgies, … I have myself seen in Upper Egypt, inscription tables and stones engraved with this alphabet. … (v. orig. p. 115.) [English p. 41]",
+   "attribution": "An old pen \"the Pharaohs of Egypt claim\" was used before the Flood; the author says he saw it on coffins, temples and stones in Upper Egypt.",
+   "signs": 29,
+   "order": "alphabetical, lām-alif after ي",
+   "kind": "Scripts of the ancient peoples",
+   "kindNote": "Not called Hermesian or hieroglyphic by the book; a letter table of linear signs.",
+   "valuesPrinted": "yes: an Arabic letter printed under each sign",
+   "legibility": "clear",
+   "seq": 78,
+   "chosenToTrace": false
+  },
+  {
+   "id": "syriac-ancient",
+   "chapter": "al-Khātima al-farīda",
+   "page": {
+    "printed": "Arabic p. 117",
+    "leaf": 106,
+    "n": 105
+   },
+   "headingArabic": "صفة القلم السرياني علي راي القدما من الحكما علي هذا الوضع والشكل كما تري",
+   "headingHammer": "The Syrian alphabet had, according to the opinion of the most learned men, the following characters (v. orig. p. 117). [English p. 42]",
+   "attribution": "The Syriac pen \"according to the ancient sages\" (the first of the three original pens, taught to Adam).",
+   "signs": 22,
+   "order": "abjad to ت",
+   "kind": "Scripts of the ancient peoples",
+   "valuesPrinted": "yes: an Arabic letter printed under each sign",
+   "legibility": "clear",
+   "seq": 79,
+   "kindNote": "",
+   "chosenToTrace": false
+  },
+  {
+   "id": "syriac-later",
+   "chapter": "al-Khātima al-farīda",
+   "page": {
+    "printed": "Arabic p. 118",
+    "leaf": 105,
+    "n": 104
+   },
+   "headingArabic": "اعلم ان هذا الوضع علي الرسم القديم . واما في زماننا هذا . فقد وضعوه علي صورة اخري يخالفها في بعض اشكال الحروف كما ترى . وهذه صفته",
+   "headingHammer": "These, however, were the figures of the letters in the earliest ages, which were changed by time, as you may perceive (v. orig. p. 118). [English p. 42]",
+   "attribution": "The Syriac pen as set \"in our time\".",
+   "signs": 21,
+   "valuesPrinted": "yes, but ع is not printed",
+   "order": "abjad to ت (ع skipped)",
+   "kind": "Scripts of the ancient peoples",
+   "legibility": "clear",
+   "seq": 80,
+   "kindNote": "",
+   "chosenToTrace": false
+  },
+  {
+   "id": "hermesian-letters",
+   "chapter": "al-Khātima al-farīda",
+   "page": {
+    "printed": "Arabic pp. 119-121",
+    "leaves": [
+     104,
+     103,
+     102
+    ],
+    "n": [
+     103,
+     102,
+     101
+    ],
+    "englishReprint": "English pp. 43-46 (leaves 73-76), as a Character / Name / Power table"
+   },
+   "headingArabic": "صفة قلم شيشيم الذي تعلمه بالوحي من الله تعالي . وهوايضا مختلف فيه علي اربع روايات . فالاول منها علي راي الهرامسة . والثاني علي راي النبط . والثالث علي راي الصابية . والرابع علي راي الكلدانية … وهذه صفته علي راي الهرامسة [p. 119]; فهذه جملة حروفه وعدتها ثمانية وثلاثين حرفا [p. 121]",
+   "headingHammer": "On the Shímshím Alphabet. It was inspired by divine revelation, and varied in four different manners by the people who used it, viz. the Hermesians, the Nabatheans, the Sabeans, and Chaldeans. … The characters of the Hermesians, with the particular names and powers of their letters. [English p. 43]",
+   "attribution": "The Shīshīm pen \"according to the Harāmisa\" (Hermesians), learned by revelation.",
+   "signs": 37,
+   "valuesPrinted": "yes: an Arabic or Persian letter, or a qualified letter (e.g. نون مد, كاف مايلة), under each sign; the names of the letters are listed on p. 121; Hammer prints names and English powers",
+   "order": "the book's own order, \"contrary to the abjad rule\" (p. 122): ا ي ق غ ب ك ر / ج ش د م ت ه ن / ث و س غ[Hammer: Kh] ز ل ع / ظ ص ذ ط ح ف / ض چ قاف نون-مد پ كاف-مايلة / [p. 121] four more",
+   "legibility": "clear; pictorial signs (birds, vessels, a human figure)",
+   "kind": "Hieroglyphs read as letters",
+   "kindNote": "37 signs counted on the Arabic pages; the text says 38 and Hammer's English table has 38 rows, one of them (Zayimap) with a sign not found on Arabic pp. 119-121 (unresolved).",
+   "job": {
+    "id": "hermesian-letters",
+    "use": "facsimile",
+    "dir": "plates/ibn-wahshiyya/hermesian-letters"
+   },
+   "seq": 81,
+   "chosenToTrace": false
+  },
+  {
+   "id": "hidden-pen",
+   "chapter": "al-Khātima al-farīda",
+   "page": {
+    "printed": "Arabic p. 129",
+    "leaf": 94,
+    "n": 93
+   },
+   "headingArabic": "… وهذا صفة القلم الذي اوعدنا كما تراه . وهو من جملة اقلامهم المكتومة",
+   "headingHammer": "Here follows one of the hidden alphabets above mentioned (see orig. p. 129). [English p. 51]",
+   "attribution": "\"One of their hidden pens\" (of the people described before: the Nabaṭ).",
+   "signs": 27,
+   "valuesPrinted": "yes, but ي is not printed",
+   "order": "abjad (ي skipped)",
+   "kind": "Scripts of the ancient peoples",
+   "legibility": "clear",
+   "seq": 82,
+   "kindNote": "",
+   "chosenToTrace": false
+  },
+  {
+   "id": "sabian",
+   "chapter": "al-Khātima al-farīda",
+   "page": {
+    "printed": "Arabic p. 130",
+    "leaf": 93,
+    "n": 92
+   },
+   "headingArabic": "وهذا صفة قلم الصابية . وهم اصحاب الرصودات والطلسمات والاسرار والنارنجات الخارقة وذكر اغاذيمون انه نقل العلوم الطلسمية عنه . ولم يسبقهم الي ذلك احد من المتقدمين والمتاخرين . فافهم ذلك . وهذا قلمهم",
+   "headingHammer": "The next following alphabet was used by the Sabeans in their talismans, magical alarm-posts, and astrological conjuration tables. Agathodaimon says, that it is from this source he drew the art of his talismans, … (see orig. p. 130.) [English p. 51]",
+   "attribution": "The Sabians; Agathodaimon said to have taken talismanic science from it.",
+   "signs": 28,
+   "order": "abjad (ا ب ج د ه و ز ح ط ي ك ل م ن س ع ف ص ق ر ش ت ث خ ذ ض ظ غ)",
+   "legibility": "clear; partly pictorial",
+   "kind": "Scripts of the ancient peoples",
+   "valuesPrinted": "yes: an Arabic letter printed under each sign",
+   "seq": 83,
+   "kindNote": "",
+   "chosenToTrace": false
+  },
+  {
+   "id": "chaldean-old",
+   "chapter": "al-Khātima al-farīda",
+   "page": {
+    "printed": "Arabic p. 132",
+    "leaf": 91,
+    "n": 90
+   },
+   "headingArabic": "… وهذا صفة قلم الكلدانيين القديم",
+   "headingHammer": "The oldest Chaldean alphabet (see orig. p. 132). [English p. 53]",
+   "attribution": "The Chaldeans (old pen).",
+   "signs": 22,
+   "order": "abjad to ت",
+   "kind": "Scripts of the ancient peoples",
+   "valuesPrinted": "yes: an Arabic letter printed under each sign",
+   "legibility": "clear",
+   "seq": 84,
+   "kindNote": "",
+   "chosenToTrace": false
+  },
+  {
+   "id": "chaldean-other",
+   "chapter": "al-Khātima al-farīda",
+   "page": {
+    "printed": "Arabic p. 133",
+    "leaf": 90,
+    "n": 89
+   },
+   "headingArabic": "صفة قلم اخر من اقلام الكلدانيين",
+   "headingHammer": "Another Chaldean alphabet (see orig. p. 133). [English p. 53]",
+   "attribution": "The Chaldeans (another pen).",
+   "signs": 22,
+   "order": "abjad to ت",
+   "kind": "Scripts of the ancient peoples",
+   "valuesPrinted": "yes: an Arabic letter printed under each sign",
+   "legibility": "clear",
+   "seq": 85,
+   "kindNote": "",
+   "chosenToTrace": false
+  },
+  {
+   "id": "kurdish-claim",
+   "chapter": "al-Khātima al-farīda",
+   "page": {
+    "printed": "Arabic p. 134",
+    "leaf": 89,
+    "n": 88
+   },
+   "headingArabic": "صفة قلم اخر من الاقلام القديمة وفيه حروف زايدة عن القواعد الحرفية . تدعي الاكراد وتزعم انه القلم الذي كتبا به بينوشاد وماسي السوراتي . جميع علومهما وفنونهما وكتبهما بهذا القلم . وهذه صورته كما تري",
+   "headingHammer": "Another old unknown alphabet (see orig. p. 134). This the Curds falsely pretend to be the alphabet, in which Bīnūshād and Māssī Surātī composed all their scientific and mechanical works. [English p. 53]",
+   "attribution": "An ancient pen the Kurds claim for Bīnūshād and Māsī al-Sūrātī.",
+   "signs": 37,
+   "valuesPrinted": "partly: 30 signs are labelled, the 28 abjad letters (row 4 begins with غ) plus پ and چ; a fifth row of 7 signs is unlabelled (\"وباقي هذه الحروف لم وجدنا لها نطق ولا امثال في لغة ولا قلم\", p. 135)",
+   "order": "abjad, then پ چ, then 7 unvalued signs",
+   "kind": "Scripts of the ancient peoples",
+   "legibility": "clear",
+   "seq": 86,
+   "kindNote": "",
+   "chosenToTrace": false
+  }
+ ],
+ "method": "Every page in the scan was viewed; table pages were read at 680-1800 px width, the chosen ones at full resolution. Sign counts were made by eye and are exact for the letter tables unless marked; hieroglyph counts are approximate. Arabic headings are transcribed as printed (no added hamzas or dots; \"ي\" for final ى as in the type); \"…\" marks words not transcribed."
+}

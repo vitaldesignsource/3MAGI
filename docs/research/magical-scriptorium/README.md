@@ -14,6 +14,16 @@ built from.
   for adding the wing.
 - `glyphkit/`: the format for drawn letters (path data on a 100-unit grid),
   a checker and a specimen-sheet renderer.
+- `plates/<item>.manifest.json`: the copy each page's plates and tracings
+  come from, its rights statement and the pages used. For Ibn Waḥshiyya also
+  `plates/ibn-wahshiyya.catalogue.json` (every table of Hammer's 1806 volume,
+  with its Arabic heading, Hammer's English and its page) and
+  `plates/ibn-wahshiyya.source-and-trace.json` (the sourcing, the tracing
+  jobs, the findings that settle the page's text, and the independent
+  checkers' corrections).
+- `traced/<item>/<table>.glyphs.json`: the traced and independently checked
+  letter tables in the glyph kit's format, with each sign's source, notes and
+  the comparison with other copies (no images or cells are kept here).
 
 Letterforms: every remembered form of the Agrippan alphabets, Theban,
 Enochian and the Alphabet of the Magi was rated low confidence by the

@@ -128,12 +128,28 @@ for (const b of library?.books ?? []) push(
         push(MG, pages.has(e.slug) ? 'page' : 'alphabet', '', m.title, (m.otherNames || e.otherNames || []).join(' · '), m.summary, '', url);
         const letters = m.letters || [];
         const shared = sharedNote(letters);
+        // A group that is a printed table (the Shawq's) is a record of its own,
+        // kind 'table', found by its name and leading to its heading; and its
+        // letters carry the table's short name and the value printed beneath
+        // them, so that five alifs are five results, each with its table.
+        const groupOf = (l) => (m.groups || []).find((g) => g.key === l.group) || null;
+        for (const g of m.groups || []) {
+            if (!g.heading) continue;
+            const where = (g.facts || []).find((f) => /^where/i.test(f.label))?.text || '';
+            push(MG, 'table', '', g.label, [e.short, g.note].filter(Boolean).join(' · '),
+                [where, g.about].filter(Boolean).join(' — '), `mg-group-${g.key}`, url);
+        }
+        // tables shown as printed, not drawn
+        for (const t of m.facsimiles?.tables || []) {
+            push(MG, 'table', '', t.label, [e.short, t.note].filter(Boolean).join(' · '), t.about, `mg-facsimile-${t.key}`, url);
+        }
         letters.forEach((l, i) => {
             const gap = !l.glyph && !l.char;
             const own = l.note && l.note !== shared ? l.note : '';
             if (gap && !own && e.keyedTo === 'latin' && l.value != null && String(l.name) === String(l.value)) return;
+            const table = groupOf(l)?.heading ? groupOf(l).short : null;
             const rec = { h: MG, k: 'sign', n: l.char ? textOf(l.char) : '', l: l.name,
-                s: [e.short, l.translit || l.planet || l.codepoint].filter(Boolean).join(' · '),
+                s: [e.short, table, l.translit || l.planet || l.codepoint || (m.valueLang ? l.value : null)].filter(Boolean).join(' · '),
                 d: own.slice(0, 180), a: `mg-letter-${i}`, u: url };
             if (l.glyph) {
                 rec.g = { d: l.glyph.d };

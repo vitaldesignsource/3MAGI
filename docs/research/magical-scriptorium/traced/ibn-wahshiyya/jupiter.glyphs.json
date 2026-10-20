@@ -1,0 +1,953 @@
+{
+ "slug": "jupiter",
+ "title": "الفصل الثاني من الباب الخامس في صفة قلم كوكب المشتري وهيته كما تري فافهم",
+ "titleNote": "Transcribed as printed, in three lines, without added hamzas; the print sets a small mark over the ه of وهيته, and كما تري is set close together.",
+ "titleParaphrase": "Second section of the fifth chapter: on the form of the pen (script) of the planet al-Mushtarī (Jupiter), and its shape, as you see; so understand. Paraphrase by the tracer, not a quotation of any translation.",
+ "headingHammer": "CHAPTER V. The Alphabets of the Seven Planets. … SECTION II. The alphabet of Jupiter, (v. orig. p. 48.)",
+ "headingHammerLocator": "Hammer's English part, p. [10] (leaf 40 of the scan, b22039910_0040.jp2), read on the leaf by the tracer.",
+ "primary": {
+  "copy": "Wellcome Library copy, digitised for the Internet Archive as item b22039910 (rights field: Creative Commons Public Domain Mark, as recorded in plates/ibn-wahshiyya.manifest.json).",
+  "work": "Joseph Hammer (ed. and trans.), Ancient Alphabets and Hieroglyphic Characters Explained (London: W. Bulmer and Co., 1806): the Arabic text of Shawq al-mustahām, Bāb V, faṣl 2, the pen of the planet Jupiter (al-Mushtarī).",
+  "date": "1806 (the printing)",
+  "locator": "Arabic part, p. 48 (printed \"48\" and, at the other corner, the Arabic numeral ٤٨ in the Persian form of the 4), the one table on the page, under its heading; leaf 175 of the scan (b22039910_0175.jp2), Internet Archive page n174. The book's Arabic part is paginated from the back, so in the scan Arabic p. 48 is leaf 175.",
+  "plate": "plates/ibn-wahshiyya/jupiter/table.png (an exact pixel copy of leaf 175 at offset 240, 1070: checked, zero difference); the cells were cut from b22039910_0175.jp2 itself.",
+  "pageImageUrl": "https://archive.org/download/b22039910/page/n174.jpg",
+  "viewerUrl": "https://archive.org/details/b22039910/page/n174",
+  "urlCheck": "Both URLs fetched by the tracer on 2026-10-20 (HTTP 200). The page image (2093 x 2896 px) matches leaf 175 of the JP2 set (greyscale correlation 0.999; against a different leaf 0.08).",
+  "valuesPrinted": "yes: an Arabic letter is printed under each sign; every one is legible."
+ },
+ "layout": "Four rows read from right to left: 8 signs (ا to ح), 8 (ط to ع), 8 (ف ص ق ر ش ت ث خ) and 4 (ذ ض ظ غ) centred. Small round separator dots stand between the signs; they are not part of any sign and are not drawn.",
+ "cellSize": "One cell size for the whole table: a 168 px square cut from the leaf (300 ppi), centred on the sign's ink, upscaled x3 (Lanczos) to 504 px. 1 glyph unit = 1.68 leaf px. Separator dots and bits of the Arabic letters below show at the edges of some cells.",
+ "tracing": "Centre lines traced over a skeleton of the inked strokes (threshold 118 of 255 on the greyscale leaf) and checked by overlay. Ring-ends are drawn as kit rings (radius 6 unless noted) placed on the printed ring, with the stroke stopping on the ring's edge where the print joins it.",
+ "ringsAndBalls": "Ring or ball was decided first by measuring the brightest point near the middle of each round end on the Wellcome leaf, as a share of the way from ink (about 30) to paper (about 183): open rings read 70 percent or more, filled balls 4 to 29 percent; then every round end was looked for in the Getty and UNC copies, and an opening found at the same place in both of them was taken as an opening in the printing. Borderline ends are named in the notes of their signs. The task brief expected filled balls in ا, ف and the ظ/غ forms: ا has one (top right, solid in all three copies), ف one (lower left; its lower right end, solid in the Wellcome copy, shows an opening in the other two and is drawn as a ring), خ one (at the foot; its upper end is a ring), and س two (lower ends); in ظ and غ every round end is an open ring (78 to 97 percent), and the right-hand points of ظ are sharp corners, not balls.",
+ "variantsNote": "Checked against two further copies of the 1806 printing: the Getty Research Institute copy (Internet Archive ancientalphabets01ibnw, page n176) and the University of North Carolina copy (ancientalphabets00ibnw, page n53). 27 of the 28 signs have the same form in the three copies. In ط the Wellcome copy lacks the right-hand side that the other two print, and the sign is drawn from them (see its note). Two round ends that are filled in the Wellcome copy show openings in the other two and are drawn as rings (the upper end of خ, the lower right end of ف). The two Oxford copies scanned by Google and the BSB scan listed in plates/ibn-wahshiyya.manifest.json were not compared, and no manuscript was consulted.",
+ "letters": [
+  {
+   "order": 1,
+   "name": "alif",
+   "value": "ا",
+   "glyph": {
+    "d": "M 37.4 58 C 31 50 23 40 20.2 30.5 C 19 26 21 23.8 23.5 24.6 C 31 28 42 42 48 51.5 C 53 60 59 70 63 77.6 M 69.5 39.6 C 61 42.5 52 48 46 52 L 39.6 56.6 Q 37.8 58.5 36.9 62.1 M 74 31 L 69.6 39 L 69.6 54.8 Q 71.3 66 70.8 77.2",
+    "rings": [
+     [
+      35.2,
+      67.8,
+      6
+     ]
+    ],
+    "dots": [
+     [
+      75,
+      29.4,
+      7
+     ]
+    ]
+   },
+   "strokes": "three strokes: an upright on the right topped by a heavy filled ball; a diagonal from just under the ball down to the lower left, ending in a ring; and a long stroke from a foot at the lower middle up across the diagonal to a rounded apex at the upper left, which turns back down as the other side of a narrow loop and meets the diagonal just above the ring",
+   "formConfidence": "high",
+   "note": "The ball at the top right is solid (11 percent on the ring-or-ball measure). The ring at the lower left is open (88 percent).",
+   "source": {
+    "plate": "Hammer 1806, Arabic p. 48, leaf 175 of Internet Archive b22039910 (b22039910_0175.jp2); cell = leaf pixels x 1412-1580, y 1060-1228",
+    "position_as_printed": "row 1, 1st from the right (rows read from right to left)",
+    "label_as_printed": "ا (the Arabic letter printed under the sign)"
+   },
+   "variants": "Compared with the Getty copy (ancientalphabets01ibnw, page n176) and the UNC copy (ancientalphabets00ibnw, page n53), registered onto the same frame: the same form in all three copies."
+  },
+  {
+   "order": 2,
+   "name": "bāʾ",
+   "value": "ب",
+   "glyph": {
+    "d": "M 19.6 24.6 L 21.2 53 Q 22.5 63 33 64.8 L 55.4 63.1 Q 60 61.4 66 61.4 Q 69 61.5 70.6 63.2 M 67.5 35.5 Q 69 37.5 69 41 L 69 58.5 Q 69.2 61.5 70.6 63.2",
+    "rings": [
+     [
+      65.6,
+      29.8,
+      6
+     ],
+     [
+      74.2,
+      68.0,
+      6
+     ]
+    ],
+    "dots": []
+   },
+   "strokes": "an upright on the left curving at its foot into a base along the bottom; a second upright on the right hanging from a ring at the top; and a ring at the lower right where the base and the right upright meet",
+   "formConfidence": "high",
+   "note": "",
+   "source": {
+    "plate": "Hammer 1806, Arabic p. 48, leaf 175 of Internet Archive b22039910 (b22039910_0175.jp2); cell = leaf pixels x 1238-1406, y 1059-1227",
+    "position_as_printed": "row 1, 2nd from the right (rows read from right to left)",
+    "label_as_printed": "ب (the Arabic letter printed under the sign)"
+   },
+   "variants": "Compared with the Getty copy (ancientalphabets01ibnw, page n176) and the UNC copy (ancientalphabets00ibnw, page n53), registered onto the same frame: the same form in all three copies."
+  },
+  {
+   "order": 3,
+   "name": "jīm",
+   "value": "ج",
+   "glyph": {
+    "d": "M 29.7 43.1 L 40.3 42.1 L 59.8 28.4 L 68.5 42 L 75 51.8 L 81 62 Q 82 65.5 84 67.3 M 40.3 42.1 L 52.3 58.7 M 52.3 58.7 L 68.5 42 L 86.3 23.5",
+    "rings": [
+     [
+      23.2,
+      43.6,
+      6.5
+     ],
+     [
+      52.1,
+      66.2,
+      7.5
+     ]
+    ],
+    "dots": []
+   },
+   "strokes": "a small diamond with a ring on a short stem at its left corner and a ring hanging from its bottom corner; its right corner is a crossing where the two right-hand sides run on, one to a plain end at the upper right, the other to a plain end at the lower right that turns slightly outward",
+   "formConfidence": "high",
+   "note": "In the print the left ring is drawn out sideways (an eye shape) and the bottom ring is pointed at its top (a teardrop); they are drawn as round rings of radius 6.5 and 7.5 units set on them. The top corner of the diamond is a sharp point.",
+   "source": {
+    "plate": "Hammer 1806, Arabic p. 48, leaf 175 of Internet Archive b22039910 (b22039910_0175.jp2); cell = leaf pixels x 1076-1244, y 1057-1225",
+    "position_as_printed": "row 1, 3rd from the right (rows read from right to left)",
+    "label_as_printed": "ج (the Arabic letter printed under the sign)"
+   },
+   "variants": "Compared with the Getty copy (ancientalphabets01ibnw, page n176) and the UNC copy (ancientalphabets00ibnw, page n53), registered onto the same frame: the same form in all three copies."
+  },
+  {
+   "order": 4,
+   "name": "dāl",
+   "value": "د",
+   "glyph": {
+    "d": "M 29.1 34.8 L 33.5 38.1 L 44 38 C 52 37 60 35.6 66.5 35.4 C 72 34.5 77.5 33 81 30.6 M 33.2 38.4 L 31.6 55 L 31.5 76 M 67.3 35.8 L 69 46 L 69.6 60 Q 69.8 63 70.9 65.6",
+    "rings": [
+     [
+      24.5,
+      31.0,
+      6
+     ],
+     [
+      75.4,
+      69.6,
+      6
+     ]
+    ],
+    "dots": []
+   },
+   "strokes": "a long top bar, rising slightly to the right, with a ring at its left end; an upright comes down from under the ring; a second upright falls from the right part of the bar and ends in a ring at the lower right",
+   "formConfidence": "high",
+   "note": "",
+   "source": {
+    "plate": "Hammer 1806, Arabic p. 48, leaf 175 of Internet Archive b22039910 (b22039910_0175.jp2); cell = leaf pixels x 914-1082, y 1063-1231",
+    "position_as_printed": "row 1, 4th from the right (rows read from right to left)",
+    "label_as_printed": "د (the Arabic letter printed under the sign)"
+   },
+   "variants": "Compared with the Getty copy (ancientalphabets01ibnw, page n176) and the UNC copy (ancientalphabets00ibnw, page n53), registered onto the same frame: the same form in all three copies."
+  },
+  {
+   "order": 5,
+   "name": "hāʾ",
+   "value": "ه",
+   "glyph": {
+    "d": "M 32.1 33.3 L 34.6 36.6 L 34.5 62 Q 34 67 32 74.4 L 32.1 79 M 34.6 36.6 L 58.9 35.2 L 70.8 32.8 Q 75 32.5 79.2 33.9 M 60.2 35.2 L 60.7 39.3 L 57.3 64.9 L 59.4 67.0 M 34.4 63.4 L 43.5 64.3 L 57.3 64.9",
+    "rings": [
+     [
+      28.4,
+      28.6,
+      6
+     ],
+     [
+      63.6,
+      71.3,
+      6
+     ]
+    ],
+    "dots": []
+   },
+   "strokes": "a square box whose top bar runs on to the right and whose left side runs on below the base; a ring at the upper left corner and another at the lower right corner",
+   "formConfidence": "high",
+   "note": "",
+   "source": {
+    "plate": "Hammer 1806, Arabic p. 48, leaf 175 of Internet Archive b22039910 (b22039910_0175.jp2); cell = leaf pixels x 758-926, y 1061-1229",
+    "position_as_printed": "row 1, 5th from the right (rows read from right to left)",
+    "label_as_printed": "ه (the Arabic letter printed under the sign)"
+   },
+   "variants": "Compared with the Getty copy (ancientalphabets01ibnw, page n176) and the UNC copy (ancientalphabets00ibnw, page n53), registered onto the same frame: the same form in all three copies."
+  },
+  {
+   "order": 6,
+   "name": "wāw",
+   "value": "و",
+   "glyph": {
+    "d": "M 26.1 34.0 Q 24.2 35.5 24.2 38 L 23.8 54.5 L 22.6 58 L 22.6 66 Q 23 70.6 26 70.6 L 34.5 70.2 L 47.6 66.8 L 61.4 65.4 L 64.4 66.1 M 64.8 33.1 Q 62 35 62 38 L 62 63 L 64.4 66.1",
+    "rings": [
+     [
+      29.4,
+      29.0,
+      6
+     ],
+     [
+      69.8,
+      29.8,
+      6
+     ],
+     [
+      69.6,
+      70.0,
+      6.5
+     ]
+    ],
+    "dots": []
+   },
+   "strokes": "a U (two uprights joined by a base that rises slightly to the right), with a ring at the top of each upright, set to its right, and a third ring at the lower right corner",
+   "formConfidence": "high",
+   "note": "The lower right ring is a little larger than the others and is drawn at radius 6.5 units.",
+   "source": {
+    "plate": "Hammer 1806, Arabic p. 48, leaf 175 of Internet Archive b22039910 (b22039910_0175.jp2); cell = leaf pixels x 609-777, y 1062-1230",
+    "position_as_printed": "row 1, 6th from the right (rows read from right to left)",
+    "label_as_printed": "و (the Arabic letter printed under the sign)"
+   },
+   "variants": "Compared with the Getty copy (ancientalphabets01ibnw, page n176) and the UNC copy (ancientalphabets00ibnw, page n53), registered onto the same frame: the same form in all three copies."
+  },
+  {
+   "order": 7,
+   "name": "zāy",
+   "value": "ز",
+   "glyph": {
+    "d": "M 29.0 37.2 L 30.2 40 L 32 62 L 29.8 65.7 M 29.8 65.7 L 33.3 64.4 L 47 64.9 L 56 67.3 L 67.3 67.3 Q 74 66.5 77.6 62.8 Q 80.4 59 80.4 54 L 80.4 39 L 78.8 34.7",
+    "rings": [
+     [
+      25.3,
+      32.4,
+      6
+     ],
+     [
+      25.0,
+      69.3,
+      6
+     ],
+     [
+      74.6,
+      30.4,
+      6
+     ]
+    ],
+    "dots": []
+   },
+   "strokes": "a U: a left upright with a small ring at its top and a ring at its foot, a base, and a right side that curves up and to the left into a ring at the top right",
+   "formConfidence": "medium",
+   "note": "The ambiguous detail is the ring at the top right: it is heavily inked and its opening is nearly closed (52 percent on the ring-or-ball measure in the Wellcome copy). A small opening shows at the same place in all three copies compared (about 1 to 3 square units in the Wellcome, Getty and UNC copies), so it is drawn as a ring, but it is far smaller than the openings of the other two rings and could have been meant as a ball. The ring at the top left is also heavy, with a small but clear opening.",
+   "source": {
+    "plate": "Hammer 1806, Arabic p. 48, leaf 175 of Internet Archive b22039910 (b22039910_0175.jp2); cell = leaf pixels x 449-617, y 1058-1226",
+    "position_as_printed": "row 1, 7th from the right (rows read from right to left)",
+    "label_as_printed": "ز (the Arabic letter printed under the sign)"
+   },
+   "variants": "Compared with the Getty copy (ancientalphabets01ibnw, page n176) and the UNC copy (ancientalphabets00ibnw, page n53), registered onto the same frame: the same form in all three copies."
+  },
+  {
+   "order": 8,
+   "name": "ḥāʾ",
+   "value": "ح",
+   "glyph": {
+    "d": "M 24.5 68.8 Q 23.2 67.5 23.2 66 L 22.6 55 L 21.4 32 Q 21.3 27 25 26.6 L 32.7 25.6 L 54.2 24.5 L 61.3 22.8 L 73.8 22.2 Q 77.4 22.6 77.6 27 L 78.4 40 L 79 60 Q 78.9 62.5 76.6 65.1",
+    "rings": [
+     [
+      28.3,
+      73.4,
+      6
+     ],
+     [
+      72.7,
+      69.6,
+      6
+     ]
+    ],
+    "dots": []
+   },
+   "strokes": "an arch: a top bar and two sides, each side ending at the bottom in a ring set inward",
+   "formConfidence": "high",
+   "note": "Two tiny nicks, one on the outside of the right side about a third of the way down and one on the inside of the left side about halfway down, are taken for unevenness in the print and are not drawn.",
+   "source": {
+    "plate": "Hammer 1806, Arabic p. 48, leaf 175 of Internet Archive b22039910 (b22039910_0175.jp2); cell = leaf pixels x 299-467, y 1063-1231",
+    "position_as_printed": "row 1, 8th from the right (left end of the row) (rows read from right to left)",
+    "label_as_printed": "ح (the Arabic letter printed under the sign)"
+   },
+   "variants": "Compared with the Getty copy (ancientalphabets01ibnw, page n176) and the UNC copy (ancientalphabets00ibnw, page n53), registered onto the same frame: the same form in all three copies."
+  },
+  {
+   "order": 9,
+   "name": "ṭāʾ",
+   "value": "ط",
+   "glyph": {
+    "d": "M 38.6 30.9 Q 40 29.4 42 29.1 L 57.7 27.6 L 84.2 27.4 L 84.8 50 L 84.6 71 Q 84.3 73.2 81.8 73.2 L 72.4 72.6 L 55.4 71.4 L 41 69.1 Q 38.5 68.6 37.0 67.3",
+    "rings": [
+     [
+      34.4,
+      35.2,
+      6
+     ],
+     [
+      33.2,
+      62.6,
+      6
+     ]
+    ],
+    "dots": []
+   },
+   "strokes": "a box open on the left (like ⊐) with a ring at each left-hand end: the top ring hangs below the end of the top bar, the bottom ring sits above the end of the bottom bar",
+   "formConfidence": "medium",
+   "note": "The copies disagree. In the Wellcome copy only the two bars with their rings are printed, and both bars stop short (the upper at about x 68, the lower at about x 73, with a faint speck near the lower right corner); the right-hand side is missing. The Getty and UNC copies of the same printing both show the right-hand side closing the box, so the sign is drawn from them, and its cell is the Getty copy (ancientalphabets01ibnw, page n176) cut in the same frame as the Wellcome cells (the Wellcome cell is kept as cellWellcome). Why the side is missing in the Wellcome copy (inking or damage) cannot be told. The rings and the left half agree in all three copies. Drawn this way the sign is the left-right mirror of the next sign, ي.",
+   "source": {
+    "plate": "Hammer 1806, Arabic p. 48, leaf 175 of Internet Archive b22039910 (b22039910_0175.jp2); cell = leaf pixels x 1400-1568, y 1417-1585",
+    "position_as_printed": "row 2, 1st from the right (rows read from right to left)",
+    "label_as_printed": "ط (the Arabic letter printed under the sign)",
+    "drawnFrom": "Getty copy, Internet Archive ancientalphabets01ibnw, page n176 (Arabic p. 48), row 2, 1st from the right, cut in the frame of the Wellcome cell above (registration in check/other/getty/jupiter/registration.json); the UNC copy (ancientalphabets00ibnw, page n53) agrees. The Wellcome cell (cellWellcome) shows the incomplete print."
+   },
+   "variants": "Wellcome copy: two separate bars with rings at their left ends, no right-hand side. Getty copy (ancientalphabets01ibnw, page n176) and UNC copy (ancientalphabets00ibnw, page n53): a closed right-hand side joins the bars (in the UNC copy it stands about 2 units further right than in the Getty copy)."
+  },
+  {
+   "order": 10,
+   "name": "yāʾ",
+   "value": "ي",
+   "glyph": {
+    "d": "M 64.5 26.7 Q 63 25.2 61 25.2 L 25 27.3 Q 21.4 28 21.4 32 L 22.6 44 L 25.4 61.9 L 25.2 67.5 Q 25.5 73.8 30 73.8 L 50.6 73.8 L 61.3 73.2 Q 63.5 72.5 64.8 70.7",
+    "rings": [
+     [
+      69.2,
+      30.4,
+      6
+     ],
+     [
+      69.0,
+      66.5,
+      6
+     ]
+    ],
+    "dots": []
+   },
+   "strokes": "a box open on the right (like ⊏) with a ring at each right-hand end: the top ring hangs below the end of the top bar, the bottom ring sits above the end of the bottom bar",
+   "formConfidence": "high",
+   "note": "",
+   "source": {
+    "plate": "Hammer 1806, Arabic p. 48, leaf 175 of Internet Archive b22039910 (b22039910_0175.jp2); cell = leaf pixels x 1264-1432, y 1419-1587",
+    "position_as_printed": "row 2, 2nd from the right (rows read from right to left)",
+    "label_as_printed": "ي (the Arabic letter printed under the sign)"
+   },
+   "variants": "Compared with the Getty copy (ancientalphabets01ibnw, page n176) and the UNC copy (ancientalphabets00ibnw, page n53), registered onto the same frame: the same form in all three copies."
+  },
+  {
+   "order": 11,
+   "name": "kāf",
+   "value": "ك",
+   "glyph": {
+    "d": "M 48.0 41.5 L 50 39 L 64.3 30.6 Q 71 28.5 77 27.4 Q 79.6 27.8 79.8 31.5 L 80.4 45.8 L 82.6 56.5 L 82.6 63 Q 82.2 66 79 66.8 L 65.5 70.2 L 30 73 L 26.4 72.9",
+    "rings": [
+     [
+      44.2,
+      46.2,
+      6
+     ],
+     [
+      21.5,
+      69.4,
+      6
+     ]
+    ],
+    "dots": []
+   },
+   "strokes": "a diagonal rising from a ring at the left middle to a heavy corner at the top right; from there the right side comes down, slightly bowed, and turns into a base running left to a second ring at the lower left",
+   "formConfidence": "high",
+   "note": "",
+   "source": {
+    "plate": "Hammer 1806, Arabic p. 48, leaf 175 of Internet Archive b22039910 (b22039910_0175.jp2); cell = leaf pixels x 1102-1270, y 1412-1580",
+    "position_as_printed": "row 2, 3rd from the right (rows read from right to left)",
+    "label_as_printed": "ك (the Arabic letter printed under the sign)"
+   },
+   "variants": "Compared with the Getty copy (ancientalphabets01ibnw, page n176) and the UNC copy (ancientalphabets00ibnw, page n53), registered onto the same frame: the same form in all three copies."
+  },
+  {
+   "order": 12,
+   "name": "lām",
+   "value": "ل",
+   "glyph": {
+    "d": "M 31.7 45.9 Q 29.8 47 29.8 49.5 L 30.4 54.8 Q 31.5 62 38 64.8 L 48.2 64.8 M 48.2 64.8 L 56 64.5 Q 60 63.2 63.5 62.2 Q 68.5 59.5 69 54.5 L 68.7 42 L 67.1 38.5",
+    "rings": [
+     [
+      63.6,
+      33.6,
+      6
+     ],
+     [
+      35.9,
+      41.6,
+      6
+     ],
+     [
+      48.2,
+      70.8,
+      6
+     ]
+    ],
+    "dots": []
+   },
+   "strokes": "a bowl (U) with a ring at the top of each side, set inward, and a third ring hanging below the middle of the bowl",
+   "formConfidence": "high",
+   "note": "In the print the bottom of the bowl runs over the top of the lower ring. It is drawn as two strokes meeting at the top of that ring, so that the ring sits on a stroke end as the kit requires; the drawn shape is the same.",
+   "source": {
+    "plate": "Hammer 1806, Arabic p. 48, leaf 175 of Internet Archive b22039910 (b22039910_0175.jp2); cell = leaf pixels x 946-1114, y 1416-1584",
+    "position_as_printed": "row 2, 4th from the right (rows read from right to left)",
+    "label_as_printed": "ل (the Arabic letter printed under the sign)"
+   },
+   "variants": "Compared with the Getty copy (ancientalphabets01ibnw, page n176) and the UNC copy (ancientalphabets00ibnw, page n53), registered onto the same frame: the same form in all three copies."
+  },
+  {
+   "order": 13,
+   "name": "mīm",
+   "value": "م",
+   "glyph": {
+    "d": "M 30.7 35.4 L 34.5 37.3 L 37.5 44.6 L 48.2 64.6 M 46.4 27.4 L 39.9 34.5 L 34.5 37.3 M 48.2 64.6 L 50 60.1 Q 53.5 56.5 55.4 54.8 L 60.7 39.3 Q 62.5 35.5 65.7 33.8",
+    "rings": [
+     [
+      25.3,
+      32.8,
+      6
+     ],
+     [
+      73.0,
+      30.6,
+      8
+     ],
+     [
+      48.2,
+      70.6,
+      6
+     ]
+    ],
+    "dots": []
+   },
+   "strokes": "a V with a ring hanging under its point; the left arm starts from a ring on the left, at the same point from which a short spur rises to the upper right; the right arm ends in a large ring at the upper right",
+   "formConfidence": "high",
+   "note": "The large ring at the upper right is an elongated loop leaning to the right in the print and is drawn as a round ring of radius 8 units; the ring on the left is drawn out toward the junction (an eye shape) and is drawn round, joined by a short stem. As in ل, the two arms of the V end together at the top of the lower ring.",
+   "source": {
+    "plate": "Hammer 1806, Arabic p. 48, leaf 175 of Internet Archive b22039910 (b22039910_0175.jp2); cell = leaf pixels x 796-964, y 1412-1580",
+    "position_as_printed": "row 2, 5th from the right (rows read from right to left)",
+    "label_as_printed": "م (the Arabic letter printed under the sign)"
+   },
+   "variants": "Compared with the Getty copy (ancientalphabets01ibnw, page n176) and the UNC copy (ancientalphabets00ibnw, page n53), registered onto the same frame: the same form in all three copies."
+  },
+  {
+   "order": 14,
+   "name": "nūn",
+   "value": "ن",
+   "glyph": {
+    "d": "M 65.5 36.8 L 48.6 51.4 M 48.6 51.4 C 42 48 32 46 26.8 48.8 C 21 51.5 17.6 57 17.9 62.5 Q 18.6 65.2 21.5 66.6 M 30.0 75.1 Q 32 77 36 77 L 42.9 76.8 Q 49 75 51.6 69.5 Q 53.2 62 48.6 51.4",
+    "rings": [
+     [
+      72.0,
+      31.3,
+      8.5
+     ],
+     [
+      25.6,
+      71.0,
+      6
+     ]
+    ],
+    "dots": []
+   },
+   "strokes": "a large round loop with a diagonal stroke from its upper right to a large ring at the upper right; a small ring sits inside the loop at its lower left, where the loop's stroke curls into it",
+   "formConfidence": "high",
+   "note": "The upper right ring is large in the print and is drawn at radius 8.5 units. The small inner ring shares its outer edge with the big loop; the loop's two strokes are drawn ending on that ring.",
+   "source": {
+    "plate": "Hammer 1806, Arabic p. 48, leaf 175 of Internet Archive b22039910 (b22039910_0175.jp2); cell = leaf pixels x 639-807, y 1414-1582",
+    "position_as_printed": "row 2, 6th from the right (rows read from right to left)",
+    "label_as_printed": "ن (the Arabic letter printed under the sign)"
+   },
+   "variants": "Compared with the Getty copy (ancientalphabets01ibnw, page n176) and the UNC copy (ancientalphabets00ibnw, page n53), registered onto the same frame: the same form in all three copies."
+  },
+  {
+   "order": 15,
+   "name": "sīn",
+   "value": "س",
+   "glyph": {
+    "d": "M 72.1 31.3 L 69 35.1 L 52.4 45.2 L 46.2 48 L 41.1 51.8 L 33.3 56.5 L 28.8 57.0 M 42.7 32.0 L 42.9 39.3 L 45.2 43.5 L 46.2 48 L 51.8 58.3 L 53.2 61 L 59.5 70.8 L 65 73.4 M 71.0 51.4 L 67.9 51.8 L 57.7 57.7 L 53.2 61 L 48.2 64.3 L 45.2 67.3 L 42.6 71.6",
+    "rings": [
+     [
+      75.2,
+      26.1,
+      6
+     ],
+     [
+      23.0,
+      55.6,
+      6
+     ],
+     [
+      46.2,
+      27.1,
+      6
+     ],
+     [
+      76.9,
+      50.6,
+      6
+     ]
+    ],
+    "dots": [
+     [
+      42.2,
+      72.4,
+      5.5
+     ],
+     [
+      65.6,
+      73.9,
+      5.5
+     ]
+    ]
+   },
+   "strokes": "two parallel diagonals rising to the right, crossed by a third falling to the right: the upper diagonal has a ring at each end; the lower has a ring at its upper end and a heavy ball at its lower end; the crossing stroke has a ring at its top and a heavy ball at its foot",
+   "formConfidence": "medium",
+   "note": "The ambiguous detail is the ball at the lower left: a small light speck shows near its middle (35 percent on the ring-or-ball measure in the Wellcome copy), and in the Getty and UNC copies a pinhole of about 1 unit at the same place, while its partner at the lower right is solid in all three copies (14 percent in the Wellcome copy). Both are drawn as balls; the lower left one could have been meant as a ring. The four rings are small in the print (their openings 2 to 5 units across) and are drawn at the kit's radius 6.",
+   "source": {
+    "plate": "Hammer 1806, Arabic p. 48, leaf 175 of Internet Archive b22039910 (b22039910_0175.jp2); cell = leaf pixels x 487-655, y 1413-1581",
+    "position_as_printed": "row 2, 7th from the right (rows read from right to left)",
+    "label_as_printed": "س (the Arabic letter printed under the sign)"
+   },
+   "variants": "Compared with the Getty copy (ancientalphabets01ibnw, page n176) and the UNC copy (ancientalphabets00ibnw, page n53), registered onto the same frame: the same form in all three copies."
+  },
+  {
+   "order": 16,
+   "name": "ʿayn",
+   "value": "ع",
+   "glyph": {
+    "d": "M 69.6 34.8 L 66.1 39.9 L 61.3 42.3 L 51.2 50.6 L 45.2 51.8 L 42.9 54.8 L 35.7 57.7 L 33.6 61.0 M 41.1 22.6 Q 33 26 31 30.4 Q 30.6 33.5 32.7 35.7 L 42.3 44 L 45.2 50.6 L 52.4 54.8 L 64.9 66.1 Q 67.5 70 63.7 74.4 L 58.3 76.8",
+    "rings": [
+     [
+      70.5,
+      28.9,
+      6
+     ],
+     [
+      30.6,
+      66.2,
+      6
+     ]
+    ],
+    "dots": []
+   },
+   "strokes": "an X: one stroke runs from a ring at the upper right down to a ring at the lower left; the other runs from a hook at the top left (turned to the right) down to a hook at the bottom right (turned to the left)",
+   "formConfidence": "high",
+   "note": "",
+   "source": {
+    "plate": "Hammer 1806, Arabic p. 48, leaf 175 of Internet Archive b22039910 (b22039910_0175.jp2); cell = leaf pixels x 312-480, y 1416-1584",
+    "position_as_printed": "row 2, 8th from the right (left end of the row) (rows read from right to left)",
+    "label_as_printed": "ع (the Arabic letter printed under the sign)"
+   },
+   "variants": "Compared with the Getty copy (ancientalphabets01ibnw, page n176) and the UNC copy (ancientalphabets00ibnw, page n53), registered onto the same frame: the same form in all three copies."
+  },
+  {
+   "order": 17,
+   "name": "fāʾ",
+   "value": "ف",
+   "glyph": {
+    "d": "M 32.0 37.5 L 34 44.6 L 34.5 63.5 L 31.5 68.5 M 34 44.6 L 62.5 44.6 L 67.4 43.4 L 68.5 50 L 67.4 62.5 L 42.9 62.5 L 34.5 63.5 M 67.4 43.4 L 67.3 38 L 66.6 35.7 M 67.4 62.5 L 67.95 63.72 M 76.24 67.84 L 79 67.2",
+    "rings": [
+     [
+      28.5,
+      32.6,
+      6
+     ],
+     [
+      64.7,
+      30.0,
+      6
+     ],
+     [
+      70.4,
+      69.2,
+      6
+     ]
+    ],
+    "dots": [
+     [
+      31.4,
+      68.6,
+      6.5
+     ]
+    ]
+   },
+   "strokes": "a square box; at its upper left corner a short stem rises to a ring; the right side runs up past the top bar into a ring; at the lower left corner a heavy filled ball on a short stem; at the lower right corner a heavy ring with a short pointed tail to the right",
+   "formConfidence": "medium",
+   "note": "Round ends compared in three copies (Wellcome, Getty, UNC). The lower left ball is solid in all three. The lower right end is solid in the Wellcome copy (29 percent on the ring-or-ball measure) but shows a small opening near its middle in the Getty and UNC copies (about 3 units across, 5 to 7 square units), at the same place, so it is drawn as a ring; the opening in the print is much smaller than the kit ring shows, and the end could have been meant as a ball. The ring at the top right, heavily inked in the Wellcome copy (63 percent), is clearly open in the other two. The tail is short and fades out about 3 units beyond the ring.",
+   "source": {
+    "plate": "Hammer 1806, Arabic p. 48, leaf 175 of Internet Archive b22039910 (b22039910_0175.jp2); cell = leaf pixels x 1397-1565, y 1742-1910",
+    "position_as_printed": "row 3, 1st from the right (rows read from right to left)",
+    "label_as_printed": "ف (the Arabic letter printed under the sign)"
+   },
+   "variants": "Compared with the Getty copy (ancientalphabets01ibnw, page n176) and the UNC copy (ancientalphabets00ibnw, page n53): the same form; the lower right end is filled in the Wellcome copy and has a small opening in the other two."
+  },
+  {
+   "order": 18,
+   "name": "ṣād",
+   "value": "ص",
+   "glyph": {
+    "d": "M 20.3 36.4 Q 17.9 40 17.9 48.2 Q 18.5 53.5 20.8 55.4 Q 24 59 26.8 60.1 L 37.5 62.5 Q 40 64 43 64 L 52 63.8 L 58.3 65.5 L 68.5 65.5 Q 75 64 78 61.3 Q 82.7 57 82.7 52 L 82.1 46.3 M 38.6 62.5 C 40 56 43 51.5 49.4 49.2 C 53.5 51.5 53.3 58 52.5 63.8 M 41.2 64.5 C 41 70 43 73.8 48 73.9 C 53 74 57.5 73 57.3 65.4",
+    "rings": [
+     [
+      24.6,
+      32.2,
+      6
+     ],
+     [
+      78.3,
+      41.6,
+      6
+     ]
+    ],
+    "dots": []
+   },
+   "strokes": "a long bowl: from a ring at the upper left the stroke comes down, runs along the bottom and rises at the right into a ring; in the middle of the bottom a pointed loop stands above the line and a round loop hangs below it",
+   "formConfidence": "medium",
+   "note": "The ambiguous detail is how the two middle loops join the line where they cross it: at this size the print shows one mass of ink there, and whether the pen made one continuous figure-of-eight or separate loops cannot be read. The drawing gives the line unbroken and the two loops meeting it where the print's ink meets it.",
+   "source": {
+    "plate": "Hammer 1806, Arabic p. 48, leaf 175 of Internet Archive b22039910 (b22039910_0175.jp2); cell = leaf pixels x 1214-1382, y 1744-1912",
+    "position_as_printed": "row 3, 2nd from the right (rows read from right to left)",
+    "label_as_printed": "ص (the Arabic letter printed under the sign)"
+   },
+   "variants": "Compared with the Getty copy (ancientalphabets01ibnw, page n176) and the UNC copy (ancientalphabets00ibnw, page n53), registered onto the same frame: the same form in all three copies."
+  },
+  {
+   "order": 19,
+   "name": "qāf",
+   "value": "ق",
+   "glyph": {
+    "d": "M 19 33.3 L 19 29.5 Q 19.5 27 22.5 26.8 L 40.5 26.3 L 45.2 27.4 L 71.7 27.4 M 45.2 27.4 L 44.8 51.2 L 45.8 54.8 L 47 64.9 L 48.7 66.6 M 20.2 60.7 L 19.8 56.5 Q 20.5 53.2 23.2 53 L 43.5 52.6 L 71.5 53.3",
+    "rings": [
+     [
+      77.6,
+      28.3,
+      6
+     ],
+     [
+      53.0,
+      70.8,
+      6
+     ],
+     [
+      76.6,
+      56.4,
+      6
+     ]
+    ],
+    "dots": []
+   },
+   "strokes": "two horizontal bars crossed by an upright: both bars turn down at their left ends and end in rings at their right ends; the upright ends below in a ring set to its right",
+   "formConfidence": "high",
+   "note": "",
+   "source": {
+    "plate": "Hammer 1806, Arabic p. 48, leaf 175 of Internet Archive b22039910 (b22039910_0175.jp2); cell = leaf pixels x 1058-1226, y 1742-1910",
+    "position_as_printed": "row 3, 3rd from the right (rows read from right to left)",
+    "label_as_printed": "ق (the Arabic letter printed under the sign)"
+   },
+   "variants": "Compared with the Getty copy (ancientalphabets01ibnw, page n176) and the UNC copy (ancientalphabets00ibnw, page n53), registered onto the same frame: the same form in all three copies."
+  },
+  {
+   "order": 20,
+   "name": "rāʾ",
+   "value": "ر",
+   "glyph": {
+    "d": "M 25.3 38.8 Q 23.2 40.5 22.8 44 L 25 69.6 Q 25.5 72.6 28 72.6 L 51.2 73 L 70.2 72.6 Q 76.2 72 76.2 68 L 76.2 41.1 L 74.4 38.8 M 52.4 32.1 L 51.8 39.3 L 52.8 49.4 L 52.4 52 L 52.4 72.8",
+    "rings": [
+     [
+      28.9,
+      34.0,
+      6
+     ],
+     [
+      70.4,
+      34.3,
+      6
+     ]
+    ],
+    "dots": []
+   },
+   "strokes": "a U-shaped box with a middle upright standing on its base (like Ш); a ring at the top of each outer upright, set inward",
+   "formConfidence": "high",
+   "note": "The middle upright ends plainly at the top, a little below the rings.",
+   "source": {
+    "plate": "Hammer 1806, Arabic p. 48, leaf 175 of Internet Archive b22039910 (b22039910_0175.jp2); cell = leaf pixels x 899-1067, y 1739-1907",
+    "position_as_printed": "row 3, 4th from the right (rows read from right to left)",
+    "label_as_printed": "ر (the Arabic letter printed under the sign)"
+   },
+   "variants": "Compared with the Getty copy (ancientalphabets01ibnw, page n176) and the UNC copy (ancientalphabets00ibnw, page n53), registered onto the same frame: the same form in all three copies."
+  },
+  {
+   "order": 21,
+   "name": "shīn",
+   "value": "ش",
+   "glyph": {
+    "d": "M 29.9 36.1 L 29.4 39 L 31 72.5 Q 30.5 74.4 28 74.4 L 20.2 74.4 M 29.9 36.1 L 34.5 39.4 L 43 49.4 L 49.4 51.6 L 64.3 38.1 L 68.7 34.6 M 68.7 34.6 L 70.2 38.7 L 70.8 47.6 L 70.8 72.2 Q 71.2 74.3 73.5 74.3 L 80.4 73.9 M 49.4 51.6 L 49.4 60.5",
+    "rings": [
+     [
+      27.0,
+      30.9,
+      6
+     ],
+     [
+      70.8,
+      29.0,
+      6
+     ]
+    ],
+    "dots": []
+   },
+   "strokes": "an M: two uprights with feet turned outward at the bottom, joined at the top by a V whose point drops into a short tail; a small ring at the top of each upright",
+   "formConfidence": "high",
+   "note": "Both rings are small in the print (openings about 2.5 units across, 80 and 86 percent on the ring-or-ball measure) and are drawn at the kit's radius 6. The point of the V is heavy.",
+   "source": {
+    "plate": "Hammer 1806, Arabic p. 48, leaf 175 of Internet Archive b22039910 (b22039910_0175.jp2); cell = leaf pixels x 732-900, y 1735-1903",
+    "position_as_printed": "row 3, 5th from the right (rows read from right to left)",
+    "label_as_printed": "ش (the Arabic letter printed under the sign)"
+   },
+   "variants": "Compared with the Getty copy (ancientalphabets01ibnw, page n176) and the UNC copy (ancientalphabets00ibnw, page n53), registered onto the same frame: the same form in all three copies."
+  },
+  {
+   "order": 22,
+   "name": "tāʾ",
+   "value": "ت",
+   "glyph": {
+    "d": "M 52.2 34.8 L 52.4 37 L 61.5 44.2 L 50.6 49.4 L 40.5 54.6 L 46.4 58.3 L 51.8 60.7 L 53.4 64.3",
+    "rings": [
+     [
+      51.0,
+      28.9,
+      6
+     ],
+     [
+      55.1,
+      70.0,
+      6
+     ]
+    ],
+    "dots": []
+   },
+   "strokes": "a zigzag: from a ring at the top a stroke runs down to the right, turns sharply back down to the left, turns sharply again down to the right and ends in a ring at the bottom",
+   "formConfidence": "high",
+   "note": "",
+   "source": {
+    "plate": "Hammer 1806, Arabic p. 48, leaf 175 of Internet Archive b22039910 (b22039910_0175.jp2); cell = leaf pixels x 604-772, y 1739-1907",
+    "position_as_printed": "row 3, 6th from the right (rows read from right to left)",
+    "label_as_printed": "ت (the Arabic letter printed under the sign)"
+   },
+   "variants": "Compared with the Getty copy (ancientalphabets01ibnw, page n176) and the UNC copy (ancientalphabets00ibnw, page n53), registered onto the same frame: the same form in all three copies."
+  },
+  {
+   "order": 23,
+   "name": "thāʾ",
+   "value": "ث",
+   "glyph": {
+    "d": "M 35.9 33.2 L 38.1 38.7 L 45.4 47.8 M 64.9 34.1 L 63.1 36.3 L 53.6 45.2 L 45.4 47.8 M 45.4 47.8 L 41.7 53 Q 37.5 54.5 35 57 Q 29.6 62.5 29.2 68.5 Q 29.4 73 33.9 75.6 Q 39 77.6 44.6 77.4 L 57.1 75 L 66.1 72.2 L 70.2 72.6",
+    "rings": [
+     [
+      37.4,
+      27.4,
+      6
+     ],
+     [
+      68.5,
+      29.3,
+      6
+     ]
+    ],
+    "dots": []
+   },
+   "strokes": "a Y whose two arms end in rings at the top; its stem curves down to the left and round into a bowl along the bottom, ending in a point at the lower right",
+   "formConfidence": "high",
+   "note": "",
+   "source": {
+    "plate": "Hammer 1806, Arabic p. 48, leaf 175 of Internet Archive b22039910 (b22039910_0175.jp2); cell = leaf pixels x 452-620, y 1738-1906",
+    "position_as_printed": "row 3, 7th from the right (rows read from right to left)",
+    "label_as_printed": "ث (the Arabic letter printed under the sign)"
+   },
+   "variants": "Compared with the Getty copy (ancientalphabets01ibnw, page n176) and the UNC copy (ancientalphabets00ibnw, page n53), registered onto the same frame: the same form in all three copies."
+  },
+  {
+   "order": 24,
+   "name": "khāʾ",
+   "value": "خ",
+   "glyph": {
+    "d": "M 41.4 32.9 L 38.5 36.5 L 38.5 64.8 L 41 67.5 M 47.6 34.3 L 50.5 39.5 L 58.5 44.2 Q 61.6 46 61.5 49.5 Q 61.2 52.5 59 54.5 L 54.8 58.3 L 43.5 66.7",
+    "rings": [
+     [
+      45.6,
+      28.6,
+      6
+     ]
+    ],
+    "dots": [
+     [
+      41.8,
+      69.0,
+      7
+     ]
+    ]
+   },
+   "strokes": "an upright with a small ring at its top and a heavy filled ball at its foot, and a triangle (like ▷) on its right: two strokes from the ring and the ball meet at a point on the right",
+   "formConfidence": "medium",
+   "note": "The upper end reads as a ball in the Wellcome copy (44 percent on the ring-or-ball measure, with a light dash off its centre), but it is an open ring in the Getty copy (an opening about 3.5 units across, a little up and to the right of the end's middle) and shows the same opening, smaller, in the UNC copy; it is drawn as a ring. The lower end is a solid mass in all three copies (4 percent in the Wellcome copy) and is drawn as a ball; in the print it is squarish rather than round and runs out a little to the lower right.",
+   "source": {
+    "plate": "Hammer 1806, Arabic p. 48, leaf 175 of Internet Archive b22039910 (b22039910_0175.jp2); cell = leaf pixels x 298-466, y 1735-1903",
+    "position_as_printed": "row 3, 8th from the right (left end of the row) (rows read from right to left)",
+    "label_as_printed": "خ (the Arabic letter printed under the sign)"
+   },
+   "variants": "Compared with the Getty copy (ancientalphabets01ibnw, page n176) and the UNC copy (ancientalphabets00ibnw, page n53): the same form; the opening of the upper ring, filled in the Wellcome copy, shows in the other two."
+  },
+  {
+   "order": 25,
+   "name": "dhāl",
+   "value": "ذ",
+   "glyph": {
+    "d": "M 34.4 67.8 L 35.5 64 L 35.1 35.5 Q 35.3 33.5 37.5 32.8 L 50.6 28.2 L 56.5 26.3 L 64.9 24.5 L 71.4 23.3 L 72 47.6 L 72 66.6 L 66.7 67.4 L 59.5 70.6 L 55.4 70.9 L 43.5 75.4 L 34.5 74.9",
+    "rings": [
+     [
+      29.6,
+      71.4,
+      6
+     ]
+    ],
+    "dots": []
+   },
+   "strokes": "a four-sided figure leaning to the right, its top and bottom both rising to the right; a ring sits in the lower left corner, where the left side and the bottom end",
+   "formConfidence": "high",
+   "note": "A tiny nick on the outside of the right-hand side, near its middle, is not drawn.",
+   "source": {
+    "plate": "Hammer 1806, Arabic p. 48, leaf 175 of Internet Archive b22039910 (b22039910_0175.jp2); cell = leaf pixels x 1072-1240, y 2096-2264",
+    "position_as_printed": "row 4, 1st from the right (rows read from right to left)",
+    "label_as_printed": "ذ (the Arabic letter printed under the sign)"
+   },
+   "variants": "Compared with the Getty copy (ancientalphabets01ibnw, page n176) and the UNC copy (ancientalphabets00ibnw, page n53), registered onto the same frame: the same form in all three copies."
+  },
+  {
+   "order": 26,
+   "name": "ḍād",
+   "value": "ض",
+   "glyph": {
+    "d": "M 40.0 32.3 L 46.4 39.9 L 53 53.6 L 64.9 76.8 M 19 56.2 L 34.5 48.2 L 41.7 44 L 47.5 41.6 L 61.3 34.5 L 63.0 31.3 M 35.5 66.0 L 41.7 60.7 L 54.3 54.3 L 73.8 44 L 79.2 40.5 L 81.5 37.5",
+    "rings": [
+     [
+      35.0,
+      29.0,
+      6
+     ],
+     [
+      64.5,
+      25.5,
+      6
+     ],
+     [
+      33.0,
+      71.5,
+      6
+     ]
+    ],
+    "dots": []
+   },
+   "strokes": "two parallel diagonals rising to the right, crossed by a third falling to the right: the upper diagonal has a plain lower end and a ring at its upper end; the lower diagonal a ring at its lower end and a plain upper end; the crossing stroke a ring at its top and a plain foot",
+   "formConfidence": "high",
+   "note": "",
+   "source": {
+    "plate": "Hammer 1806, Arabic p. 48, leaf 175 of Internet Archive b22039910 (b22039910_0175.jp2); cell = leaf pixels x 929-1097, y 2094-2262",
+    "position_as_printed": "row 4, 2nd from the right (rows read from right to left)",
+    "label_as_printed": "ض (the Arabic letter printed under the sign)"
+   },
+   "variants": "Compared with the Getty copy (ancientalphabets01ibnw, page n176) and the UNC copy (ancientalphabets00ibnw, page n53), registered onto the same frame: the same form in all three copies."
+  },
+  {
+   "order": 27,
+   "name": "ẓāʾ",
+   "value": "ظ",
+   "glyph": {
+    "d": "M 18.1 32.6 L 15.6 40 L 14.9 50 L 14.9 62 L 16.2 68.0 M 27.6 33.1 L 59.5 34.5 L 75.6 35.8 L 84 37.2 L 75 42.3 L 57.7 50 L 51.5 52.6 L 56 53.6 L 66.1 59.5 L 75.6 63.1 L 84.5 66.2 L 74.4 69 L 64.3 70.8 L 26.6 69.5",
+    "rings": [
+     [
+      23.0,
+      29.2,
+      6
+     ],
+     [
+      21.0,
+      71.6,
+      6
+     ]
+    ],
+    "dots": []
+   },
+   "strokes": "an upright on the left with a ring at each end; from the upper ring a bar runs right to a point, turns back to a point in the middle (like <), out again to a second point at the right, and back along the bottom to the lower ring",
+   "formConfidence": "high",
+   "note": "The two right-hand points are sharp corners, heavy where the lines meet, not balls. Both rings are open (78 percent at the top and 94 percent at the foot on the ring-or-ball measure).",
+   "source": {
+    "plate": "Hammer 1806, Arabic p. 48, leaf 175 of Internet Archive b22039910 (b22039910_0175.jp2); cell = leaf pixels x 771-939, y 2093-2261",
+    "position_as_printed": "row 4, 3rd from the right (rows read from right to left)",
+    "label_as_printed": "ظ (the Arabic letter printed under the sign)"
+   },
+   "variants": "Compared with the Getty copy (ancientalphabets01ibnw, page n176) and the UNC copy (ancientalphabets00ibnw, page n53), registered onto the same frame: the same form in all three copies."
+  },
+  {
+   "order": 28,
+   "name": "ghayn",
+   "value": "غ",
+   "glyph": {
+    "d": "M 16.4 23.2 Q 19.5 22 20.6 24.5 L 28 44 L 33.7 51.4 L 37.3 57.9 L 37.3 62 L 35.9 66.5 M 34.5 20.8 L 36.9 25 L 43 42 L 43 45 L 46.3 51.6 L 51.2 61.3 L 51.6 64 L 55.4 72 L 56 76 M 54.8 21.4 L 56.8 24.5 L 57.1 30.8 L 60.7 39.9 L 63.7 44 L 67.9 56.5 L 72.9 63.7 M 33.7 51.4 L 43 44 L 57.1 30.8 M 37.3 57.9 L 46.3 51.6 L 60.7 39.9",
+    "rings": [
+     [
+      32.3,
+      71.3,
+      6
+     ],
+     [
+      76.8,
+      68.3,
+      6
+     ]
+    ],
+    "dots": []
+   },
+   "strokes": "three parallel strokes falling to the right, crossed by two short parallel bars rising to the right, each running from the left stroke over the middle one to the right stroke; the left and right strokes end below in rings, the middle one in a plain end",
+   "formConfidence": "high",
+   "note": "The top of the left stroke has a small hook to the left. Both lower rings are open (94 and 97 percent on the ring-or-ball measure).",
+   "source": {
+    "plate": "Hammer 1806, Arabic p. 48, leaf 175 of Internet Archive b22039910 (b22039910_0175.jp2); cell = leaf pixels x 628-796, y 2092-2260",
+    "position_as_printed": "row 4, 4th from the right (left end of the row) (rows read from right to left)",
+    "label_as_printed": "غ (the Arabic letter printed under the sign)"
+   },
+   "variants": "Compared with the Getty copy (ancientalphabets01ibnw, page n176) and the UNC copy (ancientalphabets00ibnw, page n53), registered onto the same frame: the same form in all three copies."
+  }
+ ],
+ "otherCopies": {
+  "witnesses": [
+   {
+    "copy": "Getty Research Institute copy of the 1806 printing, Internet Archive item ancientalphabets01ibnw (500 ppi scan; no rights field in its metadata)",
+    "page": "n176 (Arabic p. 48)",
+    "urlsFetched": [
+     "https://archive.org/metadata/ancientalphabets01ibnw",
+     "https://archive.org/download/ancientalphabets01ibnw/page/n176.jpg"
+    ]
+   },
+   {
+    "copy": "University of North Carolina at Chapel Hill copy of the 1806 printing, Internet Archive item ancientalphabets00ibnw (500 ppi scan; no rights field in its metadata)",
+    "page": "n53 (Arabic p. 48)",
+    "urlsFetched": [
+     "https://archive.org/metadata/ancientalphabets00ibnw",
+     "https://archive.org/download/ancientalphabets00ibnw/page/n53.jpg"
+    ]
+   }
+  ],
+  "method": "Each page image was registered onto the Wellcome leaf (SIFT features on the table, similarity transform fitted with RANSAC; scale about 1.24 to 1.26, rotation under half a degree), each Wellcome cell frame was mapped into it and refined by a local correlation search (shifts of 0 to 3 units; correlation 0.94 to 0.98 except where the sign itself differs), so the cells of all three copies share the glyph frame. The page images were fetched on 2026-10-20 and kept outside the site; they serve only as witnesses."
+ },
+ "check": {
+  "by": "independent checker (not the tracer)",
+  "date": "2026-10-20",
+  "summary": "Every sign compared with the Wellcome print and with the Getty and UNC copies, registered onto the same cells: label and order, strokes, joins, direction, ends, rings and balls, and proportion. Corrected: ط (redrawn as a closed ⊐ from the Getty and UNC copies; the Wellcome copy lacks its right-hand side), خ (upper end a ring, not a ball), ف (lower right end a ring, not a ball); notes of ز and س extended with the other copies' evidence.",
+  "rebuildWarning": "tools/build.py regenerates glyphs.json from tools/meta_<id>.py and work/<id>_geom.json. The checker mirrored its geometry corrections into work/<id>_geom.json, but the corrected strokes, notes, confidences, variants, cells and otherCopies live only in this file (and in check/tools/apply.py), so build.py must not be re-run without carrying them over."
+ }
+}
