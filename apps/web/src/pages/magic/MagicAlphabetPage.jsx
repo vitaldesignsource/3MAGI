@@ -7,6 +7,7 @@ import ScriptoriumTimeline from '../../components/ScriptoriumTimeline';
 import ScriptoriumDrill from '../../components/ScriptoriumDrill';
 import MagicGlyph, { Sign, Unstruck } from './MagicGlyph';
 import FitTitle from './FitTitle';
+import { isolate } from './Bidi';
 import { LetterGrid, PendingLedger } from './Letters';
 import { ALPHABETS, ENTRIES, ENTRY_BY_SLUG, MAGIC_PATH, STANDINGS, WING, entryPath, loadEntry, textOf } from './lib';
 import '../../styles/magic.css';
@@ -150,9 +151,9 @@ function MagicAlphabetPage() {
                             <span>{pending ? 'Letterforms being traced' : 'Page in preparation'}</span>
                         </p>
                     )}
-                    <p className="edu-hero-sub">{mod.summary}</p>
+                    <p className="edu-hero-sub">{isolate(mod.summary)}</p>
                     {mod.otherNames && mod.otherNames.length > 0 && (
-                        <p className="mg-hero-names"><span>Also called</span> {mod.otherNames.join(' · ')}</p>
+                        <p className="mg-hero-names"><span>Also called</span> {isolate(mod.otherNames.join(' · '))}</p>
                     )}
                     {sections.length > 0 && (
                         <nav className="edu-section-nav" aria-label="Sections of this page">
@@ -177,19 +178,20 @@ function MagicAlphabetPage() {
 
                 {!stub && mod.intro && (
                     <section className="mg-intro" aria-label="Introduction">
-                        {mod.intro.map((p, i) => <p key={i}>{p}</p>)}
+                        {mod.intro.map((p, i) => <p key={i}>{isolate(p)}</p>)}
                     </section>
                 )}
 
                 {letters.length > 0 && (
                     <section className="edu-alphabet mg-letters" aria-labelledby="mg-letters-heading">
                         <SectionHead kicker="First Things" id="mg-letters-heading" title={lettersTitle}>
-                            {mod.scriptNote && <p>{mod.scriptNote}</p>}
+                            {mod.scriptNote && <p>{isolate(mod.scriptNote)}</p>}
                         </SectionHead>
                         {pending
                             ? <PendingLedger mod={mod} letters={letters} keyedTo={keyedTo} hebrewKeys={keys?.hebrew} latinKeys={keys?.latin} />
                             : <LetterGrid mod={mod} letters={letters} keyedTo={keyedTo} direction={direction}
-                                label={`${mod.title}: ${letters.length} ${keyedTo === 'none' && !mod.valueLabel ? 'signs' : 'letters'}`} hebrewKeys={keys?.hebrew} />}
+                                label={`${mod.title}: ${letters.length} ${!reg ? 'entries' : keyedTo === 'none' && !mod.valueLabel ? 'signs' : 'letters'}`} hebrewKeys={keys?.hebrew}
+                                formless={!reg} />}
                     </section>
                 )}
 
@@ -197,11 +199,11 @@ function MagicAlphabetPage() {
                     <section className="mg-drawing" aria-labelledby="mg-drawing-heading">
                         <SectionHead kicker={pending ? 'Being Traced' : 'Set and Drawn'} id="mg-drawing-heading" title={drawingTitle} />
                         <div className="mg-drawn">
-                            {mod.drawing.face && <div className="ch-kv"><span>Set in</span><p>{mod.drawing.face}</p></div>}
-                            {mod.drawing.set && <div className="ch-kv"><span>What the font shows</span><p>{mod.drawing.set}</p></div>}
-                            {mod.drawing.follows && <div className="ch-kv"><span>{pending ? 'To be traced from' : 'Drawn from'}</span><p>{mod.drawing.follows}</p></div>}
-                            {mod.drawing.drawn && <div className="ch-kv"><span>What is drawn</span><p>{mod.drawing.drawn}</p></div>}
-                            {mod.drawing.variants && <div className="ch-kv"><span>Where the editions differ</span><p>{mod.drawing.variants}</p></div>}
+                            {mod.drawing.face && <div className="ch-kv"><span>Set in</span><p>{isolate(mod.drawing.face)}</p></div>}
+                            {mod.drawing.set && <div className="ch-kv"><span>What the font shows</span><p>{isolate(mod.drawing.set)}</p></div>}
+                            {mod.drawing.follows && <div className="ch-kv"><span>{pending ? 'To be traced from' : 'Drawn from'}</span><p>{isolate(mod.drawing.follows)}</p></div>}
+                            {mod.drawing.drawn && <div className="ch-kv"><span>What is drawn</span><p>{isolate(mod.drawing.drawn)}</p></div>}
+                            {mod.drawing.variants && <div className="ch-kv"><span>Where the editions differ</span><p>{isolate(mod.drawing.variants)}</p></div>}
                         </div>
                     </section>
                 )}
@@ -211,14 +213,14 @@ function MagicAlphabetPage() {
                         <SectionHead kicker="The First Witness" id="mg-attestation-heading" title="First attestation" />
                         <article className="mg-witness">
                             <p className="mg-witness-date">{faWhen}</p>
-                            <h3>{fa.work}</h3>
+                            <h3>{isolate(fa.work)}</h3>
                             <dl>
-                                {faDated.length > 0 && <div><dt>Dated</dt><dd>{faDated.join(' — ')}</dd></div>}
-                                {fa.author && <div><dt>By</dt><dd>{fa.author}</dd></div>}
-                                {fa.place && <div><dt>Where</dt><dd>{fa.place}</dd></div>}
-                                {fa.locator && <div><dt>Where in it</dt><dd>{fa.locator}</dd></div>}
+                                {faDated.length > 0 && <div><dt>Dated</dt><dd>{isolate(faDated.join(' — '))}</dd></div>}
+                                {fa.author && <div><dt>By</dt><dd>{isolate(fa.author)}</dd></div>}
+                                {fa.place && <div><dt>Where</dt><dd>{isolate(fa.place)}</dd></div>}
+                                {fa.locator && <div><dt>Where in it</dt><dd>{isolate(fa.locator)}</dd></div>}
                             </dl>
-                            {fa.notes && <p className="mg-witness-notes">{fa.notes}</p>}
+                            {fa.notes && <p className="mg-witness-notes">{isolate(fa.notes)}</p>}
                         </article>
                     </section>
                 )}
@@ -231,7 +233,7 @@ function MagicAlphabetPage() {
                 {!stub && (mod.claims || []).length > 0 && (
                     <section className="mg-claims" aria-labelledby="mg-claims-heading">
                         <SectionHead kicker="Claim and Record" id="mg-claims-heading" title="What is claimed">
-                            <p>Each statement about this alphabet is given with its standing, the evidence for it and where that evidence is found.</p>
+                            <p>{reg?.group === 'signs' ? 'Each statement about these signs' : reg ? 'Each statement about this alphabet' : 'Each statement here'} is given with its standing, the evidence for it and where that evidence is found.</p>
                         </SectionHead>
                         <ul className="mg-key">
                             {STANDINGS.filter((s) => mod.claims.some((c) => c.standing === s.key)).map((s) => (
@@ -241,10 +243,10 @@ function MagicAlphabetPage() {
                         <ol className="mg-ledger-claims">
                             {mod.claims.map((c, i) => (
                                 <li key={i} className={`mg-claim is-${c.standing}`}>
-                                    <p className="mg-claim-text">{c.claim}</p>
+                                    <p className="mg-claim-text">{isolate(c.claim)}</p>
                                     <p className="mg-claim-standing"><span className={`mg-tag is-${c.standing}`}>{STANDINGS.find((s) => s.key === c.standing)?.label}</span></p>
-                                    <p className="mg-claim-evidence">{c.evidence}</p>
-                                    {c.sources?.length > 0 && <p className="mg-claim-sources">{c.sources.join(' · ')}</p>}
+                                    <p className="mg-claim-evidence">{isolate(c.evidence)}</p>
+                                    {c.sources?.length > 0 && <p className="mg-claim-sources">{isolate(c.sources.join(' · '))}</p>}
                                 </li>
                             ))}
                         </ol>
@@ -256,7 +258,7 @@ function MagicAlphabetPage() {
                         <SectionHead kicker="In Use" id="mg-uses-heading" title="What it was used for" />
                         <ul className="mg-use-list">
                             {mod.uses.map((u, i) => (
-                                <li key={i}><h3>{u.use}</h3><p>{u.evidence}</p></li>
+                                <li key={i}><h3>{isolate(u.use)}</h3><p>{isolate(u.evidence)}</p></li>
                             ))}
                         </ul>
                     </section>
@@ -274,15 +276,15 @@ function MagicAlphabetPage() {
                                     <figure className="mg-quote" key={i}>
                                         <blockquote lang={q.language === 'Latin' ? 'la' : q.language === 'English' ? 'en' : undefined}
                                             className={para ? 'mg-quote-original' : undefined}>
-                                            <p>{q.text}</p>
+                                            <p>{isolate(q.text)}</p>
                                         </blockquote>
-                                        {para && <p className="mg-quote-paraphrase"><span>Paraphrase (the site’s own)</span> {q.paraphrase}</p>}
+                                        {para && <p className="mg-quote-paraphrase"><span>Paraphrase (the site’s own)</span> {isolate(q.paraphrase)}</p>}
                                         <figcaption>
-                                            <cite>{q.source}</cite>
+                                            <cite>{isolate(q.source)}</cite>
                                             <span className="mg-quote-translation">
                                                 {para ? `${q.language} original, with the site’s paraphrase` : /^english original$/i.test(q.translation) ? 'Written in English' : `Translation: ${q.translation}`}
                                             </span>
-                                            {q.note && <span className="mg-quote-note">{q.note}</span>}
+                                            {q.note && <span className="mg-quote-note">{isolate(q.note)}</span>}
                                         </figcaption>
                                     </figure>
                                 );
@@ -298,7 +300,7 @@ function MagicAlphabetPage() {
                             {mod.links.map((l) => (
                                 <li key={l.to}>
                                     <Link to={linkTarget(l.to)}>{linkTitle(l.to)}</Link>
-                                    <p>{l.relation}</p>
+                                    <p>{isolate(l.relation)}</p>
                                 </li>
                             ))}
                         </ul>
@@ -309,7 +311,7 @@ function MagicAlphabetPage() {
                     <section className="mg-cautions" aria-labelledby="mg-cautions-heading">
                         <SectionHead kicker="Read With Care" id="mg-cautions-heading" title="Cautions" />
                         <ul className="mg-caution-list">
-                            {mod.cautions.map((c, i) => <li key={i}>{c}</li>)}
+                            {mod.cautions.map((c, i) => <li key={i}>{isolate(c)}</li>)}
                         </ul>
                     </section>
                 )}
@@ -319,7 +321,7 @@ function MagicAlphabetPage() {
                     <ol className="mg-source-list">
                         {mod.sources.map((s, i) => (
                             <li key={i}>
-                                <span>{s.citation}</span>
+                                <span>{isolate(s.citation)}</span>
                                 {s.url && <a href={s.url} target="_blank" rel="noopener noreferrer">{new URL(s.url).hostname.replace(/^www\./, '')}</a>}
                             </li>
                         ))}

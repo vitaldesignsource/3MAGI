@@ -8,6 +8,18 @@
    card idioms are the halls' own. Imported by the wing's pages only.
    ===================================================================== */
 
+/* The wing's prose names signs inline — a rune or an ogham feather mark in a
+   note, an Arabic title beside its transliteration, a planet's sign in a
+   claim. Every serif stack below therefore names the halls' script faces
+   (--edu-script-faces, index.css) ahead of Georgia: each face is scoped by
+   unicode-range to its own block, so Latin text is untouched and a sign that
+   Georgia lacks is set in the site's face instead of a system fallback. */
+
+/* A Hebrew or Arabic run quoted in italic prose (Bidi.jsx isolates each
+   one) stands upright: neither face has an italic, and a slanted Naskh or
+   square Hebrew is only the browser's synthesis. */
+.mg-page bdi[dir="rtl"] { font-style: normal; }
+
 /* --- the signs ------------------------------------------------------- */
 /* A drawn letter is one em square and takes its colour from the text, so
    every size and colour the halls give a glyph reaches it unchanged. The
@@ -107,7 +119,7 @@
 .mg-hero-caption {
   margin: 0.6rem 0 0;
   color: rgba(209, 173, 104, 0.7);
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--edu-script-faces), Georgia, "Times New Roman", serif;
   font-style: italic;
   font-size: 0.9rem;
 }
@@ -115,7 +127,7 @@
   max-width: 40rem;
   margin: 1.1rem auto 0;
   color: rgba(222, 212, 196, 0.6);
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--edu-script-faces), Georgia, "Times New Roman", serif;
   font-style: italic;
   font-size: 0.92rem;
   line-height: 1.7;
@@ -154,7 +166,7 @@
 .mg-intro p {
   margin: 0 0 1.1em;
   color: rgba(232, 224, 208, 0.82);
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--edu-script-faces), Georgia, "Times New Roman", serif;
   font-size: 1.04rem;
   line-height: 1.85;
 }
@@ -175,7 +187,7 @@
 }
 .mg-group-label em {
   color: rgba(222, 212, 196, 0.62);
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--edu-script-faces), Georgia, "Times New Roman", serif;
   font-size: 0.85rem;
   letter-spacing: 0.02em;
   text-transform: none;
@@ -208,16 +220,23 @@
 }
 .mg-letter-card .edu-letter-translit { min-height: 1.1em; }
 
+/* A page of the wing that is not an alphabet (the author's chapters, the
+   lineage's books) has no sign to show: its cards are titles, set in from the
+   top a little so a row of them still reads as a row of cards, and its plaque
+   is a single column of text. */
+.mg-letter-card.is-formless { justify-content: center; padding-block: 1rem 0.9rem; min-height: 5.2rem; }
+.mg-plaque.is-formless { grid-template-columns: 1fr; }
+
 /* the plaque */
 .mg-plaque .edu-plaque-glyph { display: flex; align-items: center; justify-content: center; min-height: 1.2em; }
 .mg-plaque-gloss {
   color: rgba(222, 212, 196, 0.62);
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--edu-script-faces), Georgia, "Times New Roman", serif;
   font-style: italic;
   font-size: 1rem;
   font-weight: 400;
 }
-.mg-plaque .edu-plaque-body dd.mg-translit { font-family: Georgia, "Times New Roman", serif; font-style: italic; }
+.mg-plaque .edu-plaque-body dd.mg-translit { font-family: var(--edu-script-faces), Georgia, "Times New Roman", serif; font-style: italic; }
 .mg-codepoint { font-size: 0.88rem; letter-spacing: 0.02em; }
 .mg-plaque-poems {
   padding-top: 0.6rem;
@@ -265,7 +284,7 @@
 .mg-pending-text {
   margin: 0;
   color: rgba(240, 233, 218, 0.9);
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--edu-script-faces), Georgia, "Times New Roman", serif;
   font-size: 1.02rem;
   line-height: 1.7;
 }
@@ -290,7 +309,7 @@
 }
 .mg-register-head em {
   color: rgba(222, 212, 196, 0.62);
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--edu-script-faces), Georgia, "Times New Roman", serif;
   font-size: 0.86rem;
   letter-spacing: 0.02em;
   text-transform: none;
@@ -337,13 +356,13 @@
 }
 .mg-reg-value, .mg-reg-num { color: rgba(232, 224, 208, 0.82); }
 .mg-reg-value .edu-glyph { font-size: 1.3rem; color: #ecd9ae; }
-.mg-reg-translit { color: rgba(222, 212, 196, 0.7); font-family: Georgia, "Times New Roman", serif; font-style: italic; }
+.mg-reg-translit { color: rgba(222, 212, 196, 0.7); font-family: var(--edu-script-faces), Georgia, "Times New Roman", serif; font-style: italic; }
 .mg-reg-note,
 .mg-reg-valuenote {
   grid-column: 2;
   margin-top: 0.3rem;
   color: rgba(222, 212, 196, 0.72);
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--edu-script-faces), Georgia, "Times New Roman", serif;
   font-size: 0.9rem;
   line-height: 1.62;
 }
@@ -368,7 +387,7 @@
 .mg-drawn .ch-kv:first-child { border-top: none; padding-top: 0.2rem; }
 .mg-drawn .ch-kv:last-child { padding-bottom: 0.2rem; }
 .mg-drawn .ch-kv > span { margin: 0.42rem 0 0; font-family: "Cinzel", Georgia, serif; line-height: 1.5; }
-.mg-drawn .ch-kv p { font-family: Georgia, "Times New Roman", serif; font-size: 0.97rem; line-height: 1.75; }
+.mg-drawn .ch-kv p { font-family: var(--edu-script-faces), Georgia, "Times New Roman", serif; font-size: 0.97rem; line-height: 1.75; }
 
 /* --- the first witness --------------------------------------------------- */
 .mg-witness {
@@ -389,7 +408,7 @@
 .mg-witness h3 {
   margin: 0 0 0.9rem;
   color: #f0e9da;
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--edu-script-faces), Georgia, "Times New Roman", serif;
   font-style: italic;
   font-weight: 400;
   font-size: 1.2rem;
@@ -407,7 +426,7 @@
 .mg-witness-notes {
   margin: 0;
   color: rgba(232, 224, 208, 0.82);
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--edu-script-faces), Georgia, "Times New Roman", serif;
   font-size: 0.95rem;
   line-height: 1.7;
 }
@@ -416,7 +435,7 @@
 /* --- what is claimed ---------------------------------------------------------- */
 .mg-key { list-style: none; margin: 0 auto 1.4rem; padding: 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 0.5rem 1.6rem; max-width: 52rem; }
 .mg-key li { display: flex; gap: 0.55rem; align-items: baseline; }
-.mg-key-note { font-family: Georgia, "Times New Roman", serif; font-size: 0.86rem; color: rgba(222, 212, 196, 0.6); }
+.mg-key-note { font-family: var(--edu-script-faces), Georgia, "Times New Roman", serif; font-size: 0.86rem; color: rgba(222, 212, 196, 0.6); }
 .mg-tag {
   display: inline-block;
   padding: 0.13rem 0.5rem;
@@ -443,10 +462,10 @@
 .mg-claim.is-attributed { border-left-color: rgba(143, 168, 189, 0.75); }
 .mg-claim.is-disputed   { border-left-color: rgba(185, 143, 192, 0.75); }
 .mg-claim.is-legend     { border-left-color: rgba(201, 168, 106, 0.75); }
-.mg-claim-text { margin: 0; color: rgba(240, 233, 218, 0.94); font-family: Georgia, "Times New Roman", serif; font-size: 1.02rem; line-height: 1.6; }
+.mg-claim-text { margin: 0; color: rgba(240, 233, 218, 0.94); font-family: var(--edu-script-faces), Georgia, "Times New Roman", serif; font-size: 1.02rem; line-height: 1.6; }
 .mg-claim-standing { margin: 0.6rem 0 0.5rem; }
-.mg-claim-evidence { margin: 0; color: rgba(232, 224, 208, 0.78); font-family: Georgia, "Times New Roman", serif; font-size: 0.95rem; line-height: 1.72; }
-.mg-claim-sources { margin: 0.55rem 0 0; color: rgba(209, 173, 104, 0.62); font-family: Georgia, "Times New Roman", serif; font-style: italic; font-size: 0.84rem; line-height: 1.6; }
+.mg-claim-evidence { margin: 0; color: rgba(232, 224, 208, 0.78); font-family: var(--edu-script-faces), Georgia, "Times New Roman", serif; font-size: 0.95rem; line-height: 1.72; }
+.mg-claim-sources { margin: 0.55rem 0 0; color: rgba(209, 173, 104, 0.62); font-family: var(--edu-script-faces), Georgia, "Times New Roman", serif; font-style: italic; font-size: 0.84rem; line-height: 1.6; }
 
 /* --- uses, kin, cautions, sources --------------------------------------------- */
 .mg-use-list,
@@ -456,19 +475,19 @@
 .mg-use-list { list-style: none; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 22rem), 1fr)); gap: 1rem; max-width: 62rem; }
 .mg-use-list li { padding: 1.1rem 1.2rem; border: 1px solid rgba(179, 139, 70, 0.22); background: rgba(16, 13, 10, 0.8); }
 .mg-use-list h3 { margin: 0 0 0.45rem; color: #ecd9ae; font-size: 0.98rem; line-height: 1.4; letter-spacing: 0.04em; }
-.mg-use-list p { margin: 0; color: rgba(222, 212, 196, 0.72); font-family: Georgia, "Times New Roman", serif; font-size: 0.93rem; line-height: 1.7; }
+.mg-use-list p { margin: 0; color: rgba(222, 212, 196, 0.72); font-family: var(--edu-script-faces), Georgia, "Times New Roman", serif; font-size: 0.93rem; line-height: 1.7; }
 .mg-link-list { list-style: none; display: grid; gap: 0; }
 .mg-link-list li { display: grid; grid-template-columns: minmax(9rem, 14rem) 1fr; gap: 0.4rem 1.6rem; padding: 0.9rem 0.3rem; border-top: 1px solid rgba(179, 139, 70, 0.16); }
 .mg-link-list li:last-child { border-bottom: 1px solid rgba(179, 139, 70, 0.16); }
 .mg-link-list a { color: #ecd9ae; letter-spacing: 0.06em; text-decoration: none; }
 .mg-link-list a:hover { color: #fff3d6; }
-.mg-link-list p { margin: 0; color: rgba(222, 212, 196, 0.72); font-family: Georgia, "Times New Roman", serif; font-size: 0.94rem; line-height: 1.7; }
+.mg-link-list p { margin: 0; color: rgba(222, 212, 196, 0.72); font-family: var(--edu-script-faces), Georgia, "Times New Roman", serif; font-size: 0.94rem; line-height: 1.7; }
 .mg-caution-list { list-style: none; display: grid; gap: 0.7rem; }
 .mg-caution-list li {
   position: relative;
   padding: 0.2rem 0 0.2rem 1.6rem;
   color: rgba(232, 224, 208, 0.8);
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--edu-script-faces), Georgia, "Times New Roman", serif;
   font-size: 0.97rem;
   line-height: 1.75;
 }
@@ -490,7 +509,7 @@
   padding: 0.65rem 0.3rem;
   border-top: 1px solid rgba(179, 139, 70, 0.13);
   color: rgba(222, 212, 196, 0.78);
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--edu-script-faces), Georgia, "Times New Roman", serif;
   font-size: 0.92rem;
   line-height: 1.6;
 }
@@ -516,7 +535,7 @@
 .mg-quote blockquote p {
   margin: 0;
   color: rgba(240, 233, 218, 0.92);
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--edu-script-faces), Georgia, "Times New Roman", serif;
   font-size: 1.06rem;
   line-height: 1.7;
 }
@@ -526,7 +545,7 @@
   padding-left: 0.9rem;
   border-left: 1px solid rgba(209, 173, 104, 0.35);
   color: rgba(232, 224, 208, 0.82);
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--edu-script-faces), Georgia, "Times New Roman", serif;
   font-size: 0.98rem;
   line-height: 1.7;
 }
@@ -544,7 +563,7 @@
 .mg-quote figcaption { margin-top: 1rem; padding-top: 0.75rem; border-top: 1px solid rgba(179, 139, 70, 0.18); display: grid; gap: 0.3rem; }
 .mg-quote figcaption cite { margin: 0; letter-spacing: 0.1em; text-transform: none; font-size: 0.86rem; color: rgba(236, 217, 174, 0.85); }
 .mg-quote-translation,
-.mg-quote-note { color: rgba(222, 212, 196, 0.62); font-family: Georgia, "Times New Roman", serif; font-size: 0.86rem; line-height: 1.6; }
+.mg-quote-note { color: rgba(222, 212, 196, 0.62); font-family: var(--edu-script-faces), Georgia, "Times New Roman", serif; font-size: 0.86rem; line-height: 1.6; }
 .mg-quote-note { font-style: italic; }
 
 /* --- a page still being written ------------------------------------------------- */
@@ -561,7 +580,7 @@
   background: linear-gradient(135deg, rgba(28, 22, 15, 0.92), rgba(14, 11, 9, 0.95));
 }
 .mg-stub-panel h2 { margin: 0.15rem 0 0.5rem; color: #ecd9ae; font-size: 1.25rem; line-height: 1.3; }
-.mg-stub-panel p { margin: 0; color: rgba(232, 224, 208, 0.8); font-family: Georgia, "Times New Roman", serif; line-height: 1.75; }
+.mg-stub-panel p { margin: 0; color: rgba(232, 224, 208, 0.8); font-family: var(--edu-script-faces), Georgia, "Times New Roman", serif; line-height: 1.75; }
 
 /* --- the way on ------------------------------------------------------------------- */
 .mg-entry-nav a { display: inline-flex; align-items: center; gap: 0.45rem; }
@@ -581,7 +600,7 @@
 .mg-group-head h4 { margin: 0; color: #ecd9ae; font-size: 1.05rem; letter-spacing: 0.12em; text-transform: uppercase; }
 .mg-group.is-compact .mg-group-head { margin-bottom: 0.9rem; padding-bottom: 0.45rem; border-bottom-color: rgba(179, 139, 70, 0.16); }
 .mg-group.is-compact .mg-group-head h4 { font-size: 0.86rem; letter-spacing: 0.14em; color: rgba(236, 217, 174, 0.9); }
-.mg-group-head p { margin: 0.3rem 0 0; color: rgba(222, 212, 196, 0.66); font-family: Georgia, "Times New Roman", serif; font-style: italic; font-size: 0.92rem; }
+.mg-group-head p { margin: 0.3rem 0 0; color: rgba(222, 212, 196, 0.66); font-family: var(--edu-script-faces), Georgia, "Times New Roman", serif; font-style: italic; font-size: 0.92rem; }
 /* the alphabets still in preparation, after those open now */
 .mg-rest { margin-top: 3.4rem; }
 .mg-rest-head {
@@ -598,7 +617,7 @@
 .mg-door-sign { display: flex; align-items: center; justify-content: center; min-height: 3.2rem; }
 .mg-door-sign .mg-unstruck { width: 2.6rem; height: 2.6rem; vertical-align: middle; }
 .mg-door.is-pending .edu-hall-glyph { text-shadow: none; }
-.mg-door-names { font-family: Georgia, "Times New Roman", serif; font-size: 0.95rem; }
+.mg-door-names { font-family: var(--edu-script-faces), Georgia, "Times New Roman", serif; font-size: 0.95rem; }
 .mg-door-status {
   display: inline-flex;
   align-items: center;
@@ -635,7 +654,7 @@
   max-width: 46rem;
   margin: 1.2rem auto 0;
   color: rgba(222, 212, 196, 0.6);
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--edu-script-faces), Georgia, "Times New Roman", serif;
   font-style: italic;
   font-size: 0.92rem;
   line-height: 1.6;
@@ -681,7 +700,7 @@
 .mg-tool:hover { transform: translateY(-3px); border-color: rgba(209, 173, 104, 0.6); box-shadow: 0 14px 34px rgba(0, 0, 0, 0.45); }
 .mg-tool-kicker { color: rgba(209, 173, 104, 0.8); font-size: 0.7rem; letter-spacing: 0.2em; text-transform: uppercase; }
 .mg-tool-title { color: #f4f0e7; font-size: 1.2rem; letter-spacing: 0.06em; }
-.mg-tool-line { color: rgba(222, 212, 196, 0.72); font-family: Georgia, "Times New Roman", serif; font-size: 0.95rem; line-height: 1.65; }
+.mg-tool-line { color: rgba(222, 212, 196, 0.72); font-family: var(--edu-script-faces), Georgia, "Times New Roman", serif; font-size: 0.95rem; line-height: 1.65; }
 .mg-tool-enter { margin-top: auto; padding-top: 0.6rem; color: rgba(209, 173, 104, 0.8); font-size: 0.78rem; letter-spacing: 0.18em; text-transform: uppercase; }
 .mg-page-grid { grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 25rem)); justify-content: center; }
 .mg-page-card h3 a { color: inherit; text-decoration: none; border-bottom: 1px solid rgba(209, 173, 104, 0.3); }
@@ -697,7 +716,7 @@
   padding-left: 0.9rem;
   border-left: 1px dashed rgba(209, 173, 104, 0.5);
   color: rgba(222, 212, 196, 0.72);
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--edu-script-faces), Georgia, "Times New Roman", serif;
   font-size: 0.95rem;
   line-height: 1.7;
 }
@@ -748,7 +767,7 @@
 .mg-cmp-anc-in { display: inline-flex; align-items: center; gap: 0.6rem; }
 .mg-cmp-key a { display: inline-flex; align-items: baseline; gap: 0.6rem; color: inherit; text-decoration: none; }
 .mg-cmp-key-glyph { font-size: 1.35rem; color: #f0e9da; min-width: 1.4rem; }
-.mg-cmp-key-name { color: #ecd9ae; font-style: italic; font-family: Georgia, "Times New Roman", serif; font-size: 0.9rem; }
+.mg-cmp-key-name { color: #ecd9ae; font-style: italic; font-family: var(--edu-script-faces), Georgia, "Times New Roman", serif; font-size: 0.9rem; }
 .mg-cmp-key a:hover .mg-cmp-key-name { color: #fff3d6; }
 .mg-cmp-final td, .mg-cmp-final th { background: rgba(10, 8, 6, 0.6); }
 .mg-cmp-final .mg-cmp-key-glyph { font-size: 1.15rem; color: rgba(240, 233, 218, 0.8); }
@@ -773,7 +792,7 @@
   align-items: center;
   gap: 0.9rem;
   color: rgba(222, 212, 196, 0.78);
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--edu-script-faces), Georgia, "Times New Roman", serif;
   font-style: italic;
   font-size: 0.95rem;
   line-height: 1.65;
@@ -808,7 +827,7 @@
 .mg-translit-hint {
   margin: 0.6rem 0 0;
   color: rgba(222, 212, 196, 0.55);
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--edu-script-faces), Georgia, "Times New Roman", serif;
   font-style: italic;
   font-size: 0.88rem;
   text-align: center;
@@ -840,7 +859,7 @@
   letter-spacing: 0.18em;
   text-transform: uppercase;
 }
-.mg-writ-plain em { font-family: Georgia, "Times New Roman", serif; font-size: 1.05rem; }
+.mg-writ-plain em { font-family: var(--edu-script-faces), Georgia, "Times New Roman", serif; font-size: 1.05rem; }
 .mg-writ-text bdi { font-size: 1.2rem; color: #ecd9ae; }
 .mg-copy {
   margin-left: 0.7rem;
@@ -857,14 +876,14 @@
 .mg-breakdown { margin-top: 1.1rem; }
 .mg-breakdown .edu-reckoner-pair .edu-glyph { font-size: 1.5rem; }
 .mg-translit-report { margin-top: 0.9rem; }
-.mg-translit-report p { margin: 0.35rem 0 0; color: rgba(222, 212, 196, 0.72); font-family: Georgia, "Times New Roman", serif; font-size: 0.9rem; }
+.mg-translit-report p { margin: 0.35rem 0 0; color: rgba(222, 212, 196, 0.72); font-family: var(--edu-script-faces), Georgia, "Times New Roman", serif; font-size: 0.9rem; }
 .mg-conventions {
   padding: 1.3rem 1.4rem;
   border: 1px solid rgba(209, 173, 104, 0.3);
   background: linear-gradient(180deg, rgba(24, 19, 14, 0.9), rgba(13, 11, 9, 0.93));
 }
 .mg-conventions h3 { margin: 0 0 0.6rem; color: #ecd9ae; font-size: 1rem; letter-spacing: 0.08em; line-height: 1.4; }
-.mg-conventions > p { margin: 0 0 0.9rem; color: rgba(232, 224, 208, 0.8); font-family: Georgia, "Times New Roman", serif; font-size: 0.93rem; line-height: 1.7; }
+.mg-conventions > p { margin: 0 0 0.9rem; color: rgba(232, 224, 208, 0.8); font-family: var(--edu-script-faces), Georgia, "Times New Roman", serif; font-size: 0.93rem; line-height: 1.7; }
 .mg-conventions .mg-conventions-note { color: rgba(222, 212, 196, 0.6); font-style: italic; font-size: 0.88rem; }
 .mg-conventions .mg-conventions-note a { color: #ecd9ae; border-bottom: 1px solid rgba(209, 173, 104, 0.35); font-style: normal; }
 .mg-fold-table { width: 100%; border-collapse: collapse; margin: 0 0 0.9rem; font-size: 0.9rem; }
@@ -878,7 +897,7 @@
   text-transform: uppercase;
 }
 .mg-fold-table th { color: rgba(209, 173, 104, 0.6); font-weight: 400; font-size: 0.62rem; letter-spacing: 0.14em; text-transform: uppercase; text-align: left; padding: 0.3rem 0.4rem; border-bottom: 1px solid rgba(179, 139, 70, 0.25); }
-.mg-fold-table td { padding: 0.4rem; border-bottom: 1px solid rgba(179, 139, 70, 0.12); color: rgba(222, 212, 196, 0.72); font-family: Georgia, "Times New Roman", serif; vertical-align: baseline; }
+.mg-fold-table td { padding: 0.4rem; border-bottom: 1px solid rgba(179, 139, 70, 0.12); color: rgba(222, 212, 196, 0.72); font-family: var(--edu-script-faces), Georgia, "Times New Roman", serif; vertical-align: baseline; }
 .mg-fold-from { font-style: italic; color: #ecd9ae !important; white-space: nowrap; }
 .mg-fold-to { white-space: nowrap; }
 .mg-fold-to .edu-glyph { font-size: 1.25rem; color: #ecd9ae; margin-right: 0.4rem; }
@@ -887,11 +906,11 @@
 .mg-key-grid { list-style: none; margin: 0 0 0.9rem; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(2.7rem, 1fr)); gap: 0.35rem; }
 .mg-key-grid li { display: flex; flex-direction: column; align-items: center; padding: 0.3rem 0.2rem; border: 1px solid rgba(179, 139, 70, 0.18); }
 .mg-key-sign { font-size: 1.3rem; color: #ecd9ae; line-height: 1.3; }
-.mg-key-letter { font-family: Georgia, "Times New Roman", serif; font-style: italic; font-size: 0.78rem; color: rgba(209, 173, 104, 0.75); }
+.mg-key-letter { font-family: var(--edu-script-faces), Georgia, "Times New Roman", serif; font-style: italic; font-size: 0.78rem; color: rgba(209, 173, 104, 0.75); }
 
 /* --- the reading voice, in the wing ------------------------------------------------ */
 .edu-page .mg-hero .edu-hero-sub,
-.edu-page .mg-portal .edu-hall-blurb { font-family: Georgia, "Times New Roman", serif; }
+.edu-page .mg-portal .edu-hall-blurb { font-family: var(--edu-script-faces), Georgia, "Times New Roman", serif; }
 
 /* --- small screens --------------------------------------------------------------------- */
 @media (max-width: 900px) {

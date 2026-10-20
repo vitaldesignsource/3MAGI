@@ -10875,6 +10875,11 @@ h3 {
   flex: 1; background: none; border: none; color: #f0e9da;
   padding: 0.85rem 1.1rem; font: inherit; font-size: 1.05rem;
 }
+/* The placeholder offers a sign from a hall (𓋹, 𒀭) and a reader may paste
+   the script itself: name the script faces ahead of the inherited Cinzel, so
+   neither falls to tofu. Each face is unicode-range-scoped, so Latin keeps
+   Cinzel. */
+.edu-page .edu-search-box input { font-family: var(--edu-script-faces), "Cinzel", Georgia, "Times New Roman", serif; }
 .edu-search-box input:focus { outline: none; }
 .edu-search-box input::placeholder { color: rgba(222, 212, 196, 0.4); }
 .edu-search-status {

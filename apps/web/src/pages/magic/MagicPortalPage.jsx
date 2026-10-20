@@ -7,7 +7,7 @@ import ScriptoriumSearch from '../../components/ScriptoriumSearch';
 import PortalEmblem from '../christianities/PortalEmblem';
 import { DoorLegend, MagicDoor } from './MagicDoors';
 import FitTitle from './FitTitle';
-import { ALPHABETS, GROUPS, MAGIC_PATH, PAGES, WING, capitalise, entryPath, numberWord, textOf } from './lib';
+import { ALPHABETS, GROUPS, MAGIC_PATH, PAGES, STATUS_LABEL, WING, capitalise, entryPath, numberWord, textOf } from './lib';
 import compare from '../../data/education/magic/compare.generated';
 import '../../styles/magic.css';
 
@@ -24,9 +24,17 @@ function MagicPortalPage() {
     const shown = ALPHABETS.filter((a) => compare.entries[a.slug]?.shown > 0).length;
     const tracing = ALPHABETS.filter((a) => a.status === 'forms-pending').length;
     const writing = ALPHABETS.length - shown - tracing;
+    // Whether any page is still a stub (summary and sources only), and
+    // whether every open alphabet shows every one of its signs — the copy
+    // below says only what the data bears out.
+    const anyStub = ALPHABETS.some((a) => compare.entries[a.slug]?.stub);
     // Open now: ready, and written in full (not a stub).
     const open = ALPHABETS.filter((a) => a.status === 'ready' && !compare.entries[a.slug]?.stub);
     const isOpen = new Set(open.map((a) => a.slug));
+    const allSignsShown = open.every((a) => {
+        const e = compare.entries[a.slug];
+        return e && e.letters > 0 && e.shown === e.letters;
+    });
     return (
         <div className="third-lamp-scope edu-page mg-page mg-portal">
             <Helmet>
@@ -56,16 +64,20 @@ function MagicPortalPage() {
                     <header className="edu-section-head">
                         <p className="kicker">{WING.kicker}</p>
                         <h2 id="mg-alphabets-heading">{capitalise(numberWord(ALPHABETS.length))} alphabets and kinds of sign</h2>
-                        <p>{capitalise(numberWord(shown))} can be shown in full now. The forms of {numberWord(tracing)} are being
+                        <p>{capitalise(numberWord(shown))} can be read with their signs now. The forms of {numberWord(tracing)} are being
                             traced from the editions that first printed them, and their doors say so{writing > 0
                                 ? `; ${numberWord(writing)} more ${writing === 1 ? 'is' : 'are'} being written` : ''}. Every
-                            door opens: a page still in preparation gives its summary and its sources.</p>
+                            door opens: {anyStub
+                                ? 'a page still in preparation gives its summary and its sources.'
+                                : 'a page whose forms are still being traced gives its history, its claims and its sources now.'}</p>
                     </header>
                     {open.length > 0 && (
                         <div className="mg-group mg-open">
                             <div className="mg-group-head">
                                 <h3 id="mg-group-open">Open now</h3>
-                                <p>Read in full: every sign shown, with its history, its claims and its sources.</p>
+                                <p>{allSignsShown
+                                    ? 'Read in full: every sign shown, with its history, its claims and its sources.'
+                                    : 'Read in full: the signs set in type, with their history, their claims and their sources; a sign still to be traced says so where it stands.'}</p>
                             </div>
                             <div className="edu-hall-grid mg-door-grid" role="list" aria-labelledby="mg-group-open">
                                 {open.map((a) => (
@@ -78,7 +90,7 @@ function MagicPortalPage() {
                     )}
                     <div className="mg-rest">
                         <div className="mg-rest-head">
-                            <h3 id="mg-rest-heading">In preparation</h3>
+                            <h3 id="mg-rest-heading">{anyStub ? 'In preparation' : STATUS_LABEL['forms-pending']}</h3>
                         </div>
                         {GROUPS.map((g) => {
                             const members = ALPHABETS.filter((a) => a.group === g.key && !isOpen.has(a.slug));

@@ -2,6 +2,7 @@ import React, { useEffect, useLayoutEffect, useMemo, useRef, useState } from 're
 import { Link, useLocation } from 'react-router-dom';
 import { Sign, Unstruck } from './MagicGlyph';
 import { sharedNote } from './sign';
+import { isolate } from './Bidi';
 
 // The letters of an alphabet, in the hall's own idiom: a grid that walks by
 // keyboard (a listbox with a roving tabindex, the arrows following the
@@ -34,13 +35,21 @@ function ValueLink({ value, keyedTo, hallIndex }) {
     );
 }
 
-function Plaque({ letter, mod, keyedTo, hebrewKey, hallIndex }) {
+// `formless` is a page of the wing that is not an alphabet (the author's
+// chapters, the lineage's books): its entries have no form to show or trace,
+// so neither the card nor the plaque wears a sign or speaks of one.
+function Plaque({ letter, mod, keyedTo, hebrewKey, hallIndex, formless }) {
     const drawn = Boolean(letter.glyph);
+    const form = drawn ? `drawn — ${CONFIDENCE[letter.formConfidence]}`
+        : letter.char ? `set in the font — ${CONFIDENCE[letter.formConfidence]}`
+            : 'not shown: still to be traced';
     return (
-        <aside className="edu-letter-plaque mg-plaque" aria-live="polite">
-            <div className="edu-plaque-glyph edu-glyph" aria-hidden="true">
-                <Sign of={letter} />
-            </div>
+        <aside className={`edu-letter-plaque mg-plaque${formless ? ' is-formless' : ''}`} aria-live="polite">
+            {!formless && (
+                <div className="edu-plaque-glyph edu-glyph" aria-hidden="true">
+                    <Sign of={letter} />
+                </div>
+            )}
             <div className="edu-plaque-body">
                 <h3>
                     {letter.name}
@@ -52,11 +61,11 @@ function Plaque({ letter, mod, keyedTo, hebrewKey, hallIndex }) {
                         <div><dt>{mod.valueLabel || 'Stands for'}</dt><dd><ValueLink value={letter.value} keyedTo={keyedTo} hallIndex={hallIndex} /></dd></div>
                     )}
                     {letter.value == null && letter.valueNote && <div><dt>Stands for</dt><dd>{letter.valueNote}</dd></div>}
-                    {letter.translit && <div><dt>Transliteration</dt><dd className="mg-translit">{letter.translit}</dd></div>}
+                    {letter.translit && <div><dt>{formless ? 'Where and when' : 'Transliteration'}</dt><dd className="mg-translit">{letter.translit}</dd></div>}
                     {hebrewKey && <div><dt>Number</dt><dd>{hebrewKey.value}</dd></div>}
                     {letter.planet && <div><dt>Planet</dt><dd>{letter.planet}</dd></div>}
                     {letter.codepoint && <div><dt>Unicode</dt><dd className="mg-codepoint">{letter.codepoint} · {letter.unicodeName}</dd></div>}
-                    <div><dt>Form</dt><dd>{drawn ? `drawn — ${CONFIDENCE[letter.formConfidence]}` : `set in the font — ${CONFIDENCE[letter.formConfidence]}`}</dd></div>
+                    {!formless && <div><dt>Form</dt><dd>{form}</dd></div>}
                 </dl>
                 {letter.poemNames && (
                     <dl className="mg-plaque-poems">
@@ -66,7 +75,7 @@ function Plaque({ letter, mod, keyedTo, hebrewKey, hallIndex }) {
                     </dl>
                 )}
                 {drawn && letter.strokes && <p className="mg-plaque-strokes"><span>Drawn</span> {letter.strokes}</p>}
-                {letter.note && <p className="edu-plaque-note">{letter.note}</p>}
+                {letter.note && <p className="edu-plaque-note">{isolate(letter.note)}</p>}
                 {(letter.variants || []).length > 0 && (
                     <div className="mg-variants">
                         <p className="mg-variants-label">In other editions</p>
@@ -75,7 +84,7 @@ function Plaque({ letter, mod, keyedTo, hebrewKey, hallIndex }) {
                                 <li key={i}>
                                     <span className="mg-variant-sign edu-glyph"><Sign of={v} label={`${letter.name} as in ${v.source}`} /></span>
                                     <span className="mg-variant-source">{v.source}</span>
-                                    {v.note && <span className="mg-variant-note">{v.note}</span>}
+                                    {v.note && <span className="mg-variant-note">{isolate(v.note)}</span>}
                                 </li>
                             ))}
                         </ul>
@@ -86,7 +95,7 @@ function Plaque({ letter, mod, keyedTo, hebrewKey, hallIndex }) {
     );
 }
 
-export function LetterGrid({ mod, letters, keyedTo = 'none', direction = 'ltr', label, hebrewKeys }) {
+export function LetterGrid({ mod, letters, keyedTo = 'none', direction = 'ltr', label, hebrewKeys, formless = false }) {
     const [selected, setSelected] = useState(() => {
         const i = typeof window !== 'undefined' ? letterIndexOf(window.location.hash) : null;
         return i != null && i < letters.length ? i : 0;
@@ -181,16 +190,19 @@ export function LetterGrid({ mod, letters, keyedTo = 'none', direction = 'ltr', 
             role="option"
             aria-selected={selected === i}
             tabIndex={selected === i ? 0 : -1}
-            className={`edu-letter-card mg-letter-card${selected === i ? ' is-selected' : ''}${l.glyph ? ' is-drawn' : ''}`}
+            className={`edu-letter-card mg-letter-card${selected === i ? ' is-selected' : ''}${l.glyph ? ' is-drawn' : ''}${formless ? ' is-formless' : ''}`}
             onClick={() => choose(i)}
         >
-            <span className="edu-letter-glyph edu-glyph" dir={rtl ? 'rtl' : undefined}><Sign of={l} /></span>
-            <span className={`edu-letter-name${String(l.name).split(/\s+/).some((w) => w.length >= 10) ? ' is-long' : ''}`}>{l.name}</span>
+            {!formless && <span className="edu-letter-glyph edu-glyph" dir={rtl ? 'rtl' : undefined}><Sign of={l} /></span>}
+            {/* a long word is set smaller so it breaks at a space, not inside the
+                word; a page's titles ("II.48 · Geomantic figures") sit in
+                tracked capitals with no sign above them, and break a letter sooner */}
+            <span className={`edu-letter-name${String(l.name).split(/\s+/).some((w) => w.length >= (formless ? 9 : 10)) ? ' is-long' : ''}`}>{l.name}</span>
             <span className="edu-letter-translit">{l.translit || l.planet || l.codepoint || ''}</span>
         </button>
     );
     const plaque = letter && (
-        <Plaque letter={letter} mod={mod} keyedTo={keyedTo} hebrewKey={hebrewKeyOf(letter)} hallIndex={hallIndexOf(letter)} />
+        <Plaque letter={letter} mod={mod} keyedTo={keyedTo} hebrewKey={hebrewKeyOf(letter)} hallIndex={hallIndexOf(letter)} formless={formless} />
     );
 
     // One alphabet, one listbox. A grouped one is a listbox per group (each
@@ -223,7 +235,7 @@ export function LetterGrid({ mod, letters, keyedTo = 'none', direction = 'ltr', 
                     <React.Fragment key={g.key}>
                         <div className="mg-letter-group">
                             <p className="mg-group-label" id={`mg-group-${g.key}`} dir="ltr">
-                                <span>{g.label}</span>{g.note && <em>{g.note}</em>}
+                                <span>{g.label}</span>{g.note && <em>{isolate(g.note)}</em>}
                             </p>
                             <div
                                 className={`edu-letter-grid mg-cols${quartered ? ' is-quartered' : ''}`}
@@ -272,12 +284,19 @@ export function PendingLedger({ mod, letters, keyedTo, hebrewKeys, latinKeys }) 
                 <Unstruck className="mg-unstruck-lg" />
                 <div>
                     <p className="mg-pending-kicker">The letterforms</p>
-                    <p className="mg-pending-text">{mod.drawing.pending}</p>
+                    <p className="mg-pending-text">{isolate(mod.drawing.pending)}</p>
                 </div>
             </div>
             <div className="mg-register-wrap">
                 <p className="mg-register-head" id="mg-register-caption">
-                    <span>The {letters.length} letters of {mod.title.replace(/^The /, 'the ')}, in the order of the table</span>
+                    {/* the order is each module's own (Hebrew order, Latin order,
+                        Agrippa's classes, the English of 1651, display only),
+                        and its scriptNote, just above, says which; the caption
+                        claims none. A register not keyed to a hall's letters
+                        (seals, staves, kinds of alphabet) counts entries. */}
+                    <span>{keyedTo === 'none'
+                        ? `The register: ${letters.length} entries`
+                        : `The ${letters.length} letters of ${mod.title.replace(/^The /, 'the ')}`}</span>
                     {own > 0 && own < letters.length && <em>notes stand beside the letters that need them</em>}
                 </p>
                 <ol className={`mg-register${hebrew ? ' is-hebrew' : ''}${bare ? ' is-bare' : ''}`} aria-labelledby="mg-register-caption">
@@ -299,14 +318,14 @@ export function PendingLedger({ mod, letters, keyedTo, hebrewKeys, latinKeys }) 
                                         <span className="mg-reg-value">
                                             {l.value != null
                                                 ? <><span className="mg-reg-label">stands for</span> <span className={hebrew ? 'edu-glyph' : undefined} lang={hebrew ? 'he' : undefined}>{l.value}</span></>
-                                                : <em>{l.valueNote}</em>}
+                                                : <em>{isolate(l.valueNote)}</em>}
                                         </span>
                                     )}
                                     {showTranslit && l.translit && <span className="mg-reg-translit">{l.translit}</span>}
                                     {num != null && <span className="mg-reg-num"><span className="mg-reg-label">number</span> {num}</span>}
                                 </span>
-                                {!showValue && l.value == null && l.valueNote && <span className="mg-reg-valuenote">{l.valueNote}</span>}
-                                {note && <span className="mg-reg-note">{note}</span>}
+                                {!showValue && l.value == null && l.valueNote && <span className="mg-reg-valuenote">{isolate(l.valueNote)}</span>}
+                                {note && <span className="mg-reg-note">{isolate(note)}</span>}
                             </li>
                         );
                     })}
