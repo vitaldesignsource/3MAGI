@@ -35,7 +35,7 @@ const registry = {
     alphabets: [
         {
             slug: 'celestial', group: 'agrippan', title: 'The Celestial Writing', short: 'Celestial',
-            otherNames: ['Scriptura coelestis', 'Celestiall writing (J.F., 1651)'],
+            otherNames: ['Scriptura Cœlestis', 'Celestiall writing (J.F., 1651)'],
             keyedTo: 'hebrew', direction: 'rtl', status: 'forms-pending', door: null,
             blurb: 'Twenty-two signs, one for each Hebrew letter, which Agrippa says the Hebrews showed set and figured among the stars.',
         },
@@ -73,7 +73,7 @@ const registry = {
             slug: 'alphabet-of-the-magi', group: 'secret', title: 'The Alphabet of the Magi', short: 'Magi',
             otherNames: ['the characters of the angel Raphael (Duret, 1613)'],
             keyedTo: 'hebrew', direction: 'rtl', status: 'forms-pending', door: null,
-            blurb: 'A variant of the Hebrew alphabet first printed at Pavia in 1539, later credited — without a source — to Paracelsus.',
+            blurb: 'A variant of the Hebrew alphabet whose earliest known printing is at Pavia in 1539, later credited — without a source — to Paracelsus.',
         },
         {
             slug: 'trithemius', group: 'secret', title: 'Trithemius and the Secret Alphabets', short: 'Trithemius',
@@ -97,7 +97,7 @@ const registry = {
             slug: 'charakteres', group: 'signs', title: 'Charaktêres: the Ring-Letters', short: 'Charaktêres',
             otherNames: ['Brillenbuchstaben', 'ring-signs', 'al-khawātim, the seals'],
             keyedTo: 'none', direction: 'ltr', status: 'forms-pending', door: null,
-            blurb: 'Invented signs that spell nothing, copied exactly from the Greek magical handbooks into Jewish, Arabic and Latin magic.',
+            blurb: 'Invented signs that spell nothing, to be copied exactly, from the Greek magical handbooks to Jewish magic and the ring-letter alphabets of the Renaissance.',
         },
         {
             slug: 'planetary-seals', group: 'signs', title: 'The Tables of the Planets', short: 'Tables of the Planets',
@@ -115,7 +115,7 @@ const registry = {
             slug: 'galdrastafir', group: 'signs', title: 'Galdrastafir: the Icelandic Staves', short: 'Galdrastafir',
             otherNames: ['Icelandic magical staves', 'helms (hjálmar)'],
             keyedTo: 'none', direction: 'ltr', status: 'forms-pending', door: null,
-            blurb: 'Named magical figures from Icelandic manuscripts of the sixteenth to the nineteenth century — not runes, and not Viking.',
+            blurb: 'Named magical figures from Icelandic manuscripts of about 1500 to the nineteenth century — not runes, and not Viking.',
         },
         {
             slug: 'runes', group: 'native', title: 'The Runes', short: 'Runes',

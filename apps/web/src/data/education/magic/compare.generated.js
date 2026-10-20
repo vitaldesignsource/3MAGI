@@ -5,18 +5,18 @@
 export default {
  "entries": {
   "celestial": {
-   "stub": true,
-   "letters": 0,
+   "stub": false,
+   "letters": 22,
    "shown": 0
   },
   "malachim": {
-   "stub": true,
-   "letters": 0,
+   "stub": false,
+   "letters": 23,
    "shown": 0
   },
   "transitus-fluvii": {
-   "stub": true,
-   "letters": 0,
+   "stub": false,
+   "letters": 22,
    "shown": 0
   },
   "theban": {
@@ -25,53 +25,53 @@ export default {
    "shown": 0
   },
   "aiq-bekar": {
-   "stub": true,
-   "letters": 0,
+   "stub": false,
+   "letters": 27,
    "shown": 0
   },
   "enochian": {
-   "stub": true,
-   "letters": 0,
+   "stub": false,
+   "letters": 21,
    "shown": 0
   },
   "alphabet-of-the-magi": {
-   "stub": true,
-   "letters": 0,
+   "stub": false,
+   "letters": 22,
    "shown": 0
   },
   "trithemius": {
-   "stub": true,
-   "letters": 0,
+   "stub": false,
+   "letters": 24,
    "shown": 0
   },
   "ibn-wahshiyya": {
-   "stub": true,
-   "letters": 0,
+   "stub": false,
+   "letters": 6,
    "shown": 0
   },
   "voynich": {
-   "stub": true,
-   "letters": 0,
+   "stub": false,
+   "letters": 20,
    "shown": 0
   },
   "charakteres": {
-   "stub": true,
-   "letters": 0,
+   "stub": false,
+   "letters": 13,
    "shown": 0
   },
   "planetary-seals": {
-   "stub": true,
-   "letters": 0,
+   "stub": false,
+   "letters": 30,
    "shown": 0
   },
   "signs-of-the-art": {
    "stub": false,
    "letters": 51,
-   "shown": 51
+   "shown": 35
   },
   "galdrastafir": {
-   "stub": true,
-   "letters": 0,
+   "stub": false,
+   "letters": 7,
    "shown": 0
   },
   "runes": {
@@ -80,18 +80,18 @@ export default {
    "shown": 24
   },
   "ogham": {
-   "stub": true,
-   "letters": 0,
-   "shown": 0
+   "stub": false,
+   "letters": 26,
+   "shown": 26
   },
   "agrippa": {
-   "stub": true,
-   "letters": 0,
+   "stub": false,
+   "letters": 25,
    "shown": 0
   },
   "the-books": {
-   "stub": true,
-   "letters": 0,
+   "stub": false,
+   "letters": 29,
    "shown": 0
   }
  },
@@ -394,7 +394,7 @@ export default {
      "status": "forms-pending",
      "direction": "rtl",
      "mode": "pending",
-     "letters": 0
+     "letters": 22
     },
     {
      "slug": "malachim",
@@ -403,7 +403,7 @@ export default {
      "status": "forms-pending",
      "direction": "rtl",
      "mode": "pending",
-     "letters": 0
+     "letters": 23
     },
     {
      "slug": "transitus-fluvii",
@@ -412,7 +412,7 @@ export default {
      "status": "forms-pending",
      "direction": "rtl",
      "mode": "pending",
-     "letters": 0
+     "letters": 22
     },
     {
      "slug": "aiq-bekar",
@@ -421,7 +421,7 @@ export default {
      "status": "forms-pending",
      "direction": "rtl",
      "mode": "pending",
-     "letters": 0
+     "letters": 27
     },
     {
      "slug": "alphabet-of-the-magi",
@@ -430,7 +430,7 @@ export default {
      "status": "forms-pending",
      "direction": "rtl",
      "mode": "pending",
-     "letters": 0
+     "letters": 22
     }
    ],
    "rows": [
@@ -438,11 +438,31 @@ export default {
      "key": "א",
      "name": "Aleph",
      "cells": {
-      "celestial": null,
-      "malachim": null,
-      "transitus-fluvii": null,
-      "aiq-bekar": null,
-      "alphabet-of-the-magi": null
+      "celestial": {
+       "i": 0,
+       "name": "Aleph",
+       "sign": null
+      },
+      "malachim": {
+       "i": 0,
+       "name": "Aleph",
+       "sign": null
+      },
+      "transitus-fluvii": {
+       "i": 0,
+       "name": "Aleph",
+       "sign": null
+      },
+      "aiq-bekar": {
+       "i": 0,
+       "name": "Aleph",
+       "sign": null
+      },
+      "alphabet-of-the-magi": {
+       "i": 0,
+       "name": "Aleph",
+       "sign": null
+      }
      },
      "value": 1,
      "ph": "𐤀",
@@ -453,11 +473,31 @@ export default {
      "key": "ב",
      "name": "Bet",
      "cells": {
-      "celestial": null,
-      "malachim": null,
-      "transitus-fluvii": null,
-      "aiq-bekar": null,
-      "alphabet-of-the-magi": null
+      "celestial": {
+       "i": 1,
+       "name": "Beth",
+       "sign": null
+      },
+      "malachim": {
+       "i": 1,
+       "name": "Beth",
+       "sign": null
+      },
+      "transitus-fluvii": {
+       "i": 1,
+       "name": "Beth",
+       "sign": null
+      },
+      "aiq-bekar": {
+       "i": 1,
+       "name": "Bet",
+       "sign": null
+      },
+      "alphabet-of-the-magi": {
+       "i": 1,
+       "name": "Bet",
+       "sign": null
+      }
      },
      "value": 2,
      "ph": "𐤁",
@@ -468,11 +508,31 @@ export default {
      "key": "ג",
      "name": "Gimel",
      "cells": {
-      "celestial": null,
-      "malachim": null,
-      "transitus-fluvii": null,
-      "aiq-bekar": null,
-      "alphabet-of-the-magi": null
+      "celestial": {
+       "i": 2,
+       "name": "Gimel",
+       "sign": null
+      },
+      "malachim": {
+       "i": 2,
+       "name": "Gimel",
+       "sign": null
+      },
+      "transitus-fluvii": {
+       "i": 2,
+       "name": "Gimel",
+       "sign": null
+      },
+      "aiq-bekar": {
+       "i": 2,
+       "name": "Gimel",
+       "sign": null
+      },
+      "alphabet-of-the-magi": {
+       "i": 2,
+       "name": "Gimel",
+       "sign": null
+      }
      },
      "value": 3,
      "ph": "𐤂",
@@ -483,11 +543,31 @@ export default {
      "key": "ד",
      "name": "Dalet",
      "cells": {
-      "celestial": null,
-      "malachim": null,
-      "transitus-fluvii": null,
-      "aiq-bekar": null,
-      "alphabet-of-the-magi": null
+      "celestial": {
+       "i": 3,
+       "name": "Daleth",
+       "sign": null
+      },
+      "malachim": {
+       "i": 3,
+       "name": "Daleth",
+       "sign": null
+      },
+      "transitus-fluvii": {
+       "i": 3,
+       "name": "Daleth",
+       "sign": null
+      },
+      "aiq-bekar": {
+       "i": 3,
+       "name": "Dalet",
+       "sign": null
+      },
+      "alphabet-of-the-magi": {
+       "i": 3,
+       "name": "Dalet",
+       "sign": null
+      }
      },
      "value": 4,
      "ph": "𐤃",
@@ -498,11 +578,31 @@ export default {
      "key": "ה",
      "name": "He",
      "cells": {
-      "celestial": null,
-      "malachim": null,
-      "transitus-fluvii": null,
-      "aiq-bekar": null,
-      "alphabet-of-the-magi": null
+      "celestial": {
+       "i": 4,
+       "name": "He",
+       "sign": null
+      },
+      "malachim": {
+       "i": 4,
+       "name": "He",
+       "sign": null
+      },
+      "transitus-fluvii": {
+       "i": 4,
+       "name": "He",
+       "sign": null
+      },
+      "aiq-bekar": {
+       "i": 4,
+       "name": "He",
+       "sign": null
+      },
+      "alphabet-of-the-magi": {
+       "i": 4,
+       "name": "He",
+       "sign": null
+      }
      },
      "value": 5,
      "ph": "𐤄",
@@ -513,11 +613,31 @@ export default {
      "key": "ו",
      "name": "Vav",
      "cells": {
-      "celestial": null,
-      "malachim": null,
-      "transitus-fluvii": null,
-      "aiq-bekar": null,
-      "alphabet-of-the-magi": null
+      "celestial": {
+       "i": 5,
+       "name": "Vau",
+       "sign": null
+      },
+      "malachim": {
+       "i": 5,
+       "name": "Vau",
+       "sign": null
+      },
+      "transitus-fluvii": {
+       "i": 5,
+       "name": "Vau",
+       "sign": null
+      },
+      "aiq-bekar": {
+       "i": 5,
+       "name": "Vav",
+       "sign": null
+      },
+      "alphabet-of-the-magi": {
+       "i": 5,
+       "name": "Vav",
+       "sign": null
+      }
      },
      "value": 6,
      "ph": "𐤅",
@@ -528,11 +648,31 @@ export default {
      "key": "ז",
      "name": "Zayin",
      "cells": {
-      "celestial": null,
-      "malachim": null,
-      "transitus-fluvii": null,
-      "aiq-bekar": null,
-      "alphabet-of-the-magi": null
+      "celestial": {
+       "i": 6,
+       "name": "Zain",
+       "sign": null
+      },
+      "malachim": {
+       "i": 6,
+       "name": "Zain",
+       "sign": null
+      },
+      "transitus-fluvii": {
+       "i": 6,
+       "name": "Zain",
+       "sign": null
+      },
+      "aiq-bekar": {
+       "i": 6,
+       "name": "Zayin",
+       "sign": null
+      },
+      "alphabet-of-the-magi": {
+       "i": 6,
+       "name": "Zayin",
+       "sign": null
+      }
      },
      "value": 7,
      "ph": "𐤆",
@@ -543,11 +683,31 @@ export default {
      "key": "ח",
      "name": "Chet",
      "cells": {
-      "celestial": null,
-      "malachim": null,
-      "transitus-fluvii": null,
-      "aiq-bekar": null,
-      "alphabet-of-the-magi": null
+      "celestial": {
+       "i": 7,
+       "name": "Cheth",
+       "sign": null
+      },
+      "malachim": {
+       "i": 7,
+       "name": "Cheth",
+       "sign": null
+      },
+      "transitus-fluvii": {
+       "i": 7,
+       "name": "Cheth",
+       "sign": null
+      },
+      "aiq-bekar": {
+       "i": 7,
+       "name": "Chet",
+       "sign": null
+      },
+      "alphabet-of-the-magi": {
+       "i": 7,
+       "name": "Chet",
+       "sign": null
+      }
      },
      "value": 8,
      "ph": "𐤇",
@@ -558,11 +718,31 @@ export default {
      "key": "ט",
      "name": "Tet",
      "cells": {
-      "celestial": null,
-      "malachim": null,
-      "transitus-fluvii": null,
-      "aiq-bekar": null,
-      "alphabet-of-the-magi": null
+      "celestial": {
+       "i": 8,
+       "name": "Theth",
+       "sign": null
+      },
+      "malachim": {
+       "i": 8,
+       "name": "Teth",
+       "sign": null
+      },
+      "transitus-fluvii": {
+       "i": 8,
+       "name": "Teth",
+       "sign": null
+      },
+      "aiq-bekar": {
+       "i": 8,
+       "name": "Tet",
+       "sign": null
+      },
+      "alphabet-of-the-magi": {
+       "i": 8,
+       "name": "Tet",
+       "sign": null
+      }
      },
      "value": 9,
      "ph": "𐤈",
@@ -573,11 +753,31 @@ export default {
      "key": "י",
      "name": "Yod",
      "cells": {
-      "celestial": null,
-      "malachim": null,
-      "transitus-fluvii": null,
-      "aiq-bekar": null,
-      "alphabet-of-the-magi": null
+      "celestial": {
+       "i": 9,
+       "name": "Iod",
+       "sign": null
+      },
+      "malachim": {
+       "i": 9,
+       "name": "Iod",
+       "sign": null
+      },
+      "transitus-fluvii": {
+       "i": 9,
+       "name": "Iod",
+       "sign": null
+      },
+      "aiq-bekar": {
+       "i": 9,
+       "name": "Yod",
+       "sign": null
+      },
+      "alphabet-of-the-magi": {
+       "i": 9,
+       "name": "Yod",
+       "sign": null
+      }
      },
      "value": 10,
      "ph": "𐤉",
@@ -588,11 +788,31 @@ export default {
      "key": "כ",
      "name": "Kaf",
      "cells": {
-      "celestial": null,
-      "malachim": null,
-      "transitus-fluvii": null,
-      "aiq-bekar": null,
-      "alphabet-of-the-magi": null
+      "celestial": {
+       "i": 10,
+       "name": "Caph",
+       "sign": null
+      },
+      "malachim": {
+       "i": 10,
+       "name": "Caph",
+       "sign": null
+      },
+      "transitus-fluvii": {
+       "i": 10,
+       "name": "Caph",
+       "sign": null
+      },
+      "aiq-bekar": {
+       "i": 10,
+       "name": "Kaf",
+       "sign": null
+      },
+      "alphabet-of-the-magi": {
+       "i": 10,
+       "name": "Kaf",
+       "sign": null
+      }
      },
      "value": 20,
      "ph": "𐤊",
@@ -606,7 +826,11 @@ export default {
       "celestial": null,
       "malachim": null,
       "transitus-fluvii": null,
-      "aiq-bekar": null,
+      "aiq-bekar": {
+       "i": 22,
+       "name": "Final Kaf",
+       "sign": null
+      },
       "alphabet-of-the-magi": null
      },
      "value": 20,
@@ -617,11 +841,31 @@ export default {
      "key": "ל",
      "name": "Lamed",
      "cells": {
-      "celestial": null,
-      "malachim": null,
-      "transitus-fluvii": null,
-      "aiq-bekar": null,
-      "alphabet-of-the-magi": null
+      "celestial": {
+       "i": 11,
+       "name": "Lamed",
+       "sign": null
+      },
+      "malachim": {
+       "i": 11,
+       "name": "Lamed",
+       "sign": null
+      },
+      "transitus-fluvii": {
+       "i": 11,
+       "name": "Lamed",
+       "sign": null
+      },
+      "aiq-bekar": {
+       "i": 11,
+       "name": "Lamed",
+       "sign": null
+      },
+      "alphabet-of-the-magi": {
+       "i": 11,
+       "name": "Lamed",
+       "sign": null
+      }
      },
      "value": 30,
      "ph": "𐤋",
@@ -632,11 +876,31 @@ export default {
      "key": "מ",
      "name": "Mem",
      "cells": {
-      "celestial": null,
-      "malachim": null,
-      "transitus-fluvii": null,
-      "aiq-bekar": null,
-      "alphabet-of-the-magi": null
+      "celestial": {
+       "i": 12,
+       "name": "Mem",
+       "sign": null
+      },
+      "malachim": {
+       "i": 12,
+       "name": "Mem",
+       "sign": null
+      },
+      "transitus-fluvii": {
+       "i": 12,
+       "name": "Mem",
+       "sign": null
+      },
+      "aiq-bekar": {
+       "i": 12,
+       "name": "Mem",
+       "sign": null
+      },
+      "alphabet-of-the-magi": {
+       "i": 12,
+       "name": "Mem",
+       "sign": null
+      }
      },
      "value": 40,
      "ph": "𐤌",
@@ -650,7 +914,11 @@ export default {
       "celestial": null,
       "malachim": null,
       "transitus-fluvii": null,
-      "aiq-bekar": null,
+      "aiq-bekar": {
+       "i": 23,
+       "name": "Final Mem",
+       "sign": null
+      },
       "alphabet-of-the-magi": null
      },
      "value": 40,
@@ -661,11 +929,31 @@ export default {
      "key": "נ",
      "name": "Nun",
      "cells": {
-      "celestial": null,
-      "malachim": null,
-      "transitus-fluvii": null,
-      "aiq-bekar": null,
-      "alphabet-of-the-magi": null
+      "celestial": {
+       "i": 13,
+       "name": "Nun",
+       "sign": null
+      },
+      "malachim": {
+       "i": 13,
+       "name": "Nun",
+       "sign": null
+      },
+      "transitus-fluvii": {
+       "i": 13,
+       "name": "Nun",
+       "sign": null
+      },
+      "aiq-bekar": {
+       "i": 13,
+       "name": "Nun",
+       "sign": null
+      },
+      "alphabet-of-the-magi": {
+       "i": 13,
+       "name": "Nun",
+       "sign": null
+      }
      },
      "value": 50,
      "ph": "𐤍",
@@ -679,7 +967,11 @@ export default {
       "celestial": null,
       "malachim": null,
       "transitus-fluvii": null,
-      "aiq-bekar": null,
+      "aiq-bekar": {
+       "i": 24,
+       "name": "Final Nun",
+       "sign": null
+      },
       "alphabet-of-the-magi": null
      },
      "value": 50,
@@ -690,11 +982,31 @@ export default {
      "key": "ס",
      "name": "Samekh",
      "cells": {
-      "celestial": null,
-      "malachim": null,
-      "transitus-fluvii": null,
-      "aiq-bekar": null,
-      "alphabet-of-the-magi": null
+      "celestial": {
+       "i": 14,
+       "name": "Samech",
+       "sign": null
+      },
+      "malachim": {
+       "i": 14,
+       "name": "Samech",
+       "sign": null
+      },
+      "transitus-fluvii": {
+       "i": 14,
+       "name": "Samech",
+       "sign": null
+      },
+      "aiq-bekar": {
+       "i": 14,
+       "name": "Samekh",
+       "sign": null
+      },
+      "alphabet-of-the-magi": {
+       "i": 14,
+       "name": "Samekh",
+       "sign": null
+      }
      },
      "value": 60,
      "ph": "𐤎",
@@ -705,11 +1017,31 @@ export default {
      "key": "ע",
      "name": "Ayin",
      "cells": {
-      "celestial": null,
-      "malachim": null,
-      "transitus-fluvii": null,
-      "aiq-bekar": null,
-      "alphabet-of-the-magi": null
+      "celestial": {
+       "i": 15,
+       "name": "Ain",
+       "sign": null
+      },
+      "malachim": {
+       "i": 16,
+       "name": "Ain",
+       "sign": null
+      },
+      "transitus-fluvii": {
+       "i": 15,
+       "name": "Ain",
+       "sign": null
+      },
+      "aiq-bekar": {
+       "i": 15,
+       "name": "Ayin",
+       "sign": null
+      },
+      "alphabet-of-the-magi": {
+       "i": 15,
+       "name": "Ayin",
+       "sign": null
+      }
      },
      "value": 70,
      "ph": "𐤏",
@@ -720,11 +1052,31 @@ export default {
      "key": "פ",
      "name": "Pe",
      "cells": {
-      "celestial": null,
-      "malachim": null,
-      "transitus-fluvii": null,
-      "aiq-bekar": null,
-      "alphabet-of-the-magi": null
+      "celestial": {
+       "i": 16,
+       "name": "Pe",
+       "sign": null
+      },
+      "malachim": {
+       "i": 17,
+       "name": "Pe",
+       "sign": null
+      },
+      "transitus-fluvii": {
+       "i": 16,
+       "name": "Pe",
+       "sign": null
+      },
+      "aiq-bekar": {
+       "i": 16,
+       "name": "Pe",
+       "sign": null
+      },
+      "alphabet-of-the-magi": {
+       "i": 16,
+       "name": "Pe",
+       "sign": null
+      }
      },
      "value": 80,
      "ph": "𐤐",
@@ -738,7 +1090,11 @@ export default {
       "celestial": null,
       "malachim": null,
       "transitus-fluvii": null,
-      "aiq-bekar": null,
+      "aiq-bekar": {
+       "i": 25,
+       "name": "Final Pe",
+       "sign": null
+      },
       "alphabet-of-the-magi": null
      },
      "value": 80,
@@ -749,11 +1105,31 @@ export default {
      "key": "צ",
      "name": "Tsadi",
      "cells": {
-      "celestial": null,
-      "malachim": null,
-      "transitus-fluvii": null,
-      "aiq-bekar": null,
-      "alphabet-of-the-magi": null
+      "celestial": {
+       "i": 17,
+       "name": "Zade",
+       "sign": null
+      },
+      "malachim": {
+       "i": 18,
+       "name": "Zade",
+       "sign": null
+      },
+      "transitus-fluvii": {
+       "i": 17,
+       "name": "Zade",
+       "sign": null
+      },
+      "aiq-bekar": {
+       "i": 17,
+       "name": "Tsadi",
+       "sign": null
+      },
+      "alphabet-of-the-magi": {
+       "i": 17,
+       "name": "Tsadi",
+       "sign": null
+      }
      },
      "value": 90,
      "ph": "𐤑",
@@ -767,7 +1143,11 @@ export default {
       "celestial": null,
       "malachim": null,
       "transitus-fluvii": null,
-      "aiq-bekar": null,
+      "aiq-bekar": {
+       "i": 26,
+       "name": "Final Tsadi",
+       "sign": null
+      },
       "alphabet-of-the-magi": null
      },
      "value": 90,
@@ -778,11 +1158,31 @@ export default {
      "key": "ק",
      "name": "Qof",
      "cells": {
-      "celestial": null,
-      "malachim": null,
-      "transitus-fluvii": null,
-      "aiq-bekar": null,
-      "alphabet-of-the-magi": null
+      "celestial": {
+       "i": 18,
+       "name": "Kuff",
+       "sign": null
+      },
+      "malachim": {
+       "i": 19,
+       "name": "Kuff",
+       "sign": null
+      },
+      "transitus-fluvii": {
+       "i": 18,
+       "name": "Kuph",
+       "sign": null
+      },
+      "aiq-bekar": {
+       "i": 18,
+       "name": "Qof",
+       "sign": null
+      },
+      "alphabet-of-the-magi": {
+       "i": 18,
+       "name": "Qof",
+       "sign": null
+      }
      },
      "value": 100,
      "ph": "𐤒",
@@ -793,11 +1193,31 @@ export default {
      "key": "ר",
      "name": "Resh",
      "cells": {
-      "celestial": null,
-      "malachim": null,
-      "transitus-fluvii": null,
-      "aiq-bekar": null,
-      "alphabet-of-the-magi": null
+      "celestial": {
+       "i": 19,
+       "name": "Res",
+       "sign": null
+      },
+      "malachim": {
+       "i": 20,
+       "name": "Res",
+       "sign": null
+      },
+      "transitus-fluvii": {
+       "i": 19,
+       "name": "Res",
+       "sign": null
+      },
+      "aiq-bekar": {
+       "i": 19,
+       "name": "Resh",
+       "sign": null
+      },
+      "alphabet-of-the-magi": {
+       "i": 19,
+       "name": "Resh",
+       "sign": null
+      }
      },
      "value": 200,
      "ph": "𐤓",
@@ -808,11 +1228,31 @@ export default {
      "key": "ש",
      "name": "Shin",
      "cells": {
-      "celestial": null,
-      "malachim": null,
-      "transitus-fluvii": null,
-      "aiq-bekar": null,
-      "alphabet-of-the-magi": null
+      "celestial": {
+       "i": 20,
+       "name": "Shin",
+       "sign": null
+      },
+      "malachim": {
+       "i": 21,
+       "name": "Shin",
+       "sign": null
+      },
+      "transitus-fluvii": {
+       "i": 20,
+       "name": "Schin",
+       "sign": null
+      },
+      "aiq-bekar": {
+       "i": 20,
+       "name": "Shin",
+       "sign": null
+      },
+      "alphabet-of-the-magi": {
+       "i": 20,
+       "name": "Shin",
+       "sign": null
+      }
      },
      "value": 300,
      "ph": "𐤔",
@@ -823,11 +1263,31 @@ export default {
      "key": "ת",
      "name": "Tav",
      "cells": {
-      "celestial": null,
-      "malachim": null,
-      "transitus-fluvii": null,
-      "aiq-bekar": null,
-      "alphabet-of-the-magi": null
+      "celestial": {
+       "i": 21,
+       "name": "Tau",
+       "sign": null
+      },
+      "malachim": {
+       "i": 22,
+       "name": "Tau",
+       "sign": null
+      },
+      "transitus-fluvii": {
+       "i": 21,
+       "name": "Tau",
+       "sign": null
+      },
+      "aiq-bekar": {
+       "i": 21,
+       "name": "Tav",
+       "sign": null
+      },
+      "alphabet-of-the-magi": {
+       "i": 21,
+       "name": "Tav",
+       "sign": null
+      }
      },
      "value": 400,
      "ph": "𐤕",
@@ -855,7 +1315,7 @@ export default {
      "status": "forms-pending",
      "direction": "rtl",
      "mode": "pending",
-     "letters": 0
+     "letters": 21
     }
    ],
    "rows": [
@@ -868,7 +1328,11 @@ export default {
        "name": "A",
        "sign": null
       },
-      "enochian": null
+      "enochian": {
+       "i": 0,
+       "name": "Un",
+       "sign": null
+      }
      },
      "hall": 0
     },
@@ -881,7 +1345,11 @@ export default {
        "name": "B",
        "sign": null
       },
-      "enochian": null
+      "enochian": {
+       "i": 1,
+       "name": "Pa",
+       "sign": null
+      }
      },
      "hall": 1
     },
@@ -894,7 +1362,11 @@ export default {
        "name": "C",
        "sign": null
       },
-      "enochian": null
+      "enochian": {
+       "i": 2,
+       "name": "Veh",
+       "sign": null
+      }
      },
      "hall": 2
     },
@@ -907,7 +1379,11 @@ export default {
        "name": "D",
        "sign": null
       },
-      "enochian": null
+      "enochian": {
+       "i": 3,
+       "name": "Gal",
+       "sign": null
+      }
      },
      "hall": 3
     },
@@ -920,7 +1396,11 @@ export default {
        "name": "E",
        "sign": null
       },
-      "enochian": null
+      "enochian": {
+       "i": 4,
+       "name": "Graph",
+       "sign": null
+      }
      },
      "hall": 4
     },
@@ -933,7 +1413,11 @@ export default {
        "name": "F",
        "sign": null
       },
-      "enochian": null
+      "enochian": {
+       "i": 5,
+       "name": "Or",
+       "sign": null
+      }
      },
      "hall": 5
     },
@@ -946,7 +1430,11 @@ export default {
        "name": "G",
        "sign": null
       },
-      "enochian": null
+      "enochian": {
+       "i": 6,
+       "name": "Ged",
+       "sign": null
+      }
      },
      "hall": 6
     },
@@ -959,7 +1447,11 @@ export default {
        "name": "H",
        "sign": null
       },
-      "enochian": null
+      "enochian": {
+       "i": 7,
+       "name": "Na",
+       "sign": null
+      }
      },
      "hall": 7
     },
@@ -972,7 +1464,11 @@ export default {
        "name": "I",
        "sign": null
       },
-      "enochian": null
+      "enochian": {
+       "i": 8,
+       "name": "Gon",
+       "sign": null
+      }
      },
      "hall": 8
     },
@@ -998,7 +1494,11 @@ export default {
        "name": "L",
        "sign": null
       },
-      "enochian": null
+      "enochian": {
+       "i": 9,
+       "name": "Ur",
+       "sign": null
+      }
      },
      "hall": 10
     },
@@ -1011,7 +1511,11 @@ export default {
        "name": "M",
        "sign": null
       },
-      "enochian": null
+      "enochian": {
+       "i": 10,
+       "name": "Tal",
+       "sign": null
+      }
      },
      "hall": 11
     },
@@ -1024,7 +1528,11 @@ export default {
        "name": "N",
        "sign": null
       },
-      "enochian": null
+      "enochian": {
+       "i": 11,
+       "name": "Drux",
+       "sign": null
+      }
      },
      "hall": 12
     },
@@ -1037,7 +1545,11 @@ export default {
        "name": "O",
        "sign": null
       },
-      "enochian": null
+      "enochian": {
+       "i": 12,
+       "name": "Med",
+       "sign": null
+      }
      },
      "hall": 13
     },
@@ -1050,7 +1562,11 @@ export default {
        "name": "P",
        "sign": null
       },
-      "enochian": null
+      "enochian": {
+       "i": 13,
+       "name": "Mals",
+       "sign": null
+      }
      },
      "hall": 14
     },
@@ -1063,7 +1579,11 @@ export default {
        "name": "Q",
        "sign": null
       },
-      "enochian": null
+      "enochian": {
+       "i": 14,
+       "name": "Ger",
+       "sign": null
+      }
      },
      "hall": 15
     },
@@ -1076,7 +1596,11 @@ export default {
        "name": "R",
        "sign": null
       },
-      "enochian": null
+      "enochian": {
+       "i": 15,
+       "name": "Don",
+       "sign": null
+      }
      },
      "hall": 16
     },
@@ -1089,7 +1613,11 @@ export default {
        "name": "S",
        "sign": null
       },
-      "enochian": null
+      "enochian": {
+       "i": 16,
+       "name": "Fam",
+       "sign": null
+      }
      },
      "hall": 17
     },
@@ -1102,7 +1630,11 @@ export default {
        "name": "T",
        "sign": null
       },
-      "enochian": null
+      "enochian": {
+       "i": 17,
+       "name": "Gisg",
+       "sign": null
+      }
      },
      "hall": 18
     },
@@ -1115,7 +1647,11 @@ export default {
        "name": "V",
        "sign": null
       },
-      "enochian": null
+      "enochian": {
+       "i": 18,
+       "name": "Van",
+       "sign": null
+      }
      },
      "hall": 19
     },
@@ -1128,7 +1664,11 @@ export default {
        "name": "X",
        "sign": null
       },
-      "enochian": null
+      "enochian": {
+       "i": 19,
+       "name": "Pal",
+       "sign": null
+      }
      },
      "hall": 20
     },
@@ -1154,7 +1694,11 @@ export default {
        "name": "Z",
        "sign": null
       },
-      "enochian": null
+      "enochian": {
+       "i": 20,
+       "name": "Ceph",
+       "sign": null
+      }
      },
      "hall": 22
     }
@@ -1162,6 +1706,528 @@ export default {
   }
  ],
  "schemes": {
+  "celestial": {
+   "slug": "celestial",
+   "title": "The Celestial Writing",
+   "short": "Celestial",
+   "status": "forms-pending",
+   "direction": "rtl",
+   "from": "hebrew",
+   "convention": "The Celestial is keyed to the Hebrew letters one sign for one, so the tool takes Hebrew only, with any pointing removed, and writes each letter with its sign. Agrippa’s table has no final forms, so the five final letters are written with the sign of the ordinary letter: that is the site’s convention, and the tool says each time it applies it. No Latin spelling is turned into Hebrew.",
+   "folds": [],
+   "unwritten": null,
+   "keys": [
+    {
+     "key": "א",
+     "i": 0,
+     "name": "Aleph",
+     "translit": "ʾ",
+     "sign": null
+    },
+    {
+     "key": "ב",
+     "i": 1,
+     "name": "Beth",
+     "translit": "b",
+     "sign": null
+    },
+    {
+     "key": "ג",
+     "i": 2,
+     "name": "Gimel",
+     "translit": "g",
+     "sign": null
+    },
+    {
+     "key": "ד",
+     "i": 3,
+     "name": "Daleth",
+     "translit": "d",
+     "sign": null
+    },
+    {
+     "key": "ה",
+     "i": 4,
+     "name": "He",
+     "translit": "h",
+     "sign": null
+    },
+    {
+     "key": "ו",
+     "i": 5,
+     "name": "Vau",
+     "translit": "w",
+     "sign": null
+    },
+    {
+     "key": "ז",
+     "i": 6,
+     "name": "Zain",
+     "translit": "z",
+     "sign": null
+    },
+    {
+     "key": "ח",
+     "i": 7,
+     "name": "Cheth",
+     "translit": "ḥ",
+     "sign": null
+    },
+    {
+     "key": "ט",
+     "i": 8,
+     "name": "Theth",
+     "translit": "ṭ",
+     "sign": null
+    },
+    {
+     "key": "י",
+     "i": 9,
+     "name": "Iod",
+     "translit": "y",
+     "sign": null
+    },
+    {
+     "key": "כ",
+     "i": 10,
+     "name": "Caph",
+     "translit": "k",
+     "sign": null
+    },
+    {
+     "key": "ל",
+     "i": 11,
+     "name": "Lamed",
+     "translit": "l",
+     "sign": null
+    },
+    {
+     "key": "מ",
+     "i": 12,
+     "name": "Mem",
+     "translit": "m",
+     "sign": null
+    },
+    {
+     "key": "נ",
+     "i": 13,
+     "name": "Nun",
+     "translit": "n",
+     "sign": null
+    },
+    {
+     "key": "ס",
+     "i": 14,
+     "name": "Samech",
+     "translit": "s",
+     "sign": null
+    },
+    {
+     "key": "ע",
+     "i": 15,
+     "name": "Ain",
+     "translit": "ʿ",
+     "sign": null
+    },
+    {
+     "key": "פ",
+     "i": 16,
+     "name": "Pe",
+     "translit": "p",
+     "sign": null
+    },
+    {
+     "key": "צ",
+     "i": 17,
+     "name": "Zade",
+     "translit": "ṣ",
+     "sign": null
+    },
+    {
+     "key": "ק",
+     "i": 18,
+     "name": "Kuff",
+     "translit": "q",
+     "sign": null
+    },
+    {
+     "key": "ר",
+     "i": 19,
+     "name": "Res",
+     "translit": "r",
+     "sign": null
+    },
+    {
+     "key": "ש",
+     "i": 20,
+     "name": "Shin",
+     "translit": "š",
+     "sign": null
+    },
+    {
+     "key": "ת",
+     "i": 21,
+     "name": "Tau",
+     "translit": "t",
+     "sign": null
+    }
+   ],
+   "finals": {
+    "ך": "כ",
+    "ם": "מ",
+    "ן": "נ",
+    "ף": "פ",
+    "ץ": "צ"
+   }
+  },
+  "malachim": {
+   "slug": "malachim",
+   "title": "Malachim, the Writing of the Angels",
+   "short": "Malachim",
+   "status": "forms-pending",
+   "direction": "rtl",
+   "from": "hebrew",
+   "convention": "The Malachim is keyed to the Hebrew letters, so the tool takes Hebrew only, with any pointing removed, and writes each letter with its sign. The table has no final forms, so the five final letters are written with the sign of the ordinary letter, and the tool says so each time; of the two signs labelled Samech, it writes Samekh with the first. Both are the site’s conventions. No Latin spelling is turned into Hebrew.",
+   "folds": [],
+   "unwritten": "The second sign labelled Samech is never written: Agrippa does not say what it is for.",
+   "keys": [
+    {
+     "key": "א",
+     "i": 0,
+     "name": "Aleph",
+     "translit": "ʾ",
+     "sign": null
+    },
+    {
+     "key": "ב",
+     "i": 1,
+     "name": "Beth",
+     "translit": "b",
+     "sign": null
+    },
+    {
+     "key": "ג",
+     "i": 2,
+     "name": "Gimel",
+     "translit": "g",
+     "sign": null
+    },
+    {
+     "key": "ד",
+     "i": 3,
+     "name": "Daleth",
+     "translit": "d",
+     "sign": null
+    },
+    {
+     "key": "ה",
+     "i": 4,
+     "name": "He",
+     "translit": "h",
+     "sign": null
+    },
+    {
+     "key": "ו",
+     "i": 5,
+     "name": "Vau",
+     "translit": "w",
+     "sign": null
+    },
+    {
+     "key": "ז",
+     "i": 6,
+     "name": "Zain",
+     "translit": "z",
+     "sign": null
+    },
+    {
+     "key": "ח",
+     "i": 7,
+     "name": "Cheth",
+     "translit": "ḥ",
+     "sign": null
+    },
+    {
+     "key": "ט",
+     "i": 8,
+     "name": "Teth",
+     "translit": "ṭ",
+     "sign": null
+    },
+    {
+     "key": "י",
+     "i": 9,
+     "name": "Iod",
+     "translit": "y",
+     "sign": null
+    },
+    {
+     "key": "כ",
+     "i": 10,
+     "name": "Caph",
+     "translit": "k",
+     "sign": null
+    },
+    {
+     "key": "ל",
+     "i": 11,
+     "name": "Lamed",
+     "translit": "l",
+     "sign": null
+    },
+    {
+     "key": "מ",
+     "i": 12,
+     "name": "Mem",
+     "translit": "m",
+     "sign": null
+    },
+    {
+     "key": "נ",
+     "i": 13,
+     "name": "Nun",
+     "translit": "n",
+     "sign": null
+    },
+    {
+     "key": "ס",
+     "i": 14,
+     "name": "Samech",
+     "translit": "s",
+     "sign": null
+    },
+    {
+     "key": "ע",
+     "i": 16,
+     "name": "Ain",
+     "translit": "ʿ",
+     "sign": null
+    },
+    {
+     "key": "פ",
+     "i": 17,
+     "name": "Pe",
+     "translit": "p",
+     "sign": null
+    },
+    {
+     "key": "צ",
+     "i": 18,
+     "name": "Zade",
+     "translit": "ṣ",
+     "sign": null
+    },
+    {
+     "key": "ק",
+     "i": 19,
+     "name": "Kuff",
+     "translit": "q",
+     "sign": null
+    },
+    {
+     "key": "ר",
+     "i": 20,
+     "name": "Res",
+     "translit": "r",
+     "sign": null
+    },
+    {
+     "key": "ש",
+     "i": 21,
+     "name": "Shin",
+     "translit": "š",
+     "sign": null
+    },
+    {
+     "key": "ת",
+     "i": 22,
+     "name": "Tau",
+     "translit": "t",
+     "sign": null
+    }
+   ],
+   "finals": {
+    "ך": "כ",
+    "ם": "מ",
+    "ן": "נ",
+    "ף": "פ",
+    "ץ": "צ"
+   }
+  },
+  "transitus-fluvii": {
+   "slug": "transitus-fluvii",
+   "title": "The Passing of the River",
+   "short": "Passing the River",
+   "status": "forms-pending",
+   "direction": "rtl",
+   "from": "hebrew",
+   "convention": "The Passing of the River is keyed to the Hebrew letters one sign for one, so the tool takes Hebrew only, with any pointing removed, and writes each letter with its sign. The table has no final forms, so the five final letters are written with the sign of the ordinary letter, and the tool says so each time: that is the site’s convention, not Agrippa’s. No Latin spelling is turned into Hebrew.",
+   "folds": [],
+   "unwritten": null,
+   "keys": [
+    {
+     "key": "א",
+     "i": 0,
+     "name": "Aleph",
+     "translit": "ʾ",
+     "sign": null
+    },
+    {
+     "key": "ב",
+     "i": 1,
+     "name": "Beth",
+     "translit": "b",
+     "sign": null
+    },
+    {
+     "key": "ג",
+     "i": 2,
+     "name": "Gimel",
+     "translit": "g",
+     "sign": null
+    },
+    {
+     "key": "ד",
+     "i": 3,
+     "name": "Daleth",
+     "translit": "d",
+     "sign": null
+    },
+    {
+     "key": "ה",
+     "i": 4,
+     "name": "He",
+     "translit": "h",
+     "sign": null
+    },
+    {
+     "key": "ו",
+     "i": 5,
+     "name": "Vau",
+     "translit": "w",
+     "sign": null
+    },
+    {
+     "key": "ז",
+     "i": 6,
+     "name": "Zain",
+     "translit": "z",
+     "sign": null
+    },
+    {
+     "key": "ח",
+     "i": 7,
+     "name": "Cheth",
+     "translit": "ḥ",
+     "sign": null
+    },
+    {
+     "key": "ט",
+     "i": 8,
+     "name": "Teth",
+     "translit": "ṭ",
+     "sign": null
+    },
+    {
+     "key": "י",
+     "i": 9,
+     "name": "Iod",
+     "translit": "y",
+     "sign": null
+    },
+    {
+     "key": "כ",
+     "i": 10,
+     "name": "Caph",
+     "translit": "k",
+     "sign": null
+    },
+    {
+     "key": "ל",
+     "i": 11,
+     "name": "Lamed",
+     "translit": "l",
+     "sign": null
+    },
+    {
+     "key": "מ",
+     "i": 12,
+     "name": "Mem",
+     "translit": "m",
+     "sign": null
+    },
+    {
+     "key": "נ",
+     "i": 13,
+     "name": "Nun",
+     "translit": "n",
+     "sign": null
+    },
+    {
+     "key": "ס",
+     "i": 14,
+     "name": "Samech",
+     "translit": "s",
+     "sign": null
+    },
+    {
+     "key": "ע",
+     "i": 15,
+     "name": "Ain",
+     "translit": "ʿ",
+     "sign": null
+    },
+    {
+     "key": "פ",
+     "i": 16,
+     "name": "Pe",
+     "translit": "p",
+     "sign": null
+    },
+    {
+     "key": "צ",
+     "i": 17,
+     "name": "Zade",
+     "translit": "ṣ",
+     "sign": null
+    },
+    {
+     "key": "ק",
+     "i": 18,
+     "name": "Kuph",
+     "translit": "q",
+     "sign": null
+    },
+    {
+     "key": "ר",
+     "i": 19,
+     "name": "Res",
+     "translit": "r",
+     "sign": null
+    },
+    {
+     "key": "ש",
+     "i": 20,
+     "name": "Schin",
+     "translit": "š",
+     "sign": null
+    },
+    {
+     "key": "ת",
+     "i": 21,
+     "name": "Tau",
+     "translit": "t",
+     "sign": null
+    }
+   ],
+   "finals": {
+    "ך": "כ",
+    "ם": "מ",
+    "ן": "נ",
+    "ף": "פ",
+    "ץ": "צ"
+   }
+  },
   "theban": {
    "slug": "theban",
    "title": "The Theban Alphabet",
@@ -1169,7 +2235,7 @@ export default {
    "status": "forms-pending",
    "direction": "ltr",
    "from": "latin",
-   "convention": "Theban is keyed to the Latin alphabet one sign per letter, so typed Latin is written letter for letter. The folds follow modern usage as reported by Wikipedia; Trithemius gives no rule for the missing letters.",
+   "convention": "Theban is keyed to the Latin alphabet one sign per letter, so typed Latin is written letter for letter. The folds follow modern usage as reported by Wikipedia; no rule of Trithemius’s or Agrippa’s for the missing letters is reported.",
    "folds": [
     {
      "from": "j",
@@ -1351,6 +2417,575 @@ export default {
      "sign": null
     }
    ]
+  },
+  "aiq-bekar": {
+   "slug": "aiq-bekar",
+   "title": "The Nine Chambers",
+   "short": "Nine Chambers",
+   "status": "forms-pending",
+   "direction": "rtl",
+   "from": "hebrew",
+   "convention": "The nine chambers write the Hebrew letters one by one, so the tool takes Hebrew only, with any pointing removed, and writes each letter as the figure of its chamber with its points. The five finals are letters in their own right here, each with a chamber and three points, so a final is written with its own sign, never with that of the ordinary letter. The result is the extended writing of Agrippa’s first Michael, one figure for each letter. No Latin spelling is turned into Hebrew.",
+   "folds": [],
+   "unwritten": "The contracted characters — several letters run together into three figures or one, the last without points — are not produced: Agrippa gives no rule for them, only the figures of his example.",
+   "keys": [
+    {
+     "key": "א",
+     "i": 0,
+     "name": "Aleph",
+     "translit": "ʾ",
+     "sign": null
+    },
+    {
+     "key": "ב",
+     "i": 1,
+     "name": "Bet",
+     "translit": "b",
+     "sign": null
+    },
+    {
+     "key": "ג",
+     "i": 2,
+     "name": "Gimel",
+     "translit": "g",
+     "sign": null
+    },
+    {
+     "key": "ד",
+     "i": 3,
+     "name": "Dalet",
+     "translit": "d",
+     "sign": null
+    },
+    {
+     "key": "ה",
+     "i": 4,
+     "name": "He",
+     "translit": "h",
+     "sign": null
+    },
+    {
+     "key": "ו",
+     "i": 5,
+     "name": "Vav",
+     "translit": "w",
+     "sign": null
+    },
+    {
+     "key": "ז",
+     "i": 6,
+     "name": "Zayin",
+     "translit": "z",
+     "sign": null
+    },
+    {
+     "key": "ח",
+     "i": 7,
+     "name": "Chet",
+     "translit": "ḥ",
+     "sign": null
+    },
+    {
+     "key": "ט",
+     "i": 8,
+     "name": "Tet",
+     "translit": "ṭ",
+     "sign": null
+    },
+    {
+     "key": "י",
+     "i": 9,
+     "name": "Yod",
+     "translit": "y",
+     "sign": null
+    },
+    {
+     "key": "כ",
+     "i": 10,
+     "name": "Kaf",
+     "translit": "k",
+     "sign": null
+    },
+    {
+     "key": "ל",
+     "i": 11,
+     "name": "Lamed",
+     "translit": "l",
+     "sign": null
+    },
+    {
+     "key": "מ",
+     "i": 12,
+     "name": "Mem",
+     "translit": "m",
+     "sign": null
+    },
+    {
+     "key": "נ",
+     "i": 13,
+     "name": "Nun",
+     "translit": "n",
+     "sign": null
+    },
+    {
+     "key": "ס",
+     "i": 14,
+     "name": "Samekh",
+     "translit": "s",
+     "sign": null
+    },
+    {
+     "key": "ע",
+     "i": 15,
+     "name": "Ayin",
+     "translit": "ʿ",
+     "sign": null
+    },
+    {
+     "key": "פ",
+     "i": 16,
+     "name": "Pe",
+     "translit": "p",
+     "sign": null
+    },
+    {
+     "key": "צ",
+     "i": 17,
+     "name": "Tsadi",
+     "translit": "ṣ",
+     "sign": null
+    },
+    {
+     "key": "ק",
+     "i": 18,
+     "name": "Qof",
+     "translit": "q",
+     "sign": null
+    },
+    {
+     "key": "ר",
+     "i": 19,
+     "name": "Resh",
+     "translit": "r",
+     "sign": null
+    },
+    {
+     "key": "ש",
+     "i": 20,
+     "name": "Shin",
+     "translit": "š",
+     "sign": null
+    },
+    {
+     "key": "ת",
+     "i": 21,
+     "name": "Tav",
+     "translit": "t",
+     "sign": null
+    },
+    {
+     "key": "ך",
+     "i": 22,
+     "name": "Final Kaf",
+     "translit": "k",
+     "sign": null
+    },
+    {
+     "key": "ם",
+     "i": 23,
+     "name": "Final Mem",
+     "translit": "m",
+     "sign": null
+    },
+    {
+     "key": "ן",
+     "i": 24,
+     "name": "Final Nun",
+     "translit": "n",
+     "sign": null
+    },
+    {
+     "key": "ף",
+     "i": 25,
+     "name": "Final Pe",
+     "translit": "p",
+     "sign": null
+    },
+    {
+     "key": "ץ",
+     "i": 26,
+     "name": "Final Tsadi",
+     "translit": "ṣ",
+     "sign": null
+    }
+   ],
+   "finals": {
+    "ך": "כ",
+    "ם": "מ",
+    "ן": "נ",
+    "ף": "פ",
+    "ץ": "צ"
+   }
+  },
+  "enochian": {
+   "slug": "enochian",
+   "title": "The Enochian Alphabet",
+   "short": "Enochian",
+   "status": "forms-pending",
+   "direction": "rtl",
+   "from": "latin",
+   "convention": "Dee gave each letter a Latin value, so typed Latin is written letter for letter through his values, and the result runs from right to left. U is written with Van, which serves Dee for both U and V. Dee’s table has no letter for J, K or W, and Y is reported, but not confirmed, to be a dotted Gon: the tool writes J and Y with Gon, K with Veh and W with Van, as modern tables do. Those are conventions, not Dee’s.",
+   "folds": [
+    {
+     "from": "u",
+     "to": "v",
+     "note": "U and V are one letter, Van, in Dee’s table"
+    },
+    {
+     "from": "j",
+     "to": "i",
+     "note": "no letter for J in Dee’s table, where J is still a form of I; written with Gon (some modern tables use Ged)"
+    },
+    {
+     "from": "k",
+     "to": "c",
+     "note": "no letter for K in Dee’s table; written with Veh, as modern tables do"
+    },
+    {
+     "from": "w",
+     "to": "v",
+     "note": "no letter for W in Dee’s table; written with Van, as modern tables do"
+    },
+    {
+     "from": "y",
+     "to": "i",
+     "note": "written with Gon; that a dotted Gon stands for Y is reported, not confirmed"
+    }
+   ],
+   "unwritten": "The diacritic dot is never written: which letter carries it is uncertain.",
+   "keys": [
+    {
+     "key": "a",
+     "i": 0,
+     "name": "Un",
+     "translit": "a",
+     "sign": null
+    },
+    {
+     "key": "b",
+     "i": 1,
+     "name": "Pa",
+     "translit": "b",
+     "sign": null
+    },
+    {
+     "key": "c",
+     "i": 2,
+     "name": "Veh",
+     "translit": "c",
+     "sign": null
+    },
+    {
+     "key": "d",
+     "i": 3,
+     "name": "Gal",
+     "translit": "d",
+     "sign": null
+    },
+    {
+     "key": "e",
+     "i": 4,
+     "name": "Graph",
+     "translit": "e",
+     "sign": null
+    },
+    {
+     "key": "f",
+     "i": 5,
+     "name": "Or",
+     "translit": "f",
+     "sign": null
+    },
+    {
+     "key": "g",
+     "i": 6,
+     "name": "Ged",
+     "translit": "g",
+     "sign": null
+    },
+    {
+     "key": "h",
+     "i": 7,
+     "name": "Na",
+     "translit": "h",
+     "sign": null
+    },
+    {
+     "key": "i",
+     "i": 8,
+     "name": "Gon",
+     "translit": "i",
+     "sign": null
+    },
+    {
+     "key": "l",
+     "i": 9,
+     "name": "Ur",
+     "translit": "l",
+     "sign": null
+    },
+    {
+     "key": "m",
+     "i": 10,
+     "name": "Tal",
+     "translit": "m",
+     "sign": null
+    },
+    {
+     "key": "n",
+     "i": 11,
+     "name": "Drux",
+     "translit": "n",
+     "sign": null
+    },
+    {
+     "key": "o",
+     "i": 12,
+     "name": "Med",
+     "translit": "o",
+     "sign": null
+    },
+    {
+     "key": "p",
+     "i": 13,
+     "name": "Mals",
+     "translit": "p",
+     "sign": null
+    },
+    {
+     "key": "q",
+     "i": 14,
+     "name": "Ger",
+     "translit": "q",
+     "sign": null
+    },
+    {
+     "key": "r",
+     "i": 15,
+     "name": "Don",
+     "translit": "r",
+     "sign": null
+    },
+    {
+     "key": "s",
+     "i": 16,
+     "name": "Fam",
+     "translit": "s",
+     "sign": null
+    },
+    {
+     "key": "t",
+     "i": 17,
+     "name": "Gisg",
+     "translit": "t",
+     "sign": null
+    },
+    {
+     "key": "v",
+     "i": 18,
+     "name": "Van",
+     "translit": "v",
+     "sign": null
+    },
+    {
+     "key": "x",
+     "i": 19,
+     "name": "Pal",
+     "translit": "x",
+     "sign": null
+    },
+    {
+     "key": "z",
+     "i": 20,
+     "name": "Ceph",
+     "translit": "z",
+     "sign": null
+    }
+   ]
+  },
+  "alphabet-of-the-magi": {
+   "slug": "alphabet-of-the-magi",
+   "title": "The Alphabet of the Magi",
+   "short": "Magi",
+   "status": "forms-pending",
+   "direction": "rtl",
+   "from": "hebrew",
+   "convention": "The alphabet is keyed to the Hebrew letters one sign for one, so the tool takes Hebrew only, with any pointing removed, and writes each letter with its sign. No report says whether the 1539 table has signs for the five final letters, so they are written with the sign of the ordinary letter: that is the site’s convention, and the tool says each time it applies it. The Latin values of modern charts are not used, and no Latin spelling is turned into Hebrew.",
+   "folds": [],
+   "unwritten": null,
+   "keys": [
+    {
+     "key": "א",
+     "i": 0,
+     "name": "Aleph",
+     "translit": "ʾ",
+     "sign": null
+    },
+    {
+     "key": "ב",
+     "i": 1,
+     "name": "Bet",
+     "translit": "b",
+     "sign": null
+    },
+    {
+     "key": "ג",
+     "i": 2,
+     "name": "Gimel",
+     "translit": "g",
+     "sign": null
+    },
+    {
+     "key": "ד",
+     "i": 3,
+     "name": "Dalet",
+     "translit": "d",
+     "sign": null
+    },
+    {
+     "key": "ה",
+     "i": 4,
+     "name": "He",
+     "translit": "h",
+     "sign": null
+    },
+    {
+     "key": "ו",
+     "i": 5,
+     "name": "Vav",
+     "translit": "w",
+     "sign": null
+    },
+    {
+     "key": "ז",
+     "i": 6,
+     "name": "Zayin",
+     "translit": "z",
+     "sign": null
+    },
+    {
+     "key": "ח",
+     "i": 7,
+     "name": "Chet",
+     "translit": "ḥ",
+     "sign": null
+    },
+    {
+     "key": "ט",
+     "i": 8,
+     "name": "Tet",
+     "translit": "ṭ",
+     "sign": null
+    },
+    {
+     "key": "י",
+     "i": 9,
+     "name": "Yod",
+     "translit": "y",
+     "sign": null
+    },
+    {
+     "key": "כ",
+     "i": 10,
+     "name": "Kaf",
+     "translit": "k",
+     "sign": null
+    },
+    {
+     "key": "ל",
+     "i": 11,
+     "name": "Lamed",
+     "translit": "l",
+     "sign": null
+    },
+    {
+     "key": "מ",
+     "i": 12,
+     "name": "Mem",
+     "translit": "m",
+     "sign": null
+    },
+    {
+     "key": "נ",
+     "i": 13,
+     "name": "Nun",
+     "translit": "n",
+     "sign": null
+    },
+    {
+     "key": "ס",
+     "i": 14,
+     "name": "Samekh",
+     "translit": "s",
+     "sign": null
+    },
+    {
+     "key": "ע",
+     "i": 15,
+     "name": "Ayin",
+     "translit": "ʿ",
+     "sign": null
+    },
+    {
+     "key": "פ",
+     "i": 16,
+     "name": "Pe",
+     "translit": "p",
+     "sign": null
+    },
+    {
+     "key": "צ",
+     "i": 17,
+     "name": "Tsadi",
+     "translit": "ṣ",
+     "sign": null
+    },
+    {
+     "key": "ק",
+     "i": 18,
+     "name": "Qof",
+     "translit": "q",
+     "sign": null
+    },
+    {
+     "key": "ר",
+     "i": 19,
+     "name": "Resh",
+     "translit": "r",
+     "sign": null
+    },
+    {
+     "key": "ש",
+     "i": 20,
+     "name": "Shin",
+     "translit": "š",
+     "sign": null
+    },
+    {
+     "key": "ת",
+     "i": 21,
+     "name": "Tav",
+     "translit": "t",
+     "sign": null
+    }
+   ],
+   "finals": {
+    "ך": "כ",
+    "ם": "מ",
+    "ן": "נ",
+    "ף": "פ",
+    "ץ": "צ"
+   }
   },
   "runes": {
    "slug": "runes",
@@ -1613,6 +3248,230 @@ export default {
      "translit": "o",
      "sign": {
       "char": "ᛟ"
+     }
+    }
+   ]
+  },
+  "ogham": {
+   "slug": "ogham",
+   "title": "Ogham",
+   "short": "Ogham",
+   "status": "ready",
+   "direction": "ltr",
+   "from": "latin",
+   "convention": "This writes modern spelling letter by letter in ogham, on the values of the manuscript key. It is the site’s convention, not a historical practice: the carvers of the orthodox stones wrote Primitive Irish names and the scribes wrote Irish, each in the spelling of their day, not English letter for letter. The folds below are applied as listed, and every one used is reported under the result.",
+   "folds": [
+    {
+     "from": "k",
+     "to": "c",
+     "note": "no k: coll wrote the sound k"
+    },
+    {
+     "from": "v",
+     "to": "f",
+     "note": "fern wrote the sound w, transliterated V, on the stones"
+    },
+    {
+     "from": "w",
+     "to": "f",
+     "note": "fern wrote the sound w on the stones"
+    },
+    {
+     "from": "j",
+     "to": "i",
+     "note": "no j; written with idad"
+    },
+    {
+     "from": "y",
+     "to": "i",
+     "note": "no y; written with idad"
+    },
+    {
+     "from": "x",
+     "to": "cs",
+     "note": "written as its two sounds, with coll and sail"
+    }
+   ],
+   "unwritten": "Gétal (ᚍ) is not written: the tool reads one typed letter at a time, so typed ng is written as n and g. The forfeda are not written either: they too stand for pairs of letters, and they are later letters of the manuscripts, which the orthodox stones do without, bar rare traces of an X-shaped sign. Typed p is written with peith, a late sign the stones do not have. Words are divided here by ordinary spaces; in ogham text proper the divider is the space mark, U+1680, a bare stretch of line, and a text may open with ᚛ and close with ᚜.",
+   "keys": [
+    {
+     "key": "b",
+     "i": 0,
+     "name": "beithe",
+     "translit": "b",
+     "sign": {
+      "char": "ᚁ"
+     }
+    },
+    {
+     "key": "l",
+     "i": 1,
+     "name": "luis",
+     "translit": "l",
+     "sign": {
+      "char": "ᚂ"
+     }
+    },
+    {
+     "key": "f",
+     "i": 2,
+     "name": "fern",
+     "translit": "f",
+     "sign": {
+      "char": "ᚃ"
+     }
+    },
+    {
+     "key": "s",
+     "i": 3,
+     "name": "sail",
+     "translit": "s",
+     "sign": {
+      "char": "ᚄ"
+     }
+    },
+    {
+     "key": "n",
+     "i": 4,
+     "name": "nin",
+     "translit": "n",
+     "sign": {
+      "char": "ᚅ"
+     }
+    },
+    {
+     "key": "h",
+     "i": 5,
+     "name": "úath",
+     "translit": "h",
+     "sign": {
+      "char": "ᚆ"
+     }
+    },
+    {
+     "key": "d",
+     "i": 6,
+     "name": "dair",
+     "translit": "d",
+     "sign": {
+      "char": "ᚇ"
+     }
+    },
+    {
+     "key": "t",
+     "i": 7,
+     "name": "tinne",
+     "translit": "t",
+     "sign": {
+      "char": "ᚈ"
+     }
+    },
+    {
+     "key": "c",
+     "i": 8,
+     "name": "coll",
+     "translit": "c",
+     "sign": {
+      "char": "ᚉ"
+     }
+    },
+    {
+     "key": "q",
+     "i": 9,
+     "name": "cert",
+     "translit": "q",
+     "sign": {
+      "char": "ᚊ"
+     }
+    },
+    {
+     "key": "m",
+     "i": 10,
+     "name": "muin",
+     "translit": "m",
+     "sign": {
+      "char": "ᚋ"
+     }
+    },
+    {
+     "key": "g",
+     "i": 11,
+     "name": "gort",
+     "translit": "g",
+     "sign": {
+      "char": "ᚌ"
+     }
+    },
+    {
+     "key": "z",
+     "i": 13,
+     "name": "straif",
+     "translit": "z",
+     "sign": {
+      "char": "ᚎ"
+     }
+    },
+    {
+     "key": "r",
+     "i": 14,
+     "name": "ruis",
+     "translit": "r",
+     "sign": {
+      "char": "ᚏ"
+     }
+    },
+    {
+     "key": "a",
+     "i": 15,
+     "name": "ailm",
+     "translit": "a",
+     "sign": {
+      "char": "ᚐ"
+     }
+    },
+    {
+     "key": "o",
+     "i": 16,
+     "name": "onn",
+     "translit": "o",
+     "sign": {
+      "char": "ᚑ"
+     }
+    },
+    {
+     "key": "u",
+     "i": 17,
+     "name": "úr",
+     "translit": "u",
+     "sign": {
+      "char": "ᚒ"
+     }
+    },
+    {
+     "key": "e",
+     "i": 18,
+     "name": "edad",
+     "translit": "e",
+     "sign": {
+      "char": "ᚓ"
+     }
+    },
+    {
+     "key": "i",
+     "i": 19,
+     "name": "idad",
+     "translit": "i",
+     "sign": {
+      "char": "ᚔ"
+     }
+    },
+    {
+     "key": "p",
+     "i": 25,
+     "name": "peith",
+     "translit": "p",
+     "sign": {
+      "char": "ᚚ"
      }
     }
    ]
