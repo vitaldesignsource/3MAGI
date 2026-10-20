@@ -198,6 +198,9 @@
 /* the futhark's ættir, four to a row below 900px: two clean rows of four */
 @media (max-width: 899px) {
   .edu-letter-grid.mg-cols.is-quartered { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  /* the nine chambers' classes, three to a row: a class laid out as its
+     chambers stand in the grid, read from the right */
+  .edu-letter-grid.mg-cols.is-thirded { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 }
 /* four to a row on a phone leaves a card about 80px wide: the names (the
    reconstructed *þurisaz, *kaunan) are set smaller so they break at spaces,
@@ -213,8 +216,24 @@
 .mg-page [id^="mg-"],
 .mg-page .edu-section-head h2 { scroll-margin-top: 6rem; }
 .mg-letter-card .edu-letter-glyph { min-height: 1.25em; display: flex; align-items: center; justify-content: center; }
+/* A drawn sign keeps a margin inside its em box (the kit's body is 80 units
+   of 100), so on a card it is set a little larger than the em, to stand as
+   tall as a hall's letter beside it. */
+.mg-letter-card.is-drawn .edu-letter-glyph .mg-glyph:not(.is-figure) { width: 1.3em; height: 1.3em; }
+/* and so in the comparison tables' cells, beside the hall's letter */
+.mg-cmp-cell .mg-glyph:not(.is-figure) { width: 1.4em; height: 1.4em; }
 .mg-letter-card .edu-letter-name { max-width: 100%; overflow-wrap: anywhere; }
 .mg-letter-card .edu-letter-name.is-long { font-size: 0.64rem; letter-spacing: 0.06em; }
+.mg-letter-sub {
+  display: block;
+  margin-top: 0.1rem;
+  font-family: var(--edu-script-faces), Georgia, "Times New Roman", serif;
+  font-size: 0.72rem;
+  font-style: italic;
+  letter-spacing: 0.01em;
+  text-transform: none;
+  color: rgba(222, 212, 196, 0.6);
+}
 @media (max-width: 640px) {
   .mg-letter-card .edu-letter-name.is-long { font-size: 0.58rem; letter-spacing: 0.02em; }
 }
@@ -388,6 +407,67 @@
 .mg-drawn .ch-kv:last-child { padding-bottom: 0.2rem; }
 .mg-drawn .ch-kv > span { margin: 0.42rem 0 0; font-family: "Cinzel", Georgia, serif; line-height: 1.5; }
 .mg-drawn .ch-kv p { font-family: var(--edu-script-faces), Georgia, "Times New Roman", serif; font-size: 0.97rem; line-height: 1.75; }
+
+/* --- the page itself ------------------------------------------------------ */
+/* The library's photograph of the printed page, in the drawn-from block's
+   frame. The paper keeps its own colour; the frame is the wing's. A tall
+   page is held to the screen's height, so the figures and the caption can be
+   read together. */
+.mg-plate {
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: clamp(0.7rem, 2vw, 1.2rem);
+  border: 1px solid rgba(179, 139, 70, 0.25);
+  background: rgba(16, 13, 10, 0.82);
+}
+.mg-plate + .mg-plate { margin-top: 1.6rem; }
+.mg-plate-frame { display: flex; justify-content: center; }
+.mg-plate-frame img {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: min(82vh, 56rem);
+  border: 1px solid rgba(209, 173, 104, 0.22);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+}
+.mg-plate figcaption {
+  max-width: 50rem;
+  margin: 1rem auto 0;
+  padding-top: 0.85rem;
+  border-top: 1px solid rgba(179, 139, 70, 0.18);
+  display: grid;
+  gap: 0.45rem;
+}
+.mg-plate-caption {
+  margin: 0;
+  color: rgba(236, 226, 206, 0.88);
+  font-family: var(--edu-script-faces), Georgia, "Times New Roman", serif;
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+.mg-plate-rights {
+  margin: 0;
+  color: rgba(222, 212, 196, 0.62);
+  font-family: var(--edu-script-faces), Georgia, "Times New Roman", serif;
+  font-size: 0.84rem;
+  line-height: 1.6;
+}
+.mg-plate-rights span {
+  margin-right: 0.45rem;
+  color: rgba(209, 173, 104, 0.75);
+  font-family: "Cinzel", Georgia, serif;
+  font-size: 0.68rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+.mg-plate-links { margin: 0.15rem 0 0; display: flex; flex-wrap: wrap; gap: 0.3rem 1.4rem; font-size: 0.84rem; }
+.mg-plate-links a {
+  color: rgba(222, 212, 196, 0.8);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(209, 173, 104, 0.35);
+}
+.mg-plate-links a:hover { color: #ecd9ae; border-color: #ecd9ae; }
 
 /* --- the first witness --------------------------------------------------- */
 .mg-witness {

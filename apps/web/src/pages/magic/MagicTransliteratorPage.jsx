@@ -140,7 +140,8 @@ function MagicTransliteratorPage() {
                                             ))}
                                         </div>
                                         <p className="mg-writ-plain"><span>Transliteration</span> <em>{result.plain}</em></p>
-                                        {result.text && (
+                                        {/* only an alphabet set in a face can be copied as text; drawn signs have no characters */}
+                                        {result.text.trim() && (
                                             <p className="mg-writ-text">
                                                 <span>As text</span> <bdi className="edu-glyph" dir={dir}>{result.text}</bdi>
                                                 <button type="button" className="mg-copy" onClick={copy}>{copied ? 'Copied' : 'Copy'}</button>
@@ -161,9 +162,12 @@ function MagicTransliteratorPage() {
                                         {result.folds.length > 0 && (
                                             <p><span>Folded</span> {result.folds.map((f) => `${f.label}${f.count > 1 ? ` (${f.count}×)` : ''}`).join(' · ')}</p>
                                         )}
+                                        {result.pointing > 0 && (
+                                            <p><span>Pointing</span> {result.pointing} {result.pointing === 1 ? 'mark' : 'marks'} of vowels and accents removed; the signs write the letters only</p>
+                                        )}
                                         {result.finals.length > 0 && (
                                             <p><span>Finals</span> {result.finals.map((f) => (f.own
-                                                ? `${f.final} written with ${scheme.short}’s own final sign`
+                                                ? `${f.final} written with its own sign, a letter of its own in ${scheme.short}`
                                                 : `${f.final} written with the sign for ${f.base} — ${scheme.short} has no final form`)).join(' · ')}</p>
                                         )}
                                         {result.ignored.length > 0 && <p className="edu-reckoner-ignored">Passed over: {result.ignored.join(' ')}</p>}

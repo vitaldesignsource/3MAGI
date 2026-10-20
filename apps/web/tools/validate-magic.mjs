@@ -19,6 +19,76 @@ const fail = (where, m) => errors.push(`${where}: ${m}`);
 const words = (s) => String(s ?? '').trim().split(/\s+/).filter(Boolean).length;
 const YEAR = /\b(1\d{3}|20\d{2})\b/;
 const LOCATOR = /\b(book|bk\.|ch\.|chapter|cap\.|p\.|pp\.|fol\.|ff?\.|plate|sig\.|MS|[IVX]+\.\d+)/i;
+const canon = (g) => JSON.stringify({ d: String(g.d).trim().replace(/\s+/g, ' '), rings: g.rings ?? [], dots: g.dots ?? [] });
+const sameGlyph = (a, b) => canon(a) === canon(b);
+
+// --- facsimile plates --------------------------------------------------------------
+// A page may show the printed page its letters are drawn from. Only a copy
+// whose repository states no restriction may be shown, and the caption gives
+// that repository's own credit line: each entry pairs the credit with the
+// words its rights statement must contain. A copy whose digitisation carries
+// no rights statement is never shown.
+const PLATE_REPOSITORIES = [
+    { credit: 'Library of Congress, Rare Book and Special Collections Division', rights: /not aware of any U\.S\. copyright or any other restrictions/ },
+    { credit: 'e-rara', rights: /Public Domain Mark/ },
+    { credit: 'Wellcome Collection', rights: /Public Domain Mark/ },
+];
+const PLATE_MAX_BYTES = 300 * 1024;
+const PLATE_MAX_WIDTH = 1600;
+// The pixel size of a WebP or JPEG, read from its header (null if unreadable).
+function imageSize(buf) {
+    if (buf.length > 30 && buf.toString('ascii', 0, 4) === 'RIFF' && buf.toString('ascii', 8, 12) === 'WEBP') {
+        const kind = buf.toString('ascii', 12, 16);
+        if (kind === 'VP8 ') return { width: buf.readUInt16LE(26) & 0x3fff, height: buf.readUInt16LE(28) & 0x3fff };
+        if (kind === 'VP8L') {
+            const b = buf.readUInt32LE(21);
+            return { width: (b & 0x3fff) + 1, height: ((b >> 14) & 0x3fff) + 1 };
+        }
+        if (kind === 'VP8X') return { width: buf.readUIntLE(24, 3) + 1, height: buf.readUIntLE(27, 3) + 1 };
+        return null;
+    }
+    if (buf[0] === 0xff && buf[1] === 0xd8) {
+        let i = 2;
+        while (i + 9 < buf.length) {
+            if (buf[i] !== 0xff) { i += 1; continue; }
+            const marker = buf[i + 1];
+            const len = buf.readUInt16BE(i + 2);
+            if (marker >= 0xc0 && marker <= 0xcf && ![0xc4, 0xc8, 0xcc].includes(marker)) {
+                return { height: buf.readUInt16BE(i + 5), width: buf.readUInt16BE(i + 7) };
+            }
+            i += 2 + len;
+        }
+    }
+    return null;
+}
+function checkPlates(where, plates) {
+    if (!Array.isArray(plates)) { fail(where, 'plates must be a list'); return; }
+    plates.forEach((p, i) => {
+        const w = `${where}/plate ${i + 1}`;
+        if (!/^magic\/[a-z0-9-]+\.(webp|jpe?g)$/.test(p.file || '')) { fail(w, 'file must be magic/<name>.webp or .jpg, under public/media'); return; }
+        let buf = null;
+        try { buf = readFileSync(path.join(web, 'public/media', p.file)); } catch { fail(w, `public/media/${p.file} does not exist`); }
+        if (buf) {
+            if (buf.length > PLATE_MAX_BYTES) fail(w, `${p.file} is ${Math.round(buf.length / 1024)} KB: compress it under ${PLATE_MAX_BYTES / 1024} KB`);
+            const size = imageSize(buf);
+            if (!size) fail(w, `${p.file}: cannot read its size (WebP or JPEG only)`);
+            else {
+                if (size.width > PLATE_MAX_WIDTH) fail(w, `${p.file} is ${size.width} px wide: at most ${PLATE_MAX_WIDTH}`);
+                if (p.width !== size.width || p.height !== size.height) fail(w, `width/height ${p.width}×${p.height} do not match the file’s ${size.width}×${size.height}`);
+            }
+        }
+        if (words(p.alt) < 12) fail(w, 'alt must describe the page in at least 12 words');
+        if (words(p.alt) > 80) fail(w, 'alt is over 80 words: describe the page, and leave the rest to the caption');
+        const cap = String(p.caption || '');
+        if (!/\bcopy\b/i.test(cap)) fail(w, 'caption must name the copy shown');
+        if (!YEAR.test(cap) || !LOCATOR.test(cap)) fail(w, 'caption must name the edition with its year and where in it the page stands (page, signature)');
+        const repo = PLATE_REPOSITORIES.find((r) => cap.includes(r.credit));
+        if (!repo) fail(w, `caption must end with the repository’s credit line (${PLATE_REPOSITORIES.map((r) => r.credit).join(' | ')})`);
+        if (words(p.rights) < 8) fail(w, 'rights must quote the repository’s rights statement');
+        else if (repo && !repo.rights.test(p.rights)) fail(w, `rights must state that ${repo.credit} sets no restriction (expected ${repo.rights})`);
+        if (p.url != null) { const up = urlProblem(p.url); if (up) fail(w, up); }
+    });
+}
 
 // --- the rules themselves --------------------------------------------------------
 // Before any module is read, the glyph and URL rules must refuse every bad
@@ -88,6 +158,10 @@ for (const a of registry.alphabets) {
             if ([...a.door.char].length !== 1 || !faceFor(cp)) fail(where, `door "${a.door.char}" is not one character of a vendored face`);
         } else if (a.door.glyph) {
             for (const p of glyphProblems(a.door.glyph)) fail(`${where} door`, p);
+            // a drawn door is one of the alphabet's own drawn letters, copied
+            // exactly: the portal must not show a sign the page does not
+            const own = (modules[a.slug]?.letters || []).some((l) => l.glyph && sameGlyph(l.glyph, a.door.glyph));
+            if (modules[a.slug] && !own) fail(where, 'door glyph is not one of the module’s drawn letters (copy a letter’s glyph exactly)');
         } else fail(where, 'door must be null, { char } or { glyph }');
     }
 }
@@ -261,7 +335,10 @@ for (const entry of all) {
     }
     if (entry.status === 'forms-pending') {
         if (words(d.pending) < 15 || !YEAR.test(d.pending || '')) fail(`${where}/drawing`, 'a forms-pending alphabet says, in at least 15 words, which dated edition its forms are being traced from (pending)');
+    } else if (d.pending) {
+        fail(`${where}/drawing`, 'a ready alphabet has no pending notice: remove drawing.pending');
     }
+    if (m.plates != null) checkPlates(where, m.plates);
 
     // transliteration
     const t = m.transliteration;

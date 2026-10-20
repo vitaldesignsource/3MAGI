@@ -11,7 +11,7 @@
 // Latin-to-Hebrew spelling is invented. Pointing is stripped with the same
 // ranges as the Reckoner, and a final letter is written with the alphabet's
 // own final sign where it has one, otherwise with the base sign — and the
-// result says which was done.
+// result says which was done, and how many marks of pointing it removed.
 
 // The Reckoner's strip ranges (ScriptoriumReckoner.jsx): combining marks,
 // Hebrew points and cantillation, Arabic harakat, Syriac vowel points.
@@ -19,6 +19,8 @@ const STRIP_RANGES = [[0x0300, 0x036F], [0x0591, 0x05C7], [0x0610, 0x061A], [0x0
     [0x0670, 0x0670], [0x06D6, 0x06ED], [0x0730, 0x074A]];
 const isStripped = (cp) => STRIP_RANGES.some(([a, b]) => cp >= a && cp <= b);
 const stripPointing = (s) => Array.from(s.normalize('NFD')).filter((c) => !isStripped(c.codePointAt(0))).join('');
+// How many marks stripPointing removes, so the result can say so.
+const countPointing = (s) => Array.from(s.normalize('NFD')).filter((c) => isStripped(c.codePointAt(0))).length;
 const isHebrewLetter = (c) => { const cp = c.codePointAt(0); return cp >= 0x05D0 && cp <= 0x05EA; };
 const isSpace = (c) => /\s/u.test(c);
 const baseLatin = (c) => c.normalize('NFD').replace(/\p{M}/gu, '');
@@ -30,6 +32,7 @@ export function transliterate(text, scheme) {
     const folds = new Map();     // 'th → þ' → count
     const finals = new Map();    // 'ך' → { base, own, count }
     let nonHebrew = false;
+    let pointing = 0;
     const put = (src, keys, note) => {
         const letters = keys.map((k) => byKey.get(k));
         words[words.length - 1].push({ src, letters, note });
@@ -37,6 +40,7 @@ export function transliterate(text, scheme) {
     const space = () => { if (words[words.length - 1].length) words.push([]); };
 
     if (scheme.from === 'hebrew') {
+        pointing = countPointing(text);
         for (const c of stripPointing(text)) {
             if (isSpace(c)) { space(); continue; }
             if (scheme.finals && scheme.finals[c]) {
@@ -98,5 +102,6 @@ export function transliterate(text, scheme) {
         folds: [...folds].map(([label, count]) => ({ label, count })),
         finals: [...finals].map(([final, f]) => ({ final, ...f })),
         nonHebrew,
+        pointing,
     };
 }

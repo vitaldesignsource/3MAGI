@@ -162,12 +162,19 @@ export function LetterGrid({ mod, letters, keyedTo = 'none', direction = 'ltr', 
         return mod.groups.map((g) => ({ ...g, items: letters.map((l, i) => [l, i]).filter(([l]) => l.group === g.key) }));
     }, [mod.groups, letters]);
     // On a wide screen every group of a grouped alphabet shares one column
-    // count — the largest group's, up to eight — so the ættir stand as rows of
-    // eight and the cards keep one width from group to group. Where every
-    // group divides by four (the futhark's ættir of eight), narrower screens
-    // set them four to a row, so no group ends in a ragged row.
-    const cols = mod.groups ? Math.min(8, Math.max(...groups.map((g) => g.items.length))) : null;
-    const quartered = Boolean(mod.groups) && groups.every((g) => g.items.length % 4 === 0);
+    // count — the largest group's, up to eight, or up to nine where every
+    // group is the same size — so the ættir stand as rows of eight, the nine
+    // chambers' classes as rows of nine, and the cards keep one width from
+    // group to group. Where every group divides by four (the futhark's ættir
+    // of eight), narrower screens set them four to a row; where every group
+    // divides by three (the classes of nine), three to a row, which also lays
+    // a class out as the chambers stand in Agrippa's grid. No group ends in a
+    // ragged row.
+    const sizes = groups.map((g) => g.items.length);
+    const uniform = sizes.every((n) => n === sizes[0]);
+    const cols = mod.groups ? (uniform && sizes[0] <= 9 ? sizes[0] : Math.min(8, Math.max(...sizes))) : null;
+    const quartered = Boolean(mod.groups) && sizes.every((n) => n % 4 === 0);
+    const thirded = Boolean(mod.groups) && !quartered && sizes.every((n) => n % 3 === 0);
 
     const onKeyDown = (e) => {
         const last = letters.length - 1;
@@ -197,7 +204,17 @@ export function LetterGrid({ mod, letters, keyedTo = 'none', direction = 'ltr', 
             {/* a long word is set smaller so it breaks at a space, not inside the
                 word; a page's titles ("II.48 · Geomantic figures") sit in
                 tracked capitals with no sign above them, and break a letter sooner */}
-            <span className={`edu-letter-name${String(l.name).split(/\s+/).some((w) => w.length >= (formless ? 9 : 10)) ? ' is-long' : ''}`}>{l.name}</span>
+            {(() => {
+                // a name with a gloss in brackets ("Samech (the second sign)")
+                // sets the gloss as a small line under the name, so one long
+                // label does not stretch its whole row of cards
+                const [, main, sub] = /^(.+?)\s*\((.+)\)$/.exec(String(l.name)) || [null, String(l.name), null];
+                return (
+                    <span className={`edu-letter-name${main.split(/\s+/).some((w) => w.length >= (formless ? 9 : 10)) ? ' is-long' : ''}`}>
+                        {main}{sub && <>{' '}<span className="mg-letter-sub">{sub}</span></>}
+                    </span>
+                );
+            })()}
             <span className="edu-letter-translit">{l.translit || l.planet || l.codepoint || ''}</span>
         </button>
     );
@@ -238,7 +255,7 @@ export function LetterGrid({ mod, letters, keyedTo = 'none', direction = 'ltr', 
                                 <span>{g.label}</span>{g.note && <em>{isolate(g.note)}</em>}
                             </p>
                             <div
-                                className={`edu-letter-grid mg-cols${quartered ? ' is-quartered' : ''}`}
+                                className={`edu-letter-grid mg-cols${quartered ? ' is-quartered' : ''}${thirded ? ' is-thirded' : ''}`}
                                 style={{ '--mg-cols': cols }}
                                 role="listbox"
                                 aria-labelledby={`mg-group-${g.key}`}

@@ -36,19 +36,25 @@ const registry = {
         {
             slug: 'celestial', group: 'agrippan', title: 'The Celestial Writing', short: 'Celestial',
             otherNames: ['Scriptura Cœlestis', 'Celestiall writing (J.F., 1651)'],
-            keyedTo: 'hebrew', direction: 'rtl', status: 'forms-pending', door: null,
+            keyedTo: 'hebrew', direction: 'rtl', status: 'ready',
+            // door: its Aleph, as drawn on its page (the validator checks it is one of the page's own signs)
+            door: { glyph: { d: 'M 27.1 31.3 L 72.4 73.1 M 72.1 31.9 L 53.4 55.6 M 27.1 70.6 L 40.0 43.2', rings: [[22.7, 27.2], [73.4, 26], [23.6, 75.4], [76.8, 77.2]] } },
             blurb: 'Twenty-two signs, one for each Hebrew letter, which Agrippa says the Hebrews showed set and figured among the stars.',
         },
         {
             slug: 'malachim', group: 'agrippan', title: 'Malachim, the Writing of the Angels', short: 'Malachim',
             otherNames: ['Melachim', 'the writing of the angels, or regal'],
-            keyedTo: 'hebrew', direction: 'rtl', status: 'forms-pending', door: null,
+            keyedTo: 'hebrew', direction: 'rtl', status: 'ready',
+            // door: its Aleph, as drawn on its page (the validator checks it is one of the page's own signs)
+            door: { glyph: { d: 'M 49.0 31.7 L 48.6 67.4 M 34.8 30.8 L 35.0 38.7 L 64.6 38.7 L 64.4 31.7 M 37.6 46.8 L 60.4 46.9 M 34.3 66.9 L 34.4 55.4 L 63.8 55.4 L 64.2 66.7', rings: [[34.6, 25.8, 5], [49, 26.7, 5], [64.3, 26.7, 5], [34.6, 46.8, 3], [63.4, 46.9, 3], [34.2, 71.9, 5], [48.6, 72.4, 5], [64.4, 71.7, 5]] } },
             blurb: 'The second of Agrippa’s three ring-letter alphabets: “of Angels, or Regal”, as the English of 1651 has it.',
         },
         {
             slug: 'transitus-fluvii', group: 'agrippan', title: 'The Passing of the River', short: 'Passing the River',
             otherNames: ['Transitus Fluvii', 'the passing through the River (J.F., 1651)'],
-            keyedTo: 'hebrew', direction: 'rtl', status: 'forms-pending', door: null,
+            keyedTo: 'hebrew', direction: 'rtl', status: 'ready',
+            // door: its Aleph, as drawn on its page (the validator checks it is one of the page's own signs)
+            door: { glyph: { d: 'M 82.2 74.2 L 56.3 51.0 C 47.5 43.4 37.5 35.4 31 31.4 C 26.4 28.6 20.4 28.8 18.3 32.6 C 16.4 36.4 18.6 41.6 23.2 44.6 C 27.4 47.3 32.6 47.9 37.9 49.0 M 63.4 34.5 L 56.3 51.0', rings: [[42.4, 51.1, 5], [65.4, 29.9, 5]] } },
             blurb: 'The third ring-letter alphabet of III.30, reported in a Hebrew grammar printed at Venice ten years before Agrippa.',
         },
         {
@@ -60,7 +66,9 @@ const registry = {
         {
             slug: 'aiq-bekar', group: 'agrippan', title: 'The Nine Chambers', short: 'Nine Chambers',
             otherNames: ['Aiq Bekar', 'the Kabbalah of the nine chambers'],
-            keyedTo: 'hebrew', direction: 'rtl', status: 'forms-pending', door: null,
+            keyedTo: 'hebrew', direction: 'rtl', status: 'ready',
+            // door: its Aleph, as drawn on its page (the validator checks it is one of the page's own signs)
+            door: { glyph: { d: 'M 34.4 32.2 L 34.5 73.7 L 68.0 76.0 M 56.7 25.2 L 58.9 23.9' } },
             blurb: 'Hebrew letters written as the walls of a grid and a count of points — the cipher Agrippa gives to “the Cabalists”.',
         },
         {

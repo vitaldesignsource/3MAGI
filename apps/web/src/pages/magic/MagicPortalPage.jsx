@@ -35,6 +35,13 @@ function MagicPortalPage() {
         const e = compare.entries[a.slug];
         return e && e.letters > 0 && e.shown === e.letters;
     });
+    // how the open alphabets show their signs: set in a vendored face, drawn
+    // from a printed page, or both (read from the registry's door: a door is
+    // a set character or a drawn glyph)
+    const anySet = open.some((a) => a.door?.char);
+    const anyDrawn = open.some((a) => a.door?.glyph);
+    const how = anySet && anyDrawn ? 'the signs set in type or drawn from the printed page'
+        : anyDrawn ? 'the signs drawn from the printed page' : 'the signs set in type';
     return (
         <div className="third-lamp-scope edu-page mg-page mg-portal">
             <Helmet>
@@ -77,7 +84,7 @@ function MagicPortalPage() {
                                 <h3 id="mg-group-open">Open now</h3>
                                 <p>{allSignsShown
                                     ? 'Read in full: every sign shown, with its history, its claims and its sources.'
-                                    : 'Read in full: the signs set in type, with their history, their claims and their sources; a sign still to be traced says so where it stands.'}</p>
+                                    : `Read in full: ${how}, with their history, their claims and their sources; a sign still to be traced says so where it stands.`}</p>
                             </div>
                             <div className="edu-hall-grid mg-door-grid" role="list" aria-labelledby="mg-group-open">
                                 {open.map((a) => (

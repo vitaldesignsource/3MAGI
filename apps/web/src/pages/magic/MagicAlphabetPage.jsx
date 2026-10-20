@@ -14,8 +14,9 @@ import '../../styles/magic.css';
 
 // One page per entry of the Magical Scriptorium, in the idiom of a language
 // hall: the hero with its section menu, the letters (a grid and plaque when
-// the forms can be shown, a ledger when they are being traced), how the signs
-// are set or drawn and from what, the first witness, the books that carried
+// the forms can be shown, a ledger when they are being traced), the printed
+// page itself where a copy may be shown, how the signs are set or drawn and
+// from what, the first witness, the books that carried
 // it, the claims with their standing, its uses, the passages in their own
 // words with whose translation they are, the cautions and the sources.
 // A stub shows its summary and sources and says that the page is coming.
@@ -101,10 +102,12 @@ function MagicAlphabetPage() {
         : anyDrawn && anySet ? 'How the signs are set and drawn'
             : anyDrawn ? 'How the letters are drawn' : 'How the signs are set';
     const sample = (mod.sample?.orders || []).map((o) => letters[o - 1]).filter(Boolean);
+    const plates = stub ? [] : (mod.plates || []);
     const others = ENTRIES.filter((e) => e.slug !== entry.slug);
 
     const sections = stub ? [] : [
         letters.length > 0 && { id: 'mg-letters-heading', label: lettersTitle.replace(/^The /, '') },
+        plates.length > 0 && { id: 'mg-plates-heading', label: 'The page' },
         mod.drawing && { id: 'mg-drawing-heading', label: pending ? 'The forms' : 'Set and drawn' },
         mod.firstAttestation && { id: 'mg-attestation-heading', label: 'First witness' },
         (mod.transmission || []).length > 0 && { id: 'mg-transmission-heading', label: 'Hand to hand' },
@@ -192,6 +195,33 @@ function MagicAlphabetPage() {
                             : <LetterGrid mod={mod} letters={letters} keyedTo={keyedTo} direction={direction}
                                 label={`${mod.title}: ${letters.length} ${!reg ? 'entries' : keyedTo === 'none' && !mod.valueLabel ? 'signs' : 'letters'}`} hebrewKeys={keys?.hebrew}
                                 formless={!reg} />}
+                    </section>
+                )}
+
+                {plates.length > 0 && (
+                    <section className="mg-plates" aria-labelledby="mg-plates-heading">
+                        <SectionHead kicker="The Page Itself" id="mg-plates-heading" title={plates.length > 1 ? 'The pages as printed' : 'The page as printed'}>
+                            <p>The printed page beside the drawings: the library’s own photograph, cropped and reduced for the web and otherwise unaltered. The caption names the copy.</p>
+                        </SectionHead>
+                        {plates.map((p) => (
+                            <figure className="mg-plate" key={p.file}>
+                                <div className="mg-plate-frame">
+                                    <img src={`/media/${p.file}`} alt={p.alt} width={p.width} height={p.height} loading="lazy" decoding="async" />
+                                </div>
+                                <figcaption>
+                                    <p className="mg-plate-caption">{isolate(p.caption)}</p>
+                                    <p className="mg-plate-rights"><span>Rights</span> {isolate(p.rights)}</p>
+                                    <p className="mg-plate-links">
+                                        <a href={`/media/${p.file}`} target="_blank" rel="noopener noreferrer">The image at full size</a>
+                                        {p.url && (
+                                            <a href={p.url} target="_blank" rel="noopener noreferrer">
+                                                The whole page at {new URL(p.url).hostname.replace(/^www\./, '')}
+                                            </a>
+                                        )}
+                                    </p>
+                                </figcaption>
+                            </figure>
+                        ))}
                     </section>
                 )}
 

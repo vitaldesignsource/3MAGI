@@ -7,17 +7,17 @@ export default {
   "celestial": {
    "stub": false,
    "letters": 22,
-   "shown": 0
+   "shown": 22
   },
   "malachim": {
    "stub": false,
    "letters": 23,
-   "shown": 0
+   "shown": 23
   },
   "transitus-fluvii": {
    "stub": false,
    "letters": 22,
-   "shown": 0
+   "shown": 22
   },
   "theban": {
    "stub": false,
@@ -27,7 +27,7 @@ export default {
   "aiq-bekar": {
    "stub": false,
    "letters": 27,
-   "shown": 0
+   "shown": 27
   },
   "enochian": {
    "stub": false,
@@ -391,36 +391,36 @@ export default {
      "slug": "celestial",
      "title": "The Celestial Writing",
      "short": "Celestial",
-     "status": "forms-pending",
+     "status": "ready",
      "direction": "rtl",
-     "mode": "pending",
+     "mode": "signs",
      "letters": 22
     },
     {
      "slug": "malachim",
      "title": "Malachim, the Writing of the Angels",
      "short": "Malachim",
-     "status": "forms-pending",
+     "status": "ready",
      "direction": "rtl",
-     "mode": "pending",
+     "mode": "signs",
      "letters": 23
     },
     {
      "slug": "transitus-fluvii",
      "title": "The Passing of the River",
      "short": "Passing the River",
-     "status": "forms-pending",
+     "status": "ready",
      "direction": "rtl",
-     "mode": "pending",
+     "mode": "signs",
      "letters": 22
     },
     {
      "slug": "aiq-bekar",
      "title": "The Nine Chambers",
      "short": "Nine Chambers",
-     "status": "forms-pending",
+     "status": "ready",
      "direction": "rtl",
-     "mode": "pending",
+     "mode": "signs",
      "letters": 27
     },
     {
@@ -441,22 +441,110 @@ export default {
       "celestial": {
        "i": 0,
        "name": "Aleph",
-       "sign": null
+       "sign": {
+        "glyph": {
+         "d": "M 27.1 31.3 L 72.4 73.1 M 72.1 31.9 L 53.4 55.6 M 27.1 70.6 L 40.0 43.2",
+         "rings": [
+          [
+           22.7,
+           27.2
+          ],
+          [
+           73.4,
+           26
+          ],
+          [
+           23.6,
+           75.4
+          ],
+          [
+           76.8,
+           77.2
+          ]
+         ]
+        }
+       }
       },
       "malachim": {
        "i": 0,
        "name": "Aleph",
-       "sign": null
+       "sign": {
+        "glyph": {
+         "d": "M 49.0 31.7 L 48.6 67.4 M 34.8 30.8 L 35.0 38.7 L 64.6 38.7 L 64.4 31.7 M 37.6 46.8 L 60.4 46.9 M 34.3 66.9 L 34.4 55.4 L 63.8 55.4 L 64.2 66.7",
+         "rings": [
+          [
+           34.6,
+           25.8,
+           5
+          ],
+          [
+           49,
+           26.7,
+           5
+          ],
+          [
+           64.3,
+           26.7,
+           5
+          ],
+          [
+           34.6,
+           46.8,
+           3
+          ],
+          [
+           63.4,
+           46.9,
+           3
+          ],
+          [
+           34.2,
+           71.9,
+           5
+          ],
+          [
+           48.6,
+           72.4,
+           5
+          ],
+          [
+           64.4,
+           71.7,
+           5
+          ]
+         ]
+        }
+       }
       },
       "transitus-fluvii": {
        "i": 0,
        "name": "Aleph",
-       "sign": null
+       "sign": {
+        "glyph": {
+         "d": "M 82.2 74.2 L 56.3 51.0 C 47.5 43.4 37.5 35.4 31 31.4 C 26.4 28.6 20.4 28.8 18.3 32.6 C 16.4 36.4 18.6 41.6 23.2 44.6 C 27.4 47.3 32.6 47.9 37.9 49.0 M 63.4 34.5 L 56.3 51.0",
+         "rings": [
+          [
+           42.4,
+           51.1,
+           5
+          ],
+          [
+           65.4,
+           29.9,
+           5
+          ]
+         ]
+        }
+       }
       },
       "aiq-bekar": {
        "i": 0,
        "name": "Aleph",
-       "sign": null
+       "sign": {
+        "glyph": {
+         "d": "M 34.4 32.2 L 34.5 73.7 L 68.0 76.0 M 56.7 25.2 L 58.9 23.9"
+        }
+       }
       },
       "alphabet-of-the-magi": {
        "i": 0,
@@ -476,22 +564,79 @@ export default {
       "celestial": {
        "i": 1,
        "name": "Beth",
-       "sign": null
+       "sign": {
+        "glyph": {
+         "d": "M 50.1 23.6 L 80.2 24.6 L 52.4 52.6 L 78.8 77.9 L 28.8 77.1",
+         "rings": [
+          [
+           44.1,
+           24.7
+          ],
+          [
+           22.8,
+           76.4
+          ]
+         ]
+        }
+       }
       },
       "malachim": {
        "i": 1,
        "name": "Beth",
-       "sign": null
+       "sign": {
+        "glyph": {
+         "d": "M 29.8 30.3 C 29.0 64.0 33.5 74.6 49.3 74.6 C 63.0 74.6 69.6 63.0 69.3 30.5 M 48.6 30.5 L 48.8 65.1",
+         "rings": [
+          [
+           29.9,
+           24.3
+          ],
+          [
+           48.6,
+           24.5
+          ],
+          [
+           69.2,
+           24.5
+          ],
+          [
+           48.8,
+           68.1,
+           3
+          ]
+         ]
+        }
+       }
       },
       "transitus-fluvii": {
        "i": 1,
        "name": "Beth",
-       "sign": null
+       "sign": {
+        "glyph": {
+         "d": "M 40.5 28.3 L 67.3 27.4 L 67.3 73.1 L 40.1 73.2",
+         "rings": [
+          [
+           35.5,
+           28.5,
+           5
+          ],
+          [
+           35.1,
+           73.2,
+           5
+          ]
+         ]
+        }
+       }
       },
       "aiq-bekar": {
        "i": 1,
        "name": "Bet",
-       "sign": null
+       "sign": {
+        "glyph": {
+         "d": "M 29.2 32.2 L 30.4 74.7 L 70.3 74.7 L 69.6 32.7 M 51.9 24.6 L 54.1 23.3"
+        }
+       }
       },
       "alphabet-of-the-magi": {
        "i": 1,
@@ -511,22 +656,65 @@ export default {
       "celestial": {
        "i": 2,
        "name": "Gimel",
-       "sign": null
+       "sign": {
+        "glyph": {
+         "d": "M 66.4 31.5 L 66.5 76.4 M 39.6 55.8 L 66.5 55.8",
+         "rings": [
+          [
+           66.4,
+           25.5
+          ],
+          [
+           33.6,
+           55.8
+          ]
+         ]
+        }
+       }
       },
       "malachim": {
        "i": 2,
        "name": "Gimel",
-       "sign": null
+       "sign": {
+        "glyph": {
+         "d": "M 41.9 30.5 L 48.6 64.6 M 62.1 30.8 C 60.8 40.4 55.6 53.5 48.6 64.6 C 46.1 68.5 40.6 74.8 33.5 77.1",
+         "rings": [
+          [
+           41.3,
+           24.5
+          ],
+          [
+           63.1,
+           24.9
+          ]
+         ]
+        }
+       }
       },
       "transitus-fluvii": {
        "i": 2,
        "name": "Gimel",
-       "sign": null
+       "sign": {
+        "glyph": {
+         "d": "M 61.7 29.4 L 62 50 C 62.3 63.5 58.5 70.8 46.4 70.9",
+         "rings": [
+          [
+           41.4,
+           70.6,
+           5
+          ]
+         ]
+        }
+       }
       },
       "aiq-bekar": {
        "i": 2,
        "name": "Gimel",
-       "sign": null
+       "sign": {
+        "glyph": {
+         "d": "M 32.4 74.9 L 66.6 74.6 L 65.5 29.5 M 48.2 22.3 L 50.5 21.0"
+        }
+       }
       },
       "alphabet-of-the-magi": {
        "i": 2,
@@ -546,22 +734,67 @@ export default {
       "celestial": {
        "i": 3,
        "name": "Daleth",
-       "sign": null
+       "sign": {
+        "glyph": {
+         "d": "M 37.2 28.6 L 64.6 28.7 M 68.4 39.3 L 68 73",
+         "rings": [
+          [
+           31.2,
+           28.6
+          ],
+          [
+           68.5,
+           33.3
+          ]
+         ]
+        }
+       }
       },
       "malachim": {
        "i": 3,
        "name": "Daleth",
-       "sign": null
+       "sign": {
+        "glyph": {
+         "d": "M 39.3 24.6 L 63.9 24.5 M 33.2 30.6 L 32.5 69.1 M 59.0 24.4 L 58.5 68.4",
+         "rings": [
+          [
+           33.3,
+           24.6
+          ],
+          [
+           67.2,
+           24.5,
+           3.3
+          ],
+          [
+           32.4,
+           75.1
+          ],
+          [
+           58.4,
+           74.4
+          ]
+         ]
+        }
+       }
       },
       "transitus-fluvii": {
        "i": 3,
        "name": "Daleth",
-       "sign": null
+       "sign": {
+        "glyph": {
+         "d": "M 35.2 29 L 63 28.6 L 64.2 72.4 M 35.2 44.4 L 63.4 44.2"
+        }
+       }
       },
       "aiq-bekar": {
        "i": 3,
        "name": "Dalet",
-       "sign": null
+       "sign": {
+        "glyph": {
+         "d": "M 66.8 32.9 L 35.0 31.7 L 33.9 75.9 L 67.0 76.3 M 45.9 23.6 L 48.2 22.3"
+        }
+       }
       },
       "alphabet-of-the-magi": {
        "i": 3,
@@ -581,22 +814,58 @@ export default {
       "celestial": {
        "i": 4,
        "name": "He",
-       "sign": null
+       "sign": {
+        "glyph": {
+         "d": "M 34.5 26.4 L 74.4 25.7 L 74.8 75 M 46.2 25.9 L 45.2 75",
+         "rings": [
+          [
+           28.5,
+           26.5
+          ]
+         ]
+        }
+       }
       },
       "malachim": {
        "i": 4,
        "name": "He",
-       "sign": null
+       "sign": {
+        "glyph": {
+         "d": "M 32.1 31.4 L 31.9 68.4 M 35.5 30.3 L 67.0 76.0 L 68.5 30.9",
+         "rings": [
+          [
+           32.1,
+           25.4
+          ],
+          [
+           68.3,
+           24.9
+          ],
+          [
+           31.9,
+           74.4
+          ]
+         ]
+        }
+       }
       },
       "transitus-fluvii": {
        "i": 4,
        "name": "He",
-       "sign": null
+       "sign": {
+        "glyph": {
+         "d": "M 41.7 37.2 L 41.7 70.5 L 57.9 71.2 M 41.7 43 L 54.5 42.9 M 41.7 56.2 L 53.9 56.2"
+        }
+       }
       },
       "aiq-bekar": {
        "i": 4,
        "name": "He",
-       "sign": null
+       "sign": {
+        "glyph": {
+         "d": "M 29.1 30.9 L 70.6 30.8 L 70.2 77.0 L 29.4 77.2 Z M 48.9 23.1 L 51.1 21.8"
+        }
+       }
       },
       "alphabet-of-the-magi": {
        "i": 4,
@@ -616,22 +885,69 @@ export default {
       "celestial": {
        "i": 5,
        "name": "Vau",
-       "sign": null
+       "sign": {
+        "glyph": {
+         "d": "M 50 31.2 L 48.9 74",
+         "rings": [
+          [
+           50.1,
+           25.2
+          ]
+         ]
+        }
+       }
       },
       "malachim": {
        "i": 5,
        "name": "Vau",
-       "sign": null
+       "sign": {
+        "glyph": {
+         "d": "M 46.1 30.0 L 22.9 68.6 M 49.2 30.9 L 49.4 69.3 M 52.8 29.7 L 75.8 70.5",
+         "rings": [
+          [
+           49.2,
+           24.9
+          ],
+          [
+           19.8,
+           73.7
+          ],
+          [
+           49.4,
+           75.3
+          ],
+          [
+           80,
+           74.8
+          ]
+         ]
+        }
+       }
       },
       "transitus-fluvii": {
        "i": 5,
        "name": "Vau",
-       "sign": null
+       "sign": {
+        "glyph": {
+         "d": "M 34.6 47.8 C 40 51.5 50 53.4 58 53.2 C 64 53 69.5 49.5 74.6 44.6",
+         "rings": [
+          [
+           30.6,
+           44.9,
+           5
+          ]
+         ]
+        }
+       }
       },
       "aiq-bekar": {
        "i": 5,
        "name": "Vav",
-       "sign": null
+       "sign": {
+        "glyph": {
+         "d": "M 32.0 30.4 L 68.1 31.0 L 67.5 77.3 L 30.8 76.8 M 48.9 22.3 L 51.1 21.0"
+        }
+       }
       },
       "alphabet-of-the-magi": {
        "i": 5,
@@ -651,22 +967,78 @@ export default {
       "celestial": {
        "i": 6,
        "name": "Zain",
-       "sign": null
+       "sign": {
+        "glyph": {
+         "d": "M 41.6 24.8 L 57.9 24.8 M 50.2 24.8 L 51.3 74.2",
+         "rings": [
+          [
+           35.6,
+           24.6
+          ],
+          [
+           63.7,
+           26.4
+          ]
+         ]
+        }
+       }
       },
       "malachim": {
        "i": 6,
        "name": "Zain",
-       "sign": null
+       "sign": {
+        "glyph": {
+         "d": "M 27.6 30.5 L 47.9 67.2 M 50.9 30.3 L 50.3 66.4 M 72.5 29.7 L 51.8 66.5",
+         "rings": [
+          [
+           24.7,
+           25.2
+          ],
+          [
+           51,
+           24.3
+          ],
+          [
+           75.1,
+           24.3
+          ],
+          [
+           50.8,
+           72.4
+          ]
+         ]
+        }
+       }
       },
       "transitus-fluvii": {
        "i": 6,
        "name": "Zain",
-       "sign": null
+       "sign": {
+        "glyph": {
+         "d": "M 56.5 29.6 L 33.6 50.9 L 58.9 66.0",
+         "rings": [
+          [
+           60.2,
+           26.2,
+           5
+          ],
+          [
+           63.2,
+           68.6,
+           5
+          ]
+         ]
+        }
+       }
       },
       "aiq-bekar": {
        "i": 6,
        "name": "Zayin",
-       "sign": null
+       "sign": {
+        "glyph": {
+         "d": "M 34.1 78.6 L 33.5 29.5 L 67.7 28.8 M 48.9 20.3 L 51.1 19.0"
+        }
+       }
       },
       "alphabet-of-the-magi": {
        "i": 6,
@@ -686,22 +1058,55 @@ export default {
       "celestial": {
        "i": 7,
        "name": "Cheth",
-       "sign": null
+       "sign": {
+        "glyph": {
+         "d": "M 36.8 24.5 L 63 24.8 M 30.7 30.5 L 30.1 73 M 69.1 30.8 L 70 73",
+         "rings": [
+          [
+           30.8,
+           24.5
+          ],
+          [
+           69,
+           24.8
+          ]
+         ]
+        }
+       }
       },
       "malachim": {
        "i": 7,
        "name": "Cheth",
-       "sign": null
+       "sign": {
+        "glyph": {
+         "d": "M 15.1 26.0 L 84.6 26.0 L 84.6 73.3 L 15.4 74.2 Z  M 51.6 26.0 L 52.0 73.6"
+        }
+       }
       },
       "transitus-fluvii": {
        "i": 7,
        "name": "Cheth",
-       "sign": null
+       "sign": {
+        "glyph": {
+         "d": "M 39.4 29.7 L 69.6 30 L 69.6 70.3",
+         "rings": [
+          [
+           34.4,
+           29.7,
+           5
+          ]
+         ]
+        }
+       }
       },
       "aiq-bekar": {
        "i": 7,
        "name": "Chet",
-       "sign": null
+       "sign": {
+        "glyph": {
+         "d": "M 27.9 81.5 L 29.4 31.4 L 71.6 32.3 L 70.7 80.2 M 48.9 23.3 L 51.1 22.0"
+        }
+       }
       },
       "alphabet-of-the-magi": {
        "i": 7,
@@ -721,22 +1126,91 @@ export default {
       "celestial": {
        "i": 8,
        "name": "Theth",
-       "sign": null
+       "sign": {
+        "glyph": {
+         "d": "M 30.0 28.1 C 29.6 45.9 28.1 69.6 52.0 71.0 C 75.3 70.3 67.6 44.9 69.5 29.6",
+         "rings": [
+          [
+           30.5,
+           22.1
+          ],
+          [
+           70,
+           23.6
+          ]
+         ]
+        }
+       }
       },
       "malachim": {
        "i": 8,
        "name": "Teth",
-       "sign": null
+       "sign": {
+        "glyph": {
+         "d": "M 17.0 67.4 L 34.0 32.1 M 39.8 31.8 L 54.8 68.0 M 62.5 31.7 L 82.7 68.1 M 81.5 31.3 L 60.3 68.3",
+         "rings": [
+          [
+           36.6,
+           26.7
+          ],
+          [
+           59.6,
+           26.5
+          ],
+          [
+           84.5,
+           26.1
+          ],
+          [
+           14.4,
+           72.8
+          ],
+          [
+           57.3,
+           73.5
+          ],
+          [
+           85.6,
+           73.3
+          ]
+         ]
+        }
+       }
       },
       "transitus-fluvii": {
        "i": 8,
        "name": "Teth",
-       "sign": null
+       "sign": {
+        "glyph": {
+         "d": "M 65.1 29.6 L 65.4 64.2 M 39.2 45.2 L 65.2 45.3",
+         "rings": [
+          [
+           65,
+           24.6,
+           5
+          ],
+          [
+           65.5,
+           69.2,
+           5
+          ],
+          [
+           34.2,
+           45.2,
+           5
+          ]
+         ]
+        }
+       }
       },
       "aiq-bekar": {
        "i": 8,
        "name": "Tet",
-       "sign": null
+       "sign": {
+        "glyph": {
+         "d": "M 28.0 31.6 L 68.1 31.7 L 69.6 79.9 M 48.9 21.9 L 51.1 20.6"
+        }
+       }
       },
       "alphabet-of-the-magi": {
        "i": 8,
@@ -756,22 +1230,62 @@ export default {
       "celestial": {
        "i": 9,
        "name": "Iod",
-       "sign": null
+       "sign": {
+        "glyph": {
+         "d": "M 46.7 38.3 L 25.0 73.2 M 53.4 39.2 L 77.1 73.1 M 28.4 80.5 L 72.9 80.5",
+         "rings": [
+          [
+           50.7,
+           33.8
+          ],
+          [
+           22.7,
+           78.7
+          ],
+          [
+           78.7,
+           78.9
+          ]
+         ]
+        }
+       }
       },
       "malachim": {
        "i": 9,
        "name": "Iod",
-       "sign": null
+       "sign": {
+        "glyph": {
+         "d": "M 59.4 29.8 C 63.5 31.5 68.2 39.0 68.2 48.0 C 68.2 64.0 58.0 74.5 40.4 72.7",
+         "rings": [
+          [
+           53.9,
+           27.4
+          ],
+          [
+           34.4,
+           72.1
+          ]
+         ]
+        }
+       }
       },
       "transitus-fluvii": {
        "i": 9,
        "name": "Iod",
-       "sign": null
+       "sign": {
+        "glyph": {
+         "d": "M 29.9 32.4 L 29.9 24 L 69.6 24.4 L 68.6 71.4 M 43.6 24.2 L 43.6 32 M 56.4 24.3 L 56.4 32"
+        }
+       }
       },
       "aiq-bekar": {
        "i": 9,
        "name": "Yod",
-       "sign": null
+       "sign": {
+        "glyph": {
+         "d": "M 34.4 32.2 L 34.5 73.7 L 68.0 76.0 M 48.8 25.7 L 51.0 24.4 M 59.9 25.7 L 62.2 24.4"
+        }
+       }
       },
       "alphabet-of-the-magi": {
        "i": 9,
@@ -791,22 +1305,58 @@ export default {
       "celestial": {
        "i": 10,
        "name": "Caph",
-       "sign": null
+       "sign": {
+        "glyph": {
+         "d": "M 38.6 31.1 C 56 27.2 73.6 38 73.9 56 C 74.4 75.6 53.5 81.2 36.7 78.5",
+         "rings": [
+          [
+           32.7,
+           31.4
+          ],
+          [
+           30.7,
+           77.7
+          ]
+         ]
+        }
+       }
       },
       "malachim": {
        "i": 10,
        "name": "Caph",
-       "sign": null
+       "sign": {
+        "glyph": {
+         "d": "M 34.1 26.1 L 44.0 26.4 C 65.0 26.7 73.2 37.0 74.3 49.5 C 75.3 61.5 64.4 72.5 50.0 72.4 L 35.4 72.2",
+         "rings": [
+          [
+           28.5,
+           28.3
+          ],
+          [
+           29.4,
+           71.7
+          ]
+         ]
+        }
+       }
       },
       "transitus-fluvii": {
        "i": 10,
        "name": "Caph",
-       "sign": null
+       "sign": {
+        "glyph": {
+         "d": "M 67.4 67.8 L 68.6 25.1 L 31.3 24.6 C 31.5 34.3 42.7 34.3 42.9 24.7"
+        }
+       }
       },
       "aiq-bekar": {
        "i": 10,
        "name": "Kaf",
-       "sign": null
+       "sign": {
+        "glyph": {
+         "d": "M 29.2 32.2 L 30.4 74.7 L 70.3 74.7 L 69.6 32.7 M 46.7 24.6 L 49.0 23.3 M 57.0 24.6 L 59.3 23.3"
+        }
+       }
       },
       "alphabet-of-the-magi": {
        "i": 10,
@@ -829,7 +1379,11 @@ export default {
       "aiq-bekar": {
        "i": 22,
        "name": "Final Kaf",
-       "sign": null
+       "sign": {
+        "glyph": {
+         "d": "M 29.1 30.9 L 70.6 30.8 L 70.2 77.0 L 29.4 77.2 Z M 38.9 23.1 L 41.1 21.8 M 48.9 23.1 L 51.1 21.8 M 58.9 23.1 L 61.1 21.8"
+        }
+       }
       },
       "alphabet-of-the-magi": null
      },
@@ -844,22 +1398,73 @@ export default {
       "celestial": {
        "i": 11,
        "name": "Lamed",
-       "sign": null
+       "sign": {
+        "glyph": {
+         "d": "M 56.1 34.1 L 33.6 52.0 M 33.8 53.9 L 66.3 55.6 M 67.2 60.6 L 45.4 75.9",
+         "rings": [
+          [
+           60,
+           29.6
+          ],
+          [
+           27.8,
+           53.6
+          ],
+          [
+           72.1,
+           57.1
+          ],
+          [
+           40.5,
+           79.4
+          ]
+         ]
+        }
+       }
       },
       "malachim": {
        "i": 11,
        "name": "Lamed",
-       "sign": null
+       "sign": {
+        "glyph": {
+         "d": "M 64.0 33.0 L 64.1 55.0 C 64.1 66.0 58.5 73.9 50.0 73.9 C 40.0 73.9 35.4 70.0 35.5 56.1",
+         "rings": [
+          [
+           64,
+           27
+          ],
+          [
+           35.5,
+           50.1
+          ]
+         ]
+        }
+       }
       },
       "transitus-fluvii": {
        "i": 11,
        "name": "Lamed",
-       "sign": null
+       "sign": {
+        "glyph": {
+         "d": "M 41.1 24.5 L 65.8 24.5 L 48.2 38.2 M 53 34.6 C 57 36 61.5 35.6 63.4 38.2 C 65 41 63.5 47 60 52 C 57 56.2 52 60.5 47.2 63.2 M 54.2 60 C 58.5 61 60 65 59.2 68.6 C 58.4 71.5 54.5 72.3 49 72.2",
+         "rings": [
+          [
+           36.1,
+           24.5,
+           5
+          ]
+         ]
+        }
+       }
       },
       "aiq-bekar": {
        "i": 11,
        "name": "Lamed",
-       "sign": null
+       "sign": {
+        "glyph": {
+         "d": "M 32.4 74.9 L 66.6 74.6 L 65.5 29.5 M 43.4 22.3 L 45.7 21.0 M 53.0 22.3 L 55.2 21.0"
+        }
+       }
       },
       "alphabet-of-the-magi": {
        "i": 11,
@@ -879,22 +1484,66 @@ export default {
       "celestial": {
        "i": 12,
        "name": "Mem",
-       "sign": null
+       "sign": {
+        "glyph": {
+         "d": "M 28.8 76.2 L 68.8 29.6 L 69.3 67.1 M 37.1 35.3 L 47.5 54.4",
+         "rings": [
+          [
+           34.7,
+           29.8
+          ],
+          [
+           68.9,
+           73.1
+          ]
+         ]
+        }
+       }
       },
       "malachim": {
        "i": 12,
        "name": "Mem",
-       "sign": null
+       "sign": {
+        "glyph": {
+         "d": "M 30.8 33.2 L 31.4 49.9 L 30.8 67.9 M 69.0 32.7 L 69.0 49.9 L 68.9 67.0 M 31.4 49.9 L 69.0 49.9",
+         "rings": [
+          [
+           30.6,
+           27.2
+          ],
+          [
+           69,
+           26.7
+          ],
+          [
+           30.6,
+           73.9
+          ],
+          [
+           68.8,
+           73
+          ]
+         ]
+        }
+       }
       },
       "transitus-fluvii": {
        "i": 12,
        "name": "Mem",
-       "sign": null
+       "sign": {
+        "glyph": {
+         "d": "M 51.9 24 L 76 24.5 L 78 72.2 L 23.4 72.2 Z"
+        }
+       }
       },
       "aiq-bekar": {
        "i": 12,
        "name": "Mem",
-       "sign": null
+       "sign": {
+        "glyph": {
+         "d": "M 66.8 32.9 L 35.0 31.7 L 33.9 75.9 L 67.0 76.3 M 41.1 23.6 L 43.4 22.3 M 50.7 23.6 L 53.0 22.3"
+        }
+       }
       },
       "alphabet-of-the-magi": {
        "i": 12,
@@ -917,7 +1566,11 @@ export default {
       "aiq-bekar": {
        "i": 23,
        "name": "Final Mem",
-       "sign": null
+       "sign": {
+        "glyph": {
+         "d": "M 32.0 30.4 L 68.1 31.0 L 67.5 77.3 L 30.8 76.8 M 38.6 22.3 L 40.9 21.0 M 48.9 22.3 L 51.1 21.0 M 59.1 22.3 L 61.4 21.0"
+        }
+       }
       },
       "alphabet-of-the-magi": null
      },
@@ -932,22 +1585,74 @@ export default {
       "celestial": {
        "i": 13,
        "name": "Nun",
-       "sign": null
+       "sign": {
+        "glyph": {
+         "d": "M 56.9 36.2 L 74.5 75.5 L 36.2 76.5",
+         "rings": [
+          [
+           54.4,
+           30.7
+          ],
+          [
+           30.2,
+           76.6
+          ]
+         ]
+        }
+       }
       },
       "malachim": {
        "i": 13,
        "name": "Nun",
-       "sign": null
+       "sign": {
+        "glyph": {
+         "d": "M 62.1 32.3 L 61.2 67.7 M 41.6 30.1 L 61.5 55.3",
+         "rings": [
+          [
+           37.8,
+           25.4
+          ],
+          [
+           62.2,
+           26.3
+          ],
+          [
+           61.1,
+           73.7
+          ]
+         ]
+        }
+       }
       },
       "transitus-fluvii": {
        "i": 13,
        "name": "Nun",
-       "sign": null
+       "sign": {
+        "glyph": {
+         "d": "M 35.2 25.3 L 71.4 24.3 L 43.1 66.7",
+         "rings": [
+          [
+           30.2,
+           25.4,
+           5
+          ],
+          [
+           40.3,
+           70.9,
+           5
+          ]
+         ]
+        }
+       }
       },
       "aiq-bekar": {
        "i": 13,
        "name": "Nun",
-       "sign": null
+       "sign": {
+        "glyph": {
+         "d": "M 29.1 30.9 L 70.6 30.8 L 70.2 77.0 L 29.4 77.2 Z M 43.9 23.1 L 46.1 21.8 M 53.9 23.1 L 56.1 21.8"
+        }
+       }
       },
       "alphabet-of-the-magi": {
        "i": 13,
@@ -970,7 +1675,11 @@ export default {
       "aiq-bekar": {
        "i": 24,
        "name": "Final Nun",
-       "sign": null
+       "sign": {
+        "glyph": {
+         "d": "M 34.1 78.6 L 33.5 29.5 L 67.7 28.8 M 38.3 20.3 L 40.6 19.0 M 48.9 20.3 L 51.1 19.0 M 59.4 20.3 L 61.7 19.0"
+        }
+       }
       },
       "alphabet-of-the-magi": null
      },
@@ -985,22 +1694,86 @@ export default {
       "celestial": {
        "i": 14,
        "name": "Samech",
-       "sign": null
+       "sign": {
+        "glyph": {
+         "d": "M 36.6 27.6 L 63.2 27.4 M 30.7 33.7 C 30.9 49 30 74.6 49.2 74.6 C 67 74.6 66.5 48.5 68.8 33.3",
+         "rings": [
+          [
+           30.6,
+           27.7
+          ],
+          [
+           69.2,
+           27.3
+          ]
+         ]
+        }
+       }
       },
       "malachim": {
        "i": 14,
        "name": "Samech",
-       "sign": null
+       "sign": {
+        "glyph": {
+         "d": "M 51.4 32.8 L 51.5 68.6 M 38.5 37.2 L 67.6 64.6 M 67.9 38.9 L 32.4 62.1",
+         "rings": [
+          [
+           51.4,
+           26.8
+          ],
+          [
+           33.7,
+           33.5
+          ],
+          [
+           72.1,
+           34.6
+          ],
+          [
+           27.9,
+           66.1
+          ],
+          [
+           71.5,
+           69.2
+          ],
+          [
+           51.5,
+           74.6
+          ]
+         ]
+        }
+       }
       },
       "transitus-fluvii": {
        "i": 14,
        "name": "Samech",
-       "sign": null
+       "sign": {
+        "glyph": {
+         "d": "M 42.6 35.2 L 65.8 24.8 L 66.4 69.6 L 45.3 74.7",
+         "rings": [
+          [
+           38,
+           37.2,
+           5
+          ],
+          [
+           40.4,
+           75.9,
+           5
+          ]
+         ]
+        }
+       }
       },
       "aiq-bekar": {
        "i": 14,
        "name": "Samekh",
-       "sign": null
+       "sign": {
+        "glyph": {
+         "d": "M 32.0 30.4 L 68.1 31.0 L 67.5 77.3 L 30.8 76.8 M 43.7 22.3 L 46.0 21.0 M 54.0 22.3 L 56.3 21.0"
+        }
+       }
       },
       "alphabet-of-the-magi": {
        "i": 14,
@@ -1020,22 +1793,73 @@ export default {
       "celestial": {
        "i": 15,
        "name": "Ain",
-       "sign": null
+       "sign": {
+        "glyph": {
+         "d": "M 72.8 32.8 C 71.2 44.9 66.2 55.6 57.1 64.2 C 48 72.3 35.2 76 23.2 72.9 M 47.6 40.3 L 48.3 70",
+         "rings": [
+          [
+           73.1,
+           26.8
+          ],
+          [
+           47.4,
+           34.3
+          ]
+         ]
+        }
+       }
       },
       "malachim": {
        "i": 16,
        "name": "Ain",
-       "sign": null
+       "sign": {
+        "glyph": {
+         "d": "M 39.8 28.8 L 63.3 29.0 M 33.1 33.5 L 32.8 60.0 L 32.3 62.1 M 69.0 34.5 L 68.4 50.0 L 68.1 62.2 M 36.8 68.6 L 63.0 68.5",
+         "rings": [
+          [
+           33.9,
+           27.6
+          ],
+          [
+           69.3,
+           28.5
+          ],
+          [
+           30.8,
+           67.9
+          ],
+          [
+           69,
+           68.1
+          ]
+         ]
+        }
+       }
       },
       "transitus-fluvii": {
        "i": 15,
        "name": "Ain",
-       "sign": null
+       "sign": {
+        "glyph": {
+         "d": "M 49.9 33.7 L 50.5 60.8",
+         "rings": [
+          [
+           49.8,
+           28.7,
+           5
+          ]
+         ]
+        }
+       }
       },
       "aiq-bekar": {
        "i": 15,
        "name": "Ayin",
-       "sign": null
+       "sign": {
+        "glyph": {
+         "d": "M 34.1 78.6 L 33.5 29.5 L 67.7 28.8 M 43.6 20.3 L 45.8 19.0 M 54.2 20.3 L 56.4 19.0"
+        }
+       }
       },
       "alphabet-of-the-magi": {
        "i": 15,
@@ -1055,22 +1879,83 @@ export default {
       "celestial": {
        "i": 16,
        "name": "Pe",
-       "sign": null
+       "sign": {
+        "glyph": {
+         "d": "M 41.5 70.8 C 52.7 68.4 62.6 58 65.8 47.4 C 70.7 36.4 63.5 20.3 50.3 22.6 C 38.1 24.6 35.6 44.8 46.5 50.6",
+         "rings": [
+          [
+           52.5,
+           50.3
+          ],
+          [
+           36.2,
+           73.5
+          ]
+         ]
+        }
+       }
       },
       "malachim": {
        "i": 17,
        "name": "Pe",
-       "sign": null
+       "sign": {
+        "glyph": {
+         "d": "M 38.5 32.5 L 61.2 70.2 M 62.2 30.4 L 37.1 69.4",
+         "rings": [
+          [
+           36.2,
+           27
+          ],
+          [
+           65.4,
+           25.4
+          ],
+          [
+           33.9,
+           74.4
+          ],
+          [
+           65.2,
+           74.6
+          ]
+         ]
+        }
+       }
       },
       "transitus-fluvii": {
        "i": 16,
        "name": "Pe",
-       "sign": null
+       "sign": {
+        "glyph": {
+         "d": "M 32.2 32.6 L 80 73.8 L 28.4 72.7 M 71.6 33.8 L 55.4 52.6",
+         "rings": [
+          [
+           28.4,
+           29.3,
+           5
+          ],
+          [
+           74.1,
+           29.3,
+           5
+          ],
+          [
+           23.4,
+           72.6,
+           5
+          ]
+         ]
+        }
+       }
       },
       "aiq-bekar": {
        "i": 16,
        "name": "Pe",
-       "sign": null
+       "sign": {
+        "glyph": {
+         "d": "M 27.9 81.5 L 29.4 31.4 L 71.6 32.3 L 70.7 80.2 M 43.6 23.3 L 45.9 22.0 M 54.1 23.3 L 56.4 22.0"
+        }
+       }
       },
       "alphabet-of-the-magi": {
        "i": 16,
@@ -1093,7 +1978,11 @@ export default {
       "aiq-bekar": {
        "i": 25,
        "name": "Final Pe",
-       "sign": null
+       "sign": {
+        "glyph": {
+         "d": "M 27.9 81.5 L 29.4 31.4 L 71.6 32.3 L 70.7 80.2 M 38.4 23.3 L 40.6 22.0 M 48.9 23.3 L 51.1 22.0 M 59.4 23.3 L 61.6 22.0"
+        }
+       }
       },
       "alphabet-of-the-magi": null
      },
@@ -1108,22 +1997,62 @@ export default {
       "celestial": {
        "i": 17,
        "name": "Zade",
-       "sign": null
+       "sign": {
+        "glyph": {
+         "d": "M 36 26.7 L 69.3 71 L 38.5 70.2 M 66.1 26.2 L 51.3 47.0",
+         "rings": [
+          [
+           32.4,
+           21.9
+          ],
+          [
+           69.1,
+           21
+          ],
+          [
+           32.5,
+           70.1
+          ]
+         ]
+        }
+       }
       },
       "malachim": {
        "i": 18,
        "name": "Zade",
-       "sign": null
+       "sign": {
+        "glyph": {
+         "d": "M 50.6 32.5 L 49.6 68.6 M 42.2 47.6 L 57.8 47.6 L 57.8 56.4 L 42.2 56.4 Z ",
+         "rings": [
+          [
+           50.8,
+           26.5
+          ],
+          [
+           49.4,
+           74.6
+          ]
+         ]
+        }
+       }
       },
       "transitus-fluvii": {
        "i": 17,
        "name": "Zade",
-       "sign": null
+       "sign": {
+        "glyph": {
+         "d": "M 29.2 73.3 L 31.7 28.6 L 70.4 28.8 L 69.6 46 M 51.8 28.7 L 51.5 47"
+        }
+       }
       },
       "aiq-bekar": {
        "i": 17,
        "name": "Tsadi",
-       "sign": null
+       "sign": {
+        "glyph": {
+         "d": "M 28.0 31.6 L 68.1 31.7 L 69.6 79.9 M 43.6 21.9 L 45.8 20.6 M 54.2 21.9 L 56.4 20.6"
+        }
+       }
       },
       "alphabet-of-the-magi": {
        "i": 17,
@@ -1146,7 +2075,11 @@ export default {
       "aiq-bekar": {
        "i": 26,
        "name": "Final Tsadi",
-       "sign": null
+       "sign": {
+        "glyph": {
+         "d": "M 28.0 31.6 L 68.1 31.7 L 69.6 79.9 M 38.3 21.9 L 40.5 20.6 M 48.9 21.9 L 51.1 20.6 M 59.5 21.9 L 61.7 20.6"
+        }
+       }
       },
       "alphabet-of-the-magi": null
      },
@@ -1161,22 +2094,86 @@ export default {
       "celestial": {
        "i": 18,
        "name": "Kuff",
-       "sign": null
+       "sign": {
+        "glyph": {
+         "d": "M 34.6 30.3 C 48.7 19.7 67.8 29.4 73.4 43.3 M 55.2 26.9 L 54.6 69.2",
+         "rings": [
+          [
+           30,
+           34.1
+          ],
+          [
+           68.8,
+           47
+          ],
+          [
+           55.6,
+           75.2
+          ]
+         ]
+        }
+       }
       },
       "malachim": {
        "i": 19,
        "name": "Kuff",
-       "sign": null
+       "sign": {
+        "glyph": {
+         "d": "M 34.5 30.6 L 33.8 66.0 C 34.0 71.4 38.8 72.4 45.5 71.8 C 50.9 71.3 55.1 66.7 59.8 61.8 C 63.0 54.0 68.2 42.2 66.3 30.1 M 47.7 30.0 L 45.8 71.6 M 59.8 61.8 C 63.2 66.8 60.8 73.6 53.4 76.8 C 46.0 79.4 35.8 79.4 31.9 77.3 C 29.0 75.5 29.6 70.4 33.8 68.4",
+         "rings": [
+          [
+           34.6,
+           26.1,
+           4.5
+          ],
+          [
+           47.9,
+           25.5,
+           4.5
+          ],
+          [
+           66.3,
+           25.6,
+           4.5
+          ]
+         ]
+        }
+       }
       },
       "transitus-fluvii": {
        "i": 18,
        "name": "Kuph",
-       "sign": null
+       "sign": {
+        "glyph": {
+         "d": "M 48.1 31.6 L 27.1 65.4 M 54.6 30.6 L 74.5 63.8 M 29.5 69.5 L 71.4 68.6",
+         "rings": [
+          [
+           50.7,
+           27.4,
+           5
+          ],
+          [
+           24.5,
+           69.6,
+           5
+          ],
+          [
+           76.4,
+           68.5,
+           5
+          ]
+         ]
+        }
+       }
       },
       "aiq-bekar": {
        "i": 18,
        "name": "Qof",
-       "sign": null
+       "sign": {
+        "glyph": {
+         "d": "M 34.4 32.2 L 34.5 73.7 L 68.0 76.0 M 43.2 25.7 L 45.4 24.4 M 54.3 25.7 L 56.6 24.4 M 65.5 25.7 L 67.7 24.4"
+        }
+       }
       },
       "alphabet-of-the-magi": {
        "i": 18,
@@ -1196,22 +2193,58 @@ export default {
       "celestial": {
        "i": 19,
        "name": "Res",
-       "sign": null
+       "sign": {
+        "glyph": {
+         "d": "M 39.3 27.3 L 53 26.6 C 63 26.4 69.6 30.5 69.9 40.5 L 67.9 78.3",
+         "rings": [
+          [
+           33.3,
+           27.6
+          ]
+         ]
+        }
+       }
       },
       "malachim": {
        "i": 20,
        "name": "Res",
-       "sign": null
+       "sign": {
+        "glyph": {
+         "d": "M 29.4 32.8 L 47.2 68.2 M 72.1 31.7 L 51.9 68.0",
+         "rings": [
+          [
+           26.7,
+           27.4
+          ],
+          [
+           75.1,
+           26.5
+          ],
+          [
+           49.9,
+           73.6
+          ]
+         ]
+        }
+       }
       },
       "transitus-fluvii": {
        "i": 19,
        "name": "Res",
-       "sign": null
+       "sign": {
+        "glyph": {
+         "d": "M 69 24.6 L 68.7 37 C 68.4 42 66 46 65 50 C 63.5 56 58.5 61 53 64.2 C 46 67.8 37 68.6 28.8 67.6 M 66.4 43.2 C 63 39.6 57.2 39 55.2 43.2 C 53.6 46.8 57.4 49.2 61 48.9 C 62.6 48.8 64.1 48.3 65.3 47.7"
+        }
+       }
       },
       "aiq-bekar": {
        "i": 19,
        "name": "Resh",
-       "sign": null
+       "sign": {
+        "glyph": {
+         "d": "M 29.2 32.2 L 30.4 74.7 L 70.3 74.7 L 69.6 32.7 M 41.6 24.6 L 43.8 23.3 M 51.9 24.6 L 54.1 23.3 M 62.2 24.6 L 64.4 23.3"
+        }
+       }
       },
       "alphabet-of-the-magi": {
        "i": 19,
@@ -1231,22 +2264,82 @@ export default {
       "celestial": {
        "i": 20,
        "name": "Shin",
-       "sign": null
+       "sign": {
+        "glyph": {
+         "d": "M 23.8 31.1 C 26.9 48.2 25.8 76.6 50.0 77.1 C 74.7 77.5 73.5 50.9 76.3 33.5 M 50.4 31.5 L 49.3 77",
+         "rings": [
+          [
+           23.6,
+           25.1
+          ],
+          [
+           50.5,
+           25.5
+          ],
+          [
+           77.6,
+           27.6
+          ]
+         ]
+        }
+       }
       },
       "malachim": {
        "i": 21,
        "name": "Shin",
-       "sign": null
+       "sign": {
+        "glyph": {
+         "d": "M 35.0 66.1 L 47.0 33.2 M 50.3 33.5 L 57.6 65.6 M 65.0 32.7 L 55.2 54.9",
+         "rings": [
+          [
+           49,
+           27.6
+          ],
+          [
+           66.7,
+           27
+          ],
+          [
+           33,
+           71.7
+          ],
+          [
+           58.9,
+           71.5
+          ]
+         ]
+        }
+       }
       },
       "transitus-fluvii": {
        "i": 20,
        "name": "Schin",
-       "sign": null
+       "sign": {
+        "glyph": {
+         "d": "M 28.7 30.9 L 46.8 66.6 L 70.8 30.9 M 37.6 48.4 C 43 41.5 49.4 34 49.3 29 C 49.2 25.4 46.4 24.3 44.3 24.4 C 41.4 24.6 39.5 27.2 39.6 31.4",
+         "rings": [
+          [
+           26.4,
+           26.4,
+           5
+          ],
+          [
+           73.6,
+           26.7,
+           5
+          ]
+         ]
+        }
+       }
       },
       "aiq-bekar": {
        "i": 20,
        "name": "Shin",
-       "sign": null
+       "sign": {
+        "glyph": {
+         "d": "M 32.4 74.9 L 66.6 74.6 L 65.5 29.5 M 38.6 22.3 L 40.9 21.0 M 48.2 22.3 L 50.5 21.0 M 57.8 22.3 L 60.0 21.0"
+        }
+       }
       },
       "alphabet-of-the-magi": {
        "i": 20,
@@ -1266,22 +2359,90 @@ export default {
       "celestial": {
        "i": 21,
        "name": "Tau",
-       "sign": null
+       "sign": {
+        "glyph": {
+         "d": "M 36.8 23.4 L 76.6 23.3 L 76.3 70.8 M 31.4 66.5 L 76.6 23.3",
+         "rings": [
+          [
+           30.8,
+           23.4
+          ],
+          [
+           27.1,
+           70.6
+          ]
+         ]
+        }
+       }
       },
       "malachim": {
        "i": 22,
        "name": "Tau",
-       "sign": null
+       "sign": {
+        "glyph": {
+         "d": "M 30.1 29.1 L 30.3 40.0 L 30.1 68.9 M 41.8 29.3 L 41.6 40.0 L 41.3 68.6 M 65.4 29.6 L 65.8 69.1 M 26.9 39.5 L 72.7 39.6",
+         "rings": [
+          [
+           30.1,
+           25.6,
+           3.5
+          ],
+          [
+           41.8,
+           25.8,
+           3.5
+          ],
+          [
+           65.4,
+           26.1,
+           3.5
+          ],
+          [
+           23.4,
+           39.5,
+           3.5
+          ],
+          [
+           76.2,
+           39.6,
+           3.5
+          ],
+          [
+           30.1,
+           72.4,
+           3.5
+          ],
+          [
+           41.3,
+           72.1,
+           3.5
+          ],
+          [
+           65.8,
+           72.6,
+           3.5
+          ]
+         ]
+        }
+       }
       },
       "transitus-fluvii": {
        "i": 21,
        "name": "Tau",
-       "sign": null
+       "sign": {
+        "glyph": {
+         "d": "M 77.6 39.3 L 77.6 27 L 25.8 26.8 L 25.8 71 L 83 71.1 C 88.4 71.1 89.2 78.2 84.4 78.4 C 81.8 78.5 80.1 77.4 79.8 76.4 M 12.8 57.3 L 12.8 50 L 54.3 50.1 L 54.3 42"
+        }
+       }
       },
       "aiq-bekar": {
        "i": 21,
        "name": "Tav",
-       "sign": null
+       "sign": {
+        "glyph": {
+         "d": "M 66.8 32.9 L 35.0 31.7 L 33.9 75.9 L 67.0 76.3 M 36.3 23.6 L 38.6 22.3 M 45.9 23.6 L 48.2 22.3 M 55.5 23.6 L 57.7 22.3"
+        }
+       }
       },
       "alphabet-of-the-magi": {
        "i": 21,
@@ -1710,7 +2871,7 @@ export default {
    "slug": "celestial",
    "title": "The Celestial Writing",
    "short": "Celestial",
-   "status": "forms-pending",
+   "status": "ready",
    "direction": "rtl",
    "from": "hebrew",
    "convention": "The Celestial is keyed to the Hebrew letters one sign for one, so the tool takes Hebrew only, with any pointing removed, and writes each letter with its sign. Agrippa’s table has no final forms, so the five final letters are written with the sign of the ordinary letter: that is the site’s convention, and the tool says each time it applies it. No Latin spelling is turned into Hebrew.",
@@ -1722,154 +2883,482 @@ export default {
      "i": 0,
      "name": "Aleph",
      "translit": "ʾ",
-     "sign": null
+     "sign": {
+      "glyph": {
+       "d": "M 27.1 31.3 L 72.4 73.1 M 72.1 31.9 L 53.4 55.6 M 27.1 70.6 L 40.0 43.2",
+       "rings": [
+        [
+         22.7,
+         27.2
+        ],
+        [
+         73.4,
+         26
+        ],
+        [
+         23.6,
+         75.4
+        ],
+        [
+         76.8,
+         77.2
+        ]
+       ]
+      }
+     }
     },
     {
      "key": "ב",
      "i": 1,
      "name": "Beth",
      "translit": "b",
-     "sign": null
+     "sign": {
+      "glyph": {
+       "d": "M 50.1 23.6 L 80.2 24.6 L 52.4 52.6 L 78.8 77.9 L 28.8 77.1",
+       "rings": [
+        [
+         44.1,
+         24.7
+        ],
+        [
+         22.8,
+         76.4
+        ]
+       ]
+      }
+     }
     },
     {
      "key": "ג",
      "i": 2,
      "name": "Gimel",
      "translit": "g",
-     "sign": null
+     "sign": {
+      "glyph": {
+       "d": "M 66.4 31.5 L 66.5 76.4 M 39.6 55.8 L 66.5 55.8",
+       "rings": [
+        [
+         66.4,
+         25.5
+        ],
+        [
+         33.6,
+         55.8
+        ]
+       ]
+      }
+     }
     },
     {
      "key": "ד",
      "i": 3,
      "name": "Daleth",
      "translit": "d",
-     "sign": null
+     "sign": {
+      "glyph": {
+       "d": "M 37.2 28.6 L 64.6 28.7 M 68.4 39.3 L 68 73",
+       "rings": [
+        [
+         31.2,
+         28.6
+        ],
+        [
+         68.5,
+         33.3
+        ]
+       ]
+      }
+     }
     },
     {
      "key": "ה",
      "i": 4,
      "name": "He",
      "translit": "h",
-     "sign": null
+     "sign": {
+      "glyph": {
+       "d": "M 34.5 26.4 L 74.4 25.7 L 74.8 75 M 46.2 25.9 L 45.2 75",
+       "rings": [
+        [
+         28.5,
+         26.5
+        ]
+       ]
+      }
+     }
     },
     {
      "key": "ו",
      "i": 5,
      "name": "Vau",
      "translit": "w",
-     "sign": null
+     "sign": {
+      "glyph": {
+       "d": "M 50 31.2 L 48.9 74",
+       "rings": [
+        [
+         50.1,
+         25.2
+        ]
+       ]
+      }
+     }
     },
     {
      "key": "ז",
      "i": 6,
      "name": "Zain",
      "translit": "z",
-     "sign": null
+     "sign": {
+      "glyph": {
+       "d": "M 41.6 24.8 L 57.9 24.8 M 50.2 24.8 L 51.3 74.2",
+       "rings": [
+        [
+         35.6,
+         24.6
+        ],
+        [
+         63.7,
+         26.4
+        ]
+       ]
+      }
+     }
     },
     {
      "key": "ח",
      "i": 7,
      "name": "Cheth",
      "translit": "ḥ",
-     "sign": null
+     "sign": {
+      "glyph": {
+       "d": "M 36.8 24.5 L 63 24.8 M 30.7 30.5 L 30.1 73 M 69.1 30.8 L 70 73",
+       "rings": [
+        [
+         30.8,
+         24.5
+        ],
+        [
+         69,
+         24.8
+        ]
+       ]
+      }
+     }
     },
     {
      "key": "ט",
      "i": 8,
      "name": "Theth",
      "translit": "ṭ",
-     "sign": null
+     "sign": {
+      "glyph": {
+       "d": "M 30.0 28.1 C 29.6 45.9 28.1 69.6 52.0 71.0 C 75.3 70.3 67.6 44.9 69.5 29.6",
+       "rings": [
+        [
+         30.5,
+         22.1
+        ],
+        [
+         70,
+         23.6
+        ]
+       ]
+      }
+     }
     },
     {
      "key": "י",
      "i": 9,
      "name": "Iod",
      "translit": "y",
-     "sign": null
+     "sign": {
+      "glyph": {
+       "d": "M 46.7 38.3 L 25.0 73.2 M 53.4 39.2 L 77.1 73.1 M 28.4 80.5 L 72.9 80.5",
+       "rings": [
+        [
+         50.7,
+         33.8
+        ],
+        [
+         22.7,
+         78.7
+        ],
+        [
+         78.7,
+         78.9
+        ]
+       ]
+      }
+     }
     },
     {
      "key": "כ",
      "i": 10,
      "name": "Caph",
      "translit": "k",
-     "sign": null
+     "sign": {
+      "glyph": {
+       "d": "M 38.6 31.1 C 56 27.2 73.6 38 73.9 56 C 74.4 75.6 53.5 81.2 36.7 78.5",
+       "rings": [
+        [
+         32.7,
+         31.4
+        ],
+        [
+         30.7,
+         77.7
+        ]
+       ]
+      }
+     }
     },
     {
      "key": "ל",
      "i": 11,
      "name": "Lamed",
      "translit": "l",
-     "sign": null
+     "sign": {
+      "glyph": {
+       "d": "M 56.1 34.1 L 33.6 52.0 M 33.8 53.9 L 66.3 55.6 M 67.2 60.6 L 45.4 75.9",
+       "rings": [
+        [
+         60,
+         29.6
+        ],
+        [
+         27.8,
+         53.6
+        ],
+        [
+         72.1,
+         57.1
+        ],
+        [
+         40.5,
+         79.4
+        ]
+       ]
+      }
+     }
     },
     {
      "key": "מ",
      "i": 12,
      "name": "Mem",
      "translit": "m",
-     "sign": null
+     "sign": {
+      "glyph": {
+       "d": "M 28.8 76.2 L 68.8 29.6 L 69.3 67.1 M 37.1 35.3 L 47.5 54.4",
+       "rings": [
+        [
+         34.7,
+         29.8
+        ],
+        [
+         68.9,
+         73.1
+        ]
+       ]
+      }
+     }
     },
     {
      "key": "נ",
      "i": 13,
      "name": "Nun",
      "translit": "n",
-     "sign": null
+     "sign": {
+      "glyph": {
+       "d": "M 56.9 36.2 L 74.5 75.5 L 36.2 76.5",
+       "rings": [
+        [
+         54.4,
+         30.7
+        ],
+        [
+         30.2,
+         76.6
+        ]
+       ]
+      }
+     }
     },
     {
      "key": "ס",
      "i": 14,
      "name": "Samech",
      "translit": "s",
-     "sign": null
+     "sign": {
+      "glyph": {
+       "d": "M 36.6 27.6 L 63.2 27.4 M 30.7 33.7 C 30.9 49 30 74.6 49.2 74.6 C 67 74.6 66.5 48.5 68.8 33.3",
+       "rings": [
+        [
+         30.6,
+         27.7
+        ],
+        [
+         69.2,
+         27.3
+        ]
+       ]
+      }
+     }
     },
     {
      "key": "ע",
      "i": 15,
      "name": "Ain",
      "translit": "ʿ",
-     "sign": null
+     "sign": {
+      "glyph": {
+       "d": "M 72.8 32.8 C 71.2 44.9 66.2 55.6 57.1 64.2 C 48 72.3 35.2 76 23.2 72.9 M 47.6 40.3 L 48.3 70",
+       "rings": [
+        [
+         73.1,
+         26.8
+        ],
+        [
+         47.4,
+         34.3
+        ]
+       ]
+      }
+     }
     },
     {
      "key": "פ",
      "i": 16,
      "name": "Pe",
      "translit": "p",
-     "sign": null
+     "sign": {
+      "glyph": {
+       "d": "M 41.5 70.8 C 52.7 68.4 62.6 58 65.8 47.4 C 70.7 36.4 63.5 20.3 50.3 22.6 C 38.1 24.6 35.6 44.8 46.5 50.6",
+       "rings": [
+        [
+         52.5,
+         50.3
+        ],
+        [
+         36.2,
+         73.5
+        ]
+       ]
+      }
+     }
     },
     {
      "key": "צ",
      "i": 17,
      "name": "Zade",
      "translit": "ṣ",
-     "sign": null
+     "sign": {
+      "glyph": {
+       "d": "M 36 26.7 L 69.3 71 L 38.5 70.2 M 66.1 26.2 L 51.3 47.0",
+       "rings": [
+        [
+         32.4,
+         21.9
+        ],
+        [
+         69.1,
+         21
+        ],
+        [
+         32.5,
+         70.1
+        ]
+       ]
+      }
+     }
     },
     {
      "key": "ק",
      "i": 18,
      "name": "Kuff",
      "translit": "q",
-     "sign": null
+     "sign": {
+      "glyph": {
+       "d": "M 34.6 30.3 C 48.7 19.7 67.8 29.4 73.4 43.3 M 55.2 26.9 L 54.6 69.2",
+       "rings": [
+        [
+         30,
+         34.1
+        ],
+        [
+         68.8,
+         47
+        ],
+        [
+         55.6,
+         75.2
+        ]
+       ]
+      }
+     }
     },
     {
      "key": "ר",
      "i": 19,
      "name": "Res",
      "translit": "r",
-     "sign": null
+     "sign": {
+      "glyph": {
+       "d": "M 39.3 27.3 L 53 26.6 C 63 26.4 69.6 30.5 69.9 40.5 L 67.9 78.3",
+       "rings": [
+        [
+         33.3,
+         27.6
+        ]
+       ]
+      }
+     }
     },
     {
      "key": "ש",
      "i": 20,
      "name": "Shin",
      "translit": "š",
-     "sign": null
+     "sign": {
+      "glyph": {
+       "d": "M 23.8 31.1 C 26.9 48.2 25.8 76.6 50.0 77.1 C 74.7 77.5 73.5 50.9 76.3 33.5 M 50.4 31.5 L 49.3 77",
+       "rings": [
+        [
+         23.6,
+         25.1
+        ],
+        [
+         50.5,
+         25.5
+        ],
+        [
+         77.6,
+         27.6
+        ]
+       ]
+      }
+     }
     },
     {
      "key": "ת",
      "i": 21,
      "name": "Tau",
      "translit": "t",
-     "sign": null
+     "sign": {
+      "glyph": {
+       "d": "M 36.8 23.4 L 76.6 23.3 L 76.3 70.8 M 31.4 66.5 L 76.6 23.3",
+       "rings": [
+        [
+         30.8,
+         23.4
+        ],
+        [
+         27.1,
+         70.6
+        ]
+       ]
+      }
+     }
     }
    ],
    "finals": {
@@ -1884,7 +3373,7 @@ export default {
    "slug": "malachim",
    "title": "Malachim, the Writing of the Angels",
    "short": "Malachim",
-   "status": "forms-pending",
+   "status": "ready",
    "direction": "rtl",
    "from": "hebrew",
    "convention": "The Malachim is keyed to the Hebrew letters, so the tool takes Hebrew only, with any pointing removed, and writes each letter with its sign. The table has no final forms, so the five final letters are written with the sign of the ordinary letter, and the tool says so each time; of the two signs labelled Samech, it writes Samekh with the first. Both are the site’s conventions. No Latin spelling is turned into Hebrew.",
@@ -1896,154 +3385,633 @@ export default {
      "i": 0,
      "name": "Aleph",
      "translit": "ʾ",
-     "sign": null
+     "sign": {
+      "glyph": {
+       "d": "M 49.0 31.7 L 48.6 67.4 M 34.8 30.8 L 35.0 38.7 L 64.6 38.7 L 64.4 31.7 M 37.6 46.8 L 60.4 46.9 M 34.3 66.9 L 34.4 55.4 L 63.8 55.4 L 64.2 66.7",
+       "rings": [
+        [
+         34.6,
+         25.8,
+         5
+        ],
+        [
+         49,
+         26.7,
+         5
+        ],
+        [
+         64.3,
+         26.7,
+         5
+        ],
+        [
+         34.6,
+         46.8,
+         3
+        ],
+        [
+         63.4,
+         46.9,
+         3
+        ],
+        [
+         34.2,
+         71.9,
+         5
+        ],
+        [
+         48.6,
+         72.4,
+         5
+        ],
+        [
+         64.4,
+         71.7,
+         5
+        ]
+       ]
+      }
+     }
     },
     {
      "key": "ב",
      "i": 1,
      "name": "Beth",
      "translit": "b",
-     "sign": null
+     "sign": {
+      "glyph": {
+       "d": "M 29.8 30.3 C 29.0 64.0 33.5 74.6 49.3 74.6 C 63.0 74.6 69.6 63.0 69.3 30.5 M 48.6 30.5 L 48.8 65.1",
+       "rings": [
+        [
+         29.9,
+         24.3
+        ],
+        [
+         48.6,
+         24.5
+        ],
+        [
+         69.2,
+         24.5
+        ],
+        [
+         48.8,
+         68.1,
+         3
+        ]
+       ]
+      }
+     }
     },
     {
      "key": "ג",
      "i": 2,
      "name": "Gimel",
      "translit": "g",
-     "sign": null
+     "sign": {
+      "glyph": {
+       "d": "M 41.9 30.5 L 48.6 64.6 M 62.1 30.8 C 60.8 40.4 55.6 53.5 48.6 64.6 C 46.1 68.5 40.6 74.8 33.5 77.1",
+       "rings": [
+        [
+         41.3,
+         24.5
+        ],
+        [
+         63.1,
+         24.9
+        ]
+       ]
+      }
+     }
     },
     {
      "key": "ד",
      "i": 3,
      "name": "Daleth",
      "translit": "d",
-     "sign": null
+     "sign": {
+      "glyph": {
+       "d": "M 39.3 24.6 L 63.9 24.5 M 33.2 30.6 L 32.5 69.1 M 59.0 24.4 L 58.5 68.4",
+       "rings": [
+        [
+         33.3,
+         24.6
+        ],
+        [
+         67.2,
+         24.5,
+         3.3
+        ],
+        [
+         32.4,
+         75.1
+        ],
+        [
+         58.4,
+         74.4
+        ]
+       ]
+      }
+     }
     },
     {
      "key": "ה",
      "i": 4,
      "name": "He",
      "translit": "h",
-     "sign": null
+     "sign": {
+      "glyph": {
+       "d": "M 32.1 31.4 L 31.9 68.4 M 35.5 30.3 L 67.0 76.0 L 68.5 30.9",
+       "rings": [
+        [
+         32.1,
+         25.4
+        ],
+        [
+         68.3,
+         24.9
+        ],
+        [
+         31.9,
+         74.4
+        ]
+       ]
+      }
+     }
     },
     {
      "key": "ו",
      "i": 5,
      "name": "Vau",
      "translit": "w",
-     "sign": null
+     "sign": {
+      "glyph": {
+       "d": "M 46.1 30.0 L 22.9 68.6 M 49.2 30.9 L 49.4 69.3 M 52.8 29.7 L 75.8 70.5",
+       "rings": [
+        [
+         49.2,
+         24.9
+        ],
+        [
+         19.8,
+         73.7
+        ],
+        [
+         49.4,
+         75.3
+        ],
+        [
+         80,
+         74.8
+        ]
+       ]
+      }
+     }
     },
     {
      "key": "ז",
      "i": 6,
      "name": "Zain",
      "translit": "z",
-     "sign": null
+     "sign": {
+      "glyph": {
+       "d": "M 27.6 30.5 L 47.9 67.2 M 50.9 30.3 L 50.3 66.4 M 72.5 29.7 L 51.8 66.5",
+       "rings": [
+        [
+         24.7,
+         25.2
+        ],
+        [
+         51,
+         24.3
+        ],
+        [
+         75.1,
+         24.3
+        ],
+        [
+         50.8,
+         72.4
+        ]
+       ]
+      }
+     }
     },
     {
      "key": "ח",
      "i": 7,
      "name": "Cheth",
      "translit": "ḥ",
-     "sign": null
+     "sign": {
+      "glyph": {
+       "d": "M 15.1 26.0 L 84.6 26.0 L 84.6 73.3 L 15.4 74.2 Z  M 51.6 26.0 L 52.0 73.6"
+      }
+     }
     },
     {
      "key": "ט",
      "i": 8,
      "name": "Teth",
      "translit": "ṭ",
-     "sign": null
+     "sign": {
+      "glyph": {
+       "d": "M 17.0 67.4 L 34.0 32.1 M 39.8 31.8 L 54.8 68.0 M 62.5 31.7 L 82.7 68.1 M 81.5 31.3 L 60.3 68.3",
+       "rings": [
+        [
+         36.6,
+         26.7
+        ],
+        [
+         59.6,
+         26.5
+        ],
+        [
+         84.5,
+         26.1
+        ],
+        [
+         14.4,
+         72.8
+        ],
+        [
+         57.3,
+         73.5
+        ],
+        [
+         85.6,
+         73.3
+        ]
+       ]
+      }
+     }
     },
     {
      "key": "י",
      "i": 9,
      "name": "Iod",
      "translit": "y",
-     "sign": null
+     "sign": {
+      "glyph": {
+       "d": "M 59.4 29.8 C 63.5 31.5 68.2 39.0 68.2 48.0 C 68.2 64.0 58.0 74.5 40.4 72.7",
+       "rings": [
+        [
+         53.9,
+         27.4
+        ],
+        [
+         34.4,
+         72.1
+        ]
+       ]
+      }
+     }
     },
     {
      "key": "כ",
      "i": 10,
      "name": "Caph",
      "translit": "k",
-     "sign": null
+     "sign": {
+      "glyph": {
+       "d": "M 34.1 26.1 L 44.0 26.4 C 65.0 26.7 73.2 37.0 74.3 49.5 C 75.3 61.5 64.4 72.5 50.0 72.4 L 35.4 72.2",
+       "rings": [
+        [
+         28.5,
+         28.3
+        ],
+        [
+         29.4,
+         71.7
+        ]
+       ]
+      }
+     }
     },
     {
      "key": "ל",
      "i": 11,
      "name": "Lamed",
      "translit": "l",
-     "sign": null
+     "sign": {
+      "glyph": {
+       "d": "M 64.0 33.0 L 64.1 55.0 C 64.1 66.0 58.5 73.9 50.0 73.9 C 40.0 73.9 35.4 70.0 35.5 56.1",
+       "rings": [
+        [
+         64,
+         27
+        ],
+        [
+         35.5,
+         50.1
+        ]
+       ]
+      }
+     }
     },
     {
      "key": "מ",
      "i": 12,
      "name": "Mem",
      "translit": "m",
-     "sign": null
+     "sign": {
+      "glyph": {
+       "d": "M 30.8 33.2 L 31.4 49.9 L 30.8 67.9 M 69.0 32.7 L 69.0 49.9 L 68.9 67.0 M 31.4 49.9 L 69.0 49.9",
+       "rings": [
+        [
+         30.6,
+         27.2
+        ],
+        [
+         69,
+         26.7
+        ],
+        [
+         30.6,
+         73.9
+        ],
+        [
+         68.8,
+         73
+        ]
+       ]
+      }
+     }
     },
     {
      "key": "נ",
      "i": 13,
      "name": "Nun",
      "translit": "n",
-     "sign": null
+     "sign": {
+      "glyph": {
+       "d": "M 62.1 32.3 L 61.2 67.7 M 41.6 30.1 L 61.5 55.3",
+       "rings": [
+        [
+         37.8,
+         25.4
+        ],
+        [
+         62.2,
+         26.3
+        ],
+        [
+         61.1,
+         73.7
+        ]
+       ]
+      }
+     }
     },
     {
      "key": "ס",
      "i": 14,
      "name": "Samech",
      "translit": "s",
-     "sign": null
+     "sign": {
+      "glyph": {
+       "d": "M 51.4 32.8 L 51.5 68.6 M 38.5 37.2 L 67.6 64.6 M 67.9 38.9 L 32.4 62.1",
+       "rings": [
+        [
+         51.4,
+         26.8
+        ],
+        [
+         33.7,
+         33.5
+        ],
+        [
+         72.1,
+         34.6
+        ],
+        [
+         27.9,
+         66.1
+        ],
+        [
+         71.5,
+         69.2
+        ],
+        [
+         51.5,
+         74.6
+        ]
+       ]
+      }
+     }
     },
     {
      "key": "ע",
      "i": 16,
      "name": "Ain",
      "translit": "ʿ",
-     "sign": null
+     "sign": {
+      "glyph": {
+       "d": "M 39.8 28.8 L 63.3 29.0 M 33.1 33.5 L 32.8 60.0 L 32.3 62.1 M 69.0 34.5 L 68.4 50.0 L 68.1 62.2 M 36.8 68.6 L 63.0 68.5",
+       "rings": [
+        [
+         33.9,
+         27.6
+        ],
+        [
+         69.3,
+         28.5
+        ],
+        [
+         30.8,
+         67.9
+        ],
+        [
+         69,
+         68.1
+        ]
+       ]
+      }
+     }
     },
     {
      "key": "פ",
      "i": 17,
      "name": "Pe",
      "translit": "p",
-     "sign": null
+     "sign": {
+      "glyph": {
+       "d": "M 38.5 32.5 L 61.2 70.2 M 62.2 30.4 L 37.1 69.4",
+       "rings": [
+        [
+         36.2,
+         27
+        ],
+        [
+         65.4,
+         25.4
+        ],
+        [
+         33.9,
+         74.4
+        ],
+        [
+         65.2,
+         74.6
+        ]
+       ]
+      }
+     }
     },
     {
      "key": "צ",
      "i": 18,
      "name": "Zade",
      "translit": "ṣ",
-     "sign": null
+     "sign": {
+      "glyph": {
+       "d": "M 50.6 32.5 L 49.6 68.6 M 42.2 47.6 L 57.8 47.6 L 57.8 56.4 L 42.2 56.4 Z ",
+       "rings": [
+        [
+         50.8,
+         26.5
+        ],
+        [
+         49.4,
+         74.6
+        ]
+       ]
+      }
+     }
     },
     {
      "key": "ק",
      "i": 19,
      "name": "Kuff",
      "translit": "q",
-     "sign": null
+     "sign": {
+      "glyph": {
+       "d": "M 34.5 30.6 L 33.8 66.0 C 34.0 71.4 38.8 72.4 45.5 71.8 C 50.9 71.3 55.1 66.7 59.8 61.8 C 63.0 54.0 68.2 42.2 66.3 30.1 M 47.7 30.0 L 45.8 71.6 M 59.8 61.8 C 63.2 66.8 60.8 73.6 53.4 76.8 C 46.0 79.4 35.8 79.4 31.9 77.3 C 29.0 75.5 29.6 70.4 33.8 68.4",
+       "rings": [
+        [
+         34.6,
+         26.1,
+         4.5
+        ],
+        [
+         47.9,
+         25.5,
+         4.5
+        ],
+        [
+         66.3,
+         25.6,
+         4.5
+        ]
+       ]
+      }
+     }
     },
     {
      "key": "ר",
      "i": 20,
      "name": "Res",
      "translit": "r",
-     "sign": null
+     "sign": {
+      "glyph": {
+       "d": "M 29.4 32.8 L 47.2 68.2 M 72.1 31.7 L 51.9 68.0",
+       "rings": [
+        [
+         26.7,
+         27.4
+        ],
+        [
+         75.1,
+         26.5
+        ],
+        [
+         49.9,
+         73.6
+        ]
+       ]
+      }
+     }
     },
     {
      "key": "ש",
      "i": 21,
      "name": "Shin",
      "translit": "š",
-     "sign": null
+     "sign": {
+      "glyph": {
+       "d": "M 35.0 66.1 L 47.0 33.2 M 50.3 33.5 L 57.6 65.6 M 65.0 32.7 L 55.2 54.9",
+       "rings": [
+        [
+         49,
+         27.6
+        ],
+        [
+         66.7,
+         27
+        ],
+        [
+         33,
+         71.7
+        ],
+        [
+         58.9,
+         71.5
+        ]
+       ]
+      }
+     }
     },
     {
      "key": "ת",
      "i": 22,
      "name": "Tau",
      "translit": "t",
-     "sign": null
+     "sign": {
+      "glyph": {
+       "d": "M 30.1 29.1 L 30.3 40.0 L 30.1 68.9 M 41.8 29.3 L 41.6 40.0 L 41.3 68.6 M 65.4 29.6 L 65.8 69.1 M 26.9 39.5 L 72.7 39.6",
+       "rings": [
+        [
+         30.1,
+         25.6,
+         3.5
+        ],
+        [
+         41.8,
+         25.8,
+         3.5
+        ],
+        [
+         65.4,
+         26.1,
+         3.5
+        ],
+        [
+         23.4,
+         39.5,
+         3.5
+        ],
+        [
+         76.2,
+         39.6,
+         3.5
+        ],
+        [
+         30.1,
+         72.4,
+         3.5
+        ],
+        [
+         41.3,
+         72.1,
+         3.5
+        ],
+        [
+         65.8,
+         72.6,
+         3.5
+        ]
+       ]
+      }
+     }
     }
    ],
    "finals": {
@@ -2058,7 +4026,7 @@ export default {
    "slug": "transitus-fluvii",
    "title": "The Passing of the River",
    "short": "Passing the River",
-   "status": "forms-pending",
+   "status": "ready",
    "direction": "rtl",
    "from": "hebrew",
    "convention": "The Passing of the River is keyed to the Hebrew letters one sign for one, so the tool takes Hebrew only, with any pointing removed, and writes each letter with its sign. The table has no final forms, so the five final letters are written with the sign of the ordinary letter, and the tool says so each time: that is the site’s convention, not Agrippa’s. No Latin spelling is turned into Hebrew.",
@@ -2070,154 +4038,400 @@ export default {
      "i": 0,
      "name": "Aleph",
      "translit": "ʾ",
-     "sign": null
+     "sign": {
+      "glyph": {
+       "d": "M 82.2 74.2 L 56.3 51.0 C 47.5 43.4 37.5 35.4 31 31.4 C 26.4 28.6 20.4 28.8 18.3 32.6 C 16.4 36.4 18.6 41.6 23.2 44.6 C 27.4 47.3 32.6 47.9 37.9 49.0 M 63.4 34.5 L 56.3 51.0",
+       "rings": [
+        [
+         42.4,
+         51.1,
+         5
+        ],
+        [
+         65.4,
+         29.9,
+         5
+        ]
+       ]
+      }
+     }
     },
     {
      "key": "ב",
      "i": 1,
      "name": "Beth",
      "translit": "b",
-     "sign": null
+     "sign": {
+      "glyph": {
+       "d": "M 40.5 28.3 L 67.3 27.4 L 67.3 73.1 L 40.1 73.2",
+       "rings": [
+        [
+         35.5,
+         28.5,
+         5
+        ],
+        [
+         35.1,
+         73.2,
+         5
+        ]
+       ]
+      }
+     }
     },
     {
      "key": "ג",
      "i": 2,
      "name": "Gimel",
      "translit": "g",
-     "sign": null
+     "sign": {
+      "glyph": {
+       "d": "M 61.7 29.4 L 62 50 C 62.3 63.5 58.5 70.8 46.4 70.9",
+       "rings": [
+        [
+         41.4,
+         70.6,
+         5
+        ]
+       ]
+      }
+     }
     },
     {
      "key": "ד",
      "i": 3,
      "name": "Daleth",
      "translit": "d",
-     "sign": null
+     "sign": {
+      "glyph": {
+       "d": "M 35.2 29 L 63 28.6 L 64.2 72.4 M 35.2 44.4 L 63.4 44.2"
+      }
+     }
     },
     {
      "key": "ה",
      "i": 4,
      "name": "He",
      "translit": "h",
-     "sign": null
+     "sign": {
+      "glyph": {
+       "d": "M 41.7 37.2 L 41.7 70.5 L 57.9 71.2 M 41.7 43 L 54.5 42.9 M 41.7 56.2 L 53.9 56.2"
+      }
+     }
     },
     {
      "key": "ו",
      "i": 5,
      "name": "Vau",
      "translit": "w",
-     "sign": null
+     "sign": {
+      "glyph": {
+       "d": "M 34.6 47.8 C 40 51.5 50 53.4 58 53.2 C 64 53 69.5 49.5 74.6 44.6",
+       "rings": [
+        [
+         30.6,
+         44.9,
+         5
+        ]
+       ]
+      }
+     }
     },
     {
      "key": "ז",
      "i": 6,
      "name": "Zain",
      "translit": "z",
-     "sign": null
+     "sign": {
+      "glyph": {
+       "d": "M 56.5 29.6 L 33.6 50.9 L 58.9 66.0",
+       "rings": [
+        [
+         60.2,
+         26.2,
+         5
+        ],
+        [
+         63.2,
+         68.6,
+         5
+        ]
+       ]
+      }
+     }
     },
     {
      "key": "ח",
      "i": 7,
      "name": "Cheth",
      "translit": "ḥ",
-     "sign": null
+     "sign": {
+      "glyph": {
+       "d": "M 39.4 29.7 L 69.6 30 L 69.6 70.3",
+       "rings": [
+        [
+         34.4,
+         29.7,
+         5
+        ]
+       ]
+      }
+     }
     },
     {
      "key": "ט",
      "i": 8,
      "name": "Teth",
      "translit": "ṭ",
-     "sign": null
+     "sign": {
+      "glyph": {
+       "d": "M 65.1 29.6 L 65.4 64.2 M 39.2 45.2 L 65.2 45.3",
+       "rings": [
+        [
+         65,
+         24.6,
+         5
+        ],
+        [
+         65.5,
+         69.2,
+         5
+        ],
+        [
+         34.2,
+         45.2,
+         5
+        ]
+       ]
+      }
+     }
     },
     {
      "key": "י",
      "i": 9,
      "name": "Iod",
      "translit": "y",
-     "sign": null
+     "sign": {
+      "glyph": {
+       "d": "M 29.9 32.4 L 29.9 24 L 69.6 24.4 L 68.6 71.4 M 43.6 24.2 L 43.6 32 M 56.4 24.3 L 56.4 32"
+      }
+     }
     },
     {
      "key": "כ",
      "i": 10,
      "name": "Caph",
      "translit": "k",
-     "sign": null
+     "sign": {
+      "glyph": {
+       "d": "M 67.4 67.8 L 68.6 25.1 L 31.3 24.6 C 31.5 34.3 42.7 34.3 42.9 24.7"
+      }
+     }
     },
     {
      "key": "ל",
      "i": 11,
      "name": "Lamed",
      "translit": "l",
-     "sign": null
+     "sign": {
+      "glyph": {
+       "d": "M 41.1 24.5 L 65.8 24.5 L 48.2 38.2 M 53 34.6 C 57 36 61.5 35.6 63.4 38.2 C 65 41 63.5 47 60 52 C 57 56.2 52 60.5 47.2 63.2 M 54.2 60 C 58.5 61 60 65 59.2 68.6 C 58.4 71.5 54.5 72.3 49 72.2",
+       "rings": [
+        [
+         36.1,
+         24.5,
+         5
+        ]
+       ]
+      }
+     }
     },
     {
      "key": "מ",
      "i": 12,
      "name": "Mem",
      "translit": "m",
-     "sign": null
+     "sign": {
+      "glyph": {
+       "d": "M 51.9 24 L 76 24.5 L 78 72.2 L 23.4 72.2 Z"
+      }
+     }
     },
     {
      "key": "נ",
      "i": 13,
      "name": "Nun",
      "translit": "n",
-     "sign": null
+     "sign": {
+      "glyph": {
+       "d": "M 35.2 25.3 L 71.4 24.3 L 43.1 66.7",
+       "rings": [
+        [
+         30.2,
+         25.4,
+         5
+        ],
+        [
+         40.3,
+         70.9,
+         5
+        ]
+       ]
+      }
+     }
     },
     {
      "key": "ס",
      "i": 14,
      "name": "Samech",
      "translit": "s",
-     "sign": null
+     "sign": {
+      "glyph": {
+       "d": "M 42.6 35.2 L 65.8 24.8 L 66.4 69.6 L 45.3 74.7",
+       "rings": [
+        [
+         38,
+         37.2,
+         5
+        ],
+        [
+         40.4,
+         75.9,
+         5
+        ]
+       ]
+      }
+     }
     },
     {
      "key": "ע",
      "i": 15,
      "name": "Ain",
      "translit": "ʿ",
-     "sign": null
+     "sign": {
+      "glyph": {
+       "d": "M 49.9 33.7 L 50.5 60.8",
+       "rings": [
+        [
+         49.8,
+         28.7,
+         5
+        ]
+       ]
+      }
+     }
     },
     {
      "key": "פ",
      "i": 16,
      "name": "Pe",
      "translit": "p",
-     "sign": null
+     "sign": {
+      "glyph": {
+       "d": "M 32.2 32.6 L 80 73.8 L 28.4 72.7 M 71.6 33.8 L 55.4 52.6",
+       "rings": [
+        [
+         28.4,
+         29.3,
+         5
+        ],
+        [
+         74.1,
+         29.3,
+         5
+        ],
+        [
+         23.4,
+         72.6,
+         5
+        ]
+       ]
+      }
+     }
     },
     {
      "key": "צ",
      "i": 17,
      "name": "Zade",
      "translit": "ṣ",
-     "sign": null
+     "sign": {
+      "glyph": {
+       "d": "M 29.2 73.3 L 31.7 28.6 L 70.4 28.8 L 69.6 46 M 51.8 28.7 L 51.5 47"
+      }
+     }
     },
     {
      "key": "ק",
      "i": 18,
      "name": "Kuph",
      "translit": "q",
-     "sign": null
+     "sign": {
+      "glyph": {
+       "d": "M 48.1 31.6 L 27.1 65.4 M 54.6 30.6 L 74.5 63.8 M 29.5 69.5 L 71.4 68.6",
+       "rings": [
+        [
+         50.7,
+         27.4,
+         5
+        ],
+        [
+         24.5,
+         69.6,
+         5
+        ],
+        [
+         76.4,
+         68.5,
+         5
+        ]
+       ]
+      }
+     }
     },
     {
      "key": "ר",
      "i": 19,
      "name": "Res",
      "translit": "r",
-     "sign": null
+     "sign": {
+      "glyph": {
+       "d": "M 69 24.6 L 68.7 37 C 68.4 42 66 46 65 50 C 63.5 56 58.5 61 53 64.2 C 46 67.8 37 68.6 28.8 67.6 M 66.4 43.2 C 63 39.6 57.2 39 55.2 43.2 C 53.6 46.8 57.4 49.2 61 48.9 C 62.6 48.8 64.1 48.3 65.3 47.7"
+      }
+     }
     },
     {
      "key": "ש",
      "i": 20,
      "name": "Schin",
      "translit": "š",
-     "sign": null
+     "sign": {
+      "glyph": {
+       "d": "M 28.7 30.9 L 46.8 66.6 L 70.8 30.9 M 37.6 48.4 C 43 41.5 49.4 34 49.3 29 C 49.2 25.4 46.4 24.3 44.3 24.4 C 41.4 24.6 39.5 27.2 39.6 31.4",
+       "rings": [
+        [
+         26.4,
+         26.4,
+         5
+        ],
+        [
+         73.6,
+         26.7,
+         5
+        ]
+       ]
+      }
+     }
     },
     {
      "key": "ת",
      "i": 21,
      "name": "Tau",
      "translit": "t",
-     "sign": null
+     "sign": {
+      "glyph": {
+       "d": "M 77.6 39.3 L 77.6 27 L 25.8 26.8 L 25.8 71 L 83 71.1 C 88.4 71.1 89.2 78.2 84.4 78.4 C 81.8 78.5 80.1 77.4 79.8 76.4 M 12.8 57.3 L 12.8 50 L 54.3 50.1 L 54.3 42"
+      }
+     }
     }
    ],
    "finals": {
@@ -2422,7 +4636,7 @@ export default {
    "slug": "aiq-bekar",
    "title": "The Nine Chambers",
    "short": "Nine Chambers",
-   "status": "forms-pending",
+   "status": "ready",
    "direction": "rtl",
    "from": "hebrew",
    "convention": "The nine chambers write the Hebrew letters one by one, so the tool takes Hebrew only, with any pointing removed, and writes each letter as the figure of its chamber with its points. The five finals are letters in their own right here, each with a chamber and three points, so a final is written with its own sign, never with that of the ordinary letter. The result is the extended writing of Agrippa’s first Michael, one figure for each letter. No Latin spelling is turned into Hebrew.",
@@ -2434,189 +4648,297 @@ export default {
      "i": 0,
      "name": "Aleph",
      "translit": "ʾ",
-     "sign": null
+     "sign": {
+      "glyph": {
+       "d": "M 34.4 32.2 L 34.5 73.7 L 68.0 76.0 M 56.7 25.2 L 58.9 23.9"
+      }
+     }
     },
     {
      "key": "ב",
      "i": 1,
      "name": "Bet",
      "translit": "b",
-     "sign": null
+     "sign": {
+      "glyph": {
+       "d": "M 29.2 32.2 L 30.4 74.7 L 70.3 74.7 L 69.6 32.7 M 51.9 24.6 L 54.1 23.3"
+      }
+     }
     },
     {
      "key": "ג",
      "i": 2,
      "name": "Gimel",
      "translit": "g",
-     "sign": null
+     "sign": {
+      "glyph": {
+       "d": "M 32.4 74.9 L 66.6 74.6 L 65.5 29.5 M 48.2 22.3 L 50.5 21.0"
+      }
+     }
     },
     {
      "key": "ד",
      "i": 3,
      "name": "Dalet",
      "translit": "d",
-     "sign": null
+     "sign": {
+      "glyph": {
+       "d": "M 66.8 32.9 L 35.0 31.7 L 33.9 75.9 L 67.0 76.3 M 45.9 23.6 L 48.2 22.3"
+      }
+     }
     },
     {
      "key": "ה",
      "i": 4,
      "name": "He",
      "translit": "h",
-     "sign": null
+     "sign": {
+      "glyph": {
+       "d": "M 29.1 30.9 L 70.6 30.8 L 70.2 77.0 L 29.4 77.2 Z M 48.9 23.1 L 51.1 21.8"
+      }
+     }
     },
     {
      "key": "ו",
      "i": 5,
      "name": "Vav",
      "translit": "w",
-     "sign": null
+     "sign": {
+      "glyph": {
+       "d": "M 32.0 30.4 L 68.1 31.0 L 67.5 77.3 L 30.8 76.8 M 48.9 22.3 L 51.1 21.0"
+      }
+     }
     },
     {
      "key": "ז",
      "i": 6,
      "name": "Zayin",
      "translit": "z",
-     "sign": null
+     "sign": {
+      "glyph": {
+       "d": "M 34.1 78.6 L 33.5 29.5 L 67.7 28.8 M 48.9 20.3 L 51.1 19.0"
+      }
+     }
     },
     {
      "key": "ח",
      "i": 7,
      "name": "Chet",
      "translit": "ḥ",
-     "sign": null
+     "sign": {
+      "glyph": {
+       "d": "M 27.9 81.5 L 29.4 31.4 L 71.6 32.3 L 70.7 80.2 M 48.9 23.3 L 51.1 22.0"
+      }
+     }
     },
     {
      "key": "ט",
      "i": 8,
      "name": "Tet",
      "translit": "ṭ",
-     "sign": null
+     "sign": {
+      "glyph": {
+       "d": "M 28.0 31.6 L 68.1 31.7 L 69.6 79.9 M 48.9 21.9 L 51.1 20.6"
+      }
+     }
     },
     {
      "key": "י",
      "i": 9,
      "name": "Yod",
      "translit": "y",
-     "sign": null
+     "sign": {
+      "glyph": {
+       "d": "M 34.4 32.2 L 34.5 73.7 L 68.0 76.0 M 48.8 25.7 L 51.0 24.4 M 59.9 25.7 L 62.2 24.4"
+      }
+     }
     },
     {
      "key": "כ",
      "i": 10,
      "name": "Kaf",
      "translit": "k",
-     "sign": null
+     "sign": {
+      "glyph": {
+       "d": "M 29.2 32.2 L 30.4 74.7 L 70.3 74.7 L 69.6 32.7 M 46.7 24.6 L 49.0 23.3 M 57.0 24.6 L 59.3 23.3"
+      }
+     }
     },
     {
      "key": "ל",
      "i": 11,
      "name": "Lamed",
      "translit": "l",
-     "sign": null
+     "sign": {
+      "glyph": {
+       "d": "M 32.4 74.9 L 66.6 74.6 L 65.5 29.5 M 43.4 22.3 L 45.7 21.0 M 53.0 22.3 L 55.2 21.0"
+      }
+     }
     },
     {
      "key": "מ",
      "i": 12,
      "name": "Mem",
      "translit": "m",
-     "sign": null
+     "sign": {
+      "glyph": {
+       "d": "M 66.8 32.9 L 35.0 31.7 L 33.9 75.9 L 67.0 76.3 M 41.1 23.6 L 43.4 22.3 M 50.7 23.6 L 53.0 22.3"
+      }
+     }
     },
     {
      "key": "נ",
      "i": 13,
      "name": "Nun",
      "translit": "n",
-     "sign": null
+     "sign": {
+      "glyph": {
+       "d": "M 29.1 30.9 L 70.6 30.8 L 70.2 77.0 L 29.4 77.2 Z M 43.9 23.1 L 46.1 21.8 M 53.9 23.1 L 56.1 21.8"
+      }
+     }
     },
     {
      "key": "ס",
      "i": 14,
      "name": "Samekh",
      "translit": "s",
-     "sign": null
+     "sign": {
+      "glyph": {
+       "d": "M 32.0 30.4 L 68.1 31.0 L 67.5 77.3 L 30.8 76.8 M 43.7 22.3 L 46.0 21.0 M 54.0 22.3 L 56.3 21.0"
+      }
+     }
     },
     {
      "key": "ע",
      "i": 15,
      "name": "Ayin",
      "translit": "ʿ",
-     "sign": null
+     "sign": {
+      "glyph": {
+       "d": "M 34.1 78.6 L 33.5 29.5 L 67.7 28.8 M 43.6 20.3 L 45.8 19.0 M 54.2 20.3 L 56.4 19.0"
+      }
+     }
     },
     {
      "key": "פ",
      "i": 16,
      "name": "Pe",
      "translit": "p",
-     "sign": null
+     "sign": {
+      "glyph": {
+       "d": "M 27.9 81.5 L 29.4 31.4 L 71.6 32.3 L 70.7 80.2 M 43.6 23.3 L 45.9 22.0 M 54.1 23.3 L 56.4 22.0"
+      }
+     }
     },
     {
      "key": "צ",
      "i": 17,
      "name": "Tsadi",
      "translit": "ṣ",
-     "sign": null
+     "sign": {
+      "glyph": {
+       "d": "M 28.0 31.6 L 68.1 31.7 L 69.6 79.9 M 43.6 21.9 L 45.8 20.6 M 54.2 21.9 L 56.4 20.6"
+      }
+     }
     },
     {
      "key": "ק",
      "i": 18,
      "name": "Qof",
      "translit": "q",
-     "sign": null
+     "sign": {
+      "glyph": {
+       "d": "M 34.4 32.2 L 34.5 73.7 L 68.0 76.0 M 43.2 25.7 L 45.4 24.4 M 54.3 25.7 L 56.6 24.4 M 65.5 25.7 L 67.7 24.4"
+      }
+     }
     },
     {
      "key": "ר",
      "i": 19,
      "name": "Resh",
      "translit": "r",
-     "sign": null
+     "sign": {
+      "glyph": {
+       "d": "M 29.2 32.2 L 30.4 74.7 L 70.3 74.7 L 69.6 32.7 M 41.6 24.6 L 43.8 23.3 M 51.9 24.6 L 54.1 23.3 M 62.2 24.6 L 64.4 23.3"
+      }
+     }
     },
     {
      "key": "ש",
      "i": 20,
      "name": "Shin",
      "translit": "š",
-     "sign": null
+     "sign": {
+      "glyph": {
+       "d": "M 32.4 74.9 L 66.6 74.6 L 65.5 29.5 M 38.6 22.3 L 40.9 21.0 M 48.2 22.3 L 50.5 21.0 M 57.8 22.3 L 60.0 21.0"
+      }
+     }
     },
     {
      "key": "ת",
      "i": 21,
      "name": "Tav",
      "translit": "t",
-     "sign": null
+     "sign": {
+      "glyph": {
+       "d": "M 66.8 32.9 L 35.0 31.7 L 33.9 75.9 L 67.0 76.3 M 36.3 23.6 L 38.6 22.3 M 45.9 23.6 L 48.2 22.3 M 55.5 23.6 L 57.7 22.3"
+      }
+     }
     },
     {
      "key": "ך",
      "i": 22,
      "name": "Final Kaf",
      "translit": "k",
-     "sign": null
+     "sign": {
+      "glyph": {
+       "d": "M 29.1 30.9 L 70.6 30.8 L 70.2 77.0 L 29.4 77.2 Z M 38.9 23.1 L 41.1 21.8 M 48.9 23.1 L 51.1 21.8 M 58.9 23.1 L 61.1 21.8"
+      }
+     }
     },
     {
      "key": "ם",
      "i": 23,
      "name": "Final Mem",
      "translit": "m",
-     "sign": null
+     "sign": {
+      "glyph": {
+       "d": "M 32.0 30.4 L 68.1 31.0 L 67.5 77.3 L 30.8 76.8 M 38.6 22.3 L 40.9 21.0 M 48.9 22.3 L 51.1 21.0 M 59.1 22.3 L 61.4 21.0"
+      }
+     }
     },
     {
      "key": "ן",
      "i": 24,
      "name": "Final Nun",
      "translit": "n",
-     "sign": null
+     "sign": {
+      "glyph": {
+       "d": "M 34.1 78.6 L 33.5 29.5 L 67.7 28.8 M 38.3 20.3 L 40.6 19.0 M 48.9 20.3 L 51.1 19.0 M 59.4 20.3 L 61.7 19.0"
+      }
+     }
     },
     {
      "key": "ף",
      "i": 25,
      "name": "Final Pe",
      "translit": "p",
-     "sign": null
+     "sign": {
+      "glyph": {
+       "d": "M 27.9 81.5 L 29.4 31.4 L 71.6 32.3 L 70.7 80.2 M 38.4 23.3 L 40.6 22.0 M 48.9 23.3 L 51.1 22.0 M 59.4 23.3 L 61.6 22.0"
+      }
+     }
     },
     {
      "key": "ץ",
      "i": 26,
      "name": "Final Tsadi",
      "translit": "ṣ",
-     "sign": null
+     "sign": {
+      "glyph": {
+       "d": "M 28.0 31.6 L 68.1 31.7 L 69.6 79.9 M 38.3 21.9 L 40.5 20.6 M 48.9 21.9 L 51.1 20.6 M 59.5 21.9 L 61.7 20.6"
+      }
+     }
     }
    ],
    "finals": {
