@@ -30,6 +30,9 @@ export default function Overview() {
     const pts = data.series.points;
     const spark = (key) => <Sparkline values={pts.map((p) => p[key])} />;
     const prev = (kpi, f = int) => (compare ? `previous ${f(kpi.previous)}` : null);
+    // Ratios (per visit, bounce, length) mean nothing against a period with no visits.
+    const hasPrev = k.visits.previous > 0;
+    const ratioPrev = (kpi, f) => (compare ? (hasPrev ? `previous ${f(kpi.previous)}` : 'no visits before') : null);
     const metricLabel = METRICS.find((m) => m.value === metric).label;
 
     return (
@@ -41,10 +44,10 @@ export default function Overview() {
                     <Kpi label="Visitors" value={int(k.visitors.value)} kpi={compare && k.visitors} previousText={prev(k.visitors)} spark={spark('visitors')} />
                     <Kpi label="Visits" value={int(k.visits.value)} kpi={compare && k.visits} previousText={prev(k.visits)} spark={spark('visits')} />
                     <Kpi label="Pageviews" value={int(k.pageviews.value)} kpi={compare && k.pageviews} previousText={prev(k.pageviews)} spark={spark('pageviews')} />
-                    <Kpi label="Views per visit" value={dec2(k.views_per_visit.value)} kpi={compare && k.views_per_visit} previousText={prev(k.views_per_visit, dec2)} />
-                    <Kpi label="Bounce rate" value={pct(k.bounce_rate.value)} kpi={compare && k.bounce_rate} kind="points" goodWhenUp={false}
-                        previousText={prev(k.bounce_rate, pct)} note="visits of one page" />
-                    <Kpi label="Average visit" value={duration(k.avg_visit_s.value)} kpi={compare && k.avg_visit_s} previousText={prev(k.avg_visit_s, duration)} />
+                    <Kpi label="Views per visit" value={dec2(k.views_per_visit.value)} kpi={compare && hasPrev && k.views_per_visit} previousText={ratioPrev(k.views_per_visit, dec2)} />
+                    <Kpi label="Bounce rate" value={pct(k.bounce_rate.value)} kpi={compare && hasPrev && k.bounce_rate} kind="points" goodWhenUp={false}
+                        previousText={ratioPrev(k.bounce_rate, pct)} note="visits of one page" />
+                    <Kpi label="Average visit" value={duration(k.avg_visit_s.value)} kpi={compare && hasPrev && k.avg_visit_s} previousText={ratioPrev(k.avg_visit_s, duration)} />
                     <Kpi live label="Live now" value={int(data.live.visitors)}
                         note={<>{int(data.live.pageviews)} pageviews in the last 5 min · <button type="button" className="adm-link" onClick={() => go({ v: 'visitors' })}>watch</button></>} />
                 </dl>

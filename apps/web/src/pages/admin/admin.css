@@ -162,8 +162,13 @@
 }
 .adm-back:hover { text-decoration: underline; }
 
-.adm-loadable { transition: opacity 0.2s ease; }
-.adm-loadable.is-loading { opacity: 0.55; }
+.adm-loadable > * { transition: opacity 0.2s ease; }
+.adm-loadable.is-loading > :not(.adm-updating) { opacity: 0.55; }
+.adm-updating {
+  position: fixed; right: 16px; bottom: 16px; z-index: 20; margin: 0; padding: 6px 12px;
+  background: var(--panel-2); border: 1px solid var(--line); border-radius: 3px;
+  font-family: var(--sans); font-size: 0.8rem; color: var(--text-2); box-shadow: 0 6px 20px rgba(0, 0, 0, 0.45);
+}
 
 .adm-loading { display: flex; align-items: center; gap: 10px; color: var(--text-2); margin: 24px 0; }
 .adm-spinner {

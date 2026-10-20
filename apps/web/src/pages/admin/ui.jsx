@@ -25,7 +25,12 @@ export function Card({ title, kicker, actions, children, className = '', id, hea
 
 /** Wraps a section's content: dims it while fresh numbers load, never blanks it. */
 export function Loadable({ loading, children }) {
-    return <div className={`adm-loadable${loading ? ' is-loading' : ''}`} aria-busy={loading ? 'true' : 'false'}>{children}</div>;
+    return (
+        <div className={`adm-loadable${loading ? ' is-loading' : ''}`} aria-busy={loading ? 'true' : 'false'}>
+            {loading && <p className="adm-updating" role="status"><span className="adm-spinner" aria-hidden="true" />Updating…</p>}
+            {children}
+        </div>
+    );
 }
 
 export function Loading({ label = 'Loading…' }) {
