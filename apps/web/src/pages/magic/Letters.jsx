@@ -1,6 +1,6 @@
 import React, { useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import MagicGlyph, { Sign, Unstruck } from './MagicGlyph';
+import MagicGlyph, { Sign, TableMark, Unstruck } from './MagicGlyph';
 import { sharedNote } from './sign';
 import { isolate } from './Bidi';
 
@@ -34,17 +34,12 @@ const POEMS = [['oldEnglish', 'Old English'], ['norwegian', 'Norwegian'], ['icel
 // not the unstruck seal, which marks a form still being traced.
 // (A geomantic figure's `rows` is a flat list of its point counts, not a table.)
 const isTable = (l) => Array.isArray(l.rows) && Array.isArray(l.rows[0]);
-
-function TableMark({ side }) {
-    const lo = 16, hi = 84, step = (hi - lo) / side;
-    const lines = Array.from({ length: side - 1 }, (_, i) => lo + step * (i + 1));
-    return (
-        <svg className="mg-glyph mg-table-mark" viewBox="0 0 100 100" fill="none" stroke="currentColor" aria-hidden="true">
-            <rect x={lo} y={lo} width={hi - lo} height={hi - lo} strokeWidth="4.5" />
-            {lines.map((v) => <path key={v} d={`M ${v} ${lo} V ${hi} M ${lo} ${v} H ${hi}`} strokeWidth={side > 6 ? 1.6 : 2.4} />)}
-        </svg>
-    );
-}
+// What the plaque says of a letter's form, and what is announced when the
+// selection changes.
+const formOf = (letter) => (letter.glyph ? `drawn — ${reservation(letter)}`
+    : letter.char ? `set in the font — ${reservation(letter)}`
+        : isTable(letter) ? 'a table of numbers, given below; not a figure'
+            : 'not drawn — the note says why');
 
 // The sign a card or plaque wears: the table mark, the drawn or set sign, or
 // (on a ready page) the kit's gap mark.
@@ -106,12 +101,12 @@ function ValueLink({ value, keyedTo, hallIndex }) {
 function Plaque({ letter, mod, keyedTo, hebrewKey, hallIndex, formless }) {
     const drawn = Boolean(letter.glyph);
     const table = isTable(letter);
-    const form = drawn ? `drawn — ${reservation(letter)}`
-        : letter.char ? `set in the font — ${reservation(letter)}`
-            : table ? 'a table of numbers, given below; not a figure'
-                : 'not drawn — the note says why';
+    const form = formOf(letter);
+    // not a live region: the whole entry (a long note, a table of up to 81
+    // numbers) would be read out at every step of the arrow keys. A short
+    // line announces the change (LetterGrid), and the plaque is read at will.
     return (
-        <aside className={`edu-letter-plaque mg-plaque${formless ? ' is-formless' : ''}`} aria-live="polite">
+        <div className={`edu-letter-plaque mg-plaque${formless ? ' is-formless' : ''}`}>
             {!formless && (
                 <div className="edu-plaque-glyph edu-glyph" aria-hidden="true">
                     <LetterSign letter={letter} />
@@ -159,7 +154,7 @@ function Plaque({ letter, mod, keyedTo, hebrewKey, hallIndex, formless }) {
                     </div>
                 )}
             </div>
-        </aside>
+        </div>
     );
 }
 
@@ -170,8 +165,11 @@ export function LetterGrid({ mod, letters, keyedTo = 'none', direction = 'ltr', 
     });
     // Where the plaque moves (below the group that holds the selection), the
     // page above a card can grow or shrink; `hold` keeps the card the reader
-    // acted on where it was on the screen, and `arrive` brings a letter named
-    // by the address into view and puts the keyboard on it.
+    // acted on where it was on the screen — if it was on the screen: a card
+    // the arrow keys reach below the old plaque is not held off screen — and
+    // `arrive` brings a letter named by the address into view and puts the
+    // keyboard on it. Every scroll here is instant: the page's smooth scrolling
+    // would leave the measurements taken just after it reading the old place.
     const hold = useRef(null);
     const arrive = useRef(null);
     // A search result arrives as a hash, on a cold load or as a second result
@@ -200,17 +198,33 @@ export function LetterGrid({ mod, letters, keyedTo = 'none', direction = 'ltr', 
             return;
         }
         if (hold.current && hold.current.i === selected) {
-            const shift = el.getBoundingClientRect().top - hold.current.top;
+            const { top, moved } = hold.current;
             hold.current = null;
-            if (Math.abs(shift) > 1) window.scrollBy(0, shift);
-            // a card the arrow keys reached off screen is brought into view
+            if (top != null) {
+                const shift = el.getBoundingClientRect().top - top;
+                if (Math.abs(shift) > 1) window.scrollBy({ top: shift, behavior: 'instant' });
+            }
+            // a card the arrow keys reach off screen is brought into view; in a
+            // grouped grid, where the plaque follows the selection from group
+            // to group, it is brought up with its plaque under it (the card's
+            // scroll margin keeps it clear of the sticky header)
             const r = el.getBoundingClientRect();
-            if (r.top < 0 || r.bottom > window.innerHeight) el.scrollIntoView({ block: 'nearest' });
+            const next = el.closest('.mg-letter-group')?.nextElementSibling;
+            const plaque = next && next.classList.contains('mg-plaque') ? next : null;
+            // (only when the arrow keys have moved the plaque to another group;
+            // a plaque showing less than its heading counts as off screen)
+            const plaqueOff = moved && plaque && plaque.getBoundingClientRect().top > window.innerHeight - 160;
+            if (r.top < 0 || r.bottom > window.innerHeight || plaqueOff) {
+                el.scrollIntoView({ block: plaque ? 'start' : 'nearest', behavior: 'instant' });
+            }
         }
     }, [selected]);
-    const choose = (i) => {
+    const choose = (i, keys = false) => {
         const el = document.getElementById(`mg-letter-${i}`);
-        hold.current = el ? { i, top: el.getBoundingClientRect().top } : null;
+        const r = el ? el.getBoundingClientRect() : null;
+        const onScreen = r && r.bottom > 0 && r.top < window.innerHeight;
+        const moved = keys && Boolean(mod.groups) && letters[i]?.group !== letters[selected]?.group;
+        hold.current = { i, top: onScreen ? r.top : null, moved };
         setSelected(i);
     };
 
@@ -255,7 +269,7 @@ export function LetterGrid({ mod, letters, keyedTo = 'none', direction = 'ltr', 
         else if (e.key === 'End') next = last;
         if (next == null || next === selected) return;
         e.preventDefault();
-        choose(next);
+        choose(next, true);
         document.getElementById(`mg-letter-${next}`)?.focus({ preventScroll: true });
     };
 
@@ -279,19 +293,32 @@ export function LetterGrid({ mod, letters, keyedTo = 'none', direction = 'ltr', 
             {(() => {
                 // a name with a gloss in brackets ("Samech (the second sign)")
                 // sets the gloss as a small line under the name, so one long
-                // label does not stretch its whole row of cards
+                // label does not stretch its whole row of cards. A long word
+                // is set down only as far as its card needs (magic.css reads
+                // its length as --mg-word).
                 const [, main, sub] = /^(.+?)\s*\((.+)\)$/.exec(String(l.name)) || [null, String(l.name), null];
+                const longest = Math.max(...main.split(/\s+/).map((w) => [...w].length));
+                const long = longest >= (formless ? 9 : 10);
                 return (
-                    <span className={`edu-letter-name${main.split(/\s+/).some((w) => w.length >= (formless ? 9 : 10)) ? ' is-long' : ''}`}>
+                    <span className={`edu-letter-name${long ? ' is-long' : ''}`} style={long ? { '--mg-word': longest } : undefined}>
                         {main}{sub && <>{' '}<span className="mg-letter-sub">{sub}</span></>}
                     </span>
                 );
             })()}
-            <span className="edu-letter-translit">{l.translit || l.planet || l.codepoint || ''}</span>
+            {/* a transliteration that only repeats the name (the Voynich
+                glyphs, named in EVA) is not printed or read out twice */}
+            <span className="edu-letter-translit">{l.translit && String(l.translit).toLowerCase() === String(l.name).toLowerCase() ? '' : l.translit || l.planet || l.codepoint || ''}</span>
         </button>
     );
     const plaque = letter && (
         <Plaque letter={letter} mod={mod} keyedTo={keyedTo} hebrewKey={hebrewKeyOf(letter)} hallIndex={hallIndexOf(letter)} formless={formless} />
+    );
+    // one short line, in a live region that stays put while the plaque moves
+    // from group to group, says what was chosen
+    const announce = (
+        <span className="mg-live" aria-live="polite" aria-atomic="true">
+            {letter ? `${letter.name}${formless ? '' : ` — ${formOf(letter)}`}` : ''}
+        </span>
     );
 
     // One alphabet, one listbox. A grouped one is a listbox per group (each
@@ -315,6 +342,7 @@ export function LetterGrid({ mod, letters, keyedTo = 'none', direction = 'ltr', 
                     {groups[0].items.map((it) => card(it))}
                 </div>
                 {plaque}
+                {announce}
             </>
         );
     }
@@ -344,6 +372,7 @@ export function LetterGrid({ mod, letters, keyedTo = 'none', direction = 'ltr', 
                     </React.Fragment>
                 );
             })}
+            {announce}
         </div>
     );
 }

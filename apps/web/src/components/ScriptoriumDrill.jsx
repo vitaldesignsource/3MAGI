@@ -1,8 +1,11 @@
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import { capitalise, numberWord } from '../pages/magic/words';
 
 // Recitation — a short self-test at the foot of each language hall. Ten
-// letters shown glyph-first; the student names each from four choices. No
-// telemetry, no persistence: a slate, not a ledger.
+// letters shown glyph-first (fewer where the hall has fewer); the student
+// names each from four choices. No telemetry, no persistence: a slate, not a
+// ledger. A page whose units are not letters (the Magical Scriptorium's
+// signs, staves and glyphs) names them with `unit`, { one, many }.
 
 const ROUNDS = 10;
 const CHOICES = 4;
@@ -36,14 +39,19 @@ function buildQuiz(letters, mode) {
 }
 
 // The house's verdicts, sternest first.
-const VERDICTS = [
+const VERDICTS = (many, whole) => [
     [1.0, 'Word-perfect. The hall has nothing more to teach you here — go on to the readings.'],
-    [0.8, 'A strong recitation. A few letters still hold out against you.'],
+    [0.8, `A strong recitation. A few ${many} still hold out against you.`],
     [0.5, 'The shapes are becoming familiar. Return tomorrow; memory is a habit.'],
-    [0.0, 'Every scribe began exactly here. Walk the alphabet once more, then try again.'],
+    [0.0, `Every scribe began exactly here. Walk ${whole} once more, then try again.`],
 ];
 
-function ScriptoriumDrill({ letters, langTitle, rtl }) {
+const LETTERS = { one: 'letter', many: 'letters' };
+// a name that opens with an article ("The seal of Mars") inside a sentence
+const inSentence = (name) => String(name).replace(/^The /, 'the ');
+
+function ScriptoriumDrill({ letters, langTitle, rtl, unit = null }) {
+    const { one, many } = unit || LETTERS;
     const [quiz, setQuiz] = useState(null);
     const [mode, setMode] = useState('name');
     const [round, setRound] = useState(0);
@@ -71,8 +79,8 @@ function ScriptoriumDrill({ letters, langTitle, rtl }) {
     const verdict = useMemo(() => {
         if (!done) return null;
         const ratio = score / quiz.length;
-        return VERDICTS.find(([min]) => ratio >= min)[1];
-    }, [done, score, quiz]);
+        return VERDICTS(many, unit ? `the ${many}` : 'the alphabet').find(([min]) => ratio >= min)[1];
+    }, [done, score, quiz, many, unit]);
 
     const pick = (name) => {
         if (picked != null) return;
@@ -99,23 +107,25 @@ function ScriptoriumDrill({ letters, langTitle, rtl }) {
     }, [quiz, round, picked, done]);
 
     if (letters.length < CHOICES + 1) return null;
+    // how many rounds a recitation has: ten, or every sign where there are fewer
+    const rounds = Math.min(ROUNDS, letters.filter((l) => !l.archaic).length);
 
     return (
         <section className="edu-drill" aria-labelledby="edu-drill-heading">
             <header className="edu-section-head">
                 <p className="kicker">Recitation</p>
-                <h2 id="edu-drill-heading">Say the letters</h2>
-                <p>Ten glyphs, four names apiece. Nothing is recorded — this slate wipes itself.</p>
+                <h2 id="edu-drill-heading">Say the {many}</h2>
+                <p>{capitalise(numberWord(rounds))} {unit ? many : 'glyphs'}, four names apiece. Nothing is recorded — this slate wipes itself.</p>
             </header>
 
             {!quiz && (
                 <div className="edu-drill-stage">
                     <div className="edu-drill-modes">
                         <button type="button" className="edu-drill-start" onClick={() => start('name')}>
-                            Name the letters
+                            Name the {many}
                         </button>
                         <button type="button" className="edu-drill-start" onClick={() => start('find')}>
-                            Find the letters
+                            Find the {many}
                         </button>
                     </div>
                     <p className="edu-drill-modes-note">Shown the glyph, give its name — or shown the name, pick the glyph. The second is the skill that reading requires.</p>
@@ -137,7 +147,7 @@ function ScriptoriumDrill({ letters, langTitle, rtl }) {
                             {current.letter.glyph}
                         </div>
                     )}
-                    <div className="edu-drill-options" role="group" aria-label="Which letter is this?">
+                    <div className="edu-drill-options" role="group" aria-label={`Which ${one} is this?`}>
                         {current.options.map((o, oi) => {
                             const isRight = picked != null && o.key === current.letter.name;
                             const isWrongPick = picked === o.key && o.key !== current.letter.name;
@@ -160,12 +170,12 @@ function ScriptoriumDrill({ letters, langTitle, rtl }) {
                     {picked != null && (
                         <div className="edu-drill-after" aria-live="polite">
                             <p className="edu-drill-answer">
-                                {picked === current.letter.name ? 'Named.' : `It is ${current.letter.name}.`}
+                                {picked === current.letter.name ? 'Named.' : `It is ${inSentence(current.letter.name)}.`}
                                 {' '}<em>{current.letter.translit}</em>
                                 {current.letter.value != null ? ` · ${current.letter.value}` : ''}
                             </p>
                             <button type="button" className="edu-drill-next" onClick={next} ref={nextButton}>
-                                {round + 1 === quiz.length ? 'Finish' : 'Next letter'}
+                                {round + 1 === quiz.length ? 'Finish' : `Next ${one}`}
                             </button>
                         </div>
                     )}
@@ -181,7 +191,7 @@ function ScriptoriumDrill({ letters, langTitle, rtl }) {
                             Recite {langTitle} again
                         </button>
                         <button type="button" className="edu-drill-start" onClick={() => start(mode === 'name' ? 'find' : 'name')}>
-                            {mode === 'name' ? 'Try finding the letters' : 'Try naming them'}
+                            {mode === 'name' ? `Try finding the ${many}` : 'Try naming them'}
                         </button>
                     </div>
                 </div>

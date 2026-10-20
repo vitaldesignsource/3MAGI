@@ -70,6 +70,7 @@ export default {
         caption: 'The seven planets of the ancients: Sun, Moon, Mercury, Venus, Mars, Jupiter, Saturn.',
     },
     lettersTitle: 'The Signs',
+    unitNoun: { one: 'sign', many: 'signs' },
     scriptNote: 'Fifty-one signs in seven groups. The first thirty-five are encoded in Unicode and set as text — Mercury twice, as planet and as principle, since alchemy uses one sign for both. The sixteen geomantic figures are encoded too, since Unicode 17.0, but the site’s face does not carry them: they are drawn from Agrippa’s table of 1533, each point as the asterisk printed there, and each is described in words. Their zodiac attributions are deliberately left out: they differ between Agrippa, the geomancy ascribed to Gerard of Cremona, and later tables.',
     groups: [
         { key: 'planet', label: 'The seven planets', note: 'and the seven metals' },

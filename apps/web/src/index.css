@@ -10936,6 +10936,18 @@ h3 {
 }
 .edu-search-results a:hover { background: rgba(179, 139, 70, 0.09); }
 .edu-search-native { font-size: 1.35rem; color: #ecd9ae; line-height: 1.5; max-width: 9rem; }
+/* A drawn sign of the Magical Scriptorium (or a table's ruled square) has no
+   baseline of its own: the row aligns to the top, and the title's first line
+   is set down so that it stands beside the sign's middle. The sign's box is
+   1.4em of the 1.35rem cell, scaled as its page scales it (--mg-scale, on the
+   row); the title's line is 1.5rem. */
+.edu-search-results a.has-sign { align-items: start; --sign-h: calc(1.89rem * var(--mg-scale, 1)); }
+.edu-search-results a.has-sign .edu-search-native { line-height: 0; }
+.edu-search-results a.has-sign .edu-search-native .mg-glyph { display: block; }
+.edu-search-results a.has-sign .edu-search-native .mg-table-mark { opacity: 0.7; }
+.edu-search-results a.has-sign .edu-search-label { line-height: 1.5rem; }
+.edu-search-results a.has-sign .edu-search-body,
+.edu-search-results a.has-sign .edu-search-tag { padding-top: max(0rem, calc((var(--sign-h) - 1.5rem) / 2)); }
 .edu-search-body { display: flex; flex-direction: column; gap: 0.12rem; min-width: 0; }
 .edu-search-label { color: #f0e9da; font-size: 1rem; }
 .edu-search-sub {
@@ -10958,6 +10970,9 @@ h3 {
 }
 @media (max-width: 640px) {
   .edu-search-results a { grid-template-columns: 1fr; }
+  /* a drawn sign keeps its place beside the title; the tag goes under it */
+  .edu-search-results a.has-sign { grid-template-columns: auto minmax(0, 1fr); }
+  .edu-search-results a.has-sign .edu-search-tag { grid-column: 2; padding-top: 0; }
   .edu-search-tag { flex-direction: row; gap: 0.5rem; align-items: baseline; }
   .edu-search-box { flex-wrap: wrap; }
   .edu-search-status { padding: 0 0 0.6rem 1.1rem; }

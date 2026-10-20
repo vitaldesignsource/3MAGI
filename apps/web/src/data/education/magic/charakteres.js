@@ -62,6 +62,7 @@ export default {
         caption: 'A ring-ended stroke, cross and Γ and an asterisk from P. Oslo 1, and a Ν from a Sethian tablet.',
     },
     lettersTitle: 'The Signs',
+    unitNoun: { one: 'sign', many: 'signs' },
     scriptNote: 'Thirteen entries, none of them a letter. The first three are kinds of ring-sign, defined by the features the studies name, not signs of one object, each shown by one named example; then come the signs of a papyrus and of a group of curse tablets, named by their editions; the Chnoubis sign of the gems; and the seven seals of Arabic magic, in their standard order. None stands for a sound.',
     groups: [
         { key: 'kind', label: 'Three kinds of ring-sign', note: 'defined by the features the studies name' },
@@ -242,7 +243,7 @@ export default {
         'Brillenbuchstaben, “spectacle letters”, is a modern scholarly term, not an ancient one.',
         'Copies of the same sign differ, because scribes copied imperfectly. One drawing is one witness, not the sign.',
         'Iamblichus reports Porphyry’s account of standing on charaktêres in order to criticise it; he neither endorses nor neutrally describes the practice.',
-        'The standard editions of the ancient material (Preisendanz, Betz, Bonner) are named as works of reference. The drawings cite Eitrem’s Plates VIII and XI and Wünsch’s p. 11, and the page cites no other page or plate in them.',
+        'The standard editions of the ancient material (Preisendanz, Betz, Bonner) are named as works of reference. The drawings are traced from Eitrem’s Plates VIII and XI and Wünsch’s p. 11; the page also cites Eitrem’s pp. 11 and 13, where his text refers to the plates, his Plates VII and XII, which carry more of the papyrus’s signs, and Wünsch’s p. 5, where he says the lead could be neither photographed nor rubbed.',
     ],
     sources: [
         { citation: 'Gideon Bohak, “The Charaktêres in Ancient and Medieval Jewish Magic”, Acta Classica Universitatis Scientiarum Debreceniensis 47 (2011), 25–44 (open access).', url: 'https://ojs.lib.unideb.hu/classica/article/view/8015' },

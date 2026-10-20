@@ -72,6 +72,7 @@ export default {
         caption: 'The four gallows, k, t, p and f, as written on ff. 2r and 6r.',
     },
     lettersTitle: 'The Glyphs',
+    unitNoun: { one: 'glyph', many: 'glyphs' },
     scriptNote: 'Twenty units, named in EVA, the transcription alphabet researchers commonly use. Each EVA letter was chosen for the look of a glyph and claims no sound: the script has no accepted values and no numbers. EVA writes some single glyphs as strings of strokes — the “bench” as ch, a gallows set over a bench as cth — so that a transcriber need not decide in advance which strokes make one sign. The example words are EVA spellings as researchers commonly quote them. Each drawn glyph is one instance, traced from a named word on a named folio. The order is the site’s own, for display; it is not a ranking by frequency.',
     letters: [
         { order: 1, name: 'o', value: null, translit: 'o', numeric: null, formConfidence: 'high',

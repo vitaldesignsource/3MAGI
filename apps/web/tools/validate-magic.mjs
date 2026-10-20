@@ -19,7 +19,7 @@ const fail = (where, m) => errors.push(`${where}: ${m}`);
 const words = (s) => String(s ?? '').trim().split(/\s+/).filter(Boolean).length;
 const YEAR = /\b(1\d{3}|20\d{2})\b/;
 const LOCATOR = /\b(book|bk\.|ch\.|chapter|cap\.|p\.|pp\.|fol\.|ff?\.|plate|sig\.|MS|[IVX]+\.\d+)/i;
-const canon = (g) => JSON.stringify({ d: String(g.d).trim().replace(/\s+/g, ' '), rings: g.rings ?? [], dots: g.dots ?? [] });
+const canon = (g) => JSON.stringify({ d: String(g.d).trim().replace(/\s+/g, ' '), rings: g.rings ?? [], dots: g.dots ?? [], textRings: g.textRings ?? [] });
 const sameGlyph = (a, b) => canon(a) === canon(b);
 
 // --- facsimile plates --------------------------------------------------------------
@@ -63,8 +63,15 @@ function imageSize(buf) {
     }
     return null;
 }
-function checkPlates(where, plates) {
+// A set of plates from one book may give the bibliographic line they share
+// once, under the set (platesSource): each caption then names its own page,
+// and the copy, the year and the credit line may stand in the shared line.
+function checkPlates(where, plates, shared = null) {
     if (!Array.isArray(plates)) { fail(where, 'plates must be a list'); return; }
+    if (shared != null) {
+        if (plates.length < 2) fail(`${where}/platesSource`, 'platesSource is the line a set of plates shares: give it only with two plates or more');
+        if (words(shared) < 8 || !/\bcopy\b/i.test(shared) || !YEAR.test(shared)) fail(`${where}/platesSource`, 'platesSource names the book with its year and the copy shown');
+    }
     plates.forEach((p, i) => {
         const w = `${where}/plate ${i + 1}`;
         if (!/^magic\/[a-z0-9-]+\.(webp|jpe?g)$/.test(p.file || '')) { fail(w, 'file must be magic/<name>.webp or .jpg, under public/media'); return; }
@@ -81,9 +88,10 @@ function checkPlates(where, plates) {
         }
         if (words(p.alt) < 12) fail(w, 'alt must describe the page in at least 12 words');
         if (words(p.alt) > 80) fail(w, 'alt is over 80 words: describe the page, and leave the rest to the caption');
-        const cap = String(p.caption || '');
+        const own = String(p.caption || '');
+        const cap = shared != null ? `${own} ${shared}` : own;
         if (!/\bcopy\b/i.test(cap)) fail(w, 'caption must name the copy shown');
-        if (!YEAR.test(cap) || !LOCATOR.test(cap)) fail(w, 'caption must name the edition with its year and where in it the page stands (page, signature)');
+        if (!YEAR.test(cap) || !LOCATOR.test(own)) fail(w, 'caption must name the edition with its year and where in it the page stands (page, signature)');
         const repo = PLATE_REPOSITORIES.find((r) => cap.includes(r.credit));
         if (!repo) fail(w, `caption must end with the repository’s credit line (${PLATE_REPOSITORIES.map((r) => r.credit).join(' | ')})`);
         if (words(p.rights) < 8) fail(w, 'rights must quote the repository’s rights statement');
@@ -368,7 +376,13 @@ for (const entry of all) {
     } else if (d.pending) {
         fail(`${where}/drawing`, 'a ready alphabet has no pending notice: remove drawing.pending');
     }
-    if (m.plates != null) checkPlates(where, m.plates);
+    if (m.plates != null) checkPlates(where, m.plates, m.platesSource ?? null);
+    else if (m.platesSource != null) fail(`${where}/platesSource`, 'platesSource is given only with plates');
+    // what the page calls its units, where they are not letters (the drill,
+    // the drawing's heading and the grid's name use it)
+    if (m.unitNoun != null && !(m.unitNoun && /^[a-z]+$/.test(m.unitNoun.one || '') && /^[a-z]+$/.test(m.unitNoun.many || ''))) {
+        fail(`${where}/unitNoun`, 'unitNoun is { one, many }: the page’s unit in lower case, singular and plural');
+    }
     if (m.platesNote != null && (!m.plates?.length || words(m.platesNote) < 8)) fail(`${where}/platesNote`, 'platesNote introduces the plates in at least 8 words, and only where there are plates');
 
     // transliteration

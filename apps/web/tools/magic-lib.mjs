@@ -148,6 +148,31 @@ export function glyphProblems(g) {
             out.push(`ring at ${x},${y} (r ${rad}) is not on a stroke end: the nearest endpoint is ${nearest.toFixed(1)} from its centre, and the stroke must stop at the ring's edge, ${rad} away`);
         }
     }
+    // A fine-lined figure whose traced rings close up at text size may give
+    // the rings it is drawn with there (MagicGlyph.jsx): one for each traced
+    // ring, in the same order, never smaller, on the same stroke end, and
+    // every one scaled by the same factor, so their sizes keep their
+    // proportions. The traced rings stand in the plaque.
+    if (g.textRings != null) {
+        if (!Array.isArray(g.textRings) || g.textRings.length !== rings.length || !rings.length) out.push('glyph.textRings gives one ring for each traced ring, in the same order');
+        else if (g.textPen == null) out.push('glyph.textRings belongs to a fine-lined figure: give it with textPen');
+        else {
+            const ratios = [];
+            g.textRings.forEach((t, i) => {
+                if (!Array.isArray(t) || t.length !== 3 || !t.every(isNum)) { out.push(`bad text ring ${JSON.stringify(t)}: give [x, y, r]`); return; }
+                const [x, y, rad] = t;
+                const [tx, ty, tr = RING_R] = rings[i];
+                if (!(rad >= tr && rad <= 50)) { out.push(`text ring ${i + 1} (r ${rad}) is smaller than the traced ring it stands for (r ${tr})`); return; }
+                if (x - rad < 0 || x + rad > 100 || y - rad < 0 || y + rad > 100) out.push(`text ring at ${x},${y} leaves the 0–100 box`);
+                // the stroke end the traced ring sits on, which the text ring keeps
+                const end = eps.reduce((b, e) => (Math.abs(Math.hypot(e[0] - tx, e[1] - ty) - tr) < Math.abs(Math.hypot(b[0] - tx, b[1] - ty) - tr) ? e : b), eps[0] || [NaN, NaN]);
+                const d = Math.hypot(end[0] - x, end[1] - y);
+                if (!(Math.abs(d - rad) <= RING_TOLERANCE)) out.push(`text ring ${i + 1} at ${x},${y} (r ${rad}) does not keep its traced ring's stroke end at its edge (it is ${d.toFixed(1)} away)`);
+                ratios.push(rad / tr);
+            });
+            if (ratios.length && Math.max(...ratios) - Math.min(...ratios) > 0.02) out.push('glyph.textRings scales every traced ring by one factor');
+        }
+    }
     for (const dt of dots) {
         if (!Array.isArray(dt) || dt.length < 2 || dt.length > 3) { out.push(`bad dot ${JSON.stringify(dt)}: give [x, y] or [x, y, r]`); continue; }
         const [x, y, rad = DOT_R] = dt;

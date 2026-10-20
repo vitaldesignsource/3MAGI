@@ -38,7 +38,11 @@ import { textOf } from './sign';
 // forks the house pen fills into blots at every size) names `textPen` as well:
 // the pen it is drawn with everywhere but the plaque, where `pen` — its own
 // measured weight — takes over. Its rings are drawn with the same pen as its
-// strokes, as the specimen sheet drawn at the print's pen draws them.
+// strokes, as the specimen sheet drawn at the print's pen draws them. Where
+// its traced rings are so small that they close into dots at text size (the
+// Þjófastafur's, Gapaldur's), it gives `textRings` as well: the same rings
+// scaled up by one factor and set out along their strokes, drawn everywhere
+// but the plaque, where the traced rings stand (magic.css switches them).
 
 const HOUSE_PEN = 5.5;
 const HOUSE_RING = 6;
@@ -60,6 +64,7 @@ function MagicGlyph({ g, size, label, className }) {
     }
     const rings = (g.rings ?? []).map(([x, y, r = HOUSE_RING]) => [x, y, r]);
     const textPen = g.textPen ?? null;
+    const textRings = textPen != null && Array.isArray(g.textRings) && g.textRings.length === rings.length ? g.textRings : null;
     // a ring's pen: the house ring pen, or a fine-lined figure's own pen
     const penOf = (r) => (textPen != null ? Math.min(ringPen(r), textPen) : ringPen(r));
     // the hole the strokes are masked by is the lightest the ring is ever drawn
@@ -67,6 +72,8 @@ function MagicGlyph({ g, size, label, className }) {
     const lightest = (r) => Math.min(penOf(r), g.pen ?? Infinity);
     // one mask per drawn glyph: its id must be unique on the page
     const holes = rings.length && g.d ? `mg-holes${uid.replace(/[^A-Za-z0-9_-]/g, '')}` : null;
+    // a text ring's hole: it is only ever drawn with the text pen
+    const ringClass = textRings ? 'mg-ring is-traced' : textPen != null ? 'mg-ring' : undefined;
     return (
         <svg className={cls} width={size} height={size} viewBox="0 0 100 100" fill="none" stroke="currentColor"
             strokeWidth={textPen ?? HOUSE_PEN} strokeLinecap="round" strokeLinejoin="round" {...a11y}
@@ -76,11 +83,13 @@ function MagicGlyph({ g, size, label, className }) {
                     <mask id={holes} maskUnits="userSpaceOnUse" x="-5" y="-5" width="110" height="110">
                         <rect x="-5" y="-5" width="110" height="110" fill="#fff" stroke="none" />
                         {rings.map(([x, y, r], i) => <circle key={i} cx={x} cy={y} r={Math.max(0, r - lightest(r) / 2)} fill="#000" stroke="none" />)}
+                        {textRings && textRings.map(([x, y, r], i) => <circle key={`t${i}`} cx={x} cy={y} r={Math.max(0, r - penOf(r) / 2)} fill="#000" stroke="none" />)}
                     </mask>
                 </defs>
             )}
             <path d={g.d} mask={holes ? `url(#${holes})` : undefined} />
-            {rings.map(([x, y, r], i) => <circle key={`r${i}`} className={textPen != null ? 'mg-ring' : undefined} cx={x} cy={y} r={r} strokeWidth={penOf(r)} />)}
+            {rings.map(([x, y, r], i) => <circle key={`r${i}`} className={ringClass} cx={x} cy={y} r={r} strokeWidth={penOf(r)} />)}
+            {textRings && textRings.map(([x, y, r], i) => <circle key={`t${i}`} className="mg-ring is-text" cx={x} cy={y} r={r} strokeWidth={penOf(r)} />)}
             {(g.dots ?? []).map(([x, y, r = 2.6], i) => <circle key={`d${i}`} cx={x} cy={y} r={r} fill="currentColor" stroke="none" />)}
         </svg>
     );
@@ -100,6 +109,19 @@ export function Sign({ of, label, className }) {
         );
     }
     return <Unstruck label={label} className={className} />;
+}
+
+// A table of numbers (the planets' magic squares) is not a figure: where a
+// sign would stand it wears a small ruled square of its side.
+export function TableMark({ side, className }) {
+    const lo = 16, hi = 84, step = (hi - lo) / side;
+    const lines = Array.from({ length: side - 1 }, (_, i) => lo + step * (i + 1));
+    return (
+        <svg className={['mg-glyph', 'mg-table-mark', className].filter(Boolean).join(' ')} viewBox="0 0 100 100" fill="none" stroke="currentColor" aria-hidden="true">
+            <rect x={lo} y={lo} width={hi - lo} height={hi - lo} strokeWidth="4.5" />
+            {lines.map((v) => <path key={v} d={`M ${v} ${lo} V ${hi} M ${lo} ${v} H ${hi}`} strokeWidth={side > 6 ? 1.6 : 2.4} />)}
+        </svg>
+    );
 }
 
 // The mark for a form not yet traced: an empty seal-ring, as the Powers doors

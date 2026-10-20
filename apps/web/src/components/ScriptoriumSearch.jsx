@@ -1,6 +1,6 @@
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
-import MagicGlyph, { Unstruck } from '../pages/magic/MagicGlyph';
+import MagicGlyph, { TableMark, Unstruck } from '../pages/magic/MagicGlyph';
 import { numberWord } from '../pages/magic/words';
 
 // Search across every hall at once — signs, divine names, lexicon, currents,
@@ -190,14 +190,20 @@ function ScriptoriumSearch({ scope = 'scriptorium', scripts = null }) {
                 <ul className="edu-search-results">
                     {shown.map((r, i) => (
                         <li key={`${r.h}-${r.k}-${r.l}-${i}`}>
-                            <Link to={hrefFor(r)}>
+                            {/* a drawn sign stands beside its title, centred on its first
+                                line, at the size its page draws it (the row carries the scale) */}
+                            <Link to={hrefFor(r)} className={!r.n && (r.g || r.t) ? 'has-sign' : undefined}
+                                style={!r.n && (r.g?.z || r.z) ? { '--mg-scale': r.g?.z || r.z } : undefined}>
                                 {/* a drawn letter of the Magical Scriptorium has no text to show,
-                                    and one whose form is still being traced has nothing yet */}
+                                    one whose form is still being traced has nothing yet, and a
+                                    table of numbers wears its ruled square */}
                                 {r.n
                                     ? <span className="edu-search-native edu-glyph">{r.n}</span>
                                     : r.g
-                                        ? <span className="edu-search-native edu-glyph" style={r.g.z ? { '--mg-scale': r.g.z } : undefined}><MagicGlyph g={r.g} /></span>
-                                        : r.x ? <span className="edu-search-native"><Unstruck /></span> : null}
+                                        ? <span className="edu-search-native edu-glyph"><MagicGlyph g={r.g} /></span>
+                                        : r.t
+                                            ? <span className="edu-search-native edu-glyph"><TableMark side={r.t} /></span>
+                                            : r.x ? <span className="edu-search-native"><Unstruck /></span> : null}
                                 <span className="edu-search-body">
                                     <span className="edu-search-label">{r.l}</span>
                                     {r.s && <span className="edu-search-sub">{r.s}</span>}

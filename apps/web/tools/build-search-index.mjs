@@ -139,12 +139,18 @@ for (const b of library?.books ?? []) push(
                 rec.g = { d: l.glyph.d };
                 if (l.glyph.rings?.length) rec.g.rings = l.glyph.rings;
                 if (l.glyph.dots?.length) rec.g.dots = l.glyph.dots;
-                // a fine-lined figure's pen at text size (MagicGlyph's textPen)
+                // a fine-lined figure's pen at text size (MagicGlyph's textPen),
+                // and the rings it draws there where its traced rings close up
                 if (l.glyph.textPen != null) rec.g.textPen = l.glyph.textPen;
+                if (l.glyph.textPen != null && l.glyph.textRings?.length) rec.g.textRings = l.glyph.textRings;
                 // the alphabet's signScale, so a result draws the sign at the size its pages do
                 if (e.signScale) rec.g.z = e.signScale;
-            } else if (!l.char && !(Array.isArray(l.rows) && Array.isArray(l.rows[0]))) rec.x = 1;
-            // (a table of numbers is not a form waiting to be traced: it wears no mark)
+            } else if (Array.isArray(l.rows) && Array.isArray(l.rows[0])) {
+                // a table of numbers is not a form waiting to be traced: it wears
+                // the ruled square of its side, as its card does
+                rec.t = l.rows.length;
+                if (e.signScale) rec.z = e.signScale;
+            } else if (!l.char) rec.x = 1;
             records.push(rec);
         });
         for (const ev of m.transmission || []) {

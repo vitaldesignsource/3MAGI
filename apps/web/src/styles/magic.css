@@ -46,6 +46,11 @@
 /* a fine-lined figure (MagicGlyph's textPen) draws its rings with its strokes'
    pen, so in the plaque they take its own measured weight too */
 .edu-plaque-glyph .mg-glyph.has-pen .mg-ring { stroke-width: var(--mg-pen, 3.6); }
+/* where such a figure's traced rings close up at text size, it draws larger
+   text rings everywhere but the plaque, and its traced rings in the plaque */
+.mg-glyph .mg-ring.is-traced { display: none; }
+.edu-plaque-glyph .mg-glyph .mg-ring.is-traced { display: inline; }
+.edu-plaque-glyph .mg-glyph .mg-ring.is-text { display: none; }
 
 /* The unstruck seal: an empty ring with a dashed inner ring, where a form
    is still to be traced — the mark of this wing, as the empty seal is the
@@ -117,7 +122,8 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 0.2em 0.55em;
-  margin: 0;
+  /* centred, because a row that wraps is narrowed to even lines (HeroSigns) */
+  margin: 0 auto;
   font-size: clamp(2rem, 5vw, 2.8rem);
   line-height: 1.2;
   color: #d1ad68;
@@ -238,9 +244,12 @@
    its cards wider, so a name breaks between words or not at all. */
 .edu-letter-grid.has-long-names { grid-template-columns: repeat(auto-fill, minmax(8.6rem, 1fr)); }
 /* A table of numbers wears a small ruled square, and an honest gap the glyph
-   kit's own gap mark, both at a drawn sign's size and quieter than a sign. */
+   kit's own gap mark, quieter and smaller than a sign but standing in a
+   drawn sign's box, so the titles of a row of cards share one line. */
 .mg-letter-card.is-table .edu-letter-glyph .mg-glyph,
 .mg-letter-card.is-gap .edu-letter-glyph .mg-glyph { width: 1.3em; height: 1.3em; opacity: 0.7; }
+.mg-letter-card.is-table .edu-letter-glyph,
+.mg-letter-card.is-gap .edu-letter-glyph { min-height: calc(1.3em * var(--mg-scale, 1)); }
 .mg-table-mark { color: rgba(209, 173, 104, 0.85); }
 /* and so wherever a drawn sign stands among set letters at text size — the
    comparison tables' cells, a search result, the transliterator's key and
@@ -255,7 +264,22 @@
    choices are set large enough to fill their buttons as a set script's do. */
 .edu-drill-option-glyph .mg-glyph:not(.is-figure) { width: calc(1.9em * var(--mg-scale, 1)); height: calc(1.9em * var(--mg-scale, 1)); vertical-align: -0.45em; }
 .mg-letter-card .edu-letter-name { max-width: 100%; overflow-wrap: anywhere; }
-.mg-letter-card .edu-letter-name.is-long { font-size: 0.64rem; letter-spacing: 0.06em; }
+/* A name with a word of ten letters or more (TAPHTHARTHARATH, ÆGISHJÁLMUR) is
+   set down only as far as its own card needs: the card is a size container,
+   and the word's length (--mg-word, from Letters.jsx) against the card's width
+   gives the size, never above the other names' and never below 0.58rem. An
+   upper-case letter of the face is at most about 0.75em wide, with 0.1em of
+   tracking. A page of titles (the books, the chapters: is-formless) keeps
+   one smaller size for all its long titles, so a grid of them reads evenly. */
+.mg-letter-card { container-type: inline-size; }
+.mg-letter-card .edu-letter-name.is-long {
+  font-size: clamp(0.58rem, calc(100cqi / (var(--mg-word, 12) * 0.88)), 0.74rem);
+  letter-spacing: 0.1em;
+}
+.mg-letter-card.is-formless .edu-letter-name.is-long { font-size: 0.64rem; letter-spacing: 0.06em; }
+@media (max-width: 640px) {
+  .mg-letter-card.is-formless .edu-letter-name.is-long { font-size: 0.58rem; letter-spacing: 0.02em; }
+}
 .mg-letter-sub {
   display: block;
   margin-top: 0.1rem;
@@ -265,9 +289,6 @@
   letter-spacing: 0.01em;
   text-transform: none;
   color: rgba(222, 212, 196, 0.6);
-}
-@media (max-width: 640px) {
-  .mg-letter-card .edu-letter-name.is-long { font-size: 0.58rem; letter-spacing: 0.02em; }
 }
 .mg-letter-card .edu-letter-translit { min-height: 1.1em; }
 
@@ -478,6 +499,8 @@
    page is held to the screen's height, so the figures and the caption can be
    read together. */
 .mg-plate {
+  /* the tallest the image may stand (--mh), set per kind of plate below */
+  --mh: min(82vh, 56rem);
   max-width: 60rem;
   margin: 0 auto;
   padding: clamp(0.7rem, 2vw, 1.2rem);
@@ -486,12 +509,19 @@
 }
 .mg-plate + .mg-plate { margin-top: 1.6rem; }
 .mg-plate-frame { display: flex; justify-content: center; }
+/* The image's box does not wait for the image: its width is the frame's, or
+   what its height cap allows at its own proportions (--ar, set from the
+   module's width and height), and never more than its own width (--pw), so
+   the plates hold their place while they load and a jump to a later section
+   lands where it should. */
 .mg-plate-frame img {
   display: block;
-  width: auto;
+  flex: none;
+  aspect-ratio: var(--ar);
+  width: min(100%, calc(var(--mh) * var(--ar)), var(--pw, 100%));
   height: auto;
   max-width: 100%;
-  max-height: min(82vh, 56rem);
+  max-height: var(--mh);
   border: 1px solid rgba(209, 173, 104, 0.22);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
 }
@@ -530,7 +560,7 @@
    laptop screen: on a wide screen it stands beside its caption, held to the
    height left under the sticky header, and on a narrow one it is capped
    lower, so the caption follows it onto the screen. */
-.mg-plate.is-portrait .mg-plate-frame img { max-height: min(64vh, 44rem); }
+.mg-plate.is-portrait { --mh: min(64vh, 44rem); }
 @media (min-width: 1024px) {
   .mg-plate.is-portrait {
     display: grid;
@@ -538,7 +568,7 @@
     gap: 1.6rem;
     align-items: start;
   }
-  .mg-plate.is-portrait .mg-plate-frame img { max-height: min(calc(100vh - 8rem), 46rem); }
+  .mg-plate.is-portrait { --mh: min(calc(100vh - 8rem), 46rem); }
   .mg-plate.is-portrait figcaption {
     margin: 0;
     padding-top: 0;
@@ -548,27 +578,46 @@
     align-content: start;
   }
 }
-/* A set of pages (the seven tables of II.22) stands as a grid of plates, each
-   image held to one height so a row reads as a row; the captions follow
-   their plates, and the one rights statement they share closes the set. */
+/* A set of pages (the seven tables of II.22) stands as a grid of plates, two
+   to a row on a wide screen, each image held to one height so a row reads as
+   a row; the captions follow their plates, and the bibliographic line and the
+   rights statement they share close the set. An odd last plate takes the
+   whole row, its caption beside it, so no plate stands beside an empty cell. */
 .mg-plates.is-set .mg-plate-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr));
+  grid-template-columns: minmax(0, 1fr);
   gap: 1.4rem;
   max-width: 76rem;
   margin: 0 auto;
 }
 .mg-plates.is-set .mg-plate,
-.mg-plates.is-set .mg-plate.is-portrait { display: flex; flex-direction: column; align-items: stretch; max-width: none; margin: 0; }
+.mg-plates.is-set .mg-plate.is-portrait { --mh: 30rem; display: flex; flex-direction: column; align-items: stretch; max-width: none; margin: 0; }
+.mg-plates.is-set .mg-plate.is-portrait { --mh: min(36rem, 80vh); }
 .mg-plates.is-set .mg-plate-frame { align-items: center; }
-.mg-plates.is-set .mg-plate-frame img { max-height: 30rem; }
-.mg-plates.is-set .mg-plate.is-portrait .mg-plate-frame img { max-height: min(36rem, 80vh); }
 .mg-plates.is-set .mg-plate figcaption,
 .mg-plates.is-set .mg-plate.is-portrait figcaption {
   margin: 1rem 0 0;
   padding: 0.85rem 0 0;
   border-left: none;
   border-top: 1px solid rgba(179, 139, 70, 0.18);
+}
+@media (min-width: 900px) {
+  .mg-plates.is-set .mg-plate-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .mg-plates.is-set .mg-plate:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: min(calc(var(--mh) * var(--ar)), 60%) minmax(14rem, 24rem);
+    justify-content: center;
+    align-items: start;
+    gap: 1.6rem;
+  }
+  .mg-plates.is-set .mg-plate:last-child:nth-child(odd) figcaption {
+    margin: 0;
+    padding: 0 0 0 1.4rem;
+    border-top: none;
+    border-left: 1px solid rgba(179, 139, 70, 0.18);
+    align-content: start;
+  }
 }
 .mg-plates-rights { max-width: 50rem; margin: 1.4rem auto 0; }
 .mg-plate-links a {
@@ -654,7 +703,7 @@
 .mg-claim-text { margin: 0; color: rgba(240, 233, 218, 0.94); font-family: var(--edu-script-faces), Georgia, "Times New Roman", serif; font-size: 1.02rem; line-height: 1.6; }
 .mg-claim-standing { margin: 0.6rem 0 0.5rem; }
 .mg-claim-evidence { margin: 0; color: rgba(232, 224, 208, 0.78); font-family: var(--edu-script-faces), Georgia, "Times New Roman", serif; font-size: 0.95rem; line-height: 1.72; }
-.mg-claim-sources { margin: 0.55rem 0 0; color: rgba(209, 173, 104, 0.62); font-family: var(--edu-script-faces), Georgia, "Times New Roman", serif; font-style: italic; font-size: 0.84rem; line-height: 1.6; }
+.mg-claim-sources { margin: 0.55rem 0 0; color: rgba(209, 173, 104, 0.72); font-family: var(--edu-script-faces), Georgia, "Times New Roman", serif; font-style: italic; font-size: 0.84rem; line-height: 1.6; }
 
 /* --- uses, kin, cautions, sources --------------------------------------------- */
 .mg-use-list,
@@ -1187,4 +1236,19 @@
   .mg-unstruck, .mg-unstruck::before { border-color: #999 !important; }
   .mg-pending-notice, .mg-stub-panel, .mg-claim, .mg-quote, .mg-witness, .mg-drawn { border: 1px solid #bbb !important; outline: none !important; break-inside: avoid; }
   .mg-compare-table td.mg-cmp-pending { background: none !important; }
+}
+
+/* The one line a grid of letters announces when its selection changes
+   (Letters.jsx): read out, not shown. */
+.mg-live {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
 }

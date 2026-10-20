@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from 'react';
+import React, { useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
 import { Helmet } from 'react-helmet';
 import { Link, Navigate, useParams } from 'react-router-dom';
 import ThirdLampHeader from '../../components/ThirdLampHeader';
@@ -37,6 +37,46 @@ function SectionHead({ kicker, id, title, children }) {
             {children}
         </header>
     );
+}
+
+// The hero's row of signs. Where they do not fit on one line, the row is
+// narrowed so the lines come out even (seven signs as four and three, not
+// five and two); on one line it is left alone.
+function HeroSigns({ children, ...props }) {
+    const ref = useRef(null);
+    useLayoutEffect(() => {
+        const el = ref.current;
+        if (!el || typeof ResizeObserver === 'undefined') return undefined;
+        let width = null;
+        const fit = () => {
+            el.style.maxWidth = '';
+            const kids = [...el.children];
+            // (the signs are svg elements, which have no offsetTop)
+            const tops = new Set(kids.map((k) => Math.round(k.getBoundingClientRect().top)));
+            if (tops.size < 2) return;
+            const per = Math.ceil(kids.length / tops.size);
+            const gap = parseFloat(getComputedStyle(el).columnGap) || 0;
+            let widest = 0;
+            for (let i = 0; i < kids.length; i += per) {
+                const row = kids.slice(i, i + per);
+                widest = Math.max(widest, row.reduce((w, k) => w + k.getBoundingClientRect().width, 0) + gap * (row.length - 1));
+            }
+            el.style.maxWidth = `${Math.ceil(widest) + 1}px`;
+        };
+        fit();
+        // refit when the column's width changes, and once the faces of set
+        // signs have loaded
+        const ro = new ResizeObserver(([e]) => {
+            if (e.contentRect.width === width) return;
+            width = e.contentRect.width;
+            fit();
+        });
+        ro.observe(el.parentElement);
+        let alive = true;
+        document.fonts?.ready.then(() => { if (alive) fit(); });
+        return () => { alive = false; ro.disconnect(); };
+    }, []);
+    return <p ref={ref} {...props}>{children}</p>;
 }
 
 function MagicAlphabetPage() {
@@ -98,9 +138,12 @@ function MagicAlphabetPage() {
     const anyDrawn = letters.some((l) => l.glyph);
     const anySet = letters.some((l) => l.char);
     const lettersTitle = mod.lettersTitle || 'The Alphabet';
+    // what the page calls its units, where they are not letters (the signs,
+    // the staves, the glyphs)
+    const unit = mod.unitNoun || null;
     const drawingTitle = pending ? 'Where the forms will come from'
         : anyDrawn && anySet ? 'How the signs are set and drawn'
-            : anyDrawn ? 'How the letters are drawn' : 'How the signs are set';
+            : anyDrawn ? `How the ${unit ? unit.many : 'letters'} are drawn` : 'How the signs are set';
     const sample = (mod.sample?.orders || []).map((o) => letters[o - 1]).filter(Boolean);
     const plates = stub ? [] : (mod.plates || []);
     // Several plates from one repository share one rights statement: it is
@@ -146,9 +189,9 @@ function MagicAlphabetPage() {
                     <FitTitle title={mod.title} />
                     {sample.length > 0 && (
                         <div className="mg-hero-sample">
-                            <p className="mg-hero-signs edu-glyph" dir={direction === 'rtl' ? 'rtl' : undefined} aria-hidden="true">
+                            <HeroSigns className="mg-hero-signs edu-glyph" dir={direction === 'rtl' ? 'rtl' : undefined} aria-hidden="true">
                                 {sample.map((l) => <Sign key={l.order} of={l} />)}
-                            </p>
+                            </HeroSigns>
                             {mod.sample.caption && <p className="mg-hero-caption">{mod.sample.caption}</p>}
                         </div>
                     )}
@@ -197,7 +240,7 @@ function MagicAlphabetPage() {
                         {pending
                             ? <PendingLedger mod={mod} letters={letters} keyedTo={keyedTo} hebrewKeys={keys?.hebrew} latinKeys={keys?.latin} />
                             : <LetterGrid mod={mod} letters={letters} keyedTo={keyedTo} direction={direction}
-                                label={`${mod.title}: ${letters.length} ${!reg ? 'entries' : keyedTo === 'none' && !mod.valueLabel ? 'signs' : 'letters'}`} hebrewKeys={keys?.hebrew}
+                                label={`${mod.title}: ${letters.length} ${!reg ? 'entries' : unit ? unit.many : keyedTo === 'none' && !mod.valueLabel ? 'signs' : 'letters'}`} hebrewKeys={keys?.hebrew}
                                 formless={!reg} />}
                     </section>
                 )}
@@ -211,7 +254,10 @@ function MagicAlphabetPage() {
                         </SectionHead>
                         <div className="mg-plate-list">
                         {plates.map((p) => (
-                            <figure className={`mg-plate${p.height > p.width ? ' is-portrait' : ''}`} key={p.file}>
+                            // --ar and --pw give the image its box before it loads, so a
+                            // set of lazy plates does not grow the page under a reader
+                            <figure className={`mg-plate${p.height > p.width ? ' is-portrait' : ''}`} key={p.file}
+                                style={{ '--ar': p.width / p.height, '--pw': `${p.width}px` }}>
                                 <div className="mg-plate-frame">
                                     <img src={`/media/${p.file}`} alt={p.alt} width={p.width} height={p.height} loading="lazy" decoding="async" />
                                 </div>
@@ -230,6 +276,7 @@ function MagicAlphabetPage() {
                             </figure>
                         ))}
                         </div>
+                        {mod.platesSource && <p className="mg-plate-rights mg-plates-rights"><span>Source</span> {isolate(mod.platesSource)}</p>}
                         {sharedRights && <p className="mg-plate-rights mg-plates-rights"><span>Rights</span> {isolate(sharedRights)}</p>}
                     </section>
                 )}
@@ -368,7 +415,7 @@ function MagicAlphabetPage() {
                 </section>
 
                 {!stub && !pending && shown.length >= 5 && (
-                    <ScriptoriumDrill letters={drillLetters} langTitle={mod.title} rtl={direction === 'rtl'} />
+                    <ScriptoriumDrill letters={drillLetters} langTitle={mod.title} rtl={direction === 'rtl'} unit={unit} />
                 )}
 
                 <nav className="edu-hall-nav mg-entry-nav" aria-label="The Magical Scriptorium">
