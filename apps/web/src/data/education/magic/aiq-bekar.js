@@ -65,7 +65,7 @@ export default {
             file: 'magic/aiq-bekar-loc.webp', width: 1200, height: 1336,
             alt: 'The upper part of a page printed in 1533: a grid of nine chambers holding the Hebrew letters three to a chamber, Aleph, Yod and Qof at the top right; below it a line of Latin, the row of nine bracket-shaped figures cut from the grid, more Latin, and the name Michael written in five figures with points, then in three.',
             caption: 'The printed page of the figures above: the grid of the nine chambers, the nine figures cut from it and Agrippa’s Michael in five figures and in three, in De occulta philosophia libri tres (1533), Book III, chapter 30, p. CCLXXV, sig. z4r, in the Library of Congress copy, BF1598.A3 O4 1533 — the same setting and the same blocks as the McGill copy the tracing follows, whose digitisation carries no rights statement and is not shown. Library of Congress, Rare Book and Special Collections Division.',
-            rights: 'The Library of Congress states that it is “not aware of any U.S. copyright or any other restrictions in the documents in this collection”; the Internet Archive mirror of this copy carries the Public Domain Mark 1.0.',
+            rights: 'The Library of Congress states that it is “not aware of any U.S. copyright or any other restrictions in the documents in this collection”.',
             url: 'https://www.loc.gov/resource/rbc.2009gen12345/?sp=279',
         },
     ],

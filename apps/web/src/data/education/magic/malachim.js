@@ -65,7 +65,7 @@ export default {
             file: 'magic/malachim-loc.webp', width: 1600, height: 765,
             alt: 'A woodcut table printed in 1533: twenty-three signs built of straight strokes, curves and small rings, in three rows of seven, seven and nine read from right to left, each under the printed name of a Hebrew letter, two of them labelled Samech, on browned paper. Its caption stands on the page before.',
             caption: 'The table the letters above are drawn from: the Malachim, in Agrippa, De occulta philosophia libri tres (1533), Book III, chapter 30, p. CCLXXIIII [sig. z3v], in the Library of Congress copy, BF1598.A3 O4 1533; its caption, “Scriptura Malachim”, stands at the foot of the page before. Library of Congress, Rare Book and Special Collections Division.',
-            rights: 'The Library of Congress states that it is “not aware of any U.S. copyright or any other restrictions in the documents in this collection”; the Internet Archive mirror of this copy carries the Public Domain Mark 1.0.',
+            rights: 'The Library of Congress states that it is “not aware of any U.S. copyright or any other restrictions in the documents in this collection”.',
             url: 'https://www.loc.gov/resource/rbc.2009gen12345/?sp=278',
         },
     ],

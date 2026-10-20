@@ -56,7 +56,7 @@ export default {
             file: 'magic/celestial-loc.webp', width: 1600, height: 814,
             alt: 'A woodcut table printed in 1533 under the heading Scriptura Cœlestis: twenty-two ring-ended signs in three rows of nine, nine and four, read from right to left, each set under the printed name of a Hebrew letter, Aleph at the top right and Tau ending the short third row, on browned paper.',
             caption: 'The table the letters above are drawn from: “Scriptura Cœlestis”, in Agrippa, De occulta philosophia libri tres (1533), Book III, chapter 30, p. CCLXXIII (printed CCXLXXIII), sig. z3r, in the Library of Congress copy, BF1598.A3 O4 1533. Library of Congress, Rare Book and Special Collections Division.',
-            rights: 'The Library of Congress states that it is “not aware of any U.S. copyright or any other restrictions in the documents in this collection”; the Internet Archive mirror of this copy carries the Public Domain Mark 1.0.',
+            rights: 'The Library of Congress states that it is “not aware of any U.S. copyright or any other restrictions in the documents in this collection”.',
             url: 'https://www.loc.gov/resource/rbc.2009gen12345/?sp=277',
         },
     ],

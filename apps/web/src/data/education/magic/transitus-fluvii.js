@@ -70,7 +70,7 @@ export default {
             file: 'magic/transitus-fluvii-loc.webp', width: 1600, height: 843,
             alt: 'A woodcut table printed in 1533 under the heading Scriptura transitus fluuii: twenty-two signs, some ending in small rings, others plain bars, hooks, loops and frames, in three rows of eight, seven and seven read from right to left, each under the printed name of a Hebrew letter, on browned paper.',
             caption: 'The table the letters above are drawn from: “Scriptura transitus fluuii”, in Agrippa, De occulta philosophia libri tres (1533), Book III, chapter 30, p. CCLXXIIII [sig. z3v], below the Malachim, in the Library of Congress copy, BF1598.A3 O4 1533. Library of Congress, Rare Book and Special Collections Division.',
-            rights: 'The Library of Congress states that it is “not aware of any U.S. copyright or any other restrictions in the documents in this collection”; the Internet Archive mirror of this copy carries the Public Domain Mark 1.0.',
+            rights: 'The Library of Congress states that it is “not aware of any U.S. copyright or any other restrictions in the documents in this collection”.',
             url: 'https://www.loc.gov/resource/rbc.2009gen12345/?sp=278',
         },
     ],
