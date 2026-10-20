@@ -1,0 +1,1418 @@
+{
+ "key": "runes",
+ "title": "The Runes",
+ "otherNames": [
+  "futhark (fuþark), from its first six letters",
+  "Elder (Older) Futhark",
+  "Anglo-Saxon futhorc",
+  "Younger Futhark",
+  "Old Norse rúnar",
+  "Gothic rūna, 'mystery'",
+  "Old English rūn, 'secret, counsel'"
+ ],
+ "family": "Germanic runic alphabets. They are not a learned cipher. Most scholars derive them from a Mediterranean alphabet, most often a North Italic (Alpine) one; the Latin and Greek alphabets are the other candidates.",
+ "summary": "The runes are the native alphabet of the early Germanic peoples. Inscriptions date them from about 150–200 CE. There are three main rows: the 24-letter Elder Futhark (in use to about 700–800), the Anglo-Saxon futhorc (expanded to 28 or more letters) and the 16-letter Younger Futhark of the Viking Age. Most surviving inscriptions are memorials, ownership marks and messages. A smaller group does seem to be for protection, cursing or healing: bracteate words such as alu and laukaz, the Blekinge curse stones and the Ribe skull fragment. Later, the thirteenth-century Eddic poems and Egils saga present runes as an art of power won by Óðinn. The 18 'Armanen' runes of Guido von List (1908) and most modern rune divination are modern inventions, and the SS took some runes as emblems.",
+ "firstAttestation": {
+  "work": "Vimose comb, a bone comb with the runic inscription harja (a name, or a word for 'comb')",
+  "author": "anonymous",
+  "date": "c. 150–200 CE (often given as c. 160)",
+  "place": "Vimose bog, Funen, Denmark",
+  "locator": "National Museum of Denmark, Copenhagen (inventory number not checked)",
+  "notes": "Several early objects compete for 'first'. The Meldorf brooch (Schleswig-Holstein, 1st century CE) has four signs that may be runic or Roman; this is disputed. The Svingerud stone (Hole, Norway) was announced in January 2023 by the Museum of Cultural History, University of Oslo. Radiocarbon dating of its cremation grave places it between 1 and 250 CE, which the museum presented as making it the oldest datable runestone. The first complete row of all 24 runes is on the Kylver stone, Gotland (Rundata G 88, c. 400 CE). Kylver is a limestone slab from a grave at Kylver farm, Stånga parish, found in 1903. Its row ends in a tree-like sign and is followed by the palindrome sueus. The inscription faced into the grave, which is often read as meaning it was meant for the dead, not for readers. That reading is an inference, not a documented fact. No web search was possible for this item: the run's shared search budget was used up before it started. This rests on the compiler's background knowledge of the named work, not on a page read for this brief. Check it against the named edition before publication. Fact-check (2026-10-20): the fact-check could not search the web either (shared search budget exhausted), so the Vimose date, the Svingerud date range and announcement, and the Kylver signum, find year, parish and grave orientation all remain unverified."
+ },
+ "transmission": [
+  {
+   "date": "c. 150–200 CE",
+   "work": "Earliest inscriptions (Vimose comb; Øvre Stabu spearhead, Norway, raunijaz)",
+   "author": "anonymous",
+   "what": "The first securely runic texts, mostly short: names, maker's or owner's words, weapon names."
+  },
+  {
+   "date": "c. 400 CE",
+   "work": "Kylver stone (Rundata G 88), Stånga, Gotland",
+   "author": "anonymous",
+   "what": "The first complete futhark row: 24 runes in a fixed order, the earliest evidence that the row was learned as a sequence. On Kylver the row ends …ŋ d o, and the compiler recalls that it puts p before ï; check the order against Rundata."
+  },
+  {
+   "date": "5th–6th centuries",
+   "work": "Gold bracteates (Vadstena, Ög 178; Grumpan, Vg 207; and many others)",
+   "author": "anonymous",
+   "what": "Gold pendants modelled on Roman imperial medallions. Some carry futhark rows divided into three groups of eight, the later ættir; others carry short formulas such as alu, laþu, laukaz, auja. These are the centre of the debate on 'rune magic'."
+  },
+  {
+   "date": "6th–7th centuries (dating debated)",
+   "work": "Blekinge stones: Stentoften (DR 357) and Björketorp (DR 360)",
+   "author": "anonymous",
+   "what": "Curse formulas in the transitional runic of southern Sweden. They threaten anyone who breaks the monument and name 'runes of power' (ginArunAz) hidden there."
+  },
+  {
+   "date": "c. 600 and c. 800",
+   "work": "Noleby stone (Vg 63) and Sparlösa stone (Vg 119), Västergötland",
+   "author": "anonymous",
+   "what": "Inscriptions calling runes 'derived from the gods' (raginaku(n)do; rægi[n]kundu). The same formula, reginkunnum, appears in Hávamál 80 centuries later."
+  },
+  {
+   "date": "c. 700–800",
+   "work": "Transition to the Younger Futhark (16 runes); Rök stone (Ög 136), early 9th century",
+   "author": "anonymous",
+   "what": "The row was cut to 16 runes, each covering several sounds, in long-branch ('Danish') and short-twig ('Swedish-Norwegian') forms. Rök, the longest runic inscription, also uses cipher runes."
+  },
+  {
+   "date": "8th century",
+   "work": "Ribe skull fragment (Denmark)",
+   "author": "anonymous",
+   "what": "A piece of human skull with a perforation and an inscription naming Ulfr and Óðinn and asking for help against pain and a 'dwarf' (a disease-spirit). It is the clearest early healing charm."
+  },
+  {
+   "date": "c. 700–9th century",
+   "work": "Anglo-Saxon futhorc on objects (Franks Casket, early 8th c.; Ruthwell Cross; Thames scramasax (Seax of Beagnoth), late 9th or 10th c. (dates given vary; to verify), with a 28-rune row)",
+   "author": "anonymous",
+   "what": "The English expanded the row to 28 runes, and manuscripts go up to about 33, adding ōs, āc, æsc, ȳr, īor, ēar and others. The poet Cynewulf signed four poems (Elene, Juliana, Christ II, The Fates of the Apostles) with runes."
+  },
+  {
+   "date": "9th century",
+   "work": "Abecedarium Nordmannicum (St Gallen, Stiftsbibliothek, Cod. Sang. 878); the Alcuin manuscript Vienna, ÖNB Cod. 795 (Gothic letter names)",
+   "author": "anonymous",
+   "what": "Learned Carolingian records of runes and rune names. The Vienna codex preserves the Gothic names of the Gothic letters. Those names, with the rune poems, are the basis for reconstructing the Elder names."
+  },
+  {
+   "date": "composition 8th–10th c. (disputed); manuscript lost 1731; printed 1705",
+   "work": "Old English Rune Poem (formerly in London, BL, Cotton Otho B.x)",
+   "author": "anonymous",
+   "what": "29 stanzas, one per futhorc rune, each beginning with the rune name: Christian, gnomic and mnemonic. The manuscript was destroyed in the Ashburnham House fire of 1731. The text survives only in George Hickes's Linguarum veterum septentrionalium thesaurus (Oxford, 1703–05)."
+  },
+  {
+   "date": "late 12th or 13th c.",
+   "work": "Norwegian Rune Poem (Rúnakvæði)",
+   "author": "anonymous",
+   "what": "16 couplets on the Younger Futhark. Each couplet pairs the rune name with an unrelated proverb. The medieval manuscript burned in the Copenhagen University Library fire of 1728, and the poem survives in 17th-century transcripts (details in Dickins 1915, to verify)."
+  },
+  {
+   "date": "c. 1220–1240",
+   "work": "Egils saga Skalla-Grímssonar (attributed by some scholars to Snorri Sturluson; disputed)",
+   "author": "anonymous",
+   "what": "Egill carves and blood-reddens runes so that a poisoned horn bursts, carves a curse on a scorn-pole (níðstöng) against King Eiríkr and Queen Gunnhildr, and cures a sick girl by scraping off a botched rune charm and carving a new one. These are literary episodes written about two centuries after the events."
+  },
+  {
+   "date": "c. 1270 (manuscript)",
+   "work": "Codex Regius of the Poetic Edda (Reykjavík, Árni Magnússon Institute, GKS 2365 4to)",
+   "author": "anonymous",
+   "what": "Contains Hávamál and Sigrdrífumál. Hávamál 138–145 (Rúnatal) tells how Óðinn hung nine nights on the tree and 'took up the runes', and 146–163 (Ljóðatal) lists 18 charms. Sigrdrífumál lists kinds of runes and where to carve them. Skírnismál 36 threatens a þurs-rune curse. This is the main literary source for rune magic, and it is late and poetic."
+  },
+  {
+   "date": "15th–16th c. (manuscripts, e.g. AM 687d 4to)",
+   "work": "Icelandic Rune Poem",
+   "author": "anonymous",
+   "what": "16 short stanzas of kennings, each glossed with a Latin word (fé = aurum, Týr = Mars, etc.) and a Norse word for 'chieftain' that alliterates with the rune name."
+  },
+  {
+   "date": "1599–1640s",
+   "work": "Johannes Bureus (Johan Bure, 1568–1652), Swedish royal antiquary: runic primers and the manuscript Adulruna rediviva",
+   "author": "Johannes Bureus",
+   "what": "The first learned 'rune esotericism'. Bureus recorded runestones as an antiquary and also built a Gothicist, Kabbalistic and Hermetic system of 'Adulrunes'. He is the closest point of contact between runes and the Agrippan, Christian-Kabbalist tradition (see Karlsson 2010; Åkerman 1998). The compiler believes, but could not check, that Bureus drew on Agrippa and Reuchlin."
+  },
+  {
+   "date": "1636; 1643",
+   "work": "Ole Worm, Runir seu Danica literatura antiquissima (1636); Danicorum monumentorum libri sex (1643)",
+   "author": "Ole Worm",
+   "what": "Antiquarian publication of runic alphabets and Danish runestones. A landmark of Latin antiquarian rune study (Bureus's runic work, from 1599, is earlier)."
+  },
+  {
+   "date": "1908",
+   "work": "Guido von List, Das Geheimnis der Runen (Guido-von-List-Bücherei 1, 1908; place and publisher of the first edition to verify: the compiler gives Vienna, the checker recalls Gross-Lichterfelde: Paul Zillmann)",
+   "author": "Guido von List (1848–1919)",
+   "what": "Introduces the 18-rune 'Armanen' row (fa ur thurs os rit ka hagal not is ar sig tyr bar laf man yr eh gibor). List claimed it came to him in a revelation during months of blindness after a cataract operation in 1902, and keyed it to the 18 charms of Hávamál's Ljóðatal. It is the root of most völkisch and later occult rune systems."
+  },
+  {
+   "date": "1920s–1945",
+   "work": "Völkisch rune occultism and National Socialist use",
+   "author": "F. B. Marby, S. A. Kummer, R. J. Gorsleben, K. M. Wiligut; the SS and the Ahnenerbe (founded 1935)",
+   "what": "'Rune gymnastics' and 'rune yoga' (Marby, Kummer) developed out of List. The SS adopted a doubled Sig-rune as its insignia and used the Odal and 'life' runes. Wiligut, Himmler's adviser, designed the SS Totenkopfring with runic signs. Runology in this period was entangled with the regime (Mees 2008; Goodrick-Clarke 1985)."
+  },
+  {
+   "date": "1982",
+   "work": "Ralph Blum, The Book of Runes (Oracle Books / St. Martin's Press)",
+   "author": "Ralph Blum",
+   "what": "A popular rune-casting oracle sold with a set of rune stones. It introduces a blank 'Odin' rune and reorders the row. This is the source of much present-day divinatory rune meaning, and it is modern."
+  },
+  {
+   "date": "1999; 2014",
+   "work": "The Unicode Standard: Runic block U+16A0–U+16FF (Unicode 3.0); U+16F1–U+16F8 added in Unicode 7.0",
+   "author": "Unicode Consortium",
+   "what": "Encodes the Elder, Anglo-Saxon, Younger and medieval runes in one unified block. 7.0 added Tolkien's runes and the Franks Casket variants. The block also has the calendar symbols arlaug, tvímaðr and belgþor (U+16EE–U+16F0), used for golden numbers 17–19 on runic calendars."
+  }
+ ],
+ "claims": [
+  {
+   "claim": "The runes were adapted from a Mediterranean alphabet, most probably a North Italic (Alpine) alphabet of the Etruscan family.",
+   "standing": "disputed",
+   "evidence": "Several letter shapes and the left- or right-running direction match North Italic alphabets. Ludvig Wimmer (1874) argued for Latin; Sophus Bugge and Otto von Friesen argued for Greek, which the dates make hard to sustain. The North Italic thesis (Marstrander 1928 and later) is the most widely held, but there is no consensus.",
+   "sources": [
+    "Barnes 2012",
+    "Düwel 2008",
+    "Page 1987"
+   ]
+  },
+  {
+   "claim": "The word 'rune' meant 'secret, mystery' before it meant 'letter'.",
+   "standing": "documented",
+   "evidence": "Gothic rūna translates Greek mystērion in Wulfila's Bible (e.g. Mark 4:11). Old English rūn means 'secret, counsel, whisper', and Old Irish rún, a Celtic cognate, means 'secret'. This is lexical evidence only. It does not show that the letters were themselves secret or magical.",
+   "sources": [
+    "Page 1987",
+    "Barnes 2012"
+   ]
+  },
+  {
+   "claim": "Hávamál tells that Óðinn won the runes by hanging nine nights on a wind-swept tree, wounded by a spear and given to Óðinn, himself to himself (paraphrase).",
+   "standing": "legend",
+   "evidence": "Hávamál 138–139 in the Codex Regius (GKS 2365 4to, c. 1270). The poem is the only witness. Its date of composition is unknown, and it was written down in Christian Iceland.",
+   "sources": [
+    "Codex Regius, GKS 2365 4to",
+    "Neckel–Kuhn, Edda",
+    "Bellows 1923",
+    "Larrington 1996/2014"
+   ]
+  },
+  {
+   "claim": "Runes were held to be of divine origin.",
+   "standing": "documented",
+   "evidence": "Some carvers say so themselves. Noleby stone (Vg 63, c. 600): runo fahi raginakudo, 'I paint/write the rune derived from the gods'. Sparlösa (Vg 119, c. 800): rúnaR … rægi[n]kundu. Hávamál 80 later uses the same word: rúnum … reginkunnum. The belief is documented; the origin itself is legend.",
+   "sources": [
+    "Rundata",
+    "Düwel 2008",
+    "Barnes 2012"
+   ]
+  },
+  {
+   "claim": "The word alu, frequent on bracteates and other early objects, is a magical or protective formula.",
+   "standing": "disputed",
+   "evidence": "alu appears alone or in formulas on many 5th–6th-century bracteates, on the Elgesem stone (Norway), on the Lindholm amulet (Skåne), and stamped on cremation urns at Spong Hill, Norfolk. Proposed meanings include 'ale' (Old Norse ǫl, Old English ealu, perhaps a ritual drink), 'protection' or 'sanctuary' (compare Gothic alhs 'temple'), and a link to Hittite words for 'bewitched' (Polomé). Most runologists accept that it was a cultic or amuletic word but do not agree on its sense.",
+   "sources": [
+    "MacLeod & Mees 2006",
+    "Looijenga 2003",
+    "Düwel 2008",
+    "Flowers 1986"
+   ]
+  },
+  {
+   "claim": "The word laukaz 'leek' on bracteates is a fertility or prosperity charm.",
+   "standing": "disputed",
+   "evidence": "laukaz and abbreviations of it occur on many bracteates. The Fløksand scraper (Norway) reads lina laukaz, 'linen [and] leek'. Two literary parallels are cited. In Völsa þáttr (Flateyjarbók, 1387–94) a preserved horse-phallus is wrapped in linen and leeks. Sigrdrífumál 8 tells the reader to throw a leek into the cup against poison. Egill's verse calls the sick girl 'linden of leeks'. That the word worked as a charm is an interpretation; that it was written on amulets is documented.",
+   "sources": [
+    "MacLeod & Mees 2006",
+    "Düwel 2008",
+    "Flowers 1986"
+   ]
+  },
+  {
+   "claim": "Futhark rows written out on objects (Kylver, the Vadstena and Grumpan bracteates) were magical in purpose.",
+   "standing": "disputed",
+   "evidence": "Some scholars read a complete row as an amulet, like Latin abecedaria on late-antique amulets. Others read it as a writing exercise or a display of literacy. Kylver's grave context (inscription facing inward) supports the first reading for that stone only.",
+   "sources": [
+    "Page 1987",
+    "MacLeod & Mees 2006",
+    "Düwel 2008"
+   ]
+  },
+  {
+   "claim": "Runes were used for curses on monuments.",
+   "standing": "documented",
+   "evidence": "Björketorp (DR 360) and Stentoften (DR 357) threaten whoever breaks the stone. In the compiler's paraphrase of Björketorp: 'runes of power hidden here; restless through sorcery, to an insidious death, is he who breaks it'. Danish 10th-century stones such as Glavendrup (DR 209) end with 'Þórr vígi …', 'may Thor hallow [these runes / this memorial]', and a curse on anyone who removes the stone.",
+   "sources": [
+    "Rundata",
+    "MacLeod & Mees 2006",
+    "Barnes 2012"
+   ]
+  },
+  {
+   "claim": "Runes were used in healing charms.",
+   "standing": "documented",
+   "evidence": "The Ribe skull fragment (8th c.) invokes Óðinn and others against pain and a 'dwarf'. The Sigtuna copper amulet (11th c.) is a charm against a 'wolf' of sickness. Many medieval lead amulets carry runic charms. Egils saga ch. 72 describes a healing charm on whalebone, but that is literature, not evidence of practice.",
+   "sources": [
+    "MacLeod & Mees 2006",
+    "Rundata"
+   ]
+  },
+  {
+   "claim": "Medieval Christian Scandinavians wrote learned Latin and Hebrew-derived charms in runes (Ave Maria, Pater Noster, the SATOR square, AGLA).",
+   "standing": "documented",
+   "evidence": "Such charms appear on runic amulets and on sticks such as the Bryggen finds in Bergen (12th–14th c.). This is where runes meet the Latin magical tradition the rest of the Magical Scriptorium follows. The compiler could not check the individual inscriptions and signa in this run.",
+   "sources": [
+    "MacLeod & Mees 2006",
+    "Spurkland 2005"
+   ]
+  },
+  {
+   "claim": "Egils saga tells that Egill Skalla-Grímsson cured a girl by re-carving runes that an unskilled man had cut wrongly on a whalebone.",
+   "standing": "legend",
+   "evidence": "Egils saga (written c. 1220–1240), ch. 72 in the Íslenzk fornrit numbering; chapter numbers vary between editions. The saga reports the episode with a skaldic verse attributed to Egill. It shows what 13th-century Icelanders thought about runes, not what 10th-century people did.",
+   "sources": [
+    "Egils saga, ÍF II (1933)",
+    "Pálsson & Edwards 1976",
+    "Scudder 1997"
+   ]
+  },
+  {
+   "claim": "Tacitus describes the Germans casting runes for divination.",
+   "standing": "disputed",
+   "evidence": "Germania 10 (98 CE) describes cutting a branch of a fruit-bearing tree into slips, marking them with 'certain signs' (notis quibusdam), scattering them on a white cloth, and reading three. Tacitus does not say what the signs were. No inscription confirms runic lots, and the earliest runes are about half a century later than Tacitus.",
+   "sources": [
+    "Tacitus, Germania 10",
+    "Page 1987",
+    "Barnes 2012"
+   ]
+  },
+  {
+   "claim": "The Elder Futhark has known traditional names and meanings for each rune.",
+   "standing": "disputed",
+   "evidence": "No Elder Futhark name list survives. The names are reconstructed (asterisked) from the Old English Rune Poem, the Norwegian and Icelandic poems, the Abecedarium Nordmannicum and the Gothic letter names in Vienna, ÖNB Cod. 795. Several are uncertain: *perþ-, *algiz, *kaunan or *kenaz, *laguz or *laukaz. The poems' meanings are medieval and often differ from one another.",
+   "sources": [
+    "Dickins 1915",
+    "Halsall 1981",
+    "Page 1999",
+    "Barnes 2012"
+   ]
+  },
+  {
+   "claim": "The rune poems are magical texts.",
+   "standing": "disputed",
+   "evidence": "Their form is mnemonic and gnomic: name, then proverb or kenning. The Old English poem is explicitly Christian: its feoh stanza (paraphrased here, not quoted) says a man must share his wealth if he would win glory before the Lord. Modern occult use treats them as keys to rune meanings, but nothing in them describes magical use.",
+   "sources": [
+    "Dickins 1915",
+    "Halsall 1981",
+    "Page 1999"
+   ]
+  },
+  {
+   "claim": "Guido von List claimed that the 18 Armanen runes had been revealed to him and preserved a lost Aryan priestly wisdom.",
+   "standing": "attributed",
+   "evidence": "This is List's own claim in Das Geheimnis der Runen (1908): a revelation during his blindness after a 1902 cataract operation. No inscription or manuscript uses this row. It reworks the 16 Younger runes with two invented additions (eh, gibor), keyed to the 18 charms of Hávamál 146–163. Historians (Goodrick-Clarke) treat it as a modern invention within Ariosophy.",
+   "sources": [
+    "List 1908 (Flowers trans. 1988)",
+    "Goodrick-Clarke 1985"
+   ]
+  },
+  {
+   "claim": "The SS and other National Socialist bodies used runes as insignia.",
+   "standing": "documented",
+   "evidence": "The doubled Sig-rune of the SS (early 1930s), the Odal rune (SS Race and Settlement Main Office and other units), and the 'life' and 'death' runes (ᛉ upright and inverted) on Lebensborn material and death notices. These uses drew on List's tradition. German criminal law (StGB §86a) prohibits the public use of symbols of unconstitutional organisations, which covers the SS runes. (The 1945 bans were Allied occupation measures; §86a was inserted into the Code later, in 1968 by the checker's recollection: verify the year before printing it.) Today the Odal and 'life' runes also appear in far-right iconography, and the same letters are used without such meaning by historians, by modern Heathen religious groups, and in ordinary Scandinavian use.",
+   "sources": [
+    "Goodrick-Clarke 1985",
+    "Mees 2008"
+   ]
+  },
+  {
+   "claim": "The blank 'Odin' rune and the standard modern divinatory meanings are ancient.",
+   "standing": "legend",
+   "evidence": "The blank rune first appears in Ralph Blum's The Book of Runes (1982). Divinatory meanings come from 20th-century occult writers working from the medieval rune poems. No ancient source describes divination with individual runes.",
+   "sources": [
+    "Blum 1982",
+    "Page 1987"
+   ]
+  },
+  {
+   "claim": "erilaz, a title on several early inscriptions ('ek erilaz …'), means 'rune-master' or 'magician'.",
+   "standing": "disputed",
+   "evidence": "It has been connected to the Heruli, to the jarl rank, and to a professional class of carvers. Its sense is unknown.",
+   "sources": [
+    "Düwel 2008",
+    "Looijenga 2003",
+    "MacLeod & Mees 2006"
+   ]
+  },
+  {
+   "claim": "Runes were mainly a magical script.",
+   "standing": "disputed",
+   "evidence": "Against: most of the corpus is memorial stones, ownership and maker's marks, and, at Bryggen, business letters, love notes and jokes. In the 6th century Venantius Fortunatus mentions runes painted on ash tablets as a plain way to send a letter. R. I. Page famously divided runologists into the 'imaginative' and the 'sceptical' and counted himself among the sceptics. For: amuletic formulas, curse stones and healing charms do exist (above). The fair statement is that runes were an ordinary script that was also used for magic.",
+   "sources": [
+    "Page 1964; Page 1987",
+    "Spurkland 2005",
+    "MacLeod & Mees 2006",
+    "Flowers 1986"
+   ]
+  }
+ ],
+ "letters": [
+  {
+   "order": 1,
+   "name": "*fehu ('cattle, movable wealth')",
+   "value": "F",
+   "translit": "f",
+   "numeric": null,
+   "form": "A full-height vertical stave. On its right, two parallel straight branches rise up and to the right. The upper branch leaves the stave a little below its top (roughly a fifth to a quarter of the way down) and ends about level with the stave's top. The lower branch leaves the stave about halfway down and rises parallel to the first. Each branch reaches out about a third of the stave's height. No curves, no ring-ends. Compare the a-rune (no. 4), whose branches slope down from the stave instead of up. Exact attachment heights vary between inscriptions and fonts.",
+   "formConfidence": "medium",
+   "note": "It survives into the Younger Futhark and the futhorc with the same sound and the same name, 'wealth', in all three rune poems. Unicode: U+16A0 RUNIC LETTER FEHU FEOH FE F. Proto-Germanic names are modern reconstructions (asterisked). Only the Old English, Norwegian and Icelandic rune-poem names are attested. Fact-check: the compiler had the upper branch starting at the top of the stave and sloping up, which would carry it above the stave. In the normalised printed forms the checker knows, the tips of the branches, not their roots, reach the top line. This is corrected from the checker's knowledge, not from a table read in this run. Confirm it against the Unicode chart glyph or Noto Sans Runic.",
+   "char": "ᚠ",
+   "codepoint": "U+16A0",
+   "unicodeName": "RUNIC LETTER FEHU FEOH FE F",
+   "aett": 1,
+   "poemNames": {
+    "oldEnglish": "feoh ('wealth')",
+    "norwegian": "fé ('wealth')",
+    "icelandic": "fé ('wealth'; Latin gloss aurum)"
+   }
+  },
+  {
+   "order": 2,
+   "name": "*ūruz ('aurochs (wild ox)')",
+   "value": "U",
+   "translit": "u",
+   "numeric": null,
+   "form": "An angular inverted U. A full-height stave stands on the left. From its top, a straight stroke slopes down to the right. A second leg, starting lower, about a quarter to a third of the way down, drops vertically or slightly slanted to the baseline. The rune is about half as wide as it is tall. Some early inscriptions round the top.",
+   "formConfidence": "high",
+   "note": "The name differs between the poems. Old English has 'aurochs', the Norwegian poem 'slag', the Icelandic 'drizzle'. *ūruz is a modern reconstruction. Unicode: U+16A2 RUNIC LETTER URUZ UR U. Proto-Germanic names are modern reconstructions (asterisked). Only the Old English, Norwegian and Icelandic rune-poem names are attested.",
+   "char": "ᚢ",
+   "codepoint": "U+16A2",
+   "unicodeName": "RUNIC LETTER URUZ UR U",
+   "aett": 1,
+   "poemNames": {
+    "oldEnglish": "ūr ('aurochs')",
+    "norwegian": "úr ('slag, dross')",
+    "icelandic": "úr ('drizzle, shower'; Latin gloss imber)"
+   }
+  },
+  {
+   "order": 3,
+   "name": "*þurisaz ('giant (þurs)')",
+   "value": "Þ (th)",
+   "translit": "þ",
+   "numeric": null,
+   "form": "A full-height vertical stave with a pointed triangular bow on its right, at mid-height. A straight stroke leaves the stave about a third of the way down and runs down-right to a point about a third of the height out. A second straight stroke returns down-left to the stave about two-thirds down. The stave closes the triangle. Some inscriptions round the bow or set it higher.",
+   "formConfidence": "high",
+   "note": "This is the 'þurs' rune that Skírnir threatens to carve in Skírnismál 36 (see quotations). The Norwegian poem says þurs 'causes the sickness of women', and the Icelandic poem calls it 'the torment of women'. Unicode: U+16A6 RUNIC LETTER THURISAZ THURS THORN. Proto-Germanic names are modern reconstructions (asterisked). Only the Old English, Norwegian and Icelandic rune-poem names are attested.",
+   "char": "ᚦ",
+   "codepoint": "U+16A6",
+   "unicodeName": "RUNIC LETTER THURISAZ THURS THORN",
+   "aett": 1,
+   "poemNames": {
+    "oldEnglish": "þorn ('thorn')",
+    "norwegian": "þurs ('giant')",
+    "icelandic": "þurs ('giant'; Latin gloss Saturnus)"
+   }
+  },
+  {
+   "order": 4,
+   "name": "*ansuz ('a god (one of the Æsir)')",
+   "value": "A",
+   "translit": "a",
+   "numeric": null,
+   "form": "A full-height vertical stave. On its right, two parallel straight branches slope DOWN and to the right. The upper branch starts at the top of the stave, the lower about a third of the way down. Each reaches out about a third of the height. Compare the f-rune (no. 1), whose branches rise instead.",
+   "formConfidence": "high",
+   "note": "In the Anglo-Saxon futhorc this form split into ōs ᚩ, āc ᚪ and æsc ᚫ. In the Younger Futhark the rune stands for a nasal a/o. The Norwegian poem reads óss as 'estuary', the Icelandic poem as 'god'. Unicode: U+16A8 RUNIC LETTER ANSUZ A. Proto-Germanic names are modern reconstructions (asterisked). Only the Old English, Norwegian and Icelandic rune-poem names are attested.",
+   "char": "ᚨ",
+   "codepoint": "U+16A8",
+   "unicodeName": "RUNIC LETTER ANSUZ A",
+   "aett": 1,
+   "poemNames": {
+    "oldEnglish": "ōs (the futhorc gives this name to a new rune ᚩ)",
+    "norwegian": "óss ('river-mouth')",
+    "icelandic": "óss ('god'; Latin gloss Iupiter)"
+   }
+  },
+  {
+   "order": 5,
+   "name": "*raidō ('riding, journey')",
+   "value": "R",
+   "translit": "r",
+   "numeric": null,
+   "form": "An angular capital R. A full-height stave. From its top, a straight stroke runs down-right to a point. A second stroke returns down-left to the stave at about mid-height, enclosing a triangular pocket. From that junction, a straight leg runs diagonally down-right to the baseline and ends below the pocket's outer point.",
+   "formConfidence": "high",
+   "note": "Unicode: U+16B1 RUNIC LETTER RAIDO RAD REID R. Proto-Germanic names are modern reconstructions (asterisked). Only the Old English, Norwegian and Icelandic rune-poem names are attested.",
+   "char": "ᚱ",
+   "codepoint": "U+16B1",
+   "unicodeName": "RUNIC LETTER RAIDO RAD REID R",
+   "aett": 1,
+   "poemNames": {
+    "oldEnglish": "rād ('riding')",
+    "norwegian": "ræið ('riding')",
+    "icelandic": "reið ('riding'; Latin gloss iter)"
+   }
+  },
+  {
+   "order": 6,
+   "name": "*kaunan (or *kenaz) ('ulcer, sore (Norse); torch (Old English)')",
+   "value": "K",
+   "translit": "k",
+   "numeric": null,
+   "form": "In the oldest inscriptions it is not full height. It is a small angle like '<': two short straight strokes meet at a point on the left and open to the right. It sits in the upper half of the writing band. Many fonts draw ᚲ at full height. Later forms differ: Anglo-Saxon cēn ᚳ is a stave with two branches falling from its top, and Younger kaun ᚴ is a stave with one branch rising from its middle.",
+   "formConfidence": "medium",
+   "note": "Both names, *kaunan and *kenaz, are reconstructions. Handbooks differ on which to print. The Old English and Norse poems give different senses. Unicode: U+16B2 RUNIC LETTER KAUNA. Proto-Germanic names are modern reconstructions (asterisked). Only the Old English, Norwegian and Icelandic rune-poem names are attested. Fact-check: formConfidence lowered from high. The size and position of the early '<' form (upper half or middle of the band) vary between inscriptions and between handbook tables, and none could be checked in this run.",
+   "char": "ᚲ",
+   "codepoint": "U+16B2",
+   "unicodeName": "RUNIC LETTER KAUNA",
+   "aett": 1,
+   "poemNames": {
+    "oldEnglish": "cēn ('torch')",
+    "norwegian": "kaun ('sore, ulcer')",
+    "icelandic": "kaun ('sore'; Latin gloss flagella)"
+   }
+  },
+  {
+   "order": 7,
+   "name": "*gebō ('gift')",
+   "value": "G",
+   "translit": "g",
+   "numeric": null,
+   "form": "Two full-height straight diagonals that cross at the centre: an X filling the band. There is no stave.",
+   "formConfidence": "high",
+   "note": "The Younger Futhark dropped it, so there is no Norse rune-poem stanza for it. Unicode: U+16B7 RUNIC LETTER GEBO GYFU G. Proto-Germanic names are modern reconstructions (asterisked). Only the Old English, Norwegian and Icelandic rune-poem names are attested.",
+   "char": "ᚷ",
+   "codepoint": "U+16B7",
+   "unicodeName": "RUNIC LETTER GEBO GYFU G",
+   "aett": 1,
+   "poemNames": {
+    "oldEnglish": "gyfu ('gift')",
+    "norwegian": "(dropped from the Younger Futhark)",
+    "icelandic": "(dropped)"
+   }
+  },
+  {
+   "order": 8,
+   "name": "*wunjō ('joy')",
+   "value": "W",
+   "translit": "w",
+   "numeric": null,
+   "form": "An angular P. A full-height stave with a closed triangular flag on its upper right. A straight stroke runs from the stave's top down-right to a point. A second returns down-left to the stave between a third and half of the way down.",
+   "formConfidence": "high",
+   "note": "The Anglo-Saxon wynn passed into Old English book-hand as the letter ƿ (wynn), which scribes used for w. Unicode: U+16B9 RUNIC LETTER WUNJO WYNN W. Proto-Germanic names are modern reconstructions (asterisked). Only the Old English, Norwegian and Icelandic rune-poem names are attested.",
+   "char": "ᚹ",
+   "codepoint": "U+16B9",
+   "unicodeName": "RUNIC LETTER WUNJO WYNN W",
+   "aett": 1,
+   "poemNames": {
+    "oldEnglish": "wynn ('joy')",
+    "norwegian": "(dropped)",
+    "icelandic": "(dropped)"
+   }
+  },
+  {
+   "order": 9,
+   "name": "*hagalaz ('hail')",
+   "value": "H",
+   "translit": "h",
+   "numeric": null,
+   "form": "Two parallel full-height staves joined by one straight crossbar. The bar runs diagonally from the upper part of the left stave down to the lower part of the right stave. Continental and Anglo-Saxon inscriptions often have two parallel crossbars instead (ᚻ, U+16BB, 'haegl'). The Younger Futhark has the different forms ᚼ and ᚽ.",
+   "formConfidence": "high",
+   "note": "Which form appears where is the compiler's recollection of the handbooks (single bar in Scandinavia, double bar on the continent and in England); check it against Barnes 2012 or Düwel 2008. Unicode: U+16BA RUNIC LETTER HAGLAZ H. Proto-Germanic names are modern reconstructions (asterisked). Only the Old English, Norwegian and Icelandic rune-poem names are attested.",
+   "char": "ᚺ",
+   "codepoint": "U+16BA",
+   "unicodeName": "RUNIC LETTER HAGLAZ H",
+   "aett": 2,
+   "poemNames": {
+    "oldEnglish": "hægl ('hail')",
+    "norwegian": "hagall ('hail')",
+    "icelandic": "hagall ('hail'; Latin gloss grando)"
+   }
+  },
+  {
+   "order": 10,
+   "name": "*naudiz ('need, constraint')",
+   "value": "N",
+   "translit": "n",
+   "numeric": null,
+   "form": "A full-height vertical stave crossed at mid-height by one short straight stroke that slopes down from left to right. The stroke projects a little on both sides of the stave.",
+   "formConfidence": "high",
+   "note": "Sigrdrífumál 7 tells the reader to mark 'Nauð' on the fingernail as an ale-rune (see quotations). Unicode: U+16BE RUNIC LETTER NAUDIZ NYD NAUD N. Proto-Germanic names are modern reconstructions (asterisked). Only the Old English, Norwegian and Icelandic rune-poem names are attested.",
+   "char": "ᚾ",
+   "codepoint": "U+16BE",
+   "unicodeName": "RUNIC LETTER NAUDIZ NYD NAUD N",
+   "aett": 2,
+   "poemNames": {
+    "oldEnglish": "nȳd ('need')",
+    "norwegian": "nauðr ('constraint')",
+    "icelandic": "nauð ('need'; Latin gloss opera)"
+   }
+  },
+  {
+   "order": 11,
+   "name": "*īsaz ('ice')",
+   "value": "I",
+   "translit": "i",
+   "numeric": null,
+   "form": "A single full-height vertical stave.",
+   "formConfidence": "high",
+   "note": "Unicode: U+16C1 RUNIC LETTER ISAZ IS ISS I. Proto-Germanic names are modern reconstructions (asterisked). Only the Old English, Norwegian and Icelandic rune-poem names are attested.",
+   "char": "ᛁ",
+   "codepoint": "U+16C1",
+   "unicodeName": "RUNIC LETTER ISAZ IS ISS I",
+   "aett": 2,
+   "poemNames": {
+    "oldEnglish": "īs ('ice')",
+    "norwegian": "íss ('ice')",
+    "icelandic": "íss ('ice'; Latin gloss glacies)"
+   }
+  },
+  {
+   "order": 12,
+   "name": "*jēra ('year, (good) harvest')",
+   "value": "J",
+   "translit": "j",
+   "numeric": null,
+   "form": "The standard (Unicode) form: two separate angular hooks set on a diagonal. Each hook is two short straight strokes meeting at an angle. One sits upper-left, the other lower-right. Each opens towards the other. They overlap in height across the middle of the band but do not touch. Early inscriptions vary more on this rune than on any other: some put a stave through the middle, some round the hooks.",
+   "formConfidence": "medium",
+   "note": "Old j became a in the Younger Futhark (ár), because Proto-Norse lost initial j-, so *jāra became ár. The Anglo-Saxon gēr has its own form ᛄ (U+16C4). Unicode: U+16C3 RUNIC LETTER JERAN J. Proto-Germanic names are modern reconstructions (asterisked). Only the Old English, Norwegian and Icelandic rune-poem names are attested. Fact-check: formConfidence stays medium. The description is consistent with the standard normalised form as the checker knows it, but it was not checked against a printed table in this run.",
+   "char": "ᛃ",
+   "codepoint": "U+16C3",
+   "unicodeName": "RUNIC LETTER JERAN J",
+   "aett": 2,
+   "poemNames": {
+    "oldEnglish": "gēr ('year')",
+    "norwegian": "ár ('plenty, good year')",
+    "icelandic": "ár ('plenty'; Latin gloss annus)"
+   }
+  },
+  {
+   "order": 13,
+   "name": "*ī(h)waz / *eihwaz ('yew')",
+   "value": "Ï (a vowel near i or e; value disputed)",
+   "translit": "ï (also æ, ei)",
+   "numeric": null,
+   "form": "A full-height vertical stave. A short straight stroke runs from its top, slanting down to the right, about a fifth of the height. A matching stroke runs from its foot, slanting up to the left. The figure is point-symmetric, like a stretched S or Z on a vertical spine. Mirror forms also occur, with the top branch to the left.",
+   "formConfidence": "medium",
+   "note": "Its sound value is one of the open questions of runology. The yew name passed to a different rune in the Younger Futhark (see no. 15). Unicode: U+16C7 RUNIC LETTER IWAZ EOH. Proto-Germanic names are modern reconstructions (asterisked). Only the Old English, Norwegian and Icelandic rune-poem names are attested. Fact-check: formConfidence stays medium. The description is consistent with the standard normalised form as the checker knows it, but it was not checked against a printed table in this run.",
+   "char": "ᛇ",
+   "codepoint": "U+16C7",
+   "unicodeName": "RUNIC LETTER IWAZ EOH",
+   "aett": 2,
+   "poemNames": {
+    "oldEnglish": "ēoh ('yew')",
+    "norwegian": "(dropped; the Younger yew-name ýr went to the z/R-rune)",
+    "icelandic": "(dropped)"
+   }
+  },
+  {
+   "order": 14,
+   "name": "*perþ- ('meaning unknown')",
+   "value": "P",
+   "translit": "p",
+   "numeric": null,
+   "form": "A full-height vertical stave with an open figure on its right, the same at top and foot. At the top, a short straight stroke runs from the stave's top down-right to an inner point, and a second short stroke runs from that point up-right again, so the top is a V lying against the stave. At the foot is the mirror image: a stroke from the stave's foot runs up-right to an inner point, then down-right. The two inner points sit about a third and two-thirds of the way down, and the right side stays open. Roughly, it is a b-rune (ᛒ) whose two bows have been opened outwards, or a W turned on its side against the stave. Do not draw from this text alone.",
+   "formConfidence": "low",
+   "note": "It is the rarest rune of the row and is almost absent from early inscriptions. The meaning of peorð is unknown (guesses include a dice-cup, a pear tree or a game). Draw from the Noto Sans Runic glyph and check against Kylver; the compiler is less sure of the exact angles here than for the common runes. Unicode: U+16C8 RUNIC LETTER PERTHO PEORTH P. Proto-Germanic names are modern reconstructions (asterisked). Only the Old English, Norwegian and Icelandic rune-poem names are attested. Fact-check: formConfidence lowered from medium to low. The compiler's description was: \"A full-height vertical stave with two open angles on its right, one at the top and one at the foot, like a cup lying on its side and opening to the right. From the stave's top, a short straight stroke runs down-right, then turns straight down for a short distance. From the stave's foot, a mirror stroke runs up-right, then turns straight up. The two short ends do not meet, so the right side is open across the middle.\" The checker recalls the normalised form instead as the opened-out V shapes now given in 'form'. Neither description could be checked against a printed table or the font in this run, and early inscriptional forms of this rare rune vary. Take the shape only from the Noto Sans Runic glyph, and check it against Kylver and a handbook table (Barnes 2012; Düwel 2008).",
+   "char": "ᛈ",
+   "codepoint": "U+16C8",
+   "unicodeName": "RUNIC LETTER PERTHO PEORTH P",
+   "aett": 2,
+   "poemNames": {
+    "oldEnglish": "peorð (meaning unknown)",
+    "norwegian": "(dropped)",
+    "icelandic": "(dropped)"
+   }
+  },
+  {
+   "order": 15,
+   "name": "*algiz (reconstruction uncertain) ('elk? protection?')",
+   "value": "Z, later R (final -z of Proto-Germanic, later a palatal r)",
+   "translit": "z (later R)",
+   "numeric": null,
+   "form": "A full-height vertical stave. Two straight branches spring from it between half and two-thirds of the way up. They rise diagonally up-left and up-right and end about level with the stave's top: an upward fork like a trident or Greek psi. Some Elder inscriptions invert it, with the branches pointing down. The inverted form became standard as Younger ýr ᛦ (U+16E6).",
+   "formConfidence": "high",
+   "note": "This is the rune modern writers call the 'life rune' (Lebensrune). As a symbol it was used in National Socialist Germany, e.g. by the Lebensborn organisation and on death notices; see claims and cautions. The rune poems do not support a reading as 'protection'. Unicode: U+16C9 RUNIC LETTER ALGIZ EOLHX. Proto-Germanic names are modern reconstructions (asterisked). Only the Old English, Norwegian and Icelandic rune-poem names are attested.",
+   "char": "ᛉ",
+   "codepoint": "U+16C9",
+   "unicodeName": "RUNIC LETTER ALGIZ EOLHX",
+   "aett": 2,
+   "poemNames": {
+    "oldEnglish": "eolhx / eolh-secg ('elk-sedge')",
+    "norwegian": "ýr ('yew'; the inverted form ᛦ)",
+    "icelandic": "ýr ('bow'; Latin gloss arcus)"
+   }
+  },
+  {
+   "order": 16,
+   "name": "*sōwilō ('sun')",
+   "value": "S",
+   "translit": "s",
+   "numeric": null,
+   "form": "A vertical zigzag of straight strokes, like a lightning flash. In the standard form there are three strokes: a short steep stroke, a longer diagonal running back across, and a second short steep stroke, alternating direction from top to bottom. Inscriptions have from three to about eight strokes, in either orientation.",
+   "formConfidence": "medium",
+   "note": "Copy the exact orientation from the Noto Sans Runic glyph; inscriptions vary too much for one 'correct' drawing. The doubled 'Sig rune' of the SS was drawn from this rune (see claims). In the Younger Futhark the s-rune is ᛋ (long-branch) or ᛌ (short-twig). Unicode: U+16CA RUNIC LETTER SOWILO S. Proto-Germanic names are modern reconstructions (asterisked). Only the Old English, Norwegian and Icelandic rune-poem names are attested. Fact-check: formConfidence stays medium. The description is consistent with the standard normalised form as the checker knows it, but it was not checked against a printed table in this run.",
+   "char": "ᛊ",
+   "codepoint": "U+16CA",
+   "unicodeName": "RUNIC LETTER SOWILO S",
+   "aett": 2,
+   "poemNames": {
+    "oldEnglish": "sigel ('sun')",
+    "norwegian": "sól ('sun')",
+    "icelandic": "sól ('sun'; Latin gloss rota)"
+   }
+  },
+  {
+   "order": 17,
+   "name": "*tīwaz ('the god Tiw / Týr')",
+   "value": "T",
+   "translit": "t",
+   "numeric": null,
+   "form": "An upward arrow. A full-height stave with two short straight strokes falling from its top, one to the left and one to the right. They reach down a quarter to a third of the height.",
+   "formConfidence": "high",
+   "note": "Sigrdrífumál 6 says victory-runes are carved on the sword-hilt, 'naming Týr twice'. Many scholars connect that line to this rune. Unicode: U+16CF RUNIC LETTER TIWAZ TIR TYR T. Proto-Germanic names are modern reconstructions (asterisked). Only the Old English, Norwegian and Icelandic rune-poem names are attested.",
+   "char": "ᛏ",
+   "codepoint": "U+16CF",
+   "unicodeName": "RUNIC LETTER TIWAZ TIR TYR T",
+   "aett": 3,
+   "poemNames": {
+    "oldEnglish": "Tīr (in the poem, a guiding star or sign)",
+    "norwegian": "Týr (the god)",
+    "icelandic": "Týr ('the one-handed god'; Latin gloss Mars)"
+   }
+  },
+  {
+   "order": 18,
+   "name": "*berkanan ('birch (twig)')",
+   "value": "B",
+   "translit": "b",
+   "numeric": null,
+   "form": "An angular capital B. A full-height stave with two closed triangular bows on its right, one above the other. Two straight strokes go out from the stave's top to a point and back to its middle. Two more go out from the middle to a point and back to the foot. Early forms sometimes separate the bows slightly or round them.",
+   "formConfidence": "high",
+   "note": "Unicode: U+16D2 RUNIC LETTER BERKANAN BEORC BJARKAN B. Proto-Germanic names are modern reconstructions (asterisked). Only the Old English, Norwegian and Icelandic rune-poem names are attested.",
+   "char": "ᛒ",
+   "codepoint": "U+16D2",
+   "unicodeName": "RUNIC LETTER BERKANAN BEORC BJARKAN B",
+   "aett": 3,
+   "poemNames": {
+    "oldEnglish": "beorc ('birch' or 'poplar')",
+    "norwegian": "bjarkan ('birch-twig')",
+    "icelandic": "bjarkan ('birch-twig'; Latin gloss abies)"
+   }
+  },
+  {
+   "order": 19,
+   "name": "*ehwaz ('horse')",
+   "value": "E",
+   "translit": "e",
+   "numeric": null,
+   "form": "An angular M with a shallow middle. Two parallel full-height staves. A straight stroke runs from the top of the left stave down-right to a point midway between them, about a third of the height down. A second rises from that point to the top of the right stave. The middle V does not reach the baseline.",
+   "formConfidence": "high",
+   "note": "Unicode: U+16D6 RUNIC LETTER EHWAZ EH E. Proto-Germanic names are modern reconstructions (asterisked). Only the Old English, Norwegian and Icelandic rune-poem names are attested.",
+   "char": "ᛖ",
+   "codepoint": "U+16D6",
+   "unicodeName": "RUNIC LETTER EHWAZ EH E",
+   "aett": 3,
+   "poemNames": {
+    "oldEnglish": "eh ('horse')",
+    "norwegian": "(dropped)",
+    "icelandic": "(dropped)"
+   }
+  },
+  {
+   "order": 20,
+   "name": "*mannaz ('man, human being')",
+   "value": "M",
+   "translit": "m",
+   "numeric": null,
+   "form": "Two parallel full-height staves with two straight diagonals crossing between them in the upper half. One runs from the top of the left stave to about mid-height on the right stave. The other runs from the top of the right stave to about mid-height on the left. Together they make an X between the staves.",
+   "formConfidence": "high",
+   "note": "The Younger Futhark m is a different form: ᛘ (long-branch) or ᛙ (short-twig). Unicode: U+16D7 RUNIC LETTER MANNAZ MAN M. Proto-Germanic names are modern reconstructions (asterisked). Only the Old English, Norwegian and Icelandic rune-poem names are attested.",
+   "char": "ᛗ",
+   "codepoint": "U+16D7",
+   "unicodeName": "RUNIC LETTER MANNAZ MAN M",
+   "aett": 3,
+   "poemNames": {
+    "oldEnglish": "mann ('man')",
+    "norwegian": "maðr ('man')",
+    "icelandic": "maðr ('man'; Latin gloss homo)"
+   }
+  },
+  {
+   "order": 21,
+   "name": "*laguz (or *laukaz) ('water, lake (or leek)')",
+   "value": "L",
+   "translit": "l",
+   "numeric": null,
+   "form": "A full-height vertical stave with one short straight branch. It leaves the top of the stave and slopes down to the right for about a third of the height.",
+   "formConfidence": "high",
+   "note": "Some runologists reconstruct the Elder name as *laukaz 'leek', not *laguz 'water', because laukaz is a common word on bracteates. This is a disputed proposal. The rune poems all give the 'water' name. Unicode: U+16DA RUNIC LETTER LAUKAZ LAGU LOGR L. Proto-Germanic names are modern reconstructions (asterisked). Only the Old English, Norwegian and Icelandic rune-poem names are attested.",
+   "char": "ᛚ",
+   "codepoint": "U+16DA",
+   "unicodeName": "RUNIC LETTER LAUKAZ LAGU LOGR L",
+   "aett": 3,
+   "poemNames": {
+    "oldEnglish": "lagu ('water, sea')",
+    "norwegian": "lǫgr ('water, waterfall')",
+    "icelandic": "lǫgr ('water'; Latin gloss lacus)"
+   }
+  },
+  {
+   "order": 22,
+   "name": "*ingwaz ('the god Ing (Yngvi)')",
+   "value": "Ŋ (ng)",
+   "translit": "ŋ (ng)",
+   "numeric": null,
+   "form": "A closed square standing on one corner (a diamond, ◇). It is usually smaller than the other runes and set in the upper part or middle of the band. Some inscriptions draw it full height or put it on a stave. The Anglo-Saxon form ᛝ (U+16DD) is a diamond whose sides run on into crossing tails.",
+   "formConfidence": "medium",
+   "note": "Size and position vary between the early rows. The compiler could not check Kylver's form in this run. Unicode: U+16DC RUNIC LETTER INGWAZ. Proto-Germanic names are modern reconstructions (asterisked). Only the Old English, Norwegian and Icelandic rune-poem names are attested. Fact-check: formConfidence stays medium. The description is consistent with the standard normalised form as the checker knows it, but it was not checked against a printed table in this run.",
+   "char": "ᛜ",
+   "codepoint": "U+16DC",
+   "unicodeName": "RUNIC LETTER INGWAZ",
+   "aett": 3,
+   "poemNames": {
+    "oldEnglish": "Ing (a hero or god 'first seen among the East Danes')",
+    "norwegian": "(dropped)",
+    "icelandic": "(dropped)"
+   }
+  },
+  {
+   "order": 23,
+   "name": "*dagaz ('day')",
+   "value": "D",
+   "translit": "d",
+   "numeric": null,
+   "form": "Two parallel full-height staves joined by two straight diagonals that cross at the centre. One runs from the top of the left stave to the foot of the right stave, the other from the top of the right stave to the foot of the left. The result looks like an hourglass lying on its side, closed by the two staves.",
+   "formConfidence": "high",
+   "note": "On Kylver, d comes before o. On some bracteate rows and in the Old English poem it comes after o (ēþel, then dæg). Unicode: U+16DE RUNIC LETTER DAGAZ DAEG D. Proto-Germanic names are modern reconstructions (asterisked). Only the Old English, Norwegian and Icelandic rune-poem names are attested.",
+   "char": "ᛞ",
+   "codepoint": "U+16DE",
+   "unicodeName": "RUNIC LETTER DAGAZ DAEG D",
+   "aett": 3,
+   "poemNames": {
+    "oldEnglish": "dæg ('day')",
+    "norwegian": "(dropped)",
+    "icelandic": "(dropped)"
+   }
+  },
+  {
+   "order": 24,
+   "name": "*ōþalan / *ōþila ('inherited land, ancestral estate')",
+   "value": "O",
+   "translit": "o",
+   "numeric": null,
+   "form": "A diamond (a square on its corner) filling the upper two-thirds of the band. Its two lower sides run on past the bottom corner, cross there, and continue as two short legs splayed down-left and down-right to the baseline. There is no stave.",
+   "formConfidence": "high",
+   "note": "This is the 'odal rune'. In National Socialist Germany a variant was used by the SS Race and Settlement Main Office and by other units. A variant with serifs or 'wings' appears in post-war far-right iconography. The plain letter form above is the historical one. Do not print the winged variant. Unicode: U+16DF RUNIC LETTER OTHALAN ETHEL O. Proto-Germanic names are modern reconstructions (asterisked). Only the Old English, Norwegian and Icelandic rune-poem names are attested.",
+   "char": "ᛟ",
+   "codepoint": "U+16DF",
+   "unicodeName": "RUNIC LETTER OTHALAN ETHEL O",
+   "aett": 3,
+   "poemNames": {
+    "oldEnglish": "ēþel ('homeland, estate')",
+    "norwegian": "(dropped)",
+    "icelandic": "(dropped)"
+   }
+  }
+ ],
+ "lettersSource": "The Elder Futhark, 24 runes in three ættir of eight, in the conventional modern order of the handbooks (Barnes 2012; Düwel 2008). That order follows the Grumpan and Vadstena bracteates for … i j ï p z … and Kylver for the ending … ŋ d o. Some editions print … ŋ o d, as in the Old English poem's ēþel–dæg. Characters, code points and Unicode names come from the Runic block U+16A0–U+16FF, checked in this session against the Unicode Character Database 14.0 (Python unicodedata). The glyphs should be set in Noto Sans Runic (@fontsource/noto-sans-runic 5.3.0, runic subset U+16A0–16F8; see understand.md §7), not drawn. The 'form' fields describe the normalised printed forms of the handbooks and Unicode charts, with the main inscriptional variants, so the page can explain a shape or check the font. The forms were not traced from any single inscription. Rune-poem names follow Dickins 1915 and Halsall 1981. Proto-Germanic names are modern reconstructions. Runes have no numerical values in the early tradition, so numeric is null. Supporting rows are given under youngerFuthark, futhorcAdditions and armanenRow (the last for the 'modern invention' panel only). Fact-check (2026-10-20): the 54 characters, code points and Unicode names in letters, youngerFuthark and futhorcAdditions were re-checked mechanically against UCD 14.0 (Python unicodedata). All match, and the Elder row has 24 runes in three ættir of eight. The statements about the Kylver, Grumpan and Vadstena orders were not checked.",
+ "youngerFuthark": [
+  {
+   "order": 1,
+   "name": "fé",
+   "char": "ᚠ",
+   "codepoint": "U+16A0",
+   "unicodeName": "RUNIC LETTER FEHU FEOH FE F",
+   "values": "f, v"
+  },
+  {
+   "order": 2,
+   "name": "úr",
+   "char": "ᚢ",
+   "codepoint": "U+16A2",
+   "unicodeName": "RUNIC LETTER URUZ UR U",
+   "values": "u, o, v, w"
+  },
+  {
+   "order": 3,
+   "name": "þurs",
+   "char": "ᚦ",
+   "codepoint": "U+16A6",
+   "unicodeName": "RUNIC LETTER THURISAZ THURS THORN",
+   "values": "þ, ð"
+  },
+  {
+   "order": 4,
+   "name": "óss",
+   "char": "ᚬ",
+   "codepoint": "U+16AC",
+   "unicodeName": "RUNIC LETTER LONG-BRANCH-OSS O",
+   "values": "nasal ą, later o"
+  },
+  {
+   "order": 5,
+   "name": "reið",
+   "char": "ᚱ",
+   "codepoint": "U+16B1",
+   "unicodeName": "RUNIC LETTER RAIDO RAD REID R",
+   "values": "r"
+  },
+  {
+   "order": 6,
+   "name": "kaun",
+   "char": "ᚴ",
+   "codepoint": "U+16B4",
+   "unicodeName": "RUNIC LETTER KAUN K",
+   "values": "k, g"
+  },
+  {
+   "order": 7,
+   "name": "hagall",
+   "char": "ᚼ",
+   "codepoint": "U+16BC",
+   "unicodeName": "RUNIC LETTER LONG-BRANCH-HAGALL H",
+   "values": "h"
+  },
+  {
+   "order": 8,
+   "name": "nauðr",
+   "char": "ᚾ",
+   "codepoint": "U+16BE",
+   "unicodeName": "RUNIC LETTER NAUDIZ NYD NAUD N",
+   "values": "n"
+  },
+  {
+   "order": 9,
+   "name": "íss",
+   "char": "ᛁ",
+   "codepoint": "U+16C1",
+   "unicodeName": "RUNIC LETTER ISAZ IS ISS I",
+   "values": "i, e, j"
+  },
+  {
+   "order": 10,
+   "name": "ár",
+   "char": "ᛅ",
+   "codepoint": "U+16C5",
+   "unicodeName": "RUNIC LETTER LONG-BRANCH-AR AE",
+   "values": "a, æ"
+  },
+  {
+   "order": 11,
+   "name": "sól",
+   "char": "ᛋ",
+   "codepoint": "U+16CB",
+   "unicodeName": "RUNIC LETTER SIGEL LONG-BRANCH-SOL S",
+   "values": "s"
+  },
+  {
+   "order": 12,
+   "name": "Týr",
+   "char": "ᛏ",
+   "codepoint": "U+16CF",
+   "unicodeName": "RUNIC LETTER TIWAZ TIR TYR T",
+   "values": "t, d"
+  },
+  {
+   "order": 13,
+   "name": "bjarkan",
+   "char": "ᛒ",
+   "codepoint": "U+16D2",
+   "unicodeName": "RUNIC LETTER BERKANAN BEORC BJARKAN B",
+   "values": "b, p"
+  },
+  {
+   "order": 14,
+   "name": "maðr",
+   "char": "ᛘ",
+   "codepoint": "U+16D8",
+   "unicodeName": "RUNIC LETTER LONG-BRANCH-MADR M",
+   "values": "m"
+  },
+  {
+   "order": 15,
+   "name": "lǫgr",
+   "char": "ᛚ",
+   "codepoint": "U+16DA",
+   "unicodeName": "RUNIC LETTER LAUKAZ LAGU LOGR L",
+   "values": "l"
+  },
+  {
+   "order": 16,
+   "name": "ýr",
+   "char": "ᛦ",
+   "codepoint": "U+16E6",
+   "unicodeName": "RUNIC LETTER LONG-BRANCH-YR",
+   "values": "R (later y)"
+  }
+ ],
+ "futhorcAdditions": [
+  {
+   "name": "ōs",
+   "char": "ᚩ",
+   "codepoint": "U+16A9",
+   "unicodeName": "RUNIC LETTER OS O",
+   "value": "o (the futhorc's 4th rune; replaces ansuz in that slot)"
+  },
+  {
+   "name": "āc 'oak'",
+   "char": "ᚪ",
+   "codepoint": "U+16AA",
+   "unicodeName": "RUNIC LETTER AC A",
+   "value": "a"
+  },
+  {
+   "name": "æsc 'ash-tree'",
+   "char": "ᚫ",
+   "codepoint": "U+16AB",
+   "unicodeName": "RUNIC LETTER AESC",
+   "value": "æ"
+  },
+  {
+   "name": "ȳr",
+   "char": "ᚣ",
+   "codepoint": "U+16A3",
+   "unicodeName": "RUNIC LETTER YR",
+   "value": "y"
+  },
+  {
+   "name": "īor",
+   "char": "ᛡ",
+   "codepoint": "U+16E1",
+   "unicodeName": "RUNIC LETTER IOR",
+   "value": "io / ia"
+  },
+  {
+   "name": "ēar",
+   "char": "ᛠ",
+   "codepoint": "U+16E0",
+   "unicodeName": "RUNIC LETTER EAR",
+   "value": "ea"
+  },
+  {
+   "name": "cweorþ",
+   "char": "ᛢ",
+   "codepoint": "U+16E2",
+   "unicodeName": "RUNIC LETTER CWEORTH",
+   "value": "kw (manuscript and late)"
+  },
+  {
+   "name": "calc",
+   "char": "ᛣ",
+   "codepoint": "U+16E3",
+   "unicodeName": "RUNIC LETTER CALC",
+   "value": "k (Northumbrian)"
+  },
+  {
+   "name": "stān",
+   "char": "ᛥ",
+   "codepoint": "U+16E5",
+   "unicodeName": "RUNIC LETTER STAN",
+   "value": "st (manuscript)"
+  },
+  {
+   "name": "gār",
+   "char": "ᚸ",
+   "codepoint": "U+16B8",
+   "unicodeName": "RUNIC LETTER GAR",
+   "value": "g (Northumbrian)"
+  },
+  {
+   "name": "cēn",
+   "char": "ᚳ",
+   "codepoint": "U+16B3",
+   "unicodeName": "RUNIC LETTER CEN",
+   "value": "c (the futhorc form of the k-rune)"
+  },
+  {
+   "name": "gēr",
+   "char": "ᛄ",
+   "codepoint": "U+16C4",
+   "unicodeName": "RUNIC LETTER GER",
+   "value": "j/g (the futhorc form of the j-rune)"
+  },
+  {
+   "name": "hægl",
+   "char": "ᚻ",
+   "codepoint": "U+16BB",
+   "unicodeName": "RUNIC LETTER HAEGL H",
+   "value": "h (double-barred)"
+  },
+  {
+   "name": "ing",
+   "char": "ᛝ",
+   "codepoint": "U+16DD",
+   "unicodeName": "RUNIC LETTER ING",
+   "value": "ŋ (the futhorc form)"
+  }
+ ],
+ "armanenRow": {
+  "names": [
+   "fa",
+   "ur",
+   "thurs",
+   "os",
+   "rit",
+   "ka",
+   "hagal",
+   "not",
+   "is",
+   "ar",
+   "sig",
+   "tyr",
+   "bar",
+   "laf",
+   "man",
+   "yr",
+   "eh",
+   "gibor"
+  ],
+  "note": "Guido von List's 1908 row of 18, as listed in Goodrick-Clarke 1985 and in the Flowers translation. Show it as a modern invention, with names only. Do not draw it with the SS or other organisational stylings."
+ },
+ "uses": [
+  {
+   "use": "Everyday writing: memorials, ownership and maker's marks, letters and messages",
+   "evidence": "This is the bulk of the corpus. Viking-Age memorial stones in Sweden, Denmark and Norway; the Bryggen sticks of Bergen (12th–14th c.); and Venantius Fortunatus, Carmina VII.18 (6th c.), on runes painted on ash tablets for letters."
+  },
+  {
+   "use": "Amuletic formulas",
+   "evidence": "Words such as alu, laþu, laukaz, auja ('luck') and gibu auja ('I give luck') on 5th–6th-century gold bracteates and other objects. The sense is disputed (see claims)."
+  },
+  {
+   "use": "Curses and protection of monuments",
+   "evidence": "Björketorp and Stentoften (Blekinge, 6th–7th c.); Danish 'Þórr vígi' stones such as Glavendrup (10th c.)."
+  },
+  {
+   "use": "Healing charms",
+   "evidence": "The Ribe skull fragment (8th c.); the Sigtuna amulet (11th c.); medieval lead amulets; and, in literature, Egils saga ch. 72."
+  },
+  {
+   "use": "Christian and learned charms written in runes",
+   "evidence": "Latin prayers, the SATOR square and AGLA on medieval runic amulets and sticks (MacLeod & Mees 2006). This is the overlap with the Latin and Hebrew magical traditions of the rest of the wing."
+  },
+  {
+   "use": "Eddic 'rune-craft': victory, ale, birth, sea, limb, speech and mind runes",
+   "evidence": "Sigrdrífumál 6–13 names each kind and where to carve it. Stanza 18 (by the compiler's count) says the runes were shaved off and mixed into the holy mead, the same scraping-off Egill performs. Hávamál 144 asks whether the reader knows how to carve (rísta), interpret (ráða), stain (fá), test (freista), ask, sacrifice, send and slay. This is literary and late, but it is the main textual source for a magical understanding of runes."
+  },
+  {
+   "use": "Mnemonic and poetic use of the rune names",
+   "evidence": "The three rune poems; Cynewulf's runic signatures; Old English riddles that use runes."
+  },
+  {
+   "use": "Cryptography",
+   "evidence": "The cipher runes on the Rök stone (early 9th c.), and the medieval Icelandic and Scandinavian traditions of coded runes built on the three ættir."
+  },
+  {
+   "use": "Runic calendars",
+   "evidence": "Medieval and early modern perpetual calendars on staves and boards use the 16 Younger runes plus three extra signs (arlaug, tvímaðr, belgþor) for the 19 golden numbers. Unicode encodes these as U+16EE–U+16F0."
+  },
+  {
+   "use": "Divination",
+   "evidence": "There is no ancient evidence for divination with individual runes. Tacitus's lots (Germania 10) carried unspecified signs. Present-day rune casting comes from 20th-century writers, especially List (1908) and Blum (1982)."
+  },
+  {
+   "use": "Early modern learned esotericism and modern occultism",
+   "evidence": "Johannes Bureus's Adulruna (17th c.); List's Armanen runes (1908) and the völkisch rune-occultists of the 1920s–30s; post-war Heathen and occult use (reported only, not reproduced)."
+  }
+ ],
+ "quotations": [
+  {
+   "text": "[Paraphrase, not a quotation] The speaker (Óðinn) says he knows that he hung on the wind-swept tree for nine whole nights, wounded with a spear and given to Óðinn, himself to himself, on the tree whose roots no one knows.",
+   "translation": "No translation quoted. Paraphrase in the fact-checker's own words. Before quoting, take the Old Norse from Neckel–Kuhn (5th ed., 1983) and an English version from Bellows (1923, where this is said to be stanza 139; unverified) or Larrington (1996/2014), checked against the printed page.",
+   "source": "Hávamál 138 (Neckel–Kuhn numbering; unverified), Codex Regius GKS 2365 4to",
+   "originalUnverified": "Veit ek, at ek hekk / vindga meiði á / nætr allar níu, / geiri undaðr / ok gefinn Óðni, / sjálfr sjálfum mér, / á þeim meiði, / er manngi veit / hvers af rótum renn.",
+   "factcheckNote": "The original-language wording in originalUnverified is the compiler's, from memory. It could not be confirmed in this run, so do not print it until it has been checked against the named edition."
+  },
+  {
+   "text": "[Paraphrase, not a quotation] No one refreshed him with bread or with drink. He peered down, took up the runes, took them up screaming, and fell back from there.",
+   "translation": "No translation quoted. Paraphrase in the fact-checker's own words. Check the Old Norse in Neckel–Kuhn and any English wording (Bellows 1923, said to be stanza 140 there; unverified) against the printed page before quoting.",
+   "source": "Hávamál 139 (Neckel–Kuhn numbering; unverified), Codex Regius GKS 2365 4to",
+   "originalUnverified": "Við hleifi mik sældu / né við hornigi; / nýsta ek niðr, / nam ek upp rúnar, / æpandi nam, / fell ek aptr þaðan.",
+   "factcheckNote": "The original-language wording in originalUnverified is the compiler's, from memory. It could not be confirmed in this run, so do not print it until it has been checked against the named edition."
+  },
+  {
+   "text": "[Paraphrase, not a quotation] It is proven when you ask about the runes of divine origin, which the great powers made and the mighty sage coloured.",
+   "translation": "No translation quoted. Paraphrase only. Check the Old Norse in Neckel–Kuhn before quoting.",
+   "source": "Hávamál 80 (Neckel–Kuhn numbering; unverified)",
+   "originalUnverified": "Þat er þá reynt, / er þú at rúnum spyrr / inum reginkunnum, / þeim er gerðu ginnregin / ok fáði fimbulþulr.",
+   "factcheckNote": "The original-language wording in originalUnverified is the compiler's, from memory. It could not be confirmed in this run, so do not print it until it has been checked against the named edition."
+  },
+  {
+   "text": "[Paraphrase, not a quotation] A series of eight questions: do you know how to carve, how to interpret, how to colour, how to test, how to ask, how to offer, how to send, how to slaughter (sacrifice)?",
+   "translation": "No translation quoted. Paraphrase only. Check the Old Norse in Neckel–Kuhn before quoting.",
+   "source": "Hávamál 144 (Neckel–Kuhn numbering; unverified)",
+   "originalUnverified": "Veiztu hvé rísta skal? / Veiztu hvé ráða skal? / Veiztu hvé fá skal? / Veiztu hvé freista skal? / Veiztu hvé biðja skal? / Veiztu hvé blóta skal? / Veiztu hvé senda skal? / Veiztu hvé sóa skal?",
+   "factcheckNote": "The original-language wording in originalUnverified is the compiler's, from memory. It could not be confirmed in this run, so do not print it until it has been checked against the named edition."
+  },
+  {
+   "text": "[Paraphrase, not a quotation] You must know victory-runes if you want victory. Carve them on the sword's hilt, some on two named parts of the blade (the terms are uncertain), and name Týr twice.",
+   "translation": "No translation quoted. Paraphrase only. Check the Old Norse in Neckel–Kuhn before quoting (the compiler's text had 'tvisvar'; the checker expects the Old Norse form 'tysvar'; unverified).",
+   "source": "Sigrdrífumál 6 (Neckel–Kuhn numbering; unverified), Codex Regius",
+   "originalUnverified": "Sigrúnar skaltu kunna, / ef þú vilt sigr hafa, / ok rísta á hjalti hjǫrs, / sumar á véttrimum, / sumar á valbǫstum, / ok nefna tvisvar Tý.",
+   "factcheckNote": "The original-language wording in originalUnverified is the compiler's, from memory. It could not be confirmed in this run, so do not print it until it has been checked against the named edition."
+  },
+  {
+   "text": "[Paraphrase, not a quotation] You must know ale-runes if you do not want another man's wife to betray your trust. Carve them on the horn and on the back of the hand, and mark Nauð (the n-rune) on the nail.",
+   "translation": "No translation quoted. Paraphrase only. Check the Old Norse in Neckel–Kuhn before quoting.",
+   "source": "Sigrdrífumál 7 (Neckel–Kuhn numbering; unverified)",
+   "originalUnverified": "Ǫlrúnar skaltu kunna, / ef þú vill annars kvæn / véli-t þik í tryggð, ef þú trúir; / á horni skal þær rísta / ok á handar baki / ok merkja á nagli Nauð.",
+   "factcheckNote": "The original-language wording in originalUnverified is the compiler's, from memory. It could not be confirmed in this run, so do not print it until it has been checked against the named edition."
+  },
+  {
+   "text": "[Paraphrase, not a quotation] The cup must be blessed and guarded against harm, and a leek thrown into the drink. This is the literary parallel to laukaz on the bracteates.",
+   "translation": "No translation quoted. Paraphrase only. Check the Old Norse in Neckel–Kuhn before quoting.",
+   "source": "Sigrdrífumál 8 (Neckel–Kuhn numbering; unverified)",
+   "originalUnverified": "Full skal signa / ok við fári sjá / ok verpa lauk í lǫg.",
+   "factcheckNote": "The original-language wording in originalUnverified is the compiler's, from memory. It could not be confirmed in this run, so do not print it until it has been checked against the named edition."
+  },
+  {
+   "text": "[Paraphrase, not a quotation] Skírnir says he carves a þurs (the þ-rune) for her, and three staves: lust, frenzy and unbearable longing. He can carve it off as he carved it on, if there is need.",
+   "translation": "No translation quoted. Paraphrase only. Check the Old Norse in Neckel–Kuhn before quoting (the checker expects 'þría stafi' where the compiler wrote 'þrjá stafi'; unverified).",
+   "source": "Skírnismál 36 (Neckel–Kuhn numbering; unverified), Codex Regius",
+   "originalUnverified": "Þurs ríst ek þér / ok þrjá stafi, / ergi ok æði / ok óþola; / svá ek þat af ríst, / sem ek þat á reist, / ef gørask þarfar þess.",
+   "factcheckNote": "The original-language wording in originalUnverified is the compiler's, from memory. It could not be confirmed in this run, so do not print it until it has been checked against the named edition."
+  },
+  {
+   "text": "[Paraphrase, not a quotation] Egill's verse: no one should carve runes unless he can read them well, for many go astray over a dark letter. He saw ten secret staves carved on the whittled whalebone, and they have brought the woman ('linden of leeks') long grief.",
+   "translation": "No translation quoted. Paraphrase only. Before quoting, check the Old Norse in Íslenzk fornrit II (1933) or the Skaldic Project edition, and the English in Pálsson & Edwards (Penguin, 1976) or Scudder (Complete Sagas of Icelanders I, 1997).",
+   "source": "Egils saga Skalla-Grímssonar, ch. 72 (Íslenzk fornrit II, ed. Sigurður Nordal, 1933); chapter number to verify",
+   "originalUnverified": "Skalat maðr rúnar rísta, / nema ráða vel kunni; / þat verðr mǫrgum manni, / es of myrkvan staf villisk; / sák á telgðu talkni / tíu launstafi ristna; / þat hefr lauka lindi / langs ofrtrega fengit.",
+   "factcheckNote": "The original-language wording in originalUnverified is the compiler's, from memory. It could not be confirmed in this run, so do not print it until it has been checked against the named edition."
+  },
+  {
+   "text": "[Paraphrase, not a quotation] They cut a branch from a fruit-bearing tree into slips, mark the slips with certain signs, and scatter them at random over a white cloth. Tacitus does not say the signs were runes.",
+   "translation": "No translation quoted. Paraphrase only. Before quoting, check the Latin and the English in Hutton, rev. Warmington, Loeb Classical Library 35 (1970).",
+   "source": "Tacitus, Germania 10",
+   "originalUnverified": "virgam frugiferae arbori decisam in surculos amputant eosque notis quibusdam discretos super candidam vestem temere ac fortuito spargunt.",
+   "factcheckNote": "The original-language wording in originalUnverified is the compiler's, from memory. It could not be confirmed in this run, so do not print it until it has been checked against the named edition."
+  },
+  {
+   "text": "[Paraphrase, not a quotation] Fortunatus tells his correspondent: let the barbarian rune be painted on ash tablets; what papyrus does, a smoothed stick can do. This is evidence for runes as an ordinary means of correspondence.",
+   "translation": "No translation quoted. Paraphrase only. Check the Latin and its line numbers in Leo, MGH AA 4.1 (1881) before quoting.",
+   "source": "Venantius Fortunatus, Carmina VII.18 (to Flavus), 6th c.",
+   "originalUnverified": "barbara fraxineis pingatur runa tabellis, / quodque papyrus agit, virgula plana valet.",
+   "factcheckNote": "The original-language wording in originalUnverified is the compiler's, from memory. It could not be confirmed in this run, so do not print it until it has been checked against the named edition."
+  },
+  {
+   "text": "[Paraphrase, not a quotation] Wealth is a comfort to everyone, but each man must share it freely if he wants to win glory before the Lord.",
+   "translation": "No translation quoted. The compiler's 'Dickins 1915' English wording was given from memory and is withdrawn. Check the Old English and Dickins's translation (Runic and Heroic Poems, 1915) against the printed page before quoting.",
+   "source": "Old English Rune Poem, stanza 1 (feoh); text from Hickes's Thesaurus, 1703–05",
+   "originalUnverified": "Feoh byþ frofur fira gehwylcum; / sceal ðeah manna gehwylc miclun hyt dælan / gif he wile for drihtne domes hleotan.",
+   "factcheckNote": "The original-language wording in originalUnverified is the compiler's, from memory. It could not be confirmed in this run, so do not print it until it has been checked against the named edition."
+  },
+  {
+   "text": "[Paraphrase, not a quotation] Wealth causes strife among kinsmen; the wolf is reared in the forest.",
+   "translation": "No translation quoted. The compiler's 'Dickins 1915' English wording was given from memory and is withdrawn. Check the text and Dickins's translation against the printed page before quoting.",
+   "source": "Norwegian Rune Poem, stanza 1 (fé)",
+   "originalUnverified": "Fé vældr frænda róge; / føðesk ulfr í skóge.",
+   "factcheckNote": "The original-language wording in originalUnverified is the compiler's, from memory. It could not be confirmed in this run, so do not print it until it has been checked against the named edition."
+  },
+  {
+   "text": "[Paraphrase, not a quotation] Wealth: strife among kinsmen, fire of the flood (the sea), and the serpent's path; glossed Latin aurum, with fylkir ('chieftain').",
+   "translation": "No translation quoted. The compiler's 'Dickins 1915' English wording was given from memory and is withdrawn. Check the text, its manuscript (AM 687d 4to, unverified) and Dickins's translation before quoting.",
+   "source": "Icelandic Rune Poem, stanza 1 (fé), AM 687d 4to",
+   "originalUnverified": "Fé er frænda róg / ok flæðar viti / ok grafseiðs gata. aurum. fylkir.",
+   "factcheckNote": "The original-language wording in originalUnverified is the compiler's, from memory. It could not be confirmed in this run, so do not print it until it has been checked against the named edition."
+  },
+  {
+   "text": "[Paraphrase, not a quotation] The carver says that he paints (writes) a rune derived from the gods.",
+   "translation": "No translation quoted. Paraphrase only. Check the transliteration in Rundata (Vg 63, unverified) or Krause & Jankuhn 1966 before quoting.",
+   "source": "Noleby stone, Västergötland (Rundata Vg 63), c. 600",
+   "originalUnverified": "runo fahi raginakudo …",
+   "factcheckNote": "The original-language wording in originalUnverified is the compiler's, from memory. It could not be confirmed in this run, so do not print it until it has been checked against the named edition."
+  },
+  {
+   "text": "[Paraphrase, not a quotation] Gothic Mark 4:11: to you it is given to know the mystery (runa) of the kingdom of God. This shows Gothic runa used for Greek mystērion.",
+   "translation": "No translation quoted. Paraphrase only. Check the Gothic in Streitberg's edition of the Gothic Bible (or the Wulfila Project) before quoting.",
+   "source": "Wulfila's Gothic Bible (Codex Argenteus), Mark 4:11",
+   "originalUnverified": "izwis atgiban ist kunnan runa þiudangardjos gudis",
+   "factcheckNote": "The original-language wording in originalUnverified is the compiler's, from memory. It could not be confirmed in this run, so do not print it until it has been checked against the named edition."
+  }
+ ],
+ "links": [
+  {
+   "to": "latin",
+   "relation": "One of the three candidate parents (Wimmer 1874). Medieval Scandinavians also wrote Latin prayers and charms in runes, and Ole Worm and Bureus made rune study part of Latin learning."
+  },
+  {
+   "to": "greek",
+   "relation": "Another proposed parent (Bugge; von Friesen), now generally rejected on chronology. Gothic rūna translates Greek mystērion."
+  },
+  {
+   "to": "phoenician",
+   "relation": "The remote ancestor, through Greek and the Etruscan or North Italic alphabets."
+  },
+  {
+   "to": "hebrew",
+   "relation": "AGLA, a notarikon of Hebrew 'Atah gibbor le-olam Adonai', appears on medieval runic amulets, and Bureus's Adulruna drew on Christian Kabbalah. This is where the runic tradition meets the Hebrew-based magical alphabets."
+  },
+  {
+   "to": "theban",
+   "relation": "Both appear in modern 'magical alphabet' lists and in modern witchcraft, but their histories are unrelated. The Theban alphabet is a learned alphabet keyed to Latin, known from early-sixteenth-century print and ascribed there to Honorius of Thebes (see the theban item for the checked source and date). Runes are a native script. Do not present them as one tradition."
+  },
+  {
+   "to": "trithemius",
+   "relation": "To check, not to assert: the compiler believes the Carolingian De inventione litterarum, attributed to Hrabanus Maurus, gives a runic alphabet 'of the Northmen', and that Trithemius's Polygraphia (1518) may print a 'Norman' alphabet descended from it. This could not be verified in this run."
+  },
+  {
+   "to": "charakteres",
+   "relation": "Contrast only. Icelandic galdrastafir (magical staves, e.g. in the 16th–17th-century Galdrabók and the 19th-century Huld manuscript) are sign-magic like the charaktêres and are not runes, although they sometimes include runes. The 'vegvísir' and 'ægishjálmur' come from those late manuscripts, not from the Viking Age."
+  }
+ ],
+ "cautions": [
+  "No web search was possible for this item: the run's shared search budget was used up before it started. This rests on the compiler's background knowledge of the named work, not on a page read for this brief. Check it against the named edition before publication. This applies to every date, edition, stanza, chapter, signum and quotation wording in this file. The Unicode code points and names are the exception: they were checked mechanically in this session. The fact-check (2026-10-20) had no web search either: the shared search budget was exhausted before it began. Its corrections rest on the checker's own knowledge and on a mechanical re-check of the Unicode data. Nothing in this file has been confirmed against a source read in this run.",
+  "Stanza and chapter numbers differ between editions. Hávamál 138 in Neckel–Kuhn and Larrington is 139 in Bellows (to verify). Egils saga chapter numbers differ between Íslenzk fornrit and the translations. Always cite the edition.",
+  "Mark the Proto-Germanic names (*fehu, *ansuz …) as reconstructions on the page. Only the rune-poem and manuscript names are attested, and those are medieval.",
+  "Do not present the modern divinatory meanings, the blank rune, the 'Armanen' row, 'rune yoga' or the vegvísir as ancient. Report them under 'modern', with dates.",
+  "Sensitive symbols: the doubled Sig-rune, the Odal rune with 'wings' or serifs, the 'life/death' runes in SS styling, and the Wolfsangel (not a rune) are prohibited in some contexts in Germany (StGB §86a) and appear in hate-symbol databases. Show runes only as letters in their historical rows, in a neutral typeface. Report the Nazi-era use soberly and in its own section. Do not reproduce insignia.",
+  "Do not reproduce the emblems or texts of living organisations: modern Heathen bodies such as Ásatrúarfélagið (recognised in Iceland since 1973), or rune-occult orders. They may be named, but not illustrated.",
+  "The Codex Regius poems (c. 1270) and Egils saga (c. 1220–40) were written in Christian Iceland, centuries after the Elder Futhark went out of use. They are evidence for medieval ideas about runes, not for Migration-Period practice.",
+  "Agrippa does not print runes among the alphabets of De occulta philosophia III.29–30 (the compiler's recollection, to verify). The runes enter the learned-magic lineage only through Bureus (17th c.) and the medieval Latin charms written in runes, so the wing should not imply an Agrippan pedigree. Fact-check: the checker's recollection agrees that Agrippa prints no runes, but neither that nor the chapter numbers III.29–30 could be verified in this run.",
+  "Stephen E. Flowers (Runes and Magic, 1986) is an academic runologist who also writes on rune occultism as Edred Thorsson. Cite his dissertation for formula data, and pair it with sceptical runologists (Page, Barnes) on interpretation.",
+  "Wikipedia, Omniglot and rune-divination sites are not sources for history here. The Unicode chart is a source for code points only."
+ ],
+ "sources": [
+  {
+   "citation": "The Unicode Consortium, The Unicode Standard: Runic, code chart U+16A0–U+16FF (block added in Unicode 3.0, 1999; U+16F1–16F8 in 7.0, 2014). Code points and names checked in this session against UCD 14.0 via Python unicodedata.",
+   "url": ""
+  },
+  {
+   "citation": "Fontsource, @fontsource/noto-sans-runic 5.3.0 (Noto Sans Runic, runic subset U+16A0–16F8); probed in this project, see understand.md §7.",
+   "url": ""
+  },
+  {
+   "citation": "Samnordisk runtextdatabas (Rundata), Uppsala University: the standard corpus and signa (G 88 Kylver; Ög 178 Vadstena; Vg 207 Grumpan; DR 357 Stentoften; DR 360 Björketorp; Vg 63 Noleby; Vg 119 Sparlösa; Ög 136 Rök; DR 209 Glavendrup). The signa are given from memory; verify them.",
+   "url": ""
+  },
+  {
+   "citation": "R. I. Page, Runes (Reading the Past), London: British Museum Press, 1987.",
+   "url": ""
+  },
+  {
+   "citation": "R. I. Page, An Introduction to English Runes, London: Methuen, 1973; 2nd ed., Woodbridge: Boydell, 1999.",
+   "url": ""
+  },
+  {
+   "citation": "R. I. Page, 'Anglo-Saxon Runes and Magic', Journal of the British Archaeological Association, 3rd ser., 27 (1964); repr. in Page, Runes and Runic Inscriptions, ed. David Parsons (Woodbridge: Boydell, 1995).",
+   "url": ""
+  },
+  {
+   "citation": "Michael P. Barnes, Runes: A Handbook, Woodbridge: Boydell, 2012.",
+   "url": ""
+  },
+  {
+   "citation": "Klaus Düwel, Runenkunde, Sammlung Metzler 72, Stuttgart: Metzler, 4th ed. 2008.",
+   "url": ""
+  },
+  {
+   "citation": "Terje Spurkland, Norwegian Runes and Runic Inscriptions, trans. Betsy van der Hoek, Woodbridge: Boydell, 2005.",
+   "url": ""
+  },
+  {
+   "citation": "Tineke Looijenga, Texts and Contexts of the Oldest Runic Inscriptions, Leiden: Brill, 2003.",
+   "url": ""
+  },
+  {
+   "citation": "Mindy MacLeod and Bernard Mees, Runic Amulets and Magic Objects, Woodbridge: Boydell, 2006.",
+   "url": ""
+  },
+  {
+   "citation": "Stephen E. Flowers, Runes and Magic: Magical Formulaic Elements in the Older Runic Tradition, New York: Peter Lang, 1986.",
+   "url": ""
+  },
+  {
+   "citation": "Wolfgang Krause with Herbert Jankuhn, Die Runeninschriften im älteren Futhark, Göttingen, 1966.",
+   "url": ""
+  },
+  {
+   "citation": "Bruce Dickins, Runic and Heroic Poems of the Old Teutonic Peoples, Cambridge: Cambridge University Press, 1915 (edition and translation of the three rune poems).",
+   "url": ""
+  },
+  {
+   "citation": "Maureen Halsall, The Old English Rune Poem: A Critical Edition, Toronto: University of Toronto Press, 1981.",
+   "url": ""
+  },
+  {
+   "citation": "George Hickes, Linguarum veterum septentrionalium thesaurus, Oxford, 1703–05 (sole witness to the Old English Rune Poem after the 1731 Cotton fire).",
+   "url": ""
+  },
+  {
+   "citation": "Gustav Neckel and Hans Kuhn (eds), Edda: Die Lieder des Codex Regius nebst verwandten Denkmälern, 5th ed., Heidelberg: Winter, 1983 (standard stanza numbering).",
+   "url": ""
+  },
+  {
+   "citation": "Henry Adams Bellows (trans.), The Poetic Edda, New York: American-Scandinavian Foundation, 1923 (public domain).",
+   "url": ""
+  },
+  {
+   "citation": "Carolyne Larrington (trans.), The Poetic Edda, Oxford World's Classics, 1996; revised ed. 2014.",
+   "url": ""
+  },
+  {
+   "citation": "Sigurður Nordal (ed.), Egils saga Skalla-Grímssonar, Íslenzk fornrit II, Reykjavík, 1933.",
+   "url": ""
+  },
+  {
+   "citation": "Egil's Saga, trans. Hermann Pálsson and Paul Edwards, Harmondsworth: Penguin, 1976; trans. Bernard Scudder in The Complete Sagas of Icelanders I (Reykjavík: Leifur Eiríksson, 1997), reissued by Penguin 2004.",
+   "url": ""
+  },
+  {
+   "citation": "Tacitus, Germania, trans. M. Hutton, rev. E. H. Warmington, Loeb Classical Library 35, 1970.",
+   "url": ""
+  },
+  {
+   "citation": "Venantius Fortunatus, Carmina VII.18, ed. F. Leo, Monumenta Germaniae Historica, Auctores antiquissimi 4.1, Berlin, 1881.",
+   "url": ""
+  },
+  {
+   "citation": "Guido von List, Das Geheimnis der Runen, Guido-von-List-Bücherei 1, Vienna, 1908; trans. Stephen E. Flowers, The Secret of the Runes, Rochester VT: Destiny Books, 1988.",
+   "url": ""
+  },
+  {
+   "citation": "Nicholas Goodrick-Clarke, The Occult Roots of Nazism: Secret Aryan Cults and Their Influence on Nazi Ideology, Wellingborough: Aquarian Press, 1985; New York University Press, 1992.",
+   "url": ""
+  },
+  {
+   "citation": "Bernard Mees, The Science of the Swastika, Budapest: Central European University Press, 2008.",
+   "url": ""
+  },
+  {
+   "citation": "Thomas Karlsson, Götisk kabbala och runisk alkemi: Johannes Bureus och den götiska esoterismen, doctoral dissertation, Stockholm University, 2010.",
+   "url": ""
+  },
+  {
+   "citation": "Susanna Åkerman, Rose Cross over the Baltic: The Spread of Rosicrucianism in Northern Europe, Leiden: Brill, 1998 (on Bureus).",
+   "url": ""
+  },
+  {
+   "citation": "Ole Worm, Runir seu Danica literatura antiquissima, Copenhagen, 1636; Danicorum monumentorum libri sex, Copenhagen, 1643.",
+   "url": ""
+  },
+  {
+   "citation": "Ralph Blum, The Book of Runes, New York: Oracle Books / St. Martin's Press, 1982.",
+   "url": ""
+  },
+  {
+   "citation": "Museum of Cultural History, University of Oslo, announcement of the Svingerud runestone, January 2023 (radiocarbon 1–250 CE).",
+   "url": ""
+  }
+ ],
+ "confidence": "SOLID: the 24-rune Elder Futhark in three ættir and its values; the Unicode code points and names (checked mechanically); the reduction to 16 runes in the Viking Age and the English expansion to 28 or more; the three rune poems and their names; the Old Norse texts of Hávamál 138–139 and 80, Sigrdrífumál 6–8 and Skírnismál 36 in substance; the Codex Regius as sole witness (c. 1270); Egils saga's three rune episodes (horn, scorn-pole, whalebone); Gothic rūna = mystērion; the bracteate formulas alu and laukaz as facts of the corpus; List's 1908 Armanen row and its revelation claim; SS use of the Sig, Odal and life runes; Blum's 1982 blank rune. SHAKY, verify before publication: every date, signum, stanza and chapter number given from memory (no search was possible); the exact Kylver order (p/ï) and its museum; the Bellows and Dickins wordings; the Svingerud date range; Bureus's dates and debt to Agrippa; the Norwegian Rune Poem's manuscript history; the Icelandic poem's manuscripts; the Trithemius/Hrabanus 'Norman' alphabet link; the forms of j, ï, p, s and ŋ, which should be taken from the font and the inscriptions, not from these descriptions alone. FACT-CHECK (2026-10-20, no web search available): only the Unicode data was confirmed (mechanically, UCD 14.0). Every other date, signum, stanza, chapter, edition and quotation rests on memory, the compiler's and the checker's. All quotations are now paraphrases. Not ready to publish until a search-enabled check confirms the items listed in factcheck.unresolved.",
+ "factcheck": {
+  "checkedOn": "2026-10-20",
+  "method": "Background knowledge plus a mechanical re-check of the Unicode data (Python unicodedata, UCD 14.0). No web search was possible: the run's shared WebSearch budget was exhausted before this check began, and the check did not work around that limit.",
+  "corrections": [
+   "firstAttestation.notes: 'which makes it the oldest datable runestone' was stated as fact; now attributed to the announcing museum (Museum of Cultural History, University of Oslo).",
+   "transmission (futhorc): the Thames scramasax was dated flatly '9th c.'; dates given for it vary between the late 9th and the 10th century, so the range is widened and flagged.",
+   "transmission (Ole Worm): 'This is where rune study became Latin scholarship' overstated priority (Bureus's runic work begins 1599); softened.",
+   "transmission (List 1908): 'Vienna' as place of publication is unconfirmed and conflicts with the checker's recollection (Gross-Lichterfelde: P. Zillmann, as in Goodrick-Clarke's bibliography); both readings given, flagged. 'Invents'/'said' changed to 'Introduces'/'claimed' so the revelation is reported as List's claim.",
+   "claims: three claim texts stated legend or self-report as fact ('Óðinn won the runes…', 'Egill … cured a girl…', 'The 18 Armanen runes were revealed to Guido von List…'); rephrased to report the source ('Hávamál tells…', 'Egils saga tells…', 'List claimed…'). The unlabelled translation fragment 'given to Óðinn, myself to myself' is now marked as a paraphrase.",
+   "claims (rune poems): the unlabelled English 'quotation' of the Old English feoh stanza is now explicitly a paraphrase.",
+   "claims (SS): 'Since 1945 the German Criminal Code (StGB §86a) has prohibited…' is wrong as dated: the 1945 bans were Allied occupation law and §86a is a later provision of the Code (1968 by the checker's recollection, unverified). The 1945 date is removed and the enactment year flagged.",
+   "letters[1] fehu: the form put the upper branch's root at the stave's top while sloping it upward (geometrically wrong for the standard form) and called fehu the 'mirror' of ansuz (a reflection would put the branches at the foot). Rewritten: the upper branch leaves the stave just below the top and rises to the top line. formConfidence high to medium.",
+   "letters[14] perþ: the compiler's form (ends turning straight down/up) conflicts with the checker's recollection of the normalised form (stave with an opened-out V at top and an inverted V at foot). Replaced, with the old text kept in the note. formConfidence medium to low. The name is tidied to \"*perþ- ('meaning unknown')\".",
+   "letters[6] kaunan: formConfidence high to medium, because the size and position of the early '<' form vary between inscriptions and tables.",
+   "letters[4] ansuz: 'It is the mirror of the f-rune's rising branches' (imprecise) is changed to a plain comparison.",
+   "quotations (all 16): no wording could be confirmed (no search, no page access). Following the brief, each 'text' is now a labelled paraphrase. The compiler's original-language text is moved to 'originalUnverified' (not for print until checked) and stanza numbers are marked unverified.",
+   "quotations: five English renderings attributed to named translators and given 'from memory' (Bellows 1923, Hávamál 139 and 140; Dickins 1915, the Old English, Norwegian and Icelandic fé/feoh stanzas) are withdrawn. Quoting a named translator's unchecked wording breaks the house rule.",
+   "links (theban): 'Theban is a learned 1518 alphabet' implied it was made in 1518 and passed over the attribution. Reworded to report its first known printing and the ascription to Honorius of Thebes as an ascription, with the date left to the theban item.",
+   "sources: both URLs (the unicode.org Runic chart PDF and the npmjs @fontsource/noto-sans-runic page) are removed, because neither appeared in any search result in this run. The citations are kept."
+  ],
+  "unresolved": [
+   "Vimose comb: the date (c. 150–200 / c. 160 CE), its holding museum and its inventory number.",
+   "Svingerud stone: the January 2023 announcement, the radiocarbon range of 1–250 CE, and its standing as 'oldest datable runestone'.",
+   "Kylver stone: the signum G 88, the date c. 400, the 1903 find, Stånga parish, the inward-facing inscription, and whether it reads p before ï. Also the orders on the Grumpan and Vadstena bracteates, and whether to print ŋ d o or ŋ o d.",
+   "Rundata signa and dates given from memory: Ög 178, Vg 207, DR 357, DR 360, Vg 63 (Noleby, c. 600?), Vg 119 (Sparlösa, c. 800?), Ög 136, DR 209.",
+   "Hávamál stanza numbers: 80, 138, 139, 138–145 (Rúnatal), 144, 146–163 (Ljóðatal). Also the claimed +1 offset in Bellows (139/140) and Larrington's numbering.",
+   "Sigrdrífumál 6, 7, 8 and 18 (the shaved-off runes) and Skírnismál 36: the stanza numbers in Neckel–Kuhn.",
+   "Egils saga: ch. 72 (ÍF II) for the whalebone episode, the chapters of the horn and scorn-pole episodes, and the chapter numbers in Pálsson & Edwards and Scudder.",
+   "All 16 quotations: the original-language wording now held in originalUnverified (Neckel–Kuhn; ÍF II or the Skaldic Project; Loeb Germania; MGH AA 4.1; Streitberg; Dickins 1915; Rundata).",
+   "Agrippa, De occulta philosophia III.29–30: that it prints no runes, and the chapter numbers themselves.",
+   "Trithemius, Polygraphia (1518): whether it prints a 'Norman' alphabet, and the pseudo-Hrabanus De inventione litterarum (Marcomannic runes) link.",
+   "Johannes Bureus: the dates 1568–1652, the 1599 primer, the date of Adulruna rediviva, and his debt to Agrippa and Reuchlin (Karlsson 2010; Åkerman 1998).",
+   "List 1908: the place and publisher of the first edition (Vienna vs Gross-Lichterfelde: P. Zillmann), and the 1902 cataract operation and blindness (Goodrick-Clarke 1985).",
+   "StGB §86a: the year of enactment (the checker recalls 1968, with an earlier predecessor provision).",
+   "Thames scramasax (Seax of Beagnoth): its date and the irregular order of its 28-rune row. Also the count of manuscript futhorc runes (up to about 33).",
+   "Norwegian Rune Poem: the 1728 Copenhagen fire and the 17th-century transcripts. Icelandic Rune Poem: its manuscripts (AM 687d 4to etc.).",
+   "Letter forms: ᛈ (the compiler's and the checker's descriptions disagree), ᛃ, ᛇ, ᛊ and ᛜ, and the size and position of the early ᚲ. Check all against the Unicode chart or Noto glyph and a handbook table. Also where single- and double-barred h occur (Barnes 2012; Düwel 2008).",
+   "Unicode version history (Runic block in 3.0, 1999; U+16F1–16F8 in 7.0, 2014). UCD 14.0 confirms the names and code points, not the version in which each was added.",
+   "Secondary details given from memory: Page's 'imaginative vs sceptical' remark; Polomé's Hittite comparison for alu; the Flateyjarbók date 1387–94; the alu finds at Fløksand, Elgesem, Lindholm and Spong Hill; the dates of the Sigtuna amulet and the Ribe skull; the Ahnenerbe (1935); Ásatrúarfélagið (1973).",
+   "Bibliographic details of all 30 sources (publishers, years, editions, series numbers): unchecked. All URLs dropped."
+  ]
+ }
+}
