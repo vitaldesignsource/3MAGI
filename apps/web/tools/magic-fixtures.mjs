@@ -19,6 +19,8 @@ export const BAD_GLYPHS = [
     ['a dot of radius 300', { d: '', dots: [[50, 50, 300]] }],
     ['a dot whose disc leaves the box', { d: '', dots: [[97, 50, 6]] }],
     ['a dot given as an object', { d: '', dots: [{ x: 50, y: 50 }] }],
+    ['a pen heavier than the house pen', { d: 'M 10 10 L 20 20', pen: 8 }],
+    ['a pen given as a string', { d: 'M 10 10 L 20 20', pen: '2.4' }],
     ['a negative ring radius', { d: 'M 20 20 L 50 50', rings: [[50, 50, -6]] }],
     ['a ring centred on the stroke end, so the stroke crosses its hole', { d: 'M 20 20 L 50 50', rings: [[50, 50]] }],
     ['a ring eleven units past the stroke end', { d: 'M 20 50 L 50 50', rings: [[61, 50]] }],

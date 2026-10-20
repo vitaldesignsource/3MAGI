@@ -4798,7 +4798,7 @@ export default {
     {
      "from": "w",
      "to": "vv",
-     "note": "no sign for W; written as two Vs"
+     "note": "the final sign, labelled w in 1518, is disputed; W is written as two Vs, the site’s convention after modern usage"
     }
    ],
    "unwritten": "The final sign is never written: its reading is disputed.",

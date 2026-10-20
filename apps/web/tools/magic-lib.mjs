@@ -105,6 +105,8 @@ export function glyphProblems(g) {
     for (const k of ['rings', 'dots']) {
         if (g[k] != null && !Array.isArray(g[k])) return [`glyph.${k} must be a list of [x, y] or [x, y, r]`];
     }
+    // a lighter pen for where the glyph is drawn large (MagicGlyph.jsx)
+    if (g.pen != null && !(isNum(g.pen) && g.pen > 0 && g.pen < 5.5)) out.push(`glyph.pen, if given, is a pen lighter than the house 5.5 (got ${g.pen})`);
     const rings = g.rings ?? [];
     const dots = g.dots ?? [];
     let cmds;

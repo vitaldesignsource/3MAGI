@@ -64,7 +64,7 @@ export default {
         caption: 'The signs for a, b, c, d and e, as printed in 1518.',
     },
     lettersTitle: 'The Alchemist’s Alphabet',
-    scriptNote: 'The alphabet that Trithemius prints in Book VI of the Polygraphia as one lately made up by a certain alchemist, and in which, by the reading of one leaf, the Golden Dawn’s Cipher Manuscripts write English. Twenty-four signs keyed to the Latin letters, in the order of the table of 1518: a to z with no separate j or u — one sign serves for i and j, one for u and v, printed v — and w last, after ʒ, as in every alphabet of the book. The cipher carries no numbers.',
+    scriptNote: 'The alphabet that Trithemius prints in Book VI of the Polygraphia as one lately made up by a certain alchemist, and in which, by the reading of one leaf, the Golden Dawn’s Cipher Manuscripts write English. Twenty-four signs keyed to the Latin letters, in the order of the table of 1518: a to z with no separate j or u — one sign serves for i and j, one for u and v, printed v — and w last, after ʒ, as in the Theban and the book’s other alphabets of twenty-four places in Latin order. The cipher carries no numbers.',
     letters: [
         { order: 1, name: 'A', value: 'A', translit: 'a', numeric: null, formConfidence: 'high',
             glyph: { d: 'M 51.4 32.9 C 58.08 32.9 63.5 38.32 63.5 45 C 63.5 51.68 58.08 57.1 51.4 57.1 C 44.72 57.1 39.3 51.68 39.3 45 C 39.3 38.32 44.72 32.9 51.4 32.9 Z', dots: [[51.3, 45.4, 2.9]] },
@@ -152,7 +152,7 @@ export default {
         { order: 24, name: 'W', value: 'W', translit: 'w', numeric: null, formConfidence: 'high',
             glyph: { d: 'M 32.5 37.3 C 37 34.5 42 32.3 50.5 31.4 L 52.4 55.5 M 50.5 35 C 55 35.5 62 33.5 70 33.3 M 30.4 56.7 C 34 57.8 39 59.8 45 59.2 C 48 58.8 50.5 57 52.4 55.5 C 57 56 63 55.5 68.8 54.5' },
             strokes: 'A short, nearly upright stem joining two bowed bars: the upper bar arched, with a beaked right end, the lower bar sagging toward its left end.',
-            note: 'Printed last, after ʒ, as w stands last in every alphabet of the book. The French of 1561 sets & in its place.' },
+            note: 'Printed last, after ʒ, as w stands last in the Theban and the book’s other alphabets of twenty-four places in Latin order; some of the longer tables, with extra signs for letter groups such as th and pſ, set it before x, and one table, in Greek order, has none. The French of 1561 sets & in its place.' },
     ],
     transmission: [
         { slug: 'steganographia-begun', title: 'The Steganographia begun at Sponheim', kind: 'manuscript', year: 1499, end: null, circa: false, circaEnd: false,

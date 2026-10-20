@@ -40,6 +40,9 @@
 .edu-plaque-glyph .mg-glyph.is-figure,
 .mg-hero-signs .mg-glyph.is-figure,
 .mg-variant-sign .mg-glyph.is-figure { width: 1em; height: 1em; vertical-align: -0.12em; }
+/* a glyph that names a lighter pen (the geomantic figures' asterisks) takes it
+   where it is drawn large, so its short arms are not filled in */
+.edu-plaque-glyph .mg-glyph.has-pen path { stroke-width: var(--mg-pen, 5.5); }
 
 /* The unstruck seal: an empty ring with a dashed inner ring, where a form
    is still to be traced — the mark of this wing, as the empty seal is the
@@ -228,6 +231,7 @@
 .mg-cmp-cell .mg-glyph:not(.is-figure),
 .edu-search-native .mg-glyph:not(.is-figure),
 .mg-key-sign .mg-glyph:not(.is-figure),
+.mg-fold-to .mg-glyph:not(.is-figure),
 .mg-breakdown .mg-glyph:not(.is-figure) { width: calc(1.4em * var(--mg-scale, 1)); height: calc(1.4em * var(--mg-scale, 1)); }
 /* The drill's find mode is where ring-letters must be told apart: its four
    choices are set large enough to fill their buttons as a set script's do. */
@@ -285,7 +289,14 @@
 .mg-value-link:hover { color: #fff3d6; border-color: #ecd9ae; }
 .mg-variants { margin-top: 0.9rem; }
 .mg-variants ul { list-style: none; margin: 0.4rem 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0.8rem 1.4rem; }
-.mg-variants li { display: flex; align-items: center; gap: 0.6rem; }
+.mg-variants li { display: flex; flex-wrap: wrap; align-items: center; gap: 0.6rem; }
+/* on a narrow plaque the sign and its source share a line and the note runs
+   full width under them, read as source then comment, not as two columns */
+@media (max-width: 600px) {
+  .mg-variants li { gap: 0.3rem 0.6rem; text-align: left; }
+  .mg-variant-source { flex: 1 1 10rem; min-width: 0; }
+  .mg-variant-note { flex-basis: 100%; }
+}
 .mg-variant-sign { font-size: 2rem; color: #d1ad68; }
 .mg-variant-source { font-size: 0.85rem; color: rgba(222, 212, 196, 0.75); }
 .mg-variant-note { font-size: 0.85rem; color: rgba(222, 212, 196, 0.55); font-style: italic; }
@@ -698,8 +709,9 @@
 .mg-entry-nav a { display: inline-flex; align-items: center; gap: 0.45rem; }
 .mg-entry-nav .mg-nav-sign { color: #d1ad68; }
 /* a drawn door sign is held to the wing's floor for ring-letters (28 px), and
-   lets the chip's padding take the extra height, so the chips keep one size */
-.mg-entry-nav .mg-glyph.mg-nav-sign:not(.is-figure) { width: calc(1.75em * var(--mg-scale, 1)); height: calc(1.75em * var(--mg-scale, 1)); margin-block: -0.45em; }
+   lets the chip's padding take the extra height, so the chips keep one size;
+   an alphabet's signScale enlarges the drawing, not its box */
+.mg-entry-nav .mg-glyph.mg-nav-sign:not(.is-figure) { width: 1.75em; height: 1.75em; margin-block: -0.45em; transform: scale(var(--mg-scale, 1)); }
 .mg-entry-nav .mg-nav-home { border-color: rgba(209, 173, 104, 0.6); color: #ecd9ae; }
 
 /* --- the portal --------------------------------------------------------------------- */
@@ -730,6 +742,9 @@
 .mg-door-cell { display: flex; }
 .mg-door { width: 100%; }
 .mg-door-sign { display: flex; align-items: center; justify-content: center; min-height: 3.2rem; }
+/* every door's sign keeps one box, so the names below line up across a row;
+   an alphabet's signScale enlarges the drawing inside it (overflow is visible) */
+.mg-door-sign .mg-glyph:not(.is-figure) { width: 1em; height: 1em; transform: scale(var(--mg-scale, 1)); }
 .mg-door-sign .mg-unstruck { width: 2.6rem; height: 2.6rem; vertical-align: middle; }
 .mg-door.is-pending .edu-hall-glyph { text-shadow: none; }
 .mg-door-names { font-family: var(--edu-script-faces), Georgia, "Times New Roman", serif; font-size: 0.95rem; }
@@ -984,7 +999,10 @@
   padding: 1.1rem 1rem;
   border-top: 1px solid rgba(179, 139, 70, 0.25);
   border-bottom: 1px solid rgba(179, 139, 70, 0.25);
-  font-size: clamp(2.2rem, 5vw, 3rem);
+  /* an alphabet's signScale enlarges its signs; on a phone the floor is
+     divided by it, so a scaled sign takes the same width as any other and a
+     word of eight letters still fits on a line */
+  font-size: clamp(calc(2.2rem / var(--mg-scale, 1)), 5vw, 3rem);
   line-height: 1.25;
   color: #d1ad68;
   text-shadow: 0 0 26px rgba(209, 173, 104, 0.28);
@@ -1045,6 +1063,9 @@
 .mg-fold-from { font-style: italic; color: #ecd9ae !important; white-space: nowrap; }
 .mg-fold-to { white-space: nowrap; }
 .mg-fold-to .edu-glyph { font-size: 1.25rem; color: #ecd9ae; margin-right: 0.4rem; }
+/* a traced sign (key-grid size, by the rule above) sits on the row's line by
+   its middle, not by the foot of its box, so it does not ride above the text */
+.mg-fold-to .mg-glyph:not(.is-figure) { vertical-align: middle; }
 .mg-fold-to em { color: rgba(209, 173, 104, 0.75); }
 .mg-key-label { margin: 0.4rem 0 0.5rem !important; color: rgba(209, 173, 104, 0.72) !important; font-family: "Cinzel", Georgia, serif !important; font-size: 0.66rem !important; letter-spacing: 0.18em; text-transform: uppercase; }
 .mg-key-grid { list-style: none; margin: 0 0 0.9rem; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(2.7rem, 1fr)); gap: 0.35rem; }

@@ -28,6 +28,11 @@ import { textOf } from './sign';
 // gives it a larger box at text size, since points do not fill an em as a
 // letter's strokes do. A null glyph draws the kit's own gap mark; the pages
 // show a pending letter otherwise.
+//
+// A glyph may name a lighter `pen` for where it is drawn large (the geomantic
+// figures' printed asterisks, whose six short arms the 5.5 pen fills in at
+// plaque size): it is carried as --mg-pen and has-pen, and magic.css gives it
+// to the strokes in the plaque only; at text size the house pen stands.
 
 const HOUSE_RING = 6;
 const ringPen = (r) => (r < HOUSE_RING ? 2.6 : 3.6);
@@ -37,7 +42,7 @@ const isFigure = (g) => Boolean(g && !String(g.d || '').trim() && (g.dots || [])
 function MagicGlyph({ g, size, label, className }) {
     const uid = useId();
     const a11y = label ? { role: 'img', 'aria-label': label } : { 'aria-hidden': true };
-    const cls = size ? className : ['mg-glyph', isFigure(g) && 'is-figure', className].filter(Boolean).join(' ') || undefined;
+    const cls = size ? className : ['mg-glyph', isFigure(g) && 'is-figure', g?.pen && 'has-pen', className].filter(Boolean).join(' ') || undefined;
     if (!g) {
         return (
             <svg className={cls} width={size} height={size} viewBox="0 0 100 100" {...a11y}>
@@ -51,7 +56,8 @@ function MagicGlyph({ g, size, label, className }) {
     const holes = rings.length && g.d ? `mg-holes${uid.replace(/[^A-Za-z0-9_-]/g, '')}` : null;
     return (
         <svg className={cls} width={size} height={size} viewBox="0 0 100 100" fill="none" stroke="currentColor"
-            strokeWidth="5.5" strokeLinecap="round" strokeLinejoin="round" {...a11y}>
+            strokeWidth="5.5" strokeLinecap="round" strokeLinejoin="round" {...a11y}
+            style={g.pen && !size ? { '--mg-pen': g.pen } : undefined}>
             {holes && (
                 <defs>
                     <mask id={holes} maskUnits="userSpaceOnUse" x="-5" y="-5" width="110" height="110">

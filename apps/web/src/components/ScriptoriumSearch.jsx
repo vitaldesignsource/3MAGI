@@ -196,7 +196,7 @@ function ScriptoriumSearch({ scope = 'scriptorium', scripts = null }) {
                                 {r.n
                                     ? <span className="edu-search-native edu-glyph">{r.n}</span>
                                     : r.g
-                                        ? <span className="edu-search-native edu-glyph"><MagicGlyph g={r.g} /></span>
+                                        ? <span className="edu-search-native edu-glyph" style={r.g.z ? { '--mg-scale': r.g.z } : undefined}><MagicGlyph g={r.g} /></span>
                                         : r.x ? <span className="edu-search-native"><Unstruck /></span> : null}
                                 <span className="edu-search-body">
                                     <span className="edu-search-label">{r.l}</span>

@@ -139,6 +139,8 @@ for (const b of library?.books ?? []) push(
                 rec.g = { d: l.glyph.d };
                 if (l.glyph.rings?.length) rec.g.rings = l.glyph.rings;
                 if (l.glyph.dots?.length) rec.g.dots = l.glyph.dots;
+                // the alphabet's signScale, so a result draws the sign at the size its pages do
+                if (e.signScale) rec.g.z = e.signScale;
             } else if (!l.char) rec.x = 1;
             records.push(rec);
         });
