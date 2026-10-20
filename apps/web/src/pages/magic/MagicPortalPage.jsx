@@ -46,7 +46,7 @@ function MagicPortalPage() {
         <div className="third-lamp-scope edu-page mg-page mg-portal">
             <Helmet>
                 <title>The Magical Scriptorium — The Scriptorium — The Third Lamp</title>
-                <meta name="description" content="The Magical Scriptorium, a wing of The Third Lamp's Scriptorium: the magical and secret alphabets — Agrippa's angelic scripts, the Theban, the signs of the planets and the furnace, the runes — with the books that carried them, what is documented and what is claimed, a comparison of the alphabets and a transliterator." />
+                <meta name="description" content="The Magical Scriptorium, a wing of The Third Lamp's Scriptorium: the magical and secret alphabets — the Hebrew-keyed ring-letter alphabets Agrippa printed in 1533, the Theban, the signs of the planets and the furnace, the runes — with the books that carried them, what is documented and what is claimed, a comparison of the alphabets and a transliterator." />
             </Helmet>
             <ThirdLampHeader />
 

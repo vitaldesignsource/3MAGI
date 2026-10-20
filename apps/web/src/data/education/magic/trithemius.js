@@ -320,7 +320,7 @@ export default {
         { to: 'celestial', relation: 'Agrippa III.30. The draft of 1510 went to Trithemius, but whether it already held this alphabet is not known.' },
         { to: 'transitus-fluvii', relation: 'The third alphabet of Agrippa III.30, with the same open question about the draft.' },
         { to: 'malachim', relation: 'A contrast: the Golden Dawn’s Cipher Manuscripts are written in Trithemius’s Latin-keyed cipher, not in this Hebrew-keyed script.' },
-        { to: 'aiq-bekar', relation: 'Another cipher the Golden Dawn used, for sigils; its Cipher Manuscripts are in Trithemius’s alphabet, not in the nine chambers.' },
+        { to: 'aiq-bekar', relation: 'A cipher the Golden Dawn is reported to have used for sigils; its Cipher Manuscripts are in Trithemius’s alphabet, not in the nine chambers.' },
         { to: 'enochian', relation: 'The Golden Dawn, whose founding manuscripts are in Trithemius’s cipher, took up Dee’s angelic alphabet as well.' },
         { to: 'charakteres', relation: 'Invented signs are far older than Trithemius. He printed a catalogue of secret alphabets; he did not begin the practice.' },
     ],

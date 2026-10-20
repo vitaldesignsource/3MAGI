@@ -91,7 +91,7 @@ function EducationPortalPage() {
                     <header className="edu-section-head">
                         <p className="kicker">{WING.kicker}</p>
                         <h2 id="edu-magic-heading">{WING.title}</h2>
-                        <p>A wing for the magical and secret alphabets: the angelic scripts Agrippa printed, the
+                        <p>A wing for the magical and secret alphabets: the Hebrew-keyed ring-letter alphabets Agrippa printed, the
                             Theban, the signs of the planets and the furnace, the runes — {numberWord(ALPHABETS.length)} alphabets
                             and kinds of sign, each set beside the books that carried it.</p>
                     </header>

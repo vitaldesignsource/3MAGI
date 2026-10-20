@@ -213,7 +213,7 @@ export default {
         { claim: 'It is the language of Adam, and Enoch was the last to know it before Dee and Kelley; hence the name “Enochian”.', standing: 'legend',
             evidence: 'Ascribed to Dee’s angels. Wikipedia reports that Dee’s records call the language Angelical, Celestial Speech, the Language of Angels, the First Language of God-Christ, the Holy Language or Adamical, and that “Enochian” comes from Dee’s assertion that Enoch had been the last human to know it. “Enochian” is the later, usual name.',
             sources: ['Wikipedia, “Enochian”', 'Asprem (2012)'] },
-        { claim: 'Dee keyed the twenty-one letters to twenty-two Latin letters, U and V as one, and gave none to J, K or W.', standing: 'documented',
+        { claim: 'Dee keyed the twenty-one letters to twenty-two Latin letters, U and V as one, and gave none to J, K or W.', standing: 'attributed',
             evidence: 'Wikipedia reports the mapping, with U and V as positional variants of one letter, and adds that one of the twenty-one may appear with or without a diacritic dot. An analysis of the Calls, a weak source, says K and W do not occur in the Enochian texts. The K, J and W of modern tables are later conventions.',
             sources: ['Wikipedia, “Enochian”', '“Towards an Enochian Grammar” (freepages.rootsweb.com)'] },
         { claim: 'Gon, with a dot, stands for Y.', standing: 'attributed',

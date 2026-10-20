@@ -301,7 +301,7 @@ export default {
         { citation: 'Vísindavefurinn (University of Iceland), “Hver er elsta þekkta heimild um galdrastafi á Íslandi?”, answer 81960; English version on why.is, answer 81995.', url: 'https://www.visindavefur.is/svar.php?id=81960' },
         { citation: 'Vísindavefurinn, “Hver er uppruni Ægishjálms og hvar er hans fyrst getið á prenti?”, answer 75399.', url: 'https://www.visindavefur.is/svar.php?id=75399' },
         { citation: 'Tomáš Vlasatý, “Origins of the vegvísir symbol”, Projekt Forlǫg (a reenactment research site).', url: 'https://sagy.vikingove.cz/en/origins-of-the-vegvisir-symbol/' },
-        { citation: 'Magnús Rafnsson, Angurgapi: The Witch-hunts in Iceland (Hólmavík: Strandagaldur).', url: 'https://shop.galdrasyning.is/products/angurgapi-the-witch-hunts-in-iceland' },
+        { citation: 'Magnús Rafnsson, Angurgapi: The Witch-hunts in Iceland (Hólmavík: Strandagaldur); the publisher’s page is gone, and the link is to the Wayback Machine’s copy of 16 October 2025.', url: 'https://web.archive.org/web/20251016070036/https://shop.galdrasyning.is/products/angurgapi-the-witch-hunts-in-iceland' },
         { citation: 'Strandagaldur, the Museum of Icelandic Sorcery and Witchcraft, Hólmavík: “The Witch-hunts in Iceland” and “The Executed” (a museum’s popular account).', url: 'https://galdrasyning.is/the-witch-hunts-in-iceland/' },
         { citation: 'An article on the Icelandic witch trials in Scandinavian-Canadian Studies, for its count of the 71 accused who reached judgment.' },
         { citation: 'Gustav Neckel (ed.), rev. Hans Kuhn, Edda: Die Lieder des Codex Regius nebst verwandten Denkmälern, 5th ed. (Heidelberg: Carl Winter, 1983): Fáfnismál 16–17 and the prose of Reginsmál; not consulted for this page.' },

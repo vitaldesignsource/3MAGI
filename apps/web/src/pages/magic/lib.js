@@ -80,6 +80,6 @@ export const STATUS_LABEL = {
 export const STANDINGS = [
     { key: 'documented', label: 'Documented', note: 'the record shows it' },
     { key: 'attributed', label: 'Attributed', note: 'a named source says so; the record does not show it' },
-    { key: 'disputed', label: 'Disputed', note: 'argued both ways in the scholarship' },
+    { key: 'disputed', label: 'Disputed', note: 'contested, unproven or contradicted by the record; the evidence says which' },
     { key: 'legend', label: 'Legend', note: 'a story told about it' },
 ];

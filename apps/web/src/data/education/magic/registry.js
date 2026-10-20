@@ -29,7 +29,7 @@ const registry = {
         title: 'The Magical Scriptorium',
         kicker: 'Secret Letters',
         path: '/third-lamp/education/magic',
-        intro: 'A wing of the Scriptorium for the magical and secret alphabets: the angelic scripts Agrippa printed in 1533, the Theban that Trithemius gave to Honorius, the signs of the planets and the furnace, and the native scripts that later centuries filled with lore. Each is set beside the books that carried it from hand to hand, with what is documented kept apart from what is claimed.',
+        intro: 'A wing of the Scriptorium for the magical and secret alphabets: the Hebrew-keyed ring-letter alphabets Agrippa printed in 1533, the Theban that Trithemius gave to Honorius, the signs of the planets and the furnace, and the native scripts that later centuries filled with lore. Each is set beside the books that carried it from hand to hand, with what is documented kept apart from what is claimed.',
         // The hero's row of signs: the seven planets, set from the Signs of
         // the Art (the validator checks each is a sign of a ready alphabet).
         heroSigns: ['☉', '☽', '☿', '♀', '♂', '♃', '♄'],
@@ -103,7 +103,7 @@ const registry = {
             keyedTo: 'none', direction: 'ltr', status: 'ready', signScale: 1.6,
             // door: the a of the alchemist's alphabet, as drawn on its page (the validator checks it is one of the page's own signs)
             door: { glyph: { d: 'M 51.4 32.9 C 58.08 32.9 63.5 38.32 63.5 45 C 63.5 51.68 58.08 57.1 51.4 57.1 C 44.72 57.1 39.3 51.68 39.3 45 C 39.3 38.32 44.72 32.9 51.4 32.9 Z', dots: [[51.3, 45.4, 2.9]] } },
-            blurb: 'The abbot of Sponheim, whose books of secret writing carried cipher alphabets into print and into Agrippa’s hands.',
+            blurb: 'The abbot of Sponheim, whose books of secret writing carried cipher alphabets into print, among them the Theban that Agrippa, by the agreement of their texts, took up.',
         },
         {
             slug: 'ibn-wahshiyya', group: 'secret', title: 'The Ancient Alphabets of Ibn Waḥshiyya', short: 'Ibn Waḥshiyya',
@@ -168,7 +168,7 @@ const registry = {
     pages: [
         {
             slug: 'agrippa', kind: 'author', title: 'Agrippa and the Three Books', short: 'Agrippa', status: 'ready',
-            blurb: 'Heinrich Cornelius Agrippa and De occulta philosophia (1533), the book that carried most of these alphabets into print.',
+            blurb: 'Heinrich Cornelius Agrippa and De occulta philosophia (1533), the book that gathered the Theban, the three Hebrew-keyed alphabets, the nine chambers and the tables of the planets into one handbook.',
         },
         {
             slug: 'the-books', kind: 'lineage', title: 'The Books: Hand to Hand', short: 'The Books', status: 'ready',

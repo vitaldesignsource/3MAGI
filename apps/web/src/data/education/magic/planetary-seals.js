@@ -485,7 +485,7 @@ export default {
         { to: 'aiq-bekar', relation: 'The nine chambers of III.30 (“nine Chambers”, J.F. 1651, p. 442) give the reduction — 300 to 30 to 3 — that the modern tracing method uses to fit a name onto a square.' },
         { to: 'arabic', relation: 'The Arabic tradition of magic squares, wafq and awfāq, to which historians trace these squares; no line of descent to Agrippa is documented.' },
         { to: 'charakteres', relation: 'The characters of the intelligences and spirits stand in the long line of invented magical signs that runs from the Greek handbooks into Agrippa’s Latin.' },
-        { to: 'celestial', relation: 'Book III’s angelic alphabets are Agrippa’s other way of giving a name a visible form; the seals are the way through numbers.' },
+        { to: 'celestial', relation: 'Book III’s Hebrew-keyed alphabets are another of Agrippa’s kinds of character, a way of giving a name a visible form; the seals are the way through numbers.' },
         { to: 'signs-of-the-art', relation: 'The common signs of the seven planets, which are not the seals printed here: Agrippa’s seals are figures of their own, drawn, he says, from the tables.' },
         { to: 'alphabet-of-the-magi', relation: 'The pseudo-Paracelsian Archidoxis magica, discussed there, also prescribes seals bearing names and characters; its relation to Agrippa’s tables is not established.' },
         { to: 'the-books', relation: 'The chain of books in which the tables travelled with the alphabets, from Agrippa to the English of 1651 and beyond.' },

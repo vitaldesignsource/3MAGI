@@ -345,7 +345,7 @@ export default {
         { citation: 'Wikipedia, “Ogham inscription” (counts, distribution, orthodox and scholastic inscriptions, functions).', url: 'https://en.wikipedia.org/wiki/Ogham_inscription' },
         { citation: 'Wikipedia, “Auraicept na n-Éces” (the dating of the core, the earliest copies, Cenn Fáelad).', url: 'https://en.wikipedia.org/wiki/Auraicept_na_n-%C3%89ces' },
         { citation: 'Wikipedia, “Vortiporius” (the Castell Dwyran stone; Rhŷs and Sims-Williams on the identification).', url: 'https://en.wikipedia.org/wiki/Vortiporius' },
-        { citation: 'Carmarthenshire Museums (CofGâr), “Selected treasure: Vortipor”.', url: 'https://cofgar.wales/collections/selected-treasure-vortipor/' },
+        { citation: 'Carmarthenshire Museums (CofGâr), “Selected treasure: Vortipor”; the page is gone from the museum’s site, and the link is to the Wayback Machine’s copy of 15 February 2026.', url: 'https://web.archive.org/web/20260215231900/https://cofgar.wales/collections/selected-treasure-vortipor/' },
         { citation: 'Celtic Inscribed Stones Project (University College London), site record: Castell Dwyran.', url: 'https://www.ucl.ac.uk/archaeology/cisp/database/site/cdwyr.html' },
         { citation: 'Andrew West, BabelStone blog, “The Ogham Stones of Wales” (2010): an informed blog, used for a count only.', url: 'https://www.babelstone.co.uk/Blog/2010/03/ogham-stones-of-wales.html' },
         { citation: 'Andrew West, BabelStone blog, “The Ogham Stones of Scotland” (2013): an informed blog, used for a count only.', url: 'https://www.babelstone.co.uk/Blog/2013/06/ogham-stones-of-scotland.html' },
