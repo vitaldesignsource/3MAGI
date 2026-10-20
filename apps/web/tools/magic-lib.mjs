@@ -87,11 +87,39 @@ function coords(cmds) {
 }
 
 // Every problem with one drawn glyph, as plain sentences (empty when sound).
+// Beyond the grammar of the path, it holds the glyph to what a browser will
+// actually draw and to the kit's README: a glyph must draw something (a
+// stroke, a ring or a dot); an arc's flags are 0 or 1 and its radii positive,
+// or the browser logs an error and drops the path; a ring or dot has a radius
+// in (0, 50] and stays inside the box; and a ring sits on a stroke end with
+// the stroke stopping at its EDGE — some endpoint lies r (±1.5) from the
+// ring's centre, so the line never crosses the ring's hole.
+export const RING_R = 6;
+export const DOT_R = 2.6;
+const RING_TOLERANCE = 1.5;
+const isNum = (v) => typeof v === 'number' && Number.isFinite(v);
+
 export function glyphProblems(g) {
     const out = [];
-    if (!g || typeof g.d !== 'string') return ['glyph.d is missing: a drawn glyph needs path data, even an empty string'];
+    if (!g || typeof g !== 'object' || typeof g.d !== 'string') return ['glyph.d is missing: a drawn glyph needs path data, even an empty string'];
+    for (const k of ['rings', 'dots']) {
+        if (g[k] != null && !Array.isArray(g[k])) return [`glyph.${k} must be a list of [x, y] or [x, y, r]`];
+    }
+    const rings = g.rings ?? [];
+    const dots = g.dots ?? [];
     let cmds;
     try { cmds = parsePath(g.d); } catch (e) { return [`path: ${e.message}`]; }
+    const draws = cmds.some(([c]) => c !== 'M' && c !== 'Z');
+    if (!draws && rings.length === 0 && dots.length === 0) {
+        out.push(g.d.trim() ? 'the path only moves the pen and there are no rings or dots: the glyph draws nothing'
+            : 'the glyph draws nothing: no path, no rings, no dots');
+    }
+    for (const [c, a] of cmds) {
+        if (c !== 'A') continue;
+        const [rx, ry, , large, sweep] = a;
+        if (!(rx > 0 && ry > 0)) out.push(`arc radii must be greater than 0 (got ${rx}, ${ry})`);
+        if (![0, 1].includes(large) || ![0, 1].includes(sweep)) out.push(`arc flags must be 0 or 1 (got ${large}, ${sweep}): the browser rejects the path`);
+    }
     for (const [x, y] of coords(cmds)) {
         if ((x !== null && (x < 0 || x > 100)) || (y !== null && (y < 0 || y > 100))) {
             out.push(`coordinate out of the 0–100 box: ${x},${y}`);
@@ -99,18 +127,39 @@ export function glyphProblems(g) {
         }
     }
     const eps = endpoints(cmds);
-    for (const r of g.rings ?? []) {
-        const [x, y, rad = 6] = r;
-        if ([x, y, rad].some((v) => typeof v !== 'number')) { out.push(`bad ring ${JSON.stringify(r)}`); continue; }
-        if (!eps.some(([ex, ey]) => Math.hypot(ex - x, ey - y) <= 6 + rad)) {
-            out.push(`ring at ${x},${y} is not on a stroke end (no path endpoint within ${6 + rad} units)`);
-        }
+    for (const r of rings) {
+        if (!Array.isArray(r) || r.length < 2 || r.length > 3) { out.push(`bad ring ${JSON.stringify(r)}: give [x, y] or [x, y, r]`); continue; }
+        const [x, y, rad = RING_R] = r;
+        if (![x, y, rad].every(isNum)) { out.push(`bad ring ${JSON.stringify(r)}: every value must be a number`); continue; }
+        if (!(rad > 0 && rad <= 50)) { out.push(`ring at ${x},${y} has radius ${rad}: it must be greater than 0 and at most 50`); continue; }
         if (x - rad < 0 || x + rad > 100 || y - rad < 0 || y + rad > 100) out.push(`ring at ${x},${y} leaves the 0–100 box`);
+        if (!eps.length) { out.push(`ring at ${x},${y} has no stroke to end: a ring sits on a stroke end`); continue; }
+        const nearest = Math.min(...eps.map(([ex, ey]) => Math.hypot(ex - x, ey - y)));
+        if (Math.abs(nearest - rad) > RING_TOLERANCE) {
+            out.push(`ring at ${x},${y} (r ${rad}) is not on a stroke end: the nearest endpoint is ${nearest.toFixed(1)} from its centre, and the stroke must stop at the ring's edge, ${rad} away`);
+        }
     }
-    for (const dt of g.dots ?? []) {
-        if (!Array.isArray(dt) || dt.slice(0, 2).some((v) => typeof v !== 'number' || v < 0 || v > 100)) out.push(`bad dot ${JSON.stringify(dt)}`);
+    for (const dt of dots) {
+        if (!Array.isArray(dt) || dt.length < 2 || dt.length > 3) { out.push(`bad dot ${JSON.stringify(dt)}: give [x, y] or [x, y, r]`); continue; }
+        const [x, y, rad = DOT_R] = dt;
+        if (![x, y, rad].every(isNum)) { out.push(`bad dot ${JSON.stringify(dt)}: every value must be a number`); continue; }
+        if (!(rad > 0 && rad <= 50)) { out.push(`dot at ${x},${y} has radius ${rad}: it must be greater than 0 and at most 50`); continue; }
+        if (x - rad < 0 || x + rad > 100 || y - rad < 0 || y + rad > 100) out.push(`dot at ${x},${y} (r ${rad}) leaves the 0–100 box`);
     }
     return out;
+}
+
+// A source URL the page can print: it must parse (the page reads its host
+// name with new URL()) and it must be https.
+export function urlProblem(url) {
+    try {
+        const u = new URL(url);
+        if (u.protocol !== 'https:') return `url must be https:// — "${url}"`;
+        if (!u.hostname) return `url has no host — "${url}"`;
+        return null;
+    } catch {
+        return `url does not parse (the page reads its host name with new URL()) — "${url}"`;
+    }
 }
 
 // --- the comparison data -----------------------------------------------------
@@ -144,7 +193,6 @@ export async function buildCompare(registry, modules) {
                 slug: a.slug, title: a.title, short: a.short, status: a.status, direction: a.direction,
                 mode: signed ? 'signs' : 'pending',
                 letters: letters.length,
-                note: m.stub ? 'Letters and forms to come.' : (m.drawing && m.drawing.pending ? 'Forms being traced.' : ''),
             };
         });
         const rows = keys.map((k) => {

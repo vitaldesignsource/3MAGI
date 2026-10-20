@@ -19,3 +19,17 @@ export function modeOf(letter) {
     if (letter.char) return 'char';
     return 'gap';
 }
+
+// The note most letters share. While an alphabet's forms are being traced it
+// is the reason for the gap, the same for every letter: the notice above the
+// register gives it once, and the register prints only the notes that say
+// something of their own letter. The search index applies the same rule, so a
+// result never repeats it either.
+export function sharedNote(letters) {
+    const counts = new Map();
+    for (const l of letters) if (l.note) counts.set(l.note, (counts.get(l.note) || 0) + 1);
+    let best = null;
+    let n = 0;
+    for (const [note, c] of counts) if (c > n) { best = note; n = c; }
+    return n >= 3 && n * 3 >= letters.length ? best : null;
+}

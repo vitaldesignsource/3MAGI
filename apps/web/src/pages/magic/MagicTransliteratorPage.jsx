@@ -1,10 +1,11 @@
-import React, { useMemo, useState } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 import ThirdLampHeader from '../../components/ThirdLampHeader';
 import ThirdLampFooter from '../../components/ThirdLampFooter';
 import { Sign } from './MagicGlyph';
-import { MAGIC_PATH, WING, entryPath, fitStyle } from './lib';
+import FitTitle from './FitTitle';
+import { MAGIC_PATH, WING, entryPath } from './lib';
 import { transliterate } from './transliterate';
 import compare from '../../data/education/magic/compare.generated';
 import '../../styles/magic.css';
@@ -22,6 +23,8 @@ const canWrite = (s) => s.keys.some((k) => k.sign);
 // The example each kind of scheme opens with, so the page shows a worked
 // result (and the folds it needed) before anything is typed.
 const EXAMPLE = { latin: 'The Third Lamp', hebrew: 'אור' };
+// How long typing must pause before the screen reader's line is updated.
+const SETTLE_MS = 400;
 
 function MagicTransliteratorPage() {
     const writable = SCHEMES.filter(canWrite);
@@ -31,6 +34,29 @@ function MagicTransliteratorPage() {
     const scheme = SCHEMES.find((s) => s.slug === slug) || null;
     const result = useMemo(() => (scheme && text.trim() ? transliterate(text, scheme) : null), [scheme, text]);
     const dir = scheme?.direction === 'rtl' ? 'rtl' : 'ltr';
+
+    // What a screen reader hears: one plain line — the alphabet, the
+    // transliteration, what was passed over — once typing settles. The written
+    // signs, the breakdown and the report are for the eye and are not
+    // announced on every keystroke.
+    const spoken = result && result.words.length > 0
+        ? `${scheme.short}: ${result.plain}${result.ignored.length ? `. Passed over: ${result.ignored.join(' ')}` : ''}`
+        : '';
+    const [status, setStatus] = useState(spoken);
+    useEffect(() => {
+        const t = setTimeout(() => setStatus(spoken), SETTLE_MS);
+        return () => clearTimeout(t);
+    }, [spoken]);
+
+    // Choosing an alphabet keeps what was typed. The text is replaced by the
+    // new alphabet's example only when the kind of input changes (Latin to
+    // Hebrew), or when the box is empty or still holds the old example.
+    const choose = (s) => {
+        if (s.slug === slug) return;
+        const prev = scheme ? EXAMPLE[scheme.from] : null;
+        if (!scheme || s.from !== scheme.from || !text.trim() || text === prev) setText(EXAMPLE[s.from] || '');
+        setSlug(s.slug);
+    };
 
     const copy = async () => {
         try { await navigator.clipboard.writeText(result.text); setCopied(true); setTimeout(() => setCopied(false), 1600); }
@@ -50,7 +76,7 @@ function MagicTransliteratorPage() {
                     <p className="kicker">
                         <Link to="/third-lamp/education">The Scriptorium</Link> · <Link to={MAGIC_PATH}>{WING.title}</Link>
                     </p>
-                    <h1 className="mg-fit" style={fitStyle('The Transliterator')}>The Transliterator</h1>
+                    <FitTitle title="The Transliterator" />
                     <p className="edu-hero-sub">Choose an alphabet and type. The text is written sign by sign, and the
                         conventions the tool follows — which letters it folds into which, what it passes over — are printed
                         beside it, because a transliteration is only as honest as the rules it states.</p>
@@ -71,7 +97,7 @@ function MagicTransliteratorPage() {
                                     aria-pressed={s.slug === slug}
                                     disabled={!ok}
                                     title={ok ? undefined : `${s.title}: the forms are still being traced`}
-                                    onClick={() => { setSlug(s.slug); setText(EXAMPLE[s.from] || ''); }}>
+                                    onClick={() => choose(s)}>
                                     {s.short}{ok ? '' : ' · forms pending'}
                                 </button>
                             );
@@ -101,7 +127,8 @@ function MagicTransliteratorPage() {
                                 </p>
                             </div>
 
-                            <div className="mg-translit-out" aria-live="polite">
+                            <p className="sr-only" role="status">{status}</p>
+                            <div className="mg-translit-out">
                                 {result && result.words.length > 0 && (
                                     <>
                                         <div className="mg-writ edu-glyph" dir={dir} role="img"

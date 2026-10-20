@@ -13,7 +13,7 @@
 // values point into ('hebrew' | 'latin'), or 'none'. direction is the way its
 // table and its writing run, and the way the arrow keys walk its letters.
 //
-// The alphabets are NOT halls: they are not in EducationPortalPage's HALLS,
+// The alphabets are NOT halls: they are not in the halls' HALLS (data/education/portal/halls.js),
 // and their modules live in this subfolder, out of reach of the halls' glob.
 
 const registry = {
@@ -126,7 +126,9 @@ const registry = {
         {
             slug: 'ogham', group: 'native', title: 'Ogham', short: 'Ogham',
             otherNames: ['Ogam', 'Beithe-luis-nin'],
-            keyedTo: 'none', direction: 'ltr', status: 'ready', door: { char: 'ᚁ' },
+            // door: straif, four strokes across the stemline; beith (ᚁ), one
+            // stroke beneath it, reads at text size as a Latin capital T
+            keyedTo: 'none', direction: 'ltr', status: 'ready', door: { char: 'ᚎ' },
             blurb: 'Irish stroke-letters cut along a stemline, and the medieval scholarship that made every letter a tree.',
         },
     ],

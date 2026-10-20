@@ -10,7 +10,8 @@
 
 import { readFileSync, readdirSync } from 'node:fs';
 import path from 'node:path';
-import { GENERATED, buildCompare, glyphProblems, loadHall, loadModules, loadRegistry, serialiseCompare, web } from './magic-lib.mjs';
+import { GENERATED, buildCompare, glyphProblems, loadHall, loadModules, loadRegistry, serialiseCompare, urlProblem, web } from './magic-lib.mjs';
+import { BAD_GLYPHS, BAD_URLS, GOOD_GLYPHS, GOOD_URLS } from './magic-fixtures.mjs';
 
 const errors = [];
 const notes = [];
@@ -18,6 +19,14 @@ const fail = (where, m) => errors.push(`${where}: ${m}`);
 const words = (s) => String(s ?? '').trim().split(/\s+/).filter(Boolean).length;
 const YEAR = /\b(1\d{3}|20\d{2})\b/;
 const LOCATOR = /\b(book|bk\.|ch\.|chapter|cap\.|p\.|pp\.|fol\.|ff?\.|plate|sig\.|MS|[IVX]+\.\d+)/i;
+
+// --- the rules themselves --------------------------------------------------------
+// Before any module is read, the glyph and URL rules must refuse every bad
+// fixture and pass every good one (magic-fixtures.mjs).
+for (const [label, g] of BAD_GLYPHS) if (!glyphProblems(g).length) fail('self-test', `the glyph rules let through ${label}`);
+for (const [label, g] of GOOD_GLYPHS) for (const p of glyphProblems(g)) fail('self-test', `the glyph rules refuse ${label}: ${p}`);
+for (const u of BAD_URLS) if (!urlProblem(u)) fail('self-test', `the URL rule lets through "${u}"`);
+for (const u of GOOD_URLS) if (urlProblem(u)) fail('self-test', `the URL rule refuses "${u}"`);
 
 const registry = await loadRegistry();
 const { modules, problems } = await loadModules(registry);
@@ -82,6 +91,15 @@ for (const a of registry.alphabets) {
         } else fail(where, 'door must be null, { char } or { glyph }');
     }
 }
+// 'ready' means the signs can be shown. A keyed alphabet marked ready with no
+// sign to show would stand in the comparison band that says its forms are
+// being traced, which would not be true.
+for (const a of registry.alphabets) {
+    const m = modules[a.slug];
+    if (a.status === 'ready' && a.keyedTo !== 'none' && m && !(m.letters || []).some((l) => l.glyph || l.char)) {
+        fail(`registry/${a.slug}`, 'a ready alphabet keyed to a hall shows its signs; mark it forms-pending until it does');
+    }
+}
 for (const p of registry.pages) {
     if (!['author', 'lineage'].includes(p.kind)) fail(`registry/${p.slug}`, 'a page’s kind must be author or lineage');
 }
@@ -140,7 +158,7 @@ for (const entry of all) {
     if (!Array.isArray(m.sources) || m.sources.length === 0) fail(where, 'sources must not be empty');
     for (const [i, s] of (m.sources || []).entries()) {
         if (words(s.citation) < 3) fail(`${where}/source ${i + 1}`, 'citation too short: name the work and where it is');
-        if (s.url != null && !/^https:\/\/\S+$/.test(s.url)) fail(`${where}/source ${i + 1}`, `url must be https:// — "${s.url}"`);
+        if (s.url != null) { const p = urlProblem(s.url); if (p) fail(`${where}/source ${i + 1}`, p); }
     }
     if (m.stub) {
         const allowed = new Set(['slug', 'title', 'stub', 'status', 'summary', 'sources']);

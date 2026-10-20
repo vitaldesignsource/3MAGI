@@ -12,6 +12,7 @@ import { fileURLToPath } from 'node:url';
 import path from 'node:path';
 import { articles } from '../src/data/articles.js';
 import magic from '../src/data/education/magic/registry.js';
+import compare from '../src/data/education/magic/compare.generated.js';
 
 const SITE = 'https://threemagipress.com';
 const here = path.dirname(fileURLToPath(import.meta.url));
@@ -80,11 +81,17 @@ const staticRoutes = [
     { loc: '/third-lamp/contact',     priority: '0.4', changefreq: 'yearly' },
     // The Magical Scriptorium: the wing, its two tools, and every entry of its
     // registry, read from the registry so a new alphabet is listed the day it
-    // is added.
+    // is added. A stub (a page that gives only its summary and sources, as the
+    // generated comparison data records) is listed at a lower priority until
+    // it is written.
     { loc: magic.wing.path,                      priority: '0.7', changefreq: 'monthly' },
     { loc: `${magic.wing.path}/compare`,         priority: '0.7', changefreq: 'monthly' },
     { loc: `${magic.wing.path}/transliterate`,   priority: '0.7', changefreq: 'monthly' },
-    ...[...magic.alphabets, ...magic.pages].map((e) => ({ loc: `${magic.wing.path}/${e.slug}`, priority: '0.7', changefreq: 'monthly' })),
+    ...[...magic.alphabets, ...magic.pages].map((e) => ({
+        loc: `${magic.wing.path}/${e.slug}`,
+        priority: compare.entries[e.slug]?.stub ? '0.3' : '0.7',
+        changefreq: 'monthly',
+    })),
 ].map((r) => ({ ...r, lastmod: today }));
 
 // Gated essays are excluded: pointing a crawler at a URL that answers with a

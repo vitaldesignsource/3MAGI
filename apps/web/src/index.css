@@ -9515,13 +9515,25 @@ h3 {
 }
 .edu-hero-glyphs {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   gap: clamp(1.2rem, 4vw, 2.6rem);
-  row-gap: 0.6rem;
   margin-top: 2.2rem;
   font-size: clamp(1.6rem, 3.5vw, 2.2rem);
   color: rgba(209, 173, 104, 0.55);
+}
+/* The Scriptorium's own row holds one sign per hall, too many for one line:
+   it breaks into even rows (the page sets --edu-hero-cols to half the halls,
+   and --edu-hero-cols-sm to a quarter for phones), not a long row and a
+   stub. */
+.edu-hero-glyphs.is-halls {
+  display: grid;
+  grid-template-columns: repeat(var(--edu-hero-cols, 10), auto);
+  justify-content: center;
+  justify-items: center;
+  row-gap: 0.7rem;
+}
+@media (max-width: 480px) {
+  .edu-hero-glyphs.is-halls { grid-template-columns: repeat(var(--edu-hero-cols-sm, 5), auto); }
 }
 
 /* --- shared section heads --------------------------------------------- */
@@ -10113,8 +10125,9 @@ h3 {
   cursor: pointer;
   transition: border-color 160ms ease, background 160ms ease;
 }
-.edu-drill-option:hover:not(:disabled) { border-color: rgba(209, 173, 104, 0.7); }
-.edu-drill-option:disabled { cursor: default; opacity: 0.75; }
+.edu-drill-option:hover:not(:disabled):not([aria-disabled="true"]) { border-color: rgba(209, 173, 104, 0.7); }
+.edu-drill-option:disabled,
+.edu-drill-option[aria-disabled="true"] { cursor: default; opacity: 0.75; }
 .edu-drill-option.is-right { border-color: rgba(159, 191, 81, 0.8); color: #cfe3a1; opacity: 1; }
 .edu-drill-option.is-wrong { border-color: rgba(191, 90, 70, 0.8); color: #e0a294; }
 .edu-drill-after { margin-top: 1.1rem; }

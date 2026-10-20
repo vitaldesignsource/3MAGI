@@ -9,11 +9,11 @@ import ScriptoriumTimeline from '../components/ScriptoriumTimeline';
 import ScriptoriumCurrents from '../components/ScriptoriumCurrents';
 import ScriptoriumReckoner, { hasReckoner } from '../components/ScriptoriumReckoner';
 import ScriptoriumDrill from '../components/ScriptoriumDrill';
-import { HALLS } from './EducationPortalPage';
+import { HALLS } from '../data/education/portal/halls';
 
 // Every hall's data is its own chunk, loaded when the hall is entered.
-// Sixteen halls of scholarship had grown to a 2.2MB page chunk when imported
-// eagerly; a reader opening one hall now downloads that hall alone. The glob
+// The halls' scholarship (sixteen halls at the time) had grown to a 2.2MB page
+// chunk when imported eagerly; a reader opening one hall now downloads that hall alone. The glob
 // keys are literal so Vite can split them at build time.
 const LOAD = {
     data: import.meta.glob('../data/education/*.js'),

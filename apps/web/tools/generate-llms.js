@@ -8,14 +8,16 @@
 // sections) and wrote "No description available" for most of what it did
 // find. This one builds the list from the same sources the pages render from:
 // the section declarations of the two portals, the Scriptorium's halls and
-// courses, the article index, and the literal descriptions of the fixed pages.
+// courses, the Magical Scriptorium's registry, the article index, and the literal descriptions of the fixed pages.
 // Account and checkout pages are left out, as they are from the sitemap.
 
 import { existsSync, readdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import path from 'node:path';
 import { articles } from '../src/data/articles.js';
+import { HALLS as halls } from '../src/data/education/portal/halls.js';
 import magic from '../src/data/education/magic/registry.js';
+import compare from '../src/data/education/magic/compare.generated.js';
 import { scriptoriumDescription } from '../src/pages/magic/words.js';
 
 const SITE = 'https://threemagipress.com';
@@ -55,7 +57,18 @@ const line = (url, title, desc) => `- [${title}](${SITE}${url})${desc ? `: ${des
 
 const christianities = arrayFrom('pages/christianities/lib.js', 'SECTIONS');
 const powers = arrayFrom('pages/powers/lib.js', 'SECTIONS');
-const halls = arrayFrom('pages/EducationPortalPage.jsx', 'HALLS');
+
+// What a wing page holds today, read from the generated comparison data (the
+// build writes it from the modules before this runs): a stub gives only its
+// summary and sources, and a forms-pending alphabet shows no letterform yet.
+const magicState = (e) => {
+    const stub = compare.entries[e.slug]?.stub;
+    const pending = e.status === 'forms-pending';
+    if (stub && pending) return ' (In preparation: summary and sources only; the letterforms are still being traced.)';
+    if (stub) return ' (In preparation: summary and sources only.)';
+    if (pending) return ' (Letterforms still being traced.)';
+    return '';
+};
 
 const coursesDir = src('data/education/courses');
 const courses = [];
@@ -113,9 +126,7 @@ const sections = [
     line(magic.wing.path, magic.wing.title, describe('pages/magic/MagicPortalPage.jsx')),
     line(`${magic.wing.path}/compare`, 'The alphabets compared', describe('pages/magic/MagicComparePage.jsx')),
     line(`${magic.wing.path}/transliterate`, 'The transliterator', describe('pages/magic/MagicTransliteratorPage.jsx')),
-    ...magic.alphabets.map((a) => line(`${magic.wing.path}/${a.slug}`, a.title,
-        `${a.blurb}${a.status === 'forms-pending' ? ' (Letterforms still being traced.)' : ''}`)),
-    ...magic.pages.map((p) => line(`${magic.wing.path}/${p.slug}`, p.title, p.blurb)),
+    ...[...magic.alphabets, ...magic.pages].map((e) => line(`${magic.wing.path}/${e.slug}`, e.title, `${e.blurb}${magicState(e)}`)),
     '',
 ];
 

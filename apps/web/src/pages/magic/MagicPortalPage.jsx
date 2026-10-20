@@ -5,15 +5,18 @@ import ThirdLampHeader from '../../components/ThirdLampHeader';
 import ThirdLampFooter from '../../components/ThirdLampFooter';
 import ScriptoriumSearch from '../../components/ScriptoriumSearch';
 import PortalEmblem from '../christianities/PortalEmblem';
-import { MagicDoor } from './MagicDoors';
-import { ALPHABETS, GROUPS, MAGIC_PATH, PAGES, WING, capitalise, entryPath, fitStyle, numberWord, textOf } from './lib';
+import { DoorLegend, MagicDoor } from './MagicDoors';
+import FitTitle from './FitTitle';
+import { ALPHABETS, GROUPS, MAGIC_PATH, PAGES, WING, capitalise, entryPath, numberWord, textOf } from './lib';
 import compare from '../../data/education/magic/compare.generated';
 import '../../styles/magic.css';
 
-// The wing's portal: the alphabets by kind, the tools that work across them,
-// the author and the books, and the Scriptorium's search. Counts are read from
-// the registry; an emblem appears in the hero the day data/emblems.js gains a
-// 'magic' entry, and until then the slot renders nothing.
+// The wing's portal: the alphabets that can be read in full now, as full
+// doors; the rest, still in preparation, as compact doors under their kinds;
+// the tools that work across them, the author and the books, and the
+// Scriptorium's search. Counts are read from the registry and the generated
+// data; an emblem appears in the hero the day data/emblems.js gains a 'magic'
+// entry, and until then the slot renders nothing.
 
 function MagicPortalPage() {
     // Read from the data: how many alphabets can be shown now, how many are
@@ -21,6 +24,9 @@ function MagicPortalPage() {
     const shown = ALPHABETS.filter((a) => compare.entries[a.slug]?.shown > 0).length;
     const tracing = ALPHABETS.filter((a) => a.status === 'forms-pending').length;
     const writing = ALPHABETS.length - shown - tracing;
+    // Open now: ready, and written in full (not a stub).
+    const open = ALPHABETS.filter((a) => a.status === 'ready' && !compare.entries[a.slug]?.stub);
+    const isOpen = new Set(open.map((a) => a.slug));
     return (
         <div className="third-lamp-scope edu-page mg-page mg-portal">
             <Helmet>
@@ -33,7 +39,7 @@ function MagicPortalPage() {
                 <section className="edu-hero mg-hero">
                     <PortalEmblem name="magic" />
                     <p className="kicker"><Link to="/third-lamp/education">The Scriptorium</Link> · A Wing</p>
-                    <h1 className="mg-fit" style={fitStyle(WING.title)}>{WING.title}</h1>
+                    <FitTitle title={WING.title} />
                     <p className="edu-hero-sub">{WING.intro}</p>
                     <div className="edu-hero-glyphs mg-hero-glyphs" aria-hidden="true">
                         {WING.heroSigns.map((s) => <span key={s} className="edu-glyph">{textOf(s)}</span>)}
@@ -55,25 +61,46 @@ function MagicPortalPage() {
                                 ? `; ${numberWord(writing)} more ${writing === 1 ? 'is' : 'are'} being written` : ''}. Every
                             door opens: a page still in preparation gives its summary and its sources.</p>
                     </header>
-                    {GROUPS.map((g) => {
-                        const members = ALPHABETS.filter((a) => a.group === g.key);
-                        if (!members.length) return null;
-                        return (
-                            <div className="mg-group" key={g.key}>
-                                <div className="mg-group-head">
-                                    <h3 id={`mg-group-${g.key}`}>{g.title}</h3>
-                                    <p>{g.note}</p>
-                                </div>
-                                <div className="edu-hall-grid mg-door-grid" role="list" aria-labelledby={`mg-group-${g.key}`}>
-                                    {members.map((a) => (
-                                        <div role="listitem" key={a.slug} className="mg-door-cell">
-                                            <MagicDoor entry={a} stub={compare.entries[a.slug]?.stub} />
-                                        </div>
-                                    ))}
-                                </div>
+                    {open.length > 0 && (
+                        <div className="mg-group mg-open">
+                            <div className="mg-group-head">
+                                <h3 id="mg-group-open">Open now</h3>
+                                <p>Read in full: every sign shown, with its history, its claims and its sources.</p>
                             </div>
-                        );
-                    })}
+                            <div className="edu-hall-grid mg-door-grid" role="list" aria-labelledby="mg-group-open">
+                                {open.map((a) => (
+                                    <div role="listitem" key={a.slug} className="mg-door-cell">
+                                        <MagicDoor entry={a} />
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                    )}
+                    <div className="mg-rest">
+                        <div className="mg-rest-head">
+                            <h3 id="mg-rest-heading">In preparation</h3>
+                        </div>
+                        {GROUPS.map((g) => {
+                            const members = ALPHABETS.filter((a) => a.group === g.key && !isOpen.has(a.slug));
+                            if (!members.length) return null;
+                            return (
+                                <div className="mg-group is-compact" key={g.key}>
+                                    <div className="mg-group-head">
+                                        <h4 id={`mg-group-${g.key}`}>{g.title}</h4>
+                                        <p>{g.note}</p>
+                                    </div>
+                                    <div className="edu-hall-grid mg-door-grid is-compact" role="list" aria-labelledby={`mg-group-${g.key}`}>
+                                        {members.map((a) => (
+                                            <div role="listitem" key={a.slug} className="mg-door-cell">
+                                                <MagicDoor entry={a} stub={compare.entries[a.slug]?.stub} compact />
+                                            </div>
+                                        ))}
+                                    </div>
+                                </div>
+                            );
+                        })}
+                        <DoorLegend />
+                    </div>
                 </section>
 
                 <section className="mg-tools" aria-labelledby="mg-tools-heading">

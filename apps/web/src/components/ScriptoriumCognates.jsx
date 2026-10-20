@@ -70,7 +70,7 @@ function ScriptoriumCognates() {
                                         <td key={s} className={`edu-cog-cell${c?.archaic ? ' is-archaic' : ''}`}>
                                             {c
                                                 ? <span className="edu-glyph" title={c.n}>{c.g.split(' ')[0]}</span>
-                                                : <span className="edu-cog-gap" aria-label="no descendant">—</span>}
+                                                : <span className="edu-cog-gap" role="img" aria-label="no descendant">—</span>}
                                         </td>
                                     );
                                 })}

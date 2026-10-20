@@ -394,8 +394,7 @@ export default {
      "status": "forms-pending",
      "direction": "rtl",
      "mode": "pending",
-     "letters": 0,
-     "note": "Letters and forms to come."
+     "letters": 0
     },
     {
      "slug": "malachim",
@@ -404,8 +403,7 @@ export default {
      "status": "forms-pending",
      "direction": "rtl",
      "mode": "pending",
-     "letters": 0,
-     "note": "Letters and forms to come."
+     "letters": 0
     },
     {
      "slug": "transitus-fluvii",
@@ -414,8 +412,7 @@ export default {
      "status": "forms-pending",
      "direction": "rtl",
      "mode": "pending",
-     "letters": 0,
-     "note": "Letters and forms to come."
+     "letters": 0
     },
     {
      "slug": "aiq-bekar",
@@ -424,8 +421,7 @@ export default {
      "status": "forms-pending",
      "direction": "rtl",
      "mode": "pending",
-     "letters": 0,
-     "note": "Letters and forms to come."
+     "letters": 0
     },
     {
      "slug": "alphabet-of-the-magi",
@@ -434,8 +430,7 @@ export default {
      "status": "forms-pending",
      "direction": "rtl",
      "mode": "pending",
-     "letters": 0,
-     "note": "Letters and forms to come."
+     "letters": 0
     }
    ],
    "rows": [
@@ -851,8 +846,7 @@ export default {
      "status": "forms-pending",
      "direction": "ltr",
      "mode": "pending",
-     "letters": 24,
-     "note": "Forms being traced."
+     "letters": 24
     },
     {
      "slug": "enochian",
@@ -861,8 +855,7 @@ export default {
      "status": "forms-pending",
      "direction": "rtl",
      "mode": "pending",
-     "letters": 0,
-     "note": "Letters and forms to come."
+     "letters": 0
     }
    ],
    "rows": [

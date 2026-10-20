@@ -1,5 +1,5 @@
 import React, { Suspense, lazy } from 'react';
-import { Route, Routes, BrowserRouter as Router, Link, useLocation } from 'react-router-dom';
+import { Navigate, Route, Routes, BrowserRouter as Router, Link, useLocation } from 'react-router-dom';
 import ScrollToTop from './components/ScrollToTop';
 import AlchemicalCursor from './components/AlchemicalCursor';
 
@@ -24,7 +24,9 @@ const MagicPortalPage = lazy(() => import('./pages/magic/MagicPortalPage'));
 const MagicComparePage = lazy(() => import('./pages/magic/MagicComparePage'));
 const MagicTransliteratorPage = lazy(() => import('./pages/magic/MagicTransliteratorPage'));
 const MagicAlphabetPage = lazy(() => import('./pages/magic/MagicAlphabetPage'));
-const MagicKitPage = lazy(() => import('./pages/magic/MagicKitPage'));
+// The glyph kit's proof sheet is a development tool, not site content: in a
+// production build this is null and Rollup drops the page and its chunk.
+const MagicKitPage = import.meta.env.DEV ? lazy(() => import('./pages/magic/MagicKitPage')) : null;
 const ChristianitiesPortalPage = lazy(() => import('./pages/christianities/ChristianitiesPortalPage'));
 const ChristianitiesMapPage = lazy(() => import('./pages/christianities/ChristianitiesMapPage'));
 const ChristianitiesCanonPage = lazy(() => import('./pages/christianities/ChristianitiesCanonPage'));
@@ -114,8 +116,13 @@ function App() {
                     <Route path="/third-lamp/education/magic" element={<MagicPortalPage />} />
                     <Route path="/third-lamp/education/magic/compare" element={<MagicComparePage />} />
                     <Route path="/third-lamp/education/magic/transliterate" element={<MagicTransliteratorPage />} />
-                    <Route path="/third-lamp/education/magic/kit" element={<MagicKitPage />} />
+                    {MagicKitPage && <Route path="/third-lamp/education/magic/kit" element={<MagicKitPage />} />}
                     <Route path="/third-lamp/education/magic/:alphabet" element={<MagicAlphabetPage />} />
+                    {/* Anything deeper returns to the wing. /magic/course/:lesson is named
+                        outright: as a splat it would rank below the halls'
+                        :lang/course/:lesson, which would take it as lang "magic". */}
+                    <Route path="/third-lamp/education/magic/course/:lesson" element={<Navigate to="/third-lamp/education/magic" replace />} />
+                    <Route path="/third-lamp/education/magic/*" element={<Navigate to="/third-lamp/education/magic" replace />} />
                     <Route path="/third-lamp/education/:lang" element={<EducationLanguagePage />} />
                     <Route path="/third-lamp/education/:lang/course" element={<EducationCoursePage />} />
                     <Route path="/third-lamp/education/:lang/course/:lesson" element={<EducationCoursePage />} />

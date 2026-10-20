@@ -29,18 +29,47 @@ export const MAGIC_PATH = registry.wing.path;
 export const entryPath = (slug) => `${MAGIC_PATH}/${slug}`;
 
 // Number words for derived counts (shared with the node tools).
-export { numberWord, capitalise, listOf } from './words';
+export { numberWord, capitalise } from './words';
 
 // How a letter is shown (shared with the glyph renderer and the search box).
 export { textOf, modeOf } from './sign';
 
-// The halls' hero title is sized for short names. A title with one long word
-// ("Transliterator", "Galdrastafir:") would run past the column on a phone,
-// so the page hands magic.css the em-width of its longest word (Cinzel's
-// capitals run about 0.62em a letter) and the title is capped to fit it.
+// The halls' hero titles are single words. A wing title is split where it
+// names its subject and then describes it — at a colon or a comma, or before
+// "and the …" after a one-word name — and the description is set beneath the
+// name at a smaller size: "Malachim," / "the Writing of the Angels".
+export function titleParts(title) {
+    const t = String(title);
+    const m = /^(.+?[:,])\s+(.+)$/.exec(t) || /^(\S+)\s+(and the\s.+)$/.exec(t);
+    return m ? [m[1], m[2]] : [t, null];
+}
+
+// The name is then sized to the column (magic.css), in ems of Cinzel's
+// capitals (about 0.62em a letter, measured): by the longest line of the best
+// split of its words into two lines on a wide screen (--mg-fit) and into three
+// on a phone (--mg-fit-sm). A one-word name is sized by that word, so
+// "Transliterator" sets as large as the column allows and never runs past it,
+// and a long name such as "The Ancient Alphabets of Ibn Waḥshiyya" never
+// fills the first screen.
+const EM_PER_CHAR = 0.63;
+function longestLine(words, lines) {
+    // the shortest possible longest line, splitting the words into at most
+    // `lines` lines in order (titles are a few words, so this tries them all)
+    const width = (from, to) => words.slice(from, to).reduce((a, w) => a + w, 0) + (to - from - 1);
+    const best = (from, left) => {
+        if (left === 1 || from === words.length - 1) return width(from, words.length);
+        let min = width(from, words.length);
+        for (let cut = from + 1; cut < words.length; cut++) min = Math.min(min, Math.max(width(from, cut), best(cut, left - 1)));
+        return min;
+    };
+    return best(0, lines);
+}
 export const fitStyle = (title) => {
-    const longest = Math.max(...String(title).split(/\s+/).map((w) => Array.from(w).length));
-    return { '--mg-fit': (longest * 0.62).toFixed(2) };
+    const words = String(title).split(/\s+/).filter(Boolean).map((w) => Array.from(w).length);
+    return {
+        '--mg-fit': (longestLine(words, 2) * EM_PER_CHAR).toFixed(2),
+        '--mg-fit-sm': (longestLine(words, 3) * EM_PER_CHAR).toFixed(2),
+    };
 };
 
 export const STATUS_LABEL = {

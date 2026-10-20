@@ -8,9 +8,9 @@ import { numberWord } from '../pages/magic/words';
 //
 // The index is a static JSON file built at compile time and fetched once, on
 // the first keystroke, so a reader who never searches never pays for it. Two
-// things make it worth having: the portal now holds thirteen hundred entries
-// across fourteen scripts, and a reader who half-remembers a word will not
-// know which hall it lives in — which is exactly the question a cross-hall
+// things make it worth having: the index holds thousands of entries across
+// every hall and the Magical Scriptorium, and a reader who half-remembers a
+// word will not know which hall it lives in — which is exactly the question a cross-hall
 // search answers and a per-hall one cannot.
 
 const INDEX_URL = '/scriptorium-index.json';
@@ -22,8 +22,9 @@ const fold = (s) => s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
 const KIND_LABEL = {
     sign: 'Sign', name: 'Divine name', term: 'Lexicon', current: 'Current',
     work: 'Text', event: 'Timeline', lesson: 'Lesson', book: 'Reading Room',
-    // the Magical Scriptorium
-    alphabet: 'Alphabet',
+    // the Magical Scriptorium: its alphabets, and its pages that are not
+    // alphabets (the author, the lineage of the books)
+    alphabet: 'Alphabet', page: 'Page',
     // the Christianities portal
     christology: 'Christology', branch: 'Branch', council: 'Council',
     dispute: 'Argument', canon: 'Canon', figure: 'Figure', symbol: 'Symbol',
@@ -31,7 +32,7 @@ const KIND_LABEL = {
     // the Powers portal
     order: 'Hierarchy', being: 'Being', deity: 'Deity',
 };
-const KIND_ORDER = ['name', 'term', 'sign', 'alphabet', 'current', 'work', 'event', 'lesson', 'book',
+const KIND_ORDER = ['name', 'term', 'sign', 'alphabet', 'page', 'current', 'work', 'event', 'lesson', 'book',
     'figure', 'branch', 'council', 'dispute', 'christology', 'creed', 'canon', 'symbol', 'site',
     'manuscript', 'note', 'deity', 'being', 'order'];
 

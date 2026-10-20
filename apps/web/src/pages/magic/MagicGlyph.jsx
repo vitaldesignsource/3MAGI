@@ -15,12 +15,17 @@ import { textOf } from './sign';
 //
 // It is coloured by currentColor, so hover, the gold of a plaque and print's
 // black all reach it as they reach a real script. Without `size` it is one em
-// square (magic.css) and takes its size from the text around it. A null glyph
-// draws the kit's own gap mark; the pages show a pending letter otherwise.
+// square (magic.css) and takes its size from the text around it; a figure
+// made only of points (a geomantic figure) is marked is-figure, and magic.css
+// gives it a larger box at text size, since points do not fill an em as a
+// letter's strokes do. A null glyph draws the kit's own gap mark; the pages
+// show a pending letter otherwise.
+
+const isFigure = (g) => Boolean(g && !String(g.d || '').trim() && (g.dots || []).length && !(g.rings || []).length);
 
 function MagicGlyph({ g, size, label, className }) {
     const a11y = label ? { role: 'img', 'aria-label': label } : { 'aria-hidden': true };
-    const cls = size ? className : ['mg-glyph', className].filter(Boolean).join(' ') || undefined;
+    const cls = size ? className : ['mg-glyph', isFigure(g) && 'is-figure', className].filter(Boolean).join(' ') || undefined;
     if (!g) {
         return (
             <svg className={cls} width={size} height={size} viewBox="0 0 100 100" {...a11y}>

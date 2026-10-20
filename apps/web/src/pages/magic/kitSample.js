@@ -11,7 +11,7 @@ export default {
             "name": "Test A",
             "value": "א",
             "glyph": {
-                "d": "M 30 25 L 70 75 M 68 25 L 52 48",
+                "d": "M 33.7 29.7 L 66.3 70.3 M 64.6 29.9 L 52 48",
                 "rings": [
                     [
                         30,
@@ -36,7 +36,7 @@ export default {
             "name": "Test B",
             "value": "ב",
             "glyph": {
-                "d": "M 25 30 H 70 V 70 H 20",
+                "d": "M 31 30 H 70 V 70 H 26",
                 "rings": [
                     [
                         25,

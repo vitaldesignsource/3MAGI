@@ -6,8 +6,9 @@ import ThirdLampFooter from '../../components/ThirdLampFooter';
 import ScriptoriumTimeline from '../../components/ScriptoriumTimeline';
 import ScriptoriumDrill from '../../components/ScriptoriumDrill';
 import MagicGlyph, { Sign, Unstruck } from './MagicGlyph';
+import FitTitle from './FitTitle';
 import { LetterGrid, PendingLedger } from './Letters';
-import { ALPHABETS, ENTRIES, ENTRY_BY_SLUG, MAGIC_PATH, STANDINGS, WING, entryPath, fitStyle, loadEntry, textOf } from './lib';
+import { ALPHABETS, ENTRIES, ENTRY_BY_SLUG, MAGIC_PATH, STANDINGS, WING, entryPath, loadEntry, textOf } from './lib';
 import '../../styles/magic.css';
 
 // One page per entry of the Magical Scriptorium, in the idiom of a language
@@ -42,11 +43,21 @@ function MagicAlphabetPage() {
     const reg = ALPHABETS.find((a) => a.slug === alphabet) || null;
     const [mod, setMod] = useState(null);
     const [keys, setKeys] = useState(null);
+    // A chunk that fails to load (a stale tab after a deploy, a dropped
+    // connection) is thrown during render, so App's RouteErrorBoundary sees
+    // it: it reloads once on a stale chunk, or shows its way out. Left in a
+    // promise, the failure would leave an empty page that never finishes.
+    const [loadError, setLoadError] = useState(null);
 
     useEffect(() => {
         let alive = true;
         setMod(null);
-        if (entry) loadEntry(alphabet).then((m) => { if (alive) setMod(m); });
+        setLoadError(null);
+        if (entry) {
+            loadEntry(alphabet)
+                .then((m) => { if (alive) setMod(m); })
+                .catch((e) => { if (alive) setLoadError(e); });
+        }
         return () => { alive = false; };
     }, [alphabet, entry]);
 
@@ -55,7 +66,11 @@ function MagicAlphabetPage() {
     const keyed = reg && reg.keyedTo !== 'none' && mod && (mod.letters || []).length > 0;
     useEffect(() => {
         let alive = true;
-        if (keyed && !keys) import('../../data/education/magic/compare.generated.js').then((m) => { if (alive) setKeys(m.default.keys); });
+        if (keyed && !keys) {
+            import('../../data/education/magic/compare.generated.js')
+                .then((m) => { if (alive) setKeys(m.default.keys); })
+                .catch((e) => { if (alive) setLoadError(e); });
+        }
         return () => { alive = false; };
     }, [keyed, keys]);
 
@@ -65,10 +80,13 @@ function MagicAlphabetPage() {
         ...l,
         glyph: l.char ? textOf(l.char) : <MagicGlyph g={l.glyph} />,
         translit: l.translit || l.planet || '',
-        value: reg && reg.keyedTo !== 'none' ? l.value : (mod?.valueLabel ? l.value : null),
+        // a value that only repeats the transliteration in capitals is not shown twice
+        value: reg && reg.keyedTo !== 'none' ? l.value
+            : (mod?.valueLabel && String(l.value).toLowerCase() !== String(l.translit).toLowerCase() ? l.value : null),
     })), [shown, reg, mod]);
 
     if (!entry) return <Navigate to={MAGIC_PATH} replace />;
+    if (loadError) throw loadError;
     if (!mod || (keyed && !keys)) return <div className="third-lamp-scope edu-page mg-page" aria-busy="true" style={{ minHeight: '100vh' }} />;
 
     const keyedTo = reg ? reg.keyedTo : 'none';
@@ -99,6 +117,10 @@ function MagicAlphabetPage() {
     ].filter(Boolean);
 
     const fa = mod.firstAttestation;
+    // The witness's date as a short kicker; anything the date carries after a
+    // dash (how it is known, what it is measured against) is printed as a
+    // plain line in the record below, not set in tracked capitals.
+    const [faWhen, ...faDated] = fa ? String(fa.date).split(' — ') : [];
 
     return (
         <div className="third-lamp-scope edu-page edu-lang-page mg-page" data-hall={`magic-${entry.slug}`} data-status={entry.status}>
@@ -113,7 +135,7 @@ function MagicAlphabetPage() {
                     <p className="kicker">
                         <Link to="/third-lamp/education">The Scriptorium</Link> · <Link to={MAGIC_PATH}>{WING.title}</Link>
                     </p>
-                    <h1 className="mg-fit" style={fitStyle(mod.title)}>{mod.title}</h1>
+                    <FitTitle title={mod.title} />
                     {sample.length > 0 && (
                         <div className="mg-hero-sample">
                             <p className="mg-hero-signs edu-glyph" dir={direction === 'rtl' ? 'rtl' : undefined} aria-hidden="true">
@@ -188,9 +210,10 @@ function MagicAlphabetPage() {
                     <section className="mg-attestation" aria-labelledby="mg-attestation-heading">
                         <SectionHead kicker="The First Witness" id="mg-attestation-heading" title="First attestation" />
                         <article className="mg-witness">
-                            <p className="mg-witness-date">{fa.date}</p>
+                            <p className="mg-witness-date">{faWhen}</p>
                             <h3>{fa.work}</h3>
                             <dl>
+                                {faDated.length > 0 && <div><dt>Dated</dt><dd>{faDated.join(' — ')}</dd></div>}
                                 {fa.author && <div><dt>By</dt><dd>{fa.author}</dd></div>}
                                 {fa.place && <div><dt>Where</dt><dd>{fa.place}</dd></div>}
                                 {fa.locator && <div><dt>Where in it</dt><dd>{fa.locator}</dd></div>}

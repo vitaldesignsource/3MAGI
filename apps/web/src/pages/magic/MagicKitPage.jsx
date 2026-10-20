@@ -4,12 +4,14 @@ import MagicGlyph from './MagicGlyph';
 import { LetterGrid } from './Letters';
 import sample from './kitSample';
 import '../../styles/magic.css';
+import '../../styles/magic-kit.css';
 
 // The glyph kit's proof: the kit's own sample set drawn by the site's
 // renderer, laid out exactly as glyphkit/sheet.mjs lays out its specimen
 // sheet, so the two can be compared pixel for pixel. Below it the same
 // letters stand in the wing's letter grid, keyed to Hebrew and running right
-// to left, to prove the keyboard. Not linked, not in the sitemap, not indexed.
+// to left, to prove the keyboard. Registered in the dev server only (App.jsx),
+// so it is not part of the production build; never linked, never indexed.
 
 const CONF = { high: '#9fc28a', medium: '#d9b25f', low: '#d9806a' };
 const COLS = 4;

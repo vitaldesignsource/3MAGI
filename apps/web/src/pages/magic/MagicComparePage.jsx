@@ -3,17 +3,19 @@ import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 import ThirdLampHeader from '../../components/ThirdLampHeader';
 import ThirdLampFooter from '../../components/ThirdLampFooter';
-import { Sign } from './MagicGlyph';
-import { MAGIC_PATH, WING, capitalise, entryPath, fitStyle, listOf, numberWord } from './lib';
+import { Sign, Unstruck } from './MagicGlyph';
+import FitTitle from './FitTitle';
+import { MAGIC_PATH, WING, capitalise, entryPath, numberWord } from './lib';
 import compare from '../../data/education/magic/compare.generated';
 import '../../styles/magic.css';
 
 // The alphabets side by side, in the kinship table's idiom. Every row comes
 // from a hall's own letters and every cell from an alphabet's own data, by the
 // letter it stands for (tools/build-magic.mjs), so the table cannot disagree
-// with the pages it links to. An alphabet whose forms are still being traced
-// keeps its column, held open by one band that says so, rather than a column
-// of empty boxes.
+// with the pages it links to. The alphabets whose forms are still being
+// traced keep their place in one band — consecutive pending columns merge
+// into a single column under one header that names them, with one sentence —
+// rather than a column of empty boxes each.
 
 const TABLES = {
     hebrew: {
@@ -32,15 +34,40 @@ const TABLES = {
     },
 };
 
+// The one sentence a pending band carries, whichever alphabets it holds.
+const BAND = 'Their letterforms are being traced from the editions that first printed them. Each sign will stand in the row of the letter it writes.';
+
+// "A, B and C", each name a link to its page.
+function LinkedList({ columns }) {
+    return columns.map((c, i) => (
+        <React.Fragment key={c.slug}>
+            {i > 0 && (i === columns.length - 1 ? ' and ' : ', ')}
+            <Link to={entryPath(c.slug)}>{c.short}</Link>
+        </React.Fragment>
+    ));
+}
+
+// The columns in order, with each run of consecutive pending columns
+// gathered into one band: [{ kind: 'signs', column } | { kind: 'band', columns }].
+function runsOf(columns) {
+    const runs = [];
+    for (const c of columns) {
+        const last = runs[runs.length - 1];
+        if (c.mode !== 'pending') runs.push({ kind: 'signs', column: c });
+        else if (last && last.kind === 'band') last.columns.push(c);
+        else runs.push({ kind: 'band', columns: [c] });
+    }
+    return runs;
+}
+
 function CompareTable({ table }) {
     const copy = TABLES[table.key];
     const hebrew = table.key === 'hebrew';
     const waiting = table.columns.filter((c) => c.mode === 'pending');
     const rows = table.rows;
     const all = waiting.length === table.columns.length;
-    const subject = all
-        ? ({ 1: 'The one column here', 2: 'Both columns here' }[waiting.length] || `All ${numberWord(waiting.length)} columns here`)
-        : `${capitalise(numberWord(waiting.length))} of the ${numberWord(table.columns.length)} columns`;
+    const runs = runsOf(table.columns);
+    const count = numberWord(waiting.length);
     return (
         <section className="mg-compare" aria-labelledby={`mg-compare-${table.key}`}>
             <header className="edu-section-head">
@@ -50,12 +77,15 @@ function CompareTable({ table }) {
             </header>
             {waiting.length > 0 && (
                 <p className="mg-compare-waiting">
-                    {subject} — {listOf(waiting.map((c) => c.short))} — {waiting.length === 1 ? 'is' : 'are'} held open for forms still being traced from
-                    the editions that first printed them. The rows are ready for them.
+                    {all
+                        ? `${capitalise(count)} ${waiting.length === 1 ? 'alphabet has its' : 'alphabets have their'} place in this table`
+                        : `${capitalise(count)} of the ${numberWord(table.columns.length)} alphabets ${waiting.length === 1 ? 'has its' : 'have their'} place in this table`}
+                    {' '}— <LinkedList columns={waiting} /> — but no forms in it yet: {waiting.length === 1 ? 'its letterforms are' : 'their letterforms are'} being
+                    traced from the editions that first printed them, and the rows are ready for them.
                 </p>
             )}
-            <div className="edu-cognates-scroll mg-compare-scroll" role="region" aria-label={`${copy.title}: comparison table`} tabIndex={0}>
-                <table className="edu-cognates-table mg-compare-table">
+            <div className={`edu-cognates-scroll mg-compare-scroll${all ? ' is-all-pending' : ''}`} role="region" aria-label={`${copy.title}: comparison table`} tabIndex={0}>
+                <table className={`edu-cognates-table mg-compare-table${all ? ' is-all-pending' : ''}`}>
                     <thead>
                         <tr>
                             <th scope="col" className="edu-cog-num">{hebrew ? 'Value' : '№'}</th>
@@ -63,12 +93,23 @@ function CompareTable({ table }) {
                             <th scope="col" className="mg-cmp-key">
                                 <Link to={`/third-lamp/education/${copy.hall}`}>{copy.keyLabel}</Link>
                             </th>
-                            {table.columns.map((c) => (
-                                <th scope="col" key={c.slug} className={c.mode === 'pending' ? 'is-pending' : undefined}>
-                                    <Link to={entryPath(c.slug)}>{c.short}</Link>
-                                    {c.mode === 'pending' && <span className="mg-cmp-th-note">forms pending</span>}
+                            {runs.map((run) => (run.kind === 'signs' ? (
+                                <th scope="col" key={run.column.slug}>
+                                    <Link to={entryPath(run.column.slug)}>{run.column.short}</Link>
                                 </th>
-                            ))}
+                            ) : (
+                                <th scope="col" key={run.columns[0].slug} className="is-pending">
+                                    <span className="mg-cmp-th-note">Forms being traced</span>
+                                    <span className="mg-cmp-th-names">
+                                        {run.columns.map((c, i) => (
+                                            <React.Fragment key={c.slug}>
+                                                {i > 0 && <span aria-hidden="true"> · </span>}
+                                                <Link to={entryPath(c.slug)}>{c.short}</Link>
+                                            </React.Fragment>
+                                        ))}
+                                    </span>
+                                </th>
+                            )))}
                         </tr>
                     </thead>
                     <tbody>
@@ -89,21 +130,25 @@ function CompareTable({ table }) {
                                         <span className="mg-cmp-key-name">{r.name}</span>
                                     </Link>
                                 </th>
-                                {table.columns.map((c) => {
-                                    if (c.mode === 'pending') {
+                                {runs.map((run) => {
+                                    if (run.kind === 'band') {
                                         if (ri !== 0) return null;
                                         return (
-                                            <td key={c.slug} rowSpan={rows.length} className="mg-cmp-pending">
-                                                <span className="mg-cmp-band">{c.note || 'Forms being traced.'}</span>
+                                            <td key={run.columns[0].slug} rowSpan={rows.length} className="mg-cmp-pending">
+                                                <span className="mg-cmp-band">
+                                                    <Unstruck />
+                                                    <span className="mg-cmp-band-text">{BAND}</span>
+                                                </span>
                                             </td>
                                         );
                                     }
+                                    const c = run.column;
                                     const cell = r.cells[c.slug];
                                     return (
                                         <td key={c.slug} className="edu-cog-cell mg-cmp-cell">
                                             {cell && cell.sign
                                                 ? <Link to={`${entryPath(c.slug)}#mg-letter-${cell.i}`} title={cell.name}><Sign of={cell.sign} label={`${c.short} ${cell.name}`} /></Link>
-                                                : <span className="edu-cog-gap" aria-label="no sign">—</span>}
+                                                : <span className="edu-cog-gap" role="img" aria-label="no sign">—</span>}
                                         </td>
                                     );
                                 })}
@@ -130,7 +175,7 @@ function MagicComparePage() {
                     <p className="kicker">
                         <Link to="/third-lamp/education">The Scriptorium</Link> · <Link to={MAGIC_PATH}>{WING.title}</Link>
                     </p>
-                    <h1 className="mg-fit" style={fitStyle('The Alphabets Compared')}>The Alphabets Compared</h1>
+                    <FitTitle title="The Alphabets Compared" />
                     <p className="edu-hero-sub">Many of the secret alphabets are not new writing systems but new shapes for old
                         letters: each sign stands for a Hebrew or a Latin letter. Here they stand in rows with the letters they
                         disguise. Every cell is read from the alphabet’s own page and links to its letter there.</p>
