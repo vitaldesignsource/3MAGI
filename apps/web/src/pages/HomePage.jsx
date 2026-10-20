@@ -3,8 +3,6 @@ import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 import SiteHeader from '../components/SiteHeader';
 import SiteFooter from '../components/SiteFooter';
-import scriptorium from '../data/education/portal/stats.generated';
-import { capitalise, numberWord } from './magic/words';
 
 const A = '/media';
 
@@ -24,10 +22,8 @@ const PORTALS = [
     {
         to: '/third-lamp/education', img: 'c0a7468350c3f590a01c01f68ed525c1.webp',
         eyebrow: 'The Third Lamp', title: 'The Scriptorium', cta: 'Enter the halls',
-        // The Scriptorium's counts are read from its data at build time
-        // (tools/build-search-index.mjs), not typed, so they cannot go stale.
-        copy: `${capitalise(numberWord(scriptorium.halls))} language halls, from Latin and Greek to cuneiform, Geʼez and Classical Chinese: the alphabets in full, the divine names, working lexicons, the primary texts, and courses that teach the scripts letter by letter.`,
-        stats: [`${scriptorium.halls} halls`, `${scriptorium.signs} signs`, `${scriptorium.names} divine names`, `${scriptorium.courses} courses`],
+        copy: 'Sixteen language halls, from Latin and Greek to cuneiform, Geʼez and Classical Chinese: the alphabets in full, the divine names, working lexicons, the primary texts, and courses that teach the scripts letter by letter.',
+        stats: ['16 halls', '497 signs', '245 divine names', '4 courses'],
     },
 ];
 
