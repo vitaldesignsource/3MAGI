@@ -7,9 +7,9 @@ built from.
 - `BRIEF.md`: the research brief and house rules every researcher followed.
 - `research/<item>.json`: one researcher's findings per alphabet or book.
   `research/<item>.verified.json`: the same after an independent fact-check,
-  with its corrections and unresolved points under `factcheck`. Items without
-  a `.verified.json` (agrippa, the-books, ogham, signs-of-the-art,
-  ibn-wahshiyya, voynich) have not been fact-checked yet.
+  with its corrections and unresolved points under `factcheck`. All eighteen
+  items are fact-checked; points listed as unresolved are not to be stated
+  as fact on the site.
 - `understand.md`: the engineering map of the Scriptorium code and the plan
   for adding the wing.
 - `glyphkit/`: the format for drawn letters (path data on a 100-unit grid),

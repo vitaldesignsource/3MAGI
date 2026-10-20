@@ -1,0 +1,1088 @@
+{
+ "key": "agrippa",
+ "title": "Agrippa and the Three Books of Occult Philosophy",
+ "otherNames": [
+  "De occulta philosophia libri tres (Latin title, 1533)",
+  "Three Books of Occult Philosophy (J.F.'s English, 1651)",
+  "Of Occult Philosophy, or of Magick (1651 head-title of Book I, p. 1, 'Three Books of Occult Philosophy, or of Magick'; also Agrippa's phrase in 'To the Reader')",
+  "Heinrich Cornelius Agrippa von Nettesheim; 'Henry Cornelius Agrippa' in the English editions"
+ ],
+ "family": "source book: the Renaissance compendium that carried most of the wing's alphabets into print",
+ "summary": "Heinrich Cornelius Agrippa von Nettesheim (1486-1535; the catalogue heading gives '1486?-1535') wrote De occulta philosophia as a young man and sent the draft to Abbot Trithemius, who replied on 8 April 1510. He printed Book I alone in 1531 and the three books, much enlarged, in July 1533. A year before Book I appeared (1530) he had published a declamation on the vanity of the sciences in which he retracted the work, and the 1533 edition reprints that retraction. The books follow his three worlds: Book I natural (elemental), Book II celestial, Book III ceremonial (intellectual). Characters appear at each level, but the alphabets of this wing (the Honorian, later called 'Theban', in III.29; Celestial, Malachim and Passing the River in III.30) are printed in Book III, in the chapters on the characters and seals of spirits and on the characters 'delivered by Cabalists'. The 'Fourth Book' printed under his name after his death is not his: his former famulus Johann Weyer rejected it, and scholars treat it as spurious. The standard English is J.F.'s of 1651.",
+ "firstAttestation": {
+  "work": "De occulta philosophia (first redaction, manuscript); first printed (Book I only) 1531; complete in three books 1533",
+  "author": "Heinrich Cornelius Agrippa von Nettesheim (1486-1535)",
+  "date": "Draft received by Trithemius by 8 April 1510, the date of his reply ('ex nostro coenobio Peapolitano. VIII. die Aprilis', 1533 Latin, McGill copy OCR; 'the 8. day of April, An. M. D. X.', 1651 English). Book I printed alone in 1531 (Antwerp: Joannes Grapheus, February 1531; Paris: Wechel; per catalogue records seen by the search-backed signs-of-the-art fact-check); its dedication is dated 'Ex Mechlinia. Anno M. D. XXXI. Mense Ianuario' (1533 Latin; 'From Mechlinia, Anno M. D. XXXI. In the moneth of January', 1651), i.e. Mechelen, January 1531. Complete edition with colophon 'Anno M. D. XXXIII. Mense Iulio.' (1533 Latin, McGill copy OCR; 'Anno M. D. XXXIII. In the Moneth of Iuly.', 1651).",
+  "place": "Draft: written for Trithemius after Agrippa's stay at the abbey of St Jakob, Würzburg (1651: 'an Abbot of Saint James in the suburbs of Herbipolis'; 1533: 'abbas divi Iacobi Herbipolis'); the visit is dated winter 1509-10 by the SEP, as reported by the search-backed theban fact-check. Manuscript: reported as Würzburg, Universitätsbibliothek, M. ch. q. 50 in the sibling research files, which tie it to Perrone Compagni's edition; the shelfmark was not seen in any source in this workflow. 1533: the imprint is unsigned. McGill record '[Cologne] : [Soter]' (imprint from Mansell); Library of Congress '[Cologne: s.n. (J. Soter?)]'; Eton '[J. Soter?]', noting Adams's suggestion of Basel (catalogue facts as reported by the theban and signs-of-the-art fact-checks).",
+  "locator": "1651 English: Trithemius's reply and Agrippa's letter in the front matter; Book I ends p. 163; Book II pp. 165-340; Book III pp. 341-556; letters pp. 557-566; Censure pp. 567-583; colophon after the Censure.",
+  "notes": "The 1510 text differs from the print. Agrippa says so himself: in 1527 the first two books were 'dificient in many things' and the third 'wholy imperfect'; in 1531 he had 'added many things to many Chapters'. So no chapter of Books II-III, including the alphabets, should be dated 1510 or 1531 without the manuscript. Perrone Compagni's critical edition (Leiden: Brill, 1992), which reports the early redaction, was not consulted. The 1531 Book I printings at Antwerp (Joannes Grapheus, February 1531) and Paris (Wechel; the first name Christian is recalled) are recorded in catalogue records seen by the signs-of-the-art fact-check. A Cologne printing of 1531, listed in the celestial research, was not confirmed. The 1533 Latin of the front matter (the 'Ad lectorem', both 1510 letters, the 1531 dedication) and of the colophon was checked in this fact-check in the OCR of the McGill copy."
+ },
+ "transmission": [
+  {
+   "date": "c. 1509-1510",
+   "work": "De occulta philosophia, first redaction (MS; Würzburg UB M. ch. q. 50 per sibling research)",
+   "author": "Agrippa",
+   "what": "Written after conversations with Trithemius at Würzburg 'concerning Chymistry, Magick, and Cabalie' (Agrippa's dedicatory letter) and submitted to him 'to your correction and censure'. Whether it already held the alphabet chapters is not known here. The site's existing text says 'drafted 1509-1510'; only the 1510 reply date is checked here."
+  },
+  {
+   "date": "8 April 1510",
+   "work": "Letter, 'From our Monastery of Peapolis'",
+   "author": "Johannes Trithemius",
+   "what": "Praises the work and advises him to 'communicate vulgar secrets to vulgar friends, but higher and secret to higher, and secret friends only' (J.F. 1651). Printed in the front matter of 1533 (Latin heading 'Ioannes Tritemius abbas divi Iacobi Herbipolis quondam Spanhemensis', dated 'ex nostro coenobio Peapolitano. VIII. die Aprilis', McGill copy OCR) and of 1651."
+  },
+  {
+   "date": "1510s-1520s",
+   "work": "Manuscript circulation",
+   "author": "-",
+   "what": "Agrippa says the draft was 'intercepted' and 'did fly abroad in Italy, in France, in Germany through many mens hands', and that some wanted to print it 'thus imperfect' ('To the Reader', 1533)."
+  },
+  {
+   "date": "24 September 1527 (Lyons)",
+   "work": "Letter to Aurelius de Aquapendente",
+   "author": "Agrippa",
+   "what": "Calls the first two books deficient and the third 'wholy imperfect ... a certain Epitome'. Promises to publish 'the whole work ... reserving the key thereof for most intimate friends only'. The pseudo-Agrippan Fourth Book later presents itself as that 'Key'."
+  },
+  {
+   "date": "1530 (Antwerp: Joannes Grapheus)",
+   "work": "De incertitudine et vanitate scientiarum atque artium declamatio",
+   "author": "Agrippa",
+   "what": "Attacks all the arts, magic and Kabbalah included. Its chapter on letters (ch. 2 in the 1676 English) is sceptical about the origins of every script; its magic chapters (XLI-XLVIII in the 1676 English) end with a recantation of De occulta philosophia. Agrippa says (Book II dedication) that attacks on this 'declamation' delayed Books II and III. Place and printer as confirmed by the search-backed signs-of-the-art fact-check (catalogue record; SEP)."
+  },
+  {
+   "date": "January 1531 (dedication, Mechelen); printed 1531",
+   "work": "De occulta philosophia, Book I alone",
+   "author": "Agrippa",
+   "what": "Book I printed with the dedication to Hermann von Wied, archbishop-elector of Cologne. The Book II dedication confirms 'I published the first of them' and blames 'the suddain, and almost unexpected death of holy Margaret of Austria my Princess' for the delay of the rest (her death date is not given in the text and was not checked here). Printings: Antwerp, Grapheus (February 1531) and Paris, Wechel, per catalogue records seen by the signs-of-the-art fact-check. No Book III alphabet (Honorian, Celestial, Malachim, Passing the River) can be in a Book I printing. Whether the 1531 Book I already carried the I.74 table, with the 'Chaldean' alphabet that II.19 says is set down 'in the end of the first book', was not checked: no copy of 1531 was seen."
+  },
+  {
+   "date": "July 1533",
+   "work": "De occulta philosophia libri tres ([Cologne: J. Soter?])",
+   "author": "Agrippa",
+   "what": "First complete edition, with separate dedications of Books II and III to Hermann von Wied, the 1510 letters, 'To the Reader' (Latin 'Ad lectorem'), the letters to Aurelius de Aquapendente after Book III, and the 'Censure, or Retractation' before the colophon 'Anno M. D. XXXIII. Mense Iulio.' (this order checked in the McGill copy OCR). It holds the earliest printings the sibling items could document of the Celestial and Malachim alphabets and of the nine-chamber cipher (III.30), and of the planetary tables with their names and seals as a set (II.22). It is NOT the first printing of Passing the River, which the transitus-fluvii fact-check reports in Abraham de Balmes's Mikneh Avram (Venice: Bomberg, 1523), nor of the Honorian alphabet, which Trithemius printed in his Polygraphia (1518; theban fact-check). The McGill record calls its copy 'one of variant printings, not authoritatively identified, of first ed.'; the theban fact-check reports four or five issues of this date."
+  },
+  {
+   "date": "1535",
+   "work": "-",
+   "author": "Agrippa",
+   "what": "Agrippa dies. The year is from the catalogue authority heading in EEBO-TCP ('1486?-1535'). The place, usually given as Grenoble, is recalled, not checked."
+  },
+  {
+   "date": "1550",
+   "work": "De occulta philosophia (later Latin edition)",
+   "author": "Agrippa",
+   "what": "A later Latin edition. The celestial research cites a 1550 copy at Source Library; its place, printer and woodcuts were not checked here. Later editions may differ in the glyphs; trace from 1533."
+  },
+  {
+   "date": "1559 (per the site's Latin hall; recalled, not verified in this workflow). 1565 is the date a NUC note gives for the French 'IV. livre'",
+   "work": "Liber quartus de occulta philosophia, seu de cerimoniis magicis (the 'Fourth Book'), with the Heptameron ascribed to Pietro d'Abano",
+   "author": "pseudo-Agrippa",
+   "what": "A practical book of spirit-names, characters 'of lines and heads', pentacles and conjuration. It calls itself the 'Complement and Key' of the three books (Turner 1655, p. 33). The site's Latin hall gives 1559; the place is recalled as Marburg; neither was checked in this pass. The EEBO-TCP records of Turner's translation (A26563, A26564) quote a NUC note: 'The \"IV. livre de la philosophie occulte\" was first published without name of printer or place, under date 1565'. That note names the French title, so it is not evidence about the first Latin printing, and the research's 'sources disagree' rested on reading it as the Latin."
+  },
+  {
+   "date": "1563",
+   "work": "De praestigiis daemonum",
+   "author": "Johann Weyer (Wier), Agrippa's former famulus",
+   "what": "Rejects the Fourth Book as not Agrippa's (as the site's Latin hall states). The book and chapter (recalled as II.5) and whether the passage is already in the 1563 first edition were not checked."
+  },
+  {
+   "date": "1651",
+   "work": "Three Books of Occult Philosophy (London: R.W. for Gregory Moule; Wing A789)",
+   "author": "Agrippa, translated by 'J.F.'",
+   "what": "First English. Translates the 1533 volume (front matter, the three books, the letters and the Censure, ending with the 1533 colophon) and adds its own front matter: a Life of Agrippa, an encomium signed 'Eugenius Philalethes', a translator's preface ('Judicious Reader!'), errata and a table of contents. Its woodcuts and tables were cut anew for the London edition (an inference; no plate was compared). The EEBO-TCP catalogue says 'The translator is probably John French. Cf. DNB'. The Wellcome record catalogues 'J.F[reake]', probably John French (theban fact-check); Tyson's 1993 edition is recalled as naming James Freake."
+  },
+  {
+   "date": "1655 (another issue, 1655; another edition, 1665)",
+   "work": "Henry Cornelius Agrippa his Fourth Book of Occult Philosophy. Of Geomancy. Magical Elements of Peter de Abano. Astronomical Geomancy. The Nature of Spirits. Arbatel of Magick (London: J.C. for John Harrison; Wing A785)",
+   "author": "Robert Turner (translator)",
+   "what": "Put the pseudo-Agrippan Fourth Book and the Heptameron into English under Agrippa's name. It is the source of much that later English magic credits to 'Agrippa'. EEBO-TCP holds the 1655 Harrison issue (A26562, Wing A785; its pp. 108-217 are lacking on the film), another 1655 issue 'London printed' without a printer's name (A26563, Wing A785A), and the 1665 edition 'Printed by J.C. for the Rooks' (A26564, Wing A786)."
+  },
+  {
+   "date": "1676",
+   "work": "The Vanity of Arts and Sciences (London: J.C. for Samuel Speed; Wing A790)",
+   "author": "anonymous translator",
+   "what": "English De vanitate. Ch. 2 is on the origins of letters; ch. XLVIII ends with the recantation."
+  },
+  {
+   "date": "1801",
+   "work": "The Magus, or Celestial Intelligencer (London)",
+   "author": "Francis Barrett",
+   "what": "Compiles Agrippa and the pseudo-Agrippan Fourth Book (with Turner's Heptameron, per Wikipedia as reported by the signs-of-the-art fact-check). Its plate of Theban, Celestial, Malachim and Passing the River (facing p. 64 of Book II, per Westcott's Flying Roll XXXII as reported by the theban fact-check) is, in the sibling checks' judgement, the one most modern charts follow."
+  },
+  {
+   "date": "1992",
+   "work": "De occulta philosophia libri tres, critical edition (Leiden: Brill; Studies in the History of Christian Thought 48)",
+   "author": "Vittoria Perrone Compagni (ed.)",
+   "what": "The scholarly Latin text, reporting the early redaction. Not consulted here. The transitus-fluvii sibling cites it at p. 491 for III.30, via Wikipedia."
+  },
+  {
+   "date": "1993",
+   "work": "Three Books of Occult Philosophy (St Paul: Llewellyn)",
+   "author": "Donald Tyson (ed.), J.F.'s translation",
+   "what": "Annotated modern edition of the 1651 English. Recalled, not consulted; in copyright, so not quoted here."
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Agrippa wrote De occulta philosophia for Trithemius in 1510.",
+   "standing": "documented",
+   "evidence": "Agrippa's dedicatory letter and Trithemius's reply dated 8 April 1510, printed in the 1533 front matter (1651 English). The draft is also described in 'To the Reader'. The Latin of both letters and of the 'Ad lectorem' is in the 1533 edition (McGill copy OCR, checked).",
+   "sources": [
+    "J.F. 1651, EEBO-TCP A26565, front matter",
+    "Stanford Encyclopedia of Philosophy, 'Agrippa' (sibling research)",
+    "Agrippa, De occulta philosophia (1533), McGill copy OCR, front matter"
+   ]
+  },
+  {
+   "claim": "The 1533 book is the 1510 text.",
+   "standing": "disputed",
+   "evidence": "Agrippa himself says it is not. In 1527 the third book was 'wholy imperfect ... a certain Epitome'. In January 1531 he had 'inserted many things in many places, and ... added many things to many Chapters'. 'To the Reader' (1533) says 'we added some Chapters'. Which chapters were added can only be settled from the Würzburg manuscript or Perrone Compagni 1992.",
+   "sources": [
+    "J.F. 1651, EEBO-TCP A26565, front matter and letters (pp. 557-559)"
+   ]
+  },
+  {
+   "claim": "The Celestial, Malachim, Passing the River and nine-chamber systems, the planetary seals and the Honorian alphabet go back to Agrippa's 1510 draft (or to 1531).",
+   "standing": "disputed",
+   "evidence": "No evidence found. The 1531 printing was Book I only, which holds none of them. Whether the draft contains them is unchecked. Use 1533.",
+   "sources": [
+    "sibling research files celestial, malachim, theban, planetary-seals, aiq-bekar",
+    "J.F. 1651 (Book II dedication: Book I published first)"
+   ]
+  },
+  {
+   "claim": "Book I was printed on its own in 1531.",
+   "standing": "documented",
+   "evidence": "Agrippa's Book I dedication is dated Mechelen, January 1531 ('Ex Mechlinia. Anno M. D. XXXI. Mense Ianuario', 1533 Latin). The Book II dedication says he promised the rest 'when I published the first of them'. Printings at Antwerp (Grapheus, February 1531) and Paris (Wechel) are recorded in catalogue records seen by the signs-of-the-art fact-check; a Cologne 1531 printing named in the celestial research was not confirmed.",
+   "sources": [
+    "J.F. 1651 front matter and p. 165",
+    "Agrippa 1533, McGill copy OCR, Book I dedication",
+    "signs-of-the-art.verified.json (catalogue records seen in search)"
+   ]
+  },
+  {
+   "claim": "The complete edition appeared at Cologne in July 1533, printed by Johannes Soter.",
+   "standing": "disputed",
+   "evidence": "July 1533 is secure: the colophon reads 'Anno M. D. XXXIII. Mense Iulio.' in the McGill copy (OCR, checked here) and is translated at the end of the 1651 volume. The place and printer are unsigned: McGill '[Cologne] : [Soter]' (from Mansell), Library of Congress '[Cologne: s.n. (J. Soter?)]', Eton '[J. Soter?]' with Adams's suggestion of Basel. The site's timeline (apps/web/src/data/education/timelines/latin.js) states 'at Cologne by Johannes Soter' as fact and should be softened.",
+   "sources": [
+    "McGill Library copy, archive.org record and OCR",
+    "Library of Congress record (alphabet-of-the-magi and signs-of-the-art fact-checks)",
+    "Eton College Library B25098 (theban fact-check)",
+    "J.F. 1651 colophon"
+   ]
+  },
+  {
+   "claim": "Agrippa recanted De occulta philosophia in De incertitudine et vanitate scientiarum (1530).",
+   "standing": "documented",
+   "evidence": "The recantation sentence appears in the 1676 English of De vanitate (ch. XLVIII) and in the 'Censure' printed with the three books (1651). 'To the Reader' (1533) says he 'did for the most part retract this book'. Whether it was sincere, prudent or rhetorical is argued in the scholarship (the site names Nauert, Zambelli and van der Poel) and is not settled. The Latin recantation ('Verum de magicis scripsi ego iuvenis adhuc, libros tres amplos satis volumine, quos de Occulta philosophia nuncupavi ... nunc cautior hac palinodia recantatum volo') closes the Censure in the 1533 edition (McGill copy OCR, normalised).",
+   "sources": [
+    "EEBO-TCP A26566 (1676), ch. XLVIII",
+    "EEBO-TCP A26565 (1651), pp. 567-583 and front matter"
+   ]
+  },
+  {
+   "claim": "The three books map onto three worlds: elemental, celestial and intellectual.",
+   "standing": "documented",
+   "evidence": "I.1: 'a three f[o]ld World. Elementary, Celestiall, and intellectuall'; 'the first contains naturall Magick, the second Celestiall, and the third Ceremoniall'.",
+   "sources": [
+    "J.F. 1651, I.1"
+   ]
+  },
+  {
+   "claim": "Characters are treated at three levels, and the alphabets of spirits belong in Book III.",
+   "standing": "documented",
+   "evidence": "The arrangement is Agrippa's. Natural characters stamped by stars come in I.33. Celestial characters (geomantic, by likeness, Hermes's star characters) come in II.51-52, with a forward reference from the Malachim in II.51: 'But of these hereafter'. The 'Characters and Seals of spirits', the Hebrew scripts and revealed signs come in III.29-31. Calling this a three-tier theory is my reading of that arrangement.",
+   "sources": [
+    "J.F. 1651, I.33, II.51, II.52, III.29-31"
+   ]
+  },
+  {
+   "claim": "Agrippa invented the Celestial, Malachim, Passing the River and Theban alphabets.",
+   "standing": "disputed",
+   "evidence": "He claims none of them. He gives the Honorian alphabet as one 'which Peter Apponus notes, as delivered by Honorius of Thebes' (III.29). He gives the other three as writings found 'amongst the Hebrews' (III.30) and the nine chambers as 'delivered by Cabalists'. Trithemius had printed the Honorian alphabet in 1518 (theban fact-check), and de Balmes is reported to have printed Passing the River in 1523 (transitus-fluvii fact-check). The modern claim of invention is unsupported.",
+   "sources": [
+    "J.F. 1651, III.29-30",
+    "sibling research files theban, transitus-fluvii"
+   ]
+  },
+  {
+   "claim": "Agrippa taught that characters compel spirits.",
+   "standing": "disputed",
+   "evidence": "In III.30 he says the opposite of angels: by the marks we consecrate to them 'we cannot any way compel them to us, but by which we rise up to them'. Elsewhere he reports pagan beliefs about compulsion (III.31, Porphyry and Iamblichus) and treats the 'bonds of spirits' (III.33). Do not summarise his position as compulsion.",
+   "sources": [
+    "J.F. 1651, III.30, III.31"
+   ]
+  },
+  {
+   "claim": "Agrippa shows how to draw the planetary seals from the magic squares.",
+   "standing": "disputed",
+   "evidence": "No. II.22 says the method is for 'the wise searcher ... [to] easily find out'. Modern construction rules are reconstructions.",
+   "sources": [
+    "J.F. 1651, II.22"
+   ]
+  },
+  {
+   "claim": "Hebrew is the language of the angels.",
+   "standing": "attributed",
+   "evidence": "Agrippa reports it: 'many think that if they use any Idiome, it is Hebrew' (III.23). He calls Hebrew letters 'the most efficacious of all' (I.74), and the names of God must stay 'in their own Characters' (III.11).",
+   "sources": [
+    "J.F. 1651, I.74, III.11, III.23"
+   ]
+  },
+  {
+   "claim": "The square Hebrew letters were instituted by Ezra; Moses used an older script.",
+   "standing": "attributed",
+   "evidence": "Agrippa states it in III.30, and De vanitate ch. 2 repeats it ('Ezra is said to be' the author of the present letters), with other reported origins (Abraham, per Philo) and the disagreements of the Talmudists (Rabbi Jehuda, Rabbi Simon). It is a traditional view, reported as Agrippa's. For the history of the scripts, see the Hebrew and Phoenician halls.",
+   "sources": [
+    "J.F. 1651, III.30",
+    "1676 English De vanitate, ch. 2"
+   ]
+  },
+  {
+   "claim": "The 'Fourth Book of Occult Philosophy' is by Agrippa.",
+   "standing": "disputed",
+   "evidence": "Rejected by Johann Weyer, his former famulus (De praestigiis daemonum, 1563, as the site's Latin hall states). Turner (1655) nonetheless printed it as Agrippa's. Its opening claims to be the 'Complement and Key' of the three books, echoing Agrippa's 1527 promise of a 'key' for intimate friends. Scholarship treats it as spurious.",
+   "sources": [
+    "EEBO-TCP A26562 (Turner 1655), p. 33",
+    "site data apps/web/src/data/education/themes/latin.js"
+   ]
+  },
+  {
+   "claim": "'J.F.', the 1651 translator, was John French.",
+   "standing": "disputed",
+   "evidence": "The EEBO-TCP catalogue: 'The translator is probably John French. Cf. DNB' (authority heading French, John, 1616-1657). The Wellcome record catalogues 'J.F[reake]', probably John French, and the NUC is reported to allow John French or John Freake (theban fact-check). Tyson's edition, as recalled, names 'James Freake'. The research's 'Peterson argues for French' was found unsupported by the celestial fact-check and is withdrawn. The site's Powers texts (apps/web/src/data/powers/texts.js, line 283) call it 'the 1651 Freake translation'; change that to 'J.F.'s translation (1651)'.",
+   "sources": [
+    "EEBO-TCP A26565 header",
+    "Wellcome Collection record ftahuupv (theban fact-check)",
+    "site data apps/web/src/data/powers/texts.js"
+   ]
+  },
+  {
+   "claim": "Trithemius was Agrippa's teacher.",
+   "standing": "disputed",
+   "evidence": "The documents show a stay at Würzburg, conversations, the dedication and one reply in which Trithemius praises and advises. 'Teacher' or 'master' goes beyond them.",
+   "sources": [
+    "J.F. 1651, front matter"
+   ]
+  },
+  {
+   "claim": "The 'most elegant marks of numbers' in II.19 are the medieval Cistercian ciphers.",
+   "standing": "attributed",
+   "evidence": "Agrippa's rule (tens by turning to the left, hundreds and thousands by turning downwards) is the cipher rule. King (2001) treats Agrippa's printing as a witness (recalled). Agrippa only says he found them in 'two most ancient books of Astrologers, and Magicians'.",
+   "sources": [
+    "J.F. 1651, II.19",
+    "David A. King, The Ciphers of the Monks (Stuttgart, 2001), recalled"
+   ]
+  },
+  {
+   "claim": "III.12 treats letters or characters.",
+   "standing": "disputed",
+   "evidence": "Checked: it does not. It treats the descent of the divine names' power through angels and stars and the transfer of the four-letter name's virtue to the name of Jesus; its only 'seal' is the cross, called the seal of that name. The relevant chapters are III.11 (names) and III.29-31 (characters).",
+   "sources": [
+    "J.F. 1651, III.12"
+   ]
+  }
+ ],
+ "letters": [
+  {
+   "order": 1,
+   "name": "Front matter: 'To the Reader'; Agrippa's letter to Trithemius and Trithemius's reply; dedication to Hermann von Wied",
+   "value": "front matter (printed 1533; English 1651)",
+   "translit": "J.F. 1651, unpaginated front matter (TCP images 5-11)",
+   "numeric": null,
+   "form": "Not a glyph. A text card with three dated documents: (1) Trithemius's reply, dated 'From our Monastery of Peapolis, the 8. day of April, An. M. D. X.' (the abbey of St Jakob, Würzburg); (2) the dedication of Book I to Hermann von Wied, archbishop of Cologne, dated 'From Mechlinia, Anno M. D. XXXI. In the moneth of January' (Mechelen, January 1531); (3) 'To the Reader', in which Agrippa says he gave the youthful draft to Trithemius, that it circulated 'imperfect' in Italy, France and Germany, that he added chapters for the print, and that he had 'for the most part' retracted it in his book on the vanity of the sciences.",
+   "formConfidence": "high",
+   "note": "Dates and wording are from the 1651 English as keyed by EEBO-TCP. J.F.'s 'Neapolitanian' is a slip: the 1533 'Ad lectorem' reads 'Ioanni Tritemio abbati Peapolitano, quondam Spanhemensi' (McGill copy OCR). J.F.'s own text of Trithemius's letter has 'Peapolis' and Agrippa's letter has 'Herbipolis' (Würzburg). Agrippa's letter to Trithemius carries no date in the 1651 text.",
+   "group": "front matter",
+   "sentence": "I confess whilst I was very yong, I set upon the writing of these books, but hoping that I should set them forth with corrections and enlargements, and for that cause I gave them to Tritemius a Neapolitanian Abbot, formerly a Spanhemensian, a man very industrious after secret things.",
+   "sentenceTranslation": "J.F. (probably John French, 1616-1657: the EEBO-TCP catalogue reads 'The translator is probably John French. Cf. DNB'; the Wellcome catalogue gives 'J.F[reake]', probably John French; Tyson's 1993 edition is recalled, not seen, as naming James Freake), Three Books of Occult Philosophy (London: R.W. for Gregory Moule, 1651), as keyed by EEBO-TCP A26565 (CC0). Spelling and punctuation as keyed; display capitals at chapter openings normalised"
+  },
+  {
+   "order": 2,
+   "name": "I.1 How Magicians Collect vertues from the three-fold World, is declared in these three Books",
+   "value": "Book I, chapter 1",
+   "translit": "J.F. 1651, pp. 1-2",
+   "numeric": 1,
+   "form": "Not a glyph. A diagram card: three stacked bands, Elementary (Book I, natural magic), Celestial (Book II, celestial magic), Intellectual (Book III, ceremonial magic), with an arrow descending (virtues sent down from God through angels, heavens, stars, elements) and an arrow ascending (the magician's ascent 'by the same degrees through each World'). Place the wing's chapters on the bands (see lettersSource).",
+   "formConfidence": "high",
+   "note": "The chapter's opening names the worlds: 'a three f[o]ld World. Elementary, Celestiall, and intellectuall' (TCP has an illegible letter in 'fold'). The mapping world = book is Agrippa's own (I.1); the 1651 verse encomium by 'Eugenius Philalethes' ends 'But his Three Books with the Three worlds shall stand.' (The pseudonym Eugenius Philalethes is generally identified as Thomas Vaughan; recalled, not checked.)",
+   "group": "chapter",
+   "sentence": "The order and process of all these I shall endeavor to deliver in these three Books: Whereof the first contains naturall Magick, the second Celestiall, and the third Ceremoniall.",
+   "sentenceTranslation": "J.F. (probably John French, 1616-1657: the EEBO-TCP catalogue reads 'The translator is probably John French. Cf. DNB'; the Wellcome catalogue gives 'J.F[reake]', probably John French; Tyson's 1993 edition is recalled, not seen, as naming James Freake), Three Books of Occult Philosophy (London: R.W. for Gregory Moule, 1651), as keyed by EEBO-TCP A26565 (CC0). Spelling and punctuation as keyed; display capitals at chapter openings normalised"
+  },
+  {
+   "order": 3,
+   "name": "I.33 Of the Seals, and Characters of Naturall things",
+   "value": "Book I, chapter 33",
+   "translit": "J.F. 1651, pp. 65-68",
+   "numeric": 33,
+   "form": "Card with the heading, the sentence, and seven small panels: 'The Letters, or Characters' of Saturn, Jupiter, Mars, the Sun, Venus, Mercury and the Moon, said to be the signs chiromancers read in the hand. The figures are woodcuts that EEBO-TCP did not key ([FIGURE] only), so nothing here describes their strokes. Trace from the 1533 (Library of Congress copy) or 1651 scan, or omit the panels.",
+   "formConfidence": "high",
+   "note": "Natural characters: stars 'stamp' a seal or character on stones, plants, animals and the human hand. This is the first, lowest tier of Agrippa's theory of characters (Book I = elemental world). Sibling item signs-of-the-art treats the planetary signs themselves.",
+   "group": "chapter",
+   "sentence": "These doth Julian call sacred, and divine letters, seeing that by them according to the holy Scripture is the life of men writ in their hands.",
+   "sentenceTranslation": "J.F. (probably John French, 1616-1657: the EEBO-TCP catalogue reads 'The translator is probably John French. Cf. DNB'; the Wellcome catalogue gives 'J.F[reake]', probably John French; Tyson's 1993 edition is recalled, not seen, as naming James Freake), Three Books of Occult Philosophy (London: R.W. for Gregory Moule, 1651), as keyed by EEBO-TCP A26565 (CC0). Spelling and punctuation as keyed; display capitals at chapter openings normalised"
+  },
+  {
+   "order": 4,
+   "name": "I.70 Of the vertue of proper names",
+   "value": "Book I, chapter 70",
+   "translit": "J.F. 1651, pp. 153-154",
+   "numeric": 70,
+   "form": "Not a glyph. Text card. Pair it with I.69 (speech), I.71 (sentences, verses, charms) and I.72 (enchantments), which complete Agrippa's natural theory of the spoken word before he reaches writing (I.73) and letters (I.74).",
+   "formConfidence": "high",
+   "note": "The chapter grounds the power of names in Adam's naming of creatures (Genesis 2) and reports Apollonius reviving a girl after learning her name (from Philostratus). Reported, not endorsed.",
+   "group": "chapter",
+   "sentence": "Hence Magicians say, that proper names of things are certain rayes of things, every where present at all times, keeping the power of things, as the essence of the thing signified, rules, and is discerned in them, and know the things by them, as by proper, and living Images.",
+   "sentenceTranslation": "J.F. (probably John French, 1616-1657: the EEBO-TCP catalogue reads 'The translator is probably John French. Cf. DNB'; the Wellcome catalogue gives 'J.F[reake]', probably John French; Tyson's 1993 edition is recalled, not seen, as naming James Freake), Three Books of Occult Philosophy (London: R.W. for Gregory Moule, 1651), as keyed by EEBO-TCP A26565 (CC0). Spelling and punctuation as keyed; display capitals at chapter openings normalised"
+  },
+  {
+   "order": 5,
+   "name": "I.73 Of the vertue of writting, and of making imprecations, and inscriptions",
+   "value": "Book I, chapter 73",
+   "translit": "J.F. 1651, pp. 159-160",
+   "numeric": 73,
+   "form": "Not a glyph. Text card; the chapter has no figures.",
+   "formConfidence": "high",
+   "note": "Agrippa adds that 'Magicians command, that in every work, there be imprecations, and inscriptions made', citing Albertus's Speculum and Virgil's eighth Eclogue. This is the hinge from speech to letters.",
+   "group": "chapter",
+   "sentence": "Now writing is the last expression of the mind, and is the number of speech and voice, as also the collection, state, end, continuing, and iteration, making a habit, which is not perfected with the act of ones voice.",
+   "sentenceTranslation": "J.F. (probably John French, 1616-1657: the EEBO-TCP catalogue reads 'The translator is probably John French. Cf. DNB'; the Wellcome catalogue gives 'J.F[reake]', probably John French; Tyson's 1993 edition is recalled, not seen, as naming James Freake), Three Books of Occult Philosophy (London: R.W. for Gregory Moule, 1651), as keyed by EEBO-TCP A26565 (CC0). Spelling and punctuation as keyed; display capitals at chapter openings normalised"
+  },
+  {
+   "order": 6,
+   "name": "I.74 Of the proportion, correspondency, reduction of Letters to the Celestiall Signs, and Planets, according to various tongues, with a Table shewing this",
+   "value": "Book I, chapter 74",
+   "translit": "J.F. 1651, pp. 160-163, plus a folding table",
+   "numeric": 74,
+   "form": "Card with the sentence and a correspondence table built from the text, not from the plate: HEBREW 22 letters = 3 mothers (elements: fire, water, earth; 'they account Aire no Element') + 7 doubles (planets) + 12 simples (signs); GREEK 7 vowels = planets, 12 consonants = signs, the other 5 = four elements and the spirit of the world; LATIN A E I O U with consonantal J and V = 7 planets, B C D F G L M N P R S T = 12 signs, K Q X Z = 4 elements, H = spirit of the world, Y follows Greek. The printed table itself (a fold-out in 1651, keyed by TCP only as 'Place this Table after folio [illegible]') was not seen; per II.19 it also carries a 'Chaldean' alphabet. Do not draw that alphabet without a scan.",
+   "formConfidence": "high",
+   "note": "The Latin and Greek groupings above are copied from the 1651 text (the Greek letters themselves are not keyed by TCP). The 3/7/12 division is the Sefer Yetzirah scheme, which Agrippa gives as the teaching of 'the masters of the Hebrews' without naming the book. Also from this chapter: 'There are therefore two and twenty Letters, which are the foundation of the world ...'. The house Latin hall already warns that such Latin tables are sixteenth-century constructions, not Roman inheritance. Note that Agrippa's text makes the three mothers fire, water and earth, with air 'no element, but as the glew, and spirit of the elements'; the standard text of the Sefer Yetzirah (as recalled, not checked here) makes them air, water and fire. Do not silently harmonise the two. The 1533 Latin says the same rule holds 'apud Chaldaeos' and that 'sequens tabella' sets out the dispositions (McGill copy OCR).",
+   "group": "chapter",
+   "sentence": "But before all notes of languages, the writing of the Hebrews is of all the most sacred in the figures of Characters, points of vowels, and tops of accents, as consisting in matter, form, and spirit.",
+   "sentenceTranslation": "J.F. (probably John French, 1616-1657: the EEBO-TCP catalogue reads 'The translator is probably John French. Cf. DNB'; the Wellcome catalogue gives 'J.F[reake]', probably John French; Tyson's 1993 edition is recalled, not seen, as naming James Freake), Three Books of Occult Philosophy (London: R.W. for Gregory Moule, 1651), as keyed by EEBO-TCP A26565 (CC0). Spelling and punctuation as keyed; display capitals at chapter openings normalised"
+  },
+  {
+   "order": 7,
+   "name": "II.19 Of the notes of the Hebrews, and Caldeans, and certain other notes of Magicians",
+   "value": "Book II, chapter 19",
+   "translit": "J.F. 1651, pp. 232-234",
+   "numeric": 19,
+   "form": "Two panels. (a) Hebrew letter-numerals, keyed by TCP in full: units א-ט 1-9, tens י-צ 10-90, hundreds ק ר ש ת 100-400 and the five finals ך ם ן ף ץ 500-900; thousands by a 'great Character' (א = 1000); the alternative without finals (תק 500 ... תתק 900); fifteen written as nine and six, not ten and five, 'out of honor to the divine name' (TCP does not key that Hebrew; the standard form is ט״ו). (b) 'certain most elegant marks of numbers' from 'two most ancient books of Astrologers, and Magicians': base signs for 1-9; the same 'turned to the left hand' make tens; marks 'turned downwards' on the right hand make hundreds, and on the left thousands; compounded examples 1510, 1511, 1471, 1486, 2421. TCP did not key these signs, so their strokes are NOT DESCRIBED here.",
+   "formConfidence": "medium",
+   "note": "The rule for the magicians' marks (units, tens by left turn, hundreds and thousands by downward turns) is the rule of the medieval 'ciphers of the monks'; David A. King, The Ciphers of the Monks (Stuttgart: Steiner, 2001) treats Agrippa's printing among its witnesses (recalled, not checked this session). The Hebrew forms in panel (a) were drawn from the TCP keying, which gives the Hebrew in Unicode here. Agrippa also says 'We have set down their [the Chaldeans'] Alphabet in the end of the first book', i.e. the I.74 table.",
+   "group": "chapter",
+   "sentence": "Moreover I found in two most ancient books of Astrologers, and Magicians, certain most elegant marks of numbers, which I thought good to set down in this place;",
+   "sentenceTranslation": "J.F. (probably John French, 1616-1657: the EEBO-TCP catalogue reads 'The translator is probably John French. Cf. DNB'; the Wellcome catalogue gives 'J.F[reake]', probably John French; Tyson's 1993 edition is recalled, not seen, as naming James Freake), Three Books of Occult Philosophy (London: R.W. for Gregory Moule, 1651), as keyed by EEBO-TCP A26565 (CC0). Spelling and punctuation as keyed; display capitals at chapter openings normalised"
+  },
+  {
+   "order": 8,
+   "name": "II.20 What numbers are attributed to letters; and of divining by the same",
+   "value": "Book II, chapter 20",
+   "translit": "J.F. 1651, pp. 235-237",
+   "numeric": 20,
+   "form": "A number table for the Latin alphabet, as the 1651 text prints it: A 1, B 2, C 3, D 4, E 5, F 6, G 7, H 8, I 9, K 10, L 20, M 30, N 40, O 50, P 60, Q 70, R 80, S 90, T 100, V 200, X 300, Y 400, Z 500, I [consonant J] 600, V [consonant] 700, HI 800, HV 900. Then the rule: sum the letters of a person's name and both parents' names, cast out nines (remainder 1 or 4 Sun, 2 or 7 Moon, 3 Jupiter, 5 Mercury, 6 Venus, 8 Saturn, 9 Mars), or cast out twelves for the 'horoscope'.",
+   "formConfidence": "high",
+   "note": "Agrippa ascribes the ruling-star method to 'Alexandrinus the Philosopher' ('not disallowed by Ptolemy'); the name arithmancy is what 'they' (the Pythagoreans) 'call this kind of divination'. The values are directly usable by the wing's transliterator as 'Agrippa's Latin numbers'. Label them as Agrippa's scheme, not as Roman practice.",
+   "group": "chapter",
+   "sentence": "The Pythagorians say (Aristotle, and Ptolemy are of opinion) that the very Elements of letters have some certain divine numbers, by which collected from proper names of things, we may draw conjectures concerning occult things to come.",
+   "sentenceTranslation": "J.F. (probably John French, 1616-1657: the EEBO-TCP catalogue reads 'The translator is probably John French. Cf. DNB'; the Wellcome catalogue gives 'J.F[reake]', probably John French; Tyson's 1993 edition is recalled, not seen, as naming James Freake), Three Books of Occult Philosophy (London: R.W. for Gregory Moule, 1651), as keyed by EEBO-TCP A26565 (CC0). Spelling and punctuation as keyed; display capitals at chapter openings normalised"
+  },
+  {
+   "order": 9,
+   "name": "II.22 Of the tables of the Planets, their vertues, forms, and what Divine names, Intelligencies, and Spirits are set over them",
+   "value": "Book II, chapter 22",
+   "translit": "J.F. 1651, pp. 239-252",
+   "numeric": 22,
+   "form": "Not drawn here; reuse the sibling item planetary-seals. For the card: seven squares (Saturn 3x3 ... Moon 9x9), each printed 'in his compass' in Arabic figures and again 'In Hebrew notes', with the divine names, the Intelligence and the Spirit of each planet and their seals. Checked by script against the TCP keying: the 1651 Saturn, Jupiter, Mars and Sun squares agree cell for cell with the sibling's layouts. The Venus, Mercury and Moon squares do not. Several cells are swapped or misprinted in the 1651 print as keyed, which its errata partly correct, and TCP marks some cells illegible.",
+   "formConfidence": "high",
+   "note": "Agrippa does not explain how the seals are drawn from the squares; he leaves it to 'the wise searcher'. Any page that shows a construction method must say it is a modern reconstruction. The 1651 errata correct several numbers in the Venus, Mercury and Moon tables (pp. 247, 249, 251), and TCP shows illegible cells there, so the Venus, Mercury and Moon squares must be checked against a scan.",
+   "group": "chapter",
+   "sentence": "Now how the seals, and Characters of the Stars, and spirits are drawn from these tables, the wise searcher, and he which shall understand the verifying of these tables, shall easily find out.",
+   "sentenceTranslation": "J.F. (probably John French, 1616-1657: the EEBO-TCP catalogue reads 'The translator is probably John French. Cf. DNB'; the Wellcome catalogue gives 'J.F[reake]', probably John French; Tyson's 1993 edition is recalled, not seen, as naming James Freake), Three Books of Occult Philosophy (London: R.W. for Gregory Moule, 1651), as keyed by EEBO-TCP A26565 (CC0). Spelling and punctuation as keyed; display capitals at chapter openings normalised"
+  },
+  {
+   "order": 10,
+   "name": "II.48 Of Geomanticall Figures, which are the middle betwixt Images and Characters",
+   "value": "Book II, chapter 48",
+   "translit": "J.F. 1651, pp. 309-310",
+   "numeric": 48,
+   "form": "Not drawn here; reuse signs-of-the-art (the sixteen geomantic figures). The chapter tabulates figure, name, element, planet and sign.",
+   "formConfidence": "high",
+   "note": "The sentence ends at a semicolon in the 1651 punctuation.",
+   "group": "chapter",
+   "sentence": "There are moreover certain other Figures, framed by the number and situation of the stars, and ascribed both to the Elements, and also to the Planets and Signs, which are called Geomantical, because that Geomantical Diviners do reduce the points of their lot projected, by the excess of parity or imparity into those figures; and they also being engraven or imprinted under the dominion of their Planets and Signs, do conceive the vertue and power of images; and these Figures are as a middle betwixt Images and Characters;",
+   "sentenceTranslation": "J.F. (probably John French, 1616-1657: the EEBO-TCP catalogue reads 'The translator is probably John French. Cf. DNB'; the Wellcome catalogue gives 'J.F[reake]', probably John French; Tyson's 1993 edition is recalled, not seen, as naming James Freake), Three Books of Occult Philosophy (London: R.W. for Gregory Moule, 1651), as keyed by EEBO-TCP A26565 (CC0). Spelling and punctuation as keyed; display capitals at chapter openings normalised"
+  },
+  {
+   "order": 11,
+   "name": "II.51 Of Characters which are made after the rule and imitation of Celestial, and how with the table thereof they are deduced out of Geomantical figures",
+   "value": "Book II, chapter 51",
+   "translit": "J.F. 1651, pp. 316-319",
+   "numeric": 51,
+   "form": "Card with the sentence and, if a scan is used, the table of planetary characters made by joining the points of the geomantic figures (two per planet, plus the Dragon's head and tail). TCP keyed none of these figures; NOT DESCRIBED.",
+   "formConfidence": "high",
+   "note": "'Beaven' is as keyed by TCP (a misprint or keying error for 'Heaven'). The next words are 'But of these hereafter;', a forward reference to III.30, where the Malachim alphabet is printed. This is the second tier of Agrippa's theory: celestial characters (Book II).",
+   "group": "chapter",
+   "sentence": "Now the true Characters of the heavens is the writing of Angels, which amongst the Hebrews is called the writing Malachim, by which all things are described and signified in the Beaven for every knowing man to read.",
+   "sentenceTranslation": "J.F. (probably John French, 1616-1657: the EEBO-TCP catalogue reads 'The translator is probably John French. Cf. DNB'; the Wellcome catalogue gives 'J.F[reake]', probably John French; Tyson's 1993 edition is recalled, not seen, as naming James Freake), Three Books of Occult Philosophy (London: R.W. for Gregory Moule, 1651), as keyed by EEBO-TCP A26565 (CC0). Spelling and punctuation as keyed; display capitals at chapter openings normalised"
+  },
+  {
+   "order": 12,
+   "name": "II.52 Of Characters which are drawn from things themselves by a certain likeness",
+   "value": "Book II, chapter 52",
+   "translit": "J.F. 1651, pp. 320-323",
+   "numeric": 52,
+   "form": "Card listing what the chapter derives, as the text says: Aries and Taurus from their horns, Gemini from embracing, Cancer from 'progress and regress', Leo, Scorpio, Capricorn from their tails, Virgo from 'Spike' (the ear of corn), Libra from a balance, Sagittarius from a dart, Aquarius from waters, Pisces from fishes; Saturn from a sickle, Jupiter from a sceptre, Mars from a bolt, the Sun from roundness, Venus from a looking-glass, Mercury from a wand, the Moon from her horns. Then characters of the triplicities, compound characters for planetary conjunctions, and fifteen characters 'which Hermes assigned to the fixed stars, and Behenii'. Reuse signs-of-the-art for the zodiac and planet signs; the Behenian star characters are woodcuts not keyed by TCP (NOT DESCRIBED).",
+   "formConfidence": "high",
+   "note": "The derivations are Agrippa's explanation, not a documented history of the signs; the sibling signs-of-the-art item covers the history.",
+   "group": "chapter",
+   "sentence": "In like manner also it is to be understood of Characters; for such like Characters are nothing else then images ill dearticulated; yet having a certain probable similitude with the Celestial images, or with that which the mind of the Operator desires, whether that be from the whole image, or from certain markes thereof expressing the whole image.",
+   "sentenceTranslation": "J.F. (probably John French, 1616-1657: the EEBO-TCP catalogue reads 'The translator is probably John French. Cf. DNB'; the Wellcome catalogue gives 'J.F[reake]', probably John French; Tyson's 1993 edition is recalled, not seen, as naming James Freake), Three Books of Occult Philosophy (London: R.W. for Gregory Moule, 1651), as keyed by EEBO-TCP A26565 (CC0). Spelling and punctuation as keyed; display capitals at chapter openings normalised"
+  },
+  {
+   "order": 13,
+   "name": "III.10 Of Divine emanations ... and of the ten Sephiroths and ten most sacred names of God which rule them",
+   "value": "Book III, chapter 10",
+   "translit": "J.F. 1651, pp. 366-370",
+   "numeric": 10,
+   "form": "Not a glyph. A ten-row table: name of God, sefirah, angelic order, sphere, intelligence, as the chapter sets them out (Eheia/Kether/Seraphim/primum mobile/Metatron ... Adonai Melech/Malkuth/Issim/[souls]/Metatron or the soul of Messiah). Hebrew is not keyed by TCP in this chapter; take the Hebrew spellings from the Hebrew hall, not from this file.",
+   "formConfidence": "medium",
+   "note": "The sentence is the chapter heading. The body is badly damaged in the TCP keying (many illegible letters), so build the table from a scan or a modern edition. Context for the names, not a chapter on letters.",
+   "group": "chapter",
+   "sentence": "Of Divine emanations, which the Hebrews call Numerations, others attributes: The gentiles gods and Dieties; and of the ten Sephiroths and ten most sacred names of God which rule them, and the interpretation of them.",
+   "sentenceTranslation": "J.F. (probably John French, 1616-1657: the EEBO-TCP catalogue reads 'The translator is probably John French. Cf. DNB'; the Wellcome catalogue gives 'J.F[reake]', probably John French; Tyson's 1993 edition is recalled, not seen, as naming James Freake), Three Books of Occult Philosophy (London: R.W. for Gregory Moule, 1651), as keyed by EEBO-TCP A26565 (CC0). Spelling and punctuation as keyed; display capitals at chapter openings normalised"
+  },
+  {
+   "order": 14,
+   "name": "III.11 Of the Divine names, and their power and vertue",
+   "value": "Book III, chapter 11",
+   "translit": "J.F. 1651, pp. 370-379",
+   "numeric": 11,
+   "form": "Card with: the kabbalistic techniques the chapter names (notariqon, 'Gimetrian' i.e. gematria, Ziruph, transposition), the acronym names it lists (Agla, Ararita, Iaia, Hacaha, Amen) and three figures: the ABRACADABRA triangle (the word written again and again, 'diminishing letter after letter'), the double-sided seal from 'Rabbai Hama in his book of speculation' (1651 spelling) (front: the four-square names of God; back: Ararita with its verse), and a two-sided ligature made of the first and last letters of the first five verses of Genesis. The triangle can be set in type; the two seals are woodcuts not keyed by TCP (NOT DESCRIBED).",
+   "formConfidence": "high",
+   "note": "The chapter also says the names must be kept 'without corruption in their own Characters' (Origen) and not translated (Iamblichus). The Abracadabra prescription is Agrippa reporting Serenus Sammonicus's medical poem; it is not his own observation. Check every Hebrew spelling against a scan: TCP gives no Hebrew for this chapter.",
+   "group": "chapter",
+   "sentence": "Also Serenus Samonicus delivereth amongst the precepts of Physick, that if this name Abracadabra be written, as is here expressed, viz. diminishing letter after letter backward, from the last to the first, it will cure the Hemitritean Feaver or any other, if the sheet of paper or parchment be hanged about the neck, and the disease will by little and little decline and pass away.",
+   "sentenceTranslation": "J.F. (probably John French, 1616-1657: the EEBO-TCP catalogue reads 'The translator is probably John French. Cf. DNB'; the Wellcome catalogue gives 'J.F[reake]', probably John French; Tyson's 1993 edition is recalled, not seen, as naming James Freake), Three Books of Occult Philosophy (London: R.W. for Gregory Moule, 1651), as keyed by EEBO-TCP A26565 (CC0). Spelling and punctuation as keyed; display capitals at chapter openings normalised"
+  },
+  {
+   "order": 15,
+   "name": "III.12 Of the influence of the divine names through all the middle causes into these inferior things",
+   "value": "Book III, chapter 12",
+   "translit": "J.F. 1651, pp. 379-381",
+   "numeric": 12,
+   "form": "Not a glyph. Optional text card; no figures or letter tables.",
+   "formConfidence": "high",
+   "note": "CHECKED: III.12 is about how the power of the divine names descends through angels, heavens and stars, and about the name of Jesus superseding the four-letter name. It contains no alphabet, figure or table; its only 'seal' is the cross, 'the seal thereof' (of the name of Jesus). Do not cite III.12 for characters; cite III.11 (names) and III.29-31 (characters). The sentence is the chapter heading.",
+   "group": "chapter",
+   "sentence": "Of the influence of the divine names through all the middle causes into these inferior things.",
+   "sentenceTranslation": "J.F. (probably John French, 1616-1657: the EEBO-TCP catalogue reads 'The translator is probably John French. Cf. DNB'; the Wellcome catalogue gives 'J.F[reake]', probably John French; Tyson's 1993 edition is recalled, not seen, as naming James Freake), Three Books of Occult Philosophy (London: R.W. for Gregory Moule, 1651), as keyed by EEBO-TCP A26565 (CC0). Spelling and punctuation as keyed; display capitals at chapter openings normalised"
+  },
+  {
+   "order": 16,
+   "name": "III.23 Of the tongue of Angels, and of their speaking amongst themselves, and with us",
+   "value": "Book III, chapter 23",
+   "translit": "J.F. 1651, pp. 412-414",
+   "numeric": 23,
+   "form": "Not a glyph. Text card.",
+   "formConfidence": "high",
+   "note": "Agrippa reports the opinion ('many think'); he then says how angels speak 'is hid from us'. Present it as a reported view. The sentence ends at a colon in the 1651 punctuation.",
+   "group": "chapter",
+   "sentence": "For many think that if they use any Idiome, it is Hebrew, because that was the first of all, and came from heaven, and was before the confusion of languages in Babylon, in which the Law was given by God the Father, and the Gospell was preached by Christ the Son, and so many Oracles were given to the Prophets by the Holy Ghost:",
+   "sentenceTranslation": "J.F. (probably John French, 1616-1657: the EEBO-TCP catalogue reads 'The translator is probably John French. Cf. DNB'; the Wellcome catalogue gives 'J.F[reake]', probably John French; Tyson's 1993 edition is recalled, not seen, as naming James Freake), Three Books of Occult Philosophy (London: R.W. for Gregory Moule, 1651), as keyed by EEBO-TCP A26565 (CC0). Spelling and punctuation as keyed; display capitals at chapter openings normalised"
+  },
+  {
+   "order": 17,
+   "name": "III.24 Of the names of Spirits, and their various imposition ...",
+   "value": "Book III, chapter 24",
+   "translit": "J.F. 1651, pp. 414-417",
+   "numeric": 24,
+   "form": "Not a glyph. Text card listing the angels of the planets (Zaphiel, Zadkiel, Camael, Raphael, Haniel, Michael, Gabriel; and the alternative set Oriphiel, Zachariel, Zamael, Michael, Anael, Raphael, Gabriel), the angels of the twelve signs, and the twenty-eight angels of the lunar mansions.",
+   "formConfidence": "high",
+   "note": "This is Agrippa's own eyewitness claim. Report it as his claim. The chapter also cites 'Abbas Tritemius' and his treatise to the Emperor Maximilian on the seven governing spirits (see the trithemius item).",
+   "group": "chapter",
+   "sentence": "I have seen, and known some writing on virgin parchment the name and seal of some spirit in the hour of the Moon: which when afterward he gave to be devoured by a water-frog, and had muttered over some verse, the frog being let go into the water, rains, and shours presently followed.",
+   "sentenceTranslation": "J.F. (probably John French, 1616-1657: the EEBO-TCP catalogue reads 'The translator is probably John French. Cf. DNB'; the Wellcome catalogue gives 'J.F[reake]', probably John French; Tyson's 1993 edition is recalled, not seen, as naming James Freake), Three Books of Occult Philosophy (London: R.W. for Gregory Moule, 1651), as keyed by EEBO-TCP A26565 (CC0). Spelling and punctuation as keyed; display capitals at chapter openings normalised"
+  },
+  {
+   "order": 18,
+   "name": "III.25 How the Hebrew Mecubals draw forth the sacred names of Angels out of the sacred writ, and of the seventie two Angels ... with the Tables of Ziruph, and the Commutations of letters, and numbers",
+   "value": "Book III, chapter 25",
+   "translit": "J.F. 1651, pp. 417-427",
+   "numeric": 25,
+   "form": "Card with the method in words: Exodus 14:19-21, three verses of 72 letters each, written in one line, the middle verse reversed; each column of three letters is a name; adding El or Iah gives the seventy-two angel names (Vehuiah ... Mumiah, listed in the chapter). Then six letter tables named in the chapter: 'The Right Table of the Commutations', 'The Averse Table of the Commutations', 'Another Averse Table, called the irregular', 'The Table of the Combinations of Ziruph', 'Another table of Ziruph, which is called the Rational', 'Tables of the Numeral transpositions'. TCP did not key the tables (NOT DESCRIBED).",
+   "formConfidence": "high",
+   "note": "The verse numbers Exodus 14:19-21 are the standard identification, not stated in the 1651 text, which gives only the opening words (Vajisa, Vajabo, Vajot). The Ziruph tables are Hebrew letter-substitution tables and belong next to the Hebrew hall.",
+   "group": "chapter",
+   "sentence": "And because these tables serve for all names, as well divine, as angelical, we shall therefore subjoyn them to this Chapter.",
+   "sentenceTranslation": "J.F. (probably John French, 1616-1657: the EEBO-TCP catalogue reads 'The translator is probably John French. Cf. DNB'; the Wellcome catalogue gives 'J.F[reake]', probably John French; Tyson's 1993 edition is recalled, not seen, as naming James Freake), Three Books of Occult Philosophy (London: R.W. for Gregory Moule, 1651), as keyed by EEBO-TCP A26565 (CC0). Spelling and punctuation as keyed; display capitals at chapter openings normalised"
+  },
+  {
+   "order": 19,
+   "name": "III.26 Of finding out of the names of spirits, and Genius's from the disposition of Celestiall bodies",
+   "value": "Book III, chapter 26",
+   "translit": "J.F. 1651, pp. 428-429",
+   "numeric": 26,
+   "form": "Not a glyph. Diagram card: a horoscope circle with the 22 Hebrew letters cast round it degree by degree from the ascendant; the letters that fall on the chosen stars, read in order, give a good spirit's name, and casting against the order of the signs gives an evil one.",
+   "formConfidence": "high",
+   "note": "Agrippa ascribes variants to 'Hebrew and Caldean masters', 'the Chaldeans' and 'the Arabians'. He adds that such names, 'although unknown in sound', may work more than meaningful ones because the mind is astonished by their obscurity.",
+   "group": "chapter",
+   "sentence": "The ancient Magicians did teach an art of finding out the name of a spirit to any desired effect, drawing it from the disposition of the heaven;",
+   "sentenceTranslation": "J.F. (probably John French, 1616-1657: the EEBO-TCP catalogue reads 'The translator is probably John French. Cf. DNB'; the Wellcome catalogue gives 'J.F[reake]', probably John French; Tyson's 1993 edition is recalled, not seen, as naming James Freake), Three Books of Occult Philosophy (London: R.W. for Gregory Moule, 1651), as keyed by EEBO-TCP A26565 (CC0). Spelling and punctuation as keyed; display capitals at chapter openings normalised"
+  },
+  {
+   "order": 20,
+   "name": "III.27 Of the calculating Art of such names by the tradition of Cabalists",
+   "value": "Book III, chapter 27",
+   "translit": "J.F. 1651, pp. 430-434",
+   "numeric": 27,
+   "form": "Card with the sentence and the two calculatory tables ('The entrance of the good Angels' / 'The entrance of the evil Angels', under the seven planets and twelve signs). TCP did not key the tables (NOT DESCRIBED).",
+   "formConfidence": "high",
+   "note": "'tightly' is as keyed by TCP (probably 'rightly'). Agrippa names 'Alfonsus Cyprius' as having written on this art and fitted it to Latin characters. The chapter also states the rule: 'every Angelicall name must proceed from some primary name of God'. III.28 (names taken from the things spirits rule: Sabathiel, Zedekiel, Madimiel ...) follows and has no letters or figures.",
+   "group": "chapter",
+   "sentence": "But because the letters of every tongue, as we shewed in the first book, have in their number, order, and figure a Celestiall and Divine originall, I shall easily grant this calculation concerning the names of spirits to be made not only by Hebrew letters, but also Chaldean, and Arabick, Aegyptian, Greek, Latine, and any other, the tables being tightly made after the imitation of the presidents.",
+   "sentenceTranslation": "J.F. (probably John French, 1616-1657: the EEBO-TCP catalogue reads 'The translator is probably John French. Cf. DNB'; the Wellcome catalogue gives 'J.F[reake]', probably John French; Tyson's 1993 edition is recalled, not seen, as naming James Freake), Three Books of Occult Philosophy (London: R.W. for Gregory Moule, 1651), as keyed by EEBO-TCP A26565 (CC0). Spelling and punctuation as keyed; display capitals at chapter openings normalised"
+  },
+  {
+   "order": 21,
+   "name": "III.29 Of the Characters and Seals of spirits",
+   "value": "Book III, chapter 29",
+   "translit": "J.F. 1651, pp. 437-438",
+   "numeric": 29,
+   "form": "Reuse the sibling item theban for the glyphs. The card: the chapter's definition of characters, Porphyry on symbolic figures (circle to heaven, parts of a circle to the Moon, pyramids and obelisks to fire, cylinder to Sun and Earth, triangle to Juno), and the alphabet 'which Peter Apponus notes, as delivered by Honorius of Thebes', set against A ... Z (the 1651 keying shows the Latin row 'A B C D E F G H I / K L M N O P Q R S / T V X Y Z').",
+   "formConfidence": "high",
+   "note": "Agrippa does not call the alphabet 'Theban'; the word does not occur in the 1651 text. The 1533 Latin calls the man 'Honorius Thebanus' ('quos notat Petrus Apponus ab Honorio Theba[no]', McGill copy OCR), whence the later name of the alphabet. He reports a double attribution: Peter of Abano reporting Honorius of Thebes. The earlier printing is Trithemius, Polygraphia (1518), which the theban sibling documents. Third and highest tier of the theory: characters of spirits (Book III).",
+   "group": "chapter",
+   "sentence": "Characters therefore are nothing else then certain unknowable letters and writings, preserving the secrets of the Gods, and names of spirits from the use and reading of prophane men, which the Ancients called Hyeroglyphicall, or sacred letters, because devoted to the secrets of the Gods only.",
+   "sentenceTranslation": "J.F. (probably John French, 1616-1657: the EEBO-TCP catalogue reads 'The translator is probably John French. Cf. DNB'; the Wellcome catalogue gives 'J.F[reake]', probably John French; Tyson's 1993 edition is recalled, not seen, as naming James Freake), Three Books of Occult Philosophy (London: R.W. for Gregory Moule, 1651), as keyed by EEBO-TCP A26565 (CC0). Spelling and punctuation as keyed; display capitals at chapter openings normalised"
+  },
+  {
+   "order": 22,
+   "name": "III.30 Another manner of making Characters, delivered by Cabalists",
+   "value": "Book III, chapter 30",
+   "translit": "J.F. 1651, pp. 439-444",
+   "numeric": 30,
+   "form": "Reuse the sibling items celestial, malachim, transitus-fluvii and aiq-bekar for all glyphs. The card shows, in Agrippa's order: (1) the 'most ancient' Mosaic script, which he does NOT print; (2) the square letters 'which they use at this day', instituted by Ezra; (3) Celestial writing (1651 p. 439); (4) Malachim (p. 440); (5) Passing of the River (p. 441); (6) the twenty-seven letters in three classes of nine and the 'nine Chambers' made by four lines crossing at right angles, with points marking the first, second or third letter; (7) the name Michael worked into a character, first as five figures, then three, then one; (8) characters made by joining letters, shown in Hebrew, Greek and Latin, 'most received' among the Arabians.",
+   "formConfidence": "high",
+   "note": "The page numbers are the 1651 English (from the TCP page breaks): Celestial on p. 439, Malachim on p. 440, Passing of the River on p. 441. A University of Chicago Divinity School caption reported by the malachim research ('... 1538, page 440') was not verified by its fact-check; it is immaterial, since the TCP page break confirms p. 440. The chapter closes with Agrippa's statement that angels have no characters of their own and that we 'devote and consecrate' marks to them 'by which we cannot any way compel them to us, but by which we rise up to them' (see quotations).",
+   "group": "chapter",
+   "sentence": "Amongst the Hebrews I finde more fashions of Characters, whereof one is most ancient, viz. an Ancient writing which Moses, and the Prophets used, the form of which is not rashly to be discovered to any; for those letters which they use at this day, were instituted by Esdras.",
+   "sentenceTranslation": "J.F. (probably John French, 1616-1657: the EEBO-TCP catalogue reads 'The translator is probably John French. Cf. DNB'; the Wellcome catalogue gives 'J.F[reake]', probably John French; Tyson's 1993 edition is recalled, not seen, as naming James Freake), Three Books of Occult Philosophy (London: R.W. for Gregory Moule, 1651), as keyed by EEBO-TCP A26565 (CC0). Spelling and punctuation as keyed; display capitals at chapter openings normalised"
+  },
+  {
+   "order": 23,
+   "name": "III.31 There is yet another fashion of Characters, and concerning marks of spirits which are received only by revelation",
+   "value": "Book III, chapter 31",
+   "translit": "J.F. 1651, pp. 445-447",
+   "numeric": 31,
+   "form": "Card with three revealed signs as the chapter describes them, figures on 1651 p. 446: Constantine's sign with 'In hoc vince'; the pentangle revealed to Antiochus Soter, which 'resolved into letters' spells the Greek for health; the sign given to Judas Maccabaeus, a Hebrew acronym of 'Who is there amongst the strong as Jehovah?'. TCP did not key the Greek, the Hebrew or the figures (NOT DESCRIBED). Then Porphyry and Hecate's oracle on images and characters.",
+   "formConfidence": "high",
+   "note": "The three signs are legends that Agrippa repeats, and the page should present them as such. Agrippa says Judas was 'sirnamed Machabeus' because of this sign. That is the traditional reading of the name Maccabee as an acronym of Exodus 15:11 (MKBY), a later tradition that he repeats, not history. The verse identification is mine; the 1651 text gives only the English.",
+   "group": "chapter",
+   "sentence": "There is another kind of Character received by Revelation only, which can be found out no other way: the vertue of which Characters is from the diety revealing, of whom there are some secret works, breathing out a harmony of some Divinity: or they are as it were some certain agreements or compacts of a league betwixt us and them.",
+   "sentenceTranslation": "J.F. (probably John French, 1616-1657: the EEBO-TCP catalogue reads 'The translator is probably John French. Cf. DNB'; the Wellcome catalogue gives 'J.F[reake]', probably John French; Tyson's 1993 edition is recalled, not seen, as naming James Freake), Three Books of Occult Philosophy (London: R.W. for Gregory Moule, 1651), as keyed by EEBO-TCP A26565 (CC0). Spelling and punctuation as keyed; display capitals at chapter openings normalised"
+  },
+  {
+   "order": 24,
+   "name": "III.65 The Conclusion of the whole Work",
+   "value": "Book III, chapter 65",
+   "translit": "J.F. 1651, pp. 555-556",
+   "numeric": 65,
+   "form": "Not a glyph. Text card.",
+   "formConfidence": "high",
+   "note": "Agrippa admits that the book is deliberately scattered and incomplete. Read with II.22, which leaves the seal construction to 'the wise searcher'. The quoted words are the last clause of a longer sentence.",
+   "group": "chapter",
+   "sentence": "Therefore let no man be angry with me, if we have folded up the truth of this science with many Enigmaes, and despersed it in divers places, for we have not hidden it from the wise, but from the wicked and ungodly, and have delivered it in such words which necessarily blind the foolish, and easily may admit the wise to the understanding of them.",
+   "sentenceTranslation": "J.F. (probably John French, 1616-1657: the EEBO-TCP catalogue reads 'The translator is probably John French. Cf. DNB'; the Wellcome catalogue gives 'J.F[reake]', probably John French; Tyson's 1993 edition is recalled, not seen, as naming James Freake), Three Books of Occult Philosophy (London: R.W. for Gregory Moule, 1651), as keyed by EEBO-TCP A26565 (CC0). Spelling and punctuation as keyed; display capitals at chapter openings normalised"
+  },
+  {
+   "order": 25,
+   "name": "End matter: The Censure, or Retractation of Henry Cornelius Agrippa, concerning Magick, after his declamation of the vanity of Sciences",
+   "value": "end matter (1651 pp. 567-583)",
+   "translit": "J.F. 1651, pp. 567-583",
+   "numeric": null,
+   "form": "Not a glyph. A text card set beside the Book III cards: the Censure reprints the magic chapters of De incertitudine et vanitate scientiarum (Of Magick in generall; Naturall; Mathematicall; Enchanting; Goetia; Theurgia; Cabalie; Juggling). It ends with the recantation sentence and then the colophon 'Anno M. D. XXXIII. In the Moneth of Iuly.'",
+   "formConfidence": "high",
+   "note": "The same sentence is in the 1676 English of De vanitate, ch. XLVIII (see quotations). The Censure's chapter on 'Cabalie' calls Kabbalah 'a meer rapsody of superstition' and contains anti-Jewish polemic. Quote it only as Agrippa's 1530 polemic, never as the wing's view.",
+   "group": "end matter",
+   "sentence": "But of Magick I wrote whilest I was very yong three large books, which I called Of Occult Philosophy, in which what was then through the curiosity of my youth erroneous, I now being more advised, am willing to have retracted, by this recantation;",
+   "sentenceTranslation": "J.F. (probably John French, 1616-1657: the EEBO-TCP catalogue reads 'The translator is probably John French. Cf. DNB'; the Wellcome catalogue gives 'J.F[reake]', probably John French; Tyson's 1993 edition is recalled, not seen, as naming James Freake), Three Books of Occult Philosophy (London: R.W. for Gregory Moule, 1651), as keyed by EEBO-TCP A26565 (CC0). Spelling and punctuation as keyed; display capitals at chapter openings normalised"
+  }
+ ],
+ "lettersSource": "NOT AN ALPHABET. The units are the 25 parts of De occulta philosophia that a reader of this wing should know: 23 chapters plus the front matter and the end-matter Censure. Each has its 1651 heading, its book and chapter number (Perrone Compagni/1533 numbering, the same as the chapter's position in the 1651 volume), the 1651 pages, a card description in 'form', and one exact sentence ('sentence') from J.F.'s 1651 English as keyed by EEBO-TCP A26565 (CC0). Every quotation and 'sentence' in this file was checked by script against the TCP text (A26565; A26562 for Turner 1655; A26566 for the 1676 Vanity), and re-checked independently in the fact-check against fresh clones of the same repositories (all 71 match). The check ignores case; display capitals and the long s are normalised. CHAPTER COUNT, checked in TCP: Book I 74, Book II 60, Book III 65 chapters. The 1651 misprints three headings in Book II: position 14 is headed 'XIII' (Of eleven and twelve), 16 'XIV' (notes of numbers in gestures), 17 'XVI' (Roman notes). Cite those as II.14, II.16, II.17; the 1533 Latin numbers them correctly ('Cap. XIIII' for eleven and twelve; 'Caput XVII' for the Roman notes; McGill copy OCR). CHECKED BUT LEFT OUT: I.69, I.71, I.72 (speech, verses, enchantments); II.21; III.2 (secrecy); III.28 (names from things); III.32-33 (calling and binding spirits). FIGURES: TCP keys no woodcut ([FIGURE] only) and gives Greek only in II.18 and Hebrew only in II.19 (plus one character in II.4). So no glyph is described from this file; the glyphs belong to the sibling items (theban, celestial, malachim, transitus-fluvii, aiq-bekar, planetary-seals, signs-of-the-art). The Hebrew numerals in II.19 are the exception: TCP keys them.",
+ "uses": [
+  {
+   "use": "Quarry for later alphabet charts and grimoires",
+   "evidence": "Barrett's Magus (1801) plate of Theban, Celestial, Malachim and Passing the River copies Agrippa's III.29-30, and most modern charts copy Barrett (sibling research). Turner's 1655 Fourth Book put pseudo-Agrippan characters into English under Agrippa's name."
+  },
+  {
+   "use": "Name-making from scripture and from the heavens",
+   "evidence": "III.25: the 72 names from Exodus 14:19-21 and the Ziruph and commutation tables. III.26: letters cast round a horoscope. III.27: calculatory tables usable 'not only by Hebrew letters, but also Chaldean, and Arabick, Aegyptian, Greek, Latine, and any other' (J.F. 1651)."
+  },
+  {
+   "use": "Making a character from a name",
+   "evidence": "III.30 works the name Michael through the nine chambers into one character. It also shows characters made by joining letters in Hebrew, Greek and Latin, 'most received' among the Arabians."
+  },
+  {
+   "use": "Talismans and amulets",
+   "evidence": "II.22: each planet's square engraved on its metal at a fortunate hour, with virtues listed. III.11: the ABRACADABRA triangle (reporting Serenus Sammonicus) and Rabbi Hama's seal, to be made 'in most pure gold, or Virgin Parchment ... with Jnke made ... of the smoak of consecrated wax lights, or incense, and holy water' (J.F. 1651). Reported prescriptions, not endorsed."
+  },
+  {
+   "use": "Writing names and seals of spirits in practice (eyewitness claim)",
+   "evidence": "III.24: Agrippa says he saw a man write a spirit's name and seal on virgin parchment in the hour of the Moon and feed it to a water-frog, after which rain followed, and do the same in the hour of Mars with a crow and thunder. This is his claim only."
+  },
+  {
+   "use": "Arithmancy from names",
+   "evidence": "II.20: Latin letters numbered 1-900. Name totals cast out by nine give a person's ruling planet, and by twelve a sign (ascribed to 'Alexandrinus the Philosopher')."
+  }
+ ],
+ "quotations": [
+  {
+   "text": "I confess whilst I was very yong, I set upon the writing of these books, but hoping that I should set them forth with corrections and enlargements, and for that cause I gave them to Tritemius a Neapolitanian Abbot, formerly a Spanhemensian, a man very industrious after secret things.",
+   "translation": "J.F. (probably John French, 1616-1657: the EEBO-TCP catalogue reads 'The translator is probably John French. Cf. DNB'; the Wellcome catalogue gives 'J.F[reake]', probably John French; Tyson's 1993 edition is recalled, not seen, as naming James Freake), Three Books of Occult Philosophy (London: R.W. for Gregory Moule, 1651), as keyed by EEBO-TCP A26565 (CC0). Spelling and punctuation as keyed; display capitals at chapter openings normalised",
+   "source": "Agrippa, De occulta philosophia (1533), front matter (printed 1533; English 1651); J.F. 1651, unpaginated front matter (TCP images 5-11)"
+  },
+  {
+   "text": "The order and process of all these I shall endeavor to deliver in these three Books: Whereof the first contains naturall Magick, the second Celestiall, and the third Ceremoniall.",
+   "translation": "J.F. (probably John French, 1616-1657: the EEBO-TCP catalogue reads 'The translator is probably John French. Cf. DNB'; the Wellcome catalogue gives 'J.F[reake]', probably John French; Tyson's 1993 edition is recalled, not seen, as naming James Freake), Three Books of Occult Philosophy (London: R.W. for Gregory Moule, 1651), as keyed by EEBO-TCP A26565 (CC0). Spelling and punctuation as keyed; display capitals at chapter openings normalised",
+   "source": "Agrippa, De occulta philosophia (1533), Book I, chapter 1; J.F. 1651, pp. 1-2"
+  },
+  {
+   "text": "These doth Julian call sacred, and divine letters, seeing that by them according to the holy Scripture is the life of men writ in their hands.",
+   "translation": "J.F. (probably John French, 1616-1657: the EEBO-TCP catalogue reads 'The translator is probably John French. Cf. DNB'; the Wellcome catalogue gives 'J.F[reake]', probably John French; Tyson's 1993 edition is recalled, not seen, as naming James Freake), Three Books of Occult Philosophy (London: R.W. for Gregory Moule, 1651), as keyed by EEBO-TCP A26565 (CC0). Spelling and punctuation as keyed; display capitals at chapter openings normalised",
+   "source": "Agrippa, De occulta philosophia (1533), Book I, chapter 33; J.F. 1651, pp. 65-68"
+  },
+  {
+   "text": "Hence Magicians say, that proper names of things are certain rayes of things, every where present at all times, keeping the power of things, as the essence of the thing signified, rules, and is discerned in them, and know the things by them, as by proper, and living Images.",
+   "translation": "J.F. (probably John French, 1616-1657: the EEBO-TCP catalogue reads 'The translator is probably John French. Cf. DNB'; the Wellcome catalogue gives 'J.F[reake]', probably John French; Tyson's 1993 edition is recalled, not seen, as naming James Freake), Three Books of Occult Philosophy (London: R.W. for Gregory Moule, 1651), as keyed by EEBO-TCP A26565 (CC0). Spelling and punctuation as keyed; display capitals at chapter openings normalised",
+   "source": "Agrippa, De occulta philosophia (1533), Book I, chapter 70; J.F. 1651, pp. 153-154"
+  },
+  {
+   "text": "Now writing is the last expression of the mind, and is the number of speech and voice, as also the collection, state, end, continuing, and iteration, making a habit, which is not perfected with the act of ones voice.",
+   "translation": "J.F. (probably John French, 1616-1657: the EEBO-TCP catalogue reads 'The translator is probably John French. Cf. DNB'; the Wellcome catalogue gives 'J.F[reake]', probably John French; Tyson's 1993 edition is recalled, not seen, as naming James Freake), Three Books of Occult Philosophy (London: R.W. for Gregory Moule, 1651), as keyed by EEBO-TCP A26565 (CC0). Spelling and punctuation as keyed; display capitals at chapter openings normalised",
+   "source": "Agrippa, De occulta philosophia (1533), Book I, chapter 73; J.F. 1651, pp. 159-160"
+  },
+  {
+   "text": "But before all notes of languages, the writing of the Hebrews is of all the most sacred in the figures of Characters, points of vowels, and tops of accents, as consisting in matter, form, and spirit.",
+   "translation": "J.F. (probably John French, 1616-1657: the EEBO-TCP catalogue reads 'The translator is probably John French. Cf. DNB'; the Wellcome catalogue gives 'J.F[reake]', probably John French; Tyson's 1993 edition is recalled, not seen, as naming James Freake), Three Books of Occult Philosophy (London: R.W. for Gregory Moule, 1651), as keyed by EEBO-TCP A26565 (CC0). Spelling and punctuation as keyed; display capitals at chapter openings normalised",
+   "source": "Agrippa, De occulta philosophia (1533), Book I, chapter 74; J.F. 1651, pp. 160-163, plus a folding table"
+  },
+  {
+   "text": "Moreover I found in two most ancient books of Astrologers, and Magicians, certain most elegant marks of numbers, which I thought good to set down in this place;",
+   "translation": "J.F. (probably John French, 1616-1657: the EEBO-TCP catalogue reads 'The translator is probably John French. Cf. DNB'; the Wellcome catalogue gives 'J.F[reake]', probably John French; Tyson's 1993 edition is recalled, not seen, as naming James Freake), Three Books of Occult Philosophy (London: R.W. for Gregory Moule, 1651), as keyed by EEBO-TCP A26565 (CC0). Spelling and punctuation as keyed; display capitals at chapter openings normalised",
+   "source": "Agrippa, De occulta philosophia (1533), Book II, chapter 19; J.F. 1651, pp. 232-234"
+  },
+  {
+   "text": "The Pythagorians say (Aristotle, and Ptolemy are of opinion) that the very Elements of letters have some certain divine numbers, by which collected from proper names of things, we may draw conjectures concerning occult things to come.",
+   "translation": "J.F. (probably John French, 1616-1657: the EEBO-TCP catalogue reads 'The translator is probably John French. Cf. DNB'; the Wellcome catalogue gives 'J.F[reake]', probably John French; Tyson's 1993 edition is recalled, not seen, as naming James Freake), Three Books of Occult Philosophy (London: R.W. for Gregory Moule, 1651), as keyed by EEBO-TCP A26565 (CC0). Spelling and punctuation as keyed; display capitals at chapter openings normalised",
+   "source": "Agrippa, De occulta philosophia (1533), Book II, chapter 20; J.F. 1651, pp. 235-237"
+  },
+  {
+   "text": "Now how the seals, and Characters of the Stars, and spirits are drawn from these tables, the wise searcher, and he which shall understand the verifying of these tables, shall easily find out.",
+   "translation": "J.F. (probably John French, 1616-1657: the EEBO-TCP catalogue reads 'The translator is probably John French. Cf. DNB'; the Wellcome catalogue gives 'J.F[reake]', probably John French; Tyson's 1993 edition is recalled, not seen, as naming James Freake), Three Books of Occult Philosophy (London: R.W. for Gregory Moule, 1651), as keyed by EEBO-TCP A26565 (CC0). Spelling and punctuation as keyed; display capitals at chapter openings normalised",
+   "source": "Agrippa, De occulta philosophia (1533), Book II, chapter 22; J.F. 1651, pp. 239-252"
+  },
+  {
+   "text": "There are moreover certain other Figures, framed by the number and situation of the stars, and ascribed both to the Elements, and also to the Planets and Signs, which are called Geomantical, because that Geomantical Diviners do reduce the points of their lot projected, by the excess of parity or imparity into those figures; and they also being engraven or imprinted under the dominion of their Planets and Signs, do conceive the vertue and power of images; and these Figures are as a middle betwixt Images and Characters;",
+   "translation": "J.F. (probably John French, 1616-1657: the EEBO-TCP catalogue reads 'The translator is probably John French. Cf. DNB'; the Wellcome catalogue gives 'J.F[reake]', probably John French; Tyson's 1993 edition is recalled, not seen, as naming James Freake), Three Books of Occult Philosophy (London: R.W. for Gregory Moule, 1651), as keyed by EEBO-TCP A26565 (CC0). Spelling and punctuation as keyed; display capitals at chapter openings normalised",
+   "source": "Agrippa, De occulta philosophia (1533), Book II, chapter 48; J.F. 1651, pp. 309-310"
+  },
+  {
+   "text": "Now the true Characters of the heavens is the writing of Angels, which amongst the Hebrews is called the writing Malachim, by which all things are described and signified in the Beaven for every knowing man to read.",
+   "translation": "J.F. (probably John French, 1616-1657: the EEBO-TCP catalogue reads 'The translator is probably John French. Cf. DNB'; the Wellcome catalogue gives 'J.F[reake]', probably John French; Tyson's 1993 edition is recalled, not seen, as naming James Freake), Three Books of Occult Philosophy (London: R.W. for Gregory Moule, 1651), as keyed by EEBO-TCP A26565 (CC0). Spelling and punctuation as keyed; display capitals at chapter openings normalised",
+   "source": "Agrippa, De occulta philosophia (1533), Book II, chapter 51; J.F. 1651, pp. 316-319"
+  },
+  {
+   "text": "In like manner also it is to be understood of Characters; for such like Characters are nothing else then images ill dearticulated; yet having a certain probable similitude with the Celestial images, or with that which the mind of the Operator desires, whether that be from the whole image, or from certain markes thereof expressing the whole image.",
+   "translation": "J.F. (probably John French, 1616-1657: the EEBO-TCP catalogue reads 'The translator is probably John French. Cf. DNB'; the Wellcome catalogue gives 'J.F[reake]', probably John French; Tyson's 1993 edition is recalled, not seen, as naming James Freake), Three Books of Occult Philosophy (London: R.W. for Gregory Moule, 1651), as keyed by EEBO-TCP A26565 (CC0). Spelling and punctuation as keyed; display capitals at chapter openings normalised",
+   "source": "Agrippa, De occulta philosophia (1533), Book II, chapter 52; J.F. 1651, pp. 320-323"
+  },
+  {
+   "text": "Of Divine emanations, which the Hebrews call Numerations, others attributes: The gentiles gods and Dieties; and of the ten Sephiroths and ten most sacred names of God which rule them, and the interpretation of them.",
+   "translation": "J.F. (probably John French, 1616-1657: the EEBO-TCP catalogue reads 'The translator is probably John French. Cf. DNB'; the Wellcome catalogue gives 'J.F[reake]', probably John French; Tyson's 1993 edition is recalled, not seen, as naming James Freake), Three Books of Occult Philosophy (London: R.W. for Gregory Moule, 1651), as keyed by EEBO-TCP A26565 (CC0). Spelling and punctuation as keyed; display capitals at chapter openings normalised",
+   "source": "Agrippa, De occulta philosophia (1533), Book III, chapter 10; J.F. 1651, pp. 366-370"
+  },
+  {
+   "text": "Also Serenus Samonicus delivereth amongst the precepts of Physick, that if this name Abracadabra be written, as is here expressed, viz. diminishing letter after letter backward, from the last to the first, it will cure the Hemitritean Feaver or any other, if the sheet of paper or parchment be hanged about the neck, and the disease will by little and little decline and pass away.",
+   "translation": "J.F. (probably John French, 1616-1657: the EEBO-TCP catalogue reads 'The translator is probably John French. Cf. DNB'; the Wellcome catalogue gives 'J.F[reake]', probably John French; Tyson's 1993 edition is recalled, not seen, as naming James Freake), Three Books of Occult Philosophy (London: R.W. for Gregory Moule, 1651), as keyed by EEBO-TCP A26565 (CC0). Spelling and punctuation as keyed; display capitals at chapter openings normalised",
+   "source": "Agrippa, De occulta philosophia (1533), Book III, chapter 11; J.F. 1651, pp. 370-379"
+  },
+  {
+   "text": "Of the influence of the divine names through all the middle causes into these inferior things.",
+   "translation": "J.F. (probably John French, 1616-1657: the EEBO-TCP catalogue reads 'The translator is probably John French. Cf. DNB'; the Wellcome catalogue gives 'J.F[reake]', probably John French; Tyson's 1993 edition is recalled, not seen, as naming James Freake), Three Books of Occult Philosophy (London: R.W. for Gregory Moule, 1651), as keyed by EEBO-TCP A26565 (CC0). Spelling and punctuation as keyed; display capitals at chapter openings normalised",
+   "source": "Agrippa, De occulta philosophia (1533), Book III, chapter 12; J.F. 1651, pp. 379-381"
+  },
+  {
+   "text": "For many think that if they use any Idiome, it is Hebrew, because that was the first of all, and came from heaven, and was before the confusion of languages in Babylon, in which the Law was given by God the Father, and the Gospell was preached by Christ the Son, and so many Oracles were given to the Prophets by the Holy Ghost:",
+   "translation": "J.F. (probably John French, 1616-1657: the EEBO-TCP catalogue reads 'The translator is probably John French. Cf. DNB'; the Wellcome catalogue gives 'J.F[reake]', probably John French; Tyson's 1993 edition is recalled, not seen, as naming James Freake), Three Books of Occult Philosophy (London: R.W. for Gregory Moule, 1651), as keyed by EEBO-TCP A26565 (CC0). Spelling and punctuation as keyed; display capitals at chapter openings normalised",
+   "source": "Agrippa, De occulta philosophia (1533), Book III, chapter 23; J.F. 1651, pp. 412-414"
+  },
+  {
+   "text": "I have seen, and known some writing on virgin parchment the name and seal of some spirit in the hour of the Moon: which when afterward he gave to be devoured by a water-frog, and had muttered over some verse, the frog being let go into the water, rains, and shours presently followed.",
+   "translation": "J.F. (probably John French, 1616-1657: the EEBO-TCP catalogue reads 'The translator is probably John French. Cf. DNB'; the Wellcome catalogue gives 'J.F[reake]', probably John French; Tyson's 1993 edition is recalled, not seen, as naming James Freake), Three Books of Occult Philosophy (London: R.W. for Gregory Moule, 1651), as keyed by EEBO-TCP A26565 (CC0). Spelling and punctuation as keyed; display capitals at chapter openings normalised",
+   "source": "Agrippa, De occulta philosophia (1533), Book III, chapter 24; J.F. 1651, pp. 414-417"
+  },
+  {
+   "text": "And because these tables serve for all names, as well divine, as angelical, we shall therefore subjoyn them to this Chapter.",
+   "translation": "J.F. (probably John French, 1616-1657: the EEBO-TCP catalogue reads 'The translator is probably John French. Cf. DNB'; the Wellcome catalogue gives 'J.F[reake]', probably John French; Tyson's 1993 edition is recalled, not seen, as naming James Freake), Three Books of Occult Philosophy (London: R.W. for Gregory Moule, 1651), as keyed by EEBO-TCP A26565 (CC0). Spelling and punctuation as keyed; display capitals at chapter openings normalised",
+   "source": "Agrippa, De occulta philosophia (1533), Book III, chapter 25; J.F. 1651, pp. 417-427"
+  },
+  {
+   "text": "The ancient Magicians did teach an art of finding out the name of a spirit to any desired effect, drawing it from the disposition of the heaven;",
+   "translation": "J.F. (probably John French, 1616-1657: the EEBO-TCP catalogue reads 'The translator is probably John French. Cf. DNB'; the Wellcome catalogue gives 'J.F[reake]', probably John French; Tyson's 1993 edition is recalled, not seen, as naming James Freake), Three Books of Occult Philosophy (London: R.W. for Gregory Moule, 1651), as keyed by EEBO-TCP A26565 (CC0). Spelling and punctuation as keyed; display capitals at chapter openings normalised",
+   "source": "Agrippa, De occulta philosophia (1533), Book III, chapter 26; J.F. 1651, pp. 428-429"
+  },
+  {
+   "text": "But because the letters of every tongue, as we shewed in the first book, have in their number, order, and figure a Celestiall and Divine originall, I shall easily grant this calculation concerning the names of spirits to be made not only by Hebrew letters, but also Chaldean, and Arabick, Aegyptian, Greek, Latine, and any other, the tables being tightly made after the imitation of the presidents.",
+   "translation": "J.F. (probably John French, 1616-1657: the EEBO-TCP catalogue reads 'The translator is probably John French. Cf. DNB'; the Wellcome catalogue gives 'J.F[reake]', probably John French; Tyson's 1993 edition is recalled, not seen, as naming James Freake), Three Books of Occult Philosophy (London: R.W. for Gregory Moule, 1651), as keyed by EEBO-TCP A26565 (CC0). Spelling and punctuation as keyed; display capitals at chapter openings normalised",
+   "source": "Agrippa, De occulta philosophia (1533), Book III, chapter 27; J.F. 1651, pp. 430-434"
+  },
+  {
+   "text": "Characters therefore are nothing else then certain unknowable letters and writings, preserving the secrets of the Gods, and names of spirits from the use and reading of prophane men, which the Ancients called Hyeroglyphicall, or sacred letters, because devoted to the secrets of the Gods only.",
+   "translation": "J.F. (probably John French, 1616-1657: the EEBO-TCP catalogue reads 'The translator is probably John French. Cf. DNB'; the Wellcome catalogue gives 'J.F[reake]', probably John French; Tyson's 1993 edition is recalled, not seen, as naming James Freake), Three Books of Occult Philosophy (London: R.W. for Gregory Moule, 1651), as keyed by EEBO-TCP A26565 (CC0). Spelling and punctuation as keyed; display capitals at chapter openings normalised",
+   "source": "Agrippa, De occulta philosophia (1533), Book III, chapter 29; J.F. 1651, pp. 437-438"
+  },
+  {
+   "text": "Amongst the Hebrews I finde more fashions of Characters, whereof one is most ancient, viz. an Ancient writing which Moses, and the Prophets used, the form of which is not rashly to be discovered to any; for those letters which they use at this day, were instituted by Esdras.",
+   "translation": "J.F. (probably John French, 1616-1657: the EEBO-TCP catalogue reads 'The translator is probably John French. Cf. DNB'; the Wellcome catalogue gives 'J.F[reake]', probably John French; Tyson's 1993 edition is recalled, not seen, as naming James Freake), Three Books of Occult Philosophy (London: R.W. for Gregory Moule, 1651), as keyed by EEBO-TCP A26565 (CC0). Spelling and punctuation as keyed; display capitals at chapter openings normalised",
+   "source": "Agrippa, De occulta philosophia (1533), Book III, chapter 30; J.F. 1651, pp. 439-444"
+  },
+  {
+   "text": "There is another kind of Character received by Revelation only, which can be found out no other way: the vertue of which Characters is from the diety revealing, of whom there are some secret works, breathing out a harmony of some Divinity: or they are as it were some certain agreements or compacts of a league betwixt us and them.",
+   "translation": "J.F. (probably John French, 1616-1657: the EEBO-TCP catalogue reads 'The translator is probably John French. Cf. DNB'; the Wellcome catalogue gives 'J.F[reake]', probably John French; Tyson's 1993 edition is recalled, not seen, as naming James Freake), Three Books of Occult Philosophy (London: R.W. for Gregory Moule, 1651), as keyed by EEBO-TCP A26565 (CC0). Spelling and punctuation as keyed; display capitals at chapter openings normalised",
+   "source": "Agrippa, De occulta philosophia (1533), Book III, chapter 31; J.F. 1651, pp. 445-447"
+  },
+  {
+   "text": "Therefore let no man be angry with me, if we have folded up the truth of this science with many Enigmaes, and despersed it in divers places, for we have not hidden it from the wise, but from the wicked and ungodly, and have delivered it in such words which necessarily blind the foolish, and easily may admit the wise to the understanding of them.",
+   "translation": "J.F. (probably John French, 1616-1657: the EEBO-TCP catalogue reads 'The translator is probably John French. Cf. DNB'; the Wellcome catalogue gives 'J.F[reake]', probably John French; Tyson's 1993 edition is recalled, not seen, as naming James Freake), Three Books of Occult Philosophy (London: R.W. for Gregory Moule, 1651), as keyed by EEBO-TCP A26565 (CC0). Spelling and punctuation as keyed; display capitals at chapter openings normalised",
+   "source": "Agrippa, De occulta philosophia (1533), Book III, chapter 65; J.F. 1651, pp. 555-556"
+  },
+  {
+   "text": "But of Magick I wrote whilest I was very yong three large books, which I called Of Occult Philosophy, in which what was then through the curiosity of my youth erroneous, I now being more advised, am willing to have retracted, by this recantation;",
+   "translation": "J.F. (probably John French, 1616-1657: the EEBO-TCP catalogue reads 'The translator is probably John French. Cf. DNB'; the Wellcome catalogue gives 'J.F[reake]', probably John French; Tyson's 1993 edition is recalled, not seen, as naming James Freake), Three Books of Occult Philosophy (London: R.W. for Gregory Moule, 1651), as keyed by EEBO-TCP A26565 (CC0). Spelling and punctuation as keyed; display capitals at chapter openings normalised",
+   "source": "Agrippa, 'The Censure, or Retractation' (from De vanitate, 1530), last section 'Of Juggling or Legerdemain', printed with De occulta philosophia (1533); J.F. 1651 p. 582"
+  },
+  {
+   "text": "Now you must know that Angelicall spirits, seeing they are of a pure intellect, and altogether incorporeall, are not marked with any marks or Characters, and pingible figures, or any other humane signs; but we not knowing their essence, or quality, do from their names, or works, or otherwise, according to our fancies devote and consecrate to them figures, and marks, by which we cannot any way compel them to us, but by which we rise up to them;",
+   "translation": "J.F. (probably John French, 1616-1657: the EEBO-TCP catalogue reads 'The translator is probably John French. Cf. DNB'; the Wellcome catalogue gives 'J.F[reake]', probably John French; Tyson's 1993 edition is recalled, not seen, as naming James Freake), Three Books of Occult Philosophy (London: R.W. for Gregory Moule, 1651), as keyed by EEBO-TCP A26565 (CC0). Spelling and punctuation as keyed; display capitals at chapter openings normalised",
+   "source": "Agrippa, De occulta philosophia (1533), III.30, near the end; J.F. 1651 p. 444"
+  },
+  {
+   "text": "There is also amongst them a writing which they call Celestiall, because they shew it placed and figured amongst the Stars, no otherwise then the other Astrologers produce images of signs from the lineaments of Stars.",
+   "translation": "J.F. (probably John French, 1616-1657: the EEBO-TCP catalogue reads 'The translator is probably John French. Cf. DNB'; the Wellcome catalogue gives 'J.F[reake]', probably John French; Tyson's 1993 edition is recalled, not seen, as naming James Freake), Three Books of Occult Philosophy (London: R.W. for Gregory Moule, 1651), as keyed by EEBO-TCP A26565 (CC0). Spelling and punctuation as keyed; display capitals at chapter openings normalised",
+   "source": "Agrippa, De occulta philosophia (1533), III.30; J.F. 1651 p. 439"
+  },
+  {
+   "text": "There is also a writing which they call Malachim, or Melachim i. e. of Angels, or Regal; there is also another, which they call the passing through the River, and the Characters and figures of all these are such.",
+   "translation": "J.F. (probably John French, 1616-1657: the EEBO-TCP catalogue reads 'The translator is probably John French. Cf. DNB'; the Wellcome catalogue gives 'J.F[reake]', probably John French; Tyson's 1993 edition is recalled, not seen, as naming James Freake), Three Books of Occult Philosophy (London: R.W. for Gregory Moule, 1651), as keyed by EEBO-TCP A26565 (CC0). Spelling and punctuation as keyed; display capitals at chapter openings normalised",
+   "source": "Agrippa, De occulta philosophia (1533), III.30; J.F. 1651 p. 439"
+  },
+  {
+   "text": "Of this kind of Character therefore are those which Peter Apponus notes, as delivered by Honorius of Thebes, the figures whereof are such, being related to our Alphabet.",
+   "translation": "J.F. (probably John French, 1616-1657: the EEBO-TCP catalogue reads 'The translator is probably John French. Cf. DNB'; the Wellcome catalogue gives 'J.F[reake]', probably John French; Tyson's 1993 edition is recalled, not seen, as naming James Freake), Three Books of Occult Philosophy (London: R.W. for Gregory Moule, 1651), as keyed by EEBO-TCP A26565 (CC0). Spelling and punctuation as keyed; display capitals at chapter openings normalised",
+   "source": "Agrippa, De occulta philosophia (1533), III.29; J.F. 1651 p. 438"
+  },
+  {
+   "text": "There is moreover another fashion amongst the Cabalists, formerly had in great esteem, but now it is so common, that it is placed amongst prophane things, ans it is this.",
+   "translation": "J.F. (probably John French, 1616-1657: the EEBO-TCP catalogue reads 'The translator is probably John French. Cf. DNB'; the Wellcome catalogue gives 'J.F[reake]', probably John French; Tyson's 1993 edition is recalled, not seen, as naming James Freake), Three Books of Occult Philosophy (London: R.W. for Gregory Moule, 1651), as keyed by EEBO-TCP A26565 (CC0). Spelling and punctuation as keyed; display capitals at chapter openings normalised; 'ans' is as keyed (for 'and')",
+   "source": "Agrippa, De occulta philosophia (1533), III.30 (the nine chambers); J.F. 1651 p. 441"
+  },
+  {
+   "text": "Therefore we must know that every Angelicall name must proceed from some primary name of God.",
+   "translation": "J.F. (probably John French, 1616-1657: the EEBO-TCP catalogue reads 'The translator is probably John French. Cf. DNB'; the Wellcome catalogue gives 'J.F[reake]', probably John French; Tyson's 1993 edition is recalled, not seen, as naming James Freake), Three Books of Occult Philosophy (London: R.W. for Gregory Moule, 1651), as keyed by EEBO-TCP A26565 (CC0). Spelling and punctuation as keyed; display capitals at chapter openings normalised",
+   "source": "Agrippa, De occulta philosophia (1533), III.27; J.F. 1651 p. 430"
+  },
+  {
+   "text": "There are therefore two and twenty Letters, which are the foundation of the world, and of creatures that are, and are named in it, and every saying, and every creature are of them, and by their revolutions receive their Name, being, and Vertue.",
+   "translation": "J.F. (probably John French, 1616-1657: the EEBO-TCP catalogue reads 'The translator is probably John French. Cf. DNB'; the Wellcome catalogue gives 'J.F[reake]', probably John French; Tyson's 1993 edition is recalled, not seen, as naming James Freake), Three Books of Occult Philosophy (London: R.W. for Gregory Moule, 1651), as keyed by EEBO-TCP A26565 (CC0). Spelling and punctuation as keyed; display capitals at chapter openings normalised",
+   "source": "Agrippa, De occulta philosophia (1533), I.74; J.F. 1651 p. 162"
+  },
+  {
+   "text": "Yet this one rule I advise you to observe, that you communicate vulgar secrets to vulgar friends, but higher and secret to higher, and secret friends only.",
+   "translation": "J.F. (probably John French, 1616-1657: the EEBO-TCP catalogue reads 'The translator is probably John French. Cf. DNB'; the Wellcome catalogue gives 'J.F[reake]', probably John French; Tyson's 1993 edition is recalled, not seen, as naming James Freake), Three Books of Occult Philosophy (London: R.W. for Gregory Moule, 1651), as keyed by EEBO-TCP A26565 (CC0). Spelling and punctuation as keyed; display capitals at chapter openings normalised",
+   "source": "Johannes Trithemius to Agrippa, 'From our Monastery of Peapolis, the 8. day of April, An. M. D. X.', printed in the front matter of De occulta philosophia (1533)"
+  },
+  {
+   "text": "But as for those books which you have of mine which were made in my youth, being intituled, Of Occult Philosophy, the two forme[r] of them were dificient in many things, the third is wholy imperfect, and contains but a certain Epitome of my writings.",
+   "translation": "J.F. (probably John French, 1616-1657: the EEBO-TCP catalogue reads 'The translator is probably John French. Cf. DNB'; the Wellcome catalogue gives 'J.F[reake]', probably John French; Tyson's 1993 edition is recalled, not seen, as naming James Freake), Three Books of Occult Philosophy (London: R.W. for Gregory Moule, 1651), as keyed by EEBO-TCP A26565 (CC0). Spelling and punctuation as keyed; display capitals at chapter openings normalised; '[r]' supplies an illegible letter in the keying",
+   "source": "Agrippa to Aurelius de Aquapendente, 'From Lyons the XXIV. of September, Anno que Domini. M. D. XXVII.', printed after III.65; J.F. 1651 p. 558"
+  },
+  {
+   "text": "But I will (God willing) set forth the whole work, being made entire, and revised, reserving the key thereof for most intimate friends only, one whereof you need not at all question but that I reckon you.",
+   "translation": "J.F. (probably John French, 1616-1657: the EEBO-TCP catalogue reads 'The translator is probably John French. Cf. DNB'; the Wellcome catalogue gives 'J.F[reake]', probably John French; Tyson's 1993 edition is recalled, not seen, as naming James Freake), Three Books of Occult Philosophy (London: R.W. for Gregory Moule, 1651), as keyed by EEBO-TCP A26565 (CC0). Spelling and punctuation as keyed; display capitals at chapter openings normalised",
+   "source": "Agrippa to Aurelius de Aquapendente, Lyons, 24 September 1527; J.F. 1651 pp. 558-559"
+  },
+  {
+   "text": "You have therefore the work, not only of my youth, but of my present Age, for I have corrected many Errataes of the work of my youth, I have inserted many things in many places, and have added many things to many Chapters, which may easily be perceived by the inequality of the stile;",
+   "translation": "J.F. (probably John French, 1616-1657: the EEBO-TCP catalogue reads 'The translator is probably John French. Cf. DNB'; the Wellcome catalogue gives 'J.F[reake]', probably John French; Tyson's 1993 edition is recalled, not seen, as naming James Freake), Three Books of Occult Philosophy (London: R.W. for Gregory Moule, 1651), as keyed by EEBO-TCP A26565 (CC0). Spelling and punctuation as keyed; display capitals at chapter openings normalised",
+   "source": "Agrippa, dedication of Book I to Hermann von Wied, 'From Mechlinia, Anno M. D. XXXI. In the moneth of January'"
+  },
+  {
+   "text": "Behold now (most Illustrious Prince, and most honorable Prelate!) the rest of the books of Occult Philosophy, or Magick, which I promised Your Worthiness that I would put forth when I published the first of them: but the suddain, and almost unexpected death of holy Margaret of Austria my Princess coming upon it, hindred me then from the endavoring to put it forth.",
+   "translation": "J.F. (probably John French, 1616-1657: the EEBO-TCP catalogue reads 'The translator is probably John French. Cf. DNB'; the Wellcome catalogue gives 'J.F[reake]', probably John French; Tyson's 1993 edition is recalled, not seen, as naming James Freake), Three Books of Occult Philosophy (London: R.W. for Gregory Moule, 1651), as keyed by EEBO-TCP A26565 (CC0). Spelling and punctuation as keyed; display capitals at chapter openings normalised",
+   "source": "Agrippa, dedication of Book II to Hermann von Wied; J.F. 1651 p. 165"
+  },
+  {
+   "text": "for I wrote this being scarce a yong man, that I may excuse my self, and say, whilest I was a child, I spake as a childe, I understood as a child, but being become a man, I retracted those things which I did being a boy, and in my book of the vanity and uncertainty of Sciences I did for the most part retract this book.",
+   "translation": "J.F. (probably John French, 1616-1657: the EEBO-TCP catalogue reads 'The translator is probably John French. Cf. DNB'; the Wellcome catalogue gives 'J.F[reake]', probably John French; Tyson's 1993 edition is recalled, not seen, as naming James Freake), Three Books of Occult Philosophy (London: R.W. for Gregory Moule, 1651), as keyed by EEBO-TCP A26565 (CC0). Spelling and punctuation as keyed; display capitals at chapter openings normalised",
+   "source": "Agrippa, 'To the Reader', front matter of De occulta philosophia (1533)"
+  },
+  {
+   "text": "Anno M. D. XXXIII. In the Moneth of Iuly.",
+   "translation": "J.F. (probably John French, 1616-1657: the EEBO-TCP catalogue reads 'The translator is probably John French. Cf. DNB'; the Wellcome catalogue gives 'J.F[reake]', probably John French; Tyson's 1993 edition is recalled, not seen, as naming James Freake), Three Books of Occult Philosophy (London: R.W. for Gregory Moule, 1651), as keyed by EEBO-TCP A26565 (CC0). Spelling and punctuation as keyed; display capitals at chapter openings normalised",
+   "source": "Colophon at the end of the 1651 volume, after the Censure (translating the 1533 colophon)"
+  },
+  {
+   "text": "'Tis true, that being young, I wrote three Books of Magick my self, which I Entitled, Of Occult Philosophy; in which, what Errors soever I then committed in my Youth, now grown more wary, I do publickly Recant, as having formerly spent too much time in those Vanities.",
+   "translation": "Anonymous English translation, The Vanity of Arts and Sciences (London: J.C. for Samuel Speed, 1676; Wing A790), as keyed by EEBO-TCP A26566 (CC0)",
+   "source": "Agrippa, De incertitudine et vanitate scientiarum (1530); 1676 English ch. XLVIII, p. 128"
+  },
+  {
+   "text": "Thus we see seven sorts of Letters most famous in Antiquity, the Hebrew, Greek, Latin, Syriac, Caldean, Aegyptian, and Getic.",
+   "translation": "Anonymous English translation, The Vanity of Arts and Sciences (London: J.C. for Samuel Speed, 1676; Wing A790), as keyed by EEBO-TCP A26566 (CC0)",
+   "source": "Agrippa, De incertitudine et vanitate scientiarum (1530); 1676 English ch. 2, 'Of the first Elements of Letters'"
+  },
+  {
+   "text": "And indeed, such are the alterations hapning through the Vicissitude of times, that there are no Languages or Letters that are able to make good the Antiquity or Truth of their first Original.",
+   "translation": "Anonymous English translation, The Vanity of Arts and Sciences (London: J.C. for Samuel Speed, 1676; Wing A790), as keyed by EEBO-TCP A26566 (CC0)",
+   "source": "Agrippa, De incertitudine et vanitate scientiarum (1530); 1676 English ch. 2, last sentence"
+  },
+  {
+   "text": "So I acknowledge that this Cabalisticall art, which the Hebrews brag of, and I sometimes diligently and laboriously sought after, is nothing else than a meer rapsody of superstition, and a certain Theurgicall Magick,",
+   "translation": "J.F. (probably John French, 1616-1657: the EEBO-TCP catalogue reads 'The translator is probably John French. Cf. DNB'; the Wellcome catalogue gives 'J.F[reake]', probably John French; Tyson's 1993 edition is recalled, not seen, as naming James Freake), Three Books of Occult Philosophy (London: R.W. for Gregory Moule, 1651), as keyed by EEBO-TCP A26565 (CC0). Spelling and punctuation as keyed; display capitals at chapter openings normalised. CAUTION: polemic; the surrounding passage is anti-Jewish. Quote only with that framing",
+   "source": "Agrippa, 'The Censure, or Retractation', chapter 'Of Cabalie' (from De vanitate, 1530); J.F. 1651 p. 578"
+  },
+  {
+   "text": "Therefore in this book, which we have composed and made as it were a Complement and Key of our other books of Occult Philosophy, and of all Magical Operations, we will give unto thee the documents of holy and undefiled verity, and Inexpugnable and Unresistable Magical Discipline, and the most pleasant and delectable experiments of the sacred Deities.",
+   "translation": "Robert Turner, Henry Cornelius Agrippa his Fourth Book of Occult Philosophy (London: J.C. for John Harrison, 1655), as keyed by EEBO-TCP A26562 (CC0); long s printed as s",
+   "source": "Pseudo-Agrippa, Liber quartus ('Fourth Book of Occult Philosophy'), opening section; Turner 1655 p. 33 (the Fourth Book begins on p. 32). NOT BY AGRIPPA"
+  },
+  {
+   "text": "Now these celestial characters do consist of lines and heads: the heads are six, according to the six magnitudes of the stars, whereunto the planets also are reduced.",
+   "translation": "Robert Turner, Henry Cornelius Agrippa his Fourth Book of Occult Philosophy (London: J.C. for John Harrison, 1655), as keyed by EEBO-TCP A26562 (CC0); long s printed as s",
+   "source": "Pseudo-Agrippa, Fourth Book; Turner 1655 p. 38. NOT BY AGRIPPA"
+  },
+  {
+   "text": "As for the terms of art, which are many, divers of them would not bear any English expression, therefore I have expressed them in Latinisms or Grecisms, according as I have found them.",
+   "translation": "J.F. (probably John French, 1616-1657: the EEBO-TCP catalogue reads 'The translator is probably John French. Cf. DNB'; the Wellcome catalogue gives 'J.F[reake]', probably John French; Tyson's 1993 edition is recalled, not seen, as naming James Freake), Three Books of Occult Philosophy (London: R.W. for Gregory Moule, 1651), as keyed by EEBO-TCP A26565 (CC0). Spelling and punctuation as keyed; display capitals at chapter openings normalised",
+   "source": "J.F., 'Judicious Reader!' (translator's preface), Three Books of Occult Philosophy (London, 1651)"
+  }
+ ],
+ "links": [
+  {
+   "to": "theban",
+   "relation": "III.29 prints the Honorian alphabet 'which Peter Apponus notes, as delivered by Honorius of Thebes'. Agrippa never uses the word 'Theban'."
+  },
+  {
+   "to": "celestial",
+   "relation": "III.30, 1651 p. 439; first printing 1533."
+  },
+  {
+   "to": "malachim",
+   "relation": "III.30, 1651 p. 440. II.51 calls the Malachim 'the writing of Angels' and points forward to it."
+  },
+  {
+   "to": "transitus-fluvii",
+   "relation": "III.30, 1651 p. 441."
+  },
+  {
+   "to": "aiq-bekar",
+   "relation": "III.30: the twenty-seven letters in nine chambers and the Michael example."
+  },
+  {
+   "to": "planetary-seals",
+   "relation": "II.22: squares, names, intelligences, spirits and seals. Agrippa withholds the seal construction."
+  },
+  {
+   "to": "signs-of-the-art",
+   "relation": "I.33 (chiromantic planetary letters), II.48 (geomantic figures), II.51 (characters from geomantic figures), II.52 (signs by likeness; Hermes's Behenian star characters)."
+  },
+  {
+   "to": "trithemius",
+   "relation": "Front matter: Agrippa's dedication and Trithemius's reply of 8 April 1510. III.24 cites Trithemius's treatise to Maximilian on the seven governing spirits."
+  },
+  {
+   "to": "charakteres",
+   "relation": "III.29 defines characters as 'unknowable letters ... which the Ancients called Hyeroglyphicall, or sacred letters'. III.31 adds Porphyry on signs and images."
+  },
+  {
+   "to": "alphabet-of-the-magi",
+   "relation": "Absent from Agrippa: the 1651 text mentions neither Paracelsus nor an 'alphabet of the Magi'. Turner's 1655 volume names Paracelsus only in the Arbatel (aphorism 26, a list of exemplary men; EEBO-TCP A26563 p. 242), with no alphabet."
+  },
+  {
+   "to": "hebrew",
+   "relation": "I.74 (22 letters; 3 mothers, 7 doubles, 12 simples), II.19 (letter-numerals and finals), III.11 and III.25 (notariqon, gematria, Ziruph, the 72 names), III.23 (Hebrew as angelic speech, reported), III.30 (Mosaic script vs. Ezra's letters)."
+  },
+  {
+   "to": "latin",
+   "relation": "I.74 assigns Latin letters to planets, signs and elements; II.20 numbers the Latin alphabet 1-900. Both are Agrippa's constructions, as the Latin hall already warns."
+  },
+  {
+   "to": "greek",
+   "relation": "I.74: Greek vowels to the seven planets, twelve consonants to the signs, five to the elements and spirit. II.18 covers the Greek numerals."
+  },
+  {
+   "to": "arabic",
+   "relation": "III.30: joined-letter characters 'most received' among the Arabians. III.26 and III.27 cite Arabian methods; the Censure cites Picatrix."
+  },
+  {
+   "to": "pgm",
+   "relation": "III.11 Abracadabra (Serenus Sammonicus); III.29 hieroglyphic sacred letters (Porphyry); III.31 Hecate's oracle (Porphyry). These are late-antique sources quoted by Agrippa."
+  },
+  {
+   "to": "phoenician",
+   "relation": "De vanitate ch. 2 (1530; 1676 English) on Phoenician letters brought to Greece by Linus and Cadmus. Agrippa's sceptical counterpart to I.74."
+  },
+  {
+   "to": "syriac",
+   "relation": "De vanitate ch. 2 counts Syriac among the 'seven sorts of Letters most famous in Antiquity'."
+  }
+ ],
+ "cautions": [
+  "Date Book II and Book III material (all the alphabets, the squares and seals, the nine chambers) to 1533, not 1510 (the draft) or 1531 (Book I only).",
+  "Cite chapters by book and position (II.22, III.29, III.30 and so on). These match Perrone Compagni/1533 and the order of the 1651 volume. The 1651 misprints three Book II headings (positions 14, 16, 17 headed XIII, XIV, XVI).",
+  "Attribute every alphabet as Agrippa does: the Honorian to Peter of Abano's report of Honorius (III.29); the Celestial, Malachim and Passing the River to 'the Hebrews'; the nine chambers to 'Cabalists'. Never write 'Agrippa's alphabet' as if he invented it.",
+  "The Fourth Book (1559 per the site, unverified; the NUC's '1565' refers to the French 'IV. livre') is not Agrippa's. Its 'characters of good and evil spirits', made of 'lines and heads', must not be shown as Agrippa's.",
+  "Call the 1651 translator 'J.F.' and give both identifications (John French, probably, per EEBO-TCP/DNB; Freake per Tyson and others). The site's 'Freake translation' (apps/web/src/data/powers/texts.js, line 283) should be softened.",
+  "The 'Censure' and De vanitate passages on Kabbalah contain anti-Jewish polemic. Quote the recantation sentence, not the polemic, and frame anything quoted as Agrippa's 1530 polemic.",
+  "EEBO-TCP keys no figures; its only Greek is the II.18 numeral classes and its only Hebrew the II.19 numerals (plus one character in the II.4 table), and has illegible letters in III.10, III.11 and II.22. All glyphs and Hebrew spellings must come from a scan (1533 Library of Congress copy) or a critical edition, never from this file.",
+  "The 1651 'Life of Agrippa' says he was famous 'about 1530' and then 'gave his minde to writing, and composed three Books Of Occult Philosophy'. That puts the books after 1530, which Agrippa's own prefaces and the 1510 letters contradict. Do not follow the Life.",
+  "CROSS-CHECK (aiq-bekar sibling): three of its four J.F. quotations do not match EEBO-TCP. The TCP reads: 'There is moreover another fashion amongst the Cabalists, formerly had in great esteem, but now it is so common, that it is placed amongst prophane things, ans it is this.'; 'These Chambers are framed by the interfection of four paralell lines, intersecting themselves into right angles'; 'which if itbe of one poynts shews the first letter of that Chamber; if of two, the second; if of three, the third letter'; 'as if thou wouldest frame the Character Michael [Hebrew], that comes forth thus, extended with five figures'. Replace them before publishing.",
+  "CROSS-CHECK (trithemius sibling): the TCP wording of Trithemius's advice is 'Yet this one rule I advise you to observe, that you communicate vulgar secrets to vulgar friends, but higher and secret to higher, and secret friends only. Give Hey to an Ox, Sugar to a Parret only; understand my meaning, least you be trod under the Oxens feet, as oftentimes it fals out.' The sibling's 'Give hay to an Ox, sugar to a Parrot' is a modernised form.",
+  "CROSS-CHECK (planetary-seals sibling): the TCP keying of II.22 reads 'with an Intelligency to what is good, with a spirit to what is bad' (not 'Intelligence ... Spirit'). Its Saturn, Jupiter, Mars and Sun squares agree cell for cell with the sibling's layouts (checked by script). Its Venus, Mercury and Moon squares differ from the sibling's in several cells: 1651 misprints (its errata correct numbers on pp. 247, 249 and 251) and illegible cells. So the 1651 cannot confirm those three; use the 1533 plates.",
+  "CROSS-CHECK (celestial, malachim, theban, signs-of-the-art siblings): their J.F. quotations and chapter headings for I.33, II.48, II.52, III.29 and III.30 match EEBO-TCP. The II.51 heading in TCP reads '... imitation of Celestial, and how ... out of Geomantical figures' (singular 'Celestial'; 'Geomantical' with one l).",
+  "SITE DATA: apps/web/src/data/education/timelines/latin.js says the 1533 edition was printed 'at Cologne by Johannes Soter' and that the 1510 manuscript 'survives'. Both rest on catalogue attributions and an unverified shelfmark; give them as attributions.",
+  "Passing the River is not first printed in 1533 (de Balmes 1523, reported). Do not describe III.30 as the first printing of all three Hebrew-keyed alphabets."
+ ],
+ "sources": [
+  {
+   "citation": "Agrippa, Three Books of Occult Philosophy, trans. J.F. (London: R.W. for Gregory Moule, 1651; Wing A789; ESTC R11002). EEBO-TCP A26565, CC0 keyed text, read in full this session via the TCP GitHub repository",
+   "url": "https://github.com/textcreationpartnership/A26565"
+  },
+  {
+   "citation": "The same, EEBO-TCP A26565 at the University of Michigan (URL from sibling research)",
+   "url": "https://quod.lib.umich.edu/e/eebo/A26565.0001.001?view=toc"
+  },
+  {
+   "citation": "Robert Turner (trans.), Henry Cornelius Agrippa his Fourth Book of Occult Philosophy ... (London: J.C. for John Harrison, 1655; Wing A785). EEBO-TCP A26562, read this session",
+   "url": "https://github.com/textcreationpartnership/A26562"
+  },
+  {
+   "citation": "The same, another 1655 issue ('London printed', no printer named; Wing A785A), EEBO-TCP A26563, whose catalogue note, citing NUC, says the French 'IV. livre de la philosophie occulte' 'was first published without name of printer or place, under date 1565'. Its full text (including the Arbatel) was read in this fact-check",
+   "url": "https://github.com/textcreationpartnership/A26563"
+  },
+  {
+   "citation": "The same, 1665 edition (London: J.C. for the Rooks; Wing A786), EEBO-TCP A26564 (same NUC note)",
+   "url": "https://github.com/textcreationpartnership/A26564"
+  },
+  {
+   "citation": "Agrippa, The Vanity of Arts and Sciences (London: J.C. for Samuel Speed, 1676; Wing A790). EEBO-TCP A26566, read this session (ch. 2, ch. XLI-XLVIII)",
+   "url": "https://github.com/textcreationpartnership/A26566"
+  },
+  {
+   "citation": "Agrippa, De occulta philosophia libri tres, [Cologne: s.n. (J. Soter?)], July 1533, Library of Congress copy (BF1598.A3 O4 1533). URL seen in search by the alphabet-of-the-magi and signs-of-the-art fact-checks; not opened here. The archive.org identifier given by the researcher (DeOccultaPhilosophiaLoc1533) was not seen in any search result by those checks and is withdrawn",
+   "url": "https://www.loc.gov/item/20007812"
+  },
+  {
+   "citation": "Agrippa, De occulta philosophia libri tres, [Cologne: Soter], 1533, McGill Library copy, Internet Archive (record: imprint from Mansell, date from colophon; 'one of variant printings, not authoritatively identified, of first ed.'). Its OCR text, downloaded earlier in this workflow, was read in this fact-check for the 'Ad lectorem', the two 1510 letters, the Book I dedication date, the II.14 and II.17 chapter heads, III.29 and the colophon. URL seen in search by the theban fact-check",
+   "url": "https://archive.org/details/McGillLibrary-osl_henrici-cornelii-agrippae_folioA279o1533-19978"
+  },
+  {
+   "citation": "Eton College Library catalogue record of the 1533 edition ('[J. Soter?]'; Adams suggests Basel). URL seen in search by the theban fact-check; not re-seen here",
+   "url": "https://catalogue.etoncollege.com/B25098"
+  },
+  {
+   "citation": "Wellcome Collection record of the 1651 translation ('J.F[reake]', probably John French). URL seen in search by the theban fact-check; not re-seen here",
+   "url": "https://wellcomecollection.org/works/ftahuupv"
+  },
+  {
+   "citation": "Agrippa, De occulta philosophia libri tres, ed. Vittoria Perrone Compagni (Leiden: Brill, 1992; Studies in the History of Christian Thought 48), Wellcome record. Not consulted. URL seen in search by the theban fact-check; the researcher's Google Books URL (id dCARYHTxmeIC) was not seen in any search result and is withdrawn",
+   "url": "https://preview.wellcomecollection.org/works/ymvvbx6a"
+  },
+  {
+   "citation": "Stanford Encyclopedia of Philosophy, 'Heinrich Cornelius Agrippa von Nettesheim' (visit to Trithemius winter 1509-10; draft received shortly before 8 April 1510; De vanitate 1530). URL and details as reported by the search-backed theban and signs-of-the-art fact-checks; not opened here",
+   "url": "https://plato.stanford.edu/entries/agrippa-nettesheim/"
+  },
+  {
+   "citation": "Joseph H. Peterson (ed.), Agrippa, Three Books of Occult Philosophy, Book III part 3, Esoteric Archives. URL seen in search by the theban fact-check; not opened here",
+   "url": "https://www.esotericarchives.com/agrippa/agripp3c.htm"
+  },
+  {
+   "citation": "Donald Tyson (ed.), Three Books of Occult Philosophy (St Paul: Llewellyn, 1993). Recalled, not consulted",
+   "url": ""
+  },
+  {
+   "citation": "Charles G. Nauert, Agrippa and the Crisis of Renaissance Thought (Urbana: University of Illinois Press, 1965). Recalled, not consulted (the research cited it for Köllin's opposition in 1533, now moved to factcheck.unresolved)",
+   "url": ""
+  },
+  {
+   "citation": "Christopher I. Lehrich, The Language of Demons and Angels: Cornelius Agrippa's Occult Philosophy (Leiden: Brill, 2003). Recalled, not consulted",
+   "url": ""
+  },
+  {
+   "citation": "David A. King, The Ciphers of the Monks: A Forgotten Number-Notation of the Middle Ages (Stuttgart: Steiner, 2001). Recalled, not consulted",
+   "url": ""
+  },
+  {
+   "citation": "Sibling research and fact-check files in this project: celestial, malachim, transitus-fluvii, theban, aiq-bekar, planetary-seals, signs-of-the-art, trithemius, alphabet-of-the-magi (*.verified.json; catalogue facts for 1531 and 1533, the Würzburg shelfmark as reported, Barrett, de Balmes 1523)",
+   "url": ""
+  },
+  {
+   "citation": "Three Magi Press site data: apps/web/src/data/education/themes/latin.js (Fourth Book 1559, Weyer 1563) and apps/web/src/data/education/timelines/latin.js (Soter; the surviving manuscript), apps/web/src/data/powers/texts.js line 283 ('the 1651 Freake translation'); read in this fact-check",
+   "url": ""
+  },
+  {
+   "citation": "Johannes Trithemius, Polygraphiae libri sex (July 1518), Library of Congress catalogue record (for the 1518 first printing of the Honorian alphabet). URL seen in search by the theban fact-check; not opened here",
+   "url": "https://www.loc.gov/item/32017914"
+  }
+ ],
+ "confidence": "SOLID (re-checked in this fact-check against fresh clones of the EEBO-TCP repositories A26565, A26562, A26563, A26564 and A26566, whose HEAD commits matched GitHub): every one of the 46 quotations and 25 'sentence' fields, word for word; every chapter number, heading and 1651 page span; the chapter counts (74/60/65) and the three misnumbered Book II headings; the dates in the letters (8 April 1510; Lyons 24 September 1527; Mechelen January 1531; colophon July 1533); the II.19 Hebrew numerals, the II.20 letter values, the I.74 groupings, the II.22 Saturn-Sun squares. Also checked in the 1533 Latin (OCR of the McGill copy): the colophon 'Mense Iulio', the 'Ad lectorem' with 'abbati Peapolitano' (so J.F.'s 'Neapolitanian' is a slip), the Latin of both 1510 letters and the Book I dedication date, the order of letters and Censure at the end, the recantation sentence, 'Honorio Thebano' in III.29, and the 1533 numbering of II.14 and II.17. MEDIUM (from search-backed sibling fact-checks, not re-seen because this check's web-search budget was exhausted before its first query): the 1531 printings (Antwerp, Grapheus, February 1531; Paris, Wechel); De vanitate at Antwerp, Grapheus, 1530; the 1533 imprint attributions (Soter; Basel per Adams); SEP's winter 1509-10; Barrett's plate; de Balmes 1523. SHAKY or RECALLED: the Würzburg shelfmark M. ch. q. 50; the Fourth Book's first edition (1559, Marburg); Weyer 1563 and the chapter; Agrippa's death place; Margaret of Austria's death date; Köllin's interference; Sanford's 1569 translation; Tyson's 'James Freake'; King on II.19; the identification of 'Eugenius Philalethes'. NOT DONE: no comparison with Perrone Compagni; no figure seen, so no glyph is described here, by design.",
+ "factcheck": {
+  "corrections": [
+   "summary: 'In between (1530) he published a declamation ...' put 1530 between 1531 and 1533; corrected to 'A year before Book I appeared (1530)'. 'because Agrippa classes them as the writings of spirits' softened to a description of the chapters; 'Theban' labelled a later name; the Fourth Book's status now credited to Weyer and scholarship.",
+   "Quotations: all 46 quotations and all 25 letter 'sentence' fields re-checked by an independent script against fresh clones of EEBO-TCP A26565, A26562 and A26566 (git HEADs matched GitHub). All match word for word (the one '[r]' stands for an illegible letter in the keying, as the file says). No wording was changed.",
+   "Translation credits (66 fields: 25 letters and 41 quotations): 'Tyson's 1993 edition names him James Freake' was stated as fact but rests on recall; it is now marked 'recalled, not seen', and the Wellcome catalogue's 'J.F[reake]', probably John French, is added.",
+   "claims (J.F.): 'The Wellcome record gives John French or John Freake' corrected: Wellcome catalogues 'J.F[reake]', probably John French; 'John French or John Freake' is the NUC (theban fact-check). 'Peterson argues for French' withdrawn (found unsupported by the celestial fact-check). Site path corrected to apps/web/src/data/powers/texts.js, line 283.",
+   "Fourth Book date: the NUC note quoted in EEBO-TCP A26563/A26564 concerns the French 'IV. livre de la philosophie occulte', not the Latin Liber quartus. The research's '1559 or 1565 (sources disagree)' rested on misreading it. 1559 is kept as the site's date (unverified) and the note is reported accurately in transmission, cautions and sources. The Weyer argument built on 1565 was removed.",
+   "transmission 1533: 'earliest printings ... of the Celestial, Malachim and Passing the River alphabets' contradicted the file's own claim (de Balmes, 1523). Passing the River removed from the 'earliest printing' list, with de Balmes 1523 (transitus-fluvii fact-check) and Trithemius 1518 (theban fact-check) stated. Köllin sentence (recalled only) moved to unresolved.",
+   "transmission 1531 (Book I): printers upgraded from 'recalled' to 'per catalogue records seen by the signs-of-the-art fact-check' (Antwerp, Grapheus, February 1531; Paris, Wechel). 'Book I includes I.33 and I.74, but none of the magical alphabets' qualified: the I.74 table with the 'Chaldean' alphabet that II.19 places 'in the end of the first book' may already be in 1531, which no one saw. Margaret of Austria's death date (recalled) removed.",
+   "transmission 1530 (De vanitate): Antwerp, Joannes Grapheus upgraded from recalled to confirmed by the signs-of-the-art fact-check (catalogue; SEP).",
+   "transmission 1569 (Sanford's English De vanitate) removed: recalled only, with no source named. Listed in unresolved.",
+   "transmission 1535: 'dies at Grenoble' reduced to the year from the catalogue heading; the place is marked recalled.",
+   "transmission 1655: '2nd ed. 1665' corrected to 'another edition, 1665'; Wing numbers added (A785, A785A, A786); A26562 noted as lacking pp. 108-217 on film.",
+   "transmission 1651: 'Translates the whole 1533 volume' expanded with the 1651 additions (Life, encomium, translator's preface, errata, contents); 're-cut' marked as an inference.",
+   "firstAttestation: dates now also confirmed in the 1533 Latin (McGill copy OCR): Trithemius's 'VIII. die Aprilis', 'Ex Mechlinia. Anno M. D. XXXI. Mense Ianuario', colophon 'Anno M. D. XXXIII. Mense Iulio.'. Place: the 1533 imprint attributions given from McGill, LoC and Eton; the Würzburg shelfmark marked as never seen.",
+   "letters[0] note: J.F.'s 'Neapolitanian' confirmed as a slip, not just 'evidently': the 1533 'Ad lectorem' reads 'Ioanni Tritemio abbati Peapolitano, quondam Spanhemensi'.",
+   "letters[13] (III.11) form: 'Rabbi Hama' corrected to the 1651 'Rabbai Hama in his book of speculation'.",
+   "letters[14] (III.12) note and claims[17]: 'contains no ... seal' refined: the chapter calls the cross 'the seal thereof' (of the name of Jesus); it has no alphabet, figure or table.",
+   "letters[7] (II.20) note: the name 'arithmancy' is what 'they' (the Pythagoreans) call the method, not Agrippa's own label; Alexandrinus's method 'not disallowed by Ptolemy'.",
+   "letters[5] (I.74) note: added that Agrippa's mothers are fire, water and earth (air 'no element'), which differs from the standard Sefer Yetzirah assignment (air, water, fire); added the 1533 Latin 'Par ratio apud Chaldaeos' and 'sequens tabella'.",
+   "letters[20] (III.29) note: the 1533 Latin calls the man 'Honorius Thebanus' ('ab Honorio Theba[no]'); the alphabet itself is still not named 'Theban'.",
+   "letters[21] (III.30) note: the UChicago '1538, page 440' caption marked as unverified relay (its own fact-check could not confirm it).",
+   "claims[12] (Ezra): 'with the rabbinic disagreements' kept (confirmed: 'no small dissention among the Talmudists') and made specific.",
+   "claims[8] ('Agrippa invented ...'): standing changed from 'attributed' to 'disputed', since the evidence shows the modern claim is unsupported.",
+   "quotations[24]: locator 'end matter (1651 pp. 567-583)' made exact: Censure, last section 'Of Juggling or Legerdemain', p. 582.",
+   "quotations[43]: Turner 1655 locator 'pp. 32-33' corrected to p. 33 (the Fourth Book begins p. 32; the quoted sentence is on p. 33).",
+   "links (alphabet-of-the-magi): 'neither ... Turner's 1655 Fourth Book mentions Paracelsus' corrected: the 1655 volume's Arbatel (aphorism 26, A26563 p. 242) names Paracelsus among exemplary men, with no alphabet.",
+   "otherNames: 'Of Occult Philosophy, or of Magick (1651 running title)' corrected: TCP keys no running titles; the phrase is the head-title of Book I (p. 1) and Agrippa's phrase in 'To the Reader'.",
+   "cautions and lettersSource: 'EEBO-TCP keys ... no Greek' corrected: it keys Greek in II.18 (the numeral classes; 120 characters) and Hebrew in II.19 (plus one character in II.4). Added the 1533 confirmation of the II.14/II.17 numbering. Two cautions added (site timeline's Soter and 'manuscript survives'; Passing the River not first printed in 1533).",
+   "sources: archive.org DeOccultaPhilosophiaLoc1533 withdrawn (not seen in search by two sibling checks) and replaced by the LoC record loc.gov/item/20007812 (seen). Google Books dCARYHTxmeIC withdrawn (not seen) and replaced by the Wellcome preview record of Perrone Compagni (seen). McGill copy record added (seen by the theban check; its OCR was read here) and the LoC Polygraphia record added (seen by the theban check). Eton, Wellcome, SEP and Esoteric Archives URLs kept as seen by the search-backed theban check, and so labelled. GitHub URLs proven by the clones. Site paths corrected to apps/web/src/....",
+   "Chapter and page checks that PASSED (no change): all 23 chapter numbers and 1651 page spans in letters[].translit; Book I ends p. 163, Book II pp. 165-340, Book III pp. 341-556, letters pp. 557-566, Censure pp. 567-583; III.30 Celestial p. 439, Malachim p. 440, Passing of the River p. 441; III.31 figure p. 446; I.33 figures p. 68; III.24's Trithemius reference p. 416; 1676 ch. 2 and ch. XLI-XLVIII, recantation p. 128.",
+   "Letter 'form' descriptions: none of the 25 cards describes a glyph's strokes; each defers glyphs to the sibling items or a scan, and each content description was checked against the TCP chapter text (I.1 ascent, I.33 seven panels, I.74 groupings, II.19 numerals and rules, II.20 values, II.22 squares, II.48 table, II.51 two figures per planet plus the Dragon, II.52 derivations and fifteen Behenian stars, III.10 rows, III.11 names and seals, III.25 tables, III.27 tables, III.29 Porphyry and A-Z row, III.30 order, III.31 signs). formConfidence values were left unchanged; none needed lowering."
+  ],
+  "unresolved": [
+   "WEB SEARCH: this check's search budget was exhausted before its first query, so no fact here was confirmed by a new search. Verification used the TCP clones, the McGill 1533 OCR already downloaded in this workflow, the search-backed sibling fact-checks and the site data. A later pass with search should re-see the relayed URLs (loc.gov 20007812 and 32017914, McGill archive.org, Eton B25098, Wellcome ftahuupv and ymvvbx6a, SEP, Esoteric Archives agripp3c, the umich TOC).",
+   "Würzburg, UB, M. ch. q. 50 as the 1510 draft: the shelfmark was never seen in any source in this workflow, and whether the draft contains any Book II-III alphabet is unknown (Perrone Compagni 1992 would settle it).",
+   "Liber quartus (Fourth Book): first edition 1559 (Marburg) rests on the site and recall; not verified.",
+   "Weyer, De praestigiis daemonum (1563): whether the rejection of the Fourth Book is already in the first edition, and in which book and chapter (recalled II.5).",
+   "Sanford's English De vanitate (London, 1569): recalled only; removed from transmission until a source is named.",
+   "Köllin (Cologne inquisitor) and the 1533 printing: recalled from Nauert 1965; removed from transmission.",
+   "Agrippa's death place (Grenoble) and day; Margaret of Austria's death date (1 December 1530): recalled.",
+   "Tyson 1993 naming 'James Freake'; King 2001 treating Agrippa's II.19 as a witness of the monks' ciphers; Eugenius Philalethes = Thomas Vaughan: recalled, not checked.",
+   "A Cologne printing of Book I in 1531 (celestial research) and the 1550 Latin edition's place, printer and woodcuts: unverified.",
+   "Whether the 1531 Book I carried the I.74 table and its 'Chaldean' alphabet: no 1531 copy was seen.",
+   "The 1533 Latin text was checked only through OCR of one variant copy (McGill); other issues may differ in details."
+  ],
+  "method": "Independent re-check against fresh git clones of EEBO-TCP A26565, A26562, A26563, A26564, A26566 (HEAD commits matched github.com/textcreationpartnership by git ls-remote), parsed with a separate script; the OCR text of the McGill 1533 copy downloaded earlier in this workflow; sibling *.verified.json files for catalogue facts and URLs seen in search; site data in apps/web/src/data. No WebSearch result was available (budget exhausted)."
+ }
+}
