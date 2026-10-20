@@ -95,11 +95,23 @@ function ValueLink({ value, keyedTo, hallIndex }) {
     );
 }
 
+// A module whose values are letters of another script (the Shawq's tables,
+// each sign over the Arabic letter printed beneath it) names that script's
+// language in `valueLang`: the value is then set in the halls' face for it,
+// right to left, on the card and in the plaque.
+const RTL_LANGS = new Set(['ar', 'he', 'syr']);
+const valueProps = (mod) => (mod.valueLang
+    ? { lang: mod.valueLang, dir: RTL_LANGS.has(mod.valueLang) ? 'rtl' : undefined, className: 'edu-glyph mg-value-script' }
+    : {});
+
 // `formless` is a page of the wing that is not an alphabet (the author's
 // chapters, the lineage's books): its entries have no form to show or trace,
 // so neither the card nor the plaque wears a sign or speaks of one.
+// Under tables that are headings of their own (the Shawq's, each an h3), the
+// plaque's letter is a heading one step down, so the outline nests.
 function Plaque({ letter, mod, keyedTo, hebrewKey, hallIndex, formless }) {
     const drawn = Boolean(letter.glyph);
+    const Name = (mod.groups || []).some((g) => g.heading) ? 'h4' : 'h3';
     const table = isTable(letter);
     const form = formOf(letter);
     // not a live region: the whole entry (a long note, a table of up to 81
@@ -113,14 +125,14 @@ function Plaque({ letter, mod, keyedTo, hebrewKey, hallIndex, formless }) {
                 </div>
             )}
             <div className="edu-plaque-body">
-                <h3>
+                <Name className="mg-plaque-name">
                     {letter.name}
                     {letter.gloss && letter.gloss !== letter.value ? <span className="mg-plaque-gloss">{letter.gloss}</span> : null}
                     {drawn && letter.formConfidence === 'low' ? <span className="edu-plaque-badge">drawn with reservation</span> : null}
-                </h3>
+                </Name>
                 <dl>
                     {letter.value != null && !(keyedTo === 'none' && repeatsTranslit(letter)) && (
-                        <div><dt>{mod.valueLabel || 'Stands for'}</dt><dd><ValueLink value={letter.value} keyedTo={keyedTo} hallIndex={hallIndex} /></dd></div>
+                        <div><dt>{mod.valueLabel || 'Stands for'}</dt><dd {...valueProps(mod)}><ValueLink value={letter.value} keyedTo={keyedTo} hallIndex={hallIndex} /></dd></div>
                     )}
                     {letter.value == null && letter.valueNote && <div><dt>Stands for</dt><dd>{letter.valueNote}</dd></div>}
                     {letter.translit && <div><dt>{formless ? 'Where and when' : 'Transliteration'}</dt><dd className="mg-translit">{letter.translit}</dd></div>}
@@ -307,18 +319,23 @@ export function LetterGrid({ mod, letters, keyedTo = 'none', direction = 'ltr', 
                 );
             })()}
             {/* a transliteration that only repeats the name (the Voynich
-                glyphs, named in EVA) is not printed or read out twice */}
-            <span className="edu-letter-translit">{l.translit && String(l.translit).toLowerCase() === String(l.name).toLowerCase() ? '' : l.translit || l.planet || l.codepoint || ''}</span>
+                glyphs, named in EVA) is not printed or read out twice; a
+                value in another script (valueLang) stands where it would */}
+            {mod.valueLang && !l.translit && l.value != null
+                ? <span className="edu-letter-translit mg-letter-value"><span {...valueProps(mod)}>{l.value}</span></span>
+                : <span className="edu-letter-translit">{l.translit && String(l.translit).toLowerCase() === String(l.name).toLowerCase() ? '' : l.translit || l.planet || l.codepoint || ''}</span>}
         </button>
     );
     const plaque = letter && (
         <Plaque letter={letter} mod={mod} keyedTo={keyedTo} hebrewKey={hebrewKeyOf(letter)} hallIndex={hallIndexOf(letter)} formless={formless} />
     );
     // one short line, in a live region that stays put while the plaque moves
-    // from group to group, says what was chosen
+    // from group to group, says what was chosen — with its group, where the
+    // groups repeat names (the same letter in each of the Shawq's tables)
+    const groupShort = letter && mod.groups ? mod.groups.find((g) => g.key === letter.group)?.short : null;
     const announce = (
         <span className="mg-live" aria-live="polite" aria-atomic="true">
-            {letter ? `${letter.name}${formless ? '' : ` — ${formOf(letter)}`}` : ''}
+            {letter ? `${letter.name}${groupShort ? `, ${groupShort}` : ''}${formless ? '' : ` — ${formOf(letter)}`}` : ''}
         </span>
     );
 
@@ -351,12 +368,31 @@ export function LetterGrid({ mod, letters, keyedTo = 'none', direction = 'ltr', 
         <div className="mg-letter-groups is-grouped" role="group" aria-label={label}>
             {groups.map((g) => {
                 const holds = g.items.some(([, i]) => i === selected);
+                const GroupLabel = g.heading ? 'h3' : 'p';
                 return (
                     <React.Fragment key={g.key}>
-                        <div className="mg-letter-group">
-                            <p className="mg-group-label" id={`mg-group-${g.key}`} dir="ltr">
-                                <span>{g.label}</span>{g.note && <em>{isolate(g.note)}</em>}
-                            </p>
+                        <div className={`mg-letter-group${g.heading ? ' has-head' : ''}`}>
+                            {/* a printed table is a heading of the page's outline, so a
+                                reader moving by headings reaches each table; a plain group
+                                (the planets, the ættir) stays a label */}
+                            <GroupLabel className="mg-group-label" id={`mg-group-${g.key}`} dir="ltr">
+                                <span>{isolate(g.label)}</span>{g.note && <em>{isolate(g.note)}</em>}
+                            </GroupLabel>
+                            {/* a group that is a printed table (the Shawq's) shows its
+                                heading as printed, then what is known of it — the
+                                translator's English, the book's claim, its page — and a
+                                note; none of it is part of the listbox's name */}
+                            {g.heading && (
+                                <div className="mg-table-head">
+                                    <p className="mg-table-heading edu-glyph" lang={g.headingLang} dir={RTL_LANGS.has(g.headingLang) ? 'rtl' : undefined}>{g.heading}</p>
+                                    {(g.facts || []).length > 0 && (
+                                        <dl className="mg-table-facts">
+                                            {g.facts.map((f) => <div key={f.label}><dt>{f.label}</dt><dd>{isolate(f.text)}</dd></div>)}
+                                        </dl>
+                                    )}
+                                    {g.about && <p className="mg-table-about">{isolate(g.about)}</p>}
+                                </div>
+                            )}
                             <div
                                 className={`edu-letter-grid mg-cols${quartered ? ' is-quartered' : ''}${thirded ? ' is-thirded' : ''}${halved ? ' is-halved' : ''}${formless ? ' is-formless' : ''}`}
                                 style={{ '--mg-cols': cols }}

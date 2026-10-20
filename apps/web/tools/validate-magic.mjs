@@ -278,13 +278,32 @@ for (const entry of all) {
     const names = new Set();
     const values = new Map();
     let anyGlyph = false, anyChar = false;
+    // A group that is a printed table (the Shawq's) gives its heading as
+    // printed, in its language, with the facts beside it (the translator's
+    // English, the book's claim, the page), and a short name (`short`) that
+    // the drill, the search and the live region add to a letter's name where
+    // the same name stands in several groups.
+    for (const g of m.groups || []) {
+        const gw = `${where}/group ${g.key}`;
+        if (!g.key || !g.label) fail(gw, 'a group has a key and a label');
+        if (g.heading != null) {
+            if (!/^[a-z]{2,3}$/.test(g.headingLang || '')) fail(gw, 'a heading as printed names its language (headingLang, e.g. "ar")');
+            if (!g.short || words(g.short) > 6) fail(gw, 'a table group has a short name of a few words (short)');
+            for (const f of g.facts || []) if (!f.label || words(f.text) < 3) fail(gw, 'each fact has a label and a text');
+        }
+    }
+    if (m.valueLang != null && !/^[a-z]{2,3}$/.test(m.valueLang)) fail(`${where}/valueLang`, 'valueLang is the language code of the values’ script, e.g. "ar"');
     letters.forEach((l, i) => {
         const w = `${where} #${l.order ?? i + 1} ${l.name ?? ''}`.trim();
         letterCount++;
         if (l.order !== i + 1) fail(w, `order must run 1..n (expected ${i + 1})`);
         if (!l.name) fail(w, 'missing name');
-        if (names.has(l.name)) fail(w, 'duplicate name');
-        names.add(l.name);
+        // a name is unique in its alphabet — or, where the module's groups are
+        // tables that each carry the whole alphabet, in its group, and the
+        // group then has a short name to tell the two apart
+        const nameKey = m.groups && (m.groups.find((g) => g.key === l.group)?.short) ? `${l.group}|${l.name}` : l.name;
+        if (names.has(nameKey)) fail(w, 'duplicate name');
+        names.add(nameKey);
         if (!['high', 'medium', 'low'].includes(l.formConfidence)) fail(w, 'formConfidence must be high | medium | low');
         // a reason given in place of the generic confidence word says what is
         // uncertain, briefly, and only where something is
@@ -378,6 +397,26 @@ for (const entry of all) {
     }
     if (m.plates != null) checkPlates(where, m.plates, m.platesSource ?? null);
     else if (m.platesSource != null) fail(`${where}/platesSource`, 'platesSource is given only with plates');
+    // tables shown as printed, not drawn: the same rules as any plate, the
+    // set's source line shared, and the values printed with the signs given
+    // as text, row by row
+    if (m.facsimiles != null) {
+        const f = m.facsimiles;
+        const fw = `${where}/facsimiles`;
+        if (!f.title || words(f.note) < 15) fail(fw, 'facsimiles have a title and a note of at least 15 words saying why they are shown, not drawn');
+        if (!Array.isArray(f.tables) || !f.tables.length) fail(fw, 'facsimiles list their tables');
+        const all = (f.tables || []).flatMap((t) => t.plates || []);
+        for (const t of f.tables || []) {
+            if (!t.key || !t.label || !(t.plates || []).length) fail(`${fw}/${t.key}`, 'a facsimile table has a key, a label and its plates');
+        }
+        checkPlates(fw, all, f.source ?? null);
+        all.forEach((p, i) => {
+            for (const v of p.values || []) {
+                if (!v.label || (!(Array.isArray(v.items) && v.items.length) && words(v.text) < 3)) fail(`${fw}/plate ${i + 1}`, 'each row of values has a label and its items (or a text)');
+                if (v.items && v.lang != null && !/^[a-z]{2,3}$/.test(v.lang)) fail(`${fw}/plate ${i + 1}`, 'a row’s lang is a language code');
+            }
+        });
+    }
     // what the page calls its units, where they are not letters (the drill,
     // the drawing's heading and the grid's name use it)
     if (m.unitNoun != null && !(m.unitNoun && /^[a-z]+$/.test(m.unitNoun.one || '') && /^[a-z]+$/.test(m.unitNoun.many || ''))) {

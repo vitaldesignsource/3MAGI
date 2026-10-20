@@ -198,6 +198,9 @@
   letter-spacing: 0.2em;
   text-transform: uppercase;
 }
+/* a printed table's label is an h3 (Letters.jsx): it keeps the label's
+   weight and measure, not the site's heading face */
+h3.mg-group-label { font-weight: 400; line-height: 1.45; }
 .mg-group-label em {
   color: rgba(222, 212, 196, 0.62);
   font-family: var(--edu-script-faces), Georgia, "Times New Roman", serif;
@@ -205,6 +208,67 @@
   letter-spacing: 0.02em;
   text-transform: none;
 }
+/* A group that is a printed table (the Shawq's): its name in the serif, in
+   its own case (the translator's spellings stay as he printed them), its kind
+   as the small tracked tag; then its heading as printed, right to left in the
+   halls' Arabic face, the translator's English, the book's claim and its
+   page, and a note. */
+.mg-letter-group.has-head .mg-group-label {
+  flex-wrap: wrap;
+  row-gap: 0.3rem;
+  color: #ecd9ae;
+  font-family: var(--edu-script-faces), Georgia, "Times New Roman", serif;
+  font-size: 1.12rem;
+  letter-spacing: 0.01em;
+  line-height: 1.45;
+  text-transform: none;
+}
+.mg-letter-group.has-head .mg-group-label em {
+  font-family: "Cinzel", Georgia, serif;
+  font-style: normal;
+  font-size: 0.64rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: rgba(209, 173, 104, 0.8);
+}
+/* the heading as printed stands at the right of the group, where its table
+   begins; the facts and the note keep a reading measure at the left */
+.mg-table-head { display: grid; gap: 0.6rem; margin: 0 0 1.1rem; }
+.mg-table-facts, .mg-table-about { max-width: 56rem; }
+.mg-table-heading {
+  margin: 0;
+  color: rgba(236, 226, 206, 0.92);
+  font-size: 1.22rem;
+  line-height: 1.95;
+  text-align: right;
+}
+.mg-table-facts { margin: 0; display: grid; gap: 0.4rem; }
+.mg-table-facts > div { display: grid; grid-template-columns: 11.5rem minmax(0, 1fr); gap: 0.9rem; align-items: baseline; }
+.mg-table-facts dt {
+  color: rgba(209, 173, 104, 0.75);
+  font-family: "Cinzel", Georgia, serif;
+  font-size: 0.64rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+.mg-table-facts dd,
+.mg-table-about {
+  margin: 0;
+  color: rgba(232, 224, 208, 0.8);
+  font-family: var(--edu-script-faces), Georgia, "Times New Roman", serif;
+  font-size: 0.92rem;
+  line-height: 1.65;
+}
+.mg-table-about { color: rgba(222, 212, 196, 0.68); font-style: italic; }
+@media (max-width: 600px) {
+  .mg-table-facts > div { grid-template-columns: minmax(0, 1fr); gap: 0.1rem; }
+  .mg-table-heading { font-size: 1.08rem; }
+}
+/* a value in another script (the Arabic letter printed under each of the
+   Shawq's signs) stands under the name in that script's face, upright */
+.mg-letter-card .mg-letter-value { font-style: normal; }
+.edu-page .mg-value-script { font-style: normal; font-size: 1.1rem; line-height: 1.5; color: rgba(236, 217, 174, 0.92); }
+.edu-letter-card .mg-value-script { font-size: 1.05rem; line-height: 1.3; }
 @media (min-width: 900px) {
   .edu-letter-grid.mg-cols { grid-template-columns: repeat(var(--mg-cols), minmax(0, 1fr)); }
 }
@@ -231,12 +295,17 @@
   .is-quartered .mg-letter-card .edu-letter-name { font-size: 0.6rem; letter-spacing: 0.03em; overflow-wrap: normal; }
 }
 /* A letter or a section reached by its address (a search result, the section
-   menu) stops below the sticky site header, not under it: the header is about
-   97px tall on a phone, so the margin leaves a clear line above the card's
-   top border. */
+   menu) stops below the sticky site header, not under it. The header's real
+   height is written to --tl-header-h by the page (it grows with the screen
+   and wraps to two lines on a narrow phone); the floor is its height at each
+   width once its fonts are in, so an address followed before they arrive, or
+   before the script runs, still clears it. */
+.mg-page { --mg-header-floor: 5rem; }
+@media (max-width: 640px) { .mg-page { --mg-header-floor: 6.1rem; } }
+@media (max-width: 374px) { .mg-page { --mg-header-floor: 7.6rem; } }
 .mg-letter-card,
 .mg-page [id^="mg-"],
-.mg-page .edu-section-head h2 { scroll-margin-top: 7rem; }
+.mg-page .edu-section-head h2 { scroll-margin-top: calc(max(var(--tl-header-h, 0px), var(--mg-header-floor)) + 1rem); }
 .mg-letter-card .edu-letter-glyph { min-height: 1.25em; display: flex; align-items: center; justify-content: center; }
 /* A drawn sign keeps a margin inside its em box (the kit's body is 80 units
    of 100), so on a card it is set a little larger than the em, to stand as
@@ -262,6 +331,12 @@
 .mg-key-sign .mg-glyph:not(.is-figure),
 .mg-fold-to .mg-glyph:not(.is-figure),
 .mg-breakdown .mg-glyph:not(.is-figure) { width: calc(1.4em * var(--mg-scale, 1)); height: calc(1.4em * var(--mg-scale, 1)); }
+/* The drill sets a sign's name in Cinzel, as the letter cards do, and like
+   them in capitals: Cinzel has no ṭ ḥ ṣ ḍ ẓ, and in lower case those would
+   fall back to a serif's small letter among Cinzel's capitals (“AFLĀṭŪN’S
+   PEN”); in capitals they fall back to a capital (“AFLĀṬŪN’S PEN”). */
+.mg-page .edu-drill-option:not(.edu-drill-option-glyph),
+.mg-page .edu-drill-prompt-name { text-transform: uppercase; }
 /* The drill's find mode is where ring-letters must be told apart: its four
    choices are set large enough to fill their buttons as a set script's do. */
 .edu-drill-option-glyph .mg-glyph:not(.is-figure) { width: calc(1.9em * var(--mg-scale, 1)); height: calc(1.9em * var(--mg-scale, 1)); vertical-align: -0.45em; }
@@ -300,6 +375,23 @@
    is a single column of text. */
 .mg-letter-card.is-formless { justify-content: center; padding-block: 1rem 0.9rem; min-height: 5.2rem; }
 .mg-plaque.is-formless { grid-template-columns: 1fr; }
+/* under tables that are h3, the plaque's name is an h4, styled as the halls'
+   plaque name (.edu-plaque-body h3) */
+.edu-plaque-body h4.mg-plaque-name {
+  margin: 0 0 0.6em;
+  color: #f4f0e7;
+  font-family: "Cinzel", Georgia, "Times New Roman", serif;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.12;
+  display: flex;
+  align-items: baseline;
+  gap: 0.7rem;
+  flex-wrap: wrap;
+}
+@media (max-width: 640px) {
+  .edu-plaque-body h4.mg-plaque-name { justify-content: center; }
+}
 
 /* the plaque */
 .mg-plaque .edu-plaque-glyph { display: flex; align-items: center; justify-content: center; min-height: 1.2em; }
@@ -622,6 +714,72 @@
   }
 }
 .mg-plates-rights { max-width: 50rem; margin: 1.4rem auto 0; }
+/* The values printed with signs shown as printed, not drawn: row by row,
+   each row's values spaced as the page spaces them, in the page's script
+   and direction. */
+.mg-plate-values { margin: 0; display: grid; gap: 0.35rem; }
+.mg-plate-values > div { display: grid; grid-template-columns: minmax(7rem, 11rem) minmax(0, 1fr); gap: 0.8rem; align-items: baseline; }
+.mg-plate-values dt {
+  color: rgba(209, 173, 104, 0.75);
+  font-family: "Cinzel", Georgia, serif;
+  font-size: 0.62rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+.mg-plate-values dd {
+  margin: 0;
+  color: rgba(236, 226, 206, 0.88);
+  font-family: var(--edu-script-faces), Georgia, "Times New Roman", serif;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+.mg-plate-values dd.is-list { display: flex; flex-wrap: wrap; gap: 0.15rem 0.6rem; }
+.mg-plate-values dd.is-script { font-size: 1.12rem; line-height: 1.7; gap: 0.1rem 0.75rem; }
+@media (max-width: 600px) {
+  .mg-plate-values > div { grid-template-columns: minmax(0, 1fr); gap: 0.05rem; }
+}
+/* a caption set beside its plate (the odd last plate of a set, a tall page on
+   a wide screen) is a narrow column: there the row's name stands above its
+   values, as on a phone, and the values keep the column's width */
+@media (min-width: 900px) {
+  .mg-plates.is-set .mg-plate:last-child:nth-child(odd) .mg-plate-values > div { grid-template-columns: minmax(0, 1fr); gap: 0.05rem; }
+}
+@media (min-width: 1024px) {
+  .mg-plates:not(.is-set) .mg-plate.is-portrait .mg-plate-values > div { grid-template-columns: minmax(0, 1fr); gap: 0.05rem; }
+}
+/* the printed page parts its values with points; a value of two words
+   (Physical Good, نون مد) is told from the next by a point after it */
+.mg-plate-values dd.is-list > span:not(:last-child)::after {
+  content: "·";
+  margin-inline-start: 0.6rem;
+  color: rgba(209, 173, 104, 0.55);
+}
+/* the tables shown as printed: each under its own heading, its pages a set */
+.mg-facsimile + .mg-facsimile { margin-top: 2.6rem; }
+.mg-facsimile-head { max-width: 54rem; margin: 0 auto 1.2rem; text-align: left; }
+.mg-facsimile-head h3 {
+  margin: 0;
+  color: #ecd9ae;
+  font-family: var(--edu-script-faces), Georgia, "Times New Roman", serif;
+  font-size: 1.15rem;
+  font-weight: 400;
+  line-height: 1.45;
+}
+.mg-facsimile-note {
+  margin: 0.25rem 0 0;
+  color: rgba(209, 173, 104, 0.8);
+  font-family: "Cinzel", Georgia, serif;
+  font-size: 0.64rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+.mg-facsimile-about {
+  margin: 0.6rem 0 0;
+  color: rgba(232, 224, 208, 0.8);
+  font-family: var(--edu-script-faces), Georgia, "Times New Roman", serif;
+  font-size: 0.95rem;
+  line-height: 1.75;
+}
 .mg-plate-links a {
   color: rgba(222, 212, 196, 0.8);
   text-decoration: none;

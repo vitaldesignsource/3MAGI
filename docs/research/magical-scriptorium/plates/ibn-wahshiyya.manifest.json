@@ -1,0 +1,423 @@
+{
+ "slug": "ibn-wahshiyya",
+ "copy": "Joseph Hammer (trans.), Ancient Alphabets and Hieroglyphic Characters Explained (London: W. Bulmer and Co., 1806); the Wellcome Library copy as scanned for the Internet Archive.",
+ "repository": "Wellcome Library, London (Internet Archive item contributed and sponsored by the Wellcome Library; collections wellcomelibrary, ukmhl, medicalheritagelibrary)",
+ "identifier": "b22039910",
+ "itemUrl": "https://archive.org/details/b22039910",
+ "metadataUrl": "https://archive.org/metadata/b22039910",
+ "rights": {
+  "statement": "This work is available under the Creative Commons, Public Domain Mark",
+  "url": "http://creativecommons.org/publicdomain/mark/1.0/",
+  "rawField": "<a href=\"http://creativecommons.org/publicdomain/mark/1.0/\" rel=\"ugc nofollow\">This work is available under the Creative Commons, Public Domain Mark</a>",
+  "source": "metadata.rights of https://archive.org/metadata/b22039910 (fetched 2026-10-20)",
+  "urlCheck": "The http:// URL as given could not be fetched from this environment (no DNS for plain http); https://creativecommons.org/publicdomain/mark/1.0/ was fetched and answered 200.",
+  "otherMetadataNote": "The item's metadata also carries notes = \"Copyright in title page<br />\" (verbatim; its meaning is not explained in the record). The title page of this copy (leaf 5) and its verso (leaf 6) bear no copyright statement, and the printing of 1806 is in the public domain (Hammer died in 1856), as the record’s rights field states; the note is not read as a restriction on the plates."
+ },
+ "catalogueRecord": {
+  "title": "Ancient alphabets and hieroglyphic characters explained; with an account of the Egyptian priests, their classes, initiation, and sacrifices",
+  "creator": [
+   "Ibn Waḥshīyah, Aḥmad ibn ʻAlī, active 9th century. n 88250347",
+   "Hammer-Purgstall, Joseph, Freiherr von, 1774-1856. n 80103858"
+  ],
+  "publisher": "London : Printed by W. Bulmer and Co. and sold by G. and W. Nicol",
+  "date": "1806",
+  "description": "xxi pages, 1 leaf, 54, 136 pages : (4to)",
+  "imagecount": "228",
+  "ppi": "300",
+  "scandate": "20160721152524",
+  "identifier-ark": "ark:/13960/t3kx0665s",
+  "external-identifier": "urn:oclc:record:1045105400"
+ },
+ "imageSource": "b22039910_jp2.zip (the item's \"Single Page Processed JP2 ZIP\"), extracted locally; leaves as numbered in b22039910_scandata.xml. All crops and page images are cut from these JP2s at their full pixel size (300 ppi per the record) with no scaling; crops are PNG, whole pages JPEG quality 92. n = leaf - 1 was checked by matching the JP2s against https://archive.org/download/b22039910/page/n<N>.jpg for all ten leaves used (identical size, correlation 1.000).",
+ "urlsFetched": [
+  "https://archive.org/metadata/b22039910",
+  "https://archive.org/metadata/ancientalphabets01ibnw",
+  "https://archive.org/metadata/ancientalphabets00ibnw",
+  "https://archive.org/metadata/ancientalphabet00hammgoog",
+  "https://archive.org/metadata/ancientalphabet00conggoog",
+  "https://archive.org/metadata/10219150bsb",
+  "https://archive.org/download/b22039910/b22039910_jp2.zip",
+  "https://archive.org/download/b22039910/b22039910_djvu.txt",
+  "https://archive.org/download/b22039910/b22039910_page_numbers.json",
+  "https://archive.org/download/b22039910/b22039910_scandata.xml",
+  "https://archive.org/details/b22039910",
+  "https://archive.org/download/b22039910/page/n213.jpg",
+  "https://archive.org/download/b22039910/page/n204.jpg",
+  "https://archive.org/download/b22039910/page/n188.jpg",
+  "https://archive.org/download/b22039910/page/n186.jpg",
+  "https://archive.org/download/b22039910/page/n174.jpg",
+  "https://archive.org/download/b22039910/page/n102.jpg",
+  "https://archive.org/download/b22039910/page/n103.jpg",
+  "https://archive.org/download/b22039910/page/n101.jpg",
+  "https://archive.org/download/b22039910/page/n48.jpg",
+  "https://archive.org/download/b22039910/page/n137.jpg",
+  "https://archive.org/details/b22039910/page/n213",
+  "https://archive.org/details/b22039910/page/n204",
+  "https://archive.org/details/b22039910/page/n188",
+  "https://archive.org/details/b22039910/page/n186",
+  "https://archive.org/details/b22039910/page/n174",
+  "https://archive.org/details/b22039910/page/n102",
+  "https://archive.org/details/b22039910/page/n103",
+  "https://archive.org/details/b22039910/page/n101",
+  "https://archive.org/details/b22039910/page/n48",
+  "https://archive.org/details/b22039910/page/n137",
+  "https://creativecommons.org/publicdomain/mark/1.0/"
+ ],
+ "downloadRedirect": "archive.org/download/b22039910/<file> redirected to https://dn790003.ca.archive.org/0/items/b22039910/<file>; page/n<N>.jpg to the BookReaderImages.php service on ia600508/ia800508.us.archive.org.",
+ "otherCopies": {
+  "used": "For the five traced tables (Arabic pp. 9, 18, 34, 36, 48): the Getty Research Institute copy (ancientalphabets01ibnw) and the University of North Carolina at Chapel Hill copy (ancientalphabets00ibnw) were compared sign by sign by the independent checkers, each page registered onto the Wellcome page; the comparison is recorded in each table's traced/ibn-wahshiyya/<id>.glyphs.json. No other copy was used for the plates, which are all from the Wellcome copy.",
+  "rightsFields": {
+   "ancientalphabets01ibnw": "Getty Research Institute; no rights field",
+   "ancientalphabets00ibnw": "University Library, University of North Carolina at Chapel Hill; no rights field",
+   "ancientalphabet00hammgoog": "Oxford University (Google scan); no rights field; possible-copyright-status NOT_IN_COPYRIGHT",
+   "ancientalphabet00conggoog": "Oxford University (Google scan); no rights field; possible-copyright-status NOT_IN_COPYRIGHT",
+   "10219150bsb": "no contributor or rights field"
+  }
+ },
+ "leafToPage": "Arabic page p = leaf 223 - p (n = 222 - p); English text page p (3-54) = leaf p + 30; preface page in roman r = leaf r + 6.",
+ "crops": [
+  {
+   "job": "syriac-alphabet",
+   "use": "trace",
+   "printedPage": "Arabic p. 9 (printed \"9\" and \"٩\")",
+   "leaf": 214,
+   "n": 213,
+   "jp2Member": "b22039910_jp2/b22039910_0214.jp2",
+   "pageImageUrl": "https://archive.org/download/b22039910/page/n213.jpg",
+   "viewerUrl": "https://archive.org/details/b22039910/page/n213",
+   "box": [
+    470,
+    1290,
+    1890,
+    2305
+   ],
+   "page": {
+    "file": "plates/ibn-wahshiyya/syriac-alphabet/page.jpg",
+    "size": [
+     2093,
+     2896
+    ],
+    "sha256": "49230e735734eaf1d6aed4b281b6faa3ea7786c0ac5b1e6720e4c51970be2e5b"
+   },
+   "crop": {
+    "file": "plates/ibn-wahshiyya/syriac-alphabet/table.png",
+    "size": [
+     1420,
+     1015
+    ],
+    "sha256": "067b2f7a6928f565d375fe1cfdbe24ef89db83344aa6519c60bc5071ed69b5ee"
+   },
+   "headingArabic": "الباب الثاني في الاقلام السبعة المشهورة . الفصل الاول من الباب الثاني في القلم السرياني",
+   "headingHammer": "CHAPTER II. The seven most celebrated old alphabets. SECTION I. The Syrian alphabet, (v. orig. p. 9.) [English p. 4]"
+  },
+  {
+   "job": "plato",
+   "use": "trace",
+   "printedPage": "Arabic p. 18",
+   "leaf": 205,
+   "n": 204,
+   "jp2Member": "b22039910_jp2/b22039910_0205.jp2",
+   "pageImageUrl": "https://archive.org/download/b22039910/page/n204.jpg",
+   "viewerUrl": "https://archive.org/details/b22039910/page/n204",
+   "box": [
+    290,
+    940,
+    1650,
+    1990
+   ],
+   "page": {
+    "file": "plates/ibn-wahshiyya/plato/page.jpg",
+    "size": [
+     2093,
+     2896
+    ],
+    "sha256": "0e75c4c7b8057f560cfd8b0c1883907923e9ec426ef1a659bb8e9a13d19c9f5f"
+   },
+   "crop": {
+    "file": "plates/ibn-wahshiyya/plato/table.png",
+    "size": [
+     1360,
+     1050
+    ],
+    "sha256": "a323e500cd8ed257eb419a60b0188f9002ae0b1e7742924d190f2bc04648612e"
+   },
+   "headingArabic": "الفصل الثالث من الباب الثالث في صفة قلم الحكيم افلاطون",
+   "headingHammer": "SECTION III. The alphabet of Plato, (v. orig. p. 18.) [Chapter III, English p. 5]"
+  },
+  {
+   "job": "hermes-abu-tat",
+   "use": "trace",
+   "printedPage": "Arabic p. 34",
+   "leaf": 189,
+   "n": 188,
+   "jp2Member": "b22039910_jp2/b22039910_0189.jp2",
+   "pageImageUrl": "https://archive.org/download/b22039910/page/n188.jpg",
+   "viewerUrl": "https://archive.org/details/b22039910/page/n188",
+   "box": [
+    240,
+    1395,
+    1640,
+    2320
+   ],
+   "page": {
+    "file": "plates/ibn-wahshiyya/hermes-abu-tat/page.jpg",
+    "size": [
+     2093,
+     2896
+    ],
+    "sha256": "9ab5fcd9f0d534ce1089953dcf7db9a8c3e898e1daee3dfe6371c29bdc9cd4e2"
+   },
+   "crop": {
+    "file": "plates/ibn-wahshiyya/hermes-abu-tat/table.png",
+    "size": [
+     1400,
+     925
+    ],
+    "sha256": "aa3301b3dd31591beb3873131b9e52f837c3094814faad5173255db427c132b0"
+   },
+   "headingArabic": "الفصل الثاني عشر من الباب الرابع في صفة قلم الحكيم هرمس ابوطاط الذي كتب الصنعة الشريفة . وصنع باقليم الصعيد كنوزا وبرابي ونواويس كاهنية له ولولده . ورصدها ورمزها بهذا القلم . الذي استخرجه من السرب المظلم",
+   "headingHammer": "SECTION XII. The alphabet of Hermes Abootat the philosopher. … guarded by the charm of this alphabet, extracted from the regions of darkness, (v. orig. p. 34.) [Chapter IV, English pp. 6-7]"
+  },
+  {
+   "job": "siyuryanus",
+   "use": "trace",
+   "printedPage": "Arabic p. 36",
+   "leaf": 187,
+   "n": 186,
+   "jp2Member": "b22039910_jp2/b22039910_0187.jp2",
+   "pageImageUrl": "https://archive.org/download/b22039910/page/n186.jpg",
+   "viewerUrl": "https://archive.org/details/b22039910/page/n186",
+   "box": [
+    270,
+    1310,
+    1665,
+    2505
+   ],
+   "page": {
+    "file": "plates/ibn-wahshiyya/siyuryanus/page.jpg",
+    "size": [
+     2093,
+     2896
+    ],
+    "sha256": "b7a4517f4111c5eadfc224499ec3f32fa8dabf8d7a2023b076bc8d5b257f266e"
+   },
+   "crop": {
+    "file": "plates/ibn-wahshiyya/siyuryanus/table.png",
+    "size": [
+     1395,
+     1195
+    ],
+    "sha256": "fd539b1d770faf5671d44af749be5daca3cf2149eff98403af6bacc0cbd7a37c"
+   },
+   "headingArabic": "الفصل الرابع عشر من الباب الرابع في صفة قلم الحكيم سيوريانوس الذي الف كتب الفلك . واسرار النجوم . والطلسمات وخواصها . والرصد . وعمل خواتيم الكواكب . وتسخير روحانياتها وجلبها",
+   "headingHammer": "SECTION XIV. The alphabet of Syourianos the philosopher, (v. orig. p. 36.) He wrote in this alphabet on astronomy, … on the effects of planet-rings; and on the invocation and conjuration of spirits. [Chapter IV, English p. 7]"
+  },
+  {
+   "job": "jupiter",
+   "use": "trace",
+   "printedPage": "Arabic p. 48 (printed \"48\" and \"٤٨\")",
+   "leaf": 175,
+   "n": 174,
+   "jp2Member": "b22039910_jp2/b22039910_0175.jp2",
+   "pageImageUrl": "https://archive.org/download/b22039910/page/n174.jpg",
+   "viewerUrl": "https://archive.org/details/b22039910/page/n174",
+   "box": [
+    240,
+    1070,
+    1625,
+    2350
+   ],
+   "page": {
+    "file": "plates/ibn-wahshiyya/jupiter/page.jpg",
+    "size": [
+     2093,
+     2896
+    ],
+    "sha256": "dceaba62451ff97e74380fffae060b1c6c77b547bcf579bdcb63622b419c86cc"
+   },
+   "crop": {
+    "file": "plates/ibn-wahshiyya/jupiter/table.png",
+    "size": [
+     1385,
+     1280
+    ],
+    "sha256": "55d720a601d95d15c3b46307d3bf532d7319fc85db06d798ac1adf3b76dc1319"
+   },
+   "headingArabic": "الفصل الثاني من الباب الخامس في صفة قلم كوكب المشتري وهيته كما تري فافهم",
+   "headingHammer": "CHAPTER V. The Alphabets of the Seven Planets. … SECTION II. The alphabet of Jupiter, (v. orig. p. 48.) [English p. 10]"
+  },
+  {
+   "job": "hermesian-letters",
+   "use": "facsimile",
+   "printedPage": "Arabic p. 120 (the middle page of a table on pp. 119-121)",
+   "leaf": 103,
+   "n": 102,
+   "jp2Member": "b22039910_jp2/b22039910_0103.jp2",
+   "pageImageUrl": "https://archive.org/download/b22039910/page/n102.jpg",
+   "viewerUrl": "https://archive.org/details/b22039910/page/n102",
+   "box": [
+    270,
+    470,
+    1640,
+    2045
+   ],
+   "page": {
+    "file": "plates/ibn-wahshiyya/hermesian-letters/page.jpg",
+    "size": [
+     2093,
+     2896
+    ],
+    "sha256": "77932b1d3b82e2a7fa2491fc6007b5155dc67eb17c76d281720de32f50478a52"
+   },
+   "crop": {
+    "file": "plates/ibn-wahshiyya/hermesian-letters/crop.png",
+    "size": [
+     1370,
+     1575
+    ],
+    "sha256": "13ffc2dbab702bee309716823837fe4349ef46edb523439dfabe7b279de4b88d"
+   },
+   "headingArabic": "(heading on p. 119) صفة قلم شيشيم الذي تعلمه بالوحي من الله تعالي . … وهذه صفته علي راي الهرامسة",
+   "headingHammer": "On the Shímshím Alphabet. … The characters of the Hermesians, with the particular names and powers of their letters. [English p. 43; Hammer's table on English pp. 43-46]",
+   "note": "26 signs on this page (rows of 7, 7, 6, 6), each with its printed value; the table begins with 7 signs on p. 119 and ends with 4 on p. 121 (supplementary crops below)."
+  },
+  {
+   "job": "hermesian-letters",
+   "use": "facsimile-supplement",
+   "printedPage": "Arabic p. 119 (last row: the first 7 signs, ا ي ق غ ب ك ر)",
+   "leaf": 104,
+   "n": 103,
+   "jp2Member": "b22039910_jp2/b22039910_0104.jp2",
+   "pageImageUrl": "https://archive.org/download/b22039910/page/n103.jpg",
+   "viewerUrl": "https://archive.org/details/b22039910/page/n103",
+   "box": [
+    490,
+    2035,
+    1890,
+    2335
+   ],
+   "page": {
+    "file": "plates/ibn-wahshiyya/hermesian-letters/page-p119.jpg",
+    "size": [
+     2093,
+     2896
+    ],
+    "sha256": "9f17accbf05f6a2f5015a542fefe14969f3610fa9c084c783d58e92a55a13654"
+   },
+   "crop": {
+    "file": "plates/ibn-wahshiyya/hermesian-letters/crop-p119-first-row.png",
+    "size": [
+     1400,
+     300
+    ],
+    "sha256": "51ca8381cc502031a1259eaa264a56019af6c6e888049da610020e03ce3a3044"
+   },
+   "headingArabic": "صفة قلم شيشيم الذي تعلمه بالوحي من الله تعالي . وهوايضا مختلف فيه علي اربع روايات . فالاول منها علي راي الهرامسة . … وهذه صفته علي راي الهرامسة",
+   "headingHammer": "(as above)"
+  },
+  {
+   "job": "hermesian-letters",
+   "use": "facsimile-supplement",
+   "printedPage": "Arabic p. 121 (top: the last 4 signs with their names)",
+   "leaf": 102,
+   "n": 101,
+   "jp2Member": "b22039910_jp2/b22039910_0102.jp2",
+   "pageImageUrl": "https://archive.org/download/b22039910/page/n101.jpg",
+   "viewerUrl": "https://archive.org/details/b22039910/page/n101",
+   "box": [
+    460,
+    515,
+    1890,
+    960
+   ],
+   "page": {
+    "file": "plates/ibn-wahshiyya/hermesian-letters/page-p121.jpg",
+    "size": [
+     2093,
+     2896
+    ],
+    "sha256": "f7215533958ebadd79791be17a5652005f598cddec2d9affba0a45b0d6a117b2"
+   },
+   "crop": {
+    "file": "plates/ibn-wahshiyya/hermesian-letters/crop-p121-last-row.png",
+    "size": [
+     1430,
+     445
+    ],
+    "sha256": "b72a6a283ff1292ad1c8aa0d875334462bc6a7136f421b7edd00106fee2b93f5"
+   },
+   "headingArabic": "(continuation; p. 121 goes on: واما كيفية قراته بقاعدة اصطلاحهم … فهذه جملة حروفه وعدتها ثمانية وثلاثين حرفا)",
+   "headingHammer": "(as above)"
+  },
+  {
+   "job": "first-series-hieroglyphs",
+   "use": "facsimile",
+   "printedPage": "English p. 19 (printed \"[ 19 ]\")",
+   "leaf": 49,
+   "n": 48,
+   "jp2Member": "b22039910_jp2/b22039910_0049.jp2",
+   "pageImageUrl": "https://archive.org/download/b22039910/page/n48.jpg",
+   "viewerUrl": "https://archive.org/details/b22039910/page/n48",
+   "box": [
+    250,
+    555,
+    1800,
+    2550
+   ],
+   "page": {
+    "file": "plates/ibn-wahshiyya/first-series-hieroglyphs/page.jpg",
+    "size": [
+     2241,
+     3020
+    ],
+    "sha256": "bd7517713d5fd260b1301ac361280ade52ce1b7f394f287e493dba80e7a38c65"
+   },
+   "crop": {
+    "file": "plates/ibn-wahshiyya/first-series-hieroglyphs/crop.png",
+    "size": [
+     1550,
+     1995
+    ],
+    "sha256": "73b90a452f7829ddb425ceba89816f551c25a462e1eb0676f71a9aa954104e71"
+   },
+   "headingArabic": "(Arabic counterpart p. 85) المرتبة الاولي في ذكر الاسما الحيوانية واشكالها مفردا مفردا من ساير الانواع وافعالها وحركاتها",
+   "headingHammer": "THE FIRST SERIES. Hieroglyphics to express Words relative to Animal Actions and Affections.",
+   "note": "25 signs, each with Hammer's English meaning printed beneath (Life, Death, Richness, Poverty, Man, Woman; Physical Good, Physical Evil, Moral Good, Moral Evil; Sin, Joy, Sorrow, Weeping, Intellects; Spirit, Body, Motion, Rest, Sleep; Being Awake, Stupidity, Sagacity, Action, Stroke). The crop includes the series heading."
+  },
+  {
+   "job": "first-series-hieroglyphs",
+   "use": "facsimile-supplement",
+   "printedPage": "Arabic p. 85",
+   "leaf": 138,
+   "n": 137,
+   "jp2Member": "b22039910_jp2/b22039910_0138.jp2",
+   "pageImageUrl": "https://archive.org/download/b22039910/page/n137.jpg",
+   "viewerUrl": "https://archive.org/details/b22039910/page/n137",
+   "box": [
+    520,
+    520,
+    1900,
+    2470
+   ],
+   "page": {
+    "file": "plates/ibn-wahshiyya/first-series-hieroglyphs/page-arabic-p85.jpg",
+    "size": [
+     2093,
+     2896
+    ],
+    "sha256": "7f51459960ebc70e063d0b3efedb9c948a1496489e96ee650a91120cf5923e9f"
+   },
+   "crop": {
+    "file": "plates/ibn-wahshiyya/first-series-hieroglyphs/crop-arabic-p85.png",
+    "size": [
+     1380,
+     1950
+    ],
+    "sha256": "dc4dc6206b14d26f74270c50ad9bf141bb86f03f4a4342fe71011e72fe024dce"
+   },
+   "headingArabic": "المرتبة الاولي في ذكر الاسما الحيوانية واشكالها مفردا مفردا من ساير الانواع وافعالها وحركاتها",
+   "headingHammer": "(Hammer's English of the same signs: English p. 19, above)",
+   "note": "21 signs with their Arabic meanings; the same sequence as English p. 19, re-flowed into different rows."
+  }
+ ]
+}

@@ -5,15 +5,20 @@ and the proposed fix. Points already fixed are in the commit history, not here.
 
 ## Open work
 
-1. **Ibn Waḥshiyya's tables are not yet traced.**
-   Where: `apps/web/src/data/education/magic/ibn-wahshiyya.js` (status
-   `forms-pending`, every unit `glyph: null`); the registry door is `null`.
-   What: the tables are being traced from the Wellcome Library copy of
-   Hammer's *Ancient Alphabets and Hieroglyphic Characters Explained* (London,
-   1806), Internet Archive identifier b22039910, under the Public Domain Mark.
-   Fix: keep the page `forms-pending` until the traced glyphs, their plate
-   manifest and an independent check are in; then give each unit its glyph,
-   name Hammer's page for each table, and set the status to `ready`.
+1. **Ibn Waḥshiyya: the rest of Hammer's tables.**
+   Where: `apps/web/src/data/education/magic/ibn-wahshiyya.js`; the research
+   in `plates/ibn-wahshiyya.catalogue.json` (all 86 tables, by chapter and
+   page) and `traced/ibn-wahshiyya/`.
+   What: five tables are drawn (the Syriac, Arabic p. 9; Plato's, p. 18;
+   Hermes Abū Ṭāṭ's, p. 34; Siyūriyānūs's, p. 36; Jupiter's, p. 48), traced
+   from the Wellcome Library copy of Hammer 1806 (Internet Archive b22039910,
+   Public Domain Mark), checked against the Getty and UNC copies, and two
+   hieroglyph tables are shown in facsimile. Still open, and said so on the
+   page: the book's 38 letters against the 37 signs counted in the Harāmisa
+   table, and Hammer's "Zayimap"; on p. 121 only the first and last names are
+   transcribed, and the second line under p. 120's last row is not.
+   Fix: trace further tables from the catalogue (the other six planets first:
+   Arabic pp. 47–53), each with an independent check, as the five were.
 
 ## Needs the owner's decision
 

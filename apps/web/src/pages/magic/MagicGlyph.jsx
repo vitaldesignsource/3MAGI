@@ -48,7 +48,9 @@ const HOUSE_PEN = 5.5;
 const HOUSE_RING = 6;
 const ringPen = (r) => (r < HOUSE_RING ? 2.6 : 3.6);
 
-const isFigure = (g) => Boolean(g && !String(g.d || '').trim() && (g.dots || []).length && !(g.rings || []).length);
+// (a figure has points, plural: a sign drawn as one heavy point — the ه of
+// Aflāṭūn's pen in the Shawq — is a letter, drawn at its table's scale)
+const isFigure = (g) => Boolean(g && !String(g.d || '').trim() && (g.dots || []).length > 1 && !(g.rings || []).length);
 
 function MagicGlyph({ g, size, label, className }) {
     const uid = useId();

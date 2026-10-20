@@ -10955,6 +10955,9 @@ h3 {
   /* an author field can run to a sentence; keep the row a row */
   overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
 }
+/* the Arabic and Hebrew faces have no italic: a quoted run stands upright,
+   not slanted by the browser (an alif slanted reads as a slash) */
+.edu-search-sub bdi[dir="rtl"] { font-style: normal; }
 .edu-search-detail {
   color: rgba(222, 212, 196, 0.62); font-size: 0.85rem; line-height: 1.55;
   display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
