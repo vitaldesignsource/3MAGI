@@ -1174,8 +1174,9 @@ h3.mg-group-label { font-weight: 400; line-height: 1.45; }
    an alphabet's signScale enlarges the drawing inside it (overflow is visible) */
 .mg-door-sign .mg-glyph:not(.is-figure) { width: 1em; height: 1em; transform: scale(var(--mg-scale, 1)); }
 /* A drawn door sign is an icon fitted to its ink (MagicGlyph fit="ink"): its
-   box is the same for every door, the sign fills three quarters of it and
-   stands at its centre, and its pen is the same in px on every door. A set
+   box is the same for every door, the sign fills it by its area (a wide or a
+   tall sign as weighty as a square one) and stands at its centre, and its pen
+   is the same in px on every door. A set
    sign (☿, ᚠ, ᚎ) is set to stand as tall. */
 .mg-door-sign .mg-glyph.is-fit { width: 2.75rem; height: 2.75rem; transform: none; }
 .mg-door-sign .mg-char { font-size: 2.1rem; }

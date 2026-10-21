@@ -49,20 +49,23 @@ import { HOUSE_DOT, HOUSE_PEN, HOUSE_RING, ringPen } from './pen';
 // but the plaque, where the traced rings stand (magic.css switches them).
 //
 // A door or a chip shows a sign as an icon (`fit="ink"`): its viewBox is a
-// square about the sign's ink (sign.js inkBox), of side max(width, height)
-// / 0.75, so every door's sign fills three quarters of its box and stands at
-// its centre by its ink, not by the place it was traced in. Its pens are
+// square about the sign's ink (sign.js inkBox), sized by the sign's area, not
+// its longer side — sqrt(width × height) / 0.72, but never so small that the
+// longer side passes 0.88 of the box — so a wide sign (Ibn Waḥshiyya's) and a
+// tall one (the Theban's) carry the same weight as a square one, and every
+// sign stands at its centre by its ink, not by the place it was traced in. Its pens are
 // scaled with the viewBox, so they are the same in px on every door; a
 // fine-lined figure is drawn there with a pen of at least 3.5. The traced
 // data are drawn as they are; only the window onto them changes.
-const FIT_FILL = 0.75;
+const FIT_AREA = 0.72;
+const FIT_MAX = 0.88;
 const FIT_MIN_TEXT_PEN = 3.5;
 const r3 = (v) => Math.round(v * 1000) / 1000;
 function fitOf(g) {
     const textPen = g.textPen != null ? Math.max(g.textPen, FIT_MIN_TEXT_PEN) : null;
     const b = inkBox(g, { textPen });
     if (!b) return null;
-    const side = Math.max(b.w, b.h) / FIT_FILL;
+    const side = Math.max(Math.sqrt(b.w * b.h) / FIT_AREA, Math.max(b.w, b.h) / FIT_MAX);
     return { textPen, k: side / 100, x: r3((b.x0 + b.x1 - side) / 2), y: r3((b.y0 + b.y1 - side) / 2), side: r3(side) };
 }
 
