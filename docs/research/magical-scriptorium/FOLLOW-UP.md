@@ -65,16 +65,63 @@ and the proposed fix. Points already fixed are in the commit history, not here.
 
 ## Later
 
-5. **De Balmes's page and Panteo's plate have not been read.**
+5. **De Balmes and Panteo: what their pages leave open.**
    Where: `transitus-fluvii.js`, `the-books.js`, `celestial.js`, `malachim.js`,
-   `alphabet-of-the-magi.js`, `charakteres.js`.
-   What: the River script in de Balmes (Venice, 1523, sig. B6v by Peterson)
-   and in Panteo (Venice, 1530) now stands everywhere as reported, on
-   Macfarlane, Peterson and the Rylands blog. Both books are digitised (the
-   copies the pages already link).
-   Fix: read sig. B6v (or pp. 24–25) and Panteo's plate; if they bear the
-   reports out, raise the standing of the de Balmes claims to documented and
-   drop the hedges.
+   `alphabet-of-the-magi.js`, `charakteres.js`, `enochian.js`.
+   What: de Balmes (sig. b6v–b7r, Brandeis and Florence copies) and Panteo
+   (ff. 11v–15r, Florence copy) were read on 21 October 2026, and the pages
+   give them as read. These points are still open:
+   - The "very old book" (liber uetustissimus, sefer yashan noshan) in which
+     de Balmes says he found the script, his only source, is not identified.
+   - That he shows it as a script derived from the square letter is the
+     Rylands blog's reading; the page does not say so.
+   - Not tested from the page: Macfarlane's "first ring-letter alphabet
+     printed in Europe"; Campanini's misreading thesis and its Talmudic
+     background (his studies of 1997 and 2014 were not read). Which work
+     gives "pp. 24–25" is not known: that they are the Brandeis scan's leaves
+     24–25 is likely, not shown.
+   - Whether de Balmes's two tables (b6v, b7r) were printed from the same
+     block or blocks. They agree sign for sign at scan resolution.
+   - The Florence copy's Hebrew page and title page were not seen at full
+     resolution, so its record's "XIII. Kl." (against its own "[18 XI]" and
+     the Brandeis title page's XIIII) is probably, not certainly, a slip.
+   - Panteo's edition of 1550 (Pelling's ff. 15v–16r) was not seen, and
+     Pelling does not say which alphabet he calls "second"; the printing of
+     1530 bears out neither reading of his claim.
+   - Whether Panteo took the alphabet from de Balmes: he shares de Balmes's
+     Zain, Caph, Ain, Res, Schin and Tau against Agrippa, but not Vau's tall
+     horn or Zade's long legs, and he names no source.
+   - Panteo's line "Secundi uero in transitu fluuii subscripti: & Abraæ
+     concessi" is terse ("subscripti" may be "written below" or "set down";
+     the mark over the æ is unexplained), and whether the "supradicti
+     caractéres" granted to Moses (f. 13v) are both Hebrew forms or only the
+     third is not stated.
+   - Panteo's printer and date rest on library records (Florence: Venice,
+     April 1530, Giovanni Tacuino; Wellcome: "[J. Tacuinus]"); the colophon
+     was not read, nor the rest of the Voarchadumia page by page, so an
+     "alphabet des mages" elsewhere in it is not wholly excluded.
+   - Panteo's Enoch alphabet (twenty-six signs, ff. 14v–15r) has not been
+     compared with Dee's letters.
+   - Tory: Chioli (p. 5 of his PDF) says the "Lettres Caldaiques" of the
+     Champ Fleury, on f. LXXVII, are much the same as de Balmes's and
+     Agrippa's alphabet. With Wikipedia's f. 76v and the BnF's f. 73r that is
+     a third folio. Unchecked.
+   - No plate: the three Internet Archive items have no rights field, the
+     Florence scans carry "Copyright © 2011 ProQuest LLC" on every image, and
+     Wellcome's Panteo is online only through licensed ProQuest. A search
+     result points to a de Balmes copy digitised by the Bayerische
+     Staatsbibliothek (from Augsburg) and listed in the Deutsche Digitale
+     Bibliothek with a non-commercial licence; its record was behind a bot
+     check and was not opened.
+   - Typography (for the letters-typography work): the site's text face has
+     no Hebrew, so the Hebrew headings now quoted render in the reader's
+     system font, in English prose with no `lang="he"` or `dir="rtl"` span.
+     Panteo's contraction for con- and his marked æ are written out because
+     the face lacks them.
+   Fix: read Campanini (1997, 2014) and Macfarlane in full; open the
+   Bayerische Staatsbibliothek copy for a licensable plate of sig. b6v–b7r;
+   see Panteo's edition of 1550 and the colophon of 1530; compare Panteo's
+   Enoch alphabet with Dee's; read Tory's f. LXXVII.
 
 6. **Page numbers taken from Peterson and Wikipedia.**
    Where: Duret's Scriptura Celestis at p. 119 (`celestial.js`, `the-books.js`);
