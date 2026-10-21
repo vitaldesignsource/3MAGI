@@ -1,0 +1,14 @@
+/* =====================================================================
+   The Magical Scriptorium — the wing's own faces.
+   The @font-face rules for the faces only the wing names: a reading
+   face with Georgia's metrics ("TL Reading"), the wing's Greek
+   ("TL Greek"), the shape hints ("TL Shape Hints") and, through an
+   @import of a generated sheet, the faces built from the traced letters
+   for the transliterator. Faces the halls share (the script faces, the
+   Cinzel supplement, "TL Hebrew") are declared in index.css, never here.
+   Imported on the first line of magic.css, so it reaches every page that
+   loads magic.css: the wing's pages and the Scriptorium portal, which
+   shows the wing's doors. A face declared here is downloaded only when
+   text on the page is set in it. No rules yet: each arrives with the
+   change that uses it.
+   ===================================================================== */
