@@ -10714,7 +10714,7 @@ h3 {
   --edu-script-faces: "TL Hebrew", "TL Hieroglyphs", "TL Cuneiform", "TL Devanagari", "TL Arabic",
                       "TL Tibetan", "TL Syriac", "TL Coptic", "TL Mandaic", "TL Armenian",
                       "TL Ethiopic", "TL Glagolitic", "TL Cyrillic Ext", "TL Phoenician",
-                      "TL Runic", "TL Ogham", "TL Signs";
+                      "TL Ugaritic", "TL Avestan", "TL Runic", "TL Ogham", "TL Signs";
   --edu-glyph-faces: var(--edu-script-faces), "Palatino", "Palatino Linotype", "Book Antiqua",
                      "Times New Roman", serif;
 }
@@ -11161,6 +11161,19 @@ h3 {
   font-weight: 400; font-style: normal; font-display: swap; unicode-range: U+10900-1091F; }
 @font-face { font-family: "TL Phoenician"; src: url("/fonts/TLPhoenician.woff2") format("woff2");
   font-weight: 400; font-style: italic; font-display: swap; unicode-range: U+10900-1091F; }
+
+/* Ugaritic and Avestan — two halls' own scripts, which had no shipped face and
+   fell to whatever the system had. Noto Sans Ugaritic and Noto Sans Avestan,
+   byte copies (public/fonts/SOURCES.txt), each scoped to its own block and
+   named in both script stacks; upright in italic, like the others. */
+@font-face { font-family: "TL Ugaritic"; src: url("/fonts/TLUgaritic.woff2") format("woff2");
+  font-weight: 400; font-style: normal; font-display: swap; unicode-range: U+10380-1039F; }
+@font-face { font-family: "TL Ugaritic"; src: url("/fonts/TLUgaritic.woff2") format("woff2");
+  font-weight: 400; font-style: italic; font-display: swap; unicode-range: U+10380-1039F; }
+@font-face { font-family: "TL Avestan"; src: url("/fonts/TLAvestan.woff2") format("woff2");
+  font-weight: 400; font-style: normal; font-display: swap; unicode-range: U+10B00-10B3F; }
+@font-face { font-family: "TL Avestan"; src: url("/fonts/TLAvestan.woff2") format("woff2");
+  font-weight: 400; font-style: italic; font-display: swap; unicode-range: U+10B00-10B3F; }
 
 /* The Magical Scriptorium sets three of its alphabets as text, not drawings:
    the runes, the ogham, and the planetary, zodiacal and alchemical signs.

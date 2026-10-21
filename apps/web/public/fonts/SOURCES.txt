@@ -19,7 +19,8 @@ script family is named in both script stacks there: `.edu-page .edu-glyph` and
 `--edu-script-faces`. The Cinzel supplement is the exception: its five files
 are declared as more faces of the "Cinzel" family, so they are named wherever
 Cinzel is, and in neither script stack. The faces of scripts that have no
-italic (TL Hebrew, TL Arabic, TL Phoenician, TL Runic, TL Ogham, TL Signs) are
+italic (TL Hebrew, TL Arabic, TL Phoenician, TL Ugaritic, TL Avestan, TL Runic,
+TL Ogham, TL Signs, and in the wing TL Shape Hints) are
 declared a second time with font-style: italic and the same file, so that
 text set in an italic note stands upright instead of being slanted by the
 browser.
@@ -73,6 +74,19 @@ TLCyrillicExt.woff2  "TL Cyrillic Ext"
 TLPhoenician.woff2  "TL Phoenician"
     <- @fontsource/noto-sans-phoenician@5.3.0, files/noto-sans-phoenician-phoenician-400-normal.woff2
        Noto Sans Phoenician, Version 2.001. Subset U+10900-1091B, U+1091F.
+TLUgaritic.woff2  "TL Ugaritic"  (5,204 bytes)
+    <- @fontsource/noto-sans-ugaritic@5.3.0 (tarball sha1
+       ffdf8331e01e8f4a19e0d42e89d9b88f828b2f1b),
+       files/noto-sans-ugaritic-ugaritic-400-normal.woff2
+       Noto Sans Ugaritic, Version 2.001. The @font-face unicode-range is the
+       Ugaritic block, U+10380-1039F.
+TLAvestan.woff2  "TL Avestan"  (10,300 bytes)
+    <- @fontsource/noto-sans-avestan@5.3.0 (tarball sha1
+       49d20e77353c9e548625f7c478730f9022e9160b),
+       files/noto-sans-avestan-avestan-400-normal.woff2
+       Noto Sans Avestan, Version 2.003. The @font-face unicode-range is the
+       Avestan block, U+10B00-10B3F; the subset's punctuation (U+2E30-2E31)
+       and joiners are left to the text face.
 TLRunic.woff2  "TL Runic"  (6,588 bytes)
     <- @fontsource/noto-sans-runic@5.3.0, files/noto-sans-runic-runic-400-normal.woff2
        Noto Sans Runic, Version 2.002. Subset U+16A0-16F8: the whole Runic block
