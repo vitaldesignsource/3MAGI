@@ -4,8 +4,8 @@ The fonts in this folder, and where each file comes from
 Licence. Every face listed below is licensed under the SIL Open Font
 License, Version 1.1: the Noto faces, the faces made from Cinzel, Gelasio and
 Gentium Book Plus. The licence text and the copyright notice of each project
-are in OFL.txt, beside this file. The TC-Seraphine family is not listed here. OFL.txt does not cover
-it, and this file does not record it.
+are in OFL.txt, beside this file. The TC-Seraphine family is not listed here.
+OFL.txt does not cover it, and this file does not record it.
 
 Provenance. Each file is either a COPY, byte for byte, of one script subset
 from a @fontsource package (checked with cmp), or a CUT made from such
@@ -14,21 +14,24 @@ subsets by the script named in its entry. The packages were fetched with
 are not in package.json or the lockfile for these files. The 12 @fontsource
 entries in package.json record the older faces only.
 
-The @font-face rules and their unicode-range lines are in src/index.css. Every
-script family is named in both script stacks there: `.edu-page .edu-glyph` and
-`--edu-script-faces`. The Cinzel supplement is the exception: its five files
-are declared as more faces of the "Cinzel" family, so they are named wherever
-Cinzel is, and in neither script stack. The faces of scripts that have no
-italic (TL Hebrew, TL Arabic, TL Phoenician, TL Ugaritic, TL Avestan, TL Runic,
-TL Ogham, TL Signs, and in the wing TL Shape Hints) are
+The @font-face rules and their unicode-range lines of the shared faces are in
+src/index.css. Every script family is named in --edu-script-faces there, and
+`.edu-page .edu-glyph` reads the same list through --edu-glyph-faces, so a
+face is always in both stacks. The Cinzel supplement is the exception: its
+five files are declared as more faces of the "Cinzel" family, so they are
+named wherever Cinzel is, and in neither script stack. The faces of scripts
+that have no italic (TL Hebrew, TL Arabic, TL Phoenician, TL Ugaritic,
+TL Avestan, TL Runic, TL Ogham, TL Signs, and in the wing TL Shape Hints) are
 declared a second time with font-style: italic and the same file, so that
 text set in an italic note stands upright instead of being slanted by the
 browser.
 
 The faces only the Magical Scriptorium names (TL Reading, TL Greek, TL Shape
-Hints) are declared in src/styles/magic-fonts.css, not in index.css, so they
-are never in the halls' stacks. The wing names them through --edu-read,
---edu-read-plain and --edu-translit on .mg-page.
+Hints) are declared in src/styles/magic-fonts.css, not in index.css, and are
+in none of the halls' stacks. Only the wing's own stacks name them; the
+reading-voice rules of index.css take a page's stacks through --edu-read,
+--edu-read-plain and --edu-translit, and where those are unset (in every
+hall) they fall back to the stacks the halls have always had.
 
 
 Copies (file  <-  package, subset file; font version in the name table)
