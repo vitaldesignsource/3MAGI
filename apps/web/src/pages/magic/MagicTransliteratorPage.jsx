@@ -8,6 +8,7 @@ import FitTitle from './FitTitle';
 import { ENTRY_BY_SLUG, MAGIC_PATH, WING, canonicalUrl, entryPath } from './lib';
 import { transliterate } from './transliterate';
 import compare from '../../data/education/magic/compare.generated';
+import FONTS from '../../data/education/magic/fonts.generated';
 import '../../styles/magic.css';
 
 // The transliterator, in the Reckoner's idiom: choose an alphabet, type, and
@@ -26,6 +27,29 @@ const EXAMPLE = { latin: 'The Third Lamp', hebrew: 'אור' };
 // How long typing must pause before the screen reader's line is updated.
 const SETTLE_MS = 400;
 
+// The writ of a drawn alphabet that has a generated face (fonts.generated.js,
+// built from the same traced data by tools/fonts/build-traced-fonts.py) is set
+// as text in that face: one line of key letters the face draws as the signs,
+// spaced by the signs' own side-bearings, which wraps only between words and
+// can be selected and printed. The face is fetched only when its alphabet is
+// chosen. Until it has loaded, and if it never does, the drawn SVG writ is
+// shown, so a reader never sees the bare key letters where signs belong.
+const faceLoaded = (family) => typeof document !== 'undefined' && Boolean(document.fonts)
+    && [...document.fonts].some((f) => f.family.replace(/^["']|["']$/g, '') === family && f.status === 'loaded');
+// Whether the face is ready is read afresh for the alphabet chosen now, so
+// switching to an alphabet whose face has not loaded shows its drawn writ at once.
+function useFace(family, sample) {
+    const [loaded, setLoaded] = useState(null);
+    useEffect(() => {
+        if (!family || typeof document === 'undefined' || !document.fonts || faceLoaded(family)) return undefined;
+        let live = true;
+        const settle = () => { if (live && faceLoaded(family) && document.fonts.check(`1em "${family}"`, sample)) setLoaded(family); };
+        document.fonts.load(`1em "${family}"`, sample).then(settle, settle);
+        return () => { live = false; };
+    }, [family, sample]);
+    return Boolean(family) && (loaded === family || faceLoaded(family));
+}
+
 function MagicTransliteratorPage() {
     const writable = SCHEMES.filter(canWrite);
     const [slug, setSlug] = useState(writable[0]?.slug || null);
@@ -34,6 +58,10 @@ function MagicTransliteratorPage() {
     const scheme = SCHEMES.find((s) => s.slug === slug) || null;
     const result = useMemo(() => (scheme && text.trim() ? transliterate(text, scheme) : null), [scheme, text]);
     const dir = scheme?.direction === 'rtl' ? 'rtl' : 'ltr';
+    const face = scheme ? FONTS[scheme.slug] : null;
+    const faceReady = useFace(face?.family, scheme ? scheme.keys.map((k) => k.key).join('') : '');
+    // the writ as the face sets it: each word's key letters, the words parted by spaces
+    const writ = result ? result.words.map((w) => w.flatMap((p) => p.letters.map((l) => l.key)).join('')).join(' ') : '';
 
     // What a screen reader hears: one plain line — the alphabet, the
     // transliteration, what was passed over — once typing settles. The written
@@ -136,14 +164,23 @@ function MagicTransliteratorPage() {
                             <div className="mg-translit-out">
                                 {result && result.words.length > 0 && (
                                     <>
-                                        <div className="mg-writ edu-glyph" dir={dir} role="img"
-                                            aria-label={`${scheme.short}: ${result.plain}`}>
-                                            {result.words.map((w, wi) => (
-                                                <span className="mg-writ-word" key={wi}>
-                                                    {w.map((p, pi) => p.letters.map((l, li) => <Sign key={`${pi}-${li}`} of={l.sign} />))}
-                                                </span>
-                                            ))}
-                                        </div>
+                                        {face && faceReady ? (
+                                            // Latin keys written right to left (Enochian) are set in that order by bidi-override
+                                            <p className={`mg-writ edu-glyph is-text${scheme.from !== 'hebrew' && dir === 'rtl' ? ' is-override' : ''}`}
+                                                dir={dir} lang={scheme.from === 'hebrew' ? 'he' : undefined} role="img"
+                                                aria-label={`${scheme.short}: ${result.plain}`} style={{ '--mg-face': `"${face.family}"` }}>
+                                                {writ}
+                                            </p>
+                                        ) : (
+                                            <div className="mg-writ edu-glyph" dir={dir} role="img"
+                                                aria-label={`${scheme.short}: ${result.plain}`}>
+                                                {result.words.map((w, wi) => (
+                                                    <span className="mg-writ-word" key={wi}>
+                                                        {w.map((p, pi) => p.letters.map((l, li) => <Sign key={`${pi}-${li}`} of={l.sign} />))}
+                                                    </span>
+                                                ))}
+                                            </div>
+                                        )}
                                         <p className="mg-writ-plain"><span>Transliteration</span> <em>{result.plain}</em></p>
                                         {/* only an alphabet set in a face can be copied as text; drawn signs have no characters */}
                                         {result.text.trim() && (

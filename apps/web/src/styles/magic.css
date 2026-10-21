@@ -1428,6 +1428,34 @@ h3.mg-group-label { font-weight: 400; line-height: 1.45; }
   text-shadow: 0 0 26px rgba(209, 173, 104, 0.28);
   overflow-wrap: anywhere;
 }
+/* The writ as text, once its alphabet's generated face has loaded
+   (MagicTransliteratorPage.jsx; the faces are in magic-traced-fonts.generated.css):
+   one run of key letters that the face draws as the signs. The font's em times
+   signScale is the drawn sign's box, so at the size above a sign is as large as its
+   SVG; its side-bearings set the signs 0.165 em x signScale apart, ink to ink, and a
+   space with the word-spacing parts the words by about 0.7 em, so a line breaks only
+   between words. The line is the drawn writ's row (a sign's box and the 0.2em row
+   gap), with 0.1em less padding at top and bottom, so the text writ stands as tall as
+   the drawn writ it replaces, row for row. Nothing may synthesise a slant or a weight
+   on the signs. */
+.mg-page .mg-writ.is-text {
+  display: block;
+  padding-block: calc(1.1rem - 0.1em);
+  font-family: var(--mg-face), var(--edu-script-faces), serif;
+  font-synthesis: none;
+  font-variant: normal;
+  font-style: normal;
+  font-weight: 400;
+  line-height: calc(1em * var(--mg-scale, 1) + 0.2em);
+  letter-spacing: 0;
+  word-spacing: 0.25em;
+  hyphens: manual;
+  overflow-wrap: anywhere;
+  text-align: center;
+}
+/* Latin keys written from the right (Enochian): the letters and the words in order
+   from the right, as the drawn writ sets them */
+.mg-page .mg-writ.is-text.is-override { direction: rtl; unicode-bidi: bidi-override; }
 .mg-writ-word { display: inline-flex; flex-wrap: wrap; justify-content: center; gap: 0.06em; }
 /* a word set in a face (ogham's feather marks on their stemline) is written
    as the face spaces it, so the stemline runs on unbroken */
