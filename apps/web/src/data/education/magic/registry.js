@@ -85,8 +85,8 @@ const registry = {
             slug: 'enochian', group: 'secret', title: 'The Enochian Alphabet', short: 'Enochian',
             otherNames: ['the Angelical alphabet', 'Dee’s alphabet'],
             keyedTo: 'latin', direction: 'rtl', status: 'ready', signScale: 1.3,
-            // door: its Pa, the first form on f. 104, as drawn on its page (the validator checks it is one of the page's own signs)
-            door: { glyph: { d: 'M 29 33 L 36.5 34 C 43 44 50 54 54.5 67.5 C 58.5 64 62 60 62.3 54 L 62.3 48.5 C 66.5 46.5 69.8 43.5 69.6 39 C 69.4 35 66 34.5 62 34.8 C 59 35 56 35.5 56 39.6 M 57.8 47 L 61.8 48' } },
+            // door: its Pa, the first form on f. 104, as drawn on its page: the outline of its ink (the validator checks it is one of the page's own signs)
+            door: { glyph: { fill: 'M 30.85 34.9 L 28.14 33.56 C 31.52 31.61 36.9 30.87 40.16 30.97 C 45.82 31.14 46.08 33.92 46.69 36.51 C 47.44 39.67 48.79 42.85 49.92 45.27 C 52.87 51.58 53.98 51.86 54.68 54.04 C 55.95 57.98 53.46 60.76 56.86 63.51 C 59.36 62.33 59.82 58.71 59.89 56.5 C 60 52.44 58.9 49.21 55.35 47.22 C 57.02 45.86 58.76 44.68 60.53 43.46 L 62.73 45.21 C 64.93 44.68 68.13 43.09 68.13 40.39 C 68.13 38.59 66.68 37.17 64.77 37.17 C 61.46 37.17 59.24 41.45 54.18 40.9 C 53.99 38.86 52.82 32.11 56.27 32.11 C 57.25 32.11 58.12 32.65 58.94 32.96 C 61.99 34.1 65.04 32.16 68.38 33.89 C 71.37 35.43 72.59 38.93 72.59 41.82 C 72.59 46.39 69.48 47.78 65.94 49.73 C 67.15 54.8 66.29 58.73 62.84 63.07 C 61.08 65.29 58.51 67.79 56.73 71.19 C 53.07 71.89 52.52 68.97 50.17 64.79 L 44.18 54.34 L 37.86 43.38 C 34.82 38.21 31.25 39.13 30.85 34.9 Z' } },
             blurb: 'Twenty-one letters that John Dee recorded in 1583 from what Edward Kelley reported seeing in the shew-stone.',
         },
         {

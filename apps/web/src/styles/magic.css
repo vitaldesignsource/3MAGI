@@ -731,7 +731,7 @@ h3.mg-group-label { font-weight: 400; line-height: 1.45; }
 .mg-drawn .ch-kv:first-child { border-top: none; padding-top: 0.2rem; }
 .mg-drawn .ch-kv:last-child { padding-bottom: 0.2rem; }
 .mg-drawn .ch-kv > span { margin: 0.42rem 0 0; font-family: "Cinzel", Georgia, serif; line-height: 1.5; }
-.mg-drawn .ch-kv p { font-family: var(--mg-read); font-size: 0.97rem; line-height: 1.75; max-width: 38rem; }
+.mg-drawn .ch-kv p { font-family: var(--mg-read); font-size: 0.97rem; line-height: 1.75; max-width: 38rem; overflow-wrap: break-word; }
 
 /* --- the page itself ------------------------------------------------------ */
 /* The library's photograph of the printed page, in the drawn-from block's
@@ -1578,7 +1578,7 @@ h3.mg-group-label { font-weight: 400; line-height: 1.45; }
   .mg-translit-body { grid-template-columns: minmax(0, 1fr); grid-template-rows: auto; grid-template-areas: "input" "out" "conventions"; }
 }
 @media (max-width: 720px) {
-  .mg-drawn .ch-kv { grid-template-columns: 1fr; }
+  .mg-drawn .ch-kv { grid-template-columns: minmax(0, 1fr); }
   .mg-drawn .ch-kv > span { margin: 0 0 0.2rem; }
   .mg-link-list li { grid-template-columns: 1fr; }
   .mg-witness dl > div { grid-template-columns: 1fr; gap: 0.15rem; }
