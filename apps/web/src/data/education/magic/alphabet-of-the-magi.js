@@ -211,7 +211,7 @@ export default {
             sources: ['Wikipedia, “Alphabet of the Magi”', 'Paul Christian, Histoire de la magie (Paris: Furne, Jouvet et Cie, 1870)', 'Flickr, “Alphabet des mages” (2010), caption only'] },
         { claim: 'The Latin values that modern charts give the signs belong to the alphabet.', standing: 'disputed',
             evidence: 'No Latin values are reported for the 1539 printing, which labels the signs by Hebrew letter names, nor does Duret (1613) give any. The values are later conventions. Of the printings read for this page, Fry’s (1799, p. 28) is the first to set a Latin letter under each sign, and his letters transcribe the Hebrew names (s under Samekh, t under Tav, hh under Cheth, th under Teth); dCode’s chart, for instance, gives X for Samekh and T for Tav, and itself warns that no exact correspondence between the Hebrew and Latin letters exists. This page uses none of them.',
-            sources: ['dCode, “Alphabet of the Magi” (letter list)', 'Wikipedia, “Alphabet of the Magi”'] },
+            sources: ['Fry, Pantographia (1799), p. 28', 'Duret, Thrésor (1613), p. 117', 'dCode, “Alphabet of the Magi” (letter list)', 'Wikipedia, “Alphabet of the Magi”'] },
     ],
     uses: [
         { use: 'A specimen in the compendia of the world’s alphabets', evidence: 'Ambrogio prints it among about forty alphabets (1539), Duret reprints it in his history of the world’s languages (1613), and Fry gives it in his specimen book of the world’s alphabets (1799): each sets it beside real scripts. The three tables have been read for this page (Ambrogio, fol. 203r; Duret, p. 117; Fry, p. 28); the account of the books around them is Wikipedia’s and the Lyon library blog’s.' },

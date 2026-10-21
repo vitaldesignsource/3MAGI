@@ -115,15 +115,18 @@ and the proposed fix. Points already fixed are in the commit history, not here.
      Staatsbibliothek (from Augsburg) and listed in the Deutsche Digitale
      Bibliothek with a non-commercial licence; its record was behind a bot
      check and was not opened.
-   - Typography (for the letters-typography work): no face in the wing's
-     stacks has Hebrew, so the Hebrew headings now quoted are drawn by the
-     reader's system font (Liberation Serif in the test browser). In the
-     pages' prose each Hebrew run is isolated in `<bdi dir="rtl" lang="he">`;
-     in the timeline (the de Balmes entries of `transitus-fluvii.js` and
-     `the-books.js`) the shared `ScriptoriumTimeline.jsx` prints the
-     description as plain text, so the run is not isolated, though it reads
-     in order at 1280. Panteo's contraction for con- and his marked æ are
-     written out because the text face lacks them.
+   - Typography: the Hebrew headings now quoted are drawn in TL Hebrew
+     (Noto Serif Hebrew), which `--edu-script-faces` names first and the
+     wing's reading stacks include, in the prose and in the timeline alike.
+     In the pages' prose each Hebrew run is isolated in
+     `<bdi dir="rtl" lang="he">`; in the timeline (the de Balmes entries of
+     `transitus-fluvii.js` and `the-books.js`) the shared
+     `ScriptoriumTimeline.jsx` prints the description as plain text, so the
+     run is not isolated, though it reads in order at 1280. In the
+     quotations, Panteo's contraction for con- is written out and the stroke
+     over his æ is left out; de Balmes's Hebrew heading is quoted without
+     its vowel points, and his iueni as i[n]ueni, the n supplied. Each place
+     says so.
    Fix: read Campanini (1997, 2014) and Macfarlane in full; open the
    Bayerische Staatsbibliothek copy for a licensable plate of sig. b6v–b7r;
    see Panteo's edition of 1550 and the colophon of 1530; compare Panteo's
