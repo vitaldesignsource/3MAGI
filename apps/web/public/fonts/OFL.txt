@@ -13,6 +13,7 @@ Copyright 2022 The Noto Project Authors (https://github.com/notofonts/runic)
 Copyright 2022 The Noto Project Authors (https://github.com/notofonts/symbols)
 Copyright 2022 The Noto Project Authors (https://github.com/notofonts/syriac)
 Copyright 2022 The Noto Project Authors (https://github.com/notofonts/tibetan)
+Copyright 2020 The Cinzel Project Authors (https://github.com/NDISCOVER/Cinzel)
 
 This Font Software is licensed under the SIL Open Font License, Version 1.1.
 This license is copied below, and is also available with a FAQ at:

@@ -1,5 +1,58 @@
 @import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800&display=swap");
 
+/* The Cinzel supplement ("TL Display Marks" inside the files): the letters and signs the
+   site sets in Cinzel that Cinzel does not have (Ḍḍ Ḥḥ Ḳḳ Ḷḷ Ṛṛ Ṣṣ Ṭṭ Ẓẓ ʾ ʿ ʼ Ǫǫ № ← →),
+   made from Cinzel's own outlines by tools/fonts/build-display-marks.py. Each file joins the
+   "Cinzel" family at one weight, after Google's faces, so every Cinzel stack draws these in
+   Cinzel instead of falling back to another face in the middle of a word. One rule per
+   weight: a face declared with a weight range would not join Google's faces. The
+   unicode-range names exactly the file's code points. Provenance: public/fonts/SOURCES.txt. */
+@font-face {
+  font-family: "Cinzel";
+  src: url("/fonts/TLDisplayMarks-400.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+01EA-01EB, U+02BC, U+02BE-02BF, U+1E0C-1E0D, U+1E24-1E25, U+1E32-1E33, U+1E36-1E37,
+                 U+1E5A-1E5B, U+1E62-1E63, U+1E6C-1E6D, U+1E92-1E93, U+2116, U+2190, U+2192;
+}
+@font-face {
+  font-family: "Cinzel";
+  src: url("/fonts/TLDisplayMarks-500.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+01EA-01EB, U+02BC, U+02BE-02BF, U+1E0C-1E0D, U+1E24-1E25, U+1E32-1E33, U+1E36-1E37,
+                 U+1E5A-1E5B, U+1E62-1E63, U+1E6C-1E6D, U+1E92-1E93, U+2116, U+2190, U+2192;
+}
+@font-face {
+  font-family: "Cinzel";
+  src: url("/fonts/TLDisplayMarks-600.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+01EA-01EB, U+02BC, U+02BE-02BF, U+1E0C-1E0D, U+1E24-1E25, U+1E32-1E33, U+1E36-1E37,
+                 U+1E5A-1E5B, U+1E62-1E63, U+1E6C-1E6D, U+1E92-1E93, U+2116, U+2190, U+2192;
+}
+@font-face {
+  font-family: "Cinzel";
+  src: url("/fonts/TLDisplayMarks-700.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+01EA-01EB, U+02BC, U+02BE-02BF, U+1E0C-1E0D, U+1E24-1E25, U+1E32-1E33, U+1E36-1E37,
+                 U+1E5A-1E5B, U+1E62-1E63, U+1E6C-1E6D, U+1E92-1E93, U+2116, U+2190, U+2192;
+}
+@font-face {
+  font-family: "Cinzel";
+  src: url("/fonts/TLDisplayMarks-800.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+01EA-01EB, U+02BC, U+02BE-02BF, U+1E0C-1E0D, U+1E24-1E25, U+1E32-1E33, U+1E36-1E37,
+                 U+1E5A-1E5B, U+1E62-1E63, U+1E6C-1E6D, U+1E92-1E93, U+2116, U+2190, U+2192;
+}
+
 @font-face {
   font-family: "TC Seraphine";
   src: url("/fonts/TC-Seraphine-Light.woff2") format("woff2"),
