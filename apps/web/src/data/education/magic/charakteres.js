@@ -15,7 +15,8 @@
 // for no plate of a gem or of the seals was gathered. No page is shown: the
 // copies used carry no repository's rights statement. Points the fact-check left
 // unresolved are left out (Frankfurter's hieroglyph thesis, Sepher ha-Razim,
-// the Glagolitic article, Sefer Raziel, Panteo, de Balmes's Hebrew label,
+// the Glagolitic article, Sefer Raziel, Panteo and de Balmes's Hebrew label (both
+// since read, f. 14r and sig. b7r, but not added here),
 // Macfarlane's "first printed" wording, Mathers, Dzwiza's sign count, the
 // Arabic of the seals' verses beyond the first half-line, the shapes of seals
 // 2–7, Winkler's thesis of descent) or are stated as uncertain in plain words.
@@ -36,7 +37,7 @@ export default {
     keyedTo: 'none',
     direction: 'ltr',
     status: 'ready',
-    summary: 'Charaktêres are invented signs that spell nothing. They appear in the Greek magical handbooks, curse tablets, amulets and gems of the Roman imperial period; the handbooks tell the user to copy them exactly, and some texts treat them as powers in their own right. Many end their strokes in small circles, hence the modern names ring-letters and Brillenbuchstaben. Jewish practitioners took them over in late antiquity, and Arabic magic has kindred signs in the seven seals. Medieval Jewish manuscripts set ring-ended signs one for one against the Hebrew letters as alphabets, and printed books carried alphabets of this kind into European learned magic: a Hebrew grammar printed at Venice in 1523 is reported to carry one, and Agrippa printed three in 1533.',
+    summary: 'Charaktêres are invented signs that spell nothing. They appear in the Greek magical handbooks, curse tablets, amulets and gems of the Roman imperial period; the handbooks tell the user to copy them exactly, and some texts treat them as powers in their own right. Many end their strokes in small circles, hence the modern names ring-letters and Brillenbuchstaben. Jewish practitioners took them over in late antiquity, and Arabic magic has kindred signs in the seven seals. Medieval Jewish manuscripts set ring-ended signs one for one against the Hebrew letters as alphabets, and printed books carried alphabets of this kind into European learned magic: a Hebrew grammar printed at Venice in 1523 carries one, and Agrippa printed three in 1533.',
     intro: [
         'In the Greek magical handbooks of Roman Egypt, beside the names of gods and the strings of magical words, stand rows of signs that belong to no alphabet. Some are built on Greek capitals; many end their strokes in small circles, the rings that give them their modern names, ring-letters and, in German, Brillenbuchstaben, “spectacle letters”. They spell nothing and stand for no sound. The Greeks called them charaktêres, engraved or stamped marks. The handbooks tell the user to copy them exactly, some texts treat them as powers in their own right, and they were drawn on papyrus, scratched on lead curse tablets and thin metal amulets, and cut into gems.',
         'Modern scholarship treats them as made in that world: Richard Gordon writes of them as invented signs, and the University of Manchester’s Rylands blog dates them to roughly the second or third century CE. Late-antique writers took note of them. Augustine sets among the superstitions the marks that people call characteres, and Iamblichus, answering Porphyry, criticises those who think that standing on charaktêres is enough to bring inspiration. Jewish practitioners took the signs over and wrote them beside the names of angels; Gideon Bohak follows them from ancient amulets into medieval Jewish magic, where the usual Hebrew word for them is ḥotamot, “seals”, and where, on the Rylands blog’s account, they were generally treated as a script belonging to the angels. Arabic magic has kindred signs, best known as the seven seals, which within their tradition together stand for the Greatest Name of God.',
@@ -126,8 +127,8 @@ export default {
             description: 'In Jewish kabbalistic and magical manuscripts, ring-ended signs are set one for one against the twenty-two Hebrew letters and presented as alphabets of the angels. The alphabets Agrippa printed belong to this family.',
             dating: 'The sources cited say only “medieval” and do not say when such alphabets first appeared; the place on the axis is approximate.' },
         { slug: 'de-balmes-1523', title: 'A ring-letter alphabet in a Hebrew grammar', kind: 'text', year: 1523, end: null, circa: false, circaEnd: false,
-            description: 'Abraham de Balmes’s Mikneh Avram (Peculium Abrae), a Hebrew grammar with a Latin version printed at Venice by Daniel Bomberg, is reported by modern scholars to carry a ring-letter alphabet among the scripts it describes: in a grammar, not a book of magic. It is reported to be the alphabet Agrippa printed ten years later as the Passing of the River.',
-            dating: 'Venice: Daniel Bomberg, 1523, in Hebrew and Latin (Folger catalogue). The page with the alphabet has not been checked, so its presence in the book rests on the scholars’ report.' },
+            description: 'Abraham de Balmes’s Mikneh Avram (Peculium Abrae), a Hebrew grammar with a Latin version printed at Venice by Daniel Bomberg, carries a ring-letter alphabet at the close of its section on the form of the letters: in a grammar, not a book of magic. Its twenty-two signs are those Agrippa printed ten years later as the Passing of the River.',
+            dating: 'Venice: Daniel Bomberg, 1523, in Hebrew and Latin (Folger catalogue). The alphabet stands on sig. b6v–b7r (Brandeis copy, read for the wing).' },
         { slug: 'agrippa-1533', title: 'Agrippa prints three ring-letter alphabets', kind: 'text', year: 1533, end: null, circa: false, circaEnd: false,
             description: 'In De occulta philosophia, Book III, chapter 30 — “Another manner of making Characters, delivered by Cabalists” in the English of 1651 — Agrippa gives the Celestial Writing, the Malachim and the Passing of the River as writings found among the Hebrews, glosses Malachim “of Angels, or Regal”, and names no source.',
             dating: 'The Library of Congress record gives the imprint as [Coloniae: s.n.], 1533.' },
@@ -230,7 +231,7 @@ export default {
         { to: 'latin', relation: 'Latin characteres: Augustine’s word, when he sets the signs among the superstitions.' },
         { to: 'celestial', relation: 'The first of Agrippa’s three ring-letter alphabets (III.30): of the family, but no letter of it has been traced to an ancient sign.' },
         { to: 'malachim', relation: 'The second alphabet of III.30, glossed “of Angels, or Regal”; the same name appears in a Jewish manuscript of the 17th or 18th century.' },
-        { to: 'transitus-fluvii', relation: 'The third alphabet of III.30, reported in de Balmes’s Hebrew grammar (Venice, 1523), ten years before Agrippa, who names no source.' },
+        { to: 'transitus-fluvii', relation: 'The third alphabet of III.30, printed in de Balmes’s Hebrew grammar (Venice, 1523), ten years before Agrippa, who names no source.' },
         { to: 'ibn-wahshiyya', relation: 'An Arabic catalogue of “ancient” alphabets, ascribed to Ibn Waḥshiyya, among them ring-ended alphabets of the sages; aqlām, “pens” or scripts, is the word for them in its title.' },
         { to: 'theban', relation: 'A contrast: keyed to the Latin letters, and not a ring-letter alphabet.' },
     ],
