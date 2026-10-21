@@ -10022,6 +10022,10 @@ h3 {
 .edu-num-native { font-size: 1.35rem; color: #ecd9ae; }
 .edu-num-eq { color: #d1ad68; white-space: nowrap; }
 .edu-num-note { color: rgba(222, 212, 196, 0.65); font-size: 0.9rem; line-height: 1.6; flex: 1 1 24rem; }
+/* the numeral notes quote the letters they explain (יה, יו): the script faces
+   first, then the display voice the notes have always had */
+.edu-num-note,
+.edu-num-special { font-family: var(--edu-script-faces), "Cinzel", Georgia, "Times New Roman", serif; }
 .edu-num-special {
   margin: 1.2rem auto 0;
   max-width: 44rem;
@@ -11016,6 +11020,10 @@ h3 {
    row); the title's line is 1.5rem. */
 .edu-search-results a.has-sign { align-items: start; --sign-h: calc(1.89rem * var(--mg-scale, 1)); }
 .edu-search-results a.has-sign .edu-search-native { line-height: 0; }
+/* the drawn signs stand in one column, as wide as the largest scaled sign's box
+   (signScale 1.6, registry.js), each centred in it, so every such row's title
+   starts at one x whatever its alphabet's scale */
+.edu-search-results a.has-sign .edu-search-native { display: flex; justify-content: center; min-width: calc(1.89rem * 1.6); }
 .edu-search-results a.has-sign .edu-search-native .mg-glyph { display: block; }
 .edu-search-results a.has-sign .edu-search-native .mg-table-mark { opacity: 0.7; }
 .edu-search-results a.has-sign .edu-search-label { line-height: 1.5rem; }
@@ -11408,8 +11416,11 @@ h3 {
 .edu-page .edu-kinship-legend,
 .edu-page .edu-event-detail, .edu-page .edu-event-dating {
   /* a page may name its own reading stack (the Magical Scriptorium does, on
-     .mg-page); unset, this is Georgia, as it always was */
-  font-family: var(--edu-read-plain, Georgia, "Times New Roman", serif);
+     .mg-page); unset, this is Georgia, as it always was, after the script
+     faces, so a Hebrew word quoted in a hall's intro is set in TL Hebrew and
+     not in a system face (each face is scoped by unicode-range to its own
+     block, so no Latin letter changes) */
+  font-family: var(--edu-read-plain, var(--edu-script-faces), Georgia, "Times New Roman", serif);
   letter-spacing: 0.005em;
 }
 .edu-page .edu-hero-sub { font-size: 1.08rem; line-height: 1.85; }

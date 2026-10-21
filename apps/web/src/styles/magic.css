@@ -33,12 +33,38 @@
   --mg-letter-text: var(--edu-script-faces), "TL Greek", "TL Reading", Georgia, "TL Shape Hints", "Times New Roman", serif;
 }
 /* The halls' shared reading rules (index.css) read these, with fallbacks
-   equal to their own values, so only the wing's pages change. */
-.mg-page {
+   equal to their own values, so only the wing's pages change: the wing's
+   own pages and its section on the Scriptorium portal (.edu-magic), whose
+   intro and doors are the wing's text. */
+.mg-page,
+.edu-magic {
   --edu-read: var(--mg-read);
   --edu-read-plain: var(--mg-read);
   --edu-translit: var(--mg-letter-text);
+  /* The native-script stack (.edu-glyph) keeps the halls' book serifs for
+     the Latin and Greek it carries (a search result's name, the compare
+     table's Latin keys, an Arabic table's full stops and list points), and
+     names the wing's Greek and its reading face after them, so where those
+     serifs are missing they are drawn in the wing's faces, not a system
+     one. TL Greek is scoped to Greek by its unicode-range. */
+  --edu-glyph-faces: var(--edu-script-faces), "TL Greek", "Palatino", "Palatino Linotype", "Book Antiqua",
+                     "TL Reading", "Times New Roman", serif;
 }
+
+/* The wing's centred notes and door copy break their lines evenly: a last line
+   of one word ("stars.", "over.") under a full one reads as a stray. Prose
+   blocks avoid such a line (pretty); the doors' blurbs, names and titles, a
+   few lines each, are balanced. */
+.mg-page .mg-translit-hint,
+.mg-page .edu-plaque-note,
+.mg-page .mg-plaque-strokes,
+.mg-page .edu-hero-sub,
+.mg-page .edu-section-head p:not(.kicker), .edu-magic .edu-section-head p:not(.kicker),
+.mg-page .mg-hero-caption,
+.mg-page .mg-hero-names { text-wrap: pretty; }
+.mg-page .edu-hall-blurb, .edu-magic .edu-hall-blurb,
+.mg-door-names,
+.mg-door .mg-door-title { text-wrap: balance; }
 
 /* A Hebrew or Arabic run quoted in italic prose (Bidi.jsx isolates each
    one) stands upright: neither face has an italic, and a slanted Naskh or
@@ -397,9 +423,15 @@ h3.mg-group-label { font-weight: 400; line-height: 1.45; }
 .mg-breakdown .mg-glyph:not(.is-figure) { width: calc(1.4em * var(--mg-scale, 1)); height: calc(1.4em * var(--mg-scale, 1)); }
 /* in a comparison row a drawn sign sits on the row's line by its middle, as
    in the fold table, so it stands level with the key letter and the
-   Phoenician beside it instead of riding above them */
+   Phoenician beside it instead of riding above them. "middle" is the line's
+   x-height middle, a little below the middle of the key letter's line, so
+   the sign is raised by 0.03em (0.65 px at 1280), which centres it on the
+   key letter, by its line and by its ink, within about half a pixel at 1x
+   and 2x. */
 .mg-cmp-cell .mg-glyph:not(.is-figure) {
   vertical-align: middle;
+  position: relative;
+  top: -0.03em;
   width: round(calc(1.4em * var(--mg-scale, 1)), 1px);
   height: round(calc(1.4em * var(--mg-scale, 1)), 1px);
 }
@@ -1177,7 +1209,9 @@ h3.mg-group-label { font-weight: 400; line-height: 1.45; }
 .mg-door.is-compact .edu-hall-glyph { font-size: 2.3rem; }
 .mg-door.is-compact .mg-door-sign { min-height: 2.4rem; }
 .mg-door.is-compact .mg-door-sign .mg-unstruck { width: 1.9rem; height: 1.9rem; }
-.mg-door.is-compact .mg-door-sign .mg-glyph.is-fit { width: 2.1rem; height: 2.1rem; }
+/* 2.3rem, not less: a fitted sign's pen is 5.5 hundredths of its box, and at
+   2.3rem (36.8 px) that is 2.0 px, the lightest the doors are drawn with */
+.mg-door.is-compact .mg-door-sign .mg-glyph.is-fit { width: 2.3rem; height: 2.3rem; }
 /* a door's name keeps the hall card's look at whatever rank the page's outline
    gives it (h3 on the Scriptorium portal, h4 and h5 on the wing's) */
 .mg-door .mg-door-title { margin: 0.35em 0 0; font-family: "Cinzel", Georgia, "Times New Roman", serif; font-weight: 500; line-height: 1.12; color: #f4f0e7; letter-spacing: 0.14em; text-transform: uppercase; font-size: 1rem; }
@@ -1203,9 +1237,9 @@ h3.mg-group-label { font-weight: 400; line-height: 1.45; }
 @media (max-width: 640px) {
   .mg-door-grid.is-compact { grid-template-columns: minmax(0, 1fr); gap: 0.45rem; }
   .mg-door.is-compact { flex-direction: row; justify-content: flex-start; gap: 0.95rem; padding: 0.65rem 1rem; text-align: left; }
-  .mg-door.is-compact .mg-door-sign { flex: 0 0 2rem; min-height: 2rem; font-size: 1.75rem; }
+  .mg-door.is-compact .mg-door-sign { flex: 0 0 2.3rem; min-height: 2.3rem; font-size: 1.75rem; }
   .mg-door.is-compact .mg-door-sign .mg-unstruck { width: 1.55rem; height: 1.55rem; }
-  .mg-door.is-compact .mg-door-sign .mg-glyph.is-fit { width: 2rem; height: 2rem; }
+  .mg-door.is-compact .mg-door-sign .mg-glyph.is-fit { width: 2.3rem; height: 2.3rem; }
   .mg-door.is-compact .mg-door-title { margin: 0; font-size: 0.82rem; }
   .mg-door.is-compact:hover { transform: none; }
 }

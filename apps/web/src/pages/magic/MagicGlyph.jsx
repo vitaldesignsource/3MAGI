@@ -9,7 +9,7 @@ import { HOUSE_DOT, HOUSE_PEN, HOUSE_RING, ringPen } from './pen';
 //   <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="5.5"
 //        stroke-linecap="round" stroke-linejoin="round">
 //     <path d mask/>                                      the strokes
-//     <circle cx cy r stroke-width="3.6 | 2.6"/>          each ring (Brille)
+//     <circle cx cy r stroke-width="3.6 | 2.6 | 2.0"/>    each ring (Brille)
 //     <circle cx cy r=2.6 fill="currentColor" stroke="none"/>   each dot
 //   </svg>
 //
@@ -20,7 +20,8 @@ import { HOUSE_DOT, HOUSE_PEN, HOUSE_RING, ringPen } from './pen';
 // which cuts the stroke back to the ring's inner edge and leaves the hole
 // round. And a ring drawn smaller than the house size (r 6) — the crowded
 // rings of the Malachim, the River's rings — takes a lighter pen, 2.6 for
-// 3.6, so that its hole stays open at the sizes the pages use. The pen, the
+// 3.6 (2.0 for the smallest, r 3.5 or less), so that its hole stays open at
+// the sizes the pages use. The pen, the
 // ring and dot sizes and the ring pens are kept in pen.js, which the build's
 // tools read too.
 //

@@ -22,8 +22,10 @@
 /* the traced cipher faces of the transliterator's writ (generated) */
 @import "./magic-traced-fonts.generated.css";
 
-/* TL Reading — Gelasio 1.008, byte copies of the @fontsource/gelasio@5.3.0
-   latin and latin-ext subsets, regular and italic. Gelasio is metrics
+/* TL Reading — Gelasio 1.008, cut from the @fontsource/gelasio@5.3.0 latin
+   and latin-ext subsets, regular and italic, by tools/fonts/build-tlreading.py,
+   which changes only the spacing of ʻ ʾ ʿ (and ˊ ˋ in the italic): Gelasio
+   gives them no advance, so they sat on their neighbours. Gelasio is metrics
    compatible with Georgia (x-height 986 and cap height 1419 per 2048, as
    Georgia's), so where Georgia is missing (Android, Linux) the wing's prose
    breaks its lines as designed, and where Georgia lacks a letter (ḥ ʾ ʿ ǫ …)

@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from 'react';
+import React, { useEffect, useMemo, useRef, useState } from 'react';
 import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 import ThirdLampHeader from '../../components/ThirdLampHeader';
@@ -31,13 +31,22 @@ const SETTLE_MS = 400;
 // built from the same traced data by tools/fonts/build-traced-fonts.py) is set
 // as text in that face: one line of key letters the face draws as the signs,
 // spaced by the signs' own side-bearings, which wraps only between words and
-// can be selected and printed. The face is fetched only when its alphabet is
-// chosen. Until it has loaded, and if it never does, the drawn SVG writ is
-// shown, so a reader never sees the bare key letters where signs belong.
+// can be selected and printed. All seven faces (about 33 KB) are fetched when
+// the page opens, so that choosing another alphabet finds its face loaded: the
+// drawn writ, which breaks into more lines, would otherwise stand until the
+// face arrived and then the text writ would jump up the page. Until a face has
+// loaded, and if it never does, the drawn SVG writ is shown, so a reader never
+// sees the bare key letters where signs belong.
 const faceLoaded = (family) => typeof document !== 'undefined' && Boolean(document.fonts)
     && [...document.fonts].some((f) => f.family.replace(/^["']|["']$/g, '') === family && f.status === 'loaded');
 // Whether the face is ready is read afresh for the alphabet chosen now, so
 // switching to an alphabet whose face has not loaded shows its drawn writ at once.
+function useAllFaces() {
+    useEffect(() => {
+        if (typeof document === 'undefined' || !document.fonts) return;
+        for (const f of Object.values(FONTS)) document.fonts.load(`1em "${f.family}"`).catch(() => {});
+    }, []);
+}
 function useFace(family, sample) {
     const [loaded, setLoaded] = useState(null);
     useEffect(() => {
@@ -59,9 +68,44 @@ function MagicTransliteratorPage() {
     const result = useMemo(() => (scheme && text.trim() ? transliterate(text, scheme) : null), [scheme, text]);
     const dir = scheme?.direction === 'rtl' ? 'rtl' : 'ltr';
     const face = scheme ? FONTS[scheme.slug] : null;
+    useAllFaces();
     const faceReady = useFace(face?.family, scheme ? scheme.keys.map((k) => k.key).join('') : '');
     // the writ as the face sets it: each word's key letters, the words parted by spaces
     const writ = result ? result.words.map((w) => w.flatMap((p) => p.letters.map((l) => l.key)).join('')).join(' ') : '';
+    // What a copy of the writ gives: the same letters, except that a final form
+    // the alphabet writes with its base letter's sign (it has no final signs of
+    // its own) is copied as the final form that was typed, so copied Hebrew is
+    // spelt as it was typed (שלום, not שלומ). One letter for one, so a selection's
+    // offsets in the writ are its offsets here.
+    const writCopy = result && scheme.from === 'hebrew'
+        ? result.words.map((w) => w.flatMap((p) => p.letters.map((l) => (p.letters.length === 1 && scheme.finals?.[p.src] === l.key ? p.src : l.key))).join('')).join(' ')
+        : writ;
+    const writRef = useRef(null);
+    useEffect(() => {
+        if (writCopy === writ || typeof document === 'undefined') return undefined;
+        const onCopy = (e) => {
+            const el = writRef.current;
+            const sel = document.getSelection();
+            const node = el?.firstChild;
+            if (!el || !sel || !sel.rangeCount || !node || node.nodeType !== 3 || !sel.containsNode(el, true)) return;
+            const r = sel.getRangeAt(0);
+            let text;
+            if (el.contains(r.startContainer) && el.contains(r.endContainer)) {
+                // a selection inside the writ
+                text = writCopy.slice(r.startContainer === node ? r.startOffset : 0, r.endContainer === node ? r.endOffset : node.length);
+            } else if (sel.containsNode(el, false)) {
+                // a selection that holds the whole writ and more
+                const all = sel.toString();
+                const i = all.indexOf(writ);
+                if (i < 0) return;
+                text = all.slice(0, i) + writCopy + all.slice(i + writ.length);
+            } else return;
+            e.clipboardData.setData('text/plain', text);
+            e.preventDefault();
+        };
+        document.addEventListener('copy', onCopy);
+        return () => document.removeEventListener('copy', onCopy);
+    }, [writ, writCopy]);
 
     // What a screen reader hears: one plain line — the alphabet, the
     // transliteration, what was passed over — once typing settles. The written
@@ -166,7 +210,7 @@ function MagicTransliteratorPage() {
                                     <>
                                         {face && faceReady ? (
                                             // Latin keys written right to left (Enochian) are set in that order by bidi-override
-                                            <p className={`mg-writ edu-glyph is-text${scheme.from !== 'hebrew' && dir === 'rtl' ? ' is-override' : ''}`}
+                                            <p ref={writRef} className={`mg-writ edu-glyph is-text${scheme.from !== 'hebrew' && dir === 'rtl' ? ' is-override' : ''}`}
                                                 dir={dir} lang={scheme.from === 'hebrew' ? 'he' : undefined} role="img"
                                                 aria-label={`${scheme.short}: ${result.plain}`} style={{ '--mg-face': `"${face.family}"` }}>
                                                 {writ}

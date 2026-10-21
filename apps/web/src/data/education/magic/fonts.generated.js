@@ -10,8 +10,8 @@ export default {
  },
  "malachim": {
   "family": "TL Malachim",
-  "dataHash": "0e68fe719c300ec0deb407a2708c38081dbd6702a30a171e64ec455f1c30d9d5",
-  "woff2Sha256": "db357b59df1d550f67b652c5d89728118245baededc0977f061beb4aa3de0ac6"
+  "dataHash": "a04d317a03d3734b26344a50fdaf6f08a08b92240c7d113fb2fa8bb7035b04aa",
+  "woff2Sha256": "8ecbe2b23b6184f2cdadca63f954d8d4b54f16fcaf62dfef3486b2f70633de3e"
  },
  "transitus-fluvii": {
   "family": "TL River",
