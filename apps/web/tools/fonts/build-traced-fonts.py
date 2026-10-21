@@ -28,7 +28,7 @@ The data. dump-traced.mjs gives, for each alphabet, its scheme's keys, each with
 traced glyph of its sign as MagicGlyph.jsx draws it at text size: the strokes d drawn
 with the house pen (pen.js, 5.5, round caps and joins), each ring with its radius, its
 pen and the radius of the hole the strokes are masked by, and each dot with its radius.
-A glyph with a pen of its own is refused there. A filled glyph (glyphkit/README.md,
+A glyph with a pen of its own is refused there. A filled glyph (docs/research/magical-scriptorium/glyphkit/README.md,
 "Filled glyphs") is given as its outline alone, { fill }: absolute M L C Q Z, every
 subpath closed, drawn by MagicGlyph as one path filled even-odd, with no pen.
 

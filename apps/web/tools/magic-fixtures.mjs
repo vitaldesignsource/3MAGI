@@ -7,7 +7,8 @@
 // kit's rule that a stroke stops at the edge of its ring. The filled glyphs'
 // cases hold the rules of the kit's "Filled glyphs" (magic-lib.mjs
 // fillProblems): the commands, the closed subpaths, the 0–100 box, the ink
-// inside the body box (curves' extrema included) and fill alone.
+// inside the body box (curves' extrema included), a fill that draws something
+// under evenodd, and fill alone.
 
 const TRI = 'M 20 20 L 60 20 L 40 60 Z';
 
@@ -59,7 +60,10 @@ export const BAD_GLYPHS = [
     ['a fill with a stray character', { fill: 'M 20 20 L 60 2x0 L 40 60 Z' }],
     ['a fill subpath with no area', { fill: 'M 20 20 L 60 60 Z' }],
     ['a fill with one subpath of no area', { fill: `${TRI} M 30 70 L 40 75 L 50 80 Z` }],
-    ['a fill control point out of 0–100', { fill: 'M 20 40 C 20 -10 80 -10 80 40 Z' }],
+    ['a fill whose two subpaths cancel under evenodd', { fill: `${TRI} ${TRI}` }],
+    // its control points leave 0–100 while its ink (down to y 15.25) stays in the
+    // body box, so only the 0–100 rule refuses it
+    ['a fill control point out of 0–100', { fill: 'M 20 64 C 20 -1 80 -1 80 64 Z' }],
     ['a fill end point out of 0–100', { fill: 'M 20 20 L 120 20 L 40 60 Z' }],
     ['fill ink left of the body box', { fill: 'M 8 30 L 40 30 L 40 60 Z' }],
     ['fill ink below the body box', { fill: 'M 20 30 L 60 30 L 40 86 Z' }],

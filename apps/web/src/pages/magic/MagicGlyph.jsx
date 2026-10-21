@@ -3,7 +3,7 @@ import { inkBox, isFill, textOf } from './sign';
 import { HOUSE_DOT, HOUSE_PEN, HOUSE_RING, ringPen } from './pen';
 
 // The one renderer of a drawn letter. The glyph data are drawn as the glyph
-// kit stores them (glyphkit/README.md): the same viewBox, pen, caps and joins
+// kit stores them (docs/research/magical-scriptorium/glyphkit/README.md): the same viewBox, pen, caps and joins
 // and the same three element kinds —
 //
 //   <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="5.5"

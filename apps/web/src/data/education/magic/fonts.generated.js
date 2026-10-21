@@ -30,8 +30,8 @@ export default {
  },
  "enochian": {
   "family": "TL Enochian",
-  "dataHash": "91879fe9b89fd94a13a4da7dc51ecd368fd1ba16c0a2de529c05c1d9febc98d0",
-  "woff2Sha256": "223eceeba42926c1cdeb7cf29f7b269ea9c5e3cce9108f7e2fce7234a832e6c0"
+  "dataHash": "fe57b9035a07bc22aedcab00aff49eecc28843cd9fea2f33328857503b828825",
+  "woff2Sha256": "0f1631300d4a4d0ecb64447cee779994830a31cc6f635c6c7fbcbedf94f2d2e3"
  },
  "alphabet-of-the-magi": {
   "family": "TL Magi",

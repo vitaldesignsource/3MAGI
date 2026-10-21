@@ -7,7 +7,7 @@ import '../../styles/magic.css';
 import '../../styles/magic-kit.css';
 
 // The glyph kit's proof: the kit's own sample set drawn by the site's
-// renderer, laid out exactly as glyphkit/sheet.mjs lays out its specimen
+// renderer, laid out exactly as docs/research/magical-scriptorium/glyphkit/sheet.mjs lays out its specimen
 // sheet, so the two can be compared pixel for pixel. Below it the same
 // letters stand in the wing's letter grid, keyed to Hebrew and running right
 // to left, to prove the keyboard. Registered in the dev server only (App.jsx),

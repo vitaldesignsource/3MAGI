@@ -86,7 +86,7 @@ function arcPoints(x1, y1, rx, ry, rotDeg, large, sweep, x2, y2) {
     return out;
 }
 
-// A filled glyph ({ fill }, glyphkit/README.md "Filled glyphs"): the outline
+// A filled glyph ({ fill }, docs/research/magical-scriptorium/glyphkit/README.md "Filled glyphs"): the outline
 // of the letter's ink, drawn as one path, evenodd, with no pen — where the
 // other glyphs are centre lines ({ d, rings, dots }) for the house pen. A
 // glyph is one or the other, never both (validate-magic.mjs).

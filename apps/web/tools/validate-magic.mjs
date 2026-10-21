@@ -2,7 +2,7 @@
 // Validates the Magical Scriptorium before it can be built. The wing holds the
 // stricter line the halls beside it do not: a drawing says what it was drawn
 // from, a quotation names its translation, a claim carries its standing, and
-// a letter with no form says why. The glyph kit's rules (glyphkit/check.mjs)
+// a letter with no form says why. The glyph kit's rules (docs/research/magical-scriptorium/glyphkit/check.mjs)
 // are applied to every drawn letter. Nothing is skipped silently: a module
 // that will not load is an error with its message, not an absence.
 //

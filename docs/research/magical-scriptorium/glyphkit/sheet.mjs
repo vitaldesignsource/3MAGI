@@ -12,6 +12,8 @@ const esc = (s) => String(s ?? '').replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<
 
 const svg = (g, size) => {
     if (!g) return `<svg width="${size}" height="${size}" viewBox="0 0 100 100"><rect x="10" y="10" width="80" height="80" fill="none" stroke="#6b5a3a" stroke-dasharray="4 4"/><text x="50" y="56" text-anchor="middle" font-size="12" fill="#8a7650">gap</text></svg>`;
+    // a filled glyph: its outline filled, evenodd, no pen (README.md, "Filled glyphs")
+    if (typeof g.fill === 'string') return `<svg width="${size}" height="${size}" viewBox="0 0 100 100"><path d="${esc(g.fill)}" fill="currentColor" fill-rule="evenodd"/></svg>`;
     const rings = (g.rings ?? []).map(([x, y, r = 6]) => `<circle cx="${x}" cy="${y}" r="${r}" stroke-width="3.6"/>`).join('');
     const dots = (g.dots ?? []).map(([x, y, r = 2.6]) => `<circle cx="${x}" cy="${y}" r="${r}" fill="currentColor" stroke="none"/>`).join('');
     return `<svg width="${size}" height="${size}" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"><path d="${esc(g.d)}"/>${rings}${dots}</svg>`;

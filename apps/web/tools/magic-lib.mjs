@@ -28,7 +28,8 @@ export async function loadModules(registry) {
     return { modules, problems };
 }
 
-// --- the glyph kit's path rules (ported from glyphkit/check.mjs) -----------
+// --- the glyph kit's path rules (ported from its check.mjs, -----------------
+// docs/research/magical-scriptorium/glyphkit/check.mjs) ----------------------
 
 const ARGS = { M: 2, L: 2, H: 1, V: 1, C: 6, S: 4, Q: 4, T: 2, A: 7, Z: 0 };
 const TOKEN = /[A-Za-z]|-?(?:\d+\.?\d*|\.\d+)(?:e-?\d+)?/g;
@@ -185,8 +186,8 @@ export function glyphProblems(g) {
     return out;
 }
 
-// --- filled glyphs (glyphkit/README.md, "Filled glyphs"; ported from the
-// kit's fill.mjs) ---------------------------------------------------------
+// --- filled glyphs (the kit's README, "Filled glyphs", and its fill.mjs: ---
+// docs/research/magical-scriptorium/glyphkit/) ------------------------------
 // A filled glyph is { fill }: the outline of the letter's ink, drawn by
 // MagicGlyph as one path filled evenodd with no pen. Its path is absolute
 // M L C Q Z only, every subpath begins with M and is closed with Z, and
@@ -283,6 +284,31 @@ function enclosesArea(sub) {
     return far > 1e-6 && pts.some((p) => Math.abs((b[0] - a[0]) * (p[1] - a[1]) - (b[1] - a[1]) * (p[0] - a[0])) / far > 1e-3);
 }
 
+// The area a fill draws, filled evenodd: on rows 0.1 unit apart across its
+// box, the crossings of every subpath's edges (curves in 24 steps) sorted and
+// taken in pairs, each pair a run of ink. Subpaths that cancel (the same shape
+// twice, or a counter the size of its outline) draw nothing, though each
+// encloses some area.
+export function evenOddArea(subs) {
+    const edges = [];
+    for (const s of subs) {
+        const pts = [s.start, ...s.segs.flatMap((seg) => (seg.c === 'L' ? [seg.p[1]] : Array.from({ length: 24 }, (_, k) => fillPoint(seg, (k + 1) / 24))))];
+        for (let i = 0; i < pts.length; i++) edges.push([pts[i], pts[(i + 1) % pts.length]]);
+    }
+    const ys = edges.flatMap(([a, b]) => [a[1], b[1]]);
+    const y0 = Math.min(...ys), y1 = Math.max(...ys), h = 0.1;
+    let area = 0;
+    for (let y = y0 + h / 2; y < y1; y += h) {
+        const xs = [];
+        for (const [a, b] of edges) {
+            if ((a[1] <= y && y < b[1]) || (b[1] <= y && y < a[1])) xs.push(a[0] + ((y - a[1]) / (b[1] - a[1])) * (b[0] - a[0]));
+        }
+        xs.sort((p, q) => p - q);
+        for (let k = 0; k + 1 < xs.length; k += 2) area += (xs[k + 1] - xs[k]) * h;
+    }
+    return area;
+}
+
 function fillProblems(g) {
     const out = [];
     const keys = Object.keys(g).filter((k) => k !== 'fill');
@@ -296,6 +322,7 @@ function fillProblems(g) {
     const off = subs.flatMap((s) => [s.start, ...s.segs.flatMap((seg) => seg.p.slice(1))]).find(([x, y]) => x < 0 || x > 100 || y < 0 || y > 100);
     if (off) out.push(`fill coordinate out of the 0–100 box: ${off[0]},${off[1]}`);
     subs.forEach((s, k) => { if (!enclosesArea(s)) out.push(`fill subpath ${k + 1} encloses no area`); });
+    if (subs.every(enclosesArea) && evenOddArea(subs) < 0.01) out.push('the fill draws nothing: its subpaths cancel each other under evenodd');
     const b = fillBox(subs);
     const r1 = (v) => Math.round(v * 10) / 10;
     const e = 1e-6;

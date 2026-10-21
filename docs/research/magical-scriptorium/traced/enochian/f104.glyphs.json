@@ -1,0 +1,3885 @@
+{
+ "slug": "enochian",
+ "title": "The Enochian Alphabet: the twenty-one forms of Sloane MS 3188, f. 104, drawn as type on their ink",
+ "format": "filled glyphs ({ fill }), glyphkit/README.md \"Filled glyphs\": absolute M L C Q Z, every subpath closed, fill-rule evenodd, viewBox 0 0 100 100, ink inside x 10-90, y 15-85",
+ "primary": {
+  "copy": "British Library, Sloane MS 3188, f. 104 (folio and date as given in the Wikimedia Commons description), reproduced on Wikimedia Commons as \"File:Enochian letters (1583 manuscript).png\": the uploaded original, 4303 x 1603 px, SHA-1 7f5476cdb427b9b9a37e06c4b82e00df9c2fd086 (matching the checksum on the Commons file page). Commons gives the manuscript as its source but not who made the image or where it was taken from; the image is essentially bitonal (thresholded), so solid ink carries no tonal detail.",
+  "image": "Wikimedia Commons file, downloaded: f104-original-4303x1603.png",
+  "work": "John Dee's record of his actions with spirits (the Libri Mysteriorum; Sloane MS 3188 holds the conferences of 22 December 1581 to 1583), the record of 6 May 1583: Dee's drawing of the twenty-one letters as Edward Kelley reported them, introduced by Dee's note \"... there remayned only the shape of the letter in blak. after this manner. / and iust of this quantitie and proportion.\" (tentative reading of the crop).",
+  "date": "6 May 1583 (Commons description of the leaf).",
+  "locator": "f. 104: under three lines of Dee's English note, two lines of forms - 11 above (with a smaller second form written over the 2nd from the right) and 10 below - read from right to left; no names or Latin values stand beside the forms on this crop. Whitby's transcription puts the drawing at f. 104a, lines 30-31 (source report).",
+  "why": "Dee's note above the letters asks for the shape of the letter in black 'iust of this quantitie and proportion' (Whitby's transcription, as read in the source report); of the reachable images this original is the largest and sharpest (letters 142-212 px tall) and every form is whole in it."
+ },
+ "witnesses": [
+  {
+   "role": "second manuscript (structure only, not outlines)",
+   "copy": "British Library, Sloane MS 3189 (Liber Loagaeth), 'r. 57' per Commons; Wikimedia Commons \"File:Enochian letters (1583 manuscript) alt.jpg\", the 1085 x 441 px greyscale original (SHA-1 cd460a4ec63a9fc8f7678e552b67fb7124b94ea3); letters about 40-52 px tall.",
+   "use": "registered onto each f. 104 cell to read the course of strokes where f. 104 is solid: the course on which the crossings of Un and Or are drawn open, and Pal's dot, set clear of its stem; no outline taken from it"
+  },
+  {
+   "role": "later witness (engraved; structure only)",
+   "copy": "Meric Casaubon (ed.), A True & Faithful Relation (London, 1659), engraved Holy Table, Wellcome Collection copies 1 and 2 (IIIF full-resolution PNGs, Public Domain Mark).",
+   "use": "compared for the parts of Un, Or and Ged; its cutting of Un and Or agrees with the course on which their crossings are drawn open; no outline taken from it"
+  }
+ ],
+ "scale": {
+  "px_per_unit": 3.75,
+  "cell_px": 375,
+  "note": "One scale for all 21 letters: 3.75 px of the 4303-px original to one unit of the 0-100 box (cell 375 px square), so their relative sizes and proportions are those of f. 104. Each cell is centred horizontally on its letter's ink box; vertically, both lines of f. 104 stand on one baseline at y 72.53 (see baseline)."
+ },
+ "baseline": {
+  "note": "One common baseline: each line's band runs from the median top to the median bottom (its baseline) of its letters' ink on f. 104, and both baselines are set at y 72.53, chosen so that the taller band, the upper line's, is centred on y 50. Every letter keeps its height above its own line's baseline, as on the page, and all 21 stand on one baseline. (The lines were first registered by the centres of their bands, which put the lower line's baseline 4 px of the original, 1.07 units, above the upper line's; corrected by the independent check, which moved the ten lower-line letters down by exactly 4 px, their outlines otherwise unchanged.)",
+  "baseline_units": 72.53,
+  "upper_line": {
+   "letters": "Pa Veh Ged Gal Or Un Graph Tal Gon Na Ur (read right to left)",
+   "median_top_px": 646,
+   "median_bottom_px": 815,
+   "band_units": [
+    27.47,
+    72.53
+   ]
+  },
+  "lower_line": {
+   "letters": "Mals Ger Drux Pal Med Don Ceph Van Fam Gisg (read right to left)",
+   "median_top_px": 868.0,
+   "median_bottom_px": 1028.0,
+   "band_units": [
+    29.87,
+    72.53
+   ]
+  }
+ },
+ "method": [
+  "Cells: one 375-px square per letter from the 4303-px original, all at one scale (3.75 px to a unit), both lines on one baseline at y 72.53 (see baseline).",
+  "The ink: the letter's own connected ink in its cell, thresholded at 128 from a 4x bilinear enlargement, specks dropped, as a signed distance field; its medial axis gave the course and width of every stroke.",
+  "Construction (each letter's 'construction'): strokes laid by hand on that axis, each a centre line through its nodes [x, y, width] or [x, y, left, right] (a centripetal Catmull-Rom spline, or straight with line: true), its width interpolated monotonically along it, and its ends cut (cut, at a screen angle), flared to a wedge (flare: the half-widths grown on a concave curve over len units, then cut) or tapered to a point; a few small parts round-ended (Gisg's fine tip, the heads of Pal's dot, of Drux's tongue and of the lobes of Gal and Veh). The strokes are united and the outline fitted with cubic Beziers whose on-curve points stand at corners, at the ends of straight edges and at the extrema of x and y, tangent-continuous elsewhere (within 0.1 unit of the union).",
+  "Weights: main stems, diagonals and bowls about 9.5 units, heavy horizontals about 7.5, arms and hairlines 3.5 to 5, swelling or tapering where the ink does; the relative sizes, proportions and places of the letters are the leaf's.",
+  "Checked (each letter's 'check'): the outline's distance from the raw ink's edge, sampled every 0.1 unit along it; in every letter within 3 units along at least 94 per cent of its length and nowhere more than 4.6 units, save the dot of Pal. Also the kit's check.mjs and compare.mjs (each letter's outline over its cell), and the letters at 16, 20, 24 and 32 px.",
+  "Departures from f. 104: Un's crossing and foot and Or's short strokes and foot, solid ink in the image, drawn open on the course Sloane MS 3189 and Casaubon's Holy Table (1659) give them (formConfidence medium); the dot of Pal set clear of its stem as in Sloane MS 3189 (see its check). No outline was taken from either witness.",
+  "The owner's reference images (a chart, a commercial SVG pack and a FontSpace font) were looked at for the level of finish and to cross-check which form is which letter; no outline was traced, copied or adapted from them."
+ ],
+ "previous": [
+  "The filled outlines of commit 3f4f459: the ink's own edge, faired within a unit of it (kept in the git history of enochian.js).",
+  "Before that, centre-line glyphs { d } for the house pen traced from Wikimedia's 1920-px rendering of the same file."
+ ],
+ "letters": [
+  {
+   "order": 1,
+   "name": "Un",
+   "value": "A",
+   "translit": "a",
+   "glyph": {
+    "fill": "M 50.86 28.65 L 47.94 25.35 C 46.32 26.32 44.65 27.21 43.26 28.5 C 42.49 29.22 41.82 30.07 41.09 30.8 C 38.5 31.75 36.19 32.95 33.91 34.51 C 33.96 34.74 34.05 35.33 34.19 35.52 C 36.12 35.98 38.12 36.41 40.08 36.71 C 40.08 36.74 41.24 37.89 41.35 38 L 44.51 40.94 C 47.96 44.14 52.7 48 54.35 52.41 C 53.52 53.26 52.61 54.21 51.77 54.92 C 49.97 53.4 47.98 51.88 45.51 51.88 C 43.25 51.88 40.68 52.88 39.9 55.19 C 39.57 56.21 39.58 57.3 39.49 58.35 C 39.81 58.61 39.96 58.8 40.33 58.76 C 41.4 58.25 42.4 57.61 43.52 57.25 C 44.86 57.59 45.82 58.01 46.86 58.97 C 46.9 59 47.21 59.38 47.2 59.39 C 46.07 60.55 44.9 61.78 43.92 63.08 C 43.75 63.3 43.04 64.4 42.88 64.47 C 39.75 64.17 36.53 63.91 33.4 63.58 L 33.4 70.02 C 37.27 70.44 41.38 70.87 45.05 72.14 C 45.79 73.02 46.54 73.89 47.32 74.74 C 47.55 74.67 48.14 74.51 48.3 74.35 C 48.46 73.51 48.64 72.55 48.72 71.7 C 48.73 71.61 48.88 70.79 48.91 70.78 C 50.21 68.85 51.74 67.22 53.41 65.59 C 53.5 65.51 53.96 65.06 54.08 65.05 C 56.04 66.39 58.17 66.85 60.49 67.19 C 60.64 67 61.02 66.54 61.07 66.3 C 60.35 64.41 59.49 62.54 58.21 61.01 C 60.04 59.2 61.76 57.28 63.5 55.38 L 60.58 52.57 L 63.66 50.89 C 62.5 48.59 61.46 46.24 59.95 44.14 C 58.94 42.74 57.64 41.37 56.67 40.07 C 58.95 37.59 59.83 36.36 63.4 36.36 C 64.01 36.36 64.62 36.39 65.23 36.44 L 55.57 27.16 C 55.67 27.94 55.77 28.71 55.77 29.5 C 55.77 32.67 54.24 33.86 52.32 36.03 C 50.86 34.8 49.29 33.54 47.91 32.29 C 48.78 30.98 49.84 29.84 50.86 28.65 Z"
+   },
+   "strokes": "Filled outline of a zigzag: a heavy spine from the head at the upper left (a pointed lead-in, with an end rising beside it) down to the right and sharply back down to the left; an arm from the upper spine to a flared serif at the upper right; a bar across the lower bend from a point at the left, hooked up, then down to a spur at the lower right; a broad foot cut square at the left, with a drop below; the crossings open.",
+   "formConfidence": "medium",
+   "formReason": "its crossing, solid on f. 104, drawn open on the course of Sloane MS 3189",
+   "construction": [
+    {
+     "pts": [
+      [
+       34.0,
+       35.0,
+       1.0
+      ],
+      [
+       38.6,
+       34.2,
+       4.6
+      ],
+      [
+       43.6,
+       33.6,
+       7.0
+      ]
+     ]
+    },
+    {
+     "pts": [
+      [
+       42.8,
+       34.6,
+       7.4
+      ],
+      [
+       45.6,
+       30.4,
+       6.0
+      ],
+      [
+       49.4,
+       27.0,
+       4.4
+      ]
+     ]
+    },
+    {
+     "pts": [
+      [
+       42.8,
+       33.6,
+       8.4
+      ],
+      [
+       47.6,
+       37.8,
+       8.8
+      ],
+      [
+       52.4,
+       42.2,
+       9.0
+      ],
+      [
+       56.6,
+       47.2,
+       9.0
+      ],
+      [
+       59.8,
+       53.0,
+       8.8
+      ]
+     ]
+    },
+    {
+     "pts": [
+      [
+       60.4,
+       52.4,
+       8.6
+      ],
+      [
+       55.6,
+       57.4,
+       8.8
+      ],
+      [
+       51.2,
+       61.6,
+       8.8
+      ],
+      [
+       47.4,
+       65.6,
+       8.6
+      ],
+      [
+       45.4,
+       68.6,
+       8.4
+      ]
+     ]
+    },
+    {
+     "pts": [
+      [
+       51.6,
+       41.4,
+       5.8
+      ],
+      [
+       55.8,
+       36.6,
+       6.0
+      ],
+      [
+       60.4,
+       31.8,
+       6.6
+      ]
+     ],
+     "e": {
+      "t": "flare",
+      "l": 3.4,
+      "r": 3.4,
+      "len": 5,
+      "pow": 1.8
+     }
+    },
+    {
+     "pts": [
+      [
+       39.8,
+       58.6,
+       0.8
+      ],
+      [
+       42.6,
+       55.2,
+       4.8
+      ],
+      [
+       46.4,
+       55.0,
+       6.0
+      ],
+      [
+       52.0,
+       59.4,
+       6.4
+      ],
+      [
+       56.6,
+       63.4,
+       5.6
+      ],
+      [
+       60.8,
+       66.8,
+       1.0
+      ]
+     ]
+    },
+    {
+     "pts": [
+      [
+       33.4,
+       66.8,
+       6.4
+      ],
+      [
+       39.0,
+       67.4,
+       6.6
+      ],
+      [
+       45.6,
+       68.4,
+       7.4
+      ]
+     ],
+     "s": {
+      "t": "cut",
+      "ang": 90
+     }
+    },
+    {
+     "pts": [
+      [
+       45.6,
+       68.0,
+       6.4
+      ],
+      [
+       46.8,
+       71.2,
+       4.2
+      ],
+      [
+       47.8,
+       74.6,
+       1.0
+      ]
+     ]
+    }
+   ],
+   "check": {
+    "outline_from_ink_edge_p95_units": 2.28,
+    "outline_from_ink_edge_max_units": 3.9,
+    "outline_beyond_3_units_pct": 2.5
+   },
+   "source": {
+    "position_as_printed": "Upper line of forms, 6th from the right (6th from the left); no. 6 of 21 when the two lines are read from right to left, as the script runs",
+    "label_as_printed": null,
+    "dee_order": 6,
+    "line": "upper",
+    "cell_origin_px": [
+     1790,
+     543
+    ],
+    "ink_box_px": [
+     1916,
+     637,
+     2038,
+     826
+    ],
+    "image": "Sloane MS 3188, f. 104: the Wikimedia Commons original, 4303 x 1603 px (SHA-1 7f5476cdb427b9b9a37e06c4b82e00df9c2fd086); cell = 375 px square at cell_origin_px, 3.75 px to a unit"
+   },
+   "variants": "Sloane MS 3189: the same crossed form, more compact and heavier, the knot at the foot as dense. Casaubon 1659, Holy Table (e.g. bottom border, 1st box; the same in Wellcome copy 2): cut as a clean zigzag, down to the right and back down to the left, with a short serifed bar across each end; Dee's bent head, hooked right arm and heavy foot are regularised away. In the heading of Casaubon's Specimen the A of 'Pagesgem' (read right to left) is a different crossed form, an oblique stem hooked to the upper right and crossed at its foot, and both A's of 'Bacap' are y-like: the heading does not use the f. 104 form."
+  },
+  {
+   "order": 2,
+   "name": "Pa",
+   "value": "B",
+   "translit": "b",
+   "glyph": {
+    "fill": "M 28.27 32.41 C 28.24 32.58 28.16 33.08 28.23 33.24 C 29.52 33.88 30.91 34.58 32.27 35.1 C 33.25 35.47 34.35 35.75 35.24 36.15 C 36.24 38.56 37.24 40.97 38.28 43.36 L 39.47 46.13 C 41.62 51.09 45.28 59.92 48.36 64.05 C 50.25 66.59 52.66 68.86 54.94 71.04 C 55.26 70.93 56.05 70.69 56.27 70.45 C 56.32 70.31 56.27 69.78 56.37 69.68 C 56.6 69.44 57.08 69.3 57.37 69.14 C 58.8 68.39 60.11 67.55 61.15 66.29 C 64.13 62.69 65.52 57.58 65.52 52.96 C 65.52 52.09 65.37 51.13 65.4 50.35 C 66.45 49.81 67.57 49.35 68.51 48.63 C 70.64 47.02 72.3 43.87 72.3 41.2 C 72.3 35.99 68.13 32.82 63.2 32.82 C 60.91 32.82 58.65 33.17 56.4 33.55 L 56.4 40.69 C 58.61 39.95 61.59 37.46 63.83 37.46 C 65.9 37.46 67.35 38.64 67.35 40.74 C 67.35 41.76 66.21 43.62 65.38 44.19 C 64.51 44.8 63.33 45.17 62.38 45.59 C 60.31 45.56 58.59 45.9 56.65 46.6 C 56.6 47.01 56.51 47.23 56.74 47.52 C 57.2 47.8 59.65 49.15 59.78 49.49 C 59.74 50.77 60.11 52.06 60.11 53.32 C 60.11 56.45 59.6 59.63 58.21 62.46 C 57.8 63.31 57.13 64.16 56.43 64.81 C 55.82 60.39 54.5 56.07 53.17 51.81 L 52.17 48.57 C 51.89 47.69 51.61 46.81 51.33 45.92 L 50.37 42.89 L 48.61 37.38 L 47.45 33.77 C 47.18 32.91 46.9 32.06 46.62 31.2 L 33.28 31.2 C 33.31 31.38 33.58 31.71 33.53 31.87 C 33.52 31.91 33.05 31.93 32.99 31.94 C 31.42 32.11 29.84 32.22 28.27 32.41 Z"
+   },
+   "strokes": "Filled outline: a heavy diagonal cut flat at the top, with a pointed lead-in at the upper left, narrowing to the point of a V; the thinner right arm climbs, curls over to the right and back across the top, and ends cut square; a small barb juts left where the curl leaves the arm; the inside of the V narrows to a slit at the point.",
+   "formConfidence": "high",
+   "construction": [
+    {
+     "pts": [
+      [
+       40.0,
+       31.2,
+       12.6
+      ],
+      [
+       44.0,
+       42,
+       11.6
+      ],
+      [
+       47.8,
+       52,
+       10.4
+      ],
+      [
+       51.4,
+       61,
+       8.6
+      ],
+      [
+       54.2,
+       67,
+       5.0
+      ],
+      [
+       55.6,
+       70.8,
+       1.4
+      ]
+     ],
+     "s": {
+      "t": "cut",
+      "ang": 0
+     }
+    },
+    {
+     "pts": [
+      [
+       38.0,
+       34.0,
+       5.4
+      ],
+      [
+       33.0,
+       33.6,
+       3.4
+      ],
+      [
+       28.2,
+       32.8,
+       0.8
+      ]
+     ]
+    },
+    {
+     "pts": [
+      [
+       55.0,
+       68.4,
+       3.6
+      ],
+      [
+       59.0,
+       65.4,
+       4.4
+      ],
+      [
+       61.8,
+       60.0,
+       5.0
+      ],
+      [
+       62.8,
+       53.6,
+       5.4
+      ],
+      [
+       62.8,
+       49.0,
+       5.6
+      ],
+      [
+       67.4,
+       46.0,
+       5.4
+      ],
+      [
+       69.8,
+       41.4,
+       5.0
+      ],
+      [
+       68.4,
+       37.0,
+       4.6
+      ],
+      [
+       64.4,
+       35.2,
+       4.6
+      ],
+      [
+       60.0,
+       35.8,
+       5.6
+      ],
+      [
+       56.4,
+       37.0,
+       7.0
+      ]
+     ],
+     "e": {
+      "t": "cut",
+      "ang": 90
+     }
+    },
+    {
+     "pts": [
+      [
+       62.6,
+       48.2,
+       5.4
+      ],
+      [
+       59.8,
+       47.4,
+       3.6
+      ],
+      [
+       56.6,
+       47.0,
+       0.8
+      ]
+     ]
+    }
+   ],
+   "check": {
+    "outline_from_ink_edge_p95_units": 1.88,
+    "outline_from_ink_edge_max_units": 3.1,
+    "outline_beyond_3_units_pct": 0.7
+   },
+   "source": {
+    "position_as_printed": "Upper line of forms, 1st from the right (11th from the left); no. 1 of 21 when the two lines are read from right to left, as the script runs",
+    "label_as_printed": null,
+    "dee_order": 1,
+    "line": "upper",
+    "cell_origin_px": [
+     3290,
+     543
+    ],
+    "ink_box_px": [
+     3395,
+     659,
+     3561,
+     810
+    ],
+    "image": "Sloane MS 3188, f. 104: the Wikimedia Commons original, 4303 x 1603 px (SHA-1 7f5476cdb427b9b9a37e06c4b82e00df9c2fd086); cell = 375 px square at cell_origin_px, 3.75 px to a unit"
+   },
+   "variants": "Sloane MS 3189: the same V with the right arm curled, the curl drawn as a nearly closed loop. Casaubon 1659: a V with a curled arm, its curl a small closed loop, stands in the left border of the Holy Table (boxes 75-76, Wellcome copy 1; in copy 2 the left border lies in the binding fold) and, set diagonally, in all four corner boxes; the plate does not name it. In the heading of Casaubon's Specimen the B of 'Bacap' (read right to left) is the same V with the right arm curled."
+  },
+  {
+   "order": 3,
+   "name": "Veh",
+   "value": "C",
+   "translit": "c",
+   "glyph": {
+    "fill": "M 32.66 32.06 C 30.9 32.14 28.82 32.63 27.02 33 C 27 33.44 26.88 33.61 27.18 33.86 C 28.85 34.36 30.52 34.8 32.23 35.14 C 33.53 35.39 34.94 35.57 36.15 35.88 C 37.83 39.25 37.35 42.89 37.38 46.54 L 37.4 50.92 C 37.42 53.2 37.39 55.48 37.27 57.76 L 37.12 60.77 C 36.86 65.83 37.38 68.4 33.04 72 C 33.01 71.73 32.8 69.92 32.71 69.83 C 31.31 70.15 29.81 70.62 28.36 70.62 C 27.41 70.62 26.81 70.35 25.99 69.89 C 25.79 70.04 25.34 70.4 25.23 70.62 C 25.32 71.09 25.38 71.65 25.65 72.07 C 26.79 73.85 30.42 73.4 32.24 73.4 L 51.6 73.31 C 51.53 73.14 49.76 71.69 49.48 71.43 C 48.58 70.57 47.77 69.61 47.19 68.5 C 45.59 65.45 46.15 58.91 46.19 55.3 L 55.66 55.48 C 55.68 55.78 55.79 57.79 55.89 57.91 C 56.6 58.06 57.46 58.22 58.15 58.39 C 59.03 59.56 59.63 60.54 59.63 62.05 C 59.63 63.67 58.81 64.61 57.91 65.52 C 57.37 65.46 56.79 65.41 56.29 65.17 C 54.99 64.54 54.67 62.1 53 62.1 C 52.18 62.1 51.5 62.78 51.5 63.6 C 51.5 64.03 51.72 64.43 51.8 64.85 C 52.4 68.37 54.54 70.64 58.3 70.64 C 61.09 70.64 63.68 67.88 64.67 65.48 C 65.17 64.27 65.35 62.96 65.35 61.66 C 65.35 60.27 65 58.85 64.64 57.62 C 68.79 55.76 73 52.38 74.27 47.82 C 74.58 46.69 74.61 45.52 74.65 44.36 L 70.95 42.84 C 70.35 43.67 69.81 44.61 69.07 45.32 C 67.71 46.63 65.42 47.74 63.75 48.63 C 63.22 48.91 62.62 49.15 62.07 49.38 C 63.54 46.99 64.48 44.55 64.48 41.69 C 64.48 37.11 61.15 32.49 56.29 32.49 C 52.63 32.49 50.92 35.31 50.92 38.71 C 50.92 40.46 51.72 42.03 52.4 43.61 C 52.68 43.6 53.4 43.62 53.64 43.49 C 54.28 41.47 54.64 39.38 55.99 37.71 C 56.55 37.66 57.04 37.59 57.59 37.79 C 58.91 38.28 59.68 40.4 59.68 41.68 C 59.68 42.63 59.55 43.69 59.21 44.59 C 58.74 45.85 57.73 46.88 57.08 48.06 C 56.77 48.62 55.91 50.53 55.54 50.87 C 55.56 51.19 55.41 51.38 55.26 51.67 L 46.21 51.5 C 46.21 51.3 46.21 51.09 46.2 50.88 L 46.18 47.68 C 46.16 43.91 46.04 40.09 46.75 36.37 C 47.04 34.82 47.54 33.32 47.9 31.8 L 37.07 31.8 C 35.92 31.8 34.06 31.93 32.73 31.93 Z"
+   },
+   "strokes": "Filled outline: an upright stem swelling to the left at its flat head, which runs out to a point at the left, standing on a foot that reaches far to the left to a small hooked end; on the right a hooked upper lobe coming back to the stem at mid-height, a thin bar from mid-stem running on as a broad wing that rises to the upper right, and a lower bowl curling back up inside itself.",
+   "formConfidence": "medium",
+   "formReason": "a smaller second form, without the wing, stands above it on f. 104",
+   "construction": [
+    {
+     "pts": [
+      [
+       42.2,
+       31.8,
+       9.0
+      ],
+      [
+       41.8,
+       42,
+       8.8
+      ],
+      [
+       41.8,
+       54,
+       8.8
+      ],
+      [
+       41.6,
+       64,
+       9.2
+      ],
+      [
+       41.8,
+       73.4,
+       9.6
+      ]
+     ],
+     "s": {
+      "t": "flare",
+      "l": 5.6,
+      "r": 1.2,
+      "len": 10,
+      "pow": 2.4,
+      "ang": 0
+     },
+     "e": {
+      "t": "flare",
+      "l": 5.0,
+      "r": 6.4,
+      "len": 9,
+      "pow": 2.4,
+      "ang": 0
+     }
+    },
+    {
+     "pts": [
+      [
+       37.0,
+       33.8,
+       4.2
+      ],
+      [
+       31.6,
+       33.6,
+       2.8
+      ],
+      [
+       27.0,
+       33.4,
+       0.8
+      ]
+     ]
+    },
+    {
+     "pts": [
+      [
+       33.0,
+       71.6,
+       3.6
+      ],
+      [
+       29.0,
+       72.0,
+       2.8
+      ],
+      [
+       26.8,
+       71.6,
+       2.4
+      ],
+      [
+       25.6,
+       70.2,
+       1.0
+      ]
+     ]
+    },
+    {
+     "pts": [
+      [
+       53.0,
+       43.6,
+       1.2
+      ],
+      [
+       53.0,
+       38.6,
+       4.2
+      ],
+      [
+       54.8,
+       35.4,
+       5.2
+      ],
+      [
+       58.8,
+       35.6,
+       5.0
+      ],
+      [
+       61.8,
+       39.6,
+       4.8
+      ],
+      [
+       61.6,
+       45.0,
+       4.8
+      ],
+      [
+       59.2,
+       49.4,
+       5.0
+      ],
+      [
+       57.4,
+       53.6,
+       5.6
+      ]
+     ]
+    },
+    {
+     "pts": [
+      [
+       46.0,
+       53.4,
+       3.8
+      ],
+      [
+       57.0,
+       53.6,
+       3.8
+      ]
+     ],
+     "line": true
+    },
+    {
+     "pts": [
+      [
+       55.6,
+       54.4,
+       7.0
+      ],
+      [
+       62.0,
+       54.0,
+       8.6
+      ],
+      [
+       67.6,
+       51.0,
+       8.0
+      ],
+      [
+       71.2,
+       47.4,
+       6.2
+      ],
+      [
+       72.8,
+       43.6,
+       4.0
+      ]
+     ]
+    },
+    {
+     "pts": [
+      [
+       59.4,
+       55.0,
+       6.0
+      ],
+      [
+       62.2,
+       59.6,
+       5.8
+      ],
+      [
+       62.0,
+       64.6,
+       5.6
+      ],
+      [
+       58.6,
+       68.0,
+       5.2
+      ],
+      [
+       55.0,
+       67.0,
+       4.6
+      ],
+      [
+       53.0,
+       63.6,
+       3.0
+      ]
+     ],
+     "e": {
+      "t": "round"
+     }
+    }
+   ],
+   "check": {
+    "outline_from_ink_edge_p95_units": 2.44,
+    "outline_from_ink_edge_max_units": 4.19,
+    "outline_beyond_3_units_pct": 3.3
+   },
+   "source": {
+    "position_as_printed": "Upper line of forms, 2nd from the right (10th from the left); no. 2 of 21 when the two lines are read from right to left, as the script runs",
+    "label_as_printed": null,
+    "dee_order": 2,
+    "line": "upper",
+    "cell_origin_px": [
+     3085,
+     543
+    ],
+    "ink_box_px": [
+     3179,
+     662,
+     3366,
+     819
+    ],
+    "image": "Sloane MS 3188, f. 104: the Wikimedia Commons original, 4303 x 1603 px (SHA-1 7f5476cdb427b9b9a37e06c4b82e00df9c2fd086); cell = 375 px square at cell_origin_px, 3.75 px to a unit"
+   },
+   "variants": "Sloane MS 3189: the same B-like form, with no second form above it; its middle arm looks shorter than the wing of f. 104, as far as the low-resolution image shows. Not among the letters of the Holy Table engraved in Casaubon 1659 (neither impression). In the heading of Casaubon's Specimen the C of 'Bacap' (read right to left) is a K-like form, not this one."
+  },
+  {
+   "order": 4,
+   "name": "Gal",
+   "value": "D",
+   "translit": "d",
+   "glyph": {
+    "fill": "M 30.72 38.18 C 31.05 38.68 31.03 38.79 31.53 39.04 C 32.49 39.17 33.45 39.34 34.42 39.34 C 35.42 39.34 36.3 39.06 37.19 38.63 C 39.49 38.73 41.91 38.84 44.12 39.5 C 52.34 41.96 56.96 49.78 56.96 58.06 C 56.96 58.63 56.62 64.29 56.56 64.4 C 54.04 65.99 51.83 66.31 48.88 66.31 C 47.24 66.31 45.64 65.87 44.06 65.53 C 43.29 64.81 42.3 64.18 41.69 63.31 C 40.76 62 40.7 59.1 38.6 59.1 C 37.57 59.1 36.7 59.97 36.7 61 C 36.7 62.2 37.09 64.11 37.56 65.22 C 37.77 65.72 38.15 66.51 38.46 66.95 C 37.02 68.31 35.73 69.83 34.59 71.46 C 34.69 71.61 34.96 72.04 35.12 72.13 C 37.66 71.71 40.4 70.83 42.99 70.83 C 44.57 70.83 46.13 71.21 47.71 71.29 C 50.15 71.41 52.62 71.22 55.05 71.41 C 56.45 71.52 57.83 71.92 59.24 71.92 C 63.19 71.92 67.46 67.04 69.76 64.17 C 69.69 64 69.47 63.54 69.33 63.43 C 68.06 63.38 66.68 63.36 65.41 63.37 C 65.29 63.38 64.65 63.37 64.57 63.29 C 64.31 57.65 61.59 48.43 59.01 43.39 C 57.95 41.3 56.56 39.35 55.2 37.48 C 56.64 36.35 58.45 35.53 60.32 35.53 C 61.44 35.53 62.64 35.85 63.59 36.36 C 64.03 37.32 64.53 38.16 65.17 39 L 68.31 40.28 L 66.45 29.73 C 65.44 29.49 64.44 29.32 63.39 29.32 C 58.8 29.32 55.22 31.5 51.59 33.83 C 48.59 31.41 45.18 29.78 41.45 28.93 C 41.21 28.34 40.96 27.78 40.82 27.2 L 34.64 27.2 C 33.67 29.04 33.15 29.95 32.81 32.05 C 32.71 32.69 32.72 33.4 32.53 34.02 C 32.07 35.45 31.24 36.77 30.72 38.18 Z"
+   },
+   "strokes": "Filled outline: a heavy head at the upper left ending in a point down to the left, from which a bar runs right and bends down into a curved spine like a reversed C; an arm sweeping up to a flared end at the upper right; under the spine a base pointed at the lower right, running back left to a forked end, a rounded lobe above a point.",
+   "formConfidence": "high",
+   "construction": [
+    {
+     "pts": [
+      [
+       37.8,
+       27.2,
+       6.0
+      ],
+      [
+       37.4,
+       31.0,
+       8.6
+      ],
+      [
+       35.4,
+       35.6,
+       7.2
+      ],
+      [
+       31.0,
+       38.6,
+       1.0
+      ]
+     ],
+     "s": {
+      "t": "cut",
+      "ang": 0
+     }
+    },
+    {
+     "pts": [
+      [
+       34.6,
+       34.2,
+       8.6
+      ],
+      [
+       40.0,
+       33.8,
+       10.0
+      ],
+      [
+       46.0,
+       35.4,
+       9.0
+      ],
+      [
+       51.0,
+       38.6,
+       7.8
+      ],
+      [
+       55.6,
+       43.8,
+       6.4
+      ],
+      [
+       58.6,
+       50.0,
+       5.8
+      ],
+      [
+       60.2,
+       57.0,
+       6.6
+      ],
+      [
+       60.6,
+       62.0,
+       7.8
+      ],
+      [
+       60.6,
+       66.0,
+       8.0
+      ]
+     ]
+    },
+    {
+     "pts": [
+      [
+       50.0,
+       39.0,
+       6.0
+      ],
+      [
+       54.6,
+       34.8,
+       5.0
+      ],
+      [
+       59.4,
+       32.8,
+       5.6
+      ],
+      [
+       64.2,
+       32.8,
+       6.8
+      ],
+      [
+       67.2,
+       34.0,
+       6.0
+      ]
+     ],
+     "e": {
+      "t": "flare",
+      "l": 1.0,
+      "r": 2.4,
+      "len": 4,
+      "pow": 1.8,
+      "ang": 80
+     }
+    },
+    {
+     "pts": [
+      [
+       69.6,
+       63.8,
+       0.8
+      ],
+      [
+       64.6,
+       66.0,
+       5.6
+      ],
+      [
+       59.6,
+       67.6,
+       8.6
+      ],
+      [
+       54.0,
+       68.6,
+       5.6
+      ],
+      [
+       48.0,
+       68.8,
+       5.0
+      ],
+      [
+       42.0,
+       68.2,
+       5.4
+      ],
+      [
+       37.8,
+       70.0,
+       3.4
+      ],
+      [
+       34.8,
+       71.8,
+       0.8
+      ]
+     ]
+    },
+    {
+     "pts": [
+      [
+       42.4,
+       67.4,
+       5.0
+      ],
+      [
+       39.8,
+       64.6,
+       4.6
+      ],
+      [
+       38.6,
+       61.0,
+       3.8
+      ]
+     ],
+     "e": {
+      "t": "round"
+     }
+    }
+   ],
+   "check": {
+    "outline_from_ink_edge_p95_units": 1.91,
+    "outline_from_ink_edge_max_units": 3.7,
+    "outline_beyond_3_units_pct": 1.6
+   },
+   "source": {
+    "position_as_printed": "Upper line of forms, 4th from the right (8th from the left); no. 4 of 21 when the two lines are read from right to left, as the script runs",
+    "label_as_printed": null,
+    "dee_order": 4,
+    "line": "upper",
+    "cell_origin_px": [
+     2444,
+     543
+    ],
+    "ink_box_px": [
+     2556,
+     644,
+     2707,
+     815
+    ],
+    "image": "Sloane MS 3188, f. 104: the Wikimedia Commons original, 4303 x 1603 px (SHA-1 7f5476cdb427b9b9a37e06c4b82e00df9c2fd086); cell = 375 px square at cell_origin_px, 3.75 px to a unit"
+   },
+   "variants": "Sloane MS 3189: the same form, the arms a little more even. Casaubon 1659, Holy Table (top border, box 18, upside down on the plate; the same in Wellcome copy 2): the corresponding form is cut as two arcs set back to back like )( with serifed ends, symmetrical where Dee's has one curved spine with four arms."
+  },
+  {
+   "order": 5,
+   "name": "Graph",
+   "value": "E",
+   "translit": "e",
+   "glyph": {
+    "fill": "M 35.12 30.65 C 35.15 29.65 35.18 28.65 35.22 27.65 L 28.59 28.35 C 28.51 31.29 28.37 34.24 28.37 37.18 C 28.37 40.62 28.63 44.06 29.31 47.44 C 29.67 47.52 29.76 47.57 30.02 47.39 C 32.2 44.46 33.57 41.7 34.46 38.15 L 58.09 38.15 C 58.04 42.47 57.75 46.73 57.15 51.02 L 56.68 54.38 C 56.22 57.64 56.18 61.99 54.97 64.98 C 54.41 66.38 53.55 67.64 52.52 68.73 C 52.23 69.03 51.85 69.3 51.59 69.62 C 51.39 69.86 51.43 70.31 51.4 70.6 L 70.64 70.6 C 68.07 68.81 65.24 66.51 65.24 63.1 C 65.24 60.65 65.75 58.09 66.09 55.68 L 66.59 52.12 C 67.27 47.21 67.56 42.31 67.59 37.36 L 67.61 33.37 C 67.62 32.46 67.63 31.56 67.65 30.65 L 35.12 30.65 Z"
+   },
+   "strokes": "Filled outline: a top bar with a raised head at its left end and a drop below it tapering to a point, turning down at the right into an upright stem that stands on a wedge foot reaching further to the right.",
+   "formConfidence": "high",
+   "construction": [
+    {
+     "pts": [
+      [
+       31.5,
+       34.4,
+       7.5
+      ],
+      [
+       66.0,
+       34.4,
+       7.5
+      ]
+     ],
+     "line": true
+    },
+    {
+     "pts": [
+      [
+       62.9,
+       30.65,
+       9.5
+      ],
+      [
+       62.6,
+       45,
+       9.5
+      ],
+      [
+       61.0,
+       58,
+       9.5
+      ],
+      [
+       59.6,
+       70.6,
+       9.5
+      ]
+     ],
+     "s": {
+      "t": "cut",
+      "ang": 0
+     },
+     "e": {
+      "t": "flare",
+      "l": 8.8,
+      "r": 3.4,
+      "len": 9,
+      "pow": 2.4,
+      "ang": 0
+     }
+    },
+    {
+     "pts": [
+      [
+       31.9,
+       28.0,
+       6.6
+      ],
+      [
+       31.6,
+       36,
+       6.4
+      ],
+      [
+       30.8,
+       42,
+       4.6
+      ],
+      [
+       29.6,
+       47.5,
+       0.6
+      ]
+     ],
+     "s": {
+      "t": "cut",
+      "ang": -6
+     }
+    }
+   ],
+   "check": {
+    "outline_from_ink_edge_p95_units": 3.04,
+    "outline_from_ink_edge_max_units": 4.2,
+    "outline_beyond_3_units_pct": 5.7
+   },
+   "source": {
+    "position_as_printed": "Upper line of forms, 7th from the right (5th from the left); no. 7 of 21 when the two lines are read from right to left, as the script runs",
+    "label_as_printed": null,
+    "dee_order": 7,
+    "line": "upper",
+    "cell_origin_px": [
+     1475,
+     543
+    ],
+    "ink_box_px": [
+     1581,
+     646,
+     1744,
+     808
+    ],
+    "image": "Sloane MS 3188, f. 104: the Wikimedia Commons original, 4303 x 1603 px (SHA-1 7f5476cdb427b9b9a37e06c4b82e00df9c2fd086); cell = 375 px square at cell_origin_px, 3.75 px to a unit"
+   },
+   "variants": "Sloane MS 3189: the same 7-shape, the stem flaring into its foot. Casaubon 1659, Holy Table (e.g. bottom border, box 51; the same in Wellcome copy 2): the same, more regular, with a wedge serif at the left end of the bar and a splayed foot. In the heading of Casaubon's Specimen the second E of 'Pagesgem' (read right to left) is a 7-like form with a dotted stroke above it; the first E is a different, heavily inked form, so the heading is no firm witness for this letter."
+  },
+  {
+   "order": 6,
+   "name": "Or",
+   "value": "F",
+   "translit": "f",
+   "glyph": {
+    "fill": "M 50.95 43.12 C 48.2 47.84 44.83 52.26 41.73 56.83 C 40.88 58.08 40.07 59.36 39.38 60.71 C 39.29 60.88 38.97 61.64 38.8 61.71 C 37.81 61.51 36.76 61.37 35.74 61.37 C 34.67 61.37 33.64 61.56 32.6 61.3 L 32.6 66.94 C 34.65 68.15 36.72 69.32 38.73 70.6 L 51.3 70.6 L 48.19 68.52 C 47.93 67.93 47.65 67.33 47.37 66.77 C 48.43 64.91 49.53 63 50.81 61.34 C 52.09 61.61 53.15 62.14 54.13 62.97 C 54.41 63.82 54.59 64.7 54.59 65.61 C 54.59 66.86 54.26 68.12 54.16 69.37 C 54.37 69.48 54.89 69.76 55.13 69.76 C 57.58 68 59.28 66.21 59.28 62.97 C 59.28 60.89 58.39 59.13 56.89 57.71 C 56.32 57.17 55.7 56.7 55.04 56.29 C 54.96 56.24 54.59 56.03 54.57 55.95 C 55.83 54.19 57.04 52.12 58.29 50.47 C 60.07 51.14 61.9 51.52 63.78 51.76 C 63.99 51.48 64.51 50.87 64.57 50.53 C 63.64 48.31 62.78 46.86 61.23 45.17 C 62.18 43.31 63.08 41.42 63.81 39.46 C 63.96 39.08 64.87 36.08 64.92 36.04 C 65.7 35.81 66.56 35.55 67.32 35.29 C 67.36 35.05 67.46 34.47 67.39 34.24 C 66.77 33.76 65.97 33.16 65.44 32.7 C 65.62 31.63 65.92 30.62 66.23 29.58 L 60.23 30.64 L 56.75 31.26 C 56.55 31.77 54.61 36.51 54.41 36.58 C 52.96 36.44 51.42 36.29 49.95 36.29 C 48.16 36.29 46.38 36.52 44.61 36.79 C 44.48 36.81 43.33 36.94 43.3 36.92 C 42.87 36.01 42.34 35.17 41.69 34.4 L 36.71 34.4 C 36.88 35.27 36.8 36.12 36.85 37.02 C 36.92 38.39 37.08 39.76 37.11 41.14 C 37.15 42.94 37.07 44.75 37.17 46.55 C 37.74 46.88 37.66 46.96 38.25 46.95 C 40.34 46.02 41.03 45.38 42.43 43.62 C 44.66 43.31 46.9 42.9 49.16 42.9 C 49.38 42.9 50.9 42.98 50.98 43.07 Z"
+   },
+   "strokes": "Filled outline: a heavy oblique stem from a head at the upper right, pointed to the right, down to a broad wedge foot cut square at the left; a top bar from a turned-down end at the left meeting the stem near its top; off the right of the stem a short bar at mid-height ending in a spur, and below it a short stroke turned down, clear of the bar and of the foot.",
+   "formConfidence": "medium",
+   "formReason": "its short strokes, joined on f. 104, drawn apart as in Sloane MS 3189",
+   "construction": [
+    {
+     "pts": [
+      [
+       61.6,
+       30.4,
+       8.4
+      ],
+      [
+       59.6,
+       37.0,
+       9.6
+      ],
+      [
+       56.4,
+       43.6,
+       10.0
+      ],
+      [
+       52.6,
+       50.0,
+       10.0
+      ],
+      [
+       48.4,
+       56.0,
+       10.0
+      ],
+      [
+       44.6,
+       61.6,
+       10.0
+      ],
+      [
+       41.8,
+       66.8,
+       9.6
+      ]
+     ],
+     "s": {
+      "t": "cut",
+      "ang": -10
+     }
+    },
+    {
+     "pts": [
+      [
+       60.0,
+       34.0,
+       6.8
+      ],
+      [
+       63.6,
+       34.2,
+       4.6
+      ],
+      [
+       67.4,
+       34.8,
+       1.0
+      ]
+     ]
+    },
+    {
+     "pts": [
+      [
+       32.6,
+       64.0,
+       5.2
+      ],
+      [
+       37.6,
+       65.4,
+       7.8
+      ],
+      [
+       42.6,
+       67.8,
+       8.8
+      ],
+      [
+       46.8,
+       70.6,
+       5.0
+      ]
+     ],
+     "s": {
+      "t": "cut",
+      "ang": 90
+     },
+     "e": {
+      "t": "cut",
+      "ang": 0
+     }
+    },
+    {
+     "pts": [
+      [
+       40.8,
+       40.6,
+       6.4
+      ],
+      [
+       49.4,
+       39.6,
+       6.6
+      ],
+      [
+       57.0,
+       40.4,
+       7.2
+      ]
+     ]
+    },
+    {
+     "pts": [
+      [
+       39.0,
+       34.4,
+       4.4
+      ],
+      [
+       40.4,
+       39.4,
+       6.8
+      ],
+      [
+       39.4,
+       43.6,
+       5.0
+      ],
+      [
+       37.6,
+       46.8,
+       1.0
+      ]
+     ],
+     "s": {
+      "t": "cut",
+      "ang": 0
+     }
+    },
+    {
+     "pts": [
+      [
+       55.0,
+       45.4,
+       6.6
+      ],
+      [
+       59.6,
+       47.8,
+       6.0
+      ],
+      [
+       64.2,
+       51.2,
+       1.4
+      ]
+     ]
+    },
+    {
+     "pts": [
+      [
+       48.0,
+       57.6,
+       6.6
+      ],
+      [
+       53.2,
+       58.8,
+       6.2
+      ],
+      [
+       56.4,
+       61.6,
+       5.4
+      ],
+      [
+       56.6,
+       65.6,
+       4.2
+      ],
+      [
+       54.6,
+       69.6,
+       1.0
+      ]
+     ]
+    }
+   ],
+   "check": {
+    "outline_from_ink_edge_p95_units": 2.09,
+    "outline_from_ink_edge_max_units": 2.59,
+    "outline_beyond_3_units_pct": 0.0
+   },
+   "source": {
+    "position_as_printed": "Upper line of forms, 5th from the right (7th from the left); no. 5 of 21 when the two lines are read from right to left, as the script runs",
+    "label_as_printed": null,
+    "dee_order": 5,
+    "line": "upper",
+    "cell_origin_px": [
+     2060,
+     543
+    ],
+    "ink_box_px": [
+     2178,
+     653,
+     2316,
+     813
+    ],
+    "image": "Sloane MS 3188, f. 104: the Wikimedia Commons original, 4303 x 1603 px (SHA-1 7f5476cdb427b9b9a37e06c4b82e00df9c2fd086); cell = 375 px square at cell_origin_px, 3.75 px to a unit"
+   },
+   "variants": "Sloane MS 3189: the same form; on the 1085-px original the two short strokes off the lower stem can be told apart, just (source report). Casaubon 1659, Holy Table (top border, box 16; right border, box 30; the same in Wellcome copy 2): cut as a slanting stem hooked at the top right, a top bar, and two short bars across the stem near its foot; Dee's blotted foot and curled hook are regularised into bars."
+  },
+  {
+   "order": 7,
+   "name": "Ged",
+   "value": "G",
+   "translit": "g",
+   "glyph": {
+    "fill": "M 26.89 31.31 C 26.85 31.55 26.73 32.13 26.79 32.36 C 27.82 33.19 28.99 34.01 30.1 34.64 C 30.77 39.04 31.27 43.61 32.48 47.9 C 34.91 56.48 40.11 63.44 48.64 66.64 C 50.97 67.51 53.43 67.97 55.91 67.97 C 58.68 67.97 61.75 67.8 64.33 66.73 C 70.14 64.32 72.29 57.47 72.29 51.68 C 72.29 50.03 72.07 48.36 71.36 46.85 C 69.79 43.55 65.19 39.9 61.41 39.9 C 58.28 39.9 56.3 41.8 55.08 44.51 C 54.61 45.55 54.19 46.5 54.19 47.66 C 54.19 48.89 54.52 50.09 54.78 51.28 C 55.08 51.44 55.8 51.85 56.14 51.86 C 57.6 50.97 58.9 49.7 60.65 49.95 C 60.55 50.23 60.44 50.54 60.36 50.79 C 62.95 52.18 65.26 54.59 65.26 57.73 C 65.26 60.74 62.77 62.62 59.9 62.62 C 51.92 62.62 45.84 53.44 44.56 46.34 C 44.19 44.27 44.5 42.08 44.46 39.99 C 44.44 38.53 44.26 37.02 44.19 35.61 C 47.56 35.11 49.67 34.2 52.65 32.6 C 52.59 32.15 52.67 31.98 52.34 31.75 C 46.84 30.44 41.13 30.37 35.49 30.37 C 32.05 30.37 30.18 30.38 26.89 31.31 Z"
+   },
+   "strokes": "Filled outline: a flat head-bar pointed at both ends; from it a heavy stroke sweeps down the left side and round the bottom, thinning as it rises up the right into a heavy hook that turns over and ends in a point inside the bowl, above the open eye.",
+   "formConfidence": "high",
+   "construction": [
+    {
+     "pts": [
+      [
+       26.8,
+       31.8,
+       1.0
+      ],
+      [
+       31.0,
+       32.6,
+       4.4
+      ],
+      [
+       38.0,
+       33.2,
+       5.6
+      ],
+      [
+       46.0,
+       33.0,
+       4.6
+      ],
+      [
+       52.6,
+       32.2,
+       0.8
+      ]
+     ]
+    },
+    {
+     "pts": [
+      [
+       36.6,
+       30.6,
+       14.0
+      ],
+      [
+       37.6,
+       38.5,
+       13.6
+      ],
+      [
+       38.8,
+       48.0,
+       12.0
+      ],
+      [
+       43.0,
+       56.8,
+       10.6
+      ],
+      [
+       48.6,
+       62.0,
+       8.6
+      ],
+      [
+       54.0,
+       64.6,
+       6.6
+      ],
+      [
+       61.4,
+       65.0,
+       5.0
+      ],
+      [
+       65.4,
+       63.2,
+       5.0
+      ],
+      [
+       67.8,
+       59.6,
+       5.6
+      ],
+      [
+       68.4,
+       54.6,
+       7.6
+      ],
+      [
+       66.4,
+       48.8,
+       10.6
+      ],
+      [
+       61.2,
+       45.4,
+       11.0
+      ],
+      [
+       57.6,
+       47.4,
+       7.4
+      ],
+      [
+       55.4,
+       51.6,
+       1.4
+      ]
+     ],
+     "s": {
+      "t": "cut",
+      "ang": 0
+     }
+    }
+   ],
+   "check": {
+    "outline_from_ink_edge_p95_units": 1.96,
+    "outline_from_ink_edge_max_units": 3.14,
+    "outline_beyond_3_units_pct": 1.4
+   },
+   "source": {
+    "position_as_printed": "Upper line of forms, 3rd from the right (9th from the left); no. 3 of 21 when the two lines are read from right to left, as the script runs",
+    "label_as_printed": null,
+    "dee_order": 3,
+    "line": "upper",
+    "cell_origin_px": [
+     2788,
+     543
+    ],
+    "ink_box_px": [
+     2889,
+     657,
+     3062,
+     799
+    ],
+    "image": "Sloane MS 3188, f. 104: the Wikimedia Commons original, 4303 x 1603 px (SHA-1 7f5476cdb427b9b9a37e06c4b82e00df9c2fd086); cell = 375 px square at cell_origin_px, 3.75 px to a unit"
+   },
+   "variants": "Sloane MS 3189: the same, the hook a solid wedge over an open eye, as on f. 104 (the earlier reading, a clear counter where f. 104's is filled, is not borne out by the 1085-px original registered on the 4303-px f. 104). Casaubon 1659, Holy Table (e.g. bottom border, boxes 48-49; the same in Wellcome copy 2): the same 6-like form with the hook turned in, more open and evenly cut. In the heading of Casaubon's Specimen both G's of 'Pagesgem' (read right to left) are hooked 6-like forms."
+  },
+  {
+   "order": 8,
+   "name": "Na",
+   "value": "H",
+   "translit": "h",
+   "glyph": {
+    "fill": "M 44.3 50.37 C 43.19 50.62 42.12 50.9 41.05 51.3 L 36.69 57.52 C 37.48 57.33 38.28 57.09 39.08 56.95 C 40.9 56.63 44.64 56.49 46.59 56.41 C 47.89 56.35 49.22 56.4 50.52 56.23 C 53.03 55.92 55.57 55.11 57.93 54.19 C 58 53.79 58.09 53.57 57.9 53.25 C 56.6 52.02 55.36 51.21 53.7 50.56 L 53.7 40.62 C 53.7 40.33 54.03 39.85 54.16 39.59 C 55.32 37.23 57.99 35 60.73 35 C 64.45 35 71.8 38.01 73.63 41.43 C 74.57 43.17 75.05 48.08 75.05 50.12 C 75.05 54.57 73.89 57.19 70.57 60.16 C 68.73 60.27 66.92 59.74 65.11 59.46 L 63.69 67.34 C 66.1 68 68.48 69.19 71.02 69.19 C 76.82 69.19 82.51 65.15 84.9 59.95 C 86.15 57.23 86.62 54.15 86.62 51.17 C 86.62 44.76 84.14 37.64 78.36 34.21 C 75.94 32.77 73.16 32.07 70.46 31.38 C 67.48 30.63 64.42 29.96 61.34 29.96 C 57.2 29.96 54.42 31.83 51.44 34.47 C 51.2 34.69 49.2 36.46 49.07 36.46 C 47.71 35.22 46.31 33.88 44.79 32.83 C 41.78 30.76 37.76 29.4 34.09 29.4 C 22.67 29.4 13.19 39.83 13.19 51.04 C 13.19 59.62 19.45 70.85 29.08 70.85 C 31.77 70.85 34.47 68.64 35.96 66.54 C 36.68 65.53 37.2 64.38 37.84 63.32 C 37.73 63.18 37.41 62.78 37.26 62.71 C 36.08 63.11 34.69 63.76 33.43 63.76 C 32.21 63.76 31.09 63.41 30.28 62.52 C 30.26 62.26 30.37 62.07 30.27 61.8 C 29.95 60.98 27.25 57.9 26.46 56.62 C 24.78 53.87 24.25 50.59 24.25 47.41 C 24.25 45.52 24.43 43.68 24.7 41.81 C 24.91 40.39 25.08 38.91 25.69 37.59 C 27.14 34.45 31.05 33.21 34.26 33.21 C 36.97 33.21 40.13 34.58 41.97 36.58 C 42.68 37.36 43.19 38.32 43.62 39.28 C 43.81 39.69 44.3 40.41 44.3 40.87 L 44.3 50.37 Z"
+   },
+   "strokes": "Filled outline: two round bowls open at the bottom, meeting at the top in a point; the left bowl swells round the left side to a pointed end turned inward, the right bowl round the right side to a blunt end; from the join a short stem drops to a horizontal tongue, pointed at the right and cut off obliquely at the left.",
+   "formConfidence": "high",
+   "construction": [
+    {
+     "pts": [
+      [
+       49.0,
+       41.6,
+       8.4
+      ],
+      [
+       43.0,
+       34.4,
+       4.6
+      ],
+      [
+       35.6,
+       31.4,
+       3.8
+      ],
+      [
+       29.0,
+       32.2,
+       4.0
+      ],
+      [
+       24.4,
+       35.0,
+       5.0
+      ],
+      [
+       20.6,
+       41.0,
+       8.6
+      ],
+      [
+       18.8,
+       49.0,
+       11.0
+      ],
+      [
+       19.6,
+       55.4,
+       11.6
+      ],
+      [
+       22.0,
+       60.4,
+       11.6
+      ],
+      [
+       25.6,
+       64.4,
+       11.0
+      ],
+      [
+       29.6,
+       66.6,
+       8.6
+      ],
+      [
+       33.8,
+       65.8,
+       4.6
+      ],
+      [
+       37.6,
+       63.0,
+       0.8
+      ]
+     ]
+    },
+    {
+     "pts": [
+      [
+       49.0,
+       41.6,
+       8.4
+      ],
+      [
+       54.2,
+       35.4,
+       5.0
+      ],
+      [
+       59.4,
+       32.6,
+       5.0
+      ],
+      [
+       68.6,
+       34.0,
+       6.0
+      ],
+      [
+       76.8,
+       38.4,
+       8.8
+      ],
+      [
+       80.0,
+       44.6,
+       11.0
+      ],
+      [
+       80.8,
+       52.0,
+       11.6
+      ],
+      [
+       79.6,
+       57.6,
+       11.6
+      ],
+      [
+       76.0,
+       62.2,
+       10.8
+      ],
+      [
+       71.4,
+       64.6,
+       9.2
+      ],
+      [
+       64.4,
+       63.4,
+       8.0
+      ]
+     ]
+    },
+    {
+     "pts": [
+      [
+       49.0,
+       40.0,
+       9.4
+      ],
+      [
+       49.0,
+       51.0,
+       9.4
+      ]
+     ],
+     "line": true
+    },
+    {
+     "pts": [
+      [
+       38.6,
+       54.8,
+       4.4
+      ],
+      [
+       43.6,
+       53.6,
+       6.0
+      ],
+      [
+       49.6,
+       53.0,
+       6.6
+      ],
+      [
+       54.6,
+       53.2,
+       4.4
+      ],
+      [
+       58.0,
+       53.8,
+       0.8
+      ]
+     ],
+     "s": {
+      "t": "cut",
+      "ang": -55
+     }
+    }
+   ],
+   "check": {
+    "outline_from_ink_edge_p95_units": 1.79,
+    "outline_from_ink_edge_max_units": 3.54,
+    "outline_beyond_3_units_pct": 0.5
+   },
+   "source": {
+    "position_as_printed": "Upper line of forms, 10th from the right (2nd from the left); no. 10 of 21 when the two lines are read from right to left, as the script runs",
+    "label_as_printed": null,
+    "dee_order": 10,
+    "line": "upper",
+    "cell_origin_px": [
+     436,
+     543
+    ],
+    "ink_box_px": [
+     484,
+     655,
+     764,
+     817
+    ],
+    "image": "Sloane MS 3188, f. 104: the Wikimedia Commons original, 4303 x 1603 px (SHA-1 7f5476cdb427b9b9a37e06c4b82e00df9c2fd086); cell = 375 px square at cell_origin_px, 3.75 px to a unit"
+   },
+   "variants": "Sloane MS 3189: the same pair of bowls with the upright between them, the inner ends of the bowls more pointed. Not among the letters of the Holy Table engraved in Casaubon 1659 (neither impression)."
+  },
+  {
+   "order": 9,
+   "name": "Gon",
+   "value": "I",
+   "translit": "i",
+   "glyph": {
+    "fill": "M 53 36.95 C 53.06 39.6 53.12 42.25 53.12 44.9 C 53.12 49.87 52.84 55.54 52 60.45 C 51.75 61.94 51.24 63.4 50.45 64.69 C 50.14 65.18 49.81 65.64 49.44 66.08 C 49.41 66.12 49.05 66.49 49.07 66.51 C 49.11 66.6 49.51 66.51 49.56 66.6 C 48.29 67.77 47.35 69.19 46.43 70.64 C 46.71 71.23 46.53 71.1 47.01 71.38 C 52.82 71.67 58.66 71.09 64.47 71.09 C 65.54 71.09 66.61 71.18 67.68 71.18 C 72.1 71.18 75.69 68.77 77.71 64.84 C 78.49 63.32 78.91 61.69 79.76 60.2 L 74.15 60.2 C 72.78 62.4 70.83 64.28 68.07 64.28 C 66.06 64.28 63.81 64.22 61.89 63.96 C 61.72 63.04 61.61 62.13 61.61 61.2 C 61.61 60.5 61.67 59.8 61.74 59.1 L 62.06 55.92 C 62.43 52.26 62.62 48.59 62.62 44.9 C 62.62 42.25 62.56 39.6 62.5 36.95 C 63.3 36.95 64.1 36.95 64.9 36.95 L 64.9 29.45 L 30.65 29.45 C 30.04 27.92 29.32 26.45 28.53 25 L 23.59 25 C 23.38 26.25 22.99 27.51 22.72 28.77 C 22.43 30.11 22.27 31.46 22.08 32.82 C 21.97 33.53 21.8 34.26 21.8 34.99 C 21.8 35.93 22.07 36.89 22.21 37.81 C 22.57 40.1 23.2 43.39 23.28 45.6 L 28.04 45.6 C 28.89 43.89 29.64 42.15 30.41 40.42 C 30.94 39.25 31.53 38.17 31.92 36.95 L 53 36.95 Z"
+   },
+   "strokes": "Filled outline: a club-shaped head at the left, rising above the bar and dropping below it; a top bar running right to a blunt end; an upright stem from near that end; and a foot running out to a point at the lower left and along the base to a broad end turned up at the right.",
+   "formConfidence": "high",
+   "construction": [
+    {
+     "pts": [
+      [
+       26.0,
+       25.0,
+       4.8
+      ],
+      [
+       26.6,
+       30.5,
+       8.6
+      ],
+      [
+       27.0,
+       35.0,
+       10.4
+      ],
+      [
+       26.4,
+       40.0,
+       8.0
+      ],
+      [
+       25.6,
+       45.6,
+       4.6
+      ]
+     ],
+     "s": {
+      "t": "cut",
+      "ang": 0
+     },
+     "e": {
+      "t": "cut",
+      "ang": 0
+     }
+    },
+    {
+     "pts": [
+      [
+       27.0,
+       33.2,
+       7.5
+      ],
+      [
+       64.9,
+       33.2,
+       7.5
+      ]
+     ],
+     "line": true
+    },
+    {
+     "pts": [
+      [
+       57.6,
+       29.45,
+       9.5
+      ],
+      [
+       57.8,
+       49,
+       9.5
+      ],
+      [
+       56.8,
+       61,
+       9.5
+      ],
+      [
+       56.4,
+       67.0,
+       9.5
+      ]
+     ],
+     "s": {
+      "t": "cut",
+      "ang": 0
+     },
+     "e": {
+      "t": "flare",
+      "l": 2.0,
+      "r": 2.6,
+      "len": 8,
+      "pow": 2.4
+     }
+    },
+    {
+     "pts": [
+      [
+       46.6,
+       71.0,
+       0.8
+      ],
+      [
+       51.6,
+       68.6,
+       5.8
+      ],
+      [
+       57.0,
+       67.6,
+       7.4
+      ],
+      [
+       64,
+       67.6,
+       7.0
+      ],
+      [
+       70.4,
+       67.4,
+       6.8
+      ],
+      [
+       74.6,
+       64.4,
+       5.8
+      ],
+      [
+       77.0,
+       60.2,
+       4.8
+      ]
+     ],
+     "e": {
+      "t": "cut",
+      "ang": 0
+     }
+    }
+   ],
+   "check": {
+    "outline_from_ink_edge_p95_units": 1.7,
+    "outline_from_ink_edge_max_units": 2.09,
+    "outline_beyond_3_units_pct": 0.0
+   },
+   "source": {
+    "position_as_printed": "Upper line of forms, 9th from the right (3rd from the left); no. 9 of 21 when the two lines are read from right to left, as the script runs",
+    "label_as_printed": null,
+    "dee_order": 9,
+    "line": "upper",
+    "cell_origin_px": [
+     892,
+     543
+    ],
+    "ink_box_px": [
+     974,
+     635,
+     1186,
+     815
+    ],
+    "image": "Sloane MS 3188, f. 104: the Wikimedia Commons original, 4303 x 1603 px (SHA-1 7f5476cdb427b9b9a37e06c4b82e00df9c2fd086); cell = 375 px square at cell_origin_px, 3.75 px to a unit"
+   },
+   "variants": "Sloane MS 3189: the same Z-like form. Casaubon 1659, Holy Table (centre grid, row 1, middle; the same in Wellcome copy 2): the same, thinner, the right end of the foot turned up as a serif."
+  },
+  {
+   "order": 10,
+   "name": "Ur",
+   "value": "L",
+   "translit": "l",
+   "glyph": {
+    "fill": "M 37.43 50.07 C 37.92 52.41 38.53 54.93 39.14 57.31 C 37.86 58.09 36.56 58.83 35.24 59.54 C 34.86 59.75 33.97 60.14 33.95 60.13 C 33.74 59.3 33.47 58.41 33.18 57.6 L 28.49 57.6 C 28.35 58.86 28.18 60.12 28.18 61.4 C 28.18 65.71 29.2 68.99 31.4 72.64 C 31.69 72.62 32.41 72.6 32.64 72.46 C 33.52 70.37 34.22 68.19 34.48 65.94 C 34.54 66.06 34.87 66.63 34.99 66.66 C 35.84 66.15 36.78 65.6 37.64 65.11 L 40.44 63.52 C 40.85 63.29 41.3 63.04 41.68 62.85 C 42.71 64.4 43.86 65.83 45.27 67.06 C 50.16 71.33 61.4 77.14 67.72 78.64 C 70.64 79.34 73.65 79.31 76.6 79.8 L 76.6 61.35 C 75.45 62.98 72.49 68.54 70.44 68.54 C 68.43 68.54 64.56 66.95 62.6 66.21 C 60.03 65.25 57.64 64.05 55.29 62.64 C 50.01 59.45 48.82 57.6 47.45 51.64 C 47.07 49.99 46.5 48.33 46.5 46.63 C 46.5 43.19 48.25 39.14 50.02 36.25 C 50.68 35.17 51.36 34.05 52.25 33.15 C 52.5 32.9 52.61 32.46 52.95 32.36 C 55.18 33.84 56.01 36.03 57.24 38.32 C 57.6 38.23 59.82 37.72 59.97 37.58 C 60.09 36.55 60.25 35.4 60.25 34.36 C 60.25 29.93 58.28 24.85 53.12 24.85 C 51.3 24.85 49.45 25.35 47.91 26.32 C 44.39 28.56 40.1 35.05 38.56 38.93 C 37.95 40.47 37.54 42.11 37.31 43.75 C 37.3 43.82 37.2 44.28 37.16 44.3 C 35.21 44.45 33.16 44.64 31.23 44.72 C 31.04 43.39 30.77 42.1 30.44 40.8 L 25.2 40.8 C 25.08 42.24 25 43.68 25 45.13 C 25 48.6 25.15 51.96 25.59 55.4 L 29.65 55.4 C 30.17 53.98 30.83 52.19 31.15 50.71 C 31.76 50.62 37.28 49.87 37.42 49.99 Z"
+   },
+   "strokes": "Filled outline: a long C opening right, from a curled end hanging down at the upper right, over the top, down the back and round to a broad end turned up at the lower right; the back is crossed by a stroke whose two lobes jut out to the left round a small loop open to the left, the upper lobe cut square at its end.",
+   "formConfidence": "high",
+   "construction": [
+    {
+     "pts": [
+      [
+       58.6,
+       38.0,
+       2.8
+      ],
+      [
+       57.4,
+       33.0,
+       5.6
+      ],
+      [
+       54.6,
+       29.0,
+       7.6
+      ],
+      [
+       50.6,
+       29.4,
+       8.0
+      ],
+      [
+       46.0,
+       34.6,
+       8.6
+      ],
+      [
+       42.6,
+       41.6,
+       9.4
+      ],
+      [
+       41.8,
+       47.0,
+       9.4
+      ],
+      [
+       42.8,
+       52.4,
+       9.4
+      ],
+      [
+       44.4,
+       58.0,
+       9.4
+      ],
+      [
+       47.6,
+       62.8,
+       9.4
+      ],
+      [
+       54.8,
+       67.8,
+       9.4
+      ],
+      [
+       62.8,
+       71.6,
+       10.0
+      ],
+      [
+       70.0,
+       73.8,
+       10.4
+      ],
+      [
+       76.6,
+       74.0,
+       10.4
+      ]
+     ],
+     "e": {
+      "t": "flare",
+      "l": 8.0,
+      "r": 0.6,
+      "len": 8,
+      "pow": 2.2,
+      "ang": 90
+     }
+    },
+    {
+     "pts": [
+      [
+       42.4,
+       46.8,
+       6.0
+      ],
+      [
+       36.0,
+       47.2,
+       5.6
+      ],
+      [
+       29.6,
+       47.8,
+       6.0
+      ]
+     ]
+    },
+    {
+     "pts": [
+      [
+       27.8,
+       40.8,
+       5.2
+      ],
+      [
+       28.2,
+       47.6,
+       6.4
+      ],
+      [
+       27.6,
+       55.4,
+       4.0
+      ]
+     ],
+     "s": {
+      "t": "cut",
+      "ang": 0
+     },
+     "e": {
+      "t": "cut",
+      "ang": 0
+     }
+    },
+    {
+     "pts": [
+      [
+       44.6,
+       57.6,
+       6.4
+      ],
+      [
+       38.8,
+       61.0,
+       6.0
+      ],
+      [
+       33.4,
+       64.0,
+       6.2
+      ]
+     ]
+    },
+    {
+     "pts": [
+      [
+       30.8,
+       57.6,
+       4.6
+      ],
+      [
+       31.4,
+       64.0,
+       6.2
+      ],
+      [
+       32.0,
+       72.6,
+       1.2
+      ]
+     ],
+     "s": {
+      "t": "cut",
+      "ang": 0
+     }
+    }
+   ],
+   "check": {
+    "outline_from_ink_edge_p95_units": 2.0,
+    "outline_from_ink_edge_max_units": 3.67,
+    "outline_beyond_3_units_pct": 0.8
+   },
+   "source": {
+    "position_as_printed": "Upper line of forms, 11th from the right (1st from the left); no. 11 of 21 when the two lines are read from right to left, as the script runs",
+    "label_as_printed": null,
+    "dee_order": 11,
+    "line": "upper",
+    "cell_origin_px": [
+     96,
+     543
+    ],
+    "ink_box_px": [
+     184,
+     628,
+     384,
+     840
+    ],
+    "image": "Sloane MS 3188, f. 104: the Wikimedia Commons original, 4303 x 1603 px (SHA-1 7f5476cdb427b9b9a37e06c4b82e00df9c2fd086); cell = 375 px square at cell_origin_px, 3.75 px to a unit"
+   },
+   "variants": "Sloane MS 3189: the same, the two bars and their spurs heavier, making a small crossed knot on the left. Casaubon 1659, Holy Table (e.g. bottom border, box 47; the same in Wellcome copy 2): a C with two short serifed bars on its back."
+  },
+  {
+   "order": 11,
+   "name": "Tal",
+   "value": "M",
+   "translit": "m",
+   "glyph": {
+    "fill": "M 48.63 20.35 C 45.68 20.35 43.79 22.17 41.38 23.55 C 39.16 24.81 37.24 26.23 35.26 27.83 C 34.13 28.72 32.92 29.49 31.88 30.5 C 29.56 32.78 28.42 36.44 28.42 39.65 C 28.42 43.42 30.81 47.19 34.18 48.91 C 34.85 49.25 35.57 49.49 36.3 49.65 C 36.41 49.67 36.86 49.81 36.92 49.88 C 36.86 50.4 36.81 51.03 36.81 51.55 C 36.81 53.82 37.17 56.21 38.29 58.22 C 41.78 64.48 51.1 67.26 57.82 67.26 C 59.6 67.26 61.38 67.2 63.15 67 C 65.91 66.68 68.61 66.16 71.4 66.31 L 71.4 50.58 C 70.71 50.72 70.01 50.87 69.32 51.01 C 67.19 56.29 67.19 58.01 61 58.01 C 56.73 58.01 44.72 56.5 44.72 50.53 C 44.72 50.01 44.82 49.44 44.93 49.01 C 46.08 48.86 47.23 48.63 48.39 48.51 C 51.35 48.19 55.42 48.17 55.42 44.06 C 55.42 43.18 55.25 42.32 55.14 41.46 C 54.89 41.34 54.24 41 53.96 41.01 C 53.11 41.78 52.2 42.63 51.25 43.25 C 50.8 43.11 50.08 43.12 49.61 43.09 C 47.98 42.98 43.67 43.2 42.56 42.94 C 41.26 42.63 39.87 42.07 38.78 41.33 C 38.97 40.95 38.85 40.36 39.05 39.95 C 40.43 37.1 40.48 35.17 42.65 32.3 C 43.1 31.7 43.59 31.05 44.24 30.64 C 45.3 29.95 47.07 29.49 47.85 29.21 C 49.53 30.25 50.93 31.81 52.09 33.4 L 57.28 33.4 C 56.57 32.04 56.29 30.64 55.79 29.21 C 55.57 28.57 55.23 27.98 55.04 27.34 C 54.75 26.36 54.62 25.34 54.26 24.37 C 53.4 22.02 51.16 20.35 48.63 20.35 Z"
+   },
+   "strokes": "Filled outline: an upper bowl from a square-cut end at the upper right, over a pointed top and round the heavy left side to the waist, with a short barb from the waist rising to the right; below the waist a heavy curve sweeping down and round to the right to a broad flared end cut square.",
+   "formConfidence": "high",
+   "construction": [
+    {
+     "pts": [
+      [
+       54.8,
+       33.4,
+       4.4
+      ],
+      [
+       52.8,
+       29.6,
+       6.0
+      ],
+      [
+       48.8,
+       25.8,
+       3.6,
+       5.4
+      ],
+      [
+       42.6,
+       27.2,
+       7.6
+      ],
+      [
+       38.6,
+       30.6,
+       8.6
+      ],
+      [
+       35.0,
+       35.4,
+       11.0
+      ],
+      [
+       33.8,
+       40.6,
+       10.6
+      ],
+      [
+       36.0,
+       44.8,
+       9.0
+      ],
+      [
+       41.8,
+       46.6,
+       7.4
+      ]
+     ],
+     "s": {
+      "t": "cut",
+      "ang": 0
+     }
+    },
+    {
+     "pts": [
+      [
+       41.0,
+       46.2,
+       6.6
+      ],
+      [
+       47.6,
+       45.8,
+       5.6
+      ],
+      [
+       52.6,
+       45.2,
+       4.8
+      ],
+      [
+       54.6,
+       41.2,
+       1.2
+      ]
+     ]
+    },
+    {
+     "pts": [
+      [
+       41.6,
+       46.0,
+       7.4
+      ],
+      [
+       40.8,
+       51.4,
+       8.0
+      ],
+      [
+       42.2,
+       56.0,
+       9.0
+      ],
+      [
+       45.8,
+       59.2,
+       9.4
+      ],
+      [
+       53.0,
+       62.0,
+       9.6
+      ],
+      [
+       60.4,
+       62.6,
+       9.2
+      ],
+      [
+       66.6,
+       62.0,
+       8.8
+      ],
+      [
+       71.4,
+       61.0,
+       8.4
+      ]
+     ],
+     "e": {
+      "t": "flare",
+      "l": 6.0,
+      "r": 1.4,
+      "len": 7,
+      "pow": 2.2,
+      "ang": 90
+     }
+    }
+   ],
+   "check": {
+    "outline_from_ink_edge_p95_units": 1.97,
+    "outline_from_ink_edge_max_units": 3.55,
+    "outline_beyond_3_units_pct": 1.4
+   },
+   "source": {
+    "position_as_printed": "Upper line of forms, 8th from the right (4th from the left); no. 8 of 21 when the two lines are read from right to left, as the script runs",
+    "label_as_printed": null,
+    "dee_order": 8,
+    "line": "upper",
+    "cell_origin_px": [
+     1172,
+     543
+    ],
+    "ink_box_px": [
+     1279,
+     619,
+     1441,
+     795
+    ],
+    "image": "Sloane MS 3188, f. 104: the Wikimedia Commons original, 4303 x 1603 px (SHA-1 7f5476cdb427b9b9a37e06c4b82e00df9c2fd086); cell = 375 px square at cell_origin_px, 3.75 px to a unit"
+   },
+   "variants": "Sloane MS 3189: the same. Casaubon 1659: a plain epsilon-like form on the Holy Table (e.g. right border, box 24; the same in Wellcome copy 2) may answer to it, but the plate names none of its letters and cuts no inner bar. In the heading of Casaubon's Specimen the M of 'Pagesgem' (read right to left) is an epsilon-like form with three dots above it, which supports that pairing."
+  },
+  {
+   "order": 12,
+   "name": "Drux",
+   "value": "N",
+   "translit": "n",
+   "glyph": {
+    "fill": "M 30.62 37.29 C 30.62 39 30.82 40.7 30.89 42.4 L 35.95 42.4 C 36.07 41.97 36.7 39.32 36.83 39.22 C 39 39.7 41.38 40.36 43.31 41.5 C 46.55 43.43 49.43 47.97 49.53 51.51 C 48.55 50.69 47.16 49 45.8 49 C 44.6 49 43.6 50 43.6 51.2 C 43.6 52.35 45.5 55.46 46.19 56.35 C 45.77 57.33 45.42 58.33 45.09 59.35 C 45.43 59.63 45.5 59.81 45.89 59.74 C 46.35 59.46 48.77 57.8 49.05 57.83 C 49.21 57.85 49.52 58.01 49.56 58.02 C 48.8 60.6 47.2 63.51 44.48 64.43 C 43.15 64.88 41.7 64.9 40.31 64.9 C 39.43 64.9 38.61 64.69 37.79 64.44 C 37.74 62.49 37.11 60.82 36.5 59 L 31.86 59 C 31.19 60.5 30.43 62.06 30.21 63.71 L 29.65 67.89 C 29.54 68.74 29.38 69.59 29.38 70.45 C 29.38 72.13 30.04 73.76 30.06 75.4 L 34.97 75.4 C 35.82 74.23 36.55 73 37.13 71.74 C 38.18 71.83 39.24 71.9 40.3 71.9 C 47.46 71.9 54.56 68.63 57.86 61.99 C 58.55 60.62 59.04 59.15 59.27 57.63 C 59.31 57.33 59.45 55.51 59.53 55.39 C 64.17 53.62 68.45 50.09 70.16 45.29 C 70.72 43.69 70.93 42 71.22 40.33 C 70.93 40.18 70.22 39.74 69.91 39.74 C 67.37 42.32 65.05 45.22 61.97 47.21 C 61.61 47.44 59.05 48.78 58.77 48.64 C 57.47 42.9 52.53 36.19 47.14 33.63 C 44.25 32.26 41.11 31.97 38.15 31.38 C 38.15 29.27 37.92 27.16 37.9 25.06 L 30.85 26.55 C 30.69 30.12 30.62 33.72 30.62 37.29 Z"
+   },
+   "strokes": "Filled outline of a reversed 3: a head at the upper left cut on a slant, the upper curve swelling right and down to the waist, the lower curve running down and round to the left to a heavy upright end; from the waist a long tapering beak rising to the upper right, and a forked tongue with a round upper head pointing left into the letter.",
+   "formConfidence": "high",
+   "construction": [
+    {
+     "pts": [
+      [
+       34.4,
+       25.8,
+       7.0
+      ],
+      [
+       34.4,
+       33,
+       7.4
+      ],
+      [
+       33.8,
+       38,
+       6.4
+      ],
+      [
+       33.4,
+       42.4,
+       5.0
+      ]
+     ],
+     "s": {
+      "t": "cut",
+      "ang": -12
+     },
+     "e": {
+      "t": "cut",
+      "ang": 0
+     }
+    },
+    {
+     "pts": [
+      [
+       34.6,
+       35.0,
+       7.4
+      ],
+      [
+       40.0,
+       35.8,
+       8.2
+      ],
+      [
+       46.0,
+       38.0,
+       8.8
+      ],
+      [
+       50.6,
+       42.4,
+       9.0
+      ],
+      [
+       53.6,
+       47.6,
+       9.4
+      ],
+      [
+       54.6,
+       52.6,
+       9.6
+      ]
+     ]
+    },
+    {
+     "pts": [
+      [
+       54.6,
+       51.6,
+       9.6
+      ],
+      [
+       54.4,
+       58,
+       9.4
+      ],
+      [
+       51.6,
+       63.6,
+       8.4
+      ],
+      [
+       46.0,
+       67.6,
+       7.0
+      ],
+      [
+       40.0,
+       68.4,
+       7.0
+      ],
+      [
+       34.6,
+       67.6,
+       8.0
+      ]
+     ]
+    },
+    {
+     "pts": [
+      [
+       34.2,
+       59.0,
+       4.6
+      ],
+      [
+       34.0,
+       64,
+       7.6
+      ],
+      [
+       33.4,
+       70,
+       8.0
+      ],
+      [
+       32.4,
+       75.4,
+       4.6
+      ]
+     ],
+     "s": {
+      "t": "cut",
+      "ang": 0
+     },
+     "e": {
+      "t": "cut",
+      "ang": 0
+     }
+    },
+    {
+     "pts": [
+      [
+       54.0,
+       53.0,
+       7.4
+      ],
+      [
+       59.2,
+       52.0,
+       6.6
+      ],
+      [
+       63.3,
+       49.9,
+       6.0
+      ],
+      [
+       67.6,
+       45.5,
+       4.6
+      ],
+      [
+       70.6,
+       40.0,
+       1.4
+      ]
+     ]
+    },
+    {
+     "pts": [
+      [
+       52.4,
+       55.2,
+       6.4
+      ],
+      [
+       48.6,
+       54.4,
+       6.0
+      ],
+      [
+       45.8,
+       51.2,
+       4.4
+      ]
+     ],
+     "e": {
+      "t": "round"
+     }
+    },
+    {
+     "pts": [
+      [
+       49.0,
+       55.4,
+       4.4
+      ],
+      [
+       47.0,
+       57.6,
+       2.6
+      ],
+      [
+       45.4,
+       59.6,
+       0.8
+      ]
+     ]
+    }
+   ],
+   "check": {
+    "outline_from_ink_edge_p95_units": 1.99,
+    "outline_from_ink_edge_max_units": 3.18,
+    "outline_beyond_3_units_pct": 0.4
+   },
+   "source": {
+    "position_as_printed": "Lower line of forms, 3rd from the right (8th from the left); no. 14 of 21 when the two lines are read from right to left, as the script runs",
+    "label_as_printed": null,
+    "dee_order": 14,
+    "line": "lower",
+    "cell_origin_px": [
+     2382,
+     756
+    ],
+    "ink_box_px": [
+     2489,
+     853,
+     2649,
+     1039
+    ],
+    "image": "Sloane MS 3188, f. 104: the Wikimedia Commons original, 4303 x 1603 px (SHA-1 7f5476cdb427b9b9a37e06c4b82e00df9c2fd086); cell = 375 px square at cell_origin_px, 3.75 px to a unit"
+   },
+   "variants": "Sloane MS 3189: the same, the beak and the tongue heavier. Casaubon 1659, Holy Table (e.g. bottom border, box 58; the same in Wellcome copy 2): a reversed C with a serifed bar across its back on the right and a barb pointing inward."
+  },
+  {
+   "order": 13,
+   "name": "Med",
+   "value": "O",
+   "translit": "o",
+   "glyph": {
+    "fill": "M 41.87 43.06 C 41.87 47.23 41.47 51.43 39.56 55.2 C 38.64 57.01 37.12 58.43 35.93 60.04 C 35.08 61.18 34.47 62.48 33.78 63.7 C 32.56 64.11 31.38 64.59 30.2 65.1 C 30.2 65.33 30.19 65.95 30.3 66.14 C 34.11 67.75 38.36 68.8 42.52 68.8 C 48.92 68.8 55.1 66.75 60.43 63.25 C 61.65 62.45 62.76 61.48 63.96 60.66 C 66.2 59.14 68.52 57.77 70.58 56 C 70.54 55.64 70.49 54.85 70.31 54.54 C 68.34 53.36 66.18 51.88 63.78 51.88 C 63.35 51.88 62.88 51.92 62.47 51.95 C 61.61 51.05 60.74 50.16 59.87 49.27 C 59.55 49.43 59.42 49.43 59.36 49.74 C 59.43 50.16 59.85 52.69 59.74 52.92 C 57.5 54.08 55.08 55.52 53.19 57.19 C 52.05 58.19 51.05 59.37 49.8 60.23 C 47.37 61.9 42.84 63.18 40.16 62.97 C 41.36 61.96 42.65 61.05 43.81 60 C 46.22 57.82 48.51 55.06 50.12 52.23 C 53.22 46.78 53.69 39.9 55.09 33.88 C 55.39 32.55 56.05 31.31 56.31 30 L 38.08 30 C 39.21 30.87 40.39 31.8 41.06 33.09 C 42.08 35.03 41.87 40.67 41.87 43.06 Z"
+   },
+   "strokes": "Filled outline: a broad head cut flat at the top with a point at the left, narrowing down a heavy stroke that curves to the lower left, where it meets a base running from a point at the left along the bottom and widening to a broad end pointed at the right, its top corner raised to a point.",
+   "formConfidence": "high",
+   "construction": [
+    {
+     "pts": [
+      [
+       48.4,
+       30.0,
+       14.6
+      ],
+      [
+       47.8,
+       40,
+       12.0
+      ],
+      [
+       46.2,
+       49.5,
+       9.6
+      ],
+      [
+       42.4,
+       56.8,
+       6.6
+      ],
+      [
+       37.6,
+       62.0,
+       5.0
+      ],
+      [
+       35.6,
+       65.2,
+       4.6
+      ]
+     ],
+     "s": {
+      "t": "flare",
+      "l": 4.0,
+      "r": 0.6,
+      "len": 5,
+      "pow": 2.2,
+      "ang": 0
+     }
+    },
+    {
+     "pts": [
+      [
+       30.2,
+       65.6,
+       1.0
+      ],
+      [
+       36.5,
+       65.6,
+       5.0
+      ],
+      [
+       43,
+       65.8,
+       6.0
+      ],
+      [
+       51,
+       63.8,
+       7.4
+      ],
+      [
+       57.6,
+       59.6,
+       9.2
+      ],
+      [
+       63.2,
+       56.2,
+       8.6
+      ],
+      [
+       70.5,
+       55.3,
+       1.4
+      ]
+     ]
+    },
+    {
+     "pts": [
+      [
+       62.6,
+       55.6,
+       5.0
+      ],
+      [
+       61.0,
+       52.2,
+       2.6
+      ],
+      [
+       59.6,
+       49.4,
+       0.6
+      ]
+     ]
+    }
+   ],
+   "check": {
+    "outline_from_ink_edge_p95_units": 1.5,
+    "outline_from_ink_edge_max_units": 2.27,
+    "outline_beyond_3_units_pct": 0.0
+   },
+   "source": {
+    "position_as_printed": "Lower line of forms, 5th from the right (6th from the left); no. 16 of 21 when the two lines are read from right to left, as the script runs",
+    "label_as_printed": null,
+    "dee_order": 16,
+    "line": "lower",
+    "cell_origin_px": [
+     1673,
+     756
+    ],
+    "ink_box_px": [
+     1783,
+     868,
+     1938,
+     1012
+    ],
+    "image": "Sloane MS 3188, f. 104: the Wikimedia Commons original, 4303 x 1603 px (SHA-1 7f5476cdb427b9b9a37e06c4b82e00df9c2fd086); cell = 375 px square at cell_origin_px, 3.75 px to a unit"
+   },
+   "variants": "Sloane MS 3189: the same slanted L, heavier, the base meeting the stem in a wedge. Casaubon 1659, Holy Table (e.g. bottom border, box 52; the same in Wellcome copy 2): the same, the base sweeping up to a point."
+  },
+  {
+   "order": 14,
+   "name": "Mals",
+   "value": "P",
+   "translit": "p",
+   "glyph": {
+    "fill": "M 71.86 45.34 C 71.86 38.02 67.75 30.5 60.64 27.89 C 58.42 27.08 55.88 26.84 53.53 26.84 C 44.87 26.84 36.37 31.59 32.39 39.32 C 31.16 41.71 30.37 44.25 30.37 46.96 C 30.37 50.6 31.52 54.3 32.97 57.6 L 20.63 57.6 C 20.62 56.2 20.56 54.8 20.5 53.4 L 12.69 53.4 C 12.44 56.31 12.25 59.3 12.25 62.22 C 12.25 65.99 12.59 69.81 13.41 73.5 C 13.59 73.55 14.09 73.66 14.26 73.62 C 16.67 71.02 18.1 68.9 19.42 65.6 L 40 65.6 C 40 65.13 40 64.66 40 64.19 L 44.75 63 C 44.76 62.92 44.89 62.22 44.85 62.2 L 41.62 60.52 C 41.92 60.38 43.72 59.52 43.81 59.36 C 41.66 55.25 38.8 51.07 38.8 46.25 C 38.8 40.5 40.19 36.12 45.55 33.32 C 48 32.04 50.77 31.44 53.53 31.44 C 61.24 31.44 63.43 38.24 63.43 44.79 C 63.43 46.77 63 48.74 62.74 50.69 C 62.51 52.32 62.4 53.96 62.29 55.6 L 62.04 59.42 C 62 60.01 61.95 60.6 61.9 61.19 C 62.6 61.22 63.3 61.25 63.99 61.29 L 60.29 63.82 C 60.36 64.07 60.44 64.33 60.51 64.58 L 66.08 64.78 C 66.08 64.78 66.09 65.35 66.09 65.4 L 81.72 65.03 C 81.71 65.32 81.71 65.61 81.7 65.9 L 88.3 65.9 L 88.45 60.03 C 88.51 57.25 88.35 54.56 88.1 51.8 L 82.68 51.8 C 82.39 53.54 82.09 55.27 81.95 57.02 L 70.96 57.28 C 71 55.57 71 53.84 71.18 52.13 C 71.42 49.86 71.86 47.62 71.86 45.34 Z"
+   },
+   "strokes": "Filled outline: an omega-like arch, light over the top and heavy down the sides, each leg turning out into a foot-bar with a short point inward; the left foot ends in a tall serif reaching further down to a point, the right in an upright serif reaching further up.",
+   "formConfidence": "high",
+   "construction": [
+    {
+     "pts": [
+      [
+       39.8,
+       61.4,
+       9.0
+      ],
+      [
+       35.8,
+       53.0,
+       8.6
+      ],
+      [
+       34.6,
+       46.0,
+       8.4
+      ],
+      [
+       36.6,
+       38.6,
+       6.6
+      ],
+      [
+       40.6,
+       33.6,
+       5.2
+      ],
+      [
+       47.6,
+       30.0,
+       4.6
+      ],
+      [
+       55.0,
+       29.2,
+       4.6
+      ],
+      [
+       60.6,
+       30.8,
+       5.4
+      ],
+      [
+       65.6,
+       36.2,
+       7.2
+      ],
+      [
+       67.6,
+       44.0,
+       8.4
+      ],
+      [
+       66.8,
+       53.0,
+       8.6
+      ],
+      [
+       66.4,
+       61.4,
+       9.0
+      ]
+     ]
+    },
+    {
+     "pts": [
+      [
+       40.0,
+       61.6,
+       8.0
+      ],
+      [
+       17.0,
+       61.6,
+       8.0
+      ]
+     ],
+     "line": true
+    },
+    {
+     "pts": [
+      [
+       38.0,
+       61.8,
+       6.0
+      ],
+      [
+       44.8,
+       62.6,
+       0.8
+      ]
+     ]
+    },
+    {
+     "pts": [
+      [
+       66.0,
+       61.4,
+       8.0
+      ],
+      [
+       83.0,
+       61.0,
+       8.0
+      ]
+     ],
+     "line": true
+    },
+    {
+     "pts": [
+      [
+       68.0,
+       62.0,
+       6.0
+      ],
+      [
+       60.4,
+       64.2,
+       0.8
+      ]
+     ]
+    },
+    {
+     "pts": [
+      [
+       16.6,
+       53.4,
+       7.8
+      ],
+      [
+       16.4,
+       61,
+       8.2
+      ],
+      [
+       15.4,
+       67.5,
+       6.0
+      ],
+      [
+       13.8,
+       73.6,
+       0.8
+      ]
+     ],
+     "s": {
+      "t": "cut",
+      "ang": 0
+     }
+    },
+    {
+     "pts": [
+      [
+       85.0,
+       65.9,
+       6.6
+      ],
+      [
+       85.2,
+       58,
+       6.6
+      ],
+      [
+       85.4,
+       51.8,
+       5.4
+      ]
+     ],
+     "s": {
+      "t": "cut",
+      "ang": 0
+     },
+     "e": {
+      "t": "cut",
+      "ang": 0
+     }
+    }
+   ],
+   "check": {
+    "outline_from_ink_edge_p95_units": 1.6,
+    "outline_from_ink_edge_max_units": 3.38,
+    "outline_beyond_3_units_pct": 0.4
+   },
+   "source": {
+    "position_as_printed": "Lower line of forms, 1st from the right (10th from the left); no. 12 of 21 when the two lines are read from right to left, as the script runs",
+    "label_as_printed": null,
+    "dee_order": 12,
+    "line": "lower",
+    "cell_origin_px": [
+     3293,
+     756
+    ],
+    "ink_box_px": [
+     3337,
+     853,
+     3624,
+     1032
+    ],
+    "image": "Sloane MS 3188, f. 104: the Wikimedia Commons original, 4303 x 1603 px (SHA-1 7f5476cdb427b9b9a37e06c4b82e00df9c2fd086); cell = 375 px square at cell_origin_px, 3.75 px to a unit"
+   },
+   "variants": "Sloane MS 3189: the same. Casaubon 1659, Holy Table (bottom border, boxes 45-46; the same in Wellcome copy 2): the same omega with flared feet. In the heading of Casaubon's Specimen the P of 'Pagesgem' and of 'Bacap' (read right to left) is the same low omega-like arch."
+  },
+  {
+   "order": 15,
+   "name": "Ger",
+   "value": "Q",
+   "translit": "q",
+   "glyph": {
+    "fill": "M 29.71 38.35 L 29.54 41.99 C 29.41 44.93 29.26 47.86 29.09 50.8 C 28.78 56.12 28.65 59.69 25.26 64.03 C 26.01 64.08 27.03 64.21 27.78 64.25 C 26.63 65.03 25.56 65.94 24.4 66.7 L 24.4 70.7 L 73.6 70.7 L 73.6 63.1 C 73.38 63.1 72.76 63.13 72.57 63.02 C 71.84 61.56 71.21 59.99 70.88 58.39 C 70.39 55.99 70.45 53.5 70.4 51.07 C 70.33 47.5 70.32 43.92 70.32 40.35 L 77.11 40.35 C 77.14 40.92 77.17 41.49 77.2 42.06 L 77.33 45.24 C 77.39 46.49 77.44 47.75 77.5 49 L 83.1 48.98 L 83.22 44.39 C 83.28 41.84 83.32 39.29 83.31 36.74 L 83.3 32.85 L 70.35 32.85 C 70.35 31.91 70.35 30.96 70.35 30.02 L 60.85 32.38 L 60.84 35.61 L 60.82 40.4 C 60.8 45.76 61.01 51.11 61.01 56.47 C 61.01 58.7 60.82 60.9 60.41 63.1 L 38.6 63.1 C 38.38 61.49 38.24 59.87 38.24 58.24 C 38.24 57.31 38.27 56.37 38.33 55.44 L 38.55 51.65 C 38.7 49.24 38.82 46.84 38.94 44.43 L 39.08 41.43 L 39.3 36.45 L 39.51 31.88 C 39.52 31.52 39.54 31.16 39.56 30.8 L 30.04 30.83 L 23.51 30.38 L 16.89 31.32 C 16.81 35.73 17.04 40.1 17.23 44.51 L 17.4 48.4 L 21.81 48.4 C 22.28 45.06 22.78 41.71 23.08 38.35 L 29.71 38.35 Z"
+   },
+   "strokes": "Filled outline: two heavy uprights on a common flat base; the left hangs from a top bar running left to a hooked end turned down; the right carries a top bar running right to an end turned down, with a small spur in the angle; the base ends in a point at the left and is cut square at the right.",
+   "formConfidence": "high",
+   "construction": [
+    {
+     "pts": [
+      [
+       34.8,
+       30.8,
+       9.5
+      ],
+      [
+       34.0,
+       48,
+       9.5
+      ],
+      [
+       33.0,
+       64.5,
+       9.5
+      ]
+     ],
+     "s": {
+      "t": "cut",
+      "ang": 0
+     },
+     "e": {
+      "t": "flare",
+      "l": 1.2,
+      "r": 3.0,
+      "len": 10,
+      "pow": 2.4
+     }
+    },
+    {
+     "pts": [
+      [
+       36.0,
+       34.6,
+       7.5
+      ],
+      [
+       21.0,
+       34.6,
+       7.5
+      ]
+     ],
+     "line": true
+    },
+    {
+     "pts": [
+      [
+       20.2,
+       30.85,
+       6.6
+      ],
+      [
+       20.0,
+       38,
+       6.2
+      ],
+      [
+       19.8,
+       44,
+       5.2
+      ],
+      [
+       19.6,
+       48.4,
+       4.4
+      ]
+     ],
+     "s": {
+      "t": "cut",
+      "ang": -8
+     },
+     "e": {
+      "t": "cut",
+      "ang": 0
+     }
+    },
+    {
+     "pts": [
+      [
+       65.6,
+       31.2,
+       9.5
+      ],
+      [
+       65.6,
+       48,
+       9.5
+      ],
+      [
+       66.0,
+       64.5,
+       9.5
+      ]
+     ],
+     "s": {
+      "t": "cut",
+      "ang": -14
+     },
+     "e": {
+      "t": "flare",
+      "l": 2.6,
+      "r": 1.2,
+      "len": 10,
+      "pow": 2.4
+     }
+    },
+    {
+     "pts": [
+      [
+       64.0,
+       36.6,
+       7.5
+      ],
+      [
+       80.0,
+       36.6,
+       7.5
+      ]
+     ],
+     "line": true
+    },
+    {
+     "pts": [
+      [
+       80.0,
+       32.85,
+       6.6
+      ],
+      [
+       80.2,
+       40,
+       6.2
+      ],
+      [
+       80.3,
+       49.0,
+       5.6
+      ]
+     ],
+     "s": {
+      "t": "cut",
+      "ang": 0
+     },
+     "e": {
+      "t": "cut",
+      "ang": 0
+     }
+    },
+    {
+     "pts": [
+      [
+       24.4,
+       66.9,
+       0.2,
+       3.8
+      ],
+      [
+       31.0,
+       66.9,
+       3.8,
+       3.8
+      ],
+      [
+       73.6,
+       66.9,
+       3.8,
+       3.8
+      ]
+     ],
+     "line": true
+    }
+   ],
+   "check": {
+    "outline_from_ink_edge_p95_units": 2.48,
+    "outline_from_ink_edge_max_units": 4.55,
+    "outline_beyond_3_units_pct": 2.8
+   },
+   "source": {
+    "position_as_printed": "Lower line of forms, 2nd from the right (9th from the left); no. 13 of 21 when the two lines are read from right to left, as the script runs",
+    "label_as_printed": null,
+    "dee_order": 13,
+    "line": "lower",
+    "cell_origin_px": [
+     2767,
+     756
+    ],
+    "ink_box_px": [
+     2827,
+     868,
+     3082,
+     1024
+    ],
+    "image": "Sloane MS 3188, f. 104: the Wikimedia Commons original, 4303 x 1603 px (SHA-1 7f5476cdb427b9b9a37e06c4b82e00df9c2fd086); cell = 375 px square at cell_origin_px, 3.75 px to a unit"
+   },
+   "variants": "Sloane MS 3189: the same, heavier. Not among the letters of the Holy Table engraved in Casaubon 1659 (neither impression)."
+  },
+  {
+   "order": 16,
+   "name": "Don",
+   "value": "R",
+   "translit": "r",
+   "glyph": {
+    "fill": "M 54.06 50.73 C 54.15 51.74 54.54 52.86 54.83 53.91 L 57.97 54.49 C 59.35 53.35 60.39 52.37 60.91 50.61 C 61.73 50.36 62.56 50.13 63.4 49.9 C 63.4 49.54 63.45 49.43 63.21 49.25 C 62.41 49.01 61.61 48.78 60.81 48.56 C 59.2 43.97 53.94 41.54 49.65 40.13 C 49.23 39.47 48.44 38.6 48.44 37.8 C 48.44 35.21 51.91 34.78 53.89 34.78 C 55.34 34.78 56.7 35.07 57.83 35.95 C 57.94 36.7 58.07 37.51 58.26 38.28 L 62.94 36.52 C 62.5 35.55 62.2 34.47 61.59 33.59 C 60.01 31.3 56.46 30.78 53.87 30.78 C 49.07 30.78 43.1 32.84 43.1 38.58 C 43.1 39.88 43.68 41.42 44.23 42.58 C 42.8 43.32 41.63 44.34 40.43 45.41 C 37.56 47.97 35.8 50.67 35.8 54.66 C 35.8 59.8 38.18 63.8 42.57 66.4 C 44.56 67.59 46.73 68.29 49.07 68.29 C 52.08 68.29 55.59 67.03 57.23 64.32 C 57.74 63.48 58 62.5 58.33 61.58 C 58.18 61.4 57.77 60.93 57.56 60.86 C 56.7 61.15 55.62 61.69 54.7 61.69 C 53.66 61.69 52.48 61.25 51.55 60.79 C 50.26 60.15 46.8 57.62 46.1 56.43 C 45.03 54.64 44.5 51.6 44.5 49.54 C 44.5 48.09 45.04 47.06 46.15 46.16 C 46.23 46.09 46.62 45.83 46.71 45.84 C 47.9 46.52 49.2 47.21 50.31 47.99 C 51.22 48.62 52.15 49.25 52.99 49.96 C 53.21 50.14 53.69 50.47 53.87 50.69 Z"
+   },
+   "strokes": "Filled outline of a small epsilon: a curl at the top from an end cut square at the upper right round to the waist; from the waist an arm down to the right, hooked down at its end, with a short pointed spur out to the right; below, a heavy curve sweeping round the left and the bottom to an end turned up to a point at the lower right.",
+   "formConfidence": "high",
+   "construction": [
+    {
+     "pts": [
+      [
+       60.6,
+       37.4,
+       5.0
+      ],
+      [
+       59.4,
+       34.4,
+       4.4
+      ],
+      [
+       55.6,
+       32.9,
+       4.0
+      ],
+      [
+       50.6,
+       33.2,
+       4.0
+      ],
+      [
+       47.0,
+       35.0,
+       4.6
+      ],
+      [
+       45.8,
+       38.4,
+       5.4
+      ],
+      [
+       47.6,
+       42.6,
+       6.0
+      ]
+     ]
+    },
+    {
+     "pts": [
+      [
+       46.8,
+       42.4,
+       6.0
+      ],
+      [
+       52.6,
+       45.2,
+       7.2
+      ],
+      [
+       57.2,
+       49.4,
+       7.4
+      ],
+      [
+       56.4,
+       54.2,
+       3.2
+      ]
+     ]
+    },
+    {
+     "pts": [
+      [
+       57.6,
+       49.8,
+       4.0
+      ],
+      [
+       60.6,
+       49.6,
+       2.2
+      ],
+      [
+       63.4,
+       49.6,
+       0.6
+      ]
+     ]
+    },
+    {
+     "pts": [
+      [
+       47.8,
+       42.8,
+       3.6
+      ],
+      [
+       43.2,
+       46.0,
+       4.6
+      ],
+      [
+       40.8,
+       50.6,
+       8.0
+      ],
+      [
+       40.6,
+       55.2,
+       9.6
+      ],
+      [
+       42.2,
+       59.6,
+       10.0
+      ],
+      [
+       46.4,
+       63.0,
+       9.6
+      ],
+      [
+       51.0,
+       64.4,
+       7.6
+      ],
+      [
+       55.2,
+       63.6,
+       4.4
+      ],
+      [
+       58.0,
+       61.2,
+       1.0
+      ]
+     ]
+    }
+   ],
+   "check": {
+    "outline_from_ink_edge_p95_units": 1.12,
+    "outline_from_ink_edge_max_units": 2.04,
+    "outline_beyond_3_units_pct": 0.0
+   },
+   "source": {
+    "position_as_printed": "Lower line of forms, 6th from the right (5th from the left); no. 17 of 21 when the two lines are read from right to left, as the script runs",
+    "label_as_printed": null,
+    "dee_order": 17,
+    "line": "lower",
+    "cell_origin_px": [
+     1367,
+     756
+    ],
+    "ink_box_px": [
+     1501,
+     873,
+     1608,
+     1019
+    ],
+    "image": "Sloane MS 3188, f. 104: the Wikimedia Commons original, 4303 x 1603 px (SHA-1 7f5476cdb427b9b9a37e06c4b82e00df9c2fd086); cell = 375 px square at cell_origin_px, 3.75 px to a unit"
+   },
+   "variants": "Sloane MS 3189: the same, the top hook taller. Casaubon 1659, Holy Table (e.g. bottom border, box 60; the same in Wellcome copy 2): an epsilon with a long beak at the waist and a curled top."
+  },
+  {
+   "order": 17,
+   "name": "Fam",
+   "value": "S",
+   "translit": "s",
+   "glyph": {
+    "fill": "M 47.81 43.59 C 47.71 45.35 47.6 47.27 47.6 49.11 C 47.6 56.71 47.45 61.79 50.92 68.81 C 51.63 70.22 52.34 71.69 53.24 72.99 C 54.4 74.66 56.03 75.71 57.4 77.16 C 58.55 78.37 59.48 79.79 60.6 81.04 C 61.01 81 61.26 81.02 61.53 80.75 C 62.83 78.77 64.06 76.88 64.06 74.42 C 64.06 74 64.01 73.49 64.04 73.14 C 65.37 72.54 66.61 71.8 67.89 71.09 C 67.76 70.68 67.85 70.64 67.51 70.53 C 66.52 70.62 65.53 70.73 64.53 70.73 C 64.36 70.73 63.63 70.7 63.51 70.58 C 63.08 68.75 62.63 66.82 62.15 64.99 L 61.15 61.11 C 60.24 57.6 58.69 54.33 57.71 50.85 C 56.93 48.11 56.73 45.22 56.58 42.38 L 56.42 39.34 C 57.69 37.77 58.42 36.15 59.17 34.29 C 58.87 33.96 58.83 33.78 58.42 33.78 C 57.27 34.21 56.13 34.77 54.93 35.06 C 53.53 35.4 52.14 35.34 50.72 35.46 C 49.96 35.53 49.22 35.77 48.45 35.86 C 46.35 36.08 44.18 36.08 42.06 36.08 C 38.41 36.08 36.66 36.18 34.05 33.36 C 33.41 32.67 32.84 31.89 32.2 31.25 L 32.2 46.05 C 33.4 45.1 34.66 44.27 36.15 43.85 C 38.34 43.22 42.5 43.59 44.96 43.52 C 45.73 43.5 46.51 43.49 47.28 43.45 C 47.37 43.45 47.77 43.46 47.82 43.51 Z"
+   },
+   "strokes": "Filled outline: a top bar from a broad end cut nearly square at the left to a fine point at the upper right; from under it a heavy stem swelling as it curves down to the lower right, ending in a point, with a small pointed spur out to the right just above it.",
+   "formConfidence": "high",
+   "construction": [
+    {
+     "pts": [
+      [
+       32.2,
+       39.6,
+       7.5
+      ],
+      [
+       44,
+       39.8,
+       7.5
+      ],
+      [
+       51,
+       39.2,
+       7.5
+      ],
+      [
+       55.6,
+       37.0,
+       4.4
+      ],
+      [
+       58.9,
+       34.0,
+       0.8
+      ]
+     ],
+     "s": {
+      "t": "flare",
+      "l": 2.8,
+      "r": 4.6,
+      "len": 6.5,
+      "pow": 2.0,
+      "ang": 90
+     }
+    },
+    {
+     "pts": [
+      [
+       52.2,
+       39.0,
+       8.4
+      ],
+      [
+       52.5,
+       50,
+       9.8
+      ],
+      [
+       54.6,
+       61,
+       12.6
+      ],
+      [
+       57.6,
+       69.5,
+       11.2
+      ],
+      [
+       60.4,
+       75.5,
+       7.6
+      ],
+      [
+       61.0,
+       81.0,
+       0.8
+      ]
+     ]
+    },
+    {
+     "pts": [
+      [
+       60.5,
+       72.4,
+       4.2
+      ],
+      [
+       64.4,
+       71.8,
+       2.2
+      ],
+      [
+       67.8,
+       70.8,
+       0.6
+      ]
+     ]
+    }
+   ],
+   "check": {
+    "outline_from_ink_edge_p95_units": 1.7,
+    "outline_from_ink_edge_max_units": 3.19,
+    "outline_beyond_3_units_pct": 0.6
+   },
+   "source": {
+    "position_as_printed": "Lower line of forms, 9th from the right (2nd from the left); no. 20 of 21 when the two lines are read from right to left, as the script runs",
+    "label_as_printed": null,
+    "dee_order": 20,
+    "line": "lower",
+    "cell_origin_px": [
+     460,
+     756
+    ],
+    "ink_box_px": [
+     579,
+     875,
+     717,
+     1061
+    ],
+    "image": "Sloane MS 3188, f. 104: the Wikimedia Commons original, 4303 x 1603 px (SHA-1 7f5476cdb427b9b9a37e06c4b82e00df9c2fd086); cell = 375 px square at cell_origin_px, 3.75 px to a unit"
+   },
+   "variants": "Sloane MS 3189: the same 7 with a curved, swelling stem. Casaubon 1659, Holy Table (e.g. bottom border, box 44; the same in Wellcome copy 2): the same, the stem curving to a pointed hook at the right."
+  },
+  {
+   "order": 18,
+   "name": "Gisg",
+   "value": "T",
+   "translit": "t",
+   "glyph": {
+    "fill": "M 35.52 56.57 C 31.24 56.57 29.92 54.78 27.4 51.65 L 27.4 74.22 C 27.57 74.16 27.83 74.26 27.99 74.18 C 28.2 74.08 29.16 72.34 31.17 71.56 C 32.53 71.04 34 70.9 35.42 70.64 C 37.45 70.27 39.4 69.68 41.27 68.8 C 43.65 67.68 45.83 66.17 47.98 64.65 C 54.21 60.24 59.83 55.14 64.95 49.47 C 68.34 45.71 73.61 39.58 73.61 34.32 C 73.61 33.01 73.49 31.6 73.24 30.36 C 72.83 30.1 72.71 30.07 72.26 30.26 C 71.24 31.84 70.46 33.6 69.32 35.11 C 65.21 40.59 57.07 47.27 51.28 50.98 C 46.63 53.96 41.17 56.57 35.52 56.57 Z"
+   },
+   "strokes": "Filled outline: one curved stroke, from a fine rounded point at the upper right swelling as it sweeps down to the lower left, where it ends square-cut with a small raised point at its upper corner.",
+   "formConfidence": "high",
+   "construction": [
+    {
+     "pts": [
+      [
+       72.7,
+       30.8,
+       1.4
+      ],
+      [
+       71.2,
+       36.2,
+       4.4
+      ],
+      [
+       66.6,
+       42.6,
+       6.2
+      ],
+      [
+       56.2,
+       52.6,
+       8.2
+      ],
+      [
+       46.6,
+       59.3,
+       10.4
+      ],
+      [
+       37.2,
+       63.2,
+       13.6
+      ],
+      [
+       27.4,
+       63.8,
+       15.6
+      ]
+     ],
+     "s": {
+      "t": "round"
+     },
+     "e": {
+      "t": "flare",
+      "l": 2.6,
+      "r": 5.4,
+      "len": 7,
+      "pow": 2.6,
+      "ang": 90
+     }
+    }
+   ],
+   "check": {
+    "outline_from_ink_edge_p95_units": 2.13,
+    "outline_from_ink_edge_max_units": 3.11,
+    "outline_beyond_3_units_pct": 0.3
+   },
+   "source": {
+    "position_as_printed": "Lower line of forms, 10th from the right (1st from the left); no. 21 of 21 when the two lines are read from right to left, as the script runs",
+    "label_as_printed": null,
+    "dee_order": 21,
+    "line": "lower",
+    "cell_origin_px": [
+     158,
+     756
+    ],
+    "ink_box_px": [
+     255,
+     870,
+     435,
+     1032
+    ],
+    "image": "Sloane MS 3188, f. 104: the Wikimedia Commons original, 4303 x 1603 px (SHA-1 7f5476cdb427b9b9a37e06c4b82e00df9c2fd086); cell = 375 px square at cell_origin_px, 3.75 px to a unit"
+   },
+   "variants": "Sloane MS 3189: the same crescent stroke, its lower end broad. Casaubon 1659, Holy Table (centre grid, row 1, right; the same in Wellcome copy 2): the same crescent stroke, its lower end pointed rather than cut square."
+  },
+  {
+   "order": 19,
+   "name": "Van",
+   "value": "V",
+   "translit": "v",
+   "glyph": {
+    "fill": "M 31.58 44.83 C 31.58 45.96 31.63 47.1 31.73 48.23 C 31.95 48.31 32.52 48.53 32.75 48.49 C 33.69 47.56 34.71 46.54 35.43 45.42 C 35.55 45.23 36.2 44.17 36.33 44.11 C 38.5 44.2 40.97 44.17 43.06 44.83 C 45.73 45.66 48.06 48.31 48.93 50.91 C 49.26 51.89 49.38 52.98 49.47 53.96 C 44.41 55.24 37.61 57.39 34.57 61.91 C 32.85 64.48 32.61 67.7 30.83 70.22 C 29.97 71.43 28.76 72.4 27.39 72.96 C 27.05 73.1 25.12 73.57 25.03 73.69 C 24.93 73.82 24.98 74.33 24.97 74.5 L 43.04 74.5 C 42.32 73.23 41.32 71.78 41.32 70.26 C 41.32 65.85 43.05 60.58 47.51 58.9 C 47.79 58.8 50.04 58.21 50.12 58.27 C 50.18 58.65 50.25 59.12 50.31 59.5 L 50.81 62.78 C 51.1 64.71 51.65 66.74 51.65 68.7 C 51.65 71.31 49.22 73.07 47.34 74.5 L 66.85 74.5 L 70.23 74.5 C 70.19 73.84 70.28 73.65 69.77 73.44 C 71.71 72.34 72.79 70.67 74.06 68.9 C 73.95 68.78 73.6 68.39 73.45 68.34 C 72.03 69.17 70.55 70.38 68.93 70.79 C 68.07 71 65.56 71.5 65.53 71.6 C 62.65 69.53 62.13 67.54 61.47 64.27 C 61.12 62.55 60.77 60.84 60.36 59.13 C 58.44 50.97 56.55 43.19 48.74 38.64 C 46.29 37.21 43.6 36.67 40.79 36.58 C 40.46 36.57 38.13 36.6 38.03 36.55 C 38.02 36.11 38 35.63 38.01 35.2 L 32.37 35.2 C 31.87 38.38 31.58 41.61 31.58 44.83 Z"
+   },
+   "strokes": "Filled outline: an arch from a notched, hooked start at the upper left over to the right and down as a heavy right leg onto a foot that runs both ways and ends in a point turned up at the right; from the right leg a lighter second leg sweeps down to the lower left onto its own foot; the counter between the legs opens at the base.",
+   "formConfidence": "high",
+   "construction": [
+    {
+     "pts": [
+      [
+       35.2,
+       35.2,
+       5.6
+      ],
+      [
+       34.8,
+       40,
+       6.0
+      ],
+      [
+       33.6,
+       44.5,
+       4.2
+      ],
+      [
+       32.2,
+       48.4,
+       1.0
+      ]
+     ],
+     "s": {
+      "t": "cut",
+      "ang": 0
+     }
+    },
+    {
+     "pts": [
+      [
+       33.8,
+       40.8,
+       6.6
+      ],
+      [
+       38,
+       40.4,
+       7.6
+      ],
+      [
+       44.8,
+       41.2,
+       8.0
+      ],
+      [
+       49.6,
+       44.4,
+       8.2
+      ],
+      [
+       52.8,
+       49.0,
+       8.6
+      ],
+      [
+       54.6,
+       56.0,
+       9.6
+      ],
+      [
+       56.0,
+       63.0,
+       10.2
+      ],
+      [
+       57.0,
+       69.0,
+       10.4
+      ],
+      [
+       57.4,
+       74.5,
+       10.4
+      ]
+     ],
+     "e": {
+      "t": "flare",
+      "l": 7.6,
+      "r": 6.0,
+      "len": 8,
+      "pow": 2.6,
+      "ang": 0
+     }
+    },
+    {
+     "pts": [
+      [
+       66.0,
+       73.0,
+       3.4
+      ],
+      [
+       70.0,
+       71.8,
+       2.6
+      ],
+      [
+       73.8,
+       68.6,
+       0.8
+      ]
+     ]
+    },
+    {
+     "pts": [
+      [
+       54.8,
+       55.0,
+       5.0
+      ],
+      [
+       46.6,
+       57.0,
+       4.2
+      ],
+      [
+       41.6,
+       59.8,
+       6.0
+      ],
+      [
+       38.2,
+       64.0,
+       8.4
+      ],
+      [
+       36.6,
+       69.5,
+       9.4
+      ],
+      [
+       36.2,
+       74.5,
+       9.6
+      ]
+     ],
+     "e": {
+      "t": "flare",
+      "l": 2.4,
+      "r": 6.4,
+      "len": 7,
+      "pow": 2.6,
+      "ang": 0
+     }
+    }
+   ],
+   "check": {
+    "outline_from_ink_edge_p95_units": 1.84,
+    "outline_from_ink_edge_max_units": 2.63,
+    "outline_beyond_3_units_pct": 0.0
+   },
+   "source": {
+    "position_as_printed": "Lower line of forms, 8th from the right (3rd from the left); no. 19 of 21 when the two lines are read from right to left, as the script runs",
+    "label_as_printed": null,
+    "dee_order": 19,
+    "line": "lower",
+    "cell_origin_px": [
+     707,
+     756
+    ],
+    "ink_box_px": [
+     799,
+     886,
+     990,
+     1039
+    ],
+    "image": "Sloane MS 3188, f. 104: the Wikimedia Commons original, 4303 x 1603 px (SHA-1 7f5476cdb427b9b9a37e06c4b82e00df9c2fd086); cell = 375 px square at cell_origin_px, 3.75 px to a unit"
+   },
+   "variants": "Sloane MS 3189: the same a-like form, the space between the legs mostly filled. Casaubon 1659, Holy Table (centre grid, row 2, right; the same in Wellcome copy 2): the same, lighter."
+  },
+  {
+   "order": 20,
+   "name": "Pal",
+   "value": "X",
+   "translit": "x",
+   "glyph": {
+    "fill": "M 48.35 31.77 L 44.37 31.72 C 42.89 31.7 41.4 31.6 39.92 31.6 C 38.31 31.6 36.66 32.71 35.27 33.4 C 35.23 33.79 35.09 34.71 35.23 35.07 C 35.96 35.63 36.81 36.28 37.56 36.8 C 37.64 39.62 37.73 42.46 37.54 45.27 C 37.27 49.42 36.49 53.6 35.72 57.67 C 35.23 60.22 35.21 62.95 34.13 65.34 C 33.24 67.31 31.82 68.38 30.7 70 L 46.39 70 C 44.31 66.22 44.28 63.93 44 59.71 C 43.85 57.5 43.67 55.29 43.54 53.08 L 43.35 49.88 C 43.2 47.24 43.21 44.62 43.23 41.99 L 43.25 38.37 C 43.25 38.15 43.25 37.89 43.28 37.7 C 43.61 37.71 43.95 37.71 44.28 37.72 L 48.46 37.77 C 51.47 37.81 54.43 38.2 57.43 38.37 C 59.07 38.46 61.05 38.55 62.69 38.56 C 63.24 41.68 64.58 44.59 66 47.41 C 66.41 47.4 66.64 47.45 66.89 47.19 C 69.11 42.25 69.64 39.83 69.64 34.41 C 69.64 32.51 69.52 30.61 69.39 28.71 L 63.86 31.18 C 63.32 31.41 60.24 31.46 59.46 31.51 C 55.76 31.76 52.06 31.82 48.35 31.77 Z M 54.13 49.1 C 54.41 48.79 54.6 48.65 54.62 48.28 C 54.1 46.19 53.06 42.5 50.4 42.5 C 48.82 42.5 47.5 43.82 47.5 45.4 C 47.5 47.75 49.16 47.99 50.9 48.42 C 51.97 48.69 53.04 48.92 54.13 49.1 Z"
+   },
+   "strokes": "Filled outline: a top bar from a pointed end at the left widening to a broad wedge at the right whose lower point hangs down; an upright stem from under the bar’s left part swelling to a foot splayed both ways; and a separate teardrop dot under the bar, to the right of the stem, standing clear of both.",
+   "formConfidence": "high",
+   "construction": [
+    {
+     "pts": [
+      [
+       35.2,
+       34.2,
+       1.6
+      ],
+      [
+       40.0,
+       34.6,
+       6.0
+      ],
+      [
+       50.0,
+       34.8,
+       6.0
+      ],
+      [
+       58.0,
+       35.0,
+       6.8
+      ],
+      [
+       65.0,
+       34.8,
+       7.4
+      ]
+     ]
+    },
+    {
+     "pts": [
+      [
+       65.6,
+       30.4,
+       7.8
+      ],
+      [
+       66.2,
+       39.0,
+       6.6
+      ],
+      [
+       66.4,
+       47.4,
+       0.8
+      ]
+     ],
+     "s": {
+      "t": "cut",
+      "ang": -24
+     }
+    },
+    {
+     "pts": [
+      [
+       40.4,
+       33.0,
+       6.0
+      ],
+      [
+       40.4,
+       44.0,
+       5.6
+      ],
+      [
+       40.0,
+       54.0,
+       7.2
+      ],
+      [
+       39.6,
+       62.0,
+       9.0
+      ],
+      [
+       39.4,
+       70.0,
+       9.4
+      ]
+     ],
+     "e": {
+      "t": "flare",
+      "l": 2.4,
+      "r": 4.0,
+      "len": 9,
+      "pow": 2.4,
+      "ang": 0
+     }
+    },
+    {
+     "pts": [
+      [
+       50.4,
+       45.4,
+       5.8
+      ],
+      [
+       52.2,
+       46.8,
+       4.2
+      ],
+      [
+       54.4,
+       48.8,
+       0.8
+      ]
+     ],
+     "s": {
+      "t": "round"
+     }
+    }
+   ],
+   "check": {
+    "letter_without_its_dot": {
+     "outline_from_ink_edge_p95_units": 1.62,
+     "outline_from_ink_edge_max_units": 3.96,
+     "outline_beyond_3_units_pct": 1.7
+    },
+    "dot": "set clear of the stem as in Sloane MS 3189: its centre about 4.1 units right of and 3.5 units below the centre of the ink dot of f. 104 (with the neck cut), its area 33 square units against 21, and 4.3 units clear of stem and bar"
+   },
+   "source": {
+    "position_as_printed": "Lower line of forms, 4th from the right (7th from the left); no. 15 of 21 when the two lines are read from right to left, as the script runs",
+    "label_as_printed": null,
+    "dee_order": 15,
+    "line": "lower",
+    "cell_origin_px": [
+     2002,
+     756
+    ],
+    "ink_box_px": [
+     2116,
+     861,
+     2263,
+     1019
+    ],
+    "image": "Sloane MS 3188, f. 104: the Wikimedia Commons original, 4303 x 1603 px (SHA-1 7f5476cdb427b9b9a37e06c4b82e00df9c2fd086); cell = 375 px square at cell_origin_px, 3.75 px to a unit"
+   },
+   "variants": "Sloane MS 3189: the same, with the dot standing clear of the stem. Not among the letters of the Holy Table engraved in Casaubon 1659 (neither impression)."
+  },
+  {
+   "order": 21,
+   "name": "Ceph",
+   "value": "Z",
+   "translit": "z",
+   "glyph": {
+    "fill": "M 29.38 36.19 C 29.38 37.54 29.6 38.88 29.6 40.24 C 29.6 41.91 29.33 43.56 29.24 45.23 C 29.4 45.31 29.87 45.51 30.04 45.5 C 33.3 42.62 33.51 41.63 35.4 38.03 C 37.94 37.64 40.48 37.42 43.05 37.42 C 44.3 37.42 45.55 37.47 46.79 37.55 L 46.76 43.74 C 46.75 45.77 46.79 47.85 46.75 49.84 C 45.79 49.86 44.83 49.9 43.88 49.9 L 39.68 49.9 C 39.39 49.05 39.03 48.23 38.7 47.4 C 38.3 47.4 36.26 47.35 36.04 47.46 C 34.54 50.36 34.46 51.39 34.17 54.62 C 34.07 55.71 33.89 56.81 33.89 57.9 C 33.89 59.43 34.38 60.92 34.58 62.4 C 35.04 62.4 36.84 62.49 37.16 62.32 C 38.02 61 38.82 59.64 39.23 58.1 L 43.94 58.1 C 44.92 58.1 46.09 58 46.92 58.09 C 47.01 62.23 47.03 65.07 44.65 68.6 L 58.5 68.6 C 57.96 67.72 57.22 66.86 56.71 65.9 C 55.2 63.12 55.04 59.14 55.05 56.09 C 56.89 55.61 58.66 55 60.47 54.44 C 61.96 53.99 63.5 53.76 64.9 53.05 C 68.05 51.47 70.1 47.66 70.1 44.18 C 70.1 42.18 69.32 40.27 68.2 38.64 C 64.98 33.94 59.95 31.89 54.36 31.89 C 49.7 31.89 45.08 32.18 40.43 32.47 C 39.98 32.5 35.88 32.64 35.82 32.58 C 35.75 31.67 35.64 30.7 35.5 29.8 L 29.7 29.8 C 29.46 31.9 29.38 34.08 29.38 36.19 Z M 54.79 38.19 C 59.24 38.51 60.74 40.65 60.74 44.88 C 60.74 45.43 60.62 45.95 60.51 46.45 C 59.15 47.93 57.33 48.67 55.4 49.15 C 55.31 49.17 54.83 49.25 54.76 49.21 C 54.76 47.69 54.75 46.08 54.76 44.57 L 54.77 41.39 L 54.79 38.19 Z"
+   },
+   "strokes": "Filled outline: an upright stem on a splayed foot under a top bar that runs left to a tall spur and right into a P-bowl with an open counter; the bowl returns to the stem and runs on to the left as a crossbar ending in a hooked spur.",
+   "formConfidence": "high",
+   "construction": [
+    {
+     "pts": [
+      [
+       50.8,
+       34.0,
+       8.0
+      ],
+      [
+       50.8,
+       52,
+       8.0
+      ],
+      [
+       51.2,
+       62,
+       8.4
+      ],
+      [
+       51.4,
+       68.6,
+       8.6
+      ]
+     ],
+     "e": {
+      "t": "flare",
+      "l": 2.8,
+      "r": 2.6,
+      "len": 8,
+      "pow": 2.4,
+      "ang": 0
+     }
+    },
+    {
+     "pts": [
+      [
+       32.0,
+       35.6,
+       6.0
+      ],
+      [
+       40.0,
+       35.0,
+       5.0
+      ],
+      [
+       46.0,
+       34.8,
+       5.4
+      ],
+      [
+       51.6,
+       35.0,
+       6.2
+      ],
+      [
+       57.6,
+       35.4,
+       6.4
+      ],
+      [
+       62.8,
+       38.2,
+       7.6
+      ],
+      [
+       65.4,
+       44.0,
+       9.4
+      ],
+      [
+       63.8,
+       48.8,
+       8.4
+      ],
+      [
+       58.6,
+       51.6,
+       6.6
+      ],
+      [
+       51.0,
+       53.6,
+       7.2
+      ]
+     ]
+    },
+    {
+     "pts": [
+      [
+       51.0,
+       53.8,
+       8.0
+      ],
+      [
+       44.0,
+       54.0,
+       8.2
+      ],
+      [
+       37.6,
+       54.0,
+       8.2
+      ]
+     ],
+     "line": true
+    },
+    {
+     "pts": [
+      [
+       37.4,
+       47.4,
+       2.6
+      ],
+      [
+       37.2,
+       52,
+       5.6
+      ],
+      [
+       36.6,
+       57.5,
+       5.4
+      ],
+      [
+       35.8,
+       62.4,
+       2.4
+      ]
+     ],
+     "s": {
+      "t": "cut",
+      "ang": 0
+     },
+     "e": {
+      "t": "cut",
+      "ang": 0
+     }
+    },
+    {
+     "pts": [
+      [
+       32.6,
+       29.8,
+       5.8
+      ],
+      [
+       32.6,
+       35.5,
+       6.4
+      ],
+      [
+       31.6,
+       41.0,
+       4.2
+      ],
+      [
+       29.6,
+       45.4,
+       0.8
+      ]
+     ],
+     "s": {
+      "t": "cut",
+      "ang": 0
+     }
+    }
+   ],
+   "check": {
+    "outline_from_ink_edge_p95_units": 1.96,
+    "outline_from_ink_edge_max_units": 2.49,
+    "outline_beyond_3_units_pct": 0.0
+   },
+   "source": {
+    "position_as_printed": "Lower line of forms, 7th from the right (4th from the left); no. 18 of 21 when the two lines are read from right to left, as the script runs",
+    "label_as_printed": null,
+    "dee_order": 18,
+    "line": "lower",
+    "cell_origin_px": [
+     1008,
+     756
+    ],
+    "ink_box_px": [
+     1117,
+     868,
+     1275,
+     1019
+    ],
+    "image": "Sloane MS 3188, f. 104: the Wikimedia Commons original, 4303 x 1603 px (SHA-1 7f5476cdb427b9b9a37e06c4b82e00df9c2fd086); cell = 375 px square at cell_origin_px, 3.75 px to a unit"
+   },
+   "variants": "Sloane MS 3189: the same. Casaubon 1659, Holy Table (bottom border, box 50; the same in Wellcome copy 2): the same P with the crossbar through the stem on the left."
+  }
+ ]
+}
