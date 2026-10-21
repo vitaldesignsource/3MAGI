@@ -1,5 +1,58 @@
 @import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800&display=swap");
 
+/* The Cinzel supplement ("TL Display Marks" inside the files): the letters and signs the
+   site sets in Cinzel that Cinzel does not have (Ḍḍ Ḥḥ Ḳḳ Ḷḷ Ṛṛ Ṣṣ Ṭṭ Ẓẓ ʾ ʿ ʼ Ǫǫ № ← →),
+   made from Cinzel's own outlines by tools/fonts/build-display-marks.py. Each file joins the
+   "Cinzel" family at one weight, after Google's faces, so every Cinzel stack draws these in
+   Cinzel instead of falling back to another face in the middle of a word. One rule per
+   weight: a face declared with a weight range would not join Google's faces. The
+   unicode-range names exactly the file's code points. Provenance: public/fonts/SOURCES.txt. */
+@font-face {
+  font-family: "Cinzel";
+  src: url("/fonts/TLDisplayMarks-400.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+01EA-01EB, U+02BC, U+02BE-02BF, U+1E0C-1E0D, U+1E24-1E25, U+1E32-1E33, U+1E36-1E37,
+                 U+1E5A-1E5B, U+1E62-1E63, U+1E6C-1E6D, U+1E92-1E93, U+2116, U+2190, U+2192;
+}
+@font-face {
+  font-family: "Cinzel";
+  src: url("/fonts/TLDisplayMarks-500.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+01EA-01EB, U+02BC, U+02BE-02BF, U+1E0C-1E0D, U+1E24-1E25, U+1E32-1E33, U+1E36-1E37,
+                 U+1E5A-1E5B, U+1E62-1E63, U+1E6C-1E6D, U+1E92-1E93, U+2116, U+2190, U+2192;
+}
+@font-face {
+  font-family: "Cinzel";
+  src: url("/fonts/TLDisplayMarks-600.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+01EA-01EB, U+02BC, U+02BE-02BF, U+1E0C-1E0D, U+1E24-1E25, U+1E32-1E33, U+1E36-1E37,
+                 U+1E5A-1E5B, U+1E62-1E63, U+1E6C-1E6D, U+1E92-1E93, U+2116, U+2190, U+2192;
+}
+@font-face {
+  font-family: "Cinzel";
+  src: url("/fonts/TLDisplayMarks-700.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+01EA-01EB, U+02BC, U+02BE-02BF, U+1E0C-1E0D, U+1E24-1E25, U+1E32-1E33, U+1E36-1E37,
+                 U+1E5A-1E5B, U+1E62-1E63, U+1E6C-1E6D, U+1E92-1E93, U+2116, U+2190, U+2192;
+}
+@font-face {
+  font-family: "Cinzel";
+  src: url("/fonts/TLDisplayMarks-800.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+01EA-01EB, U+02BC, U+02BE-02BF, U+1E0C-1E0D, U+1E24-1E25, U+1E32-1E33, U+1E36-1E37,
+                 U+1E5A-1E5B, U+1E62-1E63, U+1E6C-1E6D, U+1E92-1E93, U+2116, U+2190, U+2192;
+}
+
 @font-face {
   font-family: "TC Seraphine";
   src: url("/fonts/TC-Seraphine-Light.woff2") format("woff2"),
@@ -9483,12 +9536,10 @@ h3 {
   unicode-range: U+13000-1342F;
 }
 
-/* Native-script text throughout the portal. The hieroglyph face carries a
-   unicode-range, so it only ever claims the Egyptian block; everything else
-   falls through to serifs with good polytonic Greek and Hebrew coverage. */
-.edu-page .edu-glyph {
-  font-family: "TL Hieroglyphs", "Palatino", "Palatino Linotype", "Book Antiqua", "Times New Roman", serif;
-}
+/* Native-script text throughout the portal is set in --edu-glyph-faces: the
+   script faces, each scoped by unicode-range to its own block, then serifs with
+   good polytonic Greek. The one rule that sets it follows the last of the script
+   faces, below ("Seven further scripts"). */
 
 .edu-main {
   max-width: 1180px;
@@ -9971,6 +10022,10 @@ h3 {
 .edu-num-native { font-size: 1.35rem; color: #ecd9ae; }
 .edu-num-eq { color: #d1ad68; white-space: nowrap; }
 .edu-num-note { color: rgba(222, 212, 196, 0.65); font-size: 0.9rem; line-height: 1.6; flex: 1 1 24rem; }
+/* the numeral notes quote the letters they explain (יה, יו): the script faces
+   first, then the display voice the notes have always had */
+.edu-num-note,
+.edu-num-special { font-family: var(--edu-script-faces), "Cinzel", Georgia, "Times New Roman", serif; }
 .edu-num-special {
   margin: 1.2rem auto 0;
   max-width: 44rem;
@@ -9992,6 +10047,11 @@ h3 {
   text-align: center;
 }
 .edu-reckoner-input:focus { outline: none; border-color: rgba(209, 173, 104, 0.8); }
+/* Text typed into a reckoner may be Hebrew, Arabic or another script: the script
+   faces come first, each scoped to its own block, so Latin and digits keep Cinzel
+   (the pattern of the search box below). The gematria reckoner's input is also an
+   .edu-glyph and keeps that stack. */
+.edu-reckoner-input { font-family: var(--edu-script-faces), "Cinzel", Georgia, "Times New Roman", serif; }
 .edu-reckoner-result { margin-top: 1.2rem; text-align: center; }
 .edu-reckoner-breakdown {
   display: flex;
@@ -10598,9 +10658,15 @@ h3 {
   font-weight: 400; font-style: normal; font-display: swap;
   unicode-range: U+0600-06FF, U+0750-077F, U+FB50-FDFF, U+FE70-FEFF;
 }
-.edu-page .edu-glyph {
-  font-family: "TL Hieroglyphs", "TL Cuneiform", "TL Devanagari", "TL Arabic",
-               "Palatino", "Palatino Linotype", "Book Antiqua", "Times New Roman", serif;
+/* The Arabic face has no italic; a slanted Naskh is only the browser's synthesis
+   (an alif slanted reads as a slash). The same file answers for italic, so a run
+   quoted in an italic note stands upright. The same alias is given to TL Hebrew,
+   TL Phoenician, TL Runic, TL Ogham and TL Signs. */
+@font-face {
+  font-family: "TL Arabic";
+  src: url("/fonts/NotoNaskhArabic.woff2") format("woff2");
+  font-weight: 400; font-style: italic; font-display: swap;
+  unicode-range: U+0600-06FF, U+0750-077F, U+FB50-FDFF, U+FE70-FEFF;
 }
 /* Devanagari and Naskh both carry tall ascenders and deep descenders; give
    the display sizes room so matras and dots are not clipped. */
@@ -10627,11 +10693,20 @@ h3 {
 @font-face { font-family: "TL Ethiopic"; src: url("/fonts/TLEthiopic.woff2") format("woff2");
   font-weight: 400; font-style: normal; font-display: swap; unicode-range: U+1200-137F, U+1380-139F, U+2D80-2DDF; }
 
+/* Hebrew — Noto Serif Hebrew, shipped as "TL Hebrew" (public/fonts/SOURCES.txt), so
+   the square letters and their points are one design on every device instead of
+   whatever Hebrew the system has. Scoped to the Hebrew blocks. */
+@font-face { font-family: "TL Hebrew"; src: url("/fonts/TLHebrew.woff2") format("woff2");
+  font-weight: 400; font-style: normal; font-display: swap; unicode-range: U+0590-05FF, U+FB1D-FB4F; }
+/* the Hebrew face has no italic; a slanted square letter is only the browser's synthesis */
+@font-face { font-family: "TL Hebrew"; src: url("/fonts/TLHebrew.woff2") format("woff2");
+  font-weight: 400; font-style: italic; font-display: swap; unicode-range: U+0590-05FF, U+FB1D-FB4F; }
+
+/* The one rule for native-script text: --edu-glyph-faces (below) is the prose
+   stack's script faces followed by the book serifs, so a face added to
+   --edu-script-faces is named in both stacks at once. */
 .edu-page .edu-glyph {
-  font-family: "TL Hieroglyphs", "TL Cuneiform", "TL Devanagari", "TL Arabic",
-               "TL Tibetan", "TL Syriac", "TL Coptic", "TL Mandaic", "TL Armenian", "TL Ethiopic",
-               "TL Glagolitic", "TL Cyrillic Ext", "TL Phoenician", "TL Runic", "TL Ogham", "TL Signs",
-               "Palatino", "Palatino Linotype", "Book Antiqua", "Times New Roman", serif;
+  font-family: var(--edu-glyph-faces);
 }
 /* Running prose quotes signs inline as well — an exercise that asks the reader
    to translate a sign, a paragraph that names one. Georgia has no hieroglyphs,
@@ -10640,10 +10715,12 @@ h3 {
    unicode-range-scoped to its own block, so naming them ahead of the body serif
    costs Latin nothing: Georgia still wins for every character it covers. */
 :root {
-  --edu-script-faces: "TL Hieroglyphs", "TL Cuneiform", "TL Devanagari", "TL Arabic",
+  --edu-script-faces: "TL Hebrew", "TL Hieroglyphs", "TL Cuneiform", "TL Devanagari", "TL Arabic",
                       "TL Tibetan", "TL Syriac", "TL Coptic", "TL Mandaic", "TL Armenian",
                       "TL Ethiopic", "TL Glagolitic", "TL Cyrillic Ext", "TL Phoenician",
-                      "TL Runic", "TL Ogham", "TL Signs";
+                      "TL Ugaritic", "TL Avestan", "TL Runic", "TL Ogham", "TL Signs";
+  --edu-glyph-faces: var(--edu-script-faces), "Palatino", "Palatino Linotype", "Book Antiqua",
+                     "Times New Roman", serif;
 }
 /* Tibetan stacks vertically and Ethiopic sits on a heavy baseline; both need
    more leading than a Latin face at the same size. */
@@ -10943,6 +11020,10 @@ h3 {
    row); the title's line is 1.5rem. */
 .edu-search-results a.has-sign { align-items: start; --sign-h: calc(1.89rem * var(--mg-scale, 1)); }
 .edu-search-results a.has-sign .edu-search-native { line-height: 0; }
+/* the drawn signs stand in one column, as wide as the largest scaled sign's box
+   (signScale 1.6, registry.js), each centred in it, so every such row's title
+   starts at one x whatever its alphabet's scale */
+.edu-search-results a.has-sign .edu-search-native { display: flex; justify-content: center; min-width: calc(1.89rem * 1.6); }
 .edu-search-results a.has-sign .edu-search-native .mg-glyph { display: block; }
 .edu-search-results a.has-sign .edu-search-native .mg-table-mark { opacity: 0.7; }
 .edu-search-results a.has-sign .edu-search-label { line-height: 1.5rem; }
@@ -11086,6 +11167,21 @@ h3 {
    in the two script stacks above, it was declared here and never used. */
 @font-face { font-family: "TL Phoenician"; src: url("/fonts/TLPhoenician.woff2") format("woff2");
   font-weight: 400; font-style: normal; font-display: swap; unicode-range: U+10900-1091F; }
+@font-face { font-family: "TL Phoenician"; src: url("/fonts/TLPhoenician.woff2") format("woff2");
+  font-weight: 400; font-style: italic; font-display: swap; unicode-range: U+10900-1091F; }
+
+/* Ugaritic and Avestan — two halls' own scripts, which had no shipped face and
+   fell to whatever the system had. Noto Sans Ugaritic and Noto Sans Avestan,
+   byte copies (public/fonts/SOURCES.txt), each scoped to its own block and
+   named in both script stacks; upright in italic, like the others. */
+@font-face { font-family: "TL Ugaritic"; src: url("/fonts/TLUgaritic.woff2") format("woff2");
+  font-weight: 400; font-style: normal; font-display: swap; unicode-range: U+10380-1039F; }
+@font-face { font-family: "TL Ugaritic"; src: url("/fonts/TLUgaritic.woff2") format("woff2");
+  font-weight: 400; font-style: italic; font-display: swap; unicode-range: U+10380-1039F; }
+@font-face { font-family: "TL Avestan"; src: url("/fonts/TLAvestan.woff2") format("woff2");
+  font-weight: 400; font-style: normal; font-display: swap; unicode-range: U+10B00-10B3F; }
+@font-face { font-family: "TL Avestan"; src: url("/fonts/TLAvestan.woff2") format("woff2");
+  font-weight: 400; font-style: italic; font-display: swap; unicode-range: U+10B00-10B3F; }
 
 /* The Magical Scriptorium sets three of its alphabets as text, not drawings:
    the runes, the ogham, and the planetary, zodiacal and alchemical signs.
@@ -11098,6 +11194,16 @@ h3 {
   font-weight: 400; font-style: normal; font-display: swap; unicode-range: U+1680-169C; }
 @font-face { font-family: "TL Signs"; src: url("/fonts/TLSigns.woff2") format("woff2");
   font-weight: 400; font-style: normal; font-display: swap;
+  unicode-range: U+2609, U+263D, U+263F-2644, U+2648-2653, U+1F701-1F706, U+1F70D, U+1F714,
+                 U+1F716, U+1F739, U+1F75E-1F760, U+1F764; }
+/* The runes, the ogham and the signs have no italic either: in an italic note they
+   stand upright, as the wing sets them, rather than slanted by the browser. */
+@font-face { font-family: "TL Runic"; src: url("/fonts/TLRunic.woff2") format("woff2");
+  font-weight: 400; font-style: italic; font-display: swap; unicode-range: U+16A0-16F8; }
+@font-face { font-family: "TL Ogham"; src: url("/fonts/TLOgham.woff2") format("woff2");
+  font-weight: 400; font-style: italic; font-display: swap; unicode-range: U+1680-169C; }
+@font-face { font-family: "TL Signs"; src: url("/fonts/TLSigns.woff2") format("woff2");
+  font-weight: 400; font-style: italic; font-display: swap;
   unicode-range: U+2609, U+263D, U+263F-2644, U+2648-2653, U+1F701-1F706, U+1F70D, U+1F714,
                  U+1F716, U+1F739, U+1F75E-1F760, U+1F764; }
 
@@ -11244,7 +11350,7 @@ h3 {
    kickers, badges, chips, and table headers. Native scripts keep their own
    faces via .edu-glyph. */
 .edu-page .edu-hero-sub,
-.edu-page .edu-section-head p,
+.edu-page .edu-section-head p:not(.kicker),
 .ch-page .ch-entry-sub,
 .ch-page .ch-entry-body,
 .ch-page .ch-claim,
@@ -11308,9 +11414,13 @@ h3 {
 .ch-page .ch-canon-tradnote p,
 .ch-page .ch-map-blurb, .ch-page .ch-map-edesc,
 .edu-page .edu-kinship-legend,
-.edu-page .edu-event-detail, .edu-page .edu-event-dating,
-.edu-page .edu-search-detail {
-  font-family: Georgia, "Times New Roman", serif;
+.edu-page .edu-event-detail, .edu-page .edu-event-dating {
+  /* a page may name its own reading stack (the Magical Scriptorium does, on
+     .mg-page); unset, this is Georgia, as it always was, after the script
+     faces, so a Hebrew word quoted in a hall's intro is set in TL Hebrew and
+     not in a system face (each face is scoped by unicode-range to its own
+     block, so no Latin letter changes) */
+  font-family: var(--edu-read-plain, var(--edu-script-faces), Georgia, "Times New Roman", serif);
   letter-spacing: 0.005em;
 }
 .edu-page .edu-hero-sub { font-size: 1.08rem; line-height: 1.85; }
@@ -11371,8 +11481,11 @@ h3 {
 .edu-page .edu-pgm p,
 .edu-page .edu-lesson-section p,
 .edu-page .edu-lesson-section li,
-.edu-page .edu-search-sub {
-  font-family: var(--edu-script-faces), Georgia, "Times New Roman", serif;
+.edu-page .edu-search-sub,
+.edu-page .edu-search-detail {
+  /* --edu-read: a page's own reading stack (the wing's, on .mg-page); unset,
+     the script faces and Georgia, as before */
+  font-family: var(--edu-read, var(--edu-script-faces), Georgia, "Times New Roman", serif);
   letter-spacing: 0.005em;
 }
 /* transliterations in the scholarly convention: serif italic */
@@ -11383,7 +11496,9 @@ h3 {
 .edu-page .edu-reading-translit,
 .edu-page .edu-vocab-translit,
 .edu-page .edu-proposal-reading {
-  font-family: Georgia, "Times New Roman", serif;
+  /* --edu-translit: a page's own face for transliterations (the wing's, on
+     .mg-page); unset, Georgia */
+  font-family: var(--edu-translit, Georgia, "Times New Roman", serif);
   font-style: italic;
 }
 /* controls and labels inside serif containers stay in the display voice */
@@ -11394,6 +11509,11 @@ h3 {
 .edu-page .edu-plaque-badge,
 .edu-page .edu-drill button {
   font-family: "Cinzel", Georgia, serif;
+}
+/* …but a drill option that is itself a sign (find mode: pick the rune, the
+   letter, the planet) is set in the script faces, like every .edu-glyph */
+.edu-page .edu-drill button.edu-glyph {
+  font-family: var(--edu-glyph-faces);
 }
 .edu-page .edu-plaque-body { line-height: 1.75; }
 .edu-page .edu-lex-def, .edu-page .edu-name-body p { line-height: 1.75; }
