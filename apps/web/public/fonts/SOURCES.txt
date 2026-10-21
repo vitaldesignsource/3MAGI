@@ -125,21 +125,32 @@ TLOgham.woff2  "TL Ogham"  (3,896 bytes)
 Cut
 ---
 
-TLSigns.woff2  "TL Signs"  (3,540 bytes, 34 code points)
+TLSigns.woff2  "TL Signs"  (3,600 bytes, 34 code points)
     Made by tools/fonts/build-tlsigns.py (Python 3.11, fontTools 4.67.0,
     brotli 1.2.0). The script is in the repository, and a rebuild with those
-    versions gives the same bytes. It takes:
-      33 code points from @fontsource/noto-sans-symbols@5.3.0,
-         files/noto-sans-symbols-symbols-400-normal.woff2
-         (Noto Sans Symbols, Version 2.003);
-       1 code point, U+2609 SUN, from @fontsource/noto-sans-symbols-2@5.3.0,
+    versions gives the same bytes. It takes, from @fontsource/noto-sans-
+    symbols@5.3.0 (tarball sha1 596c71d1772a67ac6553a764816a639ba26c5f6b;
+    Noto Sans Symbols, Version 2.003):
+      28 code points from files/noto-sans-symbols-symbols-400-normal.woff2;
+       4 code points, U+263F MERCURY, U+2640 FEMALE SIGN (Venus), U+2641
+         EARTH and U+2642 MALE SIGN (Mars), from
+         files/noto-sans-symbols-symbols-500-normal.woff2;
+       1 code point, U+263D FIRST QUARTER MOON, from
+         files/noto-sans-symbols-symbols-700-normal.woff2;
+    and 1 code point, U+2609 SUN, from @fontsource/noto-sans-symbols-2@5.3.0,
          files/noto-sans-symbols-2-symbols-400-normal.woff2
          (Noto Sans Symbols 2, Version 2.008). Noto Sans Symbols has no Sun.
+    The heavier weights for five planets: at 400, Mercury, Venus, Mars and
+    Earth have a lighter stroke than Jupiter and Saturn (2 x area /
+    perimeter per 1000 em: 51, 50, 50, 51 against 66 and 64) and the Moon a
+    lighter one still (40); from the 500 and 700 files they measure 63, 62,
+    61, 63 and 57, within 10% (the Moon, which tapers, 15%) of Jupiter's and
+    Saturn's mean. The outlines are taken as drawn, not altered.
     The script merges them into one font. It keeps every outline and advance
     unchanged, and it checks them against the sources. It drops what single
     signs do not need: hinting, layout tables and vertical-writing metrics.
     It sets the line metrics to Noto Sans's own 1069 / -293, the same as
-    TLRunic. Every sign's ink lies within y -222..765. Noto Sans Symbols'
+    TLRunic. Every sign's ink lies within y -222..770. Noto Sans Symbols'
     own 1480 / -570 would open up any line of prose that quotes a sign. The
     font is renamed "TL Signs", and its copyright notice is kept.
 
