@@ -17,7 +17,9 @@
 //   - a dot [x, y, r]: its radius (the house 2.6 where the data give none).
 // A glyph that names a pen of its own (pen, textPen, textRings) is drawn
 // differently at different sizes, so one outline could not stand for it: the
-// dump refuses it, and its alphabet stays SVG.
+// dump refuses it, and its alphabet stays SVG. A filled glyph ({ fill }, the
+// outline of the letter's ink, drawn evenodd with no pen) is written out as
+// { fill }: its outline is the font's, taken as it is.
 //
 // For each alphabet: slug, family, file, keyedTo, direction, signScale,
 // drawingFollows (the font's description, name ID 10), the stroke pen and the
@@ -52,8 +54,15 @@ export const canonical = (v) => {
 };
 const sha256 = (s) => createHash('sha256').update(s, 'utf8').digest('hex');
 
-// A glyph as MagicGlyph.jsx draws it at text size, with no pen of its own.
+// A glyph as MagicGlyph.jsx draws it at text size, with no pen of its own:
+// its strokes, rings and dots resolved, or its filled outline.
 function resolveGlyph(g, where) {
+    if (Object.prototype.hasOwnProperty.call(g, 'fill')) {
+        const extra = Object.keys(g).filter((k) => k !== 'fill');
+        if (extra.length) throw new Error(`${where}: a filled glyph holds fill alone, and this one holds ${extra.join(', ')} too`);
+        if (typeof g.fill !== 'string' || !g.fill.trim()) throw new Error(`${where}: glyph.fill is not path data`);
+        return { fill: g.fill };
+    }
     for (const k of ['pen', 'textPen', 'textRings']) {
         if (g[k] != null) throw new Error(`${where}: the glyph names ${k}, so it is drawn differently by size and cannot be one outline`);
     }

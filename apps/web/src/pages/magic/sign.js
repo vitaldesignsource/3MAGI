@@ -86,15 +86,75 @@ function arcPoints(x1, y1, rx, ry, rotDeg, large, sweep, x2, y2) {
     return out;
 }
 
+// A filled glyph ({ fill }, glyphkit/README.md "Filled glyphs"): the outline
+// of the letter's ink, drawn as one path, evenodd, with no pen — where the
+// other glyphs are centre lines ({ d, rings, dots }) for the house pen. A
+// glyph is one or the other, never both (validate-magic.mjs).
+export const isFill = (g) => Boolean(g && typeof g.fill === 'string');
+
+// The exact box of a fill's ink, in viewBox units: every end point, and every
+// extremum of a curve (where its derivative is 0 on an axis), so a curve that
+// bulges past its end points is measured where it bulges, and the box is the
+// ink's own, not its control points'. A fill is absolute M L C Q Z only.
+const FILL_ARGS = { M: 2, L: 2, C: 6, Q: 4 };
+function fillBox(d) {
+    const tok = String(d || '').match(/[A-Za-z]|-?(?:\d+\.?\d*|\.\d+)(?:[eE][-+]?\d+)?/g) || [];
+    let x0 = Infinity, y0 = Infinity, x1 = -Infinity, y1 = -Infinity;
+    const grow = ([x, y]) => { x0 = Math.min(x0, x); y0 = Math.min(y0, y); x1 = Math.max(x1, x); y1 = Math.max(y1, y); };
+    // the roots in (0, 1) of a t² + b t + c
+    const roots = (a, b, c) => {
+        if (Math.abs(a) < 1e-12) return Math.abs(b) < 1e-12 ? [] : [-c / b];
+        const disc = b * b - 4 * a * c;
+        return disc < 0 ? [] : [(-b + Math.sqrt(disc)) / (2 * a), (-b - Math.sqrt(disc)) / (2 * a)];
+    };
+    // a point on a quadratic (3 points) or cubic (4 points) at t
+    const at = (p, t) => {
+        const u = 1 - t;
+        const w = p.length === 3 ? [u * u, 2 * u * t, t * t] : [u * u * u, 3 * u * u * t, 3 * u * t * t, t * t * t];
+        return [0, 1].map((k) => p.reduce((s, q, j) => s + w[j] * q[k], 0));
+    };
+    let i = 0, cmd = null, cur = [0, 0], start = cur;
+    while (i < tok.length) {
+        if (/^[A-Za-z]$/.test(tok[i])) {
+            cmd = tok[i++];
+            if (cmd === 'Z') { cur = start; cmd = null; }
+            else if (!(cmd in FILL_ARGS)) cmd = null;
+            continue;
+        }
+        if (!cmd) { i += 1; continue; }
+        const n = FILL_ARGS[cmd];
+        const a = tok.slice(i, i + n).map(Number);
+        i += n;
+        if (a.length < n || a.some(Number.isNaN)) break;
+        const pts = [cur];
+        for (let k = 0; k < n; k += 2) pts.push([a[k], a[k + 1]]);
+        const end = pts[pts.length - 1];
+        grow(end);
+        if (cmd === 'M') { start = end; cmd = 'L'; }
+        else if (cmd !== 'L') {
+            for (const k of [0, 1]) {
+                const v = pts.map((q) => q[k]);
+                const ts = v.length === 3 ? roots(0, 2 * (v[0] - 2 * v[1] + v[2]), 2 * (v[1] - v[0]))
+                    : roots((v[1] - v[0]) - 2 * (v[2] - v[1]) + (v[3] - v[2]), 2 * ((v[2] - v[1]) - (v[1] - v[0])), v[1] - v[0]);
+                for (const t of ts) if (t > 0 && t < 1) grow(at(pts, t));
+            }
+        }
+        cur = end;
+    }
+    return Number.isFinite(x0) ? { x0, y0, x1, y1, w: x1 - x0, h: y1 - y0 } : null;
+}
+
 // The box a drawn sign's ink fills, in viewBox units: its path's points
 // widened by half the stroke pen, each ring by its radius and half its pen,
 // each dot by its radius. The pens are MagicGlyph's: the house pen, or a
 // fine-lined figure's `textPen` (pass `textPen` to measure it drawn with
 // another), whose rings take the lighter of their own pen and it, and whose
 // text rings, where it gives them, are the rings drawn outside the plaque.
+// A filled glyph has no pen: its box is its outline's exact box (fillBox).
 // Null for a sign with nothing drawn.
 export function inkBox(g, { textPen = g?.textPen ?? null } = {}) {
     if (!g) return null;
+    if (isFill(g)) return fillBox(g.fill);
     let x0 = Infinity, y0 = Infinity, x1 = -Infinity, y1 = -Infinity;
     const grow = (x, y, h) => { x0 = Math.min(x0, x - h); y0 = Math.min(y0, y - h); x1 = Math.max(x1, x + h); y1 = Math.max(y1, y + h); };
     const pen = textPen ?? HOUSE_PEN;

@@ -23,7 +23,11 @@ const fail = (where, m) => errors.push(`${where}: ${m}`);
 const words = (s) => String(s ?? '').trim().split(/\s+/).filter(Boolean).length;
 const YEAR = /\b(1\d{3}|20\d{2})\b/;
 const LOCATOR = /\b(book|bk\.|ch\.|chapter|cap\.|p\.|pp\.|fol\.|ff?\.|plate|sig\.|MS|[IVX]+\.\d+)/i;
-const canon = (g) => JSON.stringify({ d: String(g.d).trim().replace(/\s+/g, ' '), rings: g.rings ?? [], dots: g.dots ?? [], textRings: g.textRings ?? [] });
+// a glyph's form, for telling whether two glyphs are one: a filled glyph by
+// its outline, a centre-line glyph by its strokes, rings and dots
+const canon = (g) => (Object.prototype.hasOwnProperty.call(g, 'fill')
+    ? JSON.stringify({ fill: String(g.fill).trim().replace(/\s+/g, ' ') })
+    : JSON.stringify({ d: String(g.d).trim().replace(/\s+/g, ' '), rings: g.rings ?? [], dots: g.dots ?? [], textRings: g.textRings ?? [] }));
 const sameGlyph = (a, b) => canon(a) === canon(b);
 
 // --- facsimile plates --------------------------------------------------------------
