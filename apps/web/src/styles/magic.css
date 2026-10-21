@@ -149,11 +149,15 @@
   gap: 0.2em 0.55em;
   /* centred, because a row that wraps is narrowed to even lines (HeroSigns) */
   margin: 0 auto;
-  font-size: clamp(2rem, 5vw, 2.8rem);
+  font-size: clamp(2.4rem, 6vw, 3.4rem);
   line-height: 1.2;
   color: #d1ad68;
   text-shadow: 0 0 26px rgba(209, 173, 104, 0.3);
 }
+/* a drawn sign in the hero keeps the margin of its em box (the kit's body is
+   80 units of 100), so it is set larger than the em, as on the cards: about
+   50 px on a phone, where a card's is 40, and about 71 px on a wide screen */
+.mg-hero-signs .mg-glyph:not(.is-figure) { width: calc(1.3em * var(--mg-scale, 1)); height: calc(1.3em * var(--mg-scale, 1)); }
 .mg-hero-caption {
   margin: 0.6rem 0 0;
   color: rgba(209, 173, 104, 0.7);
@@ -213,6 +217,10 @@
 .mg-letter-groups.is-grouped { display: flex; flex-direction: column; gap: 1.6rem; }
 .mg-group-label {
   display: flex;
+  /* a label and its note break onto two lines on a narrow screen, each
+     whole, rather than squeezing the label into a column of its own */
+  flex-wrap: wrap;
+  row-gap: 0.2rem;
   align-items: baseline;
   gap: 0.8rem;
   margin: 0 0 0.75rem;
@@ -223,6 +231,7 @@
   letter-spacing: 0.2em;
   text-transform: uppercase;
 }
+.mg-group-label > span { flex: none; max-width: 100%; }
 /* a printed table's label is an h3 (Letters.jsx): it keeps the label's
    weight and measure, not the site's heading face */
 h3.mg-group-label { font-weight: 400; line-height: 1.45; }
@@ -259,7 +268,8 @@ h3.mg-group-label { font-weight: 400; line-height: 1.45; }
 /* the heading as printed stands at the right of the group, where its table
    begins; the facts and the note keep a reading measure at the left */
 .mg-table-head { display: grid; gap: 0.6rem; margin: 0 0 1.1rem; }
-.mg-table-facts, .mg-table-about { max-width: 56rem; }
+/* (a reading measure: about 75 characters to the line) */
+.mg-table-facts, .mg-table-about { max-width: 42rem; }
 .mg-table-heading {
   margin: 0;
   color: rgba(236, 226, 206, 0.92);
@@ -343,6 +353,13 @@ h3.mg-group-label { font-weight: 400; line-height: 1.45; }
    of 100), so on a card it is set a little larger than the em, to stand as
    tall as a hall's letter beside it. */
 .mg-letter-card.is-drawn .edu-letter-glyph .mg-glyph:not(.is-figure) { width: calc(1.3em * var(--mg-scale, 1)); height: calc(1.3em * var(--mg-scale, 1)); }
+/* The Icelandic staves are figures of many fine strokes, drawn in their own
+   light pen: on their cards they are drawn twice as large, so a stave stands
+   about 100 px tall and its pen is not a hairline. */
+.mg-page[data-hall="magic-galdrastafir"] .mg-letter-card.is-drawn .edu-letter-glyph .mg-glyph { width: calc(2.6em * var(--mg-scale, 1)); height: calc(2.6em * var(--mg-scale, 1)); }
+/* (a stave not drawn keeps the gap mark's size, in a stave's box, so the
+   names of a row still share one line) */
+.mg-page[data-hall="magic-galdrastafir"] .mg-letter-card.is-gap .edu-letter-glyph { min-height: calc(2.6em * var(--mg-scale, 1)); }
 /* An alphabet whose names are long single words (the Icelandic staves) sets
    its cards wider, so a name breaks between words or not at all. */
 .edu-letter-grid.has-long-names { grid-template-columns: repeat(auto-fill, minmax(8.6rem, 1fr)); }
@@ -458,6 +475,15 @@ h3.mg-group-label { font-weight: 400; line-height: 1.45; }
 
 /* the plaque */
 .mg-plaque .edu-plaque-glyph { display: flex; align-items: center; justify-content: center; min-height: 1.2em; }
+/* on a phone the plaque stands in one column, and its sign is the one place
+   a ring-letter is seen large: it takes a quarter of the screen's width
+   (about 100 px at 390), not the halls' 64 px */
+@media (max-width: 640px) {
+  .mg-plaque .edu-plaque-glyph { font-size: clamp(5.5rem, 26vw, 6.5rem); }
+}
+/* the plaque's notes and strokes keep a reading measure */
+.mg-plaque .edu-plaque-note,
+.mg-plaque .mg-plaque-strokes { max-width: 40rem; }
 /* a table's numbers, rows from the top: a cell read two ways is left open,
    a cell restored from the sums is set in italic, each keyed below */
 .mg-square { margin: 0 0 0.9rem; max-width: 100%; overflow-x: auto; }
@@ -654,7 +680,7 @@ h3.mg-group-label { font-weight: 400; line-height: 1.45; }
 .mg-drawn .ch-kv:first-child { border-top: none; padding-top: 0.2rem; }
 .mg-drawn .ch-kv:last-child { padding-bottom: 0.2rem; }
 .mg-drawn .ch-kv > span { margin: 0.42rem 0 0; font-family: "Cinzel", Georgia, serif; line-height: 1.5; }
-.mg-drawn .ch-kv p { font-family: var(--mg-read); font-size: 0.97rem; line-height: 1.75; }
+.mg-drawn .ch-kv p { font-family: var(--mg-read); font-size: 0.97rem; line-height: 1.75; max-width: 38rem; }
 
 /* --- the page itself ------------------------------------------------------ */
 /* The library's photograph of the printed page, in the drawn-from block's
@@ -817,10 +843,12 @@ h3.mg-group-label { font-weight: 400; line-height: 1.45; }
   .mg-plates:not(.is-set) .mg-plate.is-portrait .mg-plate-values > div { grid-template-columns: minmax(0, 1fr); gap: 0.05rem; }
 }
 /* the printed page parts its values with points; a value of two words
-   (Physical Good, نون مد) is told from the next by a point after it */
-.mg-plate-values dd.is-list > span:not(:last-child)::after {
+   (Physical Good, نون مد) is told from the next by a point before it, so a
+   line that wraps (right to left as well) begins with a point and never
+   ends with one */
+.mg-plate-values dd.is-list > span + span::before {
   content: "·";
-  margin-inline-start: 0.6rem;
+  margin-inline-end: 0.6rem;
   color: rgba(209, 173, 104, 0.55);
 }
 /* the tables shown as printed: each under its own heading, its pages a set */
