@@ -8,10 +8,14 @@
 //
 //   node tools/validate-magic.mjs
 
-import { readFileSync, readdirSync } from 'node:fs';
+import { createHash } from 'node:crypto';
+import { existsSync, readFileSync, readdirSync } from 'node:fs';
 import path from 'node:path';
-import { GENERATED, buildCompare, glyphProblems, loadHall, loadModules, loadRegistry, serialiseCompare, urlProblem, web } from './magic-lib.mjs';
+import { pathToFileURL } from 'node:url';
+import { brotliDecompressSync } from 'node:zlib';
+import { GENERATED, MAGIC_DIR, buildCompare, glyphProblems, loadHall, loadModules, loadRegistry, serialiseCompare, urlProblem, web } from './magic-lib.mjs';
 import { BAD_GLYPHS, BAD_URLS, GOOD_GLYPHS, GOOD_URLS } from './magic-fixtures.mjs';
+import { TRACED_FONTS, dumpTraced } from './fonts/dump-traced.mjs';
 
 const errors = [];
 const notes = [];
@@ -455,6 +459,140 @@ if (!problems.length) {
     let committed = '';
     try { committed = readFileSync(GENERATED, 'utf8'); } catch { /* reported below */ }
     if (committed !== fresh) fail('compare.generated.js', 'stale — run node tools/build-magic.mjs');
+}
+
+// --- the traced cipher fonts (tools/fonts) ---------------------------------------
+// The transliterator's writ is set in fonts generated from the traced data
+// (tools/fonts/build-traced-fonts.py, which reads tools/fonts/dump-traced.mjs).
+// The dump is run again here: a font whose data, file or key set no longer
+// match is stale, and the build stops until the fonts are rebuilt. The faces
+// are the writ's alone: no stack names them but .mg-writ.is-text's.
+const STALE = 'stale — run python -I tools/fonts/build-traced-fonts.py';
+const TRACED_DIR = path.join(web, 'src/assets/fonts/traced');
+const TRACED_CSS = path.join(web, 'src/styles/magic-traced-fonts.generated.css');
+const FONTS_JS = path.join(MAGIC_DIR, 'fonts.generated.js');
+const sha256 = (buf) => createHash('sha256').update(buf).digest('hex');
+
+// The code points a WOFF2 font maps, read from its cmap (format 4 or 12).
+const WOFF2_TAGS = ['cmap', 'head', 'hhea', 'hmtx', 'maxp', 'name', 'OS/2', 'post', 'cvt ', 'fpgm', 'glyf', 'loca', 'prep'];
+function woff2Cmap(buf) {
+    if (buf.toString('latin1', 0, 4) !== 'wOF2') throw new Error('not a WOFF2 file');
+    const numTables = buf.readUInt16BE(12);
+    const compressed = buf.readUInt32BE(20);
+    let o = 48;
+    const base128 = () => { let v = 0; for (let i = 0; i < 5; i++) { const b = buf[o++]; v = v * 128 + (b & 0x7f); if (!(b & 0x80)) return v; } throw new Error('bad UIntBase128'); };
+    const tables = [];
+    for (let i = 0; i < numTables; i++) {
+        const flags = buf[o++];
+        const idx = flags & 0x3f;
+        let tag = WOFF2_TAGS[idx] ?? `#${idx}`;
+        if (idx === 63) { tag = buf.toString('latin1', o, o + 4); o += 4; }
+        const version = flags >> 6;
+        const orig = base128();
+        const transformed = tag === 'glyf' || tag === 'loca' ? version === 0 : version !== 0;
+        tables.push({ tag, length: transformed ? base128() : orig });
+    }
+    const data = brotliDecompressSync(buf.subarray(o, o + compressed));
+    let at = 0;
+    for (const t of tables) { t.at = at; at += t.length; }
+    const cm = tables.find((t) => t.tag === 'cmap');
+    if (!cm) throw new Error('no cmap');
+    const c = data.subarray(cm.at, cm.at + cm.length);
+    const cps = new Set();
+    for (let i = 0; i < c.readUInt16BE(2); i++) {
+        const plat = c.readUInt16BE(4 + 8 * i), enc = c.readUInt16BE(6 + 8 * i), off = c.readUInt32BE(8 + 8 * i);
+        if (!(plat === 3 && (enc === 1 || enc === 10)) && plat !== 0) continue;
+        const format = c.readUInt16BE(off);
+        if (format === 4) {
+            const seg = c.readUInt16BE(off + 6) / 2;
+            const ends = off + 14, starts = ends + 2 * seg + 2, deltas = starts + 2 * seg, ranges = deltas + 2 * seg;
+            for (let k = 0; k < seg; k++) {
+                const end = c.readUInt16BE(ends + 2 * k), start = c.readUInt16BE(starts + 2 * k);
+                const delta = c.readInt16BE(deltas + 2 * k), range = c.readUInt16BE(ranges + 2 * k);
+                for (let cp = start; cp <= end && cp !== 0xffff; cp++) {
+                    let gid;
+                    if (range === 0) gid = (cp + delta) & 0xffff;
+                    else {
+                        const g = c.readUInt16BE(ranges + 2 * k + range + 2 * (cp - start));
+                        gid = g === 0 ? 0 : (g + delta) & 0xffff;
+                    }
+                    if (gid !== 0) cps.add(cp);
+                }
+            }
+        } else if (format === 12) {
+            for (let k = 0; k < c.readUInt32BE(off + 12); k++) {
+                const r = off + 16 + 12 * k;
+                const start = c.readUInt32BE(r), end = c.readUInt32BE(r + 4), gid = c.readUInt32BE(r + 8);
+                for (let cp = start; cp <= end; cp++) if (gid + (cp - start) !== 0) cps.add(cp);
+            }
+        }
+    }
+    return cps;
+}
+
+if (!problems.length) {
+    let traced = null;
+    try { traced = (await dumpTraced()).alphabets; } catch (e) { fail('tools/fonts/dump-traced.mjs', e.message); }
+    let FONTS = null;
+    if (!existsSync(FONTS_JS)) fail('fonts.generated.js', `missing — ${STALE}`);
+    else FONTS = (await import(pathToFileURL(FONTS_JS).href)).default;
+    if (traced && FONTS) {
+        for (const a of traced) {
+            const w = `traced font ${a.family}`;
+            const rec = FONTS[a.slug];
+            if (!rec) { fail(w, `not in fonts.generated.js — ${STALE}`); continue; }
+            if (rec.family !== a.family) fail(w, `fonts.generated.js names it "${rec.family}" — ${STALE}`);
+            if (rec.dataHash !== a.dataHash) fail(w, `built from other data than ${a.slug}'s traced glyphs, keys, signScale and pen now give — ${STALE}`);
+            const file = path.join(TRACED_DIR, a.file);
+            if (!existsSync(file)) { fail(w, `src/assets/fonts/traced/${a.file} is missing — ${STALE}`); continue; }
+            const buf = readFileSync(file);
+            if (sha256(buf) !== rec.woff2Sha256) fail(w, `src/assets/fonts/traced/${a.file} is not the file the build wrote — ${STALE}`);
+            // the font maps exactly the scheme's keys, the space and the no-break space
+            let cps = null;
+            try { cps = woff2Cmap(buf); } catch (e) { fail(w, `${a.file}: ${e.message}`); }
+            if (cps) {
+                const want = new Set([...a.glyphs.map((g) => g.cp), 0x20, 0xa0]);
+                const hex = (cp) => `U+${cp.toString(16).toUpperCase().padStart(4, '0')}`;
+                const extra = [...cps].filter((cp) => !want.has(cp)).map(hex);
+                const missing = [...want].filter((cp) => !cps.has(cp)).map(hex);
+                if (extra.length || missing.length) fail(w, `its cmap is not ${a.slug}'s keys (extra ${extra.join(' ') || 'none'}; missing ${missing.join(' ') || 'none'}) — ${STALE}`);
+            }
+        }
+        for (const slug of Object.keys(FONTS)) if (!traced.some((a) => a.slug === slug)) fail('fonts.generated.js', `${slug} has no traced font any more — ${STALE}`);
+        for (const f of existsSync(TRACED_DIR) ? readdirSync(TRACED_DIR) : []) {
+            if (!traced.some((a) => a.file === f)) fail('src/assets/fonts/traced', `${f} is no font of the build's — ${STALE}`);
+        }
+    }
+    // the generated sheet declares exactly these faces, and the wing's sheet imports it
+    const sheet = existsSync(TRACED_CSS) ? readFileSync(TRACED_CSS, 'utf8') : '';
+    if (!sheet) fail('magic-traced-fonts.generated.css', `missing — ${STALE}`);
+    const declared = [...sheet.matchAll(/@font-face\s*{[^}]*font-family:\s*"([^"]+)"[^}]*url\("\.\.\/assets\/fonts\/traced\/([^"?]+)/g)].map((m) => `${m[1]}|${m[2]}`);
+    const expected = (traced || TRACED_FONTS).map((a) => `${a.family}|${a.file}`);
+    if (sheet && declared.sort().join() !== [...expected].sort().join()) fail('magic-traced-fonts.generated.css', `does not declare exactly the traced faces — ${STALE}`);
+    if (!/@import\s+"\.\/magic-traced-fonts\.generated\.css"/.test(readFileSync(path.join(web, 'src/styles/magic-fonts.css'), 'utf8'))) {
+        fail('src/styles/magic-fonts.css', 'must @import "./magic-traced-fonts.generated.css"');
+    }
+    // No stack names a cipher face — not --edu-script-faces, not --edu-glyph-faces,
+    // nothing but the writ's own rule: a cipher face maps Latin and Hebrew
+    // letters to signs, so a stack that named it would write signs for prose.
+    const families = TRACED_FONTS.map((f) => f.family);
+    const named = (text) => families.filter((f) => new RegExp(`["']${f}["']|\\b${f}\\b`).test(text));
+    const walk = (dir) => readdirSync(dir, { withFileTypes: true }).flatMap((d) => (d.isDirectory() ? walk(path.join(dir, d.name)) : [path.join(dir, d.name)]));
+    for (const file of walk(path.join(web, 'src'))) {
+        const rel = path.relative(web, file);
+        if (/\.css$/.test(file)) {
+            const text = readFileSync(file, 'utf8').replace(/\/\*[\s\S]*?\*\//g, '');
+            for (const m of text.matchAll(/([^{}]*)\{([^{}]*)\}/g)) {
+                const selector = m[1].trim();
+                if (/^@font-face$/.test(selector) && file === TRACED_CSS) continue;
+                const hit = named(m[2]);
+                if (hit.length && !/\.mg-writ\.is-text\b/.test(selector)) fail(rel, `${selector || '(rule)'} names ${hit.join(', ')}: only the writ (.mg-writ.is-text) is set in a traced cipher face`);
+            }
+        } else if (/\.(jsx?|mjs)$/.test(file) && file !== FONTS_JS) {
+            const hit = named(readFileSync(file, 'utf8'));
+            if (hit.length) fail(rel, `names ${hit.join(', ')}: the writ reads a cipher face's family from fonts.generated.js`);
+        }
+    }
 }
 
 // --- report ----------------------------------------------------------------------

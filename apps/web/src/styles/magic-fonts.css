@@ -13,7 +13,14 @@
    stacks name it (magic.css, through --edu-read, --edu-read-plain and
    --edu-translit on .mg-page). Every file is recorded in
    public/fonts/SOURCES.txt; the licences are in public/fonts/OFL.txt.
+   The generated sheet's faces (TL Celestial, TL Theban …) are made by
+   tools/fonts/build-traced-fonts.py from the wing's own data, not from a
+   package, and that script and the sheet's header say how; no stack
+   names them, only the transliterator's writ (.mg-writ.is-text).
    ===================================================================== */
+
+/* the traced cipher faces of the transliterator's writ (generated) */
+@import "./magic-traced-fonts.generated.css";
 
 /* TL Reading — Gelasio 1.008, byte copies of the @fontsource/gelasio@5.3.0
    latin and latin-ext subsets, regular and italic. Gelasio is metrics
