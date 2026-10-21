@@ -11394,7 +11394,9 @@ h3 {
 .ch-page .ch-map-blurb, .ch-page .ch-map-edesc,
 .edu-page .edu-kinship-legend,
 .edu-page .edu-event-detail, .edu-page .edu-event-dating {
-  font-family: Georgia, "Times New Roman", serif;
+  /* a page may name its own reading stack (the Magical Scriptorium does, on
+     .mg-page); unset, this is Georgia, as it always was */
+  font-family: var(--edu-read-plain, Georgia, "Times New Roman", serif);
   letter-spacing: 0.005em;
 }
 .edu-page .edu-hero-sub { font-size: 1.08rem; line-height: 1.85; }
@@ -11457,7 +11459,9 @@ h3 {
 .edu-page .edu-lesson-section li,
 .edu-page .edu-search-sub,
 .edu-page .edu-search-detail {
-  font-family: var(--edu-script-faces), Georgia, "Times New Roman", serif;
+  /* --edu-read: a page's own reading stack (the wing's, on .mg-page); unset,
+     the script faces and Georgia, as before */
+  font-family: var(--edu-read, var(--edu-script-faces), Georgia, "Times New Roman", serif);
   letter-spacing: 0.005em;
 }
 /* transliterations in the scholarly convention: serif italic */
@@ -11468,7 +11472,9 @@ h3 {
 .edu-page .edu-reading-translit,
 .edu-page .edu-vocab-translit,
 .edu-page .edu-proposal-reading {
-  font-family: Georgia, "Times New Roman", serif;
+  /* --edu-translit: a page's own face for transliterations (the wing's, on
+     .mg-page); unset, Georgia */
+  font-family: var(--edu-translit, Georgia, "Times New Roman", serif);
   font-style: italic;
 }
 /* controls and labels inside serif containers stay in the display voice */

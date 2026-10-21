@@ -15,6 +15,10 @@ Copyright 2022 The Noto Project Authors (https://github.com/notofonts/symbols)
 Copyright 2022 The Noto Project Authors (https://github.com/notofonts/syriac)
 Copyright 2022 The Noto Project Authors (https://github.com/notofonts/tibetan)
 Copyright 2020 The Cinzel Project Authors (https://github.com/NDISCOVER/Cinzel)
+Copyright 2022 The Gelasio Project Authors (https://github.com/SorkinType/Gelasio)
+Copyright (c) 2003-2022 SIL International (http://www.sil.org/),
+with Reserved Font Names "Gentium" and "SIL".
+Copyright 2022 The Noto Project Authors (https://github.com/notofonts/math)
 
 This Font Software is licensed under the SIL Open Font License, Version 1.1.
 This license is copied below, and is also available with a FAQ at:
