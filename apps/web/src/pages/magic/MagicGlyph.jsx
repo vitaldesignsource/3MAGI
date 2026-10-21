@@ -1,5 +1,5 @@
 import React, { useId } from 'react';
-import { textOf } from './sign';
+import { inkBox, textOf } from './sign';
 import { HOUSE_DOT, HOUSE_PEN, HOUSE_RING, ringPen } from './pen';
 
 // The one renderer of a drawn letter. The glyph data are drawn as the glyph
@@ -46,15 +46,34 @@ import { HOUSE_DOT, HOUSE_PEN, HOUSE_RING, ringPen } from './pen';
 // Þjófastafur's, Gapaldur's), it gives `textRings` as well: the same rings
 // scaled up by one factor and set out along their strokes, drawn everywhere
 // but the plaque, where the traced rings stand (magic.css switches them).
+//
+// A door or a chip shows a sign as an icon (`fit="ink"`): its viewBox is a
+// square about the sign's ink (sign.js inkBox), of side max(width, height)
+// / 0.75, so every door's sign fills three quarters of its box and stands at
+// its centre by its ink, not by the place it was traced in. Its pens are
+// scaled with the viewBox, so they are the same in px on every door; a
+// fine-lined figure is drawn there with a pen of at least 3.5. The traced
+// data are drawn as they are; only the window onto them changes.
+const FIT_FILL = 0.75;
+const FIT_MIN_TEXT_PEN = 3.5;
+const r3 = (v) => Math.round(v * 1000) / 1000;
+function fitOf(g) {
+    const textPen = g.textPen != null ? Math.max(g.textPen, FIT_MIN_TEXT_PEN) : null;
+    const b = inkBox(g, { textPen });
+    if (!b) return null;
+    const side = Math.max(b.w, b.h) / FIT_FILL;
+    return { textPen, k: side / 100, x: r3((b.x0 + b.x1 - side) / 2), y: r3((b.y0 + b.y1 - side) / 2), side: r3(side) };
+}
 
 // (a figure has points, plural: a sign drawn as one heavy point — the ه of
 // Aflāṭūn's pen in the Shawq — is a letter, drawn at its table's scale)
 const isFigure = (g) => Boolean(g && !String(g.d || '').trim() && (g.dots || []).length > 1 && !(g.rings || []).length);
 
-function MagicGlyph({ g, size, label, className }) {
+function MagicGlyph({ g, size, label, className, fit }) {
     const uid = useId();
     const a11y = label ? { role: 'img', 'aria-label': label } : { 'aria-hidden': true };
-    const cls = size ? className : ['mg-glyph', isFigure(g) && 'is-figure', g?.pen && 'has-pen', className].filter(Boolean).join(' ') || undefined;
+    const f = fit === 'ink' && g ? fitOf(g) : null;
+    const cls = size ? className : ['mg-glyph', isFigure(g) && 'is-figure', g?.pen && 'has-pen', f && 'is-fit', className].filter(Boolean).join(' ') || undefined;
     if (!g) {
         return (
             <svg className={cls} width={size} height={size} viewBox="0 0 100 100" {...a11y}>
@@ -65,25 +84,29 @@ function MagicGlyph({ g, size, label, className }) {
         );
     }
     const rings = (g.rings ?? []).map(([x, y, r = HOUSE_RING]) => [x, y, r]);
-    const textPen = g.textPen ?? null;
+    const textPen = f ? f.textPen : g.textPen ?? null;
     const textRings = textPen != null && Array.isArray(g.textRings) && g.textRings.length === rings.length ? g.textRings : null;
+    // the pens' scale: 1, or the fitted viewBox's side over 100
+    const k = f ? f.k : 1;
     // a ring's pen: the house ring pen, or a fine-lined figure's own pen
-    const penOf = (r) => (textPen != null ? Math.min(ringPen(r), textPen) : ringPen(r));
+    const penOf = (r) => (textPen != null ? Math.min(ringPen(r), textPen) : ringPen(r)) * k;
     // the hole the strokes are masked by is the lightest the ring is ever drawn
     // with, so the round caps never reach into it at any size
-    const lightest = (r) => Math.min(penOf(r), g.pen ?? Infinity);
+    const lightest = (r) => Math.min(penOf(r), (g.pen ?? Infinity) * k);
+    // the mask covers the viewBox and a margin round it
+    const mb = f ? { x: r3(f.x - 5 * k), y: r3(f.y - 5 * k), w: r3(f.side + 10 * k) } : { x: -5, y: -5, w: 110 };
     // one mask per drawn glyph: its id must be unique on the page
     const holes = rings.length && g.d ? `mg-holes${uid.replace(/[^A-Za-z0-9_-]/g, '')}` : null;
     // a text ring's hole: it is only ever drawn with the text pen
     const ringClass = textRings ? 'mg-ring is-traced' : textPen != null ? 'mg-ring' : undefined;
     return (
-        <svg className={cls} width={size} height={size} viewBox="0 0 100 100" fill="none" stroke="currentColor"
-            strokeWidth={textPen ?? HOUSE_PEN} strokeLinecap="round" strokeLinejoin="round" {...a11y}
+        <svg className={cls} width={size} height={size} viewBox={f ? `${f.x} ${f.y} ${f.side} ${f.side}` : '0 0 100 100'} fill="none" stroke="currentColor"
+            strokeWidth={(textPen ?? HOUSE_PEN) * k} strokeLinecap="round" strokeLinejoin="round" {...a11y}
             style={g.pen && !size ? { '--mg-pen': g.pen } : undefined}>
             {holes && (
                 <defs>
-                    <mask id={holes} maskUnits="userSpaceOnUse" x="-5" y="-5" width="110" height="110">
-                        <rect x="-5" y="-5" width="110" height="110" fill="#fff" stroke="none" />
+                    <mask id={holes} maskUnits="userSpaceOnUse" x={mb.x} y={mb.y} width={mb.w} height={mb.w}>
+                        <rect x={mb.x} y={mb.y} width={mb.w} height={mb.w} fill="#fff" stroke="none" />
                         {rings.map(([x, y, r], i) => <circle key={i} cx={x} cy={y} r={Math.max(0, r - lightest(r) / 2)} fill="#000" stroke="none" />)}
                         {textRings && textRings.map(([x, y, r], i) => <circle key={`t${i}`} cx={x} cy={y} r={Math.max(0, r - penOf(r) / 2)} fill="#000" stroke="none" />)}
                     </mask>
@@ -100,8 +123,9 @@ function MagicGlyph({ g, size, label, className }) {
 // A letter's sign in whichever of its three modes it has: drawn path data, a
 // character set in a vendored face, or — while its form is still being traced
 // — an unstruck seal. Takes a letter or a bare sign ({ glyph } | { char } | null).
-export function Sign({ of, label, className }) {
-    if (of && of.glyph) return <MagicGlyph g={of.glyph} label={label} className={className} />;
+// `fit="ink"` draws a drawn sign as an icon, fitted to its ink (a door, a chip).
+export function Sign({ of, label, className, fit }) {
+    if (of && of.glyph) return <MagicGlyph g={of.glyph} label={label} className={className} fit={fit} />;
     if (of && of.char) {
         return (
             <span className={['mg-char', 'edu-glyph', className].filter(Boolean).join(' ')}

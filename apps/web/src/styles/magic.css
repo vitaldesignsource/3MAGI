@@ -352,14 +352,27 @@ h3.mg-group-label { font-weight: 400; line-height: 1.45; }
 /* A drawn sign keeps a margin inside its em box (the kit's body is 80 units
    of 100), so on a card it is set a little larger than the em, to stand as
    tall as a hall's letter beside it. */
-.mg-letter-card.is-drawn .edu-letter-glyph .mg-glyph:not(.is-figure) { width: calc(1.3em * var(--mg-scale, 1)); height: calc(1.3em * var(--mg-scale, 1)); }
+.mg-letter-card.is-drawn .edu-letter-glyph .mg-glyph:not(.is-figure) {
+  width: calc(1.3em * var(--mg-scale, 1));
+  height: calc(1.3em * var(--mg-scale, 1));
+  /* a whole number of pixels, so a sign's 5.5 pen and its rings fall the
+     same way on the pixel grid on every card (the line above stands where
+     round() is not understood) */
+  width: round(calc(1.3em * var(--mg-scale, 1)), 1px);
+  height: round(calc(1.3em * var(--mg-scale, 1)), 1px);
+}
 /* The Icelandic staves are figures of many fine strokes, drawn in their own
    light pen: on their cards they are drawn twice as large, so a stave stands
    about 100 px tall and its pen is not a hairline. */
-.mg-page[data-hall="magic-galdrastafir"] .mg-letter-card.is-drawn .edu-letter-glyph .mg-glyph { width: calc(2.6em * var(--mg-scale, 1)); height: calc(2.6em * var(--mg-scale, 1)); }
+.mg-page[data-hall="magic-galdrastafir"] .mg-letter-card.is-drawn .edu-letter-glyph .mg-glyph {
+  width: calc(2.6em * var(--mg-scale, 1));
+  height: calc(2.6em * var(--mg-scale, 1));
+  width: round(calc(2.6em * var(--mg-scale, 1)), 1px);
+  height: round(calc(2.6em * var(--mg-scale, 1)), 1px);
+}
 /* (a stave not drawn keeps the gap mark's size, in a stave's box, so the
    names of a row still share one line) */
-.mg-page[data-hall="magic-galdrastafir"] .mg-letter-card.is-gap .edu-letter-glyph { min-height: calc(2.6em * var(--mg-scale, 1)); }
+.mg-page[data-hall="magic-galdrastafir"] .mg-letter-card.is-gap .edu-letter-glyph { min-height: calc(2.6em * var(--mg-scale, 1)); min-height: round(calc(2.6em * var(--mg-scale, 1)), 1px); }
 /* An alphabet whose names are long single words (the Icelandic staves) sets
    its cards wider, so a name breaks between words or not at all. */
 .edu-letter-grid.has-long-names { grid-template-columns: repeat(auto-fill, minmax(8.6rem, 1fr)); }
@@ -367,9 +380,11 @@ h3.mg-group-label { font-weight: 400; line-height: 1.45; }
    kit's own gap mark, quieter and smaller than a sign but standing in a
    drawn sign's box, so the titles of a row of cards share one line. */
 .mg-letter-card.is-table .edu-letter-glyph .mg-glyph,
-.mg-letter-card.is-gap .edu-letter-glyph .mg-glyph { width: 1.3em; height: 1.3em; opacity: 0.7; }
+.mg-letter-card.is-gap .edu-letter-glyph .mg-glyph { width: 1.3em; height: 1.3em; width: round(1.3em, 1px); height: round(1.3em, 1px); opacity: 0.7; }
+/* (a figure of points on a card, too, in a whole number of pixels) */
+.mg-letter-card .edu-letter-glyph .mg-glyph.is-figure { width: round(1.45em, 1px); height: round(1.45em, 1px); }
 .mg-letter-card.is-table .edu-letter-glyph,
-.mg-letter-card.is-gap .edu-letter-glyph { min-height: calc(1.3em * var(--mg-scale, 1)); }
+.mg-letter-card.is-gap .edu-letter-glyph { min-height: calc(1.3em * var(--mg-scale, 1)); min-height: round(calc(1.3em * var(--mg-scale, 1)), 1px); }
 .mg-table-mark { color: rgba(209, 173, 104, 0.85); }
 /* and so wherever a drawn sign stands among set letters at text size — the
    comparison tables' cells, a search result, the transliterator's key and
@@ -383,7 +398,11 @@ h3.mg-group-label { font-weight: 400; line-height: 1.45; }
 /* in a comparison row a drawn sign sits on the row's line by its middle, as
    in the fold table, so it stands level with the key letter and the
    Phoenician beside it instead of riding above them */
-.mg-cmp-cell .mg-glyph:not(.is-figure) { vertical-align: middle; }
+.mg-cmp-cell .mg-glyph:not(.is-figure) {
+  vertical-align: middle;
+  width: round(calc(1.4em * var(--mg-scale, 1)), 1px);
+  height: round(calc(1.4em * var(--mg-scale, 1)), 1px);
+}
 /* The drill sets a sign's name in Cinzel, as the letter cards do, and like
    them in capitals: Cinzel has no ṭ ḥ ṣ ḍ ẓ, and in lower case those would
    fall back to a serif's small letter among Cinzel's capitals (“AFLĀṭŪN’S
@@ -1084,6 +1103,11 @@ h3.mg-group-label { font-weight: 400; line-height: 1.45; }
    lets the chip's padding take the extra height, so the chips keep one size;
    an alphabet's signScale enlarges the drawing, not its box */
 .mg-entry-nav .mg-glyph.mg-nav-sign:not(.is-figure) { width: 1.75em; height: 1.75em; margin-block: -0.45em; transform: scale(var(--mg-scale, 1)); }
+/* a door's sign is drawn in a chip as an icon fitted to its ink (MagicGlyph
+   fit="ink"): it fills its box as every other chip's does, unscaled, and a
+   set sign (☿, ᚠ) is set to stand as tall */
+.mg-entry-nav .mg-glyph.mg-nav-sign.is-fit { width: 1.75em; height: 1.75em; transform: none; }
+.mg-entry-nav .mg-char.mg-nav-sign { font-size: 1.3em; }
 .mg-entry-nav .mg-nav-home { border-color: rgba(209, 173, 104, 0.6); color: #ecd9ae; }
 
 /* --- the portal --------------------------------------------------------------------- */
@@ -1117,6 +1141,12 @@ h3.mg-group-label { font-weight: 400; line-height: 1.45; }
 /* every door's sign keeps one box, so the names below line up across a row;
    an alphabet's signScale enlarges the drawing inside it (overflow is visible) */
 .mg-door-sign .mg-glyph:not(.is-figure) { width: 1em; height: 1em; transform: scale(var(--mg-scale, 1)); }
+/* A drawn door sign is an icon fitted to its ink (MagicGlyph fit="ink"): its
+   box is the same for every door, the sign fills three quarters of it and
+   stands at its centre, and its pen is the same in px on every door. A set
+   sign (☿, ᚠ, ᚎ) is set to stand as tall. */
+.mg-door-sign .mg-glyph.is-fit { width: 2.75rem; height: 2.75rem; transform: none; }
+.mg-door-sign .mg-char { font-size: 2.1rem; }
 .mg-door-sign .mg-unstruck { width: 2.6rem; height: 2.6rem; vertical-align: middle; }
 .mg-door.is-pending .edu-hall-glyph { text-shadow: none; }
 .mg-door-names { font-family: var(--mg-read); font-size: 0.95rem; }
@@ -1147,6 +1177,7 @@ h3.mg-group-label { font-weight: 400; line-height: 1.45; }
 .mg-door.is-compact .edu-hall-glyph { font-size: 2.3rem; }
 .mg-door.is-compact .mg-door-sign { min-height: 2.4rem; }
 .mg-door.is-compact .mg-door-sign .mg-unstruck { width: 1.9rem; height: 1.9rem; }
+.mg-door.is-compact .mg-door-sign .mg-glyph.is-fit { width: 2.1rem; height: 2.1rem; }
 /* a door's name keeps the hall card's look at whatever rank the page's outline
    gives it (h3 on the Scriptorium portal, h4 and h5 on the wing's) */
 .mg-door .mg-door-title { margin: 0.35em 0 0; font-family: "Cinzel", Georgia, "Times New Roman", serif; font-weight: 500; line-height: 1.12; color: #f4f0e7; letter-spacing: 0.14em; text-transform: uppercase; font-size: 1rem; }
@@ -1174,6 +1205,7 @@ h3.mg-group-label { font-weight: 400; line-height: 1.45; }
   .mg-door.is-compact { flex-direction: row; justify-content: flex-start; gap: 0.95rem; padding: 0.65rem 1rem; text-align: left; }
   .mg-door.is-compact .mg-door-sign { flex: 0 0 2rem; min-height: 2rem; font-size: 1.75rem; }
   .mg-door.is-compact .mg-door-sign .mg-unstruck { width: 1.55rem; height: 1.55rem; }
+  .mg-door.is-compact .mg-door-sign .mg-glyph.is-fit { width: 2rem; height: 2rem; }
   .mg-door.is-compact .mg-door-title { margin: 0; font-size: 0.82rem; }
   .mg-door.is-compact:hover { transform: none; }
 }
