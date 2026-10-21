@@ -310,6 +310,13 @@ h3.mg-group-label { font-weight: 400; line-height: 1.45; }
 @media (max-width: 600px) {
   .edu-letter-grid.mg-cols.is-halved { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .is-halved .mg-letter-card.is-wide { grid-column: 1 / -1; }
+  /* the card set across the row sizes a long name by one column's width, as
+     its group's other cards do (half its own, less half the grid's 0.7rem gap
+     and a card's 0.4rem side padding and 1px border), so the group keeps one
+     name size */
+  .is-halved .mg-letter-card.is-wide .edu-letter-name.is-long {
+    font-size: clamp(0.58rem, calc((50cqi - 0.75rem - 1px) / (var(--mg-word, 12) * 0.88)), 0.74rem);
+  }
 }
 /* four to a row on a phone leaves a card about 80px wide: the names (the
    reconstructed *þurisaz, *kaunan) are set smaller so they break at spaces,
@@ -373,10 +380,12 @@ h3.mg-group-label { font-weight: 400; line-height: 1.45; }
    drawn ones */
 .mg-page .edu-drill-option-glyph:not(:has(svg)) { font-size: 2.4rem; line-height: 1.2; }
 .mg-letter-card .edu-letter-name { max-width: 100%; overflow-wrap: anywhere; }
-/* A name with a word of ten letters or more (TAPHTHARTHARATH, ÆGISHJÁLMUR) is
-   set down only as far as its own card needs: the card is a size container,
-   and the word's length (--mg-word, from Letters.jsx) against the card's width
-   gives the size, never above the other names' and never below 0.58rem. An
+/* A group whose names hold a word of ten letters or more (TAPHTHARTHARATH,
+   ÆGISHJÁLMUR) sets all its names down, only as far as its cards need: the
+   card is a size container, and the length of the group's longest word
+   (--mg-word, set on the group's grid by Letters.jsx) against the card's width
+   gives the size, so a group's names share one size, never above the other
+   names' and never below 0.58rem. An
    upper-case letter of the face is at most about 0.75em wide, with 0.1em of
    tracking. A page of titles (the books, the chapters: is-formless) sets
    every title at one size and gives its cards room for the longest word, so
@@ -400,6 +409,28 @@ h3.mg-group-label { font-weight: 400; line-height: 1.45; }
   color: rgba(222, 212, 196, 0.6);
 }
 .mg-letter-card .edu-letter-translit { min-height: 1.1em; }
+/* A card's third line (its transliteration, or what it stands for) is set a
+   little larger than the halls' and stands at the foot of the card, so the
+   third lines of a row share one line however the names above them wrap. Its
+   face is the halls' transliteration face, which the wing sets (--edu-translit). */
+.mg-letter-card .edu-letter-translit { font-size: 0.86rem; margin-top: auto; }
+/* A Hebrew-keyed alphabet's card gives the Hebrew letter it stands for, then
+   the transliteration: "א ʾ", not a lone mark. The letter is upright (the face
+   has no italic) and sits on the transliteration's baseline. */
+.mg-card-key { display: inline-flex; align-items: baseline; justify-content: center; gap: 0.35em; }
+.mg-card-key .mg-key-he {
+  font-family: var(--edu-glyph-faces, var(--edu-script-faces), serif);
+  font-style: normal;
+  font-size: 1.2rem;
+  line-height: 1;
+  color: rgba(236, 217, 174, 0.92);
+}
+/* a code point (a sign of the art with no other name) is a number, not a
+   transliteration: roman, small, its figures lining. It is set small inside
+   a line of the usual size, so beside a transliteration (ogham's extra
+   letters) it keeps the row's baseline. */
+.mg-letter-card .edu-letter-translit.is-code { font-style: normal; }
+.mg-letter-card .is-code .mg-code { font-size: 0.7rem; letter-spacing: 0.04em; font-variant-numeric: lining-nums; }
 
 /* A page of the wing that is not an alphabet (the author's chapters, the
    lineage's books) has no sign to show: its cards are titles, set in from the

@@ -104,6 +104,17 @@ const valueProps = (mod) => (mod.valueLang
     ? { lang: mod.valueLang, dir: RTL_LANGS.has(mod.valueLang) ? 'rtl' : undefined, className: 'edu-glyph mg-value-script' }
     : {});
 
+// A card's name, split where it carries a gloss in brackets ("Samech (the
+// second sign)"), and the length of its longest word: a group of cards sets
+// all its names at the size its longest word needs (magic.css, --mg-word).
+const nameParts = (name) => {
+    const [, main, sub] = /^(.+?)\s*\((.+)\)$/.exec(String(name)) || [null, String(name), null];
+    return { main, sub };
+};
+const longestWord = (name) => Math.max(...nameParts(name).main.split(/\s+/).map((w) => [...w].length));
+// a word of ten letters or more sets its group's names down
+const LONG_WORD = 10;
+
 // `formless` is a page of the wing that is not an alphabet (the author's
 // chapters, the lineage's books): its entries have no form to show or trace,
 // so neither the card nor the plaque wears a sign or speaks of one.
@@ -285,9 +296,20 @@ export function LetterGrid({ mod, letters, keyedTo = 'none', direction = 'ltr', 
         document.getElementById(`mg-letter-${next}`)?.focus({ preventScroll: true });
     };
 
+    // A group's names share one size: the longest word among them (the
+    // grid carries it as --mg-word) sets every name of the group down, so
+    // "Sublimation" and "Precipitation" stand at one size in one row.
+    const wordOf = (items) => (formless ? 0 : Math.max(0, ...items.map(([l]) => longestWord(l.name))));
+    const wordStyle = (word) => (word >= LONG_WORD ? { '--mg-word': word } : {});
+    // A Hebrew-keyed alphabet's card shows the Hebrew letter it stands for
+    // in its third line, before the transliteration, so Aleph reads "א ʾ"
+    // and not a lone mark; a code point (a sign with no transliteration or
+    // planet) is set as a number, not in the transliteration's italic.
+    const hebrew = keyedTo === 'hebrew';
     // `wide`: the first card of an odd group, set across the row where the
-    // group stands two to a row (is-halved), so the group ends evenly
-    const card = ([l, i], wide = false) => (
+    // group stands two to a row (is-halved), so the group ends evenly;
+    // `word`: the longest word among the names of the card's group
+    const card = ([l, i], wide = false, word = 0) => (
         <button
             type="button"
             key={`${l.name}-${i}`}
@@ -305,25 +327,41 @@ export function LetterGrid({ mod, letters, keyedTo = 'none', direction = 'ltr', 
             {(() => {
                 // a name with a gloss in brackets ("Samech (the second sign)")
                 // sets the gloss as a small line under the name, so one long
-                // label does not stretch its whole row of cards. A long word
-                // is set down only as far as its card needs (magic.css reads
-                // its length as --mg-word).
-                const [, main, sub] = /^(.+?)\s*\((.+)\)$/.exec(String(l.name)) || [null, String(l.name), null];
-                const longest = Math.max(...main.split(/\s+/).map((w) => [...w].length));
-                // a page of titles sets every title at one size (magic.css)
-                const long = !formless && longest >= 10;
+                // label does not stretch its whole row of cards. A group with
+                // a long word sets its names down only as far as its cards
+                // need (magic.css reads the word's length as --mg-word, from
+                // the grid); a page of titles sets every title at one size.
+                const { main, sub } = nameParts(l.name);
+                const long = word >= LONG_WORD;
                 return (
-                    <span className={`edu-letter-name${long ? ' is-long' : ''}`} style={long ? { '--mg-word': longest } : undefined}>
+                    <span className={`edu-letter-name${long ? ' is-long' : ''}`}>
                         {main}{sub && <>{' '}<span className="mg-letter-sub">{sub}</span></>}
                     </span>
                 );
             })()}
-            {/* a transliteration that only repeats the name (the Voynich
-                glyphs, named in EVA) is not printed or read out twice; a
-                value in another script (valueLang) stands where it would */}
-            {mod.valueLang && !l.translit && l.value != null
-                ? <span className="edu-letter-translit mg-letter-value"><span {...valueProps(mod)}>{l.value}</span></span>
-                : <span className="edu-letter-translit">{l.translit && String(l.translit).toLowerCase() === String(l.name).toLowerCase() ? '' : l.translit || l.planet || l.codepoint || ''}</span>}
+            {(() => {
+                // a transliteration that only repeats the name (the Voynich
+                // glyphs, named in EVA) is not printed or read out twice; a
+                // value in another script (valueLang) stands where it would
+                if (mod.valueLang && !l.translit && l.value != null) {
+                    return <span className="edu-letter-translit mg-letter-value"><span {...valueProps(mod)}>{l.value}</span></span>;
+                }
+                const tr = l.translit && String(l.translit).toLowerCase() === String(l.name).toLowerCase() ? '' : l.translit || l.planet || l.codepoint || '';
+                if (hebrew && l.value != null) {
+                    return (
+                        <span className="edu-letter-translit mg-card-key">
+                            <span lang="he" dir="rtl" className="mg-key-he">{l.value}</span>
+                            {tr && <span className="mg-key-tr">{tr}</span>}
+                        </span>
+                    );
+                }
+                // (the code point is set small inside a line of the usual
+                // size, so it keeps the baseline of the row's other third lines)
+                const code = Boolean(tr) && !l.translit && !l.planet && tr === l.codepoint;
+                return code
+                    ? <span className="edu-letter-translit is-code"><span className="mg-code">{tr}</span></span>
+                    : <span className="edu-letter-translit">{tr}</span>;
+            })()}
         </button>
     );
     const plaque = letter && (
@@ -347,17 +385,19 @@ export function LetterGrid({ mod, letters, keyedTo = 'none', direction = 'ltr', 
     if (!mod.groups) {
         // a name of eleven letters or more in one word needs a wider card
         const longNames = letters.some((l) => String(l.name).split(/\s+/).some((w) => w.length >= 11));
+        const word = wordOf(groups[0].items);
         return (
             <>
                 <div
                     className={`edu-letter-grid mg-letter-groups${longNames ? ' has-long-names' : ''}${formless ? ' is-formless' : ''}`}
+                    style={wordStyle(word)}
                     role="listbox"
                     aria-label={label}
                     aria-activedescendant={letter ? `mg-letter-${selected}` : undefined}
                     onKeyDown={onKeyDown}
                     dir={rtl ? 'rtl' : undefined}
                 >
-                    {groups[0].items.map((it) => card(it))}
+                    {groups[0].items.map((it) => card(it, false, word))}
                 </div>
                 {plaque}
                 {announce}
@@ -369,6 +409,7 @@ export function LetterGrid({ mod, letters, keyedTo = 'none', direction = 'ltr', 
             {groups.map((g) => {
                 const holds = g.items.some(([, i]) => i === selected);
                 const GroupLabel = g.heading ? 'h3' : 'p';
+                const word = wordOf(g.items);
                 return (
                     <React.Fragment key={g.key}>
                         <div className={`mg-letter-group${g.heading ? ' has-head' : ''}`}>
@@ -395,14 +436,14 @@ export function LetterGrid({ mod, letters, keyedTo = 'none', direction = 'ltr', 
                             )}
                             <div
                                 className={`edu-letter-grid mg-cols${quartered ? ' is-quartered' : ''}${thirded ? ' is-thirded' : ''}${halved ? ' is-halved' : ''}${formless ? ' is-formless' : ''}`}
-                                style={{ '--mg-cols': cols }}
+                                style={{ '--mg-cols': cols, ...wordStyle(word) }}
                                 role="listbox"
                                 aria-labelledby={`mg-group-${g.key}`}
                                 aria-activedescendant={holds ? `mg-letter-${selected}` : undefined}
                                 onKeyDown={onKeyDown}
                                 dir={rtl ? 'rtl' : undefined}
                             >
-                                {g.items.map((it, k) => card(it, halved && k === 0 && g.items.length % 2 === 1))}
+                                {g.items.map((it, k) => card(it, halved && k === 0 && g.items.length % 2 === 1, word))}
                             </div>
                         </div>
                         {holds && plaque}
