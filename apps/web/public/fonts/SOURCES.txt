@@ -18,7 +18,11 @@ The @font-face rules and their unicode-range lines are in src/index.css. Every
 script family is named in both script stacks there: `.edu-page .edu-glyph` and
 `--edu-script-faces`. The Cinzel supplement is the exception: its five files
 are declared as more faces of the "Cinzel" family, so they are named wherever
-Cinzel is, and in neither script stack.
+Cinzel is, and in neither script stack. The faces of scripts that have no
+italic (TL Hebrew, TL Arabic, TL Phoenician, TL Runic, TL Ogham, TL Signs) are
+declared a second time with font-style: italic and the same file, so that
+text set in an italic note stands upright instead of being slanted by the
+browser.
 
 
 Copies (file  <-  package, subset file; font version in the name table)
@@ -69,6 +73,17 @@ TLRunic.woff2  "TL Runic"  (6,588 bytes)
        Noto Sans Runic, Version 2.002. Subset U+16A0-16F8: the whole Runic block
        to the end of the Unicode 7 additions, so it includes the Elder Futhark,
        the Younger Futhark and the futhorc rows.
+TLHebrew.woff2  "TL Hebrew"  (7,808 bytes)
+    <- @fontsource/noto-serif-hebrew@5.3.0 (tarball sha1
+       f8cc61a9a19cb42c301378db354ed6f863358ca4),
+       files/noto-serif-hebrew-hebrew-400-normal.woff2
+       Noto Serif Hebrew, Version 2.004. The letters, the points and the
+       cantillation marks (U+0591-05C7), the presentation forms U+FB1D-FB4F,
+       with GPOS mark and mkmk. The @font-face unicode-range is
+       U+0590-05FF, U+FB1D-FB4F: the subset's U+200C-2010 and U+25CC are left
+       to the text face. Declared twice, normal and italic, from the same
+       file: the face has no italic, and a slanted square letter is only the
+       browser's synthesis.
 TLOgham.woff2  "TL Ogham"  (3,896 bytes)
     <- @fontsource/noto-sans-ogham@5.3.0, files/noto-sans-ogham-ogham-400-normal.woff2
        Noto Sans Ogham, Version 2.001. Subset U+1680-169C: the space mark,

@@ -9536,12 +9536,10 @@ h3 {
   unicode-range: U+13000-1342F;
 }
 
-/* Native-script text throughout the portal. The hieroglyph face carries a
-   unicode-range, so it only ever claims the Egyptian block; everything else
-   falls through to serifs with good polytonic Greek and Hebrew coverage. */
-.edu-page .edu-glyph {
-  font-family: "TL Hieroglyphs", "Palatino", "Palatino Linotype", "Book Antiqua", "Times New Roman", serif;
-}
+/* Native-script text throughout the portal is set in --edu-glyph-faces: the
+   script faces, each scoped by unicode-range to its own block, then serifs with
+   good polytonic Greek. The one rule that sets it follows the last of the script
+   faces, below ("Seven further scripts"). */
 
 .edu-main {
   max-width: 1180px;
@@ -10651,9 +10649,15 @@ h3 {
   font-weight: 400; font-style: normal; font-display: swap;
   unicode-range: U+0600-06FF, U+0750-077F, U+FB50-FDFF, U+FE70-FEFF;
 }
-.edu-page .edu-glyph {
-  font-family: "TL Hieroglyphs", "TL Cuneiform", "TL Devanagari", "TL Arabic",
-               "Palatino", "Palatino Linotype", "Book Antiqua", "Times New Roman", serif;
+/* The Arabic face has no italic; a slanted Naskh is only the browser's synthesis
+   (an alif slanted reads as a slash). The same file answers for italic, so a run
+   quoted in an italic note stands upright. The same alias is given to TL Hebrew,
+   TL Phoenician, TL Runic, TL Ogham and TL Signs. */
+@font-face {
+  font-family: "TL Arabic";
+  src: url("/fonts/NotoNaskhArabic.woff2") format("woff2");
+  font-weight: 400; font-style: italic; font-display: swap;
+  unicode-range: U+0600-06FF, U+0750-077F, U+FB50-FDFF, U+FE70-FEFF;
 }
 /* Devanagari and Naskh both carry tall ascenders and deep descenders; give
    the display sizes room so matras and dots are not clipped. */
@@ -10680,11 +10684,20 @@ h3 {
 @font-face { font-family: "TL Ethiopic"; src: url("/fonts/TLEthiopic.woff2") format("woff2");
   font-weight: 400; font-style: normal; font-display: swap; unicode-range: U+1200-137F, U+1380-139F, U+2D80-2DDF; }
 
+/* Hebrew — Noto Serif Hebrew, shipped as "TL Hebrew" (public/fonts/SOURCES.txt), so
+   the square letters and their points are one design on every device instead of
+   whatever Hebrew the system has. Scoped to the Hebrew blocks. */
+@font-face { font-family: "TL Hebrew"; src: url("/fonts/TLHebrew.woff2") format("woff2");
+  font-weight: 400; font-style: normal; font-display: swap; unicode-range: U+0590-05FF, U+FB1D-FB4F; }
+/* the Hebrew face has no italic; a slanted square letter is only the browser's synthesis */
+@font-face { font-family: "TL Hebrew"; src: url("/fonts/TLHebrew.woff2") format("woff2");
+  font-weight: 400; font-style: italic; font-display: swap; unicode-range: U+0590-05FF, U+FB1D-FB4F; }
+
+/* The one rule for native-script text: --edu-glyph-faces (below) is the prose
+   stack's script faces followed by the book serifs, so a face added to
+   --edu-script-faces is named in both stacks at once. */
 .edu-page .edu-glyph {
-  font-family: "TL Hieroglyphs", "TL Cuneiform", "TL Devanagari", "TL Arabic",
-               "TL Tibetan", "TL Syriac", "TL Coptic", "TL Mandaic", "TL Armenian", "TL Ethiopic",
-               "TL Glagolitic", "TL Cyrillic Ext", "TL Phoenician", "TL Runic", "TL Ogham", "TL Signs",
-               "Palatino", "Palatino Linotype", "Book Antiqua", "Times New Roman", serif;
+  font-family: var(--edu-glyph-faces);
 }
 /* Running prose quotes signs inline as well — an exercise that asks the reader
    to translate a sign, a paragraph that names one. Georgia has no hieroglyphs,
@@ -10693,10 +10706,12 @@ h3 {
    unicode-range-scoped to its own block, so naming them ahead of the body serif
    costs Latin nothing: Georgia still wins for every character it covers. */
 :root {
-  --edu-script-faces: "TL Hieroglyphs", "TL Cuneiform", "TL Devanagari", "TL Arabic",
+  --edu-script-faces: "TL Hebrew", "TL Hieroglyphs", "TL Cuneiform", "TL Devanagari", "TL Arabic",
                       "TL Tibetan", "TL Syriac", "TL Coptic", "TL Mandaic", "TL Armenian",
                       "TL Ethiopic", "TL Glagolitic", "TL Cyrillic Ext", "TL Phoenician",
                       "TL Runic", "TL Ogham", "TL Signs";
+  --edu-glyph-faces: var(--edu-script-faces), "Palatino", "Palatino Linotype", "Book Antiqua",
+                     "Times New Roman", serif;
 }
 /* Tibetan stacks vertically and Ethiopic sits on a heavy baseline; both need
    more leading than a Latin face at the same size. */
@@ -11139,6 +11154,8 @@ h3 {
    in the two script stacks above, it was declared here and never used. */
 @font-face { font-family: "TL Phoenician"; src: url("/fonts/TLPhoenician.woff2") format("woff2");
   font-weight: 400; font-style: normal; font-display: swap; unicode-range: U+10900-1091F; }
+@font-face { font-family: "TL Phoenician"; src: url("/fonts/TLPhoenician.woff2") format("woff2");
+  font-weight: 400; font-style: italic; font-display: swap; unicode-range: U+10900-1091F; }
 
 /* The Magical Scriptorium sets three of its alphabets as text, not drawings:
    the runes, the ogham, and the planetary, zodiacal and alchemical signs.
@@ -11151,6 +11168,16 @@ h3 {
   font-weight: 400; font-style: normal; font-display: swap; unicode-range: U+1680-169C; }
 @font-face { font-family: "TL Signs"; src: url("/fonts/TLSigns.woff2") format("woff2");
   font-weight: 400; font-style: normal; font-display: swap;
+  unicode-range: U+2609, U+263D, U+263F-2644, U+2648-2653, U+1F701-1F706, U+1F70D, U+1F714,
+                 U+1F716, U+1F739, U+1F75E-1F760, U+1F764; }
+/* The runes, the ogham and the signs have no italic either: in an italic note they
+   stand upright, as the wing sets them, rather than slanted by the browser. */
+@font-face { font-family: "TL Runic"; src: url("/fonts/TLRunic.woff2") format("woff2");
+  font-weight: 400; font-style: italic; font-display: swap; unicode-range: U+16A0-16F8; }
+@font-face { font-family: "TL Ogham"; src: url("/fonts/TLOgham.woff2") format("woff2");
+  font-weight: 400; font-style: italic; font-display: swap; unicode-range: U+1680-169C; }
+@font-face { font-family: "TL Signs"; src: url("/fonts/TLSigns.woff2") format("woff2");
+  font-weight: 400; font-style: italic; font-display: swap;
   unicode-range: U+2609, U+263D, U+263F-2644, U+2648-2653, U+1F701-1F706, U+1F70D, U+1F714,
                  U+1F716, U+1F739, U+1F75E-1F760, U+1F764; }
 

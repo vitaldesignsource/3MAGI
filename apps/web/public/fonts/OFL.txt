@@ -6,6 +6,7 @@ Copyright 2022 The Noto Project Authors (https://github.com/notofonts/devanagari
 Copyright 2022 The Noto Project Authors (https://github.com/notofonts/egyptian-hieroglyphs)
 Copyright 2022 The Noto Project Authors (https://github.com/notofonts/ethiopic)
 Copyright 2022 The Noto Project Authors (https://github.com/notofonts/glagolitic)
+Copyright 2022 The Noto Project Authors (https://github.com/notofonts/hebrew)
 Copyright 2022 The Noto Project Authors (https://github.com/notofonts/mandaic)
 Copyright 2022 The Noto Project Authors (https://github.com/notofonts/ogham)
 Copyright 2022 The Noto Project Authors (https://github.com/notofonts/phoenician)
