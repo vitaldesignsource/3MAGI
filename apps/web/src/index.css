@@ -10043,6 +10043,11 @@ h3 {
   text-align: center;
 }
 .edu-reckoner-input:focus { outline: none; border-color: rgba(209, 173, 104, 0.8); }
+/* Text typed into a reckoner may be Hebrew, Arabic or another script: the script
+   faces come first, each scoped to its own block, so Latin and digits keep Cinzel
+   (the pattern of the search box below). The gematria reckoner's input is also an
+   .edu-glyph and keeps that stack. */
+.edu-reckoner-input { font-family: var(--edu-script-faces), "Cinzel", Georgia, "Times New Roman", serif; }
 .edu-reckoner-result { margin-top: 1.2rem; text-align: center; }
 .edu-reckoner-breakdown {
   display: flex;
@@ -11324,7 +11329,7 @@ h3 {
    kickers, badges, chips, and table headers. Native scripts keep their own
    faces via .edu-glyph. */
 .edu-page .edu-hero-sub,
-.edu-page .edu-section-head p,
+.edu-page .edu-section-head p:not(.kicker),
 .ch-page .ch-entry-sub,
 .ch-page .ch-entry-body,
 .ch-page .ch-claim,
@@ -11388,8 +11393,7 @@ h3 {
 .ch-page .ch-canon-tradnote p,
 .ch-page .ch-map-blurb, .ch-page .ch-map-edesc,
 .edu-page .edu-kinship-legend,
-.edu-page .edu-event-detail, .edu-page .edu-event-dating,
-.edu-page .edu-search-detail {
+.edu-page .edu-event-detail, .edu-page .edu-event-dating {
   font-family: Georgia, "Times New Roman", serif;
   letter-spacing: 0.005em;
 }
@@ -11451,7 +11455,8 @@ h3 {
 .edu-page .edu-pgm p,
 .edu-page .edu-lesson-section p,
 .edu-page .edu-lesson-section li,
-.edu-page .edu-search-sub {
+.edu-page .edu-search-sub,
+.edu-page .edu-search-detail {
   font-family: var(--edu-script-faces), Georgia, "Times New Roman", serif;
   letter-spacing: 0.005em;
 }
@@ -11474,6 +11479,11 @@ h3 {
 .edu-page .edu-plaque-badge,
 .edu-page .edu-drill button {
   font-family: "Cinzel", Georgia, serif;
+}
+/* …but a drill option that is itself a sign (find mode: pick the rune, the
+   letter, the planet) is set in the script faces, like every .edu-glyph */
+.edu-page .edu-drill button.edu-glyph {
+  font-family: var(--edu-glyph-faces);
 }
 .edu-page .edu-plaque-body { line-height: 1.75; }
 .edu-page .edu-lex-def, .edu-page .edu-name-body p { line-height: 1.75; }

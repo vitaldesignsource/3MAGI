@@ -21,6 +21,11 @@ const INDEX_URL = '/scriptorium-index.json';
 // finds "ḥaqq". Native-script queries are matched unfolded.
 const fold = (s) => s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
 
+// One Latin letter or digit is too little to search for, but one sign of a
+// script (ᚠ, ☿, א, a hieroglyph) is a whole query: it is what a reader pastes.
+// Counted in characters, not UTF-16 units.
+const enough = (s) => [...s].length >= 2 || /[^\p{Script=Latin}\p{N}\p{P}\s]/u.test(s);
+
 const KIND_LABEL = {
     sign: 'Sign', name: 'Divine name', term: 'Lexicon', current: 'Current',
     work: 'Text', event: 'Timeline', lesson: 'Lesson', book: 'Reading Room',
@@ -114,11 +119,11 @@ function ScriptoriumSearch({ scope = 'scriptorium', scripts = null, placeholder 
         }
     }, []);
 
-    useEffect(() => { if (query.trim().length >= 2) ensureIndex(); }, [query, ensureIndex]);
+    useEffect(() => { if (enough(query.trim())) ensureIndex(); }, [query, ensureIndex]);
 
     const results = useMemo(() => {
         const q = query.trim();
-        if (!index || q.length < 2) return [];
+        if (!index || !enough(q)) return [];
         const qf = fold(q);
         const scored = [];
         for (const rec of index.records) {
@@ -180,8 +185,8 @@ function ScriptoriumSearch({ scope = 'scriptorium', scripts = null, placeholder 
                 <span id="edu-search-status" className="edu-search-status" aria-live="polite">
                     {state === 'loading' && 'opening the index…'}
                     {state === 'error' && 'the index could not be loaded'}
-                    {state === 'ready' && q.length >= 2 && `${results.length}${results.length === 120 ? '+' : ''} found`}
-                    {state === 'ready' && q.length > 0 && q.length < 2 && 'keep typing…'}
+                    {state === 'ready' && enough(q) && `${results.length}${results.length === 120 ? '+' : ''} found`}
+                    {state === 'ready' && q.length > 0 && !enough(q) && 'keep typing…'}
                 </span>
             </div>
 
@@ -235,7 +240,7 @@ function ScriptoriumSearch({ scope = 'scriptorium', scripts = null, placeholder 
                 </ul>
             )}
 
-            {state === 'ready' && q.length >= 2 && results.length === 0 && (
+            {state === 'ready' && enough(q) && results.length === 0 && (
                 <p className="edu-search-empty">{sc.empty} “{q}”.</p>
             )}
         </section>
