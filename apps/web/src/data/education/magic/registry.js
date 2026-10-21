@@ -52,7 +52,7 @@ const registry = {
         {
             slug: 'malachim', group: 'agrippan', title: 'Malachim, the Writing of the Angels', short: 'Malachim',
             otherNames: ['Melachim', 'the writing of the angels, or regal'],
-            keyedTo: 'hebrew', direction: 'rtl', status: 'ready',
+            keyedTo: 'hebrew', direction: 'rtl', status: 'ready', signScale: 1.3,
             // door: its Aleph, as drawn on its page (the validator checks it is one of the page's own signs)
             door: { glyph: { d: 'M 49.0 31.7 L 48.6 67.4 M 34.8 30.8 L 35.0 38.7 L 64.6 38.7 L 64.4 31.7 M 37.6 46.8 L 60.4 46.9 M 34.3 66.9 L 34.4 55.4 L 63.8 55.4 L 64.2 66.7', rings: [[34.6, 25.8, 5], [49, 26.7, 5], [64.3, 26.7, 5], [34.6, 46.8, 3], [63.4, 46.9, 3], [34.2, 71.9, 5], [48.6, 72.4, 5], [64.4, 71.7, 5]] } },
             blurb: 'The second of Agrippa’s three ring-letter alphabets: “of Angels, or Regal”, as the English of 1651 has it.',

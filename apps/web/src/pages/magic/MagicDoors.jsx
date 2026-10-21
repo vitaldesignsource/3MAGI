@@ -13,7 +13,9 @@ import { ALPHABETS, entryPath, STATUS_LABEL } from './lib';
 // door states its status to a screen reader only: the empty seal says it to
 // the eye, and DoorLegend keys the seal once, under the row. `level` is the
 // rank of the door's name in the page's outline: a door stands one level
-// below the heading of the row it is in.
+// below the heading of the row it is in. A drawn door sign is an icon, fitted
+// to its ink (MagicGlyph fit="ink"), so every door's sign fills its box alike
+// and stands at its centre, whatever the alphabet's signScale.
 
 export function statusLine(entry, stub) {
     if (entry.status === 'forms-pending') return STATUS_LABEL['forms-pending'];
@@ -27,9 +29,8 @@ export function MagicDoor({ entry, stub = false, compact = false, level = 3 }) {
     return (
         <Link className={`edu-hall-card mg-door${compact ? ' is-compact' : ''}${entry.status === 'forms-pending' ? ' is-pending' : ''}`}
             to={entryPath(entry.slug)} title={compact ? entry.blurb : undefined}>
-            <span className="edu-hall-glyph mg-door-sign" aria-hidden="true"
-                style={entry.signScale ? { '--mg-scale': entry.signScale } : undefined}>
-                {entry.door ? <Sign of={entry.door} /> : <Unstruck />}
+            <span className="edu-hall-glyph mg-door-sign" aria-hidden="true">
+                {entry.door ? <Sign of={entry.door} fit="ink" /> : <Unstruck />}
             </span>
             <Title className="mg-door-title">{compact ? entry.short : entry.title}</Title>
             {!compact && entry.otherNames && entry.otherNames[0] && <p className="edu-hall-sample mg-door-names">{entry.otherNames[0]}</p>}
