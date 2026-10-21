@@ -1,1 +1,0 @@
-import{j as s}from"./vendor-react-3nEW280y.js";import{t as a,f as i}from"./magic-ZEXcAQAh.js";function l({title:r}){const[t,e]=a(r);return s.jsxs("h1",{className:"mg-fit",style:i(t),children:[t,e&&s.jsxs(s.Fragment,{children:[" ",s.jsx("span",{className:"mg-h1-sub",children:e})]})]})}export{l as F};

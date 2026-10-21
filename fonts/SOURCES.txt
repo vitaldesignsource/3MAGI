@@ -1,10 +1,11 @@
 The fonts in this folder, and where each file comes from
 ========================================================
 
-Licence. Every Noto face listed below is licensed under the SIL Open Font
-License, Version 1.1. The licence text and the copyright notice of each Noto
-project are in OFL.txt, beside this file. The TC-Seraphine family is not a
-Noto face. OFL.txt does not cover it, and this file does not record it.
+Licence. Every face listed below is licensed under the SIL Open Font
+License, Version 1.1: the Noto faces, the faces made from Cinzel, Gelasio and
+Gentium Book Plus. The licence text and the copyright notice of each project
+are in OFL.txt, beside this file. The TC-Seraphine family is not listed here.
+OFL.txt does not cover it, and this file does not record it.
 
 Provenance. Each file is either a COPY, byte for byte, of one script subset
 from a @fontsource package (checked with cmp), or a CUT made from such
@@ -13,9 +14,24 @@ subsets by the script named in its entry. The packages were fetched with
 are not in package.json or the lockfile for these files. The 12 @fontsource
 entries in package.json record the older faces only.
 
-The @font-face rules and their unicode-range lines are in src/index.css. Every
-family is named in both script stacks there: `.edu-page .edu-glyph` and
-`--edu-script-faces`.
+The @font-face rules and their unicode-range lines of the shared faces are in
+src/index.css. Every script family is named in --edu-script-faces there, and
+`.edu-page .edu-glyph` reads the same list through --edu-glyph-faces, so a
+face is always in both stacks. The Cinzel supplement is the exception: its
+five files are declared as more faces of the "Cinzel" family, so they are
+named wherever Cinzel is, and in neither script stack. The faces of scripts
+that have no italic (TL Hebrew, TL Arabic, TL Phoenician, TL Ugaritic,
+TL Avestan, TL Runic, TL Ogham, TL Signs, and in the wing TL Shape Hints) are
+declared a second time with font-style: italic and the same file, so that
+text set in an italic note stands upright instead of being slanted by the
+browser.
+
+The faces only the Magical Scriptorium names (TL Reading, TL Greek, TL Shape
+Hints) are declared in src/styles/magic-fonts.css, not in index.css, and are
+in none of the halls' stacks. Only the wing's own stacks name them; the
+reading-voice rules of index.css take a page's stacks through --edu-read,
+--edu-read-plain and --edu-translit, and where those are unset (in every
+hall) they fall back to the stacks the halls have always had.
 
 
 Copies (file  <-  package, subset file; font version in the name table)
@@ -61,11 +77,46 @@ TLCyrillicExt.woff2  "TL Cyrillic Ext"
 TLPhoenician.woff2  "TL Phoenician"
     <- @fontsource/noto-sans-phoenician@5.3.0, files/noto-sans-phoenician-phoenician-400-normal.woff2
        Noto Sans Phoenician, Version 2.001. Subset U+10900-1091B, U+1091F.
+TLUgaritic.woff2  "TL Ugaritic"  (5,204 bytes)
+    <- @fontsource/noto-sans-ugaritic@5.3.0 (tarball sha1
+       ffdf8331e01e8f4a19e0d42e89d9b88f828b2f1b),
+       files/noto-sans-ugaritic-ugaritic-400-normal.woff2
+       Noto Sans Ugaritic, Version 2.001. The @font-face unicode-range is the
+       Ugaritic block, U+10380-1039F.
+TLAvestan.woff2  "TL Avestan"  (10,300 bytes)
+    <- @fontsource/noto-sans-avestan@5.3.0 (tarball sha1
+       49d20e77353c9e548625f7c478730f9022e9160b),
+       files/noto-sans-avestan-avestan-400-normal.woff2
+       Noto Sans Avestan, Version 2.003. The @font-face unicode-range is the
+       Avestan block, U+10B00-10B3F; the subset's punctuation (U+2E30-2E31)
+       and joiners are left to the text face.
 TLRunic.woff2  "TL Runic"  (6,588 bytes)
     <- @fontsource/noto-sans-runic@5.3.0, files/noto-sans-runic-runic-400-normal.woff2
        Noto Sans Runic, Version 2.002. Subset U+16A0-16F8: the whole Runic block
        to the end of the Unicode 7 additions, so it includes the Elder Futhark,
        the Younger Futhark and the futhorc rows.
+TLHebrew.woff2  "TL Hebrew"  (7,808 bytes)
+    <- @fontsource/noto-serif-hebrew@5.3.0 (tarball sha1
+       f8cc61a9a19cb42c301378db354ed6f863358ca4),
+       files/noto-serif-hebrew-hebrew-400-normal.woff2
+       Noto Serif Hebrew, Version 2.004. The letters, the points and the
+       cantillation marks (U+0591-05C7), the presentation forms U+FB1D-FB4F,
+       with GPOS mark and mkmk. The @font-face unicode-range is
+       U+0590-05FF, U+FB1D-FB4F: the subset's U+200C-2010 and U+25CC are left
+       to the text face. Declared twice, normal and italic, from the same
+       file: the face has no italic, and a slanted square letter is only the
+       browser's synthesis.
+TLGreek-400.woff2, TLGreek-400-italic.woff2, TLGreek-ext-400.woff2,
+TLGreek-ext-400-italic.woff2  "TL Greek"  (18,168 / 18,168 / 9,356 / 9,416 bytes)
+    <- @fontsource/gentium-book-plus@5.3.0 (tarball sha1
+       a1efef63ea77263eaa17a2902570a4e57f51522e),
+       files/gentium-book-plus-greek-400-normal.woff2, -greek-400-italic,
+       -greek-ext-400-normal, -greek-ext-400-italic
+       Gentium Book Plus, Version 6.101. The wing's Greek, with its breathings
+       and accents. These files must stay byte copies: the licence reserves
+       the names "Gentium" and "SIL", so a cut would have to be renamed. The
+       @font-face rules scale it by size-adjust 106% (its x-height 0.454 em
+       to Georgia's 0.481) and give it Georgia's line metrics.
 TLOgham.woff2  "TL Ogham"  (3,896 bytes)
     <- @fontsource/noto-sans-ogham@5.3.0, files/noto-sans-ogham-ogham-400-normal.woff2
        Noto Sans Ogham, Version 2.001. Subset U+1680-169C: the space mark,
@@ -75,21 +126,32 @@ TLOgham.woff2  "TL Ogham"  (3,896 bytes)
 Cut
 ---
 
-TLSigns.woff2  "TL Signs"  (3,540 bytes, 34 code points)
+TLSigns.woff2  "TL Signs"  (3,600 bytes, 34 code points)
     Made by tools/fonts/build-tlsigns.py (Python 3.11, fontTools 4.67.0,
     brotli 1.2.0). The script is in the repository, and a rebuild with those
-    versions gives the same bytes. It takes:
-      33 code points from @fontsource/noto-sans-symbols@5.3.0,
-         files/noto-sans-symbols-symbols-400-normal.woff2
-         (Noto Sans Symbols, Version 2.003);
-       1 code point, U+2609 SUN, from @fontsource/noto-sans-symbols-2@5.3.0,
+    versions gives the same bytes. It takes, from @fontsource/noto-sans-
+    symbols@5.3.0 (tarball sha1 596c71d1772a67ac6553a764816a639ba26c5f6b;
+    Noto Sans Symbols, Version 2.003):
+      28 code points from files/noto-sans-symbols-symbols-400-normal.woff2;
+       4 code points, U+263F MERCURY, U+2640 FEMALE SIGN (Venus), U+2641
+         EARTH and U+2642 MALE SIGN (Mars), from
+         files/noto-sans-symbols-symbols-500-normal.woff2;
+       1 code point, U+263D FIRST QUARTER MOON, from
+         files/noto-sans-symbols-symbols-700-normal.woff2;
+    and 1 code point, U+2609 SUN, from @fontsource/noto-sans-symbols-2@5.3.0,
          files/noto-sans-symbols-2-symbols-400-normal.woff2
          (Noto Sans Symbols 2, Version 2.008). Noto Sans Symbols has no Sun.
+    The heavier weights for five planets: at 400, Mercury, Venus, Mars and
+    Earth have a lighter stroke than Jupiter and Saturn (2 x area /
+    perimeter per 1000 em: 51, 50, 50, 51 against 66 and 64) and the Moon a
+    lighter one still (40); from the 500 and 700 files they measure 63, 62,
+    61, 63 and 57, within 10% (the Moon, which tapers, 15%) of Jupiter's and
+    Saturn's mean. The outlines are taken as drawn, not altered.
     The script merges them into one font. It keeps every outline and advance
     unchanged, and it checks them against the sources. It drops what single
     signs do not need: hinting, layout tables and vertical-writing metrics.
     It sets the line metrics to Noto Sans's own 1069 / -293, the same as
-    TLRunic. Every sign's ink lies within y -222..765. Noto Sans Symbols'
+    TLRunic. Every sign's ink lies within y -222..770. Noto Sans Symbols'
     own 1480 / -570 would open up any line of prose that quotes a sign. The
     font is renamed "TL Signs", and its copyright notice is kept.
 
@@ -109,3 +171,103 @@ TLSigns.woff2  "TL Signs"  (3,540 bytes, 34 code points)
     The @font-face unicode-range names these and nothing else. If the signs
     module gains a sign, add it to the script and to that unicode-range,
     rebuild, and update this entry.
+
+TLDisplayMarks-400.woff2, -500, -600, -700, -800  "Cinzel" (font-weight 400 ..
+    800; the name inside the files is "TL Display Marks")
+    (3,136 / 5,028 / 5,060 / 5,036 / 5,112 bytes, 24 code points each)
+    Made by tools/fonts/build-display-marks.py (Python 3.11, fontTools 4.67.0,
+    skia-pathops 0.9.2, brotli 1.2.0). The script is in the repository, and a
+    rebuild with those versions gives the same bytes. For each weight it reads
+    the two files of @fontsource-variable/cinzel@5.3.0 (tarball sha1
+    0fe26bf02b7173957d067d472671fd70cd230e41):
+      files/cinzel-latin-wght-normal.woff2 and
+      files/cinzel-latin-ext-wght-normal.woff2
+      (Cinzel, Version 2.000, variable in weight 400 .. 900: byte for byte the
+      two files Google Fonts serves the site, fonts.gstatic.com/s/cinzel/v26/).
+    Each file for 500 .. 800 is itself a variable font. The Cinzel glyphs it
+    reuses keep their outlines and their variations (gvar) unchanged, so at
+    the file's weight the browser draws them exactly as it draws Google's
+    Cinzel; static instances, rounded to whole units, would differ by up to
+    a unit. Each file is declared at its one weight, which the browser
+    applies to the weight axis. The 400 file, at the axis's default, where no
+    variation applies, is static (it is the one most pages load). Every
+    position the script computes (a dot, an ogonek, the cut of the ring, the
+    parts of № and the arrows) is measured on Cinzel as drawn at that
+    weight. The new glyphs do not vary, and take their advances from the
+    same measure. Cinzel's HVAR is left out (the new
+    glyphs have no row in it), so no glyph takes its advance from a component.
+    The code points are the letters and signs the site sets in Cinzel and
+    Cinzel lacks: U+1E0C-1E0D, U+1E24-1E25, U+1E32-1E33, U+1E36-1E37,
+    U+1E5A-1E5B, U+1E62-1E63, U+1E6C-1E6D, U+1E92-1E93 (D H K L R S T Z with
+    dot below, capital and small), U+02BE-02BF (the half rings ʾ ʿ), U+02BC
+    (ʼ), U+01EA-01EB (Ǫ ǫ), U+2116 (№), U+2190 and U+2192 (← →). Nothing is
+    drawn by hand. The dotted letters are composites of Cinzel's own letter
+    and the dot of its Ż ż, set below the letter as far as that dot stands
+    above z. ʾ and ʿ are the two halves of Cinzel's ring (U+02DA), cut on its
+    vertical axis and set where quoteright sits. ʼ is quoteright. Ǫ ǫ take the
+    ogonek of Ę ę, placed as Ę places it. № is N with Cinzel's o reduced and
+    raised, over a reduced en dash. ← and → are Cinzel's en dash, lengthened,
+    with a reduced single guillemet as the head. The script checks that every
+    outline it reuses equals the source glyph's point for point, with the
+    same variations and the same outline at the file's weight, that the two
+    half rings make up the ring, and that overlapping parts do not cancel.
+    The files keep Cinzel's line metrics (976 / -372), its gasp and prep (its
+    glyphs carry no hinting), have no layout tables, and keep Cinzel's
+    copyright notice with "Modified 2026,
+    Three Magi Press." added. Cinzel's licence reserves no font name; the
+    files are renamed all the same, as a modified version should be.
+    The unicode-range of the five @font-face rules names these code points and
+    nothing else. To add one, add it to the script and to that unicode-range,
+    rebuild, and update this entry.
+
+TLReading-latin-400.woff2, TLReading-latin-400-italic.woff2,
+TLReading-latin-ext-400.woff2, TLReading-latin-ext-400-italic.woff2
+"TL Reading"  (19,672 / 21,976 / 23,404 / 25,816 bytes)
+    Made by tools/fonts/build-tlreading.py (Python 3.11, fontTools 4.67.0,
+    brotli 1.2.0); a rebuild with those versions gives the same bytes. It
+    reads @fontsource/gelasio@5.3.0 (tarball sha1
+    05e6153057f8855e79943f272cc35fe0ba769200),
+    files/gelasio-latin-400-normal.woff2, gelasio-latin-400-italic.woff2,
+    gelasio-latin-ext-400-normal.woff2, gelasio-latin-ext-400-italic.woff2
+    (Gelasio, Version 1.008, which Google Fonts describes as metrics
+    compatible with Georgia: its x-height and cap height, 986 and 1419 per
+    2048, are Georgia's). It is the wing's reading face where Georgia is
+    missing, and the source of the letters Georgia lacks.
+    The one change: Gelasio sets five spacing modifier letters with no
+    advance, their ink hanging over the next or the previous letter, so
+    that ʾ ʿ in a transliteration sat on its neighbours and took the word
+    space with them. The script gives them advances, and moves each outline
+    (with its mark anchors) sideways as a whole: ʻ (U+02BB, in both latin
+    files) takes the place and advance of quoteleft, whose outline it is;
+    ʾ ʿ (U+02BE, U+02BF, in both latin-ext files) take the side-bearings of
+    Gelasio's own ʼ (U+02BC); ˊ ˋ (U+02CA, U+02CB, the italic latin-ext only)
+    take the side-bearings the roman gives them. It checks that every other
+    glyph, advance, anchor and table is the source's, and that every
+    character the face maps, other than combining marks, format characters
+    and controls, has a positive advance and is not classed as a mark.
+    The fonts are renamed "TL Reading", and Gelasio's copyright notice is
+    kept with "Modified 2026, Three Magi Press." added; Gelasio's licence
+    reserves no font name. The unicode-ranges are the package's own
+    (unicode.json). The @font-face rules give it Georgia's line metrics
+    (ascent 1878, descent 449, line gap 0 per 2048, as
+    @capsizecss/metrics@3.5.0 records them) with ascent-override,
+    descent-override and line-gap-override.
+
+TLShapeHints.woff2  "TL Shape Hints"  (960 bytes, 14 code points)
+    Made by tools/fonts/build-tlhints.py (Python 3.11, fontTools 4.67.0,
+    brotli 1.2.0), by the method of build-tlsigns.py; a rebuild with those
+    versions gives the same bytes. It takes 14 code points from
+    @fontsource/noto-sans-math@5.3.0 (tarball sha1
+    42561756985df31da5258bc126ff55ce0dbe149e),
+    files/noto-sans-math-latin-400-normal.woff2 (Noto Sans Math, Version
+    3.000): the shape hints of the wing's notes, U+220B, U+2229,
+    U+228F-2290, U+2293-2294, U+250C, U+2510, U+2514, U+2518, U+25A1,
+    U+25B7, and the arrows U+2190 and U+2192. It keeps every outline and
+    advance unchanged (the script checks them), drops hinting, the layout
+    tables and the MATH table, and sets the line metrics to Noto Sans's
+    1069 / -293, as TLSigns. The box-drawing corners reach past those
+    (-414 .. 1078), as box-drawing glyphs do. The font is renamed "TL Shape
+    Hints"; its copyright notice ("Copyright 2022 Google LLC. All Rights
+    Reserved.", as the source has it) is kept. Declared in
+    src/styles/magic-fonts.css only. U+0428 (Ш), which the notes also use,
+    is Cyrillic and is left to the text face.
