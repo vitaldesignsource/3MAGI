@@ -95,7 +95,9 @@ and the proposed fix. Points already fixed are in the commit history, not here.
      concessi" is terse ("subscripti" may be "written below" or "set down";
      the mark over the æ is unexplained), and whether the "supradicti
      caractéres" granted to Moses (f. 13v) are both Hebrew forms or only the
-     third is not stated.
+     third is not stated. Ambrogio (1539, fol. 202r) counts the common
+     alphabet and the one given to Moses as two; that is his reading, not
+     Panteo's words.
    - Panteo's printer and date rest on library records (Florence: Venice,
      April 1530, Giovanni Tacuino; Wellcome: "[J. Tacuinus]"); the colophon
      was not read, nor the rest of the Voarchadumia page by page, so an
@@ -113,22 +115,87 @@ and the proposed fix. Points already fixed are in the commit history, not here.
      Staatsbibliothek (from Augsburg) and listed in the Deutsche Digitale
      Bibliothek with a non-commercial licence; its record was behind a bot
      check and was not opened.
-   - Typography (for the letters-typography work): the site's text face has
-     no Hebrew, so the Hebrew headings now quoted render in the reader's
-     system font, in English prose with no `lang="he"` or `dir="rtl"` span.
-     Panteo's contraction for con- and his marked æ are written out because
-     the face lacks them.
+   - Typography (for the letters-typography work): no face in the wing's
+     stacks has Hebrew, so the Hebrew headings now quoted are drawn by the
+     reader's system font (Liberation Serif in the test browser). In the
+     pages' prose each Hebrew run is isolated in `<bdi dir="rtl" lang="he">`;
+     in the timeline (the de Balmes entries of `transitus-fluvii.js` and
+     `the-books.js`) the shared `ScriptoriumTimeline.jsx` prints the
+     description as plain text, so the run is not isolated, though it reads
+     in order at 1280. Panteo's contraction for con- and his marked æ are
+     written out because the text face lacks them.
    Fix: read Campanini (1997, 2014) and Macfarlane in full; open the
    Bayerische Staatsbibliothek copy for a licensable plate of sig. b6v–b7r;
    see Panteo's edition of 1550 and the colophon of 1530; compare Panteo's
    Enoch alphabet with Dee's; read Tory's f. LXXVII.
 
-6. **Page numbers taken from Peterson and Wikipedia.**
-   Where: Duret's Scriptura Celestis at p. 119 (`celestial.js`, `the-books.js`);
-   Fry's Alphabet of the Magi at pp. 28–29 (`the-books.js`).
-   What: both are given as their sources report them, not as read.
-   Fix: read Duret (Internet Archive fre_b1886963) at p. 119 and a copy of
-   Fry's Pantographia; give the page as read, or drop it.
+6. **Duret and Fry: what their pages leave open.**
+   Where: `celestial.js`, `malachim.js`, `transitus-fluvii.js`,
+   `alphabet-of-the-magi.js`, `enochian.js`, `the-books.js`.
+   What: Duret (Cologny, 1613; University of Ottawa microfiche, Internet
+   Archive fre_b1886963: pp. 115, 117, 119–127, 266–268), Fry (London, 1799;
+   Wellcome copy, Internet Archive b28757002: pp. xxiii, xxvi, 28–35) and
+   Ambrogio (1539, fols. 202r–203v) were read on 21 October 2026, and the
+   pages give them as read. These points are still open:
+   - Duret's sources for his tables. The Celestial (p. 119) and the Malachim
+     (p. 124) follow Agrippa's order and layout, unlabelled, and Duret names
+     no source on those pages. The River table's labels (Olaph, Gomal,
+     Doleth, Lomed, Num, Samach, Hoin, Choph, Coph, Tzode) and eight of its
+     signs (Aleph, Vau, Lamed, Mem, Samech, Ain, Res, Shin) are not
+     Agrippa's. Whether they come from de Balmes, Panteo, Ambrogio or
+     elsewhere is not known, and Duret's table has not yet been compared sign
+     by sign with de Balmes's and Panteo's, now read. Two labels are unclear
+     on the fiche: "Doleth" (e or u) and "Num" (or "Nun").
+   - The fiche is poor ("Document original de trés mauvaise qualité"): the
+     Celestial's Samech, Zade, Daleth and Kuff without their 1533 bar or
+     rings may be filming defects, though Fry's "Chaldean 1." shows the same.
+   - Where Duret's statue by the Jordan (p. 125) comes from. He gives it to
+     "the Hebrews" and says de Balmes confirms it, "au rapport de Theseus
+     Ambrosius", but the Latin he quotes from Ambrogio does not contain it,
+     and de Balmes's page says only that he found the script in a very old
+     book.
+   - The reissue of 1619 (Fry: "4to. Yverdon, 1619") was not seen. Fry's page
+     references fit the pagination of 1613.
+   - Duret's table on p. 126 (Fry's "Chaldean 8.") was seen but not described
+     or compared, and Fry's "asserted to have been used by Abraham" was not
+     looked for in Duret. Duret's Enoch table (p. 127), which he gives to
+     Panteo on Ambrogio's report, has not been compared with Panteo's (ff.
+     14v–15r) or with Dee's letters; his text describes three rows of nine,
+     while the table as filmed and Fry's copy show fewer signs in some rows.
+   - Ambrogio's two ring-letter alphabets on fol. 203v ("Aliud alphabetum"
+     and the unheaded one after it) have not been compared with the Malachim
+     or the River script.
+   - Fry's source for his River forms: his Mem is Duret's and his Aleph the
+     mirror of Duret's, but the rest is close to 1533. He cites De Sivry,
+     Recherches, p. 191 (Sigismondo Fanti), and Duret, p. 124; neither De
+     Sivry nor Fournier was read. His "Gaffarel, p. 1" for "Chaldean 1." was
+     not checked against Gaffarel's English of 1650.
+   - Whether Mathers took the Magi forms from Fry or from Duret: both share
+     Duret's Yod and Shin.
+   - That Fry's specimens are engraved (the-books.js says "engraves"), and
+     the counts of 405 specimens, 164 languages or 208 alphabets, are not
+     verified; his preface says only that he procured "originals and
+     engraved copies" and copied every character himself.
+   - The Theban: Fry's OCR has no "Theban", "Honori" or "Agrippa" for an
+     alphabet, and his preface says he gives no secret alphabets, but not
+     every plate was paged through. Duret has no Theban on the leaves viewed;
+     "Honori" occurs in the OCR on leaves 25, 141, 404, 765 and 829, not
+     viewed. Ambrogio's letter on p. 267 (the page map's "167" is wrong)
+     names "magorum verò characteres ab Honorio Thebano appone … edidit …
+     Cornelius Agrippa"; its year (read 1537) and the word "appone" are
+     uncertain on the fiche, and that it means Pietro d'Abano is a guess.
+   - Postel's commentary on the Sefer Yetzirah, which Duret names on p. 119,
+     was not read, and the bookseller's date of 1538 is unchecked.
+   - Duret's other Agrippa citations (p. 134 and elsewhere) were seen only in
+     the OCR; the page map cannot be trusted unchecked.
+   - Plates: the Duret fiche states no rights, so no crop of it is shown;
+     Fry's pages (Wellcome, Public Domain Mark) could be; Ambrogio's scan
+     has a Public Domain Mark licence URL but an empty rights field, and is a
+     Google digitisation outside the wing's plate repositories.
+   Fix: compare Duret's River and Enoch tables with de Balmes's and Panteo's;
+   view the OCR leaves for Honorius; find a copy of 1619; read De Sivry,
+   Gaffarel's English of 1650 (p. 1) and Postel; compare Ambrogio's fol.
+   203v; decide whether Fry's "Chaldean" plates should be shown.
 
 7. **The draft of 1510 and the critical edition.**
    Where: every page that says the Würzburg draft (Universitätsbibliothek,
