@@ -1,5 +1,6 @@
 import React, { useId } from 'react';
 import { textOf } from './sign';
+import { HOUSE_DOT, HOUSE_PEN, HOUSE_RING, ringPen } from './pen';
 
 // The one renderer of a drawn letter. The glyph data are drawn as the glyph
 // kit stores them (glyphkit/README.md): the same viewBox, pen, caps and joins
@@ -19,7 +20,9 @@ import { textOf } from './sign';
 // which cuts the stroke back to the ring's inner edge and leaves the hole
 // round. And a ring drawn smaller than the house size (r 6) — the crowded
 // rings of the Malachim, the River's rings — takes a lighter pen, 2.6 for
-// 3.6, so that its hole stays open at the sizes the pages use.
+// 3.6, so that its hole stays open at the sizes the pages use. The pen, the
+// ring and dot sizes and the ring pens are kept in pen.js, which the build's
+// tools read too.
 //
 // It is coloured by currentColor, so hover, the gold of a plaque and print's
 // black all reach it as they reach a real script. Without `size` it is one em
@@ -43,10 +46,6 @@ import { textOf } from './sign';
 // Þjófastafur's, Gapaldur's), it gives `textRings` as well: the same rings
 // scaled up by one factor and set out along their strokes, drawn everywhere
 // but the plaque, where the traced rings stand (magic.css switches them).
-
-const HOUSE_PEN = 5.5;
-const HOUSE_RING = 6;
-const ringPen = (r) => (r < HOUSE_RING ? 2.6 : 3.6);
 
 // (a figure has points, plural: a sign drawn as one heavy point — the ه of
 // Aflāṭūn's pen in the Shawq — is a letter, drawn at its table's scale)
@@ -93,7 +92,7 @@ function MagicGlyph({ g, size, label, className }) {
             <path d={g.d} mask={holes ? `url(#${holes})` : undefined} />
             {rings.map(([x, y, r], i) => <circle key={`r${i}`} className={ringClass} cx={x} cy={y} r={r} strokeWidth={penOf(r)} />)}
             {textRings && textRings.map(([x, y, r], i) => <circle key={`t${i}`} className="mg-ring is-text" cx={x} cy={y} r={r} strokeWidth={penOf(r)} />)}
-            {(g.dots ?? []).map(([x, y, r = 2.6], i) => <circle key={`d${i}`} cx={x} cy={y} r={r} fill="currentColor" stroke="none" />)}
+            {(g.dots ?? []).map(([x, y, r = HOUSE_DOT], i) => <circle key={`d${i}`} cx={x} cy={y} r={r} fill="currentColor" stroke="none" />)}
         </svg>
     );
 }

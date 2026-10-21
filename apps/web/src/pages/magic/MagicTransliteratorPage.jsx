@@ -156,7 +156,7 @@ function MagicTransliteratorPage() {
                                             {result.words.flat().map((p, i) => (
                                                 <span className="edu-reckoner-pair" key={i} title={p.note || undefined}>
                                                     <span className="edu-glyph">{p.letters.map((l, li) => <Sign key={li} of={l.sign} />)}</span>
-                                                    <span className="edu-reckoner-v" dir="ltr">{p.src}{p.note ? ' ·' : ''}</span>
+                                                    <span className="edu-reckoner-v" dir="ltr" lang={scheme.from === 'hebrew' ? 'he' : undefined}>{p.src}{p.note ? ' ·' : ''}</span>
                                                 </span>
                                             ))}
                                         </div>
@@ -210,7 +210,7 @@ function MagicTransliteratorPage() {
                                     {scheme.keys.map((k) => (
                                         <li key={k.key}>
                                             <span className="edu-glyph mg-key-sign"><Sign of={k.sign} /></span>
-                                            <span className="mg-key-letter" dir="ltr">{k.key}</span>
+                                            <span className="mg-key-letter" dir="ltr" lang={scheme.from === 'hebrew' ? 'he' : undefined}>{k.key}</span>
                                         </li>
                                     ))}
                                 </ul>
