@@ -153,6 +153,44 @@ export function evenOddArea(subs) {
     return area;
 }
 
+// Subpaths that cancel ink under evenodd though the fill as a whole draws
+// something (README.md, "Filled glyphs"). A subpath given twice (the same
+// points in the same order) draws nothing, wherever it stands. And every
+// subpath must stand apart from the others or wholly inside one of them: then
+// each adds its own area to the ink or, a counter, takes it away, as the number
+// of subpaths around it is even or odd, and the ink is the sum of those areas.
+// Where two subpaths overlap in part, the overlap is left empty and the ink
+// falls short of that sum. Returns the problems found, as strings.
+export function cancelledSubpaths(subs) {
+    const out = [];
+    const key = (s) => JSON.stringify([s.start, ...s.segs.map((g) => [g.c, ...g.p.slice(1)])]);
+    const seen = new Map();
+    subs.forEach((s, k) => {
+        const id = key(s);
+        if (seen.has(id)) out.push(`fill subpaths ${seen.get(id) + 1} and ${k + 1} are the same shape: under evenodd the two cancel and draw nothing`);
+        else seen.set(id, k);
+    });
+    if (out.length || subs.length < 2) return out;
+    const polys = subs.map((s) => flatten(s));
+    const inside = ([x, y], P) => {
+        let c = false;
+        for (let i = 0, j = P.length - 1; i < P.length; j = i++) {
+            const [xi, yi] = P[i], [xj, yj] = P[j];
+            if ((yi > y) !== (yj > y) && x < ((xj - xi) * (y - yi)) / (yj - yi) + xi) c = !c;
+        }
+        return c;
+    };
+    const sum = subs.reduce((t, s, k) => {
+        const around = polys.filter((P, j) => j !== k && inside(polys[k][0], P)).length;
+        return t + (around % 2 ? -1 : 1) * evenOddArea([s]);
+    }, 0);
+    const ink = evenOddArea(subs);
+    if (Math.abs(sum - ink) > Math.max(0.5, 0.01 * Math.abs(sum))) {
+        out.push('fill subpaths overlap one another in part: each must stand apart from the others or wholly inside one, or under evenodd the overlap is left empty');
+    }
+    return out;
+}
+
 // The places where outlines cross: under evenodd two ink subpaths that
 // overlap leave their overlap EMPTY, and a subpath that crosses itself
 // leaves a hole where it does. A counter lies wholly inside its outline and

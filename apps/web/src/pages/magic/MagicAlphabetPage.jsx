@@ -160,7 +160,7 @@ function MagicAlphabetPage() {
     useEffect(() => {
         let alive = true;
         if (keyed && !keys) {
-            import('../../data/education/magic/compare.generated.js')
+            import('../../data/education/magic/wing-index.generated.js')
                 .then((m) => { if (alive) setKeys(m.default.keys); })
                 .catch((e) => { if (alive) setLoadError(e); });
         }

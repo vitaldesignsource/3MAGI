@@ -29,7 +29,8 @@ built from.
   the comparison with other copies (no images or cells are kept here). For
   Enochian, `traced/enochian/f104.glyphs.json` holds the twenty-one forms of
   Sloane MS 3188, f. 104 as the site draws them, each with the strokes it is
-  built from and its measured distance from the ink, and
+  built from, its fit to the ink measured both ways, and its move onto the
+  common baseline, and
   `traced/enochian/f104.sources.json` the images that were found and used.
 
 Letterforms: every remembered form of the Agrippan alphabets, Theban,

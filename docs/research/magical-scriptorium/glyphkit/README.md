@@ -46,16 +46,18 @@ the same):
   SVG. No `H V S T A`, no relative commands, no transforms.
 - Every subpath begins with `M` and is closed with `Z`, and encloses some
   area, and together they draw some ink under evenodd (one shape given
-  twice cancels itself out). Nothing follows a `Z` but the next `M` or the
-  end.
+  twice cancels itself out). No subpath is given twice, and each stands
+  apart from the others or wholly inside one of them, so that none is
+  cancelled in part by another (see the next rule). Nothing follows a `Z`
+  but the next `M` or the end.
 - It is drawn as ONE `<path fill="currentColor" fill-rule="evenodd">` and no
   stroke: there is no pen, so the weight, the contrast and the terminals are
   all in the outline. A counter (the hole of an O) is simply another subpath
   lying wholly inside its outline; under evenodd its direction does not
   matter. But two ink subpaths that overlap, or a subpath that crosses
-  itself, leave the overlap EMPTY under evenodd: check.mjs warns of every
-  crossing (` ! ` lines), and the shapes should be united before the glyph is
-  handed over.
+  itself, leave the overlap EMPTY under evenodd: check.mjs refuses subpaths
+  that overlap in part or repeat one another, warns of every crossing (` ! `
+  lines), and the shapes should be united before the glyph is handed over.
 - The same 0–100 viewBox. Every coordinate (end and control points) lies in
   0–100, and the ink itself — its exact box, the extrema of its curves
   included — lies inside the body box x 10–90, y 15–85. (For a centre-line
@@ -92,7 +94,8 @@ node check.mjs <glyphs.json> [--boxes]
 ```
 validates the format (commands, bounds, rings on endpoints, confidence,
 null-gap notes; for a filled glyph its commands, closed subpaths, 0–100
-coordinates, ink inside the body box, fill alone) and prints problems; exit
+coordinates, ink inside the body box, no subpath repeated or overlapping
+another in part, fill alone) and prints problems; exit
 code 1 if any. Crossing outlines in a fill are printed as warnings (` ! `),
 which do not fail the check. `--boxes` adds the filled glyphs' ink boxes.
 

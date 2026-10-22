@@ -1,6 +1,8 @@
 #!/usr/bin/env node
 // Emits src/data/education/magic/compare.generated.js — the Magical
-// Scriptorium's comparison tables and transliteration schemes.
+// Scriptorium's comparison tables and transliteration schemes — and
+// wing-index.generated.js, the small part of it (what each entry holds, the
+// hall keys) that the portal and the alphabet pages read.
 //
 // Derived, as build-cognates derives the kinship table: every cell is looked
 // up from an alphabet's own letters by the hall letter it stands for, and
@@ -11,7 +13,7 @@
 
 import { writeFileSync } from 'node:fs';
 import path from 'node:path';
-import { GENERATED, buildCompare, loadModules, loadRegistry, serialiseCompare, web } from './magic-lib.mjs';
+import { GENERATED, GENERATED_INDEX, buildCompare, loadModules, loadRegistry, serialiseCompare, serialiseIndex, web } from './magic-lib.mjs';
 
 const registry = await loadRegistry();
 const { modules, problems } = await loadModules(registry);
@@ -22,5 +24,6 @@ if (problems.length) {
 }
 const data = await buildCompare(registry, modules);
 writeFileSync(GENERATED, serialiseCompare(data), 'utf8');
+writeFileSync(GENERATED_INDEX, serialiseIndex(data), 'utf8');
 const cols = data.tables.map((t) => `${t.key} ${t.columns.length} columns × ${t.rows.length} rows`).join(', ');
-console.log(`magic: ${cols}; schemes ${Object.keys(data.schemes).join(', ') || 'none'} → ${path.relative(web, GENERATED)}`);
+console.log(`magic: ${cols}; schemes ${Object.keys(data.schemes).join(', ') || 'none'} → ${path.relative(web, GENERATED)}, ${path.relative(web, GENERATED_INDEX)}`);

@@ -8,7 +8,8 @@
 // cases hold the rules of the kit's "Filled glyphs" (magic-lib.mjs
 // fillProblems): the commands, the closed subpaths, the 0–100 box, the ink
 // inside the body box (curves' extrema included), a fill that draws something
-// under evenodd, and fill alone.
+// under evenodd, no subpath given twice or cancelled in part by another, and
+// fill alone.
 
 const TRI = 'M 20 20 L 60 20 L 40 60 Z';
 
@@ -61,6 +62,11 @@ export const BAD_GLYPHS = [
     ['a fill subpath with no area', { fill: 'M 20 20 L 60 60 Z' }],
     ['a fill with one subpath of no area', { fill: `${TRI} M 30 70 L 40 75 L 50 80 Z` }],
     ['a fill whose two subpaths cancel under evenodd', { fill: `${TRI} ${TRI}` }],
+    // a letter and a second piece given twice: the fill still draws the letter,
+    // but the piece cancels itself out, so only the rule against a repeated
+    // subpath refuses it
+    ['a fill with one of its pieces given twice', { fill: `${TRI} M 66 66 L 80 66 L 73 80 Z M 66 66 L 80 66 L 73 80 Z` }],
+    ['a fill whose second piece overlaps the first', { fill: 'M 20 20 L 60 20 L 60 60 L 20 60 Z M 50 50 L 80 50 L 80 80 L 50 80 Z' }],
     // its control points leave 0–100 while its ink (down to y 15.25) stays in the
     // body box, so only the 0–100 rule refuses it
     ['a fill control point out of 0–100', { fill: 'M 20 64 C 20 -1 80 -1 80 64 Z' }],
@@ -90,6 +96,7 @@ export const GOOD_GLYPHS = [
     ['a fill whose counter is wound as its outline is', { fill: 'M 20 20 L 80 20 L 80 80 L 20 80 Z M 40 40 L 60 40 L 60 60 L 40 60 Z' }],
     ['a fill whose counter is wound the other way', { fill: 'M 20 20 L 80 20 L 80 80 L 20 80 Z M 40 40 L 40 60 L 60 60 L 60 40 Z' }],
     ['a fill of two separate pieces', { fill: 'M 20 20 L 50 20 L 35 50 Z M 60 60 L 80 60 L 80 80 L 60 80 Z' }],
+    ['a fill with a piece standing in its counter', { fill: 'M 20 20 L 80 20 L 80 80 L 20 80 Z M 30 30 L 70 30 L 70 70 L 30 70 Z M 45 45 L 55 45 L 55 55 L 45 55 Z' }],
     ['a fill whose pairs after M are lines', { fill: 'M 20 20 60 20 40 60 Z' }],
     ['a fill with commas and no spaces', { fill: 'M20,20L60,20L40,60Z' }],
     ['a fill touching the body box on every side', { fill: 'M 10 15 L 90 15 L 90 85 L 10 85 Z' }],

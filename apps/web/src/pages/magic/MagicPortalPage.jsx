@@ -8,7 +8,7 @@ import PortalEmblem from '../christianities/PortalEmblem';
 import { DoorLegend, MagicDoor } from './MagicDoors';
 import FitTitle from './FitTitle';
 import { ALPHABETS, GROUPS, MAGIC_PATH, PAGES, STATUS_LABEL, WING, canonicalUrl, capitalise, entryPath, numberWord, textOf } from './lib';
-import compare from '../../data/education/magic/compare.generated';
+import wing from '../../data/education/magic/wing-index.generated';
 import '../../styles/magic.css';
 
 // The wing's portal: the alphabets that can be read in full now, as full
@@ -21,18 +21,18 @@ import '../../styles/magic.css';
 function MagicPortalPage() {
     // Read from the data: how many alphabets can be shown now, how many are
     // waiting on their forms, and how many pages are still being written.
-    const shown = ALPHABETS.filter((a) => compare.entries[a.slug]?.shown > 0).length;
+    const shown = ALPHABETS.filter((a) => wing.entries[a.slug]?.shown > 0).length;
     const tracing = ALPHABETS.filter((a) => a.status === 'forms-pending').length;
     const writing = ALPHABETS.length - shown - tracing;
     // Whether any page is still a stub (summary and sources only), and
     // whether every open alphabet shows every one of its signs — the copy
     // below says only what the data bears out.
-    const anyStub = ALPHABETS.some((a) => compare.entries[a.slug]?.stub);
+    const anyStub = ALPHABETS.some((a) => wing.entries[a.slug]?.stub);
     // Open now: ready, and written in full (not a stub).
-    const open = ALPHABETS.filter((a) => a.status === 'ready' && !compare.entries[a.slug]?.stub);
+    const open = ALPHABETS.filter((a) => a.status === 'ready' && !wing.entries[a.slug]?.stub);
     const isOpen = new Set(open.map((a) => a.slug));
     const allSignsShown = open.every((a) => {
-        const e = compare.entries[a.slug];
+        const e = wing.entries[a.slug];
         return e && e.letters > 0 && e.shown === e.letters;
     });
     // how the open alphabets show their signs: set in a vendored face, drawn
@@ -119,7 +119,7 @@ function MagicPortalPage() {
                                     <div className="edu-hall-grid mg-door-grid is-compact" role="list" aria-labelledby={`mg-group-${g.key}`}>
                                         {members.map((a) => (
                                             <div role="listitem" key={a.slug} className="mg-door-cell">
-                                                <MagicDoor entry={a} stub={compare.entries[a.slug]?.stub} compact level={5} />
+                                                <MagicDoor entry={a} stub={wing.entries[a.slug]?.stub} compact level={5} />
                                             </div>
                                         ))}
                                     </div>
@@ -163,7 +163,7 @@ function MagicPortalPage() {
                                 <p className="edu-book-tradition">{p.kind === 'author' ? 'The Author' : 'The Lineage'}</p>
                                 <h3><Link to={entryPath(p.slug)}>{p.title}</Link></h3>
                                 <p className="edu-book-desc">{p.blurb}</p>
-                                {compare.entries[p.slug]?.stub && <p className="mg-door-status">In preparation</p>}
+                                {wing.entries[p.slug]?.stub && <p className="mg-door-status">In preparation</p>}
                             </article>
                         ))}
                     </div>

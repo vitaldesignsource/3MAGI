@@ -13,7 +13,7 @@ import { existsSync, readFileSync, readdirSync } from 'node:fs';
 import path from 'node:path';
 import { pathToFileURL } from 'node:url';
 import { brotliDecompressSync } from 'node:zlib';
-import { GENERATED, MAGIC_DIR, buildCompare, glyphProblems, loadHall, loadModules, loadRegistry, serialiseCompare, urlProblem, web } from './magic-lib.mjs';
+import { GENERATED, GENERATED_INDEX, MAGIC_DIR, buildCompare, glyphProblems, loadHall, loadModules, loadRegistry, serialiseCompare, serialiseIndex, urlProblem, web } from './magic-lib.mjs';
 import { BAD_GLYPHS, BAD_URLS, GOOD_GLYPHS, GOOD_URLS } from './magic-fixtures.mjs';
 import { TRACED_FONTS, dumpTraced } from './fonts/dump-traced.mjs';
 
@@ -459,10 +459,12 @@ for (const s of registry.wing.heroSigns || []) {
 
 // the comparison data must be current
 if (!problems.length) {
-    const fresh = serialiseCompare(await buildCompare(registry, modules));
-    let committed = '';
-    try { committed = readFileSync(GENERATED, 'utf8'); } catch { /* reported below */ }
-    if (committed !== fresh) fail('compare.generated.js', 'stale — run node tools/build-magic.mjs');
+    const data = await buildCompare(registry, modules);
+    for (const [file, fresh] of [[GENERATED, serialiseCompare(data)], [GENERATED_INDEX, serialiseIndex(data)]]) {
+        let committed = '';
+        try { committed = readFileSync(file, 'utf8'); } catch { /* reported below */ }
+        if (committed !== fresh) fail(path.basename(file), 'stale — run node tools/build-magic.mjs');
+    }
 }
 
 // --- the traced cipher fonts (tools/fonts) ---------------------------------------

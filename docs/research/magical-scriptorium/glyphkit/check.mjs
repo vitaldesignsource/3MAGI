@@ -6,7 +6,7 @@
 // bottoms and tops make, so a set traced at one scale can be seen to sit on
 // one baseline band.
 import fs from 'node:fs';
-import { BODY, enclosesArea, evenOddArea, fillBox, fillCoords, fillCrossings, flatten, parseFill } from './fill.mjs';
+import { BODY, cancelledSubpaths, enclosesArea, evenOddArea, fillBox, fillCoords, fillCrossings, flatten, parseFill } from './fill.mjs';
 
 const [file, ...flags] = process.argv.slice(2);
 if (!file) { console.error('usage: node check.mjs <glyphs.json> [--boxes]'); process.exit(2); }
@@ -32,6 +32,7 @@ function checkFill(l, g) {
     if (out) say(l, `fill coordinate out of 0–100: ${out[0]},${out[1]}`);
     subs.forEach((s, k) => { if (!enclosesArea(flatten(s))) say(l, `fill subpath ${k + 1} encloses no area`); });
     if (subs.every((s) => enclosesArea(flatten(s))) && evenOddArea(subs) < 0.01) say(l, 'the fill draws nothing: its subpaths cancel each other under evenodd');
+    else if (subs.every((s) => enclosesArea(flatten(s)))) for (const m of cancelledSubpaths(subs)) say(l, m);
     const b = fillBox(subs);
     const e = 1e-6;
     if (b && (b.x0 < BODY.x0 - e || b.x1 > BODY.x1 + e || b.y0 < BODY.y0 - e || b.y1 > BODY.y1 + e)) {
