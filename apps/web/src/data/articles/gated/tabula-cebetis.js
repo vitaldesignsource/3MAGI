@@ -1,0 +1,7 @@
+export default {
+body: [
+            'A painted panel hangs in a temple precinct, depicting concentric enclosures through which a soul must pass — false Learning offering counterfeit gifts at the gate, true Paideia waiting patiently beyond the crowd.',
+            'Attributed to a student of Socrates, the Tabula Cebetis compresses an entire philosophical curriculum into a single image: a map of moral ascent meant to be read the way one reads a temple fresco, slowly and repeatedly, over a lifetime.',
+            'This essay reconstructs the Tabula\u2019s symbolic architecture and traces its long afterlife as a teaching device for anyone seeking a visual grammar for the inner life.',
+        ],
+};

@@ -1,0 +1,658 @@
+{
+  "key": "transitus-fluvii",
+  "title": "Transitus Fluvii (the Passing of the River)",
+  "otherNames": [
+    "Passing of the River",
+    "Passing the River",
+    "the passing through the River (J.F.'s 1651 English Agrippa)",
+    "Scriptura transitus fluuii (Latin label in de Balmes 1523 and Panteo 1530)",
+    "Ketav ever ha-nahar, 'Script beyond the River' (de Balmes's Hebrew name, per the Rylands blog; Hebrew spelling כתב עבר הנהר is my rendering)",
+    "the transfluvial alphabet (Campanini's term, as reported by Macfarlane 2025)",
+    "Fluvii Transitus (Blavatsky's Theosophical Glossary, 1892)",
+    "Passage du Fleuve (modern French name)",
+    "Lettres Chaldaiques? (Tory's Champ Fleury, 1529; Wikipedia identifies it with this alphabet, which I did not check)"
+  ],
+  "family": "Hebrew-keyed ring-letter alphabets (Brillenbuchstaben). Sister of the Celestial and Malachim scripts on Agrippa's III.30 woodcut.",
+  "summary": "Transitus Fluvii, 'the Passing of the River', is a 22-letter alphabet keyed one-for-one to the Hebrew letters. It is drawn in the ring-ended style scholars call Brillenbuchstaben. Agrippa printed it in De occulta philosophia III.30 (1533) beside the Celestial and Malachim scripts, as a writing 'which they call' by that name, without naming a source. It had already appeared in Abraham de Balmes's Hebrew-Latin grammar Mikneh Avram / Peculium Abrae (Venice: Bomberg, 1523). Its Hebrew name there, Ketav ever ha-nahar, means 'script of Beyond-the-River'. The story that it was Abraham's script from his crossing of the Euphrates began with Christian readers such as Panteo (1530).",
+  "firstAttestation": {
+    "work": "Mikneh Avram / Peculium Abrae: grammatica Hebraea una cum Latino nuper edita",
+    "author": "Abraham ben Meir de Balmes (c. 1440–1523), Apulian Jewish physician, grammarian and translator",
+    "date": "1523 (the Latin-Hebrew edition appeared at the end of 1523, months after de Balmes's death)",
+    "place": "Venice, in the house of Daniel Bomberg",
+    "locator": "sig. B6v (Peterson's note to Agrippa III.30; Wikipedia's citation is the same). Another bibliographic citation gives pp. 24–25.",
+    "notes": "Macfarlane (JHI 2025) calls this 'the first Brillenbuchstaben alphabet to be printed in Europe'. The Rylands blog gives its Hebrew name as Ketav ever ha-nahar ('Script beyond the River'), says it is 'composed of charaktêres', and says de Balmes presented it as an example of the alphabets derived from the original 'Ashuri' script, inside a grammar rather than a magical work. The Latin label 'scriptura transitus fluuii' is reported from this book in the scholarship that follows Campanini. The task names Agrippa III.30 (1533) as the source. That is the most influential printing, but it is ten years later than de Balmes. I did not see the page itself. The archive.org scan of the book (miknehavrampecul00balm) is the place to check sig. B6v."
+  },
+  "transmission": [
+    {
+      "date": "1523",
+      "work": "Mikneh Avram / Peculium Abrae (Venice: Daniel Bomberg)",
+      "author": "Abraham de Balmes",
+      "what": "First printing. Shown in a Hebrew grammar as Ketav ever ha-nahar, one of the scripts derived from Ashuri; the Latin side labels it 'scriptura transitus fluuii'. Campanini argues that this terse label, whose Talmudic background Christian readers did not know, set off the later misreadings."
+    },
+    {
+      "date": "1529 (completed April 1529, old style; some sources say 1530 new style)",
+      "work": "Champ Fleury (Paris: Gilles de Gourmont)",
+      "author": "Geoffroy Tory",
+      "what": "Wikipedia says Tory prints this alphabet as 'Lettres Chaldaiques' at f. 76v. The BnF's own image record of the 'Lettres chaldaïques et lettres goffes' gives f. 73r, and says Tory presents the Chaldaic letters as the signs the Hebrews used in Moses's time. The folio and the identification are both unchecked."
+    },
+    {
+      "date": "April 1530",
+      "work": "Voarchadumia contra alchimiam (Venice)",
+      "author": "Giovanni Agostino Panteo (Pantheus)",
+      "what": "Prints it under 'Haec est scriptura transitus fluuii' (quoted by Chioli) in a bilingual Hebrew/Latin passage. He assigns it to Abraham, as Hebrew to Moses and his own 'Enochian' to Enoch. Macfarlane, following Campanini, makes Panteo the first of many to read it as the script Abraham used when he crossed the Euphrates. Wikipedia's locator 'pp. 545–46' cannot be the foliation of the 1530 quarto. It probably refers to a later reprint, which I did not identify."
+    },
+    {
+      "date": "1533 (July 1533 per the Wellcome catalogue; place given as Cologne, printer probably J. Soter, though Adams suspected Basel, per Eton College's catalogue)",
+      "work": "De occulta philosophia libri tres",
+      "author": "Heinrich Cornelius Agrippa von Nettesheim",
+      "what": "Book III chapter 30, 'Another manner of making characters, delivered by Cabalists'. Agrippa lists the writings 'amongst the Hebrews' in order: the most ancient script, which Moses and the prophets used; the letters 'which they use at this day', instituted by Ezra; the Celestial; the Malachim, and 'another, which they call the passing through the River'. All three are shown on one woodcut, with Transitus Fluvii at the bottom (Alamy caption of a 1533 copy). Perrone Compagni's critical edition (Brill, 1992) has it at p. 491 (per Wikipedia's citation). Agrippa names no source; it is Peterson's annotation that points to de Balmes."
+    },
+    {
+      "date": "1651",
+      "work": "Three Books of Occult Philosophy (London: R.W. for Gregory Moule), translated by 'J.F.' (probably John French)",
+      "author": "Agrippa, tr. J.F.",
+      "what": "English text, Book III ch. XXX, with the name rendered 'the passing through the River' and the table re-cut. Peterson warns that the J.F. translation adds errors, so check its wording and forms against the 1533 Latin."
+    },
+    {
+      "date": "1653",
+      "work": "Oedipus Aegyptiacus, vol. II",
+      "author": "Athanasius Kircher",
+      "what": "Macfarlane says Kircher here, and again in Turris Babel (1679), set the Brillenbuchstaben alphabets firmly inside his history of the Hebrew alphabet. I did not confirm that Transitus Fluvii is one of the alphabets he prints, or on which page."
+    },
+    {
+      "date": "1801",
+      "work": "The Magus, or Celestial Intelligencer (London)",
+      "author": "Francis Barrett",
+      "what": "Repeats Agrippa's sentence, close to the 1651 English ('…passing through the river, the characters and figures of all which you may see in the following Plates'). It has its own engraved plate titled 'Passing the River' (listed in Wikimedia Commons' category for the book). This plate carried the alphabet into nineteenth-century English occultism."
+    },
+    {
+      "date": "1890",
+      "work": "Ars Quatuor Coronatorum vol. III, part 2 (Quatuor Coronati Lodge, London)",
+      "author": "W. Wynn Westcott (contributor)",
+      "what": "According to Blavatsky's Theosophical Glossary (as transcribed by Teopedia), Westcott supplied copies of this alphabet with the 'Melachim' and 'Celestial' alphabets. I have not checked the AQC volume itself."
+    },
+    {
+      "date": "1892",
+      "work": "The Theosophical Glossary (London: Theosophical Publishing Society; ed. G. R. S. Mead, posthumous)",
+      "author": "H. P. Blavatsky",
+      "what": "Entry 'Fluvii Transitus' glosses the name as the crossing of the River (Chebar), the river of Ezekiel 1:1. This is a third explanation of the name, after Abraham's Euphrates and the return from Babylon. It credits Cornelius Agrippa with presenting the alphabet. Known through Teopedia's transcription; not checked against the 1892 print."
+    },
+    {
+      "date": "2016 (font added 7 Feb 2016)",
+      "work": "Esoteric Archives fonts",
+      "author": "Joseph H. Peterson",
+      "what": "Free CC-BY 4.0 'Transitus Fluvii (Passing the River)' font. Peterson states it is taken from de Balmes's Peculium Abrae (1523), not from Agrippa; his Celestial and Malachim fonts are from Agrippa 1533."
+    },
+    {
+      "date": "2014; 2025",
+      "work": "Campanini, 'The Quest for the Holiest Alphabet in the Renaissance'; Macfarlane, 'Written in the Stars? Alphabets and Angels in Early Modern Europe'",
+      "author": "Saverio Campanini; Kirsten Macfarlane",
+      "what": "The modern scholarly reconstruction. Campanini (esp. pp. 211–15) traces the alphabet from de Balmes's grammar through its Christian misreading and its spread from Venice into north-western Europe (per the volume's description). Macfarlane builds on him to show how Brillenbuchstaben came to be treated as star-derived alphabets authored by angels."
+    }
+  ],
+  "claims": [
+    {
+      "claim": "The alphabet was first printed in Abraham de Balmes's Mikneh Avram / Peculium Abrae (Venice: Bomberg, 1523), ten years before Agrippa.",
+      "standing": "documented",
+      "evidence": "Macfarlane 2025 ('the first Brillenbuchstaben alphabet to be printed in Europe'); Peterson's note at Agrippa III.30 (sig. B6v); Rylands blog (Ketav ever ha-nahar). I did not see the page myself.",
+      "sources": [
+        "Macfarlane, JHI 86.3 (2025) 473–506",
+        "Peterson, Esoteric Archives, Agrippa Book III part 3",
+        "Rylands Blog, 'Speaking to angels' part II (2022)"
+      ]
+    },
+    {
+      "claim": "Agrippa presents it as a writing of the Hebrews ('which they call the passing through the River') among the Cabalists' characters, without naming any source or inventor.",
+      "standing": "documented",
+      "evidence": "1651 English, Book III ch. XXX; Latin as quoted by Chioli, 'Et est alia, quam uocant Transitus fluuij'. Some web pages say Agrippa 'attributed it to de Balmes'. That is a misreading of Peterson's editorial note.",
+      "sources": [
+        "Agrippa, De occulta philosophia III.30 (1533)",
+        "J.F. translation, 1651, EEBO text",
+        "Chioli, L'alfabeto enochiano"
+      ]
+    },
+    {
+      "claim": "Agrippa invented the alphabet (the 'creator' named in Wikipedia's infobox and in hobby sites).",
+      "standing": "disputed",
+      "evidence": "It is in print by 1523 (de Balmes) and 1530 (Panteo), before 1533, and Agrippa himself reports it as something 'they call'. Agrippa is its transmitter, not its author.",
+      "sources": [
+        "Macfarlane 2025",
+        "Peterson note",
+        "Wikipedia, 'Transitus Fluvii' (which itself lists the earlier printings)"
+      ]
+    },
+    {
+      "claim": "De Balmes presented the alphabet as one of the scripts derived from the original 'Ashuri' (square) script, in a grammar.",
+      "standing": "documented",
+      "evidence": "Rylands blog, part II.",
+      "sources": [
+        "Rylands Blog, 'Speaking to angels' part II (2022)"
+      ]
+    },
+    {
+      "claim": "Christian readers misread de Balmes's terse label 'transitus fluuii' because they did not know its Talmudic background, and this produced the 'transfluvial alphabet' of Abraham.",
+      "standing": "attributed",
+      "evidence": "This is Saverio Campanini's reconstruction (2014, pp. 211–15), as summarised by Macfarlane 2025 and by the Glagolitic-characters article in Redalyc. I could not read the chapter. Which Talmudic passage he means is not stated in what I saw; the Talmud's discussion of ketav Ivri and ketav Ashurit (b. Sanhedrin 21b–22a) is the obvious candidate, but that is my inference.",
+      "sources": [
+        "Campanini, 'The Quest for the Holiest Alphabet in the Renaissance' (2014)",
+        "Macfarlane 2025"
+      ]
+    },
+    {
+      "claim": "The alphabet was entrusted to Abraham, as Hebrew was to Moses and the 'Enochian' to Enoch.",
+      "standing": "legend",
+      "evidence": "Panteo's claim in Voarchadumia (1530), reported by Wikipedia and Chioli. Report it as 'Panteo assigns it to Abraham'.",
+      "sources": [
+        "Panteo, Voarchadumia contra alchimiam (Venice, 1530)",
+        "Wikipedia, 'Transitus Fluvii'",
+        "Chioli"
+      ]
+    },
+    {
+      "claim": "The name refers to Abraham's crossing of the Euphrates.",
+      "standing": "attributed",
+      "evidence": "Macfarlane: 'Many, beginning with Giovanni Panteo, viewed the transfluvial alphabet as that used by Abraham upon his crossing of the river Euphrates.' The idea rests on the ʿIvri ('Hebrew') = 'one from beyond the River' etymology: Joshua 24:2–3; Genesis 14:13 with Genesis Rabbah 42:8 and Rashi; LXX 'Abram ho peratēs'.",
+      "sources": [
+        "Macfarlane 2025",
+        "Joshua 24:2–3",
+        "Rashi on Gen 14:13 (Chabad.org)",
+        "LXX Gen 14:13"
+      ]
+    },
+    {
+      "claim": "The name refers to the Jews' crossing of the Euphrates on their return from the Babylonian captivity to rebuild the Temple.",
+      "standing": "disputed",
+      "evidence": "A modern suggestion in Wikipedia and Omniglot ('may refer'), with no early source. It is not in Agrippa, de Balmes or Panteo as far as I found.",
+      "sources": [
+        "Wikipedia, 'Transitus Fluvii'",
+        "Omniglot, 'Passing the River'"
+      ]
+    },
+    {
+      "claim": "The name refers to the crossing of the river Chebar.",
+      "standing": "attributed",
+      "evidence": "Blavatsky's Theosophical Glossary (1892), entry 'Fluvii Transitus', as transcribed by Teopedia. It is a nineteenth-century theosophical gloss.",
+      "sources": [
+        "Blavatsky, Theosophical Glossary (1892)",
+        "Teopedia, 'Fluvii Transitus'"
+      ]
+    },
+    {
+      "claim": "Hebrew ʿIvri means 'one from the other side (ʿever) of the River', so 'Hebrews' are 'those who crossed'.",
+      "standing": "attributed",
+      "evidence": "This is one traditional etymology, not a settled one. Genesis Rabbah 42:8 gives three readings: R. Judah says the whole world stood on one side and Abraham on the other; R. Nehemiah says it means descended from Eber; and the Rabbis say he came from beyond the River. Rashi adopts 'from the other side of the River'. The Septuagint renders Abram 'the Hebrew' at Gen 14:13 as ho peratēs, 'the one who crosses / migrant'.",
+      "sources": [
+        "Genesis Rabbah 42:8",
+        "Rashi on Gen 14:13",
+        "Septuagint Gen 14:13"
+      ]
+    },
+    {
+      "claim": "Agrippa had the alphabet in his c. 1510 draft of De occulta philosophia.",
+      "standing": "disputed",
+      "evidence": "Wikipedia says the book was 'written around 1510'. The 1510 draft was much shorter than the 1533 print, and I found no evidence that III.30's alphabets were in it. Since de Balmes's 1523 printing is the earliest known, date Agrippa's use to 1533 only.",
+      "sources": [
+        "Stanford Encyclopedia of Philosophy, 'Agrippa' (1510 draft, reworked and enlarged for 1533)",
+        "Wikipedia"
+      ]
+    },
+    {
+      "claim": "It is written right to left, like Hebrew.",
+      "standing": "documented",
+      "evidence": "The woodcut sets the letters right to left (Source Library's transcription of the row: Cheth Zain Vau He Daleth Gimel Beth Aleph). Wikipedia says the same, unsourced.",
+      "sources": [
+        "Source Library, 'agrippa von nettesheim 3 alphabets'",
+        "Wikipedia"
+      ]
+    }
+  ],
+  "letters": [
+    {
+      "order": 1,
+      "name": "Aleph",
+      "value": "א",
+      "translit": "ʾ (glottal stop) / vowel carrier",
+      "numeric": 1,
+      "form": "NOT DESCRIBED: no glyph is given here. I could not view the 1533 woodcut, de Balmes's 1523 page or any facsimile, and no source I could reach describes this letter in words. Unlike the Celestial set, no source says the Transitus Fluvii letters resemble their Hebrew counterparts, so a Hebrew-skeleton hint would be a guess, and none is offered. Known only for the family as a whole: thin, mostly straight strokes with small rings (Brillen) at the free stroke-ends. Trace it from the plate: in Agrippa III.30 it is the bottom alphabet of the three-alphabet woodcut.",
+      "formConfidence": "low",
+      "note": "Value and order are those of the Hebrew alphabet, which the table follows one-for-one. The numeric value is the standard Hebrew one; the plate is not known to print numbers. The plate label spelling 'Aleph' is attested in a Source Library transcription of the woodcut, which reads the Passing the River row right to left: Cheth Zain Vau He Daleth Gimel Beth Aleph. Check against: the 1533 woodcut, and Joseph H. Peterson's CC-BY 4.0 'Transitus Fluvii' font. Peterson says the font is taken from de Balmes 1523, not from Agrippa, so the two may differ."
+    },
+    {
+      "order": 2,
+      "name": "Beth",
+      "value": "ב",
+      "translit": "b / v",
+      "numeric": 2,
+      "form": "NOT DESCRIBED: no glyph is given here. I could not view the 1533 woodcut, de Balmes's 1523 page or any facsimile, and no source I could reach describes this letter in words. Unlike the Celestial set, no source says the Transitus Fluvii letters resemble their Hebrew counterparts, so a Hebrew-skeleton hint would be a guess, and none is offered. Known only for the family as a whole: thin, mostly straight strokes with small rings (Brillen) at the free stroke-ends. Trace it from the plate: in Agrippa III.30 it is the bottom alphabet of the three-alphabet woodcut.",
+      "formConfidence": "low",
+      "note": "Value and order are those of the Hebrew alphabet, which the table follows one-for-one. The numeric value is the standard Hebrew one; the plate is not known to print numbers. The plate label spelling 'Beth' is attested in a Source Library transcription of the woodcut, which reads the Passing the River row right to left: Cheth Zain Vau He Daleth Gimel Beth Aleph."
+    },
+    {
+      "order": 3,
+      "name": "Gimel",
+      "value": "ג",
+      "translit": "g",
+      "numeric": 3,
+      "form": "NOT DESCRIBED: no glyph is given here. I could not view the 1533 woodcut, de Balmes's 1523 page or any facsimile, and no source I could reach describes this letter in words. Unlike the Celestial set, no source says the Transitus Fluvii letters resemble their Hebrew counterparts, so a Hebrew-skeleton hint would be a guess, and none is offered. Known only for the family as a whole: thin, mostly straight strokes with small rings (Brillen) at the free stroke-ends. Trace it from the plate: in Agrippa III.30 it is the bottom alphabet of the three-alphabet woodcut.",
+      "formConfidence": "low",
+      "note": "Value and order are those of the Hebrew alphabet, which the table follows one-for-one. The numeric value is the standard Hebrew one; the plate is not known to print numbers. The plate label spelling 'Gimel' is attested in a Source Library transcription of the woodcut, which reads the Passing the River row right to left: Cheth Zain Vau He Daleth Gimel Beth Aleph."
+    },
+    {
+      "order": 4,
+      "name": "Daleth",
+      "value": "ד",
+      "translit": "d",
+      "numeric": 4,
+      "form": "NOT DESCRIBED: no glyph is given here. I could not view the 1533 woodcut, de Balmes's 1523 page or any facsimile, and no source I could reach describes this letter in words. Unlike the Celestial set, no source says the Transitus Fluvii letters resemble their Hebrew counterparts, so a Hebrew-skeleton hint would be a guess, and none is offered. Known only for the family as a whole: thin, mostly straight strokes with small rings (Brillen) at the free stroke-ends. Trace it from the plate: in Agrippa III.30 it is the bottom alphabet of the three-alphabet woodcut.",
+      "formConfidence": "low",
+      "note": "Value and order are those of the Hebrew alphabet, which the table follows one-for-one. The numeric value is the standard Hebrew one; the plate is not known to print numbers. The plate label spelling 'Daleth' is attested in a Source Library transcription of the woodcut, which reads the Passing the River row right to left: Cheth Zain Vau He Daleth Gimel Beth Aleph."
+    },
+    {
+      "order": 5,
+      "name": "He",
+      "value": "ה",
+      "translit": "h",
+      "numeric": 5,
+      "form": "NOT DESCRIBED: no glyph is given here. I could not view the 1533 woodcut, de Balmes's 1523 page or any facsimile, and no source I could reach describes this letter in words. Unlike the Celestial set, no source says the Transitus Fluvii letters resemble their Hebrew counterparts, so a Hebrew-skeleton hint would be a guess, and none is offered. Known only for the family as a whole: thin, mostly straight strokes with small rings (Brillen) at the free stroke-ends. Trace it from the plate: in Agrippa III.30 it is the bottom alphabet of the three-alphabet woodcut.",
+      "formConfidence": "low",
+      "note": "Value and order are those of the Hebrew alphabet, which the table follows one-for-one. The numeric value is the standard Hebrew one; the plate is not known to print numbers. The plate label spelling 'He' is attested in a Source Library transcription of the woodcut, which reads the Passing the River row right to left: Cheth Zain Vau He Daleth Gimel Beth Aleph."
+    },
+    {
+      "order": 6,
+      "name": "Vau",
+      "value": "ו",
+      "translit": "w / v (also o, u)",
+      "numeric": 6,
+      "form": "NOT DESCRIBED: no glyph is given here. I could not view the 1533 woodcut, de Balmes's 1523 page or any facsimile, and no source I could reach describes this letter in words. Unlike the Celestial set, no source says the Transitus Fluvii letters resemble their Hebrew counterparts, so a Hebrew-skeleton hint would be a guess, and none is offered. Known only for the family as a whole: thin, mostly straight strokes with small rings (Brillen) at the free stroke-ends. Trace it from the plate: in Agrippa III.30 it is the bottom alphabet of the three-alphabet woodcut.",
+      "formConfidence": "low",
+      "note": "Value and order are those of the Hebrew alphabet, which the table follows one-for-one. The numeric value is the standard Hebrew one; the plate is not known to print numbers. The plate label spelling 'Vau' is attested in a Source Library transcription of the woodcut, which reads the Passing the River row right to left: Cheth Zain Vau He Daleth Gimel Beth Aleph."
+    },
+    {
+      "order": 7,
+      "name": "Zain",
+      "value": "ז",
+      "translit": "z",
+      "numeric": 7,
+      "form": "NOT DESCRIBED: no glyph is given here. I could not view the 1533 woodcut, de Balmes's 1523 page or any facsimile, and no source I could reach describes this letter in words. Unlike the Celestial set, no source says the Transitus Fluvii letters resemble their Hebrew counterparts, so a Hebrew-skeleton hint would be a guess, and none is offered. Known only for the family as a whole: thin, mostly straight strokes with small rings (Brillen) at the free stroke-ends. Trace it from the plate: in Agrippa III.30 it is the bottom alphabet of the three-alphabet woodcut.",
+      "formConfidence": "low",
+      "note": "Value and order are those of the Hebrew alphabet, which the table follows one-for-one. The numeric value is the standard Hebrew one; the plate is not known to print numbers. The plate label spelling 'Zain' is attested in a Source Library transcription of the woodcut, which reads the Passing the River row right to left: Cheth Zain Vau He Daleth Gimel Beth Aleph."
+    },
+    {
+      "order": 8,
+      "name": "Cheth",
+      "value": "ח",
+      "translit": "ḥ",
+      "numeric": 8,
+      "form": "NOT DESCRIBED: no glyph is given here. I could not view the 1533 woodcut, de Balmes's 1523 page or any facsimile, and no source I could reach describes this letter in words. Unlike the Celestial set, no source says the Transitus Fluvii letters resemble their Hebrew counterparts, so a Hebrew-skeleton hint would be a guess, and none is offered. Known only for the family as a whole: thin, mostly straight strokes with small rings (Brillen) at the free stroke-ends. Trace it from the plate: in Agrippa III.30 it is the bottom alphabet of the three-alphabet woodcut.",
+      "formConfidence": "low",
+      "note": "Value and order are those of the Hebrew alphabet, which the table follows one-for-one. The numeric value is the standard Hebrew one; the plate is not known to print numbers. The plate label spelling 'Cheth' is attested in a Source Library transcription of the woodcut, which reads the Passing the River row right to left: Cheth Zain Vau He Daleth Gimel Beth Aleph."
+    },
+    {
+      "order": 9,
+      "name": "Teth",
+      "value": "ט",
+      "translit": "ṭ",
+      "numeric": 9,
+      "form": "NOT DESCRIBED: no glyph is given here. I could not view the 1533 woodcut, de Balmes's 1523 page or any facsimile, and no source I could reach describes this letter in words. Unlike the Celestial set, no source says the Transitus Fluvii letters resemble their Hebrew counterparts, so a Hebrew-skeleton hint would be a guess, and none is offered. Known only for the family as a whole: thin, mostly straight strokes with small rings (Brillen) at the free stroke-ends. Trace it from the plate: in Agrippa III.30 it is the bottom alphabet of the three-alphabet woodcut.",
+      "formConfidence": "low",
+      "note": "Value and order are those of the Hebrew alphabet, which the table follows one-for-one. The numeric value is the standard Hebrew one; the plate is not known to print numbers. The label spelling is the usual Latin form of the period; I have not checked it against the plate."
+    },
+    {
+      "order": 10,
+      "name": "Iod",
+      "value": "י",
+      "translit": "y (also i)",
+      "numeric": 10,
+      "form": "NOT DESCRIBED: no glyph is given here. I could not view the 1533 woodcut, de Balmes's 1523 page or any facsimile, and no source I could reach describes this letter in words. Unlike the Celestial set, no source says the Transitus Fluvii letters resemble their Hebrew counterparts, so a Hebrew-skeleton hint would be a guess, and none is offered. Known only for the family as a whole: thin, mostly straight strokes with small rings (Brillen) at the free stroke-ends. Trace it from the plate: in Agrippa III.30 it is the bottom alphabet of the three-alphabet woodcut.",
+      "formConfidence": "low",
+      "note": "Value and order are those of the Hebrew alphabet, which the table follows one-for-one. The numeric value is the standard Hebrew one; the plate is not known to print numbers. The label spelling is the usual Latin form of the period; I have not checked it against the plate."
+    },
+    {
+      "order": 11,
+      "name": "Caph",
+      "value": "כ",
+      "translit": "k / kh",
+      "numeric": 20,
+      "form": "NOT DESCRIBED: no glyph is given here. I could not view the 1533 woodcut, de Balmes's 1523 page or any facsimile, and no source I could reach describes this letter in words. Unlike the Celestial set, no source says the Transitus Fluvii letters resemble their Hebrew counterparts, so a Hebrew-skeleton hint would be a guess, and none is offered. Known only for the family as a whole: thin, mostly straight strokes with small rings (Brillen) at the free stroke-ends. Trace it from the plate: in Agrippa III.30 it is the bottom alphabet of the three-alphabet woodcut.",
+      "formConfidence": "low",
+      "note": "Value and order are those of the Hebrew alphabet, which the table follows one-for-one. The numeric value is the standard Hebrew one; the plate is not known to print numbers. The label spelling is the usual Latin form of the period; I have not checked it against the plate."
+    },
+    {
+      "order": 12,
+      "name": "Lamed",
+      "value": "ל",
+      "translit": "l",
+      "numeric": 30,
+      "form": "NOT DESCRIBED: no glyph is given here. I could not view the 1533 woodcut, de Balmes's 1523 page or any facsimile, and no source I could reach describes this letter in words. Unlike the Celestial set, no source says the Transitus Fluvii letters resemble their Hebrew counterparts, so a Hebrew-skeleton hint would be a guess, and none is offered. Known only for the family as a whole: thin, mostly straight strokes with small rings (Brillen) at the free stroke-ends. Trace it from the plate: in Agrippa III.30 it is the bottom alphabet of the three-alphabet woodcut.",
+      "formConfidence": "low",
+      "note": "Value and order are those of the Hebrew alphabet, which the table follows one-for-one. The numeric value is the standard Hebrew one; the plate is not known to print numbers. The label spelling is the usual Latin form of the period; I have not checked it against the plate."
+    },
+    {
+      "order": 13,
+      "name": "Mem",
+      "value": "מ",
+      "translit": "m",
+      "numeric": 40,
+      "form": "NOT DESCRIBED: no glyph is given here. I could not view the 1533 woodcut, de Balmes's 1523 page or any facsimile, and no source I could reach describes this letter in words. Unlike the Celestial set, no source says the Transitus Fluvii letters resemble their Hebrew counterparts, so a Hebrew-skeleton hint would be a guess, and none is offered. Known only for the family as a whole: thin, mostly straight strokes with small rings (Brillen) at the free stroke-ends. Trace it from the plate: in Agrippa III.30 it is the bottom alphabet of the three-alphabet woodcut.",
+      "formConfidence": "low",
+      "note": "Value and order are those of the Hebrew alphabet, which the table follows one-for-one. The numeric value is the standard Hebrew one; the plate is not known to print numbers. The label spelling is the usual Latin form of the period; I have not checked it against the plate."
+    },
+    {
+      "order": 14,
+      "name": "Nun",
+      "value": "נ",
+      "translit": "n",
+      "numeric": 50,
+      "form": "NOT DESCRIBED: no glyph is given here. I could not view the 1533 woodcut, de Balmes's 1523 page or any facsimile, and no source I could reach describes this letter in words. Unlike the Celestial set, no source says the Transitus Fluvii letters resemble their Hebrew counterparts, so a Hebrew-skeleton hint would be a guess, and none is offered. Known only for the family as a whole: thin, mostly straight strokes with small rings (Brillen) at the free stroke-ends. Trace it from the plate: in Agrippa III.30 it is the bottom alphabet of the three-alphabet woodcut.",
+      "formConfidence": "low",
+      "note": "Value and order are those of the Hebrew alphabet, which the table follows one-for-one. The numeric value is the standard Hebrew one; the plate is not known to print numbers. The label spelling is the usual Latin form of the period; I have not checked it against the plate."
+    },
+    {
+      "order": 15,
+      "name": "Samech",
+      "value": "ס",
+      "translit": "s",
+      "numeric": 60,
+      "form": "NOT DESCRIBED: no glyph is given here. I could not view the 1533 woodcut, de Balmes's 1523 page or any facsimile, and no source I could reach describes this letter in words. Unlike the Celestial set, no source says the Transitus Fluvii letters resemble their Hebrew counterparts, so a Hebrew-skeleton hint would be a guess, and none is offered. Known only for the family as a whole: thin, mostly straight strokes with small rings (Brillen) at the free stroke-ends. Trace it from the plate: in Agrippa III.30 it is the bottom alphabet of the three-alphabet woodcut.",
+      "formConfidence": "low",
+      "note": "Value and order are those of the Hebrew alphabet, which the table follows one-for-one. The numeric value is the standard Hebrew one; the plate is not known to print numbers. The label spelling is the usual Latin form of the period; I have not checked it against the plate."
+    },
+    {
+      "order": 16,
+      "name": "Ain",
+      "value": "ע",
+      "translit": "ʿ (pharyngeal)",
+      "numeric": 70,
+      "form": "NOT DESCRIBED: no glyph is given here. I could not view the 1533 woodcut, de Balmes's 1523 page or any facsimile, and no source I could reach describes this letter in words. Unlike the Celestial set, no source says the Transitus Fluvii letters resemble their Hebrew counterparts, so a Hebrew-skeleton hint would be a guess, and none is offered. Known only for the family as a whole: thin, mostly straight strokes with small rings (Brillen) at the free stroke-ends. Trace it from the plate: in Agrippa III.30 it is the bottom alphabet of the three-alphabet woodcut.",
+      "formConfidence": "low",
+      "note": "Value and order are those of the Hebrew alphabet, which the table follows one-for-one. The numeric value is the standard Hebrew one; the plate is not known to print numbers. The label spelling is the usual Latin form of the period; I have not checked it against the plate."
+    },
+    {
+      "order": 17,
+      "name": "Pe",
+      "value": "פ",
+      "translit": "p / f",
+      "numeric": 80,
+      "form": "NOT DESCRIBED: no glyph is given here. I could not view the 1533 woodcut, de Balmes's 1523 page or any facsimile, and no source I could reach describes this letter in words. Unlike the Celestial set, no source says the Transitus Fluvii letters resemble their Hebrew counterparts, so a Hebrew-skeleton hint would be a guess, and none is offered. Known only for the family as a whole: thin, mostly straight strokes with small rings (Brillen) at the free stroke-ends. Trace it from the plate: in Agrippa III.30 it is the bottom alphabet of the three-alphabet woodcut.",
+      "formConfidence": "low",
+      "note": "Value and order are those of the Hebrew alphabet, which the table follows one-for-one. The numeric value is the standard Hebrew one; the plate is not known to print numbers. The label spelling is the usual Latin form of the period; I have not checked it against the plate."
+    },
+    {
+      "order": 18,
+      "name": "Zade",
+      "value": "צ",
+      "translit": "ṣ (ts)",
+      "numeric": 90,
+      "form": "NOT DESCRIBED: no glyph is given here. I could not view the 1533 woodcut, de Balmes's 1523 page or any facsimile, and no source I could reach describes this letter in words. Unlike the Celestial set, no source says the Transitus Fluvii letters resemble their Hebrew counterparts, so a Hebrew-skeleton hint would be a guess, and none is offered. Known only for the family as a whole: thin, mostly straight strokes with small rings (Brillen) at the free stroke-ends. Trace it from the plate: in Agrippa III.30 it is the bottom alphabet of the three-alphabet woodcut.",
+      "formConfidence": "low",
+      "note": "Value and order are those of the Hebrew alphabet, which the table follows one-for-one. The numeric value is the standard Hebrew one; the plate is not known to print numbers. The label spelling is the usual Latin form of the period; I have not checked it against the plate."
+    },
+    {
+      "order": 19,
+      "name": "Kuph",
+      "value": "ק",
+      "translit": "q",
+      "numeric": 100,
+      "form": "NOT DESCRIBED: no glyph is given here. I could not view the 1533 woodcut, de Balmes's 1523 page or any facsimile, and no source I could reach describes this letter in words. Unlike the Celestial set, no source says the Transitus Fluvii letters resemble their Hebrew counterparts, so a Hebrew-skeleton hint would be a guess, and none is offered. Known only for the family as a whole: thin, mostly straight strokes with small rings (Brillen) at the free stroke-ends. Trace it from the plate: in Agrippa III.30 it is the bottom alphabet of the three-alphabet woodcut.",
+      "formConfidence": "low",
+      "note": "Value and order are those of the Hebrew alphabet, which the table follows one-for-one. The numeric value is the standard Hebrew one; the plate is not known to print numbers. The label spelling is the usual Latin form of the period; I have not checked it against the plate."
+    },
+    {
+      "order": 20,
+      "name": "Res",
+      "value": "ר",
+      "translit": "r",
+      "numeric": 200,
+      "form": "NOT DESCRIBED: no glyph is given here. I could not view the 1533 woodcut, de Balmes's 1523 page or any facsimile, and no source I could reach describes this letter in words. Unlike the Celestial set, no source says the Transitus Fluvii letters resemble their Hebrew counterparts, so a Hebrew-skeleton hint would be a guess, and none is offered. Known only for the family as a whole: thin, mostly straight strokes with small rings (Brillen) at the free stroke-ends. Trace it from the plate: in Agrippa III.30 it is the bottom alphabet of the three-alphabet woodcut.",
+      "formConfidence": "low",
+      "note": "Value and order are those of the Hebrew alphabet, which the table follows one-for-one. The numeric value is the standard Hebrew one; the plate is not known to print numbers. The label spelling is the usual Latin form of the period; I have not checked it against the plate."
+    },
+    {
+      "order": 21,
+      "name": "Schin",
+      "value": "ש",
+      "translit": "š / s",
+      "numeric": 300,
+      "form": "NOT DESCRIBED: no glyph is given here. I could not view the 1533 woodcut, de Balmes's 1523 page or any facsimile, and no source I could reach describes this letter in words. Unlike the Celestial set, no source says the Transitus Fluvii letters resemble their Hebrew counterparts, so a Hebrew-skeleton hint would be a guess, and none is offered. Known only for the family as a whole: thin, mostly straight strokes with small rings (Brillen) at the free stroke-ends. Trace it from the plate: in Agrippa III.30 it is the bottom alphabet of the three-alphabet woodcut.",
+      "formConfidence": "low",
+      "note": "Value and order are those of the Hebrew alphabet, which the table follows one-for-one. The numeric value is the standard Hebrew one; the plate is not known to print numbers. The label spelling is the usual Latin form of the period; I have not checked it against the plate."
+    },
+    {
+      "order": 22,
+      "name": "Tau",
+      "value": "ת",
+      "translit": "t",
+      "numeric": 400,
+      "form": "NOT DESCRIBED: no glyph is given here. I could not view the 1533 woodcut, de Balmes's 1523 page or any facsimile, and no source I could reach describes this letter in words. Unlike the Celestial set, no source says the Transitus Fluvii letters resemble their Hebrew counterparts, so a Hebrew-skeleton hint would be a guess, and none is offered. Known only for the family as a whole: thin, mostly straight strokes with small rings (Brillen) at the free stroke-ends. Trace it from the plate: in Agrippa III.30 it is the bottom alphabet of the three-alphabet woodcut.",
+      "formConfidence": "low",
+      "note": "Value and order are those of the Hebrew alphabet, which the table follows one-for-one. The numeric value is the standard Hebrew one; the plate is not known to print numbers. The label spelling is the usual Latin form of the period; I have not checked it against the plate."
+    }
+  ],
+  "lettersSource": "Order, names and values follow the Hebrew alphabet, which the table follows one-for-one. There are 22 characters and, as far as any source says, no final forms (not checked against the woodcut). For the plate labels, Aleph to Cheth follow a transcription of Agrippa's woodcut; Teth to Tau use the usual period spelling, unchecked. Forms: NONE GIVEN. No image or facsimile could be viewed here, and no source describes the glyphs one by one. For drawing, use these and say which: (1) the 1533 III.30 woodcut, bottom alphabet of the three (copies: Library of Congress rbc.2009gen12345, Wellcome, Eton); or (2) de Balmes 1523, sig. B6v (archive.org miknehavrampecul00balm), which is the alphabet's first printing; or Peterson's CC-BY 4.0 'Transitus Fluvii' font, which he says follows de Balmes, not Agrippa. Do not use Barrett's 1801 plate or the re-cut 1651 table as the model: their forms may have drifted. Expect differences between de Balmes, Tory, Panteo and Agrippa.",
+  "uses": [
+    {
+      "use": "Grammatical exhibit: shown in a Hebrew grammar as one of the scripts derived from Ashuri.",
+      "evidence": "De Balmes 1523, per the Rylands blog."
+    },
+    {
+      "use": "A sacred patriarchal script in alchemical-cabalistic learning, Abraham's alphabet beside Moses' Hebrew and Enoch's 'Enochian'.",
+      "evidence": "Panteo, Voarchadumia (1530), per Wikipedia and Chioli."
+    },
+    {
+      "use": "A Cabalistic writing among the characters for spirits: Agrippa gives it in the chapter on making characters 'delivered by Cabalists' (III.30), which follows his chapter on spirits' characters and seals (III.29). After the alphabets, the same chapter teaches how to contract a name such as Michael into a single character.",
+      "evidence": "Agrippa III.30 (1533); 1651 English Book III ch. XXX. Agrippa gives no specific rite for this alphabet."
+    },
+    {
+      "use": "Evidence in learned debates over whether alphabets came from the stars and the angels.",
+      "evidence": "Macfarlane 2025 (on Brillenbuchstaben generally; Kircher 1653, 1679)."
+    },
+    {
+      "use": "Spelling divine and angelic names in charaktêr-letters on amulets.",
+      "evidence": "Rylands blog, on the charaktêres-alphabets in Jewish magical manuscripts generally. I found no source tying this use to Transitus Fluvii in particular, so do not claim it for this alphabet."
+    },
+    {
+      "use": "Modern: a simple substitution cipher for Latin letters, in fonts, cipher tools, ritual and fiction.",
+      "evidence": "Willow McKinnis's draft encoding proposal; dCode; Wikipedia's list of modern appearances (The Blair Witch Project, 1999; Lucy Boston, An Enemy at Green Knowe, 1964), which I did not check."
+    }
+  ],
+  "quotations": [
+    {
+      "text": "There is also a writing which they call Malachim, or Melachim i. e. of Angels, or Regal; there is also another, which they call the passing through the River, and the Characters and figures of all these are such.",
+      "translation": "J.F. [probably John French], Three Books of Occult Philosophy (London: R.W. for Gregory Moule, 1651). Wording from the EEBO-TCP transcription as returned in search; the spelling may be normalised.",
+      "source": "Agrippa, De occulta philosophia III.30; 1651 English Book III ch. XXX, 'Another manner of making Characters, delivered by Cabalists'"
+    },
+    {
+      "text": "Et est alia, quam uocant Transitus fluuij",
+      "translation": "Original Latin (1533), as quoted by Dario Chioli. My paraphrase: 'And there is another [writing], which they call the Passing of the River.' Chioli notes that the capital T suggests a proper name.",
+      "source": "Agrippa, De occulta philosophia libri tres (1533), III.30"
+    },
+    {
+      "text": "Haec est scriptura transitus fluuii",
+      "translation": "Original Latin, as quoted by Chioli. My paraphrase: 'This is the writing of the passing of the river.'",
+      "source": "Giovanni Agostino Panteo, Voarchadumia contra alchimiam (Venice, 1530); locator not seen"
+    },
+    {
+      "text": "Your fathers dwelt on the other side of the flood in old time, even Terah, the father of Abraham, and the father of Nachor: and they served other gods. And I took your father Abraham from the other side of the flood…",
+      "translation": "King James Version (1611). 'The flood' renders Hebrew ha-nahar, 'the River', i.e. the Euphrates; 'on the other side' renders be-ʿever.",
+      "source": "Joshua 24:2–3"
+    },
+    {
+      "text": "[So called] because he came from the other side (מֵעֵבֶר) of the [Euphrates] river",
+      "translation": "Chabad.org's English translation of Rashi (online Tanakh with Rashi).",
+      "source": "Rashi on Genesis 14:13 ('Abram the Hebrew'), citing Genesis Rabbah 42:8"
+    },
+    {
+      "text": "…passing through the river, the characters and figures of all which you may see in the following Plates",
+      "translation": "Barrett's own English (1801), close to the 1651 J.F. wording. Text as returned in search from the Wikisource/Commons copy.",
+      "source": "Francis Barrett, The Magus (London, 1801)"
+    },
+    {
+      "text": "Many, beginning with Giovanni Panteo, viewed the transfluvial alphabet as that used by Abraham upon his crossing of the river Euphrates.",
+      "translation": "English original (modern scholarship).",
+      "source": "Kirsten Macfarlane, 'Written in the Stars? Alphabets and Angels in Early Modern Europe', Journal of the History of Ideas 86.3 (2025), 473–506"
+    }
+  ],
+  "links": [
+    {
+      "to": "hebrew",
+      "relation": "Its 22 letters stand one-for-one for the Hebrew letters, in Hebrew order. De Balmes presented it as a script derived from Ashuri, the square Hebrew script."
+    },
+    {
+      "to": "celestial",
+      "relation": "Sister alphabet on the same III.30 woodcut (top row)."
+    },
+    {
+      "to": "malachim",
+      "relation": "Sister alphabet on the same III.30 woodcut (middle row). Agrippa names it just before 'the passing through the River'."
+    },
+    {
+      "to": "theban",
+      "relation": "Agrippa's preceding chapter, III.29 (characters and seals of spirits), prints the Theban alphabet."
+    },
+    {
+      "to": "pgm",
+      "relation": "Ring-ended charaktêres of Graeco-Egyptian magic are the graphic ancestors of the ring-letter (Brillenbuchstaben) alphabets (Bohak 2011)."
+    },
+    {
+      "to": "phoenician",
+      "relation": "The Talmud's contrast of ketav Ivri (Palaeo-Hebrew, a Phoenician-type script) with ketav Ashurit is the likely 'Talmudic background' to de Balmes's label. This link is my inference, not Campanini's stated argument."
+    }
+  ],
+  "cautions": [
+    "Do not say Agrippa invented it, or that Agrippa cites de Balmes. It is printed in 1523 and 1530 before Agrippa, and the pointer to de Balmes is Peterson's editorial note, not Agrippa's text.",
+    "All three explanations of the name (Abraham's Euphrates; the return from Babylon; the Chebar) are later interpretations. Report each with its author: Panteo onward per Macfarlane; modern Wikipedia/Omniglot, unsourced; Blavatsky 1892.",
+    "The Hebrew name ever ha-nahar means 'beyond the River', a place, while Latin transitus fluvii means 'the crossing of the river', an act. That shift in sense is my own observation, offered as a possible reason the label was misread. It is not a quotation of Campanini.",
+    "The 'Ivri = one who crossed over' etymology is one of three in Genesis Rabbah 42:8, alongside 'descendant of Eber' and 'he stood on the other side from the whole world'. Present it as a tradition, not a fact of philology.",
+    "No letter form here is verified. Every glyph must be traced from a named plate, and the page should say which plate (Agrippa 1533 or de Balmes 1523).",
+    "Folio and page numbers taken from Wikipedia (Tory f. 76v, Panteo pp. 545–46, Perrone Compagni p. 491) are unverified. Tory's folio conflicts with the BnF's f. 73r.",
+    "Kircher's and Westcott's reproductions are reported second-hand; Duret, Vigenère and Theseus Ambrosius were searched for and NOT confirmed to print this alphabet, so leave them out.",
+    "dCode's 'page 441 of Book III' is an unidentified edition's pagination; do not use it as a locator."
+  ],
+  "sources": [
+    {
+      "citation": "Kirsten Macfarlane, 'Written in the Stars? Alphabets and Angels in Early Modern Europe', Journal of the History of Ideas 86.3 (2025): 473–506, doi:10.1353/jhi.2025.a966903",
+      "url": "https://muse.jhu.edu/article/966903"
+    },
+    {
+      "citation": "Macfarlane 2025, PubMed record",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40755310"
+    },
+    {
+      "citation": "Saverio Campanini, 'The Quest for the Holiest Alphabet in the Renaissance', in N. Vidro, I. Zwiep and J. Olszowy-Schlanger (eds), A Universal Art: Hebrew Grammar across Disciplines and Faiths (Leiden: Brill, 2014), 196–245, esp. 211–15",
+      "url": "https://www.semanticscholar.org/paper/The-Quest-for-the-Holiest-Alphabet-in-the-Campanini/1791c17c57290f343a6d8815b9f72c1ed6d1125e"
+    },
+    {
+      "citation": "A Universal Art (Brill, 2014), Google Books record",
+      "url": "https://books.google.com/books/about/A_Universal_Art_Hebrew_Grammar_across_Di.html?id=Xk_3AwAAQBAJ"
+    },
+    {
+      "citation": "Saverio Campanini, 'Peculium Abrae. La grammatica ebraico-latina di Avraham de Balmes', Annali di Ca' Foscari 36 (1997), 5–49",
+      "url": "http://lear.unive.it/jspui/handle/11707/1794"
+    },
+    {
+      "citation": "Rylands Blog (University of Manchester Library), 'Speaking to angels: Charaktêres in Jewish magical manuscripts, part II' (2 Feb 2022)",
+      "url": "https://rylandscollections.com/2022/02/02/speaking-to-angels-charakteres-in-jewish-magical-manuscripts-part-ii/"
+    },
+    {
+      "citation": "Abraham de Balmes, Mikneh Avram / Peculium Abrae (Venice: Daniel Bomberg, 1523), digitised copy",
+      "url": "https://archive.org/details/miknehavrampecul00balm"
+    },
+    {
+      "citation": "Giovanni Agostino Panteo, Voarchadumia contra alchimiam (Venice, 1530), digitised copy (Biblioteca Nazionale Centrale di Firenze)",
+      "url": "https://archive.org/details/ita-bnc-mag-00001097-001"
+    },
+    {
+      "citation": "Heinrich Cornelius Agrippa, De occulta philosophia libri tres (1533), Library of Congress digitised copy (title wording matches 1533; date to confirm on the record)",
+      "url": "https://www.loc.gov/resource/rbc.2009gen12345/"
+    },
+    {
+      "citation": "Eton College Library catalogue, Agrippa 1533 (Cologne, J. Soter?; Adams suggests Basel)",
+      "url": "https://catalogue.etoncollege.com/B25098"
+    },
+    {
+      "citation": "Joseph H. Peterson (ed.), Agrippa, Three Books of Occult Philosophy, Book III part 3 (ch. xxviii ff.), with note on de Balmes, sig. B6v",
+      "url": "https://www.esotericarchives.com/agrippa/agripp3c.htm"
+    },
+    {
+      "citation": "Joseph H. Peterson, Esoteric Archives fonts (CC-BY 4.0), incl. 'Transitus Fluvii (Passing the River)' from de Balmis 1523",
+      "url": "https://www.esotericarchives.com/fonts/"
+    },
+    {
+      "citation": "Agrippa, Three Books of Occult Philosophy, tr. J.F. (London: R.W. for Gregory Moule, 1651), Book III ch. XXX, EEBO-TCP",
+      "url": "https://quod.lib.umich.edu/e/eebo/A26565.0001.001/1:18.30?rgn=div2;view=fulltext"
+    },
+    {
+      "citation": "Agrippa, De occulta philosophia libri tres, ed. V. Perrone Compagni (Leiden: Brill, 1992), Wellcome Collection record",
+      "url": "https://wellcomecollection.org/works/ymvvbx6a"
+    },
+    {
+      "citation": "Dario Chioli, 'L'alfabeto enochiano. Storia di una fantasia' (quotes Agrippa III.30 and Panteo in Latin)",
+      "url": "https://www.superzeko.net/doc_dariochioli_saggistica/DarioChioliLAlfabetoEnochianoStoriaDUnaFantasia.pdf"
+    },
+    {
+      "citation": "'The Characters (Χαρακτῆρες) of the Glagolitic Alphabet: New Light on an Old Puzzle' (Redalyc), which reports Campanini on 'scriptura transitus fluuii'",
+      "url": "https://www.redalyc.org/journal/6924/692474616008/html/"
+    },
+    {
+      "citation": "Gideon Bohak, 'The Charaktêres in Ancient and Medieval Jewish Magic', Acta Classica Universitatis Scientiarum Debreceniensis 47 (2011): 25–44",
+      "url": "https://www.academia.edu/37186551/Gideon_Bohak_The_Charakt%C3%AAres_in_Ancient_and_Medieval_Jewish_Magic_Acta_Classica_Universitatis_Scientiarum_Debreceniensis_vol_47_2011_25_44"
+    },
+    {
+      "citation": "Geoffroy Tory, Champ Fleury (Paris, 1529), Gallica facsimile",
+      "url": "https://gallica.bnf.fr/ark:/12148/bpt6k50961p.image"
+    },
+    {
+      "citation": "BnF Essentiels, 'Lettres chaldaïques et lettres goffes' (Tory, Champ Fleury, f. 73r)",
+      "url": "https://essentiels.bnf.fr/fr/image/78729938-af73-44cb-98d6-82cefb245ce6-lettres-chaldaiques-et-lettres-goffes-1"
+    },
+    {
+      "citation": "Wikimedia Commons, Category: The Magus (Francis Barrett), incl. plate 'Passing the River'",
+      "url": "https://commons.wikimedia.org/wiki/Category:The_Magus_(Francis_Barrett)"
+    },
+    {
+      "citation": "Francis Barrett, The Magus (1801), Wikisource",
+      "url": "https://en.wikisource.org/wiki/The_Magus,_or_Celestial_Intelligencer"
+    },
+    {
+      "citation": "Teopedia transcription of Blavatsky, Theosophical Glossary (1892), 'Fluvii Transitus'",
+      "url": "https://en.teopedia.org/lib/Fluvii_Transitus"
+    },
+    {
+      "citation": "Rashi on Genesis 14:13, Chabad.org (Tanakh with Rashi)",
+      "url": "https://www.chabad.org/library/bible_cdo/aid/8209/jewish/Chapter-14.htm"
+    },
+    {
+      "citation": "Septuagint Genesis 14 (Brenton)",
+      "url": "https://biblehub.com/sep/genesis/14.htm"
+    },
+    {
+      "citation": "Source Library, 'agrippa von nettesheim 3 alphabets' (woodcut record with transcription)",
+      "url": "https://sourcelibrary.org/artwork/agrippa-von-nettesheim-3-alphabets"
+    },
+    {
+      "citation": "Alamy stock image caption: 1533 woodcut, Celestial (top), Malachim (middle), Transitus fluvii (bottom)",
+      "url": "https://www.alamy.com/alphabets-secret-alphabets-a-large-number-of-the-secret-or-semi-secret-alphabets-used-in-magical-writings-were-derived-from-the-structure-of-the-22-letters-of-the-hebrew-alphabet-the-various-forms-were-based-on-graphic-consistencies-and-the-more-widely-used-of-these-were-known-as-the-celestial-writings-scriptura-coelestis-top-in-this-figure-the-writings-of-the-angels-scriptura-malachim-middle-alphabet-in-this-figure-and-the-writing-of-passing-the-river-scriptura-transitus-fluvii-bottom-in-this-figure-from-cornelius-agrippa-de-occulta-philosophia-1533-edition-image179622773.html"
+    },
+    {
+      "citation": "Wikimedia Commons, Category: Transitus Fluvii (per-letter image files)",
+      "url": "https://commons.wikimedia.org/wiki/Category:Transitus_Fluvii"
+    },
+    {
+      "citation": "Wikipedia, 'Transitus Fluvii' (secondary; source of the Tory, Panteo and Perrone Compagni locators)",
+      "url": "https://en.wikipedia.org/wiki/Transitus_Fluvii"
+    },
+    {
+      "citation": "Willow McKinnis, draft proposal to encode Agrippa's Malachim, Celestial and Transitus Fluvii scripts",
+      "url": "https://n1x1an.neocities.org/langs/con%20languages/proposals/malachim/"
+    },
+    {
+      "citation": "Omniglot, 'Passing the River / Passage du Fleuve' (letter list only)",
+      "url": "https://www.omniglot.com/conscripts/ptr.htm"
+    },
+    {
+      "citation": "Stanford Encyclopedia of Philosophy, 'Heinrich Cornelius Agrippa von Nettesheim'",
+      "url": "https://plato.stanford.edu/entries/agrippa-nettesheim/"
+    }
+  ],
+  "confidence": "SOLID: the alphabet's first printing in de Balmes's grammar (Venice: Bomberg, 1523), with three scholarly witnesses (Macfarlane 2025, Peterson's note giving sig. B6v, and the Rylands blog for the Hebrew name Ketav ever ha-nahar). Also solid: its place in Agrippa III.30 (1533) beside Celestial and Malachim with no source named; the 1651 English wording; Panteo's 1530 assignment to Abraham; Barrett's 1801 plate. The ʿIvri/'beyond the River' texts (Joshua 24, Gen. Rabbah 42:8, Rashi) are solid. ATTRIBUTED: Campanini's misreading thesis, known only through Macfarlane's summary; which Talmudic passage is meant is not known to me. SHAKY: Tory 1529 (folio conflict f. 76v vs f. 73r, and whether his 'Lettres Chaldaiques' are this alphabet); Panteo's page numbers; Perrone Compagni p. 491; whether Kircher prints this alphabet in particular; Westcott's 1890 AQC copies, known only through Blavatsky. ABSENT: every letter form. Nothing could be viewed. The glyphs must be traced from the 1533 woodcut or de Balmes 1523 before the page draws them."
+}

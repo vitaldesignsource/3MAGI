@@ -1,0 +1,888 @@
+#!/usr/bin/env node
+// Validates the Christianities portal before it can be built.
+//
+// This portal describes living faith for some two billion people, across
+// churches that once anathematized one another, so its failure modes are not
+// only factual but editorial: a polemical exonym left standing as if it were
+// a neutral name, a tradition described only from outside, a quotation with
+// no source, a coordinate that puts Antioch in the sea. The canon table has a
+// harder test still — it asserts totals that the reader can count, so the
+// table must actually produce them.
+//
+// Runs as a build step. Sections still awaiting content are skipped with a
+// notice; a section that is half-populated fails.
+
+import { fileURLToPath } from 'node:url';
+import path from 'node:path';
+import { existsSync } from 'node:fs';
+
+const here = path.dirname(fileURLToPath(import.meta.url));
+const web = path.resolve(here, '..');
+const load = async (name) => {
+    try { return (await import(path.join(web, 'src/data/christianities', `${name}.js`))).default; }
+    catch { return null; }
+};
+
+const errors = [];
+const warnings = [];
+const notes = [];
+const fail = (m) => errors.push(m);
+const warn = (m) => warnings.push(m);
+
+// --- editorial tripwires ---------------------------------------------------
+// Names that are somebody's polemic rather than a self-description. Prose may
+// use them — the history is unreadable without them — but never bare, as
+// though they were the neutral name.
+const CONTESTED_LABELS = [
+    { term: /\bnestorian/i, guard: /reject|exonym|misnomer|prefer|so-called|contested|do(es)? not accept|repudiat|others['’] name|opponent|polemic|label|weapon/i,
+      why: 'the Assyrian Church of the East rejects the label' },
+    { term: /\bmonophysit/i, guard: /miaphysit|not monophysit|distinct|reject|contested|misnomer|different from|charge|accus/i,
+      why: 'the Oriental Orthodox are miaphysite, and the conflation is the charge, not the position' },
+    { term: /robber (council|synod)|latrocinium/i, guard: /Leo|polemic|so-called|hostile|name given|opponent|called it/i,
+      why: "it is Leo's polemical name for Ephesus II" },
+];
+
+// Structural fields carry the flag; prose is what has to be careful. Scanning
+// the whole record lets the field name "exonym" satisfy its own guard, so the
+// two are gathered separately.
+const STRUCTURAL = new Set(['slug', 'name', 'exonym', 'selfName', 'key', 'term', 'native', 'translit']);
+function prose(obj) {
+    const out = [];
+    const walk = (v, key) => {
+        if (typeof v === 'string') { if (!STRUCTURAL.has(key)) out.push(v); return; }
+        if (Array.isArray(v)) { v.forEach((x) => walk(x, key)); return; }
+        if (v && typeof v === 'object') { for (const [k, x] of Object.entries(v)) walk(x, k); }
+    };
+    walk(obj, null);
+    return out.join('   ');
+}
+
+function checkContested(where, entry) {
+    const text = prose(entry);
+    const declared = String(entry?.exonym || '');
+    for (const rule of CONTESTED_LABELS) {
+        if (!rule.term.test(text)) continue;
+        if (rule.term.test(declared)) continue;   // the entry names it as an exonym outright
+        if (rule.guard.test(text)) continue;      // or the prose flags it in passing
+        fail(`${where}: uses a contested label as if it were neutral — ${rule.why}`);
+    }
+}
+
+const wordCount = (s) => String(s).trim().split(/\s+/).filter(Boolean).length;
+
+// --- christologies ---------------------------------------------------------
+const christologies = await load('christologies');
+if (christologies) {
+    const seen = new Set();
+    for (const e of christologies.entries) {
+        const where = `christologies/${e.slug}`;
+        if (seen.has(e.slug)) fail(`${where}: duplicate slug`);
+        seen.add(e.slug);
+        if (!e.claim || wordCount(e.claim) < 4) fail(`${where}: the claim is too thin to state a position`);
+        if (!e.heldBy) fail(`${where}: nobody is recorded as holding it`);
+        if (!e.opposedBy) fail(`${where}: nobody is recorded as opposing it`);
+        checkContested(where, e);
+        // A position with living adherents must say so in its own terms.
+        if (e.status === 'revived' && !e.today) {
+            fail(`${where}: marked revived but says nothing about who holds it now`);
+        }
+    }
+    notes.push(`christologies: ${christologies.entries.length}`);
+}
+
+// --- branches --------------------------------------------------------------
+const branches = await load('branches');
+if (branches) {
+    const groups = new Set(branches.groups.map((g) => g.key));
+    const seen = new Set();
+    for (const b of branches.entries) {
+        const where = `branches/${b.slug}`;
+        if (seen.has(b.slug)) fail(`${where}: duplicate slug`);
+        seen.add(b.slug);
+        if (!groups.has(b.group)) fail(`${where}: belongs to unknown group "${b.group}"`);
+        checkContested(where, b);
+        // An exonym recorded without a self-name is a group named only by others.
+        if (b.exonym && !b.selfName) {
+            warn(`${where}: carries an exonym but no self-name`);
+        }
+    }
+    // every group must actually hold something
+    for (const g of branches.groups) {
+        if (!branches.entries.some((b) => b.group === g.key)) fail(`branches: group "${g.key}" is empty`);
+        if (g.image && !existsSync(path.join(web, 'public/media', g.image))) {
+            fail(`branches/${g.key}: group image ${g.image} not in public/media`);
+        }
+        if (g.image && !g.imageAlt) fail(`branches/${g.key}: group image without alt text`);
+    }
+    for (const b of branches.entries) {
+        if (b.image && !existsSync(path.join(web, 'public/media', b.image))) {
+            fail(`branches/${b.slug}: image ${b.image} not in public/media`);
+        }
+        if (b.image && !b.imageAlt) fail(`branches/${b.slug}: image without alt text`);
+    }
+    notes.push(`branches: ${branches.entries.length} in ${branches.groups.length} groups`);
+}
+
+// --- councils --------------------------------------------------------------
+const councils = await load('councils');
+if (councils) {
+    let prev = -Infinity;
+    for (const c of councils.councils) {
+        const where = `councils/${c.slug}`;
+        if (!Number.isInteger(c.year)) fail(`${where}: non-integer year`);
+        if (c.year < prev) fail(`${where}: out of chronological order (${c.year} after ${prev})`);
+        prev = c.year;
+        if (!c.receivedBy) fail(`${where}: does not say which communions receive it`);
+        checkContested(where, c);
+    }
+    for (const a of councils.disputes) {
+        if (!a.course?.length) fail(`councils/${a.slug}: the argument has no course`);
+        checkContested(`councils/${a.slug}`, a);
+    }
+    notes.push(`councils: ${councils.councils.length} councils, ${councils.disputes.length} disputes`);
+}
+
+// --- canon: the arithmetic must work ---------------------------------------
+// The page prints totals a reader can count. If the table cannot reproduce
+// them under its own stated convention, the page is lying to its reader.
+const canon = await load('canon');
+if (canon) {
+    // The table documents its own counting conventions in its notes, and the
+    // check implements them:
+    //   - the Jewish column follows the Hebrew bundling: Samuel, Kings,
+    //     Chronicles and Ezra–Nehemiah are "counted once across these two
+    //     rows", and The Twelve is one book of the twenty-four;
+    //   - every Christian column counts The Twelve as twelve;
+    //   - a row may declare it "stands for N books" (the Ethiopian
+    //     church-order row stands for eight) or "counts as N";
+    //   - a null otCount/ntCount is a count the tradition does not assert
+    //     (the Church of the East states only its 22-book Peshitta NT),
+    //     never a zero;
+    //   - 'other'-section rows marked "in" count toward the NT, which is
+    //     where the Ethiopian broader canon lives.
+    const OT_SECTIONS = new Set(['torah', 'history', 'wisdom', 'prophets', 'deutero']);
+    const NT_SECTIONS = new Set(['gospels', 'acts', 'pauline', 'catholic', 'apocalypse', 'other']);
+    const SECOND_HALVES = new Set(['2 Samuel', '2 Kings', '2 Chronicles', 'Nehemiah']);
+    const WORD_NUMS = { one: 1, two: 2, three: 3, four: 4, five: 5, six: 6, seven: 7,
+        eight: 8, nine: 9, ten: 10, eleven: 11, twelve: 12 };
+    const declaredWeight = (note) => {
+        const m = /(?:stands for|counts? as) (\d+|[a-z]+)/i.exec(note || '');
+        if (!m) return null;
+        const v = parseInt(m[1], 10);
+        return Number.isInteger(v) ? v : (WORD_NUMS[m[1].toLowerCase()] ?? null);
+    };
+    const tally = {};
+    for (const t of canon.traditions) tally[t.key] = { ot: 0, nt: 0 };
+    for (const b of canon.books) {
+        const declared = declaredWeight(b.note);
+        for (const t of canon.traditions) {
+            if (b.status[t.key] !== 'in') continue;
+            let w;
+            if (t.key === 'jewish') {
+                w = SECOND_HALVES.has(b.name) ? 0 : 1;
+            } else if (/^The Twelve$/i.test(b.name)) {
+                w = 12;
+            } else {
+                w = declared ?? 1;
+            }
+            if (OT_SECTIONS.has(b.section)) tally[t.key].ot += w;
+            else if (NT_SECTIONS.has(b.section)) tally[t.key].nt += w;
+            else fail(`canon/${b.name}: unknown section "${b.section}"`);
+        }
+    }
+    for (const t of canon.traditions) {
+        const bad = [];
+        if (t.otCount != null && tally[t.key].ot !== t.otCount) {
+            bad.push(`OT: claims ${t.otCount}, table yields ${tally[t.key].ot}`);
+        }
+        if (t.ntCount != null && tally[t.key].nt !== t.ntCount) {
+            bad.push(`NT: claims ${t.ntCount}, table yields ${tally[t.key].nt}`);
+        }
+        if (bad.length) fail(`canon: ${t.label} — ${bad.join('; ')}`);
+        else {
+            const parts = [];
+            if (t.otCount != null) parts.push(String(t.otCount));
+            if (t.ntCount != null) parts.push(String(t.ntCount));
+            notes.push(`canon: ${t.label} = ${parts.join('+')} ✓`);
+        }
+    }
+    if (!canon.books.some((b) => /sinaiticus/i.test(b.note || '') || /hermas/i.test(b.name))) {
+        warn('canon: no row mentions Hermas or Sinaiticus — the near-misses make the argument');
+    }
+    let prev = -Infinity;
+    for (const e of canon.milestones) {
+        if (e.year < prev) fail(`canon/${e.slug}: milestone out of chronological order`);
+        prev = e.year;
+        if (e.end != null && e.end < e.year) fail(`canon/${e.slug}: ends before it begins`);
+    }
+}
+
+// --- figures: no unsourced quotations --------------------------------------
+const figures = await load('figures');
+if (figures) {
+    const cats = new Set(figures.categories.map((c) => c.key));
+    for (const f of figures.entries) {
+        const where = `figures/${f.slug}`;
+        for (const c of f.categories) if (!cats.has(c)) fail(`${where}: unknown category "${c}"`);
+        if (f.quote && !f.quote.source) fail(`${where}: a quotation with no source`);
+        if (f.quote && wordCount(f.quote.source) < 2) {
+            fail(`${where}: quotation source "${f.quote.source}" is not a citation`);
+        }
+        if (f.image && !existsSync(path.join(web, 'public/media', f.image))) {
+            fail(`${where}: image ${f.image} not in public/media`);
+        }
+        if (f.image && !f.imageAlt) fail(`${where}: image without alt text`);
+        checkContested(where, f);
+    }
+    notes.push(`figures: ${figures.entries.length}`);
+}
+
+// --- symbols: glyphs must be the characters claimed ------------------------
+const symbols = await load('symbols');
+if (symbols) {
+    for (const s of symbols.entries) {
+        if (s.glyph) {
+            for (const ch of s.glyph) {
+                const cp = ch.codePointAt(0);
+                const ok = (cp >= 0x2600 && cp <= 0x27bf)      // misc symbols & dingbats
+                    || (cp >= 0x2c80 && cp <= 0x2cff)          // Coptic (crux ansata, staurogram)
+                    || (cp >= 0x0370 && cp <= 0x03ff)          // Greek (Α Ω, chi rho letters)
+                    || (cp >= 0x1f00 && cp <= 0x1fff)          // polytonic Greek (ὁ ὤν in the nimbus)
+                    || (cp >= 0x0300 && cp <= 0x036f)          // combining marks (nomina sacra overline)
+                    || (cp >= 0x2020 && cp <= 0x203b)          // daggers, asterism
+                    || (cp >= 0x0041 && cp <= 0x024f)          // Latin
+                    || (cp >= 0x0590 && cp <= 0x05f4)          // Hebrew
+                    || (cp >= 0x1f300 && cp <= 0x1f9ff)        // pictographs, if ever used
+                    || cp === 0xfe0e               // text-presentation selector
+                    || ch === ' ';
+                if (!ok) {
+                    fail(`symbols/${s.slug}: glyph "${ch}" (U+${cp.toString(16).toUpperCase()}) `
+                        + 'is outside the expected symbol blocks');
+                }
+            }
+        }
+    }
+    notes.push(`symbols: ${symbols.entries.length}`);
+}
+
+// --- map: coordinates must be on the right part of the planet --------------
+// Spot anchors for places whose position is not in doubt. A site claiming one
+// of these names has to be within half a degree of it.
+const ANCHORS = {
+    jerusalem: [31.78, 35.22], rome: [41.90, 12.50], alexandria: [31.20, 29.92],
+    antioch: [36.20, 36.16], constantinople: [41.01, 28.98], nicaea: [40.43, 29.72],
+    chalcedon: [40.99, 29.03], ephesus: [37.94, 27.34], carthage: [36.85, 10.32],
+    edessa: [37.16, 38.79], nisibis: [37.07, 41.22], axum: [14.13, 38.72],
+    lalibela: [12.03, 39.04], etchmiadzin: [40.16, 44.29], wittenberg: [51.87, 12.65],
+    geneva: [46.20, 6.14], canterbury: [51.28, 1.08], iona: [56.33, -6.42],
+    trent: [46.07, 11.12], moscow: [55.76, 37.62], kyiv: [50.45, 30.52],
+    'xi\'an': [34.34, 108.94], athos: [40.16, 24.33], sinai: [28.56, 33.98],
+};
+const mapsites = await load('mapsites');
+if (mapsites) {
+    const seen = new Set();
+    for (const s of mapsites.sites) {
+        const where = `map/${s.slug}`;
+        if (seen.has(s.slug)) fail(`${where}: duplicate slug`);
+        seen.add(s.slug);
+        if (!(s.lat >= -90 && s.lat <= 90)) fail(`${where}: latitude ${s.lat} is off the planet`);
+        if (!(s.lon >= -180 && s.lon <= 180)) fail(`${where}: longitude ${s.lon} is off the planet`);
+        if (s.to != null && s.to < s.from) fail(`${where}: ends (${s.to}) before it begins (${s.from})`);
+        for (const e of s.events) {
+            if (e.year < s.from - 1 || (s.to != null && e.year > s.to + 1)) {
+                warn(`${where}: event ${e.year} ("${e.title}") falls outside the site's span ${s.from}–${s.to ?? 'today'}`);
+            }
+        }
+        const key = Object.keys(ANCHORS).find((k) => s.name.toLowerCase().includes(k));
+        if (key) {
+            const [alat, alon] = ANCHORS[key];
+            const d = Math.max(Math.abs(s.lat - alat), Math.abs(s.lon - alon));
+            if (d > 0.5) {
+                fail(`${where}: plotted at ${s.lat},${s.lon} but ${key} is at ${alat},${alon} `
+                    + `(${d.toFixed(2)}° away)`);
+            }
+        }
+    }
+    notes.push(`map: ${mapsites.sites.length} sites`);
+}
+
+// --- the grand timeline ----------------------------------------------------
+const timeline = await load('timeline');
+if (timeline) {
+    let prev = -Infinity;
+    for (const e of timeline.events) {
+        if (!Number.isInteger(e.year)) fail(`timeline/${e.slug}: non-integer year`);
+        if (e.year < prev) fail(`timeline/${e.slug}: out of chronological order`);
+        prev = e.year;
+        if (e.end != null && e.end < e.year) fail(`timeline/${e.slug}: ends before it begins`);
+    }
+    const dated = timeline.events.filter((e) => e.dating).length;
+    notes.push(`timeline: ${timeline.events.length} events, ${dated} with dating notes`);
+}
+
+// --- the versions: a shelf that must stay in order --------------------------
+const bibles = await load('bibles');
+if (bibles) {
+    let prev = -Infinity;
+    const seen = new Set();
+    for (const v of bibles.versions) {
+        const where = `bibles/${v.slug}`;
+        if (seen.has(v.slug)) fail(`${where}: duplicate slug`);
+        seen.add(v.slug);
+        if (!Number.isInteger(v.year)) fail(`${where}: no sort year`);
+        else if (v.year < prev) fail(`${where}: shelf out of chronological order (${v.year} after ${prev})`);
+        if (Number.isInteger(v.year)) prev = v.year;
+        if (!v.madeFrom) fail(`${where}: does not say what it was translated from — the question that decides the rest`);
+        if (!v.standing) fail(`${where}: does not say where it stands`);
+        checkContested(where, v);
+    }
+    notes.push(`bibles: ${bibles.versions.length} versions`);
+}
+
+// --- the inner tradition: reception is a field, not an opinion --------------
+const esoteric = await load('esoteric');
+if (esoteric) {
+    const groups = new Set(esoteric.groups.map((g) => g.key));
+    const seen = new Set();
+    for (const e of esoteric.entries) {
+        const where = `esoteric/${e.slug}`;
+        if (seen.has(e.slug)) fail(`${where}: duplicate slug`);
+        seen.add(e.slug);
+        if (!groups.has(e.group)) fail(`${where}: unknown group "${e.group}"`);
+        if (!e.claim || wordCount(e.claim) < 5) fail(`${where}: the claim is too thin to state a teaching`);
+        if (!e.sources) fail(`${where}: no sources`);
+        // the discipline that keeps this door honest: every current records what
+        // the authorities actually did, so admiration cannot stand in for it
+        if (!e.reception) {
+            fail(`${where}: no reception — a current with no record of what the church did about it is advocacy, not history`);
+        }
+        if (!e.today) fail(`${where}: says nothing about where it stands now`);
+        checkContested(where, e);
+    }
+    for (const g of esoteric.groups) {
+        if (!esoteric.entries.some((e) => e.group === g.key)) fail(`esoteric: group "${g.key}" is empty`);
+        // A door that wears signs must point at drawings that exist.
+        for (const src of g.portal?.emblems ?? []) {
+            if (!existsSync(path.join(web, 'public/media', src))) fail(`esoteric/${g.key}: door emblem ${src} not in public/media`);
+        }
+    }
+    notes.push(`esoteric: ${esoteric.entries.length} in ${esoteric.groups.length} currents`);
+}
+
+// --- the gallery: every image must exist, every card must say what it shows -
+const gallery = await load('gallery');
+if (gallery) {
+    const seen = new Set();
+    for (const g of gallery.images) {
+        const where = `gallery/${g.file}`;
+        if (seen.has(g.file)) fail(`${where}: the same image is used twice`);
+        seen.add(g.file);
+        if (!existsSync(path.join(web, 'public/media', g.file))) {
+            fail(`${where}: no such file in public/media`);
+        }
+        if (!g.alt || wordCount(g.alt) < 5) fail(`${where}: alt text missing or too thin to describe the image`);
+        if (!g.title || !g.caption) fail(`${where}: a card with no title or caption`);
+        if (!g.link?.startsWith('/')) fail(`${where}: link "${g.link}" is not an internal path`);
+        checkContested(where, g);
+    }
+    notes.push(`gallery: ${gallery.images.length} rooms`);
+}
+
+// --- the great tree: genealogy must be chronologically possible -------------
+const tree = await load('tree');
+if (tree) {
+    const ids = new Set();
+    const byId = new Map();
+    for (const n of tree.nodes) {
+        if (ids.has(n.id)) fail(`tree/${n.id}: duplicate id`);
+        ids.add(n.id); byId.set(n.id, n);
+    }
+    const roots = tree.nodes.filter((n) => n.parent == null);
+    if (roots.length !== 1) fail(`tree: expected exactly one root, found ${roots.length}`);
+    for (const n of tree.nodes) {
+        const where = `tree/${n.id}`;
+        if (n.parent != null) {
+            const p = byId.get(n.parent);
+            if (!p) fail(`${where}: parent "${n.parent}" does not exist`);
+            else if (n.from < p.from) fail(`${where}: born ${n.from}, before its parent (${p.from})`);
+            else if (p.to != null && n.from > p.to && p.status !== 'absorbed') {
+                // an absorbed line continues in its heirs; forking after its
+                // drawn end is the chart's stated semantics
+                fail(`${where}: born ${n.from}, after its parent ended (${p.to})`);
+            }
+        }
+        if (n.to != null && n.to < n.from) fail(`${where}: ends (${n.to}) before it begins (${n.from})`);
+        if (!['living', 'extinct', 'absorbed', 'disputed'].includes(n.status)) {
+            fail(`${where}: unknown status "${n.status}"`);
+        }
+        if (n.status === 'living' && n.to != null) fail(`${where}: living but carries an end year`);
+        if (n.status === 'extinct' && n.to == null) fail(`${where}: extinct but never ends`);
+        if (!n.note || wordCount(n.note) < 6) fail(`${where}: the note is too thin to say what parted`);
+        if (n.status === 'disputed' && wordCount(n.note) < 15) {
+            fail(`${where}: a disputed membership needs both views in its note`);
+        }
+        checkContested(where, n);
+    }
+    notes.push(`tree: ${tree.nodes.length} branches`);
+}
+
+// --- the matrix: every position must face every question --------------------
+const matrix = await load('matrix');
+if (matrix) {
+    const qkeys = matrix.questions.map((q) => q.key);
+    const seen = new Set();
+    for (const p of matrix.positions) {
+        const where = `matrix/${p.key}`;
+        if (seen.has(p.key)) fail(`${where}: duplicate key`);
+        seen.add(p.key);
+        for (const qk of qkeys) {
+            const a = p.answers[qk];
+            if (!a || !['yes', 'no', 'q'].includes(a.v)) {
+                fail(`${where}: no answer to "${qk}" — a row that dodges a question is not a position`);
+            } else if (a.v === 'q' && !a.note) {
+                fail(`${where}: answer to "${qk}" is "qualified" with no note saying how`);
+            }
+        }
+        for (const extra of Object.keys(p.answers)) {
+            if (!qkeys.includes(extra)) fail(`${where}: answers unknown question "${extra}"`);
+        }
+        if (!p.holder) fail(`${where}: nobody is recorded as holding it`);
+        checkContested(where, p);
+    }
+    notes.push(`matrix: ${matrix.positions.length} positions × ${qkeys.length} questions`);
+}
+
+// --- the words: script identity is the whole point --------------------------
+const words = await load('words');
+if (words) {
+    const seen = new Set();
+    const GREEK_OK = (cp) => (cp >= 0x0370 && cp <= 0x03ff) || (cp >= 0x1f00 && cp <= 0x1fff)
+        || cp === 0x0020 || cp === 0x2019 || cp === 0x0027 || cp === 0x002d;
+    const LATIN_OK = (cp) => (cp >= 0x0041 && cp <= 0x024f) || cp === 0x0020 || cp === 0x002d;
+    for (const w of words.entries) {
+        const where = `words/${w.slug}`;
+        if (seen.has(w.slug)) fail(`${where}: duplicate slug`);
+        seen.add(w.slug);
+        const ok = w.lang === 'greek' ? GREEK_OK : LATIN_OK;
+        for (const ch of w.native) {
+            const cp = ch.codePointAt(0);
+            if (!ok(cp)) {
+                fail(`${where}: "${w.native}" contains U+${cp.toString(16).toUpperCase().padStart(4, '0')} `
+                    + `"${ch}" — not ${w.lang} script`);
+            }
+        }
+        if (!w.fight || wordCount(w.fight) < 10) fail(`${where}: the fight is not described`);
+        checkContested(where, w);
+    }
+    notes.push(`words: ${words.entries.length}`);
+}
+
+// --- the creeds: the battlefields must be marked ----------------------------
+const creeds = await load('creeds');
+if (creeds) {
+    const seen = new Set();
+    for (const c of creeds.creeds) {
+        const where = `creeds/${c.slug}`;
+        if (seen.has(c.slug)) fail(`${where}: duplicate slug`);
+        seen.add(c.slug);
+        if (!c.clauses?.length) fail(`${where}: a creed with no text`);
+        checkContested(where, c);
+    }
+    const n325 = creeds.creeds.find((c) => /325/.test(c.slug) || /325/.test(c.origin || ''));
+    if (n325 && !n325.clauses.some((cl) => /anathema/i.test(cl.note || '') || /anathema/i.test(cl.text))) {
+        fail('creeds: the original Nicene creed must carry its anathemas — they are half its point');
+    }
+    const n381 = creeds.creeds.find((c) => /381/.test(c.slug) || /381/.test(c.origin || ''));
+    if (n381 && !n381.clauses.some((cl) => cl.variant)) {
+        fail('creeds: the 381 creed must show the filioque variant — the East-West grievance lives in that clause');
+    }
+    notes.push(`creeds: ${creeds.creeds.length}`);
+}
+
+// --- the Rosicrucian page --------------------------------------------------
+// Its own discipline, and a strict one, because a ledger is only worth having
+// if every row is falsifiable: each claim carries a standing drawn from the
+// declared key, and a verdict that says what the record actually shows.
+const rosicrucian = await load('rosicrucian');
+if (rosicrucian) {
+    const keys = new Set((rosicrucian.standings ?? []).map((s) => s.key));
+    if (keys.size < 2) fail('rosicrucian: the ledger needs a declared key of standings');
+    const seen = new Set();
+    for (const m of rosicrucian.manifestos ?? []) {
+        const where = `rosicrucian/${m.slug}`;
+        if (seen.has(m.slug)) fail(`${where}: duplicate slug`);
+        seen.add(m.slug);
+        for (const f of ['title', 'year', 'place', 'printer', 'language', 'says', 'authorship']) {
+            if (!m[f]) fail(`${where}: no ${f}`);
+        }
+        checkContested(where, m);
+    }
+    // The six agreements are quoted primary text, and the hall's rule is that a
+    // quotation says where its wording comes from. On this page the wording is
+    // Vaughan's English of 1652; if the introduction stops saying so, the
+    // quotations have lost their provenance and the section is passing one
+    // translator's choices off as the Fama's own.
+    const rules = rosicrucian.rules ?? [];
+    if (rules.length) {
+        const rIntro = [rosicrucian.rulesIntro ?? []].flat().join(' ');
+        if (!/Vaughan|1652|translat/i.test(rIntro)) {
+            fail('rosicrucian: the six agreements are quoted, and nothing says whose English they are quoted in');
+        }
+        const ns = rules.map((r) => r.n);
+        if (JSON.stringify(ns) !== JSON.stringify(ns.map((_, i) => i + 1))) {
+            fail(`rosicrucian: the agreements are not numbered 1..${rules.length}`);
+        }
+        for (const r of rules) {
+            const where = `rosicrucian/rule ${r.n}`;
+            if (!r.text) fail(`${where}: no text — the article itself is what is being printed`);
+            // The article and the gloss are different kinds of writing and the
+            // page keeps them in different fields for that reason. An article
+            // with no gloss has been printed without being accounted for.
+            if (!r.after || wordCount(r.after) < 15) fail(`${where}: says nothing about what became of it`);
+            checkContested(where, r);
+        }
+    }
+
+    // The furore. The ledger's last row rests on a count of books, and this is
+    // where the books are named. The discipline is the balance: a reception
+    // section carrying only the attacks is a debunk, and one carrying only the
+    // defences is advertising. Both sides have to be on the shelf.
+    const sides = new Set((rosicrucian.sides ?? []).map((x) => x.key));
+    const furore = rosicrucian.furore ?? [];
+    if (furore.length) {
+        if (sides.size < 2) fail('rosicrucian: the furore needs a declared key of sides');
+        for (const [i, b] of furore.entries()) {
+            const where = `rosicrucian/furore[${i}] ${b.title || ''}`.trim();
+            for (const f of ['year', 'author', 'title', 'note']) {
+                if (!b[f]) fail(`${where}: no ${f}`);
+            }
+            if (!sides.has(b.side)) fail(`${where}: side "${b.side}" is not in the declared key`);
+            if (wordCount(b.note) < 15) fail(`${where}: a book is listed without being accounted for`);
+            checkContested(where, b);
+        }
+        const bySide = new Set(furore.map((b) => b.side));
+        if (!bySide.has('for')) fail('rosicrucian: the furore lists no book written in the tradition\u2019s defence — that is a debunk, not a reception');
+        if (!bySide.has('against')) fail('rosicrucian: the furore lists no book written against the tradition — that is advertising, not a reception');
+    }
+
+    // The descent chart. Its force is the empty column, and an empty column has
+    // to be declared: a row may leave the record blank only by marking itself a
+    // gap and saying what the gap is. And a chart that draws seventy years of
+    // silence without saying what follows from it is innuendo, not an argument.
+    const descent = rosicrucian.descent ?? [];
+    let gaps = 0;
+    for (const [i, r] of descent.entries()) {
+        const where = `rosicrucian/descent[${i}] ${r.era || ''}`.trim();
+        if (!r.era) fail(`${where}: no era`);
+        // The section's own rule: the claim is given as its holders make it.
+        if (!r.claimed || wordCount(r.claimed) < 8) fail(`${where}: the claim is not stated as its holders make it`);
+        if (r.gap) gaps += 1;
+        if (!r.documented && !(r.gap && r.note)) {
+            fail(`${where}: the record column is empty and the row does not declare itself a gap and say what the gap is`);
+        }
+        if (r.documented && wordCount(r.documented) < 10) fail(`${where}: the record does not show its working`);
+        checkContested(where, r);
+    }
+    if (gaps && !rosicrucian.descentCoda) {
+        fail('rosicrucian: the descent chart draws a gap in the record and says nothing about what follows from it');
+    }
+
+    // The grades: the one table on the page where the descent is real. The
+    // risk is the opposite of the chart's — that it implies an inheritance for
+    // rungs that have none. A grade with no earlier name must say it was added,
+    // and a grade marked added must not carry an earlier name.
+    const grades = rosicrucian.grades ?? [];
+    const gcols = new Set((rosicrucian.gradeColumns ?? []).map((c) => c.key));
+    if (grades.length) {
+        for (const k of ['gurc', 'sria', 'gd', 'num']) {
+            if (!gcols.has(k)) fail(`rosicrucian: the grades table has no "${k}" column`);
+        }
+        for (const [i, g] of grades.entries()) {
+            const where = `rosicrucian/grades[${i}] ${g.gd || ''}`.trim();
+            if (!g.gd) fail(`${where}: a row with no Golden Dawn grade`);
+            if (!/^\d+=\d+$/.test(g.num || '')) fail(`${where}: "${g.num}" is not a grade number of the form n=m`);
+            const inherited = Boolean(g.gurc || g.sria);
+            if (!inherited && !g.added) fail(`${where}: no earlier name and not marked as an addition — the table would imply a descent it does not have`);
+            if (inherited && g.added) fail(`${where}: marked as an addition but carries an earlier name`);
+        }
+        if (!rosicrucian.gradesCoda) fail('rosicrucian: the grades table says nothing about what it shows');
+    }
+
+    // The historians, asked the tradition's two questions: what did they
+    // argue, and what is left of it.
+    for (const [i, w] of (rosicrucian.scholarship ?? []).entries()) {
+        const where = `rosicrucian/scholarship[${i}] ${w.author || ''}`.trim();
+        for (const f of ['slug', 'year', 'author', 'work', 'argued', 'stands']) {
+            if (!w[f]) fail(`${where}: no ${f}`);
+        }
+        if (w.stands && wordCount(w.stands) < 8) fail(`${where}: says too little about what is left of the argument`);
+        checkContested(where, w);
+    }
+
+    // The signs. Each is a redraw of a named original, and the page's whole
+    // discipline is that a drawing says what it follows: so every sign must
+    // name a dated original, say what the drawing keeps and what is its own,
+    // and point at a drawing that exists.
+    for (const g of rosicrucian.signs ?? []) {
+        const where = `rosicrucian/sign ${g.key || '?'}`;
+        for (const f of ['key', 'title', 'year', 'image', 'alt', 'about', 'drawn', 'source']) {
+            if (!g[f]) fail(`${where}: no ${f}`);
+        }
+        if (g.image && !existsSync(path.join(web, 'public/media', g.image))) fail(`${where}: drawing ${g.image} not in public/media`);
+        if (g.drawn && wordCount(g.drawn) < 15) fail(`${where}: a redrawn sign must say what the drawing follows and what is its own`);
+        if (g.source && !/\b1\d{3}\b/.test(g.source)) fail(`${where}: the source must name a dated original`);
+        if (g.alt && wordCount(g.alt) < 8) fail(`${where}: alt text too thin to describe the drawing`);
+        checkContested(where, g);
+    }
+
+    // The map. 'Documented' is a claim about the record, so a documented place
+    // must have a real location; a place the text does not locate may be drawn
+    // as a region but never pinned (RosicrucianMap does the drawing). Every
+    // stage of the Fama's journey is a claim, and the journey must carry its
+    // note on what the text does and does not locate.
+    const rmap = rosicrucian.map;
+    if (rmap) {
+        const F = { minLon: -11, maxLon: 50, minLat: 17, maxLat: 57 };
+        const keysSeen = new Set();
+        for (const p of [...(rmap.journey ?? []), ...(rmap.places ?? [])]) {
+            const where = `rosicrucian/map ${p.key || '?'}`;
+            if (keysSeen.has(p.key)) fail(`${where}: duplicate key`);
+            keysSeen.add(p.key);
+            for (const f of ['key', 'name', 'year', 'note']) if (!p[f]) fail(`${where}: no ${f}`);
+            if (!['claimed', 'documented'].includes(p.layer)) fail(`${where}: layer "${p.layer}" is neither claimed nor documented`);
+            if (p.layer === 'documented' && !p.located) fail(`${where}: a documented place must have a real location`);
+            if (p.located && !(Number.isFinite(p.lat) && Number.isFinite(p.lon))) fail(`${where}: located but no coordinates`);
+            if (!p.located && (rmap.places ?? []).includes(p)) fail(`${where}: not located, so it may be drawn only as a region on the journey, never pinned as a place`);
+            if (Number.isFinite(p.lat) && (p.lat < F.minLat || p.lat > F.maxLat || p.lon < F.minLon || p.lon > F.maxLon)) {
+                fail(`${where}: ${p.lat}, ${p.lon} is outside the map's frame`);
+            }
+            checkContested(where, p);
+        }
+        if ((rmap.journey ?? []).some((p) => p.layer !== 'claimed')) fail('rosicrucian/map: every stage of the Fama’s journey is a claim');
+        if ((rmap.journey ?? []).length && !rmap.journeyNote) fail('rosicrucian/map: the journey needs its note on what the Fama does and does not locate');
+    }
+
+    // The Fama's own line. The text gives its brothers as initials, so the
+    // initials are the record; anything put to them is a guess and lives in
+    // the note. A quotation must say whose English it is, and so must the rule.
+    const brethren = rosicrucian.brethren ?? [];
+    if (brethren.length) {
+        const seenB = new Set();
+        if (!rosicrucian.brethrenRule?.quote || !rosicrucian.brethrenRule?.translation) {
+            fail('rosicrucian/brethren: the rule of succession must be quoted, with its translation named');
+        }
+        for (const b of brethren) {
+            const where = `rosicrucian/brother ${b.key || '?'}`;
+            if (seenB.has(b.key)) fail(`${where}: duplicate key`);
+            seenB.add(b.key);
+            if (!b.initials) fail(`${where}: no initials — they are all the text gives`);
+            if (!Number.isInteger(b.generation) || b.generation < 0 || b.generation > 3) fail(`${where}: generation must be 0–3`);
+            if (!b.says || wordCount(b.says) < 6) fail(`${where}: does not say what the Fama says of him`);
+            if (b.quote && !b.quoteTranslation) fail(`${where}: a quotation without its translation`);
+            checkContested(where, b);
+        }
+        if (brethren.filter((b) => b.founder).length !== 1) fail('rosicrucian/brethren: the line must have exactly one founder');
+        if (brethren.some((b) => b.founder && b.generation !== 0)) fail('rosicrucian/brethren: the founder stands in generation 0');
+    }
+
+    // The lines. Every body has a founding year, a place and a note; every
+    // link joins two bodies that exist and declares its kind. A documented
+    // link (warrant, members, schism, absorbed) cannot run backwards in time,
+    // a claim must say what is missing, and no documented body may sit inside
+    // the gap the page says is empty.
+    const lines = rosicrucian.lines;
+    if (lines) {
+        const kindKeys = new Set((lines.kinds ?? []).map((k) => k.key));
+        for (const k of ['warrant', 'members', 'schism', 'claimed', 'literary']) {
+            if (!kindKeys.has(k)) fail(`rosicrucian/lines: the key does not explain "${k}"`);
+        }
+        const body = new Map();
+        for (const b of lines.bodies ?? []) {
+            const where = `rosicrucian/lines ${b.key || '?'}`;
+            if (body.has(b.key)) fail(`${where}: duplicate key`);
+            body.set(b.key, b);
+            if (!b.name || !b.founded || !Number.isFinite(b.foundedYear)) fail(`${where}: needs a name, a founding date and a founding year`);
+            if (!b.place) fail(`${where}: no place`);
+            if (!b.note || wordCount(b.note) < 15) fail(`${where}: the note must say what it was and what is documented`);
+            if (!b.source || !/\b1\d{3}\b|\b20\d{2}\b/.test(b.source)) fail(`${where}: the source must cite dated work`);
+            if (!Number.isInteger(b.col) || b.col < 0 || b.col > 5) fail(`${where}: col must be 0–5`);
+            if ((b.short || b.name).length > 24) fail(`${where}: the diagram label is too long (${(b.short || b.name).length} > 24)`);
+            if (lines.gap && !b.claimedOnly && b.foundedYear > lines.gap.from && b.foundedYear < lines.gap.to) {
+                fail(`${where}: founded ${b.foundedYear}, inside the gap the page says is empty — only a body whose existence is merely claimed may stand there`);
+            }
+            checkContested(where, b);
+        }
+        const DOCUMENTED = new Set(['warrant', 'members', 'schism', 'absorbed']);
+        const pairs = new Set();
+        for (const [i, l] of (lines.links ?? []).entries()) {
+            const where = `rosicrucian/lines link ${l.from}→${l.to}`;
+            if (!body.has(l.from) || !body.has(l.to)) { fail(`${where}: joins a body that is not on the chart`); continue; }
+            if (l.from === l.to) fail(`${where}: a body cannot descend from itself`);
+            if (!kindKeys.has(l.kind)) fail(`${where}: kind "${l.kind}" is not in the key`);
+            if (pairs.has(`${l.from}>${l.to}>${l.kind}`)) fail(`${where}: drawn twice`);
+            pairs.add(`${l.from}>${l.to}>${l.kind}`);
+            if (!l.note || wordCount(l.note) < 8) fail(`${where}: a link must give its evidence, or say what is missing`);
+            if (DOCUMENTED.has(l.kind) && body.get(l.to).foundedYear < body.get(l.from).foundedYear) {
+                fail(`${where}: a documented link runs backwards in time`);
+            }
+            if (l.kind === 'claimed' && !/no |not |never|undocumented|unsupported|without|nothing|contradict|cannot|forg/i.test(l.note)) {
+                fail(`${where}: a claimed link must say what the record lacks`);
+            }
+            checkContested(`${where} [${i}]`, l);
+        }
+        for (const b of lines.bodies ?? []) {
+            if (b.family !== 'manifestos' && !(lines.links ?? []).some((l) => l.to === b.key || l.from === b.key)) {
+                fail(`rosicrucian/lines ${b.key}: stands on the chart with no link to anything`);
+            }
+        }
+    }
+
+    // Connected figures. Every link points at someone on the page, carries
+    // a standing, and gives its evidence; a figure page named must exist.
+    const people = rosicrucian.people ?? [];
+    if (people.length) {
+        const circleKeys = new Set((rosicrucian.circles ?? []).map((c) => c.key));
+        const personKeys = new Set();
+        const figureSlugs = new Set((figures?.entries ?? []).map((f) => f.slug));
+        const VERB = new Set(['wrote-with', 'corresponded', 'defended', 'answered', 'attacked', 'printed', 'translated', 'initiated', 'chartered', 'split-from', 'taught', 'read', 'patron', 'succeeded']);
+        for (const p of people) {
+            if (personKeys.has(p.key)) fail(`rosicrucian/person ${p.key}: duplicate key`);
+            personKeys.add(p.key);
+        }
+        for (const p of people) {
+            const where = `rosicrucian/person ${p.key}`;
+            if (!p.name || !p.dates) fail(`${where}: needs a name and dates`);
+            if (!circleKeys.has(p.circle)) fail(`${where}: circle "${p.circle}" is not declared`);
+            if (!p.role || wordCount(p.role) < 10) fail(`${where}: the role must say what part he or she played`);
+            if (p.figureSlug && !figureSlugs.has(p.figureSlug)) fail(`${where}: figure page "${p.figureSlug}" does not exist`);
+            for (const l of p.links ?? []) {
+                if (!personKeys.has(l.to)) fail(`${where}: links to "${l.to}", who is not on the page`);
+                if (l.to === p.key) fail(`${where}: links to himself`);
+                if (!VERB.has(l.kind)) fail(`${where}: link kind "${l.kind}" has no wording`);
+                if (!['documented', 'claimed', 'disputed'].includes(l.standing)) fail(`${where}: link to ${l.to} has no standing`);
+                if (!l.note || wordCount(l.note) < 6) fail(`${where}: link to ${l.to} gives no evidence`);
+            }
+            checkContested(where, p);
+        }
+        for (const c of rosicrucian.circles ?? []) {
+            if (!people.some((p) => p.circle === c.key)) fail(`rosicrucian/circle ${c.key}: declared but empty`);
+        }
+    }
+
+    // How the sign travelled: each passage joins two signs on the page and is
+    // graded on the ledger's own scale.
+    const stationKeys = new Set();
+    for (const s of rosicrucian.signStations ?? []) {
+        if (!s.key || !s.title || !s.year) fail(`rosicrucian/station ${s.key || '?'}: needs a key, a title and a year`);
+        stationKeys.add(s.key);
+    }
+    const signKeys = new Set((rosicrucian.signs ?? []).map((g) => g.key));
+    for (const k of stationKeys) if (signKeys.has(k)) fail(`rosicrucian/station ${k}: is also a sign`);
+    for (const [i, p] of (rosicrucian.signPassages ?? []).entries()) {
+        const where = `rosicrucian/passage[${i}] ${p.from}→${p.to}`;
+        const known = (k) => signKeys.has(k) || stationKeys.has(k);
+        if (!known(p.from) || !known(p.to)) fail(`${where}: joins a point that is neither a sign nor a declared station`);
+        if (!keys.has(p.standing)) fail(`${where}: standing "${p.standing}" is not in the declared key`);
+        if (!p.note || wordCount(p.note) < 12) fail(`${where}: a passage must show its working`);
+        checkContested(where, p);
+    }
+    // A station is a point in the story with no emblem of its own; it earns
+    // its place only by joining the chain to a drawn sign somewhere.
+    for (const k of stationKeys) {
+        if (!(rosicrucian.signPassages ?? []).some((p) => (p.from === k && signKeys.has(p.to)) || (p.to === k && signKeys.has(p.from)))) {
+            fail(`rosicrucian/station ${k}: never joins a drawn sign`);
+        }
+    }
+
+    // The portal emblems (src/data/emblems.js) are original compositions, and
+    // each must say so: the file must exist, and the caption must call it
+    // made for its page, so that no reader takes it for a historical object.
+    const emblemsMod = await import(new URL('../src/data/emblems.js', import.meta.url));
+    for (const [k, e] of Object.entries(emblemsMod.default ?? {})) {
+        if (!e.image || !existsSync(path.join(web, 'public/media', e.image))) fail(`emblems/${k}: image ${e.image} not in public/media`);
+        if (!e.alt || wordCount(e.alt) < 12) fail(`emblems/${k}: alt text too thin to describe the drawing`);
+        if (!/made for (this|the) (page|portal)/i.test(e.caption || '')) fail(`emblems/${k}: the caption must say the emblem was made for this page`);
+    }
+
+    // The emblem is drawn from a letter, as the vault is drawn from a
+    // paragraph, and it has to say so on its face.
+    if (rosicrucian.emblem && !/diagram of a letter|not a copy/i.test(rosicrucian.emblem.caption || '')) {
+        fail('rosicrucian: the emblem must say on its face that it is drawn from a description, not copied from a seal');
+    }
+
+    let sound = 0;
+    for (const [i, row] of (rosicrucian.ledger ?? []).entries()) {
+        const where = `rosicrucian/ledger[${i}]`;
+        if (!row.claim || wordCount(row.claim) < 5) fail(`${where}: the claim is too thin to be checkable`);
+        if (!keys.has(row.standing)) fail(`${where}: standing "${row.standing}" is not in the declared key`);
+        if (!row.verdict || wordCount(row.verdict) < 12) {
+            fail(`${where}: a verdict must show its working, not just rule`);
+        }
+        if (row.standing === 'sound') sound += 1;
+        checkContested(where, row);
+    }
+    // The rule this page exists to keep. A ledger on an esoteric current that
+    // refuses every claim is a debunk wearing a table's clothes; if nothing
+    // the tradition says survives contact with the evidence, that is a sign
+    // the evidence was not looked for.
+    if ((rosicrucian.ledger ?? []).length && sound === 0) {
+        fail('rosicrucian: every ledger row is against the tradition — a table with no sound row is a debunk, not a reckoning');
+    }
+    // The seven days, and the rule that keeps the reading honest. A day may
+    // carry a quotation or not; what it may not do is carry one without saying
+    // where the wording comes from, because on this page the difference between
+    // quotation and summary is the whole discipline.
+    const days = rosicrucian.days ?? [];
+    if (days.length) {
+        const nums = days.map((d) => d.n);
+        if (JSON.stringify(nums) !== JSON.stringify(nums.map((_, i) => i + 1))) {
+            fail(`rosicrucian: the days are not numbered 1..${days.length}`);
+        }
+        for (const d of days) {
+            const where = `rosicrucian/day ${d.n}`;
+            if (!d.title) fail(`${where}: no title`);
+            if (!d.story || wordCount(d.story) < 20) fail(`${where}: the day is not told`);
+            if (!d.work) fail(`${where}: says nothing about what the day is doing`);
+            if (d.quote && !d.quote.note) fail(`${where}: a quotation with no note on where the wording comes from`);
+            if (d.quote && !d.quote.text) fail(`${where}: an empty quotation`);
+            checkContested(where, d);
+        }
+    }
+    // The vault is a diagram of a text and the page has to keep saying so.
+    const vault = rosicrucian.vault;
+    if (vault) {
+        if (vault.sides !== 7) fail('rosicrucian: the Fama gives the vault seven sides');
+        if (!vault.parts?.length) fail('rosicrucian: the vault has no labelled parts');
+        if (!/diagram of a text|not of an excavation|no such vault/i.test(vault.caption || '')) {
+            fail('rosicrucian: the vault figure must say on its face that it diagrams a description — nothing of the kind has been found');
+        }
+        for (const ins of vault.inscriptions ?? []) {
+            if (!ins.latin || !ins.english || !ins.where) fail('rosicrucian: an inscription needs its Latin, a translation and a location');
+        }
+    }
+    for (const c of rosicrucian.chronology ?? []) {
+        if (!c.year || !c.label) fail('rosicrucian: a chronology row needs a year and a label');
+    }
+    notes.push(`rosicrucian: ${(rosicrucian.manifestos ?? []).length} manifestos, ${rules.length} agreements, ${days.length} days (${days.filter((d) => d.quote).length} quoted), ${furore.length} books of the furore, ${(rosicrucian.ledger ?? []).length} ledger rows (${sound} sound), ${descent.length} descent rows (${gaps} gap), ${grades.length} grades (${grades.filter((g) => g.added).length} added), ${(rosicrucian.scholarship ?? []).length} historians, ${(rosicrucian.signs ?? []).length} signs, ${(rosicrucian.map?.places ?? []).length + (rosicrucian.map?.journey ?? []).length} places on the map, ${(rosicrucian.chronology ?? []).length} dated, ${(rosicrucian.brethren ?? []).length} brothers of the Fama, ${(rosicrucian.lines?.bodies ?? []).length} bodies and ${(rosicrucian.lines?.links ?? []).length} links in the lines, ${(rosicrucian.people ?? []).length} people in ${(rosicrucian.circles ?? []).length} circles, ${(rosicrucian.signPassages ?? []).length} passages of the sign`);
+}
+
+// --- report ----------------------------------------------------------------
+const SECTION_DATA = [christologies, branches, councils, canon, figures, symbols, mapsites, timeline,
+    gallery, tree, matrix, words, creeds, esoteric, bibles, rosicrucian];
+const TOTAL = SECTION_DATA.length;
+const present = SECTION_DATA.filter(Boolean).length;
+if (present === 0) {
+    console.log('christianities: scaffolded, awaiting content');
+    process.exit(0);
+}
+if (warnings.length) {
+    console.warn(`christianities: ${warnings.length} warning(s)`);
+    for (const w of warnings.slice(0, 8)) console.warn(`  · ${w}`);
+    if (warnings.length > 8) console.warn(`  · …and ${warnings.length - 8} more`);
+}
+if (errors.length) {
+    console.error(`\nchristianities: ${errors.length} error(s) — build stopped\n`);
+    for (const e of errors) console.error(`  ✗ ${e}`);
+    process.exit(1);
+}
+console.log(`christianities: ${present}/${TOTAL} sections — ${notes.join(' · ')} — validated`);

@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+<title>The arms of Andreae</title>
+<desc>Argent, a saltire gules between four roses gules: on a silver shield a red St Andrew’s cross running to the edges, with a red rose in each of its four angles. The arms of the theologian Jakob Andreae, borne after him by his grandson Johann Valentin Andreae. Tinctures as Siebmacher’s Bürgerliche Wappen, vol. 9, is quoted as giving them for Jakob Andreae; a painted panel from Schloss Sinzig shows the field gold.</desc>
+<defs>
+<linearGradient id="gA" x1="0" y1="0" x2=".7" y2="1"><stop offset="0" stop-color="#f8f5ef"/><stop offset=".6" stop-color="#ebe6dc"/><stop offset="1" stop-color="#d6cfc2"/></linearGradient>
+<linearGradient id="gG" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#c63237"/><stop offset=".5" stop-color="#b0242a"/><stop offset="1" stop-color="#8f1a1f"/></linearGradient>
+<radialGradient id="gR" cx=".42" cy=".38" r=".7"><stop offset="0" stop-color="#cc3a3c"/><stop offset=".65" stop-color="#b0242a"/><stop offset="1" stop-color="#8c181d"/></radialGradient>
+<radialGradient id="gS" cx=".4" cy=".35" r=".8"><stop offset="0" stop-color="#b8282d"/><stop offset="1" stop-color="#8a171c"/></radialGradient>
+<clipPath id="field"><path d="M70 44H330V194A130 166 0 0 1 200 360A130 166 0 0 1 70 194Z"/></clipPath>
+</defs>
+<path d="M70 44H330V194A130 166 0 0 1 200 360A130 166 0 0 1 70 194Z" fill="url(#gA)"/>
+<g clip-path="url(#field)">
+<path d="M200 152.6L444.44 -125.69L483.51 -91.37L234.61 192L483.51 475.37L444.44 509.69L200 231.4L-44.44 509.69L-83.51 475.37L165.39 192L-83.51 -91.37L-44.44 -125.69Z" fill="url(#gG)" stroke="#2a1411" stroke-width="1.8" stroke-linejoin="miter"/>
+</g>
+<g>
+<path d="M185.68 67.49A14.35 14.35 0 1 1 214.32 67.49A14.35 14.35 0 1 1 223.17 94.73A14.35 14.35 0 1 1 200 111.56A14.35 14.35 0 1 1 176.83 94.73A14.35 14.35 0 1 1 185.68 67.49Z" fill="url(#gR)" stroke="#2a1411" stroke-width="1.8" stroke-linejoin="round"/>
+<path d="M192.57 59.37A10.33 10.33 0 0 1 207.43 59.37M224.17 71.53A10.33 10.33 0 0 1 228.76 85.67M222.37 105.34A10.33 10.33 0 0 1 210.34 114.08M189.66 114.08A10.33 10.33 0 0 1 177.63 105.34M171.24 85.67A10.33 10.33 0 0 1 175.83 71.53" fill="none" stroke="#6e1216" stroke-opacity=".85" stroke-width="1.1" stroke-linecap="round"/>
+<path d="M213.85 68.14L206.88 77.73M222.41 94.48L211.13 90.82M200 110.76L200 98.9M177.59 94.48L188.87 90.82M186.15 68.14L193.12 77.73" fill="none" stroke="#5c0e12" stroke-width="1.3" stroke-linecap="round"/>
+<circle cx="200" cy="87.2" r="10.5" fill="url(#gS)" stroke="#2a1411" stroke-width="1.5"/>
+<circle cx="200" cy="87.2" r="5.78" fill="none" stroke="#5c0e12" stroke-width="1"/>
+</g>
+<g>
+<path d="M96.63 172.29A14.35 14.35 0 1 1 125.27 172.29A14.35 14.35 0 1 1 134.12 199.53A14.35 14.35 0 1 1 110.95 216.36A14.35 14.35 0 1 1 87.78 199.53A14.35 14.35 0 1 1 96.63 172.29Z" fill="url(#gR)" stroke="#2a1411" stroke-width="1.8" stroke-linejoin="round"/>
+<path d="M103.52 164.17A10.33 10.33 0 0 1 118.38 164.17M135.12 176.33A10.33 10.33 0 0 1 139.71 190.47M133.32 210.14A10.33 10.33 0 0 1 121.29 218.88M100.61 218.88A10.33 10.33 0 0 1 88.58 210.14M82.19 190.47A10.33 10.33 0 0 1 86.78 176.33" fill="none" stroke="#6e1216" stroke-opacity=".85" stroke-width="1.1" stroke-linecap="round"/>
+<path d="M124.8 172.94L117.83 182.53M133.36 199.28L122.08 195.62M110.95 215.56L110.95 203.7M88.54 199.28L99.82 195.62M97.1 172.94L104.07 182.53" fill="none" stroke="#5c0e12" stroke-width="1.3" stroke-linecap="round"/>
+<circle cx="110.95" cy="192" r="10.5" fill="url(#gS)" stroke="#2a1411" stroke-width="1.5"/>
+<circle cx="110.95" cy="192" r="5.78" fill="none" stroke="#5c0e12" stroke-width="1"/>
+</g>
+<g>
+<path d="M274.73 172.29A14.35 14.35 0 1 1 303.37 172.29A14.35 14.35 0 1 1 312.22 199.53A14.35 14.35 0 1 1 289.05 216.36A14.35 14.35 0 1 1 265.88 199.53A14.35 14.35 0 1 1 274.73 172.29Z" fill="url(#gR)" stroke="#2a1411" stroke-width="1.8" stroke-linejoin="round"/>
+<path d="M281.62 164.17A10.33 10.33 0 0 1 296.48 164.17M313.22 176.33A10.33 10.33 0 0 1 317.81 190.47M311.42 210.14A10.33 10.33 0 0 1 299.39 218.88M278.71 218.88A10.33 10.33 0 0 1 266.68 210.14M260.29 190.47A10.33 10.33 0 0 1 264.88 176.33" fill="none" stroke="#6e1216" stroke-opacity=".85" stroke-width="1.1" stroke-linecap="round"/>
+<path d="M302.9 172.94L295.93 182.53M311.46 199.28L300.18 195.62M289.05 215.56L289.05 203.7M266.64 199.28L277.92 195.62M275.2 172.94L282.17 182.53" fill="none" stroke="#5c0e12" stroke-width="1.3" stroke-linecap="round"/>
+<circle cx="289.05" cy="192" r="10.5" fill="url(#gS)" stroke="#2a1411" stroke-width="1.5"/>
+<circle cx="289.05" cy="192" r="5.78" fill="none" stroke="#5c0e12" stroke-width="1"/>
+</g>
+<g>
+<path d="M185.68 289.14A14.35 14.35 0 1 1 214.32 289.14A14.35 14.35 0 1 1 223.17 316.38A14.35 14.35 0 1 1 200 333.21A14.35 14.35 0 1 1 176.83 316.38A14.35 14.35 0 1 1 185.68 289.14Z" fill="url(#gR)" stroke="#2a1411" stroke-width="1.8" stroke-linejoin="round"/>
+<path d="M192.57 281.02A10.33 10.33 0 0 1 207.43 281.02M224.17 293.18A10.33 10.33 0 0 1 228.76 307.32M222.37 326.99A10.33 10.33 0 0 1 210.34 335.73M189.66 335.73A10.33 10.33 0 0 1 177.63 326.99M171.24 307.32A10.33 10.33 0 0 1 175.83 293.18" fill="none" stroke="#6e1216" stroke-opacity=".85" stroke-width="1.1" stroke-linecap="round"/>
+<path d="M213.85 289.79L206.88 299.38M222.41 316.13L211.13 312.46M200 332.41L200 320.55M177.59 316.13L188.87 312.46M186.15 289.79L193.12 299.38" fill="none" stroke="#5c0e12" stroke-width="1.3" stroke-linecap="round"/>
+<circle cx="200" cy="308.85" r="10.5" fill="url(#gS)" stroke="#2a1411" stroke-width="1.5"/>
+<circle cx="200" cy="308.85" r="5.78" fill="none" stroke="#5c0e12" stroke-width="1"/>
+</g>
+<path d="M70 44H330V194A130 166 0 0 1 200 360A130 166 0 0 1 70 194Z" fill="none" stroke="#1a1210" stroke-width="3" stroke-linejoin="miter"/>
+</svg>

@@ -1,0 +1,29 @@
+/* The glyph kit's proof page (src/pages/magic/MagicKitPage.jsx), a development
+   tool registered only in the dev server: docs/research/magical-scriptorium/glyphkit/sheet.mjs's own layout and
+   colours, so the sheet and the site's renderer can be compared pixel for
+   pixel. Imported by that page alone, so none of it ships with the wing. */
+.mg-kit-page { background: #0d0b0a; min-height: 100vh; }
+.mg-kit-sheet {
+  box-sizing: border-box;
+  min-height: 600px;
+  margin: 0;
+  padding: 24px;
+  background: #0d0b0a;
+  color: #ecd9ae;
+  font: 14px Georgia, serif;
+  line-height: normal;
+  letter-spacing: normal;
+}
+.mg-kit-sheet *, .mg-kit-sheet *::before { box-sizing: content-box; }
+.mg-kit-sheet svg { display: inline; vertical-align: baseline; }
+.mg-kit-sheet h1 { font: 600 22px Georgia, serif; letter-spacing: .06em; margin: 0 0 16px; color: #c9a86a; text-shadow: none; text-wrap: wrap; }
+.mg-kit-grid { display: grid; gap: 14px; }
+.mg-kit-card { border: 1px solid #3a3023; padding: 8px; background: #14110e; }
+.mg-kit-box { background: #0d0b0a; border: 1px solid #2a2219; display: flex; justify-content: center; position: relative; }
+.mg-kit-box::before { content: ""; position: absolute; left: 10%; right: 10%; top: 15%; bottom: 15%; border: 1px dashed #2c251b; }
+.mg-kit-box svg { display: block; }
+.mg-kit-nm { margin-top: 6px; font-size: 13px; }
+.mg-kit-v { color: #c9a86a; margin-left: 4px; }
+.mg-kit-cf { font-size: 11px; letter-spacing: .08em; text-transform: uppercase; }
+.mg-kit-row { margin-top: 22px; color: #ecd9ae; line-height: 1; }
+.mg-kit-lab { color: #8a7650; font-size: 12px; margin: 18px 0 6px; }

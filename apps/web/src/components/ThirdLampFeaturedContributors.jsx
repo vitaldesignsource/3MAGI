@@ -1,0 +1,113 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
+
+const A = '/media';
+
+export const featuredContributorsStrip = [
+    {
+        id: 'frater-iaqv',
+        name: 'Frater I.A.Q.V.',
+        initials: 'I',
+        image: null,
+        imageAlt: 'Placeholder portrait for Frater I.A.Q.V.',
+    },
+    {
+        id: 'ike-baker',
+        name: 'Ike Baker',
+        image: `${A}/author-ike-baker.webp`,
+        imageAlt: 'Portrait of Ike Baker',
+    },
+    {
+        id: 'jaime-paul-lamb',
+        name: 'Jaime Paul Lamb',
+        image: `${A}/author-jaime-paul-lamb.webp`,
+        imageAlt: 'Portrait of Jaime Paul Lamb',
+    },
+    {
+        id: 'daniel-wiseman',
+        name: 'Daniel Wiseman',
+        image: `${A}/author-daniel-wiseman.webp`,
+        imageAlt: 'Portrait of Daniel Wiseman',
+    },
+    {
+        id: 'jake-treyer',
+        name: 'Jacob Trayer',
+        image: '/media/thumb/fac6744621da1f040468be8de464350f.webp',
+        imageAlt: 'Portrait of Jacob Trayer',
+    },
+    {
+        id: 'travis-lawrence',
+        name: 'Travis Lawrence',
+        image: '/media/thumb/53acf5993dfdcc0dcc202bdec0263601.webp',
+        imageAlt: 'Portrait of Travis Lawrence',
+    },
+    {
+        id: 'drew-mackinnon',
+        name: 'Drew MacKinnon',
+        image: '/media/thumb/2c03cdfbff58b77535a6918b14fad3ec.webp',
+        imageAlt: 'Portrait of Drew MacKinnon',
+    },
+    {
+        id: 'james-oliva',
+        name: 'James Oliva',
+        image: '/media/thumb/2afc956520653a1dcfad983538e8b58a.webp',
+        imageAlt: 'Portrait of James Oliva',
+    },
+    {
+        id: 'magick-mike-samu',
+        name: 'Magick Mike Samu',
+        image: '/media/thumb/2f0b44a81c9995fbb977e405695a7447.webp',
+        imageAlt: 'Portrait of Magick Mike Samu',
+    },
+    {
+        id: 'nick-occult-rejects',
+        name: 'Nick — The Occult Rejects',
+        image: '/media/thumb/93445a256182a19431bf9cc09e2ef618.webp',
+        imageAlt: 'Portrait of Nick from The Occult Rejects',
+    },
+    {
+        id: 'editorial-circle',
+        name: 'Editorial Circle',
+        image: `${A}/hermes-portrait.webp`,
+        imageAlt: 'Hermes, editorial emblem of Three Magi Press',
+    },
+];
+
+function ThirdLampFeaturedContributors({ id = 'featured-contributors-title', title = 'Featured Contributors', description = 'Past and present voices gathered around the lamp, with room for new work to enter the circle.' }) {
+    return (
+        <section className="fc-strip" aria-labelledby={id}>
+            <div className="fc-strip-intro">
+                <p className="kicker" id={id}>{title}</p>
+                <p className="fc-strip-desc">{description}</p>
+            </div>
+
+            <div className="fc-strip-scroll-outer">
+            <div className="fc-strip-scroll-wrapper">
+                <div className="fc-strip-people">
+                    {featuredContributorsStrip.map((person) => (
+                        // Each contributor's id matches the anchor on their
+                        // profile in the Authors page, so the link lands on
+                        // the person rather than the top of the list.
+                        <Link
+                            className="fc-person"
+                            key={person.id}
+                            to={`/third-lamp/authors#${person.id}`}
+                            aria-label={`Read about ${person.name}`}
+                        >
+                            {person.image ? (
+                                <img loading="lazy" decoding="async" className="fc-person-photo" src={person.image} alt={person.imageAlt} />
+                            ) : (
+                                <div className="fc-person-initials" aria-hidden="true">{person.initials}</div>
+                            )}
+                            <span className="fc-person-name">{person.name}</span>
+                        </Link>
+                    ))}
+                    <p className="fc-strip-more">&hellip;and new voices.</p>
+                </div>
+            </div>
+            </div>
+        </section>
+    );
+}
+
+export default ThirdLampFeaturedContributors;

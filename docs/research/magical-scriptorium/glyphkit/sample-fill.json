@@ -1,0 +1,19 @@
+{
+ "slug": "kit-sample-fill",
+ "title": "Glyph kit: a sample filled glyph",
+ "about": "A format sample for the kit's { fill } glyphs, drawn by hand for the kit: it is not a letter of any alphabet and is traced from no source. Its cell (sample-fill-cell.png) is a synthetic image rendered from this same outline and softened, made only to show compare.mjs's overlay; it is not a source crop.",
+ "letters": [
+  {
+   "order": 1,
+   "name": "Sample fill (not a letter)",
+   "value": "",
+   "glyph": {
+    "fill": "M 50 23 C 62.2 23 72 32.8 72 45 C 72 53.5 67.6 60.4 61 64 Q 60 75 67 80 L 33 80 Q 40 75 39 64 C 32.4 60.4 28 53.5 28 45 C 28 32.8 37.8 23 50 23 Z M 51 31 C 57.1 31 62 36.8 62 44 C 62 51.2 57.1 57 51 57 C 44.9 57 40 51.2 40 44 C 40 36.8 44.9 31 51 31 Z"
+   },
+   "strokes": "a ring whose bowl runs down into a flared wedge foot, with one counter",
+   "formConfidence": "high",
+   "note": "Format sample only: an outer outline and one counter inside it, drawn evenodd; it uses M, L, C, Q and Z.",
+   "cell": "sample-fill-cell.png"
+  }
+ ]
+}

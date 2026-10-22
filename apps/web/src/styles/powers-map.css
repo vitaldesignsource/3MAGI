@@ -1,0 +1,459 @@
+/* The Powers — the Map door.
+   The Christianities map shares every .ch-map-* class and the reading-room
+   .edu-filter chips, so each rule here is held to `.pw-page`, which only the
+   Powers pages carry. Read top to bottom: the controls, the plate (neatline,
+   coast, places, names), the note docked in the plate, the gazetteer under
+   it, the phone layout, and the motion switch. */
+
+/* --- the controls: three labelled rows -------------------------------- */
+.pw-page .ch-map-controls {
+  gap: 0;
+  margin-bottom: 1.6rem;
+}
+.pw-page .pw-map-ctl {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 0.45rem;
+  justify-items: center;
+  margin-bottom: 0.9rem;
+}
+.pw-page .pw-map-ctl:last-child { margin-bottom: 0; }
+.pw-page .pw-map-ctl .edu-filter-row { margin-bottom: 0; }
+.pw-page .pw-map-ctl-label {
+  font: 0.66rem/1.2 "Cinzel", Georgia, "Times New Roman", serif;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: rgba(209, 173, 104, 0.85);
+}
+/* an era chip names the age over its dates */
+.pw-page .pw-era-row .edu-filter {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.18rem;
+  line-height: 1.25;
+}
+.pw-page .pw-era-name,
+.pw-page .pw-era-dates { display: block; }
+.pw-page .pw-era-dates {
+  font-size: 0.68rem;
+  letter-spacing: 0.06em;
+  color: #c9a86a;
+}
+.pw-page .edu-filter.is-active .pw-era-dates { color: #e2c78e; }
+.pw-page .edu-filter:focus-visible {
+  outline: 2px solid #ecd9ae;
+  outline-offset: 2px;
+}
+/* the way out of the frame is a way, not one more filter */
+.pw-page .edu-filter.ch-map-beyond {
+  border: 0;
+  background: none;
+  color: #d1ad68;
+  text-decoration: underline;
+  text-decoration-color: rgba(209, 173, 104, 0.55);
+  text-underline-offset: 3px;
+}
+.pw-page .edu-filter.ch-map-beyond:hover { color: #ecd9ae; text-decoration-color: #ecd9ae; }
+
+/* text kept for a screen reader, out of the visible line; its box is held
+   inside its own chip or heading, so a strip that pans never lends the page
+   its width */
+.pw-page .pw-era-row .edu-filter,
+.pw-page .pw-gaz-era,
+.pw-page .ch-map-panel h2 { position: relative; }
+.pw-page .pw-sep {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+/* --- the plate --------------------------------------------------------- */
+.pw-page .pw-map-plate {
+  position: relative;
+  max-width: 62rem;
+  margin: 0 auto 1.2rem;
+  scroll-margin-top: 7rem;
+}
+/* an atlas neatline: a gold rule and a hairline outside it */
+.pw-page .pw-map-pan {
+  position: relative;
+  border: 1px solid rgba(209, 173, 104, 0.5);
+  outline: 1px solid rgba(179, 139, 70, 0.22);
+  outline-offset: 4px;
+  box-shadow: 0 30px 60px -30px rgba(0, 0, 0, 0.8);
+}
+.pw-page .ch-map-svg { border: 0; }
+.pw-page .ch-map-graticule { stroke: rgba(179, 139, 70, 0.14); }
+/* a soft engraved water-line under the crisp coast */
+.pw-page .ch-map-coastglow {
+  fill: none;
+  stroke: rgba(209, 173, 104, 0.07);
+  stroke-width: 6;
+  stroke-linejoin: round;
+  vector-effect: non-scaling-stroke;
+  pointer-events: none;
+}
+
+/* the places: a target around each dot; the names lie in a layer above all
+   the dots, where only a placed name's own box takes the pointer */
+.pw-page .ch-map-site {
+  outline: none;
+  scroll-margin-top: 7rem;
+  animation: pw-site-in 320ms ease both;
+}
+.pw-page .ch-map-names .ch-map-name { animation: pw-site-in 320ms ease both; }
+@keyframes pw-site-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+.pw-page .ch-map-hit { fill: transparent; stroke: none; }
+.pw-page .ch-map-name:not(.is-quiet) { cursor: pointer; }
+.pw-page .ch-map-label { pointer-events: none; }
+.pw-page .ch-map-leader {
+  stroke: rgba(209, 173, 104, 0.55);
+  stroke-width: 0.7;
+  vector-effect: non-scaling-stroke;
+  pointer-events: none;
+}
+.pw-page .ch-map-site.is-peek .ch-map-dot { fill: #f4e8c8; }
+.pw-page .ch-map-site:focus-visible .ch-map-dot { stroke: #ecd9ae; stroke-width: 2; }
+.pw-page .ch-map-ring {
+  fill: none;
+  stroke: #ecd9ae;
+  stroke-width: 1;
+  vector-effect: non-scaling-stroke;
+  opacity: 0;
+  pointer-events: none;
+}
+.pw-page .ch-map-site:focus-visible .ch-map-ring { opacity: 1; }
+.pw-page .ch-map-name.is-peek .ch-map-label { fill: #f4e8c8; }
+.pw-page .ch-map-name.is-peek .ch-map-leader { stroke: rgba(236, 217, 174, 0.85); }
+/* a name with no room of its own shows on hover, focus or selection, on a
+   heavier ground so it reads over whatever it crosses */
+.pw-page .ch-map-name.is-quiet .ch-map-label,
+.pw-page .ch-map-top .ch-map-label {
+  fill: #f4e8c8;
+  stroke: rgba(10, 9, 7, 0.95);
+  stroke-width: 4;
+}
+.pw-page .ch-map-name.is-quiet { animation: pw-label-in 150ms ease both; }
+@keyframes pw-label-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* the open place's seal, drawn again over its neighbours */
+.pw-page .ch-map-top { pointer-events: none; }
+.pw-page .ch-map-top .ch-map-dot { fill: #f4e8c8; }
+.pw-page .ch-map-top .ch-map-ring {
+  opacity: 1;
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: pw-ring 1.6s ease-out 1 both;
+}
+@keyframes pw-ring {
+  0% { transform: scale(0.4); opacity: 0; }
+  30% { opacity: 1; }
+  55% { transform: scale(1.3); }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+/* an era chosen: its places glow, the rest of the chart stays as faint points */
+.pw-page .ch-map-ghost { fill: rgba(209, 173, 104, 0.22); pointer-events: none; }
+.pw-page .ch-map-svg.is-era .ch-map-site .ch-map-dot {
+  filter: drop-shadow(0 0 2.5px rgba(236, 217, 174, 0.75));
+}
+
+/* the World frame: the Old World is a box to step into */
+.pw-page .ch-map-oldframe {
+  fill: rgba(209, 173, 104, 0.03);
+  stroke: rgba(209, 173, 104, 0.5);
+  stroke-width: 1;
+  stroke-dasharray: 4 3;
+  vector-effect: non-scaling-stroke;
+  cursor: zoom-in;
+  outline: none;
+  transition: fill 150ms ease;
+}
+.pw-page .ch-map-oldframe:hover { fill: rgba(209, 173, 104, 0.07); }
+.pw-page .ch-map-oldframe:focus-visible { stroke: #ecd9ae; stroke-width: 2; stroke-dasharray: none; }
+.pw-page .ch-map-oldframe-label {
+  fill: rgba(209, 173, 104, 0.9);
+  letter-spacing: 0.12em;
+  paint-order: stroke;
+  stroke: rgba(13, 15, 18, 0.85);
+  stroke-width: 2.5;
+  pointer-events: none;
+}
+
+/* --- the note, docked in the plate ------------------------------------ */
+.pw-page .ch-map-panel {
+  top: auto;
+  bottom: 0.8rem;
+  right: 0.8rem;
+  width: min(20rem, 42%);
+  max-height: calc(100% - 1.6rem);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.55);
+  scroll-margin-top: 7rem;
+  scroll-margin-bottom: 1rem;
+}
+.pw-page .ch-map-panel.is-left { right: auto; left: 0.8rem; }
+.pw-page .ch-map-panel h2 {
+  display: flex;
+  flex-direction: column-reverse;
+  margin: 0.1rem 1.8rem 0.4rem 0;
+  font-size: 1.3rem;
+  line-height: 1.2;
+  color: #f0e9da;
+}
+.pw-page .pw-map-note-dates {
+  display: block;
+  margin-bottom: 0.35rem;
+  font-size: 0.7rem;
+  letter-spacing: 0.18em;
+  color: #c9a86a;
+}
+.pw-page .ch-map-close {
+  top: 0.35rem;
+  right: 0.35rem;
+  width: 2.25rem;
+  height: 2.25rem;
+  display: grid;
+  place-items: center;
+  padding: 0;
+  color: #d1ad68;
+}
+.pw-page .ch-map-close:hover { color: #ecd9ae; }
+.pw-page .ch-map-close:focus-visible {
+  outline: 2px solid #ecd9ae;
+  outline-offset: 2px;
+}
+.pw-page .ch-map-panel .ch-selfname { margin-bottom: 0.7rem; }
+
+/* the dated events: a gold year in the gutter, a diamond on a rule */
+.pw-page .ch-map-events {
+  border-top: 0;
+  margin-top: 0.8rem;
+  background: linear-gradient(rgba(179, 139, 70, 0.35), rgba(179, 139, 70, 0.35)) 5.65rem 0 / 1px 100% no-repeat;
+}
+.pw-page .ch-map-events li {
+  display: grid;
+  grid-template-columns: 5.2rem minmax(0, 1fr);
+  gap: 0 0.9rem;
+  position: relative;
+  border-bottom: 0;
+  padding: 0.5rem 0;
+}
+.pw-page .ch-map-events li::before {
+  content: "";
+  position: absolute;
+  left: calc(5.65rem - 3px);
+  top: 0.85rem;
+  width: 6px;
+  height: 6px;
+  transform: rotate(45deg);
+  border: 1px solid rgba(209, 173, 104, 0.8);
+  background: #110e0b;
+}
+.pw-page .ch-map-eyear {
+  font-family: "Cinzel", Georgia, "Times New Roman", serif;
+  font-size: 0.74rem;
+  letter-spacing: 0.08em;
+  text-align: right;
+  padding-top: 0.15rem;
+  color: #c9a86a;
+}
+.pw-page .ch-map-etitle {
+  display: block;
+  font-family: Georgia, "Times New Roman", serif;
+  letter-spacing: 0.005em;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  color: rgba(240, 233, 218, 0.92);
+}
+.pw-page .ch-map-edesc {
+  display: block;
+  margin-top: 0.15rem;
+  color: rgba(222, 212, 196, 0.7);
+}
+.pw-page .pw-vh-dash { display: none; }
+
+/* --- the gazetteer ------------------------------------------------------ */
+.pw-page .pw-gazetteer {
+  max-width: 62rem;
+  margin: clamp(2.5rem, 5vw, 4rem) auto 0;
+  columns: 3 16rem;
+  column-gap: 2rem;
+}
+.pw-page .pw-gazetteer ul { list-style: none; margin: 0; padding: 0; }
+.pw-page .pw-gaz-era {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.1rem 0.8rem;
+  break-after: avoid;
+  break-inside: avoid;
+  margin: 1.2rem 0 0.4rem;
+  padding: 0 0.6rem 0.35rem;
+  border-bottom: 1px solid rgba(179, 139, 70, 0.25);
+  font: 0.72rem/1.4 "Cinzel", Georgia, "Times New Roman", serif;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #c9a86a;
+}
+.pw-page .pw-gaz-group:first-child .pw-gaz-era { margin-top: 0; }
+.pw-page .pw-gaz-era-name { white-space: nowrap; }
+.pw-page .pw-gaz-era-dates {
+  font-size: 0.66rem;
+  letter-spacing: 0.08em;
+  color: rgba(209, 173, 104, 0.8);
+  white-space: nowrap;
+}
+.pw-page .pw-gazetteer li { break-inside: avoid; }
+.pw-page .pw-gaz-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: baseline;
+  column-gap: 0.8rem;
+  width: 100%;
+  min-height: 44px;
+  padding: 0.4rem 0.6rem;
+  text-align: left;
+  background: none;
+  border: 0;
+  border-left: 1px solid transparent;
+  color: inherit;
+  cursor: pointer;
+  transition: background-color 150ms ease, border-color 150ms ease;
+}
+.pw-page .pw-gaz-row:hover,
+.pw-page .pw-gaz-row.is-active {
+  border-left-color: #d1ad68;
+  background: rgba(179, 139, 70, 0.07);
+}
+.pw-page .pw-gaz-row.is-active .pw-gaz-name { color: #f4e8c8; }
+.pw-page .pw-gaz-row:focus-visible {
+  outline: 2px solid #ecd9ae;
+  outline-offset: 1px;
+}
+.pw-page .pw-gaz-name {
+  font: 0.92rem/1.35 "Cinzel", Georgia, "Times New Roman", serif;
+  color: rgba(240, 233, 218, 0.92);
+}
+.pw-page .pw-gaz-dates {
+  font-size: 0.74rem;
+  letter-spacing: 0.04em;
+  color: #c9a86a;
+  white-space: nowrap;
+}
+.pw-page .pw-gaz-modern {
+  grid-column: 1 / -1;
+  font: italic 0.82rem/1.45 Georgia, "Times New Roman", serif;
+  color: rgba(222, 212, 196, 0.68);
+}
+
+/* the pan cue, shown only where the map pans */
+.pw-page .pw-map-more { display: none; }
+
+/* --- the note under the map on a phone ---------------------------------- */
+@media (max-width: 700px) {
+  /* in the flow, but still the box its close button sits in */
+  .pw-page .ch-map-panel {
+    position: relative;
+    width: auto;
+    max-height: none;
+    margin-top: 1.1rem;
+    box-shadow: none;
+  }
+}
+
+/* --- phone: one-line strips, a map that opens where the gods were named -- */
+@media (max-width: 760px) {
+  .pw-page .pw-map-ctl { justify-items: stretch; gap: 0.3rem; margin-bottom: 0.7rem; }
+  .pw-page .pw-map-ctl-label { padding-left: 0.1rem; }
+  .pw-page .ch-map-controls .pw-chip-strip {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    gap: 0.45rem;
+    max-width: 100%;
+    margin: 0 -4px;
+    padding: 4px 4px 6px;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    scroll-padding-inline: 4px;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(179, 139, 70, 0.4) transparent;
+  }
+  .pw-page .pw-chip-strip[data-fade="end"] {
+    -webkit-mask-image: linear-gradient(90deg, #000 85%, transparent);
+    mask-image: linear-gradient(90deg, #000 85%, transparent);
+  }
+  .pw-page .pw-chip-strip[data-fade="start"] {
+    -webkit-mask-image: linear-gradient(90deg, transparent, #000 15%);
+    mask-image: linear-gradient(90deg, transparent, #000 15%);
+  }
+  .pw-page .pw-chip-strip[data-fade="both"] {
+    -webkit-mask-image: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent);
+    mask-image: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent);
+  }
+  .pw-page .ch-map-controls .edu-filter {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    white-space: nowrap;
+  }
+  .pw-page .pw-era-row .edu-filter { padding: 0.36rem 0.8rem; }
+
+  .pw-page .ch-map-stage {
+    overscroll-behavior-x: contain;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(179, 139, 70, 0.45) transparent;
+  }
+  .ch-page.pw-page .ch-map-svg { min-width: 760px; }
+
+  /* while more of the map lies east (or west), say so at that edge */
+  .pw-page .pw-map-more {
+    display: flex;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 2.4rem;
+    align-items: center;
+    justify-content: center;
+    color: #ecd9ae;
+    font: 1.5rem/1 Georgia, "Times New Roman", serif;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 200ms ease;
+  }
+  .pw-page .pw-map-more.is-right {
+    right: 0;
+    background: linear-gradient(90deg, transparent, rgba(7, 11, 16, 0.92));
+  }
+  .pw-page .pw-map-more.is-left {
+    left: 0;
+    background: linear-gradient(270deg, transparent, rgba(7, 11, 16, 0.92));
+  }
+  .pw-page .pw-map-pan[data-more-right="true"] .pw-map-more.is-right,
+  .pw-page .pw-map-pan[data-more-left="true"] .pw-map-more.is-left { opacity: 1; }
+
+  .pw-page .pw-gaz-row { padding: 0.45rem 0.6rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pw-page .ch-map-site,
+  .pw-page .ch-map-names .ch-map-name,
+  .pw-page .ch-map-top .ch-map-ring { animation: none; }
+  .pw-page .ch-map-dot,
+  .pw-page .ch-map-oldframe,
+  .pw-page .edu-filter,
+  .pw-page .pw-gaz-row,
+  .pw-page .pw-map-more { transition: none; }
+}

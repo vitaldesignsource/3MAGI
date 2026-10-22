@@ -1,0 +1,7 @@
+export default {
+body: [
+            'Among the ruins of Pergamon, archaeologists recovered a bronze disc engraved with concentric rings of letters and symbols — a portable machine for generating oracles, aligning astrology, arithmetic, and chance into a single mechanical rite.',
+            'Unlike the ecstatic oracle of Delphi, the Pergamon disc belongs to a different current entirely: technical divination, in which fate is approached through calculation, correspondence tables, and careful procedure rather than trance.',
+            'This essay situates the bronze oracle within a broader ancient science of hidden signs — astrology, gematria, sortilege — that treated the future not as unknowable, but as encoded.',
+        ],
+};

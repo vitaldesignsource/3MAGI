@@ -1,0 +1,505 @@
+// persian hall extension — numbers and glossed first readings.
+// Arithmetic and era conversions recomputed, citations checked, scripts
+// verified against unicodedata by the content pipeline.
+export default {
+    numbers: {
+        note: 'Persian counts in two systems that share a page and share nothing else. The first is the set of ten figures tabled below — ۰۱۲۳۴۵۶۷۸۹ — which Unicode names EXTENDED ARABIC-INDIC and encodes at U+06F0 to U+06F9. They are not the Arabic-Indic series at U+0660 to U+0669 used in Egypt and the Mashriq: all ten are separate codepoints, and a file that mixes them is mixing characters, not fonts. Seven of the ten happen to be drawn alike; three are not, and the three are four, five and six. Arabic writes ٤ ٥ ٦ where Persian writes ۴ ۵ ۶, and the divergence is complete rather than a matter of style — nothing in the Persian forms can be got at by squinting at the Arabic ones. Two traps are worth naming for a Western eye, and both belong to the Arabic series rather than the Persian: ٥, the Arabic five, is a small ring that reads as a zero, and ٦, the Arabic six, is an upright under a bar that reads as a seven. The Persian forms fall into neither, but a Persian reader meeting a Cairo page will fall into both. Nor is the difference merely visual. Unicode assigns the Arabic-Indic digits the bidirectional class AN, Arabic Number, and the Persian series the class EN, European Number, which is what governs how each behaves when it stands in a line beside Latin script; the same figure, differently classed, will sit differently in mixed text. And the same Persian codepoints are drawn differently again in Urdu typography — the character is identical and only the font decides the shape, which is why a Tehran page and a Lahore page may show what look like different digits for the same number. Within a right-to-left line the figures still run with the most significant digit at the left, exactly as European figures do: a Persian date is read leftward inside a sentence read rightward. Zero is sefr, from the Arabic for \'empty\', the word that travelled west to become both zero and cipher; the count runs yek, do, se, chahār, panj, shesh, haft, hasht, noh, dah, with sad for a hundred and hazār for a thousand. Those names deserve a moment, because they are the plainest evidence this hall can offer for something the script conceals. Persian shares an alphabet with Arabic and a great deal of vocabulary, and it shares no ancestry whatever. Do is duo and dva; se is trēs and trayaḥ; chahār is quattuor; panj is quīnque and Greek pente; shesh is sex; haft is septem; hasht is octō; noh is novem; dah is decem; sad is centum; hazār answers to Sanskrit sahasra. Nine of the ten are transparent cousins of the Latin numerals, and the tenth, yek, is Indo-European too but built differently: it goes back to Old Persian aiva-, a suffixed form *oi-wo- of the same deictic base that gives Latin ūnus through *oi-no-, so that the two words are collateral rather than direct cousins. A language may borrow a script and half a lexicon; it does not borrow how it counts on its fingers. A word on dates, since this hall cites them constantly. Hijri lunar years are converted here by the tabular civil reckoning, whose year opens at 1 Muḥarram; because such a year falls eleven days short of a solar one it usually straddles two Christian years, and where the straddle matters both are given. Solar Hijri years, marked Sh., open at Nowruz about 21 March and are cited by the Christian year in which they begin, so that 1320 Sh. runs from 21 March 1941 to 20 March 1942 and is written 1320 Sh./1941. The second system needs no new signs at all, because the hall\'s own alphabet already carries it. Abjad numerals work in Persian precisely as in Arabic: twenty-eight letters run from 1 to 1,000 in the old Northwest Semitic order, memorised as eight nonsense words — ابجد هوز حطی کلمن سعفص قرشت ثخذ ضظغ. The reckoning is purely additive, without place value and without a zero, and a word\'s value is the sum of its letters however they stand, so that every word carries a number whether or not anyone troubles to add it up. Persian inherits the Mashriqī order and does not use the Maghribī variant, so the two rival totals that trouble Arabic gematria do not arise on this shelf: there is one abjad here, and it gives one answer. Three complications are Persian\'s own. First, the four letters made for Persian sounds — پ, چ, ژ, گ — have no classical value, because the abjad closes with the twenty-eight Arabic letters and was fixed before those four existed. The usual practice among chronogrammatists, though not the only one, is to count each at the value of the Arabic letter it is made from: پ as ب 2, چ as ج 3, ژ as ز 7, گ as ک 20. Tables that give the four values of their own are a later supplement, they do not agree among themselves, and no sum on this shelf depends on one. Second, and more consequential, Persian phonology flattens the Arabic consonant distinctions, so that the sound of a word no longer tells a reader its number. س, ص and ث are exact homophones in Persian speech and carry 60, 90 and 500; ز, ذ, ض and ظ are all plain z and carry 7, 700, 800 and 900; ت and ط are both t at 400 and 9; ح and ه are both h at 8 and 5. An Arabic speaker who hears a word can spell it and count it. A Persian speaker who hears a word may not know which of four z\'s it holds, and a word misspelt is a number changed. This is among the reasons Persian keeps the conservative Arabic orthography of its loanwords long after the pronunciations have merged, and it is why the chronogram, in Persian, is an art of the eye rather than of the ear. Third, the conventions this shelf follows, stated so that every sum can be checked: the Persian ی counts as yā, 10, and the Persian ک as kāf, 20, exactly as their Arabic shapes do; alef with madda آ and alef with hamza أ each count as one alef, 1; final ه counts 5; a letter doubled in the reading by tashdīd is counted once, as written; and the zero-width non-joiner, which Persian orthography requires inside a great many words and which is a character in the file though nothing on the page, counts nothing. Every figure given below has been recomputed letter by letter under those rules.',
+        digits: [
+            {
+                glyph: '۰',
+                value: 0,
+                name: 'Sefr — \'empty\'; the word that became both zero and cipher',
+                unicodeName: 'EXTENDED ARABIC-INDIC DIGIT ZERO',
+            },
+            {
+                glyph: '۱',
+                value: 1,
+                name: 'Yek',
+                unicodeName: 'EXTENDED ARABIC-INDIC DIGIT ONE',
+            },
+            {
+                glyph: '۲',
+                value: 2,
+                name: 'Do — cousin of Latin duo',
+                unicodeName: 'EXTENDED ARABIC-INDIC DIGIT TWO',
+            },
+            {
+                glyph: '۳',
+                value: 3,
+                name: 'Se — cousin of Latin trēs',
+                unicodeName: 'EXTENDED ARABIC-INDIC DIGIT THREE',
+            },
+            {
+                glyph: '۴',
+                value: 4,
+                name: 'Chahār — the first of the three forms that part company with Arabic, which writes ٤',
+                unicodeName: 'EXTENDED ARABIC-INDIC DIGIT FOUR',
+            },
+            {
+                glyph: '۵',
+                value: 5,
+                name: 'Panj — Arabic writes ٥, a ring that a Western eye reads as a zero',
+                unicodeName: 'EXTENDED ARABIC-INDIC DIGIT FIVE',
+            },
+            {
+                glyph: '۶',
+                value: 6,
+                name: 'Shesh — Arabic writes ٦, which a Western eye reads as a seven',
+                unicodeName: 'EXTENDED ARABIC-INDIC DIGIT SIX',
+            },
+            {
+                glyph: '۷',
+                value: 7,
+                name: 'Haft — cousin of Latin septem',
+                unicodeName: 'EXTENDED ARABIC-INDIC DIGIT SEVEN',
+            },
+            {
+                glyph: '۸',
+                value: 8,
+                name: 'Hasht — cousin of Latin octō',
+                unicodeName: 'EXTENDED ARABIC-INDIC DIGIT EIGHT',
+            },
+            {
+                glyph: '۹',
+                value: 9,
+                name: 'Noh — cousin of Latin novem',
+                unicodeName: 'EXTENDED ARABIC-INDIC DIGIT NINE',
+            },
+        ],
+        examples: [
+            {
+                native: 'خاک مصلی',
+                value: 791,
+                note: 'Khāk-e Moṣallā, \'the dust of the Moṣallā\' — the prayer-ground outside Shiraz where Hafez was buried and where his tomb stands still. Worked letter by letter: خ 600 + ا 1 + ک 20 = 621, and م 40 + ص 90 + ل 30 + ی 10 = 170; 621 + 170 = 791, a year of the Hijra. This is the mādda-ye tārīkh of Hafez\'s death, and the most famous chronogram in Persian. The couplet that carries it names its own procedure — چو در خاک مصلی یافت منزل / بجو تاریخش از خاک مصلی, \'since he found his lodging in the dust of Moṣallā, seek his date from the dust of Moṣallā\' — the first hemistich of the preceding bayt being transmitted both as چراغ اهل معنی and as چراغ اهل دانش. It is a chronogram doing everything such a phrase can do: it says where the man lies, it tells the reader to count, and it comes out to a year. What it does not do is settle the year. AH 791 ran from 1 January to 20 December 1389; AH 792 from 21 December 1389 to 9 December 1390. Most of the tradition, including the preface to the Dīvān itself, gives 792; Moḥammad Qazvīnī judged the 791 reading an adjustment made to agree with the chronogram rather than the other way about; Dawlatshāh Samarqandī\'s 794 is later still and generally set aside. The arithmetic is exact and decides nothing.',
+            },
+            {
+                native: 'بسم الله الرحمن الرحیم',
+                value: 786,
+                note: 'The basmala, and the one abjad sum a great many readers meet in daily life. Word by word: بسم 102 (ب 2 + س 60 + م 40), الله 66 (ا 1 + ل 30 + ل 30 + ه 5), الرحمن 329, الرحیم 289 — together 786. The convention of writing the three figures ۷۸۶ in place of the words belongs above all to South Asia, where they stand at the head of letters, ledgers, lorry-tailboards and shop signs where the paper may not be treated with respect; it reached Persian-writing usage chiefly through Urdu and is far less common in Iran than the figure\'s fame suggests. The practice is one of usage and has no basis in Qurʾān or ḥadīth. Two observations belong to this hall rather than to the Arabic one. The phrase is Arabic but is written here in Persian orthography, with the Persian ی in الرحیم rather than the Arabic ي, and the total is unaffected, since the letter counts 10 in either shape. And الرحمن is counted with a single ر though the reading doubles it: the abjad counts letters as written, never as sounded — which in Persian, where the ear has lost so many of the distinctions the eye keeps, is the only workable rule.',
+            },
+            {
+                native: 'علی',
+                value: 110,
+                note: 'ʿAlī: ع 70 + ل 30 + ی 10. The shortest and best-known sum in Persian letter-lore, and the reason the figure 110 appears where the name might have stood — on banners, in tilework, in the numbering of a book\'s divisions, in the design of a seal. The number is simply what the name makes; everything built upon it belongs to the history of ʿelm-e ḥorūf, the science of letters, and not to arithmetic, and this hall reports the sum without endorsing the inferences drawn from it.',
+            },
+            {
+                native: 'نور الانوار',
+                value: 545,
+                note: 'Nūr al-Anwār, the Light of Lights: نور 256 (ن 50 + و 6 + ر 200) and الانوار 289 (ا 1 + ل 30 + ا 1 + ن 50 + و 6 + ا 1 + ر 200), together 545. The phrase is Sohravardī\'s name for the first principle of his Illuminationist metaphysics, and it stands here as a sum rather than among the readings below for a reason worth stating plainly. The Ḥekmat al-Eshrāq, where the doctrine is set out, is written in Arabic; Sohravardī\'s Persian works are symbolic recitals — Ṣafīr-e Sīmorgh, the Chant of the Simorgh, and ʿAql-e Sorkh, the Red Intellect — which narrate rather than invoke. No short Persian invocation of the Light of Lights offers itself with a text secure enough to gloss word by word, and this shelf would rather say so than supply one. The arithmetic above is given as arithmetic: no tradition of counting this particular phrase is being claimed for it.',
+            },
+            {
+                native: 'خدا',
+                value: 605,
+                note: 'Khodā, the Persian word for God, which is neither Allāh nor a borrowing: خ 600 + د 4 + ا 1. It descends from Middle Persian xwadāy, \'lord, master\'; most derive that from an Old Iranian compound *xwa-tāwya-, \'self-powerful\', though a derivation from *xwa-dāta-, \'self-created\', has also been proposed and the question is not closed. Its longer form خداوند, khodāvand, comes to 665 — and khodāvand is the word by which Ferdowsi names God in the opening line of the Shahnameh, the first of the readings below: a Persian name of God, in a Persian metre, at the head of the Persian epic, three and a half centuries after the conquest.',
+            },
+        ],
+        special: 'The Persian art of the abjad is the chronogram — ماده تاریخ, mādda-ye tārīkh, \'the matter of the date\'. A chronogram is a word or a phrase whose letters sum to the year of an event and which also says something apt, or witty, or consoling, about that event; the constraint is double, and the pleasure of the form lies in meeting both at once. The reader is told where to begin counting, because a phrase gives no sign of itself: the cue is a verb or noun of dating — بجو تاریخش از, \'seek its date from\', or گفتم تاریخ, or simply the word تاریخ — and what follows the cue is what is to be added. Chronograms are cut over the doorways of Safavid and Mughal buildings, written into colophons at the end of manuscripts, carved on gravestones, and set at the close of a qeṭʿe composed on a death or an accession. Whole anthologies of them were compiled, and in Mughal India the making of them became a competitive courtly accomplishment, a chronogram produced on the spot being the mark of a quick poet. There are refinements. A chronogram may be complete, with every letter counted; or it may instruct the reader to operate upon it — to add a unit, to drop a letter the line itself names, or to count only the dotted letters of a phrase and leave the undotted aside, or the reverse. Where such an instruction is present it is part of the poem, and a reader who takes the words at face value gets the wrong century. Two weaknesses in the form are worth stating, because both bear directly on how the sums in this hall should be read. The first is evidential. A chronogram is made to fit. It is composed after the fact, by someone who already knows the answer and is choosing words to reach it, which means that a chronogram testifies to what its author believed or wished and is not an independent witness to anything. Hafez is the standard illustration: خاک مصلی sums exactly to 791, the couplet carrying it is quoted wherever his death is discussed, and yet most of the tradition gives 792 and Qazvīnī thought the 791 reading had been arranged to agree with the chronogram. The arithmetic is not in doubt; it simply is not evidence of the kind it looks like. The second weakness is orthographic, and it is the one that concerns a scriptorium. A chronogram is only as stable as its spelling. Write moṣallā as مصلا, with a final alef, as Persian sometimes does, instead of مصلی with the final yā, and 170 becomes 161 — the yā counts 10 where the alef counts 1 — and the year falls by nine, from 791 to 782. An ezāfe written or left unwritten, an archaic spelling modernised by a scribe, a manuscript form normalised by a printer, a hamza silently dropped — any of these can break a sum that was exact when it was first cut into stone. Which is why chronograms must be read in the orthography in which they were set down, and why an editor who tidies the spelling of a dated line may quietly destroy the date.',
+    },
+    readings: [
+        {
+            title: 'The First Line of the Shahnameh',
+            source: 'Ferdowsī, Shāhnāma, line 1, opening the section headed آغاز کتاب, \'The Beginning of the Book\'; the poem was completed in its second recension in AH 400, a year running from 26 August 1009 to 15 August 1010 and conventionally cited as 400/1010. Text as in the critical edition of Djalal Khaleghi-Motlagh, The Shahnameh (Bibliotheca Persica, New York, 1988–2008), and as printed by Ganjoor.',
+            words: [
+                {
+                    native: 'به',
+                    translit: 'be',
+                    gloss: 'in, by',
+                },
+                {
+                    native: 'نام',
+                    translit: 'nām-e',
+                    gloss: 'the name of',
+                },
+                {
+                    native: 'خداوند',
+                    translit: 'khodāvand-e',
+                    gloss: 'the Lord of',
+                },
+                {
+                    native: 'جان',
+                    translit: 'jān',
+                    gloss: 'soul, life',
+                },
+                {
+                    native: 'و',
+                    translit: 'o',
+                    gloss: 'and',
+                },
+                {
+                    native: 'خرد',
+                    translit: 'kherad',
+                    gloss: 'wisdom, mind',
+                },
+                {
+                    native: 'کزین',
+                    translit: 'k-az-īn',
+                    gloss: 'than this (= ke az īn)',
+                },
+                {
+                    native: 'برتر',
+                    translit: 'bartar',
+                    gloss: 'higher',
+                },
+                {
+                    native: 'اندیشه',
+                    translit: 'andīshe',
+                    gloss: 'thought',
+                },
+                {
+                    native: 'برنگذرد',
+                    translit: 'bar-nagzarad',
+                    gloss: 'does not pass',
+                },
+            ],
+            translation: 'In the name of the Lord of soul and of wisdom, higher than whom thought does not pass.',
+            note: 'Some fifty thousand couplets of pre-Islamic Iranian kingship open on a name of God, and the name is a Persian one. Khodāvand is not Allāh: it is the native word, from Middle Persian xwadāy, and the pair it governs — jān o kherad, soul and wisdom, life and mind — sets the terms of everything that follows, since a few lines later comes the section headed in praise of kherad itself. The metre is motaqāreb, faʿūlon faʿūlon faʿūlon faʿal, the galloping four-foot line in which the whole poem is written and which Persian ever afterwards reserved for epic. Kazīn in the second hemistich is a contraction of ke az īn, \'than this\', the sort of elision verse makes freely and prose does not; bar-nagzarad puts the negative na- inside the compound verb, between the preverb bar- and the stem, which is where Persian always puts it. The sentiment is apophatic and the grammar enacts it — thought is the subject of the second hemistich, and the only thing predicated of it is what it fails to do.',
+            grid: null,
+        },
+        {
+            title: 'The Reed at the Head of the Masnavi',
+            source: 'Rūmī, Masnavī-ye Maʿnavī, Book I, bayt 1 — the two hemistichs given here are the whole of the first couplet. Text as printed by R. A. Nicholson, The Mathnawí of Jalálu\'ddín Rúmí (E. J. W. Gibb Memorial Series, London, 1925–40), which rests on the oldest witnesses, foremost among them the Konya manuscript dated 677/1278: five years after the poet\'s death, Rumi having died on 5 Jumādā II 672 / 17 December 1273.',
+            words: [
+                {
+                    native: 'بشنو',
+                    translit: 'beshnow',
+                    gloss: 'hear!',
+                },
+                {
+                    native: 'این',
+                    translit: 'īn',
+                    gloss: 'this',
+                },
+                {
+                    native: 'نی',
+                    translit: 'ney',
+                    gloss: 'reed, reed-flute',
+                },
+                {
+                    native: 'چون',
+                    translit: 'chūn',
+                    gloss: 'how',
+                },
+                {
+                    native: 'شکایت',
+                    translit: 'shekāyat',
+                    gloss: 'complaint',
+                },
+                {
+                    native: 'می‌کند',
+                    translit: 'mī-konad',
+                    gloss: 'it makes',
+                },
+                {
+                    native: 'از',
+                    translit: 'az',
+                    gloss: 'of, from',
+                },
+                {
+                    native: 'جدایی‌ها',
+                    translit: 'jodāyī-hā',
+                    gloss: 'separations',
+                },
+                {
+                    native: 'حکایت',
+                    translit: 'ḥekāyat',
+                    gloss: 'tale, telling',
+                },
+                {
+                    native: 'می‌کند',
+                    translit: 'mī-konad',
+                    gloss: 'it makes',
+                },
+            ],
+            translation: 'Hear this reed, how it makes complaint; of separations it tells the tale.',
+            note: 'The first eighteen couplets of the Masnavi are known as the Ney-nāma, the Book of the Reed, and tradition holds that Rumi set them down himself before Ḥosām al-Dīn began taking the rest by dictation. The ney is the reed flute: cut from the reed-bed, hollowed out, and made to sing only by another\'s breath — a figure the couplet declines to explain, because the twenty-five thousand couplets that follow are the explanation. Two matters belong to a scriptorium. The first hemistich is one of the celebrated textual cruxes of Persian literature. Nicholson printed بشنو این نی چون شکایت می‌کند, \'hear this reed, how it complains\', on the authority of the oldest witnesses; a great many editions, and very nearly every Iranian memory, give instead بشنو از نی چون حکایت می‌کند, \'hear from the reed how it tells a tale\'. What the variant does is exchange شکایت and حکایت between the two hemistichs: on Nicholson\'s text the reed complains first and narrates second, on the common text it narrates first and complains second. The two words rhyme and differ by a single letter, ح for ش, which is how such an exchange takes hold in transmission and why no amount of reciting will settle it. Second, می‌کند contains a character that is not a letter. Between می, the marker of the durative, and کند, \'it makes\', stands the zero-width non-joiner, U+200C, which prevents the two elements from fusing into a single joined form while keeping them one word. Persian orthography needs it constantly — جدایی‌ها in the second hemistich carries one too, before the plural ها — and it is invisible on the page and indispensable in the file.',
+            grid: null,
+        },
+        {
+            title: 'Hafez Opens in Arabic',
+            source: 'Ḥāfeẓ, Dīvān, ghazal 1, opening bayt, in the edition of Moḥammad Qazvīnī and Qāsem Ghanī (Tehran, 1320 Sh./1941), where it likewise stands first. Given here without the ḥarakāt that vocalised editions supply.',
+            words: [
+                {
+                    native: 'الا',
+                    translit: 'alā',
+                    gloss: 'come now, lo',
+                },
+                {
+                    native: 'یا',
+                    translit: 'yā',
+                    gloss: 'O',
+                },
+                {
+                    native: 'ایها',
+                    translit: 'ayyuhā',
+                    gloss: 'you there (vocative)',
+                },
+                {
+                    native: 'الساقی',
+                    translit: 'al-sāqī',
+                    gloss: 'the cupbearer',
+                },
+                {
+                    native: 'ادر',
+                    translit: 'adir',
+                    gloss: 'send round!',
+                },
+                {
+                    native: 'کأسا',
+                    translit: 'kaʾsan',
+                    gloss: 'a cup',
+                },
+                {
+                    native: 'و',
+                    translit: 'wa',
+                    gloss: 'and',
+                },
+                {
+                    native: 'ناولها',
+                    translit: 'nāwilhā',
+                    gloss: 'pass it here',
+                },
+                {
+                    native: 'که',
+                    translit: 'ke',
+                    gloss: 'for',
+                },
+                {
+                    native: 'عشق',
+                    translit: 'ʿeshq',
+                    gloss: 'love',
+                },
+                {
+                    native: 'آسان',
+                    translit: 'āsān',
+                    gloss: 'easy',
+                },
+                {
+                    native: 'نمود',
+                    translit: 'nemūd',
+                    gloss: 'appeared, seemed',
+                },
+                {
+                    native: 'اول',
+                    translit: 'avval',
+                    gloss: 'at first',
+                },
+                {
+                    native: 'ولی',
+                    translit: 'valī',
+                    gloss: 'but',
+                },
+                {
+                    native: 'افتاد',
+                    translit: 'oftād',
+                    gloss: 'there fell',
+                },
+                {
+                    native: 'مشکل‌ها',
+                    translit: 'moshkel-hā',
+                    gloss: 'difficulties',
+                },
+            ],
+            translation: 'Come, cupbearer, send the cup round and pass it here — for love seemed easy at first, but then the difficulties fell.',
+            note: 'The most famous opening in Persian poetry is not in Persian. The first hemistich is Arabic from end to end, correct in its case-endings and in both imperatives, and only at ke, the first word of the second hemistich, does the poem change language. A verse mixing two tongues is called molammaʿ, \'dappled\' or \'piebald\', and Hafez chose to begin his Dīvān with one. A tradition repeated for centuries makes the Arabic line a quotation from Yazīd b. Moʿāviya, the Umayyad caliph held responsible for Karbala — which would make the borrowing pointed to the edge of scandal. The ascription is old, it is often repeated, and it has never been established; a good many scholars reject it outright, and this hall records it as a tradition and not as a fact. For the scriptorium the interest is orthographic. The Arabic is written in Persian letters: الساقی and ولی take the Persian ی, U+06CC, not the Arabic ي, and کأسا takes the Persian ک, U+06A9, not ك. None of this touches the abjad, since the Persian forms count as yā 10 and kāf 20 exactly as their Arabic shapes do, and a Persian reciter gives the whole hemistich Persian consonant values, so that the Arabic is heard through a Persian mouth. Vocalised editions print کأساً with the tanwīn, the doubled fatḥa marking the Arabic accusative — a sign no Persian word ever carries, and one of the few places where a Persian page must write Arabic grammar outright. Adir and nāwil are both imperatives addressed to the sāqī, and the -hā of nāwilhā is a feminine pronoun agreeing with kaʾs, cup, which is feminine in Arabic and has no gender whatever once the poem crosses into Persian.',
+            grid: null,
+        },
+        {
+            title: 'The Opening of the Rose-Garden of Mystery',
+            source: 'Maḥmūd Shabestarī, Golshan-e Rāz, first couplet of the dībācha (بخش ۱ – دیباچه); composed at Tabriz in 717/1317 in answer to a set of questions sent in verse from Herat by Amīr Ḥosaynī. Edited and translated by E. H. Whinfield as Gulshan i Rāz: The Mystic Rose Garden (London, 1880).',
+            words: [
+                {
+                    native: 'به',
+                    translit: 'be',
+                    gloss: 'in',
+                },
+                {
+                    native: 'نام',
+                    translit: 'nām-e',
+                    gloss: 'the name of',
+                },
+                {
+                    native: 'آن',
+                    translit: 'ān',
+                    gloss: 'that one',
+                },
+                {
+                    native: 'که',
+                    translit: 'ke',
+                    gloss: 'who',
+                },
+                {
+                    native: 'جان',
+                    translit: 'jān',
+                    gloss: 'the soul',
+                },
+                {
+                    native: 'را',
+                    translit: 'rā',
+                    gloss: '(object marker)',
+                },
+                {
+                    native: 'فکرت',
+                    translit: 'fekrat',
+                    gloss: 'thought',
+                },
+                {
+                    native: 'آموخت',
+                    translit: 'āmūkht',
+                    gloss: 'taught',
+                },
+                {
+                    native: 'چراغ',
+                    translit: 'cherāgh-e',
+                    gloss: 'the lamp of',
+                },
+                {
+                    native: 'دل',
+                    translit: 'del',
+                    gloss: 'the heart',
+                },
+                {
+                    native: 'به',
+                    translit: 'be',
+                    gloss: 'with',
+                },
+                {
+                    native: 'نور',
+                    translit: 'nūr-e',
+                    gloss: 'the light of',
+                },
+                {
+                    native: 'جان',
+                    translit: 'jān',
+                    gloss: 'the soul',
+                },
+                {
+                    native: 'برافروخت',
+                    translit: 'bar-afrūkht',
+                    gloss: 'kindled',
+                },
+            ],
+            translation: 'In the name of Him who taught the soul to think, and kindled the lamp of the heart with the light of the soul.',
+            note: 'Shabestari begins where Ferdowsi begins, be nām, \'in the name of\', and the borrowed cadence is the point: a thousand couplets of Sufi metaphysics announce themselves in the opening formula of the national epic. What follows the formula is not a name but a relative clause — of the One who taught the soul thought — so that God is identified by an act of teaching rather than by an attribute, and what is taught is fekrat, discursive thought, the very faculty the poem will spend its length marking the limits of. The second hemistich is the one this magazine\'s readers will notice: cherāgh-e del, the lamp of the heart, kindled not of itself but be nūr-e jān, by the light of the soul — a lamp that is a receiver before it is a source. Two couplets on, the same preface says that the Creator brought forth the two worlds ز کاف و نون, \'from kāf and nūn\', the two letters of the Qurʾānic imperative kon, \'Be\' — a letter-mystical turn made in passing, and a reminder that in this literature a doctrine of creation and a fact about spelling are not kept in separate rooms. The Golshan-e Rāz is short, roughly a thousand couplets, and has been read chiefly through commentary; the great one is the Mafātīḥ al-Eʿjāz of Shams al-Dīn Lāhījī, composed in 877/1472–73.',
+            grid: null,
+        },
+        {
+            title: 'The Doxology of the Conference of the Birds',
+            source: 'ʿAṭṭār, Manṭeq al-Ṭayr, opening couplet, in the section headed فی التوحید باری تعالی جل و علا, \'On the unity of the Creator, exalted and glorified\'; the poem runs to some four and a half thousand couplets. Text as in the edition of Moḥammad-Reżā Shafīʿī-Kadkanī (Tehran, 1383 Sh./2004) and as printed by Ganjoor.',
+            words: [
+                {
+                    native: 'آفرین',
+                    translit: 'āfarīn-e',
+                    gloss: 'praise to',
+                },
+                {
+                    native: 'جان‌آفرین',
+                    translit: 'jān-āfarīn-e',
+                    gloss: 'the soul-creating',
+                },
+                {
+                    native: 'پاک',
+                    translit: 'pāk',
+                    gloss: 'pure (one)',
+                },
+                {
+                    native: 'را',
+                    translit: 'rā',
+                    gloss: '(object marker)',
+                },
+                {
+                    native: 'آن',
+                    translit: 'ān',
+                    gloss: 'that one',
+                },
+                {
+                    native: 'که',
+                    translit: 'ke',
+                    gloss: 'who',
+                },
+                {
+                    native: 'جان',
+                    translit: 'jān',
+                    gloss: 'soul',
+                },
+                {
+                    native: 'بخشید',
+                    translit: 'bakhshīd',
+                    gloss: 'bestowed',
+                },
+                {
+                    native: 'و',
+                    translit: 'o',
+                    gloss: 'and',
+                },
+                {
+                    native: 'ایمان',
+                    translit: 'īmān',
+                    gloss: 'faith',
+                },
+                {
+                    native: 'خاک',
+                    translit: 'khāk',
+                    gloss: 'dust',
+                },
+                {
+                    native: 'را',
+                    translit: 'rā',
+                    gloss: 'upon (object marker)',
+                },
+            ],
+            translation: 'Praise to the pure Creator of the soul — to Him who bestowed soul, and faith, upon dust.',
+            note: 'The first word does double duty and the second says so out loud. Āfarīn is \'praise\'; āfarīdan is \'to create\'; jān-āfarīn is \'soul-creating\'. Attar sets praise and creation in the same syllables and lets the reader hear that to praise is to answer. Khāk, dust, is what receives both gifts, and the pairing of jān with īmān — soul and faith, the given nature and the given assent — is the poem\'s whole argument in miniature: the birds are dust that has been granted a soul and must now be granted something further. On the writing, Persian orthography sets a zero-width non-joiner inside جان‌آفرین, keeping the two elements a single compound while stopping the nūn of jān from joining forward into the alef; editions differ as to whether they print the compound so, with a plain space, or solid. And the poem\'s title-creature is the great orthographic pun of Persian literature, worth naming here although it is not resolved until near the end: سیمرغ, sīmorgh, is the mythical bird; سی مرغ, sī morgh, written with a space, is \'thirty birds\'. The letters are identical and only the division differs, so that when thirty birds survive the journey and arrive to look upon the Simorgh, what they discover is a reading of the letters that was available from the first page. Attar died at Nishapur about 618/1221, by a persistent tradition in the Mongol sack of the city that spring, though neither the date nor the story is secure and a later death has also been argued.',
+            grid: null,
+        },
+        {
+            title: 'Nezami Opens with the Basmala',
+            source: 'Neẓāmī Ganjavī, Makhzan al-Asrār, opening couplet of بخش ۱ – آغاز سخن, \'The Beginning of Speech\'; the first poem of the Khamsa, some 2,260 couplets, dedicated to Fakhr al-Dīn Bahrāmshāh and composed about 570/1174–75, the date usually given. Text as printed by Ganjoor.',
+            words: [
+                {
+                    native: 'بسم‌الله',
+                    translit: 'bismillāh',
+                    gloss: 'in the name of God',
+                },
+                {
+                    native: 'الرحمن',
+                    translit: 'al-raḥmān',
+                    gloss: 'the All-Merciful',
+                },
+                {
+                    native: 'الرحیم',
+                    translit: 'al-raḥīm',
+                    gloss: 'the Ever-Merciful',
+                },
+                {
+                    native: 'هست',
+                    translit: 'hast',
+                    gloss: 'is',
+                },
+                {
+                    native: 'کلید',
+                    translit: 'kelīd-e',
+                    gloss: 'the key of',
+                },
+                {
+                    native: 'در',
+                    translit: 'dar-e',
+                    gloss: 'the door of',
+                },
+                {
+                    native: 'گنج',
+                    translit: 'ganj-e',
+                    gloss: 'the treasury of',
+                },
+                {
+                    native: 'حکیم',
+                    translit: 'ḥakīm',
+                    gloss: 'the Wise',
+                },
+            ],
+            translation: '\'In the name of God, the All-Merciful, the Ever-Merciful\' — is the key of the door of the treasury of the Wise.',
+            note: 'Makhzan al-Asrār is written in sarīʿ — mofteʿelon mofteʿelon fāʿelon, which runs long-short-short-long twice over and then long-short-long, eleven positions in all. The interest of the opening is that its first hemistich does not fit that measure. The Arabic basmala gives nine syllables, of which only one is short, where the metre wants eleven positions with three shorts set inside them; beside a line of the same poem that does scan — ای همه هستی ز تو پیدا شده, ey hame hastī ze to peydā shode, which fills the pattern exactly — the mismatch is not a matter of licence but of kind. The formula stands at the head of the Khamsa unmetred, and the metre of the poem begins with the second hemistich. That hemistich then declares what the first one is: kelīd-e dar-e ganj-e ḥakīm, the key of the door of the treasury of the Wise — three ezāfes in succession, the unstressed linking -e that binds Persian nouns to one another and that the script does not write at all, so that a reader must supply from the sense what the page withholds. Ganj, treasure, is also the poet\'s own city, Ganja, and Persian criticism has never been able to resist the echo. For this hall the couplet is a bridge: the formula it opens with is the same phrase whose abjad sum, 786, stands in the reckoning above, and it is written here in Persian orthography — بسم‌الله set as a single word with a zero-width non-joiner between بسم and الله, and الرحیم taking the Persian ی.',
+            grid: null,
+        },
+    ],
+    correspondences: null,
+};

@@ -1,0 +1,434 @@
+{
+  "key": "galdrastafir",
+  "title": "Galdrastafir: the Icelandic magical staves",
+  "otherNames": [
+    "Icelandic magical staves",
+    "galdrastafur (singular: 'magic stave')",
+    "staves (stafir); some are called 'helms' (hjálmar)",
+    "glímustafir (the wrestling staves, a sub-group)"
+  ],
+  "family": "Not an alphabet. Early modern Icelandic sign-magic: single drawn figures with a named purpose, written in manuscript 'black-art books' (galdrakver, galdraskræður) from about 1600 to the 19th century. They have no sound values. Some contain runes or rune-like strokes. They belong with the charaktêres and the Solomonic seals, not with the runic alphabets.",
+  "summary": "Galdrastafir are named magical figures ('staves') that Icelandic manuscripts tell the user to carve, draw or carry for a stated purpose. The aims include protection, victory, finding one's way, winning at wrestling and catching thieves. The oldest substantial collection usually cited is the Galdrabók, written by several hands between the late 16th and the mid-17th century and edited by Natan Lindqvist in 1921. The best-known staves today, the vegvísir and the eight-armed ægishjálmur, come from 19th-century manuscripts such as the Huld manuscript (Lbs 143 8vo). No stave is attested from the Viking Age.",
+  "firstAttestation": {
+    "work": "Galdrabók: the oldest substantial collection of Icelandic magical staves usually cited",
+    "author": "Anonymous. Several successive scribes. They are reported (after Lindqvist, as summarised by Flowers) as three Icelandic hands and a fourth, later one that may be Danish. Verify against Lindqvist 1921.",
+    "date": "Late 16th to mid-17th century. The two datings disagree. Lindqvist's 1921 edition is titled 'from the 1500s' (från 1500-talet). Later accounts (Flowers 1989; the English Wikipedia summary) put the compilation at about 1600 and after, continuing into the 17th century.",
+    "place": "Iceland. The last additions may have been made in Denmark. The manuscript is now in Stockholm. Its repository is reported as the library of the Royal Swedish Academy of Letters, History and Antiquities (Vitterhetsakademien). This was not verified, and no shelfmark is given here.",
+    "locator": "Natan Lindqvist, En isländsk svartkonstbok från 1500-talet (Uppsala, 1921). The text is divided into 47 numbered items, and Flowers's English translation (1989) keeps the numbering. Item numbers for individual staves are NOT given here, because they could not be checked.",
+    "notes": "'First' here means the first substantial book of staves, not the first magical sign in Iceland. Two things should be checked. (1) Earlier signs may survive in late-medieval Icelandic charm and medical books, for example AM 434 a 12mo (c. 1500, ed. Kristian Kålund, 1907); the compiler has not confirmed which signs it holds. (2) Staves and 'rune' leaves are evidence in the witch trials from 1625. Each well-known stave also has its own first attestation, and for the vegvísir it is the 19th-century Huld manuscript (see letters)."
+  },
+  "transmission": [
+    {
+      "date": "c. 1270 (manuscript); the poems are older",
+      "work": "Codex Regius of the Poetic Edda (GKS 2365 4to): Fáfnismál, stanzas 16–17; also the prose of Reginsmál",
+      "author": "Anonymous",
+      "what": "Supplies the NAME, not the sign. The dragon Fáfnir says he wore the ægishjálmr, the 'helm of terror', over the sons of men while he lay on his treasure. Here it is an object or a terror the dragon wears. No figure is drawn. The early modern stave borrows the name."
+    },
+    {
+      "date": "c. 1220–1240 (composition); 13th–14th-century manuscripts",
+      "work": "Snorri Sturluson, Edda: Skáldskaparmál (the otter's-ransom story); also Völsunga saga (Fáfnir episode)",
+      "author": "Snorri Sturluson (Edda); anonymous (Völsunga saga)",
+      "what": "Retells how Fáfnir put on the helm called ægishjálmr after killing his father Hreiðmarr. Snorri's text, in paraphrase, says that all living things that see it are afraid. Sigurðr later takes it from the hoard. This is still a helmet in a story, not a drawn stave. Chapter numbers differ between editions; cite Faulkes 1998 for Skáldskaparmál and Finch 1965 for Völsunga saga."
+    },
+    {
+      "date": "c. 1500 (to verify)",
+      "work": "AM 434 a 12mo, an Icelandic medical and charm book (ed. Kålund, Den islandske lægebog, 1907)",
+      "author": "Anonymous",
+      "what": "To check, not to assert. It is a possible late-medieval witness to charms with signs before the Galdrabók. The compiler has not confirmed that it contains staves of the later type."
+    },
+    {
+      "date": "late 16th – mid-17th century",
+      "work": "Galdrabók (Stockholm)",
+      "author": "Several anonymous scribes",
+      "what": "The oldest substantial collection: 47 items of spells, many with staves or runes and spoken formulas. The formulas call on Christ, the Trinity and saints alongside Óðinn, Þórr and other Norse gods, and also on devils. It shows the stave as a working tool with a stated use."
+    },
+    {
+      "date": "1625 – c. 1683/1685",
+      "work": "Icelandic witch-trial records (the 'burning age', brennuöld)",
+      "author": "Alþingi and district courts; documents edited and studied by Ólína Þorvarðardóttir (2000) and others",
+      "what": "Owning staves, rune leaves and black-art books served as evidence. The first burning is reported as Jón Rögnvaldsson in Svarfaðardalur, 1625, after leaves with runes or characters were found. Figures for the whole period are usually given as about two dozen burnings, almost all of men. Sources give different figures and end dates (1683 or 1685); verify."
+    },
+    {
+      "date": "1656 (burning); narrative written c. 1658–1659",
+      "work": "Jón Magnússon, Píslarsaga ('Passion story')",
+      "author": "Rev. Jón Magnússon of Eyri in Skutulsfjörður",
+      "what": "A first-person account by a priest who believed staves and spells caused his sufferings. It led to the burning of a father and son, both named Jón Jónsson, at Kirkjuból in Skutulsfjörður in 1656. It is the fullest contemporary picture of how staves were believed to work against a victim."
+    },
+    {
+      "date": "17th century (route not verified)",
+      "work": "Galdrabók",
+      "author": "—",
+      "what": "The book leaves Iceland and reaches Swedish collections. Accounts link this to 17th-century Swedish collecting of Icelandic manuscripts; the precise route is not verified here."
+    },
+    {
+      "date": "1847 or 1860 (the sources disagree)",
+      "work": "The Huld manuscript, Lbs 143 8vo (National and University Library of Iceland, Reykjavík)",
+      "author": "Compiled by Geir Vigfússon (of Akureyri, as usually reported)",
+      "what": "A 19th-century collection of staves with captions that copies older material. It is the first known attestation of the vegvísir, with its name and use, and it gives forms of the ægishjálmur. The date is given as 1847 in the brief and some catalogue-based accounts, and as 1860 in the English Wikipedia article 'Vegvísir' (from the compiler's memory). Check the handrit.is record."
+    },
+    {
+      "date": "19th century (to verify)",
+      "work": "Lbs 2413 8vo (National and University Library of Iceland)",
+      "author": "Not established here",
+      "what": "Named in the brief as a source for staves. The compiler cannot state its date, scribe or contents from a checked record. Do not attach any particular stave to it until its handrit.is entry or a printed edition has been checked."
+    },
+    {
+      "date": "1862–1864",
+      "work": "Íslenzkar þjóðsögur og æfintýri (Leipzig, 2 vols)",
+      "author": "Jón Árnason (collector)",
+      "what": "The folk tales of sorcerers (galdramenn), the tilberi and its butter, and the powers of staves and black-art books. It provides the folklore setting in which many staves are later explained."
+    },
+    {
+      "date": "1940–1943 (posthumous; Ólafur died in 1903)",
+      "work": "Galdur og galdramál á Íslandi (Reykjavík: Sögufélag, Sögurit 20)",
+      "author": "Ólafur Davíðsson",
+      "what": "The great Icelandic-language survey of magic and sorcery cases. It reproduces and describes many staves from manuscripts with their uses, and later popular books draw on it."
+    },
+    {
+      "date": "1921",
+      "work": "En isländsk svartkonstbok från 1500-talet (Uppsala)",
+      "author": "Natan Lindqvist (ed. and Swedish trans.)",
+      "what": "The critical edition of the Galdrabók, with facsimile-based reproduction of the staves and the item numbering later used by Flowers."
+    },
+    {
+      "date": "1989; later revised editions",
+      "work": "The Galdrabók: An Icelandic Grimoire (York Beach, ME: Samuel Weiser); revised as The Galdrabók: An Icelandic Book of Magic (Rûna-Raven, 2nd ed. 2005; later reissues — verify)",
+      "author": "Stephen E. Flowers (ed. and English trans.)",
+      "what": "The standard English translation of the Galdrabók. It follows Lindqvist's text and numbering and adds staves from other Icelandic manuscripts, among them the Huld material. This makes the staves widely known in English."
+    },
+    {
+      "date": "1992",
+      "work": "Galdrar á Íslandi: Íslensk galdrabók (Reykjavík: Almenna bókafélagið)",
+      "author": "Matthías Viðar Sæmundsson (ed.)",
+      "what": "An Icelandic edition and study that gathers the Galdrabók and other Icelandic magical texts and staves (bibliographic details to verify)."
+    },
+    {
+      "date": "2000 onward",
+      "work": "Strandagaldur: the Museum of Icelandic Sorcery and Witchcraft, Hólmavík; Ólína Þorvarðardóttir, Brennuöldin (2000)",
+      "author": "Strandagaldur (Magnús Rafnsson and others); Ólína Þorvarðardóttir",
+      "what": "Displays and booklets that present the staves to a wide public, and a scholarly study of the trial documents and their folklore. Many images now circulating online derive from the museum's drawings rather than from fresh tracings of the manuscripts."
+    },
+    {
+      "date": "late 20th – 21st century",
+      "work": "Popular reception (tattoos, jewellery, souvenirs, games, modern heathen imagery)",
+      "author": "—",
+      "what": "The vegvísir and the ægishjálmur become popular emblems and are often mislabelled as 'Viking' symbols or a 'Viking compass'. Many commercial designs are new and have no manuscript source."
+    }
+  ],
+  "claims": [
+    {
+      "claim": "The galdrastafir are Viking-Age or ancient Norse symbols.",
+      "standing": "legend",
+      "evidence": "No stave of the later manuscript type is known from runic inscriptions or Viking-Age objects. They are attested from the Galdrabók (late 16th–17th century) onward. The vegvísir first appears in the 19th-century Huld manuscript.",
+      "sources": [
+        "Lindqvist 1921",
+        "Flowers 1989",
+        "Mitchell 2011 (for the medieval background)"
+      ]
+    },
+    {
+      "claim": "The vegvísir is a 'Viking compass' or 'runic compass'.",
+      "standing": "legend",
+      "evidence": "This is a modern label. The Huld caption makes it a stave to carry so as not to lose one's way in storms and bad weather. It has no navigational use and no Viking-Age attestation.",
+      "sources": [
+        "Huld manuscript, Lbs 143 8vo",
+        "Flowers 1989"
+      ]
+    },
+    {
+      "claim": "The vegvísir appears in the Galdrabók.",
+      "standing": "disputed",
+      "evidence": "The claim is often repeated online. The compiler knows of no vegvísir among Lindqvist's 47 items; its first known attestation is the Huld manuscript. Verify against Lindqvist 1921 before stating the negative on the page.",
+      "sources": [
+        "Lindqvist 1921",
+        "Flowers 1989"
+      ]
+    },
+    {
+      "claim": "The Huld manuscript (Lbs 143 8vo) was compiled by Geir Vigfússon in 1847.",
+      "standing": "disputed",
+      "evidence": "The attribution to Geir Vigfússon is consistent across the accounts the compiler knows. The date is not: 1847 (the brief; some catalogue-based accounts) against 1860 (English Wikipedia, 'Vegvísir', recalled). Give both until the handrit.is record is checked.",
+      "sources": [
+        "handrit.is catalogue record for Lbs 143 8vo (to consult)",
+        "English Wikipedia, 'Vegvísir' (tertiary)"
+      ]
+    },
+    {
+      "claim": "The Galdrabók dates from the 16th century.",
+      "standing": "disputed",
+      "evidence": "Lindqvist's title says 'from the 1500s'. Later accounts date the work of its several hands to about 1600 and into the mid-17th century. Report both.",
+      "sources": [
+        "Lindqvist 1921",
+        "Flowers 1989"
+      ]
+    },
+    {
+      "claim": "The ægishjálmur stave is the 'helm of terror' that Fáfnir wears in the Edda.",
+      "standing": "disputed",
+      "evidence": "The NAME is documented in Fáfnismál 16–17, the prose of Reginsmál, Snorri's Skáldskaparmál and Völsunga saga, where the ægishjálmr is a helm or a terror that the dragon wears. No figure is drawn or described there. The drawn stave is early modern. Whether the stave preserves an older idea, such as a sign drawn on the brow, or simply borrows a famous name is a matter of interpretation.",
+      "sources": [
+        "Neckel–Kuhn, Edda (5th ed. 1983)",
+        "Faulkes, Skáldskaparmál (1998)",
+        "Cleasby–Vigfússon 1874, s.v. ægis-hjálmr"
+      ]
+    },
+    {
+      "claim": "The 'ægis-' of ægishjálmur refers to the sea-giant Ægir.",
+      "standing": "disputed",
+      "evidence": "The standard dictionaries connect it with ægir/agi, 'terror, awe', hence 'helm of terror' or 'helm of awe'. The link with the sea-giant is a popular confusion of two words that sound alike.",
+      "sources": [
+        "Cleasby–Vigfússon 1874, s.v. ægis-hjálmr (to verify wording)"
+      ]
+    },
+    {
+      "claim": "Staves were used as evidence in the Icelandic witch trials of 1625 to the 1680s.",
+      "standing": "documented",
+      "evidence": "The trial records and the Píslarsaga name staves, rune leaves and black-art books as evidence. The first burning, of Jón Rögnvaldsson, is reported for 1625. The executions are given as about two dozen, almost all of men; the exact figures differ between sources.",
+      "sources": [
+        "Ólína Þorvarðardóttir 2000",
+        "Ólafur Davíðsson 1940–43",
+        "Jón Magnússon, Píslarsaga"
+      ]
+    },
+    {
+      "claim": "Galdrastafir developed out of bind-runes.",
+      "standing": "disputed",
+      "evidence": "Some writers (notably Flowers) stress runic elements and bind-rune construction. Others stress continental learned magic: Solomonic seals, the characters of the grimoires, and Christian and Latin charm formulas reaching Iceland through Danish and German books. The staves themselves mix runes, Latin letters and non-letter strokes. No single origin is shown.",
+      "sources": [
+        "Flowers 1989",
+        "Mitchell 2011",
+        "Christopher Alan Smith, Icelandic Magic (2015/2016, verify)"
+      ]
+    },
+    {
+      "claim": "Each stave named in the manuscripts has one fixed shape.",
+      "standing": "disputed",
+      "evidence": "The same name (ægishjálmur, þjófastafur, hulinhjálmur) is given to different figures in different manuscripts, and several manuscripts give more than one ægishjálmur. The modern 'standard' shapes are selections, often redrawn and tidied.",
+      "sources": [
+        "Ólafur Davíðsson 1940–43",
+        "Flowers 1989"
+      ]
+    }
+  ],
+  "letters": [
+    {
+      "order": 1,
+      "name": "Ægishjálmur ('helm of awe', 'helm of terror')",
+      "value": "Purpose, not a letter: protection against enemies and their anger, and to cause fear in those one meets. One widely quoted instruction says to make it in lead, press it between the eyebrows and speak a formula (see quotations); which manuscript gives this is to be verified.",
+      "translit": "ægishjálmur (Old Norse ægishjálmr)",
+      "numeric": null,
+      "form": "The name covers many figures. Manuscripts give four-armed and eight-armed versions, with different arm-ends. What follows is the eight-armed form that modern reproductions treat as standard. It is NOT a tracing of a named manuscript page. (1) A small circle at the centre, about one-eighth of the figure's diameter. Some versions use a dot or leave the centre open where the arms meet. (2) Eight equal straight arms run out from the rim of the circle at 45° intervals: up, down, left, right and the four diagonals. (3) All eight arms are alike, so the figure has eightfold symmetry. Each arm ends in a three-pronged fork like a trident (Ψ). The middle prong continues the arm in a straight line. The two side prongs rise from the ends of a short crossbar set at right angles to the arm and run parallel to the middle prong, outward, to about the same tip line. The fork's width is about one-quarter to one-third of the arm's length. (4) Many renderings also cross each shaft with one or two short bars at right angles, between the central circle and the fork. The number varies between reproductions. (5) No ring-ends in the standard form. All strokes are of even weight.",
+      "formConfidence": "medium",
+      "note": "The general scheme is secure: eight identical trident-ended arms around a centre. The number and place of the crossbars, and whether the side prongs bend or have end-serifs, should be taken from one named reproduction, preferably of Lbs 143 8vo or the Galdrabók. That source should then be stated under the drawing. The name comes from Fáfnir's helm in the Edda; the stave is early modern."
+    },
+    {
+      "order": 2,
+      "name": "Vegvísir ('way-shower', 'signpost')",
+      "value": "Purpose, not a letter: according to the Huld caption, whoever carries it will not lose their way in snowstorms or bad weather, even when the way is unknown.",
+      "translit": "vegvísir",
+      "numeric": null,
+      "form": "Overall plan: (1) a small central circle; (2) eight straight arms running out from it at 45° intervals, like the ægishjálmur; (3) unlike the ægishjálmur, each of the eight arms ends differently, so the figure has NO rotational symmetry. The arm-ends are drawn from a small repertoire: three-pronged forks (trident ends), two-pronged forks, short crossbars across the shaft, and small ring-ends (circles) at the tips of some prongs or shafts. The compiler cannot reliably say, arm by arm, which end sits on which arm in Lbs 143 8vo. DO NOT DRAW IT FROM THIS DESCRIPTION. Trace it from the manuscript image (handrit.is, if digitised) or a named printed reproduction (Flowers; Ólafur Davíðsson). Many modern designs enclose the figure in a ring, often with runes around it. The compiler believes the Huld figure has no such ring; verify.",
+      "formConfidence": "low",
+      "note": "First known attestation: the Huld manuscript, Lbs 143 8vo (1847 or 1860, the sources disagree). A possible second manuscript witness is a 'galdrakver' that the compiler recalls, without confidence, as Lbs 4627 8vo; this is to check, not to assert. Its fame is modern: tattoos, jewellery, souvenirs, 'Viking' merchandise."
+    },
+    {
+      "order": 3,
+      "name": "Gapaldur",
+      "value": "Purpose, not a letter: victory in glíma (Icelandic wrestling). It is used as a pair with Ginfaxi, one stave in each shoe. In the version the compiler recalls, Gapaldur goes under the heel of the right shoe and Ginfaxi under the toes of the left. Other versions may swap the feet; verify.",
+      "translit": "gapaldur (meaning of the name obscure)",
+      "numeric": null,
+      "form": "Not reliably known to the compiler. No description is given, so that a wrong drawing is not presented as the manuscript's. Trace it from the source reproduction (Flowers; Ólafur Davíðsson; the Strandagaldur drawings, naming them as the source of the drawing). Record the manuscript shelfmark the reproduction cites.",
+      "formConfidence": "low",
+      "note": "One of the 'glímustafir' (wrestling staves). The manuscript source is to be identified; the brief's mention of Lbs 2413 8vo has not been confirmed for this stave."
+    },
+    {
+      "order": 4,
+      "name": "Ginfaxi",
+      "value": "Purpose, not a letter: victory in glíma, used with Gapaldur, in the other shoe (under the toes of the left shoe in the version the compiler recalls; verify).",
+      "translit": "ginfaxi (meaning of the name obscure)",
+      "numeric": null,
+      "form": "Not reliably known to the compiler. No description is given. Trace it from the same reproduction used for Gapaldur so that the pair matches.",
+      "formConfidence": "low",
+      "note": "Shown as a pair with Gapaldur. The manuscript source is to be identified."
+    },
+    {
+      "order": 5,
+      "name": "Þjófastafur ('thief-stave')",
+      "value": "Purpose, not a letter: to reveal a thief, or to force a thief to return what was stolen. The procedure differs from manuscript to manuscript and is not given here.",
+      "translit": "þjófastafur",
+      "numeric": null,
+      "form": "Not one form. The name is given to several different staves in different manuscripts. No description is given. Choose one manuscript version, trace it, and caption it with that shelfmark.",
+      "formConfidence": "low",
+      "note": "Thief-detection spells are also among the continental charm genres. The shared aim does not prove borrowing."
+    },
+    {
+      "order": 6,
+      "name": "Smjörhnútur ('butter-knot')",
+      "value": "Purpose, not a letter: a test for 'tilberi butter'. In the folklore, butter made from milk stolen by a tilberi, a creature a woman makes and sends to suck neighbours' ewes, falls apart when this sign (or a cross) is marked on it.",
+      "translit": "smjörhnútur",
+      "numeric": null,
+      "form": "Not reliably known to the compiler. No description is given. Trace it from a named reproduction.",
+      "formConfidence": "low",
+      "note": "Optional for the page. The tilberi lore is in Jón Árnason's collection (1862–64); the sign's manuscript source is to be identified."
+    },
+    {
+      "order": 7,
+      "name": "Hulinhjálmur / Huliðshjálmur ('helm of concealment')",
+      "value": "Purpose, not a letter: invisibility. Several different figures carry the name.",
+      "translit": "hulinhjálmur, huliðshjálmur (Old Norse hulinshjálmr)",
+      "numeric": null,
+      "form": "Not one form, and not reliably known to the compiler. No description is given. Trace a named manuscript version.",
+      "formConfidence": "low",
+      "note": "Optional for the page. Like the ægishjálmur, its name is older than any drawn stave: the 'helm of concealment' appears in Old Norse literature (verify passages)."
+    }
+  ],
+  "lettersSource": "These are staves, not letters: each entry is one named figure the page will show. 'value' holds the stated purpose, 'translit' the name and its gloss, and numeric is always null. No form was traced from a manuscript image for this brief, because images could not be downloaded and no search was possible. The ægishjálmur description follows the eight-armed form standard in modern reproductions (medium confidence). The vegvísir gives only the overall plan (low). The others are left blank on purpose (low). Before drawing, trace each stave from ONE named source: preferably the manuscript (Lbs 143 8vo for the vegvísir and the Huld ægishjálmur; the Galdrabók facsimile in Lindqvist 1921 for Galdrabók staves), otherwise Flowers 1989 or Ólafur Davíðsson 1940–43. Print that source under the drawing.",
+  "uses": [
+    {
+      "use": "A stated aim for each stave",
+      "evidence": "The manuscripts give each stave a purpose: protection, victory over enemies or in lawsuits, love, sleep, healing, fishing and trading luck, protecting livestock, catching thieves, turning away ghosts, wrestling. Smith's study is organised around these 'aims'. The list is a general one; item-by-item attributions are to be verified in Lindqvist and Flowers."
+    },
+    {
+      "use": "Material and method",
+      "evidence": "The instructions say to carve the stave on wood, draw it on calfskin or paper (sometimes in blood), cast or press it in lead, or carry it on the body or in a shoe, often with a spoken formula. Examples: the ægishjálmur pressed between the brows; the wrestling staves in the shoes; the vegvísir carried."
+    },
+    {
+      "use": "Formulas that mix traditions",
+      "evidence": "The Galdrabók's spoken formulas call on Christ, the Trinity and saints together with Óðinn, Þórr and other Norse gods, and also on devils. This is reported for the Galdrabók by Lindqvist and Flowers and is often cited as its most striking feature."
+    },
+    {
+      "use": "Evidence of sorcery at law",
+      "evidence": "In the witch trials of 1625 to the 1680s, owning staves or black-art books was evidence against the accused (Ólína Þorvarðardóttir 2000; Píslarsaga, 1656 case)."
+    },
+    {
+      "use": "Modern reception",
+      "evidence": "Since the late 20th century the staves have been used as emblems: tattoos, jewellery, Icelandic souvenirs, museum displays (Strandagaldur, from 2000), games and modern heathen imagery. Many designs sold as galdrastafir have no manuscript source."
+    }
+  ],
+  "quotations": [
+    {
+      "text": "Beri maður staf þennan á sér villist maður ekki í hríðum né vondu veðri, þó ókunnugur sé.",
+      "translation": "Original (caption of the vegvísir) as widely reproduced; spelling normalised. The wording is from the compiler's memory and must be checked against the manuscript. Compiler's own paraphrase: 'If one carries this stave, one will not lose one's way in snowstorms or bad weather, even when the way is unknown.'",
+      "source": "Huld manuscript, Lbs 143 8vo (Geir Vigfússon; 1847 or 1860), caption to the vegvísir; leaf or page not verified"
+    },
+    {
+      "text": "Ægishjálm er ég ber / milli brúna mér",
+      "translation": "Original (modern Icelandic spelling) as quoted in English accounts of the ægishjálmur. Compiler's own paraphrase: 'I bear the helm of awe between my brows.' It is said to be spoken while pressing a lead ægishjálmur onto the forehead.",
+      "source": "An early modern Icelandic manuscript instruction for the ægishjálmur, reported by Flowers 1989 and later writers. Which manuscript, and where in it, is NOT verified (it may be the Galdrabók or a later collection)."
+    },
+    {
+      "text": "Ægishjálm bar ek / of alda sonum, / meðan ek of menjum lák",
+      "translation": "Original Old Norse (Fáfnir speaking), in the compiler's normalised spelling. Neckel–Kuhn print it in their own orthography. Compiler's own paraphrase: 'I wore the helm of terror over the sons of men while I lay upon the treasures.'",
+      "source": "Fáfnismál, stanza 16, lines 1–3; Codex Regius (GKS 2365 4to), ed. Neckel–Kuhn 1983. Stanza numbering to verify against the edition used."
+    }
+  ],
+  "links": [
+    {
+      "to": "runes",
+      "relation": "Overlap and contrast. Staves sometimes include runes or rune-like strokes, and Icelandic magical manuscripts often also copy rune rows and cipher alphabets (villuletur, málrúnir). The staves themselves are not runes, have no sound values and are not Viking Age."
+    },
+    {
+      "to": "charakteres",
+      "relation": "Like the charaktêres, these are signs that stand for no sounds, drawn for a named magical aim. Some writers suggest descent through the continental grimoires; it is not shown."
+    },
+    {
+      "to": "planetary-seals",
+      "relation": "Continental parallel: Solomonic and planetary seals and characters circulated in Danish and Norwegian 'black books' (svartebøker) and their sources. Their influence on Icelandic staves is argued, not demonstrated stave by stave."
+    },
+    {
+      "to": "latin",
+      "relation": "The Galdrabók mixes Icelandic with Latin and garbled Latin or divine-name formulas, a sign of contact with continental learned charms. Check the specific items before quoting."
+    }
+  ],
+  "cautions": [
+    "No web search was possible for this item: the run's shared search budget (200 calls) was used up before it started. Everything here rests on the compiler's background knowledge of the named works, not on a page or manuscript image consulted for this brief. Check every date, shelfmark, edition, item number, chapter, stanza and quotation wording against the named source before publication.",
+    "Do not draw the vegvísir, Gapaldur, Ginfaxi, Þjófastafur, Smjörhnútur or Hulinhjálmur from this file. Their forms were not available to the compiler with enough certainty. Trace each from one named source and print the source under the drawing. Even the ægishjálmur description is a generic modern form, not a manuscript tracing.",
+    "Dates in dispute: the Huld manuscript, 1847 against 1860; the Galdrabók, '1500s' (Lindqvist's title) against c. 1600 to the mid-17th century. Give both until the sources are checked.",
+    "Do not call any stave Viking Age or 'ancient'. Report 'Viking compass' and similar labels only as modern labels, with a date range.",
+    "Name traps: Geir Vigfússon (compiler of Huld) is not Guðbrandur Vigfússon (1827–1889, the lexicographer of Cleasby–Vigfússon). The Huld manuscript (Lbs 143 8vo) is not the folklore periodical Huld (Reykjavík, 1890s, recalled; verify). The ægis- of ægishjálmur is not the sea-giant Ægir.",
+    "One name does not mean one shape. Ægishjálmur, þjófastafur and hulinhjálmur are each given to several different figures. Caption every drawing with the manuscript or edition it follows.",
+    "Much of what circulates online, including many 'galdrastafir' sold on jewellery and shown on souvenir sites, is redrawn, simplified or newly invented. Accept a stave only with a manuscript shelfmark or a scholarly edition behind it.",
+    "Stephen E. Flowers is a trained runologist (PhD) and also, under the name Edred Thorsson, a founder of a living esoteric order (the Rune-Gild). Cite his editions for the text. Do not reproduce the emblems or texts of living organisations, including modern heathen bodies that use the staves.",
+    "The witch trials concern real people who were executed. Report them from the records, without sensationalism, and do not present the staves as effective or as fraudulent.",
+    "To the compiler's knowledge, the vegvísir and the ægishjálmur are not catalogued as hate symbols. Even so, keep them in their manuscript context and do not set them beside the runes that are (see the runes item's cautions)."
+  ],
+  "sources": [
+    {
+      "citation": "Natan Lindqvist (ed. and trans.), En isländsk svartkonstbok från 1500-talet, Uppsala: Appelberg, 1921. The edition of the Galdrabók; publisher's name recalled, verify.",
+      "url": ""
+    },
+    {
+      "citation": "Stephen E. Flowers (ed. and trans.), The Galdrabók: An Icelandic Grimoire, York Beach, ME: Samuel Weiser, 1989; 2nd ed. as The Galdrabók: An Icelandic Book of Magic, Smithville, TX: Rûna-Raven Press, 2005 (later reissues; verify).",
+      "url": ""
+    },
+    {
+      "citation": "Matthías Viðar Sæmundsson, Galdrar á Íslandi: Íslensk galdrabók, Reykjavík: Almenna bókafélagið, 1992 (verify).",
+      "url": ""
+    },
+    {
+      "citation": "Ólafur Davíðsson, Galdur og galdramál á Íslandi, Reykjavík: Sögufélag (Sögurit 20), 1940–1943.",
+      "url": ""
+    },
+    {
+      "citation": "Huld manuscript, Lbs 143 8vo, Landsbókasafn Íslands – Háskólabókasafn (National and University Library of Iceland), Reykjavík; compiled by Geir Vigfússon, 1847 or 1860. Catalogue record and any images on handrit.is, not consulted in this run.",
+      "url": "https://handrit.is/"
+    },
+    {
+      "citation": "Lbs 2413 8vo, Landsbókasafn Íslands – Háskólabókasafn, Reykjavík. Named in the brief; date and contents not verified. Consult the handrit.is record.",
+      "url": "https://handrit.is/"
+    },
+    {
+      "citation": "Jón Árnason (coll.), Íslenzkar þjóðsögur og æfintýri, 2 vols, Leipzig: J. C. Hinrichs, 1862–1864.",
+      "url": ""
+    },
+    {
+      "citation": "Ólína Þorvarðardóttir, Brennuöldin: Galdur og galdratrú í málskjölum og munnmælum, Reykjavík: Háskólaútgáfan, 2000.",
+      "url": ""
+    },
+    {
+      "citation": "Jón Magnússon, Píslarsaga séra Jóns Magnússonar (written c. 1658–59). Early edition Copenhagen, 1912–1914; modern edition by Matthías Viðar Sæmundsson, Reykjavík: Mál og menning, 2001. Editors and dates to verify.",
+      "url": ""
+    },
+    {
+      "citation": "Stephen A. Mitchell, Witchcraft and Magic in the Nordic Middle Ages, Philadelphia: University of Pennsylvania Press, 2011.",
+      "url": ""
+    },
+    {
+      "citation": "Christopher Alan Smith, Icelandic Magic: Aims, Tools and Techniques of the Icelandic Sorcerers, London: Avalonia, 2015 or 2016 (title and date to verify).",
+      "url": ""
+    },
+    {
+      "citation": "Magnús Rafnsson, Angurgapi: The Witch-hunts in Iceland, Hólmavík: Strandagaldur, 2003 (verify).",
+      "url": ""
+    },
+    {
+      "citation": "Kristian Kålund (ed.), Den islandske lægebog: Codex Arnamagnæanus 434 a, 12mo, Copenhagen, 1907 (Det Kongelige Danske Videnskabernes Selskabs Skrifter). To check for pre-Galdrabók signs.",
+      "url": ""
+    },
+    {
+      "citation": "Gustav Neckel (ed.), rev. Hans Kuhn, Edda: Die Lieder des Codex Regius nebst verwandten Denkmälern, 5th ed., Heidelberg: Carl Winter, 1983 (Fáfnismál 16–17; Reginsmál prose).",
+      "url": ""
+    },
+    {
+      "citation": "Snorri Sturluson, Edda: Skáldskaparmál, ed. Anthony Faulkes, 2 vols, London: Viking Society for Northern Research, 1998.",
+      "url": ""
+    },
+    {
+      "citation": "R. G. Finch (ed. and trans.), Völsunga saga: The Saga of the Volsungs, London: Nelson, 1965.",
+      "url": ""
+    },
+    {
+      "citation": "Richard Cleasby and Gudbrand Vigfusson, An Icelandic–English Dictionary, Oxford: Clarendon Press, 1874, s.v. ægis-hjálmr and hulins-hjálmr.",
+      "url": ""
+    },
+    {
+      "citation": "Strandagaldur: the Museum of Icelandic Sorcery and Witchcraft, Hólmavík. Popular secondary source for stave images and captions; use only with the manuscript reference it gives. Not opened in this run.",
+      "url": "https://www.galdrasyning.is/"
+    },
+    {
+      "citation": "English Wikipedia, 'Vegvísir' and 'Helm of Awe'. Tertiary, used only as a pointer to the 1860 dating and to the commonly quoted captions. Not opened in this run.",
+      "url": "https://en.wikipedia.org/wiki/Vegv%C3%ADsir"
+    }
+  ],
+  "confidence": "SOLID: the staves are early modern, not Viking Age. The Galdrabók is the oldest substantial collection usually cited, written by several hands and edited by Lindqvist (1921), with an English translation by Flowers (1989). The vegvísir's first known attestation is the 19th-century Huld manuscript, Lbs 143 8vo, compiled by Geir Vigfússon, and its stated use is not to lose one's way in storms. The name ægishjálmr comes from Fáfnir's helm in Fáfnismál, Snorri and Völsunga saga, where it is not a drawn sign. Staves served as evidence in the witch trials from 1625 (first burning, Jón Rögnvaldsson) and in the 1656 Kirkjuból case. The wrestling staves Gapaldur and Ginfaxi go in the shoes. SHAKY, verify before publication (no search was possible): the Huld date (1847 or 1860); the Galdrabók's dating, its scribes (including the Danish fourth hand) and its Stockholm repository and shelfmark; every edition detail marked 'verify'; which foot takes which wrestling stave; which manuscript gives the lead ægishjálmur with the formula 'Ægishjálm er ég ber milli brúna mér'; the exact wording of the vegvísir caption; the contents and date of Lbs 2413 8vo; the possible second vegvísir witness (Lbs 4627 8vo); the AM 434 a 12mo lead; the burning figures and the end date (1683 or 1685); the Píslarsaga editions. FORMS: the ægishjálmur is given at medium confidence, as a generic modern form. The vegvísir has only its overall plan (low). The other five are deliberately left undescribed (low) and must be traced from a named source."
+}

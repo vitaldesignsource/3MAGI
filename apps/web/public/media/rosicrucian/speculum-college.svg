@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+<title>The college on wheels (1618)</title>
+<desc>Follows published descriptions of the plate, which was not seen: a fortified building on a wheeled base, with wings, VENITE DIGNI over its arched door and IESVS NOBIS OMNIA over the two windows above. The crenellated top, the number of wheels, the set of the wings and every proportion are the drawing’s own. The hand and rope, the two stars and the rose and cross are left out, since each rests on a single description that could not be checked. So are the name Collegium Fraternitatis, whose place on the plate is not established, the figures round the building and the landscape. The engraving’s black becomes gold.</desc>
+<!--
+  After the engraved plate of the Collegium Fraternitatis in [Daniel Mögling, as]
+  Theophilus Schweighardt Constantiensis, Speculum sophicum Rhodostauroticum (1618;
+  Frankfurt in the Bodleian and NLS catalogues, Oppenheim for Johann Theodor de Bry
+  in Ouroboros Press's account). Reproduced in Frances A. Yates, The Rosicrucian
+  Enlightenment (London, 1972), as 'The Invisible College of the Rose Cross
+  Fraternity'; studied in Uwe Maximilian Korn, '"Bilderfahrzeug" of the
+  Rosicrucians' (2023).
+  THE PLATE WAS NOT SEEN. Drawn only from what the published descriptions agree on:
+    a fortified building of dressed stone on a wheeled base, with a pair of wings;
+    a round-headed door, VENITE DIGNI on the wall just above its arch;
+    two round-headed windows above it, IESVS NOBIS OMNIA above them.
+  The drawing's own: the crenellated parapet (a reading of "fortified"; the roof
+  form is not established), the string course under it, the coursing of the
+  masonry (carried on behind both inscriptions, which are lettered across ordinary
+  courses of the same bond; the head joints under the letters are not drawn), the
+  arch and jamb stones of the door, the platform, the number of wheels
+  (two) and of spokes (eight), the set of the wings (springing from the upper
+  walls, rising outwards at about 45 degrees), the letterforms and every proportion.
+  Left out: the hand from a cloud and its rope; the stars with a serpent-bearer and
+  a swan; a separate rose and cross on the building (each on a single or unidentified
+  description); the name Collegium Fraternitatis, whose place on the plate is not
+  established; the figures round the building, the landscape and any other motto.
+  Building 150 x 190, its base (the platform, 190 x 18) ending at y 320;
+  door 40 x 60; windows centred at y 194; wheels 50 across; wings about 70 long.
+  Engraved in black; one gold here, the weight of line alone varied.
+-->
+<defs>
+<g id="wing" stroke="#c9a86a" stroke-linejoin="round">
+<g fill="#0d0b0a" stroke-width="1">
+<path d="M41.75 -4.23C56.63 -2.27 69.28 0.27 70.54 5.21C67.67 9.42 54.91 7.47 40.25 4.23Z"/><path d="M43.95 0.52L66.11 4.43" stroke-width=".5"/>
+<path d="M37.78 -3.98C51.6 0.64 63.19 5.41 63.44 10.44C59.89 14 48.09 9.8 34.72 3.98Z"/><path d="M39.05 1.08L59.36 8.87" stroke-width=".5"/>
+<path d="M33.74 -3.58C46.05 3.36 56.2 10.05 55.46 14.97C51.36 17.79 40.9 11.61 29.26 3.58Z"/><path d="M34.04 1.59L51.86 12.72" stroke-width=".5"/>
+<path d="M29.61 -3.06C40.04 5.81 48.45 14.06 46.77 18.67C42.29 20.67 33.48 12.86 23.89 3.06Z"/><path d="M28.94 2.05L43.77 15.87" stroke-width=".5"/>
+<path d="M25.36 -2.44C33.65 7.91 40.11 17.3 37.58 21.44C32.86 22.57 25.93 13.52 18.64 2.44Z"/><path d="M23.76 2.43L35.24 18.22" stroke-width=".5"/>
+<path d="M20.98 -1.74C26.95 9.61 31.35 19.72 28.08 23.22C23.3 23.48 18.38 13.61 13.52 1.74Z"/><path d="M18.52 2.72L26.46 19.74" stroke-width=".5"/>
+<path d="M16.45 -0.99C20.04 10.87 22.34 21.27 18.49 24.01C13.8 23.4 10.95 13.14 8.55 0.99Z"/><path d="M13.23 2.91L17.59 20.41" stroke-width=".5"/>
+<path d="M11.78 -0.21C13.01 11.68 13.27 21.95 9 23.84C4.56 22.4 3.74 12.16 3.72 0.21Z"/><path d="M7.91 3L8.81 20.27" stroke-width=".5"/>
+<path d="M6.96 0.56C5.95 12.03 4.3 21.78 -0.2 22.78C-4.25 20.58 -3.16 10.75 -0.96 -0.56Z"/><path d="M2.58 2.97L0.28 19.36" stroke-width=".5"/>
+</g>
+<path d="M-5 -4C9 -15 33 -15 50 -6C54 -4 54.5 0 50 2Q47 8 42 6Q39 12.5 34 9.5Q30 15.5 25 12Q21 17.5 16 13.5Q12 18.5 7 14Q3 18.5 -2 14Q-5 16 -6 12Z" fill="#0d0b0a" stroke-width="1.3"/>
+<path d="M45 -2Q43 3 38 1.5Q35 6.5 31 4Q28 9 24 5.5Q21 10 17 6.5Q14 10.5 10 7Q7 11 3 7.5" fill="none" stroke-width=".5"/>
+</g>
+<g id="wheel" fill="none" stroke="#c9a86a">
+<circle r="25" stroke-width="1.8"/>
+<circle r="20.5" stroke-width="1"/>
+<path d="M5 0L20.5 0M3.54 3.54L14.5 14.5M0 5L0 20.5M-3.54 3.54L-14.5 14.5M-5 0L-20.5 0M-3.54 -3.54L-14.5 -14.5M0 -5L0 -20.5M3.54 -3.54L14.5 -14.5" stroke-width="1.6"/>
+<circle r="5" stroke-width="1.2"/>
+<circle r="1.8" fill="#c9a86a" stroke="none"/>
+</g>
+</defs>
+<!-- the wings, springing from the upper walls -->
+<use href="#wing" transform="translate(270 146) rotate(-47)"/>
+<use href="#wing" transform="matrix(-1 0 0 1 400 0) translate(270 146) rotate(-47)"/>
+<!-- the wheels -->
+<use href="#wheel" transform="translate(140 332)"/>
+<use href="#wheel" transform="translate(260 332)"/>
+<!-- the building: wall, head joints, the lettering (which hides the joints it crosses), then the beds -->
+<path d="M125 302V112H139V124H147.67V112H161.67V124H170.33V112H184.33V124H193V112H207V124H215.67V112H229.67V124H238.33V112H252.33V124H261V112H275V302Z" fill="#0d0b0a"/>
+<path d="M137.5 141V153M162.5 141V153M187.5 141V153M212.5 141V153M237.5 141V153M262.5 141V153M150 153V165M175 153V165M200 153V165M225 153V165M250 153V165M137.5 165V179.5M162.5 165V179.5M187.5 165V179.5M212.5 165V179.5M237.5 165V179.5M262.5 165V179.5M150 179.5V193.5M175 179.5V193.5M200 179.5V193.5M225 179.5V193.5M250 179.5V193.5M137.5 193.5V207.5M162.5 193.5V207.5M187.5 193.5V207.5M212.5 193.5V207.5M237.5 193.5V207.5M262.5 193.5V207.5M143.75 207.5V222.5M168.75 207.5V222.5M200 207.5V222.5M231.25 207.5V222.5M256.25 207.5V222.5M150 222.5V237M175 222.5V237M200 222.5V237M225 222.5V237M250 222.5V237M137.5 237V249.5M162.5 237V249.5M187.5 237V249.5M212.5 237V249.5M237.5 237V249.5M262.5 237V249.5M143.75 249.5V262M168.75 249.5V262M200 249.5V262M231.25 249.5V262M256.25 249.5V262M137.5 262V275.33M162.5 262V275.33M187.5 262V275.33M212.5 262V275.33M237.5 262V275.33M262.5 262V275.33M150 275.33V288.67M175 275.33V288.67M200 275.33V288.67M225 275.33V288.67M250 275.33V288.67M137.5 288.67V302M162.5 288.67V302M187.5 288.67V302M212.5 288.67V302M237.5 288.67V302M262.5 288.67V302" fill="none" stroke="#c9a86a" stroke-width=".55"/>
+<g font-family="Georgia, 'Times New Roman', serif" font-size="11" letter-spacing=".15" text-anchor="middle" fill="#c9a86a" stroke="#0d0b0a" stroke-width="8.4" stroke-linejoin="round" paint-order="stroke">
+<text x="200" y="175.9">IESVS NOBIS OMNIA</text>
+<text x="200" y="233">VENITE DIGNI</text>
+</g>
+<path d="M125 153H275M125 165H275M125 179.5H275M125 193.5H275M125 207.5H275M125 222.5H275M125 237H275M125 249.5H275M125 262H275M125 275.33H275M125 288.67H275" fill="none" stroke="#c9a86a" stroke-width=".55"/>
+<!-- string course, windows and door -->
+<g fill="#0d0b0a" stroke="#c9a86a" stroke-linejoin="round">
+<rect x="121" y="136" width="158" height="5" stroke-width="1.2"/>
+<path d="M167.5 207.5V189.5A10 10 0 0 1 187.5 189.5V207.5Z" stroke-width="1.2"/>
+<path d="M171 207.5V189.5A6.5 6.5 0 0 1 184 189.5V207.5Z" stroke-width="1.1"/>
+<path d="M212.5 207.5V189.5A10 10 0 0 1 232.5 189.5V207.5Z" stroke-width="1.2"/>
+<path d="M216 207.5V189.5A6.5 6.5 0 0 1 229 189.5V207.5Z" stroke-width="1.1"/>
+<path d="M175 302V262A25 25 0 0 1 225 262V302Z" stroke-width="1.3"/>
+<path d="M218.79 255.16L223.49 253.45M215.32 249.14L219.15 245.93M210 244.68L212.5 240.35M203.47 242.3L204.34 237.38M196.53 242.3L195.66 237.38M190 244.68L187.5 240.35M184.68 249.14L180.85 245.93M181.21 255.16L176.51 253.45M175 262H180M220 262H225M175 275.33H180M220 275.33H225M175 288.67H180M220 288.67H225" fill="none" stroke-width=".8"/>
+<path d="M180 302V262A20 20 0 0 1 220 262V302Z" stroke-width="1.3"/>
+</g>
+<path d="M125 302V112H139V124H147.67V112H161.67V124H170.33V112H184.33V124H193V112H207V124H215.67V112H229.67V124H238.33V112H252.33V124H261V112H275V302Z" fill="none" stroke="#c9a86a" stroke-width="1.6"/>
+<!-- the platform -->
+<rect x="105" y="302" width="190" height="18" fill="#0d0b0a" stroke="#c9a86a" stroke-width="1.6"/>
+</svg>

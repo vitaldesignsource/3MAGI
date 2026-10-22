@@ -1,0 +1,636 @@
+{
+  "key": "theban",
+  "title": "The Theban alphabet",
+  "otherNames": [
+    "alphabetum Honorii cognomento Thebani, 'the alphabet of Honorius surnamed the Theban' (Trithemius, Polygraphia, 1518, as quoted in secondary sources)",
+    "Theban alphabet / Theban script",
+    "Honorian alphabet",
+    "Runes of Honorius (modern; the signs are not runes)",
+    "the witches' alphabet / Witch's alphabet (modern Wiccan and popular usage)",
+    "Thebanisches Alphabet (German)"
+  ],
+  "family": "A secret alphabet keyed to Latin: one invented sign for each letter of the Latin alphabet, in Latin order. It was printed among Trithemius's cipher alphabets and among Agrippa's characters of spirits. It is NOT one of the Hebrew-keyed ring-letter alphabets (Celestial, Malachim, Transitus fluvii) of Agrippa III.30.",
+  "summary": "A secret alphabet of 23 signs, one for each Latin letter from A to Z (I also serves for J and V for U; there is no W), followed by a final sign. It first appears in print in Johannes Trithemius's Polygraphia (July 1518). Trithemius presents it as the alphabet of 'Honorius surnamed the Theban' and names Pietro d'Abano as his witness, but no surviving work attributed to d'Abano is known to contain it. Agrippa reprinted it with the same attribution in De occulta philosophia, Book III, chapter 29 (1533). It passed through Barrett's Magus (1801) into modern occultism, and Wiccans now often call it 'the witches' alphabet'.",
+  "firstAttestation": {
+    "work": "Polygraphiae libri sex Ioannis Trithemii abbatis Peapolitani, quondam Spanheimensis, ad Maximilianum Caesarem",
+    "author": "Johannes Trithemius (1462–1516), formerly abbot of Sponheim, then abbot of St Jakob at Würzburg (the 'Peapolitanus' of the title)",
+    "date": "July 1518. The colophon reads '1518 mense Iulio', according to the Library of Congress record. The book was published after Trithemius's death in 1516. The Library of Congress says he began it at Würzburg in 1508; German Wikipedia says he completed it in 1508. The sources disagree on this point.",
+    "place": "Disputed between Basel and Oppenheim. The colophon names the bookseller Johannes Haselberg 'de Aia', of the diocese of Constance, as the man who paid for the printing ('aere ac impensis'). The Folger catalogue says the printing was done chiefly by Michael Furter of Basel. Other repertories name Adam Petri (Basel) or Jacob Köbel (Oppenheim). The Valladolid (UVaDoc) record reports that ICCU gives Basel. The Metropolitan Museum credits the woodcuts to Hans Springinklee.",
+    "locator": "The alphabet stands among the Polygraphia's illustrated alphabets. I did not verify the book, folio or signature in the 1518 printing, and the sources disagree:\n(a) A search summary of Peterson's Sworn Book of Honorius cites 'Polygraphia 6 ... p. 579', which points to Book VI.\n(b) Wikipedia's 'The Sworn Book of Honorius' cites the same sentence at p. 597, and another report ties p. 597 to the 1613 Zetzner reprint. The numbers 579 and 597 may be one figure transposed.\n(c) For the 1561 French translation, a Wikipedia talk-page editor gives 'page 184, Book V', and Wikimedia Commons has a scan titled '... Polygraphie (1561), 184v'.\n(d) A bookseller (ABAA) puts the catalogue of alphabets in Book V.",
+    "notes": "This is the earliest known exemplar. No manuscript or print before 1518 is known. Trithemius introduces it as 'another alphabet of Honorius surnamed the Theban', which Honorius used to hide his 'follies in magic', 'as Petrus de Apono testifies in his greater fourth book'. I know the Latin only through secondary quotations; see the quotations below. No such passage has been found in the writings attributed to d'Abano. The alphabet is not in the Liber iuratus Honorii. Wikipedia and Peterson report only one manuscript of Honorius material that contains it, BL Sloane 3853, and that manuscript names Agrippa as its source."
+  },
+  "transmission": [
+    {
+      "date": "1508",
+      "work": "Polygraphia (composition, Würzburg)",
+      "author": "Johannes Trithemius",
+      "what": "Written at Würzburg. The Library of Congress says it was begun in 1508; German Wikipedia says it was completed then. Publication was delayed until after his death; History of Information says ecclesiastical disapproval caused the delay. There is no evidence that the Theban table had any separate earlier life."
+    },
+    {
+      "date": "July 1518",
+      "work": "Polygraphiae libri sex ([Basel or Oppenheim], at the expense of Johannes Haselberg)",
+      "author": "Johannes Trithemius",
+      "what": "The first printing. The alphabet is presented as the one with which 'Honorius surnamed the Theban' hid his magical follies, with Petrus de Apono's 'greater fourth book' cited as witness. The table runs A to Z on the Latin order and ends with a sign that a Wikipedia talk-page editor and From Old Books report is labelled 'w'."
+    },
+    {
+      "date": "1533 (colophon July 1533)",
+      "work": "De occulta philosophia libri tres ([Cologne: J. Soter?]; Adams suggests Basel)",
+      "author": "Heinrich Cornelius Agrippa von Nettesheim (1486–1535)",
+      "what": "Book III, chapter 29, which the 1651 English heads 'Of the Characters and Seals of Spirits'. Agrippa sets the alphabet among the secret characters, as letters that Peter of Abano ('Petrus Apponus') reports Honorius of Thebes delivered. He follows Trithemius, and Peterson's edition annotates the chapter with the Polygraphia passage. In this printing the final sign carries a small ω and the label Ω. This is the version later charts copy. Wikipedia calls Agrippa Trithemius's 'student'. The documented contact is Agrippa's 1509–10 visit and the manuscript draft of the work he sent to Trithemius in 1510 (SEP). I have not checked whether that draft contains III.29."
+    },
+    {
+      "date": "1561",
+      "work": "Polygraphie, et universelle escriture cabalistique (Paris: [Benoît Prévost] for Jacques Kerver)",
+      "author": "Trithemius, translated by Gabriel de Collange",
+      "what": "The first French translation. Wikimedia Commons holds a scan of its Theban page captioned '184v'. A Wikipedia talk-page editor reports that the translation drops d'Abano's name. From Old Books reports that it prints the final sign without the ω and labels it with what it describes as an ampersand."
+    },
+    {
+      "date": "1613 (reported; unverified)",
+      "work": "Polygraphia, later Latin edition (Lazarus Zetzner)",
+      "author": "Trithemius",
+      "what": "One search report ties the page reference 'p. 597' for the Theban passage to a 1613 Zetzner printing. Its place and date were not confirmed."
+    },
+    {
+      "date": "1651",
+      "work": "Three Books of Occult Philosophy (London: R.W. for Gregory Moule)",
+      "author": "Agrippa, translated by 'J.F.' (John Freake or John French)",
+      "what": "English text of III.29, with the Theban table re-cut. A search-derived report gives p. 438; this is unverified."
+    },
+    {
+      "date": "undated in my sources",
+      "work": "British Library, Sloane MS 3853 (composite magical manuscript)",
+      "author": "anonymous compiler",
+      "what": "The only known manuscript of Honorius material with the alphabet. It names Agrippa as the source (Wikipedia; Peterson's introduction to the Sworn Book). It shows the alphabet moving from print back into manuscript, not an independent medieval witness."
+    },
+    {
+      "date": "1801",
+      "work": "The Magus, or Celestial Intelligencer (London: Lackington, Allen & Co.)",
+      "author": "Francis Barrett",
+      "what": "An engraved plate of four registers, with Theban at the top over Celestial Writing, Malachim and Passing the River. The Source Library record reports the top register captioned as the letters delivered by Honorius. Barrett's book is largely compiled from Agrippa (Wikipedia). Wikipedia names Barrett among the copyists who read the final sign as an ampersand or end-mark. Most modern charts copy this plate. I did not verify its page or plate number."
+    },
+    {
+      "date": "c. 1999–2002",
+      "work": "Draft Unicode proposal for Theban; Unicode mailing-list discussion",
+      "author": "Eric S. Raymond (draft); Michael Everson, Kenneth Whistler (replies)",
+      "what": "Everson argued that Theban maps one-to-one onto Latin and is therefore a cipher, used little beyond ritual objects. The script is not encoded. The mailing-list record shows this as of 2002; my statement that it is still unencoded comes from memory, so check the Unicode roadmap. This is why the site must draw it."
+    },
+    {
+      "date": "20th century to today",
+      "work": "Modern Wicca and popular witchcraft literature",
+      "author": "various",
+      "what": "Called 'the witches' alphabet'. It is used to write names and words on ritual tools and candles and in personal Books of Shadows (Wikipedia; practitioner sites). Hutton (The Triumph of the Moon, 1999) reportedly records Doreen Valiente's description of Gerald Gardner (1884–1964) wearing a silver ring engraved in Theban. That report reached me second-hand, through a 2016 Patheos blog post. The route by which the alphabet reached Gardner is not documented in my sources. Blogs suggest Barrett, or the Golden Dawn and the OTO, but give no evidence."
+    }
+  ],
+  "claims": [
+    {
+      "claim": "Honorius of Thebes devised the alphabet.",
+      "standing": "legend",
+      "evidence": "Trithemius ascribes the alphabet to 'Honorius cognomento Thebanus' (1518), and Agrippa repeats the ascription (1533). No earlier witness exists. Who Honorius was is unknown. The Liber iuratus calls its author Honorius, 'son of Euclid, master of the Thebans', but gives no further facts, and its manuscripts do not contain this alphabet.",
+      "sources": [
+        "Trithemius, Polygraphia (1518), via Wikipedia and Peterson",
+        "Wikipedia, 'The Sworn Book of Honorius'",
+        "Peterson, The Sworn Book of Honorius, introduction"
+      ]
+    },
+    {
+      "claim": "Pietro d'Abano recorded the alphabet in his 'greater fourth book'.",
+      "standing": "disputed",
+      "evidence": "This is Trithemius's statement ('sicut Petrus de Apono testatur in suo maiore libro quarto'). Wikipedia says it is not known to be mentioned in any writing attributed to d'Abano, and gives his dates as 1250–1316. A reviewer of the later Latin edition notes that no one has found the d'Abano passage. Peterson calls the evidence for a historical Honorius 'shaky at best' and notes that writings falsely ascribed to d'Abano are common.",
+      "sources": [
+        "Wikipedia, 'Theban alphabet'",
+        "Peterson, Sworn Book introduction",
+        "Wikipedia, 'Talk:Theban alphabet/Archive 1'"
+      ]
+    },
+    {
+      "claim": "The alphabet was first printed in Trithemius's Polygraphia (1518).",
+      "standing": "documented",
+      "evidence": "Wikipedia, German Wikipedia, Peterson and a Pandolfini auction description of the 1518 edition ('the oldest known source of the so-called witches' alphabet') all agree. A woodcut of the table is reproduced from the 1518 book.",
+      "sources": [
+        "Wikipedia, 'Theban alphabet'",
+        "de.wikipedia, 'Thebanisches Alphabet'",
+        "Pandolfini auction 1394, lot description"
+      ]
+    },
+    {
+      "claim": "Agrippa printed it in De occulta philosophia, Book III, chapter 29.",
+      "standing": "documented",
+      "evidence": "The chapter is headed (1651) 'Of the Characters and Seals of Spirits'. It credits Peter of Abano with the report that Honorius of Thebes delivered the letters. Book III first appeared in the complete edition of 1533. Pages that give '1531' are confusing it with the 1531 printings, which contain Book I only. A blog's '1521' has no basis that I found.",
+      "sources": [
+        "Agrippa, De occulta philosophia III.29 (1533)",
+        "Peterson, Esoteric Archives, Agrippa Book III",
+        "J.F. trans. 1651 (EEBO-TCP A26565)",
+        "Wikipedia, 'Theban alphabet'"
+      ]
+    },
+    {
+      "claim": "Trithemius says the alphabet was used to hide 'follies' (fatuitates) in magic.",
+      "standing": "documented",
+      "evidence": "The phrase is in the Latin sentence quoted by Wikipedia and Peterson ('cuius ministerio suas in magicis fatuitates abscondit'). It is Trithemius's own, dismissive framing. It is not evidence of how Honorius used the alphabet. I found no source showing that Agrippa repeats the word.",
+      "sources": [
+        "Trithemius, Polygraphia (1518), via Wikipedia 'The Sworn Book of Honorius' and Peterson"
+      ]
+    },
+    {
+      "claim": "The final sign was once a W and became an 'end' mark through misreading.",
+      "standing": "disputed",
+      "evidence": "As reported, the sign is labelled 'w' in 1518, carries ω and the label Ω in 1533, and is read as '&' in 1561 and as an end-mark or ampersand in Barrett. The misreading theory is one Wikipedia talk-page editor's. Wikipedia's article reads the 1533 Ω as 'End'. I did not see the pages.",
+      "sources": [
+        "Wikipedia, 'Talk:Theban alphabet/Archive 1'",
+        "From Old Books, 'Theban Alphabet of Peter Apponus'",
+        "Wikipedia, 'Theban alphabet'"
+      ]
+    },
+    {
+      "claim": "Theban is a medieval script.",
+      "standing": "legend",
+      "evidence": "No exemplar earlier than the 1518 print is known (Wikipedia). The one manuscript of Honorius material that has the alphabet (Sloane 3853) copies it from Agrippa.",
+      "sources": [
+        "Wikipedia, 'Theban alphabet'",
+        "Peterson, Sworn Book introduction"
+      ]
+    },
+    {
+      "claim": "Theban is a cipher of the Latin alphabet, not a language or a separate writing system.",
+      "standing": "documented",
+      "evidence": "Each sign corresponds to one Latin letter, in Latin order. Peterson calls it 'clearly based on the Latin alphabet, not Greek'. Michael Everson, on the Unicode list, treated it as a substitution cipher for Latin.",
+      "sources": [
+        "Peterson, Sworn Book introduction",
+        "Unicode mailing list, 'Re: Theban alphabet?' (Feb 2002)"
+      ]
+    },
+    {
+      "claim": "The Golden Dawn and the OTO used Theban extensively and passed it to Gardner.",
+      "standing": "disputed",
+      "evidence": "This appears only in practitioner blogs, without documents. Others suggest that Barrett's Magus was the route. Neither is shown by evidence I found.",
+      "sources": [
+        "The Occult and Magick blog (2011)",
+        "Patheos, 'The Theban Script: (Not So) Secret Alphabet of the Witches' (2016)"
+      ]
+    },
+    {
+      "claim": "Gerald Gardner wore a silver ring with a name engraved on it in Theban letters.",
+      "standing": "attributed",
+      "evidence": "A 2016 Patheos post says Hutton's Triumph of the Moon reports Doreen Valiente's description of the ring, with Gardner's OTO name on it. I have not checked this in Hutton or in Valiente (The Rebirth of Witchcraft, 1989).",
+      "sources": [
+        "Patheos (2016), citing Hutton, The Triumph of the Moon (OUP, 1999)"
+      ]
+    }
+  ],
+  "letters": [
+    {
+      "order": 1,
+      "name": "A",
+      "value": "A",
+      "translit": "a",
+      "numeric": null,
+      "form": "NOT DESCRIBED. I could not see any image of this sign (1518 Polygraphia, 1533 Agrippa, 1561 French Polygraphie or Barrett's 1801 plate), and no source I could reach describes its strokes in words. I will not describe it from memory: the Theban letters do not follow the shapes of the Latin letters they stand for, so nothing can be inferred from the value. Trace it from the Theban table in Agrippa, De occulta philosophia III.29 (1533; Library of Congress copy, archive.org/details/DeOccultaPhilosophiaLoc1533), checked against the first printing in Trithemius's Polygraphia (July 1518; Library of Congress Fabyan copy, hdl.loc.gov/loc.rbc/fabyan.17914.1). Wikipedia's file 'Theban alphabet from De Occulta Philosophia 1533.png' is a convenient crop of the 1533 table; Barrett's 1801 plate is later and not the one to trace.",
+      "formConfidence": "low",
+      "note": "Order and value follow the Latin alphabet, to which the table is keyed one sign per letter (Wikipedia; Peterson calls it 'clearly based on the Latin alphabet'). Theban has no numerical values."
+    },
+    {
+      "order": 2,
+      "name": "B",
+      "value": "B",
+      "translit": "b",
+      "numeric": null,
+      "form": "NOT DESCRIBED. I could not see any image of this sign (1518 Polygraphia, 1533 Agrippa, 1561 French Polygraphie or Barrett's 1801 plate), and no source I could reach describes its strokes in words. I will not describe it from memory: the Theban letters do not follow the shapes of the Latin letters they stand for, so nothing can be inferred from the value. Trace it from the Theban table in Agrippa, De occulta philosophia III.29 (1533; Library of Congress copy, archive.org/details/DeOccultaPhilosophiaLoc1533), checked against the first printing in Trithemius's Polygraphia (July 1518; Library of Congress Fabyan copy, hdl.loc.gov/loc.rbc/fabyan.17914.1). Wikipedia's file 'Theban alphabet from De Occulta Philosophia 1533.png' is a convenient crop of the 1533 table; Barrett's 1801 plate is later and not the one to trace.",
+      "formConfidence": "low",
+      "note": "Order and value follow the Latin alphabet, to which the table is keyed one sign per letter (Wikipedia; Peterson calls it 'clearly based on the Latin alphabet'). Theban has no numerical values."
+    },
+    {
+      "order": 3,
+      "name": "C",
+      "value": "C",
+      "translit": "c",
+      "numeric": null,
+      "form": "NOT DESCRIBED. I could not see any image of this sign (1518 Polygraphia, 1533 Agrippa, 1561 French Polygraphie or Barrett's 1801 plate), and no source I could reach describes its strokes in words. I will not describe it from memory: the Theban letters do not follow the shapes of the Latin letters they stand for, so nothing can be inferred from the value. Trace it from the Theban table in Agrippa, De occulta philosophia III.29 (1533; Library of Congress copy, archive.org/details/DeOccultaPhilosophiaLoc1533), checked against the first printing in Trithemius's Polygraphia (July 1518; Library of Congress Fabyan copy, hdl.loc.gov/loc.rbc/fabyan.17914.1). Wikipedia's file 'Theban alphabet from De Occulta Philosophia 1533.png' is a convenient crop of the 1533 table; Barrett's 1801 plate is later and not the one to trace.",
+      "formConfidence": "low",
+      "note": "Order and value follow the Latin alphabet, to which the table is keyed one sign per letter (Wikipedia; Peterson calls it 'clearly based on the Latin alphabet'). Theban has no numerical values."
+    },
+    {
+      "order": 4,
+      "name": "D",
+      "value": "D",
+      "translit": "d",
+      "numeric": null,
+      "form": "NOT DESCRIBED. I could not see any image of this sign (1518 Polygraphia, 1533 Agrippa, 1561 French Polygraphie or Barrett's 1801 plate), and no source I could reach describes its strokes in words. I will not describe it from memory: the Theban letters do not follow the shapes of the Latin letters they stand for, so nothing can be inferred from the value. Trace it from the Theban table in Agrippa, De occulta philosophia III.29 (1533; Library of Congress copy, archive.org/details/DeOccultaPhilosophiaLoc1533), checked against the first printing in Trithemius's Polygraphia (July 1518; Library of Congress Fabyan copy, hdl.loc.gov/loc.rbc/fabyan.17914.1). Wikipedia's file 'Theban alphabet from De Occulta Philosophia 1533.png' is a convenient crop of the 1533 table; Barrett's 1801 plate is later and not the one to trace.",
+      "formConfidence": "low",
+      "note": "Order and value follow the Latin alphabet, to which the table is keyed one sign per letter (Wikipedia; Peterson calls it 'clearly based on the Latin alphabet'). Theban has no numerical values."
+    },
+    {
+      "order": 5,
+      "name": "E",
+      "value": "E",
+      "translit": "e",
+      "numeric": null,
+      "form": "NOT DESCRIBED. I could not see any image of this sign (1518 Polygraphia, 1533 Agrippa, 1561 French Polygraphie or Barrett's 1801 plate), and no source I could reach describes its strokes in words. I will not describe it from memory: the Theban letters do not follow the shapes of the Latin letters they stand for, so nothing can be inferred from the value. Trace it from the Theban table in Agrippa, De occulta philosophia III.29 (1533; Library of Congress copy, archive.org/details/DeOccultaPhilosophiaLoc1533), checked against the first printing in Trithemius's Polygraphia (July 1518; Library of Congress Fabyan copy, hdl.loc.gov/loc.rbc/fabyan.17914.1). Wikipedia's file 'Theban alphabet from De Occulta Philosophia 1533.png' is a convenient crop of the 1533 table; Barrett's 1801 plate is later and not the one to trace.",
+      "formConfidence": "low",
+      "note": "Order and value follow the Latin alphabet, to which the table is keyed one sign per letter (Wikipedia; Peterson calls it 'clearly based on the Latin alphabet'). Theban has no numerical values."
+    },
+    {
+      "order": 6,
+      "name": "F",
+      "value": "F",
+      "translit": "f",
+      "numeric": null,
+      "form": "NOT DESCRIBED. I could not see any image of this sign (1518 Polygraphia, 1533 Agrippa, 1561 French Polygraphie or Barrett's 1801 plate), and no source I could reach describes its strokes in words. I will not describe it from memory: the Theban letters do not follow the shapes of the Latin letters they stand for, so nothing can be inferred from the value. Trace it from the Theban table in Agrippa, De occulta philosophia III.29 (1533; Library of Congress copy, archive.org/details/DeOccultaPhilosophiaLoc1533), checked against the first printing in Trithemius's Polygraphia (July 1518; Library of Congress Fabyan copy, hdl.loc.gov/loc.rbc/fabyan.17914.1). Wikipedia's file 'Theban alphabet from De Occulta Philosophia 1533.png' is a convenient crop of the 1533 table; Barrett's 1801 plate is later and not the one to trace.",
+      "formConfidence": "low",
+      "note": "Order and value follow the Latin alphabet, to which the table is keyed one sign per letter (Wikipedia; Peterson calls it 'clearly based on the Latin alphabet'). Theban has no numerical values."
+    },
+    {
+      "order": 7,
+      "name": "G",
+      "value": "G",
+      "translit": "g",
+      "numeric": null,
+      "form": "NOT DESCRIBED. I could not see any image of this sign (1518 Polygraphia, 1533 Agrippa, 1561 French Polygraphie or Barrett's 1801 plate), and no source I could reach describes its strokes in words. I will not describe it from memory: the Theban letters do not follow the shapes of the Latin letters they stand for, so nothing can be inferred from the value. Trace it from the Theban table in Agrippa, De occulta philosophia III.29 (1533; Library of Congress copy, archive.org/details/DeOccultaPhilosophiaLoc1533), checked against the first printing in Trithemius's Polygraphia (July 1518; Library of Congress Fabyan copy, hdl.loc.gov/loc.rbc/fabyan.17914.1). Wikipedia's file 'Theban alphabet from De Occulta Philosophia 1533.png' is a convenient crop of the 1533 table; Barrett's 1801 plate is later and not the one to trace.",
+      "formConfidence": "low",
+      "note": "Order and value follow the Latin alphabet, to which the table is keyed one sign per letter (Wikipedia; Peterson calls it 'clearly based on the Latin alphabet'). Theban has no numerical values."
+    },
+    {
+      "order": 8,
+      "name": "H",
+      "value": "H",
+      "translit": "h",
+      "numeric": null,
+      "form": "NOT DESCRIBED. I could not see any image of this sign (1518 Polygraphia, 1533 Agrippa, 1561 French Polygraphie or Barrett's 1801 plate), and no source I could reach describes its strokes in words. I will not describe it from memory: the Theban letters do not follow the shapes of the Latin letters they stand for, so nothing can be inferred from the value. Trace it from the Theban table in Agrippa, De occulta philosophia III.29 (1533; Library of Congress copy, archive.org/details/DeOccultaPhilosophiaLoc1533), checked against the first printing in Trithemius's Polygraphia (July 1518; Library of Congress Fabyan copy, hdl.loc.gov/loc.rbc/fabyan.17914.1). Wikipedia's file 'Theban alphabet from De Occulta Philosophia 1533.png' is a convenient crop of the 1533 table; Barrett's 1801 plate is later and not the one to trace.",
+      "formConfidence": "low",
+      "note": "Order and value follow the Latin alphabet, to which the table is keyed one sign per letter (Wikipedia; Peterson calls it 'clearly based on the Latin alphabet'). Theban has no numerical values."
+    },
+    {
+      "order": 9,
+      "name": "I",
+      "value": "I",
+      "translit": "i, also j",
+      "numeric": null,
+      "form": "NOT DESCRIBED. I could not see any image of this sign (1518 Polygraphia, 1533 Agrippa, 1561 French Polygraphie or Barrett's 1801 plate), and no source I could reach describes its strokes in words. I will not describe it from memory: the Theban letters do not follow the shapes of the Latin letters they stand for, so nothing can be inferred from the value. Trace it from the Theban table in Agrippa, De occulta philosophia III.29 (1533; Library of Congress copy, archive.org/details/DeOccultaPhilosophiaLoc1533), checked against the first printing in Trithemius's Polygraphia (July 1518; Library of Congress Fabyan copy, hdl.loc.gov/loc.rbc/fabyan.17914.1). Wikipedia's file 'Theban alphabet from De Occulta Philosophia 1533.png' is a convenient crop of the 1533 table; Barrett's 1801 plate is later and not the one to trace.",
+      "formConfidence": "low",
+      "note": "Order and value follow the Latin alphabet, to which the table is keyed one sign per letter (Wikipedia; Peterson calls it 'clearly based on the Latin alphabet'). Theban has no numerical values. There is no separate sign for J. Modern usage writes J with the I sign (Wikipedia; MicroWiki copy of it). The transliterator should map j to this sign."
+    },
+    {
+      "order": 10,
+      "name": "K",
+      "value": "K",
+      "translit": "k",
+      "numeric": null,
+      "form": "NOT DESCRIBED. I could not see any image of this sign (1518 Polygraphia, 1533 Agrippa, 1561 French Polygraphie or Barrett's 1801 plate), and no source I could reach describes its strokes in words. I will not describe it from memory: the Theban letters do not follow the shapes of the Latin letters they stand for, so nothing can be inferred from the value. Trace it from the Theban table in Agrippa, De occulta philosophia III.29 (1533; Library of Congress copy, archive.org/details/DeOccultaPhilosophiaLoc1533), checked against the first printing in Trithemius's Polygraphia (July 1518; Library of Congress Fabyan copy, hdl.loc.gov/loc.rbc/fabyan.17914.1). Wikipedia's file 'Theban alphabet from De Occulta Philosophia 1533.png' is a convenient crop of the 1533 table; Barrett's 1801 plate is later and not the one to trace.",
+      "formConfidence": "low",
+      "note": "Order and value follow the Latin alphabet, to which the table is keyed one sign per letter (Wikipedia; Peterson calls it 'clearly based on the Latin alphabet'). Theban has no numerical values."
+    },
+    {
+      "order": 11,
+      "name": "L",
+      "value": "L",
+      "translit": "l",
+      "numeric": null,
+      "form": "NOT DESCRIBED. I could not see any image of this sign (1518 Polygraphia, 1533 Agrippa, 1561 French Polygraphie or Barrett's 1801 plate), and no source I could reach describes its strokes in words. I will not describe it from memory: the Theban letters do not follow the shapes of the Latin letters they stand for, so nothing can be inferred from the value. Trace it from the Theban table in Agrippa, De occulta philosophia III.29 (1533; Library of Congress copy, archive.org/details/DeOccultaPhilosophiaLoc1533), checked against the first printing in Trithemius's Polygraphia (July 1518; Library of Congress Fabyan copy, hdl.loc.gov/loc.rbc/fabyan.17914.1). Wikipedia's file 'Theban alphabet from De Occulta Philosophia 1533.png' is a convenient crop of the 1533 table; Barrett's 1801 plate is later and not the one to trace.",
+      "formConfidence": "low",
+      "note": "Order and value follow the Latin alphabet, to which the table is keyed one sign per letter (Wikipedia; Peterson calls it 'clearly based on the Latin alphabet'). Theban has no numerical values."
+    },
+    {
+      "order": 12,
+      "name": "M",
+      "value": "M",
+      "translit": "m",
+      "numeric": null,
+      "form": "NOT DESCRIBED. I could not see any image of this sign (1518 Polygraphia, 1533 Agrippa, 1561 French Polygraphie or Barrett's 1801 plate), and no source I could reach describes its strokes in words. I will not describe it from memory: the Theban letters do not follow the shapes of the Latin letters they stand for, so nothing can be inferred from the value. Trace it from the Theban table in Agrippa, De occulta philosophia III.29 (1533; Library of Congress copy, archive.org/details/DeOccultaPhilosophiaLoc1533), checked against the first printing in Trithemius's Polygraphia (July 1518; Library of Congress Fabyan copy, hdl.loc.gov/loc.rbc/fabyan.17914.1). Wikipedia's file 'Theban alphabet from De Occulta Philosophia 1533.png' is a convenient crop of the 1533 table; Barrett's 1801 plate is later and not the one to trace.",
+      "formConfidence": "low",
+      "note": "Order and value follow the Latin alphabet, to which the table is keyed one sign per letter (Wikipedia; Peterson calls it 'clearly based on the Latin alphabet'). Theban has no numerical values."
+    },
+    {
+      "order": 13,
+      "name": "N",
+      "value": "N",
+      "translit": "n",
+      "numeric": null,
+      "form": "NOT DESCRIBED. I could not see any image of this sign (1518 Polygraphia, 1533 Agrippa, 1561 French Polygraphie or Barrett's 1801 plate), and no source I could reach describes its strokes in words. I will not describe it from memory: the Theban letters do not follow the shapes of the Latin letters they stand for, so nothing can be inferred from the value. Trace it from the Theban table in Agrippa, De occulta philosophia III.29 (1533; Library of Congress copy, archive.org/details/DeOccultaPhilosophiaLoc1533), checked against the first printing in Trithemius's Polygraphia (July 1518; Library of Congress Fabyan copy, hdl.loc.gov/loc.rbc/fabyan.17914.1). Wikipedia's file 'Theban alphabet from De Occulta Philosophia 1533.png' is a convenient crop of the 1533 table; Barrett's 1801 plate is later and not the one to trace.",
+      "formConfidence": "low",
+      "note": "Order and value follow the Latin alphabet, to which the table is keyed one sign per letter (Wikipedia; Peterson calls it 'clearly based on the Latin alphabet'). Theban has no numerical values."
+    },
+    {
+      "order": 14,
+      "name": "O",
+      "value": "O",
+      "translit": "o",
+      "numeric": null,
+      "form": "NOT DESCRIBED. I could not see any image of this sign (1518 Polygraphia, 1533 Agrippa, 1561 French Polygraphie or Barrett's 1801 plate), and no source I could reach describes its strokes in words. I will not describe it from memory: the Theban letters do not follow the shapes of the Latin letters they stand for, so nothing can be inferred from the value. Trace it from the Theban table in Agrippa, De occulta philosophia III.29 (1533; Library of Congress copy, archive.org/details/DeOccultaPhilosophiaLoc1533), checked against the first printing in Trithemius's Polygraphia (July 1518; Library of Congress Fabyan copy, hdl.loc.gov/loc.rbc/fabyan.17914.1). Wikipedia's file 'Theban alphabet from De Occulta Philosophia 1533.png' is a convenient crop of the 1533 table; Barrett's 1801 plate is later and not the one to trace.",
+      "formConfidence": "low",
+      "note": "Order and value follow the Latin alphabet, to which the table is keyed one sign per letter (Wikipedia; Peterson calls it 'clearly based on the Latin alphabet'). Theban has no numerical values."
+    },
+    {
+      "order": 15,
+      "name": "P",
+      "value": "P",
+      "translit": "p",
+      "numeric": null,
+      "form": "NOT DESCRIBED. I could not see any image of this sign (1518 Polygraphia, 1533 Agrippa, 1561 French Polygraphie or Barrett's 1801 plate), and no source I could reach describes its strokes in words. I will not describe it from memory: the Theban letters do not follow the shapes of the Latin letters they stand for, so nothing can be inferred from the value. Trace it from the Theban table in Agrippa, De occulta philosophia III.29 (1533; Library of Congress copy, archive.org/details/DeOccultaPhilosophiaLoc1533), checked against the first printing in Trithemius's Polygraphia (July 1518; Library of Congress Fabyan copy, hdl.loc.gov/loc.rbc/fabyan.17914.1). Wikipedia's file 'Theban alphabet from De Occulta Philosophia 1533.png' is a convenient crop of the 1533 table; Barrett's 1801 plate is later and not the one to trace.",
+      "formConfidence": "low",
+      "note": "Order and value follow the Latin alphabet, to which the table is keyed one sign per letter (Wikipedia; Peterson calls it 'clearly based on the Latin alphabet'). Theban has no numerical values."
+    },
+    {
+      "order": 16,
+      "name": "Q",
+      "value": "Q",
+      "translit": "q",
+      "numeric": null,
+      "form": "NOT DESCRIBED. I could not see any image of this sign (1518 Polygraphia, 1533 Agrippa, 1561 French Polygraphie or Barrett's 1801 plate), and no source I could reach describes its strokes in words. I will not describe it from memory: the Theban letters do not follow the shapes of the Latin letters they stand for, so nothing can be inferred from the value. Trace it from the Theban table in Agrippa, De occulta philosophia III.29 (1533; Library of Congress copy, archive.org/details/DeOccultaPhilosophiaLoc1533), checked against the first printing in Trithemius's Polygraphia (July 1518; Library of Congress Fabyan copy, hdl.loc.gov/loc.rbc/fabyan.17914.1). Wikipedia's file 'Theban alphabet from De Occulta Philosophia 1533.png' is a convenient crop of the 1533 table; Barrett's 1801 plate is later and not the one to trace.",
+      "formConfidence": "low",
+      "note": "Order and value follow the Latin alphabet, to which the table is keyed one sign per letter (Wikipedia; Peterson calls it 'clearly based on the Latin alphabet'). Theban has no numerical values."
+    },
+    {
+      "order": 17,
+      "name": "R",
+      "value": "R",
+      "translit": "r",
+      "numeric": null,
+      "form": "NOT DESCRIBED. I could not see any image of this sign (1518 Polygraphia, 1533 Agrippa, 1561 French Polygraphie or Barrett's 1801 plate), and no source I could reach describes its strokes in words. I will not describe it from memory: the Theban letters do not follow the shapes of the Latin letters they stand for, so nothing can be inferred from the value. Trace it from the Theban table in Agrippa, De occulta philosophia III.29 (1533; Library of Congress copy, archive.org/details/DeOccultaPhilosophiaLoc1533), checked against the first printing in Trithemius's Polygraphia (July 1518; Library of Congress Fabyan copy, hdl.loc.gov/loc.rbc/fabyan.17914.1). Wikipedia's file 'Theban alphabet from De Occulta Philosophia 1533.png' is a convenient crop of the 1533 table; Barrett's 1801 plate is later and not the one to trace.",
+      "formConfidence": "low",
+      "note": "Order and value follow the Latin alphabet, to which the table is keyed one sign per letter (Wikipedia; Peterson calls it 'clearly based on the Latin alphabet'). Theban has no numerical values."
+    },
+    {
+      "order": 18,
+      "name": "S",
+      "value": "S",
+      "translit": "s",
+      "numeric": null,
+      "form": "NOT DESCRIBED. I could not see any image of this sign (1518 Polygraphia, 1533 Agrippa, 1561 French Polygraphie or Barrett's 1801 plate), and no source I could reach describes its strokes in words. I will not describe it from memory: the Theban letters do not follow the shapes of the Latin letters they stand for, so nothing can be inferred from the value. Trace it from the Theban table in Agrippa, De occulta philosophia III.29 (1533; Library of Congress copy, archive.org/details/DeOccultaPhilosophiaLoc1533), checked against the first printing in Trithemius's Polygraphia (July 1518; Library of Congress Fabyan copy, hdl.loc.gov/loc.rbc/fabyan.17914.1). Wikipedia's file 'Theban alphabet from De Occulta Philosophia 1533.png' is a convenient crop of the 1533 table; Barrett's 1801 plate is later and not the one to trace.",
+      "formConfidence": "low",
+      "note": "Order and value follow the Latin alphabet, to which the table is keyed one sign per letter (Wikipedia; Peterson calls it 'clearly based on the Latin alphabet'). Theban has no numerical values."
+    },
+    {
+      "order": 19,
+      "name": "T",
+      "value": "T",
+      "translit": "t",
+      "numeric": null,
+      "form": "NOT DESCRIBED. I could not see any image of this sign (1518 Polygraphia, 1533 Agrippa, 1561 French Polygraphie or Barrett's 1801 plate), and no source I could reach describes its strokes in words. I will not describe it from memory: the Theban letters do not follow the shapes of the Latin letters they stand for, so nothing can be inferred from the value. Trace it from the Theban table in Agrippa, De occulta philosophia III.29 (1533; Library of Congress copy, archive.org/details/DeOccultaPhilosophiaLoc1533), checked against the first printing in Trithemius's Polygraphia (July 1518; Library of Congress Fabyan copy, hdl.loc.gov/loc.rbc/fabyan.17914.1). Wikipedia's file 'Theban alphabet from De Occulta Philosophia 1533.png' is a convenient crop of the 1533 table; Barrett's 1801 plate is later and not the one to trace.",
+      "formConfidence": "low",
+      "note": "Order and value follow the Latin alphabet, to which the table is keyed one sign per letter (Wikipedia; Peterson calls it 'clearly based on the Latin alphabet'). Theban has no numerical values."
+    },
+    {
+      "order": 20,
+      "name": "V",
+      "value": "V",
+      "translit": "v, also u (and w written as two V signs)",
+      "numeric": null,
+      "form": "NOT DESCRIBED. I could not see any image of this sign (1518 Polygraphia, 1533 Agrippa, 1561 French Polygraphie or Barrett's 1801 plate), and no source I could reach describes its strokes in words. I will not describe it from memory: the Theban letters do not follow the shapes of the Latin letters they stand for, so nothing can be inferred from the value. Trace it from the Theban table in Agrippa, De occulta philosophia III.29 (1533; Library of Congress copy, archive.org/details/DeOccultaPhilosophiaLoc1533), checked against the first printing in Trithemius's Polygraphia (July 1518; Library of Congress Fabyan copy, hdl.loc.gov/loc.rbc/fabyan.17914.1). Wikipedia's file 'Theban alphabet from De Occulta Philosophia 1533.png' is a convenient crop of the 1533 table; Barrett's 1801 plate is later and not the one to trace.",
+      "formConfidence": "low",
+      "note": "Order and value follow the Latin alphabet, to which the table is keyed one sign per letter (Wikipedia; Peterson calls it 'clearly based on the Latin alphabet'). Theban has no numerical values. There is no separate sign for U or W. Modern usage writes U with this V sign and W as two V signs (Wikipedia; MicroWiki copy). The transliterator should map u to V and w to V+V."
+    },
+    {
+      "order": 21,
+      "name": "X",
+      "value": "X",
+      "translit": "x",
+      "numeric": null,
+      "form": "NOT DESCRIBED. I could not see any image of this sign (1518 Polygraphia, 1533 Agrippa, 1561 French Polygraphie or Barrett's 1801 plate), and no source I could reach describes its strokes in words. I will not describe it from memory: the Theban letters do not follow the shapes of the Latin letters they stand for, so nothing can be inferred from the value. Trace it from the Theban table in Agrippa, De occulta philosophia III.29 (1533; Library of Congress copy, archive.org/details/DeOccultaPhilosophiaLoc1533), checked against the first printing in Trithemius's Polygraphia (July 1518; Library of Congress Fabyan copy, hdl.loc.gov/loc.rbc/fabyan.17914.1). Wikipedia's file 'Theban alphabet from De Occulta Philosophia 1533.png' is a convenient crop of the 1533 table; Barrett's 1801 plate is later and not the one to trace.",
+      "formConfidence": "low",
+      "note": "Order and value follow the Latin alphabet, to which the table is keyed one sign per letter (Wikipedia; Peterson calls it 'clearly based on the Latin alphabet'). Theban has no numerical values."
+    },
+    {
+      "order": 22,
+      "name": "Y",
+      "value": "Y",
+      "translit": "y",
+      "numeric": null,
+      "form": "NOT DESCRIBED. I could not see any image of this sign (1518 Polygraphia, 1533 Agrippa, 1561 French Polygraphie or Barrett's 1801 plate), and no source I could reach describes its strokes in words. I will not describe it from memory: the Theban letters do not follow the shapes of the Latin letters they stand for, so nothing can be inferred from the value. Trace it from the Theban table in Agrippa, De occulta philosophia III.29 (1533; Library of Congress copy, archive.org/details/DeOccultaPhilosophiaLoc1533), checked against the first printing in Trithemius's Polygraphia (July 1518; Library of Congress Fabyan copy, hdl.loc.gov/loc.rbc/fabyan.17914.1). Wikipedia's file 'Theban alphabet from De Occulta Philosophia 1533.png' is a convenient crop of the 1533 table; Barrett's 1801 plate is later and not the one to trace.",
+      "formConfidence": "low",
+      "note": "Order and value follow the Latin alphabet, to which the table is keyed one sign per letter (Wikipedia; Peterson calls it 'clearly based on the Latin alphabet'). Theban has no numerical values."
+    },
+    {
+      "order": 23,
+      "name": "Z",
+      "value": "Z",
+      "translit": "z",
+      "numeric": null,
+      "form": "NOT DESCRIBED. I could not see any image of this sign (1518 Polygraphia, 1533 Agrippa, 1561 French Polygraphie or Barrett's 1801 plate), and no source I could reach describes its strokes in words. I will not describe it from memory: the Theban letters do not follow the shapes of the Latin letters they stand for, so nothing can be inferred from the value. Trace it from the Theban table in Agrippa, De occulta philosophia III.29 (1533; Library of Congress copy, archive.org/details/DeOccultaPhilosophiaLoc1533), checked against the first printing in Trithemius's Polygraphia (July 1518; Library of Congress Fabyan copy, hdl.loc.gov/loc.rbc/fabyan.17914.1). Wikipedia's file 'Theban alphabet from De Occulta Philosophia 1533.png' is a convenient crop of the 1533 table; Barrett's 1801 plate is later and not the one to trace.",
+      "formConfidence": "low",
+      "note": "Order and value follow the Latin alphabet, to which the table is keyed one sign per letter (Wikipedia; Peterson calls it 'clearly based on the Latin alphabet'). Theban has no numerical values."
+    },
+    {
+      "order": 24,
+      "name": "Final sign (labelled 'w' in 1518; Ω in 1533)",
+      "value": "None securely. Trithemius 1518 reportedly labels it 'w'. Agrippa 1533 labels it Ω. Later readers took it as '&' or as an end-of-sentence mark.",
+      "translit": "In modern use, the end of a sentence or text (·). Do not map it to a letter in the transliterator.",
+      "numeric": null,
+      "form": "PARTLY DESCRIBED. One documented feature: in Agrippa's 1533 table a small lowercase omega (ω) is attached at the bottom of the sign. A Wikipedia talk-page editor, followed by From Old Books, reports that the 1518 Polygraphia has no such ω and that Agrippa added it. The body of the sign is NOT DESCRIBED, because I could not see it. Draw the 1533 and 1518 states separately if the page shows both, and trace from the Theban table in Agrippa, De occulta philosophia III.29 (1533; Library of Congress copy, archive.org/details/DeOccultaPhilosophiaLoc1533), checked against the first printing in Trithemius's Polygraphia (July 1518; Library of Congress Fabyan copy, hdl.loc.gov/loc.rbc/fabyan.17914.1). Wikipedia's file 'Theban alphabet from De Occulta Philosophia 1533.png' is a convenient crop of the 1533 table; Barrett's 1801 plate is later and not the one to trace.",
+      "formConfidence": "low",
+      "note": "Reading this sign is disputed. According to a Wikipedia talk-page editor (Archive 1) and From Old Books, Trithemius 1518 prints it last, after Z, with a lowercase 'w'. Agrippa 1533 sets an ω at its foot and labels it Ω, which Wikipedia reads as a sign for 'End'. The 1561 French Polygraphie gives it without the ω and labels it with a sign that From Old Books reports as an ampersand. Wikipedia says later copyists, among them Barrett, took it for an ampersand or an end-of-sentence mark. The same editor's theory is that W, standing out of alphabetical order, was misread as ω. That is one editor's suggestion. It is not scholarship."
+    }
+  ],
+  "lettersSource": "ORDER AND VALUES: the Latin alphabet A–Z without J, U or W (23 signs), plus a final sign. The sources for this are Wikipedia's account of the 1533 table, its statement that J, U and W have no signs and are written I, V and VV in modern use, and Omniglot (letter list only). FORMS: NONE VERIFIED. No image or facsimile could be viewed in this environment, and I found no text that describes the glyphs sign by sign. Each 'form' is therefore marked NOT DESCRIBED. The only exception is the documented ω attached to the final sign in 1533.\nTrace the signs from Agrippa 1533 III.29 (Library of Congress copy on archive.org) and check them against the 1518 woodcut (Library of Congress Fabyan copy; Folger and Wellcome also hold copies). Where the two differ, follow the 1518 woodcut and record the 1533 variant.\nAvoid the re-cut 1651 table, Barrett's 1801 plate and modern fonts or charts as the base, because their forms may have drifted. Joseph H. Peterson's CC-BY fonts at esotericarchives.com/fonts cover Agrippa's Celestial, Malachim and Transitus fluvii. I did not confirm whether they include a Theban font.",
+  "uses": [
+    {
+      "use": "A secret script for concealing magical writing, as Trithemius frames it.",
+      "evidence": "Trithemius says Honorius used it to hide his 'follies in magic' (1518, quoted in secondary sources). This describes the purpose Trithemius claims. It is not evidence of medieval use."
+    },
+    {
+      "use": "Characters for the names and seals of spirits, in Agrippa's learned magic.",
+      "evidence": "Agrippa places it in III.29, on the characters and seals of spirits (1651 heading), beside the Hebrew-keyed alphabets of III.30 (1533)."
+    },
+    {
+      "use": "Copied into a manuscript of Honorius material.",
+      "evidence": "BL Sloane MS 3853 includes it and names Agrippa as the source (Wikipedia; Peterson)."
+    },
+    {
+      "use": "Reference plate for 19th- and 20th-century occultists.",
+      "evidence": "Barrett's Magus (1801) plate, with Theban over the three Hebrew-keyed alphabets. Most modern charts follow it."
+    },
+    {
+      "use": "Modern Wiccan and witchcraft practice ('the witches' alphabet').",
+      "evidence": "It is used for writing names on ritual tools and candles and for private entries in Books of Shadows (Wikipedia; practitioner sites). The report of Gardner's ring is second-hand. Reported here neutrally. No living organisation's texts or emblems are reproduced."
+    }
+  ],
+  "quotations": [
+    {
+      "text": "Sequitur aliud alphabetum Honorii cognomento Thebani, cuius ministerio suas in magicis fatuitates abscondit, sicut Petrus de Apono testatur in suo maiore libro quarto.",
+      "translation": "Original Latin as quoted in Wikipedia's 'The Sworn Book of Honorius' (cited to p. 597) and in Peterson's introduction to The Sworn Book of Honorius. I did not check it against the 1518 page. My own paraphrase: 'Next follows another alphabet, that of Honorius surnamed the Theban, by whose means he hid away his follies in magic, as Petrus de Apono testifies in his greater fourth book.'",
+      "source": "Johannes Trithemius, Polygraphia (Basel or Oppenheim, 1518), the introduction to the Theban table. The book number is unsettled: Peterson cites book 6, and the 1561 French has it in Book V, fol. 184v."
+    },
+    {
+      "text": "Of the Characters and Seals of Spirits.",
+      "translation": "J.F. (John Freake or John French), Three Books of Occult Philosophy, London: R.W. for Gregory Moule, 1651, as transcribed by Joseph H. Peterson (Esoteric Archives)",
+      "source": "Agrippa, De occulta philosophia, Book III, chapter 29 (chapter heading), the chapter that prints the Theban alphabet"
+    }
+  ],
+  "links": [
+    {
+      "to": "latin",
+      "relation": "Keyed one-for-one to the Latin alphabet in Latin order (23 signs; I for J, V for U, VV for W)."
+    },
+    {
+      "to": "celestial",
+      "relation": "Printed in the chapter before it (Agrippa III.29, with the Celestial in III.30). Barrett's 1801 plate sets Theban directly above the Celestial Writing."
+    },
+    {
+      "to": "malachim",
+      "relation": "Agrippa III.30's middle alphabet. The Pietro d'Abano attribution belongs to the Theban, not to the Malachim."
+    },
+    {
+      "to": "transitus-fluvii",
+      "relation": "Agrippa III.30's third alphabet. It shares Barrett's four-register plate with Theban."
+    }
+  ],
+  "cautions": [
+    "LETTER FORMS ARE NOT DESCRIBED. Drawing 'Agrippa's Theban' from this file would mean inventing it. Trace the 23 signs and the final sign from the 1533 table, checked against the 1518 woodcut, or show a gap.",
+    "Do not say 'Honorius of Thebes invented it' or 'a medieval script'. Say that Trithemius ascribes it to Honorius surnamed the Theban, citing Pietro d'Abano, and that no copy earlier than 1518 is known.",
+    "Do not date it 1531 (Book I only) or 1521. Its first printing is 1518 (Trithemius). Agrippa's is 1533, Book III, chapter 29. Do not confuse III.29 with III.30, which holds the Celestial, Malachim and Transitus fluvii alphabets.",
+    "The d'Abano 'greater fourth book' has never been identified. Report it as Trithemius's claim.",
+    "The final sign has four readings: w (1518), Ω/end (1533), '&' (1561) and end-mark (Barrett and modern use). Present it as such. Do not make it a letter in the transliterator.",
+    "Theban is not in Unicode, so draw it as vector glyphs. Do not fake it with a font that substitutes Latin letters.",
+    "Wiccan use should be reported neutrally. Do not reproduce Book of Shadows texts or any living organisation's emblems.",
+    "Unverified owing to search limits: the book, folio and page of the 1518 printing; the plate or page of Barrett 1801; the p. 438 of the 1651 edition; whether Agrippa's 1510 draft has III.29; Buckland's or other Wiccan authors' first use; the Gardner ring (second-hand). The search budget for this run was exhausted before these could be settled."
+  ],
+  "sources": [
+    {
+      "citation": "Johannes Trithemius, Polygraphiae libri sex, 1518 (colophon July 1518; impensis Ioannis Haselbergi de Aia), Library of Congress catalogue record",
+      "url": "https://www.loc.gov/item/32017914"
+    },
+    {
+      "citation": "The same, Library of Congress Rare Book Division, Fabyan collection, digitised page view",
+      "url": "https://hdl.loc.gov/loc.rbc/fabyan.17914.1"
+    },
+    {
+      "citation": "The same, Folger Shakespeare Library catalogue record (printing chiefly by Michael Furter, Basel; Oppenheim in some repertories)",
+      "url": "https://catalog.folger.edu/record/263020?ln=en"
+    },
+    {
+      "citation": "The same, UVaDoc (Universidad de Valladolid) record (ICCU: Basel; Haselberg itinerant in Basel 1518–19)",
+      "url": "https://uvadoc.uva.es/handle/10324/25253"
+    },
+    {
+      "citation": "The same, Wellcome Collection record",
+      "url": "https://wellcomecollection.org/works/ukbqdd75"
+    },
+    {
+      "citation": "The same, Metropolitan Museum of Art record (woodcuts by Hans Springinklee)",
+      "url": "https://www.metmuseum.org/art/collection/search/358137"
+    },
+    {
+      "citation": "Pandolfini, auction 1394, 'The oldest known source of the so-called \"Witches' Alphabet\"' (Polygraphiae libri sex, [Basel], Haselberg, 1518)",
+      "url": "https://www.pandolfini.it/uk/auction-1394/the-oldest-known-source-of-the-so-called-quotwitches-alphabetquot-12025007617"
+    },
+    {
+      "citation": "ABAA bookseller description of the Polygraphia (alphabets in Book V; Clavis Polygraphiae)",
+      "url": "https://abaa.org/book/1376710462"
+    },
+    {
+      "citation": "Trithemius, Polygraphie, et universelle escriture cabalistique, trans. Gabriel de Collange, Paris: [Benoît Prévost] for Jacques Kerver, 1561: Theban page, fol. 184v (Wikimedia Commons scan)",
+      "url": "https://commons.wikimedia.org/wiki/File:Theban_Alphabet_in_Trithemius,_Polygraphie_(1561),_184v.tif"
+    },
+    {
+      "citation": "Sotheby's, Library of Erwin Tomash, lot 669 (1561 French Polygraphie: Prévost for Kerver; Collange)",
+      "url": "https://www.sothebys.com/en/auctions/ecatalogue/2018/the-library-of-erwin-tomash-l18409/lot.669.html"
+    },
+    {
+      "citation": "Heinrich Cornelius Agrippa, De occulta philosophia libri tres, [Cologne: J. Soter?], July 1533, Book III ch. 29 (Library of Congress copy, digitised)",
+      "url": "https://archive.org/details/DeOccultaPhilosophiaLoc1533"
+    },
+    {
+      "citation": "Eton College Library catalogue record of the 1533 edition ('[J. Soter?]'; Adams suggests Basel)",
+      "url": "https://catalogue.etoncollege.com/B25098"
+    },
+    {
+      "citation": "Wikipedia file 'Theban alphabet from De Occulta Philosophia 1533.png' (crop of the 1533 table)",
+      "url": "https://en.wikipedia.org/wiki/File:Theban_alphabet_from_De_Occulta_Philosophia_1533.png"
+    },
+    {
+      "citation": "Wikimedia Commons, Category: Theban alphabet",
+      "url": "https://commons.wikimedia.org/wiki/Category:Theban_alphabet"
+    },
+    {
+      "citation": "Agrippa, Of Occult Philosophy, Book III, ed. Joseph H. Peterson, Esoteric Archives (ch. xxix, 'Of the Characters and Seals of Spirits', with note quoting Trithemius)",
+      "url": "https://www.esotericarchives.com/agrippa/op3.htm"
+    },
+    {
+      "citation": "Agrippa, Three Books of Occult Philosophy, Book III part 3, ed. Joseph H. Peterson, Esoteric Archives",
+      "url": "https://www.esotericarchives.com/agrippa/agripp3c.htm"
+    },
+    {
+      "citation": "Agrippa, Three Books of Occult Philosophy, trans. J.F., London: R.W. for Gregory Moule, 1651 (EEBO-TCP A26565)",
+      "url": "https://quod.lib.umich.edu/e/eebo/A26565.0001.001?view=toc"
+    },
+    {
+      "citation": "Agrippa, De occulta philosophia libri tres, ed. Vittoria Perrone Compagni, Leiden: Brill, 1992 (Wellcome record; not consulted)",
+      "url": "https://wellcomecollection.org/works/ymvvbx6a"
+    },
+    {
+      "citation": "Stanford Encyclopedia of Philosophy, 'Heinrich Cornelius Agrippa von Nettesheim' (1510 draft sent to Trithemius; 1533 edition)",
+      "url": "https://plato.stanford.edu/entries/agrippa-nettesheim/"
+    },
+    {
+      "citation": "Joseph H. Peterson (ed.), The Sworn Book of Honorius: Liber Iuratus Honorii (Ibis Press), introduction: Trithemius's attribution, Sloane 3853, 'clearly based on the Latin alphabet'. The online edition is cited here; the introduction was read via a search summary of a PDF copy.",
+      "url": "https://www.esotericarchives.com/juratus/juratus.htm"
+    },
+    {
+      "citation": "Wikipedia, 'The Sworn Book of Honorius' (Latin of the Trithemius sentence, cited to p. 597; 'son of Euclid, master of the Thebans')",
+      "url": "https://en.wikipedia.org/wiki/The_Sworn_Book_of_Honorius"
+    },
+    {
+      "citation": "Wikipedia, 'Theban alphabet' (Trithemius 1518; Agrippa III.29 1533; d'Abano not attested; Sloane 3853; final sign; Wicca)",
+      "url": "https://en.wikipedia.org/wiki/Theban_alphabet"
+    },
+    {
+      "citation": "Wikipedia, 'Talk:Theban alphabet/Archive 1' (Latin of the Trithemius passage; 1561 French p. 184, Book V; 'w' versus ω)",
+      "url": "https://en.wikipedia.org/wiki/Talk:Theban_alphabet/Archive_1"
+    },
+    {
+      "citation": "Wikipedia (German), 'Thebanisches Alphabet' (Polygraphia completed 1508, printed 1518)",
+      "url": "https://de.wikipedia.org/wiki/Thebanisches_Alphabet"
+    },
+    {
+      "citation": "Wikipedia, 'Polygraphia (book)'",
+      "url": "https://en.wikipedia.org/wiki/Polygraphia_(book)"
+    },
+    {
+      "citation": "From Old Books, 'Theban Alphabet of Peter Apponus' (Agrippa plate; notes on the ω and Ω and on the 1561 reading)",
+      "url": "https://www.fromoldbooks.org/Various-Occult/pages/Agrippa-558-Peter-Apponus-Theban-Alphabet/"
+    },
+    {
+      "citation": "Francis Barrett, The Magus (London, 1801), plate of Theban, Celestial Writing, Malachim, Passing the River (Source Library)",
+      "url": "https://sourcelibrary.org/artwork/magische-alphabete-barrett-the-magus"
+    },
+    {
+      "citation": "Wikimedia Commons, Category: The Magus (Francis Barrett) (plate 'Theban Alphabet')",
+      "url": "https://commons.wikimedia.org/wiki/Category:The_Magus_(Francis_Barrett)"
+    },
+    {
+      "citation": "Barrett, The Magus (1801), full scan (Wellcome b22006795) on Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:The_Magus,_or_Celestial_Intelligencer_(1801,_Francis_Barrett,_b22006795).pdf"
+    },
+    {
+      "citation": "Wikipedia, 'The Magus (Barrett book)' (largely compiled from Agrippa, the pseudo-Agrippan Fourth Book and Turner's Heptameron)",
+      "url": "https://en.wikipedia.org/wiki/The_Magus_(Barrett_book)"
+    },
+    {
+      "citation": "Unicode mailing list, 'Re: Theban alphabet?' (February 2002): Raymond's draft; Everson and Whistler on Theban as a Latin cipher",
+      "url": "https://unicode.org/mail-arch/unicode-ml/y2002-m02/0542.html"
+    },
+    {
+      "citation": "Unicode mailing list, 'Re: Theban alphabet?' (February 2002), second message",
+      "url": "https://unicode.org/mail-arch/unicode-ml/y2002-m02/0492.html"
+    },
+    {
+      "citation": "Ronald Hutton, The Triumph of the Moon: A History of Modern Pagan Witchcraft (Oxford University Press, 1999; rev. 2019). Not consulted; cited second-hand for the Gardner ring.",
+      "url": "https://books.google.com/books/about/The_Triumph_of_the_Moon.html?id=f5OwDwAAQBAJ"
+    },
+    {
+      "citation": "Patheos, Adamantine Muse blog, 'The Theban Script: (Not So) Secret Alphabet Of The Witches' (June 2016); practitioner blog, used only for the second-hand Hutton/Valiente report",
+      "url": "https://www.patheos.com/blogs/adamantinemuse/2016/06/the-theban-script-not-so-secret-alphabet-of-the-witches/"
+    },
+    {
+      "citation": "History of Information, 'Johannes Trithemius Issues the First Book on Cryptography' (publication delayed by ecclesiastical disapproval)",
+      "url": "https://historyofinformation.com/detail.php?id=348"
+    },
+    {
+      "citation": "The Occult and Magick blog, 'The Theban Alphabet' (April 2011); hobby blog, cited only as the source of the unsupported Golden Dawn/OTO claim",
+      "url": "http://theoccultandmagick.blogspot.com/2011/04/theban-alphabet.html"
+    },
+    {
+      "citation": "Omniglot, 'Theban alphabet' (letter list only)",
+      "url": "https://www.omniglot.com/conscripts/theban.htm"
+    }
+  ],
+  "confidence": "SOLID: first printing in Trithemius's Polygraphia (colophon July 1518; Haselberg; Basel or Oppenheim, disputed). Also solid: Trithemius's ascription to 'Honorius surnamed the Theban' on d'Abano's testimony; the absence of the alphabet from known d'Abano writings and from the Liber iuratus, except Sloane 3853, which copies Agrippa; Agrippa's reprint in III.29 of the 1533 edition with the d'Abano and Honorius credit; the Latin-keyed inventory of 23 signs plus a final sign; Barrett's 1801 plate; modern Wiccan use; and the absence of a Unicode encoding (as of the 2002 discussion).\nSHAKY: the book number and page of the 1518 printing (VI versus V; p. 579 versus 597); the exact 1561 and Barrett readings of the final sign; the 1651 page; the Gardner ring (second-hand); how the alphabet reached Gardner.\nABSENT: every letter form. None were seen. All 24 must be traced from the 1533 and 1518 tables."
+}

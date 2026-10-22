@@ -1,0 +1,1036 @@
+{
+  "key": "trithemius",
+  "title": "Johannes Trithemius and the secret alphabets",
+  "otherNames": [
+    "Johannes Trithemius (from Trittenheim on the Moselle, his birthplace)",
+    "Johann Heidenberg (his family name; fact-checker's and researcher's knowledge, not verified against a source in this run)",
+    "the Abbot of Sponheim (Latin Spanheimensis; 'Spanhemia' in the 1651 English of his letter to Agrippa)",
+    "abbas Peapolitanus, quondam Spanheimensis ('abbot of Peapolis, formerly of Sponheim'): nominative form of the genitive in the 1518 title, 'Polygraphiae libri sex Ioannis Trithemii abbatis Peapolitani, quondam Spanheimensis'",
+    "'John Tritemius, Abbot of Saint James of Herbipolis' (1651 English heading of his letter to Agrippa)"
+  ],
+  "family": "Not a single alphabet: an author-and-books item. It covers the books in which Trithemius carried cipher and secret alphabets into manuscript and print (the Steganographia, begun 1499 and printed 1606; the Polygraphia, a manuscript version presented to Maximilian in 1508 and printed in July 1518), Agrippa's visit and the exchange over the draft of De occulta philosophia (reply dated 8 April 1510), and the Golden Dawn Cipher Manuscripts (brought forward 1887), written in English in a Trithemian cipher alphabet keyed to the Latin letters. The two alphabets this file treats (the Theban table he ascribes to Honorius, and the Golden Dawn cipher) are keyed to the Latin letters, not to the Hebrew like the ring-letter alphabets of Agrippa III.30. The rest of the Polygraphia's catalogue has not been inventoried, so no claim is made about all of it.",
+  "summary": "Johannes Trithemius (1462–1516), Benedictine abbot of Sponheim and, from 1506, of St Jakob at Würzburg, wrote two of the founding books of early modern secret writing. His Steganographia (begun 1499 and left unfinished; printed at Frankfurt in 1606; placed on the Index in 1609) hides cipher methods under conjurations of angels and spirits; its Book III was publicly solved as cipher only in 1996–98, although Heidel had solved it in 1676 and printed his answer in a cipher of his own. His Polygraphia, presented in manuscript to Maximilian in 1508 and printed after his death in July 1518, is commonly called the first printed book on cryptography; it has word tables (the so-called 'Ave Maria' cipher), a square table (tabula recta) and a catalogue of alphabets that includes one he ascribes to 'Honorius surnamed the Theban'. Agrippa visited him at Würzburg and then sent him the draft of De occulta philosophia, to which he replied on 8 April 1510; in 1887 Westcott brought forward the Golden Dawn's Cipher Manuscripts, written in English in a cipher alphabet taken from Trithemius.",
+  "firstAttestation": {
+    "work": "Polygraphiae libri sex Ioannis Trithemii abbatis Peapolitani, quondam Spanheimensis, ad Maximilianum Caesarem",
+    "author": "Johannes Trithemius (1462–1516), abbot of Sponheim, then from 1506 abbot of St Jakob (the Schottenkloster) at Würzburg (GND record and SEP, as reported by theban.verified.json (a search-backed sibling fact-check of this session)). 'Peapolitanus' in the title refers to the Würzburg house: in the 1651 English front matter (EEBO-TCP A26565 (Wing A789), local clone of github.com/textcreationpartnership/A26565, read as data in this check) Trithemius heads his letter 'John Tritemius, Abbot of Saint James of Herbipolis, formerly of Spanhemia' and dates it 'From our Monastery of Peapolis', and Agrippa addresses him as 'an Abbot of Saint James in the Suburbs of Herbipolis'. The Graecising etymology of 'Peapolis' (from Herbipolis) is the researcher's gloss and is not verified.",
+    "date": "July 1518 (printing, posthumous). The Library of Congress record transcribes the imprint as 'anno a Christo nato MDXVIII men. Iulio'; the Folger record as 'anno MDXVIII mense Iulio'; the UVaDoc record notes two colophons and takes its data from the second, at sig. C3v (all as reported by theban.verified.json (a search-backed sibling fact-check of this session); the research file's '1518 mense Iulio' was a loose transcription). Trithemius died in December 1516 (13 December by the fact-checker's knowledge; not verified here). Composition: an NSA Center for Cryptologic History pamphlet says he BEGAN it at Würzburg in 1508; German Wikipedia says he COMPLETED it in 1508; the publisher's description of Maximilian Gamer's edition (Brill, 2022) says he dedicated a first, manuscript version to Maximilian I in 1508 and handed over an autograph (all as reported by theban.verified.json (a search-backed sibling fact-check of this session)). The research file credited 'begun in 1508' to the Library of Congress; the theban fact-check did not find it in the LoC record, so that attribution is withdrawn.",
+    "place": "Basel or Oppenheim; the sources disagree. The colophon names the bookseller Johannes Haselberg 'de Aia', of the diocese of Constance, at whose cost it was printed; the Folger record says he was active at Reichenau 1515–1537. Folger gives the printing chiefly to Michael Furter of Basel, but also records that Furter died between 5 March and 2 May 1517, over a year before the July 1518 colophon; it lists Panzer, Brunet, Grässe, Caillet, LC and Shulman for Oppenheim, and Isaac, Dodgson, BM STC and Wellcome for Adam Petri, Basel. Wellcome reads '[Basle]: A. Petri'; the Metropolitan Museum names Adam Petri; a Christie's lot gives Oppenheim, Jakob Köbel; the current LoC record gives Basel; UVaDoc reports ICCU placing Haselberg in Basel in 1518–19. Woodcuts: the Met credits Hans Springinklee, but the Folger notes that Dodgson gives the title woodcut to Springinklee and M. Lankorońska (Gutenberg-Jahrbuch 1955) to an artist of Burgkmair's workshop. All as reported by theban.verified.json (a search-backed sibling fact-check of this session); not re-seen here.",
+    "locator": "Whole work (printed 1518). The book, folio and signature of the alphabet catalogue in the 1518 printing are NOT verified, and the sources conflict. (a) Peterson (The Sworn Book of Honorius, introduction) cites the Theban passage as 'Polygraphia 6, 1508, p. 579', i.e. Book VI. (b) Wikipedia cites p. 597. Neither can be a page of the 1518 printing, which is unpaginated (about 255–270 leaves by the Pandolfini, UVaDoc and ABAA collations); they fit a paginated later edition such as Zetzner's Strasbourg octavo of 1600 (612 pp.) or its 1613 reprint (an inference from the collations, reported by theban.verified.json (a search-backed sibling fact-check of this session)). (c) In the 1561 French translation the Theban page is fol. 184v; a Wikipedia talk-page editor places it in Book V, which the theban fact-check could not confirm, and in any case the French arrangement does not settle the 1518 Latin book number. (d) The ABAA description's 'Book V' could not be seen in a snippet by the theban fact-check. Book V or VI stays open.",
+    "notes": "This is the first PRINTED attestation of a Trithemian cipher alphabet, so far as the sources seen report (an inference from the absence of any earlier printing in them). It may not be the first attestation: the 1508 autograph manuscript of the Polygraphia given to Maximilian (critical edition by Maximilian Gamer, Brill, 2022) was not checked for the catalogue of alphabets or the Theban table, and the Steganographia (begun 1499) circulated in manuscript for a century. Trithemius's secret-writing project is mentioned earlier, in his letter of 1499 to the Carmelite Arnold Bostius announcing the Steganographia (researcher's and fact-checker's knowledge, not verified; the fact-checker recalls 25 March 1499). The Steganographia itself was not printed until 1606 (house timeline)."
+  },
+  "transmission": [
+    {
+      "date": "1499 (month and day not verified; the fact-checker recalls 25 March 1499)",
+      "work": "Letter to Arnold Bostius, Carmelite of Ghent",
+      "author": "Johannes Trithemius",
+      "what": "He announces the Steganographia. By the accounts of Brann (1981, 1999), as recalled by the researcher and the fact-checker, Bostius died before the letter reached him, the prior of his house read it instead, and it circulated and gave Trithemius a name for dealing with demons. Nothing on this card was verified in this run."
+    },
+    {
+      "date": "1499 to about 1500",
+      "work": "Steganographia (manuscript)",
+      "author": "Johannes Trithemius, at Sponheim",
+      "what": "Begun in 1499 and left unfinished; it circulated in manuscript for about a century (house timeline). Books I and II give conjurations of spirits with long 'barbarous' names; Book III gives the seven planetary angels with tables of numbers (prior knowledge, not verified in this run). The angel-magic surface carries cipher systems underneath (house timeline)."
+    },
+    {
+      "date": "about 1503–1504 (visit); 1509 (letter); printed 1510 or 1511 (all dates not verified)",
+      "work": "Letter to Germain de Ganay",
+      "author": "Charles de Bovelles (Carolus Bovillus)",
+      "what": "Bovelles saw part of the Steganographia manuscript at Sponheim, later denounced it in a letter as demonic, and the letter's printing did much to fix Trithemius's reputation as a magician. All prior knowledge, not verified in this run; every date here (visit 1503 or 1504; letter to Germain de Ganay 1509; printing 1510 or 1511) needs checking (Brann 1999)."
+    },
+    {
+      "date": "1508",
+      "work": "Polygraphia (composition at Würzburg); also De septem secundeis and Antipalus maleficiorum",
+      "author": "Johannes Trithemius",
+      "what": "A first, manuscript version of the Polygraphia is written at Würzburg and presented to the Emperor Maximilian: the publisher's description of Gamer's edition (Brill, 2022) says Trithemius dedicated it to Maximilian I in 1508 and handed over an autograph, and that this version differs from the 1518 printing; an NSA pamphlet says he began it in 1508; German Wikipedia says he completed it then (all as reported by theban.verified.json (a search-backed sibling fact-check of this session)). Whether the 1508 manuscript already holds the alphabet catalogue was NOT checked. Also attested, from a checked primary text: Agrippa III.24 says that 'Abbas Tritemius writ to Maximilian Caesar a speciall Treatise' on the seven planetary intelligences, each of which governs the world for 354 years and four months (1651 English, p. 416; EEBO-TCP A26565 (Wing A789), local clone of github.com/textcreationpartnership/A26565, read as data in this check). That is the treatise known as De septem secundeis; its title and its 1508 date are the researcher's knowledge, not verified. The Antipalus maleficiorum (1508, with its list of condemned magic books) is likewise prior knowledge, not verified."
+    },
+    {
+      "date": "1509–1510 (visit in the winter of 1509–10, per SEP as reported by the theban fact-check); reply dated 8 April 1510",
+      "work": "De occulta philosophia, first draft (manuscript), and the exchange of letters",
+      "author": "Heinrich Cornelius Agrippa; Johannes Trithemius",
+      "what": "Agrippa visited Trithemius at St Jakob, Würzburg: his dedicatory letter begins 'When I was of late (most reverend Father) for a while conversant with you in your Monastery of Herbipolis' (1651 English). Afterwards he sent him the draft of De occulta philosophia: Trithemius's reply speaks of 'Your work ... Entituled Of Occult Phylosophy, which you have sent by this bearer, to me to be examined', and is dated 'From our Monastery of Peapolis, the 8. day of April, An. M. D. X.' (both 1651 English, EEBO-TCP A26565 (Wing A789), local clone of github.com/textcreationpartnership/A26565, read as data in this check). Note that the house timeline (latin.js) says Agrippa 'brought him a manuscript to read'; the 1651 letter says it was sent by a bearer. The draft is reported to survive as Würzburg, Universitätsbibliothek, M. ch. q. 50 (sibling research; not seen). Whether it already held the secret alphabets of III.29–30 is NOT established."
+    },
+    {
+      "date": "July 1518",
+      "work": "Polygraphiae libri sex ([Basel or Oppenheim], at the expense of Johannes Haselberg)",
+      "author": "Johannes Trithemius (posthumous)",
+      "what": "The first printing. It contains, by the researcher's knowledge (not verified in this run), the word tables of Book I (the 'Ave Maria' cipher) and the tabula recta (Book V), and, by the sibling research, a catalogue of alphabets that includes the Theban, introduced as 'another alphabet of Honorius surnamed the Theban' on Petrus de Apono's testimony. A key (Clavis Polygraphiae) is mentioned in a bookseller's description; UVaDoc's report of two colophons (the second at sig. C3v) fits a separately signed key, but that is an inference."
+    },
+    {
+      "date": "1533 (colophon July 1533)",
+      "work": "De occulta philosophia libri tres ([Cologne: J. Soter?]; Adams suggests Basel)",
+      "author": "Heinrich Cornelius Agrippa",
+      "what": "The complete edition. Book III, chapter 29 prints the Theban alphabet with the same ascription to Honorius, but Agrippa does not name Trithemius: he gives the characters 'which Peter Apponus notes, as delivered by Honorius of Thebes' (1651 English, p. 438, EEBO-TCP A26565 (Wing A789), local clone of github.com/textcreationpartnership/A26565, read as data in this check). His dependence on the Polygraphia is an inference from the agreement of the two texts, which Peterson's edition annotates (sibling research). In 'To the Reader' Agrippa says he gave the books to Trithemius ('a Neapolitanian Abbot, formerly a Spanhemensian' in the 1651 English), that they circulated imperfect in manuscript, and that for the print 'we added some Chapters' (1651 English, front matter, checked). The front matter also carries Agrippa's letter to Trithemius and the reply of 8 April 1510: checked in the 1651 English; their presence in the 1533 Latin is the fact-checker's knowledge, not checked. Colophon July 1533 (McGill and Utrecht records, as reported by sibling research)."
+    },
+    {
+      "date": "1561",
+      "work": "Polygraphie, et universelle escriture cabalistique (Paris: [Benoît Prévost] for Jacques Kerver)",
+      "author": "Trithemius, translated by Gabriel de Collange",
+      "what": "The first French translation (Paris: Benoît Prévost for Jacques Kerver, per Sotheby's Tomash lot 669, as reported by the theban fact-check). Wikimedia Commons has its Theban page, fol. 184v (Boston Public Library copy). A Wikipedia talk-page editor calls it Book V; that book number was not confirmed. The Commons description's rendering of the French heading names Honorius 'surnamed Thebanus' and does not mention d'Abano."
+    },
+    {
+      "date": "1563 (letter dated 16 February 1562/3, Old Style; not verified)",
+      "work": "Letter to William Cecil, from Antwerp",
+      "author": "John Dee",
+      "what": "Dee reports from Antwerp that he has found a manuscript of the Steganographia, a book much sought after by learned men, and has been copying it with great labour (the fact-checker recalls that Dee speaks of having copied one half of it). All prior knowledge, not verified in this run; Clulee (1988) discusses the letter. This is twenty years before his angelic alphabet (see the enochian item)."
+    },
+    {
+      "date": "1606",
+      "work": "Steganographia (Frankfurt)",
+      "author": "Johannes Trithemius (posthumous)",
+      "what": "The first printing, about a century after it was written (house timeline). By prior knowledge, not verified in this run, a Clavis (key) said to be the author's own is prefixed to the work; the fact-checker recalls the imprint as Frankfurt, Johann Saur for Johann Berner, also unverified."
+    },
+    {
+      "date": "1609",
+      "work": "Index of Prohibited Books",
+      "author": "Roman Catholic Church",
+      "what": "The Steganographia is placed on the Index (house timeline). Its reported removal in 1900 is not verified."
+    },
+    {
+      "date": "1624",
+      "work": "Cryptomenytices et cryptographiae libri IX (Lüneburg)",
+      "author": "'Gustavus Selenus' (August the Younger, Duke of Brunswick-Lüneburg)",
+      "what": "A large manual of cryptography that expounds Trithemius's systems, including the Steganographia's (prior knowledge, not verified in this run)."
+    },
+    {
+      "date": "1651",
+      "work": "Three Books of Occult Philosophy (London: R.W. for Gregory Moule)",
+      "author": "Agrippa, translated by 'J.F.'",
+      "what": "The English translation, 'Printed by R.W. for Gregory Moule', London, 1651 (Wing A789). The TCP record says 'The translator is probably John French'. It gives Agrippa's letter to Trithemius and Trithemius's reply in English; the quotations below were checked against it (EEBO-TCP A26565 (Wing A789), local clone of github.com/textcreationpartnership/A26565, read as data in this check)."
+    },
+    {
+      "date": "17th century (manuscripts)",
+      "work": "Lemegeton (Clavicula Salomonis), part 2: Ars Theurgia-Goetia",
+      "author": "anonymous",
+      "what": "Takes over the spirits of Steganographia Book I, the rulers of the compass points with their dukes and servants, and reads them as operative magic rather than as cipher (prior knowledge, not verified in this run; Peterson's introduction to The Lesser Key of Solomon, 2001, is the place to check)."
+    },
+    {
+      "date": "1676",
+      "work": "Johannis Trithemii ... Steganographia ... vindicata (Mainz)",
+      "author": "Wolfgang Ernst Heidel",
+      "what": "Defends the Steganographia as cryptography. Thomas Ernst showed that Heidel had also solved Book III and printed his solution in a cipher of his own, so that it went unread until the 1990s (house timeline). The short title is from prior knowledge, not verified in this run."
+    },
+    {
+      "date": "1887",
+      "work": "The Cipher Manuscripts (Golden Dawn)",
+      "author": "Author unknown; brought forward by William Wynn Westcott",
+      "what": "Westcott brings forward a set of ritual outlines written in English in Trithemius's cipher alphabet (house: christianities/rosicrucian.js, Westcott entry, 'brought forward the Cipher Manuscripts in 1887'; education/themes/latin.js, 'in Trithemius's cipher alphabet and in English'). The house map entry says the note found with them 'is reported to give Sprengel's address in Stuttgart, and Westcott said he wrote there in November 1887 and was answered. Whether the note belonged to the manuscripts at all is doubted.' Elsewhere the house gives Nuremberg as 'the city the story usually gives' Sprengel. Which Trithemian table the cipher follows is not established."
+    },
+    {
+      "date": "1888",
+      "work": "Hermetic Order of the Golden Dawn; the grade rituals",
+      "author": "W. R. Woodman, W. W. Westcott, S. L. MacGregor Mathers",
+      "what": "The Order opens; its founders are Woodman, Westcott and Mathers (house rosicrucian.js). Westcott gives Mathers the ritual outlines from the Cipher Manuscripts to work up into full ceremonies, and the grade rituals are Mathers's working of them (house rosicrucian.js, Westcott entry). By prior knowledge, not verified in this run, the outlines cover five grades, from Neophyte (0=0) to Philosophus (4=7)."
+    },
+    {
+      "date": "1972",
+      "work": "The Magicians of the Golden Dawn",
+      "author": "Ellic Howe",
+      "what": "Archival history. The house says that Howe's archival work (1972) and R. A. Gilbert's afterwards concluded that Westcott forged the Sprengel letters, and that the Cipher Manuscripts are 'real objects of uncertain origin' (house rosicrucian.js, esoteric.js). Howe's full title and imprint are the researcher's knowledge."
+    },
+    {
+      "date": "1992",
+      "work": "De occulta philosophia libri tres, critical edition (Leiden: Brill)",
+      "author": "Vittoria Perrone Compagni (ed.)",
+      "what": "The critical edition (Studies in the History of Christian Thought 48, by the fact-checker's knowledge). It takes account of the 1510 draft that Agrippa sent to Trithemius (Würzburg UB M. ch. q. 50, as reported). The research file's 'prints the 1510 draft alongside the 1533 text' was not supported by any checked source: how the edition presents the draft (parallel text or apparatus) is unverified. Not consulted in this run."
+    },
+    {
+      "date": "1996",
+      "work": "'Schwarzweiße Magie: Der Schlüssel zum dritten Buch der Steganographia des Trithemius', Daphnis 25; and The Complete Golden Dawn Cipher Manuscript",
+      "author": "Thomas Ernst; Darcy Küntz (ed.)",
+      "what": "Ernst breaks the ciphers of Steganographia Book III and finds Latin plaintext (house timeline). The article title and journal are the researcher's knowledge, with which the fact-checker's agrees; not verified. In the same year, by prior knowledge, not verified, Küntz publishes the Cipher Manuscripts in facsimile with a decipherment (Holmes Publishing Group). That facsimile is the place to trace the cipher letters from."
+    },
+    {
+      "date": "1998",
+      "work": "'Solved: The Ciphers in Book III of Trithemius's Steganographia', Cryptologia 22",
+      "author": "Jim Reeds",
+      "what": "Working independently of Ernst, Reeds solves Book III (house timeline). The article title and journal are the researcher's knowledge, with which the fact-checker's agrees; not verified."
+    }
+  ],
+  "claims": [
+    {
+      "claim": "Trithemius began the Steganographia in 1499 and left it unfinished.",
+      "standing": "documented",
+      "evidence": "Stated in the house timeline. His own letter to Bostius of 1499 announces the work (prior knowledge, not verified in this run). It was printed only in 1606.",
+      "sources": [
+        "House timeline, apps/web/src/data/education/timelines/latin.js, 'trithemius-steganographia'",
+        "Brann 1999 (prior knowledge, not verified in this run)"
+      ]
+    },
+    {
+      "claim": "The Steganographia is a book of angel magic.",
+      "standing": "disputed",
+      "evidence": "The surface is conjuration: spirits with barbarous names are invoked to carry messages. The conjurations of Books I and II were long understood to be cipher systems, and Book III was publicly solved as cipher in 1996–98 (Heidel had solved it in 1676). Brann and others hold that this does not dispose of the angels: Trithemius may have meant a real angelic magic and a real cipher at once, and he disowned neither reading (house timeline). The page should give both readings and endorse neither.",
+      "sources": [
+        "House timeline (latin.js)",
+        "Noel L. Brann, Trithemius and Magical Theology (1999), not consulted"
+      ]
+    },
+    {
+      "claim": "The conjurations of Steganographia Books I and II conceal cipher messages.",
+      "standing": "documented",
+      "evidence": "The house timeline says so. Heidel (1676) and, by prior knowledge, not verified in this run, the Clavis printed with the 1606 edition and Selenus (1624) expound the methods. As I recall it, the 'barbarous' words mostly carry nulls, and the letters that count are picked out by a rule; I have not checked a worked example.",
+      "sources": [
+        "House timeline (latin.js)",
+        "Heidel 1676; Selenus 1624 (prior knowledge, not verified in this run)"
+      ]
+    },
+    {
+      "claim": "Book III's planetary-angel tables were solved by Thomas Ernst (1996) and independently by Jim Reeds (1998), and had already been solved by Heidel in 1676.",
+      "standing": "documented",
+      "evidence": "Stated in the house timeline. The Heidel point is Ernst's finding: Heidel printed his solution in a cipher of his own.",
+      "sources": [
+        "House timeline (latin.js)",
+        "Ernst, Daphnis 25 (1996)",
+        "Reeds, Cryptologia 22 (1998)"
+      ]
+    },
+    {
+      "claim": "The Polygraphia (1518) is the first printed book on cryptography.",
+      "standing": "documented",
+      "evidence": "The house timeline calls it 'the first printed book of cryptography in Europe'. History of Information heads its entry 'Johannes Trithemius Issues the First Book on Cryptography' (as reported by the theban fact-check). It is posthumous, printed in July 1518. Present it as the usual description: Alberti's De componendis cifris (c. 1466) is older but was not printed in his lifetime (fact-checker's knowledge, not verified).",
+      "sources": [
+        "House timeline (latin.js)",
+        "History of Information, entry 348",
+        "Library of Congress record 32017914"
+      ]
+    },
+    {
+      "claim": "Trithemius invented the Theban alphabet.",
+      "standing": "disputed",
+      "evidence": "Trithemius does not claim it. He ascribes it to 'Honorius cognomento Thebanus' and cites Pietro d'Abano's 'greater fourth book' as his witness (Latin as quoted by Peterson). Peterson says he could not identify any such passage in d'Abano's works, and no copy earlier than 1518 is known to the sources consulted (theban fact-check), though the 1508 manuscript Polygraphia was not checked. Agrippa III.29 repeats the ascription without naming Trithemius ('which Peter Apponus notes, as delivered by Honorius of Thebes', 1651 English, p. 438, checked). The page should report Trithemius's ascription, and the open question whether he made the alphabet himself, without settling it.",
+      "sources": [
+        "Trithemius, Polygraphia (1518), via Peterson and Wikipedia (theban.verified.json)",
+        "Agrippa, Three Books of Occult Philosophy (1651), III.29, p. 438 (EEBO-TCP A26565, checked)"
+      ]
+    },
+    {
+      "claim": "The 'Frankish' letters that Trithemius gives on the authority of the chronicler Hunibald are ancient.",
+      "standing": "disputed",
+      "evidence": "By prior knowledge, not verified in this run: Trithemius cites a sixth-century Frankish historian, 'Hunibald', whom no one else attests, and scholars (Klaus Arnold; Brann) generally take Hunibald to be Trithemius's own invention. I believe the Polygraphia's catalogue includes letters credited to the Franks, but I could not confirm this or any locator in this run. Do not display such a table until it is checked.",
+      "sources": [
+        "Klaus Arnold, Johannes Trithemius (1971; 2nd ed. 1991), not consulted",
+        "Brann 1981, not consulted"
+      ]
+    },
+    {
+      "claim": "Agrippa was Trithemius's pupil.",
+      "standing": "disputed",
+      "evidence": "Popular accounts, including Wikipedia, call Agrippa his student. The documented contact is Agrippa's stay at Würzburg in the winter of 1509–10 (SEP, as reported) and the exchange of the draft and the reply of 8 April 1510, both letters checked in the 1651 English. Agrippa's own words are 'for a while conversant with you in your Monastery of Herbipolis'. Write 'Agrippa visited Trithemius and sent him his draft', not 'his pupil'.",
+      "sources": [
+        "Stanford Encyclopedia of Philosophy, 'Agrippa' (as reported by theban.verified.json)",
+        "Agrippa, Three Books of Occult Philosophy (1651), front matter (EEBO-TCP A26565, checked)",
+        "House timeline (latin.js)"
+      ]
+    },
+    {
+      "claim": "Agrippa sent Trithemius the draft of De occulta philosophia, and Trithemius replied on 8 April 1510.",
+      "standing": "documented",
+      "evidence": "Both letters are in the 1651 English front matter (checked, EEBO-TCP A26565 (Wing A789), local clone of github.com/textcreationpartnership/A26565, read as data in this check). The reply is headed 'John Tritemius, Abbot of Saint James of Herbipolis, formerly of Spanhemia, to his Henry Cornelius Agrippa of Nettes-heym, health and love', says the work was 'sent by this bearer', and is dated 'From our Monastery of Peapolis, the 8. day of April, An. M. D. X.' (the research file's remembered 'An. MDX' is corrected). The draft is reported to survive as Würzburg UB, M. ch. q. 50, and Perrone Compagni's edition takes account of it (sibling research; not seen).",
+      "sources": [
+        "Agrippa, Three Books of Occult Philosophy (London: R.W. for Gregory Moule, 1651), front matter (EEBO-TCP A26565, checked)",
+        "House timeline (latin.js, themes/latin.js)",
+        "Perrone Compagni 1992 (not consulted)"
+      ]
+    },
+    {
+      "claim": "Agrippa's 1510 draft already contained the secret alphabets of Book III, chapters 29–30.",
+      "standing": "disputed",
+      "evidence": "Not established. Agrippa's 'To the Reader' says that for the print 'we added some Chapters, and we inserted many things' (1651 English, checked), so the 1533 book is larger than the draft, but he does not say which chapters were added. None of the sibling files found evidence that III.29–30 or their alphabets were in the draft. Perrone Compagni's edition would settle it.",
+      "sources": [
+        "Agrippa, 'To the Reader', 1651 English (EEBO-TCP A26565, checked)",
+        "celestial.json",
+        "malachim.json",
+        "transitus-fluvii.json",
+        "theban.json"
+      ]
+    },
+    {
+      "claim": "Paracelsus studied under Trithemius.",
+      "standing": "attributed",
+      "evidence": "By the researcher's knowledge, not verified in this run, Paracelsus names the abbot of Sponheim among his teachers in one of his own writings (the fact-checker recalls the Grosse Wundarznei of 1536; also unverified). There is no independent evidence of instruction. Report it, if at all, as Paracelsus's own statement, with the locator once checked.",
+      "sources": [
+        "Paracelsus (locator not verified)"
+      ]
+    },
+    {
+      "claim": "Trithemius raised the shade of Mary of Burgundy for the Emperor Maximilian.",
+      "standing": "legend",
+      "evidence": "A story told of him by later sixteenth-century writers (prior knowledge, not verified in this run). It is not found in his own writings as far as I know. If the page mentions it at all, it should label it a legend.",
+      "sources": [
+        "Brann 1999 discusses the legend (prior knowledge, not verified in this run)"
+      ]
+    },
+    {
+      "claim": "The Golden Dawn Cipher Manuscripts are written in a cipher taken from Trithemius.",
+      "standing": "documented",
+      "evidence": "The house says the manuscripts are 'in Trithemius's cipher alphabet and in English' (themes/latin.js) and that Westcott 'brought forward the Cipher Manuscripts in 1887' (rosicrucian.js). Wikipedia's 'Cipher Manuscripts' (cited by the house and the malachim research; not re-seen) agrees. The malachim sibling confirms that they are not written in Malachim. WHICH Trithemian table they follow (the Polygraphia catalogue, which plate) is not established here.",
+      "sources": [
+        "House themes/latin.js",
+        "Wikipedia, 'Cipher Manuscripts' (via malachim.json)"
+      ]
+    },
+    {
+      "claim": "The Cipher Manuscripts are an old Rosicrucian document handed down from a German order.",
+      "standing": "disputed",
+      "evidence": "Their origin is unknown; they are 'real objects of uncertain origin' (house rosicrucian.js). The house Mackenzie entry says 'Some later accounts trace the Golden Dawn's Cipher Manuscripts to his papers; how Westcott came by them is not settled.' By prior knowledge, not verified in this run, Frederick Hockley and Westcott himself have also been proposed, the Revd A. F. A. Woodford is named as the intermediary in Westcott's account, and the paper is reported to bear an 1809 watermark, which would date only the paper. None of these points is verified here.",
+      "sources": [
+        "House rosicrucian.js (Mackenzie entry; ledger)",
+        "Howe 1972",
+        "Küntz 1996 (prior knowledge, not verified in this run)"
+      ]
+    },
+    {
+      "claim": "Westcott received a charter for the Golden Dawn from Fräulein Anna Sprengel, an adept whose address was found with the Cipher Manuscripts.",
+      "standing": "legend",
+      "evidence": "This is Westcott's account. The house says Howe (1972) and R. A. Gilbert concluded that Westcott wrote the Sprengel letters himself and that no trace of her has been found, and that Mathers himself accused Westcott of forging the correspondence in a letter to Florence Farr of February 1900 (house rosicrucian.js, esoteric.js).",
+      "sources": [
+        "House rosicrucian.js and esoteric.js",
+        "Ellic Howe, The Magicians of the Golden Dawn (1972)"
+      ]
+    },
+    {
+      "claim": "Trithemius is the 'father' of the secret alphabets.",
+      "standing": "disputed",
+      "evidence": "This is a modern epithet. Invented signs and cipher alphabets are far older: there are charaktêres in late-antique magic (charakteres sibling), and medieval manuscripts collected alphabets. What is documented is narrower: his Polygraphia is commonly called the first printed book on cryptography, and it printed a catalogue of alphabets, real and attributed, which Agrippa and later authors drew on (for the Theban, by inference from the agreement of the texts). By prior knowledge, not verified in this run, the word 'steganography' derives from the title of his book.",
+      "sources": [
+        "House timeline (latin.js)",
+        "charakteres.json",
+        "theban.json"
+      ]
+    },
+    {
+      "claim": "Trithemius wrote a treatise for the Emperor Maximilian on the seven planetary intelligences that govern the world in turn.",
+      "standing": "documented",
+      "evidence": "Agrippa III.24 names the intelligences (Oriphiel, Zachariel, Zamael, Michael, Anael, Raphael, Gabriel), says each governs the world 354 years and four months in the order Saturn, Venus, Jupiter, Mercury, Mars, Moon, Sun, and adds 'Abbas Tritemius writ to Maximilian Caesar a speciall Treatise concerning these' (1651 English, p. 416, checked). The title De septem secundeis and the date 1508 are the researcher's knowledge, not verified.",
+      "sources": [
+        "Agrippa, Three Books of Occult Philosophy (1651), III.24, p. 416 (EEBO-TCP A26565, checked)"
+      ]
+    }
+  ],
+  "uses": [
+    {
+      "use": "Hiding a message inside an innocent-looking devotional Latin text",
+      "evidence": "Polygraphia, Book I: each plaintext letter is replaced by a word from successive columns of Latin words, so the ciphertext reads like a prayer. Modern references call this the 'Ave Maria' cipher (brief; prior knowledge, not verified in this run for the mechanism; I could not find who first used the name)."
+    },
+    {
+      "use": "Hiding a message under a conjuration of spirits",
+      "evidence": "Steganographia, Books I–II: the angel names and barbarous words conceal plaintext (house timeline)."
+    },
+    {
+      "use": "Polyalphabetic encipherment with an alphabet that shifts at every letter",
+      "evidence": "Polygraphia, Book V: the tabula recta, a square of alphabets each shifted one place. The writer enciphers the first letter with the first row, the second with the second, and so on (prior knowledge, not verified in this run; Kahn 1967)."
+    },
+    {
+      "use": "Collecting ancient and attributed alphabets as material for secret writing",
+      "evidence": "The Polygraphia's catalogue of alphabets (book number V or VI unsettled), including the Theban, ascribed to Honorius (sibling research). The rest of the catalogue is not inventoried."
+    },
+    {
+      "use": "Operative angel magic",
+      "evidence": "Later readers took the Steganographia's spirits at face value. The Ars Theurgia-Goetia of the Lemegeton takes over the spirits of Book I (prior knowledge, not verified in this run), and Brann argues that Trithemius himself meant the angelic reading as well (house timeline)."
+    },
+    {
+      "use": "A source for Agrippa's secret alphabets",
+      "evidence": "Agrippa III.29 (1533; 1651 English p. 438, checked) prints the Theban with the same ascription to Honorius via Peter of Abano, without naming Trithemius; the dependence is inferred from the agreement of the texts (sibling research, Peterson's annotation)."
+    },
+    {
+      "use": "Concealing initiatory ritual outlines",
+      "evidence": "The Golden Dawn Cipher Manuscripts give the outlines of the grade rituals in English, enciphered with Trithemius's alphabet (house themes/latin.js and rosicrucian.js)."
+    }
+  ],
+  "quotations": [
+    {
+      "text": "Yet this one rule I advise you to observe, that you communicate vulgar secrets to vulgar friends, but higher and secret to higher, and secret friends only. Give Hey to an Ox, Sugar to a Parret only; understand my meaning, least you be trod under the Oxens feet, as oftentimes it fals out.",
+      "translation": "J.F. (probably John French, per the TCP record), Three Books of Occult Philosophy (London: Printed by R.W. for Gregory Moule, 1651; Wing A789), front matter. Wording checked against the EEBO-TCP transcription A26565 (image 52070:9), spelling kept.",
+      "source": "Johannes Trithemius, letter to Agrippa, headed 'John Tritemius, Abbot of Saint James of Herbipolis, formerly of Spanhemia' and dated 'From our Monastery of Peapolis, the 8. day of April, An. M. D. X.'; printed in the front matter of the 1651 English (and, by the fact-checker's knowledge, not checked, of the 1533 Latin)"
+    },
+    {
+      "text": "When I was of late (most reverend Father) for a while conversant with you in your Monastery of Herbipolis, we conferred together of divers things concerning Chymistry, Magick, and Cabalie, and of other things, which as yet lye hid in secret Sciences, and Arts",
+      "translation": "J.F. (probably John French), Three Books of Occult Philosophy (London: R.W. for Gregory Moule, 1651), front matter. Checked against EEBO-TCP A26565 (image 52070:7); the drop-capital 'WHen' is normalised to 'When'.",
+      "source": "Agrippa, dedicatory letter 'To R. P. D. Iohn Tritemius, an Abbot of Saint James in the Suburbs of Herbipolis' (undated in the 1651 English; written before the reply of 8 April 1510)"
+    },
+    {
+      "text": "Sequitur aliud alphabetum Honorii cognomento Thebani, cuius ministerio suas in magicis fatuitates abscondit, sicut Petrus de Apono testatur in suo maiore libro quarto.",
+      "translation": "Original Latin as quoted by Joseph H. Peterson (The Sworn Book of Honorius, Ibis Press, 2016, introduction; and his note to Agrippa III.29 at Esoteric Archives) and by Wikipedia; the theban fact-check matched each clause verbatim in those sources' search snippets. Not checked against a page of the 1518 printing, and not re-seen by this check. Paraphrase (the researcher's, unchanged): 'Next follows another alphabet, that of Honorius surnamed the Theban, by means of which he hid his follies in magic, as Pietro d'Abano testifies in his greater fourth book.'",
+      "source": "Trithemius, Polygraphia, introduction to the Theban table. Locator unsettled: Peterson cites 'Polygraphia 6, 1508, p. 579' (Book VI; a page of a paginated later edition, not of the unpaginated 1518 printing); Wikipedia p. 597; the 1561 French has the table at fol. 184v."
+    },
+    {
+      "text": "[Paraphrase, not a quotation] Steganography: that is, the sure art of disclosing one's will to absent persons by hidden writing.",
+      "translation": "Fact-checker's labelled paraphrase of the researcher's remembered Latin title. The Latin wording could not be confirmed against the title page or any source seen in this run, so it is not printed as a quotation (see factcheck.unresolved).",
+      "source": "Trithemius, Steganographia (Frankfurt, 1606), title page (not seen)"
+    },
+    {
+      "text": "I gave them to Tritemius a Neapolitanian Abbot, formerly a Spanhemensian, a man very industrious after secret things. But it happened afterwards, that the work being intercepted, before I finished it, was carryed about imperfect, and impolished",
+      "translation": "J.F. (probably John French), Three Books of Occult Philosophy (London: R.W. for Gregory Moule, 1651), 'To the Reader'. Checked against EEBO-TCP A26565 (image 52070:6). 'Neapolitanian' is the 1651 rendering of what should be Trithemius's Würzburg title 'Peapolitanus'; it does not mean Naples.",
+      "source": "Agrippa, De occulta philosophia, address 'To the Reader' (front matter)"
+    },
+    {
+      "text": "Abbas Tritemius writ to Maximilian Caesar a speciall Treatise concerning these",
+      "translation": "J.F. (probably John French), Three Books of Occult Philosophy (London, 1651), p. 416. Checked against EEBO-TCP A26565 (image 52070:224).",
+      "source": "Agrippa, De occulta philosophia, Book III, chapter 24, on the seven intelligences that govern the world in turn"
+    },
+    {
+      "text": "Of this kind of Character therefore are those which Peter Apponus notes, as delivered by Honorius of Thebes, the figures whereof are such, being related to our Alphabet.",
+      "translation": "J.F. (probably John French), Three Books of Occult Philosophy (London, 1651), p. 438. Checked against EEBO-TCP A26565 (image 52070:235).",
+      "source": "Agrippa, De occulta philosophia, Book III, chapter 29, the sentence introducing the Theban table (Trithemius is not named)"
+    }
+  ],
+  "links": [
+    {
+      "to": "theban",
+      "relation": "Printed in Trithemius's Polygraphia (July 1518), which ascribes it to Honorius surnamed the Theban on Pietro d'Abano's testimony. Agrippa reprinted it in III.29 (1533) with the same ascription, citing Peter of Abano but not Trithemius (1651 English, p. 438, checked)."
+    },
+    {
+      "to": "malachim",
+      "relation": "A contrast. The Golden Dawn Cipher Manuscripts use Trithemius's Latin-keyed cipher, not this Hebrew-keyed script. Mathers is reported to have used Malachim separately in his Key of Solomon (1889) (malachim sibling, from search summaries, unverified)."
+    },
+    {
+      "to": "celestial",
+      "relation": "Agrippa III.30. Agrippa's 1510 draft went to Trithemius, but whether it already held this alphabet is unverified."
+    },
+    {
+      "to": "transitus-fluvii",
+      "relation": "Agrippa III.30, the same open question about the 1510 draft."
+    },
+    {
+      "to": "enochian",
+      "relation": "Dee reports from Antwerp in 1563 that he has found a Steganographia manuscript and is copying it (prior knowledge, not verified in this run), twenty years before the angelic alphabet of 1583. The Golden Dawn later took up both Trithemius's cipher and Dee's Enochian."
+    },
+    {
+      "to": "alphabet-of-the-magi",
+      "relation": "Paracelsus, to whom modern works credit that alphabet, is reported to have named the abbot of Sponheim among his teachers (attributed; prior knowledge, not verified in this run)."
+    },
+    {
+      "to": "aiq-bekar",
+      "relation": "Another cipher the Golden Dawn used: Aiq Bekar served for sigils (aiq-bekar sibling). The Cipher Manuscripts themselves are in Trithemius's alphabet."
+    },
+    {
+      "to": "charakteres",
+      "relation": "Shows that invented signs are far older than Trithemius. He printed the first catalogue of secret alphabets; he did not originate the practice."
+    },
+    {
+      "to": "latin",
+      "relation": "Both alphabets treated here (the Theban table and the Golden Dawn cipher) are keyed to the Latin letters; the order assumed for the cipher is Trithemius's 24 letters (unverified). The rest of the Polygraphia's catalogue is not inventoried. The Latin hall's timeline already has a Steganographia entry (timelines/latin.js), and its reading list names the Cipher Manuscripts (themes/latin.js). The new pages should agree with both, except where this file flags a difference ('brought' versus 'sent by this bearer')."
+    },
+    {
+      "to": "hebrew",
+      "relation": "The Cipher Manuscripts attach the grade structure to the Sefirot (house themes/latin.js). The Hebrew itself is not the cipher."
+    }
+  ],
+  "letters": [
+    {
+      "order": 1,
+      "name": "Letter to Arnold Bostius (1499)",
+      "value": "letter (manuscript)",
+      "translit": "",
+      "numeric": null,
+      "form": "Not a glyph. Show it as a text card: the year (1499), the writer and addressee, what the letter announced (the Steganographia), and what followed (Bostius's death before it arrived, the letter's circulation, and Trithemius's name as a necromancer).",
+      "formConfidence": "low",
+      "note": "FACT-CHECK: lowered from medium. Everything on this card is prior knowledge, not verified in this run (the month and day included; the fact-checker recalls 25 March 1499). Check in Brann (1999) or Arnold (1991) before printing."
+    },
+    {
+      "order": 2,
+      "name": "Steganographia (begun 1499; printed Frankfurt, 1606; Index 1609)",
+      "value": "book",
+      "translit": "",
+      "numeric": null,
+      "form": "Not a glyph. A book card with two layers, the surface and what lies beneath. The surface has three books: Books I–II conjure spirits with barbarous names to carry messages, and Book III invokes the seven planetary angels with tables of numbers. Beneath, all three are cipher systems. Give the dates: begun 1499, left unfinished, printed 1606, Index 1609. Then the decipherers: Heidel 1676, Ernst 1996, Reeds 1998.",
+      "formConfidence": "medium",
+      "note": "The dates and decipherers are from the house timeline. The description of each book's contents is prior knowledge, not verified in this run. The 1606 printer, publisher and full title are unverified."
+    },
+    {
+      "order": 3,
+      "name": "Steganographia, Books I–II: the conjurations",
+      "value": "book section",
+      "translit": "",
+      "numeric": null,
+      "form": "Not a glyph. A card naming a few of the spirits (as I recall it, Book I opens with Pamersiel, Padiel and Camuel) and showing the principle: most letters of the incantation are nulls, and the significant letters are picked by a rule. Do NOT print a worked decipherment unless it has been checked against the 1606 text, the 1606 Clavis or Heidel (1676).",
+      "formConfidence": "low",
+      "note": "The spirit names and the mechanism are prior knowledge, not verified in this run. By the same knowledge, the Ars Theurgia-Goetia of the Lemegeton takes over these spirits; Peterson's introduction to The Lesser Key of Solomon (2001) is where to check this."
+    },
+    {
+      "order": 4,
+      "name": "Steganographia, Book III: the planetary angels and their tables",
+      "value": "book section",
+      "translit": "",
+      "numeric": null,
+      "form": "Not a glyph. A card: seven planetary angels, tables of numbers, centuries of being read as pure magic, then the solutions. Ernst broke it in 1996 and Reeds independently in 1998, finding ordinary Latin. Heidel had solved it in 1676 and printed his answer in a cipher of his own.",
+      "formConfidence": "medium",
+      "note": "The solutions and Heidel's encrypted answer are from the house timeline. The article titles and journals (Daphnis 25; Cryptologia 22) are prior knowledge, not verified in this run. The identification of Book III's angels with the seven intelligences of the treatise to Maximilian is prior knowledge, not verified. Agrippa III.24 (1651, p. 416, checked) names those seven as Oriphiel (Saturn), Zachariel (Jupiter), Zamael (Mars), Michael (Sun), Anael (Venus), Raphael (Mercury) and Gabriel (Moon); note 'Zamael', where the research file wrote 'Samael'. Do not print Book III's own spellings until seen."
+    },
+    {
+      "order": 5,
+      "name": "Polygraphiae libri sex (written about 1508; printed July 1518)",
+      "value": "book",
+      "translit": "",
+      "numeric": null,
+      "form": "Not a glyph. A book card: six books and a key, dedicated to the Emperor Maximilian ('ad Maximilianum Caesarem'), a first manuscript version presented to him in 1508, printed posthumously in July 1518 at the expense of Johannes Haselberg 'de Aia'. Place and printer disputed (Basel: Furter or Adam Petri; Oppenheim: Jakob Köbel); Furter died in 1517. The title woodcut is credited to Hans Springinklee by the Met and Dodgson, and to Burgkmair's workshop by Lankorońska. Copies: Library of Congress (Fabyan collection), Folger, Wellcome, Valladolid.",
+      "formConfidence": "medium",
+      "note": "FACT-CHECK: lowered from high. The bibliographic facts are catalogue reports relayed by the theban fact-check (LoC, Folger, UVaDoc, Wellcome, Met, Christie's, Gamer/Brill); not re-seen in this check. The place, the printer, the woodcut attribution and 'begun' versus 'completed' 1508 remain open, so the card must show them as disputes. 'And a key' rests on a bookseller's description and on UVaDoc's two colophons (inference)."
+    },
+    {
+      "order": 6,
+      "name": "Polygraphia, Book I: the 'Ave Maria' word tables",
+      "value": "cipher table",
+      "translit": "",
+      "numeric": null,
+      "form": "Not a glyph. A table card showing one column of the word tables (one Latin word per letter of Trithemius's 24-letter alphabet) and a short enciphered phrase, so the reader sees ciphertext that reads as a prayer. As I recall the first column (Kahn 1967, from memory; DO NOT DISPLAY until checked against the 1518 Book I): a Deus, b Creator, c Conditor, d Opifex, e Dominus, f Dominator, g Consolator, h Arbiter, i Iudex, k Illuminator, l Illustrator, m Rector, n Rex, o Imperator, p Gubernator, q Factor, r Fabricator, s Conservator, t Redemptor, u Auctor, x Princeps, y Pastor, z Moderator, w Salvator.",
+      "formConfidence": "low",
+      "note": "The number of columns (384, as recalled), the word list and the source of the name 'Ave Maria' are all prior knowledge, not verified in this run. The fact-checker's own recollection of Kahn agrees with the first column given, but that is memory against memory, not a check. The contents of Books II–IV are not described here."
+    },
+    {
+      "order": 7,
+      "name": "Polygraphia: the tabula recta (Book V by recollection; unverified)",
+      "value": "cipher table",
+      "translit": "",
+      "numeric": null,
+      "form": "Not a glyph. A 24 × 24 square of Trithemius's Latin alphabet (a b c d e f g h i k l m n o p q r s t u x y z w), each row shifted one place to the left. The writer enciphers letter 1 with row 1, letter 2 with row 2, and so on. It can be generated rather than drawn, but the letter order must be checked against the 1518 page first.",
+      "formConfidence": "low",
+      "note": "FACT-CHECK: lowered from medium, because a generated square inherits an unverified letter order. The book number (V), the 24-letter order with w last and the progressive use are prior knowledge, not verified in this run (Kahn 1967). The 1518 Theban table's final sign labelled 'w' (reported by a Wikipedia talk-page editor and From Old Books, via the theban fact-check) fits the 24-letter scheme but does not prove the tabula recta's order."
+    },
+    {
+      "order": 8,
+      "name": "Polygraphia: the catalogue of alphabets (Book V or VI)",
+      "value": "alphabet catalogue",
+      "translit": "",
+      "numeric": null,
+      "form": "Not a glyph. An index card listing the alphabets printed in the catalogue, each as Trithemius labels it, with its attribution reported as an attribution. The only entry verified here is the Theban, which he ascribes to 'Honorius surnamed the Theban' on Pietro d'Abano's testimony; it links to the theban page. The remaining entries are to be inventoried from the 1518 woodcuts.",
+      "formConfidence": "low",
+      "note": "The book number is disputed: V for the 1561 French (talk page; unconfirmed) and per ABAA (unconfirmed), VI per Peterson. By prior knowledge, not verified in this run, the catalogue also holds alphabets credited to the ancient Franks (on the authority of 'Hunibald', whom scholars take to be Trithemius's own fiction) and others, some of his own devising; the runes sibling also suspects a 'Norman' alphabet. None of this is verified, so do not list them until the 1518 pages have been seen."
+    },
+    {
+      "order": 9,
+      "name": "Polygraphie (Paris, 1561), translated by Gabriel de Collange",
+      "value": "book (translation)",
+      "translit": "",
+      "numeric": null,
+      "form": "Not a glyph. A book card: the first French translation, by Gabriel de Collange, printed by Benoît Prévost for Jacques Kerver, Paris, 1561. Its Theban page is fol. 184v; its heading names Honorius 'surnamed Thebanus' and drops d'Abano.",
+      "formConfidence": "medium",
+      "note": "FACT-CHECK: lowered from high. The imprint (Sotheby's, Tomash lot 669), the folio and the heading (Wikimedia Commons, BPL copy) are as reported by the theban fact-check; not re-seen here. 'Book V' was removed from the card: it rests on a Wikipedia talk-page editor and was not confirmed."
+    },
+    {
+      "order": 10,
+      "name": "Agrippa's draft and Trithemius's reply (Würzburg, 8 April 1510)",
+      "value": "manuscript and letters",
+      "translit": "",
+      "numeric": null,
+      "form": "Not a glyph. A card for the encounter. Agrippa stays at St Jakob, Würzburg, in the winter of 1509–10 ('for a while conversant with you in your Monastery of Herbipolis') and afterwards sends the draft of De occulta philosophia with a dedicatory letter ('which you have sent by this bearer'). Trithemius replies 'From our Monastery of Peapolis, the 8. day of April, An. M. D. X.': praise, and the rule to keep higher secrets for higher friends ('Give Hey to an Ox, Sugar to a Parret only', 1651 English). The draft is reported to survive as Würzburg UB, M. ch. q. 50, and Perrone Compagni's edition (1992) takes account of it. Both letters are in the 1651 English front matter.",
+      "formConfidence": "high",
+      "note": "FACT-CHECK: the quotation and 'sent by this bearer' are now checked against the 1651 English (EEBO-TCP A26565); the remembered 'Give hay to an Ox, sugar to a Parrot' was wrong in wording. 'Both letters were printed in 1533' is the fact-checker's knowledge, not checked against the 1533 Latin. The shelfmark is reported, not seen. Whether the draft held the secret alphabets is an open question: say so on the card. The house timeline's 'brought him a manuscript' differs from the letter's 'sent by this bearer'."
+    },
+    {
+      "order": 11,
+      "name": "The Golden Dawn Cipher Manuscripts (brought forward 1887)",
+      "value": "manuscript",
+      "translit": "",
+      "numeric": null,
+      "form": "Not a glyph. A card: a set of ritual outlines in English, enciphered with a Trithemian alphabet. Westcott brought them forward in 1887, and Mathers worked them up into the grade rituals of the Golden Dawn (opened 1888). Their author and date are unknown; some later accounts trace them to Kenneth Mackenzie's papers. A note found with them is reported to give a Stuttgart address for 'Anna Sprengel' (the story more usually gives Nuremberg), and the Sprengel letters are judged forgeries (Howe 1972; Gilbert). Show the cipher alphabet (the units below), but not the ritual text.",
+      "formConfidence": "medium",
+      "note": "The core facts are from the house (rosicrucian.js, esoteric.js, themes/latin.js). The folio count (60 in Wikipedia, as I recall it), the 1809 watermark, Woodford and Hockley, the five grades, and Küntz's 1996 facsimile edition are all prior knowledge, not verified in this run. The present location of the manuscripts is not established here."
+    },
+    {
+      "order": 12,
+      "name": "Cipher letter A",
+      "value": "A",
+      "translit": "a",
+      "numeric": null,
+      "form": "NOT DESCRIBED. No facsimile of the Cipher Manuscripts, published key or Polygraphia table was seen by the researcher or by this fact-check, and no source reached describes this sign in words. It is not described from memory or inferred from the Latin value. Trace it from the facsimile in Darcy Küntz (ed.), The Complete Golden Dawn Cipher Manuscript (Holmes Publishing Group, 1996; prior knowledge, not verified in this run), and check it against the matching table in Trithemius's Polygraphia (1518; Library of Congress Fabyan copy) once that table has been identified. Where the manuscript hand and the 1518 woodcut differ, record both.",
+      "formConfidence": "low",
+      "note": "Inventory ASSUMED, not verified: Trithemius's 24-letter Latin alphabet, a–z without j and v and with w last, the order of his tabula recta (prior knowledge, not verified in this run) and consistent with his 1518 Theban table ending in a sign reported as labelled 'w' (theban fact-check). Whether the Cipher Manuscripts' key has exactly these 24 signs, or separate signs for J and V, must be checked. No numerical values. FACT-CHECK: no form is described, so there is nothing to compare with the standard published forms; low is the only defensible level, and nothing should be drawn. The 24-sign inventory, its order and the I/J and U/V merges are assumptions; an English-language key may have its own order or extra signs."
+    },
+    {
+      "order": 13,
+      "name": "Cipher letter B",
+      "value": "B",
+      "translit": "b",
+      "numeric": null,
+      "form": "NOT DESCRIBED. No facsimile of the Cipher Manuscripts, published key or Polygraphia table was seen by the researcher or by this fact-check, and no source reached describes this sign in words. It is not described from memory or inferred from the Latin value. Trace it from the facsimile in Darcy Küntz (ed.), The Complete Golden Dawn Cipher Manuscript (Holmes Publishing Group, 1996; prior knowledge, not verified in this run), and check it against the matching table in Trithemius's Polygraphia (1518; Library of Congress Fabyan copy) once that table has been identified. Where the manuscript hand and the 1518 woodcut differ, record both.",
+      "formConfidence": "low",
+      "note": "Inventory ASSUMED, not verified: Trithemius's 24-letter Latin alphabet, a–z without j and v and with w last, the order of his tabula recta (prior knowledge, not verified in this run) and consistent with his 1518 Theban table ending in a sign reported as labelled 'w' (theban fact-check). Whether the Cipher Manuscripts' key has exactly these 24 signs, or separate signs for J and V, must be checked. No numerical values. FACT-CHECK: no form is described, so there is nothing to compare with the standard published forms; low is the only defensible level, and nothing should be drawn. The 24-sign inventory, its order and the I/J and U/V merges are assumptions; an English-language key may have its own order or extra signs."
+    },
+    {
+      "order": 14,
+      "name": "Cipher letter C",
+      "value": "C",
+      "translit": "c",
+      "numeric": null,
+      "form": "NOT DESCRIBED. No facsimile of the Cipher Manuscripts, published key or Polygraphia table was seen by the researcher or by this fact-check, and no source reached describes this sign in words. It is not described from memory or inferred from the Latin value. Trace it from the facsimile in Darcy Küntz (ed.), The Complete Golden Dawn Cipher Manuscript (Holmes Publishing Group, 1996; prior knowledge, not verified in this run), and check it against the matching table in Trithemius's Polygraphia (1518; Library of Congress Fabyan copy) once that table has been identified. Where the manuscript hand and the 1518 woodcut differ, record both.",
+      "formConfidence": "low",
+      "note": "Inventory ASSUMED, not verified: Trithemius's 24-letter Latin alphabet, a–z without j and v and with w last, the order of his tabula recta (prior knowledge, not verified in this run) and consistent with his 1518 Theban table ending in a sign reported as labelled 'w' (theban fact-check). Whether the Cipher Manuscripts' key has exactly these 24 signs, or separate signs for J and V, must be checked. No numerical values. FACT-CHECK: no form is described, so there is nothing to compare with the standard published forms; low is the only defensible level, and nothing should be drawn. The 24-sign inventory, its order and the I/J and U/V merges are assumptions; an English-language key may have its own order or extra signs."
+    },
+    {
+      "order": 15,
+      "name": "Cipher letter D",
+      "value": "D",
+      "translit": "d",
+      "numeric": null,
+      "form": "NOT DESCRIBED. No facsimile of the Cipher Manuscripts, published key or Polygraphia table was seen by the researcher or by this fact-check, and no source reached describes this sign in words. It is not described from memory or inferred from the Latin value. Trace it from the facsimile in Darcy Küntz (ed.), The Complete Golden Dawn Cipher Manuscript (Holmes Publishing Group, 1996; prior knowledge, not verified in this run), and check it against the matching table in Trithemius's Polygraphia (1518; Library of Congress Fabyan copy) once that table has been identified. Where the manuscript hand and the 1518 woodcut differ, record both.",
+      "formConfidence": "low",
+      "note": "Inventory ASSUMED, not verified: Trithemius's 24-letter Latin alphabet, a–z without j and v and with w last, the order of his tabula recta (prior knowledge, not verified in this run) and consistent with his 1518 Theban table ending in a sign reported as labelled 'w' (theban fact-check). Whether the Cipher Manuscripts' key has exactly these 24 signs, or separate signs for J and V, must be checked. No numerical values. FACT-CHECK: no form is described, so there is nothing to compare with the standard published forms; low is the only defensible level, and nothing should be drawn. The 24-sign inventory, its order and the I/J and U/V merges are assumptions; an English-language key may have its own order or extra signs."
+    },
+    {
+      "order": 16,
+      "name": "Cipher letter E",
+      "value": "E",
+      "translit": "e",
+      "numeric": null,
+      "form": "NOT DESCRIBED. No facsimile of the Cipher Manuscripts, published key or Polygraphia table was seen by the researcher or by this fact-check, and no source reached describes this sign in words. It is not described from memory or inferred from the Latin value. Trace it from the facsimile in Darcy Küntz (ed.), The Complete Golden Dawn Cipher Manuscript (Holmes Publishing Group, 1996; prior knowledge, not verified in this run), and check it against the matching table in Trithemius's Polygraphia (1518; Library of Congress Fabyan copy) once that table has been identified. Where the manuscript hand and the 1518 woodcut differ, record both.",
+      "formConfidence": "low",
+      "note": "Inventory ASSUMED, not verified: Trithemius's 24-letter Latin alphabet, a–z without j and v and with w last, the order of his tabula recta (prior knowledge, not verified in this run) and consistent with his 1518 Theban table ending in a sign reported as labelled 'w' (theban fact-check). Whether the Cipher Manuscripts' key has exactly these 24 signs, or separate signs for J and V, must be checked. No numerical values. FACT-CHECK: no form is described, so there is nothing to compare with the standard published forms; low is the only defensible level, and nothing should be drawn. The 24-sign inventory, its order and the I/J and U/V merges are assumptions; an English-language key may have its own order or extra signs."
+    },
+    {
+      "order": 17,
+      "name": "Cipher letter F",
+      "value": "F",
+      "translit": "f",
+      "numeric": null,
+      "form": "NOT DESCRIBED. No facsimile of the Cipher Manuscripts, published key or Polygraphia table was seen by the researcher or by this fact-check, and no source reached describes this sign in words. It is not described from memory or inferred from the Latin value. Trace it from the facsimile in Darcy Küntz (ed.), The Complete Golden Dawn Cipher Manuscript (Holmes Publishing Group, 1996; prior knowledge, not verified in this run), and check it against the matching table in Trithemius's Polygraphia (1518; Library of Congress Fabyan copy) once that table has been identified. Where the manuscript hand and the 1518 woodcut differ, record both.",
+      "formConfidence": "low",
+      "note": "Inventory ASSUMED, not verified: Trithemius's 24-letter Latin alphabet, a–z without j and v and with w last, the order of his tabula recta (prior knowledge, not verified in this run) and consistent with his 1518 Theban table ending in a sign reported as labelled 'w' (theban fact-check). Whether the Cipher Manuscripts' key has exactly these 24 signs, or separate signs for J and V, must be checked. No numerical values. FACT-CHECK: no form is described, so there is nothing to compare with the standard published forms; low is the only defensible level, and nothing should be drawn. The 24-sign inventory, its order and the I/J and U/V merges are assumptions; an English-language key may have its own order or extra signs."
+    },
+    {
+      "order": 18,
+      "name": "Cipher letter G",
+      "value": "G",
+      "translit": "g",
+      "numeric": null,
+      "form": "NOT DESCRIBED. No facsimile of the Cipher Manuscripts, published key or Polygraphia table was seen by the researcher or by this fact-check, and no source reached describes this sign in words. It is not described from memory or inferred from the Latin value. Trace it from the facsimile in Darcy Küntz (ed.), The Complete Golden Dawn Cipher Manuscript (Holmes Publishing Group, 1996; prior knowledge, not verified in this run), and check it against the matching table in Trithemius's Polygraphia (1518; Library of Congress Fabyan copy) once that table has been identified. Where the manuscript hand and the 1518 woodcut differ, record both.",
+      "formConfidence": "low",
+      "note": "Inventory ASSUMED, not verified: Trithemius's 24-letter Latin alphabet, a–z without j and v and with w last, the order of his tabula recta (prior knowledge, not verified in this run) and consistent with his 1518 Theban table ending in a sign reported as labelled 'w' (theban fact-check). Whether the Cipher Manuscripts' key has exactly these 24 signs, or separate signs for J and V, must be checked. No numerical values. FACT-CHECK: no form is described, so there is nothing to compare with the standard published forms; low is the only defensible level, and nothing should be drawn. The 24-sign inventory, its order and the I/J and U/V merges are assumptions; an English-language key may have its own order or extra signs."
+    },
+    {
+      "order": 19,
+      "name": "Cipher letter H",
+      "value": "H",
+      "translit": "h",
+      "numeric": null,
+      "form": "NOT DESCRIBED. No facsimile of the Cipher Manuscripts, published key or Polygraphia table was seen by the researcher or by this fact-check, and no source reached describes this sign in words. It is not described from memory or inferred from the Latin value. Trace it from the facsimile in Darcy Küntz (ed.), The Complete Golden Dawn Cipher Manuscript (Holmes Publishing Group, 1996; prior knowledge, not verified in this run), and check it against the matching table in Trithemius's Polygraphia (1518; Library of Congress Fabyan copy) once that table has been identified. Where the manuscript hand and the 1518 woodcut differ, record both.",
+      "formConfidence": "low",
+      "note": "Inventory ASSUMED, not verified: Trithemius's 24-letter Latin alphabet, a–z without j and v and with w last, the order of his tabula recta (prior knowledge, not verified in this run) and consistent with his 1518 Theban table ending in a sign reported as labelled 'w' (theban fact-check). Whether the Cipher Manuscripts' key has exactly these 24 signs, or separate signs for J and V, must be checked. No numerical values. FACT-CHECK: no form is described, so there is nothing to compare with the standard published forms; low is the only defensible level, and nothing should be drawn. The 24-sign inventory, its order and the I/J and U/V merges are assumptions; an English-language key may have its own order or extra signs."
+    },
+    {
+      "order": 20,
+      "name": "Cipher letter I (J)",
+      "value": "I",
+      "translit": "i (also j, assumed)",
+      "numeric": null,
+      "form": "NOT DESCRIBED. No facsimile of the Cipher Manuscripts, published key or Polygraphia table was seen by the researcher or by this fact-check, and no source reached describes this sign in words. It is not described from memory or inferred from the Latin value. Trace it from the facsimile in Darcy Küntz (ed.), The Complete Golden Dawn Cipher Manuscript (Holmes Publishing Group, 1996; prior knowledge, not verified in this run), and check it against the matching table in Trithemius's Polygraphia (1518; Library of Congress Fabyan copy) once that table has been identified. Where the manuscript hand and the 1518 woodcut differ, record both.",
+      "formConfidence": "low",
+      "note": "Inventory ASSUMED, not verified: Trithemius's 24-letter Latin alphabet, a–z without j and v and with w last, the order of his tabula recta (prior knowledge, not verified in this run) and consistent with his 1518 Theban table ending in a sign reported as labelled 'w' (theban fact-check). Whether the Cipher Manuscripts' key has exactly these 24 signs, or separate signs for J and V, must be checked. No numerical values. The English text's j is assumed to be written with this sign. The transliterator should map j here until the key shows otherwise. FACT-CHECK: no form is described, so there is nothing to compare with the standard published forms; low is the only defensible level, and nothing should be drawn. The 24-sign inventory, its order and the I/J and U/V merges are assumptions; an English-language key may have its own order or extra signs."
+    },
+    {
+      "order": 21,
+      "name": "Cipher letter K",
+      "value": "K",
+      "translit": "k",
+      "numeric": null,
+      "form": "NOT DESCRIBED. No facsimile of the Cipher Manuscripts, published key or Polygraphia table was seen by the researcher or by this fact-check, and no source reached describes this sign in words. It is not described from memory or inferred from the Latin value. Trace it from the facsimile in Darcy Küntz (ed.), The Complete Golden Dawn Cipher Manuscript (Holmes Publishing Group, 1996; prior knowledge, not verified in this run), and check it against the matching table in Trithemius's Polygraphia (1518; Library of Congress Fabyan copy) once that table has been identified. Where the manuscript hand and the 1518 woodcut differ, record both.",
+      "formConfidence": "low",
+      "note": "Inventory ASSUMED, not verified: Trithemius's 24-letter Latin alphabet, a–z without j and v and with w last, the order of his tabula recta (prior knowledge, not verified in this run) and consistent with his 1518 Theban table ending in a sign reported as labelled 'w' (theban fact-check). Whether the Cipher Manuscripts' key has exactly these 24 signs, or separate signs for J and V, must be checked. No numerical values. FACT-CHECK: no form is described, so there is nothing to compare with the standard published forms; low is the only defensible level, and nothing should be drawn. The 24-sign inventory, its order and the I/J and U/V merges are assumptions; an English-language key may have its own order or extra signs."
+    },
+    {
+      "order": 22,
+      "name": "Cipher letter L",
+      "value": "L",
+      "translit": "l",
+      "numeric": null,
+      "form": "NOT DESCRIBED. No facsimile of the Cipher Manuscripts, published key or Polygraphia table was seen by the researcher or by this fact-check, and no source reached describes this sign in words. It is not described from memory or inferred from the Latin value. Trace it from the facsimile in Darcy Küntz (ed.), The Complete Golden Dawn Cipher Manuscript (Holmes Publishing Group, 1996; prior knowledge, not verified in this run), and check it against the matching table in Trithemius's Polygraphia (1518; Library of Congress Fabyan copy) once that table has been identified. Where the manuscript hand and the 1518 woodcut differ, record both.",
+      "formConfidence": "low",
+      "note": "Inventory ASSUMED, not verified: Trithemius's 24-letter Latin alphabet, a–z without j and v and with w last, the order of his tabula recta (prior knowledge, not verified in this run) and consistent with his 1518 Theban table ending in a sign reported as labelled 'w' (theban fact-check). Whether the Cipher Manuscripts' key has exactly these 24 signs, or separate signs for J and V, must be checked. No numerical values. FACT-CHECK: no form is described, so there is nothing to compare with the standard published forms; low is the only defensible level, and nothing should be drawn. The 24-sign inventory, its order and the I/J and U/V merges are assumptions; an English-language key may have its own order or extra signs."
+    },
+    {
+      "order": 23,
+      "name": "Cipher letter M",
+      "value": "M",
+      "translit": "m",
+      "numeric": null,
+      "form": "NOT DESCRIBED. No facsimile of the Cipher Manuscripts, published key or Polygraphia table was seen by the researcher or by this fact-check, and no source reached describes this sign in words. It is not described from memory or inferred from the Latin value. Trace it from the facsimile in Darcy Küntz (ed.), The Complete Golden Dawn Cipher Manuscript (Holmes Publishing Group, 1996; prior knowledge, not verified in this run), and check it against the matching table in Trithemius's Polygraphia (1518; Library of Congress Fabyan copy) once that table has been identified. Where the manuscript hand and the 1518 woodcut differ, record both.",
+      "formConfidence": "low",
+      "note": "Inventory ASSUMED, not verified: Trithemius's 24-letter Latin alphabet, a–z without j and v and with w last, the order of his tabula recta (prior knowledge, not verified in this run) and consistent with his 1518 Theban table ending in a sign reported as labelled 'w' (theban fact-check). Whether the Cipher Manuscripts' key has exactly these 24 signs, or separate signs for J and V, must be checked. No numerical values. FACT-CHECK: no form is described, so there is nothing to compare with the standard published forms; low is the only defensible level, and nothing should be drawn. The 24-sign inventory, its order and the I/J and U/V merges are assumptions; an English-language key may have its own order or extra signs."
+    },
+    {
+      "order": 24,
+      "name": "Cipher letter N",
+      "value": "N",
+      "translit": "n",
+      "numeric": null,
+      "form": "NOT DESCRIBED. No facsimile of the Cipher Manuscripts, published key or Polygraphia table was seen by the researcher or by this fact-check, and no source reached describes this sign in words. It is not described from memory or inferred from the Latin value. Trace it from the facsimile in Darcy Küntz (ed.), The Complete Golden Dawn Cipher Manuscript (Holmes Publishing Group, 1996; prior knowledge, not verified in this run), and check it against the matching table in Trithemius's Polygraphia (1518; Library of Congress Fabyan copy) once that table has been identified. Where the manuscript hand and the 1518 woodcut differ, record both.",
+      "formConfidence": "low",
+      "note": "Inventory ASSUMED, not verified: Trithemius's 24-letter Latin alphabet, a–z without j and v and with w last, the order of his tabula recta (prior knowledge, not verified in this run) and consistent with his 1518 Theban table ending in a sign reported as labelled 'w' (theban fact-check). Whether the Cipher Manuscripts' key has exactly these 24 signs, or separate signs for J and V, must be checked. No numerical values. FACT-CHECK: no form is described, so there is nothing to compare with the standard published forms; low is the only defensible level, and nothing should be drawn. The 24-sign inventory, its order and the I/J and U/V merges are assumptions; an English-language key may have its own order or extra signs."
+    },
+    {
+      "order": 25,
+      "name": "Cipher letter O",
+      "value": "O",
+      "translit": "o",
+      "numeric": null,
+      "form": "NOT DESCRIBED. No facsimile of the Cipher Manuscripts, published key or Polygraphia table was seen by the researcher or by this fact-check, and no source reached describes this sign in words. It is not described from memory or inferred from the Latin value. Trace it from the facsimile in Darcy Küntz (ed.), The Complete Golden Dawn Cipher Manuscript (Holmes Publishing Group, 1996; prior knowledge, not verified in this run), and check it against the matching table in Trithemius's Polygraphia (1518; Library of Congress Fabyan copy) once that table has been identified. Where the manuscript hand and the 1518 woodcut differ, record both.",
+      "formConfidence": "low",
+      "note": "Inventory ASSUMED, not verified: Trithemius's 24-letter Latin alphabet, a–z without j and v and with w last, the order of his tabula recta (prior knowledge, not verified in this run) and consistent with his 1518 Theban table ending in a sign reported as labelled 'w' (theban fact-check). Whether the Cipher Manuscripts' key has exactly these 24 signs, or separate signs for J and V, must be checked. No numerical values. FACT-CHECK: no form is described, so there is nothing to compare with the standard published forms; low is the only defensible level, and nothing should be drawn. The 24-sign inventory, its order and the I/J and U/V merges are assumptions; an English-language key may have its own order or extra signs."
+    },
+    {
+      "order": 26,
+      "name": "Cipher letter P",
+      "value": "P",
+      "translit": "p",
+      "numeric": null,
+      "form": "NOT DESCRIBED. No facsimile of the Cipher Manuscripts, published key or Polygraphia table was seen by the researcher or by this fact-check, and no source reached describes this sign in words. It is not described from memory or inferred from the Latin value. Trace it from the facsimile in Darcy Küntz (ed.), The Complete Golden Dawn Cipher Manuscript (Holmes Publishing Group, 1996; prior knowledge, not verified in this run), and check it against the matching table in Trithemius's Polygraphia (1518; Library of Congress Fabyan copy) once that table has been identified. Where the manuscript hand and the 1518 woodcut differ, record both.",
+      "formConfidence": "low",
+      "note": "Inventory ASSUMED, not verified: Trithemius's 24-letter Latin alphabet, a–z without j and v and with w last, the order of his tabula recta (prior knowledge, not verified in this run) and consistent with his 1518 Theban table ending in a sign reported as labelled 'w' (theban fact-check). Whether the Cipher Manuscripts' key has exactly these 24 signs, or separate signs for J and V, must be checked. No numerical values. FACT-CHECK: no form is described, so there is nothing to compare with the standard published forms; low is the only defensible level, and nothing should be drawn. The 24-sign inventory, its order and the I/J and U/V merges are assumptions; an English-language key may have its own order or extra signs."
+    },
+    {
+      "order": 27,
+      "name": "Cipher letter Q",
+      "value": "Q",
+      "translit": "q",
+      "numeric": null,
+      "form": "NOT DESCRIBED. No facsimile of the Cipher Manuscripts, published key or Polygraphia table was seen by the researcher or by this fact-check, and no source reached describes this sign in words. It is not described from memory or inferred from the Latin value. Trace it from the facsimile in Darcy Küntz (ed.), The Complete Golden Dawn Cipher Manuscript (Holmes Publishing Group, 1996; prior knowledge, not verified in this run), and check it against the matching table in Trithemius's Polygraphia (1518; Library of Congress Fabyan copy) once that table has been identified. Where the manuscript hand and the 1518 woodcut differ, record both.",
+      "formConfidence": "low",
+      "note": "Inventory ASSUMED, not verified: Trithemius's 24-letter Latin alphabet, a–z without j and v and with w last, the order of his tabula recta (prior knowledge, not verified in this run) and consistent with his 1518 Theban table ending in a sign reported as labelled 'w' (theban fact-check). Whether the Cipher Manuscripts' key has exactly these 24 signs, or separate signs for J and V, must be checked. No numerical values. FACT-CHECK: no form is described, so there is nothing to compare with the standard published forms; low is the only defensible level, and nothing should be drawn. The 24-sign inventory, its order and the I/J and U/V merges are assumptions; an English-language key may have its own order or extra signs."
+    },
+    {
+      "order": 28,
+      "name": "Cipher letter R",
+      "value": "R",
+      "translit": "r",
+      "numeric": null,
+      "form": "NOT DESCRIBED. No facsimile of the Cipher Manuscripts, published key or Polygraphia table was seen by the researcher or by this fact-check, and no source reached describes this sign in words. It is not described from memory or inferred from the Latin value. Trace it from the facsimile in Darcy Küntz (ed.), The Complete Golden Dawn Cipher Manuscript (Holmes Publishing Group, 1996; prior knowledge, not verified in this run), and check it against the matching table in Trithemius's Polygraphia (1518; Library of Congress Fabyan copy) once that table has been identified. Where the manuscript hand and the 1518 woodcut differ, record both.",
+      "formConfidence": "low",
+      "note": "Inventory ASSUMED, not verified: Trithemius's 24-letter Latin alphabet, a–z without j and v and with w last, the order of his tabula recta (prior knowledge, not verified in this run) and consistent with his 1518 Theban table ending in a sign reported as labelled 'w' (theban fact-check). Whether the Cipher Manuscripts' key has exactly these 24 signs, or separate signs for J and V, must be checked. No numerical values. FACT-CHECK: no form is described, so there is nothing to compare with the standard published forms; low is the only defensible level, and nothing should be drawn. The 24-sign inventory, its order and the I/J and U/V merges are assumptions; an English-language key may have its own order or extra signs."
+    },
+    {
+      "order": 29,
+      "name": "Cipher letter S",
+      "value": "S",
+      "translit": "s",
+      "numeric": null,
+      "form": "NOT DESCRIBED. No facsimile of the Cipher Manuscripts, published key or Polygraphia table was seen by the researcher or by this fact-check, and no source reached describes this sign in words. It is not described from memory or inferred from the Latin value. Trace it from the facsimile in Darcy Küntz (ed.), The Complete Golden Dawn Cipher Manuscript (Holmes Publishing Group, 1996; prior knowledge, not verified in this run), and check it against the matching table in Trithemius's Polygraphia (1518; Library of Congress Fabyan copy) once that table has been identified. Where the manuscript hand and the 1518 woodcut differ, record both.",
+      "formConfidence": "low",
+      "note": "Inventory ASSUMED, not verified: Trithemius's 24-letter Latin alphabet, a–z without j and v and with w last, the order of his tabula recta (prior knowledge, not verified in this run) and consistent with his 1518 Theban table ending in a sign reported as labelled 'w' (theban fact-check). Whether the Cipher Manuscripts' key has exactly these 24 signs, or separate signs for J and V, must be checked. No numerical values. FACT-CHECK: no form is described, so there is nothing to compare with the standard published forms; low is the only defensible level, and nothing should be drawn. The 24-sign inventory, its order and the I/J and U/V merges are assumptions; an English-language key may have its own order or extra signs."
+    },
+    {
+      "order": 30,
+      "name": "Cipher letter T",
+      "value": "T",
+      "translit": "t",
+      "numeric": null,
+      "form": "NOT DESCRIBED. No facsimile of the Cipher Manuscripts, published key or Polygraphia table was seen by the researcher or by this fact-check, and no source reached describes this sign in words. It is not described from memory or inferred from the Latin value. Trace it from the facsimile in Darcy Küntz (ed.), The Complete Golden Dawn Cipher Manuscript (Holmes Publishing Group, 1996; prior knowledge, not verified in this run), and check it against the matching table in Trithemius's Polygraphia (1518; Library of Congress Fabyan copy) once that table has been identified. Where the manuscript hand and the 1518 woodcut differ, record both.",
+      "formConfidence": "low",
+      "note": "Inventory ASSUMED, not verified: Trithemius's 24-letter Latin alphabet, a–z without j and v and with w last, the order of his tabula recta (prior knowledge, not verified in this run) and consistent with his 1518 Theban table ending in a sign reported as labelled 'w' (theban fact-check). Whether the Cipher Manuscripts' key has exactly these 24 signs, or separate signs for J and V, must be checked. No numerical values. FACT-CHECK: no form is described, so there is nothing to compare with the standard published forms; low is the only defensible level, and nothing should be drawn. The 24-sign inventory, its order and the I/J and U/V merges are assumptions; an English-language key may have its own order or extra signs."
+    },
+    {
+      "order": 31,
+      "name": "Cipher letter U (V)",
+      "value": "U",
+      "translit": "u (also v, assumed)",
+      "numeric": null,
+      "form": "NOT DESCRIBED. No facsimile of the Cipher Manuscripts, published key or Polygraphia table was seen by the researcher or by this fact-check, and no source reached describes this sign in words. It is not described from memory or inferred from the Latin value. Trace it from the facsimile in Darcy Küntz (ed.), The Complete Golden Dawn Cipher Manuscript (Holmes Publishing Group, 1996; prior knowledge, not verified in this run), and check it against the matching table in Trithemius's Polygraphia (1518; Library of Congress Fabyan copy) once that table has been identified. Where the manuscript hand and the 1518 woodcut differ, record both.",
+      "formConfidence": "low",
+      "note": "Inventory ASSUMED, not verified: Trithemius's 24-letter Latin alphabet, a–z without j and v and with w last, the order of his tabula recta (prior knowledge, not verified in this run) and consistent with his 1518 Theban table ending in a sign reported as labelled 'w' (theban fact-check). Whether the Cipher Manuscripts' key has exactly these 24 signs, or separate signs for J and V, must be checked. No numerical values. The English text's v is assumed to be written with this sign. The transliterator should map v here until the key shows otherwise. FACT-CHECK: no form is described, so there is nothing to compare with the standard published forms; low is the only defensible level, and nothing should be drawn. The 24-sign inventory, its order and the I/J and U/V merges are assumptions; an English-language key may have its own order or extra signs."
+    },
+    {
+      "order": 32,
+      "name": "Cipher letter X",
+      "value": "X",
+      "translit": "x",
+      "numeric": null,
+      "form": "NOT DESCRIBED. No facsimile of the Cipher Manuscripts, published key or Polygraphia table was seen by the researcher or by this fact-check, and no source reached describes this sign in words. It is not described from memory or inferred from the Latin value. Trace it from the facsimile in Darcy Küntz (ed.), The Complete Golden Dawn Cipher Manuscript (Holmes Publishing Group, 1996; prior knowledge, not verified in this run), and check it against the matching table in Trithemius's Polygraphia (1518; Library of Congress Fabyan copy) once that table has been identified. Where the manuscript hand and the 1518 woodcut differ, record both.",
+      "formConfidence": "low",
+      "note": "Inventory ASSUMED, not verified: Trithemius's 24-letter Latin alphabet, a–z without j and v and with w last, the order of his tabula recta (prior knowledge, not verified in this run) and consistent with his 1518 Theban table ending in a sign reported as labelled 'w' (theban fact-check). Whether the Cipher Manuscripts' key has exactly these 24 signs, or separate signs for J and V, must be checked. No numerical values. FACT-CHECK: no form is described, so there is nothing to compare with the standard published forms; low is the only defensible level, and nothing should be drawn. The 24-sign inventory, its order and the I/J and U/V merges are assumptions; an English-language key may have its own order or extra signs."
+    },
+    {
+      "order": 33,
+      "name": "Cipher letter Y",
+      "value": "Y",
+      "translit": "y",
+      "numeric": null,
+      "form": "NOT DESCRIBED. No facsimile of the Cipher Manuscripts, published key or Polygraphia table was seen by the researcher or by this fact-check, and no source reached describes this sign in words. It is not described from memory or inferred from the Latin value. Trace it from the facsimile in Darcy Küntz (ed.), The Complete Golden Dawn Cipher Manuscript (Holmes Publishing Group, 1996; prior knowledge, not verified in this run), and check it against the matching table in Trithemius's Polygraphia (1518; Library of Congress Fabyan copy) once that table has been identified. Where the manuscript hand and the 1518 woodcut differ, record both.",
+      "formConfidence": "low",
+      "note": "Inventory ASSUMED, not verified: Trithemius's 24-letter Latin alphabet, a–z without j and v and with w last, the order of his tabula recta (prior knowledge, not verified in this run) and consistent with his 1518 Theban table ending in a sign reported as labelled 'w' (theban fact-check). Whether the Cipher Manuscripts' key has exactly these 24 signs, or separate signs for J and V, must be checked. No numerical values. FACT-CHECK: no form is described, so there is nothing to compare with the standard published forms; low is the only defensible level, and nothing should be drawn. The 24-sign inventory, its order and the I/J and U/V merges are assumptions; an English-language key may have its own order or extra signs."
+    },
+    {
+      "order": 34,
+      "name": "Cipher letter Z",
+      "value": "Z",
+      "translit": "z",
+      "numeric": null,
+      "form": "NOT DESCRIBED. No facsimile of the Cipher Manuscripts, published key or Polygraphia table was seen by the researcher or by this fact-check, and no source reached describes this sign in words. It is not described from memory or inferred from the Latin value. Trace it from the facsimile in Darcy Küntz (ed.), The Complete Golden Dawn Cipher Manuscript (Holmes Publishing Group, 1996; prior knowledge, not verified in this run), and check it against the matching table in Trithemius's Polygraphia (1518; Library of Congress Fabyan copy) once that table has been identified. Where the manuscript hand and the 1518 woodcut differ, record both.",
+      "formConfidence": "low",
+      "note": "Inventory ASSUMED, not verified: Trithemius's 24-letter Latin alphabet, a–z without j and v and with w last, the order of his tabula recta (prior knowledge, not verified in this run) and consistent with his 1518 Theban table ending in a sign reported as labelled 'w' (theban fact-check). Whether the Cipher Manuscripts' key has exactly these 24 signs, or separate signs for J and V, must be checked. No numerical values. FACT-CHECK: no form is described, so there is nothing to compare with the standard published forms; low is the only defensible level, and nothing should be drawn. The 24-sign inventory, its order and the I/J and U/V merges are assumptions; an English-language key may have its own order or extra signs."
+    },
+    {
+      "order": 35,
+      "name": "Cipher letter W",
+      "value": "W",
+      "translit": "w",
+      "numeric": null,
+      "form": "NOT DESCRIBED. No facsimile of the Cipher Manuscripts, published key or Polygraphia table was seen by the researcher or by this fact-check, and no source reached describes this sign in words. It is not described from memory or inferred from the Latin value. Trace it from the facsimile in Darcy Küntz (ed.), The Complete Golden Dawn Cipher Manuscript (Holmes Publishing Group, 1996; prior knowledge, not verified in this run), and check it against the matching table in Trithemius's Polygraphia (1518; Library of Congress Fabyan copy) once that table has been identified. Where the manuscript hand and the 1518 woodcut differ, record both.",
+      "formConfidence": "low",
+      "note": "Inventory ASSUMED, not verified: Trithemius's 24-letter Latin alphabet, a–z without j and v and with w last, the order of his tabula recta (prior knowledge, not verified in this run) and consistent with his 1518 Theban table ending in a sign reported as labelled 'w' (theban fact-check). Whether the Cipher Manuscripts' key has exactly these 24 signs, or separate signs for J and V, must be checked. No numerical values. W stands last in Trithemius's order, not between V and X. The Cipher Manuscripts are in English, so a sign for w is needed; that the key has one is likely but unverified. FACT-CHECK: no form is described, so there is nothing to compare with the standard published forms; low is the only defensible level, and nothing should be drawn. The 24-sign inventory, its order and the I/J and U/V merges are assumptions; an English-language key may have its own order or extra signs."
+    }
+  ],
+  "lettersSource": "NOT A SINGLE ALPHABET. Units 1–11 are the works and documents the page should show as cards. For these, 'form' says what the card holds, and 'formConfidence' grades the card's facts, since there is nothing to draw. Units 12–35 are the cipher alphabet of the Golden Dawn Cipher Manuscripts, keyed to the Latin letters. ORDER AND VALUES: assumed to be Trithemius's 24-letter alphabet, a–z without j and v and with w last (prior knowledge, not verified in this run; consistent with the 1518 Theban table's final sign, reported as labelled 'w' by the theban fact-check). FORMS: NONE SEEN, and all 24 are marked NOT DESCRIBED. Trace them from the facsimile in Küntz (ed.), The Complete Golden Dawn Cipher Manuscript (1996), and check them against the Trithemian source table. That table is still to be identified: it is probably one of the alphabets in the Polygraphia's catalogue (Library of Congress Fabyan copy of 1518; 1561 French, BPL copy, on the Internet Archive and Wikimedia Commons). Do not draw from modern fonts, cipher-tool websites or charts that give no edition. Do not borrow the forms of Theban, Malachim or any other alphabet by analogy. FACT-CHECK: units 1, 5, 7 and 9 had their card confidence lowered; the 24 cipher signs stay NOT DESCRIBED.",
+  "cautions": [
+    "BASIS. The researcher worked after the session's shared web-search budget had run out, and so did this fact-check (its first search was refused; WebFetch failed with 'getaddrinfo ENOTFOUND'). Statements are marked by basis: checked in the 1651 English (EEBO-TCP A26565, read locally); house data (checked in the site's files); reported by the search-backed theban fact-check (theban.verified.json); sibling research; or prior knowledge, not verified. Nothing in the last class should be printed as fact until checked.",
+    "LETTER FORMS ARE NOT DESCRIBED. Drawing 'the Golden Dawn cipher' from this file would mean inventing it. Trace the signs from the Küntz facsimile and the Trithemian source table, or show a gap.",
+    "Do not write 'Trithemius invented the Theban alphabet' or 'Honorius of Thebes invented it'. Write that Trithemius ascribes it to Honorius surnamed the Theban, citing Pietro d'Abano, that Agrippa repeats the ascription without naming Trithemius, and that no copy earlier than 1518 is known to the sources consulted (the 1508 manuscript Polygraphia has not been checked).",
+    "Do not call Agrippa Trithemius's pupil. The documented contact is the stay at Würzburg in the winter of 1509–10 and the exchange of letters (reply dated 8 April 1510). Do not say the 1510 draft contained the alphabets: that is unverified. The 1651 reply says the draft was 'sent by this bearer'; the house timeline's 'brought' should be checked against Perrone Compagni or SEP.",
+    "Give both readings of the Steganographia, cipher manual and angel magic, and endorse neither. The house timeline's wording, that Brann holds the cryptography 'does not dispose of the angels', is the model.",
+    "'Ave Maria cipher' is a later label for the Polygraphia Book I tables. Present it as a name, not as Trithemius's own title, unless the 1518 text is shown to use it.",
+    "Do not give the Polygraphia's alphabets a book number as settled. Sources differ between Book V (1561 French, per a Wikipedia talk page; ABAA) and Book VI (Peterson). Do not give Peterson's p. 579 or Wikipedia's p. 597 as 1518 pages: the 1518 printing is unpaginated.",
+    "Do not date the Steganographia to 1606, and do not date the Polygraphia to 1508 as if printed then. Say 'begun 1499, printed 1606' and 'a manuscript version presented to Maximilian in 1508, printed July 1518'. Do not credit the 'begun 1508' claim to the Library of Congress.",
+    "Golden Dawn: show the cipher alphabet, which is Trithemius's, and the history. Do not reproduce the ritual text of the Cipher Manuscripts or the later Golden Dawn rituals worked up from them, which living orders use, or any living order's emblems. Report the Sprengel story as Westcott's account, and the forgery as the conclusion of Howe and Gilbert.",
+    "Sprengel's city. The house places the address on the note at Stuttgart, but the story usually gives Nuremberg (house rosicrucian.js). Keep to the house wording.",
+    "Hunibald and the 'Frankish' letters: if the page mentions them, call Hunibald a source cited only by Trithemius and generally judged his invention. Do not display the letters until the 1518 page has been checked.",
+    "Ritual use is reported neutrally. The Steganographia's spirits passed into the Ars Theurgia-Goetia; say so as history, without mockery and without endorsement.",
+    "The 1651 English renders Trithemius's title as 'a Neapolitanian Abbot'. That is a slip for Peapolitanus (the Würzburg house), not Naples; the same front matter heads his letter 'Abbot of Saint James of Herbipolis' and dates it from 'our Monastery of Peapolis'.",
+    "Printer and woodcuts of 1518: the Folger itself records that Michael Furter died in spring 1517, which tells against a printing 'chiefly' by him in July 1518; and the Springinklee attribution of the title woodcut is contested (Lankorońska: Burgkmair's workshop). Report both as disputes.",
+    "Agrippa III.24 (1651, p. 416) is the one checked primary witness to Trithemius's treatise on the seven intelligences. Spell the names as the source being quoted spells them (Agrippa 1651 has 'Oriphiel' and 'Zamael')."
+  ],
+  "sources": [
+    {
+      "citation": "Johannes Trithemius, Polygraphiae libri sex, 1518 (colophon July 1518; impensis Ioannis Haselbergi de Aia), Library of Congress catalogue record (via the theban sibling). URL seen in search results by the theban fact-check (theban.verified.json), not re-seen by this check.",
+      "url": "https://www.loc.gov/item/32017914"
+    },
+    {
+      "citation": "The same, Library of Congress Rare Book Division, Fabyan collection, digitised page view (via the theban sibling). URL seen in search results by the theban fact-check (theban.verified.json), not re-seen by this check.",
+      "url": "https://hdl.loc.gov/loc.rbc/fabyan.17914.1"
+    },
+    {
+      "citation": "The same, Folger Shakespeare Library catalogue record (Michael Furter of Basel; Oppenheim in some repertories). URL seen in search results by the theban fact-check (theban.verified.json), not re-seen by this check.",
+      "url": "https://catalog.folger.edu/record/263020?ln=en"
+    },
+    {
+      "citation": "The same, Universidad de Valladolid (UVaDoc) record. URL seen in search results by the theban fact-check (theban.verified.json), not re-seen by this check.",
+      "url": "https://uvadoc.uva.es/handle/10324/25253"
+    },
+    {
+      "citation": "The same, Wellcome Collection record. URL seen in search results by the theban fact-check (theban.verified.json), not re-seen by this check.",
+      "url": "https://wellcomecollection.org/works/ukbqdd75"
+    },
+    {
+      "citation": "The same, Metropolitan Museum of Art record (woodcuts by Hans Springinklee). URL seen in search results by the theban fact-check (theban.verified.json), not re-seen by this check.",
+      "url": "https://www.metmuseum.org/art/collection/search/358137"
+    },
+    {
+      "citation": "ABAA bookseller description of the Polygraphia (alphabets in Book V; Clavis Polygraphiae). URL seen in search results by the theban fact-check (theban.verified.json), not re-seen by this check.",
+      "url": "https://abaa.org/book/1376710462"
+    },
+    {
+      "citation": "Trithemius, Polygraphie, et universelle escriture cabalistique, trans. Gabriel de Collange, Paris: [Benoît Prévost] for Jacques Kerver, 1561, Theban page fol. 184v (Wikimedia Commons scan). URL seen in search results by the theban fact-check (theban.verified.json), not re-seen by this check.",
+      "url": "https://commons.wikimedia.org/wiki/File:Theban_Alphabet_in_Trithemius,_Polygraphie_(1561),_184v.tif"
+    },
+    {
+      "citation": "Sotheby's, Library of Erwin Tomash, lot 669 (1561 French Polygraphie). URL seen in search results by the theban fact-check (theban.verified.json), not re-seen by this check.",
+      "url": "https://www.sothebys.com/en/auctions/ecatalogue/2018/the-library-of-erwin-tomash-l18409/lot.669.html"
+    },
+    {
+      "citation": "History of Information, 'Johannes Trithemius Issues the First Book on Cryptography' (URL corrected to the www form seen by the theban fact-check).",
+      "url": "https://www.historyofinformation.com/detail.php?id=348"
+    },
+    {
+      "citation": "Wikipedia, 'Polygraphia (book)' (tertiary). URL seen in search results by the theban fact-check (theban.verified.json), not re-seen by this check.",
+      "url": "https://en.wikipedia.org/wiki/Polygraphia_(book)"
+    },
+    {
+      "citation": "Wikipedia, 'Theban alphabet', 'The Sworn Book of Honorius' and 'Talk:Theban alphabet/Archive 1' (tertiary; Latin of the Honorius passage; 1561 Book V). URL seen in search results by the theban fact-check (theban.verified.json), not re-seen by this check.",
+      "url": "https://en.wikipedia.org/wiki/Theban_alphabet"
+    },
+    {
+      "citation": "Joseph H. Peterson (ed.), The Sworn Book of Honorius, introduction (Trithemius's attribution; 'Polygraphia 6'), Esoteric Archives. URL seen in search results by the theban fact-check (theban.verified.json), not re-seen by this check.",
+      "url": "https://www.esotericarchives.com/juratus/juratus.htm"
+    },
+    {
+      "citation": "Wikipedia, 'Cipher Manuscripts' (the Golden Dawn cipher is Trithemius's; tertiary; via the malachim sibling) URL withdrawn: not seen in any search result by this or a search-backed sibling fact-check (the house cites the article as consulted 2026).",
+      "url": ""
+    },
+    {
+      "citation": "Stanford Encyclopedia of Philosophy, 'Heinrich Cornelius Agrippa von Nettesheim' (the 1510 draft sent to Trithemius; the 1533 edition). URL seen in search results by the theban fact-check (theban.verified.json), not re-seen by this check.",
+      "url": "https://plato.stanford.edu/entries/agrippa-nettesheim/"
+    },
+    {
+      "citation": "Agrippa, De occulta philosophia libri tres, [Cologne: J. Soter?], 1533, front matter (letters to and from Trithemius) and III.29 (Library of Congress copy, digitised) URL retained as seen by the theban fact-check; the alphabet-of-the-magi fact-check did not see it and cites the LoC record https://www.loc.gov/item/20007812 instead (added below).",
+      "url": "https://archive.org/details/DeOccultaPhilosophiaLoc1533"
+    },
+    {
+      "citation": "Agrippa, De occulta philosophia libri tres, ed. Vittoria Perrone Compagni, Leiden: Brill, 1992 (Studies in the History of Christian Thought 48); takes account of the 1510 draft, reported as Würzburg UB M. ch. q. 50; not consulted. Wellcome record; the Google Books URL given by the researcher was not seen in any search result and is withdrawn.",
+      "url": "https://preview.wellcomecollection.org/works/ymvvbx6a"
+    },
+    {
+      "citation": "Agrippa, Three Books of Occult Philosophy, trans. J.F. (probably John French), London: Printed by R.W. for Gregory Moule, 1651 (Wing A789; ESTC R11002), EEBO-TCP A26565: front matter (both letters; 'To the Reader'), III.24 p. 416 and III.29 p. 438, checked in this fact-check from a local clone of the TCP repository. The researcher's two quotations from memory were corrected against it.",
+      "url": "https://github.com/textcreationpartnership/A26565"
+    },
+    {
+      "citation": "Three Magi Press house timeline, 'Trithemius, Steganographia' and 'Agrippa, De occulta philosophia' (1499; Frankfurt 1606; Index 1609; Ernst 1996; Reeds 1998; Heidel 1676; Brann; 8 April 1510), apps/web/src/data/education/timelines/latin.js (checked in this fact-check; note its 'brought him a manuscript to read')",
+      "url": ""
+    },
+    {
+      "citation": "Three Magi Press house data on the Golden Dawn, checked in this fact-check: apps/web/src/data/christianities/rosicrucian.js (Westcott 'brought forward the Cipher Manuscripts in 1887'; Westcott gave Mathers the outlines; the Stuttgart map entry and the Nuremberg entries; Mackenzie's papers; Howe and Gilbert; Mathers's letter to Florence Farr, February 1900), esoteric.js, and education/themes/latin.js ('in Trithemius's cipher alphabet and in English')",
+      "url": ""
+    },
+    {
+      "citation": "Ellic Howe, The Magicians of the Golden Dawn: A Documentary History of a Magical Order 1887–1923, London: Routledge & Kegan Paul, 1972 (cited by the house; not consulted)",
+      "url": ""
+    },
+    {
+      "citation": "R. A. Gilbert, writings on the Golden Dawn's origins (cited by the house; not consulted)",
+      "url": ""
+    },
+    {
+      "citation": "Darcy Küntz (ed.), The Complete Golden Dawn Cipher Manuscript, Edmonds, WA: Holmes Publishing Group, 1996 (prior knowledge, not verified in this run; not consulted; the source to trace the cipher letters from)",
+      "url": ""
+    },
+    {
+      "citation": "Noel L. Brann, The Abbot Trithemius (1462–1516): The Renaissance of Monastic Humanism, Leiden: Brill, 1981; and Trithemius and Magical Theology, Albany: SUNY Press, 1999 (prior knowledge, not verified in this run; not consulted)",
+      "url": ""
+    },
+    {
+      "citation": "Klaus Arnold, Johannes Trithemius (1462–1516), Würzburg, 1971; 2nd ed. 1991 (prior knowledge, not verified in this run; not consulted)",
+      "url": ""
+    },
+    {
+      "citation": "Thomas Ernst, 'Schwarzweiße Magie: Der Schlüssel zum dritten Buch der Steganographia des Trithemius', Daphnis 25 (1996) (the house timeline names Ernst and the year; the title and journal are prior knowledge, not verified in this run)",
+      "url": ""
+    },
+    {
+      "citation": "Jim Reeds, 'Solved: The Ciphers in Book III of Trithemius's Steganographia', Cryptologia 22 (1998) (the house timeline names Reeds and the year; the title and journal are prior knowledge, not verified in this run)",
+      "url": ""
+    },
+    {
+      "citation": "Wolfgang Ernst Heidel, Johannis Trithemii ... Steganographia ... vindicata, Mainz, 1676 (the house timeline names Heidel and 1676)",
+      "url": ""
+    },
+    {
+      "citation": "Gustavus Selenus [August the Younger of Brunswick-Lüneburg], Cryptomenytices et cryptographiae libri IX, Lüneburg, 1624 (prior knowledge, not verified in this run)",
+      "url": ""
+    },
+    {
+      "citation": "David Kahn, The Codebreakers, New York: Macmillan, 1967 (Polygraphia Book I tables and Book V tabula recta; prior knowledge, not verified in this run)",
+      "url": ""
+    },
+    {
+      "citation": "Nicholas H. Clulee, John Dee's Natural Philosophy: Between Science and Religion, London: Routledge, 1988 (Dee's 1563 letter on the Steganographia; prior knowledge, not verified in this run)",
+      "url": ""
+    },
+    {
+      "citation": "Joseph H. Peterson (ed.), The Lesser Key of Solomon, York Beach: Weiser, 2001, introduction (the Ars Theurgia's debt to Steganographia Book I; prior knowledge, not verified in this run)",
+      "url": ""
+    },
+    {
+      "citation": "Sibling research files of this workflow: theban.json, malachim.json, celestial.json, transitus-fluvii.json, charakteres.json, aiq-bekar.json, alphabet-of-the-magi.json",
+      "url": ""
+    },
+    {
+      "citation": "EEBO-TCP A26565, Text Creation Partnership catalogue entry (University of Michigan), table of contents. URL seen in search results by the theban and alphabet-of-the-magi fact-checks.",
+      "url": "https://quod.lib.umich.edu/e/eebo/A26565.0001.001?view=toc"
+    },
+    {
+      "citation": "Agrippa, Three Books of Occult Philosophy (London, 1651), Wellcome Collection record ('J.F[reake]', probably John French). URL seen by the theban fact-check.",
+      "url": "https://wellcomecollection.org/works/ftahuupv"
+    },
+    {
+      "citation": "Agrippa, De occulta philosophia libri tres (1533), Library of Congress record. URL seen by the alphabet-of-the-magi fact-check.",
+      "url": "https://www.loc.gov/item/20007812"
+    },
+    {
+      "citation": "NSA Center for Cryptologic History, 'Johannes Trithemius' (pamphlet): Polygraphia begun at Würzburg in 1508; later reprints. URL seen by the theban fact-check.",
+      "url": "https://media.defense.gov/2021/Jun/29/2002751801/-1/-1/0/JOHANNES-TRITHEMIUS.PDF"
+    },
+    {
+      "citation": "Maximilian Gamer (ed.), Die Polygraphia des Johannes Trithemius nach der handschriftlichen Fassung, 2 vols, Leiden: Brill, 2022 (the 1508 autograph version presented to Maximilian; publisher's description only; not consulted). URL seen by the theban fact-check.",
+      "url": "https://books.google.com/books/about/Die_Polygraphia_des_Johannes_Trithemius.html?id=oR14EAAAQBAJ"
+    },
+    {
+      "citation": "Christie's lot description of the 1518 Polygraphia (Oppenheim: Jakob Köbel for Haselberg, July 1518). URL seen by the theban fact-check.",
+      "url": "https://www.christies.com.cn/lot/lot-1074989"
+    },
+    {
+      "citation": "Ioannis Trithemii Libri Polygraphiae VI (Strasbourg: Lazarus Zetzner, 1600), 612 pp., Czech library record (a paginated later edition). URL seen by the theban fact-check.",
+      "url": "https://www.historickefondy.cz/Record/cbvk.stjvkcb1020804900"
+    },
+    {
+      "citation": "Trithemius, Polygraphie et vniuerselle escriture cabalistique (Paris, 1561), Boston Public Library copy, Internet Archive. URL seen by the theban fact-check.",
+      "url": "https://archive.org/details/polygraphieetvni00trit"
+    },
+    {
+      "citation": "GND authority record, Johannes Trithemius (abbot of St Jakob, Würzburg, from 1506). URL seen by the theban fact-check.",
+      "url": "https://explore.gnd.network/uk/gnd/118642960"
+    },
+    {
+      "citation": "Wikipedia, 'The Sworn Book of Honorius' (Latin of the Trithemius sentence, cited to p. 597; tertiary). URL seen by the theban fact-check.",
+      "url": "https://en.wikipedia.org/wiki/The_Sworn_Book_of_Honorius"
+    },
+    {
+      "citation": "Sibling fact-check theban.verified.json (this workflow; search-backed): the relayed catalogue, Peterson, Wikipedia, SEP, NSA and Gamer reports used above",
+      "url": ""
+    }
+  ],
+  "confidence": "CHECKED IN A PRIMARY TEXT (1651 English, EEBO-TCP A26565): Agrippa's letter to Trithemius ('Monastery of Herbipolis'); Trithemius's reply (heading 'Abbot of Saint James of Herbipolis, formerly of Spanhemia'; 'sent by this bearer'; dated 'From our Monastery of Peapolis, the 8. day of April, An. M. D. X.'); 'To the Reader' (books given to Trithemius; circulated imperfect; chapters added); III.24 p. 416 (Trithemius's treatise to Maximilian on the seven intelligences); III.29 p. 438 (Theban ascribed via Peter Apponus to Honorius, Trithemius not named); imprint and Wing number.\nCHECKED IN HOUSE DATA: the Steganographia timeline (1499; Frankfurt 1606; Index 1609; Ernst 1996; Reeds 1998; Heidel 1676; Brann); Agrippa's draft and the 8 April 1510 reply; Westcott and the Cipher Manuscripts (1887), the Stuttgart note, Mackenzie's papers, Mathers's working of the outlines, Howe and Gilbert, Mathers's accusation of February 1900; 'in Trithemius's cipher alphabet and in English'.\nREPORTED BY THE SEARCH-BACKED THEBAN FACT-CHECK, NOT RE-SEEN: the 1518 colophon transcriptions, the Basel/Oppenheim and printer conflict (with Furter's death in 1517), the woodcut dispute, the 1508 manuscript version (Gamer 2022), Peterson's 'Polygraphia 6 ... p. 579', the 1561 French imprint and fol. 184v, the Latin of the Honorius sentence (as Peterson quotes it).\nSHAKY, prior knowledge only: the Bostius letter and Bovelles episode with their dates; the Steganographia's spirit names and mechanism; the Polygraphia's book-by-book contents (Book I word tables, 384 columns; Book V tabula recta; the first column of words); the name 'Ave Maria'; the 24-letter order; Dee's 1563 letter; Selenus 1624; the Ars Theurgia borrowing; the 1606 title wording and imprint; the article titles of Ernst and Reeds; the Cipher Manuscripts' folio count, watermark, intermediaries and grades; Küntz's 1996 facsimile; the Paracelsus statement; the Mary of Burgundy legend's first teller.\nUNSETTLED: the book number of the Polygraphia's alphabet catalogue (V or VI); whether the 1508 manuscript already had it; which Trithemian table the Cipher Manuscripts follow; whether the 1510 draft held any alphabet.\nABSENT: every form of the cipher alphabet. None was seen, and all 24 must be traced from the Küntz facsimile and the 1518 Polygraphia.",
+  "factcheck": {
+    "checker": "independent fact-check pass (refutation mode), second pass; supersedes the earlier search-less pass written to the same path",
+    "method": "WebSearch was refused at this check's first query (the turn's shared budget of 200 calls was exhausted) and WebFetch failed ('getaddrinfo ENOTFOUND www.loc.gov'); neither was worked around. Checks rest on: (1) the EEBO-TCP XML of the 1651 English Agrippa (A26565, Wing A789), cloned in the scratchpad from github.com/textcreationpartnership/A26565 and read as data, for both letters, 'To the Reader', III.24 and III.29; (2) the house files in apps/web/src/data (timelines/latin.js, themes/latin.js, christianities/rosicrucian.js and esoteric.js), read directly; (3) the search-backed sibling fact-check theban.verified.json (03:31) and alphabet-of-the-magi.verified.json, for catalogue facts and for which URLs were seen in search results; (4) internal consistency; (5) the fact-checker's own knowledge, labelled wherever used.",
+    "corrections": [
+      "summary: 'wrote the two books from which early modern secret writing descends' overstated a single line of descent; now 'two of the founding books'. 'Book III was shown to be cipher only in 1996–98' contradicted the file's own report that Heidel solved it in 1676; now 'publicly solved ... although Heidel had solved it in 1676'. 'Is the first printed book of cryptography' now 'is commonly called'. The 1508 manuscript version and the 1506 abbacy were added; Agrippa's visit now precedes the sending of the draft (1651 letters, checked).",
+      "family and links.latin: universal claims that all Trithemius's alphabets are Latin-keyed were made about a catalogue the file says has not been inventoried. Narrowed to the two alphabets actually treated (Theban; Golden Dawn cipher).",
+      "otherNames: 'Ioannes Trithemius abbas Peapolitanus, quondam Spanheimensis' was presented as the title of the Polygraphia; the title has the genitive ('Ioannis Trithemii abbatis Peapolitani'). Relabelled as a nominative form, and the 1651 heading 'Abbot of Saint James of Herbipolis' added.",
+      "firstAttestation.author: 'Peapolitanus' = St Jakob, Würzburg is now CONFIRMED from the 1651 English front matter (EEBO-TCP A26565): the reply is headed 'Abbot of Saint James of Herbipolis' and dated 'From our Monastery of Peapolis'. The 1506 abbacy added (GND/SEP via the theban fact-check). The etymology stays unverified.",
+      "firstAttestation.date: 'The Library of Congress says it was begun in 1508' is withdrawn: the search-backed theban fact-check did not find it in the LoC record; it is the NSA pamphlet's claim. The colophon '1518 mense Iulio' was a loose transcription; replaced by the LoC ('anno a Christo nato MDXVIII men. Iulio') and Folger ('anno MDXVIII mense Iulio') transcriptions, with UVaDoc's two colophons (sig. C3v). Gamer's 2022 edition of the 1508 autograph manuscript added.",
+      "firstAttestation.place: added that the Folger records Michael Furter's death between 5 March and 2 May 1517 (over a year before the colophon), the repertories for each attribution, Wellcome/Met (Adam Petri), Christie's (Oppenheim, Köbel), ICCU (Basel), and the contested Springinklee attribution (Dodgson v. Lankorońska). The research file gave Springinklee without the dispute.",
+      "firstAttestation.locator: Peterson's citation given as he wrote it ('Polygraphia 6, 1508, p. 579'); added that neither p. 579 nor Wikipedia's p. 597 can be a 1518 page (the printing is unpaginated); the 1561 French 'Book V' rests on a talk page and cannot settle the 1518 Latin book number; ABAA's 'Book V' unconfirmed.",
+      "firstAttestation.notes: 'This is the first printing of any Trithemian cipher alphabet' is now marked as an inference, and the 1508 manuscript Polygraphia is flagged as a possibly earlier attestation not checked. The Bostius letter's month is no longer given as fact.",
+      "transmission (Bostius): the date field gave 'March 1499' as if known while the notes called it unverified; now '1499 (month and day not verified)'.",
+      "transmission (1508): rebuilt. The Polygraphia's 1508 manuscript version (Gamer/Brill, as reported) added; the begun/completed conflict credited to the NSA pamphlet and German Wikipedia, not the LoC; the treatise to Maximilian on the seven intelligences now supported by a checked primary text, Agrippa III.24 (1651, p. 416). Its title (De septem secundeis) and date stay unverified.",
+      "transmission (1509–1510): the visit and the sending of the draft are now CONFIRMED from the 1651 letters ('Monastery of Herbipolis'; 'sent by this bearer'; dated 8 April 1510). The house timeline's 'brought him a manuscript' conflicts with 'sent by this bearer' and is flagged. 'Perrone Compagni's edition prints it' moved and corrected under 1992.",
+      "transmission (1533) and uses: 'reprints the Theban alphabet with Trithemius's attribution to Honorius via Pietro d'Abano' was wrong in a way that matters: Agrippa III.29 does not name Trithemius; he cites 'Peter Apponus' for characters 'delivered by Honorius of Thebes' (1651 English, p. 438, checked). Reworded, with the dependence on Trithemius marked as inference. Agrippa's 'To the Reader' (books given to Trithemius; circulated imperfect; 'we added some Chapters') added from the checked 1651 text. The presence of the letters in the 1533 Latin is now labelled as the fact-checker's knowledge.",
+      "transmission (1561): printer and publisher sourced to Sotheby's; the BPL copy and the heading that drops d'Abano added; 'Book V' marked unconfirmed.",
+      "transmission (Dee, 1563): 'found a manuscript ... and copied it' softened to 'has been copying it'; the fact-checker recalls that Dee speaks of one half. Unverified either way.",
+      "transmission (1651): imprint, Wing A789 and translator ('probably John French', TCP record) confirmed in the EEBO-TCP header; 'prior knowledge, not verified' removed for the presence of both letters, now checked.",
+      "transmission (1887, 1888, 1972): house wording checked in apps/web/src/data/christianities/rosicrucian.js. The Stuttgart note, Westcott's November 1887 letter, the doubt about the note, Mackenzie's papers, the founders, and Westcott's giving Mathers the outlines are confirmed in the house files; the citations now name the exact entries. The house also gives Nuremberg as the usual city, which the 1887 entry now says.",
+      "transmission (1992): 'Prints the 1510 draft ... alongside the 1533 text' was not supported by any checked source; reworded to 'takes account of', with the layout marked unverified.",
+      "claims (draft and reply): the 1651 dating line, quoted from memory as 'An. MDX', reads 'An. M. D. X.' in the 1651 text. Corrected; the claim now rests on the checked 1651 letters.",
+      "claims (Theban): Peterson's failure to find the d'Abano passage and Agrippa's silence about Trithemius (1651 p. 438) added; 'no copy earlier than 1518' qualified by the unchecked 1508 manuscript.",
+      "claims (Polygraphia first printed book): now 'commonly called'; History of Information's actual heading given ('Issues the First Book on Cryptography', via the theban fact-check).",
+      "claims (pupil): the visit is now dated winter 1509–10 (SEP, as reported) and quoted from the checked 1651 letter.",
+      "claims (draft contained alphabets): evidence now includes Agrippa's checked statement that he 'added some Chapters' for the print, which shows enlargement but not which chapters.",
+      "claims: added a documented claim on Trithemius's treatise to Maximilian on the seven intelligences, from the checked 1651 Agrippa III.24 (p. 416). Note Agrippa's 'Zamael' and 'Oriphiel' where the research file wrote 'Samael' and 'Orifiel'.",
+      "claims (Golden Dawn): evidence re-pointed to the exact house entries; the Sprengel claim now cites the house's February 1900 letter to Florence Farr.",
+      "quotations[0] (Trithemius's reply): the text was quoted from memory and was WRONG in wording and punctuation. The 1651 English (EEBO-TCP A26565, image 52070:9) reads '... and secret friends only. Give Hey to an Ox, Sugar to a Parret only; understand my meaning, least you be trod under the Oxens feet, as oftentimes it fals out.' The file had ': Give hay to an Ox, sugar to a Parrot; ... lest ... falls'. Replaced; the translation now names the 1651 imprint and the TCP transcription instead of Peterson, whose transcription was not seen. The remembered Latin proverb ('da foenum bovi, saccharum psittaco') was removed from the translation field as unchecked.",
+      "quotations[1] (Agrippa's letter): 'which as yet lie hid' corrected to the 1651 'which as yet lye hid'; otherwise the remembered wording matched. Source corrected: the letter is undated in the 1651 English, so '(1510)' became 'written before the reply of 8 April 1510'.",
+      "quotations[2] (Polygraphia Latin): kept as a quotation because the search-backed theban fact-check matched every clause verbatim in Peterson's and Wikipedia's quotations; the translation field now names Peterson's edition (Ibis Press, 2016) and states that the 1518 page was not checked. The locator now says that Peterson's p. 579 cannot be a 1518 page.",
+      "quotations[3] (1606 title): the Latin was from memory and could not be confirmed; replaced by a labelled paraphrase.",
+      "quotations: added three checked 1651 passages: 'To the Reader' on giving the books to Trithemius (front matter), III.24 on the treatise to Maximilian (p. 416), and III.29 on the Theban, which names Peter Apponus and not Trithemius (p. 438).",
+      "links: theban relation now says Agrippa names Peter of Abano, not Trithemius; malachim relation marks Mathers's 1889 use as reported from search summaries; enochian relation softens Dee's copying; latin relation narrowed and flags the 'brought'/'sent' difference.",
+      "letters 1, 5, 7, 9 (cards): formConfidence lowered: 1 medium→low (all unverified), 5 high→medium (catalogue facts relayed, printer, place and woodcut attribution disputed), 7 medium→low (a generated tabula recta inherits an unverified order), 9 high→medium ('Book V' unconfirmed and removed from the card). Card 5 now shows the 1508 manuscript, Furter's death and the woodcut dispute. Card 10 corrected to the checked 1651 wording and 'sent by this bearer'; 'both letters were printed in 1533' is now labelled the fact-checker's knowledge. Card 4 note gives Agrippa's spellings. Card 11 now says 'some later accounts trace them to Mackenzie's papers' (house wording) and gives Nuremberg as the usual city.",
+      "letters 12–35 (cipher signs): all forms remain NOT DESCRIBED with formConfidence low. There is nothing to compare with the published forms, and the fact-checker will not supply forms from memory. The 'w' basis is now 'reported by the theban fact-check'; the notes warn that the 24-sign inventory and the I/J, U/V merges are assumptions.",
+      "sources: URLs were judged by whether a search result showed them in this session. This check could not search (its first query was refused: shared budget exhausted; WebFetch: 'getaddrinfo ENOTFOUND www.loc.gov'). URLs that the search-backed theban fact-check (theban.verified.json, which says it dropped every URL not seen in search results) retained are kept and labelled as such. WITHDRAWN: https://en.wikipedia.org/wiki/Cipher_Manuscripts (not seen by any search-backed check). REPLACED: the Google Books Perrone Compagni URL (not seen) by the Wellcome record the theban fact-check saw. CORRECTED: historyofinformation.com to the www form seen. ADDED (seen by sibling search-backed checks): EEBO-TCP catalogue, Wellcome 1651, LoC 1533, NSA pamphlet, Gamer 2022, Christie's, Zetzner 1600, the 1561 BPL copy, GND, Wikipedia 'Sworn Book'; and the TCP GitHub repository, the remote of the clone actually read.",
+      "cautions: BASIS caution rewritten for this pass; the Theban, pupil, book-number and dating cautions updated; three added (the 1651 'Neapolitanian' slip; Furter's death and the woodcut dispute; Agrippa's spellings of the seven intelligences)."
+    ],
+    "unresolved": [
+      "No web search was possible in this fact-check (the shared budget was exhausted before its first query) and page fetching failed. Points not in the 1651 English or the house files rest on the theban fact-check's reports or on knowledge.",
+      "Polygraphia 1518: the book number of the alphabet catalogue (V or VI), its leaf and signature; the place (Basel or Oppenheim) and printer (Furter, Petri or Köbel); the Springinklee attribution; 'begun' versus 'completed' 1508; whether the 1508 autograph manuscript (Gamer 2022) has the catalogue or the Theban table.",
+      "Book I word tables: the 384 columns, the first column of words (Deus, Creator, Conditor ...), and who first called them the 'Ave Maria' cipher. The fact-checker's memory agrees with the researcher's; that is not a check. Do not display.",
+      "Tabula recta: its book (V) and the 24-letter order with w last (the fact-checker's recollection agrees; unverified).",
+      "Bostius letter: the fact-checker recalls 25 March 1499 and Bostius's death in early April 1499; neither checked.",
+      "Bovelles: the visit (1503 or 1504), the letter to Germain de Ganay (1509) and its printing (1510 or 1511).",
+      "Dee to Cecil (16 February 1562/3): the date, and whether Dee says he copied the whole Steganographia or one half of it.",
+      "Steganographia 1606: the imprint (the fact-checker recalls Frankfurt: Johann Saur for Johann Berner), the Clavis, and the Latin title wording (researcher's memory: 'Steganographia: hoc est ars per occultam scripturam animi sui voluntatem absentibus aperiendi certa', now a paraphrase). Its removal from the Index in 1900.",
+      "De septem secundeis and Antipalus maleficiorum: titles and 1508 dates. Agrippa III.24 confirms only a treatise to Maximilian on the seven intelligences.",
+      "1533 Latin: the presence and wording of both letters in the front matter, the 'Ad lectorem' word that the 1651 English renders 'Neapolitanian', the Latin of III.29. Only the 1651 English was read.",
+      "Würzburg UB M. ch. q. 50 and Perrone Compagni 1992: the shelfmark and how the edition presents the draft are as reported; whether III.29–30 are in the draft is open.",
+      "House timeline wording: latin.js says Agrippa 'brought' the manuscript; the 1651 reply says 'sent by this bearer'. Flag for the site owner; not changed here.",
+      "Paracelsus: the work and locator in which he names the abbot of Sponheim among his teachers (the fact-checker recalls the Grosse Wundarznei, 1536; unchecked).",
+      "Mary of Burgundy: which sixteenth-century writer first tells the story; report only as legend.",
+      "Steganographia Books I–III: the spirit names (Pamersiel, Padiel, Camuel), the null-letter mechanism, the planetary angels of Book III and their spellings, and the Ars Theurgia-Goetia borrowing (Peterson 2001).",
+      "Cipher Manuscripts: the Trithemian source table; the inventory (24 signs or more; J, V, W); the 60-folio count; the 1809 watermark; Woodford; Hockley; the five grades (0=0 to 4=7); the present location; Küntz's 1996 facsimile edition. All 24 letter forms are absent.",
+      "Article titles: Ernst, Daphnis 25 (1996), and Reeds, Cryptologia 22 (1998). The fact-checker's knowledge agrees; not checked.",
+      "Heidenberg as Trithemius's family name; his death on 13 December 1516; the Graecising etymology of 'Peapolis'; Heidel's 1676 title and imprint; Selenus 1624.",
+      "The Latin proverb behind 'Give Hey to an Ox, Sugar to a Parret' (researcher's memory: 'da foenum bovi, saccharum psittaco') is unchecked and was removed from the quotation.",
+      "URLs relayed from the theban fact-check were not re-seen by this check. A later pass with search should confirm them, and https://en.wikipedia.org/wiki/Cipher_Manuscripts (withdrawn) and https://books.google.com/books/about/De_Occulta_Philosophia.html?id=dCARYHTxmeIC (replaced) may be restored only if seen."
+    ],
+    "removedUrls": [
+      "https://en.wikipedia.org/wiki/Cipher_Manuscripts (withdrawn; citation kept)",
+      "https://books.google.com/books/about/De_Occulta_Philosophia.html?id=dCARYHTxmeIC (replaced by https://preview.wellcomecollection.org/works/ymvvbx6a)",
+      "https://historyofinformation.com/detail.php?id=348 (corrected to https://www.historyofinformation.com/detail.php?id=348)"
+    ],
+    "readyToPublish": false
+  }
+}

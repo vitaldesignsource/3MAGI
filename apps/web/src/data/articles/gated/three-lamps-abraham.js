@@ -1,0 +1,7 @@
+export default {
+body: [
+            'Three houses of prayer trace themselves to one tent in the desert. Beneath centuries of doctrinal divergence, the Abrahamic traditions share a grammar of covenant, sacrifice, prophecy, and law that predates the disputes built on top of it.',
+            'This essay is not a call to flatten real theological difference into a single lamp, but an attempt to see the shared architecture — the hospitality, the binding, the promise — from which each tradition constructed its own house.',
+            'Reading Genesis alongside the Qur\u2019an and rabbinic midrash, a single hidden current becomes visible: three lamps, lit from one flame, carried in different directions.',
+        ],
+};

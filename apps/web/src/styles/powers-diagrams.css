@@ -1,0 +1,77 @@
+/* --- the Hierarchies door: diagrams and the rank ladder ----------------------
+   Every rule is scoped to .pw-page, so the Christianities pages, which share
+   the ch- machinery, are untouched. The base diagram and ladder rules live in
+   index.css; this file only adds the phone stage, the focus ring, the rung
+   numerals and the dimming of the rail marks. */
+
+/* The diagram stage. On desktop it is a plain wrapper; it only pans when the
+   drawing is wider than its column (phones, below). */
+.pw-page .pw-diagram-stage { position: relative; }
+.pw-page .pw-diagram-stage:focus { outline: none; }
+.pw-page .pw-diagram-stage:focus-visible {
+  outline: 2px solid #d1ad68; outline-offset: 2px;
+}
+
+@media (max-width: 600px) {
+  /* Bleed to the card's inner edges (the body's phone padding is .9rem) and
+     hold the drawing at 30rem, so labels read at about 11px instead of 7. */
+  .pw-page .pw-diagram { margin-inline: -0.9rem; }
+  .pw-page .pw-diagram-stage {
+    --pw-fade-l: 1.25rem;
+    --pw-fade-r: 1.25rem;
+    overflow-x: auto; overflow-y: hidden;
+    overscroll-behavior-x: contain;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(209, 173, 104, 0.45) transparent;
+    /* Soft edges say there is more to either side; an edge already reached
+       drops its fade (Frame sets data-at-start / data-at-end). */
+    -webkit-mask-image: linear-gradient(90deg, transparent, #000 var(--pw-fade-l), #000 calc(100% - var(--pw-fade-r)), transparent);
+    mask-image: linear-gradient(90deg, transparent, #000 var(--pw-fade-l), #000 calc(100% - var(--pw-fade-r)), transparent);
+  }
+  .pw-page .pw-diagram-stage[data-at-start] { --pw-fade-l: 0px; }
+  .pw-page .pw-diagram-stage[data-at-end] { --pw-fade-r: 0px; }
+  /* A mask clips everything outside the border box, the focus ring too, so a
+     keyboard-focused stage drops its fades and draws the ring inside. */
+  .pw-page .pw-diagram-stage:focus-visible {
+    -webkit-mask-image: none; mask-image: none;
+    outline-offset: -2px;
+  }
+  .pw-page .pw-diagram-svg { width: 30rem; max-width: none; }
+  .pw-page .pw-diagram figcaption { padding-inline: 0.9rem; }
+}
+
+/* The ladder. Words keep full contrast at every rung; the light descending is
+   carried by the rail marks, which dim rung by rung instead. */
+.pw-page .pw-rung-mark { opacity: calc(1 - var(--rung, 0) * 0.06); }
+
+/* Numerals I–X before each rung, in gold Cinzel. The <ol> already gives the
+   order to assistive technology, so the alt-text form ("/ ''") keeps them out
+   of the accessibility tree; the first declaration is the fallback. A hanging
+   indent keeps a wrapped gloss aligned with the name, not under the numeral. */
+.pw-page .pw-ranks.is-ladder { counter-reset: rung; }
+.pw-page .pw-ranks.is-ladder li {
+  counter-increment: rung;
+  --pw-numeral: 2.1rem;
+  padding-left: calc(1.5rem + var(--pw-numeral) + var(--rung, 0) * 0.42rem);
+  text-indent: calc(var(--pw-numeral) * -1);
+}
+.pw-page .pw-rung-body { text-indent: 0; }
+.pw-page .pw-rung-body::before {
+  content: counter(rung, upper-roman);
+  content: counter(rung, upper-roman) / "";
+  display: inline-block; min-width: var(--pw-numeral);
+  font: 500 0.7rem/1 "Cinzel", Georgia, serif;
+  letter-spacing: 0.08em;
+  color: rgba(209, 173, 104, 0.85);
+}
+
+@media (max-width: 600px) {
+  /* Halve the step on phones: rung X sits 1.8rem in, not 3.8rem. The numeral
+     column still clears VIII (about 1.5rem) with a small gap. */
+  .pw-page .pw-ranks.is-ladder li {
+    --pw-numeral: 1.9rem;
+    padding-left: calc(1.2rem + var(--pw-numeral) + var(--rung, 0) * 0.2rem);
+  }
+  .pw-page .pw-rung-mark { left: calc(var(--rung, 0) * 0.2rem); width: 0.8rem; }
+}

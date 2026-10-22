@@ -1,0 +1,673 @@
+{
+  "key": "charakteres",
+  "title": "Charaktêres: the ring-letters (Brillenbuchstaben)",
+  "otherNames": [
+    "charaktêres (Greek χαρακτῆρες, singular χαρακτήρ, 'engraved or stamped mark', from χαράσσω, 'to engrave')",
+    "characteres (Latin; Augustine: 'notae quas characteres vocant', 'marks which they call characters')",
+    "ring-letters, ring-signs",
+    "Brillenbuchstaben, 'spectacle letters' (modern German scholarly term: the rings look like spectacle lenses)",
+    "ketav malakhim, 'script of the angels' (Hebrew label on some later ring-letter alphabets, e.g. the 'Malachim' alphabet in BL Or 10161 fol. 21v; cf. Agrippa III.30)",
+    "ḥotamot, 'seals' (Hebrew; reported from the Rylands posts in a sibling search, not seen by me)",
+    "al-khawātim, 'the seals' (Arabic), especially the seven seals, al-khawātim al-sabʿa",
+    "aqlām, 'pens, scripts' (Arabic word for these alphabets, as in the title Shawq al-mustahām fī maʿrifat rumūz al-aqlām)"
+  ],
+  "family": "Not an alphabet. A stock of invented signs that stand for no sounds. They come from Graeco-Egyptian and Roman magic and were carried on in Jewish, Coptic, Arabic and Latin magic. Many end their strokes in small rings. In the Middle Ages some were rearranged into alphabets keyed to the Hebrew letters. These are the forerunners of the ring-letter alphabets that Agrippa printed in III.30 (Celestial, Malachim, Transitus fluvii).",
+  "summary": "Charaktêres are invented signs. Greek magical handbooks, curse tablets, amulets and gems of the Roman imperial period tell the user to copy them exactly. They spell nothing and were treated as powers in their own right. Many end their strokes in small circles, hence the modern names 'ring-letters' and Brillenbuchstaben. Jewish practitioners took them over in Late Antiquity, and Arabic magic uses kindred signs, best known as the seven seals. In medieval Jewish manuscripts some were keyed to the Hebrew letters as 'alphabets of the angels'. Through de Balmes (1523) and Agrippa (1533) these alphabets reached European learned magic.",
+  "firstAttestation": {
+    "work": "No single first text. The first large bodies of evidence are the Greek magical papyri (handbooks), lead curse tablets, metal amulets (lamellae) and engraved gems of the Roman imperial period.",
+    "author": "anonymous practitioners and scribes",
+    "date": "Roman imperial period. Most of the material dates from the 2nd to the 5th century CE. The earliest datable single object was not checked in this run.",
+    "place": "Egypt for the papyri. The tablets and gems come from across the Roman world: Rome, Carthage and Hadrumetum, Greece, Syria and elsewhere.",
+    "locator": "Handbooks rich in signs, for example PGM VII = P. Lond. 121 (British Library) and PGM XXXVI = P. Oslo 1. Standard edition: K. Preisendanz, Papyri Graecae Magicae I-II (1928-31; 2nd ed. A. Henrichs, 1973-74). English translation: H. D. Betz (ed.), The Greek Magical Papyri in Translation (1986; 2nd ed. 1992).",
+    "notes": "Gordon's title 'Signa nova et inaudita' ('new and unheard-of signs') states the scholarly view that the signs were invented in this period, not inherited. If the brief's 'Dzhurova' means Kirsten Dzwiza, her corpus (ritual handbooks of the 1st to 7th centuries) gives the outer dates of the handbook material. Basis: my prior knowledge; not re-checked in this run (web search was unavailable)."
+  },
+  "transmission": [
+    {
+      "date": "c. 1st-5th c. CE",
+      "work": "Greek magical papyri (PGM), curse tablets (defixiones), lamellae, gems",
+      "author": "anonymous",
+      "what": "The signs appear in rows to be copied as given, beside voces magicae and divine names. They are scratched on lead tablets and metal lamellae, drawn on papyrus and engraved on gems (e.g. the Chnoubis sign). Editions: Preisendanz 1928-31; Wünsch 1898; Audollent 1904; Bonner 1950. Basis: my prior knowledge; not re-checked in this run (web search was unavailable)."
+    },
+    {
+      "date": "Late Antiquity (c. 4th-7th c.)",
+      "work": "Aramaic and Hebrew amulets from Palestine and Syria",
+      "author": "Jewish practitioners",
+      "what": "Jewish practitioners borrow the signs from Greek magic and write them beside angel names on metal and other amulets (Bohak 2008; 2011). Corpora: Naveh and Shaked 1985, 1993. Basis: my prior knowledge; not re-checked in this run (web search was unavailable)."
+    },
+    {
+      "date": "Late Antiquity to early Middle Ages",
+      "work": "Coptic ritual texts",
+      "author": "Christian Egyptian scribes",
+      "what": "The signs continue in Coptic ritual handbooks and amulets (Meyer and Smith 1994). Basis: my prior knowledge; not re-checked in this run (web search was unavailable)."
+    },
+    {
+      "date": "c. 10th-13th c. and later",
+      "work": "Cairo Genizah magical texts",
+      "author": "Jewish practitioners",
+      "what": "Genizah recipe books and amulets keep the signs and add new ones. Bohak (2011) traces them from here into medieval Jewish magic. Editions: Schiffman and Swartz 1992; Schäfer and Shaked 1994-99. Basis: my prior knowledge; not re-checked in this run (web search was unavailable)."
+    },
+    {
+      "date": "attributed to the early 10th c.; attribution disputed",
+      "work": "Shawq al-mustahām fī maʿrifat rumūz al-aqlām",
+      "author": "ascribed to Ibn Waḥshiyya",
+      "what": "A catalogue of 'ancient', planetary and sages' alphabets, many with ring-ends, presented as the scripts of earlier peoples. English version by Joseph Hammer: Ancient Alphabets and Hieroglyphic Characters Explained (London, 1806). Hämeen-Anttila (2006) discusses whether it is genuinely Ibn Waḥshiyya's. Basis: my prior knowledge; not re-checked in this run (web search was unavailable)."
+    },
+    {
+      "date": "13th c. (al-Būnī d. 622/1225) and later",
+      "work": "al-Būnī and the Shams al-maʿārif corpus",
+      "author": "Aḥmad ibn ʿAlī al-Būnī (attributed)",
+      "what": "Sets out the seven seals (al-khawātim al-sabʿa) together with a poem that describes them. The printed Shams al-maʿārif al-kubrā is a later compilation under al-Būnī's name. Basis: my prior knowledge; not re-checked in this run (web search was unavailable)."
+    },
+    {
+      "date": "medieval",
+      "work": "Jewish kabbalistic and magical manuscripts",
+      "author": "anonymous",
+      "what": "Ring-ended signs keyed one-for-one to the 22 Hebrew letters as alphabets of angels (Macfarlane 2025; Bohak 2011). Basis: search-backed notes in the sibling research files (celestial, malachim, transitus-fluvii)."
+    },
+    {
+      "date": "1523",
+      "work": "Mikneh Avram / Peculium Abrae (Venice: Daniel Bomberg)",
+      "author": "Abraham de Balmes",
+      "what": "Prints a ring-letter alphabet, Ketav ever ha-nahar ('script beyond the River'), as one of the scripts derived from Ashuri. It appears in a Hebrew grammar, not a magical book. Macfarlane calls it the first Brillenbuchstaben alphabet printed in Europe. Basis: search-backed notes in the sibling research files (celestial, malachim, transitus-fluvii)."
+    },
+    {
+      "date": "1530",
+      "work": "Voarchadumia contra alchimiam (Venice)",
+      "author": "Giovanni Agostino Panteo",
+      "what": "Treats the 'transfluvial' alphabet as Abraham's script (per Macfarlane 2025). Basis: search-backed notes in the sibling research files (celestial, malachim, transitus-fluvii)."
+    },
+    {
+      "date": "1533 (colophon July 1533)",
+      "work": "De occulta philosophia libri tres, III.30",
+      "author": "Heinrich Cornelius Agrippa",
+      "what": "Prints three ring-letter alphabets on one woodcut: Celestial, Malachim and Transitus fluvii. He presents them as writings found among the Hebrews, and glosses Malachim as 'of Angels, or Regal'. This is the main route by which the ring-letters entered European magic. Basis: search-backed notes in the sibling research files (celestial, malachim, transitus-fluvii)."
+    },
+    {
+      "date": "1651",
+      "work": "Three Books of Occult Philosophy (London)",
+      "author": "trans. 'J.F.'",
+      "what": "English translation with the alphabets re-cut. Basis: search-backed notes in the sibling research files (celestial, malachim, transitus-fluvii)."
+    },
+    {
+      "date": "17th-18th c.",
+      "work": "British Library Or 10161, fol. 21v",
+      "author": "anonymous (Jewish recipe and charm collection, once owned by Moses Gaster)",
+      "what": "An alphabet labelled 'Malachim', whose letters are 'not entirely identical' to Agrippa's (Rylands blog, Part II). It may depend on Agrippa. The same post cites Gaster Hebrew MS 177, fols. 44a-45a. I did not see the content of those folios. Basis: search-backed notes in the sibling research files (celestial, malachim, transitus-fluvii)."
+    },
+    {
+      "date": "1701",
+      "work": "Sefer Raziel ha-Malakh (Amsterdam)",
+      "author": "attributed in the book to the angel Raziel (legend)",
+      "what": "A printed Hebrew magical compendium. As I recall it, it carries angelic alphabets and amulet designs in ring-letter style. Check the print before citing a page. Basis: my prior knowledge; not re-checked in this run (web search was unavailable)."
+    },
+    {
+      "date": "1801",
+      "work": "The Magus (London), Book II Part I ch. XVI and plate",
+      "author": "Francis Barrett",
+      "what": "Reprints Agrippa's ring-letter alphabets. Most modern charts copy this plate. Basis: search-backed notes in the sibling research files (celestial, malachim, transitus-fluvii)."
+    },
+    {
+      "date": "1898-1931",
+      "work": "Modern editions of the ancient evidence",
+      "author": "R. Wünsch (1898); A. Audollent (1904); K. Preisendanz (1928-31)",
+      "what": "Publish the tablets and papyri with drawn facsimiles of the signs. These are the base for any tracing. Basis: my prior knowledge; not re-checked in this run (web search was unavailable)."
+    },
+    {
+      "date": "1930",
+      "work": "Siegel und Charaktere in der muhammedanischen Zauberei",
+      "author": "Hans Alexander Winkler",
+      "what": "The classic study of the seals and ring-letters in Islamic magic, including the seven seals. Basis: my prior knowledge; not re-checked in this run (web search was unavailable)."
+    },
+    {
+      "date": "2011",
+      "work": "'Signa nova et inaudita' (MHNH 11); 'The Charaktêres in Ancient and Medieval Jewish Magic' (Acta Classica Univ. Sci. Debrecen. 47)",
+      "author": "Richard Gordon; Gideon Bohak",
+      "what": "Gordon gives the theory and practice of invented signs in the Graeco-Egyptian texts. Bohak follows the signs from Greek into Jewish magic and down to the medieval alphabets. Bohak's citation is search-backed (sibling files). Gordon's volume and pages are from memory."
+    },
+    {
+      "date": "2014",
+      "work": "'Charaktêres between antiquity and Renaissance: transmission and re-invention' (in Dasen and Spieser, eds, Les savoirs magiques)",
+      "author": "Richard Gordon",
+      "what": "Follows the signs from antiquity to the Renaissance and argues that the early modern 'alphabets' were re-inventions. Basis: my prior knowledge; not re-checked in this run (web search was unavailable)."
+    },
+    {
+      "date": "2022 (25 Jan; 2 Feb)",
+      "work": "'Speaking to angels: Charaktêres in Jewish magical manuscripts', Parts I-II",
+      "author": "University of Manchester Library, Rylands blog",
+      "what": "Explains the signs in Gaster-collection manuscripts as angelic scripts and links them to de Balmes and Agrippa. Basis: search-backed notes in the sibling research files (celestial, malachim, transitus-fluvii)."
+    },
+    {
+      "date": "2025",
+      "work": "'Written in the Stars? Alphabets and Angels in Early Modern Europe', JHI 86.3, 473-506",
+      "author": "Kirsten Macfarlane",
+      "what": "Shows how Brillenbuchstaben from medieval Jewish kabbalistic manuscripts came to be treated by Christian scholars as alphabets derived from the stars and authored by angels. Basis: search-backed notes in the sibling research files (celestial, malachim, transitus-fluvii)."
+    }
+  ],
+  "claims": [
+    {
+      "claim": "Charaktêres were invented in the Roman imperial period. They are not an ancient alphabet and spell no language.",
+      "standing": "documented",
+      "evidence": "This is the common position of Gordon (2011), Bohak (2011) and Dzwiza. The signs first appear in the imperial-period handbooks, tablets and gems, and they are not keyed to sounds. The handbooks say to copy them as given. Basis: my prior knowledge; not re-checked in this run (web search was unavailable).",
+      "sources": [
+        "Gordon 2011",
+        "Bohak 2011",
+        "Dzwiza (see sources)"
+      ]
+    },
+    {
+      "claim": "Ancient texts treat the signs as powers in their own right and can address them.",
+      "standing": "documented",
+      "evidence": "Gordon discusses spells and curse tablets that invoke the charaktêres themselves, as 'holy charaktêres' (hagioi charaktêres). Bohak notes Jewish amulets that adjure 'by these signs'. I did not re-check which tablets these are, so the page should give no tablet number until checked. Basis: my prior knowledge; not re-checked in this run (web search was unavailable).",
+      "sources": [
+        "Gordon 2011",
+        "Bohak 2011"
+      ]
+    },
+    {
+      "claim": "The charaktêres are the script of the angels.",
+      "standing": "attributed",
+      "evidence": "This is how later users explained the signs. Evidence: the Hebrew label 'Malachim' / ketav malakhim on ring-letter alphabets (BL Or 10161 fol. 21v, 17th-18th c., per Rylands Part II); Agrippa's gloss 'Malachim, or Melachim i. e. of Angels, or Regal' (III.30, in the 1651 translation); and the Rylands account of them as angelic scripts. The ancient Greek material I know calls the signs 'holy' powers, not an angels' alphabet. I could not document any ancient text that calls them the angels' writing. Write 'later users called them…'.",
+      "sources": [
+        "Rylands blog Parts I-II (2022)",
+        "Agrippa 1533 / J.F. 1651, III.30",
+        "Macfarlane 2025"
+      ]
+    },
+    {
+      "claim": "Jewish practitioners borrowed charaktêres from Greek magic in Late Antiquity and kept them through the Genizah period.",
+      "standing": "documented",
+      "evidence": "Bohak's central argument (2008; 2011), on the evidence of Palestinian amulets and Genizah texts. Basis: my prior knowledge; not re-checked in this run (web search was unavailable).",
+      "sources": [
+        "Bohak 2008",
+        "Bohak 2011",
+        "Naveh and Shaked 1985, 1993",
+        "Schäfer and Shaked 1994-99"
+      ]
+    },
+    {
+      "claim": "Medieval Jewish manuscripts rearranged ring-ended signs into alphabets keyed to the 22 Hebrew letters. Christian scholars later took these to be alphabets derived from the stars and authored by angels.",
+      "standing": "documented",
+      "evidence": "Macfarlane 2025 (abstract and snippets); Rylands blog Part II; de Balmes printed one such alphabet in 1523. The sources I have say only 'medieval' and do not say when the alphabets first appeared. Basis: search-backed notes in the sibling research files (celestial, malachim, transitus-fluvii).",
+      "sources": [
+        "Macfarlane 2025",
+        "Rylands blog Part II (2022)",
+        "de Balmes 1523",
+        "Bohak 2011"
+      ]
+    },
+    {
+      "claim": "Agrippa's angelic alphabets (Celestial, Malachim, Transitus fluvii) are direct descendants of particular late-antique charaktêres.",
+      "standing": "disputed",
+      "evidence": "The family link (ring-ended strokes, a Jewish route) is documented. Transitus fluvii was printed by de Balmes in 1523. But no source I have traces any letter of these alphabets to a particular ancient sign. No copy of Celestial or Malachim older than 1533 is known (sibling research). Gordon (2014) treats the early modern alphabets as re-inventions. Say 'belong to the ring-letter family that grew out of the charaktêres', not 'are the ancient angelic letters'.",
+      "sources": [
+        "Macfarlane 2025",
+        "Rylands blog Part II",
+        "Gordon 2014",
+        "Bohak 2011"
+      ]
+    },
+    {
+      "claim": "The signs come from Egyptian hieroglyphs or priestly writing.",
+      "standing": "disputed",
+      "evidence": "Frankfurter (1994) reads them against Egyptian priestly ideas of writing as power. Others point to Greek letters, abbreviation marks and astrological signs. No source I could check derives specific signs from hieroglyphs. Basis: my prior knowledge; not re-checked in this run (web search was unavailable).",
+      "sources": [
+        "Frankfurter 1994",
+        "Gordon 2011"
+      ]
+    },
+    {
+      "claim": "Augustine counts 'characteres' among condemned superstitions.",
+      "standing": "documented",
+      "evidence": "De doctrina christiana II.20.30: amulets and remedies, 'whether incantations or certain marks which they call characteres', belong to superstition. Basis: my prior knowledge; not re-checked in this run (web search was unavailable).",
+      "sources": [
+        "Augustine, De doctrina christiana II.20.30 (ed. and trans. R. P. H. Green, Oxford 1995)"
+      ]
+    },
+    {
+      "claim": "Iamblichus mentions diviners who 'stand upon charaktêres'.",
+      "standing": "documented",
+      "evidence": "De mysteriis, Book III, in his survey of kinds of divination. The section number is not re-checked: check it against Clarke, Dillon and Hershbell 2003 before printing. Basis: my prior knowledge; not re-checked in this run (web search was unavailable).",
+      "sources": [
+        "Iamblichus, De mysteriis III, trans. Clarke, Dillon and Hershbell (Atlanta: SBL, 2003)"
+      ]
+    },
+    {
+      "claim": "The seven seals together form the Greatest Name of God.",
+      "standing": "attributed",
+      "evidence": "The poem in the al-Būnī tradition that describes the seven ends by calling them the Name of exalted worth. This is a statement of belief within the tradition. It is a living devotional usage: report it, do not judge it. Basis: my prior knowledge; not re-checked in this run (web search was unavailable).",
+      "sources": [
+        "Winkler 1930",
+        "Canaan 1937"
+      ]
+    },
+    {
+      "claim": "The seven-seals poem was composed by ʿAlī ibn Abī Ṭālib.",
+      "standing": "legend",
+      "evidence": "An attribution found in popular and later sources. Not verified. Basis: my prior knowledge; not re-checked in this run (web search was unavailable).",
+      "sources": [
+        "Winkler 1930 (to check)"
+      ]
+    },
+    {
+      "claim": "The Arabic seven seals descend from late-antique charaktêres.",
+      "standing": "attributed",
+      "evidence": "Winkler's thesis (1930), as I recall it. Gordon (2014) discusses transmission into Arabic magic. Basis: my prior knowledge; not re-checked in this run (web search was unavailable).",
+      "sources": [
+        "Winkler 1930",
+        "Gordon 2014"
+      ]
+    },
+    {
+      "claim": "Sepher ha-Razim prescribes or draws charaktêres.",
+      "standing": "disputed",
+      "evidence": "Unconfirmed. Margalioth's reconstructed text (1966) is mainly angel lists and spoken adjurations. I could not confirm that it draws or prescribes the signs, whereas Genizah recipe books clearly do. Do not cite Sepher ha-Razim as a source of drawn signs until it is checked in Rebiger and Schäfer 2009. Basis: my prior knowledge; not re-checked in this run (web search was unavailable).",
+      "sources": [
+        "Margalioth 1966",
+        "Morgan 1983",
+        "Rebiger and Schäfer 2009"
+      ]
+    },
+    {
+      "claim": "The Glagolitic letters were modelled on charaktêres.",
+      "standing": "disputed",
+      "evidence": "A hypothesis. An article titled 'The Characters (Χαρακτῆρες) of the Glagolitic Alphabet: New Light on an Old Puzzle' (Redalyc) seems from its title to examine such a link. I know only its title and that it reports Campanini, from a sibling search. Its author and argument were not seen. Keep it off the page or mark it as a hypothesis.",
+      "sources": [
+        "Redalyc article (see sources)"
+      ]
+    }
+  ],
+  "letters": [
+    {
+      "order": 1,
+      "name": "Ring-ended stroke (the 'Brille')",
+      "value": "none (not keyed to a letter)",
+      "translit": "",
+      "numeric": null,
+      "form": "TYPE DRAWING, not traced from any one object. A single straight upright stroke, centred, from about y=20 to y=80 in a 100-unit box (60% of the height). Each end has a small OPEN ring, about 10 units across (one-sixth of the stroke), centred on the end point. The stroke stops at the ring's edge and does not pass through it. Nothing else. These two rings are the 'spectacles' of the German name.",
+      "formConfidence": "medium",
+      "note": "Found throughout the material (papyri, lamellae, Genizah) as a building block, and alone in rows of signs. Ring-ends are the one feature every source names (Bohak 2011; Rylands posts). Rings are open in most hand copies; some prints and modern charts fill them as dots. Label it on the page as a type, not as the sign of a particular papyrus."
+    },
+    {
+      "order": 2,
+      "name": "Ring-ended cross",
+      "value": "none",
+      "translit": "",
+      "numeric": null,
+      "form": "TYPE DRAWING. Two straight strokes of equal length cross at right angles at the centre of the box, either upright (+) or diagonal (X). Each arm runs about 30 units from the centre. Each of the four free ends has an open ring, about 10 units across, centred on the end point. Nothing at the crossing.",
+      "formConfidence": "medium",
+      "note": "As I recall the published plates, a common shape in the rows of ring-signs on Jewish amulets and in medieval Jewish manuscripts. It is not tied here to a numbered object. Type label required."
+    },
+    {
+      "order": 3,
+      "name": "Ring-ended Greek capital (eta type)",
+      "value": "none (built on Greek Η, not standing for it)",
+      "translit": "",
+      "numeric": null,
+      "form": "TYPE DRAWING. A Greek capital eta: two parallel uprights about 60 units tall and 40 apart, joined by a horizontal bar at mid-height. Each of the four free ends (top and foot of each upright) has an open ring centred on the end point. The ends of the crossbar meet the uprights and have no rings.",
+      "formConfidence": "medium",
+      "note": "Many charaktêres are Greek capitals, or mirror images of them, with ring-ends or extra strokes added. Gordon and Dzwiza discuss this letter-based layer (as I recall them). Eta is only an example of the type: no source picks it out. Type label required."
+    },
+    {
+      "order": 4,
+      "name": "The Chnoubis sign",
+      "value": "none",
+      "translit": "",
+      "numeric": null,
+      "form": "Three upright S-shaped curves stand side by side, evenly spaced, each about 60 units tall and 20 wide. ONE straight horizontal bar crosses all three through their middles and runs a little past the outer curves on each side. No rings. Variants seen on gems: Z-shapes instead of S-shapes, four curves instead of three, the bar set higher, the S facing either way.",
+      "formConfidence": "high",
+      "note": "Engraved on gems, chiefly on the back of stones showing the lion-headed serpent Chnoubis (Bonner 1950; Michel 2001). Galen reports that Nechepso recommended a green jasper engraved with the radiate serpent for the stomach. He describes the image, not this sign, and the book and locator were not re-checked. This sign belongs to the gems rather than the papyri, and it has no ring-ends: show it as a contrast. Basis: my prior knowledge; not re-checked in this run (web search was unavailable)."
+    },
+    {
+      "order": 5,
+      "name": "Seven seals, 1: the seal (khātam)",
+      "value": "none",
+      "translit": "khātam",
+      "numeric": null,
+      "form": "A five-pointed star drawn in one continuous line (pentagram), point up, filling the box. Many copies draw a six-pointed star (two interlaced triangles) instead.",
+      "formConfidence": "high",
+      "note": "Sequence and wording: the poem on the seven seals in the tradition of al-Būnī, as given in Winkler 1930 and Canaan 1937 (recalled, not re-checked). Copies differ. Draw from a plate in Winkler, Canaan or Porter 2011, not from this description alone. The poem's opening 'after a seal' is usually read as the seal of Solomon. Whether the star has five points or six varies from copy to copy, so follow the plate you trace."
+    },
+    {
+      "order": 6,
+      "name": "Seven seals, 2: three staves",
+      "value": "none",
+      "translit": "thalāth ʿiṣiyy",
+      "numeric": null,
+      "form": "Three upright strokes of equal height side by side, evenly spaced. On top of them is a short horizontal bar or spear-like head: the poem says that on their heads is 'something like a straightened spearhead'. Many copies draw three uprights under one horizontal bar (like an upside-down Ш). Others put a small bar or point on each upright.",
+      "formConfidence": "medium",
+      "note": "Sequence and wording: the poem on the seven seals in the tradition of al-Būnī, as given in Winkler 1930 and Canaan 1937 (recalled, not re-checked). Copies differ. Draw from a plate in Winkler, Canaan or Porter 2011, not from this description alone. Basis: my prior knowledge; not re-checked in this run (web search was unavailable)."
+    },
+    {
+      "order": 7,
+      "name": "Seven seals, 3: the blind, tailless mīm",
+      "value": "none (resembles Arabic mīm, م)",
+      "translit": "mīm ṭamīs abtar",
+      "numeric": null,
+      "form": "A small closed loop sitting on the line, filled solid (the 'blind' mīm, whose eye is closed), with NO descending tail. Draw it as a small dot or blob, about a third of the height of the staves. Some copies leave the loop open (a ring) or add a short stub.",
+      "formConfidence": "medium",
+      "note": "Sequence and wording: the poem on the seven seals in the tradition of al-Būnī, as given in Winkler 1930 and Canaan 1937 (recalled, not re-checked). Copies differ. Draw from a plate in Winkler, Canaan or Porter 2011, not from this description alone. 'Ṭamīs' (effaced, blind) and 'abtar' (cut off, tailless) are the poem's words as I recall them. Basis: my prior knowledge; not re-checked in this run (web search was unavailable)."
+    },
+    {
+      "order": 8,
+      "name": "Seven seals, 4: the ladder",
+      "value": "none",
+      "translit": "sullam",
+      "numeric": null,
+      "form": "A ladder. In many copies it is one tall upright crossed by several short horizontal rungs at even intervals; in others it is two uprights with rungs between. The number of rungs varies (three to five or more). The poem: a ladder 'to every hope, though it is not a ladder'.",
+      "formConfidence": "low",
+      "note": "Sequence and wording: the poem on the seven seals in the tradition of al-Būnī, as given in Winkler 1930 and Canaan 1937 (recalled, not re-checked). Copies differ. Draw from a plate in Winkler, Canaan or Porter 2011, not from this description alone. The number of uprights and rungs is not fixed in what I recall. Trace from a plate. Basis: my prior knowledge; not re-checked in this run (web search was unavailable)."
+    },
+    {
+      "order": 9,
+      "name": "Seven seals, 5: four fingers",
+      "value": "none",
+      "translit": "arbaʿa mithl al-anāmil",
+      "numeric": null,
+      "form": "Four short upright strokes side by side, evenly spaced, like fingertips 'lined up, pointing to good things, without a wrist'. No base line joins them. The tops are plain in some copies and slightly hooked in others.",
+      "formConfidence": "medium",
+      "note": "Sequence and wording: the poem on the seven seals in the tradition of al-Būnī, as given in Winkler 1930 and Canaan 1937 (recalled, not re-checked). Copies differ. Draw from a plate in Winkler, Canaan or Porter 2011, not from this description alone. Basis: my prior knowledge; not re-checked in this run (web search was unavailable)."
+    },
+    {
+      "order": 10,
+      "name": "Seven seals, 6: the split hāʾ",
+      "value": "none (resembles Arabic hāʾ, ه)",
+      "translit": "hāʾ shaqīq",
+      "numeric": null,
+      "form": "The Arabic letter hāʾ in its looped form: a closed shape divided into two loops, like the medial ـهـ, with the two small loops stacked or side by side. The poem calls it 'split'.",
+      "formConfidence": "medium",
+      "note": "Sequence and wording: the poem on the seven seals in the tradition of al-Būnī, as given in Winkler 1930 and Canaan 1937 (recalled, not re-checked). Copies differ. Draw from a plate in Winkler, Canaan or Porter 2011, not from this description alone. Basis: my prior knowledge; not re-checked in this run (web search was unavailable)."
+    },
+    {
+      "order": 11,
+      "name": "Seven seals, 7: the inverted wāw",
+      "value": "none (resembles Arabic wāw, و)",
+      "translit": "wāw munakkas",
+      "numeric": null,
+      "form": "The Arabic letter wāw (و: a small closed loop with a tail curving down and to the left) turned upside down or reversed, so that the tail rises or the loop sits at the bottom. The poem likens it to a cupper's tube. Copies differ on which way it is turned.",
+      "formConfidence": "low",
+      "note": "Sequence and wording: the poem on the seven seals in the tradition of al-Būnī, as given in Winkler 1930 and Canaan 1937 (recalled, not re-checked). Copies differ. Draw from a plate in Winkler, Canaan or Porter 2011, not from this description alone. Which way to turn it must come from a plate. Basis: my prior knowledge; not re-checked in this run (web search was unavailable)."
+    },
+    {
+      "order": 12,
+      "name": "Charaktêres of PGM XXXVI (P. Oslo 1)",
+      "value": "none",
+      "translit": "",
+      "numeric": null,
+      "form": "NOT DESCRIBED. I could not see the papyrus or a facsimile, and I know no text that describes its signs stroke by stroke. Trace from the plates in Eitrem, Papyri Osloenses I (1925), or Preisendanz, PGM II. Leave this slot as an honest gap until then.",
+      "formConfidence": "low",
+      "note": "Included so that the page can point to a numbered ancient object. P. Oslo 1 (4th c. CE, as usually dated) is known for its drawings and rows of charaktêres. Basis: my prior knowledge; not re-checked in this run (web search was unavailable)."
+    },
+    {
+      "order": 13,
+      "name": "Charaktêres of the 'Sethian' curse tablets from Rome",
+      "value": "none",
+      "translit": "",
+      "numeric": null,
+      "form": "NOT DESCRIBED. These lead tablets carry drawn figures and charaktêres. Trace from the drawings in Wünsch, Sethianische Verfluchungstafeln aus Rom (1898), or the figures reproduced in Gager (1992). Leave this slot as a gap until then.",
+      "formConfidence": "low",
+      "note": "Included so that the page can point to a curse-tablet group by name. Basis: my prior knowledge; not re-checked in this run (web search was unavailable)."
+    }
+  ],
+  "lettersSource": "These are not the letters of an alphabet. They are 13 representative SIGNS, in four groups. (a) Three TYPE drawings (1-3) of the commonest ring-letter schemes. They are composed from the features the scholarship names and are not traced from any one object, so the page must label them as types. (b) The Chnoubis sign of the gems (4). (c) The seven seals of Arabic magic (5-11), in the order and with the verbal descriptions of the poem in the al-Būnī tradition, as recalled from Winkler 1930 and Canaan 1937. (d) Two numbered ancient sources left as honest gaps (12-13), to be traced from Eitrem 1925 / Preisendanz and Wünsch 1898 / Gager 1992. I saw no image in this run, and web search was unavailable. The ring-letter ALPHABETS keyed to Hebrew are on the celestial, malachim and transitus-fluvii pages, not here.",
+  "uses": [
+    {
+      "use": "Copied in rows on papyrus amulets, metal lamellae and lead curse tablets, as part of protective and binding rites.",
+      "evidence": "PGM (Preisendanz; Betz); Kotansky 1994; Gager 1992; Audollent 1904. Basis: my prior knowledge; not re-checked in this run (web search was unavailable)."
+    },
+    {
+      "use": "Drawn beside figures on curse tablets, especially circus curses from Rome and North Africa.",
+      "evidence": "Wünsch 1898; Audollent 1904; Gager 1992. Basis: my prior knowledge; not re-checked in this run (web search was unavailable)."
+    },
+    {
+      "use": "Engraved on gems, e.g. the Chnoubis sign on stones worn for the stomach.",
+      "evidence": "Bonner 1950; Michel 2001. Galen reports Nechepso's prescription of an engraved green jasper. Basis: my prior knowledge; not re-checked in this run (web search was unavailable)."
+    },
+    {
+      "use": "Written beside angel names and adjurations on Jewish amulets, and kept in Genizah recipe books.",
+      "evidence": "Naveh and Shaked 1985, 1993; Schäfer and Shaked 1994-99; Bohak 2008, 2011. Basis: my prior knowledge; not re-checked in this run (web search was unavailable)."
+    },
+    {
+      "use": "The seven seals on Islamic amulets and talismanic objects.",
+      "evidence": "Winkler 1930; Canaan 1937-38; Porter 2011. Basis: my prior knowledge; not re-checked in this run (web search was unavailable)."
+    },
+    {
+      "use": "Rearranged as alphabets keyed to Hebrew, used to write divine and angelic names in 'angelic script'.",
+      "evidence": "Rylands blog Parts I-II (Jewish manuscripts); Agrippa III.30; Mathers's Key of Solomon (1889) uses Malachim for angel names. Basis: search-backed notes in the sibling research files (celestial, malachim, transitus-fluvii)."
+    },
+    {
+      "use": "Standing on drawn signs during divination (as Iamblichus reports it).",
+      "evidence": "Iamblichus, De mysteriis III (section to check). Basis: my prior knowledge; not re-checked in this run (web search was unavailable)."
+    }
+  ],
+  "quotations": [
+    {
+      "text": "Latin: '... sive in praecantationibus, sive in quibusdam notis quas characteres vocant ...'. Own paraphrase: '... whether in incantations, or in certain marks which they call characters ...' (amulets and cures of this kind belong to superstition).",
+      "translation": "Own paraphrase of the Latin. The Latin is quoted from memory of the standard text and must be checked against R. P. H. Green's edition (Oxford, 1995) before printing.",
+      "source": "Augustine, De doctrina christiana II.20.30"
+    },
+    {
+      "text": "There is also a writing which they call Malachim, or Melachim i. e. of Angels, or Regal; there is also another, which they call the passing through the River",
+      "translation": "J.F., Three Books of Occult Philosophy (London, 1651), EEBO-TCP A26565; Peterson's edition at esotericarchives.com",
+      "source": "Agrippa, De occulta philosophia (1533), III.30"
+    },
+    {
+      "text": "the first Brillenbuchstaben alphabet to be printed in Europe",
+      "translation": "original English (of de Balmes's alphabet, 1523)",
+      "source": "Kirsten Macfarlane, 'Written in the Stars?', JHI 86.3 (2025), as quoted in the sibling research files"
+    }
+  ],
+  "links": [
+    {
+      "to": "pgm",
+      "relation": "Most ancient charaktêres come from the Greek magical handbooks presented in the PGM hall."
+    },
+    {
+      "to": "greek",
+      "relation": "The word χαρακτήρ, and the Greek capitals on which many signs are built."
+    },
+    {
+      "to": "hebrew",
+      "relation": "Medieval ring-letter alphabets were keyed one-for-one to the 22 Hebrew letters."
+    },
+    {
+      "to": "arabic",
+      "relation": "The seven seals and the ring-letter 'aqlām' of Arabic magic."
+    },
+    {
+      "to": "coptic",
+      "relation": "Coptic ritual texts carry the signs on."
+    },
+    {
+      "to": "latin",
+      "relation": "Latin 'characteres': Augustine's condemnation and medieval ritual magic."
+    },
+    {
+      "to": "celestial",
+      "relation": "One of Agrippa's three ring-letter alphabets (III.30); the family is shared, but no letter has been traced to an ancient sign."
+    },
+    {
+      "to": "malachim",
+      "relation": "Agrippa's 'writing of the Angels' (III.30); the name is the source of the 'angelic script' label."
+    },
+    {
+      "to": "transitus-fluvii",
+      "relation": "The first printed ring-letter alphabet (de Balmes, 1523), reprinted by Agrippa."
+    },
+    {
+      "to": "theban",
+      "relation": "Contrast: Theban is keyed to Latin and is not a ring-letter alphabet."
+    }
+  ],
+  "cautions": [
+    "Web search was unavailable for this item. Everything not marked as sibling-search-backed rests on my prior knowledge and must be checked before it is published.",
+    "Do not present a type drawing (signs 1-3) as the sign of a particular papyrus, tablet or gem. Label it 'type'.",
+    "Do not call the ancient charaktêres an alphabet or a cipher. Keying them to letters is medieval.",
+    "Do not say 'the angelic script' as fact. Say that later Jewish and Christian users called ring-letter alphabets the writing of the angels.",
+    "Do not cite Sepher ha-Razim as a source of drawn charaktêres until it is checked.",
+    "Do not give the seven-seals poem as ʿAlī's: that attribution is legend. Do not print its Arabic text from this file; take it from Winkler or Canaan.",
+    "The seven seals and the Greatest Name are part of living Islamic devotional and amulet practice. Describe them; do not mock or endorse them.",
+    "Brillenbuchstaben is a modern scholarly term, not an ancient one. I do not know who coined it.",
+    "Ring-ends may be open or filled. Follow the plate being traced and do not mix the two.",
+    "Copies of the same sign differ, because scribes copied imperfectly. One drawing is one witness, not the sign.",
+    "The brief's 'Dzhurova' is probably a slip for Kirsten Dzwiza. Confirm before naming either."
+  ],
+  "sources": [
+    {
+      "citation": "Gideon Bohak, 'The Charaktêres in Ancient and Medieval Jewish Magic', Acta Classica Universitatis Scientiarum Debreceniensis 47 (2011), 25-44",
+      "url": "https://ojs.lib.unideb.hu/classica/article/view/8015"
+    },
+    {
+      "citation": "Gideon Bohak, Ancient Jewish Magic: A History (Cambridge: Cambridge University Press, 2008)",
+      "url": ""
+    },
+    {
+      "citation": "University of Manchester Library, Rylands blog, 'Speaking to angels: Charaktêres in Jewish magical manuscripts', Part I (25 Jan 2022)",
+      "url": "https://rylandscollections.com/2022/01/25/speaking-to-angels-charakteres-in-jewish-magical-manuscripts-part-i/"
+    },
+    {
+      "citation": "Rylands blog, 'Speaking to angels', Part II (2 Feb 2022): Gaster Hebrew MS 177 fols. 44a-45a; BL Or 10161 fol. 21v 'Malachim'; de Balmes 1523",
+      "url": "https://rylandscollections.com/2022/02/02/speaking-to-angels-charakteres-in-jewish-magical-manuscripts-part-ii/"
+    },
+    {
+      "citation": "Richard Gordon, 'Signa nova et inaudita: The Theory and Practice of Invented Signs (charaktêres) in Graeco-Egyptian Magical Texts', MHNH 11 (2011), 15-44 (volume and pages from memory)",
+      "url": ""
+    },
+    {
+      "citation": "Richard Gordon, 'Charaktêres between Antiquity and Renaissance: Transmission and Re-invention', in V. Dasen and J.-M. Spieser (eds), Les savoirs magiques et leur transmission de l'Antiquité à la Renaissance (Florence: SISMEL, 2014) (from memory)",
+      "url": ""
+    },
+    {
+      "citation": "Kirsten Dzwiza, doctoral study of sign use in the Greek, Demotic and Coptic ritual handbooks of the 1st-7th c. (title recalled as 'Schriftverwendung in antiker Ritualpraxis ...'), and an article recalled as 'Magical Signs: An Extraordinary Phenomenon or Just an Ordinary Script?' (venue and year not re-checked)",
+      "url": ""
+    },
+    {
+      "citation": "David Frankfurter, 'The Magic of Writing and the Writing of Magic: The Power of the Word in Egyptian and Greek Traditions', Helios 21.2 (1994), 189-221 (from memory)",
+      "url": ""
+    },
+    {
+      "citation": "David Frankfurter (ed.), Guide to the Study of Ancient Magic (Leiden: Brill, 2019)",
+      "url": ""
+    },
+    {
+      "citation": "Joseph E. Sanzo, Scriptural Incipits on Amulets from Late Antique Egypt (Tübingen: Mohr Siebeck, 2014); the brief names him for charaktêres, but I could not identify the specific study",
+      "url": ""
+    },
+    {
+      "citation": "Kirsten Macfarlane, 'Written in the Stars? Alphabets and Angels in Early Modern Europe', Journal of the History of Ideas 86.3 (2025), 473-506",
+      "url": "https://muse.jhu.edu/article/966903"
+    },
+    {
+      "citation": "Saverio Campanini, 'The Quest for the Holiest Alphabet in the Renaissance', in A Universal Art: Hebrew Grammar across Disciplines and Faiths (Leiden: Brill, 2014), 196-245",
+      "url": "https://www.semanticscholar.org/paper/The-Quest-for-the-Holiest-Alphabet-in-the-Campanini/1791c17c57290f343a6d8815b9f72c1ed6d1125e"
+    },
+    {
+      "citation": "K. Preisendanz (ed.), Papyri Graecae Magicae: Die griechischen Zauberpapyri, 2 vols (Leipzig and Berlin: Teubner, 1928-31; 2nd ed. A. Henrichs, Stuttgart, 1973-74)",
+      "url": ""
+    },
+    {
+      "citation": "H. D. Betz (ed.), The Greek Magical Papyri in Translation, Including the Demotic Spells (Chicago: University of Chicago Press, 1986; 2nd ed. 1992)",
+      "url": ""
+    },
+    {
+      "citation": "S. Eitrem, Papyri Osloenses I: Magical Papyri (Oslo, 1925) (= PGM XXXVI)",
+      "url": ""
+    },
+    {
+      "citation": "R. Wünsch, Sethianische Verfluchungstafeln aus Rom (Leipzig: Teubner, 1898)",
+      "url": ""
+    },
+    {
+      "citation": "A. Audollent, Defixionum Tabellae (Paris, 1904)",
+      "url": ""
+    },
+    {
+      "citation": "J. G. Gager (ed.), Curse Tablets and Binding Spells from the Ancient World (New York: Oxford University Press, 1992)",
+      "url": ""
+    },
+    {
+      "citation": "C. Bonner, Studies in Magical Amulets, Chiefly Graeco-Egyptian (Ann Arbor: University of Michigan Press, 1950)",
+      "url": ""
+    },
+    {
+      "citation": "S. Michel, Die magischen Gemmen im Britischen Museum (London: British Museum Press, 2001)",
+      "url": ""
+    },
+    {
+      "citation": "R. Kotansky, Greek Magical Amulets I (Opladen: Westdeutscher Verlag, 1994)",
+      "url": ""
+    },
+    {
+      "citation": "J. Naveh and S. Shaked, Amulets and Magic Bowls (Jerusalem: Magnes, 1985); Magic Spells and Formulae (Jerusalem: Magnes, 1993)",
+      "url": ""
+    },
+    {
+      "citation": "P. Schäfer and S. Shaked, Magische Texte aus der Kairoer Geniza, 3 vols (Tübingen: Mohr Siebeck, 1994-99); L. H. Schiffman and M. D. Swartz, Hebrew and Aramaic Incantation Texts from the Cairo Genizah (Sheffield: JSOT Press, 1992)",
+      "url": ""
+    },
+    {
+      "citation": "M. Margalioth, Sepher ha-Razim (Jerusalem, 1966); trans. M. A. Morgan (Chico: Scholars Press, 1983); B. Rebiger and P. Schäfer, Sefer ha-Razim I und II (Tübingen: Mohr Siebeck, 2009)",
+      "url": ""
+    },
+    {
+      "citation": "M. Meyer and R. Smith (eds), Ancient Christian Magic: Coptic Texts of Ritual Power (San Francisco: HarperSanFrancisco, 1994)",
+      "url": ""
+    },
+    {
+      "citation": "H. A. Winkler, Siegel und Charaktere in der muhammedanischen Zauberei (Berlin and Leipzig: de Gruyter, 1930)",
+      "url": ""
+    },
+    {
+      "citation": "T. Canaan, 'The Decipherment of Arabic Talismans', Berytus 4 (1937), 69-110, and 5 (1938), 141-151 (from memory)",
+      "url": ""
+    },
+    {
+      "citation": "V. Porter, Arabic and Persian Seals and Amulets in the British Museum (London: British Museum, 2011)",
+      "url": ""
+    },
+    {
+      "citation": "J. Hammer (trans.), Ancient Alphabets and Hieroglyphic Characters Explained ... by Ahmad bin Abubekr bin Wahshih (London, 1806)",
+      "url": ""
+    },
+    {
+      "citation": "J. Hämeen-Anttila, The Last Pagans of Iraq: Ibn Waḥshiyya and his Nabatean Agriculture (Leiden: Brill, 2006)",
+      "url": ""
+    },
+    {
+      "citation": "Augustine, De doctrina christiana, ed. and trans. R. P. H. Green (Oxford: Clarendon Press, 1995), II.20.30",
+      "url": ""
+    },
+    {
+      "citation": "Iamblichus, On the Mysteries, trans. E. C. Clarke, J. M. Dillon and J. P. Hershbell (Atlanta: Society of Biblical Literature, 2003)",
+      "url": ""
+    },
+    {
+      "citation": "H. C. Agrippa, De occulta philosophia libri tres ([Cologne?], July 1533), III.30, Library of Congress copy (digitised)",
+      "url": "https://archive.org/details/DeOccultaPhilosophiaLoc1533"
+    },
+    {
+      "citation": "Agrippa, Three Books of Occult Philosophy, trans. J.F. (London, 1651), III.30, EEBO-TCP A26565",
+      "url": "https://quod.lib.umich.edu/e/eebo/A26565.0001.001/1:18.30?rgn=div2;view=fulltext"
+    },
+    {
+      "citation": "Agrippa, Three Books of Occult Philosophy, Book III part 3, ed. Joseph H. Peterson, Esoteric Archives",
+      "url": "https://www.esotericarchives.com/agrippa/agripp3c.htm"
+    },
+    {
+      "citation": "Abraham de Balmes, Mikneh Avram / Peculium Abrae (Venice: Daniel Bomberg, 1523), digitised copy",
+      "url": "https://archive.org/details/miknehavrampecul00balm"
+    },
+    {
+      "citation": "Sefer Raziel ha-Malakh (Amsterdam, 1701)",
+      "url": ""
+    },
+    {
+      "citation": "F. Klaassen, The Transformations of Magic: Illicit Learned Magic in the Later Middle Ages and Renaissance (University Park: Penn State University Press, 2013)",
+      "url": ""
+    },
+    {
+      "citation": "'The Characters (Χαρακτῆρες) of the Glagolitic Alphabet: New Light on an Old Puzzle' (Redalyc); known by title only",
+      "url": "https://www.redalyc.org/journal/6924/692474616008/html/"
+    }
+  ],
+  "confidence": "SOLID: that charaktêres are invented, non-phonetic signs of Roman-imperial magic, copied 'as given' in the PGM handbooks, curse tablets, lamellae and gems; that Jewish magic took them over in Late Antiquity and kept them through the Genizah period (Bohak); that medieval Jewish manuscripts keyed ring-ended signs to the Hebrew letters; and that de Balmes printed one such alphabet in 1523, ten years before Agrippa's III.30 (search-backed in the sibling files). Also solid: Augustine's 'notae quas characteres vocant' (II.20.30) and the general form of the Chnoubis sign and the pentagram. SHAKY: the seven seals (sequence and descriptions recalled from the poem; draw from a plate); the type drawings 1-3 (composed, not traced); Gordon's and Dzwiza's exact titles, volumes and pages; the Iamblichus section; Canaan's pages; the Sefer Raziel 1701 contents; Winkler's derivation thesis. UNCONFIRMED or ABSENT: any charaktêres in Sepher ha-Razim; any ancient text calling the signs an angelic alphabet; the forms on P. Oslo 1 and the Sethian tablets (left as gaps); who 'Dzhurova' is; Sanzo's specific study. Web search was unavailable for this item, so nothing outside the sibling notes was re-checked."
+}

@@ -1,0 +1,295 @@
+// arabic hall extension — numbers and glossed first readings.
+// Arithmetic recomputed and every citation checked by the content
+// pipeline; scripts verified against unicodedata.
+export default {
+    numbers: {
+        note: 'Arabic counts in two ways, and a hall that shows only one of them misleads. The first is the set of figures tabled below — ٠١٢٣٤٥٦٧٨٩ — which Arabic itself calls al-arqām al-hindiyya, \'the Indian figures\', and in naming them tells the truth about them: the forms are Indian in origin, descended by way of Brāhmī and the Nāgarī hands, and they came west with the Indian astronomy that reached Baghdad in the later eighth century. It was al-Khwārizmī, at the ʿAbbāsid court about 820, who wrote the treatise that taught the system to the Arabic-reading world — the book on addition and subtraction by the Indian reckoning, lost in Arabic and surviving in a twelfth-century Latin version whose opening words, Dixit Algorizmi, gave Europe the word algorithm. What the Indian system supplied, and what no letter-numeral can, was place value and a sign for nothing: ṣifr, \'empty\', calquing Sanskrit śūnya, which travelled through Latin zephirum and cifra to become both zero and cipher. Ten signs, and every number of any size built out of their positions. Three practical cautions. They run with the most significant digit at the left, exactly as European figures do, even inside a right-to-left line; Unicode gives them the bidirectional class AN, Arabic Number, which is what governs how they sit in mixed text, and it is worth noting that the Persian and Urdu series at U+06F0–06F9, whose four, five and six are drawn quite differently, is classed EN instead. ٥ is five, not zero, which is the commonest misreading a Western eye makes here, and ٦ is six rather than seven. And the figures Europe learned to call \'Arabic\' are not these at all: Europe received the Western Arabic or ghubār forms — ghubār, \'dust\', after the takht or dust-board they were reckoned on — the variant shapes that developed in the Maghrib and al-Andalus from about the tenth century, carried north, on the usual account, with the apices of Gerbert of Aurillac\'s abacus in the 980s, though how far those counters really bore the ghubār forms is argued, and taught at length in Fibonacci\'s Liber Abaci of 1202. The 1 2 3 of this sentence are their direct descendants, and they have since returned to Morocco, Algeria and Tunisia as the official figures there, while Egypt and the Mashriq keep the forms tabled here. The second way of counting needs no new signs at all, because the hall\'s own alphabet already carries it. This is ḥisāb al-jummal, the abjad reckoning, in which each of the twenty-eight letters stands for a number — nine units, nine tens, nine hundreds, and a thousand — ordered not by the modern hijāʾī sequence of the dictionaries but by the older Northwest Semitic one, memorised as eight nonsense words: abjad hawwaz ḥuṭṭī kalaman saʿfaṣ qarashat thakhadh ḍaẓagh. The reckoning is purely additive. There is no place value and no zero, and a word\'s value is simply the sum of its letters however they stand, so that every Arabic word carries a number whether or not anyone troubles to add it up. That fact is the whole foundation of ʿilm al-ḥurūf, the science of letters; it also does a great deal of unglamorous work, numbering the verses of a poem, foliating a manuscript, ordering marginal notes, keying degrees in an astronomical table. Its most public form is the taʾrīkh or chronogram, in which a poet builds a phrase that both says something apt about an event and sums to the year of it, announcing what he is doing with a cue verb — arrakhtu, uʾarrikhuhu, \'I date it\' — so that the reader knows where to begin counting. Chronograms are cut over doorways, set into colophons and carved on tombstones from Morocco to Bengal. Two conventions govern the addition as it is practised on this shelf, and the first of them is not universal: hamza written on the line is not counted, which is why jāʾa comes to four rather than five, though other reckoners count it as an alif and would make it five; and a letter doubled in the reading by shadda is counted once, as written, which is why al-raḥmān comes to 329 with a single rāʾ. Every sum given below follows those two rules, and each has been recomputed in both of the orders described at the end of this section.',
+        digits: [
+            {
+                glyph: '٠',
+                value: 0,
+                name: 'Ṣifr — \'empty\'',
+                unicodeName: 'ARABIC-INDIC DIGIT ZERO',
+            },
+            {
+                glyph: '١',
+                value: 1,
+                name: 'Wāḥid',
+                unicodeName: 'ARABIC-INDIC DIGIT ONE',
+            },
+            {
+                glyph: '٢',
+                value: 2,
+                name: 'Ithnān',
+                unicodeName: 'ARABIC-INDIC DIGIT TWO',
+            },
+            {
+                glyph: '٣',
+                value: 3,
+                name: 'Thalātha',
+                unicodeName: 'ARABIC-INDIC DIGIT THREE',
+            },
+            {
+                glyph: '٤',
+                value: 4,
+                name: 'Arbaʿa',
+                unicodeName: 'ARABIC-INDIC DIGIT FOUR',
+            },
+            {
+                glyph: '٥',
+                value: 5,
+                name: 'Khamsa (not a zero, though it looks like one)',
+                unicodeName: 'ARABIC-INDIC DIGIT FIVE',
+            },
+            {
+                glyph: '٦',
+                value: 6,
+                name: 'Sitta (not a seven, though it looks like one)',
+                unicodeName: 'ARABIC-INDIC DIGIT SIX',
+            },
+            {
+                glyph: '٧',
+                value: 7,
+                name: 'Sabʿa',
+                unicodeName: 'ARABIC-INDIC DIGIT SEVEN',
+            },
+            {
+                glyph: '٨',
+                value: 8,
+                name: 'Thamāniya',
+                unicodeName: 'ARABIC-INDIC DIGIT EIGHT',
+            },
+            {
+                glyph: '٩',
+                value: 9,
+                name: 'Tisʿa',
+                unicodeName: 'ARABIC-INDIC DIGIT NINE',
+            },
+        ],
+        examples: [
+            {
+                native: 'الله',
+                value: 66,
+                note: 'Alif 1 + lām 30 + lām 30 + hāʾ 5. The simplest sum in the hall and the one from which every treatise of ʿilm al-ḥurūf sets out. None of its four letters is among the six that the Maghribī order revalues, so 66 holds in East and West alike — which is not true of most words, and is the reason this one is a poor guide to the rest.',
+            },
+            {
+                native: 'بسم الله الرحمن الرحيم',
+                value: 786,
+                note: 'The basmala, worked word by word: bi-smi 102 (bāʾ 2 + sīn 60 + mīm 40), Allāh 66, al-raḥmān 329, al-raḥīm 289. Note that al-raḥmān counts a single rāʾ, though the rāʾ is doubled in the reading — the abjad counts letters as written, not as sounded. The total, 786, is written across South Asia at the head of letters, ledgers and shop signs in place of the words themselves, where the paper may not be treated with respect; it is a convention of usage, with no basis in Qurʾān or ḥadīth. Counted in the Maghribī order the same formula yields 1,026, the whole difference of 240 arising from the single sīn of bi-smi, which is the only one of the six revalued letters the formula contains.',
+            },
+            {
+                native: 'جاء المخصص يروي أحسن الكلم',
+                value: 1321,
+                note: 'A chronogram, and an attested one. The full couplet runs aqūlu lammā ntahā ṭabʿan uʾarrikhuhu / jāʾa l-Mukhaṣṣaṣu yarwī aḥsana l-kalimi — \'I say, when its printing was finished, dating it: the Mukhaṣṣaṣ has come, relating the finest of speech.\' The cue is uʾarrikhuhu, \'I date it\'; the second hemistich is what gets added. Jāʾa 4 + al-Mukhaṣṣaṣ 851 + yarwī 226 + aḥsana 119 + al-kalim 121 = 1,321, by the Mashriqī order. The year 1321 AH began on 30 March 1903, and it was in that year that the Būlāq press in Cairo completed its edition of the Mukhaṣṣaṣ — the great arranged thesaurus of the blind Andalusian lexicographer Ibn Sīda, d. 458 AH / 1066 CE — an edition the bibliographies describe as running to seventeen parts and as having been printed from 1316 AH onward. The hamza closing jāʾa is not counted here: four, not five. The couplet and this breakdown are reported by Ṣalāḥ ʿAbd al-Sattār Muḥammad al-Shahāwī, al-Jazīrah, 3 July 2022 (al-jazirah.com/2022/20220703/ar6.htm).',
+            },
+            {
+                native: 'مات الشعر بعده',
+                value: 1123,
+                note: 'The counted half of a death-chronogram, introduced by laqad arrakhtu, \'I have dated it\': māta l-shiʿru baʿdah, \'poetry died after him\'. Māta 441 + al-shiʿr 601 + baʿdah 81 = 1,123, by the Mashriqī order; 1123 AH ran from 19 February 1711 to 8 February 1712. Given by al-Shahāwī (al-Jazīrah, 3 July 2022) as the chronogram on the death of the poet al-Dalanjāwī, within a quatrain whose earlier lines put the question to poetry itself, and reported here on that authority. It is also the cleanest demonstration of why the two abjad orders matter: al-shiʿr contains shīn, worth 300 in the East and 1,000 in the West, so the identical three words yield 1823 in a Maghribī reckoning — seven centuries adrift, and a year that has not yet arrived, since 1823 AH will not begin until the spring of 2390 CE. That such a sum announces its own error is one of the few safeguards the method has.',
+            },
+            {
+                native: 'ق ز',
+                value: 107,
+                note: 'Qāf 100 + zāy 7. Ibn al-Jazarī (d. 833 AH / 1429 CE) closes his versified primer of tajwīd, al-Muqaddima al-Jazariyya, by numbering it in its own last lines: abyātuhā qāfun wa-zāyun bi-l-ʿadad, \'its verses are qāf and zāy in the count\' — that is, 107. Fuller recensions are reported at higher counts, 119 among them, and the self-count is one of the tests by which an edition is judged. An instance of the abjad doing plain bibliographical work, with nothing esoteric about it: this is what the reckoning was mostly for.',
+            },
+        ],
+        special: 'There is not one abjad but two, and they return different answers. The Mashriqī order, standard in the East and used throughout this hall, runs abjad hawwaz ḥuṭṭī kalaman saʿfaṣ qarashat thakhadh ḍaẓagh — أبجد هوز حطي كلمن سعفص قرشت ثخذ ضظغ. The Maghribī order of North Africa and al-Andalus keeps the first four groups and then parts company: ṣaʿfaḍ qarisat thakhadh ẓaghush — صعفض قرست ثخذ ظغش. Both sequences are complete, both run 1 to 1,000 across twenty-eight letters, and twenty-two of those letters agree. Six do not. Ṣād is 90 in the East and 60 in the West; ḍād 800 against 90; sīn 60 against 300; shīn 300 against 1,000; ẓāʾ 900 against 800; ghayn 1,000 against 900. Any word containing one of the six therefore has two sums, and nothing in the writing itself declares which was intended. The basmala is 786 by the Eastern reckoning and 1,026 by the Western, on the strength of a single sīn; \'poetry died after him\' dates a man to 1123 in the East and 1823 in the West, on a single shīn. Which order is meant is a question of where and when the writer worked — a Fez manuscript and a Cairo one may be counting differently on the same page of the same text — and it has to be settled before any lettrist sum, chronogram or letter-square can be read at all. A good deal of published Arabic gematria assumes the Mashriqī without saying so.',
+    },
+    readings: [
+        {
+            title: 'The Basmala',
+            source: 'Qurʾān 1:1, and the heading of every sūra but the ninth; also within the text at 27:30. Given here unpointed, as are the other Qurʾānic readings on this shelf.',
+            words: [
+                {
+                    native: 'بسم',
+                    translit: 'bi-smi',
+                    gloss: 'in the name of',
+                },
+                {
+                    native: 'الله',
+                    translit: 'llāhi',
+                    gloss: 'God',
+                },
+                {
+                    native: 'الرحمن',
+                    translit: 'l-raḥmāni',
+                    gloss: 'the All-Merciful',
+                },
+                {
+                    native: 'الرحيم',
+                    translit: 'l-raḥīmi',
+                    gloss: 'the Ever-Merciful',
+                },
+            ],
+            translation: 'In the name of God, the All-Merciful, the Ever-Merciful.',
+            note: 'Unpointed, here and throughout this shelf, means the consonantal skeleton with the dots that distinguish one letter-shape from another, but without the ḥarakāt — the small strokes for the short vowels — which a printed muṣḥaf carries in full and which the transliteration supplies instead. Two remarks on the writing. Bi-smi is spelt بسم, without the alif that ism otherwise keeps: an orthographic peculiarity of this formula. At 96:1 the same two words recur inside the verse — which itself opens with iqraʾ, \'recite\' — and there the muṣḥaf writes the alif in place, بِٱسْمِ, with the alif of waṣla. And the two epithets are built on one root, r-ḥ-m, whose noun is raḥim, the womb; the grammarians take raḥmān as the intensive of scope and raḥīm as the adjective of constancy, which is why English needs two words for what Arabic hears as a single mercy twice inflected. The formula stands 114 times in the muṣḥaf — as the heading of 113 of the 114 sūras, all but the ninth, and once more inside the text, where it opens Solomon\'s letter to the queen of Sheba at 27:30.',
+            grid: null,
+        },
+        {
+            title: 'The Opening of the Book',
+            source: 'Qurʾān 1:2 in the Kūfan verse-count followed by the Cairo muṣḥaf (Ḥafṣ ʿan ʿĀṣim), where the basmala is verse 1; numbered 1:1 in the counts that do not number the basmala, and in most Western translations.',
+            words: [
+                {
+                    native: 'الحمد',
+                    translit: 'al-ḥamdu',
+                    gloss: 'the praise',
+                },
+                {
+                    native: 'لله',
+                    translit: 'li-llāhi',
+                    gloss: '(belongs) to God',
+                },
+                {
+                    native: 'رب',
+                    translit: 'rabbi',
+                    gloss: 'Lord of',
+                },
+                {
+                    native: 'العالمين',
+                    translit: 'l-ʿālamīna',
+                    gloss: 'the worlds',
+                },
+            ],
+            translation: 'Praise belongs to God, Lord of the worlds.',
+            note: 'Al-Fātiḥa, \'the Opening\', is seven verses long by every reckoning; what the traditions differ over is whether the basmala is the first of the seven or the closing verse is divided in two to make up the number — which is why this line is cited both as 1:1 and as 1:2, with no disagreement about the text itself. The sūra is identified with the \'seven of the oft-repeated\' of Q 15:87 and is called umm al-kitāb, the mother of the Book; it is recited in every cycle of each of the five daily prayers. The sentence has no verb: Arabic sets al-ḥamdu, the praise, against li-llāhi, to God, and lets the preposition carry what English needs \'belongs\' for. ʿĀlamīn is a plural of ʿālam, world or realm, and the commentators divide over its reach — every created order, or the worlds of men and jinn alone.',
+            grid: null,
+        },
+        {
+            title: 'The Verse of the Throne, first clause',
+            source: 'Qurʾān 2:255, opening clause. The verse is known as Āyat al-Kursī.',
+            words: [
+                {
+                    native: 'الله',
+                    translit: 'allāhu',
+                    gloss: 'God',
+                },
+                {
+                    native: 'لا',
+                    translit: 'lā',
+                    gloss: '(there is) no',
+                },
+                {
+                    native: 'إله',
+                    translit: 'ilāha',
+                    gloss: 'god',
+                },
+                {
+                    native: 'إلا',
+                    translit: 'illā',
+                    gloss: 'except',
+                },
+                {
+                    native: 'هو',
+                    translit: 'huwa',
+                    gloss: 'He',
+                },
+                {
+                    native: 'الحي',
+                    translit: 'al-ḥayyu',
+                    gloss: 'the Living',
+                },
+                {
+                    native: 'القيوم',
+                    translit: 'al-qayyūmu',
+                    gloss: 'the Self-subsisting',
+                },
+            ],
+            translation: 'God — there is no god but He, the Living, the Self-subsisting.',
+            note: 'Lā … illā is the Arabic of absolute negation followed by exception: lā ilāha denies the category of god outright, and illā huwa readmits one. It is the same construction the shahāda uses, and it is why renderings of the type \'there is only one god\' lose the shape of the sentence, which first empties and then restores. Al-Qayyūm is a rare intensive — \'the Self-subsisting\', \'the Ever-Standing\', sometimes \'the Sustainer\' — occurring three times in the Qurʾān, here and at 3:2 and 20:111, and on each of the three occasions paired with al-Ḥayy; reports in the Sunan collections identify that pair as the ism al-aʿẓam, the Greatest Name. Kursī, from which the verse takes its title, is literally a seat or footstool; the commentators generally distinguish it from the ʿarsh, the Throne proper, and dispute at length whether either is to be understood spatially at all.',
+            grid: null,
+        },
+        {
+            title: 'The Light Verse, opening',
+            source: 'Qurʾān 24:35, opening clause; sūra 24 takes its name, al-Nūr, from it. Given here in the modern spelling السماوات. The Uthmanic rasm writes the bare skeleton السموت — alif, lām, sīn, mīm, wāw, tāʾ — with both long ā\'s unwritten and supplied in the printed muṣḥaf by the superscript dagger alif: ٱلسَّمَٰوَٰتِ.',
+            words: [
+                {
+                    native: 'الله',
+                    translit: 'allāhu',
+                    gloss: 'God',
+                },
+                {
+                    native: 'نور',
+                    translit: 'nūru',
+                    gloss: '(is) the light of',
+                },
+                {
+                    native: 'السماوات',
+                    translit: 'l-samāwāti',
+                    gloss: 'the heavens',
+                },
+                {
+                    native: 'والأرض',
+                    translit: 'wa-l-arḍi',
+                    gloss: 'and the earth',
+                },
+            ],
+            translation: 'God is the Light of the heavens and the earth.',
+            note: 'Four words, and no verb again: Arabic sets subject beside predicate and leaves the copula to be understood. The difficulty is the genitive. Nūru l-samāwāti can be read as the light that belongs to them, the light by which they are lit, or the light that they are, and a great part of the philosophical tradition turns on that choice. What follows in the verse is the figure of the niche, the lamp, the glass like a shining star, and the oil of a blessed olive tree neither of the east nor of the west: al-Ghazālī built the Mishkāt al-Anwār, the Niche of Lights, upon it; Ibn Sīnā is reported to have read its figures as the faculties of the soul and the ranks of intellect; Suhrawardī\'s metaphysics of graded light stands behind much of what the later Persian tradition made of it, and Mullā Ṣadrā gave the verse a commentary of its own, the Tafsīr Āyat al-Nūr. Al-Nūr stands among the ninety-nine names, in the familiar list transmitted by al-Tirmidhī, largely on the strength of this clause.',
+            grid: null,
+        },
+        {
+            title: 'The Shahāda',
+            source: 'Not a single Qurʾānic verse but a composite formula. The exact words lā ilāha illā llāh stand at Qurʾān 37:35 and 47:19, and at those two places only; Muḥammadun rasūlu llāh opens 48:29. As the testimony it is given in the ḥadīth of Gabriel and in the ḥadīth that Islam is built on five (Ṣaḥīḥ al-Bukhārī and Ṣaḥīḥ Muslim, Kitāb al-Īmān in each). Both halves are set in the mosaic inscription of the Dome of the Rock, dated 72 AH / 691–2 CE, in the expanded forms lā ilāha illā llāh waḥdahu lā sharīka lah and Muḥammad ʿabduhu wa-rasūluh; that inscription is generally reckoned the earliest dated monumental Qurʾānic inscription known.',
+            words: [
+                {
+                    native: 'لا',
+                    translit: 'lā',
+                    gloss: '(there is) no',
+                },
+                {
+                    native: 'إله',
+                    translit: 'ilāha',
+                    gloss: 'god',
+                },
+                {
+                    native: 'إلا',
+                    translit: 'illā',
+                    gloss: 'but',
+                },
+                {
+                    native: 'الله',
+                    translit: 'llāhu',
+                    gloss: 'God',
+                },
+                {
+                    native: 'محمد',
+                    translit: 'muḥammadun',
+                    gloss: 'Muhammad',
+                },
+                {
+                    native: 'رسول',
+                    translit: 'rasūlu',
+                    gloss: '(is) the messenger of',
+                },
+                {
+                    native: 'الله',
+                    translit: 'llāhi',
+                    gloss: 'God',
+                },
+            ],
+            translation: 'There is no god but God; Muhammad is the messenger of God.',
+            note: 'Seven words, of which the first four repeat the negation-and-exception the Throne Verse also uses — the first three identically, and with Allāh standing where the Throne Verse has huwa. Two points of writing repay attention. Ilāh, \'a god\', and Allāh are built on the same three consonants, ʾ-l-h, the second generally explained as al-ilāh, \'the god\', contracted — which is why the two words look so nearly alike on the page, and why the sentence can be described, not quite accurately but not idly either, as saying that nothing is god but God. And rasūlu llāh is a construct: Arabic supplies no word here for \'is\' and none for \'the\', the definiteness coming from the second term alone. The formula is described in the sources as the first of the five pillars, and it is the sentence that ʿAbd al-Malik\'s reformed, purely epigraphic coinage of 77 AH / 696–7 CE put where the figural imagery of the earlier issues had been — a script standing in the place of an image.',
+            grid: null,
+        },
+        {
+            title: 'Anā al-Ḥaqq',
+            source: 'Ascribed to al-Ḥusayn ibn Manṣūr al-Ḥallāj (executed at Baghdad, 309 AH / 922 CE). It comes down chiefly as a reported saying, through the shaṭaḥāt literature and the accounts of his trial — al-Sarrāj\'s Kitāb al-Lumaʿ (d. 378 AH / 988 CE) is among the earliest witnesses. The words also stand in the Kitāb al-Ṭawāsīn transmitted under al-Ḥallāj\'s own name, in Ṭāsīn al-Azal wa-l-Iltibās, where the sentence runs on: \'and I am that trace, and I am the Real, for I have never ceased to be real by the Real.\' The transmission of the Ṭawāsīn is itself argued over, and Louis Massignon\'s edition of 1913 is a reconstruction; his La Passion de Husayn ibn Mansûr Hallâj remains the standard study.',
+            words: [
+                {
+                    native: 'أنا',
+                    translit: 'anā',
+                    gloss: 'I (am)',
+                },
+                {
+                    native: 'الحق',
+                    translit: 'l-ḥaqq',
+                    gloss: 'the Real, the Truth — and a name of God',
+                },
+            ],
+            translation: 'I am the Real.',
+            note: 'Two words, and one of them is a divine name: al-Ḥaqq, \'the Real\' or \'the Truth\', is used of God in the Qurʾān (22:6, 31:30) and stands among the ninety-nine. That is the whole difficulty of the sentence, and the reason it is quoted in every discussion of shaṭḥ, the ecstatic utterance a Sufi is held to speak while overwhelmed and not on his own account. Al-Ḥallāj was tried at Baghdad and put to death in 309 AH, on charges as much political — his associations at court and his supposed links with the Qarmaṭians — as doctrinal; and Sufi opinion afterwards divided rather than closed. Al-Ghazālī is the instructive case, since he holds both halves at once: he explains such words as spoken in a state of overwhelming in which the speaker is not the one speaking, and holds nonetheless that they ought not to be repeated or broadcast. Others were less willing to grant the first point at all. Its abjad sum is 191, counting the hamza-bearing alif of anā as an alif; none of its letters is among the six the Maghribī order revalues, so the figure is the same in either reckoning.',
+            grid: null,
+        },
+    ],
+    correspondences: null,
+};

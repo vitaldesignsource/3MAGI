@@ -1,0 +1,2261 @@
+{
+ "key": "planetary-seals",
+ "title": "The Tables of the Planets: Agrippa's Magic Squares, Seals and Characters (De occulta philosophia II.22)",
+ "otherNames": [
+  "tables of the planets",
+  "'the sacred tables of the planets' (J.F. 1651, II.xxii, p. 239; verified in EEBO-TCP A26565)",
+  "planetary magic squares",
+  "kameas (modern Western occult usage, said to come from Hebrew qamea', 'amulet'. The word does not occur anywhere in the 1651 English: the whole EEBO-TCP A26565 text was searched, 0 hits. The 1533 Latin was not checked)",
+  "awfāq (Arabic, singular wafq: the Islamic magic-square tradition)"
+ ],
+ "family": "Numerical tables with seals and characters. This is not an alphabet; it is built on the values of the Hebrew letters.",
+ "summary": "In Book II, chapter 22 of De occulta philosophia (first printed 1533; July 1533 by the colophon, as the McGill Library record is reported to say), Agrippa prints seven magic squares, one for each planet. They run from Saturn's 3×3, whose lines each add to 15, to the Moon's 9×9, whose lines add to 369. For each square he lists Hebrew divine names and an 'intelligence' and a 'spirit' (in the 1651 English; the Latin word, daemonium as recalled, was not checked) whose letters add up to the square's key numbers (Agiel and Zazel, both 45, for Saturn). He then prints the seal of the planet and the characters of its intelligence and spirit, and reports what 'they say' the table does when engraved on the planet's metal under a fortunate or an unfortunate planet. He does not explain how the seals are drawn; he leaves that to 'the wise searcher'. The squares are older than Agrippa: historians of mathematics report an Arabic art of magic squares by the 10th century and planetary squares in Latin manuscripts before 1533 (recalled scholarship, not re-checked here). No source earlier than Agrippa is named here for the names and seals.",
+ "firstAttestation": {
+  "work": "De occulta philosophia libri tres",
+  "author": "Heinrich Cornelius Agrippa von Nettesheim",
+  "date": "July 1533, from the colophon, per the McGill Library copy's record at the Internet Archive, which also notes four or five issues of this date (search-backed theban fact-check, theban.verified.json; not re-seen here). The colophon wording 'Mense Iulio' and the Utrecht record cited by the researcher were not seen in this check.",
+  "place": "[Cologne: Johannes Soter?]. The Eton College Library record gives the printer as '[J. Soter?]' and notes that Adams suggests Basel (search-backed theban fact-check, theban.verified.json; not re-seen here).",
+  "locator": "Book II, chapter 22. In the 1651 English (EEBO-TCP A26565) the heading on p. 239 reads 'CHAP. XXII. Of the tables of the Planets, their vertues, forms, and what Divine names, Intelligencies, and Spirits are set over them.' The table of contents spells it 'Intelligences' and gives 'pag. 239'. The text runs pp. 239-242, the name lists are on p. 243, and the squares, their Hebrew versions ('In Hebrew notes') and the seals are on pp. 244-252: Saturn and Jupiter p. 244, Mars p. 245, Sun p. 246, Venus pp. 247-248, Mercury pp. 249-250, Moon pp. 251-252. Chapter 23 begins on p. 253. The 1533 page or signature is not verified.",
+  "notes": "This is the earliest attestation found here for this set of names, numbers and seals. It is not the first attestation of the squares. Trithemius's reply to Agrippa's manuscript draft, printed in the 1651 front matter, is dated 'From our Monastery of Peapolis, the 8. day of April, An. M. D. X.' (EEBO-TCP A26565), so the draft existed by 8 April 1510. The SEP entry is reported to place Agrippa's visit to Trithemius in the winter of 1509-10 and the draft's arrival shortly before 8 April 1510 (search-backed theban fact-check, theban.verified.json; not re-seen here). The draft is reported as Würzburg, Universitätsbibliothek, M. ch. q. 50 (sibling research; the checker's own recollection agrees; not seen). In 'To the Reader' Agrippa says that for the print 'we added some Chapters, and we inserted many things' (J.F. 1651, verified in EEBO-TCP), so II.22 cannot be dated to the draft without the manuscript. Perrone Compagni's critical edition (Brill, 1992) records the draft's readings and would settle it. Do not date the squares 'Agrippa 1510' or '1531'. Book II was first printed in 1533."
+ },
+ "transmission": [
+  {
+   "date": "10th century",
+   "work": "Treatises on constructing magic squares (ed. and trans. Jacques Sesiano, Magic Squares in the Tenth Century, Springer, 2017)",
+   "author": "al-Anṭākī; Abū'l-Wafā' al-Būzjānī",
+   "what": "Arabic methods for building squares of any order, including the odd-order 'step' method that reproduces Agrippa's odd squares. Whether these two authors tie the squares to planets is not known here. This rests on recall of Sesiano; not checked. Fact-check: the kunya 'Abū'l-Ḥasan' given for al-Anṭākī is withdrawn. The checker recalls him as Abū'l-Qāsim ʿAlī ibn Aḥmad al-Anṭākī, but could not confirm it."
+  },
+  {
+   "date": "10th century",
+   "work": "Rasā'il Ikhwān al-Ṣafā' (Epistles of the Brethren of Purity)",
+   "author": "Ikhwān al-Ṣafā'",
+   "what": "LOW CONFIDENCE. As I recall it, the encyclopaedia prints a run of magic squares and gives them a cosmological meaning. I could not check which orders it prints or whether it pairs them with planets."
+  },
+  {
+   "date": "13th century and later (the corpus grew over time)",
+   "work": "Shams al-maʿārif and related works under the name of Aḥmad al-Būnī",
+   "author": "al-Būnī (attributed); Noah Gardiner (2012) shows the corpus is layered",
+   "what": "Islamic letter-magic: squares (awfāq) tied to divine names, planets and talismans. This is the closest known parallel to how Agrippa uses the squares. No direct line to Agrippa is documented. Al-Būnī's death date: the researcher gave 1225. The sibling ibn-wahshiyya research gives 622/1225 or 630/1232-3, citing Gardiner 2012. Neither was checked here. Recall; not checked."
+  },
+  {
+   "date": "c. 1300–1315",
+   "work": "Treatise on magic squares (Greek)",
+   "author": "Manuel Moschopoulos",
+   "what": "A Byzantine mathematical treatise on constructing magic squares. It has no planetary attribution as far as I know. Recall; not checked."
+  },
+  {
+   "date": "14th–15th centuries",
+   "work": "Latin treatises on the seven planetary squares with talismanic instructions, translated or adapted from Arabic (surveyed by Menso Folkerts, Sudhoffs Archiv 65, 1981)",
+   "author": "anonymous",
+   "what": "As I recall Folkerts and Sesiano, these give the seven squares with planetary names and engraving instructions close to Agrippa's. They are the most likely kind of source for II.22. Shelfmarks and wording are NOT verified in this session."
+  },
+  {
+   "date": "c. 1496–1508 (manuscript)",
+   "work": "De viribus quantitatis (Bologna, Biblioteca Universitaria, MS 250)",
+   "author": "Luca Pacioli",
+   "what": "Reported to include magic squares named for the planets. The shelfmark agrees with the checker's recollection; the contents were not checked. It was not printed before modern times, so it is evidence that the set circulated in Italy, not a likely source for Agrippa. MEDIUM-LOW confidence; not checked."
+  },
+  {
+   "date": "1514",
+   "work": "Melencolia I (engraving)",
+   "author": "Albrecht Dürer",
+   "what": "Shows a 4×4 magic square with lines adding to 34 and the date 1514 in its bottom row (16 3 2 13 / 5 10 11 8 / 9 6 7 12 / 4 15 14 1; checker's knowledge of the engraving, consistent with the file). Recomputed in the fact-check: it is Agrippa's Jupiter square turned upside down with its two middle columns swapped. Klibansky, Panofsky and Saxl (Saturn and Melancholy, 1964) are recalled as reading it as the Jupiter square, set against Saturnine melancholy; not checked. The engraving is 19 years older than Agrippa's printed table. Whether the 1510 draft already had the squares is unknown, so the engraving cannot be tied to Agrippa either way."
+  },
+  {
+   "date": "by 8 April 1510",
+   "work": "De occulta philosophia, manuscript draft (Würzburg, UB, M. ch. q. 50)",
+   "author": "Agrippa",
+   "what": "NOT CHECKED for this chapter. Trithemius's reply is dated 'the 8. day of April, An. M. D. X.' (1651 front matter, EEBO-TCP A26565). The shelfmark is reported by sibling research and agrees with the checker's recollection; not seen. Agrippa says he 'added some Chapters' for the print ('To the Reader', 1651)."
+  },
+  {
+   "date": "July 1533 (from the colophon, per the McGill record (search-backed theban fact-check, theban.verified.json; not re-seen here))",
+   "work": "De occulta philosophia libri tres, II.22 ([Cologne: J. Soter?])",
+   "author": "Agrippa",
+   "what": "The first printing. It gives the seven squares, the name lists with their numbers, the seals and characters, and the uses. Whether the 1533 print also gives each square in Hebrew letter-numerals is not verified. The 1651 English does, for all seven ('In Hebrew notes', printed as figures that EEBO-TCP does not key)."
+  },
+  {
+   "date": "1539",
+   "work": "Practica arithmetice et mensurandi singularis (Milan)",
+   "author": "Girolamo Cardano",
+   "what": "As I recall it, it prints the seven squares with their planetary names. Because it is six years LATER than Agrippa's print, it cannot be his source. Whether Cardano copied Agrippa or a shared manuscript source is not settled here. Chapter and folio not verified."
+  },
+  {
+   "date": "16th century",
+   "work": "Later Latin reprints of De occulta philosophia (e.g. the c. 1550 edition cited in the sibling research)",
+   "author": "Agrippa",
+   "what": "Reprints the tables with recut woodcuts. Small differences in the seals between editions should be expected. Not checked."
+  },
+  {
+   "date": "1651",
+   "work": "Three Books of Occult Philosophy (London: Printed by R.W. for Gregory Moule; Wing A789; ESTC R11002), Book II ch. XXII, pp. 239-252",
+   "author": "Agrippa, trans. 'J.F.'. The EEBO-TCP record says 'The translator is probably John French' (author heading 'French, John, 1616-1657'). The Wellcome record is reported to catalogue 'J.F[reake]', probably John French, and NUC to allow John French or John Freake (search-backed theban fact-check, theban.verified.json; not re-seen here).",
+   "what": "The English translation. It renders the spirit-entries as 'The spirit of Saturn' and so on (that the Latin word is daemonium is recalled, not checked). It prints the squares, their Hebrew versions and the seals. Compared cell by cell in this check: the 1651 squares for Saturn, Jupiter, Mars and the Sun match the file's; Venus and the Moon match except for cells the TCP keyers marked illegible; Mercury differs in six cells and, as keyed, is not magic (see the Mercury unit). Whether the plates were recut from 1533 is not checked. 'Most modern copies descend from this' is a judgement, not a checked fact."
+  },
+  {
+   "date": "1665",
+   "work": "Arithmologia (Rome)",
+   "author": "Athanasius Kircher",
+   "what": "LOW CONFIDENCE. As I recall it, Kircher discusses the planetary squares and their magical use critically. Not checked."
+  },
+  {
+   "date": "1801",
+   "work": "The Magus, or Celestial Intelligencer (London: Lackington, Allen and Co.; imprint confirmed by the search-backed theban fact-check)",
+   "author": "Francis Barrett",
+   "what": "Reported (recall; widely stated, not checked here) to copy the tables, names and seals from the 1651 English. Its plates are at best third-hand and should not be used as evidence for Agrippa's forms. The plate numbers are not verified."
+  },
+  {
+   "date": "1888 onwards",
+   "work": "Hermetic Order of the Golden Dawn teaching (published by Israel Regardie, 1937–1940)",
+   "author": "Golden Dawn",
+   "what": "Calls the squares 'kameas' and traces names as sigils on them, reducing letter values with the nine chambers (Aiq Bekar; Agrippa III.30, where J.F. 1651 has 'nine Chambers', p. 442, verified in EEBO-TCP). The Golden Dawn details are recalled, not checked. The order has living successors: describe this use, do not reproduce their papers."
+  },
+  {
+   "date": "1993",
+   "work": "Three Books of Occult Philosophy, ed. and annotated Donald Tyson (St Paul: Llewellyn)",
+   "author": "Donald Tyson",
+   "what": "As I recall, its appendix on the magic squares explains the seals by tracing on the squares and argues that some printed seals are corrupt. It is in copyright: paraphrase, do not quote. Not checked."
+  },
+  {
+   "date": "2003",
+   "work": "The Language of Demons and Angels: Cornelius Agrippa's Occult Philosophy (Leiden: Brill)",
+   "author": "Christopher I. Lehrich",
+   "what": "A scholarly reading of Agrippa's seals and characters as a form of writing. As I recall it, the book discusses the planetary seals; chapter and pages not verified."
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Agrippa assigns seven magic squares to the planets in the Chaldean order: Saturn 3×3, Jupiter 4×4, Mars 5×5, Sun 6×6, Venus 7×7, Mercury 8×8, Moon 9×9.",
+   "standing": "documented",
+   "evidence": "Verified in J.F. 1651, II.xxii, pp. 239-242 (EEBO-TCP A26565): 'The first of them is assigned to Saturn, and consists of a square of three' ... 'The seventh table is of the Moon, of a square of nine'. The order is the descending (Chaldean) planetary order. The 1533 Latin was not seen. The 1651 English, as keyed, has a slip for Mars: 'made of a square of four containing twenty five numbers' (p. 240).",
+   "sources": [
+    "J.F. 1651, II.xxii, pp. 239-242 (EEBO-TCP A26565)",
+    "Agrippa 1533, II.22 (not seen)"
+   ]
+  },
+  {
+   "claim": "The line sums are 15, 34, 65, 111, 175, 260 and 369. The totals are 45, 136, 325, 666, 1225, 2080 and 3321.",
+   "standing": "documented",
+   "evidence": "Recomputed in the fact-check for all seven squares as given: each holds 1 to n² once, and every row, column and main diagonal gives n(n²+1)/2. Agrippa states every line sum and total; verified in J.F. 1651: Saturn 'fifteen' and 'fourty five' (p. 239); Jupiter 'thirty four' and '136', Mars 'sixty five' and '325', Sun 111 (keyed 'III.') and '666' (p. 240); Venus '175' and '1225', Mercury '260' and '2080' (p. 241); Moon '369' and '3321' (p. 242).",
+   "sources": [
+    "computation in this session and in the fact-check",
+    "J.F. 1651, II.xxii, pp. 239-242 (EEBO-TCP A26565)"
+   ]
+  },
+  {
+   "claim": "Agrippa sets nearly every divine name, intelligence and spirit against one of the square's four key numbers (the side n, the number of cells n², the line sum or the total), and the letters of most add up to the number given.",
+   "standing": "documented",
+   "evidence": "Computed from the Hebrew spellings in this file (the Hebrew is NOT checked: EEBO-TCP does not key Hebrew) against the numbers in J.F.'s name lists (1651, p. 243; many first digits are keyed as illegible). For Saturn: Ab 3 (side), Hod 9 (cells), Iah and Hod 15 (line sum), and 'Jehovah extended', Agiel and Zazel 45 (total). REFUTED in two places. (1) Mars is not an exception: the 1651 list has a fifth Mars entry numbered 25 (n²), printed in Hebrew only. (2) Venus is the exception: its fourth entry, Bne Seraphim, is numbered '[illegible]252' in 1651, not the total 1225. So the 1651 lists have 37 entries, not 36, and every square has a name at each of its four key numbers except Venus at its total. Where the intelligence and spirit sit varies: Saturn, Jupiter and Mars put both at the total; Sun and Mercury put the intelligence at the line sum and the spirit at the total; Venus puts Hagiel at n² (49), Kedemel at the line sum (175) and the plural Bne Seraphim at [1]252; the Moon puts Hasmodai, 'the spirit of the Moon', at the line sum and its two compound beings at the total. Of the 36 entries whose Hebrew this file gives, 32 add up with ordinary letter values; three (Bne Seraphim at its printed number and the Moon's two long names) only with the great final-letter values; Asboga only by its letter-pairs. Agrippa does not state the pattern; the observation is the researcher's.",
+   "sources": [
+    "computation in this session and in the fact-check",
+    "J.F. 1651, II.xxii, p. 243 (EEBO-TCP A26565)",
+    "Agrippa 1533, II.22 (not seen)"
+   ]
+  },
+  {
+   "claim": "Bne Seraphim's number, printed as [1]252 in 1651, is not the Venus square's total (1225).",
+   "standing": "documented",
+   "evidence": "REFUTES the research file, which said Agrippa gives it as 1225 and that the name fits under neither convention. EEBO-TCP keys the 1651 entry as '[illegible digit]252 | Bne Seraphim | The Intelligencies of Venus' (p. 243). Computed: בני שרפים gives 692 with ordinary values and exactly 1252 if final mem counts 600. So the name fits its printed number with the great final value, but that number is not one of the square's key numbers. Whether 1252 is an error for 1225 or deliberate is not settled here. The keyed numbers in this list are unreliable (Kedemel, whose name and line sum are 175, is keyed '[?]67'), so check the 1651 page image and the 1533 plate before the page states the number. That Tyson (1993) discusses the problem is the researcher's recollection; not checked.",
+   "sources": [
+    "J.F. 1651, II.xxii, p. 243 (EEBO-TCP A26565)",
+    "computation in the fact-check",
+    "Tyson (ed.) 1993 (recalled; not checked)"
+   ]
+  },
+  {
+   "claim": "The Moon's two long names reach 3321 only if final letters take their 'great' values. Elim (81) and Din (64) need the ordinary values.",
+   "standing": "documented",
+   "evidence": "Computed. Schedbarschemoth Schartathan (שדברשהמעת שרתתן) gives 2671 with ordinary values and 3321 if final nun is 700. For the second name the file's spelling מלכא בתרשיתים עד ברוח שחקים gives 2201, or 3321 with final mem as 600. J.F. 1651 (p. 243, EEBO-TCP) transliterates it 'Malcha betharsisim hed ber[illegible]ah schehalim', which points to shin (not tav) in the second word and lamed (not qoph) in the last. Computed: with shin and qoph 3221; with tav and lamed 3251; with shin and lamed 3151 (all with great finals). Only the file's tav-and-qoph spelling reaches 3321, so that spelling may be a reconstruction made to fit the number; it is not confirmed by the 1651 transliteration. The 1533 Hebrew was not seen. The lists are in any case not consistent about final letters (Elim 81 and Din 64 need the ordinary values). The 1651 headings call this being 'The Intelligency of the Intelligence of the Moon' (name list, p. 243) and 'the Intelligence of the Intelligences of the Moon' (seal caption, p. 252).",
+   "sources": [
+    "computation in this session and in the fact-check",
+    "J.F. 1651, II.xxii, pp. 243 and 252 (EEBO-TCP A26565)"
+   ]
+  },
+  {
+   "claim": "Asboga, set against 8 for Mercury and glossed 'eight extended', adds up to 24.",
+   "standing": "documented",
+   "evidence": "Computed: א1+ז7+ב2+ו6+ג3+ה5 = 24. The six letters form three pairs that each make 8 (1+7, 2+6, 3+5), which probably explains 'eight extended'; that reading is the researcher's inference. The 1651 list reads 'A[illegible]boga, eight extended.' (p. 243, EEBO-TCP), number illegible. That Azbogah also occurs in Hekhalot literature (3 Enoch) is recalled by researcher and checker; not checked.",
+   "sources": [
+    "computation in this session",
+    "J.F. 1651, II.xxii, p. 243 (EEBO-TCP A26565)"
+   ]
+  },
+  {
+   "claim": "The intelligence presides over the good effects of the table and the spirit (daemonium) over the evil ones.",
+   "standing": "documented",
+   "evidence": "Agrippa's own distinction. J.F. 1651, p. 239 (EEBO-TCP A26565), on Saturn: names that 'fill up the numbers with an Intelligency to what is good, with a spirit to what is bad'. The formula recurs for every planet (e.g. Jupiter, p. 240: 'with an Intelligence to good, with a spirit to bad'). It is his doctrine, reported as such. That the Latin word J.F. renders 'spirit' is daemonium is recalled, not checked against the 1533 text.",
+   "sources": [
+    "J.F. 1651, II.xxii, pp. 239-242 (EEBO-TCP A26565)",
+    "Agrippa 1533, II.22 (not seen)"
+   ]
+  },
+  {
+   "claim": "The seals of the planets and the characters of the intelligences and spirits are drawn out of the numbers of the squares.",
+   "standing": "documented",
+   "evidence": "Agrippa says so: J.F. 1651, p. 239 (EEBO-TCP A26565), 'out of the same numbers is drawn the seal, or Character of Saturn, and of the spirits thereof'. At the end of the chapter (p. 242) he declines to give the method: 'Now how the seals, and Characters of the Stars, and spirits are drawn from these tables, the wise searcher, and he which shall understand the verifying of these tables, shall easily find out.' The statement is documented; the method is not.",
+   "sources": [
+    "J.F. 1651, II.xxii, pp. 239 and 242 (EEBO-TCP A26565)",
+    "Agrippa 1533, II.22 (not seen)"
+   ]
+  },
+  {
+   "claim": "A name's character is made by reducing each letter to a number that is on the square and joining the cells in order.",
+   "standing": "attributed",
+   "evidence": "This explanation is attributed to Golden Dawn teaching and modern commentators (Tyson 1993); both are recalled, not checked. Agrippa does not state it; he leaves the method to 'the wise searcher' (J.F. 1651, p. 242). It cannot be the whole story. Recomputed in the fact-check: on Saturn's 3×3, Agiel (1, 3, 10→1, 1, 30→3) visits only two cells, so its path is a single line run back and forth. If the printed character of Agiel is more than that (not seen), the simple method does not produce it. Present the method as a modern reconstruction.",
+   "sources": [
+    "Regardie, The Golden Dawn (1937–1940)",
+    "Tyson (ed.) 1993 (recalled)",
+    "computation in this session"
+   ]
+  },
+  {
+   "claim": "Each planet's seal is a figure that passes through every cell of its square.",
+   "standing": "attributed",
+   "evidence": "LOW CONFIDENCE. This is a claim I associate with modern commentary on the seals. It could not be checked, because the plates were not seen in this session. Do not state it on the page without checking it against the 1533 plate.",
+   "sources": [
+    "Tyson (ed.) 1993 (recalled)"
+   ]
+  },
+  {
+   "claim": "The squares come from the Arabic (Islamic) magic-square tradition.",
+   "standing": "attributed",
+   "evidence": "This is a scholarly judgement about a general lineage, not a documented line of copying, so it is now 'attributed'. As the researcher recalls them, historians of mathematics document a developed Arabic art of magic squares from the 10th century (Sesiano 2017, 2019; Cammann 1969) and report Latin texts on the seven planetary squares, adapted from Arabic, before 1533 (Folkerts 1981). None of these works was checked here. Agrippa's odd squares follow the construction rule stated in the units (recomputed); that the rule belongs to that tradition rests on recall of Sesiano. The manuscript Agrippa used is not identified. The page should say whose judgement this is.",
+   "sources": [
+    "Sesiano 2017",
+    "Sesiano 2019",
+    "Folkerts 1981",
+    "Cammann 1969"
+   ]
+  },
+  {
+   "claim": "Agrippa took the planetary squares from Picatrix.",
+   "standing": "disputed",
+   "evidence": "I know of no set of planetary magic squares in the Latin Picatrix (ed. Pingree, 1986); not checked in this session. Picatrix shares the wider frame: images engraved on the planet's metal at an astrologically chosen hour, with good or ill effects according to the planet's condition. Do not name it as the source of the squares unless the passage is found. The checker likewise knows of no magic squares in Picatrix (own knowledge; not checked).",
+   "sources": [
+    "Pingree (ed.), Picatrix: The Latin Version (1986) (recalled)"
+   ]
+  },
+  {
+   "claim": "Agrippa took the squares from Cardano.",
+   "standing": "disputed",
+   "evidence": "The dates rule it out. Cardano's Practica arithmetice was printed at Milan in 1539 (recalled), six years after Agrippa's July 1533 print (colophon date per the McGill record, reported by the theban fact-check). If there is a debt, it more likely runs from Agrippa to Cardano, or both drew on a common source.",
+   "sources": [
+    "Cardano, Practica arithmetice (1539) (recalled)",
+    "Agrippa 1533"
+   ]
+  },
+  {
+   "claim": "The Saturn square's use to help childbirth continues the Islamic use of the 3×3 square (budūḥ) to ease labour.",
+   "standing": "disputed",
+   "evidence": "The parallel is recalled, not checked: the 3×3 square, called budūḥ after the letters of its corner values (2, 4, 6, 8), was used in Islamic practice to ease childbirth and is associated with al-Ghazālī (Cammann; Sesiano). The researcher says the ascription comes from later sources; the checker recalls that al-Ghazālī himself, in al-Munqidh min al-ḍalāl, mentions a 3×3 square drawn on two cloths for a woman in labour. Neither version is verified, so the page should not say which. Agrippa's first virtue of the Saturn table is verified: J.F. 1651, pp. 239-240, 'doth help to bring forth, or birth'. A line of descent is not documented. Offer this as a parallel.",
+   "sources": [
+    "Cammann 1969 (recalled)",
+    "Sesiano 2004/2019 (recalled)",
+    "J.F. 1651, II.xxii, pp. 239-240 (EEBO-TCP A26565)"
+   ]
+  },
+  {
+   "claim": "The 3×3 square was revealed to the emperor Yu on the back of a turtle from the river Luo (the Luoshu).",
+   "standing": "legend",
+   "evidence": "Chinese legend, reported as legend. Versions differ on the details (the checker knows it as a turtle from the Luo river in the time of Yu the Great). That the arrangement itself is attested in Chinese texts of the Han period is recalled (Cammann); the date and text are not verified. No link to Agrippa is documented.",
+   "sources": [
+    "Cammann 1969 (recalled)"
+   ]
+  },
+  {
+   "claim": "Sorath, the spirit of the Sun, equals 666, the number of the beast in Revelation 13:18.",
+   "standing": "disputed",
+   "evidence": "The arithmetic is exact: ס60+ו6+ר200+ת400 = 666, the total of the 6×6 square. In II.xxii the 1651 English says only 'the sum of all is 666' (p. 240) and lists 'Sorath | The spirit of the Sun' (p. 243); the chapter has no reference to Revelation or the beast (EEBO-TCP searched). But Agrippa does cite Revelation 13:18 elsewhere in Book II, as an example of the power of name-numbers: II.iii (p. 173) and II.xx (p. 237), 'Let him which hath understanding compute the number of the name of the beast, which is the number of a man'. He never ties it to Sorath or the Sun's square. Report the arithmetic, and say that any link to Sorath is modern inference.",
+   "sources": [
+    "computation in this session",
+    "J.F. 1651, II.iii p. 173, II.xx p. 237, II.xxii pp. 240 and 243 (EEBO-TCP A26565)"
+   ]
+  },
+  {
+   "claim": "Agrippa calls the squares 'kameas'.",
+   "standing": "disputed",
+   "evidence": "Not in the English: the word does not occur anywhere in the 1651 translation (whole EEBO-TCP A26565 text searched, 0 hits). J.F. writes 'tables' ('the sacred tables of the planets', p. 239; 'The Table of Saturn in his compass', p. 244). The Latin word (tabulae, as the researcher recalls) was not checked. That 'kamea' for a planetary square belongs to 19th-century and later Western occultism is recalled, not checked.",
+   "sources": [
+    "J.F. 1651 (EEBO-TCP A26565, full-text search)",
+    "Regardie, The Golden Dawn (recalled)"
+   ]
+  },
+  {
+   "claim": "Agrippa's 1510 draft already contained the planetary squares.",
+   "standing": "disputed",
+   "evidence": "Unknown here. The draft (reported as Würzburg UB M. ch. q. 50) existed by 8 April 1510, the date of Trithemius's reply (1651 front matter, verified). Agrippa says that for the print 'we added some Chapters' ('To the Reader', 1651, verified). Perrone Compagni's 1992 edition would show whether II.22 was in the draft. Agrippa's years in Italy (c. 1511-1518; recalled) and Pacioli's manuscript (recalled) would make the later revision a plausible time for the addition, but this is conjecture.",
+   "sources": [
+    "J.F. 1651, front matter and 'To the Reader' (EEBO-TCP A26565)",
+    "SEP, 'Agrippa' (as reported by the theban fact-check)",
+    "Perrone Compagni (ed.) 1992 (not consulted)"
+   ]
+  },
+  {
+   "claim": "The names Agiel, Zazel, Iophiel, Hismael and the rest were known before Agrippa.",
+   "standing": "disputed",
+   "evidence": "No earlier witness was found or checked. Several divine names are biblical (Ab, Iah, Adonai, Eloh, Elim, El Ab). Azbogah has, as recalled, a Hekhalot pedigree. Agrippa himself, in Book III, presents Zazel as a demon of Hebrew tradition: J.F. 1651, III.xviii, p. 401 ('which they understand of Zazell, and his Army', citing 'the Cabalists') and III.xli, p. 475 ('as say the divines of the Hebrews, is left in the power of the Demon Zazel'). That is his attribution, not an independent earlier witness. The intelligences and spirits look like names composed to fit the numbers, but their origin is unknown.",
+   "sources": [
+    "Agrippa 1533, II.22 (not seen)",
+    "J.F. 1651, III.xviii p. 401 and III.xli p. 475 (EEBO-TCP A26565)"
+   ]
+  },
+  {
+   "claim": "Dürer's 1514 square is Agrippa's Jupiter square.",
+   "standing": "disputed",
+   "evidence": "Recomputed in the fact-check: Dürer's square (16 3 2 13 / 5 10 11 8 / 9 6 7 12 / 4 15 14 1) is Agrippa's Jupiter square turned upside down with columns two and three swapped. It belongs to the same family but is not the same arrangement. Klibansky, Panofsky and Saxl (1964) are recalled as interpreting it as the Jupiter square; not checked. Dürer's engraving is older than Agrippa's print.",
+   "sources": [
+    "computation in this session",
+    "Klibansky, Panofsky and Saxl, Saturn and Melancholy (1964)"
+   ]
+  }
+ ],
+ "letters": [
+  {
+   "order": 1,
+   "name": "Table (square) of Saturn",
+   "value": "Saturn",
+   "translit": "3×3",
+   "numeric": 15,
+   "form": "A grid of 3×3 square cells with one number in each cell. Read row by row from the top, left to right: 4 9 2 / 3 5 7 / 8 1 6. Every row, column and main diagonal adds to 15; all the numbers together add to 45. Computed here. This square is exactly what you get by the following rule. Put 1 in the cell directly below the centre. Step one cell down and one to the right, wrapping round the edges. When that cell is already taken, go two cells straight down from the last number instead. The centre always holds the middle number, (n²+1)/2. The rule identifies the arrangement; it is not a claim about how Agrippa or his source built it.",
+   "formConfidence": "high",
+   "note": "Fact-check: matches the 1651 table ('The Table of Saturn in his compass', p. 244, EEBO-TCP A26565) cell for cell, in the same orientation. The 1651 English prints each table again 'In Hebrew notes' (as figures not keyed by TCP); whether 1533 does is not verified. Before drawing, check cell by cell against the 1533 plate, which was not seen.",
+   "side": 3,
+   "cells": 9,
+   "lineSum": 15,
+   "total": 45,
+   "centre": 5,
+   "rows": [
+    [
+     4,
+     9,
+     2
+    ],
+    [
+     3,
+     5,
+     7
+    ],
+    [
+     8,
+     1,
+     6
+    ]
+   ],
+   "hebrewRows": [
+    [
+     "ד",
+     "ט",
+     "ב"
+    ],
+    [
+     "ג",
+     "ה",
+     "ז"
+    ],
+    [
+     "ח",
+     "א",
+     "ו"
+    ]
+   ],
+   "hebrewRowsNote": "Generated by the researcher by the standard convention: 15 as טו and 16 as טז, avoiding יה and יו. Re-generated in the fact-check: the rows follow that convention exactly. Whether Agrippa's printer used it is NOT verified; the 1651 Hebrew table (p. 244) is an image not keyed by TCP. Check the 1533 plate.",
+   "names": [
+    {
+     "agrippaNumber": 3,
+     "hebrew": "אב",
+     "translit": "Ab",
+     "role": "divine name",
+     "computedCheck": "adds up with ordinary letter values"
+    },
+    {
+     "agrippaNumber": 9,
+     "hebrew": "הד",
+     "translit": "Hod",
+     "role": "divine name",
+     "computedCheck": "adds up with ordinary letter values"
+    },
+    {
+     "agrippaNumber": 15,
+     "hebrew": "יה",
+     "translit": "Iah",
+     "role": "divine name",
+     "computedCheck": "adds up with ordinary letter values"
+    },
+    {
+     "agrippaNumber": 15,
+     "hebrew": "הוד",
+     "translit": "Hod",
+     "role": "divine name",
+     "computedCheck": "adds up with ordinary letter values"
+    },
+    {
+     "agrippaNumber": 45,
+     "hebrew": "יוד הא ואו הא",
+     "translit": "Jehovah extended (J.F. 1651's wording; the Tetragrammaton with each letter spelled out)",
+     "role": "divine name",
+     "computedCheck": "adds up with ordinary letter values"
+    },
+    {
+     "agrippaNumber": 45,
+     "hebrew": "אגיאל",
+     "translit": "Agiel",
+     "role": "intelligence of Saturn",
+     "computedCheck": "adds up with ordinary letter values"
+    },
+    {
+     "agrippaNumber": 45,
+     "hebrew": "זאזל",
+     "translit": "Zazel",
+     "role": "spirit (daemonium) of Saturn",
+     "computedCheck": "adds up with ordinary letter values"
+    }
+   ],
+   "namesMatch": "Each name in the list stands at one of the square's key numbers: 3 = side (n), 9 = number of cells (n²), 15 = line sum, 15 = line sum, 45 = total of the square, 45 = total of the square, 45 = total of the square",
+   "figures": [
+    {
+     "figure": "the seal or character of Saturn",
+     "form": "Not described. No plate was seen. The 1651 caption is 'The Seales or Characters / Of Saturn.' (J.F. 1651, p. 244, EEBO-TCP A26565; the figure itself is not keyed). Reproduce it from a scan of the 1533 edition, not from any later redrawing.",
+     "formConfidence": "low"
+    },
+    {
+     "figure": "the character of the intelligence of Saturn (Agiel)",
+     "form": "Not described. No plate was seen. The 1651 caption is 'Of the Intelligence of Saturn.' (J.F. 1651, p. 244, EEBO-TCP A26565; the figure itself is not keyed). Reproduce it from a scan of the 1533 edition, not from any later redrawing.",
+     "formConfidence": "low"
+    },
+    {
+     "figure": "the character of the spirit of Saturn (Zazel)",
+     "form": "Not described. No plate was seen. The 1651 caption is 'Of the Spirit of Saturn.' (J.F. 1651, p. 244, EEBO-TCP A26565; the figure itself is not keyed). Reproduce it from a scan of the 1533 edition, not from any later redrawing.",
+     "formConfidence": "low"
+    }
+   ],
+   "metalAndVirtues": "Lead. J.F. introduces the virtues with 'They say'. With Saturn fortunate: helps 'to bring forth, or birth', makes a man safe and powerful, and makes petitions to princes and powers succeed. With Saturn unfortunate: hinders buildings and plantings, casts a man from honours and dignities, causes discords and quarrels, and disperses an army. (Paraphrase checked against J.F. 1651, II.xxii, pp. 239-240, EEBO-TCP A26565. These are Agrippa's claims, reported as such.)",
+   "tracingExample": {
+    "name": "Zazel",
+    "hebrew": "זאזל",
+    "method": "MODERN method, not one Agrippa states. Turn each letter into its number. If the number is larger than the square, divide it by 10 until it fits (so 300 becomes 30, and on squares smaller than 30 it becomes 3). Then join the cells in order. Cells are given as [row, column], counting from the top left. Computed here.",
+    "steps": [
+     {
+      "letter": "ז",
+      "value": 7,
+      "reducedTo": 7,
+      "cell": [
+       2,
+       3
+      ]
+     },
+     {
+      "letter": "א",
+      "value": 1,
+      "reducedTo": 1,
+      "cell": [
+       3,
+       2
+      ]
+     },
+     {
+      "letter": "ז",
+      "value": 7,
+      "reducedTo": 7,
+      "cell": [
+       2,
+       3
+      ]
+     },
+     {
+      "letter": "ל",
+      "value": 30,
+      "reducedTo": 3,
+      "cell": [
+       2,
+       1
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "order": 2,
+   "name": "Table (square) of Jupiter",
+   "value": "Jupiter",
+   "translit": "4×4",
+   "numeric": 34,
+   "form": "A grid of 4×4 square cells with one number in each cell. Read row by row from the top, left to right: 4 14 15 1 / 9 7 6 12 / 5 11 10 8 / 16 2 3 13. Every row, column and main diagonal adds to 34; all the numbers together add to 136. Computed here. Write 1 to n² in reading order. In each 4×4 block, replace every number on the block's two diagonals with its complement (n²+1 minus the number). Then turn the whole table upside down (reverse the order of the rows). The result matches this square cell for cell.",
+   "formConfidence": "high",
+   "note": "Fact-check: matches the 1651 table (p. 244, EEBO-TCP A26565) cell for cell, in the same orientation. The 1651 English prints each table again 'In Hebrew notes' (as figures not keyed by TCP); whether 1533 does is not verified. Before drawing, check cell by cell against the 1533 plate, which was not seen.",
+   "side": 4,
+   "cells": 16,
+   "lineSum": 34,
+   "total": 136,
+   "centre": null,
+   "rows": [
+    [
+     4,
+     14,
+     15,
+     1
+    ],
+    [
+     9,
+     7,
+     6,
+     12
+    ],
+    [
+     5,
+     11,
+     10,
+     8
+    ],
+    [
+     16,
+     2,
+     3,
+     13
+    ]
+   ],
+   "hebrewRows": [
+    [
+     "ד",
+     "יד",
+     "טו",
+     "א"
+    ],
+    [
+     "ט",
+     "ז",
+     "ו",
+     "יב"
+    ],
+    [
+     "ה",
+     "יא",
+     "י",
+     "ח"
+    ],
+    [
+     "טז",
+     "ב",
+     "ג",
+     "יג"
+    ]
+   ],
+   "hebrewRowsNote": "Generated by the researcher by the standard convention: 15 as טו and 16 as טז, avoiding יה and יו. Re-generated in the fact-check: the rows follow that convention exactly. Whether Agrippa's printer used it is NOT verified; the 1651 Hebrew table (p. 244) is an image not keyed by TCP. Check the 1533 plate.",
+   "names": [
+    {
+     "agrippaNumber": 4,
+     "hebrew": "אבא",
+     "translit": "Abba (researcher's reading; J.F. 1651 keys it 'Abab.', p. 243)",
+     "role": "divine name",
+     "computedCheck": "adds up with ordinary letter values (Hebrew not checked)"
+    },
+    {
+     "agrippaNumber": 16,
+     "hebrew": "הוה",
+     "translit": "Hua / Heva (spelling ה-ו-ה; editorial transliteration: J.F. 1651 gives this 16-name in Hebrew only, p. 243)",
+     "role": "divine name",
+     "computedCheck": "adds up with ordinary letter values"
+    },
+    {
+     "agrippaNumber": 16,
+     "hebrew": "אהי",
+     "translit": "Ehi (editorial transliteration: J.F. 1651 gives this 16-name in Hebrew only, p. 243)",
+     "role": "divine name",
+     "computedCheck": "adds up with ordinary letter values"
+    },
+    {
+     "agrippaNumber": 34,
+     "hebrew": "אל אב",
+     "translit": "El Ab",
+     "role": "divine name",
+     "computedCheck": "adds up with ordinary letter values"
+    },
+    {
+     "agrippaNumber": 136,
+     "hebrew": "יהפיאל",
+     "translit": "Iophiel (J.F. 1651: 'Johphiel', p. 243)",
+     "role": "intelligence of Jupiter",
+     "computedCheck": "adds up with ordinary letter values"
+    },
+    {
+     "agrippaNumber": 136,
+     "hebrew": "הסמאל",
+     "translit": "Hismael",
+     "role": "spirit (daemonium) of Jupiter",
+     "computedCheck": "adds up with ordinary letter values"
+    }
+   ],
+   "namesMatch": "Each name in the list stands at one of the square's key numbers: 4 = side (n), 16 = number of cells (n²), 16 = number of cells (n²), 34 = line sum, 136 = total of the square, 136 = total of the square",
+   "figures": [
+    {
+     "figure": "the seal of Jupiter",
+     "form": "Not described. No plate was seen. The 1651 caption is 'Of Jupiter.' (J.F. 1651, p. 244, EEBO-TCP A26565; the figure itself is not keyed). Reproduce it from a scan of the 1533 edition, not from any later redrawing.",
+     "formConfidence": "low"
+    },
+    {
+     "figure": "the character of the intelligence of Jupiter (Iophiel)",
+     "form": "Not described. No plate was seen. The 1651 caption is 'Of the Intelligence of Jupiter.' (J.F. 1651, p. 244, EEBO-TCP A26565; the figure itself is not keyed). Reproduce it from a scan of the 1533 edition, not from any later redrawing.",
+     "formConfidence": "low"
+    },
+    {
+     "figure": "the character of the spirit of Jupiter (Hismael)",
+     "form": "Not described. No plate was seen. The 1651 caption is 'The Spirit of Jupiter.' (J.F. 1651, p. 244, EEBO-TCP A26565; the figure itself is not keyed). Reproduce it from a scan of the 1533 edition, not from any later redrawing.",
+     "formConfidence": "low"
+    }
+   ],
+   "metalAndVirtues": "Silver plate, with Jupiter 'powerfull, and ruling' ('They say'): gain and riches, favour and love, peace and concord, appeasing enemies, confirming honours, dignities and counsels; engraved on coral, it dissolves enchantments. No use under an unfortunate Jupiter is given. (Paraphrase checked against J.F. 1651, II.xxii, p. 240, EEBO-TCP A26565. These are Agrippa's claims, reported as such.)",
+   "tracingExample": {
+    "name": "Hismael",
+    "hebrew": "הסמאל",
+    "method": "MODERN method, not one Agrippa states. Turn each letter into its number. If the number is larger than the square, divide it by 10 until it fits (so 300 becomes 30, and on squares smaller than 30 it becomes 3). Then join the cells in order. Cells are given as [row, column], counting from the top left. Computed here.",
+    "steps": [
+     {
+      "letter": "ה",
+      "value": 5,
+      "reducedTo": 5,
+      "cell": [
+       3,
+       1
+      ]
+     },
+     {
+      "letter": "ס",
+      "value": 60,
+      "reducedTo": 6,
+      "cell": [
+       2,
+       3
+      ]
+     },
+     {
+      "letter": "מ",
+      "value": 40,
+      "reducedTo": 4,
+      "cell": [
+       1,
+       1
+      ]
+     },
+     {
+      "letter": "א",
+      "value": 1,
+      "reducedTo": 1,
+      "cell": [
+       1,
+       4
+      ]
+     },
+     {
+      "letter": "ל",
+      "value": 30,
+      "reducedTo": 3,
+      "cell": [
+       4,
+       3
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "order": 3,
+   "name": "Table (square) of Mars",
+   "value": "Mars",
+   "translit": "5×5",
+   "numeric": 65,
+   "form": "A grid of 5×5 square cells with one number in each cell. Read row by row from the top, left to right: 11 24 7 20 3 / 4 12 25 8 16 / 17 5 13 21 9 / 10 18 1 14 22 / 23 6 19 2 15. Every row, column and main diagonal adds to 65; all the numbers together add to 325. Computed here. This square is exactly what you get by the following rule. Put 1 in the cell directly below the centre. Step one cell down and one to the right, wrapping round the edges. When that cell is already taken, go two cells straight down from the last number instead. The centre always holds the middle number, (n²+1)/2. The rule identifies the arrangement; it is not a claim about how Agrippa or his source built it.",
+   "formConfidence": "high",
+   "note": "Fact-check: matches the 1651 table (p. 245, EEBO-TCP A26565) cell for cell, in the same orientation. The 1651 English prints each table again 'In Hebrew notes' (as figures not keyed by TCP); whether 1533 does is not verified. Before drawing, check cell by cell against the 1533 plate, which was not seen.",
+   "side": 5,
+   "cells": 25,
+   "lineSum": 65,
+   "total": 325,
+   "centre": 13,
+   "rows": [
+    [
+     11,
+     24,
+     7,
+     20,
+     3
+    ],
+    [
+     4,
+     12,
+     25,
+     8,
+     16
+    ],
+    [
+     17,
+     5,
+     13,
+     21,
+     9
+    ],
+    [
+     10,
+     18,
+     1,
+     14,
+     22
+    ],
+    [
+     23,
+     6,
+     19,
+     2,
+     15
+    ]
+   ],
+   "hebrewRows": [
+    [
+     "יא",
+     "כד",
+     "ז",
+     "כ",
+     "ג"
+    ],
+    [
+     "ד",
+     "יב",
+     "כה",
+     "ח",
+     "טז"
+    ],
+    [
+     "יז",
+     "ה",
+     "יג",
+     "כא",
+     "ט"
+    ],
+    [
+     "י",
+     "יח",
+     "א",
+     "יד",
+     "כב"
+    ],
+    [
+     "כג",
+     "ו",
+     "יט",
+     "ב",
+     "טו"
+    ]
+   ],
+   "hebrewRowsNote": "Generated by the researcher by the standard convention: 15 as טו and 16 as טז, avoiding יה and יו. Re-generated in the fact-check: the rows follow that convention exactly. Whether Agrippa's printer used it is NOT verified; the 1651 Hebrew table (p. 245) is an image not keyed by TCP. Check the 1533 plate.",
+   "names": [
+    {
+     "agrippaNumber": 5,
+     "hebrew": "ה",
+     "translit": "He (a letter of the holy name)",
+     "role": "divine name",
+     "computedCheck": "adds up with ordinary letter values"
+    },
+    {
+     "agrippaNumber": 25,
+     "hebrew": "",
+     "translit": "(not transliterated in J.F. 1651)",
+     "role": "divine name, printed in Hebrew only in the 1651 list (p. 243)",
+     "computedCheck": "NOT CHECKED: the Hebrew is not keyed in EEBO-TCP. The checker recalls יהי (10+5+10 = 25), unconfirmed. Read it from the plate.",
+     "addedByFactCheck": true
+    },
+    {
+     "agrippaNumber": 65,
+     "hebrew": "אדני",
+     "translit": "Adonai",
+     "role": "divine name",
+     "computedCheck": "adds up with ordinary letter values (EEBO-TCP keys the 1651 number as '55', presumably a misprint or keying error for 65)"
+    },
+    {
+     "agrippaNumber": 325,
+     "hebrew": "גראפיאל",
+     "translit": "Graphiel",
+     "role": "intelligence of Mars",
+     "computedCheck": "adds up with ordinary letter values"
+    },
+    {
+     "agrippaNumber": 325,
+     "hebrew": "ברצבאל",
+     "translit": "Barzabel",
+     "role": "spirit (daemonium) of Mars",
+     "computedCheck": "adds up with ordinary letter values"
+    }
+   ],
+   "namesMatch": "Each name in the 1651 list stands at one of the square's key numbers: 5 = side (n), 25 = number of cells (n²; Hebrew only, added in the fact-check), 65 = line sum, 325 = total of the square, 325 = total of the square",
+   "figures": [
+    {
+     "figure": "the seal of Mars",
+     "form": "Not described. No plate was seen. The 1651 caption is 'Of Mars.' (J.F. 1651, p. 245, EEBO-TCP A26565; the figure itself is not keyed). Reproduce it from a scan of the 1533 edition, not from any later redrawing.",
+     "formConfidence": "low"
+    },
+    {
+     "figure": "the character of the intelligence of Mars (Graphiel)",
+     "form": "Not described. No plate was seen. The 1651 caption is 'Of the Intelligence of Mars.' (J.F. 1651, p. 245, EEBO-TCP A26565; the figure itself is not keyed). Reproduce it from a scan of the 1533 edition, not from any later redrawing.",
+     "formConfidence": "low"
+    },
+    {
+     "figure": "the character of the spirit of Mars (Barzabel)",
+     "form": "Not described. No plate was seen. The 1651 caption is 'Of the Spirit of Mars.' (J.F. 1651, p. 245, EEBO-TCP A26565; the figure itself is not keyed). Reproduce it from a scan of the 1533 edition, not from any later redrawing.",
+     "formConfidence": "low"
+    }
+   ],
+   "metalAndVirtues": "Iron plate or a sword, with Mars fortunate: makes a man potent in war, in judgements and in petitions, terrible to his enemies and victorious over them. Engraved on 'the Stone Correola' (J.F.'s word; 'carnelian' is a gloss, not checked against the Latin), it stops blood and the menses. On a plate of red brass, with Mars unfortunate: hinders buildings, casts the powerful down from dignities, honours and riches, causes discord, strife and hatred of men and beasts, chases away bees, pigeons and fish, 'hinders Mils', makes those who go hunting or fighting unfortunate, causes barrenness in men, women and other animals, and strikes terror into all enemies and compels them to submit. (Paraphrase checked against J.F. 1651, II.xxii, p. 240, EEBO-TCP A26565. These are Agrippa's claims, reported as such.)",
+   "tracingExample": {
+    "name": "Barzabel",
+    "hebrew": "ברצבאל",
+    "method": "MODERN method, not one Agrippa states. Turn each letter into its number. If the number is larger than the square, divide it by 10 until it fits (so 300 becomes 30, and on squares smaller than 30 it becomes 3). Then join the cells in order. Cells are given as [row, column], counting from the top left. Computed here.",
+    "steps": [
+     {
+      "letter": "ב",
+      "value": 2,
+      "reducedTo": 2,
+      "cell": [
+       5,
+       4
+      ]
+     },
+     {
+      "letter": "ר",
+      "value": 200,
+      "reducedTo": 20,
+      "cell": [
+       1,
+       4
+      ]
+     },
+     {
+      "letter": "צ",
+      "value": 90,
+      "reducedTo": 9,
+      "cell": [
+       3,
+       5
+      ]
+     },
+     {
+      "letter": "ב",
+      "value": 2,
+      "reducedTo": 2,
+      "cell": [
+       5,
+       4
+      ]
+     },
+     {
+      "letter": "א",
+      "value": 1,
+      "reducedTo": 1,
+      "cell": [
+       4,
+       3
+      ]
+     },
+     {
+      "letter": "ל",
+      "value": 30,
+      "reducedTo": 3,
+      "cell": [
+       1,
+       5
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "order": 4,
+   "name": "Table (square) of Sun",
+   "value": "Sun",
+   "translit": "6×6",
+   "numeric": 111,
+   "form": "A grid of 6×6 square cells with one number in each cell. Read row by row from the top, left to right: 6 32 3 34 35 1 / 7 11 27 28 8 30 / 19 14 16 15 23 24 / 18 20 22 21 17 13 / 25 29 10 9 26 12 / 36 5 33 4 2 31. Every row, column and main diagonal adds to 111; all the numbers together add to 666. Computed here. A 6×6 (singly even) square cannot be made by either simple rule. This arrangement was checked only for being magic: rows, columns and both diagonals each add to 111, and it holds 1 to 36 exactly once each.",
+   "formConfidence": "high",
+   "note": "Fact-check: matches the 1651 table (p. 246, EEBO-TCP A26565) cell for cell, in the same orientation. The researcher's note said this square 'follows the construction rule given'; no rule is given for the 6×6, which was checked only for being magic. formConfidence raised from medium to high because the 1651 printing confirms every cell. The 1651 English prints each table again 'In Hebrew notes' (as figures not keyed by TCP); whether 1533 does is not verified. Before drawing, check cell by cell against the 1533 plate, which was not seen.",
+   "side": 6,
+   "cells": 36,
+   "lineSum": 111,
+   "total": 666,
+   "centre": null,
+   "rows": [
+    [
+     6,
+     32,
+     3,
+     34,
+     35,
+     1
+    ],
+    [
+     7,
+     11,
+     27,
+     28,
+     8,
+     30
+    ],
+    [
+     19,
+     14,
+     16,
+     15,
+     23,
+     24
+    ],
+    [
+     18,
+     20,
+     22,
+     21,
+     17,
+     13
+    ],
+    [
+     25,
+     29,
+     10,
+     9,
+     26,
+     12
+    ],
+    [
+     36,
+     5,
+     33,
+     4,
+     2,
+     31
+    ]
+   ],
+   "hebrewRows": [
+    [
+     "ו",
+     "לב",
+     "ג",
+     "לד",
+     "לה",
+     "א"
+    ],
+    [
+     "ז",
+     "יא",
+     "כז",
+     "כח",
+     "ח",
+     "ל"
+    ],
+    [
+     "יט",
+     "יד",
+     "טז",
+     "טו",
+     "כג",
+     "כד"
+    ],
+    [
+     "יח",
+     "כ",
+     "כב",
+     "כא",
+     "יז",
+     "יג"
+    ],
+    [
+     "כה",
+     "כט",
+     "י",
+     "ט",
+     "כו",
+     "יב"
+    ],
+    [
+     "לו",
+     "ה",
+     "לג",
+     "ד",
+     "ב",
+     "לא"
+    ]
+   ],
+   "hebrewRowsNote": "Generated by the researcher by the standard convention: 15 as טו and 16 as טז, avoiding יה and יו. Re-generated in the fact-check: the rows follow that convention exactly. Whether Agrippa's printer used it is NOT verified; the 1651 Hebrew table (p. 246) is an image not keyed by TCP. Check the 1533 plate.",
+   "names": [
+    {
+     "agrippaNumber": 6,
+     "hebrew": "ו",
+     "translit": "Vau",
+     "role": "letter of the holy name",
+     "computedCheck": "adds up with ordinary letter values"
+    },
+    {
+     "agrippaNumber": 6,
+     "hebrew": "הא",
+     "translit": "He extended",
+     "role": "letter of the holy name, spelled out",
+     "computedCheck": "adds up with ordinary letter values"
+    },
+    {
+     "agrippaNumber": 36,
+     "hebrew": "אלה",
+     "translit": "Eloh",
+     "role": "divine name",
+     "computedCheck": "adds up with ordinary letter values"
+    },
+    {
+     "agrippaNumber": 111,
+     "hebrew": "נכיאל",
+     "translit": "Nachiel",
+     "role": "intelligence of the Sun",
+     "computedCheck": "adds up with ordinary letter values"
+    },
+    {
+     "agrippaNumber": 666,
+     "hebrew": "סורת",
+     "translit": "Sorath",
+     "role": "spirit (daemonium) of the Sun",
+     "computedCheck": "adds up with ordinary letter values"
+    }
+   ],
+   "namesMatch": "Each name in the list stands at one of the square's key numbers: 6 = side (n), 6 = side (n), 36 = number of cells (n²), 111 = line sum, 666 = total of the square",
+   "figures": [
+    {
+     "figure": "the seal of the Sun",
+     "form": "Not described. No plate was seen. The 1651 caption is 'Of the Sun.' (J.F. 1651, p. 246, EEBO-TCP A26565; the figure itself is not keyed). Reproduce it from a scan of the 1533 edition, not from any later redrawing.",
+     "formConfidence": "low"
+    },
+    {
+     "figure": "the character of the intelligence of the Sun (Nachiel)",
+     "form": "Not described. No plate was seen. The 1651 caption is 'Of the intelligence of the Sun.' (J.F. 1651, p. 246, EEBO-TCP A26565; the figure itself is not keyed). Reproduce it from a scan of the 1533 edition, not from any later redrawing.",
+     "formConfidence": "low"
+    },
+    {
+     "figure": "the character of the spirit of the Sun (Sorath)",
+     "form": "Not described. No plate was seen. The 1651 caption is 'Of the Spirit of the Sun.' (J.F. 1651, p. 246, EEBO-TCP A26565; the figure itself is not keyed). Reproduce it from a scan of the 1533 edition, not from any later redrawing.",
+     "formConfidence": "low"
+    }
+   ],
+   "metalAndVirtues": "Gold plate, with the Sun fortunate: makes the wearer renowned, amiable and acceptable, potent in all his works, and equal to kings and princes, raising him to high fortunes. With the Sun unfortunate: makes a tyrant, proud, ambitious and insatiable, who comes to an ill end. (Paraphrase checked against J.F. 1651, II.xxii, p. 241, EEBO-TCP A26565. These are Agrippa's claims, reported as such.)",
+   "tracingExample": {
+    "name": "Nachiel",
+    "hebrew": "נכיאל",
+    "method": "MODERN method, not one Agrippa states. Turn each letter into its number. If the number is larger than the square, divide it by 10 until it fits (so 300 becomes 30, and on squares smaller than 30 it becomes 3). Then join the cells in order. Cells are given as [row, column], counting from the top left. Computed here.",
+    "steps": [
+     {
+      "letter": "נ",
+      "value": 50,
+      "reducedTo": 5,
+      "cell": [
+       6,
+       2
+      ]
+     },
+     {
+      "letter": "כ",
+      "value": 20,
+      "reducedTo": 20,
+      "cell": [
+       4,
+       2
+      ]
+     },
+     {
+      "letter": "י",
+      "value": 10,
+      "reducedTo": 10,
+      "cell": [
+       5,
+       3
+      ]
+     },
+     {
+      "letter": "א",
+      "value": 1,
+      "reducedTo": 1,
+      "cell": [
+       1,
+       6
+      ]
+     },
+     {
+      "letter": "ל",
+      "value": 30,
+      "reducedTo": 30,
+      "cell": [
+       2,
+       6
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "order": 5,
+   "name": "Table (square) of Venus",
+   "value": "Venus",
+   "translit": "7×7",
+   "numeric": 175,
+   "form": "A grid of 7×7 square cells with one number in each cell. Read row by row from the top, left to right: 22 47 16 41 10 35 4 / 5 23 48 17 42 11 29 / 30 6 24 49 18 36 12 / 13 31 7 25 43 19 37 / 38 14 32 1 26 44 20 / 21 39 8 33 2 27 45 / 46 15 40 9 34 3 28. Every row, column and main diagonal adds to 175; all the numbers together add to 1225. Computed here. This square is exactly what you get by the following rule. Put 1 in the cell directly below the centre. Step one cell down and one to the right, wrapping round the edges. When that cell is already taken, go two cells straight down from the last number instead. The centre always holds the middle number, (n²+1)/2. The rule identifies the arrangement; it is not a claim about how Agrippa or his source built it.",
+   "formConfidence": "high",
+   "note": "Fact-check: matches the 1651 table ('The Table of Venus in her Compass', p. 247, EEBO-TCP A26565) except two cells the TCP keyers could not read: row 2, column 3 (keyed '43' plus an illegible character; the file has 48) and row 3, column 5 (keyed an illegible character plus '81'; the file has 18). The magic constraint fixes both at the file's values. formConfidence raised from medium to high; still check those two cells on the page image. The 1651 English prints each table again 'In Hebrew notes' (as figures not keyed by TCP); whether 1533 does is not verified. Before drawing, check cell by cell against the 1533 plate, which was not seen.",
+   "side": 7,
+   "cells": 49,
+   "lineSum": 175,
+   "total": 1225,
+   "centre": 25,
+   "rows": [
+    [
+     22,
+     47,
+     16,
+     41,
+     10,
+     35,
+     4
+    ],
+    [
+     5,
+     23,
+     48,
+     17,
+     42,
+     11,
+     29
+    ],
+    [
+     30,
+     6,
+     24,
+     49,
+     18,
+     36,
+     12
+    ],
+    [
+     13,
+     31,
+     7,
+     25,
+     43,
+     19,
+     37
+    ],
+    [
+     38,
+     14,
+     32,
+     1,
+     26,
+     44,
+     20
+    ],
+    [
+     21,
+     39,
+     8,
+     33,
+     2,
+     27,
+     45
+    ],
+    [
+     46,
+     15,
+     40,
+     9,
+     34,
+     3,
+     28
+    ]
+   ],
+   "hebrewRows": [
+    [
+     "כב",
+     "מז",
+     "טז",
+     "מא",
+     "י",
+     "לה",
+     "ד"
+    ],
+    [
+     "ה",
+     "כג",
+     "מח",
+     "יז",
+     "מב",
+     "יא",
+     "כט"
+    ],
+    [
+     "ל",
+     "ו",
+     "כד",
+     "מט",
+     "יח",
+     "לו",
+     "יב"
+    ],
+    [
+     "יג",
+     "לא",
+     "ז",
+     "כה",
+     "מג",
+     "יט",
+     "לז"
+    ],
+    [
+     "לח",
+     "יד",
+     "לב",
+     "א",
+     "כו",
+     "מד",
+     "כ"
+    ],
+    [
+     "כא",
+     "לט",
+     "ח",
+     "לג",
+     "ב",
+     "כז",
+     "מה"
+    ],
+    [
+     "מו",
+     "טו",
+     "מ",
+     "ט",
+     "לד",
+     "ג",
+     "כח"
+    ]
+   ],
+   "hebrewRowsNote": "Generated by the researcher by the standard convention: 15 as טו and 16 as טז, avoiding יה and יו. Re-generated in the fact-check: the rows follow that convention exactly. Whether Agrippa's printer used it is NOT verified; the 1651 Hebrew table (p. 247 (Hebrew table p. 248)) is an image not keyed by TCP. Check the 1533 plate.",
+   "names": [
+    {
+     "agrippaNumber": 7,
+     "hebrew": "אהא",
+     "translit": "Aha",
+     "role": "divine name",
+     "computedCheck": "adds up with ordinary letter values. The 1651 row for this name has no legible number or transliteration in EEBO-TCP (p. 243); 'Aha' and 7 are the researcher's"
+    },
+    {
+     "agrippaNumber": 49,
+     "hebrew": "הגיאל",
+     "translit": "Hagiel",
+     "role": "intelligence of Venus",
+     "computedCheck": "adds up with ordinary letter values"
+    },
+    {
+     "agrippaNumber": 175,
+     "hebrew": "קדמאל",
+     "translit": "Kedemel",
+     "role": "spirit (daemonium) of Venus",
+     "computedCheck": "adds up with ordinary letter values (EEBO-TCP keys the 1651 number as '[illegible]67', presumably a misprint or keying error for 175)"
+    },
+    {
+     "agrippaNumber": 1252,
+     "hebrew": "בני שרפים",
+     "translit": "Bne Seraphim ('sons of the Seraphim')",
+     "role": "the intelligences (plural) of Venus (J.F. 1651: 'The Intelligencies of Venus')",
+     "computedCheck": "Printed number corrected by the fact-check from 1225 to 1252: J.F. 1651 keys it '[illegible digit]252' (p. 243). As spelled here it gives 692 with ordinary values and exactly 1252 with final mem as 600. 1252 is not one of the square's key numbers (the total is 1225)."
+    }
+   ],
+   "namesMatch": "Names in the 1651 list against the square's key numbers: 7 = side (n), 49 = number of cells (n²), 175 = line sum, 1252 = NOT a key number (the total is 1225)",
+   "figures": [
+    {
+     "figure": "the seal of Venus",
+     "form": "Not described. No plate was seen. The 1651 caption is 'Of Venus. (p. 247)' (J.F. 1651, pp. 247-248, EEBO-TCP A26565; the figure itself is not keyed). Reproduce it from a scan of the 1533 edition, not from any later redrawing.",
+     "formConfidence": "low"
+    },
+    {
+     "figure": "the character of the intelligence of Venus (Hagiel)",
+     "form": "Not described. No plate was seen. The 1651 caption is 'Of the Intelligence of Venus. (p. 247)' (J.F. 1651, pp. 247-248, EEBO-TCP A26565; the figure itself is not keyed). Reproduce it from a scan of the 1533 edition, not from any later redrawing.",
+     "formConfidence": "low"
+    },
+    {
+     "figure": "the character of the spirit of Venus (Kedemel)",
+     "form": "Not described. No plate was seen. The 1651 caption is 'Of the Spirit of Venus. (p. 248)' (J.F. 1651, pp. 247-248, EEBO-TCP A26565; the figure itself is not keyed). Reproduce it from a scan of the 1533 edition, not from any later redrawing.",
+     "formConfidence": "low"
+    },
+    {
+     "figure": "the character of the intelligences of Venus (Bne Seraphim)",
+     "form": "Not described. No plate was seen. The 1651 caption is 'Of the Intelligences of Venus. (p. 248)' (J.F. 1651, pp. 247-248, EEBO-TCP A26565; the figure itself is not keyed). Reproduce it from a scan of the 1533 edition, not from any later redrawing.",
+     "formConfidence": "low"
+    }
+   ],
+   "metalAndVirtues": "Silver plate, with Venus fortunate: brings concord, ends strife, wins the love of women, helps conception, works against barrenness and gives ability for generation, dissolves enchantments, makes peace between man and woman, and makes all kinds of animals and cattle fruitful. Put in a dove-house, it increases the pigeons. It helps cure all melancholy distempers, causes joyfulness, and makes travellers who carry it fortunate. Formed on brass with Venus unfortunate, it does the contrary. (Paraphrase checked against J.F. 1651, II.xxii, p. 241, EEBO-TCP A26565. These are Agrippa's claims, reported as such.)",
+   "tracingExample": {
+    "name": "Hagiel",
+    "hebrew": "הגיאל",
+    "method": "MODERN method, not one Agrippa states. Turn each letter into its number. If the number is larger than the square, divide it by 10 until it fits (so 300 becomes 30, and on squares smaller than 30 it becomes 3). Then join the cells in order. Cells are given as [row, column], counting from the top left. Computed here.",
+    "steps": [
+     {
+      "letter": "ה",
+      "value": 5,
+      "reducedTo": 5,
+      "cell": [
+       2,
+       1
+      ]
+     },
+     {
+      "letter": "ג",
+      "value": 3,
+      "reducedTo": 3,
+      "cell": [
+       7,
+       6
+      ]
+     },
+     {
+      "letter": "י",
+      "value": 10,
+      "reducedTo": 10,
+      "cell": [
+       1,
+       5
+      ]
+     },
+     {
+      "letter": "א",
+      "value": 1,
+      "reducedTo": 1,
+      "cell": [
+       5,
+       4
+      ]
+     },
+     {
+      "letter": "ל",
+      "value": 30,
+      "reducedTo": 30,
+      "cell": [
+       3,
+       1
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "order": 6,
+   "name": "Table (square) of Mercury",
+   "value": "Mercury",
+   "translit": "8×8",
+   "numeric": 260,
+   "form": "A grid of 8×8 square cells with one number in each cell. Read row by row from the top, left to right: 8 58 59 5 4 62 63 1 / 49 15 14 52 53 11 10 56 / 41 23 22 44 45 19 18 48 / 32 34 35 29 28 38 39 25 / 40 26 27 37 36 30 31 33 / 17 47 46 20 21 43 42 24 / 9 55 54 12 13 51 50 16 / 64 2 3 61 60 6 7 57. Every row, column and main diagonal adds to 260; all the numbers together add to 2080. Computed here. Write 1 to n² in reading order. In each 4×4 block, replace every number on the block's two diagonals with its complement (n²+1 minus the number). Then turn the whole table upside down (reverse the order of the rows). The result matches this square cell for cell.",
+   "formConfidence": "medium",
+   "note": "Fact-check: the 1651 table as keyed in EEBO-TCP (p. 249) differs from the file in six cells of rows 3 and 4. 1651 row 3: 41 23 22 44 48 19 18 45; row 4: 32 34 38 29 25 35 39 28. The file has 45/48, 35/28/38/25 in those places. As keyed, the 1651 square is NOT magic (column 3 adds to 263, column 6 and the rising diagonal to 257). The file's square is magic, follows the stated rule, and agrees with the form usually reproduced as far as the checker knows. Whether 1651 has a misprint or TCP a keying error, and what 1533 prints, is unresolved. formConfidence stays medium. The 1651 English prints each table again 'In Hebrew notes' (as figures not keyed by TCP); whether 1533 does is not verified. Before drawing, check cell by cell against the 1533 plate, which was not seen.",
+   "side": 8,
+   "cells": 64,
+   "lineSum": 260,
+   "total": 2080,
+   "centre": null,
+   "rows": [
+    [
+     8,
+     58,
+     59,
+     5,
+     4,
+     62,
+     63,
+     1
+    ],
+    [
+     49,
+     15,
+     14,
+     52,
+     53,
+     11,
+     10,
+     56
+    ],
+    [
+     41,
+     23,
+     22,
+     44,
+     45,
+     19,
+     18,
+     48
+    ],
+    [
+     32,
+     34,
+     35,
+     29,
+     28,
+     38,
+     39,
+     25
+    ],
+    [
+     40,
+     26,
+     27,
+     37,
+     36,
+     30,
+     31,
+     33
+    ],
+    [
+     17,
+     47,
+     46,
+     20,
+     21,
+     43,
+     42,
+     24
+    ],
+    [
+     9,
+     55,
+     54,
+     12,
+     13,
+     51,
+     50,
+     16
+    ],
+    [
+     64,
+     2,
+     3,
+     61,
+     60,
+     6,
+     7,
+     57
+    ]
+   ],
+   "hebrewRows": [
+    [
+     "ח",
+     "נח",
+     "נט",
+     "ה",
+     "ד",
+     "סב",
+     "סג",
+     "א"
+    ],
+    [
+     "מט",
+     "טו",
+     "יד",
+     "נב",
+     "נג",
+     "יא",
+     "י",
+     "נו"
+    ],
+    [
+     "מא",
+     "כג",
+     "כב",
+     "מד",
+     "מה",
+     "יט",
+     "יח",
+     "מח"
+    ],
+    [
+     "לב",
+     "לד",
+     "לה",
+     "כט",
+     "כח",
+     "לח",
+     "לט",
+     "כה"
+    ],
+    [
+     "מ",
+     "כו",
+     "כז",
+     "לז",
+     "לו",
+     "ל",
+     "לא",
+     "לג"
+    ],
+    [
+     "יז",
+     "מז",
+     "מו",
+     "כ",
+     "כא",
+     "מג",
+     "מב",
+     "כד"
+    ],
+    [
+     "ט",
+     "נה",
+     "נד",
+     "יב",
+     "יג",
+     "נא",
+     "נ",
+     "טז"
+    ],
+    [
+     "סד",
+     "ב",
+     "ג",
+     "סא",
+     "ס",
+     "ו",
+     "ז",
+     "נז"
+    ]
+   ],
+   "hebrewRowsNote": "Generated by the researcher by the standard convention: 15 as טו and 16 as טז, avoiding יה and יו. Re-generated in the fact-check: the rows follow that convention exactly. Whether Agrippa's printer used it is NOT verified; the 1651 Hebrew table (p. 249 (Hebrew table p. 250)) is an image not keyed by TCP. Check the 1533 plate.",
+   "names": [
+    {
+     "agrippaNumber": 8,
+     "hebrew": "אזבוגה",
+     "translit": "Asboga ('eight extended'; J.F. 1651 keys 'A[illegible]boga, eight extended.', p. 243)",
+     "role": "divine name",
+     "computedCheck": "Its letters total 24, not 8. But they fall into three pairs that each total 8: aleph+zayin (1+7), beth+vav (2+6), gimel+he (3+5). This is probably what 'eight extended' means; that reading is my inference."
+    },
+    {
+     "agrippaNumber": 64,
+     "hebrew": "דין",
+     "translit": "Din",
+     "role": "divine name",
+     "computedCheck": "adds up with ordinary letter values"
+    },
+    {
+     "agrippaNumber": 64,
+     "hebrew": "דני",
+     "translit": "Doni",
+     "role": "divine name",
+     "computedCheck": "adds up with ordinary letter values"
+    },
+    {
+     "agrippaNumber": 260,
+     "hebrew": "טיריאל",
+     "translit": "Tiriel",
+     "role": "intelligence of Mercury",
+     "computedCheck": "adds up with ordinary letter values"
+    },
+    {
+     "agrippaNumber": 2080,
+     "hebrew": "תפתרתרת",
+     "translit": "Taphthartharath",
+     "role": "spirit (daemonium) of Mercury",
+     "computedCheck": "adds up with ordinary letter values"
+    }
+   ],
+   "namesMatch": "Each name in the list stands at one of the square's key numbers: 8 = side (n), 64 = number of cells (n²), 64 = number of cells (n²), 260 = line sum, 2080 = total of the square",
+   "figures": [
+    {
+     "figure": "the seal of Mercury",
+     "form": "Not described. No plate was seen. The 1651 caption is 'Of Mercury. (p. 249)' (J.F. 1651, pp. 249-250, EEBO-TCP A26565; the figure itself is not keyed). Reproduce it from a scan of the 1533 edition, not from any later redrawing.",
+     "formConfidence": "low"
+    },
+    {
+     "figure": "the character of the intelligence of Mercury (Tiriel)",
+     "form": "Not described. No plate was seen. The 1651 caption is 'Of the Intelligency of Mercury. (p. 249)' (J.F. 1651, pp. 249-250, EEBO-TCP A26565; the figure itself is not keyed). Reproduce it from a scan of the 1533 edition, not from any later redrawing.",
+     "formConfidence": "low"
+    },
+    {
+     "figure": "the character of the spirit of Mercury (Taphthartharath)",
+     "form": "Not described. No plate was seen. The 1651 caption is 'Of the Spirit of Mercury. (p. 250)' (J.F. 1651, pp. 249-250, EEBO-TCP A26565; the figure itself is not keyed). Reproduce it from a scan of the 1533 edition, not from any later redrawing.",
+     "formConfidence": "low"
+    }
+   ],
+   "metalAndVirtues": "Silver, tin or yellow brass, or written on virgin parchment, with Mercury fortunate: makes the bearer grateful and fortunate to do what he pleases, brings gain, prevents poverty, and helps memory, understanding and divination, and the understanding of hidden things by dreams. With Mercury unfortunate, the contrary. (Paraphrase checked against J.F. 1651, II.xxii, pp. 241-242, EEBO-TCP A26565. These are Agrippa's claims, reported as such.)",
+   "tracingExample": {
+    "name": "Tiriel",
+    "hebrew": "טיריאל",
+    "method": "MODERN method, not one Agrippa states. Turn each letter into its number. If the number is larger than the square, divide it by 10 until it fits (so 300 becomes 30, and on squares smaller than 30 it becomes 3). Then join the cells in order. Cells are given as [row, column], counting from the top left. Computed here.",
+    "steps": [
+     {
+      "letter": "ט",
+      "value": 9,
+      "reducedTo": 9,
+      "cell": [
+       7,
+       1
+      ]
+     },
+     {
+      "letter": "י",
+      "value": 10,
+      "reducedTo": 10,
+      "cell": [
+       2,
+       7
+      ]
+     },
+     {
+      "letter": "ר",
+      "value": 200,
+      "reducedTo": 20,
+      "cell": [
+       6,
+       4
+      ]
+     },
+     {
+      "letter": "י",
+      "value": 10,
+      "reducedTo": 10,
+      "cell": [
+       2,
+       7
+      ]
+     },
+     {
+      "letter": "א",
+      "value": 1,
+      "reducedTo": 1,
+      "cell": [
+       1,
+       8
+      ]
+     },
+     {
+      "letter": "ל",
+      "value": 30,
+      "reducedTo": 30,
+      "cell": [
+       5,
+       6
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "order": 7,
+   "name": "Table (square) of Moon",
+   "value": "Moon",
+   "translit": "9×9",
+   "numeric": 369,
+   "form": "A grid of 9×9 square cells with one number in each cell. Read row by row from the top, left to right: 37 78 29 70 21 62 13 54 5 / 6 38 79 30 71 22 63 14 46 / 47 7 39 80 31 72 23 55 15 / 16 48 8 40 81 32 64 24 56 / 57 17 49 9 41 73 33 65 25 / 26 58 18 50 1 42 74 34 66 / 67 27 59 10 51 2 43 75 35 / 36 68 19 60 11 52 3 44 76 / 77 28 69 20 61 12 53 4 45. Every row, column and main diagonal adds to 369; all the numbers together add to 3321. Computed here. This square is exactly what you get by the following rule. Put 1 in the cell directly below the centre. Step one cell down and one to the right, wrapping round the edges. When that cell is already taken, go two cells straight down from the last number instead. The centre always holds the middle number, (n²+1)/2. The rule identifies the arrangement; it is not a claim about how Agrippa or his source built it.",
+   "formConfidence": "high",
+   "note": "Fact-check: matches the 1651 table ('The Table of the Moon in her Compass', p. 251, EEBO-TCP A26565) except three cells keyed imperfectly: row 1, column 2 ('7' plus an illegible character; file 78), row 1, column 8 (keyed '454'; file 54) and row 7, column 8 ('7' plus an illegible character; file 75). The magic constraint fixes all three at the file's values. formConfidence raised from medium to high; still check those cells on the page image. The 1651 English prints each table again 'In Hebrew notes' (as figures not keyed by TCP); whether 1533 does is not verified. Before drawing, check cell by cell against the 1533 plate, which was not seen.",
+   "side": 9,
+   "cells": 81,
+   "lineSum": 369,
+   "total": 3321,
+   "centre": 41,
+   "rows": [
+    [
+     37,
+     78,
+     29,
+     70,
+     21,
+     62,
+     13,
+     54,
+     5
+    ],
+    [
+     6,
+     38,
+     79,
+     30,
+     71,
+     22,
+     63,
+     14,
+     46
+    ],
+    [
+     47,
+     7,
+     39,
+     80,
+     31,
+     72,
+     23,
+     55,
+     15
+    ],
+    [
+     16,
+     48,
+     8,
+     40,
+     81,
+     32,
+     64,
+     24,
+     56
+    ],
+    [
+     57,
+     17,
+     49,
+     9,
+     41,
+     73,
+     33,
+     65,
+     25
+    ],
+    [
+     26,
+     58,
+     18,
+     50,
+     1,
+     42,
+     74,
+     34,
+     66
+    ],
+    [
+     67,
+     27,
+     59,
+     10,
+     51,
+     2,
+     43,
+     75,
+     35
+    ],
+    [
+     36,
+     68,
+     19,
+     60,
+     11,
+     52,
+     3,
+     44,
+     76
+    ],
+    [
+     77,
+     28,
+     69,
+     20,
+     61,
+     12,
+     53,
+     4,
+     45
+    ]
+   ],
+   "hebrewRows": [
+    [
+     "לז",
+     "עח",
+     "כט",
+     "ע",
+     "כא",
+     "סב",
+     "יג",
+     "נד",
+     "ה"
+    ],
+    [
+     "ו",
+     "לח",
+     "עט",
+     "ל",
+     "עא",
+     "כב",
+     "סג",
+     "יד",
+     "מו"
+    ],
+    [
+     "מז",
+     "ז",
+     "לט",
+     "פ",
+     "לא",
+     "עב",
+     "כג",
+     "נה",
+     "טו"
+    ],
+    [
+     "טז",
+     "מח",
+     "ח",
+     "מ",
+     "פא",
+     "לב",
+     "סד",
+     "כד",
+     "נו"
+    ],
+    [
+     "נז",
+     "יז",
+     "מט",
+     "ט",
+     "מא",
+     "עג",
+     "לג",
+     "סה",
+     "כה"
+    ],
+    [
+     "כו",
+     "נח",
+     "יח",
+     "נ",
+     "א",
+     "מב",
+     "עד",
+     "לד",
+     "סו"
+    ],
+    [
+     "סז",
+     "כז",
+     "נט",
+     "י",
+     "נא",
+     "ב",
+     "מג",
+     "עה",
+     "לה"
+    ],
+    [
+     "לו",
+     "סח",
+     "יט",
+     "ס",
+     "יא",
+     "נב",
+     "ג",
+     "מד",
+     "עו"
+    ],
+    [
+     "עז",
+     "כח",
+     "סט",
+     "כ",
+     "סא",
+     "יב",
+     "נג",
+     "ד",
+     "מה"
+    ]
+   ],
+   "hebrewRowsNote": "Generated by the researcher by the standard convention: 15 as טו and 16 as טז, avoiding יה and יו. Re-generated in the fact-check: the rows follow that convention exactly. Whether Agrippa's printer used it is NOT verified; the 1651 Hebrew table (p. 251 (Hebrew table p. 252)) is an image not keyed by TCP. Check the 1533 plate.",
+   "names": [
+    {
+     "agrippaNumber": 9,
+     "hebrew": "הד",
+     "translit": "Hod",
+     "role": "divine name",
+     "computedCheck": "adds up with ordinary letter values"
+    },
+    {
+     "agrippaNumber": 81,
+     "hebrew": "אלים",
+     "translit": "Elim",
+     "role": "divine name",
+     "computedCheck": "adds up with ordinary letter values"
+    },
+    {
+     "agrippaNumber": 369,
+     "hebrew": "חשמודאי",
+     "translit": "Hasmodai",
+     "role": "spirit (daemonium) of the Moon",
+     "computedCheck": "adds up with ordinary letter values"
+    },
+    {
+     "agrippaNumber": 3321,
+     "hebrew": "שדברשהמעת שרתתן",
+     "translit": "Schedbarschemoth Schartathan",
+     "role": "spirit of the spirits of the Moon",
+     "computedCheck": "adds up to 3321 only if final letters take the 'great' values (final mem 600, final nun 700); with ordinary values it is 2671"
+    },
+    {
+     "agrippaNumber": 3321,
+     "hebrew": "מלכא בתרשיתים עד ברוח שחקים",
+     "translit": "Malcha betharsisim hed beruah schehalim (J.F. 1651, p. 243, one letter illegible in 'ber[?]ah'; the researcher's 'Malcah Betharsithim hed Beruah Schehakim' is not J.F.'s)",
+     "role": "intelligence of the intelligences of the Moon (J.F. 1651 name list: 'The Intelligency of the Intelligence of the Moon')",
+     "computedCheck": "As spelled here, 2201 with ordinary values and 3321 only with final mem as 600. But this Hebrew is unconfirmed and J.F.'s transliteration points to a different spelling (shin for tav, lamed for qoph), which gives 3151 even with great finals. Read the Hebrew from the 1533 plate."
+    }
+   ],
+   "namesMatch": "Each name in the list stands at one of the square's key numbers: 9 = side (n), 81 = number of cells (n²), 369 = line sum, 3321 = total of the square, 3321 = total of the square",
+   "figures": [
+    {
+     "figure": "the seal of the Moon",
+     "form": "Not described. No plate was seen. The 1651 caption is 'Of the Moon. (p. 251)' (J.F. 1651, pp. 251-252, EEBO-TCP A26565; the figure itself is not keyed). Reproduce it from a scan of the 1533 edition, not from any later redrawing.",
+     "formConfidence": "low"
+    },
+    {
+     "figure": "the character of the spirit of the Moon (Hasmodai)",
+     "form": "Not described. No plate was seen. The 1651 caption is 'Of the Spirit of the Moon. (p. 251)' (J.F. 1651, pp. 251-252, EEBO-TCP A26565; the figure itself is not keyed). Reproduce it from a scan of the 1533 edition, not from any later redrawing.",
+     "formConfidence": "low"
+    },
+    {
+     "figure": "the character of the spirit of the spirits of the Moon (Schedbarschemoth Schartathan)",
+     "form": "Not described. No plate was seen. The 1651 caption is 'Of the Spirit of the spirits of the Moon. (p. 252)' (J.F. 1651, pp. 251-252, EEBO-TCP A26565; the figure itself is not keyed). Reproduce it from a scan of the 1533 edition, not from any later redrawing.",
+     "formConfidence": "low"
+    },
+    {
+     "figure": "the character of the intelligence of the intelligences of the Moon (Malcah...)",
+     "form": "Not described. No plate was seen. The 1651 caption is 'Of the Intelligence of the Intelligences of the Moon. (p. 252)' (J.F. 1651, pp. 251-252, EEBO-TCP A26565; the figure itself is not keyed). Reproduce it from a scan of the 1533 edition, not from any later redrawing.",
+     "formConfidence": "low"
+    }
+   ],
+   "metalAndVirtues": "Silver, with the Moon fortunate: makes the bearer grateful, amiable, pleasant, cheerful and honoured, removes malice and ill will, gives security on a journey, increase of riches and health of body, and drives enemies and other evils from any place one chooses. With the Moon unfortunate, engraved on lead and buried: makes the place and its people unfortunate, and ships, rivers, fountains and mills; makes the man it is aimed at unfortunate, so that he flees his country and dwelling; and hinders physicians, orators and all men in their office. (Paraphrase checked against J.F. 1651, II.xxii, p. 242, EEBO-TCP A26565. These are Agrippa's claims, reported as such.)",
+   "tracingExample": {
+    "name": "Hasmodai",
+    "hebrew": "חשמודאי",
+    "method": "MODERN method, not one Agrippa states. Turn each letter into its number. If the number is larger than the square, divide it by 10 until it fits (so 300 becomes 30, and on squares smaller than 30 it becomes 3). Then join the cells in order. Cells are given as [row, column], counting from the top left. Computed here.",
+    "steps": [
+     {
+      "letter": "ח",
+      "value": 8,
+      "reducedTo": 8,
+      "cell": [
+       4,
+       3
+      ]
+     },
+     {
+      "letter": "ש",
+      "value": 300,
+      "reducedTo": 30,
+      "cell": [
+       2,
+       4
+      ]
+     },
+     {
+      "letter": "מ",
+      "value": 40,
+      "reducedTo": 40,
+      "cell": [
+       4,
+       4
+      ]
+     },
+     {
+      "letter": "ו",
+      "value": 6,
+      "reducedTo": 6,
+      "cell": [
+       2,
+       1
+      ]
+     },
+     {
+      "letter": "ד",
+      "value": 4,
+      "reducedTo": 4,
+      "cell": [
+       9,
+       8
+      ]
+     },
+     {
+      "letter": "א",
+      "value": 1,
+      "reducedTo": 1,
+      "cell": [
+       6,
+       5
+      ]
+     },
+     {
+      "letter": "י",
+      "value": 10,
+      "reducedTo": 10,
+      "cell": [
+       7,
+       4
+      ]
+     }
+    ]
+   }
+  }
+ ],
+ "lettersSource": "The units are the seven planetary squares, not letters. The researcher laid out each square from recall of the J.F. 1651 and Barrett 1801 tradition. In the fact-check every cell was compared with the 1651 squares as keyed in EEBO-TCP A26565 (pp. 244-251): Saturn, Jupiter, Mars and the Sun match exactly, in the same orientation; Venus and the Moon match except cells the keyers could not read; Mercury differs in six cells (see its note). All seven were recomputed: each holds 1 to n² once with equal rows, columns and diagonals, and all but the 6×6 follow the stated construction rules. The 1533 woodcut was NOT seen. The Hebrew rows are generated, not read from any edition. Each unit lists the 1651 names and numbers with a gematria check (the Hebrew spellings are the researcher's and unverified), the seals and characters with their 1651 captions (NOT described), the metal and virtues (paraphrase checked against 1651), and one MODERN tracing example (recomputed).",
+ "uses": [
+  {
+   "use": "Talisman engraved on the planet's metal at an elected hour",
+   "evidence": "Checked against J.F. 1651, II.xxii, pp. 239-242 (EEBO-TCP A26565): lead (Saturn); silver (Jupiter, or coral against enchantments); iron or a sword (Mars, or 'the Stone Correola' to stop blood); gold (Sun); silver (Venus); silver, tin, yellow brass or virgin parchment (Mercury); silver (Moon). For harm: red brass (Mars), brass (Venus) and lead, buried (Moon), each with the planet unfortunate; Saturn, Sun and Mercury are simply 'unfortunate'. No harmful use is given for Jupiter. Per-planet detail is under each square."
+  },
+  {
+   "use": "Source of names and characters for invoking planetary intelligences and spirits",
+   "evidence": "Agrippa gives each square an intelligence and a spirit (for Venus also 'The Intelligencies of Venus'; for the Moon 'the spirit of the spirits' and 'the Intelligence of the Intelligences', and no separate intelligence), with their characters (J.F. 1651, pp. 243-252, verified). That later grimoires, Barrett 1801 and the Golden Dawn used these names and characters is recalled, not checked here."
+  },
+  {
+   "use": "Tracing sigils of names on the squares",
+   "evidence": "This is a modern practice (Golden Dawn onward): letters are reduced with the nine chambers of III.30 and the cells joined. Agrippa does not describe it. The worked examples in the units were computed in this session to show the method, and are labelled as modern."
+  },
+  {
+   "use": "Recreational and theoretical mathematics",
+   "evidence": "In the Arabic and Byzantine tradition and in Pacioli and Cardano, the squares are also objects of arithmetic (Sesiano; Folkerts; recalled). They are the same squares used in a different frame."
+  }
+ ],
+ "quotations": [
+  {
+   "text": "IT is affirmed by Magicians, that there are certain tables of numbers distributed to the seven planets, which they call the sacred tables of the planets, endowed with many, and very great vertues of the Heavens, in as much as they represent that divine order of Celestiall numbers, impressed upon Celestials by the Idea's of the divine mind, by means of the soul of the world...",
+   "translation": "J.F. [probably John French], Three Books of Occult Philosophy, London: Printed by R.W. for Gregory Moule, 1651, p. 239. Wording verified against the EEBO-TCP keyed text A26565 (Wing A789); the opening capitals 'IT' are the print's.",
+   "source": "Agrippa, De occulta philosophia, Book II, ch. 22 (opening)"
+  },
+  {
+   "text": "...with an Intelligency to what is good, with a spirit to what is bad...",
+   "translation": "J.F., London 1651 (as above), p. 239. Verified against EEBO-TCP A26565.",
+   "source": "Agrippa, De occulta philosophia, II.22, on the table of Saturn"
+  },
+  {
+   "text": "...out of the same numbers is drawn the seal, or Character of Saturn, and of the spirits thereof, such as we shall beneath ascribe to its table.",
+   "translation": "J.F., London 1651 (as above), p. 239. Verified against EEBO-TCP A26565. Added by the fact-check.",
+   "source": "Agrippa, De occulta philosophia, II.22, on the table of Saturn"
+  },
+  {
+   "text": "Now how the seals, and Characters of the Stars, and spirits are drawn from these tables, the wise searcher, and he which shall understand the verifying of these tables, shall easily find out.",
+   "translation": "J.F., London 1651 (as above), p. 242. Verified against EEBO-TCP A26565. Added by the fact-check.",
+   "source": "Agrippa, De occulta philosophia, II.22 (closing sentence of the text before the tables)"
+  }
+ ],
+ "links": [
+  {
+   "to": "aiq-bekar",
+   "relation": "The nine chambers of III.30 ('nine Chambers', J.F. 1651, III.xxx, p. 442) supply the reduction (300→30→3) that the modern tracing method uses to fit names onto the squares."
+  },
+  {
+   "to": "hebrew",
+   "relation": "Every name and every Hebrew cell rests on the numerical values of the Hebrew letters, including the 'great' values of the final letters needed for the Moon's names."
+  },
+  {
+   "to": "arabic",
+   "relation": "The magic-square tradition (wafq/awfāq, budūḥ) from which the squares descend."
+  },
+  {
+   "to": "latin",
+   "relation": "The Latin talismanic treatises on the seven planetary squares (Folkerts 1981) and Agrippa's Latin text."
+  },
+  {
+   "to": "alphabet-of-the-magi",
+   "relation": "The sibling item cites the Paracelsian Archidoxis magica and its planetary seals with names and characters. That is a parallel and probably dependent tradition; not checked here."
+  },
+  {
+   "to": "charakteres",
+   "relation": "The characters of the intelligences and spirits continue the older practice of magical characters (charaktêres)."
+  },
+  {
+   "to": "celestial",
+   "relation": "Book III's angelic alphabets are the other way Agrippa gives names a visible form. The seals are a numerical route to the same end."
+  }
+ ],
+ "cautions": [
+  "Neither the researcher nor the fact-checker could run a web search (the workflow's shared search budget was used up). The fact-check rests on the EEBO-TCP keyed text of the 1651 English, on recomputation, on two search-backed sibling fact-checks for catalogue facts and URLs, and on the checker's own knowledge, labelled where used. Every secondary-literature detail is still UNVERIFIED.",
+  "Do NOT draw the seals or the characters of the intelligences and spirits from any description here; none is given. Reproduce them from a scan of the 1533 plate. Barrett's 1801 plates are later copies, and seals are known to drift between editions.",
+  "Before drawing, compare each square cell by cell with the 1533 plate. Six squares are confirmed against the 1651 English; Mercury is not (the 1651 as keyed differs in six cells and is not magic).",
+  "Present the tracing method as a modern reconstruction (Golden Dawn and later). Agrippa says only that the seals are drawn out of the numbers, and leaves the method to 'the wise searcher' (1651, p. 242).",
+  "The name numbers in the 1651 list are partly illegible in EEBO-TCP and some are misprinted or mis-keyed (Mars 'square of four'; Adonai '55'; Kedemel '[?]67'). Read every number from a page image before the page prints it.",
+  "Bne Seraphim is numbered [1]252 in 1651, not 1225; the name fits 1252 with final mem as 600. State the mismatch with the square's total rather than silently 'correcting' it.",
+  "The Hebrew spellings of all the names are the researcher's and unverified. For the Moon's 'Malcha betharsisim hed beruah schehalim' the file's Hebrew does not match J.F.'s transliteration; only the file's spelling reaches 3321.",
+  "Mars has a fifth name, numbered 25, printed in Hebrew only in 1651. It is not identified here.",
+  "'Spirit' in the 1651 English is said to render Agrippa's daemonium (not checked). Agrippa sets the intelligence over good effects and the spirit over evil ones. Report this as his doctrine; do not endorse it or mock it.",
+  "Do not sensationalise Sorath = 666. State the arithmetic. Agrippa cites the number of the beast in II.iii and II.xx, but never with Sorath or the Sun's square.",
+  "The Golden Dawn has living successor organisations: describe its use of the squares, and do not reproduce its papers or emblems.",
+  "Do not use the word 'kamea' as if it were Agrippa's. It is absent from the 1651 English.",
+  "How the 1533 Hebrew tables write 15 and 16 (טו/טז or יה/יו) is not verified. The hebrewRows follow the standard טו/טז convention.",
+  "No page, folio or signature is given for 1533. The 1651 pages (239-253) are from the page breaks of the EEBO-TCP text."
+ ],
+ "sources": [
+  {
+   "citation": "Heinrich Cornelius Agrippa, De occulta philosophia libri tres, [Cologne: J. Soter?], 1533, Book II ch. 22. Library of Congress copy, LOC item 20007812 (URL seen in search results by the alphabet-of-the-magi fact-check; not viewed)",
+   "url": "https://www.loc.gov/item/20007812"
+  },
+  {
+   "citation": "The same, McGill Library copy, Internet Archive (record: July 1533 from colophon; four or five issues of this date). URL and details as reported by the theban fact-check; not viewed here",
+   "url": "https://archive.org/details/McGillLibrary-osl_henrici-cornelii-agrippae_folioA279o1533-19978"
+  },
+  {
+   "citation": "The same, Eton College Library catalogue record ('[J. Soter?]'; Adams suggests Basel). URL as reported by the theban fact-check; not viewed here",
+   "url": "https://catalogue.etoncollege.com/B25098"
+  },
+  {
+   "citation": "Agrippa 1533, C. G. Jung collection copy, digitised (researcher's citation; its URL was not seen in any search result and is withdrawn)",
+   "url": ""
+  },
+  {
+   "citation": "Wellcome Collection record of the 1533 edition (researcher's citation; its URL was not seen in any search result and is withdrawn)",
+   "url": ""
+  },
+  {
+   "citation": "Agrippa, De occulta philosophia libri tres, ed. Vittoria Perrone Compagni, Leiden: Brill, 1992 (Studies in the History of Christian Thought 48), Wellcome record; not consulted. URL as reported seen by the theban fact-check (the preview host replaces the researcher's wellcomecollection.org link)",
+   "url": "https://preview.wellcomecollection.org/works/ymvvbx6a"
+  },
+  {
+   "citation": "Agrippa, Three Books of Occult Philosophy, trans. J.F. (probably John French), London: Printed by R.W. for Gregory Moule, 1651 (Wing A789; ESTC R11002), Book II ch. xxii, pp. 239-252. EEBO-TCP A26565 table of contents (URL seen in search results by the alphabet-of-the-magi fact-check)",
+   "url": "https://quod.lib.umich.edu/e/eebo/A26565.0001.001?view=toc"
+  },
+  {
+   "citation": "The same, EEBO-TCP keyed XML (Phase I, CC0), the text read in this fact-check; repository cloned in this workflow",
+   "url": "https://github.com/textcreationpartnership/A26565"
+  },
+  {
+   "citation": "Wellcome Collection record of the 1651 translation ('J.F[reake]', probably John French). URL as reported by the theban fact-check",
+   "url": "https://wellcomecollection.org/works/ftahuupv"
+  },
+  {
+   "citation": "Joseph H. Peterson (ed.), Agrippa, Of Occult Philosophy, Book II, Esoteric Archives (the 1651 text). The Book II page URL was not seen, so none is given",
+   "url": ""
+  },
+  {
+   "citation": "Stanford Encyclopedia of Philosophy, 'Heinrich Cornelius Agrippa von Nettesheim' (visit to Trithemius winter 1509-10; draft received shortly before 8 April 1510). URL and details as reported by the theban fact-check",
+   "url": "https://plato.stanford.edu/entries/agrippa-nettesheim/"
+  },
+  {
+   "citation": "Francis Barrett, The Magus, London: Lackington, Allen and Co., 1801, full scan of the Wellcome copy (b22006795), Internet Archive. URL as reported by the theban fact-check, replacing the researcher's Wikimedia Commons link, which was not seen",
+   "url": "https://archive.org/download/b22006795/b22006795.pdf"
+  },
+  {
+   "citation": "Menso Folkerts, 'Zur Frühgeschichte der magischen Quadrate in Westeuropa', Sudhoffs Archiv 65 (1981), pp. 313–338 (recalled; page range unverified)",
+   "url": ""
+  },
+  {
+   "citation": "Jacques Sesiano, Magic Squares in the Tenth Century: Two Arabic Treatises by Anṭākī and Būzjānī, Cham: Springer, 2017 (recalled)",
+   "url": ""
+  },
+  {
+   "citation": "Jacques Sesiano, Magic Squares: Their History and Construction from Ancient Times to AD 1600, Cham: Springer, 2019 (recalled)",
+   "url": ""
+  },
+  {
+   "citation": "Jacques Sesiano, Les carrés magiques dans les pays islamiques, Lausanne: Presses polytechniques et universitaires romandes, 2004 (recalled)",
+   "url": ""
+  },
+  {
+   "citation": "Schuyler Cammann, 'Islamic and Indian Magic Squares', History of Religions 8 (1969) (recalled; parts and pages unverified)",
+   "url": ""
+  },
+  {
+   "citation": "Noah Gardiner, 'Forbidden Knowledge? Notes on the Production, Transmission, and Reception of the Major Works of Aḥmad al-Būnī', Journal of Arabic and Islamic Studies 12 (2012) (recalled)",
+   "url": ""
+  },
+  {
+   "citation": "Raymond Klibansky, Erwin Panofsky and Fritz Saxl, Saturn and Melancholy, London: Nelson, 1964 (Dürer's square as Jupiter's; recalled)",
+   "url": ""
+  },
+  {
+   "citation": "Christopher I. Lehrich, The Language of Demons and Angels: Cornelius Agrippa's Occult Philosophy, Leiden: Brill, 2003 (recalled)",
+   "url": ""
+  },
+  {
+   "citation": "Donald Tyson (ed.), Three Books of Occult Philosophy, St Paul: Llewellyn, 1993, appendix on the magic squares (recalled; in copyright)",
+   "url": ""
+  },
+  {
+   "citation": "David Pingree (ed.), Picatrix: The Latin Version of the Ghāyat al-Ḥakīm, London: Warburg Institute, 1986 (cited for the negative claim; not consulted)",
+   "url": ""
+  },
+  {
+   "citation": "Girolamo Cardano, Practica arithmetice et mensurandi singularis, Milan, 1539 (recalled; chapter and folio unverified)",
+   "url": ""
+  },
+  {
+   "citation": "Luca Pacioli, De viribus quantitatis, Bologna, Biblioteca Universitaria, MS 250 (recalled; reported to contain the planetary squares)",
+   "url": ""
+  },
+  {
+   "citation": "Israel Regardie, The Golden Dawn, 4 vols, Chicago: Aries Press, 1937–1940 ('kameas' and sigil tracing; recalled)",
+   "url": ""
+  },
+  {
+   "citation": "Computations made in this session and re-run in the fact-check: magic-sum and construction-rule checks, Hebrew-numeral rows, gematria of all name entries, the Dürer relation, the tracing paths, and the 1651 Mercury variant (scripts in the scratchpad tools_seals and tools_fc3_seals directories)",
+   "url": ""
+  },
+  {
+   "citation": "Wikipedia, 'Magic square' (tertiary; orientation only, not cited for any claim). URL not seen in any search result and withdrawn",
+   "url": ""
+  },
+  {
+   "citation": "Wikipedia, 'Melencolia I' (tertiary; Dürer's square). URL not seen in any search result and withdrawn",
+   "url": ""
+  }
+ ],
+ "confidence": "SOLID (recomputed in the fact-check): all seven squares as given are magic and hold 1 to n² once each; the line sums 15, 34, 65, 111, 175, 260, 369 and totals 45, 136, 325, 666, 1225, 2080, 3321; the construction rules; the Hebrew-numeral rows (as generated); the gematria; the Dürer relation; the tracing paths. SOLID (verified in the 1651 English, EEBO-TCP A26565): the chapter heading and pages; the planetary order; the stated sums; the metals and virtues; the intelligence/spirit formula; the seal sentence and the 'wise searcher' sentence; the transliterated names and their roles; the squares of Saturn, Jupiter, Mars and the Sun cell for cell, Venus and the Moon except illegible cells; the seal captions; the 8 April 1510 date of Trithemius's reply. MEDIUM (search-backed sibling checks, not re-seen): July 1533 from the colophon; [Cologne: Soter?] or Basel; the translator as probably John French. SHAKY: the 1533 plates in every respect; the Mercury square's rows 3-4; every Hebrew spelling; the Mars 25-name; Bne Seraphim's number (1252 in 1651) and its cause; the Moon's long-name spelling; the Latin words (daemonium, tabula); the Würzburg shelfmark; and all secondary literature (Folkerts, Sesiano, Cammann, Gardiner, Pacioli, Moschopoulos, the Ikhwān, Cardano, Kircher, Tyson, Lehrich, Klibansky-Panofsky-Saxl, Pingree, Regardie). NOT GIVEN: the forms of the seals and characters (23 figures). Draw them only from the 1533 scan.",
+ "factcheck": {
+  "checker": "independent fact-check pass (refutation mode), second pass over planetary-seals.json; supersedes the earlier search-less check written to the same path",
+  "method": "WebSearch was refused at this check's first query: the turn's shared budget of 200 calls was used up. The brief rules out page fetching, so none was attempted and the limit was not worked around. The checks rest on (1) the EEBO-TCP keyed XML of the 1651 English Agrippa (A26565, Wing A789, ESTC R11002), cloned in this workflow from github.com/textcreationpartnership/A26565 and read as data, with page numbers from its page-break markers: II.xxii in full (pp. 239-252), II.iii p. 173, II.xx p. 237, III.xviii p. 401, III.xxx p. 442, III.xli p. 475, 'To the Reader' and Trithemius's letter; (2) a fresh programmatic check of the squares, construction rules, Hebrew-numeral rows, gematria, tracing paths, the Dürer relation and the 1651 Mercury variant (tools_fc3_seals/check.py); (3) the two search-backed sibling fact-checks (theban.verified.json, alphabet-of-the-magi.verified.json) for catalogue facts and for which URLs were seen in search results; (4) the checker's own knowledge, labelled wherever it is used. The earlier search-less verified file at this path was read for cross-reference only; every point taken from it was re-verified against the TCP text.",
+  "corrections": [
+   "firstAttestation.date: 'colophon reads Mense Iulio according to the Utrecht and Eton catalogue records' is not confirmed. July 1533 is now sourced to the McGill Library record (from the colophon; four or five issues of this date), as reported by the search-backed theban fact-check. The Utrecht record and the words 'Mense Iulio' were not seen.",
+   "firstAttestation.place: Eton's '[J. Soter?]' and Adams's Basel suggestion are now credited to the Eton record as reported by the theban fact-check.",
+   "firstAttestation.locator: the 1651 heading was quoted with 'Intelligences', which is the table-of-contents spelling; the chapter heading on p. 239 reads 'Intelligencies'. Both are now given. 'As I recall' is replaced by the verified wording and the 1651 pages: text pp. 239-242, name lists p. 243, squares and seals pp. 244-252 (planet by planet), chapter 23 at p. 253.",
+   "firstAttestation.notes and transmission: the draft is dated 'by 8 April 1510' (Trithemius's reply, 'the 8. day of April, An. M. D. X.', 1651 front matter, verified), not 'before'. Added the SEP details as reported by the theban check (visit winter 1509-10) and Agrippa's own statement in 'To the Reader' that for the print 'we added some Chapters' (verified), which is why II.22 cannot be dated to the draft.",
+   "summary: 'July 1533' sourced; the virtues are reported as what 'they say' (J.F.'s framing, verified); 'daemonium' marked as recalled; added that Agrippa leaves the method of the seals to 'the wise searcher' (p. 242, verified); the Arabic and Latin antecedents are marked as recalled scholarship.",
+   "otherNames: 'sacred tables of the planets (J.F. 1651, as recalled)' is now verified (p. 239). For 'kameas', added that the word does not occur anywhere in the 1651 English (full TCP text searched).",
+   "transmission (10th century): the kunya 'Abū'l-Ḥasan' for al-Anṭākī is withdrawn as unconfirmed (the checker recalls Abū'l-Qāsim, also unconfirmed).",
+   "transmission (al-Būnī): 'd. 1225' given as a single fact; the sibling ibn-wahshiyya research gives 622/1225 or 630/1232-3 (citing Gardiner 2012). Both are now given as unchecked.",
+   "transmission (1533): '(in Arabic figures and, as I recall, in Hebrew numerals)' limited: the 1651 English verifiably prints every table again 'In Hebrew notes'; the 1533 is unverified.",
+   "transmission (1651): imprint completed from the TCP header (Printed by R.W. for Gregory Moule; Wing A789; ESTC R11002; pp. 239-252). Translator: TCP says 'probably John French'; the Wellcome/NUC 'Freake' alternative is credited to the theban check. 'Reprints the tables and seals on recut plates' and 'most modern copies descend from this' are reduced to what was checked or marked as judgement.",
+   "transmission (Dürer, Barrett, Golden Dawn): the Klibansky-Panofsky-Saxl reading and Barrett's copying are marked as recalled; Barrett's imprint (Lackington, Allen and Co.) added from the theban check; III.30's 'nine Chambers' located at J.F. 1651 p. 442 (verified).",
+   "claims[0] (planetary order): now verified in J.F. 1651 pp. 239-242; noted the 1651 slip 'Mars ... made of a square of four containing twenty five numbers' (p. 240, as keyed).",
+   "claims[1] (sums): 'as recalled for Saturn' replaced. Every stated line sum and total verified in 1651 with pages (Sun's 111 keyed 'III.', 666 on p. 240).",
+   "claims[2] (names pattern): REFUTED in two places. Mars is not the exception: 1651 has a fifth Mars entry numbered 25 (Hebrew only, p. 243). Venus is: Bne Seraphim is numbered [1]252, not the total 1225. The 1651 lists have 37 entries, not 36. The claim is reworded to 'nearly every' and the counts restated.",
+   "claims[3] (Bne Seraphim): REFUTED. The file said Agrippa gives 1225 and that the name fits under neither convention. 1651 prints [illegible digit]252, and בני שרפים gives exactly 1252 with final mem as 600. The real discrepancy is between that printed number and the square's total.",
+   "claims[4] and Moon unit (long names): J.F. 1651 transliterates 'Malcha betharsisim hed ber[?]ah schehalim' (p. 243). Computed: its shin and lamed readings give 3221, 3251 or 3151 with great finals; only the file's tav-and-qoph Hebrew reaches 3321. The file's Hebrew and its transliteration 'Malcah Betharsithim hed Beruah Schehakim' are therefore not confirmed and may be a fit-to-number reconstruction. Both 1651 headings for the being are given.",
+   "claims[5] (Asboga): 1651 keying 'A[?]boga, eight extended.' added; the 3 Enoch link marked as recalled.",
+   "claims[6] (intelligence/spirit): quotation corrected from 'with an Intelligence to what is good, with a Spirit to what is bad' to J.F.'s 'with an Intelligency to what is good, with a spirit to what is bad' (p. 239). 'daemonium' marked as recalled.",
+   "claims[7] (seals from numbers): quotation corrected to J.F.'s wording ('the seal, or Character of Saturn'); added the verified 'wise searcher' sentence (p. 242), which documents that Agrippa gives no method.",
+   "claims[8] (tracing method): Golden Dawn and Tyson attribution marked as recalled; the Agiel computation re-run.",
+   "claims[10] (Arabic origin): standing lowered from 'documented' to 'attributed'. It is a scholarly judgement about lineage, every supporting work is recalled, and none was checked.",
+   "claims[13] (budūḥ): Agrippa's childbirth virtue verified; the al-Ghazālī ascription is now reported as uncertain, because the checker recalls al-Ghazālī himself (al-Munqidh min al-ḍalāl) mentioning it, against the researcher's 'later sources'. Neither is verified.",
+   "claims[15] (Sorath = 666): verified that II.xxii says only 'the sum of all is 666' (p. 240) and lists Sorath as 'The spirit of the Sun' (p. 243). Added that Agrippa does cite Revelation 13:18 in Book II, in II.iii (p. 173) and II.xx (p. 237), as an example of name-numbers, but never with Sorath or the Sun's square. The research's 'does not connect it to Revelation in II.22' is true only for II.22.",
+   "claims[16] (kamea): 'As I recall, his words are tabulae' withdrawn as unconfirmed; replaced by the verified absence of 'kamea' from the 1651 English and J.F.'s 'tables'.",
+   "claims[17] (1510 draft): added the verified 'we added some Chapters' and the 8 April 1510 date; Agrippa's Italian years and Pacioli marked as recalled.",
+   "claims[18] (names before Agrippa): added that Agrippa himself ascribes Zazel to Hebrew tradition in III.xviii (p. 401, 'the Cabalists') and III.xli (p. 475, 'the divines of the Hebrews'). Reported as his attribution.",
+   "letters (all squares): every cell compared with the 1651 squares as keyed in EEBO-TCP (pp. 244-251). Saturn, Jupiter, Mars and Sun match exactly, including orientation; Venus (2 cells) and Moon (3 cells) match except cells the keyers could not read, which the magic constraint restores to the file's values; Mercury differs in six cells. Each 'as I recall it from the J.F. 1651 and Barrett 1801 tradition' note is replaced by the result.",
+   "letters (Sun note): the note said the 6×6 'follows the construction rule given'; no rule is given for it. Corrected.",
+   "letters (formConfidence): raised from medium to high for Sun, Venus and Moon, which the 1651 printing confirms. Mercury stays medium: the 1651 as keyed is not magic (column 3 = 263; column 6 and the rising diagonal = 257). Saturn, Jupiter and Mars stay high. All 23 seal and character figures stay low (not described).",
+   "letters (figures): each figure now carries its exact 1651 caption and page (pp. 244-252).",
+   "letters (Saturn names): 'Iehovah extended' given as J.F.'s 'Jehovah extended'.",
+   "letters (Jupiter names): J.F. keys the 4-name 'Abab.'; the two 16-names are Hebrew only in 1651, so 'Hua / Heva' and 'Ehi' are marked editorial; Iophiel is 'Johphiel' in 1651.",
+   "letters (Mars names): added the missing fifth entry, numbered 25, Hebrew only in 1651 (identity unresolved); namesMatch corrected; noted Adonai keyed '55'.",
+   "letters (Venus names): Bne Seraphim's agrippaNumber changed from 1225 to 1252; computedCheck and namesMatch rewritten; flagged the illegible Aha row and Kedemel keyed '[?]67'.",
+   "letters (Moon names): transliteration of the intelligence of the intelligences given as J.F.'s; the file's Hebrew flagged as unconfirmed.",
+   "letters (metalAndVirtues): all seven paraphrases checked against 1651 pp. 239-242 and given pages. Mars: 'binds mills' corrected to J.F.'s 'hinders Mils'; 'carnelian' marked as a gloss of J.F.'s 'Stone Correola'; restored 'causeth barreness in men and women' and 'strikes a terror in all enemies, and compels them to submit'. Moon: restored the victim's flight from his country and the hindering of physicians and orators. Jupiter: noted that no harmful use is given. 'They say' framing restored for Saturn and Jupiter.",
+   "letters (hebrewRowsNote): rows regenerated and confirmed to follow the stated convention; noted that the 1651 Hebrew tables are images not keyed by TCP.",
+   "lettersSource: rewritten to say what was compared (1651 squares, names, captions, virtues), what was recomputed, and what was not seen (1533).",
+   "uses: metals checked against 1651, with coral, 'Stone Correola' and the harmful materials made exact; the Venus and Moon plural beings given in J.F.'s wording; later use marked as recalled.",
+   "quotations[0]: corrected against EEBO-TCP: 'IT is affirmed', 'seven planets' and 'tables of the planets' (lower case), 'vertues of the Heavens', 'in as much as' (not 'in so much as'), 'Celestiall numbers', 'Celestials', \"Idea's\". The 'QUOTED FROM MEMORY' flag removed; page p. 239 given.",
+   "quotations[1]: corrected to 'with an Intelligency to what is good, with a spirit to what is bad' (p. 239).",
+   "quotations: added two verified 1651 quotations, the seal sentence (p. 239) and the 'wise searcher' sentence (p. 242).",
+   "cautions: first caution updated (this check also had no search); the Bne Seraphim caution corrected; added cautions on the Mercury square, the unreliable 1651 numbers, the Mars 25-name, the Moon spelling and the Revelation citations elsewhere in Book II.",
+   "sources: URLs kept only where a search-backed sibling check of this workflow records them as seen in search results, or (GitHub) where the clone proves the address. WITHDRAWN as not seen: archive.org DeOccultaPhilosophiaLoc1533 (alphabet-of-the-magi check: not seen; replaced by loc.gov/item/20007812, seen), archive.org DeOccultaPhilosophiaJungCollection1533, wellcomecollection.org/works/wsthg632, wellcomecollection.org/works/ymvvbx6a (replaced by the preview host actually seen), the Wikimedia Commons Magus PDF (replaced by archive.org/download/b22006795/b22006795.pdf, seen), en.wikipedia Magic_square and Melencolia_I. Added the McGill and Eton 1533 records and the TCP repository."
+  ],
+  "unresolved": [
+   "The 1533 print was not seen at all: the colophon wording, the printer (Soter?) or place (Cologne or Basel), the cell values and orientation of the woodcut squares, the Hebrew-numeral tables and how they write 15 and 16, the Latin words for 'spirit' (daemonium?) and 'table' (tabula?), and the page or signature of II.22.",
+   "Mercury square, rows 3-4: the 1651 as keyed in EEBO-TCP (p. 249) differs from the file in six cells and is not magic. Check the 1651 page image and the 1533 plate to decide between a misprint and a keying error, and what 1533 prints.",
+   "Venus (row 2 col 3; row 3 col 5) and Moon (row 1 cols 2 and 8; row 7 col 8) cells keyed imperfectly in TCP: check on the page image.",
+   "Bne Seraphim: is Agrippa's number 1252 (1651, first digit illegible in TCP) or 1225 in 1533? If 1252, is it an error or a value computed with final mem as 600? Whether Tyson 1993 discusses it.",
+   "The fifth Mars name, numbered 25, printed in Hebrew only in 1651 (p. 243): identify it from the plate. The checker's recollection, יהי, is unconfirmed.",
+   "Every Hebrew spelling of the names (EEBO-TCP does not key Hebrew). In particular the Moon's 'Malcha betharsisim hed beruah schehalim': the file's Hebrew reaches 3321 but contradicts J.F.'s transliteration in two letters.",
+   "Numbers keyed oddly in the 1651 list: Adonai '55' and Kedemel '[?]67' (for 65 and 175?), the illegible Aha row, and Jupiter's 'Abab.' Confirm from the page image.",
+   "Whether the 1510 draft (reported as Würzburg UB M. ch. q. 50; shelfmark not seen) contained II.22: needs Perrone Compagni 1992.",
+   "Catalogue facts and URLs taken from the search-backed theban and alphabet-of-the-magi checks (McGill and Eton records, SEP, Wellcome records, LOC item, the Barrett scan) were not re-seen in this pass.",
+   "All secondary literature is recalled, not checked: Folkerts 1981 (title, pages, manuscripts), Sesiano 2004/2017/2019, Cammann 1969 (parts and pages), Gardiner 2012, Lehrich 2003, Tyson 1993 (appendix and arguments, including the claim that each seal touches every cell), Klibansky-Panofsky-Saxl 1964, Pingree 1986, Regardie 1937-40.",
+   "Pre-1533 witnesses are unverified: the Latin planetary-square treatises and their shelfmarks, Pacioli's De viribus quantitatis (Bologna BU MS 250) and its planetary squares, Moschopoulos's date, the Ikhwān al-Ṣafā''s squares and whether they are planetary, and whether Picatrix contains any magic squares.",
+   "Post-1533 witnesses are unverified: Cardano, Practica arithmetice (Milan, 1539), its chapter and whether it copies Agrippa; Kircher, Arithmologia (1665); Barrett's plate numbers and source; Golden Dawn use of 'kamea' and of the tracing method.",
+   "al-Anṭākī's kunya (Abū'l-Ḥasan per the researcher, Abū'l-Qāsim per the checker's recall) and al-Būnī's death date (1225 or 1232-3).",
+   "Islamic and Chinese parallels are recalled: budūḥ for childbirth and whether al-Ghazālī himself or only later sources give it, the Luoshu legend's details and Han attestation, and Azbogah in 3 Enoch.",
+   "The 'carnelian' gloss of J.F.'s 'Stone Correola' (Mars) is not checked against the Latin.",
+   "The forms of all 23 seals and characters: none is described, and none can be drawn from this file."
+  ],
+  "removedUrls": 7,
+  "readyToPublish": false
+ }
+}

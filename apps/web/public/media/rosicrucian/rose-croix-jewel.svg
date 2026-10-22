@@ -1,0 +1,135 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+<title>The jewel of the Rose-Croix degree (1858)</title>
+<desc>Follows the description of the jewel printed in a Masonic magazine of 1 June 1858: crowned compasses opened on an arc of a sixteenth of a circle, a passion cross ‘formed of rubies’ between the legs with a full-blown rose at its centre and its stem twined round the lower limb, and a pelican feeding her young at the foot. Only the obverse is drawn. The crown’s form, the leaves, the number of young and every proportion except the angle are the drawing’s own. The cipher on the arc is left out because its letters are not established. The cross is red, for the rubies of the 1858 text; everything else is gold on dark.</desc>
+<!--
+  After the description of the jewel of the Rose Croix degree in the London
+  Freemasons' Magazine series (masonicperiodicals.org, series 'mmr', issue of
+  1 June 1858, p. 195; the article's title and the masthead of that issue not
+  verified). NO JEWEL WAS SEEN; drawn from the 1858 text only.
+  From the text: a crown; compasses opened on an arc of a sixteenth of a circle
+    (22.5 degrees); between the legs a passion cross 'formed of rubies', a
+    full-blown rose at its centre, the stem twined round the lower limb; at the
+    foot a pelican wounding her breast to feed her young. The obverse only.
+  The drawing's own: the crown as a plain coronet of five points (a description
+    of 3 July 1869 in the same series, p. 12, gives 'a seven pointed antique
+    crown', and the compasses at 60 degrees); five petals; three leaves; three
+    young (the number is not given; one museum example shows seven); the nest of
+    twigs; every proportion except the angle. The cross is plain red: the rubies
+    are not drawn as separate stones.
+  Construction (page coordinates). Hinge (200,85), 22 across. Legs 270 long,
+    12 wide, each 11.25 degrees from the vertical; points (147.3,349.8) and
+    (252.7,349.8). Arc: a band 12 thick on the circle about the hinge whose
+    radius is the leg length, from point to point (22.5 degrees), its middle
+    line at y 355. Crown 80 wide, 45 tall, base at y 72.5 on the hinge. Cross:
+    upright x 194-206 from y 130 down to the arc behind the nest, crossbar 80
+    long at y 184-196; in front of the legs. Rose 37 across at the crossing.
+    Stem: a helix of two and a half turns round the lower limb, y 201-243,
+    passing in front of the cross going right and behind it going left, its end
+    hidden behind the cross. Pelican facing left between the legs, centred on
+    the nest: body y 283-317, wings half raised to y 246, the bill reaching
+    down to pierce the breast, three drops falling. Nest of twigs 60 wide on
+    the middle of the arc, y 330-350; three young in it, beaks open upward.
+  Left out: the password in cipher on the arc (its letters are not established);
+    the reverse (an eagle in the pelican's place).
+  Uncertain: whether eighteenth-century jewels already had this layout; museum
+    and sale examples vary (the rose at the hinge, or a rose over the pelican in
+    place of the cross).
+  Colour: the cross red, for the rubies of the 1858 text; all else gold. The
+    ground is left transparent: overlaps are parted by cut gaps, not by dark
+    outlines, so the drawing sits on any ground.
+-->
+<defs>
+<linearGradient id="g" gradientUnits="userSpaceOnUse" x1="110" y1="30" x2="290" y2="370"><stop offset="0" stop-color="#ecd9ae"/><stop offset=".3" stop-color="#c9a86a"/><stop offset="1" stop-color="#c9a86a"/></linearGradient>
+<linearGradient id="ruby" gradientUnits="userSpaceOnUse" x1="160" y1="130" x2="240" y2="349"><stop offset="0" stop-color="#d44a5a"/><stop offset=".45" stop-color="#a8182e"/><stop offset="1" stop-color="#7c0f1f"/></linearGradient>
+<path id="legs" d="M205.885 86.171L164.916 292.136L147.326 349.812L153.146 289.794L194.115 83.829ZM194.115 86.171L235.084 292.136L252.674 349.812L246.854 289.794L205.885 83.829Z"/>
+<circle id="hinge" cx="200" cy="85" r="11"/>
+<path id="cross" d="M194 130H206V184H240V196H206V349H194V196H160V184H194Z"/>
+<g id="rose"><circle cx="200" cy="180" r="8.5"/><circle cx="209.51" cy="186.91" r="8.5"/><circle cx="205.88" cy="198.09" r="8.5"/><circle cx="194.12" cy="198.09" r="8.5"/><circle cx="190.49" cy="186.91" r="8.5"/></g>
+<path id="stem" d="M192.93 201C194.78 201.67 197.38 202.33 200 203C202.62 203.67 205.22 204.33 207.07 205C208.92 205.67 210 206.33 210 207C210 207.67 208.92 208.33 207.07 209C205.22 209.67 202.62 210.33 200 211C197.38 211.67 194.78 212.33 192.93 213C191.08 213.67 190 214.33 190 215C190 215.67 191.08 216.33 192.93 217C194.78 217.67 197.38 218.33 200 219C202.62 219.67 205.22 220.33 207.07 221C208.92 221.67 210 222.33 210 223C210 223.67 208.92 224.33 207.07 225C205.22 225.67 202.62 226.33 200 227C197.38 227.67 194.78 228.33 192.93 229C191.08 229.67 190 230.33 190 231C190 231.67 191.08 232.33 192.93 233C194.78 233.67 197.38 234.33 200 235C202.62 235.67 205.22 236.33 207.07 237C208.92 237.67 210 238.33 210 239C210 239.67 208.92 240.33 207.07 241C205.22 241.67 202.62 242.33 200 243"/>
+<path id="stemf" d="M192.93 201C194.78 201.67 197.38 202.33 200 203C202.62 203.67 205.22 204.33 207.07 205C208.92 205.67 210 206.33 210 207M190 215C190 215.67 191.08 216.33 192.93 217C194.78 217.67 197.38 218.33 200 219C202.62 219.67 205.22 220.33 207.07 221C208.92 221.67 210 222.33 210 223M190 231C190 231.67 191.08 232.33 192.93 233C194.78 233.67 197.38 234.33 200 235C202.62 235.67 205.22 236.33 207.07 237C208.92 237.67 210 238.33 210 239"/>
+<path id="leaf" d="M0 -.6L2 -.6C4 -3.1 8 -3.1 11.5 0C8 3.1 4 3.1 2 .6L0 .6Z"/>
+<path id="pfw" d="M204.2 267C204 258 206.5 251.5 211.5 246.5L218 251L210.5 265Z"/>
+<path id="pbody" d="M226 300L234.5 311.5L229 313.5L222 310.5C215 316 205 317.5 193 316C182 314.5 173 308 168.5 300.5C166.5 296 167.5 290 172.5 287.2C176 285.4 181.5 284.5 186 283.5C187.8 277 187.6 270 186.8 265.5C186.2 262.5 183.5 261.6 181 262L177 259.5C176 254 180.5 250.5 187 250.5C193 250.5 197.5 254 197.5 260C197.5 268 197 276 200.5 283C210 288 219 292 226 300Z"/>
+<path id="pnw" d="M202 285C202.6 276 205 268.5 209 263C212.5 257.5 216.5 252.5 221.5 249C221.3 252.5 220.6 255.5 219.6 258.6C221.5 257.2 222.8 256.2 224.3 254.8C224 258.8 223.1 262.6 221.9 266.2C223.7 265.1 225 264.1 226.3 262.9C226.2 267.2 225.3 271 224 274.6C225.6 273.8 226.7 272.9 227.3 272.1C227.5 276.6 226.8 280.2 225.4 283.8C226.3 283.3 227 282.9 227.6 282.4C228 288.5 227 294 224.5 299C216 297 207 292 202 285Z"/>
+<path id="pbill" d="M176.8 258.6C174 268 171 280 169.6 292.5C169.3 295 170.2 296.8 171.9 296.6C171.1 295.6 171 294.6 171.4 293.2C173.8 284 178.6 276 180.6 270C181.6 266.5 182.6 264 182.4 262.2Z"/>
+<path id="pbillcut" d="M170.4 285L169.6 292.5C169.3 295 170.2 296.8 171.9 296.6C171.1 295.6 171 294.6 171.4 293.2L173.5 285Z"/>
+<g id="young"><circle cx="182" cy="328" r="5"/><circle cx="200" cy="328" r="5"/><circle cx="218" cy="328" r="5"/><path d="M178.8 329H185.2V338H178.8ZM179.09 325.88L172.53 325.46L178.42 328.38ZM181.01 324.54L176.1 320.17L178.95 326.09ZM196.8 329H203.2V338H196.8ZM197.32 325.59L190.85 324.49L196.4 328ZM199.37 324.45L194.95 319.6L197.16 325.78ZM214.8 329H221.2V338H214.8ZM216.65 324.66L211.32 320.83L214.76 326.42ZM218.99 324.54L217.15 318.24L216.42 324.76Z"/></g>
+<path id="drops" d="M166.6 301.2C167.2 302.6 168.05 303.5 168.05 304.6A1.45 1.45 0 0 1 165.15 304.6C165.15 303.5 166 302.6 166.6 301.2ZM165.9 309.7C166.5 311.1 167.35 312 167.35 313.1A1.45 1.45 0 0 1 164.45 313.1C164.45 312 165.3 311.1 165.9 309.7ZM165.2 318.2C165.8 319.6 166.65 320.5 166.65 321.6A1.45 1.45 0 0 1 163.75 321.6C163.75 320.5 164.6 319.6 165.2 318.2Z"/>
+<path id="twd" d="M171 335Q185 339 199 341M203 340.5Q217 339 229 334.5M178 343Q193 346 210 346.5M176 333.5L192 345M224 333L210 345.5M173 340L168.5 342M225.5 338.5L231 340"/>
+<path id="twg" d="M169.5 331.5Q187 334.5 205 333.5M195 334Q214 334 230.5 330.5M173 339.5Q184 343.5 197 345.5M193 342Q210 343 225 339M186 347.5Q196 350 207 349"/>
+<path id="twp" d="M186 337Q201 337.5 216 334.5M202 347.5Q214 346.5 222 342M199 336L183 344"/>
+<path id="twt" d="M170.5 333L166 330M229.5 332.5L234 329.5M216 334.5L220 331"/>
+<g id="nestcut" fill="none" stroke="#000" stroke-linecap="round"><use href="#twd" stroke-width="5"/><use href="#twg" stroke-width="5.2"/><use href="#twp" stroke-width="4.5"/><use href="#twt" stroke-width="4.5"/></g>
+<g id="pelcut" fill="#000" stroke="#000" stroke-width="3" stroke-linejoin="round"><use href="#pfw"/><use href="#pbody"/><use href="#pnw"/><use href="#pbill"/></g>
+<mask id="m-arc" maskUnits="userSpaceOnUse" x="0" y="0" width="400" height="400"><rect width="400" height="400" fill="#fff"/><use href="#legs" fill="#000" stroke="#000" stroke-width="3"/><use href="#nestcut"/></mask>
+<mask id="m-legs" maskUnits="userSpaceOnUse" x="0" y="0" width="400" height="400"><rect width="400" height="400" fill="#fff"/><use href="#hinge" fill="#000" stroke="#000" stroke-width="3"/><use href="#cross" fill="#000" stroke="#000" stroke-width="3"/></mask>
+<mask id="m-stem" maskUnits="userSpaceOnUse" x="0" y="0" width="400" height="400"><rect width="400" height="400" fill="#fff"/><use href="#cross" fill="#000" stroke="#000" stroke-width="3"/><use href="#stemf" fill="none" stroke="#fff" stroke-width="3.4"/><use href="#rose" fill="#000" stroke="#000" stroke-width="3"/></mask>
+<mask id="m-cross" maskUnits="userSpaceOnUse" x="0" y="0" width="400" height="400"><rect width="400" height="400" fill="#fff"/><use href="#stemf" fill="none" stroke="#000" stroke-width="5.2"/><use href="#rose" fill="#000" stroke="#000" stroke-width="3"/><use href="#pelcut"/><use href="#young" fill="#000" stroke="#000" stroke-width="3"/><use href="#nestcut"/></mask>
+<mask id="m-fw" maskUnits="userSpaceOnUse" x="0" y="0" width="400" height="400"><rect width="400" height="400" fill="#fff"/><use href="#pnw" fill="#000" stroke="#000" stroke-width="3"/><use href="#pbody" fill="#000" stroke="#000" stroke-width="3"/></mask>
+<mask id="m-body" maskUnits="userSpaceOnUse" x="0" y="0" width="400" height="400"><rect width="400" height="400" fill="#fff"/><use href="#pnw" fill="#000" stroke="#000" stroke-width="3"/><use href="#pbillcut" fill="#000" stroke="#000" stroke-width="3"/><use href="#young" fill="#000" stroke="#000" stroke-width="3"/></mask>
+<mask id="m-young" maskUnits="userSpaceOnUse" x="0" y="0" width="400" height="400"><rect width="400" height="400" fill="#fff"/><use href="#nestcut"/></mask>
+</defs>
+
+<!-- the arc, plain: the cipher of the password is left out -->
+<path d="M146.155 355.698A276 276 0 0 0 253.845 355.698L251.504 343.929A264 264 0 0 1 148.496 343.929Z" fill="url(#g)" mask="url(#m-arc)"/>
+
+<!-- the compasses, opened 22.5 degrees -->
+<g mask="url(#m-legs)">
+<use href="#legs" fill="url(#g)"/>
+<path d="M197.9 95.5L147.326 349.812M202.1 95.5L252.674 349.812" fill="none" stroke="#ecd9ae" stroke-width=".8" stroke-opacity=".55"/>
+</g>
+<use href="#hinge" fill="url(#g)"/>
+<circle cx="200" cy="85" r="3.6" fill="none" stroke="#1d150b" stroke-width="1.1"/>
+
+<!-- the crown -->
+<path d="M164 72.5H236V61Q238 44 240 27.5Q235 44 230 50Q225 44 220 27.5Q215 44 210 50Q205 44 200 27.5Q195 44 190 50Q185 44 180 27.5Q175 44 170 50Q165 44 160 27.5Q162 44 164 61Z" fill="url(#g)"/>
+<path d="M164 61H236" stroke="#1d150b" stroke-width="1.1"/>
+
+<!-- the stem and leaves, twined round the lower limb -->
+<g mask="url(#m-stem)">
+<use href="#stem" fill="none" stroke="url(#g)" stroke-width="2.2" stroke-linecap="round"/>
+</g>
+<g fill="url(#g)">
+<use href="#leaf" transform="translate(190 215) rotate(125)"/><use href="#leaf" transform="translate(210 223) rotate(55)"/><use href="#leaf" transform="translate(190 231) rotate(125)"/>
+</g>
+<g stroke="#1d150b" stroke-width=".6">
+<path d="M2.6 0H9.5" transform="translate(190 215) rotate(125)"/><path d="M2.6 0H9.5" transform="translate(210 223) rotate(55)"/><path d="M2.6 0H9.5" transform="translate(190 231) rotate(125)"/>
+</g>
+
+<!-- the cross of rubies -->
+<g mask="url(#m-cross)">
+<use href="#cross" fill="url(#ruby)"/>
+<use href="#cross" fill="none" stroke="#e98a92" stroke-width=".7" stroke-opacity=".5"/>
+</g>
+
+<!-- the full-blown rose at the crossing -->
+<use href="#rose" fill="url(#g)"/>
+<path d="M203.23 185.55L208.35 178.51M205.23 191.7L213.51 194.39M200 195.5V204.2M194.77 191.7L186.49 194.39M196.77 185.55L191.65 178.51" stroke="#1d150b" stroke-width="1.1" stroke-linecap="round"/>
+<circle cx="200" cy="190" r="5.5" fill="#ecd9ae" stroke="#1d150b" stroke-width="1.1"/>
+
+<!-- the pelican in her piety -->
+<use href="#pfw" fill="url(#g)" mask="url(#m-fw)"/>
+<use href="#pbody" fill="url(#g)" mask="url(#m-body)"/>
+<use href="#pnw" fill="url(#g)"/>
+<use href="#pbill" fill="#ecd9ae"/>
+<g fill="none" stroke="#1d150b" stroke-width=".9" stroke-linecap="round">
+<path d="M178.8 261.6C176 270 173 281 171.1 292.6"/>
+<path d="M209.3 264.5C210.5 274 215.5 286 222.5 296.5M219.6 258.6L211.2 268.5M221.9 266.2L213.2 276.5M224 274.6L216.2 284.4M225.4 283.8L219.6 291.4M213.8 254.5L207.6 263.5"/>
+</g>
+<circle cx="185.2" cy="256" r="1.15" fill="#1d150b"/>
+
+<!-- three drops falling from the breast -->
+<use href="#drops" fill="#ecd9ae"/>
+
+<!-- the young in the nest, beaks open toward her -->
+<use href="#young" fill="url(#g)" mask="url(#m-young)"/>
+<g fill="#1d150b"><circle cx="182.6" cy="326.1" r=".8"/><circle cx="200.8" cy="326.2" r=".8"/><circle cx="219.5" cy="326.7" r=".8"/></g>
+
+<!-- the nest of twigs, resting on the arc -->
+<g fill="none" stroke-linecap="round">
+<use href="#twd" stroke="#9a7a42" stroke-width="2"/>
+<use href="#twg" stroke="url(#g)" stroke-width="2.2"/>
+<use href="#twp" stroke="#ecd9ae" stroke-width="1.5"/>
+<use href="#twt" stroke="url(#g)" stroke-width="1.5"/>
+</g>
+</svg>

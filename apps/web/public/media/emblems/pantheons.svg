@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+<title>The household of the gods: a tree from the first waters</title>
+<!--
+  An emblem made for The Pantheons, a door of The Powers portal of Three Magi Press
+  (/powers/pantheons): an original composition, not a historical object or the seal of
+  any body, built from these traditional motifs. Quotations are paraphrased.
+    The tree. A genealogy drawn as a tree, grown here into the world tree that holds the
+      household of the gods: the ash Yggdrasil, where the gods hold their court every day
+      (Snorri, Gylfaginning 15), and the Rigveda's question, what wood and what tree it was
+      from which heaven and earth were fashioned (RV 10.81.4).
+    The two stems, one pale gold and one deep gold, rising apart and crossing once, the pale
+      over the deep: the first pair from whom a family of gods descends. Apsu and Tiamat
+      mingle their waters and the gods are born within them (Enuma Elish I.1-9); Hera calls
+      Okeanos the origin of the gods and Tethys their mother (Iliad 14.201); Heaven and Earth
+      are hymned as the pair whose sons are gods (devaputre, RV 1.159.1); Izanagi and Izanami
+      stir the brine and bear the islands, the pair from whom most of the kami descend
+      (Kojiki I; the first kami come before them). Neither stem is named: every family names
+      its own pair. Each crosses into the other's side of the crown, so the whole household
+      holds both, and their two golds meet only in the crown.
+    The waters at the root, from which most of these families rise: Apsu and Tiamat; Nun,
+      out of which Atum rose at Heliopolis; the brine of the Kojiki; the waters on which,
+      in the Ife accounts, earth was poured from a snail shell to make the first land.
+    The light at the crossing: the marriage as the hearth of the house. In Plato's Phaedrus
+      (247a) Hestia, the hearth, alone stays at home in the house of the gods.
+    The crown: the household, branching as a genealogy branches, two boughs to four limbs
+      to eight twigs, with a round knot at each fork as on a family chart. Eight stars, for
+      the eight great offices by which the page's Table of Correspondences reads every family
+      (sky, storm, sun, love, war, wisdom, underworld, threshold): a division of labour.
+    Each star is the sign AN, in cuneiform both "sky" and "god", written before every
+      divine name; drawn as on the Powers emblem, four crossing strokes, eight equal rays,
+      with the same proportions as its small signs.
+    Seniority: the stars are largest and palest at the head, smaller and deeper down the
+      sides. The Babylonian god-list An = Anum enters each great god with spouse, children
+      and household after him; in Plato's Phaedrus (247a) the gods go each in the rank
+      assigned to him, each doing his own work.
+    The head pair: the two largest stars side by side at the top, where a couple heads the
+      house: Zeus and Hera; El and Athirat (mother of the seventy sons, the gods, in the Baal
+      cycle of Ugarit); Odin and Frigg; Dyaus and Prithivi, the Vedic pair (RV 1.159.1); in
+      a Shaiva household, Shiva and Parvati. Some families have no such couple at their
+      head: Ahura Mazda has no consort, and Olodumare stands alone above the orisha.
+    Twelve beads on a faint band inside the ring, one for each family the page sets out,
+      from Sumer and Akkad to the Fifth Sun.
+    A double ring, the bound of the house, as on the Powers emblem.
+  The drawing's own: the number and set of the branches, the knots, the single crossing,
+  the sizes and shades of the stars, the three lines of water, the beads and every
+  proportion; no star on the crown's axis and no count of ten, so that it is not taken for
+  another tree. Gold only: pale gold #ecd9ae, gold #c9a86a, deep gold #a8874f, on #0d0b0a.
+  No lettering.
+-->
+<defs><radialGradient id="halo" cx="200" cy="200" r="200" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#0d0b0a" stop-opacity=".85"/><stop offset=".62" stop-color="#0d0b0a" stop-opacity=".8"/><stop offset=".86" stop-color="#0d0b0a" stop-opacity=".45"/><stop offset="1" stop-color="#0d0b0a" stop-opacity="0"/></radialGradient><linearGradient id="rg" gradientUnits="userSpaceOnUse" x1="0" y1="22" x2="0" y2="378"><stop offset="0" stop-color="#ecd9ae"/><stop offset=".5" stop-color="#c9a86a"/><stop offset="1" stop-color="#a8874f"/></linearGradient><linearGradient id="cg" gradientUnits="userSpaceOnUse" x1="0" y1="200" x2="0" y2="64"><stop offset="0" stop-color="#c9a86a"/><stop offset="1" stop-color="#ecd9ae"/></linearGradient><radialGradient id="glow" cx="200" cy="140" r="128" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ecd9ae" stop-opacity="0.08"/><stop offset="1" stop-color="#ecd9ae" stop-opacity="0"/></radialGradient><radialGradient id="hearth"><stop offset="0" stop-color="#f6ebcf" stop-opacity="0.5"/><stop offset=".35" stop-color="#ecd9ae" stop-opacity="0.200"/><stop offset="1" stop-color="#c9a86a" stop-opacity="0"/></radialGradient><radialGradient id="sg"><stop offset="0" stop-color="#ecd9ae" stop-opacity="0.13"/><stop offset="1" stop-color="#ecd9ae" stop-opacity="0"/></radialGradient><radialGradient id="ht"><stop offset="0" stop-color="#f6ebcf" stop-opacity="0.45"/><stop offset=".45" stop-color="#f6ebcf" stop-opacity="0.158"/><stop offset="1" stop-color="#f6ebcf" stop-opacity="0"/></radialGradient></defs>
+<circle cx="200" cy="200" r="200" fill="url(#halo)"/>
+<circle cx="200" cy="200" r="178" fill="none" stroke="url(#rg)" stroke-width="4.5"/>
+<circle cx="200" cy="200" r="171" fill="none" stroke="url(#rg)" stroke-width="1.8" stroke-opacity=".8"/>
+<circle cx="200" cy="200" r="163" fill="none" stroke="#c9a86a" stroke-opacity="0.28" stroke-width="1"/>
+<g fill="#c9a86a" fill-opacity="0.45"><circle cx="242.2" cy="42.6" r="2.6"/><circle cx="315.3" cy="84.7" r="2.6"/><circle cx="357.4" cy="157.8" r="2.6"/><circle cx="357.4" cy="242.2" r="2.6"/><circle cx="315.3" cy="315.3" r="2.6"/><circle cx="242.2" cy="357.4" r="2.6"/><circle cx="157.8" cy="357.4" r="2.6"/><circle cx="84.7" cy="315.3" r="2.6"/><circle cx="42.6" cy="242.2" r="2.6"/><circle cx="42.6" cy="157.8" r="2.6"/><circle cx="84.7" cy="84.7" r="2.6"/><circle cx="157.8" cy="42.6" r="2.6"/></g>
+<circle cx="200" cy="140" r="128" fill="url(#glow)"/>
+<circle cx="200" cy="206.7" r="44" fill="url(#hearth)"/>
+<defs><path id="L" d="M178 178C172 158 156 147 154 127M178 178C158 172 139 170 119 168M222 178C228 158 244 147 246 127M222 178C242 172 261 170 281 168"/><path id="T" d="M154 127C157 105 169 95 170 73M154 127C140 113 130 107 114 99M119 168C103 158 90 156 78 144M119 168C101 172 84 185 74 199M246 127C243 105 231 95 230 73M246 127C260 113 270 107 286 99M281 168C297 158 310 156 322 144M281 168C299 172 316 185 326 199"/></defs>
+<g fill="none" stroke="#0d0b0a" stroke-linecap="round"><use href="#L" stroke-width="15"/><use href="#T" stroke-width="12"/></g>
+<g fill="none" stroke="url(#cg)" stroke-linecap="round"><use href="#L" stroke-width="11"/><use href="#T" stroke-width="8"/></g>
+<defs><path id="s0" d="M230 301.5C230 231.5 189 194 178 178"/><path id="s1" d="M170 301.5C170 231.5 211 194 222 178"/></defs>
+<g fill="none">
+<use href="#s0" stroke="#0d0b0a" stroke-width="18.5"/><use href="#s0" stroke="#a8874f" stroke-width="13.5"/>
+<use href="#s0" stroke="#0d0b0a" stroke-opacity=".55" stroke-width="1.2"/>
+<use href="#s1" stroke="#0d0b0a" stroke-width="18.5"/><use href="#s1" stroke="#ecd9ae" stroke-width="13.5"/>
+<use href="#s1" stroke="#0d0b0a" stroke-opacity=".55" stroke-width="1.2"/>
+</g>
+<circle cx="200" cy="206.7" r="20" fill="url(#ht)"/>
+<g fill="url(#cg)" stroke="#0d0b0a" stroke-width="2.4"><circle cx="178" cy="178" r="8.8"/><circle cx="154" cy="127" r="7"/><circle cx="119" cy="168" r="7"/><circle cx="222" cy="178" r="8.8"/><circle cx="246" cy="127" r="7"/><circle cx="281" cy="168" r="7"/></g>
+<g fill="none" stroke="#0d0b0a" stroke-opacity=".5" stroke-width=".8"><circle cx="178" cy="178" r="4.8"/><circle cx="154" cy="127" r="3.9"/><circle cx="119" cy="168" r="3.9"/><circle cx="222" cy="178" r="4.8"/><circle cx="246" cy="127" r="3.9"/><circle cx="281" cy="168" r="3.9"/></g>
+<g fill="url(#sg)"><circle cx="170" cy="73" r="39.1"/><circle cx="114" cy="99" r="34.9"/><circle cx="78" cy="144" r="31.4"/><circle cx="74" cy="199" r="28.9"/><circle cx="230" cy="73" r="39.1"/><circle cx="286" cy="99" r="34.9"/><circle cx="322" cy="144" r="31.4"/><circle cx="326" cy="199" r="28.9"/></g>
+<defs><path id="a0" d="M0 26L-3.1 19.9L-3.1 -19.9L0 -26L3.1 -19.9L3.1 19.9ZM-18.4 18.4L-16.3 11.9L11.9 -16.3L18.4 -18.4L16.3 -11.9L-11.9 16.3ZM-26 0L-19.9 -3.1L19.9 -3.1L26 0L19.9 3.1L-19.9 3.1ZM-18.4 -18.4L-11.9 -16.3L16.3 11.9L18.4 18.4L11.9 16.3L-16.3 -11.9Z" fill="#f6ead0"/><path id="a1" d="M0 23L-2.9 17.2L-2.9 -17.2L0 -23L2.9 -17.2L2.9 17.2ZM-16.3 16.3L-14.2 10.1L10.1 -14.2L16.3 -16.3L14.2 -10.1L-10.1 14.2ZM-23 0L-17.2 -2.9L17.2 -2.9L23 0L17.2 2.9L-17.2 2.9ZM-16.3 -16.3L-10.1 -14.2L14.2 10.1L16.3 16.3L10.1 14.2L-14.2 -10.1Z" fill="#ecd9ae"/><path id="a2" d="M0 20.7L-2.8 15.2L-2.8 -15.2L0 -20.7L2.8 -15.2L2.8 15.2ZM-14.7 14.7L-12.6 8.7L8.7 -12.6L14.7 -14.7L12.6 -8.7L-8.7 12.6ZM-20.7 0L-15.2 -2.8L15.2 -2.8L20.7 0L15.2 2.8L-15.2 2.8ZM-14.7 -14.7L-8.7 -12.6L12.6 8.7L14.7 14.7L8.7 12.6L-12.6 -8.7Z" fill="#dcc290"/><path id="a3" d="M0 19L-2.7 13.6L-2.7 -13.6L0 -19L2.7 -13.6L2.7 13.6ZM-13.4 13.4L-11.5 7.7L7.7 -11.5L13.4 -13.4L11.5 -7.7L-7.7 11.5ZM-19 0L-13.6 -2.7L13.6 -2.7L19 0L13.6 2.7L-13.6 2.7ZM-13.4 -13.4L-7.7 -11.5L11.5 7.7L13.4 13.4L7.7 11.5L-11.5 -7.7Z" fill="#cfae70"/></defs>
+<g stroke="#0d0b0a" stroke-width="4" stroke-linejoin="round" paint-order="stroke"><use href="#a0" x="170" y="73"/><use href="#a0" x="230" y="73"/><use href="#a1" x="114" y="99"/><use href="#a1" x="286" y="99"/><use href="#a2" x="78" y="144"/><use href="#a2" x="322" y="144"/><use href="#a3" x="74" y="199"/><use href="#a3" x="326" y="199"/></g>
+<defs><path id="w0" d="M83 294.7c4 0.4 8 1.8 12 3.3c5 1.8 10 3.5 15 3.5c5 0 10-1.7 15-3.5c5-1.8 10-3.5 15-3.5c5 0 10 1.7 15 3.5c5 1.8 10 3.5 15 3.5c5 0 10-1.7 15-3.5c5-1.8 10-3.5 15-3.5c5 0 10 1.7 15 3.5c5 1.8 10 3.5 15 3.5c5 0 10-1.7 15-3.5c5-1.8 10-3.5 15-3.5c5 0 10 1.7 15 3.5c5 1.8 10 3.5 15 3.5c5 0 10-1.7 15-3.5c4-1.5 8-2.9 12-3.3"/><path id="w1" d="M98 312.9c4-1.4 8-2.4 12-2.4c5 0 10 1.7 15 3.5c5 1.8 10 3.5 15 3.5c5 0 10-1.7 15-3.5c5-1.8 10-3.5 15-3.5c5 0 10 1.7 15 3.5c5 1.8 10 3.5 15 3.5c5 0 10-1.7 15-3.5c5-1.8 10-3.5 15-3.5c5 0 10 1.7 15 3.5c5 1.8 10 3.5 15 3.5c5 0 10-1.7 15-3.5c5-1.8 10-3.5 15-3.5c4 0 8 1 12 2.4"/><path id="w2" d="M114 333.2c3.7-0.5 7.3-1.9 11-3.2c5-1.8 10-3.5 15-3.5c5 0 10 1.7 15 3.5c5 1.8 10 3.5 15 3.5c5 0 10-1.7 15-3.5c5-1.8 10-3.5 15-3.5c5 0 10 1.7 15 3.5c5 1.8 10 3.5 15 3.5c5 0 10-1.7 15-3.5c5-1.8 10-3.5 15-3.5c5 0 10 1.7 15 3.5c3.7 1.3 7.3 2.7 11 3.2"/></defs>
+<g fill="none" stroke-linecap="round"><use href="#w0" stroke="#0d0b0a" stroke-width="11.5"/><use href="#w0" stroke="#ecd9ae" stroke-width="7"/><use href="#w1" stroke="#0d0b0a" stroke-width="11.5"/><use href="#w1" stroke="#c9a86a" stroke-width="7"/><use href="#w2" stroke="#0d0b0a" stroke-width="11.5"/><use href="#w2" stroke="#a8874f" stroke-width="7"/></g>
+</svg>

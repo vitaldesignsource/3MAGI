@@ -1,0 +1,2000 @@
+{
+ "slug": "theban",
+ "plates": [
+  {
+   "file": "theban-1518-wellcome-table.png",
+   "table": "Theban alphabet ('aliud alphabetum Honorij cognomento Thebani'), Trithemius, Polygraphia, Book VI, 1518 - Wellcome copy",
+   "layout": "3 rows of 8 signs, read left to right; each Latin label is printed in red ABOVE its black sign (two-colour printing). Labels are lowercase blackletter.",
+   "letters": [
+    {
+     "position": 1,
+     "row": 1,
+     "column_from_left": 1,
+     "label_as_printed": "a",
+     "value": "A",
+     "label_placement": "above, red"
+    },
+    {
+     "position": 2,
+     "row": 1,
+     "column_from_left": 2,
+     "label_as_printed": "b",
+     "value": "B",
+     "label_placement": "above, red"
+    },
+    {
+     "position": 3,
+     "row": 1,
+     "column_from_left": 3,
+     "label_as_printed": "c",
+     "value": "C",
+     "label_placement": "above, red"
+    },
+    {
+     "position": 4,
+     "row": 1,
+     "column_from_left": 4,
+     "label_as_printed": "d",
+     "value": "D",
+     "label_placement": "above, red"
+    },
+    {
+     "position": 5,
+     "row": 1,
+     "column_from_left": 5,
+     "label_as_printed": "e",
+     "value": "E",
+     "label_placement": "above, red"
+    },
+    {
+     "position": 6,
+     "row": 1,
+     "column_from_left": 6,
+     "label_as_printed": "f",
+     "value": "F",
+     "label_placement": "above, red"
+    },
+    {
+     "position": 7,
+     "row": 1,
+     "column_from_left": 7,
+     "label_as_printed": "g",
+     "value": "G",
+     "label_placement": "above, red"
+    },
+    {
+     "position": 8,
+     "row": 1,
+     "column_from_left": 8,
+     "label_as_printed": "h",
+     "value": "H",
+     "label_placement": "above, red"
+    },
+    {
+     "position": 9,
+     "row": 2,
+     "column_from_left": 1,
+     "label_as_printed": "i",
+     "value": "I",
+     "label_placement": "above, red"
+    },
+    {
+     "position": 10,
+     "row": 2,
+     "column_from_left": 2,
+     "label_as_printed": "k",
+     "value": "K",
+     "label_placement": "above, red"
+    },
+    {
+     "position": 11,
+     "row": 2,
+     "column_from_left": 3,
+     "label_as_printed": "l",
+     "value": "L",
+     "label_placement": "above, red"
+    },
+    {
+     "position": 12,
+     "row": 2,
+     "column_from_left": 4,
+     "label_as_printed": "m",
+     "value": "M",
+     "label_placement": "above, red"
+    },
+    {
+     "position": 13,
+     "row": 2,
+     "column_from_left": 5,
+     "label_as_printed": "n",
+     "value": "N",
+     "label_placement": "above, red"
+    },
+    {
+     "position": 14,
+     "row": 2,
+     "column_from_left": 6,
+     "label_as_printed": "o",
+     "value": "O",
+     "label_placement": "above, red"
+    },
+    {
+     "position": 15,
+     "row": 2,
+     "column_from_left": 7,
+     "label_as_printed": "p",
+     "value": "P",
+     "label_placement": "above, red"
+    },
+    {
+     "position": 16,
+     "row": 2,
+     "column_from_left": 8,
+     "label_as_printed": "q",
+     "value": "Q",
+     "label_placement": "above, red"
+    },
+    {
+     "position": 17,
+     "row": 3,
+     "column_from_left": 1,
+     "label_as_printed": "r",
+     "value": "R",
+     "label_placement": "above, red"
+    },
+    {
+     "position": 18,
+     "row": 3,
+     "column_from_left": 2,
+     "label_as_printed": "s",
+     "value": "S",
+     "label_placement": "above, red"
+    },
+    {
+     "position": 19,
+     "row": 3,
+     "column_from_left": 3,
+     "label_as_printed": "t",
+     "value": "T",
+     "label_placement": "above, red"
+    },
+    {
+     "position": 20,
+     "row": 3,
+     "column_from_left": 4,
+     "label_as_printed": "v",
+     "value": "V",
+     "label_placement": "above, red"
+    },
+    {
+     "position": 21,
+     "row": 3,
+     "column_from_left": 5,
+     "label_as_printed": "x",
+     "value": "X",
+     "label_placement": "above, red"
+    },
+    {
+     "position": 22,
+     "row": 3,
+     "column_from_left": 6,
+     "label_as_printed": "y",
+     "value": "Y",
+     "label_placement": "above, red"
+    },
+    {
+     "position": 23,
+     "row": 3,
+     "column_from_left": 7,
+     "label_as_printed": "z",
+     "value": "Z",
+     "label_placement": "above, red"
+    },
+    {
+     "position": 24,
+     "row": 3,
+     "column_from_left": 8,
+     "label_as_printed": "w",
+     "value": "W as labelled (the final sign; read later as end-mark, Omega or &)",
+     "label_placement": "above, red"
+    }
+   ],
+   "source": {
+    "work": "Polygraphiae libri sex Ioannis Trithemii abbatis Peapolitani quondam Spanheimensis, ad Maximilianum Caesarem",
+    "author": "Johannes Trithemius (1462-1516)",
+    "edition": "First printed edition (VD16 T 1994; Proctor-Isaac 14325). Collation per LoC: a-b6 A8 B-Z6 2a-m6 n8 o-r6 A6 B-C4 (b6 and 2r6 blank); the last three gatherings are the Clavis polygraphiae.",
+    "date": "July 1518 (LoC transcribes the colophon, leaf C4v: 'anno a Christo nato MDXVIII men. Iulio')",
+    "place": "[Basel] (LoC: place from VD16; Wellcome: '[Basle]'). Oppenheim in older repertories; not settled by these pages.",
+    "printer": "Printed for (LoC: 'Impressum ductu') Johannes Haselberg de Aia, bookseller; Wellcome attributes the presswork to Adam Petri ('A. Petri for J. Haselberger de Aia')",
+    "copy": "Wellcome Collection, London, shelfmark EPB/D/6367.2 (Copy 1; signature of Nicolaus Mocenicus 1533 on title page; bound with his Clavis polygraphiae, 1518, per the MARC note; archive.org also holds a Wellcome 'Clavis polygraphiae' 1518, b33550621, not checked); Wellcome cat. of printed books 6363",
+    "repository": "Internet Archive (Wellcome Library digitisation, scanned 2026)",
+    "identifier": "b33552137 (ark:/13960/s2zf0rdgmgj; OCLC 1606268059)",
+    "image_index": "archive.org BookReader page n505 (0-based display index) = image file b33552137_0506.jp2 = IIIF index $506 (the scan has a leading colour card, so the display index is one less than the file index). Heading on the recto: n504 = _0505.",
+    "printed_locator": "Liber VI (unpaginated), sig. 2q5v (second lower-case alphabet), head of the page; the introducing sentence 'Sequitur aliud alphabetum Honorij cognomento Thebani ...' stands at the foot of the recto, 2q5r. Signatures read on the page images: 'p iiij' (_0491), 'q' (_0497), 'q ij' (_0499), 'q iij' (_0501), 'q iiij' (_0503); q5 and q6 unsigned; the next gathering is signed 'r' on _0509, so 2q is a six-leaf gathering (_0497-_0508) and _0505/_0506 are q5r/q5v. Book VI is named on q4r (_0503), two leaves before the table: 'Praeter illud quod in principio huius libri sexti posuimus alphabetum Nortmannorum ...'.",
+    "page_url": "https://archive.org/details/b33552137/page/n505/mode/1up",
+    "image_url": "https://iiif.archive.org/iiif/b33552137$506/full/full/0/default.jpg (3328x4559; identical in size and content to https://archive.org/download/b33552137/b33552137_jp2.zip/b33552137_jp2%2Fb33552137_0506.jp2, which the crop was cut from: geometry 1940x730+1020+610)",
+    "rights": "archive.org item rights field: 'This work is available under the Creative Commons, Public Domain Mark' (http://creativecommons.org/publicdomain/mark/1.0/); notes field: 'No copyright information present.'; contributor/sponsor Wellcome Library."
+   }
+  },
+  {
+   "file": "theban-1518-loc-table.png",
+   "table": "Theban alphabet, Trithemius, Polygraphia, Book VI, 1518 - Library of Congress copy 2 (Fabyan)",
+   "layout": "Same setting as the Wellcome copy: 3 rows of 8, red lowercase blackletter labels above black signs. The red sits in a slightly different place relative to the black than in the Wellcome copy (separate red pass).",
+   "letters": [
+    {
+     "position": 1,
+     "row": 1,
+     "column_from_left": 1,
+     "label_as_printed": "a",
+     "value": "A",
+     "label_placement": "above, red"
+    },
+    {
+     "position": 2,
+     "row": 1,
+     "column_from_left": 2,
+     "label_as_printed": "b",
+     "value": "B",
+     "label_placement": "above, red"
+    },
+    {
+     "position": 3,
+     "row": 1,
+     "column_from_left": 3,
+     "label_as_printed": "c",
+     "value": "C",
+     "label_placement": "above, red"
+    },
+    {
+     "position": 4,
+     "row": 1,
+     "column_from_left": 4,
+     "label_as_printed": "d",
+     "value": "D",
+     "label_placement": "above, red"
+    },
+    {
+     "position": 5,
+     "row": 1,
+     "column_from_left": 5,
+     "label_as_printed": "e",
+     "value": "E",
+     "label_placement": "above, red"
+    },
+    {
+     "position": 6,
+     "row": 1,
+     "column_from_left": 6,
+     "label_as_printed": "f",
+     "value": "F",
+     "label_placement": "above, red"
+    },
+    {
+     "position": 7,
+     "row": 1,
+     "column_from_left": 7,
+     "label_as_printed": "g",
+     "value": "G",
+     "label_placement": "above, red"
+    },
+    {
+     "position": 8,
+     "row": 1,
+     "column_from_left": 8,
+     "label_as_printed": "h",
+     "value": "H",
+     "label_placement": "above, red"
+    },
+    {
+     "position": 9,
+     "row": 2,
+     "column_from_left": 1,
+     "label_as_printed": "i",
+     "value": "I",
+     "label_placement": "above, red"
+    },
+    {
+     "position": 10,
+     "row": 2,
+     "column_from_left": 2,
+     "label_as_printed": "k",
+     "value": "K",
+     "label_placement": "above, red"
+    },
+    {
+     "position": 11,
+     "row": 2,
+     "column_from_left": 3,
+     "label_as_printed": "l",
+     "value": "L",
+     "label_placement": "above, red"
+    },
+    {
+     "position": 12,
+     "row": 2,
+     "column_from_left": 4,
+     "label_as_printed": "m",
+     "value": "M",
+     "label_placement": "above, red"
+    },
+    {
+     "position": 13,
+     "row": 2,
+     "column_from_left": 5,
+     "label_as_printed": "n",
+     "value": "N",
+     "label_placement": "above, red"
+    },
+    {
+     "position": 14,
+     "row": 2,
+     "column_from_left": 6,
+     "label_as_printed": "o",
+     "value": "O",
+     "label_placement": "above, red"
+    },
+    {
+     "position": 15,
+     "row": 2,
+     "column_from_left": 7,
+     "label_as_printed": "p",
+     "value": "P",
+     "label_placement": "above, red"
+    },
+    {
+     "position": 16,
+     "row": 2,
+     "column_from_left": 8,
+     "label_as_printed": "q",
+     "value": "Q",
+     "label_placement": "above, red"
+    },
+    {
+     "position": 17,
+     "row": 3,
+     "column_from_left": 1,
+     "label_as_printed": "r",
+     "value": "R",
+     "label_placement": "above, red"
+    },
+    {
+     "position": 18,
+     "row": 3,
+     "column_from_left": 2,
+     "label_as_printed": "s",
+     "value": "S",
+     "label_placement": "above, red"
+    },
+    {
+     "position": 19,
+     "row": 3,
+     "column_from_left": 3,
+     "label_as_printed": "t",
+     "value": "T",
+     "label_placement": "above, red"
+    },
+    {
+     "position": 20,
+     "row": 3,
+     "column_from_left": 4,
+     "label_as_printed": "v",
+     "value": "V",
+     "label_placement": "above, red"
+    },
+    {
+     "position": 21,
+     "row": 3,
+     "column_from_left": 5,
+     "label_as_printed": "x",
+     "value": "X",
+     "label_placement": "above, red"
+    },
+    {
+     "position": 22,
+     "row": 3,
+     "column_from_left": 6,
+     "label_as_printed": "y",
+     "value": "Y",
+     "label_placement": "above, red"
+    },
+    {
+     "position": 23,
+     "row": 3,
+     "column_from_left": 7,
+     "label_as_printed": "z",
+     "value": "Z",
+     "label_placement": "above, red"
+    },
+    {
+     "position": 24,
+     "row": 3,
+     "column_from_left": 8,
+     "label_as_printed": "w",
+     "value": "W as labelled (the final sign; read later as end-mark, Omega or &)",
+     "label_placement": "above, red"
+    }
+   ],
+   "source": {
+    "work": "Polygraphiae libri sex Ioannis Trithemii abbatis Peapolitani quondam Spanheimensis, ad Maximilianum Caesarem",
+    "author": "Johannes Trithemius (1462-1516)",
+    "edition": "First printed edition (VD16 T 1994; Proctor-Isaac 14325). Collation per LoC: a-b6 A8 B-Z6 2a-m6 n8 o-r6 A6 B-C4 (b6 and 2r6 blank); the last three gatherings are the Clavis polygraphiae.",
+    "date": "July 1518 (LoC transcribes the colophon, leaf C4v: 'anno a Christo nato MDXVIII men. Iulio')",
+    "place": "[Basel] (LoC: place from VD16; Wellcome: '[Basle]'). Oppenheim in older repertories; not settled by these pages.",
+    "printer": "LoC imprint: '[Basel] : Impressum ductu Ioannis Haselberg de Aia biblipolae, anno a Christo nato MDXVIII men. Iulio [July 1518]'; LoC indexes Haselberg (active 1515-1538) with the role 'printer'. Wellcome attributes the presswork to Adam Petri ('A. Petri for J. Haselberger de Aia').",
+    "copy": "Library of Congress, Rare Book and Special Collections Division, Z103 .T83 1518 Copy 2 (George Fabyan Collection, Fabyan item no. 697); LCCN 32017914. LoC holds three copies; only copy 2 is digitised.",
+    "repository": "Library of Congress (loc.gov / tile.loc.gov)",
+    "identifier": "loc.gov item 32017914; resource rbc.2009fabyan12345 (550 images; former URL rbc0001.2009fabyan12345, to which the handle hdl.loc.gov/loc.rbc/fabyan.17914.1 redirects)",
+    "image_index": "loc.gov sequence 502 (0502.jp2); heading recto = sequence 501",
+    "printed_locator": "Liber VI, sig. 2q5v, head of page (same setting as the Wellcome copy); heading at foot of 2q5r (loc.gov sequence 501). Leaf identification checked in the Wellcome copy (2q signed q, q ij, q iij, q iiij; r1 follows two leaves after q5); LoC records the signatures as '²a-m⁶ n⁸ o-r⁶'.",
+    "page_url": "https://www.loc.gov/resource/rbc.2009fabyan12345/?sp=502",
+    "image_url": "https://tile.loc.gov/storage-services/public/rbc/2009fabyan12345/0502.jp2 (2700x3244 master; crop geometry 1440x580+1090+400)",
+    "rights": "loc.gov item record: 'The Library of Congress is not aware of any U.S. copyright or any other restrictions in the documents in this collection. ...' Credit Line: 'Library of Congress, Rare Book and Special Collections Division'."
+   }
+  },
+  {
+   "file": "theban-1533-loc-table.png",
+   "table": "Theban alphabet, Agrippa, De occulta philosophia, Lib. III cap. XXIX, 1533 - Library of Congress copy",
+   "layout": "2 rows of 12 signs, read left to right; roman capital labels printed BELOW each sign.",
+   "letters": [
+    {
+     "position": 1,
+     "row": 1,
+     "column_from_left": 1,
+     "label_as_printed": "A",
+     "value": "A",
+     "label_placement": "below"
+    },
+    {
+     "position": 2,
+     "row": 1,
+     "column_from_left": 2,
+     "label_as_printed": "B",
+     "value": "B",
+     "label_placement": "below"
+    },
+    {
+     "position": 3,
+     "row": 1,
+     "column_from_left": 3,
+     "label_as_printed": "C",
+     "value": "C",
+     "label_placement": "below"
+    },
+    {
+     "position": 4,
+     "row": 1,
+     "column_from_left": 4,
+     "label_as_printed": "D",
+     "value": "D",
+     "label_placement": "below"
+    },
+    {
+     "position": 5,
+     "row": 1,
+     "column_from_left": 5,
+     "label_as_printed": "E",
+     "value": "E",
+     "label_placement": "below"
+    },
+    {
+     "position": 6,
+     "row": 1,
+     "column_from_left": 6,
+     "label_as_printed": "F",
+     "value": "F",
+     "label_placement": "below"
+    },
+    {
+     "position": 7,
+     "row": 1,
+     "column_from_left": 7,
+     "label_as_printed": "G",
+     "value": "G",
+     "label_placement": "below"
+    },
+    {
+     "position": 8,
+     "row": 1,
+     "column_from_left": 8,
+     "label_as_printed": "H",
+     "value": "H",
+     "label_placement": "below"
+    },
+    {
+     "position": 9,
+     "row": 1,
+     "column_from_left": 9,
+     "label_as_printed": "I",
+     "value": "I",
+     "label_placement": "below"
+    },
+    {
+     "position": 10,
+     "row": 1,
+     "column_from_left": 10,
+     "label_as_printed": "K",
+     "value": "K",
+     "label_placement": "below"
+    },
+    {
+     "position": 11,
+     "row": 1,
+     "column_from_left": 11,
+     "label_as_printed": "L",
+     "value": "L",
+     "label_placement": "below"
+    },
+    {
+     "position": 12,
+     "row": 1,
+     "column_from_left": 12,
+     "label_as_printed": "M",
+     "value": "M",
+     "label_placement": "below"
+    },
+    {
+     "position": 13,
+     "row": 2,
+     "column_from_left": 1,
+     "label_as_printed": "N",
+     "value": "N",
+     "label_placement": "below"
+    },
+    {
+     "position": 14,
+     "row": 2,
+     "column_from_left": 2,
+     "label_as_printed": "O",
+     "value": "O",
+     "label_placement": "below"
+    },
+    {
+     "position": 15,
+     "row": 2,
+     "column_from_left": 3,
+     "label_as_printed": "P",
+     "value": "P",
+     "label_placement": "below"
+    },
+    {
+     "position": 16,
+     "row": 2,
+     "column_from_left": 4,
+     "label_as_printed": "Q",
+     "value": "Q",
+     "label_placement": "below"
+    },
+    {
+     "position": 17,
+     "row": 2,
+     "column_from_left": 5,
+     "label_as_printed": "R",
+     "value": "R",
+     "label_placement": "below"
+    },
+    {
+     "position": 18,
+     "row": 2,
+     "column_from_left": 6,
+     "label_as_printed": "S",
+     "value": "S",
+     "label_placement": "below"
+    },
+    {
+     "position": 19,
+     "row": 2,
+     "column_from_left": 7,
+     "label_as_printed": "T",
+     "value": "T",
+     "label_placement": "below"
+    },
+    {
+     "position": 20,
+     "row": 2,
+     "column_from_left": 8,
+     "label_as_printed": "V",
+     "value": "V",
+     "label_placement": "below"
+    },
+    {
+     "position": 21,
+     "row": 2,
+     "column_from_left": 9,
+     "label_as_printed": "X",
+     "value": "X",
+     "label_placement": "below"
+    },
+    {
+     "position": 22,
+     "row": 2,
+     "column_from_left": 10,
+     "label_as_printed": "Y",
+     "value": "Y",
+     "label_placement": "below"
+    },
+    {
+     "position": 23,
+     "row": 2,
+     "column_from_left": 11,
+     "label_as_printed": "Z",
+     "value": "Z",
+     "label_placement": "below"
+    },
+    {
+     "position": 24,
+     "row": 2,
+     "column_from_left": 12,
+     "label_as_printed": "Ω",
+     "value": "final sign, labelled Omega; carries a small omega at its foot (end-sign; final sign (no separate Latin letter in modern use))",
+     "label_placement": "below"
+    }
+   ],
+   "source": {
+    "work": "De occulta philosophia libri tres",
+    "author": "Heinrich Cornelius Agrippa von Nettesheim (1486-1535)",
+    "edition": "First complete edition (Books I-III), one of the issues dated 1533",
+    "date": "July 1533. Colophon read in the C.G. Jung copy (e-rara canvas 389, image 1343583, p. CCCLXII): 'OCCVLTAE PHILOSOPHIAE Henrici Cornelii Agrippae, Finis Anno M. D. XXXIII. Mense Iulio.' The LoC record's note reads 'Dated at end: Anno MDXXIIII. Mense Iulio.' (sic, a cataloguing slip for MDXXXIII); its imprint is '[Coloniae : s.n., 1533]'.",
+    "place": "[Cologne]",
+    "printer": "Not named by LoC ('s.n.'); McGill's record gives '[Cologne] : [Soter], July 1533' and e-rara '[Köln] : [Soter], [1533]'.",
+    "copy": "Library of Congress, Rare Book and Special Collections Division, BF1598.A3 O4 1533 (LCCN 20007812)",
+    "repository": "Library of Congress. An archive.org item 'DeOccultaPhilosophiaLoc1533' is an individual's upload (uploader not LoC; no contributor or source field), not an LoC deposit.",
+    "identifier": "loc.gov item 20007812; resource rbc.2009gen12345",
+    "image_index": "loc.gov sequence 277 (0277.jp2)",
+    "printed_locator": "Lib. III, 'De characteribus & sigillis spiritu[um]. Caput XXIX' (chapter opens on p. CCLXXII [z2v], seen in the McGill and Jung copies); the table heads p. CCLXXIII (misprinted 'CCXLXXIII' in this setting), sig. z3r ('z iii')",
+    "page_url": "https://www.loc.gov/resource/rbc.2009gen12345/?sp=277",
+    "image_url": "https://tile.loc.gov/storage-services/public/rbc/2009gen12345/0277.jp2 (3344x4622; crop geometry 2100x690+330+1120)",
+    "rights": "loc.gov item record: 'The Library of Congress is not aware of any U.S. copyright or any other restrictions in the documents in this collection. ...' Credit Line: 'Library of Congress, Rare Book and Special Collections Division'. (The archive.org upload DeOccultaPhilosophiaLoc1533 carries licenseurl http://creativecommons.org/publicdomain/mark/1.0/, set by its uploader, not by LoC.)"
+   }
+  },
+  {
+   "file": "theban-1533-mcgill-table.png",
+   "table": "Theban alphabet, Agrippa, De occulta philosophia, Lib. III cap. XXIX, 1533 - McGill (Osler) copy",
+   "layout": "2 rows of 12 signs; roman capital labels below. NO 'K' label: a small dot stands in the gap between I and L. Small inked dots also appear after V and before the Omega (raised spacing material).",
+   "letters": [
+    {
+     "position": 1,
+     "row": 1,
+     "column_from_left": 1,
+     "label_as_printed": "A",
+     "value": "A",
+     "label_placement": "below"
+    },
+    {
+     "position": 2,
+     "row": 1,
+     "column_from_left": 2,
+     "label_as_printed": "B",
+     "value": "B",
+     "label_placement": "below"
+    },
+    {
+     "position": 3,
+     "row": 1,
+     "column_from_left": 3,
+     "label_as_printed": "C",
+     "value": "C",
+     "label_placement": "below"
+    },
+    {
+     "position": 4,
+     "row": 1,
+     "column_from_left": 4,
+     "label_as_printed": "D",
+     "value": "D",
+     "label_placement": "below"
+    },
+    {
+     "position": 5,
+     "row": 1,
+     "column_from_left": 5,
+     "label_as_printed": "E",
+     "value": "E",
+     "label_placement": "below"
+    },
+    {
+     "position": 6,
+     "row": 1,
+     "column_from_left": 6,
+     "label_as_printed": "F",
+     "value": "F",
+     "label_placement": "below"
+    },
+    {
+     "position": 7,
+     "row": 1,
+     "column_from_left": 7,
+     "label_as_printed": "G",
+     "value": "G",
+     "label_placement": "below"
+    },
+    {
+     "position": 8,
+     "row": 1,
+     "column_from_left": 8,
+     "label_as_printed": "H",
+     "value": "H",
+     "label_placement": "below"
+    },
+    {
+     "position": 9,
+     "row": 1,
+     "column_from_left": 9,
+     "label_as_printed": "I",
+     "value": "I",
+     "label_placement": "below"
+    },
+    {
+     "position": 10,
+     "row": 1,
+     "column_from_left": 10,
+     "label_as_printed": "(none - a small dot stands between I and L where K is printed in other copies)",
+     "value": "K",
+     "label_placement": "below"
+    },
+    {
+     "position": 11,
+     "row": 1,
+     "column_from_left": 11,
+     "label_as_printed": "L",
+     "value": "L",
+     "label_placement": "below"
+    },
+    {
+     "position": 12,
+     "row": 1,
+     "column_from_left": 12,
+     "label_as_printed": "M",
+     "value": "M",
+     "label_placement": "below"
+    },
+    {
+     "position": 13,
+     "row": 2,
+     "column_from_left": 1,
+     "label_as_printed": "N",
+     "value": "N",
+     "label_placement": "below"
+    },
+    {
+     "position": 14,
+     "row": 2,
+     "column_from_left": 2,
+     "label_as_printed": "O",
+     "value": "O",
+     "label_placement": "below"
+    },
+    {
+     "position": 15,
+     "row": 2,
+     "column_from_left": 3,
+     "label_as_printed": "P",
+     "value": "P",
+     "label_placement": "below"
+    },
+    {
+     "position": 16,
+     "row": 2,
+     "column_from_left": 4,
+     "label_as_printed": "Q",
+     "value": "Q",
+     "label_placement": "below"
+    },
+    {
+     "position": 17,
+     "row": 2,
+     "column_from_left": 5,
+     "label_as_printed": "R",
+     "value": "R",
+     "label_placement": "below"
+    },
+    {
+     "position": 18,
+     "row": 2,
+     "column_from_left": 6,
+     "label_as_printed": "S",
+     "value": "S",
+     "label_placement": "below"
+    },
+    {
+     "position": 19,
+     "row": 2,
+     "column_from_left": 7,
+     "label_as_printed": "T",
+     "value": "T",
+     "label_placement": "below"
+    },
+    {
+     "position": 20,
+     "row": 2,
+     "column_from_left": 8,
+     "label_as_printed": "V",
+     "value": "V",
+     "label_placement": "below"
+    },
+    {
+     "position": 21,
+     "row": 2,
+     "column_from_left": 9,
+     "label_as_printed": "X",
+     "value": "X",
+     "label_placement": "below"
+    },
+    {
+     "position": 22,
+     "row": 2,
+     "column_from_left": 10,
+     "label_as_printed": "Y",
+     "value": "Y",
+     "label_placement": "below"
+    },
+    {
+     "position": 23,
+     "row": 2,
+     "column_from_left": 11,
+     "label_as_printed": "Z",
+     "value": "Z",
+     "label_placement": "below"
+    },
+    {
+     "position": 24,
+     "row": 2,
+     "column_from_left": 12,
+     "label_as_printed": "Ω",
+     "value": "final sign, labelled Omega; carries a small omega at its foot (end-sign; final sign (no separate Latin letter in modern use))",
+     "label_placement": "below"
+    }
+   ],
+   "source": {
+    "work": "De occulta philosophia libri tres",
+    "author": "Heinrich Cornelius Agrippa von Nettesheim (1486-1535)",
+    "edition": "First complete edition (Books I-III), one of the issues dated 1533",
+    "date": "July 1533. Colophon read in the C.G. Jung copy (e-rara canvas 389, image 1343583, p. CCCLXII): 'OCCVLTAE PHILOSOPHIAE Henrici Cornelii Agrippae, Finis Anno M. D. XXXIII. Mense Iulio.'",
+    "place": "[Cologne]",
+    "printer": "[Johannes Soter]: McGill record '[Cologne] : [Soter], July 1533' (imprint from Mansell, date from colophon); its note calls the copy 'one of variant printings, not authoritatively identified' and 'a thick-paper copy'.",
+    "copy": "McGill University Library, Osler Library of the History of Medicine, Bibliotheca Osleriana no. 1746; shelfmark not given in the archive.org record (identifier contains 'folioA279o1533')",
+    "repository": "Internet Archive (McGill University Library digitisation)",
+    "identifier": "McGillLibrary-osl_henrici-cornelii-agrippae_folioA279o1533-19978",
+    "image_index": "archive.org BookReader page n288 = IIIF index $288 (no offset in this item: n287 shows p. CCLXXII, n288 p. CCLXXIII)",
+    "printed_locator": "Lib. III, Caput XXIX (opens p. CCLXXII [z2v]); table at head of p. CCLXXIII (misprinted 'CCXLXXIII'), sig. z3r",
+    "page_url": "https://archive.org/details/McGillLibrary-osl_henrici-cornelii-agrippae_folioA279o1533-19978/page/n288/mode/1up",
+    "image_url": "https://iiif.archive.org/iiif/McGillLibrary-osl_henrici-cornelii-agrippae_folioA279o1533-19978$288/full/full/0/default.jpg (5560x8111; crop geometry 3280x1070+250+2170)",
+    "rights": "No rights or licence field in the archive.org item metadata (contributor McGill University Library; uploader digitization.library@mcgill.ca). McGill's own terms were not checked."
+   }
+  },
+  {
+   "file": "theban-1533-jung-table.png",
+   "table": "Theban alphabet, Agrippa, De occulta philosophia, Lib. III cap. XXIX, 1533 - C.G. Jung copy (e-rara)",
+   "layout": "2 rows of 12 signs; roman labels below; the K label is a LOWER-CASE 'k' in this setting (setting B, page correctly numbered CCLXXIII).",
+   "letters": [
+    {
+     "position": 1,
+     "row": 1,
+     "column_from_left": 1,
+     "label_as_printed": "A",
+     "value": "A",
+     "label_placement": "below"
+    },
+    {
+     "position": 2,
+     "row": 1,
+     "column_from_left": 2,
+     "label_as_printed": "B",
+     "value": "B",
+     "label_placement": "below"
+    },
+    {
+     "position": 3,
+     "row": 1,
+     "column_from_left": 3,
+     "label_as_printed": "C",
+     "value": "C",
+     "label_placement": "below"
+    },
+    {
+     "position": 4,
+     "row": 1,
+     "column_from_left": 4,
+     "label_as_printed": "D",
+     "value": "D",
+     "label_placement": "below"
+    },
+    {
+     "position": 5,
+     "row": 1,
+     "column_from_left": 5,
+     "label_as_printed": "E",
+     "value": "E",
+     "label_placement": "below"
+    },
+    {
+     "position": 6,
+     "row": 1,
+     "column_from_left": 6,
+     "label_as_printed": "F",
+     "value": "F",
+     "label_placement": "below"
+    },
+    {
+     "position": 7,
+     "row": 1,
+     "column_from_left": 7,
+     "label_as_printed": "G",
+     "value": "G",
+     "label_placement": "below"
+    },
+    {
+     "position": 8,
+     "row": 1,
+     "column_from_left": 8,
+     "label_as_printed": "H",
+     "value": "H",
+     "label_placement": "below"
+    },
+    {
+     "position": 9,
+     "row": 1,
+     "column_from_left": 9,
+     "label_as_printed": "I",
+     "value": "I",
+     "label_placement": "below"
+    },
+    {
+     "position": 10,
+     "row": 1,
+     "column_from_left": 10,
+     "label_as_printed": "k",
+     "value": "K",
+     "label_placement": "below"
+    },
+    {
+     "position": 11,
+     "row": 1,
+     "column_from_left": 11,
+     "label_as_printed": "L",
+     "value": "L",
+     "label_placement": "below"
+    },
+    {
+     "position": 12,
+     "row": 1,
+     "column_from_left": 12,
+     "label_as_printed": "M",
+     "value": "M",
+     "label_placement": "below"
+    },
+    {
+     "position": 13,
+     "row": 2,
+     "column_from_left": 1,
+     "label_as_printed": "N",
+     "value": "N",
+     "label_placement": "below"
+    },
+    {
+     "position": 14,
+     "row": 2,
+     "column_from_left": 2,
+     "label_as_printed": "O",
+     "value": "O",
+     "label_placement": "below"
+    },
+    {
+     "position": 15,
+     "row": 2,
+     "column_from_left": 3,
+     "label_as_printed": "P",
+     "value": "P",
+     "label_placement": "below"
+    },
+    {
+     "position": 16,
+     "row": 2,
+     "column_from_left": 4,
+     "label_as_printed": "Q",
+     "value": "Q",
+     "label_placement": "below"
+    },
+    {
+     "position": 17,
+     "row": 2,
+     "column_from_left": 5,
+     "label_as_printed": "R",
+     "value": "R",
+     "label_placement": "below"
+    },
+    {
+     "position": 18,
+     "row": 2,
+     "column_from_left": 6,
+     "label_as_printed": "S",
+     "value": "S",
+     "label_placement": "below"
+    },
+    {
+     "position": 19,
+     "row": 2,
+     "column_from_left": 7,
+     "label_as_printed": "T",
+     "value": "T",
+     "label_placement": "below"
+    },
+    {
+     "position": 20,
+     "row": 2,
+     "column_from_left": 8,
+     "label_as_printed": "V",
+     "value": "V",
+     "label_placement": "below"
+    },
+    {
+     "position": 21,
+     "row": 2,
+     "column_from_left": 9,
+     "label_as_printed": "X",
+     "value": "X",
+     "label_placement": "below"
+    },
+    {
+     "position": 22,
+     "row": 2,
+     "column_from_left": 10,
+     "label_as_printed": "Y",
+     "value": "Y",
+     "label_placement": "below"
+    },
+    {
+     "position": 23,
+     "row": 2,
+     "column_from_left": 11,
+     "label_as_printed": "Z",
+     "value": "Z",
+     "label_placement": "below"
+    },
+    {
+     "position": 24,
+     "row": 2,
+     "column_from_left": 12,
+     "label_as_printed": "Ω",
+     "value": "final sign, labelled Omega; carries a small omega at its foot (end-sign; final sign (no separate Latin letter in modern use))",
+     "label_placement": "below"
+    }
+   ],
+   "source": {
+    "work": "De occulta philosophia libri tres",
+    "author": "Heinrich Cornelius Agrippa von Nettesheim (1486-1535)",
+    "edition": "First complete edition (Books I-III), one of the issues dated 1533",
+    "date": "July 1533. Colophon read in the C.G. Jung copy (e-rara canvas 389, image 1343583, p. CCCLXII): 'OCCVLTAE PHILOSOPHIAE Henrici Cornelii Agrippae, Finis Anno M. D. XXXIII. Mense Iulio.'",
+    "place": "[Cologne]",
+    "printer": "[Johannes Soter]: e-rara imprint '[Köln] : [Soter], [1533]'.",
+    "copy": "Stiftung der Werke von C.G. Jung, Zurich (C.G. Jung's library); no shelfmark published",
+    "repository": "e-rara.ch (DOI 10.3931/e-rara-4309; VD16 ZV 269)",
+    "identifier": "e-rara record 1343192; page image 1343489",
+    "image_index": "e-rara canvas 295 of 393 (label 'CCLXXIII'); p. CCLXXII = canvas 294 (image 1343488)",
+    "printed_locator": "Lib. III, Caput XXIX (opens p. CCLXXII [z2v]); table at head of p. CCLXXIII, sig. z3r",
+    "page_url": "https://www.e-rara.ch/cgj/content/pageview/1343489",
+    "image_url": "https://www.e-rara.ch/i3f/v21/1343489/full/full/0/default.jpg (2550x3675; crop geometry 1650x555+280+755)",
+    "rights": "e-rara IIIF manifest licence https://creativecommons.org/publicdomain/mark/1.0/deed.de (Public Domain Mark 1.0); attribution 'e-rara, the platform for digitized rare books from Swiss institutions'."
+   }
+  },
+  {
+   "file": "theban-1651-wellcome-table.png",
+   "table": "Theban alphabet, Agrippa (English 1651), Book III chap. XXIX - Wellcome copy",
+   "layout": "3 rows of 9, 9 and 6 signs, read left to right; roman capital labels below; catchword 'CHAP.' at bottom right is included in the crop (not part of the table).",
+   "letters": [
+    {
+     "position": 1,
+     "row": 1,
+     "column_from_left": 1,
+     "label_as_printed": "A",
+     "value": "A",
+     "label_placement": "below"
+    },
+    {
+     "position": 2,
+     "row": 1,
+     "column_from_left": 2,
+     "label_as_printed": "B",
+     "value": "B",
+     "label_placement": "below"
+    },
+    {
+     "position": 3,
+     "row": 1,
+     "column_from_left": 3,
+     "label_as_printed": "C",
+     "value": "C",
+     "label_placement": "below"
+    },
+    {
+     "position": 4,
+     "row": 1,
+     "column_from_left": 4,
+     "label_as_printed": "D",
+     "value": "D",
+     "label_placement": "below"
+    },
+    {
+     "position": 5,
+     "row": 1,
+     "column_from_left": 5,
+     "label_as_printed": "E",
+     "value": "E",
+     "label_placement": "below"
+    },
+    {
+     "position": 6,
+     "row": 1,
+     "column_from_left": 6,
+     "label_as_printed": "F",
+     "value": "F",
+     "label_placement": "below"
+    },
+    {
+     "position": 7,
+     "row": 1,
+     "column_from_left": 7,
+     "label_as_printed": "G",
+     "value": "G",
+     "label_placement": "below"
+    },
+    {
+     "position": 8,
+     "row": 1,
+     "column_from_left": 8,
+     "label_as_printed": "H",
+     "value": "H",
+     "label_placement": "below"
+    },
+    {
+     "position": 9,
+     "row": 1,
+     "column_from_left": 9,
+     "label_as_printed": "I",
+     "value": "I",
+     "label_placement": "below"
+    },
+    {
+     "position": 10,
+     "row": 2,
+     "column_from_left": 1,
+     "label_as_printed": "K",
+     "value": "K",
+     "label_placement": "below"
+    },
+    {
+     "position": 11,
+     "row": 2,
+     "column_from_left": 2,
+     "label_as_printed": "L",
+     "value": "L",
+     "label_placement": "below"
+    },
+    {
+     "position": 12,
+     "row": 2,
+     "column_from_left": 3,
+     "label_as_printed": "M",
+     "value": "M",
+     "label_placement": "below"
+    },
+    {
+     "position": 13,
+     "row": 2,
+     "column_from_left": 4,
+     "label_as_printed": "N",
+     "value": "N",
+     "label_placement": "below"
+    },
+    {
+     "position": 14,
+     "row": 2,
+     "column_from_left": 5,
+     "label_as_printed": "O",
+     "value": "O",
+     "label_placement": "below"
+    },
+    {
+     "position": 15,
+     "row": 2,
+     "column_from_left": 6,
+     "label_as_printed": "P",
+     "value": "P",
+     "label_placement": "below"
+    },
+    {
+     "position": 16,
+     "row": 2,
+     "column_from_left": 7,
+     "label_as_printed": "Q",
+     "value": "Q",
+     "label_placement": "below"
+    },
+    {
+     "position": 17,
+     "row": 2,
+     "column_from_left": 8,
+     "label_as_printed": "R",
+     "value": "R",
+     "label_placement": "below"
+    },
+    {
+     "position": 18,
+     "row": 2,
+     "column_from_left": 9,
+     "label_as_printed": "S",
+     "value": "S",
+     "label_placement": "below"
+    },
+    {
+     "position": 19,
+     "row": 3,
+     "column_from_left": 1,
+     "label_as_printed": "T",
+     "value": "T",
+     "label_placement": "below"
+    },
+    {
+     "position": 20,
+     "row": 3,
+     "column_from_left": 2,
+     "label_as_printed": "V",
+     "value": "V",
+     "label_placement": "below"
+    },
+    {
+     "position": 21,
+     "row": 3,
+     "column_from_left": 3,
+     "label_as_printed": "X",
+     "value": "X",
+     "label_placement": "below"
+    },
+    {
+     "position": 22,
+     "row": 3,
+     "column_from_left": 4,
+     "label_as_printed": "Y",
+     "value": "Y",
+     "label_placement": "below"
+    },
+    {
+     "position": 23,
+     "row": 3,
+     "column_from_left": 5,
+     "label_as_printed": "Z",
+     "value": "Z",
+     "label_placement": "below"
+    },
+    {
+     "position": 24,
+     "row": 3,
+     "column_from_left": 6,
+     "label_as_printed": "ω (a small omega-like mark; not a capital Omega)",
+     "value": "final sign with omega at its foot (final sign (no separate Latin letter in modern use))",
+     "label_placement": "below"
+    }
+   ],
+   "source": {
+    "work": "Three Books of Occult Philosophy",
+    "author": "Henry Cornelius Agrippa of Nettesheim, translated by J.F. (Wellcome: 'J.F[reake]'; probably John French)",
+    "edition": "First English edition (Wing A789; ESTC R11002). Signatures (Wellcome): a4 A8 b2 B-Pp8 Qq2",
+    "date": "1651",
+    "place": "London",
+    "printer": "Printed by R.W. for Gregory Moule",
+    "copy": "Wellcome Collection, London, shelfmark 10377/B (Copy 1; first 4 leaves incl. frontispiece and title wanting)",
+    "repository": "Internet Archive (Wellcome Library / UK Medical Heritage Library digitisation)",
+    "identifier": "b30335231",
+    "image_index": "image file b30335231_0452.jp2 (= IIIF $452); archive.org BookReader page n451 (this scan's display index is one less than the file index: n451 shows p. 438, n452 p. 439)",
+    "printed_locator": "Book III, Chap. XXIX ('Of the Characters and Seals of Spirits'), which opens on p. 437 [sig. Ff3r, signed 'Ff 3'; viewed in the Wellcome copy, image _0451 = n450]; the table is on p. 438 [Ff3v]; the next page, p. 439, is signed 'Ff 4' and opens Chap. XXX ('Another manner of making Characters, delivered by Cabalists').",
+    "page_url": "https://archive.org/details/b30335231/page/n451/mode/1up",
+    "image_url": "https://archive.org/download/b30335231/b30335231_jp2.zip/b30335231_jp2%2Fb30335231_0452.jp2 (3074x3825; crop geometry 1990x1430+940+2190). IIIF equivalent https://iiif.archive.org/iiif/b30335231$452/full/full/0/default.jpg timed out (504) during this run.",
+    "rights": "archive.org item rights field: 'This work is available under the Creative Commons, Public Domain Mark' (http://creativecommons.org/publicdomain/mark/1.0/); notes field: 'No title page present. No copyright information present.'; contributor/sponsor Wellcome Library."
+   }
+  },
+  {
+   "file": "theban-1651-ia-threebooksoccult-table.png",
+   "table": "Theban alphabet, Agrippa (English 1651), Book III chap. XXIX - archive.org 'threebooksoccult' (cross-check copy)",
+   "layout": "Same setting as Wellcome: rows of 9, 9, 6; capital labels below; catchword 'CHAP.' included at bottom right.",
+   "letters": [
+    {
+     "position": 1,
+     "row": 1,
+     "column_from_left": 1,
+     "label_as_printed": "A",
+     "value": "A",
+     "label_placement": "below"
+    },
+    {
+     "position": 2,
+     "row": 1,
+     "column_from_left": 2,
+     "label_as_printed": "B",
+     "value": "B",
+     "label_placement": "below"
+    },
+    {
+     "position": 3,
+     "row": 1,
+     "column_from_left": 3,
+     "label_as_printed": "C",
+     "value": "C",
+     "label_placement": "below"
+    },
+    {
+     "position": 4,
+     "row": 1,
+     "column_from_left": 4,
+     "label_as_printed": "D",
+     "value": "D",
+     "label_placement": "below"
+    },
+    {
+     "position": 5,
+     "row": 1,
+     "column_from_left": 5,
+     "label_as_printed": "E",
+     "value": "E",
+     "label_placement": "below"
+    },
+    {
+     "position": 6,
+     "row": 1,
+     "column_from_left": 6,
+     "label_as_printed": "F",
+     "value": "F",
+     "label_placement": "below"
+    },
+    {
+     "position": 7,
+     "row": 1,
+     "column_from_left": 7,
+     "label_as_printed": "G",
+     "value": "G",
+     "label_placement": "below"
+    },
+    {
+     "position": 8,
+     "row": 1,
+     "column_from_left": 8,
+     "label_as_printed": "H",
+     "value": "H",
+     "label_placement": "below"
+    },
+    {
+     "position": 9,
+     "row": 1,
+     "column_from_left": 9,
+     "label_as_printed": "I",
+     "value": "I",
+     "label_placement": "below"
+    },
+    {
+     "position": 10,
+     "row": 2,
+     "column_from_left": 1,
+     "label_as_printed": "K",
+     "value": "K",
+     "label_placement": "below"
+    },
+    {
+     "position": 11,
+     "row": 2,
+     "column_from_left": 2,
+     "label_as_printed": "L",
+     "value": "L",
+     "label_placement": "below"
+    },
+    {
+     "position": 12,
+     "row": 2,
+     "column_from_left": 3,
+     "label_as_printed": "M",
+     "value": "M",
+     "label_placement": "below"
+    },
+    {
+     "position": 13,
+     "row": 2,
+     "column_from_left": 4,
+     "label_as_printed": "N",
+     "value": "N",
+     "label_placement": "below"
+    },
+    {
+     "position": 14,
+     "row": 2,
+     "column_from_left": 5,
+     "label_as_printed": "O",
+     "value": "O",
+     "label_placement": "below"
+    },
+    {
+     "position": 15,
+     "row": 2,
+     "column_from_left": 6,
+     "label_as_printed": "P",
+     "value": "P",
+     "label_placement": "below"
+    },
+    {
+     "position": 16,
+     "row": 2,
+     "column_from_left": 7,
+     "label_as_printed": "Q",
+     "value": "Q",
+     "label_placement": "below"
+    },
+    {
+     "position": 17,
+     "row": 2,
+     "column_from_left": 8,
+     "label_as_printed": "R",
+     "value": "R",
+     "label_placement": "below"
+    },
+    {
+     "position": 18,
+     "row": 2,
+     "column_from_left": 9,
+     "label_as_printed": "S",
+     "value": "S",
+     "label_placement": "below"
+    },
+    {
+     "position": 19,
+     "row": 3,
+     "column_from_left": 1,
+     "label_as_printed": "T",
+     "value": "T",
+     "label_placement": "below"
+    },
+    {
+     "position": 20,
+     "row": 3,
+     "column_from_left": 2,
+     "label_as_printed": "V",
+     "value": "V",
+     "label_placement": "below"
+    },
+    {
+     "position": 21,
+     "row": 3,
+     "column_from_left": 3,
+     "label_as_printed": "X",
+     "value": "X",
+     "label_placement": "below"
+    },
+    {
+     "position": 22,
+     "row": 3,
+     "column_from_left": 4,
+     "label_as_printed": "Y",
+     "value": "Y",
+     "label_placement": "below"
+    },
+    {
+     "position": 23,
+     "row": 3,
+     "column_from_left": 5,
+     "label_as_printed": "Z",
+     "value": "Z",
+     "label_placement": "below"
+    },
+    {
+     "position": 24,
+     "row": 3,
+     "column_from_left": 6,
+     "label_as_printed": "ω (a small omega-like mark; not a capital Omega)",
+     "value": "final sign with omega at its foot (final sign (no separate Latin letter in modern use))",
+     "label_placement": "below"
+    }
+   ],
+   "source": {
+    "work": "Three Books of Occult Philosophy",
+    "author": "Henry Cornelius Agrippa of Nettesheim, translated by J.F. (Wellcome: 'J.F[reake]'; probably John French)",
+    "edition": "First English edition (Wing A789; ESTC R11002). Signatures (Wellcome): a4 A8 b2 B-Pp8 Qq2",
+    "date": "1651",
+    "place": "London",
+    "printer": "Printed by R.W. for Gregory Moule",
+    "copy": "UNVERIFIED. Holding library not stated (community upload; the agrippa-angelic run matched these images to the Michigan State University 'threebooksoccult' scan, not confirmed)",
+    "repository": "Internet Archive, community upload",
+    "identifier": "threebooksoccult",
+    "image_index": "archive.org BookReader page n464",
+    "printed_locator": "Book III, Chap. XXIX, p. 438 [Ff3v] (same setting as the Wellcome copy; the signing was read in the Wellcome copy, not in this one)",
+    "page_url": "https://archive.org/details/threebooksoccult/page/n464/mode/1up",
+    "image_url": "https://archive.org/download/threebooksoccult/page/n464_w3000.jpg (served at 4913x6428; crop geometry 3570x2500+940+3600)",
+    "rights": "NONE STATED (collections 'opensource', 'community'; no rights or licence field). Use for cross-checking only unless its provenance is cleared."
+   }
+  },
+  {
+   "file": "theban-1561-bpl-table.png",
+   "table": "SUPPLEMENTARY - Theban alphabet in the first French translation, Polygraphie (1561), fol. 184v",
+   "layout": "3 rows of 8; red lowercase roman labels ABOVE black signs; 'u' (not 'v') in row 3; the last label is '&'. Faint show-through of fol. 184r text at the top edge.",
+   "letters": [
+    {
+     "position": 1,
+     "row": 1,
+     "column_from_left": 1,
+     "label_as_printed": "a",
+     "value": "A",
+     "label_placement": "above, red"
+    },
+    {
+     "position": 2,
+     "row": 1,
+     "column_from_left": 2,
+     "label_as_printed": "b",
+     "value": "B",
+     "label_placement": "above, red"
+    },
+    {
+     "position": 3,
+     "row": 1,
+     "column_from_left": 3,
+     "label_as_printed": "c",
+     "value": "C",
+     "label_placement": "above, red"
+    },
+    {
+     "position": 4,
+     "row": 1,
+     "column_from_left": 4,
+     "label_as_printed": "d",
+     "value": "D",
+     "label_placement": "above, red"
+    },
+    {
+     "position": 5,
+     "row": 1,
+     "column_from_left": 5,
+     "label_as_printed": "e",
+     "value": "E",
+     "label_placement": "above, red"
+    },
+    {
+     "position": 6,
+     "row": 1,
+     "column_from_left": 6,
+     "label_as_printed": "f",
+     "value": "F",
+     "label_placement": "above, red"
+    },
+    {
+     "position": 7,
+     "row": 1,
+     "column_from_left": 7,
+     "label_as_printed": "g",
+     "value": "G",
+     "label_placement": "above, red"
+    },
+    {
+     "position": 8,
+     "row": 1,
+     "column_from_left": 8,
+     "label_as_printed": "h",
+     "value": "H",
+     "label_placement": "above, red"
+    },
+    {
+     "position": 9,
+     "row": 2,
+     "column_from_left": 1,
+     "label_as_printed": "i",
+     "value": "I",
+     "label_placement": "above, red"
+    },
+    {
+     "position": 10,
+     "row": 2,
+     "column_from_left": 2,
+     "label_as_printed": "k",
+     "value": "K",
+     "label_placement": "above, red"
+    },
+    {
+     "position": 11,
+     "row": 2,
+     "column_from_left": 3,
+     "label_as_printed": "l",
+     "value": "L",
+     "label_placement": "above, red"
+    },
+    {
+     "position": 12,
+     "row": 2,
+     "column_from_left": 4,
+     "label_as_printed": "m",
+     "value": "M",
+     "label_placement": "above, red"
+    },
+    {
+     "position": 13,
+     "row": 2,
+     "column_from_left": 5,
+     "label_as_printed": "n",
+     "value": "N",
+     "label_placement": "above, red"
+    },
+    {
+     "position": 14,
+     "row": 2,
+     "column_from_left": 6,
+     "label_as_printed": "o",
+     "value": "O",
+     "label_placement": "above, red"
+    },
+    {
+     "position": 15,
+     "row": 2,
+     "column_from_left": 7,
+     "label_as_printed": "p",
+     "value": "P",
+     "label_placement": "above, red"
+    },
+    {
+     "position": 16,
+     "row": 2,
+     "column_from_left": 8,
+     "label_as_printed": "q",
+     "value": "Q",
+     "label_placement": "above, red"
+    },
+    {
+     "position": 17,
+     "row": 3,
+     "column_from_left": 1,
+     "label_as_printed": "r",
+     "value": "R",
+     "label_placement": "above, red"
+    },
+    {
+     "position": 18,
+     "row": 3,
+     "column_from_left": 2,
+     "label_as_printed": "s",
+     "value": "S",
+     "label_placement": "above, red"
+    },
+    {
+     "position": 19,
+     "row": 3,
+     "column_from_left": 3,
+     "label_as_printed": "t",
+     "value": "T",
+     "label_placement": "above, red"
+    },
+    {
+     "position": 20,
+     "row": 3,
+     "column_from_left": 4,
+     "label_as_printed": "u",
+     "value": "V",
+     "label_placement": "above, red"
+    },
+    {
+     "position": 21,
+     "row": 3,
+     "column_from_left": 5,
+     "label_as_printed": "x",
+     "value": "X",
+     "label_placement": "above, red"
+    },
+    {
+     "position": 22,
+     "row": 3,
+     "column_from_left": 6,
+     "label_as_printed": "y",
+     "value": "Y",
+     "label_placement": "above, red"
+    },
+    {
+     "position": 23,
+     "row": 3,
+     "column_from_left": 7,
+     "label_as_printed": "z",
+     "value": "Z",
+     "label_placement": "above, red"
+    },
+    {
+     "position": 24,
+     "row": 3,
+     "column_from_left": 8,
+     "label_as_printed": "&",
+     "value": "final sign, labelled & (final sign (no separate Latin letter in modern use))",
+     "label_placement": "above, red"
+    }
+   ],
+   "source": {
+    "work": "Polygraphie, et universelle escriture cabalistique",
+    "author": "Johannes Trithemius, translated by Gabriel de Collange",
+    "edition": "First French translation",
+    "date": "1561",
+    "place": "Paris",
+    "printer": "'Pour Iaques Keruer demeurant en la rue sainct Iacques a l'enseigne de la Licorne' (archive.org publisher field)",
+    "copy": "Boston Public Library, Z103.T834 1561x; former owners per the archive.org record: William Stirling Maxwell (1818-1878) and Leonard Baskin (1922-2000)",
+    "repository": "Internet Archive (Boston Public Library)",
+    "identifier": "polygraphieetvni00trit",
+    "image_index": "image file polygraphieetvni00trit_0412.jp2; BookReader page n411 (display index one less than file index)",
+    "printed_locator": "fol. 184v (recto numbered 184 on _0411); running head on 184v 'LIVRE CINQVIESME' (with 'DE POLYGRAPHIE.' on the facing rectos); red heading 'AVTRE ALPHABET, PAR lequel Honorius, surnommé Thebanus, descriuoit occultement ses reigles & ordonnances de magie.'",
+    "page_url": "https://archive.org/details/polygraphieetvni00trit/page/n411/mode/1up",
+    "image_url": "https://archive.org/download/polygraphieetvni00trit/polygraphieetvni00trit_jp2.zip/polygraphieetvni00trit_jp2%2Fpolygraphieetvni00trit_0412.jp2 (3072x4537; crop geometry 2420x1000+560+880)",
+    "rights": "No rights or licence field in the archive.org item metadata (contributor Boston Public Library)."
+   }
+  },
+  {
+   "file": "theban-1613-naples-table.png",
+   "table": "SUPPLEMENTARY - Theban alphabet in the Strasbourg (Zetzner) Latin edition of 1613, p. 597",
+   "layout": "3 rows of 8; BLACK lowercase blackletter labels above each sign (no red); last label 'w'. Dark, low-resolution Google scan.",
+   "letters": [
+    {
+     "position": 1,
+     "row": 1,
+     "column_from_left": 1,
+     "label_as_printed": "a",
+     "value": "A",
+     "label_placement": "above, black"
+    },
+    {
+     "position": 2,
+     "row": 1,
+     "column_from_left": 2,
+     "label_as_printed": "b",
+     "value": "B",
+     "label_placement": "above, black"
+    },
+    {
+     "position": 3,
+     "row": 1,
+     "column_from_left": 3,
+     "label_as_printed": "c",
+     "value": "C",
+     "label_placement": "above, black"
+    },
+    {
+     "position": 4,
+     "row": 1,
+     "column_from_left": 4,
+     "label_as_printed": "d",
+     "value": "D",
+     "label_placement": "above, black"
+    },
+    {
+     "position": 5,
+     "row": 1,
+     "column_from_left": 5,
+     "label_as_printed": "e",
+     "value": "E",
+     "label_placement": "above, black"
+    },
+    {
+     "position": 6,
+     "row": 1,
+     "column_from_left": 6,
+     "label_as_printed": "f",
+     "value": "F",
+     "label_placement": "above, black"
+    },
+    {
+     "position": 7,
+     "row": 1,
+     "column_from_left": 7,
+     "label_as_printed": "g",
+     "value": "G",
+     "label_placement": "above, black"
+    },
+    {
+     "position": 8,
+     "row": 1,
+     "column_from_left": 8,
+     "label_as_printed": "h",
+     "value": "H",
+     "label_placement": "above, black"
+    },
+    {
+     "position": 9,
+     "row": 2,
+     "column_from_left": 1,
+     "label_as_printed": "i",
+     "value": "I",
+     "label_placement": "above, black"
+    },
+    {
+     "position": 10,
+     "row": 2,
+     "column_from_left": 2,
+     "label_as_printed": "k",
+     "value": "K",
+     "label_placement": "above, black"
+    },
+    {
+     "position": 11,
+     "row": 2,
+     "column_from_left": 3,
+     "label_as_printed": "l",
+     "value": "L",
+     "label_placement": "above, black"
+    },
+    {
+     "position": 12,
+     "row": 2,
+     "column_from_left": 4,
+     "label_as_printed": "m",
+     "value": "M",
+     "label_placement": "above, black"
+    },
+    {
+     "position": 13,
+     "row": 2,
+     "column_from_left": 5,
+     "label_as_printed": "n",
+     "value": "N",
+     "label_placement": "above, black"
+    },
+    {
+     "position": 14,
+     "row": 2,
+     "column_from_left": 6,
+     "label_as_printed": "o",
+     "value": "O",
+     "label_placement": "above, black"
+    },
+    {
+     "position": 15,
+     "row": 2,
+     "column_from_left": 7,
+     "label_as_printed": "p",
+     "value": "P",
+     "label_placement": "above, black"
+    },
+    {
+     "position": 16,
+     "row": 2,
+     "column_from_left": 8,
+     "label_as_printed": "q",
+     "value": "Q",
+     "label_placement": "above, black"
+    },
+    {
+     "position": 17,
+     "row": 3,
+     "column_from_left": 1,
+     "label_as_printed": "r",
+     "value": "R",
+     "label_placement": "above, black"
+    },
+    {
+     "position": 18,
+     "row": 3,
+     "column_from_left": 2,
+     "label_as_printed": "s",
+     "value": "S",
+     "label_placement": "above, black"
+    },
+    {
+     "position": 19,
+     "row": 3,
+     "column_from_left": 3,
+     "label_as_printed": "t",
+     "value": "T",
+     "label_placement": "above, black"
+    },
+    {
+     "position": 20,
+     "row": 3,
+     "column_from_left": 4,
+     "label_as_printed": "v",
+     "value": "V",
+     "label_placement": "above, black"
+    },
+    {
+     "position": 21,
+     "row": 3,
+     "column_from_left": 5,
+     "label_as_printed": "x",
+     "value": "X",
+     "label_placement": "above, black"
+    },
+    {
+     "position": 22,
+     "row": 3,
+     "column_from_left": 6,
+     "label_as_printed": "y",
+     "value": "Y",
+     "label_placement": "above, black"
+    },
+    {
+     "position": 23,
+     "row": 3,
+     "column_from_left": 7,
+     "label_as_printed": "z",
+     "value": "Z",
+     "label_placement": "above, black"
+    },
+    {
+     "position": 24,
+     "row": 3,
+     "column_from_left": 8,
+     "label_as_printed": "w",
+     "value": "W as labelled (the final sign; read later as end-mark, Omega or &)",
+     "label_placement": "above, black"
+    }
+   ],
+   "source": {
+    "work": "Libri polygraphiae VI ... quibus praeter clavem et observationes Adolphi a Glauburg ... accessit noviter eiusdem authoris libellus de septem secundeis",
+    "author": "Johannes Trithemius; observations by Adolphus a Glauburg",
+    "edition": "Zetzner Latin edition (archive.org title: 'Joannis Trithemii abbatis peapolitani, quondam spanheymensis ad Maximilianum 1. caesarem. Libri polygraphiae 6 ...')",
+    "date": "1613",
+    "place": "[Strasbourg] (not seen on the cropped page; archive.org gives only the publisher)",
+    "printer": "'sumptibus Lazari Zetzneri bibliopolae' (archive.org publisher field)",
+    "copy": "archive.org contributor field: 'National Library of Naples' (Biblioteca Nazionale di Napoli); shelfmark not given",
+    "repository": "Internet Archive (Google Books digitisation, Google id E5TjGI-NlOsC)",
+    "identifier": "bub_gb_E5TjGI-NlOsC",
+    "image_index": "image file bub_gb_E5TjGI-NlOsC_0666.jp2 = BookReader page n666 (no offset: n665 shows p. 596, n666 p. 597)",
+    "printed_locator": "p. 597, sig. Pp3 (recto); heading 'Sequitur aliud alphabetum Honorij cognomento Thebani ...' at head of the same page",
+    "page_url": "https://archive.org/details/bub_gb_E5TjGI-NlOsC/page/n666/mode/1up",
+    "image_url": "https://archive.org/download/bub_gb_E5TjGI-NlOsC/bub_gb_E5TjGI-NlOsC_jp2.zip/bub_gb_E5TjGI-NlOsC_jp2%2Fbub_gb_E5TjGI-NlOsC_0666.jp2 (1653x2500; crop geometry 1260x770+200+500)",
+    "rights": "archive.org licenseurl http://creativecommons.org/publicdomain/mark/1.0/ (no rights field; Google 'Digitized by Google' watermark on the page)."
+   }
+  }
+ ],
+ "page_views": [
+  "theban-page-1518-wellcome-q5r.jpg",
+  "theban-page-1518-wellcome-q5v.jpg",
+  "theban-page-1518-loc-q5r.jpg",
+  "theban-page-1518-loc-q5v.jpg",
+  "theban-page-1533-loc-p273.jpg",
+  "theban-page-1533-mcgill-p272.jpg",
+  "theban-page-1533-mcgill-p273.jpg",
+  "theban-page-1533-jung-p272.jpg",
+  "theban-page-1533-jung-p273.jpg",
+  "theban-page-1651-wellcome-p438.jpg",
+  "theban-page-1651-ia-threebooksoccult-p438.jpg",
+  "theban-page-1561-bpl-f184v.jpg",
+  "theban-page-1613-naples-p597.jpg"
+ ],
+ "legibility": "All nine crops show every sign and every label complete. 1518: the Wellcome scan is the larger (3328 px page) but several red labels are smeared and the final sign is over-inked; the LoC copy (2700 px page) has crisper red labels and a cleaner final sign - use both together. 1533: McGill (5560 px page) is the sharpest, then LoC (3344 px) and Jung/e-rara (2550 px); the signs agree in all three. 1651: archive.org 'threebooksoccult' is the cleaner image; Wellcome has heavy show-through but carries a rights statement. 1561 (BPL) is clear; 1613 (Naples/Google) is dark and soft but legible.",
+ "problems": [
+  "1518 red labels at positions 3 and 5 can be misread at first sight (position 3 looks like an 'e', position 5 like a 'c'). Compared with the black c and e in the alchemist's alphabet on the same page, they are the rotunda c (top stroke turned down) and e (thin rising stroke), so the labels run a-b-c-d-e in order. Do not 'correct' them.",
+  "1518: the red was printed in a separate pass and is out of register: fragments of the row-2 and row-3 labels touch the feet of the signs above them (in the Wellcome copy, e.g. under the d, e, f and h signs of row 1 and the k, p and q signs of row 2). These red marks are labels, not parts of the signs; trace the black only.",
+  "1518 sign for i: a small separate n-shaped element stands to the left of the U-shaped body; sign for r: a detached small foot below and right of the n-and-stem body. Both appear identically in the Wellcome and LoC copies, so they belong to the printed forme, not to damage. The 1561 French ('nU') and 1613 Latin ('nV') cuts keep the left element of the i sign; Agrippa 1533 and 1651 drop it.",
+  "1518 Wellcome: the final (w) sign is heavily over-inked and its lower right is a blot; the LoC copy shows the strokes more clearly.",
+  "1518 page shows show-through of the recto text (the Normanni alphabet passage) behind the table in both copies.",
+  "1533 McGill copy: no K label (a dot instead), plus stray inked dots after V and before the Omega. LoC prints 'K', Jung prints lower-case 'k'. A short rule appears under the M label in the LoC copy only.",
+  "1651: the final label is a small omega-like mark, not a capital Omega; both copies also show a small curved mark printed under the V label. Wellcome copy: heavy show-through of p. 437 (including the mirrored heading 'CHAP. XXIX ... Of the Characters and Seals of Spirits') behind the table; the crop includes the catchword 'CHAP.'.",
+  "threebooksoccult (1651) and the BPL 1561 scan carry no rights statement; McGill (1533) has none in the archive.org record.",
+  "archive.org display index versus image-file index: in b33552137 (Wellcome 1518), b30335231 (Wellcome 1651) and polygraphieetvni00trit (BPL 1561) the BookReader page nK shows image file K+1 (a leading colour card); in the McGill and Google (bub_gb_) items nK = file K. The page_url and image_url above were checked one by one.",
+  "Crops are lossless PNG re-encodings of the delivered images (JP2 masters decoded for Wellcome 1518, LoC 1518, LoC 1533, Wellcome 1651, BPL 1561 and Naples 1613; JPEG derivatives for McGill, Jung and threebooksoccult). No contrast change, rotation or cleanup."
+ ],
+ "notes": [
+  "1518 heading as printed (both copies, foot of 2q5r): 'Sequitur aliud alphabetum Honorij cognomento Thebani, cuius ministerio suas in magicis fatuitates abscondit, sicut Petrus de Apono testatur in suo maiore libro quarto.' This matches the Latin quoted by Peterson and Wikipedia; it is now checked against the print.",
+  "Book number: the text on 2p6r (Wellcome _0495), at the start of the Normanni chapter, reads 'In hoc libro sexto, qui & ultimus est, quosdam characteres veteres ... ab inferis statui revocare'; the OCR places the close of Book V ('quintum quoque Polygraphiae librum terminamus. Anno d[omi]ni M.D.VIII') on _0492 (OCR only, not viewed). The Theban table is therefore in Book VI of the 1518 Latin. The 1561 French prints it under the running head 'LIVRE CINQVIESME', which explains the 'Book V' reports.",
+  "Immediately before the Theban heading, on 2q5r, Trithemius says of the preceding cipher alphabet: 'Quamuis in latino sermone k y & w non sit nobis opus, quia tamen k & w in germanico utimur, ad numerum quartum atque uicesimum deduximus alphabetum ...' - his alphabets are brought to 24 places, with w for German. This is the context of the 'w' label on the final Theban sign (an observation about the page, not a claim about Trithemius's intent for the Theban table).",
+  "1533 wording (read in the McGill, LoC and Jung images, p. CCLXXIII): 'Ex horum itaque characterum genere sunt, quos notat Petrus Apponus ab Honorio Thebano traditos, quorum figura est talis ad nostrum alphabetum relata:'. The Latin form is 'Petrus Apponus'; 'fatuitates' does not occur. Chapter heading on p. CCLXXII: 'De characteribus & sigillis spirituum. Caput XXIX'.",
+  "1533 re-cuts the signs as smooth, even-stroked woodcut-like forms in 2 rows of 12 with roman capitals below; 1518 builds them from heavy blackletter-like pieces in 3 rows of 8 with red lower-case labels above. Visible structural differences (visual comparison, not measured): I (1518 has the extra left element), R (1518 n-and-stem with a detached foot; 1533/1651 an m-topped sign with a long right descender), V (1518 a V/Y with a small w-like stroke in its crook; 1533/1651 a bent, hooked angle without it), final sign (1518 no omega; 1533/1651 an omega at its foot). 1651 copies 1533 closely; its E has a closed curl at the top left where 1533 has an open hook.",
+  "The 1533 table's signs agree across LoC, McGill and Jung (same cuts); only the labels differ (K / none / k).",
+  "1613 Zetzner edition: the table is on p. 597 (sig. Pp3), with labels a-z and a final 'w', 3 rows of 8 like 1518. This confirms that Wikipedia's 'p. 597' belongs to the 1613 edition. Peterson's 'p. 579' was not matched (the 1600 Zetzner scan on archive.org, bub_gb_-D4XuQjTVhYC, has only 32 images and was not checked).",
+  "1561 French: labels a-z with 'u' in place of 'v' and '&' for the final sign; the heading names Honorius 'surnommé Thebanus' and does not name Pietro d'Abano.",
+  "A second 1518 copy was looked for on archive.org, e-rara (not found in a quick, non-exhaustive search) and MDZ (its search page needs JavaScript and was not usable); Gallica returned a Cloudflare block. The LoC copy was reached through its handle.",
+  "LoC 1533 sequence: image 0276 is p. CCLXVIII and 0277 is p. CCLXXIII, so pp. 269-272 are not at that point in the LoC image sequence (not investigated); the chapter opening was checked in the McGill and Jung copies.",
+  "Places of the 1518 Latin edition disagree: LoC '[Basel]' (from VD16), Wellcome '[Basle]'; the Boston Public Library record of the 1561 French says the Latin original 'appeared in Oppenheim, 1518'."
+ ],
+ "checked": {
+  "by": "independent crop check, 2026-10-20",
+  "method": "Every crop and page view in this folder was viewed. Each crop was re-cut from a freshly downloaded master at the stated geometry and compared pixel by pixel (RMSE 0 for the JP2 and JPEG sources; 0.007 for the 1518 Wellcome IIIF JPEG, whose JP2 master then matched at 0). BookReader display indices were checked against each item's scandata.xml; loc.gov sequence numbers against the item JSON; the e-rara canvas against its IIIF manifest. Rights fields were re-read from archive.org metadata, loc.gov JSON and the e-rara manifest. Crop borders were tested for ink: no sign or label is cut in any crop.",
+  "confirmed": [
+   "All nine crops show the named table complete, inside the stated running head / heading: 1518 2q5v under the q5r heading 'Sequitur aliud alphabetum Honorij cognomento Thebani'; 1533 'LIBER TERTIVS' p. CCLXXIII (LoC and McGill misnumbered 'CCXLXXIII', Jung 'CCLXXIII'), sig. 'z iii', chapter 'De characteribus & sigillis spirituum. Caput XXIX' on p. CCLXXII; 1651 '438 Of Occult Philosophy. Book III.'; 1561 'LIVRE CINQVIESME' fol. 184v ('DE POLYGRAPHIE. 184' on the recto); 1613 p. 597, 'Pp 3'.",
+   "Printed labels and their order are as listed for every plate (1518 a-h / i-q / r s t v x y z w; 1533 A-M and N-Z, Omega, with K / none / k in LoC / McGill / Jung; 1651 A-I / K-S / T V X Y Z small omega; 1561 a-h / i-q / r s t u x y z &; 1613 as 1518).",
+   "1518 labels 3 and 5 (which look like 'e' and 'c') are c and e: the black c and e of the alchemist's alphabet on the same page, in the same face, show the same two shapes in the same places.",
+   "Image indices: Wellcome 1518 n505 = leaf/file 0506 = IIIF $506 (leaf 0 is a non-access colour card); Wellcome 1651 n451 = leaf 0452; BPL 1561 n411 = leaf 0412; McGill n288 = leaf 288; Naples n666 = leaf 666; threebooksoccult n464 = leaf 464; LoC sp=502 = 0502.jp2, sp=277 = 0277.jp2; e-rara canvas 295 = image 1343489 labelled 'CCLXXIII'.",
+   "Rights statements for Wellcome 1518, Wellcome 1651, LoC 1518, LoC 1533, e-rara (Jung) and Naples (licenseurl only) quoted correctly; McGill, BPL 1561 and threebooksoccult have no rights or licence field."
+  ],
+  "corrected": [
+   "1518 (both plates): 'q4 and q5 unsigned' was wrong. q4r (_0503) is signed 'q iiij'; only q5 and q6 are unsigned. r1 is signed 'r' on _0509, so the table leaf is still 2q5v. Added the Book VI statement printed on q4r.",
+   "1533 LoC plate: the catalogue does not support '[Johannes Soter]' (LoC gives 's.n.') or a July 1533 date note (LoC's note reads 'MDXXIIII', a slip). The date now rests on the colophon itself, read in the Jung copy: 'Finis Anno M. D. XXXIII. Mense Iulio.' The same date reading was added to the McGill and Jung plates, with each printer attribution tied to its own record.",
+   "1533 LoC plate: 'DeOccultaPhilosophiaLoc1533' is an individual's archive.org upload, not an LoC mirror; its Public Domain Mark is the uploader's. Reworded the repository and rights fields.",
+   "1651 Wellcome: the Chap. XXIX heading was given as 'seen here only as show-through'. It was viewed directly on p. 437 (Ff3r, signed 'Ff 3', image _0451); p. 439 is signed 'Ff 4' and opens Chap. XXX. Locator updated. Added the notes field 'No title page present.' to the rights quotation.",
+   "1613: copy field now quotes the archive.org contributor field ('National Library of Naples').",
+   "1561: added the former owners named in the archive.org record. Added a note that the BPL record places the 1518 Latin at Oppenheim, against LoC/Wellcome Basel."
+  ]
+ }
+}

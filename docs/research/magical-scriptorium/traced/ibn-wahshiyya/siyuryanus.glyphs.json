@@ -1,0 +1,1451 @@
+{
+ "slug": "siyuryanus",
+ "title": "الفصل الرابع عشر من الباب الرابع في صفة قلم الحكيم سيوريانوس الذي الف كتب الفلك . واسرار النجوم . والطلسمات وخواصها . والرصد . وعمل خواتيم الكواكب . وتسخير روحانياتها وجلبها — Hammer: \"SECTION XIV. The alphabet of Syourianos the philosopher, (v. orig. p. 36.) He wrote in this alphabet on astronomy, … on the effects of planet-rings; and on the invocation and conjuration of spirits.\" [Chapter IV, English p. 7]",
+ "primary": {
+  "copy": "Wellcome Library, London, copy of Joseph Hammer (trans.), Ancient Alphabets and Hieroglyphic Characters Explained (London: W. Bulmer and Co., 1806), digitised for the Internet Archive, item b22039910 (https://archive.org/details/b22039910); rights field: Creative Commons Public Domain Mark",
+  "work": "Kitāb Shawq al-mustahām fī maʿrifat rumūz al-aqlām, ascribed to Ibn Waḥshiyya, in the Arabic text printed by Joseph Hammer with his English version",
+  "date": "1806 (the printing; the imprint of the volume)",
+  "locator": "Arabic part, printed page 36, Bāb IV, faṣl 14; scan leaf 187 (BookReader n186, https://archive.org/details/b22039910/page/n186); Hammer's English cites it as \"v. orig. p. 36\" (English p. 7)",
+  "plate": "plates/ibn-wahshiyya/siyuryanus/table.png (crop x 270-1665, y 1310-2505 of b22039910_jp2/b22039910_0187.jp2, the item's processed JP2, at full size)"
+ },
+ "table": "The pen of the sage Siyūriyānūs (سيوريانوس; Hammer: \"Syourianos\"). In this file's own paraphrase of the Arabic heading, he wrote books on the sphere, the secrets of the stars, talismans and their properties, al-raṣd (الرصد; Hammer: \"magic alarm-posts\"), the making of the seals of the planets (عمل خواتيم الكواكب; Hammer: \"the effects of planet-rings\") and the subjection and drawing down of their spirits (Hammer: \"the invocation and conjuration of spirits\"). These are the heading's claims about him; the seals of the planets it names are not identified here with any other set of seals. 28 signs in four rows (9, 8, 7, 4), read right to left, each with an Arabic letter printed beneath it, in abjad order from ا to غ; every label was read from the scan and agrees with that order.",
+ "conventions": "Centre-line strokes with the kit pen (5.5), a little heavier than the print's line (about 3.5-4.5 units). The ring-ends are kit rings, one for each closed ring the print shows, with r set to the centre line of the printed ring (3.5-6.2); the stroke stops at the ring's edge, and the ring is placed where the print has it, even where it sits beside the line of the stroke rather than on it. Many printed rings are ovals, flat or tall, and some are loops the stroke makes by crossing itself; all are drawn as the kit's round rings, centred on the printed ring. Curls that turn round but leave a gap (no enclosed paper in the scan) are drawn as open curls, not rings. Small closed triangles at stroke ends are drawn as closed triangle paths. A loop through which the stroke runs on (bāʾ) is part of the path, not a ring. Separator points between the signs are not part of any sign. Exception (added by the independent checker): the closed triangle at the end of bāʾ is drawn about a third larger than printed so that its opening, plain in all three copies, does not fill in at the kit's pen weight; the smaller triangular heads of kāf, qāf, shīn and thāʾ, whose openings are only specks, are drawn at their printed size and read as solid.",
+ "variantsDefault": "Compared by the independent checker (2026-10-20) with two other copies of the 1806 printing scanned for the Internet Archive: the Getty Research Institute copy (item ancientalphabets01ibnw, page image n188) and the University of North Carolina at Chapel Hill copy (item ancientalphabets00ibnw, page image n41), both Arabic p. 36, registered onto the Wellcome master and cut to the same cells. The form of this sign is the same in all three copies.",
+ "urlsFetched": {
+  "urls": [
+   "https://archive.org/details/b22039910",
+   "https://archive.org/details/b22039910/page/n186",
+   "https://archive.org/metadata/ancientalphabets01ibnw",
+   "https://archive.org/metadata/ancientalphabets00ibnw",
+   "https://archive.org/download/ancientalphabets01ibnw/page/n188.jpg",
+   "https://archive.org/download/ancientalphabets00ibnw/page/n41.jpg"
+  ],
+  "note": "The first two were fetched by the tracing stage on 2026-10-20 and answered HTTP 200 (status checked only; the page images were already cut from the JP2 master listed under plate). The other four were fetched by the independent checker on 2026-10-20 and answered HTTP 200: the two metadata records name the copies (Getty Research Institute; University of North Carolina at Chapel Hill; both dated 1806, neither has a rights field), and the two page images, served through a redirect to the BookReaderImages.php service, were used only to compare forms; nothing from them is reproduced."
+ },
+ "letters": [
+  {
+   "order": 1,
+   "name": "alif",
+   "value": "ا",
+   "glyph": {
+    "d": "M 50.6 34.6 C 51.8 36.3 52.8 38.5 52.8 41 L 53.4 59 C 53.5 61.5 53.4 63.3 52.8 64.7",
+    "rings": [
+     [
+      48.3,
+      31.3,
+      4
+     ],
+     [
+      48.7,
+      67.6,
+      5
+     ]
+    ],
+    "dots": []
+   },
+   "strokes": "An upright stroke ending at each end in a ring set to its left: a small, tightly closed ring at the top, a larger one at the foot.",
+   "formConfidence": "high",
+   "note": "The top ring is printed almost filled in (its opening is a speck); it is drawn as an open ring.",
+   "source": {
+    "plate": "plates/ibn-wahshiyya/siyuryanus/table.png (crop x 270-1665, y 1310-2505 of b22039910_jp2/b22039910_0187.jp2, the item's processed JP2, at full size)",
+    "position_as_printed": "row 1, sign 1 of 9 counting from the right (the table reads right to left); sign 1 of 28 in the table",
+    "label_as_printed": "ا (printed beneath the sign)",
+    "cell_geometry": {
+     "plate_crop_xywh": [
+      1190,
+      -24,
+      200,
+      200
+     ],
+     "master_xywh": [
+      1460,
+      1286,
+      200,
+      200
+     ],
+     "upscale": "2.25x Lanczos to 450 px"
+    }
+   },
+   "variants": "Compared by the independent checker (2026-10-20) with two other copies of the 1806 printing scanned for the Internet Archive: the Getty Research Institute copy (item ancientalphabets01ibnw, page image n188) and the University of North Carolina at Chapel Hill copy (item ancientalphabets00ibnw, page image n41), both Arabic p. 36, registered onto the Wellcome master and cut to the same cells. The form of this sign is the same in all three copies."
+  },
+  {
+   "order": 2,
+   "name": "bāʾ",
+   "value": "ب",
+   "glyph": {
+    "d": "M 21.5 60 C 24.5 58.5 27.5 56 29.5 54.2 C 27.2 52.5 26.3 50 26.3 47 C 26.3 43.5 28.2 41.2 31 41.2 C 33.8 41.2 35.6 43.5 35.6 47 C 35.6 50.5 34.2 53 32.2 54 C 44 54 56 52.5 68.5 51.4 L 73.9 39.3 L 80.4 52 L 68.5 51.4",
+    "rings": [],
+    "dots": []
+   },
+   "strokes": "One stroke: a short tail at the lower left rises into a closed loop standing on the line, runs on to the right as a long level stroke and ends in a small closed triangle, point upward.",
+   "formConfidence": "medium",
+   "note": "The figure at the right end is printed as a small closed triangle, point upward, rather than a round ring; it is drawn as a triangle, about a third larger than printed so that its opening (plain in all three copies) does not fill in at the kit's pen weight. The loop at the left is part of the stroke (the line runs through its foot), not a ring at an end.",
+   "source": {
+    "plate": "plates/ibn-wahshiyya/siyuryanus/table.png (crop x 270-1665, y 1310-2505 of b22039910_jp2/b22039910_0187.jp2, the item's processed JP2, at full size)",
+    "position_as_printed": "row 1, sign 2 of 9 counting from the right (the table reads right to left); sign 2 of 28 in the table",
+    "label_as_printed": "ب (printed beneath the sign)",
+    "cell_geometry": {
+     "plate_crop_xywh": [
+      1059,
+      -20,
+      200,
+      200
+     ],
+     "master_xywh": [
+      1329,
+      1290,
+      200,
+      200
+     ],
+     "upscale": "2.25x Lanczos to 450 px"
+    }
+   },
+   "variants": "Compared by the independent checker (2026-10-20) with two other copies of the 1806 printing scanned for the Internet Archive: the Getty Research Institute copy (item ancientalphabets01ibnw, page image n188) and the University of North Carolina at Chapel Hill copy (item ancientalphabets00ibnw, page image n41), both Arabic p. 36, registered onto the Wellcome master and cut to the same cells. The form of this sign is the same in all three copies."
+  },
+  {
+   "order": 3,
+   "name": "jīm",
+   "value": "ج",
+   "glyph": {
+    "d": "M 41.3 37.3 C 42.5 39.3 44 40.6 46 41.6 L 61 47.6 C 64 48.6 67 48.6 70.5 48.3 M 56.2 51.6 L 43 56.5 C 40.8 57.5 39.3 60 38.7 63.4",
+    "rings": [
+     [
+      37.9,
+      32.8,
+      5.5
+     ],
+     [
+      36.8,
+      68.5,
+      5.5
+     ]
+    ],
+    "dots": []
+   },
+   "strokes": "Two strokes forming an open >: the upper one runs down to the right from a ring at the upper left to a blunt point; the lower one, starting just below that point and not touching it, runs back down to the left into a ring.",
+   "formConfidence": "high",
+   "note": "The lower stroke runs into the upper one in the Wellcome scan; in the Getty and UNC copies a hairline of paper separates them, and it is drawn not touching.",
+   "source": {
+    "plate": "plates/ibn-wahshiyya/siyuryanus/table.png (crop x 270-1665, y 1310-2505 of b22039910_jp2/b22039910_0187.jp2, the item's processed JP2, at full size)",
+    "position_as_printed": "row 1, sign 3 of 9 counting from the right (the table reads right to left); sign 3 of 28 in the table",
+    "label_as_printed": "ج (printed beneath the sign)",
+    "cell_geometry": {
+     "plate_crop_xywh": [
+      914,
+      -23,
+      200,
+      200
+     ],
+     "master_xywh": [
+      1184,
+      1287,
+      200,
+      200
+     ],
+     "upscale": "2.25x Lanczos to 450 px"
+    }
+   },
+   "variants": "Compared by the independent checker (2026-10-20) with two other copies of the 1806 printing scanned for the Internet Archive: the Getty Research Institute copy (item ancientalphabets01ibnw, page image n188) and the University of North Carolina at Chapel Hill copy (item ancientalphabets00ibnw, page image n41), both Arabic p. 36, registered onto the Wellcome master and cut to the same cells. The form of this sign is the same in all three copies."
+  },
+  {
+   "order": 4,
+   "name": "dāl",
+   "value": "د",
+   "glyph": {
+    "d": "M 45.1 38.8 C 43.8 39.8 43.3 41.5 43.3 43.5 L 43 60 C 43 62 43.6 63.8 44.9 65",
+    "rings": [
+     [
+      49.9,
+      35.2,
+      6
+     ],
+     [
+      49.9,
+      68.6,
+      6.2
+     ]
+    ],
+    "dots": []
+   },
+   "strokes": "An upright stroke ending at each end in a ring set to its right.",
+   "formConfidence": "high",
+   "note": "",
+   "source": {
+    "plate": "plates/ibn-wahshiyya/siyuryanus/table.png (crop x 270-1665, y 1310-2505 of b22039910_jp2/b22039910_0187.jp2, the item's processed JP2, at full size)",
+    "position_as_printed": "row 1, sign 4 of 9 counting from the right (the table reads right to left); sign 4 of 28 in the table",
+    "label_as_printed": "د (printed beneath the sign)",
+    "cell_geometry": {
+     "plate_crop_xywh": [
+      780,
+      -23,
+      200,
+      200
+     ],
+     "master_xywh": [
+      1050,
+      1287,
+      200,
+      200
+     ],
+     "upscale": "2.25x Lanczos to 450 px"
+    }
+   },
+   "variants": "Compared by the independent checker (2026-10-20) with two other copies of the 1806 printing scanned for the Internet Archive: the Getty Research Institute copy (item ancientalphabets01ibnw, page image n188) and the University of North Carolina at Chapel Hill copy (item ancientalphabets00ibnw, page image n41), both Arabic p. 36, registered onto the Wellcome master and cut to the same cells. The form of this sign is the same in all three copies."
+  },
+  {
+   "order": 5,
+   "name": "hāʾ",
+   "value": "ه",
+   "glyph": {
+    "d": "M 34.2 41.9 L 49.5 67 L 63.7 41.3",
+    "rings": [
+     [
+      29.7,
+      38.7,
+      5.5
+     ],
+     [
+      68.4,
+      38.6,
+      5.4
+     ]
+    ],
+    "dots": []
+   },
+   "strokes": "A V whose two upper ends turn into rings, one on each side.",
+   "formConfidence": "high",
+   "note": "",
+   "source": {
+    "plate": "plates/ibn-wahshiyya/siyuryanus/table.png (crop x 270-1665, y 1310-2505 of b22039910_jp2/b22039910_0187.jp2, the item's processed JP2, at full size)",
+    "position_as_printed": "row 1, sign 5 of 9 counting from the right (the table reads right to left); sign 5 of 28 in the table",
+    "label_as_printed": "ه (printed beneath the sign)",
+    "cell_geometry": {
+     "plate_crop_xywh": [
+      618,
+      -26,
+      200,
+      200
+     ],
+     "master_xywh": [
+      888,
+      1284,
+      200,
+      200
+     ],
+     "upscale": "2.25x Lanczos to 450 px"
+    }
+   },
+   "variants": "Compared by the independent checker (2026-10-20) with two other copies of the 1806 printing scanned for the Internet Archive: the Getty Research Institute copy (item ancientalphabets01ibnw, page image n188) and the University of North Carolina at Chapel Hill copy (item ancientalphabets00ibnw, page image n41), both Arabic p. 36, registered onto the Wellcome master and cut to the same cells. The form of this sign is the same in all three copies."
+  },
+  {
+   "order": 6,
+   "name": "wāw",
+   "value": "و",
+   "glyph": {
+    "d": "M 35.2 64.4 C 37.5 64.1 41.5 61.5 43 57 C 45.5 50 47.5 40 49.8 29.5 L 61 56.5 C 62.5 59.5 64 61.5 65.6 62.5",
+    "rings": [
+     [
+      29.8,
+      65.3,
+      5.5
+     ],
+     [
+      69.8,
+      65.5,
+      5.2
+     ]
+    ],
+    "dots": []
+   },
+   "strokes": "An inverted V, tall and narrow at the peak, whose two feet turn outward into rings.",
+   "formConfidence": "high",
+   "note": "",
+   "source": {
+    "plate": "plates/ibn-wahshiyya/siyuryanus/table.png (crop x 270-1665, y 1310-2505 of b22039910_jp2/b22039910_0187.jp2, the item's processed JP2, at full size)",
+    "position_as_printed": "row 1, sign 6 of 9 counting from the right (the table reads right to left); sign 6 of 28 in the table",
+    "label_as_printed": "و (printed beneath the sign)",
+    "cell_geometry": {
+     "plate_crop_xywh": [
+      479,
+      -36,
+      200,
+      200
+     ],
+     "master_xywh": [
+      749,
+      1274,
+      200,
+      200
+     ],
+     "upscale": "2.25x Lanczos to 450 px"
+    }
+   },
+   "variants": "Compared by the independent checker (2026-10-20) with two other copies of the 1806 printing scanned for the Internet Archive: the Getty Research Institute copy (item ancientalphabets01ibnw, page image n188) and the University of North Carolina at Chapel Hill copy (item ancientalphabets00ibnw, page image n41), both Arabic p. 36, registered onto the Wellcome master and cut to the same cells. The form of this sign is the same in all three copies."
+  },
+  {
+   "order": 7,
+   "name": "zāy",
+   "value": "ز",
+   "glyph": {
+    "d": "M 33.8 49.2 L 43 49 L 65.9 33.5 M 43 49 C 50 52.5 57.5 55.5 61 60.5 C 63.8 64.5 62.5 70.8 58 70.8 C 54.5 70.8 53 67 54.4 63",
+    "rings": [
+     [
+      28.6,
+      49.8,
+      5.2
+     ],
+     [
+      70.6,
+      32,
+      4.9
+     ]
+    ],
+    "dots": []
+   },
+   "strokes": "A short stroke from a ring at the left forks: one branch rises to the right into a ring, the other drops to the right and curls round into an open hook.",
+   "formConfidence": "medium",
+   "note": "The ambiguous detail is the lower-right curl, which turns back on itself but does not close in any of the three copies compared (no enclosed paper); it is drawn as an open curl, its end kept clear of the stroke so that the gap shows at the kit's pen weight.",
+   "source": {
+    "plate": "plates/ibn-wahshiyya/siyuryanus/table.png (crop x 270-1665, y 1310-2505 of b22039910_jp2/b22039910_0187.jp2, the item's processed JP2, at full size)",
+    "position_as_printed": "row 1, sign 7 of 9 counting from the right (the table reads right to left); sign 7 of 28 in the table",
+    "label_as_printed": "ز (printed beneath the sign)",
+    "cell_geometry": {
+     "plate_crop_xywh": [
+      336,
+      -26,
+      200,
+      200
+     ],
+     "master_xywh": [
+      606,
+      1284,
+      200,
+      200
+     ],
+     "upscale": "2.25x Lanczos to 450 px"
+    }
+   },
+   "variants": "Compared by the independent checker (2026-10-20) with two other copies of the 1806 printing scanned for the Internet Archive: the Getty Research Institute copy (item ancientalphabets01ibnw, page image n188) and the University of North Carolina at Chapel Hill copy (item ancientalphabets00ibnw, page image n41), both Arabic p. 36, registered onto the Wellcome master and cut to the same cells. The form of this sign is the same in all three copies."
+  },
+  {
+   "order": 8,
+   "name": "ḥāʾ",
+   "value": "ح",
+   "glyph": {
+    "d": "M 36.6 37.7 L 50 48 L 59.8 48.8 M 50 48 L 36.8 62.3",
+    "rings": [
+     [
+      33.4,
+      33.2,
+      5.5
+     ],
+     [
+      65.3,
+      49.4,
+      5.5
+     ],
+     [
+      35.9,
+      67.3,
+      5.1
+     ]
+    ],
+    "dots": []
+   },
+   "strokes": "Three strokes meeting at a point: one from a ring at the upper left, one from a ring at the right, one from a ring at the lower left.",
+   "formConfidence": "high",
+   "note": "",
+   "source": {
+    "plate": "plates/ibn-wahshiyya/siyuryanus/table.png (crop x 270-1665, y 1310-2505 of b22039910_jp2/b22039910_0187.jp2, the item's processed JP2, at full size)",
+    "position_as_printed": "row 1, sign 8 of 9 counting from the right (the table reads right to left); sign 8 of 28 in the table",
+    "label_as_printed": "ح (printed beneath the sign)",
+    "cell_geometry": {
+     "plate_crop_xywh": [
+      193,
+      -28,
+      200,
+      200
+     ],
+     "master_xywh": [
+      463,
+      1282,
+      200,
+      200
+     ],
+     "upscale": "2.25x Lanczos to 450 px"
+    }
+   },
+   "variants": "Compared by the independent checker (2026-10-20) with two other copies of the 1806 printing scanned for the Internet Archive: the Getty Research Institute copy (item ancientalphabets01ibnw, page image n188) and the University of North Carolina at Chapel Hill copy (item ancientalphabets00ibnw, page image n41), both Arabic p. 36, registered onto the Wellcome master and cut to the same cells. The form of this sign is the same in all three copies."
+  },
+  {
+   "order": 9,
+   "name": "ṭāʾ",
+   "value": "ط",
+   "glyph": {
+    "d": "M 36.8 38.1 L 52 51 L 65.1 36.8 M 52 51 L 51.8 58.4",
+    "rings": [
+     [
+      31.7,
+      36.6,
+      5.3
+     ],
+     [
+      70.2,
+      34.8,
+      5.5
+     ],
+     [
+      51.4,
+      64.4,
+      6
+     ]
+    ],
+    "dots": []
+   },
+   "strokes": "A Y: two arms from rings at the upper left and upper right meet in a short stem, which ends in a ring below.",
+   "formConfidence": "high",
+   "note": "",
+   "source": {
+    "plate": "plates/ibn-wahshiyya/siyuryanus/table.png (crop x 270-1665, y 1310-2505 of b22039910_jp2/b22039910_0187.jp2, the item's processed JP2, at full size)",
+    "position_as_printed": "row 1, sign 9 of 9 counting from the right (the table reads right to left); sign 9 of 28 in the table",
+    "label_as_printed": "ط (printed beneath the sign)",
+    "cell_geometry": {
+     "plate_crop_xywh": [
+      48,
+      -26,
+      200,
+      200
+     ],
+     "master_xywh": [
+      318,
+      1284,
+      200,
+      200
+     ],
+     "upscale": "2.25x Lanczos to 450 px"
+    }
+   },
+   "variants": "Compared by the independent checker (2026-10-20) with two other copies of the 1806 printing scanned for the Internet Archive: the Getty Research Institute copy (item ancientalphabets01ibnw, page image n188) and the University of North Carolina at Chapel Hill copy (item ancientalphabets00ibnw, page image n41), both Arabic p. 36, registered onto the Wellcome master and cut to the same cells. The form of this sign is the same in all three copies."
+  },
+  {
+   "order": 10,
+   "name": "yāʾ",
+   "value": "ي",
+   "glyph": {
+    "d": "M 48.1 37.2 C 45.5 44 40.5 51 37.2 62.1 M 52.5 37 C 57 44 61 49 63 55.9",
+    "rings": [
+     [
+      50.1,
+      32.2,
+      5.4
+     ],
+     [
+      39.6,
+      67.6,
+      6
+     ],
+     [
+      63,
+      61.5,
+      5.6
+     ]
+    ],
+    "dots": []
+   },
+   "strokes": "Two strokes spreading downward from a ring at the top, each ending in a ring: one at the lower left, one at the right.",
+   "formConfidence": "high",
+   "note": "",
+   "source": {
+    "plate": "plates/ibn-wahshiyya/siyuryanus/table.png (crop x 270-1665, y 1310-2505 of b22039910_jp2/b22039910_0187.jp2, the item's processed JP2, at full size)",
+    "position_as_printed": "row 2, sign 1 of 8 counting from the right (the table reads right to left); sign 10 of 28 in the table",
+    "label_as_printed": "ي (printed beneath the sign)",
+    "cell_geometry": {
+     "plate_crop_xywh": [
+      1182,
+      299,
+      200,
+      200
+     ],
+     "master_xywh": [
+      1452,
+      1609,
+      200,
+      200
+     ],
+     "upscale": "2.25x Lanczos to 450 px"
+    }
+   },
+   "variants": "Compared by the independent checker (2026-10-20) with two other copies of the 1806 printing scanned for the Internet Archive: the Getty Research Institute copy (item ancientalphabets01ibnw, page image n188) and the University of North Carolina at Chapel Hill copy (item ancientalphabets00ibnw, page image n41), both Arabic p. 36, registered onto the Wellcome master and cut to the same cells. The form of this sign is the same in all three copies."
+  },
+  {
+   "order": 11,
+   "name": "kāf",
+   "value": "ك",
+   "glyph": {
+    "d": "M 24 37.5 L 22.5 51 L 29 48.5 Z M 29 48.5 L 53.5 49.5 C 59 48 64.5 44.5 69.1 49 M 54 36.4 C 54.5 38.5 54.2 41 54 44 L 53.5 60 C 53.5 61.5 53.2 62.6 52.4 64.9",
+    "rings": [
+     [
+      50.6,
+      33,
+      4.8
+     ],
+     [
+      72.9,
+      52.6,
+      5.2
+     ],
+     [
+      48.8,
+      67.6,
+      4.5
+     ]
+    ],
+    "dots": []
+   },
+   "strokes": "A cross: an upright running from a ring at the top to a ring at the foot, both set to the left; a bar crossing it, beginning at the left in a small closed triangle and ending at the right in a ring.",
+   "formConfidence": "medium",
+   "note": "The ambiguous detail is the left end of the bar, a small closed triangle with its point upward rather than a round ring; it is drawn as a triangle at its printed size. Its opening, a speck in all three copies, fills in at the kit's pen weight, so the drawn triangle reads as solid.",
+   "source": {
+    "plate": "plates/ibn-wahshiyya/siyuryanus/table.png (crop x 270-1665, y 1310-2505 of b22039910_jp2/b22039910_0187.jp2, the item's processed JP2, at full size)",
+    "position_as_printed": "row 2, sign 2 of 8 counting from the right (the table reads right to left); sign 11 of 28 in the table",
+    "label_as_printed": "ك (printed beneath the sign)",
+    "cell_geometry": {
+     "plate_crop_xywh": [
+      1046,
+      299,
+      200,
+      200
+     ],
+     "master_xywh": [
+      1316,
+      1609,
+      200,
+      200
+     ],
+     "upscale": "2.25x Lanczos to 450 px"
+    }
+   },
+   "variants": "Compared by the independent checker (2026-10-20) with two other copies of the 1806 printing scanned for the Internet Archive: the Getty Research Institute copy (item ancientalphabets01ibnw, page image n188) and the University of North Carolina at Chapel Hill copy (item ancientalphabets00ibnw, page image n41), both Arabic p. 36, registered onto the Wellcome master and cut to the same cells. The form of this sign is the same in all three copies."
+  },
+  {
+   "order": 12,
+   "name": "lām",
+   "value": "ل",
+   "glyph": {
+    "d": "M 37.3 34.5 C 39.5 38 40.5 43 40.8 48 C 40.8 55 40 60 35.4 66.6 M 40.8 48 L 61.7 35.2 M 40.8 48 L 64.7 65.1",
+    "rings": [
+     [
+      34,
+      31.6,
+      4.4
+     ],
+     [
+      66.5,
+      36.3,
+      4.9
+     ],
+     [
+      31.9,
+      69.1,
+      4.3
+     ],
+     [
+      63.7,
+      70.3,
+      5.3
+     ]
+    ],
+    "dots": []
+   },
+   "strokes": "A K: an upright from a ring at the top to a ring at the foot, with two arms from its middle, up and down to the right, each ending in a ring.",
+   "formConfidence": "high",
+   "note": "",
+   "source": {
+    "plate": "plates/ibn-wahshiyya/siyuryanus/table.png (crop x 270-1665, y 1310-2505 of b22039910_jp2/b22039910_0187.jp2, the item's processed JP2, at full size)",
+    "position_as_printed": "row 2, sign 3 of 8 counting from the right (the table reads right to left); sign 12 of 28 in the table",
+    "label_as_printed": "ل (printed beneath the sign)",
+    "cell_geometry": {
+     "plate_crop_xywh": [
+      897,
+      295,
+      200,
+      200
+     ],
+     "master_xywh": [
+      1167,
+      1605,
+      200,
+      200
+     ],
+     "upscale": "2.25x Lanczos to 450 px"
+    }
+   },
+   "variants": "Compared by the independent checker (2026-10-20) with two other copies of the 1806 printing scanned for the Internet Archive: the Getty Research Institute copy (item ancientalphabets01ibnw, page image n188) and the University of North Carolina at Chapel Hill copy (item ancientalphabets00ibnw, page image n41), both Arabic p. 36, registered onto the Wellcome master and cut to the same cells. The form of this sign is the same in all three copies."
+  },
+  {
+   "order": 13,
+   "name": "mīm",
+   "value": "م",
+   "glyph": {
+    "d": "M 31.6 39.4 C 36 44 42 46.5 49.6 48 M 56.2 45.3 L 49.6 48 C 44 52 36 57.5 30.4 64.3 M 67.2 35.2 C 66 37.5 65.5 40 65.5 43 L 66.5 57 C 66.6 58.5 67 60 68.5 61.9",
+    "rings": [
+     [
+      29.8,
+      34.7,
+      5
+     ],
+     [
+      30.1,
+      68.9,
+      4.6
+     ],
+     [
+      70.9,
+      32.5,
+      4.6
+     ],
+     [
+      71.9,
+      64.7,
+      4.4
+     ]
+    ],
+    "dots": []
+   },
+   "strokes": "Two separate parts: on the left a long stroke slanting down to a ring at the lower left, joined at its middle by a stroke from a ring at the upper left; on the right an upright with a ring at each end, both set to the right.",
+   "formConfidence": "high",
+   "note": "",
+   "source": {
+    "plate": "plates/ibn-wahshiyya/siyuryanus/table.png (crop x 270-1665, y 1310-2505 of b22039910_jp2/b22039910_0187.jp2, the item's processed JP2, at full size)",
+    "position_as_printed": "row 2, sign 4 of 8 counting from the right (the table reads right to left); sign 13 of 28 in the table",
+    "label_as_printed": "م (printed beneath the sign)",
+    "cell_geometry": {
+     "plate_crop_xywh": [
+      736,
+      296,
+      200,
+      200
+     ],
+     "master_xywh": [
+      1006,
+      1606,
+      200,
+      200
+     ],
+     "upscale": "2.25x Lanczos to 450 px"
+    }
+   },
+   "variants": "Compared by the independent checker (2026-10-20) with two other copies of the 1806 printing scanned for the Internet Archive: the Getty Research Institute copy (item ancientalphabets01ibnw, page image n188) and the University of North Carolina at Chapel Hill copy (item ancientalphabets00ibnw, page image n41), both Arabic p. 36, registered onto the Wellcome master and cut to the same cells. The form of this sign is the same in all three copies."
+  },
+  {
+   "order": 14,
+   "name": "nūn",
+   "value": "ن",
+   "glyph": {
+    "d": "M 29.1 37.5 C 36 38.5 45 47 50.7 58.8 M 49.8 37.1 L 50.7 58.8 M 70.9 37.8 C 64 43 55 51 50.7 58.8",
+    "rings": [
+     [
+      24.2,
+      36.3,
+      5
+     ],
+     [
+      47.8,
+      32.5,
+      5
+     ],
+     [
+      75.2,
+      35.2,
+      5
+     ],
+     [
+      50.8,
+      64.8,
+      6
+     ]
+    ],
+    "dots": []
+   },
+   "strokes": "Three strokes from rings at the left, top and right converge on a ring hanging below them.",
+   "formConfidence": "high",
+   "note": "The top and bottom rings are printed as tall ovals and the left one as a flat oval; all are drawn as the kit's round rings, centred on the printed rings.",
+   "source": {
+    "plate": "plates/ibn-wahshiyya/siyuryanus/table.png (crop x 270-1665, y 1310-2505 of b22039910_jp2/b22039910_0187.jp2, the item's processed JP2, at full size)",
+    "position_as_printed": "row 2, sign 5 of 8 counting from the right (the table reads right to left); sign 14 of 28 in the table",
+    "label_as_printed": "ن (printed beneath the sign)",
+    "cell_geometry": {
+     "plate_crop_xywh": [
+      560,
+      296,
+      200,
+      200
+     ],
+     "master_xywh": [
+      830,
+      1606,
+      200,
+      200
+     ],
+     "upscale": "2.25x Lanczos to 450 px"
+    }
+   },
+   "variants": "Compared by the independent checker (2026-10-20) with two other copies of the 1806 printing scanned for the Internet Archive: the Getty Research Institute copy (item ancientalphabets01ibnw, page image n188) and the University of North Carolina at Chapel Hill copy (item ancientalphabets00ibnw, page image n41), both Arabic p. 36, registered onto the Wellcome master and cut to the same cells. The form of this sign is the same in all three copies."
+  },
+  {
+   "order": 15,
+   "name": "sīn",
+   "value": "س",
+   "glyph": {
+    "d": "M 48.7 37.5 L 48.8 43.5 L 34.9 63.7 M 48.8 43.5 C 47.5 50 47.5 57 49 64.1 M 48.8 43.5 L 64.5 61.3",
+    "rings": [
+     [
+      48.6,
+      32.3,
+      5.2
+     ],
+     [
+      30.5,
+      66,
+      5
+     ],
+     [
+      52.2,
+      67.4,
+      4.6
+     ],
+     [
+      68.6,
+      63.7,
+      4.8
+     ]
+    ],
+    "dots": []
+   },
+   "strokes": "A short stem from a ring at the top splits into three strokes spreading downward, each ending in a ring.",
+   "formConfidence": "high",
+   "note": "",
+   "source": {
+    "plate": "plates/ibn-wahshiyya/siyuryanus/table.png (crop x 270-1665, y 1310-2505 of b22039910_jp2/b22039910_0187.jp2, the item's processed JP2, at full size)",
+    "position_as_printed": "row 2, sign 6 of 8 counting from the right (the table reads right to left); sign 15 of 28 in the table",
+    "label_as_printed": "س (printed beneath the sign)",
+    "cell_geometry": {
+     "plate_crop_xywh": [
+      408,
+      294,
+      200,
+      200
+     ],
+     "master_xywh": [
+      678,
+      1604,
+      200,
+      200
+     ],
+     "upscale": "2.25x Lanczos to 450 px"
+    }
+   },
+   "variants": "Compared by the independent checker (2026-10-20) with two other copies of the 1806 printing scanned for the Internet Archive: the Getty Research Institute copy (item ancientalphabets01ibnw, page image n188) and the University of North Carolina at Chapel Hill copy (item ancientalphabets00ibnw, page image n41), both Arabic p. 36, registered onto the Wellcome master and cut to the same cells. The form of this sign is the same in all three copies."
+  },
+  {
+   "order": 16,
+   "name": "ʿayn",
+   "value": "ع",
+   "glyph": {
+    "d": "M 36.7 35.5 C 35.8 37.5 35.6 40 35.6 43 L 36 59 C 36 61 36.3 62.5 37.8 65 M 33.7 48.9 L 38.5 49 L 70.1 31.8 M 38.5 49 L 69.4 64.5",
+    "rings": [
+     [
+      40.8,
+      32.6,
+      5
+     ],
+     [
+      41.8,
+      68,
+      5
+     ],
+     [
+      28.3,
+      48.8,
+      5.4
+     ],
+     [
+      74.2,
+      34.3,
+      4.8
+     ],
+     [
+      74,
+      62,
+      5.2
+     ]
+    ],
+    "dots": []
+   },
+   "strokes": "An upright running from a ring at the top to a ring at the foot, both set to the right; across its middle a stroke from a ring at the left forks into two arms to the right, each ending in a ring.",
+   "formConfidence": "high",
+   "note": "",
+   "source": {
+    "plate": "plates/ibn-wahshiyya/siyuryanus/table.png (crop x 270-1665, y 1310-2505 of b22039910_jp2/b22039910_0187.jp2, the item's processed JP2, at full size)",
+    "position_as_printed": "row 2, sign 7 of 8 counting from the right (the table reads right to left); sign 16 of 28 in the table",
+    "label_as_printed": "ع (printed beneath the sign)",
+    "cell_geometry": {
+     "plate_crop_xywh": [
+      238,
+      296,
+      200,
+      200
+     ],
+     "master_xywh": [
+      508,
+      1606,
+      200,
+      200
+     ],
+     "upscale": "2.25x Lanczos to 450 px"
+    }
+   },
+   "variants": "Compared by the independent checker (2026-10-20) with two other copies of the 1806 printing scanned for the Internet Archive: the Getty Research Institute copy (item ancientalphabets01ibnw, page image n188) and the University of North Carolina at Chapel Hill copy (item ancientalphabets00ibnw, page image n41), both Arabic p. 36, registered onto the Wellcome master and cut to the same cells. The form of this sign is the same in all three copies."
+  },
+  {
+   "order": 17,
+   "name": "fāʾ",
+   "value": "ف",
+   "glyph": {
+    "d": "M 21.7 36.6 C 22 42 27 48.5 36 50 L 58 50 L 70.8 49 M 26.1 64.7 C 26.5 58 30 52 36 50 M 58 50 C 62 44 64.5 38 70.5 33.3 M 58 50 L 64.5 63.5 C 66 66 68.5 67.8 71.6 68.6",
+    "rings": [
+     [
+      23.6,
+      32.7,
+      4.3
+     ],
+     [
+      27.2,
+      68.9,
+      4.3
+     ],
+     [
+      74.6,
+      31.3,
+      4.6
+     ],
+     [
+      75.8,
+      49.3,
+      5
+     ],
+     [
+      76.4,
+      69.4,
+      4.5
+     ]
+    ],
+    "dots": []
+   },
+   "strokes": "A level stroke forked at both ends: at the left into two curved arms from rings above and below, at the right into three arms, up, level and down, each ending in a ring.",
+   "formConfidence": "high",
+   "note": "",
+   "source": {
+    "plate": "plates/ibn-wahshiyya/siyuryanus/table.png (crop x 270-1665, y 1310-2505 of b22039910_jp2/b22039910_0187.jp2, the item's processed JP2, at full size)",
+    "position_as_printed": "row 2, sign 8 of 8 counting from the right (the table reads right to left); sign 17 of 28 in the table",
+    "label_as_printed": "ف (printed beneath the sign)",
+    "cell_geometry": {
+     "plate_crop_xywh": [
+      60,
+      296,
+      200,
+      200
+     ],
+     "master_xywh": [
+      330,
+      1606,
+      200,
+      200
+     ],
+     "upscale": "2.25x Lanczos to 450 px"
+    }
+   },
+   "variants": "Compared by the independent checker (2026-10-20) with two other copies of the 1806 printing scanned for the Internet Archive: the Getty Research Institute copy (item ancientalphabets01ibnw, page image n188) and the University of North Carolina at Chapel Hill copy (item ancientalphabets00ibnw, page image n41), both Arabic p. 36, registered onto the Wellcome master and cut to the same cells. The form of this sign is the same in all three copies."
+  },
+  {
+   "order": 18,
+   "name": "ṣād",
+   "value": "ص",
+   "glyph": {
+    "d": "M 41.9 33.2 C 42.5 40 44.5 47 44.5 53.5 C 44 58 41.5 61 37.9 64.4 M 26.6 48.9 C 33 53.5 44 53.5 52.5 52 C 60 50.5 65.5 47.5 71.4 46.1",
+    "rings": [
+     [
+      45.6,
+      30.3,
+      4.7
+     ],
+     [
+      23.8,
+      44.9,
+      4.9
+     ],
+     [
+      76.3,
+      47.3,
+      5
+     ],
+     [
+      39.9,
+      68.9,
+      4.9
+     ]
+    ],
+    "dots": []
+   },
+   "strokes": "Two crossing strokes, each with a ring at both ends: one descending from a ring at the top to a ring below, bowed a little to the right; the other running from a ring at the left, low across it and up to a ring at the right.",
+   "formConfidence": "high",
+   "note": "",
+   "source": {
+    "plate": "plates/ibn-wahshiyya/siyuryanus/table.png (crop x 270-1665, y 1310-2505 of b22039910_jp2/b22039910_0187.jp2, the item's processed JP2, at full size)",
+    "position_as_printed": "row 3, sign 1 of 7 counting from the right (the table reads right to left); sign 18 of 28 in the table",
+    "label_as_printed": "ص (printed beneath the sign)",
+    "cell_geometry": {
+     "plate_crop_xywh": [
+      1148,
+      624,
+      200,
+      200
+     ],
+     "master_xywh": [
+      1418,
+      1934,
+      200,
+      200
+     ],
+     "upscale": "2.25x Lanczos to 450 px"
+    }
+   },
+   "variants": "Compared by the independent checker (2026-10-20) with two other copies of the 1806 printing scanned for the Internet Archive: the Getty Research Institute copy (item ancientalphabets01ibnw, page image n188) and the University of North Carolina at Chapel Hill copy (item ancientalphabets00ibnw, page image n41), both Arabic p. 36, registered onto the Wellcome master and cut to the same cells. The form of this sign is the same in all three copies."
+  },
+  {
+   "order": 19,
+   "name": "qāf",
+   "value": "ق",
+   "glyph": {
+    "d": "M 29.5 36.5 L 24.5 44 L 29 46.5 Z M 28.5 45.5 C 28 52 28 58 32 61 C 38 63.5 50 60 58 55 C 60.5 53.5 62.5 52 65.6 51.3",
+    "rings": [
+     [
+      71.5,
+      52.5,
+      6
+     ]
+    ],
+    "dots": []
+   },
+   "strokes": "One stroke: from a small solid triangular head at the upper left it drops and sweeps round along the bottom, rising at the right into a large ring.",
+   "formConfidence": "medium",
+   "note": "The ambiguous detail is the head at the upper left, printed as a small dark triangle with only a speck of opening; it is drawn as a closed triangle, which the pen fills.",
+   "source": {
+    "plate": "plates/ibn-wahshiyya/siyuryanus/table.png (crop x 270-1665, y 1310-2505 of b22039910_jp2/b22039910_0187.jp2, the item's processed JP2, at full size)",
+    "position_as_printed": "row 3, sign 2 of 7 counting from the right (the table reads right to left); sign 19 of 28 in the table",
+    "label_as_printed": "ق (printed beneath the sign)",
+    "cell_geometry": {
+     "plate_crop_xywh": [
+      987,
+      609,
+      200,
+      200
+     ],
+     "master_xywh": [
+      1257,
+      1919,
+      200,
+      200
+     ],
+     "upscale": "2.25x Lanczos to 450 px"
+    }
+   },
+   "variants": "Compared by the independent checker (2026-10-20) with two other copies of the 1806 printing scanned for the Internet Archive: the Getty Research Institute copy (item ancientalphabets01ibnw, page image n188) and the University of North Carolina at Chapel Hill copy (item ancientalphabets00ibnw, page image n41), both Arabic p. 36, registered onto the Wellcome master and cut to the same cells. The form of this sign is the same in all three copies."
+  },
+  {
+   "order": 20,
+   "name": "rāʾ",
+   "value": "ر",
+   "glyph": {
+    "d": "M 21 60 C 23.5 63 22.5 67.5 19 68 C 16 68.5 13 66 13.5 61.5 C 14 57 18 54 23 52.5 C 32 50 45 49.5 55 50.5 C 63 51.3 69.5 52 77 56.1 M 33.4 35.9 C 35.5 40 36 45 36.5 50 C 37 58 39 66 44 69.5 C 47 71.5 50 69 51.5 64 C 53 58 53.5 50 53 44 C 52.8 41 52.5 39 51.6 35.7",
+    "rings": [
+     [
+      30.3,
+      32.8,
+      4.4
+     ],
+     [
+      48.7,
+      33,
+      4
+     ],
+     [
+      80.8,
+      60,
+      5.4
+     ]
+    ],
+    "dots": []
+   },
+   "strokes": "A long low arch running from an open curl at the left to a ring at the right; through it hangs a deep U whose two arms rise to rings at the top.",
+   "formConfidence": "medium",
+   "note": "The ambiguous detail is the left end of the arch, a curl that turns round but does not close in the print (a thin gap remains); it is drawn as an open curl, not a ring.",
+   "source": {
+    "plate": "plates/ibn-wahshiyya/siyuryanus/table.png (crop x 270-1665, y 1310-2505 of b22039910_jp2/b22039910_0187.jp2, the item's processed JP2, at full size)",
+    "position_as_printed": "row 3, sign 3 of 7 counting from the right (the table reads right to left); sign 20 of 28 in the table",
+    "label_as_printed": "ر (printed beneath the sign)",
+    "cell_geometry": {
+     "plate_crop_xywh": [
+      799,
+      620,
+      200,
+      200
+     ],
+     "master_xywh": [
+      1069,
+      1930,
+      200,
+      200
+     ],
+     "upscale": "2.25x Lanczos to 450 px"
+    }
+   },
+   "variants": "Compared by the independent checker (2026-10-20) with two other copies of the 1806 printing scanned for the Internet Archive: the Getty Research Institute copy (item ancientalphabets01ibnw, page image n188) and the University of North Carolina at Chapel Hill copy (item ancientalphabets00ibnw, page image n41), both Arabic p. 36, registered onto the Wellcome master and cut to the same cells. The form of this sign is the same in all three copies."
+  },
+  {
+   "order": 21,
+   "name": "shīn",
+   "value": "ش",
+   "glyph": {
+    "d": "M 25.5 28.5 L 21 40 L 27.5 40.5 Z M 26.5 40.5 C 27 46 30 52 37 53 C 40 53.3 43 52.5 45 52 L 70.8 47.7 M 39.6 51 L 58.8 31.4 M 46 52.5 C 50 56 53 59 55.7 65",
+    "rings": [
+     [
+      64.4,
+      30.4,
+      4.5
+     ],
+     [
+      75.9,
+      46.2,
+      5.3
+     ],
+     [
+      56.8,
+      69.4,
+      4.5
+     ]
+    ],
+    "dots": []
+   },
+   "strokes": "A stroke dropping from a small closed triangle at the upper left turns along the bottom and fans out into three strokes, up, level and down to the right, each ending in a ring.",
+   "formConfidence": "medium",
+   "note": "The ambiguous detail is the head at the upper left, a small closed triangle (point upward) rather than a round ring; it is drawn as a triangle at its printed size. Its opening, a speck in all three copies, fills in at the kit's pen weight, so the drawn head reads as solid.",
+   "source": {
+    "plate": "plates/ibn-wahshiyya/siyuryanus/table.png (crop x 270-1665, y 1310-2505 of b22039910_jp2/b22039910_0187.jp2, the item's processed JP2, at full size)",
+    "position_as_printed": "row 3, sign 4 of 7 counting from the right (the table reads right to left); sign 21 of 28 in the table",
+    "label_as_printed": "ش (printed beneath the sign)",
+    "cell_geometry": {
+     "plate_crop_xywh": [
+      618,
+      620,
+      200,
+      200
+     ],
+     "master_xywh": [
+      888,
+      1930,
+      200,
+      200
+     ],
+     "upscale": "2.25x Lanczos to 450 px"
+    }
+   },
+   "variants": "Compared by the independent checker (2026-10-20) with two other copies of the 1806 printing scanned for the Internet Archive: the Getty Research Institute copy (item ancientalphabets01ibnw, page image n188) and the University of North Carolina at Chapel Hill copy (item ancientalphabets00ibnw, page image n41), both Arabic p. 36, registered onto the Wellcome master and cut to the same cells. The form of this sign is the same in all three copies."
+  },
+  {
+   "order": 22,
+   "name": "tāʾ",
+   "value": "ت",
+   "glyph": {
+    "d": "M 25.9 35.4 L 45.1 45.6 M 24.3 48.8 L 44.5 47.9 M 26.4 62.9 L 45.3 51.2 M 56.1 47.9 L 74.5 48",
+    "rings": [
+     [
+      22.4,
+      31.8,
+      5
+     ],
+     [
+      20.2,
+      50.8,
+      4.6
+     ],
+     [
+      23.9,
+      67.2,
+      5
+     ],
+     [
+      50.3,
+      48.3,
+      5.8
+     ],
+     [
+      79.8,
+      48,
+      5.3
+     ]
+    ],
+    "dots": []
+   },
+   "strokes": "Three strokes from rings at the upper left, left and lower left converge on a ring in the middle, from which a short bar runs to a ring at the right.",
+   "formConfidence": "high",
+   "note": "The right-hand ring is printed as a tall oval; it is drawn round.",
+   "source": {
+    "plate": "plates/ibn-wahshiyya/siyuryanus/table.png (crop x 270-1665, y 1310-2505 of b22039910_jp2/b22039910_0187.jp2, the item's processed JP2, at full size)",
+    "position_as_printed": "row 3, sign 5 of 7 counting from the right (the table reads right to left); sign 22 of 28 in the table",
+    "label_as_printed": "ت (printed beneath the sign)",
+    "cell_geometry": {
+     "plate_crop_xywh": [
+      438,
+      621,
+      200,
+      200
+     ],
+     "master_xywh": [
+      708,
+      1931,
+      200,
+      200
+     ],
+     "upscale": "2.25x Lanczos to 450 px"
+    }
+   },
+   "variants": "Compared by the independent checker (2026-10-20) with two other copies of the 1806 printing scanned for the Internet Archive: the Getty Research Institute copy (item ancientalphabets01ibnw, page image n188) and the University of North Carolina at Chapel Hill copy (item ancientalphabets00ibnw, page image n41), both Arabic p. 36, registered onto the Wellcome master and cut to the same cells. The form of this sign is the same in all three copies."
+  },
+  {
+   "order": 23,
+   "name": "thāʾ",
+   "value": "ث",
+   "glyph": {
+    "d": "M 24.5 40.5 L 21.5 51 L 27.5 50.5 Z M 27.5 50.5 C 29 56 31 61 35 62.5 C 40 63.5 47 62.5 52 61.5 C 58 60 63 58.8 69.1 58.9 M 40.3 36.1 L 51 61 C 52.5 63.5 54.4 64 54.5 67 L 54.6 72 M 63.9 36.3 C 63 37.6 62.4 39 62 41 L 56.8 61.8",
+    "rings": [
+     [
+      37.3,
+      32.6,
+      4.6
+     ],
+     [
+      67.5,
+      32.4,
+      5
+     ],
+     [
+      74.1,
+      58.3,
+      5
+     ]
+    ],
+    "dots": []
+   },
+   "strokes": "A stroke dropping from a small closed triangle at the left runs along the bottom to a ring at the right; two strokes from rings at the top come down onto it a few units apart, the left one crossing it and running on a little below.",
+   "formConfidence": "medium",
+   "note": "The ambiguous detail is the head at the left, a small closed triangle (point upward) rather than a round ring; it is drawn as a triangle at its printed size, and its small opening (visible in all three copies) fills in at the kit's pen weight.",
+   "source": {
+    "plate": "plates/ibn-wahshiyya/siyuryanus/table.png (crop x 270-1665, y 1310-2505 of b22039910_jp2/b22039910_0187.jp2, the item's processed JP2, at full size)",
+    "position_as_printed": "row 3, sign 6 of 7 counting from the right (the table reads right to left); sign 23 of 28 in the table",
+    "label_as_printed": "ث (printed beneath the sign)",
+    "cell_geometry": {
+     "plate_crop_xywh": [
+      260,
+      618,
+      200,
+      200
+     ],
+     "master_xywh": [
+      530,
+      1928,
+      200,
+      200
+     ],
+     "upscale": "2.25x Lanczos to 450 px"
+    }
+   },
+   "variants": "Compared by the independent checker (2026-10-20) with two other copies of the 1806 printing scanned for the Internet Archive: the Getty Research Institute copy (item ancientalphabets01ibnw, page image n188) and the University of North Carolina at Chapel Hill copy (item ancientalphabets00ibnw, page image n41), both Arabic p. 36, registered onto the Wellcome master and cut to the same cells. The form of this sign is the same in all three copies."
+  },
+  {
+   "order": 24,
+   "name": "khāʾ",
+   "value": "خ",
+   "glyph": {
+    "d": "M 46.9 35 C 46.3 39 45 43.5 43.5 47 C 42 50.5 40 55.5 39.3 59 C 39 60.5 38.8 61.5 38.6 62.7 M 55.3 34.2 C 57.5 38.5 60 43 61 49 C 62 54 64.5 58 66 62.5 C 67.2 66.5 67 70.5 64 71.3 C 61 72 58.8 70 58.6 67 C 58.5 65.5 58.7 64.2 59.3 63 M 21.8 33.1 C 23 38 24.5 44 30 47 C 37 50.5 48 50.5 56 49.5 C 64 48 70 44 76.3 40.7",
+    "rings": [
+     [
+      19.5,
+      29.8,
+      4
+     ],
+     [
+      46.5,
+      31,
+      4
+     ],
+     [
+      53.6,
+      31,
+      3.6
+     ],
+     [
+      80.1,
+      38.4,
+      4.4
+     ],
+     [
+      37.3,
+      66.8,
+      4.3
+     ]
+    ],
+    "dots": []
+   },
+   "strokes": "Two legs spreading down from the outer lower corners of a pair of small rings side by side at the top, the left leg ending in a ring, the right one in an open curl; a sagging stroke crosses both, from a ring at the upper left to a ring at the right.",
+   "formConfidence": "low",
+   "note": "The top is a tangle at the scale of the print (about 15 by 9 units): two small loops sharing a wall, with a short stroke inside the right loop running from the shared wall down to its lower right, the same in all three copies. It is drawn as two touching rings, one on each leg; the inner stroke is not drawn, because at the kit's pen weight it would fill the ring. The curl at the foot of the right leg does not close in any copy and is drawn open.",
+   "source": {
+    "plate": "plates/ibn-wahshiyya/siyuryanus/table.png (crop x 270-1665, y 1310-2505 of b22039910_jp2/b22039910_0187.jp2, the item's processed JP2, at full size)",
+    "position_as_printed": "row 3, sign 7 of 7 counting from the right (the table reads right to left); sign 24 of 28 in the table",
+    "label_as_printed": "خ (printed beneath the sign)",
+    "cell_geometry": {
+     "plate_crop_xywh": [
+      76,
+      616,
+      200,
+      200
+     ],
+     "master_xywh": [
+      346,
+      1926,
+      200,
+      200
+     ],
+     "upscale": "2.25x Lanczos to 450 px"
+    }
+   },
+   "variants": "Compared by the independent checker (2026-10-20) with two other copies of the 1806 printing scanned for the Internet Archive: the Getty Research Institute copy (item ancientalphabets01ibnw, page image n188) and the University of North Carolina at Chapel Hill copy (item ancientalphabets00ibnw, page image n41), both Arabic p. 36, registered onto the Wellcome master and cut to the same cells. The form of this sign is the same in all three copies."
+  },
+  {
+   "order": 25,
+   "name": "dhāl",
+   "value": "ذ",
+   "glyph": {
+    "d": "M 34.4 34 C 38 38 42 41.8 47 44.6 C 52.5 47.6 59 51.5 66 53.5 L 31.4 68 M 70.5 32.3 L 35.5 50 L 67.2 68.4",
+    "rings": [
+     [
+      33.8,
+      29.5,
+      4.5
+     ],
+     [
+      74.4,
+      30.6,
+      4.3
+     ],
+     [
+      26.8,
+      68,
+      4.6
+     ],
+     [
+      71.4,
+      70,
+      4.5
+     ]
+    ],
+    "dots": []
+   },
+   "strokes": "Two interlaced chevrons, a > and a <, each running from a ring at the top to a ring at the bottom; they cross twice, enclosing a lozenge between them.",
+   "formConfidence": "high",
+   "note": "The four rings are printed as flat ovals; they are drawn round, centred on the printed rings. The upper arm of the > bows: it leaves its ring steeply and flattens after the first crossing.",
+   "source": {
+    "plate": "plates/ibn-wahshiyya/siyuryanus/table.png (crop x 270-1665, y 1310-2505 of b22039910_jp2/b22039910_0187.jp2, the item's processed JP2, at full size)",
+    "position_as_printed": "row 4, sign 1 of 4 counting from the right (the table reads right to left); sign 25 of 28 in the table",
+    "label_as_printed": "ذ (printed beneath the sign)",
+    "cell_geometry": {
+     "plate_crop_xywh": [
+      825,
+      946,
+      200,
+      200
+     ],
+     "master_xywh": [
+      1095,
+      2256,
+      200,
+      200
+     ],
+     "upscale": "2.25x Lanczos to 450 px"
+    }
+   },
+   "variants": "Compared by the independent checker (2026-10-20) with two other copies of the 1806 printing scanned for the Internet Archive: the Getty Research Institute copy (item ancientalphabets01ibnw, page image n188) and the University of North Carolina at Chapel Hill copy (item ancientalphabets00ibnw, page image n41), both Arabic p. 36, registered onto the Wellcome master and cut to the same cells. The form of this sign is the same in all three copies."
+  },
+  {
+   "order": 26,
+   "name": "ḍād",
+   "value": "ض",
+   "glyph": {
+    "d": "M 39.1 54.4 C 41.5 49 43.5 44 45 39 C 46.5 33 47.5 29 48.7 25.5 C 50.5 31 53 37 56 42.5 C 58.5 47 60 51 60.3 56.7 M 38.4 35.2 C 42 39 45 43 46.5 47.5 C 47.8 51 48.6 54 48.6 57 L 48.4 74 M 48.6 57 C 50.5 51 53 44 56 38.5 C 58.5 33 61 28.5 64.5 27.5 C 67.5 27 68.5 30.5 67.3 33.2 C 66.6 34.6 65.8 35.6 64.8 36.3",
+    "rings": [
+     [
+      34.9,
+      32.4,
+      4.5
+     ],
+     [
+      36.8,
+      58.4,
+      4.6
+     ],
+     [
+      61,
+      61.6,
+      5
+     ]
+    ],
+    "dots": []
+   },
+   "strokes": "An inverted V from a high peak, its feet ending in rings at the lower left and lower right, interlaced with a Y: a V from a ring at the upper left and an open curl at the upper right, meeting in a stem that runs down below the figure.",
+   "formConfidence": "medium",
+   "note": "This is the most tangled sign of the table. The ambiguous details are the crossings of the two figures, read as an inverted V laid over a Y, and the upper-right curl, which turns round but leaves a gap in the Wellcome and Getty copies (it closes in the UNC copy); it is drawn open, its end kept clear of the stroke so that the gap shows at the kit's pen weight. In the Wellcome scan the lower-left ring also touches the central stem, closing a small eye between them (about x 41-46, y 48-56); the Getty and UNC copies show no such eye, and the ring is drawn a little apart from the stem.",
+   "source": {
+    "plate": "plates/ibn-wahshiyya/siyuryanus/table.png (crop x 270-1665, y 1310-2505 of b22039910_jp2/b22039910_0187.jp2, the item's processed JP2, at full size)",
+    "position_as_printed": "row 4, sign 2 of 4 counting from the right (the table reads right to left); sign 26 of 28 in the table",
+    "label_as_printed": "ض (printed beneath the sign)",
+    "cell_geometry": {
+     "plate_crop_xywh": [
+      682,
+      942,
+      200,
+      200
+     ],
+     "master_xywh": [
+      952,
+      2252,
+      200,
+      200
+     ],
+     "upscale": "2.25x Lanczos to 450 px"
+    }
+   },
+   "variants": "Compared by the independent checker (2026-10-20) with two other copies of the 1806 printing scanned for the Internet Archive: the Getty Research Institute copy (item ancientalphabets01ibnw, page image n188) and the University of North Carolina at Chapel Hill copy (item ancientalphabets00ibnw, page image n41), both Arabic p. 36, registered onto the Wellcome master and cut to the same cells. The copies differ in two small details: the upper-right curl is open in the Wellcome and Getty copies but closed in the UNC copy, and the eye between the lower-left ring and the stem is in the Wellcome scan only."
+  },
+  {
+   "order": 27,
+   "name": "ẓāʾ",
+   "value": "ظ",
+   "glyph": {
+    "d": "M 33.7 38.9 C 39 37.5 43 41 46 47 C 49 53 51.5 60 53 67.5 M 67.4 42.5 C 61 47.5 57.5 53 55.5 58.5 C 54.3 62 53.5 65 53 67.5 M 34.5 55.5 C 31 54 27.5 56.5 27.5 60 C 27.5 63.5 31 65.5 34.5 63.5 C 38.5 61 42 56 45 50 C 47.5 44 49.5 36 51.5 30 C 53.5 36 56.5 43 59.5 48.5 C 61 51 62.5 53 66 57.1",
+    "rings": [
+     [
+      30.3,
+      41.5,
+      4.3
+     ],
+     [
+      70.3,
+      39.4,
+      4.3
+     ],
+     [
+      69.3,
+      60.5,
+      4.7
+     ]
+    ],
+    "dots": []
+   },
+   "strokes": "A V from rings at the upper left and upper right, interlaced with an inverted V from a high peak whose feet end in an open curl at the lower left and a ring at the lower right.",
+   "formConfidence": "medium",
+   "note": "The ambiguous details are the crossings of the two figures, read as an inverted V laid over a V, and the lower-left curl, which does not close in the print and is drawn open.",
+   "source": {
+    "plate": "plates/ibn-wahshiyya/siyuryanus/table.png (crop x 270-1665, y 1310-2505 of b22039910_jp2/b22039910_0187.jp2, the item's processed JP2, at full size)",
+    "position_as_printed": "row 4, sign 3 of 4 counting from the right (the table reads right to left); sign 27 of 28 in the table",
+    "label_as_printed": "ظ (printed beneath the sign)",
+    "cell_geometry": {
+     "plate_crop_xywh": [
+      552,
+      936,
+      200,
+      200
+     ],
+     "master_xywh": [
+      822,
+      2246,
+      200,
+      200
+     ],
+     "upscale": "2.25x Lanczos to 450 px"
+    }
+   },
+   "variants": "Compared by the independent checker (2026-10-20) with two other copies of the 1806 printing scanned for the Internet Archive: the Getty Research Institute copy (item ancientalphabets01ibnw, page image n188) and the University of North Carolina at Chapel Hill copy (item ancientalphabets00ibnw, page image n41), both Arabic p. 36, registered onto the Wellcome master and cut to the same cells. The form of this sign is the same in all three copies."
+  },
+  {
+   "order": 28,
+   "name": "ghayn",
+   "value": "غ",
+   "glyph": {
+    "d": "M 35 31 L 67.5 50 L 33.9 67.8 M 66.3 33.5 L 45.5 49 M 45.4 52.3 L 65.3 67.3",
+    "rings": [
+     [
+      30,
+      31,
+      5
+     ],
+     [
+      69.4,
+      30.1,
+      4.6
+     ],
+     [
+      41.3,
+      50.6,
+      4.5
+     ],
+     [
+      29.2,
+      68.6,
+      4.8
+     ],
+     [
+      70.2,
+      68.3,
+      5
+     ]
+    ],
+    "dots": []
+   },
+   "strokes": "A > from a ring at the upper left to a ring at the lower left, interlaced with a < whose point is replaced by a ring: its arms run from that ring to rings at the upper right and lower right.",
+   "formConfidence": "high",
+   "note": "",
+   "source": {
+    "plate": "plates/ibn-wahshiyya/siyuryanus/table.png (crop x 270-1665, y 1310-2505 of b22039910_jp2/b22039910_0187.jp2, the item's processed JP2, at full size)",
+    "position_as_printed": "row 4, sign 4 of 4 counting from the right (the table reads right to left); sign 28 of 28 in the table",
+    "label_as_printed": "غ (printed beneath the sign)",
+    "cell_geometry": {
+     "plate_crop_xywh": [
+      396,
+      944,
+      200,
+      200
+     ],
+     "master_xywh": [
+      666,
+      2254,
+      200,
+      200
+     ],
+     "upscale": "2.25x Lanczos to 450 px"
+    }
+   },
+   "variants": "Compared by the independent checker (2026-10-20) with two other copies of the 1806 printing scanned for the Internet Archive: the Getty Research Institute copy (item ancientalphabets01ibnw, page image n188) and the University of North Carolina at Chapel Hill copy (item ancientalphabets00ibnw, page image n41), both Arabic p. 36, registered onto the Wellcome master and cut to the same cells. The form of this sign is the same in all three copies."
+  }
+ ]
+}

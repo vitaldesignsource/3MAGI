@@ -1,0 +1,499 @@
+{
+ "key": "enochian",
+ "title": "The Enochian (Angelical) Alphabet",
+ "otherNames": [
+  "Angelical alphabet",
+  "Angelic script",
+  "Dee's alphabet",
+  "the letters of Liber Loagaeth",
+  "Enochian script"
+ ],
+ "family": "Early modern revealed script, from the angel conversations John Dee recorded with the scryer Edward Kelley (1583). It is not one of Agrippa's alphabets, and no derivation from any earlier alphabet is documented.",
+ "summary": "A script of 21 letters, each with a name (Un, Pa, Veh, Gal …) and a Latin equivalent. John Dee recorded it in 1583 from what his scryer Edward Kelley reported seeing in the shew-stone. According to Wikipedia, Kelley's first vision of a 21-letter alphabet was on 26 March 1583. Dee's table of the letters is in his diary for 6 May 1583 (British Library, Sloane MS 3188, f. 104). The letters were tied to the angelic 'Book of Enoch', Liber Loagaeth (Sloane MS 3189). Dee and Kelley credit the angels with it. Since Donald Laycock's Complete Enochian Dictionary (1978), scholars have studied the script and language as historical artefacts. Its modern ritual life began with the Golden Dawn and Aleister Crowley.",
+ "firstAttestation": {
+  "work": "Dee's records of his angel conversations (the Libri Mysteriorum), the fifth book",
+  "author": "John Dee (recorder), reporting what Edward Kelley said he saw",
+  "date": "26 March 1583 (first vision of a 21-letter alphabet, per Wikipedia's 'Enochian magic'); 6 May 1583 (Dee's table of the 21 letters, per the Commons file description)",
+  "place": "Dee's house at Mortlake, near London (from general knowledge; place not re-verified this session)",
+  "locator": "British Library, Sloane MS 3188. The 6 May 1583 table is on f. 104. One search summary placed the 26 March record at f. 64, but I did not verify that folio.",
+  "notes": "The British Library catalogue describes Sloane MS 3188 (ff. 1r–169v) as Dee's conferences with angels, in five books. It gives their span as 22 December 1581 to 30 May 1583, while another source in the results gives 22 December 1581 to 23 May 1583. A Peterson transcript of Liber Mysteriorum Quintus begins at '1583 Martij 23', which suggests both March and May entries fall in the fifth book. That book attribution is medium confidence. Kelley began working with Dee in 1582. The alphabet itself dates from 1583, so a page dating 'the letters' to 1582 is wrong."
+ },
+ "transmission": [
+  {
+   "date": "26 March – 6 May 1583",
+   "work": "Libri Mysteriorum (British Library, Sloane MS 3188)",
+   "author": "John Dee",
+   "what": "Records Kelley's visions of a 21-letter alphabet. On 6 May 1583 Dee wrote out a table giving each letter's form, name and Latin equivalent (f. 104). This is the primary source for the letters."
+  },
+  {
+   "date": "1583",
+   "work": "Liber Mysteriorum Sextus et Sanctus, also called the Book of Enoch or Liber Loagaeth (Sloane MS 3189, ff. 1r–65r)",
+   "author": "Transcribed by Edward Kelley, according to the British Library catalogue",
+   "what": "The angelic book the letters belonged to. From f. 10r onwards it consists largely of grids of letters and numbers, 49 rows by 49 columns. Sources disagree on the number of tables: Wikipedia says 98 (which Dee counted as 49 leaves), and another source says 95 filled, 2 unfilled and 4 drawn at double size. Tables from the Book of Soyga (Aldaraia) are appended in Dee's hand. I could not verify whether the grids are written in Enochian or Latin characters."
+  },
+  {
+   "date": "1584 (later actions, Kraków; date from general knowledge, not re-verified)",
+   "work": "The 48 Claves Angelicae (the 'Calls' or 'Keys') in Dee's later records (Sloane MS 3191; the actions in Cotton Appendix XLVI)",
+   "author": "John Dee and Edward Kelley",
+   "what": "These are the texts of the angelic language that come with English glosses, and they are the basis of every later lexicon. Dee recorded that they were dictated letter by letter in reverse order. That backwards dictation belongs to the Calls, not to the alphabet. Manuscript references are from general knowledge."
+  },
+  {
+   "date": "later 17th century (before Ashmole's death in 1692)",
+   "work": "Fair copy of Sloane MS 3188, now Sloane MS 3677",
+   "author": "Elias Ashmole",
+   "what": "A copy of Dee's first five books, the volumes that contain the alphabet table. It is described in the British Library catalogue record."
+  },
+  {
+   "date": "1659",
+   "work": "A True & Faithful Relation of What passed for many Yeers Between Dr. John Dee … and Some Spirits (London)",
+   "author": "Meric Casaubon (editor)",
+   "what": "Printed Dee's later actions, from 28 May 1583 onwards (the start date is from general knowledge), as a warning against spirit-dealing. It does not print the 6 May 1583 table, which lies before its starting point. I could not verify whether it prints the letters elsewhere."
+  },
+  {
+   "date": "1888 – 1890s",
+   "work": "Teaching papers of the Hermetic Order of the Golden Dawn",
+   "author": "S. L. MacGregor Mathers, W. W. Westcott and others",
+   "what": "Built Dee's tables and language into a ritual system, and used the letters in that system's materials. The founding date and the 1890s development follow the site's existing timeline and Asprem 2012. Emblems of living organisations are not to be reproduced."
+  },
+  {
+   "date": "1909 (visions); published 1911–1912",
+   "work": "The Vision and the Voice; the Calls and Dee's tables in The Equinox, vol. I",
+   "author": "Aleister Crowley",
+   "what": "Used the Calls of the thirty Aethyrs and published Enochian material for a wide readership. Issue numbers and dates are from general knowledge, not re-verified this session."
+  },
+  {
+   "date": "1978",
+   "work": "The Complete Enochian Dictionary: A Dictionary of the Angelic Language as Revealed to Dr. John Dee and Edward Kelley (London: Askin; later Weiser reprints)",
+   "author": "Donald C. Laycock",
+   "what": "The first full linguistic study: a lexicon, a pronunciation guide for the 21 letters and an alphabet table with Dee's names. It is still the standard reference."
+  },
+  {
+   "date": "1999",
+   "work": "John Dee's Conversations with Angels: Cabala, Alchemy, and the End of Nature (Cambridge University Press)",
+   "author": "Deborah E. Harkness",
+   "what": "Places the angel conversations, the 'Adamic' language among them, in Dee's natural philosophy and his apocalyptic hopes. It takes Dee on his own terms without endorsing him."
+  },
+  {
+   "date": "2003",
+   "work": "John Dee's Five Books of Mystery (Boston: Weiser); later re-issued as Mysteriorum Libri Quinque (Weiser Enochian Library)",
+   "author": "Joseph H. Peterson (editor)",
+   "what": "Edits Sloane MS 3188 in full, including the March–May 1583 records of the alphabet. The re-issue's year was not confirmed this session."
+  },
+  {
+   "date": "2012",
+   "work": "Arguing with Angels: Enochian Magic and Modern Occulture (Albany: SUNY Press)",
+   "author": "Egil Asprem",
+   "what": "Traces how the material was reinterpreted after Dee, through Casaubon, the Golden Dawn, Crowley and later authors."
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Edward Kelley reported seeing a 21-letter alphabet in the shew-stone on 26 March 1583, and Dee recorded it.",
+   "standing": "documented",
+   "evidence": "Dee's diary, Sloane MS 3188. The date is as given in Wikipedia's 'Enochian magic' article, seen in search results.",
+   "sources": [
+    "Wikipedia, 'Enochian magic'",
+    "British Library, Sloane MS 3188"
+   ]
+  },
+  {
+   "claim": "Dee's table of the 21 letters, giving each one's form, name and Latin value, is in his diary entry for 6 May 1583.",
+   "standing": "documented",
+   "evidence": "The Commons scan of Sloane MS 3188, f. 104, is described as Dee's manuscript diary for 6 May 1583 showing the 21 letters.",
+   "sources": [
+    "Wikimedia Commons, File:Enochian letters (1583 manuscript).png",
+    "Wikipedia, 'Enochian'"
+   ]
+  },
+  {
+   "claim": "The letters came from angels.",
+   "standing": "attributed",
+   "evidence": "This is how Dee and Kelley present them in Dee's records. Report it as 'Dee recorded that Kelley saw …' or 'the angels, Dee wrote, …', never as fact.",
+   "sources": [
+    "Sloane MS 3188 (Peterson 2003)"
+   ]
+  },
+  {
+   "claim": "It is the language of Adam, and Enoch was the last person before Dee and Kelley to know it. This is where the name 'Enochian' comes from.",
+   "standing": "legend",
+   "evidence": "This is ascribed to Dee's angels. Dee called it 'Angelical' or the language of Adam rather than 'Enochian', which became the usual label later. Source: Wikipedia's 'Enochian' article and Asprem 2012; the article wording is from my memory and was not re-checked this session.",
+   "sources": [
+    "Wikipedia, 'Enochian'",
+    "Asprem 2012"
+   ]
+  },
+  {
+   "claim": "Liber Loagaeth (Sloane MS 3189) was transcribed by Edward Kelley in 1583.",
+   "standing": "disputed",
+   "evidence": "The British Library catalogue entry says Kelley transcribed it. Another catalogue listing in the results says Sloane MSS 3188, 3189 and 3191 are all in Dee's hand. A third source says the appended Soyga tables are in Dee's hand, unlike the rest. Report the British Library attribution and note the dispute.",
+   "sources": [
+    "British Library Archives and Manuscripts catalogue",
+    "booksofmagick.com listing (weak)"
+   ]
+  },
+  {
+   "claim": "Liber Loagaeth has 49 tables (or leaves), each a 49 × 49 grid.",
+   "standing": "disputed",
+   "evidence": "The British Library says grids of 49 × 49 from f. 10r onwards. Wikipedia says 98 tables, which Dee counted as 49. Another source says 95 filled tables, 2 unfilled and 4 at double size.",
+   "sources": [
+    "British Library catalogue",
+    "Wikipedia, 'Enochian'"
+   ]
+  },
+  {
+   "claim": "The script is written from right to left, like Hebrew.",
+   "standing": "documented",
+   "evidence": "Widely reported in Laycock and the modern editions, and in my own knowledge, but not confirmed by any search result this session. Verify it in Peterson 2003 or Laycock 1978 before stating it on the page.",
+   "sources": [
+    "Laycock 1978 (not re-checked)"
+   ]
+  },
+  {
+   "claim": "Kelley composed the alphabet and language himself.",
+   "standing": "disputed",
+   "evidence": "Laycock's analysis found the language's sounds and grammar close to English, which scholars read as a sign of human composition. Harkness and Asprem treat the question of origin historically and do not settle it. No source documents Kelley inventing it. Present it as an open question, with neither fraud nor revelation asserted.",
+   "sources": [
+    "Laycock 1978",
+    "Harkness 1999",
+    "Asprem 2012"
+   ]
+  },
+  {
+   "claim": "Four letters (Veh, Ged, Graph, Fam) are identical in early versions with Hebrew Aleph, Cheth, Daleth and Resh.",
+   "standing": "disputed",
+   "evidence": "This comes from a Wikipedia or Commons image caption that I saw only as a search summary. It says the first two versions look more like Dee's Hebrew characters than later ones. Not verified. Check it against the manuscript before using it on the comparison page.",
+   "sources": [
+    "Wikipedia/Wikimedia Commons caption (unverified)"
+   ]
+  }
+ ],
+ "letters": [
+  {
+   "order": 1,
+   "name": "Un",
+   "value": "A",
+   "translit": "a",
+   "numeric": null,
+   "form": "NOT DESCRIBED. I could not view any image of Dee's table, and I found no source that describes this letter stroke by stroke. My memory of the shape is not reliable enough to draw from. Trace it from Dee's own table in his diary for 6 May 1583, British Library Sloane MS 3188, f. 104. A scan is on Wikimedia Commons as 'File:Enochian letters (1583 manuscript).png'. Check the result against the alphabet table in Laycock, The Complete Enochian Dictionary (1978). Do NOT draw it from a modern 'Enochian' font, Omniglot's chart or the Hebrew letter. Modern editions have regularised the forms, and the manuscripts hold more than one version.",
+   "formConfidence": "low",
+   "note": "The name and Latin value are Dee's, as given in Laycock's dictionary and the letter table on Wikipedia. Its probable position in Dee's own table is 6 of 21. That position comes from my memory of the order printed in Laycock and on Wikipedia (Pa Veh Ged Gal Or Un Graph Tal Gon Na Ur Mals Ger Drux Pal Med Don Ceph Van Fam Gisg) and was not re-checked this session. No number is given because Dee's record attaches no numerical value to the letters. Number values for Enochian letters are later additions by modern authors."
+  },
+  {
+   "order": 2,
+   "name": "Pa",
+   "value": "B",
+   "translit": "b",
+   "numeric": null,
+   "form": "NOT DESCRIBED. I could not view any image of Dee's table, and I found no source that describes this letter stroke by stroke. My memory of the shape is not reliable enough to draw from. Trace it from Dee's own table in his diary for 6 May 1583, British Library Sloane MS 3188, f. 104. A scan is on Wikimedia Commons as 'File:Enochian letters (1583 manuscript).png'. Check the result against the alphabet table in Laycock, The Complete Enochian Dictionary (1978). Do NOT draw it from a modern 'Enochian' font, Omniglot's chart or the Hebrew letter. Modern editions have regularised the forms, and the manuscripts hold more than one version.",
+   "formConfidence": "low",
+   "note": "The name and Latin value are Dee's, as given in Laycock's dictionary and the letter table on Wikipedia. Its probable position in Dee's own table is 1 of 21. That position comes from my memory of the order printed in Laycock and on Wikipedia (Pa Veh Ged Gal Or Un Graph Tal Gon Na Ur Mals Ger Drux Pal Med Don Ceph Van Fam Gisg) and was not re-checked this session. No number is given because Dee's record attaches no numerical value to the letters. Number values for Enochian letters are later additions by modern authors."
+  },
+  {
+   "order": 3,
+   "name": "Veh",
+   "value": "C (also K)",
+   "translit": "c / k",
+   "numeric": null,
+   "form": "NOT DESCRIBED. I could not view any image of Dee's table, and I found no source that describes this letter stroke by stroke. My memory of the shape is not reliable enough to draw from. A caption on Wikipedia or Wikimedia Commons, which I saw only as a search summary and did not verify, says that in the first two manuscript versions of the alphabet this letter is identical with Hebrew Aleph (א). The 6 May 1583 form may differ. Treat this as a lead for comparison, not as a basis for drawing. Trace it from Dee's own table in his diary for 6 May 1583, British Library Sloane MS 3188, f. 104. A scan is on Wikimedia Commons as 'File:Enochian letters (1583 manuscript).png'. Check the result against the alphabet table in Laycock, The Complete Enochian Dictionary (1978). Do NOT draw it from a modern 'Enochian' font, Omniglot's chart or the Hebrew letter. Modern editions have regularised the forms, and the manuscripts hold more than one version.",
+   "formConfidence": "low",
+   "note": "The name and Latin value are Dee's, as given in Laycock's dictionary and the letter table on Wikipedia. Its probable position in Dee's own table is 2 of 21. That position comes from my memory of the order printed in Laycock and on Wikipedia (Pa Veh Ged Gal Or Un Graph Tal Gon Na Ur Mals Ger Drux Pal Med Don Ceph Van Fam Gisg) and was not re-checked this session. No number is given because Dee's record attaches no numerical value to the letters. Number values for Enochian letters are later additions by modern authors. C and K share this one letter, so a transliteration back into Latin cannot tell them apart."
+  },
+  {
+   "order": 4,
+   "name": "Gal",
+   "value": "D",
+   "translit": "d",
+   "numeric": null,
+   "form": "NOT DESCRIBED. I could not view any image of Dee's table, and I found no source that describes this letter stroke by stroke. My memory of the shape is not reliable enough to draw from. Trace it from Dee's own table in his diary for 6 May 1583, British Library Sloane MS 3188, f. 104. A scan is on Wikimedia Commons as 'File:Enochian letters (1583 manuscript).png'. Check the result against the alphabet table in Laycock, The Complete Enochian Dictionary (1978). Do NOT draw it from a modern 'Enochian' font, Omniglot's chart or the Hebrew letter. Modern editions have regularised the forms, and the manuscripts hold more than one version.",
+   "formConfidence": "low",
+   "note": "The name and Latin value are Dee's, as given in Laycock's dictionary and the letter table on Wikipedia. Its probable position in Dee's own table is 4 of 21. That position comes from my memory of the order printed in Laycock and on Wikipedia (Pa Veh Ged Gal Or Un Graph Tal Gon Na Ur Mals Ger Drux Pal Med Don Ceph Van Fam Gisg) and was not re-checked this session. No number is given because Dee's record attaches no numerical value to the letters. Number values for Enochian letters are later additions by modern authors."
+  },
+  {
+   "order": 5,
+   "name": "Graph",
+   "value": "E",
+   "translit": "e",
+   "numeric": null,
+   "form": "NOT DESCRIBED. I could not view any image of Dee's table, and I found no source that describes this letter stroke by stroke. My memory of the shape is not reliable enough to draw from. A caption on Wikipedia or Wikimedia Commons, which I saw only as a search summary and did not verify, says that in the first two manuscript versions of the alphabet this letter is identical with Hebrew Daleth (ד). The 6 May 1583 form may differ. Treat this as a lead for comparison, not as a basis for drawing. Trace it from Dee's own table in his diary for 6 May 1583, British Library Sloane MS 3188, f. 104. A scan is on Wikimedia Commons as 'File:Enochian letters (1583 manuscript).png'. Check the result against the alphabet table in Laycock, The Complete Enochian Dictionary (1978). Do NOT draw it from a modern 'Enochian' font, Omniglot's chart or the Hebrew letter. Modern editions have regularised the forms, and the manuscripts hold more than one version.",
+   "formConfidence": "low",
+   "note": "The name and Latin value are Dee's, as given in Laycock's dictionary and the letter table on Wikipedia. Its probable position in Dee's own table is 7 of 21. That position comes from my memory of the order printed in Laycock and on Wikipedia (Pa Veh Ged Gal Or Un Graph Tal Gon Na Ur Mals Ger Drux Pal Med Don Ceph Van Fam Gisg) and was not re-checked this session. No number is given because Dee's record attaches no numerical value to the letters. Number values for Enochian letters are later additions by modern authors."
+  },
+  {
+   "order": 6,
+   "name": "Or",
+   "value": "F",
+   "translit": "f",
+   "numeric": null,
+   "form": "NOT DESCRIBED. I could not view any image of Dee's table, and I found no source that describes this letter stroke by stroke. My memory of the shape is not reliable enough to draw from. Trace it from Dee's own table in his diary for 6 May 1583, British Library Sloane MS 3188, f. 104. A scan is on Wikimedia Commons as 'File:Enochian letters (1583 manuscript).png'. Check the result against the alphabet table in Laycock, The Complete Enochian Dictionary (1978). Do NOT draw it from a modern 'Enochian' font, Omniglot's chart or the Hebrew letter. Modern editions have regularised the forms, and the manuscripts hold more than one version.",
+   "formConfidence": "low",
+   "note": "The name and Latin value are Dee's, as given in Laycock's dictionary and the letter table on Wikipedia. Its probable position in Dee's own table is 5 of 21. That position comes from my memory of the order printed in Laycock and on Wikipedia (Pa Veh Ged Gal Or Un Graph Tal Gon Na Ur Mals Ger Drux Pal Med Don Ceph Van Fam Gisg) and was not re-checked this session. No number is given because Dee's record attaches no numerical value to the letters. Number values for Enochian letters are later additions by modern authors."
+  },
+  {
+   "order": 7,
+   "name": "Ged",
+   "value": "G",
+   "translit": "g",
+   "numeric": null,
+   "form": "NOT DESCRIBED. I could not view any image of Dee's table, and I found no source that describes this letter stroke by stroke. My memory of the shape is not reliable enough to draw from. A caption on Wikipedia or Wikimedia Commons, which I saw only as a search summary and did not verify, says that in the first two manuscript versions of the alphabet this letter is identical with Hebrew Cheth (ח). The 6 May 1583 form may differ. Treat this as a lead for comparison, not as a basis for drawing. Trace it from Dee's own table in his diary for 6 May 1583, British Library Sloane MS 3188, f. 104. A scan is on Wikimedia Commons as 'File:Enochian letters (1583 manuscript).png'. Check the result against the alphabet table in Laycock, The Complete Enochian Dictionary (1978). Do NOT draw it from a modern 'Enochian' font, Omniglot's chart or the Hebrew letter. Modern editions have regularised the forms, and the manuscripts hold more than one version.",
+   "formConfidence": "low",
+   "note": "The name and Latin value are Dee's, as given in Laycock's dictionary and the letter table on Wikipedia. Its probable position in Dee's own table is 3 of 21. That position comes from my memory of the order printed in Laycock and on Wikipedia (Pa Veh Ged Gal Or Un Graph Tal Gon Na Ur Mals Ger Drux Pal Med Don Ceph Van Fam Gisg) and was not re-checked this session. No number is given because Dee's record attaches no numerical value to the letters. Number values for Enochian letters are later additions by modern authors. One letter list from the search results also puts J under Ged. Most lists put J with Gon (letter 9). The sources differ."
+  },
+  {
+   "order": 8,
+   "name": "Na",
+   "value": "H",
+   "translit": "h",
+   "numeric": null,
+   "form": "NOT DESCRIBED. I could not view any image of Dee's table, and I found no source that describes this letter stroke by stroke. My memory of the shape is not reliable enough to draw from. Trace it from Dee's own table in his diary for 6 May 1583, British Library Sloane MS 3188, f. 104. A scan is on Wikimedia Commons as 'File:Enochian letters (1583 manuscript).png'. Check the result against the alphabet table in Laycock, The Complete Enochian Dictionary (1978). Do NOT draw it from a modern 'Enochian' font, Omniglot's chart or the Hebrew letter. Modern editions have regularised the forms, and the manuscripts hold more than one version.",
+   "formConfidence": "low",
+   "note": "The name and Latin value are Dee's, as given in Laycock's dictionary and the letter table on Wikipedia. Its probable position in Dee's own table is 10 of 21. That position comes from my memory of the order printed in Laycock and on Wikipedia (Pa Veh Ged Gal Or Un Graph Tal Gon Na Ur Mals Ger Drux Pal Med Don Ceph Van Fam Gisg) and was not re-checked this session. No number is given because Dee's record attaches no numerical value to the letters. Number values for Enochian letters are later additions by modern authors."
+  },
+  {
+   "order": 9,
+   "name": "Gon",
+   "value": "I (also J and Y)",
+   "translit": "i / j / y",
+   "numeric": null,
+   "form": "NOT DESCRIBED. I could not view any image of Dee's table, and I found no source that describes this letter stroke by stroke. My memory of the shape is not reliable enough to draw from. Trace it from Dee's own table in his diary for 6 May 1583, British Library Sloane MS 3188, f. 104. A scan is on Wikimedia Commons as 'File:Enochian letters (1583 manuscript).png'. Check the result against the alphabet table in Laycock, The Complete Enochian Dictionary (1978). Do NOT draw it from a modern 'Enochian' font, Omniglot's chart or the Hebrew letter. Modern editions have regularised the forms, and the manuscripts hold more than one version.",
+   "formConfidence": "low",
+   "note": "The name and Latin value are Dee's, as given in Laycock's dictionary and the letter table on Wikipedia. Its probable position in Dee's own table is 9 of 21. That position comes from my memory of the order printed in Laycock and on Wikipedia (Pa Veh Ged Gal Or Un Graph Tal Gon Na Ur Mals Ger Drux Pal Med Don Ceph Van Fam Gisg) and was not re-checked this session. No number is given because Dee's record attaches no numerical value to the letters. Number values for Enochian letters are later additions by modern authors. A search summary of the letter tables says a form with a point is used for Y, and one version adds W. I could not verify which manuscript the pointed form comes from. In Dee's day J was still a form of I."
+  },
+  {
+   "order": 10,
+   "name": "Ur",
+   "value": "L",
+   "translit": "l",
+   "numeric": null,
+   "form": "NOT DESCRIBED. I could not view any image of Dee's table, and I found no source that describes this letter stroke by stroke. My memory of the shape is not reliable enough to draw from. Trace it from Dee's own table in his diary for 6 May 1583, British Library Sloane MS 3188, f. 104. A scan is on Wikimedia Commons as 'File:Enochian letters (1583 manuscript).png'. Check the result against the alphabet table in Laycock, The Complete Enochian Dictionary (1978). Do NOT draw it from a modern 'Enochian' font, Omniglot's chart or the Hebrew letter. Modern editions have regularised the forms, and the manuscripts hold more than one version.",
+   "formConfidence": "low",
+   "note": "The name and Latin value are Dee's, as given in Laycock's dictionary and the letter table on Wikipedia. Its probable position in Dee's own table is 11 of 21. That position comes from my memory of the order printed in Laycock and on Wikipedia (Pa Veh Ged Gal Or Un Graph Tal Gon Na Ur Mals Ger Drux Pal Med Don Ceph Van Fam Gisg) and was not re-checked this session. No number is given because Dee's record attaches no numerical value to the letters. Number values for Enochian letters are later additions by modern authors."
+  },
+  {
+   "order": 11,
+   "name": "Tal",
+   "value": "M",
+   "translit": "m",
+   "numeric": null,
+   "form": "NOT DESCRIBED. I could not view any image of Dee's table, and I found no source that describes this letter stroke by stroke. My memory of the shape is not reliable enough to draw from. Trace it from Dee's own table in his diary for 6 May 1583, British Library Sloane MS 3188, f. 104. A scan is on Wikimedia Commons as 'File:Enochian letters (1583 manuscript).png'. Check the result against the alphabet table in Laycock, The Complete Enochian Dictionary (1978). Do NOT draw it from a modern 'Enochian' font, Omniglot's chart or the Hebrew letter. Modern editions have regularised the forms, and the manuscripts hold more than one version.",
+   "formConfidence": "low",
+   "note": "The name and Latin value are Dee's, as given in Laycock's dictionary and the letter table on Wikipedia. Its probable position in Dee's own table is 8 of 21. That position comes from my memory of the order printed in Laycock and on Wikipedia (Pa Veh Ged Gal Or Un Graph Tal Gon Na Ur Mals Ger Drux Pal Med Don Ceph Van Fam Gisg) and was not re-checked this session. No number is given because Dee's record attaches no numerical value to the letters. Number values for Enochian letters are later additions by modern authors."
+  },
+  {
+   "order": 12,
+   "name": "Drux",
+   "value": "N",
+   "translit": "n",
+   "numeric": null,
+   "form": "NOT DESCRIBED. I could not view any image of Dee's table, and I found no source that describes this letter stroke by stroke. My memory of the shape is not reliable enough to draw from. Trace it from Dee's own table in his diary for 6 May 1583, British Library Sloane MS 3188, f. 104. A scan is on Wikimedia Commons as 'File:Enochian letters (1583 manuscript).png'. Check the result against the alphabet table in Laycock, The Complete Enochian Dictionary (1978). Do NOT draw it from a modern 'Enochian' font, Omniglot's chart or the Hebrew letter. Modern editions have regularised the forms, and the manuscripts hold more than one version.",
+   "formConfidence": "low",
+   "note": "The name and Latin value are Dee's, as given in Laycock's dictionary and the letter table on Wikipedia. Its probable position in Dee's own table is 14 of 21. That position comes from my memory of the order printed in Laycock and on Wikipedia (Pa Veh Ged Gal Or Un Graph Tal Gon Na Ur Mals Ger Drux Pal Med Don Ceph Van Fam Gisg) and was not re-checked this session. No number is given because Dee's record attaches no numerical value to the letters. Number values for Enochian letters are later additions by modern authors. One online list gives the sound of Drux as /m/. That is an error: Dee's value is N, and Tal is M."
+  },
+  {
+   "order": 13,
+   "name": "Med",
+   "value": "O",
+   "translit": "o",
+   "numeric": null,
+   "form": "NOT DESCRIBED. I could not view any image of Dee's table, and I found no source that describes this letter stroke by stroke. My memory of the shape is not reliable enough to draw from. Trace it from Dee's own table in his diary for 6 May 1583, British Library Sloane MS 3188, f. 104. A scan is on Wikimedia Commons as 'File:Enochian letters (1583 manuscript).png'. Check the result against the alphabet table in Laycock, The Complete Enochian Dictionary (1978). Do NOT draw it from a modern 'Enochian' font, Omniglot's chart or the Hebrew letter. Modern editions have regularised the forms, and the manuscripts hold more than one version.",
+   "formConfidence": "low",
+   "note": "The name and Latin value are Dee's, as given in Laycock's dictionary and the letter table on Wikipedia. Its probable position in Dee's own table is 16 of 21. That position comes from my memory of the order printed in Laycock and on Wikipedia (Pa Veh Ged Gal Or Un Graph Tal Gon Na Ur Mals Ger Drux Pal Med Don Ceph Van Fam Gisg) and was not re-checked this session. No number is given because Dee's record attaches no numerical value to the letters. Number values for Enochian letters are later additions by modern authors."
+  },
+  {
+   "order": 14,
+   "name": "Mals",
+   "value": "P",
+   "translit": "p",
+   "numeric": null,
+   "form": "NOT DESCRIBED. I could not view any image of Dee's table, and I found no source that describes this letter stroke by stroke. My memory of the shape is not reliable enough to draw from. Trace it from Dee's own table in his diary for 6 May 1583, British Library Sloane MS 3188, f. 104. A scan is on Wikimedia Commons as 'File:Enochian letters (1583 manuscript).png'. Check the result against the alphabet table in Laycock, The Complete Enochian Dictionary (1978). Do NOT draw it from a modern 'Enochian' font, Omniglot's chart or the Hebrew letter. Modern editions have regularised the forms, and the manuscripts hold more than one version.",
+   "formConfidence": "low",
+   "note": "The name and Latin value are Dee's, as given in Laycock's dictionary and the letter table on Wikipedia. Its probable position in Dee's own table is 12 of 21. That position comes from my memory of the order printed in Laycock and on Wikipedia (Pa Veh Ged Gal Or Un Graph Tal Gon Na Ur Mals Ger Drux Pal Med Don Ceph Van Fam Gisg) and was not re-checked this session. No number is given because Dee's record attaches no numerical value to the letters. Number values for Enochian letters are later additions by modern authors."
+  },
+  {
+   "order": 15,
+   "name": "Ger",
+   "value": "Q",
+   "translit": "q",
+   "numeric": null,
+   "form": "NOT DESCRIBED. I could not view any image of Dee's table, and I found no source that describes this letter stroke by stroke. My memory of the shape is not reliable enough to draw from. Trace it from Dee's own table in his diary for 6 May 1583, British Library Sloane MS 3188, f. 104. A scan is on Wikimedia Commons as 'File:Enochian letters (1583 manuscript).png'. Check the result against the alphabet table in Laycock, The Complete Enochian Dictionary (1978). Do NOT draw it from a modern 'Enochian' font, Omniglot's chart or the Hebrew letter. Modern editions have regularised the forms, and the manuscripts hold more than one version.",
+   "formConfidence": "low",
+   "note": "The name and Latin value are Dee's, as given in Laycock's dictionary and the letter table on Wikipedia. Its probable position in Dee's own table is 13 of 21. That position comes from my memory of the order printed in Laycock and on Wikipedia (Pa Veh Ged Gal Or Un Graph Tal Gon Na Ur Mals Ger Drux Pal Med Don Ceph Van Fam Gisg) and was not re-checked this session. No number is given because Dee's record attaches no numerical value to the letters. Number values for Enochian letters are later additions by modern authors."
+  },
+  {
+   "order": 16,
+   "name": "Don",
+   "value": "R",
+   "translit": "r",
+   "numeric": null,
+   "form": "NOT DESCRIBED. I could not view any image of Dee's table, and I found no source that describes this letter stroke by stroke. My memory of the shape is not reliable enough to draw from. Trace it from Dee's own table in his diary for 6 May 1583, British Library Sloane MS 3188, f. 104. A scan is on Wikimedia Commons as 'File:Enochian letters (1583 manuscript).png'. Check the result against the alphabet table in Laycock, The Complete Enochian Dictionary (1978). Do NOT draw it from a modern 'Enochian' font, Omniglot's chart or the Hebrew letter. Modern editions have regularised the forms, and the manuscripts hold more than one version.",
+   "formConfidence": "low",
+   "note": "The name and Latin value are Dee's, as given in Laycock's dictionary and the letter table on Wikipedia. Its probable position in Dee's own table is 17 of 21. That position comes from my memory of the order printed in Laycock and on Wikipedia (Pa Veh Ged Gal Or Un Graph Tal Gon Na Ur Mals Ger Drux Pal Med Don Ceph Van Fam Gisg) and was not re-checked this session. No number is given because Dee's record attaches no numerical value to the letters. Number values for Enochian letters are later additions by modern authors."
+  },
+  {
+   "order": 17,
+   "name": "Fam",
+   "value": "S",
+   "translit": "s",
+   "numeric": null,
+   "form": "NOT DESCRIBED. I could not view any image of Dee's table, and I found no source that describes this letter stroke by stroke. My memory of the shape is not reliable enough to draw from. A caption on Wikipedia or Wikimedia Commons, which I saw only as a search summary and did not verify, says that in the first two manuscript versions of the alphabet this letter is identical with Hebrew Resh (ר). The 6 May 1583 form may differ. Treat this as a lead for comparison, not as a basis for drawing. Trace it from Dee's own table in his diary for 6 May 1583, British Library Sloane MS 3188, f. 104. A scan is on Wikimedia Commons as 'File:Enochian letters (1583 manuscript).png'. Check the result against the alphabet table in Laycock, The Complete Enochian Dictionary (1978). Do NOT draw it from a modern 'Enochian' font, Omniglot's chart or the Hebrew letter. Modern editions have regularised the forms, and the manuscripts hold more than one version.",
+   "formConfidence": "low",
+   "note": "The name and Latin value are Dee's, as given in Laycock's dictionary and the letter table on Wikipedia. Its probable position in Dee's own table is 20 of 21. That position comes from my memory of the order printed in Laycock and on Wikipedia (Pa Veh Ged Gal Or Un Graph Tal Gon Na Ur Mals Ger Drux Pal Med Don Ceph Van Fam Gisg) and was not re-checked this session. No number is given because Dee's record attaches no numerical value to the letters. Number values for Enochian letters are later additions by modern authors."
+  },
+  {
+   "order": 18,
+   "name": "Gisg",
+   "value": "T",
+   "translit": "t",
+   "numeric": null,
+   "form": "NOT DESCRIBED. I could not view any image of Dee's table, and I found no source that describes this letter stroke by stroke. My memory of the shape is not reliable enough to draw from. Trace it from Dee's own table in his diary for 6 May 1583, British Library Sloane MS 3188, f. 104. A scan is on Wikimedia Commons as 'File:Enochian letters (1583 manuscript).png'. Check the result against the alphabet table in Laycock, The Complete Enochian Dictionary (1978). Do NOT draw it from a modern 'Enochian' font, Omniglot's chart or the Hebrew letter. Modern editions have regularised the forms, and the manuscripts hold more than one version.",
+   "formConfidence": "low",
+   "note": "The name and Latin value are Dee's, as given in Laycock's dictionary and the letter table on Wikipedia. Its probable position in Dee's own table is 21 of 21. That position comes from my memory of the order printed in Laycock and on Wikipedia (Pa Veh Ged Gal Or Un Graph Tal Gon Na Ur Mals Ger Drux Pal Med Don Ceph Van Fam Gisg) and was not re-checked this session. No number is given because Dee's record attaches no numerical value to the letters. Number values for Enochian letters are later additions by modern authors."
+  },
+  {
+   "order": 19,
+   "name": "Van",
+   "value": "U (also V and W)",
+   "translit": "u / v / w",
+   "numeric": null,
+   "form": "NOT DESCRIBED. I could not view any image of Dee's table, and I found no source that describes this letter stroke by stroke. My memory of the shape is not reliable enough to draw from. Trace it from Dee's own table in his diary for 6 May 1583, British Library Sloane MS 3188, f. 104. A scan is on Wikimedia Commons as 'File:Enochian letters (1583 manuscript).png'. Check the result against the alphabet table in Laycock, The Complete Enochian Dictionary (1978). Do NOT draw it from a modern 'Enochian' font, Omniglot's chart or the Hebrew letter. Modern editions have regularised the forms, and the manuscripts hold more than one version.",
+   "formConfidence": "low",
+   "note": "The name and Latin value are Dee's, as given in Laycock's dictionary and the letter table on Wikipedia. Its probable position in Dee's own table is 19 of 21. That position comes from my memory of the order printed in Laycock and on Wikipedia (Pa Veh Ged Gal Or Un Graph Tal Gon Na Ur Mals Ger Drux Pal Med Don Ceph Van Fam Gisg) and was not re-checked this session. No number is given because Dee's record attaches no numerical value to the letters. Number values for Enochian letters are later additions by modern authors. U, V and W share this letter, since in Dee's day U and V were one letter. W has no letter of its own."
+  },
+  {
+   "order": 20,
+   "name": "Pal",
+   "value": "X",
+   "translit": "x",
+   "numeric": null,
+   "form": "NOT DESCRIBED. I could not view any image of Dee's table, and I found no source that describes this letter stroke by stroke. My memory of the shape is not reliable enough to draw from. Trace it from Dee's own table in his diary for 6 May 1583, British Library Sloane MS 3188, f. 104. A scan is on Wikimedia Commons as 'File:Enochian letters (1583 manuscript).png'. Check the result against the alphabet table in Laycock, The Complete Enochian Dictionary (1978). Do NOT draw it from a modern 'Enochian' font, Omniglot's chart or the Hebrew letter. Modern editions have regularised the forms, and the manuscripts hold more than one version.",
+   "formConfidence": "low",
+   "note": "The name and Latin value are Dee's, as given in Laycock's dictionary and the letter table on Wikipedia. Its probable position in Dee's own table is 15 of 21. That position comes from my memory of the order printed in Laycock and on Wikipedia (Pa Veh Ged Gal Or Un Graph Tal Gon Na Ur Mals Ger Drux Pal Med Don Ceph Van Fam Gisg) and was not re-checked this session. No number is given because Dee's record attaches no numerical value to the letters. Number values for Enochian letters are later additions by modern authors."
+  },
+  {
+   "order": 21,
+   "name": "Ceph",
+   "value": "Z",
+   "translit": "z",
+   "numeric": null,
+   "form": "NOT DESCRIBED. I could not view any image of Dee's table, and I found no source that describes this letter stroke by stroke. My memory of the shape is not reliable enough to draw from. Trace it from Dee's own table in his diary for 6 May 1583, British Library Sloane MS 3188, f. 104. A scan is on Wikimedia Commons as 'File:Enochian letters (1583 manuscript).png'. Check the result against the alphabet table in Laycock, The Complete Enochian Dictionary (1978). Do NOT draw it from a modern 'Enochian' font, Omniglot's chart or the Hebrew letter. Modern editions have regularised the forms, and the manuscripts hold more than one version.",
+   "formConfidence": "low",
+   "note": "The name and Latin value are Dee's, as given in Laycock's dictionary and the letter table on Wikipedia. Its probable position in Dee's own table is 18 of 21. That position comes from my memory of the order printed in Laycock and on Wikipedia (Pa Veh Ged Gal Or Un Graph Tal Gon Na Ur Mals Ger Drux Pal Med Don Ceph Van Fam Gisg) and was not re-checked this session. No number is given because Dee's record attaches no numerical value to the letters. Number values for Enochian letters are later additions by modern authors."
+  }
+ ],
+ "lettersSource": "Names and Latin values follow Dee's table of 6 May 1583 (Sloane MS 3188, f. 104), as transmitted by Laycock (1978) and the letter table in Wikipedia's 'Enochian' article. All sources agree on the 21 names. Minor differences: whether J goes under Ged or Gon, which letters carry a pointed variant (Y, perhaps W), and one site's wrong /m/ for Drux. The 'order' field is the Latin alphabetical order, used for convenience. Each note gives the letter's probable position in Dee's own table (B C G D F A E M I H L P Q N X O R Z U S T), which is my recollection and not re-checked. FORMS: NONE DESCRIBED, and all 21 are 'low'. No image could be viewed in this environment, and no source in the results describes the letters stroke by stroke. To draw them, trace Dee's table (Sloane MS 3188, f. 104) from the Wikimedia Commons scan 'File:Enochian letters (1583 manuscript).png' and cross-check with Laycock's table. Do not use modern fonts or charts, which regularise the forms. The manuscripts hold more than one version of the letters: the forms reported in March 1583 differ from the 6 May table, which should be the one followed. The script is not encoded in Unicode, as far as I know.",
+ "uses": [
+  {
+   "use": "The letters of the angelic 'Book of Enoch', Liber Loagaeth",
+   "evidence": "The 1583 records in Sloane MS 3188 tie the alphabet to the book Kelley transcribed (Sloane MS 3189; British Library catalogue). Whether its grids are written in these characters or in Latin letters was not verified."
+  },
+  {
+   "use": "Writing the angelic language of the 48 Calls (Keys), received in 1584",
+   "evidence": "Dee's later records (Sloane MS 3191; Cotton Appendix XLVI, printed by Casaubon in 1659). The Calls are the glossed corpus from which Laycock built his dictionary. Manuscript references are from general knowledge."
+  },
+  {
+   "use": "Ritual and talismanic writing in modern ceremonial magic",
+   "evidence": "Golden Dawn papers (1890s) and Crowley's publications (1909–1912). Asprem 2012 surveys this. Report it neutrally, and do not reproduce living organisations' emblems."
+  },
+  {
+   "use": "An object of linguistic and historical study",
+   "evidence": "Laycock 1978, Harkness 1999 and Asprem 2012."
+  }
+ ],
+ "quotations": [],
+ "links": [
+  {
+   "to": "hebrew",
+   "relation": "Comparison hall. The script is reported to run right to left like Hebrew, and a caption claims that four letters in early versions match Hebrew forms (unverified). The angels' claim that it is the language of Adam set it beside Hebrew in Renaissance debate about the first language."
+  },
+  {
+   "to": "latin",
+   "relation": "Dee keyed every letter to a Latin letter, and transliteration runs through those 21 Latin values."
+  },
+  {
+   "to": "celestial",
+   "relation": "Contrast: Agrippa printed his 'Celestial' script in 1533 as a writing of the Hebrews. Enochian was not printed but recorded in manuscript as revealed, and no derivation between them is documented."
+  },
+  {
+   "to": "malachim",
+   "relation": "Contrast, as for the Celestial: another 'angelic' script, but from Agrippa's book rather than a scrying record."
+  },
+  {
+   "to": "transitus-fluvii",
+   "relation": "Contrast, as above."
+  }
+ ],
+ "cautions": [
+  "LETTER FORMS ARE NOT DESCRIBED. Drawing 'Dee's letters' from this file would mean inventing them. Trace Sloane MS 3188, f. 104 (the Commons scan), or show a gap.",
+  "Never write 'the angels gave Dee an alphabet' as fact. Write 'Dee recorded that Kelley saw …' or 'Dee and Kelley ascribed it to angels'.",
+  "The alphabet dates from 1583 (26 March to 6 May), not 1582. The site's Hierarchies text ('In the spring of 1582 … began receiving … a language with its own letters') runs the two together and should be read with care.",
+  "The backwards dictation mentioned on the site's 'Angelic Diaries' entry belongs to the 48 Calls (1584), not to the alphabet.",
+  "Dee did not call it 'Enochian'. He called it 'Angelical' or the language of Adam. 'Enochian' is the later usual name.",
+  "Transliteration does not run cleanly both ways. C and K share Veh; I, J and Y share Gon; U, V and W share Van. Dee attaches no numbers to the letters, and any 'Enochian gematria' is modern.",
+  "Sources disagree on when Sloane MS 3188 ends (23 or 30 May 1583) and on who wrote Sloane MS 3189 (Kelley, per the British Library, or Dee). Give both or follow the British Library and say so.",
+  "Unverified leads to check, not to state. (1) That on 6 May 1583 the letters appeared to Kelley as if drawn in pale yellow and were then inked over. (2) That the forms resemble an alphabet in Pantheus's Voarchadumia (Venice, 1530), a book Dee owned. Both come from my memory and neither was confirmed by search.",
+  "No quotations are offered, because I could not see Dee's exact wording this session. Quote Dee from Peterson's 2003 edition, giving the folio.",
+  "The search budget ran out partway through the research. Everything marked 'from general knowledge' or 'not re-verified' needs checking before publication."
+ ],
+ "sources": [
+  {
+   "citation": "British Library, Sloane MS 3188: John Dee's conferences with angels in five books, 22 Dec 1581 – 30 May 1583 (per the BL catalogue); f. 104, the table of 6 May 1583",
+   "url": ""
+  },
+  {
+   "citation": "British Library, Sloane MS 3189: Liber Mysteriorum Sextus et Sanctus / Liber Loagaeth, ff. 1r–65r, transcribed by Edward Kelley in 1583 (BL catalogue)",
+   "url": ""
+  },
+  {
+   "citation": "British Library Archives and Manuscripts catalogue records for the Sloane Dee manuscripts (records 040-002115572 and 040-002115573; which record is which manuscript was not confirmed)",
+   "url": "https://searcharchives.bl.uk/catalog/040-002115573"
+  },
+  {
+   "citation": "British Library Archives and Manuscripts catalogue, companion record",
+   "url": "https://searcharchives.bl.uk/catalog/040-002115572"
+  },
+  {
+   "citation": "Wikimedia Commons, 'File:Enochian letters (1583 manuscript).png': scan of Dee's diary for 6 May 1583, Sloane MS 3188, f. 104",
+   "url": "https://commons.wikimedia.org/wiki/File:Enochian_letters_(1583_manuscript).png"
+  },
+  {
+   "citation": "Joseph H. Peterson (ed.), John Dee's Five Books of Mystery (Boston: Weiser, 2003); the Dee texts at esotericarchives.com",
+   "url": "https://www.esotericarchives.com/dee/"
+  },
+  {
+   "citation": "Joseph H. Peterson (ed.), Mysteriorum Libri Quinque: Dr. John Dee's Five Books of Mysteries (Weiser Enochian Library), ISBN 9781578638222",
+   "url": "https://redwheelweiser.com/book/mysteriorum-libri-quinque-9781578638222/"
+  },
+  {
+   "citation": "Donald C. Laycock, The Complete Enochian Dictionary (London: Askin, 1978; later Weiser editions)",
+   "url": "https://books.google.com/books/about/The_Complete_Enochian_Dictionary.html?id=o9WHEAAAQBAJ"
+  },
+  {
+   "citation": "Wikipedia, 'Donald Laycock' (the linguist, for biographical context only)",
+   "url": "https://en.wikipedia.org/wiki/Donald_Laycock"
+  },
+  {
+   "citation": "Deborah E. Harkness, John Dee's Conversations with Angels: Cabala, Alchemy, and the End of Nature (Cambridge: Cambridge University Press, 1999)",
+   "url": ""
+  },
+  {
+   "citation": "Egil Asprem, Arguing with Angels: Enochian Magic and Modern Occulture (Albany: SUNY Press, 2012)",
+   "url": ""
+  },
+  {
+   "citation": "Meric Casaubon (ed.), A True & Faithful Relation of What passed for many Yeers Between Dr. John Dee … and Some Spirits (London, 1659)",
+   "url": ""
+  },
+  {
+   "citation": "Wikipedia, 'Enochian' (secondary; used for the letter-name table and as a pointer only)",
+   "url": "https://en.wikipedia.org/wiki/Enochian"
+  },
+  {
+   "citation": "Wikipedia, 'Enochian magic' (secondary; source of the 26 March 1583 date)",
+   "url": "https://en.wikipedia.org/wiki/Enochian_magic"
+  },
+  {
+   "citation": "Wikipedia, 'Book of Soyga' (secondary; the Soyga/Aldaraia tables appended to Sloane MS 3189)",
+   "url": "https://en.wikipedia.org/wiki/Book_of_Soyga"
+  }
+ ],
+ "confidence": "SOLID: 21 letters with Dee's names and Latin values, which all sources agree on. Kelley's first vision of the alphabet on 26 March 1583. Dee's table of 6 May 1583 at Sloane MS 3188, f. 104 (Commons scan). Sloane MS 3189 as Liber Loagaeth with 49 × 49 grids from f. 10r (British Library). Laycock 1978, Harkness 1999 and Asprem 2012 as the scholarship. SHAKY: every letter form (none described). Dee's table order (recollection). The direction of writing (not confirmed by search this session). Which book of the Libri Mysteriorum holds the entries. The 26 March folio (f. 64). Who wrote Sloane MS 3189 (disputed). The dates and issues for the Golden Dawn and Crowley, and the 1584 Calls manuscripts (general knowledge). The Hebrew-resemblance caption. The research ended early when the shared web-search budget ran out."
+}

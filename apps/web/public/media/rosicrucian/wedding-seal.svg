@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+<title>The seal of the wedding invitation</title>
+<desc>The little seal that closed the letter of invitation in the Chymische Hochzeit Christiani Rosencreutz (Strasbourg, 1616), the First Day: a delicate cross, with the inscription In hoc signo + vinces, as the German text gives it, the small cross standing between SIGNO and VINCES. Shown impressed in wax; the round form, the wax, the ruled band and the letterforms are the drawing’s.</desc>
+<defs>
+<radialGradient id="wax" cx=".42" cy=".36" r=".72"><stop offset="0" stop-color="#c9a86a" stop-opacity=".30"/><stop offset=".8" stop-color="#c9a86a" stop-opacity=".15"/><stop offset="1" stop-color="#c9a86a" stop-opacity=".22"/></radialGradient>
+<linearGradient id="relief" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ecd9ae"/><stop offset=".55" stop-color="#c9a86a"/><stop offset="1" stop-color="#c9a86a"/></linearGradient>
+<linearGradient id="edge" gradientUnits="userSpaceOnUse" x1="90" y1="90" x2="310" y2="310"><stop offset="0" stop-color="#0d0b0a" stop-opacity=".9"/><stop offset=".45" stop-color="#c9a86a" stop-opacity="0"/><stop offset=".6" stop-color="#ecd9ae" stop-opacity="0"/><stop offset="1" stop-color="#ecd9ae" stop-opacity=".8"/></linearGradient>
+<path id="cross" d="M195.4 120H204.6V163.4H248V172.6H204.6V282H195.4V172.6H152V163.4H195.4Z"/>
+</defs>
+<!-- the wax -->
+<path d="M200 15.31C205.35 15.39 210.75 15.98 216.03 16.81C221.31 17.64 226.53 18.98 231.69 20.3C236.84 21.63 241.89 23.24 246.95 24.78C252.01 26.31 257.03 27.87 262.05 29.53C267.06 31.2 272.13 32.79 277.05 34.76C281.98 36.73 286.94 38.8 291.59 41.37C296.23 43.93 300.76 46.86 304.93 50.14C309.1 53.43 312.95 57.21 316.59 61.06C320.22 64.91 323.48 69.14 326.75 73.25C330.02 77.36 333.05 81.59 336.18 85.73C339.32 89.87 342.46 93.93 345.56 98.08C348.66 102.23 351.88 106.31 354.79 110.63C357.69 114.95 360.6 119.36 363 123.99C365.41 128.62 367.54 133.47 369.22 138.41C370.9 143.35 372.11 148.5 373.08 153.62C374.05 158.74 374.58 163.97 375.05 169.13C375.52 174.3 375.74 179.47 375.89 184.61C376.04 189.76 376.1 194.88 375.95 200C375.81 205.12 375.56 210.24 375.01 215.31C374.47 220.39 373.67 225.45 372.69 230.45C371.7 235.45 370.38 240.38 369.08 245.3C367.78 250.23 366.27 255.07 364.9 260.02C363.53 264.97 362.19 269.92 360.86 275.01C359.52 280.1 358.37 285.34 356.89 290.58C355.41 295.81 354 301.27 351.98 306.42C349.96 311.56 347.68 316.79 344.76 321.47C341.84 326.15 338.36 330.59 334.47 334.47C330.58 338.34 326.04 341.71 321.42 344.71C316.81 347.71 311.73 350.14 306.76 352.46C301.78 354.79 296.64 356.72 291.59 358.64C286.54 360.56 281.51 362.33 276.47 363.99C271.43 365.65 266.43 367.26 261.37 368.6C256.3 369.94 251.21 371.14 246.1 372.05C240.99 372.96 235.82 373.58 230.69 374.06C225.56 374.54 220.42 374.73 215.31 374.94C210.19 375.15 205.11 375.23 200 375.31C194.89 375.39 189.79 375.52 184.65 375.44C179.51 375.36 174.32 375.32 169.17 374.83C164.03 374.35 158.82 373.68 153.78 372.51C148.73 371.34 143.73 369.73 138.92 367.82C134.11 365.91 129.46 363.48 124.91 361.03C120.35 358.59 116 355.8 111.59 353.14C107.17 350.47 102.84 347.76 98.44 345.04C94.04 342.32 89.56 339.7 85.18 336.83C80.81 333.96 76.32 331.09 72.19 327.81C68.06 324.52 64 321 60.41 317.13C56.82 313.26 53.56 308.98 50.66 304.57C47.77 300.15 45.34 295.37 43.02 290.63C40.7 285.89 38.75 280.98 36.73 276.13C34.72 271.28 32.83 266.43 30.93 261.54C29.03 256.65 27.08 251.78 25.35 246.8C23.61 241.82 21.87 236.78 20.52 231.65C19.17 226.51 18.02 221.26 17.26 215.99C16.5 210.71 16.1 205.34 15.95 200C15.81 194.66 16.02 189.28 16.38 183.94C16.75 178.59 17.33 173.24 18.15 167.94C18.98 162.63 19.94 157.3 21.35 152.13C22.76 146.96 24.41 141.77 26.61 136.89C28.82 132.01 31.5 127.25 34.59 122.87C37.67 118.48 41.37 114.4 45.12 110.58C48.87 106.76 53.11 103.35 57.08 99.93C61.06 96.51 65.18 93.4 68.99 90.07C72.79 86.73 76.4 83.43 79.91 79.91C83.42 76.39 86.63 72.66 90.02 68.93C93.41 65.21 96.67 61.25 100.27 57.57C103.86 53.89 107.58 50.18 111.59 46.87C115.6 43.56 119.89 40.48 124.33 37.72C128.77 34.96 133.47 32.54 138.24 30.31C143 28.07 147.93 26.11 152.92 24.31C157.91 22.52 163.01 20.86 168.18 19.53C173.35 18.2 178.63 17.01 183.93 16.31C189.23 15.61 194.65 15.23 200 15.31Z" fill="url(#wax)" stroke="#c9a86a" stroke-width="1.6" stroke-linejoin="round"/>
+<!-- the impression: a pressed hollow, shadowed above-left, lit below-right -->
+<circle cx="200" cy="200" r="158" fill="#0d0b0a" fill-opacity=".38"/>
+<circle cx="200" cy="200" r="158" fill="none" stroke="url(#edge)" stroke-width="2"/>
+<g fill="none" stroke="#c9a86a">
+<circle cx="200" cy="200" r="152" stroke-width="2.6"/>
+<circle cx="200" cy="200" r="101" stroke-width="1.6"/>
+</g>
+<!-- the legend: IN HOC SIGNO + VINCES -->
+<g font-family="Georgia, 'Times New Roman', serif" font-size="42" text-anchor="middle" fill="url(#relief)" stroke="#c9a86a" stroke-width=".4">
+<text transform="rotate(20.09 200 200)" x="200" y="88.5">I</text>
+<text transform="rotate(37.08 200 200)" x="200" y="88.5">N</text>
+<text transform="rotate(64.65 200 200)" x="200" y="88.5">H</text>
+<text transform="rotate(85.56 200 200)" x="200" y="88.5">O</text>
+<text transform="rotate(104.87 200 200)" x="200" y="88.5">C</text>
+<text transform="rotate(128.96 200 200)" x="200" y="88.5">S</text>
+<text transform="rotate(144.08 200 200)" x="200" y="88.5">I</text>
+<text transform="rotate(160.87 200 200)" x="200" y="88.5">G</text>
+<text transform="rotate(181.16 200 200)" x="200" y="88.5">N</text>
+<text transform="rotate(201.52 200 200)" x="200" y="88.5">O</text>
+<text transform="rotate(249.66 200 200)" x="200" y="88.5">V</text>
+<text transform="rotate(265.77 200 200)" x="200" y="88.5">I</text>
+<text transform="rotate(282.76 200 200)" x="200" y="88.5">N</text>
+<text transform="rotate(302.19 200 200)" x="200" y="88.5">C</text>
+<text transform="rotate(320.64 200 200)" x="200" y="88.5">E</text>
+<text transform="rotate(338.27 200 200)" x="200" y="88.5">S</text>
+<path transform="rotate(225.97 200 200)" d="M197.95 64.4H202.05V71.95H209.6V76.05H202.05V83.6H197.95V76.05H190.4V71.95H197.95Z"/>
+</g>
+<!-- the cross, in relief -->
+<use href="#cross" transform="translate(1.3 1.3)" fill="#0d0b0a" fill-opacity=".6"/>
+<use href="#cross" fill="url(#relief)"/>
+<use href="#cross" fill="none" stroke="#ecd9ae" stroke-width=".8" stroke-opacity=".75"/>
+</svg>

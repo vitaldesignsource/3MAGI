@@ -1,0 +1,1388 @@
+{
+ "key": "ogham",
+ "title": "Ogham",
+ "otherNames": [
+  "Ogam",
+  "Ogum",
+  "Old Irish ogam, Modern Irish ogham",
+  "Beithe-luis-nin (medieval name for the alphabet)",
+  "Beth-Luis-Nion (O'Flaherty 1685; Graves 1948)",
+  "the feda (letters; singular fid, \"wood, tree, letter\")"
+ ],
+ "family": "Insular epigraphic alphabet of stroke-letters cut along a stemline. It was devised for Primitive Irish, almost certainly by someone who knew the Latin alphabet and Latin grammatical teaching. It is not derived from Hebrew, and it is not one of Agrippa's alphabets. The later medieval tradition elaborated it into a learned and cryptic (\"secret\") art.",
+ "summary": "Ogham writes twenty letters (feda) as groups of one to five strokes set against a stemline. In four groups (aicmi) of five, the strokes fall on one side, on the other, across the line, or as notches on it; the manuscript tradition later added five supplementary letters (forfeda). It is first found on roughly 400 stone inscriptions around the Irish Sea, most of them in southern Ireland and most dated to the 5th-6th centuries; the script itself probably goes back to the 4th century. Its key and its lore come from much later manuscripts, whose earliest copies are late 14th-century: the Auraicept na nÉces and In Lebor Ogaim (the \"Ogam Tract\"), which lists many cryptic \"oghams\". The doctrine that every letter is a tree is medieval scholarship; the tree calendar is Robert Graves's (The White Goddess, 1948).",
+ "firstAttestation": {
+  "work": "Orthodox ogham inscriptions on standing stones (corpus: Macalister, CIIC I, 1945; Ziegler 1994; McManus 1991; DIAS 'Ogham in 3D' and its successor OG(H)AM project)",
+  "author": "anonymous",
+  "date": "Most orthodox inscriptions are dated to the 5th and 6th centuries AD (Wikipedia, 'Ogham inscription'). The script itself is probably older: the OG(H)AM project dates its origin 'probably' to the 4th century, and Wikipedia notes that some letters were no longer spoken by the 5th century, which implies earlier writing on perishable material. No stone carries a date; dating is by language (Primitive Irish), formulae and comparison with the Latin-inscribed stones of Britain.",
+  "place": "Around the Irish Sea: most Irish stones are in Munster (Co. Kerry and Cork above all); outside Ireland most are in Wales, chiefly the south-west (old Dyfed; Pembrokeshire has the most); others in Scotland, the Isle of Man and England near the Devon/Cornwall border (Wikipedia, 'Ogham inscription'; BabelStone). The outlier at Silchester (Hampshire) is from memory [not verified: the fact-check search budget ran out before this was checked].",
+  "locator": "No single locator: it is a corpus. CIIC numbers (Macalister 1945, 1949); DIAS 'Ogham in 3D' / OG(H)AM entries (https://ogham.celt.dias.ie/menu.php?lang=en).",
+  "notes": "Counts differ by source and by what is counted. About 400 surviving orthodox stone inscriptions (Wikipedia, 'Ogham inscription'). Ziegler (1994) is reported (Wikipedia) to list 344 Gaelic inscriptions known to Macalister in Ireland and the Isle of Man, plus seven found later. Wales: 'more than 40' in one source in the search results, but 35 stones with definite ogham in the BabelStone blog (2010); give both. Scotland: about 34 on stone plus 5 on portable objects (BabelStone blog, 2013), many in Pictish areas and some in Pictish rather than Gaelic. The OG(H)AM project counts c. 640 examples of ogham writing in all media, origin to the mid-19th century (Maynooth University project page). Typical formula: X MAQI Y, '(the stone) of X son of Y', names in the genitive; other formula words (MUCOI, AVI, ANM, KOI, CELI) are from memory [not verified: the fact-check search budget ran out before this was checked]. The KEY to names and values is attested much later, in manuscripts. The Auraicept na nÉces: Wikipedia ('Auraicept na n-Éces') says its core may date to the early 8th century, with much added later, and that the earliest copies are late 14th-century; tradition ascribes the first book to Cenn Fáelad (d. 679). The researcher's 'Ahlqvist (1983) dates the core to the 7th century' was not found in any source and has been removed; Ahlqvist's own dating was not checked. In Lebor Ogaim survives in the Book of Ballymote (RIA MS 23 P 12) and later manuscripts; the shelfmark and the date c. 1390 are from memory [not verified: the fact-check search budget ran out before this was checked]."
+ },
+ "transmission": [
+  {
+   "date": "c. 4th (origin, probably) / 5th-6th c. (most inscriptions)",
+   "work": "Orthodox stone inscriptions",
+   "author": "anonymous",
+   "what": "Uses the 20 letters (with rare traces of a supplementary X-sign) to carve personal names and lineage formulae, mostly as memorials and possibly as boundary/title markers."
+  },
+  {
+   "date": "5th-6th c.",
+   "work": "Bilingual Latin-ogham stones in Wales and south-west Britain",
+   "author": "anonymous",
+   "what": "Pairs ogham with Latin capitals. Castell Dwyran (Carmarthenshire), found near the church in 1895, carries a cross, a Latin inscription naming VOTEPORIGIS and an ogham one reading VOTECORIGAS (Wikipedia 'Vortiporius'; Carmarthenshire Museums' 'Selected treasure: Vortipor' page). The Latin is read as 'the memorial of Voteporix the Protector'; the exact wording MEMORIA VOTEPORIGIS PROTICTORIS is from memory [not verified: the fact-check search budget ran out before this was checked]. Rhŷs identified him with Gildas's Vortiporius; Patrick Sims-Williams rejected the identification on linguistic grounds (the ogham lacks the r), and Nancy Edwards (2007) suggested an earlier family member (as reported by Wikipedia and earlybritishkingdoms.com). The bilinguals later confirmed the values of the manuscript key."
+  },
+  {
+   "date": "core perhaps early 8th c. (Wikipedia's summary); later commentary layers; earliest copies late 14th c.",
+   "work": "Auraicept na nÉces (\"The Scholars' Primer\")",
+   "author": "anonymous; tradition ascribes the first book to Cenn Fáelad (d. 679), an ascription to be reported as such",
+   "what": "A treatise on Irish grammar. It sets ogham beside the Latin alphabet, names the four aicmi and the stroke positions relative to the stemline (druim), and holds that the letter names come from the names of Fénius Farsaid's best students or from trees."
+  },
+  {
+   "date": "Old Irish period onward, to modern times",
+   "work": "\"Scholastic\" ogham inscriptions",
+   "author": "anonymous",
+   "what": "'Scholastic' inscriptions, from the Old Irish period to modern times (Wikipedia, 'Ogham inscription'), written in manuscript-period spelling, some using forfeda, by people who had learned ogham from the books rather than from living epigraphic practice."
+  },
+  {
+   "date": "c. 8th-9th c.",
+   "work": "Pictish and Norse-period oghams in Scotland (Forsyth 1996)",
+   "author": "anonymous",
+   "what": "Ogham used beyond Irish-speaking areas: about 34 inscriptions on stone and 5 on portable objects in Scotland (BabelStone blog, 2013), many in Pictish areas and some in Pictish rather than Gaelic. The examples Brandsbutt, Lunnasting and Newton, and the date c. 8th-9th c., are from memory [not verified: the fact-check search budget ran out before this was checked]."
+  },
+  {
+   "date": "c. 900",
+   "work": "Sanas Cormaic (Cormac's Glossary)",
+   "author": "attributed to Cormac mac Cuilennáin (d. 908)",
+   "what": "Glosses fé as an aspen rod inscribed with ogham, used to measure corpses and graves and dreaded to handle [not verified: the fact-check search budget ran out before this was checked]."
+  },
+  {
+   "date": "c. 1100 and later manuscripts",
+   "work": "Ulster-cycle and other sagas (Táin Bó Cúailnge; Tochmarc Étaíne), Lebor na hUidre and Yellow Book of Lecan",
+   "author": "anonymous",
+   "what": "Literary ogham: Cú Chulainn's ogham on a withe and on a forked branch as challenges to an army; the druid Dalán's four yew rods inscribed with ogham used to find Étaín. Evidence for how medieval authors imagined ogham, not for pagan practice."
+  },
+  {
+   "date": "c. 1390",
+   "work": "Book of Ballymote (RIA MS 23 P 12): Auraicept na nÉces and In Lebor Ogaim",
+   "author": "compiled for Tomaltach Mac Donnchaidh; scribes include Solam Ó Droma, Robertus Mac Sithigh and Maghnus Ó Duibhgeannáin [not verified: the fact-check search budget ran out before this was checked]",
+   "what": "The fullest medieval treatment. It has the alphabet with names and tree glosses; the three Bríatharogam (word-oghams of Morann, Mac ind Óc and Cú Chulainn); about a hundred named \"oghams\" (bird, colour, crafts, hand and nose oghams and many others); and circular diagrams such as Fege Find."
+  },
+  {
+   "date": "1685",
+   "work": "Ogygia, seu rerum Hibernicarum chronologia (London)",
+   "author": "Roderick O'Flaherty",
+   "what": "Prints the alphabet in a \"Beth-Luis-Nion\" order with N third (B L N F S ...), against the order of the Auraicept and In Lebor Ogaim (B L F S N). Graves later took this order up."
+  },
+  {
+   "date": "1785",
+   "work": "The Mount Callan (Co. Clare) \"ogham\"",
+   "author": "reported by Theophilus O'Flanagan",
+   "what": "Antiquarian controversy: an inscription claimed as ancient and widely regarded as a forgery [not verified: the fact-check search budget ran out before this was checked]."
+  },
+  {
+   "date": "1840s-1880s",
+   "work": "Papers on ogham; R. R. Brash, The Ogam Inscribed Monuments of the Gaedhil (1879); S. Ferguson, Ogham Inscriptions in Ireland, Wales and Scotland (1887)",
+   "author": "Charles Graves (Bishop of Limerick; grandfather of Robert Graves), Richard Rolt Brash, Sir Samuel Ferguson, John Rhŷs",
+   "what": "Nineteenth-century decipherment and corpus-building, using the Ballymote key checked against the Welsh bilinguals [not verified: the fact-check search budget ran out before this was checked]."
+  },
+  {
+   "date": "1887",
+   "work": "The Book of Ballymote, photolithographic facsimile (Dublin: Royal Irish Academy)",
+   "author": "introduction and analysis by Robert Atkinson",
+   "what": "Makes the manuscript ogham material widely available."
+  },
+  {
+   "date": "1917",
+   "work": "Auraicept na n-Éces: The Scholars' Primer (Edinburgh: John Grant)",
+   "author": "George Calder (ed. and trans.)",
+   "what": "Edition and English translation of the Auraicept and of the Ogam Tract from the Book of Ballymote and the Yellow Book of Lecan. It is the standard source for the \"secret\" oghams in English."
+  },
+  {
+   "date": "1937",
+   "work": "The Secret Languages of Ireland (Cambridge University Press)",
+   "author": "R. A. S. Macalister",
+   "what": "Argues that ogham began as a druidic finger-signing code (from a Greek alphabet). Influential on popular writing; not accepted by later scholarship."
+  },
+  {
+   "date": "1945, 1949",
+   "work": "Corpus Inscriptionum Insularum Celticarum, 2 vols (Dublin: Stationery Office)",
+   "author": "R. A. S. Macalister",
+   "what": "The standard numbered corpus (CIIC) of the stones."
+  },
+  {
+   "date": "1948",
+   "work": "The White Goddess: A Historical Grammar of Poetic Myth (London: Faber and Faber; revised later editions)",
+   "author": "Robert Graves",
+   "what": "Recasts O'Flaherty's Beth-Luis-Nion as a druidic tree-alphabet and 13-month tree calendar tied to a goddess cult. This is the source of the modern \"Celtic tree calendar\"."
+  },
+  {
+   "date": "1975",
+   "work": "\"The invention of the Ogom cipher\", Ériu 26",
+   "author": "James Carney",
+   "what": "Argues that ogham was devised as a cipher-like script modelled on Latin."
+  },
+  {
+   "date": "1983",
+   "work": "The Early Irish Linguist: An Edition of the Canonical Part of the Auraicept na nÉces (Commentationes Humanarum Litterarum 73; Helsinki: Societas Scientiarum Fennica)",
+   "author": "Anders Ahlqvist",
+   "what": "Edition of the canonical part of the Auraicept. The records seen give 1983, except one library catalogue (Herder), which gives 1982. Ahlqvist's own dating of the canon was not checked."
+  },
+  {
+   "date": "1988, 1991",
+   "work": "\"Irish letter-names and their kennings\", Ériu 39; A Guide to Ogam (Maynooth Monographs 4)",
+   "author": "Damian McManus",
+   "what": "The standard modern account. Only some letter names are tree names, the kennings preserve non-tree meanings, and the forfeda are later additions; it also gives the origin debate and the corpus."
+  },
+  {
+   "date": "1988",
+   "work": "The Celtic Tree Oracle",
+   "author": "Liz and Colin Murray",
+   "what": "A modern divination system on Graves's tree-letters. It is one of several living practices to be reported, neither mocked nor endorsed [not verified: the fact-check search budget ran out before this was checked]."
+  },
+  {
+   "date": "1999",
+   "work": "Unicode 3.0, Ogham block U+1680-U+169F",
+   "author": "Unicode Consortium (proposal associated with Michael Everson and Irish Standard I.S. 434:1999)",
+   "what": "Encodes the 20 letters, 5 forfeda, peith, the space mark and two feather marks: 29 characters, U+1680-U+169C; U+169D-U+169F unassigned (re-checked in the fact-check against UCD 14.0). The 1999/Unicode 3.0 date and the I.S. 434:1999 and Everson attributions are from memory [not verified: the fact-check search budget ran out before this was checked]."
+  },
+  {
+   "date": "2013; 2025",
+   "work": "Ogham in 3D (launched May 2013) and its successor, the OG(H)AM project",
+   "author": "Dublin Institute for Advanced Studies (PI for Ogham in 3D: Nora White), with the National Monuments Service and the Discovery Programme; OG(H)AM's partners were not checked (a Maynooth University page describes it, and a 2021 University of Glasgow release announced Scottish-Irish ogham research)",
+   "what": "3D scans and EpiDoc (TEI) editions of the inscriptions; about 50 stones at the 2013 launch. OG(H)AM aims to document all c. 640 examples of ogham in all media; a revised site was announced for launch on 12 September 2025 at the Royal Irish Academy (event listing). Sources: DIAS launch page; Maynooth project page; Ticket Tailor event listing (2025)."
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Ogma mac Elathan invented ogham, devising it for the learned apart from rustics and herdsmen.",
+   "standing": "legend",
+   "evidence": "Origin story told in In Lebor Ogaim / the Auraicept tradition. It is a medieval learned myth, reported as such.",
+   "sources": [
+    "Calder 1917",
+    "McManus 1991"
+   ]
+  },
+  {
+   "claim": "The first thing written in ogham was seven b's on a birch rod, a warning to Lug mac Ethlenn; that is why b stands first.",
+   "standing": "legend",
+   "evidence": "Same tract. An aetiological tale for the letter order [not verified: the fact-check search budget ran out before this was checked].",
+   "sources": [
+    "Calder 1917"
+   ]
+  },
+  {
+   "claim": "The letter names were taken from the names of the 25 best scholars in the school of Fénius Farsaid (after Babel), or from trees.",
+   "standing": "legend",
+   "evidence": "Auraicept na nÉces gives both explanations, inside its account of Fénius forming Irish from the languages of Babel.",
+   "sources": [
+    "Calder 1917",
+    "Ahlqvist 1983"
+   ]
+  },
+  {
+   "claim": "Every ogham letter is named after a tree.",
+   "standing": "disputed",
+   "evidence": "The medieval tracts assign a tree to every letter. That is documented as medieval doctrine. But several names are ordinary words: úath \"fear\", tinne \"ingot\", gort \"field\", straif \"sulphur\", úr \"earth\". McManus shows the Bríatharogam kennings often point to these non-tree senses (e.g. kennings of tinne about weapons and metal). Only beithe, fern, sail, dair and coll are secure tree names, with ailm and onn possible.",
+   "sources": [
+    "McManus 1988",
+    "McManus 1991"
+   ]
+  },
+  {
+   "claim": "Ogham was devised by about the 4th century AD (perhaps earlier) by someone schooled in Latin grammar.",
+   "standing": "disputed",
+   "evidence": "Majority scholarly view on the Latin model: the split into vowels and consonant classes and the letter inventory reflect Latin grammatical analysis, and the language of the stones is Primitive Irish. Date: the OG(H)AM project gives the origin as 'probably' 4th-century; Wikipedia notes letters for sounds no longer spoken by the 5th century, implying earlier use on perishable material. Alternatives: a cipher (Carney 1975); runic inspiration (older, minority); a druidic finger code from a Greek alphabet (Macalister 1937; abandoned). The place (Ireland, or Irish settlers in Roman Britain) remains open.",
+   "sources": [
+    "McManus 1991",
+    "Carney 1975",
+    "Macalister 1937",
+    "OG(H)AM project page (Maynooth)",
+    "Wikipedia, 'Ogham inscription'"
+   ]
+  },
+  {
+   "claim": "Ogham was a secret script of the druids.",
+   "standing": "disputed",
+   "evidence": "The stones are public memorials with plain formulae, not secrets. \"Secret\" applies to the medieval learned tradition: ogham as part of the poets' and grammarians' curriculum, the saga motif of messages only the learned can read, and the cryptic varieties in In Lebor Ogaim. No source contemporary with pagan druids describes ogham.",
+   "sources": [
+    "McManus 1991",
+    "Calder 1917",
+    "Hutton 1991"
+   ]
+  },
+  {
+   "claim": "The c. 100 \"secret\" oghams of In Lebor Ogaim were used in real communication.",
+   "standing": "disputed",
+   "evidence": "They are documented as lists. Most are acrostics (each letter replaced by a word from one class: birds, colours, crafts, kings, rivers...) or graphic variants. Scholars generally treat them as scholastic exercises and mnemonics. Their actual use in messages is unattested outside literature.",
+   "sources": [
+    "Calder 1917",
+    "McManus 1991"
+   ]
+  },
+  {
+   "claim": "Hand ogham (cos-ogam \"shin ogham\", srón-ogam \"nose ogham\") was a working sign language.",
+   "standing": "attributed",
+   "evidence": "The tract describes fingers laid against the shin or the ridge of the nose as stemline. That it was practised, rather than described, is not shown.",
+   "sources": [
+    "Calder 1917",
+    "Macalister 1937"
+   ]
+  },
+  {
+   "claim": "Druids divined with ogham-inscribed yew rods.",
+   "standing": "legend",
+   "evidence": "Tochmarc Étaíne has the druid Dalán use four yew rods inscribed with ogham to discover where Étaín is. The tale is preserved in c. 1100 and later manuscripts. It is literary evidence only.",
+   "sources": [
+    "McManus 1991"
+   ]
+  },
+  {
+   "claim": "Ogham stones also served as markers of land ownership.",
+   "standing": "disputed",
+   "evidence": "Wikipedia ('Ogham inscription') states that orthodox inscriptions record a name 'either as a cenotaph or tombstone, or documenting land ownership'. The scholarly argument (from Old Irish legal references to ogham in stone as evidence of title, and from the siting of stones) is the researcher's recollection of Charles-Edwards and Swift 1997 [not verified: the fact-check search budget ran out before this was checked].",
+   "sources": [
+    "Wikipedia, 'Ogham inscription'",
+    "Charles-Edwards (not checked)",
+    "Swift 1997 (not checked)"
+   ]
+  },
+  {
+   "claim": "The word \"ogam\" derives from the god Ogma (cf. Gaulish Ogmios in Lucian).",
+   "standing": "disputed",
+   "evidence": "The etymology is uncertain. Proposals include a link with Ogma/Ogmios and with Greek ógmos \"furrow, line\" (discussed by McManus). Lucian's Ogmios is a Gaulish Heracles figure of eloquence, and the link to the Irish Ogma is speculative.",
+   "sources": [
+    "McManus 1991",
+    "Lucian, Heracles 1"
+   ]
+  },
+  {
+   "claim": "The 13-month Celtic tree calendar (Birch, Rowan, Ash, Alder, Willow, Hawthorn, Oak, Holly, Hazel, Vine, Ivy, Reed, Elder) is an ancient druidic calendar.",
+   "standing": "attributed",
+   "evidence": "Graves presents it so in The White Goddess (1948), building on O'Flaherty's 1685 Beth-Luis-Nion order. No medieval Irish source contains a tree calendar. Historians treat it as Graves's poetic construction.",
+   "sources": [
+    "Graves 1948",
+    "Hutton 1991",
+    "McManus 1991"
+   ]
+  },
+  {
+   "claim": "The Beth-Luis-Nion order (N third) is the ancient order.",
+   "standing": "disputed",
+   "evidence": "The Auraicept and In Lebor Ogaim have B L F S N. The stones carry texts, not alphabet rows, so they do not decide the order. N third is O'Flaherty's (1685) arrangement, followed by Graves.",
+   "sources": [
+    "O'Flaherty 1685",
+    "McManus 1991"
+   ]
+  },
+  {
+   "claim": "Charles Graves, Bishop of Limerick and a 19th-century ogham scholar, was Robert Graves's grandfather.",
+   "standing": "documented",
+   "evidence": "Family relationship well established in biographies of Robert Graves [not verified: the fact-check search budget ran out before this was checked].",
+   "sources": [
+    "biographies of Robert Graves"
+   ]
+  },
+  {
+   "claim": "Unicode encodes Ogham at U+1680-U+169C; U+1680 is a (visible) space character.",
+   "standing": "documented",
+   "evidence": "Re-checked in the fact-check: Python unicodedata (UCD 14.0.0) gives U+1680 category Zs, U+1681-169A Lo with the names used here, U+169B Ps, U+169C Pe, U+169D-169F unassigned; Node: ' '.trim() returns '' and /\\s/ matches it; Python re \\s matches it.",
+   "sources": [
+    "Unicode Ogham chart",
+    "UCD 14.0"
+   ]
+  },
+  {
+   "claim": "Ogham is not among the alphabets of Agrippa's De occulta philosophia.",
+   "standing": "documented",
+   "evidence": "Checked in the fact-check against the keyed EEBO-TCP text of the 1651 English translation (A26565, Wing A789): the words ogham/ogam/ogum, Irish, Ireland and Hibern- do not occur. Book III, chap. XXIX ('Of the Characters and Seals of spirits') gives the Theban characters 'which Peter Apponus notes, as delivered by Honorius of Thebes'; chap. XXX ('Another manner of making Characters, delivered by Cabalists') gives the Hebrew-based alphabets (Celestial, Malachim, Transitus fluvii, per the verified celestial and malachim files). The 1533 Latin was not searched, and the keyed text does not render the alphabet plates. Whether any other Renaissance grimoire prints ogham was not checked, so the claim is limited to Agrippa.",
+   "sources": [
+    "Agrippa, Three Books of Occult Philosophy, trans. J. F. (London, 1651), EEBO-TCP A26565",
+    "Perrone Compagni 1992 (not re-checked)"
+   ]
+  }
+ ],
+ "letters": [
+  {
+   "order": 1,
+   "name": "beithe",
+   "value": "B",
+   "translit": "b",
+   "numeric": null,
+   "form": "One straight stroke hanging perpendicular BELOW the horizontal stemline (to the RIGHT of a vertical stemline read upward). Each stroke touches the line and stops there; none crosses it. Each stroke is about 11 stemline-thicknesses long (381 units) and about twice as thick as the line (73 vs 33 units). Glyph advance 301 units.",
+   "formConfidence": "high",
+   "note": "Name spellings vary: Old Irish (as given), Modern Irish and the Unicode name (BEITH) differ. nameMeaning follows McManus 1988/1991 as remembered. medievalTreeGloss is the tree that the medieval tracts assign. gravesTree is the tree of The White Goddess (1948). These are three different layers; do not merge them. Fact-check: form re-measured from the Noto Sans Ogham 2.001 outlines and found exact; code point and Unicode name confirmed against UCD 14.0. NOT verified (the search budget ran out), and still the researcher's recollection: nameMeaning, medievalTreeGloss, gravesTree and the kenning. Form judgement: consistent with the standard form (strokes on one side of the stemline: B-group below / to the right, H-group above / to the left).",
+   "char": "ᚁ",
+   "codepoint": "U+1681",
+   "unicodeName": "OGHAM LETTER BEITH",
+   "aicme": "aicme beithe (B-group)",
+   "strokes": 1,
+   "side": "below / right",
+   "stoneValue": "B",
+   "manuscriptValue": "b",
+   "nameMeaning": "'birch': a genuine tree name",
+   "medievalTreeGloss": "beithe, birch",
+   "gravesTree": "birch",
+   "kenningMorann": {
+    "text": "féochos foltchaín",
+    "paraphrase": "own paraphrase: withered foot with fine hair (i.e. the birch)",
+    "confidence": "unverified: wording from the researcher's memory, not confirmed in the fact-check. Do not print it as a quotation until checked against Calder 1917 and McManus 1988. The English, labelled 'own paraphrase', may follow McManus's published renderings closely; if so, credit him."
+   }
+  },
+  {
+   "order": 2,
+   "name": "luis",
+   "value": "L",
+   "translit": "l",
+   "numeric": null,
+   "form": "Two straight strokes hanging perpendicular BELOW the horizontal stemline (to the RIGHT of a vertical stemline read upward). Each stroke touches the line and stops there; none crosses it. The strokes are parallel, equal in length and evenly spaced. Each stroke is about 11 stemline-thicknesses long (381 units) and about twice as thick as the line (73 vs 33 units). Glyph advance 445 units.",
+   "formConfidence": "high",
+   "note": "Name spellings vary: Old Irish (as given), Modern Irish and the Unicode name (LUIS) differ. nameMeaning follows McManus 1988/1991 as remembered. medievalTreeGloss is the tree that the medieval tracts assign. gravesTree is the tree of The White Goddess (1948). These are three different layers; do not merge them. Fact-check: form re-measured from the Noto Sans Ogham 2.001 outlines and found exact; code point and Unicode name confirmed against UCD 14.0. NOT verified (the search budget ran out), and still the researcher's recollection: nameMeaning, medievalTreeGloss, gravesTree and the kenning. Form judgement: consistent with the standard form (strokes on one side of the stemline: B-group below / to the right, H-group above / to the left).",
+   "char": "ᚂ",
+   "codepoint": "U+1682",
+   "unicodeName": "OGHAM LETTER LUIS",
+   "aicme": "aicme beithe (B-group)",
+   "strokes": 2,
+   "side": "below / right",
+   "stoneValue": "L",
+   "manuscriptValue": "l",
+   "nameMeaning": "'flame' or 'herb' (McManus weighs both); not a tree word in origin",
+   "medievalTreeGloss": "caerthann, rowan",
+   "gravesTree": "rowan",
+   "kenningMorann": {
+    "text": "lí súla",
+    "paraphrase": "own paraphrase: lustre (or delight) of the eye",
+    "confidence": "unverified: wording from the researcher's memory, not confirmed in the fact-check. Do not print it as a quotation until checked against Calder 1917 and McManus 1988. The English, labelled 'own paraphrase', may follow McManus's published renderings closely; if so, credit him."
+   }
+  },
+  {
+   "order": 3,
+   "name": "fern",
+   "value": "F",
+   "translit": "v on stones, f in manuscripts",
+   "numeric": null,
+   "form": "Three straight strokes hanging perpendicular BELOW the horizontal stemline (to the RIGHT of a vertical stemline read upward). Each stroke touches the line and stops there; none crosses it. The strokes are parallel, equal in length and evenly spaced. Each stroke is about 11 stemline-thicknesses long (381 units) and about twice as thick as the line (73 vs 33 units). Glyph advance 589 units.",
+   "formConfidence": "high",
+   "note": "Name spellings vary: Old Irish (as given), Modern Irish and the Unicode name (FEARN) differ. nameMeaning follows McManus 1988/1991 as remembered. medievalTreeGloss is the tree that the medieval tracts assign. gravesTree is the tree of The White Goddess (1948). These are three different layers; do not merge them. Fact-check: form re-measured from the Noto Sans Ogham 2.001 outlines and found exact; code point and Unicode name confirmed against UCD 14.0. NOT verified (the search budget ran out), and still the researcher's recollection: nameMeaning, medievalTreeGloss, gravesTree and the kenning. Form judgement: consistent with the standard form (strokes on one side of the stemline: B-group below / to the right, H-group above / to the left).",
+   "char": "ᚃ",
+   "codepoint": "U+1683",
+   "unicodeName": "OGHAM LETTER FEARN",
+   "aicme": "aicme beithe (B-group)",
+   "strokes": 3,
+   "side": "below / right",
+   "stoneValue": "V (= /w/)",
+   "manuscriptValue": "f",
+   "nameMeaning": "'alder': a genuine tree name",
+   "medievalTreeGloss": "fern, alder",
+   "gravesTree": "alder",
+   "kenningMorann": {
+    "text": "airenach fían",
+    "paraphrase": "own paraphrase: vanguard (or shield) of warrior-bands",
+    "confidence": "unverified: wording from the researcher's memory, not confirmed in the fact-check. Do not print it as a quotation until checked against Calder 1917 and McManus 1988. The English, labelled 'own paraphrase', may follow McManus's published renderings closely; if so, credit him."
+   }
+  },
+  {
+   "order": 4,
+   "name": "sail",
+   "value": "S",
+   "translit": "s",
+   "numeric": null,
+   "form": "Four straight strokes hanging perpendicular BELOW the horizontal stemline (to the RIGHT of a vertical stemline read upward). Each stroke touches the line and stops there; none crosses it. The strokes are parallel, equal in length and evenly spaced. Each stroke is about 11 stemline-thicknesses long (381 units) and about twice as thick as the line (73 vs 33 units). Glyph advance 733 units.",
+   "formConfidence": "high",
+   "note": "Name spellings vary: Old Irish (as given), Modern Irish and the Unicode name (SAIL) differ. nameMeaning follows McManus 1988/1991 as remembered. medievalTreeGloss is the tree that the medieval tracts assign. gravesTree is the tree of The White Goddess (1948). These are three different layers; do not merge them. Fact-check: form re-measured from the Noto Sans Ogham 2.001 outlines and found exact; code point and Unicode name confirmed against UCD 14.0. NOT verified (the search budget ran out), and still the researcher's recollection: nameMeaning, medievalTreeGloss, gravesTree and the kenning. Form judgement: consistent with the standard form (strokes on one side of the stemline: B-group below / to the right, H-group above / to the left).",
+   "char": "ᚄ",
+   "codepoint": "U+1684",
+   "unicodeName": "OGHAM LETTER SAIL",
+   "aicme": "aicme beithe (B-group)",
+   "strokes": 4,
+   "side": "below / right",
+   "stoneValue": "S",
+   "manuscriptValue": "s",
+   "nameMeaning": "'willow': a genuine tree name",
+   "medievalTreeGloss": "sail, willow",
+   "gravesTree": "willow",
+   "kenningMorann": {
+    "text": "lí n-aimbi",
+    "paraphrase": "own paraphrase: colour (pallor) of a lifeless one",
+    "confidence": "unverified: wording from the researcher's memory, not confirmed in the fact-check. Do not print it as a quotation until checked against Calder 1917 and McManus 1988. The English, labelled 'own paraphrase', may follow McManus's published renderings closely; if so, credit him."
+   }
+  },
+  {
+   "order": 5,
+   "name": "nin",
+   "value": "N",
+   "translit": "n",
+   "numeric": null,
+   "form": "Five straight strokes hanging perpendicular BELOW the horizontal stemline (to the RIGHT of a vertical stemline read upward). Each stroke touches the line and stops there; none crosses it. The strokes are parallel, equal in length and evenly spaced. Each stroke is about 11 stemline-thicknesses long (381 units) and about twice as thick as the line (73 vs 33 units). Glyph advance 877 units.",
+   "formConfidence": "high",
+   "note": "Name spellings vary: Old Irish (as given), Modern Irish and the Unicode name (NION) differ. nameMeaning follows McManus 1988/1991 as remembered. medievalTreeGloss is the tree that the medieval tracts assign. gravesTree is the tree of The White Goddess (1948). These are three different layers; do not merge them. Fact-check: form re-measured from the Noto Sans Ogham 2.001 outlines and found exact; code point and Unicode name confirmed against UCD 14.0. NOT verified (the search budget ran out), and still the researcher's recollection: nameMeaning, medievalTreeGloss, gravesTree and the kenning. Form judgement: consistent with the standard form (strokes on one side of the stemline: B-group below / to the right, H-group above / to the left).",
+   "char": "ᚅ",
+   "codepoint": "U+1685",
+   "unicodeName": "OGHAM LETTER NION",
+   "aicme": "aicme beithe (B-group)",
+   "strokes": 5,
+   "side": "below / right",
+   "stoneValue": "N",
+   "manuscriptValue": "n",
+   "nameMeaning": "'fork, forked branch' (also used of a letter); not a tree word in origin",
+   "medievalTreeGloss": "uinnius, ash",
+   "gravesTree": "ash",
+   "kenningMorann": {
+    "text": "costud síde",
+    "paraphrase": "own paraphrase: establishing of peace",
+    "confidence": "unverified: wording from the researcher's memory, not confirmed in the fact-check. Do not print it as a quotation until checked against Calder 1917 and McManus 1988. The English, labelled 'own paraphrase', may follow McManus's published renderings closely; if so, credit him."
+   }
+  },
+  {
+   "order": 6,
+   "name": "úath",
+   "value": "H",
+   "translit": "h",
+   "numeric": null,
+   "form": "One straight stroke standing perpendicular ABOVE the horizontal stemline (to the LEFT of a vertical stemline read upward). Each stroke touches the line and stops there; none crosses it. Same lengths and spacing as the B-group (381 units, pitch 144). It is the B-group letter of the same count turned to the other side. Glyph advance 301 units.",
+   "formConfidence": "high",
+   "note": "Name spellings vary: Old Irish (as given), Modern Irish and the Unicode name (UATH) differ. nameMeaning follows McManus 1988/1991 as remembered. medievalTreeGloss is the tree that the medieval tracts assign. gravesTree is the tree of The White Goddess (1948). These are three different layers; do not merge them. Fact-check: form re-measured from the Noto Sans Ogham 2.001 outlines and found exact; code point and Unicode name confirmed against UCD 14.0. NOT verified (the search budget ran out), and still the researcher's recollection: nameMeaning, medievalTreeGloss, gravesTree and the kenning. Form judgement: consistent with the standard form (strokes on one side of the stemline: B-group below / to the right, H-group above / to the left).",
+   "char": "ᚆ",
+   "codepoint": "U+1686",
+   "unicodeName": "OGHAM LETTER UATH",
+   "aicme": "aicme húatha (H-group)",
+   "strokes": 1,
+   "side": "above / left",
+   "stoneValue": "H (value on stones debated; rare there)",
+   "manuscriptValue": "h",
+   "nameMeaning": "'fear, horror' (McManus); the tree reading is secondary",
+   "medievalTreeGloss": "sceith, whitethorn / hawthorn",
+   "gravesTree": "hawthorn",
+   "kenningMorann": {
+    "text": "condál cúan",
+    "paraphrase": "own paraphrase: assembly (or pack) of hounds",
+    "confidence": "unverified: wording from the researcher's memory, not confirmed in the fact-check. Do not print it as a quotation until checked against Calder 1917 and McManus 1988. The English, labelled 'own paraphrase', may follow McManus's published renderings closely; if so, credit him."
+   }
+  },
+  {
+   "order": 7,
+   "name": "dair",
+   "value": "D",
+   "translit": "d",
+   "numeric": null,
+   "form": "Two straight strokes standing perpendicular ABOVE the horizontal stemline (to the LEFT of a vertical stemline read upward). Each stroke touches the line and stops there; none crosses it. The strokes are parallel, equal in length and evenly spaced. Same lengths and spacing as the B-group (381 units, pitch 144). It is the B-group letter of the same count turned to the other side. Glyph advance 445 units.",
+   "formConfidence": "high",
+   "note": "Name spellings vary: Old Irish (as given), Modern Irish and the Unicode name (DAIR) differ. nameMeaning follows McManus 1988/1991 as remembered. medievalTreeGloss is the tree that the medieval tracts assign. gravesTree is the tree of The White Goddess (1948). These are three different layers; do not merge them. Fact-check: form re-measured from the Noto Sans Ogham 2.001 outlines and found exact; code point and Unicode name confirmed against UCD 14.0. NOT verified (the search budget ran out), and still the researcher's recollection: nameMeaning, medievalTreeGloss, gravesTree and the kenning. Form judgement: consistent with the standard form (strokes on one side of the stemline: B-group below / to the right, H-group above / to the left).",
+   "char": "ᚇ",
+   "codepoint": "U+1687",
+   "unicodeName": "OGHAM LETTER DAIR",
+   "aicme": "aicme húatha (H-group)",
+   "strokes": 2,
+   "side": "above / left",
+   "stoneValue": "D",
+   "manuscriptValue": "d",
+   "nameMeaning": "'oak': a genuine tree name",
+   "medievalTreeGloss": "dair, oak",
+   "gravesTree": "oak",
+   "kenningMorann": {
+    "text": "ardam dossaib",
+    "paraphrase": "own paraphrase: highest of bushes",
+    "confidence": "unverified: wording from the researcher's memory, not confirmed in the fact-check. Do not print it as a quotation until checked against Calder 1917 and McManus 1988. The English, labelled 'own paraphrase', may follow McManus's published renderings closely; if so, credit him."
+   }
+  },
+  {
+   "order": 8,
+   "name": "tinne",
+   "value": "T",
+   "translit": "t",
+   "numeric": null,
+   "form": "Three straight strokes standing perpendicular ABOVE the horizontal stemline (to the LEFT of a vertical stemline read upward). Each stroke touches the line and stops there; none crosses it. The strokes are parallel, equal in length and evenly spaced. Same lengths and spacing as the B-group (381 units, pitch 144). It is the B-group letter of the same count turned to the other side. Glyph advance 589 units.",
+   "formConfidence": "high",
+   "note": "Name spellings vary: Old Irish (as given), Modern Irish and the Unicode name (TINNE) differ. nameMeaning follows McManus 1988/1991 as remembered. medievalTreeGloss is the tree that the medieval tracts assign. gravesTree is the tree of The White Goddess (1948). These are three different layers; do not merge them. Fact-check: form re-measured from the Noto Sans Ogham 2.001 outlines and found exact; code point and Unicode name confirmed against UCD 14.0. NOT verified (the search budget ran out), and still the researcher's recollection: nameMeaning, medievalTreeGloss, gravesTree and the kenning. Form judgement: consistent with the standard form (strokes on one side of the stemline: B-group below / to the right, H-group above / to the left).",
+   "char": "ᚈ",
+   "codepoint": "U+1688",
+   "unicodeName": "OGHAM LETTER TINNE",
+   "aicme": "aicme húatha (H-group)",
+   "strokes": 3,
+   "side": "above / left",
+   "stoneValue": "T",
+   "manuscriptValue": "t",
+   "nameMeaning": "'bar of metal, ingot' (McManus); not a tree word in origin",
+   "medievalTreeGloss": "cuileann, holly",
+   "gravesTree": "holly",
+   "kenningMorann": {
+    "text": "trian n-airm",
+    "paraphrase": "own paraphrase: one third of a weapon",
+    "confidence": "unverified: wording from the researcher's memory, not confirmed in the fact-check. Do not print it as a quotation until checked against Calder 1917 and McManus 1988. The English, labelled 'own paraphrase', may follow McManus's published renderings closely; if so, credit him."
+   }
+  },
+  {
+   "order": 9,
+   "name": "coll",
+   "value": "C",
+   "translit": "c",
+   "numeric": null,
+   "form": "Four straight strokes standing perpendicular ABOVE the horizontal stemline (to the LEFT of a vertical stemline read upward). Each stroke touches the line and stops there; none crosses it. The strokes are parallel, equal in length and evenly spaced. Same lengths and spacing as the B-group (381 units, pitch 144). It is the B-group letter of the same count turned to the other side. Glyph advance 733 units.",
+   "formConfidence": "high",
+   "note": "Name spellings vary: Old Irish (as given), Modern Irish and the Unicode name (COLL) differ. nameMeaning follows McManus 1988/1991 as remembered. medievalTreeGloss is the tree that the medieval tracts assign. gravesTree is the tree of The White Goddess (1948). These are three different layers; do not merge them. Fact-check: form re-measured from the Noto Sans Ogham 2.001 outlines and found exact; code point and Unicode name confirmed against UCD 14.0. NOT verified (the search budget ran out), and still the researcher's recollection: nameMeaning, medievalTreeGloss, gravesTree and the kenning. Form judgement: consistent with the standard form (strokes on one side of the stemline: B-group below / to the right, H-group above / to the left).",
+   "char": "ᚉ",
+   "codepoint": "U+1689",
+   "unicodeName": "OGHAM LETTER COLL",
+   "aicme": "aicme húatha (H-group)",
+   "strokes": 4,
+   "side": "above / left",
+   "stoneValue": "C (= /k/)",
+   "manuscriptValue": "c",
+   "nameMeaning": "'hazel': a genuine tree name",
+   "medievalTreeGloss": "coll, hazel",
+   "gravesTree": "hazel",
+   "kenningMorann": {
+    "text": "caíniu fedaib",
+    "paraphrase": "own paraphrase: fairest of trees",
+    "confidence": "unverified: wording from the researcher's memory, not confirmed in the fact-check. Do not print it as a quotation until checked against Calder 1917 and McManus 1988. The English, labelled 'own paraphrase', may follow McManus's published renderings closely; if so, credit him."
+   }
+  },
+  {
+   "order": 10,
+   "name": "cert (quert)",
+   "value": "Q",
+   "translit": "q",
+   "numeric": null,
+   "form": "Five straight strokes standing perpendicular ABOVE the horizontal stemline (to the LEFT of a vertical stemline read upward). Each stroke touches the line and stops there; none crosses it. The strokes are parallel, equal in length and evenly spaced. Same lengths and spacing as the B-group (381 units, pitch 144). It is the B-group letter of the same count turned to the other side. Glyph advance 877 units.",
+   "formConfidence": "high",
+   "note": "Name spellings vary: Old Irish (as given), Modern Irish and the Unicode name (CEIRT) differ. nameMeaning follows McManus 1988/1991 as remembered. medievalTreeGloss is the tree that the medieval tracts assign. gravesTree is the tree of The White Goddess (1948). These are three different layers; do not merge them. Fact-check: form re-measured from the Noto Sans Ogham 2.001 outlines and found exact; code point and Unicode name confirmed against UCD 14.0. NOT verified (the search budget ran out), and still the researcher's recollection: nameMeaning, medievalTreeGloss, gravesTree and the kenning. Form judgement: consistent with the standard form (strokes on one side of the stemline: B-group below / to the right, H-group above / to the left).",
+   "char": "ᚊ",
+   "codepoint": "U+168A",
+   "unicodeName": "OGHAM LETTER CEIRT",
+   "aicme": "aicme húatha (H-group)",
+   "strokes": 5,
+   "side": "above / left",
+   "stoneValue": "Q (= /kw/)",
+   "manuscriptValue": "q (by then pronounced like c)",
+   "nameMeaning": "'bush' (McManus derives it from a form cognate with Welsh perth, 'bush'); meaning not certain",
+   "medievalTreeGloss": "aball, apple",
+   "gravesTree": "apple",
+   "kenningMorann": {
+    "text": "clithar mbaiscill",
+    "paraphrase": "own paraphrase: shelter of a lunatic (or of a hind; the second word is obscure)",
+    "confidence": "unverified: wording from the researcher's memory, not confirmed in the fact-check. Do not print it as a quotation until checked against Calder 1917 and McManus 1988. The English, labelled 'own paraphrase', may follow McManus's published renderings closely; if so, credit him."
+   }
+  },
+  {
+   "order": 11,
+   "name": "muin",
+   "value": "M",
+   "translit": "m",
+   "numeric": null,
+   "form": "One long straight stroke CROSSING the stemline obliquely, each cut through at its midpoint. In the font each stroke slants from lower left to upper right (like '/'), leaning about 200 units over its 795-unit height (about 14 degrees off the vertical). It reaches as far below the line as a B-stroke and as far above as an H-stroke. The slant direction varies on stones and in manuscripts; the axis of the group is 'across', not the angle.",
+   "formConfidence": "medium",
+   "note": "Name spellings vary: Old Irish (as given), Modern Irish and the Unicode name (MUIN) differ. nameMeaning follows McManus 1988/1991 as remembered. medievalTreeGloss is the tree that the medieval tracts assign. gravesTree is the tree of The White Goddess (1948). These are three different layers; do not merge them. Fact-check: form re-measured from the Noto Sans Ogham 2.001 outlines and found exact; code point and Unicode name confirmed against UCD 14.0. NOT verified (the search budget ran out), and still the researcher's recollection: nameMeaning, medievalTreeGloss, gravesTree and the kenning. Form judgement: long strokes crossing the line obliquely are the standard form; the '/' slant and 14-degree angle are the font's, so medium stays.",
+   "char": "ᚋ",
+   "codepoint": "U+168B",
+   "unicodeName": "OGHAM LETTER MUIN",
+   "aicme": "aicme muine (M-group)",
+   "strokes": 1,
+   "side": "across the line, oblique",
+   "stoneValue": "M",
+   "manuscriptValue": "m",
+   "nameMeaning": "uncertain: 'neck, upper back', 'wile, ruse' or 'love' (homonyms McManus discusses)",
+   "medievalTreeGloss": "fínemain, vine",
+   "gravesTree": "vine",
+   "kenningMorann": {
+    "text": "tressam fedmae",
+    "paraphrase": "own paraphrase: strongest in exertion",
+    "confidence": "unverified: wording from the researcher's memory, not confirmed in the fact-check. Do not print it as a quotation until checked against Calder 1917 and McManus 1988. The English, labelled 'own paraphrase', may follow McManus's published renderings closely; if so, credit him."
+   }
+  },
+  {
+   "order": 12,
+   "name": "gort",
+   "value": "G",
+   "translit": "g",
+   "numeric": null,
+   "form": "Two long straight strokes CROSSING the stemline obliquely, each cut through at its midpoint. In the font each stroke slants from lower left to upper right (like '/'), leaning about 200 units over its 795-unit height (about 14 degrees off the vertical). It reaches as far below the line as a B-stroke and as far above as an H-stroke. The strokes are parallel and evenly spaced at a pitch of 144 units. The slant direction varies on stones and in manuscripts; the axis of the group is 'across', not the angle.",
+   "formConfidence": "medium",
+   "note": "Name spellings vary: Old Irish (as given), Modern Irish and the Unicode name (GORT) differ. nameMeaning follows McManus 1988/1991 as remembered. medievalTreeGloss is the tree that the medieval tracts assign. gravesTree is the tree of The White Goddess (1948). These are three different layers; do not merge them. Fact-check: form re-measured from the Noto Sans Ogham 2.001 outlines and found exact; code point and Unicode name confirmed against UCD 14.0. NOT verified (the search budget ran out), and still the researcher's recollection: nameMeaning, medievalTreeGloss, gravesTree and the kenning. Form judgement: long strokes crossing the line obliquely are the standard form; the '/' slant and 14-degree angle are the font's, so medium stays.",
+   "char": "ᚌ",
+   "codepoint": "U+168C",
+   "unicodeName": "OGHAM LETTER GORT",
+   "aicme": "aicme muine (M-group)",
+   "strokes": 2,
+   "side": "across the line, oblique",
+   "stoneValue": "G",
+   "manuscriptValue": "g",
+   "nameMeaning": "'field, garden' (McManus); not a tree word",
+   "medievalTreeGloss": "eidenn, ivy",
+   "gravesTree": "ivy",
+   "kenningMorann": {
+    "text": "millsiu féraib",
+    "paraphrase": "own paraphrase: sweeter than grasses",
+    "confidence": "unverified: wording from the researcher's memory, not confirmed in the fact-check. Do not print it as a quotation until checked against Calder 1917 and McManus 1988. The English, labelled 'own paraphrase', may follow McManus's published renderings closely; if so, credit him."
+   }
+  },
+  {
+   "order": 13,
+   "name": "gétal (ngétal)",
+   "value": "NG",
+   "translit": "ng",
+   "numeric": null,
+   "form": "Three long straight strokes CROSSING the stemline obliquely, each cut through at its midpoint. In the font each stroke slants from lower left to upper right (like '/'), leaning about 200 units over its 795-unit height (about 14 degrees off the vertical). It reaches as far below the line as a B-stroke and as far above as an H-stroke. The strokes are parallel and evenly spaced at a pitch of 144 units. The slant direction varies on stones and in manuscripts; the axis of the group is 'across', not the angle.",
+   "formConfidence": "medium",
+   "note": "Name spellings vary: Old Irish (as given), Modern Irish and the Unicode name (NGEADAL) differ. nameMeaning follows McManus 1988/1991 as remembered. medievalTreeGloss is the tree that the medieval tracts assign. gravesTree is the tree of The White Goddess (1948). These are three different layers; do not merge them. Fact-check: form re-measured from the Noto Sans Ogham 2.001 outlines and found exact; code point and Unicode name confirmed against UCD 14.0. NOT verified (the search budget ran out), and still the researcher's recollection: nameMeaning, medievalTreeGloss, gravesTree and the kenning. Form judgement: long strokes crossing the line obliquely are the standard form; the '/' slant and 14-degree angle are the font's, so medium stays.",
+   "char": "ᚍ",
+   "codepoint": "U+168D",
+   "unicodeName": "OGHAM LETTER NGEADAL",
+   "aicme": "aicme muine (M-group)",
+   "strokes": 3,
+   "side": "across the line, oblique",
+   "stoneValue": "probably /gw/ originally (McManus)",
+   "manuscriptValue": "ng",
+   "nameMeaning": "uncertain; McManus suggests 'killing, slaying'",
+   "medievalTreeGloss": "cilcach, broom (some lists: reed)",
+   "gravesTree": "reed",
+   "kenningMorann": {
+    "text": "lúth lego",
+    "paraphrase": "own paraphrase: sustenance (strength) of a physician",
+    "confidence": "unverified: wording from the researcher's memory, not confirmed in the fact-check. Do not print it as a quotation until checked against Calder 1917 and McManus 1988. The English, labelled 'own paraphrase', may follow McManus's published renderings closely; if so, credit him."
+   }
+  },
+  {
+   "order": 14,
+   "name": "straif",
+   "value": "Z",
+   "translit": "z",
+   "numeric": null,
+   "form": "Four long straight strokes CROSSING the stemline obliquely, each cut through at its midpoint. In the font each stroke slants from lower left to upper right (like '/'), leaning about 200 units over its 795-unit height (about 14 degrees off the vertical). It reaches as far below the line as a B-stroke and as far above as an H-stroke. The strokes are parallel and evenly spaced at a pitch of 144 units. The slant direction varies on stones and in manuscripts; the axis of the group is 'across', not the angle.",
+   "formConfidence": "medium",
+   "note": "Name spellings vary: Old Irish (as given), Modern Irish and the Unicode name (STRAIF) differ. nameMeaning follows McManus 1988/1991 as remembered. medievalTreeGloss is the tree that the medieval tracts assign. gravesTree is the tree of The White Goddess (1948). These are three different layers; do not merge them. Fact-check: form re-measured from the Noto Sans Ogham 2.001 outlines and found exact; code point and Unicode name confirmed against UCD 14.0. NOT verified (the search budget ran out), and still the researcher's recollection: nameMeaning, medievalTreeGloss, gravesTree and the kenning. Form judgement: long strokes crossing the line obliquely are the standard form; the '/' slant and 14-degree angle are the font's, so medium stays.",
+   "char": "ᚎ",
+   "codepoint": "U+168E",
+   "unicodeName": "OGHAM LETTER STRAIF",
+   "aicme": "aicme muine (M-group)",
+   "strokes": 4,
+   "side": "across the line, oblique",
+   "stoneValue": "a consonant cluster originally, perhaps /st/ or /sw/ (debated); very rare on stones",
+   "manuscriptValue": "z (treated as a double letter)",
+   "nameMeaning": "'sulphur' (McManus); not a tree word",
+   "medievalTreeGloss": "draigen, blackthorn",
+   "gravesTree": "blackthorn",
+   "kenningMorann": {
+    "text": "tressam ruamna",
+    "paraphrase": "own paraphrase: strongest of red dyes",
+    "confidence": "unverified: wording from the researcher's memory, not confirmed in the fact-check. Do not print it as a quotation until checked against Calder 1917 and McManus 1988. The English, labelled 'own paraphrase', may follow McManus's published renderings closely; if so, credit him."
+   }
+  },
+  {
+   "order": 15,
+   "name": "ruis",
+   "value": "R",
+   "translit": "r",
+   "numeric": null,
+   "form": "Five long straight strokes CROSSING the stemline obliquely, each cut through at its midpoint. In the font each stroke slants from lower left to upper right (like '/'), leaning about 200 units over its 795-unit height (about 14 degrees off the vertical). It reaches as far below the line as a B-stroke and as far above as an H-stroke. The strokes are parallel and evenly spaced at a pitch of 144 units. The slant direction varies on stones and in manuscripts; the axis of the group is 'across', not the angle.",
+   "formConfidence": "medium",
+   "note": "Name spellings vary: Old Irish (as given), Modern Irish and the Unicode name (RUIS) differ. nameMeaning follows McManus 1988/1991 as remembered. medievalTreeGloss is the tree that the medieval tracts assign. gravesTree is the tree of The White Goddess (1948). These are three different layers; do not merge them. Fact-check: form re-measured from the Noto Sans Ogham 2.001 outlines and found exact; code point and Unicode name confirmed against UCD 14.0. NOT verified (the search budget ran out), and still the researcher's recollection: nameMeaning, medievalTreeGloss, gravesTree and the kenning. Form judgement: long strokes crossing the line obliquely are the standard form; the '/' slant and 14-degree angle are the font's, so medium stays.",
+   "char": "ᚏ",
+   "codepoint": "U+168F",
+   "unicodeName": "OGHAM LETTER RUIS",
+   "aicme": "aicme muine (M-group)",
+   "strokes": 5,
+   "side": "across the line, oblique",
+   "stoneValue": "R",
+   "manuscriptValue": "r",
+   "nameMeaning": "'red, redness' (McManus, tentatively)",
+   "medievalTreeGloss": "trom, elder",
+   "gravesTree": "elder",
+   "kenningMorann": {
+    "text": "tindi ruccae",
+    "paraphrase": "own paraphrase: most intense of blushes",
+    "confidence": "unverified: wording from the researcher's memory, not confirmed in the fact-check. Do not print it as a quotation until checked against Calder 1917 and McManus 1988. The English, labelled 'own paraphrase', may follow McManus's published renderings closely; if so, credit him."
+   }
+  },
+  {
+   "order": 16,
+   "name": "ailm",
+   "value": "A",
+   "translit": "a",
+   "numeric": null,
+   "form": "One small lozenge (diamond bead) threaded ON the stemline. Each lozenge is 147 units wide and 176 tall, with its horizontal diagonal lying along the line, so it rises 72 units above the line and drops 71 below it. This is the font's normalisation. On the stones the vowels are notches cut into the arris (the edge that serves as stemline). Many manuscript keys and modern charts draw them instead as short perpendicular strokes crossing the line.",
+   "formConfidence": "medium",
+   "note": "Name spellings vary: Old Irish (as given), Modern Irish and the Unicode name (AILM) differ. nameMeaning follows McManus 1988/1991 as remembered. medievalTreeGloss is the tree that the medieval tracts assign. gravesTree is the tree of The White Goddess (1948). These are three different layers; do not merge them. Fact-check: form re-measured from the Noto Sans Ogham 2.001 outlines and found exact; code point and Unicode name confirmed against UCD 14.0. NOT verified (the search budget ran out), and still the researcher's recollection: nameMeaning, medievalTreeGloss, gravesTree and the kenning. Form judgement: formConfidence lowered from high to medium. The description is exact FOR THE FONT, but the lozenge ('diamond bead') is Noto's stylisation, not the standard form. On the stones the vowels are notches on the arris; in the manuscript keys and the usual printed charts, as this checker knows them, they are short strokes crossing the stemline at right angles (not confirmed by search). A stone-style or manuscript-style drawing should not use lozenges.",
+   "char": "ᚐ",
+   "codepoint": "U+1690",
+   "unicodeName": "OGHAM LETTER AILM",
+   "aicme": "aicme ailme (A-group, vowels)",
+   "strokes": 1,
+   "side": "on the line (notches on stones)",
+   "stoneValue": "A",
+   "manuscriptValue": "a",
+   "nameMeaning": "uncertain; possibly 'pine' (McManus treats a tree sense as possible)",
+   "medievalTreeGloss": "ochtach, fir / pine",
+   "gravesTree": "silver fir",
+   "kenningMorann": {
+    "text": "ardam íachtadae",
+    "paraphrase": "own paraphrase: loudest of groanings",
+    "confidence": "unverified: wording from the researcher's memory, not confirmed in the fact-check. Do not print it as a quotation until checked against Calder 1917 and McManus 1988. The English, labelled 'own paraphrase', may follow McManus's published renderings closely; if so, credit him."
+   }
+  },
+  {
+   "order": 17,
+   "name": "onn",
+   "value": "O",
+   "translit": "o",
+   "numeric": null,
+   "form": "Two small lozenges (diamond beads) threaded ON the stemline. Each lozenge is 147 units wide and 176 tall, with its horizontal diagonal lying along the line, so it rises 72 units above the line and drops 71 below it. The beads are evenly spaced at the same 144-unit pitch as the strokes. This is the font's normalisation. On the stones the vowels are notches cut into the arris (the edge that serves as stemline). Many manuscript keys and modern charts draw them instead as short perpendicular strokes crossing the line.",
+   "formConfidence": "medium",
+   "note": "Name spellings vary: Old Irish (as given), Modern Irish and the Unicode name (ONN) differ. nameMeaning follows McManus 1988/1991 as remembered. medievalTreeGloss is the tree that the medieval tracts assign. gravesTree is the tree of The White Goddess (1948). These are three different layers; do not merge them. Fact-check: form re-measured from the Noto Sans Ogham 2.001 outlines and found exact; code point and Unicode name confirmed against UCD 14.0. NOT verified (the search budget ran out), and still the researcher's recollection: nameMeaning, medievalTreeGloss, gravesTree and the kenning. Form judgement: formConfidence lowered from high to medium. The description is exact FOR THE FONT, but the lozenge ('diamond bead') is Noto's stylisation, not the standard form. On the stones the vowels are notches on the arris; in the manuscript keys and the usual printed charts, as this checker knows them, they are short strokes crossing the stemline at right angles (not confirmed by search). A stone-style or manuscript-style drawing should not use lozenges.",
+   "char": "ᚑ",
+   "codepoint": "U+1691",
+   "unicodeName": "OGHAM LETTER ONN",
+   "aicme": "aicme ailme (A-group, vowels)",
+   "strokes": 2,
+   "side": "on the line (notches on stones)",
+   "stoneValue": "O",
+   "manuscriptValue": "o",
+   "nameMeaning": "possibly 'ash-tree' (McManus); uncertain",
+   "medievalTreeGloss": "aitenn, furze / gorse",
+   "gravesTree": "furze (gorse)",
+   "kenningMorann": {
+    "text": "congnamaid echraide",
+    "paraphrase": "own paraphrase: helper of horses",
+    "confidence": "unverified: wording from the researcher's memory, not confirmed in the fact-check. Do not print it as a quotation until checked against Calder 1917 and McManus 1988. The English, labelled 'own paraphrase', may follow McManus's published renderings closely; if so, credit him."
+   }
+  },
+  {
+   "order": 18,
+   "name": "úr",
+   "value": "U",
+   "translit": "u",
+   "numeric": null,
+   "form": "Three small lozenges (diamond beads) threaded ON the stemline. Each lozenge is 147 units wide and 176 tall, with its horizontal diagonal lying along the line, so it rises 72 units above the line and drops 71 below it. The beads are evenly spaced at the same 144-unit pitch as the strokes. This is the font's normalisation. On the stones the vowels are notches cut into the arris (the edge that serves as stemline). Many manuscript keys and modern charts draw them instead as short perpendicular strokes crossing the line.",
+   "formConfidence": "medium",
+   "note": "Name spellings vary: Old Irish (as given), Modern Irish and the Unicode name (UR) differ. nameMeaning follows McManus 1988/1991 as remembered. medievalTreeGloss is the tree that the medieval tracts assign. gravesTree is the tree of The White Goddess (1948). These are three different layers; do not merge them. Fact-check: form re-measured from the Noto Sans Ogham 2.001 outlines and found exact; code point and Unicode name confirmed against UCD 14.0. NOT verified (the search budget ran out), and still the researcher's recollection: nameMeaning, medievalTreeGloss, gravesTree and the kenning. Form judgement: formConfidence lowered from high to medium. The description is exact FOR THE FONT, but the lozenge ('diamond bead') is Noto's stylisation, not the standard form. On the stones the vowels are notches on the arris; in the manuscript keys and the usual printed charts, as this checker knows them, they are short strokes crossing the stemline at right angles (not confirmed by search). A stone-style or manuscript-style drawing should not use lozenges.",
+   "char": "ᚒ",
+   "codepoint": "U+1692",
+   "unicodeName": "OGHAM LETTER UR",
+   "aicme": "aicme ailme (A-group, vowels)",
+   "strokes": 3,
+   "side": "on the line (notches on stones)",
+   "stoneValue": "U",
+   "manuscriptValue": "u",
+   "nameMeaning": "'earth, clay, soil' (McManus)",
+   "medievalTreeGloss": "fráech, heather",
+   "gravesTree": "heather",
+   "kenningMorann": {
+    "text": "úaraib adbaib",
+    "paraphrase": "own paraphrase: in cold dwellings",
+    "confidence": "unverified: wording from the researcher's memory, not confirmed in the fact-check. Do not print it as a quotation until checked against Calder 1917 and McManus 1988. The English, labelled 'own paraphrase', may follow McManus's published renderings closely; if so, credit him."
+   }
+  },
+  {
+   "order": 19,
+   "name": "edad",
+   "value": "E",
+   "translit": "e",
+   "numeric": null,
+   "form": "Four small lozenges (diamond beads) threaded ON the stemline. Each lozenge is 147 units wide and 176 tall, with its horizontal diagonal lying along the line, so it rises 72 units above the line and drops 71 below it. The beads are evenly spaced at the same 144-unit pitch as the strokes. This is the font's normalisation. On the stones the vowels are notches cut into the arris (the edge that serves as stemline). Many manuscript keys and modern charts draw them instead as short perpendicular strokes crossing the line.",
+   "formConfidence": "medium",
+   "note": "Name spellings vary: Old Irish (as given), Modern Irish and the Unicode name (EADHADH) differ. nameMeaning follows McManus 1988/1991 as remembered. medievalTreeGloss is the tree that the medieval tracts assign. gravesTree is the tree of The White Goddess (1948). These are three different layers; do not merge them. Fact-check: form re-measured from the Noto Sans Ogham 2.001 outlines and found exact; code point and Unicode name confirmed against UCD 14.0. NOT verified (the search budget ran out), and still the researcher's recollection: nameMeaning, medievalTreeGloss, gravesTree and the kenning. Form judgement: formConfidence lowered from high to medium. The description is exact FOR THE FONT, but the lozenge ('diamond bead') is Noto's stylisation, not the standard form. On the stones the vowels are notches on the arris; in the manuscript keys and the usual printed charts, as this checker knows them, they are short strokes crossing the stemline at right angles (not confirmed by search). A stone-style or manuscript-style drawing should not use lozenges.",
+   "char": "ᚓ",
+   "codepoint": "U+1693",
+   "unicodeName": "OGHAM LETTER EADHADH",
+   "aicme": "aicme ailme (A-group, vowels)",
+   "strokes": 4,
+   "side": "on the line (notches on stones)",
+   "stoneValue": "E",
+   "manuscriptValue": "e",
+   "nameMeaning": "unknown; probably an artificial name built on the vowel",
+   "medievalTreeGloss": "crithach, aspen (glosses vary)",
+   "gravesTree": "white poplar / aspen",
+   "kenningMorann": {
+    "text": "érgnaid fid",
+    "paraphrase": "own paraphrase: distinguished (discerning) wood",
+    "confidence": "unverified: wording from the researcher's memory, not confirmed in the fact-check. Do not print it as a quotation until checked against Calder 1917 and McManus 1988. The English, labelled 'own paraphrase', may follow McManus's published renderings closely; if so, credit him."
+   }
+  },
+  {
+   "order": 20,
+   "name": "idad",
+   "value": "I",
+   "translit": "i",
+   "numeric": null,
+   "form": "Five small lozenges (diamond beads) threaded ON the stemline. Each lozenge is 147 units wide and 176 tall, with its horizontal diagonal lying along the line, so it rises 72 units above the line and drops 71 below it. The beads are evenly spaced at the same 144-unit pitch as the strokes. This is the font's normalisation. On the stones the vowels are notches cut into the arris (the edge that serves as stemline). Many manuscript keys and modern charts draw them instead as short perpendicular strokes crossing the line.",
+   "formConfidence": "medium",
+   "note": "Name spellings vary: Old Irish (as given), Modern Irish and the Unicode name (IODHADH) differ. nameMeaning follows McManus 1988/1991 as remembered. medievalTreeGloss is the tree that the medieval tracts assign. gravesTree is the tree of The White Goddess (1948). These are three different layers; do not merge them. Fact-check: form re-measured from the Noto Sans Ogham 2.001 outlines and found exact; code point and Unicode name confirmed against UCD 14.0. NOT verified (the search budget ran out), and still the researcher's recollection: nameMeaning, medievalTreeGloss, gravesTree and the kenning. Form judgement: formConfidence lowered from high to medium. The description is exact FOR THE FONT, but the lozenge ('diamond bead') is Noto's stylisation, not the standard form. On the stones the vowels are notches on the arris; in the manuscript keys and the usual printed charts, as this checker knows them, they are short strokes crossing the stemline at right angles (not confirmed by search). A stone-style or manuscript-style drawing should not use lozenges.",
+   "char": "ᚔ",
+   "codepoint": "U+1694",
+   "unicodeName": "OGHAM LETTER IODHADH",
+   "aicme": "aicme ailme (A-group, vowels)",
+   "strokes": 5,
+   "side": "on the line (notches on stones)",
+   "stoneValue": "I",
+   "manuscriptValue": "i",
+   "nameMeaning": "unknown; the medieval 'yew' reading may be secondary",
+   "medievalTreeGloss": "ibar, yew",
+   "gravesTree": "yew",
+   "kenningMorann": {
+    "text": "sinem fedaib",
+    "paraphrase": "own paraphrase: oldest of trees",
+    "confidence": "unverified: wording from the researcher's memory, not confirmed in the fact-check. Do not print it as a quotation until checked against Calder 1917 and McManus 1988. The English, labelled 'own paraphrase', may follow McManus's published renderings closely; if so, credit him."
+   }
+  },
+  {
+   "order": 21,
+   "name": "ébad",
+   "value": "EA",
+   "translit": "ea (also read e or ē)",
+   "numeric": null,
+   "form": "An X: two straight strokes crossing each other ON the stemline, each running the full height (as far below as a B-stroke and as far above as an H-stroke; 795 units). The arms are symmetrical, and the crossing point sits on the line (x about 150). The ink runs from x 14 to 287 (about 273 units wide); the advance is 301, the same as a one-stroke letter.",
+   "formConfidence": "high",
+   "note": "First of the five forfeda ('extra letters'). An X-shaped sign does occur on some orthodox stones. McManus (1991) discusses its use there for a /k/ sound, conventionally transliterated K [not verified: the fact-check search budget ran out before this was checked]. The manuscript tradition gives it the value ea. Fact-check: form re-measured from the Noto Sans Ogham 2.001 outlines and found exact; code point and Unicode name confirmed against UCD 14.0. NOT verified (the search budget ran out), and still the researcher's recollection: the stone value K and the glosses. Form judgement: an X across the line is the standard form of the first forfid, as this checker knows it.",
+   "char": "ᚕ",
+   "codepoint": "U+1695",
+   "unicodeName": "OGHAM LETTER EABHADH",
+   "aicme": "forfeda (fifth group)",
+   "strokes": null,
+   "side": "across",
+   "stoneValue": "X-sign, transliterated K on some stones (see note)",
+   "manuscriptValue": "ea",
+   "nameMeaning": "uncertain",
+   "medievalTreeGloss": "glosses vary (aspen and elecampane are both given in modern summaries) [not verified: the fact-check search budget ran out before this was checked]",
+   "gravesTree": "Graves gives his own forfeda names (not the manuscript set)",
+   "kenningMorann": null
+  },
+  {
+   "order": 22,
+   "name": "óir",
+   "value": "OI",
+   "translit": "oi",
+   "numeric": null,
+   "form": "An outlined lozenge (diamond), centred on the stemline and taller than wide (795 x about 417 units). Its top point is level with the top of an H-stroke and its bottom point with the foot of a B-stroke. Its two side points lie on the line. The stemline runs straight through it along the horizontal diagonal, splitting the open interior into two triangles. The sides are straight strokes of normal thickness, and there are no other interior lines.",
+   "formConfidence": "high",
+   "note": "The name is usually explained as the genitive of ór 'gold'. Manuscript drawings of this sign vary and were not checked in this session. Fact-check: form re-measured from the Noto Sans Ogham 2.001 outlines and found exact; code point and Unicode name confirmed against UCD 14.0. NOT verified (the search budget ran out), and still the researcher's recollection: the glosses. Form judgement: a lozenge centred on and cut by the stemline matches the modern printed form as this checker knows it; high kept for the font form, but manuscript drawings were not compared.",
+   "char": "ᚖ",
+   "codepoint": "U+1696",
+   "unicodeName": "OGHAM LETTER OR",
+   "aicme": "forfeda (fifth group)",
+   "strokes": null,
+   "side": "across",
+   "stoneValue": "not a regular letter of the orthodox stones [not verified: the fact-check search budget ran out before this was checked]",
+   "manuscriptValue": "oi",
+   "nameMeaning": "'gold' (ór), probably",
+   "medievalTreeGloss": "feorus, spindle-tree [not verified: the fact-check search budget ran out before this was checked]",
+   "gravesTree": "spindle",
+   "kenningMorann": null
+  },
+  {
+   "order": 23,
+   "name": "uilen (uilleann)",
+   "value": "UI",
+   "translit": "ui",
+   "numeric": null,
+   "form": "BELOW the line, a squared hook or spiral built from straight bars meeting at right angles. (1) A perpendicular downstroke hangs from the line exactly like a B-stroke, at x 114-187. (2) At its foot it turns right into a bottom bar running about 2.5 stroke-pitches (to x 475, bar y -100 to -27). (3) It turns up the right side and climbs about two-thirds of the way back toward the line (to y 155). (4) It turns left into a short top bar about 1.25 stroke-pitches long (x 294-475, y 82-155). The top bar ends free: it touches neither the downstroke nor the line. The result looks like a square-cornered hook or a one-and-a-quarter-turn rectangular spiral under the line. Glyph advance 589.",
+   "formConfidence": "medium",
+   "note": "The font form is measured exactly. 'Medium' because the medieval forms of this sign vary, and it was not checked here whether the font follows a particular manuscript. The name is uillenn 'elbow, angle', which suits the angled shape. Fact-check: form re-measured from the Noto Sans Ogham 2.001 outlines and found exact; code point and Unicode name confirmed against UCD 14.0. NOT verified (the search budget ran out), and still the researcher's recollection: the names and glosses. Form judgement: consistent in kind with the modern printed form as this checker knows it, but not compared with the Unicode code chart or any manuscript; medium stays. Do not caption it as a manuscript form.",
+   "char": "ᚗ",
+   "codepoint": "U+1697",
+   "unicodeName": "OGHAM LETTER UILLEANN",
+   "aicme": "forfeda (fifth group)",
+   "strokes": null,
+   "side": "below / right",
+   "stoneValue": "manuscript / scholastic only",
+   "manuscriptValue": "ui",
+   "nameMeaning": "'elbow, angle'",
+   "medievalTreeGloss": "edlenn, honeysuckle [not verified: the fact-check search budget ran out before this was checked]",
+   "gravesTree": "honeysuckle",
+   "kenningMorann": null
+  },
+  {
+   "order": 24,
+   "name": "ifín (later pín)",
+   "value": "IA",
+   "translit": "ia / io; later p",
+   "numeric": null,
+   "form": "BELOW the line, a lattice of four straight oblique strokes hanging from the stemline down to B-stroke depth. Two strokes run down to the right ('\\') and two run down to the left ('/'). The two strokes running down to the right go from the line at x about 75 and 230 down to about 370 and 530. The two running down to the left go from the line at about 360 and 515 down to about 60 and 220. The strokes cross at four points arranged in a diamond: left and right crossings at mid-depth (x about 215 and 375, y about 98), one near the top centre (x 295, y about 198) and one near the bottom centre (x 295, y about 0). This leaves a small diamond-shaped cell in the middle. The effect is two X's interlaced side by side, a doubled ébad hung beneath the line. Glyph advance 589.",
+   "formConfidence": "medium",
+   "note": "The font form is measured. Manuscript forms vary and were not checked here. The later name pín and the value p belong to the medieval tradition, after the letter p entered Irish through loanwords [not verified: the fact-check search budget ran out before this was checked]. Fact-check: form re-measured from the Noto Sans Ogham 2.001 outlines and found exact; code point and Unicode name confirmed against UCD 14.0. NOT verified (the search budget ran out), and still the researcher's recollection: the names and glosses. Form judgement: consistent in kind with the modern printed form as this checker knows it, but not compared with the Unicode code chart or any manuscript; medium stays. Do not caption it as a manuscript form.",
+   "char": "ᚘ",
+   "codepoint": "U+1698",
+   "unicodeName": "OGHAM LETTER IFIN",
+   "aicme": "forfeda (fifth group)",
+   "strokes": null,
+   "side": "below / right",
+   "stoneValue": "manuscript / scholastic only",
+   "manuscriptValue": "ia (io); later p",
+   "nameMeaning": "uncertain",
+   "medievalTreeGloss": "pine or gooseberry (glosses vary) [not verified: the fact-check search budget ran out before this was checked]",
+   "gravesTree": "Graves substitutes his own (see cautions)",
+   "kenningMorann": null
+  },
+  {
+   "order": 25,
+   "name": "emancholl",
+   "value": "AE",
+   "translit": "ae; also used for x / ch",
+   "numeric": null,
+   "form": "ABOVE the line, a grid standing on the stemline. Four parallel upright strokes rise from the line at the H-group pitch (x 114-187, 258-331, 402-475, 546-619) to y 961. That is about 1.7 times the height of an ordinary H-stroke, which reaches 695. Four horizontal crossbars cross them at even intervals (y 385-458, 529-602, 673-746, 817-890). Each bar runs from x 43 to 690, so it projects 71 units beyond the outer uprights on each side. Between the line and the top bar this makes a grid of 4 rows x 3 columns of square cells, each 71 units. The uprights stick up 71 units above the top bar. Glyph advance 733.",
+   "formConfidence": "medium",
+   "note": "The name means 'twin of coll (C)', and the four uprights are coll's four strokes, doubled by the crossbars. The font form is measured; whether it follows a particular manuscript was not checked. Fact-check: form re-measured from the Noto Sans Ogham 2.001 outlines and found exact; code point and Unicode name confirmed against UCD 14.0. NOT verified (the search budget ran out), and still the researcher's recollection: the names and glosses. Form judgement: consistent in kind with the modern printed form as this checker knows it, but not compared with the Unicode code chart or any manuscript; medium stays. Do not caption it as a manuscript form.",
+   "char": "ᚙ",
+   "codepoint": "U+1699",
+   "unicodeName": "OGHAM LETTER EAMHANCHOLL",
+   "aicme": "forfeda (fifth group)",
+   "strokes": null,
+   "side": "above / left",
+   "stoneValue": "manuscript / scholastic only",
+   "manuscriptValue": "ae (also x, ch)",
+   "nameMeaning": "'twin of hazel (coll)'",
+   "medievalTreeGloss": "witch-hazel in modern summaries [not verified: the fact-check search budget ran out before this was checked]",
+   "gravesTree": "Graves substitutes his own (see cautions)",
+   "kenningMorann": null
+  },
+  {
+   "order": 26,
+   "name": "peith (peithboc)",
+   "value": "P",
+   "translit": "p",
+   "numeric": null,
+   "form": "A second horizontal bar lying BELOW and parallel to the stemline, detached from it, with a gap of 35 units (bar y 173-246). It is as thick as a stroke (73 units) and shorter than the line: it starts 94 units in and stops about 128 units before the line ends (x 94-495 of 623). There are no upright strokes. It looks like an equals sign whose lower bar is shorter. Glyph advance 589.",
+   "formConfidence": "medium",
+   "note": "A late scholastic sign for p, a sound the original alphabet lacked. Unicode encodes it separately from ifín/pín. The name peithboc is usually explained as 'soft b' [not verified: the fact-check search budget ran out before this was checked]. The font form is measured; its manuscript basis was not checked. Fact-check: form re-measured from the Noto Sans Ogham 2.001 outlines and found exact; code point and Unicode name confirmed against UCD 14.0. NOT verified (the search budget ran out), and still the researcher's recollection: the names and glosses. Form judgement: consistent in kind with the modern printed form as this checker knows it, but not compared with the Unicode code chart or any manuscript; medium stays. Do not caption it as a manuscript form.",
+   "char": "ᚚ",
+   "codepoint": "U+169A",
+   "unicodeName": "OGHAM LETTER PEITH",
+   "aicme": "supplementary (not one of the five forfeda)",
+   "strokes": null,
+   "side": "below, detached",
+   "stoneValue": "not on orthodox stones",
+   "manuscriptValue": "p",
+   "nameMeaning": "'soft b' (explanation of peithboc)",
+   "medievalTreeGloss": null,
+   "gravesTree": null,
+   "kenningMorann": null
+  }
+ ],
+ "marks": [
+  {
+   "char": " ",
+   "codepoint": "U+1680",
+   "unicodeName": "OGHAM SPACE MARK",
+   "form": "A bare stretch of stemline (x 0-479, y 281-314), with no strokes.",
+   "note": "Unicode general category Zs, a space separator, checked in this session. It is the word divider in Ogham text, and it is drawn VISIBLY as stemline. In JavaScript, String.prototype.trim() removes it and /\\s/ matches it (both tested in this session with Node). Python's re \\s also matches it. A transliterator that trims input or splits on \\s will silently destroy Ogham word spaces."
+  },
+  {
+   "char": "᚛",
+   "codepoint": "U+169B",
+   "unicodeName": "OGHAM FEATHER MARK",
+   "form": "A '>' chevron of two straight strokes. They start at full height above and full depth below at the left edge (x 0), and converge to the right on the line at about x 230-294. From that point the stemline begins and runs right (to x 489). It reads like the fletching of an arrow at the start of the line.",
+   "note": "Opens a text. General category Ps (opening punctuation), checked in this session."
+  },
+  {
+   "char": "᚜",
+   "codepoint": "U+169C",
+   "unicodeName": "OGHAM REVERSED FEATHER MARK",
+   "form": "The mirror image: the stemline comes in from the left and ends at the point of a '<' chevron, whose two arms open to the right (to x 455).",
+   "note": "Closes a text. General category Pe (closing punctuation), checked in this session."
+  }
+ ],
+ "lettersSource": "The 20 feda in the stone and manuscript order (B L F S N / H D T C Q / M G NG Z R / A O U E I), the five forfeda (EA OI UI IA AE) and peith (P). Names are given in Old Irish forms as in McManus (1991), remembered. Values are given for stones and for manuscripts. Characters, code points and Unicode names come from the Ogham block U+1680-U+169F, checked in this session against UCD 14.0. FORMS are measured stroke by stroke from the glyph outlines of Noto Sans Ogham 2.001 (@fontsource/noto-sans-ogham 5.3.0), outlines measured in this session and re-measured independently in the fact-check (fontTools; every glyph U+1680-169C), horizontal manuscript layout. The page should SET Ogham in this font (ogham subset U+1680-169C; woff2 3,896 bytes, woff 1,960 bytes; SIL OFL 1.1), not draw it. The forms let an illustrator check or reproduce the font and draw a stone-style vertical version. Stone convention: the arris (edge) of the stone is the stemline, read upward (usually up the left edge, sometimes over the top and down). B-group strokes go on one face (to the right), H-group on the other (to the left), M-group across the edge obliquely, vowels as notches on the edge. Medieval manuscript forms of the forfeda vary, and were not compared with the font in this session. Numeric is null: ogham letters carry no numerical values in the tradition. Geometry measured from Noto Sans Ogham 2.001 (@fontsource/noto-sans-ogham 5.3.0), outlines measured in this session, 1000 units/em, horizontal (manuscript) layout read left to right: the stemline is a straight horizontal bar 33 units thick (y 281-314). Each stroke is a straight bar 73 units thick. Strokes of the first two groups are 381 units long. Strokes of a letter are evenly spaced at a pitch of 144 units. The first stroke starts 114 units after the start of the line, and the line runs on 148 units past the last stroke. Glyphs overlap their neighbours by 34 units, so the stemline runs unbroken through a word. All outlines are straight segments: no curves, no ring-ends. Fact-check: font file sizes (woff2 3,896 bytes; woff 1,960 bytes), version 2.001 and licence (OFL-1.1 in the package.json of @fontsource/noto-sans-ogham 5.3.0) confirmed from the local package. Letter names and meanings 'as in McManus (1991), remembered' were not checked.",
+ "secretOghams": {
+  "source": "In Lebor Ogaim (the Ogam Tract), Book of Ballymote (RIA MS 23 P 12, c. 1390) and other copies; ed. and trans. Calder 1917",
+  "count": "nearly a hundred named varieties; counts of about 92-100 are given depending on how sub-varieties are reckoned [not verified: the fact-check search budget ran out before this was checked]",
+  "principle": "Most are either (a) acrostic word-lists, where each letter is replaced by a word beginning with it from one class (birds, colours, crafts, kings, rivers, saints...), or (b) graphic variants: changed stroke shapes, positions, doublings or diagrams. A few are bodily (hand, shin, nose).",
+  "examples": [
+   {
+    "name": "én-ogam (bird ogham)",
+    "what": "letters by birds' names. First aicme: besan (pheasant?) B, lachu (duck) L, faelinn (gull) F, seg (hawk) S, naescu (snipe) N.",
+    "confidence": "medium [not verified: the fact-check search budget ran out before this was checked]"
+   },
+   {
+    "name": "dath-ogam (colour ogham)",
+    "what": "letters by colour words: bán (white) B, liath (grey) L, flann (blood-red) F, sodath (fine-coloured) S, necht (clear) N; dub (black) D; gorm (blue) G; ruadh (red) R; odhar (dun) O; and so on.",
+    "confidence": "medium [not verified: the fact-check search budget ran out before this was checked]"
+   },
+   {
+    "name": "dán-ogam (crafts ogham)",
+    "what": "letters by the names of crafts or craftsmen",
+    "confidence": "medium [not verified: the fact-check search budget ran out before this was checked]"
+   },
+   {
+    "name": "ogam tírda (agricultural ogham)",
+    "what": "letters by farm implements and tasks",
+    "confidence": "medium [not verified: the fact-check search budget ran out before this was checked]"
+   },
+   {
+    "name": "muc-ogam, bó-ogam, con-ogam (pig, cow and hound oghams)",
+    "what": "animal-class acrostics",
+    "confidence": "low [not verified: the fact-check search budget ran out before this was checked]"
+   },
+   {
+    "name": "cos-ogam (shin ogham), srón-ogam (nose ogham)",
+    "what": "fingers laid against the shin-bone or the ridge of the nose serve as strokes against a stemline",
+    "confidence": "medium [not verified: the fact-check search budget ran out before this was checked]"
+   },
+   {
+    "name": "Fege Find (\"Finn's window\" or \"ridge-pole\") and other wheel diagrams",
+    "what": "circular diagrams arranging the letters in concentric rings or wheels",
+    "confidence": "medium [not verified: the fact-check search budget ran out before this was checked]"
+   },
+   {
+    "name": "Bríatharogam (\"word-ogham\") of Morann mac Moín, of Mac ind Óc and of Cú Chulainn",
+    "what": "two- or three-word kennings for each letter name; see letters[].kenningMorann",
+    "confidence": "high (existence); medium (wordings)"
+   }
+  ]
+ },
+ "treeLayers": [
+  {
+   "layer": "1. Original letter names (Primitive Irish, c. 4th-6th c.)",
+   "what": "A mix of tree names (birch, alder, willow, oak, hazel; perhaps pine and ash) and ordinary words (fear, ingot, field, sulphur, earth...). Meanings are partly uncertain.",
+   "source": "McManus 1988, 1991"
+  },
+  {
+   "layer": "2. Medieval learned doctrine (Auraicept, In Lebor Ogaim; texts of c. 7th-14th c.)",
+   "what": "Every letter is explained as a tree, sometimes by forced glosses (úath = whitethorn, tinne = holly, gort = ivy). Ogham is \"climbed as a tree is climbed\". Trees are graded in classes, as in Old Irish law.",
+   "source": "Calder 1917; Kelly 1976 on the legal tree-list"
+  },
+  {
+   "layer": "3. Modern (O'Flaherty 1685, Graves 1948, later divination)",
+   "what": "Beth-Luis-Nion order, a 13-month tree calendar with fixed dates, a goddess-cult reading, and divination and \"tree astrology\". These are not found in any medieval source.",
+   "source": "Graves 1948; Hutton 1991; Murray 1988"
+  }
+ ],
+ "transliterator": {
+  "map": {
+   "b": "ᚁ",
+   "l": "ᚂ",
+   "f": "ᚃ",
+   "v": "ᚃ",
+   "w": "ᚃ",
+   "s": "ᚄ",
+   "n": "ᚅ",
+   "h": "ᚆ",
+   "d": "ᚇ",
+   "t": "ᚈ",
+   "c": "ᚉ",
+   "k": "ᚉ",
+   "q": "ᚊ",
+   "m": "ᚋ",
+   "g": "ᚌ",
+   "ng": "ᚍ",
+   "z": "ᚎ",
+   "r": "ᚏ",
+   "a": "ᚐ",
+   "o": "ᚑ",
+   "u": "ᚒ",
+   "e": "ᚓ",
+   "i": "ᚔ",
+   "j": "ᚔ",
+   "y": "ᚔ",
+   "p": "ᚚ",
+   "x": "ᚉᚄ"
+  },
+  "optionalForfeda": {
+   "ea": "ᚕ",
+   "oi": "ᚖ",
+   "ui": "ᚗ",
+   "ia": "ᚘ",
+   "io": "ᚘ",
+   "ae": "ᚙ",
+   "x (alternative)": "ᚙ"
+  },
+  "wordSpace": " ",
+  "open": "᚛",
+  "close": "᚜",
+  "notes": "Match \"ng\" before \"n\". Forfeda digraphs should be an option, off by default, because the stones do not use them. Show modern equivalences for j, y, w, v, k, x and p as conventions, not historical spellings. Never trim() or split on \\s (it eats U+1680). For a stone-style display, rotate the horizontal line 90 degrees anticlockwise so that it reads bottom to top."
+ },
+ "uses": [
+  {
+   "use": "Memorials: names in the genitive with lineage formulae (MAQI, MUCOI, AVI)",
+   "evidence": "the c. 400 orthodox stones (CIIC; Ogham in 3D)"
+  },
+  {
+   "use": "Bilingual commemoration beside Latin in Wales and south-west Britain",
+   "evidence": "Welsh bilinguals, e.g. Castell Dwyran (Latin VOTEPORIGIS / ogham VOTECORIGAS; Wikipedia 'Vortiporius'; Carmarthenshire Museums page)"
+  },
+  {
+   "use": "Possible boundary and title markers",
+   "evidence": "Wikipedia ('Ogham inscription') lists documenting land ownership among the functions of orthodox inscriptions; the legal argument is not checked (disputed)"
+  },
+  {
+   "use": "Teaching: part of the grammarian's and poet's (fili) curriculum",
+   "evidence": "Auraicept na nÉces; In Lebor Ogaim"
+  },
+  {
+   "use": "Cryptography and word-play: acrostic and graphic \"secret\" oghams; kennings",
+   "evidence": "In Lebor Ogaim lists; Bríatharogam"
+  },
+  {
+   "use": "Bodily signing (shin, nose)",
+   "evidence": "described in In Lebor Ogaim; practice unattested. ('Palm' removed: no source checked.)"
+  },
+  {
+   "use": "Literary challenges, warnings and messages",
+   "evidence": "Táin Bó Cúailnge: Cú Chulainn's ogham on a withe and on a forked branch"
+  },
+  {
+   "use": "Literary divination",
+   "evidence": "Tochmarc Étaíne: Dalán's four yew rods"
+  },
+  {
+   "use": "The fé, an ogham-inscribed aspen rod for measuring the dead",
+   "evidence": "Sanas Cormaic s.v. fé [not verified: the fact-check search budget ran out before this was checked]"
+  },
+  {
+   "use": "Scribal marginalia",
+   "evidence": "ogham notes in Irish manuscripts on the Continent, e.g. the St Gall Priscian (Stiftsbibliothek St. Gallen, Cod. Sang. 904, mid 9th c.) [not verified: the fact-check search budget ran out before this was checked]"
+  },
+  {
+   "use": "Antiquarian and national revival use (18th-20th c.): memorials, book design, emblems",
+   "evidence": "O'Flaherty 1685; 19th-c. scholarship; modern gravestones"
+  },
+  {
+   "use": "Modern divination, tree calendars and Druid-revival practice (living traditions; report, do not reproduce their emblems)",
+   "evidence": "Graves 1948; Murray 1988; Laurie 2007"
+  }
+ ],
+ "quotations": [
+  {
+   "text": "[Paraphrase, not a quotation] Lucian reports that the Celts call Heracles 'Ogmios' in their own language.",
+   "translation": "own paraphrase (fact-checker). The Greek line supplied by the researcher from memory could not be confirmed and has been withdrawn; quote it only from a Loeb or OCT text, naming the translator.",
+   "source": "Lucian, Heracles (a prolalia), 1 (section number from the researcher, not re-checked)"
+  },
+  {
+   "text": "[Paraphrase, not a quotation] Morann's word-ogham for B pictures a withered stem crowned with fine hair, that is, the birch.",
+   "translation": "own paraphrase (fact-checker). The Old Irish kenning (given from memory as 'féochos foltchaín') was not confirmed and must not be printed as a quotation until checked against Calder 1917 and McManus 1988.",
+   "source": "Bríatharogam Morainn meic Moín, letter B; In Lebor Ogaim (Book of Ballymote and other copies), ed. Calder 1917; McManus 1988 (no page checked)"
+  },
+  {
+   "text": "[Paraphrase, not a quotation] Morann's word-ogham for T calls the letter a third part of a weapon, which points to a metal bar rather than to holly.",
+   "translation": "own paraphrase (fact-checker). The Old Irish kenning (given from memory as 'trian n-airm') was not confirmed and must not be printed as a quotation until checked against Calder 1917 and McManus 1988.",
+   "source": "Bríatharogam Morainn meic Moín, letter T; ed. Calder 1917; McManus 1988 (no page checked)"
+  },
+  {
+   "text": "VOTEPORIGIS (Latin) / VOTECORIGAS (ogham)",
+   "translation": "own paraphrase: the Latin is read as '(the) memorial of Voteporix the Protector', the ogham as '(the stone) of Votecorix'. The full Latin wording, usually given as MEMORIA VOTEPORIGIS PROTICTORIS, was not confirmed verbatim; check CISP (CDWYR) or Edwards's Welsh corpus before printing it.",
+   "source": "Castell Dwyran stone, Carmarthenshire, found 1895 (Wikipedia 'Vortiporius'; Carmarthenshire Museums 'Selected treasure: Vortipor'). Present location not confirmed."
+  }
+ ],
+ "links": [
+  {
+   "to": "latin",
+   "relation": "Ogham was built on Latin grammatical analysis, and the Welsh stones pair it with Latin capitals."
+  },
+  {
+   "to": "greek",
+   "relation": "Lucian's Ogmios (Heracles 1) in the debate over the name. Macalister's abandoned theory of a Greek-alphabet origin."
+  },
+  {
+   "to": "runes",
+   "relation": "Both are northern epigraphic scripts with learned medieval name-poems (rune poems / Bríatharogam). A runic origin for ogham is a minority view."
+  },
+  {
+   "to": "trithemius",
+   "relation": "Cipher comparison: Carney's cipher thesis and the Ogam Tract's substitution oghams against Trithemius's polygraphy."
+  },
+  {
+   "to": "aiq-bekar",
+   "relation": "Same encoding principle: a letter named by group and position in a grid (aicme x number of strokes)."
+  },
+  {
+   "to": "hebrew",
+   "relation": "The Auraicept sets Irish and ogham in a Babel frame beside Hebrew, Greek and Latin."
+  },
+  {
+   "to": "agrippa",
+   "relation": "Contrast: ogham is absent from De occulta philosophia (checked in the 1651 English text); it belongs to the wing as a learned, cryptic script with its own tradition."
+  }
+ ],
+ "cautions": [
+  "FACT-CHECK (2026-10-20): eight web searches ran before the shared search budget ran out. Confirmed: the corpus counts (as sourced in firstAttestation), the 4th-century origin estimate, Ogham in 3D / OG(H)AM, Castell Dwyran's name forms and the dispute over its identification, the Auraicept's dating as given by Wikipedia, Ahlqvist's edition, and the Ogham in 3D URL. Re-checked mechanically: the Unicode data, the whitespace behaviour, every glyph outline, and Agrippa's 1651 text. Everything still marked 'not verified' is the researcher's memory and must be checked before publication.",
+  "Keep the three layers apart on the page: original names, medieval tree doctrine, and Graves's modern calendar (treeLayers).",
+  "Do not print the Graves tree-calendar dates as tradition. If shown, label them \"Graves 1948 / modern\".",
+  "Do not print a Book of Ballymote folio or a Calder page until checked (ISOS digitisation; Calder 1917). None is given here.",
+  "Bríatharogam wordings and their paraphrases are from memory. Check each against Calder 1917 and McManus 1988 before printing.",
+  "The bird- and colour-ogham lists are partial and from memory.",
+  "The forfeda forms are measured from Noto Sans Ogham. Manuscripts draw the forfeda differently, so do not caption the font forms as \"the Book of Ballymote forms\".",
+  "U+1680 OGHAM SPACE MARK is whitespace (Zs): JavaScript trim() strips it and \\s matches it (tested). The transliterator and any validator must allow for this.",
+  "Unicode letter names use Modern Irish spellings (BEITH, NION, CEIRT, NGEADAL, EADHADH...); the page text should use Old Irish names and give Unicode names only as labels.",
+  "Ogham is not in Agrippa (checked in the 1651 English text, EEBO-TCP A26565). Do not present it as one of his alphabets.",
+  "Do not reproduce the emblems or texts of living Druid or Pagan organisations that use ogham.",
+  "Mount Callan and other antiquarian \"finds\" are cautionary tales about forged ogham. Never present an inscription without its corpus number.",
+  "Castell Dwyran: do not caption the stone as Vortiporius's (Gildas's tyrant). The identification is disputed (Sims-Williams against Rhŷs), so give it as a proposal.",
+  "The vowel lozenges are the font's stylisation. For a stone-style drawing use notches on the arris; for a manuscript-style one, short strokes across the line.",
+  "Auraicept dating: give 'core perhaps early 8th century, ascribed by tradition to Cenn Fáelad (d. 679)'. Do not attribute a 7th-century date to Ahlqvist unless his book is checked."
+ ],
+ "sources": [
+  {
+   "citation": "The Unicode Consortium, The Unicode Standard, Ogham code chart U+1680-U+169F (block added in Unicode 3.0, 1999). Code points, names and categories checked in this session against UCD 14.0 via Python unicodedata.",
+   "url": ""
+  },
+  {
+   "citation": "Noto Sans Ogham 2.001, Copyright 2022 The Noto Project Authors, SIL OFL 1.1; via @fontsource/noto-sans-ogham 5.3.0 (ogham subset U+1680-169C). Outlines measured in this session with fontTools 4.53.1. Package metadata (version 5.3.0, OFL-1.1) and outlines re-checked in the fact-check from the local tarball.",
+   "url": ""
+  },
+  {
+   "citation": "Damian McManus, A Guide to Ogam, Maynooth Monographs 4 (Maynooth: An Sagart, 1991).",
+   "url": ""
+  },
+  {
+   "citation": "Damian McManus, \"Irish letter-names and their kennings\", Ériu 39 (1988).",
+   "url": ""
+  },
+  {
+   "citation": "Damian McManus, \"Ogam: archaizing, orthography and the authenticity of the manuscript key to the alphabet\", Ériu 37 (1986).",
+   "url": ""
+  },
+  {
+   "citation": "George Calder (ed. and trans.), Auraicept na n-Éces: The Scholars' Primer, being the texts of the Ogham Tract from the Book of Ballymote and the Yellow Book of Lecan, and the text of the Trefhocul from the Book of Leinster (Edinburgh: John Grant, 1917).",
+   "url": ""
+  },
+  {
+   "citation": "Anders Ahlqvist, The Early Irish Linguist: An Edition of the Canonical Part of the Auraicept na nÉces, Commentationes Humanarum Litterarum 73 (Helsinki: Societas Scientiarum Fennica, 1983; one catalogue gives 1982).",
+   "url": "https://catalog.hathitrust.org/Record/006931857"
+  },
+  {
+   "citation": "Book of Ballymote, Royal Irish Academy MS 23 P 12 (c. 1390); photolithographic facsimile with introduction by Robert Atkinson (Dublin: RIA, 1887). Digitised on Irish Script on Screen.",
+   "url": ""
+  },
+  {
+   "citation": "R. A. S. Macalister, Corpus Inscriptionum Insularum Celticarum, 2 vols (Dublin: Stationery Office, 1945-1949).",
+   "url": ""
+  },
+  {
+   "citation": "Ogham in 3D / OG(H)AM, Dublin Institute for Advanced Studies: digital corpus of ogham inscriptions (launched May 2013; revised 2025).",
+   "url": "https://ogham.celt.dias.ie/menu.php?lang=en"
+  },
+  {
+   "citation": "James Carney, \"The invention of the Ogom cipher\", Ériu 26 (1975).",
+   "url": ""
+  },
+  {
+   "citation": "R. A. S. Macalister, The Secret Languages of Ireland (Cambridge: Cambridge University Press, 1937).",
+   "url": ""
+  },
+  {
+   "citation": "Sabine Ziegler, Die Sprache der altirischen Ogam-Inschriften (Göttingen: Vandenhoeck & Ruprecht, 1994).",
+   "url": ""
+  },
+  {
+   "citation": "Patrick Sims-Williams, The Celtic Inscriptions of Britain: Phonology and Chronology, c. 400-1200 (Oxford: Blackwell / Philological Society, 2003).",
+   "url": ""
+  },
+  {
+   "citation": "Catherine Swift, Ogam Stones and the Earliest Irish Christians (Maynooth, 1997).",
+   "url": ""
+  },
+  {
+   "citation": "Katherine Forsyth, The Ogham Inscriptions of Scotland: An Edited Corpus (PhD dissertation, Harvard University, 1996).",
+   "url": ""
+  },
+  {
+   "citation": "Fergus Kelly, \"The Old Irish tree-list\", Celtica 11 (1976).",
+   "url": ""
+  },
+  {
+   "citation": "Roderick O'Flaherty, Ogygia, seu rerum Hibernicarum chronologia (London, 1685).",
+   "url": ""
+  },
+  {
+   "citation": "Robert Graves, The White Goddess: A Historical Grammar of Poetic Myth (London: Faber and Faber, 1948; amended and enlarged later editions; ed. Grevel Lindop, Carcanet, 1997).",
+   "url": ""
+  },
+  {
+   "citation": "Ronald Hutton, The Pagan Religions of the Ancient British Isles (Oxford: Blackwell, 1991).",
+   "url": ""
+  },
+  {
+   "citation": "R. R. Brash, The Ogam Inscribed Monuments of the Gaedhil in the British Islands (London: George Bell, 1879).",
+   "url": ""
+  },
+  {
+   "citation": "Liz and Colin Murray, The Celtic Tree Oracle (1988); Erynn Rowan Laurie, Ogam: Weaving Word Wisdom (2007): living-practice sources, cited as such.",
+   "url": ""
+  },
+  {
+   "citation": "Lucian, Heracles (prolalia) 1, on Ogmios.",
+   "url": ""
+  },
+  {
+   "citation": "Agrippa, Three Books of Occult Philosophy, trans. J. F. (London, 1651; Wing A789), EEBO-TCP keyed text A26565 (CC0). Searched in the fact-check.",
+   "url": "https://github.com/textcreationpartnership/A26565"
+  },
+  {
+   "citation": "Wikipedia, 'Ogham inscription' (counts, distribution, orthodox vs scholastic, functions). Tertiary; used for figures only, as reported in search results.",
+   "url": "https://en.wikipedia.org/wiki/Ogham_inscription"
+  },
+  {
+   "citation": "Wikipedia, 'Auraicept na n-Éces' (dating of the core; earliest copies; Cenn Fáelad). Tertiary.",
+   "url": "https://en.wikipedia.org/wiki/Auraicept_na_n-%C3%89ces"
+  },
+  {
+   "citation": "Wikipedia, 'Vortiporius' (Castell Dwyran stone, 1895; Rhŷs and Sims-Williams on the identification). Tertiary.",
+   "url": "https://en.wikipedia.org/wiki/Vortiporius"
+  },
+  {
+   "citation": "Carmarthenshire Museums (CofGâr), 'Selected treasure: Vortipor'.",
+   "url": "https://cofgar.wales/collections/selected-treasure-vortipor/"
+  },
+  {
+   "citation": "Celtic Inscribed Stones Project (UCL), site record: Castell Dwyran.",
+   "url": "https://www.ucl.ac.uk/archaeology/cisp/database/site/cdwyr.html"
+  },
+  {
+   "citation": "DIAS, 'May 2013: Ogham in 3D launch, School of Celtic Studies'.",
+   "url": "https://www.dias.ie/?p=3957"
+  },
+  {
+   "citation": "Maynooth University, Mind, Material, Middle Ages: OG(H)AM project page (c. 640 examples; origin 'probably in the 4th century').",
+   "url": "https://ahi.maynoothuniversity.ie/mind-material-middle-ages/?p=249"
+  },
+  {
+   "citation": "BabelStone (Andrew West), 'The Ogham Stones of Wales' (2010). An informed blog, not scholarship; used for a count only.",
+   "url": "https://www.babelstone.co.uk/Blog/2010/03/ogham-stones-of-wales.html"
+  },
+  {
+   "citation": "BabelStone (Andrew West), 'The Ogham Stones of Scotland' (2013). An informed blog, not scholarship; used for a count only.",
+   "url": "https://www.babelstone.co.uk/Blog/2013/06/ogham-stones-of-scotland.html"
+  }
+ ],
+ "confidence": "SOLID, re-checked in the fact-check: the Unicode block, code points, names and categories (UCD 14.0); U+1680 as whitespace in JavaScript and Python; every glyph outline in Noto Sans Ogham 2.001 (re-measured), its file sizes and its licence; the absence of ogham from Agrippa's 1651 English text. CONFIRMED BY SEARCH (tertiary or project sources): about 400 orthodox inscriptions, mostly 5th-6th c.; origin probably 4th c.; Wales 35 to 40-plus and Scotland about 34 (the sources differ); Ogham in 3D / OG(H)AM; Castell Dwyran's name forms, its 1895 discovery and the disputed identification; the Auraicept's core perhaps early 8th c. with copies of the late 14th c.; Cenn Fáelad d. 679; Ahlqvist's edition. STANDARD BUT NOT VERIFIED (search budget exhausted): the values of the 20 feda and the forfeda; the Book of Ballymote shelfmark, date and scribes; O'Flaherty 1685; Graves 1948; McManus's name meanings; the medieval tree glosses. SHAKY: the stone values of úath, gétal, straif and the X-sign; every Bríatharogam wording; the bird and colour lists; the forfeda glosses; Mount Callan; the St Gall Priscian shelfmark; the Murray and Laurie dates; the exact Latin of Castell Dwyran. No folio or page numbers are given.",
+ "factcheck": {
+  "corrections": [
+   "summary: 'some 400 memorial stones ... (some argue for the 4th)' reworded to 'roughly 400 stone inscriptions around the Irish Sea ... the script itself probably goes back to the 4th century' (Wikipedia 'Ogham inscription'; Maynooth OG(H)AM project page: origin 'probably in the 4th century'); 'Book of Ballymote (c. 1390)' replaced by 'earliest copies late 14th-century' (Wikipedia 'Auraicept na n-Éces'); the unverified count 'nearly a hundred cryptic oghams' removed from the summary (kept, flagged, in secretOghams).",
+   "firstAttestation.date/place/notes: counts replaced with sourced figures and the disagreement given (about 400 overall; Ziegler 344 + 7 for Ireland and Man; Wales 'more than 40' vs 35 definite; Scotland about 34 + 5 portable); 4th-century origin attributed to the OG(H)AM project; Welsh distribution sharpened to the south-west/Pembrokeshire.",
+   "firstAttestation.notes and transmission[2]: 'canonical core that Ahlqvist (1983) dates to the 7th century' REMOVED as unsourced; replaced by Wikipedia's 'core may date to the early 8th century' with earliest copies late 14th-century, and the traditional ascription to Cenn Fáelad (d. 679) reported as tradition.",
+   "firstAttestation.locator: 'Ogham in 3D (DIAS) site entries' given the URL seen in search results (https://ogham.celt.dias.ie/menu.php?lang=en) and the successor OG(H)AM project named.",
+   "transmission[1] Castell Dwyran: name forms VOTEPORIGIS / VOTECORIGAS and the 1895 discovery confirmed; the from-memory flag lifted for those; the disputed identification with Vortiporius (Rhŷs vs Sims-Williams; Edwards 2007) added so the page does not imply it; the full Latin wording left flagged.",
+   "transmission[3]: date 'c. 7th-9th c. and later' replaced by Wikipedia's 'from the Old Irish period up to modern times'.",
+   "transmission[17] Ahlqvist: series (Commentationes Humanarum Litterarum 73) added and the 1982/1983 catalogue discrepancy recorded; 'with its dating' removed, since what date Ahlqvist gives was not confirmed.",
+   "transmission: added the Ogham in 3D (2013) / OG(H)AM (2025) entry, from the DIAS launch page and the Maynooth project page seen in search results.",
+   "claims[4]: 'created in the 4th century or later' contradicted the file's own firstAttestation ('4th century or earlier'); corrected to 'by about the 4th century (perhaps earlier)', sourced to the OG(H)AM project page and Wikipedia.",
+   "claims[15]: recast from a negatively-framed 'disputed' claim to a documented one ('Ogham is not among Agrippa's alphabets'), now checked against the keyed 1651 English text (EEBO-TCP A26565): no ogham/Irish mention; III.29 and III.30 headings quoted from that text; the claim narrowed to Agrippa (other grimoires not checked).",
+   "letters[21] ébad: 'overall width 287 units' corrected; the ink spans x 14-287 (about 273 units), and 287 is the right edge, not the width. Advance 301 confirmed.",
+   "letters 16-20 (ailm, onn, úr, edad, idad): formConfidence lowered from high to medium. The lozenge vowels are Noto Sans Ogham's stylisation, not the standard form (notches on stones; short perpendicular strokes across the line in manuscript keys and usual charts).",
+   "letters (all 26): every form description re-measured from the Noto Sans Ogham 2.001 outlines (stroke feet and tops, lengths 381/795, thickness 73, stemline 281-314, pitch 144, the uilleann, ifín, emancholl and peith geometry) and found exact. Code points and Unicode names confirmed against UCD 14.0. Kenning confidences relabelled 'unverified', with a warning not to print them as quotations.",
+   "uses[5]: 'palm' dropped from bodily signing; only shin and nose oghams are named elsewhere in the file, and no palm ogham was checked.",
+   "quotations[0] Lucian: the Greek, given from memory and unconfirmed, withdrawn and replaced by a labelled paraphrase.",
+   "quotations[1-2] Bríatharogam 'féochos foltchaín' and 'trian n-airm': unconfirmed wording withdrawn and replaced by labelled paraphrases, with a warning that the earlier 'own paraphrase' English may track McManus's published translations.",
+   "quotations[3] Castell Dwyran: reduced to the confirmed name forms (VOTEPORIGIS / VOTECORIGAS); the full Latin wording is flagged as unconfirmed, and the claim that the stone is in Carmarthenshire County Museum is withdrawn as unconfirmed.",
+   "cautions[0]: the 'no web search was possible' notice replaced by an account of what the fact-check confirmed and what remains unverified; cautions added on Castell Dwyran, the vowel lozenges and the Auraicept dating.",
+   "sources: three URLs not seen in any search result removed (unicode.org U1680.pdf, the npm page, isos.dias.ie); the Ogham in 3D URL replaced by the form seen in results; HathiTrust record added for Ahlqvist."
+  ],
+  "unresolved": [
+   "Auraicept dating: Wikipedia's 'core early 8th century' and the researcher's recollection of 'Ahlqvist: 7th century' disagree. Check Ahlqvist 1983 directly.",
+   "Book of Ballymote: shelfmark RIA MS 23 P 12, the date c. 1390, the patron Tomaltach Mac Donnchaidh and the scribes (Solam Ó Droma, Robertus Mac Sithigh, Maghnus Ó Duibhgeannáin) were not checked (the search ran out).",
+   "Bríatharogam: all twenty Morann kennings (letters[].kenningMorann) and their English are unverified. Check them against Calder 1917 and McManus 1988, and credit McManus if the English follows him.",
+   "Lucian, Heracles 1: the Greek wording was withdrawn as unconfirmed. Restore it only from a Loeb or OCT text with the translator named.",
+   "Castell Dwyran: the full Latin wording (MEMORIA ... PROTICTORIS) and the stone's present location (the researcher said Carmarthenshire County Museum) were not confirmed.",
+   "Stone values: the X-sign as K on orthodox stones; the original values of úath (H), gétal (/gw/) and straif (/st/ or /sw/). Not checked against McManus 1991.",
+   "Letter-name meanings (McManus) and the medieval tree glosses, including the forfeda glosses (elecampane/aspen, spindle, honeysuckle, pine/gooseberry, witch-hazel): not checked.",
+   "In Lebor Ogaim: the count of secret oghams (about 92-100) and the bird, colour, crafts, agricultural, pig, cow and hound lists were not checked.",
+   "O'Flaherty's Ogygia (London, 1685) and its Beth-Luis-Nion order; Graves 1948 and its later editions; Charles Graves as Robert Graves's grandfather: standard, but not checked here.",
+   "Mount Callan (1785, Theophilus O'Flanagan); Brash 1879; Ferguson 1887; the Atkinson facsimile 1887; Macalister 1937 and CIIC 1945/1949; Carney 1975; McManus 1986/1988/1991 bibliographic details: not checked.",
+   "Sanas Cormaic s.v. fé; Cú Chulainn's oghams in the Táin; Dalán's yew rods in Tochmarc Étaíne; the dates of Lebor na hUidre: not checked.",
+   "St Gall Priscian (Stiftsbibliothek St. Gallen, Cod. Sang. 904, mid-9th c.) and its ogham marginalia: not checked.",
+   "Pictish examples (Brandsbutt, Lunnasting, Newton) and their dating (c. 8th-9th c.); Forsyth 1996: not checked.",
+   "The Silchester ogham stone (Hampshire): not checked.",
+   "The Unicode 3.0 (1999) release, I.S. 434:1999 and the Everson proposal: not checked (the code points themselves were checked mechanically).",
+   "The Murray (1988) and Laurie (2007) living-practice sources: dates not checked.",
+   "Forfeda forms: the font forms of óir, uilleann, ifín, emancholl and peith were not compared with the Unicode code chart or with Book of Ballymote drawings.",
+   "Land-ownership function: Charles-Edwards's and Swift's arguments not checked; only Wikipedia's statement was seen."
+  ]
+ }
+}

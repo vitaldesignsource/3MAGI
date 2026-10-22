@@ -1,0 +1,276 @@
+/* The Powers — the comparison tables and their captions.
+   The Table of Correspondences (pantheons) and The Middle World, Compared
+   (daimons) wear the Christianities canon-table's clothes, and the legend
+   class is shared with the map and with Christianities, so every rule here
+   is held to `.pw-page`. Read top to bottom: the scroller and its cue, the
+   row that opens, the notes it opens onto, each table's own header, the
+   drawn answers, the phone, the captions, the way back from an entry to its
+   row, and the reduced-motion block. */
+
+/* ---------------------------------------------------------------------------
+   The scroller. A query container, so an open row's notes can take exactly
+   its visible width; a ground of its own; and a soft gold glow at the right
+   edge while more columns lie beyond it. The glow is fixed to the visible
+   box, and a cover in the ground's colour rides at the far end of the
+   content, so it slides over the glow once the last column is in view. */
+.pw-page .edu-kinship-scroll.ch-canon-scroll {
+  container-type: inline-size;
+  background:
+    linear-gradient(270deg, #0d0b09 40%, rgba(13, 11, 9, 0)) right / 2rem 100% no-repeat local,
+    radial-gradient(farthest-side at 100% 50%, rgba(209, 173, 104, 0.3), transparent) right / 0.9rem 100% no-repeat scroll,
+    rgba(13, 11, 9, 0.85);
+}
+.pw-page .edu-kinship-scroll.ch-canon-scroll:focus-visible {
+  outline: 2px solid #d1ad68;
+  outline-offset: 2px;
+}
+/* neither table sorts by column */
+.pw-page .pw-corr-table thead th,
+.pw-page .ch-matrix-table thead th { cursor: default; }
+
+/* ---------------------------------------------------------------------------
+   The row that opens. Its name is a real button filling the sticky first
+   cell, with a small drawn chevron; the open row takes a gold rule on its
+   left and a brighter name. */
+.pw-page .pw-corr-table tbody th[scope="row"],
+.pw-page .ch-matrix-table tbody th[scope="row"] { padding: 0; }
+.pw-page .pw-row-toggle {
+  all: unset;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.6rem;
+  width: 100%;
+  min-height: 44px;
+  padding: 0.45rem 0.8rem 0.45rem 0.9rem;
+  text-align: left;
+  cursor: pointer;
+}
+.pw-page .pw-row-toggle:focus-visible {
+  outline: 2px solid #d1ad68;
+  outline-offset: -2px;
+}
+.pw-page .pw-row-chev {
+  flex: none;
+  width: 0.4rem; height: 0.4rem;
+  border-right: 1px solid currentColor;
+  border-bottom: 1px solid currentColor;
+  transform: translateY(-1px) rotate(45deg);
+  transition: transform 200ms ease;
+}
+.pw-page tr.is-open .pw-row-chev { transform: translateY(2px) rotate(-135deg); }
+.pw-page tr.is-open > th[scope="row"] {
+  color: #f4e8c8;
+  box-shadow: inset 2px 0 0 #c9a86a;
+}
+/* a god's name in a cell is its own way in, with the house focus ring */
+.pw-page .pw-corr-link:focus-visible {
+  outline: 2px solid #d1ad68;
+  outline-offset: 2px;
+}
+
+/* ---------------------------------------------------------------------------
+   The notes. A ledger pinned to the scroller's visible width: the cells
+   scroll sideways beneath it and it stays in place. The office or question
+   in gold Cinzel beside its note on a wide screen, above it on a phone. */
+.pw-page .edu-cog-noterow td { padding: 0; }
+.pw-page .pw-notes {
+  position: sticky;
+  left: 0;
+  box-sizing: border-box;
+  width: 100cqw;
+  padding: 1rem 1.25rem 1.15rem;
+}
+.pw-page .pw-notes .ch-matrix-holder { margin: 0 0 0.8rem; }
+.pw-page .pw-notes dl {
+  margin: 0;
+  max-width: 46rem;
+  display: grid;
+  grid-template-columns: 9.5rem minmax(0, 1fr);
+  gap: 0.5rem 1.25rem;
+}
+.pw-page .pw-notes dt {
+  padding-top: 0.3rem;
+  white-space: normal;
+  font: 0.7rem/1.5 "Cinzel", Georgia, serif;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #d1ad68;
+}
+.pw-page .pw-notes dd {
+  margin: 0;
+  font: 0.92rem/1.65 Georgia, "Times New Roman", serif;
+  color: rgba(232, 224, 208, 0.86);
+}
+/* in the matrix the answer stands before its question, a key to the row,
+   and a question that wraps hangs clear of it */
+.pw-page .pw-notes-key { display: flex; align-items: flex-start; gap: 0.55rem; }
+.pw-page .pw-notes-key .mw-mark {
+  flex: none;
+  width: 0.62rem; height: 0.62rem;
+  margin-top: 0.2rem;
+}
+.pw-page .pw-notes-key .mw-mark.is-no { width: 0.5rem; height: 0.5rem; margin: 0.26rem 0.06rem 0; }
+
+/* ---------------------------------------------------------------------------
+   The Table of Correspondences: each office's meaning set in italics under
+   its name, where the reader and a phone can see it. */
+/* an even rhythm of offices: none narrower than its gloss can bear */
+.pw-page .pw-corr-table thead th { vertical-align: top; }
+.pw-page .pw-corr-table thead th:not(:first-child) { width: 7.5rem; min-width: 7.5rem; }
+.pw-page .pw-corr-gloss {
+  display: block;
+  max-width: 9.5rem;
+  margin: 0.3rem auto 0;
+  white-space: normal;
+  text-transform: none;
+  letter-spacing: 0;
+  font: italic 0.72rem/1.35 Georgia, "Times New Roman", serif;
+  color: rgba(222, 212, 196, 0.66);
+}
+
+/* ---------------------------------------------------------------------------
+   The Middle World, Compared: the matrix fits its box. The questions wrap,
+   the traditions wrap, and the last column (the one the intro names as the
+   one that matters most) is banded in gold as the key. */
+.pw-page .ch-matrix-table { min-width: 0; }
+.pw-page .ch-matrix-table thead th {
+  white-space: normal;
+  max-width: 7.5rem;
+  line-height: 1.45;
+  vertical-align: bottom;
+  letter-spacing: 0.12em;
+}
+.pw-page .ch-matrix-table thead th:last-child {
+  color: #ecd9ae;
+  border-bottom-color: #d1ad68;
+  background: #1d170f;
+}
+.pw-page .ch-matrix-table td.ch-canon-cell:last-child { background: rgba(209, 173, 104, 0.075); }
+
+/* the answers, drawn: a lit disc for yes, a half-lit ring for qualified, a
+   small hollow ring for no (each at least 3:1 against the ground) */
+.pw-page .mw-mark {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 0.72rem; height: 0.72rem;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+.pw-page .mw-mark.is-yes {
+  background: #ecd9ae;
+  box-shadow: 0 0 8px rgba(236, 217, 174, 0.35);
+}
+.pw-page .mw-mark.is-q {
+  border: 1.5px solid #d1ad68;
+  background: linear-gradient(90deg, #d1ad68 50%, transparent 50%);
+}
+.pw-page .mw-mark.is-no {
+  width: 0.55rem; height: 0.55rem;
+  border: 1px solid rgba(222, 212, 196, 0.55);
+}
+
+/* ---------------------------------------------------------------------------
+   The phone. The first column narrows to a wrapped, lightly tracked label of
+   7rem, so the answers and the names beside it can be seen. */
+@media (max-width: 760px) {
+  .pw-page .pw-corr-table th[scope="row"],
+  .pw-page .ch-matrix-table th[scope="row"],
+  .pw-page .pw-corr-table thead th:first-child,
+  .pw-page .ch-matrix-table thead th:first-child {
+    width: 7rem; min-width: 7rem; max-width: 7rem;
+    white-space: normal;
+    text-align: left;
+    letter-spacing: 0.06em;
+    font-size: 0.68rem;
+    line-height: 1.35;
+  }
+  .pw-page .pw-corr-table thead th:first-child,
+  .pw-page .ch-matrix-table thead th:first-child { padding: 0.5rem 0.55rem; }
+  .pw-page .pw-row-toggle { padding: 0.5rem 0.55rem; gap: 0.4rem; }
+
+  /* the offices wrap, so two of them stand beside the pantheons */
+  .pw-page .pw-corr-table thead th:not(:first-child),
+  .pw-page .pw-corr-table td.pw-corr-cell {
+    width: 6rem; min-width: 6rem;
+    padding-left: 0.45rem; padding-right: 0.45rem;
+    white-space: normal;
+  }
+  .pw-page .pw-corr-table thead th:not(:first-child) { letter-spacing: 0.12em; }
+  .pw-page .pw-corr-gloss { font-size: 0.68rem; }
+
+  .pw-page .pw-notes { padding: 0.9rem 1rem 1rem; }
+  .pw-page .pw-notes dl { grid-template-columns: 1fr; gap: 0.1rem; }
+  .pw-page .pw-notes dd { margin-bottom: 0.55rem; }
+}
+/* below 640px the six questions stand upright, so all six fit beside the
+   traditions */
+@media (max-width: 640px) {
+  .pw-page .ch-matrix-table thead th:not(:first-child) {
+    height: 8rem;
+    max-width: none;
+    padding: 0.5rem 0.2rem;
+    text-align: center;
+    font-size: 0.66rem;
+    letter-spacing: 0.1em;
+  }
+  .pw-page .ch-matrix-table .mw-q {
+    display: inline-block;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    text-align: left;
+  }
+  .pw-page .ch-matrix-table td.ch-canon-cell { padding: 0.45rem 0.15rem; }
+}
+
+/* ---------------------------------------------------------------------------
+   Captions. Under each table and under the map, the legend is a centred,
+   muted italic line at the reading measure. The answers it names (● ◐) are
+   drawn from a symbol face already on the reader's system, claimed for the
+   geometric-shapes block only: the serif faces draw ◐ as a narrow sliver. */
+@font-face {
+  font-family: "PW Legend Marks";
+  src: local("Segoe UI Symbol"), local("SegoeUISymbol"),
+       local("Apple Symbols"), local("AppleSymbols"),
+       local("DejaVu Sans"), local("DejaVuSans"),
+       local("Noto Sans Symbols 2"), local("NotoSansSymbols2-Regular");
+  unicode-range: U+25A0-25FF;
+}
+.pw-page .edu-kinship-legend {
+  max-width: 46rem;
+  margin: 1.2rem auto 0;
+  text-align: center;
+  font-family: "PW Legend Marks", Georgia, "Times New Roman", serif;
+  font-size: 0.9rem;
+  font-style: italic;
+  line-height: 1.7;
+  color: rgba(222, 212, 196, 0.68);
+}
+
+/* ---------------------------------------------------------------------------
+   From a god's entry back to its family's row in the table: a quiet ✦
+   beside the Interpretatio label. */
+.pw-page .pw-kv-jump {
+  display: inline-grid;
+  place-items: center;
+  min-width: 1.6rem; min-height: 1.6rem;
+  margin-left: 0.3rem;
+  vertical-align: middle;
+  color: #d1ad68;
+  font-size: 0.8rem;
+  letter-spacing: 0;
+  text-decoration: none;
+  transition: color 160ms ease;
+}
+.pw-page .pw-kv-jump:hover { color: #f4e8c8; }
+.pw-page .pw-kv-jump:focus-visible {
+  color: #f4e8c8;
+  outline: 2px solid #d1ad68;
+  outline-offset: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pw-page .pw-row-chev,
+  .pw-page .pw-kv-jump { transition: none; }
+}
