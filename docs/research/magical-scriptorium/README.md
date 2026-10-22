@@ -12,8 +12,11 @@ built from.
   as fact on the site.
 - `understand.md`: the engineering map of the Scriptorium code and the plan
   for adding the wing.
-- `glyphkit/`: the format for drawn letters (path data on a 100-unit grid),
-  a checker and a specimen-sheet renderer.
+- `glyphkit/`: the format for drawn letters (path data on a 100-unit grid:
+  centre lines for the house pen, or filled outlines), a checker
+  (`check.mjs`, with `fill.mjs`), a specimen-sheet renderer (`sheet.mjs`), a
+  side-by-side of each letter and its source crop (`compare.mjs`), and two
+  format samples.
 - `plates/<item>.manifest.json`: the copy each page's plates and tracings
   come from, its rights statement and the pages used. For Ibn Waḥshiyya also
   `plates/ibn-wahshiyya.catalogue.json` (every table of Hammer's 1806 volume,
@@ -23,7 +26,12 @@ built from.
   checkers' corrections).
 - `traced/<item>/<table>.glyphs.json`: the traced and independently checked
   letter tables in the glyph kit's format, with each sign's source, notes and
-  the comparison with other copies (no images or cells are kept here).
+  the comparison with other copies (no images or cells are kept here). For
+  Enochian, `traced/enochian/f104.glyphs.json` holds the twenty-one forms of
+  Sloane MS 3188, f. 104 as the site draws them, each with the strokes it is
+  built from, its fit to the ink measured both ways, and its move onto the
+  common baseline, and
+  `traced/enochian/f104.sources.json` the images that were found and used.
 
 Letterforms: every remembered form of the Agrippan alphabets, Theban,
 Enochian and the Alphabet of the Magi was rated low confidence by the

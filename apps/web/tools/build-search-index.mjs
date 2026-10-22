@@ -14,7 +14,7 @@ import { writeFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
 import { loadModules, loadRegistry } from './magic-lib.mjs';
-import { sharedNote, textOf } from '../src/pages/magic/sign.js';
+import { isFill, sharedNote, textOf } from '../src/pages/magic/sign.js';
 
 const here = path.dirname(fileURLToPath(import.meta.url));
 const web = path.resolve(here, '..');
@@ -156,7 +156,11 @@ const UNIT_KIND = { 'the-books': 'lineage', agrippa: 'chapter' };
             const rec = { h: MG, k: UNIT_KIND[e.slug] || 'sign', n: l.char ? textOf(l.char) : '', l: l.name,
                 s: [e.short, table, l.translit || l.planet || l.codepoint || (m.valueLang ? l.value : null)].filter(Boolean).join(' · '),
                 d: own.slice(0, 180), a: `mg-letter-${i}`, u: url };
-            if (l.glyph) {
+            if (isFill(l.glyph)) {
+                // a filled glyph is its outline alone (MagicGlyph draws it evenodd, with no pen)
+                rec.g = { fill: l.glyph.fill };
+                if (e.signScale) rec.g.z = e.signScale;
+            } else if (l.glyph) {
                 rec.g = { d: l.glyph.d };
                 if (l.glyph.rings?.length) rec.g.rings = l.glyph.rings;
                 if (l.glyph.dots?.length) rec.g.dots = l.glyph.dots;

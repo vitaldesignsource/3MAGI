@@ -1,4 +1,4 @@
-// The glyph kit's own sample set (glyphkit/sample.json), copied verbatim for
+// The glyph kit's own sample set (docs/research/magical-scriptorium/glyphkit/sample.json), copied verbatim for
 // the kit proof page: the site's renderer must draw it exactly as the kit's
 // specimen sheet does. Letter 4 is deliberately malformed — the kit uses it to
 // show what its checker rejects — and is drawn here as the sheet draws it.

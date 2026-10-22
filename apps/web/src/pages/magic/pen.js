@@ -3,7 +3,7 @@
 // the same numbers: a sign on a card and the same sign anywhere else it is
 // made from the traced data are drawn with one pen.
 //
-// All values are in the glyph kit's viewBox units (0–100, glyphkit/README.md).
+// All values are in the glyph kit's viewBox units (0–100, docs/research/magical-scriptorium/glyphkit/README.md).
 
 // the strokes' pen: round caps and round joins
 export const HOUSE_PEN = 5.5;

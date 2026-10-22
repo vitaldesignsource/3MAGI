@@ -28,7 +28,9 @@ The data. dump-traced.mjs gives, for each alphabet, its scheme's keys, each with
 traced glyph of its sign as MagicGlyph.jsx draws it at text size: the strokes d drawn
 with the house pen (pen.js, 5.5, round caps and joins), each ring with its radius, its
 pen and the radius of the hole the strokes are masked by, and each dot with its radius.
-A glyph with a pen of its own is refused there.
+A glyph with a pen of its own is refused there. A filled glyph (docs/research/magical-scriptorium/glyphkit/README.md,
+"Filled glyphs") is given as its outline alone, { fill }: absolute M L C Q Z, every
+subpath closed, drawn by MagicGlyph as one path filled even-odd, with no pen.
 
 The outline of a glyph is the ink MagicGlyph draws:
 
@@ -38,8 +40,11 @@ Each subpath is stroked on its own with Skia's stroker (butt ends, round joins),
 fixed frame (the SVG box, y up, 64 times the font's resolution), and the strokes are
 united one at a time, so that two strokes meeting at a point cannot lose a counter; the
 round caps are added as discs, one for each distinct end point; then the ring holes are
-cut, then the annuli and the dots are added. The result is scaled to font units,
-converted to TrueType quadratics (cu2qu, 0.25 units) and rounded to integers.
+cut, then the annuli and the dots are added. A filled glyph's outline is taken as it
+is: its subpaths are read into one path with the even-odd rule, which Skia's simplify
+resolves into non-overlapping contours of nonzero winding, outer contours clockwise and
+counters counter-clockwise (y up), as TrueType wants them. The result is scaled to font
+units, converted to TrueType quadratics (cu2qu, 0.25 units) and rounded to integers.
 
 Size and place. The units per em are 1000, and the SVG box (0-100) is one em times the
 alphabet's signScale, so at the writ's font size a sign is as large as its SVG. Each font
@@ -58,9 +63,10 @@ scale exactly; no layout tables; fixed dates.
 
 The build fails when, for any glyph of the font as written (the woff2 read back), an
 independent construction of MagicGlyph's drawing (shapely buffers of the flattened centre
-lines, from this file's own path parser) is more than 0.25 SVG units away (Hausdorff
-distance of the boundaries), or has a different number of polygons or of holes; or when
-the cmap is not the scheme's key set.
+lines, from this file's own path parser; for a filled glyph, the faces of its flattened
+subpaths' arrangement kept by the even-odd count of a ray from each) is more than 0.25
+SVG units away (Hausdorff distance of the boundaries), or has a different number of
+polygons or of holes; or when the cmap is not the scheme's key set.
 """
 import argparse
 import datetime
@@ -100,7 +106,7 @@ from fontTools.svgLib.path import parse_path  # noqa: E402
 from fontTools.ttLib import TTFont, newTable  # noqa: E402
 import shapely  # noqa: E402
 from shapely.geometry import LineString, Point, Polygon  # noqa: E402
-from shapely.ops import unary_union  # noqa: E402
+from shapely.ops import polygonize, unary_union  # noqa: E402
 
 WEB = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 FONT_DIR = os.path.join(WEB, 'src', 'assets', 'fonts', 'traced')
@@ -180,9 +186,31 @@ def _union(p, q):
     return pathops.op(p, q, pathops.PathOp.UNION, clockwise=True)
 
 
+def _drop_slivers(path):
+    """drop the zero-area slivers path ops can leave (under a quarter of a square font unit)"""
+    clean = pathops.Path()
+    cp = clean.getPen()
+    for c in path.contours:
+        if abs(c.area) >= (K * K) / 4:
+            c.draw(cp)
+    return clean
+
+
+def fill_outline(fill):
+    """A filled glyph's ink as a pathops.Path in the working frame: its outline as it is,
+    the even-odd rule MagicGlyph fills it with resolved into nonzero contours (outer
+    clockwise, counters counter-clockwise, y up), with no overlap."""
+    a = K * 10
+    path = pathops.Path(fillType=pathops.FillType.EVEN_ODD)
+    parse_path(fill, TransformPen(path.getPen(), (a, 0, 0, -a, 0, a * 100)))
+    return _drop_slivers(pathops.simplify(path, fix_winding=True, clockwise=True))
+
+
 def outline(g, pen_w):
     """The ink of one glyph as a pathops.Path in the working frame: x = K*10*x_svg,
     y = K*10*(100 - y_svg) (y up, the box's bottom-left at the origin)."""
+    if 'fill' in g:
+        return fill_outline(g['fill'])
     a = K * 10
 
     def w(x, y):
@@ -248,13 +276,7 @@ def outline(g, pen_w):
         disc = pathops.Path()
         _circle(disc, *w(x, y), r * a, True)
         result = _union(result, disc)
-    # drop the zero-area slivers path ops can leave (under a quarter of a square font unit)
-    clean = pathops.Path()
-    cp = clean.getPen()
-    for c in result.contours:
-        if abs(c.area) >= (K * K) / 4:
-            c.draw(cp)
-    return clean
+    return _drop_slivers(result)
 
 
 def font_units(path, s, dx, dy):
@@ -501,7 +523,31 @@ def centre_lines(d):
     return [(sp['pts'], sp['draws']) for sp in subs]
 
 
+def ideal_fill(fill):
+    """A filled glyph as MagicGlyph fills it (even-odd), built without path ops: the
+    subpaths flattened by this file's own parser, their lines noded and polygonized into
+    the faces of their arrangement, and each face kept when a ray from a point inside it
+    crosses the subpaths an odd number of times."""
+    rings = [pts for pts, draws in centre_lines(fill) if draws]
+    seg = numpy.array([(p[0], p[1], q[0], q[1]) for r in rings for p, q in zip(r, r[1:] + r[:1]) if p != q])
+    noded = unary_union([LineString(r if r[0] == r[-1] else r + [r[0]]) for r in rings])
+    faces = list(polygonize(list(getattr(noded, 'geoms', [noded]))))
+    x1, y1, x2, y2 = seg.T
+    kept = []
+    for f in faces:
+        pt = f.representative_point()
+        px, py = pt.x, pt.y
+        spans = (y1 > py) != (y2 > py)
+        with numpy.errstate(divide='ignore', invalid='ignore'):
+            xc = x1 + (py - y1) * (x2 - x1) / (y2 - y1)
+        if int(numpy.count_nonzero(spans & (px < xc))) % 2:
+            kept.append(f)
+    return _clean(unary_union(kept))
+
+
 def ideal(g, pen):
+    if 'fill' in g:
+        return ideal_fill(g['fill'])
     parts = []
     if (g['d'] or '').strip():
         strokes = []

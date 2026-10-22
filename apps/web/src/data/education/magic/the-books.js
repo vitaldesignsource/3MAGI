@@ -112,7 +112,7 @@ export default {
         },
         {
             order: 10, name: 'Dee, Libri Mysteriorum', group: 'copies',
-            value: 'The Enochian alphabet: twenty-one forms, drawn under 6 May 1583; their names and Latin values as Wikipedia and dCode report Dee’s table', translit: 'Manuscript, 6 May 1583', numeric: 1583,
+            value: 'The Enochian alphabet: twenty-one forms, drawn under 6 May 1583; their names and Latin values as Dee’s table of 26 March 1583 gives them, in Whitby’s transcription', translit: 'Manuscript, 6 May 1583', numeric: 1583,
             glyph: null, formConfidence: 'high',
             note: 'British Library, Sloane MS 3188, f. 104. Meric Casaubon’s printed selection of 1659 begins after this table and does not contain it.',
         },
@@ -307,7 +307,7 @@ export default {
                 { label: 'Sotheby’s, the library of Erwin Tomash, lot 669', url: 'https://www.sothebys.com/en/auctions/ecatalogue/2018/the-library-of-erwin-tomash-l18409/lot.669.html' },
             ] },
         { slug: 'dee-1583', title: 'Dee’s Libri Mysteriorum: a new alphabet', kind: 'manuscript', year: 1583, end: null, circa: false, circaEnd: false,
-            description: 'A manuscript, not a printed book, but the one that brought a new alphabet into the lineage. Dee recorded that Edward Kelley saw an alphabet of twenty-one letters in his visions, and the record draws their forms; the names and Latin values given for them are reported for Dee’s table by Wikipedia and the dCode letter list, and none stands beside the forms on f. 104 as reproduced. The letters belong to the angelic book called Liber Loagaeth (Sloane MS 3189). Elias Ashmole later made a fair copy of these volumes, now Sloane MS 3677.',
+            description: 'A manuscript, not a printed book, but the one that brought a new alphabet into the lineage. Dee recorded that Edward Kelley saw an alphabet of twenty-one letters in his visions, and the record draws their forms; their names and Latin values are those of Dee’s table of 26 March 1583 (Sloane MS 3188, f. 64b), as Christopher Whitby’s transcription of 1982 gives them (f. 64b itself was not seen); Wikipedia and the dCode letter list give the same names and values. None stands beside the forms on f. 104 as reproduced. The letters belong to the angelic book called Liber Loagaeth (Sloane MS 3189). Elias Ashmole later made a fair copy of these volumes, now Sloane MS 3677.',
             dating: 'The records run from 26 March to 6 May 1583, and the table is dated 6 May 1583 (Sloane MS 3188, f. 104; a Commons chart of the letters gives ff. 103v–104r). Dates of 1582 for the letters are wrong: 1582 is when Kelley began working with Dee.',
             alphabets: ['enochian'],
             editions: [
@@ -315,6 +315,7 @@ export default {
                 { label: 'British Library catalogue, Sloane MS 3188', url: 'https://searcharchives.bl.uk/catalog/040-002115572' },
                 { label: 'British Library catalogue, Sloane MS 3189 (Liber Loagaeth)', url: 'https://searcharchives.bl.uk/catalog/040-002115573' },
                 { label: 'Peterson’s Dee texts', url: 'https://www.esotericarchives.com/dee/' },
+                { label: 'Whitby’s transcription of Sloane MS 3188 (1982), in the University of Birmingham’s eTheses repository', url: 'https://etheses.bham.ac.uk/id/eprint/3149/' },
             ] },
         { slug: 'duret-1613', title: 'Duret’s Thrésor: the storehouse of alphabets', kind: 'text', year: 1613, end: null, circa: false, circaEnd: false,
             description: 'A history of the languages of the world, published two years after its author’s death, and the great storehouse of alphabets for the seventeenth century. It reprints Ambrogio’s alphabet, the later Alphabet of the Magi, as the characters of the angel Raphael, taken from Theseus Ambrosius, as the Lyon municipal library’s blog and Wikipedia both say; it stands on p. 117. Two pages on, after setting out in French four sorts of Hebrew characters in the order of Agrippa’s III.30, without naming him, it prints the Celestial as “Characteres Celestes.” (p. 119), the signs re-cut and unlabelled, where Peterson’s note points. On p. 124 come the Malachim, as “Characteres des Anges.”, and the River script, labelled from Olaph to Thau, as an alphabet that, Duret says, is alleged to have been given to Abraham at the crossing of the river when he left Chaldea for Canaan. On p. 125 Duret quotes Ambrogio’s Latin, which names Panteo, de Balmes and Agrippa, and on pp. 126–127 he prints an alphabet he gives, on Ambrogio’s report of Panteo, to Enoch. All were read on a microfiche of the edition.',

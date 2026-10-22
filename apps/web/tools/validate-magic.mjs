@@ -2,7 +2,7 @@
 // Validates the Magical Scriptorium before it can be built. The wing holds the
 // stricter line the halls beside it do not: a drawing says what it was drawn
 // from, a quotation names its translation, a claim carries its standing, and
-// a letter with no form says why. The glyph kit's rules (glyphkit/check.mjs)
+// a letter with no form says why. The glyph kit's rules (docs/research/magical-scriptorium/glyphkit/check.mjs)
 // are applied to every drawn letter. Nothing is skipped silently: a module
 // that will not load is an error with its message, not an absence.
 //
@@ -13,7 +13,7 @@ import { existsSync, readFileSync, readdirSync } from 'node:fs';
 import path from 'node:path';
 import { pathToFileURL } from 'node:url';
 import { brotliDecompressSync } from 'node:zlib';
-import { GENERATED, MAGIC_DIR, buildCompare, glyphProblems, loadHall, loadModules, loadRegistry, serialiseCompare, urlProblem, web } from './magic-lib.mjs';
+import { GENERATED, GENERATED_INDEX, MAGIC_DIR, buildCompare, glyphProblems, loadHall, loadModules, loadRegistry, serialiseCompare, serialiseIndex, urlProblem, web } from './magic-lib.mjs';
 import { BAD_GLYPHS, BAD_URLS, GOOD_GLYPHS, GOOD_URLS } from './magic-fixtures.mjs';
 import { TRACED_FONTS, dumpTraced } from './fonts/dump-traced.mjs';
 
@@ -23,7 +23,11 @@ const fail = (where, m) => errors.push(`${where}: ${m}`);
 const words = (s) => String(s ?? '').trim().split(/\s+/).filter(Boolean).length;
 const YEAR = /\b(1\d{3}|20\d{2})\b/;
 const LOCATOR = /\b(book|bk\.|ch\.|chapter|cap\.|p\.|pp\.|fol\.|ff?\.|plate|sig\.|MS|[IVX]+\.\d+)/i;
-const canon = (g) => JSON.stringify({ d: String(g.d).trim().replace(/\s+/g, ' '), rings: g.rings ?? [], dots: g.dots ?? [], textRings: g.textRings ?? [] });
+// a glyph's form, for telling whether two glyphs are one: a filled glyph by
+// its outline, a centre-line glyph by its strokes, rings and dots
+const canon = (g) => (Object.prototype.hasOwnProperty.call(g, 'fill')
+    ? JSON.stringify({ fill: String(g.fill).trim().replace(/\s+/g, ' ') })
+    : JSON.stringify({ d: String(g.d).trim().replace(/\s+/g, ' '), rings: g.rings ?? [], dots: g.dots ?? [], textRings: g.textRings ?? [] }));
 const sameGlyph = (a, b) => canon(a) === canon(b);
 
 // --- facsimile plates --------------------------------------------------------------
@@ -455,10 +459,12 @@ for (const s of registry.wing.heroSigns || []) {
 
 // the comparison data must be current
 if (!problems.length) {
-    const fresh = serialiseCompare(await buildCompare(registry, modules));
-    let committed = '';
-    try { committed = readFileSync(GENERATED, 'utf8'); } catch { /* reported below */ }
-    if (committed !== fresh) fail('compare.generated.js', 'stale — run node tools/build-magic.mjs');
+    const data = await buildCompare(registry, modules);
+    for (const [file, fresh] of [[GENERATED, serialiseCompare(data)], [GENERATED_INDEX, serialiseIndex(data)]]) {
+        let committed = '';
+        try { committed = readFileSync(file, 'utf8'); } catch { /* reported below */ }
+        if (committed !== fresh) fail(path.basename(file), 'stale — run node tools/build-magic.mjs');
+    }
 }
 
 // --- the traced cipher fonts (tools/fonts) ---------------------------------------

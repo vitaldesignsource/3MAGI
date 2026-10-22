@@ -1,9 +1,9 @@
 import React, { useId } from 'react';
-import { inkBox, textOf } from './sign';
+import { inkBox, isFill, textOf } from './sign';
 import { HOUSE_DOT, HOUSE_PEN, HOUSE_RING, ringPen } from './pen';
 
 // The one renderer of a drawn letter. The glyph data are drawn as the glyph
-// kit stores them (glyphkit/README.md): the same viewBox, pen, caps and joins
+// kit stores them (docs/research/magical-scriptorium/glyphkit/README.md): the same viewBox, pen, caps and joins
 // and the same three element kinds —
 //
 //   <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="5.5"
@@ -13,9 +13,19 @@ import { HOUSE_DOT, HOUSE_PEN, HOUSE_RING, ringPen } from './pen';
 //     <circle cx cy r=2.6 fill="currentColor" stroke="none"/>   each dot
 //   </svg>
 //
-// — with two departures from the kit's specimen sheet, both made here so the
-// traced data stay as traced. Every stroke stops on its ring's centre line,
-// so the round cap of the 5.5 pen pokes about one unit into the ring's hole;
+// — or, for a filled glyph ({ fill }: the outline of the letter's ink, the
+// kit's "Filled glyphs"), as one path filled evenodd, its counters inner
+// subpaths, with no pen at all:
+//
+//   <svg viewBox="0 0 100 100"><path d fill="currentColor" fill-rule="evenodd"/></svg>
+//
+// — so the pens, the ring masks, the plaque pen and the text pen below are
+// the centre-line glyphs' alone, and a fill is drawn the same at every size.
+//
+// A centre-line glyph is drawn with two departures from the kit's specimen
+// sheet, both made here so the traced data stay as traced. Every stroke
+// stops on its ring's centre line, so the round cap of the 5.5 pen pokes
+// about one unit into the ring's hole;
 // the path is masked by each ring's hole (radius r less half the ring pen),
 // which cuts the stroke back to the ring's inner edge and leaves the hole
 // round. And a ring drawn smaller than the house size (r 6) — the crowded
@@ -55,14 +65,15 @@ import { HOUSE_DOT, HOUSE_PEN, HOUSE_RING, ringPen } from './pen';
 // tall one (the Theban's) carry the same weight as a square one, and every
 // sign stands at its centre by its ink, not by the place it was traced in. Its pens are
 // scaled with the viewBox, so they are the same in px on every door; a
-// fine-lined figure is drawn there with a pen of at least 3.5. The traced
+// fine-lined figure is drawn there with a pen of at least 3.5. A filled
+// glyph's ink is its outline's own box, curves' extrema included. The traced
 // data are drawn as they are; only the window onto them changes.
 const FIT_AREA = 0.72;
 const FIT_MAX = 0.88;
 const FIT_MIN_TEXT_PEN = 3.5;
 const r3 = (v) => Math.round(v * 1000) / 1000;
 function fitOf(g) {
-    const textPen = g.textPen != null ? Math.max(g.textPen, FIT_MIN_TEXT_PEN) : null;
+    const textPen = !isFill(g) && g.textPen != null ? Math.max(g.textPen, FIT_MIN_TEXT_PEN) : null;
     const b = inkBox(g, { textPen });
     if (!b) return null;
     const side = Math.max(Math.sqrt(b.w * b.h) / FIT_AREA, Math.max(b.w, b.h) / FIT_MAX);
@@ -70,20 +81,30 @@ function fitOf(g) {
 }
 
 // (a figure has points, plural: a sign drawn as one heavy point — the ه of
-// Aflāṭūn's pen in the Shawq — is a letter, drawn at its table's scale)
-const isFigure = (g) => Boolean(g && !String(g.d || '').trim() && (g.dots || []).length > 1 && !(g.rings || []).length);
+// Aflāṭūn's pen in the Shawq — is a letter, drawn at its table's scale; and
+// a filled glyph is a letter's outline, never a figure of points)
+const isFigure = (g) => Boolean(g && !isFill(g) && !String(g.d || '').trim() && (g.dots || []).length > 1 && !(g.rings || []).length);
 
 function MagicGlyph({ g, size, label, className, fit }) {
     const uid = useId();
     const a11y = label ? { role: 'img', 'aria-label': label } : { 'aria-hidden': true };
     const f = fit === 'ink' && g ? fitOf(g) : null;
-    const cls = size ? className : ['mg-glyph', isFigure(g) && 'is-figure', g?.pen && 'has-pen', f && 'is-fit', className].filter(Boolean).join(' ') || undefined;
+    const fill = isFill(g);
+    const cls = size ? className : ['mg-glyph', isFigure(g) && 'is-figure', fill && 'is-fill', !fill && g?.pen && 'has-pen', f && 'is-fit', className].filter(Boolean).join(' ') || undefined;
     if (!g) {
         return (
             <svg className={cls} width={size} height={size} viewBox="0 0 100 100" {...a11y}>
                 <rect x="10" y="10" width="80" height="80" fill="none" stroke="currentColor" strokeOpacity="0.55" strokeDasharray="4 4" />
                 {/* the word is legible only at the kit's size; at text size it would be a speck */}
                 {size >= 100 && <text x="50" y="56" textAnchor="middle" fontSize="12" fill="currentColor" fillOpacity="0.7">gap</text>}
+            </svg>
+        );
+    }
+    const viewBox = f ? `${f.x} ${f.y} ${f.side} ${f.side}` : '0 0 100 100';
+    if (fill) {
+        return (
+            <svg className={cls} width={size} height={size} viewBox={viewBox} {...a11y}>
+                <path d={g.fill} fill="currentColor" fillRule="evenodd" />
             </svg>
         );
     }
@@ -104,7 +125,7 @@ function MagicGlyph({ g, size, label, className, fit }) {
     // a text ring's hole: it is only ever drawn with the text pen
     const ringClass = textRings ? 'mg-ring is-traced' : textPen != null ? 'mg-ring' : undefined;
     return (
-        <svg className={cls} width={size} height={size} viewBox={f ? `${f.x} ${f.y} ${f.side} ${f.side}` : '0 0 100 100'} fill="none" stroke="currentColor"
+        <svg className={cls} width={size} height={size} viewBox={viewBox} fill="none" stroke="currentColor"
             strokeWidth={(textPen ?? HOUSE_PEN) * k} strokeLinecap="round" strokeLinejoin="round" {...a11y}
             style={g.pen && !size ? { '--mg-pen': g.pen } : undefined}>
             {holes && (

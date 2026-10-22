@@ -1,0 +1,1591 @@
+{
+ "slug": "enochian-ink-sources",
+ "written": "2026-10-21",
+ "task": "Best available images of the 21 letters as Dee recorded them, for redrawing the Enochian glyphs as filled ink outlines from the manuscript.",
+ "rules_kept": [
+  "Every outline is to come from manuscript ink: Sloane MS 3188 f. 104 (primary) and Sloane MS 3189. The 1659 engravings are evidence for structure where the manuscript ink is knotted, not a source of outlines.",
+  "The owner's reference images (enoch-ink/refs/ref1-chart.webp, ref2-svg-pack.jpg, ref3-fontspace.jpg) were not opened, traced or used in this step.",
+  "Downloads are kept in their own folders (dl-commons, dl-wellcome, dl-archive, dl-bl, dl-whitby); scripts are in tools/; crops in crops/; scratch views in work/.",
+  "Names and values are reported as Dee's table gives them in Whitby's transcription; the hand of f. 104 and the meaning of the second form above Veh are left open."
+ ],
+ "summary": {
+  "best_manuscript_image": "Sloane MS 3188 f. 104: the Wikimedia Commons ORIGINAL, 4303 x 1603 px (SHA-1 verified), not the 1920 px rendering used so far. It is the best witness for the ink outline of all 21 letters: largest (letters 142-212 px tall), hard-edged, every form whole. Its weakness is that it is bitonal: where ink runs together it is solid black.",
+  "knots_and_blots_on_f104": [
+   "Un - lower half knotted (crossing bar, turn of the stem and foot in one mass)",
+   "Or - lower half blotted (the bars at the foot run together)",
+   "Ged - eye of the inturned hook filled",
+   "Pal - dot joined to the stem by a hair-thin neck"
+  ],
+  "resolved_by": "Sloane MS 3189 (Commons original, 1085 px, greyscale) shows each of these as separate strokes, small (letters about 46 px tall); Casaubon's Holy Table (1659) shows Un, Or and Ged clean but regularised (no Holy Table instance of Pal). Use 3189 for the course of the strokes and the engraving to confirm it; keep the weight and extent from f. 104.",
+  "best_casaubon_images": "Wellcome IIIF full-resolution PNGs (lossless output of the Wellcome image server; same capture as the archive.org copies, which are JPEG-recompressed). The archive.org original JP2 captures are the same pixels uncropped, marginally crisper. Copy 2's Holy Table is scanned about 1.2x larger than copy 1's (border letters about 105 px against 85 px) but hides the left border in the fold.",
+  "british_library": "Not reachable. The BL catalogue still lists Sloane MSS 3188 and 3189 as digitised but \"(digital images currently unavailable)\"; the viewer host access.bl.uk no longer resolves (DNS), api.bl.uk (the old IIIF manifests) is refused at the proxy (HTTP 502 on CONNECT), and no current BL manifest address could be found. No BL image was obtained.",
+  "new_identity_evidence": "Whitby's transcription of Sloane MS 3188 (Birmingham PhD thesis, 1982) gives Dee's own table of 26 March 1583 (f. 64b) with each name and Latin letter, in the order Pa b, Veh c, Ged g, Gal d, Or f, Un a, Graph e, Tal m, Gon i, Na h, Ur l, Mals p, Ger q, Drux n, Pal x, Med o, Don r, Ceph z, Van u, Fam s, Gisg t; and his commentary says the characters of 26 March are 'from right to left those transliterated at 64b, 2-22. The forms are more clearly defined in a later Action (see 104a, 30-31)', i.e. the f. 104 drawing. This is a scholarly source for the order the module calls unconfirmed."
+ },
+ "images": [
+  {
+   "id": "sloane3188-f104-commons-original",
+   "role": "primary manuscript witness: the 21 forms of 6 May 1583 (the module traced from a 1920 px rendering of this file)",
+   "file": "dl-commons/f104-original-4303x1603.png",
+   "pixel_size": [
+    4303,
+    1603
+   ],
+   "bytes": 5421379,
+   "sha1": "7f5476cdb427b9b9a37e06c4b82e00df9c2fd086",
+   "url_fetched": "https://commons.wikimedia.org/w/img_auth.php/1/1c/Enochian_letters_(1583_manuscript).png",
+   "fetch_note": "upload.wikimedia.org answered HTTP 429 (\"robot policy\" / \"too many requests\") to the original and to the 3840 px thumbnail; the same file was served by the commons.wikimedia.org application host. SHA-1 matches the checksum the Commons file page gives (7f5476cdb427b9b9a37e06c4b82e00df9c2fd086), so it is the uploaded original.",
+   "page_url": "https://commons.wikimedia.org/wiki/File:Enochian_letters_(1583_manuscript).png",
+   "source_as_stated": "Commons file description: 'British Library, Sloane MS 3188, f. 104.'; description 'Dr. John Dee's manuscript diary for 6 May 1583.'; date 1583-05-06; author 'Dr. John Dee'. Uploaded 28 March 2018 by Xena the Rebel Girl (UploadWizard), one version. Who made the image, and from what, is not stated.",
+   "rights_as_stated": "Commons: {{PD-old-70-1923}} ('Public domain'); hidden categories CC-PD-Mark, PD-old-70-expired. The British Library's own terms for its images could not be checked.",
+   "character": "Essentially bitonal: hard 1-px edges (about 0.36 mid-tone pixels per edge transition), no integer pixel replication, PNG 96 dpi. Looks thresholded from a photograph or microfilm, so filled counters and knots carry no tonal information. 2.24x the pixel size of the 1920 px rendering used so far; letters 142-212 px tall instead of 63-95.",
+   "folio_note": "Commons: f. 104. Commons chart File:Enochian_alphabet.png: 'page 103v-104r'. Whitby's transcription (vol. 2, p. 391) puts the drawing at f. 104a, lines 30-31, the entry of 8 May beginning at f. 104b; his commentary (vol. 1, p. 449) cites it as '104a, 30-31'.",
+   "crops": [
+    "crops/sloane3188-f104-commons-original/f104-letters-block.png",
+    "crops/sloane3188-f104-commons-original/f104-NN-Name.png (21 letters + 02b, the small form above Veh)"
+   ],
+   "crop_index": "crops/sloane3188-f104-commons-original/f104-index.json"
+  },
+  {
+   "id": "sloane3188-f104-commons-3840",
+   "role": "Wikimedia 3840 px rendering of the same file (redundant with the original; kept for the record)",
+   "file": "dl-commons/f104-thumbphp-3840.png",
+   "pixel_size": [
+    3840,
+    1431
+   ],
+   "bytes": 3447634,
+   "sha1": "638d9d13fa5e447e8261c2638763ec06391f10cd",
+   "url_fetched": "https://commons.wikimedia.org/w/thumb.php?f=Enochian_letters_(1583_manuscript).png&width=3840",
+   "source_as_stated": "as the original",
+   "rights_as_stated": "as the original"
+  },
+  {
+   "id": "sloane3189-commons-original",
+   "role": "second manuscript witness: the 21 forms written left to right under a Loagaeth grid",
+   "file": "dl-commons/s3189-original.jpg",
+   "pixel_size": [
+    1085,
+    441
+   ],
+   "bytes": 106076,
+   "sha1": "cd460a4ec63a9fc8f7678e552b67fb7124b94ea3",
+   "url_fetched": "https://commons.wikimedia.org/w/img_auth.php/4/4e/Enochian_letters_(1583_manuscript)_alt.jpg",
+   "fetch_note": "SHA-1 matches the Commons file page (cd460a4ec63a9fc8f7678e552b67fb7124b94ea3). The original is 1085 px wide; the 1280 px file used before was an upscale of it.",
+   "page_url": "https://commons.wikimedia.org/wiki/File:Enochian_letters_(1583_manuscript)_alt.jpg",
+   "source_as_stated": "Commons: 'British Library, Sloane MS 3189, r. 57.'; description 'Dr. John Dee's manuscript diary for 1583.'; author 'Dr. John Dee' (the BL catalogue attributes the transcription of Sloane MS 3189 to Edward Kelley). Uploaded 3 September 2020 by Obankston (UploadWizard). Embedded metadata: created 6 October 2009 in Adobe Photoshop CS4, 'converted from image/jpx to image/jpeg', from an image of 1792 x 2103 px; re-saved 2 September 2020 with Windows Photo Editor. The 2009 source is not named. (The same uploader's chart File:Enochian_alphabet.png cites themagickalreview.org pages for Sloane 3189 f. 57r; that is not a statement about this file.)",
+   "rights_as_stated": "Commons: {{PD-old-70-1923}}; structured data CC Public Domain Mark 1.0.",
+   "character": "Greyscale JPEG, soft edges (10-90% edge about 2.4 px on letters about 40-52 px tall). Keeps tonal information inside blots, so counters and crossings that f. 104 fills can be read, but at a quarter of the size.",
+   "crops": [
+    "crops/sloane3189-commons-original/s3189-letters-block.png",
+    "crops/sloane3189-commons-original/s3189-NN-Name.png (21 letters)"
+   ],
+   "crop_index": "crops/sloane3189-commons-original/s3189-index.json"
+  },
+  {
+   "id": "casaubon1659-wellcome-iiif-b30324282_0001_0081",
+   "role": "Specimen plate, Wellcome copy 1 (\"Volume 1\") - full page, lossless PNG from the Wellcome IIIF image server",
+   "file": "dl-wellcome/b30324282_0001_0081-full.png",
+   "pixel_size": [
+    3624,
+    5702
+   ],
+   "bytes": 41116118,
+   "sha1": "550d22f3527e20d4a38c8c6d1edcec6aeedbff1a",
+   "url_fetched": "https://iiif.wellcomecollection.org/image/b30324282_0001_0081.jp2/full/full/0/default.png",
+   "info_json": "https://iiif.wellcomecollection.org/image/b30324282_0001_0081.jp2/info.json",
+   "manifest": "https://iiif.wellcomecollection.org/presentation/v3/b30324282_0001 (canvas index 80, 0-based; = archive.org page/n80)",
+   "source_as_stated": "Wellcome IIIF manifest: 'A true and faithful relation of what passed for many yeers between Dr. John Dee ... and some spirits ... by Meric. Casaubon.'; 'London : D. Maxwell for T. Garthwait, 1659.'; Wellcome catalogue work qnqncdpw, b-number b30324282, labelled 'Volume 1' (two complete copies of the book catalogued as two volumes; the earlier manifest calls them copy 1 and copy 2).",
+   "rights_as_stated": "Manifest 'rights': http://creativecommons.org/publicdomain/mark/1.0/; 'Attribution and usage': 'Wellcome Collection ... This work has been identified as being free of known restrictions under copyright law ... made available under the Creative Commons, Public Domain Mark.'"
+  },
+  {
+   "id": "casaubon1659-wellcome-iiif-b30324282_0001_0083",
+   "role": "Holy Table plate, Wellcome copy 1 (\"Volume 1\") - full page, lossless PNG from the Wellcome IIIF image server",
+   "file": "dl-wellcome/b30324282_0001_0083-full.png",
+   "pixel_size": [
+    3706,
+    4309
+   ],
+   "bytes": 22615914,
+   "sha1": "c4a9d26ca0023ee45c433150074db95f05ed29c7",
+   "url_fetched": "https://iiif.wellcomecollection.org/image/b30324282_0001_0083.jp2/full/full/0/default.png",
+   "info_json": "https://iiif.wellcomecollection.org/image/b30324282_0001_0083.jp2/info.json",
+   "manifest": "https://iiif.wellcomecollection.org/presentation/v3/b30324282_0001 (canvas index 82, 0-based; = archive.org page/n82)",
+   "source_as_stated": "Wellcome IIIF manifest: 'A true and faithful relation of what passed for many yeers between Dr. John Dee ... and some spirits ... by Meric. Casaubon.'; 'London : D. Maxwell for T. Garthwait, 1659.'; Wellcome catalogue work qnqncdpw, b-number b30324282, labelled 'Volume 1' (two complete copies of the book catalogued as two volumes; the earlier manifest calls them copy 1 and copy 2).",
+   "rights_as_stated": "Manifest 'rights': http://creativecommons.org/publicdomain/mark/1.0/; 'Attribution and usage': 'Wellcome Collection ... This work has been identified as being free of known restrictions under copyright law ... made available under the Creative Commons, Public Domain Mark.'"
+  },
+  {
+   "id": "casaubon1659-wellcome-iiif-b30324282_0002_0079",
+   "role": "Holy Table plate, Wellcome copy 2 (\"Volume 2\") - full page, lossless PNG from the Wellcome IIIF image server",
+   "file": "dl-wellcome/b30324282_0002_0079-full.png",
+   "pixel_size": [
+    4238,
+    4802
+   ],
+   "bytes": 33725509,
+   "sha1": "ab5ef61a05ddb32d22cec6f81b108a4673422020",
+   "url_fetched": "https://iiif.wellcomecollection.org/image/b30324282_0002_0079.jp2/full/full/0/default.png",
+   "info_json": "https://iiif.wellcomecollection.org/image/b30324282_0002_0079.jp2/info.json",
+   "manifest": "https://iiif.wellcomecollection.org/presentation/v3/b30324282_0002 (canvas index 78, 0-based; = archive.org page/n78)",
+   "source_as_stated": "Wellcome IIIF manifest: 'A true and faithful relation of what passed for many yeers between Dr. John Dee ... and some spirits ... by Meric. Casaubon.'; 'London : D. Maxwell for T. Garthwait, 1659.'; Wellcome catalogue work qnqncdpw, b-number b30324282, labelled 'Volume 2' (two complete copies of the book catalogued as two volumes; the earlier manifest calls them copy 1 and copy 2).",
+   "rights_as_stated": "Manifest 'rights': http://creativecommons.org/publicdomain/mark/1.0/; 'Attribution and usage': 'Wellcome Collection ... This work has been identified as being free of known restrictions under copyright law ... made available under the Creative Commons, Public Domain Mark.'"
+  },
+  {
+   "id": "casaubon1659-wellcome-iiif-b30324282_0002_0081",
+   "role": "Specimen plate, Wellcome copy 2 (\"Volume 2\") - full page, lossless PNG from the Wellcome IIIF image server",
+   "file": "dl-wellcome/b30324282_0002_0081-full.png",
+   "pixel_size": [
+    3446,
+    5389
+   ],
+   "bytes": 39496241,
+   "sha1": "711b1edb6dbcd4721e22dbc622bff023870c1a9f",
+   "url_fetched": "https://iiif.wellcomecollection.org/image/b30324282_0002_0081.jp2/full/full/0/default.png",
+   "info_json": "https://iiif.wellcomecollection.org/image/b30324282_0002_0081.jp2/info.json",
+   "manifest": "https://iiif.wellcomecollection.org/presentation/v3/b30324282_0002 (canvas index 80, 0-based; = archive.org page/n80)",
+   "source_as_stated": "Wellcome IIIF manifest: 'A true and faithful relation of what passed for many yeers between Dr. John Dee ... and some spirits ... by Meric. Casaubon.'; 'London : D. Maxwell for T. Garthwait, 1659.'; Wellcome catalogue work qnqncdpw, b-number b30324282, labelled 'Volume 2' (two complete copies of the book catalogued as two volumes; the earlier manifest calls them copy 1 and copy 2).",
+   "rights_as_stated": "Manifest 'rights': http://creativecommons.org/publicdomain/mark/1.0/; 'Attribution and usage': 'Wellcome Collection ... This work has been identified as being free of known restrictions under copyright law ... made available under the Creative Commons, Public Domain Mark.'"
+  },
+  {
+   "id": "casaubon1659-archive-orig-jp2",
+   "role": "the original camera captures of the same four pages on the Internet Archive (uncropped, unrotated)",
+   "files": [
+    {
+     "file": "dl-archive/b30324282_0001_orig_0081.jp2",
+     "pixel_size": [
+      6000,
+      4000
+     ],
+     "bytes": 2246634,
+     "sha1": "038ea83deb9e31a0782dad88a3e16fbdf8ad8557"
+    },
+    {
+     "file": "dl-archive/b30324282_0001_orig_0083.jp2",
+     "pixel_size": [
+      7952,
+      5304
+     ],
+     "bytes": 1527922,
+     "sha1": "2692170037e8244872a5201f091f30f660f1b627"
+    },
+    {
+     "file": "dl-archive/b30324282_0002_orig_0079.jp2",
+     "pixel_size": [
+      7952,
+      5304
+     ],
+     "bytes": 2129902,
+     "sha1": "ad7732ffeac702507254083ad3e132da4f3c00dd"
+    },
+    {
+     "file": "dl-archive/b30324282_0002_orig_0081.jp2",
+     "pixel_size": [
+      6000,
+      4000
+     ],
+     "bytes": 2284517,
+     "sha1": "94702df6df9a607cd45db909c83eb5c2b3acfef3"
+    }
+   ],
+   "url_fetched": [
+    "https://archive.org/download/b30324282_0001/b30324282_0001_orig_jp2.tar/b30324282_0001_orig_jp2%2Fb30324282_0001_orig_0081.jp2",
+    "https://archive.org/download/b30324282_0001/b30324282_0001_orig_jp2.tar/b30324282_0001_orig_jp2%2Fb30324282_0001_orig_0083.jp2",
+    "https://archive.org/download/b30324282_0002/b30324282_0002_orig_jp2.tar/b30324282_0002_orig_jp2%2Fb30324282_0002_orig_0079.jp2",
+    "https://archive.org/download/b30324282_0002/b30324282_0002_orig_jp2.tar/b30324282_0002_orig_jp2%2Fb30324282_0002_orig_0081.jp2"
+   ],
+   "source_as_stated": "archive.org items b30324282_0001 and b30324282_0002, file 'Single Page Original JP2 Tar'; metadata contributor and sponsor 'Wellcome Library'.",
+   "rights_as_stated": "archive.org metadata 'rights': 'This work is available under the Creative Commons, Public Domain Mark'.",
+   "character": "Same capture as the Wellcome IIIF pages: registered scale 1.000, the processed page is these frames turned 90 deg (specimen) or 180 deg (Holy Table) and cropped. Marginally more high-frequency detail than the IIIF PNG (variance of Laplacian 712 v. 427 on the specimen heading, 276 v. 194 on the Holy Table centre grid) - some of it may be sensor noise. No gain in resolution.",
+   "crops": [
+    "crops/archive-orig-jp2/w1-orig0081-specimen-heading-line.png",
+    "crops/archive-orig-jp2/w1-orig0081-specimen-word1..3.png",
+    "crops/archive-orig-jp2/w2-orig0081-specimen-heading-line.png",
+    "crops/archive-orig-jp2/w2-orig0081-specimen-word1..3.png",
+    "crops/archive-orig-jp2/w1-orig0083-holytable-table.png",
+    "crops/archive-orig-jp2/w1-orig0083-holytable-centre-grid.png"
+   ],
+   "crop_alignment": "crops/archive-orig-jp2/*-align.json (quarter turns and offset; no resampling)"
+  },
+  {
+   "id": "casaubon1659-archive-page-jpg",
+   "role": "archive.org page JPEGs fetched in the earlier run (plates/enochian/work/full/w1-n80.jpg, w1-n82.jpg, w2-n78.jpg, w2-n80.jpg)",
+   "character": "Pixel-for-pixel the same pages as the Wellcome IIIF PNGs (mean difference 1.2-2.0 grey levels), re-compressed as baseline JPEG (luma quantisation starting 8, 6, 5, 8). Superseded by the IIIF PNGs and the original JP2s."
+  }
+ ],
+ "casaubon_crops": {
+  "holy_table_copy1_cells": {
+   "dir": "crops/casaubon-w1-holytable-cells",
+   "source_image": "dl-wellcome/b30324282_0001_0083-full.png",
+   "note": "84 border cells (positions 1-84, numbered as in plates/enochian/manifest.json: top 1-21 left to right, right 22-42 top to bottom, bottom 43-63 left to right, left 64-84 top to bottom) plus 4 corners, each turned upright (tops toward the table centre -> up); centre letters 85-96 row by row. Full resolution, no resampling except the exact 90/180 deg turns. Cell boxes come from straight lines fitted to the border rules (the page is not flat; residuals up to 15 px), so a few cells clip a neighbour.",
+   "index": [
+    "crops/casaubon-w1-holytable-cells/w1ht-cells.json",
+    "crops/casaubon-w1-holytable-cells/w1ht-centre-cells.json"
+   ]
+  },
+  "holy_table_copy2_cells": {
+   "dir": "crops/casaubon-w2-holytable-cells",
+   "source_image": "dl-wellcome/b30324282_0002_0079-full.png",
+   "note": "Copy-1 cells mapped onto copy 2 by a homography fitted on SIFT matches (2449 inliers, median reprojection error 1.8 px), then cut and turned the same way. Positions 64-84 (left border) show only the facing leaf: the left border lies in the binding fold in this copy.",
+   "index": "crops/casaubon-w2-holytable-cells/w2ht-cells.json"
+  },
+  "holy_table_whole": [
+   "dl-wellcome/region-w1-holytable-table.png (IIIF region 100,600,3100,3050 of b30324282_0001_0083)",
+   "crops/casaubon-w2-holytable-table-local-crop.png (copy 2; the IIIF server refused a region this large: HTTP 403 max_pixels)"
+  ],
+  "specimen_heading": [
+   "dl-wellcome/region-w1-specimen-heading-line.png",
+   "dl-wellcome/region-w2-specimen-heading-line.png",
+   "crops/casaubon-w1-specimen/w1-specimen-word1..3.png",
+   "crops/casaubon-w2-specimen/w2-specimen-word1..3.png"
+  ],
+  "iiif_region_urls_fetched": [
+   "https://iiif.wellcomecollection.org/image/b30324282_0001_0081.jp2/690,1210,2230,135/full/0/default.png",
+   "https://iiif.wellcomecollection.org/image/b30324282_0002_0081.jp2/440,1215,2260,115/full/0/default.png",
+   "https://iiif.wellcomecollection.org/image/b30324282_0001_0083.jp2/1000,1660,1260,940/full/0/default.png",
+   "https://iiif.wellcomecollection.org/image/b30324282_0001_0083.jp2/100,600,3100,3050/full/0/default.png"
+  ],
+  "iiif_region_check": "The three smaller region responses are pixel-identical to the same boxes cut from the full-page PNGs (mean difference 0.000).",
+  "letter_sizes": "Engraved letters: Holy Table border about 80-90 px tall in copy 1 and about 105 px in copy 2; centre letters about 145-190 px (copy 1); Specimen heading glyphs about 45-75 px."
+ },
+ "letters": [
+  {
+   "dee_order": 1,
+   "name": "Pa",
+   "value": "b",
+   "name_as_transcribed": "Pa",
+   "name_value_source": "Dee's table of 26 March 1583, Sloane MS 3188 f. 64b, as transcribed by Whitby (1982), vol. 2, pp. 236-238; tied to the f. 104 forms by Whitby's note on f. 64a l. 45 (vol. 1, p. 449)",
+   "sloane3188_f104": {
+    "place": "upper line, 1 from the right",
+    "crop": "crops/sloane3188-f104-commons-original/f104-01-Pa.png",
+    "box_on_original": [
+     3371,
+     635,
+     3585,
+     834
+    ],
+    "letter_height_px": 151,
+    "letter_height_px_in_1920_rendering_used_before": 67,
+    "reading": "Clean. V with the right arm turned over into a curl; the eye of the curl is narrowed to a notch."
+   },
+   "sloane3189": {
+    "place": "first line, 1 from the left",
+    "crop": "crops/sloane3189-commons-original/s3189-01-Pa.png",
+    "box_on_original": [
+     29,
+     265,
+     92,
+     326
+    ],
+    "letter_height_px": 49,
+    "reading": "Same form; the eye of the curl is open."
+   },
+   "casaubon_holy_table": {
+    "form_token": "V",
+    "positions_copy1": [
+     75,
+     76
+    ],
+    "count": 2,
+    "reading": "V with the right arm ending in an open round curl (pos. 75, 76, left border; copy 2 hides the left border in the fold, so copy 1 only).",
+    "clearest_cells": [
+     {
+      "position": 75,
+      "copy1": "crops/casaubon-w1-holytable-cells/w1ht-pos75-left.png",
+      "copy2": null
+     },
+     {
+      "position": 76,
+      "copy1": "crops/casaubon-w1-holytable-cells/w1ht-pos76-left.png",
+      "copy2": null
+     }
+    ]
+   },
+   "compare_view": "crops/compare-view/01-Pa.png",
+   "best_witness_for_ink_outline": "Sloane MS 3188 f. 104, Commons original 4303 x 1603 (letter about 151 px tall, hard-edged)",
+   "why": "Largest and sharpest manuscript witness for this letter; Sloane MS 3189 has the same form at about 49 px, soft-edged.",
+   "f104_knot_or_blot": null
+  },
+  {
+   "dee_order": 2,
+   "name": "Veh",
+   "value": "c",
+   "name_as_transcribed": "Veh",
+   "name_value_source": "Dee's table of 26 March 1583, Sloane MS 3188 f. 64b, as transcribed by Whitby (1982), vol. 2, pp. 236-238; tied to the f. 104 forms by Whitby's note on f. 64a l. 45 (vol. 1, p. 449)",
+   "sloane3188_f104": {
+    "place": "upper line, 2 from the right",
+    "crop": "crops/sloane3188-f104-commons-original/f104-02-Veh.png",
+    "box_on_original": [
+     3155,
+     638,
+     3390,
+     843
+    ],
+    "letter_height_px": 157,
+    "letter_height_px_in_1920_rendering_used_before": 70,
+    "reading": "Clean. Upright stem with two lobes drawn as open hooks and spurs. A smaller second B-like form is written directly above it (crop 02b); the page does not say whether it is an alternative or a correction.",
+    "second_form_above": {
+     "crop": "crops/sloane3188-f104-commons-original/f104-02b-Veh-small-form-above.png",
+     "box_on_original": [
+      3147,
+      478,
+      3323,
+      655
+     ]
+    }
+   },
+   "sloane3189": {
+    "place": "first line, 2 from the left",
+    "crop": "crops/sloane3189-commons-original/s3189-02-Veh.png",
+    "box_on_original": [
+     96,
+     263,
+     151,
+     324
+    ],
+    "letter_height_px": 49,
+    "reading": "Same form, heavier; the two lobes show tiny closed eyes (5 small counters at this threshold) where f. 104 has open notches. No second form above."
+   },
+   "casaubon_holy_table": {
+    "form_token": null,
+    "positions_copy1": [],
+    "count": 0,
+    "reading": "Not on the Holy Table."
+   },
+   "compare_view": "crops/compare-view/02-Veh.png",
+   "best_witness_for_ink_outline": "Sloane MS 3188 f. 104, Commons original 4303 x 1603 (letter about 157 px tall, hard-edged)",
+   "why": "Largest and sharpest manuscript witness for this letter; Sloane MS 3189 has the same form at about 49 px, soft-edged.",
+   "f104_knot_or_blot": null
+  },
+  {
+   "dee_order": 3,
+   "name": "Ged",
+   "value": "g",
+   "name_as_transcribed": "ged",
+   "name_value_source": "Dee's table of 26 March 1583, Sloane MS 3188 f. 64b, as transcribed by Whitby (1982), vol. 2, pp. 236-238; tied to the f. 104 forms by Whitby's note on f. 64a l. 45 (vol. 1, p. 449)",
+   "sloane3188_f104": {
+    "place": "upper line, 3 from the right",
+    "crop": "crops/sloane3188-f104-commons-original/f104-03-Ged.png",
+    "box_on_original": [
+     2865,
+     633,
+     3086,
+     823
+    ],
+    "letter_height_px": 142,
+    "letter_height_px_in_1920_rendering_used_before": 63,
+    "reading": "Stem and bowl clean, but the inturned hook is a solid mass: the eye of the curl is filled with ink (the module notes this)."
+   },
+   "sloane3189": {
+    "place": "first line, 3 from the left",
+    "crop": "crops/sloane3189-commons-original/s3189-03-Ged.png",
+    "box_on_original": [
+     170,
+     263,
+     228,
+     319
+    ],
+    "letter_height_px": 44,
+    "reading": "The hook is a thin curling stroke; bowl and curl open."
+   },
+   "casaubon_holy_table": {
+    "form_token": "6",
+    "positions_copy1": [
+     8,
+     19,
+     20,
+     35,
+     48,
+     49
+    ],
+    "count": 6,
+    "reading": "Hooked bowl, the hook a tapering stroke inside an open bowl (6 instances).",
+    "clearest_cells": [
+     {
+      "position": 48,
+      "copy1": "crops/casaubon-w1-holytable-cells/w1ht-pos48-bottom.png",
+      "copy2": "crops/casaubon-w2-holytable-cells/w2ht-pos48-bottom.png"
+     },
+     {
+      "position": 49,
+      "copy1": "crops/casaubon-w1-holytable-cells/w1ht-pos49-bottom.png",
+      "copy2": "crops/casaubon-w2-holytable-cells/w2ht-pos49-bottom.png"
+     }
+    ]
+   },
+   "compare_view": "crops/compare-view/03-Ged.png",
+   "best_witness_for_ink_outline": "Sloane MS 3188 f. 104, Commons original 4303 x 1603 (letter about 142 px tall, hard-edged); for the part f. 104 fills or joins, the course of the strokes from Sloane MS 3189 (see f104_knot_or_blot)",
+   "why": "Largest and sharpest manuscript witness for this letter; Sloane MS 3189 has the same form at about 44 px, soft-edged.",
+   "f104_knot_or_blot": "The curl of the hook is filled on f. 104. Resolved by Sloane MS 3189 (manuscript ink: thin hook, open eye), confirmed by the Holy Table engraving."
+  },
+  {
+   "dee_order": 4,
+   "name": "Gal",
+   "value": "d",
+   "name_as_transcribed": "gal",
+   "name_value_source": "Dee's table of 26 March 1583, Sloane MS 3188 f. 64b, as transcribed by Whitby (1982), vol. 2, pp. 236-238; tied to the f. 104 forms by Whitby's note on f. 64a l. 45 (vol. 1, p. 449)",
+   "sloane3188_f104": {
+    "place": "upper line, 4 from the right",
+    "crop": "crops/sloane3188-f104-commons-original/f104-04-Gal.png",
+    "box_on_original": [
+     2532,
+     620,
+     2731,
+     839
+    ],
+    "letter_height_px": 171,
+    "letter_height_px_in_1920_rendering_used_before": 76,
+    "reading": "Clean. X with curved arms and serifed feet."
+   },
+   "sloane3189": {
+    "place": "first line, 4 from the left",
+    "crop": "crops/sloane3189-commons-original/s3189-04-Gal.png",
+    "box_on_original": [
+     232,
+     259,
+     284,
+     321
+    ],
+    "letter_height_px": 50,
+    "reading": "Same form."
+   },
+   "casaubon_holy_table": {
+    "form_token": "X",
+    "positions_copy1": [
+     18
+    ],
+    "count": 1,
+    "reading": "Regularised as two arcs set back to back (pos. 18 only).",
+    "clearest_cells": [
+     {
+      "position": 18,
+      "copy1": "crops/casaubon-w1-holytable-cells/w1ht-pos18-top.png",
+      "copy2": "crops/casaubon-w2-holytable-cells/w2ht-pos18-top.png"
+     }
+    ]
+   },
+   "compare_view": "crops/compare-view/04-Gal.png",
+   "best_witness_for_ink_outline": "Sloane MS 3188 f. 104, Commons original 4303 x 1603 (letter about 171 px tall, hard-edged)",
+   "why": "Largest and sharpest manuscript witness for this letter; Sloane MS 3189 has the same form at about 50 px, soft-edged.",
+   "f104_knot_or_blot": null
+  },
+  {
+   "dee_order": 5,
+   "name": "Or",
+   "value": "f",
+   "name_as_transcribed": "or",
+   "name_value_source": "Dee's table of 26 March 1583, Sloane MS 3188 f. 64b, as transcribed by Whitby (1982), vol. 2, pp. 236-238; tied to the f. 104 forms by Whitby's note on f. 64a l. 45 (vol. 1, p. 449)",
+   "sloane3188_f104": {
+    "place": "upper line, 5 from the right",
+    "crop": "crops/sloane3188-f104-commons-original/f104-05-Or.png",
+    "box_on_original": [
+     2154,
+     629,
+     2340,
+     837
+    ],
+    "letter_height_px": 160,
+    "letter_height_px_in_1920_rendering_used_before": 71,
+    "reading": "Top bar (hooked at the right) and the oblique stem are clear; the lower half is a blot: the strokes at the foot run together into one mass with a small hole and a spur (the module notes this)."
+   },
+   "sloane3189": {
+    "place": "first line, 5 from the left",
+    "crop": "crops/sloane3189-commons-original/s3189-05-Or.png",
+    "box_on_original": [
+     291,
+     261,
+     338,
+     319
+    ],
+    "letter_height_px": 46,
+    "reading": "Small (about 46 px tall) and soft, but the lower stem shows two short strokes standing off it, separable at 8x enlargement; the module says 3189 \"shows the same knot\" - on the original file the two strokes can be told apart, though only just."
+   },
+   "casaubon_holy_table": {
+    "form_token": "ẋd",
+    "positions_copy1": [
+     16,
+     30
+    ],
+    "count": 2,
+    "reading": "Clean: top bar turned down at its left end, oblique stem, two short bars across the lower stem (pos. 16, 30; both copies).",
+    "clearest_cells": [
+     {
+      "position": 16,
+      "copy1": "crops/casaubon-w1-holytable-cells/w1ht-pos16-top.png",
+      "copy2": "crops/casaubon-w2-holytable-cells/w2ht-pos16-top.png"
+     },
+     {
+      "position": 30,
+      "copy1": "crops/casaubon-w1-holytable-cells/w1ht-pos30-right.png",
+      "copy2": "crops/casaubon-w2-holytable-cells/w2ht-pos30-right.png"
+     }
+    ]
+   },
+   "compare_view": "crops/compare-view/05-Or.png",
+   "best_witness_for_ink_outline": "Sloane MS 3188 f. 104, Commons original 4303 x 1603 (letter about 160 px tall, hard-edged); for the part f. 104 fills or joins, the course of the strokes from Sloane MS 3189 (see f104_knot_or_blot)",
+   "why": "Largest and sharpest manuscript witness for this letter; Sloane MS 3189 has the same form at about 46 px, soft-edged.",
+   "f104_knot_or_blot": "Lower half blotted on f. 104. Structure resolved by Sloane MS 3189 (two short strokes off the lower stem, small) and, clearly, by the Holy Table engraving (two short bars). The outline of the lower half has no clean manuscript witness at a usable size: f. 104 gives its extent and weight, 3189 its parts."
+  },
+  {
+   "dee_order": 6,
+   "name": "Un",
+   "value": "a",
+   "name_as_transcribed": "un",
+   "name_value_source": "Dee's table of 26 March 1583, Sloane MS 3188 f. 64b, as transcribed by Whitby (1982), vol. 2, pp. 236-238; tied to the f. 104 forms by Whitby's note on f. 64a l. 45 (vol. 1, p. 449)",
+   "sloane3188_f104": {
+    "place": "upper line, 6 from the right",
+    "crop": "crops/sloane3188-f104-commons-original/f104-06-Un.png",
+    "box_on_original": [
+     1892,
+     613,
+     2062,
+     850
+    ],
+    "letter_height_px": 189,
+    "letter_height_px_in_1920_rendering_used_before": 84,
+    "reading": "Upper half clear: a fork of two serifed arms and the diagonal of the stem. Lower half a dense knot: the crossing bar, the turn of the stem and the foot merge into one mass (the module notes this)."
+   },
+   "sloane3189": {
+    "place": "first line, 6 from the left",
+    "crop": "crops/sloane3189-commons-original/s3189-06-Un.png",
+    "box_on_original": [
+     346,
+     259,
+     401,
+     319
+    ],
+    "letter_height_px": 48,
+    "reading": "Lower half dark but a serifed crossing bar and the foot can be made out at 8x enlargement; the upper fork is clear."
+   },
+   "casaubon_holy_table": {
+    "form_token": "ẋ",
+    "positions_copy1": [
+     23,
+     34,
+     42,
+     43,
+     57,
+     68,
+     70,
+     72,
+     73,
+     82
+    ],
+    "count": 10,
+    "reading": "Clean zigzag stem with a serifed crossbar near the foot and another at the top (10 instances; pos. 57 and 43 clearest).",
+    "clearest_cells": [
+     {
+      "position": 57,
+      "copy1": "crops/casaubon-w1-holytable-cells/w1ht-pos57-bottom.png",
+      "copy2": "crops/casaubon-w2-holytable-cells/w2ht-pos57-bottom.png"
+     },
+     {
+      "position": 43,
+      "copy1": "crops/casaubon-w1-holytable-cells/w1ht-pos43-bottom.png",
+      "copy2": "crops/casaubon-w2-holytable-cells/w2ht-pos43-bottom.png"
+     }
+    ]
+   },
+   "compare_view": "crops/compare-view/06-Un.png",
+   "best_witness_for_ink_outline": "Sloane MS 3188 f. 104, Commons original 4303 x 1603 (letter about 189 px tall, hard-edged); for the part f. 104 fills or joins, the course of the strokes from Sloane MS 3189 (see f104_knot_or_blot)",
+   "why": "Largest and sharpest manuscript witness for this letter; Sloane MS 3189 has the same form at about 48 px, soft-edged.",
+   "f104_knot_or_blot": "Lower half knotted on f. 104. Structure resolved by Sloane MS 3189 (crossbar and foot separable, small) and clearly by the Holy Table engraving (serifed crossbar near the foot). As with Or, f. 104 gives the extent and weight of the lower half, 3189 and the engraving its parts."
+  },
+  {
+   "dee_order": 7,
+   "name": "Graph",
+   "value": "e",
+   "name_as_transcribed": "graph",
+   "name_value_source": "Dee's table of 26 March 1583, Sloane MS 3188 f. 64b, as transcribed by Whitby (1982), vol. 2, pp. 236-238; tied to the f. 104 forms by Whitby's note on f. 64a l. 45 (vol. 1, p. 449)",
+   "sloane3188_f104": {
+    "place": "upper line, 7 from the right",
+    "crop": "crops/sloane3188-f104-commons-original/f104-07-Graph.png",
+    "box_on_original": [
+     1557,
+     622,
+     1768,
+     832
+    ],
+    "letter_height_px": 162,
+    "letter_height_px_in_1920_rendering_used_before": 72,
+    "reading": "Clean. Top bar and a straight stem ending in a flared foot."
+   },
+   "sloane3189": {
+    "place": "first line, 7 from the left",
+    "crop": "crops/sloane3189-commons-original/s3189-07-Graph.png",
+    "box_on_original": [
+     418,
+     258,
+     470,
+     316
+    ],
+    "letter_height_px": 46,
+    "reading": "Same form."
+   },
+   "casaubon_holy_table": {
+    "form_token": "7",
+    "positions_copy1": [
+     9,
+     12,
+     13,
+     28,
+     37,
+     51,
+     54,
+     55,
+     81,
+     96
+    ],
+    "count": 10,
+    "reading": "Same form, stem straight with flared foot (10 instances; centre pos. 96 is the largest).",
+    "clearest_cells": [
+     {
+      "position": 96,
+      "copy1": "crops/casaubon-w1-holytable-cells/w1ht-pos96-centre-r4c3.png",
+      "copy2": "crops/casaubon-w2-holytable-cells/w2ht-pos96-centre-r4c3.png"
+     },
+     {
+      "position": 12,
+      "copy1": "crops/casaubon-w1-holytable-cells/w1ht-pos12-top.png",
+      "copy2": "crops/casaubon-w2-holytable-cells/w2ht-pos12-top.png"
+     }
+    ]
+   },
+   "compare_view": "crops/compare-view/07-Graph.png",
+   "best_witness_for_ink_outline": "Sloane MS 3188 f. 104, Commons original 4303 x 1603 (letter about 162 px tall, hard-edged)",
+   "why": "Largest and sharpest manuscript witness for this letter; Sloane MS 3189 has the same form at about 46 px, soft-edged.",
+   "f104_knot_or_blot": null
+  },
+  {
+   "dee_order": 8,
+   "name": "Tal",
+   "value": "m",
+   "name_as_transcribed": "Tal",
+   "name_value_source": "Dee's table of 26 March 1583, Sloane MS 3188 f. 64b, as transcribed by Whitby (1982), vol. 2, pp. 236-238; tied to the f. 104 forms by Whitby's note on f. 64a l. 45 (vol. 1, p. 449)",
+   "sloane3188_f104": {
+    "place": "upper line, 8 from the right",
+    "crop": "crops/sloane3188-f104-commons-original/f104-08-Tal.png",
+    "box_on_original": [
+     1255,
+     595,
+     1465,
+     819
+    ],
+    "letter_height_px": 176,
+    "letter_height_px_in_1920_rendering_used_before": 79,
+    "reading": "Clean. C-curve with curled top, a barb pointing right at mid-height and a flared lower end."
+   },
+   "sloane3189": {
+    "place": "first line, 8 from the left",
+    "crop": "crops/sloane3189-commons-original/s3189-08-Tal.png",
+    "box_on_original": [
+     499,
+     255,
+     546,
+     319
+    ],
+    "letter_height_px": 52,
+    "reading": "Same form; the middle shows two small hooks rather than one barb."
+   },
+   "casaubon_holy_table": {
+    "form_token": "εb",
+    "positions_copy1": [
+     26,
+     29,
+     40,
+     41,
+     60,
+     88,
+     92
+    ],
+    "count": 7,
+    "reading": "Epsilon with a long beak from its waist and a curled top (\"beaked epsilon\", 7 instances; centre pos. 88, 92 largest).",
+    "clearest_cells": [
+     {
+      "position": 92,
+      "copy1": "crops/casaubon-w1-holytable-cells/w1ht-pos92-centre-r3c2.png",
+      "copy2": "crops/casaubon-w2-holytable-cells/w2ht-pos92-centre-r3c2.png"
+     },
+     {
+      "position": 26,
+      "copy1": "crops/casaubon-w1-holytable-cells/w1ht-pos26-right.png",
+      "copy2": "crops/casaubon-w2-holytable-cells/w2ht-pos26-right.png"
+     }
+    ]
+   },
+   "compare_view": "crops/compare-view/08-Tal.png",
+   "best_witness_for_ink_outline": "Sloane MS 3188 f. 104, Commons original 4303 x 1603 (letter about 176 px tall, hard-edged)",
+   "why": "Largest and sharpest manuscript witness for this letter; Sloane MS 3189 has the same form at about 52 px, soft-edged.",
+   "f104_knot_or_blot": null
+  },
+  {
+   "dee_order": 9,
+   "name": "Gon",
+   "value": "i",
+   "name_as_transcribed": "Gon",
+   "name_value_source": "Dee's table of 26 March 1583, Sloane MS 3188 f. 64b, as transcribed by Whitby (1982), vol. 2, pp. 236-238; tied to the f. 104 forms by Whitby's note on f. 64a l. 45 (vol. 1, p. 449)",
+   "sloane3188_f104": {
+    "place": "upper line, 9 from the right",
+    "crop": "crops/sloane3188-f104-commons-original/f104-09-Gon.png",
+    "box_on_original": [
+     950,
+     611,
+     1210,
+     839
+    ],
+    "letter_height_px": 180,
+    "letter_height_px_in_1920_rendering_used_before": 80,
+    "reading": "Clean. Top bar, upright stem, foot turned to the right."
+   },
+   "sloane3189": {
+    "place": "first line, 9 from the left",
+    "crop": "crops/sloane3189-commons-original/s3189-09-Gon.png",
+    "box_on_original": [
+     554,
+     255,
+     625,
+     314
+    ],
+    "letter_height_px": 47,
+    "reading": "Same form; a dot in the gap to the right of its top bar is probably one of the points written between the forms in 3189."
+   },
+   "casaubon_holy_table": {
+    "form_token": "Z",
+    "positions_copy1": [
+     32,
+     67,
+     84,
+     86
+    ],
+    "count": 4,
+    "reading": "Same form (pos. 32, 67, 84, 86).",
+    "clearest_cells": [
+     {
+      "position": 86,
+      "copy1": "crops/casaubon-w1-holytable-cells/w1ht-pos86-centre-r1c2.png",
+      "copy2": "crops/casaubon-w2-holytable-cells/w2ht-pos86-centre-r1c2.png"
+     },
+     {
+      "position": 32,
+      "copy1": "crops/casaubon-w1-holytable-cells/w1ht-pos32-right.png",
+      "copy2": "crops/casaubon-w2-holytable-cells/w2ht-pos32-right.png"
+     }
+    ]
+   },
+   "compare_view": "crops/compare-view/09-Gon.png",
+   "best_witness_for_ink_outline": "Sloane MS 3188 f. 104, Commons original 4303 x 1603 (letter about 180 px tall, hard-edged)",
+   "why": "Largest and sharpest manuscript witness for this letter; Sloane MS 3189 has the same form at about 47 px, soft-edged.",
+   "f104_knot_or_blot": null
+  },
+  {
+   "dee_order": 10,
+   "name": "Na",
+   "value": "h",
+   "name_as_transcribed": "na",
+   "name_value_source": "Dee's table of 26 March 1583, Sloane MS 3188 f. 64b, as transcribed by Whitby (1982), vol. 2, pp. 236-238; tied to the f. 104 forms by Whitby's note on f. 64a l. 45 (vol. 1, p. 449)",
+   "sloane3188_f104": {
+    "place": "upper line, 10 from the right",
+    "crop": "crops/sloane3188-f104-commons-original/f104-10-Na.png",
+    "box_on_original": [
+     460,
+     631,
+     788,
+     841
+    ],
+    "letter_height_px": 162,
+    "letter_height_px_in_1920_rendering_used_before": 72,
+    "reading": "Clean; both counters open, with the inner strokes visible."
+   },
+   "sloane3189": {
+    "place": "first line, 10 from the left",
+    "crop": "crops/sloane3189-commons-original/s3189-10-Na.png",
+    "box_on_original": [
+     636,
+     256,
+     720,
+     316
+    ],
+    "letter_height_px": 48,
+    "reading": "Same form; both counters open."
+   },
+   "casaubon_holy_table": {
+    "form_token": null,
+    "positions_copy1": [],
+    "count": 0,
+    "reading": "Not on the Holy Table."
+   },
+   "compare_view": "crops/compare-view/10-Na.png",
+   "best_witness_for_ink_outline": "Sloane MS 3188 f. 104, Commons original 4303 x 1603 (letter about 162 px tall, hard-edged)",
+   "why": "Largest and sharpest manuscript witness for this letter; Sloane MS 3189 has the same form at about 48 px, soft-edged.",
+   "f104_knot_or_blot": null
+  },
+  {
+   "dee_order": 11,
+   "name": "Ur",
+   "value": "l",
+   "name_as_transcribed": "vr",
+   "name_value_source": "Dee's table of 26 March 1583, Sloane MS 3188 f. 64b, as transcribed by Whitby (1982), vol. 2, pp. 236-238; tied to the f. 104 forms by Whitby's note on f. 64a l. 45 (vol. 1, p. 449)",
+   "sloane3188_f104": {
+    "place": "upper line, 11 from the right",
+    "crop": "crops/sloane3188-f104-commons-original/f104-11-Ur.png",
+    "box_on_original": [
+     160,
+     604,
+     408,
+     864
+    ],
+    "letter_height_px": 212,
+    "letter_height_px_in_1920_rendering_used_before": 95,
+    "reading": "Clean. C-curve opening right whose back is crossed by a stroke making a small loop; curled ends."
+   },
+   "sloane3189": {
+    "place": "first line, 11 from the left",
+    "crop": "crops/sloane3189-commons-original/s3189-11-Ur.png",
+    "box_on_original": [
+     733,
+     256,
+     789,
+     312
+    ],
+    "letter_height_px": 44,
+    "reading": "The crossing at the back fills into a dark triangle with a tiny counter."
+   },
+   "casaubon_holy_table": {
+    "form_token": "Є",
+    "positions_copy1": [
+     7,
+     27,
+     39,
+     47,
+     59,
+     61,
+     62,
+     64,
+     77,
+     89,
+     91,
+     93
+    ],
+    "count": 12,
+    "reading": "Regularised as a C with a two-pronged bar across its back (12 instances; centre pos. 89, 91, 93 largest).",
+    "clearest_cells": [
+     {
+      "position": 93,
+      "copy1": "crops/casaubon-w1-holytable-cells/w1ht-pos93-centre-r3c3.png",
+      "copy2": "crops/casaubon-w2-holytable-cells/w2ht-pos93-centre-r3c3.png"
+     },
+     {
+      "position": 89,
+      "copy1": "crops/casaubon-w1-holytable-cells/w1ht-pos89-centre-r2c2.png",
+      "copy2": "crops/casaubon-w2-holytable-cells/w2ht-pos89-centre-r2c2.png"
+     }
+    ]
+   },
+   "compare_view": "crops/compare-view/11-Ur.png",
+   "best_witness_for_ink_outline": "Sloane MS 3188 f. 104, Commons original 4303 x 1603 (letter about 212 px tall, hard-edged)",
+   "why": "Largest and sharpest manuscript witness for this letter; Sloane MS 3189 has the same form at about 44 px, soft-edged.",
+   "f104_knot_or_blot": null
+  },
+  {
+   "dee_order": 12,
+   "name": "Mals",
+   "value": "p",
+   "name_as_transcribed": "mals",
+   "name_value_source": "Dee's table of 26 March 1583, Sloane MS 3188 f. 64b, as transcribed by Whitby (1982), vol. 2, pp. 236-238; tied to the f. 104 forms by Whitby's note on f. 64a l. 45 (vol. 1, p. 449)",
+   "sloane3188_f104": {
+    "place": "lower line, 1 from the right",
+    "crop": "crops/sloane3188-f104-commons-original/f104-12-Mals.png",
+    "box_on_original": [
+     3313,
+     829,
+     3648,
+     1056
+    ],
+    "letter_height_px": 179,
+    "letter_height_px_in_1920_rendering_used_before": 80,
+    "reading": "Clean. Arch on two out-turned feet."
+   },
+   "sloane3189": {
+    "place": "first line, 12 from the left",
+    "crop": "crops/sloane3189-commons-original/s3189-12-Mals.png",
+    "box_on_original": [
+     807,
+     254,
+     890,
+     310
+    ],
+    "letter_height_px": 44,
+    "reading": "Same form."
+   },
+   "casaubon_holy_table": {
+    "form_token": "Ω",
+    "positions_copy1": [
+     45,
+     46,
+     79
+    ],
+    "count": 3,
+    "reading": "Same form (pos. 45, 46, 79).",
+    "clearest_cells": [
+     {
+      "position": 46,
+      "copy1": "crops/casaubon-w1-holytable-cells/w1ht-pos46-bottom.png",
+      "copy2": "crops/casaubon-w2-holytable-cells/w2ht-pos46-bottom.png"
+     },
+     {
+      "position": 45,
+      "copy1": "crops/casaubon-w1-holytable-cells/w1ht-pos45-bottom.png",
+      "copy2": "crops/casaubon-w2-holytable-cells/w2ht-pos45-bottom.png"
+     }
+    ]
+   },
+   "compare_view": "crops/compare-view/12-Mals.png",
+   "best_witness_for_ink_outline": "Sloane MS 3188 f. 104, Commons original 4303 x 1603 (letter about 179 px tall, hard-edged)",
+   "why": "Largest and sharpest manuscript witness for this letter; Sloane MS 3189 has the same form at about 44 px, soft-edged.",
+   "f104_knot_or_blot": null
+  },
+  {
+   "dee_order": 13,
+   "name": "Ger",
+   "value": "q",
+   "name_as_transcribed": "ger",
+   "name_value_source": "Dee's table of 26 March 1583, Sloane MS 3188 f. 64b, as transcribed by Whitby (1982), vol. 2, pp. 236-238; tied to the f. 104 forms by Whitby's note on f. 64a l. 45 (vol. 1, p. 449)",
+   "sloane3188_f104": {
+    "place": "lower line, 2 from the right",
+    "crop": "crops/sloane3188-f104-commons-original/f104-13-Ger.png",
+    "box_on_original": [
+     2803,
+     844,
+     3106,
+     1048
+    ],
+    "letter_height_px": 156,
+    "letter_height_px_in_1920_rendering_used_before": 70,
+    "reading": "Clean. Two uprights on a base, the top stroke of the left upright extended left."
+   },
+   "sloane3189": {
+    "place": "first line, 13 from the left",
+    "crop": "crops/sloane3189-commons-original/s3189-13-Ger.png",
+    "box_on_original": [
+     897,
+     252,
+     976,
+     310
+    ],
+    "letter_height_px": 46,
+    "reading": "Same form."
+   },
+   "casaubon_holy_table": {
+    "form_token": null,
+    "positions_copy1": [],
+    "count": 0,
+    "reading": "Not on the Holy Table."
+   },
+   "compare_view": "crops/compare-view/13-Ger.png",
+   "best_witness_for_ink_outline": "Sloane MS 3188 f. 104, Commons original 4303 x 1603 (letter about 156 px tall, hard-edged)",
+   "why": "Largest and sharpest manuscript witness for this letter; Sloane MS 3189 has the same form at about 46 px, soft-edged.",
+   "f104_knot_or_blot": null
+  },
+  {
+   "dee_order": 14,
+   "name": "Drux",
+   "value": "n",
+   "name_as_transcribed": "drux",
+   "name_value_source": "Dee's table of 26 March 1583, Sloane MS 3188 f. 64b, as transcribed by Whitby (1982), vol. 2, pp. 236-238; tied to the f. 104 forms by Whitby's note on f. 64a l. 45 (vol. 1, p. 449)",
+   "sloane3188_f104": {
+    "place": "lower line, 3 from the right",
+    "crop": "crops/sloane3188-f104-commons-original/f104-14-Drux.png",
+    "box_on_original": [
+     2465,
+     829,
+     2673,
+     1063
+    ],
+    "letter_height_px": 186,
+    "letter_height_px_in_1920_rendering_used_before": 83,
+    "reading": "Clean. 3-like form opening left, with an inward barb at the waist and a tail rising to the upper right."
+   },
+   "sloane3189": {
+    "place": "first line, 14 from the left",
+    "crop": "crops/sloane3189-commons-original/s3189-14-Drux.png",
+    "box_on_original": [
+     992,
+     248,
+     1044,
+     310
+    ],
+    "letter_height_px": 50,
+    "reading": "Same form."
+   },
+   "casaubon_holy_table": {
+    "form_token": "Э",
+    "positions_copy1": [
+     4,
+     10,
+     21,
+     22,
+     58,
+     63,
+     65,
+     66,
+     74
+    ],
+    "count": 9,
+    "reading": "Regularised as a reversed C with a barb (9 instances).",
+    "clearest_cells": [
+     {
+      "position": 58,
+      "copy1": "crops/casaubon-w1-holytable-cells/w1ht-pos58-bottom.png",
+      "copy2": "crops/casaubon-w2-holytable-cells/w2ht-pos58-bottom.png"
+     },
+     {
+      "position": 63,
+      "copy1": "crops/casaubon-w1-holytable-cells/w1ht-pos63-bottom.png",
+      "copy2": "crops/casaubon-w2-holytable-cells/w2ht-pos63-bottom.png"
+     }
+    ]
+   },
+   "compare_view": "crops/compare-view/14-Drux.png",
+   "best_witness_for_ink_outline": "Sloane MS 3188 f. 104, Commons original 4303 x 1603 (letter about 186 px tall, hard-edged)",
+   "why": "Largest and sharpest manuscript witness for this letter; Sloane MS 3189 has the same form at about 50 px, soft-edged.",
+   "f104_knot_or_blot": null
+  },
+  {
+   "dee_order": 15,
+   "name": "Pal",
+   "value": "x",
+   "name_as_transcribed": "Pal",
+   "name_value_source": "Dee's table of 26 March 1583, Sloane MS 3188 f. 64b, as transcribed by Whitby (1982), vol. 2, pp. 236-238; tied to the f. 104 forms by Whitby's note on f. 64a l. 45 (vol. 1, p. 449)",
+   "sloane3188_f104": {
+    "place": "lower line, 4 from the right",
+    "crop": "crops/sloane3188-f104-commons-original/f104-15-Pal.png",
+    "box_on_original": [
+     2092,
+     837,
+     2287,
+     1043
+    ],
+    "letter_height_px": 158,
+    "letter_height_px_in_1920_rendering_used_before": 70,
+    "reading": "Clean, but the dot under the bar touches the stem by a hair-thin neck (the module notes this)."
+   },
+   "sloane3189": {
+    "place": "second line, 1 from the left",
+    "crop": "crops/sloane3189-commons-original/s3189-15-Pal.png",
+    "box_on_original": [
+     245,
+     330,
+     303,
+     391
+    ],
+    "letter_height_px": 49,
+    "reading": "The dot stands free of the stem."
+   },
+   "casaubon_holy_table": {
+    "form_token": null,
+    "positions_copy1": [],
+    "count": 0,
+    "reading": "Not on the Holy Table."
+   },
+   "compare_view": "crops/compare-view/15-Pal.png",
+   "best_witness_for_ink_outline": "Sloane MS 3188 f. 104, Commons original 4303 x 1603 (letter about 158 px tall, hard-edged); for the part f. 104 fills or joins, the course of the strokes from Sloane MS 3189 (see f104_knot_or_blot)",
+   "why": "Largest and sharpest manuscript witness for this letter; Sloane MS 3189 has the same form at about 49 px, soft-edged.",
+   "f104_knot_or_blot": "Dot joined to the stem by a neck on f. 104; Sloane MS 3189 shows it free."
+  },
+  {
+   "dee_order": 16,
+   "name": "Med",
+   "value": "o",
+   "name_as_transcribed": "med",
+   "name_value_source": "Dee's table of 26 March 1583, Sloane MS 3188 f. 64b, as transcribed by Whitby (1982), vol. 2, pp. 236-238; tied to the f. 104 forms by Whitby's note on f. 64a l. 45 (vol. 1, p. 449)",
+   "sloane3188_f104": {
+    "place": "lower line, 5 from the right",
+    "crop": "crops/sloane3188-f104-commons-original/f104-16-Med.png",
+    "box_on_original": [
+     1759,
+     844,
+     1962,
+     1036
+    ],
+    "letter_height_px": 144,
+    "letter_height_px_in_1920_rendering_used_before": 64,
+    "reading": "Clean. Thick oblique stem and a sweeping base stroke, with a white sliver between them."
+   },
+   "sloane3189": {
+    "place": "second line, 2 from the left",
+    "crop": "crops/sloane3189-commons-original/s3189-16-Med.png",
+    "box_on_original": [
+     317,
+     330,
+     366,
+     387
+    ],
+    "letter_height_px": 51,
+    "reading": "Stem and base nearly merge."
+   },
+   "casaubon_holy_table": {
+    "form_token": "⅃",
+    "positions_copy1": [
+     1,
+     3,
+     11,
+     14,
+     15,
+     17,
+     33,
+     36,
+     52,
+     53,
+     56,
+     69,
+     83,
+     85,
+     94,
+     95
+    ],
+    "count": 16,
+    "reading": "Same form (16 instances; centre pos. 85, 94, 95 largest).",
+    "clearest_cells": [
+     {
+      "position": 94,
+      "copy1": "crops/casaubon-w1-holytable-cells/w1ht-pos94-centre-r4c1.png",
+      "copy2": "crops/casaubon-w2-holytable-cells/w2ht-pos94-centre-r4c1.png"
+     },
+     {
+      "position": 85,
+      "copy1": "crops/casaubon-w1-holytable-cells/w1ht-pos85-centre-r1c1.png",
+      "copy2": "crops/casaubon-w2-holytable-cells/w2ht-pos85-centre-r1c1.png"
+     }
+    ]
+   },
+   "compare_view": "crops/compare-view/16-Med.png",
+   "best_witness_for_ink_outline": "Sloane MS 3188 f. 104, Commons original 4303 x 1603 (letter about 144 px tall, hard-edged)",
+   "why": "Largest and sharpest manuscript witness for this letter; Sloane MS 3189 has the same form at about 51 px, soft-edged.",
+   "f104_knot_or_blot": null
+  },
+  {
+   "dee_order": 17,
+   "name": "Don",
+   "value": "r",
+   "name_as_transcribed": "don",
+   "name_value_source": "Dee's table of 26 March 1583, Sloane MS 3188 f. 64b, as transcribed by Whitby (1982), vol. 2, pp. 236-238; tied to the f. 104 forms by Whitby's note on f. 64a l. 45 (vol. 1, p. 449)",
+   "sloane3188_f104": {
+    "place": "lower line, 6 from the right",
+    "crop": "crops/sloane3188-f104-commons-original/f104-17-Don.png",
+    "box_on_original": [
+     1477,
+     849,
+     1632,
+     1043
+    ],
+    "letter_height_px": 146,
+    "letter_height_px_in_1920_rendering_used_before": 65,
+    "reading": "Clean. Small epsilon with an S-curl at the top and a heavy lower bowl."
+   },
+   "sloane3189": {
+    "place": "second line, 3 from the left",
+    "crop": "crops/sloane3189-commons-original/s3189-17-Don.png",
+    "box_on_original": [
+     382,
+     328,
+     424,
+     386
+    ],
+    "letter_height_px": 46,
+    "reading": "Same form."
+   },
+   "casaubon_holy_table": {
+    "form_token": "ε",
+    "positions_copy1": [
+     24,
+     78
+    ],
+    "count": 2,
+    "reading": "Plain epsilon (pos. 24, 78).",
+    "clearest_cells": [
+     {
+      "position": 24,
+      "copy1": "crops/casaubon-w1-holytable-cells/w1ht-pos24-right.png",
+      "copy2": "crops/casaubon-w2-holytable-cells/w2ht-pos24-right.png"
+     },
+     {
+      "position": 78,
+      "copy1": "crops/casaubon-w1-holytable-cells/w1ht-pos78-left.png",
+      "copy2": null
+     }
+    ]
+   },
+   "compare_view": "crops/compare-view/17-Don.png",
+   "best_witness_for_ink_outline": "Sloane MS 3188 f. 104, Commons original 4303 x 1603 (letter about 146 px tall, hard-edged)",
+   "why": "Largest and sharpest manuscript witness for this letter; Sloane MS 3189 has the same form at about 46 px, soft-edged.",
+   "f104_knot_or_blot": null
+  },
+  {
+   "dee_order": 18,
+   "name": "Ceph",
+   "value": "z",
+   "name_as_transcribed": "Ceph",
+   "name_value_source": "Dee's table of 26 March 1583, Sloane MS 3188 f. 64b, as transcribed by Whitby (1982), vol. 2, pp. 236-238; tied to the f. 104 forms by Whitby's note on f. 64a l. 45 (vol. 1, p. 449)",
+   "sloane3188_f104": {
+    "place": "lower line, 7 from the right",
+    "crop": "crops/sloane3188-f104-commons-original/f104-18-Ceph.png",
+    "box_on_original": [
+     1093,
+     844,
+     1299,
+     1043
+    ],
+    "letter_height_px": 151,
+    "letter_height_px_in_1920_rendering_used_before": 67,
+    "reading": "Clean. P with a crossbar through the stem; bowl counter open."
+   },
+   "sloane3189": {
+    "place": "second line, 4 from the left",
+    "crop": "crops/sloane3189-commons-original/s3189-18-Ceph.png",
+    "box_on_original": [
+     437,
+     326,
+     484,
+     388
+    ],
+    "letter_height_px": 50,
+    "reading": "Same form."
+   },
+   "casaubon_holy_table": {
+    "form_token": "P",
+    "positions_copy1": [
+     50
+    ],
+    "count": 1,
+    "reading": "Same form (pos. 50 only).",
+    "clearest_cells": [
+     {
+      "position": 50,
+      "copy1": "crops/casaubon-w1-holytable-cells/w1ht-pos50-bottom.png",
+      "copy2": "crops/casaubon-w2-holytable-cells/w2ht-pos50-bottom.png"
+     }
+    ]
+   },
+   "compare_view": "crops/compare-view/18-Ceph.png",
+   "best_witness_for_ink_outline": "Sloane MS 3188 f. 104, Commons original 4303 x 1603 (letter about 151 px tall, hard-edged)",
+   "why": "Largest and sharpest manuscript witness for this letter; Sloane MS 3189 has the same form at about 50 px, soft-edged.",
+   "f104_knot_or_blot": null
+  },
+  {
+   "dee_order": 19,
+   "name": "Van",
+   "value": "u",
+   "name_as_transcribed": "van",
+   "name_value_source": "Dee's table of 26 March 1583, Sloane MS 3188 f. 64b, as transcribed by Whitby (1982), vol. 2, pp. 236-238; tied to the f. 104 forms by Whitby's note on f. 64a l. 45 (vol. 1, p. 449)",
+   "sloane3188_f104": {
+    "place": "lower line, 8 from the right",
+    "crop": "crops/sloane3188-f104-commons-original/f104-19-Van.png",
+    "box_on_original": [
+     775,
+     862,
+     1014,
+     1063
+    ],
+    "letter_height_px": 153,
+    "letter_height_px_in_1920_rendering_used_before": 68,
+    "reading": "Clean. Hooked arch on two feet; the counter opens at the base between the legs."
+   },
+   "sloane3189": {
+    "place": "second line, 5 from the left",
+    "crop": "crops/sloane3189-commons-original/s3189-19-Van.png",
+    "box_on_original": [
+     489,
+     329,
+     542,
+     388
+    ],
+    "letter_height_px": 47,
+    "reading": "Same form; the counter is a small closed grey space."
+   },
+   "casaubon_holy_table": {
+    "form_token": "a",
+    "positions_copy1": [
+     38,
+     71,
+     90
+    ],
+    "count": 3,
+    "reading": "Same form, the inner stroke drawn as a curve (pos. 38, 71, 90).",
+    "clearest_cells": [
+     {
+      "position": 90,
+      "copy1": "crops/casaubon-w1-holytable-cells/w1ht-pos90-centre-r2c3.png",
+      "copy2": "crops/casaubon-w2-holytable-cells/w2ht-pos90-centre-r2c3.png"
+     },
+     {
+      "position": 38,
+      "copy1": "crops/casaubon-w1-holytable-cells/w1ht-pos38-right.png",
+      "copy2": "crops/casaubon-w2-holytable-cells/w2ht-pos38-right.png"
+     }
+    ]
+   },
+   "compare_view": "crops/compare-view/19-Van.png",
+   "best_witness_for_ink_outline": "Sloane MS 3188 f. 104, Commons original 4303 x 1603 (letter about 153 px tall, hard-edged)",
+   "why": "Largest and sharpest manuscript witness for this letter; Sloane MS 3189 has the same form at about 47 px, soft-edged.",
+   "f104_knot_or_blot": null
+  },
+  {
+   "dee_order": 20,
+   "name": "Fam",
+   "value": "s",
+   "name_as_transcribed": "fam",
+   "name_value_source": "Dee's table of 26 March 1583, Sloane MS 3188 f. 64b, as transcribed by Whitby (1982), vol. 2, pp. 236-238; tied to the f. 104 forms by Whitby's note on f. 64a l. 45 (vol. 1, p. 449)",
+   "sloane3188_f104": {
+    "place": "lower line, 9 from the right",
+    "crop": "crops/sloane3188-f104-commons-original/f104-20-Fam.png",
+    "box_on_original": [
+     555,
+     851,
+     741,
+     1085
+    ],
+    "letter_height_px": 186,
+    "letter_height_px_in_1920_rendering_used_before": 83,
+    "reading": "Clean. Top bar and a stem that curves down to a pointed hook."
+   },
+   "sloane3189": {
+    "place": "second line, 6 from the left",
+    "crop": "crops/sloane3189-commons-original/s3189-20-Fam.png",
+    "box_on_original": [
+     564,
+     326,
+     620,
+     384
+    ],
+    "letter_height_px": 46,
+    "reading": "Same form."
+   },
+   "casaubon_holy_table": {
+    "form_token": "7h",
+    "positions_copy1": [
+     2,
+     5,
+     6,
+     25,
+     44,
+     80
+    ],
+    "count": 6,
+    "reading": "Same form (\"7h\", 6 instances).",
+    "clearest_cells": [
+     {
+      "position": 44,
+      "copy1": "crops/casaubon-w1-holytable-cells/w1ht-pos44-bottom.png",
+      "copy2": "crops/casaubon-w2-holytable-cells/w2ht-pos44-bottom.png"
+     },
+     {
+      "position": 25,
+      "copy1": "crops/casaubon-w1-holytable-cells/w1ht-pos25-right.png",
+      "copy2": "crops/casaubon-w2-holytable-cells/w2ht-pos25-right.png"
+     }
+    ]
+   },
+   "compare_view": "crops/compare-view/20-Fam.png",
+   "best_witness_for_ink_outline": "Sloane MS 3188 f. 104, Commons original 4303 x 1603 (letter about 186 px tall, hard-edged)",
+   "why": "Largest and sharpest manuscript witness for this letter; Sloane MS 3189 has the same form at about 46 px, soft-edged.",
+   "f104_knot_or_blot": null
+  },
+  {
+   "dee_order": 21,
+   "name": "Gisg",
+   "value": "t",
+   "name_as_transcribed": "Gisg",
+   "name_value_source": "Dee's table of 26 March 1583, Sloane MS 3188 f. 64b, as transcribed by Whitby (1982), vol. 2, pp. 236-238; tied to the f. 104 forms by Whitby's note on f. 64a l. 45 (vol. 1, p. 449)",
+   "sloane3188_f104": {
+    "place": "lower line, 10 from the right",
+    "crop": "crops/sloane3188-f104-commons-original/f104-21-Gisg.png",
+    "box_on_original": [
+     231,
+     846,
+     459,
+     1056
+    ],
+    "letter_height_px": 162,
+    "letter_height_px_in_1920_rendering_used_before": 72,
+    "reading": "Clean. A single curved stroke, heavy at the lower left."
+   },
+   "sloane3189": {
+    "place": "second line, 7 from the left",
+    "crop": "crops/sloane3189-commons-original/s3189-21-Gisg.png",
+    "box_on_original": [
+     628,
+     327,
+     672,
+     379
+    ],
+    "letter_height_px": 40,
+    "reading": "Same form."
+   },
+   "casaubon_holy_table": {
+    "form_token": "(",
+    "positions_copy1": [
+     31,
+     87
+    ],
+    "count": 2,
+    "reading": "Same form (pos. 31, 87).",
+    "clearest_cells": [
+     {
+      "position": 87,
+      "copy1": "crops/casaubon-w1-holytable-cells/w1ht-pos87-centre-r1c3.png",
+      "copy2": "crops/casaubon-w2-holytable-cells/w2ht-pos87-centre-r1c3.png"
+     },
+     {
+      "position": 31,
+      "copy1": "crops/casaubon-w1-holytable-cells/w1ht-pos31-right.png",
+      "copy2": "crops/casaubon-w2-holytable-cells/w2ht-pos31-right.png"
+     }
+    ]
+   },
+   "compare_view": "crops/compare-view/21-Gisg.png",
+   "best_witness_for_ink_outline": "Sloane MS 3188 f. 104, Commons original 4303 x 1603 (letter about 162 px tall, hard-edged)",
+   "why": "Largest and sharpest manuscript witness for this letter; Sloane MS 3189 has the same form at about 40 px, soft-edged.",
+   "f104_knot_or_blot": null
+  }
+ ],
+ "holy_table_mapping": {
+  "note": "Which of the 21 forms each Holy Table shorthand token is, judged by shape against the f. 104 forms (positions from the checked shorthand in plates/enochian/manifest.json, all re-cut here from the IIIF PNG). The plate prints no values; this is a form match, not a reading.",
+  "tokens": {
+   "V": "Pa",
+   "6": "Ged",
+   "X": "Gal",
+   "ẋd": "Or",
+   "ẋ": "Un",
+   "7": "Graph",
+   "εb": "Tal",
+   "Z": "Gon",
+   "Є": "Ur",
+   "Ω": "Mals",
+   "Э": "Drux",
+   "⅃": "Med",
+   "ε": "Don",
+   "P": "Ceph",
+   "a": "Van",
+   "7h": "Fam",
+   "(": "Gisg"
+  },
+  "absent": [
+   "Veh",
+   "Na",
+   "Ger",
+   "Pal"
+  ],
+  "counts": {
+   "Pa": 2,
+   "Ged": 6,
+   "Gal": 1,
+   "Or": 2,
+   "Un": 10,
+   "Graph": 10,
+   "Tal": 7,
+   "Gon": 4,
+   "Ur": 12,
+   "Mals": 3,
+   "Drux": 9,
+   "Med": 16,
+   "Don": 2,
+   "Ceph": 1,
+   "Van": 3,
+   "Fam": 6,
+   "Gisg": 2
+  }
+ },
+ "identity_cross_check": {
+  "whitby": {
+   "citation": "Christopher Lionel Whitby, 'John Dee's actions with spirits: 22 December 1581 to 23 May 1583', 2 vols, PhD thesis, University of Birmingham (repository date 1982; the title pages say 'Submitted ... October 1981').",
+   "fetched": [
+    "https://etheses.bham.ac.uk/id/eprint/3149/",
+    "https://etheses.bham.ac.uk/id/eprint/3149/1/Whitby82PhD1.pdf",
+    "https://etheses.bham.ac.uk/id/eprint/3149/2/Whitby82PhD2.pdf"
+   ],
+   "rights_as_stated": "PDF p. 2: 'This unpublished thesis/dissertation is copyright of the author and/or third parties ... Further distribution or reproduction in any format is prohibited without the permission of the copyright holder.' Used here for reading only; its hand-drawn letter forms are a modern copy and are not to be traced or reproduced.",
+   "read": [
+    "Vol. 2, p. 235 [64a]: the angel shows characters 'enclosed in no lines: but standing by them selues, and points betwene them', Dee notes them in the line (l. 45), and the angel counts them 'being 21: and begynning from the right hand, toward the left' (margin: '21 Characters').",
+    "Vol. 2, pp. 236-237 [64b]: each name as the angel spoke it, with Dee's marginal column of form, name and Latin letter (Pa b ... Gisg t, as listed in summary.new_identity_evidence); Dee notes sounds, e.g. 'Ceph, sownded like Keph', 'Pal the p being sownded remissly'.",
+    "Vol. 2, p. 238 [64b]: the 21 forms written right to left in three groups of seven over their Latin letters 't s u z r o x | n q p l h i m | e a f d g c b', and, below, one further form with 'y' under it; Dee's marginal note (marked with his delta) 'Thus I deciphered them after a day or two or three'.",
+    "Vol. 1, p. 449, note to [64a] l. 45: 'These letters are from right to left those transliterated at 64b, 2-22. The forms are more clearly defined in a later Action (see 104a, 30-31).'",
+    "Vol. 1, p. 145: 'The Enochian alphabet consists of twenty-one characters, the addition of a dot to a previous character making an alphabet corresponding to twenty-two letters as in Hebrew (see fol. 64b).'",
+    "Vol. 2, pp. 390-391 [104a]: 'Maij 6 ... the perfect forms of the holy letters receyuing ... When E K could not aptly imitate the form of the Characters, or letters, as they were shewed: that then they appered drawn on his paper with a light yelow cullor, which he drew the blak vppon ... after this manner, and iust of this quantitie and proportion.' followed by the two lines of letters (lines 30-31), with the small form above the second from the right; p. 391 marks f. 104b as beginning with the entry for 8 May."
+   ],
+   "open_points": [
+    "Whitby's hand copy of the extra form over 'y' (vol. 2, p. 238) looks like his copy of the t-form (Gisg) with a dot, not like Gon. The module (following an enthusiasts' site) says the dotted letter is Gon. This rests on a modern hand copy and must be checked on the manuscript (f. 64b), which could not be reached.",
+    "Whitby's copies of the 26 March forms differ from the 6 May forms for some letters (e.g. Veh is drawn K-like, Tal 7-like, Van x-like). The K-like C in the heading of Casaubon's Specimen may reflect that earlier form; not checked on the manuscript.",
+    "f. 64b in the manuscript itself (Dee's ink of the first table) would be a third ink witness for every letter; no image of it was obtained."
+   ]
+  },
+  "casaubon_specimen": {
+   "note": "Heading of 'A Specimen of the Tables or Book of ENOCH' (both copies agree glyph for glyph). Reading right to left against 'Pagesgem' and 'Bacap', the forms for P (Mals), g (Ged), m (Tal, with three dots) and B (Pa) are the f. 104 forms, as the module says. Two further observations, unresolved: the A of 'Pagesgem' is the Holy Table's Or-form (oblique stem, hooked top, bars at the foot) with two dots, not Un; the C of 'Bacap' is K-like, as Whitby draws Dee's first form of Veh.",
+   "crops": [
+    "crops/casaubon-w1-specimen/",
+    "crops/casaubon-w2-specimen/",
+    "crops/archive-orig-jp2/w1-orig0081-specimen-*.png"
+   ]
+  }
+ },
+ "not_obtained": [
+  {
+   "what": "British Library images of Sloane MS 3188 (ff. 64b, 103v-104r) and Sloane MS 3189",
+   "tried": [
+    "https://searcharchives.bl.uk/catalog/040-002115572 and 040-002115573 (fetched: \"digital images currently unavailable\"; Digitised Content link http://access.bl.uk/item/viewer/ark:/81055/vdc_100152159429.0x000001 and ...vdc_100163611312.0x000001)",
+    "access.bl.uk: proxy CONNECT 502; WebFetch: getaddrinfo ENOTFOUND",
+    "api.bl.uk: proxy CONNECT 502",
+    "iiif.bl.uk/uv/ answers (an empty Universal Viewer page) but no manifest address for these items was found",
+    "BL Medieval manuscripts blog post of September 2020 (Heritage Made Digital: Tudor and Stuart manuscripts) now 404 at blogs-archive.bl.uk"
+   ]
+  },
+  {
+   "what": "upload.wikimedia.org (originals and thumbnails)",
+   "tried": [
+    "HTTP 429 \"Your request does not comply with our robot policy\" / \"Too many requests\", retry-after 10-600 s"
+   ],
+   "workaround": "commons.wikimedia.org/w/img_auth.php and /w/thumb.php served the same files; SHA-1 verified"
+  },
+  {
+   "what": "Flickr photo \"Manuscript Sloane 3188 Dr. John Dee's 'Spiritual Diaries'...\" (https://www.flickr.com/photos/52853739@N02/4874657347, Danny Corso, 2010)",
+   "status": "Not downloaded: licence stated \"All rights reserved\"; folio not stated."
+  },
+  {
+   "what": "LiveJournal post \"Misc Dee Scans\" (https://un-pc-occultist.livejournal.com/22996.html)",
+   "status": "Describes 13 scans from BL microfilm of Sloane MSS 3188/3189 with no folios or rights statement; its zip host chrysippvs.radiantdawn.com does not resolve."
+  },
+  {
+   "what": "themagickalreview.org (cited by the Commons chart for its Sloane 3188/3189 pages)",
+   "status": "The domain now serves unrelated (gambling) content; nothing used."
+  },
+  {
+   "what": "esotericarchives.com (Peterson)",
+   "status": "TLS certificate expired; not fetched (verification was not disabled)."
+  },
+  {
+   "what": "Getty copy of Casaubon (archive.org truefaithfulrela00deej; Commons File:Deespirits.djvu)",
+   "status": "Not fetched in this step: a third impression of the same engraved plates adds nothing for the manuscript ink."
+  }
+ ],
+ "tools": {
+  "dir": "tools/",
+  "scripts": [
+   "components.py",
+   "crop_letters.py",
+   "ht_frame.py",
+   "ht_cells.py",
+   "map_cells.py",
+   "orig_align.py",
+   "compare_scans.py",
+   "letter_stats.py",
+   "cell_letter_height.py",
+   "compare_row.py",
+   "sheet.py",
+   "build_manifest.py"
+  ],
+  "python": "../../venv/bin/python -I"
+ },
+ "method": [
+  "Letter boxes on both Commons originals found as connected ink components and cut with padding (24 px f. 104, 6 px 3189) at native resolution.",
+  "Per-letter measurements (work/stats-f104.json, work/stats-3189.json): height, connected components and enclosed counters at a fixed threshold, edge width.",
+  "Knots and blots judged by eye on the full-resolution crops and on 4x (f. 104) and 8x (3189) enlargements, side by side with the Holy Table cells of both copies (crops/compare-view/, a viewing aid only: panels are rescaled)."
+ ],
+ "note_on_paths": "Paths are those of the working folder the images were downloaded to; the images and crops themselves are not kept in the repository. Every image is identified by its source URL and checksum."
+}

@@ -1,5 +1,5 @@
 /* The glyph kit's proof page (src/pages/magic/MagicKitPage.jsx), a development
-   tool registered only in the dev server: glyphkit/sheet.mjs's own layout and
+   tool registered only in the dev server: docs/research/magical-scriptorium/glyphkit/sheet.mjs's own layout and
    colours, so the sheet and the site's renderer can be compared pixel for
    pixel. Imported by that page alone, so none of it ships with the wing. */
 .mg-kit-page { background: #0d0b0a; min-height: 100vh; }
